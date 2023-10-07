@@ -1771,12 +1771,6 @@ msgstr ""
 "mkondo unaitwa ukinzani."
 
 #: activities/analog_electricity/TutorialDataset.qml:195
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The conventional symbol for resistance is R. The unit of measure of "
-#| "resistance is ohm under the International System of Units, which is "
-#| "denoted as Î©."
 msgctxt "TutorialDataset|"
 msgid ""
 "The conventional symbol for resistance is R. The unit of measure of "
@@ -1784,7 +1778,7 @@ msgid ""
 "as Ω."
 msgstr ""
 "Alama ya kawaida ya ukinzani ni R. Kizio cha kipimo cha ukinzani ni ohm "
-"chini ya Mfumo wa Kimataifa wa Vipimo, ambao unaandikwa kama Î©."
+"chini ya Mfumo wa Kimataifa wa Vipimo, ambao unaandikwa kama Ω."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
 msgctxt "TutorialDataset|"
@@ -2732,13 +2726,6 @@ msgstr ""
 "0 hadi 255 kwa biti 8 pekee."
 
 #: activities/binary_bulb/binary_bulb.js:36
-#, fuzzy
-#| msgctxt "binary_bulb|"
-#| msgid ""
-#| "Each bit adds a progressive value, corresponding to the powers of 2, "
-#| "ascending from right to left: bit 1 â†’ 2â°=1 , bit 2 â†’ 2Â¹=2 , bit 3 "
-#| "â†’ 2Â²=4 , bit 4 â†’ 2Â³=8 , bit 5 â†’ 2â´=16 , bit 6 â†’ 2âµ=32 , bit 7 "
-#| "â†’ 2â¶=64 , bit 8 â†’ 2â·=128."
 msgctxt "binary_bulb|"
 msgid ""
 "Each bit adds a progressive value, corresponding to the powers of 2, "
@@ -2747,9 +2734,9 @@ msgid ""
 "2⁷=128."
 msgstr ""
 "Kila biti huongeza thamani inayoendelea, inayolingana na nguvu za 2, "
-"ikipanda kutoka kulia kwenda kushoto: biti 1 â†' 2â°=1 , biti 2 â†' 2Â¹=2 , "
-"biti 3 â†' 2Â²=4 , biti 4 â†' 2Â³=8 , biti 5 â†' 2â´=16 , biti 6 â†' "
-"2âµ=32 , biti 7 â†' 2â¶=64 , biti 8 â†' 2â·= 128."
+"ikipanda kutoka kulia kwenda kushoto: biti 1 → 2⁰=1 , biti 2 → 2¹=2 , biti 3 "
+"→ 2²=4 , biti 4 → 2³=8 , biti 5 → 2⁴=16 , biti 6 → 2⁵=32 , biti 7 → 2⁶=64 , "
+"biti 8 → 2⁷=128."
 
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
@@ -3040,39 +3027,27 @@ msgstr "Vyumba vidiogo vilivyo na + opereta ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + and âˆ’ operators."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Vyumba vidogo vilivyo na opereta + na âˆ’."
+msgstr "Vyumba vidogo vilivyo na opereta + na −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with +, âˆ’ and Ã— operators."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Vyumba vidogo vyenye opereta +, âˆ’ na Ã—."
+msgstr "Vyumba vidogo vyenye opereta +, − na ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids with +, âˆ’ and Ã— operators."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Vyumba vya wastani vyenye opereta +, âˆ’ na Ã—."
+msgstr "Vyumba vya wastani vyenye opereta +, − na ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids with +, âˆ’, Ã— and âˆ• operators."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Vyumba vikubwa vyenye opereta +, âˆ’, Ã— na âˆ•."
+msgstr "Vyumba vikubwa vyenye opereta +, −, × na ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4692,12 +4667,9 @@ msgstr ""
 "alivuka Bahari ya Atlantiki"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 HÃ©lÃ¨ne Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 444km/h"
-msgstr "Rekodi ya kasi ya 1934 HÃ©lÃ¨ne Boucher ya 444km/h"
+msgstr "Rekodi ya kasi ya 1934 Hélène Boucher ya 444km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:14
 msgctxt "board6_2|"
@@ -4705,12 +4677,9 @@ msgid "Cars"
 msgstr "Magari"
 
 #: activities/chronos/resource/board/board6_2.qml:38
-#, fuzzy
-#| msgctxt "board6_2|"
-#| msgid "1878 AmÃ©dÃ©e BollÃ©e's La Mancelle"
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
-msgstr "1878 AmÃ©dÃ©e BollÃ©e's La Mancelle"
+msgstr "1878 Amédée Bollée's La Mancelle"
 
 #: activities/chronos/resource/board/board6_2.qml:46
 msgctxt "board6_2|"
@@ -4738,12 +4707,9 @@ msgid "1923 Lancia Lambda"
 msgstr "1923 Lancia Lambda"
 
 #: activities/chronos/resource/board/board6_3.qml:54
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1955 CitroÃ«n DS 19"
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
-msgstr "1955 CitroÃ«n DS 19"
+msgstr "1955 Citroën DS 19"
 
 #: activities/click_on_letter/ActivityConfig.qml:35
 #: activities/click_on_letter_up/ActivityConfig.qml:35
@@ -5587,20 +5553,14 @@ msgid "Courtyard of the Museum of Louvre, and its pyramid"
 msgstr "Courtyard of the Museum of Louvre, and its pyramid"
 
 #: activities/details/resource/board/board16_0.qml:14
-#, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "Panorama of ChÃ¢teau de Chenonceau, Indre-et-Loire, France."
 msgctxt "board16_0|"
 msgid "Panorama of Château de Chenonceau, Indre-et-Loire, France."
-msgstr "Panorama of ChÃ¢teau de Chenonceau, Indre-et-Loire, France."
+msgstr "Panorama of Château de Chenonceau, Indre-et-Loire, France."
 
 #: activities/details/resource/board/board17_0.qml:14
-#, fuzzy
-#| msgctxt "board17_0|"
-#| msgid "Windmill in SÃ¸nderho, FanÃ¸, Denmark"
 msgctxt "board17_0|"
 msgid "Windmill in Sønderho, Fanø, Denmark"
-msgstr "Windmill in SÃ¸nderho, FanÃ¸, Denmark"
+msgstr "Windmill in Sønderho, Fanø, Denmark"
 
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
@@ -5657,12 +5617,9 @@ msgid "Vincent van Gogh, Cafe Terrace at Night - 1888"
 msgstr "Vincent van Gogh, Cafe Terrace at Night - 1888"
 
 #: activities/details/resource/board/board7_0.qml:14
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Vincent van Gogh, The Night CafÃ© - 1888"
 msgctxt "board7_0|"
 msgid "Vincent van Gogh, The Night Café - 1888"
-msgstr "Vincent van Gogh, The Night CafÃ© - 1888"
+msgstr "Vincent van Gogh, The Night Café - 1888"
 
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
@@ -5670,14 +5627,9 @@ msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
 msgstr "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid ""
-#| "Notre Dame de Paris cathedral on the ÃŽle de la CitÃ© in Paris, France."
 msgctxt "board9_0|"
 msgid "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
-msgstr ""
-"Notre Dame de Paris cathedral on the ÃŽle de la CitÃ© in Paris, France."
+msgstr "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
 
 #. Activity title
 #: activities/digital_electricity/ActivityInfo.qml:15
@@ -7022,21 +6974,11 @@ msgstr "Picha zilizochukuliwa kutoka Wikipedia."
 
 #: activities/explore_monuments/resource/board/board1.qml:19
 #: activities/explore_monuments/resource/board/board1.qml:22
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Chichen Itza"
 msgctxt "board1|"
 msgid "Chichén Itzá"
-msgstr "Chichen Itza"
+msgstr "Chichén Itzá"
 
 #: activities/explore_monuments/resource/board/board1.qml:20
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "ChichÃ©n ItzÃ¡, meaning at the mouth of the Itza well, is a Mayan City on "
-#| "the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was "
-#| "established before the period of Christopher Colombus and probably served "
-#| "as the religion center of Yucatan for a while."
 msgctxt "board1|"
 msgid ""
 "Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on "
@@ -7044,10 +6986,10 @@ msgid ""
 "established before the period of Christopher Colombus and probably served as "
 "the religion center of Yucatan for a while."
 msgstr ""
-"ChichÃ©n ItzÃ¡, ikimaanisha kwenye mdomo wa kisima cha Itza, ni Jiji la "
-"Mayan kwenye Peninsula ya Yucatan nchini Meksiko, kati ya Valladolid na "
-"Merida. Ilianzishwa kabla ya kipindi cha Christopher Colombus na labda "
-"ilitumika kama kituo cha kidini cha Yucatan kwa muda."
+"Chichén Itza, ikimaanisha kwenye mdomo wa kisima cha Itza, ni Jiji la Mayan "
+"kwenye Peninsula ya Yucatan nchini Meksiko, kati ya Valladolid na Merida. "
+"Ilianzishwa kabla ya kipindi cha Christopher Colombus na labda ilitumika "
+"kama kituo cha kidini cha Yucatan kwa muda."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
 #: activities/explore_monuments/resource/board/board1.qml:33
@@ -7431,15 +7373,6 @@ msgid "Mont-Saint-Michel"
 msgstr "Mont-Saint-Michel"
 
 #: activities/explore_monuments/resource/board/board3.qml:19
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Mont Saint-Michel is a rocky tidal island located in Normandy, at the "
-#| "mouth of the Couesnon River, near the city of Avranches. The highest "
-#| "point of the island is the spire at the top of the Abbeyâ€™s bell tower, "
-#| "170 meters above sea level. There are currently less than 50 people "
-#| "living on the island. The unique feature of Mont Saint-Michel is that it "
-#| "is completely surrounded by water and can only be accessed at low tide."
 msgctxt "board3|"
 msgid ""
 "Mont Saint-Michel is a rocky tidal island located in Normandy, at the mouth "
@@ -7458,23 +7391,11 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board3.qml:29
 #: activities/explore_monuments/resource/board/board3.qml:32
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "CitÃ© de Carcassonne"
 msgctxt "board3|"
 msgid "Cité de Carcassonne"
-msgstr "CitÃ© de Carcassonne"
+msgstr "Cité de Carcassonne"
 
 #: activities/explore_monuments/resource/board/board3.qml:30
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "With more than 4 million visitors each year, Carcassonne is among the "
-#| "most prestigious tourist destinations in France, on a par with Mont Saint "
-#| "Michel and Parisâ€™ Notre-Dame. A UNESCO World Heritage Site since 1997, "
-#| "Carcassonne is a dramatic representation of medieval architecture perched "
-#| "on a rocky spur that towers above the River Aude, southeast of the new "
-#| "town."
 msgctxt "board3|"
 msgid ""
 "With more than 4 million visitors each year, Carcassonne is among the most "
@@ -7485,7 +7406,7 @@ msgid ""
 msgstr ""
 "Ikiwa na zaidi ya wageni milioni 4 kila mwaka, Carcassonne ni miongoni mwa "
 "maeneo yenye hadhi ya kitalii nchini Ufaransa, sawa na Mont Saint Michel na "
-"Parisâ€™ Notre-Dame. Maeneo ya Urithi wa Dunia ya UNESCO tangu 1997, "
+"Paris’ Notre-Dame. Maeneo ya Urithi wa Dunia ya UNESCO tangu 1997, "
 "Carcassonne ni uwakilishi wa ajabu wa usanifu wa enzi za kati ukiwa juu ya "
 "miamba ambayo ina minara juu ya Mto Aude, kusini mashariki mwa mji mpya."
 
@@ -7519,15 +7440,6 @@ msgid "Pont du Gard"
 msgstr "Pont du Gard"
 
 #: activities/explore_monuments/resource/board/board3.qml:52
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The Pont du Gard was built shortly before the Christian era to allow the "
-#| "aqueduct of NÃ®mes (which is almost 50 km long) to cross the Gardon "
-#| "river. The Roman architects and hydraulic engineers who designed this "
-#| "bridge, which stands almost 50 m high and is on three levels â€“ the "
-#| "longest measuring 275 m â€“ created a technical as well as an artistic "
-#| "masterpiece."
 msgctxt "board3|"
 msgid ""
 "The Pont du Gard was built shortly before the Christian era to allow the "
@@ -7537,10 +7449,10 @@ msgid ""
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
 "Pont du Gard ilijengwa muda mfupi kabla ya enzi ya Ukristo ili kuruhusu "
-"mfereji wa maji wa NÃ®mes (ambao una urefu wa karibu kilometa 50) kuvuka mto "
+"mfereji wa maji wa Nîmes (ambao una urefu wa karibu kilometa 50) kuvuka mto "
 "Gardon. Wasanifu wa Kirumi na wahandisi wa majimaji waliobuni daraja hili, "
-"ambalo lina urefu wa karibu meta 50 na liko kwenye viwango vitatu â€“ lenye "
-"urefu wa meta 275 â€“ walifanya utaalamu na pia kazi bora ya kisanii."
+"ambalo lina urefu wa karibu meta 50 na liko kwenye viwango vitatu – lenye "
+"urefu wa meta 275 – walifanya utaalamu na pia kazi bora ya kisanii."
 
 #: activities/explore_monuments/resource/board/board3.qml:62
 #: activities/explore_monuments/resource/board/board3.qml:65
@@ -7562,23 +7474,11 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board3.qml:73
 #: activities/explore_monuments/resource/board/board3.qml:76
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "ChÃ¢teau de Chambord"
 msgctxt "board3|"
 msgid "Château de Chambord"
 msgstr "Chumba cha chai cha Chambord"
 
 #: activities/explore_monuments/resource/board/board3.qml:74
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Prestigious, majestic, colossal, extravagant, are these adjectives enough "
-#| "to fully describe the splendour of Chambord? The largest chÃ¢teau of the "
-#| "Loire Valley is indeed full of surprises for those who are lucky enough "
-#| "to explore its domain. This remarkable piece of architecture is certainly "
-#| "more than just a castle: it is the dream of a king, transformed into "
-#| "reality."
 msgctxt "board3|"
 msgid ""
 "Prestigious, majestic, colossal, extravagant, are these adjectives enough to "
@@ -7588,7 +7488,7 @@ msgid ""
 "just a castle: it is the dream of a king, transformed into reality."
 msgstr ""
 "Fahari, adhimu, kubwa sana, ya kupita kiasi, je, vivumishi hivi vinatosha "
-"kuelezea kikamilifu fahari ya Chambord? ChÃ¢teau kubwa zaidi ya Bonde la "
+"kuelezea kikamilifu fahari ya Chambord? Château kubwa zaidi ya Bonde la "
 "Loire kwa hakika imejaa mambo ya kustaajabisha kwa wale ambao wamebahatika "
 "kuchunguza miliki yake. Kipande hiki cha ajabu cha usanifu hakika ni zaidi "
 "ya ngome: ni ndoto ya mfalme, iliyobadilishwa kuwa ukweli."
@@ -7600,15 +7500,6 @@ msgid "Rocamadour"
 msgstr "Rocamadour"
 
 #: activities/explore_monuments/resource/board/board3.qml:85
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "When coming from Cahors by road, Rocamadour suddenly appears clinging "
-#| "precariously against the cliff above the Alzou canyon. One of the most "
-#| "famous villages of Europe, Rocamadour seemingly defies the laws of "
-#| "gravity. The vertiginous Citadel of Faith is best summed up by an old "
-#| "local saying: â€œhouses on the river, churches on the houses, rocks on "
-#| "the churches, castle on the rockâ€."
 msgctxt "board3|"
 msgid ""
 "When coming from Cahors by road, Rocamadour suddenly appears clinging "
@@ -7622,8 +7513,8 @@ msgstr ""
 "ikining'inia kwa hatari kwenye mwamba ulio juu ya korongo la Alzou. Moja ya "
 "vijiji maarufu zaidi vya Ulaya, Rocamadour inaonekana inapinga sheria za "
 "uvutano. Ngome halisi ya Imani inafupishwa vyema zaidi na msemo wa kienyeji "
-"wa zamani: â€œhouses kwenye mto, makanisa juu ya nyumba, mawe juu ya "
-"makanisa, ngome juu ya miamba."
+"wa zamani: “houses kwenye mto, makanisa juu ya nyumba, mawe juu ya makanisa, "
+"ngome juu ya miamba.“"
 
 #: activities/explore_monuments/resource/board/board3.qml:95
 #: activities/explore_monuments/resource/board/board3.qml:98
@@ -7645,23 +7536,11 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board3.qml:106
 #: activities/explore_monuments/resource/board/board3.qml:109
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "ChÃ¢teau de Chenonceau"
 msgctxt "board3|"
 msgid "Château de Chenonceau"
 msgstr "Château de Chenonceau"
 
 #: activities/explore_monuments/resource/board/board3.qml:107
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The ChÃ¢teau de Chenonceau is among many of Loire Valley ChÃ¢teaux that "
-#| "boast amazing architecture and historical significance drawing thousands "
-#| "of tourists from all over the world. ChÃ¢teau de Chenonceau is sometimes "
-#| "called the Ladies Castle by some historians due to feminine figures "
-#| "having greatly influenced the construction and development of this French "
-#| "ChÃ¢teau over the centuries."
 msgctxt "board3|"
 msgid ""
 "The Château de Chenonceau is among many of Loire Valley Châteaux that boast "
@@ -7671,7 +7550,7 @@ msgid ""
 "influenced the construction and development of this French Château over the "
 "centuries."
 msgstr ""
-"Château de Chenonceau ni kati ya Loire Valley ChÃ¢teaux nyingi  ambazo "
+"Château de Chenonceau ni kati ya Loire Valley Châteaux nyingi  ambazo "
 "zinajivunia usanifu wa ajabu na umuhimu wa kihistoria unaovutia maelfu ya "
 "watalii kutoka ulimwenguni kote. Château de Chenonceau wakati mwingine "
 "huitwa Ngome ya Wanawake na wanahistoria wengine kutokana na takwimu za kike "
@@ -7685,12 +7564,6 @@ msgid "Eiffel Tower"
 msgstr "Mnara wa Eiffel"
 
 #: activities/explore_monuments/resource/board/board3.qml:118
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The world-famous metallic tower was built for the Paris International "
-#| "Exhibition in 1889 for the centenary of the French Revolution. At the "
-#| "time of its inauguration, it was the worldâ€™s tallest monument."
 msgctxt "board3|"
 msgid ""
 "The world-famous metallic tower was built for the Paris International "
@@ -7718,16 +7591,6 @@ msgid "Neuschwanstein Castle"
 msgstr "Ngome ya Neuschwanstein"
 
 #: activities/explore_monuments/resource/board/board4.qml:19
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "The ultimate fairytale castle, Neuschwanstein is situated on a rugged "
-#| "hill near FÃ¼ssen in southwest Bavaria. It was the inspiration for the "
-#| "Sleeping Beauty castles in the Disneyland parks. The castle was "
-#| "commissioned by King Ludwig II of Bavaria who was declared insane when "
-#| "the castle was almost completed in 1886 and found dead a few days later. "
-#| "Neuschwanstein is the most photographed building in the country and one "
-#| "of the most popular tourist attractions in Germany."
 msgctxt "board4|"
 msgid ""
 "The ultimate fairytale castle, Neuschwanstein is situated on a rugged hill "
@@ -7739,13 +7602,12 @@ msgid ""
 "tourist attractions in Germany."
 msgstr ""
 "Ngome ya mwisho kabisa ya hadithi, Neuschwanstein iko kwenye kilima "
-"tambarare karibu na FÃ¼ssen kusini-magharibi mwa Bavaria. Ilikuwa msukumo "
-"kwa majumba ya Urembo wa Kulala katika mbuga za Disneyland. Ngome hiyo "
-"iliagizwa na Mfalme Ludwig II wa Bavaria ambaye alitangazwa kuwa "
-"mwendawazimu wakati ngome hiyo ilipokaribia kukamilika mwaka 1886 na "
-"kupatikana akiwa amekufa siku chache baadaye. Neuschwanstein ndilo jengo "
-"lililopigwa picha nyingi zaidi nchini na mojawapo ya vivutio maarufu vya "
-"watalii nchini Ujerumani."
+"tambarare karibu na Füssen kusini-magharibi mwa Bavaria. Ilikuwa msukumo kwa "
+"majumba ya Urembo wa Kulala katika mbuga za Disneyland. Ngome hiyo iliagizwa "
+"na Mfalme Ludwig II wa Bavaria ambaye alitangazwa kuwa mwendawazimu wakati "
+"ngome hiyo ilipokaribia kukamilika mwaka 1886 na kupatikana akiwa amekufa "
+"siku chache baadaye. Neuschwanstein ndilo jengo lililopigwa picha nyingi "
+"zaidi nchini na mojawapo ya vivutio maarufu vya watalii nchini Ujerumani."
 
 #: activities/explore_monuments/resource/board/board4.qml:29
 #: activities/explore_monuments/resource/board/board4.qml:32
@@ -7990,16 +7852,6 @@ msgid "Lincoln Memorial"
 msgstr "Makumbusho ya Lincoln"
 
 #: activities/explore_monuments/resource/board/board5.qml:74
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Built in white stone with 36 iconic columns, The Lincoln Memorial is one "
-#| "of the most recognized structures in the United States. The memorial is "
-#| "at the west end of the National Mall, in West Potomac Park, and is an "
-#| "example in Neoclassical architecture. It features a solitary, 19-foot-"
-#| "tall statue of Abraham Lincoln sitting in contemplation, which is flanked "
-#| "on both side chambers with inscriptions of Lincolnâ€™s Second Inaugural "
-#| "Address and arguably his most famous speech, the Gettysburg Address."
 msgctxt "board5|"
 msgid ""
 "Built in white stone with 36 iconic columns, The Lincoln Memorial is one of "
@@ -8049,20 +7901,6 @@ msgid "Navajo"
 msgstr "Navajo"
 
 #: activities/explore_monuments/resource/board/board5.qml:96
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Navajo National Monument is a National Monument located within the "
-#| "northwest portion of the Navajo Nation territory in northern Arizona, "
-#| "which was established to preserve three-well preserved cliff dwellings of "
-#| "the Ancestral Puebloan People: Keet Seel (KitsÊ¼iil), Betatakin "
-#| "(BitÃ¡tÊ¼ahkin), and Inscription House (TsÊ¼ah BiiÊ¼ Kin). The monument "
-#| "is high on the Shonto plateau, overlooking the Tsegi Canyon system, west "
-#| "of Kayenta, Arizona. It features a visitor center with a museum, two "
-#| "short self-guided mesa top trails, two small campgrounds, and a picnic "
-#| "area. Rangers guide visitors on free tours of the Keet Seel and Betatakin "
-#| "cliff dwellings. The Inscription House site, further west, is currently "
-#| "closed to public access."
 msgctxt "board5|"
 msgid ""
 "Navajo National Monument is a National Monument located within the northwest "
@@ -8079,9 +7917,9 @@ msgstr ""
 "Mnara wa Kitaifa wa Navajo ni Mnara wa Kitaifa ulioko ndani ya sehemu ya "
 "kaskazini-magharibi ya eneo la Taifa la Navajo kaskazini mwa Arizona, ambayo "
 "ilianzishwa ili kuhifadhi makao matatu yaliyohifadhiwa ya miamba ya Watu wa "
-"Ancestral Puebloan: Keet Seel (KitsÊ¼iil), Betatakin (BitÃ¡tÊ¼ahkin) , na "
-"Nyumba ya Maandishi (TsÊ¼ah BiiÊ¼ Kin). Mnara huo uko juu kwenye nyanda za "
-"juu za Shonto, unaonesha mfumo wa Korongo wa Tsegi, magharibi mwa Kayenta, "
+"Ancestral Puebloan: Keet Seel (Kitsʼiil), Betatakin (Bitátʼahkin) , na "
+"Nyumba ya Maandishi (Tsʼah Biiʼ Kin). Mnara huo uko juu kwenye nyanda za juu "
+"za Shonto, unaonesha mfumo wa Korongo wa Tsegi, magharibi mwa Kayenta, "
 "Arizona. Unaonesha kituo cha wageni kilicho na jumba la makumbusho, njia "
 "mbili fupi za juu za mesa zinazojiongoza, viwanja viwili vidogo vya kambi, "
 "na eneo la mandari. Wahifadhi wa kuongoza wageni kwenye ziara za bure za "
@@ -8199,17 +8037,6 @@ msgid "Pyramid of Meidum"
 msgstr "Piramidi ya Meidum"
 
 #: activities/explore_monuments/resource/board/board6.qml:40
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Five miles south of Saqqara in Egypt stands the mysterious tower-like "
-#| "pyramid of Meidum, which today scarcely resembles a typical pyramid at "
-#| "all. This pyramid was probably built during the reign of the 4th Dynasty "
-#| "pharaoh Sneferu, although it is believed by some that the pyramid may "
-#| "have been started by Sneferuâ€™s predecessor, Huni. At some point during "
-#| "its construction the steps of the pyramid were filled with limestone "
-#| "encasing marking the first attempt by the ancient Egyptians at the "
-#| "construction of a true pyramid."
 msgctxt "board6|"
 msgid ""
 "Five miles south of Saqqara in Egypt stands the mysterious tower-like "
@@ -8236,15 +8063,6 @@ msgid "Red Pyramid"
 msgstr "Piramidi Nyekundu"
 
 #: activities/explore_monuments/resource/board/board6.qml:51
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "The Red Pyramid was one of the finest and most successful attempts by "
-#| "Pharaoh Sneferu in building worldâ€™s first ever smooth sided pyramid "
-#| "during the Ancient Egypt period. The height of the pyramid is 104 meters "
-#| "making it the worldâ€™s 4th largest pyramid in Egypt. The pyramid has "
-#| "been built with red limestone stones, hence the name. The local people of "
-#| "Egypt called it as el-heram el-watwaat meaning the Bat Pyramid."
 msgctxt "board6|"
 msgid ""
 "The Red Pyramid was one of the finest and most successful attempts by "
@@ -10884,12 +10702,9 @@ msgstr "Transylvania"
 
 #. Historical Region of Romania: Maramureș
 #: activities/geo-country/resource/board/board16_0.qml:66
-#, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "MaramureÈ™"
 msgctxt "board16_0|"
 msgid "Maramureș"
-msgstr "MaramureÈ™"
+msgstr "Maramureș"
 
 #. Historical Region of Romania: Crișana
 #: activities/geo-country/resource/board/board16_0.qml:73
@@ -10910,21 +10725,15 @@ msgstr "Mikoa ya kiutamaduni ya Lithuania"
 
 #. Cultural region of Lithuania: Aukštaitija
 #: activities/geo-country/resource/board/board17_0.qml:24
-#, fuzzy
-#| msgctxt "board17_0|"
-#| msgid "AukÅ¡taitija"
 msgctxt "board17_0|"
 msgid "Aukštaitija"
-msgstr "AukÅ¡taitija"
+msgstr "Aukštaitija"
 
 #. Cultural region of Lithuania: Dzūkija
 #: activities/geo-country/resource/board/board17_0.qml:31
-#, fuzzy
-#| msgctxt "board17_0|"
-#| msgid "DzÅ«kija"
 msgctxt "board17_0|"
 msgid "Dzūkija"
-msgstr "DzÅ«kija"
+msgstr "Dzūkija"
 
 #. Cultural region of Lithuania: Lithuania Minor
 #: activities/geo-country/resource/board/board17_0.qml:38
@@ -10969,12 +10778,9 @@ msgstr "Galicia"
 
 #. Autonomous communities of Spain: Castile and León
 #: activities/geo-country/resource/board/board18_0.qml:43
-#, fuzzy
-#| msgctxt "board18_0|"
-#| msgid "Castile and LeÃ³n"
 msgctxt "board18_0|"
 msgid "Castile and León"
-msgstr "Castile na LeÃ³n"
+msgstr "Castile na León"
 
 #. Autonomous communities of Spain: Castilla-La Mancha
 #: activities/geo-country/resource/board/board18_0.qml:50
@@ -11091,21 +10897,15 @@ msgstr "Occitanie"
 
 #. Region of France: Provence-Alpes-Côte d'Azur
 #: activities/geo-country/resource/board/board1_0.qml:51
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Provence-Alpes-CÃ´te d'Azur"
 msgctxt "board1_0|"
 msgid "Provence-Alpes-Côte d'Azur"
-msgstr "Provence-Alpes-Céte d'Azur"
+msgstr "Provence-Alpes-Côte d'Azur"
 
 #. Region of France: Auvergne-Rhône-Alpes
 #: activities/geo-country/resource/board/board1_0.qml:59
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Auvergne-RhÃ´ne-Alpes"
 msgctxt "board1_0|"
 msgid "Auvergne-Rhône-Alpes"
-msgstr "Auvergne-Rh'ne-Alpes"
+msgstr "Auvergne-Rhône-Alpes"
 
 #. Region of France: Centre-Val de Loire
 #: activities/geo-country/resource/board/board1_0.qml:67
@@ -11121,12 +10921,9 @@ msgstr "Inalipa de la Loire"
 
 #. Region of France: Île-de-France
 #: activities/geo-country/resource/board/board1_0.qml:83
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "ÃŽle-de-France"
 msgctxt "board1_0|"
 msgid "Île-de-France"
-msgstr "ÃŽle-de-Ufaransa"
+msgstr "Île-de-Ufaransa"
 
 #. Region of France: Brittany
 #: activities/geo-country/resource/board/board1_0.qml:91
@@ -11154,12 +10951,9 @@ msgstr "Grand est"
 
 #. Region of France: Bourgogne-Franche-Comté
 #: activities/geo-country/resource/board/board1_0.qml:123
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Bourgogne-Franche-ComtÃ©"
 msgctxt "board1_0|"
 msgid "Bourgogne-Franche-Comté"
-msgstr "Bourgogne-Franche-ComtÃ©"
+msgstr "Bourgogne-Franche-Comté"
 
 #: activities/geo-country/resource/board/board2_0.qml:15
 msgctxt "board2_0|"
@@ -11258,12 +11052,9 @@ msgstr "Bavaria"
 
 #. State of Germany: Baden-Württemberg
 #: activities/geo-country/resource/board/board2_0.qml:129
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Baden-WÃ¼rttemberg"
 msgctxt "board2_0|"
 msgid "Baden-Württemberg"
-msgstr "Baden-WÃ¼rttemberg"
+msgstr "Baden-Württemberg"
 
 #: activities/geo-country/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
@@ -11272,12 +11063,9 @@ msgstr "Mikoa ya Argentina"
 
 #. Province of Argentina: Tucumán
 #: activities/geo-country/resource/board/board3_0.qml:24
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "TucumÃ¡n"
 msgctxt "board3_0|"
 msgid "Tucumán"
-msgstr "TucumÃ¡n"
+msgstr "Tucumán"
 
 #. Province of Argentina: Tierra del Fuego
 #: activities/geo-country/resource/board/board3_0.qml:31
@@ -11323,21 +11111,15 @@ msgstr "Salta"
 
 #. Province of Argentina: Río Negro
 #: activities/geo-country/resource/board/board3_0.qml:80
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "RÃ­o Negro"
 msgctxt "board3_0|"
 msgid "Río Negro"
-msgstr "RÃo Negro"
+msgstr "Rio Negro"
 
 #. Province of Argentina: Neuquén
 #: activities/geo-country/resource/board/board3_0.qml:87
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "NeuquÃ©n"
 msgctxt "board3_0|"
 msgid "Neuquén"
-msgstr "NeuquÃ©n"
+msgstr "Neuquén"
 
 #. Province of Argentina: Misiones
 #: activities/geo-country/resource/board/board3_0.qml:94
@@ -11389,12 +11171,9 @@ msgstr "Corrientes"
 
 #. Province of Argentina: Córdoba
 #: activities/geo-country/resource/board/board3_0.qml:150
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "CÃ³rdoba"
 msgctxt "board3_0|"
 msgid "Córdoba"
-msgstr "CÃ³rdoba"
+msgstr "Córdoba"
 
 #. Province of Argentina: Chubut
 #: activities/geo-country/resource/board/board3_0.qml:157
@@ -11548,16 +11327,13 @@ msgstr "Yalova"
 #: activities/geo-country/resource/board/board5_0.qml:46
 msgctxt "board5_0|"
 msgid "Uşak"
-msgstr ""
+msgstr "Uşak"
 
 #. Province of Turkey: Tekirdağ
 #: activities/geo-country/resource/board/board5_0.qml:53
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "TekirdaÄŸ"
 msgctxt "board5_0|"
 msgid "Tekirdağ"
-msgstr "TekirdaÄŸ"
+msgstr "Tekirdağ"
 
 #. Province of Turkey: Sinop
 #: activities/geo-country/resource/board/board5_0.qml:60
@@ -11581,22 +11357,19 @@ msgstr "Sakarya"
 #: activities/geo-country/resource/board/board5_0.qml:81
 msgctxt "board5_0|"
 msgid "Niğde"
-msgstr ""
+msgstr "Niğde"
 
 #. Province of Turkey: Nevşehir
 #: activities/geo-country/resource/board/board5_0.qml:88
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "NevÅŸehir"
 msgctxt "board5_0|"
 msgid "Nevşehir"
-msgstr "NevÅŸehir"
+msgstr "Nevşehir"
 
 #. Province of Turkey: Muğla
 #: activities/geo-country/resource/board/board5_0.qml:95
 msgctxt "board5_0|"
 msgid "Muğla"
-msgstr ""
+msgstr "Muğla"
 
 #. Province of Turkey: Mersin
 #: activities/geo-country/resource/board/board5_0.qml:102
@@ -11612,12 +11385,9 @@ msgstr "Manisa"
 
 #. Province of Turkey: Kütahya
 #: activities/geo-country/resource/board/board5_0.qml:116
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "KÃ¼tahya"
 msgctxt "board5_0|"
 msgid "Kütahya"
-msgstr "KÃ¼tahya"
+msgstr "Kütahya"
 
 #. Province of Turkey: Konya
 #: activities/geo-country/resource/board/board5_0.qml:123
@@ -11639,21 +11409,15 @@ msgstr "Kirsehir"
 
 #. Province of Turkey: Kırklareli
 #: activities/geo-country/resource/board/board5_0.qml:144
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "KÄ±rklareli"
 msgctxt "board5_0|"
 msgid "Kırklareli"
-msgstr "KÄ±rklareli"
+msgstr "Kırklareli"
 
 #. Province of Turkey: Kırıkkale
 #: activities/geo-country/resource/board/board5_0.qml:151
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "KÄ±rÄ±kkale"
 msgctxt "board5_0|"
 msgid "Kırıkkale"
-msgstr "KÄ±rÄ±kkale"
+msgstr "Kırıkkale"
 
 #. Province of Turkey: Kayseri
 #: activities/geo-country/resource/board/board5_0.qml:158
@@ -11675,30 +11439,21 @@ msgstr "Karaman"
 
 #. Province of Turkey: Karabük
 #: activities/geo-country/resource/board/board5_0.qml:179
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "KarabÃ¼k"
 msgctxt "board5_0|"
 msgid "Karabük"
-msgstr "KarabÃ¼k"
+msgstr "Karabük"
 
 #. Province of Turkey: İzmir
 #: activities/geo-country/resource/board/board5_0.qml:186
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Ä°zmir"
 msgctxt "board5_0|"
 msgid "İzmir"
-msgstr "Ä°zmir"
+msgstr "İzmir"
 
 #. Province of Turkey: İstanbul
 #: activities/geo-country/resource/board/board5_0.qml:193
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Ä°stanbul"
 msgctxt "board5_0|"
 msgid "İstanbul"
-msgstr "Ä°stanbul"
+msgstr "İstanbul"
 
 #. Province of Turkey: Isparta
 #: activities/geo-country/resource/board/board5_0.qml:200
@@ -11708,12 +11463,9 @@ msgstr "Isparta"
 
 #. Province of Turkey: Eskişehir
 #: activities/geo-country/resource/board/board5_0.qml:207
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "EskiÅŸehir"
 msgctxt "board5_0|"
 msgid "Eskişehir"
-msgstr "EskiÅŸehir"
+msgstr "Eskişehir"
 
 #. Province of Turkey: Edirne
 #: activities/geo-country/resource/board/board5_0.qml:214
@@ -11725,7 +11477,7 @@ msgstr "Edirne"
 #: activities/geo-country/resource/board/board5_0.qml:221
 msgctxt "board5_0|"
 msgid "Düzce"
-msgstr ""
+msgstr "Düzce"
 
 #. Province of Turkey: Denizli
 #: activities/geo-country/resource/board/board5_0.qml:228
@@ -11735,27 +11487,21 @@ msgstr "Denizli"
 
 #. Province of Turkey: Çorum
 #: activities/geo-country/resource/board/board5_0.qml:235
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Ã‡orum"
 msgctxt "board5_0|"
 msgid "Çorum"
-msgstr "orum"
+msgstr "Çorum"
 
 #. Province of Turkey: Çankırı
 #: activities/geo-country/resource/board/board5_0.qml:242
 msgctxt "board5_0|"
 msgid "Çankırı"
-msgstr ""
+msgstr "Çankırı"
 
 #. Province of Turkey: Çanakkale
 #: activities/geo-country/resource/board/board5_0.qml:249
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Ã‡anakkale"
 msgctxt "board5_0|"
 msgid "Çanakkale"
-msgstr "Ã‡anakkale"
+msgstr "Çanakkale"
 
 #. Province of Turkey: Bursa
 #: activities/geo-country/resource/board/board5_0.qml:256
@@ -11783,27 +11529,21 @@ msgstr "Bilecik"
 
 #. Province of Turkey: Bartın
 #: activities/geo-country/resource/board/board5_0.qml:284
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "BartÄ±n"
 msgctxt "board5_0|"
 msgid "Bartın"
-msgstr "BartÄ±n"
+msgstr "Bartın"
 
 #. Province of Turkey: Balıkesir
 #: activities/geo-country/resource/board/board5_0.qml:291
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "BalÄ±kesir"
 msgctxt "board5_0|"
 msgid "Balıkesir"
-msgstr "BalÄ±kesir"
+msgstr "Balıkesir"
 
 #. Province of Turkey: Aydın
 #: activities/geo-country/resource/board/board5_0.qml:298
 msgctxt "board5_0|"
 msgid "Aydın"
-msgstr ""
+msgstr "Aydın"
 
 #. Province of Turkey: Antalya
 #: activities/geo-country/resource/board/board5_0.qml:305
@@ -11878,12 +11618,9 @@ msgstr "Sivas"
 
 #. Province of Turkey: Şırnak
 #: activities/geo-country/resource/board/board5_1.qml:59
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "ÅžÄ±rnak"
 msgctxt "board5_1|"
 msgid "Şırnak"
-msgstr "ÅžÄ±rnak"
+msgstr "Şırnak"
 
 #. Province of Turkey: Siirt
 #: activities/geo-country/resource/board/board5_1.qml:66
@@ -11893,12 +11630,9 @@ msgstr "Siirt"
 
 #. Province of Turkey: Şanlıurfa
 #: activities/geo-country/resource/board/board5_1.qml:73
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "ÅžanlÄ±urfa"
 msgctxt "board5_1|"
 msgid "Şanlıurfa"
-msgstr "ÅžanlÄ±urfa"
+msgstr "Şanlıurfa"
 
 #. Province of Turkey: Rize
 #: activities/geo-country/resource/board/board5_1.qml:80
@@ -11920,12 +11654,9 @@ msgstr "Ordu"
 
 #. Province of Turkey: Muş
 #: activities/geo-country/resource/board/board5_1.qml:101
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "MuÅŸ"
 msgctxt "board5_1|"
 msgid "Muş"
-msgstr "MuaŸ"
+msgstr "Muş"
 
 #. Province of Turkey: Mardin
 #: activities/geo-country/resource/board/board5_1.qml:108
@@ -11953,18 +11684,15 @@ msgstr "Kars"
 
 #. Province of Turkey: Kahramanmaraş
 #: activities/geo-country/resource/board/board5_1.qml:136
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "KahramanmaraÅŸ"
 msgctxt "board5_1|"
 msgid "Kahramanmaraş"
-msgstr "KahramanmaraÅŸ"
+msgstr "Kahramanmaraş"
 
 #. Province of Turkey: Iğdır
 #: activities/geo-country/resource/board/board5_1.qml:143
 msgctxt "board5_1|"
 msgid "Iğdır"
-msgstr ""
+msgstr "Iğdır"
 
 #. Province of Turkey: Hatay
 #: activities/geo-country/resource/board/board5_1.qml:150
@@ -11980,12 +11708,9 @@ msgstr "Hakkari"
 
 #. Province of Turkey: Gümüşhane
 #: activities/geo-country/resource/board/board5_1.qml:164
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "GÃ¼mÃ¼ÅŸhane"
 msgctxt "board5_1|"
 msgid "Gümüşhane"
-msgstr "GÃ¼mÃ¼ÅŸhane"
+msgstr "Gümüşhane"
 
 #. Province of Turkey: Giresun
 #: activities/geo-country/resource/board/board5_1.qml:171
@@ -12015,16 +11740,13 @@ msgstr "Erzincan"
 #: activities/geo-country/resource/board/board5_1.qml:199
 msgctxt "board5_1|"
 msgid "Elazığ"
-msgstr ""
+msgstr "Elazığ"
 
 #. Province of Turkey: Diyarbakır
 #: activities/geo-country/resource/board/board5_1.qml:206
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "DiyarbakÄ±r"
 msgctxt "board5_1|"
 msgid "Diyarbakır"
-msgstr "DiyarbakÄ±r"
+msgstr "Diyarbakır"
 
 #. Province of Turkey: Bitlis
 #: activities/geo-country/resource/board/board5_1.qml:213
@@ -12034,12 +11756,9 @@ msgstr "Bitlis"
 
 #. Province of Turkey: Bingöl
 #: activities/geo-country/resource/board/board5_1.qml:220
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "BingÃ¶l"
 msgctxt "board5_1|"
 msgid "Bingöl"
-msgstr "BingÃ¶l"
+msgstr "Bingöl"
 
 #. Province of Turkey: Bayburt
 #: activities/geo-country/resource/board/board5_1.qml:227
@@ -12069,16 +11788,13 @@ msgstr "Ardahan"
 #: activities/geo-country/resource/board/board5_1.qml:255
 msgctxt "board5_1|"
 msgid "Ağrı"
-msgstr ""
+msgstr "Ağrı"
 
 #. Province of Turkey: Adıyaman
 #: activities/geo-country/resource/board/board5_1.qml:262
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "AdÄ±yaman"
 msgctxt "board5_1|"
 msgid "Adıyaman"
-msgstr "AdÄ±yaman"
+msgstr "Adıyaman"
 
 #: activities/geo-country/resource/board/board6_0.qml:17
 msgctxt "board6_0|"
@@ -12111,12 +11827,9 @@ msgstr "Troms na Finnmark"
 
 #. County of Norway: Trøndelag
 #: activities/geo-country/resource/board/board6_0.qml:54
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "TrÃ¸ndelag"
 msgctxt "board6_0|"
 msgid "Trøndelag"
-msgstr "TrÃ¸ndelag"
+msgstr "Trøndelag"
 
 #. County of Norway: Oslo
 #: activities/geo-country/resource/board/board6_0.qml:61
@@ -12126,12 +11839,9 @@ msgstr "Oslo"
 
 #. County of Norway: Møre og Romsdal
 #: activities/geo-country/resource/board/board6_0.qml:68
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "MÃ¸re og Romsdal"
 msgctxt "board6_0|"
 msgid "Møre og Romsdal"
-msgstr "MÃ¸re og Romsdal"
+msgstr "Møre og Romsdal"
 
 #. County of Norway: Agder
 #: activities/geo-country/resource/board/board6_0.qml:75
@@ -12172,7 +11882,7 @@ msgstr "Amazonas"
 #: activities/geo-country/resource/board/board7_0.qml:31
 msgctxt "board7_0|"
 msgid "Pará"
-msgstr ""
+msgstr "Pará"
 
 #. Federative unit of Brazil: Mato Grosso
 #: activities/geo-country/resource/board/board7_0.qml:38
@@ -12202,13 +11912,10 @@ msgstr "Mato Grosso do Sul"
 #: activities/geo-country/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
 msgid "Goiás"
-msgstr ""
+msgstr "Goiás"
 
 #. Federative unit of Brazil: Maranhão
 #: activities/geo-country/resource/board/board7_0.qml:73
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "MaranhÃ£o"
 msgctxt "board7_0|"
 msgid "Maranhão"
 msgstr "MaranhÃ£o"
@@ -12227,27 +11934,18 @@ msgstr "Tocantins"
 
 #. Federative unit of Brazil: Piauí
 #: activities/geo-country/resource/board/board7_0.qml:94
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "PiauÃ­"
 msgctxt "board7_0|"
 msgid "Piauí"
-msgstr "PiauÃ"
+msgstr "Piauí"
 
 #. Federative unit of Brazil: São Paulo
 #: activities/geo-country/resource/board/board7_0.qml:101
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "SÃ£o Paulo"
 msgctxt "board7_0|"
 msgid "São Paulo"
 msgstr "Kwa Paulo"
 
 #. Federative unit of Brazil: Rondônia
 #: activities/geo-country/resource/board/board7_0.qml:108
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "RondÃ´nia"
 msgctxt "board7_0|"
 msgid "Rondônia"
 msgstr "Rondínia"
@@ -12260,12 +11958,9 @@ msgstr "Roraima"
 
 #. Federative unit of Brazil: Paraná
 #: activities/geo-country/resource/board/board7_0.qml:122
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "ParanÃ¡"
 msgctxt "board7_0|"
 msgid "Paraná"
-msgstr "ParanÃ¡"
+msgstr "Paraná"
 
 #. Federative unit of Brazil: Acre
 #: activities/geo-country/resource/board/board7_0.qml:129
@@ -12275,21 +11970,15 @@ msgstr "Ekari"
 
 #. Federative unit of Brazil: Ceará
 #: activities/geo-country/resource/board/board7_0.qml:136
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "CearÃ¡"
 msgctxt "board7_0|"
 msgid "Ceará"
-msgstr "CearÃ¡"
+msgstr "Ceará"
 
 #. Federative unit of Brazil: Amapá
 #: activities/geo-country/resource/board/board7_0.qml:143
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "AmapÃ¡"
 msgctxt "board7_0|"
 msgid "Amapá"
-msgstr "AmapÃ¡"
+msgstr "Amapá"
 
 #. Federative unit of Brazil: Pernambuco
 #: activities/geo-country/resource/board/board7_0.qml:150
@@ -12305,12 +11994,9 @@ msgstr "Santa Catarina"
 
 #. Federative unit of Brazil: Paraíba
 #: activities/geo-country/resource/board/board7_0.qml:164
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "ParaÃ­ba"
 msgctxt "board7_0|"
 msgid "Paraíba"
-msgstr "Paraba"
+msgstr "Paraíba"
 
 #. Federative unit of Brazil: Rio Grande do Norte
 #: activities/geo-country/resource/board/board7_0.qml:171
@@ -12320,12 +12006,9 @@ msgstr "Rio Grande do Norte"
 
 #. Federative unit of Brazil: Espírito Santo
 #: activities/geo-country/resource/board/board7_0.qml:178
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "EspÃ­rito Santo"
 msgctxt "board7_0|"
 msgid "Espírito Santo"
-msgstr "EspÃrito Santo"
+msgstr "Espírito Santo"
 
 #. Federative unit of Brazil: Rio de Janeiro
 #: activities/geo-country/resource/board/board7_0.qml:185
@@ -12447,12 +12130,9 @@ msgstr "Zacatecas"
 
 #. State of Mexico: Yucatán
 #: activities/geo-country/resource/board/board9_0.qml:31
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "YucatÃ¡n"
 msgctxt "board9_0|"
 msgid "Yucatán"
-msgstr "YucatÃ¡n"
+msgstr "Yucatán"
 
 #. State of Mexico: Veracruz
 #: activities/geo-country/resource/board/board9_0.qml:38
@@ -12492,12 +12172,9 @@ msgstr "Sinaloa"
 
 #. State of Mexico: San Luis Potosí
 #: activities/geo-country/resource/board/board9_0.qml:80
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "San Luis PotosÃ­"
 msgctxt "board9_0|"
 msgid "San Luis Potosí"
-msgstr "San Luis PotosÃ"
+msgstr "San Luis Potosí"
 
 #. State of Mexico: Quintana Roo
 #: activities/geo-country/resource/board/board9_0.qml:87
@@ -12507,12 +12184,9 @@ msgstr "Quintana Roo"
 
 #. State of Mexico: Querétaro
 #: activities/geo-country/resource/board/board9_0.qml:94
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "QuerÃ©taro"
 msgctxt "board9_0|"
 msgid "Querétaro"
-msgstr "QuerÃ©taro"
+msgstr "Querétaro"
 
 #. State of Mexico: Puebla
 #: activities/geo-country/resource/board/board9_0.qml:101
@@ -12528,12 +12202,9 @@ msgstr "Oaxaca"
 
 #. State of Mexico: Nuevo León
 #: activities/geo-country/resource/board/board9_0.qml:115
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Nuevo LeÃ³n"
 msgctxt "board9_0|"
 msgid "Nuevo León"
-msgstr "Nuevo LeÃ³n"
+msgstr "Nuevo León"
 
 #. State of Mexico: Nayarit
 #: activities/geo-country/resource/board/board9_0.qml:122
@@ -12549,12 +12220,9 @@ msgstr "Morelos"
 
 #. State of Mexico: Michoacán
 #: activities/geo-country/resource/board/board9_0.qml:136
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "MichoacÃ¡n"
 msgctxt "board9_0|"
 msgid "Michoacán"
-msgstr "MichoacÃ¡n"
+msgstr "Michoacán"
 
 #. State of Mexico: Jalisco
 #: activities/geo-country/resource/board/board9_0.qml:143
@@ -12582,12 +12250,9 @@ msgstr "Guanajuato"
 
 #. State of Mexico: Estado de México
 #: activities/geo-country/resource/board/board9_0.qml:171
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Estado de MÃ©xico"
 msgctxt "board9_0|"
 msgid "Estado de México"
-msgstr "Estado de MÃ©xico"
+msgstr "Estado de México"
 
 #. State of Mexico: Durango
 #: activities/geo-country/resource/board/board9_0.qml:178
@@ -14101,16 +13766,6 @@ msgstr "Jifunze kuhusu namba kuu."
 
 #. Help manual
 #: activities/gnumch-primes/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Prime numbers are numbers that are only divisible by themselves and 1. "
-#| "For example, 3 is a prime number, but 4 isn't (because 4 is divisible by "
-#| "2). You can think of prime numbers as very small families: they only ever "
-#| "have two people in them! Only themselves and 1. You can't fit any other "
-#| "numbers into them with nothing left over. 5 is one of these lonely "
-#| "numbers (only 5 Ã— 1 = 5), but you can see that 6 has 2 and 3 in its "
-#| "family as well (6 Ã— 1 = 6, 2 Ã— 3 = 6). So 6 is not a prime number."
 msgctxt "ActivityInfo|"
 msgid ""
 "Prime numbers are numbers that are only divisible by themselves and 1. For "
@@ -14125,9 +13780,9 @@ msgstr ""
 "kuu, lakini 4 sio (kwa sababu 4 inaweza kugawanywa na 2). Unaweza kufikiria "
 "idadi kuu kama familia ndogo sana: huwa na watu wawili tu ndani yao! Wao tu "
 "na 1. Haiwezi kutosha namba nyingine yoyote ndani  bila chochote "
-"kilichosalia. 5 ni mojawapo ya namba hizi za pweke (5 Ã— 1 = 5 tu), lakini "
-"unaweza kuona kwamba 6 ina 2 na 3 katika familia yake pia (6 Ã— 1 = 6, 2 Ã— "
-"3 = 6). Kwa hivyo 6 sio namba kuu."
+"kilichosalia. 5 ni mojawapo ya namba hizi za pweke (5 × 1 = 5 tu), lakini "
+"unaweza kuona kwamba 6 ina 2 na 3 katika familia yake pia (6 × 1 = 6, 2 × 3 "
+"= 6). Kwa hivyo 6 sio namba kuu."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
@@ -15657,12 +15312,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Nafasi au Ingiza: chagua kitu katika orodha"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OKÂ button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Enter: thibitisha jibu lako wakati kitufe cha OKÂ kinaonekana"
+msgstr "Enter: thibitisha jibu lako wakati kitufe cha OK kinaonekana"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -16585,76 +16237,49 @@ msgstr ""
 "Lights_Out_(mchezo)&gt;"
 
 #: activities/lightsoff/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "5Ã—5 grids, Very easy."
 msgctxt "Data|"
 msgid "5×5 grids, Very easy."
-msgstr "Gridi 5Ã—5, Rahisi sana."
+msgstr "Gridi 5×5, Rahisi sana."
 
 #: activities/lightsoff/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "5Ã—5 grids, Easy."
 msgctxt "Data|"
 msgid "5×5 grids, Easy."
-msgstr "Gridi 5Ã—5, Rahisi."
+msgstr "Gridi 5×5, Rahisi."
 
 #: activities/lightsoff/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "5Ã—5 grids, Medium."
 msgctxt "Data|"
 msgid "5×5 grids, Medium."
-msgstr "Gridi 5Ã—5, Wastani."
+msgstr "Gridi 5×5, Wastani."
 
 #: activities/lightsoff/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "5Ã—5 grids, Difficult."
 msgctxt "Data|"
 msgid "5×5 grids, Difficult."
-msgstr "Gridi 5Ã—5, Mgumu."
+msgstr "Gridi 5×5, Mgumu."
 
 #: activities/lightsoff/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "5Ã—5 grids, Very Difficult."
 msgctxt "Data|"
 msgid "5×5 grids, Very Difficult."
-msgstr "Gridi 5Ã—5, Mgumu Sana."
+msgstr "Gridi 5×5, Mgumu Sana."
 
 #: activities/lightsoff/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "6Ã—6 grids, Very Difficult."
 msgctxt "Data|"
 msgid "6×6 grids, Very Difficult."
-msgstr "Gridi 6Ã—6, Mgumu Sana."
+msgstr "Gridi 6×6, Mgumu Sana."
 
 #: activities/lightsoff/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "7Ã—7 grids, Very Difficult."
 msgctxt "Data|"
 msgid "7×7 grids, Very Difficult."
-msgstr "Gridi 7Ã—7, Mgumu Sana."
+msgstr "Gridi 7×7, Mgumu Sana."
 
 #: activities/lightsoff/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "8Ã—8 grids, Very Difficult."
 msgctxt "Data|"
 msgid "8×8 grids, Very Difficult."
-msgstr "Gridi 8Ã—8, Mgumu Sana."
+msgstr "Gridi 8×8, Mgumu Sana."
 
 #: activities/lightsoff/resource/9/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "9Ã—9 grids, Very Difficult."
 msgctxt "Data|"
 msgid "9×9 grids, Very Difficult."
-msgstr "Gridi 9Ã—9, Mgumu Sana."
+msgstr "Gridi 9×9, Mgumu Sana."
 
 #. Activity title
 #: activities/louis-braille/ActivityInfo.qml:15
@@ -18311,12 +17936,9 @@ msgid "×"
 msgstr ""
 
 #: activities/memory/math_util.js:52
-#, fuzzy
-#| msgctxt "math_util|"
-#| msgid "Ã·"
 msgctxt "math_util|"
 msgid "÷"
-msgstr "Ã·"
+msgstr "÷"
 
 #: activities/memory/MemoryCommon.qml:325
 msgctxt "MemoryCommon|"
@@ -20234,12 +19856,9 @@ msgid "Giovanni Bellini, La Pala di Pesaro - 1475-85"
 msgstr "Giovanni Bellini, La Pala di Pesaro - 1475-85"
 
 #: activities/paintings/resource/board/board16_0.qml:14
-#, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "Albrecht DÃ¼rer, Lion - 1494"
 msgctxt "board16_0|"
 msgid "Albrecht Dürer, Lion - 1494"
-msgstr "Albrecht DÃ¼rer, Simba - 1494"
+msgstr "Albrecht Dürer, Simba - 1494"
 
 #: activities/paintings/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
@@ -20809,12 +20428,9 @@ msgid "Ukraine"
 msgstr "Ukraine"
 
 #: activities/piano_composition/melodies.js:235
-#, fuzzy
-#| msgctxt "melodies|"
-#| msgid "Mexican song to break a piÃ±ata"
 msgctxt "melodies|"
 msgid "Mexican song to break a piñata"
-msgstr "Wimbo wa Mexico wa kuvunja piÃ±ata"
+msgstr "Wimbo wa Mexico wa kuvunja piñata"
 
 #: activities/piano_composition/melodies.js:242
 msgctxt "melodies|"
@@ -20930,24 +20546,16 @@ msgid "This is the bass clef staff for low pitched notes."
 msgstr "Hawa ni wafanyakazi wa bass clef kwa maelezo ya chini."
 
 #: activities/piano_composition/piano_composition.js:31
-#, fuzzy
-#| msgctxt "piano_composition|"
-#| msgid "The black keys are sharp and flat keys. Sharp notes have a â™¯ sign."
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
-msgstr ""
-"Funguo nyeusi ni funguo kali na gorofa. Vidokezo vikali vina ishara â™¯."
+msgstr "Funguo nyeusi ni funguo kali na gorofa. Vidokezo vikali vina ishara ♯."
 
 #: activities/piano_composition/piano_composition.js:34
-#, fuzzy
-#| msgctxt "piano_composition|"
-#| msgid ""
-#| "Each black key has two names: flat and sharp. Flat notes have â™­ sign."
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Kila ufunguo mweusi una majina mawili: gorofa na mkali. Noti tambarare zina "
-"alama â™."
+"alama ♭."
 
 #: activities/piano_composition/piano_composition.js:37
 msgctxt "piano_composition|"
@@ -21137,7 +20745,7 @@ msgstr "E%1"
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "C♯%1"
-msgstr ""
+msgstr "C♯%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:83
 #: activities/piano_composition/PianoOctaveKeyboard.qml:88
@@ -21146,7 +20754,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "D♯%1"
-msgstr ""
+msgstr "D♯%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:84
 #: activities/piano_composition/PianoOctaveKeyboard.qml:89
@@ -21154,7 +20762,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "F♯%1"
-msgstr ""
+msgstr "F♯%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:85
 #: activities/piano_composition/PianoOctaveKeyboard.qml:90
@@ -21162,7 +20770,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "G♯%1"
-msgstr ""
+msgstr "G♯%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:86
 #: activities/piano_composition/PianoOctaveKeyboard.qml:91
@@ -21170,7 +20778,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♯%1"
-msgstr ""
+msgstr "A♯%1"
 
 #. Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
 #: activities/piano_composition/PianoOctaveKeyboard.qml:103
@@ -21180,7 +20788,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "D♭%1"
-msgstr ""
+msgstr "D♭%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:104
 #: activities/piano_composition/PianoOctaveKeyboard.qml:109
@@ -21189,7 +20797,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "E♭%1"
-msgstr ""
+msgstr "E♭%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:105
 #: activities/piano_composition/PianoOctaveKeyboard.qml:110
@@ -21197,7 +20805,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "G♭%1"
-msgstr ""
+msgstr "G♭%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:106
 #: activities/piano_composition/PianoOctaveKeyboard.qml:111
@@ -21205,7 +20813,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "A♭%1"
-msgstr ""
+msgstr "A♭%1"
 
 #: activities/piano_composition/PianoOctaveKeyboard.qml:107
 #: activities/piano_composition/PianoOctaveKeyboard.qml:112
@@ -21213,7 +20821,7 @@ msgstr ""
 #, qt-format
 msgctxt "PianoOctaveKeyboard|"
 msgid "B♭%1"
-msgstr ""
+msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
@@ -22043,17 +21651,17 @@ msgstr "Nafasi au Ingiza: thibitisha jibu lako"
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids."
-msgstr "Gridi ndogo zenye waendeshaji +, âˆ’ na Ã—."
+msgstr "Gridi ndogo zenye waendeshaji +, − na ×."
 
 #: activities/redraw/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids."
-msgstr "Gridi za wastani zenye waendeshaji +, âˆ’ na Ã—."
+msgstr "Gridi za wastani zenye waendeshaji +, − na ×."
 
 #: activities/redraw/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids."
-msgstr "Gridi kubwa zenye waendeshaji +, âˆ’, Ã— na âˆ•."
+msgstr "Gridi kubwa zenye waendeshaji +, −, × na ∕."
 
 #. Activity title
 #: activities/redraw_symmetrical/ActivityInfo.qml:15
@@ -22070,26 +21678,20 @@ msgstr "Chora picha kwenye gridi tupu kana kwamba umeiona kwenye kioo."
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 #, fuzzy
 #| msgctxt "Data|"
-#| msgid "Small grids (3Ã—3)."
+#| msgid "Small grids (3×3)."
 msgctxt "Data|"
 msgid "Small grids (3×3)."
-msgstr "Gridi ndogo zenye waendeshaji +, âˆ’ na Ã—."
+msgstr "Gridi ndogo zenye waendeshaji +, − na ×."
 
 #: activities/redraw_symmetrical/resource/2/Data.qml:15
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Medium grids (5Ã—5)."
 msgctxt "Data|"
 msgid "Medium grids (5×5)."
-msgstr "Gridi 5Ã—5, Wastani."
+msgstr "Gridi 5×5, Wastani."
 
 #: activities/redraw_symmetrical/resource/3/Data.qml:15
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Large grids (7Ã—7)."
 msgctxt "Data|"
 msgid "Large grids (7×7)."
-msgstr "Gridi 7Ã—7, Ngumu Sana."
+msgstr "Gridi 7×7, Ngumu Sana."
 
 #. Activity title
 #: activities/renewable_energy/ActivityInfo.qml:15
@@ -22289,11 +21891,6 @@ msgstr ""
 "kutoka kwa alfabeti ya Kilatini."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OKÂ button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -22359,13 +21956,6 @@ msgstr "Badilisha nambari ya Kiarabu %1 kuwa kirumi."
 
 #: activities/roman_numerals/RomanNumerals.qml:90
 #: activities/roman_numerals/RomanNumerals.qml:96
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid ""
-#| "All the units except 4 and 9 are built using sums of I and V:\n"
-#| "I, II, III, V, VI, VII, VIII.\n"
-#| " The 4 and the 9 units are built using differences:\n"
-#| "IV (5 â€“ 1) and IX (10 â€“ 1)."
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -22376,7 +21966,7 @@ msgstr ""
 "Vitengo vyote isipokuwa 4 na 9 vimejengwa kwa kutumia hesabu za I na V:\n"
 "I, II, III, V, VI, VII, VIII.\n"
 " Vitengo 4 na 9 vinajengwa kwa kutumia tofauti:\n"
-"IV (5 â€“ 1) na IX (10 â€“ 1)."
+"IV (5 – 1) na IX (10 – 1)."
 
 #: activities/roman_numerals/RomanNumerals.qml:102
 #: activities/roman_numerals/RomanNumerals.qml:108
@@ -23830,36 +23420,24 @@ msgid "The temperature of the Sun is around:"
 msgstr "Joto la Jua liko karibu:"
 
 #: activities/solar_system/Dataset.js:25
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "1000 Â°C"
 msgctxt "Dataset|"
 msgid "1000 °C"
-msgstr "â€"
+msgstr "1000 °C"
 
 #: activities/solar_system/Dataset.js:25
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "4500 Â°C"
 msgctxt "Dataset|"
 msgid "4500 °C"
-msgstr "â€"
+msgstr "4500 °C"
 
 #: activities/solar_system/Dataset.js:25
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5505 Â°C"
 msgctxt "Dataset|"
 msgid "5505 °C"
-msgstr "â€"
+msgstr "5505 °C"
 
 #: activities/solar_system/Dataset.js:25
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "3638 Â°C"
 msgctxt "Dataset|"
 msgid "3638 °C"
-msgstr "â€"
+msgstr "3638 °C"
 
 #: activities/solar_system/Dataset.js:30
 msgctxt "Dataset|"
@@ -23887,9 +23465,6 @@ msgid "4.5 billion years"
 msgstr "miaka bilioni 4.5"
 
 #: activities/solar_system/Dataset.js:36
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long does it take for the Sunâ€™s light to reach the Earth?"
 msgctxt "Dataset|"
 msgid "How long does it take for the Sun’s light to reach the Earth?"
 msgstr "Je, inachukua muda gani kwa mwanga wa Jua kufika Duniani?"
@@ -23946,12 +23521,9 @@ msgstr "Zebaki"
 
 #: activities/solar_system/Dataset.js:53 activities/solar_system/Dataset.js:98
 #: activities/solar_system/Dataset.js:200
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The maximum temperature on Earth is 58 Â°C."
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is 58 °C."
-msgstr "Kiwango cha juu cha joto duniani ni 58 Â°C."
+msgstr "Kiwango cha juu cha joto duniani ni 58 °C."
 
 #: activities/solar_system/Dataset.js:54 activities/solar_system/Dataset.js:150
 msgctxt "Dataset|"
@@ -24039,28 +23611,22 @@ msgstr "Kiwango cha juu cha joto kwenye Mercury ni:"
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
 msgid "50 °C"
-msgstr ""
+msgstr "50 °C"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
 msgid "35 °C"
-msgstr ""
+msgstr "35 °C"
 
 #: activities/solar_system/Dataset.js:76
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "427 Â°C"
 msgctxt "Dataset|"
 msgid "427 °C"
-msgstr "â€"
+msgstr "427 °C"
 
 #: activities/solar_system/Dataset.js:76
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "273 Â°C"
 msgctxt "Dataset|"
 msgid "273 °C"
-msgstr "â€"
+msgstr "273 °C"
 
 #: activities/solar_system/Dataset.js:81
 msgctxt "Dataset|"
@@ -24215,32 +23781,26 @@ msgstr "Kiwango cha juu cha joto kwenye Venus ni:"
 #: activities/solar_system/Dataset.js:325
 #: activities/solar_system/Dataset.js:376
 #: activities/solar_system/Dataset.js:415
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "100 Â°C"
 msgctxt "Dataset|"
 msgid "100 °C"
-msgstr "100 Â°C"
+msgstr "100 °C"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
 msgid "20 °C"
-msgstr ""
+msgstr "20 °C"
 
 #: activities/solar_system/Dataset.js:133
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "467 Â°C"
 msgctxt "Dataset|"
 msgid "467 °C"
-msgstr "467 Â°C"
+msgstr "467 °C"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
 msgid "45 °C"
-msgstr ""
+msgstr "45 °C"
 
 #: activities/solar_system/Dataset.js:138
 msgctxt "Dataset|"
@@ -24254,12 +23814,9 @@ msgstr "Dunia"
 
 #: activities/solar_system/Dataset.js:149
 #: activities/solar_system/Dataset.js:251
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The maximum temperature on Mars is 20 Â°C."
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is 20 °C."
-msgstr "Kiwango cha juu cha joto kwenye Mirihi ni 20 Â°C."
+msgstr "Kiwango cha juu cha joto kwenye Mirihi ni 20 °C."
 
 #: activities/solar_system/Dataset.js:153
 msgctxt "Dataset|"
@@ -24361,13 +23918,13 @@ msgstr "Kiwango cha juu cha joto duniani ni:"
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
 msgid "58 °C"
-msgstr ""
+msgstr "58 °C"
 
 #: activities/solar_system/Dataset.js:184
 #: activities/solar_system/Dataset.js:415
 msgctxt "Dataset|"
 msgid "30 °C"
-msgstr ""
+msgstr "30 °C"
 
 #: activities/solar_system/Dataset.js:189
 msgctxt "Dataset|"
@@ -24394,7 +23951,7 @@ msgstr "Kiwango cha juu cha joto kwenye Mirihi ni:"
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
 msgid "60 °C"
-msgstr ""
+msgstr "60 °C"
 
 #: activities/solar_system/Dataset.js:216
 msgctxt "Dataset|"
@@ -24500,20 +24057,14 @@ msgid "The minimum temperature on Jupiter is:"
 msgstr "Kiwango cha chini cha joto kwenye Jupiter ni:"
 
 #: activities/solar_system/Dataset.js:268
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "-145 Â°C"
 msgctxt "Dataset|"
 msgid "-145 °C"
-msgstr "â€"
+msgstr "-145 °C"
 
 #: activities/solar_system/Dataset.js:268
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "-180 Â°C"
 msgctxt "Dataset|"
 msgid "-180 °C"
-msgstr "â€"
+msgstr "-180 °C"
 
 #: activities/solar_system/Dataset.js:273
 msgctxt "Dataset|"
@@ -24567,12 +24118,9 @@ msgid "Saturn"
 msgstr "Zohali"
 
 #: activities/solar_system/Dataset.js:296
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The minimum temperature on Jupiter is -145 Â°C."
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is -145 °C."
-msgstr "Kiwango cha chini cha halijoto kwenye Jupita ni -145 Â°C."
+msgstr "Kiwango cha chini cha halijoto kwenye Jupita ni -145 °C."
 
 #: activities/solar_system/Dataset.js:297
 msgctxt "Dataset|"
@@ -24615,25 +24163,19 @@ msgstr "Kiwango cha chini cha halijoto kwenye Zohali ni:"
 #: activities/solar_system/Dataset.js:376
 msgctxt "Dataset|"
 msgid "0 °C"
-msgstr ""
+msgstr "0 °C"
 
 #: activities/solar_system/Dataset.js:325
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "-178 Â°C"
 msgctxt "Dataset|"
 msgid "-178 °C"
-msgstr "â€"
+msgstr "-178 °C"
 
 #: activities/solar_system/Dataset.js:325
 #: activities/solar_system/Dataset.js:376
 #: activities/solar_system/Dataset.js:415
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "-100 Â°C"
 msgctxt "Dataset|"
 msgid "-100 °C"
-msgstr "â€"
+msgstr "-100 °C"
 
 #: activities/solar_system/Dataset.js:330
 msgctxt "Dataset|"
@@ -24662,12 +24204,9 @@ msgid "Uranus"
 msgstr "Uranus"
 
 #: activities/solar_system/Dataset.js:341
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The temperature on Saturn is -178 Â°C."
 msgctxt "Dataset|"
 msgid "The temperature on Saturn is -178 °C."
-msgstr "Halijoto kwenye Zohali ni -178 Â°C."
+msgstr "Halijoto kwenye Zohali ni -178 °C."
 
 #: activities/solar_system/Dataset.js:345
 msgctxt "Dataset|"
@@ -24735,12 +24274,9 @@ msgid "The maximum temperature on Uranus is:"
 msgstr "Kiwango cha juu cha joto kwenye Uranus ni:"
 
 #: activities/solar_system/Dataset.js:376
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "-216 Â°C"
 msgctxt "Dataset|"
 msgid "-216 °C"
-msgstr "â€"
+msgstr "-216 °C"
 
 #: activities/solar_system/Dataset.js:384
 msgctxt "Dataset|"
@@ -24748,12 +24284,9 @@ msgid "Neptune"
 msgstr "Neptune"
 
 #: activities/solar_system/Dataset.js:386
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The maximum temperature on Saturn is -178 Â°C."
 msgctxt "Dataset|"
 msgid "The maximum temperature on Saturn is -178 °C."
-msgstr "Kiwango cha juu cha halijoto kwenye Zohali ni -178 Â°C."
+msgstr "Kiwango cha juu cha halijoto kwenye Zohali ni -178 °C."
 
 #: activities/solar_system/Dataset.js:387
 msgctxt "Dataset|"
@@ -24808,12 +24341,9 @@ msgid "The average temperature on Neptune is:"
 msgstr "Joto la wastani kwenye Neptune ni:"
 
 #: activities/solar_system/Dataset.js:415
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "-210 Â°C"
 msgctxt "Dataset|"
 msgid "-210 °C"
-msgstr "â€"
+msgstr "-210 °C"
 
 #: activities/solar_system/Dataset.js:420
 msgctxt "Dataset|"
@@ -25228,17 +24758,6 @@ msgstr ""
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
-#| "cell of a grid. In the official Sudoku the grid is 9Ã—9 and made up of 3Ã—"
-#| "3 subgrids (called 'regions'). In GCompris we start at lower levels with "
-#| "a simpler version using symbols and with no regions. In all cases the "
-#| "grid is presented with various symbols or numerals given in some cells "
-#| "(the 'givens'). Each row, column and region must contain only one "
-#| "instance of each symbol or numeral (Source &lt;https://en.wikipedia.org/"
-#| "wiki/Sudoku&gt;)."
 msgctxt "ActivityInfo|"
 msgid ""
 "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
@@ -25250,13 +24769,13 @@ msgid ""
 "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
 msgstr ""
 "Lengo la fumbo ni kuingiza alama au nambari kutoka 1 hadi 9 katika kila seli "
-"ya gridi ya taifa. Katika Sudoku rasmi gridi ya taifa ni 9Ã—9 na inaundwa na "
-"gridi ndogo 3Ã—3 (zinazoitwa 'maeneo'). Katika GCompris tunaanzia viwango "
-"vya chini kwa toleo rahisi zaidi kwa kutumia alama na bila maeneo. Katika "
-"hali zote gridi ya taifa inaonyeshwa na alama au nambari mbalimbali "
-"zinazotolewa katika seli fulani ('givens'). Kila safu mlalo, safu wima na "
-"eneo lazima liwe na mfano mmoja tu wa kila ishara au nambari (Chanzo &lt;"
-"https://en.wikipedia.org/wiki/Sudoku&gt;)."
+"ya gridi ya taifa. Katika Sudoku rasmi gridi ya taifa ni 9×9 na inaundwa na "
+"gridi ndogo 3×3 (zinazoitwa 'maeneo'). Katika GCompris tunaanzia viwango vya "
+"chini kwa toleo rahisi zaidi kwa kutumia alama na bila maeneo. Katika hali "
+"zote gridi ya taifa inaonyeshwa na alama au nambari mbalimbali zinazotolewa "
+"katika seli fulani ('givens'). Kila safu mlalo, safu wima na eneo lazima "
+"liwe na mfano mmoja tu wa kila ishara au nambari (Chanzo &lt;https://en."
+"wikipedia.org/wiki/Sudoku&gt;)."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -25282,7 +24801,7 @@ msgstr "Gridi ndogo zilizo na + opereta."
 #: activities/sudoku/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using symbols."
-msgstr "Gridi za wastani zenye waendeshaji +, âˆ’ na Ã—."
+msgstr "Gridi za wastani zenye waendeshaji +, − na ×."
 
 #: activities/sudoku/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -25292,7 +24811,7 @@ msgstr "Gridi za kati kwa kutumia nambari na alama."
 #: activities/sudoku/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids using numbers."
-msgstr "Gridi kubwa zenye waendeshaji +, âˆ’, Ã— na âˆ•."
+msgstr "Gridi kubwa zenye waendeshaji +, −, × na ∕."
 
 #. Activity title
 #: activities/superbrain/ActivityInfo.qml:15
@@ -26113,18 +25632,13 @@ msgid "Lang activity now available in Dutch."
 msgstr "Shughuli ya Lang sasa inapatikana kwa Kiholanzi."
 
 #: core/ChangeLog.qml:118
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "Merge Norwegian counties Nord-TrÃ¸ndelag and SÃ¸r-TrÃ¸ndelag into "
-#| "TrÃ¸ndelag in geo-country activity."
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
-"Unganisha kaunti za Norwegian Nord-TrÃ¸ndelag na SÃ¸r-TrÃ¸ndelag hadi "
-"Trendelag katika shughuli za kijiografia."
+"Unganisha kaunti za Norwegian Nord-Trøndelag na Sør-Trøndelag hadi Trendelag "
+"katika shughuli za kijiografia."
 
 #: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
@@ -26845,9 +26359,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Katisha"
@@ -26876,135 +26387,3 @@ msgstr "Ruka"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Anzisha shughuli ili kufikia kihariri"
-
-#~ msgctxt "board5_0|"
-#~ msgid "UÅŸak"
-#~ msgstr "UaŸak"
-
-#~ msgctxt "board5_0|"
-#~ msgid "NiÄŸde"
-#~ msgstr "NiÄŸde"
-
-#~ msgctxt "board5_0|"
-#~ msgid "MuÄŸla"
-#~ msgstr "MuÄŸla"
-
-#~ msgctxt "board5_0|"
-#~ msgid "DÃ¼zce"
-#~ msgstr "DÃ¼zce"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Ã‡ankÄ±rÄ±"
-#~ msgstr "Ã‡ankÄ±rÄ±"
-
-#~ msgctxt "board5_0|"
-#~ msgid "AydÄ±n"
-#~ msgstr "AydÄ±n"
-
-#~ msgctxt "board7_0|"
-#~ msgid "ParÃ¡"
-#~ msgstr "ParÃ¡"
-
-#~ msgctxt "board7_0|"
-#~ msgid "GoiÃ¡s"
-#~ msgstr "GoiÃ¡s"
-
-#~ msgctxt "board4_0|"
-#~ msgid "ÅÃ³dÅº"
-#~ msgstr "ÅÃ³dÅº"
-
-#~ msgctxt "board5_1|"
-#~ msgid "IÄŸdÄ±r"
-#~ msgstr "IÄŸdÄ±r"
-
-#~ msgctxt "board5_1|"
-#~ msgid "ElazÄ±ÄŸ"
-#~ msgstr "ElazÄ±ÄŸ"
-
-#~ msgctxt "board5_1|"
-#~ msgid "AÄŸrÄ±"
-#~ msgstr "AÄŸrÄ±"
-
-#~ msgctxt "board16_0|"
-#~ msgid "CriÈ™ana"
-#~ msgstr "Criena"
-
-#~ msgctxt "math_util|"
-#~ msgid "âˆ’"
-#~ msgstr "â€"
-
-#~ msgctxt "math_util|"
-#~ msgid "Ã—"
-#~ msgstr "Ã-"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Câ™¯%1"
-#~ msgstr "Câ™¯%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Dâ™¯%1"
-#~ msgstr "Dâ™­%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Fâ™¯%1"
-#~ msgstr "Fâ™¯%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Gâ™¯%1"
-#~ msgstr "Gâ™¯%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Aâ™¯%1"
-#~ msgstr "Aâ™¯%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Dâ™­%1"
-#~ msgstr "Dâ™­%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Eâ™­%1"
-#~ msgstr "Eâ™­%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Gâ™­%1"
-#~ msgstr "Gâ™%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Aâ™­%1"
-#~ msgstr "Aâ™%1"
-
-#~ msgctxt "PianoOctaveKeyboard|"
-#~ msgid "Bâ™­%1"
-#~ msgstr "Bâ™%1"
-
-#~ msgctxt "Dataset|"
-#~ msgid "50 Â°C"
-#~ msgstr "â€"
-
-#~ msgctxt "Dataset|"
-#~ msgid "35 Â°C"
-#~ msgstr "â€"
-
-#~ msgctxt "Dataset|"
-#~ msgid "20 Â°C"
-#~ msgstr "20 Â°C"
-
-#~ msgctxt "Dataset|"
-#~ msgid "45 Â°C"
-#~ msgstr "45 Â°C"
-
-#~ msgctxt "Dataset|"
-#~ msgid "58 Â°C"
-#~ msgstr "â€"
-
-#~ msgctxt "Dataset|"
-#~ msgid "30 Â°C"
-#~ msgstr "â€"
-
-#~ msgctxt "Dataset|"
-#~ msgid "60 Â°C"
-#~ msgstr "â€"
-
-#~ msgctxt "Dataset|"
-#~ msgid "0 Â°C"
-#~ msgstr "â€"
