@@ -198,7 +198,7 @@ msgstr "<b>Controls del teclat:</b>"
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate"
-msgstr "Fletxes: per a navegar"
+msgstr "«Fletxes»: per a navegar"
 
 #: activities/advanced_colors/ActivityInfo.qml:27
 #: activities/algorithm/ActivityInfo.qml:25
@@ -1363,7 +1363,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
-msgstr "Fletxes: per a moure l'helicòpter"
+msgstr "«Fletxes»: per a moure l'helicòpter"
 
 #: activities/alphabet-sequence/AlphabetSequence.qml:18
 msgctxt "AlphabetSequence|"
@@ -2218,7 +2218,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside the text"
-msgstr "Fletxes: per a navegar pel text"
+msgstr "«Fletxes»: per a navegar pel text"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -3180,7 +3180,7 @@ msgstr ""
 #: activities/find_the_day/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate through the answers"
-msgstr "Fletxes: per a navegar a través de les respostes"
+msgstr "«Fletxes»: per a navegar a través de les respostes"
 
 #: activities/calendar/ActivityInfo.qml:27
 #: activities/find_the_day/ActivityInfo.qml:27
@@ -5624,7 +5624,7 @@ msgstr ""
 #: activities/crane/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selected item"
-msgstr "Fletxes: per a moure l'element seleccionat"
+msgstr "«Fletxes»: per a moure l'element seleccionat"
 
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -9230,7 +9230,7 @@ msgstr ""
 #: activities/fifteen/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
-msgstr "Fletxes: per a moure una peça a l'espai buit."
+msgstr "«Fletxes»: per a moure una peça a l'espai buit."
 
 #. Activity title
 #: activities/find_the_day/ActivityInfo.qml:15
@@ -15435,8 +15435,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris és desenvolupat per la comunitat KDE, podeu traduir GCompris unint-"
-"vos a un equip de traducció a <a href=\"%2\">%2</a>"
+"GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
+"un equip de traducció a <a href=\"%2\">%2</a>"
 
 #: activities/lang/Lang.qml:141
 msgctxt "Lang|"
@@ -18165,7 +18165,8 @@ msgstr "Inici: ix d'una activitat i torna al menú («Ctrl+W» o la tecla «Esc�
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
 msgstr ""
-"Fletxes: mostra el nivell actual. Feu clic per seleccionar un altre nivell"
+"«Fletxes»: mostra el nivell actual. Feu clic per a seleccionar un altre "
+"nivell"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -18733,8 +18734,8 @@ msgid ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
-"GCompris és desenvolupat per la comunitat KDE, podeu traduir GCompris unint-"
-"vos a un equip de traducció a <a href=\"%2\">%2</a>"
+"GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
+"un equip de traducció a <a href=\"%2\">%2</a>"
 
 #: activities/missing-letter/MissingLetter.qml:319
 msgctxt "MissingLetter|"
@@ -19106,7 +19107,7 @@ msgstr ""
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside an area"
-msgstr "Fletxes: per a navegar per l'àrea"
+msgstr "«Fletxes»: per a navegar per l'àrea"
 
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -20242,7 +20243,7 @@ msgstr "Controls del teclat:"
 #: activities/path_encoding_relative/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
-msgstr "Fletxes: direccions"
+msgstr "«Fletxes»: direccions"
 
 #: activities/path_encoding/GridPath.qml:125
 #, qt-format
@@ -21686,7 +21687,7 @@ msgstr "<b>Controls del teclat:</b>"
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the sample area and in the answer area"
-msgstr "Fletxes: per a navegar per l'àrea de mostra i la de resposta"
+msgstr "«Fletxes»: per a navegar per l'àrea de mostra i la de resposta"
 
 #: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -21835,7 +21836,7 @@ msgstr "Dígits: per a seleccionar un color"
 #: activities/redraw_symmetrical/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the grid"
-msgstr "Fletxes: per a navegar per la quadrícula"
+msgstr "«Fletxes»: per a navegar per la quadrícula"
 
 #: activities/redraw/ActivityInfo.qml:29
 #: activities/redraw_symmetrical/ActivityInfo.qml:29

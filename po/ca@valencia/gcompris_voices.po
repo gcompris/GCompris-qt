@@ -785,7 +785,7 @@ msgid ""
 "forward."
 msgstr ""
 "Ajuda a en Tux a trobar l'eixida. Fes servir esquerra i dreta per a girar i "
-"amunt per avançar."
+"amunt per a avançar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
 #: activities/melody/ActivityInfo.qml:18
