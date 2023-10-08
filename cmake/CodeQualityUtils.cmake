@@ -25,6 +25,6 @@ if(CLANG_TIDY_EXE)
     set(CMAKE_CXX_CLANG_TIDY ${CLANG_TIDY_EXE})
     list(
         APPEND CMAKE_CXX_CLANG_TIDY
-            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-*,-modernize-use-auto,-modernize-use-trailing-return-type,-readability-*,-altera-*,-misc-const-correctness,-bugprone-easily-swappable-parameters,-modernize-return-braced-init-list"
+            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-*,-modernize-use-auto,-modernize-use-trailing-return-type,-readability-*,-altera-*,-misc-const-correctness,-bugprone-easily-swappable-parameters,-modernize-return-braced-init-list,-misc-include-cleaner"
         )
 endif()
