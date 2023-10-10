@@ -166,7 +166,11 @@ ActivityBase {
             firstScreen.visible = true
             items.start()
         }
-        onStop: {}
+        onStop: {
+            ledContainer.soundList = []
+            activity.audioVoices.stop()
+            activity.audioVoices.clearQueue()
+        }
 
         Keys.enabled: !bonus.isPlaying
         Keys.onPressed: {
