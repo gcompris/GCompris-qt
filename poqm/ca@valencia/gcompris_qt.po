@@ -20454,7 +20454,7 @@ msgstr "Dígits de l'1 fins al 7: les tecles blanques"
 #: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
-msgstr "De la F2 fins a la F7: les tecles negres"
+msgstr "De la «F2» fins a la «F7»: les tecles negres"
 
 #: activities/piano_composition/ActivityInfo.qml:36
 #: activities/play_piano/ActivityInfo.qml:31
