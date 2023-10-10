@@ -5901,7 +5901,7 @@ msgstr ""
 "Siqnal generatoru ilə 0 və 1 dəyişən siqnalları yaramaq olur. Siqnallar "
 "arasındakı vaxtı generatorun əqrəbləri ilə dəyiçmək olar."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

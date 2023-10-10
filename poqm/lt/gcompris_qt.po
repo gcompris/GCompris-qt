@@ -5957,7 +5957,7 @@ msgstr ""
 "gauti. Laikas tarp dviejų pokyčių gali būti keičiamas, spaudžiant rodykles "
 "ant generatoriaus."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

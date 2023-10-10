@@ -5993,7 +5993,7 @@ msgstr ""
 "значення 0 і 1. Час між змінами сигналу можна змінити натисканням стрілочок "
 "на генераторі."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

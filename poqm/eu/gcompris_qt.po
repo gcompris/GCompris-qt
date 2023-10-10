@@ -5940,7 +5940,7 @@ msgstr ""
 "Seinale sorgailu bat erabiltzen da txandakatzen diren 0 eta 1 seinaleak "
 "sortzeko. Bi aldaketa arteko denbora alda daiteke sorgailuko geziak sakatuz."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

@@ -6043,7 +6043,7 @@ msgstr ""
 "Ketika terjadi antara dua perubahan bisa dimodifikasi dengan menekan tombol "
 "panah pada generator."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

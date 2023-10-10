@@ -5993,7 +5993,7 @@ msgstr ""
 "Generátor signálu sa používa na generovanie striedavých signálov 0 a 1. Čas "
 "medzi dvoma zmenami je možné upraviť stlačením šípok na generátore."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

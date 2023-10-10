@@ -5942,7 +5942,7 @@ msgstr ""
 "genereren. De tijd tussen twee signalen kan gewijzigd worden door op de "
 "pijlen op de generator te drukken."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

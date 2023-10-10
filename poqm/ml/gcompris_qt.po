@@ -5837,7 +5837,7 @@ msgstr ""
 "സിഗ്നൽ ജനറേറ്റർ, ഒന്നിടവിട്ട് മാറുന്ന 0-ന്റെയും 1-ന്റെയും സിഗ്നലുകൾ ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്നു. "
 "ജനറേറ്ററിലെ ആരോകളിൽ അമർത്തി രണ്ടു മാറ്റങ്ങൾക്കിടയിലുള്ള സമയത്തിനു വ്യത്യാസം വരുത്താം."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

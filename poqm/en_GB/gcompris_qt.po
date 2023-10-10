@@ -5923,7 +5923,7 @@ msgstr ""
 "time between two changes can be modified by pressing the arrows on the "
 "generator."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

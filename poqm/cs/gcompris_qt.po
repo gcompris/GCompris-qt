@@ -5865,7 +5865,7 @@ msgstr ""
 "Generátor signálu se používá ke střídavému generování 0 a 1. Čas mezi změnou "
 "lze nastavit stisknutím šipek na generátoru."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

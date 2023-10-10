@@ -6745,7 +6745,7 @@ msgstr ""
 "tempo entre as duas alterações poderá ser modificado se carregar nas setas "
 "do gerador."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

@@ -5908,7 +5908,7 @@ msgstr ""
 "A jelgenerátorváltakozó 0 vagy 1-es jeleket hoz létre. A két jel közt eltelt "
 "idő változtatható a nyilak megnyomásával."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

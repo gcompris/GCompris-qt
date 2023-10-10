@@ -5925,7 +5925,7 @@ msgstr ""
 "Czas pomiędzy dwiema zmianami można zmienić naciskając strzałki na "
 "generatorze."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

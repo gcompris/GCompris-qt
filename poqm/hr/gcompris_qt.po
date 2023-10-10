@@ -5915,7 +5915,7 @@ msgstr ""
 "Vrijeme između dvije promjene može se promijeniti pritiskom na strelice na "
 "generatoru."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

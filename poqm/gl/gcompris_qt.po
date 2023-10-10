@@ -6039,7 +6039,7 @@ msgstr ""
 "O xerador de sinais úsase para xerar sinais alternativas a 0 e 1. O tempo "
 "entre dous cambios pode modificarse premendo as frechas do xerador."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

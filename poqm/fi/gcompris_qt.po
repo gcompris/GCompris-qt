@@ -5969,7 +5969,7 @@ msgstr ""
 "Kahden muutoksen välistä aikaa voidaan muuttaa painamalla generaattorin "
 "nuolia."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

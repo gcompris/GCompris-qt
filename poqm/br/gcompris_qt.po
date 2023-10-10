@@ -5947,7 +5947,7 @@ msgstr ""
 "Ur ganer-signal a implijer evit krouiñ signaloù a bep eil 0 hag 1. An amzer "
 "etre daou gemm a c'haller kemm en ur bouezañ war biroù ar ganer."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

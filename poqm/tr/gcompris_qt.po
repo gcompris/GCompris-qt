@@ -5882,7 +5882,7 @@ msgstr ""
 "kullanılır. İki değişiklik arasındaki süre, jeneratör üzerindeki oklara "
 "basılarak değiştirilebilir."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

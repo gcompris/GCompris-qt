@@ -6190,7 +6190,7 @@ msgstr ""
 "1. Перыяд змены сігналу можа быць наладжаны націсканнем стрэлак на "
 "генератары."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

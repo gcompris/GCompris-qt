@@ -6107,7 +6107,7 @@ msgstr ""
 "1. Времето помеѓу две промени може да се менува со притискање на стрелките "
 "на генераторот."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

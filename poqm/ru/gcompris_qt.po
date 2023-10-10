@@ -5958,7 +5958,7 @@ msgstr ""
 "С помощью генератора сигналов создаются чередующиеся сигналы 0 и 1. Время "
 "между сигналами можно изменить с помощью стрелок на генераторе."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

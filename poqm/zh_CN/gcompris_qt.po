@@ -5631,7 +5631,7 @@ msgstr ""
 "信号生成器用于生成 0 和 1 的交替信号。 两次信号变换之间的时间可以通过按下生成"
 "器上的箭头来修改。"
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

@@ -6022,7 +6022,7 @@ msgstr ""
 "zu generieren. Die Zeit zwischen zwei Wechseln kann durch das Drücken der "
 "Pfeile auf dem Generator verändert werden."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

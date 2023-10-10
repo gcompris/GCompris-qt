@@ -5666,7 +5666,7 @@ msgstr ""
 "信號產生器（Signal Generator）用來產生 0 與 1 的信號。產生兩個信號之間的時間"
 "可以按產生器上的箭頭來改變。"
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

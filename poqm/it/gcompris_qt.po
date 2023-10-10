@@ -6050,7 +6050,7 @@ msgstr ""
 "1. Il tempo tra due variazioni può essere modificato premendo le frecce sul "
 "generatore."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

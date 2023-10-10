@@ -6008,7 +6008,7 @@ msgstr ""
 "alternohen mes tyre. Koha mes dy ndryshimesh mund të ndryshohet duke shtypur "
 "shigjetat te prodhuesi."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

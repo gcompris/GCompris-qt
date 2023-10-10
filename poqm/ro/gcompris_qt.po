@@ -6019,7 +6019,7 @@ msgstr ""
 "de 0 și 1. Timpul de schimbare între cele două semnale se poate modifica "
 "apăsând săgețile de pe generator."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

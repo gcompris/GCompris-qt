@@ -5774,7 +5774,7 @@ msgstr ""
 "يتم استخدام مولد إشارة لتوليد إشارات متناوبة من 0 و 1. لتغيير فترة التناوب "
 "اضغط على الأسهم الموجودة على المولد."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

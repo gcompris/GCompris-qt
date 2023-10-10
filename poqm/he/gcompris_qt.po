@@ -5747,7 +5747,7 @@ msgstr ""
 "מחולל אותות משמש להחלפת האות ל־0 ו־1. הזמן בין שני שינויים ניתן לשינוי "
 "באמצעות לחיצה על החיצים במחולל."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

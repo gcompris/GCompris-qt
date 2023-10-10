@@ -6075,7 +6075,7 @@ msgstr ""
 "niveaux 0 et 1. Le délai entre deux changements peut être modifié en "
 "pressant les flèches du générateur."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"

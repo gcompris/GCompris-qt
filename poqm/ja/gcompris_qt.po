@@ -5837,7 +5837,7 @@ msgstr ""
 "信号発生器は0と1の信号を交互に生成する際に使われます。この二つが切り替わるま"
 "での時間は生成器にある矢印を押すことで変えられます。"
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"
