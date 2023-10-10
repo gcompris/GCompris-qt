@@ -236,6 +236,8 @@ function showAnswer() {
 
 function playLetter(letter) {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    items.audioVoices.stop()
+    items.audioVoices.clearQueue()
     items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/" +
                              Core.getSoundFilenamForChar(letter)))
 }
