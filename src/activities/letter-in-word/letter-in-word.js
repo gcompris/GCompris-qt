@@ -191,8 +191,9 @@ function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0
         nextLevel()
+    } else {
+        initLevel();
     }
-    initLevel();
 }
 
 function checkAnswer() {
