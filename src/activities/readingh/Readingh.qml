@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (graphics and improvements)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -119,16 +120,9 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            // Do not pass automatically at next level, allowing the child to do more than one try, or add sublevels?
             Component.onCompleted: {
-                win.connect(resetClickInProgress)
-                loose.connect(resetClickInProgress)
+                win.connect(Activity.nextLevel)
             }
-        }
-
-        function resetClickInProgress() {
-            items.buttonsBlocked = false
-            Activity.initLevel()
         }
 
         Item {
@@ -317,8 +311,6 @@ ActivityBase {
             anchors.right: mainArea.right
             anchors.bottom: mainArea.bottom
             anchors.margins: background.baseMargins
-            currentSubLevel: 0
-            numberOfSubLevels: 10
         }
 
         Item {
@@ -336,22 +328,39 @@ ActivityBase {
             anchors.centerIn: buttonsArea
             theme: "light"
         }
+
+        Rectangle {
+            color: "#313131"
+            width: answerButtonsFlow.width + background.baseMargins * 2
+            height: answerButtonsFlow.height + background.baseMargins * 2
+            anchors.centerIn: answerButtonsFlow
+            visible: !background.isHorizontalLayout && answerButtonsFlow.visible
+        }
+
         Flow {
             id: answerButtonsFlow
             width: Math.min(250 * ApplicationInfo.ratio, buttonsArea.width)
             height: Math.min(120 * ApplicationInfo.ratio, buttonsArea.height * 0.5)
             anchors.centerIn: buttonsArea
+            visible: false
             AnswerButton {
                 id : answerButtonFound
                 width: parent.width
                 height: parent.height * 0.5
                 textLabel: qsTr("Yes, I saw it!")
                 isCorrectAnswer: Activity.words ? Activity.words.indexOf(items.textToFind) != -1 : false
-                onCorrectlyPressed: bonus.good("flower")
-                onIncorrectlyPressed: bonus.bad("flower")
+                onCorrectlyPressed: Activity.nextSubLevel()
+                onIncorrectlyPressed: Activity.retrySubLevel()
                 blockAllButtonClicks: items.buttonsBlocked
                 onPressed: {
                     items.buttonsBlocked = true
+                    if(isCorrectAnswer) {
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                        score.currentSubLevel += 1;
+                        score.playWinAnimation();
+                    } else {
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                    }
                 }
             }
 
@@ -361,11 +370,18 @@ ActivityBase {
                 height: answerButtonFound.height
                 textLabel: qsTr("No, it was not there!")
                 isCorrectAnswer: !answerButtonFound.isCorrectAnswer
-                onCorrectlyPressed: bonus.good("flower")
-                onIncorrectlyPressed: bonus.bad("flower")
+                onCorrectlyPressed: Activity.nextSubLevel()
+                onIncorrectlyPressed: Activity.retrySubLevel()
                 blockAllButtonClicks: items.buttonsBlocked
                 onPressed: {
                     items.buttonsBlocked = true
+                    if(isCorrectAnswer) {
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                        score.currentSubLevel += 1;
+                        score.playWinAnimation();
+                    } else {
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                    }
                 }
             }
         }

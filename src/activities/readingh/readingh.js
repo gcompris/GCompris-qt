@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (graphics and improvements)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -28,6 +29,7 @@ var words
 function start(items_) {
     items = items_
     currentLevel = 0
+    items.score.currentSubLevel = 0
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
 
     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
@@ -61,11 +63,18 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
+    items.score.currentSubLevel = 0
     items.wordDropTimer.stop();
     items.answerButtonsFlow.visible = false;
 
     // initialize level
     level = items.wordlist.getLevelWordList(currentLevel + 1);
+    items.score.numberOfSubLevels = Math.min(10, Math.floor(level.words.length * 0.5))
+    initSubLevel();
+}
+
+function initSubLevel() {
+    items.answerButtonsFlow.visible = false;
     items.wordlist.initRandomWord(currentLevel + 1)
     items.textToFind = items.wordlist.getRandomWord()
     Core.shuffle(level.words)
@@ -76,7 +85,25 @@ function initLevel() {
     items.wordDisplayRepeater.idToHideBecauseOverflow = 0
     items.answerButtonFound.isCorrectAnswer = words.indexOf(items.textToFind) != -1
     items.iAmReady.visible = true
+    items.buttonsBlocked = false
 }
+
+function retrySubLevel() {
+    items.wordlist.appendRandomWord(items.textToFind);
+    initSubLevel();
+}
+
+
+function nextSubLevel() {
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        console.log(items.currentSubLevel)
+        console.log(items.score.numberOfSubLevels)
+        items.bonus.good("flower")
+    } else {
+        initSubLevel();
+    }
+}
+
 
 function nextLevel() {
     if(maxLevel <= ++currentLevel) {
