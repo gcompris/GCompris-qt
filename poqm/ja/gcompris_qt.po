@@ -18528,7 +18528,7 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "準備ができたら、ボクをクリックして点字を作ってみて。"
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, fuzzy, qt-format
 #| msgctxt "Data|"
 #| msgid "Maximum value: 10."
@@ -18536,7 +18536,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "最大値: 10。"
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

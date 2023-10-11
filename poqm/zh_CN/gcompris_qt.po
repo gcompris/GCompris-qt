@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-09-16 10:08\n"
+"PO-Revision-Date: 2023-10-10 14:28\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -13507,14 +13507,11 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "加法、乘法、除法和减法练习。"
+msgstr ""
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -13523,12 +13520,9 @@ msgid "Use the four numbers with given operators to find 24."
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside the text"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "方向键：在文本内导航"
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -13541,12 +13535,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "退格键：删除答案中的最后一个数字"
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -13569,12 +13560,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "乘法。"
+msgstr ""
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -13582,12 +13570,9 @@ msgid "Solvable with all operators."
 msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "除法。"
+msgstr ""
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -14345,12 +14330,9 @@ msgstr "找出五弦琴"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "找出小鼓"
+msgstr ""
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -17936,13 +17918,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -24747,12 +24729,9 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
-msgstr "取消"
+msgstr ""
 
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"

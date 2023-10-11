@@ -18976,13 +18976,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Als je klaar bent, klik dan op Tux en we zullen naar morsecode converteren."
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morse-waarde: %1"
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

@@ -18599,13 +18599,13 @@ msgstr ""
 "Kada ste spremni, kliknite na mene i pokušajte repodrukcije Braille "
 "karaktera."
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

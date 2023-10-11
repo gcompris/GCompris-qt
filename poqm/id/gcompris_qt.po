@@ -19064,13 +19064,13 @@ msgstr ""
 "Jika kamu sudah siap, klik Tux dan kamu akan berkomunikasi menggunakan kode "
 "Morse."
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Nilai morse: %1"
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

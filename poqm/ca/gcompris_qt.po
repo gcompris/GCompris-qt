@@ -19321,13 +19321,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Quan estiguis preparat, fes clic sobre en Tux i conversarem en codi Morse."
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Valor Morse: %1"
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"

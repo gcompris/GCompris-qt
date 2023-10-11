@@ -19304,13 +19304,13 @@ msgstr ""
 "Keď budeš pripravený, klikni na Tuxa a budeme sa rozprávať Morzeovou "
 "abecedou."
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morseova hodnota: %1"
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:354
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
