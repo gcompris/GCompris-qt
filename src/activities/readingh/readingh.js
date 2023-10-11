@@ -69,16 +69,36 @@ function initLevel() {
 
     // initialize level
     level = items.wordlist.getLevelWordList(currentLevel + 1);
-    items.score.numberOfSubLevels = Math.min(10, Math.floor(level.words.length * 0.5))
+    items.wordlist.initRandomWord(currentLevel + 1)
+    items.score.numberOfSubLevels = Math.min(10, Math.floor(level.words.length))
     initSubLevel();
 }
 
 function initSubLevel() {
     items.answerButtonsFlow.visible = false;
-    items.wordlist.initRandomWord(currentLevel + 1)
     items.textToFind = items.wordlist.getRandomWord()
     Core.shuffle(level.words)
     words = level.words.slice(0, 15)
+    // add 1/2 probablity for yes/no answer
+    var probability = Math.random()
+    if(probability > 0.5) {     // answer should be yes
+        if(words.indexOf(items.textToFind) == -1) {
+            words.pop()
+            words.push(items.textToFind)
+        }
+    } else if(words.indexOf(items.textToFind) > -1) {    // answer should be no
+        var wordIndex = words.indexOf(items.textToFind)  // if word is included, remove it
+        words.splice(wordIndex, 1)
+        for(var i=level.words.length - 1; i == 0; i--) { // try to get a word from the whole list different from textToFind and not yet in words
+            if(level.words[i] != items.textToFind && words.indexOf(level.words[i]) == -1) {
+                var wordToAdd = level.words[i]
+                words.push(wordToAdd)
+                break
+            }
+        }
+    }
+    Core.shuffle(words)
+
     items.currentIndex = -1
 
     items.wordDisplayRepeater.model = words
@@ -96,8 +116,6 @@ function retrySubLevel() {
 
 function nextSubLevel() {
     if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
-        console.log(items.currentSubLevel)
-        console.log(items.score.numberOfSubLevels)
         items.bonus.good("flower")
     } else {
         initSubLevel();
