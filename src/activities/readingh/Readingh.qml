@@ -43,6 +43,9 @@ ActivityBase {
         // system locale by default
         property string locale: "system"
 
+        property int baseMargins: 10 * ApplicationInfo.ratio
+        property bool isHorizontalLayout: background.width >= background.height
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -51,6 +54,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias wordlist: wordlist
+            property alias score: score
             property alias wordDropTimer: wordDropTimer
             property alias locale: background.locale
             property alias iAmReady: iAmReady
@@ -127,13 +131,117 @@ ActivityBase {
             Activity.initLevel()
         }
 
+        Item {
+            id: mainArea
+            anchors.fill: background
+            anchors.bottomMargin: bar.height * 1.2
+            anchors.topMargin: background.baseMargins
+            anchors.leftMargin: background.baseMargins
+            anchors.rightMargin: background.baseMargins
+        }
+
+        states: [
+            State {
+                id: horizontalLayout
+                when: background.isHorizontalLayout
+                PropertyChanges {
+                    target: wordDisplayListBg
+                    anchors.margins: background.baseMargins
+                    width: 0.45 * mainArea.width
+                }
+                AnchorChanges {
+                    target: wordDisplayListBg
+                    anchors.top: mainArea.top
+                    anchors.bottom: mainArea.bottom
+                }
+                PropertyChanges {
+                    target: wordToFindBoxBg
+                    anchors.margins: background.baseMargins
+                    width: mainArea.width * 0.45
+                    height: mainArea.height * 0.3
+                }
+                AnchorChanges {
+                    target: wordToFindBoxBg
+                    anchors.horizontalCenter: buttonsArea.horizontalCenter
+                    anchors.top: mainArea.top
+                }
+                PropertyChanges {
+                    target: buttonsArea
+                    height: wordDisplayListBg.height * 0.5
+                }
+                AnchorChanges {
+                    target: buttonsArea
+                    anchors.top: wordToFindBoxBg.bottom
+                    anchors.left: wordDisplayListBg.right
+                    anchors.right: background.right
+                    anchors.bottom: score.top
+                    anchors.verticalCenter: undefined
+                }
+            },
+            State {
+                id: verticalLayout
+                when: !background.isHorizontalLayout
+                PropertyChanges {
+                    target: wordDisplayListBg
+                    anchors.margins: background.baseMargins
+                }
+                AnchorChanges {
+                    target: wordDisplayListBg
+                    anchors.top: wordToFindBoxBg.bottom
+                    anchors.bottom: score.top
+                    anchors.left: mainArea.left
+                    anchors.right: mainArea.right
+                }
+                PropertyChanges {
+                    target: wordToFindBoxBg
+                    anchors.margins: 0
+                    width: mainArea.width - 4 * background.baseMargins
+                    height: mainArea.height * 0.2
+                }
+                AnchorChanges {
+                    target: wordToFindBoxBg
+                    anchors.horizontalCenter: mainArea.horizontalCenter
+                    anchors.top: mainArea.top
+                }
+                PropertyChanges {
+                    target: buttonsArea
+                    height: wordDisplayListBg.height * 0.5
+                }
+                AnchorChanges {
+                    target: buttonsArea
+                    anchors.top: undefined
+                    anchors.bottom: undefined
+                    anchors.left: wordDisplayListBg.left
+                    anchors.right: wordDisplayListBg.right
+                    anchors.verticalCenter: wordDisplayListBg.verticalCenter
+                }
+            }
+        ]
+
+        Rectangle {
+            id: wordDisplayListBgShadow
+            color: "#50000000"
+            width: wordDisplayListBg.width
+            height: wordDisplayListBg.height
+            x: wordDisplayListBg.x + 2 * ApplicationInfo.ratio
+            y: wordDisplayListBg.y + 2 * ApplicationInfo.ratio
+        }
+
+        Rectangle {
+            id: wordDisplayListBg
+            color: "#F2F2F2"
+            anchors.top: mainArea.top
+            anchors.left: mainArea.left
+            anchors.margins: background.baseMargins
+            width: 0.45 * mainArea.width
+            height: mainArea.height
+        }
+
         Flow {
             id: wordDisplayList
             spacing: 20
-            x: 70/800*parent.width
-            y: 100/600*parent.height - 40 * ApplicationInfo.ratio
-            width: 350/800*parent.width-x
-            height: 520/600*parent.height-y - 40 * ApplicationInfo.ratio
+            anchors.fill: wordDisplayListBg
+            anchors.margins: background.baseMargins
             flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
             layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
 
@@ -164,36 +272,79 @@ ActivityBase {
             }
         }
 
+        Rectangle {
+            color: "#50000000"
+            width: wordToFindBoxBg.width
+            height: wordToFindBoxBg.height
+            x: wordToFindBoxBg.x + 2 * ApplicationInfo.ratio
+            y: wordToFindBoxBg.y + 2 * ApplicationInfo.ratio
+            radius: background.baseMargins
+        }
+        Rectangle {
+            id: wordToFindBoxBg
+            color: "#E8E8E8"
+            anchors.horizontalCenter: buttonsArea.horizontalCenter
+            anchors.top: mainArea.top
+            anchors.margins: background.baseMargins
+            width: mainArea.width * 0.45
+            height: mainArea.height * 0.3
+            radius: background.baseMargins
+        }
+        Rectangle {
+            color: "transparent"
+            anchors.fill: wordToFindBoxBg
+            anchors.margins: background.baseMargins
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "#87A6DD"
+            radius: background.baseMargins
+        }
+
         GCText {
             id: wordToFindBox
-            x: 430/800*parent.width
-            y: 90/600*parent.height
             text: qsTr("<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</font>").arg(items.textToFind)
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
-            width: background.width/3
-            height: background.height/5
+            anchors.fill: wordToFindBoxBg
+            anchors.topMargin: 1.2 * background.baseMargins
+            anchors.bottomMargin: 1.2 * background.baseMargins
+            anchors.leftMargin: 2 * background.baseMargins
+            anchors.rightMargin: 2 * background.baseMargins
             fontSizeMode: Text.Fit
+        }
+
+        Score {
+            id: score
+            anchors.right: mainArea.right
+            anchors.bottom: mainArea.bottom
+            anchors.margins: background.baseMargins
+            currentSubLevel: 0
+            numberOfSubLevels: 10
+        }
+
+        Item {
+            id: buttonsArea
+            anchors.top: wordToFindBoxBg.bottom
+            anchors.left: wordDisplayListBg.right
+            anchors.right: background.right
+            anchors.bottom: score.top
+            anchors.margins: 10 * ApplicationInfo.ratio
         }
 
         ReadyButton {
             id: iAmReady
             onClicked: Activity.run()
-            x: background.width / 2
-            y: background.height / 2.2
-            anchors.verticalCenter: undefined
-            anchors.horizontalCenter: undefined
+            anchors.centerIn: buttonsArea
             theme: "light"
         }
         Flow {
             id: answerButtonsFlow
-            x: iAmReady.x
-            y: iAmReady.y
-            width: wordToFindBox.width
+            width: Math.min(250 * ApplicationInfo.ratio, buttonsArea.width)
+            height: Math.min(120 * ApplicationInfo.ratio, buttonsArea.height * 0.5)
+            anchors.centerIn: buttonsArea
             AnswerButton {
                 id : answerButtonFound
-                width: Math.min(250 * ApplicationInfo.ratio, background.width/2-10)
-                height: 60 * ApplicationInfo.ratio
+                width: parent.width
+                height: parent.height * 0.5
                 textLabel: qsTr("Yes, I saw it!")
                 isCorrectAnswer: Activity.words ? Activity.words.indexOf(items.textToFind) != -1 : false
                 onCorrectlyPressed: bonus.good("flower")
@@ -206,8 +357,8 @@ ActivityBase {
 
             AnswerButton {
                 id : answerButtonNotFound
-                width: Math.min(250 * ApplicationInfo.ratio, background.width/2-10)
-                height: 60 * ApplicationInfo.ratio
+                width: parent.width
+                height: answerButtonFound.height
                 textLabel: qsTr("No, it was not there!")
                 isCorrectAnswer: !answerButtonFound.isCorrectAnswer
                 onCorrectlyPressed: bonus.good("flower")
