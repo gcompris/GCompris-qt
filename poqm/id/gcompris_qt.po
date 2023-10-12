@@ -2498,7 +2498,7 @@ msgstr ""
 "Terakhir, untuk memuat set tingkatan kamu, klik tombol 'Muat tingkatan yang "
 "disimpan'."
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2508,7 +2508,7 @@ msgstr ""
 "pengaturan kegiatan dan kemudian memuat berkas kamu, atau memilih set "
 "tingkat 'bawaan'."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2588,7 +2588,7 @@ msgstr ""
 "Tekan tombol panah kiri dan kanan bersamaan, agar bola bergerak secara "
 "lurus. Pada layar sentuh kamu harus menekan dengan kedua tangan bersamaan."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2596,7 +2596,7 @@ msgstr ""
 "Ketuk dengan kedua jari secara bersamaan, untuk membuat bola bergerak secara "
 "lurus."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2795,7 +2795,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Gambar ini akan membantumu untuk menghitung nilai bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2864,16 +2864,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Ruang: membuka atau menutup kartu braille"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Sekarang akan sedikit lebih sulit tanpa peraga braille."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2882,7 +2882,7 @@ msgstr ""
 "Lihatlah peraga huruf Braille dan perhatikan kesamaan baris pertama dan "
 "kedua."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2891,7 +2891,7 @@ msgstr ""
 "Sekali lagi, seperti baris pertama tetapi hati-hati, huruf 'W' sudah "
 "ditambahkan."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Ini mudah, bilangan adalah sama seperti huruf dari A sampai J."
@@ -3547,7 +3547,7 @@ msgstr ""
 "Tinjau ulang petunjuk dan kemudian seret serta letakkan benda sesuai yang "
 "ditentukan."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3559,12 +3559,12 @@ msgstr ""
 "demo atau 'Jangan memperlihatkan dialog ini lagi' jika kamu tidak ingin "
 "melihat dialog ini lagi."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Perbarui kumpulan gambar"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Jangan perlihatkan dialog ini lagi"
@@ -4215,22 +4215,22 @@ msgstr ""
 "&lt;https://github.com/shubhendusaurabh/draughts.js&gt;. Panduan berasal "
 "dari wikipedia &lt;https://en.wikipedia.org/wiki/Draughts&gt;"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Giliran hitam"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Giliran putih"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Putih menang"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Hitam menang"
@@ -4351,42 +4351,42 @@ msgid ""
 msgstr ""
 "Mesin catur adalah p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Giliran hitam"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Giliran putih"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Putih skakmat"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Hitam skakmat"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Permainan seri"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Skak oleh putih"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Skak oleh hitam"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Tidak boleh, rajamu diskak"
@@ -5388,7 +5388,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Temukan bebek merah muda"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5397,12 +5397,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Keluar"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -5574,7 +5574,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Spasi atau Enter atau Tab: pilih benda berikutnya"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5582,7 +5582,7 @@ msgstr ""
 "ibu;hiu;per;dua;jas;cat;rel;air;tas;beo;bus;jam;mei;sop;kol;api;teh;tua;ban"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5592,7 +5592,7 @@ msgstr ""
 "duku;lagu"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6860,7 +6860,7 @@ msgstr ""
 "Pada tingkat tiga, ditampilkan teks secara acak dan kamu harus mengeklik "
 "gambar hewan sesuai dengan teks tersebut."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6869,12 +6869,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Keluar"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -9322,7 +9322,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Pilih angka yang sesuai pada bagian yang dijelaskan sesuai intruksi."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Temukan pecahan sesuai yang ditampilkan."
@@ -14019,57 +14019,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: hapus digit terakhir pada jawaban kamu"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr ""
@@ -14198,7 +14198,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Panah kiri atau kanan: memindahkan pesawat ruang angkasa"
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14211,7 +14211,7 @@ msgstr ""
 "pada massa dari kedua benda dan berbanding terbalik dengan kuadrat jarak "
 "yang memisahkan pusatnya."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14223,7 +14223,7 @@ msgstr ""
 "besar. Jadi seiring dengan bertambahnya massa benda, kekuatan daya tarik "
 "gravitasi di antara keduanya juga meningkat."
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14234,7 +14234,7 @@ msgstr ""
 "objek yang saling berinteraksi, jarak pemisah yang lebih banyak akan "
 "menghasilkan gaya gravitasi yang lebih lemah."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14245,7 +14245,7 @@ msgstr ""
 "tabrakan dengan planet sampai kamu mencapai stasiun ruang angkasa. Panah "
 "menunjukkan arah dan intensitas gravitasi di pesawat kamu."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14428,12 +14428,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Tingkat %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "hasil bukan bilangan bulat postif"
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "hasil bukan sebuah bilangan bulat"
@@ -14528,18 +14528,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: menghapus angka"
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Angka kamu terlalu tinggi"
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Angka kamu terlalu rendah"
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Kamu menemukan angkanya!"
@@ -14634,18 +14634,18 @@ msgstr ""
 "yang sesuai tersedia, Kamu akan mendengar kata untuk menemukan kapan tiga "
 "percobaan tersisa."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Percobaan: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Kami mohon maaf, kami belum memiliki terjemahan untuk bahasamu."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14655,7 +14655,7 @@ msgstr ""
 "GCompris dikembangkan oleh komunitas KDE, kamu bisa menerjemahkan GCompris "
 "dengan bergabung pada sebuah tim penerjemahan di <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15332,31 +15332,31 @@ msgstr ""
 "Panah kiri dan kanan: pada tingkat pertama, pindah ke samping; pada tingkat "
 "yang lebih tinggi, memutar pesawat ruang angkasa"
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Bahan Bakar: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Ketinggian: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Kecepatan: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Percepatan: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15719,7 +15719,7 @@ msgstr ""
 "jumlah bilah yang dijatuhkan di area kosong sesuai dengan angka desimal yang "
 "ditampilkan. Klik tombol OK untuk menyetujui jawaban kamu."
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15728,7 +15728,7 @@ msgstr ""
 "Angka desimal ditampilkan. Bilah panjang mewakili sebuah satuan penuh, dan "
 "setiap potongan di dalamnya mewakili sepersepuluh satuan tersebut."
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15741,7 +15741,7 @@ msgstr ""
 "yang dijatuhkan di area kosong sesuai dengan angka desimal yang ditampilkan. "
 "Kemudian klik tombol OK untuk menyetujui jawaban kamu."
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15752,7 +15752,7 @@ msgstr ""
 "dari pengurangan diwakili dengan bilah. Satu bilah mewakili sebuah satuan "
 "penuh, dan setiap potongan di dalamnya mewakili sepersepuluh satuan tersebut."
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15761,8 +15761,8 @@ msgstr ""
 "Klik pada potongan untuk menguranginya dan menampilkan hasil operasi, dan "
 "klik tombol OK untuk menyetujui jawaban kamu."
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15771,7 +15771,7 @@ msgstr ""
 "Jika jawabannya benar, hasilnya sesuai dengan angka di atasnya, klik tombol "
 "OK untuk menyetujui jawaban kamu."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15782,7 +15782,7 @@ msgstr ""
 "mewakili sebuah satuan penuh, dan setiap potongan di dalam bilah mewakili "
 "sepersepuluh satuan tersebut."
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15795,14 +15795,14 @@ msgstr ""
 "yang dijatuhkan sesuai dengan hasil penjumlahan, dan klik tombol OK untuk "
 "menyetujui jawaban kamu."
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "Sebuah jumlah diminta. Tanda segitiga digunakan untuk memilih hingga 10 "
 "potongan kotak berwarna oranye."
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16352,12 +16352,12 @@ msgstr ""
 "Huruf ditampilkan pada bendera yang menempel pada pesawat. Pilih semua kata "
 "dalam daftar yang berisi huruf yang disebutkan dan kemudian tekan tombol OK."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Kami mohon maaf, kami belum memiliki terjemahan untuk bahasamu."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16367,7 +16367,7 @@ msgstr ""
 "GCompris dikembangkan oleh komunitas KDE, kamu bisa menerjemahkan GCompris "
 "dengan bergabung pada sebuah tim penerjemahan di <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16972,7 +16972,7 @@ msgstr ""
 "gambang. Kamu bisa mendengarkan lagi urutan suara dengan mengklik tombol "
 "ulangi yang berbentuk bibir."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16981,12 +16981,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Keluar"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -18139,7 +18139,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18148,12 +18148,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Keluar"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -18585,7 +18585,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Kosakata"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18594,12 +18594,12 @@ msgstr ""
 "Letakkan kegiatan favorit kamu di sini dengan mengklik matahari di kanan "
 "atas kegiatan."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cari kegiatan yang kamu inginkan"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Pengaturan Kegiatan"
@@ -18783,12 +18783,12 @@ msgstr ""
 "lengkap tertulis di bawah gambar. Klik pada huruf yang hilang untuk "
 "melengkapi kata, atau ketik huruf pada keyboardmu."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Kami mohon maaf, kami belum memiliki terjemahan untuk bahasamu."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18798,7 +18798,7 @@ msgstr ""
 "GCompris dikembangkan oleh komunitas KDE, kamu dapat menerjemahkan GCompris "
 "dengan bergabung pada sebuah tim penerjemahan di <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18870,7 +18870,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab: kemudikan antara area bawah dan atas"
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18880,7 +18880,7 @@ msgstr ""
 "kamu ingin menghapus koin atau uang kertas, klik atau ketuk koin pada bagian "
 "atas layar."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -19064,13 +19064,13 @@ msgstr ""
 "Jika kamu sudah siap, klik Tux dan kamu akan berkomunikasi menggunakan kode "
 "Morse."
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Nilai morse: %1"
 
-#: activities/morse_code/MorseCode.qml:354
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19278,39 +19278,39 @@ msgstr ""
 "Jika kamu mengalahkan komputer atau membiarkannya kurang dari 3 buah "
 "potongan, maka kamu memenangkan permainan."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Tempatkan kepingan"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Pindahkan sebuah kepingan"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Lepaskan sebuah kepingan"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Selamat"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Selamat Pemain 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Selamat Pemain 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Coba lagi"
@@ -19385,7 +19385,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19394,12 +19394,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -19757,32 +19757,32 @@ msgstr ""
 "Kamu diberi beberapa angka. Seret dan jatuhkan ke wilayah atas dalam urutan "
 "naik atau urutan turun seperti yang diminta."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Seret dan jatuhkan benda dalam urutan naik."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Seret dan jatuhkan benda dalam urutan turun."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Seret dan jatuhkan huruf dalam urutan alfabet."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Seret dan jatuhkan huruf dalam urutan alfabet terbalik."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Seret dan jatuhkan benda dalam urutan kronologi."
 
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -20364,12 +20364,12 @@ msgstr ""
 "Amati kedua gambar dengan saksama. Terdapat sedikit perbedaan. Bila kamu "
 "menemukan bagian perbedaannya kamu harus mengekliknya."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Tarik slider untuk menunjukkan perbedaannya."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klik pada perbedaan antara dua gambar."
@@ -20777,30 +20777,30 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Notasi mol"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Ini adalah kunci G yang digunakan untuk nada tinggi."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Ini adalah paranada di kunci F untuk nada rendah."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
 "Kunci hitam adalah kunci untuk mol dan kres, Notasi kres memiliki tanda ♯."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Setiap kunci hitam memiliki dua nama: mol dan kres. Notasi mol memiliki "
 "tanda ♭."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -20809,7 +20809,7 @@ msgstr ""
 "Klik pada simbol not untuk menulis not dengan durasi yang berbeda, misalnya "
 "untuk menulis not penuh, not setengah, not seperempat dan not seperdelapan."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -20820,18 +20820,18 @@ msgstr ""
 "tanda diam untuk memilih durasinya dan klik tombol menambahkan untuk "
 "memasukkannya ke paranada."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Sekarang kamu bisa memuat musik dan juga menyimpan komposisimu."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Kesalahan menyimpan melodi ke berkas kamu (%1)"
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -20867,7 +20867,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Kamu menyimpan melodi"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20876,12 +20876,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -21132,7 +21132,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klik pada tombol kunci piano sesuai dengan contoh not yang dimainkan."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21141,12 +21141,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -21245,7 +21245,7 @@ msgstr ""
 "Ikuti garis vertikal dan klik pada drum atau tekan tombol spasi untuk "
 "memainkan ritme dengan benar."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21254,12 +21254,12 @@ msgstr ""
 "Kegiatan ini memerlukan suara, sehingga akan memutar beberapa suara bahkan "
 "ketika suara audio atau efek dinonaktifkan dalam pengaturan utama."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Berhenti"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Lanjutkan"
@@ -21719,7 +21719,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Masukkan atau Kembalikan: kirimkan jawaban kamu"
 
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21728,7 +21728,7 @@ msgstr ""
 "Amati dan ingat bentuk kereta sebelum kereta menghilang dari pandangan dan "
 "seret gerbong atau lokomotif untuk menyiapkan kereta yang sama."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21768,7 +21768,7 @@ msgstr ""
 "mendatar, akan muncul dan menghilang. Apakah kata yang sebutkan muncul dalam "
 "daftar?"
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21778,12 +21778,12 @@ msgstr ""
 "<font color=\"#373737\">Periksa apakah kata<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ditampilkan</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ya, aku melihatnya!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Tidak, aku tidak melihatnya!"
@@ -21939,7 +21939,7 @@ msgstr ""
 "rumahnya, dorong tombol lampu untuknya. Agar menang kamu harus mengaktifkan "
 "semua peralatan dan energi yang diproduksi harus habis."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21948,7 +21948,7 @@ msgstr ""
 "Tux telah kembali dari memancing di perahunya. Buatkan kembali sistem "
 "kelistrikan sehingga ia bisa menerangi rumahnya."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21958,7 +21958,7 @@ msgstr ""
 "matahari, peternakan angin dan trafo, untuk mengaktifkan kembali keseluruhan "
 "sistem kelistrikan."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21969,13 +21969,13 @@ msgstr ""
 "lampu untuknya. Agar menang kamu harus mengaktifkan semua peralatan dan "
 "energi yang diproduksi harus habis."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Pelajari tentang sistem kelistrikan berdasarkan energi terbarukan. Nikmati."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22234,13 +22234,13 @@ msgstr ""
 "Sekarang kamu telah mengetahui aturan angka romawi, kamu bisa membaca dan "
 "menulis angka berapapun dalam angka romawi."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Nilai angka romawi: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24596,7 +24596,7 @@ msgstr ""
 "Bagus! Kamu bisa memutar ulang penilaian untuk menguji pengetahuanmu akan "
 "lebih banyak pertanyaan."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24612,17 +24612,17 @@ msgstr ""
 "mode Penilaian</b> - Di mode ini kamu bisa menguji pengetahuanmu tentang "
 "Tata Surya."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Penilaian"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Belajar"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24631,7 +24631,7 @@ msgstr ""
 "Klik pada Matahari atau planet lain untuk menampilkan pertanyaan. Setiap "
 "pertanyaan akan memiliki 4 pilihan, salah satunya adalah benar."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24647,7 +24647,7 @@ msgstr ""
 "ketepatan. Jika tombol petunjuk terlihat, kamu bisa mengekliknya untuk "
 "mendapatkan petunjuk guna menemukan jawaban yang benar."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24656,7 +24656,7 @@ msgstr ""
 "Terdapat 20 pertanyaan pada awalnya dengan masing-masing 4 pilihan. Baris "
 "perkembangan jawaban di kanan bawah layar menunjukkan skor persentase kamu."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24669,7 +24669,7 @@ msgstr ""
 "dengan pertanyaan yang salah dijawab.<br>Maksimal 25 pertanyaan akan "
 "ditanyakan setelah itu tidak ada lagi pertanyaan yang akan ditambahkan."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24677,7 +24677,7 @@ msgid ""
 msgstr ""
 "Kamu harus mencapai skor lebih dari 90% untuk menjadi pakar tata surya!"
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24687,7 +24687,7 @@ msgstr ""
 "1. Semakin <b>jauh</b> sebuah planet dari Matahari, Semakin <b>rendah</b> "
 "suhu planet tersebut.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24698,7 +24698,7 @@ msgstr ""
 "menjauhi Matahari</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24709,12 +24709,12 @@ msgstr ""
 "pertama di setiap kata - <b>M</b>ba <b>V</b>ina <b>B</b>eli <b>M</b>anggis "
 "<b>J</b>uga <b>S</b>awo <b>U</b>ntuk <b>N</b>ina.<br>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Petunjuk"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Lihat tata surya"
@@ -25952,12 +25952,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Versi %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Berkas suara tidak ditemukan!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -25966,37 +25966,37 @@ msgstr ""
 "Kegiatan ini menggunakan berkas suara bahasa, yang belum terpasang pada "
 "sistem kamu."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr "Untuk mengunduh data suara yang dibutuhkan bukalah dialog pengaturan."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Pengunduhan sedang berlangsung"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "Pengunduhan sedang berlangsung. <br/> 'Gugurkan' untuk keluar paksa."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Keluar?"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Kamu yakin ingin keluar dari GCompris?"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Ya"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Tidak"
@@ -26511,6 +26511,13 @@ msgid ""
 msgstr ""
 "Menentukan rentang pada kesulitan aktivitas untuk menampilkan sesi. Antara "
 "nilai tunggal (2), atau rentang (3-6). Nilainya harus antara 1 dan 6."
+
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
+msgstr ""
 
 #: core/main.qml:273
 msgctxt "main|"

@@ -2481,7 +2481,7 @@ msgstr ""
 "Më në fund, që të ngarkoni nivelin tuaj, klikoni mbi butonin “Ngarko nivele "
 "të ruajtur”."
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2491,7 +2491,7 @@ msgstr ""
 "të veprimtarive dhe mandej ngarkoni kartelën tuaj, ose zgjidhni grupin e "
 "niveleve “të brendshëm të programit”."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2575,7 +2575,7 @@ msgstr ""
 "topin të lëvizë sipas një vije të drejtë. Në një ekran me prekje, duhet të "
 "prekni me të dy duart në të njëjtën kohë."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2583,7 +2583,7 @@ msgstr ""
 "Prekni të dyja duart në të njëjtën kohë, që ta bëni topin të lëvizë sipas "
 "një vije të drejtë."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2783,7 +2783,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Kjo figurë do t’ju ndihmojë të llogaritni vlerën e elementëve."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2851,16 +2851,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Tasti Hapësirë: hapni ose mbyllni hartën braj"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Tani është pak e zorshme pa parë diku."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2869,7 +2869,7 @@ msgstr ""
 "Shihni tabelën e shenjave braj dhe vëzhgoni se sa të ngjashme janë rreshtat "
 "e parë dhe të dytë."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2878,7 +2878,7 @@ msgstr ""
 "Sërish, në mënyrë të ngjashme me rreshtin e parë të tabelës së shenjave, por "
 "bëni kujdes, shkronja W u shtua më vonë."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Kjo është e kollajtë, numrat janë të njëjtë me shkronjat nga A në J."
@@ -3521,7 +3521,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Shihni udhëzimet dhe mandej tërhiqni dhe lini objektet siç kërkohet."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3533,12 +3533,12 @@ msgstr ""
 "kryqin ose mbi “Mos e rishfaq më kurrë dialog” që të luani me versionin "
 "demonstrim."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Përditëso grupin e figurave"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Mos e shfaq kurrë më këtë dialog"
@@ -4175,22 +4175,22 @@ msgstr ""
 "draughts.js&gt;. Doracaku është prej wikipedia-s &lt;https://en.wikipedia."
 "org/wiki/Draughts&gt;"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Radha e të ziut"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Radha e të bardhit"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Fiton i bardhi"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Fiton i ziu"
@@ -4315,42 +4315,42 @@ msgstr ""
 "Mekanizmi i lojës së shahut është ai p4wn &lt;https://github.com/"
 "douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Radha e të ziut"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Radha e të bardhit"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Mat nga i bardhi"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Mat nga i ziu"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Remi"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Shah nga i bardhi"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Shah nga i ziu"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "E pavlerë, mbreti juaj mund të jetë shah"
@@ -5355,7 +5355,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Gjeni rosakun e trëndafiltë"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5364,12 +5364,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -5542,7 +5542,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Tastet Space ose Enter: përzgjidhni elementin pasues"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5550,7 +5550,7 @@ msgstr ""
 "bar;qen;kot;det;blu;keq;jap;mal;bli;cen;eja;zog;vit;pus;vaj;ujk;tym;sop;qyp"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5558,7 +5558,7 @@ msgid ""
 msgstr "acar;mace;duaj;mjet;duar;prit;tank;lart;zile;hero;kafe;brez;ekip;lule"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6813,7 +6813,7 @@ msgstr ""
 "Në shkallën e tretë, shfaqet një tekst kuturu dhe duhet të klikoni mbi "
 "kafshën me të cilën ka lidhje teksti."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6822,12 +6822,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -9267,7 +9267,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Përzgjidhni numrin e duhur të pjesëve, siç përshkruhet te udhëzimet."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Gjeni thyesën e paraqitur."
@@ -13964,57 +13964,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Tasti Backspace: fshini shifrën e fundit në përgjigjen tuaj"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr ""
@@ -14144,7 +14144,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Tastet shigjetë Majtas dhe Djathtas: lëvizni anijen kozmike"
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14157,7 +14157,7 @@ msgstr ""
 "përpjesëtim të drejtë me masën e të dy objekteve dhe në përpjesëtim të "
 "zhdrejtë me katrorin e largësisë mes qendrave të tyre."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14168,7 +14168,7 @@ msgstr ""
 "objekteve që ndërveprojnë, objekte më masivë do ta tërheqin njëri-tjetrin me "
 "një forcë rëndese më të madhe."
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14179,7 +14179,7 @@ msgstr ""
 "mes dy objekteve ndërvepruese, më tepër largësi do të sjellë një forcë "
 "rëndese më të dobët."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14190,7 +14190,7 @@ msgstr ""
 "planetët, deri sa të mbërrini në stacionin hapësinor. Shigjeta tregon "
 "drejtim dhe intensitetin e rëndesës mbi anijen tuaj."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14374,12 +14374,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Niveli %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "përfundimi s’është numër i plotë pozitiv"
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "përfundimi s’është numër i plotë"
@@ -14474,18 +14474,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Tasti Backspace: fshini një numër"
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Numri juaj është shumë lart"
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Numri juaj është shumë poshtë"
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "E gjetët numrin!"
@@ -14577,18 +14577,18 @@ msgstr ""
 "përkatës është instaluar, do të dëgjoni fjalën që duhet të gjeni, kur ju "
 "mbeten edhe tre përpjekje."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Të provuara: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Na ndjeni, ende s’kemi një përkthim për gjuhën tuaj."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14598,7 +14598,7 @@ msgstr ""
 "GCompris zhvillohet nga bashkësia KDE, mund ta përktheni GCompris-në duke u "
 "bërë pjesë e një ekipi përkthimi te <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15275,31 +15275,31 @@ msgstr ""
 "Tastet shigjetë Majtas dhe Djathtas: në nivelet e para, lëvizje anash; në "
 "nivele më të lartë, rrotullim i anijes kozmike"
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Karburant: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Lartësi: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Shpejtësi: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Përshpejtim: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15665,7 +15665,7 @@ msgstr ""
 "përkojë numrit dhjetor të shfaqur. Mandej klikoni mbi butonin OK që të "
 "vlerësohet përgjigja juaj."
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15674,7 +15674,7 @@ msgstr ""
 "Shfaqet një numër dhjetor. Shtylla me shigjetën përfaqëson një njësi të "
 "plotë dhe çdo katror në të përfaqëson një të dhjetën e njësisë."
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15688,7 +15688,7 @@ msgstr ""
 "dhjetor të shfaqur. Mandej klikoni mbi butonin OK, që të vlerësohet "
 "përgjigja juaj."
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15699,7 +15699,7 @@ msgstr ""
 "paraqitet me shtylla. Një shtyllë përfaqëson një njësi të plotë dhe çdo "
 "katror në të përfaqëson një të dhjetën e kësaj njësie."
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15708,8 +15708,8 @@ msgstr ""
 "Klikoni mbi katrorët që t’i hiqni dhe të shfaqet përfundimi i veprimit dhe "
 "mandej klikoni mbi butonin OK që të vlerësohet përgjigja juaj."
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15718,7 +15718,7 @@ msgstr ""
 "Nëse përgjigja është e saktë, shtypni përfundimin përkatës dhe klikoni mbi "
 "butonin OK, që të kontrollohet përgjigja juaj."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15729,7 +15729,7 @@ msgstr ""
 "një njësi të plotë dhe çdo katror në të përfaqëson një të dhjetën e kësaj "
 "njësie."
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15742,12 +15742,12 @@ msgstr ""
 "sa numri i shtyllave të lëna te zona t’i përkojë përfundimit të mbledhjes, "
 "mandej klikoni mbi butonin OK, që të vlerësohet përgjigja juaj."
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Kërkohet një sasi. Shigjeta lejon të përzgjidhen deri në 10 portokaj."
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16298,12 +16298,12 @@ msgstr ""
 "Te banderola ngjitur avionit shfaqet një shkronjë. Përzgjidhni te lista "
 "krejt fjalët që përmbajnë këtë shkronjë dhe mandej shtypni butonin OK."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Na ndjeni, ende s’kemi një përkthim për gjuhën tuaj."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16313,7 +16313,7 @@ msgstr ""
 "GCompris zhvillohet nga bashkësia KDE, mund ta përktheni GCompris-në duke u "
 "bërë pjesë e një ekipi përkthimi te <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16915,7 +16915,7 @@ msgstr ""
 "e ksilofonit. Duke klikuar mbi butonin e përsëritjes, mund të dëgjoni sërish "
 "sekuencën e tingujve."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16924,12 +16924,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj, ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -18098,7 +18098,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18107,12 +18107,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -18546,7 +18546,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Fjalor"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18555,12 +18555,12 @@ msgstr ""
 "Vendosni këtu veprimtaritë tuaja të parapëlqyera në, duke klikuar mbi "
 "diellin, djathtas sipër te ajo veprimtari."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Kërkoni veprimtari të caktuara"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Rregullime Veprimtarie"
@@ -18742,12 +18742,12 @@ msgstr ""
 "paplotësuar. Klikoni mbi shkronjën që mungon për të plotësuar fjalën, ose "
 "shtypeni shkronjën në tastierën tuaj."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Na ndjeni, ende s’kemi një përkthim për gjuhën tuaj."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18757,7 +18757,7 @@ msgstr ""
 "GCompris zhvillohet nga bashkësia KDE, mund ta përktheni GCompris-në duke u "
 "bërë pjesë e një ekipi përkthimi te <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18829,7 +18829,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tasti Tab: kaloni në pjesën e poshtme ose të sipërme"
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18839,7 +18839,7 @@ msgstr ""
 "doni të hiqni një monedhë ose një bankënotë, klikoni mbi të, në pjesën e "
 "sipërme të ekranit."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -19020,13 +19020,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Kur të jeni gati, klikoni mbi Tux-in dhe do të bisedojmë përmes kodi Mors."
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Vlerë Mors: %1"
 
-#: activities/morse_code/MorseCode.qml:354
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19232,39 +19232,39 @@ msgstr ""
 "Nëse e bllokoni kompjuterin ose e lini me më pak se 3 gurë, atëherë ju "
 "fitoni lojën."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Vendosni një copë"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Lëvizni një copë"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Hiqni një copë"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Përgëzime"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Përgëzime, Lojtari 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Përgëzime, Lojtari 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Riprovoni"
@@ -19337,7 +19337,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19346,12 +19346,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj, ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -19703,35 +19703,35 @@ msgstr ""
 "Ju jepen disa numra. Tërhiqini dhe vërini te zona e sipërme, sipas rendit "
 "rritës, ose zbritës, siç kërkohet."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Tërhiqni dhe lini objektet në pozicionin e saktë, në rendin rritës."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Tërhiqni dhe lini objektet në pozicionin e saktë, në rendin zbritës."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr ""
 "Tërhiqni dhe lini shkronjat në pozicionin e saktë, në rendin alfabetik."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr ""
 "Tërhiqni dhe lini shkronjat në pozicionin e saktë, në rendin alfabetik së "
 "prapthi."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Tërhiqni dhe lini objektet në pozicionin e saktë, sipas radhës kohore."
 
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -20306,12 +20306,12 @@ msgstr ""
 "Vëzhgoni me kujdes dy figurat. Ka ca dallime të vockla. Kur të gjeni një "
 "dallim, duhet të klikoni mbi të."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Tërhiqeni rrëshqitësin që të shfaqen dallimet."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klikoni mbi dallimet mes dy figurave."
@@ -20720,29 +20720,29 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Nota bemol"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Ky është çelësi i solit, për nota të larta."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Ky është çelësi i basit, për nota të ulëta."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
 "Tastet e zinj janë tastet janë taste diez dhe bemol. Notat diez kanë një "
 "shenjë ♯."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr "Çdo tast i zi ka dy emra: bemol dhe diez. Notat bemol kanë shenjë ♭."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -20751,7 +20751,7 @@ msgstr ""
 "Klikoni mbi simbolin e notës për të shkuar nota me gjatësi të ndryshme, të "
 "tilla si, nota të plota, gjysma note, çerekë notash dhe nota tetëshe."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -20762,18 +20762,18 @@ msgstr ""
 "mbi simbolin e pushimit për të përzgjedhur gjatësinë e pushimit dhe mandej "
 "klikoni mbi butonin e shtimit që të vendoset në pentagram."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Tani mund të ngarkoni muzikë dhe edhe të ruani kompozimet tuaja."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Gabim në ruajtjen e melodisë te kartela juaj (%1)"
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -20809,7 +20809,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Meloditë tuaja të ruajtura"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20818,12 +20818,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -21072,7 +21072,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klikoni te tastet e pianos që përputhen me notat e dhëna."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21081,12 +21081,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -21185,7 +21185,7 @@ msgstr ""
 "Ndiqni vijën vertikale dhe klikoni te tamburi, ose shtypni tastin Hapësirë, "
 "që të luani saktë ritmin."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21194,12 +21194,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -21671,7 +21671,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Tasti Enter ose Return: parashtroni përgjigjen tuaj"
 
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21681,7 +21681,7 @@ msgstr ""
 "kohëmatësi dhe mandej tërhiqni elementët që të të krijoni një tren të "
 "ngjashëm."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21719,7 +21719,7 @@ msgstr ""
 "Në tabelë shfaqet një fjalë. E shfaqur horizontalisht do të duket dhe "
 "zhduket një listë fjalësh. A u duk te lista fjala e dhënë?"
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21729,12 +21729,12 @@ msgstr ""
 "<font color=\"#373737\">Shihni nëse fjala<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">është shfaqur</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Po, e pashë!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Jo, s’qe gjëkundi!"
@@ -21885,7 +21885,7 @@ msgstr ""
 "në shtëpi, shtypni butonin e dritës për të. Që të fitoni, duhet të ndizni "
 "krejt konsumatorët, teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21894,7 +21894,7 @@ msgstr ""
 "Tux-i është kthyer nga peshkimi me barkën e tij. Rivini në punë sistemin "
 "elektrik, që të ketë dritë në shtëpi."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21904,7 +21904,7 @@ msgstr ""
 "kompleks turbinash me erë dhe transformatorë, që të mund të riaktivizoni "
 "tërë sistemin elektrik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21915,14 +21915,14 @@ msgstr ""
 "butonin e dritës për të. Që të fitoni, duhet të ndizni krejt konsumatorët, "
 "teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Mësoni rreth një sistemi elektrik të bazuar në energji të rinovueshme. Ju "
 "bëftë mirë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22181,13 +22181,13 @@ msgid ""
 msgstr ""
 "Tani që i dini rregullat, mund të lexoni dhe shkruani numra në numra romakë."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Vlera romake: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24542,7 +24542,7 @@ msgid ""
 msgstr ""
 "Bukur! Mund të riluani provimin që të provoni dijet tuaja me më shumë pyetje."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24558,17 +24558,17 @@ msgstr ""
 "Diellor.<br><b>2. Mënyra provim</b> - Nën këtë mënyrë mund të provoni dijet "
 "tuaja mbi Sistemin Solar."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Provim"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Nxënie"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24577,7 +24577,7 @@ msgstr ""
 "Klikoni mbi Diellin ose mbi çfarëdo planeti që të shfaqen pyetjet. Çdo "
 "pyetje ka 4 mundësi, prej të cilave njëra është e sakta."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24593,7 +24593,7 @@ msgstr ""
 "është i dukshëm, mund të klikoni mbi të që të keni një ndihmëz për të gjetur "
 "përgjigjen."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24602,7 +24602,7 @@ msgstr ""
 "Fillimisht ka 20 pyetje me 4 mundësi secila. Shtylla e ecurisë djathtas "
 "poshtë ekrani tregon pikët tuaja si përqindje."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24615,7 +24615,7 @@ msgstr ""
 "pyetje tjetër, tok me pyetjen së cilës iu përgjigjët gabimisht.<br>Do të "
 "pyeten maksimumi 25 pyetje, pas të cilave s’do të shtohet pyetje tjetër."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24624,7 +24624,7 @@ msgstr ""
 "Duhet të arrini mbi 90% që të kaloni provimin dhe të bëheni një ekspert i "
 "Sistemit Diellor!"
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24634,7 +24634,7 @@ msgstr ""
 "1. Sa <b>më larg</b> një planet nga Dielli, aq <b>më e ulët</b> temperatura "
 "e tij.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24645,7 +24645,7 @@ msgstr ""
 "Diellit</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24657,12 +24657,12 @@ msgstr ""
 "<b>T</b>upolev <b>M</b>ë <b>J</b>osh <b>S</b>e <b>U</b>let <b>N</b>gadalë."
 "<br>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Ndihmëz"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Shihni sistemin diellor"
@@ -25901,12 +25901,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Version %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Mungojnë kartela tingulli!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -25915,40 +25915,40 @@ msgstr ""
 "KJo veprimtari përdor kartela zanore gjuhësh, të cilat s’janë instaluar ende "
 "në sistemin tuaj."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr ""
 "Për të shkarkuar kartelat e nevojshme zanore, kaloni te dialogu i "
 "parapëlqimeve."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Shkarkim në kryerje e sipër"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr ""
 "Shkarkim në kryerje e sipër.<br/>“Ndërprite” që të braktiset menjëherë."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Të dilet?"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Doni vërtet të dilet nga GCompris??"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Po"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Jo"
@@ -26443,6 +26443,13 @@ msgstr ""
 "Përcaktoni gamë vështirësie veprimtarish për t’u shfaqur për sesionin. Ose "
 "një vlerë e vetme (2), ose një interval (3-6). Vlerat duhet të jenë mes 1 "
 "dhe 6."
+
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
+msgstr ""
 
 #: core/main.qml:273
 msgctxt "main|"

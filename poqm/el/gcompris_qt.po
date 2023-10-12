@@ -2487,7 +2487,7 @@ msgstr ""
 "Τέλος, για να φορτώσεις την πίστα που έφτιαξες πίεσε το πλήκτρο 'Φόρτωση "
 "προσαρμοσμένων'."
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2496,7 +2496,7 @@ msgstr ""
 "Μπορείς να επιλέξεις να δημιουργήσεις δικές σου πίστες με τον επεξεργαστή "
 "και να παίξεις με αυτές φορτώνοντάς τις, ή να παίξεις με τις προκαθορισμένες."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2577,7 +2577,7 @@ msgstr ""
 "κινηθεί σε ευθεία γραμμή. Σε οθόνη αφής, θα πρέπει να χτυπήσεις ελαφρά τα "
 "δύο χέρια ταυτόχρονα."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2585,7 +2585,7 @@ msgstr ""
 "Πάτα στα δύο χέρια την ίδια στιγμή, για να κάνεις τη μπάλα να κινηθεί σε "
 "ευθεία γραμμή."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2789,7 +2789,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Αυτή η εικόνα θα σε βοηθήσει να υπολογίσεις την αξία των bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2862,16 +2862,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Μπάρα διαστήματος: Άνοιγμα ή κλείσιμο του πίνακα Μπράιγ."
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Τώρα είναι λιγάκι πιο δύσκολο χωρίς τον πίνακα του συστήματος Μπράιγ."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2880,7 +2880,7 @@ msgstr ""
 "Παρατήρησε τον πίνακα με τους χαρακτήρες Μπράιγ για να διαπιστώσεις πόσο "
 "όμοιες είναι οι δυο πρώτες γραμμές."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2889,7 +2889,7 @@ msgstr ""
 "Και πάλι, το ίδιο όπως η πρώτη γραμμή, αλλά πρόσεξε: το γράμμα 'W' "
 "προστέθηκε μετά."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr ""
@@ -3547,7 +3547,7 @@ msgstr ""
 "Δες τις οδηγίες και έπειτα μετακίνησε και τοποθέτησε τα αντικείμενα όπως "
 "πρέπει."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3559,12 +3559,12 @@ msgstr ""
 "παίξεις με την έκδοση επίδειξης, ή το 'Να μην εμφανιστεί αυτό το παράθυρο "
 "ξανά' αν δεν θέλεις να ξαναδείς αυτό το παράθυρο."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Ενημέρωση του συνόλου των εικόνων"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Να μην εμφανιστεί αυτό το παράθυρο ξανά."
@@ -4217,22 +4217,22 @@ msgstr ""
 "shubhendusaurabh/draughts.js&gt;. Το εγχειρίδιο προέρχεται από τη Wikipedia "
 "&lt;https://en.wikipedia.org/wiki/Draughts&gt;"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Σειρά των μαύρων"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Σειρά των λευκών"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Τα λευκά κερδίζουν"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Τα μαύρα κερδίζουν"
@@ -4353,50 +4353,50 @@ msgstr ""
 "Η μηχανή του παιχνιδιού σκάκι είναι η p4wn &lt;https://github.com/"
 "douglasbagnall/p4wn;."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Σειρά των μαύρων"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Σειρά των λευκών"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr ""
 "Κίνηση ματ του παίκτη\n"
 "με τα άσπρα πιόνια"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr ""
 "Κίνηση ματ του παίκτη\n"
 "με τα μαύρα πιόνια"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Ισόπαλο παιχνίδι"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr ""
 "Ο παίκτης με τα λευκά απειλεί\n"
 "το βασιλιά του αντιπάλου"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr ""
 "Ο παίκτης με τα μαύρα απειλεί\n"
 "το βασιλιά του αντιπάλου"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Μη έγκυρη κίνηση. Ο βασιλιάς σου μπορεί να βρίσκεται σε κίνδυνο"
@@ -5419,7 +5419,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Βρες τη ροζ πάπια"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5429,12 +5429,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -5606,7 +5606,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Πλήκτρο διαστήματος ή Enter ή Tab: Επιλογή επόμενου αντικειμένου."
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5614,7 +5614,7 @@ msgstr ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5624,7 +5624,7 @@ msgstr ""
 "sand;song"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6923,7 +6923,7 @@ msgstr ""
 "Στο τρίτο επίπεδο εμφανίζεται ένα τυχαίο κείμενο κι εσύ θα πρέπει να πιέσεις "
 "στην εικόνα του ζώου που ταιριάζει με αυτό το κείμενο."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6933,12 +6933,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -9446,7 +9446,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Επίλεξε τον κατάλληλο αριθμό τμημάτων όπως περιγράφεται στις οδηγίες."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Βρες το κλάσμα που αναπαριστάται."
@@ -14157,57 +14157,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: Διαγραφή τελευταίου ψηφίου της απάντησης"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -14342,7 +14342,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Αριστερό και Δεξί βελάκι: Μετακίνηση του διαστημόπλοιου."
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14355,7 +14355,7 @@ msgstr ""
 "έλξης είναι ανάλογη με το γινόμενο των μαζών των σωμάτων που έλκονται και "
 "αντιστρόφως ανάλογη του τετραγώνου της απόστασης του κέντρου μάζας τους."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14367,7 +14367,7 @@ msgstr ""
 "βαρυτική δύναμη. Έτσι, καθώς αυξάνει η μάζα των σωμάτων, αυξάνεται και η "
 "βαρυτική δύναμη της μεταξύ τους έλξης."
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14378,7 +14378,7 @@ msgstr ""
 "του κέντρου μάζας των σωμάτων που αλληλεπιδρούν κι έτσι όσο μεγαλώνει η "
 "απόσταση αυτή, τόσο εξασθενεί η βαρυτική δύναμη έλξης."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14390,7 +14390,7 @@ msgstr ""
 "υποδεικνύει την κατεύθυνση και την επίδραση της βαρύτητας στο διαστημόπλοιό "
 "σου."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14574,12 +14574,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Επίπεδο %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "το αποτέλεσμα δεν είναι θετικός ακέραιος"
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "το αποτέλεσμα δεν είναι ακέραιος"
@@ -14676,18 +14676,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: Διαγραφή αριθμού."
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Ο αριθμός που έβαλες είναι μεγαλύτερος."
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Ο αριθμός που έβαλες είναι μικρότερος."
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Βρήκες τον αριθμό!"
@@ -14783,19 +14783,19 @@ msgstr ""
 "απομένουν τρεις προσπάθειες' είναι ενεργοποιημένη και έχουν απομείνει τρεις "
 "προσπάθειες, θα ακούγεται η λέξη που προσπαθήσεις να μαντέψεις."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Προσπάθειες: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14806,7 +14806,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15485,31 +15485,31 @@ msgstr ""
 "Βελάκι Αριστερά και Δεξιά: Στα πρώτα επίπεδα μετακινούν το διαστημόπλοιο "
 "αριστερά και δεξιά αντίστοιχα, ενώ στα μεγαλύτερα επίπεδα το περιστρέφουν."
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Καύσιμα: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Υψόμετρο: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Ταχύτητα: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Επιτάχυνση: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15875,7 +15875,7 @@ msgstr ""
 "αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο OK για να "
 "ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15885,7 +15885,7 @@ msgstr ""
 "μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της "
 "μονάδας."
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15898,7 +15898,7 @@ msgstr ""
 "μεταφέρθηκαν να αντιστοιχεί στον δεκαδικό αριθμό. Τότε κάνε κλικ στο πλήκτρο "
 "OK για να ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15909,7 +15909,7 @@ msgstr ""
 "μειωτέος, αναπαριστάται με μπάρες. Μια ολόκληρη μπάρα αναπαριστά μία πλήρη "
 "μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα δέκατο της μονάδας."
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15920,8 +15920,8 @@ msgstr ""
 "ο αφαιρετέος για να τα αφαιρέσεις και να εμφανίσεις το αποτέλεσμα της "
 "πράξης. Κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15930,7 +15930,7 @@ msgstr ""
 "Αν η απάντηση είναι σωστή, στο επόμενο βήμα πληκτρολόγησε το αποτέλεσμα και "
 "κάνε κλικ στο OK για να ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15941,7 +15941,7 @@ msgstr ""
 "αναπαριστά μία πλήρη μονάδα και κάθε τετράγωνο στη μπάρα αναπαριστά ένα "
 "δέκατο της μονάδας."
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15954,12 +15954,12 @@ msgstr ""
 "μεταφέρθηκαν να αντιστοιχεί στο αποτέλεσμα της πρόσθεσης και κάνε κλικ στο "
 "πλήκτρο OK για να ελέγξεις την απάντησή σου."
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Ζητείται μια ποσότητα. Με το βέλος επιλέγονται μέχρι 10 πορτοκάλια."
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16510,13 +16510,13 @@ msgstr ""
 "Ένα γράμμα εμφανίζεται στη σημαία του αεροπλάνου. Επίλεξε όλες τις λέξεις ή "
 "τα αντικείμενα στα οποία εμφανίζεται το συγκεκριμένο γράμμα και πάτα OK."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16527,7 +16527,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17137,7 +17137,7 @@ msgstr ""
 "του ξυλόφωνου. Για να ξανακούσεις την ακολουθία κάνε κλικ στο κουμπί "
 "επανάληψης."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17147,12 +17147,12 @@ msgstr ""
 "οι ήχοι ή τα ηχητικά εφέ έχουν απενεργοποιηθεί στις κύριες ρυθμίσεις του "
 "GCompris."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -18316,7 +18316,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18326,12 +18326,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -18771,7 +18771,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Λεξιλόγιο"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18780,12 +18780,12 @@ msgstr ""
 "Τοποθέτησε τις αγαπημένες σου δραστηριότητες εδώ, επιλέγοντας τον ήλιο που "
 "έχει καθεμιά στην επάνω δεξιά γωνία της εικόνας της."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Αναζήτηση συγκεκριμένων δραστηριοτήτων"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Ρυθμίσεις δραστηριότητας"
@@ -18972,13 +18972,13 @@ msgstr ""
 "την εικόνα. Επίλεξε το γράμμα που λείπει ή πληκτρολόγησέ το για να "
 "συμπληρώσεις τη λέξη."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18989,7 +18989,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19061,7 +19061,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab: Πλοήγηση μεταξύ της κάτω και επάνω περιοχής."
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19071,7 +19071,7 @@ msgstr ""
 "της οθόνης. Αν θες να πάρεις πίσω ένα κέρμα ή ένα χαρτονόμισμα, κάνε κλικ "
 "στο πάνω μέρος της οθόνης."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -19253,13 +19253,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Όταν είσαι έτοιμος, κάνε κλικ στον Tux και θα συνομιλήσουμε με Κώδικα Μορς."
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Τιμή Μορς: %1"
 
-#: activities/morse_code/MorseCode.qml:354
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19466,39 +19466,39 @@ msgstr ""
 "Εάν ακινητοποιήσεις τον υπολογιστή (αντίπαλο) ή τον αφήσεις με λιγότερα από "
 "τρία πιόνια, τότε κερδίζεις το παιχνίδι."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Τοποθέτησε ένα πιόνι"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Μετακίνησε ένα πιόνι"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Αφαίρεσε ένα πιόνι"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Συγχαρητήρια"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Συγχαρητήρια Παίχτη 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Συγχαρητήρια Παίχτη 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Ξαναπροσπάθησε"
@@ -19574,7 +19574,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19584,12 +19584,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -19944,32 +19944,32 @@ msgstr ""
 "Σας δίνονται κάποιοι αριθμοί. Μετακίνησε και τοποθέτησέ τους στην πάνω "
 "περιοχή, σε αύξουσα ή φθίνουσα σειρά, ανάλογα με την οδηγία."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Μετακίνησε και τοποθέτησε τα αντικείμενα σε αύξουσα σειρά."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Μετακίνησε και τοποθέτησε τα αντικείμενα σε φθίνουσα σειρά."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Μετακίνησε και τοποθέτησε τα γράμματα σε αλφαβητική σειρά."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Μετακίνησε και τοποθέτησε τα γράμματα σε αντίστροφη αλφαβητική σειρά."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Μετακίνησε και τοποθέτησε τα αντικείμενα σε χρονολογική σειρά."
 
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
@@ -20553,12 +20553,12 @@ msgstr ""
 "Παρατήρησε τις δύο εικόνες προσεκτικά. Υπάρχουν μερικές μικρές διαφορές. "
 "Κάθε φορά που βρίσκεις μια διαφορά, κάνε κλικ σε αυτήν."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Σύρε τον δρομέα για να δεις τις διαφορές."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Κάνε κλικ στις διαφορές που έχουν οι δυο εικόνες."
@@ -20970,33 +20970,33 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Άσπρα πλήκτρα"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr ""
 "Αυτό είναι το πεντάγραμμο για τις νότες του κλειδιού Σολ που έχουν υψηλούς "
 "τόνους."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr ""
 "Αυτό είναι το πεντάγραμμο για τις νότες του κλειδιού Φα που έχουν χαμηλούς "
 "τόνους."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr "Τα μαύρα πλήκτρα είναι διέσεις και υφέσεις και έχουν το σύμβολο #."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Κάθε μαύρο πλήκτρο έχει δύο ονόματα: ύφεση και δίεση. Οι υφέσεις έχουν το "
 "σύμβολο b."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -21005,7 +21005,7 @@ msgstr ""
 "Κάνε κλικ στο σύμβολο της νότας για να δώσεις διαφορετικό μήκος στις νότες, "
 "όπως ολόκληρο, μισό, τέταρτο και όγδοο."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -21017,20 +21017,20 @@ msgstr ""
 "στη συνέχεια κάνε κλικ στο κουμπί προσθήκης για να την εισάγεις στο "
 "πεντάγραμμο."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr ""
 "Τώρα μπορείς να φορτώσεις μουσική, όπως και να αποθηκεύσεις τη δική σου "
 "σύνθεση."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Σφάλμα αποθήκευσης της μελωδίας στο αρχείο σου (%1)"
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -21066,7 +21066,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Οι αποθηκευμένες μελωδίες σου"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21076,12 +21076,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -21331,7 +21331,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Κάνε κλικ στα πλήκτρα του πιάνου που αντιστοιχούν στις δοσμένες νότες."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21341,12 +21341,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -21447,7 +21447,7 @@ msgstr ""
 "Ακολούθησε την κάθετη γραμμή και κάνε κλικ στον ρυθμό ή πάτησε το πλήκτρο "
 "διαστήματος και παίξε τον ρυθμό σωστά."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21457,12 +21457,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -21927,7 +21927,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter ή Return: Υποβολή απάντησης."
 
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21936,7 +21936,7 @@ msgstr ""
 "Παρατήρησε το τρένο πριν λήξει ο χρόνος και κατόπιν σύρε αντικείμενα, "
 "βαγόνια και μηχανές, για να φτιάξεις ένα ίδιο τρένο."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21975,7 +21975,7 @@ msgstr ""
 "λέξεις θα εμφανιστεί για λίγο στα αριστερά. Η εμφανιζόμενη λέξη ανήκει ή όχι "
 "στον κατάλογο που είδες;"
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21985,12 +21985,12 @@ msgstr ""
 "<font color=\"#373737\">Έλεγξε αν η λέξη<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">εμφανίζεται.</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ναι, την είδα!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Όχι, δεν εμφανίστηκε"
@@ -22146,7 +22146,7 @@ msgstr ""
 "πρέπει να ανάψεις όλες τις συσκευές που καταναλώνουν ενέργεια, ενώ όλοι οι "
 "παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22155,7 +22155,7 @@ msgstr ""
 "Ο Tux έχει επιστρέψει με τη βάρκα στου από το ψάρεμα. Φόρτισε το ηλεκτρικό "
 "σύστημα ώστε να έχει φως στο σπίτι του."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22165,7 +22165,7 @@ msgstr ""
 "συστοιχία φωτοβολταϊκών, αιολικό πάρκο και μετασχηματιστές, για να "
 "επανενεργοποιηθεί όλο το ηλεκτρικό σύστημα."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22176,14 +22176,14 @@ msgstr ""
 "του φωτός. Για να κερδίσεις πρέπει να ανάψεις όλην την κατανάλωση ενώ όλοι "
 "οι παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Μάθε για ηλεκτρικά συστήματα με βάση τις ανανεώσιμες πηγές ενέργειας. "
 "Απόλαυσέ το."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22443,13 +22443,13 @@ msgstr ""
 "Τώρα ξέρεις τους κανόνες, μπορείς να διαβάσεις και να γράψεις οποιονδήποτε "
 "αριθμό με ρωμαϊκή αρίθμηση."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Ρωμαϊκή γραφή: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24822,7 +24822,7 @@ msgstr ""
 "Περίφημα! Μπορείς να ξαναδοκιμάσεις σε λειτουργία αξιολόγησης για να δεις "
 "πώς τα πας με περισσότερες ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24839,17 +24839,17 @@ msgstr ""
 "- Εδώ μπορείς να δοκιμάσεις απευθείας τις γνώσεις που έχεις για το ηλιακό "
 "μας σύστημα."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Αξιολόγηση"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Εκμάθηση"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24859,7 +24859,7 @@ msgstr ""
 "ερωτήσεις. Κάθε ερώτηση έχει 4 επιλογές, από τις οποίες μόνο η μία είναι η "
 "σωστή."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24875,7 +24875,7 @@ msgstr ""
 "υπόδειξης είναι ορατό, μπορείς να πιέσεις σε αυτό για να σε βοηθήσει να "
 "φτάσεις στη σωστή απάντηση."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24884,7 +24884,7 @@ msgstr ""
 "Αρχικά υπάρχουν 20 ερωτήσεις με 4 επιλογές η καθεμιά. Η μπάρα προόδου κάτω "
 "δεξιά της οθόνης δείχνει το ποσοστό επιτυχίας σου."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24897,7 +24897,7 @@ msgstr ""
 "ακόμη ερώτηση στο τέλος μαζί με αυτή που απάντησες λάθος.<br>Ο μέγιστος "
 "αριθμός ερωτήσεων είναι 25, μετά από τον οποίο δεν προστίθενται ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24906,7 +24906,7 @@ msgstr ""
 "Θα πρέπει να συγκεντρώσεις βαθμολογία μεγαλύτερη από 90% για να περάσεις την "
 "αξιολόγηση και να γίνεις ειδικός του ηλιακού μας συστήματος!"
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24917,7 +24917,7 @@ msgstr ""
 "<b>χαμηλότερη</b> είναι η θερμοκρασία του.<br><font color=\"#3bb0de\">%1</"
 "font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24928,7 +24928,7 @@ msgstr ""
 "τον Ήλιο</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24940,12 +24940,12 @@ msgstr ""
 "γράμματα των ονομάτων τους: <b>Ε</b>ρμής, <b>Α</b>φροδίτη, <b>Γ</b>η, <b>Ά</"
 "b>ρης, <b>Δ</b>ίας, <b>Κ</b>ρόνος, <b>Ου</b>ρανός, <b>Π</b>οσειδώνας.<br>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Υπόδειξη"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Προβολή του ηλιακού συστήματος."
@@ -26208,12 +26208,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Έκδοση %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Λείπουν αρχεία ήχου!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -26222,39 +26222,39 @@ msgstr ""
 "Αυτή η δραστηριότητα χρησιμοποιεί αρχεία ήχου γλώσσας που δεν έχουν ακόμη "
 "εγκατασταθεί στο σύστημά σου."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr ""
 "Για να κάνεις λήψη των απαραίτητων αρχείων ήχου, θα πρέπει να πας στο "
 "διάλογο προτιμήσεων."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Λήψη σε εξέλιξη"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "Λήψη σε εξέλιξη.<br/>Πάτα 'Ματαίωση' για να τη σταματήσεις αμέσως."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Έξοδος;"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Θέλεις οπωσδήποτε να κλείσεις το GCompris;"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Όχι"
@@ -26757,6 +26757,13 @@ msgstr ""
 "Καθορίστε το εύρος δυσκολίας της δραστηριότητας που θα ισχύει για τη "
 "συνεδρία. Είτε με μια μεμονωμένη τιμή (2) είτε με ένα εύρος (3-6). Οι τιμές "
 "πρέπει να είναι μεταξύ 1 και 6."
+
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
+msgstr ""
 
 #: core/main.qml:273
 msgctxt "main|"

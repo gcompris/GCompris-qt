@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-09-14 18:43+0400\n"
+"PO-Revision-Date: 2023-10-11 17:21+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.0\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -2463,7 +2463,7 @@ msgstr ""
 "Son olaraq, səviyyə dəstini yükləmək üçün \"Saxlanılmış səviyyələri yükləyin"
 "\" düyməsinə vurun."
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2473,7 +2473,7 @@ msgstr ""
 "faylınızı yükləyərək və ya \"daxilə quraşdırılmış\" səviyyə dəstini seçərək "
 "öz sviyyə dəstinizi yaradın."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2552,7 +2552,7 @@ msgstr ""
 "Topu düzünə atmaq üçün sağa və ya sola ox düymələrini vurun. Bunu üçün "
 "senror ekrana eyni anda iki barmağınız ilə vurmalısınız."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2560,7 +2560,7 @@ msgstr ""
 "Topu düz xət boyunca atmaq üçün hər iki barmağınızı eyni zamanda "
 "toxundurmalısınız."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2754,7 +2754,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Bu cədvəl bit dəyərlərini hesablamağa kömək edəcək."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2822,16 +2822,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Boşluq: brayl cədvəlini açın və ya bağlayın"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "İndi Brayl cədvəli olmadan bir az çətin olacaq."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2840,7 +2840,7 @@ msgstr ""
 "Brayl cədvəlinə nəzər salın və birinci və ikinci sətirlərin oxşarlığına "
 "diqqət yetirin."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2849,7 +2849,7 @@ msgstr ""
 "Yenidən birinci sətir ilə uyğunluq var, lakin nəzərə alın ki, \"W\" hərfi "
 "əlvə olunub."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Bu sadədir: saylar A hərfindən J hərfinə qədər olduğu kimidir."
@@ -3493,7 +3493,7 @@ msgstr ""
 "Təlimata nəzər salın və sonra göstərildiyi kimi elementlərin yerini "
 "dəyişdirin."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3506,12 +3506,12 @@ msgstr ""
 "pəncərə bir daha göstərilməsin\" düyməsinə vuraraq dialoq pəncərəsini "
 "bağlaya bilərsiniz."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Şəkillər dəstini yükləyin"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Bu pəncərə bir daha göstərilməsin"
@@ -4088,22 +4088,22 @@ msgstr ""
 "draughts.js&gt; Vikipediyadan oyun qaydası: &lthttps://az.wikipedia.org/wiki/"
 "Dama_(oyun)&gt;"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Qaraların gedişi"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Ağların gedişi"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Ağlar qazandı"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Qaralar qazandı"
@@ -4225,42 +4225,42 @@ msgstr ""
 "Şahmat taxtası kimi p4wn &lt;https://github.com/douglasbagnall/p4wn&gt; "
 "istifadə olunur."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Qaraların gedişi"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Ağların gedişi"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Ağlar mat oldu"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Qaralar mat oldu"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Heç-heçə"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Qaraya şah"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Ağa şah"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Səhv gediş, Şahınız tutla bilər"
@@ -5255,7 +5255,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Çəhrayı ördəyi tapın"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5264,12 +5264,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -5439,7 +5439,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Boşluq, Daxiletmə və ya Səkmə: sonrakı cisimi seçmək"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5448,7 +5448,7 @@ msgstr ""
 "sal:qaz;qar"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5458,7 +5458,7 @@ msgstr ""
 "otaq;xama;qoca;orta;usta"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6722,7 +6722,7 @@ msgstr ""
 "Üçüncü səviyyədə, təsadüfi mətn göstəriləcək. Siz bu mətnin məzmununa uyğun "
 "heyvanı tapmalısınız."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6731,12 +6731,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -9152,7 +9152,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Təlimatda göstərildiyi kimi müvafiq sayda hissələri seçin."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Təqdim olunmuş kəsrləri tap."
@@ -13588,6 +13588,8 @@ msgstr "%1 sadə ədəd deyil, onun bölənləri bunlardır: %2"
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr ""
+"%1 ədədinin vuranları arasında %2 və ya %3 var, lakin %4, %5 ədədinin vuranı "
+"deyil."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
@@ -13836,23 +13838,23 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Geriyə, düyməsi: sonuncu sözü seçin"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr "Qrammatik təhlillər"
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr "Qrammatik qaydaların müəyyən edilməsini öyrənin."
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr "Tələb olunan qrammatik qaydalara uyğun gələn sözləri tapın."
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
@@ -13861,22 +13863,22 @@ msgstr ""
 "Qrammatik qaydanı siyahıdan seçin və sonra sözün altındakı xananı seçin və "
 "ona qayda təyin edin."
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr "Uyğun gələn qayda yoxdursa xananı boş buraxın."
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr "Qrammatik qaydalar"
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr "Qrammatik qaydaya uyğun gələn bütün sözləri tapın."
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
@@ -13885,12 +13887,12 @@ msgstr ""
 "Qrammatik qaydanı siyahıdan seçin, sonra sözün altındakı xananı seçin və onu "
 "qaydaya tətbiq edin."
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Qayda uyğun gəlmədikdə xananı boş buraxın."
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Boşdur"
@@ -14019,7 +14021,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Sağa, Sola oxlar: kosmik gəmini hərəkət etdirin"
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14032,7 +14034,7 @@ msgstr ""
 "kütlələrinə düz, mərkəzləri arasındakı məsafənin kvadratına isə tərs "
 "mütənasibdir."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14044,7 +14046,7 @@ msgstr ""
 "birinə daha güclü cazibə qüvvəsi ilə təsir edirlər. İki cisimdən istənilən "
 "birinin kütləsinin artması onlar arasındakı cazibə qüvvəsini də artırır."
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14055,7 +14057,7 @@ msgstr ""
 "arasındakı məsafənin kvadratına tərs mütənasibdir: aralarında məsafə nə "
 "qədər çox olarsa cazibə qüvvəsi o ədər zəif olar."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14066,7 +14068,7 @@ msgstr ""
 "yaxınlaşmayın ki onlar ilə toqquşmayasınız. Ox işarəsi, sizin gəmiyə təsir "
 "edən cazibə qüvvəsinin istiqamətini və gücünü göstərir."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14079,117 +14081,91 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "24-ü tap"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "24 tapmaq üçün hesablayın."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Dörd əməl ilə cəbri hesablama çalışması."
+msgstr "Dörd əməldən istifadə edərək hesablamanı öyrənin."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Toplama, Çıxma, vurma və bölmə əməlləri üzərində çalışın."
+msgstr ""
+"Toplama, Çıxma, vurma və bölmə əməllərindən istifadə edərək hesablama apara "
+"bilmək."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "24-ü tapmaq üçün verilmiş əməllər ilə dörd ədəddən istifadə edin."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Oxlar: sahə daxilində hərəkət edin"
+msgstr "Oxlar: ədədlər və əməllər arasında seçim edin"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Boşluq və ya Enter: hissəni seçin və ya yerləşdirin"
+msgstr ""
+"Boşluq və ya Enter: cari dəyəri və ya əməli seçin və ya seçimi ləğv edin"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Əmələr düymələri (+,-,*,/): əməli seçin"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace və ya Delete: ləğv etmək"
+msgstr "Backspace və ya Delete: sonuncu əməli ləğv edin"
 
 #: activities/guess24/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up and down arrows or tabulation: switch between classes and words"
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
-"Tabulyasiya üçün yuxarı, aşağı oxlar istifadə edin: qaydalar və sözlər "
-"arasında keçid etmək üçün"
+msgstr "Tab düyməsi: ədədlər və əməllər arasında keçid edin"
 
 #: activities/guess24/Guess24.qml:104
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "24-ü tapmaq üçün verilmiş əməllər ilə dörd ədəddən istifadə edin."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "+ və - ilə həll edə bilmək."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "+, - və × ilə həll edə bilmək."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Vurma əməlləri."
+msgstr "Vurma tələb olunur."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + operator."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Kiçik torlar \"+\" əməli ilə."
+msgstr "Bütün əməllər ilə həll edə bilmək."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Bölmə əməlləri."
+msgstr "Bölmə tələb olunur."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -14254,12 +14230,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Səviyyə %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "nəticə müsbət tam ədəd deyil"
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "nəticə tam ədəd deyil"
@@ -14354,18 +14330,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Geri düyməsi: ədədi silir"
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Ədəd çox böyükdür"
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Ədəd çox kiçikdir"
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Siz doğru sayı tapdınız!"
@@ -14455,18 +14431,18 @@ msgstr ""
 "Əgər \"Tapılacaq sözü səsləndirin\" seçimi aktivdirsə və uyğun səs "
 "mövcuddursa, üç cəhd qaldıqda tapılacaq sözü eşidəcəksiniz."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Cəhd edildi: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Üzr istəyirik, diliniz üçün hələlik tərcümə tapılmadı."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14477,7 +14453,7 @@ msgstr ""
 "etmək üçün <a href=\"%2\">%2</a> səhifəsində tərcümə komandasına qoşula "
 "bilərsiniz."
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -14983,12 +14959,9 @@ msgstr "Banjonu tapın"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Bonqo'nu tapın"
+msgstr "Bonqo-ları tapın"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -15152,31 +15125,31 @@ msgstr ""
 "Sol və Sağ oxlar: ilk səviyyədə yanlara doğru hərəkəti idarə edir, yuxarı "
 "səviyyələrdə isə kosmik gəmini döndərir."
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Yanacaq: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Hündürlük: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Sürət: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Sürətlənmə: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15538,7 +15511,7 @@ msgstr ""
 "gələnədək bu addımları təkrar edin. Sonra isə OLDU (OK) düyməsinə vuraraq "
 "cavabınızı yoxlayın."
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15547,7 +15520,7 @@ msgstr ""
 "Bir onluq say gösytərilib. Oxlar olan zolaq tam vahidləri göstərir və ondakı "
 "hər kvadrat bu vahidin onda birini göstərir."
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15559,7 +15532,7 @@ msgstr ""
 "Atılmış zolaqlar göstərilən onluq saya uyğun gələnədək bu addımları təkrar "
 "edin. Sonra isə OLDU (OK) düyməsinə vuraraq cavabınızı yoxlayın."
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15570,7 +15543,7 @@ msgstr ""
 "ilə göstərilib. Bir zolaq tam bir vahisi göstərir və ondakı hər kvadrat "
 "vahidin onda birini göstərir."
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15579,8 +15552,8 @@ msgstr ""
 "Onları çıxmaq və əməlin nəticəsini göstərmək üçün kvadratların üzərinə "
 "vurun. Cavabınızı OLDU (OK) düyməsi ilə yoxlayın."
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15589,7 +15562,7 @@ msgstr ""
 "Əgər cavab doğrudursa uyğun gələn nəticəni yazın və OLDU (OK) düyməsi ilə "
 "cavabınızı yoxlayın."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15599,7 +15572,7 @@ msgstr ""
 "İki onlu ədədlərlə toplama əməli verilib. Ox ilə zolaqlar tam vahidi "
 "göstərir və hər kvadrat bu vahidin onda birini göstərir."
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15611,12 +15584,12 @@ msgstr ""
 "zolaqlar toplamanın nəticəsinə uyğun gələnədək bu addımları təkrar edin və "
 "sonra OLDU (OK) düyməsinə vuraraq cavabınızı yoxlayın."
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Bir miqdar tələb olunur. Ox, 10 portağala qədər süçmək imkanı verir."
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16161,12 +16134,12 @@ msgstr ""
 "Təyyarəyə ilişdirilmiş bir hərf göstərilir. Siyahıda bu hərfdən ibarət bütün "
 "sözləri seçin və OLDU (OK) düyməsinə vurun."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Üzr istəyirik, diliniz üçün hələlik tərcümə tapılmadı."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16177,7 +16150,7 @@ msgstr ""
 "etmək üçün <a href=\"%2\">%2</a> səhifəsində tərcümə komandasına qoşula "
 "bilərsiniz."
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16774,7 +16747,7 @@ msgstr ""
 "Oxudulan səs ardıcıllığını dinləyin və ksilofonun çubuqlarına vuraraq "
 "təkrarlayın. Təkrar düyməsinə vuraraq səs ardıcıllığını yenidən dinləyin."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16783,12 +16756,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -17933,7 +17906,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17942,12 +17915,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -18376,7 +18349,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Söz ehtiyyatı"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18385,12 +18358,12 @@ msgstr ""
 "Çalışmanı buraya əlavə etmək üçün onun yuxarı, sağındakı günəş işarəsinə "
 "vurun."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Çalışmaları axtarmaq"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Çalışma ayarları"
@@ -18574,12 +18547,12 @@ msgstr ""
 "yazılıb. Buraxılmış hərflərə vuraraq sözü tamamlayın və ya hərfləri "
 "klaviatura ilə daxil edin."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Üzr istəyirik, diliniz üçün hələlik tərcümə tapılmadı."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18590,7 +18563,7 @@ msgstr ""
 "etmək üçün <a href=\"%2\">%2</a> səhifəsində tərcümə komandasına qoşula "
 "bilərsiniz."
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18662,7 +18635,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Səkmə: aşağı və yuxarı sahələr arasında hərəkət"
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18671,7 +18644,7 @@ msgstr ""
 "Qalığı qaytarmaq üçün ekranın aşağısındakı xırda və ya kağız pula vurun. "
 "Pulu geri almaq üçün ekranın yuxarı hissəsində onun üzərinə vurun."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -18853,13 +18826,13 @@ msgstr ""
 "Hazır olduğunuzda Tuksun üzərinə vurun və biz hərfləri Morze koduna "
 "çevirəcəyik."
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morze kodu: %1"
 
-#: activities/morse_code/MorseCode.qml:354
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19065,39 +19038,39 @@ msgstr ""
 "Kompyuterin heç bir gedişi qalmadıqda və ya üç daşdan az qalırsa o zaman siz "
 "qalib olursunuz."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Bir daş qoyun"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Daşı hərəkət etdirin"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Daşı qaldırın"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Təbriklər!"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Təbriklər, oyunçu 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Təbriklər, oyunçu 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Yenidən cəhd edin"
@@ -19171,7 +19144,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19180,12 +19153,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -19531,32 +19504,32 @@ msgstr ""
 "Sizə bəzi saylar verilir. Onları yuxarıdakı sahəyə artan və ya azalan "
 "ardıcıllıq ilə yerləşdirin."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Əşyaları artan ardıcıllıq ilə yerləşdirin."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Əşyaları azalan ardıcıllıq ilə yerləşdirin."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Hərfləri əlifba sırası ilə yerləşdirin."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Hərfləri əlifba sırasının əksinə yerləşdirin."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Əşyaları xronoloji ardıcıllıq ilə yerləşdirin."
 
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr "Mənalı bir cümlə yaratmaq üçün sözləri yuxarı qutuya sürükləyin."
@@ -20124,12 +20097,12 @@ msgstr ""
 "İki şəkili diqqətlə araşdırın. Burada bəzi yüngül fərqlər var. Fərqi "
 "tapdıqda onun üzərinə vurmalısınız."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Fərqi görmək üçün çubuğu sürüşdürün."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Şəkillər arasındakı fərqlərin üzərinə vurun."
@@ -20535,27 +20508,27 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Düz notlar"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Bu yüksək notlar üçün zil açarıdır."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Bu aşağı notlar üçün bass açarıdır."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr "Qara dillərdə sərt və düz notlardır. Sərt notlar ♯ ilə işarə olunur."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr "Hər qara dilin iki adı var: düz və sərt. Düz notlar ♭ ilə işarələnir."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -20564,7 +20537,7 @@ msgstr ""
 "Bütov not, yarım not, dörddə bir not və səkkizinci not kimi fərqli "
 "uzunluqdakı notları yazmaq üçün not simvolunu istifadə edin."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -20575,18 +20548,18 @@ msgstr ""
 "onun uzunluğunu seçin və əlavə edin düyməsinə vuraraq onu not sətrinə daxil "
 "edin."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "İndi siz musiqini yükləyə və öz bəstənizi saxlaya bilərsiniz."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Melodiyanın, %1 faylında saxlamasında xəta baş verdi."
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -20623,7 +20596,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Saxladığınız melodiyalarınız"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20632,12 +20605,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -20886,7 +20859,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Verilmiş nota uyğun olaraq piano dillərinə vurun."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20895,12 +20868,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -20998,7 +20971,7 @@ msgstr ""
 "Ritmi düzgün səsləndirmək üçün şaquli sətirə diqqət edin və barabana vurun "
 "və ya ara boşluğu düyməsinə vurun."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21007,12 +20980,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -21472,7 +21445,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter və ya Return: cavabınızı təsdiq edin"
 
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21481,7 +21454,7 @@ msgstr ""
 "Qatarın necə göründüyünü yadda saxlayın və vaqonları köçürməklə və "
 "elementləri uyğun şəkildə düzməklə qatarın oxşarını yaradın."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21520,7 +21493,7 @@ msgstr ""
 "Söz lövhədə göstərilir. Üsüqi yazılmış sözlər görünəcək və yox olacaqlar. "
 "Verilmiş sözü bu siyahıda tapdınızmı?"
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21530,12 +21503,12 @@ msgstr ""
 "<font color=\"#373737\">Yoxlayın,<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">sözü göründümü</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Bəli, mən onu gördüm!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Xeyr, o burada yoxdur!"
@@ -21685,7 +21658,7 @@ msgstr ""
 "olduqda işıqlandırmaq üçün işıq düyməsinə vurun. Qazanmaq üçün bütün "
 "istehsalçılar işə başlayanda istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21694,7 +21667,7 @@ msgstr ""
 "Tuks öz qayığında balıq tutmaqdan qayıdır. Elektrik sistemini bərpa edin ki "
 "o, evini işıqlandıra bilsin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21704,7 +21677,7 @@ msgstr ""
 "elektrostansiyası və transformatorların üzərinə vurun ki, elektrik sistemi "
 "təkrar aktiv olsun."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21715,12 +21688,12 @@ msgstr ""
 "üçün işıq düyməsinə vurun. Qazanmaq üçün bütün istehsalçılar işə başlayanda "
 "istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Bərpa olunan enerjiyə əsaslanan elektrik sistemi haqqında öyrənin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -21976,13 +21949,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "İndi siz rum rəqəmləri ilə necə yazmağı və oxumağı bilirsiniz."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rum rəqəmi ilə yazı: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24331,7 +24304,7 @@ msgstr ""
 "Mükəmməl! Başqa suallara cavab vermək üçün bilik yoxlamasını yenidən başlada "
 "bilərsiniz."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24347,17 +24320,17 @@ msgstr ""
 "Bilik yoxlaması rejimi</b> - Bu rejimdə Günəş Sistemi üzrə biliklərinizi "
 "yoxlaya bilərsiniz."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Biliklərin yoxlanması"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Öyrənmə"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24366,7 +24339,7 @@ msgstr ""
 "Günəşə aid sualları görmək üçün onun üzərinə vurun. Hər suala 3 cavab "
 "variantı var və onlardan biri doğru cavabdır."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24380,7 +24353,7 @@ msgstr ""
 "göstərilir. Suala 100% doğru cavabı tapmağa cəhd edin. Əgər ipucu düyməsi "
 "görünərsə doğru cavabı ona vuraraq görə bilərsiniz."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24389,7 +24362,7 @@ msgstr ""
 "Burada hərəsində 4 cavab variantı olan 20 sual verilir. Ekranın aşağı sağ "
 "küncündəki vəziyyət çubuğu sizin topladığınız faizləri göstərir."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24402,7 +24375,7 @@ msgstr ""
 "cavab verdiyiniz sualə təkrar cavab verməli olursunuz.<br> Ən çox 25 sual "
 "veriləcək."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24411,7 +24384,7 @@ msgstr ""
 "Suallar ən az 90%düzgün cavab verməlisiniz ki, sınaqdan keçə və Günəş "
 "Sistemi üzrə mütəxəssis ola biləsiniz!"
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24421,7 +24394,7 @@ msgstr ""
 "1. Planet Günəşdən nə qədər <b>uzaqda</b> yerləşərsə, onun hərarəti o qədər "
 "<b>aşağı</b> olar.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24432,7 +24405,7 @@ msgstr ""
 "qədər uzun olur</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24443,12 +24416,12 @@ msgstr ""
 "əzbərləyin - <b>M</b>ənim <b>V</b>ətənim, <b>Y</b>uvam <b>M</b>ənim <b>Y</"
 "b>urdum <b> S</b>əndən <b>U</b>ca <b>N</b>ədir.<br>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "İpucu"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Günəş Sisteminə baxış"
@@ -25668,12 +25641,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Buraxılış %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Səs faylları çatışmır!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -25682,37 +25655,37 @@ msgstr ""
 "Bu açalışma dilin səs fayllarını istifadə edir, onlar isə hələlik sizin "
 "kompyuterinizə yüklənməyib."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr "Səs fayllarını yükləmək üçün ayarlar menyusunu açın."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Endirilmə vəziyyəti"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "Endirilmə vəziyyəi.<br/>Çıxmaq üçün \"Ləğv edin\" vurun."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Çıxılsın?"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Siz GCompris-dən çıxmaq istəyirsiniz?"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Bəli"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Xeyr"
@@ -26209,6 +26182,13 @@ msgstr ""
 "Sesiyada göstəriləcək çalışmanın çətinlik səviyyəsini təyin et. Ya tək vahid "
 "(2), ya da aralıq (3-6). Dəyərlər 1 və 6 arasında olmalıdır."
 
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
+msgstr ""
+
 #: core/main.qml:273
 msgctxt "main|"
 msgid "Voices for your language"
@@ -26282,16 +26262,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Bəzi çalışmalarda yeni verilənlər dəsti əlçatandır. Onların verilənlər dəsti "
+"seçimlərini sıfırlamaq istəyirsiniz?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Tətbiq edin"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "İmtina"

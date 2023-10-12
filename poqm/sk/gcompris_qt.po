@@ -2385,14 +2385,14 @@ msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
 "settings menu and then load your file, or choose the 'built-in' level set."
 msgstr ""
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2478,13 +2478,13 @@ msgstr ""
 "Stlačiť ľavú a pravú šípku v rovnakom čase, aby išla lopta po rovnej čiare. "
 "Na dotykovej obrazovke musíte udrieť dvoma rukami v rovnakomčase."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Poklepať oboma rukami v rovnakom čase, aby išla lopta po rovnej čiare."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2690,7 +2690,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Tento obrázok vám pomôže vypočítať hodnotu bitov."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2770,11 +2770,11 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Medzerník: otvoriť alebo zavriet Brailovu tabuľku"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid "Now it's a little bit harder without the braille map."
@@ -2782,7 +2782,7 @@ msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Teraz je to trochu ťažšie bez tabuľky Braillovho písma."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid ""
@@ -2796,7 +2796,7 @@ msgstr ""
 "Pozri sa na tabuľku Braillovho písma a pozoruj, ako sú si podobné prvý a "
 "druhý riadok."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid ""
@@ -2810,7 +2810,7 @@ msgstr ""
 "Opäť, podobné prvému riadku, ale všimni si, že na konci sme pridali písmeno "
 "'W'."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Toto je ľahké, čísla sú také isté, ako písmená od  A do J."
@@ -3479,7 +3479,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Prečítajte si inštrukcie a potom presuňte prvky na určené miesto."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3491,12 +3491,12 @@ msgstr ""
 "'Nezobrazovať tento dialóg neskôr', ak už toto dialógové okno nikdy nechcete "
 "vidieť."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Aktualizovať sadu obrázkov"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Nezobrazovať tento dialóg neskôr"
@@ -4082,22 +4082,22 @@ msgstr ""
 "draughts.js&gt;. Príručka je z wikipédie &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Čierneho ťah"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Bieleho ťah"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Biely vyhral"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Čierny vyhral"
@@ -4213,42 +4213,42 @@ msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr "Šachový engine je p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Čierneho ťah"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Bieleho ťah"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Bieleho ťah"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Čierneho ťah"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Ťahová hra"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Biele šachy"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Čierne šachy"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Nesprávne, tvoj kráľ môže byť v šachu"
@@ -5277,7 +5277,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Nájdi ružovú kačku"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5286,12 +5286,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -5471,7 +5471,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr ""
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5479,7 +5479,7 @@ msgstr ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5489,7 +5489,7 @@ msgstr ""
 "noha"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6838,7 +6838,7 @@ msgid ""
 "animal that matches the text."
 msgstr ""
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6847,12 +6847,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -9428,7 +9428,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Vyber primeraný počet častí ako je uvedené v pokynoch."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Zisti znázornený zlomok."
@@ -14147,57 +14147,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Backspace: vymazať poslednú číslicu vo vašej odpovedi"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -14326,7 +14326,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr ""
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14346,7 +14346,7 @@ msgstr ""
 "oboch objektov a nepriamo úmerná druhej mocnine vzdialenosti, ktorá oddeľuje "
 "ich stredy."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14366,7 +14366,7 @@ msgstr ""
 "väčšia gravitačná sila. Preto, ak sa hmotnosť ktoréhokoľvek objektu zvyšuje, "
 "príťažlivá sila medzi nimi sa tiež zvyšuje"
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14383,7 +14383,7 @@ msgstr ""
 "vzájomne na seba pôsobiacimi objektami, väčší odstup vedie k oslabeniu "
 "gravitačných síl."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14400,7 +14400,7 @@ msgstr ""
 "množstva okolitých planét. Nedostaňte sa príliš blízko k planétam, lebo do "
 "nich narazíte. Šípka ukazuje smer sily na vašej lodi."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14582,12 +14582,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Úroveň %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "výsledok nie je kladné celé číslo"
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "výsledok nie je celé číslo"
@@ -14690,18 +14690,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: vymazať číslo"
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Číslo je privysoké"
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Číslo je prinízke"
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "To je to číslo!"
@@ -14791,18 +14791,18 @@ msgstr ""
 "Ak je aktívna voľba \"Nájsť vyslovené slovo...\" a ak je dostupná príslušná "
 "hlasová odozva, budete počuť slovo, ktoré máte nájsť na tri pokusy."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Pokus: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Je nám ľúto, nemáme ešte preklad pre váš jazyk."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14812,7 +14812,7 @@ msgstr ""
 "GCompris je vyvíjaný KDE komunitou, GCompris môžete prekladať pripojením sa "
 "k prekladateľskému tímu na <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15487,31 +15487,31 @@ msgid ""
 "rotate the spaceship"
 msgstr ""
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Palivo: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Výška: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Rýchlosť: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Zrýchlenie: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15869,14 +15869,14 @@ msgid ""
 "number. Then click on the OK button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15885,7 +15885,7 @@ msgid ""
 "button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15893,15 +15893,15 @@ msgid ""
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15910,7 +15910,7 @@ msgstr ""
 "Ak je odpoveď správna, napíšte príslušný výsledok a kliknite na tlačidlo OK "
 "pre kontrolu svojej odpovede."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15918,7 +15918,7 @@ msgid ""
 "unit."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15927,12 +15927,12 @@ msgid ""
 "to validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16474,12 +16474,12 @@ msgstr ""
 "Na vlajke pripojenej k lietadlu sa zobrazí písmeno, vyberte všetky slová "
 "alebo objekty, v ktorých sa písmeno nachádza, a potom stlačte OK."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Je nám ľúto, nemáme ešte preklad pre váš jazyk."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16489,7 +16489,7 @@ msgstr ""
 "GCompris je vyvíjaný KDE komunitou, GCompris môžete prekladať pripojením sa "
 "k prekladateľskému tímu na <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17186,7 +17186,7 @@ msgstr ""
 "Vypočujte si prehrávanú zvukovú sekvenciu a opakujte ju klikaním na tyčky "
 "xylofónu. Môžete vypočuť znova kliknutím na tlačidlo opakovania."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17195,12 +17195,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -18373,7 +18373,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18382,12 +18382,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -18827,7 +18827,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Slovník"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18836,12 +18836,12 @@ msgstr ""
 "Svoje obľúbené aktivity umiestnite sem, výberom slnka v pravom hornom rohu "
 "na každej aktivite."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Ukazovať zamknuté aktivity"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavenia aktivity"
@@ -19010,12 +19010,12 @@ msgstr ""
 "V hlavnej oblasti sa zobrazuje objekt. Pod obrázkom je vytlačené neúplné "
 "slovo. Vyber chýbajúce písmeno pre doplnenie slova."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Je nám ľúto, nemáme ešte preklad pre váš jazyk."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19025,7 +19025,7 @@ msgstr ""
 "GCompris je vyvíjaný KDE komunitou, GCompris môžete prekladať pripojením sa "
 "k prekladateľskému tímu na <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19108,7 +19108,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr ""
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19118,7 +19118,7 @@ msgstr ""
 "obrazovky. Ak chceš odstrániť mincu alebo bankovku, klikni na ňu v hornej "
 "časti obrazovky."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -19304,13 +19304,13 @@ msgstr ""
 "Keď budeš pripravený, klikni na Tuxa a budeme sa rozprávať Morzeovou "
 "abecedou."
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morseova hodnota: %1"
 
-#: activities/morse_code/MorseCode.qml:354
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19516,39 +19516,39 @@ msgstr ""
 "Ak počítač znehybníte alebo ho ponecháte s menej ako 3 figúrkami, vyhrávate "
 "hru."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Umiestnite figúrku"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Presunúť figúrku"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Odstrániť figúrku"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Blahoželáme"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Blahoželáme, hráč 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Blahoželáme, hráč 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Skús znova"
@@ -19628,7 +19628,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19637,12 +19637,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -20032,32 +20032,32 @@ msgid ""
 "ascending or descending order as requested."
 msgstr ""
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Pretiahnuť položky vo vzostupnom poradí."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Pretiahnuť položky v zostupnom poradí."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Pretiahnuť písmená v abecednom poradí."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Pretiahnuť písmená v obrátenom abecednom poradí."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Pretiahnuť položky v chronologickom poradí."
 
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr "Pretiahnutím slov do horného políčka vytvorte zmysluplnú vetu."
@@ -20626,12 +20626,12 @@ msgstr ""
 "Pozorujte pozorne tieto dva obrázky. Existujú určité malé rozdiely. Keď "
 "nájdete rozdiel, musíte naň kliknúť."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Posuňte posuvník na zobrazenie rozdielov."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klikni na zmeny medzi dvoma obrázkami."
@@ -21032,30 +21032,30 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Tón znížený o poltón"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Toto je notová osnova husľového kľúča pre vysoké tóny."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Toto je notová osnova basového kľúča pre nízke tóny."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
 "Čierne klávesy zvyšujú a znižujú o poltón. Tóny zvýšené o poltón majú znak ♯."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Každý čierny kláves má dva názvy: znižujúci o poltón a zvyšujúci o poltón. "
 "Tóny znížené o poltón majú znak ♭."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -21064,7 +21064,7 @@ msgstr ""
 "Kliknutím na symbol noty zapíšete noty rôznej dĺžky, ako sú celé noty, "
 "polové noty, štvrťové noty a osminové noty."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -21075,18 +21075,18 @@ msgstr ""
 "symbol pauzy vyberte dĺžku pauzy a potom kliknite na tlačidlo pridania a "
 "vložte ju do notovej osnovy."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Teraz môžete načítať hudbu a tiež si uložiť svoju skomponovanú."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Pri ukladaní melódie do vášho súboru sa vyskytla chyba (%1)"
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -21122,7 +21122,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Vaše uložené melódie"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21131,12 +21131,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -21389,7 +21389,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Kliknite na klávesy klavíra, ktoré zodpovedajú daným notám."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21398,12 +21398,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -21500,7 +21500,7 @@ msgstr ""
 "Nasledujte zvislú čiaru a kliknite na tempo alebo stlačte medzerník a hrajte "
 "rytmus správne."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21509,12 +21509,12 @@ msgstr ""
 "Táto aktivita vyžaduje zvuk, takže bude prehrávať niektoré zvuky aj keď sú "
 "hlasové odozvy a efekty vypnuté v hlavných nastaveniach."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Koniec"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Pokračovať"
@@ -22018,7 +22018,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "2. Použite kláves Enter alebo Return na odovzdanie odpovedí.<br>"
 
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22027,7 +22027,7 @@ msgstr ""
 "Pozorujte a pamätajte si vlak skôr, ako časovač skončí, a potom ťahaním "
 "položiek vytvorte podobný vlak."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22071,7 +22071,7 @@ msgstr ""
 "Na tabuli sa zobrazí slovo. Zoznam slov zobrazených horizontálne sa objaví a "
 "zmizne. Patrí dané slovo do zoznamu?"
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22081,12 +22081,12 @@ msgstr ""
 "<font color=\"#373737\">Skontrolujte, či je slovo<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">zobrazené</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Áno, videl som!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nie, nebolo to tam!"
@@ -22258,7 +22258,7 @@ msgstr ""
 "svetla. Ak chcete vyhrať, musíte zapnúť všetkých spotrebiteľov, zatiaľ čo "
 "všetci výrobcovia sú v prevádzke."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22267,7 +22267,7 @@ msgstr ""
 "Tux sa vrátil z rybolovu na svojej lodi. Obnovte elektrický systém, aby "
 "mohol mať doma svetlo."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22276,7 +22276,7 @@ msgstr ""
 "Kliknite na rôzne aktívne prvky: slnko, mrak, priehrada, solárne pole, "
 "veterná farma a transformátory, aby ste reaktivovali celý elektrický systém."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22287,13 +22287,13 @@ msgstr ""
 "svetla. Ak chcete vyhrať, musíte zapnúť všetkých spotrebiteľov, zatiaľ čo "
 "všetci výrobcovia sú v prevádzke."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Učte sa o elektrickom systéme založenom na obnoviteľnej energii. Bavte sa."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22539,13 +22539,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "Teraz viete pravidlá, môžete čítať a písať čísla rímskymi číslicami."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rímska hodnota: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24874,7 +24874,7 @@ msgstr ""
 "Skvelé! Môžete zopakovať ohodnotenie a otestovať svoje znalosti na ďalších "
 "otázkach."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, fuzzy, qt-format
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -24897,17 +24897,17 @@ msgstr ""
 "Režim ohodnotenia</b> - V tomto režime si môžete otestovať svoje vedomosti o "
 "slnečnej sústave."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Ohodnotenie"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Učenie"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 #, fuzzy
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -24921,7 +24921,7 @@ msgstr ""
 "Kliknutím na Slnko alebo ktorúkoľvek planétu odkryjete otázky. Každá otázka "
 "obsahuje 4 možnosti, z ktorých jedna je správna."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24936,7 +24936,7 @@ msgstr ""
 "sledovaním merača blízkosti. Ak je viditeľné tlačidlo rady rady, môžete naň "
 "kliknúť a dostanete radu, ktorá naznačuje správnu odpoveď."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24945,7 +24945,7 @@ msgstr ""
 "Na začiatku je k dispozícii 20 otázok so 4 možnosťami. Ukazovateľ postupu "
 "vpravo dole na obrazovke ukazuje vaše percentuálne skóre."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 #, fuzzy
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -24965,7 +24965,7 @@ msgstr ""
 "s nesprávne zodpovedanou otázkou.<br>Bude položených maximálne 25 otázok, po "
 "ktorých už nebude pridaná žiadna otázka."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24974,7 +24974,7 @@ msgstr ""
 "Mali by ste dosiahnuť skóre viac ako 90%, aby ste vyhoveli ohodnoteniu a "
 "stali sa odborníkom na slnečnú sústavu."
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24984,7 +24984,7 @@ msgstr ""
 "1. Čím <b>ďalej</b> je planéta od Slnka, tým <b>nižšia</b> je jej teplota."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24995,7 +24995,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25003,12 +25003,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Rada"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Prezrieť si slnečnú sústavu"
@@ -26222,12 +26222,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Verzia %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Chýbajú zvukové súbory!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -26236,38 +26236,38 @@ msgstr ""
 "Táto aktivita používa jazykové zvukové súbory, ktoré ešte nie sú "
 "nainštalované na vašom systéme."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr ""
 "K stiahnutiu potrebných zvukových súborov prejsť do dialógu predvolieb."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Sťahovanie prebieha"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "Prebieha sťahovanie.<br/>'Prerušiť' pre okamžité ukončenie."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Ukončiť?"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Naozaj chcete ukončiť GCompris?"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Áno"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Nie"
@@ -26761,6 +26761,13 @@ msgid ""
 msgstr ""
 "Vymedziť rozsah obtiažností činností, ktoré budú zobrazené počas sedenia. "
 "Buď jednu hodnotu (2), alebo rozsah (3-6). Hodnoty musia byť od 1 po 6."
+
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
+msgstr ""
 
 #: core/main.qml:273
 msgctxt "main|"

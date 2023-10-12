@@ -2457,7 +2457,7 @@ msgid ""
 msgstr ""
 "Tasemekomplekti laadimiseks klõpsake nuppu \"Laadi salvestatud tasemed\"."
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2466,7 +2466,7 @@ msgstr ""
 "Tasemete loomiseks käivitage tegevuste seadete menüüs tasemeredaktor ja "
 "laadige fail või valige tasemekomplekt \"Sisseehitatud\"."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2546,13 +2546,13 @@ msgstr ""
 "Vajuta korraga paremat ja vasakut nooleklahvi, et pall liiguks täiesti otse. "
 "Puuteekraanil tuleb korraga vajutada mõlema käega."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Koputa mõlema käega korraga, et pall liiguks täiesti otse."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2745,7 +2745,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "See pilt aitab arvutada bittide väärtusi."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2813,16 +2813,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Tühik: punktkirjadiagrammi avamine või sulgemine"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Nüüd on see ilma viiteta natuke raskem."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2831,7 +2831,7 @@ msgstr ""
 "Uuri Braille'i tähestikku ja pane tähele, kui sarnased on esimene ja teine "
 "rida."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2840,7 +2840,7 @@ msgstr ""
 "See on taas samasugune nagu esimene rida, aga ole tähelepanelik. W-täht on "
 "hiljem lisatud."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "See on lihtne: arvud on samad nagu tähed A-J."
@@ -3485,7 +3485,7 @@ msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr "Vaadake juhised üle ja lohistage esemed vastavalt juhistele."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3497,12 +3497,12 @@ msgstr ""
 "mängimiseks klõpsake ristil või nupul \"Ära seda dialoogi enam kunagi näita"
 "\"."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Uuenda pildikogu"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Ära seda dialoogi enam kunagi näita"
@@ -4084,22 +4084,22 @@ msgstr ""
 "draughts.js&gt;. Käsiraamat Wikipedias: &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Musta käik"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Valge käik"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Valge võidab"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Must võidab"
@@ -4219,42 +4219,42 @@ msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr "Malemootoriks on p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Musta käik"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Valge käik"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Valge matistab"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Must matistab"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Mäng jäi viiki"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Valge annab tuld"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Must annab tuld"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Vale käik, sinu kuningas võib tule alla sattuda"
@@ -5261,7 +5261,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Leia roosa part"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5270,12 +5270,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Jätka"
@@ -5446,7 +5446,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Tühik, Enter või Tabulaator: vali järgmine"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5454,7 +5454,7 @@ msgstr ""
 "ema;isa;udu;ila;ahv;pea,jah;ehk;ott;utt;eit;pai;sai;vai;usk;luu;kuu;suu;puu"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5464,7 +5464,7 @@ msgstr ""
 "sein;laul"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6705,7 +6705,7 @@ msgstr ""
 "Kolmandal tasemel kuvatakse juhuslik tekstiviip ja peate klõpsama tekstile "
 "vastaval loomal."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6714,12 +6714,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Jätka"
@@ -9124,7 +9124,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Valige sobiv arv juppe, nagu on kirjeldatud juhistes."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Leidke murdarv."
@@ -13809,57 +13809,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr "Tagasilükkeklahv: kustuta vastusest viimane number"
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -13987,7 +13987,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Vasak- ja paremnool: liikuge kosmoselaeva"
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -13999,7 +13999,7 @@ msgstr ""
 "sõltub otseselt mõlema objekti massist ja on pöördvõrdeline nende objektide "
 "keskpunkti lahutava vahemaa ruuduga."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14009,7 +14009,7 @@ msgstr ""
 "Kuna raskusjõud on võrdeline mõlema objekti massiga, siis mida suurema "
 "massiga objektid teineteist tõmbavad, seda tugevam on raskusjõud."
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14020,7 +14020,7 @@ msgstr ""
 "objekti keskkoha vahemaa ruuduga, mis tähendab, et mida kaugemal objektid "
 "teineteisest asuvad, seda väiksem on raskusjõud."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14031,7 +14031,7 @@ msgstr ""
 "kuni jõuad kosmosejaama. Nool näitab sinu laeva mõjutava raskusjõu suunda ja "
 "tugevust."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14215,12 +14215,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Tase %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "tulemus ei ole positiivne täisarv"
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "tulemus ei ole täisarv"
@@ -14313,18 +14313,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Tagasilükkeklahv: numbri kustutamine"
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Liiga suur arv"
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Liiga väike arv"
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Sa leidsid numbri!"
@@ -14414,18 +14414,18 @@ msgstr ""
 "Kui valik \"Räägi otsimiseks sõnu...\" on aktiveeritud ja kui vastav hääl on "
 "saadaval, kuulete sõna, mida leida, kui kolm katset on jäänud."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Proovitud: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Vabandust, sinu keele jaoks ei ole veel tõlget olemas."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14435,7 +14435,7 @@ msgstr ""
 "GComprist arendab KDE kogukond, seda saab tõlkida ka ise, kui liitud "
 "tõlkemeeskonnaga aadressil <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15106,31 +15106,31 @@ msgstr ""
 "Vasak- ja paremnooled: esimestel tasanditel liikumine külgedele; kõrgematel "
 "tasanditel, kosmoselaeva pööramine"
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Kütus: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Kõrgus: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Kiirus: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Kiirendus: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15490,7 +15490,7 @@ msgstr ""
 "arv vastab kuvatavale kümnendkoha arvule. Seejärel klõpsake vastuse "
 "kinnitamiseks nuppu OK."
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15499,7 +15499,7 @@ msgstr ""
 "Kuvatakse kümnendkoha arv. Noolega riba tähistab täisühikut ja iga ruut "
 "selles tähistab ühte kümnendikku sellest ühikust."
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15511,7 +15511,7 @@ msgstr ""
 "alale. Korrake neid samme, kuni kukutatud ribade arv vastab kuvatavale "
 "kümnendkoha arvule. Seejärel klõpsake vastuse kinnitamiseks nuppu OK."
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15522,7 +15522,7 @@ msgstr ""
 "number tähistatud ribadega. Üks riba tähistab täisühikut ja iga ruut selles "
 "ühte kümnendikku sellest ühikust."
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15531,8 +15531,8 @@ msgstr ""
 "Klõpsake ruutudel, et need lahutada ja kuvada toimingu tulemus, ning "
 "klõpsake vastuse kinnitamiseks nuppu OK."
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15541,7 +15541,7 @@ msgstr ""
 "Lohista iga pilt (püstisest) kastist vasakul sellele vastava nime juurde "
 "paremal. Vastuse kontrollimiseks klõpsa nupule OK."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15551,7 +15551,7 @@ msgstr ""
 "Kuvatakse kahe kümnendkohaga liitmine. Noolega riba tähistab täisühikut ja "
 "iga ruut selles tähistab ühte kümnendikku sellest ühikust."
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15563,12 +15563,12 @@ msgstr ""
 "alale. Korrake neid samme, kuni kukutatud ribade arv vastab lisamise "
 "tulemusele, ja klõpsake vastuse kinnitamiseks nuppu OK."
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr "Vaja on leida kogus. Nool võimaldab valida kuni 10 apelsini."
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16110,12 +16110,12 @@ msgstr ""
 "Näidatakse tähte lennuki küljes oleval lipul. Vali kõik sõnad või objektid, "
 "milles see täht esineb, ja klõpsa OK."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Vabandust, sinu keele jaoks ei ole veel tõlget olemas."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16125,7 +16125,7 @@ msgstr ""
 "GComprist arendab KDE kogukond, seda saab tõlkida ka ise, kui liitud "
 "tõlkemeeskonnaga aadressil <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16721,7 +16721,7 @@ msgstr ""
 "Kuula esitatavaid helisid ja korda neid, klõpsates ksülofoni klahvidele. Kui "
 "soovid heli uuesti kuulda, klõpsa kordamise nupule."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16730,12 +16730,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Jätka"
@@ -17875,7 +17875,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17884,12 +17884,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Jätka"
@@ -18318,7 +18318,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Sõnavara"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18327,12 +18327,12 @@ msgstr ""
 "Sea siia oma lemmiktegevused, valides iga tegevuse juures ülal paremal "
 "päikese."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Konkreetse tegevuse otsing"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tegevuse seadistused"
@@ -18505,12 +18505,12 @@ msgstr ""
 "Põhialal kuvatakse pilt ja pildi alla on kirjutatud mittetäielik sõna. Sõna "
 "lõpetamiseks klõpsake puuduval tähel või tippige kiri klaviatuurile."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Vabandust, sinu keele jaoks ei ole veel tõlget olemas."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18520,7 +18520,7 @@ msgstr ""
 "GComprist arendab KDE kogukond, seda saab tõlkida ka ise, kui liitud "
 "tõlkemeeskonnaga aadressil <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18592,7 +18592,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab: navigeerige ülemise ja alumise ala vahel"
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18601,7 +18601,7 @@ msgstr ""
 "Maksmiseks klõpsa müntidel või paberrahal ekraani allosas. Kui soovid mündi "
 "või paberraha eemaldada, klõpsa seda ekraani ülaosas."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -18780,13 +18780,13 @@ msgstr ""
 "Kui olete valmis, klõpsake Tuxil ning siis saame alustada morse koodis "
 "suhtlemist."
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morse väärtus: %1"
 
-#: activities/morse_code/MorseCode.qml:354
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -18992,39 +18992,39 @@ msgstr ""
 "Kui muudad arvuti käiguvõimetuks või jätad talle alla 3 nupu, oled mängu "
 "võitnud."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Aseta nupp paika"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Liiguta nuppu"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Eemalda nupp"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Õnnitlused"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Õnnitleme mängijat 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Õnnitleme mängijat 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Proovi uuesti"
@@ -19098,7 +19098,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19107,12 +19107,12 @@ msgstr ""
 "See tegevus nõuab heli, seega esitab see mõningaid helisid isegi siis, kui "
 "helihääled või -efektid on põhikonfiguratsioonis keelatud."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Jätka"
@@ -19456,32 +19456,32 @@ msgstr ""
 "Teile antakse mõned numbrid. Lohistage need ülemisse piirkonnda kasvavas või "
 "kahanevas järjekorras vastavalt ülessande kirjeldusele."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Lohistage esemed tõusvas järjestuses."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Lohistage esemed kahanevas järjestuses."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Lohistage tähed tähestikulises järjekorras."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Lohistage tähed vastupidises tähestikulises järjekorras."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Lohistage esemed kronoloogilises järjekorras."
 
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr "Lohistage sõnad ülemisse kasti, et moodustada sisukas lause."
@@ -20047,12 +20047,12 @@ msgstr ""
 "Pilte tuleb hoolikalt uurida. Neide vahel on mõningad erinevused. Kui leiad "
 "erinevuse, tuleb sellel klõpsata."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Lohista liugurit erinevuste nägemiseks."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klõpsa kahe pildi erinevustel."
@@ -20459,31 +20459,31 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Madaldatud noodid"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "See on viiulivõtmes noodijoonestik kõrgemate nootide jaoks."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "See on bassivõtmes noodijoonestik madalate nootide jaoks."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
 "Mustade klahvide puhul on tegu dieeside (kõrgendatud) ja bemollidega "
 "(madaldatud) nootidega. Dieesi märkimiseks kasutatakse # märki."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Igal mustal klahvil on kaks nimetust: diees ja bemoll. Dieesi(madaldatud) "
 "noote tähistatakse ♭ märgiga."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -20492,7 +20492,7 @@ msgstr ""
 "Vajutage noodi sümbolile, et muuta noodi pikkust, näiteks terve, pool, "
 "veerand või kaheksandik noot."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -20503,18 +20503,18 @@ msgstr ""
 "valida pausi pikkus ja seejärel vajuta \"+\" nupule, et lisada see "
 "noodijoonestikule."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Nüüd saate muusikat laadida ja ka oma kompositsioone salvestada."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Tõrge meloodia salvestamisel sinu faili (%1)"
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -20550,7 +20550,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Sinu salvestatud meloodiad"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20559,12 +20559,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Jätka"
@@ -20812,7 +20812,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klõpsa klaveriklahvidel, mis vastavad etteantud nootidele."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20821,12 +20821,12 @@ msgstr ""
 "See tegevus nõuab heli, seega mängib see mõningaid helisid isegi siis, kui "
 "helihääled või -efektid on põhikonfiguratsioonis keelatud."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Jätka"
@@ -20922,7 +20922,7 @@ msgstr ""
 "Jälgi punast joont ning vajuta kas tühikut või kliki trummil et mängida "
 "rütmi korrektselt."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20931,12 +20931,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Jätka"
@@ -21391,7 +21391,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter: esitage oma vastus"
 
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21400,7 +21400,7 @@ msgstr ""
 "Vaata ja jäta rong enne aja lõppemist meelde ning lohista seejärel "
 "näidistealalt vastusealale samasugune rong."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21438,7 +21438,7 @@ msgstr ""
 "Tahvlil näidatakse sõna. Horisontaalsuunas kulgevad sõnad ilmuvad ja kaovad. "
 "Kas näidatud sõna on ka seal või mitte?"
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21448,12 +21448,12 @@ msgstr ""
 "<font color=\"#373737\">Kontrolli, kas sõna<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">on näha</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Jah, ma nägin seda!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ei, seda ei olnud!"
@@ -21600,7 +21600,7 @@ msgstr ""
 "jõuab koju, vajuta tema eest valgusenuppu. Et võita, pead sisse lülitama "
 "kõik elektritarbijad, nii et kõik elektritootjad peavad ka töötama."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21609,7 +21609,7 @@ msgstr ""
 "Tux on pikalt kalastusretkelt tagasi jõudnud. Pane elektrisüsteem tööle, et "
 "tal oleks kodus natukenegi valgem."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21618,7 +21618,7 @@ msgstr ""
 "Klõpsa elektrisüsteemi töölepanekuks vajalikel elementidel: päike, pilv, "
 "tamm, päikesepaneelid, tuulepark ja trafod."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21629,12 +21629,12 @@ msgstr ""
 "võita, pead sisse lülitama kõik elektritarbijad, nii et kõik elektritootjad "
 "peavad ka töötama."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Taastuvenergial töötava elektrisüsteemi tundmaõppimine."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -21883,13 +21883,13 @@ msgstr ""
 "Nüüd, kus tunned reegleid, võid vaevata kirjutada ja lugeda kõiki rooma "
 "numbreid."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rooma number: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24198,7 +24198,7 @@ msgstr ""
 "Suurepärane! Võid mängu korrata, et enda teadmised veel rohkemate "
 "küsimustega proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24214,17 +24214,17 @@ msgstr ""
 "Hindamisrežiim</b> - selle korral saad oma teadmised Päikesesüsteemist "
 "proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Hindamine"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Õppimine"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24233,7 +24233,7 @@ msgstr ""
 "Küsimuste nägemiseks klõpsa Päikesel või mõnel planeedil. Igal küsimusel on "
 "4 valikvastust, millest üks on õige."
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24248,7 +24248,7 @@ msgstr ""
 "Kui vihjenupp on nähtav, võite vastuse leidmiseks vihje saamiseks sellele "
 "klõpsata."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24257,7 +24257,7 @@ msgstr ""
 "Algul on valmis seatud 20 küsimust, igal 4 valikvastust. All paremal näitab "
 "edenemisriba sinu tulemusi protsentides."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24270,14 +24270,14 @@ msgstr ""
 "üks lisaküsimus.<br>Maksimaalselt esitatakse 25 küsimust, mille järel "
 "küsimuste esitamine lõpetatakse."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "Et olla Päikesesüsteemi ekspert, peaksid koguma hindamisel üle 90%!"
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24287,7 +24287,7 @@ msgstr ""
 "1. Mida <b>kaugemal</b> asub planeet Päikesest, seda <b>madalam</b> on selle "
 "temperatuur.<br> <font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24298,7 +24298,7 @@ msgstr ""
 "liigume</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24309,12 +24309,12 @@ msgstr ""
 "sõna esimest tähte - <b>M</b>inu <b>V</b>anaisa <b>M</b>usta <b>M</b>aja "
 "<b>J</b>uures <b>S</b>eisab <b>U</b>hke <b>N</b>eoonskupltuur.<br>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Vihje"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vaata Päikesesüsteemi"
@@ -25535,12 +25535,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Versioon %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Helifailid puuduvad!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -25549,38 +25549,38 @@ msgstr ""
 "See tegevus kasutab keele helifaile, mida pole sinu süsteemi veel "
 "paigaldatud."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr "Vajalike helifailide allalaadimiseks ava seadistustedialoog."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Allalaadimine käib"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr ""
 "Allalaadimine käib.<br/>Kui soovid selle kohe lõpetada, klõpsa \"Katkesta\"."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Kas väljuda?"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Kas tõesti väljuda GComprisest?"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Jah"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Ei"
@@ -26070,6 +26070,13 @@ msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
+msgstr ""
+
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
 msgstr ""
 
 #: core/main.qml:273
