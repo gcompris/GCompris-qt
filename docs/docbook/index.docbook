@@ -306,7 +306,6 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>Specify the activity when starting GCompris.</entry>
 </row>
 <row>
-<row>
 <entry>--start-level level</entry>
 <entry>Specify the level on which to start the activity specified by --launch option when starting GCompris. Ignored if no --launch option, or if level specified is invalid.</entry>
 </row>
