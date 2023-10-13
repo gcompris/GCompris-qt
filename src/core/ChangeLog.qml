@@ -30,7 +30,8 @@ QtObject {
                 qsTr("Many usability improvements"),
                 qsTr("Many new images"),
                 qsTr("Many bug fixes")
-                ]
+                ],
+              "newDatasets": ["algebra_by", "algebra_plus", "algebra_minus", "algebra_div"]
             },
             { "versionCode": 30300, "content": [
                 qsTr("Translations added for Arabic and Esperanto"),
