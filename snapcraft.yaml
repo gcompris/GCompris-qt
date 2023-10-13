@@ -1,0 +1,185 @@
+---
+name: gcompris
+confinement: strict
+grade: stable
+base: core22
+adopt-info: gcompris
+apps:
+    gcompris:
+        # extensions:
+        # - kde-neon
+        common-id: org.kde.gcompris.desktop
+        desktop: usr/share/applications/org.kde.gcompris.desktop
+        command: usr/bin/gcompris-qt
+        plugs:
+        - desktop
+        - desktop-legacy
+        - opengl
+        - wayland
+        - x11
+        - audio-playback
+        - unity7
+        - network
+        - network-bind
+        command-chain:
+        - snap/command-chain/desktop-launch
+assumes:
+- snapd2.55.3
+compression: lzo
+plugs:
+    desktop:
+        mount-host-font-cache: false
+    icon-themes:
+        interface: content
+        target: $SNAP/data-dir/icons
+        default-provider: gtk-common-themes
+    sound-themes:
+        interface: content
+        target: $SNAP/data-dir/sounds
+        default-provider: gtk-common-themes
+    kf5-5-110-qt-5-15-11-core22:
+        content: kf5-5-110-qt-5-15-11-core22-all
+        interface: content
+        default-provider: kf5-5-110-qt-5-15-11-core22
+        target: $SNAP/kf5
+environment:
+    SNAP_DESKTOP_RUNTIME: $SNAP/kf5
+    GST_PLUGIN_PATH: "$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gstreamer-1.0"
+    GST_PLUGIN_SYSTEM_PATH: "$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gstreamer-1.0"
+    GST_PLUGIN_SCANNER: "$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner"
+hooks:
+    configure:
+        plugs:
+        - desktop
+        command-chain:
+        - snap/command-chain/hooks-configure-desktop
+layout:
+    "/usr/lib/$CRAFT_ARCH_TRIPLET/alsa-lib":
+        symlink: "$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/alsa-lib"
+    "/usr/share/alsa":
+        symlink: "$SNAP/usr/share/alsa"
+    /usr/share/X11:
+        symlink: $SNAP/kf5/usr/share/X11
+package-repositories:
+-   type: apt
+    components:
+    - main
+    suites:
+    - jammy
+    key-id: 444DABCF3667D0283F894EDDE6D4736255751E5D
+    url: http://origin.archive.neon.kde.org/user
+    key-server: keyserver.ubuntu.com
+parts:
+    kde-neon:
+        source: /snap/snapcraft/current/share/snapcraft/extensions/desktop/kde-neon
+        source-type: local
+        plugin: make
+        make-parameters:
+        - PLATFORM_PLUG=kf5-5-110-qt-5-15-11-core22
+        build-snaps:
+        - kf5-5-110-qt-5-15-11-core22-sdk
+        build-environment:
+        - &id001
+            PATH: /snap/kf5-5-110-qt-5-15-11-core22-sdk/current/usr/bin${PATH:+:$PATH}
+        - &id002
+            XDG_DATA_DIRS: $CRAFT_STAGE/usr/share:/snap/kf5-5-110-qt-5-15-11-core22-sdk/current/usr/share:/usr/share${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}
+        - &id003
+            XDG_CONFIG_HOME: $CRAFT_STAGE/etc/xdg:/snap/kf5-5-110-qt-5-15-11-core22-sdk/current/etc/xdg:/etc/xdg${XDG_CONFIG_HOME:+:$XDG_CONFIG_HOME}
+        - &id004
+            CRAFT_CMAKE_ARGS: -DCMAKE_FIND_ROOT_PATH=/snap/kf5-5-110-qt-5-15-11-core22-sdk/current${CRAFT_CMAKE_ARGS:+:$CRAFT_CMAKE_ARGS}
+    qml-box2d:
+        after:
+        - kde-neon
+        source: https://github.com/qml-box2d/qml-box2d.git
+        plugin: cmake
+        build-packages:
+        - cmake
+        stage-packages:
+        - qml-module-qtcharts
+        - qml-module-qt-labs-calendar
+        - webp
+        cmake-parameters:
+        - -DKDE_INSTALL_USE_QT_SYS_PATHS=FALSE
+        - -DCMAKE_INSTALL_PREFIX=/usr
+        - -DCMAKE_BUILD_TYPE=Release
+        - -DENABLE_TESTING=OFF
+        - -DBUILD_TESTING=OFF
+        - -DKDE_SKIP_TEST_SETTINGS=ON
+        - "-DCMAKE_FIND_ROOT_PATH=$CRAFT_STAGE\\;/snap/kf5-5-110-qt-5-15-11-core22-sdk/current"
+        build-environment: &id005
+        - *id001
+        - *id002
+        - *id003
+        - *id004
+    gcompris:
+        after:
+        - kde-neon
+        - qml-box2d
+        parse-info:
+        - usr/share/metainfo/org.kde.gcompris.appdata.xml
+        plugin: cmake
+        source: .
+        source-type: local
+        build-packages:
+        - cmake
+        - libkf5doctools-dev
+        - libssl-dev
+        - gettext
+        - libqt5charts5-dev
+        stage-packages:
+        - libqt5multimedia5-plugins
+        - qt5-image-formats-plugins
+        - qml-module-qtgraphicaleffects
+        - qml-module-qtmultimedia
+        - qml-module-qtquick-controls
+        - qml-module-qtquick-particles2
+        - libasound2
+        - libasound2-data
+        - libasound2-plugins
+        - phonon4qt5
+        - libgstreamer1.0-0
+        - gstreamer1.0-alsa
+        - gstreamer1.0-pulseaudio
+        - gstreamer1.0-plugins-good
+        - gstreamer1.0-plugins-bad
+        - gstreamer1.0-plugins-ugly
+        - phonon4qt5-backend-gstreamer
+        - oxygen-sounds
+        - libqt5gstreamer-1.0-0
+        - libqt5gstreamerquick-1.0-0
+        - libqt5gstreamerui-1.0-0
+        - libqt5gstreamerutils-1.0-0
+        - libqt5charts5
+        cmake-parameters:
+        - -DKDE_INSTALL_USE_QT_SYS_PATHS=FALSE
+        - -DCMAKE_INSTALL_PREFIX=/usr
+        - -DCMAKE_BUILD_TYPE=Release
+        - -DENABLE_TESTING=OFF
+        - -DBUILD_TESTING=OFF
+        - -DKDE_SKIP_TEST_SETTINGS=ON
+        - "-DCMAKE_FIND_ROOT_PATH=/usr\\;$CRAFT_STAGE\\;/snap/kf5-5-110-qt-5-15-11-core22-sdk/current"
+        - -DQML_BOX2D_LIBRARY=$CRAFT_STAGE/usr/lib/$CRAFT_ARCH_TRIPLET/Box2D
+        prime:
+        - "-usr/lib/*/cmake/*"
+        - "-usr/include/*"
+        - "-usr/share/ECM/*"
+        - "-usr/share/doc/*"
+        - "-usr/share/man/*"
+        - "-usr/share/icons/breeze-dark*"
+        - "-usr/bin/X11"
+        - "-usr/lib/gcc/$SNAPCRAFT_ARCH_TRIPLET/6.0.0"
+        - "-usr/lib/aspell/*"
+        - "-usr/share/lintain"
+        build-environment:
+        - *id001
+        - *id002
+        - *id003
+        - *id004
+        - QML2_IMPORT_PATH: $CRAFT_STAGE/usr/lib/$CRAFT_ARCH_TRIPLET/qt5/qml
+    cleanup:
+        after:
+        - gcompris-qt
+        plugin: nil
+        override-prime: |
+            set -eux
+           #unused lib found by linter
