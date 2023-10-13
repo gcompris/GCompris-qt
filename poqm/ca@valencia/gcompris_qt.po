@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-09-27 12:29+0200\n"
+"PO-Revision-Date: 2023-10-12 09:21+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -14965,7 +14965,7 @@ msgstr "La torre de Hanoi"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower to the right side."
-msgstr "Moveu la torre al costat dret."
+msgstr "Moveu la torre cap al costat dret."
 
 #. Help goal
 #: activities/hanoi_real/ActivityInfo.qml:20
@@ -14976,8 +14976,8 @@ msgid ""
 "    only one disc may be moved at a time\n"
 "    no disc may be placed atop a smaller disc\n"
 msgstr ""
-"L'objectiu del joc és moure la pila sencera a una altra vareta, seguint les "
-"regles següents:\n"
+"L'objectiu del joc és moure la pila sencera cap a una altra vareta, seguint "
+"les regles següents:\n"
 " * només es pot moure un disc cada vegada\n"
 " * cap disc es pot posar damunt d'un de més xicotet\n"
 
@@ -19530,7 +19530,7 @@ msgid ""
 "moved to any vacant spot on the board."
 msgstr ""
 "Si et quedes amb 3 peces, les peces adquiriran la capacitat de «volar» i es "
-"podran moure a qualsevol lloc buit en el tauler."
+"podran moure fins a qualsevol lloc buit en el tauler."
 
 #: activities/nine_men_morris/nine_men_morris.js:45
 msgctxt "nine_men_morris|"
@@ -26832,6 +26832,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Especifiqueu en quin nivell iniciar l'activitat. Només s'utilitza quan "
+"s'utilitza l'opció --launch."
 
 #: core/main.qml:273
 msgctxt "main|"

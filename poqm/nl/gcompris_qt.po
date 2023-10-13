@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-09-27 12:18+0200\n"
+"PO-Revision-Date: 2023-10-12 10:04+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -26389,6 +26389,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Specificeer op welk niveau de activiteit wordt begonnen. Wordt alleen "
+"gebruikt wanneer de optie --launch wordt gebruikt."
 
 #: core/main.qml:273
 msgctxt "main|"
