@@ -9,7 +9,7 @@ Source: https://invent.kde.org/education/gcompris-qt
 # Copyright: $YEAR $NAME <$CONTACT>
 # License: ...
 
-Files: .clang-format .flatpak-manifest.json .gitattributes .gitmodules publiccode.yml HACKING README README.md
+Files: .clang-format .flatpak-manifest.json .gitattributes .gitmodules publiccode.yml HACKING README README.md snapcraft.yaml
 Copyright: None
 License: CC0-1.0
 
