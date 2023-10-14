@@ -552,9 +552,15 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--launch activity</entry>
+>--launch actividad</entry>
 <entry
 >Indicar la actividad al iniciar GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level nivel</entry>
+<entry
+>Indicar el nivel en el que empezará la actividad especificada con la opción «--launch» al iniciar GCompris. Se ignora si no se usa la opción «--launch» o si el nivel indicado no es válido.</entry>
 </row>
 <row>
 <entry

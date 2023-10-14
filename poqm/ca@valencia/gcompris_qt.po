@@ -2474,8 +2474,8 @@ msgstr ""
 "Feu anar la bola fins a la porta. Aneu amb compte que no caiga per cap "
 "forat. Per a desbloquejar la porta, s'han de tocar en l'ordre correcte els "
 "botons de contacte amb número que hi ha en el quadro. Podeu moure la bola "
-"inclinant el dispositiu mòbil. A les plataformes d'escriptori, utilitzeu les "
-"tecles de fletxa per a simular la inclinació."
+"inclinant el dispositiu mòbil. En les plataformes d'escriptori, utilitzeu "
+"les tecles de fletxa per a simular la inclinació."
 
 #: activities/balancebox/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
