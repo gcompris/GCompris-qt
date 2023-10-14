@@ -154,14 +154,6 @@ ActivityBase {
             onTimeout: bonus.bad("smiley")
         }
 
-        Bonus {
-            id: bonus
-            Component.onCompleted: {
-                loose.connect(Activity.run)
-                win.connect(Activity.nextLevel)
-            }
-        }
-
         Score {
             id: score
             x: parent.width * 0.25
@@ -170,6 +162,14 @@ ActivityBase {
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 10
+        }
+
+        Bonus {
+            id: bonus
+            Component.onCompleted: {
+                loose.connect(Activity.run)
+                win.connect(Activity.nextLevel)
+            }
         }
 
         NumPad {
