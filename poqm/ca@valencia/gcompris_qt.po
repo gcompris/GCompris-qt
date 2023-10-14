@@ -2469,8 +2469,8 @@ msgstr ""
 "Feu anar la bola fins a la porta. Aneu amb compte que no caiga per cap "
 "forat. Per a desbloquejar la porta, s'han de tocar en l'ordre correcte els "
 "botons de contacte amb número que hi ha en el quadro. Podeu moure la bola "
-"inclinant el dispositiu mòbil. A les plataformes d'escriptori, utilitzeu les "
-"tecles de fletxa per a simular la inclinació."
+"inclinant el dispositiu mòbil. En les plataformes d'escriptori, utilitzeu "
+"les tecles de fletxa per a simular la inclinació."
 
 #: activities/balancebox/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -14642,7 +14642,7 @@ msgstr "La torre de Hanoi"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower to the right side."
-msgstr "Moveu la torre al costat dret."
+msgstr "Moveu la torre cap al costat dret."
 
 #. Help goal
 #: activities/hanoi_real/ActivityInfo.qml:20
@@ -14653,8 +14653,8 @@ msgid ""
 "    only one disc may be moved at a time\n"
 "    no disc may be placed atop a smaller disc\n"
 msgstr ""
-"L'objectiu del joc és moure la pila sencera a una altra vareta, seguint les "
-"regles següents:\n"
+"L'objectiu del joc és moure la pila sencera cap a una altra vareta, seguint "
+"les regles següents:\n"
 " * només es pot moure un disc cada vegada\n"
 " * cap disc es pot posar damunt d'un de més xicotet\n"
 
@@ -19206,7 +19206,7 @@ msgid ""
 "moved to any vacant spot on the board."
 msgstr ""
 "Si et quedes amb 3 peces, les peces adquiriran la capacitat de «volar» i es "
-"podran moure a qualsevol lloc buit en el tauler."
+"podran moure fins a qualsevol lloc buit en el tauler."
 
 #: activities/nine_men_morris/nine_men_morris.js:45
 msgctxt "nine_men_morris|"
