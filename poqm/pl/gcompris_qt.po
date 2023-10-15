@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-09-30 11:23+0200\n"
+"PO-Revision-Date: 2023-10-14 12:11+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -26297,6 +26297,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Określ na jakim poziomie rozpocząć aktywność. Brane pod uwagę tylko gdy "
+"użyto argumentu --launch."
 
 #: core/main.qml:273
 msgctxt "main|"
