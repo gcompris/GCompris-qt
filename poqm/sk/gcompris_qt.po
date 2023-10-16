@@ -820,6 +820,14 @@ msgctxt "Data|"
 msgid "Learn multiplication table of 10."
 msgstr "Naučte sa tabuľku násobkov 10."
 
+#: activities/algebra_by/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
+msgctxt "Data|"
+msgid "Practice multiplication tables from 1 to 10."
+msgstr "Tabuľky násobkov od 1 do 10."
+
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 2."
@@ -905,6 +913,14 @@ msgstr "Naučte sa tabuľku delenia 1."
 msgctxt "Data|"
 msgid "Learn division table of 10."
 msgstr "Naučte sa tabuľku delenia 10."
+
+#: activities/algebra_div/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
+msgctxt "Data|"
+msgid "Practice division tables from 1 to 10."
+msgstr "Tabuľky násobkov od 1 do 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -994,6 +1010,30 @@ msgctxt "Data|"
 msgid "Learn subtraction table of 10."
 msgstr "Naučte sa tabuľku odčítania 10."
 
+#: activities/algebra_minus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Subtractions from number up to 10."
+msgstr "Odčítavanie desatinných čísel do 1."
+
+#: activities/algebra_minus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Subtractions from number up to 20."
+msgstr "Odčítavanie desatinných čísel do 1."
+
+#: activities/algebra_minus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Subtractions from number up to 100."
+msgstr "Odčítavanie desatinných čísel do 1."
+
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
@@ -1079,6 +1119,30 @@ msgstr "Naučte sa tabuľku sčítania 1."
 msgctxt "Data|"
 msgid "Learn addition table of 10."
 msgstr "Naučte sa tabuľku sčítania 10."
+
+#: activities/algebra_plus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Additions with numbers up to 10."
+msgstr "Pridávanie desatinných čísel do 1."
+
+#: activities/algebra_plus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Additions with numbers up to 15."
+msgstr "Pridávanie desatinných čísel do 1."
+
+#: activities/algebra_plus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add stars up to 10."
+msgctxt "Data|"
+msgid "Additions with result up to 100."
+msgstr "Sčítavanie hviezd do 10."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -25916,128 +25980,128 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napíš padajúce slovo na klávesnici skôr ako dopadne na zem."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:57 core/ChangeLog.qml:92
-#: core/ChangeLog.qml:95 core/ChangeLog.qml:101
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
+#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Mnoho vylepšení použiteľnosti"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:45
-#: core/ChangeLog.qml:58 core/ChangeLog.qml:76 core/ChangeLog.qml:91
-#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97 core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Mnoho nových obrázkov"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:97 core/ChangeLog.qml:103
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
+#: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Mnoho malých opráv."
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Pridané preklady pre Arabčinu a Esperanto"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:44
+#: core/ChangeLog.qml:38 core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Aktualizácie mnohých prekladov"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Oprava chyby v aktivite Porovnať čísla"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Pridaná mapa Španielska pre aktivity z Geografie"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:56
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Pridané hlasové odozvy pre Ukrainčinu"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Vylepšená kvalita obrázkov vo viacerých aktivitách"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 
-#: core/ChangeLog.qml:71
+#: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
 
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:83
+#: core/ChangeLog.qml:76 core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Viacero malých opráv."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Upravený preklad do Ruštiny"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:79
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Nové hlasové odozvy nórsky (Nynorsk)"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Pridané preklady pre Bretónčinu, Češtinu a Macedónčinu."
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Pridané preklady pre Azerbajdžančinu"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nové mapy a aktualizácia máp pre aktivity z geografie."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26046,64 +26110,64 @@ msgstr ""
 "Nový súbor údajov, ktorý obsahuje operácie slučiek pre programovanie "
 "bludiska a prekladá obrázky príručky"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Nová ponuka pre nastavenia činností s výberom súboru údajov"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nové podkategórie na organizovanie aktivít"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Pridané preklady pre Macedónčinu."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nové aktivity Programovanie bludiska a detského tangramu"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nová hudba na pozadí a nastavenia hlasitosti."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "New speed setting in several activities."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nová možnosť v šachu na zobrazenie vyhodených figúrok."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nové obrázky vo Farbách, Pokročilých farbách a Cieľovej hre."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nové hlasové odozvy pre americkú angličtinu."
 
-#: core/ChangeLog.qml:114 core/ChangeLog.qml:122
+#: core/ChangeLog.qml:115 core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mnoho malých opráv a vylepšení."
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26112,17 +26176,17 @@ msgstr ""
 "Preklad bol aktualizovaný pre viac jazykov (bretónčina, brazílska "
 "portugalčina, fínčina ...)."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Pridanie ruského súboru údajov pre aktivitu Kliknutia na písmeno."
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Jazyková aktivita je teraz k dispozícii v holandčine."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26131,17 +26195,17 @@ msgstr ""
 "Zlúčte nórske kraje Nord-Trøndelag a Sør-Trøndelag do Trøndelag v aktivite "
 "geo-krajina."
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Oprava v aktivitách braillovho písma, kde bunky začínajú 1, nie 0."
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Preklad bol pridaný pre baskičtinu, maďarčinu a malajálamčinu."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26150,48 +26214,48 @@ msgstr ""
 "Načítanie/ukladanie výtvorov (Detský textový editor, Rovnovážna krabička a "
 "Klavírne komponovanie)."
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Preklady boli pridané pre škótsku gaelčinu."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Licenčná stránka bola pridaná do konfigurácie."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Viacnásobné zmeny rozložení na zlepšenie ergonómie."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Jazyková aktivita je teraz k dispozícii v poľštine, švédčine a ukrajinčine."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Funkcia hľadania."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Zoznam zmien."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mnoho malých opráv."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Jazyková aktivita je teraz k dispozícii vo francúzštine."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26201,7 +26265,7 @@ msgstr ""
 "niektoré akcie (napríklad načítanie aktivity) a môže to trvať niekoľko "
 "sekúnd."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26211,12 +26275,12 @@ msgstr ""
 "(92% preložených), ruština (98% preložených), slovenčina (92% preložených), "
 "turečtina."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Pridané preklady pre: slovinčinu, nemčinu, galícijčinu."
 
-#: core/ChangeLog.qml:183
+#: core/ChangeLog.qml:184
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"

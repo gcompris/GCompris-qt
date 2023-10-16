@@ -816,6 +816,14 @@ msgctxt "Data|"
 msgid "Learn multiplication table of 10."
 msgstr "10-ന്റെ ഗുണനപ്പട്ടിക പഠിക്കാം."
 
+#: activities/algebra_by/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
+msgctxt "Data|"
+msgid "Practice multiplication tables from 1 to 10."
+msgstr "1 മുതൽ 10 വരെയുള്ള ഗുണനപ്പട്ടിക."
+
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 2."
@@ -901,6 +909,14 @@ msgstr "1-ന്റെ ഹരണപ്പട്ടിക പഠിക്കാ�
 msgctxt "Data|"
 msgid "Learn division table of 10."
 msgstr "10-ന്റെ ഹരണപ്പട്ടിക പഠിക്കാം."
+
+#: activities/algebra_div/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
+msgctxt "Data|"
+msgid "Practice division tables from 1 to 10."
+msgstr "1 മുതൽ 10 വരെയുള്ള ഗുണനപ്പട്ടിക."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -990,6 +1006,30 @@ msgctxt "Data|"
 msgid "Learn subtraction table of 10."
 msgstr "10-ന്റെ കുറയ്ക്കൽ പട്ടിക പഠിക്കാം."
 
+#: activities/algebra_minus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Subtractions from number up to 10."
+msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കുറയ്ക്കുക."
+
+#: activities/algebra_minus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Subtractions from number up to 20."
+msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കുറയ്ക്കുക."
+
+#: activities/algebra_minus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Subtractions from number up to 100."
+msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കുറയ്ക്കുക."
+
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
@@ -1075,6 +1115,30 @@ msgstr "1-ന്റെ കൂട്ടൽ പട്ടിക പഠിക്ക�
 msgctxt "Data|"
 msgid "Learn addition table of 10."
 msgstr "10-ന്റെ കൂട്ടൽ പട്ടിക പഠിക്കാം."
+
+#: activities/algebra_plus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Additions with numbers up to 10."
+msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കൂട്ടുക."
+
+#: activities/algebra_plus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
+msgctxt "Data|"
+msgid "Additions with numbers up to 15."
+msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കൂട്ടുക."
+
+#: activities/algebra_plus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add stars up to 10."
+msgctxt "Data|"
+msgid "Additions with result up to 100."
+msgstr "10 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -25075,36 +25139,36 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്ക് താഴെയെത്തുന്നതിനു മുമ്പ് കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:57 core/ChangeLog.qml:92
-#: core/ChangeLog.qml:95 core/ChangeLog.qml:101
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
+#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "ഉപയോഗക്ഷമതയിലുള്ള നിരവധി മെച്ചപ്പെടുത്തലുകൾ"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:45
-#: core/ChangeLog.qml:58 core/ChangeLog.qml:76 core/ChangeLog.qml:91
-#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97 core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "ധാരാളം പുതിയ ചിത്രങ്ങൾ"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:97 core/ChangeLog.qml:103
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
+#: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "ധാരാളം ബഗ് ഫിക്സുകൾ"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "അറബി, എസ്പെരാന്റൊ തർജ്ജിമകൾ ചേർത്തിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:44
+#: core/ChangeLog.qml:38 core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "ധാരാളം തർജ്ജിമകളിൽ മാറ്റം വരുത്തിയിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -25113,22 +25177,22 @@ msgstr ""
 "ഒരു പ്രത്യേക കാഠിന്യനിലയിൽ തുടങ്ങുന്നതിനുള്ള പുതിയ കമാന്റ്-ലൈൻ ഓപ്ഷൻ (--difficulty {value|"
 "min-max})"
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "താരതമ്യം ചെയ്യാനുള്ള പ്രവർത്തനത്തിൽ ഫിക്സ്"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "ഭൂമിശാസ്ത്ര ആക്റ്റിവിറ്റിയിൽ സ്പെയിനിന്റെ ഭൂപടം ചേർത്തു"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:56
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "ഉക്രേനിയൻ ശബ്ദങ്ങൾ ചേർത്തിട്ടുണ്ട്"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25137,7 +25201,7 @@ msgstr ""
 "എല്ലാ പ്രവർത്തനങ്ങളു പട്ടികപ്പെടുത്തുന്നതിനും ഒരു പ്രത്യേക പ്രവർത്തനത്തിൽ തുടങ്ങുന്നതിനുമുള്ള പുതിയ "
 "കമാന്റ്-ലൈൻ ഓപ്ഷൻ"
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25145,27 +25209,27 @@ msgid ""
 msgstr ""
 "എല്ലാ പ്ലാറ്റ്ഫോമുകൾക്കുമുള്ള പാക്കേജുകളുടെയും എക്സ്റ്റേർണൽ വേർഡ് ഇമേജുകളുടെയും വലിപ്പം കുറച്ചു"
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "നിരവധി പ്രവർത്തനങ്ങളിൽ ചിത്രങ്ങളുടെ ഗുണനിലവാരം മെച്ചപ്പെടുത്തിയിട്ടുണ്ട്"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr "പുനസ്ഥാപിക്കാവുന്ന ഊർജം/ജലചക്രം എന്നിവയിൽ ചില ട്രാൻസിഷനുകൾ ഫിക്സു ചെയ്തു"
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "ലിനക്സിൽ വർക്കു ചെയ്യാതിരുന്ന ടൈപ്പു ചെയ്യാനുള്ള പ്രവർത്തനങ്ങളിലെ കീകൾ ഫിക്സു ചെയ്തു"
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr "പട്ടിക പൂർത്തിയാക്കൂ എന്നതിൽ ഘട്ടങ്ങൾ മാറ്റുമ്പോൾ ഉണ്ടായിരുന്ന ലവൽ റീസെറ്റ് ഫിക്സു ചെയ്തു"
 
-#: core/ChangeLog.qml:71
+#: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25173,37 +25237,37 @@ msgstr ""
 "അക്ഷരമാല ശ്രേണി, ഇരട്ടസംഖ്യകളും ഒറ്റസംഖ്യകളും, സംഖ്യകൾ ക്രമീകരിക്കാം എന്നീ പ്രവർത്തനങ്ങളിൽ "
 "ഫിക്സ്"
 
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:83
+#: core/ChangeLog.qml:76 core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "ധാരാളം ബഗ് ഫിക്സുകൾ"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "റഷ്യൻ തർജ്ജിമ അപ്ഡേറ്റ് ചെയ്തിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:79
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "നോർവീജിയൻ നിനോർസ്കിന് പുതിയ ശബ്ദം"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "ചെക്ക്, ബ്രിട്ടൺ, മാസിഡോണിയൻ എന്നിവയ്ക്ക് തർജ്ജിമ ചേർത്തിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "അസർബൈജാനി തർജ്ജിമ ചേർത്തിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "പുതിയ ഭൂപടങ്ങളും ഭൂമിശാസ്ത്ര ആക്റ്റിവിറ്റികളിലുള്ള ഭൂപടങ്ങളുടെ അപ്ഡേറ്റും"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25212,7 +25276,7 @@ msgstr ""
 "വഴി പ്രോഗ്രാം ചെയ്യാം എന്നതിൽ ലൂപ്പുകളുടെ ഓപ്പറേഷനുകളുള്ള പുതിയ ഡാറ്റാസെറ്റും ട്യൂട്ടോറിയൽ "
 "ചിത്രങ്ങൾ തർജ്ജിമ ചെയ്യത്തക്കവിധത്തിലും ചേർത്തിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25220,57 +25284,57 @@ msgid ""
 msgstr ""
 "വോൾട്ടേജ് സോഴ്സ് ലൂപ്പ് പഠിപ്പിക്കാനായി അനലോഗ് വൈദ്യുതി ആക്റ്റിവിറ്റിയൽ ഒരു നില ചേർത്തിരിക്കുന്നു"
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "ഡാറ്റാസെറ്റുകളോടു കൂടിയ പുതിയ പ്രവർത്തന ക്രമീകരണ മെനു"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "പ്രവർത്തനങ്ങൾ ചിട്ടപ്പെടുത്തുന്നതിനായി പുതിയ ഉപവിഭാഗങ്ങൾ"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "മാസിഡോണിയൻ തർജ്ജിമ ചേർത്തിരിക്കുന്നു."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "വഴി പ്രോഗ്രാം ചെയ്യാം, ആകൃതികൾ കൂട്ടിച്ചേർക്കൂ എന്നീ പുതിയ പ്രവർത്തനങ്ങൾ"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "പുതിയ പശ്ചാത്തല സംഗീതവും ശബ്ദ ക്രമീകരണവും."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "നിരവധി പ്രവർത്തനങ്ങളിൽ പുതുതായി വേഗത ക്രമീകരണം ഉൾപ്പെടുത്തിയിട്ടുണ്ട്."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "കൈക്കലാക്കിയ കരുക്കൾ കാണിക്കാനായി ചെസ്സിൽ ഒരു പുതിയ ഓപ്ഷൻ"
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "നിറങ്ങൾ, കൂടുതൽ നിറങ്ങൾ, ഉന്നം വെച്ചുള്ള കളി എന്നിവയിൽ പുതിയ ചിത്രങ്ങൾ."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "യുഎസ് ഇംഗ്ലീഷിനു പുതിയ ശബ്ദം."
 
-#: core/ChangeLog.qml:114 core/ChangeLog.qml:122
+#: core/ChangeLog.qml:115 core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "ചെറിയ തിരുത്തലുകളും മെച്ചപ്പെടുത്തലുകളും. "
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25279,17 +25343,17 @@ msgstr ""
 "പല ഭാഷകൾക്കുമുള്ള തർജ്ജിമ അപ്ഡേറ്റ് ചെയ്തിട്ടുണ്ട് (ബ്രിട്ടോ, ബ്രസീലിയൻ, പോർച്ചുഗീസ്, "
 "ഫിന്നിഷ്...)."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "അക്ഷരത്തിൽ ക്ലിക്ക് ചെയ്യുക എന്ന പ്രവർത്തനത്തിന് റഷ്യൻ ഡാറ്റസെറ്റ് ചേർത്തിരിക്കുന്നു."
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "ഭാഷ പ്രവർത്തനം ഇപ്പോൾ ഡച്ചിൽ ലഭ്യമാണ്."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25298,17 +25362,17 @@ msgstr ""
 "പ്രദേശം കണ്ടെത്തൂ എന്ന പ്രവർത്തനത്തിൽ നോർവീജിയൻ കൗണ്ടീസ് ആയ Nord-Trøndelag-യും Sør-"
 "Trøndelag-യും Trøndelag-ലേക്ക് ചേർത്തിട്ടുണ്ട്."
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "ബ്രായി പ്രവർത്തനങ്ങളിലെ തിരുത്ത്. കളം 1-ൽ തുടങ്ങുന്നു, 0-ൽ അല്ല."
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "ബാസ്ഖ്, ഹങ്ഗേറിയൻ, മലയാളം എന്നിവയ്ക്ക് തർജ്ജിമ ചേർത്തിരിക്കുന്നു."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25316,47 +25380,47 @@ msgid ""
 msgstr ""
 "സൃഷ്ടികളുടെ ലോഡിങ്/സേവിങ് (കംപ്യൂട്ടറിൽ എഴുതാം, തുലാസു പെട്ടി, പിയാനോ കമ്പോസിഷൻ എന്നിവയിൽ) "
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "സ്കോട്ടിഷ് ഗേലക്കിന് തർജ്ജിമ ചേർത്തിരിക്കുന്നു."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "ലൈസൻസ് പേജ് കോൺഫിഗറേഷനിൽ ചേർത്തിട്ടുണ്ട്."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "ഉപയോഗക്ഷമത കൂട്ടാനായുള്ള ചില മാറ്റങ്ങൾ ഉണ്ട്."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "ഭാഷ പ്രവർത്തനം ഇപ്പോൾ പോളിഷിലും സ്വീഡിഷിലും ഉക്രേനിയനിലും ലഭ്യമാണ്."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "തിരയാനുള്ള സൗകര്യം."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "ഒരു ചെയ്ഞ്ച്ലോഗ്."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "പല ചെറിയ തിരുത്തുകൾ."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "ഭാഷ പ്രവർത്തനം ഇപ്പോൾ ഫ്രെഞ്ചിൽ ലഭ്യമാണ്."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25366,7 +25430,7 @@ msgstr ""
 "ചേർത്തിട്ടുണ്ട് (ഉദാഹരണത്തിന് പ്രവർത്തനം ലോഡ് ചെയ്യുന്നത്), മാത്രമല്ല അത് കുറച്ച് സെക്കന്റുകൾ "
 "എടുത്തേക്കാം. "
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25375,12 +25439,12 @@ msgstr ""
 "തർജ്ജിമകൾ ചേർത്തിട്ടുണ്ട്: കത്തലൻ (വാലെൻഷ്യൻ), സാംസ്കാരിക ചൈനീസ്, ഫിന്നിഷ് (92% തർജ്ജിമ), "
 "റഷ്യൻ (98% തർജ്ജിമ), സ്ലോവാക്ക് (92% തർജ്ജിമ), തുർക്കിഷ്."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "ഇവയുടെ തർജ്ജിമ ചേർത്തിരിക്കുന്നു: സ്ലോവേനിയൻ, ജർമൻ, ഗലീഷ്യൻ."
 
-#: core/ChangeLog.qml:183
+#: core/ChangeLog.qml:184
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
