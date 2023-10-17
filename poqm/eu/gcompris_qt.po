@@ -1,7 +1,7 @@
 # Translation for gcompris_qt.po to Euskara/Basque (eu).
 # Copyright (C) 2018-2023 This file is copyright:
 # This file is distributed under the same license as the GCompris package.
-# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+# SPDX-FileCopyrightText: 2023 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
 # Alexander Gabilondo <alexgabe@irakasle.net>, 2018, 2019, 2022.
@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2023-07-31 13:54+0200\n"
+"PO-Revision-Date: 2023-10-16 22:11+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -995,7 +995,7 @@ msgstr "Ikasi 10en kentzeko taula."
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
-msgstr "Ikasi 2ren kentzeko taula."
+msgstr "Ikasi 2ren kenketa taula."
 
 #: activities/algebra_minus/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -15208,17 +15208,17 @@ msgstr "Zuriunea: zirkulu bat hautatzea edo desautatzea"
 #: activities/learn_additions/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1 and 2."
-msgstr "Gehiketak 1 eta 2rekin."
+msgstr "Batuketak 1 eta 2rekin."
 
 #: activities/learn_additions/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1, 2 and 3."
-msgstr "Gehiketak 1, 2 eta 3rekin."
+msgstr "Batuketak 1, 2 eta 3rekin."
 
 #: activities/learn_additions/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1, 2, 3 and 4."
-msgstr "Gehiketak 1, 2, 3 eta 4rekin."
+msgstr "Batuketak 1, 2, 3 eta 4rekin."
 
 #. Activity title
 #: activities/learn_decimals/ActivityInfo.qml:14
@@ -16873,7 +16873,7 @@ msgstr "Kartak biratu eragiketa bat haren emaitzarekin parekatzeko."
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game against Tux"
-msgstr "Gehiketa eta kenketa oroimen jokoa, Tux-en aurka"
+msgstr "Batuketa eta kenketa oroimen jokoa, Tux-en aurka"
 
 #. Help title
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:17
@@ -16882,7 +16882,7 @@ msgid ""
 "Flip the cards to match an addition or a subtraction with its result, "
 "playing against Tux."
 msgstr ""
-"Kartak biratu gehiketa bat edo kenketa bat haren emaitzarekin parekatzeko, "
+"Kartak biratu batuketa bat edo kenketa bat haren emaitzarekin parekatzeko, "
 "Tux-en aurka jokatuz."
 
 #. Help goal
