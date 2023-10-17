@@ -110,70 +110,69 @@ Item {
         // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
         property real hiddenBottom: ApplicationInfo.useOpenGL ? contentHeight - height - contentY : 1
 
-        delegate: Item {
+        delegate: Rectangle {
             id: delegateItem
             width: levelCellWidth - menuScreen.spacing
             height: levelCellHeight - menuScreen.spacing
             property string sectionName: name
+            color: "#7FFFFFFF"
 
-            Rectangle {
-                id: activityBackground
-                anchors.fill: parent
-                color: "white"
-                opacity: 0.5
-            }
             Image {
                 id: containerImage
                 source: image;
-                anchors.top: activityBackground.top
+                anchors.top: parent.top
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: title.top
+                anchors.bottomMargin: title.lineCount  > 1 ? title.height * -0.5 : menuScreen.spacing
+                fillMode: Image.PreserveAspectFit
+            }
+
+            Rectangle {
+                anchors.fill: title
+                color: menuScreen.keyboardMode && menuGrid.currentIndex == index ?
+                    "#80EAF8FD" : "#80C2ECF8"
+            }
+
+            GCText {
+                id: title
+                anchors.bottom: progressLang.top
+                anchors.bottomMargin: menuScreen.spacing
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: iconSize
-                height: iconSize
-                anchors.margins: 5
-
-                GCText {
-                    id: title
-                    anchors.top: parent.bottom
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    width: activityBackground.width
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: regularSize
-                    elide: Text.ElideRight
-                    maximumLineCount: 2
-                    wrapMode: Text.WordWrap
-                    text: Activity.items.categoriesTranslations[name]
-                }
-                GCProgressBar {
-                    id: progressLang
-                    borderSize: ApplicationInfo.ratio
-                    anchors.top: title.bottom
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-                    anchors.topMargin: menuScreen.spacing
-                    anchors.leftMargin: ApplicationInfo.ratio * 10
-                    anchors.rightMargin: anchors.leftMargin
-                    height: 14 * ApplicationInfo.ratio
-                    to: wordCount
-                    from: 0
-                    value: progress
-                    displayText: false
-                }
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width - 4 * ApplicationInfo.ratio
+                fontSizeMode: Text.Fit
+                minimumPointSize: 7
+                fontSize: regularSize
+                elide: Text.ElideRight
+                maximumLineCount: 2
+                wrapMode: Text.WordWrap
+                text: Activity.items.categoriesTranslations[name]
             }
 
-            ParticleSystemStarLoader {
-                id: particles
-                anchors.fill: activityBackground
+            GCProgressBar {
+                id: progressLang
+                borderSize: ApplicationInfo.ratio
+                anchors.bottom: parent.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottomMargin: menuScreen.spacing
+                anchors.leftMargin: ApplicationInfo.ratio * 10
+                anchors.rightMargin: anchors.leftMargin
+                height: 14 * ApplicationInfo.ratio
+                to: wordCount
+                from: 0
+                value: progress
+                displayText: false
             }
+
             MouseArea {
-                anchors.fill: activityBackground
+                anchors.fill: parent
                 enabled: menuScreen.started
                 onClicked: selectCurrentItem()
             }
 
             function selectCurrentItem() {
-                particles.burst(50)
                 Activity.initLevel(index)
             }
 
@@ -209,8 +208,8 @@ Item {
             width: levelCellWidth - menuScreen.spacing
             height: levelCellHeight - menuScreen.spacing
             color:  "#AAFFFFFF"
-            border.width: 3
-            border.color: "black"
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "#373737"
             visible: menuScreen.keyboardMode
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
