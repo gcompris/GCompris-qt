@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2023-10-12 06:15+0100\n"
+"PO-Revision-Date: 2023-10-16 06:58+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -745,7 +745,7 @@ msgstr "Multipliko de nombroj"
 #: activities/algebra_by/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the multiplication operation."
-msgstr "Praktiku la multiplikan operacion."
+msgstr "Ekzercu la multiplikan operacion."
 
 #. Help goal
 #: activities/algebra_by/ActivityInfo.qml:20
@@ -821,12 +821,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Lernu multipliktabelon de 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Multiplikaj tabeloj de 1 ĝis 10."
+msgstr "Ekzercu multiplikajn tabelojn de 1 ĝis 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -878,7 +875,7 @@ msgstr "Divido de nombroj"
 #: activities/algebra_div/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the division operation."
-msgstr "Praktiku la dividan operacion."
+msgstr "Ekzercu la dividan operacion."
 
 #. Help goal
 #: activities/algebra_div/ActivityInfo.qml:20
@@ -917,11 +914,10 @@ msgstr "Lernu dividan tabelon de 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
+#| msgid "Practice division tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Multiplikaj tabeloj de 1 ĝis 10."
+msgstr "Ekzercu multiplikajn tabelojn de 1 ĝis 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -973,7 +969,7 @@ msgstr "Subtraho de nombroj"
 #: activities/algebra_minus/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the subtraction operation."
-msgstr "Praktiku la operacion de subtraho."
+msgstr "Ekzercu la operacion de subtraho."
 
 #. Help goal
 #: activities/algebra_minus/ActivityInfo.qml:20
@@ -1013,28 +1009,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Lernu subtrahotabelon de 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Subtrahi dekumajn nombrojn ĝis 1."
+msgstr "Subtrahoj de nombro ĝis 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Subtrahi dekumajn nombrojn ĝis 1."
+msgstr "Subtrahoj de nombroj ĝis 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Subtrahi dekumajn nombrojn ĝis 1."
+msgstr "Subtrahoj de nombroj ĝis 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1086,7 +1073,7 @@ msgstr "Aldono de nombroj"
 #: activities/algebra_plus/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the addition of numbers."
-msgstr "Praktiku la aldonon de nombroj."
+msgstr "Ekzercu la aldonon de nombroj."
 
 #. Help goal
 #: activities/algebra_plus/ActivityInfo.qml:20
@@ -1123,28 +1110,19 @@ msgid "Learn addition table of 10."
 msgstr "Lernu adicitabelon de 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Aldonu dekumajn nombrojn ĝis 1."
+msgstr "Adicioj de nombroj ĝis 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Aldonu dekumajn nombrojn ĝis 1."
+msgstr "Adicioj de nombroj ĝis 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Aldonu stelojn ĝis 10."
+msgstr "Adicioj kun rezultoj ĝis 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2379,7 +2357,7 @@ msgstr "Navigu la pilkon al la pordo klinante la skatolon."
 #: activities/balancebox/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Practice fine motor skills and basic counting."
-msgstr "Praktiku bonajn movajn kapablojn kaj bazan kalkuladon."
+msgstr "Ekzercu bonajn movajn kapablojn kaj bazan kalkuladon."
 
 #. Help manual
 #: activities/balancebox/ActivityInfo.qml:26
@@ -3017,7 +2995,7 @@ msgstr "Brajla amuzo"
 #: activities/braille_fun/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
-msgstr "Praktiku brajlaj literoj."
+msgstr "Ekzercu brajlaj literoj."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:21
@@ -5493,7 +5471,7 @@ msgstr "Vetu la gruon kaj kopiu la modelon."
 #: activities/crane/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice motor-coordination."
-msgstr "Praktiku motor-kunordigon."
+msgstr "Ekzercu motor-kunordigon."
 
 #. Help prerequisite
 #: activities/crane/ActivityInfo.qml:27
@@ -13565,7 +13543,7 @@ msgstr ""
 #: activities/gnumch-equality/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition, multiplication, division and subtraction."
-msgstr "Praktiku adicion, multiplikon, dividon kaj subtrahon."
+msgstr "Ekzercu adicion, multiplikon, dividon kaj subtrahon."
 
 #. Help manual
 #: activities/gnumch-equality/ActivityInfo.qml:25
@@ -13608,22 +13586,22 @@ msgstr "Spaco: glutu la nombrojn"
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition equality."
-msgstr "Praktiku adician egalecon."
+msgstr "Ekzercu adician egalecon."
 
 #: activities/gnumch-equality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction equality."
-msgstr "Praktiku subtrahan egalecon."
+msgstr "Ekzercu subtrahan egalecon."
 
 #: activities/gnumch-equality/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication equality."
-msgstr "Praktiku multiplikan egalecon."
+msgstr "Ekzercu multiplikan egalecon."
 
 #: activities/gnumch-equality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division equality."
-msgstr "Praktiku dividan egalecon."
+msgstr "Ekzercu dividan egalecon."
 
 #: activities/gnumch-equality/TopPanel.qml:52
 #, qt-format
@@ -13764,27 +13742,27 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication and division."
-msgstr "Praktiku adicion, subtrahon, multiplikon kaj dividon."
+msgstr "Ekzercu adicion, subtrahon, multiplikon kaj dividon."
 
 #: activities/gnumch-inequality/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Practice addition inequality."
-msgstr "Praktiku adician malegalecon."
+msgstr "Ekzercu adician malegalecon."
 
 #: activities/gnumch-inequality/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Practice subtraction inequality."
-msgstr "Praktiku subtrahan malegalecon."
+msgstr "Ekzercu subtrahan malegalecon."
 
 #: activities/gnumch-inequality/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication inequality."
-msgstr "Praktiku multiplikan malegalecon."
+msgstr "Ekzercu multiplikan malegalecon."
 
 #: activities/gnumch-inequality/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division inequality."
-msgstr "Praktiku dividan malegalecon."
+msgstr "Ekzercu dividan malegalecon."
 
 #. Activity title
 #: activities/gnumch-multiples/ActivityInfo.qml:15
@@ -14304,7 +14282,7 @@ msgstr ""
 #: activities/guesscount/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Intuition and practice of algebraic-like calculations."
-msgstr "Intuicio kaj praktiko de algebra-similaj kalkuloj."
+msgstr "Intuicio kaj ekzerco de algebra-similaj kalkuloj."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14363,22 +14341,22 @@ msgstr "Operatoroj"
 #: activities/guesscount/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "Practice algebraic calculations with a single operator."
-msgstr "Praktiku algebrajn kalkulojn kun ununura operatoro."
+msgstr "Ekzercu algebrajn kalkulojn kun ununura operatoro."
 
 #: activities/guesscount/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with two operators."
-msgstr "Praktiku algebrajn kalkulojn kun du operatoroj."
+msgstr "Ekzercu algebrajn kalkulojn kun du operatoroj."
 
 #: activities/guesscount/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with three operators."
-msgstr "Praktiku algebrajn kalkulojn kun tri operatoroj."
+msgstr "Ekzercu algebrajn kalkulojn kun tri operatoroj."
 
 #: activities/guesscount/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr "Praktiku algebrajn kalkulojn kun kvar operatoroj."
+msgstr "Ekzercu algebrajn kalkulojn kun kvar operatoroj."
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
@@ -17083,7 +17061,7 @@ msgstr ""
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions, subtractions, multiplications, divisions."
-msgstr "Praktiku aldonojn, subtrahojn, multiplikojn, dividojn."
+msgstr "Ekzercu aldonojn, subtrahojn, multiplikojn, dividojn."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
@@ -17234,7 +17212,7 @@ msgstr ""
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions and subtractions."
-msgstr "Praktiku aldonojn kaj subtrahojn."
+msgstr "Ekzercu aldonojn kaj subtrahojn."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
@@ -17285,7 +17263,7 @@ msgstr ""
 #: activities/memory-math-add/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice additions."
-msgstr "Praktiku aldonojn."
+msgstr "Ekzercu adiciojn."
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -17389,7 +17367,7 @@ msgstr ""
 #: activities/memory-math-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice divisions."
-msgstr "Praktiku dividojn."
+msgstr "Ekzercu dividojn."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
@@ -17505,7 +17483,7 @@ msgstr ""
 #: activities/memory-math-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice subtractions."
-msgstr "Praktiku subtrahojn."
+msgstr "Ekzercu subtrahojn."
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -17611,7 +17589,7 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications and divisions."
-msgstr "Praktiku multiplikojn kaj dividojn."
+msgstr "Ekzercu multiplikojn kaj dividojn."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
@@ -17663,7 +17641,7 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications."
-msgstr "Praktiku multiplikojn."
+msgstr "Ekzercu multiplikojn."
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
@@ -18670,7 +18648,7 @@ msgstr "Mono"
 #: activities/money/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice money usage."
-msgstr "Praktiku monuzadon."
+msgstr "Ekzercu monuzadon."
 
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
@@ -18777,7 +18755,7 @@ msgstr "Donu al Tux sian ŝanĝon"
 #: activities/money_back_cents/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice money usage by giving Tux his change."
-msgstr "Praktiku monuzadon donante al Tux sian ŝanĝon."
+msgstr "Ekzercu monuzadon donante al Tux sian ŝanĝon."
 
 #. Help goal
 #: activities/money_back/ActivityInfo.qml:20
@@ -18820,7 +18798,7 @@ msgstr "Mono kun cendoj"
 #: activities/money_cents/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice money usage including cents."
-msgstr "Praktiku monuzadon inkluzive de cendoj."
+msgstr "Ekzercu monuzadon inkluzive de cendoj."
 
 #. Help goal
 #: activities/money_cents/ActivityInfo.qml:20
@@ -19254,7 +19232,7 @@ msgid ""
 "help you to read the notes placed around them."
 msgstr ""
 "Ĉi tiu agado instruos vin legi notojn de F1 en basklefo ĝis D6 en dilklavo."
-"<br>Sur ĉiu nivelo vi lernos novajn notojn kaj praktikos tiujn, kiujn vi jam "
+"<br>Sur ĉiu nivelo vi lernos novajn notojn kaj ekzercos tiujn, kiujn vi jam "
 "lernis.<br>Referencaj notoj estas koloritaj ruĝe kaj helpos vin legi la "
 "notojn metitajn ĉirkaŭ ili."
 
@@ -21553,7 +21531,7 @@ msgstr ""
 #: activities/readingh/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Horizontal reading practice"
-msgstr "Horizontala legado-praktiko"
+msgstr "Horizontala legado-ekzerco"
 
 #. Help title
 #: activities/readingh/ActivityInfo.qml:17
@@ -21602,7 +21580,7 @@ msgstr "Ne, ĝi ne estis tie!"
 #: activities/readingv/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical reading practice"
-msgstr "Vertikala legado praktiko"
+msgstr "Vertikala legad-ekzerco"
 
 #. Help title
 #: activities/readingv/ActivityInfo.qml:17
@@ -21908,8 +21886,8 @@ msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
-"Lernu la regulojn por legi romiajn ciferojn kaj praktiku konverti nombrojn "
-"al kaj de arabaj ciferoj. Alklaku la OK butonon por validigi vian respondon."
+"Lernu la regulojn por legi romiajn ciferojn kaj ekzercu konverti nombrojn al "
+"kaj de arabaj ciferoj. Alklaku la OK butonon por validigi vian respondon."
 
 #: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -24897,7 +24875,7 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Practice addition with a target game"
-msgstr "Praktiku aldonon kun celludo"
+msgstr "Ekzercu adicion kun celludo"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17

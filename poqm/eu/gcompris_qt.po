@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2023-10-13 00:45+0200\n"
+"PO-Revision-Date: 2023-10-16 22:12+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -822,12 +822,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Ikasi 10en biderkatzeko taula."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Biderketa taulak, 1etik 10era."
+msgstr "Trebatu biderketa taulekin 1etik 10era."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -917,12 +914,9 @@ msgid "Learn division table of 10."
 msgstr "Ikasi 10ekin zatitzeko taula."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Biderketa taulak, 1etik 10era."
+msgstr "Trebatu zatiketa taulekin 1etik 10era."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1014,33 +1008,24 @@ msgid "Learn subtraction table of 10."
 msgstr "Ikasi 10en kentzeko taula."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Kendu zenbaki hamartarrak, 1 arte."
+msgstr "Kenketak 10 arteko zenbakiekin."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Kendu zenbaki hamartarrak, 1 arte."
+msgstr "Kenketak 20 arteko zenbakiekin."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Kendu zenbaki hamartarrak, 1 arte."
+msgstr "Kenketak 100 arteko zenbakiekin."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
-msgstr "Ikasi 2ren kentzeko taula."
+msgstr "Ikasi 2ren kenketa taula."
 
 #: activities/algebra_minus/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -1125,28 +1110,19 @@ msgid "Learn addition table of 10."
 msgstr "Ikasi 10en gehitzeko taula."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Gehitu zenbaki hamartarrak, 1 arte."
+msgstr "Batuketak 10 arteko zenbakiekin."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Gehitu zenbaki hamartarrak, 1 arte."
+msgstr "Batuketak 15 arteko zenbakiekin."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Gehitu izarrak, 10 arte."
+msgstr "Emaitza 100 artekoa duten batuketak."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -15592,17 +15568,17 @@ msgstr "Zuriunea: zirkulu bat hautatzea edo desautatzea"
 #: activities/learn_additions/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1 and 2."
-msgstr "Gehiketak 1 eta 2rekin."
+msgstr "Batuketak 1 eta 2rekin."
 
 #: activities/learn_additions/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1, 2 and 3."
-msgstr "Gehiketak 1, 2 eta 3rekin."
+msgstr "Batuketak 1, 2 eta 3rekin."
 
 #: activities/learn_additions/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1, 2, 3 and 4."
-msgstr "Gehiketak 1, 2, 3 eta 4rekin."
+msgstr "Batuketak 1, 2, 3 eta 4rekin."
 
 #. Activity title
 #: activities/learn_decimals/ActivityInfo.qml:14
@@ -17257,7 +17233,7 @@ msgstr "Kartak biratu eragiketa bat haren emaitzarekin parekatzeko."
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game against Tux"
-msgstr "Gehiketa eta kenketa oroimen jokoa, Tux-en aurka"
+msgstr "Batuketa eta kenketa oroimen jokoa, Tux-en aurka"
 
 #. Help title
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:17
@@ -17266,7 +17242,7 @@ msgid ""
 "Flip the cards to match an addition or a subtraction with its result, "
 "playing against Tux."
 msgstr ""
-"Kartak biratu gehiketa bat edo kenketa bat haren emaitzarekin parekatzeko, "
+"Kartak biratu batuketa bat edo kenketa bat haren emaitzarekin parekatzeko, "
 "Tux-en aurka jokatuz."
 
 #. Help goal

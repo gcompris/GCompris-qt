@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-10-12 17:21+0300\n"
+"PO-Revision-Date: 2023-10-16 12:56+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -818,12 +818,9 @@ msgid "Learn multiplication table of 10."
 msgstr "10'lar çarpım tablosunu öğren."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "1'den 10'a kadar çarpım tablosu."
+msgstr "1'den 10'a kadar çarpım tablosunu çalış."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -912,12 +909,9 @@ msgid "Learn division table of 10."
 msgstr "10'un bölme tablosunu öğren."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "1'den 10'a kadar çarpım tablosu."
+msgstr "1'den 10'a kadar bölme tablosunu çalış."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1008,28 +1002,19 @@ msgid "Learn subtraction table of 10."
 msgstr "10'nun çıkarma tablosunu öğren."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "1'e kadar olan ondalık sayıları çıkar."
+msgstr "10'a kadar olan sayılarda çıkarma işlemi."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "1'e kadar olan ondalık sayıları çıkar."
+msgstr "20'ye kadar olan sayılarda çıkarma işlemi."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "1'e kadar olan ondalık sayıları çıkar."
+msgstr "100'e kadar olan sayılarda çıkarma işlemi."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1118,28 +1103,19 @@ msgid "Learn addition table of 10."
 msgstr "10'un toplama tablosunu öğren."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "1'e kadar olan ondalık sayıları topla."
+msgstr "10'a kadar olan sayılarda toplama işlemi."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "1'e kadar olan ondalık sayıları topla."
+msgstr "15'e kadar olan sayılarda toplama işlemi."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "10'a kadar yıldız ekle."
+msgstr "100'e kadar olan sayılarda toplama işlemi."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
