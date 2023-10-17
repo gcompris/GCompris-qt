@@ -115,8 +115,12 @@ Window {
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState !== Qt.ApplicationActive) {
+            backgroundMusic.pause();
             audioVoices.stop();
             audioEffects.stop();
+        }
+        else {
+            backgroundMusic.resume();
         }
     }
 
