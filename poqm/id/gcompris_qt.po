@@ -26583,47 +26583,47 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:273
+#: core/main.qml:277
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Suara untuk bahasa kamu"
 
-#: core/main.qml:274
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Set gambar dan kata lengkap"
 
-#: core/main.qml:275
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Background music"
 msgstr "Latar belakang musik"
 
-#: core/main.qml:280
+#: core/main.qml:284
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Apakah kamu ingin mengunduh aset luar berikut?"
 
-#: core/main.qml:285
+#: core/main.qml:289
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ya"
 
-#: core/main.qml:295
+#: core/main.qml:299
 msgctxt "main|"
 msgid "No"
 msgstr "Tidak"
 
-#: core/main.qml:320
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Selamat datang di GCompris!"
 
-#: core/main.qml:321
+#: core/main.qml:325
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Kamu menjalankan GCompris untuk pertama kalinya."
 
-#: core/main.qml:322
+#: core/main.qml:326
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26635,37 +26635,37 @@ msgstr ""
 "bahasa yang kamu pilih sudah terpasang. Kamu bisa melakukan ini di Dialog "
 "Pengaturan."
 
-#: core/main.qml:324
+#: core/main.qml:328
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Selamat Bersenang-senang!"
 
-#: core/main.qml:326
+#: core/main.qml:330
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Bahasa kamu saat ini adalah %1 (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:364
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr ""
 "GCompris sudah diperbarui! Ini adalah perubahan terbaru dari versi "
 "sebelumnya:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:392
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:389
+#: core/main.qml:393
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:390
+#: core/main.qml:394
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"

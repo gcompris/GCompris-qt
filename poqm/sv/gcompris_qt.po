@@ -26229,47 +26229,47 @@ msgstr ""
 "Ange på vilken nivå aktiviteten ska påbörjas. Används bara när alternativet "
 "--launch specificeras."
 
-#: core/main.qml:273
+#: core/main.qml:277
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Röster för ditt språk"
 
-#: core/main.qml:274
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Hela uppsättningen ordbilder"
 
-#: core/main.qml:275
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Background music"
 msgstr "Bakgrundsmusik"
 
-#: core/main.qml:280
+#: core/main.qml:284
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Vill du ladda ner följande externa tillgångar?"
 
-#: core/main.qml:285
+#: core/main.qml:289
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/main.qml:295
+#: core/main.qml:299
 msgctxt "main|"
 msgid "No"
 msgstr "Nej"
 
-#: core/main.qml:320
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Välkommen till GCompris!"
 
-#: core/main.qml:321
+#: core/main.qml:325
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Du kör GCompris för första gången."
 
-#: core/main.qml:322
+#: core/main.qml:326
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26280,23 +26280,23 @@ msgstr ""
 "språkinställningen, och att alla språkspecifika ljudfiler är installerade. "
 "Det kan du göra i inställningsdialogrutan."
 
-#: core/main.qml:324
+#: core/main.qml:328
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Ha det så kul!"
 
-#: core/main.qml:326
+#: core/main.qml:330
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Nuvarande språk är %1 (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:364
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris har uppdaterats. Här är de nya ändringarna:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:392
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -26305,12 +26305,12 @@ msgstr ""
 "Några aktiviteter har nya datauppsättningar tillgängliga. Vill du nollställa "
 "deras val av datauppsättning?"
 
-#: core/main.qml:389
+#: core/main.qml:393
 msgctxt "main|"
 msgid "Apply"
 msgstr "Verkställ"
 
-#: core/main.qml:390
+#: core/main.qml:394
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Avbryt"

@@ -823,6 +823,11 @@ msgctxt "Data|"
 msgid "Learn multiplication table of 10."
 msgstr "Lær gongetabellen for talet 10"
 
+#: activities/algebra_by/resource/11/Data.qml:13
+msgctxt "Data|"
+msgid "Practice multiplication tables from 1 to 10."
+msgstr ""
+
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn multiplication table of 2."
@@ -908,6 +913,11 @@ msgstr "Lær å dela på talet 1"
 msgctxt "Data|"
 msgid "Learn division table of 10."
 msgstr "Lær å dela på talet 10"
+
+#: activities/algebra_div/resource/11/Data.qml:13
+msgctxt "Data|"
+msgid "Practice division tables from 1 to 10."
+msgstr ""
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -997,6 +1007,21 @@ msgctxt "Data|"
 msgid "Learn subtraction table of 10."
 msgstr "Lær å trekkja frå talet 10"
 
+#: activities/algebra_minus/resource/11/Data.qml:13
+msgctxt "Data|"
+msgid "Subtractions from number up to 10."
+msgstr ""
+
+#: activities/algebra_minus/resource/12/Data.qml:13
+msgctxt "Data|"
+msgid "Subtractions from number up to 20."
+msgstr ""
+
+#: activities/algebra_minus/resource/13/Data.qml:13
+msgctxt "Data|"
+msgid "Subtractions from number up to 100."
+msgstr ""
+
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Learn subtraction table of 2."
@@ -1082,6 +1107,21 @@ msgstr "Lær å leggja til talet 1"
 msgctxt "Data|"
 msgid "Learn addition table of 10."
 msgstr "Lær å leggja til talet 10"
+
+#: activities/algebra_plus/resource/11/Data.qml:13
+msgctxt "Data|"
+msgid "Additions with numbers up to 10."
+msgstr ""
+
+#: activities/algebra_plus/resource/12/Data.qml:13
+msgctxt "Data|"
+msgid "Additions with numbers up to 15."
+msgstr ""
+
+#: activities/algebra_plus/resource/13/Data.qml:13
+msgctxt "Data|"
+msgid "Additions with result up to 100."
+msgstr ""
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2473,7 +2513,7 @@ msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr "Og for å lasta inn brettsamlinga, trykk «Opna lagra brett»."
 
-#: activities/balancebox/balancebox.js:73
+#: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
 msgid ""
 "Either create your levels by starting the level editor in the activity "
@@ -2482,7 +2522,7 @@ msgstr ""
 "Anten kan du laga eigne brett ved å starta brett­redigeringa, eller så kan du "
 "velja den innebygde brettsamlinga."
 
-#: activities/balancebox/balancebox.js:106
+#: activities/balancebox/balancebox.js:105
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
@@ -2562,13 +2602,13 @@ msgstr ""
 "Trykk på venstre og høgre piltast samtidig for å senda ballen rett fram. På "
 "ein peikeskjerm må du trykkja på dei to hendene samtidig."
 
-#: activities/ballcatch/Ballcatch.qml:221
+#: activities/ballcatch/Ballcatch.qml:222
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Trykk på dei to hendene samtidig for å senda ballen rett fram."
 
-#: activities/ballcatch/Ballcatch.qml:223
+#: activities/ballcatch/Ballcatch.qml:224
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2764,7 +2804,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Du kan bruka denne teikninga for å rekna ut verdien til kvar bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:123
+#: activities/binary_bulb/BinaryBulb.qml:122
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -2833,16 +2873,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Space: Opna/lukka teikndiagrammet"
 
-#: activities/braille_alphabets/braille_alphabets.js:48
-#: activities/braille_alphabets/braille_alphabets.js:58
-#: activities/braille_alphabets/braille_alphabets.js:68
-#: activities/braille_alphabets/braille_alphabets.js:78
-#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:46
+#: activities/braille_alphabets/braille_alphabets.js:56
+#: activities/braille_alphabets/braille_alphabets.js:66
+#: activities/braille_alphabets/braille_alphabets.js:76
+#: activities/braille_alphabets/braille_alphabets.js:86
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "No, utan teikndiagrammet, vert det litt vanskelegare."
 
-#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:51
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -2850,7 +2890,7 @@ msgid ""
 msgstr ""
 "Sjå på teikndiagrammet, og legg merke til kor like første og andre linje er."
 
-#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:61
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -2859,7 +2899,7 @@ msgstr ""
 "Bokstavane liknar på dei i første linje i teikndiagrammet, men W er litt "
 "spesiell, då han vart lagt til seinare."
 
-#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:71
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Dette er lett: Tala er dei same som bokstavane A til J."
@@ -3481,7 +3521,7 @@ msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
 "Les gjennom instruksjonane, og dra og slepp så bileta der dei skal vera."
 
-#: activities/categorization/Categorization.qml:156
+#: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
 msgid ""
 "You don't have all the images for this activity. Click on 'Update the image "
@@ -3492,12 +3532,12 @@ msgstr ""
 "for å lasta ned alle bileta. Trykk på krysset eller «Vis aldri dette "
 "spørsmålet meir» for å spela demoversjonen."
 
-#: activities/categorization/Categorization.qml:159
+#: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
 msgid "Update the image set"
 msgstr "Last ned alle bileta"
 
-#: activities/categorization/Categorization.qml:160
+#: activities/categorization/Categorization.qml:161
 msgctxt "Categorization|"
 msgid "Never show this dialog again"
 msgstr "Vis aldri dette spørsmålet meir"
@@ -4076,22 +4116,22 @@ msgstr ""
 "draughts.js&gt;. Bruksrettleiinga er delvis basert på artikkelen frå engelsk "
 "Wikipedia &lt;https://en.wikipedia.org/wiki/Draughts&gt;."
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "Black's turn"
 msgstr "Svart sin tur"
 
-#: activities/checkers/checkers.js:75
+#: activities/checkers/checkers.js:69
 msgctxt "checkers|"
 msgid "White's turn"
 msgstr "Kvit sin tur"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "White wins"
 msgstr "Kvit vann"
 
-#: activities/checkers/checkers.js:78
+#: activities/checkers/checkers.js:72
 msgctxt "checkers|"
 msgid "Black wins"
 msgstr "Svart vann"
@@ -4210,42 +4250,42 @@ msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 msgstr "Sjakkmotoren er p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "Black's turn"
 msgstr "Svart sin tur"
 
-#: activities/chess/chess.js:123
+#: activities/chess/chess.js:117
 msgctxt "chess|"
 msgid "White's turn"
 msgstr "Kvit sin tur"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|white wins"
 msgid "White mates"
 msgstr "Kvit set matt"
 
-#: activities/chess/chess.js:128
+#: activities/chess/chess.js:122
 msgctxt "chess|black wins"
 msgid "Black mates"
 msgstr "Svart set matt"
 
-#: activities/chess/chess.js:138
+#: activities/chess/chess.js:132
 msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Remis"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Kvit seier sjakk"
 
-#: activities/chess/chess.js:142
+#: activities/chess/chess.js:136
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Svart seier sjakk"
 
-#: activities/chess/chess.js:145
+#: activities/chess/chess.js:139
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Ugyldig – kongen kan vera i sjakk"
@@ -5237,7 +5277,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Finn den rosa anda"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:261
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5246,12 +5286,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:262
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:263
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -5420,7 +5460,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Mellomrom, Enter eller Tabulator: Vel neste gjenstand"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:45
+#: activities/crane/crane.js:44
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5429,7 +5469,7 @@ msgstr ""
 "mat;mor;mus;omn;pus;rev;sag;tak;tau;ulv;vev"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:52
+#: activities/crane/crane.js:51
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5439,7 +5479,7 @@ msgstr ""
 "hane;heim;hest;hund;katt;lett;namn;rosa;song;ugle;vatn;vise"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:59
+#: activities/crane/crane.js:58
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -5892,7 +5932,7 @@ msgstr ""
 "kan endra tidsintervallet mellom signalendringane ved å trykkja på pilene på "
 "generatoren."
 
-#: activities/digital_electricity/components/SignalGenerator.qml:162
+#: activities/digital_electricity/components/SignalGenerator.qml:152
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"
@@ -6682,7 +6722,7 @@ msgid ""
 msgstr ""
 "På det tredje brettet må du lesa litt om eit dyr og så trykkja på det dyret."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:304
+#: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6691,12 +6731,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:306
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:307
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -9105,7 +9145,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Vel så mange figurdelar som instruksjonane ber deg om."
 
-#: activities/fractions_create/fractions_create.js:79
+#: activities/fractions_create/fractions_create.js:77
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Finn brøken som vert vist."
@@ -13850,57 +13890,57 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:39
-#: activities/grammar_analysis/grammar_analysis.js:49
+#: activities/grammar_analysis/grammar_analysis.js:38
+#: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:40
+#: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:41
+#: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:42
+#: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:48
+#: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:50
+#: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:51
+#: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:52
+#: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:407
+#: activities/grammar_analysis/grammar_analysis.js:401
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Tom"
@@ -14029,7 +14069,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Pil venstre/høgre: Styr romskipet til venstre/høgre"
 
-#: activities/gravity/Gravity.qml:209
+#: activities/gravity/Gravity.qml:210
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14041,7 +14081,7 @@ msgstr ""
 "jordkloten. Tiltrekkings­krafta mellom to objekt avheng av massen deira og er "
 "omvend proporsjonal med kvadratet av avstanden mellom dei."
 
-#: activities/gravity/Gravity.qml:213
+#: activities/gravity/Gravity.qml:214
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14051,7 +14091,7 @@ msgstr ""
 "Sidan tyngdekrafta er direkte proporsjonal med massen til begge objekta, vil "
 "meir massive («tyngre») objekt tiltrekkja kvarandre sterkare."
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:217
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14062,7 +14102,7 @@ msgstr ""
 "dei, så objekt som er langt frå kvarandre, vil ikkje trekkja så kraftig på "
 "kvarandre."
 
-#: activities/gravity/Gravity.qml:219
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14073,7 +14113,7 @@ msgstr ""
 "romstasjonen. Pilene viser retninga og styrken til tyngdekreftene som verkar "
 "på romskipet."
 
-#: activities/gravity/Gravity.qml:222
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14233,12 +14273,12 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Nivå %1"
 
-#: activities/guesscount/guesscount.js:135
+#: activities/guesscount/guesscount.js:128
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "Svaret er ikkje eit positivt heiltal."
 
-#: activities/guesscount/guesscount.js:137
+#: activities/guesscount/guesscount.js:130
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "Svaret er ikkje eit heiltal."
@@ -14333,18 +14373,18 @@ msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Rettetast: Fjern eit siffer"
 
-#: activities/guessnumber/guessnumber.js:62
-#: activities/guessnumber/guessnumber.js:66
+#: activities/guessnumber/guessnumber.js:57
+#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Talet er for stort"
 
-#: activities/guessnumber/guessnumber.js:69
+#: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Talet er for lite"
 
-#: activities/guessnumber/guessnumber.js:73
+#: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Du fann rett tal!"
@@ -14441,18 +14481,18 @@ msgstr ""
 "finst eit lydopptak av ordet, får du høyra opptaket når du har tre forsøk "
 "att på å gjetta ordet."
 
-#: activities/hangman/hangman.js:215
+#: activities/hangman/hangman.js:209
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Forsøk: %1"
 
-#: activities/hangman/Hangman.qml:400
+#: activities/hangman/Hangman.qml:401
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14462,7 +14502,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:404
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15131,31 +15171,31 @@ msgstr ""
 "Pil venstre/høgre: Vassrett rørsle på dei første bretta og dreiing av "
 "romskipet på dei seinare"
 
-#: activities/land_safe/LandSafe.qml:583
+#: activities/land_safe/LandSafe.qml:585
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Fuel: %1"
 msgstr "Drivstoff: %1"
 
-#: activities/land_safe/LandSafe.qml:593
+#: activities/land_safe/LandSafe.qml:595
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Altitude: %1"
 msgstr "Høgd: %1"
 
-#: activities/land_safe/LandSafe.qml:603
+#: activities/land_safe/LandSafe.qml:605
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Velocity: %1"
 msgstr "Fart: %1"
 
-#: activities/land_safe/LandSafe.qml:614
+#: activities/land_safe/LandSafe.qml:616
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Acceleration: %1"
 msgstr "Akselerasjon: %1"
 
-#: activities/land_safe/LandSafe.qml:648
+#: activities/land_safe/LandSafe.qml:650
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
@@ -15519,7 +15559,7 @@ msgstr ""
 "har flytta, svarar til det viste desimaltalet. Trykk så på «OK»-knappen for "
 "å sjekka svaret."
 
-#: activities/learn_decimals/learn_decimals.js:34
+#: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
 msgid ""
 "A decimal number is displayed. The bar with the arrow represents a full "
@@ -15529,7 +15569,7 @@ msgstr ""
 "Denne rada representerer ein 1-ar, og kvar boks svarar til ein tidel av "
 "denne 1-aren."
 
-#: activities/learn_decimals/learn_decimals.js:38
+#: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15541,7 +15581,7 @@ msgstr ""
 "området. Gjenta dette heilt til boksane du har flytta, svarar til det viste "
 "desimaltalet. Trykk så på «OK»-knappen for å sjekka svaret."
 
-#: activities/learn_decimals/learn_decimals.js:45
+#: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
 msgid ""
 "A subtraction with two decimal numbers is displayed. Below it, the first "
@@ -15552,7 +15592,7 @@ msgstr ""
 "vert det første talet vist ved hjelp av rader med boksar. Kvar rad "
 "representerer ein 1-ar, og kvar boks svarar til ein tidel av denne 1-aren."
 
-#: activities/learn_decimals/learn_decimals.js:49
+#: activities/learn_decimals/learn_decimals.js:48
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
@@ -15562,8 +15602,8 @@ msgstr ""
 "slik at boksane som står att, viser svaret på reknestykket. Trykk så på «OK»-"
 "knappen for å sjekka svaret ditt."
 
-#: activities/learn_decimals/learn_decimals.js:53
-#: activities/learn_decimals/learn_decimals.js:68
+#: activities/learn_decimals/learn_decimals.js:52
+#: activities/learn_decimals/learn_decimals.js:67
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
@@ -15572,7 +15612,7 @@ msgstr ""
 "Viss svaret var rett, skriv inn talet med siffer og komma. Trykk så igjen på "
 "«OK»-knappen for å sjekka talet."
 
-#: activities/learn_decimals/learn_decimals.js:60
+#: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
 msgid ""
 "An addition with two decimal numbers is displayed. The bar with the arrow "
@@ -15583,7 +15623,7 @@ msgstr ""
 "pil. Denne rada representerer ein 1-ar, og kvar boks svarar til ein tidel av "
 "denne 1-aren."
 
-#: activities/learn_decimals/learn_decimals.js:64
+#: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
@@ -15595,13 +15635,13 @@ msgstr ""
 "området. Gjenta dette heilt til boksane du har flytta, svarar til svaret på "
 "reknestykket. Trykk så på «OK»-knappen for å sjekka svaret."
 
-#: activities/learn_decimals/learn_decimals.js:75
+#: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
 msgid "A quantity is requested. The arrow allows to select up to 10 oranges."
 msgstr ""
 "Eit tal vert vist. Bruk så bruka pila til å velja opptil 10 appelsinar."
 
-#: activities/learn_decimals/learn_decimals.js:79
+#: activities/learn_decimals/learn_decimals.js:78
 msgctxt "learn_decimals|"
 msgid ""
 "Drag the arrow to select a number of oranges, and drag the selected oranges "
@@ -16152,12 +16192,12 @@ msgstr ""
 "Flagget på flyet viser ein bokstav. Vel alle orda som inneheld bokstaven, og "
 "trykk så «OK»."
 
-#: activities/letter-in-word/LetterInWord.qml:299
+#: activities/letter-in-word/LetterInWord.qml:300
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:301
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16167,7 +16207,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/letter-in-word/LetterInWord.qml:302
+#: activities/letter-in-word/LetterInWord.qml:303
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16763,7 +16803,7 @@ msgstr ""
 "rekkjefølgje. Du kan høyra han om att ved å trykkja på munnbiletet nedst på "
 "skjermen."
 
-#: activities/melody/Melody.qml:285
+#: activities/melody/Melody.qml:280
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16772,12 +16812,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/melody/Melody.qml:286
+#: activities/melody/Melody.qml:281
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/melody/Melody.qml:287
+#: activities/melody/Melody.qml:282
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -17932,7 +17972,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr ":"
 
-#: activities/memory/MemoryCommon.qml:325
+#: activities/memory/MemoryCommon.qml:326
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17941,12 +17981,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:327
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:328
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -18376,7 +18416,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Ordtilfang"
 
-#: activities/menu/Menu.qml:376
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18385,12 +18425,12 @@ msgstr ""
 "Legg favorittaktivitetane dine her ved å trykkja på sola oppe til høgre for "
 "kvar aktivitet."
 
-#: activities/menu/Menu.qml:779
+#: activities/menu/Menu.qml:780
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Søk etter aktivitetar"
 
-#: activities/menu/Menu.qml:806
+#: activities/menu/Menu.qml:807
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Endra innstillingar for aktivitetar"
@@ -18569,12 +18609,12 @@ msgstr ""
 "og du må finna ut kva bokstav dette er. Trykk så på bokstaven, eller skriv "
 "han inn via tastaturet."
 
-#: activities/missing-letter/MissingLetter.qml:316
+#: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:318
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18584,7 +18624,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/missing-letter/MissingLetter.qml:319
+#: activities/missing-letter/MissingLetter.qml:320
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18655,7 +18695,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tabulator: Byt mellom nedste og øvste felt"
 
-#: activities/money/money.js:143
+#: activities/money/money.js:141
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18665,7 +18705,7 @@ msgstr ""
 "betala med. Du kan òg trykkja på pengane du allereie har valt, for å fjerna "
 "dei att."
 
-#: activities/money/money.js:174
+#: activities/money/money.js:172
 #, qt-format
 msgctxt "money|"
 msgid ""
@@ -18843,13 +18883,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Trykk på Tux når du er klar, så skal me kommunisera med morseteikn."
 
-#: activities/morse_code/MorseCode.qml:349
+#: activities/morse_code/MorseCode.qml:342
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morseteikn: %1"
 
-#: activities/morse_code/MorseCode.qml:350
+#: activities/morse_code/MorseCode.qml:343
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19054,39 +19094,39 @@ msgstr ""
 "Viss du gjer det slik at motspelaren ikkje kan flytta eller berre har to "
 "brikker att, vinn du."
 
-#: activities/nine_men_morris/nine_men_morris.js:263
-#: activities/nine_men_morris/nine_men_morris.js:1113
+#: activities/nine_men_morris/nine_men_morris.js:262
+#: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
 msgstr "Legg ut ei brikke"
 
-#: activities/nine_men_morris/nine_men_morris.js:393
-#: activities/nine_men_morris/nine_men_morris.js:1171
+#: activities/nine_men_morris/nine_men_morris.js:388
+#: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
 msgstr "Flytt ei brikke"
 
-#: activities/nine_men_morris/nine_men_morris.js:945
+#: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
 msgstr "Fjern ei brikke"
 
-#: activities/nine_men_morris/nine_men_morris.js:1148
+#: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
 msgstr "Gratulerer"
 
-#: activities/nine_men_morris/nine_men_morris.js:1151
+#: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
 msgstr "Gratulerer, spelar 1"
 
-#: activities/nine_men_morris/nine_men_morris.js:1162
+#: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
 msgstr "Gratulerer, spelar 2"
 
-#: activities/nine_men_morris/nine_men_morris.js:1165
+#: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
 msgid "Try again"
 msgstr "Prøv på nytt"
@@ -19158,7 +19198,7 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19167,12 +19207,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:454
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:455
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -19514,33 +19554,33 @@ msgstr ""
 "Du får nokre tal. Dra dei til toppen av skjermen i rekkje­følgja det vert "
 "spurt om – frå minst til størst eller omvend."
 
-#: activities/ordering_numbers/ordering.js:67
+#: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
 msgstr "Ordna tala frå minst til størst."
 
-#: activities/ordering_numbers/ordering.js:68
+#: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
 msgstr "Ordna tala frå størst til minst."
 
-#: activities/ordering_numbers/ordering.js:69
+#: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
 msgstr "Ordna bokstavane i alfabetisk rekkjefølgje."
 
-#: activities/ordering_numbers/ordering.js:70
+#: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
 msgstr "Ordna bokstavane i omvend alfabetisk rekkjefølgje."
 
-#: activities/ordering_numbers/ordering.js:71
+#: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
 msgstr "Ordna hendingane i rekkjefølgja dei skjedde."
 
 # Må vera lik tilsvarande tekst i «gcompris_voices.po» (og i hjelpefila nokre tekstar nedanfor).
-#: activities/ordering_numbers/ordering.js:72
+#: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
 msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr "Ordna orda slik at dei uttrykkjer ei fornuftig setning."
@@ -20142,12 +20182,12 @@ msgstr ""
 "Sjå nøye på dei to bileta. Dei er ikkje heilt like. Trykk på alle "
 "forskjellane du finn."
 
-#: activities/photo_hunter/PhotoHunter.qml:94
+#: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Dra glidebrytaren for å visa forskjellane."
 
-#: activities/photo_hunter/PhotoHunter.qml:95
+#: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Trykk på forskjellane mellom dei to bileta."
@@ -20557,29 +20597,29 @@ msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "♭-notar"
 
-#: activities/piano_composition/piano_composition.js:25
+#: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
 msgstr "Dette er g-nøkkelen, for lyse tonar."
 
-#: activities/piano_composition/piano_composition.js:28
+#: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
 msgid "This is the bass clef staff for low pitched notes."
 msgstr "Dette er f-nøkkelen, for mørke tonar."
 
-#: activities/piano_composition/piano_composition.js:31
+#: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr "Dei svarte tangentane hevar eller senkar tonane ein halvtone."
 
-#: activities/piano_composition/piano_composition.js:34
+#: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
 "Kvar svarte tangent har to namn, ♯ (kryss, for heving) eller ♭ (b, for "
 "senking)."
 
-#: activities/piano_composition/piano_composition.js:37
+#: activities/piano_composition/piano_composition.js:36
 msgctxt "piano_composition|"
 msgid ""
 "Click on the note symbol to write different length notes such as whole "
@@ -20588,7 +20628,7 @@ msgstr ""
 "Trykk på noteteiknet for å skriva notar med ulik lengd – heilnotar, "
 "halvnotar, firedelsnotar og åttedelsnotar."
 
-#: activities/piano_composition/piano_composition.js:40
+#: activities/piano_composition/piano_composition.js:39
 msgctxt "piano_composition|"
 msgid ""
 "Rests are equivalent to notes during which silence is maintained. Click on "
@@ -20599,19 +20639,19 @@ msgstr ""
 "for å velja pauselengd, og trykk så på plussknappen for å skriva pausen på "
 "notearket."
 
-#: activities/piano_composition/piano_composition.js:43
+#: activities/piano_composition/piano_composition.js:42
 msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr ""
 "No kan du opna ferdigkomponerte melodiar og lagra dine eigne komposisjonar."
 
-#: activities/piano_composition/piano_composition.js:66
+#: activities/piano_composition/piano_composition.js:65
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Feil ved lagring av melodien til fil (%1)"
 
-#: activities/piano_composition/piano_composition.js:71
+#: activities/piano_composition/piano_composition.js:70
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
@@ -20647,7 +20687,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Dine lagra melodiar"
 
-#: activities/piano_composition/Piano_composition.qml:547
+#: activities/piano_composition/Piano_composition.qml:548
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20656,12 +20696,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:549
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:550
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -20912,7 +20952,7 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Trykk på tangentane som svarar til notane du ser og høyrer."
 
-#: activities/play_piano/PlayPiano.qml:279
+#: activities/play_piano/PlayPiano.qml:280
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20921,12 +20961,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:281
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:282
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -21025,7 +21065,7 @@ msgstr ""
 "Følg den loddrette linja og trykk på tromma eller mellomromstasten i rett "
 "rytme."
 
-#: activities/play_rhythm/PlayRhythm.qml:359
+#: activities/play_rhythm/PlayRhythm.qml:360
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21034,12 +21074,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:361
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:362
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -21500,7 +21540,7 @@ msgid "Enter or Return: submit your answer"
 msgstr "Enter eller Return: Sjå om svaret er rett"
 
 # Må vera lik tilsvarande tekst i «gcompris_voices.po».
-#: activities/railroad/Railroad.qml:105
+#: activities/railroad/Railroad.qml:106
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21509,7 +21549,7 @@ msgstr ""
 "Sjå på toget og prøv å hugsa det. Når tida er ute, skal du setja saman "
 "vognene slik toget var."
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:107
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -21547,7 +21587,7 @@ msgstr ""
 "kvart ord berre ei kort stund. Svar på om det opphavlege ordet var eit dei "
 "viste orda."
 
-#: activities/readingh/Readingh.qml:171
+#: activities/readingh/Readingh.qml:299
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21558,12 +21598,12 @@ msgstr ""
 "<font color=\"#373737\">Sjå om ordet<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">vert vist</font>"
 
-#: activities/readingh/Readingh.qml:197
+#: activities/readingh/Readingh.qml:351
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, eg såg det!"
 
-#: activities/readingh/Readingh.qml:211
+#: activities/readingh/Readingh.qml:372
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nei, det var ikkje der!"
@@ -21710,7 +21750,7 @@ msgstr ""
 "for han. For å vinna må du slå på alle maskinene mens det vert produsert "
 "straum."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:280
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21719,7 +21759,7 @@ msgstr ""
 "Tux kjem heim etter ein båttur, og du må få straumnettet i gang, slik at han "
 "får lys heime."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:282
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21728,7 +21768,7 @@ msgstr ""
 "Trykk på dei ulike elementa – sola, skyene, demningen, solcellepanela, "
 "vindmøllene og transformatorane – for å setja straumsystemet i gang."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:284
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21739,12 +21779,12 @@ msgstr ""
 "lysbrytaren for han. For å vinna må du slå på alle maskinene mens det vert "
 "produsert straum."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:286
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Lær om eit straumsystem basert på fornybar energi. Kos deg!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -21998,13 +22038,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "No som du kan reglane, kan du lesa og skriva romartal."
 
-#: activities/roman_numerals/RomanNumerals.qml:377
+#: activities/roman_numerals/RomanNumerals.qml:367
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Romartal: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:368
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24342,7 +24382,7 @@ msgid ""
 "questions."
 msgstr "Supert! Du kan ta kvissen om att for å prøva deg på fleire spørsmål."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24357,17 +24397,17 @@ msgstr ""
 "Her kan du utforska og læra om solsystemet.<br><b>2. Kvissmodus</b>: Her kan "
 "du finna ut kor mykje du veit om solsystemet."
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Kviss"
 
-#: activities/solar_system/SolarSystem.qml:158
+#: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Læring"
 
-#: activities/solar_system/SolarSystem.qml:162
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24377,7 +24417,7 @@ msgstr ""
 "svaralternativ, men berre eitt av dei er rett."
 
 # Målaren heiter «Accuracy», ikkje «Closeness», og vert delt av fleire aktivitetar.
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24391,7 +24431,7 @@ msgstr ""
 "Prøv deg fram heilt til du får 100 %. Viss hintknappen er synleg, kan du "
 "trykkja på han for å få eit hint om rett svar."
 
-#: activities/solar_system/SolarSystem.qml:168
+#: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24400,7 +24440,7 @@ msgstr ""
 "Du får 20 spørsmål, kvart med fire svaralternativ. Poengmålaren nede til "
 "høgre viser deg kor stor prosentdel av spørsmåla du har svara rett på."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24412,7 +24452,7 @@ msgstr ""
 "og du får spørsmålet på nytt ved slutten av runden, saman med eit "
 "ekstraspørsmål.<br>Du får maks 25 spørsmål som du må svara på."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24421,7 +24461,7 @@ msgstr ""
 "Du må skåra meir enn 90 % for å klara kvissen – og du kan då kalla deg ein "
 "solsystemekspert!"
 
-#: activities/solar_system/SolarSystem.qml:352
+#: activities/solar_system/SolarSystem.qml:353
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24431,7 +24471,7 @@ msgstr ""
 "1. Jo <b>lengre</b> ein planet er frå sola, jo <b>lågare</b> er temperaturen."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24443,7 +24483,7 @@ msgstr ""
 
 # Regla er eigentleg litt utdatert, då Pluto ikkje lenger er med, men ho fungerer dersom me ikkje markerer p-en i «på».
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:356
+#: activities/solar_system/SolarSystem.qml:357
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24455,12 +24495,12 @@ msgstr ""
 "b>at <b>u</b>tan <b>n</b>oko på!<br> Dei utheva forbokstavane i orda er "
 "forbokstavane i namna på planetane, frå sola og utover.<br>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Hint"
 
-#: activities/solar_system/SolarSystem.qml:366
+#: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vis solsystemet"
@@ -25347,36 +25387,36 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:57 core/ChangeLog.qml:92
-#: core/ChangeLog.qml:95 core/ChangeLog.qml:101
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
+#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Er blitt mykje meir brukarvennleg"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:45
-#: core/ChangeLog.qml:58 core/ChangeLog.qml:76 core/ChangeLog.qml:91
-#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97 core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Mange nye bilete"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:97 core/ChangeLog.qml:103
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
+#: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Mange feilrettingar"
 
-#: core/ChangeLog.qml:36
+#: core/ChangeLog.qml:37
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Lagt til omsetjing for arabisk og esperanto"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:44
+#: core/ChangeLog.qml:38 core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Mange oppdaterte omsetjingar"
 
-#: core/ChangeLog.qml:43
+#: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -25385,22 +25425,22 @@ msgstr ""
 "Nytt kommandolinjeval («--difficulty {verdi|min-maks}») for å starta "
 "GCompris med vald vanskegrad"
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Retta feil i talsamanliknings­aktiviteten"
 
-#: core/ChangeLog.qml:54
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Kart over Spania i geografi-aktiviteten"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:56
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Ukrainske talefiler"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25409,7 +25449,7 @@ msgstr ""
 "Kommandolinje-val for å visa oversikt over aktivitetar og starta ein "
 "aktivitet direkte"
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25418,33 +25458,33 @@ msgstr ""
 "Redusert storleiken på program­pakkane (alle plattformer) og på den eksterne "
 "biletsamlinga"
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Forbetra biletkvaliteten i fleire aktivitetar"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Retta feil i nokre overgangs­animasjonar i aktivitetane «Fornybar energi» og "
 "«Vasskrinsløpet»"
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Retta problem med at dødtastar vart ignorerte i nokre skriveaktivitetar på "
 "Linux"
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Retta nullstilling av brettet når ein manuelt endra nivå i aktiviteten "
 "«Logiske samanhengar»"
 
-#: core/ChangeLog.qml:71
+#: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25452,37 +25492,37 @@ msgstr ""
 "Retta feil i aktivitetane «Rekkjefølgja på bokstavane i alfabetet», «Partal "
 "og oddetal» og «Tal i rekkjefølgje»"
 
-#: core/ChangeLog.qml:75 core/ChangeLog.qml:83
+#: core/ChangeLog.qml:76 core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Fleire feilrettingar"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Oppdatert omsetjing for russisk"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:79
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Nynorske talefiler"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Lagt til omsetjingar for bretonsk, tsjekkisk og makedonsk"
 
-#: core/ChangeLog.qml:87
+#: core/ChangeLog.qml:88
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nye kart og oppdaterte kart for geografiske aktivitetar"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25491,64 +25531,64 @@ msgstr ""
 "Nytt datasett for lykkjer i programmerings­labyrinten, og gjort opplærings­"
 "bileta mogleg å omsetja"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "Nytt brett for å læra om kortslutningar i analogteknikk-aktiviteten"
 
-#: core/ChangeLog.qml:100
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Ny innstillingsmeny i aktivitetane, med val av datasett"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nye organisering av aktivitetane, med underkategoriar"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Lagt til omsetjing for makedonsk"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nye aktivitetar: programmerings­labyrint og babytangram"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nye innstillingar for bakgrunnsmusikk og lydstyrke"
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Ny fartsinnstilling i fleire aktivitetar"
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nytt alternativ i sjakk­aktivitetane for å visa brikkene som er tekne"
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nye teikningar for fargar, avanserte fargar og målskivespelet"
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nye talefiler for engelsk (amerikansk)"
 
-#: core/ChangeLog.qml:114 core/ChangeLog.qml:122
+#: core/ChangeLog.qml:115 core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mange små rettingar og forbetringar"
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25557,17 +25597,17 @@ msgstr ""
 "Oppdatert omsetjing for fleire språk (nynorsk, bretonsk, brasiliansk "
 "portugisisk, finsk, …)"
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Lagt til russisk datasett i «Trykk på ein bokstav»-aktiviteten"
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Språkaktiviteten er no tilgjengeleg på nederlandsk"
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25576,18 +25616,18 @@ msgstr ""
 "Dei norske fylka Nord-Trøndelag og Sør-Trøndelag er slått saman til eitt i "
 "kartaktiviteten"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Feilretting i blindeskrift-aktiviteten, der cellene startar med 1, ikkje 0"
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Lagt til omsetjingar for baskisk, ungarsk og malayalam"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25596,47 +25636,47 @@ msgstr ""
 "Kan no lagra og opna filer (enkel teksthandsamar, balanseøskje og "
 "pianokomponering)"
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Lagt til omsetjing for skotsk-gælisk"
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Lagt til lisensside i oppsettet"
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Fleire utformingsendringar for betre ergonomi"
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Språkaktiviteten finst no òg på polsk, svensk og ukrainsk"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Ein søkjefunksjon"
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Ein endringslogg"
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mange små rettingar"
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Språkaktiviteten finst no òg på fransk"
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25645,7 +25685,7 @@ msgstr ""
 "Lagt til innlastingsbilete som viser at noko kan ta nokre sekund å fullføra "
 "(for eksempel innlasting av ein aktivitet)"
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25654,60 +25694,60 @@ msgstr ""
 "Lagt til omsetjingar for katalansk, kinesisk (tradisjonell), finsk (92 % "
 "omsett), russisk (98 % omsett), slovakisk (92 % omsett) og tyrkisk"
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Lagt til omsetjingar for slovensk, tysk og galisisk"
 
-#: core/ChangeLog.qml:183
+#: core/ChangeLog.qml:184
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Versjon %1:"
 
-#: core/core.js:179
+#: core/core.js:223
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Manglar lydfiler!"
 
-#: core/core.js:180
+#: core/core.js:224
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
 "system."
 msgstr "Denne aktiviteten brukar språklydfiler som ikkje er installerte enno."
 
-#: core/core.js:182
+#: core/core.js:226
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the preferences dialog."
 msgstr "Gå til innstillingsvindauget for å lasta ned lydfilene du treng."
 
-#: core/core.js:210
+#: core/core.js:254
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Nedlasting pågår"
 
-#: core/core.js:212
+#: core/core.js:256
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "Lastar ned.<br/>Trykk «Avbryt» om du vil avslutta med ein gong."
 
-#: core/core.js:222
+#: core/core.js:266
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Avslutt?"
 
-#: core/core.js:224
+#: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Er du sikker på at du vil avslutta GCompris?"
 
-#: core/core.js:225
+#: core/core.js:269
 msgctxt "core|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/core.js:226
+#: core/core.js:270
 msgctxt "core|"
 msgid "No"
 msgstr "Nei"
@@ -26195,6 +26235,13 @@ msgid ""
 msgstr ""
 "Vel vanskegrad(ar) å visa for gjeldande økt. Kan anten vera eitt tal («2») "
 "eller eit intervall («3-6»). Gyldige vanskegradar er 1 til 6."
+
+#: core/main.cpp:214
+msgctxt "QObject|"
+msgid ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
+msgstr ""
 
 #: core/main.qml:273
 msgctxt "main|"

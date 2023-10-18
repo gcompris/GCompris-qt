@@ -26869,47 +26869,47 @@ msgstr ""
 "Especifiqueu en quin nivell iniciar l'activitat. Només es fa servir quan "
 "s'utilitza l'opció --launch."
 
-#: core/main.qml:273
+#: core/main.qml:277
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Veus per al teu idioma"
 
-#: core/main.qml:274
+#: core/main.qml:278
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Conjunt complet d'imatges de les paraules"
 
-#: core/main.qml:275
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Background music"
 msgstr "Música de fons"
 
-#: core/main.qml:280
+#: core/main.qml:284
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Voleu descarregar els següents recursos externs?"
 
-#: core/main.qml:285
+#: core/main.qml:289
 msgctxt "main|"
 msgid "Yes"
 msgstr "Sí"
 
-#: core/main.qml:295
+#: core/main.qml:299
 msgctxt "main|"
 msgid "No"
 msgstr "No"
 
-#: core/main.qml:320
+#: core/main.qml:324
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Us donem la benvinguda al GCompris!"
 
-#: core/main.qml:321
+#: core/main.qml:325
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Esteu executant el GCompris per primera vegada."
 
-#: core/main.qml:322
+#: core/main.qml:326
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26920,23 +26920,23 @@ msgstr ""
 "idioma s'ha establert correctament, i que tots els fitxers de so específics "
 "de l'idioma es troben instal·lats. Ho podeu fer al diàleg de preferències."
 
-#: core/main.qml:324
+#: core/main.qml:328
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Divertiu-vos!"
 
-#: core/main.qml:326
+#: core/main.qml:330
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "El vostre idioma actual és el %1 (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:364
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "El GCompris ha estat actualitzat! Aquests són els nous canvis:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:392
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -26945,12 +26945,12 @@ msgstr ""
 "Algunes activitats tenen un conjunt de dades nou disponible. Voleu restablir "
 "la seva selecció del conjunt de dades?"
 
-#: core/main.qml:389
+#: core/main.qml:393
 msgctxt "main|"
 msgid "Apply"
 msgstr "Aplica"
 
-#: core/main.qml:390
+#: core/main.qml:394
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancel·la"
