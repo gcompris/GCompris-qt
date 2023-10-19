@@ -165,7 +165,7 @@ ActivityBase {
             }
             anchors.fill: parent
             focus: true
-            active: items.categoriesFallback && items.displayUpdateDialogAtStart;
+            active: items.categoriesFallback && items.displayUpdateDialogAtStart && ApplicationInfo.isDownloadAllowed;
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
