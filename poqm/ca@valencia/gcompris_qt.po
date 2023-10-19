@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-10-12 09:21+0200\n"
+"PO-Revision-Date: 2023-10-16 09:33+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -849,7 +849,7 @@ msgstr "Aprendre a multiplicar números en un temps limitat."
 #: activities/algebra_by/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Multiplication tables from 1 to 10."
-msgstr "Taules de multiplicar de l'1 al 10."
+msgstr "Taules de multiplicar des de l'1 fins al 10."
 
 #. Help manual
 #: activities/algebra_by/ActivityInfo.qml:24
@@ -913,12 +913,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Aprendre la taula de multiplicar del 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Taules de multiplicar de l'1 al 10."
+msgstr "Practiqueu les taules de multiplicar des de l'1 fins al 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1008,12 +1005,9 @@ msgid "Learn division table of 10."
 msgstr "Aprendre la taula de divisió del 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Taules de multiplicar de l'1 al 10."
+msgstr "Practiqueu les taules de dividir des de l'1 fins al 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1105,28 +1099,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Aprendre la taula de restar del 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Resta nombres decimals fins a 1."
+msgstr "Restes de nombres fins al 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Resta nombres decimals fins a 1."
+msgstr "Restes de nombres fins al 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Resta nombres decimals fins a 1."
+msgstr "Restes de nombres fins al 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1215,28 +1200,19 @@ msgid "Learn addition table of 10."
 msgstr "Aprendre la taula de sumar del 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Suma nombres decimals fins a 1."
+msgstr "Sumes amb nombres fins al 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Suma nombres decimals fins a 1."
+msgstr "Sumes amb nombres fins al 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Afig estreles fins a 10."
+msgstr "Sumes amb nombres fins al 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -4574,7 +4550,7 @@ msgstr "Moviment no vàlid, el vostre rei queda en escac"
 #: activities/chess/Chess.qml:123
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Estàs segur que vols desfer tots els moviments?"
+msgstr "Segur que vols desfer tots els moviments?"
 
 #: activities/chess/Chess.qml:124
 msgctxt "Chess|"
@@ -5156,7 +5132,7 @@ msgstr "Manual"
 #: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
-msgstr "Va al nivell següent"
+msgstr "Va fins al nivell següent"
 
 #. Activity title
 #: activities/clickanddraw/ActivityInfo.qml:15
@@ -8245,10 +8221,10 @@ msgid ""
 msgstr ""
 "És un fort circular fet de gres, assegut a la part inferior de l'illa de "
 "Manhattan, és anterior a l'illa d'Ellis per prop de 50 anys com el primer "
-"punt de control de la immigració als EUA. El Castell Clinton (nps.gov/cacl) "
-"va ser construït originalment com una fortalesa per a protegir a Nova York "
-"d'una invasió britànica durant la guerra de 1812, i va ser dedicat com a "
-"monument nacional el 1946."
+"punt de control de la immigració en els EUA. El Castell Clinton (nps.gov/"
+"cacl) va ser construït originalment com una fortalesa per a protegir a Nova "
+"York d'una invasió britànica durant la guerra de 1812, i va ser dedicat com "
+"a monument nacional el 1946."
 
 #: activities/explore_monuments/resource/board/board5.qml:62
 #: activities/explore_monuments/resource/board/board5.qml:65
@@ -8290,8 +8266,8 @@ msgid ""
 "arguably his most famous speech, the Gettysburg Address."
 msgstr ""
 "Construït en pedra blanca amb 36 columnes icòniques, El Monument a Lincoln "
-"és una de les estructures més reconegudes als Estats Units. El monument es "
-"troba a l'extrem oest del National Mall, a West Potomac Park, i és un "
+"és una de les estructures més reconegudes en els Estats Units. El monument "
+"es troba en l'extrem oest del National Mall, en West Potomac Park, i és un "
 "exemple de l'arquitectura neoclàssica. Compta amb una estàtua solitària de "
 "19 peus d'altura d'Abraham Lincoln assegut en acte de contemplació, està "
 "flanquejada per dues cambres laterals amb inscripcions del segon discurs "
@@ -23112,7 +23088,7 @@ msgid ""
 msgstr ""
 "El símbol «lb» a la part final d'un número significa lliura. La lliura és "
 "una unitat de massa, una propietat que correspon a la percepció comuna de "
-"quant «pesa» un objecte. Esta unitat s'utilitza als EUA."
+"quant «pesa» un objecte. Esta unitat s'utilitza en els EUA."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:80
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:87
@@ -26379,7 +26355,7 @@ msgstr "Eixida?"
 #: core/core.js:268
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
-msgstr "Estàs segur que vols eixir de GCompris?"
+msgstr "Segur que vols eixir de GCompris?"
 
 #: core/core.js:269
 msgctxt "core|"
