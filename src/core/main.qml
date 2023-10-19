@@ -318,8 +318,7 @@ Window {
                     + ", userDataPath=" + ApplicationSettings.userDataPath
                     + ")");
         if (ApplicationSettings.exeCount === 1 &&
-                !ApplicationSettings.isKioskMode &&
-                ApplicationInfo.isDownloadAllowed) {
+                !ApplicationSettings.isKioskMode) {
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
@@ -337,7 +336,9 @@ Window {
                         "", null,
                         function() {
                             pageView.currentItem.focus = true;
-                            initialAssetsDownload();
+                            if(ApplicationInfo.isDownloadAllowed) {
+                                initialAssetsDownload();
+                            }
                         }
              );
         }
