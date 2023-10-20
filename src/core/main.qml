@@ -183,7 +183,12 @@ Window {
             }
         }
 
-        onDone: backgroundMusic.playBackgroundMusic()
+        onDone: {
+            if(backgroundMusic.source == ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA")) {
+                backgroundMusic.source = "" // Avoid play again intro music if backgroundMusic not installed
+            }
+            backgroundMusic.playBackgroundMusic()
+        }
 
         function playBackgroundMusic() {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
