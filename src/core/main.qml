@@ -119,7 +119,7 @@ Window {
             audioVoices.stop();
             audioEffects.stop();
         }
-        else {
+        else if (ApplicationInfo.isMobile && !isMusicalActivityRunning) {
             backgroundMusic.resume();
         }
     }
