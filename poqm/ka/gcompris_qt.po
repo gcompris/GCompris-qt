@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.4\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -810,12 +810,9 @@ msgid "Learn multiplication table of 10."
 msgstr "ისწავლეთ 10-ზე გამრავლების ცხრილი."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "1-დან 10-მდე გამრავლების ცხრილები."
+msgstr "1-დან 10-მდე გამრავლების ცხრილების მეცადინეობა."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -901,12 +898,9 @@ msgid "Learn division table of 10."
 msgstr "ისწავლეთ 10-ზე გაყოფის ცხრილი."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "1-დან 10-მდე გამრავლების ცხრილები."
+msgstr "1-დან 10-მდე გაყოფის ცხრილების მეცადინეობა."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -994,28 +988,19 @@ msgid "Learn subtraction table of 10."
 msgstr ""
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "რიცხვების გამოკლება"
+msgstr "10-მდე რიცხვების გამოკლება."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "რიცხვების გამოკლება"
+msgstr "20-მდე რიცხვების გამოკლება."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "რიცხვების გამოკლება"
+msgstr "100-მდე რიცხვების გამოკლება."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1101,20 +1086,14 @@ msgid "Learn addition table of 10."
 msgstr "ისწავლეთ 10-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "რიცხვების მიმატება"
+msgstr "10-მდე რიცხვების მიმატება."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "რიცხვების მიმატება"
+msgstr "15-მდე რიცხვების მიმატება."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -24234,7 +24213,7 @@ msgstr ""
 #: core/main.qml:393
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "გადატარება"
 
 #: core/main.qml:394
 msgctxt "main|"
