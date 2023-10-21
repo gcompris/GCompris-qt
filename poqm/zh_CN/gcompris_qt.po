@@ -24721,47 +24721,47 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:277
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:278
+#: core/main.qml:281
 msgctxt "main|"
 msgid "Full word image set"
 msgstr ""
 
-#: core/main.qml:279
+#: core/main.qml:282
 msgctxt "main|"
 msgid "Background music"
 msgstr "背景音乐"
 
-#: core/main.qml:284
+#: core/main.qml:287
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "您想要下载以下额外材料吗？"
 
-#: core/main.qml:289
+#: core/main.qml:292
 msgctxt "main|"
 msgid "Yes"
 msgstr "是"
 
-#: core/main.qml:299
+#: core/main.qml:302
 msgctxt "main|"
 msgid "No"
 msgstr "否"
 
-#: core/main.qml:324
+#: core/main.qml:327
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "欢迎来到 GCompris！"
 
-#: core/main.qml:325
+#: core/main.qml:328
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "您正首次运行 GCompris。"
 
-#: core/main.qml:326
+#: core/main.qml:329
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -24771,35 +24771,35 @@ msgstr ""
 "您应该确认您的程序设置尤其是您的语言设置正确，还有安装了特定语言所有的声音文"
 "件。您可以在首选项对话框里做这些。"
 
-#: core/main.qml:328
+#: core/main.qml:331
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "玩得开心！"
 
-#: core/main.qml:330
+#: core/main.qml:333
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "当前的语言为“%1” (%2)。"
 
-#: core/main.qml:364
+#: core/main.qml:367
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris 已升级！新版本中包含如下新特性：<br/>"
 
-#: core/main.qml:392
+#: core/main.qml:395
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:393
+#: core/main.qml:396
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:394
+#: core/main.qml:397
 msgctxt "main|"
 msgid "Cancel"
 msgstr ""

@@ -26705,47 +26705,47 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:277
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Stimmen für deine Sprache"
 
-#: core/main.qml:278
+#: core/main.qml:281
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Vollständige Bildersammlung"
 
-#: core/main.qml:279
+#: core/main.qml:282
 msgctxt "main|"
 msgid "Background music"
 msgstr "Hintergrundmusik"
 
-#: core/main.qml:284
+#: core/main.qml:287
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr "Möchtest Du die folgenden externen Ressourcen herunterladen?"
 
-#: core/main.qml:289
+#: core/main.qml:292
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/main.qml:299
+#: core/main.qml:302
 msgctxt "main|"
 msgid "No"
 msgstr "Nein"
 
-#: core/main.qml:324
+#: core/main.qml:327
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Willkommen zu GCompris"
 
-#: core/main.qml:325
+#: core/main.qml:328
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Du benutzt GCompris zum ersten Mal."
 
-#: core/main.qml:326
+#: core/main.qml:329
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26756,35 +26756,35 @@ msgstr ""
 "Spracheinstellungen richtig sind, und dass alle Sprachtondateien installiert "
 "sind. Gehe dafür in den Einstellungsdialog."
 
-#: core/main.qml:328
+#: core/main.qml:331
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Viel Spaß!"
 
-#: core/main.qml:330
+#: core/main.qml:333
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Die aktuelle Sprache ist %1 (%2)."
 
-#: core/main.qml:364
+#: core/main.qml:367
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris wurde aktualisiert. Hier sind die letzten Änderungen:<br/>"
 
-#: core/main.qml:392
+#: core/main.qml:395
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:393
+#: core/main.qml:396
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:394
+#: core/main.qml:397
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"

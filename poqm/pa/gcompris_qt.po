@@ -24350,49 +24350,49 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:277
+#: core/main.qml:280
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:278
+#: core/main.qml:281
 msgctxt "main|"
 msgid "Full word image set"
 msgstr ""
 
-#: core/main.qml:279
+#: core/main.qml:282
 msgctxt "main|"
 msgid "Background music"
 msgstr ""
 
-#: core/main.qml:284
+#: core/main.qml:287
 msgctxt "main|"
 msgid "Do you want to download the following external assets?"
 msgstr ""
 
-#: core/main.qml:289
+#: core/main.qml:292
 #, fuzzy
 msgctxt "main|"
 msgid "Yes"
 msgstr "ਹਾਂ"
 
-#: core/main.qml:299
+#: core/main.qml:302
 #, fuzzy
 msgctxt "main|"
 msgid "No"
 msgstr "ਨਹੀਂ"
 
-#: core/main.qml:324
+#: core/main.qml:327
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr ""
 
-#: core/main.qml:325
+#: core/main.qml:328
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr ""
 
-#: core/main.qml:326
+#: core/main.qml:329
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -24400,35 +24400,35 @@ msgid ""
 "can do this in the Preferences Dialog."
 msgstr ""
 
-#: core/main.qml:328
+#: core/main.qml:331
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr ""
 
-#: core/main.qml:330
+#: core/main.qml:333
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr ""
 
-#: core/main.qml:364
+#: core/main.qml:367
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr ""
 
-#: core/main.qml:392
+#: core/main.qml:395
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:393
+#: core/main.qml:396
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:394
+#: core/main.qml:397
 #, fuzzy
 msgctxt "main|"
 msgid "Cancel"

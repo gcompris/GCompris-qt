@@ -556,6 +556,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--start-level niveau</entry>
+<entry
+>Spécifiez le niveau sur lequel démarrer l’activité spécifiée par l’option « --launch » lors du démarrage de GCompris. Ignoré si aucune option « --launch » ou si le niveau spécifié n’est pas valable.</entry>
+</row>
+<row>
+<entry
 >--difficulty {value|min-max}</entry>
 <entry
 >Pour la session, force la difficulté des activités d'être soit à la valeur value, soit entre les valeurs min et max. Les valeurs doivent être en 1 et 6 et lorsque le format est min-max, la valeur min doit être inférieure à la valeur max. Si ce n'est pas le cas, GCompris ne démarrera pas.</entry>
