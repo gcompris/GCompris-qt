@@ -323,7 +323,7 @@ Window {
                         pageView,
                         qsTr("Welcome to GCompris!") + ("<br>")
                         + qsTr("You are running GCompris for the first time.") + "\n"
-                        + qsTr("You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.")
+                        + qsTr("You should verify that your application settings especially your language is set correctly. You can do this in the Configuration dialog.")
                         + "\n"
                         + qsTr("Have Fun!")
                         + ("<br><br>")
