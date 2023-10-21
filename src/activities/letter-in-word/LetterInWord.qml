@@ -93,7 +93,7 @@ ActivityBase {
                 home();
             }
             onLoadData: {
-                 if(activityData && activityData["locale"] !== "system") {
+                if(activityData && activityData["locale"] && activityData["locale"] !== "system") {
                     background.locale = activityData["locale"];
                 }
                 else {
