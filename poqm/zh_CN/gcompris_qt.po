@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-10-10 14:28\n"
+"PO-Revision-Date: 2023-10-21 13:54\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -812,12 +812,9 @@ msgid "Learn multiplication table of 10."
 msgstr "学习10的乘法表。"
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "1 到 10 的乘法表。"
+msgstr ""
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -905,12 +902,9 @@ msgid "Learn division table of 10."
 msgstr "学习10的除法表。"
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "1 到 10 的乘法表。"
+msgstr ""
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1000,28 +994,19 @@ msgid "Learn subtraction table of 10."
 msgstr "学习10的减法表。"
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "减法"
+msgstr ""
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "减法"
+msgstr ""
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "减法"
+msgstr ""
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1109,28 +1094,19 @@ msgid "Learn addition table of 10."
 msgstr "学习10的加法表。"
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 10."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "10 的加法表。"
+msgstr ""
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "加法记忆游戏"
+msgstr ""
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Additions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "1, 2, 和 3 的加法。"
+msgstr ""
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
