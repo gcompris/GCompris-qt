@@ -284,7 +284,7 @@ Window {
             var dialog;
             dialog = Core.showMessageDialog(
                 pageView.currentItem,
-                qsTr("Do you want to download the following external assets?")
+                qsTr("Do you want to automatically download and update the following external assets when starting GCompris?")
                 + ("<br>")
                 + voicesLine
                 + wordSetLine
@@ -299,7 +299,10 @@ Window {
                         DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources());
                     var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                 },
-                qsTr("No"), null,
+                qsTr("No"), 
+                function() {
+                    ApplicationSettings.isAutomaticDownloadsEnabled = false;
+                },
                 null
             );
 
