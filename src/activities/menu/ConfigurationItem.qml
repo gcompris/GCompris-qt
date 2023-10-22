@@ -503,7 +503,7 @@ Item {
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
         backgroundMusicVolume = ApplicationSettings.backgroundMusicVolume
         audioEffectsVolume = ApplicationSettings.audioEffectsVolume
-        filteredBackgroundMusic = ApplicationSettings.filteredBackgroundMusic
+        filteredBackgroundMusic = ApplicationSettings.filteredBackgroundMusic.slice()
         allBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
         if(filteredBackgroundMusic.length === 0)
             filteredBackgroundMusic = allBackgroundMusic
@@ -536,7 +536,12 @@ Item {
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
-        ApplicationSettings.filteredBackgroundMusic = filteredBackgroundMusic
+
+        if(filteredBackgroundMusic.length === 0) {
+            filteredBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+        }
+        ApplicationSettings.filteredBackgroundMusic = filteredBackgroundMusic.slice()
+
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled

@@ -190,6 +190,7 @@ Window {
 
         function playBackgroundMusic() {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            filteredBackgroundMusic = ApplicationSettings.filteredBackgroundMusic;
             if(filteredBackgroundMusic.length === 0) {
                 filteredBackgroundMusic = rccBackgroundMusic
             }
