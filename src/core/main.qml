@@ -154,7 +154,7 @@ Window {
                 // Don't play welcome intro
                 welcomePlayed = true;
             }
-            else if (DownloadManager.areVoicesRegistered()) {
+            else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
                 delayedWelcomeTimer.playWelcome();
             }
             else {
@@ -344,7 +344,7 @@ Window {
         else {
             // Register voices-resources for current locale, updates/downloads only if
             // not prohibited by the settings
-            if(!DownloadManager.areVoicesRegistered()) {
+            if(!DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
                 DownloadManager.updateResource(
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
             }

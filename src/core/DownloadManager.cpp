@@ -467,9 +467,9 @@ bool DownloadManager::isDataRegistered(const QString &data) const
     return !QDir(res).entryList().empty();
 }
 
-bool DownloadManager::areVoicesRegistered() const
+bool DownloadManager::areVoicesRegistered(const QString &locale) const
 {
-    QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
+    QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
     return isDataRegistered(resource);
 }
 

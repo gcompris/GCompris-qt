@@ -261,11 +261,11 @@ public:
     Q_INVOKABLE bool isDataRegistered(const QString &data) const;
 
     /**
-     * Whether voices for the currently active locale are registered.
+     * Whether voices for the locale passed in parameter are registered.
      *
      * @sa isDataRegistered
      */
-    Q_INVOKABLE bool areVoicesRegistered() const;
+    Q_INVOKABLE bool areVoicesRegistered(const QString &locale) const;
 
     /**
      * Registers a rcc resource file given by a relative resource path

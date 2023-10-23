@@ -81,7 +81,7 @@ ActivityBase {
 
         function itemsVisible() {
             iAmReady.visible = false;
-            if(DownloadManager.areVoicesRegistered() && !operationMode && items.voicesEnabled) {
+            if(DownloadManager.areVoicesRegistered(ApplicationSettings.locale) && !operationMode && items.voicesEnabled) {
                 repeatItem.visible = true;
             }
             if(items.mode === 1) {

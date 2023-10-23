@@ -116,8 +116,8 @@ Item {
             property bool haveLocalResource: false
 
             function localeChanged() {
-                var language = dialogConfig.languages[languageBox.currentIndex].text;
-                voicesRow.haveLocalResource = DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale))
+                var localeText = dialogConfig.languages[languageBox.currentIndex].locale;
+                voicesRow.haveLocalResource = DownloadManager.areVoicesRegistered(localeText)
             }
 
             Connections {
