@@ -228,9 +228,7 @@ Window {
         if(wordset != "" && DownloadManager.haveLocalResource(wordset)) {
             // words-webp.rcc is there -> register old file first
             // then try to update in the background
-            if(DownloadManager.updateResource(GCompris.WORDSET, {})) {
-                ApplicationSettings.wordset = wordset
-            }
+            DownloadManager.updateResource(GCompris.WORDSET, {});
         } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
             // words-webp.rcc has not been downloaded yet -> ask for download
             wordSetDownloaded = false;
@@ -347,8 +345,8 @@ Window {
 
             checkWordset();
 
-            if(ApplicationSettings.useWordset && DownloadManager.updateResource(GCompris.WORDSET, {})) {
-                ApplicationSettings.wordset = 'data3/words/words-webp.rcc'
+            if(ApplicationSettings.useWordset) {
+                DownloadManager.updateResource(GCompris.WORDSET, {});
             }
 
             checkBackgroundMusic();

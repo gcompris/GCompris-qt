@@ -530,15 +530,16 @@ bool DownloadManager::registerResourceAbsolute(const QString &filename)
     locker.unlock(); /* note: we unlock before emitting to prevent
                       * potential deadlocks */
 
-    Q_EMIT resourceRegistered(getRelativeResourcePath(filename));
+    const QString relativeFilename = getRelativeResourcePath(filename);
+    Q_EMIT resourceRegistered(relativeFilename);
 
     QString v = getVoicesResourceForLocale(
         ApplicationSettings::getInstance()->locale());
     QString musicPath = getBackgroundMusicResources();
 
-    if (v == getRelativeResourcePath(filename))
+    if (v == relativeFilename)
         Q_EMIT voicesRegistered();
-    else if (musicPath == getRelativeResourcePath(filename))
+    else if (musicPath == relativeFilename)
         Q_EMIT backgroundMusicRegistered();
     return true;
 }

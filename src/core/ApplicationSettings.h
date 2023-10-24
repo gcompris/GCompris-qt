@@ -181,11 +181,6 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool exitConfirmation READ exitConfirmation WRITE setExitConfirmation NOTIFY exitConfirmationChanged)
 
     /**
-     * The name of the default wordset to use. If empty then the internal sample wordset is used.
-     */
-    Q_PROPERTY(QString wordset READ wordset WRITE setWordset NOTIFY wordsetChanged)
-
-    /**
      * Wether the extra word set should be used.
      */
     Q_PROPERTY(bool useWordset READ useWordset WRITE setUseWordset NOTIFY useWordsetChanged)
@@ -437,13 +432,6 @@ public:
         Q_EMIT exitConfirmationChanged();
     }
 
-    QString wordset() const { return m_wordset; }
-    void setWordset(const QString &newWordset)
-    {
-        m_wordset = newWordset;
-        Q_EMIT wordsetChanged();
-    }
-
     bool useWordset() const { return m_useWordset; }
     void setUseWordset(const bool newMode)
     {
@@ -564,7 +552,6 @@ protected Q_SLOTS:
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyExitConfirmationChanged();
-    Q_INVOKABLE void notifyWordsetChanged();
     Q_INVOKABLE void notifyUseWordsetChanged();
     Q_INVOKABLE void notifyFilteredBackgroundMusicChanged();
     Q_INVOKABLE void notifyBackgroundMusicVolumeChanged();
@@ -645,7 +632,6 @@ Q_SIGNALS:
     void kioskModeChanged();
     void sectionVisibleChanged();
     void exitConfirmationChanged();
-    void wordsetChanged();
     void useWordsetChanged();
     void baseFontSizeChanged();
     void filteredBackgroundMusicChanged();
@@ -692,7 +678,6 @@ private:
     bool m_isKioskMode;
     bool m_sectionVisible;
     bool m_exitConfirmation;
-    QString m_wordset;
     bool m_useWordset;
     QStringList m_filteredBackgroundMusic;
     qreal m_backgroundMusicVolume;

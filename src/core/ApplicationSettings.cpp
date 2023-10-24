@@ -66,7 +66,6 @@ namespace {
     const char *KIOSK_KEY = "kiosk";
     const char *SECTION_VISIBLE = "sectionVisible";
     const char *EXIT_CONFIRMATION = "exitConfirmation";
-    const char *WORDSET = "wordset";
     const char *USE_WORDSET = "useWordset";
 
     const char *PROGRESS_KEY = "progress";
@@ -115,15 +114,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
 
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
     m_exitConfirmation = m_config.value(EXIT_CONFIRMATION, ApplicationInfo::getInstance()->isMobile() ? true : false).toBool();
-    m_wordset = m_config.value(WORDSET, "").toString();
 
-    // Automatically override the previous rcc with the new one
-    if (m_wordset == QLatin1String("data2/words/words.rcc")) {
-        m_wordset = "data2/words/words-webp.rcc";
-    }
-    if (m_wordset == QLatin1String("data2/words/words-webp.rcc")) {
-        m_wordset = "words-webp.rcc";
-    }
     m_useWordset = m_config.value(USE_WORDSET, true).toBool();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
                                                    !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed())
@@ -176,7 +167,6 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
     connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
     connect(this, &ApplicationSettings::exitConfirmationChanged, this, &ApplicationSettings::notifyExitConfirmationChanged);
-    connect(this, &ApplicationSettings::wordsetChanged, this, &ApplicationSettings::notifyWordsetChanged);
     connect(this, &ApplicationSettings::useWordsetChanged, this, &ApplicationSettings::notifyUseWordsetChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
@@ -215,7 +205,6 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(EXIT_CONFIRMATION, m_exitConfirmation);
-    m_config.setValue(WORDSET, m_wordset);
     m_config.setValue(USE_WORDSET, m_useWordset);
     m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
     m_config.setValue(NO_CURSOR, m_noCursor);
@@ -381,18 +370,6 @@ void ApplicationSettings::notifySectionVisibleChanged()
 void ApplicationSettings::notifyExitConfirmationChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, EXIT_CONFIRMATION, m_exitConfirmation);
-}
-
-void ApplicationSettings::notifyWordsetChanged()
-{
-    if (!m_wordset.isEmpty() && DownloadManager::getInstance()->haveLocalResource(m_wordset) && !DownloadManager::getInstance()->isDataRegistered("words-webp")) {
-        // words-webp.rcc is there -> register old file first
-        // then try to update in the background
-        DownloadManager::getInstance()->updateResource(GCompris::ResourceType::WORDSET, {});
-    }
-
-    updateValueInConfig(GENERAL_GROUP_KEY, WORDSET, m_wordset);
-    qDebug() << "notifyWordset: " << m_wordset;
 }
 
 void ApplicationSettings::notifyUseWordsetChanged()

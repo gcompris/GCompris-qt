@@ -293,10 +293,6 @@ Item {
             onDownloadFinished: wordsetBox.updateStatus()
         }
 
-        /* Technically wordset config is a string that holds the wordset name or '' for the
-        * internal wordset. But as we support only internal and words its best to show the
-        * user a boolean choice.
-        */
         GCDialogCheckBox {
             id: wordsetBox
             width: dialogConfig.contentWidth
@@ -304,15 +300,6 @@ Item {
             text: checked ? qsTr("Full word image set is installed") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
             enabled: false
-            onCheckedChanged: {
-                if(checked) {
-                    wordset = "data2/words/words-webp.rcc";
-                    useWordset = true;
-                } else {
-                    wordset = "";
-                    useWordset = false;
-                }
-            }
 
             function updateStatus() {
                 checked = DownloadManager.isDataRegistered("words-webp")
@@ -451,7 +438,6 @@ Item {
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
     property bool exitConfirmation: ApplicationSettings.exitConfirmation
-    property string wordset: ApplicationSettings.wordset
     property bool useWordset: ApplicationSettings.useWordset
     property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
     property var allBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
@@ -498,8 +484,6 @@ Item {
 
         exitConfirmation = ApplicationSettings.exitConfirmation
         exitConfirmationBox.checked = exitConfirmation
-
-        wordset = useWordset ? ApplicationSettings.wordset : ""
 
         baseFontSize = ApplicationSettings.baseFontSize
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
@@ -549,7 +533,6 @@ Item {
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
         ApplicationSettings.exitConfirmation = exitConfirmation
-        ApplicationSettings.wordset = wordset
         ApplicationSettings.useWordset = useWordset
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
@@ -646,7 +629,6 @@ Item {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
         (ApplicationSettings.exitConfirmation != exitConfirmation) ||
-        (ApplicationSettings.wordset != wordset) ||
         (ApplicationSettings.useWordset != useWordset) ||
         (ApplicationSettings.font = fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||

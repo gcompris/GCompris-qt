@@ -59,7 +59,7 @@ namespace GCompris {
  * path</em>
  *
  * <tt>\<path/to/my/resource.rcc\></tt>
- * (e.g. <tt>data2/voices-ogg/voices-en.rcc></tt>)
+ * (e.g. <tt>data3/voices-ogg/voices-en.rcc></tt>)
  *
  * Downloading and verification of local files is controlled by MD5
  * checksums that are expected to be stored in @c Contents files in each
