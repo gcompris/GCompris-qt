@@ -296,7 +296,7 @@ Item {
         GCDialogCheckBox {
             id: wordsetBox
             width: dialogConfig.contentWidth
-            checked: useWordset && DownloadManager.isDataRegistered("words-webp")
+            checked: DownloadManager.isDataRegistered("words-webp")
             text: checked ? qsTr("Full word image set is installed") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
             enabled: false
@@ -438,7 +438,6 @@ Item {
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
     property bool exitConfirmation: ApplicationSettings.exitConfirmation
-    property bool useWordset: ApplicationSettings.useWordset
     property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
     property var allBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
@@ -533,7 +532,6 @@ Item {
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
         ApplicationSettings.exitConfirmation = exitConfirmation
-        ApplicationSettings.useWordset = useWordset
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
@@ -629,7 +627,6 @@ Item {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
         (ApplicationSettings.exitConfirmation != exitConfirmation) ||
-        (ApplicationSettings.useWordset != useWordset) ||
         (ApplicationSettings.font = fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||

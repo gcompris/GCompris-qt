@@ -229,7 +229,7 @@ Window {
             // words-webp.rcc is there -> register old file first
             // then try to update in the background
             DownloadManager.updateResource(GCompris.WORDSET, {});
-        } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
+        } else {
             // words-webp.rcc has not been downloaded yet -> ask for download
             wordSetDownloaded = false;
         }
@@ -344,10 +344,7 @@ Window {
             DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
 
             checkWordset();
-
-            if(ApplicationSettings.useWordset) {
-                DownloadManager.updateResource(GCompris.WORDSET, {});
-            }
+            DownloadManager.updateResource(GCompris.WORDSET, {});
 
             checkBackgroundMusic();
             DownloadManager.updateResource(GCompris.BACKGROUND_MUSIC, {});
