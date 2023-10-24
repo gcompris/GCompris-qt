@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-09-27 14:19+0200\n"
+"PO-Revision-Date: 2023-10-17 23:31+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -823,12 +823,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Impara la tavola della moltiplicazione del 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Tavole della moltiplicazione da 1 a 10."
+msgstr "Esercizi con le tavole della moltiplicazione da 1 a 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -920,12 +917,9 @@ msgid "Learn division table of 10."
 msgstr "Impara la tabella della divisione di 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Tavole della moltiplicazione da 1 a 10."
+msgstr "Esercizi con le tavole della divisione da 1 a 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1021,28 +1015,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Impara la tavola della sottrazione di 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Sottrai i numeri decimali fino a 1."
+msgstr "Sottrazioni con numeri fino a 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Sottrai i numeri decimali fino a 1."
+msgstr "Sottrazioni con numeri fino a 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Sottrai i numeri decimali fino a 1."
+msgstr "Sottrazioni con numeri fino a 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1135,28 +1120,19 @@ msgid "Learn addition table of 10."
 msgstr "Impara la tavola dell'addizione di 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Somma i numeri decimali fino a 1."
+msgstr "Addizioni con numeri fino a 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Somma i numeri decimali fino a 1."
+msgstr "Addizioni con numeri fino a 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Aggiungi stelle fino a 10."
+msgstr "Addizioni con risultato fino a 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -26582,6 +26558,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Specifica su quale livello iniziare l'attività. Utilizzato solo quando viene "
+"usata l'opzione --launch."
 
 #: core/main.qml:280
 msgctxt "main|"
