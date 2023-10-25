@@ -563,8 +563,8 @@ msgstr ""
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
-"Mou la nau espacial per a evitar colpejar els planetes i arribar a l'estació "
-"espacial."
+"Mou la nau espacial per a evitar colpejar els planetes i arribar fins a "
+"l'estació espacial."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1086,7 +1086,8 @@ msgstr "Troba la posició correcta"
 msgid ""
 "Arrange the instructions and traverse the correct path to reach the fish."
 msgstr ""
-"Organitza les instruccions i recorre el camí correcte fins a arribar al peix."
+"Organitza les instruccions i recorre el camí correcte per a arribar fins el "
+"peix."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
 #: activities/railroad/ActivityInfo.qml:20
