@@ -108,6 +108,17 @@ Item {
             label: qsTr("Language selector")
         }
 
+        GCDialogCheckBox {
+            id: enableAutomaticDownloadsBox
+            width: dialogConfig.contentWidth
+            checked: isAutomaticDownloadsEnabled
+            text: qsTr("Enable automatic downloads/updates of external assets")
+            visible: ApplicationInfo.isDownloadAllowed
+            onCheckedChanged: {
+                isAutomaticDownloadsEnabled = checked;
+            }
+        }
+
         Flow {
             id: voicesRow
             width: dialogConfig.contentWidth
@@ -275,51 +286,6 @@ Item {
             wheelEnabled: false
         }
 
-        GCDialogCheckBox {
-            id: enableFullscreenBox
-            width: dialogConfig.contentWidth
-            text: qsTr("Fullscreen")
-            checked: isFullscreen
-            onCheckedChanged: {
-                isFullscreen = checked;
-            }
-            visible: !ApplicationInfo.isMobile
-        }
-
-        GCDialogCheckBox {
-            id: enableVirtualKeyboardBox
-            width: dialogConfig.contentWidth
-            text: qsTr("Virtual Keyboard")
-            checked: isVirtualKeyboard
-            onCheckedChanged: {
-                isVirtualKeyboard = checked;
-            }
-        }
-
-        GCDialogCheckBox {
-            id: enableAutomaticDownloadsBox
-            width: dialogConfig.contentWidth
-            checked: isAutomaticDownloadsEnabled
-            text: qsTr("Enable automatic downloads/updates of sound files")
-            visible: ApplicationInfo.isDownloadAllowed
-            onCheckedChanged: {
-                isAutomaticDownloadsEnabled = checked;
-            }
-        }
-
-        GCButton {
-            id: wordsetButton
-            height: 30 * ApplicationInfo.ratio
-            width: dialogConfig.contentWidth
-            visible: ApplicationInfo.isDownloadAllowed
-            text: qsTr("Download full word image set")
-
-            onClicked: {
-                if(DownloadManager.downloadResource("data2/words/words-webp.rcc"))
-                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-            }
-        }
-
         Connections {
             target: DownloadManager
             onDownloadFinished: wordsetBox.updateStatus()
@@ -348,6 +314,40 @@ Item {
 
             function updateStatus() {
                 checked = DownloadManager.isDataRegistered("words-webp")
+            }
+        }
+
+        GCButton {
+            id: wordsetButton
+            height: 30 * ApplicationInfo.ratio
+            width: dialogConfig.contentWidth
+            visible: ApplicationInfo.isDownloadAllowed
+            text: qsTr("Download full word image set")
+
+            onClicked: {
+                if(DownloadManager.downloadResource("data2/words/words-webp.rcc"))
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+            }
+        }
+
+        GCDialogCheckBox {
+            id: enableFullscreenBox
+            width: dialogConfig.contentWidth
+            text: qsTr("Fullscreen")
+            checked: isFullscreen
+            onCheckedChanged: {
+                isFullscreen = checked;
+            }
+            visible: !ApplicationInfo.isMobile
+        }
+
+        GCDialogCheckBox {
+            id: enableVirtualKeyboardBox
+            width: dialogConfig.contentWidth
+            text: qsTr("Virtual Keyboard")
+            checked: isVirtualKeyboard
+            onCheckedChanged: {
+                isVirtualKeyboard = checked;
             }
         }
 
