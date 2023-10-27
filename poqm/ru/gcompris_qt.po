@@ -18316,101 +18316,104 @@ msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Выбор языка"
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of external assets"
+msgstr "Автоматически загружать и обновлять звуковые файлы"
+
+#: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Озвучивание на выбранном языке"
 
-#: activities/menu/ConfigurationItem.qml:142
+#: activities/menu/ConfigurationItem.qml:153
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Проверить обновления"
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Загрузить"
 
-#: activities/menu/ConfigurationItem.qml:158
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Включить воспроизведение голоса"
 
-#: activities/menu/ConfigurationItem.qml:168
+#: activities/menu/ConfigurationItem.qml:179
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Включить звуковые эффекты"
 
-#: activities/menu/ConfigurationItem.qml:177
+#: activities/menu/ConfigurationItem.qml:188
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Громкость звуковых эффектов"
 
-#: activities/menu/ConfigurationItem.qml:198
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Загрузить фоновую музыку"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:220
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Активировать фоновую музыку"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Фоновая музыка"
 
-#: activities/menu/ConfigurationItem.qml:235
+#: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Не воспроизводится"
 
-#: activities/menu/ConfigurationItem.qml:237
+#: activities/menu/ConfigurationItem.qml:248
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Название: %1 Исполнитель: %2"
 
-#: activities/menu/ConfigurationItem.qml:239
+#: activities/menu/ConfigurationItem.qml:250
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Вступительная музыка"
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Громкость фоновой музыки"
 
-#: activities/menu/ConfigurationItem.qml:281
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Fullscreen"
-msgstr "Во весь экран"
+msgid "Full word image set is installed"
+msgstr "Установлен полный набор картинок со словами"
 
-#: activities/menu/ConfigurationItem.qml:292
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Virtual Keyboard"
-msgstr "Виртуальная клавиатура"
+msgid "Full word image set is not installed"
+msgstr "Полный набор картинок к словам не установлен"
 
-#: activities/menu/ConfigurationItem.qml:303
-msgctxt "ConfigurationItem|"
-msgid "Enable automatic downloads/updates of sound files"
-msgstr "Автоматически загружать и обновлять звуковые файлы"
-
-#: activities/menu/ConfigurationItem.qml:315
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Загружать полный набор картинок к словам"
 
 #: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is installed"
-msgstr "Установлен полный набор картинок со словами"
+msgid "Fullscreen"
+msgstr "Во весь экран"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is not installed"
-msgstr "Полный набор картинок к словам не установлен"
+msgid "Virtual Keyboard"
+msgstr "Виртуальная клавиатура"
 
 #: activities/menu/ConfigurationItem.qml:358
 msgctxt "ConfigurationItem|"
@@ -26467,8 +26470,13 @@ msgid "Background music"
 msgstr "Фоновая музыка"
 
 #: core/main.qml:287
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
-msgid "Do you want to download the following external assets?"
+msgid ""
+"Do you want to automatically download and update the following external "
+"assets when starting GCompris?"
 msgstr "Загрузить следующие внешние ресурсы?"
 
 #: core/main.qml:292
@@ -26481,17 +26489,17 @@ msgctxt "main|"
 msgid "No"
 msgstr "Нет"
 
-#: core/main.qml:327
+#: core/main.qml:329
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Добро пожаловать в GCompris!"
 
-#: core/main.qml:328
+#: core/main.qml:330
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Ты запустил GCompris в первый раз."
 
-#: core/main.qml:329
+#: core/main.qml:331
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26502,35 +26510,35 @@ msgstr ""
 "языка) и установлены все необходимые звуковые файлы. Это можно сделать в "
 "меню настройки."
 
-#: core/main.qml:331
+#: core/main.qml:333
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Удачи!"
 
-#: core/main.qml:333
+#: core/main.qml:335
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Твой текущий язык — %1 (%2)."
 
-#: core/main.qml:367
+#: core/main.qml:371
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris был обновлён! Вот изменения:<br/>"
 
-#: core/main.qml:395
+#: core/main.qml:399
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:396
+#: core/main.qml:400
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:397
+#: core/main.qml:401
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"

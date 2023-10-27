@@ -19187,102 +19187,105 @@ msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Roghnú teanga"
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of external assets"
+msgstr ""
+"Cumasaigh íoslódálacha/nuashonrúcháin go huathoibríoch ar chomhaid fuaime"
+
+#: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Guthanna áitiúla"
 
-#: activities/menu/ConfigurationItem.qml:142
+#: activities/menu/ConfigurationItem.qml:153
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Lorg nuashonruithe"
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Íosluchtú"
 
-#: activities/menu/ConfigurationItem.qml:158
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Cumasaigh clos-guthanna"
 
-#: activities/menu/ConfigurationItem.qml:168
+#: activities/menu/ConfigurationItem.qml:179
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Cumasaigh clos-éifeachtaí"
 
-#: activities/menu/ConfigurationItem.qml:177
+#: activities/menu/ConfigurationItem.qml:188
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Airde Éifeachtaí Fuaime"
 
-#: activities/menu/ConfigurationItem.qml:198
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Íoslódáil ceol cúlra"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:220
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Seinn ceol cúlra"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "ceol cúlra"
 
-#: activities/menu/ConfigurationItem.qml:235
+#: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Gan seinm "
 
-#: activities/menu/ConfigurationItem.qml:237
+#: activities/menu/ConfigurationItem.qml:248
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Teideal: %1  Ealaíontóir: %2"
 
-#: activities/menu/ConfigurationItem.qml:239
+#: activities/menu/ConfigurationItem.qml:250
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Ceol intreorach "
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Fuaim an cheoil chúlra"
 
-#: activities/menu/ConfigurationItem.qml:281
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Fullscreen"
-msgstr "Lánscáileán"
-
-#: activities/menu/ConfigurationItem.qml:292
-msgctxt "ConfigurationItem|"
-msgid "Virtual Keyboard"
-msgstr "Méarchlár Fíorúil"
-
-#: activities/menu/ConfigurationItem.qml:303
-msgctxt "ConfigurationItem|"
-msgid "Enable automatic downloads/updates of sound files"
+msgid "Full word image set is installed"
 msgstr ""
-"Cumasaigh íoslódálacha/nuashonrúcháin go huathoibríoch ar chomhaid fuaime"
 
-#: activities/menu/ConfigurationItem.qml:315
+#: activities/menu/ConfigurationItem.qml:302
+msgctxt "ConfigurationItem|"
+msgid "Full word image set is not installed"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Íoslódáil tacar iomlán focal agus íomhánna"
 
 #: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is installed"
-msgstr ""
+msgid "Fullscreen"
+msgstr "Lánscáileán"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is not installed"
-msgstr ""
+msgid "Virtual Keyboard"
+msgstr "Méarchlár Fíorúil"
 
 #: activities/menu/ConfigurationItem.qml:358
 msgctxt "ConfigurationItem|"
@@ -27553,8 +27556,13 @@ msgid "Background music"
 msgstr "ceol cúlra"
 
 #: core/main.qml:287
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
-msgid "Do you want to download the following external assets?"
+msgid ""
+"Do you want to automatically download and update the following external "
+"assets when starting GCompris?"
 msgstr "Ar mhaith leat na sócmhainní seachtrach a leanas a íoslódáil?"
 
 #: core/main.qml:292
@@ -27567,17 +27575,17 @@ msgctxt "main|"
 msgid "No"
 msgstr "Níor mhaith"
 
-#: core/main.qml:327
+#: core/main.qml:329
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Fáilte chuig GCompris!"
 
-#: core/main.qml:328
+#: core/main.qml:330
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Tá tú ag rith GCompris don chéad uair."
 
-#: core/main.qml:329
+#: core/main.qml:331
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27588,35 +27596,35 @@ msgstr ""
 "mar is ceart agat, chomh háirithe an teanga agus na comhaid fhuaime. Is "
 "féidir é seo a dhéanamh sa Dialóg Sainroghanna."
 
-#: core/main.qml:331
+#: core/main.qml:333
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Bain sult as!"
 
-#: core/main.qml:333
+#: core/main.qml:335
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Is é %1 (%2) an teanga ag an bhomaite."
 
-#: core/main.qml:367
+#: core/main.qml:371
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Nuashonraíodh GCompris! Seo iad na hathraithe nua:<br/>"
 
-#: core/main.qml:395
+#: core/main.qml:399
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:396
+#: core/main.qml:400
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:397
+#: core/main.qml:401
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"

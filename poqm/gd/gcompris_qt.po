@@ -18887,91 +18887,91 @@ msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:115
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of external assets"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:142
+#: activities/menu/ConfigurationItem.qml:153
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:158
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:168
+#: activities/menu/ConfigurationItem.qml:179
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:177
+#: activities/menu/ConfigurationItem.qml:188
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:198
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:220
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:235
+#: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:237
+#: activities/menu/ConfigurationItem.qml:248
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:239
+#: activities/menu/ConfigurationItem.qml:250
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:281
+#: activities/menu/ConfigurationItem.qml:302
 #, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Fullscreen"
+#| msgctxt "instruments|"
+#| msgid "Find the triangle"
 msgctxt "ConfigurationItem|"
-msgid "Fullscreen"
-msgstr "Làn-sgrìn"
+msgid "Full word image set is installed"
+msgstr "Lorg an triantan"
 
-#: activities/menu/ConfigurationItem.qml:292
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Virtual Keyboard"
+msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:303
-msgctxt "ConfigurationItem|"
-msgid "Enable automatic downloads/updates of sound files"
-msgstr ""
-
-#: activities/menu/ConfigurationItem.qml:315
+#: activities/menu/ConfigurationItem.qml:325
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the triangle"
@@ -18981,15 +18981,15 @@ msgstr "Lorg an triantan"
 
 #: activities/menu/ConfigurationItem.qml:336
 #, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the triangle"
+#| msgctxt "DialogConfig|"
+#| msgid "Fullscreen"
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is installed"
-msgstr "Lorg an triantan"
+msgid "Fullscreen"
+msgstr "Làn-sgrìn"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is not installed"
+msgid "Virtual Keyboard"
 msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:358
@@ -27075,7 +27075,9 @@ msgstr ""
 
 #: core/main.qml:287
 msgctxt "main|"
-msgid "Do you want to download the following external assets?"
+msgid ""
+"Do you want to automatically download and update the following external "
+"assets when starting GCompris?"
 msgstr ""
 
 #: core/main.qml:292
@@ -27088,17 +27090,17 @@ msgctxt "main|"
 msgid "No"
 msgstr ""
 
-#: core/main.qml:327
+#: core/main.qml:329
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr ""
 
-#: core/main.qml:328
+#: core/main.qml:330
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr ""
 
-#: core/main.qml:329
+#: core/main.qml:331
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27106,35 +27108,35 @@ msgid ""
 "can do this in the Preferences Dialog."
 msgstr ""
 
-#: core/main.qml:331
+#: core/main.qml:333
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr ""
 
-#: core/main.qml:333
+#: core/main.qml:335
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr ""
 
-#: core/main.qml:367
+#: core/main.qml:371
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr ""
 
-#: core/main.qml:395
+#: core/main.qml:399
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:396
+#: core/main.qml:400
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:397
+#: core/main.qml:401
 msgctxt "main|"
 msgid "Cancel"
 msgstr ""

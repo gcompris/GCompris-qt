@@ -18124,101 +18124,104 @@ msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Dil seçimi"
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of external assets"
+msgstr "Ses dosyalarının otomatik indirilmesini/güncellenmesini etkinleştir"
+
+#: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Yerelleştirilmiş sesler"
 
-#: activities/menu/ConfigurationItem.qml:142
+#: activities/menu/ConfigurationItem.qml:153
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Güncellemeleri denetle"
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "İndir"
 
-#: activities/menu/ConfigurationItem.qml:158
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Sesi etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:168
+#: activities/menu/ConfigurationItem.qml:179
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Ses efektlerini etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:177
+#: activities/menu/ConfigurationItem.qml:188
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Ses efektleri ses düzeyi"
 
-#: activities/menu/ConfigurationItem.qml:198
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Arka plan müziğini indir"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:220
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Arka plan müziğini etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Arka Plan Müziği"
 
-#: activities/menu/ConfigurationItem.qml:235
+#: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Çalmıyor"
 
-#: activities/menu/ConfigurationItem.qml:237
+#: activities/menu/ConfigurationItem.qml:248
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Başlık: %1 Sanatçı: %2"
 
-#: activities/menu/ConfigurationItem.qml:239
+#: activities/menu/ConfigurationItem.qml:250
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Giriş müziği"
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Arka plan müziği ses düzeyi"
 
-#: activities/menu/ConfigurationItem.qml:281
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Fullscreen"
-msgstr "Tam Ekran"
+msgid "Full word image set is installed"
+msgstr "Tam sözcük görsel kümesi kurulu"
 
-#: activities/menu/ConfigurationItem.qml:292
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Virtual Keyboard"
-msgstr "Sanal Klavye"
+msgid "Full word image set is not installed"
+msgstr "Tam sözcük görsel kümesi kurulu değil"
 
-#: activities/menu/ConfigurationItem.qml:303
-msgctxt "ConfigurationItem|"
-msgid "Enable automatic downloads/updates of sound files"
-msgstr "Ses dosyalarının otomatik indirilmesini/güncellenmesini etkinleştir"
-
-#: activities/menu/ConfigurationItem.qml:315
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Tam sözcük görsel kümesini indir"
 
 #: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is installed"
-msgstr "Tam sözcük görsel kümesi kurulu"
+msgid "Fullscreen"
+msgstr "Tam Ekran"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is not installed"
-msgstr "Tam sözcük görsel kümesi kurulu değil"
+msgid "Virtual Keyboard"
+msgstr "Sanal Klavye"
 
 #: activities/menu/ConfigurationItem.qml:358
 msgctxt "ConfigurationItem|"
@@ -26186,8 +26189,13 @@ msgid "Background music"
 msgstr "Arka plan müziği"
 
 #: core/main.qml:287
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
-msgid "Do you want to download the following external assets?"
+msgid ""
+"Do you want to automatically download and update the following external "
+"assets when starting GCompris?"
 msgstr "Aşağıdaki verileri şimdi indirmek istiyor musun?"
 
 #: core/main.qml:292
@@ -26200,17 +26208,17 @@ msgctxt "main|"
 msgid "No"
 msgstr "Hayır"
 
-#: core/main.qml:327
+#: core/main.qml:329
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "GCompris'e Hoş Geldin!"
 
-#: core/main.qml:328
+#: core/main.qml:330
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "GCompris'i ilk defa çalıştırıyorsun."
 
-#: core/main.qml:329
+#: core/main.qml:331
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26221,23 +26229,23 @@ msgstr ""
 "tüm dosyaların kurulu olduğunu doğrulamalısın. Bunu Tercihler Penceresinden "
 "yapabilirsin."
 
-#: core/main.qml:331
+#: core/main.qml:333
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "İyi Eğlenceler!"
 
-#: core/main.qml:333
+#: core/main.qml:335
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Şu anki dil tercihin %1 (%2)."
 
-#: core/main.qml:367
+#: core/main.qml:371
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris güncellendi! İşte yeniliklerin bir listesi: <br/>"
 
-#: core/main.qml:395
+#: core/main.qml:399
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -26246,12 +26254,12 @@ msgstr ""
 "Bazı etkinlikler için yeni veri kümeleri kullanılabilir. Onların veri kümesi "
 "seçimlerini sıfırlamak istiyor musunuz?"
 
-#: core/main.qml:396
+#: core/main.qml:400
 msgctxt "main|"
 msgid "Apply"
 msgstr "Uygula"
 
-#: core/main.qml:397
+#: core/main.qml:401
 msgctxt "main|"
 msgid "Cancel"
 msgstr "İptal"

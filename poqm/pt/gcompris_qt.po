@@ -19119,101 +19119,104 @@ msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Selector de línguas"
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of external assets"
+msgstr "Activar as actualizações automáticas dos ficheiros de som"
+
+#: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Vozes traduzidas"
 
-#: activities/menu/ConfigurationItem.qml:142
+#: activities/menu/ConfigurationItem.qml:153
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Verificar as actualizações"
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Transferir"
 
-#: activities/menu/ConfigurationItem.qml:158
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Activar as vozes por áudio"
 
-#: activities/menu/ConfigurationItem.qml:168
+#: activities/menu/ConfigurationItem.qml:179
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Activar os efeitos de áudio"
 
-#: activities/menu/ConfigurationItem.qml:177
+#: activities/menu/ConfigurationItem.qml:188
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Volume dos efeitos de áudio"
 
-#: activities/menu/ConfigurationItem.qml:198
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Obter a música de fundo"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:220
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Activar a música de fundo"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Música de Fundo"
 
-#: activities/menu/ConfigurationItem.qml:235
+#: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Nada a tocar"
 
-#: activities/menu/ConfigurationItem.qml:237
+#: activities/menu/ConfigurationItem.qml:248
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Título: %1  Artista: %2"
 
-#: activities/menu/ConfigurationItem.qml:239
+#: activities/menu/ConfigurationItem.qml:250
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Música introdutória"
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Volume da música de fundo"
 
-#: activities/menu/ConfigurationItem.qml:281
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Fullscreen"
-msgstr "Ecrã completo"
+msgid "Full word image set is installed"
+msgstr "O conjunto completo de imagens das palavras está instalado"
 
-#: activities/menu/ConfigurationItem.qml:292
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Virtual Keyboard"
-msgstr "Teclado Virtual"
+msgid "Full word image set is not installed"
+msgstr "O conjunto completo de imagens das palavras não está instalado"
 
-#: activities/menu/ConfigurationItem.qml:303
-msgctxt "ConfigurationItem|"
-msgid "Enable automatic downloads/updates of sound files"
-msgstr "Activar as actualizações automáticas dos ficheiros de som"
-
-#: activities/menu/ConfigurationItem.qml:315
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Obter o conjunto completo de imagens das palavras"
 
 #: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is installed"
-msgstr "O conjunto completo de imagens das palavras está instalado"
+msgid "Fullscreen"
+msgstr "Ecrã completo"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is not installed"
-msgstr "O conjunto completo de imagens das palavras não está instalado"
+msgid "Virtual Keyboard"
+msgstr "Teclado Virtual"
 
 #: activities/menu/ConfigurationItem.qml:358
 msgctxt "ConfigurationItem|"
@@ -27258,8 +27261,13 @@ msgid "Background music"
 msgstr "Música de fundo"
 
 #: core/main.qml:287
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
-msgid "Do you want to download the following external assets?"
+msgid ""
+"Do you want to automatically download and update the following external "
+"assets when starting GCompris?"
 msgstr "Deseja transferir os seguintes itens externos?"
 
 #: core/main.qml:292
@@ -27272,17 +27280,17 @@ msgctxt "main|"
 msgid "No"
 msgstr "Não"
 
-#: core/main.qml:327
+#: core/main.qml:329
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Bem-vindo ao GCompris!"
 
-#: core/main.qml:328
+#: core/main.qml:330
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Está a correr o GCompris pela primeira vez."
 
-#: core/main.qml:329
+#: core/main.qml:331
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27294,35 +27302,35 @@ msgstr ""
 "específicos da língua estão instalados. Podê-lo-á fazer na janela de "
 "Preferências."
 
-#: core/main.qml:331
+#: core/main.qml:333
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Divirta-se!"
 
-#: core/main.qml:333
+#: core/main.qml:335
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "A sua língua actual é '%1' (%2)."
 
-#: core/main.qml:367
+#: core/main.qml:371
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "O GCompris foi actualizado! Aqui estão as novas alterações:<br/>"
 
-#: core/main.qml:395
+#: core/main.qml:399
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:396
+#: core/main.qml:400
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:397
+#: core/main.qml:401
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"

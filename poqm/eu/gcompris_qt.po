@@ -18245,101 +18245,104 @@ msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Hizkuntza hautatzailea"
 
-#: activities/menu/ConfigurationItem.qml:133
+#: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of external assets"
+msgstr "Gaitu soinu fitxategien zama-jaiste/eguneratze automatikoa"
+
+#: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Itzulitako ahotsak"
 
-#: activities/menu/ConfigurationItem.qml:142
+#: activities/menu/ConfigurationItem.qml:153
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Eguneratzeak dauden egiaztatu"
 
-#: activities/menu/ConfigurationItem.qml:143
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Zama-jaitsi"
 
-#: activities/menu/ConfigurationItem.qml:158
+#: activities/menu/ConfigurationItem.qml:169
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Gaitu audio ahotsak"
 
-#: activities/menu/ConfigurationItem.qml:168
+#: activities/menu/ConfigurationItem.qml:179
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Gaitu audio efektuak"
 
-#: activities/menu/ConfigurationItem.qml:177
+#: activities/menu/ConfigurationItem.qml:188
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Audio efektuen bolumena"
 
-#: activities/menu/ConfigurationItem.qml:198
+#: activities/menu/ConfigurationItem.qml:209
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Zama-jaitsi hondoko musika"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:220
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Gaitu hondoko musika"
 
-#: activities/menu/ConfigurationItem.qml:218
+#: activities/menu/ConfigurationItem.qml:229
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Hondoko musika"
 
-#: activities/menu/ConfigurationItem.qml:235
+#: activities/menu/ConfigurationItem.qml:246
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Ez da jotzen ari"
 
-#: activities/menu/ConfigurationItem.qml:237
+#: activities/menu/ConfigurationItem.qml:248
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Titulua: %1  Artista: %2"
 
-#: activities/menu/ConfigurationItem.qml:239
+#: activities/menu/ConfigurationItem.qml:250
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Sarrerako musika"
 
-#: activities/menu/ConfigurationItem.qml:262
+#: activities/menu/ConfigurationItem.qml:273
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Hondoko musikaren bolumena"
 
-#: activities/menu/ConfigurationItem.qml:281
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Fullscreen"
-msgstr "Pantaila-betea"
+msgid "Full word image set is installed"
+msgstr "Hitzen irudi multzo osoa instalatuta dago"
 
-#: activities/menu/ConfigurationItem.qml:292
+#: activities/menu/ConfigurationItem.qml:302
 msgctxt "ConfigurationItem|"
-msgid "Virtual Keyboard"
-msgstr "Alegiazko teklatua"
+msgid "Full word image set is not installed"
+msgstr "Hitzen irudi multzo osoa ez dago instalatuta"
 
-#: activities/menu/ConfigurationItem.qml:303
-msgctxt "ConfigurationItem|"
-msgid "Enable automatic downloads/updates of sound files"
-msgstr "Gaitu soinu fitxategien zama-jaiste/eguneratze automatikoa"
-
-#: activities/menu/ConfigurationItem.qml:315
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Zama-jaitsi hitzen irudi multzo osoa"
 
 #: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is installed"
-msgstr "Hitzen irudi multzo osoa instalatuta dago"
+msgid "Fullscreen"
+msgstr "Pantaila-betea"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
-msgid "Full word image set is not installed"
-msgstr "Hitzen irudi multzo osoa ez dago instalatuta"
+msgid "Virtual Keyboard"
+msgstr "Alegiazko teklatua"
 
 #: activities/menu/ConfigurationItem.qml:358
 msgctxt "ConfigurationItem|"
@@ -26375,8 +26378,13 @@ msgid "Background music"
 msgstr "Hondoko musika"
 
 #: core/main.qml:287
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
-msgid "Do you want to download the following external assets?"
+msgid ""
+"Do you want to automatically download and update the following external "
+"assets when starting GCompris?"
 msgstr "Ondoko kanpoko baliabideak zama-jaitsi nahi dituzu?"
 
 #: core/main.qml:292
@@ -26389,17 +26397,17 @@ msgctxt "main|"
 msgid "No"
 msgstr "Ez"
 
-#: core/main.qml:327
+#: core/main.qml:329
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Ongietorri GCompris-era!"
 
-#: core/main.qml:328
+#: core/main.qml:330
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "GCompris aurreneko aldiz ibiltzen ari zara."
 
-#: core/main.qml:329
+#: core/main.qml:331
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26411,23 +26419,23 @@ msgstr ""
 "guztiak instalatuta daudela. Hori egin dezakezu Hobespenak Elkarrizketa-"
 "koadroan."
 
-#: core/main.qml:331
+#: core/main.qml:333
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Goza ezazu!"
 
-#: core/main.qml:333
+#: core/main.qml:335
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Zure uneko hizkuntza %1 (%2) da."
 
-#: core/main.qml:367
+#: core/main.qml:371
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris eguneratu da! Hona hemen aldaketa berriak:<br/>"
 
-#: core/main.qml:395
+#: core/main.qml:399
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -26436,12 +26444,12 @@ msgstr ""
 "Jarduera batzuek datu-multzo berriak dituzte. Haien datu-multzoen hautaketa "
 "berrezarri nahi duzu?"
 
-#: core/main.qml:396
+#: core/main.qml:400
 msgctxt "main|"
 msgid "Apply"
 msgstr "Aplikatu"
 
-#: core/main.qml:397
+#: core/main.qml:401
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Utzi"
