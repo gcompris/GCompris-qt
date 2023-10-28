@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-10-17 22:22+0200\n"
+"PO-Revision-Date: 2023-10-27 12:17+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -18381,12 +18381,9 @@ msgid "Language selector"
 msgstr "Selector de idioma"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Activar descargas y actualización automática de archivos de sonido"
+msgstr "Activar descargas y actualización automática de recursos externos"
 
 #: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
@@ -26550,14 +26547,13 @@ msgid "Background music"
 msgstr "Música de fondo"
 
 #: core/main.qml:287
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download and update the following external "
 "assets when starting GCompris?"
-msgstr "¿Quieres descargar los siguientes recursos externos?"
+msgstr ""
+"¿Quieres descargar y actualizar automáticamente los siguientes recursos "
+"externos al iniciar GCompris?"
 
 #: core/main.qml:292
 msgctxt "main|"

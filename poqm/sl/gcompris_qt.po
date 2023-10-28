@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-10-16 07:46+0200\n"
+"PO-Revision-Date: 2023-10-27 11:06+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -18136,12 +18136,9 @@ msgid "Language selector"
 msgstr "Izbirnik jezika"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Omogoči samodejne prejeme/posodobitve zvočnih datotek"
+msgstr "Omogoči samodejne prejeme/posodobitve zunanjih sredstev"
 
 #: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
@@ -26168,14 +26165,13 @@ msgid "Background music"
 msgstr "Glasba v ozadju"
 
 #: core/main.qml:287
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download and update the following external "
 "assets when starting GCompris?"
-msgstr "Ali želite prenesti sem naslednja zunanja sredstva?"
+msgstr ""
+"Ali želite ob zagonu GCompris samodejno prenesti in posodobiti naslednja "
+"zunanja sredstva?"
 
 #: core/main.qml:292
 msgctxt "main|"

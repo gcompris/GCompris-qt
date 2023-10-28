@@ -18197,12 +18197,9 @@ msgid "Language selector"
 msgstr "Lingvo-elektilo"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Ebligu aŭtomatajn elŝutojn/ĝisdatigojn de sondosieroj"
+msgstr "Ebligi aŭtomatajn elŝutojn/ĝisdatigojn de eksteraj havaĵoj"
 
 #: activities/menu/ConfigurationItem.qml:144
 msgctxt "ConfigurationItem|"
@@ -26228,13 +26225,16 @@ msgstr "Fona muziko"
 
 #: core/main.qml:287
 #, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
+#| msgid ""
+#| "Do you want to automatically download and update the following external "
+#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download and update the following external "
 "assets when starting GCompris?"
-msgstr "Ĉu vi volas elŝuti la jenajn eksterajn valoraĵojn?"
+msgstr ""
+"Ĉu vi volas aŭtomate elŝuti kaj ĝisdatigi la jenajn eksterajn havaĵojn dum "
+"ekrulo de GCompris?"
 
 #: core/main.qml:292
 msgctxt "main|"
