@@ -2,9 +2,11 @@
 # SPDX-License-Identifier: CC0-1.0
 
 include:
-  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/linux.yml
-  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/linux-static.yml
-  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/freebsd.yml
-  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/flatpak.yml
-  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/reuse-lint.yml
-  - https://invent.kde.org/sysadmin/ci-utilities/raw/master/gitlab-templates/json-validation.yml
+  - project: sysadmin/ci-utilities
+    file:
+      - /gitlab-templates/linux.yml
+      - /gitlab-templates/linux-static.yml
+      - /gitlab-templates/freebsd.yml
+      - /gitlab-templates/flatpak.yml
+      - /gitlab-templates/reuse-lint.yml
+      - /gitlab-templates/json-validation.yml
