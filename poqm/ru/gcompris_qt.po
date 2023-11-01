@@ -19,14 +19,14 @@
 # Anastasiia Iurshina <translater@iurshina.de>, 2018.
 # Victoria Ivanova <ivanova.informatics@gmail.com>, 2019.
 # Alexander Kurachenko <alexander@basealt.ru>, 2019.
-# Olesya Gerasimenko <translation-team@basealt.ru>, 2022.
+# Olesya Gerasimenko <translation-team@basealt.ru>, 2022, 2023.
 # Alexander Yavorsky <kekcuha@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-01-15 13:38+0100\n"
-"Last-Translator: Alexandr Smirnov <office@aleva.at>\n"
-"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"PO-Revision-Date: 2023-10-31 17:14+0300\n"
+"Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
+"Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +35,7 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Language: ru\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1193,7 +1193,7 @@ msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Игра с Туксом. В свой ход нажми на ряд, в которую нужно поместить жетон. "
+"Игра с Туксом. В свой ход нажми на ряд, в который нужно поместить жетон. "
 "Выигрывает игрок, который первым создаст ряд из четырёх своих жетонов."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
@@ -1286,7 +1286,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the helicopter"
-msgstr "Стрелка: передвижение вертолёта"
+msgstr "Стрелки: передвижение вертолёта"
 
 #: activities/alphabet-sequence/AlphabetSequence.qml:18
 msgctxt "AlphabetSequence|"
@@ -1609,8 +1609,8 @@ msgid ""
 "a closed circuit. Wires can be used to connect devices and create the "
 "circuit."
 msgstr ""
-"Путь тока называют цепью. Электрические приборы могут работать только "
-"взамкнутой цепи. Для соединения компонентов и создания цепииспользуются "
+"Путь тока называют цепью. Электрические приборы могут работать только в "
+"замкнутой цепи. Для соединения компонентов и создания цепи используются "
 "соединительные провода."
 
 #: activities/analog_electricity/TutorialDataset.qml:103
@@ -1748,8 +1748,8 @@ msgid ""
 "Electric current intensity or simply current is a flow of electric charge. "
 "One can imagine like a flow of electrons."
 msgstr ""
-"Интенсивность электрического тока или просто ток является "
-"перетокомэлектрического заряда. Его можно представить как поток электронов."
+"Интенсивность электрического тока или просто ток является перетоком "
+"электрического заряда. Его можно представить как поток электронов."
 
 #: activities/analog_electricity/TutorialDataset.qml:178
 msgctxt "TutorialDataset|"
@@ -1775,8 +1775,8 @@ msgid ""
 "The conventional symbol for voltage is V. The unit of measure of voltage is "
 "volt under the International System of Units, which is denoted as V."
 msgstr ""
-"Общепринятое обозначение напряжения — V. Единицей измерения напряжения "
-"вмеждународной системе единиц является вольт. Его обозначают буквой V."
+"Общепринятое обозначение напряжения — V. Единицей измерения напряжения в "
+"международной системе единиц является вольт. Его обозначают буквой V."
 
 #: activities/analog_electricity/TutorialDataset.qml:181
 msgctxt "TutorialDataset|"
@@ -1800,7 +1800,7 @@ msgid ""
 "as Ω."
 msgstr ""
 "Общепринятое обозначение сопротивления — R. Единицей измерения сопротивления "
-"вмеждународной системе единиц является ом. Его обозначают буквой Ω."
+"в международной системе единиц является ом. Его обозначают буквой Ω."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
 msgctxt "TutorialDataset|"
@@ -1808,7 +1808,7 @@ msgid ""
 "Light the bulb so that the bulb glows with 5V using the provided components."
 msgstr ""
 "Зажги лампочку, чтобы она загорелась от напряжения в 5V, используя "
-"предложенныекомпоненты."
+"предложенные компоненты."
 
 #: activities/analog_electricity/TutorialDataset.qml:209
 msgctxt "TutorialDataset|"
@@ -2440,7 +2440,7 @@ msgstr ""
 "выбора инструмента. Нажав на ту же самую ячейку тем же инструментом, можно "
 "снова удалить установку. Все инструменты (кроме инструмента очистки) "
 "добавляют соответствующий элемент в ячейку или извлекают его из неё: первым "
-"щелчком с помощью инструмента можно расположить что-тов пустой ячейке, а "
+"щелчком с помощью инструмента можно расположить что-то в пустой ячейке, а "
 "повторным — убрать добавленный элемент из этой ячейки."
 
 #: activities/balancebox/ActivityInfo.qml:41
@@ -4029,8 +4029,8 @@ msgid ""
 "Draughts&gt;"
 msgstr ""
 "Библиотека для шашек: draughts.js &lt;https://github.com/shubhendusaurabh/"
-"draughts.js&gt;. Инструкция взята из Википедии &lt;https://en.wikipedia.org/"
-"wiki/Draughts&gt; и переведена на русский язык."
+"draughts.js&gt;. Инструкция взята из Википедии: &lt;https://ru.wikipedia.org/"
+"wiki/Шашки&gt;."
 
 #: activities/checkers/checkers.js:75
 msgctxt "checkers|"
@@ -5253,8 +5253,8 @@ msgid ""
 "to validate the answers."
 msgstr ""
 "Выбери пару чисел из списка. Затем выбери правильный символ сравнения для "
-"этой пары. После того как каждая линия содержит по символу, нажми кнопку ОК, "
-"для проверки ответа."
+"этой пары. Когда каждая линия будет содержать символ, нажми кнопку «ОК» для "
+"проверки ответа."
 
 #: activities/comparator/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5262,8 +5262,8 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"Если какие-то из ответов неверны, на соответствующей линии появится крест. "
-"Исправь ошибки и снова нажми кнопку ОК."
+"Если какие-то из ответов неверны, на соответствующей линии появится крестик. "
+"Исправь ошибки и снова нажми кнопку «ОК»."
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -6622,7 +6622,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Click or tap on the blocks to make them disappear."
 msgstr ""
-"Щёлкай кнопкой мыши или касайся блоков на экране, пока они все не исчезнут."
+"Щёлкай кнопкой мыши по блокам или касайся их, пока они все не исчезнут."
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
@@ -6778,8 +6778,8 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
-"Кошка \"мяучит\".  Кошки ценятся людьми за товарищеские отношения и "
-"ихспособность ловить мышей и других грызунов. Они мурлыкают, чтобы выразить "
+"Кошка \"мяучит\". Кошки ценятся людьми за товарищеские отношения и их "
+"способность ловить мышей и других грызунов. Они мурлыкают, чтобы выразить "
 "различные эмоции."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
@@ -7276,10 +7276,10 @@ msgid ""
 "blends the best of the British and Mughal architecture. The Victoria "
 "Memorial hall was built with white Makrana marbles."
 msgstr ""
-"Мемориал Виктории был построен, чтобы увековечить момент расцвета "
-"могуществаБританской империи в Индии. Он являет собой архитектурную "
-"кульминацию города Калькутта и сочетает лучшее из британской и могольской "
-"архитектуры. При постройке мемориала был использован белый мрамор из Макраны."
+"Мемориал Виктории был построен, чтобы увековечить момент расцвета могущества "
+"Британской империи в Индии. Он являет собой архитектурную кульминацию города "
+"Калькутта и сочетает лучшее из британской и могольской архитектуры. При "
+"постройке мемориала был использован белый мрамор из Макраны."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
 #: activities/explore_monuments/resource/board/board2.qml:120
@@ -7688,9 +7688,9 @@ msgid ""
 "throughout the twelfth century and mostly completed by 1181."
 msgstr ""
 "Вормсский собор, также известный как собор Святого Петра — собор в романском "
-"стиле внемецком городе Вормс. Вормсский собор представляет собой строение из "
-"песчаника с отдельными коническими башнями. Он строился в несколько этапов "
-"на протяжении 12-го века и был в основном закончен к 1181 году."
+"стиле в немецком городе Вормс. Вормсский собор представляет собой строение "
+"из песчаника с отдельными коническими башнями. Он строился в несколько "
+"этапов на протяжении 12-го века и был в основном закончен к 1181 году."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
@@ -9441,7 +9441,7 @@ msgstr "Нахождение дробей"
 #: activities/fractions_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Найди правильный числитель и знаменатель представленной дроби."
+msgstr "Найди правильные числитель и знаменатель представленной дроби"
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -14286,8 +14286,8 @@ msgstr ""
 "Брахма велел монахам переложить все 64 диска на другой стержень. Когда эта "
 "задача будет выполнена, наступит конец света. Поэтому головоломка также "
 "известна под названием «башня Брахмы». Придумал ли профессор Люка эту "
-"легенду, доподлинно неизвестно. (Источник: Wikipedia — https://en.wikipedia."
-"org/wiki/Tower_of_hanoi)"
+"легенду, доподлинно неизвестно. (Источник: Википедия — https://ru.wikipedia."
+"org/wiki/Ханойская_башня.)"
 
 #: activities/hanoi_real/HanoiReal.qml:75
 msgctxt "HanoiReal|"
@@ -14645,7 +14645,7 @@ msgstr "Найди арфу"
 #: activities/instruments/instruments.js:124
 msgctxt "instruments|"
 msgid "Find the piano"
-msgstr "Найди фортепиано"
+msgstr "Найди пианино"
 
 #: activities/instruments/instruments.js:40
 #: activities/instruments/instruments.js:87
@@ -14997,7 +14997,7 @@ msgid ""
 "type the text."
 msgstr ""
 "Рассмотри набор слов. Для каждого слова есть изображение, текст и голосовое "
-"сопровождение.<br/>После этого будет предложеновыполнить упражнение по "
+"сопровождение.<br/>После этого будет предложено выполнить упражнение по "
 "распознаванию текста по голосовому сопровождению и изображению, затем только "
 "по голосовому сопровождению, а потом, наконец, упражнение по вводу текста."
 
@@ -15279,8 +15279,8 @@ msgid ""
 "full unit, and each square in it represents one tenth of this unit."
 msgstr ""
 "Показано вычитание двух десятичных чисел. Ниже полосками представлено первое "
-"из чисел. Одна полоска преставляет полное значение, а каждый квадрат в ней — "
-"одну десятую этого значения."
+"из чисел. Одна полоска представляет полное значение, а каждый квадрат в ней "
+"— одну десятую этого значения."
 
 #: activities/learn_decimals/learn_decimals.js:49
 msgctxt "learn_decimals|"
@@ -17531,7 +17531,7 @@ msgid ""
 "the corresponding number names."
 msgstr ""
 "На обратной стороне каждой карточки показано либо число (символ), либо "
-"названиечисла (слово). Тебе необходимо сопоставить числа исоответствующие "
+"название числа (слово). Тебе необходимо сопоставить числа и соответствующие "
 "названия."
 
 #: activities/memory-wordnumber/dataset.js:11
@@ -18380,9 +18380,9 @@ msgid ""
 "pay. If you want to remove a coin or a note, click or tap on it on the upper "
 "screen area."
 msgstr ""
-"Щёлкай по монетам или бумажным банкнотам в нижней части экрана для оплаты "
-"покупки. Чтобы вернуть монету или банкноту, щёлкни по ней в верхней части "
-"экрана."
+"Щёлкай кнопкой мыши по монетам или бумажным банкнотам в нижней части экрана "
+"или касайся их для оплаты покупки. Чтобы вернуть монету или банкноту, щёлкни "
+"по ней или коснись её в верхней части экрана."
 
 #: activities/money/ActivityInfo.qml:26
 #: activities/money_back/ActivityInfo.qml:26
@@ -18548,8 +18548,8 @@ msgid ""
 "letters and digits."
 msgstr ""
 "Тебя либо просят отправить сообщение азбукой Морзе, либо преобразовать "
-"полученноесообщение азбуки Морзе в буквы или цифры. Чтобы подучить азбуку "
-"Морзе, ты можешьвзглянуть на карту перевода, которая содержит код для всех "
+"полученное сообщение азбуки Морзе в буквы или цифры. Чтобы подучить азбуку "
+"Морзе, ты можешь взглянуть на карту перевода, которая содержит код для всех "
 "буквы и цифр."
 
 #: activities/morse_code/FirstScreen.qml:25
@@ -18577,8 +18577,8 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
-"Каждый символ азбуки Морзе представляет собой текстовый символ (букву "
-"илицифру) или знак препинания и представлен уникальной последовательностью "
+"Каждый символ азбуки Морзе представляет собой текстовый символ (букву или "
+"цифру) или знак препинания и представлен уникальной последовательностью "
 "точек и тире. Продолжительность тире в три раза больше продолжительности "
 "точки. Чтобы увеличить скорость обмена данными, код был разработан таким "
 "образом, чтобы самые распространенные буквы имели более короткие "
@@ -18589,7 +18589,7 @@ msgstr ""
 #: activities/morse_code/FirstScreen.qml:90
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr "Когда будешь готов, щёлкни по мне и мы пообщаемся азбукой Морзе."
+msgstr "Когда будешь готов, щёлкни по мне, и мы пообщаемся азбукой Морзе."
 
 #: activities/morse_code/MorseCode.qml:349
 #, qt-format
@@ -18956,7 +18956,7 @@ msgstr "Касайся чисел в правильном порядке"
 #: activities/number_sequence/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on each number in the right order."
-msgstr "Нарисуй рисунок, щёлкая по числам в правильном порядке."
+msgstr "Нарисуй картинку, щёлкая по числам в правильном порядке."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -19891,7 +19891,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn how the piano keyboard works, and how notes are written on a musical "
 "staff."
-msgstr "Тренировка игры на фортепиано по нотам"
+msgstr "Тренировка игры на пианино по нотам"
 
 #. Help goal
 #: activities/piano_composition/ActivityInfo.qml:21
@@ -20254,7 +20254,7 @@ msgstr "Восьмая пауза"
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
 msgid "Piano"
-msgstr "Фортепиано"
+msgstr "Пианино"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -20598,7 +20598,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
 "staff."
-msgstr "Тренировка игры на фортепиано по нотам"
+msgstr "Тренировка игры на пианино по нотам"
 
 #. Help prerequisite
 #: activities/play_piano/ActivityInfo.qml:26
@@ -20633,7 +20633,7 @@ msgstr "Клавиша «Backspace» или «Delete»: отмена"
 #: activities/play_piano/PlayPiano.qml:172
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
-msgstr "Щёлкай по клавишам фортепиано, соответствующим заданным нотам."
+msgstr "Щёлкай по клавишам пианино, соответствующим заданным нотам."
 
 #: activities/play_piano/PlayPiano.qml:279
 msgctxt "PlayPiano|"
@@ -21137,7 +21137,7 @@ msgstr ""
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
-msgstr "Достигнуть рыбы менее чем за %1 инструкций."
+msgstr "Добраться до рыбы менее чем за %1 инструкций."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
@@ -21257,7 +21257,7 @@ msgstr "Горизонтальное чтение"
 #: activities/readingh/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read a list of words and say if a given word is in it."
-msgstr "Прочитай список слов и определи, есть ли среди них данное слово"
+msgstr "Прочитай список слов и определи, есть ли среди них указанное слово"
 
 #. Help goal
 #: activities/readingh/ActivityInfo.qml:20
@@ -21553,8 +21553,8 @@ msgid ""
 "done, click on the OK button or hit the Enter key."
 msgstr ""
 "Щёлкай по костяшке, чтобы показать, сколько льдин нужно преодолеть Туксу на "
-"пути к рыбке. Чтобы уменьшить число на кубике, щёлкай по нему правой кнопкой "
-"мыши. Когда введёшь ответ, щёлкни по кнопке «OK» или нажми клавишу «Ввод»."
+"пути к рыбке. Чтобы уменьшить число, щёлкай по костяшке правой кнопкой мыши. "
+"Когда введёшь ответ, щёлкни по кнопке «OK» или нажми клавишу «Ввод»."
 
 #: activities/reversecount/resource/1/Data.qml:13
 #: activities/reversecount/resource/10/Data.qml:13
@@ -22703,7 +22703,7 @@ msgid ""
 "friends."
 msgstr ""
 "Папа дал Джейсону 17 конфет, чтобы он поровну поделил их между своими "
-"друзьями: 2 мальчикам и 2 девочкам. Помоги ему это сделать!"
+"друзьями: 2 мальчиками и 2 девочками. Помоги ему это сделать!"
 
 #: activities/share/resource/2/Data.qml:236
 msgctxt "Data|"
@@ -24492,8 +24492,8 @@ msgstr ""
 "находятся некоторые символы. Это так называемая «исходная позиция». Тебе "
 "нужно заполнить свободные клетки символами или цифрами так, чтобы в каждой "
 "строке, в каждом столбце и в каждом блоке каждый символ или цифра "
-"встречались только один раз. (Источник &lt;https://en.wikipedia.org/wiki/"
-"Sudoku&gt;.)"
+"встречались только один раз. (Источник: &lt;https://ru.wikipedia.org/wiki/"
+"Судоку&gt;.)"
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -24740,7 +24740,7 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
-"Когда все строки будут заполнены, нажмите кнопку OK, чтобы проверить ответы. "
+"Когда все строки будут заполнены, нажми кнопку «OK», чтобы проверить ответы. "
 "Если какие-то ответы неверны, в соответствующих строках появится крестик. "
 "Чтобы исправить ошибки, нажми на неправильные числа, чтобы удалить их, и "
 "повтори предыдущие шаги."
@@ -24752,8 +24752,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"Составь пары чисел, равных десяти. Выбери номер в списке, затем выбери "
-"пустое место операции, чтобы переместить сюда выбранное число."
+"Составь пары чисел, равных десяти. Выбери число в списке, затем выбери "
+"пустое место операции, чтобы переместить туда выбранное число."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
@@ -24808,11 +24808,11 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
-"Создай пары чисел, равных десяти в каждой скобке. Выбери номер, затем выбери "
-"другой номер той же операции, чтобы поменять их местами. Когда все строки "
+"Создай внутри скобок пары чисел, равные десяти. Выбери число, затем выбери "
+"другое число той же операции, чтобы поменять их местами. Когда все строки "
 "заполнены, нажми кнопку OK, чтобы подтвердить ответы. Если какие-то ответы "
 "неверны, в соответствующих строках появится крестик. Исправь ошибки, затем "
-"снова нажми кнопку OK."
+"снова нажми кнопку «OK»."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
@@ -24861,9 +24861,9 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
-"Разложи дополнения, чтобы создать пары чисел, равных десяти в каждой скобке. "
-"Выбери номер в списке, затем выбери пустое место операции, чтобы переместить "
-"туда выбранный номер."
+"Выполни разложение, чтобы создать внутри скобок пары чисел, равные десяти. "
+"Выбери число в списке, затем выбери пустое место операции, чтобы переместить "
+"туда выбранное число."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -25124,20 +25124,14 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Набери слово полностью, пока оно не достигло земли"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Добавлен перевод на азербайджанский"
+msgstr "Добавлены переводы на арабский и эсперанто"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:38
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Обновлён перевод на русский язык"
+msgstr "Обновлено много переводов"
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:39 core/ChangeLog.qml:52
 #: core/ChangeLog.qml:70 core/ChangeLog.qml:85 core/ChangeLog.qml:90
@@ -25153,23 +25147,18 @@ msgid "Many bug fixes"
 msgstr "Множество исправлений ошибок"
 
 #: core/ChangeLog.qml:37
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Новая опция командной строки, чтобы отобразить все упражнения и начать с "
-"определенного"
+"Новая опция командной строки (--difficulty {value|min-max}) , чтобы "
+"запускать GCompris с указанной сложностью"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Исправление ошибки в работе компаратора"
 
 #: core/ChangeLog.qml:48
 msgctxt "ChangeLog|"
@@ -25188,7 +25177,7 @@ msgid ""
 "one"
 msgstr ""
 "Новая опция командной строки, чтобы отобразить все упражнения и начать с "
-"определенного"
+"определённого"
 
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:86 core/ChangeLog.qml:89
 #: core/ChangeLog.qml:95
@@ -26007,6 +25996,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Задаёт диапазон сложности упражнения для показа в сеансе. Допускается одно "
+"значение (2) или диапазон (3-6). Значения должны быть в пределах от 1 до 6."
 
 #: core/main.qml:273
 msgctxt "main|"
