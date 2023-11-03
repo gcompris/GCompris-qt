@@ -1,14 +1,14 @@
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023 Xavier Besnard <xavier.besnard@neuf.fr>
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
 # Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Christian Wiatrowski <w9204-wi@yahoo.com>, 2018.
-# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021, 2022, 2023.
 # Timothée Giet <animtim@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-05-30 21:55+0200\n"
+"PO-Revision-Date: 2023-11-01 16:26+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard@neuf.fr>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
@@ -25583,8 +25583,8 @@ msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
-"Réduction de la taille des paquets pour toutes les plateformes et l'ensemble "
-"d'images complet externe"
+"Réduction de la taille des paquets pour toutes les plate-formes et "
+"l'ensemble d'images complet externe"
 
 #: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
@@ -25601,7 +25601,9 @@ msgstr ""
 #: core/ChangeLog.qml:60
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr "Correction des touches mortes ignorées sous Linux"
+msgstr ""
+"Correction des touches mortes ignorées sous Linux pour les activités de "
+"saisie"
 
 #: core/ChangeLog.qml:61
 msgctxt "ChangeLog|"
