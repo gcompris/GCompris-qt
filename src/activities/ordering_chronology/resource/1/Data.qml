@@ -17,10 +17,10 @@ Data {
             // To override the default hardcoded instruction, define instruction string
             // instruction: "overridden instruction"
             values: [
-                'qrc:/gcompris/src/activities/chronos/resource/images/garden1.svg',
-                'qrc:/gcompris/src/activities/chronos/resource/images/garden2.svg',
-                'qrc:/gcompris/src/activities/chronos/resource/images/garden3.svg',
-                'qrc:/gcompris/src/activities/chronos/resource/images/garden4.svg'
+                'qrc:/gcompris/src/activities/chronos/resource/images/garden-01.svg',
+                'qrc:/gcompris/src/activities/chronos/resource/images/garden-02.svg',
+                'qrc:/gcompris/src/activities/chronos/resource/images/garden-03.svg',
+                'qrc:/gcompris/src/activities/chronos/resource/images/garden-04.svg'
             ]
         }
     ]

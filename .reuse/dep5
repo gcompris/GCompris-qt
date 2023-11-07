@@ -994,13 +994,17 @@ Files: src/activities/chronos/chronos.svg
 Copyright: 2020 Timothée Giet
 License: CC-BY-SA-4.0
 
-# All except chronos-tuxtree*.svg and moon-*.svg
+# All except chronos-tuxtree*.svg, moon-*.svg and garden-*.svg
 Files: src/activities/chronos/resource/images/*
 Copyright: 2016 Franck Doucet
 License: GPL-3.0-only
 
 Files: src/activities/chronos/resource/images/chronos-tuxtree*.svg
 Copyright: 2020 Timothée Giet
+License: CC-BY-SA-4.0
+
+Files: src/activities/chronos/resource/images/garden-*.svg
+Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/chronos/resource/images/moon-*.svg

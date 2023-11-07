@@ -14,39 +14,39 @@ QtObject {
    property string instruction: qsTr("Gardening")
    property var levels: [
       {
-          "pixmapfile": "images/garden1.svg",
+          "pixmapfile": "images/garden-01.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/garden4.svg",
+          "pixmapfile": "images/garden-04.svg",
           "x": 0.75,
           "y": 0.65,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/garden3.svg",
+          "pixmapfile": "images/garden-03.svg",
           "x": 0.25,
           "y": 0.65,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/garden2.svg",
+          "pixmapfile": "images/garden-02.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
 		  "text": qsTr("1"),
 		  "x": "0.25",
 		  "y": 0.4,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -54,7 +54,7 @@ QtObject {
 		  "x": "0.75",
 		  "y": 0.4,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -62,7 +62,7 @@ QtObject {
 		  "x": "0.25",
 		  "y": 0.85,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -70,7 +70,7 @@ QtObject {
 		  "x": "0.75",
 		  "y": 0.85,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       }
    ]
