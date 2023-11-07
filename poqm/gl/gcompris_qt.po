@@ -4538,27 +4538,27 @@ msgctxt "Data|"
 msgid "For children who can read words."
 msgstr "Para os nenos que saiban ler palabras."
 
-#: activities/chronos/resource/board/board1_0.qml:14
+#: activities/chronos/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
 msgid "Moonwalker"
 msgstr "Moonwalker"
 
-#: activities/chronos/resource/board/board1_0.qml:45
+#: activities/chronos/resource/board/board1_0.qml:46
 msgctxt "board1_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board1_0.qml:53
+#: activities/chronos/resource/board/board1_0.qml:54
 msgctxt "board1_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board1_0.qml:61
+#: activities/chronos/resource/board/board1_0.qml:62
 msgctxt "board1_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board1_0.qml:69
+#: activities/chronos/resource/board/board1_0.qml:70
 msgctxt "board1_0|"
 msgid "4"
 msgstr "4"

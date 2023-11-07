@@ -4309,27 +4309,27 @@ msgctxt "Data|"
 msgid "For children who can read words."
 msgstr "برای کودکانی که میتوانند کلمات را بخوانند."
 
-#: activities/chronos/resource/board/board1_0.qml:14
+#: activities/chronos/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
 msgid "Moonwalker"
 msgstr "ماهنورد"
 
-#: activities/chronos/resource/board/board1_0.qml:45
+#: activities/chronos/resource/board/board1_0.qml:46
 msgctxt "board1_0|"
 msgid "1"
 msgstr "۱"
 
-#: activities/chronos/resource/board/board1_0.qml:53
+#: activities/chronos/resource/board/board1_0.qml:54
 msgctxt "board1_0|"
 msgid "2"
 msgstr "۲"
 
-#: activities/chronos/resource/board/board1_0.qml:61
+#: activities/chronos/resource/board/board1_0.qml:62
 msgctxt "board1_0|"
 msgid "3"
 msgstr "۳"
 
-#: activities/chronos/resource/board/board1_0.qml:69
+#: activities/chronos/resource/board/board1_0.qml:70
 msgctxt "board1_0|"
 msgid "4"
 msgstr "۴"
