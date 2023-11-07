@@ -14,39 +14,39 @@ QtObject {
    property string instruction: qsTr("Tux and the apple tree")
    property var levels: [
       {
-          "pixmapfile": "images/chronos-tuxtree3.svg",
+          "pixmapfile": "images/tuxtree-03.svg",
           "x": "0.25",
           "y": "0.65",
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/chronos-tuxtree2.svg",
+          "pixmapfile": "images/tuxtree-02.svg",
           "x": "0.75",
           "y": "0.2",
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/chronos-tuxtree4.svg",
+          "pixmapfile": "images/tuxtree-04.svg",
           "x": "0.75",
           "y": "0.65",
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/chronos-tuxtree1.svg",
+          "pixmapfile": "images/tuxtree-01.svg",
           "x": "0.25",
           "y": "0.2",
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
 		  "text": qsTr("1"),
 		  "x": "0.25",
 		  "y": 0.4,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -54,7 +54,7 @@ QtObject {
 		  "x": "0.75",
 		  "y": 0.4,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -62,7 +62,7 @@ QtObject {
 		  "x": "0.25",
 		  "y": 0.85,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -70,7 +70,7 @@ QtObject {
 		  "x": "0.75",
 		  "y": 0.85,
 		  "width": "0.1",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       }
    ]
