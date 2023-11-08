@@ -994,7 +994,7 @@ Files: src/activities/chronos/chronos.svg
 Copyright: 2020 Timothée Giet
 License: CC-BY-SA-4.0
 
-# All except tuxtree-*.svg, moon-*.svg and garden-*.svg
+# All except tuxtree-*.svg, moon-*.svg, garden-*.svg and seasons-*.svg
 Files: src/activities/chronos/resource/images/*
 Copyright: 2016 Franck Doucet
 License: GPL-3.0-only
@@ -1008,6 +1008,10 @@ Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/chronos/resource/images/moon-*.svg
+Copyright: 2023 Timothée Giet
+License: CC-BY-SA-4.0
+
+Files: src/activities/chronos/resource/images/seasons-*.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 

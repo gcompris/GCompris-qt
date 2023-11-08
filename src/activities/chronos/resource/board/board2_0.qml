@@ -14,39 +14,39 @@ QtObject {
    property string instruction: qsTr("The 4 Seasons")
    property var levels: [
       {
-          "pixmapfile": "images/autumn.svg",
+          "pixmapfile": "images/seasons-autumn.svg",
           "x": 0.25,
           "y": 0.65,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/summer.svg",
+          "pixmapfile": "images/seasons-summer.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/spring.svg",
+          "pixmapfile": "images/seasons-spring.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
-          "pixmapfile": "images/winter.svg",
+          "pixmapfile": "images/seasons-winter.svg",
           "x": 0.75,
           "y": 0.65,
           "width": 0.4,
-          "height": 0.25
+          "height": 0.3
       },
       {
 		  "text": qsTr("Spring"),
 		  "x": "0.25",
 		  "y": 0.4,
 		  "width": "0.4",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -54,7 +54,7 @@ QtObject {
 		  "x": "0.75",
 		  "y": 0.4,
 		  "width": "0.4",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -62,7 +62,7 @@ QtObject {
 		  "x": "0.25",
 		  "y": 0.85,
 		  "width": "0.4",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
@@ -70,7 +70,7 @@ QtObject {
 		  "x": "0.75",
 		  "y": 0.85,
 		  "width": "0.4",
-          "height": 0.1,
+          "height": 0.075,
 		  "type": "DisplayText"
       }
    ]
