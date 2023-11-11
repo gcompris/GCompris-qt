@@ -38,7 +38,7 @@ function start(_items) {
     items = _items;
     // register the voices for the locale
     locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale));
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
     loadDataset();
     levels = Lang.getAllLessons(dataset);
     currentSubLevel = 0;

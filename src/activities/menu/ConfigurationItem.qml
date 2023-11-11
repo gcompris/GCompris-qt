@@ -135,6 +135,7 @@ Item {
                 target: DownloadManager
 
                 onDownloadFinished: voicesRow.localeChanged()
+                onResourceRegistered: voicesRow.localeChanged()
             }
 
             GCDialogCheckBox {
@@ -155,7 +156,8 @@ Item {
 
                 onClicked: {
                     if (DownloadManager.downloadResource(
-                            DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
+                            GCompris.VOICES,
+                           {"locale": ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)}))
                     {
                         var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                     }
@@ -209,7 +211,7 @@ Item {
             text: qsTr("Download background music")
 
             onClicked: {
-                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
+                if(DownloadManager.downloadResource(GCompris.BACKGROUND_MUSIC))
                     var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
             }
         }
@@ -325,7 +327,7 @@ Item {
             text: qsTr("Download full word image set")
 
             onClicked: {
-                if(DownloadManager.downloadResource("data2/words/words-webp.rcc"))
+                if(DownloadManager.downloadResource(GCompris.WORDSET))
                     var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
             }
         }
@@ -567,15 +569,14 @@ Item {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
             if(ApplicationInfo.isDownloadAllowed && !DownloadManager.isDataRegistered(
                         "voices-" + ApplicationInfo.CompressedAudio + "/" +
-                        ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
+                        ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)
                         ))
             {
                 // ask for downloading new voices
                 parentActivity.newVoicesSignal();
             } else {
                 // check for updates or/and register new voices
-                DownloadManager.updateResource(
-                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
+                DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
             }
         }
     }

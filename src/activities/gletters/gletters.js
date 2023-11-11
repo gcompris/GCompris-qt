@@ -94,7 +94,8 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
         noShiftLocale = false;
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
+
     if(!items.levels)
         items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
             items.ourActivity.dataSetUrl + "default-"+locale+".json"));

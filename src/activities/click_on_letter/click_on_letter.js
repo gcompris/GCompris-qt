@@ -39,7 +39,7 @@ function start(_items, _mode)
 
     // register the voices for the locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
 
     loadLevels();
     currentSubLevel = 0;

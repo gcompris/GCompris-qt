@@ -348,9 +348,6 @@ void ActivityInfoTree::registerResources()
 
     if (!QResource::registerResource(ApplicationInfo::getFilePath("activities.rcc")))
         qDebug() << "Failed to load the resource file activities.rcc";
-
-    if (QResource::registerResource(ApplicationSettings::getInstance()->cachePath() + "/data2/" + QString("full-%1.rcc").arg(COMPRESSED_AUDIO)))
-        qDebug() << "Registered the pre-download " << QString("full-%1.rcc").arg(COMPRESSED_AUDIO);
 }
 
 void ActivityInfoTree::filterBySearch(const QString &text)

@@ -50,8 +50,11 @@ private Q_SLOTS:
         QFETCH(QString, locale);
         QFETCH(QString, language);
 
+        DownloadManager::DownloadJob job{GCompris::ResourceType::NONE};
+        job.file.setFileName(QFINDTESTDATA("Contents.test"));
+        downloadManager->parseContents(&job);
         QCOMPARE(downloadManager->getVoicesResourceForLocale(locale),
-                 QString("data2/voices-%1/voices-%2.rcc").arg(COMPRESSED_AUDIO, language));
+                 QString("data3/voices-%1/voices-%2-2023-10-07-17-29-00.rcc").arg(COMPRESSED_AUDIO, language));
     }
 
     void test_haveLocalResource_data()
@@ -74,14 +77,14 @@ private Q_SLOTS:
 
     void test_downloadResource_data()
     {
-        QTest::addColumn<QString>("resource");
+        QTest::addColumn<GCompris::ResourceType>("resource");
 
-        QTest::newRow("invalid.blabla") << "invalid.blabla";
-        QTest::newRow("algorithm.rcc") << "algorithm.rcc";
+        QTest::newRow("wordset") << GCompris::ResourceType::WORDSET;
+        QTest::newRow("wordset") << GCompris::ResourceType::WORDSET;
     }
     void test_downloadResource()
     {
-        QFETCH(QString, resource);
+        QFETCH(GCompris::ResourceType, resource);
 
         QVERIFY(downloadManager->downloadResource(resource));
         QVERIFY(!downloadManager->downloadResource(resource));
@@ -90,29 +93,29 @@ private Q_SLOTS:
 
     void test_updateResource_data()
     {
-        QTest::addColumn<QString>("resource");
+        QTest::addColumn<GCompris::ResourceType>("resource");
         QTest::addColumn<bool>("expected_success");
 
-        QTest::newRow("invalid.haha") << "invalid.haha" << false;
-        QTest::newRow("money.rcc") << "money.rcc" << true;
+        QTest::newRow("wordset") << GCompris::ResourceType::WORDSET << false;
+        QTest::newRow("none") << GCompris::ResourceType::NONE << false;
     }
     void test_updateResource()
     {
-        QFETCH(QString, resource);
+        QFETCH(GCompris::ResourceType, resource);
         QFETCH(bool, expected_success);
 
-        QVERIFY(expected_success == downloadManager->updateResource(resource));
+       QVERIFY(expected_success == downloadManager->updateResource(resource, {}));
     }
 
     void test_downloadIsRunning_data()
     {
-        QTest::addColumn<QString>("resource");
+        QTest::addColumn<GCompris::ResourceType>("resource");
 
-        QTest::newRow("colors.rcc") << "colors.rcc";
+        QTest::newRow("wordset") << GCompris::ResourceType::WORDSET;
     }
     void test_downloadIsRunning()
     {
-        QFETCH(QString, resource);
+        QFETCH(GCompris::ResourceType, resource);
 
         downloadManager->abortDownloads();
         QVERIFY(!downloadManager->downloadIsRunning());

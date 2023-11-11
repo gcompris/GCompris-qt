@@ -211,7 +211,7 @@ int main(int argc, char *argv[])
     parser.addOption(clDifficultyRange);
 
     QCommandLineOption clStartOnLevel("start-level",
-                                         QObject::tr("Specify on which level to start the activity. Only used when --launch option is used."), "startLevel");
+                                      QObject::tr("Specify on which level to start the activity. Only used when --launch option is used."), "startLevel");
     parser.addOption(clStartOnLevel);
 
     parser.process(app);
@@ -310,15 +310,15 @@ int main(int argc, char *argv[])
     if (parser.isSet(clStartOnActivity)) {
         QString startingActivity = parser.value(clStartOnActivity);
         int startingLevel = 0;
-        if(parser.isSet(clStartOnLevel)) {
+        if (parser.isSet(clStartOnLevel)) {
             bool isNumber = false;
             startingLevel = parser.value(clStartOnLevel).toInt(&isNumber);
-            if(!isNumber || startingLevel < 0) {
+            if (!isNumber || startingLevel < 0) {
                 startingLevel = 0;
             }
         }
         // internally, levels start at 0
-        ActivityInfoTree::setStartingActivity(startingActivity, startingLevel-1);
+        ActivityInfoTree::setStartingActivity(startingActivity, startingLevel - 1);
     }
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));

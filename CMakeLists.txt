@@ -391,10 +391,10 @@ add_custom_command(
 
 add_custom_command(
     OUTPUT assetsFolders
-    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2"
-    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2/voices-${COMPRESSED_AUDIO}"
-    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2/words"
-    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2/backgroundMusic"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data3"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data3/voices-${COMPRESSED_AUDIO}"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data3/words"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data3/backgroundMusic"
     )
 # Install assets
 add_custom_target(getAssets

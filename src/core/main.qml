@@ -222,19 +222,13 @@ Window {
     }
 
     function checkWordset() {
-        var wordset = ApplicationSettings.wordset
-        if(wordset === '')
-            // Maybe the wordset has been bundled or copied manually
-            // we have to register it if we find it.
-            wordset = 'data2/words/words-webp.rcc'
+        var wordset = DownloadManager.getResourcePath(GCompris.WORDSET, {})
 
         // check for words-webp.rcc:
-        if (DownloadManager.isDataRegistered("words-webp")) {
-            // words-webp.rcc is already registered -> nothing to do
-        } else if(DownloadManager.haveLocalResource(wordset)) {
+        if(wordset != "" && DownloadManager.haveLocalResource(wordset)) {
             // words-webp.rcc is there -> register old file first
             // then try to update in the background
-            if(DownloadManager.updateResource(wordset)) {
+            if(DownloadManager.updateResource(GCompris.WORDSET, {})) {
                 ApplicationSettings.wordset = wordset
             }
         } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
@@ -248,19 +242,13 @@ Window {
         if(rccBackgroundMusic === '') {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
         }
-        if(music === '') {
-            music = DownloadManager.getBackgroundMusicResources()
+        if(music === '' || !DownloadManager.haveLocalResource(music)) {
+            musicDownloaded = false;
         }
         // We have local music but it is not yet registered
-        else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
+        else if(music !== "") {
             // We have music and automatic download is enabled. Download the music and register it
-            if(DownloadManager.updateResource(music) && DownloadManager.downloadIsRunning()) {
-                DownloadManager.registerResource(music)
-                rccBackgroundMusic = Core.shuffle(ApplicationInfo.getBackgroundMusicFromRcc())
-            }
-            else {
-                rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-            }
+            DownloadManager.updateResource(GCompris.BACKGROUND_MUSIC, {})
         }
         else if(ApplicationSettings.isBackgroundMusicEnabled && !DownloadManager.haveLocalResource(music)) {
             musicDownloaded = false;
@@ -268,46 +256,41 @@ Window {
     }
 
     function checkVoices() {
-        if(!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+        var voicesRcc = DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)
+        if(voicesRcc == "" || !DownloadManager.haveLocalResource(voicesRcc))
             voicesDownloaded = false;
-        else
-            DownloadManager.registerResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
+        else {
+            if(voicesRcc !== "") {
+                DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
+            }
+        }
     }
 
     function initialAssetsDownload() {
-        checkVoices();
-        checkWordset();
-        checkBackgroundMusic();
-        var voicesLine = voicesDownloaded ? "" : ("<br>") + "-" + qsTr("Voices for your language");
-        var wordSetLine = wordSetDownloaded ? "" : ("<br>") + "-" + qsTr("Full word image set");
-        var musicLine = musicDownloaded ? "" : ("<br>") + "-" + qsTr("Background music");
-        if(!voicesDownloaded || !wordSetDownloaded || ! musicDownloaded) {
-            var dialog;
-            dialog = Core.showMessageDialog(
-                pageView.currentItem,
-                qsTr("Do you want to automatically download and update the following external assets when starting GCompris?")
-                + ("<br>")
-                + voicesLine
-                + wordSetLine
-                + musicLine,
-                qsTr("Yes"),
-                function() {
-                    if(!voicesDownloaded)
-                        DownloadManager.downloadResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
-                    if(!wordSetDownloaded)
-                        DownloadManager.downloadResource('data2/words/words-webp.rcc');
-                    if(!musicDownloaded)
-                        DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources());
-                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                },
-                qsTr("No"), 
-                function() {
-                    ApplicationSettings.isAutomaticDownloadsEnabled = false;
-                },
-                null
-            );
+        var dialogText;
+        dialogText = qsTr("Do you want to automatically download or update the following external assets when starting GCompris?")
+        + ("<br>")
+        + ("<br>") + "-" + qsTr("Voices for your language")
+        + ("<br>") + "-" + qsTr("Full word image set")
+        + ("<br>") + "-" + qsTr("Background music");
 
-        }
+        var dialog;
+        dialog = Core.showMessageDialog(
+            pageView.currentItem,
+            dialogText,
+            qsTr("Yes"),
+            function() {
+                DownloadManager.downloadResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
+                DownloadManager.downloadResource(GCompris.WORDSET);
+                DownloadManager.downloadResource(GCompris.BACKGROUND_MUSIC);
+                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+            },
+            qsTr("No"), 
+            function() {
+                ApplicationSettings.isAutomaticDownloadsEnabled = false;
+            },
+            null
+        );
     }
 
     ChangeLog {
@@ -321,8 +304,19 @@ Window {
                     + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
                     + ", userDataPath=" + ApplicationSettings.userDataPath
                     + ")");
+        DownloadManager.initializeAssets();
+
+        // Register local full rcc if it exists. We don't try to check if there is one more up to date on the server, we register the one we have
+        var fullRccPath = DownloadManager.getResourcePath(GCompris.FULL, {});
+        if(fullRccPath != "") {
+            DownloadManager.registerResource(fullRccPath);
+        }
+
         if (ApplicationSettings.exeCount === 1 &&
                 !ApplicationSettings.isKioskMode) {
+            checkVoices();
+            checkWordset();
+            checkBackgroundMusic();
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
@@ -349,18 +343,17 @@ Window {
         else {
             // Register voices-resources for current locale, updates/downloads only if
             // not prohibited by the settings
-            if(!DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
-                DownloadManager.updateResource(
-                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
-            }
+            DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
 
             checkWordset();
 
-            if(ApplicationSettings.useWordset && DownloadManager.updateResource('data2/words/words-webp.rcc')) {
-                ApplicationSettings.wordset = 'data2/words/words-webp.rcc'
+            if(ApplicationSettings.useWordset && DownloadManager.updateResource(GCompris.WORDSET, {})) {
+                ApplicationSettings.wordset = 'data3/words/words-webp.rcc'
             }
 
             checkBackgroundMusic();
+            DownloadManager.updateResource(GCompris.BACKGROUND_MUSIC, {});
+
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 lastGCVersionRanCopy = ApplicationSettings.lastGCVersionRan;
 

@@ -44,8 +44,7 @@ function start(items_) {
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(
-                GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
 
     var data = Lang.loadDataset(items.parser, resourceUrl, locale);
     dataset = data["dataset"];

@@ -3614,6 +3614,10 @@ Copyright: 2014 Gabriel Araujo
 License: CC0-1.0
 Source: https://www.freesound.org/people/GabrielAraujo/sounds/242501/
 
+Files: tests/core/Contents.test
+Copyright: 2023 Johnny Jazeix
+License: CC0-1.0
+
 Files: tools/inkscape/*
 Copyright: 2021-2023 Timothée Giet
 License: GPL-3.0-or-later

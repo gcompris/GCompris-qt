@@ -21,9 +21,10 @@
 #include <QDirIterator>
 #include <QCoreApplication>
 
-const QString DownloadManager::contentsFilename = QStringLiteral("Contents");
+const QString DownloadManager::contentsFilename = QLatin1String("Contents");
 DownloadManager *DownloadManager::_instance = nullptr;
 
+const QString DownloadManager::localFolderForData = QLatin1String("data3/");
 /* Public interface: */
 
 DownloadManager::DownloadManager() :
@@ -113,15 +114,37 @@ void DownloadManager::abortDownloads()
     }
 }
 
+void DownloadManager::initializeAssets()
+{
+    const QStringList files = {
+        localFolderForData + QLatin1String("Contents"),
+        localFolderForData + QLatin1String("voices-" COMPRESSED_AUDIO "/Contents"),
+        localFolderForData + QLatin1String("backgroundMusic/Contents"),
+        localFolderForData + QLatin1String("words/Contents")
+    };
+    for (const QString &contentsFolder: files) {
+        QFileInfo fi(getAbsoluteResourcePath(contentsFolder));
+        if (fi.exists()) {
+            DownloadJob job(GCompris::ResourceType::NONE);
+            job.file.setFileName(fi.filePath());
+            parseContents(&job);
+        }
+        else {
+            qDebug() << fi.filePath() << "does not exist, cannot parse Contents for " << contentsFolder;
+        }
+    }
+}
+
 QString DownloadManager::getVoicesResourceForLocale(const QString &locale) const
 {
-    return QString("data2/voices-" COMPRESSED_AUDIO "/voices-%1.rcc")
-        .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
+    const QString localeName = ApplicationInfo::getInstance()->getVoicesLocale(locale);
+    qDebug() << "Get voices for " << locale << ", " << localeName;
+    return getResourcePath(GCompris::ResourceType::VOICES, { { "locale", localeName } });
 }
 
 QString DownloadManager::getBackgroundMusicResources() const
 {
-    return QString("data2/backgroundMusic/backgroundMusic-" COMPRESSED_AUDIO ".rcc");
+    return getResourcePath(GCompris::ResourceType::BACKGROUND_MUSIC, {});
 }
 
 inline QString DownloadManager::getAbsoluteResourcePath(const QString &path) const
@@ -152,36 +175,65 @@ bool DownloadManager::haveLocalResource(const QString &path) const
     return (!getAbsoluteResourcePath(path).isEmpty());
 }
 
-bool DownloadManager::updateResource(const QString &path)
+QString DownloadManager::getResourcePath(/*const GCompris::ResourceType &rt*/ int rt, const QVariantMap &data) const
+{
+    // qDebug() << "getResourcePath" << GCompris::ResourceType(rt) << resourceTypeToLocalFileName << data["locale"].toString();
+    switch (rt) {
+    case GCompris::ResourceType::WORDSET:
+        if (resourceTypeToLocalFileName.contains("words")) {
+            return localFolderForData + "words/" + resourceTypeToLocalFileName["words"];
+        }
+        break;
+    case GCompris::ResourceType::BACKGROUND_MUSIC:
+        if (resourceTypeToLocalFileName.contains("backgroundMusic-" COMPRESSED_AUDIO)) {
+            return localFolderForData + "backgroundMusic/" + resourceTypeToLocalFileName["backgroundMusic-" COMPRESSED_AUDIO];
+        }
+        break;
+    case GCompris::ResourceType::VOICES:
+        if (resourceTypeToLocalFileName.contains(data["locale"].toString())) {
+            return localFolderForData + "voices-" + COMPRESSED_AUDIO + '/' + resourceTypeToLocalFileName[data["locale"].toString()];
+        }
+        break;
+    case GCompris::ResourceType::FULL:
+        if (resourceTypeToLocalFileName.contains("full-" COMPRESSED_AUDIO)) {
+            return localFolderForData + resourceTypeToLocalFileName["full-" COMPRESSED_AUDIO];
+        }
+        break;
+    }
+    return QString();
+}
+
+bool DownloadManager::updateResource(/*const GCompris::ResourceType &*/ int rt, const QVariantMap &extra)
 {
     if (checkDownloadRestriction())
-        return downloadResource(path); // check for updates and register
+        return downloadResource(rt, extra); // check for updates and register
 
-    QString absPath = getAbsoluteResourcePath(path);
+    QString resourcePath = getResourcePath(rt, extra);
+    QString absPath = getAbsoluteResourcePath(resourcePath);
     // automatic download prohibited -> register if available
-    if (!absPath.isEmpty())
+    if (!resourcePath.isEmpty())
         return registerResourceAbsolute(absPath);
 
     qDebug() << "No such local resource and download prohibited: "
-             << path;
+             << GCompris::ResourceType(rt) << extra;
     return false;
 }
 
-bool DownloadManager::downloadResource(const QString &path)
+bool DownloadManager::downloadResource(int rt, const QVariantMap &extra)
 {
     DownloadJob *job = nullptr;
+    GCompris::ResourceType resourceType = GCompris::ResourceType(rt);
     {
         QMutexLocker locker(&jobsMutex);
-        QUrl url(serverUrl.toString() + '/' + path);
-        if (getJobByUrl_locked(url) != nullptr) {
-            qDebug() << "Download of" << url << "is already running, skipping second attempt.";
+        if (getJobByType_locked(resourceType, extra) != nullptr) {
+            qDebug() << "Download of" << resourceType << "is already running, skipping second attempt.";
             return false;
         }
-        job = new DownloadJob(url);
+        job = new DownloadJob(resourceType, extra);
         activeJobs.append(job);
     }
 
-    qDebug() << "Downloading resource file" << path;
+    qDebug() << "downloadResource" << resourceType << extra;
     if (!download(job)) {
         QMutexLocker locker(&jobsMutex);
         activeJobs.removeOne(job);
@@ -209,10 +261,28 @@ bool DownloadManager::download(DownloadJob *job)
     QNetworkRequest request;
 
     // First download Contents file for verification if not yet done:
-    if (!job->contents.contains(job->url.fileName())) {
-        int len = job->url.fileName().length();
-        QUrl contentsUrl = QUrl(job->url.toString().remove(job->url.toString().length() - len, len)
-                                + contentsFilename);
+    if (!job->contents.contains(job->url.fileName()) /*|| job->url.fileName().contains("Contents")*/) {
+        QUrl contentsUrl;
+        if (!job->url.isEmpty()) {
+            int len = job->url.fileName().length();
+            contentsUrl = QUrl(job->url.toString().remove(job->url.toString().length() - len, len)
+                               + contentsFilename);
+        }
+        else {
+            switch (job->resourceType) {
+            case GCompris::ResourceType::BACKGROUND_MUSIC:
+                contentsUrl = QUrl(serverUrl.toString() + '/' + localFolderForData + "backgroundMusic/" + contentsFilename);
+                break;
+            case GCompris::ResourceType::VOICES:
+                contentsUrl = QUrl(serverUrl.toString() + '/' + localFolderForData + "voices-" COMPRESSED_AUDIO + '/' + contentsFilename);
+                break;
+            case GCompris::ResourceType::WORDSET:
+                contentsUrl = QUrl(serverUrl.toString() + '/' + localFolderForData + "words/" + contentsFilename);
+                break;
+            default:
+                break;
+            }
+        }
         if (!job->knownContentsUrls.contains(contentsUrl)) {
             // Note: need to track already tried Contents files or we can end
             // up in an infinite loop if corresponding Contents file does not
@@ -228,7 +298,7 @@ bool DownloadManager::download(DownloadJob *job)
     // make sure target path exists:
     QDir dir;
     if (!dir.exists(fi.path()) && !dir.mkpath(fi.path())) {
-        qDebug() << "Could not create resource path " << fi.path();
+        // qDebug() << "Could not create resource path " << fi.path();
         Q_EMIT error(QNetworkReply::ProtocolUnknownError, QObject::tr("Could not create resource path"));
         return false;
     }
@@ -242,7 +312,7 @@ bool DownloadManager::download(DownloadJob *job)
 
     // start download:
     request.setUrl(job->url);
-    // qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
+    qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
     QNetworkReply *reply = accessManager.get(request);
     job->reply = reply;
     connect(reply, SIGNAL(finished()), this, SLOT(finishDownload()));
@@ -258,10 +328,10 @@ bool DownloadManager::download(DownloadJob *job)
     return true;
 }
 
-inline DownloadManager::DownloadJob *DownloadManager::getJobByUrl_locked(const QUrl &url) const
+inline DownloadManager::DownloadJob *DownloadManager::getJobByType_locked(GCompris::ResourceType rt, const QVariantMap &data) const
 {
     for (auto activeJob: activeJobs)
-        if (activeJob->url == url || activeJob->queue.indexOf(url) != -1)
+        if (activeJob->resourceType == rt && activeJob->extraInfos == data) // || activeJob->queue.indexOf(url) != -1)
             return activeJob;
     return nullptr;
 }
@@ -373,6 +443,26 @@ bool DownloadManager::parseContents(DownloadJob *job)
             return false;
         }
         job->contents[parts[1]] = parts[0];
+        if (parts[1].startsWith(QLatin1String("voices"))) {
+            QString locale = parts[1];
+            locale.remove(0, locale.indexOf('-') + 1); // Remove "voices-" prefix
+            locale = locale.left(locale.indexOf('-')); // Remove the date and ".rcc" suffix
+            // Retrieve locale from filename
+            resourceTypeToLocalFileName[locale] = parts[1];
+            qDebug() << "Contents: " << locale << " -> " << parts[1];
+        }
+        else if (parts[1].startsWith(QLatin1String("words"))) {
+            QString type = parts[1];
+            type = type.left(type.indexOf('-'));
+            resourceTypeToLocalFileName[type] = parts[1];
+            qDebug() << "Contents: " << type << " -> " << parts[1];
+        }
+        else {
+            QString type = parts[1];
+            type = type.section('-', 0, 1); // keep backgroundMusic-$CA or full-$CA
+            resourceTypeToLocalFileName[type] = parts[1];
+            qDebug() << "Contents: " << type << " -> " << parts[1];
+        }
         // qDebug() << "Contents: " << parts[1] << " -> " << parts[0];
     }
     job->file.close();
@@ -458,7 +548,14 @@ bool DownloadManager::registerResourceAbsolute(const QString &filename)
  */
 bool DownloadManager::registerResource(const QString &filename)
 {
-    return registerResourceAbsolute(getAbsoluteResourcePath(filename));
+    QString absPath = getAbsoluteResourcePath(filename);
+    if (!absPath.isEmpty()) {
+        return registerResourceAbsolute(getAbsoluteResourcePath(filename));
+    }
+    else {
+        qDebug() << "Error while registering" << filename;
+        return false;
+    }
 }
 
 bool DownloadManager::isDataRegistered(const QString &data) const
@@ -582,6 +679,28 @@ void DownloadManager::finishDownload()
     // try next:
     while (!job->queue.isEmpty()) {
         job->url = job->queue.takeFirst();
+        if (job->url.isEmpty() && job->resourceType != GCompris::ResourceType::NONE) {
+            QString nextDownload = getResourcePath(job->resourceType, job->extraInfos);
+            if (!nextDownload.isEmpty()) {
+                job->url = QUrl(serverUrl.toString() + '/' + nextDownload);
+            }
+            else {
+                if (job->resourceType == GCompris::ResourceType::VOICES) {
+                    const QString localeName = job->extraInfos["locale"].toString();
+                    const QLocale locale(localeName);
+                    Q_EMIT error(QNetworkReply::UnknownContentError,
+                                 QObject::tr("No voices found for %1.")
+                                     .arg(locale.nativeLanguageName()));
+                }
+                else {
+                    Q_EMIT error(QNetworkReply::UnknownContentError,
+                                 QObject::tr("No data found for %1.")
+                                     .arg(GCompris::ResourceType(job->resourceType)));
+                }
+                code = Error;
+                continue;
+            }
+        }
         QString relPath = getRelativeResourcePath(getFilenameForUrl(job->url));
         // check in each resource-path for an up2date rcc file:
         for (const QString &base: getSystemResourcePaths()) {
@@ -633,7 +752,7 @@ outError:
         QUrl nUrl;
         while (!job->queue.isEmpty()) {
             nUrl = job->queue.takeFirst();
-            QString relPath = getRelativeResourcePath(getFilenameForUrl(nUrl));
+            QString relPath = getResourcePath(job->resourceType, job->extraInfos);;
             for (const QString &base: getSystemResourcePaths()) {
                 QString filename = base + '/' + relPath;
                 if (QFile::exists(filename))

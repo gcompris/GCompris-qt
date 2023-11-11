@@ -39,7 +39,7 @@ function start() {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
 
     var data = Lang.loadDataset(items.parser, baseUrl, locale);
     dataset = data["dataset"];

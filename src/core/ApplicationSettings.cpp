@@ -118,9 +118,12 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_wordset = m_config.value(WORDSET, "").toString();
 
     // Automatically override the previous rcc with the new one
-    if (m_wordset == QLatin1String("data2/words/words.rcc"))
+    if (m_wordset == QLatin1String("data2/words/words.rcc")) {
         m_wordset = "data2/words/words-webp.rcc";
-
+    }
+    if (m_wordset == QLatin1String("data2/words/words-webp.rcc")) {
+        m_wordset = "words-webp.rcc";
+    }
     m_useWordset = m_config.value(USE_WORDSET, true).toBool();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
                                                    !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed())
@@ -385,7 +388,7 @@ void ApplicationSettings::notifyWordsetChanged()
     if (!m_wordset.isEmpty() && DownloadManager::getInstance()->haveLocalResource(m_wordset) && !DownloadManager::getInstance()->isDataRegistered("words-webp")) {
         // words-webp.rcc is there -> register old file first
         // then try to update in the background
-        DownloadManager::getInstance()->updateResource(m_wordset);
+        DownloadManager::getInstance()->updateResource(GCompris::ResourceType::WORDSET, {});
     }
 
     updateValueInConfig(GENERAL_GROUP_KEY, WORDSET, m_wordset);
@@ -530,7 +533,7 @@ void ApplicationSettings::saveActivityProgress(const QString &activity, int prog
 
 bool ApplicationSettings::useExternalWordset()
 {
-    return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words-webp");
+    return DownloadManager::getInstance()->isDataRegistered("words-webp");
 }
 
 QObject *ApplicationSettings::applicationSettingsProvider(QQmlEngine *engine,

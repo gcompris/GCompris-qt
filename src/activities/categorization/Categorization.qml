@@ -160,7 +160,7 @@ ActivityBase {
                 button1Text: qsTr("Update the image set")
                 button2Text: qsTr("Never show this dialog again")
                 onClose: items.categoriesFallback = false
-                onButton1Hit: DownloadManager.downloadResource('data2/words/words-webp.rcc')
+                onButton1Hit: DownloadManager.downloadResource(GCompris.WORDSET)
                 onButton2Hit: { items.displayUpdateDialogAtStart = false; items.dialogActivityConfig.saveData()}
             }
             anchors.fill: parent

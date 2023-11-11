@@ -49,7 +49,8 @@ public:
     void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
-    static void setStartingActivity(const QString &startingActivity, int startingLevel) {
+    static void setStartingActivity(const QString &startingActivity, int startingLevel)
+    {
         m_startingActivity = startingActivity;
         m_startingLevel = startingLevel;
     }

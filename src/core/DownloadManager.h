@@ -21,6 +21,18 @@
 #include <QQmlEngine>
 #include <QJSEngine>
 
+namespace GCompris {
+    Q_NAMESPACE
+    enum ResourceType {
+        NONE,
+        VOICES,
+        WORDSET,
+        BACKGROUND_MUSIC,
+        FULL
+    };
+    Q_ENUM_NS(ResourceType);
+}
+
 /**
  * @class DownloadManager
  * @short A singleton class responsible for downloading, updating and
@@ -70,6 +82,8 @@ class DownloadManager : public QObject
 {
     Q_OBJECT
 
+    friend class DownloadManagerTest;
+
 private:
     DownloadManager(); // prohibit external creation, we are a singleton!
     static DownloadManager *_instance; // singleton instance
@@ -79,28 +93,27 @@ private:
     {
         QUrl url; ///< url of the currently running sub-job
         QFile file; ///< target file for the currently running sub-job
-        QNetworkReply *reply; ///< reply object for the currently running sub-job
+        QNetworkReply *reply = nullptr; ///< reply object for the currently running sub-job
         QList<QUrl> queue; ///< q of remaining sub jobs (QList for convenience)
         QMap<QString, QString> contents; ///< checksum map for download verification
         QList<QUrl> knownContentsUrls; ///< store already tried upstream Contents files (for infinite loop protection)
 
-        qint64 bytesReceived;
-        qint64 bytesTotal;
-        bool downloadFinished;
-        int downloadResult;
-        explicit DownloadJob(const QUrl &u = QUrl()) :
-            url(u), file(), reply(nullptr),
-            queue(QList<QUrl>()),
-            bytesReceived(0),
-            bytesTotal(0),
-            downloadFinished(false),
-            downloadResult(0) { }
+        GCompris::ResourceType resourceType = GCompris::ResourceType::NONE;
+        QVariantMap extraInfos = {};
+
+        qint64 bytesReceived = 0;
+        qint64 bytesTotal = 0;
+        bool downloadFinished = false;
+        int downloadResult = 0;
+        explicit DownloadJob(const GCompris::ResourceType rt, const QVariantMap &extra = {}) :
+            resourceType(rt), extraInfos(extra) { }
     } DownloadJob;
 
     QList<DownloadJob *> activeJobs; ///< track active jobs to allow for parallel downloads
     QMutex jobsMutex; ///< not sure if we need to expect concurrent access, better lockit!
 
     static const QString contentsFilename;
+    static const QString localFolderForData;
     static const QCryptographicHash::Algorithm hashMethod = QCryptographicHash::Md5;
 
     QList<QString> registeredResources;
@@ -108,6 +121,8 @@ private:
 
     QNetworkAccessManager accessManager;
     QUrl serverUrl;
+
+    QMap<QString, QString> resourceTypeToLocalFileName; ///< Key constructed from Contents file, values are the filenames in local
 
     /**
      * Get the platform-specific path storing downloaded resources.
@@ -167,7 +182,7 @@ private:
 
     bool checkDownloadRestriction() const;
     DownloadJob *getJobByReply(QNetworkReply *r);
-    DownloadJob *getJobByUrl_locked(const QUrl &url) const;
+    DownloadJob *getJobByType_locked(GCompris::ResourceType rt, const QVariantMap &data) const;
 
     /** Start a new download specified by the passed DownloadJob */
     bool download(DownloadJob *job);
@@ -233,6 +248,8 @@ public:
      */
     Q_INVOKABLE QString getVoicesResourceForLocale(const QString &locale) const;
 
+    Q_INVOKABLE QString getResourcePath(/*const GCompris::ResourceType &*/ int rt, const QVariantMap &data) const;
+
     // @returns A relative background music resource path.
     Q_INVOKABLE QString getBackgroundMusicResources() const;
     /**
@@ -242,6 +259,11 @@ public:
      */
     Q_INVOKABLE bool haveLocalResource(const QString &path) const;
 
+    /**
+     * For each external dataset type check if there is a Contents file to load
+     * and load its data if there is one
+     */
+    Q_INVOKABLE void initializeAssets();
     /**
      * Whether any download is currently running.
      */
@@ -301,7 +323,7 @@ public Q_SLOTS:
      *
      * @returns success
      */
-    Q_INVOKABLE bool updateResource(const QString &path);
+    Q_INVOKABLE bool updateResource(/*const GCompris::ResourceType &*/ int rt, const QVariantMap &extra);
 
     /**
      * Download a resource specified by the relative resource @p path and
@@ -315,7 +337,7 @@ public Q_SLOTS:
      *
      * @returns success
      */
-    Q_INVOKABLE bool downloadResource(const QString &path);
+    Q_INVOKABLE bool downloadResource(int rt, const QVariantMap &extra = {});
 
     /**
      * Shutdown DownloadManager instance.

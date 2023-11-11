@@ -36,7 +36,7 @@ function start() {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
 
     dataset = Lang.load(items.parser, langUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",

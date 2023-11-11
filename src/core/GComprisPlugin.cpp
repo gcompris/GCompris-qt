@@ -43,6 +43,8 @@ void GComprisPlugin::registerTypes(const char *uri)
                                                   "ApplicationSettings", ApplicationSettings::applicationSettingsProvider);
     qmlRegisterSingletonType<DownloadManager>(uri, versionMajor, versionMinor,
                                               "DownloadManager", DownloadManager::downloadManagerProvider);
+    qmlRegisterUncreatableMetaObject(GCompris::staticMetaObject,
+                                     uri, versionMajor, versionMinor, "GCompris", "");
 
     qmlRegisterSingletonType<GSynth>(uri, versionMajor, versionMinor,
                                      "GSynth", GSynth::synthProvider);

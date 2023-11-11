@@ -90,7 +90,8 @@ ActivityBase {
                 qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
-                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                            GCompris.VOICES,
+                           {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)}))
                     var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                 },
                 qsTr("No"), null,
