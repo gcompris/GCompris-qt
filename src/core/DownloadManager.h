@@ -161,6 +161,7 @@ private:
     QString getFilenameForUrl(const QUrl &url) const;
     QUrl getUrlForFilename(const QString &filename) const;
 
+    QString getLocalSubFolderForData(const GCompris::ResourceType &rt) const;
     /**
      * Transforms the passed relative path to an absolute resource path of an
      * existing .rcc file, honouring the order of the systemResourcePaths
@@ -215,6 +216,7 @@ private Q_SLOTS:
      * for iterating over possibly remaining sub-jobs of our DownloadJob.
      */
     void finishDownload();
+    void finishAllDownloads(int code);
     void downloadReadyRead();
     void handleError(QNetworkReply::NetworkError code);
 

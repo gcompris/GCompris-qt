@@ -99,7 +99,7 @@ void DownloadManager::abortDownloads()
                 disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
                            this, SLOT(handleError(QNetworkReply::NetworkError)));
                 if (job->reply->isRunning()) {
-                    qDebug() << "Aborting download job:" << job->url;
+                    qDebug() << "Aborting download job:" << job->url << job->resourceType;
                     job->reply->abort();
                     job->file.close();
                     job->file.remove();
@@ -133,6 +133,8 @@ void DownloadManager::initializeAssets()
             qDebug() << fi.filePath() << "does not exist, cannot parse Contents for " << contentsFolder;
         }
     }
+
+    connect(this, &DownloadManager::allDownloadsFinished, this, &DownloadManager::finishAllDownloads);
 }
 
 QString DownloadManager::getVoicesResourceForLocale(const QString &locale) const
@@ -175,28 +177,48 @@ bool DownloadManager::haveLocalResource(const QString &path) const
     return (!getAbsoluteResourcePath(path).isEmpty());
 }
 
+QString DownloadManager::getLocalSubFolderForData(const GCompris::ResourceType &rt) const
+{
+    switch (rt) {
+    case GCompris::ResourceType::WORDSET:
+        return localFolderForData + QLatin1String("words/");
+        break;
+    case GCompris::ResourceType::BACKGROUND_MUSIC:
+        return localFolderForData + QLatin1String("backgroundMusic/");
+        break;
+    case GCompris::ResourceType::VOICES:
+        return localFolderForData + QLatin1String("voices-" COMPRESSED_AUDIO "/");
+        break;
+    case GCompris::ResourceType::FULL:
+        return localFolderForData;
+        break;
+    }
+    return QString();
+}
+
 QString DownloadManager::getResourcePath(/*const GCompris::ResourceType &rt*/ int rt, const QVariantMap &data) const
 {
     // qDebug() << "getResourcePath" << GCompris::ResourceType(rt) << resourceTypeToLocalFileName << data["locale"].toString();
-    switch (rt) {
+    GCompris::ResourceType resource = GCompris::ResourceType(rt);
+    switch (resource) {
     case GCompris::ResourceType::WORDSET:
         if (resourceTypeToLocalFileName.contains("words")) {
-            return localFolderForData + "words/" + resourceTypeToLocalFileName["words"];
+            return getLocalSubFolderForData(resource) + resourceTypeToLocalFileName["words"];
         }
         break;
     case GCompris::ResourceType::BACKGROUND_MUSIC:
         if (resourceTypeToLocalFileName.contains("backgroundMusic-" COMPRESSED_AUDIO)) {
-            return localFolderForData + "backgroundMusic/" + resourceTypeToLocalFileName["backgroundMusic-" COMPRESSED_AUDIO];
+            return getLocalSubFolderForData(resource) + resourceTypeToLocalFileName["backgroundMusic-" COMPRESSED_AUDIO];
         }
         break;
     case GCompris::ResourceType::VOICES:
         if (resourceTypeToLocalFileName.contains(data["locale"].toString())) {
-            return localFolderForData + "voices-" + COMPRESSED_AUDIO + '/' + resourceTypeToLocalFileName[data["locale"].toString()];
+            return getLocalSubFolderForData(resource) + resourceTypeToLocalFileName[data["locale"].toString()];
         }
         break;
     case GCompris::ResourceType::FULL:
         if (resourceTypeToLocalFileName.contains("full-" COMPRESSED_AUDIO)) {
-            return localFolderForData + resourceTypeToLocalFileName["full-" COMPRESSED_AUDIO];
+            return getLocalSubFolderForData(resource) + resourceTypeToLocalFileName["full-" COMPRESSED_AUDIO];
         }
         break;
     }
@@ -596,6 +618,32 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     Q_EMIT downloadProgress(allJobsBytesReceived, allJobsBytesTotal);
 }
 
+void DownloadManager::finishAllDownloads(int code)
+{
+    QList<QString> registeredFiles = resourceTypeToLocalFileName.values();
+    // Remove all previous rcc for this kind of download
+    for (auto *job: activeJobs) {
+        QString subfolder = getLocalSubFolderForData(job->resourceType);
+        if (subfolder.isEmpty()) {
+            continue;
+        }
+        QDirIterator it(getSystemDownloadPath() + '/' + subfolder);
+        while (it.hasNext()) {
+            QString filename = it.next();
+            QFileInfo fi = it.fileInfo();
+            if (fi.isFile() && (filename.endsWith(QLatin1String(".rcc")))) {
+                if (!registeredFiles.contains(fi.fileName())) {
+                    if (!QFile::remove(filename)) {
+                        qDebug() << "Unable to remove" << filename;
+                    }
+                }
+            }
+        }
+        delete job;
+    }
+    activeJobs.clear();
+}
+
 void DownloadManager::finishDownload()
 {
     QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
@@ -739,9 +787,7 @@ void DownloadManager::finishDownload()
                       [&allCode](const DownloadJob *job) {
                           if (job->downloadResult == Error)
                               allCode = Error;
-                          delete job;
                       });
-        activeJobs.clear();
         Q_EMIT allDownloadsFinished(allCode);
     }
     return;
