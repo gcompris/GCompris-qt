@@ -70,6 +70,10 @@ def generate_files_for_locale(changelog_qml, locale):
     children = appdata.findall(f'description//*{suffix}')
     with open(f'{locale_root_dir}/full_description.txt', 'w', encoding="utf8") as full_description_file:
         for c in children:
+            if locale == "en-US" and c.attrib:
+                continue
+            if c.tag == 'ul':
+                continue
             if c.tag == 'li':
                 full_description_file.write("- ")
             full_description_file.write(c.text + '\n')
