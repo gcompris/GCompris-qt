@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (New images and coordinates)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,48 +15,33 @@ QtObject {
    property string instruction: qsTr("Transportation")
    property var levels: [
       {
-          "pixmapfile": "images/celerifere.svg",
+          "pixmapfile": "images/cugnot_fardier.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.2
-      },
-      {
-          "pixmapfile": "images/fardier.svg",
-          "x": 0.5,
-          "y": 0.65,
-          "width": 0.4,
-          "height": 0.2
+          "height": 0.3
       },
       {
           "pixmapfile": "images/Eole.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.2
-      },
-      {
-		  "text": qsTr("1791 Comte de Sivrac's Celerifere"),
-		  "x": "0.25",
-		  "y": 0.4,
-		  "width": "0.4",
-          "height": 0.15,
-		  "type": "DisplayText"
+          "height": 0.3
       },
       {
 		  "text": qsTr("1769 Cugnot's fardier"),
-		  "x": "0.5",
-		  "y": 0.85,
-		  "width": "0.4",
-          "height": 0.15,
+		  "x": 0.25,
+		  "y": 0.4,
+		  "width": 0.4,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
-		  "text": qsTr("1880 Clement Ader's Eole"),
-		  "x": "0.75",
+		  "text": qsTr("1890 Clement Ader's Eole"),
+		  "x": 0.75,
 		  "y": 0.4,
-		  "width": "0.4",
-          "height": 0.15,
+		  "width": 0.4,
+          "height": 0.075,
 		  "type": "DisplayText"
       }
    ]

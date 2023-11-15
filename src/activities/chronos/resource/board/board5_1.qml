@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (New images and coordinates)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -15,15 +16,15 @@ QtObject {
    property var levels: [
       {
           "pixmapfile": "images/helico_cornu.svg",
-          "x": 0.75,
-          "y": 0.2,
+          "x": 0.5,
+          "y": 0.65,
           "width": 0.4,
           "height": 0.2
       },
       {
           "pixmapfile": "images/Eole.svg",
-          "x": "0.5",
-          "y": "0.65",
+          "x": 0.75,
+          "y": 0.2,
           "width": 0.4,
           "height": 0.2
       },
@@ -36,24 +37,24 @@ QtObject {
       },
       {
 		  "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
-		  "x": "0.25",
+		  "x": 0.25,
 		  "y": 0.4,
-		  "width": "0.4",
+		  "width": 0.4,
           "height": 0.15,
 		  "type": "DisplayText"
       },
       {
-		  "text": qsTr("1880 Clement Ader's Eole"),
-		  "x": "0.5",
+		  "text": qsTr("1890 Clement Ader's Eole"),
+		  "x": 0.75,
+		  "y": 0.4,
+		  "width": 0.4,
+          "height": 0.15,
+		  "type": "DisplayText"
+      },
+      {
+		  "text": qsTr("1907 Paul Cornu First helicopter flight"),
+          "x": 0.5,
 		  "y": 0.85,
-		  "width": "0.4",
-          "height": 0.15,
-		  "type": "DisplayText"
-      },
-      {
-		  "text": qsTr("1906 Paul Cornu First helicopter flight"),
-          "x": 0.75,
-		  "y": 0.4,
           "width": 0.4,
           "height": 0.15,
 		  "type": "DisplayText"

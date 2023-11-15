@@ -994,25 +994,41 @@ Files: src/activities/chronos/chronos.svg
 Copyright: 2020 Timothée Giet
 License: CC-BY-SA-4.0
 
-# All except tuxtree-*.svg, moon-*.svg, garden-*.svg and seasons-*.svg
-Files: src/activities/chronos/resource/images/*
+Files: src/activities/chronos/resource/images/1955ds19.svg
+ src/activities/chronos/resource/images/bell_X1.svg
+ src/activities/chronos/resource/images/benz1885.svg
+ src/activities/chronos/resource/images/bleriot.svg
+ src/activities/chronos/resource/images/bolle1878.svg
+ src/activities/chronos/resource/images/Eole.svg
+ src/activities/chronos/resource/images/helico_cornu.svg
+ src/activities/chronos/resource/images/lancia1923.svg
+ src/activities/chronos/resource/images/lindbergh.svg
+ src/activities/chronos/resource/images/mongolfiere.svg
+ src/activities/chronos/resource/images/rafale.svg
+ src/activities/chronos/resource/images/renault1899.svg
+ src/activities/chronos/resource/images/wright_flyer.svg
 Copyright: 2016 Franck Doucet
 License: GPL-3.0-only
 
-Files: src/activities/chronos/resource/images/tuxtree-*.svg
-Copyright: 2020 Timothée Giet
-License: CC-BY-SA-4.0
-
-Files: src/activities/chronos/resource/images/garden-*.svg
-Copyright: 2023 Timothée Giet
-License: CC-BY-SA-4.0
-
-Files: src/activities/chronos/resource/images/moon-*.svg
-Copyright: 2023 Timothée Giet
-License: CC-BY-SA-4.0
-
-Files: src/activities/chronos/resource/images/seasons-*.svg
-Copyright: 2023 Timothée Giet
+Files: src/activities/chronos/resource/images/cugnot_fardier.svg
+ src/activities/chronos/resource/images/garden-01.svg
+ src/activities/chronos/resource/images/garden-02.svg
+ src/activities/chronos/resource/images/garden-03.svg
+ src/activities/chronos/resource/images/garden-04.svg
+ src/activities/chronos/resource/images/moon-01.svg
+ src/activities/chronos/resource/images/moon-02.svg
+ src/activities/chronos/resource/images/moon-03.svg
+ src/activities/chronos/resource/images/moon-04.svg
+ src/activities/chronos/resource/images/seasons-autumn.svg
+ src/activities/chronos/resource/images/seasons-spring.svg
+ src/activities/chronos/resource/images/seasons-summer.svg
+ src/activities/chronos/resource/images/seasons-winter.svg
+ src/activities/chronos/resource/images/stephenson_rocket.svg
+ src/activities/chronos/resource/images/tuxtree-01.svg
+ src/activities/chronos/resource/images/tuxtree-02.svg
+ src/activities/chronos/resource/images/tuxtree-03.svg
+ src/activities/chronos/resource/images/tuxtree-04.svg
+Copyright: 2020-2023 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/clickanddraw/clickanddraw.svg

@@ -16,47 +16,47 @@ QtObject {
    property var levels: [
       {
           "pixmapfile": "images/Eole.svg",
-          "x": "0.25",
-          "y": "0.2",
+          "x": 0.25,
+          "y": 0.2,
           "width": 0.4,
-          "height": 0.2
+          "height": 0.3
       },
       {
           "pixmapfile": "images/wright_flyer.svg",
-          "x": 0.5,
-          "y": 0.65,
-          "width": 0.4,
-          "height": 0.2
-      },
-      {
-          "pixmapfile": "images/bleriot.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
-          "height": 0.2
+          "height": 0.3
       },
       {
-		  "text": qsTr("1880 Clement Ader's Eole"),
-		  "x": "0.25",
+          "pixmapfile": "images/bleriot.svg",
+          "x": 0.5,
+          "y": 0.65,
+          "width": 0.4,
+          "height": 0.3
+      },
+      {
+		  "text": qsTr("1890 Clement Ader's Eole"),
+		  "x": 0.25,
 		  "y": 0.4,
-		  "width": "0.4",
-          "height": "0.15",
+		  "width": 0.4,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
-		  "text": qsTr("1903 The Wright brothers' Flyer III"),
-          "x": 0.5,
-		  "y": 0.85,
-		  "width": "0.4",
-          "height": "0.15",
+		  "text": qsTr("1905 The Wright brothers' Flyer III"),
+          "x": 0.75,
+		  "y": 0.4,
+		  "width": 0.4,
+          "height": 0.075,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1909 Louis Bleriot crosses the English Channel"),
-		  "x": "0.75",
-		  "y": 0.4,
-		  "width": "0.4",
-          "height": "0.15",
+		  "x": 0.5,
+		  "y": 0.85,
+		  "width": 0.4,
+          "height": 0.075,
 		  "type": "DisplayText"
       }
    ]
