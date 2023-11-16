@@ -8447,9 +8447,8 @@ msgid ""
 "The jaguar's jaw is well developed. Because of this, it has the strongest "
 "bite of all the felines, being able to break even a tortoise shell!"
 msgstr ""
-"La mandíbula del jaguar està ben desenvolupada. Per a açò, té la mossegada "
-"més forta de tots els felins, podent trencar fins i tot la closca d'una "
-"tortuga."
+"La mandíbula del jaguar està ben desenvolupada. Per açò, té la mossegada més "
+"forta de tots els felins, podent trencar fins i tot la closca d'una tortuga."
 
 # Nota: https://ca.wikipedia.org/wiki/Eri%C3%A7%C3%B3
 #: activities/explore_world_animals/resource/board/board1.qml:30
@@ -14556,7 +14555,7 @@ msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"Si està activada l'opció «Mostra la imatge que es busca com un consell» en "
+"Si se selecciona l'opció «Mostra la imatge que es busca com un consell» en "
 "cada intent equivocat, es donarà a conéixer una part de la imatge que "
 "representa la paraula."
 
@@ -14567,7 +14566,7 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"Si està activada l'opció «Llig les paraules que s'han de buscar...», i si "
+"Si se selecciona l'opció «Llig les paraules que s'han de buscar...», i si "
 "està disponible la veu corresponent, escoltareu la paraula que s'ha de "
 "trobar quan falten tres intents."
 
@@ -18382,7 +18381,8 @@ msgstr "Teclat virtual"
 #: activities/menu/ConfigurationItem.qml:303
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of sound files"
-msgstr "Habilita les baixades/actualitzacions automàtiques dels fitxers de so"
+msgstr ""
+"Habilita les baixades o actualitzacions automàtiques dels fitxers de so"
 
 #: activities/menu/ConfigurationItem.qml:315
 msgctxt "ConfigurationItem|"
