@@ -4670,181 +4670,183 @@ msgctxt "board1_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board2_0.qml:14
+#: activities/chronos/resource/board/board2_0.qml:15
 msgctxt "board2_0|"
 msgid "The 4 Seasons"
 msgstr "Οι τέσσερις εποχές"
 
-#: activities/chronos/resource/board/board2_0.qml:45
+#: activities/chronos/resource/board/board2_0.qml:46
 msgctxt "board2_0|"
 msgid "Spring"
 msgstr "Άνοιξη"
 
-#: activities/chronos/resource/board/board2_0.qml:53
+#: activities/chronos/resource/board/board2_0.qml:54
 msgctxt "board2_0|"
 msgid "Summer"
 msgstr "Καλοκαίρι"
 
-#: activities/chronos/resource/board/board2_0.qml:61
+#: activities/chronos/resource/board/board2_0.qml:62
 msgctxt "board2_0|"
 msgid "Autumn"
 msgstr "Φθινόπωρο"
 
-#: activities/chronos/resource/board/board2_0.qml:69
+#: activities/chronos/resource/board/board2_0.qml:70
 msgctxt "board2_0|"
 msgid "Winter"
 msgstr "Χειμώνας"
 
-#: activities/chronos/resource/board/board3_0.qml:14
+#: activities/chronos/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Gardening"
 msgstr "Κηπουρική"
 
-#: activities/chronos/resource/board/board3_0.qml:45
+#: activities/chronos/resource/board/board3_0.qml:46
 msgctxt "board3_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board3_0.qml:53
+#: activities/chronos/resource/board/board3_0.qml:54
 msgctxt "board3_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board3_0.qml:61
+#: activities/chronos/resource/board/board3_0.qml:62
 msgctxt "board3_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board3_0.qml:69
+#: activities/chronos/resource/board/board3_0.qml:70
 msgctxt "board3_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board4_0.qml:14
+#: activities/chronos/resource/board/board4_0.qml:15
 msgctxt "board4_0|"
 msgid "Tux and the apple tree"
 msgstr "Ο Tux και η μηλιά"
 
-#: activities/chronos/resource/board/board4_0.qml:45
+#: activities/chronos/resource/board/board4_0.qml:46
 msgctxt "board4_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board4_0.qml:53
+#: activities/chronos/resource/board/board4_0.qml:54
 msgctxt "board4_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board4_0.qml:61
+#: activities/chronos/resource/board/board4_0.qml:62
 msgctxt "board4_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board4_0.qml:69
+#: activities/chronos/resource/board/board4_0.qml:70
 msgctxt "board4_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board5_0.qml:15
+#: activities/chronos/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
 msgstr "Τοποθέτησε τις εικόνες στη σειρά με βάση τη χρονολογία εφεύρεσης."
 
-#: activities/chronos/resource/board/board5_0.qml:32
+#: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Η ρουκέτα του Στέφενσον - ατμομηχανή"
 
-#: activities/chronos/resource/board/board5_0.qml:40
+#: activities/chronos/resource/board/board5_0.qml:41
 msgctxt "board5_0|"
 msgid "1769 Cugnot's fardier"
 msgstr ""
 "1769 Τρίτροχο αυτοκίνητο\n"
 "με ατμό του Cugnot"
 
-#: activities/chronos/resource/board/board5_0.qml:48
+#: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
 msgid "Transportation"
 msgstr "Μεταφορά"
 
-#: activities/chronos/resource/board/board5_1.qml:14
+#: activities/chronos/resource/board/board5_1.qml:15
 msgctxt "board5_1|"
 msgid "Transportation"
 msgstr "Μεταφορά"
 
-#: activities/chronos/resource/board/board5_1.qml:38
+#: activities/chronos/resource/board/board5_1.qml:39
 msgctxt "board5_1|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Αδερφοί Μονγκολφιέ - αεροστατικά μπαλόνια"
 
-#: activities/chronos/resource/board/board5_1.qml:46
+#: activities/chronos/resource/board/board5_1.qml:47
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "1880 Η πτητική μηχανή του Clement Ader"
 
-#: activities/chronos/resource/board/board5_1.qml:54
+#: activities/chronos/resource/board/board5_1.qml:55
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
-msgid "1906 Paul Cornu First helicopter flight"
+msgid "1907 Paul Cornu First helicopter flight"
 msgstr "1906 Πολ Κορνού - πρώτη πτήση ελικοπτέρου"
 
-#: activities/chronos/resource/board/board5_2.qml:14
+#: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
 msgid "Transportation"
 msgstr "Μεταφορά"
 
-#: activities/chronos/resource/board/board5_2.qml:38
-msgctxt "board5_2|"
-msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "1791 Κοντ ντε Σιβράκ - Celerifere (το πρώτο ποδήλατο)"
-
-#: activities/chronos/resource/board/board5_2.qml:46
+#: activities/chronos/resource/board/board5_2.qml:32
 msgctxt "board5_2|"
 msgid "1769 Cugnot's fardier"
 msgstr ""
 "1769 Τρίτροχο αυτοκίνητο\n"
 "με ατμό του Cugnot"
 
-#: activities/chronos/resource/board/board5_2.qml:54
+#: activities/chronos/resource/board/board5_2.qml:40
+#, fuzzy
+#| msgctxt "board5_2|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "1880 Η πτητική μηχανή του Clement Ader"
 
-#: activities/chronos/resource/board/board5_3.qml:14
+#: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
 msgid "Transportation"
 msgstr "Μεταφορά"
 
-#: activities/chronos/resource/board/board5_3.qml:38
-msgctxt "board5_3|"
-msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "1791 Κοντ ντε Σιβράκ - Celerifere (το πρώτο ποδήλατο)"
-
-#: activities/chronos/resource/board/board5_3.qml:46
+#: activities/chronos/resource/board/board5_3.qml:32
 msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Αδερφοί Μονγκολφιέ - αεροστατικά μπαλόνια"
 
-#: activities/chronos/resource/board/board5_3.qml:54
+#: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Η ρουκέτα του Στέφενσον - ατμομηχανή"
 
-#: activities/chronos/resource/board/board5_4.qml:14
+#: activities/chronos/resource/board/board5_4.qml:15
 msgctxt "board5_4|"
 msgid "Transportation"
 msgstr "Μεταφορά"
 
-#: activities/chronos/resource/board/board5_4.qml:38
+#: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Η ρουκέτα του Στέφενσον - ατμομηχανή"
 
-#: activities/chronos/resource/board/board5_4.qml:46
+#: activities/chronos/resource/board/board5_4.qml:47
+#, fuzzy
+#| msgctxt "board5_4|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "1880 Η πτητική μηχανή του Clement Ader"
 
-#: activities/chronos/resource/board/board5_4.qml:54
+#: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
 msgstr ""
@@ -4857,13 +4859,19 @@ msgid "Aviation"
 msgstr "Αεροπορία"
 
 #: activities/chronos/resource/board/board6_0.qml:39
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "1880 Η πτητική μηχανή του Clement Ader"
 
 #: activities/chronos/resource/board/board6_0.qml:47
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
-msgid "1903 The Wright brothers' Flyer III"
+msgid "1905 The Wright brothers' Flyer III"
 msgstr "1903 Η ιπτάμενη μηχανή III των αδερφών Wright"
 
 #: activities/chronos/resource/board/board6_0.qml:55
@@ -4887,29 +4895,32 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Ο Τσαρλς Λίντμπεργκ διασχίζει τον Ατλαντικό Ωκεανό"
 
 #: activities/chronos/resource/board/board6_1.qml:54
+#, fuzzy
+#| msgctxt "board6_1|"
+#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
-msgid "1934 Hélène Boucher's speed record of 444km/h"
+msgid "1934 Hélène Boucher's speed record of 445km/h"
 msgstr "1934 Η Χελέν Μπουσέ κάνει ρεκόρ ταχύτητας με αεροπλάνο - 444 χμ./ώ."
 
-#: activities/chronos/resource/board/board6_2.qml:14
+#: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
 msgid "Cars"
 msgstr "Αυτοκίνητα"
 
-#: activities/chronos/resource/board/board6_2.qml:38
+#: activities/chronos/resource/board/board6_2.qml:39
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
 msgstr ""
 "1878 Ο Αμεντέ Μπολέ κατασκευάζει το πρώτο ατμοκίνητο αυτοκίνητο, το Λα Μανσέλ"
 
-#: activities/chronos/resource/board/board6_2.qml:46
+#: activities/chronos/resource/board/board6_2.qml:47
 msgctxt "board6_2|"
 msgid "1769 Cugnot's fardier"
 msgstr ""
 "1769 Τρίτροχο αυτοκίνητο\n"
 "με ατμό του Cugnot"
 
-#: activities/chronos/resource/board/board6_2.qml:54
+#: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr "1885 Ο Καρλ Μπεντζ κατασκευάζει το πρώτο βενζινοκίνητο αυτοκίνητο"
@@ -4920,8 +4931,11 @@ msgid "Cars"
 msgstr "Αυτοκίνητα"
 
 #: activities/chronos/resource/board/board6_3.qml:38
+#, fuzzy
+#| msgctxt "board6_3|"
+#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
-msgid "1899 Renault voiturette"
+msgid "1898 Renault voiturette"
 msgstr ""
 "1899 Κατασκευάζεται το πρώτο αυτοκίνητο της Ρενό, το μοντέλο Βουετουρέτ"
 
@@ -26949,6 +26963,14 @@ msgstr "Παράλειψη"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#~ msgctxt "board5_2|"
+#~ msgid "1791 Comte de Sivrac's Celerifere"
+#~ msgstr "1791 Κοντ ντε Σιβράκ - Celerifere (το πρώτο ποδήλατο)"
+
+#~ msgctxt "board5_3|"
+#~ msgid "1791 Comte de Sivrac's Celerifere"
+#~ msgstr "1791 Κοντ ντε Σιβράκ - Celerifere (το πρώτο ποδήλατο)"
 
 #~ msgctxt "Warning|"
 #~ msgid "%1 is divisible by %2"

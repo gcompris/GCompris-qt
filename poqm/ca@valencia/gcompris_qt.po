@@ -4744,191 +4744,191 @@ msgctxt "board1_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board2_0.qml:14
+#: activities/chronos/resource/board/board2_0.qml:15
 msgctxt "board2_0|"
 msgid "The 4 Seasons"
 msgstr "Les quatre estacions"
 
-#: activities/chronos/resource/board/board2_0.qml:45
+#: activities/chronos/resource/board/board2_0.qml:46
 msgctxt "board2_0|"
 msgid "Spring"
 msgstr "Primavera"
 
-#: activities/chronos/resource/board/board2_0.qml:53
+#: activities/chronos/resource/board/board2_0.qml:54
 msgctxt "board2_0|"
 msgid "Summer"
 msgstr "Estiu"
 
-#: activities/chronos/resource/board/board2_0.qml:61
+#: activities/chronos/resource/board/board2_0.qml:62
 msgctxt "board2_0|"
 msgid "Autumn"
 msgstr "Tardor"
 
-#: activities/chronos/resource/board/board2_0.qml:69
+#: activities/chronos/resource/board/board2_0.qml:70
 msgctxt "board2_0|"
 msgid "Winter"
 msgstr "Hivern"
 
-#: activities/chronos/resource/board/board3_0.qml:14
+#: activities/chronos/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Gardening"
 msgstr "Jardineria"
 
-#: activities/chronos/resource/board/board3_0.qml:45
+#: activities/chronos/resource/board/board3_0.qml:46
 msgctxt "board3_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board3_0.qml:53
+#: activities/chronos/resource/board/board3_0.qml:54
 msgctxt "board3_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board3_0.qml:61
+#: activities/chronos/resource/board/board3_0.qml:62
 msgctxt "board3_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board3_0.qml:69
+#: activities/chronos/resource/board/board3_0.qml:70
 msgctxt "board3_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board4_0.qml:14
+#: activities/chronos/resource/board/board4_0.qml:15
 msgctxt "board4_0|"
 msgid "Tux and the apple tree"
 msgstr "En Tux i el pomer"
 
-#: activities/chronos/resource/board/board4_0.qml:45
+#: activities/chronos/resource/board/board4_0.qml:46
 msgctxt "board4_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board4_0.qml:53
+#: activities/chronos/resource/board/board4_0.qml:54
 msgctxt "board4_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board4_0.qml:61
+#: activities/chronos/resource/board/board4_0.qml:62
 msgctxt "board4_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board4_0.qml:69
+#: activities/chronos/resource/board/board4_0.qml:70
 msgctxt "board4_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board5_0.qml:15
+#: activities/chronos/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
 msgstr "Col·loca cada imatge sobre la data en què es va inventar."
 
 # Nota: http://en.wikipedia.org/wiki/Stephenson's_Rocket
-#: activities/chronos/resource/board/board5_0.qml:32
+#: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "Locomotora de vapor Rocket de Stephenson, 1829"
 
 # Nota: http://ca.wikipedia.org/wiki/Nicholas-Joseph_Cugnot
-#: activities/chronos/resource/board/board5_0.qml:40
+#: activities/chronos/resource/board/board5_0.qml:41
 msgctxt "board5_0|"
 msgid "1769 Cugnot's fardier"
 msgstr "Cotxe de Cugnot, 1769"
 
-#: activities/chronos/resource/board/board5_0.qml:48
+#: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
 msgid "Transportation"
 msgstr "Transports"
 
-#: activities/chronos/resource/board/board5_1.qml:14
+#: activities/chronos/resource/board/board5_1.qml:15
 msgctxt "board5_1|"
 msgid "Transportation"
 msgstr "Transports"
 
 # Nota: http://ca.wikipedia.org/wiki/Germans_Montgolfier
-#: activities/chronos/resource/board/board5_1.qml:38
+#: activities/chronos/resource/board/board5_1.qml:39
 msgctxt "board5_1|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globus d'aire calent dels germans Montgolfier, 1783"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
-#: activities/chronos/resource/board/board5_1.qml:46
+#: activities/chronos/resource/board/board5_1.qml:47
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "«L'Èol», d'en Clement Ader, 1880"
 
 # Nota: http://en.wikipedia.org/wiki/Paul_Cornu
-#: activities/chronos/resource/board/board5_1.qml:54
+#: activities/chronos/resource/board/board5_1.qml:55
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
-msgid "1906 Paul Cornu First helicopter flight"
+msgid "1907 Paul Cornu First helicopter flight"
 msgstr "Primer vol en helicòpter de Paul Cornu, 1906"
 
-#: activities/chronos/resource/board/board5_2.qml:14
+#: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
 msgid "Transportation"
 msgstr "Transports"
 
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#: activities/chronos/resource/board/board5_2.qml:38
-msgctxt "board5_2|"
-msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "«Celerifere» del compte de Sivrac, 1791"
-
 # Nota: http://ca.wikipedia.org/wiki/Nicholas-Joseph_Cugnot
-#: activities/chronos/resource/board/board5_2.qml:46
+#: activities/chronos/resource/board/board5_2.qml:32
 msgctxt "board5_2|"
 msgid "1769 Cugnot's fardier"
 msgstr "Cotxe de Cugnot, 1769"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
-#: activities/chronos/resource/board/board5_2.qml:54
+#: activities/chronos/resource/board/board5_2.qml:40
+#, fuzzy
+#| msgctxt "board5_2|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "«L'Èol», d'en Clement Ader, 1880"
 
-#: activities/chronos/resource/board/board5_3.qml:14
+#: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
 msgid "Transportation"
 msgstr "Transports"
 
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#: activities/chronos/resource/board/board5_3.qml:38
-msgctxt "board5_3|"
-msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "«Celerifere» del compte de Sivrac, 1791"
-
 # Nota: http://ca.wikipedia.org/wiki/Germans_Montgolfier
-#: activities/chronos/resource/board/board5_3.qml:46
+#: activities/chronos/resource/board/board5_3.qml:32
 msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globus d'aire calent dels germans Montgolfier, 1783"
 
 # Nota: http://en.wikipedia.org/wiki/Stephenson's_Rocket
-#: activities/chronos/resource/board/board5_3.qml:54
+#: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "Locomotora de vapor Rocket de Stephenson, 1829"
 
-#: activities/chronos/resource/board/board5_4.qml:14
+#: activities/chronos/resource/board/board5_4.qml:15
 msgctxt "board5_4|"
 msgid "Transportation"
 msgstr "Transports"
 
 # Nota: http://en.wikipedia.org/wiki/Stephenson's_Rocket
-#: activities/chronos/resource/board/board5_4.qml:38
+#: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "Locomotora de vapor Rocket de Stephenson, 1829"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
-#: activities/chronos/resource/board/board5_4.qml:46
+#: activities/chronos/resource/board/board5_4.qml:47
+#, fuzzy
+#| msgctxt "board5_4|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "«L'Èol», d'en Clement Ader, 1880"
 
 # Nota: http://ca.wikipedia.org/wiki/Nicholas-Joseph_Cugnot
-#: activities/chronos/resource/board/board5_4.qml:54
+#: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
 msgstr "Cotxe de Cugnot, 1769"
@@ -4940,14 +4940,20 @@ msgstr "Aviació"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board6_0.qml:39
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "«L'Èol», d'en Clement Ader, 1880"
 
 # Nota: http://en.wikipedia.org/wiki/Wright_Flyer
 #: activities/chronos/resource/board/board6_0.qml:47
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
-msgid "1903 The Wright brothers' Flyer III"
+msgid "1905 The Wright brothers' Flyer III"
 msgstr "Flyer III dels germans Wright, 1903"
 
 # Nota: http://ca.wikipedia.org/wiki/Louis_Blériot
@@ -4975,30 +4981,33 @@ msgstr "Charles Lindbergh creua l'Oceà Atlàntic, 1927"
 
 # Nota: http://en.wikipedia.org/wiki/Hélène_Boucher
 #: activities/chronos/resource/board/board6_1.qml:54
+#, fuzzy
+#| msgctxt "board6_1|"
+#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
-msgid "1934 Hélène Boucher's speed record of 444km/h"
+msgid "1934 Hélène Boucher's speed record of 445km/h"
 msgstr "Rècord de velocitat a 444 km/h d'Helene Boucher, 1934"
 
-#: activities/chronos/resource/board/board6_2.qml:14
+#: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
 msgid "Cars"
 msgstr "Cotxes"
 
 # Nota: http://en.wikipedia.org/wiki/Léon_Bollée
 # Nota: http://en.wikipedia.org/wiki/Amédée_Bollée#La_Mancelle
-#: activities/chronos/resource/board/board6_2.qml:38
+#: activities/chronos/resource/board/board6_2.qml:39
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
 msgstr "Amédée Bollée «La Mancelle», 1878"
 
 # Nota: http://ca.wikipedia.org/wiki/Nicholas-Joseph_Cugnot
-#: activities/chronos/resource/board/board6_2.qml:46
+#: activities/chronos/resource/board/board6_2.qml:47
 msgctxt "board6_2|"
 msgid "1769 Cugnot's fardier"
 msgstr "Cotxe de Cugnot, 1769"
 
 # Nota: http://en.wikipedia.org/wiki/Benz_Patent-Motorwagen
-#: activities/chronos/resource/board/board6_2.qml:54
+#: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr "El primer cotxe de benzina de Benz, 1885"
@@ -5010,8 +5019,11 @@ msgstr "Cotxes"
 
 # Nota: http://en.wikipedia.org/wiki/Renault_Voiturette
 #: activities/chronos/resource/board/board6_3.qml:38
+#, fuzzy
+#| msgctxt "board6_3|"
+#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
-msgid "1899 Renault voiturette"
+msgid "1898 Renault voiturette"
 msgstr "Renault Voiturette, 1899"
 
 # Nota: http://ca.wikipedia.org/wiki/Lancia_Lambda
@@ -8570,9 +8582,8 @@ msgid ""
 "The jaguar's jaw is well developed. Because of this, it has the strongest "
 "bite of all the felines, being able to break even a tortoise shell!"
 msgstr ""
-"La mandíbula del jaguar està ben desenvolupada. Per a açò, té la mossegada "
-"més forta de tots els felins, podent trencar fins i tot la closca d'una "
-"tortuga."
+"La mandíbula del jaguar està ben desenvolupada. Per açò, té la mossegada més "
+"forta de tots els felins, podent trencar fins i tot la closca d'una tortuga."
 
 # Nota: https://ca.wikipedia.org/wiki/Eri%C3%A7%C3%B3
 #: activities/explore_world_animals/resource/board/board1.qml:30
@@ -14919,7 +14930,7 @@ msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"Si està activada l'opció «Mostra la imatge que es busca com un consell» en "
+"Si se selecciona l'opció «Mostra la imatge que es busca com un consell» en "
 "cada intent equivocat, es donarà a conéixer una part de la imatge que "
 "representa la paraula."
 
@@ -14930,7 +14941,7 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"Si està activada l'opció «Llig les paraules que s'han de buscar...», i si "
+"Si se selecciona l'opció «Llig les paraules que s'han de buscar...», i si "
 "està disponible la veu corresponent, escoltareu la paraula que s'ha de "
 "trobar quan falten tres intents."
 
@@ -26993,3 +27004,13 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
+
+# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
+#~ msgctxt "board5_2|"
+#~ msgid "1791 Comte de Sivrac's Celerifere"
+#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
+
+# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
+#~ msgctxt "board5_3|"
+#~ msgid "1791 Comte de Sivrac's Celerifere"
+#~ msgstr "«Celerifere» del compte de Sivrac, 1791"

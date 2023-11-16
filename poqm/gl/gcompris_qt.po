@@ -4563,177 +4563,179 @@ msgctxt "board1_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board2_0.qml:14
+#: activities/chronos/resource/board/board2_0.qml:15
 msgctxt "board2_0|"
 msgid "The 4 Seasons"
 msgstr "As 4 estacións"
 
-#: activities/chronos/resource/board/board2_0.qml:45
+#: activities/chronos/resource/board/board2_0.qml:46
 msgctxt "board2_0|"
 msgid "Spring"
 msgstr "Primavera"
 
-#: activities/chronos/resource/board/board2_0.qml:53
+#: activities/chronos/resource/board/board2_0.qml:54
 msgctxt "board2_0|"
 msgid "Summer"
 msgstr "Verán"
 
-#: activities/chronos/resource/board/board2_0.qml:61
+#: activities/chronos/resource/board/board2_0.qml:62
 msgctxt "board2_0|"
 msgid "Autumn"
 msgstr "Outono"
 
-#: activities/chronos/resource/board/board2_0.qml:69
+#: activities/chronos/resource/board/board2_0.qml:70
 msgctxt "board2_0|"
 msgid "Winter"
 msgstr "Inverno"
 
-#: activities/chronos/resource/board/board3_0.qml:14
+#: activities/chronos/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
 msgid "Gardening"
 msgstr "Xardinaxe"
 
-#: activities/chronos/resource/board/board3_0.qml:45
+#: activities/chronos/resource/board/board3_0.qml:46
 msgctxt "board3_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board3_0.qml:53
+#: activities/chronos/resource/board/board3_0.qml:54
 msgctxt "board3_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board3_0.qml:61
+#: activities/chronos/resource/board/board3_0.qml:62
 msgctxt "board3_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board3_0.qml:69
+#: activities/chronos/resource/board/board3_0.qml:70
 msgctxt "board3_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board4_0.qml:14
+#: activities/chronos/resource/board/board4_0.qml:15
 msgctxt "board4_0|"
 msgid "Tux and the apple tree"
 msgstr "Tux e a maceira"
 
-#: activities/chronos/resource/board/board4_0.qml:45
+#: activities/chronos/resource/board/board4_0.qml:46
 msgctxt "board4_0|"
 msgid "1"
 msgstr "1"
 
-#: activities/chronos/resource/board/board4_0.qml:53
+#: activities/chronos/resource/board/board4_0.qml:54
 msgctxt "board4_0|"
 msgid "2"
 msgstr "2"
 
-#: activities/chronos/resource/board/board4_0.qml:61
+#: activities/chronos/resource/board/board4_0.qml:62
 msgctxt "board4_0|"
 msgid "3"
 msgstr "3"
 
-#: activities/chronos/resource/board/board4_0.qml:69
+#: activities/chronos/resource/board/board4_0.qml:70
 msgctxt "board4_0|"
 msgid "4"
 msgstr "4"
 
-#: activities/chronos/resource/board/board5_0.qml:15
+#: activities/chronos/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
 msgstr "Coloca cada obxecto na data na que se inventou."
 
-#: activities/chronos/resource/board/board5_0.qml:32
+#: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "A locomotora de vapor Stephenson's Rocket de 1829"
 
-#: activities/chronos/resource/board/board5_0.qml:40
+#: activities/chronos/resource/board/board5_0.qml:41
 msgctxt "board5_0|"
 msgid "1769 Cugnot's fardier"
 msgstr "Carro de Cugnot de 1769"
 
-#: activities/chronos/resource/board/board5_0.qml:48
+#: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
 msgid "Transportation"
 msgstr "Transporte"
 
-#: activities/chronos/resource/board/board5_1.qml:14
+#: activities/chronos/resource/board/board5_1.qml:15
 msgctxt "board5_1|"
 msgid "Transportation"
 msgstr "Transporte"
 
-#: activities/chronos/resource/board/board5_1.qml:38
+#: activities/chronos/resource/board/board5_1.qml:39
 msgctxt "board5_1|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globo de aire quente dos irmáns Montgolfier de 1783"
 
-#: activities/chronos/resource/board/board5_1.qml:46
+#: activities/chronos/resource/board/board5_1.qml:47
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "Éole de Clement Ader de 1880"
 
-#: activities/chronos/resource/board/board5_1.qml:54
+#: activities/chronos/resource/board/board5_1.qml:55
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
-msgid "1906 Paul Cornu First helicopter flight"
+msgid "1907 Paul Cornu First helicopter flight"
 msgstr "Primeiro voo en helicóptero por Paul Cornu en 1906"
 
-#: activities/chronos/resource/board/board5_2.qml:14
+#: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
 msgid "Transportation"
 msgstr "Transporte"
 
-#: activities/chronos/resource/board/board5_2.qml:38
-msgctxt "board5_2|"
-msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "Celerífero de Comte de Sivrac de 1791"
-
-#: activities/chronos/resource/board/board5_2.qml:46
+#: activities/chronos/resource/board/board5_2.qml:32
 msgctxt "board5_2|"
 msgid "1769 Cugnot's fardier"
 msgstr "Carro de Cugnot de 1769"
 
-#: activities/chronos/resource/board/board5_2.qml:54
+#: activities/chronos/resource/board/board5_2.qml:40
+#, fuzzy
+#| msgctxt "board5_2|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "Éole de Clement Ader de 1880"
 
-#: activities/chronos/resource/board/board5_3.qml:14
+#: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
 msgid "Transportation"
 msgstr "Transporte"
 
-#: activities/chronos/resource/board/board5_3.qml:38
-msgctxt "board5_3|"
-msgid "1791 Comte de Sivrac's Celerifere"
-msgstr "Celerífero de Comte de Sivrac de 1791"
-
-#: activities/chronos/resource/board/board5_3.qml:46
+#: activities/chronos/resource/board/board5_3.qml:32
 msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globo de aire quente dos irmáns Montgolfier de 1783"
 
-#: activities/chronos/resource/board/board5_3.qml:54
+#: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "A locomotora de vapor Stephenson's Rocket de 1829"
 
-#: activities/chronos/resource/board/board5_4.qml:14
+#: activities/chronos/resource/board/board5_4.qml:15
 msgctxt "board5_4|"
 msgid "Transportation"
 msgstr "Transporte"
 
-#: activities/chronos/resource/board/board5_4.qml:38
+#: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "A locomotora de vapor Stephenson's Rocket de 1829"
 
-#: activities/chronos/resource/board/board5_4.qml:46
+#: activities/chronos/resource/board/board5_4.qml:47
+#, fuzzy
+#| msgctxt "board5_4|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "Éole de Clement Ader de 1880"
 
-#: activities/chronos/resource/board/board5_4.qml:54
+#: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
 msgstr "Carro de Cugnot de 1769"
@@ -4744,13 +4746,19 @@ msgid "Aviation"
 msgstr "Aviación"
 
 #: activities/chronos/resource/board/board6_0.qml:39
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
-msgid "1880 Clement Ader's Eole"
+msgid "1890 Clement Ader's Eole"
 msgstr "Éole de Clement Ader de 1880"
 
 #: activities/chronos/resource/board/board6_0.qml:47
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
-msgid "1903 The Wright brothers' Flyer III"
+msgid "1905 The Wright brothers' Flyer III"
 msgstr "Flyer III dos irmáns Wright de 1903"
 
 #: activities/chronos/resource/board/board6_0.qml:55
@@ -4774,26 +4782,29 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "Charles Lindbergh cruza o Océano Atlántico en 1927"
 
 #: activities/chronos/resource/board/board6_1.qml:54
+#, fuzzy
+#| msgctxt "board6_1|"
+#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
-msgid "1934 Hélène Boucher's speed record of 444km/h"
+msgid "1934 Hélène Boucher's speed record of 445km/h"
 msgstr "Récord de velocidade de 444km/h logrado por Hélène Boucher en 1934"
 
-#: activities/chronos/resource/board/board6_2.qml:14
+#: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
 msgid "Cars"
 msgstr "Coches"
 
-#: activities/chronos/resource/board/board6_2.qml:38
+#: activities/chronos/resource/board/board6_2.qml:39
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
 msgstr "La Mancelle de Amédée Bollée de 1878"
 
-#: activities/chronos/resource/board/board6_2.qml:46
+#: activities/chronos/resource/board/board6_2.qml:47
 msgctxt "board6_2|"
 msgid "1769 Cugnot's fardier"
 msgstr "Carro de Cugnot de 1769"
 
-#: activities/chronos/resource/board/board6_2.qml:54
+#: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr "O primeiro motor de combustíbel de Benz de 1885"
@@ -4804,8 +4815,11 @@ msgid "Cars"
 msgstr "Coches"
 
 #: activities/chronos/resource/board/board6_3.qml:38
+#, fuzzy
+#| msgctxt "board6_3|"
+#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
-msgid "1899 Renault voiturette"
+msgid "1898 Renault voiturette"
 msgstr "Microcarro de Renault de 1899"
 
 #: activities/chronos/resource/board/board6_3.qml:46
@@ -29386,6 +29400,14 @@ msgstr "Saltar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "board5_2|"
+#~ msgid "1791 Comte de Sivrac's Celerifere"
+#~ msgstr "Celerífero de Comte de Sivrac de 1791"
+
+#~ msgctxt "board5_3|"
+#~ msgid "1791 Comte de Sivrac's Celerifere"
+#~ msgstr "Celerífero de Comte de Sivrac de 1791"
 
 #~ msgctxt "Warning|"
 #~ msgid "%1 is divisible by %2"
