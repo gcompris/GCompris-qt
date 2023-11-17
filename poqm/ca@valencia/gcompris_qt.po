@@ -15096,7 +15096,7 @@ msgstr "Troba el banjo"
 #: activities/instruments/instruments.js:206
 msgctxt "instruments|"
 msgid "Find the bongo"
-msgstr "Troba el bongo"
+msgstr "Troba els bongos"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
