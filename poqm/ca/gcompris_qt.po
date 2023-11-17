@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-10-27 11:16+0200\n"
+"PO-Revision-Date: 2023-11-16 12:54+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -4849,21 +4849,15 @@ msgstr "Globus d'aire calent dels germans Montgolfier, 1783"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://en.wikipedia.org/wiki/Paul_Cornu
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "Primer vol en helicòpter de Paul Cornu, 1906"
+msgstr "Primer vol en helicòpter de Paul Cornu, 1907"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4878,12 +4872,9 @@ msgstr "Cotxe de Cugnot, 1769"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4915,12 +4906,9 @@ msgstr "Locomotora de vapor Rocket de Stephenson, 1829"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://ca.wikipedia.org/wiki/Nicholas-Joseph_Cugnot
 #: activities/chronos/resource/board/board5_4.qml:55
@@ -4935,21 +4923,15 @@ msgstr "Aviació"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://en.wikipedia.org/wiki/Wright_Flyer
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "Flyer III dels germans Wright, 1903"
+msgstr "Flyer III dels germans Wright, 1905"
 
 # Nota: http://ca.wikipedia.org/wiki/Louis_Blériot
 #: activities/chronos/resource/board/board6_0.qml:55
@@ -4976,12 +4958,9 @@ msgstr "Charles Lindbergh creua l'Oceà Atlàntic, 1927"
 
 # Nota: http://en.wikipedia.org/wiki/Hélène_Boucher
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "Rècord de velocitat a 444 km/h d'Helene Boucher, 1934"
+msgstr "Rècord de velocitat a 445 km/h d'Helene Boucher, 1934"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5014,12 +4993,9 @@ msgstr "Cotxes"
 
 # Nota: http://en.wikipedia.org/wiki/Renault_Voiturette
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "Renault Voiturette, 1899"
+msgstr "Renault Voiturette, 1898"
 
 # Nota: http://ca.wikipedia.org/wiki/Lancia_Lambda
 #: activities/chronos/resource/board/board6_3.qml:46
@@ -26995,66 +26971,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
-
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1 és divisible per %2"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "i"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "Els múltiples de %1 inclouen el %2, "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "i %1 són els divisors de %2."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn to classify words according to their nature (grammatical class)."
-#~ msgstr ""
-#~ "Apreneu a classificar les paraules segons la seva natura (classe "
-#~ "gramatical)."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Classify words according to their nature (grammatical class)."
-#~ msgstr ""
-#~ "Classifiqueu les paraules segons la seva natura (classe gramatical)."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Assigns to each requested word a grammatical class."
-#~ msgstr "Assigna a cada paraula sol·licitada una classe gramatical."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Classify words according to their nature."
-#~ msgstr "Classifiqueu paraules segons la seva natura."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid ""
-#~ "Learn to classify words according to their nature (grammatical class)."
-#~ msgstr ""
-#~ "Apreneu a classificar les paraules segons la seva natura (classe "
-#~ "gramatical)."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Assign to each word a grammatical class from the list provided."
-#~ msgstr ""
-#~ "Assigneu a cada paraula una classe gramatical a partir de la llista "
-#~ "proporcionada."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn grammatical classes."
-#~ msgstr "Apreneu les classes gramaticals."

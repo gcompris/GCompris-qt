@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2023-10-31 22:31+0100\n"
+"PO-Revision-Date: 2023-11-16 20:19+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -4626,20 +4626,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 La varmaerbalono de fratoj Montgolfier"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eolo de Clement Ader"
+msgstr "1890 Eolo de Clement Ader"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Paul Cornu Unua helikoptera flugo"
+msgstr "1907 Paul Cornu Unua helikoptera flugo"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4652,12 +4646,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 La fardier de Cugnot"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eolo de Clement Ader"
+msgstr "1890 Eolo de Clement Ader"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4685,12 +4676,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 La Rocket Steam-lokomotivo de Stephenson"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eolo de Clement Ader"
+msgstr "1890 Eolo de Clement Ader"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4703,20 +4691,14 @@ msgid "Aviation"
 msgstr "Aviado"
 
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eolo de Clement Ader"
+msgstr "1890 Eolo de Clement Ader"
 
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Flyer III de la fratoj Wright"
+msgstr "1905 Flyer III de la fratoj Wright"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
@@ -4739,12 +4721,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh transiras Atlantikon"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 La rapidecrekordo de Hélène Boucher de 444 km/h"
+msgstr "1934 La rapidecrekordo de Hélène Boucher de 445 km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4772,12 +4751,9 @@ msgid "Cars"
 msgstr "Aŭtoj"
 
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault voiturette"
+msgstr "1898 Renault voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:46
 msgctxt "board6_3|"
@@ -26336,11 +26312,3 @@ msgstr "Salti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Komenci"
-
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Celerifere de Comte de Sivrac"
-
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Celerifere de Comte de Sivrac"

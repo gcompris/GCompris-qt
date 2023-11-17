@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-10-28 01:51+0300\n"
+"PO-Revision-Date: 2023-11-16 22:29+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.11.70\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4585,20 +4585,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Montgolfier kardeşlerin sıcak hava balonu"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader'in Eole uçağı"
+msgstr "1890 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Paul Cornu İlk helikopter uçuşu"
+msgstr "1907 Paul Cornu İlk helikopter uçuşu"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4611,12 +4605,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot'un buharlı vagonu"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader'in Eole uçağı"
+msgstr "1890 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4644,12 +4635,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stefen'ın Roket Buharlı Lokomotifi"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader'in Eole uçağı"
+msgstr "1890 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4662,20 +4650,14 @@ msgid "Aviation"
 msgstr "Havacılık"
 
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader'in Eole uçağı"
+msgstr "1890 Clement Ader'in Eole uçağı"
 
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Wright kardeşler'in Flyear III'ü"
+msgstr "1905 Wright kardeşler'in Flyear III'ü"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
@@ -4698,12 +4680,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927'de Charles Lindbergh Atlantik okyanusunu geçti"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934'te Hélène Boucher'ın 444km/saatlik hız rekoru"
+msgstr "1934'te Hélène Boucher'ın 445km/saatlik hız rekoru"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4731,12 +4710,9 @@ msgid "Cars"
 msgstr "Arabalar"
 
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault voiturette"
+msgstr "1898 Renault voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:46
 msgctxt "board6_3|"
@@ -19803,7 +19779,7 @@ msgid ""
 "Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya "
 "Embankment - 1830"
 msgstr ""
-"Katsushika Hokusai, Ommaya Dolgusu'ndan Ryogoku Köprüsü Üzerinden Gün Batımı "
+"Katsushika Hokusai, Ommaya Dolgusu'ndan Ryogoku Köprüsü Üzerinden Günbatımı "
 "Manzarası - 1830"
 
 #: activities/paintings/resource/board/board11_0.qml:14

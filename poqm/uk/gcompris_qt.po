@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2023-10-27 08:52+0300\n"
+"PO-Revision-Date: 2023-11-16 08:12+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -4672,20 +4672,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783, Брати Монґольф'є, Повітряна куля з гарячим повітрям"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Літак «Еол» Клемента Адера"
+msgstr "1890 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906, Поль Корню, Перший політ гелікоптера"
+msgstr "1907, Поль Корню, Перший політ гелікоптера"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4698,12 +4692,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Паровий автомобіль Кюньо"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Літак «Еол» Клемента Адера"
+msgstr "1890 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4731,12 +4722,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829, Паровоз «Ракета» Стефенсона"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Літак «Еол» Клемента Адера"
+msgstr "1890 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4749,22 +4737,14 @@ msgid "Aviation"
 msgstr "Авіація"
 
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Літак «Еол» Клемента Адера"
+msgstr "1890 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr ""
-"1903 Брати Райт\n"
-"«Флайер-3»"
+msgstr "1905 Брати Райт, «Флайер-3»"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
@@ -4787,12 +4767,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927, Чарльз Ліндберґ перетнув Атлантичний океан"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934, Елен Боше, Рекорд швидкості 444 км/год"
+msgstr "1934, Елен Боше, Рекорд швидкості 445 км/год"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4820,12 +4797,9 @@ msgid "Cars"
 msgstr "Автомобілі"
 
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899, «Вуатюретка», Рено"
+msgstr "1898, «Вуатюретка», Рено"
 
 #: activities/chronos/resource/board/board6_3.qml:46
 msgctxt "board6_3|"
