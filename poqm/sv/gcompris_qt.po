@@ -1,8 +1,8 @@
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 Stefan Asserhäll <stefan.asserhall@bredband.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-10-27 06:59+0200\n"
+"PO-Revision-Date: 2023-11-18 22:18+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: sv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -4615,20 +4615,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Montgolfier-brödernas varmluftsballong"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aders Éole"
+msgstr "1890 Clement Aders Éole"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Paul Cornus första helikopterflygning"
+msgstr "1907 Paul Cornus första helikopterflygning"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4641,12 +4635,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnots ångvagn"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aders Éole"
+msgstr "1890 Clement Aders Éole"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4674,12 +4665,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephensons ånglokomotiv Rocket"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aders Éole"
+msgstr "1890 Clement Aders Éole"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4692,20 +4680,14 @@ msgid "Aviation"
 msgstr "Luftfart"
 
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aders Éole"
+msgstr "1890 Clement Aders Éole"
 
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Wright-brödernas Flyer III"
+msgstr "1905 Wright-brödernas Flyer III"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
@@ -4728,12 +4710,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh korsar Atlanten"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Bouchers hastighetsrekord på 444 km/t"
+msgstr "1934 Hélène Bouchers hastighetsrekord på 445 km/t"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4761,12 +4740,9 @@ msgid "Cars"
 msgstr "Bilar"
 
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault voiturette"
+msgstr "1898 Renault voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:46
 msgctxt "board6_3|"
