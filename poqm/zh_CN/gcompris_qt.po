@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-11-11 07:24\n"
+"PO-Revision-Date: 2023-11-19 03:43\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -20161,7 +20161,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mirror the given image"
-msgstr "镜像给定图像"
+msgstr "翻转给定的图像"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
