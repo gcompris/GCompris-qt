@@ -15,7 +15,7 @@ QtObject {
    property string instruction: qsTr("Transportation")
    property var levels: [
       {
-          "pixmapfile": "images/mongolfiere.svg",
+          "pixmapfile": "images/montgolfiere.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,

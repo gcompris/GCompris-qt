@@ -15,7 +15,7 @@ QtObject {
    property string instruction: qsTr("Aviation")
    property var levels: [
       {
-          "pixmapfile": "images/Eole.svg",
+          "pixmapfile": "images/ader_eole.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,

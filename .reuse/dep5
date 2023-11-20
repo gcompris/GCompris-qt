@@ -999,22 +999,22 @@ Files: src/activities/chronos/resource/images/1955ds19.svg
  src/activities/chronos/resource/images/benz1885.svg
  src/activities/chronos/resource/images/bleriot.svg
  src/activities/chronos/resource/images/bolle1878.svg
- src/activities/chronos/resource/images/Eole.svg
- src/activities/chronos/resource/images/helico_cornu.svg
  src/activities/chronos/resource/images/lancia1923.svg
  src/activities/chronos/resource/images/lindbergh.svg
- src/activities/chronos/resource/images/mongolfiere.svg
  src/activities/chronos/resource/images/rafale.svg
  src/activities/chronos/resource/images/renault1899.svg
  src/activities/chronos/resource/images/wright_flyer.svg
 Copyright: 2016 Franck Doucet
 License: GPL-3.0-only
 
-Files: src/activities/chronos/resource/images/cugnot_fardier.svg
+Files:  src/activities/chronos/resource/images/ader_eole.svg
+ src/activities/chronos/resource/images/cornu_helico.svg
+ src/activities/chronos/resource/images/cugnot_fardier.svg
  src/activities/chronos/resource/images/garden-01.svg
  src/activities/chronos/resource/images/garden-02.svg
  src/activities/chronos/resource/images/garden-03.svg
  src/activities/chronos/resource/images/garden-04.svg
+ src/activities/chronos/resource/images/montgolfiere.svg
  src/activities/chronos/resource/images/moon-01.svg
  src/activities/chronos/resource/images/moon-02.svg
  src/activities/chronos/resource/images/moon-03.svg

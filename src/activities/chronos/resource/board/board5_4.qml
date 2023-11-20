@@ -22,7 +22,7 @@ QtObject {
           "height": 0.3
       },
       {
-          "pixmapfile": "images/Eole.svg",
+          "pixmapfile": "images/ader_eole.svg",
           "x": 0.5,
           "y": 0.65,
           "width": 0.4,
