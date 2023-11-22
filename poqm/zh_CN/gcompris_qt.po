@@ -13852,7 +13852,7 @@ msgid ""
 "attempts are remaining."
 msgstr ""
 
-#: activities/hangman/hangman.js:209
+#: activities/hangman/hangman.js:208
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
@@ -17311,144 +17311,144 @@ msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:144
+#: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "本地化语音"
 
-#: activities/menu/ConfigurationItem.qml:153
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "检查更新"
 
-#: activities/menu/ConfigurationItem.qml:154
+#: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "下载"
 
-#: activities/menu/ConfigurationItem.qml:169
+#: activities/menu/ConfigurationItem.qml:171
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "启用语音"
 
-#: activities/menu/ConfigurationItem.qml:179
+#: activities/menu/ConfigurationItem.qml:181
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "启用音效"
 
-#: activities/menu/ConfigurationItem.qml:188
+#: activities/menu/ConfigurationItem.qml:190
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "音效音量"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "下载背景音乐"
 
-#: activities/menu/ConfigurationItem.qml:220
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "启用背景音乐"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "背景音乐"
 
-#: activities/menu/ConfigurationItem.qml:246
+#: activities/menu/ConfigurationItem.qml:248
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:250
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:275
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "背景音乐音量"
 
-#: activities/menu/ConfigurationItem.qml:302
+#: activities/menu/ConfigurationItem.qml:300
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:302
+#: activities/menu/ConfigurationItem.qml:300
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:325
+#: activities/menu/ConfigurationItem.qml:314
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "全屏"
 
-#: activities/menu/ConfigurationItem.qml:347
+#: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "虚拟键盘"
 
-#: activities/menu/ConfigurationItem.qml:358
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "活动区菜单可见"
 
-#: activities/menu/ConfigurationItem.qml:368
+#: activities/menu/ConfigurationItem.qml:357
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:368
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "字体选择器"
 
-#: activities/menu/ConfigurationItem.qml:384
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "字体大小"
 
-#: activities/menu/ConfigurationItem.qml:404
-#: activities/menu/ConfigurationItem.qml:438
+#: activities/menu/ConfigurationItem.qml:393
+#: activities/menu/ConfigurationItem.qml:427
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "默认"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:402
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "字体大写"
 
-#: activities/menu/ConfigurationItem.qml:418
+#: activities/menu/ConfigurationItem.qml:407
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "字符间距"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:610
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "混合大小写 (默认)"
 
-#: activities/menu/ConfigurationItem.qml:624
+#: activities/menu/ConfigurationItem.qml:611
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "全部大写"
 
-#: activities/menu/ConfigurationItem.qml:625
+#: activities/menu/ConfigurationItem.qml:612
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "全部小写"
@@ -17465,84 +17465,84 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/menu/Menu.qml:96
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "否"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "逻辑"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "美术"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Music"
 msgstr "音乐"
 
-#: activities/menu/Menu.qml:134
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "实验"
 
-#: activities/menu/Menu.qml:135
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "History"
 msgstr "历史"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "地理"
 
-#: activities/menu/Menu.qml:146
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "数字"
 
-#: activities/menu/Menu.qml:147
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "算术"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "测量"
 
-#: activities/menu/Menu.qml:158
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "字母"
 
-#: activities/menu/Menu.qml:159
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Words"
 msgstr "单词"
 
-#: activities/menu/Menu.qml:160
+#: activities/menu/Menu.qml:161
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "词汇"
 
-#: activities/menu/Menu.qml:377
+#: activities/menu/Menu.qml:378
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr "将您喜欢的活动放在这里：请点击这些活动右上角的太阳标志。"
 
-#: activities/menu/Menu.qml:780
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "搜索指定活动"
 
-#: activities/menu/Menu.qml:807
+#: activities/menu/Menu.qml:808
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -24163,49 +24163,52 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "版本 %1："
 
-#: core/core.js:223
+#: core/core.js:221
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "没有声音文件！"
 
-#: core/core.js:224
+#: core/core.js:222
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
 "system."
 msgstr "此活动使用语言特定的声音文件，在您的系统上还没有安装。"
 
-#: core/core.js:226
+#: core/core.js:225
+#, fuzzy
+#| msgctxt "core|"
+#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
-msgid "For downloading the needed sound files go to the preferences dialog."
+msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr "下载需要的声音文件到参数选择对话框。"
 
-#: core/core.js:254
+#: core/core.js:257
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "正在下载"
 
-#: core/core.js:256
+#: core/core.js:259
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "下载进行中。<br/>点击 'Abort' 立即退出。"
 
-#: core/core.js:266
+#: core/core.js:269
 msgctxt "core|"
 msgid "Quit?"
 msgstr "确定退出吗？"
 
-#: core/core.js:268
+#: core/core.js:271
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "您真的想退出 Gcompris 吗？"
 
-#: core/core.js:269
+#: core/core.js:272
 msgctxt "core|"
 msgid "Yes"
 msgstr "是"
 
-#: core/core.js:270
+#: core/core.js:273
 msgctxt "core|"
 msgid "No"
 msgstr "否"
@@ -24481,37 +24484,49 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "本地声音文件是最新的。"
 
-#: core/DownloadManager.cpp:112
+#: core/DownloadManager.cpp:113
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "用户已取消下载"
 
-#: core/DownloadManager.cpp:232
+#: core/DownloadManager.cpp:324
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr ""
 
-#: core/DownloadManager.cpp:239
+#: core/DownloadManager.cpp:331
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "无法打开目标文件 %1"
 
-#: core/DownloadManager.cpp:538
+#: core/DownloadManager.cpp:684
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr ""
 
-#: core/DownloadManager.cpp:560
+#: core/DownloadManager.cpp:706
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr ""
 
-#: core/DownloadManager.cpp:573
+#: core/DownloadManager.cpp:719
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
+msgstr ""
+
+#: core/DownloadManager.cpp:741
+#, qt-format
+msgctxt "QObject|"
+msgid "No voices found for %1."
+msgstr ""
+
+#: core/DownloadManager.cpp:746
+#, qt-format
+msgctxt "QObject|"
+msgid "No data found for %1."
 msgstr ""
 
 #: core/GCCreationHandler.qml:134
@@ -24687,87 +24702,92 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:280
+#: core/main.qml:269
+msgctxt "main|"
+msgid ""
+"Do you want to automatically download or update the following external "
+"assets when starting GCompris?"
+msgstr ""
+
+#: core/main.qml:271
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:281
+#: core/main.qml:272
 msgctxt "main|"
 msgid "Full word image set"
 msgstr ""
 
-#: core/main.qml:282
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Background music"
 msgstr "背景音乐"
 
-#: core/main.qml:287
-msgctxt "main|"
-msgid ""
-"Do you want to automatically download and update the following external "
-"assets when starting GCompris?"
-msgstr ""
-
-#: core/main.qml:292
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Yes"
 msgstr "是"
 
-#: core/main.qml:302
+#: core/main.qml:286
 msgctxt "main|"
 msgid "No"
 msgstr "否"
 
-#: core/main.qml:329
+#: core/main.qml:322
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "欢迎来到 GCompris！"
 
-#: core/main.qml:330
+#: core/main.qml:323
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "您正首次运行 GCompris。"
 
-#: core/main.qml:331
+#: core/main.qml:324
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "You should verify that your application settings especially your language "
+#| "is set correctly, and that all language specific sound files are "
+#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
-"set correctly, and that all language specific sound files are installed. You "
-"can do this in the Preferences Dialog."
+"set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "您应该确认您的程序设置尤其是您的语言设置正确，还有安装了特定语言所有的声音文"
 "件。您可以在首选项对话框里做这些。"
 
-#: core/main.qml:333
+#: core/main.qml:326
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "玩得开心！"
 
-#: core/main.qml:335
+#: core/main.qml:328
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "当前的语言为“%1” (%2)。"
 
-#: core/main.qml:371
+#: core/main.qml:360
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris 已升级！新版本中包含如下新特性：<br/>"
 
-#: core/main.qml:399
+#: core/main.qml:388
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:400
+#: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:401
+#: core/main.qml:390
 msgctxt "main|"
 msgid "Cancel"
 msgstr ""

@@ -14567,7 +14567,7 @@ msgstr ""
 "bijbehorende stem beschikbaar is, zul je het te vinden woord horen wanneer "
 "drie pogingen overblijven."
 
-#: activities/hangman/hangman.js:209
+#: activities/hangman/hangman.js:208
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
@@ -18306,144 +18306,144 @@ msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
 msgstr "Automatisch downloaden/bijwerken van externe zaken inschakelen"
 
-#: activities/menu/ConfigurationItem.qml:144
+#: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Stemmen(geluid) in eigen taal"
 
-#: activities/menu/ConfigurationItem.qml:153
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Controleren op bijwerken"
 
-#: activities/menu/ConfigurationItem.qml:154
+#: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Downloaden"
 
-#: activities/menu/ConfigurationItem.qml:169
+#: activities/menu/ConfigurationItem.qml:171
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Stemmen(geluid) inschakelen"
 
-#: activities/menu/ConfigurationItem.qml:179
+#: activities/menu/ConfigurationItem.qml:181
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Geluidseffecten inschakelen"
 
-#: activities/menu/ConfigurationItem.qml:188
+#: activities/menu/ConfigurationItem.qml:190
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Volume geluidseffecten"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Achtergrondmuziek downloaden"
 
-#: activities/menu/ConfigurationItem.qml:220
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Achtergrondmuziek inschakelen"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Achtergrondmuziek"
 
-#: activities/menu/ConfigurationItem.qml:246
+#: activities/menu/ConfigurationItem.qml:248
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Speelt niet"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:250
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Titel: %1  Artiest: %2"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Introductiemuziek"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:275
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Volume achtergrondmuziek"
 
-#: activities/menu/ConfigurationItem.qml:302
+#: activities/menu/ConfigurationItem.qml:300
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "De volledige set met woordafbeeldingen is geïnstalleerd"
 
-#: activities/menu/ConfigurationItem.qml:302
+#: activities/menu/ConfigurationItem.qml:300
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "De volledige set met woordafbeeldingen is niet geïnstalleerd"
 
-#: activities/menu/ConfigurationItem.qml:325
+#: activities/menu/ConfigurationItem.qml:314
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "De volledige set met woordafbeeldingen downloaden"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Volledig scherm"
 
-#: activities/menu/ConfigurationItem.qml:347
+#: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtueel toetsenbord"
 
-#: activities/menu/ConfigurationItem.qml:358
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Het menu van de activiteitensectie is zichtbaar"
 
-#: activities/menu/ConfigurationItem.qml:368
+#: activities/menu/ConfigurationItem.qml:357
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Om bevestiging vragen bij afsluiten"
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:368
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Lettertype selecteren"
 
-#: activities/menu/ConfigurationItem.qml:384
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Tekengrootte"
 
-#: activities/menu/ConfigurationItem.qml:404
-#: activities/menu/ConfigurationItem.qml:438
+#: activities/menu/ConfigurationItem.qml:393
+#: activities/menu/ConfigurationItem.qml:427
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Standaard"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:402
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Hoofdletters maken"
 
-#: activities/menu/ConfigurationItem.qml:418
+#: activities/menu/ConfigurationItem.qml:407
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Ruimte tussen letters"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:610
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Gemengde hoofd- en kleine letters (standaard)"
 
-#: activities/menu/ConfigurationItem.qml:624
+#: activities/menu/ConfigurationItem.qml:611
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Alles hoofdletters"
 
-#: activities/menu/ConfigurationItem.qml:625
+#: activities/menu/ConfigurationItem.qml:612
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Alles kleine letters"
@@ -18463,72 +18463,72 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/menu/Menu.qml:96
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nee"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logica"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Kunst"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Muziek"
 
-#: activities/menu/Menu.qml:134
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experiment"
 
-#: activities/menu/Menu.qml:135
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "History"
 msgstr "Geschiedenis"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografie"
 
-#: activities/menu/Menu.qml:146
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Nummering"
 
-#: activities/menu/Menu.qml:147
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Rekenen"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Maten"
 
-#: activities/menu/Menu.qml:158
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Letters"
 
-#: activities/menu/Menu.qml:159
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Woorden"
 
-#: activities/menu/Menu.qml:160
+#: activities/menu/Menu.qml:161
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Woordenschat"
 
-#: activities/menu/Menu.qml:377
+#: activities/menu/Menu.qml:378
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18537,12 +18537,12 @@ msgstr ""
 "Zet je favoriete activiteiten hier neer door op de zon van de activiteit "
 "rechtsboven te klikken."
 
-#: activities/menu/Menu.qml:780
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Specifieke activiteiten zoeken"
 
-#: activities/menu/Menu.qml:807
+#: activities/menu/Menu.qml:808
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Instellingen voor activiteiten"
@@ -25860,12 +25860,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Versie %1:"
 
-#: core/core.js:223
+#: core/core.js:221
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Ontbrekende geluidsbestanden!"
 
-#: core/core.js:224
+#: core/core.js:222
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -25874,38 +25874,41 @@ msgstr ""
 "Deze activiteit gebruikt geluidsbestanden specifiek voor een taal, die nog "
 "niet op uw systeem zijn geïnstalleerd."
 
-#: core/core.js:226
+#: core/core.js:225
+#, fuzzy
+#| msgctxt "core|"
+#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
-msgid "For downloading the needed sound files go to the preferences dialog."
+msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
 "Om de benodigde geluidsbestanden te downloaden ga naar de dialoog Voorkeuren."
 
-#: core/core.js:254
+#: core/core.js:257
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "Download is bezig"
 
-#: core/core.js:256
+#: core/core.js:259
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr "Download is nog bezig.<br/>'Afbreken' om onmiddellijk af te sluiten."
 
-#: core/core.js:266
+#: core/core.js:269
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Afsluiten?"
 
-#: core/core.js:268
+#: core/core.js:271
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "Wil je GCompris echt beëindigen?"
 
-#: core/core.js:269
+#: core/core.js:272
 msgctxt "core|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/core.js:270
+#: core/core.js:273
 msgctxt "core|"
 msgid "No"
 msgstr "Nee"
@@ -26209,38 +26212,50 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "De gegevensbestanden van uw taalregio zijn bijgewerkt."
 
-#: core/DownloadManager.cpp:112
+#: core/DownloadManager.cpp:113
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Downloaden geannuleerd door gebruiker"
 
-#: core/DownloadManager.cpp:232
+#: core/DownloadManager.cpp:324
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Kon de hulpbronpad niet aanmaken"
 
-#: core/DownloadManager.cpp:239
+#: core/DownloadManager.cpp:331
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Kon doelbestand %1 niet openen"
 
-#: core/DownloadManager.cpp:538
+#: core/DownloadManager.cpp:684
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Ongeldig formaat van bestand met inhoud"
 
-#: core/DownloadManager.cpp:560
+#: core/DownloadManager.cpp:706
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "Het URL-adres %1 bestaat niet."
 
-#: core/DownloadManager.cpp:573
+#: core/DownloadManager.cpp:719
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Controlesom van gedownloade bestand komt niet overeen: %1"
+
+#: core/DownloadManager.cpp:741
+#, qt-format
+msgctxt "QObject|"
+msgid "No voices found for %1."
+msgstr ""
+
+#: core/DownloadManager.cpp:746
+#, qt-format
+msgctxt "QObject|"
+msgid "No data found for %1."
+msgstr ""
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26422,78 +26437,88 @@ msgstr ""
 "Specificeer op welk niveau de activiteit wordt begonnen. Wordt alleen "
 "gebruikt wanneer de optie --launch wordt gebruikt."
 
-#: core/main.qml:280
-msgctxt "main|"
-msgid "Voices for your language"
-msgstr "Stemmen voor uw taal"
-
-#: core/main.qml:281
-msgctxt "main|"
-msgid "Full word image set"
-msgstr "Volledige set met woordafbeeldingen"
-
-#: core/main.qml:282
-msgctxt "main|"
-msgid "Background music"
-msgstr "Achtergrondmuziek"
-
-#: core/main.qml:287
+#: core/main.qml:269
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "Do you want to automatically download and update the following external "
+#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
-"Do you want to automatically download and update the following external "
+"Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
 "Wil u automatisch de volgende externe zaken downloadenen bijwerken wanneer "
 "GCompris start?"
 
-#: core/main.qml:292
+#: core/main.qml:271
+msgctxt "main|"
+msgid "Voices for your language"
+msgstr "Stemmen voor uw taal"
+
+#: core/main.qml:272
+msgctxt "main|"
+msgid "Full word image set"
+msgstr "Volledige set met woordafbeeldingen"
+
+#: core/main.qml:273
+msgctxt "main|"
+msgid "Background music"
+msgstr "Achtergrondmuziek"
+
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/main.qml:302
+#: core/main.qml:286
 msgctxt "main|"
 msgid "No"
 msgstr "Nee"
 
-#: core/main.qml:329
+#: core/main.qml:322
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Welkom bij GCompris!"
 
-#: core/main.qml:330
+#: core/main.qml:323
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "U gebruikt GCompris voor de eerste keer."
 
-#: core/main.qml:331
+#: core/main.qml:324
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "You should verify that your application settings especially your language "
+#| "is set correctly, and that all language specific sound files are "
+#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
-"set correctly, and that all language specific sound files are installed. You "
-"can do this in the Preferences Dialog."
+"set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "U zou na moeten gaan dat de instellingen van uw toepassing, speciaal uw taal "
 "juist zijn ingesteld en dat alle specifieke geluidsbestanden van uw taal "
 "zijn geïnstalleerd. U kunt dat doen in de dialoog Voorkeuren."
 
-#: core/main.qml:333
+#: core/main.qml:326
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Veel plezier!"
 
-#: core/main.qml:335
+#: core/main.qml:328
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Uw huidige taal is %1 (%2)."
 
-#: core/main.qml:371
+#: core/main.qml:360
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris is bijgewerkt! Hier zijn de nieuwe wijzigingen:<br/>"
 
-#: core/main.qml:399
+#: core/main.qml:388
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -26502,12 +26527,12 @@ msgstr ""
 "Voor sommige activiteiten zijn nieuwe dataset beschikbaar. Wilt u hun "
 "selectie van datasets resetten?"
 
-#: core/main.qml:400
+#: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
 msgstr "Toepassen"
 
-#: core/main.qml:401
+#: core/main.qml:390
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Annuleren"

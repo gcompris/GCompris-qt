@@ -14438,7 +14438,7 @@ msgstr ""
 "'Bulmak için sözcükleri söyle...' seçeneği etkinleştirildiyse ve karşılık "
 "gelen ses varsa üç denemeniz kaldığında bulunacak sözcüğü duyacaksınız."
 
-#: activities/hangman/hangman.js:209
+#: activities/hangman/hangman.js:208
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
@@ -18120,144 +18120,144 @@ msgid "Enable automatic downloads/updates of external assets"
 msgstr ""
 "Dış varlıkların kendiliğinden indirilmesini/güncellenmesini etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:144
+#: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Yerelleştirilmiş sesler"
 
-#: activities/menu/ConfigurationItem.qml:153
+#: activities/menu/ConfigurationItem.qml:154
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Güncellemeleri denetle"
 
-#: activities/menu/ConfigurationItem.qml:154
+#: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "İndir"
 
-#: activities/menu/ConfigurationItem.qml:169
+#: activities/menu/ConfigurationItem.qml:171
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Sesi etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:179
+#: activities/menu/ConfigurationItem.qml:181
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Ses efektlerini etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:188
+#: activities/menu/ConfigurationItem.qml:190
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Ses efektleri ses düzeyi"
 
-#: activities/menu/ConfigurationItem.qml:209
+#: activities/menu/ConfigurationItem.qml:211
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Arka plan müziğini indir"
 
-#: activities/menu/ConfigurationItem.qml:220
+#: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Arka plan müziğini etkinleştir"
 
-#: activities/menu/ConfigurationItem.qml:229
+#: activities/menu/ConfigurationItem.qml:231
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Arka Plan Müziği"
 
-#: activities/menu/ConfigurationItem.qml:246
+#: activities/menu/ConfigurationItem.qml:248
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Çalmıyor"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:250
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Başlık: %1 Sanatçı: %2"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Giriş müziği"
 
-#: activities/menu/ConfigurationItem.qml:273
+#: activities/menu/ConfigurationItem.qml:275
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Arka plan müziği ses düzeyi"
 
-#: activities/menu/ConfigurationItem.qml:302
+#: activities/menu/ConfigurationItem.qml:300
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Tam sözcük görsel kümesi kurulu"
 
-#: activities/menu/ConfigurationItem.qml:302
+#: activities/menu/ConfigurationItem.qml:300
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Tam sözcük görsel kümesi kurulu değil"
 
-#: activities/menu/ConfigurationItem.qml:325
+#: activities/menu/ConfigurationItem.qml:314
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Tam sözcük görsel kümesini indir"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:325
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Tam Ekran"
 
-#: activities/menu/ConfigurationItem.qml:347
+#: activities/menu/ConfigurationItem.qml:336
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Sanal Klavye"
 
-#: activities/menu/ConfigurationItem.qml:358
+#: activities/menu/ConfigurationItem.qml:347
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Etkinlik bölümü menüsü görünür"
 
-#: activities/menu/ConfigurationItem.qml:368
+#: activities/menu/ConfigurationItem.qml:357
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Çıkarken onay iste"
 
-#: activities/menu/ConfigurationItem.qml:379
+#: activities/menu/ConfigurationItem.qml:368
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Yazıtipi seçici"
 
-#: activities/menu/ConfigurationItem.qml:384
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Yazıtipi boyutu"
 
-#: activities/menu/ConfigurationItem.qml:404
-#: activities/menu/ConfigurationItem.qml:438
+#: activities/menu/ConfigurationItem.qml:393
+#: activities/menu/ConfigurationItem.qml:427
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Öntanımlı"
 
-#: activities/menu/ConfigurationItem.qml:413
+#: activities/menu/ConfigurationItem.qml:402
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Yazıtipi Harf Büyütme"
 
-#: activities/menu/ConfigurationItem.qml:418
+#: activities/menu/ConfigurationItem.qml:407
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Yazıtipi harf boşluklandırması"
 
-#: activities/menu/ConfigurationItem.qml:623
+#: activities/menu/ConfigurationItem.qml:610
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Karışık BÜYÜK/küçük harf (öntanımlı)"
 
-#: activities/menu/ConfigurationItem.qml:624
+#: activities/menu/ConfigurationItem.qml:611
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Tümü BÜYÜK harf"
 
-#: activities/menu/ConfigurationItem.qml:625
+#: activities/menu/ConfigurationItem.qml:612
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Tümü küçük harf"
@@ -18276,72 +18276,72 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "Evet"
 
-#: activities/menu/Menu.qml:96
+#: activities/menu/Menu.qml:97
 msgctxt "Menu|"
 msgid "No"
 msgstr "Hayır"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Mantık"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Güzel Sanatlar"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Müzik"
 
-#: activities/menu/Menu.qml:134
+#: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Deney"
 
-#: activities/menu/Menu.qml:135
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "History"
 msgstr "Tarih"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Coğrafya"
 
-#: activities/menu/Menu.qml:146
+#: activities/menu/Menu.qml:147
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numaralandırma"
 
-#: activities/menu/Menu.qml:147
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmetik"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Ölçümler"
 
-#: activities/menu/Menu.qml:158
+#: activities/menu/Menu.qml:159
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Harfler"
 
-#: activities/menu/Menu.qml:159
+#: activities/menu/Menu.qml:160
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Sözcükler"
 
-#: activities/menu/Menu.qml:160
+#: activities/menu/Menu.qml:161
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Söz Dağarcığı"
 
-#: activities/menu/Menu.qml:377
+#: activities/menu/Menu.qml:378
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18350,12 +18350,12 @@ msgstr ""
 "En sevdiğin etkinlikleri buraya koymak için o etkinliğin sağ üst köşesindeki "
 "güneşe tıkla."
 
-#: activities/menu/Menu.qml:780
+#: activities/menu/Menu.qml:781
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Etkinlik ara"
 
-#: activities/menu/Menu.qml:807
+#: activities/menu/Menu.qml:808
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Etkinlik Ayarları"
@@ -25604,12 +25604,12 @@ msgctxt "ChangeLog|"
 msgid "Version %1:"
 msgstr "Sürüm %1:"
 
-#: core/core.js:223
+#: core/core.js:221
 msgctxt "core|"
 msgid "Missing sound files!"
 msgstr "Ses dosyaları eksik!"
 
-#: core/core.js:224
+#: core/core.js:222
 msgctxt "core|"
 msgid ""
 "This activity uses language sound files, that are not yet installed on your "
@@ -25617,38 +25617,41 @@ msgid ""
 msgstr ""
 "Bu etkinlik, henüz sisteminizde kurulu olmayan dil ses dosyalarını kullanır."
 
-#: core/core.js:226
+#: core/core.js:225
+#, fuzzy
+#| msgctxt "core|"
+#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
-msgid "For downloading the needed sound files go to the preferences dialog."
+msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr "Gerekli olan ses dosyalarını indirmek için, tercihler penceresine git."
 
-#: core/core.js:254
+#: core/core.js:257
 msgctxt "core|"
 msgid "Download in progress"
 msgstr "İndirme sürüyor"
 
-#: core/core.js:256
+#: core/core.js:259
 msgctxt "core|"
 msgid "Download in progress.<br/>'Abort' it to quit immediately."
 msgstr ""
 "İndirme işlemi sürüyor.<br/>Hemen çıkmak için 'İptal Et' düğmesine bas."
 
-#: core/core.js:266
+#: core/core.js:269
 msgctxt "core|"
 msgid "Quit?"
 msgstr "Çık?"
 
-#: core/core.js:268
+#: core/core.js:271
 msgctxt "core|"
 msgid "Do you really want to quit GCompris?"
 msgstr "GCompris'ten gerçekten çıkmak istiyor musun?"
 
-#: core/core.js:269
+#: core/core.js:272
 msgctxt "core|"
 msgid "Yes"
 msgstr "Evet"
 
-#: core/core.js:270
+#: core/core.js:273
 msgctxt "core|"
 msgid "No"
 msgstr "Hayır"
@@ -25948,38 +25951,50 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Yerel veri dosyaların güncel."
 
-#: core/DownloadManager.cpp:112
+#: core/DownloadManager.cpp:113
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "İndirme, kullanıcı tarafından iptal edildi"
 
-#: core/DownloadManager.cpp:232
+#: core/DownloadManager.cpp:324
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Özkaynak yolu oluşturulamadı"
 
-#: core/DownloadManager.cpp:239
+#: core/DownloadManager.cpp:331
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "%1 hedef dosyası açılamadı"
 
-#: core/DownloadManager.cpp:538
+#: core/DownloadManager.cpp:684
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Geçersiz içerik dosyası biçimi"
 
-#: core/DownloadManager.cpp:560
+#: core/DownloadManager.cpp:706
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "%1 URL'si yok."
 
-#: core/DownloadManager.cpp:573
+#: core/DownloadManager.cpp:719
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "İndirilen dosyanın sağlama toplamı eşleşmiyor: %1"
+
+#: core/DownloadManager.cpp:741
+#, qt-format
+msgctxt "QObject|"
+msgid "No voices found for %1."
+msgstr ""
+
+#: core/DownloadManager.cpp:746
+#, qt-format
+msgctxt "QObject|"
+msgid "No data found for %1."
+msgstr ""
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26161,78 +26176,88 @@ msgstr ""
 "Etkinliğin hangi düzeyden başlatılacağını belirtin. Yalnızca --launch "
 "seçeneği kullanldığında kullanılır."
 
-#: core/main.qml:280
-msgctxt "main|"
-msgid "Voices for your language"
-msgstr "Dilin için sesler"
-
-#: core/main.qml:281
-msgctxt "main|"
-msgid "Full word image set"
-msgstr "Tam sözcük görsel kümesi"
-
-#: core/main.qml:282
-msgctxt "main|"
-msgid "Background music"
-msgstr "Arka plan müziği"
-
-#: core/main.qml:287
+#: core/main.qml:269
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "Do you want to automatically download and update the following external "
+#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
-"Do you want to automatically download and update the following external "
+"Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
 "GCompris başlatılırken aşağıdaki dış varlıkların kendiliğinden indirilmesini "
 "ve güncellenmesini istiyor musunuz?"
 
-#: core/main.qml:292
+#: core/main.qml:271
+msgctxt "main|"
+msgid "Voices for your language"
+msgstr "Dilin için sesler"
+
+#: core/main.qml:272
+msgctxt "main|"
+msgid "Full word image set"
+msgstr "Tam sözcük görsel kümesi"
+
+#: core/main.qml:273
+msgctxt "main|"
+msgid "Background music"
+msgstr "Arka plan müziği"
+
+#: core/main.qml:279
 msgctxt "main|"
 msgid "Yes"
 msgstr "Evet"
 
-#: core/main.qml:302
+#: core/main.qml:286
 msgctxt "main|"
 msgid "No"
 msgstr "Hayır"
 
-#: core/main.qml:329
+#: core/main.qml:322
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "GCompris'e Hoş Geldin!"
 
-#: core/main.qml:330
+#: core/main.qml:323
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "GCompris'i ilk defa çalıştırıyorsun."
 
-#: core/main.qml:331
+#: core/main.qml:324
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "You should verify that your application settings especially your language "
+#| "is set correctly, and that all language specific sound files are "
+#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
-"set correctly, and that all language specific sound files are installed. You "
-"can do this in the Preferences Dialog."
+"set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Uygulamanın ayarlarında özellikle dil ayarının doğru olduğunu ve dile özel "
 "tüm dosyaların kurulu olduğunu doğrulamalısın. Bunu Tercihler Penceresinden "
 "yapabilirsin."
 
-#: core/main.qml:333
+#: core/main.qml:326
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "İyi Eğlenceler!"
 
-#: core/main.qml:335
+#: core/main.qml:328
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Şu anki dil tercihin %1 (%2)."
 
-#: core/main.qml:371
+#: core/main.qml:360
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris güncellendi! İşte yeniliklerin bir listesi: <br/>"
 
-#: core/main.qml:399
+#: core/main.qml:388
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -26241,12 +26266,12 @@ msgstr ""
 "Bazı etkinlikler için yeni veri kümeleri kullanılabilir. Onların veri kümesi "
 "seçimlerini sıfırlamak istiyor musunuz?"
 
-#: core/main.qml:400
+#: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
 msgstr "Uygula"
 
-#: core/main.qml:401
+#: core/main.qml:390
 msgctxt "main|"
 msgid "Cancel"
 msgstr "İptal"
