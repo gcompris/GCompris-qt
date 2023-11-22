@@ -103,7 +103,7 @@ DialogBackground {
         "<br /> <br />" +
 
         qsTr("You do not have to be a software developer to be a member of the " +
-             "KDE team. You can join the national teams that translate " +
+             "KDE team. You can join the language teams that translate " +
              "program interfaces. You can provide graphics, themes, sounds, and " +
              "improved documentation. You decide!" +
              "<br /><br />" +
