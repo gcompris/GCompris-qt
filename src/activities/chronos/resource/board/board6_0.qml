@@ -22,14 +22,14 @@ QtObject {
           "height": 0.3
       },
       {
-          "pixmapfile": "images/wright_flyer.svg",
+          "pixmapfile": "images/wright_flyer_3.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
           "height": 0.3
       },
       {
-          "pixmapfile": "images/bleriot.svg",
+          "pixmapfile": "images/bleriot_XI.svg",
           "x": 0.5,
           "y": 0.65,
           "width": 0.4,
