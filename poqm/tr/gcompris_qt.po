@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-11-16 22:29+0300\n"
+"PO-Revision-Date: 2023-11-22 14:30+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1258,7 +1258,7 @@ msgid ""
 msgstr ""
 "Abece harflerini yakala. Ok düğmeleriyle helikopteri hareket ettir. İşaretçi "
 "aygıtla hedef noktaya tıkla veya dokun. Hangi harfi yakalayacağını bilmek "
-"için, sıradaki harfi anımsamalı veya sağ alt köşeyi kontrol etmelisin."
+"için sıradaki harfi anımsamalı veya sağ alt köşeyi kontrol etmelisin."
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
 #: activities/numbers-odd-even/ActivityInfo.qml:26
@@ -1335,7 +1335,7 @@ msgid ""
 "To delete a component or wire, select the deletion tool on top of the "
 "component selector, and select the component or wire."
 msgstr ""
-"Bir bileşeni veya teli silmek için, bileşen seçicinin üst kısmındaki silme "
+"Bir bileşeni veya teli silmek için bileşen seçicisinin üst kısmındaki silme "
 "aracını seç ve bileşeni veya teli seç."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
@@ -2339,8 +2339,8 @@ msgid ""
 msgstr ""
 "Etkinlik ayarları menüsünde öntanımlı 'Yerleşik' düzey kümesi ile kendin "
 "tanımlayabileceğin bir düzey kümesi ('Kullanıcı') arasında seçim "
-"yapabilirsin. Bir düzey kümesi oluşturmak için, 'kullanıcı' düzey setini seç "
-"ve ilgili düğmeye tıklayarak düzey düzenleyiciyi başlat."
+"yapabilirsin. Bir düzey kümesi oluşturmak için 'kullanıcı' düzey kümesini "
+"seç ve ilgili düğmeye tıklayarak düzey düzenleyiciyi başlat."
 
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -2454,7 +2454,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
-"Son olarak, düzey kümesini yüklemek için, 'Kaydedilmiş düzeyleri yükle' "
+"Son olarak, düzey kümesini yüklemek için 'Kaydedilmiş düzeyleri yükle' "
 "düğmesine tıkla."
 
 #: activities/balancebox/balancebox.js:73
@@ -2732,7 +2732,7 @@ msgstr ""
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "5 ondalık sayıyı ikili bir değere dönüştürmek için, 1 ve 4 eklenir."
+msgstr "5 ondalık sayıyı ikili bir değere dönüştürmek için 1 ve 4 eklenir."
 
 #: activities/binary_bulb/binary_bulb.js:44
 msgctxt "binary_bulb|"
@@ -6039,7 +6039,7 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
-"Anahtarlardan biri açıldığında ampulün yanması için, sağlanan bileşenleri "
+"Anahtarlardan biri açıldığında ampulün yanması için sağlanan bileşenleri "
 "kullanarak bir devre oluştur."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
@@ -7337,7 +7337,7 @@ msgid ""
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
 "Pont du Gard, neredeyse 50 km uzunluğundaki Nîmes su kemerinin, Gardon "
-"ırmağından geçmesine izin vermek için, Hristiyanlık döneminden kısa bir süre "
+"ırmağından geçmesine izin vermek için Hristiyanlık döneminden kısa bir süre "
 "önce inşa edilmiştir. Yaklaşık 50 metre yükseklikte ve 275 metre "
 "uzunluğundaki en uzun ölçüye sahip olan bu köprüyü tasarlayan Roma mimarları "
 "ve hidrolik mühendisleri, fevkalade teknik ve sanatsal bir başyapıt "
@@ -18247,7 +18247,7 @@ msgid ""
 "screen area."
 msgstr ""
 "Ödemek için ekranın alt bölümündeki madeni veya kağıt paraya tıkla veya "
-"ekrana dokun. Madeni parayı veya kağıt parayı kaldırmak için, üstüne tıkla "
+"ekrana dokun. Madeni parayı veya kağıt parayı kaldırmak için üstüne tıkla "
 "veya dokun."
 
 #: activities/money/ActivityInfo.qml:26
@@ -20137,7 +20137,7 @@ msgstr "Düz notalar"
 #: activities/piano_composition/piano_composition.js:25
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
-msgstr "Bu tiz notalar için, tiz nota anahtarıdır."
+msgstr "Bu, tiz notalar için tiz nota anahtarıdır."
 
 #: activities/piano_composition/piano_composition.js:28
 msgctxt "piano_composition|"
@@ -20963,8 +20963,8 @@ msgid ""
 "label."
 msgstr ""
 "- Kodunu eklemek üzere <b>Döngü alanı</b> ile <b>Ana İşlev alanı</b> "
-"arasında <b> geçiş yapmak </b> için, <b>Döngü</b> 'ye veya <b>Ana İşlev</"
-"b>'e tıkla."
+"arasında <b> geçiş yapmak </b> için <b>Döngü</b> 'ye veya <b>Ana İşlev</b>'e "
+"tıkla."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
@@ -21601,7 +21601,7 @@ msgid ""
 "To balance the scales, move some weights to the left or the right side (on "
 "higher levels). The weights can be arranged in any order."
 msgstr ""
-"Tartıları dengelemek için, bazı ağırlıkları sola veya sağa (daha yüksek "
+"Tartıları dengelemek için bazı ağırlıkları sola veya sağa (daha yüksek "
 "düzeylerde) taşı. Ağırlıklar herhangi bir sırada düzenlenebilir."
 
 #: activities/scalesboard/resource/1/Data.qml:13
