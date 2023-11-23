@@ -26133,11 +26133,20 @@ msgstr ""
 "ajo çka doni. Sigurohuni se si rëndësi zgjidhni “Wishlist”."
 
 #: core/DialogAbout.qml:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
+#| "projects in which you can participate.<br /><br />If you need more "
+#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
+#| "provide you with what you need."
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
-"You can join the national teams that translate program interfaces. You can "
+"You can join the language teams that translate program interfaces. You can "
 "provide graphics, themes, sounds, and improved documentation. You decide!"
 "<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
 "which you can participate.<br /><br />If you need more information or "

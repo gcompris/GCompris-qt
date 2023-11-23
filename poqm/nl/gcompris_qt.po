@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-11-16 18:50+0100\n"
+"PO-Revision-Date: 2023-11-22 17:06+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -25875,13 +25875,11 @@ msgstr ""
 "niet op uw systeem zijn geïnstalleerd."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Om de benodigde geluidsbestanden te downloaden ga naar de dialoog Voorkeuren."
+"Om de benodigde geluidsbestanden te downloaden ga naar de "
+"configuratiedialoog."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26019,11 +26017,20 @@ msgstr ""
 "voor \"Wishlist\"."
 
 #: core/DialogAbout.qml:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
+#| "projects in which you can participate.<br /><br />If you need more "
+#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
+#| "provide you with what you need."
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
-"You can join the national teams that translate program interfaces. You can "
+"You can join the language teams that translate program interfaces. You can "
 "provide graphics, themes, sounds, and improved documentation. You decide!"
 "<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
 "which you can participate.<br /><br />If you need more information or "
@@ -26249,13 +26256,13 @@ msgstr "Controlesom van gedownloade bestand komt niet overeen: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Geen stemmen gevonden voor %1."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Geen gegevens gevonden voor %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26438,17 +26445,12 @@ msgstr ""
 "gebruikt wanneer de optie --launch wordt gebruikt."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "Do you want to automatically download and update the following external "
-#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"Wil u automatisch de volgende externe zaken downloadenen bijwerken wanneer "
+"Wil u automatisch de volgende externe zaken downloaden of bijwerken wanneer "
 "GCompris start?"
 
 #: core/main.qml:271
@@ -26487,20 +26489,13 @@ msgid "You are running GCompris for the first time."
 msgstr "U gebruikt GCompris voor de eerste keer."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "U zou na moeten gaan dat de instellingen van uw toepassing, speciaal uw taal "
-"juist zijn ingesteld en dat alle specifieke geluidsbestanden van uw taal "
-"zijn geïnstalleerd. U kunt dat doen in de dialoog Voorkeuren."
+"juist zijn ingesteld. U kunt dat doen in de configuratiedialoog."
 
 #: core/main.qml:326
 msgctxt "main|"

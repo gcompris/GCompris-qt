@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-11-16 22:29+0300\n"
+"PO-Revision-Date: 2023-11-22 14:33+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -1304,7 +1304,7 @@ msgid ""
 msgstr ""
 "Abece harflerini yakala. Ok düğmeleriyle helikopteri hareket ettir. İşaretçi "
 "aygıtla hedef noktaya tıkla veya dokun. Hangi harfi yakalayacağını bilmek "
-"için, sıradaki harfi anımsamalı veya sağ alt köşeyi kontrol etmelisin."
+"için sıradaki harfi anımsamalı veya sağ alt köşeyi kontrol etmelisin."
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
 #: activities/numbers-odd-even/ActivityInfo.qml:25
@@ -1381,7 +1381,7 @@ msgid ""
 "To delete a component or wire, select the deletion tool on top of the "
 "component selector, and select the component or wire."
 msgstr ""
-"Bir bileşeni veya teli silmek için, bileşen seçicinin üst kısmındaki silme "
+"Bir bileşeni veya teli silmek için bileşen seçicisinin üst kısmındaki silme "
 "aracını seç ve bileşeni veya teli seç."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
@@ -2385,8 +2385,8 @@ msgid ""
 msgstr ""
 "Etkinlik ayarları menüsünde öntanımlı 'Yerleşik' düzey kümesi ile kendin "
 "tanımlayabileceğin bir düzey kümesi ('Kullanıcı') arasında seçim "
-"yapabilirsin. Bir düzey kümesi oluşturmak için, 'kullanıcı' düzey setini seç "
-"ve ilgili düğmeye tıklayarak düzey düzenleyiciyi başlat."
+"yapabilirsin. Bir düzey kümesi oluşturmak için 'kullanıcı' düzey kümesini "
+"seç ve ilgili düğmeye tıklayarak düzey düzenleyiciyi başlat."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2500,7 +2500,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
-"Son olarak, düzey kümesini yüklemek için, 'Kaydedilmiş düzeyleri yükle' "
+"Son olarak, düzey kümesini yüklemek için 'Kaydedilmiş düzeyleri yükle' "
 "düğmesine tıkla."
 
 #: activities/balancebox/balancebox.js:72
@@ -2778,7 +2778,7 @@ msgstr ""
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "5 ondalık sayıyı ikili bir değere dönüştürmek için, 1 ve 4 eklenir."
+msgstr "5 ondalık sayıyı ikili bir değere dönüştürmek için 1 ve 4 eklenir."
 
 #: activities/binary_bulb/binary_bulb.js:44
 msgctxt "binary_bulb|"
@@ -6151,7 +6151,7 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
-"Anahtarlardan biri açıldığında ampulün yanması için, sağlanan bileşenleri "
+"Anahtarlardan biri açıldığında ampulün yanması için sağlanan bileşenleri "
 "kullanarak bir devre oluştur."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
@@ -7449,7 +7449,7 @@ msgid ""
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
 "Pont du Gard, neredeyse 50 km uzunluğundaki Nîmes su kemerinin, Gardon "
-"ırmağından geçmesine izin vermek için, Hristiyanlık döneminden kısa bir süre "
+"ırmağından geçmesine izin vermek için Hristiyanlık döneminden kısa bir süre "
 "önce inşa edilmiştir. Yaklaşık 50 metre yükseklikte ve 275 metre "
 "uzunluğundaki en uzun ölçüye sahip olan bu köprüyü tasarlayan Roma mimarları "
 "ve hidrolik mühendisleri, fevkalade teknik ve sanatsal bir başyapıt "
@@ -18596,7 +18596,7 @@ msgid ""
 "screen area."
 msgstr ""
 "Ödemek için ekranın alt bölümündeki madeni veya kağıt paraya tıkla veya "
-"ekrana dokun. Madeni parayı veya kağıt parayı kaldırmak için, üstüne tıkla "
+"ekrana dokun. Madeni parayı veya kağıt parayı kaldırmak için üstüne tıkla "
 "veya dokun."
 
 #: activities/money/ActivityInfo.qml:26
@@ -20491,7 +20491,7 @@ msgstr "Düz notalar"
 #: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
 msgid "This is the treble clef staff for high pitched notes."
-msgstr "Bu tiz notalar için, tiz nota anahtarıdır."
+msgstr "Bu, tiz notalar için tiz nota anahtarıdır."
 
 #: activities/piano_composition/piano_composition.js:27
 msgctxt "piano_composition|"
@@ -21317,8 +21317,8 @@ msgid ""
 "label."
 msgstr ""
 "- Kodunu eklemek üzere <b>Döngü alanı</b> ile <b>Ana İşlev alanı</b> "
-"arasında <b> geçiş yapmak </b> için, <b>Döngü</b> 'ye veya <b>Ana İşlev</"
-"b>'e tıkla."
+"arasında <b> geçiş yapmak </b> için <b>Döngü</b> 'ye veya <b>Ana İşlev</b>'e "
+"tıkla."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
@@ -21955,7 +21955,7 @@ msgid ""
 "To balance the scales, move some weights to the left or the right side (on "
 "higher levels). The weights can be arranged in any order."
 msgstr ""
-"Tartıları dengelemek için, bazı ağırlıkları sola veya sağa (daha yüksek "
+"Tartıları dengelemek için bazı ağırlıkları sola veya sağa (daha yüksek "
 "düzeylerde) taşı. Ağırlıklar herhangi bir sırada düzenlenebilir."
 
 #: activities/scalesboard/resource/1/Data.qml:13
@@ -25618,12 +25618,10 @@ msgstr ""
 "Bu etkinlik, henüz sisteminizde kurulu olmayan dil ses dosyalarını kullanır."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "Gerekli olan ses dosyalarını indirmek için, tercihler penceresine git."
+msgstr ""
+"Gerekli olan ses dosyalarını indirmek için yapılandırma penceresine git."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -25760,11 +25758,20 @@ msgstr ""
 "seçtiğinizden emin olun."
 
 #: core/DialogAbout.qml:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
+#| "projects in which you can participate.<br /><br />If you need more "
+#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
+#| "provide you with what you need."
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
-"You can join the national teams that translate program interfaces. You can "
+"You can join the language teams that translate program interfaces. You can "
 "provide graphics, themes, sounds, and improved documentation. You decide!"
 "<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
 "which you can participate.<br /><br />If you need more information or "
@@ -25988,13 +25995,13 @@ msgstr "İndirilen dosyanın sağlama toplamı eşleşmiyor: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "%1 için ses bulunamadı."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "%1 için veri bulunamadı."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26177,18 +26184,13 @@ msgstr ""
 "seçeneği kullanldığında kullanılır."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "Do you want to automatically download and update the following external "
-#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
 "GCompris başlatılırken aşağıdaki dış varlıkların kendiliğinden indirilmesini "
-"ve güncellenmesini istiyor musunuz?"
+"veya güncellenmesini istiyor musun?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26226,20 +26228,14 @@ msgid "You are running GCompris for the first time."
 msgstr "GCompris'i ilk defa çalıştırıyorsun."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Uygulamanın ayarlarında özellikle dil ayarının doğru olduğunu ve dile özel "
-"tüm dosyaların kurulu olduğunu doğrulamalısın. Bunu Tercihler Penceresinden "
-"yapabilirsin."
+"tüm dosyaların kurulu olduğunu doğrulamalısın. Bunu, Yapılandırma "
+"penceresinden yapabilirsin."
 
 #: core/main.qml:326
 msgctxt "main|"

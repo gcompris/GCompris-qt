@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2023-11-16 20:19+0100\n"
+"PO-Revision-Date: 2023-11-22 21:35+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -25666,12 +25666,9 @@ msgstr ""
 "via sistemo."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "Por elŝuti la bezonatajn sondosierojn iru al la dialogo de preferoj."
+msgstr "Por elŝuti la bezonatajn sondosierojn iru al la Agordodialogo."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -25800,11 +25797,20 @@ msgstr ""
 "Certigu, ke vi uzas la severecon nomatan \"Dezirlisto\"."
 
 #: core/DialogAbout.qml:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
+#| "projects in which you can participate.<br /><br />If you need more "
+#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
+#| "provide you with what you need."
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
-"You can join the national teams that translate program interfaces. You can "
+"You can join the language teams that translate program interfaces. You can "
 "provide graphics, themes, sounds, and improved documentation. You decide!"
 "<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
 "which you can participate.<br /><br />If you need more information or "
@@ -26026,13 +26032,13 @@ msgstr "Kontrolsumo de elŝutita dosiero ne kongruas: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Trovis neniujn voĉojn por %1."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Trovis neniujn datumojn por %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26214,17 +26220,12 @@ msgstr ""
 "uzata."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "Do you want to automatically download and update the following external "
-#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"Ĉu vi volas aŭtomate elŝuti kaj ĝisdatigi la jenajn eksterajn havaĵojn "
+"Ĉu vi volas aŭtomate elŝuti aŭ ĝisdatigi la jenajn eksterajn havaĵojn "
 "ekigante GCompris?"
 
 #: core/main.qml:271
@@ -26263,20 +26264,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Vi rulas GCompris por la unua fojo."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Vi devus kontroli, ke viaj aplikaĵaj agordoj precipe via lingvo estas ĝuste "
-"agordita, kaj ke ĉiuj lingvaj specifaj sondosieroj estas instalitaj. Vi "
-"povas fari tion en la Dialogo de Preferoj."
+"agordita. Vi povas fari tion en la dialogo de Agordoj."
 
 #: core/main.qml:326
 msgctxt "main|"
