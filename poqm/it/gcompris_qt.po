@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-11-17 11:38+0100\n"
+"PO-Revision-Date: 2023-11-23 14:11+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -26011,13 +26011,10 @@ msgstr ""
 "installati sul tuo sistema."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Per scaricare i file sonori necessari vai alla finestra delle preferenze."
+"Per scaricare i file audio necessari, vai alla finestra Configurazione."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26147,16 +26144,7 @@ msgstr ""
 "(severity) chiamato «Wishlist»."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26168,13 +26156,12 @@ msgid ""
 "what you need."
 msgstr ""
 "Non devi essere un sviluppatore di software per essere un membro della "
-"squadra di KDE. Puoi entrare a far parte delle squadre nazionali per "
-"tradurre le interfacce dei programmi e la documentazione. Puoi fornire "
-"lavori grafici, temi, suoni e migliorare la documentazione. Decidi tu!<br /"
-"><br />Visita <a href=\"%1\">%1</a> per informazioni su alcuni progetti ai "
-"quali puoi partecipare.<br /><br />Se hai bisogno di ulteriori informazioni "
-"o documentazione, una visita a <a href=\"%2\">%2</a> ti fornirà quello che "
-"ti serve."
+"squadra di KDE. Puoi unirti ai gruppi linguistici che traducono le "
+"interfacce dei programmi. Puoi creare grafica, temi e suoni o migliorare la "
+"documentazione. Decidi tu!<br /><br />Visita <a href=\"%1\">%1</a> per "
+"informazioni sui progetti a cui puoi partecipare.<br /><br />Se hai bisogno "
+"di ulteriori informazioni o di documentazione, una visita a <a href=\"%2\">"
+"%2</a> ti fornirà quello che ti serve."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -26387,13 +26374,13 @@ msgstr "Il codice di controllo del file scaricato non corrisponde: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Nessuna voce trovata per %1."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Nessun dato trovato per %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26576,17 +26563,12 @@ msgstr ""
 "usata l'opzione --launch."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "Do you want to automatically download and update the following external "
-#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"Vuoi scaricare automaticamente e aggiornare le seguenti risorse esterne "
+"Vuoi scaricare o aggiornare automaticamente le seguenti risorse esterne "
 "all'avvio di GCompris?"
 
 #: core/main.qml:271
@@ -26625,20 +26607,14 @@ msgid "You are running GCompris for the first time."
 msgstr "Stai eseguendo GCompris per la prima volta."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Dovresti verificare che le impostazioni della tua applicazione, specialmente "
-"la lingua sia imposta correttamente, e che i file sonori specifici per la "
-"tua lingua siano installati. Puoi farlo nella finestra delle preferenze."
+"la lingua sia imposta correttamente. Puoi farlo nella finestra "
+"Configurazione."
 
 # "Divertiti!"
 #: core/main.qml:326

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-07-20 23:01+0200\n"
+"PO-Revision-Date: 2023-11-23 10:54+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -23792,16 +23792,7 @@ msgid ""
 msgstr ""
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -23813,12 +23804,12 @@ msgid ""
 "what you need."
 msgstr ""
 "Tu non debe esser un disveloppator de software per esser un membro del "
-"equipa de KDE. Tu pote affiliar te con le equipas national que traduce "
-"interfacie de programma. Tu pote provider graphicos, themas, sonos,e melior "
-"documentation.Tu decide! <br /><br />Tu Visita <a href=\"%1\">%1</a>pro "
-"information super alicun projectos ubi tu pote participar.<br /><br /> Si tu "
-"necessita altere information o documentation, postea un visita a <a href="
-"\"%2\">%2</a> fornira te con tote lo que tu necessita."
+"equipa de KDE. Tu pote affiliar te con le equipas de linguage qui  traduce "
+"interfacies de programma. Tu pote provider graphiches, themas, sonos,e "
+"melior documentation.Tu decide! <br /><br />Tu Visita <a href=\"%1\">%1</"
+"a>pro information super alicun projectos ubi tu pote participar.<br /><br /> "
+"Si tu necessita altere information o documentation, postea un visita a <a "
+"href=\"%2\">%2</a> fornira te con tote lo que tu necessita."
 
 #: core/DialogAbout.qml:122
 #, qt-format
