@@ -52,7 +52,7 @@ private:
     QString m_name;
     QString m_description;
 
-signals:
+Q_SIGNALS:
     void newUsers();
     void newName();
 };

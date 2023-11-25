@@ -41,19 +41,19 @@ UserData::~UserData()
 void UserData::setName(const QString &name)
 {
     m_name = name;
-    emit newName();
+    Q_EMIT newName();
 }
 
 void UserData::setPassword(const QString &password)
 {
     m_password = password;
-    emit newPassword();
+    Q_EMIT newPassword();
 }
 
 void UserData::setConnectionStatus(const ConnectionStatus::Value status)
 {
     m_status = status;
-    emit newConnectionStatus();
+    Q_EMIT newConnectionStatus();
 }
 
 const QString &UserData::getName() const
@@ -79,19 +79,19 @@ bool UserData::hasGroup(GroupData *g)
 void UserData::addGroup(GroupData *g)
 {
     m_groups << g;
-    emit newGroups();
+    Q_EMIT newGroups();
 }
 
 void UserData::removeGroup(GroupData *g)
 {
     m_groups.removeOne(g);
-    emit newGroups();
+    Q_EMIT newGroups();
 }
 
 void UserData::removeAllGroups()
 {
     m_groups.clear();
-    emit newGroups();
+    Q_EMIT newGroups();
 }
 
 const QList<GroupData *> UserData::getGroups() const

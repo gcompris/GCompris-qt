@@ -61,15 +61,15 @@ void ClientNetworkMessages::connected()
 {
     QTcpSocket* socket = qobject_cast<QTcpSocket*>(sender());
     _connected = true;
-    emit connectionStatus();
-    emit hostChanged();
+    Q_EMIT connectionStatus();
+    Q_EMIT hostChanged();
 }
 
 void ClientNetworkMessages::serverDisconnected() {
     _host = "";
     _connected = false;
-    emit connectionStatus();
-    emit hostChanged();
+    Q_EMIT connectionStatus();
+    Q_EMIT hostChanged();
 }
 
 void ClientNetworkMessages::udpRead() {
@@ -108,7 +108,7 @@ void ClientNetworkMessages::udpRead() {
             qDebug() << "Scan deviceId" << client.deviceid().c_str() << address.toString();
             QString requestDeviceId = client.deviceid().c_str();
             if(!_connected && (requestDeviceId.isEmpty() || ApplicationSettings::getInstance()->deviceId() == requestDeviceId)) {
-                emit requestConnection(requestDeviceId, address.toString());
+                Q_EMIT requestConnection(requestDeviceId, address.toString());
             }
             break;
         }
@@ -195,7 +195,7 @@ void ClientNetworkMessages::readFromSocket()
                 qDebug() << "available login:" << name.c_str();
                 logins << name.c_str();
             }
-            emit loginListReceived(logins);
+            Q_EMIT loginListReceived(logins);
             break;
         }
         case network::Type::DISCONNECT: {
@@ -210,7 +210,7 @@ void ClientNetworkMessages::readFromSocket()
             container.data().UnpackTo(&loginReply);
             bool logOk = (loginReply.status() == network::LOGIN_OK);
             // TODO store in conf (if we want to have it persistent for some reason, schoolwork at home(?), or locally if we want a temporary session) and prevent new login list to be displayed in main.qml
-            emit loginConfirmationReceived(loginReply.login().c_str(), logOk);
+            Q_EMIT loginConfirmationReceived(loginReply.login().c_str(), logOk);
             break;
         }
         default:

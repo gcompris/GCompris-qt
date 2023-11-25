@@ -35,19 +35,19 @@ void GroupData::addUser(UserData *user)
 {
     // if(!m_users.contains(user))
     //     m_users << user;
-    emit newUsers();
+    Q_EMIT newUsers();
 }
 
 void GroupData::removeUser(UserData *user)
 {
     // m_users.removeAll(user);
-    emit newUsers();
+    Q_EMIT newUsers();
 }
 
 void GroupData::removeAllUsers()
 {
     m_users.clear();
-    emit newUsers();
+    Q_EMIT newUsers();
 }
 
 bool GroupData::hasUser(const QString &userName)
@@ -70,5 +70,5 @@ void GroupData::setDescription(const QString &description)
 void GroupData::setName(const QString &name)
 {
     m_name = name;
-    emit newName();
+    Q_EMIT newName();
 }
