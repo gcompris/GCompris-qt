@@ -13,7 +13,7 @@ public:
     explicit NavigationController(QObject *parent = nullptr) :
         QObject(parent) { }
 
-signals:
+Q_SIGNALS:
     void teacherConnected();
     void teacherDisconnected();
 
