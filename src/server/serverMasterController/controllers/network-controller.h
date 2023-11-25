@@ -55,7 +55,7 @@ public:
 
    void setMasterController(MasterController *masterController);
 
-private slots:
+private Q_SLOTS:
     void newTcpConnection();
     void slotReadyRead();
     void disconnected();
@@ -69,7 +69,7 @@ private:
     std::map<QTcpSocket *, QByteArray> buffers;
 
     void replyLoginStatus(QTcpSocket *sock, const std::string &login, const network::LoginStatus &status);
-signals:
+Q_SIGNALS:
     void newClientReceived(QTcpSocket *socket);
     void clientDisconnected(QTcpSocket *socket);
 };

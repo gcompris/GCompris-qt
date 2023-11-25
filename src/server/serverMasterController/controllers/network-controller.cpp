@@ -42,7 +42,7 @@ void NetworkController::newTcpConnection()
 
     usersMap[clientConnection] = nullptr;
     qDebug() << "New tcp connection" << clientConnection->peerAddress().toString();
-    emit newClientReceived(clientConnection);
+    Q_EMIT newClientReceived(clientConnection);
 }
 
 template <class T>
@@ -94,7 +94,7 @@ void NetworkController::slotReadyRead()
         case network::Type::CLIENT_ACCEPTED: {
             network::ClientAccepted client;
             container.data().UnpackTo(&client);
-            //emit newClient();
+            //Q_EMIT newClient();
             break;
         }
         case network::Type::LOGIN_REQUEST: {
@@ -152,7 +152,7 @@ void NetworkController::disconnected()
         user->setConnectionStatus(ConnectionStatus::Value::DISCONNECTED);
     }
     usersMap.erase(clientConnection);
-    emit clientDisconnected(clientConnection);
+    Q_EMIT clientDisconnected(clientConnection);
     clientConnection->deleteLater();
 }
 

@@ -112,7 +112,7 @@ void MasterController::createGroup(const QString &groupName)
         group->setPrimaryKey(groupId);
         group->setName(groupName);
         implementation->groups << group;
-        emit groupsChanged();
+        Q_EMIT groupsChanged();
     }
     else {
         qDebug() << "Unable to create group" << groupName;
@@ -130,12 +130,12 @@ void MasterController::updateGroup(const QString &oldGroupName, const QString &n
         if (implementation->groupFilterName.indexOf(group->getName()) >= 0) {
             implementation->groupFilterName.removeOne(group->getName());
             implementation->groupFilterName << newGroupName;
-            emit groupsFilteredChanged();
+            Q_EMIT groupsFilteredChanged();
         }
 
         group->setName(newGroupName);
-        emit groupsChanged();
-        emit usersChanged();
+        Q_EMIT groupsChanged();
+        Q_EMIT usersChanged();
     }
     else {
         qDebug() << "Unable to update group from" << oldGroupName << "to" << newGroupName;
@@ -166,8 +166,8 @@ void MasterController::deleteGroup(const QString &groupName)
             implementation->groupFilterName.removeOne(group->getName());
             filterUsersView();
         }
-        emit groupsChanged();
-        emit usersChanged();
+        Q_EMIT groupsChanged();
+        Q_EMIT usersChanged();
         delete group;
     }
     else {
@@ -182,7 +182,7 @@ void MasterController::createUser(UserData *newUser)
         UserData *user = new UserData(*newUser);
         user->setPrimaryKey(userId);
         implementation->users << user;
-        emit usersChanged();
+        Q_EMIT usersChanged();
     }
     else {
         qDebug() << "Unable to create user" << newUser->getName();
@@ -334,7 +334,7 @@ GroupData *MasterController::getGroupByName(const QString &name)
 void MasterController::filterUsersView()
 {
     implementation->filterUsersView();
-    emit usersChanged();
+    Q_EMIT usersChanged();
 }
 
 QQmlListProperty<UserData> MasterController::ui_users()

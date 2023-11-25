@@ -26,7 +26,7 @@ public:
 
     QQmlListProperty<framework::Command> ui_findClientViewContextCommands();
 
-public slots:
+public Q_SLOTS:
     void onManagePupilsAddPupilExecuted();
     void onManagePupilsAddPupilsFromListExecuted();
     void onManagePupilsRemovePupilsExecuted();

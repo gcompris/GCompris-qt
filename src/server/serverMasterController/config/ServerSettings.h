@@ -80,10 +80,10 @@ public:
     void setDatabaseFile(const QString &newDatabaseFile)
     {
         m_databaseFile = newDatabaseFile;
-        emit databaseFileChanged();
+        Q_EMIT databaseFileChanged();
     }
 
-protected slots:
+protected Q_SLOTS:
 
     Q_INVOKABLE void notifyDatabaseFileChanged();
     /**
@@ -91,7 +91,7 @@ protected slots:
      */
     Q_INVOKABLE void sync();
 
-signals:
+Q_SIGNALS:
     void databaseFileChanged();
 
 protected:

@@ -7,6 +7,10 @@ include(qt_helper)
 
 set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
 
+# Workaround to link to protobuf: https://github.com/protocolbuffers/protobuf/issues/14500
+set(CMAKE_EXE_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
+set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
+
 # server
 set(server_SRCS
   serverMasterController/controllers/master-controller.cpp

@@ -26,7 +26,7 @@ class ClientNetworkMessages : public QObject
 public:
     ClientNetworkMessages();
 
-signals:
+Q_SIGNALS:
     void newServers();
     void hostChanged();
     void portChanged();
@@ -54,7 +54,7 @@ public:
 
     void setHost(const QString &newHost) {
         _host = newHost;
-        emit hostChanged();
+        Q_EMIT hostChanged();
     }
 
     int port() const{
@@ -63,10 +63,10 @@ public:
 
     void setPort(const int &newPort) {
         _port = newPort;
-        emit portChanged();
+        Q_EMIT portChanged();
     }
 
-private slots:
+private Q_SLOTS:
     void readFromSocket();
     void udpRead();
     void connected();
