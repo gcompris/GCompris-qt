@@ -28,7 +28,7 @@ public:
     const QString &description() const;
     bool canExecute() const;
 
-signals:
+Q_SIGNALS:
     void canExecuteChanged();
     void executed();
 

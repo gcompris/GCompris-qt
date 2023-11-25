@@ -449,7 +449,7 @@ public:
     void setDeviceId(const QString &newDeviceId)
     {
         m_deviceId = newDeviceId;
-        emit deviceIdChanged();
+        Q_EMIT deviceIdChanged();
     }
 
     QString cachePath() const { return m_cachePath; }

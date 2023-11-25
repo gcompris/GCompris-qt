@@ -45,7 +45,7 @@ public:
 
     void addActivityDataForUser(const UserData &user, const QString& activity, qint64 timestamp, const QString &rawData);
 
-public slots:
+public Q_SLOTS:
     void createGroup(const QString &groupName);
     void updateGroup(const QString &oldGroupName, const QString &newGroupName);
     void deleteGroup(const QString &groupName);
@@ -62,7 +62,7 @@ public slots:
 
     QList<QVariant> getActivityData(const QString &userName, const QString &activity /*, range of date */);
 
-signals:
+Q_SIGNALS:
     void groupsFilteredChanged();
     void groupsChanged();
     void usersChanged();
