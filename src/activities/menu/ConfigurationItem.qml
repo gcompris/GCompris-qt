@@ -473,12 +473,11 @@ Item {
     // or we get a binding loop warning
     property real backgroundMusicVolume
     property real audioEffectsVolume
-<<<<<<< HEAD
+
     property int minFilter
     property int maxFilter
-=======
+
     property alias deviceId: deviceIdInput.text
->>>>>>> bdc93b5e3 (server, initial entry)
 
     function extractMusicNameFromPath(musicPath: string): string {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
@@ -518,13 +517,8 @@ Item {
         exitConfirmation = ApplicationSettings.exitConfirmation
         exitConfirmationBox.checked = exitConfirmation
 
-<<<<<<< HEAD
-=======
-        wordset = useWordset ? ApplicationSettings.wordset : ""
-
         deviceId = ApplicationSettings.deviceId
 
->>>>>>> bdc93b5e3 (server, initial entry)
         baseFontSize = ApplicationSettings.baseFontSize
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
         backgroundMusicVolume = ApplicationSettings.backgroundMusicVolume
@@ -577,13 +571,6 @@ Item {
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel.get(fontCapitalizationBox.currentIndex).value
 
-<<<<<<< HEAD
-        if(ApplicationSettings.filterLevelMin !== minFilter ||
-           ApplicationSettings.filterLevelMax !== maxFilter) {
-               ApplicationSettings.filterLevelMin = minFilter
-               ApplicationSettings.filterLevelMax = maxFilter
-               ActivityInfoTree.minMaxFiltersChanged(minFilter, maxFilter)
-=======
         deviceIdInput.accepted()
         ApplicationSettings.deviceId = deviceId
 
@@ -592,7 +579,6 @@ Item {
                ApplicationSettings.filterLevelMin = filterRepeater.minFilter
                ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
                ActivityInfoTree.minMaxFiltersChanged(filterRepeater.minFilter, filterRepeater.maxFilter)
->>>>>>> bdc93b5e3 (server, initial entry)
         }
 
         ApplicationSettings.saveBaseFontSize();
