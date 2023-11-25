@@ -79,7 +79,7 @@ private:
     QList<GroupData *> m_groups;
     ConnectionStatus::Value m_status;
 
-signals:
+Q_SIGNALS:
     void newName();
     void newPassword();
     void newGroups();
