@@ -183,6 +183,9 @@ if (USE_16KB_PAGESIZE)
 endif()
 
 if(BUILD_SERVER)
+  # Workaround to link to protobuf: https://github.com/protocolbuffers/protobuf/issues/14500
+  set(CMAKE_EXE_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
+  set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
   target_link_libraries(gcompris_core protobuf::libprotobuf)
   target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
   if(BUILD_STANDALONE)
