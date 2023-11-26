@@ -1129,28 +1129,19 @@ msgid "Learn addition table of 10."
 msgstr "Apprendre la table d'addition de 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Additionne des nombres décimaux jusqu'à 1."
+msgstr "Additionne des nombres jusqu'à 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Additionne des nombres décimaux jusqu'à 1."
+msgstr "Additionne des nombres jusqu'à 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Ajouter les étoiles jusqu'à 10."
+msgstr "Additionne avec des résultats jusqu'à 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -4773,20 +4764,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783, La montgolfière des frères Montgolfier"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906, Paul Cornu Premier vol d'hélicoptère"
+msgstr "1907, Paul Cornu Premier vol d'hélicoptère"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4799,12 +4784,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 le fardier de Cugnot"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4832,12 +4814,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 La Locomotive à Vapeur de Stephenson"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4850,20 +4829,14 @@ msgid "Aviation"
 msgstr "Aviation"
 
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903, le Flyer III des frères Wright"
+msgstr "1905, le Flyer III des frères Wright"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
@@ -4886,12 +4859,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927, Charles Lindbergh traverse l'Atlantique"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934, Record de vitesse d'Hélène Boucher à 444 km/h"
+msgstr "1934, Record de vitesse d'Hélène Boucher à 445 km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4919,12 +4889,9 @@ msgid "Cars"
 msgstr "Les voitures"
 
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899, Renault « voiturette »"
+msgstr "1898, Renault « voiturette »"
 
 #: activities/chronos/resource/board/board6_3.qml:46
 msgctxt "board6_3|"
@@ -14510,12 +14477,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Multiplications."
+msgstr "Multiplication nécessaire."
 
 #: activities/guess24/resource/4/Data.qml:13
 #, fuzzy
@@ -14526,12 +14490,9 @@ msgid "Solvable with all operators."
 msgstr "Grilles de petite taille avec +."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Divisions."
+msgstr "Division nécessaire."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -18570,12 +18531,9 @@ msgid "Language selector"
 msgstr "Choisir la langue"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Télécharger automatiquement les fichiers de sons"
+msgstr "Télécharger automatiquement les fichiers de données externes"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -26282,14 +26240,11 @@ msgstr ""
 "ils ne sont pas installés sur votre système."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Pour télécharger les fichiers sons requis, allez dans la boîte de dialogue "
-"des préférences."
+"Pour télécharger les fichiers sons requis, allez dans la page de "
+"configuration."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26423,16 +26378,7 @@ msgstr ""
 "appelé « Liste de souhaits »."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26444,13 +26390,13 @@ msgid ""
 "what you need."
 msgstr ""
 "Il n'est pas nécessaire d'être développeur pour être membre de l'équipe KDE. "
-"Vous pouvez rejoindre les équipes nationales qui traduisent les interfaces "
-"des programmes, créer du graphisme, des thèmes, des sons et enrichir la "
-"documentation. C'est vous qui décidez !<br /><br />Visitez <a href=\"%1\">"
-"%1</a> pour plus d'informations sur certains projets auxquels vous pouvez "
-"participer.<br /><br />S'il vous faut plus de renseignements ou de "
-"documentation, consulter <a href=\"%2\">%2</a> devrait vous fournir ce dont "
-"vous avez besoin."
+"Vous pouvez rejoindre les équipes de traduction qui traduisent les "
+"interfaces des programmes, créer du graphisme, des thèmes, des sons et "
+"enrichir la documentation. C'est vous qui décidez !<br /><br />Visitez <a "
+"href=\"%1\">%1</a> pour plus d'informations sur certains projets auxquels "
+"vous pouvez participer.<br /><br />S'il vous faut plus de renseignements ou "
+"de documentation, consulter <a href=\"%2\">%2</a> devrait vous fournir ce "
+"dont vous avez besoin."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -26853,14 +26799,13 @@ msgid ""
 msgstr ""
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Voulez-vous télécharger le contenu externe suivant ?"
+msgstr ""
+"Voulez-vous automatiquement télécharger ou mettre à jour les contenus "
+"externes au démarrage de GCompris ?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26898,12 +26843,6 @@ msgid "You are running GCompris for the first time."
 msgstr "Vous lancez GCompris pour la première fois."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26911,8 +26850,7 @@ msgid ""
 msgstr ""
 "Vous devriez vérifier que les réglages de l'application, en particulier la "
 "langue, sont corrects, et que tous les fichiers de sons spécifiques à la "
-"langue sont installés. Vous pouvez faire ceci dans la boîte de dialogue des "
-"préférences."
+"langue sont installés. Vous pouvez faire ceci dans la page de configuration."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -26943,9 +26881,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Annuler"

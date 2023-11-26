@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-11-19 03:40\n"
+"PO-Revision-Date: 2023-11-25 02:29\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -24176,12 +24176,9 @@ msgid ""
 msgstr "此活动使用语言特定的声音文件，在您的系统上还没有安装。"
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "下载需要的声音文件到参数选择对话框。"
+msgstr ""
 
 #: core/core.js:257
 msgctxt "core|"
@@ -24300,16 +24297,7 @@ msgstr ""
 "程度。"
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -24320,10 +24308,6 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"要成为 KDE 团队的成员，您不必是软件开发者。您可以加入翻译程序界面的国家团队。"
-"您可以提供图形、主题、声音和改善文档。一切由您决定！<br /><br />访问 <a href="
-"\"%1\">%1</a> 获取您可以加入的一些项目的信息。<br /><br />如果您需要更多的信"
-"息或文档，请访问 <a href=\"%2\">%2</a>。"
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -24754,19 +24738,11 @@ msgid "You are running GCompris for the first time."
 msgstr "您正首次运行 GCompris。"
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"您应该确认您的程序设置尤其是您的语言设置正确，还有安装了特定语言所有的声音文"
-"件。您可以在首选项对话框里做这些。"
 
 #: core/main.qml:326
 msgctxt "main|"
