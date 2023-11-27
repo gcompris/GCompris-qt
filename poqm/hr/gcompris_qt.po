@@ -814,12 +814,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Nauči tablicu množenja brojem 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Tablice množenja od 1 do 10."
+msgstr "Vježbanje tablice množenja od 1 do 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -908,12 +905,9 @@ msgid "Learn division table of 10."
 msgstr "Nauči tablicu dijeljenja brojem 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Tablice množenja od 1 do 10."
+msgstr "Vježbanje tablice dijeljenja od 1 do 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1004,28 +998,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Nauči tablicu oduzimanja brojem 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Oduzmi decimalne brojeve do 1."
+msgstr "Oduzimanje brojeva do 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Oduzmi decimalne brojeve do 1."
+msgstr "Oduzimanje brojeva do 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Oduzmi decimalne brojeve do 1."
+msgstr "Oduzimanje brojeva do 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1114,28 +1099,19 @@ msgid "Learn addition table of 10."
 msgstr "Nauči tablicu zbrajanja brojem 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Zbroji decimalne brojeve do 1."
+msgstr "Zbrajanje brojeva do 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Zbroji decimalne brojeve do 1."
+msgstr "Zbrajanje brojeva do 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Dodaj do 10 zvjezdica."
+msgstr "Zbrajanje brojeva do 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -4646,20 +4622,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783. Balon na vrući zrak braće Montgolfier"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880. Eole Clementa Adera"
+msgstr "1890. Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906. Paul Cornu Prvi let helikopterom"
+msgstr "1907. Paul Cornu prvi let helikopterom"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4672,12 +4642,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769. Cugnotov fardier"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880. Eole Clementa Adera"
+msgstr "1890. Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4705,12 +4672,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829. Stephensonova parna lokomotiva Rocket"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880. Eole Clementa Adera"
+msgstr "1890. Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4723,20 +4687,14 @@ msgid "Aviation"
 msgstr "Zrakoplovstvo"
 
 #: activities/chronos/resource/board/board6_0.qml:39
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880. Eole Clementa Adera"
+msgstr "1890. Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903. Flyer braće Wright III"
+msgstr "1905. Flyer III braće Wright"
 
 #: activities/chronos/resource/board/board6_0.qml:55
 msgctxt "board6_0|"
@@ -4759,12 +4717,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927. Charles Lindbergh prelazi Atlantski ocean"
 
 #: activities/chronos/resource/board/board6_1.qml:54
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934. Brzinski rekord Hélène Boucher od 444 km/h"
+msgstr "1934. Brzinski rekord Hélène Boucher od 445 km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4792,12 +4747,9 @@ msgid "Cars"
 msgstr "Auti"
 
 #: activities/chronos/resource/board/board6_3.qml:38
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899. Renault voiturette"
+msgstr "1898. Renault voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:46
 msgctxt "board6_3|"
@@ -13882,7 +13834,7 @@ msgstr "Backspace: odabir prethodne riječi"
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr "Gramatička analiza "
+msgstr "Gramatička analiza"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
@@ -13912,7 +13864,7 @@ msgstr "Ostavi okvir prazan ako se vrsta riječi ne podudara."
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr "Nastava gramatike "
+msgstr "Nastava gramatike"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
@@ -13942,7 +13894,7 @@ msgstr "Prazno"
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr "Nastava gramatike "
+msgstr "Nastava gramatike"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
@@ -14119,117 +14071,90 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Pogodi 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Izračunom dođi do broja 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
 msgstr "Vježbaj algebarske izračune s četiri operatora."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Vježbaj zbrajanje, oduzimanje, množenje i dijeljenje."
+msgstr ""
+"Mogućnost računanja pomoću zbrajanja, oduzimanja, množenja i dijeljenja."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Koristeći četiri broja i dane operatore dođi do broja 24."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Strelice: kretanje unutar područja"
+msgstr "Strelice: kretanje između brojeva i operatora"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Razmaknica ili Enter: odaberi ili postavi stavku"
+msgstr ""
+"Razmaknica ili Enter: odaberi ili poništi odabir vrijednosti ili operatora"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Tipke operatora (+, -, *, /): odaberi operator"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace ili Delete: poništavanje"
+msgstr "Backspace ili Delete: poništavanje zadnje operacije"
 
 #: activities/guess24/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up and down arrows or tabulation: switch between classes and words"
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
-"Strelice gore i dolje ili tabulator: prebacivanje između vrste riječi i "
-"riječi"
+msgstr "Tabulator: prebacivanje između brojeva i operatora"
 
 #: activities/guess24/Guess24.qml:104
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Koristeći četiri broja i dane operatore dođi do broja 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "Rješivo s + i -."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "Rješivo s +, - i ×."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Množenje."
+msgstr "Operacija množenja je obavezna."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids with + operator."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Mala mreža s operatorom +."
+msgstr "Riješivo sa svim operatorima."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Dijeljenje."
+msgstr "Operacija dijeljenja je obavezna."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15023,12 +14948,9 @@ msgstr "Pronađi bendžo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Pronađi bongo"
+msgstr "Pronađi bongove"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -18186,12 +18108,9 @@ msgid "Language selector"
 msgstr "Izbornik jezika"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Omogući automatsko preuzimanje/ažuriranje zvučnih zapisa"
+msgstr "Omogući automatsko preuzimanje/ažuriranje vanjskih sredstava"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19231,7 +19150,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Istakni sljedeću točku"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -24856,17 +24775,18 @@ msgid ""
 "    1 parallelogram (sides of 1 and square root of 2)\n"
 "    "
 msgstr ""
-"Tangram (kineski: doslovno 'sedam ploča lukavstva') je kineska zagonetka. "
+"Tangram (kineski: doslovno 'sedam ploča lukavstva') je kineska mozgalica. "
 "Dok se za tangram često kaže da je drevan, njegovo postojanje je potvrđeno "
 "tek 1800. godine. Sastoji se od 7 dijelova, koji se nazivaju tan, koji se "
 "uklapaju u kvadrat; Koristeći kvadratnu stranicu kao 1 jedinicu, 7 dijelova "
-"sadrži:\n"
+"se sastoji od:\n"
 "     5 pravokutnih jednakokračnih trokuta, uključujući:\n"
-"         - 2 mala jednakokračna pravokutna trokuta\n"
-"         - 1 jednakokračni pravokutni trokut srednje veličine)\n"
-"         - 2 velika jednakokračna pravokutna trokuta\n"
-"     1 kvadrat i\n"
-"     1 paralelogram\n"
+"         - 2 mala jednakokračna pravokutna trokuta (duljina krakova je 1)\n"
+"         - 1 jednakokračni pravokutni trokut srednje veličine (duljina "
+"krakova je korijen broja 2)\n"
+"         - 2 velika jednakokračna pravokutna trokuta (duljina krakova je 2)\n"
+"     1 kvadrat (duljina stranice je 1) i\n"
+"     1 paralelogram (duljina stranica je 1 i korijen broja 2)\n"
 "Izvor: Wikipedia"
 
 #. Help manual
@@ -25690,13 +25610,9 @@ msgstr ""
 "tvom sustavu."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr ""
-"Za preuzimanje potrebnih zvučnih zapisa idi na dijaloški okvir postavki."
+msgstr "Za preuzimanje potrebnih zvučnih zapisa idi na konfiguraciju."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -25822,16 +25738,7 @@ msgstr ""
 "tvoju želju . Za prijedloge koristi opciju \"Popis želja\"."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26059,13 +25966,13 @@ msgstr "Kontrolni zbroj preuzete datoteke ne odgovara: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Za %1 nisu pronađeni glasovi."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Za %1 nisu pronađeni podaci."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26243,16 +26150,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Odredi na kojoj razini želiš pokrenuti aktivnost. Vrijedi samo ako se "
+"koristi i opcija --launch."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Želiš li preuzeti sljedeća vanjske dodatke?"
+msgstr ""
+"Želiš li automatski preuzeti ili ažurirati vanjska sredstva prilikom "
+"pokretanja GComprisa?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26290,20 +26198,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Po prvi put pokrećeš GCompris."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Trebaš provjeriti jesu li postavke tvoje aplikacije, posebno jezik, ispravno "
-"odabran i jesu li instalirani svi zvučni zapisi za odabrani jezik. To možeš "
-"učiniti u dijaloškom okviru postavki."
+"odabran. To možeš učiniti u dijaloškom okviru konfiguracije."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -26327,16 +26228,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Neke aktivnosti imaju dostupan novi skup podataka. Želiš li poništiti "
+"postojeći odabir skupa podataka?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Primijeni"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Odustani"
