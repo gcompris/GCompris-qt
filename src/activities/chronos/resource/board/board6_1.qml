@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (New images and coordinates)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,21 +15,21 @@ QtObject {
    property string instruction: qsTr("Aviation")
    property var levels: [
       {
-          "pixmapfile": "images/bell_X1.svg",
+          "pixmapfile": "images/yeager_X1.svg",
           "x": 0.5,
           "y": 0.65,
           "width": 0.4,
           "height": 0.3
       },
       {
-          "pixmapfile": "images/lindbergh.svg",
+          "pixmapfile": "images/lindbergh_spirit.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,
           "height": 0.3
       },
       {
-          "pixmapfile": "images/rafale.svg",
+          "pixmapfile": "images/boucher_C460.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
