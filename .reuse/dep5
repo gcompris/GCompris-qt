@@ -995,15 +995,15 @@ Copyright: 2020 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: src/activities/chronos/resource/images/1955ds19.svg
- src/activities/chronos/resource/images/benz1885.svg
- src/activities/chronos/resource/images/bolle1878.svg
  src/activities/chronos/resource/images/lancia1923.svg
  src/activities/chronos/resource/images/renault1899.svg
 Copyright: 2016 Franck Doucet
 License: GPL-3.0-only
 
 Files: src/activities/chronos/resource/images/ader_eole.svg
+ src/activities/chronos/resource/images/benz_motorwagen.svg
  src/activities/chronos/resource/images/bleriot_XI.svg
+ src/activities/chronos/resource/images/bollee_mancelle.svg
  src/activities/chronos/resource/images/boucher_C460.svg
  src/activities/chronos/resource/images/cornu_helico.svg
  src/activities/chronos/resource/images/cugnot_fardier.svg

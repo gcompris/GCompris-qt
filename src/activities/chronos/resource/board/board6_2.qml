@@ -15,7 +15,7 @@ QtObject {
    property string instruction: qsTr("Cars")
    property var levels: [
       {
-          "pixmapfile": "images/bolle1878.svg",
+          "pixmapfile": "images/bollee_mancelle.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
@@ -29,7 +29,7 @@ QtObject {
           "height": 0.3
       },
       {
-          "pixmapfile": "images/benz1885.svg",
+          "pixmapfile": "images/benz_motorwagen.svg",
           "x": 0.5,
           "y": 0.65,
           "width": 0.4,
