@@ -4722,12 +4722,12 @@ msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot's fardier"
 
-#: activities/chronos/resource/board/board6_0.qml:15
+#: activities/chronos/resource/board/board6_0.qml:16
 msgctxt "board6_0|"
 msgid "Aviation"
 msgstr "Aviation"
 
-#: activities/chronos/resource/board/board6_0.qml:39
+#: activities/chronos/resource/board/board6_0.qml:40
 #, fuzzy
 #| msgctxt "board6_0|"
 #| msgid "1880 Clement Ader's Eole"
@@ -4735,7 +4735,7 @@ msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
 msgstr "1880 Clement Ader's Eole"
 
-#: activities/chronos/resource/board/board6_0.qml:47
+#: activities/chronos/resource/board/board6_0.qml:48
 #, fuzzy
 #| msgctxt "board6_0|"
 #| msgid "1903 The Wright brothers' Flyer III"
@@ -4743,27 +4743,27 @@ msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
 msgstr "1903 The Wright brothers' Flyer III"
 
-#: activities/chronos/resource/board/board6_0.qml:55
+#: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
 msgstr "1909 Louis Bleriot crosses the English Channel"
 
-#: activities/chronos/resource/board/board6_1.qml:14
+#: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
 msgid "Aviation"
 msgstr "Aviation"
 
-#: activities/chronos/resource/board/board6_1.qml:38
+#: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
 msgid "1947 Chuck Yeager breaks the sound-barrier"
 msgstr "1947 Chuck Yeager breaks the sound-barrier"
 
-#: activities/chronos/resource/board/board6_1.qml:46
+#: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh crosses the Atlantic Ocean"
 
-#: activities/chronos/resource/board/board6_1.qml:54
+#: activities/chronos/resource/board/board6_1.qml:55
 #, fuzzy
 #| msgctxt "board6_1|"
 #| msgid "1934 Hélène Boucher's speed record of 444km/h"

@@ -4916,48 +4916,48 @@ msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
 msgstr "Cotxe de Cugnot, 1769"
 
-#: activities/chronos/resource/board/board6_0.qml:15
+#: activities/chronos/resource/board/board6_0.qml:16
 msgctxt "board6_0|"
 msgid "Aviation"
 msgstr "Aviació"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
-#: activities/chronos/resource/board/board6_0.qml:39
+#: activities/chronos/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
 msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://en.wikipedia.org/wiki/Wright_Flyer
-#: activities/chronos/resource/board/board6_0.qml:47
+#: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
 msgstr "Flyer III dels germans Wright, 1905"
 
 # Nota: http://ca.wikipedia.org/wiki/Louis_Blériot
-#: activities/chronos/resource/board/board6_0.qml:55
+#: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
 msgstr "Louis Bleriot creua el canal de la Mànega, 1909"
 
-#: activities/chronos/resource/board/board6_1.qml:14
+#: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
 msgid "Aviation"
 msgstr "Aviació"
 
 # Nota: http://ca.wikipedia.org/wiki/Charles_Elwood_Yeager
-#: activities/chronos/resource/board/board6_1.qml:38
+#: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
 msgid "1947 Chuck Yeager breaks the sound-barrier"
 msgstr "Chuck Yeager trenca la barrera del so, 1947"
 
 # Nota: http://ca.wikipedia.org/wiki/Charles_Lindbergh
-#: activities/chronos/resource/board/board6_1.qml:46
+#: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "Charles Lindbergh creua l'Oceà Atlàntic, 1927"
 
 # Nota: http://en.wikipedia.org/wiki/Hélène_Boucher
-#: activities/chronos/resource/board/board6_1.qml:54
+#: activities/chronos/resource/board/board6_1.qml:55
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
 msgstr "Rècord de velocitat a 445 km/h d'Helene Boucher, 1934"
