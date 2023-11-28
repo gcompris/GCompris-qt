@@ -990,44 +990,7 @@ Files: src/activities/chess*/*.svg
 Copyright: 2016-2018 Timothée Giet
 License: CC-BY-SA-4.0
 
-Files: src/activities/chronos/chronos.svg
-Copyright: 2020 Timothée Giet
-License: CC-BY-SA-4.0
-
-Files: src/activities/chronos/resource/images/1955ds19.svg
- src/activities/chronos/resource/images/lancia1923.svg
- src/activities/chronos/resource/images/renault1899.svg
-Copyright: 2016 Franck Doucet
-License: GPL-3.0-only
-
-Files: src/activities/chronos/resource/images/ader_eole.svg
- src/activities/chronos/resource/images/benz_motorwagen.svg
- src/activities/chronos/resource/images/bleriot_XI.svg
- src/activities/chronos/resource/images/bollee_mancelle.svg
- src/activities/chronos/resource/images/boucher_C460.svg
- src/activities/chronos/resource/images/cornu_helico.svg
- src/activities/chronos/resource/images/cugnot_fardier.svg
- src/activities/chronos/resource/images/garden-01.svg
- src/activities/chronos/resource/images/garden-02.svg
- src/activities/chronos/resource/images/garden-03.svg
- src/activities/chronos/resource/images/garden-04.svg
- src/activities/chronos/resource/images/lindbergh_spirit.svg
- src/activities/chronos/resource/images/montgolfiere.svg
- src/activities/chronos/resource/images/moon-01.svg
- src/activities/chronos/resource/images/moon-02.svg
- src/activities/chronos/resource/images/moon-03.svg
- src/activities/chronos/resource/images/moon-04.svg
- src/activities/chronos/resource/images/seasons-autumn.svg
- src/activities/chronos/resource/images/seasons-spring.svg
- src/activities/chronos/resource/images/seasons-summer.svg
- src/activities/chronos/resource/images/seasons-winter.svg
- src/activities/chronos/resource/images/stephenson_rocket.svg
- src/activities/chronos/resource/images/tuxtree-01.svg
- src/activities/chronos/resource/images/tuxtree-02.svg
- src/activities/chronos/resource/images/tuxtree-03.svg
- src/activities/chronos/resource/images/tuxtree-04.svg
- src/activities/chronos/resource/images/wright_flyer_3.svg
- src/activities/chronos/resource/images/yeager_X1.svg
+Files: src/activities/chronos/*.svg
 Copyright: 2020-2023 Timothée Giet
 License: CC-BY-SA-4.0
 

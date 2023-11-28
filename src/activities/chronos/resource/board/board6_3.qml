@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (New images and coordinates)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -14,21 +15,21 @@ QtObject {
    property string instruction: qsTr("Cars")
    property var levels: [
       {
-          "pixmapfile": "images/renault1899.svg",
+          "pixmapfile": "images/renault_voiturette.svg",
           "x": 0.25,
           "y": 0.2,
           "width": 0.4,
           "height": 0.3
       },
       {
-          "pixmapfile": "images/lancia1923.svg",
+          "pixmapfile": "images/lancia_lambda.svg",
           "x": 0.75,
           "y": 0.2,
           "width": 0.4,
           "height": 0.3
       },
       {
-          "pixmapfile": "images/1955ds19.svg",
+          "pixmapfile": "images/citroen_DS19.svg",
           "x": 0.5,
           "y": 0.65,
           "width": 0.4,
