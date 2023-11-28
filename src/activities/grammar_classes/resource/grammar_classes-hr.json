@@ -1,0 +1,230 @@
+{
+  "levels": [
+    {
+      "objective": "Pronađi imenice.",
+      "difficulty": "1",
+      "exercise": "dbA",
+      "goal": "im"
+    },
+    {
+      "objective": "Pronađi glagole.",
+      "difficulty": "2",
+      "exercise": "dbA",
+      "goal": "gl"
+    },
+    {
+      "objective": "Pronađi pridjeve.",
+      "difficulty": "3",
+      "exercise": "dbB",
+      "goal": "pr"
+    },
+    {
+      "objective": "Pronađi broj.",
+      "difficulty": "4",
+      "exercise": "dbB",
+      "goal": "br"
+    },
+    {
+      "objective": "Pronađi usklike.",
+      "difficulty": "5",
+      "exercise": "dbC",
+      "goal": "us"
+    },	
+    {
+      "objective": "Pronađi veznike.",
+      "difficulty": "6",
+      "exercise": "dbD",
+      "goal": "ve"
+    },
+    {
+      "objective": "Pronađi zamjenice.",
+      "difficulty": "7",
+      "exercise": "dbD",
+      "goal": "za"
+    },
+    {
+      "objective": "Pronađi priloge.",
+      "difficulty": "8",
+      "exercise": "dbE",
+      "goal": "pl"
+    },
+    {
+      "objective": "Pronađi prijedloge.",
+      "difficulty": "9",
+      "exercise": "dbE",
+      "goal": "pj"
+    },
+    {
+      "objective": "Pronađi čestice.",
+      "difficulty": "10",
+      "exercise": "dbE",
+      "goal": "če"
+    }	
+  ],
+  "dataset" : {
+    "dbA" : [
+      { "sentence": "Ivan živi u Rovinju."
+      , "answer":   "im   gl   pj im     "
+      },
+      { "sentence": "Noćas (će padati) kiša."
+      , "answer":   "pl    gl          im   "
+      },
+      { "sentence": "Danas sniježi u Rovinju."
+      , "answer":   "pl    gl      pj im"
+      },
+      { "sentence": "Zvonko ima plišanog medvjedića."
+      , "answer":   "im     gl  pr       im         "
+      },
+      { "sentence": "Svako jutro perem zube."
+      , "answer":   "za    im    gl    im   "
+      },
+      { "sentence": "Volim jesti čokoladu."
+      , "answer":   "gl    gl    im       "
+      },
+      { "sentence": "Uskoro opet počinje nastava."
+      , "answer":   "pl     pl   gl      im      "
+      },
+      { "sentence": "Popodne idem u park."
+      , "answer":   "im      gl   pj im  "
+      },
+      { "sentence": "Ljeti svaki dan idem plivati."
+      , "answer":   "pl    za    im  gl   gl      "
+      }
+    ],
+    "dbB" : [
+      { "sentence": "Sanja ima četiri para lijepih čizmica."
+      , "answer":   "im    gl  br     im   pr      im      "
+      },
+      { "sentence": "Ove tri ruže su crvene boje."
+      , "answer":   "za  br  ime  gl pr     im   "
+      },
+      { "sentence": "Melisa ima dva žuta kišobrana."
+      , "answer":   "im     gl  br  pr   im       "
+      },
+      { "sentence": "Jedan mali bijeli zeko trči šumom."
+      , "answer":   "br    pr   pr     im   gl   im    "
+      },
+      { "sentence": "Kući imam dva velika crvena balona."
+      , "answer":   "im   gl   br  pr     pr     im    "
+      },	
+      { "sentence": "Jedan mali smeđi puž sporo ide kući."
+      , "answer":   "br    pr   pr    im  pl    gl  im   "
+      }	  
+    ],
+    "dbC" : [
+      { "sentence": "Joj, opet (sam pala)!"
+      , "answer":   "us   pl   gl         "
+      },
+      { "sentence": "Bok, danas idem u Zagreb."
+      , "answer":   "us   pl    gl   pj im    "
+      }	,
+      { "sentence": "Halo, koga trebate?"
+      , "answer":   "us    za   gl      "
+      }	,
+      { "sentence": "Pst! Budi tiho!"
+      , "answer":   "us   gl   pl   "
+      }	,
+      { "sentence": "Ajme, prosula si mlijeko!"
+      , "answer":   "us    gl      za im      "
+      }	,
+      { "sentence": "Hura! Stiže pizza. Mljac!"
+      , "answer":   "us    gl    im     us    "
+	  }		  
+    ],		
+    "dbD" : [	
+      { "sentence": "Ona kod kuće ima mačku i psa."
+      , "answer":   "za  pj  im   gl  im    ve im "
+      },
+      { "sentence": "Ti petkom i ne gledaš dobre filmove."
+      , "answer":   "za im     ve če gl     pr    im      "
+      },
+      { "sentence": "Na onoj livadi raste cvijeće ako zimi pada kiša."
+      , "answer":   "pj za   im     gl    im      ve  pl   gl   im   "
+      },
+      { "sentence": "Ako požurim, stignem u kino pogledati neki film."
+      , "answer":   "ve  gl       gl      pj im  gl        za   im   "
+      },
+      { "sentence": "Oni vole čitati bajke, ali ne i basne."
+      , "answer":   "za  gl   gl     im     ve  če ve im   "
+      },
+      { "sentence": "Nekakve bube šetaju po stolu i stolicama."
+      , "answer":   "za      im   gl     pj im    ve im       "	  
+      },
+      { "sentence": "Naša mama kuha ovakav gulaš ako ima mesa."
+      , "answer":   "za   im   gl    za    im    ve  gl  im   "	  
+      } 	  
+	],
+    "dbE" : [
+      { "sentence": "Da, često maštam da vozim brzi crveni auto s crvenim gumama."
+      , "answer":   "če  pl    gl     ve gl    pr   pr     im   pj pr     im     "
+	  },	
+      { "sentence": "Mravi su vrlo marljivi, eno ondje po cijeli dan skupljaju hranu."
+      , "answer":   "im    gl pr   pr        če  pl    pj pr     im  gl        im    "
+      },
+      { "sentence": "Kako sam baš sretan kao beba zbog dobrih ocjena."
+      , "answer":   "pl   gl  če  pr     ve  im   pj   pr     im     "
+      },	  
+      { "sentence": "Moja baka često priča na mobitel ali baš voli slati SMS zbog tebe."
+      , "answer":   "za   im   pr    gl    pl im      ve  če  gl   gl    im  pj   za   "
+      },
+	  { "sentence": "Hej, eno ondje kupi karte s popustom za sebe i tvoju djevojku."
+      , "answer":   "us   če  pl    gl   im    pj im      pj za   ve za   im       "
+      },
+      { "sentence": "Njegov pas baš često dolazi spavati u susjedovo dvorište."
+      , "answer":   "za    im   če  pl    gl     gl      pj pr       im       "	 
+	  }	  
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "im",
+      "wordClass": "imenica",
+      "image": "1.svg"
+    },
+    {
+      "code": "za",
+      "wordClass": "zamjenica",
+      "image": "2.svg"
+    },
+    {
+      "code": "pr",
+      "wordClass": "pridjev",
+      "image": "3.svg"
+    },
+    {
+      "code": "br",
+      "wordClass": "broj",
+      "image": "4.svg"
+    },
+    {
+      "code": "gl",
+      "wordClass": "glagol",
+      "image": "5.svg"
+    },
+    {
+      "code": "pl",
+      "wordClass": "prilog",
+      "image": "6.svg"
+    },
+    {
+      "code": "pj",
+      "wordClass": "prijedlog",
+      "image": "7.svg"
+    },
+    {
+      "code": "ve",
+      "wordClass": "veznik",
+      "image": "8.svg"
+    },
+    {
+      "code": "če",
+      "wordClass": "čestica",
+      "image": "9.svg"
+    },
+    {
+      "code": "us",
+      "wordClass": "usklik",
+      "image": "10.svg"
+    }
+  ]
+}
