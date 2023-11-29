@@ -4925,12 +4925,12 @@ msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr "1885 Ο Καρλ Μπεντζ κατασκευάζει το πρώτο βενζινοκίνητο αυτοκίνητο"
 
-#: activities/chronos/resource/board/board6_3.qml:14
+#: activities/chronos/resource/board/board6_3.qml:15
 msgctxt "board6_3|"
 msgid "Cars"
 msgstr "Αυτοκίνητα"
 
-#: activities/chronos/resource/board/board6_3.qml:38
+#: activities/chronos/resource/board/board6_3.qml:39
 #, fuzzy
 #| msgctxt "board6_3|"
 #| msgid "1899 Renault voiturette"
@@ -4939,12 +4939,12 @@ msgid "1898 Renault voiturette"
 msgstr ""
 "1899 Κατασκευάζεται το πρώτο αυτοκίνητο της Ρενό, το μοντέλο Βουετουρέτ"
 
-#: activities/chronos/resource/board/board6_3.qml:46
+#: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
 msgid "1923 Lancia Lambda"
 msgstr "1923 Αυτοκίνητο Lancia Lambda"
 
-#: activities/chronos/resource/board/board6_3.qml:54
+#: activities/chronos/resource/board/board6_3.qml:55
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
 msgstr "1955 Citroën ds 199"

@@ -4986,25 +4986,25 @@ msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr "El primer cotxe de benzina de Benz, 1885"
 
-#: activities/chronos/resource/board/board6_3.qml:14
+#: activities/chronos/resource/board/board6_3.qml:15
 msgctxt "board6_3|"
 msgid "Cars"
 msgstr "Cotxes"
 
 # Nota: http://en.wikipedia.org/wiki/Renault_Voiturette
-#: activities/chronos/resource/board/board6_3.qml:38
+#: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
 msgstr "Renault Voiturette, 1898"
 
 # Nota: http://ca.wikipedia.org/wiki/Lancia_Lambda
-#: activities/chronos/resource/board/board6_3.qml:46
+#: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
 msgid "1923 Lancia Lambda"
 msgstr "Lancia Lambda, 1923"
 
 # Nota: http://en.wikipedia.org/wiki/Citroën_DS
-#: activities/chronos/resource/board/board6_3.qml:54
+#: activities/chronos/resource/board/board6_3.qml:55
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
 msgstr "Citroën DS 19, 1955"

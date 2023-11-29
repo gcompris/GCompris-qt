@@ -4800,22 +4800,22 @@ msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_3.qml:14
+#: activities/chronos/resource/board/board6_3.qml:15
 msgctxt "board6_3|"
 msgid "Cars"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_3.qml:38
+#: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_3.qml:46
+#: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
 msgid "1923 Lancia Lambda"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_3.qml:54
+#: activities/chronos/resource/board/board6_3.qml:55
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
 msgstr ""
