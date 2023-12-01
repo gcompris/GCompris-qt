@@ -4648,42 +4648,42 @@ msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
 msgstr "1769 – Cugnot sin fardier"
 
-#: activities/chronos/resource/board/board6_0.qml:15
+#: activities/chronos/resource/board/board6_0.qml:16
 msgctxt "board6_0|"
 msgid "Aviation"
 msgstr "Luftfart"
 
-#: activities/chronos/resource/board/board6_0.qml:39
+#: activities/chronos/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_0.qml:47
+#: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_0.qml:55
+#: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
 msgstr "1903 – Louis Blériot kryssar Den engelske kanalen"
 
-#: activities/chronos/resource/board/board6_1.qml:14
+#: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
 msgid "Aviation"
 msgstr "Luftfart"
 
-#: activities/chronos/resource/board/board6_1.qml:38
+#: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
 msgid "1947 Chuck Yeager breaks the sound-barrier"
 msgstr "1947 – Chuck Yeager bryt lydmuren"
 
-#: activities/chronos/resource/board/board6_1.qml:46
+#: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 – Charles Lindbergh kryssar Atlanteren"
 
-#: activities/chronos/resource/board/board6_1.qml:54
+#: activities/chronos/resource/board/board6_1.qml:55
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
 msgstr ""
@@ -4708,22 +4708,22 @@ msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
 msgstr "1885 – den første bensin-drivne bilen, av Carl Benz"
 
-#: activities/chronos/resource/board/board6_3.qml:14
+#: activities/chronos/resource/board/board6_3.qml:15
 msgctxt "board6_3|"
 msgid "Cars"
 msgstr "Bilar"
 
-#: activities/chronos/resource/board/board6_3.qml:38
+#: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
 msgstr ""
 
-#: activities/chronos/resource/board/board6_3.qml:46
+#: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
 msgid "1923 Lancia Lambda"
 msgstr "1923 – Lancia Lambda"
 
-#: activities/chronos/resource/board/board6_3.qml:54
+#: activities/chronos/resource/board/board6_3.qml:55
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
 msgstr "1955 – Citroën DS 19"
@@ -25839,18 +25839,13 @@ msgstr ""
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
-"You can join the national teams that translate program interfaces. You can "
+"You can join the language teams that translate program interfaces. You can "
 "provide graphics, themes, sounds, and improved documentation. You decide!"
 "<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
 "which you can participate.<br /><br />If you need more information or "
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"Du treng ikkje vera programutviklar for å hjelpa til med KDE. Du kan arbeida "
-"med omsetjingar, laga grafikk, tema, lydar eller betre hjelpetekstar. Her er "
-"noko for alle!<br/><br/>På <a href=\"%1\">%1</a> finn du informasjon om "
-"nokre prosjekt du kan delta i.<br/><br/>Om du vil ha meir informasjon eller "
-"dokumentasjon, finn du det du treng på <a href=\"%2\">%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
