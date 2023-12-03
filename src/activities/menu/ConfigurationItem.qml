@@ -242,9 +242,8 @@ Item {
                 id: backgroundMusicName
                 height: parent.height
                 width: parent.width - 35 * ApplicationInfo.ratio
-                enabled: backgroundMusic.playbackState === Audio.PlayingState
                 text: {
-                    if(backgroundMusic.playbackState !== Audio.PlayingState)
+                    if(backgroundMusic.playbackState !== Audio.PlayingState || backgroundMusic.muted)
                         return qsTr("Not playing")
                     else if (backgroundMusic.metaDataMusic[0] !== undefined)
                         return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
@@ -291,6 +290,12 @@ Item {
         Connections {
             target: DownloadManager
             onDownloadFinished: wordsetBox.updateStatus()
+            onBackgroundMusicRegistered: {
+                allBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+                if(filteredBackgroundMusic.length === 0) {
+                    filteredBackgroundMusic = allBackgroundMusic
+                }
+            }
         }
 
         GCDialogCheckBox {

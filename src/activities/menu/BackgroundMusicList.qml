@@ -9,6 +9,7 @@
  */
 
 import QtQuick 2.12
+import QtMultimedia 5.12
 import GCompris 1.0
 
 import "../../core"
@@ -103,6 +104,7 @@ Rectangle {
 
                                 GCButton {
                                     text: modelData.slice(0, modelData.lastIndexOf('.'))
+
                                     onClicked: {
                                         if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(modelData) == -1) {
                                             // Keep the filtered playlist sorted w.r.t to their positions in "allBackgroundMusic" to maintain their playing order
@@ -159,7 +161,7 @@ Rectangle {
                         width: parent.width
                         anchors.top: musicGrid.bottom
                         anchors.leftMargin: 20
-
+                        visible: backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted
                         GCText {
                             //: Current background music playing
                             text: qsTr("Now Playing:")
