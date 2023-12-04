@@ -17692,45 +17692,45 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr "Ctrl + S: تبديل شريط قسم النشاط"
 
-#: activities/menu/BackgroundMusicList.qml:63
+#: activities/menu/BackgroundMusicList.qml:64
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "خلفية موسيقية"
 
-#: activities/menu/BackgroundMusicList.qml:125
+#: activities/menu/BackgroundMusicList.qml:127
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "عطّل موسيقى الخلفية إذا كنت لا تريد تشغيلها."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:165
+#: activities/menu/BackgroundMusicList.qml:167
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "المشغل الآن:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:174
+#: activities/menu/BackgroundMusicList.qml:176
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "عنوان: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:183
+#: activities/menu/BackgroundMusicList.qml:185
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "الفنّان: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:192
+#: activities/menu/BackgroundMusicList.qml:194
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "السنة: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:201
+#: activities/menu/BackgroundMusicList.qml:203
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -17796,99 +17796,99 @@ msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "خلفيه موسيقية"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "لا يشتغل"
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "عنوان: %1  فنان: %2"
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "موسيقى المقدمة"
 
-#: activities/menu/ConfigurationItem.qml:275
+#: activities/menu/ConfigurationItem.qml:274
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "مستوى صوت موسيقى خلفية"
 
-#: activities/menu/ConfigurationItem.qml:300
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "كامل صور الكلمات مُثبّتة"
 
-#: activities/menu/ConfigurationItem.qml:300
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "لم يتم تثبيت مجموعة الصور الكاملة للكلمات"
 
-#: activities/menu/ConfigurationItem.qml:314
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "نزّل كامل صور الكلمات"
 
-#: activities/menu/ConfigurationItem.qml:325
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "ملء الشّاشة"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "لوحة المفاتيح الوهميّة"
 
-#: activities/menu/ConfigurationItem.qml:347
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "قائمة الأنشطة مرئية"
 
-#: activities/menu/ConfigurationItem.qml:357
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "اطلب التأكيد قبل المغادرة"
 
-#: activities/menu/ConfigurationItem.qml:368
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "اختر الخط"
 
-#: activities/menu/ConfigurationItem.qml:373
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "حجم الخطّ"
 
-#: activities/menu/ConfigurationItem.qml:393
-#: activities/menu/ConfigurationItem.qml:427
+#: activities/menu/ConfigurationItem.qml:398
+#: activities/menu/ConfigurationItem.qml:432
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "المبدئيّ"
 
-#: activities/menu/ConfigurationItem.qml:402
+#: activities/menu/ConfigurationItem.qml:407
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "حالة أحرف الخط"
 
-#: activities/menu/ConfigurationItem.qml:407
+#: activities/menu/ConfigurationItem.qml:412
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "تباعد المسافة بين الأحرف"
 
-#: activities/menu/ConfigurationItem.qml:610
+#: activities/menu/ConfigurationItem.qml:615
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "حروف كبيرة وصغيرة (تلقائي)"
 
-#: activities/menu/ConfigurationItem.qml:611
+#: activities/menu/ConfigurationItem.qml:616
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "كلّها بأحرف كبيرة"
 
-#: activities/menu/ConfigurationItem.qml:612
+#: activities/menu/ConfigurationItem.qml:617
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "كلّها بأحرف صغيرة"

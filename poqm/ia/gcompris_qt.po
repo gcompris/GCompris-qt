@@ -16766,45 +16766,45 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
 msgstr ""
 
-#: activities/menu/BackgroundMusicList.qml:63
+#: activities/menu/BackgroundMusicList.qml:64
 msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Musica de fundo"
 
-#: activities/menu/BackgroundMusicList.qml:125
+#: activities/menu/BackgroundMusicList.qml:127
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr ""
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:165
+#: activities/menu/BackgroundMusicList.qml:167
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Ora il reproduce:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:174
+#: activities/menu/BackgroundMusicList.qml:176
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Titulo: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:183
+#: activities/menu/BackgroundMusicList.qml:185
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artista:%1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:192
+#: activities/menu/BackgroundMusicList.qml:194
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Anno: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:201
+#: activities/menu/BackgroundMusicList.qml:203
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -16871,99 +16871,99 @@ msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Musica de fundo"
 
-#: activities/menu/ConfigurationItem.qml:248
+#: activities/menu/ConfigurationItem.qml:247
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:250
+#: activities/menu/ConfigurationItem.qml:249
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:252
+#: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:275
+#: activities/menu/ConfigurationItem.qml:274
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:300
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:300
+#: activities/menu/ConfigurationItem.qml:305
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:314
+#: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:325
+#: activities/menu/ConfigurationItem.qml:330
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Schermo plen"
 
-#: activities/menu/ConfigurationItem.qml:336
+#: activities/menu/ConfigurationItem.qml:341
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Claviero virtual"
 
-#: activities/menu/ConfigurationItem.qml:347
+#: activities/menu/ConfigurationItem.qml:352
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:357
+#: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:368
+#: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:373
+#: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Dimension de font"
 
-#: activities/menu/ConfigurationItem.qml:393
-#: activities/menu/ConfigurationItem.qml:427
+#: activities/menu/ConfigurationItem.qml:398
+#: activities/menu/ConfigurationItem.qml:432
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Predefinite"
 
-#: activities/menu/ConfigurationItem.qml:402
+#: activities/menu/ConfigurationItem.qml:407
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:407
+#: activities/menu/ConfigurationItem.qml:412
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:610
+#: activities/menu/ConfigurationItem.qml:615
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:611
+#: activities/menu/ConfigurationItem.qml:616
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Omne majuscule"
 
-#: activities/menu/ConfigurationItem.qml:612
+#: activities/menu/ConfigurationItem.qml:617
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Omne minuscole"
