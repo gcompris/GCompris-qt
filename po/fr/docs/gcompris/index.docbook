@@ -120,7 +120,7 @@ for example 'xx.yy.zz'
 >licence GPLv3</ulink
 >.</para>
 <para
->&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
+>&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU;/&Linux;, &BSD;, macOS X, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
 >OpenGL 2.1</emphasis
 > ou plus. Une profondeur de couleur de 32 bits est obligatoire.</para>
 </sect1>
@@ -141,11 +141,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->Sous MacOSX, utilisez l'installateur classique fourni.</para
+>Sous macOS X, utilisez l'installateur classique fourni.</para
 ></listitem>
 <listitem
 ><para
->Sous Android, &gcompris; est distribué à travers le Store F-Droid ou le Store Google Play. Un fichier Apk est aussi disponible sur le site de &gcompris;.</para
+>Sous Android, &gcompris; est distribué à travers la boutique « F-Droid » ou « Google Play ». Un fichier « apk » est aussi disponible sur le site de &gcompris;.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -550,7 +550,7 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--launch activity</entry>
+>--launch activité</entry>
 <entry
 >Choisit quelle activité lancer au démarrage de GCompris.</entry>
 </row>
@@ -588,13 +588,13 @@ for example 'xx.yy.zz'
 <entry
 >--software-renderer</entry>
 <entry
->Utilise le mode de rendu logiciel à la place du mode openGL (cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
+>Utilise le mode de rendu logiciel à la place du mode avec OpenGL (Cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilise le mode de rendu openGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques).</entry>
+>Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques).</entry>
 </row>
 </tbody>
 </tgroup>

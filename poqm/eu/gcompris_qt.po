@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2023-10-27 23:39+0200\n"
+"PO-Revision-Date: 2023-12-06 10:10+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4627,20 +4627,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Montgolfier anaien aire beroko globoa"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader-en Eole"
+msgstr "1890, Clement Ader-en «Eole»"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Paul Cornu Lehen helikoptero hegaldia"
+msgstr "1907 Paul Cornu, Lehen helikoptero hegaldia"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4653,12 +4647,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot-en ibilgailua"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader-en Eole"
+msgstr "1890, Clement Ader-en «Eole»"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4686,12 +4677,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephenson-en Rocket lurrunezko lokomotorra"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader-en Eole"
+msgstr "1890, Clement Ader-en «Eole»"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4704,20 +4692,14 @@ msgid "Aviation"
 msgstr "Hegazkintza"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader-en Eole"
+msgstr "1890, Clement Ader-en «Eole»"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903  Wright anaien Flyer III"
+msgstr "1905,  Wright anaien «Flyer III»"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4740,12 +4722,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindberghek Atlantiko ozeanoa zeharkatzen du"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Boucherren 444km/h-ko abiadura errekorra"
+msgstr "1934, Hélène Boucher-en 445km/h abiadura errekorra"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4773,12 +4752,9 @@ msgid "Cars"
 msgstr "Autoak"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault voiturette"
+msgstr "1899 Renault, «voiturette»"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -25836,13 +25812,10 @@ msgstr ""
 "fitxategiak erabiltzen ditu."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Beharrezko soinu-fitxategiak zama-jaisteko, joan hobespenen elkarrizketa-"
+"Beharrezko soinu-fitxategiak zama-jaisteko, joan konfiguratzeko elkarrizketa-"
 "koadrora."
 
 #: core/core.js:257
@@ -25971,16 +25944,7 @@ msgstr ""
 "nahi zaitugu. Larritasun gisa erabili «nahien zerrenda» (\"Wishlist\")."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26209,13 +26173,13 @@ msgstr "Zama-jaitsitako fitxategiaren egiaztapen-batura ez dator bat: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Ez da aurkitu %1(e)ren ahotsik."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Ez da aurkitu %1(e)ren daturik."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26398,17 +26362,12 @@ msgstr ""
 "denean bakarri erabilia."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "Do you want to automatically download and update the following external "
-#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"GCompris abiatzean ondoko kanpoko aktiboak automatikoki zama-jaitsi eta "
+"GCompris abiatzean ondoko kanpoko aktiboak automatikoki zama-jaitsi edo "
 "eguneratzea nahi dituzu?"
 
 #: core/main.qml:271
@@ -26447,21 +26406,14 @@ msgid "You are running GCompris for the first time."
 msgstr "GCompris aurreneko aldiz ibiltzen ari zara."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Zure aplikazioaren ezarpenak, batik bat zure hizkuntza, ondo ezarrita "
-"daudela egiaztatu behar zenuke, eta hizkuntzaren berariazko soinu fitxategi "
-"guztiak instalatuta daudela. Hori egin dezakezu Hobespenak Elkarrizketa-"
-"koadroan."
+"daudela egiaztatu behar zenuke. Hori konfiguratzeko elkarrizketa-koadroan "
+"egin dezakezu."
 
 #: core/main.qml:326
 msgctxt "main|"
