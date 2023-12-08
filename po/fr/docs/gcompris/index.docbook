@@ -116,7 +116,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; fait partie du projet &kde; et est sous <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
 >licence AGPLv3</ulink
->. Tout le code, à l'exception du moteur pour l'électricité analogique est sous <ulink url="https://www.gnu.org/licenses/gpl.html"
+>. Tout le code, à l'exception du moteur pour les activités concernant l'électricité analogique est sous <ulink url="https://www.gnu.org/licenses/gpl.html"
 >licence GPLv3</ulink
 >.</para>
 <para
@@ -221,7 +221,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> « OK » - confirmer votre réponse. Certaines activités ne détectent pas automatiquement si l'enfant a réussi le niveau ou pas. Dans ces cas, vous devez cliquer sur cet icône. Vous pouvez aussi utiliser la touche &Enter; de votre clavier pour valider la réponse.</para
+> « Ok » - confirmer votre réponse. Certaines activités ne détectent pas automatiquement si l'enfant a réussi le niveau ou pas. Dans ces cas, vous devez cliquer sur cet icône. Vous pouvez aussi utiliser la touche &Enter; de votre clavier pour valider la réponse.</para
 ></listitem
 > 
 <listitem
@@ -271,7 +271,7 @@ for example 'xx.yy.zz'
 ></inlinemediaobject
 > Boîte à outils - le menu de configuration. La configuration est enregistrée dans le dossier utilisateur sous le nom <filename
 >.config/gcompris/gcompris-qt.conf</filename
->. C'est un fichier texte qui peut être édité manuellement.</para
+>. C'est un fichier texte pouvant être édité manuellement.</para
 ></listitem
 > 
 <listitem
@@ -439,7 +439,7 @@ for example 'xx.yy.zz'
 >Attention, certaines langues ont besoin de polices spécifiques pour être affichées correctement. </para
 > 
 <para
->Si votre langue n'est pas supportée, vous pouvez contribuer au logiciel et ajouter la traduction pour votre langue. Si vous êtes intéressés, vous pouvez contacter <ulink url="https://l10n.kde.org/teams"
+>Si votre langue n'est pas prise en charge, vous pouvez contribuer au logiciel et ajouter la traduction pour votre langue. Si vous êtes intéressés, vous pouvez contacter <ulink url="https://l10n.kde.org/teams"
 >l'équipe de traduction</ulink
 > du projet &kde; pour votre langue. Vous pouvez vérifier le niveau de traduction pour votre langue sur le <ulink url="https://l10n.kde.org/"
 >site web de &kde;</ulink
@@ -558,7 +558,7 @@ for example 'xx.yy.zz'
 <entry
 >--start-level niveau</entry>
 <entry
->Spécifiez le niveau sur lequel démarrer l’activité spécifiée par l’option « --launch » lors du démarrage de GCompris. Ignoré si aucune option « --launch » ou si le niveau spécifié n’est pas valable.</entry>
+>Spécifiez le niveau sur lequel démarrer l'activité spécifiée par l'option « --launch » lors du démarrage de GCompris. Ignoré si aucune option « --launch » ou si le niveau spécifié n'est pas valable.</entry>
 </row>
 <row>
 <entry
@@ -608,7 +608,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+>« C:\Program Files\GCompris-Qt\bin\GCompris.exe » --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
