@@ -116,11 +116,11 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; fait partie du projet &kde; et est sous <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
 >licence AGPLv3</ulink
->. Tout le code, à l'exception du moteur pour l'électricité analogique est sous <ulink url="https://www.gnu.org/licenses/gpl.html"
+>. Tout le code, à l'exception du moteur pour les activités concernant l'électricité analogique est sous <ulink url="https://www.gnu.org/licenses/gpl.html"
 >licence GPLv3</ulink
 >.</para>
 <para
->&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
+>&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU;/&Linux;, &BSD;, macOS X, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
 >OpenGL 2.1</emphasis
 > ou plus. Une profondeur de couleur de 32 bits est obligatoire.</para>
 </sect1>
@@ -141,11 +141,11 @@ for example 'xx.yy.zz'
 ></listitem>
 <listitem
 ><para
->Sous MacOSX, utilisez l'installateur classique fourni.</para
+>Sous macOS X, utilisez l'installateur classique fourni.</para
 ></listitem>
 <listitem
 ><para
->Sous Android, &gcompris; est distribué à travers le Store F-Droid ou le Store Google Play. Un fichier Apk est aussi disponible sur le site de &gcompris;.</para
+>Sous Android, &gcompris; est distribué à travers la boutique « F-Droid » ou « Google Play ». Un fichier « apk » est aussi disponible sur le site de &gcompris;.</para
 ></listitem>
 </itemizedlist>
 </sect1>
@@ -221,7 +221,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> « OK » - confirmer votre réponse. Certaines activités ne détectent pas automatiquement si l'enfant a réussi le niveau ou pas. Dans ces cas, vous devez cliquer sur cet icône. Vous pouvez aussi utiliser la touche &Enter; de votre clavier pour valider la réponse.</para
+> « Ok » - confirmer votre réponse. Certaines activités ne détectent pas automatiquement si l'enfant a réussi le niveau ou pas. Dans ces cas, vous devez cliquer sur cet icône. Vous pouvez aussi utiliser la touche &Enter; de votre clavier pour valider la réponse.</para
 ></listitem
 > 
 <listitem
@@ -271,7 +271,7 @@ for example 'xx.yy.zz'
 ></inlinemediaobject
 > Boîte à outils - le menu de configuration. La configuration est enregistrée dans le dossier utilisateur sous le nom <filename
 >.config/gcompris/gcompris-qt.conf</filename
->. C'est un fichier texte qui peut être édité manuellement.</para
+>. C'est un fichier texte pouvant être édité manuellement.</para
 ></listitem
 > 
 <listitem
@@ -439,7 +439,7 @@ for example 'xx.yy.zz'
 >Attention, certaines langues ont besoin de polices spécifiques pour être affichées correctement. </para
 > 
 <para
->Si votre langue n'est pas supportée, vous pouvez contribuer au logiciel et ajouter la traduction pour votre langue. Si vous êtes intéressés, vous pouvez contacter <ulink url="https://l10n.kde.org/teams"
+>Si votre langue n'est pas prise en charge, vous pouvez contribuer au logiciel et ajouter la traduction pour votre langue. Si vous êtes intéressés, vous pouvez contacter <ulink url="https://l10n.kde.org/teams"
 >l'équipe de traduction</ulink
 > du projet &kde; pour votre langue. Vous pouvez vérifier le niveau de traduction pour votre langue sur le <ulink url="https://l10n.kde.org/"
 >site web de &kde;</ulink
@@ -550,7 +550,7 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--launch activity</entry>
+>--launch activité</entry>
 <entry
 >Choisit quelle activité lancer au démarrage de GCompris.</entry>
 </row>
@@ -582,13 +582,13 @@ for example 'xx.yy.zz'
 <entry
 >--software-renderer</entry>
 <entry
->Utilise le mode de rendu logiciel à la place du mode openGL (cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
+>Utilise le mode de rendu logiciel à la place du mode avec OpenGL (Cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilise le mode de rendu openGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques).</entry>
+>Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques).</entry>
 </row>
 </tbody>
 </tgroup>
@@ -602,7 +602,7 @@ for example 'xx.yy.zz'
 <para
 ><userinput
 ><command
->"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+>« C:\Program Files\GCompris-Qt\bin\GCompris.exe » --enable-kioskmode -f -C</command
 ></userinput
 ></para>
 </sect2>
