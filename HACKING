@@ -15,7 +15,7 @@ Source code from GitHub
 -----------------------
 Checkout the source code by cloning it from GitHub
 
-    git clone git://github.com/gcompris/GCompris-qt.git
+    git clone https://github.com/gcompris/GCompris-qt.git
 
 If you want to have a personal fork, in order to commit occasional patches,
 fork it on GitHub then clone your fork
@@ -64,12 +64,17 @@ Installing dependencies on a Debian based systems can be done like this:
     sudo apt install libqt5svg5-dev \
                           qml-module-qtmultimedia \
                           qml-module-qtgraphicaleffects qt5-qmake qtcreator \
-                          qtdeclarative5-dev qtdeclarative5-dev \
-                          qtmultimedia5-dev qtquickcontrols2-5-dev qttools5-dev \
+                          qtdeclarative5-dev qtmultimedia5-dev \
+                          qtquickcontrols2-5-dev qttools5-dev \
                           qttools5-dev-tools libqt5multimedia5-plugins \
                           qml-module-qtsensors libqt5quickparticles5 \
                           qml-module-qtquick2 qml-module-qtquick-particles2 \
-                          libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts
+                          qml-module-qtquick-controls2 \
+                          libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts \
+                          qt5-image-formats-plugins libqt5charts5-dev
+
+                          
+                    
 
 To build for Android, Qt 5 AndroidExtras also needs to be installed.
 
