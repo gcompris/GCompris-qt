@@ -4570,20 +4570,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 horkovzdušný balón bratří Montgolfierů"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 letoun Éole Clémenta Adera"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 první let vrtulníkem Paula Corna"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4596,12 +4590,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot's fardier"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aderův Eole"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4629,12 +4620,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephensonova parní lokomotiva Rocket"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Aderův Eole"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4647,20 +4635,14 @@ msgid "Aviation"
 msgstr "Letectví"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eole Clementa Adera"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Flyer III bratří Wrightů"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4683,12 +4665,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh přeletěl Atlantický oceán"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Boucher dosáhla rekordní rychlosti 444km/h"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4716,12 +4695,9 @@ msgid "Cars"
 msgstr "Auta"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault voiturette"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -24931,14 +24907,9 @@ msgstr ""
 "nainstalovány ve vašem systému."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Chcete-li stáhnout potřebné zvukové soubory, přejděte do dialogového okna "
-"Nastavení."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -25070,16 +25041,7 @@ msgstr ""
 "vašeho přání. Ujistěte se, že používáte závažnost zvanou \"Wishlist\"."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -25090,13 +25052,6 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"K tomu, abyste se stali členem KDE týmu, není zapotřebí být vývojářem "
-"softwaru. Můžete se připojit k národním týmům, které překládají programy. "
-"Můžete vytvářet grafiku, motivy, zvuky a lepší dokumentaci. Vy se rozhodněte."
-"<br /><br />Navštivte <a href=\"%1\">%1</a>, kde naleznete informace o "
-"některých projektech, kterých se můžete zúčastnit.<br /><br />Potřebujete-li "
-"více informací nebo dokumentace, pak návštěva na <a href=\"%2\">%2</a> vám "
-"poskytne, co potřebujete."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -25487,18 +25442,11 @@ msgid ""
 msgstr ""
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "Do you want to automatically download and update the following external "
-#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"Chceš automaticky stáhnout a aktualizovat následující externí datové soubory "
-"při spuštění aplikace GCompris?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -25536,20 +25484,11 @@ msgid "You are running GCompris for the first time."
 msgstr "Spustil jsi GCompris poprvé."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"Měli byste ověřit, zda jsou vaše nastavení aplikace, zejména jazyk, správně "
-"nastaveny a nainstalovány všechny zvukové soubory specifické pro daný jazyk. "
-"To můžeš udělat v dialogovém okně Nastavení."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -25608,11 +25547,3 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
-
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Comte de Sivracův Célérifére"
-
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Comte de Sivracův Célérifére"
