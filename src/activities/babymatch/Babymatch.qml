@@ -54,7 +54,6 @@ ActivityBase {
             property alias bonus: bonus
             property alias availablePieces: availablePieces
             property alias backgroundPiecesModel: backgroundPiecesModel
-            property alias file: file
             property alias grid: grid
             property alias backgroundImageSource: backgroundImageSource
             property alias backgroundImage: backgroundImage
@@ -133,11 +132,6 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextSubLevel);
-        }
-
-        File {
-            id: file
-            name: ""
         }
 
         Image {
