@@ -58,8 +58,6 @@ function saveMelody() {
             console.debug("Created directory " + userDir);
     }
 
-    if(items.file.exists(userFile))
-        var data = items.file.read(userFile)
     if (!items.file.append(JSON.stringify(notes), userFile)) {
         Core.showMessageDialog(items.background,
             qsTr("Error saving melody to your file (%1)")
