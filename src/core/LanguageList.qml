@@ -36,7 +36,7 @@ QtObject {
             { "text": "American English", "locale": "en_US.UTF-8" },
             { "text": "العربية", "locale": "ar_AR.UTF-8" },
             { "text": "Azərbaycanca", "locale": "az_AZ.UTF-8" },
-            //{ "text": "български", "locale": "bg_BG.UTF-8" },
+            { "text": "български", "locale": "bg_BG.UTF-8" },
             { "text": "Brezhoneg", "locale": "br_FR.UTF-8" },
             { "text": "Беларуская", "locale": "be_BY.UTF-8" },
             { "text": "Català", "locale": "ca_ES.UTF-8" },
