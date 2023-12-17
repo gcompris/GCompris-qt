@@ -2439,6 +2439,10 @@ Files: src/activities/lang/resource/content-be.json
 Copyright: 2019 Antoś Vaclaŭski
 License: CC0-1.0
 
+Files: src/activities/lang/resource/content-bg.json
+Copyright: 2023 Mincho Kondarev
+License: CC0-1.0
+
 Files: src/activities/lang/resource/content-br.json
 Copyright: 2019 Envel Kervoas
 License: CC0-1.0
