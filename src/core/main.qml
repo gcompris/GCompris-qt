@@ -310,6 +310,30 @@ Window {
             DownloadManager.registerResource(fullRccPath);
         }
 
+// use  + ("<br><br>") to start new paragraphs
+            var RA2LEDialog;
+            RA2LEDialog = Core.showMessageDialog(
+                        pageView,
+                        qsTr("This is the RA2LE(Read along to learn english) fork of  GCompris") + ("<br>")
+                        + qsTr("This was built on 17th December 2023.") + "\n"
+                        + qsTr("I hope people will find it useful.\n\n\n\n")
+                        + "\n"
+                        + qsTr("The fork isn't endorsed by the GCompris development team")
+                        + ("<br><br>")
+                        + qsTr("Source code for this project can be found at: https://github.com/ReadAlongToLearnEnglish/GCompris-qt")
+                        + ("<br><br>")
+                        + qsTr("The project was initially forked on 17th December 2023.\n")
+                        + qsTr("In this current release, my additions are a tiny faction of the total source code and I'm thankful to be able to stand on the shoulders of giants.\n\n\n\n")
+                        + ("<br><br>")
+                        + qsTr("This work is released under the same licences as the upstream project available at: https://github.com/gcompris/GCompris-qt"),
+                        "", null,
+                        "", null,
+                        function() {
+                        }
+             );
+        
+
+
         if (ApplicationSettings.exeCount === 1 &&
                 !ApplicationSettings.isKioskMode) {
             checkVoices();
@@ -319,7 +343,7 @@ Window {
             var dialog;
             dialog = Core.showMessageDialog(
                         pageView,
-                        qsTr("Welcome to GCompris!") + ("<br>")
+                        qsTr("Welcome to GCompris!") + ("<br>") 
                         + qsTr("You are running GCompris for the first time.") + "\n"
                         + qsTr("You should verify that your application settings especially your language is set correctly. You can do this in the Configuration dialog.")
                         + "\n"
