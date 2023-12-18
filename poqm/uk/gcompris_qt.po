@@ -20760,13 +20760,13 @@ msgid "Now you can load music and also save your compositions."
 msgstr ""
 "Тепер ви можете завантажувати музичні твори і зберігати власні композиції."
 
-#: activities/piano_composition/piano_composition.js:65
+#: activities/piano_composition/piano_composition.js:63
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Помилка під час спроби зберегти мелодію до вашого файла (%1)"
 
-#: activities/piano_composition/piano_composition.js:70
+#: activities/piano_composition/piano_composition.js:68
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"

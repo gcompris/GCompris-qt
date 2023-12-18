@@ -22886,7 +22886,7 @@ msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr ""
 
-#: activities/piano_composition/piano_composition.js:65
+#: activities/piano_composition/piano_composition.js:63
 #, fuzzy, qt-format
 #| msgctxt "balanceboxeditor|"
 #| msgid "Error saving %n level(s) to your levels file (%1)"
@@ -22895,7 +22895,7 @@ msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr " %n लेवल को लेवल फ़ाइल (%1) में सहेजने में त्रुटि"
 
-#: activities/piano_composition/piano_composition.js:70
+#: activities/piano_composition/piano_composition.js:68
 #, fuzzy, qt-format
 #| msgctxt "balanceboxeditor|"
 #| msgid "Saved %n level(s) to your levels file (%1)"

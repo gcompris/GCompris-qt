@@ -1,18 +1,18 @@
+# SPDX-FileCopyrightText: 2023 Adrián Chaves (Gallaecio)
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2016, 2017.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2017, 2018, 2019, 2023.
 # Pablo <parodper@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-09-03 13:22+0200\n"
+"PO-Revision-Date: 2023-12-17 07:28+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
-"Language-Team: Galician <proxecto@trasno.gal>\n"
+"Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -815,12 +815,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Aprende a táboa de multiplicar do 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Táboas de multiplicar do 1 ao 10."
+msgstr "Practicar as táboas de multiplicar do 1 ao 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -909,12 +906,9 @@ msgid "Learn division table of 10."
 msgstr "Aprende a dividir entre 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Táboas de multiplicar do 1 ao 10."
+msgstr "Practicar as táboas de dividir do 1 ao 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1005,28 +999,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Aprende a táboa de restar do 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Resta de números pequenos."
+msgstr "Restas de números ata o 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Resta de números pequenos."
+msgstr "Restas de números ata o 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Resta de números pequenos."
+msgstr "Restas de números ata o 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1115,28 +1100,19 @@ msgid "Learn addition table of 10."
 msgstr "Aprende a táboa de sumar do 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Sistema de numeración binario."
+msgstr "Sumas de números ata o 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Sistema de numeración binario."
+msgstr "Sumas de números ata o 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Suma de números"
+msgstr "Sumas con resultados ata o 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2452,6 +2428,9 @@ msgid ""
 "value of the contact button. It is not possible to set a value more than "
 "once on a map."
 msgstr ""
+"Contacto: engadir ou retirar un botón de contacto. Coas caixas de números "
+"podes axustar o valor do botón de contacto. Os valores non se poden repetir "
+"dentro do mesmo mapa."
 
 #: activities/balancebox/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -3026,13 +3005,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Resolve o calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3041,15 +3020,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Desenvolver as habilidades de razoamento lóxico: relación de datos, dedución "
+"e localización espacial ao usar cálculo."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability"
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completar o quebracabezas require paciencia e habilidade lóxica"
+msgstr "Completar o quebracabezas require paciencia e habilidade aritmética."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3062,36 +3040,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Seleccionar un número da lista e premer a súa posición de destino para "
+"encher a grade. Cada número debe aparecer só unha vez por fila e columna. As "
+"gaiolas son grupos de celas que fornecer información sobre como enchelas. As "
+"gaiolas de máis dunha cela fornecen un resultado e un operador: todos os "
+"números da gaiola, cando se combinan usando o operador, deben producir o "
+"resultado. As gaiolas feitas de só unha cela fornecen directamente o número "
+"para inserir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr ""
+msgstr "Grades pequenas co operador +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "Grades pequenas cos operadores + e -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "Grades pequenas cos operadores +, - e ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "Grades medianas cos operadores +, - e ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "Grades grandes cos operadores +, -, × e /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4509,24 +4494,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Cando remates pulsa o botón de Aceptar."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"A fotografía da Lúa e propiedade intelectual da NASA. Os sons espaciais "
-"obtivéronse de Tuxpaint e Vegastrike; ambos os dous proxectos están "
-"protexidos pola licenza GPL. As imaxes de transporte son propiedade "
-"intelectual de Franck Doucet. As datas de transporte están baseadas nas "
-"atopadas en &lt;https://www.wikipedia.org&gt;."
+"A fotografía da Lúa e propiedade intelectual da NASA. As imaxes de "
+"transporte son propiedade intelectual de Franck Doucet. As datas de "
+"transporte están baseadas nas atopadas en &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4669,20 +4645,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globo de aire quente dos irmáns Montgolfier de 1783"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1880"
+msgstr "Éole de Clement Ader de 1890"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "Primeiro voo en helicóptero por Paul Cornu en 1906"
+msgstr "Primeiro voo en helicóptero por Paul Cornu en 1907"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4695,12 +4665,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "Carro de Cugnot de 1769"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1880"
+msgstr "Éole de Clement Ader de 1890"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4728,12 +4695,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "A locomotora de vapor Stephenson's Rocket de 1829"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1880"
+msgstr "Éole de Clement Ader de 1890"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4746,20 +4710,14 @@ msgid "Aviation"
 msgstr "Aviación"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1880"
+msgstr "Éole de Clement Ader de 1890"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "Flyer III dos irmáns Wright de 1903"
+msgstr "Flyer III dos irmáns Wright de 1905"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4782,12 +4740,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "Charles Lindbergh cruza o Océano Atlántico en 1927"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "Récord de velocidade de 444km/h logrado por Hélène Boucher en 1934"
+msgstr "Récord de velocidade de 445km/h logrado por Hélène Boucher en 1934"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4815,12 +4770,9 @@ msgid "Cars"
 msgstr "Coches"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "Microcarro de Renault de 1899"
+msgstr "Microcarro de Renault de 1898"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -5534,15 +5486,6 @@ msgstr "Manexo do rato e o teclado."
 
 #. Help manual
 #: activities/crane/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the items in the left frame to copy their position in the right "
-#| "model. Next to the crane itself, you will find four arrows that let you "
-#| "move the items. To select the item to move, just click on it. If you "
-#| "prefer, you can use the arrow keys and the space or tab key instead. On a "
-#| "mobile version, you can also swipe up/down/left/right to move the items "
-#| "in the left frame."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the items in the blue frame to match their position in the model frame. "
@@ -5550,23 +5493,21 @@ msgid ""
 "arrows that let you move the selected item. You can also swipe up/down/left/"
 "right to move the selected item."
 msgstr ""
-"Move os elementos da estrutura esquerda para copiar a súa posición no modelo "
-"da dereita. Canda o guindastre atoparás catro frechas que te permiten mover "
-"os elementos. Preme un elemento para seleccionalo para movelo. Se o "
-"prefires, podes usar as teclas de frecha e as teclas de espazo ou "
-"tabulación. Na versión para móbiles tamén podes pasar cara arriba, cara "
-"abaixo, cara a esquerda ou cara a dereita para mover os elementos na "
-"estrutura esquerda."
+"Move os elementos da caixa azul para que a súa posición coincida coa da "
+"caixa modelo. Para seleccionar un elemento, prémeo. Canda o guindastre hai "
+"catro frechas que te permiten mover o elemento seleccionado. Tamén podes "
+"pasar o dedo cara arriba, abaixo, á esquerda ou á dereita para mover o "
+"elemento seleccionado."
 
 #: activities/crane/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Arrows: move the selected item"
-msgstr ""
+msgstr "Frechas: mover o elemento seleccionado"
 
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space or Enter or Tab: select the next item"
-msgstr ""
+msgstr "Espazo, Intro ou Tab: seleccionar o seguinte elemento"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
 #: activities/crane/crane.js:44
@@ -5598,27 +5539,24 @@ msgstr ""
 "porco;punta;rapaz;teima;traxe;vasco;verde;xeito"
 
 #: activities/crane/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "Download the images"
 msgctxt "Data|"
 msgid "Play with images."
-msgstr "Descargar as imaxes"
+msgstr "Xogar con imaxes."
 
 #: activities/crane/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 3 letters."
-msgstr ""
+msgstr "Xogar con palabras de 3 letras."
 
 #: activities/crane/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 4 letters."
-msgstr ""
+msgstr "Xogar con palabras de 4 letras."
 
 #: activities/crane/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 5 letters."
-msgstr ""
+msgstr "Xogar con palabras de 5 letras."
 
 #. Activity title
 #: activities/details/ActivityInfo.qml:18
@@ -5628,17 +5566,12 @@ msgstr "Atopa os detalles"
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece from the set of pieces on the "
-#| "left, to the matching space in the puzzle."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching space "
 "in the puzzle."
 msgstr ""
-"Arrastra cada peza da esquerda ao seu espazo correspondente do quebracabezas "
+"Arrastra cada peza do lado ao seu espazo correspondente do quebracabezas "
 "para completalo."
 
 #: activities/details/ActivityInfo.qml:26
@@ -5649,17 +5582,17 @@ msgstr "As imaxes proveñen de Wikimedia Commons."
 #: activities/details/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Play with paintings."
-msgstr ""
+msgstr "Xogar con debuxos."
 
 #: activities/details/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Play with simple photographs."
-msgstr ""
+msgstr "Xogar con fotografías sinxelas."
 
 #: activities/details/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Play with complex photographs."
-msgstr ""
+msgstr "Xogar con fotografías complexas."
 
 #: activities/details/resource/board/board10_0.qml:14
 msgctxt "board10_0|"
@@ -5766,14 +5699,9 @@ msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
 msgstr "Vincent van Gogh, Retrato de Pere Tanguy 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid ""
-#| "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
 msgctxt "board9_0|"
 msgid "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
-msgstr ""
-"Catedral de Notre Dame de París na illa Île de la Cité en París, Francia."
+msgstr "Catedral de Notre Dame de París na Île de la Cité en París, Francia."
 
 #. Activity title
 #: activities/digital_electricity/ActivityInfo.qml:15
@@ -5789,9 +5717,6 @@ msgstr "Crear e simular un esquema eléctrico dixital."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital electric schema with a real time simulation of it."
 msgstr "Crear un esquema eléctrico dixital cunha simulación súa en tempo real."
@@ -5810,6 +5735,8 @@ msgid ""
 "Drag electrical components from the side bar and drop them in the working "
 "area."
 msgstr ""
+"Arrastra compoñentes eléctricos da barra lateral e sóltaos na zona de "
+"traballo."
 
 #: activities/digital_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5817,28 +5744,27 @@ msgid ""
 "To connect two terminals with a wire, click on a first terminal, then on a "
 "second terminal."
 msgstr ""
+"Para conectar dúas terminais cun cable, preme nunha primeira terminal, e "
+"despois preme na outra."
 
 #: activities/digital_electricity/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "The simulation is updated in real time by any user action."
 msgstr ""
+"A simulación actualízase inmediatamente tras calquera acción do usuario."
 
 #: activities/digital_electricity/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "In the working area, you can move the components by dragging them."
-msgstr ""
+msgstr "Dentro da zona de traballo podes mover os compoñentes pinchando neles."
 
 #: activities/digital_electricity/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "Railroad|"
-#| msgid ""
-#| "If you forget the positions, you can click on the Hint button to view "
-#| "them again."
 msgctxt "ActivityInfo|"
 msgid ""
 "In the side bar, you can click on the tool icon to access the tool menu."
 msgstr ""
-"Se esqueces as posicións podes premer o botón de Consello para velas de novo."
+"Na barra lateral podes premer a icona da ferramenta para acceder ao menú de "
+"ferramentas."
 
 #: activities/digital_electricity/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5846,18 +5772,16 @@ msgid ""
 "To delete a component or a wire, select the delete tool (cross icon) from "
 "the tool menu, and click on the component or on the wire you want to delete."
 msgstr ""
+"Para eliminar un compoñente ou un cable, selecciona a ferramenta de eliminar "
+"(icona de cruz) no menú de ferramentas, e preme no compoñente ou no cable "
+"que quere eliminar."
 
 #: activities/digital_electricity/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "First select the item you want to put then click on a spot on the empty "
-#| "area"
 msgctxt "ActivityInfo|"
 msgid "To deselect a terminal or the delete tool, click on any empty area."
 msgstr ""
-"Primeiro selecciona o elemento que queres poñer, e a continuación preme nun "
-"lugar da zona baleira."
+"Para anular a selección dunha terminal ou a ferramenta de eliminar, preme "
+"nunha zona baleira."
 
 #: activities/digital_electricity/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5865,6 +5789,8 @@ msgid ""
 "You can rotate the selected component using the rotate buttons (circle arrow "
 "icons) from the tool menu."
 msgstr ""
+"Pode rotar o compoñente seleccionado cos botóns de rotar (iconas de frecha "
+"en círculo) do menú de ferramentas."
 
 #: activities/digital_electricity/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5872,6 +5798,8 @@ msgid ""
 "You can read information about the selected component using the info button "
 "(i icon) from the tool menu."
 msgstr ""
+"Pode ler sobre o compoñente seleccionado co botón de información (icona de "
+"i) do menú de ferramentas."
 
 #: activities/digital_electricity/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5879,32 +5807,31 @@ msgid ""
 "You can zoom in or out the working area using the + and - keys, using the "
 "zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
 msgstr ""
+"Podes ampliar ou afastar a zona de traballo coas teclas + e - usando os "
+"botóns de ampliación do menú de ferramentas, ou usando acenos de pinchar "
+"nunha pantalla táctil."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
 msgstr ""
+"Podes desprazar a zona de traballo premendo unha zona baleira e arrastrándoa."
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "You can click on a switch component to open and close it."
-msgstr ""
+msgstr "Para usar un compoñente de interruptor preme nel."
 
 #: activities/digital_electricity/components/AndGate.qml:21
-#, fuzzy
-#| msgctxt "AndGate|"
-#| msgid ""
-#| "AND gate outputs 1 only if all its inputs are equal to 1. As soon as one "
-#| "input is equal to 0 the result is 0. Output for 2 input AND gate is:"
 msgctxt "AndGate|"
 msgid ""
 "An AND gate outputs 1 only if all its inputs are equal to 1. As soon as one "
 "input is equal to 0 the result is 0. The output for a 2 inputs AND gate is:"
 msgstr ""
-"A porta AND ten 1 de saída só se todas as entradas son iguais a 1. En canto "
-"unha entrada é igual a 0 o resultado é 0. A saída para unha porta AND de 2 "
-"entradas é:"
+"Unha porta AND ten 1 de saída só se todas as entradas son iguais a 1. En "
+"canto unha entrada é igual a 0 o resultado é 0. A saída para unha porta AND "
+"de 2 entradas é:"
 
 #: activities/digital_electricity/components/AndGate.qml:24
 msgctxt "AndGate|"
@@ -5912,27 +5839,15 @@ msgid "A AND B"
 msgstr "A AND B"
 
 #: activities/digital_electricity/components/BcdCounter.qml:25
-#, fuzzy
-#| msgctxt "BcdCounter|"
-#| msgid ""
-#| "BCD counter usually takes a signal generator as input. The output is a "
-#| "BCD number starting from 0 which is increased by one at each tick."
 msgctxt "BcdCounter|"
 msgid ""
 "A BCD counter usually takes a signal generator as input. The output is a BCD "
 "number starting from 0 which is increased by one at each tick."
 msgstr ""
-"O contador BCD adoita ter un xerador de sinal como entrada. A saída é un "
+"Un contador BCD adoita ter un xerador de sinal como entrada. A saída é un "
 "número BCD empezando por 0 que aumenta en un con cada tic."
 
 #: activities/digital_electricity/components/BCDToSevenSegment.qml:29
-#, fuzzy
-#| msgctxt "BCDToSevenSegment|"
-#| msgid ""
-#| "BCD to 7 segment converter takes 4 binary inputs in its input terminals "
-#| "and gives 7 binary outputs which allow to light BCD number segments "
-#| "(binary-coded decimal) to display numbers between 0 and 9. The output for "
-#| "BCD To 7 Segment converted is:"
 msgctxt "BCDToSevenSegment|"
 msgid ""
 "A BCD to 7 segment converter takes 4 binary inputs and gives 7 binary "
@@ -5940,19 +5855,12 @@ msgid ""
 "display numbers between 0 and 9. The output for a BCD To 7 Segment converter "
 "is:"
 msgstr ""
-"O convertedor de BCD a 7 segmentos recibe 4 entradas binarias nos seus "
-"terminais de entrada e envía 7 saídas binarias que permiten iluminar "
-"segmentos de número BCD (decimal codificado en binario) para mostrar números "
-"entre o 0 e o 9. A saída do convertedor de BCD a 7 segmentos é:"
+"Un convertedor de BCD a 7 segmentos recibe 4 entradas binarias e envía 7 "
+"saídas binarias que permiten iluminar segmentos de número BCD (decimal "
+"codificado en binario) para amosar números entre o 0 e o 9. A saída dun "
+"convertedor de BCD a 7 segmentos é:"
 
 #: activities/digital_electricity/components/Comparator.qml:22
-#, fuzzy
-#| msgctxt "Comparator|"
-#| msgid ""
-#| "A comparator takes 2 numbers as input, A and B. It compares them and "
-#| "outputs 3 values. The first output is 1 if A < B, otherwise it's 0. The "
-#| "second output is 1 if A = B, otherwise it's 0. The third output is 1 if A "
-#| "> B, otherwise it's 0. "
 msgctxt "Comparator|"
 msgid ""
 "A comparator takes 2 numbers as input, A and B. It compares them and outputs "
@@ -5960,38 +5868,27 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"O comparador recibe 2 números como entrada, A e B. Os compara e envía 3 "
-"valores. A primeira saída é 1 se A < B, e 0 en caso contrario. O segundo é 1 "
-"se A = B, e 0 en caso contrario. O terceiro é 1 se A > B, e 0 en caso "
-"contrario."
+"Un comparador recibe 2 números como entrada, A e B. Os compara e envía 3 "
+"valores. A primeira saída é 1 se A < B, e 0 en caso contrario. A segunda "
+"saída é 1 se A = B, e 0 en caso contrario. A terceiro saída é 1 se A > B, e "
+"0 en caso contrario."
 
 #: activities/digital_electricity/components/DigitalLight.qml:21
-#, fuzzy
-#| msgctxt "DigitalLight|"
-#| msgid ""
-#| "A digital light is used to check the output of other digital components. "
-#| "It turns green if the input is 1, and turns red if the input is 0."
 msgctxt "DigitalLight|"
 msgid ""
 "A digital light is used to check the output of other digital components. It "
 "turns green if the input is 1, and turns red if the input is 0."
 msgstr ""
-"A luz dixital úsase para comprobar a saída doutros compoñentes dixitais. "
+"Unha luz dixital úsase para comprobar a saída doutros compoñentes dixitais. "
 "Vólvese verde se a entrada é 1, e vólvese vermello se a entrada é 0."
 
 #: activities/digital_electricity/components/NandGate.qml:21
-#, fuzzy
-#| msgctxt "NandGate|"
-#| msgid ""
-#| "A NAND gate outputs the opposite of an AND gate. If all the inputs are 1, "
-#| "the output is equal to 0 and as soon as one input is equal to 0 it gives "
-#| "a 1:"
 msgctxt "NandGate|"
 msgid ""
 "A NAND gate outputs the opposite of an AND gate. If all the inputs are 1, "
 "the output is equal to 0 and as soon as one input is equal to 0 it gives a 1:"
 msgstr ""
-"A porta NAND envía unha como saída o oposto da porta AND. Se todas as "
+"Unha porta NAND envía unha como saída o oposto dunha porta AND. Se todas as "
 "entradas son 1, a saída é 0, pero se algunha entrada é 0 a saída é 1:"
 
 #: activities/digital_electricity/components/NandGate.qml:24
@@ -6000,20 +5897,14 @@ msgid "NOT (A AND B)"
 msgstr "NOT (A AND B)"
 
 #: activities/digital_electricity/components/NorGate.qml:21
-#, fuzzy
-#| msgctxt "NorGate|"
-#| msgid ""
-#| "A NOR gate outputs the opposite of an OR gate. As soon as there is a 1 in "
-#| "an input the output is equal to 0. To obtain a 1 all the inputs must be "
-#| "equal to 0:"
 msgctxt "NorGate|"
 msgid ""
 "A NOR gate outputs the opposite of an OR gate. As soon as there is a 1 in an "
 "input the output is equal to 0. To obtain a 1 all the inputs must be equal "
 "to 0:"
 msgstr ""
-"A porta NOR envía como saída o oposto da porta OR. En canto hai un 1 como "
-"entrada a saída é 0. Para obter un 1 todas as entradas deben ser 0:"
+"Unha porta NOR envía como saída o oposto dunha porta OR. En canto hai un 1 "
+"nunha entrada a saída é 0. Para obter un 1 todas as entradas deben ser 0:"
 
 #: activities/digital_electricity/components/NorGate.qml:24
 msgctxt "NorGate|"
@@ -6021,17 +5912,12 @@ msgid "NOT (A OR B)"
 msgstr "NOT (A OR B)"
 
 #: activities/digital_electricity/components/NotGate.qml:20
-#, fuzzy
-#| msgctxt "NotGate|"
-#| msgid ""
-#| "A Not gate (also known as inverter) outputs the opposite of the input. An "
-#| "input 0 gives an output 1. An Input 1 gives an output 0:"
 msgctxt "NotGate|"
 msgid ""
 "A Not gate (also known as inverter) outputs the opposite of the input. An "
 "input 0 gives an output 1. An Input 1 gives an output 0:"
 msgstr ""
-"A porta NOT (tamén coñecida como inversor) envía como saída o oposto da "
+"Unha porta NOT (tamén coñecida como inversor) envía como saída o oposto da "
 "entrada. Unha entrada de 0 envía unha saída de 1. Unha entrada de 1 envía "
 "unha saída de 0:"
 
@@ -6041,14 +5927,6 @@ msgid "NOT A"
 msgstr "NOT A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital electronics works with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. This allows to operate "
@@ -6057,22 +5935,19 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"A electrónica dixital funciona con só dous estados: 0 e 1. Isto permite "
+"Os circuítos dixitais funcionan con só dous estados: 0 e 1. Isto permite "
 "realizar operacións matemáticas como sumas, restas, etc. É o fundamento de "
 "técnicas informáticas. En realidade, 0 adoita ser a representación dunha "
 "voltaxe case igual á voltaxe de terra e 1 é a representación da voltaxe de "
 "subministro dun circuíto."
 
 #: activities/digital_electricity/components/OrGate.qml:21
-#, fuzzy
-#| msgctxt "OrGate|"
-#| msgid "OR gate outputs 1 if any of the inputs is 1, 0 otherwise:"
 msgctxt "OrGate|"
 msgid ""
 "An OR gate outputs 1 if any of the inputs is 1, otherwise its output is 0:"
 msgstr ""
-"A porta OR envía como saída 1 se calquera das súas entradas é 1, e 0 en caso "
-"contrario:"
+"Unha porta OR envía como saída 1 se calquera das súas entradas é 1, e como "
+"saída 0 en caso contrario:"
 
 #: activities/digital_electricity/components/OrGate.qml:22
 msgctxt "OrGate|"
@@ -6080,14 +5955,6 @@ msgid "A OR B"
 msgstr "A OR B"
 
 #: activities/digital_electricity/components/SevenSegment.qml:26
-#, fuzzy
-#| msgctxt "SevenSegment|"
-#| msgid ""
-#| "7 segment display takes 7 binary inputs in its input terminals. The "
-#| "display consists of 7 segments and each segment gets lighted according to "
-#| "the input. By generating different combination of binary inputs, the "
-#| "display can be used to display numbers from 0 to 9 and a few letters. The "
-#| "diagram is:"
 msgctxt "SevenSegment|"
 msgid ""
 "A 7 segment display takes 7 binary inputs. The display consists of 7 "
@@ -6095,26 +5962,19 @@ msgid ""
 "different combinations of binary inputs, the display can be used to display "
 "numbers from 0 to 9 and a few letters. The diagram is:"
 msgstr ""
-"A pantalla de 7 segmentos recibe 7 entradas binarias nos seus terminais de "
-"entrada. A pantalla contén 7 segmentos e cada segmento ilumínase segundo a "
-"entrada. Ao xerar distintas combinacións de entradas binarias a pantalla "
-"pode usarse para mostrar números do 0 ao 9, así como algunhas letras. O "
-"diagrama é:"
+"Unha pantalla de 7 segmentos recibe 7 entradas binarias. A pantalla contén 7 "
+"segmentos e cada segmento ilumínase segundo a entrada. Ao xerar distintas "
+"combinacións de entradas binarias a pantalla pode usarse para amosar números "
+"do 0 ao 9, así como algunhas letras. O diagrama é:"
 
 #: activities/digital_electricity/components/SignalGenerator.qml:22
-#, fuzzy
-#| msgctxt "SignalGenerator|"
-#| msgid ""
-#| "Signal Generator is used to generate alternating signals of 0 and 1. The "
-#| "time between two changes can be modified by pressing the arrows on the "
-#| "generator."
 msgctxt "SignalGenerator|"
 msgid ""
 "A signal generator is used to generate alternating signals of 0 and 1. The "
 "time between two changes can be modified by pressing the arrows on the "
 "generator."
 msgstr ""
-"O xerador de sinais úsase para xerar sinais alternativas a 0 e 1. O tempo "
+"Un xerador de sinais úsase para xerar sinais alternativas a 0 e 1. O tempo "
 "entre dous cambios pode modificarse premendo as frechas do xerador."
 
 #: activities/digital_electricity/components/SignalGenerator.qml:152
@@ -6124,13 +5984,6 @@ msgid "%1 s"
 msgstr "%1 s"
 
 #: activities/digital_electricity/components/Switch.qml:22
-#, fuzzy
-#| msgctxt "Switch|"
-#| msgid ""
-#| "Switch is used to connect or disconnect two terminals. If the switch is "
-#| "turned on, current can flow through the switch. If the switch is turned "
-#| "off, then the connection between terminal is broken and current can not "
-#| "flow through it."
 msgctxt "Switch|"
 msgid ""
 "A switch is used to connect or disconnect two terminals. If the switch is "
@@ -6138,27 +5991,21 @@ msgid ""
 "off, then the connection inside the switch is broken and the current can not "
 "flow through it."
 msgstr ""
-"O conmutador úsase para conectar ou desconectar dous terminais. Se o "
+"Un conmutador úsase para conectar ou desconectar dous terminais. Se o "
 "conmutador está aceso a corrente pode circular por el. Se o conmutador está "
-"apagado a conexión entre os terminais está rota e a corrente non pode "
+"apagado a conexión dentro do conmutador está rota e a corrente non pode "
 "circular por el."
 
 #: activities/digital_electricity/components/XorGate.qml:21
-#, fuzzy
-#| msgctxt "XorGate|"
-#| msgid ""
-#| "XOR gate outputs 1 if the number of '1' in input is odd, and 0 if number "
-#| "of '1' in input is even. In this activity, a 2 input XOR gate is shown. "
-#| "Output for 2 input XOR gate is:"
 msgctxt "XorGate|"
 msgid ""
 "An XOR gate outputs 1 if the number of 1 in inputs is odd, and 0 if number "
 "of 1 in inputs is even. In this activity, a 2 inputs XOR gate is shown. The "
 "output for a 2 inputs XOR gate is:"
 msgstr ""
-"A porta XOR envía como saída 1 se o número de 1 da entrada é impar, e 0 se o "
-"número de 1 de entrada é par. Nesta actividade móstrase unha porta XOR de "
-"dúas entradas. A saída dunha porta XOR de dúas entradas é:"
+"Unha porta XOR envía como saída 1 se o número de 1 da entrada é impar, e 0 "
+"se o número de 1 de entrada é par. Nesta actividade amósase unha porta XOR "
+"de 2 entradas. A saída dunha porta XOR de 2 entradas é:"
 
 #: activities/digital_electricity/components/XorGate.qml:23
 msgctxt "XorGate|"
@@ -6166,14 +6013,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital electronics works with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. This allows to operate "
@@ -6182,7 +6021,7 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"A electrónica dixital funciona con só dous estados: 0 e 1. Isto permite "
+"Os circuítos dixitais funcionan con só dous estados: 0 e 1. Isto permite "
 "realizar operacións matemáticas como sumas, restas, etc. É o fundamento de "
 "técnicas informáticas. En realidade, 0 adoita ser a representación dunha "
 "voltaxe case igual á voltaxe de terra e 1 é a representación da voltaxe de "
@@ -6269,22 +6108,14 @@ msgid "BCD counter"
 msgstr "Contador de BCD"
 
 #: activities/digital_electricity/TutorialDataset.qml:144
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The digital light will glow when its terminal is connected with an input "
-#| "of 1."
 msgctxt "TutorialDataset|"
 msgid ""
 "The digital light glows when its terminal is connected with an input of 1."
 msgstr ""
-"A luz dixital brillará cando o seu terminal se conecte cunha entrada de 1."
+"A luz dixital brilla cando o seu terminal se conecte cunha entrada de 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:145
 #: activities/digital_electricity/TutorialDataset.qml:202
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Turn the digital light on using the inputs provided."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided inputs."
 msgstr "Acende a luz dixital usando as entradas fornecidas."
@@ -6295,35 +6126,24 @@ msgid ""
 "To connect two terminals, click on a first terminal, then on a second "
 "terminal."
 msgstr ""
+"Para conectar dúas terminais, preme nunha primeira terminal, e despois preme "
+"na outra."
 
 #: activities/digital_electricity/TutorialDataset.qml:159
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The AND gate produces an output of one when both of its input terminals "
-#| "are of value 1."
 msgctxt "TutorialDataset|"
 msgid ""
 "The AND gate produces an output of 1 when both of its input terminals are of "
 "value 1."
 msgstr ""
-"A porta AND produce unha saída de un cando os seus dous terminais de entrada "
+"A porta AND produce unha saída de 1 cando os seus dous terminais de entrada "
 "son de valor 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:160
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using an AND gate and the provided inputs."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an AND gate and the provided inputs."
 msgstr "Acende a luz dixital usando unha porta AND e as entradas fornecidas."
 
 #: activities/digital_electricity/TutorialDataset.qml:173
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The OR gate produces an output of 1 when at least one of its input "
-#| "terminals is of value 1."
 msgctxt "TutorialDataset|"
 msgid ""
 "The OR gate produces an output of 1 when at least one of its input terminals "
@@ -6333,36 +6153,21 @@ msgstr ""
 "entrada é de valor 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:174
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using an OR gate and the provided inputs."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an OR gate and the provided inputs."
 msgstr "Acende a luz dixital usando unha porta OR e as entradas fornecidas."
 
 #: activities/digital_electricity/TutorialDataset.qml:187
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "You can draw multiple wires from the output terminal of a component."
 msgctxt "TutorialDataset|"
 msgid "You can draw multiple wires from the output terminal of a component."
-msgstr ""
-"Nota: Podes debuxar varios cables desde o terminal de saída dun compoñente."
+msgstr "Podes debuxar varios cables desde o terminal de saída dun compoñente."
 
 #: activities/digital_electricity/TutorialDataset.qml:188
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using the provided components."
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided components."
 msgstr "Acende a luz dixital usando as compoñentes fornecidas."
 
 #: activities/digital_electricity/TutorialDataset.qml:201
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The NOT gate takes a single binary input and flips the value in the "
-#| "output."
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
@@ -6370,35 +6175,21 @@ msgstr ""
 "A porta NOT recibe unha única entrada binaria e inverte o valor na saída."
 
 #: activities/digital_electricity/TutorialDataset.qml:215
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The NAND gate takes two binary inputs and produces one binary output."
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
 msgstr ""
 "A porta NAND recibe dúas entradas binarias e produce unha saída binaria."
 
 #: activities/digital_electricity/TutorialDataset.qml:216
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The output of the NAND gate will be zero if both of its inputs are 1. "
-#| "Else, the output will be one."
 msgctxt "TutorialDataset|"
 msgid ""
 "The output of the NAND gate is zero if both of its inputs are 1. Else, the "
 "output is one."
 msgstr ""
-"A saída da porta NAND será cero se as dúas entradas son 1. En caso "
-"contrario, a saída será un."
+"A saída da porta NAND é 0 se as dúas entradas son 1. En caso contrario, a "
+"saída é 1."
 
 #: activities/digital_electricity/TutorialDataset.qml:217
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "For a more detailed description about the NAND gate, select it and click "
-#| "on the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
@@ -6408,9 +6199,6 @@ msgstr ""
 "botón de información."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Light the bulb using the provided NAND gate."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NAND gate."
 msgstr "Ilumina a lámpada usando a porta NAND fornecida."
@@ -6418,11 +6206,6 @@ msgstr "Ilumina a lámpada usando a porta NAND fornecida."
 #: activities/digital_electricity/TutorialDataset.qml:234
 #: activities/digital_electricity/TutorialDataset.qml:386
 #: activities/digital_electricity/TutorialDataset.qml:463
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "only when both of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
@@ -6433,110 +6216,69 @@ msgstr ""
 
 #: activities/digital_electricity/TutorialDataset.qml:250
 #: activities/digital_electricity/TutorialDataset.qml:402
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "when either of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
-"Crear un circuíto usando os compoñentes fornecidos de xeito que a lámpada só "
-"se ilumine cando algún dos conmutadores estea aceso."
+"Crear un circuíto usando os compoñentes fornecidos de xeito que a lámpada se "
+"ilumine cando calquera dos conmutadores estea aceso."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the three switches so that the bulb glows only if all "
 "the three switches are turned on."
 msgstr ""
 "Ilumina a lámpada usando os tres conmutadores de xeito que a lámpada se "
-"ilumine cando se acende un número impar de conmutadores."
+"ilumine só se os 3 conmutadores están acesos."
 
 #: activities/digital_electricity/TutorialDataset.qml:282
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the three switches so that the bulb glows if any of the "
 "switches are turned on."
 msgstr ""
 "Ilumina a lámpada usando os tres conmutadores de xeito que a lámpada se "
-"ilumine cando se acende un número impar de conmutadores."
+"ilumine se calquera dos conmutadores está aceso."
 
 #: activities/digital_electricity/TutorialDataset.qml:295
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Use the gates such that the bulb will glow only when the switch is turned "
-#| "off and remain off when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid "Use the gates so that the bulb glows only when the switch is on."
 msgstr ""
 "Usa as portas de xeito que a lámpada se ilumine só cando o conmutador está "
-"apagado e quede apagada cando se acenda o conmutador."
+"aceso."
 
 #: activities/digital_electricity/TutorialDataset.qml:308
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The XOR Gate takes two binary inputs and produces one binary output."
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
 msgstr ""
 "A porta XOR recibe dúas entradas binarias e produce unha saída binaria."
 
 #: activities/digital_electricity/TutorialDataset.qml:309
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "The output of the XOR gate will be one if the number of \"1\" in the "
-#| "input is odd. Else, the output will be zero."
 msgctxt "TutorialDataset|"
 msgid ""
 "The output of the XOR gate is one if the number of 1 in the input is odd. "
 "Else, the output is zero."
 msgstr ""
-"A saída da porta XOR será un se o número de «1» na entrada é impar. En caso "
-"contrario, a saída será cero."
+"A saída da porta XOR é un se o número de 1 na entrada é impar. En caso "
+"contrario, a saída é 0."
 
 #: activities/digital_electricity/TutorialDataset.qml:310
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Light the bulb using the XOR gate provided."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided XOR gate."
 msgstr "Ilumina a lámpada usando a porta XOR fornecida."
 
 #: activities/digital_electricity/TutorialDataset.qml:326
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the two switches so that the bulb glows when one of the "
 "switch is on and the other is off."
 msgstr ""
-"Ilumina a lámpada usando os tres conmutadores de xeito que a lámpada se "
-"ilumine cando se acende un número impar de conmutadores."
+"Ilumina a lámpada usando os dous conmutadores de xeito que a lámpada se "
+"ilumine cando un dos conmutadores está aceso e o outro non."
 
 #: activities/digital_electricity/TutorialDataset.qml:342
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the three switches such that the bulb glows when odd "
-#| "number of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the three switches so that the bulb glows when odd "
@@ -6546,11 +6288,6 @@ msgstr ""
 "ilumine cando se acende un número impar de conmutadores."
 
 #: activities/digital_electricity/TutorialDataset.qml:355
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
-#| "otherwise produces an output of 0."
 msgctxt "TutorialDataset|"
 msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
@@ -6560,11 +6297,6 @@ msgstr ""
 "entradas son 0, ou produce unha saída de 0 en caso contrario."
 
 #: activities/digital_electricity/TutorialDataset.qml:356
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "For a more detailed description about the NOR gate, select it and click "
-#| "on the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
@@ -6574,9 +6306,6 @@ msgstr ""
 "de información."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Light the bulb using the provided NOR gate."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NOR gate."
 msgstr "Ilumina a lámpada usando a porta NOR fornecida."
@@ -22662,13 +22391,13 @@ msgctxt "piano_composition|"
 msgid "Now you can load music and also save your compositions."
 msgstr "Agora podes cargar música e gardar a que compuxeses."
 
-#: activities/piano_composition/piano_composition.js:65
+#: activities/piano_composition/piano_composition.js:63
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Erro ao gardar a melodía no ficheiro (%1)"
 
-#: activities/piano_composition/piano_composition.js:70
+#: activities/piano_composition/piano_composition.js:68
 #, fuzzy, qt-format
 #| msgctxt "piano_composition|"
 #| msgid "Saved melody to your file (%1)"

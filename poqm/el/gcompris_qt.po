@@ -21105,13 +21105,13 @@ msgstr ""
 "Τώρα μπορείς να φορτώσεις μουσική, όπως και να αποθηκεύσεις τη δική σου "
 "σύνθεση."
 
-#: activities/piano_composition/piano_composition.js:65
+#: activities/piano_composition/piano_composition.js:63
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Error saving melody to your file (%1)"
 msgstr "Σφάλμα αποθήκευσης της μελωδίας στο αρχείο σου (%1)"
 
-#: activities/piano_composition/piano_composition.js:70
+#: activities/piano_composition/piano_composition.js:68
 #, qt-format
 msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
