@@ -20,7 +20,7 @@ Checkout the source code by cloning it from GitHub
 If you want to have a personal fork, in order to commit occasional patches,
 fork it on GitHub then clone your fork
 
-    git clone git@github.com:<username>/GCompris-qt.git
+    git clone https://github.com/<username>/GCompris-qt.git
 
 When asking for a pull request, create a new topic branch and commit your
 changes there then open a pull request to gcompris-qt repository on GitHub.
@@ -61,7 +61,7 @@ By default, translations are also built so gettext package must be installed to 
     
 Installing dependencies on a Debian based systems can be done like this:
 
-    sudo apt install libqt5svg5-dev \
+    sudo apt install libssl-dev libqt5svg5-dev \
                           qml-module-qtmultimedia \
                           qml-module-qtgraphicaleffects qt5-qmake qtcreator \
                           qtdeclarative5-dev qtmultimedia5-dev \
