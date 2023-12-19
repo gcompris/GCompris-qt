@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-12-17 07:28+0100\n"
+"PO-Revision-Date: 2023-12-18 09:02+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -6200,25 +6200,15 @@ msgid "Light the bulb using the provided NOR gate."
 msgstr "Ilumina a lámpada usando a porta NOR fornecida."
 
 #: activities/digital_electricity/TutorialDataset.qml:370
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Use the gates such that the bulb will glow only when the switch is turned "
-#| "off and remain off when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Use the gates so that the bulb glows only when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Usa as portas de xeito que a lámpada se ilumine só cando o conmutador está "
-"apagado e quede apagada cando se acenda o conmutador."
+"Usa as portas para que a lámpada se ilumine só cando o conmutador está "
+"apagado e non se ilumine cando se acenda o conmutador."
 
 #: activities/digital_electricity/TutorialDataset.qml:418
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "only when both of the switches are turned off."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
@@ -6228,44 +6218,26 @@ msgstr ""
 "se ilumine cando ambos conmutadores estean apagados."
 
 #: activities/digital_electricity/TutorialDataset.qml:434
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using the components provided such that the bulb will glow "
-#| "under the following two circumstances:\n"
-#| "1. The first switch is turned ON, or\n"
-#| "2. Both of the second and the third switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using the provided components so that the bulb glows if the "
 "first switch is turned ON, or if both the second and the third switches are "
 "turned on."
 msgstr ""
-"Ilumina a lámpada usando os compoñentes fornecidos de xeito que a lámpada se "
-"ilumine nas dúas seguintes circunstancias:\n"
-"1. Acéndese o primeiro conmutador, ou\n"
-"2. Acéndense o segundo conmutador e o terceiro."
+"Ilumina a lámpada usando os compoñentes fornecidos para que a lámpada se "
+"ilumine se o primeiro conmutador se acende, ou se se acenden tanto o segundo "
+"como o terceiro."
 
 #: activities/digital_electricity/TutorialDataset.qml:447
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Use the gates such that the bulb will glow only when the switch is turned "
-#| "off and remain off when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Use the gates so that the bulb glows when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Usa as portas de xeito que a lámpada se ilumine só cando o conmutador está "
-"apagado e quede apagada cando se acenda o conmutador."
+"Usa as portas para que a lámpada se ilumine cando o conmutador está apagado "
+"e non se ilumine cando se acenda o conmutador."
 
 #: activities/digital_electricity/TutorialDataset.qml:479
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb glows "
-#| "when either of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
@@ -6275,26 +6247,15 @@ msgstr ""
 "se ilumine cando algún dos conmutadores estea aceso."
 
 #: activities/digital_electricity/TutorialDataset.qml:495
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb will "
-#| "glow when at least one of the switches are turned off."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "at least one of the switches is turned off."
 msgstr ""
-"Crear un circuíto usando os compoñentes fornecidos de xeito que a lámpada só "
-"se ilumine cando polo menos un dos conmutadores estea apagado."
+"Crear un circuíto usando os compoñentes fornecidos de xeito que a lámpada se "
+"ilumine cando polo menos un dos conmutadores estea apagado."
 
 #: activities/digital_electricity/TutorialDataset.qml:511
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "A comparator takes two numbers (A and B) as input and produces 3 values "
-#| "as output. First value is 1 if A < B, second value is 1 for A = B and "
-#| "third value is 1 for A > B."
 msgctxt "TutorialDataset|"
 msgid ""
 "A comparator takes two numbers (A and B) as input and produces 3 values as "
@@ -6306,12 +6267,6 @@ msgstr ""
 "o terceiro valor é 1 para A > B."
 
 #: activities/digital_electricity/TutorialDataset.qml:512
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Create a circuit using the components provided such that the bulb will "
-#| "glow when the value of the current flowing through the first switch is "
-#| "less than or equal to that of the second switch."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
@@ -6319,23 +6274,15 @@ msgid ""
 "second switch."
 msgstr ""
 "Crea un circuíto usando os compoñentes fornecidos de xeito que a lámpada se "
-"ilumine cando o valor da corrente que circula polo primeiro conmutador é "
-"menor ou igual que o  que circula polo segundo conmutador."
+"ilumine cando a saída do primeiro conmutador sexa menor ou igual que a saída "
+"do segundo conmutador."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "The component in the middle is a BCD to seven segment converter."
 msgctxt "TutorialDataset|"
 msgid "The component in the middle is a BCD to seven segment converter."
 msgstr "O compoñente do medio é un convertedor de BCD a sete segmentos."
 
 #: activities/digital_electricity/TutorialDataset.qml:526
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "It takes 4 bits as input represented in the binary coded decimal (BCD) "
-#| "format and converts the BCD number into a seven segment code."
 msgctxt "TutorialDataset|"
 msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
@@ -6345,11 +6292,6 @@ msgstr ""
 "binario (BCD) e converte o número BCD nun código de sete segmentos."
 
 #: activities/digital_electricity/TutorialDataset.qml:527
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The output of the converter is connected to the seven segment display, to "
-#| "view the value of the input provided."
 msgctxt "TutorialDataset|"
 msgid ""
 "The output of the converter is connected to the seven segment display, to "
@@ -6359,20 +6301,11 @@ msgstr ""
 "ver o valor da entrada fornecida."
 
 #: activities/digital_electricity/TutorialDataset.qml:528
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Display the number 6 in the seven segment display."
 msgctxt "TutorialDataset|"
 msgid "Display the number 6 in the seven segment display."
-msgstr "Mostra o número 6 na pantalla de sete segmentos."
+msgstr "Amosa o número 6 na pantalla de sete segmentos."
 
 #: activities/digital_electricity/TutorialDataset.qml:541
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The signal generator on the left is used to generate alternating signals "
-#| "between 0 and 1 in a given time period taken as input. The time period by "
-#| "default is 1 second, but it can be changed between 0.25 and 2s."
 msgctxt "TutorialDataset|"
 msgid ""
 "The signal generator on the left is used to generate alternating signals "
@@ -6386,11 +6319,6 @@ msgstr ""
 
 # skip-rule: trasno-app
 #: activities/digital_electricity/TutorialDataset.qml:542
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "The BCD counter placed under it is a special type of counter which can "
-#| "count from 0 to 9 and back to 0 on application of a clock signal."
 msgctxt "TutorialDataset|"
 msgid ""
 "The BCD counter placed under it is a special type of counter which can count "
@@ -6400,11 +6328,6 @@ msgstr ""
 "pode contar de 0 a 9 e de volta a 0 tras a aplicación dun sinal de reloxo."
 
 #: activities/digital_electricity/TutorialDataset.qml:543
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "Connect the components to make sure that the count of 0 to 9 is visible "
-#| "in the provided seven segment display."
 msgctxt "TutorialDataset|"
 msgid ""
 "Connect the components to make sure that the count of 0 to 9 is visible in "
@@ -6414,21 +6337,15 @@ msgstr ""
 "pantalla de sete segmentos fornecida."
 
 #: activities/digital_electricity/TutorialDataset.qml:559
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid ""
-#| "Light the bulb using both the switches such that the bulb will glow only "
-#| "when either the first switch is on and the second switch is off or the "
-#| "first switch is off and the second switch is on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb using both the switches so that the bulb glows only when "
 "either the first switch is on and the second switch is off, or when the "
 "first switch is off and the second switch is on."
 msgstr ""
-"Ilumina a lámpada usando os dous conmutadores de xeito que a lámpada se "
-"ilumine só cando ou o primeiro conmutador está aceso e o segundo apagado ou "
-"o primeiro está apagado e o segundo aceso."
+"Ilumina a lámpada usando os dous conmutadores para que a lámpada se ilumine "
+"só cando ou o primeiro conmutador está aceso e o segundo apagado ou o "
+"primeiro está apagado e o segundo aceso."
 
 #. Activity title
 #: activities/drawletters/ActivityInfo.qml:15
@@ -6444,9 +6361,6 @@ msgstr "Conecta os puntos para debuxar letras."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw the letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw letters in a funny way."
 msgstr "Aprender a debuxar as letras de maneira divertida."
@@ -6484,12 +6398,12 @@ msgstr "Conecta os puntos na orde correcta para debuxar os números."
 #: activities/enumerate/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
-msgstr ""
+msgstr "Botón de aceptar"
 
 #: activities/enumerate/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
-msgstr ""
+msgstr "Validar as respostas"
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -6519,12 +6433,6 @@ msgstr "Enumeración básica."
 
 #. Help manual
 #: activities/enumerate/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "First, properly organize the items so that you can count them. Then, "
-#| "select the item you want to answer in the top left area. Enter the answer "
-#| "with the keyboard."
 msgctxt "ActivityInfo|"
 msgid ""
 "First, properly organize the items so that you can count them. Then, click "
@@ -6532,23 +6440,23 @@ msgid ""
 "corresponding answer with the keyboard."
 msgstr ""
 "Primeiro organiza axeitadamente os elementos para así poder contalos "
-"doadamente. Despois selecciona, na zona superior esquerda, o elemento do que "
-"queres responder o seu número. Insire a resposta co teclado."
+"doadamente. Despois preme nun elemento da lista de respostas na zona "
+"superior esquerda, e insire a resposta correspondente co teclado."
 
 #: activities/enumerate/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Up arrow: select next item"
-msgstr ""
+msgstr "Frecha arriba: seleccionar o seguinte elemento"
 
 #: activities/enumerate/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Down arrow: select previous item"
-msgstr ""
+msgstr "Frecha abaixo: seleccionar o elemento anterior"
 
 #: activities/enumerate/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Digits: enter your answer for the selected item"
-msgstr ""
+msgstr "Díxitos: introduce a resposta para o elemento seleccionado"
 
 #: activities/enumerate/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -6556,76 +6464,78 @@ msgid ""
 "Enter: validate your answer (if the 'Validate answers' option is set to 'OK "
 "button')"
 msgstr ""
+"Intro: validar a resposta (se a opción «Validar as respostas» é «Botón de "
+"aceptar»)"
 
 #: activities/enumerate/resource/1/Data.qml:13
 #: activities/enumerate/resource/1/Data.qml:29
 msgctxt "Data|"
 msgid "Enumerate up to 4 fruit."
-msgstr ""
+msgstr "Enumerar ata 4 froitas."
 
 #: activities/enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Enumerate up to 2 fruit."
-msgstr ""
+msgstr "Enumerar ata 2 froitas."
 
 #: activities/enumerate/resource/1/Data.qml:23
 msgctxt "Data|"
 msgid "Enumerate up to 3 fruit."
-msgstr ""
+msgstr "Enumerar ata 3 froitas."
 
 #: activities/enumerate/resource/2/Data.qml:13
 #: activities/enumerate/resource/2/Data.qml:29
 #: activities/enumerate/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
-msgstr ""
+msgstr "Agrupa 2 tipos de froita e enumera cada grupo (5 froitas como máximo)."
 
 #: activities/enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
+msgstr "Agrupa 2 tipos de froita e enumera cada grupo (3 froitas como máximo)."
 
 #: activities/enumerate/resource/2/Data.qml:23
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
+msgstr "Agrupa 2 tipos de froita e enumera cada grupo (4 froitas como máximo)."
 
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:35
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
+msgstr "Agrupa 3 tipos de froita e enumera cada grupo (6 froitas como máximo)."
 
 #: activities/enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
+msgstr "Agrupa 3 tipos de froita e enumera cada grupo (3 froitas como máximo)."
 
 #: activities/enumerate/resource/3/Data.qml:23
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
+msgstr "Agrupa 3 tipos de froita e enumera cada grupo (4 froitas como máximo)."
 
 #: activities/enumerate/resource/4/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:35
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-msgstr ""
+msgstr "Agrupa 4 tipos de froita e enumera cada grupo (9 froitas como máximo)."
 
 #: activities/enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
+msgstr "Agrupa 4 tipos de froita e enumera cada grupo (6 froitas como máximo)."
 
 #: activities/enumerate/resource/4/Data.qml:23
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr ""
+msgstr "Agrupa 4 tipos de froita e enumera cada grupo (7 froitas como máximo)."
 
 #: activities/enumerate/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr ""
+msgstr "Agrupa 4 tipos de froita e enumera cada grupo (8 froitas como máximo)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
@@ -6652,13 +6562,10 @@ msgstr "Coordinación motora."
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse or touch the screen until all the blocks disappear."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen on the blocks to make them disappear."
-msgstr "Move o rato ou toca a pantalla ata que desaparezan todos os bloques."
+msgstr "Move o rato ou toca a pantalla sobre os bloques para que desaparezan."
 
 #. Activity title
 #: activities/erase_2clic/ActivityInfo.qml:15
@@ -6678,16 +6585,9 @@ msgstr ""
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click the mouse on rectangles until all the blocks "
-#| "disappear."
 msgctxt "ActivityInfo|"
 msgid "Double tap or double click on the blocks to make them disappear."
-msgstr ""
-"Preme ou toca dúas veces seguidas no rato sobre os rectángulos ata que "
-"desaparezan todos os bloques."
+msgstr "Preme ou toca dúas veces seguidas os bloques para que desaparezan."
 
 #. Activity title
 #: activities/erase_clic/ActivityInfo.qml:15
@@ -6703,12 +6603,9 @@ msgstr "Preme ou toca para borrar a zona e descubrir o fondo."
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap on the blocks all of them disappear."
 msgctxt "ActivityInfo|"
 msgid "Click or tap on the blocks to make them disappear."
-msgstr "Preme ou toca os bloques ata que desaparezan todos."
+msgstr "Preme ou toca os bloques para que desaparezan."
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
@@ -6735,22 +6632,9 @@ msgstr "Aprende a asociar sons de animais co nome do animal e co seu aspecto."
 #: activities/explore_farm_animals/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this game."
-msgstr ""
+msgstr "Este xogo ten 3 niveis."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "There are two levels in this game.\n"
-#| "\n"
-#| "In level one, players enjoy exploring each animal on the screen. Click on "
-#| "the question mark, and learn about the animal, what it's name is, and "
-#| "what it looks like. Study well this information, because you will be "
-#| "tested in level 2!\n"
-#| "\n"
-#| "In level two, a random text prompt is displayed and you must click on the "
-#| "animal that matches the text. When you have matched all texts correctly, "
-#| "you win!\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "In level one, players enjoy exploring each animal on the screen. Click on an "
@@ -6758,16 +6642,9 @@ msgid ""
 "it looks like. Study well this information, because you will be tested in "
 "level 2 and 3."
 msgstr ""
-"Neste xogo existen dous niveis.\n"
-"\n"
-"No primeiro nivel, os xogadores gozan de descubrir cada un dos animais na "
-"pantalla. Preme o signo de interrogación para aprender máis sobre cada "
-"animal, o seu nome e o seu aspecto. Estuda detidamente a información porque "
-"o segundo nivel porá a proba os teus coñecementos!\n"
-"\n"
-"No segundo nivel, móstrase un texto aleatorio e debes premer o animal que se "
-"corresponde co texto. Gañas despois de asociar correctamente todos os "
-"textos!\n"
+"No nivel 1 exploras os animais na pantalla. Preme un animal para aprender "
+"sobre el, o seu nome, como soa e o seu aspecto. Estuda ben a información, "
+"porque estarás a proba nos niveis 2 e 3."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -6776,6 +6653,8 @@ msgid ""
 "makes this sound. Click on the corresponding animal. If you'd like to hear "
 "the animal sound repeated, click on the play button."
 msgstr ""
+"No nivel 2 reproducirase o son dun animal, e debes premer o animal ao que "
+"corresponde. Preme o botón de reproducir se queres volver escoitar o animal."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -6783,6 +6662,7 @@ msgid ""
 "In level three, a random text prompt is displayed and you must click on the "
 "animal that matches the text."
 msgstr ""
+"No nivel 3 amósase un texto e debes premer o animar ao que corresponde."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:304
 msgctxt "ExploreLevels|"
@@ -6790,6 +6670,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Esta actividade precisa de son, polo que as voces soarán inda que "
+"desactivaras os efectos de son e as voces na configuración principal."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:305
 msgctxt "ExploreLevels|"
@@ -6797,17 +6679,14 @@ msgid "Quit"
 msgstr "Saír?"
 
 #: activities/explore_farm_animals/ExploreLevels.qml:306
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Continents"
 msgctxt "ExploreLevels|"
 msgid "Continue"
-msgstr "Continentes"
+msgstr "Continuar"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:21
 msgctxt "board1|"
 msgid "Horse"
-msgstr "Cabalo"
+msgstr "Egua, cabalo"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:22
 msgctxt "board1|"
@@ -6816,19 +6695,19 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"A egua e o cabalo rinchan. Os cabalos están adaptados para correr, o que "
+"lles permite escapar rapidamente de depredadores, e teñen un gran sentido do "
+"equilibrio. Teñen pezuños cunha única deda."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Os lobos son os ancestros deste animal."
+msgstr "O animal ten pezuños cunha única deda."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
 msgid "Chicken"
-msgstr "Galiña"
+msgstr "Galiña, galo"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:34
 msgctxt "board1|"
@@ -6836,19 +6715,18 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"A galiña cacarexa, e o galo canta. As galiñas e galos domésticos teñen ás, "
+"pero non poden voar distancias longas. Teñen unha crista na cabeza."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Este animal gosta de saír pola noite."
+msgstr "O animal ten unha crista na cabeza."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
 msgid "Cow"
-msgstr "Vaca"
+msgstr "Vaca, boi"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:46
 msgctxt "board1|"
@@ -6857,16 +6735,19 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"A vaca e o boi brúan. As vacas e bois teñen un campo de visión amplo de "
+"330°. Teñen un sentido do gusto ben desenvolvido, con arredor de 20 000 "
+"papilas gustativas. Poden detectar olores a 8 km de distancia."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "O animal ten arredor de 20 000 papilas gustativas."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
 msgid "Cat"
-msgstr "Gato"
+msgstr "Gata, gato"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:58
 msgctxt "board1|"
@@ -6875,14 +6756,13 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"A gata e o gato mían. As persoas valoran a súa compañía e a súa habilidade "
+"para cazar roedores. Rosman para comunicar diversas emocións."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Este animal pon ovos."
+msgstr "O animal rosma."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -6895,11 +6775,13 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"A porca e o porco gruñen. Cóbrense de barro, principalmente para controlar a "
+"súa temperatura persoal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "O animal cóbrese de barro para controlar a súa temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6912,15 +6794,13 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"A parrula e o parrulo grallan. Son aves acuáticas con plumas impermeables e "
+"teñen membranas entre as dedas que lles permiten nadar na auga."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr ""
-"Este animal ten membranas entre as dedas, o que lle permite nadar na auga."
+msgstr "O animal ten membranas entre as dedas e pode nadar na auga."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -6928,26 +6808,17 @@ msgid "Owl"
 msgstr "Curuxa"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
 msgstr ""
-"A curuxa fai «u, u». A curuxa ten unha visión e un oído excelentes pola "
-"noite."
+"A curuxa pía. É unha ave nocturna cunha visión e oído excelentes pola noite."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Este animal gosta de saír pola noite."
+msgstr "O animal é unha ave nocturna."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -6960,14 +6831,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"A cadela e o can ladran. Son probabelmente a especie doméstica máis antiga. "
+"Descenden do lobo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Este animal é un parente próximo da cabra."
+msgstr "O animal descende do lobo."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -6980,14 +6850,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"A ovella berra. A maioría das razas están recubertas dun vélaro de la. O "
+"vélaro pode raparse e usarse para producir fibra textil."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Os lobos son os ancestros deste animal."
+msgstr "O animal produce la."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -7018,14 +6887,11 @@ msgstr "Explora monumentos de todo o mundo."
 
 #. Help goal
 #: activities/explore_monuments/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "To learn about different monuments on the basis of their location."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn about various monuments from around the world and remember their "
 "location."
-msgstr "Para aprender sobre distintos monumentos en base ao lugar onde están."
+msgstr "Descubre monumentos de todo o mundo e lembra de onde son."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
@@ -7035,18 +6901,11 @@ msgstr "Coñecemento sobre distintos monumentos."
 
 #. Help manual
 #: activities/explore_monuments/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the given keys to learn more of the monuments and then identify "
-#| "where the monuments is on the map by its name."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the spots to learn about the monuments and then locate them on the "
 "map."
-msgstr ""
-"Preme as chaves correspondentes para aprender máis sobre os monumentos, e a "
-"continuación identifica o lugar do mapa no que está o monumento, polo nome."
+msgstr "Preme os puntos para descubrir monumentos e logo sitúaos no mapa."
 
 #: activities/explore_monuments/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7079,15 +6938,6 @@ msgid "Colosseum"
 msgstr "Coliseo"
 
 #: activities/explore_monuments/resource/board/board1.qml:31
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The Colosseum or Coliseum is today the most recognizable of Rome's "
-#| "Classical buildings. Even 2000 years after it was built, and despite "
-#| "centuries when the abandoned building was pillaged for building "
-#| "materials, it is instantly recognizable as a classical template for the "
-#| "stadia of today. It was the first permanent amphitheatre to be raised in "
-#| "Rome, and the most impressive arena the Classical world had yet seen."
 msgctxt "board1|"
 msgid ""
 "The Colosseum or Coliseum is today the most recognizable of Rome's Classical "
@@ -7101,7 +6951,7 @@ msgstr ""
 "de Roma. 2000 anos despois da súa construción, e tras séculos de saqueos do "
 "edificio abandonado para obter material de construción, o Coliseo continúa "
 "sendo inconfundíbel. Trátase dun modelo clásico no que se basean os estadios "
-"actuais. Foi o primeiro anfiteatro permanente que se construiu en Roma, e a "
+"actuais. Foi o primeiro anfiteatro permanente que se construíu en Roma, e a "
 "arena máis impresionante que xamais vira o mundo clásico."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
@@ -7210,20 +7060,14 @@ msgid "Taj Mahal"
 msgstr "Taj Mahal"
 
 #: activities/explore_monuments/resource/board/board1.qml:98
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "The New 7 Wonders of the World."
 msgctxt "board1|"
 msgid "The New 7 Wonders of the World."
-msgstr "As novas sete marabillas do mundo."
+msgstr "As novas 7 marabillas do mundo."
 
 #: activities/explore_monuments/resource/board/board1.qml:101
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on location where the given monument is located."
 msgctxt "board1|"
 msgid "Click on the location of the given monument."
-msgstr "Preme o lugar no que está situado o monumento indicado."
+msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board2.qml:18
 #: activities/explore_monuments/resource/board/board2.qml:21
@@ -7251,14 +7095,6 @@ msgid "Hawa Mahal"
 msgstr "Hawa Mahal"
 
 #: activities/explore_monuments/resource/board/board2.qml:30
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Hawa Mahal is a palace in Jaipur, India, so named because it was "
-#| "essentially a high screen wall built so that the women of the royal "
-#| "household could observe street festivals while unseen from the outside. "
-#| "Constructed of red and pink sandstone, the palace sits on the edge of the "
-#| "City Palace, and extends to the zenana, or women's chambers."
 msgctxt "board2|"
 msgid ""
 "Hawa Mahal is a palace in Jaipur, India, so named because it was essentially "
@@ -7326,16 +7162,6 @@ msgid "Ajanta Caves"
 msgstr "Covas de Axanta"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date "
-#| "from the 2nd century BCE to about 480 CE in Aurangabad district of "
-#| "Maharashtra state of India. The caves include paintings and rock cut "
-#| "sculptures described as among the finest surviving examples of ancient "
-#| "Indian art, particularly expressive paintings that present emotion "
-#| "through gesture, pose and form. Since 1983, the caves have been a UNESCO "
-#| "World Heritage Site."
 msgctxt "board2|"
 msgid ""
 "The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date "
@@ -7476,12 +7302,9 @@ msgid "Monuments of India"
 msgstr "Monumentos da India"
 
 #: activities/explore_monuments/resource/board/board2.qml:144
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Click on location where the given monument is located."
 msgctxt "board2|"
 msgid "Click on the location of the given monument."
-msgstr "Preme o lugar no que está situado o monumento indicado."
+msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board3.qml:18
 #: activities/explore_monuments/resource/board/board3.qml:21
@@ -7598,15 +7421,6 @@ msgid "Château de Chambord"
 msgstr "Castelo de Chambord"
 
 #: activities/explore_monuments/resource/board/board3.qml:74
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Prestigious, majestic, colossal, extravagant, are these adjectives enough "
-#| "to fully describe the splendour of Chambord? The largest château of the "
-#| "Loire Valley is indeed full of surprises for those who are lucky enough "
-#| "to explore its domain. This remarkable piece of architecture is certainly "
-#| "more than just a castle: it is the dream of a king, transformed into "
-#| "reality."
 msgctxt "board3|"
 msgid ""
 "Prestigious, majestic, colossal, extravagant, are these adjectives enough to "
@@ -7668,15 +7482,6 @@ msgid "Château de Chenonceau"
 msgstr "Castelo de Chenonceau"
 
 #: activities/explore_monuments/resource/board/board3.qml:107
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The Château de Chenonceau is among many of Loire Valley Châteaux that "
-#| "boast amazing architecture and historical significance drawing thousands "
-#| "of tourists from all over the world. Château de Chenonceau is sometimes "
-#| "called the Ladies Castle by some historians due to feminine figures "
-#| "having greatly influenced the construction and development of this French "
-#| "Château over the centuries."
 msgctxt "board3|"
 msgid ""
 "The Château de Chenonceau is among many of Loire Valley Châteaux that boast "
@@ -7716,12 +7521,9 @@ msgid "Monuments of France"
 msgstr "Monumentos de Francia"
 
 #: activities/explore_monuments/resource/board/board3.qml:133
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Click on location where the given monument is located."
 msgctxt "board3|"
 msgid "Click on the location of the given monument."
-msgstr "Preme o lugar no que está situado o monumento indicado."
+msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board4.qml:18
 #: activities/explore_monuments/resource/board/board4.qml:21
@@ -7868,12 +7670,9 @@ msgid "Monuments of Germany"
 msgstr "Monumentos da Alemaña"
 
 #: activities/explore_monuments/resource/board/board4.qml:100
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Click on location where the given monument is located."
 msgctxt "board4|"
 msgid "Click on the location of the given monument."
-msgstr "Preme o lugar no que está situado o monumento indicado."
+msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board5.qml:18
 #: activities/explore_monuments/resource/board/board5.qml:21
@@ -7905,16 +7704,6 @@ msgid "Canyon de Chelly"
 msgstr "Canón de Chelly"
 
 #: activities/explore_monuments/resource/board/board5.qml:30
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "The stoic red ruins of Canyon de Chelly in northeastern Arizona are at "
-#| "once part of the National Park Service and the Navajo Nation, having been "
-#| "established as a national monument in 1931. A number of important early "
-#| "Native American sites are preserved in the nearly 84000 acres of "
-#| "parkland, and Canyon de Chelly also offers an array of Southwestern "
-#| "geological formations, including Spider Rock, an 800-foot-tall sandstone "
-#| "spire that rises eerily from the bottom of the canyon floor."
 msgctxt "board5|"
 msgid ""
 "The stoic red ruins of Canyon de Chelly in northeastern Arizona are at once "
@@ -7925,14 +7714,14 @@ msgid ""
 "formations, including Spider Rock, an 800-foot-tall sandstone spire that "
 "rises eerily from the bottom of the canyon floor."
 msgstr ""
-"As estoicas ruínas vermellas do Canón de Chelly no noreste de Arizona son ao "
-"mesmo tempo parte do Servizo Nacional de Parques e da Nación Navajo, tras "
+"As estoicas ruínas vermellas do Canón de Chelly no nordeste de Arizona son "
+"ao mesmo tempo parte do Servizo Nacional de Parques e da Nación Navajo, tras "
 "estabelecerse como monumento nacional en 1931. Nos preto de 340 millóns de "
 "metros cadrados de parque presérvanse lugares importantes dos primeiros "
 "nativos americanos, e o Canón de Chelly tamén fornece unha serie de "
 "formacións xeolóxicas do suroeste, entre as que están a Spider Rock («Rocha "
 "da Araña»), unha agulla de arenito de 244 metros de altura emerxe "
-"maxestuosamente das profundidades do canón."
+"maxestosamente das profundidades do canón."
 
 #: activities/explore_monuments/resource/board/board5.qml:40
 #: activities/explore_monuments/resource/board/board5.qml:43
@@ -8124,12 +7913,9 @@ msgid "Monuments of US"
 msgstr "Monumentos dos Estados Unidos"
 
 #: activities/explore_monuments/resource/board/board5.qml:133
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Click on location where the given monument is located."
 msgctxt "board5|"
 msgid "Click on the location of the given monument."
-msgstr "Preme o lugar no que está situado o monumento indicado."
+msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board6.qml:17
 #: activities/explore_monuments/resource/board/board6.qml:20
@@ -8138,19 +7924,6 @@ msgid "Great Pyramid of Giza"
 msgstr "Gran Pirámide de Gizeh"
 
 #: activities/explore_monuments/resource/board/board6.qml:18
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "The Great Pyramid of Giza is also known as the Pyramid of Khufu or the "
-#| "Pyramid of Cheops. It is considered to be the oldest of all the Seven "
-#| "Wonders of the Ancient World. It is also the largest of all the three "
-#| "pyramids in Giza. It is situated in the Giza Necropolis, in Egypt. The "
-#| "initial construction has been started by Egyptian Pharaoh Khufu, then it "
-#| "was continued by his son Khafre and finally completed by Menkaure. It "
-#| "took almost 20 years to build the pyramid and approximately 2 million "
-#| "blocks of stone have been used in the construction. The height of the "
-#| "pyramid is approximately 139 meters making it the highest pyramid of "
-#| "Egypt."
 msgctxt "board6|"
 msgid ""
 "The Great Pyramid of Giza is also known as the Pyramid of Khufu or the "
@@ -8206,17 +7979,6 @@ msgid "Pyramid of Meidum"
 msgstr "Pirámide de Meidum"
 
 #: activities/explore_monuments/resource/board/board6.qml:40
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Five miles south of Saqqara in Egypt stands the mysterious tower-like "
-#| "pyramid of Meidum, which today scarcely resembles a typical pyramid at "
-#| "all. This pyramid was probably built during the reign of the 4th Dynasty "
-#| "pharaoh Sneferu, although it is believed by some that the pyramid may "
-#| "have been started by Sneferu’s predecessor, Huni. At some point during "
-#| "its construction the steps of the pyramid were filled with limestone "
-#| "encasing marking the first attempt by the ancient Egyptians at the "
-#| "construction of a true pyramid."
 msgctxt "board6|"
 msgid ""
 "Five miles south of Saqqara in Egypt stands the mysterious tower-like "
@@ -8243,15 +8005,6 @@ msgid "Red Pyramid"
 msgstr "Pirámide Vermella"
 
 #: activities/explore_monuments/resource/board/board6.qml:51
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "The Red Pyramid was one of the finest and most successful attempts by "
-#| "Pharaoh Sneferu in building world’s first ever smooth sided pyramid "
-#| "during the Ancient Egypt period. The height of the pyramid is 104 meters "
-#| "making it the world’s 4th largest pyramid in Egypt. The pyramid has been "
-#| "built with red limestone stones, hence the name. The local people of "
-#| "Egypt called it as el-heram el-watwaat meaning the Bat Pyramid."
 msgctxt "board6|"
 msgid ""
 "The Red Pyramid was one of the finest and most successful attempts by "
@@ -8261,10 +8014,10 @@ msgid ""
 "red limestone stones, hence the name. The local people of Egypt called it as "
 "el-heram el-watwaat meaning the Bat Pyramid."
 msgstr ""
-"A Pirámide Vermella foi un dos intentos máis exitosos de construír a "
+"A Pirámide Vermella foi un dos intentos de máis éxito de construír a "
 "primeira pirámide de superficie lisa que fixo o faraón Sneferu durante o "
 "período do Antigo Exipto. A pirámide ten 104 metros de altura, o que a "
-"converte na cuarta pirámide máis alta de Exipto. A pirámide construiuse con "
+"converte na cuarta pirámide máis alta de Exipto. A pirámide construíuse con "
 "pedras de calcaria vermella, de aí o nome. Os exipcios denominárona «el-"
 "heram el-guatguaat» («a pirámide dos morcegos»)."
 
@@ -8274,12 +8027,9 @@ msgid "Egyptian pyramids"
 msgstr "Pirámides exipcias"
 
 #: activities/explore_monuments/resource/board/board6.qml:66
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid "Click on location where the given pyramid is located."
 msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
-msgstr "Preme o lugar no que está situada a pirámide indicada."
+msgstr "Preme a localización da pirámide."
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -8300,28 +8050,15 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
-msgstr ""
+msgstr "Descubre animais salvaxes de todo o mundo e lembra onde viven."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "There are two levels in this game."
-msgstr ""
+msgstr "Este xogo ten 2 niveis."
 
 #: activities/explore_world_animals/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "There are two levels in this game.\n"
-#| "\n"
-#| "In level one, players enjoy exploring each animal on the screen. Click on "
-#| "the question mark, and learn about the animal, what it's name is, and "
-#| "what it looks like. Study well this information, because you will be "
-#| "tested in level 2!\n"
-#| "\n"
-#| "In level two, a random text prompt is displayed and you must click on the "
-#| "animal that matches the text. When you have matched all texts correctly, "
-#| "you win!\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "In level one, players enjoy exploring each animal on the screen. Click on "
@@ -8329,16 +8066,9 @@ msgid ""
 "looks like. Study well this information, because you will be tested in level "
 "2."
 msgstr ""
-"Neste xogo existen dous niveis.\n"
-"\n"
-"No primeiro nivel, os xogadores gozan de descubrir cada un dos animais na "
-"pantalla. Preme o signo de interrogación para aprender máis sobre cada "
-"animal, o seu nome e o seu aspecto. Estuda detidamente a información porque "
-"o segundo nivel porá a proba os teus coñecementos!\n"
-"\n"
-"No segundo nivel, móstrase un texto aleatorio e debes premer o animal que se "
-"corresponde co texto. Gañas despois de asociar correctamente todos os "
-"textos!\n"
+"No nivel 1 exploras os animais na pantalla. Preme un signo de interrogación "
+"para aprender sobre o animal, o seu nome e o seu aspecto. Estuda ben a "
+"información, porque estarás a proba no nivel 2."
 
 #: activities/explore_world_animals/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -8346,6 +8076,7 @@ msgid ""
 "In level two, a random text prompt is displayed and you must click on the "
 "animal that matches the text."
 msgstr ""
+"No nivel 2 amósase un texto e debes premer o animar ao que corresponde."
 
 #: activities/explore_world_animals/resource/board/board1.qml:19
 #: activities/explore_world_animals/resource/board/board1.qml:22
@@ -8427,17 +8158,11 @@ msgstr ""
 "Disque os seus incisivos son similares aos cornos dos mitolóxicos unicornios."
 
 #: activities/explore_world_animals/resource/board/board1.qml:76
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Explore exotic animals from around the world."
 msgctxt "board1|"
 msgid "Explore wild animals from around the world."
-msgstr "Explora animais exóticos de todo o mundo."
+msgstr "Explora animais salvaxes de todo o mundo."
 
 #: activities/explore_world_animals/resource/board/board1.qml:79
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on location where the given animal lives."
 msgctxt "board1|"
 msgid "Click on the location where the given animal lives."
 msgstr "Preme o lugar onde habita o animal indicado."
@@ -8449,11 +8174,6 @@ msgid "Chameleon"
 msgstr "Camaleón"
 
 #: activities/explore_world_animals/resource/board/board2.qml:20
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The chameleon lives in Africa and Madagascar and is well-known for its "
-#| "ability to change its skin color in a couple of seconds."
 msgctxt "board2|"
 msgid ""
 "The chameleon lives in Africa and Madagascar and is well-known for its "
@@ -8484,11 +8204,6 @@ msgid "Kangaroo"
 msgstr "Canguro"
 
 #: activities/explore_world_animals/resource/board/board2.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The kangaroo lives in Australia and is well-known for the pouch on its "
-#| "belly used to cradle baby kangaroos."
 msgctxt "board2|"
 msgid ""
 "The kangaroo lives in Australia and is well-known for the pouch on its belly "
@@ -8519,12 +8234,6 @@ msgid "Moose"
 msgstr "Alce"
 
 #: activities/explore_world_animals/resource/board/board2.qml:64
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Being the largest of all the deers, the moose eats as much as 25 kg per "
-#| "day. However, it's not easy, so sometimes the moose has to stand on its "
-#| "hind legs to reach branches up to 4 meters!"
 msgctxt "board2|"
 msgid ""
 "Being the largest of all the deers, the moose eats as much as 25 kg per day. "
@@ -8536,17 +8245,11 @@ msgstr ""
 "acadar ramas de ata 4 metros de altura."
 
 #: activities/explore_world_animals/resource/board/board2.qml:76
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Explore exotic animals from around the world."
 msgctxt "board2|"
 msgid "Explore wild animals from around the world."
-msgstr "Explora animais exóticos de todo o mundo."
+msgstr "Explora animais salvaxes de todo o mundo."
 
 #: activities/explore_world_animals/resource/board/board2.qml:79
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Click on location where the given animal lives."
 msgctxt "board2|"
 msgid "Click on the location where the given animal lives."
 msgstr "Preme o lugar onde habita o animal indicado."
@@ -8558,17 +8261,12 @@ msgid "Crocodile"
 msgstr "Crocodilo"
 
 #: activities/explore_world_animals/resource/board/board3.qml:20
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The crocodile is a large amphibious reptile. It lives mostly in large "
-#| "tropical rivers, where it is an ambush predator."
 msgctxt "board3|"
 msgid ""
 "The crocodile is a large amphibious reptile. It lives mostly in large "
 "tropical rivers, where it is an ambush predator."
 msgstr ""
-"O crocodilo é un réptil amfibio grande. Habita principalmente en grandes "
+"O crocodilo é un réptil anfibio grande. Habita principalmente en grandes "
 "ríos tropicais, onde é un predador de emboscada."
 
 #: activities/explore_world_animals/resource/board/board3.qml:30
@@ -8578,17 +8276,12 @@ msgid "Komodo dragon"
 msgstr "Dragón de Komodo"
 
 #: activities/explore_world_animals/resource/board/board3.qml:31
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The Komodo dragon is the largest living lizard (up to 3 meters). It lives "
-#| "in the Indonesian islands."
 msgctxt "board3|"
 msgid ""
 "The Komodo dragon is the largest living lizard (up to 3 meters). It lives in "
 "the Indonesian islands."
 msgstr ""
-"O dragón de Komodo é o lagarto vivo máis grande, de ata 3 metros. Habita as "
+"O dragón de Komodo é o lagarto vivo máis grande, de ata 3 metros. Vive nas "
 "illas de Indonesia."
 
 #: activities/explore_world_animals/resource/board/board3.qml:41
@@ -8613,11 +8306,6 @@ msgid "Ring-tailed lemur"
 msgstr "Lémure de cola anelada"
 
 #: activities/explore_world_animals/resource/board/board3.qml:53
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Lemur is a primate that lives in the dry regions of southwest Madagascar. "
-#| "The striped tail makes it easy to recognize."
 msgctxt "board3|"
 msgid ""
 "The ring-tailed lemur is a primate that lives in the dry regions of "
@@ -8633,11 +8321,6 @@ msgid "Panda"
 msgstr "Panda"
 
 #: activities/explore_world_animals/resource/board/board3.qml:64
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "The panda is a bear with black and white fur that lives in a few mountain "
-#| "ranges in central China. Pandas mostly eat bamboo."
 msgctxt "board3|"
 msgid ""
 "The panda is a bear with black and white fur that lives in a few mountain "
@@ -8648,17 +8331,11 @@ msgstr ""
 "bambú."
 
 #: activities/explore_world_animals/resource/board/board3.qml:76
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Explore exotic animals from around the world."
 msgctxt "board3|"
 msgid "Explore wild animals from around the world."
-msgstr "Explora animais exóticos de todo o mundo."
+msgstr "Explora animais salvaxes de todo o mundo."
 
 #: activities/explore_world_animals/resource/board/board3.qml:79
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Click on location where the given animal lives."
 msgctxt "board3|"
 msgid "Click on the location where the given animal lives."
 msgstr "Preme o lugar onde habita o animal indicado."
@@ -8688,7 +8365,7 @@ msgstr ""
 #: activities/explore_world_music/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this activity."
-msgstr ""
+msgstr "Esta actividade ten 3 niveis."
 
 #: activities/explore_world_music/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -8697,6 +8374,9 @@ msgid ""
 "each suitcase to learn about the music from that area, and listen to a short "
 "sample. Study well, because you will be tested in level 2 and 3."
 msgstr ""
+"No nivel 1, explora a música do mundo. Preme cada maleta para descubrir a "
+"música desa zona, e escoita unha mostra curta. Estúdaas ben, porque os "
+"niveis 2 e 3 porante a proba."
 
 #: activities/explore_world_music/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -8705,6 +8385,8 @@ msgid ""
 "location that corresponds to this music. Click on the play button if you'd "
 "like to hear the music again."
 msgstr ""
+"No nivel 2 escoitarás mostras de música, e debes seleccionar a súa "
+"localización. Preme o botón de reproducir para escoitar a música de novo."
 
 #: activities/explore_world_music/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -8712,6 +8394,8 @@ msgid ""
 "In the third level, you must select the location that matches the text "
 "description on the screen."
 msgstr ""
+"No nivel 3, debes seleccionar a localización correspondente á descrición de "
+"texto da pantalla."
 
 #: activities/explore_world_music/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -8792,20 +8476,14 @@ msgid "Scotland and Ireland"
 msgstr "Escocia e Irlanda"
 
 #: activities/explore_world_music/resource/board/board1.qml:69
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "Folk music of this region is called celtic music, often incorporates a "
-#| "narrative poem or story. Typical instruments include bagpipes, fiddles, "
-#| "flutes, harps, and accordions."
 msgctxt "board1|"
 msgid ""
 "Folk music of this region is called celtic music. It often incorporates a "
 "narrative poem or story. Typical instruments include bagpipes, fiddles, "
 "flutes, harps, and accordions."
 msgstr ""
-"A música tradicional desta rexión denomínase música celta, e adoita incluír "
-"un poema narrativo ou unha historia. Entre os instrumentos típicos están as "
+"A música tradicional desta rexión denomínase música celta. Adoita incluír un "
+"poema narrativo ou unha historia. Entre os instrumentos típicos están as "
 "gaitas, os violíns, as frautas, as arpas e os acordeóns."
 
 #: activities/explore_world_music/resource/board/board1.qml:80
@@ -8946,12 +8624,10 @@ msgid "?"
 msgstr "?"
 
 #: activities/family/Family.qml:364
-#, fuzzy, qt-format
-#| msgctxt "Family|"
-#| msgid "Select one of the pairs denoting: %1"
+#, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
-msgstr "Selecciona unha das parellas que denota: %1"
+msgstr "Selecciona unha das parellas que corresponde a: %1"
 
 #: activities/family/FamilyDataset.qml:125
 #: activities/family/FamilyDataset.qml:126
@@ -9129,7 +8805,7 @@ msgstr "Apunta aos familiares"
 #: activities/family_find_relative/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click on a pair corresponding to the given relation."
-msgstr ""
+msgstr "Preme unha parella que corresponde á relación indicada."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -9166,32 +8842,24 @@ msgstr "Move cada elemento para recrear a imaxe."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right side"
 msgctxt "ActivityInfo|"
 msgid "Arrange the pieces in the right order."
-msgstr "Reproduce a torre na dereita"
+msgstr "Coloca as pezas na orde correcta."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click or drag on any pieces that has a free block beside it, and it will "
-#| "be swapped with the empty one."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click or drag on any piece next to the empty space, and it will move to the "
 "empty space."
 msgstr ""
-"Preme ou arrastra calquera das pezas que teñan un bloque libre ao seu carón "
-"e intercambiarase polo bloque baleiro."
+"Preme ou arrastra calquera das pezas canda o espazo baleiro para movela ao "
+"espazo baleiro."
 
 #: activities/fifteen/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
-msgstr ""
+msgstr "Frechas: mover unha peza ao espazo baleiro."
 
 #. Activity title
 #: activities/find_the_day/ActivityInfo.qml:15
@@ -9219,224 +8887,142 @@ msgstr "Fundamentos de calendario."
 
 #. Help manual
 #: activities/find_the_day/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Read the instructions and perform the requested calculation to find a "
-#| "date. Then select this date on the calendar."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions and perform the requested calculation to find the "
 "date. Then select this date on the calendar, and validate your answer by "
 "clicking on the OK button."
 msgstr ""
-"Le as instrucións e realiza o cálculo solicitado para atopar unha data. A "
-"continuación selecciona a data no calendario."
+"Le as instrucións e realiza o cálculo solicitado para atopar a data. A "
+"continuación selecciona a data no calendario e preme o botón de aceptar para "
+"validar a túa resposta."
 
 #: activities/find_the_day/find_the_day_dataset.js:35
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 13 days after May 3rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 13 days after May 3rd."
 msgstr "Atopa a data 13 días despois do 3 de maio."
 
 #: activities/find_the_day/find_the_day_dataset.js:39
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 7 days after October 1st."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 7 days after October 1st."
 msgstr "Atopa a data 7 días despois do 1 de outubro."
 
 #: activities/find_the_day/find_the_day_dataset.js:43
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 31 days after July 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 31 days after July 12th."
 msgstr "Atopa a data 31 días despois do 12 de xullo."
 
 #: activities/find_the_day/find_the_day_dataset.js:47
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date two weeks after November 27th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date two weeks after November 27th."
 msgstr "Atopa a data dúas semanas despois do 27 de novembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:51
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 19 days before September 1st."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 19 days before September 1st."
 msgstr "Atopa a data 19 días antes do 1 de setembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:55
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 5 days before December 8th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 days before December 8th."
 msgstr "Atopa a data 5 días antes do 8 de decembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:75
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 3 days after December 5th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
 msgstr "Atopa o día da semana 3 días despois do 5 de decembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:79
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 12 days before November 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
 msgstr "Atopa o día da semana 12 días antes do 12 de novembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:83
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 32 days after January 5th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
 msgstr "Atopa o día da semana 32 días despois do 5 de xaneiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:87
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 5 days after February 23rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
 msgstr "Atopa o día da semana 5 días despois do 23 de febreiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:91
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 17 days before August 16th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
 msgstr "Atopa o día da semana 17 días antes do 16 de agosto."
 
 #: activities/find_the_day/find_the_day_dataset.js:112
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 weeks and 3 days after January 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
 msgstr "Atopa a data 2 semanas e 3 días despois do 12 de xaneiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:116
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgstr "Atopa a data 3 semanas e 2 días despois do 22 de marzo."
 
 #: activities/find_the_day/find_the_day_dataset.js:120
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 5 weeks and 6 days after October 5th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 weeks and 6 days after October 5th."
 msgstr "Atopa a data 5 semanas e 6 días despois do 5 de outubro."
 
 #: activities/find_the_day/find_the_day_dataset.js:124
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 1 week and 1 day before August 8th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
 msgstr "Atopa a data 1 semana e 1 día antes do 8 de agosto."
 
 #: activities/find_the_day/find_the_day_dataset.js:128
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgstr "Atopar a data 2 semanas e 5 días antes do 2 de xullo."
 
 #: activities/find_the_day/find_the_day_dataset.js:148
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgstr "Atopa o día da semana 5 meses e 2 días despois do 3 de xullo."
 
 #: activities/find_the_day/find_the_day_dataset.js:152
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgstr "Atopa o día da semana 2 meses e 4 días despois do 8 de outubro."
 
 #: activities/find_the_day/find_the_day_dataset.js:156
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgstr "Atopa o día da semana 1 mes e 3 días antes do 28 de decembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:160
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgstr "Atopa o día da semana 8 meses e 7 días despois do 28 de febreiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:164
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgstr "Atopa o día da semana 3 meses e 3 días antes do 15 de setembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:183
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgstr "Atopa a data 2 meses, 1 semana e 5 días despois do 12 de xaneiro."
 
 #: activities/find_the_day/find_the_day_dataset.js:187
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgstr "Atopa a data 3 meses, 2 semanas e 1 día despois do 23 de agosto."
 
 #: activities/find_the_day/find_the_day_dataset.js:191
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgstr "Atopa a data 5 meses, 3 semanas e 2 días despois do 20 de marzo."
 
 #: activities/find_the_day/find_the_day_dataset.js:195
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgstr "Atopa a data 1 mes, 1 semana e 1 día antes do 10 de setembro."
 
 #: activities/find_the_day/find_the_day_dataset.js:199
-#, fuzzy
-#| msgctxt "find_the_day_dataset|"
-#| msgid "Find the date 2 months, 1 week and 8 days before April 7th."
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 8 days before April 7th."
 msgstr "Atopa a data 2 meses, 1 semana e 8 días antes do 7 de abril."
@@ -9491,56 +9077,41 @@ msgstr "Lanza a bóla tras o gardameta da dereita."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag a line from the ball, to set its speed and direction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag a line from the ball to set its speed and direction, and release it to "
 "kick the ball."
 msgstr ""
-"Arrastra unha liña desde a bóla para determinar a súa velocidade e dirección."
+"Arrastra unha liña desde a bóla para determinar a súa velocidade e "
+"dirección, e sóltaa para golpear a bóla."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation"
 msgctxt "ActivityInfo|"
 msgid "Create the fractions"
-msgstr "Practicar a operación de resta"
+msgstr "Crear as fraccións"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "Na pantalla amósase unha forma dividida en partes iguais."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Arrastra os números e operadores axeitados ás caixas para obter o número "
-"para adiviñar das instrucións."
+msgstr "Escolle o número de partes axeitado segundo as instrucións."
 
 #: activities/fractions_create/fractions_create.js:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Spatial representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Representación espacial"
+msgstr "Atopa a fracción representada."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Fraccións simplificadas cun círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9548,78 +9119,63 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Selecciona unha metade do círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona un terzo do círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Seleccione o cuarto domingo do mes indicado"
+msgstr "Selecciona dous terzos do círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Selecciona a bolboreta da cor correcta."
+msgstr "Selecciona un cuarto do círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona dous quintos do círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Selecciona un círculo e un cuarto de círculo."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Selecciona un círculo e dous quintos doutro."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Selecciona un círculo e un terzo doutro."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Selecciona un círculo e a metade doutro."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Selecciona un círculo e tres cuartos doutro."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Responde ás preguntas cunha corrección do 100%."
+msgstr "Preguntas específicas cun cadrado."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
@@ -9627,278 +9183,199 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
 msgstr ""
+"Seleccione todas as partes que poidas sen seleccionar máis da metade do "
+"cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Responde ás preguntas cunha corrección do 100%."
+msgstr "Fraccións simplificadas cun cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Selecciona a bolboreta da cor correcta."
+msgstr "Selecciona unha metade do cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona un terzo do cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Seleccione o cuarto domingo do mes indicado"
+msgstr "Selecciona dous terzos do cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Selecciona a bolboreta da cor correcta."
+msgstr "Selecciona un cuarto do cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona dous quintos do cadrado."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Selecciona a bolboreta da cor correcta."
+msgstr "Selecciona un cadrado e un cuarto doutro."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona un cadrado e dous quintos doutro."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona un cadrado e un terzo doutro."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Selecciona a bolboreta da cor correcta."
+msgstr "Selecciona un cadrado e a metade doutro."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Selecciona a bolboreta da cor correcta."
+msgstr "Selecciona un cadrado e tres cuartos doutro."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Fraccións non simplificadas cun círculo."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona tres quintos do círculo."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Fraccións non simplificadas cun cadrado."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Selecciona o quinto xoves do mes indicado"
+msgstr "Selecciona tres quintos do cadrado."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Sistema de numeración binario."
+msgstr "Números decimais cun círculo."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,5 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Seleccionar 0,25 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,4 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Seleccionar 0,75 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,8 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Seleccionar 1,25 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Seleccionar 1,4 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Seleccionar 1,5 círculos."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Seleccionar 1,75 círculos."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Sistema de numeración binario."
+msgstr "Números decimais cun cadrado."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,5 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,25 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,4 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,75 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Seleccionado"
+msgstr "Seleccionar 0,8 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Seleccionado"
+msgstr "Seleccionar 1,25 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Seleccionado"
+msgstr "Seleccionar 1,4 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Seleccionado"
+msgstr "Seleccionar 1,5 cadrados."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Seleccionado"
+msgstr "Seleccionar 1,75 cadrados."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Porcentaxes cun círculo."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -9909,17 +9386,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 1"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Selecciona o día 1"
+msgstr "Seleccionar un %1% do círculo."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Porcentaxes cun cadrado."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -9928,17 +9403,15 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select day 1"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Selecciona o día 1"
+msgstr "Seleccionar un %1% do cadrado."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Preguntas específicas cun círculo."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
@@ -9946,69 +9419,51 @@ msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
 msgstr ""
+"Seleccione todas as partes que poidas sen seleccionar máis da metade do "
+"círculo."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "ActivityInfo|"
 msgid "Find the fractions"
-msgstr "Atopa o acordeón"
+msgstr "Atopa as fraccións"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Atopa a data correcta e selecciónaa no calendario."
+msgstr ""
+"Atopa o denominador e numerador correctos para a fracción representada."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Catro en liña (cun amigo)"
+msgstr "Atopar o numerador (cun círculo)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Catro en liña (cun amigo)"
+msgstr "Atopar o numerador (cun cadrado)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Muíño (cunha amiga ou amigo)"
+msgstr "Atopar o denominador (cun círculo)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Muíño (cunha amiga ou amigo)"
+msgstr "Atopar o denominador (cun cadrado)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Atopar o numerador e o denominador (cun círculo)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Muíño (cunha amiga ou amigo)"
+msgstr "Atopar o numerador e o denominador (cun cadrado)."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10018,59 +9473,39 @@ msgstr "Atopa a rexión"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to redraw the whole country"
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the regions to complete the country maps."
-msgstr "Arrastra e solta as rexións para debuxar de novo o país completo."
+msgstr "Arrastra e solta as rexións para completar os mapas de países."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop different regions of the country to correct locations to "
-#| "redraw the whole country."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop different regions of the country to their correct locations to "
 "complete the map."
 msgstr ""
-"Arrastra e solta distintas rexións do país aos lugares correctos para "
-"debuxar de novo todo o país."
+"Arrastra e solta distintas rexións do país nas súas localizacións para "
+"completar o mapa."
 
 #: activities/geo-country/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Counties of Norway"
 msgctxt "Data|"
 msgid "Countries of America."
-msgstr "Condados de Noruega"
+msgstr "Países de América."
 
 #: activities/geo-country/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Counties of Norway"
 msgctxt "Data|"
 msgid "Countries of Asia."
-msgstr "Condados de Noruega"
+msgstr "Países de Asia."
 
 #: activities/geo-country/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Counties of Brazil"
 msgctxt "Data|"
 msgid "Countries of Oceania."
-msgstr "Condados do Brasil"
+msgstr "Países de Oceanía."
 
 #: activities/geo-country/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Counties of Norway"
 msgctxt "Data|"
 msgid "Countries of Europe."
-msgstr "Condados de Noruega"
+msgstr "Países de Europa."
 
 #: activities/geo-country/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -10081,85 +9516,70 @@ msgstr "Estados Unidos de América"
 #: activities/geo-country/resource/board/board10_0.qml:24
 msgctxt "board10_0|"
 msgid "Washington"
-msgstr ""
+msgstr "Washington"
 
 #. State of America: Oregon
 #: activities/geo-country/resource/board/board10_0.qml:31
 msgctxt "board10_0|"
 msgid "Oregon"
-msgstr ""
+msgstr "Oregón"
 
 #. State of America: Idaho
 #: activities/geo-country/resource/board/board10_0.qml:38
 msgctxt "board10_0|"
 msgid "Idaho"
-msgstr ""
+msgstr "Idaho"
 
 #. State of America: Montana
 #: activities/geo-country/resource/board/board10_0.qml:45
 msgctxt "board10_0|"
 msgid "Montana"
-msgstr ""
+msgstr "Montana"
 
 #. State of America: North Dakota
 #: activities/geo-country/resource/board/board10_0.qml:52
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "North Korea"
 msgctxt "board10_0|"
 msgid "North Dakota"
-msgstr "Corea do Norte"
+msgstr "Dakota do Norte"
 
 #. State of America: South Dakota
 #: activities/geo-country/resource/board/board10_0.qml:59
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "South Korea"
 msgctxt "board10_0|"
 msgid "South Dakota"
-msgstr "Corea do Sur"
+msgstr "Dakota do Sur"
 
 #. State of America: Nebraska
 #: activities/geo-country/resource/board/board10_0.qml:66
 msgctxt "board10_0|"
 msgid "Nebraska"
-msgstr ""
+msgstr "Nebraska"
 
 #. State of America: Kansas
 #: activities/geo-country/resource/board/board10_0.qml:73
 msgctxt "board10_0|"
 msgid "Kansas"
-msgstr ""
+msgstr "Kansas"
 
 #. State of America: Colorado
 #: activities/geo-country/resource/board/board10_0.qml:80
-#, fuzzy
-#| msgctxt "category_colors|"
-#| msgid "Colors"
 msgctxt "board10_0|"
 msgid "Colorado"
-msgstr "Cores"
+msgstr "Colorado"
 
 #. State of America: New Mexico
 #: activities/geo-country/resource/board/board10_0.qml:87
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Mexico"
 msgctxt "board10_0|"
 msgid "New Mexico"
-msgstr "México"
+msgstr "Novo México"
 
 #. State of America: Arizona
 #: activities/geo-country/resource/board/board10_0.qml:94
 msgctxt "board10_0|"
 msgid "Arizona"
-msgstr ""
+msgstr "Arizona"
 
 #. State of America: Alaska
 #: activities/geo-country/resource/board/board10_0.qml:101
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Alaska"
 msgctxt "board10_0|"
 msgid "Alaska"
 msgstr "Alasca"
@@ -10174,258 +9594,228 @@ msgstr "Havai"
 #: activities/geo-country/resource/board/board10_0.qml:115
 msgctxt "board10_0|"
 msgid "Texas"
-msgstr ""
+msgstr "Texas"
 
 #. State of America: Oklahoma
 #: activities/geo-country/resource/board/board10_0.qml:122
 msgctxt "board10_0|"
 msgid "Oklahoma"
-msgstr ""
+msgstr "Oklahoma"
 
 #. State of America: Minnesota
 #: activities/geo-country/resource/board/board10_0.qml:129
 msgctxt "board10_0|"
 msgid "Minnesota"
-msgstr ""
+msgstr "Minnesota"
 
 #. State of America: Iowa
 #: activities/geo-country/resource/board/board10_0.qml:136
 msgctxt "board10_0|"
 msgid "Iowa"
-msgstr ""
+msgstr "Iowa"
 
 #. State of America: Missouri
 #: activities/geo-country/resource/board/board10_0.qml:143
 msgctxt "board10_0|"
 msgid "Missouri"
-msgstr ""
+msgstr "Missouri"
 
 #. State of America: Arkansas
 #: activities/geo-country/resource/board/board10_0.qml:150
 msgctxt "board10_0|"
 msgid "Arkansas"
-msgstr ""
+msgstr "Arkansas"
 
 #. State of America: Louisiana
 #: activities/geo-country/resource/board/board10_0.qml:157
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Tunisia"
 msgctxt "board10_0|"
 msgid "Louisiana"
-msgstr "Tunisia"
+msgstr "Louisiana"
 
 #. State of America: Mississippi
 #: activities/geo-country/resource/board/board10_0.qml:164
 msgctxt "board10_0|"
 msgid "Mississippi"
-msgstr ""
+msgstr "Mississippi"
 
 #. State of America: Tennessee
 #: activities/geo-country/resource/board/board10_0.qml:171
 msgctxt "board10_0|"
 msgid "Tennessee"
-msgstr ""
+msgstr "Tennessee"
 
 #. State of America: Kentucky
 #: activities/geo-country/resource/board/board10_0.qml:178
 msgctxt "board10_0|"
 msgid "Kentucky"
-msgstr ""
+msgstr "Kentucky"
 
 #. State of America: Indiana
 #: activities/geo-country/resource/board/board10_0.qml:185
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "India"
 msgctxt "board10_0|"
 msgid "Indiana"
-msgstr "India"
+msgstr "Indiana"
 
 #. State of America: Illinois
 #: activities/geo-country/resource/board/board10_0.qml:192
 msgctxt "board10_0|"
 msgid "Illinois"
-msgstr ""
+msgstr "Illinois"
 
 #. State of America: Wisconsin
 #: activities/geo-country/resource/board/board10_0.qml:199
 msgctxt "board10_0|"
 msgid "Wisconsin"
-msgstr ""
+msgstr "Wisconsin"
 
 #. State of America: Michigan
 #: activities/geo-country/resource/board/board10_0.qml:206
 msgctxt "board10_0|"
 msgid "Michigan"
-msgstr ""
+msgstr "Michigan"
 
 #. State of America: Ohio
 #: activities/geo-country/resource/board/board10_0.qml:213
 msgctxt "board10_0|"
 msgid "Ohio"
-msgstr ""
+msgstr "Ohio"
 
 #. State of America: West Virginia
 #: activities/geo-country/resource/board/board10_0.qml:220
 msgctxt "board10_0|"
 msgid "West Virginia"
-msgstr ""
+msgstr "Virxinia do Oeste"
 
 #. State of America: Virginia
 #: activities/geo-country/resource/board/board10_0.qml:227
 msgctxt "board10_0|"
 msgid "Virginia"
-msgstr ""
+msgstr "Virxinia"
 
 #. State of America: North Carolina
 #: activities/geo-country/resource/board/board10_0.qml:234
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "North America"
 msgctxt "board10_0|"
 msgid "North Carolina"
-msgstr "América do Norte"
+msgstr "Carolina do Norte"
 
 #. State of America: South Carolina
 #: activities/geo-country/resource/board/board10_0.qml:241
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board10_0|"
 msgid "South Carolina"
-msgstr "Sudáfrica"
+msgstr "Carolina do Sur"
 
 #. State of America: Georgia
 #: activities/geo-country/resource/board/board10_0.qml:248
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Asia|Georgia"
 msgctxt "board10_0|"
 msgid "Georgia"
 msgstr "Xeorxia"
 
 #. State of America: Florida
 #: activities/geo-country/resource/board/board10_0.qml:255
-#, fuzzy
-#| msgctxt "Calendar|"
-#| msgid "Friday"
 msgctxt "board10_0|"
 msgid "Florida"
-msgstr "Venres"
+msgstr "Florida"
 
 #. State of America: Alabama
 #: activities/geo-country/resource/board/board10_0.qml:262
 msgctxt "board10_0|"
 msgid "Alabama"
-msgstr ""
+msgstr "Alabama"
 
 #. State of America: Maryland
 #: activities/geo-country/resource/board/board10_0.qml:269
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Ireland"
 msgctxt "board10_0|"
 msgid "Maryland"
-msgstr "Irlanda"
+msgstr "Maryland"
 
 #. State of America: New Jersey
 #: activities/geo-country/resource/board/board10_0.qml:276
 msgctxt "board10_0|"
 msgid "New Jersey"
-msgstr ""
+msgstr "Nova Jersey"
 
 #. State of America: Delaware
 #: activities/geo-country/resource/board/board10_0.qml:283
 msgctxt "board10_0|"
 msgid "Delaware"
-msgstr ""
+msgstr "Delaware"
 
 #. State of America: Pennsylvania
 #: activities/geo-country/resource/board/board10_0.qml:290
 msgctxt "board10_0|"
 msgid "Pennsylvania"
-msgstr ""
+msgstr "Pennsylvania"
 
 #. State of America: New York
 #: activities/geo-country/resource/board/board10_0.qml:297
 msgctxt "board10_0|"
 msgid "New York"
-msgstr ""
+msgstr "Nova York"
 
 #. State of America: Vermont
 #: activities/geo-country/resource/board/board10_0.qml:304
 msgctxt "board10_0|"
 msgid "Vermont"
-msgstr ""
+msgstr "Vermont"
 
 #. State of America: New Hampshire
 #: activities/geo-country/resource/board/board10_0.qml:311
 msgctxt "board10_0|"
 msgid "New Hampshire"
-msgstr ""
+msgstr "New Hampshire"
 
 #. State of America: Maine
 #: activities/geo-country/resource/board/board10_0.qml:318
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Ukraine"
 msgctxt "board10_0|"
 msgid "Maine"
-msgstr "Ucraína"
+msgstr "Maine"
 
 #. State of America: California
 #: activities/geo-country/resource/board/board10_0.qml:325
 msgctxt "board10_0|"
 msgid "California"
-msgstr ""
+msgstr "California"
 
 #. State of America: Nevada
 #: activities/geo-country/resource/board/board10_0.qml:332
 msgctxt "board10_0|"
 msgid "Nevada"
-msgstr ""
+msgstr "Nevada"
 
 #. State of America: Utah
 #: activities/geo-country/resource/board/board10_0.qml:339
 msgctxt "board10_0|"
 msgid "Utah"
-msgstr ""
+msgstr "Utah"
 
 #. State of America: Wyoming
 #: activities/geo-country/resource/board/board10_0.qml:346
 msgctxt "board10_0|"
 msgid "Wyoming"
-msgstr ""
+msgstr "Wyoming"
 
 #. State of America: Massachusetts
 #: activities/geo-country/resource/board/board10_0.qml:353
 msgctxt "board10_0|"
 msgid "Massachusetts"
-msgstr ""
+msgstr "Massachusetts"
 
 #. State of America: Rhode Island
 #: activities/geo-country/resource/board/board10_0.qml:360
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Cook Islands"
 msgctxt "board10_0|"
 msgid "Rhode Island"
-msgstr "Illas Cook"
+msgstr "Rhode Island"
 
 #. State of America: Connecticut
 #: activities/geo-country/resource/board/board10_0.qml:367
 msgctxt "board10_0|"
 msgid "Connecticut"
-msgstr ""
+msgstr "Connecticut"
 
 #: activities/geo-country/resource/board/board11_0.qml:15
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Districts of Italy"
 msgctxt "board11_0|"
 msgid "Regions of Italy"
-msgstr "Distritos de Italia"
+msgstr "Rexións de Italia"
 
 #. Region of Italy: Liguria
 #: activities/geo-country/resource/board/board11_0.qml:24
