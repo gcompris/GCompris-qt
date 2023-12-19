@@ -1,0 +1,145 @@
+{
+  "levels": [
+    {
+      "objective": "Pronađi imenice i glagole.",
+      "difficulty": "1",
+      "exercise": "dbA",
+      "goal": "im gl"
+    },
+    {
+      "objective": "Pronađi imenice, glagole i pridjeve.",
+      "difficulty": "2",
+      "exercise": "dbB",
+      "goal": "im gl pr"
+    },
+    {
+      "objective": "Pronađi tražene vrste riječi.",
+      "difficulty": "3",
+      "exercise": "dbC",
+      "goal": "im gl pr pj pl za ve br us"
+    }
+  ],
+  "dataset" : {
+    "dbA" : [
+      { "sentence": "Mačak mirno leži na suncu."
+      , "answer":   "im    pl    gl   ve im    "
+      },
+      { "sentence": "U trgovini (sam vidio) puno igračaka."
+      , "answer":   "pj im      gl          pl   im       "
+      },
+      { "sentence": "Škljoc! Zaključao si vrata."
+      , "answer":   "us      gl        za im    "
+      },
+      { "sentence": "Pazim kad prelazim cestu."
+      , "answer":   "gl    ve  gl       im    "
+      },
+      { "sentence": "Ivana plače."
+      , "answer":   "im    gl    "
+      },
+      { "sentence": "(Obećao si) ići kupiti novine."
+      , "answer":   "gl          gl  gl     im     "
+      },
+      { "sentence": "(Ubrao sam) joj lijepe bijele visibabe."
+      , "answer":   "gl          za  pr     pr     im       "
+      }
+    ],
+    "dbB" : [
+      { "sentence": "Mačka (je bila) prljava."
+      , "answer":   "im    gl        pr      "
+      },
+      { "sentence": "Uživam gledati raznobojno jesensko lišće."
+      , "answer":   "gl     gl      pr         pr       im    "
+      },
+      { "sentence": "Nekako mislim da toplo ljeto prolazi."
+      , "answer":   "pl     gl     ve pr    im    gl      "
+      },
+      { "sentence": "Čudesna šuma nije još pronađena."
+      , "answer":   "pr      im   gl   pl  gl        "
+      },
+      { "sentence": "Ova juha je još topla."
+      , "answer":   "za  im   gl pl  pr    "
+      },	  
+      { "sentence": "Brzo plivam nazad kad vidim sladoledara na plaži."
+      , "answer":   "pr   gl     pl    pl  gl    im          pj im    "
+      },	  
+      { "sentence": "(Kupio sam) joj žute i crvene tulipane."
+      , "answer":   "gl          za  pr   ve pr    im       "
+      }
+    ],
+    "dbC" : [
+      { "sentence": "Karta za kino (koštala je) pet eura i deset centi."
+      , "answer":   "im    pj im    gl          br  im   ve br   im    "
+      },
+      { "sentence": "Učenici rado pišu zadaće tijekom produženog boravka u školi."
+      , "answer":   "im      pl   gl   im     pj      pr         im      pj im   "
+      },
+      { "sentence": "Moj sin voli nogomet te svaki tjedan ide dva puta na trening."
+      , "answer":   "za  im  gl   im      ve za    im     gl  br  pl   pj im      "
+      },
+      { "sentence": "Jedemo uvijek u dvanaest sati."
+      , "answer":   "gl     pl     pj br      im  "
+      },
+      { "sentence": "Nekad sam zimi pio čaj s medom i limunom."
+      , "answer":   "pl    gl  pl   gl  im  pj im   ve im     "
+      },
+      { "sentence": "Na selu uvijek kriomice berem jagode."
+      , "answer":   "pj im   pl     pl       gl    im     "
+      },
+      { "sentence": "Slušaj! Vau-vau. To je naš Bobi."
+      , "answer":   "gl      us       za gl za  im   "
+      }	  
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "im",
+      "wordClass": "imenica",
+      "image": "1.svg"
+    },
+    {
+      "code": "za",
+      "wordClass": "zamjenica",
+      "image": "2.svg"
+    },
+    {
+      "code": "pr",
+      "wordClass": "pridjev",
+      "image": "3.svg"
+    },
+    {
+      "code": "br",
+      "wordClass": "broj",
+      "image": "4.svg"
+    },
+    {
+      "code": "gl",
+      "wordClass": "glagol",
+      "image": "5.svg"
+    },
+    {
+      "code": "pl",
+      "wordClass": "prilog",
+      "image": "6.svg"
+    },
+    {
+      "code": "pj",
+      "wordClass": "prijedlog",
+      "image": "7.svg"
+    },
+    {
+      "code": "ve",
+      "wordClass": "veznik",
+      "image": "8.svg"
+    },
+    {
+      "code": "če",
+      "wordClass": "čestica",
+      "image": "9.svg"
+    },
+    {
+      "code": "us",
+      "wordClass": "usklik",
+      "image": "10.svg"
+    }
+  ]
+}
