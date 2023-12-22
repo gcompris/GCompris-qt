@@ -1,6 +1,6 @@
 # Jazeix Johnny <jazeix@gmail.com>, 2017.
 # Timothée Giet <animtim@gmail.com>, 2020.
-# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021, 2022.
+# Xavier Besnard <xavier.besnard@kde.org>, 2020, 2021, 2022.
 # charruau <echarruau@gmail.com>, 2023.
 msgid ""
 msgstr ""

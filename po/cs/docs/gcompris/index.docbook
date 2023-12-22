@@ -1,0 +1,665 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Czech "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Administrační příručka &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Tým &gcompris;</othername>
+<contrib
+>Vývojáři</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Jan</firstname
+><surname
+>Papež</surname
+><affiliation
+><address
+><email
+>honyczek@centrum.cz</email
+></address
+></affiliation
+><contrib
+>Překlad</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2023-06-06</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>3.3</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; je vzdělávací software s mnoha aktivitami. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>vzdělávání</keyword>
+<keyword
+>děti</keyword>
+<keyword
+>hry</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Administrační příručka</title>
+
+<sect1 id="introduction">
+<title
+>Úvod</title>
+<para
+>&gcompris; je vysoce kvalitní vzdělávací softwarový balík, skládající se z mnoha aktivit.</para>
+<para
+>Nabízí různé aktivity zaměřené na pokrytí rozličných oblastí. Témata zahrnují čtení a psaní, aritmetiku, zeměpis, vědu a další. Je možné jej používat jak doma, tak ve škole.</para>
+<para
+>Záměrem &gcompris;u je poskytnutí hravých aktivit, které jsou vždy vzdělávací.</para>
+<para
+>&gcompris; je součástí projektu &kde; a je pokrytý <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>licencí AGPLv3</ulink
+>. Veškerý kód, vyjma enginu pro aktivitu analogové elektřiny, je pokrytý <ulink url="https://www.gnu.org/licenses/gpl.html"
+>licencí GPLv3</ulink
+>.</para>
+<para
+>&gcompris; je dostupný pro tyto operační systémy: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Vyžaduje grafickou kartu podporující <emphasis
+>OpenGL 2.1</emphasis
+> nebo vyšší. Nezbytná je 32 bitová barevná hloubka.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Instalace</title>
+<para
+>Tento software je doručován různými formami. Sledujte pokyny odpovídající vaší situaci. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: použijte balíčky doručované vaší distribucí &GNU;/&Linux;u. Pokud &gcompris; není pro vaši distribuci &Linux;u zabalený, kontaktujte tým vydávající vaši distribuci &Linux;u, aby &gcompris; do ní zahrnul.</para
+></listitem>
+<listitem
+><para
+>&Windows;: doručení pomocí klasického instalátoru pro &Windows; nebo skrze obchod Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX: doručení pomocí klasického instalátoru.</para
+></listitem>
+<listitem
+><para
+>Android: doručení pomocí obchodu F-Droid nebo obchodu Google Play.  K dispozici je také soubor apk.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Uživatelské rozhraní</title>
+<para
+>Rozhraní je navrženo pro snadně použití malými dětmi. &gcompris; je  ovládaný myší. Také je ve většině aktivit dostupná navigace pomocí  klávesnice.</para>
+
+<sect2 id="main-window">
+<title
+>Hlavní okno</title>
+<para
+>Po spuštění programu &gcompris; se zobrazí grafické rozhraní, které  nabízí seznam aktivit a pod ním je naspodu ovládací lišta.</para>
+<screenshot>
+<screeninfo
+>Toto je snímek hlavního okna &gcompris;u</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Hlavní okno &gcompris;u</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Každá ikona představuje nějakou aktivitu. Kolem ikony ještě najdete menší  ikony, které podávají další informace o aktivitě. Jednoduché kliknutí na  ikonu otevře danou aktivitu nebo nabídku aktivit. V horní nebo levé části  obrazovky (záleží, zda je orientace obrazovky na portrét) naleznete 8 oddílů  (kategorií). Například je zde kategorie "Stolní hry", která obsahuje stolní  hry jako šachy, piškvorky nebo zarovnej čtyři.</para>
+<para
+>Některé z kategorií mají podkategorie pro lepší filtrování aktivit. Pro matematické  aktivity tu máme 3 podkategorie: Číslování, výpočty a míry.</para>
+<para
+>Počet hvězd u aktivity říká pro jakou věkovou skupinu je aktivita určena:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 nebo 3 žluté hvězdy - pro 2 až 6 leté děti. </para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 nebo 3 červené hvězdy - pro 6 leté děti a starší.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Na spodní straně obrazovky je ovládací lišta &gcompris;u. Zobrazují se  zde (pokud jsou pro danou aktivitu dostupné) následující ikony:</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Domů - Opustí současnou aktivitu a vrátí se zpět do předchozí nabídky.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "OK" - Ověřit, potvrdit tvoji odpověď. Některé aktivity nedetekují  automaticky zda dítě již dokončilo úkol nebo ne. V takovém případě  musíš klepnout na tuto ikonu. Také můžeš použít klávesu &Enter; na tvojí klávesnici.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Žárovka - Zobrazí nápovědu pro danou aktivitu. V některých aktivitách  je možné dětem pomoci, aby našly správné odpovědi.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Šipky - Mezi šipkami je zobrazena aktuální úroveň. Klepnutím na jednu  z těchto šipek vyberete jinou úroveň. Obecně aktivity nabízí několik úrovní  jejichž počet záleží na dané aktivitě. V &gcompris;u je možné přejít na další  úroveň aniž by byla dokončena současná úroveň.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Rty - Požádat &gcompris; o zopakování otázky.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Otazník - Zobrazit dialog s nápovědou. Někdy mohou být aktivity příliš komplexní  na to, aby byly snadno vysvětlené v oblasti pro popis. V takovém případě je možné  pomocí funkce otazníku zobrazit dodatečné informace.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Nářadí - Konfigurační nabídka. Konfigurace je uložena v uživatelském  repozitáři (adresáři) pod názvem <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>.  Tento textový soubor můžete upravovat i ručně.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Položky seznamu - Zobrazit nabídku nastavení aktivity. Existují dvě záložky.  První je "Soubor dat", který umožňuje vybrat úrovně aktivit v závislosti  na různých okolnostech. A druhá je Možnosti, která v závislosti na vybrané  aktivitě umožňuje aktualizovat její konfiguraci. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Velké písmeno "G" - Informační rámeček &gcompris;u, zobrazuje hlavní  přispěvatele a verzi softwaru.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Napájení - Ukončit &gcompris;. Také můžeš použít klávesovou zkratku <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Režim kiosku</title>
+<para
+>Pokud &gcompris; používají malé děti nebo je spuštěný na samoobslužném  kiosku, můžete v něm zakázat určitý počet možností:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : zakázat tlačítka <guiicon
+>Ukončit</guiicon
+> a <guiicon
+>Konfigurace</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : povolit tlačítka <guiicon
+>Ukončit</guiicon
+> a <guiicon
+>Konfigurace</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> : spustit &gcompris;  v režimu celé obrazovky</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+> : zakázat kursor (režim dotykové obrazovky)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Tyto volby mohou být samozřejmě kombinovány.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Klávesové zkratky</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Zkratka</entry>
+<entry
+>Akce</entry>
+</row>
+<row>
+<entry
+>&Esc; nebo <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Ukončit současnou aktivitu nebo dialog pro návrat do hlavní nabídky.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Ukončit &gcompris; bez dalšího upozornění.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Přepnout režim celé obrazovky.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Přepnout ztlumení zvuku.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Zobrazit nebo skrýt ovládací lištu.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Poznámky o internacionalizaci</title>
+<para
+>&gcompris; je internacionalizovaný a dostupný ve více než 35 jazycích. Pokud  chceš zjistit, zda je tvůj jazyk dostupný, můžeš spustit &gcompris; a vybrat  tvůj jazyk ve volbách konfigurace.</para>
+<para
+>Pozor, některé jazyky vyžadují pro své správné zobrazení specifické fonty. </para
+> 
+<para
+>Pokud tvůj jazyk není podporován, můžeš přispět k tomuto softwaru a přidat  překlad svého jazyka. Pokud tě to zaujalo, můžeš kontaktovat <ulink  url="https://l10n.kde.org/teams"
+>překladatelský tým</ulink
+> tvého jazyka  v projektu &kde;. Úroveň překladu tvého jazyka můžeš zkontrolovat na  <ulink url="https://l10n.kde.org/"
+>překladatelské stránce &kde;</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Výuka jazyka</title>
+<para
+>Pokud se učíš cizí jazyk, můžeš &gcompris; používat v daném jazyce. Cizí jazyk si můžeš vybrat v nabídce konfigurace. Nezapomeň si pro tento jazyk stáhnout  volitelné audio moduly.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Úprava aktivit</title>
+<para
+>Některé aktivity můžeš upravovat za použití jejich tlačítka konfigurace. Například  můžeš nastavit místní jazyk v některých aktivitách s textem (jako je hra se slovy)  nebo můžeš si zobrazit obrázky skutečných aut namísto vyplněných obdélníků  (hra s posouváním bloků).</para>
+
+<para
+>Pro několik aktivit si můžeš v konfiguraci vybrat různé datové sady. Každá má nějaké určité cíle, které jsou popsány.</para>
+<screenshot>
+<screeninfo
+>Datová sada aktivity "Spočítej položky"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Datová sada aktivity "Spočítej položky"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Pro tuto aktivitu můžeš nastavit volby.</para>
+<screenshot>
+<screeninfo
+>Vyber režim aktivity "Spočítej položky"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Vyber režim aktivity "Spočítej položky"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Konzolové přepínače</title>
+<para
+>Spuštěním &gcompris; z příkazové konzole s volbou --help si zobrazíš všechny  parametry, které přijímá:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Spustit &gcompris; v režimu celé obrazovky.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Spustit &gcompris; v režimu okna.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Spustit &gcompris; se zapnutým zvukem.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Spustit &gcompris; bez zvuku.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Spustit &gcompris; s výchozím systémovým kurzorem.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Spustit &gcompris; bez kurzoru (režim dotykové obrazovky).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Vytisknout verzi &gcompris;u.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Vypíše všechny dostupné aktivity na standardní výstup.</entry>
+</row>
+<row>
+<entry
+>--launch aktivita</entry>
+<entry
+>Zadání aktivity při spouštění &gcompris;.</entry>
+</row>
+<row>
+<entry
+>--start-level úroveň</entry>
+<entry
+>Zadání úrovně na které začít u zadané aktivity při startu &gcompris; pomocí volby --launch. Volba je ignorována, pokud nebyla zadána volba --launch nebo pokud zadaná úroveň je neplatná.</entry>
+</row>
+<row>
+<entry
+>--difficulty {hodnota|minimum-maximum}</entry>
+<entry
+>Pro dané sezení vynutí nastavení obtížnosti aktivit &gcompris;u na zadanou  hodnotu nebo mezi minimální a maximální hodnoty. Hodnoty musí být mezi  1 a 6. U formátu minimum-maximum musí být minimální hodnota nižší než  ta maximální. Pokud toto není splněno, &gcompris; se nespustí.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Exportuje aktivity jako SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Povolí režim kiosku (skryje tlačítka Ukončit a Konfigurace).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Zakáže režim kiosku (výchozí).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Použije se softwarové vykreslování namísto OpenGL (toto by mělo fungovat  na jakékoliv grafické kartě).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Použít vykreslování OpenGL namísto softwarového (je rychlejší a má více  grafických efektů, ale může na některých grafických kartách havarovat).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Příklad ve &Windows;</title>
+<para
+>Tyto přepínače můžeš přidat do vlastností ikony na ploše. Tady je příklad, který  spustí &gcompris; na celou obrazovku v režimu kiosku bez tlačítka Konfigurace  a kurzoru:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Příklad na &GNU;/&Linux;u</title>
+<para
+>Vytvoř spouštěč aplikace a nakonfiguruj parametry příkazové řádky. Tady  je příklad, který spustí &gcompris; na celou obrazovku v režimu kiosku bez  tlačítka Konfigurace a kurzoru:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Poděkování a licence</title>
+
+<para
+>&gcompris; </para>
+<para
+>Copyright programu 2000-2023 Timothée Giet a další </para>
+
+<para
+>Český překladatelský tým <email
+>kde-i18n-cs@kde.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-12-20 19:17+0100\n"
+"PO-Revision-Date: 2023-12-21 09:39+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -18059,6 +18059,10 @@ msgid ""
 "At the bottom of the screen is the GCompris control bar. Notice that you can "
 "hide or show the bar by touching its anchor."
 msgstr ""
+"Selecciona unha icona para entrar nunha actividade ou para amosar a lista de "
+"actividades dunha categoría.\n"
+"Na parte inferior da pantalla está a barra de control de GCompris. Para "
+"agochar ou amosar a barra toca a súa áncora."
 
 #: activities/menu/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -18066,75 +18070,69 @@ msgid ""
 "The following icons are displayed:\n"
 "(note that each icon is displayed only if available in the current activity)"
 msgstr ""
+"Amósanse as seguintes iconas:\n"
+"(cada icona amósase só se está dispoñíbel na actividade actual)"
 
 #: activities/menu/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Home - Exit an activity, go back to menu (Ctrl+W or Escape key)"
 msgstr ""
+"Inicio — Saír dunha actividade, volver ao menú (Ctrl+W ou a tecla Esc)."
 
 #: activities/menu/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
-msgstr ""
+msgstr "Frechas — Amosar o nivel actual. Premer para seleccionar outro nivel."
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Lips - Repeat the question"
-msgstr ""
+msgstr "Beizos — Repetir a pregunta."
 
 #: activities/menu/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Question Mark - Help"
-msgstr ""
+msgstr "Signo de interrogación — Axuda."
 
 #: activities/menu/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Reload - Start the activity from the beginning again"
-msgstr ""
+msgstr "Recargar — Volver iniciar a actividade desde o principio."
 
 #: activities/menu/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "DialogActivityConfig|"
-#| msgid "%1 configuration"
 msgctxt "ActivityInfo|"
 msgid "Tool - The configuration menu"
-msgstr "Configuración de %1"
+msgstr "Ferramenta — O menú de configuración."
 
 #: activities/menu/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "The activity section menu is visible"
 msgctxt "ActivityInfo|"
 msgid "Three lines - The activity settings menu"
-msgstr "O menú da sección de actividades é visíbel"
+msgstr "Tres liñas — O menú de configuración da actividade."
 
 #: activities/menu/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "DialogAbout|"
-#| msgid "About GCompris"
 msgctxt "ActivityInfo|"
 msgid "G - About GCompris"
-msgstr "Sobre o GCompris"
+msgstr "G — Sobre GCompris."
 
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr ""
+msgstr "Saír — Saír de GCompris (Ctrl+Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "The stars show suitable age groups for each activity:"
-msgstr ""
+msgstr "As estrelas amosan os grupos de idade axeitados para cada actividade:"
 
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 yellow stars - from 2 to 6 years old"
-msgstr ""
+msgstr "1, 2 ou 3 estrelas amarelas: de 2 a 6 anos"
 
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 red stars - 7 years and up"
-msgstr ""
+msgstr "1, 2 ou 3 estrelas vermellas: a partir de 7 anos"
 
 #: activities/menu/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -18142,6 +18140,8 @@ msgid ""
 "If there are two different star icons on an activity, the first one shows "
 "the minimum difficulty, and the second one the maximum difficulty."
 msgstr ""
+"Se hai dúas iconas de estrelas distintas nunha actividade, a primeira indica "
+"a dificultade mínima e a segunda a máxima."
 
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
@@ -18151,17 +18151,17 @@ msgstr "<b>Controis de teclado:</b>"
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr ""
+msgstr "Ctrl+B: Amosar ou agochar a barra de control."
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr ""
+msgstr "Ctrl+F: Conmutar a pantalla completa."
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr ""
+msgstr "Ctrl+S: Conmutar a barra da sección de actividades."
 
 #: activities/menu/BackgroundMusicList.qml:64
 msgctxt "BackgroundMusicList|"
@@ -18208,12 +18208,9 @@ msgid "Copyright: %1"
 msgstr "Dereitos de copia: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtro de dificultade:"
+msgstr "Filtro de dificultade"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18221,12 +18218,9 @@ msgid "Language selector"
 msgstr "Idioma"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Activar a descarga e actualización automática de ficheiros de son"
+msgstr "Activar a descarga e actualización automática de recursos externos"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -18259,12 +18253,9 @@ msgid "Audio effects volume"
 msgstr "Volume dos efectos de son"
 
 #: activities/menu/ConfigurationItem.qml:211
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable background music"
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
-msgstr "Activar a música de fondo"
+msgstr "Descargar a música de fondo"
 
 #: activities/menu/ConfigurationItem.qml:222
 msgctxt "ConfigurationItem|"
@@ -18298,20 +18289,14 @@ msgid "Background music volume"
 msgstr "Volume da música de fondo"
 
 #: activities/menu/ConfigurationItem.qml:305
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Use full word image set"
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
-msgstr "Usar o grupo completo de imaxes de palabras"
+msgstr "O grupo completo de imaxes de palabras está instalado."
 
 #: activities/menu/ConfigurationItem.qml:305
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Use full word image set"
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
-msgstr "Usar o grupo completo de imaxes de palabras"
+msgstr "O grupo completo de imaxes de palabras non está instalado."
 
 #: activities/menu/ConfigurationItem.qml:319
 msgctxt "ConfigurationItem|"
@@ -18336,7 +18321,7 @@ msgstr "O menú da sección de actividades é visíbel"
 #: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Pedir confirmación ao saír"
 
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
@@ -18380,19 +18365,13 @@ msgid "All lowercase"
 msgstr "Todo en minúsculas"
 
 #: activities/menu/Menu.qml:89
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid ""
-#| "You selected a new locale. You need to restart GCompris to play in your "
-#| "new locale.<br/>Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
 "you want to download the corresponding sound files now?"
 msgstr ""
-"Seleccionou unha nova configuración rexional. Debe reiniciar GCompris para "
-"xogar usando a nova configuración rexional.<br/>Quere descargar agora os "
-"ficheiros de son correspondentes?"
+"Seleccionou unha nova configuración rexional, reinicie GCompris para usala."
+"<br/>Quere descargar agora os ficheiros de son correspondentes?"
 
 #: activities/menu/Menu.qml:90
 msgctxt "Menu|"
@@ -18465,18 +18444,13 @@ msgid "Vocabulary"
 msgstr "Vocabulario"
 
 #: activities/menu/Menu.qml:378
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "Put your favorite activities here by selecting the sun at the top right "
-#| "of that activity."
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Para poñer aquí as túas actividades favoritas, selecciona o sol na parte "
-"superior dereita da actividade."
+"Para poñer aquí as túas actividades favoritas, preme o sol na parte superior "
+"dereita da actividade."
 
 #: activities/menu/Menu.qml:781
 msgctxt "Menu|"
@@ -18486,7 +18460,7 @@ msgstr "Buscar actividades específicas"
 #: activities/menu/Menu.qml:808
 msgctxt "Menu|"
 msgid "Activity Settings"
-msgstr ""
+msgstr "Configuración da actividade"
 
 #. Activity title
 #: activities/mining/ActivityInfo.qml:15
@@ -18524,6 +18498,10 @@ msgid ""
 "reach the maximum zoom level, a gold nugget will appear at the position of "
 "the sparkle. Click on the gold nugget to collect it."
 msgstr ""
+"Mirando á parede rochosa, verás unha chispa en algures. Móvete canda ela e "
+"usa a roda do rato ou o xesto de ampliar para ampliar. Cando chegues ao "
+"nivel máximo de ampliación, aparecerá unha peza de ouro onde estaba a "
+"chispa. Preme a peza de ouro para recollela."
 
 #: activities/mining/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -18533,6 +18511,10 @@ msgid ""
 "appear, showing the next gold nugget to collect. Collect enough nuggets to "
 "complete the level."
 msgstr ""
+"Tras recoller a peza, usa a roda do rato ou o xesto de pinchar para "
+"afastarte de novo. Cando chegues ao nivel mínimo de ampliación, aparecerá "
+"outra chispa indicando a seguinte peza para recoller. Recolle pezas dabondo "
+"para completar o nivel."
 
 #: activities/mining/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -18541,22 +18523,25 @@ msgid ""
 "of already collected nuggets and the total number of nuggets to collect in "
 "this level."
 msgstr ""
+"O carro da esquina inferior dereita indicaralle o número de pezas xa "
+"recollidas e o número total delas para recoller neste nivel."
 
 #: activities/mining/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
 msgstr ""
+"Grazas ao equipo de Tuxpaint por forneces os seguintes sons con licenza GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "realrainbow.ogg - used when a new gold nugget appears"
-msgstr ""
+msgstr "realrainbow.ogg — Úsase cando aparece unha nova peza de ouro."
 
 #: activities/mining/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
-msgstr ""
+msgstr "metalpaint.wav — Modificouse e úsase ao recoller unha peza de ouro."
 
 #: activities/mining/Mining.qml:407
 msgctxt "Mining|"
@@ -18622,7 +18607,7 @@ msgstr "Letra desaparecida"
 #: activities/missing-letter/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Find the missing letter to complete the word."
-msgstr ""
+msgstr "Atopa a letra que falta para completar a palabra."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
@@ -18638,19 +18623,15 @@ msgstr "Lectura de palabras."
 
 #. Help manual
 #: activities/missing-letter/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An object is displayed in the main area, and an incomplete word is "
-#| "printed under the picture. Select the missing letter to complete the word."
 msgctxt "ActivityInfo|"
 msgid ""
 "A picture is displayed in the main area, and an incomplete word is written "
 "under the picture. Click on the missing letter to complete the word, or type "
 "the letter on your keyboard."
 msgstr ""
-"Mostrarase un obxecto na zona principal e unha palabra incompleta debaixo do "
-"debuxo. Selecciona a letra que falta para completar a palabra."
+"Amosarase unha imaxe na zona principal e unha palabra incompleta debaixo do "
+"debuxo. Preme a letra que falta para completar a palabra ou escribe a letra "
+"co teclado."
 
 #: activities/missing-letter/MissingLetter.qml:317
 msgctxt "MissingLetter|"
@@ -18690,19 +18671,13 @@ msgstr "Practica o uso do diñeiro."
 
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You must buy the different items and give the exact price. At higher "
-#| "levels, several items are displayed, and you must first calculate the "
-#| "total price."
 msgctxt "ActivityInfo|"
 msgid ""
 "You must buy different items and give the exact price. At higher levels, "
 "several items are displayed, and you must first calculate the total price."
 msgstr ""
-"Debes mercar os distintos elementos e dar o prezo exacto. Nos niveis "
-"superiores, mostraranse varios elementos e primeiro debes calcular o prezo "
+"Debes mercar distintos elementos e dar o prezo exacto. Nos niveis "
+"superiores, amosaranse varios elementos e primeiro debes calcular o prezo "
 "total."
 
 #. Help goal
@@ -18719,12 +18694,6 @@ msgstr "Podes contar."
 
 #. Help manual
 #: activities/money/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click or tap on the coins or paper money at the bottom of the screen to "
-#| "pay. If you want to remove a coin or note, click or tap on it on the "
-#| "upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click or tap on the coins or on the notes at the bottom of the screen to "
@@ -18741,7 +18710,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside an area"
-msgstr ""
+msgstr "Frechas esquerda e dereita: navegar dentro dunha zona."
 
 #: activities/money/ActivityInfo.qml:28
 #: activities/money_back/ActivityInfo.qml:28
@@ -18749,14 +18718,9 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr ""
+msgstr "Tab: navegar entre as zonas inferior e superior."
 
 #: activities/money/money.js:141
-#, fuzzy
-#| msgctxt "money|"
-#| msgid ""
-#| "Click on the coins or paper money at the bottom of the screen to pay. If "
-#| "you want to remove a coin or note, click on it on the upper screen area."
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18782,7 +18746,7 @@ msgstr ""
 #: activities/money_cents/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 10 units."
-msgstr ""
+msgstr "Cantidade ata 10 unidades."
 
 #: activities/money/resource/2/Data.qml:14
 #: activities/money_back/resource/2/Data.qml:14
@@ -18790,7 +18754,7 @@ msgstr ""
 #: activities/money_cents/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 100 units."
-msgstr ""
+msgstr "Cantidade ata 100 unidades."
 
 #: activities/money/resource/3/Data.qml:14
 #: activities/money_back/resource/3/Data.qml:14
@@ -18798,7 +18762,7 @@ msgstr ""
 #: activities/money_cents/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 1000 units."
-msgstr ""
+msgstr "Cantidade ata 1000 unidades."
 
 #. Activity title
 #: activities/money_back/ActivityInfo.qml:15
@@ -18830,11 +18794,6 @@ msgstr ""
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
 #: activities/money_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or paper money at the bottom of the screen to pay. If "
-#| "you want to remove a coin or note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18875,21 +18834,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Descobre o sistema braille"
+msgstr "Descubre o código Morse internacional"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Aprende a dicir a hora nun reloxo analóxico."
+msgstr "Aprende a comunicarte co código Morse Internacional."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18897,15 +18850,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Tes que enviar e recibir letras e díxitos no código Morse Internacional."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Coñecemento de operacións aritméticas."
+msgstr "Coñecemento de alfabetos e díxitos."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18916,11 +18867,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Pídeselle ou que envíe unha mensaxe en código Morse ou que converta unha "
+"mensaxe en código Morse que reciba en letras ou díxitos. Para aprender "
+"código Morse, podes botar unha ollada á táboa de tradución que contén o "
+"código de todas as letras e díxitos."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Explorar o código Morse"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18928,6 +18883,9 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"O código Morse desenvolveuno Samuel Morse. É un método de transmisión de "
+"información de texto mediante unha serie de tons, luces ou clics de dous "
+"tipos."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18940,24 +18898,24 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Cada símbolo en código Morse representa ou un carácter de texto (letra ou "
+"díxito) ou un «prosign», e está representado por unha secuencia única de "
+"puntos e raias. A duración dunha raia é o triplo da dun punto. Para aumentar "
+"a velocidade de comunicación, o código deseñouse para que as letras máis "
+"comúns teñan secuencias máis curtas de puntos e raias.\n"
+"Por exemplo, a letra máis común en inglés, o «e», ten o código máis curto, "
+"un único punto."
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
-msgstr ""
-"Cando esteas listo, prémeme e intenta reproducir os caracteres braille."
+msgstr "Prepárate e preme en Tux para conversar en código Morse."
 
 #: activities/morse_code/MorseCode.qml:342
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Valor romano: %1"
+msgstr "Valor en Morse: %1"
 
 #: activities/morse_code/MorseCode.qml:343
 #, fuzzy, qt-format
