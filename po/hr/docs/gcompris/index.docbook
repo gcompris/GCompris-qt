@@ -45,7 +45,7 @@
 <othername
 >The &gcompris; Team</othername>
 <contrib
->Razvojni tim:</contrib>
+>Razvojni tim</contrib>
 </othercredit
 > 
 
@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2023-02-25</date>
+>2023-06-26</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.1</releaseinfo>
+>3.3</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -555,6 +555,12 @@ for example 'xx.yy.zz'
 >--launch activity</entry>
 <entry
 >Odaberi polaznu aktivnost prilikom pokretanja GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level razina</entry>
+<entry
+>Prilikom pokretanja GComprisa odredi razinu na kojoj želiš započeti aktivnost zadanu pomoću --launch. Postavka će biti zanemarena ukoliko se ne koristi --launch ili ako navedena razina nije valjana.</entry>
 </row>
 <row>
 <entry
