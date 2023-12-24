@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-12-22 21:17+0100\n"
+"PO-Revision-Date: 2023-12-23 10:27+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -18041,7 +18041,7 @@ msgid ""
 "number of activities for children aged 2 to 10."
 msgstr ""
 "GCompris é unha colección de programas educativos que inclúe numerosas "
-"actividades para nenas e nenos de entre 2 e 10 anos."
+"actividades para persoas de entre 2 e 10 anos."
 
 #. Help prerequisite
 #: activities/menu/ActivityInfo.qml:19
@@ -21833,7 +21833,7 @@ msgstr "Imaxes"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Selecciona a representación de dominós"
+msgstr "Selecciona a representación de fichas de dominó"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -21856,7 +21856,7 @@ msgstr ""
 #: activities/reversecount/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read numbers on a domino."
-msgstr "Podes ler números nun dominó."
+msgstr "Podes ler números nunha ficha de dominó."
 
 #. Help manual
 #: activities/reversecount/ActivityInfo.qml:24
@@ -21866,9 +21866,9 @@ msgid ""
 "fish. Click the domino with the right mouse button to count backwards. When "
 "done, click on the OK button or hit the Enter key."
 msgstr ""
-"Preme o dominó para amosar cantos anacos de xeo hai entre Tux e o peixe. "
-"Preme o dominó co botón dereito do rato para contar cara atrás. Unha vez "
-"feito isto, preme o botón Aceptar ou na tecla Intro."
+"Preme a ficha de dominó para amosar cantos anacos de xeo hai entre Tux e o "
+"peixe. Preme a ficha de dominó co botón dereito do rato para contar cara "
+"atrás. Unha vez feito isto, preme o botón Aceptar ou na tecla Intro."
 
 #: activities/reversecount/resource/1/Data.qml:13
 #: activities/reversecount/resource/10/Data.qml:13
@@ -22594,7 +22594,7 @@ msgstr "Compartir doces"
 #: activities/share/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Try to split the pieces of candy between a given number of children."
-msgstr "Intenta repartir os doces entre o número indicado de nenas e nenos"
+msgstr "Intenta repartir os doces entre o número indicado de persoas."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
@@ -22617,8 +22617,8 @@ msgid ""
 "rectangle."
 msgstr ""
 "Segue as instrucións que se mostran na pantalla: primeiro, arrastra o número "
-"de nenas e nenos ao centro, e a continuación arrastra os doces ao rectángulo "
-"de cada nena e neno."
+"de nenas e nenos indicado ao centro, e a continuación arrastra os doces ao "
+"rectángulo de cada persoa."
 
 #: activities/share/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -22628,7 +22628,7 @@ msgstr "Se hai un resto, hai que colocalo no tarro de doces."
 #: activities/share/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
-msgstr "Un máximo de 25 doces e 5 nenas nenos, sen resto."
+msgstr "Un máximo de 25 doces e 5 amizades, sen resto."
 
 # O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:18
@@ -22639,9 +22639,9 @@ msgid ""
 "Can you help him? First, place the children in the center, then drag the "
 "pieces of candy to each of them."
 msgstr ""
-"Martín quere compartir de maneira equitativa 2 doces entre 2 das súas "
-"amizades. Podes axudalo? Primeiro, coloca as amizades no centro, e a "
-"continuación arrastra os doces a cada un deles."
+"Martín quere compartir de maneira equitativa 2 doces con 2 amigas. Podes "
+"axudalo? Primeiro, coloca as amigas no centro, e a continuación arrastra os "
+"doces a cada unha delas."
 
 #: activities/share/resource/1/Data.qml:28
 msgctxt "Data|"
@@ -22678,15 +22678,15 @@ msgstr ""
 "amigas e amigos. Podes axudalo a dividir de maneira equitativa os 10 doces "
 "restantes?"
 
-# O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+# O nome de George adaptouse ao galego escollendo o noveno nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:70
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Lucas quere compartir 3 doces con 3 das súas amizades. Pode repartir os "
-"doces de maneira equitativa?"
+"Adrián quere compartir 3 doces con 3 amigas. Pode repartir os doces de "
+"maneira equitativa?"
 
 # O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:80
@@ -22695,605 +22695,393 @@ msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"María quere compartir 6 doces de maneira equitativa con 3 das súas amizades. "
-"Pode repartir os doces de maneira equitativa?"
+"María quere compartir 6 doces con 3 amizades: 1 amiga e 2 amigos. Pode María "
+"repartir os doces de maneira equitativa?"
 
 # O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:90
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
 "boy and 2 girls. The boy already has one. Can he make sure that they all "
 "have the same amount?"
 msgstr ""
-"Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas amigas "
-"e amigos: un neno e dúas nenas. Pode repartir os doces de maneira equitativa "
-"entre eles? Primeiro coloca o neno e as nenas no centro, e a continuación "
-"arrastra os doces a cada un deles."
+"Xoán quere compartir 8 doces con 3 amizades: 1 amigo e 2 amigas. O amigo xa "
+"ten un doce. Pode Xoán facer que as amizades teñan a mesma cantidade?"
 
 # O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:100
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
-"Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-"neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
+"Martín quere compartir 12 doces con 3 amizades: 2 amigos e 1 amiga. Pode "
+"Martín repartir os doces de maneira equitativa?"
 
 # O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:110
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
 "2 girls. The girls already have some pieces of candy. Can she split the "
 "pieces of candy so that they all have the same amount?"
 msgstr ""
-"Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas amigas "
-"e amigos: un neno e dúas nenas. Pode repartir os doces de maneira equitativa "
-"entre eles? Primeiro coloca o neno e as nenas no centro, e a continuación "
-"arrastra os doces a cada un deles."
+"María quere compartir 11 doces con 3 amizades: 1 amigo e 2 amigas. As amigas "
+"xa teñen doces. Pode María repartir os doces para que todas as amizades "
+"teñan a mesma cantidade?"
 
 #: activities/share/resource/1/Data.qml:122
 #: activities/share/resource/2/Data.qml:112
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
-msgstr "Agora, Martina quere darlles 6 doces ás súas amigas e amigos"
+msgstr ""
+"Martina quere compartir 4 doces de maneira equitativa con 4 amigas. Podes "
+"axudala?"
 
 #: activities/share/resource/1/Data.qml:132
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid "Now, Alice wants to give 8 pieces of candy to her friends."
-msgstr "Agora, Martina quere darlles 6 doces ás súas amigas e amigos"
+msgstr "Agora, Martina quere darlles 8 doces a amizades."
 
 # O nome de Michelle adaptouse ao galego escollendo o cuarto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:142
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Michelle has 9 pieces of candy and wants to split them with two brothers "
-#| "and two sisters. Help her share the pieces of candy!"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"Sofía ten 9 doces e quere repartilos con dous irmáns e dúas irmás. Axúdaa a "
-"compartir os doces!"
+"Martina quere darlles 10 doces a amizades, 1 amiga e 3 amigos, de xeito que "
+"todas teñan a mesma cantidade. A amiga xa ten algúns doces."
 
 #: activities/share/resource/1/Data.qml:152
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Now, Alice wants to give 6 pieces of candy to her friends"
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Agora, Martina quere darlles 6 doces ás súas amigas e amigos"
+msgstr "Martina quere darlles 16 doces a amizades."
 
 # O nome de Bob adaptouse ao galego escollendo o oitavo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:162
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid ""
-#| "Bob wants to give 5 pieces of candy to his friends: two boys and one "
-#| "girl, his girlfriend already has one candy. Can you help him equally "
-#| "split the pieces of candy so that each friend will have the same amount "
-#| "of pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"Manuel quere darlles 5 doces ás súas amigas e amigos: dous nenos e unha "
-"nena. A nena xa ten un doce. Podes axudalo a repartir os doces de maneira "
-"equitativa de xeito que cada amiga ou amigo teña o mesmo número de doces?"
+"Martina quere darlles doces a 4 amizades. Algunhas xa teñen doces. Podes "
+"axudala a repartir 14 doces de xeito que todas as amizades teñan a mesma "
+"cantidade?"
 
 # O nome de Thomas adaptouse ao galego escollendo o quinto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:174
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Thomas wants to share his 11 pieces of candy with his friends: three boys "
-#| "and one girl. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
 msgstr ""
-"Daniel quere compartir os seus 11 doces coas súas amigas e amigos: tres "
-"nenos e unha nena. Podes axudalo?"
+"Xián quere compartir 5 doces de maneira equitativa con 5 amigas. Podes "
+"axudalo?"
 
 # O nome de Helen adaptouse ao galego escollendo o terceiro nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:184
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Helen has 3 friends: one boy and two girls. She wants to give them 7 "
-#| "pieces of candy. Help her split the pieces of candy between her friends!"
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
-"Daniela ten 3 amigas e amigos: un neno e dúas nenas. Quere darlles 7 doces. "
-"Axúdaa a repartir os doces entre as súas amigas e amigos!"
+"Xela ten 5 amizades: 2 amigos e 3 amigas. Quere darlles 10 doces. Axúdaa a "
+"repartir os doces de maneira equitativa entre as amizades."
 
 # O nome de Michelle adaptouse ao galego escollendo o cuarto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:194
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Michelle has 9 pieces of candy and wants to split them with two brothers "
-#| "and two sisters. Help her share the pieces of candy!"
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
 "and 1 sister, so that they all have the same amount. Her sister already has "
 "some pieces of candy."
 msgstr ""
-"Sofía ten 9 doces e quere repartilos con dous irmáns e dúas irmás. Axúdaa a "
-"compartir os doces!"
+"Uxía quere compartir 12 doces de maneira equitativa con 5 familiares: 4 "
+"irmáns e 1 irmá, de xeito que teñan a mesma cantidade. A irmá xa ten algúns "
+"doces."
 
 # O nome de Thomas adaptouse ao galego escollendo o quinto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:204
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Thomas wants to share his 11 pieces of candy with his friends: three boys "
-#| "and one girl. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and 4 "
 "girls. Can you help him?"
 msgstr ""
-"Daniel quere compartir os seus 11 doces coas súas amigas e amigos: tres "
-"nenos e unha nena. Podes axudalo?"
+"Lois quere compartir 20 doces con 5 amizades: 1 amigo e 4 amigas. Podes "
+"axudalo?"
 
 # O nome de Thomas adaptouse ao galego escollendo o quinto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:214
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid ""
-#| "Thomas wants to share his 11 pieces of candy with his friends: three boys "
-#| "and one girl. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
 "They already have one piece of candy each. Can you help him?"
 msgstr ""
-"Daniel quere compartir os seus 11 doces coas súas amigas e amigos: tres "
-"nenos e unha nena. Podes axudalo?"
+"Martín quere compartir 20 doces de maneira equitativa con 5 amizades. Xa "
+"teñen 1 doce cada unha. Podes axudalo?"
 
 # O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:226
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-"neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
+"Anxo quere compartir 6 doces con 2 amigas. Pode repartir os doces de maneira "
+"equitativa?"
 
 # O nome de Elizabeth adaptouse ao galego escollendo o quinto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:236
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of her "
-#| "friends: two girls and two boys. How should she split the pieces of candy "
-#| "to her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
 "friends: 2 girls and 1 boy. The girls already have some pieces of candy. How "
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
-"Polo seu aniversario, Sara ten 12 doces para compartir con 4 das súas amigas "
-"e amigos: dúas nenas e dous nenos. Como debería compartir os doces coas súas "
-"amigas e amigos?"
+"Sara ten 8 doces para compartir con 3 amizades: 2 amigas e 1 amigo. As "
+"amigas xa teñen algúns doces. Como pode Sara repartir os doces para que "
+"todas as amizades teñan a mesma cantidade?"
 
 # O nome de Jason adaptouse ao galego escollendo o sétimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:246
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Jason's father gave him 14 pieces of candy to share with his friends: two "
-#| "boys and three girls. Help him give the pieces of candy to his friends!"
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"O pai de Leo deulle 14 doces para compartir coas súas amigas e amigos: dous "
-"nenos e tres nenas. Axúdao a darlles os doces ás súas amigas e amigos!"
+"O pai de Leo deulle 16 doces para compartir coas súas amizades: 2 amigos e 2 "
+"amigas. Axúdao a darlles os doces ás súas amizades."
 
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+# O nome de George adaptouse ao galego escollendo o noveno nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:256
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
 "and 2 boys. The boys already have one piece of candy each. He wants all of "
 "them to have the same amount."
 msgstr ""
-"Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas amigas "
-"e amigos: un neno e dúas nenas. Pode repartir os doces de maneira equitativa "
-"entre eles? Primeiro coloca o neno e as nenas no centro, e a continuación "
-"arrastra os doces a cada un deles."
+"Adrián quere compartir 14 doces con 4 amizades: 2 amigas e 2 amigos. Os "
+"amigos xa teñen 1 doce cada un. Adrián quere que todas as amizades teñan a "
+"mesma cantidade."
 
 # O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/1/Data.qml:266
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-"neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
+"María quere compartir 25 doces con 5 amizades: 3 amigas e 2 amigos. Pode "
+"María repartir os doces de maneira equitativa?"
 
 #: activities/share/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
-msgstr ""
+msgstr "Un máximo de 25 doces e 5 persoas, pode haber resto."
 
 #: activities/share/resource/2/Data.qml:28
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+msgstr "Agora quere compartir 5 doces coas súas amizades."
 
 #: activities/share/resource/2/Data.qml:38
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
-msgstr "Podes darlles 6 os doces de Martín aos seus amigos?"
+msgstr "E agora, podes compartir 7 dos doces de Martín coas súas amizades?"
 
 #: activities/share/resource/2/Data.qml:48
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
-msgstr "Podes darlles 6 os doces de Martín aos seus amigos?"
+msgstr "E agora, podes compartir 8 dos doces de Martín coas súas amizades?"
 
 #: activities/share/resource/2/Data.qml:58
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid ""
-#| "Paul has only 10 pieces of candy left. He eats 2 pieces of candy and he "
-#| "gives the rest to his friends. Can you help him equally split the 8 "
-#| "remaining pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
 "gives the rest to his friends. Can you help him split equally the 9 "
 "remaining pieces of candy?"
 msgstr ""
-"A Martín só lle quedan 10 doces. Come 2 deles e lles dá o resto ás súas "
-"amigas e amigos. Podes axudalo a dividir de maneira equitativa os 8 doces "
-"restantes?"
+"A Martín só lle quedan 11 doces. Come 2 deles e lles dá o resto a amizades. "
+"Podes axudalo a dividir de maneira equitativa os 9 doces restantes?"
 
-# O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+# O nome de Bob adaptouse ao galego escollendo o oitavo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:70
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr ""
-"Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-"neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
+"Manuel quere compartir 8 doces con 3 amigas. Pode Manuel repartir os doces "
+"de maneira equitativa?"
 
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+# O nome de HArry adaptouse ao galego escollendo o décimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:80
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas amigas "
-"e amigos: un neno e dúas nenas. Pode repartir os doces de maneira equitativa "
-"entre eles? Primeiro coloca o neno e as nenas no centro, e a continuación "
-"arrastra os doces a cada un deles."
+"Diego quere compartir 8 doces con 3 amizades: 1 amigo e 2 amigas. O amigo xa "
+"ten 1 doce. Pode Diego repartir os doces de xeito que todas as amizades "
+"teñan a mesma cantidade?"
 
 # O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:90
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
 "girls. The girls already have some pieces of candy. Can she split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas amigas "
-"e amigos: un neno e dúas nenas. Pode repartir os doces de maneira equitativa "
-"entre eles? Primeiro coloca o neno e as nenas no centro, e a continuación "
-"arrastra os doces a cada un deles."
+"María quere compartir 8 doces con 3 amizades: 1 amigo e 2 amigas. As amigas "
+"xa teñen algúns doces. Pode María repartir os doces para que todas as "
+"amizades teñan a mesma cantidade?"
 
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+# O nome de HArry adaptouse ao galego escollendo o décimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:100
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#| "one boy and two girls. Can he equally split the pieces of candy between "
-#| "his friends? First, place the children in center, then drag the pieces of "
-#| "candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas amigas "
-"e amigos: un neno e dúas nenas. Pode repartir os doces de maneira equitativa "
-"entre eles? Primeiro coloca o neno e as nenas no centro, e a continuación "
-"arrastra os doces a cada un deles."
+"Diego quere compartir 12 doces con 3 amizades: 1 amigo e 2 amigas. O amigo "
+"xa ten algúns doces. Pode Diego repartir os doces de xeito que todas as "
+"amizades teñan a mesma cantidade?"
 
 #: activities/share/resource/2/Data.qml:122
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+msgstr ""
+"Agora, Martina quere compartir 8 doces de maneira equitativa con amizades."
 
 #: activities/share/resource/2/Data.qml:132
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Can you help Alice give 9 pieces of candy to her friends: one girl and "
-#| "two boys?"
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"Podes axudar a Martina a darlles 9 doces ás súas amigas e amigos: unha nena "
-"e dous nenos?"
+"Podes axudar a Martina a compartir 10 doces con 4 amizades: 1 amiga e 3 "
+"amigos? A amiga xa ten algúns doces."
 
 #: activities/share/resource/2/Data.qml:142
-#, fuzzy
-#| msgctxt "board0|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+msgstr "Martina quere compartir 16 doces de maneira equitativa con amizades."
 
 #: activities/share/resource/2/Data.qml:152
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Alice has 12 pieces of candy left. She wants to give them all to her "
-#| "friends. Can you help her split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Alice has 14 pieces of candy left. She wants to share them equally among her "
 "friends. The boys already have some pieces of candy. Can you help her split "
 "the pieces of candy equally?"
 msgstr ""
-"A Martina quédanlle 12 doces. Quere darllos todos ás súas amigas e amigos. "
-"Podes axudala a repartir os doces de maneira equitativa?"
+"A Martina quédanlle 14 doces. Quere compartilos de maneira equitativa con "
+"amizades. Os amigos xa teñen algúns doces. Podes axudala a repartir os doces "
+"de maneira equitativa?"
 
-# O nome de Jon adaptouse ao galego escollendo o décimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:164
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Help Jon split 9 pieces of candies between three boys and two girls. The "
-#| "rest will remain to Jon."
 msgctxt "Data|"
 msgid ""
 "Help Jon share 11 pieces of candies equally between five girls. The rest "
 "will remain to Jon."
 msgstr ""
-"Axuda a Diego a repartir 9 doces entre tres nenos e dúas nenas. Diego "
+"Axuda a Brais a repartir 11 doces con 5 amigas de maneira equitativa. Brais "
 "quedará co resto."
 
 #: activities/share/resource/2/Data.qml:174
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Jon wants to share the rest of his pieces of candies with his brother and "
-#| "his sister. Can you split them equally, knowing that his brother already "
-#| "has two pieces of candies?"
 msgctxt "Data|"
 msgid ""
 "Jon wants to share the rest of his pieces of candies with his brothers and "
 "his sisters. Can you split them equally, knowing that his brothers already "
 "have 2 pieces of candy?"
 msgstr ""
-"Diego quere compartir o resto dos seus doces co seu irmán e a súa irmá. "
-"Podes repartilos de maneira equitativa, sabendo que o seu irmán xa ten dous "
-"doces?"
+"Brais quere compartir os doces restantes cos seus irmáns e irmás. Podes "
+"repartilos de maneira equitativa, sabendo que os irmáns xa teñen 2 doces?"
 
 #: activities/share/resource/2/Data.qml:184
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Help Tux split some pieces of candies to his friends: 9 pieces of candies "
-#| "to one boy and two girls."
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
-msgstr ""
-"Axuda a Tux a repartir algúns doces coas súas amigas e amigos: 9 doces para "
-"un neno e dúas nenas."
+msgstr "Axuda a Tux a repartir 19 doces con 5 amizades: 4 amigos e 1 amiga."
 
 # O nome de Jon adaptouse ao galego escollendo o décimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:194
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid ""
-#| "Help Jon split 9 pieces of candies between three boys and two girls. The "
-#| "rest will remain to Jon."
 msgctxt "Data|"
 msgid "Help Maria share 18 pieces of candy equally between 3 boys and 2 girls."
 msgstr ""
-"Axuda a Diego a repartir 9 doces entre tres nenos e dúas nenas. Diego "
-"quedará co resto."
+"Axuda a María a repartir 18 doces de maneira equitativa con 3 amigos e 2 "
+"amigas."
 
 # O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:206
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally between 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-"neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
+"Anxo quere compartir 6 doces con 2 amigas. Pode repartir os doces de maneira "
+"equitativa?"
 
 # O nome de Elizabeth adaptouse ao galego escollendo o quinto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:216
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of her "
-#| "friends: two girls and two boys. How should she split the pieces of candy "
-#| "to her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
 "friends equally: 2 girls and 1 boy. How should she split the pieces of candy "
 "between her friends?"
 msgstr ""
-"Polo seu aniversario, Sara ten 12 doces para compartir con 4 das súas amigas "
-"e amigos: dúas nenas e dous nenos. Como debería compartir os doces coas súas "
-"amigas e amigos?"
+"Sara ten 8 doces para compartir con 3 amizades: 2 amigas e 1 amigo. Como "
+"debería Sara repartir os doces entre as súas amizades?"
 
 # O nome de Jason adaptouse ao galego escollendo o sétimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:226
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Jason's father gave him 14 pieces of candy to share with his friends: two "
-#| "boys and three girls. Help him give the pieces of candy to his friends!"
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"O pai de Leo deulle 14 doces para compartir coas súas amigas e amigos: dous "
-"nenos e tres nenas. Axúdao a darlles os doces ás súas amigas e amigos!"
+"O pai de Leo deulle 17 doces para compartir coas súas amizades: 2 nenos e 2 "
+"nenas. Axúdao a darlles os doces ás súas amizades."
 
-# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+# O nome de George adaptouse ao galego escollendo o noveno nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:236
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#| "one girl and two boys. Can you help her? First, place the children in the "
-#| "center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
-"amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e os "
-"neno no centro, e a continuación arrastra os doces a cada un deles."
+"Adrián quere compartir 14 doces con 4 amizades: 2 amigas e 2 amigos. Pode "
+"Adrián repartir os doces de maneira equitativa?"
 
 # O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
 #: activities/share/resource/2/Data.qml:246
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid ""
-#| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#| "boy and two girls. Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she share the pieces of candy equally between her "
 "friends?"
 msgstr ""
-"Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-"neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
+"María quere compartir 23 doces con 5 amizades: 3 amigas e 2 amigos. Pode "
+"María repartir os doces de maneira equitativa?"
 
 #: activities/share/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
-msgstr ""
+msgstr "Un máximo de 30 doces e 6 persoas, pode haber resto."
 
 #: activities/share/share.js:97
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|First part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Place %n boy(s) "
-#| msgid_plural "Place %n boy(s) "
+#, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
@@ -23303,12 +23091,7 @@ msgstr[0] "Coloca %n neno"
 msgstr[1] "Coloca %n nenos"
 
 #: activities/share/share.js:101
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "and %n girl(s) in the center. "
-#| msgid_plural "and %n girl(s) in the center. "
+#, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
 "split %n pieces of candy equally between them."
@@ -23318,19 +23101,14 @@ msgstr[0] "e %n nena no centro. "
 msgstr[1] "e %n nenas no centro. "
 
 #: activities/share/share.js:105
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Then equally split %n pieces of candy between them."
-#| msgid_plural "Then equally split %n pieces of candy between them."
+#, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
-msgstr[0] "A continuación repartir de maneira equitativa %n doce entre eles."
-msgstr[1] "A continuación repartir de maneira equitativa %n doces entre eles."
+msgstr[0] "A continuación reparte %n doce de maneira equitativa entre elas."
+msgstr[1] "A continuación reparte %n doces de maneira equitativa entre elas."
 
 #: activities/share/Share.qml:340
 #, qt-format
@@ -23346,21 +23124,15 @@ msgstr "Unha actividade sinxela para debuxar"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create your own drawing"
 msgctxt "ActivityInfo|"
 msgid "Create your own drawing."
-msgstr "Crea o teu propio debuxo"
+msgstr "Crea o teu propio debuxo."
 
 #. Help goal
 #: activities/simplepaint/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enhance creative skills"
 msgctxt "ActivityInfo|"
 msgid "Enhance creative skills."
-msgstr "Mellora as túas habilidades creativas"
+msgstr "Mellora as túas habilidades creativas."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -23373,172 +23145,131 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
-msgstr ""
+msgstr "Tab: cambiar entre o selector de cores e a zona de pintura."
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers With Dice"
 msgctxt "ActivityInfo|"
 msgid "Numbers with dice"
 msgstr "Números con dados"
 
 #. Help title
 #: activities/smallnumbers/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on dice before they reach the ground"
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the dice before it reaches the ground."
-msgstr "Conta o número de puntiños do dado antes de que chegue ao chan"
+msgstr "Conta o número de puntos no dado antes de que caia ao chan."
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "In a limited time, count the number of dots"
 msgctxt "ActivityInfo|"
 msgid "In a limited time, count the number of dots."
-msgstr "Nun tempo limitado, conta o número de puntiños"
+msgstr "Nun tempo limitado, conta o número de puntos."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
 #: activities/smallnumbers2/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Counting skills"
 msgctxt "ActivityInfo|"
 msgid "Counting skills."
-msgstr "Habilidade para contar"
+msgstr "Habilidade para contar."
 
 #. Help manual
 #: activities/smallnumbers/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "With the keyboard, type the number of dots you see on the falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling dice."
-msgstr ""
-"Co teclado escribe o número de puntiños que ves nos dados que están a caer."
+msgstr "Escribe o número de puntos que ves en cada dado que está a caer."
 
 #: activities/smallnumbers/resource/1/Data.qml:14
 #: activities/smallnumbers2/resource/1/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 3."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 3."
 
 #: activities/smallnumbers/resource/1/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Touch the numbers in the right sequence."
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr "Toca os números na orde correcta."
+msgstr "Escribe o número do dado, 1 ou 2."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 3."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 3."
 
 #: activities/smallnumbers/resource/2/Data.qml:14
 #: activities/smallnumbers2/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 4."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 4."
 
 #: activities/smallnumbers/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 4."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 4."
 
 #: activities/smallnumbers/resource/3/Data.qml:14
 #: activities/smallnumbers2/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 5."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 5."
 
 #: activities/smallnumbers/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 5."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 5."
 
 #: activities/smallnumbers/resource/4/Data.qml:14
 #: activities/smallnumbers2/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 6."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 6."
 
 #: activities/smallnumbers/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 6."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 6."
 
 #: activities/smallnumbers/resource/5/Data.qml:14
 #: activities/smallnumbers2/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 7."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 7."
 
 #: activities/smallnumbers/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 7."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 7."
 
 #: activities/smallnumbers/resource/6/Data.qml:14
 #: activities/smallnumbers2/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 8."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 8."
 
 #: activities/smallnumbers/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 8."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 8."
 
 #: activities/smallnumbers/resource/7/Data.qml:14
 #: activities/smallnumbers2/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "Numbers up to 9."
-msgstr "O número é demasiado pequeno"
+msgstr "Números ata o 9."
 
 #: activities/smallnumbers/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 9."
-msgstr ""
+msgstr "Escribe o número do dado, de 1 a 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:13
 #: activities/smallnumbers2/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Numbers from 0 to 9."
-msgstr ""
+msgstr "Números do 0 ao 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the dice, from 0 to 9."
-msgstr ""
+msgstr "Escribe o número do dado, de 0 a 9."
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
@@ -23548,103 +23279,79 @@ msgstr "Números con fichas de dominó"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Count the number of dots on the dominoes before they reach the ground"
 msgctxt "ActivityInfo|"
 msgid "Count the number on the domino before it reaches the ground."
-msgstr ""
-"Conta o número de puntiños da ficha de dominó antes de que chegue ao chan"
+msgstr "Conta o número da ficha de dominó antes de que chegue ao chan"
 
 #. Help goal
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading training in a limited time"
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr "Práctica de lectura con tempo limitado"
+msgstr "Conta un número en tempo limitado."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "With the keyboard, type the number of dots you see on the falling "
-#| "dominoes."
 msgctxt "ActivityInfo|"
 msgid "Type the number you see on each falling domino."
-msgstr ""
-"Co teclado escribe o número de puntiños que ves nas fichas de dominó que "
-"están a caer."
+msgstr "Escribe o número que ves en cada ficha de dominó que está a caer."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, 1 ou 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 3."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 4."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 5."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 6."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 7."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 8."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 1 a 9."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr ""
+msgstr "Escribe o número da ficha de dominó, de 0 a 9."
 
 #: activities/solar_system/ActivityConfig.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
 msgctxt "ActivityConfig|"
 msgid "Learning Mode"
-msgstr "Aprendendo o reloxo"
+msgstr "Modo de aprendizaxe"
 
 #: activities/solar_system/ActivityConfig.qml:22
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "Assessment mode"
 msgctxt "ActivityConfig|"
 msgid "Assessment Mode"
 msgstr "Modo de avaliación"
 
 #. Activity title
 #: activities/solar_system/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solar System"
 msgctxt "ActivityInfo|"
 msgid "Solar system"
 msgstr "Sistema Solar"
@@ -23657,13 +23364,6 @@ msgstr "Responde ás preguntas cunha corrección do 100%."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn information about the solar system. If you want to learn more about "
-#| "astronomy, try downloading KStars (https://edu.kde.org/kstars/) or "
-#| "Stellarium (http://stellarium.org/) which are open source astronomy "
-#| "softwares."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn information about the solar system. If you want to learn more about "
@@ -23671,41 +23371,35 @@ msgid ""
 "Stellarium (https://stellarium.org/) which are astronomy Free Software."
 msgstr ""
 "Aprender sobre o Sistema Solar. Se queres aprender máis sobre astronomía, "
-"proba a descargar KStars (https://edu.kde.org/kstars/) ou Stellarium (http://"
-"stellarium.org/) que son software libre de astronomía."
+"proba a descargar KStars (https://edu.kde.org/kstars/) ou Stellarium "
+"(https://stellarium.org/) que son soporte lóxico libre de astronomía."
 
 #. Help manual
 #: activities/solar_system/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on a planet or the Sun to reveal questions. Each question contains "
-#| "4 options. One of those is 100% correct. Try to answer the questions "
-#| "until you get a 100% closeness in the closeness meter."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on a planet or on the Sun, and answer the corresponding questions. "
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Preme un planeta ou o sol para revelar preguntas. Cada pregunta contén 4 "
-"opcións. Unha delas é 100% correcta. Intenta contestar as preguntas ata "
-"conseguir unha exactitude do 100% no medidor de exactitude."
+"Preme un planeta ou o sol e responde as preguntas correspondentes. Cada "
+"pregunta contén 4 opcións. Unha delas é 100% correcta. Intenta contestar as "
+"preguntas ata conseguir o 100% no medidor de exactitude."
 
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
-msgstr ""
+msgstr "Espacio ou Intro: seleccionar"
 
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr ""
+msgstr "Escape: volver á pantalla anterior"
 
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Tab: view the hint (only when the hint icon is visible)"
-msgstr ""
+msgstr "Tab: ver o consello (só cando a icona de consello é visíbel)"
 
 #: activities/solar_system/Dataset.js:14
 msgctxt "Dataset|"
@@ -23858,12 +23552,9 @@ msgid "The maximum temperature on Earth is 58 °C."
 msgstr "A temperatura máxima na Terra é de 58 °C."
 
 #: activities/solar_system/Dataset.js:54 activities/solar_system/Dataset.js:150
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Venus is 225 days."
 msgctxt "Dataset|"
 msgid "The length of a year on Venus is 225 Earth days."
-msgstr "A duración dun ano en Venus é de 225 días."
+msgstr "A duración dun ano en Venus é de 225 días terrestres."
 
 #: activities/solar_system/Dataset.js:57
 msgctxt "Dataset|"
@@ -23962,12 +23653,9 @@ msgid "273 °C"
 msgstr "273 °C"
 
 #: activities/solar_system/Dataset.js:81
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is a day on Mercury?"
 msgctxt "Dataset|"
 msgid "How long is a year on Mercury?"
-msgstr "Canto dura un día en Mercurio?"
+msgstr "Canto dura un ano en Mercurio?"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:121
@@ -23975,44 +23663,38 @@ msgstr "Canto dura un día en Mercurio?"
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
 msgid "365 Earth days"
-msgstr "365 días da Terra"
+msgstr "365 días terrestres"
 
 #: activities/solar_system/Dataset.js:82
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "365 Earth days"
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr "365 días da Terra"
+msgstr "433 días terrestres"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "88 Earth days"
-msgstr "88 días da Terra"
+msgstr "88 días terrestres"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
 msgid "107 Earth days"
-msgstr "107 días da Terra"
+msgstr "107 días terrestres"
 
 #: activities/solar_system/Dataset.js:87
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is a day on Mercury?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Mercury?"
-msgstr "Canto dura un día en Mercurio?"
+msgstr "Canto dura unha rotación en Mercurio?"
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "50 Earth days"
-msgstr "50 días da Terra"
+msgstr "50 días terrestres"
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
 msgid "59 Earth days"
-msgstr "59 días da Terra"
+msgstr "59 días terrestres"
 
 #: activities/solar_system/Dataset.js:96
 msgctxt "Dataset|"
@@ -24086,44 +23768,29 @@ msgid "How long is a year on Venus?"
 msgstr "Canto dura un ano en Venus?"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "50 Earth days"
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr "50 días da Terra"
+msgstr "225 días terrestres"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "117 Earth days"
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr "117 días da Terra"
+msgstr "116 días terrestres"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "107 Earth days"
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr "107 días da Terra"
+msgstr "100 días terrestres"
 
 #: activities/solar_system/Dataset.js:126
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is a day on Venus?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Venus?"
-msgstr "Canto dura un día en Venus?"
+msgstr "Canto dura unha rotación en Venus?"
 
 #: activities/solar_system/Dataset.js:127
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "365 Earth days"
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr "365 días da Terra"
+msgstr "243 días terrestres"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -24225,12 +23892,9 @@ msgid "How many moons has Earth?"
 msgstr "Cantas lúas ten a Terra?"
 
 #: activities/solar_system/Dataset.js:171
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is a day on Earth?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Earth?"
-msgstr "Canto dura un día na Terra?"
+msgstr "Canto dura unha rotación na Terra?"
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -24269,12 +23933,9 @@ msgid "How many seasons has Earth?"
 msgstr "Cantas estacións ten a Terra?"
 
 #: activities/solar_system/Dataset.js:183
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The maximum temperature on Mars is:"
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is:"
-msgstr "A temperatura máxima de Marte é:"
+msgstr "A temperatura máxima na Terra é:"
 
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
@@ -24344,12 +24005,9 @@ msgid "How many moons has Mars?"
 msgstr "Cantas lúas ten Marte?"
 
 #: activities/solar_system/Dataset.js:228
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is a day on Mars?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Mars?"
-msgstr "Canto dura un día en Marte?"
+msgstr "Canto dura unha rotación en Marte?"
 
 #: activities/solar_system/Dataset.js:229
 msgctxt "Dataset|"
@@ -24362,28 +24020,19 @@ msgid "How long does it take for Mars to make one revolution around the Sun?"
 msgstr "Cantos anos lle leva a Marte dar unha volta arredor do Sol?"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "88 Earth days"
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr "88 días da Terra"
+msgstr "687 días terrestres"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "50 Earth days"
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr "50 días da Terra"
+msgstr "30 días terrestres"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "107 Earth days"
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr "107 días da Terra"
+msgstr "7 días terrestres"
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
@@ -24442,12 +24091,9 @@ msgid "How many moons has Jupiter?"
 msgstr "Cantas lúas ten Xúpiter?"
 
 #: activities/solar_system/Dataset.js:279
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is one day on Jupiter?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Jupiter?"
-msgstr "Canto dura un día en Xúpiter?"
+msgstr "Canto dura unha rotación en Xúpiter?"
 
 #: activities/solar_system/Dataset.js:280
 #: activities/solar_system/Dataset.js:364
@@ -24516,12 +24162,9 @@ msgid "How many moons has Saturn?"
 msgstr "Cantas lúas ten Saturno?"
 
 #: activities/solar_system/Dataset.js:318
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is one day on Saturn?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Saturn?"
-msgstr "Canto dura un día en Saturno?"
+msgstr "Canto dura unha rotación en Saturno?"
 
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
@@ -24598,28 +24241,19 @@ msgid "How many years does it take for Uranus to go once around the Sun?"
 msgstr "Cantos anos lle leva a Saturno dar unha volta arredor do Sol?"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "12 Earth years"
 msgctxt "Dataset|"
 msgid "24 Earth years"
-msgstr "12 anos terrestres"
+msgstr "24 anos terrestres"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "68 Earth years"
-msgstr "5 anos terrestres"
+msgstr "68 anos terrestres"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "84 Earth years"
-msgstr "5 anos terrestres"
+msgstr "84 anos terrestres"
 
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
@@ -24627,12 +24261,9 @@ msgid "How many moons has Uranus?"
 msgstr "Cantas lúas ten Urano?"
 
 #: activities/solar_system/Dataset.js:363
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is one day on Uranus?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Uranus?"
-msgstr "Canto dura un día en Urano?"
+msgstr "Canto dura unha rotación en Urano?"
 
 #: activities/solar_system/Dataset.js:364
 #: activities/solar_system/Dataset.js:409
@@ -24673,12 +24304,9 @@ msgid "The maximum temperature on Saturn is -178 °C."
 msgstr "A temperatura máxima en Saturno é de -178 °C."
 
 #: activities/solar_system/Dataset.js:387
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Uranus is 84 years."
 msgctxt "Dataset|"
 msgid "The length of a year on Uranus is 84 Earth years."
-msgstr "A duración dun ano en Urano é de 84 anos."
+msgstr "A duración dun ano en Urano é de 84 anos terrestres."
 
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
@@ -24692,28 +24320,19 @@ msgid ""
 msgstr "Cantos anos lle leva a Neptuno dar unha volta arredor do Sol?"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr "5 anos terrestres"
+msgstr "165 anos terrestres"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "30 Earth years"
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr "30 anos terrestres"
+msgstr "3 anos terrestres"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "10 Earth years"
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr "10 anos terrestres"
+msgstr "100 anos terrestres"
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
@@ -24721,12 +24340,9 @@ msgid "How many moons has Neptune?"
 msgstr "Cantas lúas ten Neptuno?"
 
 #: activities/solar_system/Dataset.js:408
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "How long is one day on Neptune?"
 msgctxt "Dataset|"
 msgid "How long is one rotation on Neptune?"
-msgstr "Canto dura un día en Neptuno?"
+msgstr "Canto dura unha rotación en Neptuno?"
 
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
@@ -24769,12 +24385,6 @@ msgstr ""
 "A túa puntuación final é: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
 #: activities/solar_system/QuizScreen.qml:274
-#, fuzzy
-#| msgctxt "QuizScreen|"
-#| msgid ""
-#| "You should score above 90% to become a Solar System expert!<br>Retry to "
-#| "test your skills again or train in normal mode to explore more about the "
-#| "Solar System."
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24796,14 +24406,7 @@ msgstr ""
 "sobre máis preguntas."
 
 #: activities/solar_system/SolarSystem.qml:159
-#, fuzzy, qt-format
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the "
-#| "activity which you can switch from the configuration window:<br><b>1. "
-#| "Normal mode</b> - In this mode you can play and learn about the Solar "
-#| "System.<br><b>2. Assessment mode</b> - In this mode you can test your "
-#| "knowledge about the Solar System."
+#, qt-format
 msgctxt "SolarSystem|"
 msgid ""
 "Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the "
@@ -24813,10 +24416,10 @@ msgid ""
 "knowledge about the Solar System."
 msgstr ""
 "Modo: <font color=\"#3bb0de\">%1</font><br><br>Hai dous modos na actividade "
-"que podes intercambiar desde a xanela de configuración:<br> <b>1. Modo "
-"normal</b> - Neste modo podes reproducir e aprender sobre o Sistema Solar."
-"<br> <b>2. Modo de avaliación</b> - Neste modo podes poñer a proba o teu "
-"coñecemento do Sistema Solar."
+"que podes intercambiar desde a xanela de configuración:<br> <b>1. Modo de "
+"aprendizaxe</b> - Neste modo podes reproducir e aprender sobre o Sistema "
+"Solar.<br> <b>2. Modo de avaliación</b> - Neste modo podes poñer a proba o "
+"teu coñecemento do Sistema Solar."
 
 #: activities/solar_system/SolarSystem.qml:159
 msgctxt "SolarSystem|"
@@ -24824,36 +24427,20 @@ msgid "Assessment"
 msgstr "Avaliación"
 
 #: activities/solar_system/SolarSystem.qml:159
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning Clock"
 msgctxt "SolarSystem|"
 msgid "Learning"
-msgstr "Aprendendo o reloxo"
+msgstr "Aprendizaxe"
 
 #: activities/solar_system/SolarSystem.qml:163
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "Click on the Sun or any planet to reveal questions. Each question will "
-#| "have 4 options, out of which one is correct."
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
 "options, out of which one is correct."
 msgstr ""
-"Preme o Sol ou calquera planeta para mostrar preguntas. Cada pregunta terá 4 "
+"Preme o Sol ou calquera planeta para amosar preguntas. Cada pregunta ten 4 "
 "opcións, e delas unha é correcta."
 
 #: activities/solar_system/SolarSystem.qml:164
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "After a planet is clicked, the Closeness meter at the bottom-right corner "
-#| "of the screen represents the degree of correctness of your selected "
-#| "answer. The least correct answer is represented by 1%. Try again until "
-#| "you reach a 100% closeness by following the closeness meter, or hint "
-#| "which indicates the correct answer."
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24866,7 +24453,8 @@ msgstr ""
 "dereita da pantalla representa o grao de exactitude da resposta "
 "seleccionada. A resposta menos correcta é a representada polo 1%. Inténtao "
 "de novo ata que acades unha exactitude do 100% seguindo o medidor de "
-"exactitude, ou o consello que mostra a resposta correcta."
+"exactitude. Se o botón de consello está visíbel, podes premelo para recibir "
+"un consello que axude a descubrir a resposta."
 
 #: activities/solar_system/SolarSystem.qml:169
 msgctxt "SolarSystem|"
@@ -24878,13 +24466,6 @@ msgstr ""
 "inferior dereita da pantalla mostra a túa puntuación como porcentaxe."
 
 #: activities/solar_system/SolarSystem.qml:170
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "If your answer is correct, your score will increase.<br>If your answer is "
-#| "wrong, your score decreases and one more question will be asked in the "
-#| "end along with the incorrectly answered question.<br>Maximum 25 questions "
-#| "will be asked after which no more question will be added."
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24892,7 +24473,7 @@ msgid ""
 "with the incorrectly answered question.<br>A maximum of 25 questions will be "
 "asked after which no more question will be added."
 msgstr ""
-"Se a resposta é correcta a puntuación aumentará.<br> Se a resposta é "
+"Se a resposta é correcta a puntuación aumenta.<br>Se a resposta é "
 "incorrecta, a puntuación diminuirá e formularase unha pregunta máis ao final "
 "xunto coas preguntas que se responderon incorrectamente.<br>Faranse un "
 "máximo de 25 preguntas, despois non se engadirá ningunha pregunta máis."
@@ -24934,6 +24515,9 @@ msgid ""
 "first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</"
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
+"3. Lembra sempre esta frase para aprender as posicións dos planetas pola "
+"primeira letra de cada palabra:<b>m</b>ariñeiros <b>v</b>ellos <b>t</b>oman "
+"<b>m</b>azás <b>x</b>antando <b>s</b>ós <b>u</b>nha <b>n</b>oite.<br>"
 
 #: activities/solar_system/SolarSystem.qml:359
 msgctxt "SolarSystem|"
@@ -24941,18 +24525,12 @@ msgid "Hint"
 msgstr "Consello"
 
 #: activities/solar_system/SolarSystem.qml:367
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View solar system"
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Ver o Sistema Solar"
 
 #. Activity title
 #: activities/submarine/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Pilot a Submarine"
 msgctxt "ActivityInfo|"
 msgid "Pilot a submarine"
 msgstr "Pilota un submarino"
@@ -24965,21 +24543,15 @@ msgstr "Conduce o submarino ata o punto final."
 
 #. Help goal
 #: activities/submarine/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to control a submarine"
 msgctxt "ActivityInfo|"
 msgid "Learn how to control a submarine."
-msgstr "Aprende a contronal un submarino"
+msgstr "Aprende a controlar un submarino."
 
 #. Help prerequisite
 #: activities/submarine/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move and click using the mouse, physics basics"
 msgctxt "ActivityInfo|"
 msgid "Move and click using the mouse, physics basics."
-msgstr "Mover e premer co rato, física básica"
+msgstr "Mover e premer co rato, física básica."
 
 #. Help manual
 #: activities/submarine/ActivityInfo.qml:24
@@ -24988,71 +24560,73 @@ msgid ""
 "Control the various parts of the submarine (the engine, ballast tanks and "
 "diving planes) to reach the end point."
 msgstr ""
+"Controlar as partes do submarino (motor, tanques de lastre, planos de "
+"inmersión) para acadar o punto final."
 
 #: activities/submarine/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "<b>Engine</b>"
-msgstr ""
+msgstr "<b>Motor</b>"
 
 #: activities/submarine/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "D or Right arrow: increase the velocity"
-msgstr ""
+msgstr "D ou frecha dereita: aumentar a velocidade."
 
 #: activities/submarine/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "A or Left arrow: decrease the velocity"
-msgstr ""
+msgstr "A ou frecha esquerda: diminuír a velocidade."
 
 #: activities/submarine/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "<b>Ballast tanks</b>"
-msgstr ""
+msgstr "<b>Tanques de lastre</b>"
 
 #: activities/submarine/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "W or Up arrow: switch filling of the central ballast tank"
-msgstr ""
+msgstr "W ou frecha cara arriba: encher o tanque de lastre central."
 
 #: activities/submarine/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "S or Down arrow: switch flushing of the central ballast tank"
-msgstr ""
+msgstr "S ou frecha cara abaixo: baleirar o tanque de lastre central."
 
 #: activities/submarine/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "R: switch filling of the left ballast tank"
-msgstr ""
+msgstr "R: encher o tanque de lastre esquerdo."
 
 #: activities/submarine/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F: switch flushing of the left ballast tank"
-msgstr ""
+msgstr "F: baleirar o tanque de lastre esquerdo."
 
 #: activities/submarine/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "T: switch filling of the right ballast tank"
-msgstr ""
+msgstr "T: encher o tanque de lastre dereito."
 
 #: activities/submarine/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "G: switch flushing of the right ballast tank"
-msgstr ""
+msgstr "G: baleirar o tanque de lastre dereito."
 
 #: activities/submarine/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "<b>Diving planes</b>"
-msgstr ""
+msgstr "<b>Planos de inmersión</b>"
 
 #: activities/submarine/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
 msgid "+: increase diving planes angle"
-msgstr ""
+msgstr "+: aumentar o ángulo dos planos de inmersión."
 
 #: activities/submarine/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "-: decrease diving planes angle"
-msgstr ""
+msgstr "-: diminuír o ángulo dos planos de inmersión."
 
 #: activities/submarine/Controls.qml:166
 msgctxt "Controls|"
@@ -25098,17 +24672,11 @@ msgstr ""
 "velocidade."
 
 #: activities/submarine/submarine.js:27
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The item next to the engine is the Ballast tanks."
 msgctxt "submarine|"
 msgid "The item next to the engine is the ballast tank."
-msgstr "O elemento canda o motor son os tanques de lastre."
+msgstr "O elemento canda o motor é o tanque de lastre."
 
 #: activities/submarine/submarine.js:28
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid "The Ballast tanks are used to float or dive under water."
 msgctxt "submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr "Os tanques de lastre úsanse para flotar ou somerxerse baixo a auga."
@@ -25123,26 +24691,15 @@ msgstr ""
 "de lastre están cheos de auga, o submarino somerxerase."
 
 #: activities/submarine/submarine.js:30
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the upper valve on or off will alternatively allow or stop water "
-#| "from filling in the Ballast tanks, thus allowing it to dive underwater."
 msgctxt "submarine|"
 msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
 "Xirar a válvula superior a un ou outro lado permitirá ou impedirá que a auga "
-"encha os tanques de lastre, permitíndolle somerxerse baixo a auga."
+"encha o tanque de lastre, permitíndolle somerxerse baixo a auga."
 
 #: activities/submarine/submarine.js:31
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "Turning the lower valve on or off will alternatively allow or stop water "
-#| "from flushing out the Ballast tanks, thus allowing it to float on the "
-#| "surface of the water."
 msgctxt "submarine|"
 msgid ""
 "Turning the lower valve on or off will alternatively allow or stop the water "
@@ -25150,7 +24707,7 @@ msgid ""
 "of the water."
 msgstr ""
 "Xirar a válvula inferior a un ou outro lado permitirá ou impedirá que a auga "
-"saia dos tanques de lastre, permitíndolle flotar sobre a superficie da auga."
+"saia do tanque de lastre, permitíndolle flotar sobre a superficie da auga."
 
 #: activities/submarine/submarine.js:34
 msgctxt "submarine|"
@@ -25159,21 +24716,16 @@ msgid ""
 "submarine"
 msgstr ""
 "O elemento da dereita de todo no panel de control controla os planos de "
-"afundimento do submarino"
+"inmersión do submarino"
 
 #: activities/submarine/submarine.js:35
-#, fuzzy
-#| msgctxt "submarine|"
-#| msgid ""
-#| "The Diving Planes in a submarine is used to control the depth of the "
-#| "submarine accurately once it is underwater."
 msgctxt "submarine|"
 msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr ""
-"Os planos de afundimento dun submarino úsanse para controlar a profundidade "
-"do submarino de forma precisa unha vez está baixo a auga."
+"Os planos de inmersión dun submarino úsanse para controlar a profundidade do "
+"submarino de forma precisa unha vez está baixo a auga."
 
 #: activities/submarine/submarine.js:36
 msgctxt "submarine|"
@@ -25211,11 +24763,6 @@ msgstr "Sudoku, coloca símbolos non repetidos nunha grade.7"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Symbols must be unique in a row, in a column, and (if defined) each "
-#| "region."
 msgctxt "ActivityInfo|"
 msgid ""
 "Symbols must be unique in a row, in a column, and (if defined) in each "
@@ -25226,17 +24773,6 @@ msgstr ""
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in "
-#| "each cell of a grid. In the official Sudoku the grid is 9x9 made up of "
-#| "3x3 subgrids (called 'regions'). In GCompris we start at lower levels "
-#| "with a simpler version using symbols and with no regions. In all cases "
-#| "the grid is presented with various symbols or numerals given in some "
-#| "cells (the 'givens'). Each row, column and region must contain only one "
-#| "instance of each symbol or numeral (Source &lt;http://en.wikipedia.org/"
-#| "wiki/Sudoku&gt;)."
 msgctxt "ActivityInfo|"
 msgid ""
 "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
@@ -25249,65 +24785,51 @@ msgid ""
 msgstr ""
 "O obxectivo do quebracabezas é inserir un símbolo ou un número do 1 ao 9 en "
 "cada unha das celas dunha grade. No Sudoku oficial trátase dunha grade de "
-"9×9 celas dividida en subgrades de 3×3 (chamadas «rexións»). En GCompris "
-"comezamos nos niveis inferiores cunha versión simple usando símbolos e sen "
-"rexións. En todos os casos a grade preséntase con varios símbolos ou números "
-"xa descubertos en certas celas (os «descubertos»). Cada fila, columna ou "
-"rexión só pode conter unha instancia de cada símbolo ou número. — &lt;http://"
-"en.wikipedia.org/wiki/Sudoku&gt;."
+"9×9 celas dividida en grades aniñadas de 3×3 (chamadas «rexións»). En "
+"GCompris comezamos nos niveis inferiores cunha versión simple usando "
+"símbolos e sen rexións. En todos os casos a grade preséntase con varios "
+"símbolos ou números xa descubertos en certas celas (os «descubertos»). Cada "
+"fila, columna ou rexión só pode conter unha instancia de cada símbolo ou "
+"número. — &lt;http://en.wikipedia.org/wiki/Sudoku&gt;."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability"
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and logical ability."
-msgstr "Completar o quebracabezas require paciencia e habilidade lóxica"
+msgstr "Completar o quebracabezas require paciencia e habilidade lóxica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid data."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Selecciona un número ou un símbolo á esquerda e preme a posición na que o "
-"queiras colocar. GCompris impedirache inserir datos incorrectos."
+"Selecciona un número ou un símbolo da lista e preme a posición na que o "
+"queiras colocar. GCompris impedirache escoller unha resposta incorrecta."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Small grids using symbols."
-msgstr ""
+msgstr "Grades pequenas usando símbolos."
 
 #: activities/sudoku/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using symbols."
-msgstr ""
+msgstr "Grades medianas usando símbolos."
 
 #: activities/sudoku/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using numbers and symbols."
-msgstr ""
+msgstr "Grades medianas usando números e símbolos."
 
 #: activities/sudoku/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the division of numbers"
 msgctxt "Data|"
 msgid "Large grids using numbers."
-msgstr "Aprende a dividir números"
+msgstr "Grades grandes usando números."
 
 #. Activity title
 #: activities/superbrain/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Super Brain"
 msgctxt "ActivityInfo|"
 msgid "Super brain"
 msgstr "Super cerebro"
@@ -25317,29 +24839,12 @@ msgstr "Super cerebro"
 #. Help goal
 #: activities/superbrain/ActivityInfo.qml:17
 #: activities/superbrain/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tux has hidden several items. Find them again in the correct order"
 msgctxt "ActivityInfo|"
 msgid "Tux has hidden several items. Find them in the correct order."
-msgstr "Tux agochou varios elementos. Atópaos de novo na orde correcta."
+msgstr "Tux agochou varios elementos. Atópaos na orde correcta."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the items until you find what you think is the correct answer. "
-#| "Then, click on the OK button. In the lower levels, Tux gives you an "
-#| "indication if you found a hiding place by marking the item with a black "
-#| "box. In the levels 4 and 8 an item may be hidden several times.<br/>You "
-#| "can use the right mouse button to flip the items in the opposite order or "
-#| "the item chooser to directly pick an item. Press and hold a mouse button "
-#| "or on the touch screen to automatically choose the last item selected on "
-#| "a column. Double click or tap on a previously selected item in your guess "
-#| "history to mark it as 'correct'. Such marked items are automatically "
-#| "selected in your current and future guesses until you un-mark them, again "
-#| "by double clicking or tapping."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the items until you find what you think is the correct answer. "
@@ -25357,30 +24862,27 @@ msgid ""
 "you un-mark them, by double clicking on them again."
 msgstr ""
 "Preme os elementos ata que atopes o que penses que é a resposta correcta. A "
-"continuación, preme o botón «Aceptar». Nos niveis inferiores, Tux dáche unha "
-"pista se atopaches un lugar onde hai algo agochado marcando o elemento cunha "
-"caixa negra. Nos niveis 4 e 8, os elementos poden estar agochados varias "
-"veces.<br/> Podes usar o botón secundario do rato para inverter a orde dos "
-"elementos ou o selector de elementos para escoller directamente un elemento. "
-"Deixa premido un botón do rato ou un dedo sobre a pantalla táctil para "
-"escoller automaticamente o último elemento seleccionada nunha columna. Preme "
-"ou toca dúas veces seguidas nun elemento seleccionado previamente no "
-"historial de intentos para marcalo como «correcto». Os elementos marcados "
-"como correctos selecciónanse automaticamente no intento actual e nos futuros "
-"ata que os desmarcas, volvendo a premelos ou tocalos dúas veces seguidas."
+"continuación, preme o botón «Aceptar». Un punto negro significa que "
+"atopaches o elemento correcto na posición correcta, e un punto branco "
+"significa que o elemento é correcto pero a posición non. Nos niveis "
+"inferiores, Tux dáche tamén unha indicación cun cadrado negro nos elementos "
+"correctos na posición correcta, e un cadrado branco nos elementos correctos "
+"na posición incorrecta. Nos niveis 4 e 8, os elementos poden estar agochados "
+"varias veces.<br/>Podes usar o botón dereito do rato para inverter a orde "
+"dos elementos ou o selector de elementos para escoller directamente un "
+"elemento da lista. Preme un elemento durante dous segundos para escoller "
+"automaticamente o último elemento seleccionado nesa posición. Fai clic duplo "
+"nun elemento seleccionado previamente no historial de intentos para marcalo "
+"como «correcto». Os elementos marcados como correctos selecciónanse "
+"automaticamente no intento actual e nos futuros ata que os desmarcas facendo "
+"clic duplo neles de novo."
 
 #: activities/superbrain/Superbrain.qml:139
-#, fuzzy
-#| msgctxt "Superbrain|"
-#| msgid "This item is well placed"
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este elemento está ben colocado."
 
 #: activities/superbrain/Superbrain.qml:141
-#, fuzzy
-#| msgctxt "Superbrain|"
-#| msgid "This item is misplaced"
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este elemento está mal colocado."
@@ -25393,12 +24895,9 @@ msgstr "Xogo de quebracabezas tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape"
 msgctxt "ActivityInfo|"
 msgid "The objective is to form a given shape."
-msgstr "O obxectivo consiste en conseguir a forma indicada coas pezas"
+msgstr "O obxectivo consiste en conseguir a forma indicada coas pezas."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -25433,13 +24932,6 @@ msgstr ""
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the tangram to form. Move a piece by dragging it. The symmetrical "
-#| "button appears on items that supports it. Click on the rotation button or "
-#| "drag around it to show the rotation you want. Check baby tangram activity "
-#| "for an introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -25447,10 +24939,10 @@ msgid ""
 "selected piece. Check the activity 'Baby Puzzle' for a simpler introduction "
 "to tangram."
 msgstr ""
-"Selecciona o tangram para formar. Arrastra unha peza para movela. O botón de "
-"simetría aparece en elementos que o permiten. Preme o botón de xirar ou "
-"arrastra ao seu redor para mostrar o xiro que queres. Bota un ollo á "
-"actividade de tangram para bebés a modo de introdución a tangram."
+"Arrastra unha peza para movela. O botón de simetría aparece nos elementos "
+"que o permiten. Preme o botón de xirar ou arrastra ao seu redor para rotar a "
+"peza seleccionada. Bota un ollo á actividade «Quebracabezas para bebés» para "
+"unha mellor introdución a tangram."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -25460,12 +24952,9 @@ msgstr "Practica a suma cun xogo de diana"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hit the target and count your points"
 msgctxt "ActivityInfo|"
 msgid "Hit the target and count your points."
-msgstr "Alcanza o obxectivo e conta os teus puntos"
+msgstr "Alcanza o obxectivo e conta os teus puntos."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
@@ -25475,15 +24964,10 @@ msgstr "Lánzalle dardos á diana e conta os teus puntos."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Can move the mouse, can read numbers and count up to 15 for the first "
-#| "level"
 msgctxt "ActivityInfo|"
 msgid ""
 "Can move the mouse, can read numbers and count up to 15 for the first level."
-msgstr "Podes mover o rato, ler números e contar ata 15 para o primeiro nivel"
+msgstr "Podes mover o rato, ler números e contar ata 15 para o primeiro nivel."
 
 # skip-rule: trasno-launch
 #. Help manual
@@ -25499,62 +24983,53 @@ msgstr ""
 "pedíndoche que contes a túa puntuación. Insire a puntuación co teclado."
 
 #: activities/target/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
 msgctxt "Data|"
 msgid "Maximum value: 10."
-msgstr "Valor arábigo: %1"
+msgstr "Valor máximo: 10."
 
 #: activities/target/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50."
-msgstr ""
+msgstr "Valor máximo: 50."
 
 #: activities/target/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 500."
-msgstr ""
+msgstr "Valor máximo: 500."
 
 #: activities/target/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr ""
+msgstr "Valor máximo: 50000."
 
 #: activities/target/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 500000."
-msgstr ""
+msgstr "Valor máximo: 500000."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Atopa a trompeta"
+msgstr "Atopar o complemento de 10"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Atopar o complemento de 10 de cada número."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Aprender a atopar o complemento de 10."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ao 10 e sumas."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25565,6 +25040,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Unha vez completadas todas as liñas, preme o botón «Aceptar» para validas as "
+"respostas. Se algunhas respostas son incorrectas, aparecerá unha icona de "
+"cruz nas liñas correspondentes. Para corrixir os erros, preme os números "
+"incorrectos para retiralos e repite os pasos anteriores."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25573,42 +25052,36 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Crea pares de números que sumados vallan 10. Escolle un número da lista, e "
+"despois escolle un oco baleiro nunha operación para mover o numero escollido "
+"aí."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "O número é demasiado pequeno"
+msgstr "O primeiro número do 1 ao 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Number too low"
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "O número é demasiado pequeno"
+msgstr "O primeiro número do 5 ao 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "División de números"
+msgstr "Atopar os dous números."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Intercambiar o complementos de 10"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Intercambiar os números para crear parellas iguais a dez."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -25617,15 +25090,14 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Aprender a usar o complemento de 10 para optimizar a orde dos números nunha "
+"operación."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ao 30 e sumas."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25637,57 +25109,51 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Crear parellas de números iguais a 10 con cada paréntese. Selecciona un "
+"número, logo outro da mesma operación para intercambiar as súas posicións. "
+"Unha vez completas todas as liñas, preme o botón «Aceptar» para validar as "
+"respostas. Se algunhas respostas son incorrectas, aparecerá unha icona de "
+"cruz nas liñas correspondentes. Corrixe os erros e preme o botón «Aceptar» "
+"de novo."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 non é un número primo."
+msgstr "2 parellas para facer 4 números."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 non é un número primo."
+msgstr "2 parellas para facer 5 números."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 non é un número primo."
+msgstr "3 parellas para facer 6 números."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Usar o complementos de 10"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Usa un complemento de 10 para simplificar a operación."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Aprende un uso práctico do complemento de 10."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 1000 for the last level."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr "Números do 1 ao 1000 para o último nivel."
+msgstr "Números do 1 ao 50 e sumas."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25697,36 +25163,27 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Descompón as sumas para crear parellas de números que sumen 10 entre "
+"parénteses. Escolle un número da lista, e despois escolle un oco baleiro "
+"nunha operación para mover o numero escollido aí."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Guess a number between 1 and %1"
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Adiviña un número entre 1 e %1"
+msgstr "Resultado entre 11 e 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Guess a number between 1 and %1"
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Adiviña un número entre 1 e %1"
+msgstr "Resultado entre 20 e 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "guessnumber|"
-#| msgid "Guess a number between 1 and %1"
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Adiviña un número entre 1 e %1"
+msgstr "Resultado entre 30 e 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tic Tac Toe (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
 msgstr "Pai nai fillo (contra Tux)"
@@ -25734,21 +25191,13 @@ msgstr "Pai nai fillo (contra Tux)"
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Place three marks in a row"
 msgctxt "ActivityInfo|"
 msgid "Place three marks in a row."
-msgstr "Coloca tres marcas en liña"
+msgstr "Coloca tres marcas en liña."
 
 #. Help goal
 #: activities/tic_tac_toe/ActivityInfo.qml:23
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Place three respective marks in any horizontal, vertical, or diagonal row "
-#| "to win the game"
 msgctxt "ActivityInfo|"
 msgid ""
 "Place three marks in any horizontal, vertical, or diagonal row to win the "
@@ -25759,40 +25208,27 @@ msgstr ""
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. First player to create a line of 3 marks wins"
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
-"Xoga contra un amigo. Por quendas, premede a caixa que queirades marcar. "
-"Gaña o primeiro xogador que consiga crear unha liña de 3 marcas."
+"Xoga contra Tux. Por quendas, preme a caixa que queiras marcar. Gaña o "
+"primeiro xogador que consiga crear unha liña de 3 marcas.."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tux will play better when you increase the level."
-msgstr ""
+msgstr "Canto máis alto sexa o nivel mellor xogará Tux."
 
 #. Activity title
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Tic Tac Toe (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr "Pai nai fillo (cun amigo)"
+msgstr "Pai nai fillo (cunha amizade)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click on the square which you want to "
-#| "mark. First player to create a line of 3 marks wins"
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. Take turns to click on the square which you want to "
@@ -25809,13 +25245,9 @@ msgstr "Un crebacabezas de bloques que se moven"
 
 #. Help title
 #: activities/traffic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Remove the red car from the parking lot through the gate on the right"
 msgctxt "ActivityInfo|"
 msgid "Remove the red car from the parking lot through the gate on the right."
-msgstr "Retira o coche vermello do aparcadoiro pola porta da dereita"
+msgstr "Retira o coche vermello do aparcadoiro pola porta da dereita."
 
 #. Help manual
 #: activities/traffic/ActivityInfo.qml:22
@@ -25845,12 +25277,9 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle"
 msgctxt "ActivityInfo|"
 msgid "Learn the water cycle."
-msgstr "Aprender o ciclo da auga"
+msgstr "Aprender o ciclo da auga."
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -25866,11 +25295,6 @@ msgstr ""
 "estea listo e Tux estea na ducha, preme o botón da ducha por el."
 
 #: activities/watercycle/Watercycle.qml:81
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Sun is the main component of water cycle. Click on the sun to start the "
-#| "water cycle."
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -25885,11 +25309,6 @@ msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "O Sol fai que a auga do mar quente e se evapore."
 
 #: activities/watercycle/Watercycle.qml:83
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| " Water vapor condenses to form cloud and when clouds become heavy, it "
-#| "rains. Click on the cloud."
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -25899,12 +25318,6 @@ msgstr ""
 "pesadas, chove. Preme a nube."
 
 #: activities/watercycle/Watercycle.qml:84
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Rain causes rivers to swell up and this water is transported to us via "
-#| "motor pumps through water-tower. Click on the motor pump to supply water "
-#| "to residents."
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -25930,9 +25343,6 @@ msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Xenial, preme a ducha cando Tux chegue a casa."
 
 #: activities/watercycle/Watercycle.qml:88
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid "Fantastic, you have completed water cycle. You can continue playing."
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -25950,12 +25360,6 @@ msgstr ""
 "do Sol fornece enerxía para evaporar a auga de masas de auga como os océanos."
 
 #: activities/watercycle/Watercycle.qml:118
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Plants also lose water to the air through transpiration. The water vapor "
-#| "eventually, cools forming tiny droplets in clouds. When the clouds meet "
-#| "cool air over land, precipitation is triggered and fall down as rain."
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -25963,9 +25367,9 @@ msgid ""
 "over the land, precipitation is triggered and falls down as rain."
 msgstr ""
 "As plantas tamén perden auga, que pasa ao aire pola transpiración. O vapor "
-"de auga acaba arrefiando, formando pequenas pingas nas nubes. Cando as nubes "
-"dan con aire frío sobre a terra, prodúcese a precipitación que cae en forma "
-"de choiva."
+"de auga arrefría, formando pequenas pingas nas nubes. Cando as nubes dan con "
+"aire frío sobre a terra, prodúcese a precipitación que cae en forma de "
+"choiva."
 
 #: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
@@ -25979,13 +25383,6 @@ msgstr ""
 "mares a través dos ríos."
 
 #: activities/watercycle/Watercycle.qml:123
-#, fuzzy
-#| msgctxt "Watercycle|"
-#| msgid ""
-#| "Your goal is to complete water cycle before Tux reaches home. Click on "
-#| "the different components which make up the water cycle. First click on "
-#| "sun, then cloud, water pumping station near the river, sewage treatment, "
-#| "and at last regulate the switch to provide water to Tux's shower."
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -25993,100 +25390,70 @@ msgid ""
 "sun, then on the cloud, the water pumping station near the river, the sewage "
 "treatment, and at last regulate the switch to provide water to Tux's shower."
 msgstr ""
-"O teu obxectivo consite en completar o ciclo da auga antes de que Tux chegue "
-"a casa. Preme os distintos compoñentes que conforman o ciclo da auga. Preme "
-"primeiro o Sol, logo as nubes, a continuación a estación de bombeo de auga "
-"que hai canda o río, a planta de depuración, e finalmente abre a billa para "
-"fornecer auga á ducha de Tux."
+"O teu obxectivo consiste en completar o ciclo da auga antes de que Tux "
+"chegue a casa. Preme os distintos compoñentes que conforman o ciclo da auga. "
+"Preme primeiro o Sol, logo as nubes, a continuación a estación de bombeo de "
+"auga que hai canda o río, a planta de depuración, e finalmente abre a billa "
+"para fornecer auga á ducha de Tux."
 
 #. Activity title
 #: activities/wordsgame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Falling Words"
 msgctxt "ActivityInfo|"
 msgid "Falling words"
 msgstr "Palabras a caer"
 
 #. Help title
 #: activities/wordsgame/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling words before they reach the ground"
 msgctxt "ActivityInfo|"
 msgid "Type the falling words before they reach the ground."
-msgstr "Escribe as palabras que caen antes de chegar ao chan"
+msgstr "Escribe as palabras que caen antes de chegar ao chan."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard training"
 msgctxt "ActivityInfo|"
 msgid "Keyboard training."
-msgstr "Adestramento co teclado"
+msgstr "Adestramento co teclado."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard manipulation"
 msgctxt "ActivityInfo|"
 msgid "Keyboard manipulation."
-msgstr "Manexo do teclado"
+msgstr "Manexo do teclado."
 
 #. Help manual
 #: activities/wordsgame/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the complete word as it falls, before it reaches the ground"
 msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
-msgstr "Escribe a palabra completa mentres cae e antes de que chegue ao chan"
+msgstr "Escribe a palabra completa mentres cae e antes de que chegue ao chan."
 
 #: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
 #: core/ChangeLog.qml:96 core/ChangeLog.qml:102
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many little fixes and improvements."
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
-msgstr "Moitas correccións e melloras pequenas."
+msgstr "Moitas melloras de usabilidade."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
 #: core/ChangeLog.qml:97 core/ChangeLog.qml:103
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Memory Game with images"
 msgctxt "ChangeLog|"
 msgid "Many new images"
-msgstr "Xogo de memoria con imaxes"
+msgstr "Moitas imaxes novas."
 
 #: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
 #: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many little fixes."
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Moitas correccións pequenas."
+msgstr "Moitas correccións de fallos."
 
 #: core/ChangeLog.qml:37
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Engadíronse traducións para o gaélico escocés."
+msgstr "Engadíronse traducións ao árabe e ao esperanto."
 
 #: core/ChangeLog.qml:38 core/ChangeLog.qml:45
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Engadíronse traducións para o gaélico escocés."
+msgstr "Actualizáronse moitas traducións."
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -26094,21 +25461,23 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
+"Nova opción da liña de ordes (--difficulty {valor|mín-máx}) para iniciar "
+"GCompris cunha dificultade concreta."
 
 #: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Corrección dun problema na actividade de comparación."
 
 #: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr ""
+msgstr "Engadiuse o mapa de España á actividade de xeografía."
 
 #: core/ChangeLog.qml:56
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Engadíronse voces en ucraíno."
 
 #: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
@@ -26116,6 +25485,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Engadiuse unha opción da liña de ordes para listar as actividades e iniciar "
+"unha concreta."
 
 #: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
@@ -26123,77 +25494,74 @@ msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
+"Reduciuse o tamaño dos paquetes en todas as plataformas e o dos grupos "
+"externos de imaxes de palabras."
 
 #: core/ChangeLog.qml:65
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr ""
+msgstr "Mellorouse a calidade das imaxes en varias actividades."
 
 #: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"Corrixíronse algunhas transicións da enerxía renovábel e o ciclo da auga en "
+"algunhas plataformas."
 
 #: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
+"Corrixiuse que se ignorasen as teclas mortas en Linux para as actividades de "
+"teclear."
 
 #: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
+"Corrixiuse o restabelecemento do nivel ao cambiar de nivel manualmente nas "
+"asociacións lóxicas."
 
 #: core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr ""
+"Corrixíronse as actividades de secuencia alfabética, de números pares e "
+"impares e de números en orde."
 
 #: core/ChangeLog.qml:76 core/ChangeLog.qml:84
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many little fixes."
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
-msgstr "Moitas correccións pequenas."
+msgstr "Moitas correccións de fallos."
 
 #: core/ChangeLog.qml:78
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr "Engadíronse traducións para o gaélico escocés."
+msgstr "Actualizouse a tradución ao ruso."
 
 #: core/ChangeLog.qml:79
-#, fuzzy
-#| msgctxt "DialogConfig|"
-#| msgid "Norwegian Nynorsk"
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "Noruegués Nynorsk"
+msgstr "Engadíronse voces novas para o noruegués nynorsk."
 
 #: core/ChangeLog.qml:83
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Engadíronse traducións para o gaélico escocés."
+msgstr "Engadíronse traducións ao bretón, ao checo e ao macedonio."
 
 #: core/ChangeLog.qml:88
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Engadíronse traducións para o gaélico escocés."
+msgstr "Engadiuse unha tradución ao azarí."
 
 #: core/ChangeLog.qml:89
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
+"Engadíronse mapas novos e actualizáronse os mapas das actividades "
+"xeográficas."
 
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
@@ -26201,6 +25569,8 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
+"Engadiuse un novo conxunto de datos que contén operacións de bucle para o "
+"labirinto de programación, e permitiuse traducir as imaxes do titorial."
 
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
@@ -26208,57 +25578,59 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
+"Engadiuse un nivel para ensinar os bucles de voltaxe na actividade de "
+"electricidade analóxica."
 
 #: core/ChangeLog.qml:101
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "The activity section menu is visible"
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr "O menú da sección de actividades é visíbel"
+msgstr ""
+"Renovouse o menú de configuración das actividades, cunha selección de "
+"conxuntos de datos."
 
 #: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
-msgstr ""
+msgstr "Engadíronse subcategorías para organizar as actividades."
 
 #: core/ChangeLog.qml:108
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Scottish Gaelic."
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr "Engadíronse traducións para o gaélico escocés."
+msgstr "Engadiuse unha tradución ao macedonio."
 
 #: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
+"Engadíronse novas actividades: o labirinto de programación e o tangram para "
+"bebés."
 
 #: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
-msgstr ""
+msgstr "Engadíronse opcións para a música de fondo e o volume."
 
 #: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
-msgstr ""
+msgstr "Engadíronse novas opcións de velocidade en varias actividades."
 
 #: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
-msgstr ""
+msgstr "Engadiuse unha opción ao xadrez para amosar as pezas capturadas."
 
 #: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
+"Engadíronse novas imaxes nas actividades de cores, cores avanzadas e xogo de "
+"diana."
 
 #: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr ""
+msgstr "Engadíronse novas voces para o inglés dos EUA."
 
 #: core/ChangeLog.qml:115 core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
@@ -26396,9 +25768,6 @@ msgid ""
 msgstr "Esta actividade usa ficheiros de son de idioma que non ten instalados."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
@@ -26465,12 +25834,10 @@ msgid "GCompris %1"
 msgstr "GCompris %1"
 
 #: core/DialogAbout.qml:57
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid "Based on Qt %1"
+#, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr "Desenvolvido usando Qt %1"
+msgstr "Baseado en Qt %1 e %2"
 
 #: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
@@ -26485,6 +25852,9 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
+"Para axudar a financiar o desenvolvemento de <b>GCompris</b>, visita <a "
+"href='https://gcompris.net/donate-en.html'>https://gcompris.net/donate-en."
+"html</a>."
 
 #: core/DialogAbout.qml:72
 msgctxt "DialogAbout|"
@@ -26537,16 +25907,7 @@ msgstr ""
 "rexistrar o seu pedido. Asegúrese de usar a Severidade chamada «Mellora»."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26558,7 +25919,7 @@ msgid ""
 "what you need."
 msgstr ""
 "Non hai que ser desenvolvedor para ser membro do Equipo de KDE. Pode unirse "
-"ás equipas nacionais para traducir as interfaces dos programas. Pode "
+"aos equipos de idiomas para traducir as interfaces dos programas. Pode "
 "fornecer gráficos, temas, sons, e mellorar a documentación. Vostede decide!"
 "<br/><br/>Visite <a href=\"%1\">%1</a> para obter información sobre "
 "proxectos nos que pode participar.<br/><br/>Se precisa máis información ou "
@@ -26620,33 +25981,24 @@ msgstr "Configuración"
 #, qt-format
 msgctxt "DialogChooseLevel|"
 msgid "%1 settings"
-msgstr ""
+msgstr "Configuración de %1"
 
 #: core/DialogChooseLevel.qml:202
 msgctxt "DialogChooseLevel|"
 msgid "Dataset"
-msgstr ""
+msgstr "Conxunto de datos"
 
 #: core/DialogChooseLevel.qml:215
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "DialogChooseLevel|"
 msgid "Options"
-msgstr "acción"
+msgstr "Opcións"
 
 #: core/DialogChooseLevel.qml:343
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "France"
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
-msgstr "Francia"
+msgstr "Cancelar"
 
 #: core/DialogChooseLevel.qml:351
-#, fuzzy
-#| msgctxt "BabyWordprocessor|"
-#| msgid "Save"
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Gardar"
@@ -26654,7 +26006,7 @@ msgstr "Gardar"
 #: core/DialogChooseLevel.qml:365
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
-msgstr ""
+msgstr "Gardar e iniciar"
 
 #: core/DialogHelp.qml:49
 msgctxt "DialogHelp|"
@@ -26711,9 +26063,6 @@ msgid "Images"
 msgstr "Imaxes"
 
 #: core/DownloadDialog.qml:201
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Downloading ..."
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
 msgstr "Descargando…"
@@ -26787,13 +26136,13 @@ msgstr "A suma de comprobación do ficheiro descargado non coincide: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Non se atoparon voces en %1."
 
 #: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Non se atoparon datos en %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26884,12 +26233,9 @@ msgid "Your system default"
 msgstr "O predeterminado do sistema"
 
 #: core/LanguageList.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "GCompris Main Menu"
 msgctxt "LanguageList|"
 msgid "GCompris' language"
-msgstr "Menú principal de GCompris"
+msgstr "Idioma de GCompris"
 
 #: core/main.cpp:164
 msgctxt "QObject|"
@@ -26932,18 +26278,13 @@ msgid "Enable the kiosk mode."
 msgstr "Activar o modo de quiosco."
 
 #: core/main.cpp:194
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card, needs Qt 5.8 minimum)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 "Usar o renderizador de software en vez de openGL (máis lento pero debería "
-"funcionar con calquera tarxeta gráfica, necesita Qt 5.8 como mínimo)."
+"funcionar con calquera tarxeta gráfica)."
 
 #: core/main.cpp:197
 msgctxt "QObject|"
@@ -26957,12 +26298,12 @@ msgstr ""
 #: core/main.cpp:201
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Indicar a actividade na que iniciar GCompris."
 
 #: core/main.cpp:206
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Imprime todas as actividades dispoñíbeis na saída estándar."
 
 #: core/main.cpp:210
 msgctxt "QObject|"
@@ -26970,6 +26311,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Indicar o intervalo de dificultade de actividade para amosar durante a "
+"sesión. Debe ser ou un único valor (2) ou un intervalo (3-6). Os valores "
+"deben estar entre 1 e 6."
 
 #: core/main.cpp:214
 msgctxt "QObject|"
@@ -26977,34 +26321,29 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Indicar o nivel no que iniciar a actividade. Só se usa en combinación coa "
+"opción «--launch»."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download them now?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Quere descargalas agora?"
+msgstr ""
+"Queres descargar ou actualizar automaticamente os seguintes recursos "
+"externos ao iniciar GCompris?"
 
 #: core/main.qml:271
 msgctxt "main|"
 msgid "Voices for your language"
-msgstr ""
+msgstr "Voces no seu idioma"
 
 #: core/main.qml:272
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Use full word image set"
 msgctxt "main|"
 msgid "Full word image set"
-msgstr "Usar o grupo completo de imaxes de palabras"
+msgstr "Grupo completo de imaxes de palabras"
 
 #: core/main.qml:273
-#, fuzzy
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Background music"
 msgctxt "main|"
 msgid "Background music"
 msgstr "Música de fondo"
@@ -27030,20 +26369,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Está a executar GCompris por primeira vez."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Debería asegurarse de que a configuración da aplicación, especialmente o "
-"idioma, sexan correctas, e que todos os ficheiros de son específicos do seu "
-"idioma estean instalados. Pode facelo desde o diálogo de configuración."
+"idioma, sexan correctas. Pode facelo desde o diálogo de configuración."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -27067,19 +26399,18 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Algunhas actividades teñen novos conxuntos de datos dispoñíbeis. Quere "
+"restabelecer a súa selección de grupos de datos?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Aplicar"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "France"
 msgctxt "main|"
 msgid "Cancel"
-msgstr "Francia"
+msgstr "Cancelar"
 
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
