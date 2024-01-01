@@ -53,7 +53,7 @@ QtObject {
             { "text": "Français", "locale": "fr_FR.UTF-8" },
             //{ "text": "Gaeilge", "locale": "ga_IE.UTF-8" },
             //{ "text": "Gàidhlig", "locale": "gd_GB.UTF-8" },
-            //{ "text": "Galego", "locale": "gl_ES.UTF-8" },
+            { "text": "Galego", "locale": "gl_ES.UTF-8" },
             { "text": "עברית", "locale": "he_IL.UTF-8" },
             //{ "text": "हिन्दी", "locale": "hi_IN.UTF-8" },
             { "text": "Hrvatski", "locale": "hr_HR.UTF-8" },
