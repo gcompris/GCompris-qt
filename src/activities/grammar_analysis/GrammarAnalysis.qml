@@ -155,7 +155,7 @@ ActivityBase {
         Item {
             id: mainArea
             anchors.top: parent.top
-            anchors.bottom: okButton.top
+            anchors.bottom: scoreButtonContainer.top
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.margins: background.baseMargins
@@ -354,32 +354,39 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
-        BarButton {
-            id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+        Item {
+            id: scoreButtonContainer
             visible: !tutorialScreen.visible
-            anchors.right: parent.right
+            width: score.width + background.baseMargins + okButton.width
+            height: okButton.height
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: background.bottom
-            anchors.rightMargin: background.baseMargins
             anchors.bottomMargin: 1.5 * bar.height
-            sourceSize.width: width
-            onClicked: Activity.checkResult()
-            mouseArea.enabled: !items.buttonsBlocked
-        }
 
-        Score {
-            id: score
-            numberOfSubLevels: items.datasetModel.count
-            currentSubLevel: items.currentExercise
-            anchors.right: okButton.left
-            anchors.rightMargin: background.baseMargins
-            anchors.verticalCenter: okButton.verticalCenter
-            anchors.bottom: undefined
-            anchors.top: undefined
-            anchors.left: undefined
-            visible: !tutorialScreen.visible
-            onStop: Activity.nextSubLevel()
+            BarButton {
+                id: okButton
+                source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                width: 60 * ApplicationInfo.ratio
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                sourceSize.width: width
+                onClicked: Activity.checkResult()
+                mouseArea.enabled: !items.buttonsBlocked
+            }
+
+            Score {
+                id: score
+                numberOfSubLevels: items.datasetModel.count
+                currentSubLevel: items.currentExercise
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.margins: 0
+                anchors.bottom: undefined
+                anchors.top: undefined
+                anchors.right: undefined
+                visible: !tutorialScreen.visible
+                onStop: Activity.nextSubLevel()
+            }
         }
 
         Bonus {
@@ -393,13 +400,13 @@ ActivityBase {
         Text {
             id: hideDebug
             text: "Alt+Left and Alt+Right to change exercise\nCtrl+Alt+Return to flip debug informations"
-            anchors.top: okButton.bottom
+            anchors.top: scoreButtonContainer.bottom
             anchors.right: parent.right
             visible: translationMode
         }
         Column {
             id: infoView
-            anchors.bottom: okButton.bottom
+            anchors.bottom: scoreButtonContainer.bottom
             visible: items.debugActive
             spacing: 5
             Text {
