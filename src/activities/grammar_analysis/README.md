@@ -88,6 +88,7 @@ If there are not enough images to represent all your classes, let us know and we
 - `8.svg`: green arc, used for prepositions in English.
 - `9.svg`: yellow exclamation mark, used for interjections in English.
 - `10.svg`: inverted small light blue triangle, not used in English.
+- `11.svg`: inverted medium dark blue triangle, not used in English.
 
 ## Exercises definition
 
