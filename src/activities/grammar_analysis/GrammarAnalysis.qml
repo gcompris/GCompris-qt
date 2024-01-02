@@ -55,6 +55,9 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias locale: background.locale
+            property alias score: score
+            property GCSfx audioEffects: activity.audioEffects
+            property bool buttonsBlocked: false
             // Qml models
             property alias syntaxModel: syntaxModel
             property alias datasetModel: datasetModel
@@ -64,6 +67,7 @@ ActivityBase {
             property alias wordsFlow: wordsFlow
             property alias rowAnswer: rowAnswer
             property alias gridGoalTokens: gridGoalTokens
+            property alias errorRectangle: errorRectangle
             // Activity parameters
             property int selectedClass: 0
             property int selectedBox: 0
@@ -262,6 +266,36 @@ ActivityBase {
                                 }
                             }
                         }
+                        Rectangle {
+                            id: errorRectangle
+                            anchors.fill: parent
+                            radius: parent.radius
+                            opacity: 0
+                            color: "#80808080"
+                            Image {
+                                anchors.centerIn: parent
+                                source: "qrc:/gcompris/src/core/resource/cross.svg"
+                                width: okButton.width
+                                height: width
+                                sourceSize.width: width
+                                sourceSize.height: width
+                            }
+                            SequentialAnimation {
+                                id: errorAnimation
+                                running: false
+                                NumberAnimation { target: errorRectangle; property: "opacity"; to: 1; duration: 200 }
+                                PauseAnimation { duration: 1000 }
+                                NumberAnimation { target: errorRectangle; property: "opacity"; to: 0; duration: 200 }
+                                ScriptAction { script: items.buttonsBlocked = false }
+                            }
+                            function startAnimation() {
+                                errorAnimation.restart()
+                            }
+                            function resetState() {
+                                errorAnimation.stop()
+                                errorRectangle.opacity = 0
+                            }
+                        }
                     }
                     GCText {        // Error text
                         id: errors
@@ -272,6 +306,11 @@ ActivityBase {
                         anchors.horizontalCenter:  parent.horizontalCenter
                     }
                 }
+            }
+            MouseArea {
+                // used to block all mouse input on activity interface execpt the OK button
+                anchors.fill: parent
+                enabled: items.buttonsBlocked
             }
         }
 
@@ -326,13 +365,13 @@ ActivityBase {
             anchors.bottomMargin: 1.5 * bar.height
             sourceSize.width: width
             onClicked: Activity.checkResult()
-            mouseArea.enabled: !bonus.isPlaying
+            mouseArea.enabled: !items.buttonsBlocked
         }
 
         Score {
             id: score
             numberOfSubLevels: items.datasetModel.count
-            currentSubLevel: items.currentExercise + 1
+            currentSubLevel: items.currentExercise
             anchors.right: okButton.left
             anchors.rightMargin: background.baseMargins
             anchors.verticalCenter: okButton.verticalCenter
@@ -340,11 +379,12 @@ ActivityBase {
             anchors.top: undefined
             anchors.left: undefined
             visible: !tutorialScreen.visible
+            onStop: Activity.nextSubLevel()
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Keys.onPressed: Activity.handleKeys(event)

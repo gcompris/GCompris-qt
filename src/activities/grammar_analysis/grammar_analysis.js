@@ -205,11 +205,13 @@ function initSyntax() {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState()
     items.selectedClass = 0
     items.selectedBox = 0
     items.keysOnTokens = true
     if (datas === null) return
     buildAnswer()
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {
@@ -228,31 +230,45 @@ function previousLevel() {
 }
 
 function nextSubLevel() {
+    if (items.currentExercise >= items.datasetModel.count) {
+        items.bonus.good("sun")
+    } else {
+        initLevel();
+    }
+}
+
+function nextSubLevelShortcut() {
     if( ++items.currentExercise >= items.datasetModel.count) {
         items.currentExercise = 0;
         nextLevel();
+    } else {
+        initLevel();
     }
-    initLevel();
 }
 
-function previousSubLevel() {
+function previousSubLevelShortcut() {
     if( --items.currentExercise < 0) {
-        items.currentExercise = 0;
         previousLevel();
+    } else {
+        initLevel();
     }
-    initLevel();
 }
 
 function checkResult() {
+    items.buttonsBlocked = true
     var ok = true
     for (var i = 0; i < items.rowAnswer.count; i++) {
         var wordCard = items.rowAnswer.itemAt(i)
         if (wordCard.expected !== "")
             ok &= (wordCard.expected === wordCard.proposition)
     }
-    if (ok) items.bonus.good("sun")
-    else {
-        items.bonus.bad("sun")
+    if (ok){
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.currentExercise += 1
+        items.score.playWinAnimation()
+    } else {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.errorRectangle.startAnimation()
     }
 }
 
@@ -265,14 +281,14 @@ function toArrayKeys(model, propertyName) {
 }
 
 function handleKeys(event) {
-    if (animRunning) return         // No key during animation
+    if (animRunning || items.buttonsBlocked) return         // No key during animation
     if ((event.modifiers & Qt.AltModifier) && translationMode) {
         switch (event.key) {        // sublevel navigation in translation mode
         case Qt.Key_Left:
-            previousSubLevel()
+            previousSubLevelShortcut()
             break
         case Qt.Key_Right:
-            nextSubLevel()
+            nextSubLevelShortcut()
             break
         case Qt.Key_Return:         // Switch visibility of infoView and inspector with Ctrl+Alt+Enter
             if (event.modifiers & Qt.ControlModifier) {
