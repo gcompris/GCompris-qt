@@ -13970,7 +13970,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Qayda uyğun gəlmədikdə xananı boş buraxın."
 
-#: activities/grammar_analysis/grammar_analysis.js:401
+#: activities/grammar_analysis/grammar_analysis.js:417
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Boşdur"
