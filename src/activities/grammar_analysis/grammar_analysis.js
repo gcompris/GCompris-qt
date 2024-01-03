@@ -138,6 +138,11 @@ function checkLevels() {
     while (level < datas["levels"].length) {
         var oneGood = false
         var exercises = datas.dataset[datas["levels"][level].exercise];
+        if(!exercises) {
+            console.warn("Grammar_analysis: dataset " + datas["levels"][level].exercise + " is not defined in the dataset section, we ignore it");
+            level++;
+            continue;
+        }
         for (var i = 0; i < exercises.length ; i++) {
             var parsed = analyzeExercise(level, exercises[i])
             if (checkExercise(parsed, translationMode)) {
@@ -172,9 +177,6 @@ function checkExercise(parsed, force = false) {
 // Keep only valid exercises except for translators
 function initExercises() {
     if (datas === null) return
-    if (grammarMode === '_classes') {
-        // Garder le premier
-    }
     items.datasetModel.clear()
     var exercises = datas.dataset[datas["levels"][items.currentLevel].exercise];
     for (var i = 0; i < exercises.length ; i++) {
