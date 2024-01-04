@@ -1,8 +1,8 @@
-# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022, 2023.
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-11-30 09:45+0100\n"
+"PO-Revision-Date: 2024-01-03 14:47+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -12058,10 +12058,9 @@ msgid "Bulgaria"
 msgstr "Bulgaria"
 
 #: activities/geography/resource/board/board6_0.qml:168
-#, fuzzy
 msgctxt "board6_0|"
 msgid "Bosnia Herzegovina"
-msgstr "Bosnia-Herzegovina"
+msgstr "Bosnia Herzegovina"
 
 #: activities/geography/resource/board/board6_0.qml:175
 msgctxt "board6_0|"
@@ -12894,7 +12893,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:417
+#: activities/grammar_analysis/grammar_analysis.js:419
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Vacue"
@@ -15614,10 +15613,9 @@ msgstr "1 reproductor"
 #: activities/memory-sound/ActivityConfig.qml:24
 #: activities/memory-wordnumber/ActivityConfig.qml:24
 #: activities/memory/ActivityConfig.qml:24
-#, fuzzy
 msgctxt "ActivityConfig|"
 msgid "2 players"
-msgstr "Jocatores"
+msgstr "2 Jocatores"
 
 #: activities/memory-case-association/ActivityConfig.qml:33
 #: activities/memory-enumerate/ActivityConfig.qml:33

@@ -13966,7 +13966,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Deixa a caixa baleira se a categoría gramatical non se corresponde."
 
-#: activities/grammar_analysis/grammar_analysis.js:417
+#: activities/grammar_analysis/grammar_analysis.js:419
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Baleira"
