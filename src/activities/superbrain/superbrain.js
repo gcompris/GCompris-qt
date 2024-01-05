@@ -109,8 +109,7 @@ function initLevel() {
     appendGuessRow();
 }
 
-function appendGuessRow()
-{
+function appendGuessRow() {
     var guessRow = new Array();
     for (var i = 0; i < levels[items.currentLevel].numberOfPieces; ++i) {
         var col =
@@ -129,8 +128,7 @@ function appendGuessRow()
     items.currentRepeater.model = obj.guess;
 }
 
-function ackColor(column, colIndex)
-{
+function ackColor(column, colIndex) {
     ackColors[column] = (ackColors[column] == colIndex) ?  undefined : colIndex;
     for (var i = 0; i < items.guessModel.count; i++) {
         var obj = items.guessModel.get(i).guess.get(column);
@@ -140,9 +138,8 @@ function ackColor(column, colIndex)
     items.currentRepeater.model.get(column).isAcked = (ackColors[column] !== undefined);
 }
 
-function checkGuess()
-{
-    var remainingIndeces = solution.slice();
+function checkGuess() {
+    var remainingIndices = solution.slice();
     var obj = items.guessModel.get(0);
     var correctCount = 0;
     var misplacedCount = 0;
@@ -152,14 +149,14 @@ function checkGuess()
         var newStatus;
         if (solution[i] == guessIndex) {
             // correct
-            remainingIndeces.splice(remainingIndeces.indexOf(guessIndex), 1);
+            remainingIndices.splice(remainingIndices.indexOf(guessIndex), 1);
             if (levels[items.currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_CORRECT);
             correctCount++;
         }
     }
     obj.result = ({ correct: correctCount });
-    if (remainingIndeces.length == 0) {
+    if (remainingIndices.length == 0) {
         items.bonus.good("smiley");
     }
 
@@ -169,9 +166,9 @@ function checkGuess()
         var guessIndex = obj.guess.get(i).colIndex;
         var newStatus = STATUS_UNKNOWN;
         if (solution.indexOf(guessIndex) != -1 &&
-                remainingIndeces.indexOf(guessIndex) != -1) {
+                remainingIndices.indexOf(guessIndex) != -1) {
             // misplaced
-            remainingIndeces.splice(remainingIndeces.indexOf(guessIndex), 1);
+            remainingIndices.splice(remainingIndices.indexOf(guessIndex), 1);
             if (levels[items.currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_MISPLACED);
             misplacedCount++;
