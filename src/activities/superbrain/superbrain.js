@@ -139,20 +139,27 @@ function ackColor(column, colIndex) {
 }
 
 function checkGuess() {
-    var remainingIndices = solution.slice();
     var obj = items.guessModel.get(0);
     var correctCount = 0;
     var misplacedCount = 0;
+
+    // these will be used to check for mismatches later
+    var remainingIndices = [];  // stores indices where mismatches can happen
+    var remainingColors = [];   // stores the solution values at those indices
+
     // check for exact matches first:
     for (var i = 0; i < levels[items.currentLevel].numberOfPieces; i++) {
         var guessIndex = obj.guess.get(i).colIndex;
         var newStatus;
         if (solution[i] == guessIndex) {
             // correct
-            remainingIndices.splice(remainingIndices.indexOf(guessIndex), 1);
             if (levels[items.currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_CORRECT);
             correctCount++;
+        }
+        else {
+            remainingIndices.push(i);
+            remainingColors.push(solution[i]);
         }
     }
     obj.result = ({ correct: correctCount });
@@ -160,17 +167,18 @@ function checkGuess() {
         items.bonus.good("smiley");
     }
 
-    for (var i = 0; i < levels[items.currentLevel].numberOfPieces; i++) {
-        if (obj.guess.get(i).status == STATUS_CORRECT)
-            continue;
-        var guessIndex = obj.guess.get(i).colIndex;
+    for (var i = 0; i < remainingIndices.length; i++) {
+        var index = remainingIndices[i];
+        var guessIndex = obj.guess.get(index).colIndex;
         var newStatus = STATUS_UNKNOWN;
-        if (solution.indexOf(guessIndex) != -1 &&
-                remainingIndices.indexOf(guessIndex) != -1) {
+        if (remainingColors.indexOf(guessIndex) != -1) {
             // misplaced
-            remainingIndices.splice(remainingIndices.indexOf(guessIndex), 1);
             if (levels[items.currentLevel].help)
-                obj.guess.setProperty(i, "status", STATUS_MISPLACED);
+                obj.guess.setProperty(index, "status", STATUS_MISPLACED);
+
+            // remove guessIndex from remainingColors, so that multiple mismatches are not reported
+            remainingColors.splice(remainingColors.indexOf(guessIndex), 1)
+
             misplacedCount++;
         }
     }
