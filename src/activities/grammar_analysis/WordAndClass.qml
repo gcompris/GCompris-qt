@@ -211,7 +211,8 @@ Item {
             if (classList[j] !== "") currentOrder++
         }
         buildProposition()
-        if (wordText.trim() !== wordText.replace(/\s+/,''))             // Check for spaces between words (it was parentheses)
+        if (wordText.trim() !== wordText.replace(/\s+/,'').replace(/\s+/,''))             // Check for spaces between words (it was parentheses).
+          // We replace twice, one for the spaces before the word, one for the ones after
             wordText = "<u>" + wordText + "</u>"
     }
 }
