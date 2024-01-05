@@ -2294,6 +2294,10 @@ Files: src/activities/grammar_analysis/resource/grammar_analysis-en.json
 Copyright: 2023 Emmanuel Charruau
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/resource/grammar_analysis-fr.json
+Copyright: 2024 Emmanuel Charruau
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/resource/grammar_analysis-hr.json
 Copyright: 2023 Igor Dobrača
 License: CC-BY-SA-4.0
