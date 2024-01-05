@@ -1,0 +1,429 @@
+{
+  "levels": [
+    {
+      "objective": "Trouve les noms.",
+      "difficulty": "3",
+      "exercise": "nouns",
+      "goal": "nou"
+    },
+    {
+      "objective": "Trouve les verbes.",
+      "difficulty": "3",
+      "exercise": "verbs",
+      "goal": "vrb"
+      },
+    {
+      "objective": "Trouve les déterminants.",
+      "difficulty": "3",
+      "exercise": "determiners",
+      "goal": "dtm"
+    },
+    {
+      "objective": "Trouve les adjectifs.",
+      "difficulty": "3",
+      "exercise": "adjectives",
+      "goal": "adj"
+    },
+    {
+      "objective": "Trouve les pronoms.",
+      "difficulty": "4",
+      "exercise": "pronouns",
+      "goal": "prn"
+    },
+    {
+      "objective": "Trouve les prépositions.",
+      "difficulty": "4",
+      "exercise": "prepositions",
+      "goal": "ppt"
+    },
+    {
+      "objective": "Trouve les adverbes.",
+      "difficulty": "4",
+      "exercise": "adverbs",
+      "goal": "adv"
+    },
+    {
+      "objective": "Trouve les conjonctions.",
+      "difficulty": "4",
+      "exercise": "conjunctions",
+      "goal": "cjt"
+    },
+    {
+      "objective": "Trouve les interjections.",
+      "difficulty": "4",
+      "exercise": "interjections",
+      "goal": "itj"
+    }
+  ],
+  "dataset" : {
+    "nouns" : [
+      { "sentence": "La fleur est jolie."
+      , "answer":   "dtm nou vrb adj"
+      },
+      { "sentence": "Le chat est heureux."
+      , "answer":   "dtm nou vrb adj"
+      },
+      { "sentence": "Nous regardons le coucher de soleil."
+      , "answer":   "prn vrb  dtm nou ppt nou"
+      },
+      { "sentence": "La cloche sonne."
+      , "answer":   "dtm nou   vrb"
+      },
+      { "sentence": "Tous les soirs, je joue avec mes amis."
+      , "answer":   "dtm  dtm nou    prn vrb ppt dtm nou"
+      },
+      { "sentence": "L'homme porte un sac de blé."
+      , "answer":   "dtm nou vrb   dtm nou ppt nou"
+      },
+      { "sentence": "La pluie tombe dans le jardin."
+      , "answer":   "dtm nou  vrb   ppt dtm nou"
+      },
+      { "sentence": "Le garçon et son ami quittent le village."
+      , "answer":   "dtm nou   cjt dtm nou vrb     dtm nou"
+      },
+      { "sentence": "L'arbre est derrière le mur."
+      , "answer":   "dtm nou vrb ppt      dtm nou"
+      },
+      { "sentence": "Un père attend son fils."
+      , "answer":   "dtm nou vrb    dtm nou"
+      },
+      { "sentence": "Nous sommes tous des mathématiciens."
+      , "answer":   "prn  vrb    adv  dtm nou"
+      },
+      { "sentence": "Du pain cuit dans le four."
+      , "answer":   "dtm nou vrb  ppt  dtm nou"
+      }
+    ],
+    "verbs" : [
+      { "sentence": "Elle court."
+      , "answer":   "prn vrb"
+      },
+      { "sentence": "Le chat dort."
+      , "answer":   "dtm nou vrb"
+      },
+      { "sentence": "Ils observent le paysage."
+      , "answer":   "prn vrb       dtm nou"
+      },
+      { "sentence": "Les hommes chantent."
+      , "answer":   "dtm nou vrb"
+      },
+      { "sentence": "Je joue avec mon frère."
+      , "answer":   "prn vrb ppt  dtm nou"
+      },
+      { "sentence": "L'homme raconte une histoire à ses enfants."
+      , "answer":   "dtm nou vrb     dtm nou      ppt dtm nou"
+      },
+      { "sentence": "Les avions volent haut dans le ciel."
+      , "answer":   "dtm nou    vrb    adv  ppt  dtm nou"
+      },
+      { "sentence": "Le chevalier et son ami quittent le village."
+      , "answer":   "dtm nou      cjt dtm nou vrb     dtm nou"
+      },
+      { "sentence": "La sonnette retentit."
+      , "answer":   "dtm nou     vrb"
+      },
+      { "sentence": "Ce livre est extraordinaire."
+      , "answer":   "dtm nou  vrb adj"
+      },
+      { "sentence": "Ses parents courent tous les soirs."
+      , "answer":   "dtm nou     vrb     dtm  dtm nou"
+      },
+      { "sentence": "Elle appelle sa meilleure amie."
+      , "answer":   "prn  vrb     dtm adj      nou"
+      }
+    ],
+    "determiners" : [
+      { "sentence": "Les chiens jouent."
+      , "answer":   "dtm nou    vrb"
+      },
+      { "sentence": "Leurs sculptures sont superbes."
+      , "answer":   "dtm   nou        vrb  adj"
+      },
+      { "sentence": "Ils observent la lune depuis leur maison."
+      , "answer":   "prn vrb       dtm nou ppt    dtm  nou"
+      },
+      { "sentence": "Son beau jardin est (près de) sa maison."
+      , "answer":   "dtm adj  nou    vrb ppt       dtm nou"
+      },
+      { "sentence": "Où sont mes chaussures ?"
+      , "answer":   "adv vrb dtm nou"
+      },
+      { "sentence": "L'homme raconte une histoire à ses petits-enfants."
+      , "answer":   "dtm nou vrb     dtm nou      ppt dtm nou"
+      },
+      { "sentence": "Les avions volent haut dans le ciel."
+      , "answer":   "dtm nou    vrb    adv  ppt  dtm nou"
+      },
+      { "sentence": "L'homme et son ami quittent la ville."
+      , "answer":   "dtm nou cjt dtm nou vrb     dtm nou"
+      },
+      { "sentence": "Hier, leur librairie était fermée."
+      , "answer":   "adv   dtm  nou       vrb   adj"
+      },
+      { "sentence": "Quel est leur métier ?"
+      , "answer":   "prn  vrb dtm  nou"
+      },
+      { "sentence": "Ses parents courent tous les soirs."
+      , "answer":   "dtm nou     vrb     dtm  dtm nou"
+      },
+      { "sentence": "Elle appelle sa meilleure amie."
+      , "answer":   "prn  vrb     dtm adj      nou"
+      }
+    ],
+    "adjectives" : [
+      { "sentence": "Cette maison est immense."
+      , "answer":   "dtm   nou    vrb adj"
+      },
+      { "sentence": "Leurs sculptures sont belles."
+      , "answer":   "dtm   nou        vrb  adj"
+      },
+      { "sentence": "Ils (ont créé) un paysage magnifique"
+      , "answer":   "prn vrb        dtm nou    adj"
+      },
+      { "sentence": "Son beau jardin est (près de) sa nouvelle maison."
+      , "answer":   "dtm adj  nou    vrb ppt       dtm adj     nou"
+      },
+      { "sentence": "Où sont mes chaussures bleues ?"
+      , "answer":   "adv vrb dtm nou        adj"
+      },
+      { "sentence": "Le vieil homme raconte une histoire vraie à ses petits-enfants."
+      , "answer":   "dtm adj  nou   vrb     dtm nou      adj   ppt dtm nou"
+      },
+      { "sentence": "Le jeune homme conduit lentement sur la longue route."
+      , "answer":   "dtm adj  nou   vrb     adv       ppt dtm adj nou"
+      },
+      { "sentence": "Le grand homme et son vieil ami quittent la ville."
+      , "answer":   "dtm adj  nou   cjt dtm adj  nou vrb      dtm nou"
+      },
+      { "sentence": "Les longues journées d'été sont chaudes."
+      , "answer":   "dtm adj     nou      ppt nou vrb adj"
+      },
+      { "sentence": "Où est la petite boîte ?"
+      , "answer":   "adv vrb dtm adj  nou"
+      },
+      { "sentence": "Sa petite entreprise est prospère."
+      , "answer":   "dtm adj   nou        vrb adj"
+      },
+      { "sentence": "Elle appelle sa meilleure amie."
+      , "answer":   "prn  vrb     dtm adj      nou"
+      }
+    ],
+    "pronouns" : [
+      { "sentence": "Elle le lui (a pris)."
+      , "answer":   "prn  prn prn vrb"
+      },
+      { "sentence": "Je lui (ai téléphoné)."
+      , "answer":   "prn prn vrb"
+      },
+      { "sentence": "Entre vous et moi, je pense que c'est une excellente idée."
+      , "answer":   "ppt   prn  cjt prn prn vrb  prn dtm vrb dtm adj      nou"
+      },
+      { "sentence": "Il viendra pour nous voir."
+      , "answer":   "prn vrb    ppt  prn  vrb"
+      },
+      { "sentence": "Où (est - ) elle ?"
+      , "answer":   "adv vrb prn"
+      },
+      { "sentence": "Il lui parle."
+      , "answer":   "prn prn vrb"
+      },
+      { "sentence": "Je les (ai pris)."
+      , "answer":   "prn prn vrb"
+      },
+      { "sentence": "Il leur (a dit) d'arrêter."
+      , "answer":   "prn prn vrb     ppt vrb"
+      },
+      { "sentence": "Ils (sont venus) voir leur film."
+      , "answer":   "prn vrb          vrb  dtm  nou"
+      },
+      { "sentence": "Où (sont -) ils ?"
+      , "answer":   "adv vrb prn"
+      },
+      { "sentence": "(Demandez -) lui."
+      , "answer":   "vrb      prn"
+      },
+      { "sentence": "Elle l'(a appelée)."
+      , "answer":   "prn  prn vrb"
+      }
+    ],
+    "prepositions" : [
+      { "sentence": "Elle (est arrivée) en avril."
+      , "answer":   "prn  vrb           ppt nou"
+      },
+      { "sentence": "Parle pour lui."
+      , "answer":   "vrb   ppt  prn"
+      },
+      { "sentence": "Vous arriverez sur le parking."
+      , "answer":   "prn  vrb       ppt dtm nou"
+      },
+      { "sentence": "J'(ai fait) une fête pour mon anniversaire."
+      , "answer":   "prn vrb     dtm nou  ppt  dtm nou"
+      },
+      { "sentence": "Nous nous retrouvons à midi."
+      , "answer":   "prn  prn  vrb        ppt nou"
+      },
+      { "sentence": "Il se baigne dans la rivière."
+      , "answer":   "prn prn vrb  ppt  dtm nou"
+      },
+      { "sentence": "L'assiette est sur la table."
+      , "answer":   "dtm nou    vrb ppt dtm nou"
+      },
+      { "sentence": "Le chat (est assis) sous la chaise."
+      , "answer":   "dtm nou  vrb        ppt  dtm nou"
+      },
+      { "sentence": "Je paye pour cela."
+      , "answer":   "prn vrb  ppt  prn"
+      },
+      { "sentence": "J'(ai demandé) un stylo à mon camarade."
+      , "answer":   "prn vrb        dtm nou  ppt dtm nou"
+      },
+      { "sentence": "Ils écoutent de la musique classique."
+      , "answer":   "prn vrb      ppt dtm nou   adj"
+      },
+      { "sentence": "Il est devant lui."
+      , "answer":   "prn vrb ppt   prn"
+      }
+    ],
+    "adverbs" : [
+      { "sentence": "Elle part tôt en avril."
+      , "answer":   "prn  vrb  adv ppt nou"
+      },
+      { "sentence": "Parle fort pour lui."
+      , "answer":   "vrb   adv  ppt  prn"
+      },
+      { "sentence": "Vous partirez vite demain matin."
+      , "answer":   "prn  vrb      adv  nom    nom"
+      },
+      { "sentence": "J'(ai fait) rapidement un gateau."
+      , "answer":   "prn vrb     adv         dtm nou"
+      },
+      { "sentence": "Nous mangeons trop et nous buvons trop !"
+      , "answer":   "prn  vrb      adv  cjt prn  vrb   adv"
+      },
+      { "sentence": "Cette voiture est encore neuve."
+      , "answer":   "dtm   nou     vrb adv    adj"
+      },
+      { "sentence": "L'assiette est déjà sur la table."
+      , "answer":   "dtm nou    vrb adv  ppt dtm nou"
+      },
+      { "sentence": "Allez voir ailleurs !"
+      , "answer":   "vrb   vrb  adv"
+      },
+      { "sentence": "Je paye cher mon billet."
+      , "answer":   "prn vrb adv  dtm nou"
+      },
+      { "sentence": "J'(ai demandé) où trouver un livre."
+      , "answer":   "prn vrb        adv vrb    dtm nou"
+      },
+      { "sentence": "Ils marchent lentement dans la campagne."
+      , "answer":   "prn vrb      adv       ppt  dtm nou"
+      },
+      { "sentence": "Il voyage souvent."
+      , "answer":   "prn vrb   adv"
+      }
+    ],
+    "conjunctions" : [
+      { "sentence": "Lucie est à la fois gentille et patiente."
+      , "answer":   "nou   vrb ppt dtm nou adj    cjt adj"
+      },
+      { "sentence": "Je leur téléphonerai ou je (leur) écrirai."
+      , "answer":   "prn prn vrb          cjt prn prn  vrb"
+      },
+      { "sentence": "Je veux un café et un biscuit."
+      , "answer":   "prn vrb dtm nou cjt dtm nou"
+      },
+      { "sentence": "Je veux le sel et le poivre."
+      , "answer":   "prn vrb dtm nou cjt dtm nou"
+      },
+      { "sentence": "Il est très en retard, mais il a une excuse."
+      , "answer":   "prn vrb adv ppt dtm    cjt  prn vrb dtm nou"
+      },
+      { "sentence": "Les nuages sont énormes et sombres."
+      , "answer":   "dtm nou    vrb  adj     cjt adj"
+      },
+      { "sentence": "Le chat ou le chien (a cassé) ce jouet."
+      , "answer":   "dtm nou cjt dtm nou vrb       dtm nou"
+      },
+      { "sentence": "Je veux partir (bien que) nous soyons en retard."
+      , "answer":   "prn vrb vrb    cjt        prn  vrb    ppt nou"
+      },
+      { "sentence": "Je suis malade donc je vais chez le docteur."
+      , "answer":   "prn vrb adj    cjt  prn vrb ppt  dtm nou"
+      }
+    ],
+    "interjections" : [
+      { "sentence": "Il (est tombé). Aïe !"
+      , "answer":   "prn vrb         itj"
+      },
+      { "sentence": "Hmm, c'est bon !"
+      , "answer":   "itj  prn vrb adj"
+      },
+      { "sentence": "Hourra ! J'(ai gagné)."
+      , "answer":   "itj     prn vrb"
+      },
+      { "sentence": "Hep ! Regarde !"
+      , "answer":   "itj  vrb"
+      },
+      { "sentence": "Oh ! Ohé ! Je suis là."
+      , "answer":   "itj  itj   prn vrb adv"
+      },
+      { "sentence": "J'(ai fait) une bêtise ! Mince !"
+      , "answer":   "prn vrb     dtm nou      itj"
+      },
+      { "sentence": "Oh ! Mince ! Le chien (a cassé) le jouet."
+      , "answer":   "itj  itj     dtm nou   vrb      dtm  nou"
+      },
+      { "sentence": "J'adore ce gâteau. Miam !"
+      , "answer":   "prn vrb dtm nou    itj"
+      }
+    ]
+
+  },
+  "syntax" : [
+      {
+        "code": "nou",
+        "wordClass": "Nom",
+        "image": "1.svg"
+      },
+      {
+        "code": "dtm",
+        "wordClass": "Déterminant",
+        "image": "2.svg"
+      },
+      {
+        "code": "adj",
+        "wordClass": "Adjectif",
+        "image": "3.svg"
+      },
+      {
+        "code": "prn",
+        "wordClass": "Pronom",
+        "image": "4.svg"
+      },
+      {
+        "code": "vrb",
+        "wordClass": "Verbe",
+        "image": "5.svg"
+      },
+      {
+        "code": "adv",
+        "wordClass": "Adverbe",
+        "image": "6.svg"
+      },
+      {
+        "code": "cjt",
+        "wordClass": "Conjonction",
+        "image": "7.svg"
+      },
+      {
+        "code": "ppt",
+        "wordClass": "Préposition",
+        "image": "8.svg"
+      },
+      {
+        "code": "itj",
+        "wordClass": "Interjection",
+        "image": "9.svg"
+      }
+    ]
+}
