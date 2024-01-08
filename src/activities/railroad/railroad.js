@@ -46,7 +46,7 @@ function start(items_) {
     items = items_;
     items.score.numberOfSubLevels = dataset["numberOfSubLevels"];
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
@@ -55,6 +55,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState();
     generateUniqueId();
     items.mouseEnabled = true;
     items.memoryMode = false;
@@ -96,15 +97,17 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     isNewLevel = true;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     isNewLevel = true;
     initLevel();
 }
@@ -120,9 +123,8 @@ function restoreLevel() {
 
 function nextSubLevel() {
     /* Sets up the next sublevel */
-    items.score.currentSubLevel ++;
-    if(items.score.currentSubLevel > dataset["numberOfSubLevels"]) {
-        nextLevel();
+    if(items.score.currentSubLevel >= dataset["numberOfSubLevels"]) {
+        items.bonus.good("flower");
     }
     else {
         isNewLevel = true;
@@ -131,6 +133,7 @@ function nextSubLevel() {
 }
 
 function checkAnswer() {
+    items.mouseEnabled = false; // Disables the touch
     /* Checks if the top level setup equals the solutions */
     if(items.listModel.count === solutionArray.length) {
         var isSolution = true;
@@ -141,15 +144,18 @@ function checkAnswer() {
             }
         }
         if(isSolution == true) {
-            items.mouseEnabled = false; // Disables the touch
-            items.bonus.good("flower");
+            items.score.currentSubLevel += 1;
+            items.score.playWinAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         }
         else {
-            items.bonus.bad("flower", items.bonus.checkAnswer);
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+            items.errorRectangle.startAnimation();
         }
     }
     else {
-        items.bonus.bad("flower", items.bonus.checkAnswer);
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        items.errorRectangle.startAnimation();
     }
 }
 
