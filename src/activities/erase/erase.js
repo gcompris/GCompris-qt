@@ -120,9 +120,9 @@ function nextLevel() {
 }
 
 function nextSubLevel() {
-    if( ++items.currentSubLevel >= items.nbSubLevel) {
-        items.currentSubLevel = 0
-        nextLevel()
+    if( items.currentSubLevel >= items.nbSubLevel) {
+        items.bonus.good("flower")
+        return;
     }
     initLevel();
 }
@@ -135,7 +135,12 @@ function previousLevel() {
 
 function blockKilled() {
     if(++killedBlocks === createdBlocks) {
-        items.bonus.good("flower")
+        items.currentSubLevel += 1
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.score.playWinAnimation()
+        if(items.mode === 2) {
+            items.okButton.levelFinished = true
+        }
     }
 }
 

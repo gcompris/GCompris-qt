@@ -47,6 +47,9 @@ ActivityBase {
             property alias blocks: blocks
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias score: score
+            property alias okButton: okButton
+            property GCSfx audioEffects: activity.audioEffects
             property int nbSubLevel: 6
             property int currentSubLevel: 0
             property int mode: 1 // default is automatic
@@ -154,12 +157,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            onWin: {
-                if(items.mode === 1)
-                    Activity.nextSubLevel()
-                else
-                    okButton.levelFinished = true
-            }
+            onWin: Activity.nextLevel()
         }
 
         Score {
@@ -173,7 +171,11 @@ ActivityBase {
                 left: undefined
             }
             numberOfSubLevels: items.nbSubLevel
-            currentSubLevel: items.currentSubLevel + 1
+            currentSubLevel: items.currentSubLevel
+            onStop: {
+                if(items.mode === 1)
+                    Activity.nextSubLevel()
+            }
         }
 
         // Next Level Button, if Manual is activated
