@@ -530,35 +530,12 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        ErrorRectangle {
             id: errorRectangle
             anchors.fill: topDisplayArea
-            color: "#80808080"
-            opacity: 0
             z: score.z
-            Image {
-                anchors.centerIn: parent
-                source: "qrc:/gcompris/src/core/resource/cross.svg"
-                width: okButton.width
-                height: width
-                sourceSize.width: width
-                sourceSize.height: width
-            }
-            SequentialAnimation {
-                id: errorAnimation
-                running: false
-                NumberAnimation { target: errorRectangle; property: "opacity"; to: 1; duration: 200 }
-                PauseAnimation { duration: 1000 }
-                NumberAnimation { target: errorRectangle; property: "opacity"; to: 0; duration: 200 }
-                ScriptAction { script: items.mouseEnabled = true }
-            }
-            function startAnimation() {
-                errorAnimation.restart()
-            }
-            function resetState() {
-                errorAnimation.stop()
-                errorRectangle.opacity = 0
-            }
+            imageSize: okButton.width
+            function releaseControls() { items.mouseEnabled = true; }
         }
 
         // Answer Submission button

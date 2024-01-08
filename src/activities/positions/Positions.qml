@@ -269,47 +269,27 @@ ActivityBase {
                 color: "white"
             }
         }
+        
+        ErrorRectangle {
+            id: errorRectangle
+            radius: 15
+            imageSize: okButton.width
 
-            Rectangle {
-                id: errorRectangle
-                width: 0
-                height: 0
-                radius: 15
-                color: "#80808080"
-                opacity: 0
-                Image {
-                    anchors.centerIn: parent
-                    source: "qrc:/gcompris/src/core/resource/cross.svg"
-                    width: okButton.width
-                    height: width
-                    sourceSize.width: width
-                    sourceSize.height: width
+            function releaseControls() { items.buttonsBlocked = false; }
+
+            function startAnimation() {
+                errorRectangle.width = items.view.currentItem.width;
+                errorRectangle.height = items.view.currentItem.height;
+                if (answerViews.visible) {
+                    errorRectangle.x = answerViews.x + items.view.currentItem.x;
+                    errorRectangle.y = answerViews.y + items.view.currentItem.y;
+                } else {
+                    errorRectangle.x = positionViews.x + items.view.currentItem.x;
+                    errorRectangle.y = positionViews.y + items.view.currentItem.y;
                 }
-                SequentialAnimation {
-                    id: errorAnimation
-                    running: false
-                    NumberAnimation { target: errorRectangle; property: "opacity"; to: 1; duration: 200 }
-                    PauseAnimation { duration: 1000 }
-                    NumberAnimation { target: errorRectangle; property: "opacity"; to: 0; duration: 200 }
-                    ScriptAction { script: items.buttonsBlocked = false }
-                }
-                function startAnimation() {
-                    errorRectangle.width = items.view.currentItem.width
-                    errorRectangle.height = items.view.currentItem.height
-                    if (answerViews.visible) {
-                        errorRectangle.x = answerViews.x + items.view.currentItem.x
-                        errorRectangle.y = answerViews.y + items.view.currentItem.y
-                    } else {
-                        errorRectangle.x = positionViews.x + items.view.currentItem.x
-                        errorRectangle.y = positionViews.y + items.view.currentItem.y
-                    }
-                    errorAnimation.restart()
-                }
-                function resetState() {
-                    errorAnimation.stop()
-                    errorRectangle.opacity = 0
-                }
+                errorAnimation.restart();
             }
+        }
 
         DialogHelp {
             id: dialogHelpLeftRight

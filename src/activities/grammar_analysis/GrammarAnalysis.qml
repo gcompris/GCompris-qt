@@ -266,35 +266,12 @@ ActivityBase {
                                 }
                             }
                         }
-                        Rectangle {
+                        ErrorRectangle {
                             id: errorRectangle
                             anchors.fill: parent
                             radius: parent.radius
-                            opacity: 0
-                            color: "#80808080"
-                            Image {
-                                anchors.centerIn: parent
-                                source: "qrc:/gcompris/src/core/resource/cross.svg"
-                                width: okButton.width
-                                height: width
-                                sourceSize.width: width
-                                sourceSize.height: width
-                            }
-                            SequentialAnimation {
-                                id: errorAnimation
-                                running: false
-                                NumberAnimation { target: errorRectangle; property: "opacity"; to: 1; duration: 200 }
-                                PauseAnimation { duration: 1000 }
-                                NumberAnimation { target: errorRectangle; property: "opacity"; to: 0; duration: 200 }
-                                ScriptAction { script: items.buttonsBlocked = false }
-                            }
-                            function startAnimation() {
-                                errorAnimation.restart()
-                            }
-                            function resetState() {
-                                errorAnimation.stop()
-                                errorRectangle.opacity = 0
-                            }
+                            imageSize: okButton.width
+                            function releaseControls() { items.buttonsBlocked = false; }
                         }
                     }
                     GCText {        // Error text
