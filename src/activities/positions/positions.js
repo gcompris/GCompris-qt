@@ -32,7 +32,6 @@ function start(items_) {
     dataset = items.levels;
     numberOfLevel = dataset.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
-    items.score.currentSubLevel = 1;
     initLevel();
 }
 
@@ -40,9 +39,12 @@ function stop() {
 }
 
 function initLevel() {
+    items.score.stopWinAnimation();
+    items.errorRectangle.resetState();
     questionList = [];
 
     questionList = dataset[items.currentLevel].questions;
+    items.score.currentSubLevel = 0;
     items.score.numberOfSubLevels = questionList.length;
     currentQuestionIndex = -1;
 
@@ -55,29 +57,31 @@ function initLevel() {
 
 function nextLevel() {
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1;
     initLevel();
 }
 
 function previousLevel() {
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1;
     initLevel();
 }
 
 function verifyAnswer() {
+    items.buttonsBlocked = true;
     if(items.selectedPosition === items.checkState) {
-        items.bonus.good("flower");
+        items.score.currentSubLevel += 1;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
     else {
-        items.bonus.bad("flower");
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
 }
 
 function nextSubLevel() {
     currentQuestionIndex++;
     if(currentQuestionIndex >= questionList.length) {
-        nextLevel();
+        items.bonus.good("flower");
         return;
     }
     items.positionModels.clear();
@@ -87,7 +91,7 @@ function nextSubLevel() {
     }
     items.view.currentIndex = -1;
     getRandomPositions();
-    items.score.currentSubLevel = currentQuestionIndex;
+    items.buttonsBlocked = false;
 }
 
 function getRandomPositions() {

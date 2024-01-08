@@ -41,6 +41,8 @@ ActivityBase {
             property string questionText: ""
             property alias positionModels: positionModels
             property var view: items.currentLevel % 2 !== 0 ? answerViews : positionViews
+            property bool buttonsBlocked: false
+            property alias errorRectangle: errorRectangle
         }
 
         Component.onCompleted: {
@@ -164,7 +166,7 @@ ActivityBase {
                         id: textArea
                         anchors.fill: parent
                         onClicked: selectCurrentItem()
-                        enabled: !bonus.isPlaying
+                        enabled: !items.buttonsBlocked
                     }
 
                     function selectCurrentItem() {
@@ -219,7 +221,7 @@ ActivityBase {
                         id: mouseArea
                         anchors.fill: parent
                         onClicked: selectCurrentItem()
-                        enabled: !bonus.isPlaying
+                        enabled: !items.buttonsBlocked
                         hoverEnabled: true
                     }
 
@@ -267,6 +269,47 @@ ActivityBase {
                 color: "white"
             }
         }
+
+            Rectangle {
+                id: errorRectangle
+                width: 0
+                height: 0
+                radius: 15
+                color: "#80808080"
+                opacity: 0
+                Image {
+                    anchors.centerIn: parent
+                    source: "qrc:/gcompris/src/core/resource/cross.svg"
+                    width: okButton.width
+                    height: width
+                    sourceSize.width: width
+                    sourceSize.height: width
+                }
+                SequentialAnimation {
+                    id: errorAnimation
+                    running: false
+                    NumberAnimation { target: errorRectangle; property: "opacity"; to: 1; duration: 200 }
+                    PauseAnimation { duration: 1000 }
+                    NumberAnimation { target: errorRectangle; property: "opacity"; to: 0; duration: 200 }
+                    ScriptAction { script: items.buttonsBlocked = false }
+                }
+                function startAnimation() {
+                    errorRectangle.width = items.view.currentItem.width
+                    errorRectangle.height = items.view.currentItem.height
+                    if (answerViews.visible) {
+                        errorRectangle.x = answerViews.x + items.view.currentItem.x
+                        errorRectangle.y = answerViews.y + items.view.currentItem.y
+                    } else {
+                        errorRectangle.x = positionViews.x + items.view.currentItem.x
+                        errorRectangle.y = positionViews.y + items.view.currentItem.y
+                    }
+                    errorAnimation.restart()
+                }
+                function resetState() {
+                    errorAnimation.stop()
+                    errorRectangle.opacity = 0
+                }
+            }
 
         DialogHelp {
             id: dialogHelpLeftRight
@@ -321,14 +364,12 @@ ActivityBase {
             width: (background.height - bar.height * 1.2) * 0.15
             sourceSize.width: width
             onClicked: Activity.verifyAnswer()
-            mouseArea.enabled: !bonus.isPlaying
+            mouseArea.enabled: !items.buttonsBlocked
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: {
-                win.connect(Activity.nextSubLevel)
-            }
+            onWin: Activity.nextLevel()
         }
 
         Score {
@@ -338,6 +379,7 @@ ActivityBase {
             anchors.top: background.top
             anchors.topMargin: parent.height * 0.01
             anchors.bottom: undefined
+            onStop: Activity.nextSubLevel()
         }
     }
 }
