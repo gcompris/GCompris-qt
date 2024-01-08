@@ -82,6 +82,15 @@ Rectangle {
      * Triggers scale and rotation animation.
      */
     signal playWinAnimation
+    /**
+     * Emitted when manually stopping the animation
+     *
+     * Resets scale and rotation.
+     */
+    signal stopWinAnimation
+    /**
+     * Emitted when the animation is finished
+     */
     signal stop
 
     color: "#AAFFFFFF"
@@ -100,6 +109,11 @@ Rectangle {
     onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onPlayWinAnimation: winAnimation.start()
+    onStopWinAnimation: {
+        winAnimation.stop()
+        score.scale = 1.0
+        score.rotation = 0
+    }
 
     readonly property bool isWinAnimationPlaying: winAnimation.running
 
@@ -146,6 +160,6 @@ Rectangle {
                 easing.type: Easing.InOutQuad
             }
         }
-        onStopped: score.stop()
+        onFinished: score.stop()
     }
 }
