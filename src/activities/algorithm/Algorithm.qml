@@ -45,6 +45,7 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias score: score
             property int nbSubLevel: 3
             property int currentSubLevel: 0
             property bool blockClicks: false
@@ -251,11 +252,11 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            onStop: items.blockClicks = false
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
+            id: score
             anchors {
                 bottom: bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
@@ -265,7 +266,8 @@ ActivityBase {
                 left: undefined
             }
             numberOfSubLevels: items.nbSubLevel
-            currentSubLevel: items.currentSubLevel + 1
+            currentSubLevel: items.currentSubLevel
+            onStop: Activity.nextSubLevel()
         }
     }
 }

@@ -91,6 +91,7 @@ function setUp() {
     setAnswer(answerIndex)
 
     choiceCount = matchesVisible
+    items.blockClicks = false
 }
 
 // Returns a set of images that is used to set either the Sample algorithm or the Answer tray.
@@ -131,7 +132,6 @@ function clickHandler(id){
     if(id === answerIndex[choiceCount]) {
         tempIndex = items.answer.model
         choiceCount++;
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
 
         if(choiceCount < max) {
             tempIndex.push('question_mark')
@@ -142,10 +142,11 @@ function clickHandler(id){
 
         if(choiceCount == max) {
             items.blockClicks = true
-            if(items.currentSubLevel+1 === items.nbSubLevel)
-                items.bonus.good("tux")
-            else
-                items.bonus.good("flower")
+            items.currentSubLevel++
+            items.score.playWinAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        } else {
+            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
         }
         return 1
     } else { // Wrong answer, try again
@@ -154,21 +155,23 @@ function clickHandler(id){
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    items.currentSubLevel++
     // Increment level after 3 successful games.
     if (items.currentSubLevel === items.nbSubLevel) {
-        nextLevel()
+        items.bonus.good("tux");
+    } else {
+        setUp();
     }
-    setUp()
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
