@@ -64,7 +64,7 @@ var STATUS_CORRECT = 2;
 function start(items_) {
     items = items_;
     items.currentLevel = Core.getInitialLevel(maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
@@ -72,14 +72,9 @@ function stop() {
 }
 
 function initLevel() {
-    if (currentSubLevel == 0) {
-        // init level
-    }
-
     // init sublevel
     ackColors = new Array(levels[items.currentLevel].numberOfPieces);
     items.score.numberOfSubLevels = maxSubLevel;
-    items.score.currentSubLevel = currentSubLevel + 1;
     var selectedColors = new Array(maxColors);
     solution = new Array(levels[items.currentLevel].numberOfPieces);
     for (var i = 0; i < maxColors; ++i)
@@ -164,7 +159,9 @@ function checkGuess() {
     }
     obj.result = ({ correct: correctCount });
     if (remainingIndices.length == 0) {
-        items.bonus.good("smiley");
+        items.score.currentSubLevel += 1;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
 
     for (var i = 0; i < remainingIndices.length; i++) {
@@ -188,20 +185,22 @@ function checkGuess() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    if(++currentSubLevel >= maxSubLevel) {
-        nextLevel();
+    if(items.score.currentSubLevel >= maxSubLevel) {
+        items.bonus.good("smiley");
     }
     else {
         initLevel();

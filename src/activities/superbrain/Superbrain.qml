@@ -58,6 +58,7 @@ ActivityBase {
             property alias guessColumn: guessColumn
             property alias currentRepeater: currentRepeater
             property string mode: "color"
+            property GCSfx audioEffects: activity.audioEffects
         }
 
         onStart: { Activity.start(items) }
@@ -655,7 +656,7 @@ if (targetY < 0) {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
@@ -666,6 +667,7 @@ if (targetY < 0) {
             anchors.left: undefined
             anchors.top: parent.top
             anchors.right: parent.right
+            onStop: Activity.nextSubLevel()
         }
     }
 }
