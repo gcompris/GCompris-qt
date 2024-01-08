@@ -174,7 +174,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
@@ -184,6 +184,7 @@ ActivityBase {
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: undefined
+            onStop: Activity.nextSubLevel()
         }
     }
 }

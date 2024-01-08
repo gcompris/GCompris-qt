@@ -168,7 +168,6 @@ var truckList = [
   baseUrl + "truck4.svg"
 ];
 
-var currentSubLevel = 0;
 var level = null;
 var maxLevel = 13;
 var maxSubLevel = 5;
@@ -187,7 +186,7 @@ function start(items_, mode_) {
     items = items_;
     mode = mode_;
     items.currentLevel = Core.getInitialLevel(maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
@@ -252,7 +251,9 @@ function updateCarPosition(car, newX, newY)
         // check for reached goal:
         if (car.goal && car.effX + car.width >= items.jamGrid.width) {
             haveWon = true;
-            items.bonus.good("smiley");
+            items.score.currentSubLevel += 1;
+            items.score.playWinAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
             return;
         }
     } else {
@@ -366,33 +367,33 @@ function initLevel() {
     cleanupActiveCars();
     truckIndex = 0;
     carIndex = 0;
-    if (currentSubLevel == 0) {
+    if (items.score.currentSubLevel == 0) {
         // initialize level
         items.score.numberOfSubLevels = maxSubLevel;
     }
     // initialize sublevel
     haveWon = false;
-    items.score.currentSubLevel = currentSubLevel + 1;
-    cars = dataList[(items.currentLevel * maxSubLevel) + currentSubLevel].split(",");
+    cars = dataList[(items.currentLevel * maxSubLevel) + items.score.currentSubLevel].split(",");
     drawJam();
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    if( ++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0;
-        nextLevel();
+    if (items.score.currentSubLevel >= maxSubLevel) {
+        items.bonus.good("smiley");
     } else
         initLevel();
 }
