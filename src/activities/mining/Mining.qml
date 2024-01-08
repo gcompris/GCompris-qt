@@ -243,26 +243,29 @@ ActivityBase {
                 function updateScale(zoomDelta, x, y) {
                     var xx1 = background.mapFromItem(miningBg, x, y)
                     var previousScale = miningBg.scale
+                    var miningBgScale = miningBg.scale
+                    var miningBgHOffset = miningBg.anchors.horizontalCenterOffset
+                    var miningBgVOffset = miningBg.anchors.verticalCenterOffset
                     if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
-                        if(miningBg.scale < miningBg._MAX_SCALE - 0.1)
-                            miningBg.scale += 0.1;
+                        if(miningBgScale < miningBg._MAX_SCALE - 0.1)
+                            miningBgScale += 0.1;
                         else
-                            miningBg.scale = miningBg._MAX_SCALE
+                            miningBgScale = miningBg._MAX_SCALE
 
                         if(gotIt)
                             tuto.setState("Unzoom")
-                        else if(miningBg.scale < miningBg._MAX_SCALE)
+                        else if(miningBgScale < miningBg._MAX_SCALE)
                             tuto.setState(items.nugget.onScreen ? "ZoomOk" : "ZoomBad")
                         else
                             tuto.setState(items.nugget.onScreen ? "NuggetSeen" : "NuggetNotSeen")
 
                     } else if (zoomDelta < 0) {
-                        if(miningBg.scale > miningBg._MIN_SCALE) {
-                            miningBg.scale -= 0.1;
+                        if(miningBgScale > miningBg._MIN_SCALE) {
+                            miningBgScale -= 0.1;
 
                             if(gotIt)
                                 tuto.setState("Unzoom")
-                            else if(miningBg.scale > miningBg._MIN_SCALE)
+                            else if(miningBgScale > miningBg._MIN_SCALE)
                                 tuto.setState(items.nugget.onScreen ? "UnzoomOk" : "UnzoomBad")
                             else
                                 tuto.setState("Started")
@@ -272,22 +275,34 @@ ActivityBase {
                                 bonus.good("lion")
                             } else {
                                 miningBg.subLevel++
-                                miningBg.scale = miningBg._MIN_SCALE
+                                miningBgScale = miningBg._MIN_SCALE
+                                miningBgHOffset = 0
+                                miningBgVOffset = 0
                                 Activity.createLevel()
                             }
                             tuto.setState("Stopped")
                         } else {
-                            miningBg.anchors.horizontalCenterOffset = 0
-                            miningBg.anchors.verticalCenterOffset = 0
+                            miningBgScale = miningBg._MIN_SCALE
+                            miningBgHOffset = 0
+                            miningBgVOffset = 0
                             if(miningBg.subLevel != items.collectedNuggets)
                                 tuto.setState("Started")
                         }
                     }
-                    if(previousScale != miningBg.scale) {
-                        var xx2 = background.mapFromItem(miningBg, x, y)
-                        miningBg.anchors.horizontalCenterOffset += xx1.x - xx2.x
-                        miningBg.anchors.verticalCenterOffset += xx1.y - xx2.y
+                    if(miningBgScale <= miningBg._MIN_SCALE) {
+                        miningBgScale = miningBg._MIN_SCALE
                     }
+                    miningBg.scale = miningBgScale
+                    if(previousScale != miningBg.scale && miningBg.scale > miningBg._MIN_SCALE) {
+                        var xx2 = background.mapFromItem(miningBg, x, y)
+                        miningBgHOffset += xx1.x - xx2.x
+                        miningBgVOffset += xx1.y - xx2.y
+                    } else if(miningBg.scale === miningBg._MIN_SCALE) {
+                        miningBgHOffset = 0
+                        miningBgVOffset = 0
+                    }
+                    miningBg.anchors.horizontalCenterOffset = miningBgHOffset
+                    miningBg.anchors.verticalCenterOffset = miningBgVOffset
                 }
 
                 MouseArea {
