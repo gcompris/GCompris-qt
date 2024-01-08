@@ -217,6 +217,7 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentExercise = 0
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initExercises()
@@ -224,6 +225,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     if (datas === null) return
     items.currentExercise = 0
