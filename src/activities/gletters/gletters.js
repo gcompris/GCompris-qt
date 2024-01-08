@@ -137,6 +137,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.score.currentSubLevel = 0;
     if(items.levels)
         items.instructionText = items.levels[items.currentLevel].objective
     items.audioVoices.clearQueue()
@@ -267,7 +268,6 @@ function initSubLevel() {
         speed = Math.max(speed - incSpeed, wgMinSpeed);
         items.wordDropTimer.interval = fallSpeed = Math.max(fallSpeed - incFallSpeed, wgMinFallSpeed);
     }
-    items.score.currentSubLevel = currentSubLevel;
     // note, last word is still fading out so better use droppedWordsCounter than droppedWords.length in this case
     if ((currentSubLevel == 0 || droppedWordsCounter == 0) && !items.inputLocked)
         dropWord();
@@ -472,6 +472,8 @@ function previousLevel() {
 }
 
 function nextSubLevel() {
+    items.score.currentSubLevel += 1;
+    items.score.playWinAnimation();
     if(++currentSubLevel >= maxSubLevel) {
         // Stop having more words dropping once we have won
         items.wordDropTimer.stop();
@@ -481,9 +483,8 @@ function nextSubLevel() {
             items.bonus.good("lion");
         }
     } else {
-        items.score.playWinAnimation();
+        initSubLevel();
     }
-    initSubLevel();
 }
 
 function playLetter(letter) {
