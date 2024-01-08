@@ -114,6 +114,7 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
@@ -128,6 +129,7 @@ function nextSubLevel() {
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     items.currentSubLevel = 0;
     initLevel();
