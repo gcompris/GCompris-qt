@@ -80,6 +80,8 @@ ActivityBase {
         Keys.forwardTo: tutorialSection
 
         Keys.onPressed: {
+            if(items.buttonsBlocked)
+                return
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 Activity.equalityCheck()
             }
