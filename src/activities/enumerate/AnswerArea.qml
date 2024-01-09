@@ -64,6 +64,7 @@ Rectangle {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
+        enabled: !items.buttonsBlocked
         onClicked: {
             Activity.registerAnswerItem(answerBackground)
             Activity.resetAnswerAreaColor();
@@ -84,7 +85,8 @@ Rectangle {
     }
 
     Keys.onPressed: {
-        appendText(event.text)
+        if(!items.buttonsBlocked)
+            appendText(event.text);
     }
 
     function appendText(text) {

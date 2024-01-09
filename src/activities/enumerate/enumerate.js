@@ -102,6 +102,7 @@ function checkAnswersAuto() {
             return;
         }
     }
+    items.buttonsBlocked = true;
     items.score.currentSubLevel += 1;
     items.score.playWinAnimation();
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
@@ -122,6 +123,7 @@ function checkAnswers() {
     }
 
     if(isAnswerGood) {
+        items.buttonsBlocked = true;
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
@@ -165,6 +167,7 @@ function initSubLevel() {
     items.answerColumn.model = types;
     items.itemListModel = enumItems;
     lockKeyboard = false;
+    items.buttonsBlocked = false;
 }
 
 function nextSubLevel() {

@@ -117,6 +117,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property int mode: 1 // default is automatic
+            property bool buttonsBlocked: false
         }
 
         DropArea {
@@ -185,12 +186,14 @@ ActivityBase {
             id: errorRectangle
             anchors.fill: answer
             imageSize: okButton.width
+            function releaseControls() { items.buttonsBlocked = false; }
         }
 
         VirtualKeyboard {
             id: keyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
+            enabled: visible && !items.buttonsBlocked
 
             function populate() {
                 layout = [ [
@@ -268,7 +271,7 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            enabled: items.mode === 2
+            enabled: items.mode === 2 && !items.buttonsBlocked
             visible: items.mode === 2
             anchors {
                 bottom: bar.top
