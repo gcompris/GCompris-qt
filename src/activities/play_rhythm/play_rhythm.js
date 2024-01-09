@@ -13,7 +13,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var numberOfLevel
-var currentSubLevel = 0
 var currentNote = 0
 var items
 var levels
@@ -35,7 +34,7 @@ function stop() {
 }
 
 function initLevel() {
-    currentSubLevel = 0
+    items.score.currentSubLevel = 0
     Core.shuffle(levels[items.currentLevel].melodies)
     items.multipleStaff.isPulseMarkerDisplayed = levels[items.currentLevel].pulseMarkerVisible
     items.isMetronomeVisible = levels[items.currentLevel].metronomeVisible
@@ -44,10 +43,8 @@ function initLevel() {
 }
 
 function nextSubLevel() {
-    currentSubLevel++
-    items.score.currentSubLevel = currentSubLevel
-    if(currentSubLevel > items.score.numberOfSubLevels)
-        nextLevel()
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels)
+        items.bonus.good("note")
     else
         initSubLevel()
 }
@@ -64,33 +61,51 @@ function checkAnswer(pulseMarkerX) {
             items.isWrongRhythm = true
         }
     }
-    if((currentNote >= items.multipleStaff.musicElementModel.count - 1)) {
-        if(!items.isWrongRhythm)
-            items.bonus.good("flower")
-        else
-            items.bonus.bad("flower")
+    if(currentNote > 0 && !items.multipleStaff.isMusicPlaying) {
+        items.isWrongRhythm = true
+        items.buttonsBlocked = true
+        items.answerFeedbackTimer.restart()
+    } else if((currentNote >= items.multipleStaff.musicElementModel.count - 1)) {
+        items.buttonsBlocked = true
+        items.answerFeedbackTimer.restart()
+    }
+}
+
+function answerFeedback() {
+    if(!items.isWrongRhythm) {
+        items.score.currentSubLevel += 1
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+    } else {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.crashPlayed = true
+        items.answerFeedbackTimer.restart()
     }
 }
 
 function initSubLevel() {
-     items.metronomeOscillation.stop()
-     items.multipleStaff.stopAudios()
-     currentNote = 0
-     var currentSubLevelMelody = levels[items.currentLevel].melodies[currentSubLevel - 1]
-     items.multipleStaff.loadFromData(currentSubLevelMelody)
-     items.background.isRhythmPlaying = true
-     items.isWrongRhythm = false
+    items.metronomeOscillation.stop()
+    items.multipleStaff.stopAudios()
+    currentNote = 0
+    var currentSubLevelMelody = levels[items.currentLevel].melodies[items.score.currentSubLevel]
+    items.multipleStaff.loadFromData(currentSubLevelMelody)
+    items.background.isRhythmPlaying = true
+    items.isWrongRhythm = false
 
-     if(!isIntroductoryAudioPlaying && !items.iAmReady.visible)
-         items.multipleStaff.play()
+    if(!isIntroductoryAudioPlaying && !items.iAmReady.visible)
+        items.multipleStaff.play()
+
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }

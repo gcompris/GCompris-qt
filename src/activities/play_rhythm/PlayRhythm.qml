@@ -53,8 +53,11 @@ ActivityBase {
             property alias iAmReady: iAmReady
             property alias introductoryAudioTimer: introductoryAudioTimer
             property alias metronomeOscillation: metronomeOscillation
+            property alias answerFeedbackTimer: answerFeedbackTimer
             property bool isMetronomeVisible: false
             property bool isWrongRhythm: false
+            property bool buttonsBlocked: false
+            property bool crashPlayed: false
         }
 
         onStart: {
@@ -70,7 +73,7 @@ ActivityBase {
         property int metronomeSpeed: 60000 / multipleStaff.bpmValue - 53
         property real weightOffset: metronome.height * multipleStaff.bpmValue * 0.004
 
-        Keys.onSpacePressed: if(!background.isRhythmPlaying && !bonus.isPlaying)
+        Keys.onSpacePressed: if(!background.isRhythmPlaying && !items.buttonsBlocked)
                                 tempo.tempoPressed();
         Keys.onTabPressed: if(metronome.visible && metronomeOscillation.running)
                              metronomeOscillation.stop();
@@ -138,6 +141,21 @@ ActivityBase {
             }
         }
 
+        Timer {
+            id: answerFeedbackTimer
+            interval: 1000
+            onRunningChanged: {
+                if (!running) {
+                    if(!items.crashPlayed)
+                        Activity.answerFeedback();
+                    else {
+                        items.crashPlayed = false;
+                        Activity.initSubLevel();
+                    }
+                }
+            }
+        }
+
         JsonParser {
             id: parser
         }
@@ -168,6 +186,7 @@ ActivityBase {
             anchors.bottom: undefined
             numberOfSubLevels: 3
             width: horizontalLayout ? parent.width / 10 : (parent.width - instructionBox.x - instructionBox.width - 1.5 * anchors.rightMargin)
+            onStop: Activity.nextSubLevel()
         }
 
         MultipleStaff {
@@ -212,7 +231,7 @@ ActivityBase {
             }
             MouseArea {
                 anchors.fill: parent
-                enabled: !background.isRhythmPlaying && !bonus.isPlaying
+                enabled: !background.isRhythmPlaying && !items.buttonsBlocked
                 onPressed: tempo.tempoPressed()
             }
 
@@ -220,8 +239,6 @@ ActivityBase {
                 tempoAnim.start()
                 if(!multipleStaff.isMusicPlaying && Activity.currentNote == 0) {
                     multipleStaff.play()
-                } else if (!multipleStaff.isMusicPlaying && Activity.currentNote > 0){
-                    items.bonus.bad("flower")
                 }
                 GSynth.generate(60, 100)
                 Activity.checkAnswer(multipleStaff.pulseMarkerX)
@@ -347,8 +364,7 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.nextSubLevel)
-                loose.connect(Activity.initSubLevel)
+                win.connect(Activity.nextLevel)
             }
         }
 
