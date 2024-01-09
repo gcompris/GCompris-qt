@@ -30,7 +30,7 @@ function start(items_, dataset_, mode_) {
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.firstQuestion = true
     items.audioOk = false
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     initLevel()
 }
 
@@ -72,19 +72,20 @@ function nextQuestion() {
         hasWon = true
     } else {
         currentQuestion++
-        items.score.currentSubLevel++
         items.nextAnim.restart()
     }
 }
 
 function nextLevel() {
-    items.score.currentSubLevel = 1
+    items.score.stopWinAnimation()
+    items.score.currentSubLevel = 0
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.score.currentSubLevel = 1
+    items.score.stopWinAnimation()
+    items.score.currentSubLevel = 0
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
