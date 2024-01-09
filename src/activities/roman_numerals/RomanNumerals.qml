@@ -71,6 +71,7 @@ ActivityBase {
             // it forces a layout refresh when it's set to 0
             property int currentLevel: -1
             property int numberOfLevel: dataset.length
+            property bool buttonsBlocked: false
 
             property var dataset: [
                 {
@@ -177,7 +178,8 @@ ActivityBase {
             }
 
             function initLevel() {
-                score.currentSubLevel = 1
+                errorRectangle.resetState()
+                score.currentSubLevel = 0
                 initSubLevel()
             }
 
@@ -186,34 +188,41 @@ ActivityBase {
                     questionValue = Math.round(Math.random() * dataset[currentLevel].values[1] + 1)
                     score.numberOfSubLevels = dataset[currentLevel].values[2]
                 } else {
-                    questionValue = dataset[currentLevel].values[score.currentSubLevel - 1]
+                    questionValue = dataset[currentLevel].values[score.currentSubLevel]
                     score.numberOfSubLevels = dataset[currentLevel].values.length
                 }
+                items.buttonsBlocked = false
             }
 
             function nextLevel() {
+                score.stopWinAnimation()
                 currentLevel = Core.getNextLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
             function previousLevel() {
+                score.stopWinAnimation()
                 currentLevel = Core.getPreviousLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
             function nextSubLevel() {
-                if(++score.currentSubLevel > score.numberOfSubLevels) {
-                    nextLevel()
+                if(score.currentSubLevel >= score.numberOfSubLevels) {
+                    bonus.good("tux")
                 } else {
                     initSubLevel();
                 }
             }
 
             function check() {
+                items.buttonsBlocked = true
                 if(feedback.value == items.questionValue) {
-                    bonus.good('tux')
+                    score.currentSubLevel += 1;
+                    score.playWinAnimation();
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
                 } else {
-                    bonus.bad('tux', bonus.checkAnswer)
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                    errorRectangle.startAnimation()
                 }
             }
         }
@@ -225,7 +234,8 @@ ActivityBase {
 
         Keys.onPressed: {
             if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
-                items.check()
+                if(!items.buttonsBlocked)
+                    items.check()
             }
         }
 
@@ -308,6 +318,7 @@ ActivityBase {
                 id: textInput
                 x: parent.width / 2
                 width: parent.width
+                enabled: !items.buttonsBlocked
                 color: "#373737"
                 text: ''
                 maximumLength: items.toArabic ?
@@ -410,6 +421,14 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: inputArea
+            radius: inputArea.radius
+            imageSize: height * 2
+            function releaseControls() { items.buttonsBlocked = false; }
+        }
+
         Score {
             id: score
             anchors.right: okButton.left
@@ -417,6 +436,7 @@ ActivityBase {
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 1
+            onStop: items.nextSubLevel()
         }
 
         DialogHelp {
@@ -428,6 +448,7 @@ ActivityBase {
             id: keyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
+            enabled: visible && !items.buttonsBlocked
 
             function populateArabic() {
                 layout = [ [
@@ -483,7 +504,7 @@ ActivityBase {
           anchors.right: background.right
           anchors.bottom: bar.top
           anchors.margins: 2 * background.layoutMargins
-          enabled: !bonus.isPlaying
+          enabled: !items.buttonsBlocked
           height: bar.height
           width: height
           sourceSize.height: height
@@ -493,7 +514,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(items.nextSubLevel)
+            Component.onCompleted: win.connect(items.nextLevel)
         }
     }
 }
