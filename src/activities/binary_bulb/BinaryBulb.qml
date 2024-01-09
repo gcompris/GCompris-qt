@@ -48,6 +48,9 @@ ActivityBase {
             property int numberOfBulbs: 0
             property int currentSelectedBulb: -1
             property alias score: score
+            property alias errorRectangle: errorRectangle
+            property GCSfx audioEffects: activity.audioEffects
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -139,6 +142,14 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: bulbsRow
+            z: score.z
+            imageSize: okButton.sourceSize.width
+            function releaseControls() { items.buttonsBlocked = false; }
+        }
+
         GCText {
             id: reachedSoFar
             anchors.horizontalCenter: bulbsRow.horizontalCenter
@@ -161,7 +172,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
             onClicked: Activity.equalityCheck()
-            enabled: !bonus.isPlaying && !score.isWinAnimationPlaying
+            enabled: !items.buttonsBlocked
         }
 
         DialogHelp {
@@ -190,6 +201,7 @@ ActivityBase {
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.rightMargin: 0
+            onStop: Activity.nextSubLevel()
         }
 
         Bonus {

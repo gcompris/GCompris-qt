@@ -50,6 +50,7 @@ Item {
 
     MouseArea {
         anchors.fill: parent
+        enabled: !items.buttonsBlocked
         onClicked: Activity.changeState(index)
     }
 

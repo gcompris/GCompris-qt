@@ -70,26 +70,29 @@ function resetBulbs() {
 function initializeValues() {
     items.currentSelectedBulb = -1
     items.numberSoFar = 0
-    items.numberToConvert = levelDataset[items.score.currentSubLevel - 1]
+    items.numberToConvert = levelDataset[items.score.currentSubLevel]
 }
 
 function equalityCheck() {
+    items.buttonsBlocked = true
     if(items.numberSoFar == items.numberToConvert) {
-        if(items.score.currentSubLevel < items.score.numberOfSubLevels) {
-            items.score.currentSubLevel++;
-            items.score.playWinAnimation()
-            resetBulbs()
-            initializeValues()
-        }
-        else {
-            items.bonus.good("lion")
-            resetBulbs()
-        }
+        items.score.currentSubLevel++
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+
+    } else {
+        items.errorRectangle.startAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
     }
-    else {
-        items.bonus.bad("lion")
+}
+
+function nextSubLevel() {
+    if (items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("lion")
+    } else {
         resetBulbs()
-        items.numberSoFar = 0
+        initializeValues()
+        items.buttonsBlocked = false
     }
 }
 
@@ -106,22 +109,24 @@ function changeState(index) {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState()
     items.score.numberOfSubLevels = dataset[items.currentLevel].numbersToBeConverted.length
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     items.numberOfBulbs = dataset[items.currentLevel].bulbCount
     levelDataset = Core.shuffle(dataset[items.currentLevel].numbersToBeConverted)
     initializeValues()
     resetBulbs()
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1
     initLevel();
 }
