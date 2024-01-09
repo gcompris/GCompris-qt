@@ -13,7 +13,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var maxLevel = 8;
-var currentSubLevel = 0;
 var maxSubLevel = 6;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/graph-coloring/resource/shapes/";
