@@ -48,12 +48,13 @@ ActivityBase {
             readonly property int numberOfLevel: 10
             property int currentLevel: 0
             property bool running: false
+            property bool buttonsBlocked: false
         }
 
         onStart: {
             items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
             score.numberOfSubLevels = 5;
-            score.currentSubLevel = 1;
+            score.currentSubLevel = 0;
             if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
                     background.audioDisabled = true;
             } else {
@@ -127,12 +128,15 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     enabled: !questionPlayer.running && !knock.running && !introDelay.running
-                              && !anim.running && !bonus.isPlaying
+                              && !anim.running && !items.buttonsBlocked
                     onClicked: {
                         anim.start()
                         background.playNote(index)
                         items.answer.push(index)
-                        background.checkAnswer()
+                        if(items.answer.length >= items.question.length) {
+                            items.buttonsBlocked = true;
+                            feedbackTimer.restart();
+                        }
                     }
                 }
             }
@@ -178,6 +182,24 @@ ActivityBase {
             }
         }
 
+        Timer {
+            id: feedbackTimer
+            interval: 500
+            onTriggered: {
+                background.checkAnswer()
+            }
+        }
+
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: layoutArea
+            imageSize: 60 * ApplicationInfo.ratio
+            function releaseControls() {
+                introDelay.restart();
+                items.buttonsBlocked = false;
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -191,7 +213,8 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: {
-                score.currentSubLevel = 1
+                score.stopWinAnimation();
+                score.currentSubLevel = 0;
                 items.currentLevel = Core.getPreviousLevel(items.currentLevel, items.numberOfLevel);
                 initLevel();
                 parent.repeat();
@@ -207,10 +230,9 @@ ActivityBase {
         Bonus {
             id: bonus
             onWin: {
-                parent.nextSubLevel();
+                parent.nextLevel();
                 introDelay.restart();
             }
-            onLoose: introDelay.restart();
         }
 
         Score {
@@ -219,9 +241,14 @@ ActivityBase {
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.top: parent.top
+            onStop: {
+                parent.nextSubLevel();
+                introDelay.restart();
+            }
         }
 
         function initLevel() {
+            errorRectangle.resetState();
             items.question = []
             questionPlayer.stop()
 
@@ -236,19 +263,20 @@ ActivityBase {
             }
             items.questionInterval = 1200 - Math.min(500, 100 * (items.currentLevel + 1))
             items.answer = []
+            items.buttonsBlocked = false
         }
 
         function nextSubLevel() {
             if(score.currentSubLevel < score.numberOfSubLevels) {
-                score.currentSubLevel++
                 initLevel()
                 return
             }
-            nextLevel()
+            bonus.good("note")
         }
 
         function nextLevel() {
-            score.currentSubLevel = 1
+            score.stopWinAnimation();
+            score.currentSubLevel = 0;
             items.currentLevel = Core.getNextLevel(items.currentLevel, items.numberOfLevel);
             initLevel();
         }
@@ -266,10 +294,14 @@ ActivityBase {
         }
 
         function checkAnswer() {
-            if(items.answer.join() == items.question.join())
-                bonus.good('note')
-            else if(items.answer.length >= items.question.length)
-                bonus.bad('note')
+            if(items.answer.join() == items.question.join()) {
+                score.currentSubLevel += 1
+                score.playWinAnimation()
+                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+            } else {
+                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                errorRectangle.startAnimation()
+            }
         }
 
         Loader {
