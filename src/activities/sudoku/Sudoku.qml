@@ -58,6 +58,7 @@ ActivityBase {
             property alias rows: sudoColumn.rows
             property alias sudokuModel: sudokuModel
             readonly property var levels: activity.datasetLoader.data
+            property bool buttonsBlocked: false
         }
         onStart: Activity.start(items)
 
@@ -106,7 +107,7 @@ ActivityBase {
         Bonus {
             id: bonus
             z: 1002
-            Component.onCompleted: win.connect(Activity.incrementLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
@@ -116,9 +117,10 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.right: background.right
             anchors.bottomMargin: background.baseMargins
+            onStop: Activity.incrementLevel()
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
             Activity.onKeyPressed(event);
         }
@@ -126,6 +128,7 @@ ActivityBase {
         SudokuListWidget {
             id: availablePieces
             audioEffects: activity.audioEffects
+            inputBlocked: items.buttonsBlocked
         }
 
         ListModel {
@@ -190,7 +193,7 @@ ActivityBase {
         MouseArea {
             id: dynamic
             anchors.fill: sudoColumn
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
             hoverEnabled: true
 
             property int previousHoveredCase: -1

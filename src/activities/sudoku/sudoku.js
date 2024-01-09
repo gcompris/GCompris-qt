@@ -18,7 +18,7 @@ var url = "qrc:/gcompris/src/activities/sudoku/resource/"
 
 function start(items_) {
     items = items_
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     numberOfLevel = items.levels.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
 
@@ -43,7 +43,7 @@ function initLevel() {
     items.sudokuModel.clear();
 
     // Copy current sudoku in local variable
-    var initialSudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel];
 
     items.columns = initialSudoku.length
     items.rows = items.columns
@@ -72,17 +72,19 @@ function initLevel() {
             }
         }
     }
-
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {
-    items.score.currentSubLevel = 1
+    items.score.stopWinAnimation()
+    items.score.currentSubLevel = 0
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.score.currentSubLevel = 1
+    items.score.stopWinAnimation()
+    items.score.currentSubLevel = 0
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
@@ -92,10 +94,8 @@ function previousLevel() {
  And bail out if no more levels are available
 */
 function incrementLevel() {
-    items.score.currentSubLevel ++
-
-    if(items.score.currentSubLevel > items.score.numberOfSubLevels) {
-        nextLevel()
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower")
     }
     else {
         initLevel()
@@ -103,7 +103,7 @@ function incrementLevel() {
 }
 
 function clickOn(caseX, caseY) {
-    var initialSudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel];
 
     var currentCase = caseX + caseY * initialSudoku.length;
 
@@ -130,7 +130,10 @@ function clickOn(caseX, caseY) {
     }
 
     if(isSolved()) {
-        items.bonus.good("flower")
+        items.buttonsBlocked = true
+        items.score.currentSubLevel += 1
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
     }
 }
 
