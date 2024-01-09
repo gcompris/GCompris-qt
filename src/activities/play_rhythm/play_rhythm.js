@@ -31,6 +31,7 @@ function stop() {
     items.introductoryAudioTimer.stop()
     items.metronomeOscillation.stop()
     items.multipleStaff.stopAudios()
+    items.score.stopWinAnimation()
 }
 
 function initLevel() {
