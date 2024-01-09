@@ -101,6 +101,17 @@ void DownloadManager::abortDownloads()
                 if (job->reply->isRunning()) {
                     qDebug() << "Aborting download job:" << job->url << job->resourceType;
                     job->reply->abort();
+
+                    // remove new Contents file before removing the new rcc
+                    QFileInfo fi(job->file.fileName());
+                    QDir dir = fi.dir(); // Get the directory of the file
+                    // Get the filepath of new Contents file
+                    QString newContentsFilePath = tempFilenameForFilename(dir.filePath(contentsFilename));
+                    // remove new Contents file if it exists
+                    if (QFile::exists(newContentsFilePath) && !QFile::remove(newContentsFilePath))
+                        qWarning() << "Error while removing new Contents file" << newContentsFilePath;
+
+                    // close and remove new rcc file
                     job->file.close();
                     job->file.remove();
                 }
@@ -649,6 +660,7 @@ void DownloadManager::finishDownload()
     QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     DownloadFinishedCode code = Success;
     DownloadJob *job = getJobByReply(reply);
+    QString targetFilename = getFilenameForUrl(job->url);
     bool allFinished = false;
     if (job->file.isOpen()) {
         job->file.flush(); // note: important, or checksums might be wrong!
@@ -658,18 +670,33 @@ void DownloadManager::finishDownload()
     if (reply->error() != 0 && job->file.exists()) {
         job->file.remove();
     }
-    else {
-        // active temp file
-        QString tFilename = filenameForTempFilename(job->file.fileName());
-        if (QFile::exists(tFilename)) {
-            QFile::remove(tFilename);
+    else if (job->url.fileName() != contentsFilename) {
+        // remove old rcc file and rename the new file
+        // remove old Contents file, rename the new Contents file
+
+        // get corresponding content filename
+        QFileInfo fi(targetFilename);
+        QDir dir = fi.dir(); // Get the directory of the file
+        QString contentsFilePath = dir.filePath(contentsFilename); // Get the filepath of Contents file
+        QString newContentsFilePath = tempFilenameForFilename(contentsFilePath);
+
+        if (QFile::exists(targetFilename)) {
+            QFile::remove(targetFilename);
         }
-        if (!job->file.rename(tFilename)) {
-            qWarning() << "Could not rename temporary file to" << tFilename;
+        if (!job->file.rename(targetFilename)) {
+            qWarning() << "Could not rename temporary file to" << targetFilename;
+            if (!QFile::remove(newContentsFilePath))
+                qWarning() << "Could not remove new Contents file" << newContentsFilePath;
+        }
+        else {
+            // new rcc placed at the required path, now place new contents file
+            if (QFile::exists(contentsFilePath) && !QFile::remove(contentsFilePath))
+                qWarning() << "Could not remove old Contents file" << contentsFilePath;
+            else if (!QFile::rename(newContentsFilePath, contentsFilePath))
+                qWarning() << "Could not rename new Contents file to " << contentsFilePath;
         }
     }
 
-    QString targetFilename = getFilenameForUrl(job->url);
     if (job->url.fileName() == contentsFilename) {
         // Contents
         if (reply->error() != 0) {
@@ -765,9 +792,24 @@ void DownloadManager::finishDownload()
                 break;
             }
         }
-        if (code != NoChange) // nothing is up2date locally -> download it
+        if (code != NoChange) {
+            // nothing is up2date locally -> download it
             if (download(job))
                 goto outNext;
+        }
+        else {
+            // data has not changed, remove corresponding Contents file
+            // it is usually removed when rcc is downloaded
+            // in this case, as data has not changed, rcc won't be downloaded
+            QFileInfo fi(job->file.fileName());
+            QDir dir = fi.dir(); // Get the directory of the file
+            // Get the filepath of new Contents file
+            QString newContentsFilePath = tempFilenameForFilename(dir.filePath(contentsFilename));
+
+            if (!QFile::remove(newContentsFilePath)) {
+                qWarning() << "Could not remove old Contents file" << newContentsFilePath;
+            }
+        }
     }
 
     // none left, DownloadJob finished
@@ -799,12 +841,23 @@ outError:
         QUrl nUrl;
         while (!job->queue.isEmpty()) {
             nUrl = job->queue.takeFirst();
-            QString relPath = getResourcePath(job->resourceType, job->extraInfos);;
+            QString relPath = getResourcePath(job->resourceType, job->extraInfos);
             for (const QString &base: getSystemResourcePaths()) {
                 QString filename = base + '/' + relPath;
                 if (QFile::exists(filename))
                     registerResourceAbsolute(filename);
             }
+        }
+    }
+    else {
+        // restore old Contents file
+        QFileInfo fi(job->file.fileName());
+        QDir dir = fi.dir(); // Get the directory of the file
+        // Get the filepath of new Contents file
+        QString newContentsFilePath = tempFilenameForFilename(dir.filePath(contentsFilename));
+
+        if (!QFile::remove(newContentsFilePath)) {
+            qWarning() << "Could not remove new Contents file" << newContentsFilePath;
         }
     }
 
