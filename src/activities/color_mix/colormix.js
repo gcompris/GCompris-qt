@@ -20,7 +20,7 @@ function start(items_) {
     items = items_
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.score.numberOfSubLevels = 6
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     initLevel()
 }
 
@@ -42,8 +42,8 @@ function initLevel() {
     items.currentColor2 = 0
     items.currentColor3 = 0
 
-    /* Enable OK button */
-    items.okEnabled = true
+    /* Enable controls */
+    items.buttonsBlocked = false
 }
 
 function getColor(i1, i2, i3) {
@@ -55,22 +55,24 @@ function getColor(i1, i2, i3) {
 }
 
 function nextSubLevel() {
-    if (items.score.numberOfSubLevels >= ++items.score.currentSubLevel) {
+    if (items.score.numberOfSubLevels > items.score.currentSubLevel) {
         initLevel()
     } else {
-        nextLevel()
+        items.bonus.good("gnu")
     }
 }
 
 function nextLevel() {
-    items.score.currentSubLevel = 1
+    items.score.stopWinAnimation()
+    items.score.currentSubLevel = 0
 
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }
 
 function previousLevel() {
-    items.score.currentSubLevel = 1
+    items.score.stopWinAnimation()
+    items.score.currentSubLevel = 0
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel()
 }

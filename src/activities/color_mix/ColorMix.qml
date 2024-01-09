@@ -48,7 +48,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
-            property bool okEnabled: true
+            property bool buttonsBlocked: false
             property int maxSteps: 1
             property int targetColor1: 0
             property int targetColor2: 0
@@ -178,6 +178,7 @@ ActivityBase {
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 10
+            onStop: Activity.nextSubLevel()
         }
 
         BarButton {
@@ -185,7 +186,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 66 * bar.barZoom
             visible: true
-            enabled: items.okEnabled
+            enabled: !items.buttonsBlocked
             anchors {
                 right: parent.right
                 rightMargin: items.margins
@@ -230,8 +231,10 @@ ActivityBase {
                 helpMessage.text = message
 
                 if (message === "") {
-                    items.okEnabled = false
-                    bonus.good("gnu")
+                    items.buttonsBlocked = true
+                    items.score.currentSubLevel += 1
+                    items.score.playWinAnimation()
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
                     helpMessage.text = ""
                 }
             }
@@ -258,7 +261,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }

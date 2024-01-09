@@ -92,6 +92,7 @@ Image {
         }
         MouseArea {
             anchors.fill: parent
+            enabled: !items.buttonsBlocked
             drag.target: sliderHandle
             onPositionChanged: {
                 if(sliderHandle.x < 0)
