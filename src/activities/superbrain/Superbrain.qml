@@ -59,6 +59,7 @@ ActivityBase {
             property alias currentRepeater: currentRepeater
             property string mode: "color"
             property GCSfx audioEffects: activity.audioEffects
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -379,7 +380,7 @@ if (targetY < 0) {
 
                 BarButton {
                     id: okButton
-                    enabled: !bonus.isPlaying
+                    enabled: !items.buttonsBlocked
                     source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                     sourceSize.width: 66 * bar.barZoom
                     width: guessColumn.guessSize * currentRow.factor

@@ -102,6 +102,7 @@ function initLevel() {
     // add first guess row:
     items.guessModel.clear();
     appendGuessRow();
+    items.buttonsBlocked = false;
 }
 
 function appendGuessRow() {
@@ -159,6 +160,7 @@ function checkGuess() {
     }
     obj.result = ({ correct: correctCount });
     if (remainingIndices.length == 0) {
+        items.buttonsBlocked = true;
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
