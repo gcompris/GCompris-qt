@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2020, 2021, 2022, 2023 Xavier Besnard <xavier.besnard@kde.org>
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
-# Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Christian Wiatrowski <w9204-wi@yahoo.com>, 2018.
@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-11-07 20:56+0100\n"
-"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"PO-Revision-Date: 2024-01-07 20:56+0100\n"
+"Last-Translator: Johnny Jazeix <jazeix@gmail.com>\n"
 "Language-Team: fr\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -1974,12 +1974,12 @@ msgid ""
 "    "
 msgstr ""
 "Saisis n'importe quelle touche du clavier.\n"
-" Les lettres, les chiffres et les autres touches de caractères permettent "
+"    Les lettres, les chiffres et les autres touches de caractères permettent "
 "d'afficher les caractères à l'écran.\n"
-" Si un son correspondant existe, il sera joué, sinon un son de buzzer sera "
-"joué.\n"
-" Les autres touches émettent un bruit de clic.\n"
-" "
+"    Si un son correspondant existe, il sera joué, sinon un son de buzzer "
+"sera joué.\n"
+"    Les autres touches émettent un bruit de clic.\n"
+"    "
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
