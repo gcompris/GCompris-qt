@@ -12,7 +12,6 @@
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentSubLevel = 0
 var numberOfLevel = 10
 var noteIndexAnswered
 var items
@@ -34,26 +33,25 @@ function stop() {
 }
 
 function initLevel() {
-    currentSubLevel = 0
+    items.score.currentSubLevel = 0
     Core.shuffle(levels[items.currentLevel])
     nextSubLevel()
 }
 
 function initSubLevel() {
-    var currentSubLevelMelody = levels[items.currentLevel][currentSubLevel - 1]
+    var currentSubLevelMelody = levels[items.currentLevel][items.score.currentSubLevel]
     noteIndexAnswered = -1
     items.multipleStaff.loadFromData(currentSubLevelMelody)
 
     if(!isIntroductoryAudioPlaying && !items.iAmReady.visible)
         items.multipleStaff.play()
+    items.buttonsBlocked = false
 }
 
 function nextSubLevel() {
-    currentSubLevel++
     incorrectAnswers = []
-    items.score.currentSubLevel = currentSubLevel
-    if(currentSubLevel > levels[items.currentLevel].length)
-        nextLevel()
+    if(items.score.currentSubLevel >= levels[items.currentLevel].length)
+        items.bonus.good("note")
     else
         initSubLevel()
 }
@@ -69,7 +67,7 @@ function undoPreviousAnswer() {
 }
 
 function checkAnswer(noteName) {
-    var currentSubLevelNotes = levels[items.currentLevel][currentSubLevel - 1].split(' ')
+    var currentSubLevelNotes = levels[items.currentLevel][items.score.currentSubLevel].split(' ')
     if(noteIndexAnswered < (currentSubLevelNotes.length - 2)) {
         noteIndexAnswered++
         var currentNote = currentSubLevelNotes[noteIndexAnswered + 1]
@@ -81,20 +79,31 @@ function checkAnswer(noteName) {
         }
 
         if(noteIndexAnswered === (currentSubLevelNotes.length - 2)) {
-            if(incorrectAnswers.length === 0)
-                items.bonus.good("flower")
-            else
-                items.bonus.bad("flower")
+            items.buttonsBlocked = true
+            items.answerFeedbackTimer.restart()
         }
     }
 }
 
+function answerFeedback() {
+    if(incorrectAnswers.length === 0) {
+        items.score.currentSubLevel += 1
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+    } else {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.buttonsBlocked = false
+    }
+}
+
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

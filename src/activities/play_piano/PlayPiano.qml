@@ -41,6 +41,9 @@ ActivityBase {
         }
 
         Keys.onPressed: {
+            if(items.buttonsBlocked)
+                return;
+
             var keyboardBindings = {}
             keyboardBindings[Qt.Key_1] = 0
             keyboardBindings[Qt.Key_2] = 1
@@ -90,7 +93,9 @@ ActivityBase {
             property alias iAmReady: iAmReady
             property alias introductoryAudioTimer: introductoryAudioTimer
             property alias parser: parser
+            property alias answerFeedbackTimer: answerFeedbackTimer
             property string mode: "coloredNotes"
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -113,6 +118,15 @@ ActivityBase {
                     Activity.isIntroductoryAudioPlaying = false
                     Activity.initSubLevel()
                 }
+            }
+        }
+
+        Timer {
+            id: answerFeedbackTimer
+            interval: 1000
+            onRunningChanged: {
+                if(!running)
+                    Activity.answerFeedback()
             }
         }
 
@@ -146,6 +160,7 @@ ActivityBase {
             anchors.bottom: undefined
             numberOfSubLevels: 5
             width: horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
+            onStop: Activity.nextSubLevel()
         }
 
         Rectangle {
@@ -198,8 +213,8 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
             blackLabelsVisible: ([4, 5, 9, 10].indexOf(bar.level) != -1)
-            blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
-            whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
+            blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running && !items.buttonsBlocked
+            whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running && !items.buttonsBlocked
             whiteKeyNoteLabelsTreble: [ whiteKeyNoteLabelsArray.slice(18, 26) ]
             whiteKeyNoteLabelsBass: [ whiteKeyNoteLabelsArray.slice(11, 19)]
             onNoteClicked: {
@@ -229,6 +244,11 @@ ActivityBase {
             undoButtonVisible: true
 
             onUndoButtonClicked: Activity.undoPreviousAnswer()
+        }
+        MouseArea {
+            id: optionsRowLock
+            anchors.fill: optionsRow
+            enabled: items.buttonsBlocked
         }
 
         DialogChooseLevel {
@@ -269,7 +289,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Loader {
