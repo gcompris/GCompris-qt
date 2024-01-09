@@ -17,7 +17,6 @@ var url2 = "qrc:/gcompris/src/activities/algorithm/resource/";
 var items;
 var maxSubLevel;
 var dataset;
-var currentSubLevel;
 var numberOfLevel;
 var numberOfItemType;
 var numberOfItemMax;
@@ -63,7 +62,7 @@ function initLevel() {
         items.instructionText = items.levels[items.currentLevel].objective;
         items.instruction.opacity = 0.8;
     }
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     numberOfItemType = dataset[items.currentLevel].numberOfItemType;
     numberOfItemMax = dataset[items.currentLevel].numberOfItemMax;
     maxSubLevel = dataset[items.currentLevel].sublevels;
@@ -72,11 +71,13 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
@@ -101,7 +102,9 @@ function checkAnswersAuto() {
             return;
         }
     }
-    nextSubLevel();
+    items.score.currentSubLevel += 1;
+    items.score.playWinAnimation();
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
 }
 
 function checkAnswers() {
@@ -119,11 +122,13 @@ function checkAnswers() {
     }
 
     if(isAnswerGood) {
-        playAudio();
-        nextSubLevel();
+        items.score.currentSubLevel += 1;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+    } else {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        items.errorRectangle.startAnimation();
     }
-    else
-        items.bonus.bad("smiley");
 }
 
 function resetAnswerAreaColor() {
@@ -143,9 +148,9 @@ function registerAnswerItem(item) {
 }
 
 function initSubLevel() {
+    items.errorRectangle.resetState()
     cleanUp();
     itemIcons = Core.shuffle(itemIcons);
-    items.score.currentSubLevel = currentSubLevel + 1;
     items.okButton.enabled = false;
     var enumItems = new Array();
     var types = new Array();
@@ -164,13 +169,12 @@ function initSubLevel() {
 
 function nextSubLevel() {
     lockKeyboard = true;
-    if( ++currentSubLevel >= maxSubLevel) {
+    if( items.score.currentSubLevel >= maxSubLevel) {
         items.okButton.enabled = false;
         items.bonus.good("smiley");
-        currentSubLevel = 0;
     }
     else
-        items.score.playWinAnimation();
+        initSubLevel();
 }
 
 function enableOkButton() {

@@ -113,6 +113,7 @@ ActivityBase {
             property alias instruction: instruction
             property string instructionText: ""
             property alias score: score
+            property alias errorRectangle: errorRectangle
             property GCSfx audioEffects: activity.audioEffects
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property int mode: 1 // default is automatic
@@ -180,6 +181,12 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: answer
+            imageSize: okButton.width
+        }
+
         VirtualKeyboard {
             id: keyboard
             anchors.bottom: parent.bottom
@@ -235,7 +242,7 @@ ActivityBase {
             anchors.verticalCenter: okButton.verticalCenter
             anchors.right: okButton.visible ? okButton.left : background.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            onStop: Activity.initSubLevel()
+            onStop: Activity.nextSubLevel()
         }
 
         DialogHelp {
