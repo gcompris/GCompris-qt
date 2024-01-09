@@ -14275,7 +14275,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -18998,7 +18998,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19012,22 +19012,22 @@ msgstr ""
 "kurzor na ligot, potom ťahajte jeden prst na pravú časť alebo dva prsty na "
 "stred. Na dotykovej ploche ťahajte dva prsty od ligotu, jeden v každom smere."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfektne približujete. Pokračujte, pokiaľ neuvidíte hrudku."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum, dávajte pozor, približujete príliš ďaleko od ligotu."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Teraz vidíte hrudku, kliknite na neho, aby ste ho chytili."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19036,17 +19036,17 @@ msgstr ""
 "Hum, ste príliš ďaleko od hrudky, aby ste ju videli. Zrušte priblíženie, "
 "potom sa opäť priblížte tak blízko, ako je to možné k ligotu."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Teraz zrušte a pokúste sa nájsť iný ligot."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Pokračujte sa zrušením priblíženia, kým neuvidíte ligot."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Teraz vidíte ligot, choďte vpred, môžete sa k nemu priblížiť."
@@ -22099,7 +22099,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "2. Použite kláves Enter alebo Return na odovzdanie odpovedí.<br>"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22108,7 +22108,7 @@ msgstr ""
 "Pozorujte a pamätajte si vlak skôr, ako časovač skončí, a potom ťahaním "
 "položiek vytvorte podobný vlak."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -25462,12 +25462,12 @@ msgstr ""
 "aktuálnom a budúcom hádaní, kým to neodznačíte dvojitým kliknutím alebo "
 "tapom."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Táto položka je dobre umiestnená."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Táto položka je zle umiestnená."

@@ -13957,7 +13957,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Lasu la skatolon malplena se la klaso ne kongruas."
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Malplena"
@@ -18512,7 +18512,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - remiksita kaj uzata kiam ornugeto estas kolektita"
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18527,22 +18527,22 @@ msgstr ""
 "fingrojn sur la centron. Sur tuŝareo, trenu du fingrojn for de la ekbrilo, "
 "unu en ĉiu direkto."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfekte vi zomas. Daŭrigu ĝis vi vidos la nuggeton."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum, atentu, vi tro malproksimiĝas de la ekbrilo."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Nun vi vidas la nuggeton, alklaku ĝin por kapti ĝin."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -18551,17 +18551,17 @@ msgstr ""
 "Hum, vi estas tro malproksime de la bubo por vidi ĝin. Malzomu kaj denove "
 "zomu kiel eble plej proksime de la ekbrilo."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Nun malzomu kaj provu trovi alian ekbrilon."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Daŭrigu malzomi ĝis vi vidos la ekbrilon."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Nun vi vidas la ekbrilon, antaŭen, vi povas zomi ĝin."
@@ -21498,7 +21498,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enigu aŭ Revenu: sendu vian respondon"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21507,7 +21507,7 @@ msgstr ""
 "Observu kaj memoru la trajnon antaŭ ol la tempigilo finiĝas kaj tiam trenu "
 "la erojn por starigi similan trajnon."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24794,12 +24794,12 @@ msgstr ""
 "markitaj eroj estas aŭtomate elektitaj en viaj nunaj kaj estontaj divenoj "
 "ĝis vi malmarkas ilin, per duobla klako sur ili denove."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ĉi tiu objekto estas bone metita."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ĉi tiu objekto estas mislokigita."

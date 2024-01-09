@@ -14333,7 +14333,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -18976,7 +18976,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav - се ремиксира и се користи кога се собира златна грутка"
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18991,22 +18991,22 @@ msgstr ""
 "област или два прста на центарот. На подлогата на допир, повлечете со два "
 "прста од искрата, по еден во секоја насока."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Совршено вие зумирате. Продолжете додека не ја видите грутката."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Хмм, внимавајте, зумирате премногу далеку од искрата."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Сега ја гледате грутката, кликнете на неа за да ја фатите."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19015,17 +19015,17 @@ msgstr ""
 "Хмм, вие сте премногу далеку од грутката за да ја видите. Одзумирајте, потоа "
 "зумирајте повторно колку што е можно поблиску до искрата."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Сега одзумирајте и обидете се да пронајдете друга искра."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Продолжете со одзумирање сè додека не ја видите искрата."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Сега ја гледате искрата, продолжете, можете да ја зумирате."
@@ -22016,7 +22016,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter или Return: за да ги доставите одговорите"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22025,7 +22025,7 @@ msgstr ""
 "Набљудувајте и запамтете го возот пред да заврши времето и потоа повлечете "
 "ги предметите за да поставите сличен воз."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -25364,12 +25364,12 @@ msgstr ""
 "избираат во вашите сегашни и идни нагаѓања се додека не ги одштиклирате, "
 "повторно со двојно кликање или допирање."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Овој предмет е добро поставен."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Овој предмет е погрешно поставен."

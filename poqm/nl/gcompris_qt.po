@@ -14015,7 +14015,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Laat het vak leeg als de klasse niet overeenkomt."
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Leeg"
@@ -18635,7 +18635,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav - remixed en gebruikt wanneer een goudklompje wordt gepakt"
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18650,22 +18650,22 @@ msgstr ""
 "gebied of met twee vingers naar het midden. Op een aanraakscherm veeg je "
 "twee vingers weg van de glinstering, elk in tegenovergestelde richting."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfect je bent aan zoomen. Ga door totdat je het goudklompje ziet."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum, opgelet, je bent te ver van de glinstering aan het zoomen."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Je ziet nu het goudklompje, klik er op om het te vangen."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -18674,17 +18674,17 @@ msgstr ""
 "Hum, je bent te ver van het goudklompje om het te zien. Zoom uit en weer in "
 "dichter bij de glinstering."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Zoom nu uit en probeer een andere glinstering te vinden."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Ga door met uitzoomen totdat je de glinstering ziet."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Nu zie je de glinstering, ga verder, je kunt er op inzoomen."
@@ -21659,7 +21659,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter of Return: het antwoord invoeren"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21668,7 +21668,7 @@ msgstr ""
 "Bekijk en onthoud de trein voordat de timer eindigt en sleep de items daarna "
 "om een gelijke trein samen te stellen."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24989,12 +24989,12 @@ msgstr ""
 "worden automatisch geselecteerd in jouw huidig en toekomstig giswerk totdat "
 "je deze markering hiervan weghaalt, door er opnieuw dubbel op te klikken."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Dit item is goed geplaatst."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Dit item is fout geplaatst."

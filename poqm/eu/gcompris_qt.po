@@ -13981,7 +13981,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Klasea ez badagokio, utzi kutxa hutsik."
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Hutsik"
@@ -18564,7 +18564,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - berriz nahastua eta urre-pipita bat biltzean erabilia"
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18579,22 +18579,22 @@ msgstr ""
 "eremura arrastatu edo bi hatz erdira. Ukipen-pantaila batean, arrastatu bi "
 "hatz txinpartatik kanpo bakoitza norabide batean."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Oso ondo! Zoom egiten ari zara. Jarraitu pipita aurkitu arte."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Kontuz! Zooma distiratik oso urruti egiten ari zara."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Orain pipita ikusi dezakezu. Sakatu gainean eta hartu."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -18603,17 +18603,17 @@ msgstr ""
 "Oh, distiratik oso urruti zaude. Desegin zooma eta errepikatu distiratik "
 "ahalik eta hurbil."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Orain desegin zooma eta saiatu beste distira bat topatzen."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Jarraitu zooma desegiten distira ikusi arte."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Orain distira ikusten duzu. Jarraitu aurrera. Zoom egin dezakezu."
@@ -21580,7 +21580,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Sartu edo Itzulbira: zure erantzuna bidaltzea"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21589,7 +21589,7 @@ msgstr ""
 "Trena behatu eta oroitu denbora agortu aurretik, eta, ondoren, elementuak "
 "arrastatu antzeko tren bat eraikitzeko."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24928,12 +24928,12 @@ msgstr ""
 "hautatzen dira uneko eta etorkizuneko saiakeretan, harik eta, berriz ere, "
 "klik bikoitza eginez, marka kentzen diezun arte."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Elementu hau ondo kokatuta dago."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Elementu hau gaizki kokatuta dago."

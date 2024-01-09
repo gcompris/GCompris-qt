@@ -13970,7 +13970,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Qayda uyğun gəlmədikdə xananı boş buraxın."
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Boşdur"
@@ -18536,7 +18536,7 @@ msgstr ""
 "metalpaint.wav - qarışdırılıb və yeni qızıl külçələri toplandıqda istifadə "
 "olunur"
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18553,22 +18553,22 @@ msgstr ""
 "sürüşdürün. Sensor ekranda barmaqlarınızı parıltı üzərindən ək istiamətlərdə "
 "sürüşdürün."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Əla, bu sizdə alınır, Külçə görünənə qədər davam edin."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, diqqət edin, parıltıdan çox uzaqda yaxınlaşdırırsınız."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "İndi siz külçəni görürsünüz, onu götürmək üçün vurun."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -18577,17 +18577,17 @@ msgstr ""
 "Hmm, siz belə görünür ki, siz külçədən çox uzaqdasınız. Uzaqlaşın və "
 "parıltını gördükdə ona doğru təkrar yaxınlaşın."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "İndi uzaqlaşın və başqa parıltını tapmağa çalışın."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Parıltı görünənə qədər uzaqlaşın."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "İndi siz parıltını görürsünüz, ona yaxınlaşmağa başlayın."
@@ -21526,7 +21526,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter və ya Return: cavabınızı təsdiq edin"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21535,7 +21535,7 @@ msgstr ""
 "Qatarın necə göründüyünü yadda saxlayın və vaqonları köçürməklə və "
 "elementləri uyğun şəkildə düzməklə qatarın oxşarını yaradın."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24855,12 +24855,12 @@ msgstr ""
 "növbəti dəfə avtomatik seçiləcəkdir. Yenidən üzərinə iki dəfə vurmaqla bu "
 "işarəni ləğv etmək olar."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Bu element düzgün yerləşdirilib."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Bu element yerində deyil."

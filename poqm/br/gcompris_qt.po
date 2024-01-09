@@ -13986,7 +13986,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Laosk ar voestig goullo ma n'eo ket reizh ar rummad."
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "Goullo"
@@ -18564,7 +18564,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav -advesket hag implijet pa vez dastument ur fulenn aour"
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -18579,22 +18579,22 @@ msgstr ""
 "stekiñ, lak daou viz da riklañ pell diouzh al luc'hig, gant pep biz war un "
 "tu enep."
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Peurvat, o zoumañ emaout. Kendalc'h betek ma weli ar fulenn aour."
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, taol evezh, o zoumañ re bell diouzh al luc'hig emaout."
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Bremañ e welez ar fulenn aour, klik warni a-benn tapout anezhi."
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -18603,17 +18603,17 @@ msgstr ""
 "Hmm, re bell diouzh ar fulenn aour emaout evit gwelout anezhi. Dizoum ha "
 "zoum adarre an tostañ ar gwellañ ouzh ar fulenn."
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Bremañ, dizoum ha klask kavout ul luc'hig all."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Kendalc'h gant an dizoumañ betek ma weli al luc'hig."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Bremañ e welez al luc'hig, bec'h dezhi, gallout a rez zoumañ warni."
@@ -21572,7 +21572,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Mont-tre pe Distro: evit kinnig da respont"
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21581,7 +21581,7 @@ msgstr ""
 "Sell mat ouzh an tren evit kaout soñj dioutañ a-raok ma echufe amzer ar "
 "munuter ha rikl goude-se an traoù evit sevel un tren heñvel outañ."
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24877,12 +24877,12 @@ msgstr ""
 "evit da daolioù-esae all betek ma vo lamet kuit ar merk ganit en ur "
 "zaouglikañ pe daoustekiñ adarre."
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Lec'hiet mat eo an elfenn-mañ."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Lec'hiet fall eo an elfenn-mañ."

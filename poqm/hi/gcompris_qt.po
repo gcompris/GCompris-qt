@@ -15164,7 +15164,7 @@ msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
-#: activities/grammar_analysis/grammar_analysis.js:419
+#: activities/grammar_analysis/grammar_analysis.js:421
 #, fuzzy
 #| msgctxt "Admin|"
 #| msgid "empty"
@@ -20567,7 +20567,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 
-#: activities/mining/Mining.qml:407
+#: activities/mining/Mining.qml:422
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20581,22 +20581,22 @@ msgstr ""
 "फिर एक क्षेत्रफल पर एक उंगली खींचें और केंद्र पर दो अंगुलियां खींचें। एक स्पर्श क्षेत्र पर, दो "
 "उंगलियों को चमक से दूर खींचें, प्रत्येक दिशा में एक।"
 
-#: activities/mining/Mining.qml:418
+#: activities/mining/Mining.qml:433
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "बिल्कुल सही आप ज़ूमिंग कर रहे हैं। जब तक आप सोने का डला नहीं देखते तब तक जारी रखें। "
 
-#: activities/mining/Mining.qml:424
+#: activities/mining/Mining.qml:439
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "हूं ध्यान रखें, आप चमक से बहुत दूर ज़ूम कर रहे हैं।"
 
-#: activities/mining/Mining.qml:430
+#: activities/mining/Mining.qml:445
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "अब आप डला देखेंगे, इसे पकड़ने के लिए उस पर क्लिक करें।"
 
-#: activities/mining/Mining.qml:436
+#: activities/mining/Mining.qml:451
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20605,17 +20605,17 @@ msgstr ""
 "हं, आप इसे देखने के लिए सोने की डली से बहुत दूर हैं फिर ज़ूम करें फिर से ज़ूम करें जितना करीब आप "
 "चमक से कर सकते हैं।"
 
-#: activities/mining/Mining.qml:442
+#: activities/mining/Mining.qml:457
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "अब अंज़ुम करें और किसी और चमक को खोजने की कोशिश करें"
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:463
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "तब तक अंज़ुम करें जब तक आप स्पार्कल नहीं देखते।"
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:469
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "अब आप चमक को देखते हैं, आगे बढ़ो, आप इसे ज़ूम कर सकते हैं।"
@@ -23826,14 +23826,14 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr ""
 
-#: activities/railroad/Railroad.qml:106
+#: activities/railroad/Railroad.qml:108
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
 "to set up a similar train."
 msgstr ""
 
-#: activities/railroad/Railroad.qml:107
+#: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -27824,7 +27824,7 @@ msgstr ""
 "आइटम स्वचालित रूप से आपके वर्तमान और भविष्य के अनुमानों में चयनित होते हैं जब तक कि आप उन्हें "
 "दो-क्लिक या टैप करके दोबारा न छापें।"
 
-#: activities/superbrain/Superbrain.qml:139
+#: activities/superbrain/Superbrain.qml:140
 #, fuzzy
 #| msgctxt "Superbrain|"
 #| msgid "This item is well placed"
@@ -27832,7 +27832,7 @@ msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "इस वस्तु को अच्छी तरह से रखा गया है"
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:142
 #, fuzzy
 #| msgctxt "Superbrain|"
 #| msgid "This item is misplaced"
