@@ -38,7 +38,6 @@ function start(items_, operand_, speedSetting_) {
 
 function stop() {
     items.balloon.stopBalloon()
-    items.timer.stop()
 }
 
 // get appropriate operands depending on operator
@@ -69,7 +68,7 @@ function getOperands(min, max)
 function initLevel() {
     items.score.visible = false
     items.okButton.visible = false
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     subLevelData = []
 
     /**
@@ -163,6 +162,7 @@ function validateAnswer(screenAnswer)
 }
 
 function run() {
+    circularShiftElements()
     calculateOperands()
     items.numpad.resetText()
     items.score.visible = true
@@ -173,24 +173,26 @@ function run() {
     items.numpad.answerFlag = false
     items.result = getAnswer(firstOperandVal, secondOperandVal)
     items.balloon.startMoving(100000 / speedSetting)
+    items.buttonsBlocked = false
+}
+
+function checkAnswer() {
+    items.buttonsBlocked = true
+    items.balloon.startMoving(100000)
+    if(validateAnswer(parseInt(items.numpad.answer))) {
+        items.score.currentSubLevel++
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+    } else {
+        items.errorRectangle.startAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+    }
 }
 
 function questionsLeft() {
-    items.okButton.enabled = false
-    items.balloon.startMoving(100000 / speedSetting)
-    circularShiftElements()
-    if(validateAnswer(parseInt(items.numpad.answer))) {
-        items.numpad.answerFlag = true
-
-        if(items.score.currentSubLevel < items.score.numberOfSubLevels) {
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
-            items.score.currentSubLevel++
-            items.timer.start()
-        } else {
-            items.balloon.stopMoving()
-            items.bonus.good("smiley");
-        }
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("smiley")
+    } else {
+        run()
     }
-    else
-        items.bonus.bad("smiley");
 }

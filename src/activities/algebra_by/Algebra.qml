@@ -40,9 +40,9 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
+            property alias errorRectangle: errorRectangle
             property alias okButton: okButton
             property alias balloon: balloon
-            property alias timer: timer
             property alias iAmReady: iAmReady
             property alias firstOp: firstOp
             property alias secondOp: secondOp
@@ -50,6 +50,7 @@ ActivityBase {
             property int result
             readonly property var levels: activity.datasetLoader.data
             property GCSfx audioEffects: activity.audioEffects
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -88,12 +89,6 @@ ActivityBase {
             onClose: home()
         }
 
-        Timer {
-            id: timer
-            interval: 1000
-            onTriggered: Activity.run()
-        }
-
         Bar {
             id: bar
             level: items.currentLevel + 1
@@ -125,8 +120,8 @@ ActivityBase {
             width: height
             sourceSize.height: height
             sourceSize.width: height
-            onClicked: Activity.questionsLeft();
-            enabled: false
+            onClicked: Activity.checkAnswer();
+            enabled: visible && !items.buttonsBlocked && numpad.answer != ""
         }
 
         Keys.onReturnPressed: validateKey();
@@ -162,6 +157,7 @@ ActivityBase {
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 10
+            onStop: Activity.questionsLeft()
         }
 
         Bonus {
@@ -170,12 +166,6 @@ ActivityBase {
                 loose.connect(Activity.run)
                 win.connect(Activity.nextLevel)
             }
-        }
-
-        NumPad {
-            id: numpad
-            onAnswerChanged: Activity.items.okButton.enabled = (answer != "")
-            maxDigit: ('' + items.result).length + 1
         }
 
         ReadyButton {
@@ -220,12 +210,33 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.top: textFlow.top
+            anchors.bottom: okButton.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            imageSize: okButton.width
+            function releaseControls() {
+                Activity.run();
+            }
+        }
+
+        NumPad {
+            id: numpad
+            maxDigit: ('' + items.result).length + 1
+            enableInput: !items.buttonsBlocked
+        }
+
         Keys.onPressed: {
-            numpad.updateAnswer(event.key, true);
+            if(!items.buttonsBlocked)
+                numpad.updateAnswer(event.key, true);
         }
 
         Keys.onReleased: {
-            numpad.updateAnswer(event.key, false);
+            if(!items.buttonsBlocked)
+                numpad.updateAnswer(event.key, false);
         }
     }
 }
