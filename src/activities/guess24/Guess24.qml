@@ -55,6 +55,8 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias score: score
+            property alias errorRectangle: errorRectangle
             property var levels: activity.datasetLoader.data
             property GCSfx audioEffects: activity.audioEffects
             property alias jsonParser: jsonParser
@@ -62,7 +64,6 @@ ActivityBase {
             property int currentOperator: -1
             property int operatorsCount: 4
             property int subLevelCount: 0
-            property int currentSubLevel: 0
             property bool keysOnValues: true    // True when focus is on values false if focus is on operators
             property alias cardsModel: cardsModel
             property alias cardsBoard: cardsBoard
@@ -75,6 +76,7 @@ ActivityBase {
             property alias solutionRect: solutionRect
             property alias animSol: animSol
             property bool keyboardNavigation: false
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -166,11 +168,19 @@ ActivityBase {
                         MouseArea {
                             id: boardArea
                             anchors.fill: parent
-                            enabled: animationCard.state === ""
+                            enabled: animationCard.state === "" && !items.buttonsBlocked
                             onClicked: Activity.valueClicked(index)
                         }
                     }
                 }
+            }
+
+            ErrorRectangle {
+                id: errorRectangle
+                anchors.fill: valuesArea
+                radius: valuesArea.radius
+                imageSize: Math.min(width, height) * 0.5
+                function releaseControls() { items.buttonsBlocked = false; }
             }
 
             Item {     // Animation card visible during animations
@@ -298,6 +308,7 @@ ActivityBase {
                         MouseArea {
                             id: opArea
                             anchors.fill: parent
+                            enabled: !items.buttonsBlocked
                             onClicked: Activity.operatorClicked(index)
                         }
                     }
@@ -373,6 +384,7 @@ ActivityBase {
             enabled: animationCard.state === ""
             MouseArea {
                 anchors.fill: parent
+                enabled: !items.buttonsBlocked
                 onClicked: {
                     if (solutionRect.opacity !== 0.0) {
                         animSol.start()
@@ -398,6 +410,7 @@ ActivityBase {
             enabled: animationCard.state === ""
             MouseArea {
                 anchors.fill: parent
+                enabled: !items.buttonsBlocked
                 onClicked: {
                     if (Activity.helpCount < 4)
                         Activity.helpCount++
@@ -436,13 +449,14 @@ ActivityBase {
         Score {
             id: score
             numberOfSubLevels: items.subLevelCount
-            currentSubLevel: items.currentSubLevel + 1
+            currentSubLevel: 0
             anchors.top: undefined
             anchors.right: background.right
             anchors.rightMargin: background.baseMargins
             anchors.left: undefined
             anchors.bottom: background.bottom
             anchors.bottomMargin: bar.height * 1.5
+            onStop: Activity.nextSubLevel()
         }
 
         Bar {
@@ -462,7 +476,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Keys.onPressed: Activity.handleKeys(event)

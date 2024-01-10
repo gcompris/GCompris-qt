@@ -48,7 +48,8 @@ function stop() {
 }
 
 function initLevel() {
-    items.currentSubLevel = 0
+    items.errorRectangle.resetState()
+    items.score.currentSubLevel = 0
     problems = allProblems.filter(obj => { return items.levels[items.currentLevel].complexities.includes(obj.complexity) })
     Core.shuffle(problems)
     problems = problems.slice(0, items.levels[items.currentLevel].count)
@@ -60,25 +61,20 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function nextSubLevel() {
-    if( ++items.currentSubLevel >= problems.length)
-        nextLevel();
-    else
-        initCards();
-}
-
-function previousSubLevel() {
-    if( --items.currentSubLevel < 0)
-        previousLevel();
+    if(items.score.currentSubLevel >= problems.length)
+        items.bonus.good("sun");
     else
         initCards();
 }
@@ -183,7 +179,7 @@ function initCards() {
     items.cancelButton.visible = false
     items.hintButton.visible = false
     items.keysOnValues = true
-    var puzzle = problems[items.currentSubLevel]["puzzle"].split(" ")
+    var puzzle = problems[items.score.currentSubLevel]["puzzle"].split(" ")
     items.cardsModel.clear()
     for (var i = 0; i < 4; i++) {
         items.cardsModel.append( { "value_" : puzzle[i] })
@@ -197,8 +193,9 @@ function initCards() {
     operationsStack = []
     stepsStack = []
     items.steps.text = stepsStack.join("\n")
-    parseSolution(randomSolution(problems[items.currentSubLevel], items.levels[items.currentLevel].complexities))
+    parseSolution(randomSolution(problems[items.score.currentSubLevel], items.levels[items.currentLevel].complexities))
     items.solution.text = ""
+    items.buttonsBlocked = false
 }
 
 function valueClicked(idx) {
@@ -277,11 +274,15 @@ function checkResult() {
     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
     items.cardsModel.setProperty(items.currentValue, "value_", String(result))
     if (operationsStack.length === 3) {
+        items.buttonsBlocked = true;
         if (Number(items.cardsModel.get(items.currentValue).value_) === 24) {
             items.cancelButton.visible = false
-            items.bonus.good("sun")
+            items.score.currentSubLevel++
+            items.score.playWinAnimation()
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
         } else {
-            items.bonus.bad("sun")
+            items.errorRectangle.startAnimation()
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
             items.hintButton.visible = true
         }
     }
@@ -342,6 +343,8 @@ function moveToNextCard() {
 }
 
 function handleKeys(event) {
+    if (items.buttonsBlocked)
+        return
     items.keyboardNavigation = true
     switch (event.key) {
     case Qt.Key_Up:
