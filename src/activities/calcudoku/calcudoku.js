@@ -50,7 +50,7 @@ function start(items_) {
     items = items_;
     numberOfLevel = items.levels.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     // Shuffle all levels
     for(var nb = 0 ; nb < items.levels.length ; ++ nb) {
         if(items.levels[nb]["data"]) {
@@ -279,7 +279,7 @@ function initLevel() {
     }
     else {
         items.score.numberOfSubLevels = items.levels[items.currentLevel]["data"].length
-        initialCalcudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel-1];
+        initialCalcudoku = items.levels[items.currentLevel]["data"][items.score.currentSubLevel];
     }
 
     items.columns = initialCalcudoku.size;
@@ -354,6 +354,7 @@ function initLevel() {
     for(var line = 0 ; line < initialCalcudoku.size ; ++ line) {
         items.availablePiecesModel.model.append({"imgName": (line+1)+".svg", "text": ""+(line+1)});
     }
+    items.buttonsBlocked = false;
 }
 
 function reinitLevel() {
@@ -363,13 +364,15 @@ function reinitLevel() {
 }
 
 function nextLevel() {
-    items.score.currentSubLevel = 1;
+    items.score.stopWinAnimation();
+    items.score.currentSubLevel = 0;
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.score.currentSubLevel = 1;
+    items.score.stopWinAnimation();
+    items.score.currentSubLevel = 0;
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
@@ -379,11 +382,8 @@ function previousLevel() {
  And bail out if no more levels are available
 */
 function incrementLevel() {
-    items.score.currentSubLevel ++;
-
-    if(items.score.currentSubLevel > items.score.numberOfSubLevels) {
-        // Try the next level
-        nextLevel();
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower");
     }
     else {
         initLevel();
@@ -414,7 +414,10 @@ function clickOn(caseX, caseY) {
     }
 
     if(isSolved()) {
-        items.bonus.good("flower");
+        items.buttonsBlocked = true;
+        items.score.currentSubLevel += 1;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
 }
 

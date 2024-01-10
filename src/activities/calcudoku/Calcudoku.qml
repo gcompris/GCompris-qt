@@ -52,6 +52,7 @@ ActivityBase {
             property alias rows: calcudokuColumn.rows
             property alias calcudokuModel: calcudokuModel
             readonly property var levels: activity.datasetLoader.data
+            property bool buttonsBlocked: false
         }
         onStart: Activity.start(items)
 
@@ -93,14 +94,17 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onReloadClicked: Activity.reinitLevel()
+            onReloadClicked: {
+                if(!items.buttonsBlocked)
+                    Activity.reinitLevel()
+            }
             onHomeClicked: activity.home()
         }
 
         Bonus {
             id: bonus
             z: 1002
-            Component.onCompleted: win.connect(Activity.incrementLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
@@ -110,9 +114,10 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.right: background.right
             anchors.bottomMargin: background.baseMargins
+            onStop: Activity.incrementLevel()
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
             Activity.onKeyPressed(event);
         }
@@ -120,6 +125,7 @@ ActivityBase {
         CalcudokuListWidget {
             id: availablePieces
             audioEffects: activity.audioEffects
+            inputBlocked: items.buttonsBlocked
         }
 
         ListModel {
@@ -217,7 +223,7 @@ ActivityBase {
         MouseArea {
             id: dynamic
             anchors.fill: calcudokuColumn
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
             hoverEnabled: true
 
             property int previousHoveredCase: -1

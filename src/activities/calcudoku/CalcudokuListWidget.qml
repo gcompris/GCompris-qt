@@ -23,6 +23,7 @@ Item {
     property alias model: mymodel;
     property alias view: view;
     property GCSfx audioEffects
+    property bool inputBlocked: false
 
     ListModel {
         id: mymodel
@@ -153,6 +154,7 @@ Item {
                         id: mouseArea
                         anchors.fill: icon
                         hoverEnabled: true
+                        enabled: !listWidget.inputBlocked
                         onClicked: {
                             listWidget.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                             view.currentIndex = index
