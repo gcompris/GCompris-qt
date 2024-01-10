@@ -55,6 +55,7 @@ ActivityBase {
             property bool isAdditionMode: activity.isAdditionMode
             property bool isQuantityMode: activity.isQuantityMode
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -65,11 +66,13 @@ ActivityBase {
             property alias largestNumberRepresentation: largestNumberRepresentation
             property alias tutorialImage: tutorialImage
             property alias scrollBar: bottomRectangle.scrollBar
+            property alias errorRectangle: errorRectangle
             property string largestNumber
             property string smallestNumber
             property bool helper: false
             property bool typeResult: false
             property double unit: activity.isQuantityMode ? 1 : 0.1
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -427,6 +430,7 @@ ActivityBase {
                 anchors.fill: selectedBar
                 anchors.centerIn: parent
                 drag.target: selectedBar
+                enabled: !items.buttonsBlocked
 
                 onReleased: {
                     selectedBar.Drag.drop()
@@ -455,6 +459,7 @@ ActivityBase {
                         id: arrowMouseArea
                         width: parent.width * 2
                         height: parent.height * 1.5
+                        enabled: !items.buttonsBlocked
                         anchors.centerIn: parent
                         anchors.verticalCenterOffset: parent.height * 0.25
                         drag.target: arrow
@@ -594,12 +599,12 @@ ActivityBase {
             maxDigit: 3
             opacity: items.typeResult ? 1 : 0
             columnWidth: 60 * ApplicationInfo.ratio
-            enableInput: !bonus.isPlaying
+            enableInput: !items.buttonsBlocked
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
-            if(bonus.isPlaying)
+            if(items.buttonsBlocked)
                 return
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 if(items.typeResult) {
@@ -688,6 +693,7 @@ ActivityBase {
             MouseArea {
                 id: hintMouseArea
                 anchors.fill: parent
+                enabled: !items.buttonsBlocked
                 hoverEnabled: true
                 onClicked: items.helper = !items.helper
             }
@@ -699,6 +705,42 @@ ActivityBase {
                     scale: 1.1
                 }
             }
+        }
+
+        ErrorRectangle {
+            id: errorRectangle
+            z: 10
+            function releaseControls() { items.buttonsBlocked = false; }
+
+            states: [
+                State {
+                    when: !isSubtractionMode && !items.typeResult
+                    PropertyChanges {
+                        target: errorRectangle
+                        anchors.fill: topRectangle
+                        radius: topRectangle.radius
+                        imageSize: 60 * ApplicationInfo.ratio
+                    }
+                },
+                State {
+                    when: isSubtractionMode && !items.typeResult
+                    PropertyChanges {
+                        target: errorRectangle
+                        anchors.fill: mainRectangle
+                        radius: mainRectangle.radius
+                        imageSize: 60 * ApplicationInfo.ratio
+                    }
+                },
+                State {
+                    when: items.typeResult
+                    PropertyChanges {
+                        target: errorRectangle
+                        anchors.fill: answerBackground
+                        radius: answerBackground.radius
+                        imageSize: height * 0.5
+                    }
+                }
+            ]
         }
 
         DialogChooseLevel {
@@ -748,12 +790,12 @@ ActivityBase {
             width: 60 * ApplicationInfo.ratio
             sourceSize.width: width
             onClicked: items.typeResult? Activity.verifyNumberTyping(answerBackground.userEntry) : Activity.verifyNumberRepresentation()
-            mouseArea.enabled: !bonus.isPlaying
+            mouseArea.enabled: !items.buttonsBlocked
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
@@ -764,6 +806,7 @@ ActivityBase {
             anchors.bottom: undefined
             anchors.right: hint.visible ? hint.left : okButton.left
             anchors.verticalCenter: okButton.verticalCenter
+            onStop: Activity.nextSubLevel()
         }
     }
 }

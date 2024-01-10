@@ -85,7 +85,7 @@ function start(items_) {
     dataset = items.levels;
     numberOfLevel = dataset.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     firstNumberList = [];
 
     if(!items.tutorialImage.visible) {
@@ -97,6 +97,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState();
     var data = dataset[items.currentLevel];
     items.score.numberOfSubLevels = data.numberOfSubLevels;
     items.draggedItems.clear();
@@ -135,34 +136,35 @@ function initLevel() {
             largestNumber -= squaresNumber;
         }
     }
+    items.buttonsBlocked = false;
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.score.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
     if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
-        nextLevel();
-        return;
+        items.bonus.good('flower');
+    } else {
+        items.droppedItems.clear();
+
+        // In case number of sublevels are greater than the number of possibilities of the current level.
+        checkAvailableQuestions();
+
+        displayDecimalNumberQuestion();
+        items.buttonsBlocked = false;
     }
-
-    items.droppedItems.clear();
-
-    // In case number of sublevels are greater than the number of possibilities of the current level.
-    checkAvailableQuestions();
-
-    displayDecimalNumberQuestion();
-
-    items.score.currentSubLevel++;
 }
 
 function checkAvailableQuestions() {
@@ -263,6 +265,7 @@ function displayDecimalNumberQuestion() {
 }
 
 function verifyNumberRepresentation() {
+    items.buttonsBlocked = true;
     var i;
     var sum = 0;
 
@@ -286,15 +289,20 @@ function verifyNumberRepresentation() {
 
     if(sum === correctAnswer) {
         if(items.isSubtractionMode || items.isAdditionMode) {
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
             items.numpad.resetText();
             items.typeResult = true;
+            items.buttonsBlocked = false;
         }
         else {
-            items.bonus.good("flower");
+            items.score.currentSubLevel += 1;
+            items.score.playWinAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         }
     }
     else {
-        items.bonus.bad("flower");
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
 }
 
@@ -311,12 +319,15 @@ function calculateCorrectAnswer() {
 }
 
 function verifyNumberTyping(typedAnswer) {
+    items.buttonsBlocked = true;
     typedAnswer = typedAnswer.replace("," , ".");
     if(parseFloat(typedAnswer) === parseFloat(correctAnswer)) {
-        items.bonus.good("flower");
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.bonus.good('flower')
     }
     else {
-        items.bonus.bad("flower");
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
 }
 

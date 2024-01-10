@@ -88,7 +88,7 @@ GridView {
 
             MouseArea {
                 anchors.fill: parent
-                enabled: isAnswerRepresentation && !items.typeResult
+                enabled: isAnswerRepresentation && !items.typeResult && !items.buttonsBlocked
                 onPressed: selectedModel.remove(index)
             }
         }

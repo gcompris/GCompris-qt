@@ -133,6 +133,7 @@ GridView {
                         MouseArea {
                             id: mouseArea
                             anchors.fill: parent
+                            enabled: !items.buttonsBlocked
                             onPressed: {
                                 if(items.typeResult) return;
                                 gridLayout.barClicked();
