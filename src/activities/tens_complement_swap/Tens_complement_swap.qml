@@ -40,6 +40,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias equations: equations
@@ -109,6 +110,12 @@ ActivityBase {
                 onClicked: Activity.checkAnswer()
             }
 
+        }
+
+        MouseArea {
+            id: clickMask
+            anchors.fill: layoutArea
+            enabled: bonus.isPlaying
         }
 
         DialogChooseLevel {
