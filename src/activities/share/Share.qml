@@ -37,8 +37,9 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias score: score
+            property alias errorRectangle: errorRectangle
             property alias instruction: instruction
-            property int currentSubLevel: 0
             property int nbSubLevel
             property alias listModel: listModel
             property bool acceptCandy: false
@@ -56,6 +57,7 @@ ActivityBase {
             property int cellSize: Math.round(Math.min(background.width / 12, background.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 6
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -70,7 +72,6 @@ ActivityBase {
         property int placedInBoys
         property bool easyMode: true
         property alias wrongMove: wrongMove
-        property bool finished: false
 
         //returns true if the x and y is in the "dest" area
         function contains(x, y, dest) {
@@ -87,7 +88,7 @@ ActivityBase {
         //check if the answer is correct
         function check() {
             background.resetCandy()
-            background.finished = true
+            items.buttonsBlocked = true
 
             var ok = 0
             var okRest = 0
@@ -100,20 +101,18 @@ ActivityBase {
                         ok ++
                 }
 
-                //condition without rest
-                if (rest == 0 && ok == items.totalChildren) {
-                    bonus.good("flower")
-                    return
-                }
-                //condition with rest
-                else if (rest == okRest && ok == items.totalChildren) {
-                    bonus.good("tux")
+                //condition without or with rest
+                if ((rest == 0 && ok == items.totalChildren) || (rest == okRest && ok == items.totalChildren))  {
+                    score.currentSubLevel++
+                    score.playWinAnimation()
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
                     return
                 }
             }
 
             //else => bad
-            bonus.bad("flower", bonus.checkAnswer)
+            errorRectangle.startAnimation()
+            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         }
 
         //center zone
@@ -148,6 +147,7 @@ ActivityBase {
             //shows/hides the Instruction
             MouseArea {
                 anchors.fill: parent
+                enabled: !items.buttonsBlocked
                 // first hide the wrong move if visible, then show/hide instruction
                 onClicked: wrongMove.visible ? wrongMove.visible = false :
                            (instruction.opacity === 0) ?
@@ -178,6 +178,14 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            z: 20
+            anchors.fill: grid
+            imageSize: 60 * ApplicationInfo.ratio
+            function releaseControls() { items.buttonsBlocked = false; }
+        }
+
         //instruction rectangle
         Rectangle {
             id: instruction
@@ -185,7 +193,7 @@ ActivityBase {
             opacity: 0.8
             radius: 10
             border.width: 2
-            z: 10
+            z: 20
             border.color: "#DDD"
             color: "#373737"
             
@@ -197,7 +205,7 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 onClicked: instruction.hide()
-                enabled: instruction.opacity !== 0
+                enabled: instruction.opacity !== 0 && !items.buttonsBlocked
             }
 
             function show() {
@@ -259,7 +267,7 @@ ActivityBase {
                     MouseArea {
                         id: mouseArea
                         anchors.fill: parent
-                        enabled: background.finished ? false : true
+                        enabled: !items.buttonsBlocked
                         onPressed: okButton.opacity = 0.6
                         onReleased: okButton.opacity = 1
                         onClicked: background.check()
@@ -303,7 +311,7 @@ ActivityBase {
 
                     MouseArea {
                         anchors.fill: parent
-                        enabled: background.finished ? false : true
+                        enabled: !items.buttonsBlocked
                         onPressed: showInstruction.opacity = 0.6
                         onReleased: showInstruction.opacity = 1
                         onClicked: items.instruction.opacity == 0 ? items.instruction.show() : items.instruction.hide()
@@ -326,7 +334,7 @@ ActivityBase {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: parent.visible = false
+                onClicked: parent.visible = false && !items.buttonsBlocked
             }
             GCText {
                 id: wrongMoveText
@@ -387,12 +395,12 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.nextSubLevel)
+                win.connect(Activity.nextLevel)
             }
-            onStop: background.finished = false
         }
 
         Score {
+            id: score
             anchors {
                 left: undefined
                 right: leftWidget.right
@@ -402,7 +410,8 @@ ActivityBase {
             width: girlWidget.width
             height: background.vert ? (girlWidget.height * 0.8) : girlWidget.height
             numberOfSubLevels: items.nbSubLevel
-            currentSubLevel: items.currentSubLevel + 1
+            currentSubLevel: 0
+            onStop: Activity.nextSubLevel()
         }
     }
 

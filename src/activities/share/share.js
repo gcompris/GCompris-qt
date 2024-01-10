@@ -35,9 +35,10 @@ function initLevel() {
 }
 
 function setUp() {
+    items.errorRectangle.resetState()
     var levelData = items.levels
     numberOfLevel = items.levels.length
-    subLevelData = levelData[items.currentLevel][items.currentSubLevel];
+    subLevelData = levelData[items.currentLevel][items.score.currentSubLevel];
     // use board levels
     if (!subLevelData["randomisedInputData"]) {
         items.totalBoys = subLevelData.totalBoys
@@ -121,7 +122,6 @@ function resetBoard() {
     items.background.currentGirls = 0
     items.background.currentBoys = 0
     items.background.resetCandy()
-    items.background.finished = false
 
     items.acceptCandy = false
     items.instruction.opacity = 1
@@ -141,6 +141,7 @@ function resetBoard() {
         items.candyWidget.element.opacity = 0.6
 
     items.basketWidget.canDrag = true
+    items.buttonsBlocked = false
 }
 
 function saveVariables() {
@@ -176,9 +177,8 @@ function reloadRandom() {
 }
 
 function nextSubLevel() {
-    items.currentSubLevel ++
-    if (items.currentSubLevel === items.nbSubLevel) {
-        nextLevel()
+    if (items.score.currentSubLevel >= items.nbSubLevel) {
+        items.bonus.good("tux")
     }
     else {
         setUp()
@@ -186,13 +186,15 @@ function nextSubLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }

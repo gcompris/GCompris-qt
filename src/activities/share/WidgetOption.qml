@@ -56,7 +56,7 @@ Rectangle {
         id: dragAreaElement
         anchors.fill: parent
         drag.target: (widget.canDrag) ? element : null
-        enabled: element.opacity > 0
+        enabled: element.opacity > 0 && !items.buttonsBlocked
         onPressed: {
             instruction.hide()
             if (widget.name !== "candy")

@@ -67,6 +67,7 @@ Rectangle {
 
         MouseArea {
             anchors.fill: parent
+            enabled: !items.buttonsBlocked
 
             onClicked: {
                 if (items.acceptCandy) {
@@ -142,6 +143,7 @@ Rectangle {
 
                         //enables dragging the candy after placed
                         drag.target: parent
+                        enabled: !items.buttonsBlocked
 
                         onPressed: {
                             instruction.hide()
