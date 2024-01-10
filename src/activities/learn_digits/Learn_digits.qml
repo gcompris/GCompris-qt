@@ -54,7 +54,7 @@ ActivityBase {
             property alias fileId: fileId
             property alias locale: background.locale
             property alias iAmReady: iAmReady
-            property int currentSubLevel: 0
+            property alias errorRectangle: errorRectangle
             property int nbSubLevel
             property int answer: 0
             property int question: 0
@@ -92,8 +92,7 @@ ActivityBase {
             scoreArea.visible = true;
             circlesBackground.visible = true;
             circlesArea.visible = true;
-            Activity.initQuestion();
-            items.inputLocked = false;
+            Activity.initLevel();
         }
 
         function itemsHidden() {
@@ -188,13 +187,8 @@ ActivityBase {
                 id: score
                 width: scoreArea.scoreItemsSize
                 numberOfSubLevels: items.nbSubLevel
-                currentSubLevel: items.currentSubLevel
-                onStop: {
-                    if(!bonus.isPlaying) {
-                        Activity.initQuestion();
-                        items.inputLocked = false;
-                    }
-                }
+                currentSubLevel: 0
+                onStop: Activity.nextSubLevel();
             }
             BarButton {
                 id: okButton
@@ -370,6 +364,10 @@ ActivityBase {
                     width: itemWidth * items.circlesModel
                     height: itemWidth
                 }
+                PropertyChanges {
+                    target: errorRectangle
+                    imageSize: height * 0.5
+                }
             },
             State {
                 id: verticaleLayout
@@ -410,8 +408,19 @@ ActivityBase {
                     width: itemWidth
                     height: itemWidth * items.circlesModel
                 }
+                PropertyChanges {
+                    target: errorRectangle
+                    imageSize: width * 0.5
+                }
             }
         ]
+
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: circlesBackground
+            imageSize: height * 0.5
+            function releaseControls() { items.inputLocked = false; }
+        }
 
         File {
             id: fileId
@@ -455,11 +464,9 @@ ActivityBase {
                 displayDialog(dialogHelp);
             }
             onPreviousLevelClicked: {
-                if(!items.inputLocked)
                     Activity.previousLevel();
             }
             onNextLevelClicked: {
-                if(!items.inputLocked)
                     Activity.nextLevel();
             }
             onHomeClicked: activity.home();
@@ -468,7 +475,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            onStop: items.inputLocked = false;
             Component.onCompleted: win.connect(Activity.nextLevel);
         }
     }

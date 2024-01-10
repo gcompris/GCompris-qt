@@ -26,7 +26,6 @@ function start(items_, operationMode_) {
         Core.checkForVoices(items_.activityPage);
     numberOfLevel = items.levels.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
-    initLevel();
 }
 
 function stop() {
@@ -35,6 +34,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState();
     items.circlesModel = 0
     items.question = 0
     items.questionText = ""
@@ -44,7 +44,7 @@ function initLevel() {
         answersArray = items.levels[items.currentLevel].answersArray.slice(0);
     }
     items.circlesModel = items.levels[items.currentLevel].circlesModel;
-    items.currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
     if(items.mode === 2)
         url = "qrc:/gcompris/src/activities/learn_digits/resource/dots-";
@@ -59,14 +59,16 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
@@ -105,6 +107,7 @@ function initQuestion() {
     if(items.mode != 1) {
         items.imageSource = url + items.questionText + ".svg"
     }
+    items.inputLocked = false;
 }
 
 function resetCircles() {
@@ -117,15 +120,21 @@ function resetCircles() {
 function checkAnswer() {
     items.inputLocked = true
     if(items.answer === items.question) {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
-        ++items.currentSubLevel;
+        ++items.score.currentSubLevel;
         items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         removeLastQuestion();
     } else {
-        items.bonus.bad('flower');
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
-    if(items.currentSubLevel === items.nbSubLevel) {
+}
+
+function nextSubLevel() {
+    if(items.score.currentSubLevel >= items.nbSubLevel) {
         items.bonus.good('flower');
+    } else {
+        initQuestion();
     }
 }
 
