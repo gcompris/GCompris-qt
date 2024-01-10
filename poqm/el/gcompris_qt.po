@@ -2853,7 +2853,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Αυτή η εικόνα θα σε βοηθήσει να υπολογίσεις την αξία των bits."
 
-#: activities/binary_bulb/BinaryBulb.qml:122
+#: activities/binary_bulb/BinaryBulb.qml:127
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -5298,62 +5298,62 @@ msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Ταίριαξε τα χρώματα"
 
-#: activities/color_mix/ColorMix.qml:200
+#: activities/color_mix/ColorMix.qml:201
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Όχι αρκετό κόκκινο"
 
-#: activities/color_mix/ColorMix.qml:202
+#: activities/color_mix/ColorMix.qml:203
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Πάρα πολύ κόκκινο"
 
-#: activities/color_mix/ColorMix.qml:205
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Όχι αρκετό πράσινο"
 
-#: activities/color_mix/ColorMix.qml:207
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Πάρα πολύ πράσινο"
 
-#: activities/color_mix/ColorMix.qml:210
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Όχι αρκετό μπλε"
 
-#: activities/color_mix/ColorMix.qml:212
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Πάρα πολύ μπλε"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:217
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Όχι αρκετό ματζέντα"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:219
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Πάρα πολύ ματζέντα"
 
-#: activities/color_mix/ColorMix.qml:221
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Όχι αρκετό κίτρινο"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Πάρα πολύ κίτρινο"
 
-#: activities/color_mix/ColorMix.qml:226
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Όχι αρκετό κυανό"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Πάρα πολύ κυανό"
@@ -17215,7 +17215,7 @@ msgstr ""
 "του ξυλόφωνου. Για να ξανακούσεις την ακολουθία κάνε κλικ στο κουμπί "
 "επανάληψης."
 
-#: activities/melody/Melody.qml:280
+#: activities/melody/Melody.qml:312
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17225,12 +17225,12 @@ msgstr ""
 "οι ήχοι ή τα ηχητικά εφέ έχουν απενεργοποιηθεί στις κύριες ρυθμίσεις του "
 "GCompris."
 
-#: activities/melody/Melody.qml:281
+#: activities/melody/Melody.qml:313
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/melody/Melody.qml:282
+#: activities/melody/Melody.qml:314
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -21407,12 +21407,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace ή Delete: Αναίρεση."
 
-#: activities/play_piano/PlayPiano.qml:172
+#: activities/play_piano/PlayPiano.qml:187
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Κάνε κλικ στα πλήκτρα του πιάνου που αντιστοιχούν στις δοσμένες νότες."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:300
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21422,12 +21422,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:301
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/play_piano/PlayPiano.qml:282
+#: activities/play_piano/PlayPiano.qml:302
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -21510,7 +21510,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Έναρξη ή Διακοπή του μετρονόμου εάν είναι ορατός."
 
-#: activities/play_rhythm/PlayRhythm.qml:114
+#: activities/play_rhythm/PlayRhythm.qml:117
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -21519,7 +21519,7 @@ msgstr ""
 "Χρησιμοποίησε τον μετρονόμο για να εκτιμήσεις τα χρονικά μεσοδιαστήματα και "
 "να αναπαράγεις τον ρυθμό σωστά."
 
-#: activities/play_rhythm/PlayRhythm.qml:115
+#: activities/play_rhythm/PlayRhythm.qml:118
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21528,7 +21528,7 @@ msgstr ""
 "Ακολούθησε την κάθετη γραμμή και κάνε κλικ στον ρυθμό ή πάτησε το πλήκτρο "
 "διαστήματος και παίξε τον ρυθμό σωστά."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:376
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21538,12 +21538,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:377
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/play_rhythm/PlayRhythm.qml:362
+#: activities/play_rhythm/PlayRhythm.qml:378
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -22411,8 +22411,8 @@ msgstr ""
 "Γράμματα: Πληκτρολόγηση ρωμαϊκών αριθμών (με τα γράμματα I, V, X, L, C, D "
 "και M)."
 
-#: activities/roman_numerals/RomanNumerals.qml:78
-#: activities/roman_numerals/RomanNumerals.qml:84
+#: activities/roman_numerals/RomanNumerals.qml:79
+#: activities/roman_numerals/RomanNumerals.qml:85
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -22429,32 +22429,32 @@ msgstr ""
 "C και D (εκατοντάδες, 100 και 500)\n"
 "και M (χίλια, 1000)."
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:127
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:128
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Μετατροπή του ρωμαϊκού αριθμού %1 σε αραβικό."
 
-#: activities/roman_numerals/RomanNumerals.qml:85
-#: activities/roman_numerals/RomanNumerals.qml:97
-#: activities/roman_numerals/RomanNumerals.qml:109
-#: activities/roman_numerals/RomanNumerals.qml:121
-#: activities/roman_numerals/RomanNumerals.qml:133
-#: activities/roman_numerals/RomanNumerals.qml:139
-#: activities/roman_numerals/RomanNumerals.qml:145
-#: activities/roman_numerals/RomanNumerals.qml:151
-#: activities/roman_numerals/RomanNumerals.qml:157
+#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:146
+#: activities/roman_numerals/RomanNumerals.qml:152
+#: activities/roman_numerals/RomanNumerals.qml:158
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Μετατροπή του αραβικού αριθμού %1 σε ρωμαϊκό."
 
-#: activities/roman_numerals/RomanNumerals.qml:90
-#: activities/roman_numerals/RomanNumerals.qml:96
+#: activities/roman_numerals/RomanNumerals.qml:91
+#: activities/roman_numerals/RomanNumerals.qml:97
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -22468,8 +22468,8 @@ msgstr ""
 "Το 4 και το 9 φτιάχνονται με διαφορές:\n"
 "IV (5-1) και IX (10-1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:102
-#: activities/roman_numerals/RomanNumerals.qml:108
+#: activities/roman_numerals/RomanNumerals.qml:103
+#: activities/roman_numerals/RomanNumerals.qml:109
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -22483,8 +22483,8 @@ msgstr ""
 "Οι δεκάδες των 40 και 90 φτιάχνονται με διαφορές:\n"
 "XL (βγάζω 10 από το 50) και XC (βγάζω 10 από το 100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:114
-#: activities/roman_numerals/RomanNumerals.qml:120
+#: activities/roman_numerals/RomanNumerals.qml:115
+#: activities/roman_numerals/RomanNumerals.qml:121
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -22498,8 +22498,8 @@ msgstr ""
 "Οι εκατοντάδες των 400 και 900 φτιάχνονται με διαφορές:\n"
 "CD (βγάζω 100 από το 500) και CM (βγάζω 100 από το 1000)."
 
-#: activities/roman_numerals/RomanNumerals.qml:126
-#: activities/roman_numerals/RomanNumerals.qml:132
+#: activities/roman_numerals/RomanNumerals.qml:127
+#: activities/roman_numerals/RomanNumerals.qml:133
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -22516,7 +22516,7 @@ msgstr ""
 "μεγαλύτερος αριθμός που μπορούμε να φτιάξουμε με το σύστημα αυτό είναι ο "
 "3999 (MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:138
+#: activities/roman_numerals/RomanNumerals.qml:139
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -22524,13 +22524,13 @@ msgstr ""
 "Τώρα ξέρεις τους κανόνες, μπορείς να διαβάσεις και να γράψεις οποιονδήποτε "
 "αριθμό με ρωμαϊκή αρίθμηση."
 
-#: activities/roman_numerals/RomanNumerals.qml:367
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Ρωμαϊκή γραφή: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:368
+#: activities/roman_numerals/RomanNumerals.qml:379
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -25396,12 +25396,12 @@ msgstr ""
 "Στα επίπεδα 4 και 8 ένα σχήμα/χρώμα μπορεί να αντιστοιχεί σε περισσότερες "
 "από μία θέσεις."
 
-#: activities/superbrain/Superbrain.qml:140
+#: activities/superbrain/Superbrain.qml:141
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Αυτό το αντικείμενο τοποθετήθηκε σωστά."
 
-#: activities/superbrain/Superbrain.qml:142
+#: activities/superbrain/Superbrain.qml:143
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Αυτό το αντικείμενο δεν τοποθετήθηκε σωστά."
@@ -26647,46 +26647,46 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Τα τοπικά αρχεία δεδομένων σου είναι ενημερωμένα."
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:124
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Η λήψη ακυρώθηκε από τον χρήστη"
 
-#: core/DownloadManager.cpp:324
+#: core/DownloadManager.cpp:335
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Αδυναμία δημιουργίας διαδρομής πόρου"
 
-#: core/DownloadManager.cpp:331
+#: core/DownloadManager.cpp:342
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Αδυναμία ανοίγματος αρχείου %1"
 
-#: core/DownloadManager.cpp:684
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Μη έγκυρη μορφή του αρχείου των Περιεχομένων"
 
-#: core/DownloadManager.cpp:706
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "Το url %1 δεν υπάρχει."
 
-#: core/DownloadManager.cpp:719
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Το άθροισμα ελέγχου του αρχείου λήψης δεν ταιριάζει: %1"
 
-#: core/DownloadManager.cpp:741
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr ""
 
-#: core/DownloadManager.cpp:746
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."

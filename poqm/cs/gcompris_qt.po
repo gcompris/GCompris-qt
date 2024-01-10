@@ -1,18 +1,18 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023 Vít Pelčák <vit@pelcak.org>
 # Vit Pelcak <vit@pelcak.org>, 2021, 2022, 2023.
-# Jan Papez (honyczek) <honyczek@centrum.cz>, 2023.
+# Jan Papez (honyczek) <honyczek@centrum.cz>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-11-07 15:44+0100\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2024-01-08 22:41+0100\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -2771,7 +2771,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Tento obrázek ti pomůže vypočítat bitovou hodnotu."
 
-#: activities/binary_bulb/BinaryBulb.qml:122
+#: activities/binary_bulb/BinaryBulb.qml:127
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -4572,12 +4572,12 @@ msgstr "1783 horkovzdušný balón bratří Montgolfierů"
 #: activities/chronos/resource/board/board5_1.qml:47
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 letoun Éole Clémenta Adera"
 
 #: activities/chronos/resource/board/board5_1.qml:55
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr ""
+msgstr "1907 první let vrtulníkem Paula Corna"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4592,7 +4592,7 @@ msgstr "1769 Cugnot's fardier"
 #: activities/chronos/resource/board/board5_2.qml:40
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 Clement Aderův Eole"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4622,7 +4622,7 @@ msgstr "1829 Stephensonova parní lokomotiva Rocket"
 #: activities/chronos/resource/board/board5_4.qml:47
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 Clement Aderův Eole"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4637,12 +4637,12 @@ msgstr "Letectví"
 #: activities/chronos/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr ""
+msgstr "1905 Flyer III bratří Wrightů"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4667,7 +4667,7 @@ msgstr "1927 Charles Lindbergh přeletěl Atlantický oceán"
 #: activities/chronos/resource/board/board6_1.qml:55
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr ""
+msgstr "1934 Hélène Boucher dosáhla rekordní rychlosti 445 km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4697,7 +4697,7 @@ msgstr "Auta"
 #: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr ""
+msgstr "1898 Renault voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -5061,62 +5061,62 @@ msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Slaďte s barvou"
 
-#: activities/color_mix/ColorMix.qml:200
+#: activities/color_mix/ColorMix.qml:201
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nedostatek červené"
 
-#: activities/color_mix/ColorMix.qml:202
+#: activities/color_mix/ColorMix.qml:203
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Příliš mnoho červené"
 
-#: activities/color_mix/ColorMix.qml:205
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Nedostatek zelené"
 
-#: activities/color_mix/ColorMix.qml:207
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Příliš mnoho zelené"
 
-#: activities/color_mix/ColorMix.qml:210
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Nedostatek modré"
 
-#: activities/color_mix/ColorMix.qml:212
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Příliš mnoho modré"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:217
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Málo purpurové"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:219
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Příliš purpurové"
 
-#: activities/color_mix/ColorMix.qml:221
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Nedostatek žluté"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Příliš mnoho žluté"
 
-#: activities/color_mix/ColorMix.qml:226
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Málo azurové"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Příliš azurové"
@@ -7144,6 +7144,12 @@ msgid ""
 "monument that marks India's chief ports and is a major tourist attraction "
 "for visitors who arrive in India for the first time."
 msgstr ""
+"Brána Indie je jedna z nejunikátnějších indických pamětihodností, která se "
+"nachází ve městě Bombaj. Tato velká stavba byla vystavěna v roce 1924. "
+"Nachází se na špičce mola Apollo Bunder. Brána ve čtvrti Colaba ční nad "
+"bombajským pobřežím orámována Arabským mořem. Monument Brána Indie označuje "
+"hlavní indický přístav a je velkou turistickou atrakcí pro návštěvníky, "
+"kteří přijíždí do Indie poprvé."
 
 #: activities/explore_monuments/resource/board/board2.qml:51
 #: activities/explore_monuments/resource/board/board2.qml:54
@@ -8321,6 +8327,9 @@ msgid ""
 "and violins. These bands play for many occasions, including weddings and "
 "parties."
 msgstr ""
+"Mariachi (mariači) je známý druh mexické hudby. Užívají se v něm kytary, "
+"trumpety a housle. Kapely je hrávají při různých příležitostech včetně "
+"svateb a párty."
 
 #: activities/explore_world_music/resource/board/board1.qml:116
 #: activities/explore_world_music/resource/board/board1.qml:120
@@ -13805,13 +13814,13 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Uhádni 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Vypočítej číslo 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
@@ -13831,7 +13840,7 @@ msgstr "Budeš umět počítat pomocí sčítání, odčítání, násobení a d
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Použij čtyři čísla s daným operátorem tak, abys našel číslo 24."
 
 #: activities/guess24/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -13842,11 +13851,13 @@ msgstr "Šipky: pohyb uvnitř čísel a operátorů"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
 msgstr ""
+"Mezerník, Enter nebo Enter na numerické klávesnici: vyber nebo zruš výběr "
+"současné hodnoty nebo operátoru"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Klávesy operátorů (+, -, *, /): vyber operátor"
 
 #: activities/guess24/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -13856,12 +13867,12 @@ msgstr "Backspace nebo Delete: zrušit poslední operaci"
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Tabulátor: přepni mezi čísly a operátory"
 
 #: activities/guess24/Guess24.qml:104
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Použij čtyři čísla s daným operátorem tak, abys našel číslo 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16392,7 +16403,7 @@ msgstr ""
 "xylofonu. Zvukovou sekvenci si můžeš znovu poslouchat kliknutím na tlačítko "
 "opakování."
 
-#: activities/melody/Melody.qml:280
+#: activities/melody/Melody.qml:312
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16401,12 +16412,12 @@ msgstr ""
 "Tato aktivita vyžaduje zvuk, takže přehraje některé zvuky, i když jsou "
 "zvukové hlasy nebo efekty deaktivovány v hlavním nastavení."
 
-#: activities/melody/Melody.qml:281
+#: activities/melody/Melody.qml:313
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/melody/Melody.qml:282
+#: activities/melody/Melody.qml:314
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Pokračovat"
@@ -20330,12 +20341,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace nebo Delete: zpět"
 
-#: activities/play_piano/PlayPiano.qml:172
+#: activities/play_piano/PlayPiano.qml:187
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klikni na klávesy piana, které odpovídají zadaným notám."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:300
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20344,12 +20355,12 @@ msgstr ""
 "Tato aktivita potřebuje zvuk, proto bude přehrávat zvuky i když jsou hlasy a "
 "zvuky zakázány v hlavním nastavení."
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:301
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/play_piano/PlayPiano.qml:282
+#: activities/play_piano/PlayPiano.qml:302
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Pokračovat"
@@ -20424,21 +20435,21 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tabulátor: Spustit nebo zastavit metronom, pokud je k dispozici"
 
-#: activities/play_rhythm/PlayRhythm.qml:114
+#: activities/play_rhythm/PlayRhythm.qml:117
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:115
+#: activities/play_rhythm/PlayRhythm.qml:118
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
 "the rhythm correctly."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:376
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20447,12 +20458,12 @@ msgstr ""
 "Tato aktivita potřebuje zvuk, proto bude přehrávat zvuky i když jsou hlasy a "
 "zvuky zakázány v hlavním nastavení."
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:377
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/play_rhythm/PlayRhythm.qml:362
+#: activities/play_rhythm/PlayRhythm.qml:378
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Pokračovat"
@@ -21257,8 +21268,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Písmena: psaní římských číslic (písmena I, V, X, L, C, D, M)"
 
-#: activities/roman_numerals/RomanNumerals.qml:78
-#: activities/roman_numerals/RomanNumerals.qml:84
+#: activities/roman_numerals/RomanNumerals.qml:79
+#: activities/roman_numerals/RomanNumerals.qml:85
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -21276,32 +21287,32 @@ msgstr ""
 " a M (1000).\n"
 "Všimni si, že římská číselná soustava neobsahuje číslo 0."
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:127
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:128
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "Převeď římské číslo %1 na číslo arabské."
 
-#: activities/roman_numerals/RomanNumerals.qml:85
-#: activities/roman_numerals/RomanNumerals.qml:97
-#: activities/roman_numerals/RomanNumerals.qml:109
-#: activities/roman_numerals/RomanNumerals.qml:121
-#: activities/roman_numerals/RomanNumerals.qml:133
-#: activities/roman_numerals/RomanNumerals.qml:139
-#: activities/roman_numerals/RomanNumerals.qml:145
-#: activities/roman_numerals/RomanNumerals.qml:151
-#: activities/roman_numerals/RomanNumerals.qml:157
+#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:146
+#: activities/roman_numerals/RomanNumerals.qml:152
+#: activities/roman_numerals/RomanNumerals.qml:158
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "Převeď arabské číslo %1 na římské."
 
-#: activities/roman_numerals/RomanNumerals.qml:90
-#: activities/roman_numerals/RomanNumerals.qml:96
+#: activities/roman_numerals/RomanNumerals.qml:91
+#: activities/roman_numerals/RomanNumerals.qml:97
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -21314,8 +21325,8 @@ msgstr ""
 "4 a 9 jsou vytvořeny rozdílem:\n"
 " IV (5 - 1) a IX (10 - 1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:102
-#: activities/roman_numerals/RomanNumerals.qml:108
+#: activities/roman_numerals/RomanNumerals.qml:103
+#: activities/roman_numerals/RomanNumerals.qml:109
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -21328,8 +21339,8 @@ msgstr ""
 "40 a 90 jsou vytvořeny rozdílem:\n"
 "XL (50 - 10) a XC (100 - 10)"
 
-#: activities/roman_numerals/RomanNumerals.qml:114
-#: activities/roman_numerals/RomanNumerals.qml:120
+#: activities/roman_numerals/RomanNumerals.qml:115
+#: activities/roman_numerals/RomanNumerals.qml:121
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -21342,8 +21353,8 @@ msgstr ""
 "400 a 900 jsou vytvořeny rozdílem:\n"
 "CD (500 - 100), CM (1000 - 100)."
 
-#: activities/roman_numerals/RomanNumerals.qml:126
-#: activities/roman_numerals/RomanNumerals.qml:132
+#: activities/roman_numerals/RomanNumerals.qml:127
+#: activities/roman_numerals/RomanNumerals.qml:133
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -21359,7 +21370,7 @@ msgstr ""
 "je také odčítat. Na druhou stranu nemůžeš vytvořit římské číslo větší, než "
 "3999 (MMMCMXCIX)."
 
-#: activities/roman_numerals/RomanNumerals.qml:138
+#: activities/roman_numerals/RomanNumerals.qml:139
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -21367,13 +21378,13 @@ msgstr ""
 "Nyní, když znáš pravidla římských číslic, můžeš číst a psát čísla v římské "
 "soustavě."
 
-#: activities/roman_numerals/RomanNumerals.qml:367
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Hodnota římského čísla: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:368
+#: activities/roman_numerals/RomanNumerals.qml:379
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -22983,7 +22994,7 @@ msgstr "Kolikátá směrem od slunce je v Sluneční soustavě planeta Venuše?"
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
 msgid "Second"
-msgstr "Sekunda"
+msgstr "Druhá"
 
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
@@ -23787,7 +23798,7 @@ msgstr "Rada"
 #: activities/solar_system/SolarSystem.qml:367
 msgctxt "SolarSystem|"
 msgid "View the solar system"
-msgstr "Prohlédni si sluneční soustavu"
+msgstr "Prohlédni si Sluneční soustavu"
 
 #. Activity title
 #: activities/submarine/ActivityInfo.qml:15
@@ -24094,12 +24105,12 @@ msgid ""
 "you un-mark them, by double clicking on them again."
 msgstr ""
 
-#: activities/superbrain/Superbrain.qml:140
+#: activities/superbrain/Superbrain.qml:141
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr ""
 
-#: activities/superbrain/Superbrain.qml:142
+#: activities/superbrain/Superbrain.qml:143
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr ""
@@ -25223,46 +25234,46 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Lokalizace je aktuální."
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:124
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Stažení ukončeno uživatelem"
 
-#: core/DownloadManager.cpp:324
+#: core/DownloadManager.cpp:335
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Nelze vytvořit cestu je zdroji"
 
-#: core/DownloadManager.cpp:331
+#: core/DownloadManager.cpp:342
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Nelze otevřít soubor %1"
 
-#: core/DownloadManager.cpp:684
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Neplatný formát souboru Contents"
 
-#: core/DownloadManager.cpp:706
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "URL %1 neexistuje."
 
-#: core/DownloadManager.cpp:719
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Kontrolní součet staženého souboru neodpovídá: %1"
 
-#: core/DownloadManager.cpp:741
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr ""
 
-#: core/DownloadManager.cpp:746
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."

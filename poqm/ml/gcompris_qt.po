@@ -2794,7 +2794,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "ബിറ്റുകളുടെ മൂല്യം കാണാൻ ഈ ചിത്രം നിങ്ങളെ സഹായിക്കും."
 
-#: activities/binary_bulb/BinaryBulb.qml:122
+#: activities/binary_bulb/BinaryBulb.qml:127
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -5091,62 +5091,62 @@ msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "ഈ നിറം ഉണ്ടാക്കുക"
 
-#: activities/color_mix/ColorMix.qml:200
+#: activities/color_mix/ColorMix.qml:201
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "ചുവപ്പ് ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:202
+#: activities/color_mix/ColorMix.qml:203
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "ചുവപ്പ് കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:205
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "പച്ച ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:207
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "പച്ച കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:210
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "നീല ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:212
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "നീല കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:217
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "മജന്ത ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:219
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "മജന്ത കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:221
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "മഞ്ഞ ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:223
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "മഞ്ഞ കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:226
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "സിയാൻ ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:228
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "സിയാൻ കൂടുതൽ"
@@ -16683,7 +16683,7 @@ msgstr ""
 "പ്ലേ ചെയ്യുന്ന ശബ്ദ ശ്രേണി ശ്രദ്ധിച്ചു കേൾക്കൂ, എന്നിട്ട് സൈലോഫോണിന്റെ ബാറുകളിൽ ക്ലിക്ക് ചെയ്ത് അത് "
 "ആവർത്തിക്കൂ. വീണ്ടും കേൾക്കാൻ വായുടെ ചിഹ്നമുള്ള ബട്ടണിൽ ക്ലിക്ക് ചെയ്താൽ മതി."
 
-#: activities/melody/Melody.qml:280
+#: activities/melody/Melody.qml:312
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -16692,12 +16692,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്റ്റുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/melody/Melody.qml:281
+#: activities/melody/Melody.qml:313
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/melody/Melody.qml:282
+#: activities/melody/Melody.qml:314
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -20765,12 +20765,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "ബാക്ക്‌സ്പെയ്സോ ഡിലീറ്റോ: അൺഡു"
 
-#: activities/play_piano/PlayPiano.qml:172
+#: activities/play_piano/PlayPiano.qml:187
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "തന്നിരിക്കുന്ന സ്വരങ്ങൾക്ക് യോജിക്കുന്ന പിയാനോ കീകളിൽ ക്ലിക്ക് ചെയ്യൂ."
 
-#: activities/play_piano/PlayPiano.qml:280
+#: activities/play_piano/PlayPiano.qml:300
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20779,12 +20779,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/play_piano/PlayPiano.qml:281
+#: activities/play_piano/PlayPiano.qml:301
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/play_piano/PlayPiano.qml:282
+#: activities/play_piano/PlayPiano.qml:302
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -20864,14 +20864,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "ടാബ്: സമയമാപിനി ഉണ്ടെങ്കിൽ അതു തുടങ്ങാനോ നിർത്താനോ"
 
-#: activities/play_rhythm/PlayRhythm.qml:114
+#: activities/play_rhythm/PlayRhythm.qml:117
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "സമയമാപിനി ഉപയോഗിച്ച് സമയ ഇടവേളകൾ കണക്കാക്കി ശരിയായി താളമടിക്കാം."
 
-#: activities/play_rhythm/PlayRhythm.qml:115
+#: activities/play_rhythm/PlayRhythm.qml:118
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -20880,7 +20880,7 @@ msgstr ""
 "കുത്തനെയുള്ള വര ശ്രദ്ധിച്ച് ഡ്രമ്മിൽ ക്ലിക്ക് ചെയ്യുകയോ സ്പെയ്സ് കീ അമർത്തുകയോ ചെയ്ത് ശരിയായി "
 "താളമടിക്കൂ."
 
-#: activities/play_rhythm/PlayRhythm.qml:360
+#: activities/play_rhythm/PlayRhythm.qml:376
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20889,12 +20889,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്ടുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/play_rhythm/PlayRhythm.qml:361
+#: activities/play_rhythm/PlayRhythm.qml:377
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/play_rhythm/PlayRhythm.qml:362
+#: activities/play_rhythm/PlayRhythm.qml:378
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -21731,8 +21731,8 @@ msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "അക്ഷരങ്ങൾ: റോമൻ അക്കങ്ങൾ ടൈപ്പ് ചെയ്യാൻ (I, V, X, L, C, D, M എന്നിവകൊണ്ട്)"
 
-#: activities/roman_numerals/RomanNumerals.qml:78
-#: activities/roman_numerals/RomanNumerals.qml:84
+#: activities/roman_numerals/RomanNumerals.qml:79
+#: activities/roman_numerals/RomanNumerals.qml:85
 msgctxt "RomanNumerals|"
 msgid ""
 "The roman numbers are all built out of these 7 numbers:\n"
@@ -21750,32 +21750,32 @@ msgstr ""
 "  M (1000).\n"
 " ഒരു പ്രധാന നിരീക്ഷണം ഇവിടുള്ളത്, റോമൻ അക്ക സമ്പ്രദായത്തിൽ 0 എന്ന അക്കമില്ല."
 
-#: activities/roman_numerals/RomanNumerals.qml:79
-#: activities/roman_numerals/RomanNumerals.qml:91
-#: activities/roman_numerals/RomanNumerals.qml:103
-#: activities/roman_numerals/RomanNumerals.qml:115
-#: activities/roman_numerals/RomanNumerals.qml:127
+#: activities/roman_numerals/RomanNumerals.qml:80
+#: activities/roman_numerals/RomanNumerals.qml:92
+#: activities/roman_numerals/RomanNumerals.qml:104
+#: activities/roman_numerals/RomanNumerals.qml:116
+#: activities/roman_numerals/RomanNumerals.qml:128
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
 msgstr "റോമൻ അക്കം %1-നെ അറബി അക്കത്തിലേക്കു മാറ്റൂ."
 
-#: activities/roman_numerals/RomanNumerals.qml:85
-#: activities/roman_numerals/RomanNumerals.qml:97
-#: activities/roman_numerals/RomanNumerals.qml:109
-#: activities/roman_numerals/RomanNumerals.qml:121
-#: activities/roman_numerals/RomanNumerals.qml:133
-#: activities/roman_numerals/RomanNumerals.qml:139
-#: activities/roman_numerals/RomanNumerals.qml:145
-#: activities/roman_numerals/RomanNumerals.qml:151
-#: activities/roman_numerals/RomanNumerals.qml:157
+#: activities/roman_numerals/RomanNumerals.qml:86
+#: activities/roman_numerals/RomanNumerals.qml:98
+#: activities/roman_numerals/RomanNumerals.qml:110
+#: activities/roman_numerals/RomanNumerals.qml:122
+#: activities/roman_numerals/RomanNumerals.qml:134
+#: activities/roman_numerals/RomanNumerals.qml:140
+#: activities/roman_numerals/RomanNumerals.qml:146
+#: activities/roman_numerals/RomanNumerals.qml:152
+#: activities/roman_numerals/RomanNumerals.qml:158
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
 msgstr "അറബി അക്കം %1-നെ റോമൻ അക്കത്തിലേക്കു മാറ്റൂ."
 
-#: activities/roman_numerals/RomanNumerals.qml:90
-#: activities/roman_numerals/RomanNumerals.qml:96
+#: activities/roman_numerals/RomanNumerals.qml:91
+#: activities/roman_numerals/RomanNumerals.qml:97
 msgctxt "RomanNumerals|"
 msgid ""
 "All the units except 4 and 9 are built using sums of I and V:\n"
@@ -21788,8 +21788,8 @@ msgstr ""
 " 4, 9 എന്നീ ഒറ്റകൾ വ്യത്യാസം ഉപയോഗിച്ച് നിർമ്മിക്കുന്നു:\n"
 "IV (5 – 1), IX (10 – 1)."
 
-#: activities/roman_numerals/RomanNumerals.qml:102
-#: activities/roman_numerals/RomanNumerals.qml:108
+#: activities/roman_numerals/RomanNumerals.qml:103
+#: activities/roman_numerals/RomanNumerals.qml:109
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -21802,8 +21802,8 @@ msgstr ""
 "40, 90 എന്നീ പത്തുകൾ വ്യത്യാസം ഉപയോഗിച്ച് നിർമ്മിക്കുന്നു:\n"
 "XL (10, 50-ൽ നിന്നും കുറച്ചത്), XC (10, 100-ൽ നിന്നും കുറച്ചത്)."
 
-#: activities/roman_numerals/RomanNumerals.qml:114
-#: activities/roman_numerals/RomanNumerals.qml:120
+#: activities/roman_numerals/RomanNumerals.qml:115
+#: activities/roman_numerals/RomanNumerals.qml:121
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -21816,8 +21816,8 @@ msgstr ""
 "400, 900 എന്നീ നൂറുകൾ വ്യത്യാസം ഉപയോഗിച്ച് നിർമ്മിക്കുന്നു:\n"
 "CD (100, 500-ൽ നിന്നും കുറച്ചത്), CM (100, 1000-ൽ നിന്നും കുറച്ചത്)."
 
-#: activities/roman_numerals/RomanNumerals.qml:126
-#: activities/roman_numerals/RomanNumerals.qml:132
+#: activities/roman_numerals/RomanNumerals.qml:127
+#: activities/roman_numerals/RomanNumerals.qml:133
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -21832,7 +21832,7 @@ msgstr ""
 "കഴിയില്ല, വ്യത്യാസങ്ങളും വേണം. മറ്റൊരു പ്രശ്നം, ഏറ്റവും വലിയ റോമൻ അക്കം 3999 (MMMCMXCIX) "
 "എന്നതിൽ നിൽക്കുന്നു."
 
-#: activities/roman_numerals/RomanNumerals.qml:138
+#: activities/roman_numerals/RomanNumerals.qml:139
 msgctxt "RomanNumerals|"
 msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
@@ -21840,13 +21840,13 @@ msgstr ""
 "ഇപ്പോൾ നിങ്ങൾക്ക് നിയമങ്ങളറിയാം, ഇനി എല്ലാ റോമൻ അക്കങ്ങളെയും വായിക്കാനും എഴുതാനും നിങ്ങൾക്ക് "
 "കഴിയും."
 
-#: activities/roman_numerals/RomanNumerals.qml:367
+#: activities/roman_numerals/RomanNumerals.qml:378
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "റോമൻ വില: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:368
+#: activities/roman_numerals/RomanNumerals.qml:379
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24619,12 +24619,12 @@ msgstr ""
 "ചെയ്ത ഇനങ്ങൾ വീണ്ടും ഡബിൾ ക്ലിക്ക് ചെയ്ത് അൺ-മാർക്ക് ചെയ്യുന്നതുവരെ നിങ്ങളുടെ അപ്പോഴത്തെയും "
 "പിന്നീടുള്ളതുമായ ഊഹങ്ങളിൽ താനേ തിരഞ്ഞെടുക്കപ്പെടും."
 
-#: activities/superbrain/Superbrain.qml:140
+#: activities/superbrain/Superbrain.qml:141
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "ശരിയായ സ്ഥാനത്ത് വെച്ചിരിക്കുന്നു."
 
-#: activities/superbrain/Superbrain.qml:142
+#: activities/superbrain/Superbrain.qml:143
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "തെറ്റായ സ്ഥാനത്ത് വെച്ചിരിക്കുന്നു."
@@ -25812,46 +25812,46 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "നിങ്ങളുടെ ലോക്കൽ ഡാറ്റ ഫയലുകൾ അപ്‍ഡേറ്റഡ് ആണ്. "
 
-#: core/DownloadManager.cpp:113
+#: core/DownloadManager.cpp:124
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "ഡൗൺലോഡ് യൂസർ കാൻസൽ ചെയ്തിരിക്കുന്നു"
 
-#: core/DownloadManager.cpp:324
+#: core/DownloadManager.cpp:335
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "റിസോഴ്സ് പാത്ത് നിർമിക്കാൻ കഴിഞ്ഞില്ല"
 
-#: core/DownloadManager.cpp:331
+#: core/DownloadManager.cpp:342
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "ടാർഗെറ്റ് ഫയൽ %1 തുറക്കാൻ കഴിഞ്ഞില്ല"
 
-#: core/DownloadManager.cpp:684
+#: core/DownloadManager.cpp:711
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "കണ്ടന്റ്സ് ഫയലിന്റെ പ്രാബല്യമില്ലാത്ത ഫോർമാറ്റ്"
 
-#: core/DownloadManager.cpp:706
+#: core/DownloadManager.cpp:733
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "url %1 നിലവിലില്ല."
 
-#: core/DownloadManager.cpp:719
+#: core/DownloadManager.cpp:746
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "ഡൗൺലോഡ് ചെയ്ത ഫയലുകളുടെ ചെക്ക്സം യോജിക്കുന്നില്ല: %1"
 
-#: core/DownloadManager.cpp:741
+#: core/DownloadManager.cpp:768
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr ""
 
-#: core/DownloadManager.cpp:746
+#: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
