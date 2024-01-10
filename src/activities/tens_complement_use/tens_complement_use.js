@@ -8,7 +8,6 @@
 .import "../../core/core.js" as Core
 
 var numberOfLevel;
-var currentSubLevel = 0;
 var numberOfSubLevel;
 var items;
 var questionArrayValue = [null, "+", null, "=", null];
@@ -19,7 +18,7 @@ function start(items_) {
     items = items_
     numberOfLevel = items.levels.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
-    currentSubLevel = 0
+    items.score.currentSubLevel = 0
     initLevel()
 }
 
@@ -27,7 +26,6 @@ function stop() {
 }
 
 function initLevel() {
-    items.score.currentSubLevel = currentSubLevel + 1;
     items.okButton.visible = false;
     clearAllListModels();
     var currentDataset = items.levels[items.currentLevel];
@@ -186,24 +184,28 @@ function initLevel() {
         }
     }
     items.score.numberOfSubLevels = numberOfSubLevel;
+    items.buttonsBlocked = false;
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    if(numberOfSubLevel <= ++currentSubLevel) {
-        currentSubLevel = 0;
-        nextLevel();
+    if(items.score.currentSubLevel >= numberOfSubLevel) {
+        items.bonus.good("flower");
+    } else {
+        initLevel();
     }
-    initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
@@ -268,9 +270,12 @@ function checkAnswer() {
         equation.isGood = check;
     }
     if(allOk) {
-        items.bonus.good("flower");
+        items.buttonsBlocked = true;
+        items.score.currentSubLevel++
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
     }
     else {
-        items.bonus.bad("flower");
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
     }
 }
