@@ -59,8 +59,11 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias score: score
+            property alias errorRectangle: errorRectangle
             property alias targetModel: targetItem.model
             readonly property var levels: activity.datasetLoader.data
             property alias targetItem: targetItem
@@ -71,7 +74,6 @@ ActivityBase {
             property int numberOfSubLevel
             property bool arrowFlying
             property bool inputLocked: true
-            property real okButtonOpacity: inputLocked ? 0 : 1
 
             onNbArrowChanged: {
                 arrowRepeater.init(nbArrow)
@@ -113,7 +115,7 @@ ActivityBase {
         MouseArea {
             id: mouseArea
             anchors.fill: parent
-            enabled: items.currentArrow != items.nbArrow && !items.arrowFlying
+            enabled: items.currentArrow != items.nbArrow && !items.arrowFlying && !items.inputLocked
             onClicked: {
                 activity.audioEffects.play(Activity.url + 'arrow.wav')
                 items.arrowFlying = true
@@ -146,7 +148,7 @@ ActivityBase {
         }
 
         function appendText(text) {
-            if(bonus.isPlaying || items.inputLocked)
+            if(items.inputLocked)
                 return false
 
             if(text === keyboard.backspace) {
@@ -191,11 +193,18 @@ ActivityBase {
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            enabled: !bonus.isPlaying && !items.inputLocked
-            opacity: items.okButtonOpacity
+            mouseArea.enabled: !items.inputLocked
+            visible: items.currentArrow == items.nbArrow
             onClicked: {
                 Activity.checkAnswer();
             }
+        }
+
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: userEntry
+            imageSize: height * 0.75
+            function releaseControls() { items.inputLocked = false; }
         }
 
         VirtualKeyboard {
@@ -203,6 +212,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             hide: items.currentArrow == items.nbArrow ? false : true
+            enabled: visible && !items.inputLocked
 
             function populate() {
                 layout = [
@@ -269,13 +279,14 @@ ActivityBase {
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.bottom: undefined
-            currentSubLevel: items.currentSubLevel + 1
+            currentSubLevel: 0
             numberOfSubLevels: items.numberOfSubLevel
+            onStop: Activity.nextSubLevel()
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }

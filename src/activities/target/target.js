@@ -22,7 +22,7 @@ function start(items_) {
     items = items_
     levels = items.levels
     numberOfLevel = levels.length
-    items.currentSubLevel = 0
+    items.score.currentSubLevel = 0
     items.numberOfSubLevel = 5
 
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
@@ -34,6 +34,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState()
     items.targetModel.clear()
     items.arrowFlying = false
     for(var i = levels[items.currentLevel].length - 1;  i >= 0 ; --i) {
@@ -44,33 +45,40 @@ function initLevel() {
     items.nbArrow = Math.min(items.currentLevel + 3, 6)
     items.targetItem.start()
     items.userEntry.text = ""
+    items.inputLocked = false
 }
 
 function nextSubLevel() {
-    if(items.numberOfSubLevel <= ++items.currentSubLevel ) {
-        nextLevel()
+    if(items.score.currentSubLevel >= items.numberOfSubLevel) {
+        items.bonus.good("flower");
     } else {
         initLevel();
     }
 }
 
 function nextLevel() {
-    items.currentSubLevel = 0;
+    items.score.stopWinAnimation();
+    items.score.currentSubLevel = 0;
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
-    items.currentSubLevel = 0;
+    items.score.stopWinAnimation();
+    items.score.currentSubLevel = 0;
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function checkAnswer() {
+    items.inputLocked = true;
     if(items.targetItem.scoreTotal.toString() === items.userEntry.text) {
-        items.bonus.good("flower")
-        items.inputLocked = true
+        items.score.currentSubLevel++
+        items.score.playWinAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
     }
-    else
-        items.bonus.bad("flower")
+    else {
+        items.errorRectangle.startAnimation()
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+    }
 }
