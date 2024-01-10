@@ -21,6 +21,7 @@ MouseArea {
     height: root.height
     anchors.centerIn: parent
     drag.target: tile
+    enabled: !items.solved
     onReleased: {
         parent = tile.Drag.target != null ? tile.Drag.target : root
         tile.Drag.drop()

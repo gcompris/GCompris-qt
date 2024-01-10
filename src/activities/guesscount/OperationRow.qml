@@ -39,8 +39,9 @@ Row {
                 Activity.childrenChange(operand1, operandRow)
                 if(operand1.count == 1 && operator.count == 1 && operand2.count == 1) {
                     Activity.calculate(operand1.droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                    if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                        Activity.checkAnswer(operandRow)
+                    if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
+                        items.solved = true
+                        Activity.goodAnswer()
                     }
                 }
 
@@ -91,12 +92,11 @@ Row {
         droppedItem: operator.children[count]
         onChildrenChanged: {
             Activity.childrenChange(operator, operandRow)
-            if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1)
-            {
+            if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1) {
                 Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
-                {
-                    Activity.checkAnswer(operandRow)
+                if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
+                    items.solved = true
+                    Activity.goodAnswer()
                 }
             }
         }
@@ -113,8 +113,9 @@ Row {
             if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1) {
                 Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true
-                if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                    Activity.checkAnswer(operandRow)
+                if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
+                    items.solved = true
+                    Activity.goodAnswer()
                 }
             }
         }
@@ -186,7 +187,8 @@ Row {
                 Activity.calculate(parseInt(prevText), operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true
                 if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                    Activity.checkAnswer(operandRow)
+                    items.solved = true
+                    Activity.goodAnswer()
                 }
             }
         }

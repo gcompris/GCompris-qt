@@ -32,12 +32,12 @@ function start(items_) {
 }
 
 function stop() {
-    items.timer.stop();
 }
 
 function initLevel() {
     items.currentlevel = items.currentLevel
-    items.sublevel = 1
+    items.score.currentSubLevel = 0
+    clearOperations()
 
     var multipleDataOperators = []
     var multipleDataItems = []
@@ -64,36 +64,50 @@ function initLevel() {
         items.operatorRow.repeater.model = items.levelArr[items.currentLevel]
     }
 
-    items.operandRow.repeater.model = Core.shuffle(items.data[items.sublevel-1][0])
-    items.levelchanged = false
+    items.score.numberOfSubLevels = items.data.length
+    items.operandRow.repeater.model = Core.shuffle(items.data[items.score.currentSubLevel][0])
+    items.result = items.data[items.score.currentSubLevel][1]
     items.solved = false
     if(items.warningDialog.visible)
         items.warningDialog.visible = false
 }
 
-function initSublevel(){
-    items.sublevel += 1
-    items.operandRow.repeater.model = items.data[items.sublevel-1][0]
-    items.solved = false
+function clearOperations() {
+    items.solved = true
+    items.clearOperations = true
+    items.clearOperations = false
 }
 
-function nextSublevel() {
-    if(items.sublevel < items.data.length) {
-        initSublevel()
+function initSubLevel(){
+    clearOperations()
+    items.operandRow.repeater.model = items.data[items.score.currentSubLevel][0]
+    items.result = items.data[items.score.currentSubLevel][1]
+    items.solved = false
+    if(items.warningDialog.visible)
+        items.warningDialog.visible = false
+}
+
+function nextSubLevel() {
+    if(items.score.currentSubLevel < items.data.length) {
+        initSubLevel()
     }
     else {
-        nextLevel()
+        items.bonus.good("smiley");
     }
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
+    items.score.currentSubLevel = 0;
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    initLevel();
+    initLevel()
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
+    items.score.currentSubLevel = 0;
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    initLevel();
+    initLevel()
 }
 
 function calculate(operand1, operator, operand2, operationRow)
@@ -152,15 +166,10 @@ function childrenChange(item, operationRow)
     }
 }
 
-function checkAnswer(row) {
-    if(items.sublevel < items.data.length) {
-        items.bonus.good("flower")
-        items.timer.start()
-    }
-    else {
-        items.timer.start()
-        items.bonus.good("smiley")
-    }
+function goodAnswer() {
+    items.score.currentSubLevel += 1
+    items.score.playWinAnimation()
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
 }
 
 function configDone(array) {

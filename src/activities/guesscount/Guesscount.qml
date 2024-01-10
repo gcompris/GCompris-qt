@@ -47,17 +47,16 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property int sublevel: 0
+            property alias score: score
             property alias operatorRow: operatorRow
             property alias operandRow: operandRow
             property var data
             readonly property var levels: activity.datasetLoader.data
-            property int result: data[sublevel-1][1]
-            property alias timer: timer
+            property int result: 0
             property alias warningDialog: warningDialog
             property GCSfx audioEffects: activity.audioEffects
-            property bool solved
-            property bool levelchanged: false
+            property bool clearOperations: false
+            property bool solved: false
             property var levelArr: Data.defaultOperators
             property string mode: "builtin"
             property int currentlevel
@@ -99,8 +98,9 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: top
+            z: 10
             height: parent.height/10
             anchors {
                 left: parent.left
@@ -108,28 +108,18 @@ ActivityBase {
                 top: parent.top
                 margins: 20 * ApplicationInfo.ratio
             }
-            color: "transparent"
-            Rectangle {
-                id: questionNo
+            Score {
+                id: score
                 width: parent.width * 0.2
                 height: parent.height
                 radius: 20
-                color: "steelblue"
                 anchors.left: parent.left
+                anchors.right: undefined
+                anchors.top: undefined
+                anchors.bottom: undefined
+                currentSubLevel: 0
+                onStop: Activity.nextSubLevel()
 
-                GCText {
-                    color: "#E8E8E8"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    text: qsTr("%1/%2").arg(items.sublevel).arg(items.data.length)
-                }
             }
             Rectangle {
                 id: guessLabel
@@ -138,7 +128,7 @@ ActivityBase {
                 radius: 20
                 color: "orange"
                 anchors {
-                    left: questionNo.right
+                    left: score.right
                     leftMargin: 20 * ApplicationInfo.ratio
                 }
                 Rectangle {
@@ -200,9 +190,10 @@ ActivityBase {
                     guesscount: items.result
                     prevText: index != 0 ? items.resultArr[index - 1] : ""
                     prevComplete: prevText != "" ? true : false
-                    reparent: items.solved || items.levelchanged
+                    reparent: items.clearOperations
                     // This workaround is needed to fix a bug caused by the repeater creating instances from
-                    // the last item to the first one but only the very first time it is loaded, so we can't // safely bind values to repeat.itemAt(index-1).property. Using an intermediate array is
+                    // the last item to the first one but only the very first time it is loaded, so we can't
+                    // safely bind values to repeat.itemAt(index-1).property. Using an intermediate array is
                     // the only solution I found. Also changes directly inside the array aren't detected by
                     // the binding, so it needs to be copied to and from another temporary array.
                     onTextChanged: {
@@ -264,11 +255,9 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: {
-                items.levelchanged = true
                 Activity.previousLevel()
             }
             onNextLevelClicked: {
-                items.levelchanged = true
                 Activity.nextLevel()
             }
             onActivityConfigClicked: {
@@ -279,15 +268,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSublevel)
-        }
-        Timer {
-            id: timer
-            interval: 1500
-            repeat: false
-            onTriggered: {
-                items.solved = true
-            }
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Rectangle {
