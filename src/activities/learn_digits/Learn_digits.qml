@@ -418,6 +418,7 @@ ActivityBase {
         ErrorRectangle {
             id: errorRectangle
             anchors.fill: circlesBackground
+            radius: circlesBackground.radius
             imageSize: height * 0.5
             function releaseControls() { items.inputLocked = false; }
         }
