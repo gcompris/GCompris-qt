@@ -39,6 +39,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias cardListModel: cardListModel
@@ -49,6 +50,7 @@ ActivityBase {
             property alias score: score
             property double cardSize: Core.fitItems(numberContainerArea.width, numberContainerArea.height, 6)
             property bool isHorizontal: background.width >= background.height
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -157,6 +159,7 @@ ActivityBase {
                 rightMargin: background.layoutMargins
                 bottomMargin: background.layoutMargins
             }
+            onStop: Activity.nextSubLevel()
         }
 
         states: [
@@ -244,7 +247,7 @@ ActivityBase {
         MouseArea {
             id: clickMask
             anchors.fill: layoutArea
-            enabled: items.bonus.isPlaying
+            enabled: items.buttonsBlocked
         }
 
         DialogChooseLevel {
@@ -288,7 +291,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 
