@@ -1,10 +1,10 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023 Vít Pelčák <vit@pelcak.org>
 # Vit Pelcak <vit@pelcak.org>, 2021, 2022, 2023.
-# Jan Papez (honyczek) <honyczek@centrum.cz>, 2023.
+# Jan Papez (honyczek) <honyczek@centrum.cz>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-08-21 23:37+0200\n"
+"PO-Revision-Date: 2024-01-08 22:41+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -4452,7 +4452,7 @@ msgstr "1783 horkovzdušný balón bratří Montgolfierů"
 #: activities/chronos/resource/board/board5_1.qml:46
 msgctxt "board5_1|"
 msgid "1880 Clement Ader's Eole"
-msgstr "1880 letoun Éole Clémenta Adera"
+msgstr "1890 letoun Éole Clémenta Adera"
 
 #: activities/chronos/resource/board/board5_1.qml:54
 msgctxt "board5_1|"
@@ -4512,7 +4512,7 @@ msgstr "1829 Stephensonova parní lokomotiva Rocket"
 #: activities/chronos/resource/board/board5_4.qml:46
 msgctxt "board5_4|"
 msgid "1880 Clement Ader's Eole"
-msgstr "1880 Clement Aderův Eole"
+msgstr "1890 Clement Aderův Eole"
 
 #: activities/chronos/resource/board/board5_4.qml:54
 msgctxt "board5_4|"
@@ -4527,7 +4527,7 @@ msgstr "Letectví"
 #: activities/chronos/resource/board/board6_0.qml:39
 msgctxt "board6_0|"
 msgid "1880 Clement Ader's Eole"
-msgstr "1880 Eole Clementa Adera"
+msgstr "1890 Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board6_0.qml:47
 msgctxt "board6_0|"
@@ -7032,6 +7032,12 @@ msgid ""
 "monument that marks India's chief ports and is a major tourist attraction "
 "for visitors who arrive in India for the first time."
 msgstr ""
+"Brána Indie je jedna z nejunikátnějších indických pamětihodností, která se "
+"nachází ve městě Bombaj. Tato velká stavba byla vystavěna v roce 1924. "
+"Nachází se na špičce mola Apollo Bunder. Brána ve čtvrti Colaba ční nad "
+"bombajským pobřežím orámována Arabským mořem. Monument Brána Indie označuje "
+"hlavní indický přístav a je velkou turistickou atrakcí pro návštěvníky, "
+"kteří přijíždí do Indie poprvé."
 
 #: activities/explore_monuments/resource/board/board2.qml:51
 #: activities/explore_monuments/resource/board/board2.qml:54
@@ -8209,6 +8215,9 @@ msgid ""
 "and violins. These bands play for many occasions, including weddings and "
 "parties."
 msgstr ""
+"Mariachi (mariači) je známý druh mexické hudby. Užívají se v něm kytary, "
+"trumpety a housle. Kapely je hrávají při různých příležitostech včetně "
+"svateb a párty."
 
 #: activities/explore_world_music/resource/board/board1.qml:116
 #: activities/explore_world_music/resource/board/board1.qml:120
@@ -22635,7 +22644,7 @@ msgstr "Kolikátá směrem od slunce je v Sluneční soustavě planeta Venuše?"
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
 msgid "Second"
-msgstr "Sekunda"
+msgstr "Druhá"
 
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
@@ -23439,7 +23448,7 @@ msgstr "Rada"
 #: activities/solar_system/SolarSystem.qml:366
 msgctxt "SolarSystem|"
 msgid "View the solar system"
-msgstr "Prohlédni si sluneční soustavu"
+msgstr "Prohlédni si Sluneční soustavu"
 
 #. Activity title
 #: activities/submarine/ActivityInfo.qml:15
