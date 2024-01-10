@@ -807,7 +807,7 @@ void DownloadManager::finishDownload()
             QString newContentsFilePath = tempFilenameForFilename(dir.filePath(contentsFilename));
 
             if (!QFile::remove(newContentsFilePath)) {
-                qWarning() << "Could not remove old Contents file" << newContentsFilePath;
+                qWarning() << "Could not remove new Contents file" << newContentsFilePath;
             }
         }
     }
