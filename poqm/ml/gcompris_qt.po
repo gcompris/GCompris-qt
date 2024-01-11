@@ -14090,7 +14090,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr ""
 
-#: activities/guess24/Guess24.qml:104
+#: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -14191,23 +14191,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "ഘട്ടം %1"
 
-#: activities/guesscount/guesscount.js:128
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "ഉത്തരം അധി പൂർണസംഖ്യയല്ല"
 
-#: activities/guesscount/guesscount.js:130
+#: activities/guesscount/guesscount.js:144
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "ഉത്തരം പൂർണസംഖ്യയല്ല"
 
-#: activities/guesscount/Guesscount.qml:131
-#, qt-format
-msgctxt "Guesscount|"
-msgid "%1/%2"
-msgstr "%1/%2"
-
-#: activities/guesscount/Guesscount.qml:165
+#: activities/guesscount/Guesscount.qml:155
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -15556,31 +15550,31 @@ msgstr ""
 "ഒഴിഞ്ഞിടത്തേക്ക് ഡ്രാഗു ചെയ്യുക. ഓറഞ്ചിന്റെ എണ്ണം കാണിച്ചിരിക്കുന്ന എണ്ണത്തിനു തുല്യമാകുന്നതുവരെ ഈ "
 "ഘട്ടങ്ങൾ ആവർത്തിക്കുക. എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കൂ."
 
-#: activities/learn_decimals/Learn_decimals.qml:115
+#: activities/learn_decimals/Learn_decimals.qml:118
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "ഈ സംഖ്യ കാണിക്കൂ: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:116
+#: activities/learn_decimals/Learn_decimals.qml:119
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "ഈ ക്രിയയുടെ ഉത്തരം കാണിക്കൂ: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:117
+#: activities/learn_decimals/Learn_decimals.qml:120
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "ഈ ക്രിയയുടെ ഉത്തരം കാണിക്കൂ: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:121
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "ഈ എണ്ണം കാണിക്കൂ: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:571
+#: activities/learn_decimals/Learn_decimals.qml:576
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -22843,7 +22837,7 @@ msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "പരമാവധി 30 മിഠായികളും 6 കുട്ടികളും, ശിഷ്ടം വരാം."
 
-#: activities/share/share.js:97
+#: activities/share/share.js:98
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -22853,7 +22847,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "%n ആൺകുട്ടിയെ(കളെ)യും "
 msgstr[1] "%n ആൺകുട്ടിയെ(കളെ)യും "
 
-#: activities/share/share.js:101
+#: activities/share/share.js:102
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -22863,7 +22857,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "%n പെൺകുട്ടിയെ(കളെ)യും നടുവിൽ വെയ്ക്കൂ. "
 msgstr[1] "%n പെൺകുട്ടിയെ(കളെ)യും നടുവിൽ വെയ്ക്കൂ. "
 
-#: activities/share/share.js:105
+#: activities/share/share.js:106
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -22873,7 +22867,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "എന്നിട്ട് %n മിഠായികൾ അവർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കൂ."
 msgstr[1] "എന്നിട്ട് %n മിഠായികൾ അവർക്കിടയിൽ തുല്യമായി പങ്കുവെയ്ക്കൂ."
 
-#: activities/share/Share.qml:340
+#: activities/share/Share.qml:348
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -26155,6 +26149,10 @@ msgstr "നോക്കാതെ വിടുക"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"

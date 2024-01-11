@@ -31,7 +31,7 @@ msgid_plural "%n second(s)"
 msgstr[0] "%n second"
 msgstr[1] "%n seconds"
 
-#: ../activities/share/share.js:97
+#: ../activities/share/share.js:98
 #, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
@@ -41,7 +41,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "\"Place %n boy \""
 msgstr[1] "\"Place %n boys \""
 
-#: ../activities/share/share.js:101
+#: ../activities/share/share.js:102
 #, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
@@ -51,7 +51,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "\"and %n girl in the center. \""
 msgstr[1] "\"and %n girls in the center. \""
 
-#: ../activities/share/share.js:105
+#: ../activities/share/share.js:106
 #, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
