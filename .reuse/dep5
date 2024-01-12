@@ -37,7 +37,7 @@ License: CC-BY-SA-4.0
 Files: docs/Doxyfile.local
 Copyright: 2015 Holger Kaelberer
 License: CC0-1.0
- 
+
 Files: docs/manual-general
 Copyright: 2018 Timothée Giet
 License: CC0-1.0
@@ -1007,7 +1007,7 @@ Copyright: NONE
 License: CC0-1.0
 
 Files: src/activities/click_on_letter/resource/levels-ar.json
-Copyright: 2023 Zayed Al-Saidi 
+Copyright: 2023 Zayed Al-Saidi
 License: CC0-1.0
 
 Files: src/activities/click_on_letter/resource/levels-be.json
@@ -2258,6 +2258,10 @@ Files: src/activities/gnumch-equality/resource/eat.wav
 Copyright: 2000-2008 Bruno Coudoin and others
 License: GPL-3.0-only
 
+Files: src/activities/graduated_line_read/*.svg
+Copyright: 2023 Bruno Anselme
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/*.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
@@ -2545,7 +2549,7 @@ Copyright: 2019 Vit Pelcak
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-da.json
-Copyright: 2020 schlander 
+Copyright: 2020 schlander
 License: CC0-1.0
 
 Files: src/activities/lang/resource/content-de.json
@@ -2807,7 +2811,7 @@ License: GPL-2.0-or-later
 Comment: File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/magic/sounds/). metalpaint.wav has been remixed by Bruno Coudoin to pickaxe.ogg
 
 Files: src/activities/mining/resource/realrainbow.wav
-Copyright: 2007 William Kendrick 
+Copyright: 2007 William Kendrick
 License: GPL-2.0-or-later
 Comment: File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/magic/sounds/)
 
@@ -3305,7 +3309,7 @@ License: CC-BY-SA-4.0
 Comment: based on http://openclipart.org/detail/16504/castle-by-ibinbin
 
 Files: src/activities/wordsgame/resource/default-af.json
-Copyright: 2011 friedelwolff 
+Copyright: 2011 friedelwolff
 License: CC0-1.0
 
 Files: src/activities/wordsgame/resource/default-ar.json
