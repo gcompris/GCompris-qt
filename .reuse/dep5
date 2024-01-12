@@ -2262,6 +2262,10 @@ Files: src/activities/graduated_line_read/*.svg
 Copyright: 2023 Bruno Anselme
 License: CC-BY-SA-4.0
 
+Files: src/activities/graduated_line_use/*.svg
+Copyright: 2023 Bruno Anselme
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/*.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
