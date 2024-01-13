@@ -19208,7 +19208,7 @@ msgid ""
 "moved to any vacant spot on the board."
 msgstr ""
 "Si et quedes amb 3 peces, les peces adquiriran la capacitat de «volar» i es "
-"podran moure fins a qualsevol lloc buit en el tauler."
+"podran moure cap a qualsevol lloc buit en el tauler."
 
 #: activities/nine_men_morris/nine_men_morris.js:45
 msgctxt "nine_men_morris|"
