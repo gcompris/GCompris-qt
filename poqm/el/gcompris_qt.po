@@ -72,6 +72,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -9885,6 +9886,198 @@ msgstr "Βρες τον αριθμητή και τον παρονομαστή (�
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
 msgstr "Βρες τον αριθμητή και τον παρονομαστή (με τετράγωνο)."
+
+#. Activity title
+#: activities/frieze/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Frieze"
+msgstr ""
+
+#. Help title
+#: activities/frieze/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the given tower."
+msgctxt "ActivityInfo|"
+msgid "Reproduce and complete the frieze."
+msgstr "Φτιάξε στην κενή δοκό τον συγκεκριμένο πύργο."
+
+#. Help goal
+#: activities/frieze/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "algorithm"
+msgctxt "ActivityInfo|"
+msgid "Learn algorithms."
+msgstr "Αλγόριθμος"
+
+#. Help manual
+#: activities/frieze/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Reproduce the frieze on top. On some levels, you may have to complete the "
+"frieze or to reproduce it after you've memorized it."
+msgstr ""
+
+#: activities/frieze/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: select a symbol button"
+msgctxt "ActivityInfo|"
+msgid "Left and right arrows: select a token"
+msgstr "Αριστερό και δεξί βελάκι: επιλογή συμβόλου"
+
+#: activities/frieze/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select an item"
+msgctxt "ActivityInfo|"
+msgid "Space: add selected token to the frieze"
+msgstr "Μπάρα διαστήματος: Επιλογή ενός αντικειμένου."
+
+#: activities/frieze/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace or Delete: undo"
+msgctxt "ActivityInfo|"
+msgid "Backspace or Delete: remove last token from the frieze"
+msgstr "Backspace ή Delete: Αναίρεση."
+
+#: activities/frieze/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
+msgctxt "ActivityInfo|"
+msgid "Enter: validate the answer"
+msgstr "Πλήκτρο Enter: Έλεγχος της απάντησης"
+
+#: activities/frieze/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: switch between invisible and visible modes"
+msgctxt "ActivityInfo|"
+msgid "Tab: switch between editing the frieze and viewing the model"
+msgstr "Μπάρα διαστήματος: Εναλλαγή μεταξύ ορατής και αόρατης διαδρομής."
+
+#: activities/frieze/Frieze.qml:248
+#, fuzzy
+#| msgctxt "ReadyButton|"
+#| msgid "I am Ready"
+msgctxt "Frieze|"
+msgid "I am Ready"
+msgstr "Είμαι έτοιμος"
+
+#: activities/frieze/resource/1/Data.qml:28
+msgctxt "Data|"
+msgid "Copy this frieze: 2 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/1/Data.qml:31
+#: activities/frieze/resource/4/Data.qml:17
+#: activities/frieze/resource/5/Data.qml:17
+#: activities/frieze/resource/7/Data.qml:17
+msgctxt "Data|"
+msgid "Copy this frieze."
+msgstr ""
+
+#: activities/frieze/resource/10/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Remember and copy this frieze: any combination of shapes, colors/signs and "
+"sizes."
+msgstr ""
+
+#: activities/frieze/resource/10/Data.qml:17
+#: activities/frieze/resource/12/Data.qml:16
+#: activities/frieze/resource/14/Data.qml:16
+#: activities/frieze/resource/3/Data.qml:17
+msgctxt "Data|"
+msgid "Remember and copy this frieze."
+msgstr ""
+
+#: activities/frieze/resource/11/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 4 and 7, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/11/Data.qml:16
+msgctxt "Data|"
+msgid "Copy and complete this frieze"
+msgstr ""
+
+#: activities/frieze/resource/12/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Remember and copy this frieze: patterns between 4 and 7, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/13/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 6 and 8, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/13/Data.qml:16
+#: activities/frieze/resource/2/Data.qml:17
+#: activities/frieze/resource/6/Data.qml:17
+#: activities/frieze/resource/8/Data.qml:17
+#: activities/frieze/resource/9/Data.qml:17
+msgctxt "Data|"
+msgid "Copy and complete this frieze."
+msgstr ""
+
+#: activities/frieze/resource/14/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Remember and copy this frieze: patterns between 6 and 8, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/2/Data.qml:14
+msgctxt "Data|"
+msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/3/Data.qml:14
+msgctxt "Data|"
+msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/4/Data.qml:14
+msgctxt "Data|"
+msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/5/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
+"signs."
+msgstr ""
+
+#: activities/frieze/resource/6/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
+"same colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/7/Data.qml:14
+msgctxt "Data|"
+msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/8/Data.qml:14
+#: activities/frieze/resource/9/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: any combination of shapes, colors/signs and "
+"sizes."
+msgstr ""
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -30206,10 +30399,6 @@ msgstr "Έναρξη"
 #~ "της ισότητας, δώσε το αποτέλεσμα, το άθροισμα. Χρησιμοποίησε το δεξί ή το "
 #~ "αριστερό βέλος για να αλλάξεις την απάντηση σου και πάτησε το πλήκτρο "
 #~ "Enter για να δεις εάν απάντησες σωστά. Εάν όχι, προσπάθησε πάλι."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "algorithm"
-#~ msgstr "Αλγόριθμος"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Complete a list of symbols"

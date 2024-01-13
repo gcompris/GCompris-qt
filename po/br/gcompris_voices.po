@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:23+0000\n"
+"POT-Creation-Date: 2024-01-13 01:43+0000\n"
 "PO-Revision-Date: 2024-01-06 17:11+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
@@ -474,6 +474,12 @@ msgstr "Dibab an niveroù reizh a bep tu evel deskrivet en urzhioù. "
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr "Kav an niverer hag an anver reizh evit ar gevrenn diskouezet."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
+#: activities/frieze/ActivityInfo.qml:17
+#, kde-format
+msgid "Reproduce and complete the frieze model."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22

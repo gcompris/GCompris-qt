@@ -73,6 +73,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -9468,6 +9469,198 @@ msgstr "അംശവും ഛേദവു കണ്ടെത്തുക (പ�
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
 msgstr "അംശവും ഛേദവു കണ്ടെത്തുക (സമചതുരം ഉപയോഗിച്ച്)."
+
+#. Activity title
+#: activities/frieze/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Frieze"
+msgstr ""
+
+#. Help title
+#: activities/frieze/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the given tower."
+msgctxt "ActivityInfo|"
+msgid "Reproduce and complete the frieze."
+msgstr "തന്നിരിക്കുന്ന തൂൺ പുനർനിർമ്മിക്കൂ."
+
+#. Help goal
+#: activities/frieze/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn digits"
+msgctxt "ActivityInfo|"
+msgid "Learn algorithms."
+msgstr "അക്കങ്ങൾ പഠിക്കാം"
+
+#. Help manual
+#: activities/frieze/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Reproduce the frieze on top. On some levels, you may have to complete the "
+"frieze or to reproduce it after you've memorized it."
+msgstr ""
+
+#: activities/frieze/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: select a symbol button"
+msgctxt "ActivityInfo|"
+msgid "Left and right arrows: select a token"
+msgstr "ഇടതും വലതും ആരോകൾ: ഒരു ചിഹ്നത്തിന്റെ ബട്ടൺ തിരഞ്ഞെടുക്കാൻ"
+
+#: activities/frieze/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select an item"
+msgctxt "ActivityInfo|"
+msgid "Space: add selected token to the frieze"
+msgstr "സ്പെയ്സ്: ഒരിനം തിരഞ്ഞെടുക്കാൻ"
+
+#: activities/frieze/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace or Delete: undo"
+msgctxt "ActivityInfo|"
+msgid "Backspace or Delete: remove last token from the frieze"
+msgstr "ബാക്ക്‌സ്പെയ്സോ ഡിലീറ്റോ: അൺഡു"
+
+#: activities/frieze/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
+msgctxt "ActivityInfo|"
+msgid "Enter: validate the answer"
+msgstr "എന്റർ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
+
+#: activities/frieze/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: switch between invisible and visible modes"
+msgctxt "ActivityInfo|"
+msgid "Tab: switch between editing the frieze and viewing the model"
+msgstr "സ്പെയ്സ്: അദൃശ്യം, ദൃശ്യം എന്നീ മോഡുകൾ തമ്മിൽ മാറാൻ"
+
+#: activities/frieze/Frieze.qml:248
+#, fuzzy
+#| msgctxt "ReadyButton|"
+#| msgid "I am Ready"
+msgctxt "Frieze|"
+msgid "I am Ready"
+msgstr "ഞാൻ‍ തയ്യാറാണ്"
+
+#: activities/frieze/resource/1/Data.qml:28
+msgctxt "Data|"
+msgid "Copy this frieze: 2 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/1/Data.qml:31
+#: activities/frieze/resource/4/Data.qml:17
+#: activities/frieze/resource/5/Data.qml:17
+#: activities/frieze/resource/7/Data.qml:17
+msgctxt "Data|"
+msgid "Copy this frieze."
+msgstr ""
+
+#: activities/frieze/resource/10/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Remember and copy this frieze: any combination of shapes, colors/signs and "
+"sizes."
+msgstr ""
+
+#: activities/frieze/resource/10/Data.qml:17
+#: activities/frieze/resource/12/Data.qml:16
+#: activities/frieze/resource/14/Data.qml:16
+#: activities/frieze/resource/3/Data.qml:17
+msgctxt "Data|"
+msgid "Remember and copy this frieze."
+msgstr ""
+
+#: activities/frieze/resource/11/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 4 and 7, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/11/Data.qml:16
+msgctxt "Data|"
+msgid "Copy and complete this frieze"
+msgstr ""
+
+#: activities/frieze/resource/12/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Remember and copy this frieze: patterns between 4 and 7, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/13/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 6 and 8, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/13/Data.qml:16
+#: activities/frieze/resource/2/Data.qml:17
+#: activities/frieze/resource/6/Data.qml:17
+#: activities/frieze/resource/8/Data.qml:17
+#: activities/frieze/resource/9/Data.qml:17
+msgctxt "Data|"
+msgid "Copy and complete this frieze."
+msgstr ""
+
+#: activities/frieze/resource/14/Data.qml:13
+msgctxt "Data|"
+msgid ""
+"Remember and copy this frieze: patterns between 6 and 8, any combination of "
+"shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/2/Data.qml:14
+msgctxt "Data|"
+msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/3/Data.qml:14
+msgctxt "Data|"
+msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/4/Data.qml:14
+msgctxt "Data|"
+msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/5/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
+"signs."
+msgstr ""
+
+#: activities/frieze/resource/6/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
+"same colors/signs."
+msgstr ""
+
+#: activities/frieze/resource/7/Data.qml:14
+msgctxt "Data|"
+msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+msgstr ""
+
+#: activities/frieze/resource/8/Data.qml:14
+#: activities/frieze/resource/9/Data.qml:14
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: any combination of shapes, colors/signs and "
+"sizes."
+msgstr ""
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -26354,10 +26547,6 @@ msgstr "തുടങ്ങാം"
 #~ "കമ്പിളി രോമമുള്ള സസ്തനിയാണ് ചെമ്മരിയാട്. മേഞ്ഞുനടക്കുന്ന, സസ്യഭുക്കായ ഇവയെ കമ്പിളിയ്ക്കും "
 #~ "മാംസത്തിനും പാലിനും വേണ്ടി വളർത്തുന്നു. രോമം മുറിച്ചെടുത്ത്, അത് പലതരം വസ്ത്രങ്ങളും പുതപ്പുകളും "
 #~ "മറ്റും ഉണ്ടാക്കാൻ ഉപയോഗിക്കുന്നു."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "അക്കങ്ങൾ പഠിക്കാം"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
