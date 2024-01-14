@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 Freek de Kruijf <freekdekruijf@kde.nl>
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Freek de Kruijf <freekdekruijf@kde.nl>
 # Jan Mussche <mijninternet2016@gmail.com>, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-11-23 10:16+0100\n"
+"PO-Revision-Date: 2024-01-13 13:44+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -9626,25 +9626,19 @@ msgstr "Zoek de teller en deler (met een vierkant)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Fries"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "De gegeven toren reproduceren."
+msgstr "De fries reproduceren en voltooien."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "algorithm"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "algoritme"
+msgstr "Algoritmes leren."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9653,51 +9647,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"De fries bovenaan reproduceren. op sommige niveaus moet je misschien de "
+"fries voltooien of reproduceren nadat je het hebt onthouden."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Pijlen links en rechts: selecteer een knop met symbool"
+msgstr "Pijlen links en rechts: selecteer een token"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Spatie: een item selecteren"
+msgstr "Spatie: geselecteerd token toevoegen aan de fries"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: cancel last operation"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Backspace of Delete: laatste operatie annuleren"
+msgstr "Backspace of Delete: laatste token uit de fries verwijderen"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: kijken of het antwoord goed is"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Spatie: tussen modus zichtbaar en onzichtbaar schakelen"
+msgstr "Tab: schakelen tussen bewerken van de fries en het model bekijken"
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Ik ben klaar"
@@ -9705,7 +9683,7 @@ msgstr "Ik ben klaar"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Deze fries kopiëren: 2 vormen met verschillende kleuren/tekens."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9713,7 +9691,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Deze fries kopiëren."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9721,6 +9699,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Deze fries onthouden en kopiëren: elke combinatie van vormen, kleuren/tekens "
+"en groottes."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9728,7 +9708,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Deze fries onthouden en kopiëren."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9736,11 +9716,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Deze fries kopiëren en voltooien: patronen tussen 4 en 7, elke combinatie "
+"van vormen, kleuren/tekens en groottes."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Deze fries kopiëren en voltooien"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9748,6 +9730,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Deze fries onthouden en kopiëren: patronen tussen 4 en 7, elke combinatie "
+"van vormen, kleuren/tekens en groottes."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9755,6 +9739,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Deze fries kopiëren en voltooien: patronen tussen 6 en 8, elke combinatie "
+"van vormen, kleuren/tekens en groottes."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9763,7 +9749,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Deze fries kopiëren en voltooien."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9771,21 +9757,25 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Deze fries onthouden en kopiëren: patronen tussen 6 en 8, elke combinatie "
+"van vormen, kleuren/tekens en groottes."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Deze fries kopiëren en voltooien: 2 vormen met verschillende kleuren/tekens."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Deze fries onthouden en kopiëren: 2 vormen met verschillende kleuren/tekens."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Deze fries kopiëren: 3 of 4 vormen met verschillende kleuren/tekens."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9793,6 +9783,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Deze fries kopiëren: 3 of 4 vormen met 2 verschillende groottes en "
+"potentieel dezelfde kleuren/tekens."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9800,11 +9792,14 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Deze fries kopiëren en voltooien: 3 of 4 vormen met 2 verschillende groottes "
+"en potentieel dezelfde kleuren/tekens."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Deze fries kopiëren: elke combinatie van vormen, kleuren/tekens en groottes."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9813,6 +9808,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Deze fries kopiëren en voltooien: elke combinatie van vormen, kleuren/tekens "
+"en groottes."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19

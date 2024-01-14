@@ -1,5 +1,5 @@
 # Ozge <ozgebarbaros@gmail.com>.
-# SPDX-FileCopyrightText: 2022, 2023 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 # Volkan Gezer <volkangezer@gmail.com>, 2017, 2021.
 # Filiz Alver <filizalvr@gmail.com>, 2019, 2020.
 # Emir SARI <emir_sari@icloud.com>, 2023.
@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-11-26 01:21+0300\n"
+"PO-Revision-Date: 2024-01-13 16:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 24.01.90\n"
 "X-Qt-Contexts: true\n"
 
 #. Activity title
@@ -9518,25 +9518,19 @@ msgstr "Payı ve paydayı bul (kare ile)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Friz"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Verilen kuleyi yeniden oluştur."
+msgstr "Frizi yeniden oluştur ve tamamla"
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Toplama işlemini öğren."
+msgstr "Algoritmaları öğren."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9545,51 +9539,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Frizi üstte yeniden oluştur. Bazı düzeylerde frizi tamamlaman veya "
+"ezberledikten sonra yeniden oluşturman gerekebilir."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Sol ve sağ ok: Bir sembol düğmesi seç"
+msgstr "Sol ve sağ ok: Bir jeton seç"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Boşluk: Bir öge seç"
+msgstr "Boşluk: Seçili jetonu frize ekle"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: cancel last operation"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Sil veya Geri Sil: Son işlemi iptal et"
+msgstr "Sil veya Geri Sil: Frizden son jetonu kaldır"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Giriş: Yanıtını doğrula"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Boşluk: Görünür ve görünmez kipler arasında geçiş yap"
+msgstr "Sekme: Frizi düzenleme ve modeli görüntüleme arasında geçiş yap"
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Hazırım"
@@ -9597,7 +9575,7 @@ msgstr "Hazırım"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Bu frizi kopyala: Değişik renk/işaret ile 2 şekil."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9605,7 +9583,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Bu frizi kopyala."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9613,6 +9591,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Bu frizi anımsa ve kopyala: Herhangi bir şekil, renk/işaret ve boyut "
+"kombinasyonu."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9620,7 +9600,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Bu frizi anımsa ve kopyala."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9628,11 +9608,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Bu frizi kopyala ve tamamla: 4 ile 7 arasındaki desenler, herhangi bir "
+"şekil, renk/işaret ve boyut kombinasyonu."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Bu frizi kopyala ve tamamla"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9640,6 +9622,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Bu frizi anımsa ve kopyala: 4 ile 7 arasındaki desenler, herhangi bir şekil, "
+"renk/işaret ve boyut kombinasyonu."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9647,6 +9631,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Bu frizi kopyala ve tamamla: 6 ile 8 arasındaki desenler, herhangi bir "
+"şekil, renk/işaret ve boyut kombinasyonu."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9655,7 +9641,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Bu frizi kopyala ve tamamla."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9663,21 +9649,23 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Bu frizi anımsa ve kopyala: 6 ile 8 arasındaki desenler, herhangi bir şekil, "
+"renk/işaret ve boyut kombinasyonu."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Bu frizi kopyala ve tamamla: Değişik renk/işaret ile 2 şekil."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Bu frizi anımsa ve kopyala: Değişik renk/işaret ile 2 şekil."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Bu frizi kopyala: Değişik renk/işaret ile 3 veya 4 şekil."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9685,6 +9673,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Bu frizi kopyala: 2 boyutta ve potansiyel olarak aynı renkte/işaretli 3 veya "
+"4 şekil."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9692,11 +9682,14 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Bu frizi kopyala ve tamamla: 2 boyutta ve potansiyel olarak aynı renkte/"
+"işaretli 3 veya 4 şekil."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Bu frizi kopyala: Herhangi bir şekil, renk/işaret ve boyut kombinasyonu."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9705,6 +9698,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Bu frizi kopyala ve tamamla: Herhangi bir şekil, renk/işaret ve boyut "
+"kombinasyonu."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
