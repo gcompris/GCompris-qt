@@ -93,6 +93,11 @@ Rectangle {
      */
     signal stop
 
+    Connections {
+        target: activity
+        onStop: stopWinAnimation();
+    }
+
     color: "#AAFFFFFF"
     width: subLevelText.width * 2
     height: subLevelText.height * 1.4
