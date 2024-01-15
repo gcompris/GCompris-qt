@@ -97,6 +97,7 @@ function initSubLevel() {
     for(i = 0; i < items.answerRepeater.count; i++) {
         if (items.answerRepeater.itemAt(i).source != "") {
             items.selected = i
+            items.selector.state = "initialized"
             break
         }
     }

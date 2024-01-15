@@ -60,7 +60,8 @@ ActivityBase {
             property alias gridRepeater: gridRepeater
             property alias showGrid1: showGrid1
             property alias score: score
-            property int selected
+            property alias selector: selector
+            property int selected: -1
             property int columns
             property int rows
             property bool ok: true
@@ -257,21 +258,50 @@ ActivityBase {
         }
 
         Image {
-            id: selected
+            id: selector
             source: activity.dataSetUrl+"selected.svg"
             sourceSize.width: width
             sourceSize.height: height
             width: items.gridBaseWidth
             height: items.gridBaseHeight
             opacity: 1
+            state: "uninitialized"
 
-            property var newCoord: answerRepeater.itemAt(items.selected)
-            x: newCoord.x + board.x
-            y: newCoord.y + board.y
+            x: 0
+            y: 0
             z: 100
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on y { NumberAnimation { duration: 200 } }
+
+            states: [
+                State {
+                    name: "uninitialized"
+                    PropertyChanges {
+                        target: selector
+                        x: 0
+                        y: 0
+                    }
+                    PropertyChanges {
+                        target: cable
+                        height: 0
+                        x: 0
+                    }
+                },
+                State {
+                    name: "initialized"
+                    PropertyChanges {
+                        target: selector
+                        x: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).x + board.x : 0
+                        y: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).y + board.y : 0
+                    }
+                    PropertyChanges {
+                        target: cable
+                        height: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).y + board.y - crane_top.y : 0
+                        x: answerRepeater.itemAt(items.selected) ? answerRepeater.itemAt(items.selected).x + board.x + items.gridBaseWidth / 2 : 0
+                    }
+                }
+            ]
 
         }
 
@@ -442,13 +472,11 @@ ActivityBase {
             id: cable
             color: "#373737"
             width: 5
-            height: convert.y + board.y - crane_top.y
-            x: convert.x + board.x + items.gridBaseWidth / 2
+            height: 0
+            x: 0
             z: 3
             anchors.top: crane_top.top
             anchors.topMargin: 10
-
-            property var convert: answerRepeater.itemAt(items.selected)
 
             Behavior on x { NumberAnimation { duration: 200 } }
             Behavior on height { NumberAnimation { duration: 200 } }
