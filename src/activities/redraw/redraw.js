@@ -60,6 +60,7 @@ function initLevel() {
         items.userModel.itemAt(0).paint(items.targetModelData[0])
     }
     items.colorSelector = 1
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {
@@ -85,7 +86,9 @@ function checkModel() {
         if(items.userModel.itemAt(i).color !== items.targetModel.itemAt(i).color)
             return false
     }
-    return true
+    items.buttonsBlocked = true
+    items.checkTimer.stop()
+    items.bonus.good("flower")
 }
 
 // Dump the user drawing in the format we use for drawing definition

@@ -54,6 +54,7 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias checkTimer: checkTimer
             property int colorSelector: 0
             property alias userModel: userModel
             property int numberOfColumn
@@ -62,6 +63,7 @@ ActivityBase {
             property alias targetModel: targetModel
             property var targetModelData
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -70,7 +72,7 @@ ActivityBase {
             Activity.stop()
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
             if(event.key >= Qt.Key_0 && event.key < Qt.Key_0 + items.numberOfColor)
                 items.colorSelector = event.key - Qt.Key_0
@@ -367,7 +369,7 @@ ActivityBase {
         Timer {
             id: checkTimer
             interval: 500
-            onTriggered: if(Activity.checkModel()) bonus.good("flower")
+            onTriggered: Activity.checkModel()
         }
 
         MultiPointTouchArea {
