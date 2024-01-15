@@ -43,32 +43,24 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias errorRectangle: errorRectangle
             property alias calendar: calendar
             property alias okButton: okButton
             property alias questionItem: questionItem
             property alias score: score
             property alias answerChoices: answerChoices
-            property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
             property bool horizontalLayout: background.width >= background.height * 1.5
             property alias daysOfTheWeekModel: daysOfTheWeekModel
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
         Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
-
-        // Question time delay
-        Timer {
-            id: questionDelay
-            repeat: false
-            interval: 1600
-            onTriggered: {
-                Activity.initQuestion()
-            }
-        }
 
         Rectangle {
             id: calendarBox
@@ -258,6 +250,9 @@ ActivityBase {
         }
 
         function handleKeys(event) {
+            if(items.buttonsBlocked) {
+                return;
+            }
             if(event.key === Qt.Key_Space && okButton.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
@@ -340,6 +335,9 @@ ActivityBase {
             }
             Keys.enabled: answerChoices.visible
             function handleKeys(event) {
+                if(items.buttonsBlocked) {
+                    return;
+                }
                 if(event.key === Qt.Key_Down) {
                     keyNavigation = true
                     answerChoices.moveCurrentIndexDown()
@@ -348,17 +346,17 @@ ActivityBase {
                     keyNavigation = true
                     answerChoices.moveCurrentIndexUp()
                 }
-                if(event.key === Qt.Key_Enter && !questionDelay.running) {
+                if(event.key === Qt.Key_Enter) {
                     keyNavigation = true
                     Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
-                if(event.key === Qt.Key_Space && !questionDelay.running) {
+                if(event.key === Qt.Key_Space) {
                     keyNavigation = true
                     Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
-                if(event.key === Qt.Key_Return && !questionDelay.running) {
+                if(event.key === Qt.Key_Return) {
                     keyNavigation = true
                     Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
@@ -415,6 +413,40 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            imageSize: okButton.width
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+            states: [
+                State {
+                    when: answerChoices.visible
+                    PropertyChanges {
+                        target: errorRectangle
+                        x: answerChoices.x + answerChoices.currentItem.x
+                        y: answerChoices.y + answerChoices.currentItem.y
+                        width: answerChoices.currentItem.width
+                        height: answerChoices.currentItem.height
+                        radius: answerChoices.currentItem.radius
+                        scale: answerChoices.currentItem.scale
+                    }
+                },
+                State {
+                    when: !answerChoices.visible
+                    PropertyChanges {
+                        target: errorRectangle
+                        x: calendarBox.x
+                        y: calendarBox.y
+                        width: calendarBox.width
+                        height: calendarBox.height
+                        radius: calendarBox.radius
+                        scale: calendarBox.scale
+                    }
+                }
+            ]
+        }
+
         // Answer Submission button.
         BarButton {
             id: okButton
@@ -423,7 +455,7 @@ ActivityBase {
             width: okButton.height
             sourceSize.width: okButton.width
             sourceSize.height: okButton.height
-            enabled: !bonus.isPlaying && !questionDelay.running
+            enabled: !items.buttonsBlocked
             z: 10
             anchors.top: calendarBox.bottom
             anchors.right: calendarBox.right
@@ -468,6 +500,7 @@ ActivityBase {
             anchors.left:  undefined
             anchors.right: answerChoices.visible ? calendarBox.right : okButton.left
             anchors.margins: items.horizontalLayout ? 30 : 8
+            onStop: { Activity.nextSubLevel(); }
         }
     }
 }

@@ -15,7 +15,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var numberOfLevel
-var currentSubLevel = 1
 var currentDataSet
 var currentLevelConfig
 var dataset
@@ -41,18 +40,29 @@ function stop() {
 }
 
 function initLevel() {
-    currentSubLevel = 1;
-    currentLevelConfig = dataset[items.currentLevel][0][0]
-    setCalendarConfigurations()
+    items.errorRectangle.resetState();
+    items.score.currentSubLevel = 0;
+    currentLevelConfig = dataset[items.currentLevel][0][0];
+    setCalendarConfigurations();
     initQuestion();
 }
 
+function nextSubLevel() {
+    if(items.score.currentSubLevel >= currentDataSet.length) {
+        items.bonus.good("lion");
+    } else {
+        initQuestion();
+    }
+}
+
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
@@ -72,32 +82,29 @@ function setCalendarConfigurations() {
     currentDataSet = dataset[items.currentLevel][1]
     currentDataSet = Core.shuffle(currentDataSet)
     items.score.numberOfSubLevels = currentDataSet.length
-    items.score.currentSubLevel = currentSubLevel
 }
 
 function initQuestion() {
-    if(currentDataSet.length < currentSubLevel) {
-        items.bonus.good("lion")
-    }
-    else {
-        items.score.currentSubLevel = currentSubLevel
-        items.questionItem.text = currentDataSet[currentSubLevel-1]["question"]
-        correctAnswer = currentDataSet[currentSubLevel-1]["answer"]
-    }
+    items.questionItem.text = currentDataSet[items.score.currentSubLevel]["question"]
+    correctAnswer = currentDataSet[items.score.currentSubLevel]["answer"]
+    items.buttonsBlocked = false
 }
 
 function updateScore(isCorrectAnswer) {
     if(isCorrectAnswer) {
-        items.questionDelay.start()
         items.okButtonParticles.burst(20)
-        items.score.playWinAnimation()
-        currentSubLevel++;
+        items.score.currentSubLevel++;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
-    else
-        items.bonus.bad("lion", items.bonus.checkAnswer)
+    else {
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+    }
 }
 
 function checkAnswer() {
+    items.buttonsBlocked = true
     var isCorrectAnswer = false
     // For levels having questions based on day of week only.
     if(mode === "findDayOfWeek") {

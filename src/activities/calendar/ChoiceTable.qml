@@ -27,12 +27,14 @@ Rectangle {
 
     function select() {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
-            particles.burst(40)
-            animWin.start()
-            Activity.checkAnswer()
+            particles.burst(40);
+            animWin.start();
+            Activity.checkAnswer();
         }
         else {
-            crossAnim.start()
+            items.buttonsBlocked = true;
+            items.errorRectangle.startAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
         }
     }
 
@@ -51,27 +53,24 @@ Rectangle {
 
     SequentialAnimation {
         id: crossAnim
-        ParallelAnimation {
-            PropertyAnimation {
-                target: cross
-                property: "height"
-                duration: 300
-                from: 0
-                to: choiceBox.height
-                easing.type: Easing.InOutQuad
-            }
+        PropertyAnimation {
+            target: cross
+            property: "height"
+            duration: 300
+            from: 0
+            to: choiceBox.height
+            easing.type: Easing.InOutQuad
         }
         PauseAnimation { duration: 800 }
-        ParallelAnimation {
-            PropertyAnimation {
-                target: cross
-                property: "height"
-                duration: 300
-                from: choiceBox.height
-                to: 0
-                easing.type: Easing.InOutQuad
-            }
+        PropertyAnimation {
+            target: cross
+            property: "height"
+            duration: 300
+            from: choiceBox.height
+            to: 0
+            easing.type: Easing.InOutQuad
         }
+        ScriptAction { script: items.buttonsBlocked = false; }
     }
 
     ParticleSystemStarLoader {
@@ -95,14 +94,12 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            if(!questionDelay.running) {
                 Activity.dayOfWeekSelected = dayIndex
                 select()
                 choiceBox.scale = 1
-            }
         }
         hoverEnabled: true
-        enabled: !crossAnim.running && !animWin.running
+        enabled: !items.buttonsBlocked
         onEntered: choiceBox.scale = 1.1
         onExited: choiceBox.scale = 1
     }
