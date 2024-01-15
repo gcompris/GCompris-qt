@@ -114,7 +114,7 @@ function checkAnswer() {
     }
     // For levels having question based on month only.
     else if(mode === "findMonthOnly") {
-        if(correctAnswer["month"].indexOf(monthSelected) >= 0) {
+        if(correctAnswer["month"].indexOf(items.calendar.currentDate.getMonth()) != -1) {
             isCorrectAnswer = true
         }
     }
