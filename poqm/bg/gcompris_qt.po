@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2023, 2024 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-12-15 20:59+0100\n"
+"PO-Revision-Date: 2024-01-14 23:49+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -9578,25 +9578,19 @@ msgstr "Намери числителя и знаменателя (с квадр
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Фриз"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Направи зададената кула."
+msgstr "Възпроизведи и завърши модела на фриза."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Учене на събиране."
+msgstr "Учене на алгоритми."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9605,51 +9599,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Възпроизведи фриза отгоре. На някои нива може да се наложи да завършиш фриза "
+"или да го възпроизведеш само по памет."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Стрелки наляво и надясно: избиране на бутон със символ"
+msgstr "Стрелки наляво и надясно: избиране на жетон"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Интервал: избиране на предмет"
+msgstr "Интервал: добавяне на жетон към фриза"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: cancel last operation"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Backspace или Delete: отмяна на последната операция"
+msgstr "Backspace или Delete: премахване на последния жетон от фриза"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: потвърждаване на отговора"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Интервал: превключване между невидим и видим режим"
+msgstr "Таб: превключване между редактиране на фриза и разглеждане на модела"
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Готов(а) съм"
@@ -9657,7 +9635,7 @@ msgstr "Готов(а) съм"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Копирай този фриз: 2 фигури с различни цветове/знаци."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9665,7 +9643,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Копирай този фриз."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9673,6 +9651,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Запомни и копирай този фриз: всяка комбинация от форми, цветове/знаци и "
+"размери."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9680,7 +9660,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Запомни и копирай този фриз."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9688,11 +9668,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Копирай и попълни този фриз: модели между 4 и 7, всяка комбинация от форми, "
+"цветове/знаци и размери."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Копирай и завърши този фриз"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9700,6 +9682,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Запомни и копирай този фриз: модели между 4 и 7, всяка комбинация от форми, "
+"цветове/знаци и размери."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9707,6 +9691,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Копирай и попълни този фриз: модели между 6 и 8, всяка комбинация от форми, "
+"цветове/знаци и размери."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9715,7 +9701,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Копирай и завърши този фриз."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9723,21 +9709,23 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Запомни и копирай този фриз: модели между 6 и 8, всяка комбинация от форми, "
+"цветове/знаци и размери."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Копирай и завърши този фриз: 2 фигури с различни цветове/знаци."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Запомни и копирай този фриз: 2 фигури с различни цветове/знаци."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Копирай този фриз: 3 или 4 фигури с различни цветове/знаци."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9745,6 +9733,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Копирай този фриз: 3 или 4 фигури с 2 размера и потенциално еднакви цветове/"
+"знаци."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9752,11 +9742,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Копирай и завърши този фриз: 3 или 4 фигури с 2 размера и потенциално "
+"еднакви цветове/знаци."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Запомни и копирай този фриз: произволна комбинация от форми, цветове/знаци и "
+"размери."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9765,6 +9759,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Копирай и попълни този фриз: произволни комбинации от форми, цветове/знаци и "
+"размери."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
