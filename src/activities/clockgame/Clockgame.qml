@@ -43,8 +43,11 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
+            property alias errorRectangle: errorRectangle
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias score: score
             property int targetH: 12
             property int targetM: 0
             property int targetS: 0
@@ -62,6 +65,7 @@ ActivityBase {
             property bool minutesVisible
             property bool noHint
             property bool useTwelveHourFormat: true
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -81,8 +85,7 @@ ActivityBase {
                 right: undefined
                 top: undefined
             }
-            numberOfSubLevels: items.numberOfTry
-            currentSubLevel: items.currentTry + 1
+            onStop: { Activity.nextSubLevel() }
         }
 
         /* Target text */
@@ -384,6 +387,7 @@ ActivityBase {
             /* Manage the move */
             MouseArea {
                 anchors.fill: parent
+                enabled: !items.buttonsBlocked
                 acceptedButtons: Qt.LeftButton
                 onPressed: {
                     /* Find the closer Arrow */
@@ -448,6 +452,18 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.centerIn: clock
+            width: zones.width
+            height: zones.height
+            radius: width * 0.5
+            imageSize: okButton.width
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+        }
+
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -456,7 +472,7 @@ ActivityBase {
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
@@ -527,7 +543,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextTry)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }

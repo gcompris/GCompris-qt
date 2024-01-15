@@ -23,7 +23,6 @@ function start(items_) {
     items = items_;
     numberOfLevel = items.levels.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
-    items.currentTry = 0;
     pastQuestionsH = [];
     pastQuestionsM = [];
     pastQuestionsS = [];
@@ -33,9 +32,13 @@ function start(items_) {
 function stop() {}
 
 function initLevel() {
+    items.errorRectangle.resetState();
+    items.score.numberOfSubLevels = items.levels[items.currentLevel].numberOfSubLevels;
+    items.score.currentSubLevel = 0;
+    initQuestion();
+}
 
-    items.numberOfTry = items.levels[items.currentLevel].numberOfSubLevels;
-
+function initQuestion() {
     differentTargetH();
     differentCurrentH();
 
@@ -101,6 +104,7 @@ function initLevel() {
     else {
         items.noHint = false;
     }
+    items.buttonsBlocked = false;
 }
 
 function differentTargetH() {
@@ -154,29 +158,32 @@ function differentCurrentS() {
     }
 }
 
-function nextTry() {
-    if (items.numberOfTry <= ++items.currentTry) {
-        items.currentTry = 0;
-        nextLevel();
+function nextSubLevel() {
+    if (items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("gnu");
     } else {
-        initLevel();
+        initQuestion();
     }
 }
 
 function checkAnswer() {
+    items.buttonsBlocked = true;
     if (items.currentH === targetHour
                     && items.currentM === items.targetM
                     && items.currentS === items.targetS) {
-        items.bonus.good("gnu");
+        items.score.currentSubLevel++;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
     else {
-        items.bonus.bad("gnu");
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    items.currentTry = 0;
     pastQuestionsH = [];
     pastQuestionsM = [];
     pastQuestionsS = [];
@@ -184,8 +191,8 @@ function nextLevel() {
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    items.currentTry = 0;
     pastQuestionsH = [];
     pastQuestionsM = [];
     pastQuestionsS = [];
