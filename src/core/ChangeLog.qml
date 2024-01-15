@@ -27,6 +27,8 @@ QtObject {
      */
     property var changelog: [
             { "versionCode": 40000, "content": [
+                qsTr("New command-line option (--start-level level) to start GCompris at specific level (needs to be used with --launch activity option)"),
+                qsTr("Translations added for Bulgarian, Galician and Swahili"),
                 qsTr("Many usability improvements"),
                 qsTr("Many new images"),
                 qsTr("Many bug fixes")
