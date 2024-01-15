@@ -6,6 +6,8 @@
  */
 import QtQuick 2.12
 
+import "fractions_create.js" as Activity
+
 Flow {
     id: gridContainer
     // color needs to be in hex format with lowercase for comparison checks to work
@@ -59,15 +61,10 @@ Flow {
             goodAnswer = Number(items.denominatorValue) != 0 && (Number(items.numeratorValue) * items.denominatorToFind == items.numeratorToFind * Number(items.denominatorValue));
         }
         if(goodAnswer) {
-            if (items.currentSubLevel === items.numberOfSubLevels) {
-                bonus.good("sun");
-            }
-            else {
-                bonus.good("star");
-            }
+            Activity.goodAnswer();
         }
         else {
-            bonus.bad("star");
+            Activity.badAnswer();
         }
     }
 }

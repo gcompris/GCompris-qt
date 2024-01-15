@@ -38,10 +38,12 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
+            property alias errorRectangle: errorRectangle
             property alias numberOfSubLevels: score.numberOfSubLevels
-            property alias currentSubLevel: score.currentSubLevel
+            property alias score: score
             property alias instructionText: instructionTxt.text
             property alias chartItem: chartDisplay
             property alias numeratorValue: numeratorText.value
@@ -54,6 +56,7 @@ ActivityBase {
             property string chartType: "pie"
             property bool fixedNumerator: true
             property bool fixedDenominator: true
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -61,7 +64,7 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
 
         Keys.onPressed: {
             if([Qt.Key_Enter, Qt.Key_Return].indexOf(event.key) != -1 && items.itemIndex !== -1) {
@@ -186,9 +189,19 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: activity.mode === "findFraction" ? fractionTextDisplay : chartDisplay
+            radius: activity.mode === "findFraction" ? 10 * ApplicationInfo.ratio : (items.chartType === "pie" ? Math.min(width, height) : 0)
+            imageSize: okButton.width
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+        }
+
         BarButton {
             id: okButton
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
             anchors {
                 bottom: score.top
                 bottomMargin: 10 * ApplicationInfo.ratio
@@ -208,6 +221,9 @@ ActivityBase {
                 top: undefined
                 bottom: rightLayoutArea.bottom
                 horizontalCenter: rightLayoutArea.horizontalCenter
+            }
+            onStop: {
+                Activity.nextSubLevel();
             }
         }
 
@@ -270,7 +286,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 

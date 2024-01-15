@@ -24,7 +24,7 @@ ChartView {
         }
 
         onClicked: {
-            if(bonus.isPlaying || activity.mode === "findFraction") {
+            if(items.buttonsBlocked || activity.mode === "findFraction") {
                 return;
             }
             if(slice.color == gridContainer.selectedColor) {

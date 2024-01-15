@@ -27,7 +27,8 @@ function stop() {
 }
 
 function initLevel() {
-    items.currentSubLevel = 1;
+    items.score.currentSubLevel = 0;
+    items.errorRectangle.resetState();
 
     items.numberOfSubLevels = levels[items.currentLevel].length;
 
@@ -37,7 +38,7 @@ function initLevel() {
 }
 
 function initSubLevel() {
-    var currentSubLevel = levels[items.currentLevel][items.currentSubLevel-1];
+    var currentSubLevel = levels[items.currentLevel][items.score.currentSubLevel];
     items.chartType = currentSubLevel.chartType;
 
     items.fixedNumerator = currentSubLevel.fixedNumerator ? currentSubLevel.fixedNumerator : false;
@@ -81,17 +82,18 @@ function initSubLevel() {
     }
 
     items.chartItem.initLevel();
+    items.buttonsBlocked = false;
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function nextSubLevel() {
-    items.currentSubLevel ++;
-    if (items.currentSubLevel === items.numberOfSubLevels+1) {
-        nextLevel();
+    if (items.score.currentSubLevel >= items.numberOfSubLevels) {
+        items.bonus.good("star");
     }
     else {
         initSubLevel();
@@ -100,6 +102,20 @@ function nextSubLevel() {
 
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
+}
+
+function goodAnswer() {
+    items.buttonsBlocked = true;
+    items.score.currentSubLevel++;
+    items.score.playWinAnimation();
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
+}
+
+function badAnswer() {
+    items.buttonsBlocked = true;
+    items.errorRectangle.startAnimation();
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
 }

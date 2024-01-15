@@ -23,7 +23,7 @@ Item {
         height: 25 * ApplicationInfo.ratio
         width: height
         sourceSize.height: height
-        enabled: fractionNumber.interactive && !items.bonus.isPlaying
+        enabled: fractionNumber.interactive && !items.buttonsBlocked
         opacity: fractionNumber.interactive ? 1 : 0
         fillMode: Image.PreserveAspectFit
         anchors.left: parent.left
@@ -57,7 +57,7 @@ Item {
         height: shiftKeyboardLeft.height
         width: height
         sourceSize.height: height
-        enabled: fractionNumber.interactive && !items.bonus.isPlaying
+        enabled: fractionNumber.interactive && !items.buttonsBlocked
         opacity: fractionNumber.interactive ? 1 : 0
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
