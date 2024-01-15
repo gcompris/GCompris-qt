@@ -29,48 +29,8 @@ Rectangle {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
             particles.burst(40);
             animWin.start();
-            Activity.checkAnswer();
         }
-        else {
-            items.buttonsBlocked = true;
-            items.errorRectangle.startAnimation();
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
-        }
-    }
-
-    Image {
-        id: cross
-        z: 10
-        source: "qrc:/gcompris/src/core/resource/cancel.svg"
-        sourceSize.width: choiceBox.height
-        sourceSize.height: choiceBox.height
-        anchors.centerIn: parent
-        height: 0
-        width: cross.height
-        opacity: 1
-        property int size: parent.height
-    }
-
-    SequentialAnimation {
-        id: crossAnim
-        PropertyAnimation {
-            target: cross
-            property: "height"
-            duration: 300
-            from: 0
-            to: choiceBox.height
-            easing.type: Easing.InOutQuad
-        }
-        PauseAnimation { duration: 800 }
-        PropertyAnimation {
-            target: cross
-            property: "height"
-            duration: 300
-            from: choiceBox.height
-            to: 0
-            easing.type: Easing.InOutQuad
-        }
-        ScriptAction { script: items.buttonsBlocked = false; }
+        Activity.checkAnswer();
     }
 
     ParticleSystemStarLoader {

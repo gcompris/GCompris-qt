@@ -98,7 +98,8 @@ ActivityBase {
                 rotation: 90
                 visible: calendar.navigationBarVisible && (calendar.currentDate.getFullYear() > calendar.minimumDate.getFullYear() || (calendar.currentDate.getFullYear() == calendar.minimumDate.getFullYear() && calendar.currentDate.getMonth() > calendar.minimumDate.getMonth()))
                 onClicked: {
-                    calendar.showPreviousMonth();
+                    if(!items.buttonsBlocked)
+                        calendar.showPreviousMonth();
                 }
             }
             GCText {
@@ -127,7 +128,8 @@ ActivityBase {
                 rotation: 270
                 visible: calendar.navigationBarVisible && (calendar.currentDate.getFullYear() < calendar.maximumDate.getFullYear() || (calendar.currentDate.getFullYear() == calendar.maximumDate.getFullYear() && calendar.currentDate.getMonth() < calendar.maximumDate.getMonth()));
                 onClicked: {
-                    calendar.showNextMonth();
+                    if(!items.buttonsBlocked)
+                        calendar.showNextMonth();
                 }
             }
         }
