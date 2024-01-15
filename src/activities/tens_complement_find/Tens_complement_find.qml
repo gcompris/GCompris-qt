@@ -130,7 +130,8 @@ ActivityBase {
                 anchors.centerIn: parent
                 model: holderListModel
                 delegate: AnswerContainer {
-                    height: Math.min(items.cardSize, answerHolderArea.height / holderListModel.count)
+                    readonly property int minHeight: holderListModel.count == 0 ? items.cardSize : answerHolderArea.height / holderListModel.count
+                    height: Math.min(items.cardSize, minHeight)
                     width: Math.min(height * 6, ListView.view.width)
                 }
             }
