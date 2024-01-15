@@ -72,7 +72,7 @@ function checkAnswer() {
             || (items.question.userEntry == items.question.answer)) {
         items.score.currentSubLevel++;
         items.score.playWinAnimation();
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
     else {
         items.errorRectangle.startAnimation();
