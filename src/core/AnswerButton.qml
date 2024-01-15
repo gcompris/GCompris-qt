@@ -120,7 +120,7 @@ Item {
     onPressed: {
         if (isCorrectAnswer) {
             if(audioEffects)
-                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
             correctAnswerAnimation.start();
         } else {
             if(audioEffects)
