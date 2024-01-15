@@ -14,7 +14,6 @@
 .import GCompris 1.0 as GCompris
 
 var numberLevelsWords = 2
-var currentSubLevel = 0;
 var numberOfLevel
 var words3Letters = []
 var words4Letters = []
@@ -26,14 +25,12 @@ var names = []
 var names2 = []
 var good = []
 var levels
-var maxSubLevel
 
 function start(items_) {
     items = items_
     levels = items.levels
     numberOfLevel = levels.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
-    currentSubLevel = 0
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
 
     /*: Translators: NOTE: Word list for crane activity.
@@ -67,25 +64,21 @@ function stop() {
 }
 
 function initLevel() {
-    maxSubLevel = levels[items.currentLevel].length
-    currentSubLevel = 0;
-    items.score.numberOfSubLevels = maxSubLevel
+    items.score.numberOfSubLevels = levels[items.currentLevel].length
+    items.score.currentSubLevel = 0
     initSubLevel()
 }
 
 function initSubLevel() {
-    items.score.currentSubLevel = currentSubLevel + 1;
     // reset the arrays
     names = []
     names2 = []
 
     // set models for repeaters
-    if (!levels[items.currentLevel][currentSubLevel].isWord)
+    if (!levels[items.currentLevel][items.score.currentSubLevel].isWord)
         setModelImage()
     else
         setModelWord()
-
-    items.gameFinished = false
 
     // set "initialIndex" to the position in the repeater
     for(var i = 0; i < names.length; i++) {
@@ -107,11 +100,12 @@ function initSubLevel() {
             break
         }
     }
+    items.buttonsBlocked = false;
 }
 
 function getInternalWord() {
     // function to get a word from translated lists
-    var currentWordLength = levels[items.currentLevel][currentSubLevel].wordLength
+    var currentWordLength = levels[items.currentLevel][items.score.currentSubLevel].wordLength
     var wordsUsed
     if (currentWordLength === 3) {
         wordsUsed = words3Letters
@@ -134,16 +128,16 @@ function setModelWord() {
     var numbers = []
     var i
     var wordsUsed
-    var word = levels[items.currentLevel][currentSubLevel].word
+    var word = levels[items.currentLevel][items.score.currentSubLevel].word
 
     // show or hide the grid
-    items.showGrid1.opacity = levels[items.currentLevel][currentSubLevel].showGrid
+    items.showGrid1.opacity = levels[items.currentLevel][items.score.currentSubLevel].showGrid
     // set the two boards in line or not
-    items.background.inLine = levels[items.currentLevel][currentSubLevel].inLine
+    items.background.inLine = levels[items.currentLevel][items.score.currentSubLevel].inLine
 
     // set the number of columns and rows, be sure we have enough space to display the word
-    items.columns = levels[items.currentLevel][currentSubLevel].columns
-    items.rows = levels[items.currentLevel][currentSubLevel].rows;
+    items.columns = levels[items.currentLevel][items.score.currentSubLevel].columns
+    items.rows = levels[items.currentLevel][items.score.currentSubLevel].rows;
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -189,11 +183,11 @@ function setModelWord() {
 function setModelImage() {
     var numbers = []
     var i
-    var imageList = levels[items.currentLevel][currentSubLevel].images;
+    var imageList = levels[items.currentLevel][items.score.currentSubLevel].images;
 
     // set the number of columns and rows from "levels"
-    items.columns = levels[items.currentLevel][currentSubLevel].columns
-    items.rows = levels[items.currentLevel][currentSubLevel].rows
+    items.columns = levels[items.currentLevel][items.score.currentSubLevel].columns
+    items.rows = levels[items.currentLevel][items.score.currentSubLevel].rows
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -227,10 +221,10 @@ function setModelImage() {
     }
 
     // show or hide the grid
-    items.showGrid1.opacity = levels[items.currentLevel][currentSubLevel].showGrid
+    items.showGrid1.opacity = levels[items.currentLevel][items.score.currentSubLevel].showGrid
 
     // set the two boards in line or not
-    items.background.inLine = levels[items.currentLevel][currentSubLevel].inLine
+    items.background.inLine = levels[items.currentLevel][items.score.currentSubLevel].inLine
 }
 
 // returns the next index needed for switching to another item
@@ -283,7 +277,7 @@ function gesture(deltax, deltay) {
 
 //depending on the command, make a move to left/right/up/down or select next item
 function move(command) {
-    if (items.ok && !items.gameFinished && !items.pieceIsMoving) {
+    if (items.ok && !items.pieceIsMoving) {
         var item = items.answerRepeater.itemAt(items.selected)
         if (command === "left") {
             if (items.selected % items.columns != 0)
@@ -327,30 +321,31 @@ function checkAnswer() {
     for (var i = 0; i < items.answerRepeater.count && hasWon; i++) {
         if (items.answerRepeater.itemAt(i).source != items.modelRepeater.itemAt(i).source) {
             hasWon = false
+            return;
         }
     }
-
-    if (hasWon) {
-        items.bonus.good("flower")
-        items.gameFinished = true
-    }
+    items.buttonsBlocked = true;
+    items.score.currentSubLevel++;
+    items.score.playWinAnimation();
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function nextSubLevel() {
-    if(++currentSubLevel >= maxSubLevel) {
-        nextLevel()
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower")
     } else {
-        items.score.playWinAnimation();
         initSubLevel();
     }
 }

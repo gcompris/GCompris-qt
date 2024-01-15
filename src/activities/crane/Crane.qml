@@ -50,6 +50,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias board: board
@@ -64,11 +65,11 @@ ActivityBase {
             property int rows
             property bool ok: true
             property int sensivity: 80
-            property bool gameFinished: false
             property bool pieceIsMoving: false
             readonly property var levels: activity.datasetLoader.data
             property double gridBaseWidth: items.board.width / items.columns
             property double gridBaseHeight: items.board.height / items.rows
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -78,7 +79,10 @@ ActivityBase {
         property bool inLine: true
 
         Keys.onPressed: {
-            if (event.key === Qt.Key_Left){
+            if (items.buttonsBlocked){
+                return
+            }
+            else if (event.key === Qt.Key_Left){
                 Activity.move("left")
                 left.opacity = 0.6
             }
@@ -122,6 +126,7 @@ ActivityBase {
             anchors.fill: layoutArea
             property int startX;
             property int startY;
+            enabled: !items.buttonsBlocked
 
             onPressed: {
                 startX = mouse.x;
@@ -227,6 +232,7 @@ ActivityBase {
 
                     MouseArea {
                         anchors.fill: parent
+                        enabled: !items.buttonsBlocked
 
                         // Swipe effect
                         property int startX;
@@ -553,7 +559,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
@@ -561,6 +567,7 @@ ActivityBase {
             visible: true
             anchors.right: modelBoardBg.right
             anchors.margins: 5 * ApplicationInfo.ratio
+            onStop: { Activity.nextSubLevel() }
         }
     }
 
