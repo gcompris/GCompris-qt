@@ -58,13 +58,11 @@ var levels = [
 ]
 
 
-var currentImageId;
 var items
 
 function start(items_) {
     items = items_
     items.currentLevel = Core.getInitialLevel(levels.length)
-    items.score.currentSubLevel = 0
     initLevel()
 }
 
@@ -73,7 +71,7 @@ function stop() {
 }
 
 function initLevel() {
-    currentImageId = 0
+    items.score.currentSubLevel = 0
     currentHands = new Array()
     var level = levels[items.currentLevel]
     var counter = 0
@@ -92,14 +90,14 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getNextLevel(items.currentLevel, levels.length);
-    items.score.currentSubLevel = 0
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, levels.length);
-    items.score.currentSubLevel = 0
     initLevel();
 }
 
@@ -107,21 +105,20 @@ function displayHand() {
     items.leftButton.isCorrectAnswer = isLeft()
     items.rightButton.isCorrectAnswer = isRight()
     items.imageAnimOff.start()
+    items.buttonsBlocked = false
 }
 
 function getCurrentHandImage() {
     return "qrc:/gcompris/src/activities/leftright/resource/" +
-            currentHands[currentImageId].image
+            currentHands[items.score.currentSubLevel].image
 }
 
 function getCurrentHandRotation() {
-    return currentHands[currentImageId].rotation
+    return currentHands[items.score.currentSubLevel].rotation
 }
 
 function displayNextHand() {
-    items.score.currentSubLevel ++
-    items.score.playWinAnimation();
-    if(currentHands.length <= ++currentImageId ) {
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
         items.bonus.good("flower")
         return
     }
@@ -129,23 +126,18 @@ function displayNextHand() {
 }
 
 function isLeft() {
-    return (currentHands[currentImageId].image.indexOf("gauche") !== -1) ? true : false
+    return (currentHands[items.score.currentSubLevel].image.indexOf("gauche") !== -1) ? true : false
 }
 
-function leftClick() {
-    if(isLeft()) {
-        displayNextHand()
-    }
-}
 
 function isRight() {
-    return (currentHands[currentImageId].image.indexOf("droit") !== -1) ? true : false
+    return (currentHands[items.score.currentSubLevel].image.indexOf("droit") !== -1) ? true : false
 }
 
-function rightClick() {
-    if(isRight()) {
-        displayNextHand()
-    }
+
+function goodAnswerPressed() {
+    items.score.currentSubLevel++;
+    items.score.playWinAnimation();
 }
 
 function leftClickPressed() {

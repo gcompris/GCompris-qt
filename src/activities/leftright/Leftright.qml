@@ -143,8 +143,11 @@ ActivityBase {
                 anchors.topMargin: blackBoard.paintedHeight * 0.5 + 10
                 textLabel: qsTr("Left hand")
                 audioEffects: activity.audioEffects
-                onPressed: items.buttonsBlocked = true
-                onCorrectlyPressed: Activity.leftClick()
+                onPressed: {
+                    items.buttonsBlocked = true
+                    if(isCorrectAnswer)
+                        Activity.goodAnswerPressed()
+                }
                 blockAllButtonClicks: items.buttonsBlocked
                 onIncorrectlyPressed: items.buttonsBlocked = false
             }
@@ -159,8 +162,11 @@ ActivityBase {
                 anchors.topMargin: leftButton.anchors.topMargin
                 audioEffects: activity.audioEffects
                 textLabel: qsTr("Right hand")
-                onPressed: items.buttonsBlocked = true
-                onCorrectlyPressed: Activity.rightClick()
+                onPressed: {
+                    items.buttonsBlocked = true
+                    if(isCorrectAnswer)
+                        Activity.goodAnswerPressed()
+                }
                 blockAllButtonClicks: items.buttonsBlocked
                 onIncorrectlyPressed: items.buttonsBlocked = false
             }
@@ -185,10 +191,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            onStart: items.buttonsBlocked = true
             onStop: {
                 Activity.nextLevel();
-                items.buttonsBlocked = false;
             }
         }
 
@@ -197,6 +201,7 @@ ActivityBase {
             anchors.top: background.top
             anchors.topMargin: parent.height * 0.01
             anchors.bottom: undefined
+            onStop: Activity.displayNextHand()
         }
     }
 }
