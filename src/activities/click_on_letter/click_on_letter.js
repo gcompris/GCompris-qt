@@ -21,9 +21,7 @@ var maxLettersPerLine = 6;
 
 var levels;
 var numberOfLevel;
-var currentSubLevel;
 var currentLetter;
-var maxSubLevel;
 var level;
 var questions;
 var answers;
@@ -42,7 +40,7 @@ function start(_items, _mode)
     GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
 
     loadLevels();
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     numberOfLevel = levels.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
@@ -112,11 +110,10 @@ function shuffleString(s)
 }
 
 function initLevel() {
-    if (currentSubLevel == 0) {
+    items.errorRectangle.resetState();
+    if (items.score.currentSubLevel == 0) {
         level = levels[items.currentLevel];
-        maxSubLevel = level.questions.split("|").length;
-        items.score.numberOfSubLevels = maxSubLevel;
-        items.score.currentSubLevel = 1;
+        items.score.numberOfSubLevels = level.questions.split("|").length;
         questions = shuffleString(level.questions);
         answers = shuffleString(level.answers);
 
@@ -127,12 +124,10 @@ function initLevel() {
                 "letter": answerArr[i],
             });
         }
-    } else {
-        items.score.currentSubLevel = currentSubLevel + 1;
     }
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
-    currentLetter = questions.split("|")[currentSubLevel];
+    currentLetter = questions.split("|")[items.score.currentSubLevel];
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
@@ -148,6 +143,8 @@ function initLevel() {
     }
     // Maybe we will display it if sound fails
     items.questionItem.text = currentLetter;
+
+    items.buttonsBlocked = false;
 }
 
 function playLetter(letter) {
@@ -157,27 +154,25 @@ function playLetter(letter) {
 }
 
 function nextLevel() {
-    items.audioVoices.clearQueue()
+    items.score.stopWinAnimation();
+    items.audioVoices.clearQueue();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
-    items.audioVoices.clearQueue()
+    items.score.stopWinAnimation();
+    items.audioVoices.clearQueue();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
     items.audioVoices.clearQueue()
-    if(++currentSubLevel >= maxSubLevel) {
-        if(items.audioVoices.playbackState == 1) {
-            items.goToNextLevel = true
-        } else {
-            items.bonus.good("flower")
-        }
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower")
     } else {
         initLevel();
     }
@@ -186,12 +181,9 @@ function nextSubLevel() {
 function checkAnswer(index) {
     var modelEntry = items.trainModel.get(index);
     if (modelEntry.letter === currentLetter) {
-        playLetter(modelEntry.letter);
-        if(items.audioVoices.playbackState == 1) {
-            items.goToNextSubLevel = true
-        } else {
-            nextSubLevel();
-        }
+        items.score.currentSubLevel++;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         return true
     } else {
         return false

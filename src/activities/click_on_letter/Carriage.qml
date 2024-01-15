@@ -23,12 +23,13 @@ Item {
     property bool clickEnabled
     property bool isSelected
     property alias successAnimation: successAnimation
-    property alias failureAnimation: failureAnimation
     property alias particle: particle
 
     Image {
         id: carriageImage
-        sourceSize.width: carriageItem.width
+        width: parent.width
+        height: parent.height
+        sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         source: isCarriage ?
                     Activity.url + "carriage.svg":
@@ -51,7 +52,7 @@ Item {
         Rectangle {
             id: selector
             z: 9
-            visible: isSelected
+            visible: isSelected && items.keyNavigationMode
             anchors.fill: parent
             radius: 5
             color: "#800000ff"
@@ -91,17 +92,6 @@ Item {
             source: text
         }
 
-        Image {
-            id: softFailure
-            z: 12
-            source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/cross.svg"
-            width: parent.width
-            height: width
-            anchors.centerIn: text
-            opacity: 0
-            visible: ApplicationInfo.useOpenGL ? false : true
-        }
-
         MouseArea {
             id: mouseArea
             anchors.fill: parent
@@ -109,11 +99,14 @@ Item {
 
             onClicked: {
                 if(carriageItem.clickEnabled) {
+                    items.lastSelectedIndex = train.currentIndex
+                    items.keyNavigationMode = false;
+                    items.buttonsBlocked = true;
                     if (Activity.checkAnswer(index)) {
                         successAnimation.restart();
-                        particle.burst(30)
+                        particle.burst(30);
                     } else {
-                        failureAnimation.restart()
+                        background.moveErrorRectangle(carriageItem);
                     }
                 }
             }
@@ -158,29 +151,5 @@ Item {
                 to: 0; duration: 50
             }
         }
-
-        SequentialAnimation {
-            id: failureAnimation
-            NumberAnimation {
-                target: ApplicationInfo.useOpenGL ? color : softFailure
-                property: "opacity"
-                to: 1; duration: 400
-            }
-            NumberAnimation {
-                target: ApplicationInfo.useOpenGL ? color : softFailure
-                property: "opacity"
-                to: 0; duration: 200
-            }
-        }
-    }
-
-    Colorize {
-        id: color
-        z: 5
-        anchors.fill: carriageImage
-        source: carriageImage
-        hue: 0.0
-        saturation: 1
-        opacity: 0
     }
 }

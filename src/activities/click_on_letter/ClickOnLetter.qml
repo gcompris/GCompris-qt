@@ -62,27 +62,18 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias trainModel: trainModel
             property GCAudio audioVoices: activity.audioVoices
+            property GCSfx audioEffects: activity.audioEffects
             property alias parser: parser
             property alias questionItem: questionItem
             property alias repeatItem: repeatItem
             property alias score: score
             property alias bonus: bonus
             property alias locale: background.locale
-            property bool goToNextSubLevel: false
-            property bool goToNextLevel: false
             property bool keyNavigationMode: false
+            property int lastSelectedIndex: -1
             property alias eventHandler: eventHandler
-        }
-
-       onVoiceDone: {
-           if(items.goToNextSubLevel) {
-               items.goToNextSubLevel = false;
-               Activity.nextSubLevel();
-           }
-           if(items.goToNextLevel) {
-               items.goToNextLevel = false;
-               items.bonus.good("flower");
-           }
+            property alias errorRectangle: errorRectangle
+            property bool buttonsBlocked: false
         }
 
         onVoiceError: {
@@ -102,7 +93,7 @@ ActivityBase {
         Item {
             id: eventHandler
             focus: true
-            Keys.enabled: !bonus.isPlaying && !dialogActivityConfig.visible
+            Keys.enabled: !items.buttonsBlocked && !dialogActivityConfig.visible
             Keys.onPressed: {
                 if(event.key === Qt.Key_Tab) {
                     activity.audioVoices.clearQueue();
@@ -169,6 +160,7 @@ ActivityBase {
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: undefined
             anchors.right: undefined
+            onStop: Activity.nextSubLevel()
         }
 
         Bonus {
@@ -291,17 +283,39 @@ ActivityBase {
             model: trainModel
             delegate: Carriage {
                 width: train.cellWidth
+                height: train.cellHeight
                 nbCarriage: train.width / train.cellWidth - 1
-                clickEnabled: activity.audioVoices.playbackState == 1 ? false : true
+                clickEnabled: items.buttonsBlocked ? false : (activity.audioVoices.playbackState == 1 ? false : true)
                 isSelected: train.currentIndex === index
             }
+        }
+
+        ErrorRectangle {
+            id: errorRectangle
+            z: 20
+            anchors.centerIn: parent
+            width: 2
+            height: 2
+            imageSize: train.cellWidth * 0.75
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+        }
+
+        function moveErrorRectangle(clickedItem) {
+            errorRectangle.parent = clickedItem
+            errorRectangle.startAnimation()
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
         }
 
         function handleKeys(event) {
             if(!items.keyNavigationMode) {
                 activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
                 items.keyNavigationMode = true;
-                train.currentIndex = 0;
+                if(items.lastSelectedIndex > 0 && items.lastSelectedIndex < trainModel.count)
+                    train.currentIndex = items.lastSelectedIndex;
+                else
+                    train.currentIndex = 0;
             } else if(event.key === Qt.Key_Right) {
                 activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
                 train.moveCurrentIndexRight();
@@ -315,11 +329,12 @@ ActivityBase {
                 activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
                 train.moveCurrentIndexDown();
             } else if(event.key === Qt.Key_Space && activity.audioVoices.playbackState != 1) {
+                items.buttonsBlocked = true;
                 if(Activity.checkAnswer(train.currentIndex)) {
                     train.currentItem.successAnimation.restart();
                     train.currentItem.particle.burst(30);
                 } else {
-                    train.currentItem.failureAnimation.restart();
+                    moveErrorRectangle(train.currentItem);
                 }
             }
         }
