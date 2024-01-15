@@ -30,9 +30,10 @@ function stop() {
 }
 
 function initLevel() {
+    items.errorRectangle.resetState()
     currentTargets = Core.shuffle(items.levels[items.currentLevel].targets)
-    items.currentSubLevel = 1
-    items.numberOfSubLevels = currentTargets.length
+    items.score.currentSubLevel = 0
+    items.score.numberOfSubLevels = currentTargets.length
     items.rightDrop = items.levels[items.currentLevel].rightDrop
     items.question.text = items.levels[items.currentLevel].question != undefined ? items.levels[items.currentLevel].question : ""
     displayLevel()
@@ -54,39 +55,47 @@ function displayLevel()
                                        i,
                                        /* dragEnabled */ true)
 
-    items.giftWeight = currentTargets[items.currentSubLevel - 1][0]
+    items.giftWeight = currentTargets[items.score.currentSubLevel][0]
     items.masseAreaRight.addMasse("gift.svg",
-                                  currentTargets[items.currentSubLevel - 1][0],
-                                  data.question ? "" : currentTargets[items.currentSubLevel - 1][1],
+                                  currentTargets[items.score.currentSubLevel][0],
+                                  data.question ? "" : currentTargets[items.score.currentSubLevel][1],
                                   0,
                                   /* dragEnabled */ false)
 
     initCompleted = true
+    items.buttonsBlocked = false
 }
 
 function checkAnswer() {
+    items.buttonsBlocked = true
     if((initCompleted && items.scaleHeight == 0 && !items.question.visible)
             || (items.question.userEntry == items.question.answer)) {
-        items.bonus.good("flower")
+        items.score.currentSubLevel++;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
     }
     else {
-        items.bonus.bad("flower")
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
 }
 
 function nextSubLevel() {
-    if(items.numberOfSubLevels < ++items.currentSubLevel) {
-        nextLevel();
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower")
+    } else {
+        displayLevel()
     }
-    displayLevel()
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

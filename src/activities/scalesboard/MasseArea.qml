@@ -177,7 +177,7 @@ Rectangle {
                     id: dragArea
                     anchors.fill: parent
                     drag.target: parent
-                    enabled: model.dragEnabled
+                    enabled: model.dragEnabled && !items.buttonsBlocked
 
                     onPressed: {
                         message.text = ""

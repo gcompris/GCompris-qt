@@ -46,10 +46,11 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
+            property alias errorRectangle: errorRectangle
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property int numberOfSubLevels
-            property int currentSubLevel
+            property alias score: score
             property int giftWeight
             property int scaleHeight: background.scaleHeight
             readonly property var levels: activity.datasetLoader.data
@@ -61,6 +62,7 @@ ActivityBase {
             property alias question: question
             property alias numpad: numpad
             property bool rightDrop
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -235,6 +237,40 @@ ActivityBase {
             visible: (items.question.text && background.scaleHeight === 0) ? true : false
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            z: 1010
+            parent: scaleBoard
+            height: parent.height * 0.5
+            radius: 10 * ApplicationInfo.ratio
+            imageSize: okButton.width
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+            states: [
+                State {
+                    when: question.visible
+                    AnchorChanges {
+                        target: errorRectangle
+                        anchors.left: question.left
+                        anchors.right: question.right
+                        anchors.top: question.top
+                        anchors.bottom: question.bottom
+                    }
+                },
+                State {
+                    when: !question.visible
+                    AnchorChanges {
+                        target: errorRectangle
+                        anchors.left: plateLeft.right
+                        anchors.right: plateRight.left
+                        anchors.top: parent.top
+                        anchors.bottom: undefined
+                    }
+                }
+            ]
+        }
+
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
@@ -263,8 +299,7 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-            enabled: !bonus.isPlaying && masseAreaLeft.weight != 0
-            visible: (!question.text || items.question.userEntry) ? true : false
+            enabled: !items.buttonsBlocked && (items.question.text ?  items.question.userEntry : masseAreaLeft.weight != 0)
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
@@ -292,8 +327,7 @@ ActivityBase {
 
         Score {
             id: score
-            numberOfSubLevels: items.numberOfSubLevels
-            currentSubLevel: items.currentSubLevel
+            onStop: { Activity.nextSubLevel(); }
         }
 
         states: [
@@ -353,12 +387,12 @@ ActivityBase {
             maxDigit: ('' + items.giftWeight).length + 1
             opacity: question.visible ? 1 : 0
             columnWidth: 60 * ApplicationInfo.ratio
-            enableInput: !bonus.isPlaying
+            enableInput: !items.buttonsBlocked
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
-            if(okButton.visible && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
+            if(okButton.enabled && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
                     Activity.checkAnswer()
             }
             else if(question.visible) {
@@ -374,7 +408,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 

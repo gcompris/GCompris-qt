@@ -8,6 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
+import GCompris 1.0
 
 import "../../core"
 
@@ -24,7 +25,7 @@ Item {
         height: parent.height
         border.color: "black"
         border.width: 2
-        radius: 8
+        radius: 10 * ApplicationInfo.ratio
 
         gradient: Gradient {
             GradientStop { position: 0.0; color: "#F0FFFFFF" }
