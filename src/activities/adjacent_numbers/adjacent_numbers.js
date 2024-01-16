@@ -122,6 +122,7 @@ function initLevel() {
     items.proposedTilesModel.clear();
 
     items.answerCompleted = false
+    items.buttonsEnabled = true
 
     items.instruction.text = dataset[currentExercise].title
 
@@ -294,6 +295,7 @@ function getPupilAnswerArray() {
 
 // Check if the answer given by the pupil is correct and display the result
 function checkAnswer() {
+    items.buttonsEnabled = false
     // Trigger animation to show which tiles are correct or not
     for(var i = 0 ; i < items.questionTilesModel.count ; i++)
     {
@@ -322,6 +324,7 @@ function checkAnswer() {
     }
     else
     {
+        items.buttonsEnabled = true
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
     }
 }

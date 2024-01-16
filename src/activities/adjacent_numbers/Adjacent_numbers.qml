@@ -48,6 +48,7 @@ ActivityBase {
 
             // Updated by JS
             property bool answerCompleted: false
+            property bool buttonsEnabled: true
 
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
         }
@@ -213,7 +214,7 @@ ActivityBase {
             sourceSize.height: height
             sourceSize.width: height
             onClicked: validateKey();
-            enabled: !bonus.isPlaying
+            enabled: !bonus.isPlaying && items.buttonsEnabled
             visible: !items.immediateAnswer && items.answerCompleted
         }
 
