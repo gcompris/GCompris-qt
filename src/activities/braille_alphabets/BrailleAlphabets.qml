@@ -297,7 +297,7 @@ ActivityBase {
                 bottom: layoutArea.bottom
                 margins: items.baseMargins
             }
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            sourceSize.width: 60 * ApplicationInfo.ratio
             visible: !first_screen.visible
             onClicked: {
                 dialogMap.visible = true
