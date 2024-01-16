@@ -87,6 +87,7 @@ ActivityBase {
             property alias score: score
             property bool brailleCodeSeen
             property bool levelComplete: false
+            property int baseMargins: 10 * ApplicationInfo.ratio
         }
 
         onStart: {
@@ -99,20 +100,29 @@ ActivityBase {
         ListModel {
             id: containerModel
         }
+        
+        Item {
+            id: layoutArea
+            anchors.fill: background
+            anchors.bottomMargin: bar.height * 1.3
+        }
 
-        Image {
+        Rectangle {
             id: charList
-            y: 20 * ApplicationInfo.ratio
-            anchors.horizontalCenter: parent.horizontalCenter
-            source: Activity.url + "top_back.svg"
-            sourceSize.width: parent.width * 0.94
+            anchors.top: layoutArea.top
+            anchors.left: layoutArea.left
+            anchors.right: layoutArea.right
+            anchors.margins: items.baseMargins
+            radius: items.baseMargins
+            height: Math.min(120 * ApplicationInfo.ratio, layoutArea.height * 0.3)
             visible: items.brailleCodeSeen
+            color: "#a5cbd9"
 
             Row {
                 id: row
-                spacing: 10 * ApplicationInfo.ratio
+                spacing: items.baseMargins
                 anchors.centerIn: charList
-                anchors.horizontalCenterOffset: 5
+//                 anchors.horizontalCenterOffset: 5
 
                 Repeater {
                     id: cardRepeater
@@ -122,36 +132,31 @@ ActivityBase {
                     property alias rowSpacing: row.spacing
                     Item {
                         id: inner
-                        height: charList.height * 0.9
+                        height: charList.height - 2 * items.baseMargins
                         width: (charList.width - containerModel.count * cardRepeater.rowSpacing)/ containerModel.count
 
-                        Rectangle {
-                            id: rect1
-                            width:  charList.width / 13
-                            height: ins.height
-                            border.width: 0
-                            border.color: "black"
-                            color: "#a5cbd9"
-
-                            BrailleChar {
-                                id: ins
-                                width: parent.width * 0.9
-                                anchors.centerIn: parent
-                                clickable: false
-                                brailleChar: letter
-                            }
+                        BrailleChar {
+                            id: ins
+                            width: Math.min(parent.height * 0.5, parent.width)
+                            anchors.top: parent.top
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            clickable: false
+                            brailleChar: letter
                         }
-
-                        GCText {
-                            text: letter
-                            font.weight: Font.DemiBold
-                            color: "#2a2a2a"
-                            font.pointSize: NaN  // need to clear font.pointSize explicitly
-                            font.pixelSize: rect1.width * 0.5
-                            anchors {
-                                top: rect1.bottom
-                                topMargin: 4 * ApplicationInfo.ratio
-                                horizontalCenter: rect1.horizontalCenter
+                        Item {
+                            anchors.top: ins.bottom
+                            anchors.left: parent.left
+                            anchors.right: parent.right
+                            anchors.bottom: parent.bottom
+                            GCText {
+                                text: letter
+                                font.weight: Font.DemiBold
+                                color: "#2a2a2a"
+                                width: parent.width
+                                height: parent.height
+                                fontSizeMode: Text.Fit
+                                horizontalAlignment: Text.AlignHCenter
+                                verticalAlignment: Text.AlignVCenter
                             }
                         }
                     }
@@ -159,17 +164,19 @@ ActivityBase {
             }
         }
 
-        Image {
+        Rectangle {
             id: playableCharBg
             anchors {
                 top: charList.bottom
-                topMargin: 10 * ApplicationInfo.ratio
+                left: layoutArea.left
+                margins: items.baseMargins
             }
-            verticalAlignment: Image.AlignTop
-            x: 10 * ApplicationInfo.ratio
-            source: Activity.url + "char_background.svg"
-            sourceSize.width: playableChar.width * 1.8
-            height: (playableChar.height  + playableCharDisplay.height) * 1.2
+            color: "#d3e6ed"
+            border.color: "#a5cbd9"
+            border.width: 3 * ApplicationInfo.ratio
+            radius: items.baseMargins
+            width: playableChar.width * 1.5 + 2 * items.baseMargins
+            height: (playableChar.height  + playableCharDisplayArea.height) + 3 * items.baseMargins
 
             BrailleChar {
                 id: playableChar
@@ -177,9 +184,9 @@ ActivityBase {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
-                    topMargin: 20 * ApplicationInfo.ratio
+                    topMargin: items.baseMargins
                 }
-                width: Math.min(background.width * 0.18, background.height * 0.2)
+                width: Math.min(layoutArea.width * 0.18, layoutArea.height * 0.2)
                 isLetter: true
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
@@ -188,37 +195,37 @@ ActivityBase {
                     }
                 }
             }
-
-            GCText {
-                id: playableCharDisplay
-                font.pointSize: NaN  // need to clear font.pointSize explicitly
-                font.pixelSize: Math.max(playableChar.width * 0.4, 24)
-                font.weight: Font.DemiBold
-                color: "#2a2a2a"
-                text: playableChar.brailleChar
-                anchors {
-                    top: playableChar.bottom
-                    topMargin: 4 * ApplicationInfo.ratio
-                    horizontalCenter: playableChar.horizontalCenter
+            Item {
+                id: playableCharDisplayArea
+                height: playableChar.height * 0.3
+                width: parent.width
+                anchors.top: playableChar.bottom
+                anchors.topMargin: items.baseMargins
+                GCText {
+                    id: playableCharDisplay
+                    font.weight: Font.DemiBold
+                    color: "#2a2a2a"
+                    text: playableChar.brailleChar
+                    width: parent.width
+                    height: parent.height
+                    fontSizeMode: Text.Fit
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                 }
             }
         }
 
         Rectangle {
             id: instructionsArea
-            height: parent.height * 0.3
-            width: parent.width / 1.1
             anchors {
                 top: charList.bottom
-                topMargin: 10 * ApplicationInfo.ratio
                 left: playableCharBg.right
-                leftMargin: 10 * ApplicationInfo.ratio
-                right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                right: layoutArea.right
+                bottom: braille_map.top
+                margins: items.baseMargins
             }
-            color: "#55333333"
-            border.width: 0
-            radius: 5
+            color: "#aae4f9"
+            radius: 5 * ApplicationInfo.ratio
 
             GCText {
                 id: questionItem
@@ -227,9 +234,7 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "black"
-                color: "white"
+                color: "#2a2a2a"
                 width: parent.width * 0.94
                 height: parent.height * 0.94
                 wrapMode: Text.WordWrap
@@ -258,10 +263,12 @@ ActivityBase {
         Score {
             id: score
             anchors {
-                top: instructionsArea.bottom
-                left: instructionsArea.horizontalCenter
-                bottom: braille_map.top
-                bottomMargin: 30 * ApplicationInfo.ratio
+                verticalCenter: braille_map.verticalCenter
+                right: braille_map.left
+                rightMargin: items.baseMargins
+                left: undefined
+                top: undefined
+                bottom: undefined
             }
             visible: !(dialogMap.visible || first_screen.visible)
             onStop: if(!items.levelComplete) Activity.nextQuestion();
@@ -294,13 +301,14 @@ ActivityBase {
 
         BarButton {
             id: braille_map
-            source: Activity.url + "target.svg"
+            source: Activity.url + "braille_button.svg"
             anchors {
-                right: parent.right
-                bottom: parent.bottom
+                right: layoutArea.right
+                bottom: layoutArea.bottom
+                margins: items.baseMargins
             }
-            sourceSize.width: 66 * bar.barZoom
-            visible: true
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            visible: !(dialogMap.visible || first_screen.visible)
             onClicked: {
                 dialogMap.visible = true
                 displayDialog(dialogMap)

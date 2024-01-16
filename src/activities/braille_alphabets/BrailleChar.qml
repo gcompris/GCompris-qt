@@ -146,6 +146,7 @@ Item {
                 GCText {
                     id: numtext
                     text: clickable ? modelData+1 : ""
+                    color: "#2a2a2a"
                     anchors.left: index >= 3 ? incircle1.right : undefined
                     anchors.right: index < 3 ? incircle1.left : undefined
                     anchors.verticalCenter: incircle1.verticalCenter
