@@ -18,12 +18,10 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
 var resUrl = "qrc:/gcompris/src/activities/braille_fun/resource/"
 
 var levels;
 var maxLevel;
-var currentSubLevel;
 var currentLetter;
 var maxSubLevel;
 var questions;
@@ -31,7 +29,6 @@ var words;
 var items;
 var dataset = null;
 var frequency;
-var incorrectFlag = false;
 var locale;
 
 function start(_items) {
@@ -41,7 +38,7 @@ function start(_items) {
     GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
     loadDataset();
     levels = Lang.getAllLessons(dataset);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     maxLevel = levels.length;
     items.currentLevel = Core.getInitialLevel(maxLevel);
     initLevel();
@@ -74,7 +71,8 @@ function shuffleString(s) {
 }
 
 function initLevel() {
-    if (currentSubLevel == 0 && !incorrectFlag) {
+    items.errorRectangle.resetState();
+    if (items.score.currentSubLevel == 0) {
         var level = levels[items.currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
@@ -84,7 +82,6 @@ function initLevel() {
         var tempQuestions = generateQuestions();
         maxSubLevel = tempQuestions.length;
         items.score.numberOfSubLevels = maxSubLevel;
-        items.score.currentSubLevel = 1;
         questions = shuffleString(tempQuestions);
         items.wordsModel.clear();
         for (var i = 0; i < words.length; i++) {
@@ -96,17 +93,12 @@ function initLevel() {
                                     });
         }
     }
-    else {
-        items.score.currentSubLevel = currentSubLevel + 1;
-    }
-
-    incorrectFlag = false;
 
     for(var i = 0; i < words.length; i++) {
         items.wordsModel.setProperty(i, "selected", false);
     }
 
-    currentLetter = questions[currentSubLevel];
+    currentLetter = questions[items.score.currentSubLevel];
     items.question = currentLetter;
     items.animateX.restart();
 
@@ -123,6 +115,7 @@ function initLevel() {
         items.audioVoices.silence(100)
         playLetter(currentLetter)
     }
+    items.buttonsBlocked = false;
 }
 
 function calculateFrequency() {
@@ -168,29 +161,31 @@ function playLetter(letter) {
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.audioVoices.clearQueue()
     items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.audioVoices.clearQueue()
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
-    currentSubLevel = 0;
+    items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    if( ++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0
-        nextLevel()
+    if( items.score.currentSubLevel >= maxSubLevel) {
+        items.bonus.good("flower");
     } else {
         initLevel();
     }
 }
 
 function checkAnswer() {
+    items.buttonsBlocked = true
     var allCorrectSelected = true
     var modelEntry;
     var letterIndex;
@@ -207,10 +202,13 @@ function checkAnswer() {
         }
     }
     if(allCorrectSelected == true) {
-        items.bonus.good("flower");
+        items.score.currentSubLevel++;
+        items.score.playWinAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
     else {
-        items.bonus.bad("flower", items.bonus.checkAnswer);
+        items.errorRectangle.startAnimation();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
    }
 }
 

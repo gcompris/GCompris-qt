@@ -54,6 +54,7 @@ ActivityBase {
             property Item activityPage: activity
             property int currentLevel: activity.currentLevel
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property alias wordsModel: wordsModel
             property int currentLetterCase: ApplicationSettings.fontCapitalization
             property int currentMode: normalModeWordCount
@@ -65,10 +66,12 @@ ActivityBase {
             property alias repeatItem: repeatItem
             property alias score: score
             property alias bonus: bonus
+            property alias errorRectangle: errorRectangle
             property alias locale: background.locale
             property alias questionItem: questionItem
             property alias englishFallbackDialog: englishFallbackDialog
             property string question
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -134,19 +137,21 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: parent.top
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.left: parent.left
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: undefined
-            anchors.right: undefined
+            anchors {
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottom: wordsView.bottom
+                left: undefined
+                top: undefined
+            }
+            onStop: Activity.nextSubLevel();
         }
 
         Bonus {
             id: bonus
             interval: 100
             Component.onCompleted: {
-                win.connect(Activity.nextSubLevel);
+                win.connect(Activity.nextLevel);
             }
         }
 
@@ -204,13 +209,14 @@ ActivityBase {
                 margins: 10
             }
             onClicked:{
-                if(!audioVoices.isPlaying()) {
+                if(!audioVoices.isPlaying() && !items.buttonsBlocked) {
                     Activity.playLetter(Activity.currentLetter);
                     animateX.restart();
                 }
             }
         }
 
+        Keys.enabled: !items.buttonsBlocked
         Keys.onSpacePressed: wordsView.currentItem.select();
         Keys.onTabPressed: repeatItem.clicked();
         Keys.onEnterPressed: ok.clicked();
@@ -250,15 +256,7 @@ ActivityBase {
             delegate: Card {
                 width: background.itemWidth
                 height: background.itemWidth - 10 * ApplicationInfo.ratio
-                Connections {
-                    target: bonus
-                    onStart: {
-                        mouseActive = false;
-                    }
-                    onStop: {
-                        mouseActive = true;
-                    }
-                }
+                mouseActive: !items.buttonsBlocked
             }
         }
 
@@ -280,11 +278,24 @@ ActivityBase {
             height: width
             sourceSize.width: width
             anchors {
-                right: parent.right
-                rightMargin: 3 * ApplicationInfo.ratio
-                bottom: wordsView.bottom
+                bottom: score.top
+                margins: 10 * ApplicationInfo.ratio
+                horizontalCenter: score.horizontalCenter
             }
-            onClicked: Activity.checkAnswer();
+            onClicked: {
+                if(!items.buttonsBlocked)
+                    Activity.checkAnswer();
+            }
+        }
+
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: wordsView
+            radius: 10 * ApplicationInfo.ratio
+            imageSize: Math.min(width, height) * 0.5
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
         }
 
         JsonParser {
