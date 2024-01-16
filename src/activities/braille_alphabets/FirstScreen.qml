@@ -37,13 +37,25 @@ Image {
 
     Image {
         id: introChar
-        source: Activity.url + "intro_braille_char.svg"
+        source: Activity.url + "braille_button.svg"
         sourceSize.height: Math.min(parent.height * 0.25, parent.width * 0.25)
         fillMode: Image.PreserveAspectFit
         anchors {
             left: parent.left
-            leftMargin: 5 * ApplicationInfo.ratio
+            leftMargin: 10 * ApplicationInfo.ratio
             verticalCenter: body_text1.verticalCenter
+        }
+        Behavior on scale { PropertyAnimation { duration: 100 } }
+        MouseArea {
+            anchors.fill: parent
+            hoverEnabled: first_screen.visible
+            enabled: first_screen.visible
+            onClicked: {
+                dialogMap.visible = true
+                displayDialog(dialogMap)
+            }
+            onEntered: introChar.scale = 1.1
+            onExited: introChar.scale = 1
         }
     }
 
@@ -60,14 +72,12 @@ Image {
         horizontalAlignment: Text.AlignJustify
         anchors {
             top: heading.bottom
-            topMargin: 5 * ApplicationInfo.ratio
             right: parent.right
-            rightMargin: 5 * ApplicationInfo.ratio
             left: introChar.right
-            leftMargin: 5 * ApplicationInfo.ratio
+            margins: 10 * ApplicationInfo.ratio
         }
         color: "#2a2a2a"
-        width: parent.width - introChar.width - 15 * ApplicationInfo.ratio
+        width: parent.width - introChar.width - 30 * ApplicationInfo.ratio
         height: parent.height * 0.4
         wrapMode: Text.WordWrap
     }
@@ -84,9 +94,8 @@ Image {
         wrapMode:  Text.WordWrap
         anchors {
             top: body_text1.bottom
-            topMargin: 10 * ApplicationInfo.ratio
             left: parent.left
-            leftMargin: 10 * ApplicationInfo.ratio
+            margins: 10 * ApplicationInfo.ratio
         }
         height: parent.height * 0.25
         width: parent.width * 0.5
