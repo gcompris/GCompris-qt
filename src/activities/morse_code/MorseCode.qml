@@ -59,6 +59,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -69,6 +70,7 @@ ActivityBase {
             property string questionText: dataset[currentLevel].question
             property string questionValue
             property int numberOfLevel: dataset.length
+            property bool buttonsBlocked: false
             readonly property string middleDot: '·'
             readonly property var regexSpaceReplace: new RegExp(keyboard.space, "g")
 
@@ -89,9 +91,10 @@ ActivityBase {
             }
 
             function initLevel() {
+                errorRectangle.resetState();
                 // Reset the values on the text fields
                 toAlphaChanged();
-                score.currentSubLevel = 1
+                score.currentSubLevel = 0
                 score.numberOfSubLevels = dataset[currentLevel].values[1].length
                 if(dataset[currentLevel].values[0] == '_random_') {
                     Core.shuffle(dataset[currentLevel].values[1]);
@@ -100,8 +103,9 @@ ActivityBase {
             }
 
             function initSubLevel() {
+                textInput.text = ''
                 stopMorseSounds();
-                questionValue = dataset[currentLevel].values[1][score.currentSubLevel-1]
+                questionValue = dataset[currentLevel].values[1][score.currentSubLevel]
                 questionValue = questionValue.replace(/\./g, items.middleDot);
                 questionValue = questionValue.replace(items.regexSpaceReplace, ' ');
                 activity.audioVoices.clearQueue();
@@ -109,22 +113,24 @@ ActivityBase {
                 if(items.audioMode) {
                     delayTimer.restart();
                 }
+                items.buttonsBlocked = false;
             }
 
             function nextLevel() {
+                score.stopWinAnimation();
                 currentLevel = Core.getNextLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
             function previousLevel() {
+                score.stopWinAnimation();
                 currentLevel = Core.getPreviousLevel(currentLevel, numberOfLevel);
                 initLevel();
             }
 
             function nextSubLevel() {
-                textInput.text = ''
-                if(++score.currentSubLevel > score.numberOfSubLevels) {
-                    nextLevel();
+                if(score.currentSubLevel >= score.numberOfSubLevels) {
+                    bonus.good('tux');
                 }
                 else {
                     initSubLevel();
@@ -132,13 +138,17 @@ ActivityBase {
             }
 
             function check() {
+                items.buttonsBlocked = true;
                 if(feedback.value === items.questionValue) {
                     stopMorseSounds();
-                    bonus.good('tux');
+                    score.currentSubLevel++;
+                    score.playWinAnimation();
+                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
                 }
                 else {
                     stopMorseSounds();
-                    bonus.bad('tux', bonus.checkAnswer);
+                    errorRectangle.startAnimation();
+                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
                 }
             }
 
@@ -161,7 +171,7 @@ ActivityBase {
             activity.audioVoices.clearQueue()
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
             if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
                 if(firstScreen.visible) {
@@ -270,7 +280,7 @@ ActivityBase {
                 x: parent.width / 2
                 width: parent.width
                 color: "#373737"
-                enabled: !firstScreen.visible && !bonus.isPlaying
+                enabled: !firstScreen.visible && !items.buttonsBlocked
                 text: ''
                 // At best, 5 characters when looking for a letter (4 max + 1 space)
                 maximumLength: items.toAlpha ? items.questionValue.split(' ').length + 1 : 5 * items.questionValue.length
@@ -447,6 +457,16 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.fill: inputArea
+            radius: inputArea.radius
+            imageSize: height * 1.5
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+        }
+
         Timer {
             id: delayTimer
             interval: 1000
@@ -469,6 +489,7 @@ ActivityBase {
             anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 1
+            onStop: items.nextSubLevel()
         }
 
 
@@ -500,6 +521,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             visible: !firstScreen.visible
+            enabled: visible && !items.buttonsBlocked
             function populateAlpha() {
                 layout = [ [
                               { label: "0" },
@@ -559,7 +581,7 @@ ActivityBase {
             }
 
             onKeypress: {
-                if(!bonus.isPlaying) {
+                if(!items.buttonsBlocked) {
                     textInput.appendText(text)
                 }
                 // Set the focus back to the InputText for keyboard input
@@ -638,7 +660,7 @@ ActivityBase {
             anchors.right: score.left
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.rightMargin: background.layoutMargins
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
             height: ledContainer.height
             width: height
             sourceSize.height: height
@@ -653,7 +675,7 @@ ActivityBase {
             anchors.right: okButton.left
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.rightMargin: background.layoutMargins
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
             height: ledContainer.height
             width: height
             sourceSize.height: height
@@ -666,7 +688,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(items.nextSubLevel)
+            Component.onCompleted: win.connect(items.nextLevel)
         }
     }
 }
