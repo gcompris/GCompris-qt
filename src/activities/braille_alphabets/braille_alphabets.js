@@ -17,7 +17,6 @@ var url = "qrc:/gcompris/src/activities/braille_alphabets/resource/"
 var numberOfLevel
 var items
 var dataset
-var currentQuestion
 var currentDataSet
 
 function start(items_, dataset_) {
@@ -32,9 +31,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.levelComplete = false
     items.containerModel.clear()
-    currentQuestion = 0
 
     switch(items.currentLevel) {
         case 0:
@@ -100,41 +97,49 @@ function initLevel() {
     items.score.currentSubLevel = 0;
 
     items.playableChar.isLetter = currentDataSet[0].letter >= "A" && currentDataSet[0].letter <= "Z"
-    // Trig the next question
-    items.questionItem.opacity = 0.1
-    items.questionItem.opacity = 0
+    initQuestion()
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function goodAnswer() {
-    items.score.currentSubLevel ++
+    items.buttonsBlocked = true
+    items.score.currentSubLevel++
     items.score.playWinAnimation()
-    if(currentDataSet.length <= ++currentQuestion) {
-        items.levelComplete = true
-        items.bonus.good("flower")
-    }
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
 }
 
 function nextQuestion() {
-    // We just set the opacity to 0, the questionItem will then grab
-    // the new question by itself
-    items.questionItem.opacity = 0
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("flower")
+    } else {
+        initQuestion()
+    }
+}
+
+function initQuestion() {
+    items.playableChar.clearLetter()
+    items.questionItem.text = getCurrentTextQuestion()
+    if(items.instructions)
+        items.questionItem.text += "\n" + items.instructions
+    items.buttonsBlocked = false
 }
 
 function getCurrentTextQuestion() {
-    return currentDataSet[currentQuestion].text.arg(getCurrentLetter())
+    return currentDataSet[items.score.currentSubLevel].text.arg(getCurrentLetter())
 }
 
 function getCurrentLetter() {
-    return currentDataSet[currentQuestion].letter
+    return currentDataSet[items.score.currentSubLevel].letter
 }
 

@@ -159,7 +159,7 @@ Item {
 
                 MouseArea {
                     id : mouse1
-                    enabled: clickable && !(bonus.isPlaying || score.isWinAnimationPlaying) ? true : false
+                    enabled: clickable && !items.buttonsBlocked ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
                     onEntered: incircle1.border.width = brailleCharItem.thickBorder

@@ -37,7 +37,7 @@ ActivityBase {
         }
 
         Keys.onPressed: {
-            if(bonus.isPlaying || score.isWinAnimationPlaying) {
+            if(items.buttonsBlocked) {
                 return
             }
             if(first_screen.visible) {
@@ -78,6 +78,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias containerModel: containerModel
@@ -86,8 +87,8 @@ ActivityBase {
             property alias playableChar: playableChar
             property alias score: score
             property bool brailleCodeSeen
-            property bool levelComplete: false
             property int baseMargins: 10 * ApplicationInfo.ratio
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -122,7 +123,6 @@ ActivityBase {
                 id: row
                 spacing: items.baseMargins
                 anchors.centerIn: charList
-//                 anchors.horizontalCenterOffset: 5
 
                 Repeater {
                     id: cardRepeater
@@ -238,16 +238,6 @@ ActivityBase {
                 width: parent.width * 0.94
                 height: parent.height * 0.94
                 wrapMode: Text.WordWrap
-
-                function initQuestion() {
-                    playableChar.clearLetter()
-                    text = Activity.getCurrentTextQuestion()
-                    if(items.instructions)
-                        text += "\n" + items.instructions
-                    opacity = 1.0
-                }
-
-                onOpacityChanged: opacity == 0 ? initQuestion() : ""
             }
         }
 
@@ -270,8 +260,8 @@ ActivityBase {
                 top: undefined
                 bottom: undefined
             }
-            visible: !(dialogMap.visible || first_screen.visible)
-            onStop: if(!items.levelComplete) Activity.nextQuestion();
+            visible: !first_screen.visible
+            onStop: Activity.nextQuestion();
         }
 
         DialogHelp {
@@ -281,7 +271,7 @@ ActivityBase {
 
         BrailleMap {
             id: dialogMap
-            // Make is non visible or we get some rendering artefacts before
+            // Make it non visible or we get some rendering artefacts before
             // until it is created
             visible: false
             onClose: home()
@@ -308,7 +298,7 @@ ActivityBase {
                 margins: items.baseMargins
             }
             sourceSize.width: 80 * ApplicationInfo.ratio
-            visible: !(dialogMap.visible || first_screen.visible)
+            visible: !first_screen.visible
             onClicked: {
                 dialogMap.visible = true
                 displayDialog(dialogMap)
