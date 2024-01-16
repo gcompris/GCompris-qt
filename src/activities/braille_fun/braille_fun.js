@@ -14,7 +14,6 @@
 
 var numberOfLevel = 3
 var items
-var currentQuestion
 var maxSubLevel;
 var set = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var questionArray = [];
@@ -32,22 +31,21 @@ function stop() {
 }
 
 function initQuestion() {
-    items.question = questionArray[currentQuestion]
+    items.question = questionArray[items.score.currentSubLevel]
     items.charBg.clickable(true)
     items.charBg.clearAllLetters()
     items.animateX.restart()
 }
 
 function nextQuestion() {
-    if(++currentQuestion == set.length) {
-        nextLevel()
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
+        items.bonus.good("tux");
     } else {
-        initQuestion()
+        initQuestion();
     }
 }
 
 function initLevel() {
-    currentQuestion = 0
     items.score.numberOfSubLevels = set.length;
     items.score.currentSubLevel = 0;
     questionArray = []
@@ -77,12 +75,20 @@ function initLevel() {
     items.cardRepeater.model = items.currentLevel + 1;
 }
 
+function goodAnswer() {
+    items.score.currentSubLevel++
+    items.score.playWinAnimation()
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+}
+
 function nextLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

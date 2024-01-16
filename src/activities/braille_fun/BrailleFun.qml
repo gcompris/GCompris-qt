@@ -48,6 +48,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias questionItem: questionItem
@@ -56,10 +57,20 @@ ActivityBase {
             property alias animateX: animateX
             property alias charBg: charBg
             property string question
+            property int baseMargins: 10 * ApplicationInfo.ratio
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Item {
+            id: layoutArea
+            anchors.top: planeText.bottom
+            anchors.bottom: background.bottom
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.bottomMargin: bar.height * 1.3
+        }
 
         Item {
             id: planeText
@@ -100,21 +111,17 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: charBg
             anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
-                rightMargin: 20 * ApplicationInfo.ratio
+                top: layoutArea.top
+                bottom: score.top
+                left: layoutArea.left
+                right: layoutArea.right
+                margins: items.baseMargins
             }
-            width: charWidth * cardRepeater.model
-            height: charWidth * 1.5
-            color: "#AAFFFFFF"
-            border.width: 0
-            radius: 5
 
-            property int charWidth: Math.min(150 * ApplicationInfo.ratio,
-                            parent.width * 0.3)
+            property int charWidth: Math.min(120 * ApplicationInfo.ratio, width * 0.3)
 
             function clickable(status) {
                 for(var i=0 ; i < cardRepeater.model ; i++) {
@@ -130,7 +137,7 @@ ActivityBase {
 
             Row {
                 id: row
-                spacing: 5 * ApplicationInfo.ratio
+                spacing: items.baseMargins
                 anchors.centerIn: parent
 
                 Repeater {
@@ -138,24 +145,27 @@ ActivityBase {
 
                     Item {
                         id: inner
-                        height: charBg.height * 0.9
+                        height: charBg.height - 2 * items.baseMargins
                         width: charBg.charWidth
                         property string brailleChar: ins.brailleChar
                         property alias ins: ins
 
                         Rectangle {
                             id: rect1
-                            width:  charBg.charWidth * 0.6
+                            width:  parent.width
                             height: ins.height
                             anchors.horizontalCenter: inner.horizontalCenter
-                            border.width: 0
-                            color: ins.found ? '#FFa3f9a3' : "#ffef6949"
+                            anchors.top: parent.top
+                            border.width: ins.found ? 0 : 2 * ApplicationInfo.ratio
+                            border.color: "#fff"
+                            radius: items.baseMargins
+                            color: ins.found ? '#85d8f6' : "#dfe1e8"
 
                             BrailleChar {
                                 id: ins
                                 clickable: true
                                 anchors.centerIn: rect1
-                                width: parent.width * 0.9
+                                width: parent.width * 0.5
                                 isLetter: true
                                 onBrailleCharChanged: {
                                     inner.brailleChar = ins.brailleChar
@@ -169,8 +179,7 @@ ActivityBase {
                                     }
                                     if(answerString === items.question) {
                                         charBg.clickable(false)
-                                        bonus.good("tux")
-                                        score.currentSubLevel ++;
+                                        Activity.goodAnswer()
                                     }
                                 }
                                 property string question: items.question[modelData] ? items.question[modelData] : ""
@@ -197,12 +206,12 @@ ActivityBase {
 
         Score {
             id: score
-            // @FIXME We have no way to get the real bar width, that would make this
-            // calculation formal
-            anchors.bottom: parent.width - bar.width * 6 > width ? parent.bottom : bar.top
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
+            anchors.bottom: layoutArea.bottom
+            anchors.right: layoutArea.right
+            anchors.rightMargin: items.baseMargins
+            anchors.top: undefined
+            anchors.left: undefined
+            onStop: Activity.nextQuestion()
         }
 
 
@@ -230,13 +239,13 @@ ActivityBase {
 
         BarButton {
             id: brailleMap
-            source: Activity.url + "target.svg"
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_button.svg"
             anchors {
-                right: score.left
-                bottom: score.bottom
+                right: background.right
+                top: background.top
+                margins: items.baseMargins
             }
-            sourceSize.width: 66 * bar.barZoom
-            visible: true
+            sourceSize.width: 60 * ApplicationInfo.ratio
             onClicked: {
                 dialogMap.visible = true
                 displayDialog(dialogMap)
@@ -246,8 +255,7 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.nextQuestion)
-                loose.connect(Activity.initQuestion)
+                win.connect(Activity.nextLevel)
             }
         }
     }
