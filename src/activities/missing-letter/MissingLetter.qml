@@ -81,6 +81,14 @@ ActivityBase {
             Activity.stop()
         }
 
+        function goodAnswer() {
+            items.buttonsBlocked = true;
+            score.currentSubLevel++;
+            score.playWinAnimation();
+            questionAnim.start();
+            Activity.showAnswer();
+        }
+
         TextInput {
             // Helper element to capture composed key events like french ô which
             // are not available via Keys.onPressed() on linux. Must be
@@ -101,8 +109,7 @@ ActivityBase {
                         typedText = text.toLocaleLowerCase()
 
                     if(!items.isGoodAnswer && (typedText === answerText)) {
-                        questionAnim.start()
-                        Activity.showAnswer()
+                        background.goodAnswer();
                     }
                     text = '';
                 }
@@ -149,11 +156,10 @@ ActivityBase {
                     textLabel: modelData
                     blockAllButtonClicks: items.buttonsBlocked
                     isCorrectAnswer: modelData === items.answer
-                    onCorrectlyPressed: questionAnim.restart()
                     onPressed: {
                         items.buttonsBlocked = true
                         if(!items.isGoodAnswer) {
-                            modelData == items.answer ? Activity.showAnswer() : ''
+                            modelData == items.answer ? background.goodAnswer() : ''
                         }
                     }
                     onIncorrectlyPressed: items.buttonsBlocked = false

@@ -23,6 +23,7 @@ var numberOfLevel
 var questions
 var dataset
 var lessons
+var currentQuestion
 
 // Do not propose these letter in the choices
 var ignoreLetters = '[ ,;:\\-\u0027]'
@@ -178,53 +179,51 @@ function stop() {
 
 function initLevel() {
     items.questionAnim.stop()
-    items.score.currentSubLevel = 1
+    items.score.currentSubLevel = 0
     items.score.numberOfSubLevels = questions[items.currentLevel].length
     showQuestion()
 }
 
 function getCurrentQuestion() {
-    return questions[items.currentLevel][items.score.currentSubLevel - 1]
+    return questions[items.currentLevel][items.score.currentSubLevel]
 }
 
 function showQuestion() {
-    var question = getCurrentQuestion()
+    currentQuestion = getCurrentQuestion()
 
-    playWord(question.voice)
-    items.answer = question.answer
-    items.answers.model = question.choices
-    items.questionText.text = question.maskedQuestion
-    items.questionImage.source = question.image
+    playWord(currentQuestion.voice)
+    items.answer = currentQuestion.answer
+    items.answers.model = currentQuestion.choices
+    items.questionText.text = currentQuestion.maskedQuestion
+    items.questionImage.source = currentQuestion.image
     items.isGoodAnswer = false
     items.buttonsBlocked = false
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function nextSubLevel() {
-    var question = getCurrentQuestion()
-
-    if(items.score.currentSubLevel >= questions[items.currentLevel].length) {
+    if(items.score.currentSubLevel >= items.score.numberOfSubLevels) {
         items.bonus.good('flower')
         return
     }
-    items.score.currentSubLevel ++;
     showQuestion()
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function showAnswer() {
-    var question = getCurrentQuestion()
-    playLetter(question.answer)
+    playLetter(currentQuestion.answer)
     items.isGoodAnswer = true
-    items.questionText.text = question.clearQuestion
+    items.questionText.text = currentQuestion.clearQuestion
 }
 
 function playLetter(letter) {
