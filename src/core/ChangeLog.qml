@@ -27,11 +27,11 @@ QtObject {
      */
     property var changelog: [
             { "versionCode": 40000, "content": [
-                qsTr("New command-line option (--start-level level) to start GCompris at specific level (needs to be used with --launch activity option)"),
                 qsTr("Translations added for Bulgarian, Galician and Kiswahili"),
                 qsTr("Many usability improvements"),
                 qsTr("Many new images"),
-                qsTr("Many bug fixes")
+                qsTr("Many bug fixes"),
+                qsTr("New command-line option to directly start an activity at a specific level (--start-level level, to be used with --launch activity)")
                 ],
               "newDatasets": ["algebra_by", "algebra_plus", "algebra_minus", "algebra_div"]
             },
