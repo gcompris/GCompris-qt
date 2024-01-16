@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
-"PO-Revision-Date: 2024-01-13 12:20+0100\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
+"PO-Revision-Date: 2023-03-29 23:52+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -17,6 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -198,16 +204,17 @@ msgstr "Kreu la brajlan ĉelon por la letero."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Elektu nombron aŭ simbolon kaj alklaku ĝian celpozicion. Ĉiu simbolo devas "
-"aperi nur unufoje en vico kaj en kolumno. La nombroj en la ĉeloj de kaĝo "
-"devas produkti la donitan rezulton kiam kombinitaj uzante la donitan "
-"operatoron."
+"Elektu nombron aŭ simbolon kaj alklaku ĝian celregionon. Ĉiu simbolo devas "
+"aperi nur unufoje en vico, en kolumno kaj en subregiono se ekzistas."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -479,7 +486,7 @@ msgstr ""
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr "Reproduktu kaj kompletigu la frisan modelon."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -549,13 +556,25 @@ msgstr ""
 "Gvidu la nombromanĝanton per la sagoklavoj al la unuaj nombroj kaj premu "
 "spacon por engluti ilin."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
+
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Atribuu la petitajn gramatikajn klasojn al la respondaj vortoj."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -576,7 +595,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Uzu la kvar nombrojn kun donitaj operatoroj por trovi 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -875,7 +894,7 @@ msgid ""
 "cursor next to this sparkle and use the mousewheel or the zoom gesture to "
 "zoom in."
 msgstr ""
-"Rigardante la rokmuron, vi povas vidi ekbrilon ie. Movu la muskursoron apud "
+"Rigardante la rokmuron, vi povas vidi ekbrilon ie. Movu la muskursonon apud "
 "ĉi tiu ekbrilo kaj uzu la musradon aŭ la zoman geston por zomi."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"

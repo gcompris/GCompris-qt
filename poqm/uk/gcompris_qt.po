@@ -4,14 +4,14 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Ivan Onyshchuk <onivan@mail.ru>, 2008, 2009, 2010.
-# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-01-13 09:29+0200\n"
+"PO-Revision-Date: 2023-05-20 23:41+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -19,10 +19,175 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 20.12.0\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Qt-Contexts: true\n"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:19
+#: activities/clickanddraw/ActivityConfig.qml:21
+#: activities/drawletters/ActivityConfig.qml:21
+#: activities/drawnumbers/ActivityConfig.qml:21
+#: activities/enumerate/ActivityConfig.qml:21
+#: activities/erase/ActivityConfig.qml:21
+#: activities/erase_2clic/ActivityConfig.qml:21
+#: activities/erase_clic/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
+msgctxt "ActivityConfig|"
+msgid "Automatic"
+msgstr "Автоматично"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:20
+#: activities/enumerate/ActivityConfig.qml:22
+msgctxt "ActivityConfig|"
+msgid "OK button"
+msgstr "Кнопка «Гаразд»"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:30
+#: activities/enumerate/ActivityConfig.qml:32
+msgctxt "ActivityConfig|"
+msgid "Validate answers"
+msgstr "Перевіряти відповіді"
+
+#. Activity title
+#: activities/adjacent_numbers/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "ActivityInfo|"
+msgid "Find the adjacent numbers"
+msgstr "Знайдіть обидва числа."
+
+#. Help title
+#: activities/adjacent_numbers/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "ActivityInfo|"
+msgid "Find the missing adjacent numbers."
+msgstr "Знайдіть обидва числа."
+
+#. intro: "Find the missing numbers." Help goal
+#: activities/adjacent_numbers/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about prime numbers."
+msgctxt "ActivityInfo|"
+msgid "Learn to order numbers."
+msgstr "Вивчення простих чисел."
+
+#. Help manual
+#: activities/adjacent_numbers/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare the numbers and choose the corresponding sign."
+msgctxt "ActivityInfo|"
+msgid "Find the requested numbers and drag them to the corresponding spot."
+msgstr "Порівняйте числа і виберіть відповідний знак."
+
+#: activities/adjacent_numbers/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 1 and 10."
+msgstr "Числа від %1 до %2."
+
+#: activities/adjacent_numbers/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 0 and 20."
+msgstr "Числа від %1 до %2."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 0 and 100."
+msgstr "Числа від %1 до %2."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the next number."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:27
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the previous number."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:40
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the in-between number."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:53
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the missing numbers."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:66
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the next numbers."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:79
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the previous numbers."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:105
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the in-between numbers."
+msgstr "Знайдіть обидва числа."
+
+#: activities/adjacent_numbers/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between -10 and -1."
+msgstr "Числа від %1 до %2."
+
+#: activities/adjacent_numbers/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between -10 and 10."
+msgstr "Числа від %1 до %2."
+
+#: activities/adjacent_numbers/resource/5/Data.qml:53
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the missing numbers"
+msgstr "Знайдіть обидва числа."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -86,6 +251,8 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:27
 #: activities/gnumch-multiples/ActivityInfo.qml:28
 #: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/graduated_line_read/ActivityInfo.qml:24
+#: activities/graduated_line_use/ActivityInfo.qml:24
 #: activities/grammar_analysis/ActivityInfo.qml:29
 #: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
@@ -826,9 +993,12 @@ msgid "Learn multiplication table of 10."
 msgstr "Вивчення таблиці множення на 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Вправи з таблиці множення чисел від 1 до 10."
+msgstr "Таблиця множення від 1 до 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -918,9 +1088,12 @@ msgid "Learn division table of 10."
 msgstr "Вивчення таблиці ділення на 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Вправити з таблиці ділення для чисел від 1 до 10."
+msgstr "Таблиця множення від 1 до 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1012,19 +1185,28 @@ msgid "Learn subtraction table of 10."
 msgstr "Вивчення таблиці віднімання 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Віднімання від числа до 10."
+msgstr "Віднімання десяткових чисел, які є меншими 1."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Віднімання від числа до 20."
+msgstr "Віднімання десяткових чисел, які є меншими 1."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Віднімання від числа до 100."
+msgstr "Віднімання десяткових чисел, які є меншими 1."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1114,19 +1296,28 @@ msgid "Learn addition table of 10."
 msgstr "Вивчення таблиці додавання до 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Додавання з числами до 10."
+msgstr "Додавання десяткових чисел, які є меншими 1."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Додавання з числами до 15."
+msgstr "Додавання десяткових чисел, які є меншими 1."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Додавання з результатом до 100."
+msgstr "Додавання зірок до 10."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3066,13 +3257,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr "Калькудоку"
+msgstr ""
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Розв'яжіть калькудоку."
+msgstr ""
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3081,15 +3272,15 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
-"Розвиньте ваші навички логічного міркування: скористайтеся для обчислень "
-"формуванням зв'язку між даними, визначенням логічних наслідків та роботою із "
-"просторовим розташуванням."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Для розгадування загадки потрібне терпіння і здібності до арифметики."
+msgstr "Для розгадування загадки потрібне терпіння і логіка."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3102,43 +3293,39 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
-"Виберіть число у списку і натисніть його позицію, щоб заповнити комірку "
-"таблиці. У кожному рядку і стовпчику таблиці має бути лише одне таке число. "
-"Блоки є групами комірок, які надають дані щодо того, як слід заповнювати "
-"комірки. У блоці, де є декілька комірок, вказано результат і оператор: усі "
-"числа у блоці, якщо їх поєднати за допомогою цього оператора мають давати "
-"вказаний результат. У блоках, які складаються з однієї комірки, міститься "
-"лише число, яке слід ввести."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Малі таблиці з оператором «+»."
+msgstr "Маленькі ґратки."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Малі таблиці з операторами «+» і «−»."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Малі таблиці з операторами «+», «−» та «×»."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Середні таблиці з операторами «+», «−» та «×»."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Великі таблиці з операторами «+», «−», «×» та «∕»."
+msgstr ""
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3196,37 +3383,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Пробіл або Enter: перевірити вашу відповідь"
 
-#: activities/calendar/Calendar.qml:309
+#: activities/calendar/Calendar.qml:306
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Неділя"
 
-#: activities/calendar/Calendar.qml:310
+#: activities/calendar/Calendar.qml:307
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Понеділок"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:308
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Вівторок"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Середа"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:310
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Четвер"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:311
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "П'ятниця"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:312
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Субота"
@@ -4522,13 +4709,21 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Далі, натисніть кнопку «Гаразд», щоб перевірити вашу відповідь"
 
 #: activities/chronos/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
+#| "Vegastrike which are released under the GPL license. The transportation "
+#| "images are copyright Franck Doucet. Dates of Transportation are based on "
+#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Авторські права на фотографії Місяця належать NASA. Зображення польотів "
+"Авторські права на фотографії Місяця належать NASA. Звуки космосу узяті з "
+"ігор Tuxpaint і Vegastrike, умови ліцензування GPL. Зображення польотів "
 "надані Франком Досетом. Дати польотів базуються на інформації з &lt;https://"
 "www.wikipedia.org&gt;."
 
@@ -4673,14 +4868,20 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783, Брати Монґольф'є, Повітряна куля з гарячим повітрям"
 
 #: activities/chronos/resource/board/board5_1.qml:47
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 Літак «Еол» Клемента Адера"
+msgstr "1880 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board5_1.qml:55
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1907, Поль Корню, Перший політ гелікоптера"
+msgstr "1906, Поль Корню, Перший політ гелікоптера"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4693,9 +4894,12 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Паровий автомобіль Кюньо"
 
 #: activities/chronos/resource/board/board5_2.qml:40
+#, fuzzy
+#| msgctxt "board5_2|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 Літак «Еол» Клемента Адера"
+msgstr "1880 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4723,9 +4927,12 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829, Паровоз «Ракета» Стефенсона"
 
 #: activities/chronos/resource/board/board5_4.qml:47
+#, fuzzy
+#| msgctxt "board5_4|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 Літак «Еол» Клемента Адера"
+msgstr "1880 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4738,14 +4945,22 @@ msgid "Aviation"
 msgstr "Авіація"
 
 #: activities/chronos/resource/board/board6_0.qml:40
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 Літак «Еол» Клемента Адера"
+msgstr "1880 Літак «Еол» Клемента Адера"
 
 #: activities/chronos/resource/board/board6_0.qml:48
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1905 Брати Райт, «Флайер-3»"
+msgstr ""
+"1903 Брати Райт\n"
+"«Флайер-3»"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4768,9 +4983,12 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927, Чарльз Ліндберґ перетнув Атлантичний океан"
 
 #: activities/chronos/resource/board/board6_1.qml:55
+#, fuzzy
+#| msgctxt "board6_1|"
+#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934, Елен Боше, Рекорд швидкості 445 км/год"
+msgstr "1934, Елен Боше, Рекорд швидкості 444 км/год"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4798,9 +5016,12 @@ msgid "Cars"
 msgstr "Автомобілі"
 
 #: activities/chronos/resource/board/board6_3.qml:39
+#, fuzzy
+#| msgctxt "board6_3|"
+#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1898, «Вуатюретка», Рено"
+msgstr "1899, «Вуатюретка», Рено"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -4886,18 +5107,6 @@ msgstr "Tab: повторення питання"
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
 msgstr "Клацніть на великій літері"
-
-#: activities/clickanddraw/ActivityConfig.qml:21
-#: activities/drawletters/ActivityConfig.qml:21
-#: activities/drawnumbers/ActivityConfig.qml:21
-#: activities/enumerate/ActivityConfig.qml:21
-#: activities/erase/ActivityConfig.qml:21
-#: activities/erase_2clic/ActivityConfig.qml:21
-#: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:22
-msgctxt "ActivityConfig|"
-msgid "Automatic"
-msgstr "Автоматично"
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5042,12 +5251,12 @@ msgstr ""
 "Найкоротша стрілка позначає години, довга стрілка вказує хвилини, а найдовша "
 "стрілка вказує секунди."
 
-#: activities/clockgame/Clockgame.qml:106
+#: activities/clockgame/Clockgame.qml:109
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Встановіть годинник на:"
 
-#: activities/clockgame/Clockgame.qml:109
+#: activities/clockgame/Clockgame.qml:112
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5057,7 +5266,7 @@ msgstr[1] "%n години"
 msgstr[2] "%n годин"
 msgstr[3] "%n година"
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5067,7 +5276,7 @@ msgstr[1] "%n хвилини"
 msgstr[2] "%n хвилин"
 msgstr[3] "%n хвилина"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5545,7 +5754,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Пробіл, Enter або Tab: позначення наступного об'єкта"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:44
+#: activities/crane/crane.js:41
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5554,7 +5763,7 @@ msgstr ""
 "жар;зад;маг;рак"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:51
+#: activities/crane/crane.js:48
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5564,7 +5773,7 @@ msgstr ""
 "нота;пані;рада;хата"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:58
+#: activities/crane/crane.js:55
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6560,16 +6769,6 @@ msgstr "Веселе ознайомлення дітей із тим, як ма�
 msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
 msgstr "Намалюйте цифру, з'єднавши крапки у правильному порядку."
-
-#: activities/enumerate/ActivityConfig.qml:22
-msgctxt "ActivityConfig|"
-msgid "OK button"
-msgstr "Кнопка «Гаразд»"
-
-#: activities/enumerate/ActivityConfig.qml:32
-msgctxt "ActivityConfig|"
-msgid "Validate answers"
-msgstr "Перевіряти відповіді"
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -9292,7 +9491,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Виберіть відповідну кількість частин, як це описано у настановах."
 
-#: activities/fractions_create/fractions_create.js:77
+#: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Знайдіть відповідний дріб."
@@ -9657,19 +9856,25 @@ msgstr "Знайдіть чисельних і знаменник (за допо
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr "Фриз"
+msgstr ""
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Відтворіть і завершіть фриз."
+msgstr "Відтворіть задану башту."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn digits"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Вивчення алгоритмів."
+msgstr "Вивчення цифр"
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9678,35 +9883,51 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
-"Відтворіть показаний згори фриз. На деяких рівнях вам доведеться завершити "
-"фриз або відтворити раніше показаний фриз."
 
 #: activities/frieze/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "← і →: вибрати елемент"
+msgstr "← і →: вибрати кнопку символу"
 
 #: activities/frieze/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Пробіл: додати вибраний елемент на фриз"
+msgstr "Пробіл: вибір об'єкта"
 
 #: activities/frieze/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Backspace або Delete: вилучити останній елемент з фризу"
+msgstr "Пробіл або Enter: позначення пункту у списку"
 
 #: activities/frieze/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "Enter: підтвердити відповідь"
+msgstr "Enter: перевірити вашу відповідь"
 
 #: activities/frieze/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Tab: перемкнутися між редагування фризу і переглядом моделі"
+msgstr "Пробіл: перемикання між невидимим і видимим режимами"
 
 #: activities/frieze/Frieze.qml:248
+#, fuzzy
+#| msgctxt "ReadyButton|"
+#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Можна починати"
@@ -9714,7 +9935,7 @@ msgstr "Можна починати"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr "Скопіюйте цей фриз: 2 форми із різними кольорами або знаками."
+msgstr ""
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9722,7 +9943,7 @@ msgstr "Скопіюйте цей фриз: 2 форми із різними к�
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr "Скопіюйте цей фриз."
+msgstr ""
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9730,8 +9951,6 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
-"Запам'ятайте і скопіюйте цей фриз: довільна комбінація форм, кольорів або "
-"знаків і розмірів."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9739,7 +9958,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr "Запам'ятайте і скопіюйте цей фриз."
+msgstr ""
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9747,13 +9966,11 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
-"Скопіюйте і доповніть цей фриз: візерунків від 4 до 7, довільна комбінація "
-"форм, кольорів або знаків та розмірів."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr "Скопіюйте і завершіть цей фриз"
+msgstr ""
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9761,8 +9978,6 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
-"Запам'ятайте і скопіюйте цей фриз: візерунків від 4 до 7, довільна "
-"комбінація форм, кольорів або знаків та розмірів."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9770,8 +9985,6 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
-"Скопіюйте і доповніть цей фриз: візерунків від 6 до 8, довільна комбінація "
-"форм, кольорів або знаків та розмірів."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9780,7 +9993,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr "Скопіюйте і завершіть цей фриз."
+msgstr ""
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9788,25 +10001,21 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
-"Запам'ятайте і скопіюйте цей фриз: візерунків від 6 до 8, довільна "
-"комбінація форм, кольорів або знаків та розмірів."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
-"Скопіюйте і завершіть цей фриз: 2 форми із різними кольорами або знаками."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
-"Запам'ятайте і скопіюйте цей фриз: 2 форми із різними кольорами або знаками."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr "Скопіюйте цей фриз: 3 або 4 форми із різними кольорами або знаками."
+msgstr ""
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9814,8 +10023,6 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
-"Скопіюйте цей фриз: 3 або 4 форми із 2 розмірами і, можливо, однаковими "
-"кольорами або знаками."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9823,14 +10030,11 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
-"Скопіюйте і завершіть цей фриз: 3 або 4 форми із 2 розмірами і, можливо, "
-"однаковими кольорами або знаками."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
-"Скопіюйте цей фриз: довільна комбінація форм, кольорів або знаків і розмірів."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9839,8 +10043,6 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
-"Скопіюйте і доповніть цей фриз: довільна комбінація форм, кольорів або "
-"знаків та розмірів."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -13912,21 +14114,23 @@ msgstr "1 не є простим числом."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr "%1 не є простим числом, його дільниками є такі числа: %2"
+msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Warning|"
+#| msgid "but %1 is not a multiple of %2."
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "Серед кратних до %1 чисел є %2 або %3, а %4 не є кратним до %5."
+msgstr "але %1 не є кратним до %2."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr "Дільниками %1 є такі числа: %2"
+msgstr ""
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14103,30 +14307,292 @@ msgstr ""
 "1 = 6, 2 × 3 = 6). Отже, 6 — не є простим числом."
 
 #. Activity title
+#: activities/graduated_line_read/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Read a graduated line"
+msgstr ""
+
+#. Help title
+#: activities/graduated_line_read/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Read values on a graduated line."
+msgstr ""
+
+#. Help goal
+#: activities/graduated_line_read/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
+msgctxt "ActivityInfo|"
+msgid "Learn to read a graduated line."
+msgstr "Ознайомлення із кругообігом води."
+
+#. Help prerequisite
+#: activities/graduated_line_read/ActivityInfo.qml:21
+#: activities/graduated_line_use/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Even and odd numbers"
+msgctxt "ActivityInfo|"
+msgid "Reading and ordering numbers."
+msgstr "Парні і непарні числа"
+
+#. Help manual
+#: activities/graduated_line_read/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the number pad or your keyboard to enter the value corresponding to the "
+"given spot on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_read/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: enter a number"
+msgctxt "ActivityInfo|"
+msgid "Digits: enter digits"
+msgstr "Цифри: введення числа"
+
+#: activities/graduated_line_read/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace: delete the last digit in your answer"
+msgctxt "ActivityInfo|"
+msgid "Backspace: delete the last digit"
+msgstr "Backspace: вилучення останньої цифри у вашій відповіді"
+
+#: activities/graduated_line_read/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: type your answer"
+msgctxt "ActivityInfo|"
+msgid "Delete: reset your answer"
+msgstr "Цифри: введення вашої відповіді"
+
+#: activities/graduated_line_read/ActivityInfo.qml:28
+#: activities/graduated_line_use/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: validate your answer"
+msgctxt "ActivityInfo|"
+msgid "Space, Return or Enter: validate your answer"
+msgstr "Пробіл або Enter: перевірити вашу відповідь"
+
+#: activities/graduated_line_read/graduated_line_read.js:116
+msgctxt "graduated_line_read|"
+msgid "(variable boundaries)"
+msgstr ""
+
+#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the rust butterfly"
+msgctxt "GraduatedLineRead|"
+msgid "Find the requested number."
+msgstr "Знайдіть жовтаво-брунатного метелика"
+
+#: activities/graduated_line_read/resource/1/Data.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 5."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 7."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 10."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 20."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 50."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 100."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/7/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 1 000."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 10 000."
+msgstr "Числа від %1 до %2."
+
+#: activities/graduated_line_read/resource/9/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 1 000 000."
+msgstr "Числа від %1 до %2."
+
+#. Activity title
+#: activities/graduated_line_use/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Use a graduated line"
+msgstr ""
+
+#. Help title
+#: activities/graduated_line_use/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Place values on a graduated line."
+msgstr ""
+
+#. Help goal
+#: activities/graduated_line_use/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to use a calendar."
+msgctxt "ActivityInfo|"
+msgid "Learn to use a graduated line."
+msgstr "Навчання користуванню календарем."
+
+#. Help manual
+#: activities/graduated_line_use/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the arrows to move the cursor to the position corresponding to the given "
+"value on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_use/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: move the spaceship"
+msgctxt "ActivityInfo|"
+msgid "Left and Right arrows: move the cursor"
+msgstr "→ і ←: пересування космічного корабля"
+
+#: activities/graduated_line_use/GraduatedLineUse.qml:10
+msgctxt "GraduatedLineUse|"
+msgid "Place the given number on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_use/resource/1/Data.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Ascending order, 5 defined numbers between 1 and 5."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 5."
+msgstr "За зростанням, 5 визначених чисел від 1 до 5."
+
+#: activities/graduated_line_use/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 7."
+msgstr "Вгадайте число від 1 до %1."
+
+#: activities/graduated_line_use/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 10."
+msgstr "Вгадайте число від 1 до %1."
+
+#: activities/graduated_line_use/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 20 and 29."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 20."
+msgstr "Результат від 20 до 29."
+
+#: activities/graduated_line_use/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 30 and 50."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 50."
+msgstr "Результат від 30 до 50."
+
+#: activities/graduated_line_use/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 30 and 50."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 100."
+msgstr "Результат від 30 до 50."
+
+#: activities/graduated_line_use/resource/7/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 1 000."
+msgstr ""
+
+#: activities/graduated_line_use/resource/8/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 10 000."
+msgstr ""
+
+#: activities/graduated_line_use/resource/9/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 1 000 000."
+msgstr ""
+
+#. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr "Граматичний аналіз"
+msgstr ""
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr "Визначте граматичні класи у вказаних реченнях."
+msgstr ""
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr "Вивчення ідентифікації за граматичними класами."
+msgstr ""
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Пов'яжіть граматичні класи із відповідними словами."
+msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14134,25 +14600,26 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Виберіть граматичний клас зі списку, а потім позначте поле під словом, щоб "
-"пов'язати його із класом."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr "Не заповнюйте, якщо не відповідає жоден клас."
+msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr "↑ і ↓ та табуляція для перемикання між класами і словами"
+msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "← і →: вибрати елемент у класах і словах"
+msgstr "← і →: вибрати кнопку символу"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14161,30 +14628,31 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Пробіл: пов'язати позначений клас із позначеним словом, а потім позначити "
-"наступне слово"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Backspace: позначає попереднє слово"
+msgstr "Backspace: вилучення останньої цифри у вашій відповіді"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr "Граматичний аналіз"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Вивчення ідентифікації за граматичними класами."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "Знайдіть усі слова, що належать до наданого граматичного класу."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14192,23 +14660,21 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Виберіть граматичний клас зі списку, потім позначте поле під словом, щоб "
-"пов'язати його із класом."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Не заповнюйте, якщо не відповідає жоден клас."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr "Граматичні класи"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Знайдіть усі слова, що належать до наданого граматичного класу."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14216,30 +14682,31 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Виберіть граматичний клас зі списку, потім позначте поле під словом, щоб "
-"пов'язати його із класом."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Не заповнюйте, якщо не відповідає жоден клас."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:421
+#, fuzzy
+#| msgctxt "Admin|"
+#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "Порожньо"
+msgstr "порожньо"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr "Граматичні класи"
+msgstr ""
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr "Пов'яжіть граматичні класи із відповідними словами."
+msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14247,13 +14714,11 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Виберіть граматичний клас зі списку, потім позначте поле під словом, щоб "
-"пов'язати його із класом."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Не заповнюйте, якщо не відповідає жоден клас."
+msgstr ""
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14409,94 +14874,109 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr "Здогадайка 24"
+msgstr ""
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr "Обчислення з результатом 24."
+msgstr ""
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Вивчіть обчислення із чотирма операторами."
+msgstr "Вправи на алгебраїчні обчислення із чотирма операторами."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr ""
-"Можливість виконувати обчислення з додаванням, відніманням, множенням і "
-"діленням."
+msgstr "Вправи на додавання, віднімання, множення і ділення."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
-"Скористайтеся чотирма числами із вказаними операторами для отримання 24."
 
 #: activities/guess24/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Клавіші зі стрілками: навігація між числами і операторами"
+msgstr "← і →: навігація в області"
 
 #: activities/guess24/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr ""
-"Пробіл, Return або Enter: вибір або скасування вибору поточного значення або "
-"оператора"
+msgstr "Пробіл або Enter: позначення або розташовування елемента"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr "Клавіші операторів (+, -, *, /): вибір оператора"
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace або Delete: скасування останньої дії"
+msgstr "Backspace або Delete: скасувати"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr "Табуляція: перемикання між числами і операторами"
+msgstr ""
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
-"Скористайтеся чотирма числами із вказаними операторами для отримання 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr "Розв'язуване з + і -."
+msgstr ""
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr "Розв'язуване з +, - і ×."
+msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Потрібне множення."
+msgstr "Множення."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Розв'язуване з усіма операторами."
+msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Потрібне ділення."
+msgstr "Ділення."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15283,6 +15763,9 @@ msgstr "Знайдіть банджо"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
 msgstr "Знайдіть бонго"
@@ -16401,7 +16884,7 @@ msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Ліва рука"
 
-#: activities/leftright/Leftright.qml:161
+#: activities/leftright/Leftright.qml:164
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Права рука"
@@ -18476,9 +18959,12 @@ msgid "Copyright: %1"
 msgstr "Авторські права: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Фільтр складності"
+msgstr "Фільтр складності:"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18486,9 +18972,12 @@ msgid "Language selector"
 msgstr "Вибір мови"
 
 #: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Увімкнути автоматичне отримання і оновлення зовнішніх ресурсів"
+msgstr "Увімкнути автоматичне отримання і оновлення звукових файлів"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19544,7 +20033,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr "Підсвітити наступну точку"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -25113,12 +25602,17 @@ msgstr "Для розгадування загадки потрібне терп
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Виберіть число або символ у списку і клацніть на місці його призначення. "
+"Виберіть число або символ ліворуч і клацніть на місці його призначення. "
 "GCompris не дозволить вам ввести некоректну відповідь."
 
 #: activities/sudoku/resource/1/Data.qml:13
@@ -25740,36 +26234,58 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Наберіть слово повністю, доки воно падає на землю."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
-#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--start-level level) to start GCompris at specific "
+"level (needs to be used with --launch activity option)"
+msgstr ""
+"Новий параметр командного рядка (--difficulty {значення|min-max}) для "
+"запуску GCompris із вказаним рівнем складності вправ"
+
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for: Slovenian, German, Galician."
+msgctxt "ChangeLog|"
+msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgstr "Додано переклади такими мовами: словенською, німецькою, галісійською."
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Багато поліпшень у зручності користування"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
-#: core/ChangeLog.qml:97 core/ChangeLog.qml:103
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
+#: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Багато нових малюнків"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Багато виправлень вад"
 
-#: core/ChangeLog.qml:37
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Додано переклади арабською мовою і есперанто"
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:40 core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Багато оновлень перекладів"
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -25778,22 +26294,22 @@ msgstr ""
 "Новий параметр командного рядка (--difficulty {значення|min-max}) для "
 "запуску GCompris із вказаним рівнем складності вправ"
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Виправлено ваду у вправі з порівняння"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "До географічної вправи додано карту Іспанії"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Додано озвучення для української"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25802,7 +26318,7 @@ msgstr ""
 "Новий параметр командного рядка для показу списку усіх вправ та запуску "
 "специфічної вправи"
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25810,31 +26326,31 @@ msgid ""
 msgstr ""
 "Зменшено розмір пакунків та зовнішнього набору зображень для усіх платформ"
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Удосконалено якість зображено у декількох вправах"
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Виправлено деякі переходи у вправах renewable_energy/watercycle на деяких "
 "платформах"
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Усунено непрацездатність сліпих клавіш у Linux у вправах із набирання тексту"
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Виправлено скидання рівнів при зміні рівня вручну у вправі на логічні зв'язки"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25842,37 +26358,37 @@ msgstr ""
 "Виправлено вправи на послідовність абетки, парні і непарні числа та "
 "упорядковування чисел."
 
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:84
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Декілька виправлень вад"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Оновлено переклад російською"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Нове озвучування для норвезької"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Додано переклади бретонською, чеською та македонською мовами."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Додано переклад азербайджанською мовою"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Нові карти і оновлення карт для географічних вправ"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25881,7 +26397,7 @@ msgstr ""
 "Новий набір даних із циклами для програмованого лабіринту, уможливлення "
 "перекладу картинок у підручнику"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25890,57 +26406,57 @@ msgstr ""
 "Додавання рівня для вивчення замкнених електричних кіл у вправі з аналогової "
 "електроніки"
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Нове меню параметрів вправи із вибором набору даних"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Нові підкатегорії упорядковування вправ"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Додано переклад македонською мовою."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Нові вправи — «Програмований лабіринт» та «Дитяча танграма»"
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Нові параметри фонової музики та гучності."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Новий параметр швидкості у декількох вправах."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Новий параметр гри у шахи для показу битих фігур."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Нові зображення у іграх «Кольори», «Складні кольори» та «Ціль»."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Нове озвучування для американської англійської."
 
-#: core/ChangeLog.qml:115 core/ChangeLog.qml:123
+#: core/ChangeLog.qml:117 core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Багато незначних виправлень і поліпшень."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25949,17 +26465,17 @@ msgstr ""
 "Оновлено переклади декількома мовами (бретонською, бразильською "
 "португальською, фінською тощо)."
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Додано набір даних для вправи «Натисніть літеру» російською мовою."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Мовні вправи тепер доступні голландською."
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25968,19 +26484,19 @@ msgstr ""
 "Об'єднання норвезьких губерній Нур-Треннелаг і Сер-Треннелаг до губернії "
 "Треннелаг у вправі з географії."
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Виправлено вправи з азбуки Брайля, у яких нумерація комірок починається з 1, "
 "а не з 0."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Додано переклади баскською, угорською та малаялам."
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25989,48 +26505,48 @@ msgstr ""
 "Завантаження і збереження створеного (Дитячий текстовий процесор, Рівновага "
 "у скриньці та Композиція на піаніно)."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Додано переклад шотландською гельською мовою."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "До налаштувань додано сторінку ліцензування."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Декілька змін у компонуванні з метою поліпшити ергономічність."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Мовні вправи тепер доступні польською, шведською та українською мовами."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Можливість пошуку."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Журнал змін."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Багато невеличких виправлень."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Мовні вправи тепер доступні французькою."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26040,7 +26556,7 @@ msgstr ""
 "виконання певних дій (наприклад завантаження вправи), яке триває декілька "
 "секунд."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26050,12 +26566,12 @@ msgstr ""
 "китайською, фінською, (перекладено 92%), російською (перекладено 98%), "
 "словацькою (перекладено 92%), турецькою."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Додано переклади такими мовами: словенською, німецькою, галісійською."
 
-#: core/ChangeLog.qml:184
+#: core/ChangeLog.qml:186
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -26076,11 +26592,14 @@ msgstr ""
 "встановлено у вашій системі."
 
 #: core/core.js:225
+#, fuzzy
+#| msgctxt "core|"
+#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
 "Щоб отримати потрібні звукові файли, скористайтеся діалоговим вікном "
-"налаштовування програми."
+"параметрів програми."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26211,7 +26730,16 @@ msgstr ""
 "«Список побажань» («Wishlist»)."
 
 #: core/DialogAbout.qml:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
+#| "projects in which you can participate.<br /><br />If you need more "
+#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
+#| "provide you with what you need."
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26223,8 +26751,8 @@ msgid ""
 "what you need."
 msgstr ""
 "Не обов'язково бути програмістом, щоб належати до Команди KDE. Можете "
-"приєднатися до команд, що перекладають інтерфейс програм. Можете "
-"забезпечувати користувачів графікою, темами, звуками та вдосконаленою "
+"приєднатися до національних команд, що перекладають інтерфейс програм. "
+"Можете забезпечувати користувачів графікою, темами, звуками та вдосконаленою "
 "документацію. Вам вирішувати!<br /><br />Завітайте на сторінку <a href="
 "\"%1\">%1</a> щодо інформації про деякі проєкти, у яких можна взяти участь."
 "<br /><br />Якщо ви потребуєте більше інформації або документації, "
@@ -26440,13 +26968,13 @@ msgstr "Контрольна сума отриманого файла не зб�
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr "Не знайдено озвучення для %1."
+msgstr ""
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr "Не знайдено даних для %1."
+msgstr ""
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26626,17 +27154,16 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
-"Вказує, на якому рівні слід розпочати вправу. Буде використано, лише якщо "
-"використано параметр --launch."
 
 #: core/main.qml:269
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr ""
-"Хочете автоматично отримувати або оновлювати вказані нижче зовнішні дані під "
-"час запуску GCompris?"
+msgstr "Хочете отримати вказані нижче зовнішні дані?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26674,14 +27201,20 @@ msgid "You are running GCompris for the first time."
 msgstr "Ви запустили GCompris вперше."
 
 #: core/main.qml:324
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "You should verify that your application settings especially your language "
+#| "is set correctly, and that all language specific sound files are "
+#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Вам слід перевірити, чи належним чином встановлено параметри вашої програми, "
-"особливо параметри мови. Зробити це можна за допомогою діалогового вікна "
-"налаштовування."
+"особливо параметри мови. І те, чи встановлено усі специфічні для мови "
+"звукові файли. Зробити це можна за допомогою діалогового вікна параметрів."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -26705,15 +27238,16 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
-"Для деяких вправ доступним є новий набір даних? Хочете відновити початковий "
-"набір даних для цих вправ?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr "Застосувати"
+msgstr ""
 
 #: core/main.qml:390
+#, fuzzy
+#| msgctxt "DialogChooseLevel|"
+#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Скасувати"
@@ -26743,10 +27277,6 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Почати"
 
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
 #~ msgstr "1791, Граф де Сіврак, «Селярифер»"
@@ -26771,35 +27301,9 @@ msgstr "Почати"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "і %1 є дільниками %2."
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn to classify words according to their nature (grammatical class)."
-#~ msgstr "Вивчення класифікації слів за їхньою природою (граматичним класом)."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Classify words according to their nature (grammatical class)."
-#~ msgstr "Класифікуйте слова за їхньою природою (граматичним класом)."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Assigns to each requested word a grammatical class."
-#~ msgstr "Пов'язує кожне зі слів із граматичним класом."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Classify words according to their nature."
-#~ msgstr "Класифікуйте слова за їхньою природою."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid ""
-#~ "Learn to classify words according to their nature (grammatical class)."
-#~ msgstr "Вивчення класифікації слів за їхньою природою (граматичним класом)."
-
-#~ msgctxt "grammar_analysis|"
-#~ msgid "Assign to each word a grammatical class from the list provided."
-#~ msgstr "Пов'язати кожне зі слів із граматичним класом із наданого списку."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn grammatical classes."
-#~ msgstr "Вивчення граматичних класів."
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #~ msgctxt "Data|"
 #~ msgid "3 decimal places between 0 and 999."

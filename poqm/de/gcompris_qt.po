@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-24 21:30+0200\n"
+"PO-Revision-Date: 2023-06-13 22:33+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -28,6 +28,171 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
 "X-Generator: Lokalize 23.11.70\n"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:19
+#: activities/clickanddraw/ActivityConfig.qml:21
+#: activities/drawletters/ActivityConfig.qml:21
+#: activities/drawnumbers/ActivityConfig.qml:21
+#: activities/enumerate/ActivityConfig.qml:21
+#: activities/erase/ActivityConfig.qml:21
+#: activities/erase_2clic/ActivityConfig.qml:21
+#: activities/erase_clic/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
+msgctxt "ActivityConfig|"
+msgid "Automatic"
+msgstr "Automatisch"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:20
+#: activities/enumerate/ActivityConfig.qml:22
+msgctxt "ActivityConfig|"
+msgid "OK button"
+msgstr "OK-Knopf"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:30
+#: activities/enumerate/ActivityConfig.qml:32
+msgctxt "ActivityConfig|"
+msgid "Validate answers"
+msgstr "Überprüfe Antworten"
+
+#. Activity title
+#: activities/adjacent_numbers/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "ActivityInfo|"
+msgid "Find the adjacent numbers"
+msgstr "Finde beide Zahlen."
+
+#. Help title
+#: activities/adjacent_numbers/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "ActivityInfo|"
+msgid "Find the missing adjacent numbers."
+msgstr "Finde beide Zahlen."
+
+#. intro: "Find the missing numbers." Help goal
+#: activities/adjacent_numbers/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about prime numbers."
+msgctxt "ActivityInfo|"
+msgid "Learn to order numbers."
+msgstr "Lerne Primzahlen."
+
+#. Help manual
+#: activities/adjacent_numbers/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare the numbers and choose the corresponding sign."
+msgctxt "ActivityInfo|"
+msgid "Find the requested numbers and drag them to the corresponding spot."
+msgstr "Vergleiche die Zahlen und wähle das entsprechende Zeichen."
+
+#: activities/adjacent_numbers/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 1 and 10."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/adjacent_numbers/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 0 and 20."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 0 and 100."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the next number."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:27
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the previous number."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:40
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the in-between number."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:53
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the missing numbers."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:66
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the next numbers."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:79
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the previous numbers."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:105
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the in-between numbers."
+msgstr "Finde beide Zahlen."
+
+#: activities/adjacent_numbers/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between -10 and -1."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/adjacent_numbers/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between -10 and 10."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/adjacent_numbers/resource/5/Data.qml:53
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the missing numbers"
+msgstr "Finde beide Zahlen."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -91,6 +256,8 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:27
 #: activities/gnumch-multiples/ActivityInfo.qml:28
 #: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/graduated_line_read/ActivityInfo.qml:24
+#: activities/graduated_line_use/ActivityInfo.qml:24
 #: activities/grammar_analysis/ActivityInfo.qml:29
 #: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
@@ -3110,13 +3277,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr "Calcudoku"
+msgstr ""
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Ein Calcudoku lösen."
+msgstr ""
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3158,39 +3325,27 @@ msgstr "Kleine Gitter."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Kleine Gitter."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Kleine Gitter."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Kleine Gitter."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Kleine Gitter."
+msgstr ""
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3249,37 +3404,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Leertaste oder Eingabetaste: Antwort überprüfen"
 
-#: activities/calendar/Calendar.qml:309
+#: activities/calendar/Calendar.qml:306
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sonntag"
 
-#: activities/calendar/Calendar.qml:310
+#: activities/calendar/Calendar.qml:307
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Montag"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:308
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Dienstag"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Mittwoch"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:310
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Donnerstag"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:311
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Freitag"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:312
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Samstag"
@@ -4578,15 +4733,24 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Klicke auf den OK-Knopf, um deine Antwort zu überprüfen."
 
 #: activities/chronos/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
+#| "Vegastrike which are released under the GPL license. The transportation "
+#| "images are copyright Franck Doucet. Dates of Transportation are based on "
+#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Die Fotografie des Mondes steht unter dem Copyright der NASA. Die Bilder der "
-"Verkehrsmittel stehen unter dem Copyright von Frank Doucet. Die Jahreszahlen "
-"der Verkehrsmittel stammen von &lt;https://www.wikipedia.org&gt;."
+"Die Fotografie des Mondes steht unter dem Copyright der NASA. Die "
+"Weltraumgeräusche stammen aus Tuxpaint und Vegastrike, die beide unter der "
+"GPL veröffentlicht wurden. Die Bilder der Verkehrsmittel stehen unter dem "
+"Copyright von Frank Doucet. Die Jahreszahlen der Verkehrsmittel stammen von "
+"&lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4968,18 +5132,6 @@ msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
 msgstr "Klicke auf einen Großbuchstaben"
 
-#: activities/clickanddraw/ActivityConfig.qml:21
-#: activities/drawletters/ActivityConfig.qml:21
-#: activities/drawnumbers/ActivityConfig.qml:21
-#: activities/enumerate/ActivityConfig.qml:21
-#: activities/erase/ActivityConfig.qml:21
-#: activities/erase_2clic/ActivityConfig.qml:21
-#: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:22
-msgctxt "ActivityConfig|"
-msgid "Automatic"
-msgstr "Automatisch"
-
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
 #: activities/drawnumbers/ActivityConfig.qml:22
@@ -5126,12 +5278,12 @@ msgstr ""
 "Der kürzeste Zeiger zeigt die Stunden an, ein längerer Zeiger zeigt die "
 "Minuten an und der längste Zeiger zeigt die Sekunden an."
 
-#: activities/clockgame/Clockgame.qml:106
+#: activities/clockgame/Clockgame.qml:109
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Stelle die Uhr auf:"
 
-#: activities/clockgame/Clockgame.qml:109
+#: activities/clockgame/Clockgame.qml:112
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5139,7 +5291,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n Stunde"
 msgstr[1] "%n Stunden"
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5147,7 +5299,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n Minute"
 msgstr[1] "%n Minuten"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5630,14 +5782,14 @@ msgstr ""
 "Elements"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:44
+#: activities/crane/crane.js:41
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 msgstr "rot;box;arm;bus;tag;hut;eis;alt;und;der;die;das;ohr;opa;oma"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:51
+#: activities/crane/crane.js:48
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5647,7 +5799,7 @@ msgstr ""
 "bild;sein;papa;mama;kind"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:58
+#: activities/crane/crane.js:55
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6655,16 +6807,6 @@ msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
 msgstr ""
 "Male die Zahlen indem du die Punkte in der richtigen Reihenfolge verbindest."
-
-#: activities/enumerate/ActivityConfig.qml:22
-msgctxt "ActivityConfig|"
-msgid "OK button"
-msgstr "OK-Knopf"
-
-#: activities/enumerate/ActivityConfig.qml:32
-msgctxt "ActivityConfig|"
-msgid "Validate answers"
-msgstr "Überprüfe Antworten"
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -9438,7 +9580,7 @@ msgid ""
 msgstr ""
 "Wähle die passende Anzahl von Teilen, wie in der Anleitung beschrieben."
 
-#: activities/fractions_create/fractions_create.js:77
+#: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Finde den dargestellten Bruch."
@@ -9850,10 +9992,10 @@ msgstr "Leertaste: Auswahl eines Elements"
 #: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
+#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Rücktaste oder Löschtaste: Zurücknehmen"
+msgstr "Leertaste oder Eingabetaste: Auswahl eines Elements aus der Liste"
 
 #: activities/frieze/ActivityInfo.qml:28
 #, fuzzy
@@ -14260,6 +14402,268 @@ msgstr ""
 "keine Primzahl."
 
 #. Activity title
+#: activities/graduated_line_read/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Read a graduated line"
+msgstr ""
+
+#. Help title
+#: activities/graduated_line_read/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Read values on a graduated line."
+msgstr ""
+
+#. Help goal
+#: activities/graduated_line_read/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
+msgctxt "ActivityInfo|"
+msgid "Learn to read a graduated line."
+msgstr "Lerne den Wasserkreislauf."
+
+#. Help prerequisite
+#: activities/graduated_line_read/ActivityInfo.qml:21
+#: activities/graduated_line_use/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Even and odd numbers"
+msgctxt "ActivityInfo|"
+msgid "Reading and ordering numbers."
+msgstr "Gerade und ungerade Zahlen"
+
+#. Help manual
+#: activities/graduated_line_read/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the number pad or your keyboard to enter the value corresponding to the "
+"given spot on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_read/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: enter a number"
+msgctxt "ActivityInfo|"
+msgid "Digits: enter digits"
+msgstr "Zahlen: Eingabe einer Zahl"
+
+#: activities/graduated_line_read/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace: delete the last digit in your answer"
+msgctxt "ActivityInfo|"
+msgid "Backspace: delete the last digit"
+msgstr "Rücktaste: Löscht die letzte Zahl in deiner Eingabe"
+
+#: activities/graduated_line_read/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: type your answer"
+msgctxt "ActivityInfo|"
+msgid "Delete: reset your answer"
+msgstr "Zahlen: Gib deine Antwort ein"
+
+#: activities/graduated_line_read/ActivityInfo.qml:28
+#: activities/graduated_line_use/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: validate your answer"
+msgctxt "ActivityInfo|"
+msgid "Space, Return or Enter: validate your answer"
+msgstr "Leertaste oder Eingabetaste: Antwort überprüfen"
+
+#: activities/graduated_line_read/graduated_line_read.js:116
+msgctxt "graduated_line_read|"
+msgid "(variable boundaries)"
+msgstr ""
+
+#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the rust butterfly"
+msgctxt "GraduatedLineRead|"
+msgid "Find the requested number."
+msgstr "Finde den rostbraunen Schmetterling"
+
+#: activities/graduated_line_read/resource/1/Data.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 5."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 7."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 10."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 20."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 50."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 100."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/7/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 1 000."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 10 000."
+msgstr "Zahlen zwischen %1 und %2."
+
+#: activities/graduated_line_read/resource/9/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 1 000 000."
+msgstr "Zahlen zwischen %1 und %2."
+
+#. Activity title
+#: activities/graduated_line_use/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Use a graduated line"
+msgstr ""
+
+#. Help title
+#: activities/graduated_line_use/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Place values on a graduated line."
+msgstr ""
+
+#. Help goal
+#: activities/graduated_line_use/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to use a calendar."
+msgctxt "ActivityInfo|"
+msgid "Learn to use a graduated line."
+msgstr "Lerne einen Kalender zu benutzen."
+
+#. Help manual
+#: activities/graduated_line_use/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the arrows to move the cursor to the position corresponding to the given "
+"value on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_use/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: move the spaceship"
+msgctxt "ActivityInfo|"
+msgid "Left and Right arrows: move the cursor"
+msgstr "Pfeiltasten links und rechts: Bewegt das Raumschiff"
+
+#: activities/graduated_line_use/GraduatedLineUse.qml:10
+msgctxt "GraduatedLineUse|"
+msgid "Place the given number on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_use/resource/1/Data.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Ascending order, 5 defined numbers between 1 and 5."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 5."
+msgstr "Aufsteigende Reihenfolge, 5 definierte Zahlen zwischen 1 und 5."
+
+#: activities/graduated_line_use/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 7."
+msgstr "Errate eine Zahl zwischen 1 und %1."
+
+#: activities/graduated_line_use/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 10."
+msgstr "Errate eine Zahl zwischen 1 und %1."
+
+#: activities/graduated_line_use/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 20 and 29."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 20."
+msgstr "Ergebnis zwischen 20 und 29."
+
+#: activities/graduated_line_use/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 30 and 50."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 50."
+msgstr "Ergebnis zwischen 30 und 50."
+
+#: activities/graduated_line_use/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 30 and 50."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 100."
+msgstr "Ergebnis zwischen 30 und 50."
+
+#: activities/graduated_line_use/resource/7/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 1 000."
+msgstr ""
+
+#: activities/graduated_line_use/resource/8/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 10 000."
+msgstr ""
+
+#: activities/graduated_line_use/resource/9/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 1 000 000."
+msgstr ""
+
+#. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
@@ -14307,10 +14711,10 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:31
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
+#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Pfeil links und rechts: Nach links und rechts drehen"
+msgstr "Links- und Rechtspfeil: Wähle ein Symbol aus"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14664,12 +15068,9 @@ msgid "Multiplication required."
 msgstr "Multiplikationen."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Kleine Gitter."
+msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
 #, fuzzy
@@ -16598,7 +16999,7 @@ msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Linke Hand"
 
-#: activities/leftright/Leftright.qml:161
+#: activities/leftright/Leftright.qml:164
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Rechte Hand"
@@ -18684,9 +19085,12 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Schwierigkeitsstufen"
+msgstr "Schwierigkeitsstufen:"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -26017,36 +26421,58 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr ""
 "Gib das vollständige Wort ein während es fällt, bevor es den Boden erreicht."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
-#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--start-level level) to start GCompris at specific "
+"level (needs to be used with --launch activity option)"
+msgstr ""
+"Neue Befehlszeilenoption, um alle Aktivitäten aufzulisten und mit einer "
+"bestimmten zu beginnen."
+
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for: Slovenian, German, Galician."
+msgctxt "ChangeLog|"
+msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgstr "Neue Übersetzungen für Slowenisch, Deutsch, Galizisch"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Viele Verbesserungen der Benutzbarkeit"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
-#: core/ChangeLog.qml:97 core/ChangeLog.qml:103
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
+#: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Viele neue Bilder"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Viele Fehlerbereinigungen"
 
-#: core/ChangeLog.qml:37
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Übersetzung für Arabisch und Esperanto hinzugefügt"
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:40 core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Viele aktualisierte Übersetzungen"
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:46
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid ""
@@ -26060,22 +26486,22 @@ msgstr ""
 "Neue Befehlszeilenoption, um alle Aktivitäten aufzulisten und mit einer "
 "bestimmten zu beginnen."
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Problem in der Vergleichsaktivität behoben."
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Karte von Spanien zur Geographie-Aktivität hinzugefügt"
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Stimmen für Ukrainisch hinzugefügt"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -26084,7 +26510,7 @@ msgstr ""
 "Neue Befehlszeilenoption, um alle Aktivitäten aufzulisten und mit einer "
 "bestimmten zu beginnen."
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -26093,32 +26519,32 @@ msgstr ""
 "Die Größe der Pakete für alle Plattformen und der externen Wort-Bilder "
 "reduziert."
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Die Bildqualität wurde bei mehreren Aktivitäten verbessert."
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Einige Übergänge in 'Erneuerbare Energien / Wasserkreislauf' auf einigen "
 "Plattformen korrigiert."
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Deadkeys unter Linux werden jetzt bei Tippaktivitäten korrekt ignoriert."
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Level-Reset beim manuellen Ändern des Levels in logischen Zuordnungen "
 "behoben."
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -26126,37 +26552,37 @@ msgstr ""
 "Alphabetische Reihenfolge korrigiert, gerade und ungerade Zahlen in die "
 "richtige Reihenfolge gebracht."
 
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:84
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Viele Fehlerbehebungen"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Übersetzung für Russisch aktualisiert"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Neue Stimmen für das norwegische Nynorsk"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Übersetzungen für Bretonisch, Tschechisch und Mazedonisch hinzugefügt"
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Übersetzung für Aserbaidschanisch hinzugefügt"
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Neue Karten und Aktualisierung der Karten für Geographieaktivitäten"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26165,7 +26591,7 @@ msgstr ""
 "Neuer Datensatz mit Schleifenoperationen zum Programmieren von Labyrinth und "
 "Make Tutorial-Bilder übersetzt"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -26174,58 +26600,58 @@ msgstr ""
 "Neue Ebene zum Lehren der Spannungsquellenschleife in der analogen "
 "ElektrizitätAktivität hinzugefügt."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Neues Menü für  Aktivitäteneinstellungen mit Auswahl von Datensätzen"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Neue Unterkategorien zum Organisieren von Aktivitäten"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Neue Übersetzung für Mazedonisch."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Neue Aktivitäten: Programmier-Labyrinth und Einfaches Puzzle"
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Neu Hintergrundmusik und Lautstärkeeinstellung."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Neue Geschwindigkeitseinstellungen in mehreren Aktivitäten."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Neue Einstellung im Schachspiel, um geschlagene Figuren anzuzeigen."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 "Neue Bilder in den Aktivitäten Farben, schwierige Farben und im Dartspiel."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Neue Stimmen für Englisch"
 
-#: core/ChangeLog.qml:115 core/ChangeLog.qml:123
+#: core/ChangeLog.qml:117 core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Viele kleine Fehlerkorrekturen und Verbesserungen."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26234,17 +26660,17 @@ msgstr ""
 "Übersetzung für viele Sprachen aktualisiert (Bretonisch, Brasilianisches "
 "Portugiesisch, Finnisch...)."
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Russischer Datensatz für den Klick auf Buchstaben-Aktivität addiert."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Die Sprachaktivität ist jetzt auch in Niederländisch verfügbar."
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26253,19 +26679,19 @@ msgstr ""
 "Verbinde in der die norwegischen Länder Nord-Trøndelag und Sør-Trøndelag zu "
 "Trøndelag"
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Fehlerbehebung in den Braille-Aktivitäten, wo die Zellen mit 1 starten, "
 "nicht mit 0."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Neue Übersetzungen für Baskisch, Ungarisch and Malayalam."
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26274,49 +26700,49 @@ msgstr ""
 "Laden/Speichern der Kreationen (Eine einfache Textverarbeitung, Kugelkiste, "
 "Piano Komposition)"
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Neue Übersetzung für Schottisch-Gälisch."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Eine Lizenzseite wurde zu den Einstellungen hinzugefügt."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Viele Änderungen am Layout zur Verbesserung der Ergonomie."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "Die Sprachaktivität ist jetzt auch in Polnisch, Schwedisch und Ukrainisch "
 "verfügbar."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Suchfunktion."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Ein Änderungsprotokoll."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Viele kleine Fehlerkorrekturen."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Die Sprachaktivität ist jetzt auch in Französisch verfügbar."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26326,7 +26752,7 @@ msgstr ""
 "Aktionen (wie z.B. das Laden einer Aktivität) stattfinden, die einige "
 "Sekunden dauern können."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26336,12 +26762,12 @@ msgstr ""
 "Chinesisch, Finnisch (92% abgeschlossen), Russisch (98% abgeschlossen), "
 "Slowakisch (92% abgeschlossen), Türkisch"
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Neue Übersetzungen für Slowenisch, Deutsch, Galizisch"
 
-#: core/ChangeLog.qml:184
+#: core/ChangeLog.qml:186
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -27055,10 +27481,6 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
 
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
 #~ msgstr "1791 Die Celerifere von Comte de Sivrac"
@@ -27082,6 +27504,10 @@ msgstr "Start"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "und %1 sind die Teiler von %2."
+
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -27154,8 +27580,21 @@ msgstr "Start"
 #~ msgstr "Mühle (mit einem Freund)"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Lerne die Zahlen"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Spiele mit dem Rechner. Klicke die Position in der Reihe, in der du einen "
+#~ "Spielstein ablegen möchtest. Der erste Spieler mit 4 Steinen in einer "
+#~ "Reihe gewinnt."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Spiel Dame gegen den Rechner"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Spiel Schach gegen deinen Freund"
 
 #~ msgctxt "board1|"
 #~ msgid "The horse goes 'neigh! neigh!'. Horses usually sleep standing up."
@@ -27254,13 +27693,8 @@ msgstr "Start"
 #~ "um unter anderem Kleidung und Decken herzustellen."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Spiele mit dem Rechner. Klicke die Position in der Reihe, in der du einen "
-#~ "Spielstein ablegen möchtest. Der erste Spieler mit 4 Steinen in einer "
-#~ "Reihe gewinnt."
+#~ msgid "Learn digits"
+#~ msgstr "Lerne die Zahlen"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27269,15 +27703,6 @@ msgstr "Start"
 #~ msgstr ""
 #~ "Spiele gegen den Rechner. Wechsle dich mit dem Rechner ab, um zuerst alle "
 #~ "Steine auf dem Brett zu platzieren und dann mit den Steinen zu ziehen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click on the square which you want "
-#~ "to mark. The first player to create a line of 3 marks wins."
-#~ msgstr ""
-#~ "Spiele mit dem Rechner Klicke die Position in der Reihe, in der du einen "
-#~ "Spielstein ablegen möchtest. Der erste Spieler mit 3 Steinen in einer "
-#~ "Reihe gewinnt."
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -27298,6 +27723,15 @@ msgstr "Start"
 #~ msgstr ""
 #~ "Die|Sonne|scheint|hell|am|Himmel.\n"
 #~ "Kinder|spielen|gerne|draußen|in|der|Dämmerung."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click on the square which you want "
+#~ "to mark. The first player to create a line of 3 marks wins."
+#~ msgstr ""
+#~ "Spiele mit dem Rechner Klicke die Position in der Reihe, in der du einen "
+#~ "Spielstein ablegen möchtest. Der erste Spieler mit 3 Steinen in einer "
+#~ "Reihe gewinnt."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27328,14 +27762,6 @@ msgstr "Start"
 #~ "art4apps.org/."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Spiel Dame gegen den Rechner"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Spiel Schach gegen deinen Freund"
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"
 #~ msgstr "Zeichnung von Stephane Cabaraux"
 
@@ -27344,1429 +27770,68 @@ msgstr "Start"
 #~ msgstr "Zeichnung von Stephane Cabaraux."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Arrows: navigate inside selected area"
-#~ msgstr "Pfeiltasten: Navigation in einem ausgewählten Bereich"
-
-#~ msgctxt "ProgrammingMaze|"
-#~ msgid ""
-#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#~ "button to reload the level."
-#~ msgstr ""
-#~ "Klicke auf Tux oder drücke die Eingabetaste, um ihn zurückzusetzen, oder "
-#~ "klicke auf den Knopf Neu laden, um die Spielstufe neu zu laden."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Dezimales Zahlensystem."
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "Maus-Handhabung"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "Kenntnis des Alphabets"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading."
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Lesen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Zählen"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "Buchstaben vergleichen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Move, drag and drop using mouse."
-#~ msgstr "Verschieben, Ziehen und Ablegen mit der Maus."
-
-#~ msgctxt "ActivityInfo|"
+#~ msgctxt "TutorialDataset|"
 #~ msgid ""
-#~ "You are provided with few alphabets. Drag and drop the alphabets in their "
-#~ "correct position to reorder the letters in ascending or descending order "
-#~ "as instructed."
+#~ "Use the gates so that the bulb glows only when the switch is turned off "
+#~ "and remains off when the switch is turned on."
 #~ msgstr ""
-#~ "Es werden einige Buchstaben angezeigt. Ziehe die Buchstaben an die "
-#~ "richtige Stelle, um sie in aufsteigender oder absteigender Reihenfolge "
-#~ "wie vorgegeben anzuordnen."
-
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
-#~ msgstr ""
-#~ "Ziehe die Buchstaben in absteigender Reihenfolge an die richtige Stelle."
-
-#~ msgctxt "board16_0|"
-#~ msgid "Dobrogea"
-#~ msgstr "Dobrogea"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Nordschottland"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Orkney"
-#~ msgstr "Orkney"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Shetland"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Caithness"
-#~ msgstr "Caithness"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Sutherland"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Ross"
-#~ msgstr "Ross"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Inverness and Nairn"
-#~ msgstr "Inverness und Nairn"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Lochalsh, Badenoch, Cromarty and Strathspey"
-#~ msgstr "Lochalsh, Badenoch, Cromarty und Strathspey"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Lochaber"
-#~ msgstr "Lochaber"
-
-#~ msgctxt "board15_0|"
-#~ msgid "Skye"
-#~ msgstr "Skye"
-
-#~ msgctxt "board15_1|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Südschottland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Nordschottland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Aberdeenshire"
-#~ msgstr "Aberdeenshire"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Aberdeen"
-#~ msgstr "Aberdeen"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Moray"
-#~ msgstr "Moray"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Na h-Eileanan Siar"
-#~ msgstr "Na h-Eileanan Siar"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Orkney"
-#~ msgstr "Orkney"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Shetland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Caithness"
-#~ msgstr "Caithness"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Sutherland"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Ross"
-#~ msgstr "Ross"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Inverness and Nairn"
-#~ msgstr "Inverness und Nairn"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Lochalsh, Badenoch, Cromarty and Strathspey"
-#~ msgstr "Lochalsh, Badenoch, Cromarty und Strathspey"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Lochaber"
-#~ msgstr "Lochaber"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Skye"
-#~ msgstr "Skye"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Südschottland"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Schottische Grenzen"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Lothian"
-#~ msgstr "East Lothian"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Midlothian"
-#~ msgstr "Midlothian"
-
-#~ msgctxt "board15_3|"
-#~ msgid "West Lothian"
-#~ msgstr "West Lothian"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Edinburgh"
-#~ msgstr "Edinburgh"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Falkirk"
-#~ msgstr "Falkirk"
-
-#~ msgctxt "board15_3|"
-#~ msgid "South Lanarkshire"
-#~ msgstr "South Lanarkshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "North Lanarkshire"
-#~ msgstr "North Lanarkshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Dumfries and Galloway"
-#~ msgstr "Dumfries und Galloway"
-
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "South Ayrshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "East Ayrshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Glasgow"
-#~ msgstr "Glasgow"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Dunbartonshire"
-#~ msgstr "East Dunbartonshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "West Dunbartonshire"
-#~ msgstr "West Dunbartonshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "East Renfrewshire"
-#~ msgstr "East Renfrewshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Renfrewshire"
-#~ msgstr "Renfrewshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Inverclyde"
-#~ msgstr "Inverclyde"
-
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "North Ayrshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Clackmannanshire"
-#~ msgstr "Clackmannanshire"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Fife"
-#~ msgstr "Fife"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Dundee"
-#~ msgstr "Dundee"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Angus"
-#~ msgstr "Angus"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Perth and Kinross"
-#~ msgstr "Perth und Kinross"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Stirling"
-#~ msgstr "Stirling"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Argyll and Bute"
-#~ msgstr "Argyll und Bute"
-
-#~ msgctxt "board11_0|"
-#~ msgid "Valle d'Aosta"
-#~ msgstr "Aostatal"
-
-#~ msgctxt "board11_0|"
-#~ msgid "Trentino Alto Adige"
-#~ msgstr "Trentino-Südtirol"
-
-#~ msgctxt "board11_0|"
-#~ msgid "Puglia"
-#~ msgstr "Apulien"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Districts of Northern Italy"
-#~ msgstr "Regionen Norditaliens"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Aosta"
-#~ msgstr "Aosta"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Imperia"
-#~ msgstr "Imperia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Savona"
-#~ msgstr "Savona"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Genova"
-#~ msgstr "Genua"
-
-#~ msgctxt "board11_1|"
-#~ msgid "La Spezia"
-#~ msgstr "La Spezia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Verbania"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Vercelli"
-#~ msgstr "Vercelli"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Biella"
-#~ msgstr "Biella"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Novara"
-#~ msgstr "Novara"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Torino"
-#~ msgstr "Turin"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Cuneo"
-#~ msgstr "Cuneo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Asti"
-#~ msgstr "Asti"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Alessandria"
-#~ msgstr "Alessandria"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Piacenza"
-#~ msgstr "Piacenza"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Parma"
-#~ msgstr "Parma"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Reggio Emilia"
-#~ msgstr "Reggio Emilia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Modena"
-#~ msgstr "Modena"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Bologna"
-#~ msgstr "Bologna"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Ferrara"
-#~ msgstr "Ferrara"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Ravenna"
-#~ msgstr "Ravenna"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Forli-Cesena"
-#~ msgstr "Forlì-Cesena"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Rimini"
-#~ msgstr "Rimini"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Varese"
-#~ msgstr "Varese"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Milano"
-#~ msgstr "Mailand"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Pavia"
-#~ msgstr "Pavia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Como"
-#~ msgstr "Como"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Lecco"
-#~ msgstr "Lecco"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Sondrio"
-#~ msgstr "Sondrio"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Bergamo"
-#~ msgstr "Bergamo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Brescia"
-#~ msgstr "Brescia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Lodi"
-#~ msgstr "Lodi"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Cremona"
-#~ msgstr "Cremona"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Mantova"
-#~ msgstr "Mantua"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Bolzano"
-#~ msgstr "Bozen"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Trento"
-#~ msgstr "Trient"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Verona"
-#~ msgstr "Verona"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Vicenza"
-#~ msgstr "Vicenza"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Padua"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Rovigo"
-#~ msgstr "Rovigo"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Venetien"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Treviso"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Belluno"
-#~ msgstr "Belluno"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Pordenone"
-#~ msgstr "Pordenone"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Udine"
-#~ msgstr "Udine"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Gorizia"
-#~ msgstr "Gorizia"
-
-#~ msgctxt "board11_1|"
-#~ msgid "Trieste"
-#~ msgstr "Triest"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Districts of Central Italy"
-#~ msgstr "Regionen Mittelitaliens"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Massa-Carrara"
-#~ msgstr "Massa-Carrara"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Lucca"
-#~ msgstr "Lucca"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pistoia"
-#~ msgstr "Pistoia"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Prato"
-#~ msgstr "Prato"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Firenze"
-#~ msgstr "Florenz"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pisa"
-#~ msgstr "Pisa"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Livorno"
-#~ msgstr "Livorno"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Arezzo"
-#~ msgstr "Arezzo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Siena"
-#~ msgstr "Siena"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Grosseto"
-#~ msgstr "Grosseto"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Terni"
-#~ msgstr "Terni"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Perugia"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pesaro-Urbino"
-#~ msgstr "Pesaro und Urbino"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Ancona"
-#~ msgstr "Ancona"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Macerata"
-#~ msgstr "Macerata"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Fermo"
-#~ msgstr "Fermo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Ascoli Piceno"
-#~ msgstr "Ascoli Piceno"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Viterbo"
-#~ msgstr "Viterbo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Rieti"
-#~ msgstr "Rieti"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Rom"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Frosinone"
-#~ msgstr "Frosinone"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Latina"
-#~ msgstr "Latina"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Teramo"
-#~ msgstr "Teramo"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Pescara"
-#~ msgstr "Pescara"
-
-#~ msgctxt "board11_2|"
-#~ msgid "Chieti"
-#~ msgstr "Chieti"
-
-#~ msgctxt "board11_2|"
-#~ msgid "L Aquila"
-#~ msgstr "L'Aquila"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Districts of Southern Italy"
-#~ msgstr "Regionen Süditaliens"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Sassari"
-#~ msgstr "Sassari"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Olbia-Tempio"
-#~ msgstr "Olbia-Tempio"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Nuoro"
-#~ msgstr "Nuoro"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Oristano"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Ogliastra"
-#~ msgstr "Ogliastra"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Cagliari"
-#~ msgstr "Cagliari"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Medio Campidano"
-#~ msgstr "Medio Campidano"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Carbonia-Iglesias"
-#~ msgstr "Carbonia-Iglesias"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Trapani"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Palermo"
-#~ msgstr "Palermo"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Agrigent"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Caltanissetta"
-#~ msgstr "Caltanissetta"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Enna"
-#~ msgstr "Enna"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Siracusa"
-#~ msgstr "Syrakus"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Ragusa"
-#~ msgstr "Ragusa"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Messina"
-#~ msgstr "Messina"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Reggio Calabria"
-#~ msgstr "Reggio Calabria"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Catanzaro"
-#~ msgstr "Catanzaro"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Crotone"
-#~ msgstr "Crotone"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Cosenza"
-#~ msgstr "Cosenza"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Potenza"
-#~ msgstr "Potenza"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "Matera"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Foggia"
-#~ msgstr "Foggia"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Barletta-Andria-Trani"
-#~ msgstr "Barletta-Andria-Trani"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Bari"
-#~ msgstr "Bari"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Taranto"
-#~ msgstr "Taranto"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Brindisi"
-#~ msgstr "Brindisi"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Lecce"
-#~ msgstr "Lecce"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Isernia"
-#~ msgstr "Isernia"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Campobasso"
-#~ msgstr "Campobasso"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Caserta"
-#~ msgstr "Caserta"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "Benevento"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Avellino"
-#~ msgstr "Avellino"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Napoli"
-#~ msgstr "Neapel"
-
-#~ msgctxt "board11_3|"
-#~ msgid "Salerno"
-#~ msgstr "Salerno"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "Regionen Frankreichs"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Bretagne"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Sachsen"
-#~ msgstr "Sachsen"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Niedersachsen"
-#~ msgstr "Niedersachsen"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Bayern"
-#~ msgstr "Bayern"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Districts of Poland"
-#~ msgstr "Regionen Polens"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Dolnoslaskie"
-#~ msgstr "Dolnoslaskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Zachodnio Pomorskie"
-#~ msgstr "Zachodnio Pomorskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Wielkopolskie"
-#~ msgstr "Wielkopolskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Swietokrzyskie"
-#~ msgstr "Swietokrzyskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "Slaskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Pomorskie"
-#~ msgstr "Pomorskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Podkarpackie"
-#~ msgstr "Podkarpackie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Mazowieckie"
-#~ msgstr "Mazowieckie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Malopolskie"
-#~ msgstr "Malopolskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Lódzkie"
-#~ msgstr "Lódzkie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Lubelskie"
-#~ msgstr "Lubelskie"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Kujawsko-Pomorskie"
-#~ msgstr "Kujawsko-Pomorskie"
-
-#~ msgctxt "board13_0|"
-#~ msgid "Districts of Australia"
-#~ msgstr "Australische Bundesstaaten"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Districts of China"
-#~ msgstr "Chinesische Provinzen"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Xizang"
-#~ msgstr "Tibet"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Districts of Turkey"
-#~ msgstr "Regionen der Türkei"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Osmaniye"
-#~ msgstr "Osmaniye"
-
-#~ msgctxt "board5_0|"
-#~ msgid "Hatay"
-#~ msgstr "Hatay"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Districts of Turkey"
-#~ msgstr "Regionen der Türkei"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "Van"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Tunceli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Trabzon"
-#~ msgstr "Trabzon"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tokat"
-#~ msgstr "Tokat"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sivas"
-#~ msgstr "Sivas"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Şırnak"
-#~ msgstr "Şırnak"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Siirt"
-#~ msgstr "Siirt"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Şanlıurfa"
-#~ msgstr "Şanlıurfa"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Rize"
-#~ msgstr "Rize"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ordu"
-#~ msgstr "Ordu"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Muş"
-#~ msgstr "Muş"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Mardin"
-#~ msgstr "Mardin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Malatya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kilis"
-#~ msgstr "Kilis"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kars"
-#~ msgstr "Kars"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kahramanmaraş"
-#~ msgstr "Kahramanmaraş"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Iğdır"
-#~ msgstr "Iğdır"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Hatay"
-#~ msgstr "Hatay"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Hakkari"
-#~ msgstr "Hakkari"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Gümüşhane"
-#~ msgstr "Gümüşhane"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Giresun"
-#~ msgstr "Giresun"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Gaziantep"
-#~ msgstr "Gaziantep"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Erzurum"
-#~ msgstr "Erzurum"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Erzincan"
-#~ msgstr "Erzincan"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Elazığ"
-#~ msgstr "Elazığ"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Diyarbakır"
-#~ msgstr "Diyarbakır"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bitlis"
-#~ msgstr "Bitlis"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bingöl"
-#~ msgstr "Bingöl"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bayburt"
-#~ msgstr "Bayburt"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Batman"
-#~ msgstr "Batman"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Artvin"
-#~ msgstr "Artvin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ardahan"
-#~ msgstr "Ardahan"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ağrı"
-#~ msgstr "Ağrı"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Adıyaman"
-#~ msgstr "Adıyaman"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Zonguldak"
-#~ msgstr "Zonguldak"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Yozgat"
-#~ msgstr "Yozgat"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Yalova"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Uşak"
-#~ msgstr "Uşak"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Tekirdağ"
-#~ msgstr "Tekirdağ"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sinop"
-#~ msgstr "Sinop"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Samsun"
-#~ msgstr "Samsun"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Sakarya"
-#~ msgstr "Sakarya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Osmaniye"
-#~ msgstr "Osmaniye"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Niğde"
-#~ msgstr "Niğde"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Nevşehir"
-#~ msgstr "Nevşehir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Muğla"
-#~ msgstr "Muğla"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Mersin"
-#~ msgstr "Mersin"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Manisa"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kütahya"
-#~ msgstr "Kütahya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Konya"
-#~ msgstr "Konya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kocaeli"
-#~ msgstr "Kocaeli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kırşehir"
-#~ msgstr "Kırşehir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kırklareli"
-#~ msgstr "Kırklareli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kırıkkale"
-#~ msgstr "Kırıkkale"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kayseri"
-#~ msgstr "Kayseri"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Kastamonu"
-#~ msgstr "Kastamonu"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Karaman"
-#~ msgstr "Karaman"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Karabuk"
-#~ msgstr "Karabuk"
-
-#~ msgctxt "board5_2|"
-#~ msgid "İzmir"
-#~ msgstr "İzmir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "İstanbul"
-#~ msgstr "İstanbul"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Isparta"
-#~ msgstr "Isparta"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Eskişehir"
-#~ msgstr "Eskişehir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Edirne"
-#~ msgstr "Edirne"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Düzce"
-#~ msgstr "Düzce"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Denizli"
-#~ msgstr "Denizli"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Çorum"
-#~ msgstr "Çorum"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Çankırı"
-#~ msgstr "Çankırı"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Çanakkale"
-#~ msgstr "Çanakkale"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bursa"
-#~ msgstr "Bursa"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Burdur"
-#~ msgstr "Burdur"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bolu"
-#~ msgstr "Bolu"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bilecik"
-#~ msgstr "Bilecik"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Bartın"
-#~ msgstr "Bartın"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Balıkesir"
-#~ msgstr "Balıkesir"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Aydın"
-#~ msgstr "Aydın"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Antalya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Ankara"
-#~ msgstr "Ankara"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Amasya"
-#~ msgstr "Amasya"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Aksaray"
-#~ msgstr "Aksaray"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Afyon"
-#~ msgstr "Afyonkarahisar"
-
-#~ msgctxt "board5_2|"
-#~ msgid "Adana"
-#~ msgstr "Adana"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "Indische Bundesstaaten"
-
-#~ msgctxt "board12_0|"
-#~ msgid "Orrisa"
-#~ msgstr "Orrisa"
-
-#~ msgctxt "board10_0|"
-#~ msgid "Washington D.C."
-#~ msgstr "Washington D.C."
+#~ "Nutze die Gatter, so dass das Lämpchen leuchtet, wenn der Schalter "
+#~ "ausgeschaltet ist, und aus bleibt, wenn der Schalter eingeschaltet wird."
 
 #~ msgctxt "board10_1|"
 #~ msgid "United States of America"
 #~ msgstr "Vereinigte Staaten von Amerika"
 
-#~ msgctxt "board10_1|"
-#~ msgid "Washington"
-#~ msgstr "Washington"
+#~ msgctxt "board11_1|"
+#~ msgid "Districts of Northern Italy"
+#~ msgstr "Regionen Norditaliens"
 
-#~ msgctxt "board10_1|"
-#~ msgid "Oregon"
-#~ msgstr "Oregon"
+#~ msgctxt "board11_2|"
+#~ msgid "Districts of Central Italy"
+#~ msgstr "Regionen Mittelitaliens"
 
-#~ msgctxt "board10_1|"
-#~ msgid "Idaho"
-#~ msgstr "Idaho"
+#~ msgctxt "board11_3|"
+#~ msgid "Districts of Southern Italy"
+#~ msgstr "Regionen Süditaliens"
 
-#~ msgctxt "board10_1|"
-#~ msgid "Montana"
-#~ msgstr "Montana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "North Dakota"
-
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "South Dakota"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Nebraska"
-#~ msgstr "Nebraska"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Kansas"
-#~ msgstr "Kansas"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Colorado"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "New Mexico"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Arizona"
-#~ msgstr "Arizona"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "Alaska"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Hawaii"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Texas"
-#~ msgstr "Texas"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Oklahoma"
-#~ msgstr "Oklahoma"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Minnesota"
-#~ msgstr "Minnesota"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Iowa"
-#~ msgstr "Iowa"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Missouri"
-#~ msgstr "Missouri"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Arkansas"
-#~ msgstr "Arkansas"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Louisiana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Mississippi"
-#~ msgstr "Mississippi"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Tennessee"
-#~ msgstr "Tennessee"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Kentucky"
-#~ msgstr "Kentucky"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "Indiana"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Illinois"
-#~ msgstr "Illinois"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Wisconsin"
-#~ msgstr "Wisconsin"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Michigan"
-#~ msgstr "Michigan"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Ohio"
-#~ msgstr "Ohio"
-
-#~ msgctxt "board10_1|"
-#~ msgid "West Virginia"
-#~ msgstr "West Virginia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Virginia"
-#~ msgstr "Virginia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "North Carolina"
-
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "South Carolina"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Georgia"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "Florida"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Alabama"
-#~ msgstr "Alabama"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Maryland"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Jersey"
-#~ msgstr "New Jersey"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Delaware"
-#~ msgstr "Delaware"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Pennsylvania"
-#~ msgstr "Pennsylvania"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New York"
-#~ msgstr "New York"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Vermont"
-#~ msgstr "Vermont"
-
-#~ msgctxt "board10_1|"
-#~ msgid "New Hampshire"
-#~ msgstr "New Hampshire"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Maine"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Washington D.C."
-#~ msgstr "Washington D.C."
-
-#~ msgctxt "board10_1|"
-#~ msgid "California"
-#~ msgstr "Kalifornien"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Nevada"
-#~ msgstr "Nevada"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Utah"
-#~ msgstr "Utah"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Wyoming"
-#~ msgstr "Wyoming"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Massachusetts"
-#~ msgstr "Massachusetts"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Rhode Island"
-
-#~ msgctxt "board10_1|"
-#~ msgid "Connecticut"
-#~ msgstr "Connecticut"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Baja California Norte"
-#~ msgstr "Baja California Norte"
-
-#~| msgctxt "board11_1|"
-#~| msgid "Trieste"
 #~ msgctxt "board12_0|"
-#~ msgid "Timor-Leste"
-#~ msgstr "Osttimor"
+#~ msgid "States of India"
+#~ msgstr "Indische Bundesstaaten"
 
-#~| msgctxt "board10_0|"
-#~| msgid "Indonesia"
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesien"
+#~ msgctxt "board15_0|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Nordschottland"
 
-#~| msgctxt "board10_0|"
-#~| msgid "Northern Mariana Islands"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board15_2|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Nordschottland"
+
+#~ msgctxt "board15_3|"
+#~ msgid "Southern Scotland"
+#~ msgstr "Südschottland"
+
+#~ msgctxt "board5_0|"
+#~ msgid "Districts of Turkey"
+#~ msgstr "Regionen der Türkei"
+
+#~ msgctxt "board5_2|"
+#~ msgid "Districts of Turkey"
+#~ msgstr "Regionen der Türkei"
+
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "Nördliche Marianen-Inseln"
 
-#~| msgctxt "board10_0|"
-#~| msgid "American Samoa"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "Amerikanisch-Samoa"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "Australien"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Asien"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Russland"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Japan"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesien"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Swasiland"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "Alaska"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Island"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Central America"
@@ -28828,6 +27893,239 @@ msgstr "Start"
 #~ msgid "Bahamas"
 #~ msgstr "Bahamas"
 
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "Asien"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Russland"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Indonesien"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Gnumch Equality"
+#~ msgstr "Gleichheits-Zahlenmampfer"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Image Name"
+#~ msgstr "Bilder und ihre Namen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Knowing alphabets"
+#~ msgstr "Kenntnis des Alphabets"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "1. To navigate through the instructions in the selected area:"
+#~ msgstr "1. So navigierst du durch die Anweisungen im ausgewählten Bereich:"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Use the ARROW keys"
+#~ msgstr "Benutze die Pfeiltasten"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Select an instruction from the instruction area by pressing SPACE."
+#~ msgstr ""
+#~ "Wähle eine Anweisung aus dem Anweisungsbereich aus, indem du die "
+#~ "Leertaste drückst."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Navigate to the code area by pressing TAB, then press SPACE to append the "
+#~ "instruction."
+#~ msgstr ""
+#~ "Navigiere mit der Tabulatortaste zum Programmbereich und drücken die "
+#~ "Leertaste zum Anhängen der Anweisung."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "3. To add an instruction at any particular position in the main/procedure "
+#~ "code area:"
+#~ msgstr ""
+#~ "3. So fügst du eine Anweisung an einer bestimmten Position im Programm im "
+#~ "Hauptbereich an:"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Navigate to the instruction at this position and press SPACE to add the "
+#~ "selected instruction from the instruction area."
+#~ msgstr ""
+#~ "Navigiere zu der Anweisung an dieser Position und drücke die Leertaste, "
+#~ "um die ausgewählte Anweisung aus dem Anweisungsbereich hinzuzufügen."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Press DELETE."
+#~ msgstr "Drücke die Taste Löschen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Navigate to the instruction to edit using the ARROW keys."
+#~ msgstr "Navigiere mit den Pfeiltasten zu der zu bearbeitenden Anweisung."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Press SPACE to select it."
+#~ msgstr "Drücke die Leertaste zur Auswahl."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Then navigate to the instruction area using TAB and select the new "
+#~ "instruction by pressing SPACE."
+#~ msgstr ""
+#~ "Navigiere dann mit Tabulatortaste in den Anweisungsbereich und wähle die "
+#~ "neue Anweisung durch Drücken der Leertaste aus."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Press ENTER or RETURN."
+#~ msgstr "Drücke die Eingabe- oder Rücktaste."
+
+#~ msgctxt "ProgrammingMaze|"
+#~ msgid ""
+#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
+#~ "button to reload the level."
+#~ msgstr ""
+#~ "Klicke auf Tux oder drücke die Eingabetaste, um ihn zurückzusetzen, oder "
+#~ "klicke auf den Knopf Neu laden, um die Spielstufe neu zu laden."
+
+#~ msgctxt "Data|"
+#~ msgid "Balance up to 5."
+#~ msgstr "Wiege bis zu 5."
+
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 7 more pieces of candy to his friends."
+#~ msgstr "Jetzt möchte er seinen Freunden 7 weitere Süßigkeiten geben."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
+#~ "friends. Can he equally split the pieces of candy? First, place the "
+#~ "children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Georg möchte 3 Süßigkeiten gerecht zwischen 3 seiner Freundinnen "
+#~ "aufteilen: Kannst du ihm helfen, die Süßigkeiten zwischen seinen "
+#~ "Freundinnen aufzuteilen? Platziere zuerst die Kinder in der Mitte und "
+#~ "ziehe dann die Süßigkeiten zu jedem von ihnen."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
+#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
+#~ "place the children in the center, then drag the pieces of candy to each "
+#~ "of them."
+#~ msgstr ""
+#~ "Maria möchte 6 Süßigkeiten gerecht zwischen 3 ihrer Freunde aufteilen: "
+#~ "Einem Mädchen und zwei Jungen. Kannst du ihr helfen, die Süßigkeiten "
+#~ "aufzuteilen? Platziere zuerst die Kinder in der Mitte und ziehe dann die "
+#~ "Süßigkeiten zu jedem von ihnen."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
+#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
+#~ "the children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Paul möchte 12 Süßigkeiten gleichmäßig zwischen 3 seiner Freunde "
+#~ "aufteilen: 2 Jungen und 1 Mädchen. Kannst du ihm helfen, die Süßigkeiten "
+#~ "aufzuteilen? Platziere zuerst die Kinder in der Mitte und ziehe dann die "
+#~ "Süßigkeiten zu jedem von ihnen."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
+#~ "friends. Can you help her? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Alice möchte 4 Süßigkeiten gerecht zwischen 4 ihrer Freundinnen "
+#~ "aufteilen. Kannst du ihr helfen? Platziere zuerst die Kinder in der Mitte "
+#~ "und ziehe dann die Süßigkeiten zu jedem von ihnen."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
+#~ "boys?"
+#~ msgstr ""
+#~ "Kannst du Alice helfen, ihren Freunden 10 Süßigkeiten zu geben: 1 Mädchen "
+#~ "und 3 Jungen?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
+#~ "friends. Can you help him? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Michael möchte 5 Süßigkeiten zu gleichen Teilen zwischen 5 seiner Freunde "
+#~ "aufteilen. Kannst du ihm helfen. Platziere zuerst die Kinder in der "
+#~ "Mitte, ziehe dann die Süßigkeiten zu jedem von ihnen!"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
+#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
+#~ "center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Paul möchte 20 Süßigkeiten gerecht zwischen 5 seiner Freunde aufteilen: 2 "
+#~ "Mädchen und 3 Jungen. Kannst du ihm helfen? Platziere zuerst die Kinder "
+#~ "in der Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
+#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
+#~ msgstr ""
+#~ "Für ihren Geburtstag hat Elisabeth 8 Süßigkeiten, die sie mit ihren 3 "
+#~ "Freunden teilen möchte: 2 Mädchen und 1 Junge. Wie muss sie die "
+#~ "Süßigkeiten zwischen ihren Freunden aufteilen?"
+
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 8 more pieces of candy to his friends."
+#~ msgstr "Jetzt möchte er seinen Freunden 8 weitere Süßigkeiten geben."
+
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
+#~ msgstr ""
+#~ "Kannst du jetzt 8 von Harry's Süßigkeiten an seine Freunde verteilen?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Harry is left with 12 pieces of candy, can you share them between his "
+#~ "friends?"
+#~ msgstr ""
+#~ "Harry hat noch 8 Süßigkeiten übrig. Kannst Die sie an seine Freunde "
+#~ "verteilen?"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 14 pieces of candy between 4 of his "
+#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
+#~ "between his friends? First, place the children in center, then drag the "
+#~ "pieces of candy to each of them. Be careful."
+#~ msgstr ""
+#~ "Georg möchte 14 Süßigkeiten gerecht zwischen 4 seiner Freunde aufteilen: "
+#~ "2 Mädchen und 2 Jungen. Kann er die Süßigkeiten gerecht zwischen seinen "
+#~ "Freunden aufteilen? Platziere zuerst die Kinder in der Mitte und ziehe "
+#~ "dann die Süßigkeiten zu jedem von ihnen."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
+#~ "friends? First, place the children in center, then drag the pieces of "
+#~ "candy to each of them. Be careful, a rest will remain."
+#~ msgstr ""
+#~ "Maria möchte 23 Süßigkeiten gerecht zwischen 5 ihrer Freunde aufteilen: 3 "
+#~ "Mädchen und 2 Jungen. Kannst sie die Süßigkeiten zu gleichen Teilen "
+#~ "zwischen ihren Freunden aufteilen? Platziere zuerst die Kinder in der "
+#~ "Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen. Pass auf, es "
+#~ "wird ein Rest übrig bleiben."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Counting skills"
+#~ msgstr "Zählen"
+
 #~ msgctxt "Dataset|"
 #~ msgid "433 days"
 #~ msgstr "433 Tage"
@@ -28884,319 +28182,6 @@ msgstr "Start"
 #~ msgid "100 years"
 #~ msgstr "100 Jahre"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Gnumch Equality"
-#~ msgstr "Gleichheits-Zahlenmampfer"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Image Name"
-#~ msgstr "Bilder und ihre Namen"
-
-#~ msgctxt "TutorialDataset|"
-#~ msgid ""
-#~ "Use the gates so that the bulb glows only when the switch is turned off "
-#~ "and remains off when the switch is turned on."
-#~ msgstr ""
-#~ "Nutze die Gatter, so dass das Lämpchen leuchtet, wenn der Schalter "
-#~ "ausgeschaltet ist, und aus bleibt, wenn der Schalter eingeschaltet wird."
-
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Telemark"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Østfold"
-#~ msgstr "Østfold"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Buskerud"
-#~ msgstr "Buskerud"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Sogn og Fjordane"
-#~ msgstr "Sogn og Fjordane"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "Oppland"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Hordaland"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Aust-Agder"
-#~ msgstr "Aust-Agder"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Troms"
-#~ msgstr "Troms"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Hedmark"
-
-#~ msgctxt "board6_0|"
-#~ msgid "Akershus"
-#~ msgstr "Akershus"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Paul möchte 2 Süßigkeiten gerecht zwischen 2 seiner Freundinnen "
-#~ "aufteilen. Kannst du ihm helfen? Platziere zuerst die Kinder in der Mitte "
-#~ "und ziehe dann die Süßigkeiten zu jedem von ihnen."
-
-#~ msgctxt "Data|"
-#~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "Jetzt möchte er seinen Freunden 5 Süßigkeiten geben."
-
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "Kannst du jetzt 7 von Pauls Süßigkeiten seinen Freunden geben?"
-
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "Jetzt möchte er seinen Freunden 8 weitere Süßigkeiten geben."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#~ "equally split the pieces of candy so that each friend will have the same "
-#~ "amount?"
-#~ msgstr ""
-#~ "Bob möchte seiner Freundin 3 Süßigkeiten geben. Kannst du ihm helfen, die "
-#~ "Süßigkeiten zu gleichen Teilen zwischen seinen Freunden aufzuteilen?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
-#~ "and 2 girls. Place the children in the center, then drag the pieces of "
-#~ "candy so that each of them has an equal number of it."
-#~ msgstr ""
-#~ "Harry möchte 8 Süßigkeiten gleichmäßig zwischen seinen Freunden "
-#~ "aufteilen: Einem Jungen und zwei Mädchen. Platziere die Kinder in der "
-#~ "Mitte, dann ziehe die Süßigkeiten auf beide, so dass jeder einen gleich "
-#~ "großen Anteil von Süßigkeiten erhält."
-
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr ""
-#~ "Kannst du jetzt 8 von Harry's Süßigkeiten an seine Freunde verteilen?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry is left with 12 pieces of candy, can you share them between his "
-#~ "friends?"
-#~ msgstr ""
-#~ "Harry hat noch 8 Süßigkeiten übrig. Kannst Die sie an seine Freunde "
-#~ "verteilen?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Alice möchte 4 Süßigkeiten gerecht zwischen 4 ihrer Freundinnen "
-#~ "aufteilen. Kannst du ihr helfen? Platziere zuerst die Kinder in der Mitte "
-#~ "und ziehe dann die Süßigkeiten zu jedem von ihnen."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#~ "Can he split the pieces of candy equally?"
-#~ msgstr ""
-#~ "Charles möchte seine 6 Süßigkeiten mit 2 Mädchen teilen. Kann er sie "
-#~ "gleichmäßig aufteilen?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
-#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
-#~ msgstr ""
-#~ "Jason's Vater hat ihm 17 Süßigkeiten zum Teilen mit seinen Freunden "
-#~ "gegeben: 2 Jungen und 3 Mädchen. Hilf ihm, die Süßigkeiten seinen "
-#~ "Freunden zu geben."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "Georg möchte 14 Süßigkeiten gerecht zwischen 4 seiner Freunde aufteilen: "
-#~ "2 Mädchen und 2 Jungen. Kann er die Süßigkeiten gerecht zwischen seinen "
-#~ "Freunden aufteilen? Platziere zuerst die Kinder in der Mitte und ziehe "
-#~ "dann die Süßigkeiten zu jedem von ihnen."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "Maria möchte 23 Süßigkeiten gerecht zwischen 5 ihrer Freunde aufteilen: 3 "
-#~ "Mädchen und 2 Jungen. Kannst sie die Süßigkeiten zu gleichen Teilen "
-#~ "zwischen ihren Freunden aufteilen? Platziere zuerst die Kinder in der "
-#~ "Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen. Pass auf, es "
-#~ "wird ein Rest übrig bleiben."
-
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 7 more pieces of candy to his friends."
-#~ msgstr "Jetzt möchte er seinen Freunden 7 weitere Süßigkeiten geben."
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#~| "one boy and two girls. Can he equally split the pieces of candy between "
-#~| "his friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
-#~ "friends. Can he equally split the pieces of candy? First, place the "
-#~ "children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "John möchte 10 Süßigkeiten gerecht zwischen 3 seiner Freunde aufteilen: "
-#~ "Einem Jungen und zwei Mädchen. Kannst du ihm helfen, die Süßigkeiten "
-#~ "zwischen seinen Freunden aufzuteilen? Platziere zuerst die Kinder in der "
-#~ "Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen."
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can she equally split the pieces of candy between "
-#~| "her friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
-#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Maria möchte 5 Süßigkeiten gerecht zwischen 3 ihrer Freunde aufteilen: "
-#~ "Einem Mädchen und zwei Jungen. Kannst sie die Süßigkeiten zu gleichen "
-#~ "Teilen zwischen ihren Freunden aufteilen? Platziere zuerst die Kinder in "
-#~ "der Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen. Pass auf, es "
-#~ "wird ein Rest übrig bleiben!"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#~| "one boy and two girls. Can he equally split the pieces of candy between "
-#~| "his friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
-#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
-#~ "the children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "John möchte 10 Süßigkeiten gerecht zwischen 3 seiner Freunde aufteilen: "
-#~ "Einem Jungen und zwei Mädchen. Kannst du ihm helfen, die Süßigkeiten "
-#~ "zwischen seinen Freunden aufzuteilen? Platziere zuerst die Kinder in der "
-#~ "Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
-#~ "boys?"
-#~ msgstr ""
-#~ "Kannst du Alice helfen, ihren Freunden 10 Süßigkeiten zu geben: 1 Mädchen "
-#~ "und 3 Jungen?"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Michael möchte 5 Süßigkeiten zu gleichen Teilen zwischen 5 seiner Freunde "
-#~ "aufteilen. Kannst du ihm helfen. Platziere zuerst die Kinder in der "
-#~ "Mitte, ziehe dann die Süßigkeiten zu jedem von ihnen!"
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
-#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
-#~ "center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Paul möchte 20 Süßigkeiten gerecht zwischen 5 seiner Freunde aufteilen: 2 "
-#~ "Mädchen und 3 Jungen. Kannst du ihm helfen? Platziere zuerst die Kinder "
-#~ "in der Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
-#~ msgstr ""
-#~ "Für ihren Geburtstag hat Elisabeth 8 Süßigkeiten, die sie mit ihren 3 "
-#~ "Freunden teilen möchte: 2 Mädchen und 1 Junge. Wie muss sie die "
-#~ "Süßigkeiten zwischen ihren Freunden aufteilen?"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can she equally split the pieces of candy between "
-#~| "her friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 25 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Maria möchte 5 Süßigkeiten gerecht zwischen 3 ihrer Freunde aufteilen: "
-#~ "Einem Mädchen und zwei Jungen. Kannst sie die Süßigkeiten zu gleichen "
-#~ "Teilen zwischen ihren Freunden aufteilen? Platziere zuerst die Kinder in "
-#~ "der Mitte und ziehe dann die Süßigkeiten zu jedem von ihnen. Pass auf, es "
-#~ "wird ein Rest übrig bleiben!"
-
-#, fuzzy
-#~| msgctxt "Menu|"
-#~| msgid "Music"
-#~ msgctxt "board5_1|"
-#~ msgid "Mus"
-#~ msgstr "Musik"
-
-#, fuzzy
-#~| msgctxt "Menu|"
-#~| msgid "Music"
-#~ msgctxt "board5_2|"
-#~ msgid "Mus"
-#~ msgstr "Musik"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance Box"
-#~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "Kugelkiste"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Use the ARROW keys"
-#~ msgstr "Benutze die Pfeiltasten"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Press DELETE."
-#~ msgstr "Drücke die Taste Löschen"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Press SPACE to select it."
-#~ msgstr "Drücke die Leertaste zur Auswahl."
-
 #~ msgctxt "MagicHat|"
 #~ msgid "−"
 #~ msgstr "−"
@@ -29205,12 +28190,128 @@ msgstr "Start"
 #~ msgid "+"
 #~ msgstr "+"
 
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with a friend. Take turns to click the line in which you want to "
+#~ "drop a token. You can also use the arrow keys to move the token left or "
+#~ "right, and the down or space key to drop a token. First player to create "
+#~ "a line of 4 tokens wins"
+#~ msgstr ""
+#~ "Spiele mit einem Freund. Klicke die Position in der Reihe, in der du "
+#~ "einen Spielstein ablegen möchtest. Du kannst auch die Pfeiltasten "
+#~ "„Rechts“ und „Links“ zum Bewegen und die Leertaste oder die Pfeiltaste "
+#~ "„Runter“ zum Ablegen eines Spielsteines benutzen. Der erste Spieler, der "
+#~ "eine 4 Steine in einer Linie anordnet gewinnt."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. You can also use the arrow keys to move the token left or "
+#~ "right, and the down or space key to drop a token. First player to create "
+#~ "a line of 4 tokens wins"
+#~ msgstr ""
+#~ "Spiele mit dem Rechner. Klicke die Position in der Reihe, in der du einen "
+#~ "Spielstein ablegen möchtest. Du kannst auch die Pfeiltasten „Rechts“ und "
+#~ "„Links“ zum Bewegen und die Leertaste oder die Pfeiltaste „Runter“ zum "
+#~ "Ablegen eines Spielsteines benutzen. Der erste Spieler, der eine 4 Steine "
+#~ "in einer Linie anordnet gewinnt."
+
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Multiplication"
-#~ msgctxt "ChangeLog|"
-#~ msgid "Multiple dataset"
-#~ msgstr "Multiplikation"
+#~| msgid "Assemble the puzzle"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Reassemble the shapes"
+#~ msgstr "Setze das Puzzle zusammen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Navigate the ball to the door. Be careful not to make it fall into the "
+#~ "holes. Numbered-contact buttons in the box need to be touched in the "
+#~ "correct order to unlock the door. You can move the ball by tilting your "
+#~ "mobile device. On desktop platforms use the arrow keys to simulate "
+#~ "tilting.\n"
+#~ "\n"
+#~ "In the <b>configuration dialog</b> you can choose between the default "
+#~ "'Built-in' level set and one that you can define yourself ('User'). A "
+#~ "user-defined level set can be created by choosing the 'user' level set "
+#~ "and start the level editor by clicking on the corresponding button.\n"
+#~ "\n"
+#~ "In the <b>level editor</b> you can create your own levels. Choose one of "
+#~ "the editing tools on the left side to modify the map cells of the "
+#~ "currently active level in the editor:\n"
+#~ "    Cross: Clear a map cell completely\n"
+#~ "    Horizontal Wall: Set/remove a horizontal wall on the lower edge of a "
+#~ "cell\n"
+#~ "    Vertical Wall: Set/remove a vertical wall on the right edge of a "
+#~ "cell\n"
+#~ "    Hole: Set/remove a hole on a cell\n"
+#~ "    Ball: Set the starting position of the ball\n"
+#~ "    Door: Set the door position\n"
+#~ "    Contact: Set/remove a contact button. With the spin-box you can "
+#~ "adjust the value of the contact button. It is not possible to set a value "
+#~ "more than once on a map.\n"
+#~ "All tools (except the clear-tool) toggle their respective target on the "
+#~ "clicked cell: An item can be placed by clicking on an empty cell, and by "
+#~ "clicking again on the same cell with the same tool, you can remove it "
+#~ "again.\n"
+#~ "You can test a modified level by clicking on the 'Test' button on the "
+#~ "right side of the editor view. You can return from testing mode by "
+#~ "clicking on the home-button on the bar or by pressing escape on your "
+#~ "keyboard or the back-button on your mobile device.\n"
+#~ "In the editor you can change the level currently edited by using the "
+#~ "arrow buttons on the bar. Back in the editor you can continue editing the "
+#~ "current level and test it again if needed.\n"
+#~ "When your level is finished you can save it to the user level file by "
+#~ "clicking on the 'Save' button on the right side.\n"
+#~ "To return to the configuration dialog click on the home-button on the bar "
+#~ "or press Escape on your keyboard or the back button on your mobile device."
+#~ msgstr ""
+#~ "Steuere die Kugel zur Tür. Pass auf, dass du sie nicht in die Löcher "
+#~ "fallen lässt. Nummerierte Kontaktknöpfe in der Kiste müssen in der "
+#~ "richtigen Reihenfolge berührt werden um die Tür zu öffnen. Du kannst die "
+#~ "Kugel durch Kippen deines Mobilgeräts bewegen. Auf einem Rechner kannst "
+#~ "du die Pfeiltasten benutzen, um die Kiste zu kippen.\n"
+#~ "\n"
+#~ "Im <b>Einstellungsdialog</b> kannst du zwischen den voreingestellten "
+#~ "eingebauten und eigenen Spielstufen wählen, die du selbst erstellen "
+#~ "kannst. Deine eigenen Spielstufen kannst du erstellen indem du diese "
+#~ "Option auswählst und dann den Stufeneditor durch Drücken der "
+#~ "entsprechenden Taste startest.\n"
+#~ "\n"
+#~ "Im <b>Stufeneditor</b> kannst du deine eigenen Spielstufen erstellen. Mit "
+#~ "den Werkzeugen auf der linken Seite kannst du die Zellen des Spielfelds "
+#~ "der aktuellen Stufe bearbeiten:\n"
+#~ "    Kreuz: Vollständiges Löschen einer Zelle \n"
+#~ "    Waagerechte Wand: Setzen oder löschen einer waagerechten Wand am "
+#~ "unteren Rand einer Zelle\n"
+#~ "    Senkrechte Wand: Setzen oder Löschen einer senkrechten Wand am linken "
+#~ "Rand einer Zelle\n"
+#~ "    Loch: Setzen oder löschen eines Lochs auf einer Zelle\n"
+#~ "    Kugel: Setzen der Startposition der Kugel\n"
+#~ "    Tür: Setzen der Tür\n"
+#~ "    Kontaktknopf: Setzen oder löschen eines Kontaktknopfs. Mit dem Regler "
+#~ "kannst du die Zahl auf dem Kontaktknopf ändern. Es ist nicht möglich eine "
+#~ "Zahl mehrmals auf einem Spielfeld zu setzen.\n"
+#~ "Alle Werkzeuge (mit Ausnahme des Löschen-Werkzeugs) schalten ein Element "
+#~ "auf einer Zelle ein oder aus: du kannst ein Spielfeldelement (Wand/Loch/"
+#~ "Ball/Kontakt) durch einfaches Klicken mit einem Werkzeug auf einer Zelle "
+#~ "setzen und durch erneutes Klicken auf derselben Zelle mit demselben "
+#~ "Werkzeug wieder löschen.\n"
+#~ "Du kannst eine erstellte Spielstufe testen, indem du auf den „Testen“-"
+#~ "Knopf auf der rechten Seite in der Editor-Ansicht drückst. Um den "
+#~ "Testmodus wieder zu verlassen, kannst du entweder den Haus-Knopf auf der "
+#~ "Kontrollleiste, die Escape-Taste auf deiner Rechnertastatur oder den "
+#~ "Zurück-Knopf auf deinem Mobilgerät drücken. Zurück im Editor kannst die "
+#~ "aktuelle Spielstufe weiter bearbeiten und danach, wenn nötig, erneut "
+#~ "testen.\n"
+#~ "Durch Drücken der Pfeilknöpfe auf der Kontrollleiste kannst du im Editor "
+#~ "die gerade bearbeitete Spielstufe wechseln. \n"
+#~ "Wenn du eine Spielstufe fertiggestellt hast, kannst du sie in deiner "
+#~ "Nutzerdatei durch drücken der „Speichern“-Taste auf der rechten Seite "
+#~ "sichern.\n"
+#~ "Benutze den Haus-Knopf auf der Kontrollleiste, die Escape-Taste auf "
+#~ "deiner Rechnertastatur oder den Zurück-Knopf auf deinem Mobilgerät, um "
+#~ "vom Editor in den Einstellungsdialog zurück zu wechseln."
 
 #~ msgctxt "Balancebox|"
 #~ msgid ""
@@ -29222,48 +28323,81 @@ msgstr "Start"
 #~ "Spielstufen erstellt.<br/> Erstelle entweder eigene Spielstufen, indem du "
 #~ "den Stufeneditor startest oder wähle die „eingebauten“ Spielstufen aus."
 
-#~ msgctxt "Guesscount|"
-#~ msgid "Select your mode"
-#~ msgstr "Wähle Deine Spielweise"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Read the instructions and select the correct date on the calendar"
+#~ msgstr "Lies die Anweisungen und wähle das richtige Datum im Kalender"
+
+#~ msgctxt "calendar_dataset|"
+#~ msgid "What day of week is the 4th of given month?"
+#~ msgstr "Welcher Wochentag ist der 4.Tag des angegebenen Monats?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
-#~ "Tux has come back from fishing on his boat. Bring the electrical system "
-#~ "back up so he can have light in his home. "
+#~ "A letter is spoken. Click on the matching letter in the main area. You "
+#~ "can listen to the letter again, by clicking on the mouth icon in the "
+#~ "bottom box."
 #~ msgstr ""
-#~ "Tux ist mit seinem Boot vom Fischen zurückgekommen. Stelle den Stromkreis "
-#~ "wieder her, so dass er Licht in seiner Wohnung hat."
+#~ "Ein Buchstabe wird gesprochen. Klicke auf den zugehörigen Buchstaben auf "
+#~ "dem Bildschirm. Du kannst den Buchstaben nochmal hören, wenn du auf das "
+#~ "Mund-Symbol am unteren Bildschirmrand klickst."
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mental calculation, arithmetic equality, unit conversion"
-#~ msgstr "Kopfrechnen, arithmetische Gleichheit, Einheitenumrechnung"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Nubmers up to 6."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Place three respective marks in any horizontal, vertical, or diagonal "
-#~| "row to win the game"
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
-#~ "Place three marks in any horizontal, vertical, or diagonal row to win the "
-#~ "game"
+#~ "Set the clock to the given time, in the time-units shown (hours:minutes "
+#~ "or hours:minutes:seconds). Drag the different arrows, to make the "
+#~ "respective time unit go up or down."
 #~ msgstr ""
-#~ "Platziere drei gleiche Zeichen in einer Horizontalen, Vertikalen oder "
-#~ "Diagonalen um das Spiel zu gewinnen"
+#~ "Stelle die Uhr auf die angegebene Zeit ein (gezeigte Zeiteinheiten "
+#~ "Stunden:Minuten oder Stunden:Minuten:Sekunden). Du kannst die Zeiger "
+#~ "durch Anklicken und Bewegen mit der Maus stellen."
 
-#, fuzzy
-#~| msgctxt "braille_alphabets|"
-#~| msgid "Now it's a little bit harder without the braille map."
-#~ msgctxt "braille_alphabets|"
-#~ msgid "Now it's a little bit harder without the reference"
-#~ msgstr "Jetzt ist es ein bisschen schwerer ohne die Braille-Tabelle."
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Mixing color of paint"
+#~ msgstr "Farbe mischen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Mix the primary colors to match to the given color"
+#~ msgstr "Mische die Primärfarben, um die angezeigte Farbe herzustellen"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Images from http://openclipart.org"
+#~ msgstr "Bilder von http://openclipart.org"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "This activity teaches you to recognize different colors. When you hear "
+#~ "the name of the color, touch the duck wearing it."
+#~ msgstr ""
+#~ "In dieser Aktivität wird die Farberkennung geübt. Nachdem du den Namen "
+#~ "einer Farbe gehört hast, tippe auf die Ente mit dieser Farbe."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Drag electrical components from the selector and drop them in the working "
+#~ "area. In the working area, you can move the components by dragging them. "
+#~ "To delete a component, select the deletion tool on top of the component "
+#~ "selector, and select the component. You can click on the component and "
+#~ "then on the rotate button to rotate it or info button to get information "
+#~ "about it. You can click on the switch to open and close it. To connect "
+#~ "two terminals, click on first terminal, then on second terminal. To "
+#~ "deselect terminal or delete tool, click on any empty area. The simulation "
+#~ "is updated in real time by any user action."
+#~ msgstr ""
+#~ "Ziehe elektrische Komponenten aus dem Auswahlbereich und lege sie im "
+#~ "Arbeitsbereich ab. Im Arbeitsbereich kannst du die Komponenten durch "
+#~ "Ziehen bewegen. Um eine Komponente zu löschen, wähle das Löschen-Werkzeug "
+#~ "über dem Auswahlbereich und danach die Komponente aus. Du kannst auf die "
+#~ "Komponente und dann zum Drehen auf den Drehen-Knopf oder für "
+#~ "weiterführende Informationen auf den Info-Knopf klicken. Du kannst auf "
+#~ "den Schalter drücken, um ihn zu öffnen oder zu schließen. Um zwei "
+#~ "Endpunkte zu verbinden, klicke auf den ersten Endpunkt und dann auf den "
+#~ "zweiten Endpunkt. Um einen Endpunkt oder das Löschen-Werkzeug abzuwählen, "
+#~ "klicke auf irgendeine freie Stelle. Die Simulation wird bei jeder Aktion "
+#~ "des Nutzers in Echtzeit aktualisiert."
+
+#~ msgctxt "DigitalElectricity|"
+#~ msgid "Select your Mode"
+#~ msgstr "Wähle Deinen Modus"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29299,6 +28433,22 @@ msgstr "Start"
 #~ "In Spielstufe Drei wird eine zufällige Textpassage angezeigt und du musst "
 #~ "auf das Tier klicken, dass zum Text passt. Wenn du für alle Texte die "
 #~ "richtige Übereinstimmung gefunden hast, gewinnst du!\n"
+
+#~ msgctxt "board2|"
+#~ msgid "Taj Mahal"
+#~ msgstr "Taj Mahal"
+
+#~ msgctxt "board2|"
+#~ msgid ""
+#~ "The Taj Mahal is a white marble mausoleum located on the southern bank of "
+#~ "the Yamuna River in the Indian city of Agra. It was commissioned in 1632 "
+#~ "by the Mughal emperor Shah Jahan reigned to house the tomb of his "
+#~ "favorite wife of three, Mumtaz Mahal."
+#~ msgstr ""
+#~ "Das Taj Mahal ist ein Mausoleum (Grabmal) aus weißem Marmor, auf der "
+#~ "Südseite des Yamuna Flusses in der indischen Stadt Agra. Sein Bau wurde "
+#~ "1632 von dem Großmogul Shah Jahan beauftragt, zum Gedenken an seine im "
+#~ "Jahre 1631 verstorbene große Liebe Mumtaz Mahal."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29340,6 +28490,30 @@ msgstr "Start"
 #~ msgid "Drag and Drop the items to redraw the whole map"
 #~ msgstr "Ziehe die Teile, um die Karte neu zu entwerfen"
 
+#~ msgctxt "Gletters|"
+#~ msgid "Select your locale"
+#~ msgstr "Wähle Deine Sprache"
+
+#~ msgctxt "Gletters|"
+#~ msgid "Select Domino mode"
+#~ msgstr "Wähle Domino-Modus"
+
+#~ msgctxt "Gletters|"
+#~ msgid "Speed"
+#~ msgstr "Geschwindigkeit"
+
+#~ msgctxt "GraphColoring|"
+#~ msgid "Colors"
+#~ msgstr "Farben"
+
+#~ msgctxt "GraphColoring|"
+#~ msgid "Shapes"
+#~ msgstr "Formen"
+
+#~ msgctxt "Guesscount|"
+#~ msgid "Select your mode"
+#~ msgstr "Wähle Deine Spielweise"
+
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Numbers from 1 to 1000 for the last level."
 #~ msgstr "Zahlen von 1 bis 1000 für die letzte Spielstufe."
@@ -29348,6 +28522,10 @@ msgstr "Start"
 #~ msgid "Number found!"
 #~ msgstr "Zahl gefunden"
 
+#~ msgctxt "Hangman|"
+#~ msgid "Select your locale"
+#~ msgstr "Wähle Deine Sprache"
+
 #~ msgctxt "board1_0|"
 #~ msgid "Drag and Drop each item onto its name"
 #~ msgstr "Lege die Bilder zu ihren Namen"
@@ -29355,6 +28533,15 @@ msgstr "Start"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Click on the correct instrument."
 #~ msgstr "Klicke auf das richtige Instrument.."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Intro gravity"
+#~ msgstr "Einführung zur Schwerkraft"
+
+#~ msgctxt "IntroGravity|"
+#~ msgid "Avoid the asteroid and join the space shuttle to win."
+#~ msgstr ""
+#~ "Weiche dem Asteroiden aus und gehe in das Space-Shuttle, um zu gewinnen."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29380,7 +28567,7 @@ msgstr "Start"
 #~ "\n"
 #~ "The landing platform is green if your speed is fine for a safe landing."
 #~ msgstr ""
-#~ "Die Beschleunigung aufgrund der Schwerkraft, welcher das Raumschiff "
+#~ "Beschleunigung aufgrund der Schwerkraft, welcher das Raumschiff "
 #~ "ausgesetzt ist, ist direkt proportional zur Masse des Planeten und "
 #~ "umgekehrt  proportional zum Quadrat der Entfernung vom Planetenzentrum. "
 #~ "Somit unterscheidet sich die Beschleunigung je nach Planet und erhöht "
@@ -29393,14 +28580,22 @@ msgstr "Start"
 #~ "Der Beschleunigungsmesser am rechten Rand zeigt die vertikale "
 #~ "Gesamtbeschleunigung an, in der die Anziehungskraft enthalten ist. Im "
 #~ "oberen grünen Bereich des Beschleunigungsmessers ist die Beschleunigung "
-#~ "höher als die Anziehungskraft. Im unteren roten Bereich ist sie geringer "
+#~ "höher als die Anziehungskraft, im unteren roten Bereich ist sie geringer "
 #~ "und auf der blauen Grundlinie im gelben mittleren Bereich heben sich die "
 #~ "beiden Kräfte gegenseitig auf.\n"
 #~ "In höheren Spielstufen, kannst du die Links/Rechts-Tasten verwenden, um "
 #~ "das Raumschiff zu drehen. Indem du das Raumschiff drehst kannst du durch "
-#~ "die Hoch/Runter-Tasten auch in nicht-vertikaler Richtung beschleunigen.\n"
+#~ "die Hoch/Runter-Tasten auch in nicht-vertikaler Richtung beschleunigen. \n"
 #~ "Die Landeplatform ist grün, solange die Geschwindigkeit eine sichere "
 #~ "Landung erlaubt."
+
+#~ msgctxt "Lang|"
+#~ msgid "Select your locale"
+#~ msgstr "Wähle Deine Sprache"
+
+#~ msgctxt "LetterInWord|"
+#~ msgid "Select your locale"
+#~ msgstr "Wähle Deine Sprache"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29408,14 +28603,6 @@ msgstr "Start"
 #~ msgstr ""
 #~ "Zähle die Gegenstände unter dem Zauberhut, nachdem einige verschwunden "
 #~ "sind"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn subtraction"
-#~ msgstr "Lerne die Subtraktion"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn addition"
-#~ msgstr "Lerne die Addition"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29872,6 +29059,62 @@ msgstr "Start"
 #~ "    Strg+M Hintergrundmusik ein-/ausschalten\n"
 #~ "    Strg+S Menü der Aktivitätengruppen ein-/ausschalten"
 
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "You have the full version"
+#~ msgstr "Du hast die Vollversion"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Buy the full version"
+#~ msgstr "Kaufe die Vollversion"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid ""
+#~ "On <a href='https://gcompris.net'>https://gcompris.net</a> you will find "
+#~ "the instructions to obtain an activation code."
+#~ msgstr ""
+#~ "Auf <a href='http://gcompris.net'>https://gcompris.net</a> findest du "
+#~ "Anweisungen, wie du einen Aktivierungscode bekommst."
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Enter your activation code"
+#~ msgstr "Gib deinen Aktivierungscode ein"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Sorry, your code is too old for this version of GCompris"
+#~ msgstr ""
+#~ "Leider ist dein Aktivierungscode zu alt für diese Version von GCompris"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Your code is valid, thanks a lot for your support"
+#~ msgstr "Dein Code ist gültig, danke für die Unterstützung"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Show locked activities"
+#~ msgstr "Gesperrte Aktivitäten anzeigen"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "No"
+#~ msgstr "Nein"
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "The images for several activities are not yet installed. "
+#~ msgstr "Die Bilder für mehrere Aktivitäten sind noch nicht installiert. "
+
+#, fuzzy
+#~| msgctxt "ConfigurationItem|"
+#~| msgid "The images for several activities are not yet installed. "
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "The background music is not yet installed. "
+#~ msgstr "Die Bilder für mehrere Aktivitäten sind noch nicht installiert. "
+
+#~ msgctxt "ConfigurationItem|"
+#~ msgid "Do you want to download it now?"
+#~ msgstr "Möchtest Du sie jetzt herunterladen?"
+
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Looking at the rockwall, you can see a sparkle somewhere. Move next to "
@@ -29919,40 +29162,9 @@ msgstr "Start"
 #~ "- metalpaint.wav - in abgewandelter Form zu hören, wenn man ein Gold-"
 #~ "Nugget abbaut"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to calculate change when amount paid is up to 10 units."
-#~ msgstr "Lerne ein Unterseeboot zu steuern"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to calculate change when amount paid is up to 100 units."
-#~ msgstr "Lerne ein Unterseeboot zu steuern"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to calculate change when amount paid is up to 1000 units."
-#~ msgstr "Lerne ein Unterseeboot zu steuern"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to pay up to 100 units including cents."
-#~ msgstr "Lerne ein Unterseeboot zu steuern"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Learn how to control a submarine"
-#~ msgctxt "Data|"
-#~ msgid "Learn how to pay up to 1000 units including cents."
-#~ msgstr "Lerne ein Unterseeboot zu steuern"
+#~ msgctxt "MissingLetter|"
+#~ msgid "Select your locale"
+#~ msgstr "Wähle Deine Sprache"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29961,13 +29173,9 @@ msgstr "Start"
 #~ "Nimm deinem Gegner alle bis auf 2 Steine weg, oder blockiere ihn so, dass "
 #~ "er keinen Zug mehr machen kann."
 
-#~ msgctxt "ActivityConfig|"
-#~ msgid "Go to next level"
-#~ msgstr "Gehe zur nächsten Stufe"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Can count from 1 to 50."
-#~ msgstr "Kann von 1 bis 50 zählen."
+#~ msgctxt "NoteNames|"
+#~ msgid "Speed"
+#~ msgstr "Geschwindigkeit"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -29998,39 +29206,10 @@ msgstr "Start"
 #~ "Noten in Notenlinien geschrieben werden und zum Erforschen der "
 #~ "Musikkomposition, durch das Laden und Speichern deiner Werke."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "This activity has several levels, each level adds a new functionality to "
-#~| "the previous level. \n"
-#~| "  Level 1: Basic piano keyboard (white keys only) and students can "
-#~| "experiment with clicking the colored rectangle keys to write music.\n"
-#~| "  Level 2: The musical staff switches to bass clef, so pitches are lower "
-#~| "than in previous level.\n"
-#~| "  Level 3: Option to choose between treble and bass clef, addition of "
-#~| "black keys (sharp keys).\n"
-#~| "  Level 4: Flat notation used for black keys.\n"
-#~| "  Level 5: Option to select note duration (whole, half, quarter, eighth "
-#~| "notes).\n"
-#~| "  Level 6: Addition of rests (whole, half, quarter, eighth rests)\n"
-#~| "  Level 7: Load children's melodies from around the world and also save "
-#~| "your composition.\n"
-#~| "\n"
-#~| "The following keyboard bindings work in this game:\n"
-#~| "- backspace: undo\n"
-#~| "- delete: erase attempt\n"
-#~| "- enter/return: OK button\n"
-#~| "- space bar: play\n"
-#~| "- left/right arrow keys: switch keyboard octave\n"
-#~| "- number keys:\n"
-#~| "  - 1 to 8: Corresponding white keys in the order on the displayed "
-#~| "octave.\n"
-#~| "  - F1 to F5: Corresponding black keys in the order on the displayed "
-#~| "octave.\n"
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "This activity has several levels, each level adds a new functionality to "
-#~ "the previous level.\n"
+#~ "the previous level. \n"
 #~ "  Level 1: Basic piano keyboard (white keys only) and students can "
 #~ "experiment with clicking the colored rectangle keys to write music.\n"
 #~ "  Level 2: The musical staff switches to bass clef, so pitches are lower "
@@ -30042,7 +29221,19 @@ msgstr "Start"
 #~ "notes).\n"
 #~ "  Level 6: Addition of rests (whole, half, quarter, eighth rests)\n"
 #~ "  Level 7: Load children's melodies from around the world and also save "
-#~ "your composition."
+#~ "your composition.\n"
+#~ "\n"
+#~ "The following keyboard bindings work in this game:\n"
+#~ "- backspace: undo\n"
+#~ "- delete: erase attempt\n"
+#~ "- enter/return: OK button\n"
+#~ "- space bar: play\n"
+#~ "- left/right arrow keys: switch keyboard octave\n"
+#~ "- number keys:\n"
+#~ "  - 1 to 8: Corresponding white keys in the order on the displayed "
+#~ "octave.\n"
+#~ "  - F1 to F5: Corresponding black keys in the order on the displayed "
+#~ "octave.\n"
 #~ msgstr ""
 #~ "Diese Aktivität besitzt verschiedenen Spielstufen - jede Stufe fügt eine "
 #~ "neue Funktionalität zur vorherigen Stufe hinzu. \n"
@@ -30097,18 +29288,11 @@ msgstr "Start"
 #~ msgid "Added eighth rest"
 #~ msgstr "Achtelpause hinzugefügt"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "The notes you see will be played to you. Click on the corresponding keys "
-#~| "on the keyboard that match the notes you hear and see.<br>Levels 1-5 "
-#~| "will offer treble clef to practice and levels 6-10 will offer bass clef."
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "The notes you see will be played to you. Click on the corresponding keys "
-#~ "on the keyboard that match the notes you hear and see.<br>\n"
-#~ "            Levels 1-5 will offer treble clef to practice and levels 6-10 "
-#~ "will offer bass clef."
+#~ "on the keyboard that match the notes you hear and see.<br>Levels 1-5 will "
+#~ "offer treble clef to practice and levels 6-10 will offer bass clef."
 #~ msgstr ""
 #~ "Die Noten, die du siehst, werden für dich gespielt. Klicke auf die "
 #~ "zugehörigen Tasten auf dem Piano, welche zu den Noten passen, die du "
@@ -30149,23 +29333,54 @@ msgstr "Start"
 #~ "Knopf, um den Rhythmus nochmal abzuspielen."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "<ul><li><b>Arrow keys</b></li></ul><br>"
-#~ msgstr "<ul><li><b>Pfeiltasten</b></li></ul><br>"
+#~ msgid ""
+#~ "Rebuild the displayed train at the top of the screen by dragging the "
+#~ "appropriate carriages and locomotive. Deselect an item by dragging it "
+#~ "down."
+#~ msgstr ""
+#~ "Baue den angezeigten Zug oben im Bildschirm nach, indem du die richtigen "
+#~ "Eisenbahnwagen samt Lokomotive dort hinziehst. Entferne ein Teil, indem "
+#~ "du es nach unten ziehst.<br><br>"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "<ul><li><b>DELETE</b>.</li></ul><br>"
-#~ msgstr "<ul><li><b>Löschen</b>.</li></ul><br>"
+#~ msgid "1. Use arrow keys to move in the answer or sample zone.<br>"
+#~ msgstr ""
+#~ "1. Nutze die Pfeiltasten, um dich in der Antwort- oder Vorlage-Zone zu "
+#~ "bewegen.<br>"
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "<ul><li><b>ENTER</b> or <b>RETURN</b>.</li></ul>"
-#~ msgstr "<ul><li><b>Eingabe</b> oder <b>Rücktaste</b>.</li></ul>"
+#~ msgid ""
+#~ "3. Use Space key to swap two wagons or locomotives in answer zone.<br>"
+#~ msgstr ""
+#~ "3. Nutze die Leertaste, um zwei Wagen oder Lokomotiven in der Antwort-"
+#~ "Zone zu tauschen.<br>"
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "<b>Keyboard Controls:</b><br><br>"
 #~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard Controls:</b><br>"
-#~ msgstr "<b>Tastatursteuerung:</b><br><br>"
+#~ msgid ""
+#~ "4. Use Space key to add a wagon or locomotive from samples to answer list."
+#~ "<br>"
+#~ msgstr ""
+#~ "4. Nutze die Leertaste, um einen Wagen oder eine Lokomotive von den "
+#~ "Vorlagen in die Antwortliste zu ergänzen.<br>"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "5. Use Delete key to remove a wagon or locomotive from answer zone.<br>"
+#~ msgstr ""
+#~ "5. Nutze die Entfernen-Taste, um einen Wagen oder eine Lokomotive aus der "
+#~ "Antwort-Zone zu entfernen.<br>"
+
+#~ msgctxt "Readingh|"
+#~ msgid "Select your locale"
+#~ msgstr "Wähle Deine Sprache"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Tux has come back from fishing on his boat. Bring the electrical system "
+#~ "back up so he can have light in his home. "
+#~ msgstr ""
+#~ "Tux ist mit seinem Boot vom Fischen zurückgekommen. Stelle den Stromkreis "
+#~ "wieder her, so dass er Licht in seiner Wohnung hat."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -30224,33 +29439,25 @@ msgstr "Start"
 #~ "zuletzt haben wir Einer (IX=10–1=9) - also schreiben wir dies im "
 #~ "Dezimalsystem als: 3949."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 5."
-#~ msgstr "Balanciere die Waage genau aus"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid ""
+#~ "The kilogram is a unit of mass, a property which corresponds to the "
+#~ "common perception of how \"heavy\" an object is."
+#~ msgstr ""
+#~ "Kilogramm ist eine Masseneinheit, eine Eigenschaft die beschreibt wie "
+#~ "schwer ein Gegenstand ist."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 10."
-#~ msgstr "Balanciere die Waage genau aus"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "Take care, you can drop weights on both sides of the scale."
+#~ msgstr "Denk dran, Du kannst Gewichte auf beide Seiten der Waage stellen."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 20."
-#~ msgstr "Balanciere die Waage genau aus"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "Now you have to guess the weight of the gift."
+#~ msgstr "Jetzt sollst du das Gewicht des Geschenks raten."
 
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Balance the scales properly"
-#~ msgctxt "Data|"
-#~ msgid "Balance the scales until 50."
-#~ msgstr "Balanciere die Waage genau aus"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "Remember, one kilogram ('kg') equals 1000 grams ('g')."
+#~ msgstr "Denke daran, ein Kilogramm ('kg') entspricht 1000 Gramm ('g')."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -30260,130 +29467,9 @@ msgstr "Start"
 #~ "Verschiebe Gewichte, um die Waage auszugleichen und das Gewicht im "
 #~ "Avoirdupois-Maßsystem zu berechnen"
 
-#, fuzzy
-#~| msgctxt "board6|"
-#~| msgid ""
-#~| "Help Tux split some pieces of candies to his friends: 9 pieces of "
-#~| "candies to one boy and two girls."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Help Tux split some pieces of candies to his friends: 19 pieces of candy "
-#~ "to four boys and one girl."
-#~ msgstr ""
-#~ "Hilf Tux, einige Süßigkeiten zwischen seinen Freunden aufzuteilen: 9 "
-#~ "Süßigkeiten für einen Jungen und zwei Mädchen."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 3."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select the numbers 1 and 2."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 4."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 5."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 6."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 7."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 8."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice up to 9."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dice from 0 to 9."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 4."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 5."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 6."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 7."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 8."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes up to 9."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Connect the dots to draw numbers from 0 to 9"
-#~ msgctxt "Data|"
-#~ msgid "Select a number on dominoes from 0 to 9."
-#~ msgstr "Verbinde die Punkte, um Zahlen von 0 bis 9 zu malen"
+#~ msgctxt "ScalesboardWeight|"
+#~ msgid "The \"lb\" symbol at the end of a number means pound."
+#~ msgstr "Das Symbol „lb“ am Ende einer Zahl bedeutet Pfund"
 
 #~ msgctxt "Dataset|"
 #~ msgid "How many days make a year on Mercury?"
@@ -30393,6 +29479,30 @@ msgstr "Start"
 #~ msgid "Maximum temperature on Earth is:"
 #~ msgstr "Die maximale Temperatur auf der Erde beträgt:"
 
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid ""
+#~| "Control the various parts of the submarine (the engine, rudders and "
+#~| "ballast tanks) to reach the end point.\n"
+#~| " Controls:\n"
+#~| "\n"
+#~| " Engine:\n"
+#~| " D / Right arrow: Increase velocity\n"
+#~| " A / Left arrow: Decrease velocity\n"
+#~| "\n"
+#~| " Ballast tanks:\n"
+#~| " Switch filling of Ballast tanks:\n"
+#~| " W / Up arrow: Central ballast tank\n"
+#~| " R: Left ballast tank\n"
+#~| " T: Right ballast tanks\n"
+#~| " Switch flush ballast tanks:\n"
+#~| " S / Down arrow: Central ballast tank\n"
+#~| " F: Left ballast tank\n"
+#~| " G: Right ballast tanks\n"
+#~| "\n"
+#~| " Diving planes:\n"
+#~| " + : Increase diving plane angle\n"
+#~| " - : Decrease diving plane angle"
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
 #~ "Control the various parts of the submarine (the engine, rudders and "
@@ -30422,481 +29532,21 @@ msgstr "Start"
 #~ "Kontrollen:\n"
 #~ "\n"
 #~ "Motor:\n"
-#~ "D / rechter Pfeil: Geschwindigkeit erhöhen\n"
-#~ " A / linker Pfeil: Geschwindigkeit verringern\n"
+#~ "D / Pfeil rechts: Geschwindigkeit erhöhen\n"
+#~ " A / Pfeil links: Geschwindigkeit verringern\n"
 #~ "\n"
 #~ "Ballasttanks:\n"
 #~ "Befüllen der Ballasttanks:\n"
-#~ "W / Hochpfeil: Mittlerer Ballasttank\n"
+#~ "W / Pfeil aufwärts: Mittlerer Ballasttank\n"
 #~ "R: linker Ballasttank\n"
 #~ "T: rechter Ballasttank\n"
 #~ "Leeren der Ballasttanks:\n"
-#~ "S / Runterpfeil: Mittlerer Ballasttank\n"
+#~ "S / Pfeil abwärts: Mittlerer Ballasttank\n"
 #~ "F: linker Ballasttank\n"
 #~ "G: rechter Ballasttank\n"
 #~ "\n"
 #~ "+ : Erhöhen des Tauchflächenwinkels\n"
 #~ "- : Verringern des Tauchflächenwinkels"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 10."
-#~ msgstr "Übe das Addieren mit einem Dartspiel"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 50."
-#~ msgstr "Übe das Addieren mit einem Dartspiel"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 500."
-#~ msgstr "Übe das Addieren mit einem Dartspiel"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 50000."
-#~ msgstr "Übe das Addieren mit einem Dartspiel"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Practice addition with a target game"
-#~ msgctxt "Data|"
-#~ msgid "Practice addition on targets with max value 500000."
-#~ msgstr "Übe das Addieren mit einem Dartspiel"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Set the clock to the given time, in the time-units shown (hours:minutes "
-#~ "or hours:minutes:seconds). Drag the different arrows, to make the "
-#~ "respective time unit go up or down."
-#~ msgstr ""
-#~ "Stelle die Uhr auf die angegebene Zeit ein (gezeigte Zeiteinheiten "
-#~ "Stunden:Minuten oder Stunden:Minuten:Sekunden). Du kannst die Zeiger "
-#~ "durch Anklicken und Bewegen mit der Maus stellen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mixing color of paint"
-#~ msgstr "Farbe mischen"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Mix the primary colors to match to the given color"
-#~ msgstr "Mische die Primärfarben, um die angezeigte Farbe herzustellen"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Images from https://openclipart.org"
-#~ msgstr "Bilder von https://openclipart.org"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "This activity teaches you to recognize different colors. When you hear "
-#~ "the name of the color, touch the duck wearing it."
-#~ msgstr ""
-#~ "In dieser Aktivität wird die Farberkennung geübt. Nachdem du den Namen "
-#~ "einer Farbe gehört hast, tippe auf die Ente mit dieser Farbe."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drag and Drop the shapes on their respective targets"
-#~ msgstr "Ziehe die Gegenstände auf das passende Ziel"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Complete the puzzle by dragging each piece from the set of pieces on the "
-#~ "left, to the matching space in the puzzle."
-#~ msgstr ""
-#~ "Vervollständige das Puzzle durch Ziehen der Teile aus der linken Seite "
-#~ "auf den passenden Platz im Puzzle."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag electrical components from the selector and drop them in the working "
-#~ "area. In the working area, you can move the components by dragging them. "
-#~ "To delete a component, select the deletion tool on top of the component "
-#~ "selector, and select the component. You can click on the component and "
-#~ "then on the rotate button to rotate it or info button to get information "
-#~ "about it. You can click on the switch to open and close it. To connect "
-#~ "two terminals, click on first terminal, then on second terminal. To "
-#~ "deselect terminal or delete tool, click on any empty area. The simulation "
-#~ "is updated in real time by any user action."
-#~ msgstr ""
-#~ "Ziehe elektrische Komponenten aus dem Auswahlbereich und lege sie im "
-#~ "Arbeitsbereich ab. Im Arbeitsbereich kannst du die Komponenten durch "
-#~ "Ziehen bewegen. Um eine Komponente zu löschen, wähle das Löschen-Werkzeug "
-#~ "über dem Auswahlbereich und danach die Komponente aus. Du kannst auf die "
-#~ "Komponente und dann zum Drehen auf den Drehen-Knopf oder für "
-#~ "weiterführende Informationen auf den Info-Knopf klicken. Du kannst auf "
-#~ "den Schalter drücken, um ihn zu öffnen oder zu schließen. Um zwei "
-#~ "Endpunkte zu verbinden, klicke auf den ersten Endpunkt und dann auf den "
-#~ "zweiten Endpunkt. Um einen Endpunkt oder das Löschen-Werkzeug abzuwählen, "
-#~ "klicke auf irgendeine freie Stelle. Die Simulation wird bei jeder Aktion "
-#~ "des Nutzers in Echtzeit aktualisiert."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Read the instructions and select the correct date on the calendar"
-#~ msgstr "Lies die Anweisungen und wähle das richtige Datum im Kalender"
-
-#~ msgctxt "calendar_dataset|"
-#~ msgid "What day of week is the 4th of given month?"
-#~ msgstr "Welcher Wochentag ist der 4.Tag des angegebenen Monats?"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Navigate the ball to the door. Be careful not to make it fall into the "
-#~ "holes. Numbered-contact buttons in the box need to be touched in the "
-#~ "correct order to unlock the door. You can move the ball by tilting your "
-#~ "mobile device. On desktop platforms use the arrow keys to simulate "
-#~ "tilting.\n"
-#~ "\n"
-#~ "In the <b>configuration dialog</b> you can choose between the default "
-#~ "'Built-in' level set and one that you can define yourself ('User'). A "
-#~ "user-defined level set can be created by choosing the 'user' level set "
-#~ "and start the level editor by clicking on the corresponding button.\n"
-#~ "\n"
-#~ "In the <b>level editor</b> you can create your own levels. Choose one of "
-#~ "the editing tools on the left side to modify the map cells of the "
-#~ "currently active level in the editor:\n"
-#~ "    Cross: Clear a map cell completely\n"
-#~ "    Horizontal Wall: Set/remove a horizontal wall on the lower edge of a "
-#~ "cell\n"
-#~ "    Vertical Wall: Set/remove a vertical wall on the right edge of a "
-#~ "cell\n"
-#~ "    Hole: Set/remove a hole on a cell\n"
-#~ "    Ball: Set the starting position of the ball\n"
-#~ "    Door: Set the door position\n"
-#~ "    Contact: Set/remove a contact button. With the spin-box you can "
-#~ "adjust the value of the contact button. It is not possible to set a value "
-#~ "more than once on a map.\n"
-#~ "All tools (except the clear-tool) toggle their respective target on the "
-#~ "clicked cell: An item can be placed by clicking on an empty cell, and by "
-#~ "clicking again on the same cell with the same tool, you can remove it "
-#~ "again.\n"
-#~ "You can test a modified level by clicking on the 'Test' button on the "
-#~ "right side of the editor view. You can return from testing mode by "
-#~ "clicking on the home-button on the bar or by pressing escape on your "
-#~ "keyboard or the back-button on your mobile device.\n"
-#~ "In the editor you can change the level currently edited by using the "
-#~ "arrow buttons on the bar. Back in the editor you can continue editing the "
-#~ "current level and test it again if needed.\n"
-#~ "When your level is finished you can save it to the user level file by "
-#~ "clicking on the 'Save' button on the right side.\n"
-#~ "To return to the configuration dialog click on the home-button on the bar "
-#~ "or press Escape on your keyboard or the back button on your mobile device."
-#~ msgstr ""
-#~ "Steuere die Kugel zur Tür. Pass auf, dass du sie nicht in die Löcher "
-#~ "fallen lässt. Nummerierte Kontaktknöpfe in der Kiste müssen in der "
-#~ "richtigen Reihenfolge berührt werden um die Tür zu öffnen. Du kannst die "
-#~ "Kugel durch Kippen deines Mobilgeräts bewegen. Auf einem Rechner kannst "
-#~ "du die Pfeiltasten benutzen, um die Kiste zu kippen.\n"
-#~ "\n"
-#~ "Im <b>Einstellungsdialog</b> kannst du zwischen den voreingestellten "
-#~ "eingebauten und eigenen Spielstufen wählen, die du selbst erstellen "
-#~ "kannst. Deine eigenen Spielstufen kannst du erstellen indem du diese "
-#~ "Option auswählst und dann den Stufeneditor durch Drücken der "
-#~ "entsprechenden Taste startest.\n"
-#~ "\n"
-#~ "Im <b>Stufeneditor</b> kannst du deine eigenen Spielstufen erstellen. Mit "
-#~ "den Werkzeugen auf der linken Seite kannst du die Zellen des Spielfelds "
-#~ "der aktuellen Stufe bearbeiten:\n"
-#~ "    Kreuz: Vollständiges Löschen einer Zelle \n"
-#~ "    Waagerechte Wand: Setzen oder löschen einer waagerechten Wand am "
-#~ "unteren Rand einer Zelle\n"
-#~ "    Senkrechte Wand: Setzen oder Löschen einer senkrechten Wand am linken "
-#~ "Rand einer Zelle\n"
-#~ "    Loch: Setzen oder löschen eines Lochs auf einer Zelle\n"
-#~ "    Kugel: Setzen der Startposition der Kugel\n"
-#~ "    Tür: Setzen der Tür\n"
-#~ "    Kontaktknopf: Setzen oder löschen eines Kontaktknopfs. Mit dem Regler "
-#~ "kannst du die Zahl auf dem Kontaktknopf ändern. Es ist nicht möglich eine "
-#~ "Zahl mehrmals auf einem Spielfeld zu setzen.\n"
-#~ "Alle Werkzeuge (mit Ausnahme des Löschen-Werkzeugs) schalten ein Element "
-#~ "auf einer Zelle ein oder aus: du kannst ein Spielfeldelement (Wand/Loch/"
-#~ "Ball/Kontakt) durch einfaches Klicken mit einem Werkzeug auf einer Zelle "
-#~ "setzen und durch erneutes Klicken auf derselben Zelle mit demselben "
-#~ "Werkzeug wieder löschen.\n"
-#~ "Du kannst eine erstellte Spielstufe testen, indem du auf den „Testen“-"
-#~ "Knopf auf der rechten Seite in der Editor-Ansicht drückst. Um den "
-#~ "Testmodus wieder zu verlassen, kannst du entweder den Haus-Knopf auf der "
-#~ "Kontrollleiste, die Escape-Taste auf deiner Rechnertastatur oder den "
-#~ "Zurück-Knopf auf deinem Mobilgerät drücken. Zurück im Editor kannst die "
-#~ "aktuelle Spielstufe weiter bearbeiten und danach, wenn nötig, erneut "
-#~ "testen.\n"
-#~ "Durch Drücken der Pfeilknöpfe auf der Kontrollleiste kannst du im Editor "
-#~ "die gerade bearbeitete Spielstufe wechseln. \n"
-#~ "Wenn du eine Spielstufe fertiggestellt hast, kannst du sie in deiner "
-#~ "Nutzerdatei durch drücken der „Speichern“-Taste auf der rechten Seite "
-#~ "sichern.\n"
-#~ "Benutze den Haus-Knopf auf der Kontrollleiste, die Escape-Taste auf "
-#~ "deiner Rechnertastatur oder den Zurück-Knopf auf deinem Mobilgerät, um "
-#~ "vom Editor in den Einstellungsdialog zurück zu wechseln."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with a friend. Take turns to click the line in which you want to "
-#~ "drop a token. You can also use the arrow keys to move the token left or "
-#~ "right, and the down or space key to drop a token. First player to create "
-#~ "a line of 4 tokens wins"
-#~ msgstr ""
-#~ "Spiele mit einem Freund. Klicke die Position in der Reihe, in der du "
-#~ "einen Spielstein ablegen möchtest. Du kannst auch die Pfeiltasten "
-#~ "„Rechts“ und „Links“ zum Bewegen und die Leertaste oder die Pfeiltaste "
-#~ "„Runter“ zum Ablegen eines Spielsteines benutzen. Der erste Spieler, der "
-#~ "eine 4 Steine in einer Linie anordnet gewinnt."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. You can also use the arrow keys to move the token left or "
-#~ "right, and the down or space key to drop a token. First player to create "
-#~ "a line of 4 tokens wins"
-#~ msgstr ""
-#~ "Spiele mit dem Rechner. Klicke die Position in der Reihe, in der du einen "
-#~ "Spielstein ablegen möchtest. Du kannst auch die Pfeiltasten „Rechts“ und "
-#~ "„Links“ zum Bewegen und die Leertaste oder die Pfeiltaste „Runter“ zum "
-#~ "Ablegen eines Spielsteines benutzen. Der erste Spieler, der eine 4 Steine "
-#~ "in einer Linie anordnet gewinnt."
-
-#~ msgctxt "Lang|"
-#~ msgid "Select your locale"
-#~ msgstr "Wähle Deine Sprache"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Use full word image set"
-#~ msgstr "Benutze die vollständige Bildersammlung"
-
-#~ msgctxt "LetterInWord|"
-#~ msgid "Select your locale"
-#~ msgstr "Wähle Deine Sprache"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Yes"
-#~ msgstr "Ja"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "No"
-#~ msgstr "Nein"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "The images for several activities are not yet installed. "
-#~ msgstr "Die Bilder für mehrere Aktivitäten sind noch nicht installiert. "
-
-#, fuzzy
-#~| msgctxt "ConfigurationItem|"
-#~| msgid "The images for several activities are not yet installed. "
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "The background music is not yet installed. "
-#~ msgstr "Die Bilder für mehrere Aktivitäten sind noch nicht installiert. "
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "Möchtest Du sie jetzt herunterladen?"
-
-#~ msgctxt "main|"
-#~ msgid ""
-#~ "The images for several activities are not yet installed. Do you want to "
-#~ "download them now?"
-#~ msgstr ""
-#~ "Die Bilder für mehrere Aktivitäten sind noch nicht installiert. Möchtest "
-#~ "Du sie jetzt herunterladen?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "Möchtest Du sie jetzt herunterladen?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Möchtest du die entsprechenden Tondateien jetzt herunterladen?"
-
-#, fuzzy
-#~| msgctxt "board13_0|"
-#~| msgid "Districts of Australia"
-#~ msgctxt "Data|"
-#~ msgid "Countries of Australia."
-#~ msgstr "Australische Bundesstaaten"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Rebuild the displayed train at the top of the screen by dragging the "
-#~ "appropriate carriages and locomotive. Deselect an item by dragging it "
-#~ "down."
-#~ msgstr ""
-#~ "Baue den angezeigten Zug oben im Bildschirm nach, indem du die richtigen "
-#~ "Eisenbahnwagen samt Lokomotive dort hinziehst. Entferne ein Teil, indem "
-#~ "du es nach unten ziehst.<br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "The synthesizer original code is https://github.com/vsr83/miniSynth"
-#~ msgstr ""
-#~ "Der Synthesizer Original-Code ist https://github.com/vsr83/miniSynth"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard Controls:</b><br><br>"
-#~ msgstr "<b>Tastatursteuerung:</b><br><br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "3. Use Space key to swap two wagons or locomotives in answer zone.<br>"
-#~ msgstr ""
-#~ "3. Nutze die Leertaste, um zwei Wagen oder Lokomotiven in der Antwort-"
-#~ "Zone zu tauschen.<br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "4. Use Space key to add a wagon or locomotive from samples to answer list."
-#~ "<br>"
-#~ msgstr ""
-#~ "4. Nutze die Leertaste, um einen Wagen oder eine Lokomotive von den "
-#~ "Vorlagen in die Antwortliste zu ergänzen.<br>"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A letter is spoken. Click on the matching letter in the main area. You "
-#~ "can listen to the letter again, by clicking on the mouth icon in the "
-#~ "bottom box."
-#~ msgstr ""
-#~ "Ein Buchstabe wird gesprochen. Klicke auf den zugehörigen Buchstaben auf "
-#~ "dem Bildschirm. Du kannst den Buchstaben nochmal hören, wenn du auf das "
-#~ "Mund-Symbol am unteren Bildschirmrand klickst."
-
-#~ msgctxt "board2|"
-#~ msgid "Taj Mahal"
-#~ msgstr "Taj Mahal"
-
-#~ msgctxt "board2|"
-#~ msgid ""
-#~ "The Taj Mahal is a white marble mausoleum located on the southern bank of "
-#~ "the Yamuna River in the Indian city of Agra. It was commissioned in 1632 "
-#~ "by the Mughal emperor Shah Jahan reigned to house the tomb of his "
-#~ "favorite wife of three, Mumtaz Mahal."
-#~ msgstr ""
-#~ "Das Taj Mahal ist ein Mausoleum (Grabmal) aus weißem Marmor, auf der "
-#~ "Südseite des Yamuna Flusses in der indischen Stadt Agra. Sein Bau wurde "
-#~ "1632 von dem Großmogul Shah Jahan beauftragt, zum Gedenken an seine im "
-#~ "Jahre 1631 verstorbene große Liebe Mumtaz Mahal."
-
-#~ msgctxt "MissingLetter|"
-#~ msgid "Select your locale"
-#~ msgstr "Wähle Deine Sprache"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "You have the full version"
-#~ msgstr "Du hast die Vollversion"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Buy the full version"
-#~ msgstr "Kaufe die Vollversion"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid ""
-#~ "On <a href='https://gcompris.net'>https://gcompris.net</a> you will find "
-#~ "the instructions to obtain an activation code."
-#~ msgstr ""
-#~ "Auf <a href='http://gcompris.net'>https://gcompris.net</a> findest du "
-#~ "Anweisungen, wie du einen Aktivierungscode bekommst."
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Enter your activation code"
-#~ msgstr "Gib deinen Aktivierungscode ein"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Sorry, your code is too old for this version of GCompris"
-#~ msgstr ""
-#~ "Leider ist dein Aktivierungscode zu alt für diese Version von GCompris"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Your code is valid, thanks a lot for your support"
-#~ msgstr "Dein Code ist gültig, danke für die Unterstützung"
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Show locked activities"
-#~ msgstr "Gesperrte Aktivitäten anzeigen"
-
-#~ msgctxt "BuyMeOverlay|"
-#~ msgid ""
-#~ "This activity is only available in the full version of GCompris.<br/>On "
-#~ "<a href='https://gcompris.net'>https://gcompris.net</a> you will find the "
-#~ "instructions to obtain an activation code. Then go to the main "
-#~ "configuration dialog to enter the code."
-#~ msgstr ""
-#~ "Diese Aktivität ist nur in der Vollversion von GCompris verfügbar.<br/"
-#~ ">Auf <a href='http://gcompris.net'>https://gcompris.net</a> findest du "
-#~ "Anweisungen, wie du einen Aktivierungscode bekommst. Gib dann diesen Code "
-#~ "im Einrichtungsdialog ein."
-
-#~ msgctxt "BuyMeOverlayInapp|"
-#~ msgid "This activity is only available in the full version of GCompris."
-#~ msgstr "Diese Aktivität ist nur in der Vollversion von GCompris verfügbar."
-
-#~ msgctxt "BuyMeOverlayInapp|"
-#~ msgid "Buy the full version"
-#~ msgstr "Kaufe die Vollversion"
-
-#~ msgctxt "DigitalElectricity|"
-#~ msgid "Select your Mode"
-#~ msgstr "Wähle Deinen Modus"
-
-#~ msgctxt "Gletters|"
-#~ msgid "Select your locale"
-#~ msgstr "Wähle Deine Sprache"
-
-#~ msgctxt "Gletters|"
-#~ msgid "Select Domino mode"
-#~ msgstr "Wähle Domino-Modus"
-
-#~ msgctxt "Gletters|"
-#~ msgid "Speed"
-#~ msgstr "Geschwindigkeit"
-
-#~ msgctxt "GraphColoring|"
-#~ msgid "Colors"
-#~ msgstr "Farben"
-
-#~ msgctxt "GraphColoring|"
-#~ msgid "Shapes"
-#~ msgstr "Formen"
-
-#~ msgctxt "Hangman|"
-#~ msgid "Select your locale"
-#~ msgstr "Wähle Deine Sprache"
-
-#~ msgctxt "NoteNames|"
-#~ msgid "Speed"
-#~ msgstr "Geschwindigkeit"
-
-#~ msgctxt "Readingh|"
-#~ msgid "Select your locale"
-#~ msgstr "Wähle Deine Sprache"
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid ""
-#~ "The kilogram is a unit of mass, a property which corresponds to the "
-#~ "common perception of how \"heavy\" an object is."
-#~ msgstr ""
-#~ "Kilogramm ist eine Masseneinheit, eine Eigenschaft die beschreibt wie "
-#~ "schwer ein Gegenstand ist."
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "Take care, you can drop weights on both sides of the scale."
-#~ msgstr "Denk dran, Du kannst Gewichte auf beide Seiten der Waage stellen."
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "Now you have to guess the weight of the gift."
-#~ msgstr "Jetzt sollst du das Gewicht des Geschenks raten."
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "Remember, one kilogram ('kg') equals 1000 grams ('g')."
-#~ msgstr "Denke daran, ein Kilogramm ('kg') entspricht 1000 Gramm ('g')."
-
-#~ msgctxt "ScalesboardWeight|"
-#~ msgid "The \"lb\" symbol at the end of a number means pound."
-#~ msgstr "Das Symbol „lb“ am Ende einer Zahl bedeutet Pfund"
 
 #~ msgctxt "Superbrain|"
 #~ msgid "Colors"
@@ -30922,18 +29572,41 @@ msgstr "Start"
 #~ msgid "Select your mode"
 #~ msgstr "Wähle Deine Spielweise"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Intro gravity"
-#~ msgstr "Einführung zur Schwerkraft"
-
-#~ msgctxt "IntroGravity|"
-#~ msgid "Avoid the asteroid and join the space shuttle to win."
+#~ msgctxt "BuyMeOverlay|"
+#~ msgid ""
+#~ "This activity is only available in the full version of GCompris.<br/>On "
+#~ "<a href='https://gcompris.net'>https://gcompris.net</a> you will find the "
+#~ "instructions to obtain an activation code. Then go to the main "
+#~ "configuration dialog to enter the code."
 #~ msgstr ""
-#~ "Weiche dem Asteroiden aus und gehe in das Space-Shuttle, um zu gewinnen."
+#~ "Diese Aktivität ist nur in der Vollversion von GCompris verfügbar.<br/"
+#~ ">Auf <a href='http://gcompris.net'>https://gcompris.net</a> findest du "
+#~ "Anweisungen, wie du einen Aktivierungscode bekommst. Gib dann diesen Code "
+#~ "im Einrichtungsdialog ein."
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reassemble the shapes"
-#~ msgstr "Setze das Puzzle zusammen"
+#~ msgctxt "BuyMeOverlayInapp|"
+#~ msgid "This activity is only available in the full version of GCompris."
+#~ msgstr "Diese Aktivität ist nur in der Vollversion von GCompris verfügbar."
+
+#~ msgctxt "BuyMeOverlayInapp|"
+#~ msgid "Buy the full version"
+#~ msgstr "Kaufe die Vollversion"
+
+#~ msgctxt "main|"
+#~ msgid ""
+#~ "The images for several activities are not yet installed. Do you want to "
+#~ "download them now?"
+#~ msgstr ""
+#~ "Die Bilder für mehrere Aktivitäten sind noch nicht installiert. Möchtest "
+#~ "Du sie jetzt herunterladen?"
+
+#~ msgctxt "main|"
+#~ msgid "Do you want to download it now?"
+#~ msgstr "Möchtest Du sie jetzt herunterladen?"
+
+#~ msgctxt "main|"
+#~ msgid "Do you want to download the corresponding sound files now?"
+#~ msgstr "Möchtest du die entsprechenden Tondateien jetzt herunterladen?"
 
 #~ msgctxt "Dataset|"
 #~ msgid "How long does it take for Earth to complete one year?"
@@ -30999,6 +29672,13 @@ msgstr "Start"
 #~ msgctxt "Reversecount|"
 #~ msgid "Numbers"
 #~ msgstr "Zahlen"
+
+#, fuzzy
+#~| msgctxt "board6_0|"
+#~| msgid "Romania"
+#~ msgctxt "Reversecount|"
+#~ msgid "Romans"
+#~ msgstr "Rumänien"
 
 #~ msgctxt "Dataset|"
 #~ msgid "1000 degrees celsius"
@@ -31639,6 +30319,10 @@ msgstr "Start"
 #~ msgctxt "DialogConfig|"
 #~ msgid "English (United States)"
 #~ msgstr "Englisch (Vereinigte Staaten)"
+
+#~ msgctxt "DialogConfig|"
+#~ msgid "Breton"
+#~ msgstr "Breton"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Spanish"

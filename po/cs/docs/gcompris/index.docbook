@@ -558,12 +558,6 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--start-level úroveň</entry>
-<entry
->Zadání úrovně na které začít u zadané aktivity při startu &gcompris; pomocí volby --launch. Volba je ignorována, pokud nebyla zadána volba --launch nebo pokud zadaná úroveň je neplatná.</entry>
-</row>
-<row>
-<entry
 >--difficulty {hodnota|minimum-maximum}</entry>
 <entry
 >Pro dané sezení vynutí nastavení obtížnosti aktivit &gcompris;u na zadanou  hodnotu nebo mezi minimální a maximální hodnoty. Hodnoty musí být mezi  1 a 6. U formátu minimum-maximum musí být minimální hodnota nižší než  ta maximální. Pokud toto není splněno, &gcompris; se nespustí.</entry>

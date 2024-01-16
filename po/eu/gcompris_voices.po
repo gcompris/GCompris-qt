@@ -1,16 +1,16 @@
 # Translation for gcompris_voices.po to Euskara/Basque (eu).
-# Copyright (C) 2019-2023 This file is copyright:
+# Copyright (C) 2019-2022, This file is copyright:
 # This file is distributed under the same license as the gcompris package.
-# SPDX-FileCopyrightText: 2023 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
-"PO-Revision-Date: 2023-09-28 18:22+0200\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
+"PO-Revision-Date: 2022-12-31 21:09+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 22.12.0\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -198,16 +204,18 @@ msgstr "Sortu letraren Braille gelaxka."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Hautatu zenbaki bat eta egin klik jomugako kokalekuan. Ikur bakoitza soilik "
-"behin agertu behar da errenkada eta zutabe bakoitzean. Kaiola bateko "
-"gelaxketako zenbakiek emaniko emaitza sortu behar dute emaniko eragilearekin "
-"konbinatzean."
+"Hautatu zenbaki bat edo ikur bat eta egin klik jomuga eremuan. Ikur bakoitza "
+"soilik behin agertu behar da errenkada bakoitzean, zutabe bakoitzean eta "
+"azpieremu bakoitzean halakorik balego."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -549,13 +557,25 @@ msgstr ""
 "Gida ezazu zenbaki jalea teklatuko gezien bidez zenbaki lehenetara eta "
 "sakatu zuriune barra haiek irensteko."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
+
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Esleitu eskatutako gramatika-klaseak dagozkien hitzei."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -577,7 +597,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Erabili lau zenbakiak emandako eragilearekin 24 lortzeko"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1320,9 +1340,6 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Tekleatu hitzak zure teklatuan haiek lurrera erori baino lehenago."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "ipini hemen iruzkinean sarrerako ahotsaren testua"
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "Jolastu dama-jokoan ordenagailuaren aurka"
 
@@ -1346,6 +1363,9 @@ msgstr "Tekleatu hitzak zure teklatuan haiek lurrera erori baino lehenago."
 #~ msgstr ""
 #~ "Zenbakiak hurrenkera egokian antolatzea, zenbaki bat bere kokaleku "
 #~ "egokian ipinita"
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "ipini hemen iruzkinean sarrerako ahotsaren testua"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

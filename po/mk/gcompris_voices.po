@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
 "PO-Revision-Date: 2021-03-15 13:32+0100\n"
 "Last-Translator: Igor Risteski <fikio@yahoo.com>\n"
 "Language-Team: Macedonian Team (mk)\n"
@@ -20,6 +20,12 @@ msgstr ""
 "X-Generator: Poedit 2.4.1\n"
 "Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
 "2;\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -569,6 +575,18 @@ msgid ""
 msgstr ""
 "Водете го јадачот на броеви со копчињата со стрелки до простите броеви и "
 "притиснете го копчето за простор (space) за да ги проголта."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -1338,9 +1356,6 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Напишете ги зборовите на тастатурата пред да стигнат до земјата."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "ставете тука во коментар на текстот за воведниот глас"
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "играј дама против компјутерот"
 
@@ -1351,3 +1366,6 @@ msgstr "Напишете ги зборовите на тастатурата п�
 #~ "Променете ја гравитационата сила на планетите со движење на лизгачите "
 #~ "нагоре и надолу. Бидете внимателни да не го срушите вселенскиот брод на "
 #~ "Тукс."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "ставете тука во коментар на текстот за воведниот глас"

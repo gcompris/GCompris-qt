@@ -1,16 +1,16 @@
 # Translation of gcompris_voices.po to Catalan (Valencian)
-# Copyright (C) 2017-2024 This_file_is_part_of_KDE
+# Copyright (C) 2017-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2017, 2018, 2019, 2020, 2021.
-# Josep M. Ferrer <txemaq@gmail.com>, 2017, 2019, 2021, 2022, 2023, 2024.
+# Josep M. Ferrer <txemaq@gmail.com>, 2017, 2019, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
-"PO-Revision-Date: 2024-01-13 19:08+0100\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
+"PO-Revision-Date: 2023-08-08 17:24+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -18,13 +18,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.04.3\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
 #, kde-format
 msgid "click on the required color"
-msgstr "Fes clic damunt del color requerit"
+msgstr "Fes clic damunt del color requerit."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
 #: activities/algebra_by/ActivityInfo.qml:18
@@ -34,7 +40,7 @@ msgid ""
 "lands in the water"
 msgstr ""
 "Multiplica els dos números i escriu la resposta abans que el globus caiga a "
-"l'aigua"
+"l'aigua."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
@@ -44,7 +50,7 @@ msgid ""
 "lands in the water"
 msgstr ""
 "Troba el resultat de la divisió i escriu la resposta abans que el globus "
-"caiga a l'aigua"
+"caiga a l'aigua."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
 #: activities/algebra_minus/ActivityInfo.qml:18
@@ -54,7 +60,7 @@ msgid ""
 "the water"
 msgstr ""
 "Resta els dos números i escriu la resposta abans que el globus caiga a "
-"l'aigua"
+"l'aigua."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
 #: activities/algebra_plus/ActivityInfo.qml:18
@@ -63,7 +69,8 @@ msgid ""
 "Add the two numbers together and type in your answer before the balloon "
 "lands in the water"
 msgstr ""
-"Suma els dos números i escriu la resposta abans que el globus caiga a l'aigua"
+"Suma els dos números i escriu la resposta abans que el globus caiga a "
+"l'aigua."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
 #: activities/algorithm/ActivityInfo.qml:18
@@ -136,13 +143,13 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
-msgstr "Un processador de text senzill per a jugar amb el teclat"
+msgstr "Un senzill processador de text per a jugar amb el teclat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop the objects matching the pictures"
-msgstr "Arrossega i deixa anar els objectes que coincidisquen amb les imatges"
+msgstr "Arrossega i deixa anar els objectes que coincidisquen amb les imatges."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
 #: activities/babyshapes/ActivityInfo.qml:22
@@ -164,7 +171,7 @@ msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
 msgstr ""
 "Prem alhora les tecles de fletxa esquerra i dreta per a fer que la pilota "
-"vaja en línia recta"
+"vaja en línia recta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
@@ -187,7 +194,7 @@ msgid ""
 "When you have achieved it, press OK"
 msgstr ""
 "Encén les bombetes correctes per a representar el binari del nombre decimal "
-"indicat. Quan ho hages aconseguit, prem «OK»"
+"indicat. Quan ho hages aconseguit, prem «OK»."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
@@ -205,16 +212,18 @@ msgstr "Crea la cel·la en braille per a la lletra."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Selecciona un nombre i fes clic en l'àrea de destinació. Cada nombre només "
-"haurà d'aparéixer una vegada en una fila i en una columna. Els nombres en "
-"les cel·les d'una gàbia cal que donen el resultat indicat quan es combinen "
-"amb l'operador indicat."
+"Selecciona un número o un símbol i fes clic en l'àrea de destinació. Cada "
+"símbol només haurà d'aparéixer una vegada en una fila, en una columna i en "
+"una subregió."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -238,31 +247,31 @@ msgstr ""
 #: activities/categorization/ActivityInfo.qml:18
 #, kde-format
 msgid "Categorize the items into the correct group"
-msgstr "Categoritza els elements dins del grup correcte"
+msgstr "Categoritza els elements dins del grup correcte."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers against Tux"
-msgstr "Juga a les dames contra en Tux"
+msgstr "Juga a les dames contra en Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "Juga a les dames amb un amic"
+msgstr "Juga a les dames amb un amic."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against Tux"
-msgstr "Juga als escacs contra en Tux"
+msgstr "Juga als escacs contra en Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
 #: activities/chess_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against your friend"
-msgstr "Juga als escacs contra un amic"
+msgstr "Juga als escacs contra un amic."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
 #: activities/chess_partyend/ActivityInfo.qml:18
@@ -279,7 +288,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:22
 #, kde-format
 msgid "Slide the pictures into the order that tells the story"
-msgstr "Fes lliscar les imatges en l'ordre en què s'explica la història"
+msgstr "Fes lliscar les imatges en l'ordre en què s'explica la història."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
@@ -297,7 +306,7 @@ msgstr ""
 #: activities/clickanddraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw"
-msgstr "Fes clic damunt dels punts seleccionats i dibuixa"
+msgstr "Fes clic damunt dels punts seleccionats i dibuixa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
 #: activities/clickgame/ActivityInfo.qml:18
@@ -311,7 +320,7 @@ msgstr "Atrapa els peixos abans que isquen de l'aquari."
 msgid "Drag and drop the needles of the clock to display the required time"
 msgstr ""
 "Arrossega i deixa anar les agulles del rellotge per a mostrar l'hora "
-"requerida"
+"requerida."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
@@ -319,7 +328,7 @@ msgstr ""
 msgid "Match the color by moving the sliders on the tubes of paint"
 msgstr ""
 "Fes que el color coincidisca movent els controls lliscants que hi ha als "
-"tubs de pintura"
+"tubs de pintura."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
@@ -327,13 +336,13 @@ msgstr ""
 msgid "Match the color by moving the sliders on the torches"
 msgstr ""
 "Fes que el color coincidisca movent els controls lliscants que hi ha a les "
-"llanternes"
+"llanternes."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
-msgstr "Fes clic damunt del color correcte"
+msgstr "Fes clic damunt del color correcte."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
 #: activities/comparator/ActivityInfo.qml:20
@@ -358,7 +367,7 @@ msgstr ""
 #: activities/details/ActivityInfo.qml:21
 #, kde-format
 msgid "Slide the images on their respective targets"
-msgstr "Arrossega les imatges fins a la seua destinació respectiva"
+msgstr "Arrossega les imatges fins a la seua destinació respectiva."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
 #: activities/digital_electricity/ActivityInfo.qml:18
@@ -370,7 +379,7 @@ msgstr "Aprén com funciona l'electricitat digital i crea el teu propi circuit."
 #: activities/drawletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw the letter"
-msgstr "Fes clic damunt dels punts seleccionats i dibuixa la lletra"
+msgstr "Fes clic damunt dels punts seleccionats i dibuixa la lletra."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
 #: activities/drawnumbers/ActivityInfo.qml:18
@@ -398,7 +407,8 @@ msgstr " Neteja la finestra amb l'esponja i descobrix la imatge oculta."
 #, kde-format
 msgid "Double tap or double click on the bricks to discover the hidden picture"
 msgstr ""
-"Fes doble toc o doble clic damunt dels blocs per a descobrir la imatge oculta"
+"Fes doble toc o doble clic damunt dels blocs per a descobrir la imatge "
+"oculta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
 #: activities/erase_clic/ActivityInfo.qml:18
@@ -466,7 +476,7 @@ msgstr "Selecciona el dia requerit."
 #, kde-format
 msgid " Move the mouse or your finger along the pipe to stop the fire."
 msgstr ""
-" Mou el ratolí o fes lliscar el dit al llarg de la canonada per a parar el "
+"Mou el ratolí o fes lliscar el dit al llarg de la canonada per a parar el "
 "foc."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
@@ -496,7 +506,7 @@ msgstr ""
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr "Reproduïx i completa el model de fris."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -566,6 +576,18 @@ msgstr ""
 "Guia al mastegador de números amb les tecles de fletxa cap als nombres "
 "primers i prem la barra d'espai perquè se'ls empassi."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
+
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
 #: activities/grammar_analysis/ActivityInfo.qml:21
@@ -573,7 +595,6 @@ msgstr ""
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
-"Assigna les classes gramaticals sol·licitades a les paraules corresponents."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -596,7 +617,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Utilitza els quatre nombres amb els operadors donats per a trobar 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -827,7 +848,7 @@ msgid ""
 "xylophone's bars"
 msgstr ""
 "Escolta la seqüència de so que es reproduïx, i repetix-la fent clic en les "
-"barres del xilòfon"
+"barres del xilòfon."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
@@ -1070,7 +1091,7 @@ msgstr "Fes doble clic o doble toc en la porteria per a marcar un gol."
 #, kde-format
 msgid "look at the two pictures carefully and click where you see a difference"
 msgstr ""
-"Mira detingudament les dues imatges i fes clic a on veges una diferència"
+"Mira detingudament les dues imatges i fes clic a on veges una diferència."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
 #: activities/piano_composition/ActivityInfo.qml:19
@@ -1177,7 +1198,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:17
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
-msgstr "Aprén i practica la conversió dels nombres romans a àrabs"
+msgstr "Aprén i practica la conversió dels nombres romans a àrabs."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
@@ -1197,7 +1218,7 @@ msgid ""
 "that there may be a rest left"
 msgstr ""
 "Compartix els caramels a parts iguals entre el nombre especificat d'infants "
-"i observa que a l'esquerra, encara en poden quedar"
+"i observa que a l'esquerra, encara en poden quedar."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
 #: activities/simplepaint/ActivityInfo.qml:18

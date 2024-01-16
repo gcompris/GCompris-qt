@@ -558,12 +558,6 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--start-level level</entry>
-<entry
->Ange på vilken nivå aktiviteten som specificeras av alternativet --launch ska påbörjas när GCompris startas. Ignoreras om alternativet --launch inte finns, eller om den angivna nivån är ogiltig.</entry>
-</row>
-<row>
-<entry
 >--difficulty {värde|min-max}</entry>
 <entry
 >Tvinga GCompris svårighetsgrad för aktiviteter till värdet, eller mellan min- och maxvärdet. Värdena måste vara mellan 1 och 6, och om formatet är min-max måste minvärdet vara mindre än maxvärdet. Om det inte är fallet startar inte GCompris.</entry>

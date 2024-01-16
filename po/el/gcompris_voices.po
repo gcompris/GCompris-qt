@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
 "PO-Revision-Date: 2023-03-19 19:26+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -16,6 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 3.2.2\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -561,6 +567,18 @@ msgid ""
 msgstr ""
 "Οδήγησε με τα βελάκια το φαγάνα των αριθμών στους πρώτους αριθμούς και "
 "πάτησε το κενό για να τους καταπιεί."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -1344,9 +1362,6 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Πληκτρολόγησε τις λέξεις πριν αυτές φθάσουν στο έδαφος."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "βάλε εδώ σε σχόλιο το κείμενο για την εισαγωγική φωνή"
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "παίξε ντάμα με τον υπολογιστή"
 
@@ -1356,6 +1371,9 @@ msgstr "Πληκτρολόγησε τις λέξεις πριν αυτές φθ�
 #~ msgstr ""
 #~ "Τράβηξε το βέλος για να επιλέξεις ένα τμήμα της γραμμής και άφησέ το στην "
 #~ "κενή περιοχή για να αναπαραστήσεις τον δεκαδικό αριθμό."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "βάλε εδώ σε σχόλιο το κείμενο για την εισαγωγική φωνή"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
 "PO-Revision-Date: 2023-01-02 12:18+0100\n"
 "Last-Translator: charruau <echarruau@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
@@ -16,6 +16,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Lokalize 22.12.0\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -563,6 +569,18 @@ msgid ""
 msgstr ""
 "Guide le croqueur vers les nombres premiers demandés pour qu'il puisse les "
 "croquer."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -1346,34 +1364,11 @@ msgid "Type the words on your keyboard before they reach the ground."
 msgstr ""
 "Saisis au clavier les mots qui tombent avant qu'ils ne touchent le sol."
 
-#, fuzzy
-#~| msgid "put here in comment the text for the intro voice"
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "Joue aux dames contre l'ordinateur."
 
-#~ msgid ""
-#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
-#~ "to represent the decimal number."
-#~ msgstr ""
-#~ "Faites glisser la flèche pour sélectionner une partie de la barre puis "
-#~ "déposez-la dans la zone vide pour représenter le nombre décimal."
-
-#~ msgid ""
-#~ "Arrange the alphabets in the correct order by placing an alphabet in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Classez les alphabets dans le bon ordre en plaçant un alphabet dans sa "
-#~ "position correcte."
-
-#~ msgid ""
-#~ "Arrange the numbers in the correct order by placing a number in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Classez les chiffres dans le bon ordre en plaçant un chiffre dans sa "
-#~ "position correcte."
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Mettez ici en commentaire le texte pour la voix d'intro."
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

@@ -1,11 +1,11 @@
 # translation of gcompris_voices.po to Slovak
-# Roman Paholik <wizzardsk@gmail.com>, 2017, 2018, 2019.
+# SPDX-FileCopyrightText: 2017, 2019, 2023 Roman Paholik <wizzardsk@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
-"PO-Revision-Date: 2019-11-08 21:37+0100\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
+"PO-Revision-Date: 2023-12-11 19:01+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
 "Language: sk\n"
@@ -13,7 +13,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 23.08.3\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -100,7 +106,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:17
 #, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr ""
+msgstr "Pohnite myšou alebo sa dotknite obrazovky a sledujte výsledok."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
@@ -215,7 +221,7 @@ msgstr "Kategorizujte prvky do správnych skupín"
 #, fuzzy, kde-format
 #| msgid "play chess against Tux"
 msgid "play checkers against Tux"
-msgstr "hrať šach proti Tuxovi"
+msgstr "Hrať dámu (proti Tuxovi)"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -427,13 +433,13 @@ msgstr ""
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "Vyber primeraný počet častí ako je uvedené v pokynoch."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "Zisti správneho čitateľa a menovateľa zobrazeného zlomku."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
 #: activities/frieze/ActivityInfo.qml:17
@@ -443,9 +449,9 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
-#, kde-format
+#, fuzzy, kde-format
 msgid "Drag and drop the regions to complete the country maps."
-msgstr ""
+msgstr "Pretiahnuť regióny, na prekrytie mapy krajiny."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
 #: activities/geography/ActivityInfo.qml:22
@@ -497,6 +503,18 @@ msgstr ""
 msgid ""
 "Guide the number eater with the arrow keys to the prime numbers and press "
 "space to swallow them."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
@@ -599,10 +617,9 @@ msgstr ""
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
 #: activities/learn_additions/ActivityInfo.qml:18
 #: activities/learn_subtractions/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr "Kliknite na lampy na ich vypnutie."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -622,10 +639,9 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid "Click on the lamps to turn them off."
+#, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr "Kliknite na lampy na ich vypnutie."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18
@@ -648,6 +664,7 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"Presuňte zvieratá do ich domovov kiknutím ľavým alebo pravým tlačidlom myši."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -999,10 +1016,9 @@ msgstr ""
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
 #: activities/readingh/ActivityInfo.qml:18
 #: activities/readingv/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "Read a list of words and work out if a given word is in it."
+#, kde-format
 msgid "Read a list of words and say if a given word is in it."
-msgstr "Čítajte zoznam slov a precvičte si, či dané slovo je tam."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
 #: activities/redraw/ActivityInfo.qml:18
@@ -1184,6 +1200,3 @@ msgstr ""
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "hrajte dámu proti počítaču"
-
-#~ msgid "Play the end of the chess game against Tux"
-#~ msgstr "Zahrajte si koniec šachovej hry proti Tuxovi"

@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Adrián Chaves (Gallaecio)
+# SPDX-FileCopyrightText: 2023, 2024 Adrián Chaves (Gallaecio)
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2016, 2017.
 # Pablo <parodper@gmail.com>, 2023.
 msgid ""
@@ -14,6 +14,171 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 23.08.4\n"
 "X-Qt-Contexts: true\n"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:19
+#: activities/clickanddraw/ActivityConfig.qml:21
+#: activities/drawletters/ActivityConfig.qml:21
+#: activities/drawnumbers/ActivityConfig.qml:21
+#: activities/enumerate/ActivityConfig.qml:21
+#: activities/erase/ActivityConfig.qml:21
+#: activities/erase_2clic/ActivityConfig.qml:21
+#: activities/erase_clic/ActivityConfig.qml:21
+#: activities/number_sequence/ActivityConfig.qml:22
+msgctxt "ActivityConfig|"
+msgid "Automatic"
+msgstr "Automático"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:20
+#: activities/enumerate/ActivityConfig.qml:22
+msgctxt "ActivityConfig|"
+msgid "OK button"
+msgstr "Botón de aceptar"
+
+#: activities/adjacent_numbers/ActivityConfig.qml:30
+#: activities/enumerate/ActivityConfig.qml:32
+msgctxt "ActivityConfig|"
+msgid "Validate answers"
+msgstr "Validar as respostas"
+
+#. Activity title
+#: activities/adjacent_numbers/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "ActivityInfo|"
+msgid "Find the adjacent numbers"
+msgstr "Atopar os dous números."
+
+#. Help title
+#: activities/adjacent_numbers/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "ActivityInfo|"
+msgid "Find the missing adjacent numbers."
+msgstr "Atopar os dous números."
+
+#. intro: "Find the missing numbers." Help goal
+#: activities/adjacent_numbers/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about prime numbers."
+msgctxt "ActivityInfo|"
+msgid "Learn to order numbers."
+msgstr "Aprende sobre os números primos."
+
+#. Help manual
+#: activities/adjacent_numbers/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare the numbers and choose the corresponding sign."
+msgctxt "ActivityInfo|"
+msgid "Find the requested numbers and drag them to the corresponding spot."
+msgstr "Compara os números e escolle o signo axeitado."
+
+#: activities/adjacent_numbers/resource/1/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 1 and 10."
+msgstr "Números do %1 ao %2."
+
+#: activities/adjacent_numbers/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 0 and 20."
+msgstr "Números do %1 ao %2."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between 0 and 100."
+msgstr "Números do %1 ao %2."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the next number."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:27
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the previous number."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:40
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the in-between number."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:53
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the missing numbers."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:66
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the next numbers."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:79
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the previous numbers."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/3/Data.qml:105
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the in-between numbers."
+msgstr "Atopar os dous números."
+
+#: activities/adjacent_numbers/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between -10 and -1."
+msgstr "Números do %1 ao %2."
+
+#: activities/adjacent_numbers/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Find numbers between -10 and 10."
+msgstr "Números do %1 ao %2."
+
+#: activities/adjacent_numbers/resource/5/Data.qml:53
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Find both numbers."
+msgctxt "Data|"
+msgid "Find the missing numbers"
+msgstr "Atopar os dous números."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -77,6 +242,8 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:27
 #: activities/gnumch-multiples/ActivityInfo.qml:28
 #: activities/gnumch-primes/ActivityInfo.qml:28
+#: activities/graduated_line_read/ActivityInfo.qml:24
+#: activities/graduated_line_use/ActivityInfo.qml:24
 #: activities/grammar_analysis/ActivityInfo.qml:29
 #: activities/grammar_classes/ActivityInfo.qml:29
 #: activities/graph-coloring/ActivityInfo.qml:25
@@ -816,9 +983,12 @@ msgid "Learn multiplication table of 10."
 msgstr "Aprende a táboa de multiplicar do 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Practicar as táboas de multiplicar do 1 ao 10."
+msgstr "Táboas de multiplicar do 1 ao 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -907,9 +1077,12 @@ msgid "Learn division table of 10."
 msgstr "Aprende a dividir entre 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Practicar as táboas de dividir do 1 ao 10."
+msgstr "Táboas de multiplicar do 1 ao 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1000,19 +1173,28 @@ msgid "Learn subtraction table of 10."
 msgstr "Aprende a táboa de restar do 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Restas de números ata o 10."
+msgstr "Restar números decimais ata o 1."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Restas de números ata o 20."
+msgstr "Restar números decimais ata o 1."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Restas de números ata o 100."
+msgstr "Restar números decimais ata o 1."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1101,19 +1283,28 @@ msgid "Learn addition table of 10."
 msgstr "Aprende a táboa de sumar do 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Sumas de números ata o 10."
+msgstr "Sumar números decimais ata o 1."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Sumas de números ata o 15."
+msgstr "Sumar números decimais ata o 1."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Sumas con resultados ata o 100."
+msgstr "Sumar estrelas ata 10."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3006,13 +3197,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr "Calcudoku"
+msgstr ""
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Resolve o calcudoku."
+msgstr ""
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3021,14 +3212,15 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
-"Desenvolver as habilidades de razoamento lóxico: relación de datos, dedución "
-"e localización espacial ao usar cálculo."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completar o quebracabezas require paciencia e habilidade aritmética."
+msgstr "Completar o quebracabezas require paciencia e habilidade lóxica."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3041,43 +3233,39 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
-"Seleccionar un número da lista e premer a súa posición de destino para "
-"encher a grade. Cada número debe aparecer só unha vez por fila e columna. As "
-"gaiolas son grupos de celas que fornecer información sobre como enchelas. As "
-"gaiolas de máis dunha cela fornecen un resultado e un operador: todos os "
-"números da gaiola, cando se combinan usando o operador, deben producir o "
-"resultado. As gaiolas feitas de só unha cela fornecen directamente o número "
-"para inserir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Grades pequenas co operador +."
+msgstr "Grades pequenas."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Grades pequenas cos operadores + e -."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Grades pequenas cos operadores +, - e ×."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Grades medianas cos operadores +, - e ×."
+msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Grades grandes cos operadores +, -, × e /."
+msgstr ""
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3135,37 +3323,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Espacio ou Intro: comproba a resposta"
 
-#: activities/calendar/Calendar.qml:309
+#: activities/calendar/Calendar.qml:306
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Domingo"
 
-#: activities/calendar/Calendar.qml:310
+#: activities/calendar/Calendar.qml:307
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Luns"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:308
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Martes"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:309
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Mércores"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:310
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Xoves"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:311
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Venres"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:312
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Sábado"
@@ -4495,15 +4683,24 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Cando remates pulsa o botón de Aceptar."
 
 #: activities/chronos/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
+#| "Vegastrike which are released under the GPL license. The transportation "
+#| "images are copyright Franck Doucet. Dates of Transportation are based on "
+#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"A fotografía da Lúa e propiedade intelectual da NASA. As imaxes de "
-"transporte son propiedade intelectual de Franck Doucet. As datas de "
-"transporte están baseadas nas atopadas en &lt;https://www.wikipedia.org&gt;."
+"A fotografía da Lúa e propiedade intelectual da NASA. Os sons espaciais "
+"obtivéronse de Tuxpaint e Vegastrike; ambos os dous proxectos están "
+"protexidos pola licenza GPL. As imaxes de transporte son propiedade "
+"intelectual de Franck Doucet. As datas de transporte están baseadas nas "
+"atopadas en &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4646,14 +4843,20 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globo de aire quente dos irmáns Montgolfier de 1783"
 
 #: activities/chronos/resource/board/board5_1.qml:47
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1890"
+msgstr "Éole de Clement Ader de 1880"
 
 #: activities/chronos/resource/board/board5_1.qml:55
+#, fuzzy
+#| msgctxt "board5_1|"
+#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "Primeiro voo en helicóptero por Paul Cornu en 1907"
+msgstr "Primeiro voo en helicóptero por Paul Cornu en 1906"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4666,9 +4869,12 @@ msgid "1769 Cugnot's fardier"
 msgstr "Carro de Cugnot de 1769"
 
 #: activities/chronos/resource/board/board5_2.qml:40
+#, fuzzy
+#| msgctxt "board5_2|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1890"
+msgstr "Éole de Clement Ader de 1880"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4696,9 +4902,12 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "A locomotora de vapor Stephenson's Rocket de 1829"
 
 #: activities/chronos/resource/board/board5_4.qml:47
+#, fuzzy
+#| msgctxt "board5_4|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1890"
+msgstr "Éole de Clement Ader de 1880"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4711,14 +4920,20 @@ msgid "Aviation"
 msgstr "Aviación"
 
 #: activities/chronos/resource/board/board6_0.qml:40
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "Éole de Clement Ader de 1890"
+msgstr "Éole de Clement Ader de 1880"
 
 #: activities/chronos/resource/board/board6_0.qml:48
+#, fuzzy
+#| msgctxt "board6_0|"
+#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "Flyer III dos irmáns Wright de 1905"
+msgstr "Flyer III dos irmáns Wright de 1903"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4741,9 +4956,12 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "Charles Lindbergh cruza o Océano Atlántico en 1927"
 
 #: activities/chronos/resource/board/board6_1.qml:55
+#, fuzzy
+#| msgctxt "board6_1|"
+#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "Récord de velocidade de 445km/h logrado por Hélène Boucher en 1934"
+msgstr "Récord de velocidade de 444km/h logrado por Hélène Boucher en 1934"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4771,9 +4989,12 @@ msgid "Cars"
 msgstr "Coches"
 
 #: activities/chronos/resource/board/board6_3.qml:39
+#, fuzzy
+#| msgctxt "board6_3|"
+#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "Microcarro de Renault de 1898"
+msgstr "Microcarro de Renault de 1899"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -4859,18 +5080,6 @@ msgstr "Tabulador: repite a pregunta"
 msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
 msgstr "Preme nunha letra en maiúscula"
-
-#: activities/clickanddraw/ActivityConfig.qml:21
-#: activities/drawletters/ActivityConfig.qml:21
-#: activities/drawnumbers/ActivityConfig.qml:21
-#: activities/enumerate/ActivityConfig.qml:21
-#: activities/erase/ActivityConfig.qml:21
-#: activities/erase_2clic/ActivityConfig.qml:21
-#: activities/erase_clic/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:22
-msgctxt "ActivityConfig|"
-msgid "Automatic"
-msgstr "Automático"
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5015,12 +5224,12 @@ msgstr ""
 "A agulla pequena indica as horas, a mediana os minutos e a grande os "
 "segundos."
 
-#: activities/clockgame/Clockgame.qml:106
+#: activities/clockgame/Clockgame.qml:109
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Poñer no reloxo:"
 
-#: activities/clockgame/Clockgame.qml:109
+#: activities/clockgame/Clockgame.qml:112
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5028,7 +5237,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hora"
 msgstr[1] "%n horas"
 
-#: activities/clockgame/Clockgame.qml:112
+#: activities/clockgame/Clockgame.qml:115
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5036,7 +5245,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minuto"
 msgstr[1] "%n minutos"
 
-#: activities/clockgame/Clockgame.qml:115
+#: activities/clockgame/Clockgame.qml:118
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5511,7 +5720,7 @@ msgid "Space or Enter or Tab: select the next item"
 msgstr "Espazo, Intro ou Tab: seleccionar o seguinte elemento"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
-#: activities/crane/crane.js:44
+#: activities/crane/crane.js:41
 msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
@@ -5520,7 +5729,7 @@ msgstr ""
 "toa;ula;uva;vao;xeo;zoo"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
-#: activities/crane/crane.js:51
+#: activities/crane/crane.js:48
 msgctxt "crane|"
 msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
@@ -5530,7 +5739,7 @@ msgstr ""
 "rato;seta;tubo;ubre;vaso;xefa;zona"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
-#: activities/crane/crane.js:58
+#: activities/crane/crane.js:55
 msgctxt "crane|"
 msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
@@ -6506,16 +6715,6 @@ msgstr "Aprender a debuxar os números de maneira divertida."
 msgctxt "ActivityInfo|"
 msgid "Draw the numbers by connecting the dots in the correct order."
 msgstr "Conecta os puntos na orde correcta para debuxar os números."
-
-#: activities/enumerate/ActivityConfig.qml:22
-msgctxt "ActivityConfig|"
-msgid "OK button"
-msgstr "Botón de aceptar"
-
-#: activities/enumerate/ActivityConfig.qml:32
-msgctxt "ActivityConfig|"
-msgid "Validate answers"
-msgstr "Validar as respostas"
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -9215,7 +9414,7 @@ msgid ""
 "Select the appropriate number of parts as described in the instructions."
 msgstr "Escolle o número de partes axeitado segundo as instrucións."
 
-#: activities/fractions_create/fractions_create.js:77
+#: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
 msgstr "Atopa a fracción representada."
@@ -9628,10 +9827,10 @@ msgstr "Espacio: selecciona un elemento"
 #: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: cancel last operation"
+#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Borrar ou Suprimir: cancelar a última operación"
+msgstr "Espacio ou Intro: seleccionar un elemento da lista"
 
 #: activities/frieze/ActivityInfo.qml:28
 #, fuzzy
@@ -13840,21 +14039,23 @@ msgstr "1 non é un número primo."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr "%1 é un número non primo, os seus divisores son: %2"
+msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "Warning|"
+#| msgid "but %1 is not a multiple of %2."
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "Os múltiplos de %1 inclúen %2 e %3 pero %4 non é múltiplo de %5."
+msgstr "pero %1 non é múltiplo de %2."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr "Os divisores de %1 son: %2"
+msgstr ""
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14033,31 +14234,292 @@ msgstr ""
 "× 3 = 6) así que 6 non é primo."
 
 #. Activity title
+#: activities/graduated_line_read/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Read a graduated line"
+msgstr ""
+
+#. Help title
+#: activities/graduated_line_read/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Read values on a graduated line."
+msgstr ""
+
+#. Help goal
+#: activities/graduated_line_read/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
+msgctxt "ActivityInfo|"
+msgid "Learn to read a graduated line."
+msgstr "Aprender o ciclo da auga."
+
+#. Help prerequisite
+#: activities/graduated_line_read/ActivityInfo.qml:21
+#: activities/graduated_line_use/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Even and odd numbers"
+msgctxt "ActivityInfo|"
+msgid "Reading and ordering numbers."
+msgstr "Números pares e impares"
+
+#. Help manual
+#: activities/graduated_line_read/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the number pad or your keyboard to enter the value corresponding to the "
+"given spot on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_read/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: enter a number"
+msgctxt "ActivityInfo|"
+msgid "Digits: enter digits"
+msgstr "Díxitos: inserir un número"
+
+#: activities/graduated_line_read/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace: delete the last digit in your answer"
+msgctxt "ActivityInfo|"
+msgid "Backspace: delete the last digit"
+msgstr "Borrar: elimina o último díxito da túa resposta"
+
+#: activities/graduated_line_read/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Digits: type your answer"
+msgctxt "ActivityInfo|"
+msgid "Delete: reset your answer"
+msgstr "Díxitos: Escriba a súa resposta"
+
+#: activities/graduated_line_read/ActivityInfo.qml:28
+#: activities/graduated_line_use/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: validate your answer"
+msgctxt "ActivityInfo|"
+msgid "Space, Return or Enter: validate your answer"
+msgstr "Espacio ou Intro: comproba a resposta"
+
+#: activities/graduated_line_read/graduated_line_read.js:116
+msgctxt "graduated_line_read|"
+msgid "(variable boundaries)"
+msgstr ""
+
+#: activities/graduated_line_read/GraduatedLineRead.qml:15
+#, fuzzy
+#| msgctxt "advanced_colors|"
+#| msgid "Find the rust butterfly"
+msgctxt "GraduatedLineRead|"
+msgid "Find the requested number."
+msgstr "Atopa a bolboreta ferruxe"
+
+#: activities/graduated_line_read/resource/1/Data.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 5."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 7."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 1 and 10."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 20."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 50."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 100."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/7/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 1 000."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/8/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 10 000."
+msgstr "Números do %1 ao %2."
+
+#: activities/graduated_line_read/resource/9/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Numbers between %1 and %2."
+msgctxt "Data|"
+msgid "Number to find between 0 and 1 000 000."
+msgstr "Números do %1 ao %2."
+
+#. Activity title
+#: activities/graduated_line_use/ActivityInfo.qml:14
+msgctxt "ActivityInfo|"
+msgid "Use a graduated line"
+msgstr ""
+
+#. Help title
+#: activities/graduated_line_use/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid "Place values on a graduated line."
+msgstr ""
+
+#. Help goal
+#: activities/graduated_line_use/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to use a calendar."
+msgctxt "ActivityInfo|"
+msgid "Learn to use a graduated line."
+msgstr "Aprende a usar un calendario."
+
+#. Help manual
+#: activities/graduated_line_use/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the arrows to move the cursor to the position corresponding to the given "
+"value on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_use/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: move the spaceship"
+msgctxt "ActivityInfo|"
+msgid "Left and Right arrows: move the cursor"
+msgstr "Frechas dereita e esquerda: mover a nave espacial"
+
+#: activities/graduated_line_use/GraduatedLineUse.qml:10
+msgctxt "GraduatedLineUse|"
+msgid "Place the given number on the graduated line."
+msgstr ""
+
+#: activities/graduated_line_use/resource/1/Data.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Ascending order, 5 defined numbers between 1 and 5."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 5."
+msgstr "Orde ascendente, 5 números definidos entre o 1 e o 5."
+
+#: activities/graduated_line_use/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 7."
+msgstr "Adiviña un número entre 1 e %1."
+
+#: activities/graduated_line_use/resource/3/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Guess a number between 1 and %1."
+msgctxt "Data|"
+msgid "Graduation to find between 1 and 10."
+msgstr "Adiviña un número entre 1 e %1."
+
+#: activities/graduated_line_use/resource/4/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 20 and 29."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 20."
+msgstr "Resultado entre 20 e 29."
+
+#: activities/graduated_line_use/resource/5/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 30 and 50."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 50."
+msgstr "Resultado entre 30 e 50."
+
+#: activities/graduated_line_use/resource/6/Data.qml:9
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Result between 30 and 50."
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 100."
+msgstr "Resultado entre 30 e 50."
+
+#: activities/graduated_line_use/resource/7/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 1 000."
+msgstr ""
+
+#: activities/graduated_line_use/resource/8/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 10 000."
+msgstr ""
+
+#: activities/graduated_line_use/resource/9/Data.qml:9
+msgctxt "Data|"
+msgid "Graduation to find between 0 and 1 000 000."
+msgstr ""
+
+#. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr "Análise gramatical"
+msgstr ""
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr "Identifica categorías gramaticais nas oracións."
+msgstr ""
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprende a identificar categorías gramaticais."
+msgstr ""
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
-"Asigna as categorías gramaticais solicitadas ás palabras correspondentes."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14065,29 +14527,26 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona unha categoría gramatical da lista, logo selecciona a caixa baixo "
-"unha palabra e asígnalle a categoría gramatical."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr "Deixa a caixa baleira se ningunha categoría gramatical se corresponde."
+msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
-"Frechas de arriba e abaixo e tabulador: cambiar entre categorías gramaticais "
-"e palabras"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr ""
-"Frechas dereita e esquerda: seleccionar elementos en categorías gramaticais "
-"ou palabras"
+msgstr "Frechas dereita e esquerda: escolle un símbolo"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14096,30 +14555,31 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Espazo: asignar a categoría gramatical seleccionada á palabra seleccionada e "
-"logo seleccionar a seguinte palabra"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Borrar: seleccionar a palabra anterior"
+msgstr "Borrar: elimina o último díxito da túa resposta"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr "Análise gramatical"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprende a identificar categorías gramaticais."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "Atopa as palabras coas categorías gramaticais solicitadas"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14127,23 +14587,21 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona unha categoría gramatical da lista, logo selecciona a caixa baixo "
-"unha palabra e asígnalle a categoría gramatical."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Deixa a caixa baleira se ningunha categoría gramatical se corresponde."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr "Categorías gramaticais"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Atopa as palabras coa categoría gramatical solicitada"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14151,30 +14609,31 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona a categoría gramatical da lista, logo selecciona a caixa baixo "
-"unha palabra e asígnalle a categoría gramatical."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Deixa a caixa baleira se a categoría gramatical non se corresponde."
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:421
+#, fuzzy
+#| msgctxt "Admin|"
+#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "Baleira"
+msgstr "baleiro"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr "Categorías gramaticais"
+msgstr ""
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr "Asigna a categoría gramatical solicitada ás palabras correspondentes."
+msgstr ""
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14182,13 +14641,11 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecciona a categoría gramatical da lista, logo selecciona a caixa baixo "
-"unha palabra e asígnalle a categoría gramatical."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Deixa a caixa baleira se a categoría gramatical non se corresponde."
+msgstr ""
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14346,90 +14803,109 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr "Adiviña 24"
+msgstr ""
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr "Calcula para atopar 24."
+msgstr ""
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Aprende a calcular cos catro operadores."
+msgstr "Practica cálculo alxébrico con catro operadores."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Ser capaz de calcular sumas, restas, multiplicacións e divisións."
+msgstr "Practica a suma, a resta, a multiplicación e a división."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Usar os catro números cos operadores indicados para calcular 24."
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Frechas: navegar dentro de números e operadores"
+msgstr "Frechas: navegar dentro dunha zona."
 
 #: activities/guess24/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr ""
-"Espacio, Intro: seleccionar un anular a selección do valor ou operador "
-"actuais"
+msgstr "Espacio ou Intro: seleccionar ou colocar un elemento"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr "Teclas de operador (+, -, * /): seleccionar o operador"
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Borrar ou Suprimir: cancelar a última operación"
+msgstr "Borrar ou Suprimir: desfacer"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr "Tabulador: cambiar entre números e operadores"
+msgstr ""
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Usar os catro números cos operadores indicados para calcular 24."
+msgstr ""
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr "Pode solucionarse con + e -."
+msgstr ""
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr "Pode solucionarse con +, - e ×."
+msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Fai falla multiplicar."
+msgstr "Multiplicacións."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Pode solucionarse con todos os operadores."
+msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Requírese dividir."
+msgstr "Divisións."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15218,9 +15694,12 @@ msgstr "Atopa o banjo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Atopa os bongós"
+msgstr "Atopa o bongó"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -16328,7 +16807,7 @@ msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "A man esquerda"
 
-#: activities/leftright/Leftright.qml:161
+#: activities/leftright/Leftright.qml:164
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "A man dereita"
@@ -18395,9 +18874,12 @@ msgid "Copyright: %1"
 msgstr "Dereitos de copia: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtro de dificultade"
+msgstr "Filtro de dificultade:"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18405,9 +18887,12 @@ msgid "Language selector"
 msgstr "Idioma"
 
 #: activities/menu/ConfigurationItem.qml:115
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Activar a descarga e actualización automática de recursos externos"
+msgstr "Activar a descarga e actualización automática de ficheiros de son"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19450,7 +19935,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr "Realzar o seguinte punto"
+msgstr ""
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -24987,12 +25472,17 @@ msgstr "Completar o quebracabezas require paciencia e habilidade lóxica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select a number or a symbol on the left and click on its target position. "
+#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Selecciona un número ou un símbolo da lista e preme a posición na que o "
+"Selecciona un número ou un símbolo á esquerda e preme a posición na que o "
 "queiras colocar. GCompris impedirache escoller unha resposta incorrecta."
 
 #: activities/sudoku/resource/1/Data.qml:13
@@ -25613,36 +26103,58 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escribe a palabra completa mentres cae e antes de que chegue ao chan."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:58 core/ChangeLog.qml:93
-#: core/ChangeLog.qml:96 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option (--start-level level) to start GCompris at specific "
+"level (needs to be used with --launch activity option)"
+msgstr ""
+"Nova opción da liña de ordes (--difficulty {valor|mín-máx}) para iniciar "
+"GCompris cunha dificultade concreta."
+
+#: core/ChangeLog.qml:31
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for: Slovenian, German, Galician."
+msgctxt "ChangeLog|"
+msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgstr "Engadíronse traducións para o esloveno, o alemán e o galego."
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Moitas melloras de usabilidade."
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:39 core/ChangeLog.qml:46
-#: core/ChangeLog.qml:59 core/ChangeLog.qml:77 core/ChangeLog.qml:92
-#: core/ChangeLog.qml:97 core/ChangeLog.qml:103
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
+#: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Moitas imaxes novas."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:60 core/ChangeLog.qml:98 core/ChangeLog.qml:104
+#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Moitas correccións de fallos."
 
-#: core/ChangeLog.qml:37
+#: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Engadíronse traducións ao árabe e ao esperanto."
 
-#: core/ChangeLog.qml:38 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:40 core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Actualizáronse moitas traducións."
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -25651,22 +26163,22 @@ msgstr ""
 "Nova opción da liña de ordes (--difficulty {valor|mín-máx}) para iniciar "
 "GCompris cunha dificultade concreta."
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Corrección dun problema na actividade de comparación."
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Engadiuse o mapa de España á actividade de xeografía."
 
-#: core/ChangeLog.qml:56
+#: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Engadíronse voces en ucraíno."
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25675,7 +26187,7 @@ msgstr ""
 "Engadiuse unha opción da liña de ordes para listar as actividades e iniciar "
 "unha concreta."
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25684,33 +26196,33 @@ msgstr ""
 "Reduciuse o tamaño dos paquetes en todas as plataformas e o dos grupos "
 "externos de imaxes de palabras."
 
-#: core/ChangeLog.qml:65
+#: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Mellorouse a calidade das imaxes en varias actividades."
 
-#: core/ChangeLog.qml:66
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Corrixíronse algunhas transicións da enerxía renovábel e o ciclo da auga en "
 "algunhas plataformas."
 
-#: core/ChangeLog.qml:67
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Corrixiuse que se ignorasen as teclas mortas en Linux para as actividades de "
 "teclear."
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Corrixiuse o restabelecemento do nivel ao cambiar de nivel manualmente nas "
 "asociacións lóxicas."
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25718,39 +26230,39 @@ msgstr ""
 "Corrixíronse as actividades de secuencia alfabética, de números pares e "
 "impares e de números en orde."
 
-#: core/ChangeLog.qml:76 core/ChangeLog.qml:84
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Moitas correccións de fallos."
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Actualizouse a tradución ao ruso."
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Engadíronse voces novas para o noruegués nynorsk."
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Engadíronse traducións ao bretón, ao checo e ao macedonio."
 
-#: core/ChangeLog.qml:88
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Engadiuse unha tradución ao azarí."
 
-#: core/ChangeLog.qml:89
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr ""
 "Engadíronse mapas novos e actualizáronse os mapas das actividades "
 "xeográficas."
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25759,7 +26271,7 @@ msgstr ""
 "Engadiuse un novo conxunto de datos que contén operacións de bucle para o "
 "labirinto de programación, e permitiuse traducir as imaxes do titorial."
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25768,63 +26280,63 @@ msgstr ""
 "Engadiuse un nivel para ensinar os bucles de voltaxe na actividade de "
 "electricidade analóxica."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr ""
 "Renovouse o menú de configuración das actividades, cunha selección de "
 "conxuntos de datos."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Engadíronse subcategorías para organizar as actividades."
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Engadiuse unha tradución ao macedonio."
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
 "Engadíronse novas actividades: o labirinto de programación e o tangram para "
 "bebés."
 
-#: core/ChangeLog.qml:110
+#: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Engadíronse opcións para a música de fondo e o volume."
 
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Engadíronse novas opcións de velocidade en varias actividades."
 
-#: core/ChangeLog.qml:112
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Engadiuse unha opción ao xadrez para amosar as pezas capturadas."
 
-#: core/ChangeLog.qml:113
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 "Engadíronse novas imaxes nas actividades de cores, cores avanzadas e xogo de "
 "diana."
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Engadíronse novas voces para o inglés dos EUA."
 
-#: core/ChangeLog.qml:115 core/ChangeLog.qml:123
+#: core/ChangeLog.qml:117 core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Moitas correccións e melloras pequenas."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -25833,17 +26345,17 @@ msgstr ""
 "Actualizáronse as traducións a varios idiomas (bretón, portugués do Brasil, "
 "finés, etc.)."
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Engadir un conxunto de datos ruso para a actividade de premer letras."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "A actividade de idioma está agora dispoñíbel en neerlandés."
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -25852,17 +26364,17 @@ msgstr ""
 "Fusiona os condados noruegueses Nord-Trøndelag e Sør-Trøndelag como "
 "Trøndelag na actividade de xeografía de países."
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Corrixe na actividade de braille onde as celas comezan en 1, non 0."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Engadíronse traducións para o éuscara, o húngaro e o malaio."
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -25871,47 +26383,47 @@ msgstr ""
 "Carga e garda das creacións (procesador de textos para bebés, caixa de "
 "equilibrios e composición de piano)."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Engadíronse traducións para o gaélico escocés."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Engadiuse unha páxina sobre a licenza á configuración."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Varios cambios en disposicións para mellorar a ergonomía."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Actividade de idiomas agora dispoñíbel en polaco, sueco e ucraíno."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Funcionalidade de busca."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Unha lista de cambios."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Moitas correccións pequenas."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "A actividade de idioma está agora dispoñíbel en francés."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -25921,7 +26433,7 @@ msgstr ""
 "facer cousas (cargando unha actividade, por exemplo) e que poden levar un "
 "tempo."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -25931,12 +26443,12 @@ msgstr ""
 "(traducido ao 92%), o ruso (traducido ao 98%), o eslovaco (traducido ao 92%) "
 "e o turco."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Engadíronse traducións para o esloveno, o alemán e o galego."
 
-#: core/ChangeLog.qml:184
+#: core/ChangeLog.qml:186
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -25955,6 +26467,9 @@ msgid ""
 msgstr "Esta actividade usa ficheiros de son de idioma que non ten instalados."
 
 #: core/core.js:225
+#, fuzzy
+#| msgctxt "core|"
+#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
@@ -26094,7 +26609,16 @@ msgstr ""
 "rexistrar o seu pedido. Asegúrese de usar a Severidade chamada «Mellora»."
 
 #: core/DialogAbout.qml:105
-#, qt-format
+#, fuzzy, qt-format
+#| msgctxt "DialogAbout|"
+#| msgid ""
+#| "You do not have to be a software developer to be a member of the KDE "
+#| "team. You can join the national teams that translate program interfaces. "
+#| "You can provide graphics, themes, sounds, and improved documentation. You "
+#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
+#| "projects in which you can participate.<br /><br />If you need more "
+#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
+#| "provide you with what you need."
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26106,7 +26630,7 @@ msgid ""
 "what you need."
 msgstr ""
 "Non hai que ser desenvolvedor para ser membro do Equipo de KDE. Pode unirse "
-"aos equipos de idiomas para traducir as interfaces dos programas. Pode "
+"ás equipas nacionais para traducir as interfaces dos programas. Pode "
 "fornecer gráficos, temas, sons, e mellorar a documentación. Vostede decide!"
 "<br/><br/>Visite <a href=\"%1\">%1</a> para obter información sobre "
 "proxectos nos que pode participar.<br/><br/>Se precisa máis información ou "
@@ -26323,13 +26847,13 @@ msgstr "A suma de comprobación do ficheiro descargado non coincide: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr "Non se atoparon voces en %1."
+msgstr ""
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr "Non se atoparon datos en %1."
+msgstr ""
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26508,17 +27032,16 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
-"Indicar o nivel no que iniciar a actividade. Só se usa en combinación coa "
-"opción «--launch»."
 
 #: core/main.qml:269
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr ""
-"Queres descargar ou actualizar automaticamente os seguintes recursos "
-"externos ao iniciar GCompris?"
+msgstr "Queres descargar os seguintes recursos externos?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26556,13 +27079,20 @@ msgid "You are running GCompris for the first time."
 msgstr "Está a executar GCompris por primeira vez."
 
 #: core/main.qml:324
+#, fuzzy
+#| msgctxt "main|"
+#| msgid ""
+#| "You should verify that your application settings especially your language "
+#| "is set correctly, and that all language specific sound files are "
+#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Debería asegurarse de que a configuración da aplicación, especialmente o "
-"idioma, sexan correctas. Pode facelo desde o diálogo de configuración."
+"idioma, sexan correctas, e que todos os ficheiros de son específicos do seu "
+"idioma estean instalados. Pode facelo desde o diálogo de configuración."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -26586,15 +27116,16 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
-"Algunhas actividades teñen novos conxuntos de datos dispoñíbeis. Quere "
-"restabelecer a súa selección de grupos de datos?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr "Aplicar"
+msgstr ""
 
 #: core/main.qml:390
+#, fuzzy
+#| msgctxt "DialogChooseLevel|"
+#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancelar"
@@ -26624,10 +27155,6 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
 
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
 #~ msgstr "Celerífero de Comte de Sivrac de 1791"
@@ -26651,6 +27178,10 @@ msgstr "Iniciar"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "e %1 son os divisores de %2."
+
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -26724,10 +27255,25 @@ msgstr "Iniciar"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Learn addition"
+#~| msgid ""
+#~| "Play with the computer. Take turns to click on the square which you want "
+#~| "to mark. First player to create a line of 3 marks wins"
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits"
-#~ msgstr "Aprende a sumar"
+#~ msgid ""
+#~ "Play with the computer. Take turns to click the line in which you want to "
+#~ "drop a token. The first player to create a line of 4 tokens wins."
+#~ msgstr ""
+#~ "Xoga contra a intelixencia artificial. Por quendas, preme a caixa que "
+#~ "queiras marcar. Gaña o primeiro xogador que consiga crear unha liña de 3 "
+#~ "marcas."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play checkers against the computer"
+#~ msgstr "Xoga ás damas contra o computador"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Play chess against your friend"
+#~ msgstr "Xogar ao xadrez contra un amigo"
 
 # Fonte: http://www.ivoox.com/nomeando-as-voces-dos-animais-audios-mp3_rf_665908_1.html
 #~ msgctxt "board1|"
@@ -26826,17 +27372,10 @@ msgstr "Iniciar"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid ""
-#~| "Play with the computer. Take turns to click on the square which you want "
-#~| "to mark. First player to create a line of 3 marks wins"
+#~| msgid "Learn addition"
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with the computer. Take turns to click the line in which you want to "
-#~ "drop a token. The first player to create a line of 4 tokens wins."
-#~ msgstr ""
-#~ "Xoga contra a intelixencia artificial. Por quendas, preme a caixa que "
-#~ "queiras marcar. Gaña o primeiro xogador que consiga crear unha liña de 3 "
-#~ "marcas."
+#~ msgid "Learn digits"
+#~ msgstr "Aprende a sumar"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -26882,14 +27421,6 @@ msgstr "Iniciar"
 #~ "org/."
 
 #~ msgctxt "ActivityInfo|"
-#~ msgid "Play checkers against the computer"
-#~ msgstr "Xoga ás damas contra o computador"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Play chess against your friend"
-#~ msgstr "Xogar ao xadrez contra un amigo"
-
-#~ msgctxt "ActivityInfo|"
 #~ msgid "Drawing by Stephane Cabaraux"
 #~ msgstr "Debuxo de Stephane Cabaraux"
 
@@ -26897,253 +27428,54 @@ msgstr "Iniciar"
 #~ msgid "Drawing by Stephane Cabaraux."
 #~ msgstr "Debuxo de Stephane Cabaraux."
 
-#, fuzzy
-#~| msgctxt "ProgrammingMaze|"
-#~| msgid ""
-#~| "Click on Tux or press Enter key to reset it or RELOAD button to reload "
-#~| "the level."
-#~ msgctxt "ProgrammingMaze|"
-#~ msgid ""
-#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
-#~ "button to reload the level."
-#~ msgstr ""
-#~ "Preme a Tux ou preme a tecla Intro para restabelecelo ou o botón de "
-#~ "actualizar para actualizar o nivel."
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Decimal number system."
-#~ msgctxt "Data|"
-#~ msgid "Basic decimal numbers."
-#~ msgstr "Sistema de numeración binario."
-
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Mouse-manipulation"
 #~ msgstr "Manexo do rato"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Knowing alphabets"
-#~ msgstr "Saber os alfabetos"
-
 #, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Reading."
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading"
-#~ msgstr "Lectura."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Counting skills"
-#~ msgstr "Habilidade para contar"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Braille Alphabet Codes"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare alphabets."
-#~ msgstr "Códigos do alfabeto braille"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
+#~| msgctxt "Dataset|"
 #~| msgid ""
-#~| "Drag and drop the map pieces to correct locations to redraw the whole "
-#~| "map."
-#~ msgctxt "ordering|"
-#~ msgid "Drag and drop the letters in correct position in descending order."
+#~| "Use the gates such that the bulb will glow only when the switch is "
+#~| "turned off and remain off when the switch is turned on."
+#~ msgctxt "TutorialDataset|"
+#~ msgid ""
+#~ "Use the gates so that the bulb glows only when the switch is turned off "
+#~ "and remains off when the switch is turned on."
 #~ msgstr ""
-#~ "Arrastra e solta as pezas do mapa aos lugares correctos para debuxar de "
-#~ "novo o mapa completo."
+#~ "Usa as portas de xeito que a lámpada se ilumine só cando o conmutador "
+#~ "está apagado e quede apagada cando se acenda o conmutador."
 
-#~ msgctxt "board15_0|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Norte de Escocia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_0|"
-#~ msgid "Shetland"
-#~ msgstr "Islandia"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_0|"
-#~ msgid "Sutherland"
-#~ msgstr "Suíza"
-
-#~ msgctxt "board15_1|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Sur de Escocia"
-
-#~ msgctxt "board15_2|"
-#~ msgid "Northern Scotland"
-#~ msgstr "Norte de Escocia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Iceland"
-#~ msgctxt "board15_2|"
-#~ msgid "Shetland"
-#~ msgstr "Islandia"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Switzerland"
-#~ msgctxt "board15_2|"
-#~ msgid "Sutherland"
-#~ msgstr "Suíza"
-
-#~ msgctxt "board15_3|"
-#~ msgid "Southern Scotland"
-#~ msgstr "Sur de Escocia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Scottish Gaelic"
-#~ msgctxt "board15_3|"
-#~ msgid "Scottish Borders"
-#~ msgstr "Gaélico escocés"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board15_3|"
-#~ msgid "South Ayrshire"
-#~ msgstr "Sudáfrica"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "East Timor"
-#~ msgctxt "board15_3|"
-#~ msgid "East Ayrshire"
-#~ msgstr "Timor Leste"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board15_3|"
-#~ msgid "North Ayrshire"
-#~ msgstr "América do Norte"
+#~ msgctxt "board10_1|"
+#~ msgid "United States of America"
+#~ msgstr "Estados Unidos de América"
 
 #~ msgctxt "board11_1|"
 #~ msgid "Districts of Northern Italy"
 #~ msgstr "Distritos do norte de Italia"
 
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Albania"
-#~ msgctxt "board11_1|"
-#~ msgid "Verbania"
-#~ msgstr "Albania"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Moldova"
-#~ msgctxt "board11_1|"
-#~ msgid "Padova"
-#~ msgstr "Moldavia"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Venezuela"
-#~ msgctxt "board11_1|"
-#~ msgid "Venezia"
-#~ msgstr "Venezuela"
-
-#, fuzzy
-#~| msgctxt "IntroMessage|"
-#~| msgid "Previous"
-#~ msgctxt "board11_1|"
-#~ msgid "Treviso"
-#~ msgstr "Anterior"
-
 #~ msgctxt "board11_2|"
 #~ msgid "Districts of Central Italy"
 #~ msgstr "Distritos do centro de Italia"
-
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Peru"
-#~ msgctxt "board11_2|"
-#~ msgid "Perugia"
-#~ msgstr "Perú"
-
-#, fuzzy
-#~| msgctxt "Reversecount|"
-#~| msgid "Romans"
-#~ msgctxt "board11_2|"
-#~ msgid "Roma"
-#~ msgstr "Números romanos"
 
 #~ msgctxt "board11_3|"
 #~ msgid "Districts of Southern Italy"
 #~ msgstr "Distritos do sur de Italia"
 
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Pakistan"
-#~ msgctxt "board11_3|"
-#~ msgid "Oristano"
-#~ msgstr "Paquistán"
+#~ msgctxt "board12_0|"
+#~ msgid "States of India"
+#~ msgstr "Estados da India"
 
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Japan"
-#~ msgctxt "board11_3|"
-#~ msgid "Trapani"
-#~ msgstr "Xapón"
+#~ msgctxt "board15_0|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Norte de Escocia"
 
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "Argentina"
-#~ msgctxt "board11_3|"
-#~ msgid "Agrigento"
-#~ msgstr "Arxentina"
+#~ msgctxt "board15_2|"
+#~ msgid "Northern Scotland"
+#~ msgstr "Norte de Escocia"
 
-#, fuzzy
-#~| msgctxt "board4_0|"
-#~| msgid "grater"
-#~ msgctxt "board11_3|"
-#~ msgid "Matera"
-#~ msgstr "relador"
-
-#, fuzzy
-#~| msgctxt "dataset|"
-#~| msgid "eleven"
-#~ msgctxt "board11_3|"
-#~ msgid "Benevento"
-#~ msgstr "once"
-
-#~ msgctxt "board1_0|"
-#~ msgid "Districts of France"
-#~ msgstr "Distritos de Francia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Breton"
-#~ msgctxt "board1_0|"
-#~ msgid "Bretagne"
-#~ msgstr "Bretón"
-
-#~ msgctxt "board4_0|"
-#~ msgid "Districts of Poland"
-#~ msgstr "Distritos de Polonia"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board4_0|"
-#~ msgid "Slaskie"
-#~ msgstr "Alasca"
-
-#~ msgctxt "board13_0|"
-#~ msgid "Districts of Australia"
-#~ msgstr "Distritos de Australia"
-
-#~ msgctxt "board14_0|"
-#~ msgid "Districts of China"
-#~ msgstr "Distritos da China"
+#~ msgctxt "board15_3|"
+#~ msgid "Southern Scotland"
+#~ msgstr "Sur de Escocia"
 
 #~ msgctxt "board5_0|"
 #~ msgid "Districts of Turkey"
@@ -27153,213 +27485,17 @@ msgstr "Iniciar"
 #~ msgid "Districts of Turkey"
 #~ msgstr "Distritos de Turquía"
 
-#, fuzzy
-#~| msgctxt "Warning|"
-#~| msgid "and"
-#~ msgctxt "board5_2|"
-#~ msgid "Van"
-#~ msgstr "e"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "France"
-#~ msgctxt "board5_2|"
-#~ msgid "Tunceli"
-#~ msgstr "Francia"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Malaysia"
-#~ msgctxt "board5_2|"
-#~ msgid "Malatya"
-#~ msgstr "Malaisia"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Slovak"
-#~ msgctxt "board5_2|"
-#~ msgid "Yalova"
-#~ msgstr "Eslovaco"
-
-#, fuzzy
-#~| msgctxt "DialogConfig|"
-#~| msgid "Danish"
-#~ msgctxt "board5_2|"
-#~ msgid "Manisa"
-#~ msgstr "Danés"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Italy"
-#~ msgctxt "board5_2|"
-#~ msgid "Antalya"
-#~ msgstr "Italia"
-
-#~ msgctxt "board12_0|"
-#~ msgid "States of India"
-#~ msgstr "Estados da India"
-
-#~ msgctxt "board10_1|"
-#~ msgid "United States of America"
-#~ msgstr "Estados Unidos de América"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "North Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "North Dakota"
-#~ msgstr "Corea do Norte"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "South Korea"
-#~ msgctxt "board10_1|"
-#~ msgid "South Dakota"
-#~ msgstr "Corea do Sur"
-
-#, fuzzy
-#~| msgctxt "category_colors|"
-#~| msgid "Colors"
-#~ msgctxt "board10_1|"
-#~ msgid "Colorado"
-#~ msgstr "Cores"
-
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid "Mexico"
-#~ msgctxt "board10_1|"
-#~ msgid "New Mexico"
-#~ msgstr "México"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "Alaska"
-#~ msgctxt "board10_1|"
-#~ msgid "Alaska"
-#~ msgstr "Alasca"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Hawaii"
-#~ msgctxt "board10_1|"
-#~ msgid "Hawaii"
-#~ msgstr "Havai"
-
-#, fuzzy
-#~| msgctxt "board7_0|"
-#~| msgid "Tunisia"
-#~ msgctxt "board10_1|"
-#~ msgid "Louisiana"
-#~ msgstr "Tunisia"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "India"
-#~ msgctxt "board10_1|"
-#~ msgid "Indiana"
-#~ msgstr "India"
-
-#, fuzzy
-#~| msgctxt "board2_0|"
-#~| msgid "North America"
-#~ msgctxt "board10_1|"
-#~ msgid "North Carolina"
-#~ msgstr "América do Norte"
-
-#, fuzzy
-#~| msgctxt "board8_0|"
-#~| msgid "South Africa"
-#~ msgctxt "board10_1|"
-#~ msgid "South Carolina"
-#~ msgstr "Sudáfrica"
-
-#, fuzzy
-#~| msgctxt "board9_0|"
-#~| msgid "Asia|Georgia"
-#~ msgctxt "board10_1|"
-#~ msgid "Georgia"
-#~ msgstr "Xeorxia"
-
-#, fuzzy
-#~| msgctxt "Calendar|"
-#~| msgid "Friday"
-#~ msgctxt "board10_1|"
-#~ msgid "Florida"
-#~ msgstr "Venres"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Ireland"
-#~ msgctxt "board10_1|"
-#~ msgid "Maryland"
-#~ msgstr "Irlanda"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Ukraine"
-#~ msgctxt "board10_1|"
-#~ msgid "Maine"
-#~ msgstr "Ucraína"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Cook Islands"
-#~ msgctxt "board10_1|"
-#~ msgid "Rhode Island"
-#~ msgstr "Illas Cook"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Indonesia"
-#~ msgctxt "board14_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "Northern Mariana Islands"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "Northern Mariana Islands"
 #~ msgstr "Illas Marianas do Norte"
 
-#, fuzzy
-#~| msgctxt "board10_0|"
-#~| msgid "American Samoa"
-#~ msgctxt "board14_0|"
+#~ msgctxt "board10_0|"
 #~ msgid "American Samoa"
 #~ msgstr "Samoa Americana"
 
 #~ msgctxt "board10_0|"
 #~ msgid "Australia"
 #~ msgstr "Australia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Asia"
-#~ msgstr "Asia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Russia"
-#~ msgstr "Rusia"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Japan"
-#~ msgstr "Xapón"
-
-#~ msgctxt "board9_0|"
-#~ msgid "Indonesia"
-#~ msgstr "Indonesia"
-
-#~ msgctxt "board8_0|"
-#~ msgid "Swaziland"
-#~ msgstr "Suazilandia"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Alaska"
-#~ msgstr "Alasca"
-
-#~ msgctxt "board2_0|"
-#~ msgid "Iceland"
-#~ msgstr "Islandia"
 
 #~ msgctxt "board3_1|"
 #~ msgid "Central America"
@@ -27421,61 +27557,21 @@ msgstr "Iniciar"
 #~ msgid "Bahamas"
 #~ msgstr "Bahamas"
 
-#~ msgctxt "Dataset|"
-#~ msgid "433 days"
-#~ msgstr "433 días"
+#~ msgctxt "board9_0|"
+#~ msgid "Asia"
+#~ msgstr "Asia"
 
-#~ msgctxt "Dataset|"
-#~ msgid "88 days"
-#~ msgstr "88 días"
+#~ msgctxt "board9_0|"
+#~ msgid "Russia"
+#~ msgstr "Rusia"
 
-#~ msgctxt "Dataset|"
-#~ msgid "107 days"
-#~ msgstr "107 días"
+#~ msgctxt "board9_0|"
+#~ msgid "Japan"
+#~ msgstr "Xapón"
 
-#~ msgctxt "Dataset|"
-#~ msgid "225 days"
-#~ msgstr "225 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "116 days"
-#~ msgstr "116 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 days"
-#~ msgstr "100 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "687 days"
-#~ msgstr "687 días"
-
-#~ msgctxt "Dataset|"
-#~ msgid "1 year"
-#~ msgstr "1 ano"
-
-#~ msgctxt "Dataset|"
-#~ msgid "24 years"
-#~ msgstr "24 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "68 years"
-#~ msgstr "68 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "84 years"
-#~ msgstr "84 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "165 years"
-#~ msgstr "165 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "3 years"
-#~ msgstr "3 anos"
-
-#~ msgctxt "Dataset|"
-#~ msgid "100 years"
-#~ msgstr "100 anos"
+#~ msgctxt "board9_0|"
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Gnumch Equality"
@@ -27485,363 +27581,20 @@ msgstr "Iniciar"
 #~ msgid "Image Name"
 #~ msgstr "Nome da imaxe"
 
-#, fuzzy
-#~| msgctxt "Dataset|"
-#~| msgid ""
-#~| "Use the gates such that the bulb will glow only when the switch is "
-#~| "turned off and remain off when the switch is turned on."
-#~ msgctxt "TutorialDataset|"
-#~ msgid ""
-#~ "Use the gates so that the bulb glows only when the switch is turned off "
-#~ "and remains off when the switch is turned on."
-#~ msgstr ""
-#~ "Usa as portas de xeito que a lámpada se ilumine só cando o conmutador "
-#~ "está apagado e quede apagada cando se acenda o conmutador."
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Telemark"
-#~ msgstr "Dinamarca"
-
-#, fuzzy
-#~| msgctxt "Lang|"
-#~| msgid "plant"
-#~ msgctxt "board6_0|"
-#~ msgid "Oppland"
-#~ msgstr "planta"
-
-#, fuzzy
-#~| msgctxt "board6_0|"
-#~| msgid "Poland"
-#~ msgctxt "board6_0|"
-#~ msgid "Hordaland"
-#~ msgstr "Polonia"
-
-#, fuzzy
-#~| msgctxt "board5_0|"
-#~| msgid "Denmark"
-#~ msgctxt "board6_0|"
-#~ msgid "Hedmark"
-#~ msgstr "Dinamarca"
-
-# O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid ""
-#~| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
-#~| "one girl and one boy. Can you help him? First, place the children in "
-#~| "center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Martín quere compartir de maneira equitativa 2 doces entre 2 dos seus "
-#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
-#~ "neno no centro, e a continuación arrastra os doces a cada un deles."
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "Now he wants to give 5 pieces of candy to his friends."
-#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 7 of Paul's pieces of candy to his friends?"
-#~ msgstr "Podes darlles 6 os doces de Martín aos seus amigos?"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 8 more pieces of candy to his friends."
-#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
-
-# O nome de Bob adaptouse ao galego escollendo o oitavo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Bob wants to give 5 pieces of candy to his friends: two boys and one "
-#~| "girl, his girlfriend already has one candy. Can you help him equally "
-#~| "split the pieces of candy so that each friend will have the same amount "
-#~| "of pieces of candy?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#~ "equally split the pieces of candy so that each friend will have the same "
-#~ "amount?"
-#~ msgstr ""
-#~ "Manuel quere darlles 5 doces ás súas amigas e amigos: dous nenos e unha "
-#~ "nena. A nena xa ten un doce. Podes axudalo a repartir os doces de maneira "
-#~ "equitativa de xeito que cada amiga ou amigo teña o mesmo número de doces?"
-
-# O nome de Harry adaptouse ao galego escollendo o noveno nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid ""
-#~| "Harry wants to equally share 8 pieces of candy between his friends: one "
-#~| "boy and two girls. Place the children in center, then drag the pieces of "
-#~| "candy to each of them so that each of them has an equal number of pieces "
-#~| "of candy."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Harry wants to equally share 8 pieces of candy between his friends: 1 boy "
-#~ "and 2 girls. Place the children in the center, then drag the pieces of "
-#~ "candy so that each of them has an equal number of it."
-#~ msgstr ""
-#~ "Adrián quere compartir de maneira equitativa 8 doces entre as súas amigas "
-#~ "e amigos: un neno e dúas nenas. Coloca as nenas e nenos no centro e a "
-#~ "continuación arrastra os doces a cada un de xeito que cada un acabe co "
-#~ "mesmo número de doces."
-
-#, fuzzy
-#~| msgctxt "board5|"
-#~| msgid "Can you now give 6 of Harry's pieces of candy to his friends?"
-#~ msgctxt "Data|"
-#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
-#~ msgstr "Podes darlles agora 6 dos doces de Adrián ás súas amigas e amigos?"
-
-# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can you help her? First, place the children in "
-#~| "the center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
-#~ "friends. Can you help her? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
-#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
-#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
-
-# O nome de Charles adaptouse ao galego escollendo o sexto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Charles wants to share his 8 pieces of candy with 3 of his friends: one "
-#~| "boy and two girls. Can he split the pieces of candy equally?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#~ "Can he split the pieces of candy equally?"
-#~ msgstr ""
-#~ "Lucas quere compartir os seus 8 doces con 3 das súas amigas e amigos: un "
-#~ "neno e dúas nenas. Pode repartir os doces de maneira equitativa?"
-
-# O nome de Jason adaptouse ao galego escollendo o sétimo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "Jason's father gave him 14 pieces of candy to share with his friends: "
-#~| "two boys and three girls. Help him give the pieces of candy to his "
-#~| "friends!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Jason's father gave him 17 pieces of candy to share with his friends: 2 "
-#~ "boys and 2 girls. Help him give the pieces of candy to his friends."
-#~ msgstr ""
-#~ "O pai de Leo deulle 14 doces para compartir coas súas amigas e amigos: "
-#~ "dous nenos e tres nenas. Axúdao a darlles os doces ás súas amigas e "
-#~ "amigos!"
-
-# O nome de George adaptouse ao galego escollendo o segundo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "George wants to equally share 3 pieces of candy between 2 of his "
-#~| "friends: one girl and one boy. Can he equally split the pieces of candy "
-#~| "between his friends? First, place the children in center, then drag the "
-#~| "pieces of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 14 pieces of candy between 4 of his "
-#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
-#~ "between his friends? First, place the children in center, then drag the "
-#~ "pieces of candy to each of them. Be careful."
-#~ msgstr ""
-#~ "Hugo quere compartir de maneira equitativa 3 doces entre 2 das súas "
-#~ "amigas e amigos. Pode repartir os doces de maneira equitativa entre eles? "
-#~ "Primeiro coloca a nena e o neno no centro, e a continuación arrastra os "
-#~ "doces a cada un deles. Ten coidado, vai quedar un resto!"
-
-# O nome de Maria adaptouse ao galego escollendo o nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can she equally split the pieces of candy between "
-#~| "her friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them. Be careful, a rest will remain!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
-#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
-#~ "friends? First, place the children in center, then drag the pieces of "
-#~ "candy to each of them. Be careful, a rest will remain."
-#~ msgstr ""
-#~ "Noa quere compartir de maneira equitativa 5 doces entre 3 das súas amigas "
-#~ "e amigos: unha nena e dous nenos. Pode repartir os doces de maneira "
-#~ "equitativa entre eles? Primeiro coloca a nena e os neno no centro, e a "
-#~ "continuación arrastra os doces a cada un deles. Ten coidado, vai quedar "
-#~ "un resto!"
-
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid "Now he wants to give 4 pieces of candy to his friends."
-#~ msgctxt "Data|"
-#~ msgid "He wants to give 7 more pieces of candy to his friends."
-#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
-
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#~| "one boy and two girls. Can he equally split the pieces of candy between "
-#~| "his friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
-#~ "friends. Can he equally split the pieces of candy? First, place the "
-#~ "children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
-#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
-#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
-#~ "continuación arrastra os doces a cada un deles."
-
-# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
-#~| "one girl and two boys. Can you help her? First, place the children in "
-#~| "the center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
-#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
-#~ "place the children in the center, then drag the pieces of candy to each "
-#~ "of them."
-#~ msgstr ""
-#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
-#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
-#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
-
-# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board1|"
-#~| msgid ""
-#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
-#~| "one boy and two girls. Can he equally split the pieces of candy between "
-#~| "his friends? First, place the children in center, then drag the pieces "
-#~| "of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
-#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
-#~ "the children in the center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
-#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
-#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
-#~ "continuación arrastra os doces a cada un deles."
-
-#, fuzzy
-#~| msgctxt "board2|"
-#~| msgid ""
-#~| "Can you help Alice give 9 pieces of candy to her friends: one girl and "
-#~| "two boys?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
-#~ "boys?"
-#~ msgstr ""
-#~ "Podes axudar a Martina a darlles 9 doces ás súas amigas e amigos: unha "
-#~ "nena e dous nenos?"
-
-# O nome de Michael adaptouse ao galego escollendo o cuarto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board3|"
-#~| msgid ""
-#~| "Michael wants to equally share 5 pieces of candy between 2 of his "
-#~| "friends: one girl and one boy. Can you help him? First, place the "
-#~| "children in center, then drag the pieces of candy to each of them!"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
-#~ "friends. Can you help him? First, place the children in the center, then "
-#~ "drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Pablo quere compartir de maneira equitativa 5 doces entre 2 dos seus "
-#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
-#~ "neno no centro, e a continuación arrastra os doces a cada un deles!"
-
-# O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board0|"
-#~| msgid ""
-#~| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
-#~| "one girl and one boy. Can you help him? First, place the children in "
-#~| "center, then drag the pieces of candy to each of them."
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
-#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
-#~ "center, then drag the pieces of candy to each of them."
-#~ msgstr ""
-#~ "Martín quere compartir de maneira equitativa 2 doces entre 2 dos seus "
-#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
-#~ "neno no centro, e a continuación arrastra os doces a cada un deles."
-
-# O nome de Elizabeth adaptouse ao galego escollendo o quinto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
-#, fuzzy
-#~| msgctxt "board4|"
-#~| msgid ""
-#~| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of "
-#~| "her friends: two girls and two boys. How should she split the pieces of "
-#~| "candy to her friends?"
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
-#~ msgstr ""
-#~ "Polo seu aniversario, Sara ten 12 doces para compartir con 4 das súas "
-#~ "amigas e amigos: dúas nenas e dous nenos. Como debería compartir os doces "
-#~ "coas súas amigas e amigos?"
-
-#, fuzzy
-#~| msgctxt "Menu|"
-#~| msgid "Music"
-#~ msgctxt "board5_1|"
-#~ msgid "Mus"
-#~ msgstr "Música"
-
-#, fuzzy
-#~| msgctxt "Menu|"
-#~| msgid "Music"
-#~ msgctxt "board5_2|"
-#~ msgid "Mus"
-#~ msgstr "Música"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Knowing alphabets"
+#~ msgstr "Saber os alfabetos"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
-#~| msgid "Balance Box"
-#~ msgctxt "Data|"
-#~ msgid "Balance up to 5."
-#~ msgstr "Caixa de equilibrio"
+#~| msgid ""
+#~| "1. <i><u>To navigate through instructions in the current code area "
+#~| "having keyboard focus</i></u>:"
+#~ msgctxt "ActivityInfo|"
+#~ msgid "1. To navigate through the instructions in the selected area:"
+#~ msgstr ""
+#~ "1. <i><u>Para navegar polas instrucións da zona de código actual que ten "
+#~ "o foco do teclado</i></u>:"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
@@ -27924,6 +27677,284 @@ msgstr "Iniciar"
 #~ msgstr ""
 #~ "<li>A continuación navega ata a zona de instrucións usando <b>Tab</b> e "
 #~ "selecciona a nova instrución premendo <b>Espazo</b>.</li></ul><br>"
+
+#, fuzzy
+#~| msgctxt "ProgrammingMaze|"
+#~| msgid ""
+#~| "Click on Tux or press Enter key to reset it or RELOAD button to reload "
+#~| "the level."
+#~ msgctxt "ProgrammingMaze|"
+#~ msgid ""
+#~ "Click on Tux or press the Enter key to reset it or click on the RELOAD "
+#~ "button to reload the level."
+#~ msgstr ""
+#~ "Preme a Tux ou preme a tecla Intro para restabelecelo ou o botón de "
+#~ "actualizar para actualizar o nivel."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Balance Box"
+#~ msgctxt "Data|"
+#~ msgid "Balance up to 5."
+#~ msgstr "Caixa de equilibrio"
+
+#, fuzzy
+#~| msgctxt "board0|"
+#~| msgid "Now he wants to give 4 pieces of candy to his friends."
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 7 more pieces of candy to his friends."
+#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+
+# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
+#~| "one boy and two girls. Can he equally split the pieces of candy between "
+#~| "his friends? First, place the children in center, then drag the pieces "
+#~| "of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 3 pieces of candy between 3 of his girl "
+#~ "friends. Can he equally split the pieces of candy? First, place the "
+#~ "children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
+#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
+#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
+#~ "continuación arrastra os doces a cada un deles."
+
+# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can you help her? First, place the children in "
+#~| "the center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 6 pieces of candy between 3 of her friends: "
+#~ "1 girl and 2 boys. Can she equally split the pieces of candy? First, "
+#~ "place the children in the center, then drag the pieces of candy to each "
+#~ "of them."
+#~ msgstr ""
+#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
+#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
+#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
+
+# O nome de John adaptouse ao galego escollendo o terceiro nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "John wants to equally share 10 pieces of candy between 3 of his friends: "
+#~| "one boy and two girls. Can he equally split the pieces of candy between "
+#~| "his friends? First, place the children in center, then drag the pieces "
+#~| "of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 12 pieces of candy between 3 of his friends: "
+#~ "2 boys and 1 girl. Can he equally split the pieces of candy? First, place "
+#~ "the children in the center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Mateo quere compartir de maneira equitativa 10 doces entre 3 das súas "
+#~ "amigas e amigos: un neno e dúas nenas. Pode repartir os doces de maneira "
+#~ "equitativa entre eles? Primeiro coloca o neno e as nenas no centro, e a "
+#~ "continuación arrastra os doces a cada un deles."
+
+# O nome de Alice adaptouse ao galego escollendo o segundo nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Alice wants to equally share 3 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can you help her? First, place the children in "
+#~| "the center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Alice wants to equally share 4 pieces of candy between 4 of her girl "
+#~ "friends. Can you help her? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Martina quere compartir de maneira equitativa 3 doces entre 3 dos seus "
+#~ "amigos: unha nena e dous nenos. Podes axudala? Primeiro, coloca a nena e "
+#~ "os neno no centro, e a continuación arrastra os doces a cada un deles."
+
+#, fuzzy
+#~| msgctxt "board2|"
+#~| msgid ""
+#~| "Can you help Alice give 9 pieces of candy to her friends: one girl and "
+#~| "two boys?"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Can you help Alice give 10 pieces of candy to her friends, 1 girl and 3 "
+#~ "boys?"
+#~ msgstr ""
+#~ "Podes axudar a Martina a darlles 9 doces ás súas amigas e amigos: unha "
+#~ "nena e dous nenos?"
+
+# O nome de Michael adaptouse ao galego escollendo o cuarto nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board3|"
+#~| msgid ""
+#~| "Michael wants to equally share 5 pieces of candy between 2 of his "
+#~| "friends: one girl and one boy. Can you help him? First, place the "
+#~| "children in center, then drag the pieces of candy to each of them!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Michael wants to equally share 5 pieces of candy between 5 of his girl "
+#~ "friends. Can you help him? First, place the children in the center, then "
+#~ "drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Pablo quere compartir de maneira equitativa 5 doces entre 2 dos seus "
+#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
+#~ "neno no centro, e a continuación arrastra os doces a cada un deles!"
+
+# O nome de Paul adaptouse ao galego escollendo o nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board0|"
+#~| msgid ""
+#~| "Paul wants to equally share 2 pieces of candy between 2 of his friends: "
+#~| "one girl and one boy. Can you help him? First, place the children in "
+#~| "center, then drag the pieces of candy to each of them."
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Paul wants to equally share 20 pieces of candy between 5 of his friends: "
+#~ "2 girls and 3 boys. Can you help him? First, place the children in the "
+#~ "center, then drag the pieces of candy to each of them."
+#~ msgstr ""
+#~ "Martín quere compartir de maneira equitativa 2 doces entre 2 dos seus "
+#~ "amigos: unha nena e un neno. Podes axudalo? Primeiro, coloca a nena e o "
+#~ "neno no centro, e a continuación arrastra os doces a cada un deles."
+
+# O nome de Elizabeth adaptouse ao galego escollendo o quinto nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board4|"
+#~| msgid ""
+#~| "For her birthday, Elizabeth has 12 pieces of candy to share with 4 of "
+#~| "her friends: two girls and two boys. How should she split the pieces of "
+#~| "candy to her friends?"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
+#~ "friends: 2 girls and 1 boy. How should she split the pieces of candy?"
+#~ msgstr ""
+#~ "Polo seu aniversario, Sara ten 12 doces para compartir con 4 das súas "
+#~ "amigas e amigos: dúas nenas e dous nenos. Como debería compartir os doces "
+#~ "coas súas amigas e amigos?"
+
+#, fuzzy
+#~| msgctxt "board0|"
+#~| msgid "Now he wants to give 4 pieces of candy to his friends."
+#~ msgctxt "Data|"
+#~ msgid "He wants to give 8 more pieces of candy to his friends."
+#~ msgstr "Agora quere darlles 4 doces ás súas amigas e amigos."
+
+#, fuzzy
+#~| msgctxt "board5|"
+#~| msgid "Can you now give 6 of Harry's pieces of candy to his friends?"
+#~ msgctxt "Data|"
+#~ msgid "Can you now give 8 of Harry's pieces of candy to his friends?"
+#~ msgstr "Podes darlles agora 6 dos doces de Adrián ás súas amigas e amigos?"
+
+# O nome de George adaptouse ao galego escollendo o segundo nome de neno máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenos), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "George wants to equally share 3 pieces of candy between 2 of his "
+#~| "friends: one girl and one boy. Can he equally split the pieces of candy "
+#~| "between his friends? First, place the children in center, then drag the "
+#~| "pieces of candy to each of them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "George wants to equally share 14 pieces of candy between 4 of his "
+#~ "friends: 2 girls and 2 boys. Can he equally split the pieces of candy "
+#~ "between his friends? First, place the children in center, then drag the "
+#~ "pieces of candy to each of them. Be careful."
+#~ msgstr ""
+#~ "Hugo quere compartir de maneira equitativa 3 doces entre 2 das súas "
+#~ "amigas e amigos. Pode repartir os doces de maneira equitativa entre eles? "
+#~ "Primeiro coloca a nena e o neno no centro, e a continuación arrastra os "
+#~ "doces a cada un deles. Ten coidado, vai quedar un resto!"
+
+# O nome de Maria adaptouse ao galego escollendo o nome de nena máis popular en Galicia de 2015 (http://ilg.usc.es/nomes_galicia/?nomes=nenas), a falta de datos máis actuais.
+#, fuzzy
+#~| msgctxt "board1|"
+#~| msgid ""
+#~| "Maria wants to equally share 5 pieces of candy between 3 of her friends: "
+#~| "one girl and two boys. Can she equally split the pieces of candy between "
+#~| "her friends? First, place the children in center, then drag the pieces "
+#~| "of candy to each of them. Be careful, a rest will remain!"
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Maria wants to equally share 23 pieces of candy between 5 of her friends: "
+#~ "3 girls and 2 boys. Can she equally split the pieces of candy between her "
+#~ "friends? First, place the children in center, then drag the pieces of "
+#~ "candy to each of them. Be careful, a rest will remain."
+#~ msgstr ""
+#~ "Noa quere compartir de maneira equitativa 5 doces entre 3 das súas amigas "
+#~ "e amigos: unha nena e dous nenos. Pode repartir os doces de maneira "
+#~ "equitativa entre eles? Primeiro coloca a nena e os neno no centro, e a "
+#~ "continuación arrastra os doces a cada un deles. Ten coidado, vai quedar "
+#~ "un resto!"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Counting skills"
+#~ msgstr "Habilidade para contar"
+
+#~ msgctxt "Dataset|"
+#~ msgid "433 days"
+#~ msgstr "433 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "88 days"
+#~ msgstr "88 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "107 days"
+#~ msgstr "107 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "225 days"
+#~ msgstr "225 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "116 days"
+#~ msgstr "116 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 days"
+#~ msgstr "100 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "687 days"
+#~ msgstr "687 días"
+
+#~ msgctxt "Dataset|"
+#~ msgid "1 year"
+#~ msgstr "1 ano"
+
+#~ msgctxt "Dataset|"
+#~ msgid "24 years"
+#~ msgstr "24 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "68 years"
+#~ msgstr "68 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "84 years"
+#~ msgstr "84 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "165 years"
+#~ msgstr "165 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "3 years"
+#~ msgstr "3 anos"
+
+#~ msgctxt "Dataset|"
+#~ msgid "100 years"
+#~ msgstr "100 anos"
 
 #~ msgctxt "MagicHat|"
 #~ msgid "−"
@@ -29443,6 +29474,10 @@ msgstr "Iniciar"
 #~ msgid "Numbers"
 #~ msgstr "Números arábigos"
 
+#~ msgctxt "Reversecount|"
+#~ msgid "Romans"
+#~ msgstr "Números romanos"
+
 #~ msgctxt "Dataset|"
 #~ msgid "1000 degrees celsius"
 #~ msgstr "1000 graos Celsius"
@@ -30185,6 +30220,10 @@ msgstr "Iniciar"
 #~ msgctxt "DialogConfig|"
 #~ msgid "English (United States)"
 #~ msgstr "Inglés (Estados Unidos)"
+
+#~ msgctxt "DialogConfig|"
+#~ msgid "Breton"
+#~ msgstr "Bretón"
 
 #~ msgctxt "DialogConfig|"
 #~ msgid "Spanish"

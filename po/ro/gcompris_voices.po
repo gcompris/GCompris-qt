@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
 "PO-Revision-Date: 2023-06-01 16:26+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -18,6 +18,12 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
 "X-Generator: Lokalize 2.0\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -563,6 +569,18 @@ msgid ""
 msgstr ""
 "Ghidează-l pe Mâncăciosul Numerelor cu tastele săgeți, către numerele prime, "
 "și apasă tasta spațiu pentru a le înghiți."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -1342,11 +1360,11 @@ msgid "Type the words on your keyboard before they reach the ground."
 msgstr ""
 "Scrie cuvintele cu ajutorul tastaturii, înainte ca ele să atingă pământul."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Horia PELLE: horricane@gmail.com"
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "Joacă \"Dame\" contra sistemului de calcul."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Horia PELLE: horricane@gmail.com"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

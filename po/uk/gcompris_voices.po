@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2017, 2018, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-01-13 01:43+0000\n"
-"PO-Revision-Date: 2024-01-13 09:22+0200\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
+"PO-Revision-Date: 2022-12-17 21:39+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -18,7 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -207,15 +213,17 @@ msgstr "Створіть комірку Брайля для літери."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number or a symbol and click its target area. Each symbol must "
+#| "appear only once in a row, in a column and in a subregion if any."
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Виберіть число і натисніть його поле призначення. У кожному рядку та "
-"стовпчику має бути лише одне таке число. Числа у комірках матриці мають "
-"давати вказаний результат, якщо поєднати їх заданим оператором."
+"Виберіть число або символ і натисніть його поле призначення. У кожному "
+"рядку, стовпчику та на кожній ділянці має бути лише один такий символ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -489,7 +497,7 @@ msgstr "Знайдіть належні чисельник і знаменник
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr "Відтворіть і завершіть модель фризу."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -559,13 +567,25 @@ msgstr ""
 "Проведіть Цифроїда до простих чисел за допомогою клавіш зі стрілками і "
 "натисніть пробіл, щоб Цифроїд зміг наїстися."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
+
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Пов'яжіть граматичні класи із відповідними словами."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -587,7 +607,6 @@ msgstr ""
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
 msgstr ""
-"Скористайтеся чотирма числами із вказаними операторами для отримання 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1339,32 +1358,12 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Встигніть ввести слова з клавіатури, доки вони не впали."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr ""
-#~ "тут можна вказати коментар до тексту вступного голосового зауваження"
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "зіграйте у шашки з комп'ютером"
 
-#~ msgid ""
-#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
-#~ "to represent the decimal number."
+#~ msgid "put here in comment the text for the intro voice"
 #~ msgstr ""
-#~ "Перетягніть стрілочку для вибору частини панелі, потім скиньте цю частину "
-#~ "на порожнє місце для відтворення десяткового числа."
-
-#~ msgid ""
-#~ "Arrange the alphabets in the correct order by placing an alphabet in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Упорядкуйте абетки належним чином, розташувавши абетку у відповідній "
-#~ "позиції"
-
-#~ msgid ""
-#~ "Arrange the numbers in the correct order by placing a number in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Упорядкуйте числа належним чином, розташувавши число у відповідній позиції"
+#~ "тут можна вказати коментар до тексту вступного голосового зауваження"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "
