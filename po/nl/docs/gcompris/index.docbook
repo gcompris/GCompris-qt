@@ -544,6 +544,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--start-level niveau</entry>
+<entry
+>Het niveau specificeren waarop de activiteit begint gespecificeerd door de optie --launch bij opstarten van GCompris. Genegeerd indien geen optie --launch of als het gespecificeerde niveau ongeldig is.</entry>
+</row>
+<row>
+<entry
 >--moeilijkheidsgraad {waarde|min-max}</entry>
 <entry
 >Voor de sessie, dwing de moeilijkheidsgraden van activiteiten van GCompris af om ofwel de waarde te hebben of tussen min en max waarden. De waarden moeten liggen tussen 1 en 6, en als het de vorm min-max is, moet de min-waarde lager zijn dan de max-waarde. Als dat niet het geval is zal GCompris niet starten.</entry>

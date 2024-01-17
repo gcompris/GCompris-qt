@@ -1,5 +1,5 @@
 # Translation of gcompris_qt.po to Catalan (Valencian)
-# Copyright (C) 2015-2023 This_file_is_part_of_KDE
+# Copyright (C) 2015-2024 This_file_is_part_of_KDE
 # Copyright (C) 2003-2010 Free Software Foundation, Inc.
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
@@ -8,13 +8,13 @@
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
-# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2023-10-26 13:21+0200\n"
+"PO-Revision-Date: 2024-01-16 15:37+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -53,143 +53,93 @@ msgstr "Valida les respostes"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres adjacents"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres adjacents que falten."
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Aprendre sobre els nombres primers."
+msgstr "Aprendre a ordenar nombres."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Compareu els números i trieu el signe corresponent."
+msgstr ""
+"Troba els nombres sol·licitats i arrossega'ls fins al punt corresponent."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Números entre %1 i %2."
+msgstr "Troba números entre l'1 i el 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Números entre %1 i %2."
+msgstr "Troba números entre el 0 i el 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Números entre %1 i %2."
+msgstr "Troba números entre el 0 i el 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Troba ambdós nombres."
+msgstr "Troba el nombre següent."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Troba ambdós nombres."
+msgstr "Troba el nombre anterior."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres intermedis."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres que falten."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres següents."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres anteriors."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres intermedis."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Números entre %1 i %2."
+msgstr "Troba números entre el -10 i el -1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Números entre %1 i %2."
+msgstr "Troba números entre el -10 i el 10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Troba ambdós nombres."
+msgstr "Troba els nombres que falten"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1081,12 +1031,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Aprendre la taula de multiplicar del 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Taules de multiplicar des de l'1 fins al 10."
+msgstr "Practiqueu les taules de multiplicar des de l'1 fins al 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1176,12 +1123,9 @@ msgid "Learn division table of 10."
 msgstr "Aprendre la taula de divisió del 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Taules de multiplicar des de l'1 fins al 10."
+msgstr "Practiqueu les taules de dividir des de l'1 fins al 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1273,28 +1217,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Aprendre la taula de restar del 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Resta nombres decimals fins a 1."
+msgstr "Restes de nombres fins al 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Resta nombres decimals fins a 1."
+msgstr "Restes de nombres fins al 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Resta nombres decimals fins a 1."
+msgstr "Restes de nombres fins al 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1383,28 +1318,19 @@ msgid "Learn addition table of 10."
 msgstr "Aprendre la taula de sumar del 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Suma nombres decimals fins a 1."
+msgstr "Sumes amb nombres fins al 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Suma nombres decimals fins a 1."
+msgstr "Sumes amb nombres fins al 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Afig estreles fins a 10."
+msgstr "Sumes amb nombres fins al 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3213,16 +3139,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "«Espai»: per a obrir o tancar la taula de braille"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Ara és una mica més difícil sense la referència."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3231,7 +3157,7 @@ msgstr ""
 "Mira el gràfic de caràcters en braille i observa com són de similars la "
 "primera i segona línies."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3240,7 +3166,7 @@ msgstr ""
 "Una altra vegada, similar a la primera línia en la taula de caràcters, però "
 "aneu amb compte, després s'ha afegit la lletra «W»."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr ""
@@ -3251,7 +3177,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Braille: Desxifrant el codi"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3260,7 +3186,7 @@ msgstr ""
 "El sistema braille és un mètode emprat per les persones cegues per a llegir "
 "i escriure."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3271,7 +3197,7 @@ msgstr ""
 "disposats en un rectangle que conté dues columnes de tres punts cadascuna. "
 "Com es veu a l'esquerra, cada punt és referenciat per un nombre de l'1 al 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3373,13 +3299,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Resol Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3388,15 +3314,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Desenvolupeu les habilitats de raonament lògic: enllaç de dades, deducció i "
+"ubicació espacial mentre s'utilitza el càlcul."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completar el trencaclosques requerix paciència i habilitat lògica."
+msgstr "Completar el trencaclosques requerix paciència i habilitat aritmètica."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3409,39 +3334,44 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Seleccioneu un nombre de la llista i feu clic en la seua posició de "
+"destinació per a emplenar la quadrícula. Cada nombre ha d'aparéixer només "
+"una vegada en una fila i en una columna. Les gàbies són grups de cel·les que "
+"proporcionen informació sobre com emplenar-les. Les gàbies fetes de més "
+"d'una cèl·lula proporcionen un resultat i un operador: tots els nombres de "
+"la gàbia, quan es combinen utilitzant l'operador, han de produir el "
+"resultat. Les gàbies fetes només amb una cel·la proporcionen directament el "
+"nombre a introduir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Quadrícules xicotetes."
+msgstr "Quadrícules xicotetes amb l'operador +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "Quadrícules xicotetes amb els operadors + i −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "Quadrícules xicotetes amb els operadors +, − i ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "Quadrícules mitjanes amb els operadors +, − i ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "Quadrícules grans amb els operadors +, −, × i ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4886,24 +4816,16 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Després, feu clic damunt del botó «OK» per a validar la resposta."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Els drets d'autoria de la fotografia de la Lluna són de la NASA. Els sons de "
-"l'espai són de Tuxpaint i de Vegastrike, alliberats davall la llicència GPL. "
-"Els drets d'autoria de les imatges de transports són d'en Franck Doucet. Les "
-"dates del transport es basen en les que es troben en la &lt;https://www."
-"wikipedia.org&gt;."
+"Els drets d'autoria de la fotografia de la Lluna són de la NASA. Els drets "
+"d'autoria de les imatges de transports són d'en Franck Doucet. Les dates del "
+"transport es basen en les que es troben en la &lt;https://www.wikipedia."
+"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5050,21 +4972,15 @@ msgstr "Globus d'aire calent dels germans Montgolfier, 1783"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://en.wikipedia.org/wiki/Paul_Cornu
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "Primer vol en helicòpter de Paul Cornu, 1906"
+msgstr "Primer vol en helicòpter de Paul Cornu, 1907"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -5079,12 +4995,9 @@ msgstr "Cotxe de Cugnot, 1769"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -5116,12 +5029,9 @@ msgstr "Locomotora de vapor Rocket de Stephenson, 1829"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://ca.wikipedia.org/wiki/Nicholas-Joseph_Cugnot
 #: activities/chronos/resource/board/board5_4.qml:55
@@ -5136,21 +5046,15 @@ msgstr "Aviació"
 
 # Nota: http://ca.wikipedia.org/wiki/Clément_Ader
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "«L'Èol», d'en Clement Ader, 1880"
+msgstr "«L'Èol», d'en Clement Ader, 1890"
 
 # Nota: http://en.wikipedia.org/wiki/Wright_Flyer
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "Flyer III dels germans Wright, 1903"
+msgstr "Flyer III dels germans Wright, 1905"
 
 # Nota: http://ca.wikipedia.org/wiki/Louis_Blériot
 #: activities/chronos/resource/board/board6_0.qml:56
@@ -5177,12 +5081,9 @@ msgstr "Charles Lindbergh creua l'Oceà Atlàntic, 1927"
 
 # Nota: http://en.wikipedia.org/wiki/Hélène_Boucher
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "Rècord de velocitat a 444 km/h d'Helene Boucher, 1934"
+msgstr "Rècord de velocitat a 445 km/h d'Helene Boucher, 1934"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5215,12 +5116,9 @@ msgstr "Cotxes"
 
 # Nota: http://en.wikipedia.org/wiki/Renault_Voiturette
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "Renault Voiturette, 1899"
+msgstr "Renault Voiturette, 1898"
 
 # Nota: http://ca.wikipedia.org/wiki/Lancia_Lambda
 #: activities/chronos/resource/board/board6_3.qml:47
@@ -10153,25 +10051,19 @@ msgstr "Troba el numerador i el denominador (amb un quadrat)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Fris"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Reproduïu la torre indicada."
+msgstr "Reproduïu i completeu el fris."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Aprendre les sumes."
+msgstr "Aprendre algorismes."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -10180,51 +10072,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Reproduïu un fris a la part superior. En alguns nivells, haureu de completar "
+"el fris o reproduir-lo després que l'hàgeu memoritzat."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Fletxa esquerra o dreta: selecciona un botó de símbol"
+msgstr "Fletxa esquerra o dreta: selecciona un símbol"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "«Espai»: per a seleccionar un element"
+msgstr "«Espai»: afig el símbol seleccionat al fris"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "«Espai» o «Retorn»: per a seleccionar un element de la llista"
+msgstr "«Retrocés» o «Suprimir»: elimina l'últim símbol del fris"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "«Retorn»: per a validar la resposta"
+msgstr "«Retorn»: valida la resposta"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "«Espai»: per a canviar entre els modes invisible i visible"
+msgstr "«Tabulació»: canvia entre editar el fris i veure el model"
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Estic preparat"
@@ -10232,7 +10108,7 @@ msgstr "Estic preparat"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Copieu este fris: 2 formes amb colors/signes diferents."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -10240,7 +10116,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Copieu este fris."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -10248,6 +10124,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Recordeu i copieu este fris: qualsevol combinació de formes, colors/signes i "
+"mides."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -10255,7 +10133,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Recordeu i copieu este fris."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -10263,11 +10141,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Copieu i completeu este fris: patrons entre 4 i 7, qualsevol combinació de "
+"formes, colors/signes i mides."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Copieu i completeu este fris"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -10275,6 +10155,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Recordeu i copieu este fris: patrons entre 4 i 7, qualsevol combinació de "
+"formes, colors/signes i mides."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -10282,6 +10164,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Copieu i completeu este fris: patrons entre 6 i 8, qualsevol combinació de "
+"formes, colors/signes i mides."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -10290,7 +10174,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Copieu i completeu este fris."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -10298,21 +10182,23 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Recordeu i copieu este fris: patrons entre 6 i 8, qualsevol combinació de "
+"formes, colors/signes i mides."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Copieu i completeu este fris: 2 formes amb colors/signes diferents."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Recordeu i copieu este fris: 2 formes amb colors/signes diferents."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Copieu este fris: 3 o 4 formes amb colors/signes diferents."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -10320,6 +10206,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Copieu este fris: 3 o 4 formes amb 2 mides i potencialment els mateixos "
+"colors/signes."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -10327,11 +10215,14 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Copieu i completeu este fris: 3 o 4 formes amb 2 mides i potencialment els "
+"mateixos colors/signes."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Copieu este fris: qualsevol combinació de formes, colors/signes i mides."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -10340,6 +10231,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Copieu i completeu este fris: qualsevol combinació de formes, colors/signes "
+"i mides."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -14439,23 +14332,22 @@ msgstr "L'1 no és un nombre primer."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 no és un nombre primer. Els seus divisors són: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "però %1 no és un múltiple de %2."
+msgstr ""
+"Els múltiples de %1 inclouen %2 o el %3, però el %4 no és múltiple de %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "Els divisors de %1 són: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14641,32 +14533,26 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Llegiu una línia graduada"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Llegiu els valors en una línia graduada."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Aprendre el cicle de l'aigua."
+msgstr "Aprendre a llegir una línia graduada."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Nombres parells i senars"
+msgstr "Llegir i ordenar nombres."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14675,36 +14561,26 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"Utilitzeu el teclat numèric o el teclat per a introduir el valor "
+"corresponent al punt indicat en la línia graduada."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Dígits: per a introduir un número"
+msgstr "Dígits: introduir dígits"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "«Retrocés» o «Suprimir»: per a esborrar l'últim dígit de la resposta"
+msgstr "«Retrocés»: suprimix l'últim dígit"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Dígits: per a escriure la resposta"
+msgstr "Suprimir: reinicia la resposta"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "«Espai» o «Retorn»: per a validar la resposta"
@@ -14712,110 +14588,75 @@ msgstr "«Espai» o «Retorn»: per a validar la resposta"
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(límits de la variable)"
 
-# Nota: http://encycolorpedia.es/b7410e
-# https://en.wikipedia.org/wiki/Rust_(color)
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Troba la palometa òxid"
+msgstr "Trobeu el nombre requerit."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre l'1 i el 5."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre l'1 i el 7."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre l'1 i el 10."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre el 0 i el 20."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre el 0 i el 50."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre el 0 i el 100."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre el 0 i el 1.000."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre el 0 i el 10.000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Números entre %1 i %2."
+msgstr "Nombre que s'ha de trobar entre el 0 i el 1.000.000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Utilitzeu una línia graduada"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Situeu valors en una línia graduada."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Aprendre com utilitzar un calendari."
+msgstr "Aprendre a utilitzar una línia graduada."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14824,108 +14665,90 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"Utilitzeu les fletxes per a moure el cursor cap a la posició corresponent al "
+"valor indicat en la línia graduada."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Fletxa esquerra i dreta: per a moure la nau espacial"
+msgstr "Fletxa esquerra i dreta: moure el cursor"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Situa el nombre indicat en la línia graduada."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "Ordre ascendent, 5 nombres definits entre l'1 i el 5."
+msgstr "Graduació que s'ha de trobar entre l'1 i el 5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Endevina un número entre l'1 i %1."
+msgstr "Graduació que s'ha de trobar entre l'1 i el 7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Endevina un número entre l'1 i %1."
+msgstr "Graduació que s'ha de trobar entre l'1 i el 10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Resultat entre 20 i 29."
+msgstr "Graduació que s'ha de trobar entre el 0 i el 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Resultat entre 30 i 50."
+msgstr "Graduació que s'ha de trobar entre el 0 i el 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Resultat entre 30 i 50."
+msgstr "Graduació que s'ha de trobar entre el 0 i el 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "Graduació que s'ha de trobar entre el 0 i el 1.000."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "Graduació que s'ha de trobar entre el 0 i el 10.000."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "Graduació que s'ha de trobar entre el 0 i el 1.000.000."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Anàlisi gramatical"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Identifiqueu les classes gramaticals en les frases indicades."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Apreneu a identificar classes gramaticals."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
+"Assigneu les classes gramaticals sol·licitades a les paraules corresponents."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14933,26 +14756,26 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu una classe gramatical de la llista, després seleccioneu el "
+"quadro davall d'una paraula i assigneu-hi la classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Deixeu el quadro en blanc si no coincidix cap classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "Fletxes amunt i avall o tabulació: canvia entre classes i paraules"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Fletxa esquerra o dreta: selecciona un botó de símbol"
+msgstr ""
+"Fletxes esquerra i dreta: seleccioneu elements a les classes o les paraules"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14961,31 +14784,32 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"«Espai»: assigna la classe seleccionada a la paraula seleccionada i després "
+"selecciona la paraula següent"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "«Retrocés» o «Suprimir»: per a esborrar l'últim dígit de la resposta"
+msgstr "Tecla de retrocés: selecciona la paraula anterior"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Anàlisi gramatical"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Apreneu a identificar classes gramaticals."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
+"Trobeu totes les paraules corresponents a les classes gramaticals "
+"sol·licitades."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14993,21 +14817,24 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu una classe gramatical de la llista, després seleccioneu el "
+"quadro davall d'una paraula i assigneu-hi la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Deixeu el quadro en blanc si no coincidix cap classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Classes gramaticals"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
+"Trobeu totes les paraules corresponents a la class gramatical sol·licitada."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -15015,28 +14842,31 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu la classe gramatical de la llista, després seleccioneu el quadro "
+"davall d'una paraula i assigneu-hi la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Deixeu el quadro en blanc si no coincidix cap classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "Buida"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Classes gramaticals"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
 msgstr ""
+"Assigneu la classe gramatical sol·licitada a les paraules corresponents."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15044,11 +14874,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Seleccioneu la classe gramatical de la llista, després seleccioneu el quadro "
+"davall d'una paraula i assigneu-hi la classe."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Deixeu el quadro en blanc si no coincidix cap classe."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -15211,109 +15043,91 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Endevina 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Calculeu per a trobar 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Practica càlculs algebraics amb quatre operadors."
+msgstr "Apreneu a calcular fent servir els quatre operadors."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Practicar la suma, resta, multiplicació i divisió."
+msgstr ""
+"Sigueu capaç de calcular fent servir addicions, restes, multiplicacions i "
+"divisions."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Utilitza els quatre nombres amb els operadors donats per a trobar 24."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "«Fletxes»: per a navegar per l'àrea"
+msgstr "«Fletxes»: per a navegar pels nombres i els operadors"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "«Espai» o «Retorn»: per a seleccionar o ubicar un element"
+msgstr ""
+"«Espai» o «Retorn»: selecciona o desselecciona el valor o operador actual"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Tecles d'operador («+», «-», *, /): selecciona l'operador"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "«Retrocés» o «Suprimir»: per a desfer"
+msgstr "«Retrocés» o «Suprimir»: cancel·la l'última operació"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "«Tabulació»: canvia entre nombres i operadors"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Utilitza els quatre nombres amb els operadors donats per a trobar 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "Solucionable amb + i -."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "Solucionable amb +, - i ×."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Multiplicar."
+msgstr "Es requerix multiplicar."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr ""
+msgstr "Solucionable amb tots els operadors."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Dividir."
+msgstr "Es requerix dividir."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -16104,9 +15918,6 @@ msgstr "Troba el banjo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
 msgstr "Troba els bongos"
@@ -17294,12 +17105,12 @@ msgstr ""
 "Apareixerà una lletra en la bandera arrossegada per l'avioneta, seleccioneu "
 "totes les paraules on aparega i, a continuació, premeu el botó «OK»."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17309,7 +17120,7 @@ msgstr ""
 "GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
 "un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19306,12 +19117,9 @@ msgid "Copyright: %1"
 msgstr "Drets d'autoria: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtre de dificultat:"
+msgstr "Filtre de dificultat"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -19319,13 +19127,9 @@ msgid "Language selector"
 msgstr "Selector de l'idioma"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr ""
-"Habilita les baixades o actualitzacions automàtiques dels fitxers de so"
+msgstr "Habilita les baixades o actualitzacions dels recursos externs"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19743,12 +19547,12 @@ msgstr ""
 "imatge. Feu clic damunt de la lletra que falta per a completar la paraula o "
 "escriviu-la amb el teclat."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19758,7 +19562,7 @@ msgstr ""
 "GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos a "
 "un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20022,13 +19826,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Quan estigues preparat, fes clic damunt d'en Tux i conversarem en codi Morse."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Valor Morse: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20382,7 +20186,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Ressalta el punt següent"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -26012,19 +25816,13 @@ msgstr "Completar el trencaclosques requerix paciència i habilitat lògica."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Seleccioneu un número o un símbol de l'esquerra i feu clic en la seua "
-"posició de destinació. GCompris no vos deixarà introduir respostes no "
-"vàlides."
+"Seleccioneu un número o un símbol de la llista i feu clic en la seua posició "
+"de destinació. GCompris no vos deixarà introduir una resposta no vàlida."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26657,47 +26455,45 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribe a terra."
 
-# skip-rule: t-pu_sp
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-"Opció nova de la línia d'ordres (--difficulty {valor|mín.-màx.}) per a "
-"iniciar GCompris amb una dificultat específica"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
-msgstr "Traduccions afegides per a: eslové, alemany, gallec."
+msgstr "Traduccions afegides per al búlgar, gallec i kiswahili"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Moltes millores en la usabilitat"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Moltes imatges noves"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Moltes esmenes d'errors"
+
+# skip-rule: t-pu_sp
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--start-level level) to start GCompris at "
+#| "specific level (needs to be used with --launch activity option)"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
+"Opció nova de la línia d'ordres (--start-level level) per a iniciar GCompris "
+"amb un nivell específic (cal que es faça servir amb l'opció «--launch "
+"activitat»)"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -27021,12 +26817,9 @@ msgstr ""
 "instal·lats en el vostre sistema."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "Per a baixar-los aneu fins al diàleg de les preferències."
+msgstr "Per a baixar-los aneu fins al diàleg de Configuració."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -27160,16 +26953,7 @@ msgstr ""
 "desitjos» (Wishlist)."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -27181,7 +26965,7 @@ msgid ""
 "what you need."
 msgstr ""
 "No heu de ser un desenvolupador de programari per a ser un membre de l'equip "
-"de KDE. Podeu unir-vos als equips nacionals que traduïxen les interfícies de "
+"de KDE. Podeu unir-vos als equips d'idiomes que traduïxen les interfícies de "
 "programa. Podeu proporcionar gràfics, temes, sons i millorar la "
 "documentació. Vós decidiu!<br /><br />Visiteu <a href=\"%1\">%1</a> si voleu "
 "informació sobre projectes en els quals podeu participar.<br /><br />Si us "
@@ -27399,13 +27183,13 @@ msgstr "La suma de verificació del fitxer baixat no coincidix: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "No s'han trobat les veus per a %1."
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "No s'han trobat les dades per a %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -27584,16 +27368,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Especifiqueu en quin nivell iniciar l'activitat. Només s'utilitza quan "
+"s'utilitza l'opció --launch."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Voleu descarregar els següents recursos externs?"
+msgstr ""
+"Voleu baixar o actualitzar automàticament els recursos externs següents en "
+"iniciar GCompris?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -27631,20 +27416,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Esteu executant GCompris per primera vegada."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Heu de verificar que la configuració de l'aplicació especialment pel vostre "
-"idioma s'ha establit correctament, i que tots els fitxers de so específics "
-"de l'idioma es troben instal·lats. Ho podeu fer en el diàleg de preferències."
+"idioma s'ha establit correctament. Ho podeu fer en el diàleg de Configuració."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -27668,16 +27446,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Algunes activitats tenen un conjunt de dades nou disponible. Voleu restablir "
+"la seua selecció del conjunt de dades?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Aplica"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancel·la"
@@ -27706,33 +27483,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
-
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1 és divisible per %2"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "i"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "Els múltiples de %1 inclouen %2, "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "i %1 són els divisors de %2."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"

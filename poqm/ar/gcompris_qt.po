@@ -71,10 +71,10 @@ msgstr "تعلّم الأعداد الأوّليّة."
 #: activities/adjacent_numbers/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
+#| msgid "Assign the requested grammatical classes to the corresponding words."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "قارِن الأعداد ثم اختر الإشارة المناسبة."
+msgstr "عيّن الفئات النحوية المطلوبة للكلمات المقابلة."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 #, fuzzy
@@ -983,12 +983,9 @@ msgid "Learn multiplication table of 10."
 msgstr "تَعَلَّم جَدْوَل ضَرْب العَدَد 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "جداول الضرب من 1 إلى 10."
+msgstr "تدرّب على جداول الضرب من 1 إلى 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1077,12 +1074,9 @@ msgid "Learn division table of 10."
 msgstr "تَعَلّم قَوَاسِم العَدَد 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "جداول الضرب من 1 إلى 10."
+msgstr "تدرّب على جداول القسمة من 1 إلى 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1173,28 +1167,19 @@ msgid "Learn subtraction table of 10."
 msgstr "تَعَلّم جَدْوَل الطَّرْح لِلعَدَد 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "اطرح أعدادًا عشرية حتى 1."
+msgstr "اطرح من عدد حتى 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "اطرح أعدادًا عشرية حتى 1."
+msgstr "اطرح من عدد حتى 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "اطرح أعدادًا عشرية حتى 1."
+msgstr "اطرح من عدد حتى 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1283,28 +1268,19 @@ msgid "Learn addition table of 10."
 msgstr "تعلّم عملية الجّمع لِلعَدَد 2."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "أضف أعداد عشرية حتى 1."
+msgstr "اجمع أعدادًا حتى 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "أضف أعداد عشرية حتى 1."
+msgstr "اجمع أعدادًا حتى 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "أضف النجوم حتى 10."
+msgstr "اجمع أعدادًا حتى 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2988,23 +2964,23 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "مسافة: افتح أو اغلق مخطط برايل"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "بات الأمر أصعب الآن بدون مرجع."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr "طالع خريطة أحرف «بريل» وتمعّن كيف يتشابه الخطّان الأوّل والثّاني."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3013,7 +2989,7 @@ msgstr ""
 "مرة أخرى ، على غرار السطر الأول في مخطط الحرف ، لكن انتبه، أُضيف الحرف \"W"
 "\"لاحقا."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "هذا سهل، الأرقام هي نفس الأحرف من A إلى J."
@@ -3023,14 +2999,14 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "برايل: اكشف الرمز"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr "نظام «بريل» هو طريقة يستخدمها ذوو الإعاقة البصريّة للقراءة والكتابة."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3040,7 +3016,7 @@ msgstr ""
 "كلّ حرف (أو خليّة) «بريل» مكوّن من ستّة مواقع للنّقط، مرتّبة في مستطيل فيه عمودان، "
 "في كلّ عمود ثلاث نقط. كما ترى على اليسار، كلّ نقطة يُشار إليها برقم من 1 إلى 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr "عندما تجهز انقرني وجرّب كتابة محارف «بريل»."
@@ -3133,13 +3109,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "كلدوكو"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "حلّ كلدوكو."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3148,15 +3124,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"طوّر مهاراتك الذهنية والمنطقية: ربط البيانات، والاستنتاج وتحليل الموضع أثناء "
+"الحساب."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "يتطلب إكمال اللغز الصبر والقدرة المنطقية."
+msgstr "يتطلب إكمال اللغز الصبر والقدرة الحسابية."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3169,39 +3144,41 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"حدد رقمًا في القائمة وانقر على موضعه المستهدف لملء الشبكة.يجب أن يظهر كل رقم "
+"مرة واحدة فقط في الصف وفي العمود.الأقفاص مجموعات خلايا توفر معلومات حول "
+"كيفية ملئها.الأقفاص المصنوعة من أكثر من خلية توفر النتيجة وعملية: جميع "
+"الأرقام في القفص، يجب أن تعطي النتيجة المتوقعة باستعمال العملية.الأقفاص "
+"المصنوعة من خلية واحدة فقط توفر الرقم المطلوب إدخاله مباشرةً."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "شَبَكَة صَغِيرَة."
+msgstr "شَبَكَات صَغِيرَة مع عملية +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "شَبَكَات صَغِيرَة مع عمليات + و −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "شَبَكَات صَغِيرَة مع عمليات + و − و ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "شَبَكَات مُتوسّطة مع عمليات + و − و ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "شَبَكَات كبيرة مع عمليات + و − و × و /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4527,22 +4504,14 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "ثم، انقر على زر\"موافق\" لتأكيد إجابتك."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"حقوق صور القمر محفوظة لوكالة ناسا. أصوات الفضاء من برنامجي Tuxpaint و "
-"Vegastrike المرخصتين برخصة GPL. حقوق صور وسائل النقل محفوظة لـFranck Doucet. "
-"تواريخ وسائل النقل أخذت من  &lt;https://www.wikipedia.org&gt;."
+"حقوق صور القمر محفوظة لوكالة ناسا. حقوق صور وسائل النقل محفوظة لـFranck "
+"Doucet. تواريخ وسائل النقل أخذت من  &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -9492,10 +9461,10 @@ msgstr "مفتاح المسافة: اختيار عنصر"
 #: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
+#| msgid "Backspace or Delete: cancel last operation"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "مسافة أو إدخال: حدد عنصرًا من القائمة"
+msgstr "حذف للوراء أو حذف: تراجع عن آخر عملية"
 
 #: activities/frieze/ActivityInfo.qml:28
 #, fuzzy
@@ -13697,23 +13666,21 @@ msgstr "1 ليس عددًا أوّليًّا."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 ليس عددًا أوليًا، قواسمه هي: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "إلّا أنّ العدد %1 ليس من مضاعفات العدد %2."
+msgstr "مضاعفات %1 تحوي %2 أو %3 لكن %4 ليس مضاعفًا لـ %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "قواسم %1 هي: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14149,54 +14116,51 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "التحليل النحوي"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "تحديد الفئات النحوية في جُمل معطاة."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "تعلّم التعرف على الفئات النحوية."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "عيّن الفئات النحوية المطلوبة للكلمات المقابلة."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
-msgstr ""
+msgstr "اختر من القائمة فئةً نحويةً، ثم اختر الصندوق تحت كلمة، ثم عيّن الفئة."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "اترك الصندوق فارغا إن لم تطابق أي فئة."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "السهمان للأعلى وللأسفل أو جدولة: تبديل بين الكلمات والفئات"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "السهمان الأيمن والأيسر: اختر  زر العلامة"
+msgstr "السهمان الأيمن والأيسر: اختر عناصر من الفئات أو الكلمات"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14204,95 +14168,92 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
-msgstr ""
+msgstr "فراغ: عيّن الفئة المختارة إلى الكلمة المحددة ثم اختر الكلمة الموالية"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Backspace: احذف الرقم الأخير في إجابتك"
+msgstr "حذف إلى الوراء: اختر الكلمة السابقة"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "التحليل النحوي"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "تعلّم التعرف على الفئات النحوية."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "جِدْ كل الكلمات المقابلة  للفئات النحوية المطلوبة."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
 msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
-msgstr ""
+msgstr "اختر من القائمة فئةً نحويةً، ثم اختر الصندوق تحت كلمة، ثم عيّن الفئة."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "اترك الصندوق فارغا إن لم تطابق أي فئة."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "الفئات النحوية"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "جِدْ كل الكلمات المقابلة  للفئة النحوية المطلوبة."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
-msgstr ""
+msgstr "اختر من القائمة فئةً نحويةً، ثم اختر الصندوق تحت كلمة، ثم عيّن الفئة."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "اترك الصندوق فارغا إن لم تطابق الفئة."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "فارغ"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "الفئات النحوية"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "عيّن الفئات النحوية المطلوبة للكلمات المقابلة."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
-msgstr ""
+msgstr "اختر من القائمة فئةً نحويةً، ثم اختر الصندوق تحت كلمة، ثم عيّن الفئة."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "اترك الصندوق فارغا إن لم تطابق الفئة."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14442,109 +14403,88 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "خمّن 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "احسب لإيجاد 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
 msgstr "تدرّب على الحساب بأربع عمليات."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "تدرّب على عمليّات الجمع، والطّرح، والضّرب والقسمة."
+msgstr "لتصبح قادرًا على الحساب على عمليّات الجمع، والطّرح، والضّرب والقسمة."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "استخدم الأرقام الأربعة مع عمليات معينة للعثور على 24."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "الأسهم: للتنقل بِدَاخِل المساحة"
+msgstr "الأسهم: للتنقل في الأعداد والعمليات"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "مسافة أو إدخال: حدد عنصرًا أو ضعه"
+msgstr "مسافة أو إدخال: حدد عملية  أو قيمة حالية أو ألغ التحديد"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "مفاتيح العمليات (+, -, *, /): اختر عملية"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "فراغ إلى الوراﺀ: تراجع"
+msgstr "حذف للوراء أو حذف: تراجع عن آخر عملية"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "جدولة: التبديل بين الأعداد والعمليات"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "استخدم الأرقام الأربعة مع عمليات معينة للعثور على 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "للحل بواسطة +، -."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "للحل بواسطة +، -، ×."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "عمليّات الضّرب."
+msgstr "الضرب مطلوب."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr ""
+msgstr "للحلّ بكل العمليات."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "القسمة."
+msgstr "القسمة مطلوبة."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15324,12 +15264,9 @@ msgstr "جِد البانجو"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "جِد البونغو (بونجو)"
+msgstr "جِد البونغو"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -16471,12 +16408,12 @@ msgstr ""
 "سيظهر حرف على العلم المربوط في الطائرة. اختر من القائمة كل الكلمات التي فيها "
 "هذا الحرف، ثم انقر على الزر."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "آسفون، لا ترجمة للغتك بعد."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16486,7 +16423,7 @@ msgstr ""
 "يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
 "التّرجمة على <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18394,12 +18331,9 @@ msgid "Copyright: %1"
 msgstr "حقوق النسخ: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "مرشّح الصّعوبة:"
+msgstr "مرشّح الصّعوبة"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18407,12 +18341,9 @@ msgid "Language selector"
 msgstr "منتقي اللغة"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "فعّل التّنزيل/التّحديث الآليّ لملفّات الأصوات"
+msgstr "فعّل التّنزيل/التّحديث الآليّين لموارد الخارجية"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -18817,12 +18748,12 @@ msgstr ""
 "تظهر صورة في المنطقة الرّئيسيّة، وتُكتب تحتها كلمة ناقصة. لتكمل الكلمة، اختر "
 "حرفًا أو اكتبه بلوحة المفاتيح."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "آسفون، لا ترجمة للغتك بعد."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18832,7 +18763,7 @@ msgstr ""
 "يطوّر مجتمع «كِيدِي» تطبيق «فهمت»، يمكنك ترجمة «فهمت» بالانضمام إلى فريق "
 "التّرجمة على <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19085,13 +19016,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "عندما تجهز انقر على البطريق، وسنتحدّث بشفرة مورس."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "قيمة مورس: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19430,7 +19361,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "تسليط الضوء على النقطة التالية"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -24828,17 +24759,12 @@ msgstr "يتطلب إكمال اللغز الصبر والقدرة المنطق�
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"حدّد رقمًا أو رمزًا على اليسار وانقر على موضعه المستهدف. لن يسمح لك البرنامج "
+"حدّد رقمًا أو رمزًا في القائمة وانقر على موضعه المستهدف. لن يسمح لك البرنامج "
 "بإدخال إجابة غير صالحة."
 
 #: activities/sudoku/resource/1/Data.qml:13
@@ -25433,43 +25359,43 @@ msgstr "اكتب الكلمات المتساقطة قبل أن تصل إلى ا�
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-"New command-line option (--difficulty {value|min-max}) to start GCompris at "
-"specific difficulty"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "أُضيفت ترجمات اللغات: السّلوفينيّة، والألمانيّة والجاليكيّة."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "تحسينات استعمال"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "صور جديدة"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "ثغراتٌ مُصلّحة"
+
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
+"New command-line option (--difficulty {value|min-max}) to start GCompris at "
+"specific difficulty"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -26319,17 +26245,19 @@ msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
-msgstr ""
+msgstr "يُحدد في أي مستوى يبدأ النشاط. يُستخدم فقط عند استخدام خيار --launch."
 
 #: core/main.qml:269
 #, fuzzy
 #| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
+#| msgid ""
+#| "Do you want to automatically download and update the following external "
+#| "assets when starting GCompris?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "هل تريد تنزيل الموارد الخارجية التالية؟"
+msgstr "هل تريد تنزيل الموارد الخارجية التالية وتحديثها عند بدء البرنامج؟"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26402,17 +26330,14 @@ msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
-msgstr ""
+msgstr "تتوفر بيانات جديدة لبعض الأنشطة. هل تريد تحديث اختيار بياناتها؟"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "طبّق"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "ألغِ"
@@ -26442,6 +26367,10 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "ابدأ"
 
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
+
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
 #~ msgstr "1791 درّاجة \"كونت دو سيفراك\""
@@ -26465,10 +26394,6 @@ msgstr "ابدأ"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "وَ %1 هي قواسم لِـ %2."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

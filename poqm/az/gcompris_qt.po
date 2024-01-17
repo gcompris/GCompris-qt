@@ -1,8 +1,8 @@
-# Kheyyam Gojayev <xxmn77@gmail.com>, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2021, 2022, 2023 Kheyyam Gojayev <xxmn77@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-04-22 12:00+0400\n"
+"PO-Revision-Date: 2023-10-11 17:21+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -69,10 +69,10 @@ msgstr "Sadə ədədləri öyrənin."
 #: activities/adjacent_numbers/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
+#| msgid "Assign the requested grammatical classes to the corresponding words."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Sayları müqayisə edin və uyğun işarəni seçin."
+msgstr "Tələb olunan qrammatik qaydalara uyğun sözlərə təyin edin."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 #, fuzzy
@@ -1911,7 +1911,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:135
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Lampanı iki batareyaya qoşaraq sındırın."
+msgstr "Lampanı iki batareyaya qoşaraq sıradan çıxarın."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
@@ -3054,16 +3054,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Boşluq: brayl cədvəlini açın və ya bağlayın"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "İndi Brayl cədvəli olmadan bir az çətin olacaq."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3072,7 +3072,7 @@ msgstr ""
 "Brayl cədvəlinə nəzər salın və birinci və ikinci sətirlərin oxşarlığına "
 "diqqət yetirin."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3081,7 +3081,7 @@ msgstr ""
 "Yenidən birinci sətir ilə uyğunluq var, lakin nəzərə alın ki, \"W\" hərfi "
 "əlvə olunub."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Bu sadədir: saylar A hərfindən J hərfinə qədər olduğu kimidir."
@@ -3091,7 +3091,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Brayl: Kodun şifrəsini açmaq"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3100,7 +3100,7 @@ msgstr ""
 "Brayl sistemi, görmə əngəlli insanların oxuması və yazması üşün istifadə "
 "olunur."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3111,7 +3111,7 @@ msgstr ""
 "düzbucaqlı şəkildə yerləşdirilmiş 6 nöqtədən ibarətdir. Solda göstərildiyi "
 "kimi hər nöqtə 1-dən 6-ya qədər saylardan ibarətdir."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3210,13 +3210,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Calcudoku-nu həll edin"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3225,15 +3225,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Məntiqi əsaslandırma vərdişinizi inkişaf etdirin: hesablamadan istifadə "
+"edərkən verilənlərin əlaqələndirilməsi, çıxılması və yerləşmə yeri."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Bu tapmacanı həll etmək üçün sizə səbr və məntiq bacarığı lazımdır."
+msgstr "Bu tapmacanı həll etmək üçün səbr və məntiq bacarı tələb olunur."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3246,39 +3245,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Siyahıda bir nömrə seçin və şəbəkəni doldurmaq üçün onun hədəf mövqeyinə "
+"klikləyin. Hər bir nömrə ardıcıl və sütunda yalnız bir dəfə görünməlidir. "
+"Qəfəslər onları necə doldurmaq barədə məlumat verən xanalardan ibarət "
+"qruplardır. Birdən çox xanadan ibarət qəfəslər bir nəticə və əməli təmin "
+"edir: qəfəsdəki bütün ədədlər əməldən istifadə edərək birləşdirildildiyi "
+"halda nəticə verməlidir. Yalnız bir xanadan ibarət qəfəs birbaşa daxil "
+"ediləcək ədədi göstərir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Kiçik torlar."
+msgstr "Kiçik torlar \"+\" əməli ilə."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "Kiiçik torlar \"+\", \"-\" əməlləri ilə"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "Kiçik torlar \"+\", \"-\" və × əməlləri ilə."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "Orta ölçülü torlar \"+\", \"-\" və × əməlləri ilə."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "Geniş torlar. \"+\", \"-\" və \"/\" əməlləri ilə."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4640,24 +4643,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Sonra isə cavabınızı yoxlamaq üçün OLDU (OK) düyməsinə vurun."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Ay şəklinin müəllif hüquqları NASA-ya aiddir. Kosmik səslər GPL lisenziyası "
-"altında buraxılıb və Tuxpaint və Vegastrike'dan alınlb. Nəqliyyat "
-"vasitələrinin şəkillərinin müəllif hüquqları Franck Doucet'ə aiddir. "
-"Nəqliyyat vasitələrinin kəşfi tarixləri &lt;https://www.wikipedia.org&gt; "
-"Vikipediya saytından alınıb."
+"Ay şəklinin müəllif hüquqları NASA-ya aiddir. Nəqliyyat şəkillərinin müəllif "
+"hüquqları Frank Doucet-ə məxsusdur. Daşınma tarixləri &lt;https://www."
+"wikipedia.org&gt; ünvanında tapılanlara əsaslanır."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -7744,7 +7738,7 @@ msgid ""
 "“houses on the river, churches on the houses, rocks on the churches, castle "
 "on the rock”."
 msgstr ""
-"Kaora'dan uru yolu ilə gələrkən, birdən Rakamodur şəhərciyi üzə çıxır, o "
+"Kaora'dan quru yolu ilə gələrkən, birdən Rakamodur şəhərciyi üzə çıxır, o "
 "sanki Alzu yarğanındakı qayalardan tutaraq dayanaır kimi görünür. Avropanın "
 "ən tanınmış qəsəbələrindən biri olan Rokamadur. ilk baxışda cazibə "
 "qanunlarına meydan oxuyurmuş kimi təəsürat yaradır. Rokamadurun ən yaxşı "
@@ -9792,10 +9786,10 @@ msgstr "Boşluq: elementi seçin"
 #: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
+#| msgid "Backspace or Delete: cancel last operation"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Boşluq bə ya Enter: siyahıdan seçim edin"
+msgstr "Backspace və ya Delete: sonuncu əməli ləğv edin"
 
 #: activities/frieze/ActivityInfo.qml:28
 #, fuzzy
@@ -14002,23 +13996,23 @@ msgstr "1 sadə ədəd deyil."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 sadə ədəd deyil, onun bölənləri bunlardır: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "lakin, %1, %2 hasili deyil."
+msgstr ""
+"%1 ədədinin vuranları arasında %2 və ya %3 var, lakin %4, %5 ədədinin vuranı "
+"deyil."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "%1 üçün bölənlər bunlardır: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14456,27 +14450,27 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Qrammatik təhlillər"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Verilmiş cümlələrdəki qrammatik qaydaları müəyyən edin."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Qrammatik qaydaların müəyyən edilməsini öyrənin."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Tələb olunan qrammatik qaydalara uyğun sözlərə təyin edin."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14484,26 +14478,27 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Qrammatik qaydanı siyahıdan seçin və sonra sözün altındakı xananı seçin və "
+"ona qayda təyin edin."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Uyğun gələn qayda yoxdursa xananı boş buraxın."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
+"Tabulyasiya üçün yuxarı, aşağı oxlar istifadə edin: qaydalar və sözlər "
+"arasında keçid etmək üçün"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Sol və Sağ oxlar ilə bir simvol düyməsi seçin"
+msgstr "Sol və sağ oxlar: qaydalardakı və sözlərdəki elementləri seçin"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14512,31 +14507,30 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Böşluq: seçilmiş qaydanı seçilmiş sözə tətbiq edin və sonra növbəti sözü "
+"seçin"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Geriyə, düyməsi: cavabınızdakı sonuncu rəqəmi silin"
+msgstr "Geriyə, düyməsi: sonuncu sözü seçin"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Qrammatik təhlillər"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Qrammatik qaydaların müəyyən edilməsini öyrənin."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "Tələb olunan qrammatik qaydalara uyğun gələn sözləri tapın."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14544,21 +14538,23 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Qrammatik qaydanı siyahıdan seçin və sonra sözün altındakı xananı seçin və "
+"ona qayda təyin edin."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Uyğun gələn qayda yoxdursa xananı boş buraxın."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Qrammatik qaydalar"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "Qrammatik qaydaya uyğun gələn bütün sözləri tapın."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14566,28 +14562,30 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Qrammatik qaydanı siyahıdan seçin, sonra sözün altındakı xananı seçin və onu "
+"qaydaya tətbiq edin."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Qayda uyğun gəlmədikdə xananı boş buraxın."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "Boşdur"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Qrammatik qaydalar"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "Tələb olunan qrammatik qaydanı uyğun sözlərə tətbiq edin."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14595,11 +14593,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Siyahıdan qrammatik qaydanı seçin, sonra sözün altındakı xananı seçin və onu "
+"qaydaya tətbiq edin."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Qayda uyğun gəlmədikdə xananı boş buraxın."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14759,109 +14759,91 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "24-ü tap"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "24 tapmaq üçün hesablayın."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Dörd əməl ilə cəbri hesablama çalışması."
+msgstr "Dörd əməldən istifadə edərək hesablamanı öyrənin."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Toplama, Çıxma, vurma və bölmə əməlləri üzərində çalışın."
+msgstr ""
+"Toplama, Çıxma, vurma və bölmə əməllərindən istifadə edərək hesablama apara "
+"bilmək."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "24-ü tapmaq üçün verilmiş əməllər ilə dörd ədəddən istifadə edin."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Oxlar: sahə daxilində hərəkət edin"
+msgstr "Oxlar: ədədlər və əməllər arasında seçim edin"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Boşluq və ya Enter: hissəni seçin və ya yerləşdirin"
+msgstr ""
+"Boşluq və ya Enter: cari dəyəri və ya əməli seçin və ya seçimi ləğv edin"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Əmələr düymələri (+,-,*,/): əməli seçin"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace və ya Delete: ləğv etmək"
+msgstr "Backspace və ya Delete: sonuncu əməli ləğv edin"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Tab düyməsi: ədədlər və əməllər arasında keçid edin"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "24-ü tapmaq üçün verilmiş əməllər ilə dörd ədəddən istifadə edin."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "+ və - ilə həll edə bilmək."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "+, - və × ilə həll edə bilmək."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Vurma əməlləri."
+msgstr "Vurma tələb olunur."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr ""
+msgstr "Bütün əməllər ilə həll edə bilmək."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Bölmə əməlləri."
+msgstr "Bölmə tələb olunur."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15649,12 +15631,9 @@ msgstr "Banjonu tapın"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Bonqo'nu tapın"
+msgstr "Bonqo-ları tapın"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -16827,12 +16806,12 @@ msgstr ""
 "Təyyarəyə ilişdirilmiş bir hərf göstərilir. Siyahıda bu hərfdən ibarət bütün "
 "sözləri seçin və OLDU (OK) düyməsinə vurun."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Üzr istəyirik, diliniz üçün hələlik tərcümə tapılmadı."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16843,7 +16822,7 @@ msgstr ""
 "etmək üçün <a href=\"%2\">%2</a> səhifəsində tərcümə komandasına qoşula "
 "bilərsiniz."
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18807,12 +18786,9 @@ msgid "Copyright: %1"
 msgstr "Müəllif Hüquqları: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Çətinlik süzgəci:"
+msgstr "Çətinlik süzgəci"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -19246,12 +19222,12 @@ msgstr ""
 "yazılıb. Buraxılmış hərflərə vuraraq sözü tamamlayın və ya hərfləri "
 "klaviatura ilə daxil edin."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Üzr istəyirik, diliniz üçün hələlik tərcümə tapılmadı."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19262,7 +19238,7 @@ msgstr ""
 "etmək üçün <a href=\"%2\">%2</a> səhifəsində tərcümə komandasına qoşula "
 "bilərsiniz."
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19525,13 +19501,13 @@ msgstr ""
 "Hazır olduğunuzda Tuksun üzərinə vurun və biz hərfləri Morze koduna "
 "çevirəcəyik."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morze kodu: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19879,7 +19855,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Növbəti göstəricini vurğulamaq"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -20680,7 +20656,7 @@ msgid ""
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
 "Bu o deməkdir ki, \"yuxarı\", - \"aşağı\" - geri, \"sol\" - Tuks'un soluna, "
-"\"sağ\" - Tuks'un sağına hərəət etdirir."
+"\"sağ\" - Tuks'un sağına hərəkət etdirir."
 
 #. Activity title
 #: activities/path_encoding/ActivityInfo.qml:14
@@ -25398,18 +25374,13 @@ msgstr "Bu tapmacanı həll etmək üçün sizə səbr və məntiq bacarığı l
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Sol tərəfdə sayı və simvolu seçin və onu yerləşdirəcəyiniz yerə vurun. "
-"GCompris sizə səhv simvolu və ya sayı daxil etmənizə icazə verməyəcək."
+"Siyahıdakı say və simvolu seçin və onun mövqeyinə vurun. GCompris sizə səhv "
+"cavabı daxil etmənizə icazə verməyəcək."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26027,43 +25998,43 @@ msgstr "Yerə çatana qədər sözü tam şəkildə yazmağa çalışın."
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-"Yeni əmr sətri parametri (--difficulty {value|min-max}) GCompris-i verilmiş "
-"çətinlik səviyyəsi ilə başlatmaq üçündür"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "Əlavə olunan tərcümələr: Sloveniya, Alman, Qalisiya."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Rahat istifadəsi üçün bir çox yaxşılaşdırmalar"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Çoxlu yeni dillər"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Çoxsaylı xəta düzəlişləri"
+
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
+"Yeni əmr sətri parametri (--difficulty {value|min-max}) GCompris-i verilmiş "
+"çətinlik səviyyəsi ilə başlatmaq üçündür"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -27022,16 +26993,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Bəzi çalışmalarda yeni verilənlər dəsti əlçatandır. Onların verilənlər dəsti "
+"seçimlərini sıfırlamaq istəyirsiniz?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Tətbiq edin"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "İmtina"
@@ -27061,6 +27031,10 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başladın"
 
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
+
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
 #~ msgstr "1791-ci il, Komte de-Sivrakın pedalsız velosipedi"
@@ -27084,10 +27058,6 @@ msgstr "Başladın"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "%1, %2-nin bölənidir."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
 
 #~ msgctxt "Data|"
 #~ msgid "Specific questions with a rectangle."

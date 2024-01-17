@@ -548,6 +548,12 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--start-level nivell</entry>
+<entry
+>Especifica el nivell en el qual iniciar l'activitat especificada amb l'opció --launch en iniciar el GCompris. S'ignora si no hi ha cap opció --launch, o si el nivell especificat no és vàlid.</entry>
+</row>
+<row>
+<entry
 >--difficulty {valor|mín.-màx.}</entry>
 <entry
 >Per a la sessió, força la dificultat de les activitats del GCompris a estar en un valor o entre valors mínims i màxims. Els valors han d'estar entre 1 i 6, i si el format és mín.-màx., el valor mínim ha de ser inferior al valor màxim. Si no és així, el GCompris no s'iniciarà.</entry>

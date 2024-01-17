@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# Kheyyam <xxmn77@gmail.com>, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2021, 2022, 2023 Kheyyam <xxmn77@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 03:10+0000\n"
-"PO-Revision-Date: 2023-01-14 23:40+0400\n"
+"PO-Revision-Date: 2023-10-11 17:21+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
 "Language: az\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 23.08.1\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -61,7 +61,8 @@ msgstr "İki rəqəmi çıxın və şar suya düşənə qədər cavabınızı ya
 msgid ""
 "Add the two numbers together and type in your answer before the balloon "
 "lands in the water"
-msgstr "İki rəəmi birlikdə toplayın və şar suya düşənə qədər cavabınızı yazın."
+msgstr ""
+"İki rəqəmi birlikdə toplayın və şar suya düşənə qədər cavabınızı yazın."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
 #: activities/algorithm/ActivityInfo.qml:18
@@ -197,17 +198,15 @@ msgstr "Hərflər üçün Brayla xanası yaradın."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Bir say və ya simvol seçin və onun yerləşəcəyi sahəyə vurun. Hər sətirdə,"
-"sütunda və öz kvadratında (əgər varsa) həmin simvoldan yalnız biri olmalıdır."
+"Bir ədəd seçin və onun hədəf mövqeyinə vurun. Hər ədəd sətirdə və sütunda "
+"yalnız bir dəfə görünməlidir. Qəfəsin xanalarındakı ədədlər verilmiş "
+"operatordan istifadə edərək birləşdirilərkən verilmiş nəticəni alınmalıdır."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -567,7 +566,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Tələb olunan qrammatik sinifləri uyğun sözlərə təyin edin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -590,7 +589,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "24-ü tapmaq üçün verilmiş əməllər ilə dörd ədəddən istifadə edin"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -771,7 +770,7 @@ msgid ""
 "Count the number of stars hidden under the hat and then click on the stars "
 "to indicate their number."
 msgstr ""
-"Papğın altında gizləən ulduzları sayın və onların sayını göstərmək üçün  "
+"Papğın altında gizləyən ulduzları sayın və onların sayını göstərmək üçün  "
 "ulduzlara vurun."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
