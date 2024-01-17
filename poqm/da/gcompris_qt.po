@@ -3119,16 +3119,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr ""
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr ""
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid ""
@@ -3142,7 +3142,7 @@ msgstr ""
 "Kig på tegnkortet for Braille, og bemærk hvor meget den første og anden "
 "linje ligner hinanden."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid ""
@@ -3156,7 +3156,7 @@ msgstr ""
 "Igen, som den første linje, men vær opmærksom: Bogstavet \"W\" blev tilføjet "
 "efterfølgende."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Dette er nemt: Tal er det samme som bogstaver fra A til J."
@@ -3169,7 +3169,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Braille: Gennemsku koden"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3183,7 +3183,7 @@ msgstr ""
 "Braillesystemet (punkttegn) er en metode som bruges af blinde til at læse og "
 "skrive."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3200,7 +3200,7 @@ msgstr ""
 "et rektangel med to kolonner hver på tre prikker. Som det ses til venstre "
 "har hvert prik en reference fra 1 til 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -17333,12 +17333,12 @@ msgid ""
 "words in the list containing this letter and then press the OK button."
 msgstr ""
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17346,7 +17346,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20054,12 +20054,12 @@ msgstr ""
 "Et objekt vises på skærmen, og et ufærdigt navn står under billedet. Klik på "
 "det manglende bogstav."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -20067,7 +20067,7 @@ msgid ""
 "joining a translation team on <a href=\"%2\">%2</a>"
 msgstr ""
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20364,13 +20364,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Når du er klar, så klik på mig og prøv at genskabe Brailletegn."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr ""
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -26992,23 +26992,16 @@ msgstr "Skriv hele ordet mens det falder, og før det når bunden"
 
 #: core/ChangeLog.qml:30
 msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-
-#: core/ChangeLog.qml:31
-msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr ""
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr ""
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 #, fuzzy
@@ -27018,10 +27011,17 @@ msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Find trianglen"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
+msgstr ""
+
+#: core/ChangeLog.qml:34
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
 msgstr ""
 
 #: core/ChangeLog.qml:39

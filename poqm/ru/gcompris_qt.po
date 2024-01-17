@@ -3074,16 +3074,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Пробел открывает или закрывает таблицу Брайля"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Теперь, без таблицы Брайля, будет немного сложнее."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3092,7 +3092,7 @@ msgstr ""
 "Взгляни на таблицу символов Брайля и обрати внимание на схожесть первой и "
 "второй строки."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3100,7 +3100,7 @@ msgid ""
 msgstr ""
 "И снова есть сходство с первой строкой, но заметь, что добавлена буква «W»."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Это просто: цифры выглядят так же, как буквы от A до J."
@@ -3110,7 +3110,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Брайль: расшифровываем код"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -3118,7 +3118,7 @@ msgid ""
 msgstr ""
 "Система Брайля — это метод, используемый слепыми людьми для чтения и письма."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3129,7 +3129,7 @@ msgstr ""
 "виде прямоугольника из двух столбцов по три точки в каждом. Как показано "
 "слева, каждая точка имеет номер от 1 до 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -16853,12 +16853,12 @@ msgstr ""
 "На флаге, привязанном к самолёту, написана буква. Выбери все слова, которые "
 "содержат эту букву, и нажми кнопку «ОК»."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "К сожалению, перевода на твой язык пока нет."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16870,7 +16870,7 @@ msgstr ""
 "странице <a href=\"https://kde.ru/translation\">https://kde.ru/translation</"
 "a> (или на другие языки — на странице <a href=\"%2\">%2</a>)."
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19288,12 +19288,12 @@ msgstr ""
 "слово. Чтобы завершить это слово, щёлкни по пропущенной букве или введи её с "
 "клавиатуры."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "К сожалению, перевода на твой язык пока нет."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19305,7 +19305,7 @@ msgstr ""
 "странице <a href=\"https://kde.ru/translation\">https://kde.ru/translation</"
 "a> (или на другие языки — на странице <a href=\"%2\">%2</a>)."
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19568,13 +19568,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Когда будешь готов, щёлкни по мне, и мы пообщаемся азбукой Морзе."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Значение Морзе: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -26109,43 +26109,43 @@ msgstr "Набери слово полностью, пока оно не дос�
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-"Новая опция командной строки (--difficulty {value|min-max}) , чтобы "
-"запускать GCompris с указанной сложностью"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "Добавлены переводы на словенский, немецкий и галисийский языки"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Много небольших исправлений и улучшений"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Много новых изображений"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Множество исправлений ошибок"
+
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
+"Новая опция командной строки (--difficulty {value|min-max}) , чтобы "
+"запускать GCompris с указанной сложностью"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"

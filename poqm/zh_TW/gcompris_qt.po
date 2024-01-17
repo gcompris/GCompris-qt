@@ -2922,30 +2922,30 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "空白鍵：開啟或關閉點字圖表"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "現在沒有點字圖表，可能會困難一點。"
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr "觀察點字圖表，比較第一與第二行的相似處。"
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
 "'W' letter was added afterward."
 msgstr "再一次的，如同點字圖表中的第一行，但是要注意 'W' 字母被加在後面。"
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "這很簡單，數字就跟字母 A 到 J 一樣。"
@@ -2955,14 +2955,14 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "布拉耶點字法：解碼"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr "布拉耶點字系統是一個用於盲人識字、寫字的方法。"
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -2972,7 +2972,7 @@ msgstr ""
 "每一個布拉耶點字法的字元是由六個點的位置不同所構成，每個字是由二乘三個點所組"
 "成。就像左手邊看到的，每個點被定為數字1到6。"
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr "當您準備好後，請按我來練習點字。"
@@ -16255,12 +16255,12 @@ msgid ""
 msgstr ""
 "飛機上的旗子會顯示一個字母。選擇所有包含該字母的單字，然後按下「確定」鍵。"
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，目前還沒有您的語言的翻譯。"
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16270,7 +16270,7 @@ msgstr ""
 "GCompris 由 KDE 社群開發。您可以加入 <a href=\"%2\">%2</a> 翻譯團隊來翻譯 "
 "GCompris"
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18582,12 +18582,12 @@ msgstr ""
 "在主要區域中會顯示一張圖片，而在圖片下方會印出一個不完整的字。請選擇缺少的字"
 "母，或是在鍵盤上輸入，來完成這個字。"
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "抱歉，目前還沒有您的語言的翻譯。"
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -18597,7 +18597,7 @@ msgstr ""
 "GCompris 由 KDE 社群開發。您可以加入 <a href=\"%2\">%2</a> 翻譯團隊來翻譯 "
 "GCompris"
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18845,13 +18845,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "當您準備好後，請點擊小企鵝，我們來用摩斯電碼來交談。"
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "摩斯碼：%1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -25024,41 +25024,41 @@ msgstr "在單字掉到地面以前輸入完整的單字。"
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr "新增命令列參數 --difficulty 以指定的難度啟動活動"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "增加新語言的翻譯：斯洛伐尼亞、德文、加利西亞"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "許多功能上的改進"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "新增許多圖片"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "許多小修正"
+
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr "新增命令列參數 --difficulty 以指定的難度啟動活動"
 
 #: core/ChangeLog.qml:39
 #, fuzzy

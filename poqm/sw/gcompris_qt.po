@@ -3060,16 +3060,16 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Nafasi: fungua au funga chati ya breli"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Sasa ni ngumu kidogo bila marejeleo."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
@@ -3078,7 +3078,7 @@ msgstr ""
 "Angalia chati ya herufi na uangalie jinsi mistari ya kwanza na ya pili "
 "inavyofanana."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3087,7 +3087,7 @@ msgstr ""
 "Tena, sawa na mstari wa kwanza katika chati ya herufi lakini jihadhari, "
 "herufi 'W' iliongezwa baadaye."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Hii ni rahisi, namba ni sawa na herufi kuanzia A mpaka J."
@@ -3097,14 +3097,14 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Breli: Kufungua Msimbo"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr "Mfumo wa breli ni njia ambayo hutumiwa na wasioona kusoma na kuandika."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3115,7 +3115,7 @@ msgstr ""
 "mstatili ulio na safu wima mbili za nukta tatu kila moja. Kama inavyoonekana "
 "upande wa kushoto, kila kitone kinarejelewa na namba kuanzia 1 hadi 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr "Ukiwa tayari, bonyeza juu yangu na ujaribu kutoa tena herufi za breli."
@@ -16843,12 +16843,12 @@ msgstr ""
 "Herufi inayoonyeshwa kwenye bendera iliyopachikwa kwenye ndege. Chagua "
 "maneno yote kwenye orodha iliyo na herufi hii kisha ubonyeze kitufe cha Sawa."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16858,7 +16858,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kuitafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19247,12 +19247,12 @@ msgstr ""
 "ya picha. Bofya herufi inayokosekana ili kukamilisha neno, au charaza herufi "
 "kwenye kibodi yako."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19262,7 +19262,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya ufasiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19520,13 +19520,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Ukiwa tayari, bofya na tutazungumza Tux kwa msimbo wa Morse."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Thamani ya Morse: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -26084,43 +26084,43 @@ msgstr "Andika neno kamili linapoanguka, kabla halijafika chini."
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-"Chaguo jipya la mstari wa amri (--difficulty {value|min-max}) ili kuanzisha "
-"GCompris kwa ugumu mahususi"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "Tafsiri zilizoongezwa kwa: Kislovenia, Kijerumani, Kigalisia."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Maboresho mengi ya utumiaji"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Mexico Mpya"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Marekebisho mengi ya hitilafu"
+
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
+"Chaguo jipya la mstari wa amri (--difficulty {value|min-max}) ili kuanzisha "
+"GCompris kwa ugumu mahususi"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"

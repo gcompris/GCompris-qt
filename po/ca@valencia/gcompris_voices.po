@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 01:35+0000\n"
-"PO-Revision-Date: 2024-01-13 19:08+0100\n"
+"PO-Revision-Date: 2024-01-16 15:27+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Troba els nombres que falten."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -576,13 +576,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Troba el valor corresponent al punt indicat en la línia graduada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Situa el valor indicat en la línia graduada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"

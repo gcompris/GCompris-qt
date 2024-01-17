@@ -3002,11 +3002,11 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Medzerník: otvoriť alebo zavriet Brailovu tabuľku"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid "Now it's a little bit harder without the braille map."
@@ -3014,7 +3014,7 @@ msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "Teraz je to trochu ťažšie bez tabuľky Braillovho písma."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid ""
@@ -3028,7 +3028,7 @@ msgstr ""
 "Pozri sa na tabuľku Braillovho písma a pozoruj, ako sú si podobné prvý a "
 "druhý riadok."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 #, fuzzy
 #| msgctxt "braille_alphabets|"
 #| msgid ""
@@ -3042,7 +3042,7 @@ msgstr ""
 "Opäť, podobné prvému riadku, ale všimni si, že na konci sme pridali písmeno "
 "'W'."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "Toto je ľahké, čísla sú také isté, ako písmená od  A do J."
@@ -3052,7 +3052,7 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "Braillovo písmo: Odomknutie kódu"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3065,7 +3065,7 @@ msgid ""
 msgstr ""
 "Braillovo písmo je písmo, ktoré používajú nevidiaci na čítanie a písanie."
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -3082,7 +3082,7 @@ msgstr ""
 "sú vybrané z dvojstĺpcového obdĺžnika, kde každý stĺpec má tri pozície. Ako "
 "vidíš vľavo, každej bodke je priradené číslo od 1 do 6."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 #, fuzzy
 #| msgctxt "FirstScreen|"
 #| msgid ""
@@ -17146,12 +17146,12 @@ msgstr ""
 "Na vlajke pripojenej k lietadlu sa zobrazí písmeno, vyberte všetky slová "
 "alebo objekty, v ktorých sa písmeno nachádza, a potom stlačte OK."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Je nám ľúto, nemáme ešte preklad pre váš jazyk."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17161,7 +17161,7 @@ msgstr ""
 "GCompris je vyvíjaný KDE komunitou, GCompris môžete prekladať pripojením sa "
 "k prekladateľskému tímu na <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19685,12 +19685,12 @@ msgstr ""
 "V hlavnej oblasti sa zobrazuje objekt. Pod obrázkom je vytlačené neúplné "
 "slovo. Vyber chýbajúce písmeno pre doplnenie slova."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Je nám ľúto, nemáme ešte preklad pre váš jazyk."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19700,7 +19700,7 @@ msgstr ""
 "GCompris je vyvíjaný KDE komunitou, GCompris môžete prekladať pripojením sa "
 "k prekladateľskému tímu na <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19979,13 +19979,13 @@ msgstr ""
 "Keď budeš pripravený, klikni na Tuxa a budeme sa rozprávať Morzeovou "
 "abecedou."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morseova hodnota: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -26592,13 +26592,6 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napíš padajúce slovo na klávesnici skôr ako dopadne na zem."
 
 #: core/ChangeLog.qml:30
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-
-#: core/ChangeLog.qml:31
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
@@ -26606,24 +26599,31 @@ msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "Pridané preklady pre: slovinčinu, nemčinu, galícijčinu."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Mnoho vylepšení použiteľnosti"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Mnoho nových obrázkov"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Mnoho malých opráv."
+
+#: core/ChangeLog.qml:34
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"

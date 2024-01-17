@@ -3030,23 +3030,23 @@ msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "സ്പെയ്സ്: ബ്രായി ചാർട്ട് തുറക്കുകയോ അടയ്ക്കുകയോ ചെയ്യുക"
 
-#: activities/braille_alphabets/braille_alphabets.js:46
-#: activities/braille_alphabets/braille_alphabets.js:56
-#: activities/braille_alphabets/braille_alphabets.js:66
-#: activities/braille_alphabets/braille_alphabets.js:76
-#: activities/braille_alphabets/braille_alphabets.js:86
+#: activities/braille_alphabets/braille_alphabets.js:43
+#: activities/braille_alphabets/braille_alphabets.js:53
+#: activities/braille_alphabets/braille_alphabets.js:63
+#: activities/braille_alphabets/braille_alphabets.js:73
+#: activities/braille_alphabets/braille_alphabets.js:83
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
 msgstr "ഇപ്പോൾ ബ്രായി ചാർട്ടില്ലാത്തതുകൊണ്ട് ഇത്തിരി വിഷമമുണ്ടാവും."
 
-#: activities/braille_alphabets/braille_alphabets.js:51
+#: activities/braille_alphabets/braille_alphabets.js:48
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr "ബ്രായി ക്യാരക്ടർ ചാർട്ട് നോക്കി ഒന്നും രണ്ടും വരികൾ തമ്മിലുള്ള സാദൃശ്യം നിരീക്ഷിക്കൂ."
 
-#: activities/braille_alphabets/braille_alphabets.js:61
+#: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
@@ -3055,7 +3055,7 @@ msgstr ""
 "വീണ്ടും ക്യാരക്ടർ ചാർട്ടിലെ ഒന്നാമത്തെ വരിയിലേതു പോലെതന്നെ. എന്നാൽ, അവസാനം 'W' എന്ന "
 "അക്ഷരം ചേർത്തിരിക്കുന്നതു ശ്രദ്ധിക്കണേ."
 
-#: activities/braille_alphabets/braille_alphabets.js:71
+#: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr "ഇത് എളുപ്പമാണ്, A തൊട്ട് J വരെയുള്ള അക്ഷരങ്ങൾ പോലെതന്നെയാണ് സംഖ്യകളും."
@@ -3065,14 +3065,14 @@ msgctxt "FirstScreen|"
 msgid "Braille: Unlocking the Code"
 msgstr "ബ്രായി കോഡിന്റെ കുടുക്കഴിക്കാം"
 
-#: activities/braille_alphabets/FirstScreen.qml:53
+#: activities/braille_alphabets/FirstScreen.qml:65
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr "അന്ധരായവർ വായിക്കാനും എഴുതാനും ഉപയോഗിക്കുന്ന ഒരു രീതിയാണ് ബ്രായി ലിപി. "
 
-#: activities/braille_alphabets/FirstScreen.qml:54
+#: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
@@ -3083,7 +3083,7 @@ msgstr ""
 "ക്രമീകരിച്ചിരിക്കുന്ന ആറ് കുത്തുകളുടെ സ്ഥാനങ്ങൾ കൊണ്ട് നിർമ്മിച്ചിരിക്കുന്നു. ഇടതുഭാഗത്തു "
 "കാണുന്നതുപോലെ, ഓരോ കുത്തിനും 1 മുതൽ 6 വരെയുള്ള എണ്ണം കൊടുത്തിരിക്കുന്നു."
 
-#: activities/braille_alphabets/FirstScreen.qml:78
+#: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -16676,12 +16676,12 @@ msgstr ""
 "വിമാനത്തോട് ബന്ധിപ്പിച്ചിരിക്കുന്ന കൊടിയിൽ ഒരു അക്ഷരം കാണാം. തന്നിരിക്കുന്ന വാക്കുകളുടെ "
 "പട്ടികയിൽ, ആ അക്ഷരമുള്ള വാക്കുകൾ തിരഞ്ഞെടുത്ത് ഒകെ ബട്ടൺ അമർത്തുക."
 
-#: activities/letter-in-word/LetterInWord.qml:300
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/letter-in-word/LetterInWord.qml:301
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16691,7 +16691,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:303
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19066,12 +19066,12 @@ msgstr ""
 "പ്രധാനഭാഗത്ത് ഒരു ചിത്രവും അതിനടിയിൽ അപൂർണ്ണമായ ഒരു വാക്കും കാണാം. വിട്ടുപോയ അക്ഷരത്തിൽ "
 "ക്ലിക്കു ചെയ്തോ ആ അക്ഷരം നിങ്ങളുടെ കീബോർഡിൽ ടൈപ്പു ചെയ്തോ വാക്കു പൂർത്തിയാക്കുക."
 
-#: activities/missing-letter/MissingLetter.qml:317
+#: activities/missing-letter/MissingLetter.qml:323
 msgctxt "MissingLetter|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/missing-letter/MissingLetter.qml:318
+#: activities/missing-letter/MissingLetter.qml:324
 #, qt-format
 msgctxt "MissingLetter|"
 msgid ""
@@ -19081,7 +19081,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/missing-letter/MissingLetter.qml:320
+#: activities/missing-letter/MissingLetter.qml:326
 msgctxt "MissingLetter|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19337,13 +19337,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "നിങ്ങൾ തയ്യാറാണെങ്കിൽ ടക്സിൽ ക്ലിക്ക് ചെയ്യൂ. എന്നിട്ട് നമുക്ക് മോഴ്സ് കോഡിൽ സംസാരിക്കാം."
 
-#: activities/morse_code/MorseCode.qml:342
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "മോഴ്സ് വില: %1"
 
-#: activities/morse_code/MorseCode.qml:343
+#: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -25753,43 +25753,43 @@ msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്�
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
-msgctxt "ChangeLog|"
-msgid ""
-"New command-line option (--start-level level) to start GCompris at specific "
-"level (needs to be used with --launch activity option)"
-msgstr ""
-"ഒരു പ്രത്യേക കാഠിന്യനിലയിൽ തുടങ്ങുന്നതിനുള്ള പുതിയ കമാന്റ്-ലൈൻ ഓപ്ഷൻ (--difficulty {value|"
-"min-max})"
-
-#: core/ChangeLog.qml:31
-#, fuzzy
-#| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgstr "ഇവയുടെ തർജ്ജിമ ചേർത്തിരിക്കുന്നു: സ്ലോവേനിയൻ, ജർമൻ, ഗലീഷ്യൻ."
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:60 core/ChangeLog.qml:95
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "ഉപയോഗക്ഷമതയിലുള്ള നിരവധി മെച്ചപ്പെടുത്തലുകൾ"
 
-#: core/ChangeLog.qml:33 core/ChangeLog.qml:41 core/ChangeLog.qml:48
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:41 core/ChangeLog.qml:48
 #: core/ChangeLog.qml:61 core/ChangeLog.qml:79 core/ChangeLog.qml:94
 #: core/ChangeLog.qml:99 core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "ധാരാളം പുതിയ ചിത്രങ്ങൾ"
 
-#: core/ChangeLog.qml:34 core/ChangeLog.qml:42 core/ChangeLog.qml:49
+#: core/ChangeLog.qml:33 core/ChangeLog.qml:42 core/ChangeLog.qml:49
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "ധാരാളം ബഗ് ഫിക്സുകൾ"
+
+#: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
+#| "at specific difficulty"
+msgctxt "ChangeLog|"
+msgid ""
+"New command-line option to directly start an activity at a specific level (--"
+"start-level level, to be used with --launch activity)"
+msgstr ""
+"ഒരു പ്രത്യേക കാഠിന്യനിലയിൽ തുടങ്ങുന്നതിനുള്ള പുതിയ കമാന്റ്-ലൈൻ ഓപ്ഷൻ (--difficulty {value|"
+"min-max})"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
