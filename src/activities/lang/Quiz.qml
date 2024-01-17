@@ -239,8 +239,15 @@ Item {
                         textLabel: translatedTxt
                         anchors.right: wordImageQuiz.visible ? wordImageQuiz.left : parent.right
                         anchors.left: parent.left
+                        audioEffects: activity.audioEffects
                         blockAllButtonClicks: quiz.buttonsBlocked
-                        onPressed: quiz.buttonsBlocked = true
+                        onPressed: {
+                            quiz.buttonsBlocked = true
+                            if(isCorrectAnswer) {
+                                score.currentSubLevel++
+                                score.playWinAnimation()
+                            }
+                        }
                         isCorrectAnswer: translatedTxt === quiz.goodWord.translatedTxt
                         onIncorrectlyPressed: {
                             // push the error to have it asked again

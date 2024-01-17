@@ -28,6 +28,7 @@ function init(loadedItems_, wordList_, mode_) {
     mode = mode_
 
     quizItems.score.numberOfSubLevels = wordList.length
+    quizItems.score.currentSubLevel = 0
 
     if(mode == 3) {
         quizItems.imageFrame.visible = false
@@ -54,9 +55,6 @@ function init(loadedItems_, wordList_, mode_) {
 }
 
 function nextQuiz() {
-
-    quizItems.score.currentSubLevel = quizItems.score.numberOfSubLevels - remainingWords.length + 1
-
     quizItems.goodWord = remainingWords.pop()
 
     var selectedWords = []
