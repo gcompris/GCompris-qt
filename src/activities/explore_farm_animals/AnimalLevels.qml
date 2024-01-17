@@ -65,13 +65,13 @@ Image {
         width: parent.width
         height: parent.height
         touchPoints: [ TouchPoint { id: point1 } ]
-        mouseEnabled: progressbar.value != progressbar.maximumValue && !items.bonus.isPlaying
+        mouseEnabled: progressbar.currentSubLevel != progressbar.numberOfSubLevels && !items.buttonsBlocked
 
         onPressed: {
-            if(items.progressbar.value >= progressbar.maximumValue) {
+            if(items.progressbar.currentSubLevel >= progressbar.numberOfSubLevels) {
                 return
             }
-            var questionTargetId = items.questionOrder[Activity.items.progressbar.value]
+            var questionTargetId = items.questionOrder[Activity.items.progressbar.currentSubLevel]
             Activity.items.instruction.visible = false
             if (Activity.items.score.currentSubLevel === 1) {
                 if(animalImg.audio) {
@@ -80,13 +80,16 @@ Image {
                 displayDescription(animalImg)
                 star.visible = true;
             } else {
+                items.buttonsBlocked = true;
                 if (questionId === questionTargetId) {
                     animWin.start();
-                    items.progressbar.value ++;
+                    items.progressbar.currentSubLevel ++;
+                    items.progressbar.playWinAnimation();
                     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
-                    Activity.nextSubSubLevel();
                 } else {
-                    items.bonus.bad("smiley")
+                    items.errorRectangle.parent = animalImg;
+                    items.errorRectangle.startAnimation();
+                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
                 }
             }
         }

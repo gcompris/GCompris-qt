@@ -206,9 +206,10 @@ Rectangle {
             animalImage.state = "zoomedOut";
         }
         descriptionPanelCloseAnimation.start();
-        if (Activity.isComplete()) {
-            Activity.items.bonus.good("flower");
-            Activity.nextLevel();
+        if (Activity.isComplete() && !items.descriptionBonusDone) {
+            items.descriptionBonusDone = true;
+            items.buttonsBlocked = true;
+            items.bonus.good("flower");
         }
     }
 
