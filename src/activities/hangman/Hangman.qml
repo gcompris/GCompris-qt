@@ -305,6 +305,7 @@ ActivityBase {
             id: score
             height: 1.2 * internalTextComponent.height
             width: 1.3 * internalTextComponent.width
+            isScoreCounter: false
             anchors {
                 top: guessedTextBg.bottom
                 bottom: undefined
