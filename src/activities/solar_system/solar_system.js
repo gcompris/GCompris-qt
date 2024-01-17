@@ -43,16 +43,18 @@ function stop() {
 
 function initLevel() {
     currentSubLevel = 0
+    items.restartAssessmentMessage = false
     items.mainQuizScreen.score.numberOfSubLevels = currentPlanetLevels.length
     Core.shuffle(currentPlanetLevels)
     nextSubLevel(false)
 }
 
 function nextSubLevel(isAssessmentMode) {
-    items.mainQuizScreen.score.currentSubLevel = currentSubLevel
+    items.restartAssessmentMessage = false
     var optionListShuffle = []
 
     if(!isAssessmentMode) {
+        items.mainQuizScreen.score.currentSubLevel = currentSubLevel
         items.mainQuizScreen.closenessMeterValue = 0
 
         if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels) {
@@ -70,7 +72,8 @@ function nextSubLevel(isAssessmentMode) {
             }
         }
     }
-    else if(!items.mainQuizScreen.restartAssessmentMessage.visible) {
+    else if(items.mainQuizScreen.score.currentSubLevel < items.mainQuizScreen.score.numberOfSubLevels) {
+        items.mainQuizScreen.score.currentSubLevel = currentSubLevel + 1
         items.mainQuizScreen.question = assessmentModeQuestions[0].question
         for(var i = 0 ; i < 4 ; i ++) {
             optionListShuffle.push({
@@ -78,6 +81,10 @@ function nextSubLevel(isAssessmentMode) {
                 "closeness": assessmentModeQuestions[0].closeness[i]
             });
         }
+    }
+    else {
+        items.restartAssessmentMessage = true
+        return
     }
 
     items.mainQuizScreen.closenessMeter.stopAnimations()
@@ -89,7 +96,8 @@ function nextSubLevel(isAssessmentMode) {
         for(var i = 0 ; i < optionListShuffle.length ; i ++)
             items.mainQuizScreen.optionListModel.append(optionListShuffle[i])
 
-        currentSubLevel++
+        if(isAssessmentMode)
+            currentSubLevel++
     }
 }
 
@@ -102,6 +110,7 @@ function startAssessmentMode() {
     items.solarSystemVisible = false
     items.quizScreenVisible = true
     items.mainQuizScreen.numberOfCorrectAnswers = 0
+    items.mainQuizScreen.score.currentSubLevel = 0
     items.mainQuizScreen.score.numberOfSubLevels = 20
     currentSubLevel = 0
     assessmentModeQuestions = []
@@ -121,9 +130,7 @@ function appendAndAddQuestion() {
     var incorrectAnsweredQuestion = assessmentModeQuestions.shift()
     assessmentModeQuestions.push(incorrectAnsweredQuestion)
 
-    if(items.mainQuizScreen.score.numberOfSubLevels == 24)
-        items.mainQuizScreen.score.numberOfSubLevels++
-    else if(items.mainQuizScreen.score.numberOfSubLevels < 24) {
+    if(items.mainQuizScreen.score.numberOfSubLevels < 24) {
         assessmentModeQuestions.push(allQuestions[items.mainQuizScreen.score.numberOfSubLevels])
         items.mainQuizScreen.score.numberOfSubLevels += 2
     }

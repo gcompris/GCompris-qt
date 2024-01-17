@@ -140,6 +140,7 @@ Item {
                     height: optionListView.buttonHeight
                     textLabel: optionValue
                     blockAllButtonClicks: optionListView.blockAnswerButtons
+                    audioEffects: activity.audioEffects
 
                     isCorrectAnswer: closeness === 100
 
@@ -158,6 +159,9 @@ Item {
                     onCorrectlyPressed: {
                         if(!items.assessmentMode) {
                             closenessMeter.stopAnimations()
+                            Activity.currentSubLevel++
+                            score.currentSubLevel = Activity.currentSubLevel
+                            score.playWinAnimation()
                             particles.burst(30)
                             closenessMeterCorrectAnswerAnimation.start()
                             mainQuizScreen.closenessMeterValue = closeness
@@ -263,7 +267,7 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
         anchors.horizontalCenter: parent.horizontalCenter
         radius: 4 * ApplicationInfo.ratio
-        visible: items.assessmentMode && (score.currentSubLevel >= score.numberOfSubLevels)
+        visible: items.assessmentMode && items.restartAssessmentMessage
         z: 4
         GCText {
             anchors.fill: parent
@@ -299,5 +303,6 @@ Item {
         anchors.rightMargin: 10 * ApplicationInfo.ratio
         anchors.top: parent.top
         z: 0
+        isScoreCounter: items.assessmentMode ? false : true
     }
 }

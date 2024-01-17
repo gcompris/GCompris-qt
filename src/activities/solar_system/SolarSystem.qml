@@ -73,6 +73,7 @@ ActivityBase {
             property string temperatureHint
             property string lengthOfYearHint
             property bool hintProvided: true
+            property bool restartAssessmentMessage: false
         }
 
         onStart: Activity.start(items)
