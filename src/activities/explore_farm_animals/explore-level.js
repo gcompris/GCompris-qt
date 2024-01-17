@@ -33,10 +33,12 @@ function stop() {
 }
 
 function initLevel() {
+    items.okButton.visible = false
+    items.descriptionBonusDone = false
     var filename = url + "board" + "/" + "board" + (items.currentLevel + 1) + ".qml"
     items.dataset.source = filename
-    items.progressbar.value = 0
-    items.progressbar.to = items.dataModel.count
+    items.progressbar.currentSubLevel = 0
+    items.progressbar.numberOfSubLevels = items.dataModel.count
     items.score.numberOfSubLevels = items.hasAudioQuestions ? 3 : 2;
     // randomize the questions for level 2 and 3
     items.questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)
@@ -44,15 +46,17 @@ function initLevel() {
 
     // Change the currentSubLevel value to 1 to be sure to update the question value
     // else if you are sublevel 0 and go to last level, the question is not the good one
-    items.progressbar.value = 1
-    items.progressbar.value = 0
+    items.progressbar.currentSubLevel = 1
+    items.progressbar.currentSubLevel = 0
     items.descriptionPanel.visible = false
     items.instruction.visible = true
+    items.buttonsBlocked = false
 
     reload();
 }
 
 function nextLevel() {
+    items.progressbar.stopWinAnimation()
     ++items.score.currentSubLevel
     if((items.currentLevel + 1) >= numberOfLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
     {
@@ -67,13 +71,14 @@ function nextLevel() {
     // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
     items.audioVoices.stop()
 
-    if (items.score.currentSubLevel == 2) {
-        items.progressbar.value = 0;
+    if(items.score.currentSubLevel >= 2) {
+        items.progressbar.currentSubLevel = 0;
         initSubSubLevel();
     }
 }
 
 function previousLevel() {
+    items.progressbar.stopWinAnimation()
     --items.score.currentSubLevel
     if(items.currentLevel <= 0 && items.score.currentSubLevel < 1)
     {
@@ -102,22 +107,26 @@ function isComplete() {
     return true;
 }
 
-function initSubSubLevel(IsNext) {
-    if(items.progressbar.value == items.dataModel.count) {
+function initSubSubLevel() {
+    if(items.progressbar.currentSubLevel >= items.dataModel.count) {
         items.bonus.good("smiley");
+        return
     }
-     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions && getCurrentQuestion()) {
-         if(items.bonus.isPlaying) {
+    items.currentQuestion = getCurrentQuestion();
+
+    if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
+        if(items.bonus.isPlaying) {
              items.bonusPlaying = true;
-         } else {
+        } else {
              repeat();
         }
     }
+    items.buttonsBlocked = false;
 }
 
 function nextSubSubLevel() {
     items.audioVoices.silence(2000)
-    initSubSubLevel(true)
+    initSubSubLevel()
 }
 
 function reload() {
@@ -133,5 +142,5 @@ function repeat() {
 }
 
 function getCurrentQuestion() {
-    return items.dataset.item.tab[items.questionOrder[items.progressbar.value]];
+    return items.dataset.item.tab[items.questionOrder[items.progressbar.currentSubLevel]];
 }

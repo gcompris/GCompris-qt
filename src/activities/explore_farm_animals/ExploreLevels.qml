@@ -84,14 +84,18 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias progressbar: progressbar
+            property alias errorRectangle: errorRectangle
             property alias dataModel: dataModel
             property alias dataset: dataset
             property alias instruction: instruction
             property alias descriptionPanel: descriptionPanel
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property var questionOrder
-            property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
+            property var currentQuestion: ""
+            property alias okButton: okButton
             property bool bonusPlaying: false
+            property bool buttonsBlocked: false
+            property bool descriptionBonusDone: false
         }
 
         Loader {
@@ -170,20 +174,26 @@ ActivityBase {
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottomMargin: progressbar.height
-            GCProgressBar {
+            Score {
                 id: progressbar
-                message: value + "/" + to
+                anchors {
+                    top: undefined
+                    bottom: undefined
+                    left: undefined
+                    right: undefined
+                }
+                onStop: Activity.nextSubSubLevel();
             }
         }
 
         Image {
-            id: ok
-            visible: progressbar.value === progressbar.to
+            id: okButton
+            visible: false
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: questionText.height * 2
             fillMode: Image.PreserveAspectFit
-            anchors.right: progress.left
-            anchors.bottom: bar.top
+            anchors.right: progress.right
+            anchors.verticalCenter: progress.verticalCenter
             anchors.margins: 10 * ApplicationInfo.ratio
             MouseArea {
                 anchors.fill: parent
@@ -255,6 +265,7 @@ ActivityBase {
 
                 Score {
                     id: score
+                    isScoreCounter: false
                     anchors {
                         bottom: undefined
                         right: undefined
@@ -276,6 +287,18 @@ ActivityBase {
             }
         }
 
+        ErrorRectangle {
+            id: errorRectangle
+            anchors.centerIn: parent
+            width: 0
+            height: 0
+            imageSize: 60 * ApplicationInfo.ratio
+            function releaseControls() {
+                items.buttonsBlocked = false;
+            }
+        }
+
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -295,6 +318,14 @@ ActivityBase {
         }
         Bonus {
             id: bonus
+            onWin: {
+                if(progressbar.visible)
+                    Activity.nextLevel();
+                else {
+                    okButton.visible = true;
+                    items.buttonsBlocked = false;
+                }
+            }
         }
 
         Loader {
