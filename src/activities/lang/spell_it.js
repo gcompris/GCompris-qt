@@ -77,8 +77,7 @@ function initLevel() {
 }
 
 function initSubLevel() {
-    spellItems.score.currentSubLevel++
-    spellItems.goodWord = wordList[spellItems.score.currentSubLevel - 1]
+    spellItems.goodWord = wordList[spellItems.score.currentSubLevel]
     spellItems.wordImage.changeSource(spellItems.goodWord.image)
     spellItems.hintText.changeHint(spellItems.goodWord.translatedTxt[0])
     spellItems.hintText.visible = true
@@ -87,7 +86,7 @@ function initSubLevel() {
 }
 
 function nextSubLevel() {
-    if(spellItems.score.currentSubLevel == spellItems.score.numberOfSubLevels ) {
+    if(spellItems.score.currentSubLevel >= spellItems.score.numberOfSubLevels ) {
         spellItems.bonus.good("smiley")
     } else {
         initSubLevel();
@@ -96,6 +95,8 @@ function nextSubLevel() {
 
 function checkAnswer(answer_) {
     if(spellItems.goodWord.translatedTxt == answer_) {
+        spellItems.score.currentSubLevel++
+        spellItems.score.playWinAnimation()
         nextSubLevel()
         return true
     }

@@ -364,6 +364,7 @@ Item {
         Score {
             id: score
             parent: rootItem
+            isScoreCounter: false
         }
     }
     Loader {
