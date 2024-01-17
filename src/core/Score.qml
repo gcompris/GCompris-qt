@@ -17,6 +17,15 @@ import GCompris 1.0
  * Score usually consists of current-level (@ref currentSubLevel)
  * and the max number of levels (@ref numberOfSubLevels).
  *
+ * It is mainly used as a score counter, starting at 0 and increasing
+ * directly after a good answer.
+ *
+ * It can in some cases be used as a sub-level counter, starting at 1.
+ * But it should be used as sub-level counter only if the sub-level increases
+ * regardless of if the answer is good or bad, or if there is no answer to give
+ * to reach next sub-level. In this case, don't forget to set the variable
+ * "isScoreCounter" to false, so it will look a bit different visually.
+ *
  * For other cases an activity can also directly define the whole message
  * it wants to be shown (@ref message).
  *
@@ -72,6 +81,13 @@ Rectangle {
     property string message
 
     /**
+     * type:bool
+     * Wether the component is used as a score counter (true)
+     * or something else, like a subLevel counter (false)
+     */
+    property bool isScoreCounter: true
+
+    /**
      * Alias for external reference of subLevelText.
      */
     readonly property alias internalTextComponent: subLevelText
@@ -106,8 +122,8 @@ Rectangle {
     anchors.right: parent.right
     anchors.margins: margins
 
-    border.color: "black"
-    border.width: 0
+    border.color: "white"
+    border.width: isScoreCounter ? 0 : 3 * ApplicationInfo.ratio
 
     z: 1000
 
