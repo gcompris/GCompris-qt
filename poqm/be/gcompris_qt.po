@@ -7244,7 +7244,7 @@ msgstr ""
 "На трэцім узроўні паказваецца выпадкова выбраная тэкставая інфармацыя і вы "
 "мусіце выбраць тую жывёлу, якую апісвае прыведзены тэкст."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7254,12 +7254,12 @@ msgstr ""
 "некаторыя гукі нават пры выключаных галасах ці аўдыаэфектах у галоўнай "
 "канфігурацыі."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Выйсці"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Працягнуць"
@@ -15816,12 +15816,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Спробаў: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Выбачайце, у нас яшчэ няма перакладаў на вашую мову."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15831,7 +15831,7 @@ msgstr ""
 "GCompris распрацоўваецца камандай KDE, вы можаце перакладаць GCompris, "
 "далучыўшыся да каманды перакладчыкаў па спасылцы <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -26061,25 +26061,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "Якой велічыні Нептун у параўнанні з іншымі планетамі Сонечнай сістэмы?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Дакладнасць: %1%"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Ваш фінальны лік: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -26090,14 +26090,14 @@ msgstr ""
 "<br>Паспрабуйце праверыць свае веды яшчэ раз ці папрактыкуйцеся ў рэжыме "
 "навучання, каб даведацца больш пра Сонечную сістэму."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
 "questions."
 msgstr "Цудоўна! Вы можаце паўтарыць ацэнку вашых ведаў на іншых пытаннях."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26113,17 +26113,17 @@ msgstr ""
 "пра Сонечную сістэму.<br><b>2. Рэжым ацэнкІ</b> - У гэтым рэжыме вы можаце "
 "праверыць свае веды пра Сонечную сістэму."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Ацэнка"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Вывучэнне"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26132,7 +26132,7 @@ msgstr ""
 "Пстрыкніце па Сонцу ці любой планеце каб пабачыць пытанні. На кожнае пытанне "
 "даецца 4 варыянты адказу, адзін з якіх слушны."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26147,7 +26147,7 @@ msgstr ""
 "індыкатара. Калі даступная кнопка з падказкай, то вы можаце ёю скарыстацца "
 "для дапамогі."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26156,7 +26156,7 @@ msgstr ""
 "Маюцца 20 пытанняў з 4 варыянтамі адказу на кожны. Індыкатар прагрэсу ў "
 "ніжняй правай частцы экрану адлюстроўвае працэнт выканання."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26169,7 +26169,7 @@ msgstr ""
 "дадатак да пытання з няправільным адказам.<br>Макcімальная колькасць "
 "пытанняў складае 25, больш якой пытынні дадавацца не будуць."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26178,7 +26178,7 @@ msgstr ""
 "Вам трэба набраць больш за 90% для праходжання ацэнкі і атрымання ўзроўня "
 "эксперту па Сонечнай сістэме!"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26188,7 +26188,7 @@ msgstr ""
 "1. Чым <b>далей</b> планета ад Сонца, тым <b>меней</b> яе тэмпература."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26199,7 +26199,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 #, fuzzy
 #| msgctxt "SolarSystem|"
 #| msgid ""
@@ -26218,12 +26218,12 @@ msgstr ""
 "<b>З</b>емляне <b>М</b>арым <b>Ю</b>нацтва <b>С</b>узор'ямі <b>У</"
 "b>збагаціць <b>Н</b>азаўжды.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Падказка"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Агляд Сонечнай сістэмы"
@@ -27177,7 +27177,7 @@ msgstr "Увядзіце ўсё слова пакуль яно падае і н�
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Дададзеныя пераклады на славенскую, нямецкую, галісійскую мовы."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95

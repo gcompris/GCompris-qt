@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-15 04:07+0100\n"
+"PO-Revision-Date: 2024-01-17 20:33+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -44,81 +44,53 @@ msgstr "Validar las respuestas"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Encuentra ambos números."
+msgstr "Encuentra los números adyacentes"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Encuentra ambos números."
+msgstr "Encuentra los números adyacentes que faltan."
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Aprende cosas sobre los números primos."
+msgstr "Aprende a ordenar números."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Assign the requested grammatical classes to the corresponding words."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr ""
-"Asigna las categorías gramaticales que se indican a las palabras "
-"correspondientes."
+"Encuentra los números indicados y arrástralos a su lugar correspondiente."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Números entre %1 y %2."
+msgstr "Encuentra números entre 1 y 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Números entre %1 y %2."
+msgstr "Encuentra números entre 0 y 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Números entre %1 y %2."
+msgstr "Encuentra números entre 0 y 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Encuentra ambos números."
+msgstr "Encuentra el número siguiente."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Encuentra ambos números."
+msgstr "Encuentra el número anterior."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
 #, fuzzy
@@ -129,28 +101,19 @@ msgid "Find the in-between number."
 msgstr "Encuentra ambos números."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Encuentra ambos números."
+msgstr "Encuentra los números que faltan."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Encuentra ambos números."
+msgstr "Encuentra los números siguientes."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Encuentra ambos números."
+msgstr "Encuentra los números anteriores."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
 #, fuzzy
@@ -169,20 +132,14 @@ msgid "Find numbers between -10 and -1."
 msgstr "Números entre %1 y %2."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Números entre %1 y %2."
+msgstr "Encuentra números entre -10 y 10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Encuentra ambos números."
+msgstr "Encuentra los números que faltan"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -7004,7 +6961,7 @@ msgstr ""
 "En el tercer nivel se muestra un texto al azar y debes pulsar sobre el "
 "animal asociado con el texto."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7014,12 +6971,12 @@ msgstr ""
 "incluso si las voces y los efectos de sonido están desactivados en la "
 "configuración principal."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Salir"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Continuar"
@@ -14341,37 +14298,25 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Dígitos: introducir un número"
+msgstr "Dígitos: introducir dígitos"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Retroceso: borrar el último dígito de la respuesta"
+msgstr "Retroceso: borrar el último dígito"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Dígitos: escribe la respuesta"
+msgstr "Suprimir: reiniciar la respuesta"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "Espacio o Intro: validar la respuesta"
+msgstr "Espacio, Return o Intro: validar la respuesta"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -14488,12 +14433,9 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Flechas izquierda y derecha: mover la nave espacial"
+msgstr "Flechas izquierda y derecha: mover el cursor"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
@@ -15241,12 +15183,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Intentos: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Disculpa: aún no tenemos una traducción para tu idioma."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15256,7 +15198,7 @@ msgstr ""
 "GCompris está desarrollado por la comunidad KDE. Puedes traducir GCompris "
 "uniéndose a un equipo de traductores <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -25152,26 +25094,26 @@ msgstr ""
 "¿Cómo de grande es Neptuno en comparación con los otros planetas del Sistema "
 "Solar?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Precisión: %1%"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "La puntuación final es de: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25182,7 +25124,7 @@ msgstr ""
 "Solar!<br>Vuelve a intentarlo para poner a prueba tus habilidades o "
 "entrénate en el modo normal para aprender más sobre el Sistema Solar."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25191,7 +25133,7 @@ msgstr ""
 "¡Genial! Puedes volver a reproducir la evaluación para probar tu "
 "conocimiento sobre más preguntas."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25207,17 +25149,17 @@ msgstr ""
 "<br><b>2. Modo de evaluación</b> - En este modo pondrás a prueba tus "
 "conocimientos sobre el Sistema Solar."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Evaluación"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Aprendizaje"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25226,7 +25168,7 @@ msgstr ""
 "Pulsa en el Sol o en cualquier planeta para revelar las preguntas. Cada "
 "pregunta tiene 4 opciones, de las que una es la correcta."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25242,7 +25184,7 @@ msgstr ""
 "siguiendo el medidor de aproximación. Si está visible el botón «Pista», "
 "puedes pulsarlo para obtener una pista para encontrar la respuesta."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25252,7 +25194,7 @@ msgstr ""
 "la parte inferior derecha de la pantalla muestra el porcentaje de la "
 "puntuación."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25265,7 +25207,7 @@ msgstr ""
 "junto con la pregunta contestada incorrectamente.<br>Se harán 25 preguntas "
 "como máximo, tras las que no se añadirán más preguntas."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25274,7 +25216,7 @@ msgstr ""
 "Es necesario que superes el 90% para aprobar la evaluación y convertirte en "
 "un experto en el Sistema Solar."
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25284,7 +25226,7 @@ msgstr ""
 "1. Cuanto <b>más lejos</b> esté un planeta del Sol, <b>menor</b> será su "
 "temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25295,7 +25237,7 @@ msgstr ""
 "alejamos del Sol</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25306,12 +25248,12 @@ msgstr ""
 "(examina la primera letra de cada palabra): <b>M</b>i <b>V</b>aca <b>T</"
 "b>iene <b>M</b>uy <b>J</b>untas <b>S</b>us <b>U</b>ñas <b>N</b>egras.<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Consejo"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vista del Sistema Solar"
@@ -26226,10 +26168,10 @@ msgstr "Teclea la palabra completa mientras cae, antes de que llegue al suelo."
 #: core/ChangeLog.qml:30
 #, fuzzy
 #| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
+#| msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
-msgstr "Se han añadido traducciones para el esloveno, el alemán y el gallego."
+msgid "Translations added for Bulgarian, Galician and Swahili"
+msgstr "Se han añadido traducciones para el búlgaro, el gallego y el suajili."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104

@@ -6874,7 +6874,7 @@ msgstr ""
 "U trećoj razini prikazuje se nasumični tekstualni upit i moraš kliknuti na "
 "životinju koja odgovara tekstu."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6883,12 +6883,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -15023,12 +15023,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Pokušaj: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Žao nam je ali još nemamo prijevod za tvoj jezik."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15038,7 +15038,7 @@ msgstr ""
 "GCompris je razvila KDE zajednica, možeš prevesti GCompris pridruživanjem "
 "prevoditeljskom timu na <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -24821,26 +24821,26 @@ msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Koliko je velik Neptun u usporedbi s drugim planetima Sunčevog sustava?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Preciznost: %1%"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Tvoj konačni rezultat je: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24851,7 +24851,7 @@ msgstr ""
 "<br>Pokušaj ponovno testirati tvoje vještine ili treniraj u normalnom načinu "
 "rada da bi saznao više o Sunčevom sustavu."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -24860,7 +24860,7 @@ msgstr ""
 "Sjajno! Možeš ponoviti procjenu kako bi provjerio tvoje znanje na više "
 "pitanja."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24876,17 +24876,17 @@ msgstr ""
 "sustavu.<br><b>2. Način ocjenjivanja</b> - U ovom načinu možeš testirati "
 "svoje znanje o Sunčevom sustavu."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Ocjenjivanje"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Učenje"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24895,7 +24895,7 @@ msgstr ""
 "Klikni na Sunce ili bilo koji planet da bi se prikazala pitanja. Svako "
 "pitanje ima 4 opcije od kojih je jedna točna."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24910,7 +24910,7 @@ msgstr ""
 "prateći mjerač blizine. Ako je gumb savjeta vidljiv, možeš kliknuti na njega "
 "da bi dobio savjet za pronalaženje odgovora."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24919,7 +24919,7 @@ msgstr ""
 "Postoji 20 pitanja s 4 opcije. Traka napretka u donjem desnom kutu zaslona "
 "prikazuje vaš postotni rezultat."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24932,7 +24932,7 @@ msgstr ""
 "netočno odgovoreno pitanje.<br>Postavit će se najviše 25 pitanja nakon čega "
 "više neće biti dodano nijedno pitanje."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24941,7 +24941,7 @@ msgstr ""
 "Trebaš ostvariti više od 90% da bi prošao procjenu i postao stručnjak za "
 "Sunčev sustav!"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24951,7 +24951,7 @@ msgstr ""
 "1. Što je planet <b>dalje</b> od Sunca, to je <b>niža</b> njegova "
 "temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24962,7 +24962,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24973,12 +24973,12 @@ msgstr ""
 "<b>ME</b>rkur <b>VE</b>nera <b>ZE</b>mlja <b >MA</b>rs <b>JU</b>piter <b>SA</"
 "b>turn <b>U</b>ran <b>NE</b>ptun.<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Savjet"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Pogledaj Sunčev sustav"
@@ -25881,7 +25881,7 @@ msgstr "Upišite cijelu riječ dok pada, prije nego što dotakne tlo."
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Dodani prijevodi za: slovenski, njemački, galicijski."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95

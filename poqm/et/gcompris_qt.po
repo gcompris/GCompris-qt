@@ -6929,7 +6929,7 @@ msgstr ""
 "Kolmandal tasemel kuvatakse juhuslik tekstiviip ja peate klõpsama tekstile "
 "vastaval loomal."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6938,12 +6938,12 @@ msgstr ""
 "See mäng vajab heli olemasolu, mõned helid mängivad isegi siis, kui "
 "seadetest on audio ja helieffektid välja lülitatud."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Jätka"
@@ -15092,12 +15092,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Proovitud: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Vabandust, sinu keele jaoks ei ole veel tõlget olemas."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15107,7 +15107,7 @@ msgstr ""
 "GComprist arendab KDE kogukond, seda saab tõlkida ka ise, kui liitud "
 "tõlkemeeskonnaga aadressil <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -24836,25 +24836,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "Kui suur on Neptuun teiste Päikesesüsteemi planeetidega võrreldes?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Täpsus: %1%"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Sinu lõpptulemus: <font color=\"#3bb0de\">%1</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24864,7 +24864,7 @@ msgstr ""
 "Tulemusega üle 90% tõused Päikesesüsteemi eksperdiks!<br>Proovi oma võimeid "
 "uuesti või õpi tavalises režiimis üksikasjalikumalt Päikesesüsteemi tundma."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -24873,7 +24873,7 @@ msgstr ""
 "Suurepärane! Võid mängu korrata, et enda teadmised veel rohkemate "
 "küsimustega proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24889,17 +24889,17 @@ msgstr ""
 "Hindamisrežiim</b> - selle korral saad oma teadmised Päikesesüsteemist "
 "proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Hindamine"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Õppimine"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24908,7 +24908,7 @@ msgstr ""
 "Küsimuste nägemiseks klõpsa Päikesel või mõnel planeedil. Igal küsimusel on "
 "4 valikvastust, millest üks on õige."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24923,7 +24923,7 @@ msgstr ""
 "Kui vihjenupp on nähtav, võite vastuse leidmiseks vihje saamiseks sellele "
 "klõpsata."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24932,7 +24932,7 @@ msgstr ""
 "Algul on valmis seatud 20 küsimust, igal 4 valikvastust. All paremal näitab "
 "edenemisriba sinu tulemusi protsentides."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24945,14 +24945,14 @@ msgstr ""
 "üks lisaküsimus.<br>Maksimaalselt esitatakse 25 küsimust, mille järel "
 "küsimuste esitamine lõpetatakse."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "Et olla Päikesesüsteemi ekspert, peaksid koguma hindamisel üle 90%!"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24962,7 +24962,7 @@ msgstr ""
 "1. Mida <b>kaugemal</b> asub planeet Päikesest, seda <b>madalam</b> on selle "
 "temperatuur.<br> <font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24973,7 +24973,7 @@ msgstr ""
 "liigume</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24984,12 +24984,12 @@ msgstr ""
 "sõna esimest tähte - <b>M</b>inu <b>V</b>anaisa <b>M</b>usta <b>M</b>aja "
 "<b>J</b>uures <b>S</b>eisab <b>U</b>hke <b>N</b>eoonskupltuur.<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Vihje"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vaata Päikesesüsteemi"
@@ -25893,7 +25893,7 @@ msgstr "Kirjuta langevad sõnad, enne kui nad maha kukuvad."
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Lisatud tõlked: sloveeni, saksa, galeegi."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95

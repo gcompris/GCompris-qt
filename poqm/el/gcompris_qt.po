@@ -7147,7 +7147,7 @@ msgstr ""
 "Στο τρίτο επίπεδο εμφανίζεται ένα τυχαίο κείμενο κι εσύ θα πρέπει να πιέσεις "
 "στην εικόνα του ζώου που ταιριάζει με αυτό το κείμενο."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7157,12 +7157,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -15461,13 +15461,13 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Προσπάθειες: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15478,7 +15478,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -25456,19 +25456,19 @@ msgstr ""
 "Πόσο μεγάλος είναι ο Ποσειδώνας σε σύγκριση με τους άλλους πλανήτες του "
 "ηλιακού μας συστήματος;"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Ακρίβεια: %1"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
@@ -25476,7 +25476,7 @@ msgstr ""
 "Η συνολική σου βαθμολογία είναι: <font color=\"#3bb0de\">%1%</font>.<br><br>"
 "%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25488,7 +25488,7 @@ msgstr ""
 "γνώσεις σου ή κάνε εξάσκηση σε κανονική λειτουργία για να ανακαλύψεις "
 "περισσότερα για το ηλιακό μας σύστημα."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25497,7 +25497,7 @@ msgstr ""
 "Περίφημα! Μπορείς να ξαναδοκιμάσεις σε λειτουργία αξιολόγησης για να δεις "
 "πώς τα πας με περισσότερες ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25514,17 +25514,17 @@ msgstr ""
 "- Εδώ μπορείς να δοκιμάσεις απευθείας τις γνώσεις που έχεις για το ηλιακό "
 "μας σύστημα."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Αξιολόγηση"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Εκμάθηση"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25534,7 +25534,7 @@ msgstr ""
 "ερωτήσεις. Κάθε ερώτηση έχει 4 επιλογές, από τις οποίες μόνο η μία είναι η "
 "σωστή."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25550,7 +25550,7 @@ msgstr ""
 "υπόδειξης είναι ορατό, μπορείς να πιέσεις σε αυτό για να σε βοηθήσει να "
 "φτάσεις στη σωστή απάντηση."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25559,7 +25559,7 @@ msgstr ""
 "Αρχικά υπάρχουν 20 ερωτήσεις με 4 επιλογές η καθεμιά. Η μπάρα προόδου κάτω "
 "δεξιά της οθόνης δείχνει το ποσοστό επιτυχίας σου."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25572,7 +25572,7 @@ msgstr ""
 "ακόμη ερώτηση στο τέλος μαζί με αυτή που απάντησες λάθος.<br>Ο μέγιστος "
 "αριθμός ερωτήσεων είναι 25, μετά από τον οποίο δεν προστίθενται ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25581,7 +25581,7 @@ msgstr ""
 "Θα πρέπει να συγκεντρώσεις βαθμολογία μεγαλύτερη από 90% για να περάσεις την "
 "αξιολόγηση και να γίνεις ειδικός του ηλιακού μας συστήματος!"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25592,7 +25592,7 @@ msgstr ""
 "<b>χαμηλότερη</b> είναι η θερμοκρασία του.<br><font color=\"#3bb0de\">%1</"
 "font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25603,7 +25603,7 @@ msgstr ""
 "τον Ήλιο</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25615,12 +25615,12 @@ msgstr ""
 "γράμματα των ονομάτων τους: <b>Ε</b>ρμής, <b>Α</b>φροδίτη, <b>Γ</b>η, <b>Ά</"
 "b>ρης, <b>Δ</b>ίας, <b>Κ</b>ρόνος, <b>Ου</b>ρανός, <b>Π</b>οσειδώνας.<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Υπόδειξη"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Προβολή του ηλιακού συστήματος."
@@ -26562,7 +26562,7 @@ msgstr "Πληκτρολόγησε τη λέξη πριν αυτή πέσει σ
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Μεταφράσεις προστέθηκαν για: Slovenian, German, Galician."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95

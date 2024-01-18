@@ -1298,6 +1298,3 @@ msgstr ""
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Sözcükler yere ulaşmadan önce onları klavyende yaz."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "giriş sesi açıklamasını buraya koy"

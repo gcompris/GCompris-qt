@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-16 10:46+0100\n"
+"PO-Revision-Date: 2024-01-17 09:39+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "%100<=4 ? 2 : 3);\n"
 "X-Language: sl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -6833,7 +6833,7 @@ msgstr ""
 "Na tretji ravni se prikaže poziv z naključnim besedilom, vi pa morate "
 "klikniti na žival, ki se ujema z besedilom."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6842,12 +6842,12 @@ msgstr ""
 "Za to dejavnost je potreben zvok, zato bo računalnik predvajal nekatere "
 "zvoke, četudi če so zvoki ali zvočni učinki v glavni nastavitvi onemogočeni."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Izhod"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Nadaljuj"
@@ -14913,12 +14913,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Poskusov: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Žal še ni prevoda za vaš jezik."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14928,7 +14928,7 @@ msgstr ""
 "GCompris razvija skupnost KDE, za prevajanje GCompris se pridružite ekipi "
 "prevajanja na <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -24699,25 +24699,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "Kako velik je Neptun v primerjavi z drugimi planeti v Osončju?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Natančnost: %1"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Vaša končna ocene je: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24728,7 +24728,7 @@ msgstr ""
 "<br>Ponovite poskus svojih sposobnosti ali vadite v običajnem načinu, da "
 "raziščete Osončje."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -24737,7 +24737,7 @@ msgstr ""
 "Super! Ocenjevanje lahko ponovite, da preverite svoje znanje na še več "
 "vprašanjih."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24752,17 +24752,17 @@ msgstr ""
 "učenja</b> - V tem načinu lahko igrate in se učite o Osončju.<br><b>2. Način "
 "ocenjevanja</b> - v tem načinu lahko preizkusite svoje znanje o Osončju."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Ocenjevanje"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Učenje"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24771,7 +24771,7 @@ msgstr ""
 "Kliknite na Sonce ali kateri koli planet, da razkrijete vprašanja. Vsako "
 "vprašanje bo imelo 4 možnosti, od katerih je ena pravilna."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24785,7 +24785,7 @@ msgstr ""
 "odgovor predstavlja 1%. Poskusite znova, dokler ne dosežete bližino 100%, če "
 "sledite merilniku bližine ali namigu, ki označuje pravilen odgovor."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24794,7 +24794,7 @@ msgstr ""
 "Na začetku je 20 vprašanj s po štirimi možnostmi. Vrstica napredka spodaj "
 "desno na zaslonu kaže vaš dosežen odstotek."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24807,7 +24807,7 @@ msgstr ""
 "vprašanje skupaj z napačno odgovorjenim vprašanjem.<br>Vse skupaj boste "
 "dobili največ 25 vprašanj, po tem pa ne bo več nobenega dodatnega vprašanja."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24816,7 +24816,7 @@ msgstr ""
 "Da bi opraviti izpit in postali ekspert za Osončje, morate doseči več kot "
 "90% rezultat!"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24826,7 +24826,7 @@ msgstr ""
 "1. <b>Dlje</b> kot je planet od Sonca, <b>nižja</b> je njegova temperatura."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24837,7 +24837,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24848,12 +24848,12 @@ msgstr ""
 "angleških besed - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</b>other <b>J</"
 "b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Namig"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Poglejte Osončje"
@@ -25744,8 +25744,11 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Natipkajte celo besedo, preden pade na tla."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Dodani prevodi za bolgarščino, galicijščino in Kiswahili"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
@@ -25768,18 +25771,13 @@ msgid "Many bug fixes"
 msgstr "Veliko popravljenih napak"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--start-level level) to start GCompris at "
-#| "specific level (needs to be used with --launch activity option)"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"Nova možnost ukaza (--start-level level) za zagon GComprisa pri določeni "
-"zahtevnosti ( (mora biti uporabljeno z možnostjo --launch activity)"
+"Nova možnost ukaza za zagon GComprisa pri določeni zahtevnosti (--start-"
+"level level, mora biti uporabljeno z možnostjo --launch activity)"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
