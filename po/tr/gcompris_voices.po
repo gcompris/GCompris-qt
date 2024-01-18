@@ -196,17 +196,15 @@ msgstr "Harf için Braille hücresi oluştur."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Bir sayı veya sembol seç ve onun hedef alanına tıkla. Her sembol; bir "
-"satırda, bir sütunda ve varsa bir alt bölgede yalnızca bir kez görünmelidir."
+"Bir sayı seç ve hedef konuma tıkla. Her sayı bir satırda ve bir sütunda "
+"yalnızca bir kez yer almalıdır. Bir kafesin hücrelerindeki sayılar, verilen "
+"işleç kullanılarak birleştirildiğinde verilen sonucu vermelidir."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -473,7 +471,7 @@ msgstr "Belirtilen kesrin doğru payını ve paydasını bul"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Friz modelini yeniden oluştur ve tamamla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -561,7 +559,7 @@ msgstr "Verilen değeri dereceli çizgiye yerleştir."
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "İstenen dilbilgisi sınıflarını ilgili sözcüklere ata."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -583,7 +581,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "24 sayısını bulmak için dört numarayı ve işleçleri kullan"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22

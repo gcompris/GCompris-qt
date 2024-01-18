@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-01-16 15:37+0100\n"
+"PO-Revision-Date: 2024-01-17 10:27+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -7141,7 +7141,7 @@ msgstr ""
 "En el nivell tres, es mostra un missatge de text a l'atzar i haureu de fer "
 "clic sobre l'animal que coincideix amb el text."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7151,12 +7151,12 @@ msgstr ""
 "tot si les veus d'àudio o els efectes estan inhabilitats a la configuració "
 "principal."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Surt"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Continua"
@@ -15393,12 +15393,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Intent: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15408,7 +15408,7 @@ msgstr ""
 "El GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos "
 "a un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -25364,19 +25364,19 @@ msgstr ""
 "Com és de gran Neptú en comparació amb els altres planetes del nostre "
 "sistema solar?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Correcció: %1%"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
@@ -25384,7 +25384,7 @@ msgstr ""
 "La vostra puntuació final és de: <font color=\"#3bb0de\">%1%</font>.<br><br>"
 "%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25395,7 +25395,7 @@ msgstr ""
 "<br>Torna-ho a intentar, posa a prova les teves habilitats o entrena't en el "
 "mode normal per a aprendre més sobre el sistema solar."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25404,7 +25404,7 @@ msgstr ""
 "Genial! Pots tornar a reproduir l'avaluació per a provar el teu coneixement "
 "sobre més preguntes."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25420,17 +25420,17 @@ msgstr ""
 "solar.<br><b>2. Mode avaluació</b> - En aquest mode posaràs a prova els teus "
 "coneixements sobre el sistema solar."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Avaluació"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Aprenentatge"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25439,7 +25439,7 @@ msgstr ""
 "Fes clic al Sol o en qualsevol planeta per a revelar les preguntes. Cada "
 "pregunta té 4 opcions, de les quals una serà la correcta."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25455,7 +25455,7 @@ msgstr ""
 "del 100% seguint el comptador d'apropament. Si el botó «Consell» és visible, "
 "pots fer-hi clic per a obtenir un consell que t'ajudarà a trobar la resposta."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25465,7 +25465,7 @@ msgstr ""
 "a la part inferior dreta de la pantalla mostra el percentatge de la "
 "puntuació."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25479,7 +25479,7 @@ msgstr ""
 "faran un màxim de 25 preguntes després de les quals no s'afegirà cap més "
 "pregunta."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25488,7 +25488,7 @@ msgstr ""
 "Cal que superis el 90% per a aprovar l'avaluació i convertir-te en un expert "
 "en el sistema solar."
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25498,7 +25498,7 @@ msgstr ""
 "1. Com <b>més lluny</b> estigui un planeta del Sol, <b>més baixa</b> serà la "
 "seva temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25509,7 +25509,7 @@ msgstr ""
 "del Sol</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25521,12 +25521,12 @@ msgstr ""
 "b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles."
 "<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Consell"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vista del sistema solar"
@@ -26445,8 +26445,11 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escriviu la paraula completa mentre cau, abans que arribi a terra."
 
 #: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Traduccions afegides per al búlgar, gallec i kiswahili"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
@@ -26470,19 +26473,14 @@ msgstr "Moltes esmenes d'errors"
 
 # skip-rule: t-pu_sp
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--start-level level) to start GCompris at "
-#| "specific level (needs to be used with --launch activity option)"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"Opció nova de la línia d'ordres (--start-level level) per a iniciar el "
-"GCompris amb un nivell específic (cal que es faci servir amb l'opció --"
-"launch activitat)"
+"Opció nova de la línia d'ordres per a iniciar directament una activitat en "
+"un nivell específic (--start-level level, cal que es faci servir amb --"
+"launch activity)"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"

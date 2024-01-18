@@ -6838,7 +6838,7 @@ msgstr ""
 "മൂന്നാം ഘട്ടത്തിൽ, ഏതെങ്കിലും ഒരു വാചകം കാണിക്കും അതിനു യോജിക്കുന്ന മൃഗത്തിൽ നിങ്ങൾ ക്ലിക്കു "
 "ചെയ്യണം."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:305
+#: activities/explore_farm_animals/ExploreLevels.qml:336
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6847,12 +6847,12 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന് ശബ്ദം ആവശ്യമുണ്ട്, അതുകൊണ്ട് പ്രധാന കോൺഫിഗറേഷനിൽ ഓഡിയൊ ശബ്ദങ്ങളോ എഫക്റ്റുകളോ "
 "അസാധുവാക്കിയെന്നിരുന്നാലും ഇവിടെ ചില ശബ്ദങ്ങൾ പ്ലേ ചെയ്യും."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:306
+#: activities/explore_farm_animals/ExploreLevels.qml:337
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "നിർത്തുക"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:307
+#: activities/explore_farm_animals/ExploreLevels.qml:338
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "തുടരുക"
@@ -14982,12 +14982,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "ശ്രമിച്ചത്: %1"
 
-#: activities/hangman/Hangman.qml:401
+#: activities/hangman/Hangman.qml:402
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "ക്ഷമിക്കണം, നിങ്ങളുടെ ഭാഷയ്ക്ക് തർജ്ജിമ ഇതുവരെ ഇല്ല."
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:403
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -14997,7 +14997,7 @@ msgstr ""
 "കെഡിഇ കൂട്ടായ്മയാണ് ജികോംപ്രി ഡെവലപ് ചെയ്തത്, ഒരു തർജ്ജിമ സംഘത്തിൽ ചേർന്നാൽ നിങ്ങൾക്ക് "
 "ജികോംപ്രി തർജ്ജിമ ചെയ്യാൻ കഴിയും <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:404
+#: activities/hangman/Hangman.qml:405
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -24707,26 +24707,26 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "സൗരയൂഥത്തിലെ മറ്റു ഗ്രഹങ്ങളെ അപേക്ഷിച്ച് നെപ്റ്റ്യൂൺ എത്ര വലുതാണ്?"
 
-#: activities/solar_system/QuizScreen.qml:199
+#: activities/solar_system/QuizScreen.qml:203
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "കൃത്യത: %1%"
 
-#: activities/solar_system/QuizScreen.qml:239
+#: activities/solar_system/QuizScreen.qml:243
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "നിങ്ങളുടെ അവസാനത്തെ സ്കോർ നില: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24737,7 +24737,7 @@ msgstr ""
 "പരീക്ഷിക്കാൻ ഒന്നുകൂടി ശ്രമിക്കൂ അല്ലെങ്കിൽ പഠിക്കൽ എന്ന മോഡിൽ പരിശീലിച്ച് സൗരയൂഥത്തെ കുറിച്ച് "
 "കൂടുതൽ അറിയൂ."
 
-#: activities/solar_system/QuizScreen.qml:274
+#: activities/solar_system/QuizScreen.qml:278
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -24746,7 +24746,7 @@ msgstr ""
 "ഗംഭീരം! വീണ്ടും കളിച്ച് കൂടുതൽ ചോദ്യങ്ങളിലൂടെ നിങ്ങളുടെ അറിവു പരിശോധിച്ച് സ്വയം വിലയിരുത്തുവാൻ "
 "നിങ്ങൾക്ക് കഴിയും. "
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24761,17 +24761,17 @@ msgstr ""
 "നിങ്ങൾക്ക് കളിക്കാനും സൗരയൂഥത്തെ കുറിച്ച് പഠിക്കാനും കഴിയും.<br><b>2. വിലയിരുത്തൽ മോഡ്</b> - "
 "ഈ മോഡിൽ സൗരയൂഥത്തെ കുറിച്ചുള്ള നിങ്ങളുടെ അറിവ് പരിശോധിക്കുവാൻ കഴിയും."
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "വിലയിരുത്തൽ"
 
-#: activities/solar_system/SolarSystem.qml:159
+#: activities/solar_system/SolarSystem.qml:160
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "പഠിക്കൽ"
 
-#: activities/solar_system/SolarSystem.qml:163
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24780,7 +24780,7 @@ msgstr ""
 "ചോദ്യങ്ങൾ കാണാൻ ഒരു ഗ്രഹത്തിലോ സൂര്യനിലോ ക്ലിക്ക് ചെയ്യുക. ഓരോ ചോദ്യത്തിലും 4 ഓപ്ഷനുകൾ ഉണ്ട്, "
 "അതിൽ ഒന്ന് ശരിയാണ്."
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:165
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24794,7 +24794,7 @@ msgstr ""
 "എന്നു കാണിക്കും. കൃത്യത മീറ്ററിൽ 100% എത്തുന്നതുവരെ ശ്രമിച്ചുകൊണ്ടിരിക്കൂ. സൂചനയ്ക്കുള്ള ബട്ടൺ "
 "കാണാമെങ്കിൽ അതിൽ ക്ലിക്കു ചെയ്ത് ഉത്തരം കണ്ടെത്താനുള്ള സൂചന നിങ്ങൾക്കു കിട്ടും."
 
-#: activities/solar_system/SolarSystem.qml:169
+#: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24803,7 +24803,7 @@ msgstr ""
 "തുടക്കത്തിൽ, 4 ഓപ്ഷനുകളോടു കൂടിയുള്ള 20 ചോദ്യങ്ങളുണ്ട്. സ്ക്രീനിന്റെ താഴെ വലതുഭാഗത്തുള്ള പ്രോഗ്രസ് "
 "ബാറിൽ നിങ്ങളുടെ സ്കോർ ശതമാനത്തിൽ കാണാം."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24815,14 +24815,14 @@ msgstr ""
 "സ്കോർ കുറയുകയും അവസാനം തെറ്റായ ഉത്തരം നല്കിയ ചോദ്യത്തോടൊപ്പം ഒരു ചോദ്യം കൂടി ചോദിക്കുകയും "
 "ചെയ്യുന്നു.<br>25 ചോദ്യങ്ങളിൽ കൂടുതൽ ചോദിക്കില്ല."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "സൗരയൂഥത്തിൽ വൈദഗ്ദ്ധ്യമുണ്ടാവാൻ 90% നു മുകളിൽ സ്കോർ നേടണം!"
 
-#: activities/solar_system/SolarSystem.qml:353
+#: activities/solar_system/SolarSystem.qml:354
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24832,7 +24832,7 @@ msgstr ""
 "1. ഒരു ഗ്രഹം സൂര്യനിൽ നിന്നും <b>അകലെ</b> ആണെങ്കിൽ, അതിന്റെ താപനില <b>കുറവ്</b> "
 "ആയിരിക്കും.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:355
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24843,7 +24843,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -24855,12 +24855,12 @@ msgstr ""
 "<b>ഭാ</b>രമുള്ള <b>ച</b>ക്ക <b>വ</b>ലിച്ചെറിയാതെ <b>ശീ</b>തീകരണ <b>യ</b>ന്ത്രത്തിൽ "
 "<b>നി</b>റച്ചു.<br>"
 
-#: activities/solar_system/SolarSystem.qml:359
+#: activities/solar_system/SolarSystem.qml:360
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "സൂചന"
 
-#: activities/solar_system/SolarSystem.qml:367
+#: activities/solar_system/SolarSystem.qml:368
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "സൗരയൂഥം കാണുക"
@@ -25748,7 +25748,7 @@ msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്�
 #| msgctxt "ChangeLog|"
 #| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Kiswahili"
+msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "ഇവയുടെ തർജ്ജിമ ചേർത്തിരിക്കുന്നു: സ്ലോവേനിയൻ, ജർമൻ, ഗലീഷ്യൻ."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
