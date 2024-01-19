@@ -1,8 +1,8 @@
-# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022, 2023.
+# Giovanni Sora <g.sora@tiscali.it>, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-11-30 10:36+0100\n"
+"PO-Revision-Date: 2024-01-18 10:09+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -40,30 +40,21 @@ msgstr ""
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Trova ambe numeros"
+msgstr "Trova le numeros adjacente"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Trova ambe numeros"
+msgstr "Trova le numeros adjacente mancante."
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Apprende numeros decimal"
+msgstr "Apprende ordinar numeros"
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
@@ -87,60 +78,39 @@ msgid "Find numbers between 0 and 100."
 msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Trova ambe numeros"
+msgstr "Trova le proxime numero."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Trova ambe numeros"
+msgstr "Trova le previe numero."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Trova ambe numeros"
+msgstr "Trova le numero inter medie."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Trova ambe numeros"
+msgstr "Trova le numeros mancante."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Trova ambe numeros"
+msgstr "Trova le proxime numeros."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Trova ambe numeros"
+msgstr "Trova le previe numeros."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Trova ambe numeros"
+msgstr "Trova le numeros inter medie."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -153,12 +123,9 @@ msgid "Find numbers between -10 and 10."
 msgstr ""
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Trova ambe numeros"
+msgstr "Trova le numeros mancante"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1136,28 +1103,19 @@ msgid "Learn subtraction table of 10."
 msgstr ""
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Subtractiones con numeros decimal"
+msgstr "Subtractiones ab numero usque 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Subtractiones con numeros decimal"
+msgstr "Subtractiones ab numero usque 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Subtractiones con numeros decimal"
+msgstr "Subtractiones ab numero usque 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1243,28 +1201,19 @@ msgid "Learn addition table of 10."
 msgstr ""
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Additiones con numeros decimal"
+msgstr "Additiones con numeros usque 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Additiones con numeros decimal"
+msgstr "Additiones con numeros usque 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Additiones con numeros decimal"
+msgstr "Additiones con numeros usque 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -8742,11 +8691,10 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr ""
+"Backspace (spatio de retro) o Dele: remove le ultime indicio ab le  frisio "
+"(frieze ?)"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: valida tu responsa"
@@ -8757,9 +8705,6 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Io es preste"
@@ -10253,7 +10198,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board1_0.qml:51
 msgctxt "board1_0|"
 msgid "Provence-Alpes-Côte d'Azur"
-msgstr ""
+msgstr "Provence-Alpes-Costa Azur"
 
 #. Region of France: Auvergne-Rhône-Alpes
 #: activities/geo-country/resource/board/board1_0.qml:59
@@ -10354,7 +10299,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board2_0.qml:66
 msgctxt "board2_0|"
 msgid "North Rhine-Westphalia"
-msgstr ""
+msgstr "Nord Rheno-Westphalia"
 
 #. State of Germany: Lower Saxony
 #: activities/geo-country/resource/board/board2_0.qml:73
@@ -10408,7 +10353,7 @@ msgstr "Bavaria"
 #: activities/geo-country/resource/board/board2_0.qml:129
 msgctxt "board2_0|"
 msgid "Baden-Württemberg"
-msgstr ""
+msgstr "Baden-Württemberg"
 
 #: activities/geo-country/resource/board/board3_0.qml:15
 msgctxt "board3_0|"
@@ -13120,12 +13065,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Numeros par e impar"
+msgstr "Leger e ordinar numeros."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -13141,29 +13083,20 @@ msgid "Digits: enter digits"
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Backspace (spatio de retro): dele le ultime cifras in tu responsa"
+msgstr "Backspace (spatio de retro): dele le ultime cifra"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Enter: valida tu responsa"
+msgstr "Dele: refixa tu responsa"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate selected answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "Spatio o Enter: valida responsa seligite"
+msgstr "Spatio, Return o Enter: valida tu responsa "
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -13171,12 +13104,9 @@ msgid "(variable boundaries)"
 msgstr ""
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Trova ambe numeros"
+msgstr "Trova  le numero requirite."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
 msgctxt "Data|"
@@ -13364,12 +13294,9 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Backspace (spatio de retro): dele le ultime cifras in tu responsa"
+msgstr "Backspace (spatio de retro): selige le previe parola"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
@@ -13424,7 +13351,7 @@ msgstr ""
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "Vacue"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -13507,7 +13434,7 @@ msgstr ""
 #: activities/gravity/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Gravity"
-msgstr ""
+msgstr "Gravitate"
 
 #. Help title
 #: activities/gravity/ActivityInfo.qml:21
@@ -13625,12 +13552,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace (spatio de retro): dele le ultime cifras in tu responsa"
+msgstr "Backspace (spatio de retro): dele ultime operation"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -13663,12 +13587,9 @@ msgid "Solvable with all operators."
 msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Divisiones."
+msgstr "Division requirite."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -14412,12 +14333,9 @@ msgstr ""
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the fractions"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Trova le fractiones"
+msgstr "Trova le bongos"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -14591,7 +14509,7 @@ msgstr "Acceleration: %1"
 #, qt-format
 msgctxt "LandSafe|"
 msgid "Gravity: %1"
-msgstr ""
+msgstr "Gravitate: %1"
 
 #: activities/land_safe/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -14744,7 +14662,7 @@ msgstr "action"
 #: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "adjective"
-msgstr ""
+msgstr "adjectivo"
 
 #: activities/lang/Lang.qml:192
 msgctxt "Lang|"
@@ -17340,12 +17258,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtro de Difficultate:"
+msgstr "Filtro de Difficultate"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -17353,12 +17268,10 @@ msgid "Language selector"
 msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Tu vole discargar le sequente possessiones externe?"
+msgstr ""
+"Habilita discargarmentos/actualisationes automatic  de possessiones externe"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -24311,16 +24224,7 @@ msgid ""
 msgstr ""
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -24332,12 +24236,12 @@ msgid ""
 "what you need."
 msgstr ""
 "Tu non debe esser un disveloppator de software per esser un membro del "
-"equipa de KDE. Tu pote affiliar te con le equipas de linguage qui traduce "
-"interfacie de programma. Tu pote provider graphicos, themas, sonos,e melior "
-"documentation.Tu decide! <br /><br />Tu Visita <a href=\"%1\">%1</a>pro "
-"information super alicun projectos ubi tu pote participar.<br /><br /> Si tu "
-"necessita altere information o documentation, postea un visita a <a href="
-"\"%2\">%2</a> fornira te con tote lo que tu necessita."
+"equipa de KDE. Tu pote affiliar te con le equipas de linguage qui  traduce "
+"interfacies de programma. Tu pote provider graphiches, themas, sonos,e "
+"melior documentation.Tu decide! <br /><br />Tu Visita <a href=\"%1\">%1</"
+"a>pro information super alicun projectos ubi tu pote participar.<br /><br /> "
+"Si tu necessita altere information o documentation, postea un visita a <a "
+"href=\"%2\">%2</a> fornira te con tote lo que tu necessita."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -24717,14 +24621,13 @@ msgid ""
 msgstr ""
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Tu vole discargar le sequente possessiones externe?"
+msgstr ""
+"Tu vole discargar automaticamente o actualisar le sequente possessiones "
+"externe quandoon initia GCompris?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -24794,12 +24697,9 @@ msgstr ""
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Applica"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancella"
