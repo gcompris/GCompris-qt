@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-01-17 11:54+0200\n"
+"PO-Revision-Date: 2024-01-19 09:22+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -26029,12 +26029,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Наберіть слово повністю, доки воно падає на землю."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Додано переклади такими мовами: болгарською, галісійською і кісуахілі."
+msgstr "Додано переклади такими мовами: болгарською, галісійською і суахілі."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
