@@ -1,16 +1,16 @@
 # Translation for gcompris_voices.po to Euskara/Basque (eu).
-# Copyright (C) 2019-2023 This file is copyright:
+# Copyright (C) 2019-2024 This file is copyright:
 # This file is distributed under the same license as the gcompris package.
-# SPDX-FileCopyrightText: 2023 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
+# SPDX-FileCopyrightText: 2023, 2024 KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2019, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 01:35+0000\n"
-"PO-Revision-Date: 2023-09-28 18:22+0200\n"
+"PO-Revision-Date: 2024-01-20 14:55+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,13 +18,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.1\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Aurkitu falta diren zenbakiak."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -485,7 +485,7 @@ msgstr "Aurkitu irudikatutako zatikiaren zenbakitzaile eta izendatzaile egokia"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Frisoko eredua kopiatu eta osatu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -559,13 +559,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Aurkitu graduatutako lerroan emandako lekuari dagokion balioa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Ipini emandako balioa graduatutako lerroan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"

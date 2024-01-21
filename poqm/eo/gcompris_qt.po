@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2024-01-17 21:33+0100\n"
+"PO-Revision-Date: 2024-01-20 18:51+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -25811,12 +25811,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Tajpu la kompletan vorton dum ĝi falas, antaŭ ol ĝi atingas la teron."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for Bulgarian, Galician and Kiswahili"
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Tradukoj aldonitaj por la bulgara, la galega kaj la kisvahila"
+msgstr "Tradukoj aldonitaj por la bulgara, la galega kaj la svahila"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
