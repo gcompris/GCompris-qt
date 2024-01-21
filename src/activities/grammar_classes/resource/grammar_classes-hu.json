@@ -1,0 +1,119 @@
+{
+  "levels": [
+    {
+      "objective": "keresd meg a szavakat!",
+      "difficulty": "1",
+      "exercise": "small",
+      "goal": "nou"
+    },
+    {
+      "objective": "Keresd az igéket!",
+      "difficulty": "1",
+      "exercise": "medium",
+      "goal": "vrb"
+    },
+    {
+      "objective": "Keresd meg a névelőket!",
+      "difficulty": "2",
+      "exercise": "medium",
+      "goal": "dtm"
+    },
+    {
+      "objective": "Keresd a mellékneveket!",
+      "difficulty": "3",
+      "exercise": "large",
+      "goal": "adj"
+    },
+    {
+      "objective": "Keresd a határozókat!",
+      "difficulty": "4",
+      "exercise": "large",
+      "goal": "adv"
+    }
+  ],
+  "dataset" : {
+    "small" : [
+      { "sentence": "A virág nagyon szép."
+      , "answer":   "dtm nou adv adj"
+      },
+      { "sentence": "A macska megeszi az egeret."
+      , "answer":   "dtm nou vrb dtm nou"
+      },
+      { "sentence": "(Bimm-bamm)! Szól a csengő."
+      , "answer":   "    itj      vrb dtm      nou"
+      }
+    ],
+    "medium" : [
+      { "sentence": "A vanília krémnek nagyon jó illata van."
+      , "answer":    "dtm adj adv nou adj nou vrb"
+      },
+      { "sentence": "A kollégium ezen szárnya nem látogatható."
+      , "answer":   "dtm nou     dtm nou    nou vrb"
+      },
+      { "sentence": "A macska és a kutya nézik, ahogy a hal úszik."
+      , "answer":   "dtm nou cjt dtm nou  vrb   prn   dtm nou  vrb"
+      },
+      { "sentence": "A szarka ugrál az erkélyen."
+      , "answer":   "dtm nou    vrb  dtm nou"
+      }
+    ],
+    "large" : [
+      { "sentence": "A szüleim minden nap otthonról dolgoznak az irodájukban."
+      , "answer":   "dtm nou    adv  nou    dtm   vrb dtm nou"
+      },
+      { "sentence": "A gyerekek együtt csinálják a házi feladatukat az ebédlőben."
+      , "answer":   "dtm nou      adj vrb dtm  adj nou dtm nou"
+      },
+      { "sentence": "Ezt a táncot tangónak hívják, a nagymama és a nagypapa gyakran táncolják otthon."
+      , "answer":   "nou dtm      nou     nou vrb    dtm   nou  cjt dtm    nou   adv  vrb adv"
+      }
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "nou",
+      "wordClass": "főnév",
+      "image": "1.svg"
+    },
+    {
+      "code": "dtm",
+      "wordClass": "névelő",
+      "image": "2.svg"
+    },
+    {
+      "code": "adj",
+      "wordClass": "melléknév",
+      "image": "3.svg"
+    },
+    {
+      "code": "prn",
+      "wordClass": "névmás",
+      "image": "4.svg"
+    },
+    {
+      "code": "vrb",
+      "wordClass": "ige",
+      "image": "5.svg"
+    },
+    {
+      "code": "adv",
+      "wordClass": "határozó",
+      "image": "6.svg"
+    },
+    {
+      "code": "cjt",
+      "wordClass": "kötőszó",
+      "image": "7.svg"
+    },
+    {
+      "code": "ppt",
+      "wordClass": "előljátószó",
+      "image": "8.svg"
+    },
+    {
+      "code": "itj",
+      "wordClass": "indulatszó",
+      "image": "9.svg"
+    }
+  ]
+}
