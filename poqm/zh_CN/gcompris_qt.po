@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2024-01-13 06:05\n"
+"PO-Revision-Date: 2024-01-21 14:16\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -42,143 +42,92 @@ msgstr "验证答案"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "找出一对数。"
+msgstr ""
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "找出一对数。"
+msgstr ""
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "学习质数"
+msgstr ""
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "比较数字并选择相应的符号。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "找出一对数。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "找出一对数。"
+msgstr ""
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -980,12 +929,9 @@ msgid "Learn multiplication table of 10."
 msgstr "学习10的乘法表。"
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "1 到 10 的乘法表。"
+msgstr ""
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1073,12 +1019,9 @@ msgid "Learn division table of 10."
 msgstr "学习10的除法表。"
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "1 到 10 的乘法表。"
+msgstr ""
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1168,28 +1111,19 @@ msgid "Learn subtraction table of 10."
 msgstr "学习10的减法表。"
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "减法"
+msgstr ""
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "减法"
+msgstr ""
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "减法"
+msgstr ""
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1277,28 +1211,19 @@ msgid "Learn addition table of 10."
 msgstr "学习10的加法表。"
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 10."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "10 的加法表。"
+msgstr ""
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "加法记忆游戏"
+msgstr ""
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Additions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "1, 2, 和 3 的加法。"
+msgstr ""
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3055,13 +2980,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "聪明格"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "解开聪明格谜题"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -4421,22 +4346,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "然后点击确定按钮来验证您的答案。"
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"月球图片版权来自 NASA。太空相关的音效来自 Tuxpaint 和 Vegastrike，并在 GPL 许"
-"可证下发布。交通有关的图片版权来自 Franck Doucet。交通图片的日期由 &lt;"
-"https://www.wikipedia.org&gt; 提供的信息确定。"
+"Moon photo is copyright NASA. The transportation images are copyright Franck "
+"Doucet. Dates of Transportation are based on those found in &lt;https://www."
+"wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4579,20 +4497,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Montgolfier 兄弟的热气球"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader 的蒸汽飞行器"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Paul Cornu 第一次直升机飞行"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4605,12 +4517,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot 的蒸汽汽车"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader 的蒸汽飞行器"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4638,12 +4547,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephenson 的火箭蒸汽机车"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader 的蒸汽飞行器"
+msgstr ""
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4656,20 +4562,14 @@ msgid "Aviation"
 msgstr "飞行"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader 的蒸汽飞行器"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Wright 兄弟的“飞行者3号”"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4692,12 +4592,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh 穿越大西洋"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Boucher 创造 444km/h 的速度记录"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4725,12 +4622,9 @@ msgid "Cars"
 msgstr "汽车"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 雷诺汽车"
+msgstr ""
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -9235,12 +9129,9 @@ msgstr ""
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "学习加法。"
+msgstr ""
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9251,20 +9142,14 @@ msgid ""
 msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "左键和右键：选择一个符号的按钮"
+msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "空格键：选择一个项目"
+msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -9272,12 +9157,9 @@ msgid "Backspace or Delete: remove last token from the frieze"
 msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "回车键：验证您的答案"
+msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -9285,12 +9167,9 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
-msgstr "准备好了"
+msgstr ""
 
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
@@ -13468,12 +13347,10 @@ msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "但是 %1 不是 %2 的倍数。"
+msgstr ""
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
@@ -13654,12 +13531,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "偶数和奇数"
+msgstr ""
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -13670,37 +13544,25 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digital electricity"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "数字电路"
+msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "退格键：删除答案中的最后一个数字"
+msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "数字键：输入你的答案"
+msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "空格或回车：验证您的答案"
+msgstr ""
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -13708,84 +13570,54 @@ msgid "(variable boundaries)"
 msgstr ""
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "找出赤褐色蝴蝶"
+msgstr ""
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 10 and 20."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "介于10和20之间。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Between 20 and 50."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "介于20和50之间。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 1 to 1000000."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "1到1000的数字。"
+msgstr ""
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
@@ -13801,12 +13633,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "了解如何使用日历。"
+msgstr ""
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -13817,12 +13646,9 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "左键和右键：选择一个符号的按钮"
+msgstr ""
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
@@ -13830,28 +13656,19 @@ msgid "Place the given number on the graduated line."
 msgstr ""
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -13864,12 +13681,9 @@ msgid "Graduation to find between 0 and 50."
 msgstr ""
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "猜一个 1 和 %1 之间的数字。"
+msgstr ""
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -13932,12 +13746,9 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "左键和右键：选择一个符号的按钮"
+msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -13949,12 +13760,9 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "退格键：删除答案中的最后一个数字"
+msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
@@ -14182,14 +13990,11 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "加法、乘法、除法和减法练习。"
+msgstr ""
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -14198,12 +14003,9 @@ msgid "Use the four numbers with given operators to find 24."
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside the text"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "方向键：在文本内导航"
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -14216,12 +14018,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "退格键：删除答案中的最后一个数字"
+msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -14244,12 +14043,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "乘法。"
+msgstr ""
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -14257,12 +14053,9 @@ msgid "Solvable with all operators."
 msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "除法。"
+msgstr ""
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15014,12 +14807,9 @@ msgstr "找出五弦琴"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "找出小鼓"
+msgstr ""
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -17954,12 +17744,9 @@ msgid "Copyright: %1"
 msgstr "版权：%1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "难度过滤："
+msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -17967,12 +17754,9 @@ msgid "Language selector"
 msgstr "语言选择器"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "启用自动下载 / 更新声音文件"
+msgstr ""
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -24536,12 +24320,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr ""
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "添加以下语言的翻译：斯洛文尼亚语、德语、加利西亚语。"
+msgstr ""
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -24854,12 +24635,9 @@ msgid ""
 msgstr "此活动使用语言特定的声音文件，在您的系统上还没有安装。"
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "下载需要的声音文件到参数选择对话框。"
+msgstr ""
 
 #: core/core.js:257
 msgctxt "core|"
@@ -24978,16 +24756,7 @@ msgstr ""
 "程度。"
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -24998,10 +24767,6 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"要成为 KDE 团队的成员，您不必是软件开发者。您可以加入翻译程序界面的国家团队。"
-"您可以提供图形、主题、声音和改善文档。一切由您决定！<br /><br />访问 <a href="
-"\"%1\">%1</a> 获取您可以加入的一些项目的信息。<br /><br />如果您需要更多的信"
-"息或文档，请访问 <a href=\"%2\">%2</a>。"
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -25390,14 +25155,11 @@ msgid ""
 msgstr ""
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "您想要下载以下额外材料吗？"
+msgstr ""
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -25435,19 +25197,11 @@ msgid "You are running GCompris for the first time."
 msgstr "您正首次运行 GCompris。"
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"您应该确认您的程序设置尤其是您的语言设置正确，还有安装了特定语言所有的声音文"
-"件。您可以在首选项对话框里做这些。"
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -25478,12 +25232,9 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
-msgstr "取消"
+msgstr ""
 
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
@@ -25509,31 +25260,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Comte de Sivrac 的脚踏车"
-
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Comte de Sivrac 的脚踏车"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1 可被 %2 整除"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "和"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "%1 的倍数包括 %2， "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "和 %1 是 %2 的除数。"
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2024-01-20 15:11+0100\n"
+"PO-Revision-Date: 2024-01-20 15:37+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -14255,7 +14255,7 @@ msgstr "0 eta 1 000 000 artean aurkitu beharreko zenbakia."
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr "Graduatutako lerro bat erabiltzea"
+msgstr "Erabili graduatutako lerro bat"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
