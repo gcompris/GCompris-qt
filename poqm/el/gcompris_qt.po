@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-20 18:42+0200\n"
+"PO-Revision-Date: 2024-01-20 20:56+0200\n"
 "Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -69,7 +69,7 @@ msgstr ""
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Βρες αριθμούς μεταξύ 1και 1."
+msgstr "Βρες αριθμούς μεταξύ 1 και 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
 msgctxt "Data|"
@@ -3219,13 +3219,13 @@ msgid ""
 "of only one cell directly provide the number to enter."
 msgstr ""
 "Επίλεξε έναν αριθμό από τη λίστα και κάνε κλικ στη θέση του πλέγματος που "
-"αντιστοιχεί σε αυτόν. Κάθε αριθμός πρέπει να εμφανίζεται μόνο μία φορά κάθε "
-"σειρά και σε κάθε στήλη. Τα κλουβιά είναι ομάδες κελιών που δίνουν "
-"πληροφορίες για το πώς να τα γεμίσετε. Κλουβιά που περιέχουν περισσότερα από "
-"ένα κελιά δίνουν ένα αποτέλεσμα και μια πράξη: αν κάνουμε την πράξη με "
-"αυτούς τους αριθμούς θα πρέπει να βρίσκουμε το δοσμένο αποτέλεσμα. Κλουβιά "
-"που αποτελούνται μόνο από ένα μόνο κελί δίνουν απευθείας τον αριθμό που "
-"πρέπει να βάλετε."
+"αντιστοιχεί σε αυτόν. Κάθε αριθμός πρέπει να εμφανίζεται μόνο μία φορά σε "
+"κάθε σειρά και σε κάθε στήλη. Οι περιοχές κελιών είναι ομάδες κελιών που "
+"δίνουν πληροφορίες για το πώς να τα γεμίσετε. Περιοχές κελιών που περιέχουν "
+"περισσότερα από ένα κελιά δίνουν ένα αποτέλεσμα και μια πράξη: αν κάνουμε "
+"την πράξη με τους αριθμούς που θα τοποθετήσουμε στα κελιά της περιοχής, θα "
+"πρέπει να βρίσκουμε το δοσμένο αποτέλεσμα. Περιοχές κελιών που έχουν μόνο "
+"από ένα μόνο κελί, δίνουν απευθείας τον αριθμό που πρέπει να βάλετε."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -9943,9 +9943,9 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
-"Ξαναφτιάξε τη διακοσμητική ταινία επάνω. Σε κάποια επίπεδα, ίσως να πρέπει "
-"να την ολοκληρώσεις ή να την ξαναφτιάξεις αφού πρώτα την έχεις "
-"απομνημονεύσει."
+"Χρησιμοποίησε την κενή ταινία για να φτιάξεις αυτή που βλέπεις επάνω. Σε "
+"κάποια επίπεδα, ίσως θα πρέπει να την ολοκληρώσεις ή να την ξαναφτιάξεις, "
+"αφού πρώτα την έχεις απομνημονεύσει."
 
 #: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14402,7 +14402,7 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr "Ανάγνωση αριθμογραμμής."
+msgstr "Ανάγνωση αριθμογραμμής"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
@@ -14513,7 +14513,7 @@ msgstr "Αριθμός που θα πρέπει να βρεθεί μεταξύ 0
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr "Χρήση αριθμογραμμής."
+msgstr "Χρήση αριθμογραμμής"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
@@ -14534,7 +14534,7 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
-"Με τα βελάκια μετακίνησε τον κέρσορα στη θέση της αριθμογραμμή που "
+"Με τα βελάκια μετακίνησε τον κέρσορα στη θέση της αριθμογραμμής που "
 "αντιστοιχεί στη δοσμένη τιμή."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
@@ -14952,7 +14952,7 @@ msgstr "Βελάκια: Πλοήγηση σε αριθμούς και τελεσ
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
 msgstr ""
-"Μπάρα διαστήματος ή Enter: Επιλογή ή αποεπιλογή τρέχουσας τιμής ή τελεστή."
+"Μπάρα διαστήματος ή Enter: Επιλογή ή αποεπιλογή τρέχοντος αριθμού ή πράξης."
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"

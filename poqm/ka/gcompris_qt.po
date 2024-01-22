@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.4\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -40,12 +40,9 @@ msgstr ""
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the jade butterfly"
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "იპოვეთ ნეფრიტის ფერი პეპელა"
+msgstr "იპოვეთ ახლომდებარე რიცხვები"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
@@ -81,60 +78,39 @@ msgid "Find numbers between 0 and 100."
 msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the garnet butterfly"
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "იპოვეთ ძოწისფერი პეპელა"
+msgstr "იპოვეთ შემდეგი რიცხვი."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "იპოვეთ ჟანგისფერი პეპელა"
+msgstr "იპოვეთ წინა რიცხვი."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the wine butterfly"
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "იპოვეთ ღვინისფერი პეპელა"
+msgstr "იპოვეთ შუალედური რიცხვი."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the vermilion butterfly"
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "იპოვეთ მეწამული პეპელა"
+msgstr "იპოვეთ ნაკლული რიცხვები."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the garnet butterfly"
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "იპოვეთ ძოწისფერი პეპელა"
+msgstr "იპოვეთ შემდეგი რიცხვები."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "იპოვეთ ჟანგისფერი პეპელა"
+msgstr "იპოვეთ წინა რიცხვები."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the wine butterfly"
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "იპოვეთ ღვინისფერი პეპელა"
+msgstr "იპოვეთ შუალედური რიცხვები."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -147,12 +123,9 @@ msgid "Find numbers between -10 and 10."
 msgstr ""
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the vermilion butterfly"
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "იპოვეთ მეწამული პეპელა"
+msgstr "იპოვეთ ნაკლული რიცხვები"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -8720,12 +8693,9 @@ msgid "Backspace or Delete: remove last token from the frieze"
 msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეყვანა: გადაამოწმეთ პასუხი"
 
 #: activities/frieze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -8733,9 +8703,6 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "მზად ვარ"
@@ -13119,21 +13086,15 @@ msgid "Backspace: delete the last digit"
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "ციფრები: აკრიფეთ თქვენი პასუხი"
+msgstr "წაშლა: თქვენი პასუხის ჩამოყრა"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეყვანა, გამოტოვება ან ღილაკი Enter: გადაამოწმეთ თქვენი პასუხი"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -13141,12 +13102,9 @@ msgid "(variable boundaries)"
 msgstr ""
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "იპოვეთ ჟანგისფერი პეპელა"
+msgstr "იპოვეთ მოთხოვნილი რიცხვი."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
 msgctxt "Data|"

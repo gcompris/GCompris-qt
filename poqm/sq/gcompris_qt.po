@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-12-11 18:39+0200\n"
+"PO-Revision-Date: 2024-01-20 20:30+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -45,143 +45,92 @@ msgstr "Vlerësoi përgjigjet"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat ngjitur"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat ngjitur që mungojnë."
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Mësoni rreth numrave të thjeshtë."
+msgstr "Mësoni të renditni numra."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Krahasoni numrat dhe zgjidhni shenjën përgjegjëse."
+msgstr "Gjeni numrat e kërkuar dhe tërhiqini te vendi përkatës."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Gjeni numra mes 1 dhe 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Gjeni numra mes 0 dhe 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Gjeni numra mes 0 dhe 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrin pasues."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrin e mëparshëm."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat mes tyre."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat që mungojnë."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat pasues."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat e mëparshëm."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat në mes."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Gjeni numra mes -10 dhe -1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Gjeni numra mes -10 dhe 10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Gjejini të dy numrat."
+msgstr "Gjeni numrat që mungojnë"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -987,12 +936,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Mësoni tabelën e shumëzimeve me 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Tabela shumëzimi nga 1 deri në 10."
+msgstr "Praktikoni tabela shumëzimi nga 1 deri në 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1082,12 +1028,9 @@ msgid "Learn division table of 10."
 msgstr "Mësoni tabelën e pjesëtimeve me 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Tabela shumëzimi nga 1 deri në 10."
+msgstr "Praktikoni tabela pjesëtimi 1 deri në 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1181,28 +1124,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Mësoni tabelën e zbritjeve të 10-s."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Bëni zbritje numrash dhjetorë deri në 1."
+msgstr "Zbritje nga numra deri në 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Bëni zbritje numrash dhjetorë deri në 1."
+msgstr "Zbritje nga numra deri në 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Bëni zbritje numrash dhjetorë deri në 1."
+msgstr "Zbritje nga numra deri në 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1293,28 +1227,19 @@ msgid "Learn addition table of 10."
 msgstr "Mësoni tabelën e mbledhjeve të 10-s."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Shtoni numra dhjetorë deri në 1."
+msgstr "Mbledhje me numra deri në 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Shtoni numra dhjetorë deri në 1."
+msgstr "Mbledhje me numra deri në 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Shtoni deri në 10 yje."
+msgstr "Mbledhje me numra deri në 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1629,14 +1554,11 @@ msgid "The electric simulation engine is from edX: "
 msgstr "Mekanizmi i simulimit elektrik është prej edX: "
 
 #: activities/analog_electricity/cktsim.js:138
-#, fuzzy
 msgctxt "cktsim|"
 msgid ""
 "Warning! Circuit has a voltage source loop or a source shorted by a wire, "
 "please remove the wire causing the short."
 msgstr ""
-"Kujdes! Qarku ka një qerthull burimi voltazhi ose një tel në qark të "
-"shkurtër, ju lutemi, hiqeni burimin ose telin që shkakton qarkun e shkurtër."
 
 #: activities/analog_electricity/cktsim.js:139
 msgctxt "cktsim|"
@@ -1864,46 +1786,33 @@ msgstr ""
 "krijohet një qark i shkurtër (i quajtur edhe “në të shkurtër”)."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
-#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "If both terminals of some batteries are directly connected together or they "
 "are shorted, then those batteries create a voltage source loop and they "
 "cannot act as a voltage source for the circuit."
 msgstr ""
-"Nëse të dy polet e ca baterive lidhen drejtpërsëdrejti tok, ose në qark të "
-"shkurtër, atëherë këto bateri japin një qerthull burimi voltazhi dhe s’mund "
-"të luajnë rolin e një burimi voltazhi për qarkun."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
-#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "For example, if two terminals of one battery are directly connected "
 "together, it creates a voltage source loop."
 msgstr ""
-"Për shembull, nëse dy pole të një baterie lidhen drejtpërdrejt me njëri-"
-"tjetrin, krijohet një qerthull burimi voltazhi."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
-#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "Or, if two batteries are forming a closed circuit together, it creates a "
 "voltage source loop."
 msgstr ""
-"Ose, nëse dy bateri formojnë tok një qark të mbyllur, krijohet një qerthull "
-"burimi voltazhi."
 
 #: activities/analog_electricity/TutorialDataset.qml:120
-#, fuzzy
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a voltage source loop with the provided batteries. Then click on the "
 "warning box to make it disappear and click on the OK button."
 msgstr ""
-"Krijoni me bateritë e dhëna një qerthull burimi voltazhi. Mandej klikoni mbi "
-"kuadratin e sinjalizimit, për ta bërë të zhduket dhe klikoni butonin OK."
 
 #: activities/analog_electricity/TutorialDataset.qml:133
 msgctxt "TutorialDataset|"
@@ -3234,13 +3143,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Zgjidhni Calcudoku-n."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3249,15 +3158,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Zhvilloni aftësitë tuaja për arsyetim logjik: lidhje të dhënash, deduktim "
+"dhe vendndodhje hapësinore, kur përdoret njehsimi."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Plotësimi i puzzle-it lyp durim dhe aftësi logjike."
+msgstr "Plotësimi i puzzle-it lyp durim dhe aftësi në aritmetikë."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3270,51 +3178,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Përzgjidhni një numër te lista dhe klikoni pozicionin e synuar për të, që të "
+"plotësoni rrjetën. Çdo numër duhet të shfaqet vetëm një herë në një rresht "
+"dhe shtyllë. Kafazet janë grupe kutish që ofrojnë informacion si të "
+"plotësohen. Kafazet e krijuar me më tepër se një kuti, ofrojnë një përfundim "
+"dhe një veprim: krejt numrat te kafazi, kur kombinohen duke përdorur "
+"veprimin, duhet të prodhojnë përfundimin. Kafazet e krijuar vetëm nga një "
+"kuti ofrojnë drejtpërdrejt numrin që duhet dhënë."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Rrjeta të vogla."
+msgstr "Rrjeta të vogla me veprimin +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Rrjeta të vogla."
+msgstr "Rrjeta të vogla me veprimet + dhe − ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Rrjeta të vogla."
+msgstr "Rrjeta të vogla me veprimet +, − dhe ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Rrjeta të vogla."
+msgstr "Rrjeta mesatare me veprimet +, − dhe ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Rrjeta të vogla."
+msgstr "Rrjeta të mëdha me veprimet +, − dhe ×."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4866,12 +4766,12 @@ msgstr "Vendoseni çdo objekt te data kur u shpik."
 #: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "18929 Lokomotiva Me Avull e Stefensonit"
+msgstr "1829, Lokomotiva Me Avull e Stefensonit"
 
 #: activities/chronos/resource/board/board5_0.qml:41
 msgctxt "board5_0|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 Karroja e Kunjosë"
+msgstr "1769, Karroja e Kunjosë"
 
 #: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
@@ -4886,23 +4786,17 @@ msgstr "Transport"
 #: activities/chronos/resource/board/board5_1.qml:39
 msgctxt "board5_1|"
 msgid "1783 Montgolfier brothers' hot air balloon"
-msgstr "1783 Balloni me ajër të nxehtë i vëllezërve Montgolfier"
+msgstr "1783, Balloni me ajër të nxehtë i vëllezërve Montgolfier"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoli i Klement Aderit"
+msgstr "1890, Eoli i Klement Aderit"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Fluturimi i parë me helikopter nga Pol Korny"
+msgstr "1906, Fluturimi i parë me helikopter nga Pol Korny"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4912,15 +4806,12 @@ msgstr "Transport"
 #: activities/chronos/resource/board/board5_2.qml:32
 msgctxt "board5_2|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 Karroja e Kunjosë"
+msgstr "1769, Karroja e Kunjosë"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoli i Klement Aderit"
+msgstr "1890, Eoli i Klement Aderit"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4930,12 +4821,12 @@ msgstr "Transport"
 #: activities/chronos/resource/board/board5_3.qml:32
 msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
-msgstr "1783 Balloni me ajër të nxehtë i vëllezërve Montgolfier"
+msgstr "1783, Balloni me ajër të nxehtë i vëllezërve Montgolfier"
 
 #: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "18929 Lokomotiva Me Avull e Stefensonit"
+msgstr "1829, Lokomotiva Me Avull e Stefensonit"
 
 #: activities/chronos/resource/board/board5_4.qml:15
 msgctxt "board5_4|"
@@ -4945,20 +4836,17 @@ msgstr "Transport"
 #: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "18929 Lokomotiva Me Avull e Stefensonit"
+msgstr "18929, Lokomotiva Me Avull e Stefensonit"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoli i Klement Aderit"
+msgstr "1890, Eoli i Klement Aderit"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 Karroja e Kunjosë"
+msgstr "1769, Karroja e Kunjosë"
 
 #: activities/chronos/resource/board/board6_0.qml:16
 msgctxt "board6_0|"
@@ -4966,25 +4854,19 @@ msgid "Aviation"
 msgstr "Aviacion"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoli i Klement Aderit"
+msgstr "1890, Eoli i Klement Aderit"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Fluturuesi III i vëllezërve Rajt"
+msgstr "1905, Fluturuesi III i vëllezërve Rajt"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "1909 Lui Blerioi kalon Kanalin Anglez"
+msgstr "1909, Lui Blerioi kalon Kanalin Anglez"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -4994,20 +4876,17 @@ msgstr "Aviacion"
 #: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
 msgid "1947 Chuck Yeager breaks the sound-barrier"
-msgstr "1947 Çuk Jegër kalon murin zanor"
+msgstr "1947, Çuk Jegër kalon murin zanor"
 
 #: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
-msgstr "1927 Çarls Lindberg kalon Oqeanin Atlantik"
+msgstr "1927, Çarls Lindberg kalon Oqeanin Atlantik"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Rekordi i shpejtësisë 444km/h nga Helen Busher"
+msgstr "1934, Rekordi i shpejtësisë 445km/h nga Helen Busher"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5017,17 +4896,17 @@ msgstr "Makina"
 #: activities/chronos/resource/board/board6_2.qml:39
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
-msgstr "1878 Mansakja e Amédée Bollée-së"
+msgstr "1878, Mansakja e Amédée Bollée-së"
 
 #: activities/chronos/resource/board/board6_2.qml:47
 msgctxt "board6_2|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 Karroja e Kunjosë"
+msgstr "1769, Karroja e Kunjosë"
 
 #: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
-msgstr "1885 Makina e parë me benzinë nga Benci"
+msgstr "1885, Makina e parë me benzinë nga Benci"
 
 #: activities/chronos/resource/board/board6_3.qml:15
 msgctxt "board6_3|"
@@ -5035,22 +4914,19 @@ msgid "Cars"
 msgstr "Makina"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Veturka e Renosë"
+msgstr "1898, Veturka e Renault-së"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
 msgid "1923 Lancia Lambda"
-msgstr "1923 Lancia Lambda"
+msgstr "1923, Lancia Lambda"
 
 #: activities/chronos/resource/board/board6_3.qml:55
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
-msgstr "1955 Citroën DS 19"
+msgstr "1955, Citroën DS 19"
 
 #: activities/click_on_letter/ActivityConfig.qml:35
 #: activities/click_on_letter_up/ActivityConfig.qml:35
@@ -9854,25 +9730,19 @@ msgstr "Gjeni numëruesin dhe emërtuesin (me një katror)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Bordurë"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Riprodhoni kullën e dhënë."
+msgstr "Riprodhoni dhe plotësoni bordurin."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Mësoni mbledhje."
+msgstr "Mësoni algoritme."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9881,52 +9751,37 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Riprodhoni bordurën e sipërme. Në disa nivele, mund t’ju duhet të plotësoni "
+"bordurën, ose ta riprodhoni, pasi ta mbani mend."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Tastet shigjetë Majtas dhe Djathtas: përzgjidhni një buton simboli"
+msgstr "Tastet shigjetë Majtas dhe Djathtas: përzgjidhni një element"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Tasti Space: përzgjidhni një element"
+msgstr "Tasti Space: shtoje te bordura copën e përzgjedhur"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Tasti Backspace ose Delete: zhbëjeni"
+msgstr "Tasti Backspace ose Delete: hiqni prej bordurës copën e fundit"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "Tasti Enter: shihni vlefshmërinë e përgjigjes tuaj"
+msgstr "Tasti Enter: shihni vlefshmërinë e përgjigjes"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
-"Tasti hapësirë: kaloni nga mënyra e padukshme në të dukshmen, ose anasjelltas"
+"Tasti Tab: kaloni nga mënyra përpunim bordurash në parje modeli, ose "
+"anasjelltas"
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jam Gati"
@@ -9934,7 +9789,7 @@ msgstr "Jam Gati"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopjoni këtë bordurë: 2 forma me ngjyra/shenja të ndryshme."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9942,7 +9797,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Kopjoni këtë bordurë."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9950,6 +9805,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Mbani mend dhe kopjoni këtë bordurë: çfarëdo ndërthurje formash, ngjyrash/"
+"shenjash dhe madhësish."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9957,7 +9814,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Mbani mend dhe kopjoni këtë bordurë."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9965,11 +9822,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Kopjoni dhe plotësoni këtë bordurë: rregullsi mes 4 dhe 7, çfarëdo "
+"ndërthurje formash, ngjyrash/shenjash dhe madhësish."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Kopjoni dhe plotësoni këtë bordurë"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9977,6 +9836,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Mbani mend dhe kopjoni këtë bordurë: rregullsi mes 4 dhe 7, çfarëdo "
+"ndërthurje formash, ngjyrash/shenjash dhe madhësish."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9984,6 +9845,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Kopjoni dhe plotësoni këtë bordurë: rregullsi mes 6 dhe 8, çfarëdo "
+"ndërthurje formash, ngjyrash/shenjash dhe madhësish."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9992,7 +9855,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Kopjoni dhe plotësoni këtë bordurë."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -10000,21 +9863,25 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Mbani mend dhe kopjoni këtë bordurë: rregullsi mes 6 dhe 8, çfarëdo "
+"ndërthurje formash, ngjyrash/shenjash dhe madhësish."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Kopjoni dhe plotësoni këtë bordurë: 2 forma me ngjyra/shenja të ndryshme."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Mbani mend dhe kopjoni këtë bordurë: 2 forma me ngjyra/shenja të ndryshme."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopjoni këtë bordurë: 3 ose 4 forma me ngjyra/shenja të ndryshme."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -10022,6 +9889,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Kopjoni këtë bordurë: rregullsi mes 4 dhe 7, çfarëdo ndërthurje formash, "
+"ngjyrash/shenjash dhe madhësish."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -10029,11 +9898,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Kopjoni dhe plotësoni këtë bordurë: 3 ose 4 forma, me 2 madhësi dhe "
+"mundësisht të njëjtat ngjyrash/shenja."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Kopjoni këtë bordurë: çfarëdo ndërthurje formash, ngjyrash/shenjash dhe "
+"madhësish."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -10042,6 +9915,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Kopjoni dhe plotësoni këtë bordurë: çfarëdo ndërthurje formash, ngjyrash/"
+"shenjash dhe madhësish."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -14115,23 +13990,21 @@ msgstr "1 s’është numër i thjeshtë."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 është një numër jo i thjeshtë, pjesëtuesit e tij janë: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "por %1 s’është shumëfish i %2."
+msgstr "Shumëfisha të %1 përfshijnë %2, ose %3, por %4 s’është shumëfish i %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "Pjesëtuesit e %1 janë: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14315,32 +14188,26 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Lexoni një vijë të shkallëzuar"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Lexoni vlera në një vijë të shkallëzuar."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Mësoni ciklin ujor."
+msgstr "Mësoni si të lexoni një vijë të shkallëzuar."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Numra çift dhe tek"
+msgstr "Lexim dhe renditje numrash."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14349,145 +14216,103 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"Përdorni pjesën numerike të tastierës, ose vetë tastierën për të dhënë "
+"vlerën përkatëse te vendi i duhur në vijën e shkallëzuar."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Shifra: jepni një numër"
+msgstr "Shifra: jepni shifra"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Tasti Backspace: fshini shifrën e fundit në përgjigjen tuaj"
+msgstr "Tasti Backspace: fshini shifrën e fundit"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Shifra: shtypni përgjigjen tuaj"
+msgstr "Tasti Delete: zeroni përgjigjen tuaj"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "Tasti Hapësirë ose Enter: shihni vlefshmërinë e përgjigjes tuaj"
+msgstr ""
+"Tasti Hapësirë, Return ose Enter: shihni vlefshmërinë e përgjigjes tuaj"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(kufij ndryshoreje)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Gjeni fluturën ngjyrë ndryshku"
+msgstr "Gjeni numrin e kërkuar."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 1 dhe 5."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 1 dhe 7."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 1 dhe 10."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 0 dhe 20."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 0 dhe 50."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 0 dhe 100."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 0 dhe 1000."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 0 dhe 10000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Numra mes %1 dhe %2."
+msgstr "Numra për t’u gjetur mes 0 dhe 1000000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Përdorni një vijë të shkallëzuar"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Vendosni vlera te një vijë e shkallëzuar."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Mësoni si të përdorni një kalendar."
+msgstr "Mësoni si të përdorni një vijë të shkallëzuar."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14496,108 +14321,89 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"Përdorni tastet shigjetë për të lëvizur kursorin te pozicioni që i përket "
+"vlerës së dhënë te vija e shkallëzuar."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Tastet shigjetë Majtas dhe Djathtas: lëvizni anijen kozmike"
+msgstr "Tastet shigjetë Majtas dhe Djathtas: lëvizni kursorin"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Vendosni numrin e dhënë te vija e shkallëzuar."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "Rend rritës, 5 numra të përcaktuar, mes 1 dhe 5."
+msgstr "Shkallëzim për t’u gjetur mes 1 dhe 5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Hamendësoni një numër mes 1-shit dhe %1."
+msgstr "Shkallëzim për t’u gjetur mes 1 dhe 7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Hamendësoni një numër mes 1-shit dhe %1."
+msgstr "Shkallëzim për t’u gjetur mes 1 dhe 10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Përfundim mes 20 dhe 29."
+msgstr "Shkallëzim për t’u gjetur mes 0 dhe 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Përfundim mes 30 dhe 50."
+msgstr "Shkallëzim për t’u gjetur mes 0 dhe 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Përfundim mes 30 dhe 50."
+msgstr "Shkallëzim për t’u gjetur mes 0 dhe 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "Shkallëzim për t’u gjetur mes 0 dhe 1000."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "Shkallëzim për t’u gjetur mes 0 dhe 10000."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "Shkallëzim për t’u gjetur mes 0 dhe 1000000."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analizë gramatikore"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Identifikoni klasa gramatikore te togfjalëshat e dhënë."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Mësoni të identifikoni klasa gramatikore."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Caktojuni klasat gramatikore të domosdoshme fjalëve korresponduese."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14605,26 +14411,28 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Përzgjidhni nga listë një klasë gramatikore, mandej përzgjidhni kutizën nën "
+"fjalën dhe caktojini klasën."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Nëse s’ka përkime, lëreni kutinë të zbrazët."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
+"Tastet shigjetë sipër dhe poshtë, ose ai Tab: kaloni nga klasa në fjalë dhe "
+"anasjelltas"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Tastet shigjetë Majtas dhe Djathtas: lëvizni majtas dhe djathtas"
+msgstr ""
+"Tastet shigjetë Majtas dhe Djathtas: përzgjidhni objekte te klasa ose fjalë"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14633,31 +14441,30 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Tasti Hapësirë: caktojini fjalës së përzgjedhur klasën e përzgjedhur dhe "
+"mandej përzgjidhni fjalën pasuese"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Tasti Backspace: fshini shifrën e fundit në përgjigjen tuaj"
+msgstr "Tasti Backspace: përzgjidhni fjalën e mëparshme"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analizë gramatikore"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Mësoni të identifikoni klasa gramatikore."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "Gjeni krejt fjalët që përkojnë me klasat gramatikore të domosdoshme."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14665,21 +14472,23 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Përzgjidhni klasën gramatikore nga lista, mandej përzgjidhni kutizën nën një "
+"fjalë dhe caktojini klasën."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Nëse s’ka përkime, lëreni kutinë të zbrazët."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Klasa gramatikore"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "Gjeni krejt fjalët që i përkojnë klasës së caktuar gramatikore."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14687,28 +14496,30 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Përzgjidhni prej listës klasën gramatikore, mandej përzgjidhni kutizën në "
+"një fjalë dhe caktojini klasën."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Nëse klasa s’përkon, lëreni kutinë të zbrazët."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr ""
+msgstr "I zbrazët"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Klasa gramatikore"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "Caktojuni klasat gramatikore të domosdoshme fjalëve korresponduese."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14716,11 +14527,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Përzgjidhni prej listës klasën gramatikore, mandej përzgjidhni kutizën në "
+"një fjalë dhe caktojini klasën."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Nëse klasa nuk përkon, lëreni kutinë të zbrazët."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14882,112 +14695,92 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Guess 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Njehsojeni që të japë 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Ushtrohuni në përllogaritje algjebrike me katër veprime."
+msgstr "Mësoni të njehsoni duke përdorur katër veprimet."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Ushtrohuni në mbledhje, zbritje, shumëzim dhe pjesëtim."
+msgstr ""
+"Të jini në gjendje të njehsoni duke përdorur mbledhje, zbritje, shumëzime "
+"dhe pjesëtime."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Përdorni katër numrat me veprimet e dhëna për të prodhuar 24."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Tastet shigjetë: lëvizni brenda një zone"
+msgstr "Tastet shigjetë: lëvizni brenda numrave dhe veprimeve"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Tastet Space ose Enter: përzgjidhni ose vendosni një objekt"
+msgstr ""
+"Tastet Space, Return ose Enter: përzgjidhni ose shpërzgjidhni vlerën ose "
+"veprimin e çastit"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Taste veprimesh (+, -, *, /): përzgjidhni veprimin"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Tasti Backspace ose Delete: zhbëjeni"
+msgstr "Tasti Backspace: ose Delete: anuloni veprimin e fundit"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Tasti Tab: kaloni nga numrat te veprimet, ose anasjelltas"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Përdorni katër numrat me veprimet e dhëna për të prodhuar 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "E zgjidhshme me + and -."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "E zgjidhshme me +, - dhe ×."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Shumëzime."
+msgstr "Lypset shumëzim."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Rrjeta të vogla."
+msgstr "I zgjidhshëm me krejt veprimet."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Pjesëtime."
+msgstr "Lypset pjesëtim."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15773,12 +15566,9 @@ msgstr "Gjeni banxhon"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Gjeni bongon"
+msgstr "Gjeni bongot"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -18981,12 +18771,9 @@ msgid "Copyright: %1"
 msgstr "Të drejta kopjimi: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtër vështirësie:"
+msgstr "Filtër vështirësie"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18994,12 +18781,9 @@ msgid "Language selector"
 msgstr "Përzgjedhës gjuhe"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Aktivizo shkarkime/përditësime të automatizuara të kartelave zanore"
+msgstr "Aktivizo shkarkime/përditësime të automatizuara të burimeve të jashtme"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -20049,7 +19833,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Theksim i pikës pasuese"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -25620,18 +25404,13 @@ msgstr "Plotësimi i puzzle-it lyp durim dhe aftësi logjike."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Përzgjidhni një numër ose simbol në të majtë dhe klikoni mbi pozicionin e "
-"synuar për të. GCompris s’do t’ju lejojë të jepni përgjigje të gabuar."
+"Përzgjidhni te lista një numër ose simbol dhe klikoni mbi pozicionin e "
+"synuar për të. GCompris-ja s’do t’ju lejojë të jepni përgjigje të gabuar."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26254,12 +26033,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Shtypni fjalën e plotë, teksa ajo bie, përpara se të mbërrijë përdhe."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "U shtuan përkthime për: sllovenisht, gjermanisht, galiciase."
+msgstr "U shtuan përkthime për bullgarisht, galicisht dhe suahili"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -26281,18 +26057,14 @@ msgid "Many bug fixes"
 msgstr "Mjaft ndreqje të metash"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"Mundësi e re rreshti urdhrash (--difficulty {value|min-max}) për ta nisur "
-"GCompris-në nën një nivel të caktuar vështirësie"
+"Mundësi e re rreshti urdhrash, për ta nisur një veprimtari me një nivel të "
+"caktuar vështirësie (--start-level level, për t’u përdorur me --launch "
+"veprimtari)"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -26420,14 +26192,11 @@ msgstr ""
 "programimit dhe bërje të përkthyeshme të figurave të përkujdesores"
 
 #: core/ChangeLog.qml:93
-#, fuzzy
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
-"Shtimi i një niveli për dhënien mësim të qerthullit të burimit të voltazhit, "
-"te veprimtaria e elektricitetit analog"
 
 #: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
@@ -26614,14 +26383,10 @@ msgstr ""
 "në sistemin tuaj."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Për të shkarkuar kartelat e nevojshme zanore, kaloni te dialogu i "
-"parapëlqimeve."
+"Për të shkarkuar kartelat e nevojshme zanore, kaloni te dialogu Formësim."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26750,16 +26515,7 @@ msgstr ""
 "ajo çka doni. Sigurohuni se si rëndësi zgjidhni “Wishlist”."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26770,11 +26526,19 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
+"You do not have to be a software developer to be a member of the KDE team. "
+"You can join the language teams that translate program interfaces. You can "
+"provide graphics, themes, sounds, and improved documentation. You decide!"
+"<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
+"which you can participate.<br /><br />If you need more information or "
+"documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
+"what you need.\n"
+"\n"
 "S’duhet doemos të jeni zhvillues software-i, që të jeni një anëtar i ekipit "
-"KDE. Mund të bëheni pjesë e ekipeve kombëtare që përkthejnë ndërfaqe "
-"programesh. Mund të furnizoni art grafik, tema, tinguj dhe dokumentim të "
-"përmirësuar. Vendoseni vetë!<br />Për informacion mbi disa projekte në të "
-"cilët mund të merrni pjesë, <br />vizitoni <a href=\"%1\">%1</a>.<br /><br /"
+"KDE. Mund të bëheni pjesë e ekipeve të gjuhëve, që përkthejnë ndërfaqe "
+"programesh. Mund të sillni art grafik, tema, tinguj dhe dokumentim të "
+"përmirësuar. Vendoseni vetë!<br /><br />Për informacion mbi disa projekte te "
+"të cilët mund të merrni pjesë, vizitoni <a href=\"%1\">%1</a>.<br /><br /"
 ">Nëse ju duhet më tepër informacion ose dokumentim, atëherë një vizitë te <a "
 "href=\"%2\">%2</a> do t’ju japë ç’ju duhet."
 
@@ -26987,13 +26751,13 @@ msgstr "Checksum-i i kartelës së shkarkuar nuk përputhet: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "S’u gjetën zëra për %1."
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "S’u gjetën të dhëna për %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -27172,16 +26936,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Përcaktoni se në cilin nivel të niset veprimtaria. E përdorur vetëm kur "
+"përdoret mundësia --launch."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Doni të shkarkohen burimet vijuese të jashtme?"
+msgstr ""
+"Doni të shkarkohen, apo përditësohen vetvetiu burimet vijuese të jashtme, "
+"kur niset GCompris-ja?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -27219,20 +26984,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Po xhironi GCompris-in për herë të parë."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Duhet të verifikoni se rregullimet tuaja për aplikacionin, veçanërisht ato "
-"të gjuhës, janë ujdisur saktë dhe se janë instaluar krejt kartelat zanore "
-"specifike të gjuhës. Këtë mund ta bëni te Dialogu i Parapëlqimeve."
+"të gjuhës, janë ujdisur saktë. Këtë mund ta bëni te Dialogu i Parapëlqimeve."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -27256,16 +27014,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Disa nga veprimtaritë kanë grupe të reja të dhëash. Doni që përzgjedhja për "
+"grupin e tyre të të dhënave të rikthehet te parazgjedhja?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Zbatoji"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Anulojeni"

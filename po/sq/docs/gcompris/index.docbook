@@ -1,0 +1,663 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Albanian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>Doracaku i Administrimit të &gcompris;</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>Ekipi i &gcompris;-së</othername>
+<contrib
+>Zhvillues</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><surname
+>Besnik Bleta</surname
+><affiliation
+><address
+><email
+>besnik@programeshqip.org</email
+></address
+></affiliation
+><contrib
+>Përkthyes</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>06.06.2023</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>3.3</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; është një program edukativ me shumë veprimtari. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>arsim</keyword>
+<keyword
+>fëmijë</keyword>
+<keyword
+>lojëra</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Doracak Administrimi</title>
+
+<sect1 id="introduction">
+<title
+>Hyrje</title>
+<para
+>&gcompris; është një suitë e pasur programesh edukative, e cila përmban një gamë të gjerë veprimtarish.</para>
+<para
+>Ofron veprimtari të larmishme të mbulojnë një sërë fushash. Në temat përfshihen lexim dhe shtypje në tastierë, aritmetikë, gjeografi, shkenca dhe tema të tjera. Është menduar të përdoret si në shtëpi, ashtu edhe në shkollë.</para>
+<para
+>Qëllimi i &gcompris;-së është të ofrojë veprimtari lojcake, por gjithmonë edukative.</para>
+<para
+>&gcompris;-ja është pjesë e projektit &kde; dhe vendosur nën <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>licencën AGPLv3e</ulink
+>. Krejt kodi, hiq mekanizmin për veprimtarinë e elektricitetit analog, gjendet nën <ulink url="https://www.gnu.org/licenses/gpl.html"
+>licencën GPLv3</ulink
+>.</para>
+<para
+>&gcompris; is available on the following operating systems: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. It requires a 3D card with support of <emphasis
+>OpenGL 2.1</emphasis
+> or higher. 32 bits color depth mandatory.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Instalim</title>
+<para
+>Software-i jepet në disa forma. Ndiqni procesin, sipas rastit tuaj. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: përdorni paketat e dhënë nga shpërndarja juaj &GNU;/&Linux;. Nëse &gcompris;-ja s’është e paketuar në shpërndarjen tuaj &Linux; ju lutemi, lidhuni me ta dhe kërkojuni ta përfshijnë &gcompris;-në në shpërndarjen tuaj &Linux;.</para
+></listitem>
+<listitem
+><para
+>&Windows;: dhënë përmes një instaluesi klasik për &Windows;, ose përmes Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX: dhënë përmes një instaluesi klasik.</para
+></listitem>
+<listitem
+><para
+>Android: shpërndarë përmes shitore F-Droid, ose Google Play Store. Mund të kihet edhe si kartelë apk.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Ndërfaqja e përdoruesit</title>
+<para
+>Ndërfaqja është hartuar për përdorim të kollajtë nga fëmijë të vegjël. &gcompris;-ja kontrollohet me një mi. Për shumicën e veprimtarive ka edhe lëvizje përmes tastierës.</para>
+
+<sect2 id="main-window">
+<title
+>Dritarja kryesore</title>
+<para
+>Kur nisni programin, &gcompris;-ja shfaq një ndërfaqe grafike e cila paraqet listën e veprimtarive, me një panel kontrollesh poshtë në fund.</para>
+<screenshot>
+<screeninfo
+>Ja një foto ekrani e Dritares Kryesore të &gcompris;-së</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Dritarja kryesore e &gcompris;-së</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Çdo ikonë përfaqëson një veprimtari. Përreth secilës do të gjeni ikona të vogla të cilat japin informacion shtesë mbi veprimtarinë. Një klikim i thjeshtë mbi ikonën do t’ju shpjerë te një veprimtari, ose te një menu veprimtarish. Ka 8 ndarje (kategori) veprimtarish, të cilat vendosen në krye, ose majtas (vetëm nëse orientimi juaj i ekranit është portret). Për shembull, ka një ndarje “Lojëra me fushë”, e cila përfshin lojëra që duan një fushë, b.f., shah, tik-tak, ose katërsh.</para>
+<para
+>Disa kategori përmbajnë nënkategori, për të filtruar më mirë veprimtaritë. Për veprimtari matematikore, kemi tre nënkategori: numërim, aritmetikë dhe matje.</para>
+<para
+>Yjet tregojnë grupmoshën për të cilën është hartuar secila lojë:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 ose 3 yje të verdhë - për 2 deri 6 vjeç.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 ose 3 yje të kuq - më të mëdhenj se 6 vjeç.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Poshtë, në fund të ekranit, ka një panel kontrolli për &gcompris;-në. Ikonat e mundshme janë (ikonat shfaqen vetëm nëse janë të përdorshme në atë veprimtari):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Shtëpi - Braktiset veprimtaria e çastit, kthehet te menuja e mëparshme.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> “OK” - Shihni vlefshmërinë e përgjigjes tuaj, ripohojeni atë. Disa veprimtari nuk e pikasin automatikisht nëse fëmija e ka plotësuar apo jo një hap. Në rast të tilla, duhet të klikoni mbi këtë ikonë. Mundeni edhe të përdorni tastin &Enter; në tastierën tuaj.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Dritë - Shfaqni një ndihmëz për veprimtarinë. Mund të ndihmoni fëmijët në disa veprimtari, për t’i drejtuar të gjejnë përgjigjet.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Shigjeta - Shfaqet niveli i tanishëm. Klikoni mbi një nga shigjetat për të përzgjedhur një shkallë tjetër. Në përgjithësi, veprimtaritë ofrojnë disa nivele, numri i të cilave varet nga veprimtaria. Në &gcompris;, është e mundur të kalohet në nivelin pasues pa qenë plotësuar niveli i çastit.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Buzët - Kërkojini &gcompris;-së të përsëritë pyetjen.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Pikëpyetje - Shfaqni kuadratin e dialogut të ndihmës. Ndonjëherë, një veprimtari mund të jetë shumë e ndërlikuar për t’u përshkruar thjeshtë te fusha e përshkrimit. Në këtë rast, ky funksion jep mundësi për informacion shtesë.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Panel - Menu formësimesh. Formësimi ruhet te depoja (dosja) e përdoruesit, nën emrin <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>. Kjo është një kartelë tekst, e cila mund të përpunohet dorazi.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Zë liste - Shfaqni menunë e rregullimeve për veprimtarinë. Këtu ka dy skeda të mundshme. Njëra, “Grup të dhënash”, lejon të zgjidhen nivelet e veprimtarive, në varësi të disa objektivave dhe, e dyta, “Mundësi” lejon të përditësohet formësimi i veprimtarisë, kur mundet. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> “G” e madhe -Kuadrat informacionesh mbi &gcompris;, paraqet kontribuesit kryesorë dhe versionin e software-it.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Ndezje - Mbyllni &gcompris;-në. Mundeni edhe të përdorni te tastiera juaj shkurtoren <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Mënyra Kioskë</title>
+<para
+>Kur përdorni &gcompris;-në me fëmijë të vegjël, ose në një kioskë vetëshërbim, mund të çaktivizoni një numër mundësish:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : çaktivizoni butonat <guiicon
+>Mbylle</guiicon
+> dhe <guiicon
+>Formësim</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : aktivizoni butonat <guiicon
+>Mbylle</guiicon
+> dhe <guiicon
+>Formësim</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> : xhirojeni &gcompris;-në nën mënyrën “Sa tërë ekrani”</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+> : çaktivizoni kursorin (mënyra “ekran me prekje”)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Sigurisht që këto mundësi mund të ndërthuren.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Shkurtore Tastiere</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Shkurtore</entry>
+<entry
+>Veprim</entry>
+</row>
+<row>
+<entry
+>&Esc; ose <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Dilni nga veprimtaria, ose dialogu i çastit, mandej kthehuni te menuja kryesore.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Mbylleni &gcompris;-në pa sinjalizim të mëtejshëm.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Kalo në/dil nga mënyra “sa krejt ekrani”.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Hapni/mbyllni zërin.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Shfaqni ose Fshihni shtyllën e kontrollit.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Shënime mbi Ndërkombëtarizime</title>
+<para
+>&gcompris;-ja është e ndërkombëtarizuar dhe gati në më tepër se 35 gjuhë. Nëse doni të shihni a është gati në gjuhën tuaj, mund të nisni &gcompris;-në dhe të përzgjidhni gjuhën tuaj te mundësia e formësimit.</para>
+<para
+>Kini kujdes, disa gjuhëve u duhen shkronja të caktuara, për t’u shfaqur saktë. </para
+> 
+<para
+>Nëse gjuha juaj nuk mbulohet, mund të jepni ndihmesë te software-i dhe të shtoni përkthimin në gjuhën tuaj. Nëse interesoheni, mund të lidheni me <ulink url="https://l10n.kde.org/teams"
+>ekipin e përkthimeve</ulink
+> të projektit &kde; për gjuhën tuaj. Shkallën e përkthimit për gjuhën tuaj mund ta shihni te <ulink url="https://l10n.kde.org/"
+>sajti i përkthimeve të &kde;-së</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Mësime gjuhësore</title>
+<para
+>Mund ta përdorni &gcompris;-në në një gjuhë të huaj të cilën po e mësoni. Përzgjidhni te menuja e formësimit një gjuhë të huaj. Mos harroni të shkarkoni modulet opsionale audio për këtë gjuhë.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Përshtatje veprimtarish</title>
+<para
+>Mundeni të përshtatni disa veprimtari duke përdorur butonin e formësimeve në to. Për shembull, në disa veprimtari mund të caktoni gjuhën, (p.sh., lojë fjalësh), ose ta bëni të shfaqë figura automjetesh të njëmendtë, në vend se drejtkëndësha të ngjyrosur (trafik).</para>
+
+<para
+>Për veprimtari të shumëfishta mund të zgjidhni te formësimi disa grupe të dhënash. Secili ka një objektiv të caktuar, i cili paraqitet.</para>
+<screenshot>
+<screeninfo
+>Grup të dhënash për veprimtarinë “Numëroni objektet”</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Grup të dhënash për veprimtarinë “Numëroni objektet”</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Mund të zgjidhni mundësitë për këtë veprimtari.</para>
+<screenshot>
+<screeninfo
+>Përzgjidhni mënyrë veprimtarie “Numëroni objektet”</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Përzgjidhni mënyrë veprimtarie “Numëroni objektet”</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Parametra Konsole</title>
+<para
+>Xhirimi i &gcompris;-së prej një konsole urdhrash me mundësinë --help do të shfaqë krejt parametrat që ai pranon:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Xhirojeni &gcompris;-në nën mënyrën “Sa tërë ekrani”.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Xhirojeni &gcompris;-në nën mënyrën “Dritare”.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Xhirojeni &gcompris;-në me tinguj të aktivizuar.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Xhirojeni &gcompris;-në pa zë.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Xhirojeni &gcompris;-në me kursorin parazgjedhje të sistemit.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Xhirojeni &gcompris;-në pa kursor (mënyra “ekran me prekje”).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Shtyp versionin e &gcompris;.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Paraqet krejt veprimtaritë e gatshme.</entry>
+</row>
+<row>
+<entry
+>--launch veprimtari</entry>
+<entry
+>Përcaktoni veprimtarinë për kur niset GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level nivel</entry>
+<entry
+>Përcaktoni nivelin me të cilin të niset veprimtaria e dhënë përmes mundësisë --launch, kur niset GCompris-ja. E shpërfillur, nëse s’jepet mundësi --launch, ose nëse niveli i treguar është i pavlefshëm.</entry>
+</row>
+<row>
+<entry
+>--difficulty {value|min-maks}</entry>
+<entry
+>Për sesionin, detyro vështirësi veprimtarish GCompris të jenë sa vlera, ose mes vlerës minimale dhe maksimale. Vlerat duhet të jenë mes 1 dhe 6, ndërsa nëse formati është min-maksimum, vlera minimum duhet të jetë më e vogël se sa ajo maksimum. Nëse s’bëhet kështu, GCompris-ja s’do të niset.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Eksportoni veprimtari si SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Aktivizoni mënyrën kioskë (fsheh butonat Mbylle dhe Formësim).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Çaktivizo mënyrën kioskë (parazgjedhje).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Përdor vizatues të software-it, në vend se openGL (duhet të punojë me çfarëdo karte grafike).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Përdor vizatues openGL, në vend se atë “software” (më i shpejtë dhe më tepër efekte grafike, por me disa karta grafike mund të vithiset).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>Shembull për &Windows;</title>
+<para
+>Këta parametra mund t’i shtoni te vetitë e ikonës së desktopit. Ja një shembull që e xhiron &gcompris;-në nën mënyrën kioskë, sa krejt ekrani, pa buton Formësimi dhe kursor:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>Shembull për &GNU;/&Linux;</title>
+<para
+>Krijoni një nisës aplikacioni dhe formësoni parametrat e rreshtit të urdhrave. Ja një shembull në të cilin &gcompris;-ja xhirohet nën mënyrën kioskë dhe sa krejt ekrani, pa buton Formësimi dhe kursor:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Kredite dhe Licencë</title>
+
+<para
+>&gcompris; </para>
+<para
+>Të drejta kopjimi programi 2000-2023 Timothée Giet dhe të tjerë </para>
+
+<para
+>Besniq Bleta<email
+>besnik@programeshqip.org</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

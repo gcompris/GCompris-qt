@@ -1,12 +1,12 @@
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2019.
 # Kristof Kiszel <kiszel.kristof@gmail.com>, 2021.
-# István Lipták <elistvan@gmail.com>, 2022.
+# István Lipták <elistvan@gmail.com>, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-01-14 13:21+0100\n"
+"PO-Revision-Date: 2024-01-21 13:55+0100\n"
 "Last-Translator: István Lipták <elistvan@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -47,143 +47,92 @@ msgstr "Válasz érvényesítése"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a számszomszédokat!"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a hiányzó számszomszédokat!"
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Tanuljunk a prímszámokról."
+msgstr "Számok sorbarendezése."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
 msgstr "Hasonlítsd össze a számokat a megfelelő jelek segítségével!"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 1-10 között!"
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0-20 között!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0-100 között!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a következő számot!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg az előző számot!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a két szám közötti számot!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg hiányzó számot!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a következő számot!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg az előző számot!"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a két szám közötti számot!"
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat -10 és -1 között!"
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat -10 és 10 között!"
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Találd meg mindkét számot!"
+msgstr "Találd meg a hiányzó számot!"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -988,9 +937,6 @@ msgid "Learn multiplication table of 10."
 msgstr "Tízes szorzótábla."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
 msgstr "Szorzótábla egytől tízig!"
@@ -1082,12 +1028,9 @@ msgid "Learn division table of 10."
 msgstr "10-es benfoglaló tábla gyakorlása."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Szorzótábla egytől tízig!"
+msgstr "Bennfoglalás egytől tízig!"
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1178,28 +1121,19 @@ msgid "Learn subtraction table of 10."
 msgstr "A kivonás tanulása."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Tizedes számok kivonása 1-ig,"
+msgstr "Számok kivonása 10-ig,"
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Tizedes számok kivonása 1-ig,"
+msgstr "Kivonások 20-ig"
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Tizedes számok kivonása 1-ig,"
+msgstr "Kivonások 100-ig"
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1288,28 +1222,19 @@ msgid "Learn addition table of 10."
 msgstr "Összeadás megtanulása."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Tizedes számok összeadása 1-ig,"
+msgstr "Számok összeadása 10-ig,"
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Tizedes számok összeadása 1-ig,"
+msgstr "Számok összeadása 15-ig,"
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Add össze a csillagokat 10-ig!"
+msgstr "Összeadás 100-ig!"
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3215,13 +3140,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Oldd meg a Calcudoku-t!"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3230,12 +3155,11 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Fejleszd logikai gondolkodási képességeidet: adatok összekapcsolása, "
+"következtetés és térbeli helymeghatározás számolás közben."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
 msgstr "A kirakó kitöltése türelmet és logikai tehetséget igényel"
@@ -3251,51 +3175,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Válassz ki egy számot a listából, és kattints a helyére a rács kitöltéséhez. "
+"Minden szám csak egyszer jelenhet meg egy sorban és oszlopban. A rácsok "
+"olyan cellákat tartalmaznak, amelyek információkat nyújtanak a "
+"kitöltésükhöz. Az egynél több cellából álló rács egy eredményt és egy "
+"műveletet ad meg: a rácsban lévő összes számnak a művelettel kombinálva kell "
+"az adott eredményt megadnia. Az egyetlen cellából álló rácsok közvetlenül a "
+"beírandó számot adják meg."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Kis négyzetek"
+msgstr "Kis négyzetek + művelettel."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Kis négyzetek"
+msgstr "Kis rácsok + és -műveletek."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Kis négyzetek"
+msgstr "Kis rácsok + és x műveletekkel."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Kis négyzetek"
+msgstr "Közepes rácsok + és - műveletekkel."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Kis négyzetek"
+msgstr "Nagy rácsok +,- , x és / műveletekkel."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4646,23 +4562,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Kattints az OK gombra a válaszod érvényesítéséhez!"
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"A Hold képe a NASA-tól van. Az űrhangok a Tuxpaint-ből és a Vegastrike-ból "
-"származnak, amelyek GPL licencűek. A szállítóeszközök képeinek szerzői joga "
-"Franck Douceté. A szállítóeszközökkel kapcsolatos dátumok alapja a &lt;"
-"http://www.wikipedia.org&gt;."
+"A Hold képe a NASA-tól van.  A szállítóeszközök képeinek szerzői joga Franck "
+"Douceté. A szállítóeszközökkel kapcsolatos dátumok alapja a &lt;http://www."
+"wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4805,20 +4713,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 a Montolfier testvérek hőlégballonja"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader Eole-ja"
+msgstr "1890 Clement Ader Eole-ja"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906b Paul Cornfu első helikopter felszállása"
+msgstr "1907 Paul Cornfu első helikopter felszállása"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4831,12 +4733,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnot gőzkocsija"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader Eole-ja"
+msgstr "1890 Clement Ader Eole-ja"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4864,12 +4763,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephenson Rakéta nevű gőzmozdonya"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader Eole-ja"
+msgstr "1890 Clement Ader Eole-ja"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4882,20 +4778,14 @@ msgid "Aviation"
 msgstr "A repülés"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Clement Ader Eole-ja"
+msgstr "1890 Clement Ader Eole-ja"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 A Wright testvérek: Flyer III"
+msgstr "1903 A Wright testvérek: Flyer III-asa"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4918,12 +4808,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh átrepüli az Atlanti-óceánt"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Boucher eléri a 444km/órás sebességet"
+msgstr "1934 Hélène Boucher eléri a 445km/órás sebességet"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4951,9 +4838,6 @@ msgid "Cars"
 msgstr "Autók"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
 msgstr "1899 Renault voiturette"
@@ -9714,22 +9598,16 @@ msgstr "Számláló és nevező megtalálása (négyzettel)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Sorminta"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Építsd fel a megadott tornyot!"
+msgstr "Építsd fel a megadott sormintát!"
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn digits"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
 msgstr "Összeadás megtanulása"
@@ -9741,59 +9619,43 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"A sorminta reprodukálása felül. Egyes szinteken előfordulhat, hogy a "
+"sormintát ki kell egészítened, vagy meg kell jegyezned, miután megjegyezted."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Bal és jobb nyilak: egy szimbólum gomb választása."
+msgstr "Bal és jobb nyilak: egy token választása."
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Szóközzel választhatsz!"
+msgstr "Szóközzel addhatod hozzá a jelölőt a mintához!"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Backspace vagy Delete: Mégsem"
+msgstr "Szóköz vagy Enter: Az utolsó token elvétele a sormintáből"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: Válasz véglegesítése"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Szóköz: Váltás a látható/nem látható mód között."
+msgstr "Szóköz: Váltás a minta szerkesztése,megtekintése között."
 
 #: activities/frieze/Frieze.qml:248
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
-msgstr "Rajta"
+msgstr "Készen állok."
 
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Másold le ezt a sormintát: 2 különböző színű/jelű alakzattal!"
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9801,7 +9663,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Másold le ezt a sormintát!"
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9809,6 +9671,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Emlékezz és másold le ezt a sormintát: a formák, színek/jelek és méretek "
+"bármilyen kombinációja!"
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9816,7 +9680,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Emlékezz és másold le ezt a sormintát!"
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9824,11 +9688,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Másolja le és töltse ki ezt a sormintát: 4 és 7 közötti minták, a formák, "
+"színek/jelek és méretek bármilyen kombinációjat!"
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Másolja és töltse ki ezt a sormintát!"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9836,6 +9702,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Emlékezz és másold le ezt a sormintát: 4 és 7 közötti minták, formák, színek/"
+"jelek és méretek bármilyen kombinációja!"
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9843,6 +9711,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Másolja le és töltse ki ezt a sormintát: 6 és 8 közötti minták, a formák, "
+"színek/jelek és méretek bármilyen kombinációja!"
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9851,7 +9721,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Másolja le és töltse ki ezt a sormintát!"
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9859,21 +9729,26 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Emlékezz és másold le ezt a sormintát: 6 és 8 közötti minták, formák, színek/"
+"jelek és méretek bármilyen kombinációja!"
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Másold le és töltsd ki ezt a sormintát: 2 különböző színű/jelű alakzattal!"
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Emlékezz és másold le ezt a sormintát: 2 különböző színű/jelű alakzattal!"
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
 msgstr ""
+"Másold le ezt a sormintát: 3 vagy 4 alakzat különböző színekkel/jelekkel!"
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9881,6 +9756,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Másold le ezt a sormintát: 3 vagy 4 alakzat 2 méretben és esetleg azonos "
+"színekkel/jelekkel!"
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9888,11 +9765,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Másold le és töltsd ki ezt sormintát: 3 vagy 4 alakzat 2 méretben és esetleg "
+"azonos színekkel/jelekkel!"
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Másold le ezt a sormintát: a formák, színek/jelek és méretek bármilyen "
+"kombinációja!"
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9901,6 +9782,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Másolja le és töltse ki ezt a sormintát: a formák, színek/jelek és méretek "
+"bármilyen kombinációja!"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -13969,23 +13852,22 @@ msgstr "A(z) 1 nem prímszám."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 nem prímszám, osztói: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "de %1 nem szorzata %2-nek."
+msgstr ""
+"%1 többszörösei közé tartozik %2 vagy %3, de %4 nem többszöröse %5-nek."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "%1 osztói a következők: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14165,32 +14047,26 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Olvassa le az értéket a számegyenesről!"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Az értékek beolvasása egy számegyenesen."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "A vízkörforgás megtanulása"
+msgstr "Egyenes vonal olvasásának megtanulása"
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Páros és páratlan számok"
+msgstr "Számok olvasása és rendezése"
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14199,36 +14075,26 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"A számbillentyűzettel vagy a billentyűzettel írja be a beosztási sor adott "
+"pontjának megfelelő értéket!"
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
 msgstr "Számok: Számok beírása"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
 msgstr "A backspace kitörli a legutóbbi válaszod utolsó számjegyét"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Számok: Add meg a válaszod!"
+msgstr "Delete gomb: a válaszod törlése."
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Szóköz vagy Enter: Válasz elfogadása"
@@ -14236,108 +14102,75 @@ msgstr "Szóköz vagy Enter: Válasz elfogadása"
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(változó határok)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Keresd a rozsdabarna pillangót"
+msgstr "Keresd meg a kért számot!"
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 1 és 5 között!"
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 1 és 7 között!"
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 1 és 10 között!"
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0 és 20 között!"
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0 és 50 között!"
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0 és 100 között!"
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0 és 1 000 között!"
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0 és 10 000 között!"
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Gondolj egy számra %1 és %2 között!"
+msgstr "Találd meg a hiányzó számokat 0 és 1 000 000 között!"
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Számegyenes használata"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Helyezze az értékeket egy osztott vonalra."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "A naptár használatának megismerése"
+msgstr "Egyenes vonal használatának megismerése"
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14346,108 +14179,89 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"A nyilak segítségével mozgassd a kurzort a számegyenes szakaszai között az "
+"adott értéknek megfelelő pozícióba."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "A bal és a jobb nyilak: Az űrhajó mozgatása."
+msgstr "A bal és a jobb nyilak: A kurzor mozgatása."
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Helyezzd az adott számot a számegyenesen!"
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
 msgstr "Növekvő sorrennd, 5 szám 1 és 5 között."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Gondolj egy számra 1 és %1 között!"
+msgstr "Fokozás 1 és 7 között!"
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Gondolj egy számra 1 és %1 között!"
+msgstr "Fokozás 1 és 10 között!"
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Az eredmény 20 és 29 közötti."
+msgstr "Összeadások megtalálsa 0-20 között."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "30 és 50 között!"
+msgstr "Osztás 0 és 50 között!"
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "30 és 50 között!"
+msgstr "Osztás 0 és 100 között!"
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "0 és 1 000 közötti értékek megtalálása."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "0 és 10 000 közötti értékek megtalálása."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "0 és 1000 000 közötti értékek megtalálása."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Nyelvtani elemzés"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Azonosítsd a szófajokat a megadott mondatokban."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Tanulja meg azonosítani a szófajokat."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Rendelje a kért szófajokat a megfelelő szavakhoz."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14455,26 +14269,27 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Válasszon ki egy nyelvtani osztályt a listából, majd jelölje be a szó alatti "
+"négyzetet, és rendelje hozzá az osztályt."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Hagyja üresen a mezőt, ha nincs megfelelő osztály."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
+"Felfelé és lefelé mutató nyilak vagy táblázat: váltás a csoportok és szavak "
+"között"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Bal és jobb nyilak: Jobbra és balra fordulás"
+msgstr "Bal és jobb nyilak: egy szó kiválasztása a szófajok között."
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14483,31 +14298,30 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Szóköz: a kiválasztott osztály hozzárendelése a kiválasztott szóhoz, majd a "
+"következő szó kiválasztása."
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "A backspace kitörli a legutóbbi válaszod utolsó számjegyét"
+msgstr "A backspace választja az utolsó szót-"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Nyelvtani elemzés"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Tanulja meg azonosítani a szófajokat."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "Keresse meg a kért szófajoknak megfelelő összes szót."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14515,21 +14329,24 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Válasszon ki egy nyelvtani osztályt a listából, majd jelölje be a szó alatti "
+"négyzetet, és rendelje hozzá az osztályt."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Hagyja üresen a mezőt, ha nincs megfelelő osztály."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Szófajok"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
+"Keresse meg az összes olyan szót, amely megfelel a kért nyelvtani osztálynak."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14537,31 +14354,30 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Válassza ki a nyelvtani osztályt a listából, majd jelölje be a szó alatti "
+"négyzetet, és rendelje hozzá az osztályt."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Hagyja üresen a mezőt, ha az osztály nem egyezik."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "üres"
+msgstr "Üres"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Szófajok"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "A megfelelő szavakhoz hozzárendeli a kért nyelvtani osztályt."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14569,11 +14385,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Válassza ki a nyelvtani osztályt a listából, majd jelölje be a szó alatti "
+"négyzetet, és rendelje hozzá az osztályt."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Hagyja üresen a mezőt, ha az osztály nem egyezik."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14732,28 +14550,22 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Legyen 24!"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Számítsuk ki, hogy 24-et kapjunk."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Gyakorold a kivonást egy vidám játékkal!"
+msgstr "Tanulj meg számolni a négy művelet segítségével."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
@@ -14765,32 +14577,24 @@ msgstr "Gyakorold az összeadást, kivonást, szorzást és osztást."
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
+"Használd a négy számot a megadott műveletekkel, hogy megtaláld a 24-et."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Nyilak: Mozgás egy területen belül"
+msgstr "Nyilak: Mozgás a számok és műveletek között."
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Szóköz vagy Enter: Tárgy elhelyezése vagy kiválasztása"
+msgstr "Szóköz vagy Enter: Érték vagy művelet jelölése, jelölés törlése"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Műveleti billentyűk (+, -, *, /): műveletek kiválasztása"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
 msgstr "Backspace vagy Delete: Mégsem"
@@ -14798,43 +14602,34 @@ msgstr "Backspace vagy Delete: Mégsem"
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Tabulálás: váltás a számok és a műveletek között"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Használd a négy számot a megadott műveletekkel, hogy megtaláld a 24-et"
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "Megoldható + és - segítségével."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "Megoldható +, - és × segítségével."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Szorzás"
+msgstr "Szorzás szükséges"
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Kis négyzetek"
+msgstr "Minden művelettel megoldható."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
 msgstr "Osztás"
@@ -15629,9 +15424,6 @@ msgstr "Találd meg a bendzsót!"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
 msgstr "Találd meg a bongót!"
@@ -18778,9 +18570,6 @@ msgid "Copyright: %1"
 msgstr "Forrás: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
 msgstr "Nehézségi szint:"
@@ -18791,9 +18580,6 @@ msgid "Language selector"
 msgstr "Nyelvválasztó"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
 msgstr "Hangfájlok automatikus letöltésésnek/frissítésének engedélyezése"
@@ -19837,7 +19623,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "A következő pont kiemelése"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -20280,12 +20066,12 @@ msgid ""
 "Football|is|a|team|game."
 msgstr ""
 "A|kutya|ugat.\n"
-"Aház|piros.\n"
+"A|ház|piros.\n"
 "A|fiú|könyvet|olvas.\n"
 "A|barátom|kedves.\n"
 "Milyen|szép|kilátás!\n"
-"Steve|beugrik|a|medencébe.\n"
-"Jessica|szeretne|egy|új|könyvet.\n"
+"Pisti|beugrik|a|medencébe.\n"
+"Julcsi|szeretne|egy|új|könyvet.\n"
 "Anyu|csinált|nekem|egy|szendvicset.\n"
 "A|tigrisek|a|dzsungelben|élnek.\n"
 "A|foci|csapatjáték."
@@ -20310,7 +20096,7 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
-"Süt|a|is|nap.\n"
+"A|nap|is|süt|az|égen.\n"
 "A|gyerekek|szeretnek|odakint|játszani.\n"
 "Elmész|valahová|vacsorázni?\n"
 "A|lány|bekötötte|a|cipőjét|és|kiment.\n"
@@ -25287,11 +25073,6 @@ msgstr "A kirakó kitöltése türelmet és logikai tehetséget igényel"
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
@@ -25913,12 +25694,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Gépeld be a leeső teljes szót, mielőtt az leérne a földre!"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Új fordítások: Szlovén, Német, Gall."
+msgstr "Új fordítások: Szuahéli, Bolgár, és Gall."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -25940,53 +25718,38 @@ msgid "Many bug fixes"
 msgstr "Sok apró hibajavítás."
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
 "Új parancssori művelettel kilistázhatók a tevékenységek vagy egy magadott "
-"indítható."
+"indítható. (--start-szint indítása,együtt haszálandó a --launch activity "
+"parancssal)"
 
 #: core/ChangeLog.qml:39
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Új fordítások: azerbajdzsáni."
+msgstr "Új fordítások: Arab és Eszperantó."
 
 #: core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Fríssített orosz fordítás"
+msgstr "Rengeteg fordítási javítás."
 
 #: core/ChangeLog.qml:46
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
 "Új parancssori művelettel kilistázhatók a tevékenységek vagy egy magadott "
-"indítható."
+"indítható"
 
 #: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Az összehasonlító tevékenységben jelentkező probléma javítása"
 
 #: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
@@ -26274,9 +26037,6 @@ msgstr ""
 "Ez a tevékenység hangokat használ, melyek nincsenek a gépedre telepítve."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr "A szükséges hangok letöltéséhez kattints a Tulakdonságok panelra."
@@ -26410,16 +26170,7 @@ msgstr ""
 "bejelentéséhez. Kérjük ilyenkor a \"kívánságlista\" menüpontot használd."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26643,13 +26394,13 @@ msgstr "Az alábbi fájlok ellenőrzőkódja nem egyezik meg: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Nem találtunk hangokat a %1 számára."
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Nem találtunk adatot %1-hez."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26818,6 +26569,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Megadja a munkamenethez megjelenítendő tevékenységi nehézségi tartományt. "
+"Vagy egyetlen érték (2), vagy egy tartomány (3-6). Az értékeknek 1 és 6 "
+"között kell lenniük."
 
 #: core/main.cpp:214
 msgctxt "QObject|"
@@ -26825,16 +26579,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Megadható, hogy a tevékenységet melyik szinten kívánjuk elindítani. Csak "
+"akkor használatos, ha a --launch opciót használjuk."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Szeretnéd most letölteni őket?"
+msgstr ""
+"Szeretnéd automatikusan letölteni vagy frissíteni a külső forrrásokat a "
+"GCompris indításakor?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26872,20 +26627,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Első alkalommal futtatod a GComprist."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"Ellenőrizd a program beállításait, különösen a nyelvi beáéllításokat. A "
-"program hangfájlokat fog telepíteni az adott nyelven. Mindez beállítható a "
-"Tulajdonságok panelen."
+"Ellenőrizd a program beállításait, különösen a nyelvi beáéllításokat. Mindez "
+"beállítható a Tulajdonságok panelen."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -26909,16 +26657,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Néhány tevékenységhez új adatkészlet áll rendelkezésre. Szeretnéd "
+"visszaállítani az adatkészlet kiválasztását?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Alkalmaz"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Mégsem"
@@ -26948,10 +26695,6 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Indítás"
 
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
 #~ msgstr "1971 Comte de Sirac biciklije"
@@ -26975,6 +26718,10 @@ msgstr "Indítás"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "%1 és nem osztója %2-nek."
+
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #~ msgctxt "Data|"
 #~ msgid "3 decimal places between 0 and 999."
