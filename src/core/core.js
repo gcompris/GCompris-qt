@@ -324,36 +324,42 @@ function convertNumberToLocaleCurrencyString(number, locale) {
  * Function that returns the best cell size for a grid of a given
  * width and height and a number of items.
  *
- * Formula inspired from https://math.stackexchange.com/questions/466198/algorithm-to-get-the-maximum-size-of-n-squares-that-fit-into-a-rectangle-with-a
+ * Formula inspired from https://math.stackexchange.com/q/2570649
  *
  * @param x_: grid width
  * @param y_: grid height
  * @param n_: number of items to place in the grid
- * @param extra_: optional extra number to add to sides calculation
+ * @param extra_: optional extra number of items to add to sides calculation
  */
 function fitItems(x_, y_, n_, extra_) {
-    var sx
-    var sy
-
     if(x_ <= 0 || y_ <= 0 || n_ <= 0)
         return 10; // return default value that will be erased later, to avoid crash on Android
 
     if(extra_ === undefined)
         extra_ = 0;
 
-    var px = Math.ceil(Math.sqrt(n_ * x_ / y_)) + extra_;
-    if (Math.floor(px * y_ / x_) * px < n_) {
-        sx = y_ / Math.ceil(px * y_ / x_);
-    } else {
-        sx = x_ / px;
+    // Compute number of rows and columns, and cell size
+    var ratio = x_ / y_;
+    var ncols_float = Math.sqrt(n_ * ratio);
+    var nrows_float = n_ / ncols_float;
+    
+    // Find best option filling the whole height
+    var nrows1 = Math.ceil(nrows_float) + extra_;
+    var ncols1 = Math.ceil(n_ / nrows1) + extra_;
+    while (nrows1 * ratio < ncols1) {
+        nrows1++;
+        ncols1 = Math.ceil(n_ / nrows1) + extra_;
     }
-
-    var py = Math.ceil(Math.sqrt(n_ * y_ / x_)) + extra_;
-    if (Math.floor(py * x_ / y_) * py < n_) {
-        sy = x_ / Math.ceil(x_ *  py / y_);
-    } else {
-        sy = y_ / py;
+    var cell_size1 = y_ / nrows1;
+    
+    // Find best option filling the whole width
+    var ncols2 = Math.ceil(ncols_float) + extra_;
+    var nrows2 = Math.ceil(n_ / ncols2) + extra_;
+    while (ncols2 < nrows2 * ratio) {
+        ncols2++;
+        nrows2 = Math.ceil(n_ / ncols2) + extra_;
     }
-
-    return Math.max(sx, sy);
+    var cell_size2 = x_ / ncols2;
+    
+    return Math.max(cell_size1, cell_size2);
 }
