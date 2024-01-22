@@ -154,7 +154,8 @@ function initLevel() {
             items.questionTilesModel.append({
                                                 "value": "?",
                                                 "tileState": "NONE",
-                                                "canDrop": true
+                                                "canDrop": true,
+                                                "tileEdited": false
                                             })
 
         }
@@ -162,7 +163,8 @@ function initLevel() {
             items.questionTilesModel.append({
                                                 "value": value,
                                                 "tileState": "NONE",
-                                                "canDrop": false
+                                                "canDrop": false,
+                                                "tileEdited": true
                                             })
         }
     }
@@ -225,12 +227,14 @@ function getCorrectAnswers(question)
 }
 
 function nextLevel() {
+    items.score.stopWinAnimation()
     items.score.currentSubLevel = 0
     currentExercise = Core.getNextLevel(currentExercise, numberExercises)
     initLevel();
 }
 
 function previousLevel() {
+    items.score.stopWinAnimation()
     items.score.currentSubLevel = 0
     currentExercise = Core.getPreviousLevel(currentExercise, numberExercises)
     initLevel();
@@ -308,23 +312,21 @@ function checkAnswer() {
             }
             else {
                 state = "WRONG"
+                items.answerCompleted = false
             }
-
             items.questionTilesModel.set(i, {
-                                             "tileState": state,
-                                         });
+                                            "tileState": state,
+                                        });
         }
     }
 
     // Check the complete answer
     if (isPupilAnswerRight(getPupilAnswerArray()))
     {
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
-        items.nextSubLevelTimer.start()
+        goodAnswerFeedback()
     }
     else
     {
-        items.buttonsEnabled = true
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
     }
 }
@@ -334,7 +336,14 @@ function resetTile(index)
     items.questionTilesModel.set(index, {
                                      "value": '?',
                                      "tileState": "NONE",
+                                     "tileEdited": false,
                                  });
+}
+
+function goodAnswerFeedback() {
+        items.score.currentSubLevel++
+        items.score.playWinAnimation()
+        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
 }
 
 function checkTileAnswer(index, value) {
@@ -353,15 +362,13 @@ function updatePupilAnswer(index, newValue) {
     items.questionTilesModel.set(index, {
                                      "value": newValue,
                                      "tileState": state,
+                                     "tileEdited": true,
                                  });
 
     var completed = isAnswerComplete()
     items.answerCompleted = completed
     if (items.immediateAnswer && completed) {
         checkAnswer()
-        if (isPupilAnswerRight(getPupilAnswerArray())) {
-            items.nextSubLevelTimer.start()
-        }
     }
 }
 
@@ -370,7 +377,8 @@ function isAnswerComplete() {
     var completed = true
     for(var i = 0 ; i < items.questionTilesModel.count ; i++)
     {
-        if(items.questionTilesModel.get(i).value === '?')
+        if(items.questionTilesModel.get(i).value === '?' ||
+            !items.questionTilesModel.get(i).tileEdited)
         {
             completed = false
             break
@@ -383,10 +391,8 @@ function isAnswerComplete() {
 // or to the next level if all sublevels are done
 function nextSubLevel()
 {
-    items.score.currentSubLevel++
-    if (items.score.currentSubLevel === subLevelStartTiles.length)
+    if (items.score.currentSubLevel >= subLevelStartTiles.length)
     {
-        items.score.playWinAnimation()
         items.bonus.good("smiley")
     }
     else

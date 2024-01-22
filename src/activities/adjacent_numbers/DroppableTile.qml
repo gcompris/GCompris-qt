@@ -40,6 +40,7 @@ Rectangle {
 
     MouseArea {
         anchors.fill: parent
+        enabled: items.buttonsEnabled
         onClicked: {
             if (canDrop && value !== '?') {
                 tileChanged('?')
@@ -92,12 +93,14 @@ Rectangle {
         Transition {
             to: "WRONG"
             SequentialAnimation {
+                ScriptAction { script: items.questionTilesModel.set(index, { "tileEdited": false, });}
                 RotationAnimation { target: orderingElement; from: 0; to: 25; duration: 50; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 25; to: -25; duration: 50; direction: RotationAnimation.Counterclockwise }
                 RotationAnimation { target: orderingElement; from: -25; to: 15; duration: 50; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 15; to: -15; duration: 50; direction: RotationAnimation.Counterclockwise }
                 RotationAnimation { target: orderingElement; from: -15; to: 10; duration: 20; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 10; to: 0; duration: 20; direction: RotationAnimation.Counterclockwise }
+                ScriptAction { script: items.buttonsEnabled = true; }
             }
         }
     ]
