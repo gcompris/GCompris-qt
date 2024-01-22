@@ -18,10 +18,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         anchors.fill: parent
-        color: "#ABCDEF"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.height: height
         signal start
         signal stop
 
@@ -99,12 +101,22 @@ ActivityBase {
             anchors.horizontalCenter: layoutArea.horizontalCenter
             width: layoutArea.width - background.baseMargins * 2
             height: (layoutArea.height  - background.baseMargins * 3) * 0.5
-            property int tileSize: Core.fitItems(questionArea.width + background.baseMargins, questionArea.height + background.baseMargins, questionTilesModel.count) - background.baseMargins
+            property int tileSize: Core.fitItems(questionArea.width, questionArea.height, questionTilesModel.count) - background.baseMargins
+
+            Rectangle {
+                anchors.centerIn: parent
+                width: questionTilesFlow.childrenRect.width + background.baseMargins
+                height: questionTilesFlow.childrenRect.height + background.baseMargins
+                color: "#80FFFFFF"
+                radius: height * 0.1
+            }
 
             Item {
                 anchors.centerIn: parent
-                width: questionTilesFlow.childrenRect.width
-                height: questionTilesFlow.childrenRect.height
+                anchors.verticalCenterOffset: background.baseMargins * 0.5
+                anchors.horizontalCenterOffset: anchors.verticalCenterOffset
+                width: questionTilesFlow.childrenRect.width + background.baseMargins
+                height: questionTilesFlow.childrenRect.height + background.baseMargins
                 DelegateModel {
                     id: questionTilesDelegateModel
                     model: ListModel {
@@ -140,7 +152,7 @@ ActivityBase {
             height: questionArea.height
             width: questionArea.width
 
-            property int tileSize: Core.fitItems(proposedTilesArea.width + background.baseMargins, proposedTilesArea.height + background.baseMargins, proposedTilesModel.count) - background.baseMargins
+            property int tileSize: Core.fitItems(proposedTilesArea.width, proposedTilesArea.height, proposedTilesModel.count) - background.baseMargins
 
             Item {
                 anchors.centerIn: parent
