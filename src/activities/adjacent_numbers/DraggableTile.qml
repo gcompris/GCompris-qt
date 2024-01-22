@@ -28,7 +28,7 @@ MouseArea {
     // anchors.fill: parent
 
     drag.target: dragableElement
-    enabled: (!onGoingAnimationCount)
+    enabled: (!onGoingAnimationCount) && items.buttonsEnabled
 
     onPressed: {
         draggableMouseArea.beginDragPosition = Qt.point(dragableElement.x, dragableElement.y)

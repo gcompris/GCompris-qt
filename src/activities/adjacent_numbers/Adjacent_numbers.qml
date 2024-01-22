@@ -38,8 +38,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias questionTilesModel: questionTilesModel
+            property alias questionTilesFlow: questionTilesFlow
             property alias proposedTilesModel: proposedTilesModel
-            property alias nextSubLevelTimer: nextSubLevelTimer
             property GCSfx audioEffects: activity.audioEffects
 
             // Activity options
@@ -198,7 +198,7 @@ ActivityBase {
             currentSubLevel: 0
             numberOfSubLevels: 10
             onStop: {
-                Activity.nextLevel();
+                Activity.nextSubLevel();
             }
         }
 
@@ -214,7 +214,7 @@ ActivityBase {
             sourceSize.height: height
             sourceSize.width: height
             onClicked: validateKey();
-            enabled: !bonus.isPlaying && items.buttonsEnabled
+            enabled: visible && items.buttonsEnabled
             visible: !items.immediateAnswer && items.answerCompleted
         }
 
@@ -234,6 +234,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         DialogChooseLevel {
@@ -265,7 +266,7 @@ ActivityBase {
         Keys.onEnterPressed: validateKey();
 
         function validateKey() {
-            if(okButton.visible && okButton.enabled) {
+            if(okButton.enabled) {
                 Activity.checkAnswer();
             }
         }
@@ -275,12 +276,6 @@ ActivityBase {
             running: false
             NumberAnimation { target: okButton; property: "scale"; to: 0.9; duration: 70 }
             NumberAnimation { target: okButton; property: "scale"; to: 1; duration: 70 }
-        }
-
-        Timer {
-            id: nextSubLevelTimer
-            interval: 600
-            onTriggered: Activity.nextSubLevel()
         }
     }
 
