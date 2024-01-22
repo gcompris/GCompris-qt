@@ -14,7 +14,7 @@ import "../../core"
  */
 MouseArea {    
     id: draggableMouseArea
-    width: 80 * ApplicationInfo.ratio
+    width: 1
     height: width
 
     property bool dropActive: true
@@ -31,11 +31,13 @@ MouseArea {
     enabled: (!onGoingAnimationCount) && items.buttonsEnabled
 
     onPressed: {
+        z = 100
         draggableMouseArea.beginDragPosition = Qt.point(dragableElement.x, dragableElement.y)
         mouseHeld = true
         // Activity.targetColorReset()
     }
     onReleased: {
+        z = 0
         dragableElement.Drag.drop()
         mouseHeld = false
         dragableElement.parent = draggableMouseArea
@@ -67,15 +69,11 @@ MouseArea {
         GCText {
             id: dragableValueText
             text: value
-
-            anchors {
-                top: parent.top
-                left: parent.left
-                leftMargin: (parent.width - width) / 2
-            }
-            padding: 5 * ApplicationInfo.ratio
-            height: parent.height
-
+            anchors.centerIn: parent
+            height: parent.height * 0.6
+            width: parent.width * 0.6
+            fontSizeMode: Text.Fit
+            fontSize: largeSize
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }

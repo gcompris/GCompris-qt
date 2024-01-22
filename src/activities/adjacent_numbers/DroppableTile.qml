@@ -14,7 +14,7 @@ Rectangle {
     signal tileChanged(string newValue)
 
     id: orderingElement
-    width: 80 * ApplicationInfo.ratio
+    width: 1
     height: width
     color: "white"
     opacity: value === '?' ? 0.7 : 1
@@ -25,15 +25,11 @@ Rectangle {
     GCText {
         id: valueText
         text: value
-
-        anchors {
-            top: parent.top
-            left: parent.left
-            leftMargin: (parent.width - width) / 2
-        }
-        padding: 5 * ApplicationInfo.ratio
-        height: parent.height
-
+        anchors.centerIn: parent
+        height: parent.height * 0.6
+        width: parent.width * 0.6
+        fontSizeMode: Text.Fit
+        fontSize: largeSize
         verticalAlignment: Text.AlignVCenter
         horizontalAlignment: Text.AlignHCenter
     }
@@ -86,20 +82,24 @@ Rectangle {
         Transition {
             to: "RIGHT"
             SequentialAnimation {
+                ScriptAction { script: z = 100;}
                 PropertyAnimation { target: orderingElement; property: "scale"; to: 1.2; duration: 300; easing.type: Easing.InOutQuad }
                 PropertyAnimation { target: orderingElement; property: "scale"; to: 1.0; duration: 150; easing.type: Easing.InOutQuad }
+                ScriptAction { script: z = 0;}
             }
         },
         Transition {
             to: "WRONG"
             SequentialAnimation {
                 ScriptAction { script: items.questionTilesModel.set(index, { "tileEdited": false, });}
+                ScriptAction { script: z = 100;}
                 RotationAnimation { target: orderingElement; from: 0; to: 25; duration: 50; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 25; to: -25; duration: 50; direction: RotationAnimation.Counterclockwise }
                 RotationAnimation { target: orderingElement; from: -25; to: 15; duration: 50; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 15; to: -15; duration: 50; direction: RotationAnimation.Counterclockwise }
                 RotationAnimation { target: orderingElement; from: -15; to: 10; duration: 20; direction: RotationAnimation.Clockwise }
                 RotationAnimation { target: orderingElement; from: 10; to: 0; duration: 20; direction: RotationAnimation.Counterclockwise }
+                ScriptAction { script: z = 0;}
                 ScriptAction { script: items.buttonsEnabled = true; }
             }
         }
