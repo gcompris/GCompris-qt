@@ -14,7 +14,7 @@ Data {
             "title": qsTr("Find the next number."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
-            "step": 10,
+            "step": 1,
             "numberShown": 3, // Counting the ones to guess
             "indicesToGuess": [2],
 
@@ -27,7 +27,7 @@ Data {
             "title": qsTr("Find the previous number."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
-            "step": 10,
+            "step": 1,
             "numberShown": 3, // Counting the ones to guess
             "indicesToGuess": [0],
 
@@ -40,7 +40,7 @@ Data {
             "title": qsTr("Find the in-between number."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
-            "step": 10,
+            "step": 1,
             "numberShown": 3, // Counting the ones to guess
             "indicesToGuess": [1],
 
@@ -53,7 +53,7 @@ Data {
             "title": qsTr("Find the missing numbers."),
             "lowerBound": 0,
             "upperBound": 80, // inclusive
-            "step": 10,
+            "step": 1,
             "numberShown": 3, // Counting the ones to guess
             "indicesToGuess": [0, 2],
 
