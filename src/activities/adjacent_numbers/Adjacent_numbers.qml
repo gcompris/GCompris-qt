@@ -1,6 +1,7 @@
 /* GCompris - Adjacent_numbers.qml
  *
  * SPDX-FileCopyrightText: 2023 Alexandre Laurent <littlewhite.dev@gmail.com>
+ * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
@@ -9,6 +10,7 @@ import QtQml.Models 2.12
 import GCompris 1.0
 import "../../core"
 import "adjacent_numbers.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -52,93 +54,64 @@ ActivityBase {
 
             readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
         }
+        property int baseMargins: 10 * ApplicationInfo.ratio
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Column {
-            id: mainArea
-            spacing: 10
-            anchors.left: parent.left
-            anchors.right: parent.right
+        Rectangle {
+            id: instructionArea
+            opacity: 1
+            radius: background.baseMargins
+            color: "#373737"
+            height: 40 * ApplicationInfo.ratio
+            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * background.baseMargins)
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.bottom: bar.top
-            bottomPadding: 10
-            topPadding: 10
+            anchors.topMargin: background.baseMargins
+
+            GCText {
+                id: instruction
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: Text.Center
+                height: parent.height - background.baseMargins
+                width: parent.width - 2 * background.baseMargins
+                fontSizeMode: Text.Fit
+                color: 'white'
+                anchors.centerIn: instructionArea
+            }
+        }
+
+        Item {
+            id: layoutArea
+            anchors.top: instructionArea.bottom
+            anchors.bottom: okButton.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: background.baseMargins
+        }
+
+        Item {
+            id: questionArea
+            z: 100
+            anchors.top: layoutArea.top
+            anchors.topMargin: background.baseMargins
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            width: layoutArea.width - background.baseMargins * 2
+            height: (layoutArea.height  - background.baseMargins * 3) * 0.5
+            property int tileSize: Core.fitItems(questionArea.width + background.baseMargins, questionArea.height + background.baseMargins, questionTilesModel.count) - background.baseMargins
 
             Item {
-                width: parent.width
-                height: instructionArea.height
-
-                Rectangle {
-                    id: instructionArea
-                    opacity: 1
-                    radius: 10
-                    color: "#373737"
-                    width: instruction.contentWidth * 1.1
-                    height: instruction.contentHeight * 1.1
-                    anchors.horizontalCenter: parent.horizontalCenter
-
-                    GCText {
-                        id: instruction
-                        z: 5
-                        wrapMode: TextEdit.WordWrap
-                        fontSize: tinySize
-                        horizontalAlignment: Text.Center
-                        width: mainArea.width * 0.9
-                        color: 'white'
-                        anchors.centerIn: instructionArea
-                    }
-                }
-            }
-
-            Item
-            {
-                id: layouting
-
-                readonly property int screenPadding: 20 * ApplicationInfo.ratio
-                readonly property int flowWidth: parent.width - (screenPadding * 2)
-
-                readonly property int tileSpacing: 10
-                readonly property int defaultTileSize: 80 * ApplicationInfo.ratio
-                readonly property int nbQuestionTiles: questionTilesDelegateModel.count
-                readonly property int cumulativeTileSpacing: tileSpacing * (nbQuestionTiles - 1)
-                readonly property int widthAvailable: questionTilesFlow.width - cumulativeTileSpacing
-                readonly property int tileWidth: Math.min(defaultTileSize, widthAvailable / nbQuestionTiles)
-
-                // Proposed tiles
-                readonly property int proposedLeftTilePadding: 60 * ApplicationInfo.ratio
-                readonly property int okButtonWidth: items.immediateAnswer ? 0 : okButton.width
-                readonly property int activityItemsWidth: score.width + okButtonWidth + 2 * 10 * ApplicationInfo.ratio // OK button and score are right to the proposed tiles
-                readonly property int proposedFlowWidth: parent.width - proposedLeftTilePadding - activityItemsWidth
-                readonly property int proposedTilesPerLine: 5
-                readonly property int effectiveNbTilesOnLine: Math.min(proposedTilesModel.count, proposedTilesPerLine)
-                readonly property int effectiveNbLines: (proposedTilesModel.count / proposedTilesPerLine) + 1
-                readonly property int cumulativeProposedTileSpacing: tileSpacing * (proposedTilesPerLine - 1)
-                readonly property int proposedWidthAvailable: proposedFlowWidth - cumulativeProposedTileSpacing
-                readonly property int possibleProposedTileWidth: Math.min(defaultTileSize, proposedWidthAvailable / effectiveNbTilesOnLine)
-
-                readonly property int availableHeight: bar.y - proposedTilesFlow.y - parent.bottomPadding - tileSpacing * 2
-                // Proposed tiles never bigger than tiles from the question
-                readonly property int proposedTileWidth: Math.min(tileWidth, Math.min(possibleProposedTileWidth,
-                                                         availableHeight / effectiveNbLines))
-
-                // Just enough space to have proposedTilesPerLine tiles on one line
-                readonly property int effectiveFlowWidth: proposedTileWidth * proposedTilesPerLine + cumulativeProposedTileSpacing
-            }
-
-            Item {
-                width: parent.width
-                height: 2 * layouting.defaultTileSize
-
+                anchors.centerIn: parent
+                width: questionTilesFlow.childrenRect.width
+                height: questionTilesFlow.childrenRect.height
                 DelegateModel {
                     id: questionTilesDelegateModel
                     model: ListModel {
                         id: questionTilesModel
                     }
-
                     delegate: DroppableTile {
-                        width: layouting.tileWidth
+                        width: Math.max(1, questionArea.tileSize)
                         onTileChanged: (newValue) => {
                             Activity.updatePupilAnswer(index, newValue)
                         }
@@ -147,38 +120,51 @@ ActivityBase {
 
                 Flow {
                     id: questionTilesFlow
-                    width: layouting.flowWidth
-                    height: parent.height
-
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    spacing: layouting.tileSpacing
+                    width: questionArea.width
+                    height: questionArea.height
+                    spacing: background.baseMargins
 
                     Repeater {
                         model: questionTilesDelegateModel
                     }
                 }
             }
+        }
 
+        Item {
+            id: proposedTilesArea
+            z: 200
+            anchors.bottom: layoutArea.bottom
+            anchors.bottomMargin: background.baseMargins
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            height: questionArea.height
+            width: questionArea.width
 
-            DelegateModel {
-                id: proposedTilesDelegateModel
-                model: ListModel {
-                    id: proposedTilesModel
+            property int tileSize: Core.fitItems(proposedTilesArea.width + background.baseMargins, proposedTilesArea.height + background.baseMargins, proposedTilesModel.count) - background.baseMargins
+
+            Item {
+                anchors.centerIn: parent
+                width: proposedTilesFlow.childrenRect.width
+                height: proposedTilesFlow.childrenRect.height
+                DelegateModel {
+                    id: proposedTilesDelegateModel
+                    model: ListModel {
+                        id: proposedTilesModel
+                    }
+                    delegate: DraggableTile {
+                        width: Math.max(1, proposedTilesArea.tileSize)
+                    }
                 }
 
-                delegate: DraggableTile {
-                    width: layouting.proposedTileWidth
-                }
-            }
+                Flow {
+                    id: proposedTilesFlow
+                    width: proposedTilesArea.width
+                    height: proposedTilesArea.height
+                    spacing: background.baseMargins
 
-            Flow {
-                id: proposedTilesFlow
-
-                x: 60 * ApplicationInfo.ratio
-                width: layouting.effectiveFlowWidth
-                spacing: layouting.tileSpacing
-                Repeater {
-                    model: proposedTilesDelegateModel
+                    Repeater {
+                        model: proposedTilesDelegateModel
+                    }
                 }
             }
         }
@@ -194,7 +180,7 @@ ActivityBase {
             anchors.bottom: background.bottom
             anchors.bottomMargin: bar.height * 1.5
             anchors.right: background.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: background.baseMargins
             currentSubLevel: 0
             numberOfSubLevels: 10
             onStop: {
@@ -205,14 +191,13 @@ ActivityBase {
         BarButton {
             id: okButton
             anchors.right: score.left
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: background.baseMargins
             anchors.verticalCenter: score.verticalCenter
-            z: 10
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 70 * ApplicationInfo.ratio
             height: width
-            sourceSize.height: height
-            sourceSize.width: height
+            sourceSize.height: width
+            sourceSize.width: width
             onClicked: validateKey();
             enabled: visible && items.buttonsEnabled
             visible: !items.immediateAnswer && items.answerCompleted
@@ -278,5 +263,4 @@ ActivityBase {
             NumberAnimation { target: okButton; property: "scale"; to: 1; duration: 70 }
         }
     }
-
 }
