@@ -50,7 +50,7 @@ Data {
         },
         {
             //~ we show two of four numbers and first and last need to be found
-            "title": qsTr("Find the missing numbers"),
+            "title": qsTr("Find the missing numbers."),
             "lowerBound": -10,
             "upperBound": 8, // inclusive
             "step": 1,
