@@ -14,7 +14,7 @@ var items
 var activityMode
 var maxSolutionSize = 0
 var mapToPad = {}       // Maps keyboard charcodes to numPad's indexes to animate graphics from computer's numpad
-var segmentThickness = 3
+var segmentThickness = 2
 var exercices = []
 
 function randInt(max) { return Math.floor(Math.random() * max) }
