@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-17 02:40+0000\n"
+"POT-Creation-Date: 2024-01-16 03:10+0000\n"
 "PO-Revision-Date: 2023-01-06 22:46+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -19,6 +19,12 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 # Er rimeleg fri i omsetjinga i denne fila. Mange av dei engelske tekstane er ganske gamle og har ikkje sett forbetringane hjelpefilene i GCompris har sett. Det er viktigaste at introtekstane her er lette å forstå og har eit enkelt språk (og helst er korte). Dei vert gjort om til tale av automatisk talesyntese. Talesyntesen taklar ikkje mjuke bindestrekar, så unngå dette. Merk tekstane har kan ha litt ukurant teiknsetting (eks. manglande/ekstra komma). Det er for å forbetra uttalen. (Tekstane vert aldri viste nokon plass.)
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -204,6 +210,15 @@ msgstr "Trykk på Tux når du er klar til å prøva å skriva blindeskrift."
 msgid "Create the Braille cell for the letter."
 msgstr "Trykk på dei rette punkta for å skriva bokstavane."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
+#: activities/calcudoku/ActivityInfo.qml:17
+#, kde-format
+msgid ""
+"Select a number and click on its target position. Each number must appear "
+"only once in a row and in a column. The numbers in the cells of a cage must "
+"produce the given result when combined using the given operator."
+msgstr ""
+
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
@@ -240,13 +255,13 @@ msgid "play checkers with your friend"
 msgstr "Spel dam mot ein venn."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:18
+#: activities/chess/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against Tux"
 msgstr "Spel sjakk mot Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:18
+#: activities/chess_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "play chess against your friend"
 msgstr "Spel sjakk mot ein venn."
@@ -470,6 +485,12 @@ msgstr "Vel så mange figurdelar som instruksjonane ber deg om."
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr "Finn rett teljar og nemnar til brøken som vert vist."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
+#: activities/frieze/ActivityInfo.qml:17
+#, kde-format
+msgid "Reproduce and complete the frieze model."
+msgstr ""
+
 # Er her snakk om regionar, provinsar, fylke og slikt.
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -541,6 +562,26 @@ msgstr ""
 "Hjelp talmumsaren fram til alle primtala. Trykk så på mellomromstasten for å "
 "eta dei."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
+#: activities/grammar_analysis/ActivityInfo.qml:21
+#: activities/grammar_classes/ActivityInfo.qml:21
+#, kde-format
+msgid "Assign the requested grammatical classes to the corresponding words."
+msgstr ""
+
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
 #, kde-format
@@ -557,6 +598,12 @@ msgid ""
 msgstr ""
 "Styr romskipet for å unngå å krasja i planetane, slik at du til slutt kjem "
 "fram til romstasjonen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
+#: activities/guess24/ActivityInfo.qml:17
+#, kde-format
+msgid "Use the four numbers with given operators to find 24"
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -576,7 +623,7 @@ msgstr ""
 "a\">hòla</phoneme> ved å gjetta det hemmelege talet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
-#: activities/hangman/ActivityInfo.qml:22
+#: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
 msgstr "Gjett bokstavane i det hemmelege ordet."
@@ -905,7 +952,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "Plasser kvar gjenstand på same plass som i eksempelet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:18
+#: activities/nine_men_morris/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -915,7 +962,7 @@ msgstr ""
 "frå Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:18
+#: activities/nine_men_morris_2players/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1037,13 +1084,13 @@ msgid ""
 msgstr "Fly med helikopteret for å fanga talskyene i vist rekkjefølgje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:22
+#: activities/play_piano/ActivityInfo.qml:21
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr "Trykk på tangentane som svarar til notane du ser og høyrer."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:22
+#: activities/play_rhythm/ActivityInfo.qml:21
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr ""
@@ -1109,7 +1156,7 @@ msgstr ""
 "fisken. Trykk så på OK."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:18
+#: activities/roman_numerals/ActivityInfo.qml:17
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Lær å gjera om romartal til vanlege tal."

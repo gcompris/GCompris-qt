@@ -120,9 +120,9 @@ for example 'xx.yy.zz'
 >licence GPLv3</ulink
 >.</para>
 <para
->&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU;/&Linux;, &BSD;, macOS X, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
+>&gcompris; is available on the following operating systems: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. It requires a 3D card with support of <emphasis
 >OpenGL 2.1</emphasis
-> ou plus. Une profondeur de couleur de 32 bits est obligatoire.</para>
+> or higher. 32 bits color depth mandatory.</para>
 </sect1>
 
 <sect1 id="installation">
@@ -176,7 +176,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Chaque icône représente une activité. Autour de chacun d'eux, vous pouvez trouver des petits icônes qui donnent plus d'informations sur l'activité. Un clic simple sur l'icône vous amènera à une activité ou à un menu d'activités. Ils y a 8 sections (catégories) d'activités qui sont affichées en haut ou à gauche (si l'orientation de votre écran est en portrait). Par exemple, il y a une section « Jeux de plateau » qui inclut plusieurs jeux comme les échecs, le morpion ou le puissance 4.</para>
+>Each icon represents an activity. Around each one, you can find small icons which give additional information about the activity. A simple click on the icon will lead you to an activity or a menu of activities. There are 8 sections (categories) of activities, which are placed on the top or on the left (only if your orientation is portrait). For example, there is section "Board games", which includes board games, like chess, tic tac toe or align four.</para>
 <para
 >Certaines catégories ont des sous-catégories pour mieux filtrer les activités. Pour les activités portant sur les mathématiques, il y a trois sous-catégories : numération, arithmétique et mesures.</para>
 <para
@@ -553,6 +553,12 @@ for example 'xx.yy.zz'
 >--launch activité</entry>
 <entry
 >Choisit quelle activité lancer au démarrage de GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level niveau</entry>
+<entry
+>Spécifiez le niveau sur lequel démarrer l'activité spécifiée par l'option « --launch » lors du démarrage de GCompris. Ignoré si aucune option « --launch » ou si le niveau spécifié n'est pas valable.</entry>
 </row>
 <row>
 <entry

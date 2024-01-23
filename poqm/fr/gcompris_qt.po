@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023 Xavier Besnard <xavier.besnard@kde.org>
+# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Xavier Besnard <xavier.besnard@kde.org>
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
 # Jazeix Johnny <jazeix@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
@@ -8,9 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-07 20:56+0100\n"
-"Last-Translator: Johnny Jazeix <jazeix@gmail.com>\n"
-"Language-Team: fr\n"
+"PO-Revision-Date: 2024-01-21 14:52+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.2\n"
+"X-Generator: Lokalize 23.08.4\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
@@ -1297,28 +1297,19 @@ msgid "Learn addition table of 10."
 msgstr "Apprendre la table d'addition de 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Additionne des nombres décimaux jusqu'à 1."
+msgstr "Additionne des nombres jusqu'à 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Additionne des nombres décimaux jusqu'à 1."
+msgstr "Additionne des nombres jusqu'à 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Ajouter les étoiles jusqu'à 10."
+msgstr "Additionne avec des résultats jusqu'à 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -2307,7 +2298,7 @@ msgstr "Tangram basique"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The objective is to assemble the baby puzzle."
-msgstr "L'objectif est d'assembler les pièces du tangram basique."
+msgstr "L'objectif est d'assembler les pièces du Tangram basique."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:23
@@ -2318,7 +2309,7 @@ msgid ""
 msgstr ""
 "Déplace une pièce en la faisant glisser. Clique sur le bouton de rotation ou "
 "fais glisser ton doigt autour de la pièce pour la faire tourner. Des formes "
-"plus compliquées à former peuvent être trouvées dans l'activité de tangram."
+"plus compliquées à former peuvent être trouvées dans l'activité de Tangram."
 
 #: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
@@ -3325,36 +3316,33 @@ msgstr ""
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Grilles de petite taille."
+msgstr "Grilles de petite taille avec +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "Grilles de petite taille avec + et −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "Grilles de petite taille avec +, − et ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "Grilles de taille moyenne avec +, − et ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "Grilles de grande taille avec +, −, × et ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3451,7 +3439,7 @@ msgstr "Samedi"
 #: activities/calendar/calendar_dataset.js:35
 msgctxt "calendar_dataset|"
 msgid "Select the 23rd"
-msgstr "Sélectionne le 23ème jour"
+msgstr "Sélectionne le 23 ième jour"
 
 #: activities/calendar/calendar_dataset.js:39
 msgctxt "calendar_dataset|"
@@ -3461,98 +3449,101 @@ msgstr "Sélectionne le premier jour"
 #: activities/calendar/calendar_dataset.js:43
 msgctxt "calendar_dataset|"
 msgid "Select the 16th"
-msgstr "Sélectionne le 16ème jour"
+msgstr "Sélectionne le 16 ième jour"
 
 #: activities/calendar/calendar_dataset.js:47
 msgctxt "calendar_dataset|"
 msgid "Select the 28th"
-msgstr "Sélectionne le 28ème jour"
+msgstr "Sélectionne le 28 ième jour"
 
 #: activities/calendar/calendar_dataset.js:51
 msgctxt "calendar_dataset|"
 msgid "Select the 11th"
-msgstr "Sélectionne le 11ème jour"
+msgstr "Sélectionne le 11 ième jour"
 
 #: activities/calendar/calendar_dataset.js:55
 msgctxt "calendar_dataset|"
 msgid "Select the 20th"
-msgstr "Sélectionne le 20ème jour"
+msgstr "Sélectionne le 20 ième jour"
 
 #: activities/calendar/calendar_dataset.js:75
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 4th of the given month?"
-msgstr "Sélectionne le jour correspondant au 4ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 4 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:79
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 12th of the given month?"
-msgstr "Sélectionne le jour correspondant au 12ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 12 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:83
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 20th of the given month?"
-msgstr "Sélectionne le jour correspondant au 20ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 20 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:87
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 28th of the given month?"
-msgstr "Sélectionne le jour correspondant au 28ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 28 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:91
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 22nd of the given month?"
-msgstr "Sélectionne le jour correspondant au 22ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 22 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:95
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 16th of the given month?"
-msgstr "Sélectionne le jour correspondant au 16ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 16 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:99
 msgctxt "calendar_dataset|"
 msgid "Which day of the week is the 10th of the given month?"
-msgstr "Sélectionne le jour correspondant au 10ème jour du mois proposé"
+msgstr "Sélectionne le jour correspondant au 10 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:119
 msgctxt "calendar_dataset|"
 msgid "Select a Monday between days 1 and 7 of the given month"
-msgstr "Choisis un lundi entre le 1er et le 7ème jour du mois proposé"
+msgstr "Choisis un lundi entre le 1er et le 7 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:123
 msgctxt "calendar_dataset|"
 msgid "Select a Tuesday between days 8 and 16 of the given month"
-msgstr "Choisis un mardi entre le 8ème et le 16ème jour du mois proposé"
+msgstr "Choisis un mardi entre le 8 ième et le 16 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:127
 msgctxt "calendar_dataset|"
 msgid "Select a Wednesday between days 15 and 22 of the given month"
-msgstr "Choisis un mercredi entre le 15ème et le 22ème jour du mois proposé"
+msgstr ""
+"Choisis un mercredi entre le 15 ième et le 22 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:131
 msgctxt "calendar_dataset|"
 msgid "Select a Thursday between days 26 and 31 of the given month"
-msgstr "Choisis un jeudi entre le 26ème et le 31ème jour du mois proposé"
+msgstr "Choisis un jeudi entre le 26i ième et le 31 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:135
 msgctxt "calendar_dataset|"
 msgid "Select a Friday between days 20 and 25 of the given month"
-msgstr "Choisis un vendredi entre le 20ème et le 25ème jour du mois proposé"
+msgstr ""
+"Choisis un vendredi entre le 20 ième et le 25 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:139
 msgctxt "calendar_dataset|"
 msgid "Select a Saturday between days 13 and 23 of the given month"
-msgstr "Choisis un samedi entre le 13ème et le 23ème jour du mois proposé"
+msgstr "Choisis un samedi entre le 13 ième et le 23 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:143
 msgctxt "calendar_dataset|"
 msgid "Select a Sunday between days 5 and 17 of the given month"
-msgstr "Choisis un dimanche entre le 5ème et le 17ème jour du mois proposé"
+msgstr "Choisis un dimanche entre le 5 ième et le 17 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:162
 msgctxt "calendar_dataset|"
 msgid "Select the second day before the 15th of the given month"
 msgstr ""
-"Sélectionne le jour se situant deux jours avant le 15ème jour du mois proposé"
+"Sélectionne le jour se situant deux jours avant le 15 ième jour du mois "
+"proposé"
 
 #: activities/calendar/calendar_dataset.js:166
 msgctxt "calendar_dataset|"
@@ -3563,7 +3554,7 @@ msgstr "Sélectionne le quatrième dimanche du mois proposé"
 msgctxt "calendar_dataset|"
 msgid "Select the day one week after 13th of the given month"
 msgstr ""
-"Sélectionne le jour se situant une semaine après le 13ème jour du mois "
+"Sélectionne le jour se situant une semaine après le 13 ième jour du mois "
 "proposé"
 
 #: activities/calendar/calendar_dataset.js:174
@@ -3575,7 +3566,7 @@ msgstr "Sélectionne le cinquième jeudi du mois proposé"
 msgctxt "calendar_dataset|"
 msgid "Select the third day after 27th of the given month"
 msgstr ""
-"Sélectionne le 3ème jour se situant après le 27ème jour du mois proposé"
+"Sélectionne le 3 ième jour se situant après le 27 ième jour du mois proposé"
 
 #: activities/calendar/calendar_dataset.js:197
 msgctxt "calendar_dataset|"
@@ -4793,23 +4784,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Puis clique sur le bouton « Ok » pour confirmer ta réponse."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Les photos de la lune viennent de la NASA. Les sons de l'espace viennent de "
-"Tuxpaint et Vegastrike, ils sont sous licence GPL. Les images des moyens de "
-"transport sont la propriété de Franck Doucet. Les dates historiques des "
-"moyens de transport proviennent de &lt;https://www.wikipedia.org&gt;."
+"La photo de la lune sont propriétés de la NASA. Les images des moyens de "
+"transport sont la propriété de Franck Doucet. Les dates des moyens de "
+"transport proviennent de &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4952,20 +4935,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783, La montgolfière des frères Montgolfier"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906, Paul Cornu Premier vol d'hélicoptère"
+msgstr "1907, Paul Cornu Premier vol d'hélicoptère"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4978,12 +4955,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 le fardier de Cugnot"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -5011,12 +4985,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 La Locomotive à Vapeur de Stephenson"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -5029,20 +5000,14 @@ msgid "Aviation"
 msgstr "Aviation"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880, l'Éole de Clément Ader"
+msgstr "1890, l'Éole de Clément Ader"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903, le Flyer III des frères Wright"
+msgstr "1905, le Flyer III des frères Wright"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -5065,12 +5030,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927, Charles Lindbergh traverse l'Atlantique"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934, Record de vitesse d'Hélène Boucher à 444 km/h"
+msgstr "1934, Record de vitesse d'Hélène Boucher à 445 km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5098,12 +5060,9 @@ msgid "Cars"
 msgstr "Les voitures"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899, Renault « voiturette »"
+msgstr "1898, Renault « voiturette »"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -5926,7 +5885,7 @@ msgstr "Jouer avec des photographies élaborées."
 #: activities/details/resource/board/board10_0.qml:14
 msgctxt "board10_0|"
 msgid "Eilean Donan castle"
-msgstr "Château d'Eilean Donan"
+msgstr "Château de Eilean Donan"
 
 #: activities/details/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
@@ -5966,7 +5925,7 @@ msgstr "Moulin à vent de Sønderho, Fanø, Danemark"
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Nagoya Castle, Aichi Prefecture, Japan."
-msgstr "Château de Nagoya, préfecture d'Aichi, Japon."
+msgstr "Château de Nagoya, préfecture de Aichi, Japon."
 
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
@@ -5998,7 +5957,7 @@ msgstr "Vincent van Gogh, le Pont de Langlois à Arles – 1888"
 #: activities/details/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Vincent van Gogh, The Church at Auvers-sur-Oise - 1890"
-msgstr "Vincent van Gogh, l'église d'Auvers-sur-Oise – 1890"
+msgstr "Vincent van Gogh, l'église de Auvers-sur-Oise – 1890"
 
 #: activities/details/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
@@ -6179,7 +6138,7 @@ msgid ""
 "A BCD counter usually takes a signal generator as input. The output is a BCD "
 "number starting from 0 which is increased by one at each tick."
 msgstr ""
-"Le compteur BCD délivre des signaux binaires (binary coded decimal) "
+"Le compteur BCD délivre des signaux binaires (Binary Coded Decimal) "
 "permettant de compter de 0 à 10 de un en un. Le nombre est incrémenté sur "
 "l'apparition d'un passage de 0 à 1 ou de 1 à 0 sur l'entrée du compteur. Il "
 "compte de la façon suivante : 0000, 0001, 0010, 0011, 0100, 0101, 0110, "
@@ -7484,8 +7443,8 @@ msgid ""
 msgstr ""
 "La Grande Muraille, ou Muraille de Chine, est un ensemble monumental de "
 "fortifications formant une muraille longue d'environ 6700 km au nord de la "
-"Chine. Elle fut construite entre les Ve et XVIe siècles pour marquer et "
-"défendre la frontière nord du pays.\n"
+"Chine. Elle fut construite entre les V ième et XVI ième siècles pour marquer "
+"et défendre la frontière nord du pays.\n"
 "Existant d'abord en plusieurs tronçons séparés, ses différentes parties "
 "furent réunies par Qin Shi Huang, le premier empereur de Chine, pour "
 "protéger son empire contre les tribus barbares.\n"
@@ -7531,7 +7490,7 @@ msgid ""
 msgstr ""
 "Pétra (du grec : πέτρα / pétra, « rocher » en grec ancien) est une ancienne "
 "cité antique abandonnée, située en Jordanie, dans les montagnes désertiques "
-"du Wadi Rum, entre le golfe d'Aqaba et la mer Morte.\n"
+"du Wadi Rum, entre le golfe de Aqaba et la mer Morte.\n"
 "Pétra est célèbre pour ses monuments fastueux creusés dans un grès aux "
 "couches multicolores. Les façades à frontons et colonnes ne sont pas "
 "construites, mais taillées dans la masse de la roche. Ces monuments, que "
@@ -7552,7 +7511,7 @@ msgid ""
 "of three, Mumtaz Mahal."
 msgstr ""
 "Le Tãdj Mahall ou Taj Mahal est un mausolée de marbre blanc situé à Ãgra, "
-"ville de la région d'Uttar Pradesh, en Inde du nord. Il fut construit de "
+"ville de la région de Uttar Pradesh, en Inde du nord. Il fut construit de "
 "1631 à 1648 sur ordre de l'empereur mongol Shah Jahãn désireux d'honorer la "
 "mémoire de son épouse Muntaz Mahall. C'est un monument très touristique."
 
@@ -7604,10 +7563,10 @@ msgid ""
 "and pink sandstone, the palace sits on the edge of the City Palace, and "
 "extends to the zenana, or women's chambers."
 msgstr ""
-"Le palais des vents (Hawa Mahal) est un bâtiment construit au XVIIIe siècle "
-"à Jaipur, capitale du Rajasthan en Inde. Il est considéré comme l'une des "
-"merveilles de l'architecture rajput. Il a été conçu de façon à permettre au "
-"vent de circuler à l'intérieur et, ainsi, de le rafraîchir."
+"Le palais des vents (Hawa Mahal) est un bâtiment construit au XVIII ième "
+"siècle à Jaipur, capitale du Rajasthan en Inde. Il est considéré comme l'une "
+"des merveilles de l'architecture Rajput. Il a été conçu de façon à permettre "
+"au vent de circuler à l'intérieur et, ainsi, de le rafraîchir."
 
 #: activities/explore_monuments/resource/board/board2.qml:40
 #: activities/explore_monuments/resource/board/board2.qml:43
@@ -7654,7 +7613,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:65
 msgctxt "board2|"
 msgid "Ajanta Caves"
-msgstr "Les grottes d'Ajantâ"
+msgstr "Les grottes de Ajantâ"
 
 #: activities/explore_monuments/resource/board/board2.qml:63
 msgctxt "board2|"
@@ -7882,10 +7841,10 @@ msgid ""
 msgstr ""
 "Le pont du Gard est un pont-aqueduc romain à trois niveaux, situé dans le "
 "département du Gard, dans le Languedoc Roussillon, en France. Il enjambe le "
-"Gardon ou Gard. Bâti dans la première moitié du Ie siècle, il faisait partie "
-"de l'aqueduc romain qui conduisait l'eau d'Uzès à Nîmes. Il a probablement "
-"fonctionné jusqu'au début du VIe siècle. De nos jours, c'est un monument "
-"touristique très visité."
+"Gardon ou Gard. Bâti dans la première moitié du I er siècle, il faisait "
+"partie de l'aqueduc romain qui conduisait l'eau d'Uzès à Nîmes. Il a "
+"probablement fonctionné jusqu'au début du VI ième siècle. De nos jours, "
+"c'est un monument touristique très visité."
 
 #: activities/explore_monuments/resource/board/board3.qml:62
 #: activities/explore_monuments/resource/board/board3.qml:65
@@ -8377,7 +8336,7 @@ msgid ""
 msgstr ""
 "Le Navajo National Monument se situe dans la réserve navajo au nord de "
 "l'Arizona, aux États-Unis d'Amérique. Il préserve des habitations "
-"troglodytiques datées du XIIIe siècle de la civilisation pueblo. Les Navajos "
+"troglodytiques datées du XIIIe siècle de la civilisation Pueblo. Les Navajos "
 "nomment ce peuple ancien, les Anasazi. Le parc comporte trois zones de 146 "
 "hectares environ."
 
@@ -8827,7 +8786,7 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board3.qml:55
 msgctxt "board3|"
 msgid "Ring-tailed lemur"
-msgstr "Le lémur catta"
+msgstr "Lémurien catta"
 
 #: activities/explore_world_animals/resource/board/board3.qml:53
 msgctxt "board3|"
@@ -8835,9 +8794,10 @@ msgid ""
 "The ring-tailed lemur is a primate that lives in the dry regions of "
 "southwest Madagascar. Its striped tail makes it easy to recognize."
 msgstr ""
-"Le lémur catta est un primate qui ne vit que dans les régions sèches du sud-"
-"ouest de Madagascar. Les makis catta sont reconnaissables à leur queue rayée "
-"de noirs et blancs. L'animal mesure environ 40 centimètres et pèse 3 à 4 kg."
+"Le lémurien catta est un primate qui ne vit que dans les régions sèches du "
+"sud-ouest de Madagascar. Les makis catta sont reconnaissables à leur queue "
+"rayée de noirs et blancs. L'animal mesure environ 40 centimètres et pèse 3 à "
+"4 kg."
 
 #: activities/explore_world_animals/resource/board/board3.qml:63
 #: activities/explore_world_animals/resource/board/board3.qml:66
@@ -8961,7 +8921,7 @@ msgid ""
 "variety of drums, and they believe it is a sacred and magical instrument."
 msgstr ""
 "La musique fait partie de la vie quotidienne en Afrique. La musique "
-"africaine est caractérisée par un grand nombre de tam-tams qui sont "
+"africaine est caractérisée par un grand nombre de tamtams qui sont "
 "considérés comme des instruments sacrés et magiques."
 
 #: activities/explore_world_music/resource/board/board1.qml:44
@@ -9063,7 +9023,7 @@ msgid ""
 "and violins. These bands play for many occasions, including weddings and "
 "parties."
 msgstr ""
-"Le mariachi est un type célèbre de musique mexicaine. Il utilise des "
+"Le Mariachi est un type célèbre de musique mexicaine. Il utilise des "
 "guitares, des trompettes et des violons. Ces groupes jouent dans de "
 "multiples occasions, y compris les mariages et les réceptions."
 
@@ -14260,23 +14220,22 @@ msgstr "1 n'est pas un nombre premier."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 n'est pas un nombre premier, ses diviseurs sont : %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "mais %1 n'est pas multiple de %2."
+msgstr ""
+"Les multiples de %1 incluent %2 ou %3 mais %4 n'est pas multiple de %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "Les diviseurs de %1 sont : %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14286,7 +14245,7 @@ msgstr "Appuie sur « Entrée » ou clique-moi dessus pour continuer."
 #: activities/gnumch-equality/WarnMonster.qml:41
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
-msgstr "Attention, un troggle !"
+msgstr "Attention, un Troggle !"
 
 #. Activity title
 #: activities/gnumch-factors/ActivityInfo.qml:15
@@ -14456,7 +14415,7 @@ msgstr ""
 "mêmes et par 1. Par exemple 3 est un nombre premier, mais 4 n'en est pas un, "
 "car 4 est divisible par 2. Tu peux penser aux nombres premiers comme une "
 "toute petite famille : elle ne contient toujours que deux personnes ! "
-"Uniquement le nombre lui-même et 1. Un autre example, 5 fait partie de ces "
+"Uniquement le nombre lui-même et 1. Un autre exemple, 5 fait partie de ces "
 "nombres uniques, sa famille contient seulement 5 * 1 = 5 et 1. Par contre 6 "
 "n'est pas un nombre premier, la famille contiendrait 6 * 1 = 6, 3 * 2 = 6 et "
 "1, ce qui fait plus que le nombre lui-même et 1."
@@ -14727,7 +14686,7 @@ msgstr ""
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analyse grammaticale"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
@@ -14796,7 +14755,7 @@ msgstr "Touche retour arrière : effacer le dernier chiffre de ta réponse"
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analyse grammaticale"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
@@ -14824,7 +14783,7 @@ msgstr ""
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Classes grammaticales"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
@@ -14855,7 +14814,7 @@ msgstr "vide"
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Classes grammaticales"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
@@ -15122,12 +15081,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Multiplications."
+msgstr "Multiplication nécessaire."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -15135,12 +15091,9 @@ msgid "Solvable with all operators."
 msgstr ""
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Divisions."
+msgstr "Division nécessaire."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15473,7 +15426,7 @@ msgstr ""
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Concept taken from EPI games."
-msgstr "Le concept vient des jeux de l'EPI."
+msgstr "Le concept vient des jeux « EPI »."
 
 #. Activity title
 #: activities/hanoi_real/ActivityInfo.qml:15
@@ -15937,9 +15890,6 @@ msgstr "Trouve le banjo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
 msgstr "Trouve le bongo"
@@ -19166,12 +19116,9 @@ msgid "Copyright: %1"
 msgstr "Licence : %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtre de difficulté :"
+msgstr "Filtre de difficulté"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -19179,12 +19126,9 @@ msgid "Language selector"
 msgstr "Choisir la langue"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Télécharger automatiquement les fichiers de sons"
+msgstr "Télécharger automatiquement les fichiers de données externes"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19870,7 +19814,7 @@ msgid ""
 "shortest code, a single dot."
 msgstr ""
 "Chaque symbole du code Morse représente soit un caractère de texte (lettre "
-"ou chiffre), soit un prosigne et est représenté par une séquence unique de "
+"ou chiffre), soit une chaîne et est représenté par une séquence unique de "
 "points et de tirets. La durée d'un tiret est trois fois plus longue que "
 "celle d'un point. Afin d'augmenter la vitesse de communication, le code a "
 "été conçu de manière à ce que les lettres les plus courantes aient les "
@@ -20744,13 +20688,13 @@ msgstr ""
 #: activities/oware/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Joue à l'owaré (contre Tux)"
+msgstr "Joue à Owaré (contre Tux)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "Fais une partie du jeu de stratégie owaré contre Tux."
+msgstr "Fais une partie du jeu de stratégie Owaré contre Tux."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -20841,7 +20785,7 @@ msgstr "Déplacement impossible !"
 #: activities/oware_2players/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Joue à l'owaré (avec un ami)"
+msgstr "Joue à l'Owaré (avec un ami)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
@@ -20990,7 +20934,7 @@ msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
 msgstr ""
 "Utagawa Hiroshige, Le temple de Benzaiten d'Inokashira sous la neige – "
-"1760-70"
+"1760-1770"
 
 #: activities/paintings/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
@@ -25905,18 +25849,13 @@ msgstr "Compléter la grille nécessite de la patience et de la logique."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Choisis un nombre ou un symbole à gauche et clique sur sa position cible. "
-"GCompris ne te laissera pas effectuer de saisie incorrecte."
+"Choisis un nombre ou un symbole dans la liste et clique sur sa position "
+"cible. GCompris ne te laissera pas effectuer de saisie incorrecte."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25995,7 +25934,7 @@ msgstr "Cet élément est mal positionné."
 #: activities/tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The tangram puzzle game"
-msgstr "Le jeu du tangram"
+msgstr "Le jeu du Tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
@@ -26044,7 +25983,7 @@ msgid ""
 "selected piece. Check the activity 'Baby Puzzle' for a simpler introduction "
 "to tangram."
 msgstr ""
-"Sélectionne le tangram que tu veux construire. Déplace une pièce en la "
+"Sélectionne le Tangram que tu veux construire. Déplace une pièce en la "
 "faisant glisser. Le bouton « symétrie » apparaît sur les éléments qui le "
 "prennent en charge. Clique sur le bouton de rotation ou fais glisser ton "
 "doigt autour de la pièce pour la faire tourner. Pour débuter, des objets "
@@ -26699,7 +26638,7 @@ msgstr "Traductions ajoutées pour le breton, le tchèque et le macédonien."
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Traductions ajoutées pour l'azerbaïdjannais."
+msgstr "Traductions ajoutées pour l'Azerbaïdjanais."
 
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
@@ -26746,7 +26685,7 @@ msgstr "Traductions ajoutées pour le macédonien."
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr ""
-"Deux nouvelles activités: « Code pour sortir du labyrinthe » et « tangram "
+"Deux nouvelles activités: « Code pour sortir du labyrinthe » et « Tangram "
 "basique »."
 
 #: core/ChangeLog.qml:112
@@ -26918,14 +26857,11 @@ msgstr ""
 "ils ne sont pas installés sur votre système."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
-"Pour télécharger les fichiers sons requis, allez dans la boîte de dialogue "
-"des préférences."
+"Pour télécharger les fichiers sons requis, allez dans la page de "
+"configuration."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -27059,16 +26995,7 @@ msgstr ""
 "appelé « Liste de souhaits »."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -27080,13 +27007,13 @@ msgid ""
 "what you need."
 msgstr ""
 "Il n'est pas nécessaire d'être développeur pour être membre de l'équipe KDE. "
-"Vous pouvez rejoindre les équipes nationales qui traduisent les interfaces "
-"des programmes, créer du graphisme, des thèmes, des sons et enrichir la "
-"documentation. C'est vous qui décidez !<br /><br />Visitez <a href=\"%1\">"
-"%1</a> pour plus d'informations sur certains projets auxquels vous pouvez "
-"participer.<br /><br />S'il vous faut plus de renseignements ou de "
-"documentation, consulter <a href=\"%2\">%2</a> devrait vous fournir ce dont "
-"vous avez besoin."
+"Vous pouvez rejoindre les équipes de traduction qui traduisent les "
+"interfaces des programmes, créer du graphisme, des thèmes, des sons et "
+"enrichir la documentation. C'est vous qui décidez !<br /><br />Visitez <a "
+"href=\"%1\">%1</a> pour plus d'informations sur certains projets auxquels "
+"vous pouvez participer.<br /><br />S'il vous faut plus de renseignements ou "
+"de documentation, consulter <a href=\"%2\">%2</a> devrait vous fournir ce "
+"dont vous avez besoin."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -27447,7 +27374,7 @@ msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
-"Utilise le moteur de rendu logiciel à la place du moteur openGL (cette "
+"Utilise le moteur de rendu logiciel à la place du moteur OpenGL (cette "
 "option est plus lente mais marche potentiellement avec toutes les cartes "
 "graphiques)."
 
@@ -27457,7 +27384,7 @@ msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
-"Utilise le moteur de rendu d'OpenGL à la place du moteur logiciel (cette "
+"Utilise le moteur de rendu OpenGL à la place du moteur logiciel (cette "
 "option est plus rapide mais peut potentiellement aboutir à des défauts "
 "imputables à la carte graphique)."
 
@@ -27489,14 +27416,13 @@ msgid ""
 msgstr ""
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Voulez-vous télécharger le contenu externe suivant ?"
+msgstr ""
+"Voulez-vous automatiquement télécharger ou mettre à jour les contenus "
+"externes au démarrage de GCompris ?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -27534,12 +27460,6 @@ msgid "You are running GCompris for the first time."
 msgstr "Vous lancez GCompris pour la première fois."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27547,8 +27467,7 @@ msgid ""
 msgstr ""
 "Vous devriez vérifier que les réglages de l'application, en particulier la "
 "langue, sont corrects, et que tous les fichiers de sons spécifiques à la "
-"langue sont installés. Vous pouvez faire ceci dans la boîte de dialogue des "
-"préférences."
+"langue sont installés. Vous pouvez faire ceci dans la page de configuration."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -27579,9 +27498,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Annuler"
