@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:23+0000\n"
+"POT-Creation-Date: 2024-01-16 01:35+0000\n"
 "PO-Revision-Date: 2023-01-06 22:46+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -19,6 +19,12 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
+#: activities/adjacent_numbers/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the missing numbers."
+msgstr ""
 
 # Er rimeleg fri i omsetjinga i denne fila. Mange av dei engelske tekstane er ganske gamle og har ikkje sett forbetringane hjelpefilene i GCompris har sett. Det er viktigaste at introtekstane her er lette å forstå og har eit enkelt språk (og helst er korte). Dei vert gjort om til tale av automatisk talesyntese. Talesyntesen taklar ikkje mjuke bindestrekar, så unngå dette. Merk tekstane har kan ha litt ukurant teiknsetting (eks. manglande/ekstra komma). Det er for å forbetra uttalen. (Tekstane vert aldri viste nokon plass.)
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -479,6 +485,12 @@ msgstr "Vel så mange figurdelar som instruksjonane ber deg om."
 msgid "Find the correct numerator and denominator of the represented fraction"
 msgstr "Finn rett teljar og nemnar til brøken som vert vist."
 
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
+#: activities/frieze/ActivityInfo.qml:17
+#, kde-format
+msgid "Reproduce and complete the frieze model."
+msgstr ""
+
 # Er her snakk om regionar, provinsar, fylke og slikt.
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -549,6 +561,18 @@ msgid ""
 msgstr ""
 "Hjelp talmumsaren fram til alle primtala. Trykk så på mellomromstasten for å "
 "eta dei."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
+#: activities/graduated_line_read/ActivityInfo.qml:17
+#, kde-format
+msgid "Find the value corresponding to the given spot on the graduated line."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
+#: activities/graduated_line_use/ActivityInfo.qml:17
+#, kde-format
+msgid "Place the given value on the graduated line."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
