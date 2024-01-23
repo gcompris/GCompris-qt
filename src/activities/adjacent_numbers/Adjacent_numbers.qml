@@ -75,7 +75,8 @@ ActivityBase {
             GCText {
                 id: instruction
                 wrapMode: TextEdit.WordWrap
-                horizontalAlignment: Text.Center
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 height: parent.height - background.baseMargins
                 width: parent.width - 2 * background.baseMargins
                 fontSizeMode: Text.Fit
