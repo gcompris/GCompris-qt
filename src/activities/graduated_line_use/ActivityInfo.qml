@@ -8,7 +8,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "graduated_line_use/GraduatedLineUse.qml"
   difficulty: 1
-  icon: "graduated_line_use/be.root.svg"
+  icon: "graduated_line_use/graduated_line_use.svg"
   author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
   //: Activity title
   title: qsTr("Use a graduated line")
