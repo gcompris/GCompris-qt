@@ -8,7 +8,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "graduated_line_read/GraduatedLineRead.qml"
   difficulty: 1
-  icon: "graduated_line_read/be.root.svg"
+  icon: "graduated_line_read/graduated_line_read.svg"
   author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
   //: Activity title
   title: qsTr("Read a graduated line")
