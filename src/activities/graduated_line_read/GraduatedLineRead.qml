@@ -17,10 +17,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         anchors.fill: parent
-        color: "#ABCDEF"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.height: height
         signal start
         signal stop
 
@@ -45,7 +47,6 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
 
             property int solutionGrad: 0                // Solution's graduation
-            property int rulerHeight: 100
             property int orientation: Qt.LeftToRight      // Updated with ApplicationSettings in start() function
 
             property alias ruler: ruler
@@ -58,66 +59,114 @@ ActivityBase {
             property bool buttonsBlocked: false
         }
 
+        property int baseMargins: 10 * ApplicationInfo.ratio
+
         onStart: { Activity.start(items, activityMode) }
         onStop: { Activity.stop() }
 
-        GCText {
-            id: caption
+        Rectangle {
+            id: instructionArea
+            opacity: 1
+            radius: background.baseMargins
+            color: "#373737"
+            height: 40 * ApplicationInfo.ratio
+            width: Math.min(320 * ApplicationInfo.ratio, parent.width - 2 * background.baseMargins)
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            width: parent.width
-            horizontalAlignment: Text.AlignHCenter
-            fontSize: mediumSize
-            height: 120
-            text: activity.instruction
+            anchors.topMargin: background.baseMargins
+
+            GCText {
+                id: instruction
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                height: parent.height - background.baseMargins
+                width: parent.width - 2 * background.baseMargins
+                fontSizeMode: Text.Fit
+                color: 'white'
+                anchors.centerIn: instructionArea
+                text: activity.instruction
+            }
+        }
+
+        Item {
+            id: layoutArea
+            anchors.top: instructionArea.bottom
+            anchors.bottom: background.bottom
+            anchors.bottomMargin: 1.2 * bar.height
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: background.baseMargins
         }
 
         ListModel { id: rulerModel }
 
         Rectangle {
             id: rulerView
-            anchors.top: caption.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width - 40
-            height: 20 * items.rulerHeight / 10
-            color: "beige"
-            radius: 5
+            anchors.top: layoutArea.top
+            anchors.left: layoutArea.left
+            anchors.right: layoutArea.right
+            height: Math.min(120 * ApplicationInfo.ratio, layoutArea.height * 0.4)
+            color: "#e9e9e9"
+            radius: background.baseMargins
+            property real rulerWidth: rulerView.width - leftLimit.width
+            property real rulerModelWidth: ruler.width / (rulerModel.count - 1)
             Column {
-                width: parent.width
-                height: 7 * items.rulerHeight / 10
-                anchors.margins: 30
+                id: rulerViewColumn
+                width: rulerView.rulerWidth
+                height: parent.height - background.baseMargins
                 anchors.horizontalCenter: parent.horizontalCenter
+                anchors.horizontalCenterOffset: rulerView.rulerModelWidth * -0.5
+                anchors.top: parent.top
+                anchors.topMargin: background.baseMargins
                 Row {
                     id: cursor
-                    width: parent.width - 20
-                    height: parent.height
+                    z: 100
+                    width: parent.width
+                    height: parent.height * 0.3
                     anchors.horizontalCenter: parent.horizontalCenter
                     layoutDirection: items.orientation
                     Repeater {
                         model: rulerModel
-                        delegate : Rectangle {
+                        delegate : Item {
                             property int value: value_
                             property bool hidden: (index !== items.solutionGrad)
                             property alias textValue: txt.text
-                            width: ruler.width / rulerModel.count
+                            width: rulerView.rulerModelWidth
                             height: parent.height
-                            color: "transparent"
                             opacity: hidden ? 0.0 : 1.0
+                            Image {
+                                visible: activity.activityMode === "number2tick"
+                                source: "qrc:/gcompris/src/activities/graduated_line_read/resource/arrow.svg"
+                                anchors.centerIn: parent
+                                anchors.verticalCenterOffset: 5 * ApplicationInfo.ratio
+                                height: parent.height
+                                width: height
+                                sourceSize.width: height
+                            }
                             Rectangle {
-                                width: 180
-                                height: 80 * parent.height / 100
-                                anchors.bottom: parent.bottom
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                radius: 10
+                                visible: activity.activityMode === "tick2number" ? true : txt.text != ""
+                                anchors.centerIn: parent
+                                anchors.verticalCenterOffset: txt.anchors.verticalCenterOffset
+                                height: parent.height
+                                width: 90 * ApplicationInfo.ratio
+                                radius: height * 0.1
                                 color: "white"
-                                border.width: 3
+                                border.color: "#633E0C"
+                                border.width:  2 * ApplicationInfo.ratio
                             }
                             GCText {
                                 id: txt
-                                anchors.fill: parent
+                                anchors.centerIn: parent
+                                anchors.verticalCenterOffset: 2 * ApplicationInfo.ratio
+                                height: parent.height * 0.9
+                                width: 80 * ApplicationInfo.ratio
                                 horizontalAlignment: Text.AlignHCenter
-                                verticalAlignment: Text.AlignBottom
+                                verticalAlignment: Text.AlignVCenter
                                 text: ""
-                                fontSize: smallSize
+                                fontSize: mediumSize
+                                fontSizeMode: Text.Fit
+                                color: "#373737"
                             }
                         }
                     }
@@ -125,67 +174,88 @@ ActivityBase {
 
                 Row {
                     id: ruler
-                    width: parent.width - 20
-                    height: items.rulerHeight
+                    width: rulerView.rulerWidth
+                    height: parent.height
                     layoutDirection: items.orientation
                     anchors.horizontalCenter: parent.horizontalCenter
                     Repeater {
                         model: rulerModel
-                        delegate : Rectangle {
+                        delegate : Item {
                             property int value: value_
                             property int thickness: thickness_
-                            width: ruler.width / rulerModel.count
+                            width: rulerView.rulerModelWidth
                             height: 100
-                            color: "transparent"
                             transform: Scale { origin.x: width / 2; xScale: (items.orientation === Qt.LeftToRight) ? 1 : -1 }
-                            Column {
-                                height: parent.height
-                                width: parent.width
-                                spacing: 0
-                                Rectangle {
-                                    width: parent.width
-                                    height: 8 * items.rulerHeight / 10
-                                    color: "transparent"
-                                    Rectangle {     // Line between graduations
-                                        width: (index && (index !== (rulerModel.count - 1))) ? parent.width : parent.width / 2
-                                        height: Activity.segmentThickness
-                                        anchors.verticalCenter: parent.verticalCenter
-                                        anchors.left: (index) ? parent.left : undefined
-                                        anchors.right: (!index) ? parent.right : undefined
-                                        color: "peru"
-                                    }
-                                    Rectangle {     // vertical graduation
-                                        width: thickness
-                                        height: ((!index) || (index === (rulerModel.count - 1)) || (index === items.solutionGrad))
-                                                ?  parent.height : (parent.height / 2)
-                                        anchors.centerIn: parent
-                                        color: (index === items.solutionGrad) ? "black" : "peru"
-                                        radius: 3
-                                    }
-                                }
+
+                            Rectangle {     // Line between graduations
+                                width: (index && (index !== (rulerModel.count - 1))) ? parent.width : parent.width / 2
+                                height: Activity.segmentThickness * ApplicationInfo.ratio
+                                anchors.verticalCenter: parent.verticalCenter
+                                anchors.left: (index) ? parent.left : undefined
+                                anchors.right: (!index) ? parent.right : undefined
+                                color: "#c27a33"
+                            }
+                            Rectangle {     // vertical graduation
+                                width: thickness * ApplicationInfo.ratio
+                                height: ((!index) || (index === (rulerModel.count - 1)) || (index === items.solutionGrad))
+                                ?  parent.height : (parent.height / 2)
+                                anchors.centerIn: parent
+                                color: (index === items.solutionGrad) ? "#633E0C" : "#c27a33"
+                                radius: (index === items.solutionGrad) ? 0 : width * 0.5
                             }
                         }
                     }
                 }
             }
-            GCText {
-                id: leftLimit
-                width: ruler.width / rulerModel.count
-                anchors.left: parent.left
-                anchors.bottom: parent.bottom
-                anchors.leftMargin: 10
-                horizontalAlignment: Text.AlignHCenter
-                fontSize: smallSize
-            }
-            GCText {
-                id: rightLimit
-                width: ruler.width / rulerModel.count
-//                width: 300
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.rightMargin: 10
-                horizontalAlignment: Text.AlignHCenter
-                fontSize: smallSize
+        }
+
+        Rectangle {
+            anchors.centerIn: leftLimit
+            width: background.baseMargins
+            height: leftLimit.paintedHeight
+            color: "#e9e9e9"
+        }
+
+        GCText {
+            id: leftLimit
+            width: 80 * ApplicationInfo.ratio
+            anchors.left: layoutArea.left
+            anchors.bottom: rulerView.bottom
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSize: smallSize
+            fixFontSize: true
+        }
+
+        Rectangle {
+            anchors.centerIn: rightLimit
+            width: background.baseMargins
+            height: rightLimit.paintedHeight
+            color: "#e9e9e9"
+        }
+
+        GCText {
+            id: rightLimit
+            width: leftLimit.width
+            anchors.right: layoutArea.right
+            anchors.bottom: rulerView.bottom
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSize: smallSize
+            fixFontSize: true
+        }
+
+        ErrorRectangle {
+            id: errorRectangle
+            width: activityMode === "tick2number" ? 90 * ApplicationInfo.ratio : 0
+            height: cursor.height
+            property real cursorOffset: (rulerView.rulerModelWidth - width) * 0.5
+            x: rulerView.x + rulerViewColumn.x + cursor.x + rulerView.rulerModelWidth * items.solutionGrad + cursorOffset
+            y: rulerView.y + rulerViewColumn.y + cursor.y + 2 * ApplicationInfo.ratio
+            radius: height * 0.1
+            imageSize: height * 1.2
+            function releaseControls() {
+                items.buttonsBlocked = false;
             }
         }
 
@@ -208,19 +278,19 @@ ActivityBase {
         Row {
             id: tools
             width: childrenRect.width
-            height: NumPad.height
+            height: layoutArea.height - rulerView.height - anchors.topMargin
             anchors.top: rulerView.bottom
-            anchors.topMargin: 20
+            anchors.topMargin: background.baseMargins * 2
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 100
+            spacing: background.baseMargins
             Image {
                 id: leftButton
                 source: 'qrc:/gcompris/src/core/resource/arrow_left.svg'
                 smooth: true
-                width: 100
-                height: 100
+                width: Math.min(70 * ApplicationInfo.ratio, layoutArea.width * 0.15)
+                height: width
                 sourceSize.width: width
-                sourceSize.height: height
+                sourceSize.height: width
                 fillMode: Image.PreserveAspectFit
                 visible: (activityMode === "number2tick")
                 MouseArea {
@@ -241,99 +311,32 @@ ActivityBase {
             }
 
             Rectangle {
-                width: 200
-                height: 80
+                width: 80 * ApplicationInfo.ratio
+                height: 40 * ApplicationInfo.ratio
                 color: "white"
-                border.width: 3
-                radius: 10
-                anchors.verticalCenter: parent.verticalCenter
+                radius: background.baseMargins
+                anchors.verticalCenter: leftButton.verticalCenter
                 visible: (activityMode === "number2tick")
                 GCText {
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    width: parent.width * 0.9
+                    height: parent.height * 0.9
                     horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
                     fontSize: mediumSize
                     text: items.answer
                 }
             }
 
-            GridView {
-                id: numPad
-                width: 3 * cellWidth
-                height: 4 * cellHeight
-                cellWidth: 84
-                cellHeight: 64
-                interactive: false
-                visible: (activityMode === "tick2number")
-                model: padModel
-                delegate: Rectangle {
-                    id: numKey
-                    width: 80
-                    height: 60
-                    anchors.margins: 2
-                    color: numArea.containsMouse ? "darkgray" : "lightgray"
-                    border.color: "gray"
-                    border.width: 2
-                    radius: 5
-                    GCText {
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        text: label
-                    }
-                    MouseArea {
-                        id: numArea
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        enabled: !items.buttonsBlocked
-                        onClicked: Activity.handleKeys(key)
-                    }
-                    states: [
-                        State {
-                            name: ""
-                            PropertyChanges {
-                                target: numKey
-                                color: numArea.containsMouse ? "darkgray" : "lightgray"
-                            }
-                        },
-                        State {
-                            name: "pressed"
-                            PropertyChanges {
-                                target: numKey
-                                color: "dimgray"
-                            }
-                        }
-                    ]
-                    transitions: [
-                        Transition {
-                            to: "pressed"
-                            SequentialAnimation {
-                                ScriptAction { script: audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav') }
-                                ColorAnimation { duration: 100 }
-                                ScriptAction { script: state = "" }
-                            }
-                        }
-                    ]
-                    Component.onCompleted: Activity.mapToPad[key] = index
-                }
-
-
-                ErrorRectangle { // TODO Would be good to have it in the cursor
-                    id: errorRectangle
-                    anchors.fill: parent
-                    imageSize: 60 * ApplicationInfo.ratio
-                    function releaseControls() {
-                        items.buttonsBlocked = false;
-                    }
-                }
-            }
             Image {
                 id: rightButton
                 source: 'qrc:/gcompris/src/core/resource/arrow_right.svg'
                 smooth: true
-                width: 100
-                height: 100
-                sourceSize.width: width
-                sourceSize.height: height
+                width: leftButton.width
+                height: leftButton.width
+                sourceSize.width: leftButton.width
+                sourceSize.height: leftButton.width
                 fillMode: Image.PreserveAspectFit
                 visible: (activityMode === "number2tick")
                 MouseArea {
@@ -350,6 +353,72 @@ ActivityBase {
                         properties: "scale"
                         duration: 100
                     }
+                }
+            }
+
+            GridView {
+                id: numPad
+                width: Math.ceil(3 * cellWidth)
+                height: Math.ceil(4 * cellHeight)
+                cellWidth: Math.min(60 * ApplicationInfo.ratio, layoutArea.width / 9)
+                cellHeight: Math.min(40 * ApplicationInfo.ratio, tools.height / 4)
+                interactive: false
+                visible: (activityMode === "tick2number")
+                model: padModel
+
+                delegate: Rectangle {
+                    id: numKey
+                    width: numPad.cellWidth - 2 * ApplicationInfo.ratio
+                    height: numPad.cellHeight - 2 * ApplicationInfo.ratio
+                    anchors.margins: ApplicationInfo.ratio
+                    color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
+                    border.color: "#808080"
+                    border.width: ApplicationInfo.ratio
+                    radius: height * 0.1
+                    GCText {
+                        anchors.centerIn: parent
+                        width: parent.width * 0.9
+                        height: parent.height * 0.9
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        fontSizeMode: Text.Fit
+                        fontSize: mediumSize
+                        text: label
+                    }
+                    MouseArea {
+                        id: numArea
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        enabled: !items.buttonsBlocked
+                        onClicked: Activity.handleKeys(key)
+                    }
+                    states: [
+                        State {
+                            name: ""
+                            PropertyChanges {
+                                target: numKey
+                                color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
+                            }
+                        },
+                        State {
+                            name: "pressed"
+                            PropertyChanges {
+                                target: numKey
+                                color: "#999"
+                            }
+                        }
+                    ]
+                    transitions: [
+                        Transition {
+                            to: "pressed"
+                            SequentialAnimation {
+                                ScriptAction { script: audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav') }
+                                ColorAnimation { duration: 100 }
+                                ScriptAction { script: state = "" }
+                            }
+                        }
+                    ]
+                    Component.onCompleted: Activity.mapToPad[key] = index
                 }
             }
         }
@@ -382,11 +451,10 @@ ActivityBase {
             numberOfSubLevels: items.numberOfSubLevel
             currentSubLevel: items.currentSubLevel
             anchors.top: undefined
-            anchors.right: rulerView.right
-            anchors.left: undefined
-            anchors.bottom: rulerView.top
-            anchors.bottomMargin: 10
-            margins: 0
+            anchors.bottom: background.bottom
+            anchors.bottomMargin: bar.height * 1.5
+            anchors.right: background.right
+            anchors.rightMargin: background.baseMargins
             onStop: Activity.nextSubLevel()
         }
 
@@ -404,19 +472,23 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 100
-            anchors.top: tools.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.topMargin: 20
+            width: Math.min(70 * ApplicationInfo.ratio, tools.height * 0.4)
+            height: width
+            sourceSize.height: width
             sourceSize.width: width
+            anchors.bottom: score.top
+            anchors.bottomMargin: background.baseMargins
+            anchors.horizontalCenter: score.horizontalCenter
             onClicked: Activity.checkResult()
             visible: (items.cursor.children[items.solutionGrad].textValue !== "") || (activityMode === "number2tick")
             mouseArea.enabled: !items.buttonsBlocked
         }
+
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
         Keys.onPressed: Activity.handleEvents(event)
     }
 
