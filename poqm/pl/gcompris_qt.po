@@ -129,11 +129,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Znajdź liczby spomiędzy -10 oraz 10."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Znajdź brakujące liczby"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26943,6 +26938,10 @@ msgstr "Pomiń"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Rozpocznij"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Znajdź brakujące liczby"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

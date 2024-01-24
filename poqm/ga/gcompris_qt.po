@@ -175,14 +175,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Uimhreacha idir 1 agus 8."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Ag roinnt uimhreacha"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28305,6 +28297,13 @@ msgstr "Scipeáil"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Tosaigh"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Ag roinnt uimhreacha"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

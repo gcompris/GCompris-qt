@@ -126,11 +126,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Βρες αριθμούς μεταξύ -10 και 10."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Βρες τον αριθμό που λείπει."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27379,6 +27374,10 @@ msgstr "Παράλειψη"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Βρες τον αριθμό που λείπει."
 
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"

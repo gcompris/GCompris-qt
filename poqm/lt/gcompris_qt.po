@@ -187,14 +187,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Skaičiai tarp %1 ir %2."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Surask abu skaičius."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27196,6 +27188,13 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Surask abu skaičius."
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

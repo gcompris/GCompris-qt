@@ -177,14 +177,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "1 और %1 के बीच एक संख्या का अनुमान लगाएँ"
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "संख्याओं के बीच भाग"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -30165,6 +30157,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "संख्याओं के बीच भाग"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

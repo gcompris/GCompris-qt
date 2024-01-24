@@ -172,14 +172,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Čísla mezi %1 a %2."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the vermilion butterfly"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Najdi motýla, který má rumělkovou barvu"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26161,6 +26153,13 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
+
+#, fuzzy
+#~| msgctxt "advanced_colors|"
+#~| msgid "Find the vermilion butterfly"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Najdi motýla, který má rumělkovou barvu"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

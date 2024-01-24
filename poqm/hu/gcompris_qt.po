@@ -129,11 +129,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Találd meg a hiányzó számokat -10 és 10 között!"
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Találd meg a hiányzó számot!"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26694,6 +26689,10 @@ msgstr "Kihagyás"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Indítás"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Találd meg a hiányzó számot!"
 
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"

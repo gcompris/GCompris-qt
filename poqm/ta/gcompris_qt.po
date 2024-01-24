@@ -168,14 +168,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "ஒரு எண்ணை கண்டு பிடியுங்க."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27587,6 +27579,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Subtraction memory game"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"

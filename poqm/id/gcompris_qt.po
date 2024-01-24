@@ -194,14 +194,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Angka antara %1 dan %2."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Cari kedua angka."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27364,6 +27356,13 @@ msgstr "Lewati"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Mulai"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Cari kedua angka."
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

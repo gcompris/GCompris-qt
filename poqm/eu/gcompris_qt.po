@@ -130,11 +130,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Aurkitu -10 eta 10 arteko zenbakiak."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Aurkitu falta diren zenbakiak"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26958,6 +26953,10 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Aurkitu falta diren zenbakiak"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

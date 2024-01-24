@@ -147,12 +147,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Pogodi broj između {0} and {1}"
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Igra pamćenja sa sabiranjem"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26280,6 +26274,11 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Igra pamćenja sa sabiranjem"
 
 #~ msgctxt "Warning|"
 #~ msgid "%1 is divisible by %2"

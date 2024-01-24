@@ -174,14 +174,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26771,6 +26763,13 @@ msgstr "നോക്കാതെ വിടുക"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

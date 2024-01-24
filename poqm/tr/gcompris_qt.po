@@ -126,11 +126,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "-10 ve 10 arasındaki sayıları bul."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Eksik sayıları bul"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26770,3 +26765,7 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"
+
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Eksik sayıları bul"

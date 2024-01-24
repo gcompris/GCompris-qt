@@ -168,14 +168,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "بین ۱ و ۱۰."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "پیدا کردن هر رو عدد."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -25229,6 +25221,13 @@ msgstr "پایان"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "شروع"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "پیدا کردن هر رو عدد."
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

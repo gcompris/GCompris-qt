@@ -258,14 +258,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Лічбы паміж 1 і 8."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Дзяленне лікаў"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -28220,6 +28212,13 @@ msgstr "Прапусціць"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Пачаць"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Дзяленне лікаў"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

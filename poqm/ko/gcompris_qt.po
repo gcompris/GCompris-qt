@@ -157,14 +157,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr ""
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Romania"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "루마니아"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -25874,6 +25866,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "board6_0|"
+#~| msgid "Romania"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "루마니아"
 
 #, fuzzy
 #~| msgctxt "Traffic|"

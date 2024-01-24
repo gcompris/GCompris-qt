@@ -172,14 +172,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Numbrid vahemikus %1 kuni %2."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Leidke mõlemad numbrid."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26920,6 +26912,13 @@ msgstr "Jäta vahele"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Alusta"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Leidke mõlemad numbrid."
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

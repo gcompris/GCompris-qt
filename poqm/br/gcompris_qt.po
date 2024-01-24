@@ -175,14 +175,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Niveroù etre %1 hag %2."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Kav an div niverenn."
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27040,6 +27032,13 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Find both numbers."
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Kav an div niverenn."
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

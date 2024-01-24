@@ -153,14 +153,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr ""
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "割り算"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -26236,3 +26228,10 @@ msgstr "スキップ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "スタート"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "割り算"

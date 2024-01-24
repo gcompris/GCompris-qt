@@ -178,14 +178,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "Броеви помеѓу %1 и %2."
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "Делење на броеви"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27593,6 +27585,13 @@ msgstr "Прескокни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Division of numbers"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "Делење на броеви"
 
 #~ msgctxt "Guesscount|"
 #~ msgid "%1/%2"

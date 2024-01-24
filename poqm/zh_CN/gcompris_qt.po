@@ -124,11 +124,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr ""
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr ""
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"

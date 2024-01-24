@@ -161,14 +161,6 @@ msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
 msgstr "เดาตัวเลข"
 
-#: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
-msgctxt "Data|"
-msgid "Find the missing numbers"
-msgstr "เกมความจำผสมลบเลข"
-
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27609,6 +27601,13 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Subtraction memory game"
+#~ msgctxt "Data|"
+#~ msgid "Find the missing numbers"
+#~ msgstr "เกมความจำผสมลบเลข"
 
 #, fuzzy
 #~| msgctxt "ActivityInfo|"
