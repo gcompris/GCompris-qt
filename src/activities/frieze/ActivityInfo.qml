@@ -8,7 +8,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "frieze/Frieze.qml"
   difficulty: 1
-  icon: "frieze/be.root.svg"
+  icon: "frieze/frieze.svg"
   author: "Bruno ANSELME &lt;be.root@free.fr&gt;"
   //: Activity title
   title: qsTr("Frieze")
