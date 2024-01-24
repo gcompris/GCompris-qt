@@ -21,12 +21,14 @@ Item {
     property bool animated: animated_
     property alias image: image
     property alias colorChar: colorChar
-    width: Activity.tokenSize
-    height: Activity.tokenSize
+    width: 1
+    height: width
     Rectangle {
-        anchors.fill: parent
+        anchors.centerIn: parent
+        width: parent.width * 0.9
+        height: parent.height * 0.9
         color: "transparent"
-        radius: 10
+        radius: height * 0.1
         border.color: (animated) ? "transparent" : "burlywood"
         Image {
             id: image
