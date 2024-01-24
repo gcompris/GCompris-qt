@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <rect id="main" width="60" height="60"/>
+    <rect id="outter" width="60" height="60"/>
+    <rect id="inner" width="50" height="50"/>
   </defs>
-  <use x="20" y="20" href="#main" fill="brown" />
-  <use x="20" y="20" href="#main" fill="burlywood" transform="translate(15 15) scale(0.7 0.7)"/>
+  <use x="20" y="20" href="#outter" fill="brown" />
+  <use x="25" y="25" href="#inner" fill="burlywood"/>
 </svg>
