@@ -20,10 +20,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/crane/resource/background.svg"
         anchors.fill: parent
-        color: "#ABCDEF"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.height: height
         signal start
         signal stop
 
@@ -132,7 +134,7 @@ ActivityBase {
             height: solution.childrenRect.height + background.baseMargins
             anchors.top: layoutArea.top
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "beige"
+            color: "#E9E9E9"
             radius: background.baseMargins
             Flow {
                 id: solution
@@ -155,12 +157,12 @@ ActivityBase {
 
         Rectangle {
             id: answerRect
-            width: solutionRect.width
-            height: solutionRect.height
+            width: answer.childrenRect.width + background.baseMargins
+            height: answer.childrenRect.height + background.baseMargins
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: solutionRect.bottom
             anchors.topMargin: background.baseMargins
-            color: "beige"
+            color: "#E9E9E9"
             radius: background.baseMargins
             Flow {
                 id: answer
@@ -209,7 +211,7 @@ ActivityBase {
                 height: tokens.contentItem.childrenRect.height + background.baseMargins
                 anchors.top: parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                color: "beige"
+                color: "#E9E9E9"
                 radius: background.baseMargins
                 enabled: !items.buttonsBlocked
                 GridView {
@@ -232,9 +234,9 @@ ActivityBase {
                     }
                     highlightMoveDuration: 0
                     highlight: Rectangle {
-                        color: "transparent"
+                        color: "#00FFFFFF"
                         radius: height * 0.1
-                        border.color: "burlywood"
+                        border.color: "#80373737"
                         border.width: 2 * ApplicationInfo.ratio
                     }
                 }
@@ -286,6 +288,7 @@ ActivityBase {
                 anchors.centerIn: tokensRect
                 text: qsTr("I am Ready")
                 opacity: (!enabled) ? 0.0 : 1.0
+                theme: "dark"
                 MouseArea {
                     anchors.fill: parent
                     onClicked: items.toggleReady()

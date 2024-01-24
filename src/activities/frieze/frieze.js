@@ -35,22 +35,22 @@ var shapes = {}
 var smallShapes = {}
 
 var palette = {
-        "R": "crimson",         // red
-        "G": "yellowgreen",     // green
-        "B": "darkturquoise",   // blue
-        "Y": "gold"             // yellow
+        "R": "#da4343",   // red
+        "G": "#52d460",   // green
+        "B": "#48cbdf",   // blue
+        "Y": "#f1c43c"    // yellow
     }
 var darkPalette = {
-        "R": "brown",
-        "G": "seagreen",
-        "B": "steelblue",
-        "Y": "goldenrod"
+        "R": "#8a2828",
+        "G": "#3c7942",
+        "B": "#34747e",
+        "Y": "#9b7c17"
     }
 var colorChars = {
-        "R": "&",
-        "G": "#",
-        "B": "%",
-        "Y": "="
+        "R": "R.svg",
+        "G": "G.svg",
+        "B": "B.svg",
+        "Y": "Y.svg"
     }
 
 var tokenSizes = [ "b", "s"]  // Big, small
@@ -181,7 +181,7 @@ function initShape(tokenItem) {
     var content = tokenItem.content;
     var svgText = (content[2] === "b") ? shapes[content[0]] : smallShapes[content[0]];
     tokenItem.image.source = svgHeader + svgText.replace(innerColor, palette[content[1]]).replace(outerColor, darkPalette[content[1]]);
-    tokenItem.colorChar.text = (content[0] === "e") ? "" : colorChars[content[1]];
+    tokenItem.colorChar.source = (content[0] === "e") ? svgUrl + "empty.svg" : svgUrl + colorChars[content[1]];
 }
 
 function tokenClicked(idx, content) {

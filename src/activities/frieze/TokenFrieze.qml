@@ -23,27 +23,22 @@ Item {
     property alias colorChar: colorChar
     width: 1
     height: width
-    Rectangle {
+    Image {
+        id: image
+        visible: shown
         anchors.centerIn: parent
         width: parent.width * 0.9
-        height: parent.height * 0.9
-        color: "transparent"
-        radius: height * 0.1
-        border.color: (animated) ? "transparent" : "burlywood"
+        height: width
+        sourceSize.width: width
+        sourceSize.height: height
         Image {
-            id: image
-            visible: shown
-            anchors.fill: parent
-            sourceSize.width: width
-            sourceSize.height: height
-        }
-        Text {
             id: colorChar
             visible: shown
-            anchors.fill: parent
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.pixelSize: 24
+            anchors.centerIn: parent
+            width: parent.width * 0.5
+            height: width
+            sourceSize.width: width
+            sourceSize.height: height
         }
     }
     states: [

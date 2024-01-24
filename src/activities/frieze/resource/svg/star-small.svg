@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="100" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <path id="main" d="M 50,6 L 61 38 L 96 38 L 69 61 L 79 94 L 50 75 L 20 94 L 30 61 L 4 38 L 38 38 z" />
+    <path id="outter" d="M 72.761514,84.978271 50.014952,73.033563 27.279815,85 31.610832,59.675616 13.204531,41.751048 38.627809,38.044426 49.987227,14.999997 61.368659,38.033562 86.795466,41.71589 68.4063,59.658038 Z" />
+    <path id="inner" d="M 67.884049,78.123567 50.011751,68.738439 32.14843,78.14064 35.551373,58.24291 21.089279,44.159322 41.064711,41.246977 49.989967,23.14064 58.93252,41.238441 78.910725,44.131697 64.462094,58.229099 Z" />
   </defs>
-  <use x="0" y="0" href="#main" fill="brown" transform="translate(15 15) scale(0.7 0.7)"/>
-  <use x="0" y="0" href="#main" fill="burlywood" transform="translate(25 25) scale(0.5 0.5)"/>
+  <use x="0" y="0" href="#outter" fill="brown" />
+  <use x="0" y="0" href="#inner" fill="burlywood" />
 </svg>
