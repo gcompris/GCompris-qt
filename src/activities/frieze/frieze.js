@@ -16,7 +16,6 @@ const svgUrl = "qrc:/gcompris/src/activities/frieze/resource/svg/"
 
 var numberOfLevel
 var items
-var tokenSize = 105
 var friezeSize = 10
 var innerColor = "burlywood"
 var outerColor = "brown"
@@ -233,7 +232,7 @@ function checkResult() {
 function initLevel() {
     items.buttonsBlocked = false;
     numberOfLevel = items.levels.length;
-    items.caption.text = items.levels[items.currentLevel].title;
+    items.instruction.text = items.levels[items.currentLevel].title;
     items.subLevelCount = items.levels[items.currentLevel].subLevels.length;
     if (items.levels[items.currentLevel].shuffle)
         Core.shuffle(items.levels[items.currentLevel].subLevels);
@@ -269,11 +268,19 @@ function handleKeys(event) {
     switch (event.key) {
     case Qt.Key_Left:
         if (!items.readyButton.enabled)
-            items.tokens.currentIndex = (items.tokens.count + items.tokens.currentIndex - 1) % items.tokens.count;
+            items.tokens.moveCurrentIndexLeft();
         break
     case Qt.Key_Right:
         if (!items.readyButton.enabled)
-            items.tokens.currentIndex = ++items.tokens.currentIndex % items.tokens.count;
+            items.tokens.moveCurrentIndexRight();
+        break
+    case Qt.Key_Up:
+        if (!items.readyButton.enabled)
+            items.tokens.moveCurrentIndexUp();
+        break
+    case Qt.Key_Down:
+        if (!items.readyButton.enabled)
+            items.tokens.moveCurrentIndexDown();
         break
     case Qt.Key_Space:
         if (!items.readyButton.enabled)
@@ -289,8 +296,6 @@ function handleKeys(event) {
         if (items.currentAnswer === items.answerModel.count)
             checkResult();
         break
-    case Qt.Key_Up:
-    case Qt.Key_Down:
     case Qt.Key_Tab:
         if (items.levels[items.currentLevel].hidden)
             items.toggleReady();
