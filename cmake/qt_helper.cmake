@@ -26,6 +26,9 @@ endfunction()
 # Opensuse:
 #   /usr/lib64/libQt5Multimedia.so.5
 #   /usr/lib64/qt5/plugins/
+# Archlinux:
+#   /usr/lib/libQt5Qml.so.5.15
+#   /usr/lib/qt/plugins/
 # Qt installer:
 #   /opt/Qt5.5.1/5.5/gcc/lib/libQt5Qml.so.5.5.1
 #   /opt/Qt5.5.1/5.5/gcc/plugins/
@@ -37,12 +40,16 @@ function(getQtPluginsPath _path)
   # try $_lib_dir/qt5/plugins (Debian/Opensuse)
   set(_plugin_root ${_lib_dir}/qt5/plugins)
   if(NOT IS_DIRECTORY ${_plugin_root})
-    # try $_lib_dir/../plugins (Qt installer)
-    get_filename_component(_lib_dir_base ${_lib_dir} PATH)
-    if(APPLE)
-      set(_plugin_root ${_lib_dir_base}/../plugins)
-    else()
-      set(_plugin_root ${_lib_dir_base}/plugins)
+    # try $_lib_dir/qt/plugins (Archlinux)
+    set(_plugin_root ${_lib_dir}/qt/plugins)
+    if(NOT IS_DIRECTORY ${_plugin_root})
+      # try $_lib_dir/../plugins (Qt installer)
+      get_filename_component(_lib_dir_base ${_lib_dir} PATH)
+      if(APPLE)
+        set(_plugin_root ${_lib_dir_base}/../plugins)
+      else()
+        set(_plugin_root ${_lib_dir_base}/plugins)
+      endif()
     endif()
   endif()
   set(${_path} ${_plugin_root} PARENT_SCOPE)
