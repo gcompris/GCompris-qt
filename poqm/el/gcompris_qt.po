@@ -9971,7 +9971,7 @@ msgstr ""
 "Tab: Εναλλαγή μεταξύ επεξεργασίας της διακοσμητικής ταινίας και προβολής του "
 "μοντέλου ."
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Είμαι έτοιμος"

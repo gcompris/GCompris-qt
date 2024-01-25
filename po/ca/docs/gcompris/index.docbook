@@ -110,7 +110,7 @@ for example 'xx.yy.zz'
 <para
 >El &gcompris; està disponible en els sistemes operatius següents: &GNU;/&Linux;, &BSD;, MacOSX i Android. Es requereix una targeta 3D amb implementació de l'<emphasis
 >OpenGL 2.1</emphasis
-> o superior. És obligatori una profunditat de color de 32 bits</para>
+> o superior. És obligatori una profunditat de color de 32 bits.</para>
 </sect1>
 
 <sect1 id="installation">

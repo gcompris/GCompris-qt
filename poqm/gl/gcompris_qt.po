@@ -9719,7 +9719,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: cambiar entre editar o fresco e ver o modelo."
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Dálle"

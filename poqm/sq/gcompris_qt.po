@@ -9776,7 +9776,7 @@ msgstr ""
 "Tasti Tab: kaloni nga mënyra përpunim bordurash në parje modeli, ose "
 "anasjelltas"
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jam Gati"

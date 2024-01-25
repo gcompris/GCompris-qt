@@ -10093,7 +10093,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "«Tabulació»: canvia entre editar el fris i veure el model"
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Estic preparat"
