@@ -23,6 +23,16 @@ Item {
     property alias colorChar: colorChar
     width: 1
     height: width
+
+    Rectangle {
+        visible: !token.shown || token.content === Activity.emptyToken
+        color: "#40373737"
+        anchors.centerIn: parent
+        width: image.width
+        height: width
+        radius: parent.height * 0.1
+    }
+
     Image {
         id: image
         visible: shown
