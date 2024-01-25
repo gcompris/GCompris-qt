@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2023-02-25</date>
+>2023-06-06</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.1</releaseinfo>
+>3.3</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -552,9 +552,21 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
->--launch activity</entry>
+>--launch actividad</entry>
 <entry
 >Indicar la actividad al iniciar GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level nivel</entry>
+<entry
+>Indicar el nivel en el que empezará la actividad especificada con la opción «--launch» al iniciar GCompris. Se ignora si no se usa la opción «--launch» o si el nivel indicado no es válido.</entry>
+</row>
+<row>
+<entry
+>--difficulty {valor|mín-máx}</entry>
+<entry
+>Para la sesión, fuerza la dificultad de las actividades al valor indicado o entre los valores máximo y mínimo indicados. Los valores deben estar entre 1 y 6. Si se indica un intervalo mín-máx, el valor mínimo debe ser inferior al valor máximo. En caso contrario, GCompris no se iniciará.</entry>
 </row>
 <row>
 <entry

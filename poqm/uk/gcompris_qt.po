@@ -9800,7 +9800,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: перемкнутися між редагування фризу і переглядом моделі"
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Можна починати"

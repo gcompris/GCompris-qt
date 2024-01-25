@@ -9683,7 +9683,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "സ്പെയ്സ്: അദൃശ്യം, ദൃശ്യം എന്നീ മോഡുകൾ തമ്മിൽ മാറാൻ"
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"

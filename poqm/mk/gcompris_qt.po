@@ -10123,7 +10123,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Празно место: Префрлај помеѓу невидлив и видлив режим"
 
-#: activities/frieze/Frieze.qml:248
+#: activities/frieze/Frieze.qml:289
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
