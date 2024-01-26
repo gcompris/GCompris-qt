@@ -21,13 +21,13 @@ msgstr ""
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Trouve les nombres manquants."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
 #, kde-format
 msgid "click on the required color"
-msgstr "Clique sur la couleur inscrite."
+msgstr "Clique sur la couleur affichée."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
 #: activities/algebra_by/ActivityInfo.qml:18

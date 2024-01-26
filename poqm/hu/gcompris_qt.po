@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-21 13:55+0100\n"
+"PO-Revision-Date: 2024-01-25 15:22+0100\n"
 "Last-Translator: István Lipták <elistvan@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -14054,7 +14054,7 @@ msgstr "Az értékek beolvasása egy számegyenesen."
 #: activities/graduated_line_read/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Egyenes vonal olvasásának megtanulása"
+msgstr "Számegyenes leolvasásának megtanulása"
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
@@ -14165,7 +14165,7 @@ msgstr "Helyezze az értékeket egy osztott vonalra."
 #: activities/graduated_line_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Egyenes vonal használatának megismerése"
+msgstr "Számegyenes használatának megismerése"
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14174,8 +14174,8 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
-"A nyilak segítségével mozgassd a kurzort a számegyenes szakaszai között az "
-"adott értéknek megfelelő pozícióba."
+"A nyilak segítségével vidd a kurzort a számegyenes szakaszai között az adott "
+"értéknek megfelelő pozícióba!"
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14250,13 +14250,13 @@ msgstr "Azonosítsd a szófajokat a megadott mondatokban."
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr "Tanulja meg azonosítani a szófajokat."
+msgstr "Tanuljuk meg a szófajok feliserését!"
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Rendelje a kért szófajokat a megfelelő szavakhoz."
+msgstr "Szófajok társítása a megadott szavakhoz"
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14264,13 +14264,13 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Válasszon ki egy nyelvtani osztályt a listából, majd jelölje be a szó alatti "
-"négyzetet, és rendelje hozzá az osztályt."
+"Válassz ki egy szófajt a listából, majd jelöld be a szó alatti négyzetet, és "
+"rendeld hozzá a szófajt!"
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr "Hagyja üresen a mezőt, ha nincs megfelelő osztály."
+msgstr "Ha nincs ilyen szófaj, hagyd üresen a mezőt!"
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
@@ -14316,7 +14316,7 @@ msgstr "Tanulja meg azonosítani a szófajokat."
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "Keresse meg a kért szófajoknak megfelelő összes szót."
+msgstr "Keresd meg a kért szófajoknak megfelelő összes szót!"
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14324,13 +14324,13 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Válasszon ki egy nyelvtani osztályt a listából, majd jelölje be a szó alatti "
-"négyzetet, és rendelje hozzá az osztályt."
+"Válassz ki egy szófajt a listából, majd jelöld be a szó alatti négyzetet, és "
+"rendeld hozzá a szófajt!"
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Hagyja üresen a mezőt, ha nincs megfelelő osztály."
+msgstr "Ha nincs ilyen szófaj, hagyd üresen a mezőt!"
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
@@ -14341,7 +14341,7 @@ msgstr "Szófajok"
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
 msgstr ""
-"Keresse meg az összes olyan szót, amely megfelel a kért nyelvtani osztálynak."
+"Keresd meg az összes olyan szót, amely megfelel a választott szófajnak!"
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14349,13 +14349,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Válassza ki a nyelvtani osztályt a listából, majd jelölje be a szó alatti "
-"négyzetet, és rendelje hozzá az osztályt."
+"Válaszd ki a szófajt a listából, majd jelöljd be a szó alatti négyzetet, és "
+"rendeld hozzá a szófajt!"
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Hagyja üresen a mezőt, ha az osztály nem egyezik."
+msgstr "Ha nincs ilyen szófaj. hagyd üresen a mezőt!"
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
@@ -14380,13 +14380,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Válassza ki a nyelvtani osztályt a listából, majd jelölje be a szó alatti "
-"négyzetet, és rendelje hozzá az osztályt."
+"Válaszd ki a szófajt a listából, majd jelöld be a szó alatti négyzetet, és "
+"rendeld hozzá a szófajhoz!"
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Hagyja üresen a mezőt, ha az osztály nem egyezik."
+msgstr "Ha nincs ilyen szófaj, hagyd üresen a mezőt!"
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
