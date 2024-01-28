@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -40,12 +40,9 @@ msgstr ""
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the jade butterfly"
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "იპოვეთ ნეფრიტის ფერი პეპელა"
+msgstr "იპოვეთ ახლომდებარე რიცხვები"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
@@ -81,60 +78,39 @@ msgid "Find numbers between 0 and 100."
 msgstr ""
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the garnet butterfly"
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "იპოვეთ ძოწისფერი პეპელა"
+msgstr "იპოვეთ შემდეგი რიცხვი."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "იპოვეთ ჟანგისფერი პეპელა"
+msgstr "იპოვეთ წინა რიცხვი."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the wine butterfly"
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "იპოვეთ ღვინისფერი პეპელა"
+msgstr "იპოვეთ შუალედური რიცხვი."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the vermilion butterfly"
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "იპოვეთ მეწამული პეპელა"
+msgstr "იპოვეთ ნაკლული რიცხვები."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the garnet butterfly"
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "იპოვეთ ძოწისფერი პეპელა"
+msgstr "იპოვეთ შემდეგი რიცხვები."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "იპოვეთ ჟანგისფერი პეპელა"
+msgstr "იპოვეთ წინა რიცხვები."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the wine butterfly"
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "იპოვეთ ღვინისფერი პეპელა"
+msgstr "იპოვეთ შუალედური რიცხვები."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -147,12 +123,9 @@ msgid "Find numbers between -10 and 10."
 msgstr ""
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the vermilion butterfly"
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "იპოვეთ მეწამული პეპელა"
+msgstr "იპოვეთ ნაკლული რიცხვები"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -954,12 +927,9 @@ msgid "Learn multiplication table of 10."
 msgstr "ისწავლეთ 10-ზე გამრავლების ცხრილი."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "1-დან 10-მდე გამრავლების ცხრილები."
+msgstr "1-დან 10-მდე გამრავლების ცხრილების მეცადინეობა."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1045,12 +1015,9 @@ msgid "Learn division table of 10."
 msgstr "ისწავლეთ 10-ზე გაყოფის ცხრილი."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "1-დან 10-მდე გამრავლების ცხრილები."
+msgstr "1-დან 10-მდე გაყოფის ცხრილების მეცადინეობა."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1138,28 +1105,19 @@ msgid "Learn subtraction table of 10."
 msgstr ""
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "რიცხვების გამოკლება"
+msgstr "10-მდე რიცხვების გამოკლება."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "რიცხვების გამოკლება"
+msgstr "20-მდე რიცხვების გამოკლება."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of numbers"
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "რიცხვების გამოკლება"
+msgstr "100-მდე რიცხვების გამოკლება."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1245,20 +1203,14 @@ msgid "Learn addition table of 10."
 msgstr "ისწავლეთ 10-ის დამატების ცხრილი."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "რიცხვების მიმატება"
+msgstr "10-მდე რიცხვების მიმატება."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition of numbers"
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "რიცხვების მიმატება"
+msgstr "15-მდე რიცხვების მიმატება."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -3736,7 +3688,7 @@ msgstr ""
 #: activities/categorization/resource/board/category_renewable.qml:19
 msgctxt "category_renewable|"
 msgid "Renewable"
-msgstr ""
+msgstr "განახლებადი"
 
 #: activities/categorization/resource/board/category_renewable.qml:23
 #: activities/categorization/resource/board/category_renewable.qml:32
@@ -8741,12 +8693,9 @@ msgid "Backspace or Delete: remove last token from the frieze"
 msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეყვანა: გადაამოწმეთ პასუხი"
 
 #: activities/frieze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -8754,9 +8703,6 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "მზად ვარ"
@@ -13140,21 +13086,15 @@ msgid "Backspace: delete the last digit"
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "ციფრები: აკრიფეთ თქვენი პასუხი"
+msgstr "წაშლა: თქვენი პასუხის ჩამოყრა"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეყვანა, გამოტოვება ან ღილაკი Enter: გადაამოწმეთ თქვენი პასუხი"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -13162,12 +13102,9 @@ msgid "(variable boundaries)"
 msgstr ""
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "იპოვეთ ჟანგისფერი პეპელა"
+msgstr "იპოვეთ მოთხოვნილი რიცხვი."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
 msgctxt "Data|"
@@ -13638,12 +13575,9 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication of numbers"
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "რიცხვების გამრავლება"
+msgstr "საჭიროა გამრავლება."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
@@ -17322,12 +17256,9 @@ msgid "Copyright: %1"
 msgstr "საავტორო უფლებები: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Difficult"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "სირთულე"
+msgstr "სირთულის ფილტრი"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -17443,7 +17374,7 @@ msgstr ""
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
-msgstr ""
+msgstr "ფონტის ამრჩევი"
 
 #: activities/menu/ConfigurationItem.qml:378
 msgctxt "ConfigurationItem|"
@@ -17516,7 +17447,7 @@ msgstr "მუსიკა"
 #: activities/menu/Menu.qml:135
 msgctxt "Menu|"
 msgid "Experiment"
-msgstr ""
+msgstr "ექსპერიმენტი"
 
 #: activities/menu/Menu.qml:136
 msgctxt "Menu|"
@@ -18175,7 +18106,7 @@ msgstr ""
 #: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
-msgstr ""
+msgstr "გილოცავთ"
 
 #: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
@@ -20047,7 +19978,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:50
 msgctxt "Data|"
 msgid "above"
-msgstr ""
+msgstr "above"
 
 #: activities/positions/resource/1/Data.qml:45
 #: activities/positions/resource/2/Data.qml:51
@@ -20088,7 +20019,7 @@ msgstr ""
 #: activities/positions/resource/2/Data.qml:26
 msgctxt "Data|"
 msgid "left"
-msgstr ""
+msgstr "მარცხნივ"
 
 #: activities/positions/resource/2/Data.qml:27
 msgctxt "Data|"
@@ -21060,7 +20991,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1 g"
-msgstr ""
+msgstr "%1 გ"
 
 #: activities/scalesboard_weight/resource/1/Data.qml:26
 msgctxt "Data|"
@@ -24747,9 +24678,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "გაუქმება"
