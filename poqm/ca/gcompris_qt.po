@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-01-18 12:06+0100\n"
+"PO-Revision-Date: 2024-01-28 19:28+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -2017,7 +2017,7 @@ msgid ""
 "Voltage or electric potential difference is what makes a current in a "
 "circuit. It is like a \"push\" or \"pull\" for electric charge."
 msgstr ""
-"La diferència de voltatge o potencia elèctrica és el que genera un corrent "
+"La diferència de voltatge o potència elèctrica és el que genera un corrent "
 "en un circuit. És com «empènyer» o «tirar» de la càrrega elèctrica."
 
 #: activities/analog_electricity/TutorialDataset.qml:180
@@ -2547,7 +2547,7 @@ msgstr "La dama i l'unicorn - segle XV"
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr "El dormitori de Van Gogh a Arles - 1888"
+msgstr "El dormitori de van Gogh a Arles - 1888"
 
 # Nota: https://ca.wikipedia.org/wiki/Ambrosius_Bosschaert_el_Vell
 #: activities/babyshapes/resource/board/board7_4.qml:14
@@ -4573,7 +4573,7 @@ msgid ""
 msgstr ""
 "En aquesta activitat descobrireu el joc dels escacs jugant contra "
 "l'ordinador. Mostra les possibles posicions de destinació per a qualsevol "
-"peça seleccionada, el qual ajudarà als infants a entendre com es mouen les "
+"peça seleccionada, el qual ajudarà els infants a entendre com es mouen les "
 "peces. En el primer nivell, l'ordinador és completament aleatori per a donar "
 "el nombre més gran de possibilitats. A mesura que augmenta el nivell, "
 "l'ordinador jugarà millor. Podeu utilitzar els botons de fletxes per a "
@@ -4602,7 +4602,7 @@ msgid ""
 "for 3 seconds."
 msgstr ""
 "Un clic únic en el botó de desfer desfarà un moviment. Un clic únic en el "
-"botó de refer refarà un moviment. Per desfer tots els moviments, premeu i "
+"botó de refer refarà un moviment. Per a desfer tots els moviments, premeu i "
 "mantingueu premut el botó de desfer durant 3 segons."
 
 #: activities/chess/ActivityInfo.qml:30
@@ -4698,7 +4698,7 @@ msgid ""
 msgstr ""
 "En aquesta activitat descobrireu el joc dels escacs jugant contra un amic. "
 "Mostra les possibles posicions de destinació per a qualsevol peça "
-"seleccionada, el qual ajudarà als infants a entendre com es mouen les "
+"seleccionada, el qual ajudarà els infants a entendre com es mouen les "
 "peces.\n"
 "\n"
 "Podreu aconseguir un mat abans si seguiu aquestes senzilles regles:\n"
@@ -4748,7 +4748,7 @@ msgid ""
 msgstr ""
 "En aquesta activitat descobrireu el joc dels escacs jugant només el final "
 "d'una partida. Es mostren les possibles posicions de destinació per a "
-"qualsevol peça seleccionada, el qual ajudarà als infants a entendre com es "
+"qualsevol peça seleccionada, el qual ajudarà els infants a entendre com es "
 "mouen les peces.\n"
 "\n"
 "Podreu aconseguir un mat abans si seguiu aquestes senzilles regles:\n"
@@ -5066,7 +5066,7 @@ msgstr "Chuck Yeager trenca la barrera del so, 1947"
 #: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
-msgstr "Charles Lindbergh creua l'Oceà Atlàntic, 1927"
+msgstr "Charles Lindbergh travessa l'Oceà Atlàntic, 1927"
 
 # Nota: http://en.wikipedia.org/wiki/Hélène_Boucher
 #: activities/chronos/resource/board/board6_1.qml:55
@@ -6755,7 +6755,7 @@ msgstr ""
 #: activities/digital_electricity/TutorialDataset.qml:525
 msgctxt "TutorialDataset|"
 msgid "The component in the middle is a BCD to seven segment converter."
-msgstr "El component en el mig és un convertidor BCD a set segments."
+msgstr "El component del mig és un convertidor BCD a set segments."
 
 #: activities/digital_electricity/TutorialDataset.qml:526
 msgctxt "TutorialDataset|"
@@ -7168,7 +7168,7 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
-"El cavall «renilla». Els cavalls estan adaptats per córrer, permetent-los "
+"El cavall «renilla». Els cavalls estan adaptats per a córrer, permetent-los "
 "escapar ràpidament dels depredadors, i tenen un sentit de l'equilibri "
 "excel·lent. Tenen peülles d'un sol dit."
 
@@ -7216,7 +7216,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr "Aquest animal té la voltant de 20.000 papil·les gustatives."
+msgstr "Aquest animal té al voltant de 20.000 papil·les gustatives."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -7231,7 +7231,7 @@ msgid ""
 "emotions."
 msgstr ""
 "El gat «miola». Els gats són valorats pels humans per a la companyia i la "
-"seva capacitat de perseguir ratolins i altres rosegadors. Ronquen per "
+"seva capacitat de perseguir ratolins i altres rosegadors. Ronquen per a "
 "comunicar diverses emocions."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
@@ -7251,13 +7251,13 @@ msgid ""
 "temperature."
 msgstr ""
 "El porc «rondineja» o «gruny». Els porcs es rebolquen en el fang, "
-"principalment per controlar la seva temperatura corporal."
+"principalment per a controlar la seva temperatura corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
-"Aquest animal es rebolca en el fang per controlar la seva temperatura "
+"Aquest animal es rebolca en el fang per a controlar la seva temperatura "
 "corporal."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
@@ -7329,7 +7329,7 @@ msgid ""
 "can be sheared and used to produce textile fibre."
 msgstr ""
 "L'ovella «bela». La majoria de les races d'ovelles porten un velló de llana. "
-"El velló es pot esquilar i utilitzar per produir fibres tèxtils."
+"El velló es pot esquilar i utilitzar per a produir fibres tèxtils."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
@@ -15040,7 +15040,7 @@ msgstr "Endevina 24"
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr "Calculeu per trobar 24."
+msgstr "Calculeu per a trobar 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
@@ -16130,7 +16130,7 @@ msgstr ""
 "Empra les tecles amunt i avall per a controlar l'empenta.<br/>Empra les "
 "tecles dreta i esquerra per a controlar la direcció.<br/>Has de pilotar la "
 "nau d'en Tux cap a la plataforma d'aterratge.<br/>La plataforma d'aterratge "
-"es posarà en verd quan la velocitat per aterrar sigui segura."
+"es posarà en verd quan la velocitat per a aterrar sigui segura."
 
 #: activities/land_safe/resource/1/Data.qml:30
 #: activities/land_safe/resource/2/Data.qml:29
@@ -18982,7 +18982,7 @@ msgstr "Inici: surt d'una activitat i torna al menú (Ctrl+W o la tecla Esc)"
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
 msgstr ""
-"Fletxes: mostra el nivell actual. Feu clic per seleccionar un altre nivell"
+"Fletxes: mostra el nivell actual. Feu clic per a seleccionar un altre nivell"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -19435,7 +19435,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
 msgstr ""
-"Gràcies a l'equip Tuxpaint per proporcionar els sons següents sota la GPL:"
+"Gràcies a l'equip Tuxpaint per a proporcionar els sons següents sota la GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19803,7 +19803,7 @@ msgid ""
 msgstr ""
 "Cada símbol del codi Morse representa un caràcter de text (lletra o número) "
 "o un signe de procediment i està representat per una seqüència única de "
-"punts i ratlles. La durada d'una ratlla és tres vegades la d'un punt. Per "
+"punts i ratlles. La durada d'una ratlla és tres vegades la d'un punt. Per a "
 "augmentar la velocitat de la comunicació, el codi va ser dissenyat de manera "
 "que les lletres més comunes tenen les seqüències més curtes de punts i "
 "ratlles.\n"
@@ -20672,7 +20672,7 @@ msgstr ""
 "En Samuel|es trobà|malament|després|de|menjar|cinc|gelats|enormes.\n"
 "La nostra|família|fa|vacances|a|la|platja|cada|any.\n"
 "El tiet|Josep|em|va|donar|un|camió|de|joguina|vermell.\n"
-"Quan|acabis|l'arròs|podràs|menjar|un|postre.\n"
+"Quan|acabis|l'arròs|podràs|menjar|les|postres.\n"
 "La|mare|m'ha|demanat|que|jugui|a|l'habitació.\n"
 "Penso|que|tindrem|un|bon|dia."
 
@@ -22331,7 +22331,7 @@ msgctxt "programmingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
-"Hi ha 3 instruccions que pots usar per a codificar i dur en Tux fins el peix:"
+"Hi ha 3 instruccions que pots usar per a codificar i dur en Tux fins al peix:"
 
 #: activities/programmingMaze/programmingMaze.js:98
 msgctxt "programmingMaze|"
@@ -22378,7 +22378,7 @@ msgid ""
 "dead-end, or when Tux reaches the fish."
 msgstr ""
 "- Les instruccions s'executaran en ordre fins que no en quedi cap més, fins "
-"a un carreró sense sortida o quan en Tux arribi fins el peix."
+"a un carreró sense sortida o quan en Tux arribi fins al peix."
 
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
@@ -25559,7 +25559,7 @@ msgid ""
 "diving planes) to reach the end point."
 msgstr ""
 "Controleu les diferents parts del submarí (el motor, els tancs de llast i "
-"els alerons d'immersió) per a arribar fins el punt final."
+"els alerons d'immersió) per a arribar fins al punt final."
 
 #: activities/submarine/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -26071,7 +26071,7 @@ msgstr "Primer nombre des de l'1 fins al 4."
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Primer nombre des de l'5 fins al 9."
+msgstr "Primer nombre des del 5 fins al 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
