@@ -2,13 +2,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2017, 2018, 2020.
-# Frederico Gonçalves Guimarães <frederico@teia.bio.br>, 2019, 2021, 2023.
+# Frederico Gonçalves Guimarães <frederico@teia.bio.br>, 2019, 2021, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 03:10+0000\n"
-"PO-Revision-Date: 2023-02-08 17:08-0300\n"
+"PO-Revision-Date: 2024-01-30 21:55-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Encontre os números que estão faltando."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -205,18 +205,16 @@ msgstr "Crie a célula Braille para a letra."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Selecione um número ou um símbolo e clique na área de destino. Cada símbolo "
-"deve aparecer apenas uma vez em uma linha, em uma coluna e em uma sub-"
-"região, se houver."
+"Selecione um número e clique na posição de destino. Cada número deve "
+"aparecer somente uma vez em cada linha e coluna. Os números nas células de "
+"uma grade devem produzir o resultado apresentado, ao serem combinados com o "
+"operador fornecido."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -486,7 +484,7 @@ msgstr "Encontre o numerador e o denominador corretos da fração representada"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Reproduza e complete o modelo do friso."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -560,13 +558,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Encontre o valor correspondente ao ponto determinado na reta numérica."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Posicione o valor fornecido na reta numérica."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -575,6 +573,7 @@ msgstr ""
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
+"Atribua as classes gramaticais solicitadas às palavras correspondentes."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -595,7 +594,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "Use os quatro números e os operadores para chegar ao resultado 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1332,11 +1331,11 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Digite as palavras no seu teclado antes delas chegarem ao chão."
 
-#~ msgid "play checkers against the computer"
-#~ msgstr "jogue damas contra o computador"
-
 #~ msgid "put here in comment the text for the intro voice"
 #~ msgstr "coloque aqui no comentário o texto da introdução da voz"
+
+#~ msgid "play checkers against the computer"
+#~ msgstr "jogue damas contra o computador"
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "

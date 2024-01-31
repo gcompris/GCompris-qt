@@ -124,7 +124,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; è disponibile sui seguenti sistemi operativi: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Richiede una scheda 3D con supporto <emphasis
 >OpenGL 2.1</emphasis
-> o versione successiva. Profondità di colore a 32 bit obbligatoria</para>
+> o versione successiva. Profondità di colore a 32 bit obbligatoria.</para>
 </sect1>
 
 <sect1 id="installation">
@@ -178,7 +178,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Ogni icona rappresenta un'attività. Intorno a ciascuna di esse, si possono trovare piccole icone che forniscono ulteriori informazioni circa l'attività. Un semplice clic sull'icona condurrà a un'attività o al menu di un'attività. Ci sono 8 sezioni (categorie) di attività, posizionate sulla parte superiore o sulla sinistra (solo se l'orientazione è verticale). Ad esempio, vi è la sezione «Giochi da tavolo», che comprende giochi da tavolo, come gli scacchi, filetto o forza quattro.</para>
+>Ogni icona rappresenta un'attività. Intorno a ciascuna di esse, si possono trovare piccole icone che forniscono ulteriori informazioni circa l'attività. Un semplice clic sull'icona ti condurrà a un'attività o al menu di un'attività. Ci sono 8 sezioni (categorie) di attività, posizionate sulla parte superiore o sulla sinistra (solo se l'orientazione è verticale). Ad esempio, vi è la sezione «Giochi da tavolo», che comprende giochi da tavolo, come gli scacchi, filetto o forza quattro.</para>
 <para
 >Alcune categorie hanno sottocategorie per filtrare meglio le attività. Per le attività di matematica, abbiamo tre sottocategorie: enumerazione, aritmetica e misure.</para>
 <para
@@ -555,6 +555,12 @@ for example 'xx.yy.zz'
 >--launch activity</entry>
 <entry
 >Specifica l'attività all'avvio di GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level level</entry>
+<entry
+>Specifica il livello sul quale avviare l'attività specificata dall'opzione --launch all'avvio di GCompris. Ignorato se non è presente l'opzione --launch o se il livello specificato non è valido.</entry>
 </row>
 <row>
 <entry
