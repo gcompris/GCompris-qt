@@ -84,11 +84,24 @@ If there are not enough images to represent all your classes, let us know and we
 - `4.svg`: purple triangle, used for pronouns in English.
 - `5.svg`: red circle, used for verbs in English.
 - `6.svg`: small orange circle, used for adverbs in English.
-- `7.svg`: pink rectangle, used for conjunctions in English.
+- `7.svg`: pink horizontal rectangle, used for conjunctions in English.
 - `8.svg`: green arc, used for prepositions in English.
 - `9.svg`: yellow exclamation mark, used for interjections in English.
-- `10.svg`: inverted small light blue triangle, not used in English.
-- `11.svg`: inverted medium dark blue triangle, not used in English.
+- `10.svg`: inverted small ping triangle, not used in English.
+- `11.svg`: inverted medium orange triangle, not used in English.
+- `12.svg`: inverted red arc, not used in English.
+- `13.svg`: green vertical rectangle, not used in English.
+- `14.svg`: inverted red triangle, not used in English.
+- `15.svg`: inverted pink triangle, not used in English.
+- `16.svg`: half blue circle, not used in English.
+- `17.svg`: half small black circle, not used in English.
+- `18.svg`: green rhombus, not used in English.
+- `19.svg`: small purple rhombus, not used in English.
+- `20.svg`: medium dark blue rhombus, not used in English.
+- `21.svg`: light blue star, not used in English.
+- `22.svg`: small black star, not used in English.
+- `23.svg`: small orange plus, not used in English.
+- `24.svg`: light blue overlapped circles, not used in English.
 
 ## Exercises definition
 
