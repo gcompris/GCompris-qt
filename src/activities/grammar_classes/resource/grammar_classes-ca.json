@@ -1,0 +1,137 @@
+{
+  "levels": [
+    {
+      "objective": "Troba noms.",
+      "difficulty": "1",
+      "exercise": "small",
+      "goal": "nou"
+    },
+    {
+      "objective": "Troba verbs.",
+      "difficulty": "2",
+      "exercise": "small",
+      "goal": "vrb"
+    },
+    {
+      "objective": "Troba verbs.",
+      "difficulty": "1",
+      "exercise": "medium",
+      "goal": "vrb"
+    },
+    {
+      "objective": "Troba determinants.",
+      "difficulty": "2",
+      "exercise": "medium",
+      "goal": "dtm"
+    },
+    {
+      "objective": "Troba adjectius.",
+      "difficulty": "2",
+      "exercise": "medium",
+      "goal": "adj"
+    },
+    {
+      "objective": "Troba adjectius.",
+      "difficulty": "3",
+      "exercise": "large",
+      "goal": "adj"
+    },
+    {
+      "objective": "Troba preposicions.",
+      "difficulty": "4",
+      "exercise": "large",
+      "goal": "ppt"
+    },
+    {
+      "objective": "Troba conjuncions.",
+      "difficulty": "5",
+      "exercise": "large",
+      "goal": "cjt"
+    }
+  ],
+  "dataset" : {
+    "small" : [
+      { "sentence": "Aquesta herba és molt verda."
+      , "answer":   "dtm     nou  vrb adv  adj"
+      },
+      { "sentence": "El gos persegueix un ocellet."
+      , "answer":   "dtm nou vrb      dtm nou"
+      },
+      { "sentence": "Els núvols són grisos."
+      , "answer":   "dtm nou    vrb  adj  "
+      }
+    ],
+    "medium" : [
+      { "sentence": "Aquestes maduixes grans fan molt bona olor."
+      , "answer":   "dtm         nou    adj  vrb adv  adj  nou"
+      },
+      { "sentence": "El castell antic del poble (està restaurat) (des de) fa temps."
+      , "answer":   "dtm nou    adj ppt+dtm nou      vrb           ppt   vrb  nou"
+      },
+      { "sentence": "Els dos germans caminen junts (fins a) la casa vermella."
+      , "answer":   "dtm adj  nou      vrb    adv     ppt   dtm nou  adj"
+      },
+      { "sentence": "La meva àvia rega les plantes del balcó principal."
+      , "answer":   "dtm prn  nou  vrb dtm  nou  ppt+dtm nou   adj"
+      }
+    ],
+    "large" : [
+      { "sentence": "Aquest cap de setmana em posaré les meves botes noves i aniré a fer excursions per la muntanya."
+      , "answer":   "dtm    nou ppt nou    prn  vrb  dtm  prn   nou   adj cjt vrb ppt vrb nou       ppt dtm nou"
+      },
+      { "sentence": "Avui per esmorzar menjaré la poma vermella i una infusió calenta."
+      , "answer":   "adv  ppt  nou       vrb   dtm nou   adj   cjt dtm   nou    adj"
+      },
+      { "sentence": "Aquesta autocarava nova té espai suficient (per a) quatre persones i dues bicicletes."
+      , "answer":   "dtm     nou        adj  vrb  nou adj         ppt    adj     nou   cjt adj    nou "
+      }
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "nou",
+      "wordClass": "Nom",
+      "image": "1.svg"
+    },
+    {
+      "code": "dtm",
+      "wordClass": "Determinant",
+      "image": "2.svg"
+    },
+    {
+      "code": "adj",
+      "wordClass": "Adjectiu",
+      "image": "3.svg"
+    },
+    {
+      "code": "prn",
+      "wordClass": "Pronom",
+      "image": "4.svg"
+    },
+    {
+      "code": "vrb",
+      "wordClass": "Verb",
+      "image": "5.svg"
+    },
+    {
+      "code": "adv",
+      "wordClass": "Adverbi",
+      "image": "6.svg"
+    },
+    {
+      "code": "cjt",
+      "wordClass": "Conjuncció",
+      "image": "7.svg"
+    },
+    {
+      "code": "ppt",
+      "wordClass": "Preposició",
+      "image": "8.svg"
+    },
+    {
+      "code": "itj",
+      "wordClass": "Interjecció",
+      "image": "9.svg"
+    }
+  ]
+}
