@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-28 22:31-0300\n"
+"PO-Revision-Date: 2024-01-30 21:49-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -3236,7 +3236,7 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completar o quebra-cabeça exige paciência e habilidade em aritmética."
+msgstr "Completar o quebra-cabeça exige paciência e habilidades aritméticas."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3251,11 +3251,11 @@ msgid ""
 msgstr ""
 "Selecione um número na lista e clique em sua posição de destino para "
 "preencher a grade. Cada número deve aparecer apenas uma vez em uma linha e "
-"em uma coluna. Gaiolas são grupos de células que fornecem informações sobre "
-"como preenchê-las. Gaiolas feitas de mais de uma célula fornecem um "
-"resultado e um operador: todos os números da gaiola, quando combinados "
-"usando o operador, devem produzir o resultado. Gaiolas feitas de apenas uma "
-"célula fornecem diretamente o número para entrar."
+"em uma coluna. Grades são grupos de células que fornecem informações sobre "
+"como preenchê-las. Grades feitas de mais de uma célula fornecem um resultado "
+"e um operador: todos os números da grade, quando combinados usando o "
+"operador, devem produzir o resultado. Grades feitas de apenas uma célula "
+"fornecem diretamente o número para entrar."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -3267,25 +3267,25 @@ msgstr "Pequenas grades com operador +."
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Pequenas grades com operador + e -."
+msgstr "Grades pequenas com operadores + e −."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Pequenas grades com operador +, - e  ×."
+msgstr "Grades pequenas com operadores +, − e ×,"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Grades médias com operador +, - e  ×."
+msgstr "Grades médias com operadores +, − e  ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Grades grandes com operador +, - , × e /."
+msgstr "Grades grandes com operadores +, −, × e /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -9818,7 +9818,7 @@ msgstr "Reproduza e complete o friso."
 #: activities/frieze/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Aprender algoritmos"
+msgstr "Aprender algoritmos."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9858,7 +9858,7 @@ msgstr "Tab: alternar entre editar o friso ou ver o modelo"
 #: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
-msgstr "Estou pronto"
+msgstr "Estou pronto(a)"
 
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
@@ -14416,47 +14416,47 @@ msgstr "Posicione o número fornecido na reta numérica."
 #: activities/graduated_line_use/resource/1/Data.qml:21
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "Graduação a ser encontrada entre 1 e 5."
+msgstr "A régua vai de 1 a 5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Graduação a ser encontrada entre 1 e 7."
+msgstr "A régua vai de 1 a 7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Graduação a ser encontrada entre 1 e 10."
+msgstr "A régua vai de 1 a 10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Graduação a ser encontrada entre 0 e 20."
+msgstr "A régua vai de 0 a 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Graduação a ser encontrada entre 0 e 50."
+msgstr "A régua vai de 0 a 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Graduação a ser encontrada entre 0 e 100."
+msgstr "A régua vai de 0 a 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr "Graduação a ser encontrada entre 0 e 1.000."
+msgstr "A régua vai de 0 a 1.000."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr "Graduação a ser encontrada entre 0 e 10.000."
+msgstr "A régua vai de 0 a 10.000."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr "Graduação a ser encontrada entre 0 e 1.000.000."
+msgstr "A régua vai de 0 a 1.000.000."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
@@ -14476,7 +14476,7 @@ msgstr "Identifique as classes gramaticais nas frases seguintes."
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr "Aprenda a identificar as classes gramaticais."
+msgstr "Aprender a identificar as classes gramaticais."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
@@ -14491,8 +14491,8 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecione uma classe gramatical na lista, selecione a caixa sob uma palavra "
-"e atribua a ela a classe."
+"Selecione uma classe gramatical na lista e, depois, selecione a caixa sob "
+"uma palavra para atribuir a classe gramatical a ela."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -14504,14 +14504,14 @@ msgstr "Deixe a caixa em branco se nenhuma classe corresponder."
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
-"Setas para cima e para baixo ou tabulação: alterne entre classes e palavras"
+"Setas para cima e para baixo ou tabulação: alternar entre classes e palavras"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
 msgstr ""
-"Setas para a esquerda e para a direita: selecione itens em classes ou "
+"Setas para a esquerda e para a direita: selecionar itens nas classes ou nas "
 "palavras"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
@@ -14521,19 +14521,19 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Espaço: atribua a classe selecionada à palavra selecionada e selecione a "
-"próxima palavra"
+"Espaço: atribuir a classe selecionada à palavra selecionada e, depois, "
+"selecionar a próxima palavra"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Backspace: selecione a palavra anterior"
+msgstr "Backspace: selecionar a palavra anterior"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr "análise gramatical"
+msgstr "Análise gramatical"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
@@ -14554,8 +14554,8 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecione uma classe gramatical na lista, selecione a caixa sob uma palavra "
-"e atribua a ela a classe."
+"Selecione uma classe gramatical na lista e, depois, selecione a caixa sob "
+"uma palavra para atribuir a classe gramatical a ela."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
@@ -14579,8 +14579,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecione a classe gramatical na lista, selecione a caixa abaixo de uma "
-"palavra e atribua a ela a classe."
+"Selecione a classe gramatical na lista e, depois, selecione a caixa sob uma "
+"palavra para atribuir a classe gramatical a ela."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
@@ -14610,8 +14610,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Selecione a classe gramatical na lista, selecione a caixa abaixo de uma "
-"palavra e atribua a ela a classe."
+"Selecione a classe gramatical na lista e, depois, selecione a caixa sob uma "
+"palavra para atribuir a classe gramatical a ela."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -27133,7 +27133,7 @@ msgstr "Cancelar"
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
 msgid "I am Ready"
-msgstr "Estou pronto"
+msgstr "Estou pronto(a)"
 
 #: core/Tutorial.qml:139
 msgctxt "Tutorial|"
