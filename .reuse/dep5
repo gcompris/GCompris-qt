@@ -2311,6 +2311,10 @@ Files: src/activities/grammar_classes/*.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_classes/resource/grammar_classes-ca.json
+Copyright: 2024 Josep M. Ferrer
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_classes/resource/grammar_classes-el.json
 Copyright: 2024 Yannis Kaskamanidis
 License: CC-BY-SA-4.0
