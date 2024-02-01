@@ -1,0 +1,107 @@
+{
+  "levels": [
+    {
+      "objective": "Troba noms, verbs i determinants.",
+      "difficulty": "1",
+      "exercise": "small",
+      "goal": "nou vrb dtm"
+    },
+    {
+      "objective": "Troba aquestes classes grammaticals.",
+      "difficulty": "2",
+      "exercise": "medium",
+      "goal": "nou vrb adj adv dtm"
+    },
+    {
+      "objective": "Troba aquestes classes grammaticals.",
+      "difficulty": "3",
+      "exercise": "large",
+      "goal": "nou dtm vrb adj adv ppt prn"
+    }
+  ],
+  "dataset" : {
+    "small" : [
+      { "sentence": "La flor és molt bonica."
+      , "answer":   "dtm nou vrb adv adj"
+      },
+      { "sentence": "El gat dorm a la cuina."
+      , "answer":   "dtm nou vrb ppt dtm nou"
+      },
+      { "sentence": "El sol fa molta llum."
+      , "answer":   "dtm nou vrb adv nou"
+      }
+    ],
+    "medium" : [
+      { "sentence": "Aquest gelat de vainilla és molt bo."
+      , "answer":   "dtm    nou   ppt  nou   vrb adv adj"
+      },
+      { "sentence": "El carrer del mercat (està tallat) al trànsit."
+      , "answer":   "dtm nou ppt+dtm nou       vrb    ppt+dtm nou"
+      },
+      { "sentence": "El gos i el gat sovint juguen junts."
+      , "answer":   "dtm nou cjt dtm nou adv vrb   adv"
+      },
+      { "sentence": "Els núvols no (deixen veure) la lluna."
+      , "answer":   "dtm nou    adv    vrb        dtm nou"
+      }
+    ],
+    "large" : [
+      { "sentence": "Tota la família anem al cinema una vegada al mes."
+      , "answer":   "adv  dtm nou    vrb ppt+dtm nou dtm adv ppt+dtm nou"
+      },
+      { "sentence": "Ara els infants fan els seus deures junts en el menjador."
+      , "answer":   "adv dtm nou     vrb dtm  prn  nou    adv ppt dtm nou"
+      },
+      { "sentence": "Aquest ball (es diu) tango, la cosina i el cosí sovint el ballen a casa."
+      , "answer":   "dtm    nou     vrb       nou  dtm  nou  cjt dtm nou adv  prn vrb  ppt nou"
+      }
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "nou",
+      "wordClass": "Nom",
+      "image": "1.svg"
+    },
+    {
+      "code": "dtm",
+      "wordClass": "Determinant",
+      "image": "2.svg"
+    },
+    {
+      "code": "adj",
+      "wordClass": "Adjectiu",
+      "image": "3.svg"
+    },
+    {
+      "code": "prn",
+      "wordClass": "Pronom",
+      "image": "4.svg"
+    },
+    {
+      "code": "vrb",
+      "wordClass": "Verb",
+      "image": "5.svg"
+    },
+    {
+      "code": "adv",
+      "wordClass": "Adverbi",
+      "image": "6.svg"
+    },
+    {
+      "code": "cjt",
+      "wordClass": "Conjunció",
+      "image": "7.svg"
+    },
+    {
+      "code": "ppt",
+      "wordClass": "Preposició",
+      "image": "8.svg"
+    },
+    {
+      "code": "itj",
+      "wordClass": "Interjecció",
+      "image": "9.svg"
+    }
+  ]
+}

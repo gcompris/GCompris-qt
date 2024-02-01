@@ -2282,6 +2282,10 @@ Files: src/activities/grammar_analysis/examples/*.json
 Copyright: 2023 Bruno Anselme
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/resource/grammar_analysis-ca.json
+Copyright: 2024 Josep M. Ferrer
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/resource/grammar_analysis-el.json
 Copyright: 2024 Yannis Kaskamanidis
 License: CC-BY-SA-4.0
