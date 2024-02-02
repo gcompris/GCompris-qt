@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-06-13 22:33+0200\n"
+"PO-Revision-Date: 2023-07-24 21:30+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -3277,13 +3277,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Ein Calcudoku lösen."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -4733,24 +4733,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Klicke auf den OK-Knopf, um deine Antwort zu überprüfen."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Die Fotografie des Mondes steht unter dem Copyright der NASA. Die "
-"Weltraumgeräusche stammen aus Tuxpaint und Vegastrike, die beide unter der "
-"GPL veröffentlicht wurden. Die Bilder der Verkehrsmittel stehen unter dem "
-"Copyright von Frank Doucet. Die Jahreszahlen der Verkehrsmittel stammen von "
-"&lt;https://www.wikipedia.org&gt;."
+"Die Fotografie des Mondes steht unter dem Copyright der NASA. Die Bilder der "
+"Verkehrsmittel stehen unter dem Copyright von Frank Doucet. Die Jahreszahlen "
+"der Verkehrsmittel stammen von &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19085,12 +19076,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Schwierigkeitsstufen:"
+msgstr "Schwierigkeitsstufen"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
