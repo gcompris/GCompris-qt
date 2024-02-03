@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-10-04 09:00+0300\n"
-"Last-Translator: Aleś Bułojčyk <alex73mail@gmail.com>\n"
+"PO-Revision-Date: 2024-02-02 15:07+0300\n"
+"Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Crowdin-Project: gcompris-by\n"
 "X-Crowdin-Project-ID: 418508\n"
 "X-Crowdin-Language: be\n"
@@ -137,12 +137,9 @@ msgstr "Дзяленне лікаў"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце адсутныя прылеглыя лікі."
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
@@ -187,60 +184,39 @@ msgid "Find numbers between 0 and 100."
 msgstr "Лічбы паміж 1 і 8."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце наступны лік."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце папярэдні лік."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце лік па-сярэдзіне."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце адсутныя лікі."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце наступныя лікі."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце папярэднія лікі."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце лікі па-сярэдзіне."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 #, fuzzy
@@ -4462,27 +4438,6 @@ msgstr "Захапіце ўсе шашкі суперніка перад тым 
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Checkers is played by two opponents, on opposite sides of the gameboard. "
-#| "One player has the dark pieces; the other has the light pieces. Players "
-#| "alternate turns. A player may not move an opponent's piece. A move "
-#| "consists of moving a piece diagonally to an adjacent unoccupied square. "
-#| "If the adjacent square contains an opponent's piece, and the square "
-#| "immediately beyond it is vacant, the piece may be captured (and removed "
-#| "from the game) by jumping over it.\n"
-#| "Only the dark squares of the checkered board are used. A piece may move "
-#| "only diagonally into an unoccupied square. Capturing is mandatory. The "
-#| "player without pieces remaining, or who cannot move due to being blocked, "
-#| "loses the game.\n"
-#| "When a man reaches the crownhead or kings row (the farthest row forward), "
-#| "it becomes a king, and is marked by placing an additional piece on top of "
-#| "the first man, and acquires additional powers including the ability to "
-#| "move backwards. If there is a piece in a diagonal that a king can "
-#| "capture, he can move any distance along the diagonal, and may capture an "
-#| "opposing man any distance away by jumping to any of the unoccupied "
-#| "squares immediately beyond it.\n"
 msgctxt "ActivityInfo|"
 msgid ""
 "Checkers is played by two opponents, on opposite sides of the gameboard. One "
@@ -4519,7 +4474,7 @@ msgstr ""
 "здольнасці - у тым ліку магчымасць перасоўвацца назад. Калі ў дыаганальным "
 "накірунку ад караля трапляецца шашка, то ён можа перасунуцца на любую "
 "адлегласць уздоўж гэтай дыаганалі і захапіць шашку, скочыўшы на любую клетку "
-"па-за шашкай.\n"
+"па-за шашкай."
 
 #: activities/checkers/ActivityInfo.qml:28
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -5434,6 +5389,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n гадзіна"
 msgstr[1] "%n гадзіны"
 msgstr[2] "%n гадзін"
+msgstr[3] ""
 
 #: activities/clockgame/Clockgame.qml:115
 #, fuzzy, qt-format
@@ -5443,6 +5399,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n хвіліна"
 msgstr[1] "%n хвіліны"
 msgstr[2] "%n хвілін"
+msgstr[3] ""
 
 #: activities/clockgame/Clockgame.qml:118
 #, fuzzy, qt-format
@@ -5460,6 +5417,7 @@ msgstr[2] ""
 "%n секунд\n"
 "#-#-#-#-#  gcompris_qt(4).po (gcompris-by)  #-#-#-#-#\n"
 "%n секунд"
+msgstr[3] ""
 
 #: activities/clockgame/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -24710,6 +24668,7 @@ msgid_plural "Place %n boy(s) "
 msgstr[0] "Размясціце %n хлопчыка "
 msgstr[1] "Размясціце %n хлопчыкаў "
 msgstr[2] "Размясціце %n хлопчыкаў "
+msgstr[3] ""
 
 #: activities/share/share.js:102
 #, fuzzy, qt-format
@@ -24726,6 +24685,7 @@ msgid_plural "and %n girl(s) in the center. "
 msgstr[0] "і %n дзяўчынку ў цэнтр. "
 msgstr[1] "і %n дзяўчынкі ў цэнтр. "
 msgstr[2] "і %n дзяўчынак у цэнтр. "
+msgstr[3] ""
 
 #: activities/share/share.js:106
 #, fuzzy, qt-format
@@ -24750,6 +24710,7 @@ msgstr[2] ""
 "Затым пароўну падзяліце %n цукерак паміж імі.\n"
 "#-#-#-#-#  gcompris_qt(4).po (gcompris-by)  #-#-#-#-#\n"
 "Затым пароўну падзяліце %n цукерак паміж імі."
+msgstr[3] ""
 
 #: activities/share/Share.qml:348
 #, qt-format
