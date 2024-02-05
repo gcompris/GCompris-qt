@@ -26938,14 +26938,3 @@ msgstr "Пропусни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
-
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Find both numbers."
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "Намери и двете числа."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"

@@ -26228,10 +26228,3 @@ msgstr "スキップ"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "スタート"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Division of numbers"
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "割り算"
