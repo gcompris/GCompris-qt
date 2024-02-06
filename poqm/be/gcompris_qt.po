@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-02 15:07+0300\n"
+"PO-Revision-Date: 2024-02-05 22:37+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -128,12 +128,9 @@ msgstr "Праверыць адказы"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце прылеглыя лікі"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
@@ -143,45 +140,30 @@ msgstr "Знайдзіце адсутныя прылеглыя лікі."
 
 #. intro: "Find the missing numbers." Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Вывучайце простыя лікі."
+msgstr "Навучыцеся ўпарадкаваць лікі."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Знайдзіце слушную дату і выберыце яе на календары."
+msgstr "Знайдзіце загаданыя лікі і перацягніце іх на адпаведную пляцоўку."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайдзіце лічбы паміж 1 і 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Лічбы паміж 0 і 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Лічбы паміж 0 і 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -219,20 +201,14 @@ msgid "Find the in-between numbers."
 msgstr "Знайдзіце лікі па-сярэдзіне."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Лічбы паміж -10 і -1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Лічбы паміж -10 і 10."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1038,12 +1014,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Вывучыце табліцу множання ліку 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Табліца множання ад 1 да 10."
+msgstr "Практыкуйцеся з табліцамі множання ад 1 да 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1133,12 +1106,9 @@ msgid "Learn division table of 10."
 msgstr "Вывучыце табліцу дзялення ліку 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Табліца множання ад 1 да 10."
+msgstr "Практыкуйцеся з табліцамі дзялення ад 1 да 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1230,28 +1200,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Вывучыце табліцу адымання ліку 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Суадносьце лічбы да 2."
+msgstr "Адыманне ад лікаў да 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Суадносьце лічбы да 2."
+msgstr "Адыманне ад лікаў да 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Суадносьце лічбы да 2."
+msgstr "Адыманне ад лікаў да 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1341,28 +1302,19 @@ msgid "Learn addition table of 10."
 msgstr "Вывучыце табліцу складання ліку 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Складанне зорак да 10."
+msgstr "Складанне лікаў да 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Складанне зорак да 10."
+msgstr "Складанне лікаў да 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Складанне зорак да 10."
+msgstr "Складанне з вынікам да 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1460,17 +1412,12 @@ msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Гуляйце з сябрам. Па чарзе пстрыкайце па квадраціках, у якія хочаце пакласці "
+"Гуляйце з Туксам. Па чарзе пстрыкайце па лініях, у якія хочаце пакласці "
 "фішку. Пераможа той, хто першым утворыць радок з чатырох фішак."
 
 #: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
@@ -1481,6 +1428,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
+"Вы можаце выбраць узровень складанасці, карыстаючыся клавішамі стрэлак. Тукс "
+"будзе гуляць лепей, калі вы павялічваеце ўзровень."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -1645,18 +1594,13 @@ msgstr ""
 "павярнуць яго ці па кнопцы інфармацыі, каб атрымаць даведку пра яго."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You can click on the switch to open and close it. You can change the "
-#| "rheostat value by dragging its slider."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can click on the switch to open and close it. Likewise, you can change "
 "the rheostat value by dragging its slider."
 msgstr ""
-"Вы можаце пстрыкнуць па выключальніку, каб уключыць ці выключыць яго. Вы "
-"можаце мяняць параметры рэастату, перацягваннем ягоны паўзунок."
+"Вы можаце пстрыкнуць па выключальніку, каб уключыць ці выключыць яго. "
+"Таксама вы можаце мяняць параметры рэастату, перацягваннем ягоны паўзунок."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1669,12 +1613,6 @@ msgstr ""
 "прасторы."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In order to repair a broken bulb or LED, click on it after disconnecting "
-#| "it from the circuit. The simulation is updated in real time by any user "
-#| "action."
 msgctxt "ActivityInfo|"
 msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
@@ -1720,18 +1658,12 @@ msgstr ""
 "быць шлях, каб працякаць ад аднаго электрода батарэі да другога."
 
 #: activities/analog_electricity/components/Battery.qml:19
-#, fuzzy
-#| msgctxt "Battery|"
-#| msgid ""
-#| "If the current in a circuit is too high then the battery can be damaged. "
-#| "Wires can be used to connect components and create the circuit."
 msgctxt "Battery|"
 msgid ""
 "If the current in a circuit is too high then the battery can be damaged."
 msgstr ""
 "У выпадку, калі сіла току ў ланцугу завысокая, то батарэя можа быць "
-"пашкоджаная. Для злучэння кампанентаў і ўтварэння ланцуга выкарыстоўваюцца "
-"правады."
+"пашкоджаная."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Battery.qml:21
@@ -1898,48 +1830,33 @@ msgstr ""
 "працаваць."
 
 #: activities/analog_electricity/TutorialDataset.qml:102
-#, fuzzy
-#| msgctxt "Battery|"
-#| msgid ""
-#| "If the current in a circuit is too high then the battery can be damaged. "
-#| "Wires can be used to connect components and create the circuit."
 msgctxt "TutorialDataset|"
 msgid ""
 "The travelling path is called a circuit. Electrical devices can work only in "
 "a closed circuit. Wires can be used to connect devices and create the "
 "circuit."
 msgstr ""
-"У выпадку, калі сіла току ў ланцугу завысокая, то батарэя можа быць "
-"пашкоджаная. Для злучэння кампанентаў і ўтварэння ланцуга выкарыстоўваюцца "
-"правады."
+"Шлях праходжання току называецца ланцугом. Электронныя прыборы могуць "
+"працаваць толькі ў замкнёным ланцугу. Для ўтварэння ланцугу, для падключэння "
+"прыбораў выкарыстоўваюцца праваднікі."
 
 #: activities/analog_electricity/TutorialDataset.qml:103
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "For a more detailed description about the NOR gate, select it and click "
-#| "on the info button."
 msgctxt "TutorialDataset|"
 msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
 msgstr ""
-"Для атрымання больш падрабязнага апісання элемента \"ЦІ-НЕ\" выберыце яго і "
-"пстрыкніце па кнопцы інфармацыі."
+"Для атрымання больш падрабязнага апісання батарэі ці лямпачкі выберыце "
+"элемент і пстрыкніце па кнопцы інфармацыі."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "To connect two terminals, click on a first terminal, then on a second "
-#| "terminal."
 msgctxt "TutorialDataset|"
 msgid ""
 "Turn on the bulb using the provided battery. To connect two terminals, click "
 "on a terminal, then on a second terminal."
 msgstr ""
-"Для злучэння двух вывадаў, пстрыкніце па першаму вываду, а затым па другому "
-"вываду."
+"Уключыце лямпачку карыстаючыся наяўнай батарэей. Для злучэння двух клем, "
+"пстрыкніце па адной, а затым па другой."
 
 #: activities/analog_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
@@ -1996,70 +1913,42 @@ msgstr ""
 "Надта вялікі ток у электрычнай схеме можа пашкодзіць падлучаныя прыборы."
 
 #: activities/analog_electricity/TutorialDataset.qml:134
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In order to repair a broken bulb or LED, click on it after disconnecting "
-#| "it from the circuit. The simulation is updated in real time by any user "
-#| "action."
 msgctxt "TutorialDataset|"
 msgid ""
 "To repair a broken bulb in this activity, click on it after disconnecting it "
 "from the circuit. Don't forget to disable the delete button after removing "
 "the connected wires."
 msgstr ""
-"Каб адрамантаваць пашкоджаную лямпачку ці светладыёд, пстрыкніце па ім, "
-"папярэдне адключыўшы з ланцугу. Сімуляцыя ўзнаўляецца ў рэальным часе пры "
-"любым дзеянні карыстальніка."
+"Каб адрамантаваць пашкоджаную лямпачку ці светладыёд у гэтым практыкаванні, "
+"пстрыкніце па ім, папярэдне адключыўшы з ланцугу. Не забудзце адціснуць "
+"кнопку выдалення пасля выдалення падлучаных праваднікоў."
 
 #: activities/analog_electricity/TutorialDataset.qml:135
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the numbers by connecting the dots in the correct order."
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Намалюйце лічбу, злучаючы кропкі ў слушным парадку."
+msgstr "Выведзіце са строю лямпачку, далучыўшы яе да дзвух батарэй."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
-#, fuzzy
-#| msgctxt "Switch1|"
-#| msgid ""
-#| "Switch can connect or disconnect the conducting path in an electrical "
-#| "circuit."
 msgctxt "TutorialDataset|"
 msgid ""
 "A switch can connect or disconnect the current travelling path or a circuit."
-msgstr ""
-"Выключальнік можа замыкаць ці размыкаць праваднік у электрычным ланцугу."
+msgstr "Выключальнік можа замыкаць ці размыкаць шлях для току альбо ланцуг."
 
 #: activities/analog_electricity/TutorialDataset.qml:149
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "You can click on a switch component to open and close it."
 msgctxt "TutorialDataset|"
 msgid "You can click on the switch to open and close it."
 msgstr "Для ўключэння ці выключэння выключальніка пстрыкніце па ім."
 
 #: activities/analog_electricity/TutorialDataset.qml:150
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "Create a circuit using the provided components so that the bulb glows "
-#| "only when both of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when the switch is on."
 msgstr ""
 "Стварыце схему пры дапамозе дадзеных прыбораў такім чынам, каб лямпачка "
-"ўключалася толькі калі замкнутыя абодва выключальніка."
+"ўключалася толькі калі выключальнік замкнёны."
 
 #: activities/analog_electricity/TutorialDataset.qml:163
-#, fuzzy
-#| msgctxt "Connection|"
-#| msgid ""
-#| "A simple connection point to connect several wires in an electrical "
-#| "circuit."
 msgctxt "TutorialDataset|"
 msgid ""
 "A simple connector can be used to connect several wires in an electrical "
@@ -2067,18 +1956,13 @@ msgid ""
 msgstr "Простая клема для злучэння некалькіх правадоў у электрычным ланцугу."
 
 #: activities/analog_electricity/TutorialDataset.qml:164
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "Create a circuit using the provided components so that the bulb glows "
-#| "only when both of the switches are turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Create a circuit so that one bulb should be always lit and the other should "
 "be lit only when the switch is on."
 msgstr ""
-"Стварыце схему пры дапамозе дадзеных прыбораў такім чынам, каб лямпачка "
-"ўключалася толькі калі замкнутыя абодва выключальніка."
+"Утварыце ланцуг так, каб адная лямпачка заўсёды свяцілася, а другая "
+"ўключалася б толькі тады, калі замкнёны выключальнік."
 
 #: activities/analog_electricity/TutorialDataset.qml:177
 msgctxt "TutorialDataset|"
@@ -2119,12 +2003,9 @@ msgstr ""
 "абазначаецца сімвалам V."
 
 #: activities/analog_electricity/TutorialDataset.qml:181
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Light the bulb using the provided XOR gate."
 msgctxt "TutorialDataset|"
 msgid "Light the bulb and observe the displayed values."
-msgstr "Уключыце лямпачку пра дапамозе дадзенага элемента \"выключнае ЦІ\"."
+msgstr "Уключыце лямпачку і назірайце за значэннямі на дысплэі."
 
 #: activities/analog_electricity/TutorialDataset.qml:194
 msgctxt "TutorialDataset|"
@@ -2147,34 +2028,23 @@ msgstr ""
 "як Ω."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using the provided components."
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb so that the bulb glows with 5V using the provided components."
-msgstr "Уключыце лічбавую лямпу пры дапамозе дадзеных прыбораў."
+msgstr ""
+"Пры дапамозе наяўных кампанентаў, уключыце лямпачку так, каб яна працавала "
+"ад напружання 5 Вольт."
 
 #: activities/analog_electricity/TutorialDataset.qml:209
-#, fuzzy
-#| msgctxt "Rheostat|"
-#| msgid "Rheostat is used to vary resistance in an electrical circuit."
 msgctxt "TutorialDataset|"
 msgid "A rheostat is used to vary resistance in an electrical circuit."
 msgstr ""
 "Рэастат выкарыстоўваецца для рэгулявання супраціўлення электрычнага ланцуга."
 
 #: activities/analog_electricity/TutorialDataset.qml:210
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You can click on the switch to open and close it. You can change the "
-#| "rheostat value by dragging its slider."
 msgctxt "TutorialDataset|"
 msgid "You can change the rheostat value by dragging its slider."
-msgstr ""
-"Вы можаце пстрыкнуць па выключальніку, каб уключыць ці выключыць яго. Вы "
-"можаце мяняць параметры рэастату, перацягваннем ягоны паўзунок."
+msgstr "Вы можаце мяняць параметры рэастату, перацягваннем ягоны паўзунок."
 
 #: activities/analog_electricity/TutorialDataset.qml:211
 msgctxt "TutorialDataset|"
@@ -2271,12 +2141,9 @@ msgstr ""
 "току. Гэта значыць выкарыстаць рэзістар."
 
 #: activities/analog_electricity/TutorialDataset.qml:269
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid "Turn on the digital light using the provided components."
 msgctxt "TutorialDataset|"
 msgid "Light the red LED using the provided components."
-msgstr "Уключыце лічбавую лямпу пры дапамозе дадзеных прыбораў."
+msgstr "Уключыце светладыёд пры дапамозе наяўных кампанентаў."
 
 #: activities/analog_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -2327,9 +2194,6 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby Puzzle"
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
 msgstr "Дзіцячая мыш"
@@ -3009,12 +2873,6 @@ msgstr "Уменне лічыць."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the ball icon to select a number of balls, then click on the OK "
-#| "button to place the balls in the holes. You win if the computer has to "
-#| "place the last ball. If you want Tux to begin, just click on him."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -3022,7 +2880,7 @@ msgid ""
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
 "Пстрыкніце па выяве мячыка, каб выбраць колькасць мячоў, затым пстрыкніце "
-"ОК, каб размясціць мячыкі ў дзіркі. Вы пераможаце калі кампутару прыйдзецца "
+"ОК, каб размясціць мячыкі ў дзіркі. Вы пераможаце калі Туксу прыйдзецца "
 "пакласці апошні мячык. Калі вы хочаце каб пачаў Tux, то проста пстрыкніце па "
 "яму."
 
@@ -3364,13 +3222,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Калькудоку"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Вырашыце калькудоку."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3379,15 +3237,15 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Развівайце вашае лагічнае мысленне: сувязь паміж звестамі, дэдукцыя і "
+"прасторавае размяшчэнне падчас вылічэнняў."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Выкананне гэтага практыкавання патрабуе трывання і лагічнага мыслення."
+msgstr ""
+"Выкананне гэтага практыкавання патрабуе трывання і арыфметычных здольнасцяў."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3400,51 +3258,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Выберыце лік са спісу і пстрыкніце па пазіцыі яго размяшчэння, каб запоўніць "
+"сетку. Кожны лік мусіць з'яўляцца толькі адзін раз ў шэрагу і ў калонцы. "
+"Кошыкі - гэта групы клетак, якія паказваюць, як іх запаўняць. Кошыкі, якія "
+"складаюцца з больш чым адной клеткі, паказваюць вынік і аперацыю: усе лікі ў "
+"кошыку, калі аб'ядноўваюцца пры дапамозе аперацыі, мусяць мець дадзены "
+"вынік. Кошыкі, утвораныя толькі з адной клеткі, наўпрост паказваюць лік, які "
+"трэба ўвесці."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Малыя табліцы."
+msgstr "Малыя табліцы з аперацыяй +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Малыя табліцы."
+msgstr "Малыя табліцы з аперацыямі + і -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Малыя табліцы."
+msgstr "Малыя табліцы з аперацыямі +, − і ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Малыя табліцы."
+msgstr "Сярэднія табліцы з аперацыямі +, − і ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Малыя табліцы."
+msgstr "Вялікія табліцы з аперацыямі +, −, × and ∕."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4413,12 +4263,9 @@ msgstr "Размясціце ГАРОДНІНУ справа, а астатні�
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Шашкі (з Туксам)"
+msgstr "Гуляць у шашкі (з Туксам)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4510,12 +4357,9 @@ msgstr "Чорныя перамаглі"
 
 #. Activity title
 #: activities/checkers_2players/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play checkers with your friend"
 msgctxt "ActivityInfo|"
 msgid "Play checkers (with a friend)"
-msgstr "Шашкі (з сябрам)"
+msgstr "Гуляць у шашкі (з сябрам)"
 
 #. Help manual
 #: activities/checkers_2players/ActivityInfo.qml:23
@@ -4565,26 +4409,6 @@ msgstr "Шахматы (з Туксам)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In this activity you discover the chess game by playing against the "
-#| "computer. It displays the possible target positions for any selected "
-#| "piece which helps the children understand how pieces moves. At first "
-#| "level the computer is fully random to give more chances to the children. "
-#| "As level increases, the computer plays better.\n"
-#| "\n"
-#| "You can achieve a mate sooner if you follow these simple rules:\n"
-#| "    Trying to drive your opponent's king in the corner.\n"
-#| "<b>Explanation</b>: this way your opponent's king would have only 3 "
-#| "directions to move instead of 8 from a better position.\n"
-#| "    'Making a trap'. Use your pawns as baits.\n"
-#| "<b>Explanation</b>: this way you can lure your opponent out of his "
-#| "'comfort zone'.\n"
-#| "    Be patient enough.\n"
-#| "<b>Explanation</b>: don't rush too quick, be patient. Let yourself think "
-#| "a little bit and try to predict your opponent's future moves, so that you "
-#| "can catch him or secure your pieces from his attacks."
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4610,7 +4434,8 @@ msgstr ""
 "кампутара. Вам будуць паказаныя ўсе магчымыя варыянты ходу для любой "
 "выбранай фігуры, што дапамагае дзеткам зразумець асаблівасці руху фігур. На "
 "першым узроўні кампутар ходзіць поўнасцю выпадкова, пакідаючы максімальныя "
-"шансы дзеткам. З павышэннем узроўню кампутар гуляе лепей.\n"
+"шансы дзеткам. З павышэннем узроўню кампутар гуляе лепей. Вы можаце памяняць "
+"узровень складанасці пры дапамозе клавіш са стрэлкамі.\n"
 "\n"
 "Вы хутчэй зробіце мат, калі будзеце прытрымлівацца наступных простых "
 "правілаў:\n"
@@ -4634,6 +4459,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Адзінкавы пстрык па кнопцы адмены скасуе адзін ход. Адзінкавы клік па кнопцы "
+"паўтору паўторыць адзін ход. Каб скасаваць усе хады, націсніце і "
+"ўтрымлівайце кнопку адмены цягам 3 секунд."
 
 #: activities/chess/ActivityInfo.qml:30
 #: activities/chess_partyend/ActivityInfo.qml:31
@@ -4685,12 +4513,9 @@ msgstr "Хібны ход, вашаму каралю шах"
 
 #. Translators: undo all the moves in chess activity
 #: activities/chess/Chess.qml:123
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "Do you really want to quit GCompris?"
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Насамрэч хочаце выйсці з GCompris ?"
+msgstr "Вы насамрэч жадаеце адмяніць усе хады?"
 
 #: activities/chess/Chess.qml:124
 msgctxt "Chess|"
@@ -4832,23 +4657,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Затым пстрыкніце па кнопцы ОК каб праверыць ваш адказ."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Аўтарскія правы на фатаздымкі месяца належаць NASA. Гукі космасу ўзятыя з "
-"Tuxpaint і Vegastrike, каторыя распаўсюджваюцца па ліцэнзіі GPL. Малюнкі "
-"палётаў належаць Franck Doucet. Даты палётаў прыводзяцца са звестак &lt;"
-"https://www.wikipedia.org&gt;."
+"Аўтарскія правы на фатаздымкі месяца належаць NASA. Малюнкі палётаў належаць "
+"Franck Doucet. Даты палётаў прыводзяцца са звестак &lt;https://www.wikipedia."
+"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4991,20 +4808,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 - паветраны шар братоў Монгольф'е"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 - самалёт-кажан \"Эол\" Клемана Адера"
+msgstr "1890 - \"Эол\" Клемана Адера"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 - першы палёт на верталёце Поля Корню"
+msgstr "1907 - палёт на верталёце Поля Корню"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -5017,12 +4828,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 - паравы аўтамабіль Кюньё"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 - самалёт-кажан \"Эол\" Клемана Адера"
+msgstr "1890 - \"Эол\" Клемана Адера"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -5050,12 +4858,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 - Цягнік \"Ракета\" Стэфенсана"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 - самалёт-кажан \"Эол\" Клемана Адера"
+msgstr "1890 - \"Эол\" Клемана Адера"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -5068,20 +4873,14 @@ msgid "Aviation"
 msgstr "Авіяцыя"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 - самалёт-кажан \"Эол\" Клемана Адера"
+msgstr "1890 - \"Эол\" Клемана Адера"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 - \"Флайер 3\" братоў Райт"
+msgstr "1905 - \"Флайер 3\" братоў Райт"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -5104,12 +4903,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 - Чарльз Ліндбэрг перасякае Атлантычны акіян"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 - Гэлен Бошэ, рэкорд хуткасці 444 км/г"
+msgstr "1934 - Гэлен Бошэ, рэкорд хуткасці 445 км/г"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5137,12 +4933,9 @@ msgid "Cars"
 msgstr "Аўтамабілі"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 - «Вуатюрэтка», Рэно"
+msgstr "1898 - «Вуатюрэтка», Рэно"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -5322,12 +5115,9 @@ msgid "24 hours"
 msgstr "24 гадзіны"
 
 #: activities/clockgame/ActivityConfig.qml:33
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your locale"
 msgctxt "ActivityConfig|"
 msgid "Select a clock system"
-msgstr "Выберыце вашую лакаль"
+msgstr "Выберыце варыянт гадзінніка"
 
 #. Activity title
 #: activities/clockgame/ActivityInfo.qml:15
@@ -5382,7 +5172,7 @@ msgid "Set the watch to:"
 msgstr "Устанавіце час:"
 
 #: activities/clockgame/Clockgame.qml:112
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
 msgid_plural "%n hour(s)"
@@ -5392,7 +5182,7 @@ msgstr[2] "%n гадзін"
 msgstr[3] ""
 
 #: activities/clockgame/Clockgame.qml:115
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
 msgid_plural "%n minute(s)"
@@ -5402,7 +5192,7 @@ msgstr[2] "%n хвілін"
 msgstr[3] ""
 
 #: activities/clockgame/Clockgame.qml:118
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
 msgid_plural "%n second(s)"
@@ -5725,27 +5515,21 @@ msgstr "Працягнуць"
 
 #. Activity title
 #: activities/comparator/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Рымскія лічбы"
+msgstr "Параўноўвайце лікі"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr ""
+msgstr "Параўновайце лікі і выбірайце адпаведны знак."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn how to compare number values."
-msgstr "Вывучайце простыя лікі."
+msgstr "Навучыцеся параўноўваць лікавыя велічыні."
 
 #. Help manual
 #: activities/comparator/ActivityInfo.qml:25
@@ -5755,6 +5539,9 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
+"Выберыце пару лікаў у спісе. Затым выберыце слушны знак параўнання для "
+"дадзенай пары. Калі ў кожным радку будзе сімвал, націсніце кнопку OK для "
+"праверкі адказаў."
 
 #: activities/comparator/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -5762,32 +5549,25 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"У выпадку калі якія-небудзь адказы хібны, то насупраць адпаведных радкоў "
+"з'явіцца выява крыжыка. Выпраўце памылкі і націсніце кнопку OK зноў."
 
 #: activities/comparator/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Down arrow: select previous item"
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Стрэлка ўніз: выбраць папярэдні элемент"
+msgstr "Стрэлкі ўверх і ўніз: выбраць пару лікаў са спісу"
 
 #: activities/comparator/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: select a symbol button"
-msgstr "Стрэлкі налева і направа: паварочвайце налева і направа"
+msgstr "Стрэлкі налева і направа: выберыце кнопку з сімвалам"
 
 #: activities/comparator/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
-msgstr ""
+msgstr "Прагал: калі выбрана кнопка з сімвалам, то ўвесці сімвал"
 
 #: activities/comparator/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
 msgstr "Увод: спраўдзіць ваш адказ"
@@ -5795,7 +5575,7 @@ msgstr "Увод: спраўдзіць ваш адказ"
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "&lt;, &gt; or =: enter the corresponding symbol"
-msgstr ""
+msgstr "&lt;, &gt; ці =:  увесці адпаведны сімвал"
 
 #: activities/comparator/resource/1/Data.qml:36
 #: activities/tens_complement_find/resource/3/Data.qml:9
@@ -5806,7 +5586,7 @@ msgstr "Лікі ад 1 да 9."
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "Тры дзесятковыя лічбы паміж 0 і 999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5829,30 +5609,24 @@ msgid "Numbers from 1 to 1000000."
 msgstr "Лікі ад 1 да 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 0 да 1 мільярда."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 дзесятковая лічба паміж 0 і 9,9, з аднолькавай цэлай часткаю."
 
 #: activities/comparator/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "1 дзесятковая лічба паміж 0 і 9,9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "Дзве дзесятковыя лічбы паміж 0 і 99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -6737,18 +6511,13 @@ msgstr ""
 "другі і трэці."
 
 #: activities/digital_electricity/TutorialDataset.qml:447
-#, fuzzy
-#| msgctxt "TutorialDataset|"
-#| msgid ""
-#| "Use the gates so that the bulb glows only when the switch is turned off "
-#| "and doesn't glow when the switch is turned on."
 msgctxt "TutorialDataset|"
 msgid ""
 "Use the gates so that the bulb glows when the switch is turned off and "
 "doesn't glow when the switch is turned on."
 msgstr ""
-"Выкарыстоўвайце элементы такім чынам, каб лямпачка ўключалася толькі калі "
-"выключальнік разамкнёны і не свяцілася калі выключальнік замкнёны."
+"Выкарыстайце лагічныя элементы так, каб лямпачка свяцілася, калі "
+"выключальнік разамкнёны, і гасла, калі выключальнік замыкаецца."
 
 #: activities/digital_electricity/TutorialDataset.qml:479
 msgctxt "TutorialDataset|"
@@ -7226,14 +6995,14 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"Конь выдае 'іго-го'. Коні прыстасаваныя да бегу, што дазваляе ім хутка "
+"збягаць ад драпежнікаў, а таксама валодаюць выбітным адчуваннем балансу. У "
+"іх аднапальцавыя капыты."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr "Продкамі гэтых жывёлаў ёсць ваўкі."
+msgstr "У гэтых жывёл аднапальцавыя капыты."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -7246,14 +7015,13 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"Куры выдаюць 'ко-ко'. У хатніх кур маюцца крылы, але яны не здольныя лятаць "
+"далёка. На галаве ў іх ёсць грэбяшок."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr "Гэтая жывёла любіць выходзіць ноччу."
+msgstr "У гэтай жывёлы ёсць грэбяшок на галаве."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -7267,11 +7035,14 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"Карова выдае 'муу'. У кароў шырокі вугал агляду, велічынёй да 330°. У іх "
+"добра развіта адрозненне смакаў, для гэтага служаць каля 20,000 рэцэптараў. "
+"Яны чуюць пахі за 8км."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "У гэтых жывёл каля 20,000 рэцэптараў смаку."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -7285,14 +7056,13 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"Котка выдае 'мяў'. Коткі шануюцца людзьмі за кампанейнасць і іх здольнасці "
+"лавіць мышак і іншых грызуноў. Яны мурлычаць для выражэння розных эмоцый."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal lays eggs."
 msgctxt "board1|"
 msgid "This animal can purr."
-msgstr "Гэтая жывёла адкладвае яйкі."
+msgstr "Гэтая жывёл умее мурлыкаць."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:69
 msgctxt "board1|"
@@ -7305,11 +7075,15 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"Свінка выдае 'хру-хру'. Свінкі купаюцца ў вільготнай зямлі дзеля "
+"кантралявання тэмпературы свайго цела."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
+"Гэтая жывёла купаецца ў вільготнай зямлі дзеля кантралявання тэмпературы "
+"свайго цела."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7322,11 +7096,10 @@ msgid ""
 "The duck goes 'quack'. Ducks are mostly aquatic birds. They have waterproof "
 "feathers and webbed feet which enable them to swim on the water."
 msgstr ""
+"Качка выдае 'кра-кра'. Качкі пераважна водныя птушкі. У іх водатрывалае "
+"пер'е і перапончатыя лапкі, якія дапамагаюць ім плаваць па вадзе."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:85
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal has webbed feet so it can swim in the water."
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
 msgstr "У гэтай жывёлы перапончатыя лапы, і таму яна можа плаваць па вадзе."
@@ -7337,24 +7110,18 @@ msgid "Owl"
 msgstr "Сава"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:94
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid ""
-#| "The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at "
-#| "night."
 msgctxt "board1|"
 msgid ""
 "The owl goes 'hoot'. Owls are nocturnal birds, they have excellent vision "
 "and hearing at night."
-msgstr "Cава вухкае: \"У, у\". У савы выключныя зрок і слых уначы."
+msgstr ""
+"Cава вухкае: \"У, у\". Совы - начныя птушкі, у іх выключныя зрок і слых "
+"уначы."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:97
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal likes to come out at night."
 msgctxt "board1|"
 msgid "This animal is a nocturnal bird."
-msgstr "Гэтая жывёла любіць выходзіць ноччу."
+msgstr "Гэтая жывёла - начная птушка."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:105
 msgctxt "board1|"
@@ -7367,14 +7134,13 @@ msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
 "are descendants of the wolf."
 msgstr ""
+"Сабака выдае 'гаў-гаў'. Сабакі, верагодна, найбольш даўнія прыручаныя "
+"істоты. Яны з'яўляюцца нашчадкамі ваўкоў."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:109
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal is a close relative to the goat."
 msgctxt "board1|"
 msgid "This animal is a descendant of the wolf."
-msgstr "Гэтая жывёла - блізкі родзіч казе."
+msgstr "Гэтая жывёла - нашчадак воўка."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:117
 msgctxt "board1|"
@@ -7387,14 +7153,13 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"Авечка выдае 'бэээ'. Большасць авечак носяць поўсць. Гэтая поўсць можа быць "
+"састрыжана і выкарыстана для вытворчасці тэкстыльнага валакна."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "This animal's ancestors were wolves."
 msgctxt "board1|"
 msgid "This animal produces wool."
-msgstr "Продкамі гэтых жывёлаў ёсць ваўкі."
+msgstr "Гэтая жывёла стварае поўсць."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:131
 msgctxt "board1|"
@@ -8721,11 +8486,6 @@ msgid "Polar bear"
 msgstr "Палярны мядзведзь"
 
 #: activities/explore_world_animals/resource/board/board2.qml:31
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid ""
-#| "The polar bear is one of the world's largest predatory mammals. It "
-#| "weights up to a ton and can be as long as 3 meters!"
 msgctxt "board2|"
 msgid ""
 "The polar bear is one of the world's largest predatory mammals. It weighs up "
@@ -9631,32 +9391,23 @@ msgstr "Стварыць дробы"
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
+msgstr "На экране паказваецца фігура, падзеленая на некалькі частак."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Перацягвайце пасуючыя лічбы і аператары ў ячэйкі каб атрымаць патрэбны лік."
+msgstr "Выберыце адпаведную колькасць частак паводле інструкцыі."
 
 #: activities/fractions_create/fractions_create.js:78
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr "Прадстаўленні лічбаў"
+msgstr "Знайдзіце паказаны дроб."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Простыя дробы з пірагом."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9664,357 +9415,261 @@ msgstr ""
 #: activities/fractions_create/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Select one half of the pie."
-msgstr ""
+msgstr "Выберыце палову пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:24
 #: activities/fractions_create/resource/3/Data.qml:35
 #: activities/fractions_create/resource/3/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the pie."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце адну трэць пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:30
 #: activities/fractions_create/resource/3/Data.qml:41
 #: activities/fractions_create/resource/3/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the pie."
-msgstr "Выберыце чацвёртую нядзелю дадзенага месяца"
+msgstr "Выберыце дзве трэці пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:36
 #: activities/fractions_create/resource/3/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the pie."
-msgstr "Выберыце мятліка слушнага колеру."
+msgstr "Выберыце адну чвэрць пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:42
 #: activities/fractions_create/resource/3/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the pie."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце дзве пятыя пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:50
 msgctxt "Data|"
 msgid "Select one pie and one-quarter of a pie."
-msgstr ""
+msgstr "Выберыце адну цэлую і адну чвэрць пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:56
 msgctxt "Data|"
 msgid "Select one pie and two-fifths of a pie."
-msgstr ""
+msgstr "Выберыце адну цэлую і дзве пятыя пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:62
 msgctxt "Data|"
 msgid "Select one pie and one-third of a pie."
-msgstr ""
+msgstr "Выберыце адну цэлую і адну трэць пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:68
 msgctxt "Data|"
 msgid "Select one pie and one half of a pie."
-msgstr ""
+msgstr "Выберыце адну цэлую і палову пірага."
 
 #: activities/fractions_create/resource/1/Data.qml:74
 msgctxt "Data|"
 msgid "Select one pie and three-quarters of a pie."
-msgstr ""
+msgstr "Выберыце адну цэлую і тры чвэрці пірага."
 
 #: activities/fractions_create/resource/10/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Specific questions with a square."
-msgstr "Адказвайце на пытанні з 100% дакладнасцю."
+msgstr "Канкрэтныя пытанні аб квадраце."
 
 #: activities/fractions_create/resource/10/Data.qml:18
 #: activities/fractions_create/resource/10/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the square."
-msgstr ""
+msgstr "Выберыце як мага болей частак, але не болей чым палову квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Answer the questions with a correctness of 100%."
 msgctxt "Data|"
 msgid "Simplified fractions with a square."
-msgstr "Адказвайце на пытанні з 100% дакладнасцю."
+msgstr "Простыя дробы з квадратам."
 
 #: activities/fractions_create/resource/2/Data.qml:18
 #: activities/fractions_create/resource/4/Data.qml:17
 #: activities/fractions_create/resource/4/Data.qml:23
 #: activities/fractions_create/resource/4/Data.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one half of the square."
-msgstr "Выберыце мятліка слушнага колеру."
+msgstr "Выберыце палову квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:24
 #: activities/fractions_create/resource/4/Data.qml:35
 #: activities/fractions_create/resource/4/Data.qml:49
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one-third of the square."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце адну трэць прастакутніка."
 
 #: activities/fractions_create/resource/2/Data.qml:30
 #: activities/fractions_create/resource/4/Data.qml:41
 #: activities/fractions_create/resource/4/Data.qml:55
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fourth Sunday of the given month"
 msgctxt "Data|"
 msgid "Select two-thirds of the square."
-msgstr "Выберыце чацвёртую нядзелю дадзенага месяца"
+msgstr "Выберыце дзве трэці прастакутніка."
 
 #: activities/fractions_create/resource/2/Data.qml:36
 #: activities/fractions_create/resource/4/Data.qml:61
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Выберыце мятліка слушнага колеру."
+msgstr "Выберыце адну чвэрць квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select two-fifths of the square."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце дзве пятыя прастакутніка."
 
 #: activities/fractions_create/resource/2/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one-quarter of a square."
-msgstr "Выберыце мятліка слушнага колеру."
+msgstr "Выберыце адну цэлую і адну чвэрць квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:56
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and two-fifths of a square."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце адзін цэлы і дзве пятыя прастакутніка."
 
 #: activities/fractions_create/resource/2/Data.qml:62
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select one square and one-third of a square."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце адзін цэлы і адну трэць прастакутніка."
 
 #: activities/fractions_create/resource/2/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and one half of a square."
-msgstr "Выберыце мятліка слушнага колеру."
+msgstr "Выберыце адзін цэлы і адну палову квадрата."
 
 #: activities/fractions_create/resource/2/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select the butterfly of the correct color."
 msgctxt "Data|"
 msgid "Select one square and three-quarters of a square."
-msgstr "Выберыце мятліка слушнага колеру."
+msgstr "Выберыце адну цэлую і тры чвэрці квадрата."
 
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Няпростыя дробы з пірагом."
 
 #: activities/fractions_create/resource/3/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the pie."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце тры пятыя пірага."
 
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Няпростыя дробы з квадратам."
 
 #: activities/fractions_create/resource/4/Data.qml:73
-#, fuzzy
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the fifth Thursday of the given month"
 msgctxt "Data|"
 msgid "Select three-fifths of the square."
-msgstr "Выберыце пяты аўторак дадзенага месяца"
+msgstr "Выберыце тры пятыя прастакутніка."
 
 #: activities/fractions_create/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Дзесятковая сістэма вылічэння."
+msgstr "Дзесятковыя дробы з пірагом."
 
 #: activities/fractions_create/resource/5/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 pie."
-msgstr "Выбрана"
+msgstr "Выберыце  0,5 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:24
 msgctxt "Data|"
 msgid "Select 0.25 pie."
-msgstr ""
+msgstr "Выберыце 0,25 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 pie."
-msgstr "Выбрана"
+msgstr "Выберыце 0,4 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:36
 msgctxt "Data|"
 msgid "Select 0.75 pie."
-msgstr ""
+msgstr "Выберыце 0,75 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 pie."
-msgstr "Выбрана"
+msgstr "Выберыце 0,8 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:50
 msgctxt "Data|"
 msgid "Select 1.25 pies."
-msgstr ""
+msgstr "Выберыце 1,25 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:56
 msgctxt "Data|"
 msgid "Select 1.4 pies."
-msgstr ""
+msgstr "Выберыце 1,4 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:62
 #: activities/fractions_create/resource/5/Data.qml:68
 msgctxt "Data|"
 msgid "Select 1.5 pies."
-msgstr ""
+msgstr "Выберыце 1,5 пірага."
 
 #: activities/fractions_create/resource/5/Data.qml:74
 msgctxt "Data|"
 msgid "Select 1.75 pies."
-msgstr ""
+msgstr "Выберыце 1,75 пірага."
 
 #: activities/fractions_create/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Decimal number system."
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Дзесятковая сістэма вылічэння."
+msgstr "Дзесятковыя дробы з квадратам."
 
 #: activities/fractions_create/resource/6/Data.qml:18
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.5 square."
-msgstr "Выбрана"
+msgstr "Выберыце 0,5 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:24
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.25 square."
-msgstr "Выбрана"
+msgstr "Выберыце 0,25 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:30
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.4 square."
-msgstr "Выбрана"
+msgstr "Выберыце 0,4 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:36
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.75 square."
-msgstr "Выбрана"
+msgstr "Выберыце 0,75 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:42
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 0.8 square."
-msgstr "Выбрана"
+msgstr "Выберыце 0,8 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:50
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.25 squares."
-msgstr "Выбрана"
+msgstr "Выберыце 1,25 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:56
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.4 squares."
-msgstr "Выбрана"
+msgstr "Выберыце 1,4 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:62
 #: activities/fractions_create/resource/6/Data.qml:68
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.5 squares."
-msgstr "Выбрана"
+msgstr "Выберыце 1,5 прастакутніка."
 
 #: activities/fractions_create/resource/6/Data.qml:74
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "Data|"
 msgid "Select 1.75 squares."
-msgstr "Выбрана"
+msgstr "Выберыце 1,75 прастакутніка."
 
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Працэнты з пірагом."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -10025,17 +9680,15 @@ msgstr ""
 #: activities/fractions_create/resource/7/Data.qml:56
 #: activities/fractions_create/resource/7/Data.qml:63
 #: activities/fractions_create/resource/7/Data.qml:70
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Выберыце 1-ы дзень"
+msgstr "Выберыце %1% пірага."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Працэнты з квадратам."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -10044,24 +9697,22 @@ msgstr ""
 #: activities/fractions_create/resource/8/Data.qml:42
 #: activities/fractions_create/resource/8/Data.qml:49
 #: activities/fractions_create/resource/8/Data.qml:56
-#, fuzzy, qt-format
-#| msgctxt "calendar_dataset|"
-#| msgid "Select the 1st"
+#, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Выберыце 1-ы дзень"
+msgstr "Выберыце %1% прастакутніка."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Канкрэтныя пытанні з пірагом."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Выберыце як мага болей частак, але не болей за палову пірага."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
@@ -10071,81 +9722,57 @@ msgstr "Знайсці дроб"
 
 #. Help title
 #: activities/fractions_find/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
-msgstr "Знайдзіце слушную дату і выберыце яе на календары."
+msgstr "Знайдзіце слушнае дзялімае і дзельнік прадстаўленага дробу."
 
 #: activities/fractions_find/resource/1/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
-msgstr "Чатыры ў радок (з сябрам)"
+msgstr "Знайдзіце дзялімае (з пірагом)."
 
 #: activities/fractions_find/resource/2/Data.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Align four (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator (with a square)."
-msgstr "Чатыры ў радок (з сябрам)"
+msgstr "Знайдзіце дзялімае (з квадратам)."
 
 #: activities/fractions_find/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a pie)."
-msgstr "Гульня ў млын (з сябрам)"
+msgstr "Знайдзіце дзельнік (з пірагом)."
 
 #: activities/fractions_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find denominator (with a square)."
-msgstr "Гульня ў млын (з сябрам)"
+msgstr "Знайдзіце дзельнік (з квадратам)."
 
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "Знайдзіце дзялімае і дзельнік (з пірагом)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr "Гульня ў млын (з сябрам)"
+msgstr "Знайдзіце дзялімае і дзельнік (з квадратам)."
 
 #. Activity title
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Фрыз"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Утварыць дадзеную вежу."
+msgstr "Узнавіце і завяршыце фрыз."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn digits"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Вывучаць лічбы"
+msgstr "Вывучайце алгарытмы."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -10154,51 +9781,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Узнавіце фрыз у верхняй частцы. На некаторых узроўнях, вам спатрэбіцца "
+"завяршыць фрыз, альбо ўзнавіць пасля таго як вы яго запомніце."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Стрэлкі налева і направа: паварочвайце налева і направа"
+msgstr "Стрэлкі налева і направа: выберыце фішку."
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Прагал: выбраць аб'ект"
+msgstr "Прагал: дадаць выбраную фішку да фрызу"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Клавіша сцірання ці выдалення: адмена"
+msgstr "Клавіша сцірання ці выдалення: выдаліць апошнюю фішку з фрызу."
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Увод: спраўдзіць ваш адказ"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Прагал: пераключэнне між нябачным і бачным рэжымамі"
+msgstr "Табуляцыя: пераключыцца паміж рэдагаваннем фрызу і праглядам мадэлі"
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Я гатовы"
@@ -10206,7 +9817,7 @@ msgstr "Я гатовы"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Скапіюйце гэты фрыз: 2 фігуры з рознымі колерамі/знакамі."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -10214,7 +9825,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Скапіюйце гэты фрыз."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -10222,6 +9833,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Запомніце і скапіюйце гэты фрыз: любую камбінацыю формаў, колераў/знакаў і "
+"памераў."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -10229,7 +9842,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Запомніце і скапіюйце гэты фрыз."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -10237,11 +9850,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 4 і 7, любыя камбінацыі форм, "
+"колераў/знакаў і памераў."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Скапіюйце і завяршыце гэты фрыз"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -10249,6 +9864,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Запомніце і скапіюйце гэты фрыз: шаблоны паміж 4 і 7, любыя камбінацыі форм, "
+"колераў/знакаў і памераў."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -10256,6 +9873,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 6 і 8, любыя камбінацыі форм, "
+"колераў/знакаў і памераў."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -10264,7 +9883,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Скапіюйце і завяршыце гэты фрыз."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -10272,21 +9891,23 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Запомніце і скапіюйце гэты фрыз: шаблоны паміж 6 і 8, любыя камбінацыі форм, "
+"колераў/знакаў і памераў."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Скапіюйце і завяршыце гэты фрыз: 2 формы з рознымі колерамі/знакамі."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Запомніце і скапіюйце гэты фрыз: 2 формы з рознымі колерамі/знакамі."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Скапіюйце гэты фрыз: 3 ці 4 формы з рознымі колерамі/знакамі."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -10294,6 +9915,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Скапіюйце гэты фрыз: 3 ці 4 формы з двума памерамі і магчыма аднолькавымі "
+"колерамі/знакамі."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -10301,11 +9924,13 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Скапіюйце і завяршыце гэты фрыз: 3 ці 4 формы з двума памерамі і магчыма "
+"аднолькавымі колерамі/знакамі."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-msgstr ""
+msgstr "Скапіюйце гэты фрыз: любая камбінацыя форм, колераў/знакаў і памераў."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -10314,6 +9939,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Скапіюйце і завяршыце гэты фрыз: любая камбінацыя форм, колераў/знакаў і "
+"памераў."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10662,9 +10289,6 @@ msgid "Connecticut"
 msgstr "Канектыкут"
 
 #: activities/geo-country/resource/board/board11_0.qml:15
-#, fuzzy
-#| msgctxt "board11_0|"
-#| msgid "Districts of Italy"
 msgctxt "board11_0|"
 msgid "Regions of Italy"
 msgstr "Рэгіёны Італіі"
@@ -10731,12 +10355,9 @@ msgstr "Умбрыя"
 
 #. Region of Italy: Marche
 #: activities/geo-country/resource/board/board11_0.qml:94
-#, fuzzy
-#| msgctxt "GCCreationHandler|"
-#| msgid "Search"
 msgctxt "board11_0|"
 msgid "Marche"
-msgstr "Шукаць"
+msgstr "Марча"
 
 #. Region of Italy: Lazio
 #: activities/geo-country/resource/board/board11_0.qml:101
@@ -10758,12 +10379,9 @@ msgstr "Малізэ"
 
 #. Region of Italy: Campania
 #: activities/geo-country/resource/board/board11_0.qml:122
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Romania"
 msgctxt "board11_0|"
 msgid "Campania"
-msgstr "Румынія"
+msgstr "Кампанія"
 
 #. Region of Italy: Apulia
 #: activities/geo-country/resource/board/board11_0.qml:129
@@ -10779,12 +10397,9 @@ msgstr "Базіліката"
 
 #. Region of Italy: Calabria
 #: activities/geo-country/resource/board/board11_0.qml:143
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Cabrillo"
 msgctxt "board11_0|"
 msgid "Calabria"
-msgstr "Кабрыллё"
+msgstr "Калабрыя"
 
 #. Region of Italy: Sicily
 #: activities/geo-country/resource/board/board11_0.qml:150
@@ -10799,12 +10414,9 @@ msgid "Sardinia"
 msgstr "Сардзінія"
 
 #: activities/geo-country/resource/board/board12_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board12_0|"
 msgid "States and Union Territories of India"
-msgstr "Рэгіёны Канады"
+msgstr "Штаты і Злучаныя тэррыторыі Індыі"
 
 #. State of India: Himachal Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:24
@@ -10850,12 +10462,9 @@ msgstr "Гуджарат"
 
 #. State of India: Haryana
 #: activities/geo-country/resource/board/board12_0.qml:73
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Guyana"
 msgctxt "board12_0|"
 msgid "Haryana"
-msgstr "Гаяна"
+msgstr "Хар'яна"
 
 #. State of India: Madhya Pradesh
 #: activities/geo-country/resource/board/board12_0.qml:80
@@ -10883,12 +10492,9 @@ msgstr "Чхатысгарх"
 
 #. State of India: Goa
 #: activities/geo-country/resource/board/board12_0.qml:108
-#, fuzzy
-#| msgctxt "DialogHelp|"
-#| msgid "Goal:"
 msgctxt "board12_0|"
 msgid "Goa"
-msgstr "Мэта:"
+msgstr "Гоа"
 
 #. State of India: Karnataka
 #: activities/geo-country/resource/board/board12_0.qml:115
@@ -10946,12 +10552,9 @@ msgstr "Аруначал-Прадэш"
 
 #. State of India: Nagaland
 #: activities/geo-country/resource/board/board12_0.qml:179
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "New Zealand"
 msgctxt "board12_0|"
 msgid "Nagaland"
-msgstr "Новая Зеландыя"
+msgstr "Нагаланд"
 
 #. State of India: Odisha
 #: activities/geo-country/resource/board/board12_0.qml:186
@@ -10979,12 +10582,9 @@ msgstr "Трыпура"
 
 #. State of India: Meghalaya
 #: activities/geo-country/resource/board/board12_0.qml:214
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Malaysia"
 msgctxt "board12_0|"
 msgid "Meghalaya"
-msgstr "Малайзія"
+msgstr "Мегхалая"
 
 #. Union Territory of India: Andaman and Nicobar Islands
 #: activities/geo-country/resource/board/board12_0.qml:221
@@ -11018,12 +10618,9 @@ msgstr "Ладакх"
 
 #. Union Territory of India: Lakshadweep
 #: activities/geo-country/resource/board/board12_0.qml:258
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board12_0|"
 msgid "Lakshadweep"
-msgstr "Маршалавы выспы"
+msgstr "Лакшадвіп"
 
 #. Union Territory of India: Jammu and Kashmir
 #: activities/geo-country/resource/board/board12_0.qml:265
@@ -11038,12 +10635,9 @@ msgid "Puducherry"
 msgstr "Пудучэры"
 
 #: activities/geo-country/resource/board/board13_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board13_0|"
 msgid "States and Territories of Australia"
-msgstr "Рэгіёны Канады"
+msgstr "Штаты і Тэрыторыі Аўстраліі"
 
 #. State of Australia: Western Australia
 #: activities/geo-country/resource/board/board13_0.qml:24
@@ -11094,12 +10688,9 @@ msgid "Australian Capital Territory"
 msgstr "Аўстралійская сталічная тэрыторыя"
 
 #: activities/geo-country/resource/board/board14_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
 msgctxt "board14_0|"
 msgid "Provinces of China"
-msgstr "Рэгіёны Аргентыны"
+msgstr "Правінцыі Кітая"
 
 #. Province of China: Xinjiang
 #: activities/geo-country/resource/board/board14_0.qml:24
@@ -11115,18 +10706,15 @@ msgstr "Ганьсу"
 
 #. Province of China: Inner Mongolia
 #: activities/geo-country/resource/board/board14_0.qml:38
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Mongolia"
 msgctxt "board14_0|"
 msgid "Inner Mongolia"
-msgstr "Манголія"
+msgstr "Унутраная Манголія"
 
 #. Province of China: Ningxia
 #: activities/geo-country/resource/board/board14_0.qml:45
 msgctxt "board14_0|"
 msgid "Ningxia"
-msgstr "Нінся\t"
+msgstr "Нінся"
 
 #. Province of China: Heilongjiang
 #: activities/geo-country/resource/board/board14_0.qml:52
@@ -11142,12 +10730,9 @@ msgstr "Гірын"
 
 #. Province of China: Liaoning
 #: activities/geo-country/resource/board/board14_0.qml:66
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "Learning"
 msgctxt "board14_0|"
 msgid "Liaoning"
-msgstr "Вывучэнне"
+msgstr "Лаянін"
 
 #. Province of China: Tianjin
 #: activities/geo-country/resource/board/board14_0.qml:73
@@ -12556,12 +12141,9 @@ msgstr "Усходнія рэгіёны Турцыі"
 
 #. Province of Turkey: Van
 #: activities/geo-country/resource/board/board5_1.qml:24
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "and"
 msgctxt "board5_1|"
 msgid "Van"
-msgstr "і"
+msgstr "Ван"
 
 #. Province of Turkey: Tunceli
 #: activities/geo-country/resource/board/board5_1.qml:31
@@ -14639,12 +14221,12 @@ msgstr ""
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "але %1 не ёсць кратным %2."
+msgstr ""
+"Сярод кратных ліку %1 прысутнічаюць %2 і %3, але %4 не з'яўляецца кратным "
+"ліку %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
@@ -14851,12 +14433,9 @@ msgstr "Даведайцеся пра цыркуляцыю вады."
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Цотныя і няцотныя лікі"
+msgstr "Чытанне і ўпарадкаванне лікаў."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14905,12 +14484,9 @@ msgid "(variable boundaries)"
 msgstr ""
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Знайдзіце мятліка колеру іржы"
+msgstr "Знайдзіце загаданы лік."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
 #, fuzzy
@@ -15210,12 +14786,9 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:421
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "пуста"
+msgstr "Пуста"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -16974,12 +16547,9 @@ msgstr "Лічбы паміж 1 і 8."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Additions with decimal numbers"
-msgstr "Навучыцца складаць маленькія лікі."
+msgstr "Складанне дзесятковых лікаў"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
@@ -17055,12 +16625,9 @@ msgstr "Суадносьце лічбы да 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction of small numbers."
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
-msgstr "Адыманне маленькіх лікаў."
+msgstr "Адыманне дзесятковых лікаў"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
@@ -17393,7 +16960,7 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr "Левая ці правая рука ?"
+msgstr "Вызначце вашую левую ці правую руку"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
@@ -19497,12 +19064,9 @@ msgid "Copyright: %1"
 msgstr "Аўтарскія правы: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Фільтрацыя складанасці:"
+msgstr "Фільтрацыя складанасці"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -20224,12 +19788,9 @@ msgid "Alphabet/Numeric value: %1"
 msgstr "Арабская лічба: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Letters"
 msgctxt "Data|"
 msgid "Letters."
-msgstr "Літары"
+msgstr "Літары."
 
 #: activities/morse_code/resource/1/Data.qml:18
 #: activities/morse_code/resource/1/Data.qml:34
@@ -20258,12 +19819,9 @@ msgstr "Перавядзіце рымскую лічбу %1 у арабскую.
 #: activities/morse_code/resource/1/Data.qml:44
 #: activities/morse_code/resource/1/Data.qml:60
 #: activities/morse_code/resource/1/Data.qml:76
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the corn butterfly"
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr "Знайдзіце палавога мятліка"
+msgstr "Знайдзіце адпаведную літару."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -20281,20 +19839,14 @@ msgstr "Перавядзіце рымскую лічбу %1 у арабскую.
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the accordion"
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr "Знайдзіце акардэон"
+msgstr "Знайдзіце адпаведную лічбу."
 
 #: activities/morse_code/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid "Words"
 msgctxt "Data|"
 msgid "Words."
-msgstr "Словы"
+msgstr "Словы."
 
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
@@ -20878,12 +20430,9 @@ msgid "Travel to the Moon."
 msgstr ""
 
 #: activities/ordering_chronology/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Tux and the apple tree"
 msgctxt "Data|"
 msgid "Tux gathers an apple."
-msgstr "Тукс і яблыня"
+msgstr "Тукс дастае яблык."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
@@ -20906,21 +20455,15 @@ msgstr "Размясціце часткі ў слушнай паслядоўна
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Roman numbers"
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Рымскія лічбы"
+msgstr "Параўнанне лікаў."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "FindIt|"
-#| msgid "Continue"
 msgctxt "ActivityInfo|"
 msgid "Counting."
-msgstr "Працягнуць"
+msgstr "Лік."
 
 #. Help manual
 #: activities/ordering_numbers/ActivityInfo.qml:29
@@ -21074,12 +20617,9 @@ msgid ""
 msgstr ""
 
 #: activities/ordering_sentences/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Only 5 words"
 msgctxt "Data|"
 msgid "Below 5 words."
-msgstr "Толькі 5 словаў"
+msgstr "5 словаў ніжэй."
 
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 3 and 5 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/1/Data.qml:18
@@ -21129,12 +20669,9 @@ msgstr "Шахматы з Туксам"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the audio memory game against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr "Згуляйце з Туксам у гульню са слыхавай памяццю"
+msgstr "Згуляйце з Туксам у гульню Авары."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -21458,12 +20995,9 @@ msgstr ""
 
 #: activities/path_encoding/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "<b>Keyboard controls:</b>"
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
-msgstr "<b>Кіраванне з клавіятуры:</b>"
+msgstr "Кіраванне з клавіятуры:"
 
 #: activities/path_encoding/ActivityInfo.qml:24
 #: activities/path_encoding_relative/ActivityInfo.qml:25
@@ -22671,70 +22205,51 @@ msgid ""
 msgstr "Стрэлкі ўверх і ўніз: паменшыць ці павялічыць тэмп"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "4. To delete the selected instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "Space: select an instruction or append selected instruction in main/"
 "procedure/loop area"
-msgstr "4. Для выдалення выбранай інструкцыі з зоны выконваемага кода:"
+msgstr ""
+"Прагал: выбраць інструкцыю ці дадаць выбраную інструкцыю ў зону праграмы/"
+"працэдуры/цыкла"
 
 #: activities/programmingMaze/ActivityInfo.qml:30
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "5. To edit an instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
-msgstr "5. Для рэдагавання інструкцыі ў зоне выконваемага коду:"
+msgstr ""
+"Tab: пераключыцца паміж зонай інструкцый і зонай праграмы/працэдуры/цыкла"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "4. To delete the selected instruction in the main/procedure code area:"
 msgctxt "ActivityInfo|"
 msgid "Delete: remove selected instruction from main/procedure/loop area"
-msgstr "4. Для выдалення выбранай інструкцыі з зоны выконваемага кода:"
+msgstr "Delete: выдаліць выбраную інструкцыю з зоны праграмы/працэдуры/цыкла"
 
 #: activities/programmingMaze/ActivityInfo.qml:32
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "6. To run the code or reset Tux when it fails to reach the fish:"
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
-msgstr ""
-"6. Для запуску коду ці перазагрузкі Тукса ў выпадку няўдачы знаходжання "
-"рыбкі:"
+msgstr "Enter: выканаць код ці спыніць Тукса, калі ён не дастане рыбу"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "2. To append an instruction from the instruction area to the main/"
-#| "procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "To add an instruction in main/procedure/loop area, select it from "
 "instructions area, then switch to the main/procedure/loop area and press "
 "Space."
 msgstr ""
-"2. Для дадавання інструкцыі з зоны інструкцый ў зону выконваемага кода:"
+"Каб дадаць інструкцыю ў зону праграмы/працэдуры/цыкла, выберыце яе ў зоне "
+"інструкцый, затым пераключыцеся ў зону праграмы/працэдуры/інструкцыі і "
+"націсніце Прагал."
 
 #: activities/programmingMaze/ActivityInfo.qml:34
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "2. To append an instruction from the instruction area to the main/"
-#| "procedure code area:"
 msgctxt "ActivityInfo|"
 msgid ""
 "To modify an instruction in main/procedure/loop area, select it from main/"
 "procedure/loop area, then switch to instructions area, choose the new "
 "instruction and press Space."
 msgstr ""
-"2. Для дадавання інструкцыі з зоны інструкцый ў зону выконваемага кода:"
+"Каб адрэдагаваць інструкцыю ў зоне праграмы/працэдуры/цыкла, выберыце яе ў "
+"зоне праграмы/працэдуры/цыкла, а затым пераключыцеся ў зону інструкцый, "
+"выберыце новую інструкцыю і націсніце Прагал."
 
 #: activities/programmingMaze/InstructionArea.qml:28
 msgctxt "InstructionArea|"
@@ -22882,12 +22397,9 @@ msgid "Using the main area only."
 msgstr ""
 
 #: activities/programmingMaze/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "5. To edit an instruction in the main/procedure code area:"
 msgctxt "Data|"
 msgid "Using both the main area and the procedure area."
-msgstr "5. Для рэдагавання інструкцыі ў зоне выконваемага коду:"
+msgstr "Выкарыстанне зоны праграмы і зоны працэдуры разам."
 
 #: activities/programmingMaze/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -24086,20 +23598,13 @@ msgid ""
 msgstr "Ці можаце Вы цяпер падзяліць 6 цукерак паміж сябрамі Паўліка?"
 
 #: activities/share/resource/1/Data.qml:48
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#| "equally split the pieces of candy so that each friend will have the same "
-#| "amount?"
 msgctxt "Data|"
 msgid ""
 "Some of his friends already have pieces of candy. He wants to give them 7 "
 "more pieces so that they all have the same amount."
 msgstr ""
-"Валодзік хоча пачаставаць 3 цукеркамі сваіх сябровак. Ці зможаце вы "
-"дапамагчы яму падзяліць цукеркі так, каб у кожнага сябра апынулася роўная "
-"колькасць?"
+"У некатрых ягоных сяброў ужо ёсць цукеркі. Ён хоча даць і ячшэ па 7 цукерак, "
+"каб у іх усіх была аднолькавая колькасць."
 
 #: activities/share/resource/1/Data.qml:58
 #, fuzzy
@@ -24142,12 +23647,6 @@ msgstr ""
 "і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/1/Data.qml:90
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "John wants to equally share 8 pieces of candy between 3 of his friends: 1 "
-#| "boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "John wants to share 8 pieces of candy equally between 3 of his friends: 1 "
@@ -24155,8 +23654,8 @@ msgid ""
 "have the same amount?"
 msgstr ""
 "Янка хоча пароўну падзяліць 8 цукерак паміж трыма сваімі сябрамі: адным "
-"хлопчыкам і дзвюма дзяўчынкамі. Ці можа ён аднолькава падзяліць цукеркі? "
-"Спачатку размясціце дзяцей у цэнтры, затым перацягніце кожнаму цукеркі."
+"хлопчыкам і дзвюма дзяўчынкамі. У хлопчыка ўжо ёсць адна. Ці можа ён "
+"падзяліць так, каб ува ўсіх была аднолькавая колькасць?"
 
 #: activities/share/resource/1/Data.qml:100
 #, fuzzy
@@ -24169,12 +23668,6 @@ msgstr ""
 "і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/1/Data.qml:110
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 11 pieces of candy between 3 of her friends: 1 boy and "
@@ -24182,19 +23675,18 @@ msgid ""
 "pieces of candy so that they all have the same amount?"
 msgstr ""
 "Марыля хоча пароўну падзяліць 11 цукерак паміж трыма сваімі сябрамі: адным "
-"хлопчыкам і дзвюма дзяўчынкамі. Ці можа ён аднолькава падзяліць цукеркі? "
-"Спачатку размясціце дзяцей у цэнтры, затым перацягніце кожнаму цукеркі."
+"хлопчыкам і дзвюма дзяўчынкамі. У дзяўчат ўжо ёсць некалькі цукерак. Ці можа "
+"яна падзяліц цукеркі так, каб ува ўсіх была аднолькавая колькасць?"
 
 #: activities/share/resource/1/Data.qml:122
 #: activities/share/resource/2/Data.qml:112
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Alice wants to give 16 pieces of candy to her friends."
 msgctxt "Data|"
 msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
-msgstr "Алеся хоча даць 16 цукерак сваім сябрам."
+msgstr ""
+"Алеся хоча раздзяліць 4 цукеркі пароўну паміж чатырма сваімі сяброўкамі. Ці "
+"маглі б вы ёй дапамагчы?"
 
 #: activities/share/resource/1/Data.qml:132
 msgctxt "Data|"
@@ -24440,55 +23932,39 @@ msgstr ""
 "пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/2/Data.qml:80
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 8 pieces of candy between 3 of his friends: 1 boy and 2 "
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"Марыля хоча пароўну падзяліць 11 цукерак паміж трыма сваімі сябрамі: адным "
-"хлопчыкам і дзвюма дзяўчынкамі. Ці можа ён аднолькава падзяліць цукеркі? "
-"Спачатку размясціце дзяцей у цэнтры, затым перацягніце кожнаму цукеркі."
+"Герка хоча пароўну падзяліць 8 цукерак паміж трыма сваімі сябрамі: адным "
+"хлопчыкам і дзвюма дзяўчынкамі. У хлопчыка ўжо ёсць адна цукерка. Ці можа "
+"Герка падзяліцца сваімі цукеркамі так, каб ува ўсіх была аднолькавая "
+"колькасць?"
 
 #: activities/share/resource/2/Data.qml:90
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 8 pieces of candy between 3 of her friends: 1 boy and 2 "
 "girls. The girls already have some pieces of candy. Can she split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Марыля хоча пароўну падзяліць 11 цукерак паміж трыма сваімі сябрамі: адным "
-"хлопчыкам і дзвюма дзяўчынкамі. Ці можа ён аднолькава падзяліць цукеркі? "
-"Спачатку размясціце дзяцей у цэнтры, затым перацягніце кожнаму цукеркі."
+"Марыля хоча пароўну падзяліць 8 цукерак паміж трыма сваімі сябрамі: адным "
+"хлопчыкам і дзвюма дзяўчынкамі. У дзяўчат ўжо ёсць некалькі цукерак. Ці можа "
+"яна падзяліць свае цукеркі так, каб ува ўсіх апынулася роўная колькасць?"
 
 #: activities/share/resource/2/Data.qml:100
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Maria wants to equally share 11 pieces of candy between 3 of his friends: "
-#| "1 boy and 2 girls. Can he equally split the pieces of candy? First, place "
-#| "the children in the center, then drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Harry wants to share 12 pieces of candy between 3 of his friends: 1 boy and "
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Марыля хоча пароўну падзяліць 11 цукерак паміж трыма сваімі сябрамі: адным "
-"хлопчыкам і дзвюма дзяўчынкамі. Ці можа ён аднолькава падзяліць цукеркі? "
-"Спачатку размясціце дзяцей у цэнтры, затым перацягніце кожнаму цукеркі."
+"Герка хоча пароўну падзяліць 12 цукерак паміж трыма сваімі сябрамі: адным "
+"хлопчыкам і дзвюма дзяўчынкамі. У хлопчыка ўжо ёсць некалькі цукерак. Ці "
+"можа Герка падзяліцца сваімі цукеркамі так, каб ува ўсіх была аднолькавая "
+"колькасць?"
 
 #: activities/share/resource/2/Data.qml:122
 #, fuzzy
@@ -24499,18 +23975,13 @@ msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr "Цяпер ён хоча пачаставаць сваіх сяброў 4 цукеркамі."
 
 #: activities/share/resource/2/Data.qml:132
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Can you help Alice give 10 pieces of candy to her friends: 1 girl and 3 "
-#| "boys?"
 msgctxt "Data|"
 msgid ""
 "Can you help Alice share 10 pieces of candy equally among her friends: 1 "
 "girl and 3 boys? The girl already has some pieces of candy."
 msgstr ""
-"Ці можаце Вы дапамагчы Алесе пачаставаць 10 цукеркамі яе сяброў: 1 дзяўчынку "
-"і 3 хлопчыкі?"
+"Ці можаце Вы дапамагчы Алесе пароўну падзяліць 10 цукерак паміж ейнымі "
+"сябрамі: 1 дзяўчынкай і 3 хлопчыкамі? У дзяўчынкі ўжо ёсць некалькі цукерак."
 
 #: activities/share/resource/2/Data.qml:142
 #, fuzzy
@@ -24654,12 +24125,7 @@ msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Максімум 30 цукерак і 6 дзяцей, магчыма рэшта."
 
 #: activities/share/share.js:98
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|First part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Place %n boy(s) "
-#| msgid_plural "Place %n boy(s) "
+#, qt-format
 msgctxt ""
 "share|First part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
@@ -24671,12 +24137,7 @@ msgstr[2] "Размясціце %n хлопчыкаў "
 msgstr[3] ""
 
 #: activities/share/share.js:102
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "and %n girl(s) in the center. "
-#| msgid_plural "and %n girl(s) in the center. "
+#, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
 "split %n pieces of candy equally between them."
@@ -24688,28 +24149,15 @@ msgstr[2] "і %n дзяўчынак у цэнтр. "
 msgstr[3] ""
 
 #: activities/share/share.js:106
-#, fuzzy, qt-format
-#| msgctxt ""
-#| "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then "
-#| "equally split %n pieces of candy between them."
-#| msgid "Then equally split %n pieces of candy between them."
-#| msgid_plural "Then equally split %n pieces of candy between them."
+#, qt-format
 msgctxt ""
 "share|Third part of Place %n boy(s) and %n girl(s) in the center. Then split "
 "%n pieces of candy equally between them."
 msgid "Then split %n pieces of candy equally between them."
 msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Затым пароўну падзяліце %n цукерку паміж імі."
-msgstr[1] ""
-"#-#-#-#-#  svn.po (gcompris-by)  #-#-#-#-#\n"
-"Затым пароўну падзяліце %n цукеркі паміж імі.\n"
-"#-#-#-#-#  gcompris_qt(4).po (gcompris-by)  #-#-#-#-#\n"
-"Затым пароўну падзяліце %n цукеркі паміж імі."
-msgstr[2] ""
-"#-#-#-#-#  svn.po (gcompris-by)  #-#-#-#-#\n"
-"Затым пароўну падзяліце %n цукерак паміж імі.\n"
-"#-#-#-#-#  gcompris_qt(4).po (gcompris-by)  #-#-#-#-#\n"
-"Затым пароўну падзяліце %n цукерак паміж імі."
+msgstr[1] "Затым пароўну падзяліце %n цукеркі паміж імі."
+msgstr[2] "Затым пароўну падзяліце %n цукерак паміж імі."
 msgstr[3] ""
 
 #: activities/share/Share.qml:348
@@ -26733,12 +26181,9 @@ msgid "First number from 5 to 9."
 msgstr "Лікі ад 0 да 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division of numbers"
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Дзяленне лікаў"
+msgstr "Знайдзіце абодва лікі."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -27126,12 +26571,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Увядзіце ўсё слова пакуль яно падае і не кранулася долу."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Дададзеныя пераклады на славенскую, нямецкую, галісійскую мовы."
+msgstr "Дададзеныя пераклады на балгарскую, галісійскую і Суахілі."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -27160,20 +26602,14 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:39
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "Дададзены пераклад на македонскую."
+msgstr "Дададзены пераклад на арабскую і эсперанта"
 
 #: core/ChangeLog.qml:40 core/ChangeLog.qml:47
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Дададзены пераклад на македонскую."
+msgstr "Шмат аднаўленняў перакладаў."
 
 #: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
@@ -27212,12 +26648,9 @@ msgid ""
 msgstr ""
 
 #: core/ChangeLog.qml:67
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New speed setting in several activities."
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr "Новая налада хуткасці ў шэрагу практыкаванняў."
+msgstr "Палепшаная якасць выяваў у шэрагу практыкаванняў"
 
 #: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
@@ -27249,36 +26682,24 @@ msgid "Several bug fixes"
 msgstr "Шматлікія выпраўленні памылак"
 
 #: core/ChangeLog.qml:80
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr "Дададзены пераклад на македонскую."
+msgstr "Адноўлены пераклад на рускую"
 
 #: core/ChangeLog.qml:81
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "New voices for US English."
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr "Новая агучка для Амерыканскай англійскай мовы."
+msgstr "Новая агучка для нарвежскай нюнорск"
 
 #: core/ChangeLog.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Дададзены пераклад на македонскую."
+msgstr "Дададзеныя пераклады для брэтонскай, чэшскай і македонскай"
 
 #: core/ChangeLog.qml:90
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Macedonian."
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Дададзены пераклад на македонскую."
+msgstr "Дададзены пераклад на азербайджанскую"
 
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
@@ -27540,7 +26961,7 @@ msgstr "Ліцэнзія"
 msgctxt "DialogAbout|"
 msgid "translator-credits"
 msgstr ""
-"Вацлаўскі Антось <vaclau@zkodam.info>, Яцкевіч Дзяніс <mail@miesta.by>, "
+"Вацлаўскі Антось <vaclau@zkodam.info>, Яцкевіч Дзяніс <gcompris@miesta.by>, "
 "Наталля Шыпіла"
 
 #: core/DialogAbout.qml:55
