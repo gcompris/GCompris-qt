@@ -27468,33 +27468,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
-
-# Nota: http://en.wikipedia.org/wiki/History_of_the_bicycle
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "«Celerifere» del compte de Sivrac, 1791"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1 és divisible per %2"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "i"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "Els múltiples de %1 inclouen el %2, "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "i %1 són els divisors de %2."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
