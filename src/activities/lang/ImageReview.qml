@@ -260,6 +260,7 @@ Item {
 
                 MouseArea {
                     anchors.centerIn: parent
+                    enabled: rootItem.opacity == 1
                     width: parent.width * 3
                     height: parent.height * 2
                     onClicked: imageReview.prevWord()
@@ -283,6 +284,7 @@ Item {
 
                 MouseArea {
                     anchors.centerIn: parent
+                    enabled: rootItem.opacity == 1
                     width: parent.width * 3
                     height: parent.height * 2
                     onClicked: imageReview.nextWord();
