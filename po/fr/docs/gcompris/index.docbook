@@ -120,9 +120,9 @@ for example 'xx.yy.zz'
 >licence GPLv3</ulink
 >.</para>
 <para
->&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU;/&Linux;, &BSD;, macOS X, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
+>&gcompris; est disponible sur les systèmes d'exploitation suivants : &GNU; / &Linux;, &BSD;, macOS X, &Windows;, Android. Il est nécessaire d'avoir une carte graphique 3D avec <emphasis
 >OpenGL 2.1</emphasis
-> ou plus. Une profondeur de couleur de 32 bits est obligatoire.</para>
+> ou une version supérieure. Une profondeur de couleurs de 32 bits est obligatoire.</para>
 </sect1>
 
 <sect1 id="installation">
@@ -176,7 +176,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Chaque icône représente une activité. Autour de chacun d'eux, vous pouvez trouver des petits icônes qui donnent plus d'informations sur l'activité. Un clic simple sur l'icône vous amènera à une activité ou à un menu d'activités. Ils y a 8 sections (catégories) d'activités qui sont affichées en haut ou à gauche (si l'orientation de votre écran est en portrait). Par exemple, il y a une section « Jeux de plateau » qui inclut plusieurs jeux comme les échecs, le morpion ou le puissance 4.</para>
+>Chaque icône représente une activité. Autour de chacune d'elles, vous pouvez trouver des petits icônes donnant plus d'informations sur l'activité. Un clic simple sur l'icône vous amènera à une activité ou à un menu d'activités. Ils y a 8 sections (catégories) d'activités qui sont affichées en haut ou à gauche (Uniquement si l'orientation de votre écran est en mode « Portrait »). Par exemple, il y a une section « Jeux de plateau », regroupant plusieurs jeux comme les échecs, le morpion ou le jeu « Puissance 4 ».</para>
 <para
 >Certaines catégories ont des sous-catégories pour mieux filtrer les activités. Pour les activités portant sur les mathématiques, il y a trois sous-catégories : numération, arithmétique et mesures.</para>
 <para
