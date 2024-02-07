@@ -14,7 +14,7 @@ ActivityInfo {
   title: qsTr("Find the adjacent numbers")
   //: Help title
   description: qsTr("Find the missing adjacent numbers.")
-  //: intro: "Find the missing numbers."
+  //intro: "Find the missing numbers."
   //: Help goal
   goal: qsTr("Learn to order numbers.")
   prerequisite: ""
