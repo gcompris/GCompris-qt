@@ -9,6 +9,13 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0</project_license>
   <developer_name translate="no">KDE</developer_name>
+  <developer_name translate="no" xml:lang="bg">KDE</developer_name>
+  <developer_name translate="no" xml:lang="ca">KDE</developer_name>
+  <developer_name translate="no" xml:lang="nl">KDE</developer_name>
+  <developer_name translate="no" xml:lang="sl">KDE</developer_name>
+  <developer_name translate="no" xml:lang="tr">KDE</developer_name>
+  <developer_name translate="no" xml:lang="uk">KDE</developer_name>
+  <developer_name translate="no" xml:lang="x-test">xxKDExx</developer_name>
   <name>GCompris</name>
   <name xml:lang="ar">فهمت</name>
   <name xml:lang="az">GCompris</name>
