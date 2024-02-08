@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-05 22:37+0300\n"
+"PO-Revision-Date: 2024-02-07 17:36+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -138,7 +138,7 @@ msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
 msgstr "Знайдзіце адсутныя прылеглыя лікі."
 
-#. intro: "Find the missing numbers." Help goal
+#. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
@@ -2090,8 +2090,8 @@ msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
 msgstr ""
-"Чырвоны светладыёд пераўтварае электрычную энергію ў святло чырвонага колеру "
-"пры пэўных умовах."
+" Чырвоны светладыёд пераўтварае электрычную энергію ў святло чырвонага "
+"колеру пры пэўных умовах."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
 msgctxt "TutorialDataset|"
@@ -10778,12 +10778,9 @@ msgstr "Тыбет"
 
 #. Province of China: Sichuan
 #: activities/geo-country/resource/board/board14_0.qml:122
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Lithuania"
 msgctxt "board14_0|"
 msgid "Sichuan"
-msgstr "Літва"
+msgstr "Сычуань"
 
 #. Province of China: Chongqing
 #: activities/geo-country/resource/board/board14_0.qml:129
@@ -10912,30 +10909,21 @@ msgstr ""
 
 #. Council area of Scotland: Orkney Islands
 #: activities/geo-country/resource/board/board15_0.qml:53
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Cook Islands"
 msgctxt "board15_0|"
 msgid "Orkney Islands"
-msgstr "Кукавы выспы"
+msgstr "Аркнейскія астравы"
 
 #. Council area of Scotland: Shetland Islands
 #: activities/geo-country/resource/board/board15_0.qml:60
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Solomon Islands"
 msgctxt "board15_0|"
 msgid "Shetland Islands"
-msgstr "Саламонавы выспы"
+msgstr "Шэтландскія астравы"
 
 #. Council area of Scotland: Highland
 #: activities/geo-country/resource/board/board15_0.qml:67
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Finland"
 msgctxt "board15_0|"
 msgid "Highland"
-msgstr "Фінляндыя"
+msgstr "Шатландскае высакагор'е"
 
 #: activities/geo-country/resource/board/board15_1.qml:15
 msgctxt "board15_1|"
@@ -11034,21 +11022,15 @@ msgstr ""
 
 #. Council areas of Scotland: South Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:129
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board15_1|"
 msgid "South Ayrshire"
-msgstr "Паўднёвая Афрыка"
+msgstr "Саўт-Эршыр"
 
 #. Council areas of Scotland: East Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:136
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "East Timor"
 msgctxt "board15_1|"
 msgid "East Ayrshire"
-msgstr "Усходні Тымор"
+msgstr "Іст-Эршыр"
 
 #. Council areas of Scotland: Glasgow
 #: activities/geo-country/resource/board/board15_1.qml:143
@@ -11088,12 +11070,9 @@ msgstr ""
 
 #. Council areas of Scotland: North Ayrshire
 #: activities/geo-country/resource/board/board15_1.qml:185
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "North America"
 msgctxt "board15_1|"
 msgid "North Ayrshire"
-msgstr "Паўночная Амерыка"
+msgstr "Норт-Эршыр"
 
 #. Council areas of Scotland: Clackmannanshire
 #: activities/geo-country/resource/board/board15_1.qml:192
@@ -11102,21 +11081,15 @@ msgid "Clackmannanshire"
 msgstr ""
 
 #: activities/geo-country/resource/board/board16_0.qml:15
-#, fuzzy
-#| msgctxt "board16_0|"
-#| msgid "Historical provinces of Romania"
 msgctxt "board16_0|"
 msgid "Historical regions of Romania"
-msgstr "Гістарычныя правінцыі Румыніі"
+msgstr "Гістарычныя рэгіёны Румыніі"
 
 #. Historical Region of Romania: Oltenia
 #: activities/geo-country/resource/board/board16_0.qml:24
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Slovenia"
 msgctxt "board16_0|"
 msgid "Oltenia"
-msgstr "Славенія"
+msgstr "Алтэнія"
 
 #. Historical Region of Romania: Muntenia
 #: activities/geo-country/resource/board/board16_0.qml:31
@@ -11126,18 +11099,12 @@ msgstr ""
 
 #. Historical Region of Romania: Northern Dobruja
 #: activities/geo-country/resource/board/board16_0.qml:38
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Northern Africa"
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
-msgstr "Паўночная Афрыка"
+msgstr "Паўночная Дабруджа"
 
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Moldova"
 msgctxt "board16_0|"
 msgid "Moldavia"
 msgstr "Малдова"
@@ -11150,12 +11117,9 @@ msgstr ""
 
 #. Historical Region of Romania: Transylvania
 #: activities/geo-country/resource/board/board16_0.qml:59
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Tanzania"
 msgctxt "board16_0|"
 msgid "Transylvania"
-msgstr "Танзанія"
+msgstr "Трансілванія"
 
 #. Historical Region of Romania: Maramureș
 #: activities/geo-country/resource/board/board16_0.qml:66
@@ -11194,12 +11158,9 @@ msgstr ""
 
 #. Cultural region of Lithuania: Lithuania Minor
 #: activities/geo-country/resource/board/board17_0.qml:38
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Lithuania"
 msgctxt "board17_0|"
 msgid "Lithuania Minor"
-msgstr "Літва"
+msgstr "Малая Літва"
 
 #. Cultural region of Lithuania: Samogitia
 #: activities/geo-country/resource/board/board17_0.qml:45
@@ -11250,30 +11211,21 @@ msgstr ""
 
 #. Autonomous communities of Spain: Catalonia
 #: activities/geo-country/resource/board/board18_0.qml:57
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Mauritania"
 msgctxt "board18_0|"
 msgid "Catalonia"
-msgstr "Маўрытанія"
+msgstr "Каталонія"
 
 #. Autonomous communities of Spain: Aragon
 #: activities/geo-country/resource/board/board18_0.qml:64
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hexagon"
 msgctxt "board18_0|"
 msgid "Aragon"
-msgstr "Шасцікутнік"
+msgstr "Арагон"
 
 #. Autonomous communities of Spain: Valencia
 #: activities/geo-country/resource/board/board18_0.qml:71
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calendar"
 msgctxt "board18_0|"
 msgid "Valencia"
-msgstr "Каляндар"
+msgstr "Валенсія"
 
 #. Autonomous communities of Spain: Murcia
 #: activities/geo-country/resource/board/board18_0.qml:78
@@ -11301,21 +11253,15 @@ msgstr ""
 
 #. Autonomous communities of Spain: Cantabria
 #: activities/geo-country/resource/board/board18_0.qml:106
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Cabrillo"
 msgctxt "board18_0|"
 msgid "Cantabria"
-msgstr "Кабрыллё"
+msgstr "Кантабрыя"
 
 #. Autonomous communities of Spain: Navarre
 #: activities/geo-country/resource/board/board18_0.qml:113
-#, fuzzy
-#| msgctxt "board5|"
-#| msgid "Navajo"
 msgctxt "board18_0|"
 msgid "Navarre"
-msgstr "Навахо"
+msgstr "Навара"
 
 #. Autonomous communities of Spain: Extremadura
 #: activities/geo-country/resource/board/board18_0.qml:120
@@ -11325,21 +11271,15 @@ msgstr ""
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board18_0|"
 msgid "Canary Islands"
-msgstr "Маршалавы выспы"
+msgstr "Канарскія астравы"
 
 #. Autonomous communities of Spain: Balearic Islands
 #: activities/geo-country/resource/board/board18_0.qml:134
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board18_0|"
 msgid "Balearic Islands"
-msgstr "Маршалавы выспы"
+msgstr "Балеарскія астравы"
 
 #. Autonomous communities of Spain: Ceuta
 #: activities/geo-country/resource/board/board18_0.qml:141
@@ -11354,21 +11294,15 @@ msgid "Melilla"
 msgstr ""
 
 #: activities/geo-country/resource/board/board1_0.qml:15
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board1_0|"
 msgid "Regions of France"
-msgstr "Манументы Францыі"
+msgstr "Рэгіёны Францыі"
 
 #. Region of France: Corsica
 #: activities/geo-country/resource/board/board1_0.qml:27
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Horse"
 msgctxt "board1_0|"
 msgid "Corsica"
-msgstr "Конь"
+msgstr "Корсіка"
 
 #. Region of France: Nouvelle-Aquitaine
 #: activities/geo-country/resource/board/board1_0.qml:35
@@ -11414,39 +11348,27 @@ msgstr ""
 
 #. Region of France: Brittany
 #: activities/geo-country/resource/board/board1_0.qml:91
-#, fuzzy
-#| msgctxt "melodies|"
-#| msgid "Britain"
 msgctxt "board1_0|"
 msgid "Brittany"
-msgstr "Брытанія"
+msgstr "Брэтань"
 
 #. Region of France: Normandy
 #: activities/geo-country/resource/board/board1_0.qml:99
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Germany"
 msgctxt "board1_0|"
 msgid "Normandy"
-msgstr "Германія"
+msgstr "Нармандыя"
 
 #. Region of France: Hauts de France
 #: activities/geo-country/resource/board/board1_0.qml:107
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board1_0|"
 msgid "Hauts de France"
-msgstr "Манументы Францыі"
+msgstr " О-дэ-Франс"
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
-#, fuzzy
-#| msgctxt "FamilyDataset|"
-#| msgid "Grandson"
 msgctxt "board1_0|"
 msgid "Grand est"
-msgstr "Унук"
+msgstr "Гранд-Эст"
 
 #. Region of France: Bourgogne-Franche-Comté
 #: activities/geo-country/resource/board/board1_0.qml:123
@@ -11455,12 +11377,9 @@ msgid "Bourgogne-Franche-Comté"
 msgstr ""
 
 #: activities/geo-country/resource/board/board2_0.qml:15
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Districts of Germany"
 msgctxt "board2_0|"
 msgid "States of Germany"
-msgstr "Рэгіёны Германіі"
+msgstr "Землі Германіі"
 
 #. State of Germany: Thuringia
 #: activities/geo-country/resource/board/board2_0.qml:24
@@ -11488,21 +11407,15 @@ msgstr ""
 
 #. State of Germany: Saarland
 #: activities/geo-country/resource/board/board2_0.qml:52
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Swaziland"
 msgctxt "board2_0|"
 msgid "Saarland"
-msgstr "Свазілэнд"
+msgstr "Саар"
 
 #. State of Germany: Rhineland-Palatinate
 #: activities/geo-country/resource/board/board2_0.qml:59
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Aula Palatina"
 msgctxt "board2_0|"
 msgid "Rhineland-Palatinate"
-msgstr "Базіліка Канстанціна"
+msgstr "Рэйнланд-Пфальц"
 
 #. State of Germany: North Rhine-Westphalia
 #: activities/geo-country/resource/board/board2_0.qml:66
@@ -11512,12 +11425,9 @@ msgstr ""
 
 #. State of Germany: Lower Saxony
 #: activities/geo-country/resource/board/board2_0.qml:73
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Lower Case"
 msgctxt "board2_0|"
 msgid "Lower Saxony"
-msgstr "Ніжні рэгістр"
+msgstr "Ніжняя Саксонія"
 
 #. State of Germany: Mecklenburg-Vorpommern
 #: activities/geo-country/resource/board/board2_0.qml:80
@@ -11539,21 +11449,15 @@ msgstr ""
 
 #. State of Germany: Bremen
 #: activities/geo-country/resource/board/board2_0.qml:101
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Yemen"
 msgctxt "board2_0|"
 msgid "Bremen"
-msgstr "Емен"
+msgstr "Брэмен"
 
 #. State of Germany: Brandenburg
 #: activities/geo-country/resource/board/board2_0.qml:108
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Brandenburg Gate"
 msgctxt "board2_0|"
 msgid "Brandenburg"
-msgstr "Брандэнбургская брама"
+msgstr "Брандэнбург"
 
 #. State of Germany: Berlin
 #: activities/geo-country/resource/board/board2_0.qml:115
@@ -11563,12 +11467,9 @@ msgstr ""
 
 #. State of Germany: Bavaria
 #: activities/geo-country/resource/board/board2_0.qml:122
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Bulgaria"
 msgctxt "board2_0|"
 msgid "Bavaria"
-msgstr "Балгарыя"
+msgstr "Баварыя"
 
 #. State of Germany: Baden-Württemberg
 #: activities/geo-country/resource/board/board2_0.qml:129
@@ -11577,12 +11478,9 @@ msgid "Baden-Württemberg"
 msgstr ""
 
 #: activities/geo-country/resource/board/board3_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
 msgctxt "board3_0|"
 msgid "Provinces of Argentina"
-msgstr "Рэгіёны Аргентыны"
+msgstr "Правінцыі Аргентыны"
 
 #. Province of Argentina: Tucumán
 #: activities/geo-country/resource/board/board3_0.qml:24
@@ -11646,12 +11544,9 @@ msgstr ""
 
 #. Province of Argentina: Misiones
 #: activities/geo-country/resource/board/board3_0.qml:94
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "board3_0|"
 msgid "Misiones"
-msgstr "Дзяленне"
+msgstr "Місьёнес"
 
 #. Province of Argentina: Mendoza
 #: activities/geo-country/resource/board/board3_0.qml:101
@@ -11726,39 +11621,27 @@ msgid "Buenos Aires"
 msgstr ""
 
 #: activities/geo-country/resource/board/board4_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Districts of Argentina"
 msgctxt "board4_0|"
 msgid "Provinces of Poland"
-msgstr "Рэгіёны Аргентыны"
+msgstr "Паветы Польшчы"
 
 #. Province of Poland: Lower Silesian
 #: activities/geo-country/resource/board/board4_0.qml:24
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Tunisia"
 msgctxt "board4_0|"
 msgid "Lower Silesian"
-msgstr "Туніс"
+msgstr "Ніжняя Сілезія"
 
 #. Province of Poland: West Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:31
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board4_0|"
 msgid "West Pomeranian"
-msgstr "Аўстралія"
+msgstr "Заходняя Памеранія"
 
 #. Province of Poland: Greater Poland
 #: activities/geo-country/resource/board/board4_0.qml:38
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Greenland"
 msgctxt "board4_0|"
 msgid "Greater Poland"
-msgstr "Грэнландыя"
+msgstr "Вялікая Польшча"
 
 #. Province of Poland: Warmian-Masurian
 #: activities/geo-country/resource/board/board4_0.qml:45
@@ -11780,12 +11663,9 @@ msgstr ""
 
 #. Province of Poland: Pomeranian
 #: activities/geo-country/resource/board/board4_0.qml:66
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Romania"
 msgctxt "board4_0|"
 msgid "Pomeranian"
-msgstr "Румынія"
+msgstr "Памеранія"
 
 #. Province of Poland: Podlaskie
 #: activities/geo-country/resource/board/board4_0.qml:73
@@ -11813,12 +11693,9 @@ msgstr ""
 
 #. Province of Poland: Lesser Poland
 #: activities/geo-country/resource/board/board4_0.qml:101
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Poland"
 msgctxt "board4_0|"
 msgid "Lesser Poland"
-msgstr "Польшча"
+msgstr "Малая Польшча"
 
 #. Province of Poland: Łódź
 #: activities/geo-country/resource/board/board4_0.qml:108
@@ -11845,12 +11722,9 @@ msgid "Kuyavian-Pomeranian"
 msgstr ""
 
 #: activities/geo-country/resource/board/board5_0.qml:16
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "Eastern Districts of Turkey"
 msgctxt "board5_0|"
 msgid "Western Provinces of Turkey"
-msgstr "Усходнія рэгіёны Турцыі"
+msgstr "Заходнія правінцыі Турцыі"
 
 #. Province of Turkey: Zonguldak
 #: activities/geo-country/resource/board/board5_0.qml:25
@@ -12094,12 +11968,9 @@ msgstr ""
 
 #. Province of Turkey: Antalya
 #: activities/geo-country/resource/board/board5_0.qml:305
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Italy"
 msgctxt "board5_0|"
 msgid "Antalya"
-msgstr "Італія"
+msgstr "Анталія"
 
 #. Province of Turkey: Ankara
 #: activities/geo-country/resource/board/board5_0.qml:312
@@ -12132,12 +12003,9 @@ msgid "Adana"
 msgstr ""
 
 #: activities/geo-country/resource/board/board5_1.qml:15
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "Eastern Districts of Turkey"
 msgctxt "board5_1|"
 msgid "Eastern Provinces of Turkey"
-msgstr "Усходнія рэгіёны Турцыі"
+msgstr "Усходнія правінцыі Турцыі"
 
 #. Province of Turkey: Van
 #: activities/geo-country/resource/board/board5_1.qml:24
@@ -12147,12 +12015,9 @@ msgstr "Ван"
 
 #. Province of Turkey: Tunceli
 #: activities/geo-country/resource/board/board5_1.qml:31
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "board5_1|"
 msgid "Tunceli"
-msgstr "Скасаваць"
+msgstr "Тунджэлі"
 
 #. Province of Turkey: Trabzon
 #: activities/geo-country/resource/board/board5_1.qml:38
@@ -12222,12 +12087,9 @@ msgstr ""
 
 #. Province of Turkey: Malatya
 #: activities/geo-country/resource/board/board5_1.qml:115
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Malaysia"
 msgctxt "board5_1|"
 msgid "Malatya"
-msgstr "Малайзія"
+msgstr "Малат’я"
 
 #. Province of Turkey: Kilis
 #: activities/geo-country/resource/board/board5_1.qml:122
@@ -12374,21 +12236,15 @@ msgstr ""
 
 #. County of Norway: Nordland
 #: activities/geo-country/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Poland"
 msgctxt "board6_0|"
 msgid "Nordland"
-msgstr "Польшча"
+msgstr "Нурлан"
 
 #. County of Norway: Troms og Finnmark
 #: activities/geo-country/resource/board/board6_0.qml:47
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Denmark"
 msgctxt "board6_0|"
 msgid "Troms og Finnmark"
-msgstr "Данія"
+msgstr "Тромс-ог-Фінмарк"
 
 #. County of Norway: Trøndelag
 #: activities/geo-country/resource/board/board6_0.qml:54
@@ -12416,38 +12272,26 @@ msgstr ""
 
 #. County of Norway: Innlandet
 #: activities/geo-country/resource/board/board6_0.qml:82
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "Finland"
 msgctxt "board6_0|"
 msgid "Innlandet"
-msgstr "Фінляндыя"
+msgstr "Інландэт"
 
 #. County of Norway: Vestland
 #: activities/geo-country/resource/board/board6_0.qml:89
-#, fuzzy
-#| msgctxt "board2_0|"
-#| msgid "Iceland"
 msgctxt "board6_0|"
 msgid "Vestland"
-msgstr "Ісландыя"
+msgstr "Вестлан"
 
 #. County of Norway: Rogaland
 #: activities/geo-country/resource/board/board6_0.qml:96
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Poland"
 msgctxt "board6_0|"
 msgid "Rogaland"
-msgstr "Польшча"
+msgstr "Ругалан"
 
 #: activities/geo-country/resource/board/board7_0.qml:15
-#, fuzzy
-#| msgctxt "board7_0|"
-#| msgid "Counties of Brazil"
 msgctxt "board7_0|"
 msgid "Federative units of Brazil"
-msgstr "Акругі Бразіліі"
+msgstr "Штаты і акругі Бразіліі"
 
 #. Federative unit of Brazil: Amazonas
 #: activities/geo-country/resource/board/board7_0.qml:24
@@ -12505,12 +12349,9 @@ msgstr ""
 
 #. Federative unit of Brazil: Tocantins
 #: activities/geo-country/resource/board/board7_0.qml:87
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Continents"
 msgctxt "board7_0|"
 msgid "Tocantins"
-msgstr "Кантыненты"
+msgstr "Такантынс"
 
 #. Federative unit of Brazil: Piauí
 #: activities/geo-country/resource/board/board7_0.qml:94
@@ -12574,12 +12415,9 @@ msgstr ""
 
 #. Federative unit of Brazil: Paraíba
 #: activities/geo-country/resource/board/board7_0.qml:164
-#, fuzzy
-#| msgctxt "board4_0|"
-#| msgid "Paraguay"
 msgctxt "board7_0|"
 msgid "Paraíba"
-msgstr "Парагвай"
+msgstr "Параіба"
 
 #. Federative unit of Brazil: Rio Grande do Norte
 #: activities/geo-country/resource/board/board7_0.qml:171
@@ -12613,20 +12451,14 @@ msgstr ""
 
 #. Federative unit of Brazil: Distrito Federal
 #: activities/geo-country/resource/board/board7_0.qml:206
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Districts of France"
 msgctxt "board7_0|"
 msgid "Distrito Federal"
-msgstr "Рэгіёны Францыі"
+msgstr "Федэральная акруга"
 
 #: activities/geo-country/resource/board/board8_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "Districts of Canada"
 msgctxt "board8_0|"
 msgid "Provinces and territories of Canada"
-msgstr "Рэгіёны Канады"
+msgstr "Правінцыі і тэрыторыі Канады"
 
 #. Provinces and territories of Canada: Yukon
 #: activities/geo-country/resource/board/board8_0.qml:24
@@ -12702,20 +12534,14 @@ msgstr ""
 
 #. Provinces and territories of Canada: Prince Edward Island
 #: activities/geo-country/resource/board/board8_0.qml:108
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Pitcairn Islands"
 msgctxt "board8_0|"
 msgid "Prince Edward Island"
-msgstr "Астравы Піткэрн"
+msgstr "Востраў Прынца Эдуарда"
 
 #: activities/geo-country/resource/board/board9_0.qml:15
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Districts of Mexico"
 msgctxt "board9_0|"
 msgid "States of Mexico"
-msgstr "Рэгіёны Мексікі"
+msgstr "Штаты Мексікі"
 
 #. State of Mexico: Zacatecas
 #: activities/geo-country/resource/board/board9_0.qml:24
@@ -12857,12 +12683,9 @@ msgstr ""
 
 #. State of Mexico: Districto Federal
 #: activities/geo-country/resource/board/board9_0.qml:185
-#, fuzzy
-#| msgctxt "board1_0|"
-#| msgid "Districts of France"
 msgctxt "board9_0|"
 msgid "Districto Federal"
-msgstr "Рэгіёны Францыі"
+msgstr "Федэральная акруга"
 
 #. State of Mexico: Coahuila
 #: activities/geo-country/resource/board/board9_0.qml:192
@@ -12932,12 +12755,9 @@ msgid ""
 msgstr "Перацягніце часткі мапы на свае слушныя пазіцыі, каб запоўніць мапу."
 
 #: activities/geography/resource/board/board10_0.qml:15
-#, fuzzy
-#| msgctxt "board3_0|"
-#| msgid "Central America"
 msgctxt "board10_0|"
 msgid "Central Asia"
-msgstr "Цэнтральная Амерыка"
+msgstr "Цэнтральная Азія"
 
 #: activities/geography/resource/board/board10_0.qml:24
 msgctxt "board10_0|"
@@ -12965,12 +12785,9 @@ msgid "Uzbekistan"
 msgstr "Узбекістан"
 
 #: activities/geography/resource/board/board11_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board11_0|"
 msgid "South Asia"
-msgstr "Паўднёвая Афрыка"
+msgstr "Паўднёвая Азія"
 
 #: activities/geography/resource/board/board11_0.qml:24
 msgctxt "board11_0|"
@@ -13013,12 +12830,9 @@ msgid "Maldives"
 msgstr ""
 
 #: activities/geography/resource/board/board12_0.qml:15
-#, fuzzy
-#| msgctxt "board8_0|"
-#| msgid "South Africa"
 msgctxt "board12_0|"
 msgid "Southeast Asia"
-msgstr "Паўднёвая Афрыка"
+msgstr "Паўднёва-ўсходняя Азія"
 
 #: activities/geography/resource/board/board12_0.qml:24
 msgctxt "board12_0|"
@@ -13076,12 +12890,9 @@ msgid "Philippines"
 msgstr "Філіпіны"
 
 #: activities/geography/resource/board/board13_0.qml:15
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "East Timor"
 msgctxt "board13_0|"
 msgid "East Asia"
-msgstr "Усходні Тымор"
+msgstr "Усходняя Азія"
 
 #: activities/geography/resource/board/board13_0.qml:24
 msgctxt "board13_0|"
@@ -13139,12 +12950,9 @@ msgid "Palau"
 msgstr "Палау"
 
 #: activities/geography/resource/board/board14_0.qml:52
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Marshall Islands"
 msgctxt "board14_0|"
 msgid "Mariana Islands"
-msgstr "Маршалавы выспы"
+msgstr "Марыянскія астравы"
 
 #: activities/geography/resource/board/board14_0.qml:59
 msgctxt "board14_0|"
@@ -13207,12 +13015,9 @@ msgid "Cook Islands"
 msgstr "Кукавы выспы"
 
 #: activities/geography/resource/board/board14_0.qml:144
-#, fuzzy
-#| msgctxt "board10_0|"
-#| msgid "Solomon Islands"
 msgctxt "board14_0|"
 msgid "Samoan Islands"
-msgstr "Саламонавы выспы"
+msgstr "Астравы Самоа"
 
 #: activities/geography/resource/board/board14_0.qml:151
 msgctxt "board14_0|"
@@ -13600,12 +13405,9 @@ msgid "Moldova"
 msgstr "Малдова"
 
 #: activities/geography/resource/board/board6_0.qml:111
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "Macedonia"
 msgctxt "board6_0|"
 msgid "North Macedonia"
-msgstr "Македонія"
+msgstr "Паўночная Македонія"
 
 #: activities/geography/resource/board/board6_0.qml:119
 msgctxt "board6_0|"
@@ -13688,12 +13490,9 @@ msgid "Sudan"
 msgstr "Судан"
 
 #: activities/geography/resource/board/board7_0.qml:59
-#, fuzzy
-#| msgctxt "board15_1|"
-#| msgid "Southern Scotland"
 msgctxt "board7_0|"
 msgid "South Sudan"
-msgstr "Паўднёвая Шатландыя"
+msgstr "Паўднёвы Судан"
 
 #: activities/geography/resource/board/board7_0.qml:66
 msgctxt "board7_0|"
@@ -13946,12 +13745,9 @@ msgid "Angola"
 msgstr "Ангола"
 
 #: activities/geography/resource/board/board9_0.qml:15
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Australia"
 msgctxt "board9_0|"
 msgid "Western Asia"
-msgstr "Аўстралія"
+msgstr "Заходняя Азія"
 
 #: activities/geography/resource/board/board9_0.qml:24
 msgctxt "board9_0|"
@@ -13975,12 +13771,9 @@ msgid "Azerbaijan"
 msgstr "Азербайджан"
 
 #: activities/geography/resource/board/board9_0.qml:53
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Turkmenistan"
 msgctxt "board9_0|"
 msgid "Armenia"
-msgstr "Туркменістан"
+msgstr "Арменія"
 
 #: activities/geography/resource/board/board9_0.qml:60
 msgctxt "board9_0|"
@@ -14423,12 +14216,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Даведайцеся пра цыркуляцыю вады."
+msgstr "Навучыцеся чытаць градуяваную лінію."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
@@ -14446,34 +14236,22 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Лічбы: увесці лік"
+msgstr "Лічбы: увесці лічбы"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Клавіша звароту: выдаліць апошнюю лічбу вашага адказу"
+msgstr "Клавіша звароту: выдаліць апошнюю лічбу"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Лічбы: увесці ваш адказ"
+msgstr "Выдаленне: скасаваць ваш адказ"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Прагал ці Ўвод: спраўдзіць ваш адказ"
@@ -14489,76 +14267,49 @@ msgid "Find the requested number."
 msgstr "Знайдзіце загаданы лік."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 1 і 5."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 1 і 7."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 1 і 10."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 0 і 20."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 0 і 50."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 0 і 100."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 0 і 1 000."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 0 і 10 000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці лік паміж 0 і 1 000 000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
@@ -14574,12 +14325,9 @@ msgstr ""
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Навучыцца карыстацца календаром."
+msgstr "Навучыцца карыстацца градуяванай лініяй."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14590,12 +14338,9 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Стрэлкі налева і направа: перасоўваць касмічны карабель"
+msgstr "Стрэлкі налева і направа: перасоўваць курсор"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
@@ -14603,52 +14348,34 @@ msgid "Place the given number on the graduated line."
 msgstr ""
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Знайсці градацыі паміж 1 і 5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Знайсці градацыі паміж 1 і 7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Знайсці градацыі паміж 1 і 10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Знайсці градацыі паміж 1 і 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Знайсці градацыі паміж 0 і 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Знайсці градацыі паміж 0 і 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -14711,12 +14438,9 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Стрэлкі налева і направа: паварочвайце налева і направа"
+msgstr "Стрэлкі налева і направа: выберыце элементы з класамі ці словамі"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14728,12 +14452,9 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Клавіша звароту: выдаліць апошнюю лічбу вашага адказу"
+msgstr "Клавіша звароту: выбраць папярэдняе слова"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
@@ -14977,23 +14698,18 @@ msgstr ""
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Практыкуйце алгебраічныя вылічэнні з чатырма аперацыямі."
+msgstr "Навучыцеся вылічваць пры дапамозе чатырох дзеянняў."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Практыкуйце складанне, адыманне, множанне і дзяленне."
+msgstr ""
+"Умею лічыць, карыстаючыся складаннем, адыманнем, множаннем і дзяленнем."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -15002,20 +14718,15 @@ msgid "Use the four numbers with given operators to find 24."
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Стрэлкі: навігацыя ўнутры абшару"
+msgstr "Стрэлкі: навігацыя паміж лічбамі і аператарамі"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Прагал ці Ўвод: выбраць ці размясціць аб'ект"
+msgstr ""
+"Прагал ці Ўвод: выбраць ці скасаваць выбар бягучага значэння ці аператара"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15023,12 +14734,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Клавіша сцірання ці выдалення: адмена"
+msgstr "Клавіша сцірання ці выдалення: скасаваць апошнюю аперацыю"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -15051,28 +14759,19 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Множанне."
+msgstr "Патрабуецца аперацыя множання."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Малыя табліцы."
+msgstr "Вырашаецца любым аператарам."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Дзяленне."
+msgstr "Патрабуецца дзяленне."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15494,12 +15193,9 @@ msgstr ""
 
 #. Activity title
 #: activities/imagename/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "Categorization|"
-#| msgid "Update the image set"
 msgctxt "ActivityInfo|"
 msgid "Name the image"
-msgstr "Аднавіць набор выяў"
+msgstr "Назавіце выяву"
 
 #. Help title
 #: activities/imagename/ActivityInfo.qml:20
@@ -15859,12 +15555,9 @@ msgstr "Знайдзіце банджа"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Знайдзіце бонга"
+msgstr "Знайдзіце бонгі"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -16387,12 +16080,9 @@ msgstr "Вывучыць дзесятковыя лічбы"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn decimals with small numbers."
-msgstr "Навучыцца складаць маленькія лікі."
+msgstr "Вывучайце дзесятковыя дробы на маленькіх ліках."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
@@ -16401,6 +16091,8 @@ msgid ""
 "Learn decimals by counting how many squares are needed to represent the "
 "decimal number."
 msgstr ""
+"Вывучайце дзесятковыя дробы, падлічваючы колькі квадратаў спатрэбіцца, каб "
+"выразіць дзесятковы дробны лік."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
@@ -16437,33 +16129,23 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals/learn_decimals.js:48
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "learn_decimals|"
 msgid ""
 "Click on the squares to subtract them and display the result of the "
 "operation, and click on the OK button to validate your answer."
 msgstr ""
-"Змяніце колер, перасоўваючы рэгулятары на ліхтарыках, ці пстрыкаючы па "
-"кнопках + і -. Затым пстрыкніце па кнопцы ОК, каб праверыць ваш адказ."
+"Пстрыкніце па квадратах, каб адняць іх і паказаць вынік аперацыі, і "
+"пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals/learn_decimals.js:52
 #: activities/learn_decimals/learn_decimals.js:67
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag each image from the side to the corresponding name in the main area. "
-#| "Click on the OK button to check your answer."
 msgctxt "learn_decimals|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Перацягніце кожны малюнак збоку да ягонай назвы на галоўным абшары. "
-"Пстрычком па кнопцы OK праверце свой адказ."
+"У выпадку слушнага адказу, увядзіце з клавіятуры адпаведны вынік і "
+"пстрыкніце па кнопцы OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
@@ -16521,29 +16203,21 @@ msgid "Represent the quantity: %1"
 msgstr ""
 
 #: activities/learn_decimals/Learn_decimals.qml:576
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Enter the weight of the gift: %1"
+#, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
-msgstr "Увядзіце вагу падарунка: %1"
+msgstr "Увядзіце вынік: %1"
 
 #: activities/learn_decimals/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Between 0.1 and 1."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Паміж 0,1 і 1."
 
 #: activities/learn_decimals/resource/2/Data.qml:13
 #: activities/learn_quantities/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 5."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Паміж 1 і 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
@@ -16553,12 +16227,9 @@ msgstr "Складанне дзесятковых лікаў"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn additions with decimal numbers."
-msgstr "Навучыцца складаць маленькія лікі."
+msgstr "Навучыцеся складаць дзесятковыя дробы."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
@@ -16580,18 +16251,13 @@ msgstr ""
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag each image from the side to the corresponding name in the main area. "
-#| "Click on the OK button to check your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Перацягніце кожны малюнак збоку да ягонай назвы на галоўным абшары. "
-"Пстрычком па кнопцы OK праверце свой адказ."
+"У выпадку калі адказ слушны, увядзіце адпаведны вынік і пстрыкніце па кнопцы "
+"OK каб спраўдзіць ваш адказ."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:26
@@ -16600,28 +16266,19 @@ msgid "Numbers: type the result"
 msgstr ""
 
 #: activities/learn_decimals_additions/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Add decimal numbers up to 1."
-msgstr "Складанне зорак да 10."
+msgstr "Складанне дзесятковых дробаў да 1."
 
 #: activities/learn_decimals_additions/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 3."
 msgctxt "Data|"
 msgid "Add decimal numbers up to 3."
-msgstr "Суадносьце лічбы да 3."
+msgstr "Складанне дзесятковых дробаў да 3."
 
 #: activities/learn_decimals_additions/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 5."
 msgctxt "Data|"
 msgid "Add decimal numbers up to 5."
-msgstr "Суадносьце лічбы да 5."
+msgstr "Складанне дзесятковых дробаў да 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
@@ -16631,12 +16288,9 @@ msgstr "Адыманне дзесятковых лікаў"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with decimal numbers."
-msgstr "Навучыцца адыманню маленькіх лікаў."
+msgstr "Навучыцеся адымаць дзесятковыя дробы."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
@@ -16658,28 +16312,19 @@ msgid ""
 msgstr ""
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Data|"
 msgid "Subtract decimal numbers up to 1."
-msgstr "Суадносьце лічбы да 2."
+msgstr "Адыманне дзесятковых дробаў да 1."
 
 #: activities/learn_decimals_subtractions/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 3."
 msgctxt "Data|"
 msgid "Subtract decimal numbers up to 3."
-msgstr "Суадносьце лічбы да 3."
+msgstr "Адыманне дзесятковых дробаў да 3."
 
 #: activities/learn_decimals_subtractions/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 5."
 msgctxt "Data|"
 msgid "Subtract decimal numbers up to 5."
-msgstr "Суадносьце лічбы да 5."
+msgstr "Адыманне дзесятковых дробаў да 5."
 
 #: activities/learn_digits/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
@@ -16710,12 +16355,9 @@ msgstr "Уключыць голас"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Падлік рэчаў"
+msgstr "Падлічыце і расфарбуйце кружкі"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -16820,52 +16462,34 @@ msgid ""
 msgstr ""
 
 #: activities/learn_quantities/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 3."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Паміж 1 і 3."
 
 #: activities/learn_quantities/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 4."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Паміж 1 і 8."
 
 #: activities/learn_quantities/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 1 and 6."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Паміж 1 і 6."
 
 #: activities/learn_quantities/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Between 1 and 10."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Паміж 1 і 10."
 
 #: activities/learn_quantities/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Between 10 and 20."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Паміж 10 і 20."
 
 #: activities/learn_quantities/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Between 20 and 50."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Паміж 20 і 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
@@ -16911,29 +16535,20 @@ msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgstr "Адыманне з 1, 2, 3, 4 і 5."
 
 #: activities/learn_subtractions/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6 and 7."
-msgstr "Адыманне з 1, 2, 3, 4 і 5."
+msgstr "Адыманне з 1, 2, 3, 4, 5, 6 і 7."
 
 #: activities/learn_subtractions/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2, 3, 4 and 5."
 msgctxt "Data|"
 msgid "Subtractions with 1, 2, 3, 4, 5, 6, 7, 8 and 9."
-msgstr "Адыманне з 1, 2, 3, 4 і 5."
+msgstr "Адыманне з 1, 2, 3, 4, 5, 6, 7, 8 і 9."
 
 #. Activity title
 #: activities/left_right_click/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numeration training"
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Трэніроўка ліку"
+msgstr "Трэніроўка пстрыкаў мышкай"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -17826,12 +17441,9 @@ msgstr ""
 
 #. Activity title
 #: activities/memory-case-association/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Case association memory game against Tux"
 msgctxt "ActivityInfo|"
 msgid "Case association memory game"
-msgstr "Гульня з Туксам на памяць з вывучэннем сувязі рэгістру літар"
+msgstr "Гульня на асацыятыўную памяць"
 
 #. Help title
 #: activities/memory-case-association/ActivityInfo.qml:17
@@ -19074,12 +18686,9 @@ msgid "Language selector"
 msgstr "Выбар мовы"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Дазволіць аўтаматычнае пампаванне/аднаўленне аўдыёфайлаў"
+msgstr "Дазволіць аўтаматычнае пампаванне/аднаўленне знешніх далучэнняў."
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19694,21 +19303,15 @@ msgstr ""
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr "Пазнаёмцеся з сістэмаю Брайля"
+msgstr "Даследуйце інтэрнацыянальную азбуку Морзэ"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to tell the time on an analog clock."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Навучыцеся называць час паводле стрэлкавага гадзінніка."
+msgstr "Навучыцеся камунікаваць пры дапамозе азбукі Морзэ."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -19719,12 +19322,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowledge of arithmetic operations."
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr "Веданне арыфметычных аперацый."
+msgstr "Веданне алфавіту і лічбаў."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -19761,31 +19361,23 @@ msgid ""
 msgstr ""
 
 #: activities/morse_code/FirstScreen.qml:90
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
-"Калі вы гатовыя пачаць, пстрыкніце на мне і паспрабуйце ўтвараць сімвалы "
-"Брайля."
+"Калі вы гатовыя пачаць, пстрыкніце па выяве Тукса і мы пагутарым азбукай "
+"Морзэ."
 
 #: activities/morse_code/MorseCode.qml:352
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Roman value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr "Рымская лічба: %1"
+msgstr "Код Морзэ: %1"
 
 #: activities/morse_code/MorseCode.qml:353
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Arabic value: %1"
+#, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr "Арабская лічба: %1"
+msgstr "Літара/лічба: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19808,12 +19400,10 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:39
 #: activities/morse_code/resource/1/Data.qml:55
 #: activities/morse_code/resource/1/Data.qml:71
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr "Перавядзіце рымскую лічбу %1 у арабскую."
+msgstr "Перакладзіце паведамленне %1 у літары."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
@@ -19830,12 +19420,10 @@ msgstr ""
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
-#, fuzzy, qt-format
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
+#, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr "Перавядзіце рымскую лічбу %1 у арабскую."
+msgstr "Перакладзіце паведамленне %1 у лічбы."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
@@ -19854,12 +19442,9 @@ msgid "Write the Morse code you hear."
 msgstr ""
 
 #: activities/morse_code/resource/3/Data.qml:34
-#, fuzzy
-#| msgctxt "RomanNumerals|"
-#| msgid "Convert the roman number %1 to arabic."
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr "Перавядзіце рымскую лічбу %1 у арабскую."
+msgstr "Перакладзіце паведамленне ў слова."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -19937,17 +19522,12 @@ msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. First take turns to place nine pieces, and then take "
-#| "turns to move your pieces."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
-"Гуляйце з сябрам. Спачатку па чарзе размясціце па дзевяць фішак, а затым "
+"Гуляйце з Туксам. Спачатку па чарзе размясціце па дзевяць фішак, а затым "
 "таксама па чарзе рабіце хады фішкамі."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
@@ -20293,12 +19873,9 @@ msgstr ""
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Knowing alphabets"
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr "Веданне алфавіту"
+msgstr "Парадкаванне літар"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -20310,12 +19887,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_alphabets/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the alphabetical order."
-msgstr "Даведайцеся пра цыркуляцыю вады."
+msgstr "Навучыцеся алфавітнаму парадку."
 
 #. Help manual
 #: activities/ordering_alphabets/ActivityInfo.qml:30
@@ -20398,12 +19972,9 @@ msgstr ""
 
 #. Help title
 #: activities/ordering_chronology/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the pieces in the right order."
 msgctxt "ActivityInfo|"
 msgid "Arrange the given events in their chronological order."
-msgstr "Размясціце часткі ў слушнай паслядоўнасці."
+msgstr "Упарадкуйце дадзеныя падзеі ў іх храналагічным парадку."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
@@ -20436,22 +20007,18 @@ msgstr "Тукс дастае яблык."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "category_odd_even|"
-#| msgid "Odd even numbers"
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr "Няцотныя, цотныя лікі"
+msgstr "Парадкаванне лікаў"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the pieces in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
-msgstr "Размясціце часткі ў слушнай паслядоўнасці."
+msgstr ""
+"Упарадкуйце дадзеныя лікі ў парадку павелічэння альбо змяншэння паводле "
+"задання."
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
@@ -20474,52 +20041,29 @@ msgid ""
 msgstr ""
 
 #: activities/ordering_numbers/ordering.js:66
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the items to match them."
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
-msgstr "Перацягніце рэчы да сваіх адпаведнікаў."
+msgstr "Перацягніце элементы ў парадку павелічэння."
 
 #: activities/ordering_numbers/ordering.js:67
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr "Перацягніце часткі мапы на свае слушныя пазіцыі, каб запоўніць мапу."
+msgstr "Перацягніце элементы ў парадку памяншэння."
 
 #: activities/ordering_numbers/ordering.js:68
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr "Перацягніце часткі мапы на свае слушныя пазіцыі, каб запоўніць мапу."
+msgstr "Перацягніце літары ў алфавітным парадку."
 
 #: activities/ordering_numbers/ordering.js:69
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr "Перацягніце часткі мапы на свае слушныя пазіцыі, каб запоўніць мапу."
+msgstr "Перацягніце літары ў адваротным алфавітным парадку."
 
 #: activities/ordering_numbers/ordering.js:70
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr "Перацягніце часткі мапы на свае слушныя пазіцыі, каб запоўніць мапу."
+msgstr "Перацягніце элементы ў храналагічным парадку."
 
 #: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
@@ -20527,68 +20071,44 @@ msgid "Drag and drop the words to the upper box to form a meaningful sentence."
 msgstr ""
 
 #: activities/ordering_numbers/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 5 defined numbers between 1 and 5."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Павелічэнне, 5 лікаў паміж 1 і 5."
 
 #: activities/ordering_numbers/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 5 defined numbers between 1 and 5."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Памяншэнне, 5 лікаў паміж 1 і 5."
 
 #: activities/ordering_numbers/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 5 random numbers between 2 and 10."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Павелічэнне, 5 любых лікаў паміж 2 і 10."
 
 #: activities/ordering_numbers/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 5 random numbers between 2 and 10."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Памяншэнне, 5 любых лікаў паміж 2 і 10."
 
 #: activities/ordering_numbers/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 5 random numbers between 8 and 20."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Павелічэнне, 5 любых лікаў паміж 8 і 20."
 
 #: activities/ordering_numbers/resource/6/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 5 random numbers between 8 and 20."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Памяншэнне, 5 любых лікаў паміж 8 і 20."
 
 #: activities/ordering_numbers/resource/7/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Ascending order, 8 random numbers between 2 and 30."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Павелічэнне, 8 любых лікаў паміж 2 і 30."
 
 #: activities/ordering_numbers/resource/8/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Descending order, 8 random numbers between 2 and 30."
-msgstr "Адгадайце лічбу паміж 1 і %1."
+msgstr "Памяншэнне, 8 любых лікаў паміж 2 і 30."
 
 #. Activity title
 #: activities/ordering_sentences/ActivityInfo.qml:20
@@ -20660,12 +20180,9 @@ msgstr ""
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play chess against Tux"
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr "Шахматы з Туксам"
+msgstr "Гульня Авары (з Туксам)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
@@ -20731,21 +20248,15 @@ msgstr ""
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr "Гульня з палоскай (з сябрам)"
+msgstr "Гульня Авары (з сябрам)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Bargame (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr "Гульня з палоскай (з сябрам)"
+msgstr "Гуляйце ў стратэгічную гульню Авары з сябрам."
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
@@ -20900,22 +20411,17 @@ msgstr ""
 #. Help title
 #: activities/path_decoding/ActivityInfo.qml:16
 #: activities/path_decoding_relative/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Follow the instructions when you run the activity."
 msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
-msgstr "Прытрымлівайцеся правадніцтва, калі выконваеце практыкаванне."
+msgstr ""
+"Прытрымлівайцеся дадзенага правадніцтва, каб дапамачы Туксу дасягнуць мэта."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:21
 #: activities/path_decoding_relative/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Click on the grid squares to move Tux following the given directions."
-msgstr "Выберыце пару, адпаведную дадзенай роднаснай сувязі."
+msgstr "Пстрыкніце па ячэйке сеткі каб прасунуць Тукса ў неабходным накірунку."
 
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_encoding/ActivityInfo.qml:22
@@ -20948,12 +20454,9 @@ msgstr ""
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Point the relatives"
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Пакажыце родзічаў"
+msgstr "Дэкадаванне адноснага шляху"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:22
 #: activities/path_encoding_relative/ActivityInfo.qml:22
@@ -20978,12 +20481,9 @@ msgstr ""
 #. Help title
 #: activities/path_encoding/ActivityInfo.qml:16
 #: activities/path_encoding_relative/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move each item to recreate the image."
 msgctxt "ActivityInfo|"
 msgid "Move Tux along the path to reach the target."
-msgstr "Рухайце элементы, каб уз'ядняць выяву."
+msgstr "Перасоўвайце Тукса па шляху каб дасягнуць мэты."
 
 #. Help manual
 #: activities/path_encoding/ActivityInfo.qml:21
@@ -21013,12 +20513,9 @@ msgstr ""
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Point the relatives"
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "Пакажыце родзічаў"
+msgstr "Кадаванне адноснага шляху"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -22018,20 +21515,14 @@ msgid ""
 msgstr ""
 
 #: activities/positions/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate selected answer"
-msgstr "Прагал ці Ўвод: спраўдзіць ваш адказ"
+msgstr "Прагал ці Ўвод: спраўдзіць выбраны адказ"
 
 #: activities/positions/resource/1/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Basic enumeration."
 msgctxt "Data|"
 msgid "Basic positions."
-msgstr "Базавы пералік."
+msgstr "Базавыя пазіцыі."
 
 #. it refers to the next to position
 #: activities/positions/resource/1/Data.qml:20
@@ -22110,12 +21601,9 @@ msgid "Select the image where the child is under the box."
 msgstr ""
 
 #: activities/positions/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Additions with 1 and 2."
 msgctxt "Data|"
 msgid "All positions (with left and right)."
-msgstr "Складанне 1 і 2."
+msgstr "Усе пазіцыі (злева і справа)."
 
 #. it refers to the position on the right side
 #: activities/positions/resource/2/Data.qml:20
@@ -22147,11 +21635,6 @@ msgstr "Праграмаванне лабірынту"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "This activity teaches to program Tux to reach its goal using simple "
-#| "instructions like move forward, turn left and right."
 msgctxt "ActivityInfo|"
 msgid ""
 "This activity teaches to program Tux to reach its goal using simple "
@@ -22187,22 +21670,18 @@ msgstr ""
 "Тукса да ягонай мэты."
 
 #: activities/programmingMaze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside selected area"
-msgstr "Стрэлкі ўлева і направа: навігацыя ўнутры абшару"
+msgstr "Стрэлкі ўлева і направа: навігацыя ўнутры абранай зоны"
 
 #: activities/programmingMaze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Up and Down: increase or decrease the tempo"
 msgctxt "ActivityInfo|"
 msgid ""
 "Up and Down arrows: increase or decrease the loop counter if the loop area "
 "is selected"
-msgstr "Стрэлкі ўверх і ўніз: паменшыць ці павялічыць тэмп"
+msgstr ""
+"Стрэлкі ўверх і ўніз: паменшыць ці павялічыць лічыльнік цыкла, калі абрана "
+"зона цыклу."
 
 #: activities/programmingMaze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -22291,7 +21770,7 @@ msgstr "<b>3. Павярнуць направа:</b> Паварочвае Тук
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
 msgid "Main Function:"
-msgstr "Галоўная функцыя:"
+msgstr "Праграма:"
 
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
@@ -22305,7 +21784,7 @@ msgid ""
 "<b>Main Function</b>."
 msgstr ""
 "Пстрыкніце па любой інструкцыі ў <b>зоне інструкцый</b>, каб дадаць яе ў "
-"<b>галоўную функцыю</b>."
+"<b>праграму</b>."
 
 #: activities/programmingMaze/programmingMaze.js:107
 msgctxt "programmingMaze|"
@@ -22354,21 +21833,14 @@ msgid ""
 msgstr ""
 
 #: activities/programmingMaze/programmingMaze.js:125
-#, fuzzy
-#| msgctxt "programmingMaze|"
-#| msgid ""
-#| "-To <b>switch</b> between the <b>Procedure area</b> and the <b>Main "
-#| "Function area</b> to add your code, click on the <b>Procedure</b> or "
-#| "<b>Main Function</b> label."
 msgctxt "programmingMaze|"
 msgid ""
 "-To <b>switch</b> between the <b>Loop area</b> and the <b>Main Function "
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"-Для <b>пераключэння</b> між <b>зонай працэдуры</b> і <b>зонай галоўнай "
-"функцыі</b> для дадавання коду, пстрыкніце па загалоўку <b>Працэдура</b> ці "
-"<b>Галоўная функцыя</b>."
+"-Для <b>пераключэння</b> між <b>зонай цыклу</b> і <b>зонай праграмы</b> каб "
+"дадаць код, пстрыкніце па загалоўку <b>Цыкл</b> ці <b>Праграма</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
@@ -22379,7 +21851,7 @@ msgstr "Дасягніце рыбкі меней за %1 інструкцый."
 #: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
-msgstr "Галоўная функцыя"
+msgstr "Праграма"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
@@ -22803,12 +22275,10 @@ msgstr ""
 #: activities/reversecount/resource/7/Data.qml:13
 #: activities/reversecount/resource/8/Data.qml:13
 #: activities/reversecount/resource/9/Data.qml:13
-#, fuzzy, qt-format
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
+#, qt-format
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Лічбы паміж %1 і %2."
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -23555,21 +23025,12 @@ msgstr ""
 "Калі застаецца рэшта цукерак, то іх трэба пакласці ў слоік для цукерак."
 
 #: activities/share/resource/1/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum 25 candies and 5 kids, no rest."
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, no rest."
 msgstr "Максімум 25 цукерак і 5 дзяцей, без рэшты."
 
 #: activities/share/resource/1/Data.qml:18
 #: activities/share/resource/2/Data.qml:18
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Paul wants to equally share 2 pieces of candy between 2 of his girl "
-#| "friends. Can you help him? First, place the children in the center, then "
-#| "drag the pieces of candy to each of them."
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 2 pieces of candy equally between 2 of his girl friends. "
@@ -23581,12 +23042,9 @@ msgstr ""
 "перацягніце цукеркі кожнаму з іх."
 
 #: activities/share/resource/1/Data.qml:28
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
-msgstr "Цяпер ён хоча пачаставаць сваіх сяброў 4 цукеркамі."
+msgstr "Цяпер ён хоча пароўну падзяліць між сваімі сябрамі 4 цукеркі."
 
 #: activities/share/resource/1/Data.qml:38
 #, fuzzy

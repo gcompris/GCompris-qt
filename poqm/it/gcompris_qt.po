@@ -51,7 +51,7 @@ msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
 msgstr "Trova i numeri adiacenti mancanti."
 
-#. intro: "Find the missing numbers." Help goal
+#. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."

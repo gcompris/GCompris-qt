@@ -62,7 +62,7 @@ msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
 msgstr "संख्याओं के बीच भाग"
 
-#. intro: "Find the missing numbers." Help goal
+#. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"

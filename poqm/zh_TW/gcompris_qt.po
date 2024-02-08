@@ -60,7 +60,7 @@ msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
 msgstr "找出這兩個數字。"
 
-#. intro: "Find the missing numbers." Help goal
+#. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"

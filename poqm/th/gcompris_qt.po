@@ -50,7 +50,7 @@ msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
 msgstr "เกมความจำผสมลบเลข"
 
-#. intro: "Find the missing numbers." Help goal
+#. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 #, fuzzy
 #| msgctxt "Warning|"
