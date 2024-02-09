@@ -106,11 +106,13 @@ function getValueArray(numberArray) {
         values = numberArray.numberValue;
     }
     if(numberArray.randomizeOrder == undefined || numberArray.randomizeOrder == true) {
+        var maxNumberOfShuffles = 10;
         do {
             // Shuffle the numbers before creating the model.
             // Make sure at least the first computation is not correct to avoid having the possibility to have all good answers at start
             Core.shuffle(values);
-        } while(values[0] + values[1] == 10);
+            maxNumberOfShuffles--;
+        } while(values[0] + values[1] == 10 && maxNumberOfShuffles > 0);
     }
 
     for(var i = 0; i < numberOfPairs; i++) {
