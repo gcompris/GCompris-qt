@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-21 14:52+0100\n"
-"Last-Translator: Jazeix Johnny <jazeix@gmail.com>\n"
+"PO-Revision-Date: 2024-01-27 15:56+0100\n"
+"Last-Translator: Johnny Jazeix <jazeix@gmail.com>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -3244,12 +3244,11 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Compléter la grille nécessite de la patience et de la logique."
+msgstr ""
+"Compléter la grille nécessite de la patience et des connaissances en "
+"arithmétique."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -9907,25 +9906,19 @@ msgstr "Trouve le numérateur et le dénominateur (avec un carré)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "La frise"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Empile les disques pour reproduire la tour modèle."
+msgstr "Reproduis et termine la frise."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "algorithm"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Suites logiques"
+msgstr "Apprends les algorithmes."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9934,51 +9927,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Reproduis la frise du haut. Dans certains niveaux, tu devras soit compléter "
+"la frise, soit la reproduire après l'avoir mémorisée."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Flèches gauche et droite : naviguer dans les boutons de signes"
+msgstr "Flèches gauche et droite : choisir une forme"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Espace : sélectionner un élément"
+msgstr "Espace : ajouter la forme à la frise"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Espace ou Entrée : sélectionner un élément de la liste"
+msgstr "Retour arrière ou suppression : retirer la dernière forme de la frise"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Entrée : pour valider tes réponses"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Espace : bascule entre les modes invisible et visible."
+msgstr "Tab : basculer entre l'édition de la frise et la vue du modèle"
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Je suis prêt"
@@ -9986,7 +9963,7 @@ msgstr "Je suis prêt"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Copie cette frise : 2 formes avec des couleurs/signes différents."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9994,7 +9971,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Copie cette frise."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -10002,6 +9979,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Mémorise et copie cette frise : plusieurs combinaisons de formes, de "
+"couleurs/signes et de tailles différentes possibles."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -10009,7 +9988,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Mémorise et copie cette frise."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -10017,11 +9996,14 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Copie et termine cette frise : motifs entre 4 et 7 valeurs, plusieurs "
+"combinaisons de formes, de couleurs/signes et de tailles différentes "
+"possibles."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Copie et termine cette frise."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -10029,6 +10011,9 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Mémorise et copie cette frise : motifs entre 4 et 7 valeurs, plusieurs "
+"combinaisons de formes, de couleurs/signes et de tailles différentes "
+"possibles."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -10036,6 +10021,9 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Copie et termine cette frise : motifs entre 6 et 8 valeurs, plusieurs "
+"combinaisons de formes, de couleurs/signes et de tailles différentes "
+"possibles."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -10044,7 +10032,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Copie et termine cette frise."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -10052,21 +10040,26 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Mémorise et copie cette frise : motifs entre 6 et 8 valeurs, plusieurs "
+"combinaisons de formes, de couleurs/signes et de tailles différentes "
+"possibles."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Copie et termine cette frise : 2 formes avec des couleurs/signes différents."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Mémorise et copie cette frise : 2 formes avec des couleurs/signes différents."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Copie cette frise : 3 ou 4 formes avec des couleurs/signes différents."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -10074,6 +10067,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Copie cette frise : 3 ou 4 formes avec 2 tailles et potentiellement les "
+"mêmes couleurs/signes."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -10081,11 +10076,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Copie et termine cette frise : 3 ou 4 formes avec 2 tailles et "
+"potentiellement les mêmes couleurs/signes."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Copie cette frise : plusieurs combinaisons de formes, de couleurs/signes et "
+"de tailles différentes possibles."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -10094,6 +10093,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Copie et termine cette frise : plusieurs combinaisons de formes, de couleurs/"
+"signes et de tailles différentes possibles."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -14373,32 +14374,26 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Valeurs sur la ligne graduée"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Lis les valeurs sur la ligne graduée."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Apprentissage du cycle de l'eau."
+msgstr "Apprends à lire une ligne graduée."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Nombres pairs et impairs"
+msgstr "Savoir lire et ordonner des nombres."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14409,34 +14404,22 @@ msgid ""
 msgstr ""
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
 msgstr "Clavier numérique : saisir un nombre"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Touche retour arrière : effacer le dernier chiffre de ta réponse"
+msgstr "Touche retour arrière : effacer le dernier chiffre"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Clavier numérique : saisir ta réponse"
+msgstr "Supprimer : réinitialiser ta réponse"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Espace ou Entrée : valider ta réponse"
@@ -14643,15 +14626,14 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Espace : assigner la classe sélectionnée au mot en cours et sélectionner le "
+"mot suivant"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Touche retour arrière : effacer le dernier chiffre de ta réponse"
+msgstr "Touche retour arrière : choisir le mot précédent"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
@@ -14662,12 +14644,13 @@ msgstr "Analyse grammaticale"
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Apprendre à identifier les classes grammaticales."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
 msgstr ""
+"Trouve tous les mots correspondants aux classes grammaticales demandées."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14675,11 +14658,14 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Choisis une classe grammaticale dans la liste, puis choisis une case sous un "
+"mot et assigne lui la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
+"Laisse la case blanche si aucune classe grammaticale ne correspond pas."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
@@ -14689,7 +14675,7 @@ msgstr "Classes grammaticales"
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "Trouve tous les mots correspondants à la classe grammaticale demandée."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14697,6 +14683,8 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Choisis la classe grammaticale dans la liste, puis choisis une case sous un "
+"mot et assigne lui la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
@@ -14704,12 +14692,9 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:421
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "vide"
+msgstr "Effacer"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
