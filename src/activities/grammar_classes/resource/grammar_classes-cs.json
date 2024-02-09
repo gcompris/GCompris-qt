@@ -1,0 +1,493 @@
+{
+  "levels": [
+    {
+      "objective": "Najdi podstatná jména.",
+      "difficulty": "3",
+      "exercise": "podstatna",
+      "goal": "podst"
+    },
+    {
+      "objective": "Najdi slovesa.",
+      "difficulty": "3",
+      "exercise": "slovesa",
+      "goal": "slov"
+    },
+    {
+      "objective": "Najdi přídavná jména.",
+      "difficulty": "3",
+      "exercise": "pridavna",
+      "goal": "příd"
+    },
+    {
+      "objective": "Najdi zájmena.",
+      "difficulty": "4",
+      "exercise": "zajmena",
+      "goal": "záj"
+    },
+    {
+      "objective": "Najdi příslovce.",
+      "difficulty": "4",
+      "exercise": "prislovce",
+      "goal": "přísl"
+    },
+    {
+      "objective": "Najdi číslovky.",
+      "difficulty": "3",
+      "exercise": "cislovky",
+      "goal": "čís"
+    },
+    {
+      "objective": "Najdi předložky.",
+      "difficulty": "4",
+      "exercise": "predlozky",
+      "goal": "předl"
+    },
+    {
+      "objective": "Najdi spojky.",
+      "difficulty": "4",
+      "exercise": "spojky",
+      "goal": "spoj"
+    },
+    {
+      "objective": "Najdi částice.",
+      "difficulty": "4",
+      "exercise": "castice",
+      "goal": "část"
+    },
+    {
+      "objective": "Najdi citoslovce.",
+      "difficulty": "4",
+      "exercise": "citoslovce",
+      "goal": "cit"
+    }
+  ],
+  "dataset" : {
+    "podstatna" : [
+      { "sentence": "Tato květina je hezká."
+      , "answer":   "záj  podst slov příd"
+      },
+      { "sentence": "Kočka se ráda mazlí."
+      , "answer":   "podst záj přísl slov"
+      },
+      { "sentence": "Večer sledujeme zapadající slunce."
+      , "answer":   "přísl slov příd podst"
+      },
+      { "sentence": "Návštěva už zvoní u dveří."
+      , "answer":   "podst přísl slov předl podst"
+      },
+      { "sentence": "Každý večer hraju s kamarády fotbal."
+      , "answer":   "záj   přísl slov předl podst podst"
+      },
+      { "sentence": "Mlynář nese pytel mouky."
+      , "answer":   "podst  slov podst  podst"
+      },
+      { "sentence": "Dnes na zahradu pěkně prší."
+      , "answer":   "přísl předl podst přísl slov"
+      },
+      { "sentence": "Petr a jeho pes vyrazili do lesa."
+      , "answer":   "podst spoj záj podst slov předl podst"
+      },
+      { "sentence": "U našeho domu stojí velký strom."
+      , "answer":   "předl záj podst slov příd podst"
+      },
+      { "sentence": "Můj táta na mě vždycky čeká u školy."
+      , "answer":   "záj podst předl záj přísl slov předl podst"
+      },
+      { "sentence": "Babička chodí ke kadeřnici každý druhý týden."
+      , "answer":   "podst   slov  předl podst  záj   čís   podst"
+      },
+      { "sentence": "Chleba se peče v rozpálené peci."
+      , "answer":   "podst  záj slov předl příd podst"
+      }
+    ],
+    "slovesa" : [
+      { "sentence": "Veronika běží."
+      , "answer":   "podst    slov"
+      },
+      { "sentence": "Kočka leží a spí."
+      , "answer":   "podst slov spoj slov"
+      },
+      { "sentence": "Pozorujeme okolní krajinu."
+      , "answer":   "slov       příd podst"
+      },
+      { "sentence": "Celá naše třída zpívá."
+      , "answer":   "příd záj podst slov"
+      },
+      { "sentence": "S kamarády často hrajeme hokej."
+      , "answer":   "předl podst přísl slov   podst"
+      },
+      { "sentence": "Náš dědeček rád čte dětem pohádky."
+      , "answer":   "záj podst   přísl slov podst podst"
+      },
+      { "sentence": "Letadla obvykle létají vysoko na nebi."
+      , "answer":   "podst   přísl   slov   přísl  předl podst"
+      },
+      { "sentence": "Rytíř se svým doprovodem odjíždí z vesnice."
+      , "answer":   "podst předl záj podst   slov    předl podst"
+      },
+      { "sentence": "Návštěva už zvoní u dveří."
+      , "answer":   "podst přísl slov předl podst"
+      },
+      { "sentence": "Tato kniha je úžasná."
+      , "answer":   "záj  podst slov příd"
+      },
+      { "sentence": "Honzíkovi rodiče každý večer běhají."
+      , "answer":   "příd      podst  záj   přísl slov"
+      },
+      { "sentence": "Slávka si denně volá se svou nejlepší kamarádkou."
+      , "answer":   "podst  záj přísl slov předl záj příd    podst"
+      }
+    ],
+    "pridavna" : [
+      { "sentence": "Jitčin dům je hodně velký."
+      , "answer":   "příd   podst slov přísl příd"
+      },
+      { "sentence": "Ty jejich sochy jsou nádherné."
+      , "answer":   "záj záj   podst slov příd"
+      },
+      { "sentence": "Nahoře (jsme měli) úžasný výhled do krajiny."
+      , "answer":   "přísl  slov        příd   podst  předl podst"
+      },
+      { "sentence": "Ta pěkná zahrada je nedaleko jejich domu."
+      , "answer":   "záj příd podst   slov přísl  záj    podst"
+      },
+      { "sentence": "Kde jsou ty moje modré boty?"
+      , "answer":   "přísl slov záj záj příd podst"
+      },
+      { "sentence": "Staří lidé rádi dětem vyprávějí své životní příběhy."
+      , "answer":   "příd  podst přísl podst slov    záj příd    podst"
+      },
+      { "sentence": "V naší klikaté ulici jsou řidiči často zmatení."
+      , "answer":   "předl záj příd podst slov podst  přísl příd"
+      },
+      { "sentence": "Do našeho města přijel slavný zpěvák s veselou kapelou."
+      , "answer":   "předl záj podst slov   příd   podst  předl příd podst"
+      },
+      { "sentence": "Zářijové dny bývají ještě dost teplé."
+      , "answer":   "příd     podst slov přísl přísl příd"
+      },
+      { "sentence": "(Neviděli jste) tu někde červené sluneční brýle?"
+      , "answer":   "slov            přísl přísl příd   příd     podst"
+      },
+      { "sentence": "Naše hudební skupina byla v okresní soutěži velmi úspěšná."
+      , "answer":   "záj  příd    podst   slov předl příd podst  přísl příd"
+      },
+      { "sentence": "V ranních zprávách předpovídali teplé a příjemné počasí."
+      , "answer":   "předl příd podst   slov         příd  spoj příd podst"
+      }
+    ],
+    "zajmena" : [
+      { "sentence": "Ona tu vzácnou knihu dostala od něj."
+      , "answer":   "záj záj příd   podst slov   předl záj"
+      },
+      { "sentence": "Já jsem jí už zavolal."
+      , "answer":   "záj slov záj přísl slov"
+      },
+      { "sentence": "S tebou a s ním je vždycky ta hodina zábavná."
+      , "answer":   "předl záj spoj předl záj slov přísl záj podst příd"
+      },
+      { "sentence": "On za námi přijde poté, co to matematické cvičení skončí."
+      , "answer":   "záj předl záj slov přísl přísl záj příd   podst   slov"
+      },
+      { "sentence": "Ona tady není?"
+      , "answer":   "záj přísl slov"
+      },
+      { "sentence": "On tam o ní říkal jen toto."
+      , "answer":   "záj přísl předl záj slov přísl záj"
+      },
+      { "sentence": "Já to tam vezmu."
+      , "answer":   "záj záj přísl slov"
+      },
+      { "sentence": "Nikdo jim o tom neříkal."
+      , "answer":   "záj   záj předl záj slov"
+      },
+      { "sentence": "My jsme se přišli podívat na to vaše nové video."
+      , "answer":   "záj slov záj slov slov    předl záj záj příd podst"
+      },
+      { "sentence": "Oni tam ještě nepřijeli?"
+      , "answer":   "záj přísl přísl slov"
+      },
+      { "sentence": "Zeptej se ho na to."
+      , "answer":   "slov záj záj předl záj"
+      },
+      { "sentence": "Ona jí ještě nevolala."
+      , "answer":   "záj záj přísl slov"
+      }
+    ],
+    "predlozky" : [
+      { "sentence": "Anička k nám přijela v dubnu."
+      , "answer":   "podst  předl záj slov předl podst"
+      },
+      { "sentence": "Mohl na ní oči nechat."
+      , "answer":   "slov předl záj podst slov"
+      },
+      { "sentence": "Dnešní koncert bude až do noci."
+      , "answer":   "příd   podst   slov přísl předl podst"
+      },
+      { "sentence": "(Seznámili jsme) se při čekání na autobus."
+      , "answer":   "slov             záj předl podst předl podst"
+      },
+      { "sentence": "O čem jste si povídali?"
+      , "answer":   "předl záj slov záj slov"
+      },
+      { "sentence": "Přeplaval přes řeku až k nám."
+      , "answer":   "slov      předl podst přísl předl záj"
+      },
+      { "sentence": "Vlaštovky létaly nízko nad zemí."
+      , "answer":   "podst     slov   přísl předl podst"
+      },
+      { "sentence": "Ve stínu pod stromy je dnes příjemně."
+      , "answer":   "předl podst předl podst slov přísl přísl"
+      },
+      { "sentence": "Pejsek za námi běžel po cestě až do lesa."
+      , "answer":   "podst  předl záj slov předl podst přísl předl podst"
+      },
+      { "sentence": "Musím se stavit u švadleny pro nějaké šaty."
+      , "answer":   "slov  záj slov  předl podst předl záj podst"
+      },
+      { "sentence": "Rád poslouchám písničky s veselým textem."
+      , "answer":   "přísl slov     podst    předl příd podst"
+      },
+      { "sentence": "Zůstane to mezi námi jako tajemství."
+      , "answer":   "slov    záj předl záj spoj podst"
+      }
+    ],
+    "spojky" : [
+      { "sentence": "Lucie je milá a trpělivá."
+      , "answer":   "podst slov příd spoj příd"
+      },
+      { "sentence": "Buď vám zavolám nebo aspoň napíšu."
+      , "answer":   "spoj záj slov   spoj přísl slov"
+      },
+      { "sentence": "(Dal bych) si nejen horký čaj, (ale i) med."
+      , "answer":   "slov       záj přísl příd podst spoj  podst"
+      },
+      { "sentence": "Ten vysoký pán se na mě díval, (jako kdyby) nerozuměl."
+      , "answer":   "záj příd   podst záj předl záj slov  spoj       slov"
+      },
+      { "sentence": "Rozsviť prosím silnější světlo, abych na to viděl."
+      , "answer":   "slov    část   příd podst   spoj  předl záj slov"
+      },
+      { "sentence": "Přišel sice pozdě, ale omluvil se."
+      , "answer":   "slov   spoj přísl  spoj slov   záj"
+      },
+      { "sentence": "Protože bylo celé nebe bez mráčku, bylo příjemně teplo."
+      , "answer":   "spoj    slov příd podst předl podst slov přísl   přísl"
+      },
+      { "sentence": "Tyto těžké dveře neotevře ani kočka ani pes."
+      , "answer":   "záj  příd podst slov     spoj podst spoj podst"
+      },
+      { "sentence": "Ještě se tam svítilo, ačkoliv už byla skoro půlnoc."
+      , "answer":   "přísl záj přísl slov  spoj    přísl slov přísl podst"
+      },
+      { "sentence": "Jakmile skončí ten tátův film, tak už jdi spát."
+      , "answer":   "spoj    slov   záj příd  podst spoj přísl slov slov"
+      },
+      { "sentence": "Pokud máš rád hořkou čokoládu, bude ti ten dort chutnat."
+      , "answer":   "spoj  slov slov příd podst   slov záj záj podst slov"
+      },
+      { "sentence": "(Donesla jsem) mámě malý dárek, protože měla včera svátek."
+      , "answer":   "slov           podst příd podst spoj    slov přísl podst"
+      }
+    ],
+    "cislovky" : [
+      { "sentence": "Přišli tam oba, Petr i Sára."
+      , "answer":   "slov   přísl čís podst spoj podst"
+      },
+      { "sentence": "Napsal mi dvakrát, při odjezdu (a pak) okamžitě při příjezdu."
+      , "answer":   "slov   záj čís     předl podst spoj    přísl    předl podst"
+      },
+      { "sentence": "Naber mi prosím pěkně deset kilo brambor."
+      , "answer":   "slov  záj část  přísl čís   podst podst"
+      },
+      { "sentence": "Batolata nejdříve lezou (po čtyřech)."
+      , "answer":   "podst    přísl    slov  čís"
+      },
+      { "sentence": "(Vzal jsem) si poslední rohlík, musím zítra koupit další."
+      , "answer":   "slov        záj čís     podst   slov  přísl slov   příd"
+      },
+      { "sentence": "Přišel na sraz skoro za pět minut dvanáct."
+      , "answer":   "slov   předl podst přísl předl čís podst čís"
+      },
+      { "sentence": "V pátek lehce napadl první sníh."
+      , "answer":   "předl podst přísl slov čís podst"
+      },
+      { "sentence": "Kývou se mi dva zuby, jednička nahoře a dvojka dole."
+      , "answer":   "slov  záj záj čís podst čís    přísl  spoj čís přísl"
+      },
+      { "sentence": "Mám hodně oblíbený čaj, ve kterém je devatero lučních bylin."
+      , "answer":   "slov přísl příd    podst předl záj slov čís   příd    podst"
+      },
+      { "sentence": "Dnes do našeho domu vedou dvoje dveře."
+      , "answer":   "přísl předl záj podst slov čís  podst"
+      },
+      { "sentence": "Objem těsta byl po nakynutí téměř trojnásobný."
+      , "answer":   "podst podst slov předl podst přísl čís"
+      },
+      { "sentence": "Toto už je několikátý případ."
+      , "answer":   "záj  přísl slov čís   podst"
+      }
+    ],
+    "prislovce" : [
+      { "sentence": "Když mě spatřila, vesele se usmála."
+      , "answer":   "spoj záj slov     přísl  záj slov"
+      },
+      { "sentence": "Vždy, když mu napíšu, okamžitě odpoví."
+      , "answer":   "přísl spoj záj slov   přísl    slov"
+      },
+      { "sentence": "Včera jsem mu řekla, že dnes může přijít později."
+      , "answer":   "přísl slov záj slov  spoj přísl slov slov přísl"
+      },
+      { "sentence": "Ten kocour na nás vždycky ospale kouká."
+      , "answer":   "záj podst  předl záj přísl přísl slov"
+      },
+      { "sentence": "(Vyprovodil jsem) je na cestu domů."
+      , "answer":   "slov              záj předl podst přísl"
+      },
+      { "sentence": "Spěchal kupředu a náhle se zastavil."
+      , "answer":   "slov    přísl   spoj přísl záj slov"
+      },
+      { "sentence": "Večer už bývá venku málo světla."
+      , "answer":   "přísl přísl slov přísl přísl podst"
+      },
+      { "sentence": "Tento stůl je dost dlouhý, sem se můžeme posadit."
+      , "answer":   "záj   podst slov přísl příd přísl záj slov slov"
+      },
+      { "sentence": "(Měli bychom) už vyrazit, ať přijdeme včas."
+      , "answer":   "slov          přísl slov  spoj slov   přísl"
+      },
+      { "sentence": "U nás doma jíme zdravě."
+      , "answer":   "předl záj přísl slov přísl"
+      },
+      { "sentence": "Na následující křižovatce odbočte vpravo."
+      , "answer":   "předl příd     podst      slov    přísl"
+      },
+      { "sentence": "(I když) mají moji rodiče málo času, vždycky si pro mě najdou chvilku."
+      , "answer":   "spoj     slov záj  podst  přísl podst přísl  záj předl záj slov podst"
+      }
+    ],
+    "castice" : [
+      { "sentence": "Adam dnes na schůzku nepřišel, prý se musí hodně učit."
+      , "answer":   "podst přísl předl podst slov   část záj slov přísl slov"
+      },
+      { "sentence": "Snad to dneska stihnu, nerad bych tě zklamal."
+      , "answer":   "část záj přísl slov    přísl slov záj slov"
+      },
+      { "sentence": "Kde ten kluk asi je?"
+      , "answer":   "přísl záj podst část slov"
+      },
+      { "sentence": "Ať už jsou Vánoce!"
+      , "answer":   "část přísl slov podst"
+      },
+      { "sentence": "Kéž (bych měla) více času, (četla bych) si aspoň hodinu."
+      , "answer":   "část slov       přísl podst slov        záj přísl podst"
+      },
+      { "sentence": "Přece bys to tak nenechal?"
+      , "answer":   "část  slov záj přísl slov"
+      },
+      { "sentence": "Ano, přesně toto máma říkala."
+      , "answer":   "část přísl  záj  podst slov"
+      },
+      { "sentence": "Ne, tento obraz (jsem namalovala) já."
+      , "answer":   "část záj  podst slov              záj"
+      },
+      { "sentence": "Copak jste se tohle ještě neučili?"
+      , "answer":   "část  slov záj záj  přísl slov"
+      },
+      { "sentence": "Jen aby už nebylo pozdě."
+      , "answer":   "část část přísl slov přísl"
+      },
+      { "sentence": "Tak, a je to."
+      , "answer":   "část část slov záj"
+      },
+      { "sentence": "I to jsou k nám hosti!"
+      , "answer":   "část záj slov předl záj podst"
+      }
+    ],
+    "citoslovce" : [
+      { "sentence": "Ahoj, jak se ti daří?"
+      , "answer":   "cit   přísl záj záj slov"
+      },
+      { "sentence": "Hmm, to je těžká hádanka."
+      , "answer":   "cit  záj slov příd podst"
+      },
+      { "sentence": "Už to mám, hurá!"
+      , "answer":   "přísl záj slov cit"
+      },
+      { "sentence": "Hej, dávej pozor!"
+      , "answer":   "cit  slov  podst"
+      },
+      { "sentence": "Ach, zase jde pozdě."
+      , "answer":   "cit  přísl slov přísl"
+      },
+      { "sentence": "Jejda, ta skříň je větší, než jsem si myslela!"
+      , "answer":   "cit    záj podst slov příd spoj slov záj slov"
+      },
+      { "sentence": "Ó, ty šaty jsou překrásné!"
+      , "answer":   "cit záj podst slov příd"
+      },
+      { "sentence": "Mňam! To je vynikající dort!"
+      , "answer":   "cit   záj slov příd    podst"
+      },
+      { "sentence": "Ozvalo se jenom: žbluňk!"
+      , "answer":   "slov   záj přísl cit"
+      },
+      { "sentence": "Uf, to mi teda dalo zabrat!"
+      , "answer":   "cit záj záj část slov slov"
+      }
+    ]
+
+  },
+  "syntax" : [
+      {
+        "code": "podst",
+        "wordClass": "Podstatné jméno",
+        "image": "1.svg"
+      },
+      {
+        "code": "příd",
+        "wordClass": "Přídavné jméno",
+        "image": "2.svg"
+      },
+      {
+        "code": "záj",
+        "wordClass": "Zájmeno",
+        "image": "4.svg"
+      },
+      {
+        "code": "čís",
+        "wordClass": "Číslovka",
+        "image": "11.svg"
+      },
+      {
+        "code": "slov",
+        "wordClass": "Sloveso",
+        "image": "5.svg"
+      },
+      {
+        "code": "přísl",
+        "wordClass": "Příslovce",
+        "image": "6.svg"
+      },
+      {
+        "code": "předl",
+        "wordClass": "Předložky",
+        "image": "8.svg"
+      },
+      {
+        "code": "spoj",
+        "wordClass": "Spojky",
+        "image": "7.svg"
+      },
+      {
+        "code": "část",
+        "wordClass": "Částice",
+        "image": "10.svg"
+      },
+      {
+        "code": "cit",
+        "wordClass": "Citoslovce",
+        "image": "9.svg"
+      }
+    ]
+}
