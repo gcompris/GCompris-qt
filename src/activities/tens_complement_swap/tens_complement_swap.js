@@ -174,14 +174,6 @@ function nextLevel() {
     initLevel();
 }
 
-function nextDatasetLevel() {
-    if(numberOfDatasetLevel <= ++currentDatasetLevel) {
-        currentDatasetLevel = 0;
-    }
-    items.currentLevel = 0;
-    initLevel();
-}
-
 function previousLevel() {
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
