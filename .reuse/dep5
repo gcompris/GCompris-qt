@@ -2290,6 +2290,10 @@ Files: src/activities/grammar_analysis/resource/grammar_analysis-ca.json
 Copyright: 2024 Josep M. Ferrer
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/resource/grammar_analysis-cs.json
+Copyright: 2024 Jan Papež
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/resource/grammar_analysis-el.json
 Copyright: 2024 Yannis Kaskamanidis
 License: CC-BY-SA-4.0
@@ -2326,6 +2330,10 @@ License: CC-BY-SA-4.0
 
 Files: src/activities/grammar_classes/resource/grammar_classes-ca.json
 Copyright: 2024 Josep M. Ferrer
+License: CC-BY-SA-4.0
+
+Files: src/activities/grammar_classes/resource/grammar_classes-cs.json
+Copyright: 2024 Jan Papež
 License: CC-BY-SA-4.0
 
 Files: src/activities/grammar_classes/resource/grammar_classes-el.json
