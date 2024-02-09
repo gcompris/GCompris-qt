@@ -90,9 +90,13 @@ function getValueArray(numberArray) {
         while(numberOfPairsFilled != numberOfPairs) {
             // Get a number between 1 and 9
             var randomNumber = Math.floor(1 + Math.random() * 9);
-            if(values.indexOf(randomNumber) > -1) {
-                continue; // Avoid having twice the same numbers
+
+            // Avoid having twice the same numbers
+            // If we have more than 10 numbers, it's impossible to avoid repetition.
+            if(values.length < 10 && values.indexOf(randomNumber) > -1) {
+                continue;
             }
+
             values.push(randomNumber);
             values.push(10 - randomNumber);
             numberOfPairsFilled ++;
