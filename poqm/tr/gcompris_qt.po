@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-18 11:31+0300\n"
+"PO-Revision-Date: 2024-02-09 19:08+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.01.90\n"
+"X-Generator: Lokalize 24.01.95\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -1529,7 +1529,7 @@ msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
-"Bozuk bir ampulü veya LED'i onarmak için devreden çıkardıktan sonra üzerine "
+"Bozuk bir ampulü veya LED’i onarmak için devreden çıkardıktan sonra üzerine "
 "tıkla. Simülasyon, herhangi bir kullanıcı işlemi ile gerçek zamanlı olarak "
 "güncellenir."
 
@@ -2020,8 +2020,8 @@ msgid ""
 "activity, you can click on the broken red LED after disconnecting from the "
 "circuit to repair it."
 msgstr ""
-"Belli bir sınırın üzerindeki elektrik enerjisi bir LED'i kırabilir. Bu "
-"etkinlikte, devreden ayırdıktan sonra kırılan kırmızı LED'e tıklayarak onu "
+"Belli bir sınırın üzerindeki elektrik enerjisi bir LED’i kırabilir. Bu "
+"etkinlikte, devreden ayırdıktan sonra kırılan kırmızı LED’e tıklayarak onu "
 "onarabilirsin."
 
 #: activities/analog_electricity/TutorialDataset.qml:254
@@ -2030,13 +2030,13 @@ msgid ""
 "Connect the provided red LED to the battery in forward bias. Don't worry "
 "about the broken LED for now."
 msgstr ""
-"Sağlanan kırmızı LED'i pile ileri yönlü olarak bağla. Şimdilik kırık LED "
+"Sağlanan kırmızı LED’i pile ileri yönlü olarak bağla. Şimdilik kırık LED "
 "için endişelenme."
 
 #: activities/analog_electricity/TutorialDataset.qml:267
 msgctxt "TutorialDataset|"
 msgid "The battery is providing too much energy to the LED."
-msgstr "Pil, LED'e çok fazla enerji sağlıyor."
+msgstr "Pil, LED’e çok fazla enerji sağlıyor."
 
 #: activities/analog_electricity/TutorialDataset.qml:268
 msgctxt "TutorialDataset|"
@@ -2050,7 +2050,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:269
 msgctxt "TutorialDataset|"
 msgid "Light the red LED using the provided components."
-msgstr "Sağlanan bileşenleri kullanarak kırmızı LED'i yak."
+msgstr "Sağlanan bileşenleri kullanarak kırmızı LED’i yak."
 
 #: activities/analog_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -6124,7 +6124,7 @@ msgstr "Karşılaştırıcı"
 #: activities/digital_electricity/TutorialDataset.qml:96
 msgctxt "TutorialDataset|"
 msgid "BCD to 7 segment"
-msgstr "BCD'den 7 bölüte"
+msgstr "BCD’den 7 bölüte"
 
 #: activities/digital_electricity/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
@@ -6417,7 +6417,7 @@ msgstr ""
 #: activities/digital_electricity/TutorialDataset.qml:525
 msgctxt "TutorialDataset|"
 msgid "The component in the middle is a BCD to seven segment converter."
-msgstr "Ortadaki bileşen, BCD'den yedi bölüte dönüştürücüdür."
+msgstr "Ortadaki bileşen, BCD’den yedi bölüte dönüştürücüdür."
 
 #: activities/digital_electricity/TutorialDataset.qml:526
 msgctxt "TutorialDataset|"
