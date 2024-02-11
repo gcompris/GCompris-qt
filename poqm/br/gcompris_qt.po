@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-06 17:12+0100\n"
+"PO-Revision-Date: 2024-02-10 14:23+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -29,7 +29,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
-msgstr "Otomatik"
+msgstr "Dre ziouer"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
 #: activities/enumerate/ActivityConfig.qml:22
@@ -45,135 +45,87 @@ msgstr "Gwiriañ ar respontoù"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Kav an div niverenn."
+msgstr "Kav an niveroù stok"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niveroù stok a vank."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Desk traoù diwar-benn an niveroù kentañ."
+msgstr "Desk lakaat niveroù en urzh"
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Assign the requested grammatical classes to the corresponding words."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Ro ar rummadoù yezhadurel reizh evit ar gerioù a glot gante."
+msgstr "Kav an niveroù rekis ha dilec'h anezhe betek al lec'h reizh."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Kav niveroù etre 1 ha 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Kav niveroù etre 0 hag 20"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Kav niveroù etre 0 ha 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niver warlerc'h."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niver kent."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niver etre."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niveroù a vank."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niveroù warlerc'h."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niveroù kent."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Kav an div niverenn."
+msgstr "Kav an niveroù etre."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Kav niveroù etre -10 ha -1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Kav niveroù etre -10 ha 10."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -981,7 +933,7 @@ msgstr "Taolenn liesaat gant 10."
 #: activities/algebra_by/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Pleustriñ war an taolennoù liesaat adalek 1 betek 10."
+msgstr "Pleustr war an taolennoù liesaat adalek 1 betek 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1033,7 +985,7 @@ msgstr "Rannañ"
 #: activities/algebra_div/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the division operation."
-msgstr "Pleustriñ war ar rannañ."
+msgstr "Pleustriñ war ar rannañ"
 
 #. Help goal
 #: activities/algebra_div/ActivityInfo.qml:20
@@ -1073,7 +1025,7 @@ msgstr "Taolenn rannañ dre 10."
 #: activities/algebra_div/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Taolennoù rannañ adalek 1 betek 10"
+msgstr "Pleustr war an taolennoù rannañ adalek 1 betek 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1125,7 +1077,7 @@ msgstr "Lemel"
 #: activities/algebra_minus/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the subtraction operation."
-msgstr "Pleustriñ war al lemel."
+msgstr "Pleustriñ war al lemel"
 
 #. Help goal
 #: activities/algebra_minus/ActivityInfo.qml:20
@@ -1167,17 +1119,17 @@ msgstr "Taolenn lemel gant 10."
 #: activities/algebra_minus/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Lamadennoù diwar un niver ken bras a 10."
+msgstr "Lamadurioù gant niveroù ken bras ha 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Lamadennoù diwar un niver ken bras ag 20."
+msgstr "Lamadurioù gant niveroù ken bras hag 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Lamadennoù diwar un niver ken bras a 100."
+msgstr "Lamadurioù gant niveroù ken bras ha 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1229,7 +1181,7 @@ msgstr "Sammañ"
 #: activities/algebra_plus/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the addition of numbers."
-msgstr "Pleustriñ war ar sammañ."
+msgstr "Pleustriñ war ar sammañ"
 
 #. Help goal
 #: activities/algebra_plus/ActivityInfo.qml:20
@@ -1269,17 +1221,17 @@ msgstr "Taolenn sammañ gant 10."
 #: activities/algebra_plus/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Sammadennoù diwar niveroù betek 10."
+msgstr "Sammadurioù gant niveroù ken bras ha 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Sammadennoù diwar niveroù betek 15."
+msgstr "Sammadurioù gant niveroù ken bras ha 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Sammadennoù gant disoc'hoù betek 100."
+msgstr "Sammadurioù gant niveroù ken bras ha 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1337,7 +1289,7 @@ msgstr "Klok an heuliad frouezhioù"
 #: activities/algorithm/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Logic training activity."
-msgstr "Pleustriñ war ar c'hempoell."
+msgstr "Pleustriñ war ar c'hempoell"
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1399,7 +1351,7 @@ msgstr ""
 #: activities/align4_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left arrow: move the token to the left"
-msgstr "Bir kleiz: dilec'h an elfenn war an tu kleiz"
+msgstr "Bir kleiz:  dilec'h an elfenn war an tu kleiz"
 
 #: activities/align4/ActivityInfo.qml:26
 #: activities/align4_2players/ActivityInfo.qml:25
@@ -1583,7 +1535,7 @@ msgid ""
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
 "Evit gallout repariñ ur glogorenn-dredan pe ul lutig LED, klikañ warni pe "
-"warnañ goude bezañ bezañ digevreet anezhi pe anezhañ diouzh an amredad. Pep "
+"warnañ goude bezañ  bezañ digevreet anezhi pe anezhañ diouzh an amredad. Pep "
 "tra graet a vez patromet diouzhtu war ar skramm."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
@@ -1797,7 +1749,7 @@ msgid ""
 "a closed circuit. Wires can be used to connect devices and create the "
 "circuit."
 msgstr ""
-"Graet e vez amredad eus hent-tremen an tredan. An ardivinkoù-tredan ne "
+"Graet e vez amredad  eus hent-tremen an tredan. An ardivinkoù-tredan ne "
 "c'hallont mont en-dro nemet gant un amredad kloz. An orjalennoù a c'hall "
 "servijout da gevreañ ar pezhioù ha da grouiñ un amredad."
 
@@ -1880,8 +1832,8 @@ msgid ""
 "from the circuit. Don't forget to disable the delete button after removing "
 "the connected wires."
 msgstr ""
-"Evit gallout repariñ ur glogorenn-dredan en obererezh-mañ, klik warni goude "
-"bezañ bezañ digevreet anezhi diouzh an amredad. Arabat ankounac'haat "
+"Evit gallout repariñ ur glogorenn-dredan en obererezh-mañ,  klik warni goude "
+"bezañ  bezañ digevreet anezhi diouzh an amredad. Arabat ankounac'haat "
 "dic'halloudekaat ar bouton lemel goude bezañ lamet an orjalennoù kevreet."
 
 #: activities/analog_electricity/TutorialDataset.qml:135
@@ -1944,7 +1896,7 @@ msgid ""
 "The conventional symbol for current is I. The unit of current is ampere "
 "under the International System of Units, which is denoted as A."
 msgstr ""
-"I eo an arouez a-feur evit red an tredan. Amper eo unanenn-vuchañ ar red "
+"I  eo an arouez a-feur evit red an tredan. Amper eo unanenn-vuchañ ar red "
 "dindan reizhiad etrevroadel an unanennoù, diskouezet evel A."
 
 #: activities/analog_electricity/TutorialDataset.qml:179
@@ -2150,7 +2102,7 @@ msgstr ""
 "hervez ar stokell implijet.\n"
 "    Klevet vo ur mouezh evit pep arouez dre vras, mod all e vo klevet ur "
 "sonig.\n"
-"    Gant stokelloù e vo klevet son ur c''hlik hepken.\n"
+"    Gant stokelloù  e vo klevet son ur c''hlik hepken.\n"
 "    "
 
 #. Activity title
@@ -2526,7 +2478,7 @@ msgstr "Stur ar vell betek an nor en ur stouiñ ar voest."
 #: activities/balancebox/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Practice fine motor skills and basic counting."
-msgstr "Pleustriñ war kenurzhiañ da jestroù ha kontañ aes."
+msgstr "Pleustr war kenurzhiañ da jestroù ha kontañ aes."
 
 #. Help manual
 #: activities/balancebox/ActivityInfo.qml:26
@@ -2554,7 +2506,7 @@ msgstr ""
 "E dibaboù an obererezh e c'hallez dibab etre al liveoù \"enframmet\" dre "
 "ziouer hag unan bet dibabet ganit da-unan (\"implijer\"). Evit krouiñ "
 "liveoù, dibab \"implijer\" ha klik war ar bouton reizh evit kregiñ gant an "
-"embanner liveoù."
+"embanner liveoù ."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2577,7 +2529,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell"
 msgstr ""
-"Moger a-blaen: ouzhpennañ / lemel ur voger a-led war kostez izelañ ur "
+"Moger a-blaen: ouzhpennañ / lemel ur voger a-led war kostez izelañ  ur "
 "c'hombod"
 
 #: activities/balancebox/ActivityInfo.qml:33
@@ -2877,8 +2829,8 @@ msgid ""
 "This activity helps you to learn the concept of conversion from decimal "
 "number system to binary number system."
 msgstr ""
-"An obererezh-mañ a sikour da zeskiñ penaos e vez troet an niveriñ dekredel "
-"d'an niveriñ daouredel."
+"An obererezh-mañ a sikour da zeskiñ penaos e vez troet an niveriñ degel d'an "
+"niveriñ daouredel."
 
 #. Help goal
 #: activities/binary_bulb/ActivityInfo.qml:20
@@ -2890,7 +2842,7 @@ msgstr "Evit en em voaziañ ouzh sistem an niveriñ daouredel."
 #: activities/binary_bulb/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Decimal number system."
-msgstr "Niveriñ dekredel."
+msgstr "Reizhad an niveroù degel."
 
 #. Help manual
 #: activities/binary_bulb/ActivityInfo.qml:24
@@ -2900,14 +2852,13 @@ msgid ""
 "When you have achieved it, press OK."
 msgstr ""
 "Lak war enaou ar c'hlogorennoù-tredan reizh evit sevel stumm daouredel un "
-"niver dekredel. Pa 'z eo echu ganit, klik war OK."
+"niver degel. Pa 'z eo echu ganit, klik war OK."
 
 #: activities/binary_bulb/binary_bulb.js:20
 msgctxt "binary_bulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
 msgstr ""
-"Deskiñ a ra an obererezh-mañ penaos treiñ niveroù dekredel e niveroù "
-"daouredel."
+"Deskiñ a ra an obererezh-mañ penaos treiñ niveroù degel e niveroù daouredel."
 
 #: activities/binary_bulb/binary_bulb.js:24
 msgctxt "binary_bulb|"
@@ -2945,13 +2896,13 @@ msgid ""
 "2⁷=128."
 msgstr ""
 "Pep bit en deus un talvoud pazenn a bazenn, a glot gant mac'hoù 2, o kreskiñ "
-"a zehoù da gleiz: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → "
+"a zehoù da gleiz:  bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → "
 "2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."
 
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
-msgstr "Evit treiñ ur 5 dekredel en un talvoud daouredel e sammer 1 ha 4."
+msgstr "Evit treiñ ur 5 degel en un talvoud daouredel e sammer 1 ha 4."
 
 #: activities/binary_bulb/binary_bulb.js:44
 msgctxt "binary_bulb|"
@@ -2959,8 +2910,8 @@ msgid ""
 "Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is "
 "equal to binary 101."
 msgstr ""
-"Ar bitoù a glot gante a vez lakaet da 1, a re all da 0. Ar 5 dekredel a zo "
-"par d'ar 101 daouredel."
+"Ar bitoù a glot gante a vez lakaet da 1, a re all da 0. Ar 5 degel a zo par "
+"d'ar 101 daouredel."
 
 #: activities/binary_bulb/binary_bulb.js:48
 msgctxt "binary_bulb|"
@@ -2971,7 +2922,7 @@ msgstr "Ar skeudenn-mañ a ziskouezo dit penaos jediñ talvoud ar bitoù."
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
-msgstr "Petra eo arouezenn daouredel an %1 dekredel ?"
+msgstr "Petra eo an arouezenn daouredel evit %1?"
 
 #: activities/binary_bulb/resource/tutorial4.qml:29
 msgctxt "tutorial4|"
@@ -3195,7 +3146,7 @@ msgstr "Calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr "Diskoulmañ ar C'halcudoku"
+msgstr "Diskoulm ar C'halcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3204,16 +3155,16 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
-"Diorro da varregezhioù rezoniñ poellek: liammañ an roadennoù, dezastum hag "
-"en em lec'hiañ er spas en ur jediñ."
+"Diorren da varregezhioù poellek: liammañ ar roadennoù, dezastum ha lec'hiañ "
+"en egor en ur jediñ."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
 msgstr ""
-"Evit echuiñ ar c'hoari torr-penn-mañ e vo ret dit bezañ pasiant hag "
-"implijout barregezhioù jediñ. "
+"Evit echuiñ ar c'hoari torr-penn-mañ e vo ret dit bezañ pasiant ha gallout "
+"jediñ."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3226,13 +3177,13 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
-" Dibab un niver er roll ha klik war al lec'h mat evit leuniañ ar gael. Pep "
-"niver a rank dont war-wel ur wech hepken en ur rann hag ur bann. Kaouedoù "
-"vez graet eus strolladoù kombodoù o reiñ titouroù a-benn leuniañ anezhe. "
-"Kaouedoù gant muioc'h eget ur c'hombod a ginnig un disoc'h hag un arouez "
-"jediñ: an holl niveroù er gaoued, liammet gant an arouez jediñ, a rank reiñ  "
-"an disoc'h mat. Kaouedoù gant ur c'hombod hepken a ginnig diouzhtu an niver "
-"da lakaat."
+"Dibab un niver er roll ha klik war al lec'h da dizhout a-benn klokaat ar "
+"gael. Ur wech nemetken e rank bezañ pep niver e pep renk, bann ha rann. "
+"Kaelioù zo strolladoù kombodoù enne titouroù evit gouzout penaos klokaat "
+"anezhe. Kaelioù gant meur a gombod a ginnig un disoc'h hag un arouez jediñ: "
+"holl niveroù er gael, implijet asambles gant an arouez jediñ, a rank reiñ an "
+"disoc'h reizh. Kaelioù gant ur c'hombod hepken a ginnig end-eeun an niver da "
+"lakaat ennañ."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -3244,7 +3195,7 @@ msgstr "Kaelioù bihan gant an arouez jediñ +."
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Kaelioù bihan gant an arouezioù jediñ + ha -."
+msgstr "Kaelioù bihan gant arouezioù jedin + ha -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
@@ -3256,13 +3207,13 @@ msgstr "Kaelioù bihan gant an arouezioù jediñ +, - ha x."
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Kaelioù krenn gant an arouezioù jediñ +, - ha x."
+msgstr "Kaelioù krenn gant an arouezioù jediñ +, -, ha x."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Kaelioù bras gant an arouezioù jediñ +, - ha x."
+msgstr "Kaelioù bras gant an arouezioù jediñ +, -, x ha /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4276,9 +4227,9 @@ msgstr ""
 "Ar c'hoari damoù a vez c'hoariet gant daou enebour, pep a du-enep d'an "
 "tablez. Ar pezhioù (damoù) du zo gant ur c'hoarier, ar re wenn gant ar "
 "c'hoarier all. Pep c'hoarier a c'hoari d'e dro. Fiñvet vez en ur vont en "
-"diagonalenn d'ur c'hombod vak stok ouzh hini an damez. M'eo dalc'het ar "
+"diagonalenn d'ur c'hombod vak stok ouzh hini an  damez. M'eo dalc'het ar "
 "c'hombod stok ouzh an damez gant un damez d'an enebour ha vak ar c'hombod "
-"dres a-dreñv dezhi e c'haller tapout (lemel eus ar c'hoari) anezhi en ur "
+"dres a-dreñv dezhi  e c'haller tapout (lemel eus ar c'hoari) anezhi en ur "
 "vont dreisti.\n"
 "N'implijer nemet kombodoù du an tablez. Un damez n'hall ket mont nemet war "
 "ur c'hombod vak en diagonalenn. Tapout damez an enebour zo ret pa c'haller. "
@@ -4299,7 +4250,7 @@ msgid ""
 "draughts.js&gt;. Manual is from wikipedia &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 msgstr ""
-"Amañ e vo kavet stum ar c'hoari: draughts.js &lt;https://github.com/"
+"Amañ e vo kavet stum ar c'hoari: draughts.js  &lt;https://github.com/"
 "shubhendusaurabh/draughts.js&gt;. Hag aze an dornlevr: wikipedia &lt;https://"
 "en.wikipedia.org/wiki/Draughts&gt;"
 
@@ -4356,8 +4307,8 @@ msgstr ""
 "tablez. Ar pezhioù (damoù) du zo gant ur c'hoarier, ar re wenn gant ar "
 "c'hoarier all. Pep c'hoarier a c'hoari d'e dro en ur lakaat ur pezh (damez) "
 "dezhañ da fiñval. Fiñvet vez en ur vont en diagonalenn d'ur c'hombod vak "
-"stok ouzh hini an damez. M'eo dalc'het ar c'hombod stok ouzh an damez gant "
-"un damez d'an enebour ha vak ar c'hombod dres a-dreñv dezhi e c'haller "
+"stok ouzh hini an  damez. M'eo dalc'het ar c'hombod stok ouzh an damez gant "
+"un damez d'an enebour ha vak ar c'hombod dres a-dreñv dezhi  e c'haller "
 "tapout (lemel eus ar c'hoari) anezhi en ur vont dreisti.\n"
 "N'implijer nemet kombodoù du an tablez. Un damez n'hall ket mont nemet war "
 "ur c'hombod vak en diagonalenn. Tapout damez an enebour zo ret pa c'haller. "
@@ -4409,13 +4360,13 @@ msgstr ""
 "\n"
 "Bez' e c'hallez ober \"Lamm d'ar Roue\" buanoc'h en ur heuliañ ar reolennoù "
 "simpl-mañ :\n"
-" En ur gas roue an enebour er c'horn.\n"
+"   En ur gas roue an enebour er c'horn.\n"
 "<b>Displegadenn </b>: mod-se n'en do pezh an enebour nemet 3 zu da fiñval e-"
 "lec'h 8 gant ul lec'hiadur gwelloc'h.\n"
-" \"Sevel ur pech\". Implijout da bezhioù evel bouedenn.\n"
+"    \"Sevel ur pech\". Implijout da bezhioù evel bouedenn.\n"
 "<b>Displegadenn </b>: mod-se e c'hallez touellañ an enebour e-maez eus e "
 "c'houdor.\n"
-" Bezañ habask a-walc'h.\n"
+"    Bezañ habask a-walc'h.\n"
 "<b>Displegadenn </b>: arabat mont re vuan, dav eo bezañ habask. Gwelloc'h eo "
 "kemer amzer da brederiañ un tammig da zivinout penaos e fiñvo pezhioù an "
 "enebour evit gallout soupren anezhañ pe diwall da bezhioù a-enep e "
@@ -4430,7 +4381,7 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
-"Ur c'hlik war ar bouton nullañ ha nullo ur fiñvadenn. Ur c'hlik war ar "
+"Ur c'hlik war ar bouton nullañ  ha nullo ur fiñvadenn. Ur c'hlik war ar "
 "bouton adober ha raio ur fiñvadenn en-dro. Evit nullañ an holl fiñvadennoù, "
 "pouez war ar bouton nullañ ha chom war-bouez 3 eilenn."
 
@@ -4486,7 +4437,7 @@ msgstr "Didalvoudek, mat e vefe da roue"
 #: activities/chess/Chess.qml:123
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
-msgstr "Ha fellout a ra dit nullañ an holl fiñvadennoù?"
+msgstr "  Ha fellout a ra dit nullañ an holl fiñvadennoù?"
 
 #: activities/chess/Chess.qml:124
 msgctxt "Chess|"
@@ -4525,8 +4476,8 @@ msgid ""
 "catch him or secure your pieces from his attacks."
 msgstr ""
 "En obererezh-mañ e tizoloer c'hoari an echedoù en ur c'hoari a-enep ur "
-"c'heneil. Diskouez a ra pep lec'h tizhapl gant pep pezh dibabet, ar pezh a "
-"sikour ar vugale da gompren penaos e kerzh ar pezhioù.\n"
+"c'heneil. Diskouez a ra pep lec'h a c'heller tizhout gant pep pezh dibabet, "
+"ar pezh a  sikour ar vugale da gompren penaos e kerzh ar pezhioù.\n"
 "\n"
 "Bez' e c'hallez ober \"Lamm d'ar Roue\" buanoc'h en ur heuliañ ar reolennoù "
 "simpl-mañ:\n"
@@ -4575,12 +4526,12 @@ msgid ""
 "catch him or secure your pieces from his attacks."
 msgstr ""
 "En obererezh-mañ e tizoloer c'hoari an echedoù en ur c'hoari dibenn ur "
-"c'hoari nemetken. Diskouez a ra pep lec'h tizhapl gant pep pezh dibabet, ar "
-"pezh a sikour ar vugale da gompren penaos e kerzh ar pezhioù.\n"
+"c'hoari nemetken. Diskouez a ra pep lec'h a c'heller tizhout gant pep pezh "
+"dibabet, ar pezh a  sikour ar vugale da gompren penaos e kerzh ar pezhioù.\n"
 "\n"
 "Bez' e c'hallez ober \"Lamm d'ar Roue\" buanoc'h en ur heuliañ ar reolennoù "
 "simpl-mañ:\n"
-"    En ur gas roue an enebour er c'horn.\n"
+"   En ur gas roue an enebour er c'horn.\n"
 "<b>Displegadenn </b>: mod-se n'en do pezh an enebour nemet 3 zu da fiñval e-"
 "lec'h 8 gant ul lec'hiadur gwelloc'h.\n"
 "    'Sevel ur pech'. Implijout da bezhioù evel bouedenn.\n"
@@ -4638,9 +4589,9 @@ msgid ""
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Gwarezet ha miret strizh gant an NASA eo skeudenn al loar. Gwarezet ha miret "
-"strizh gant Franck Doucet eo skeudennoù an treuzdougen. Bloaziadoù istorel "
-"an treuzdougen zo o tont eus &lt;http://www.wikipedia.org&gt;."
+"Miret strizh gant an NASA eo ar gwirioù war skeudennoù al loar. Miret strizh "
+"gant Franck Doucet eo ar gwirioù war skeudennoù an treuzdougen. Bloaziadoù "
+"istorel an treuzdougen zo o tont eus &lt;http://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4880,7 +4831,7 @@ msgstr "1927 Charles Lindbergh a dreizh ar Meurvor atlantel"
 #: activities/chronos/resource/board/board6_1.qml:55
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Taol-dreist tizh Hélène Boucher: 445 km/e"
+msgstr "1934  Taol-dreist tizh Hélène Boucher: 445 km/e"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5131,7 +5082,7 @@ msgid ""
 "Set the clock to the given time. Drag the different hands to control their "
 "respective unit."
 msgstr ""
-"Lak an eurier war an eur ginniget. Rikl bizied an eurier hervez pep unanenn-"
+"Lak an eurier war an eur ginniget.  Rikl bizied an eurier hervez pep unanenn-"
 "amzer da gontrolliñ."
 
 #: activities/clockgame/ActivityInfo.qml:25
@@ -5228,8 +5179,8 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
-"Deskiñ a ra an obererezh-mañ penaos e vez kemmesket livioù kentañ (kemmeskañ "
-"dre lemel)."
+"Deskiñ a ra an obererezh-mañ penaos e vez kemmesket livioù kentañ  "
+"(kemmeskañ dre lemel)."
 
 #: activities/color_mix/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -5243,11 +5194,11 @@ msgid ""
 msgstr ""
 "Evit ar penturioù e vez lonket livioù disheñvel ar gouloù o kouezhañ warno, "
 "o tilemel livioù zo diouzh ar pezh a welez. Ma vez ouzhpennet muioc'h a liv "
-"e vo lonket muioc'h a c'houloù, dre se e vo teñvaloc'h al liv krouet. "
-"Gallout a reer kemmeskañ tri liv kentañ a-benn krouiñ kalz livioù nevez. "
+"e vo lonket  muioc'h a c'houloù, dre se e vo teñvaloc'h al liv krouet. "
+"Gallout a reer kemmeskañ  tri liv kentañ a-benn krouiñ kalz livioù nevez. "
 "Siañ (un arliv eus ar glas), Majenta (un arliv eus ar ruz) ha Melen eo al "
 "livioù kentañ.\n"
-"  "
+"        "
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5342,8 +5293,8 @@ msgid ""
 "This activity teaches how mixing primary light colors works (additive "
 "mixing)."
 msgstr ""
-"Deskiñ a ra an obererezh-mañ penaos e vez kemmesket livioù kentañ (kemmeskañ "
-"dre ouzhpennañ)."
+"Deskiñ a ra an obererezh-mañ penaos e vez kemmesket livioù kentañ  "
+"(kemmeskañ dre ouzhpennañ)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -5530,7 +5481,7 @@ msgstr "Biroù kleiz ha dehoù: dibab bouton ur simbol"
 msgctxt "ActivityInfo|"
 msgid "Space: if a symbol button is selected, enter this symbol"
 msgstr ""
-"Gra gant ar varrenn-esaouiñ ur wech dibabet ur simbol evit lakaat anezhañ"
+"Gra gant ar varrenn-esaouiñ  ur wech dibabet ur simbol evit lakaat anezhañ"
 
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -5551,7 +5502,7 @@ msgstr "Niveroù adalek 1 betek 9."
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr "3 niver degel etre 0 ha 999,999."
+msgstr "3 niver degel etre 0 ha .999,999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5591,7 +5542,7 @@ msgstr "1 niver degel etre 0 ha 9,9."
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr "2 niver degel etre 0 ha.99,99."
+msgstr "2 niver degel etre 0 ha .99,99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -5921,7 +5872,7 @@ msgid ""
 "icons) from the tool menu."
 msgstr ""
 "Gant ar boutonoù-treiñ (skeudennoùig ar bir-kelc'h) diouzh lañser an "
-"ostilhoù e c'hallez treiñ ar pezhioù dibabet ganit."
+"ostilhoù e c'hallez  treiñ ar pezhioù dibabet ganit."
 
 #: activities/digital_electricity/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5961,9 +5912,9 @@ msgid ""
 "An AND gate outputs 1 only if all its inputs are equal to 1. As soon as one "
 "input is equal to 0 the result is 0. The output for a 2 inputs AND gate is:"
 msgstr ""
-"An norig HA a gas er-maez (ec'hank) un talvoud 1 m' eo par da 1 an holl "
-"dalvoudoù o vont enni (enank). M'eo par da 0 talvoud un enank eo par da 0 "
-"talvoud an ec'hank. Ec'hank un norig HA gant 2 enank zo par da :"
+"An norig HA a gas  er-maez (ec'hank) un talvoud 1 m' eo par da 1 an holl "
+"dalvoudoù o vont enni (enank) . M'eo par da 0 talvoud un enank eo par da 0 "
+"talvoud an ec'hank.  Ec'hank un norig HA gant 2 enank zo par da :"
 
 #: activities/digital_electricity/components/AndGate.qml:24
 msgctxt "AndGate|"
@@ -6480,7 +6431,7 @@ msgid ""
 msgstr ""
 "Lak war elum al lutig en ur implijout ar pezhioù pourvezet en un doare ma vo "
 "al lutig o lugerniñ gant ma vo ar bouton tredan kentañ troet war elum, pe an "
-"eil hag an trede bouton tredan troet war elum."
+"eil hag an trede bouton tredan  troet war elum."
 
 #: activities/digital_electricity/TutorialDataset.qml:447
 msgctxt "TutorialDataset|"
@@ -6530,7 +6481,7 @@ msgid ""
 "second switch."
 msgstr ""
 "Gra un amredad en ur implijout ar pezhioù pourvezet e seurt doare ma lugerno "
-"al lutig pa vo talvoud an tredan o tremen dre ar bouton-tredan kentañ "
+"al  lutig pa vo talvoud an tredan o tremen dre ar bouton-tredan kentañ "
 "izeloc'h pe par da hini an eil bouton-tredan."
 
 #: activities/digital_electricity/TutorialDataset.qml:525
@@ -6544,8 +6495,8 @@ msgid ""
 "It takes 4 bits as input represented in the binary coded decimal (BCD) "
 "format and converts the BCD number into a seven segment code."
 msgstr ""
-"Kemer a ra 4 bit enank evel eztaolet e stumm degel kodet e daouredel (BCD) "
-"ha kemm a ra niver ar BCD en ur c'hod a seizh segmant."
+"Kemer a ra 4 bit enank evel eztaolet e stumm dekvedel kodet e daouredel  "
+"(BCD) ha kemm a ra niver ar BCD en ur c'hod a seizh segmant."
 
 #: activities/digital_electricity/TutorialDataset.qml:527
 msgctxt "TutorialDataset|"
@@ -6854,7 +6805,7 @@ msgstr ""
 #: activities/erase_clic/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Click or tap on the blocks to make them disappear."
-msgstr "Klik pe stok ouzh ar c'hombodoù betek ma 'z aint diwar-wel."
+msgstr "Klik pe stok ouzh ar c'hombodoù betek ma 'z aint diwar-wel ."
 
 #. Activity title
 #: activities/explore_farm_animals/ActivityInfo.qml:15
@@ -6894,7 +6845,7 @@ msgstr ""
 "E live 1 ez a ar c'hoarier amañ hag aze e-touez al loened war ar skramm. "
 "Klik war ul loen ha desk traoù diwar e benn, e anv, e zoare da c'harmiñ hag "
 "e neuz. Studi an titouroù-mañ aketus rak goulennet e vo traoù diganit e "
-"liveoù 2 ha 3."
+"liveoù 2 ha 3 ."
 
 #: activities/explore_farm_animals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7029,7 +6980,7 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
-"Hoc'hal a ra ar pemoc'h. Rodellañ er fank a ra an hoc'h, dreist-holl evit "
+"Hoc'hal  a ra ar pemoc'h. Rodellañ er fank a ra an hoc'h, dreist-holl evit "
 "kontroliñ gwrez o c'horf."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
@@ -7433,7 +7384,7 @@ msgid ""
 "Heritage Site."
 msgstr ""
 "Mougevioù Ajanta zo un 29 bennak a savadurioù boudaek, mougevioù kempennet "
-"etre an eil kantved a-raok Jezus-Krist betek war-dro ar bloaz 480 e "
+"etre an eil kantved a-raok Jezus-Krist betek war-dro ar bloaz 480 e  "
 "Aurangabad e distrig Maharashtra, ur stad e bro India. Enne ez eus "
 "livadurioù ha kizelladurioù er roc'h, e-touez bravañ skouerioù chomet a-sav "
 "eus arz kozh India, dreist-holl livadurioù eztaolet-kenañ, fromus dre ar "
@@ -7531,7 +7482,7 @@ msgid ""
 msgstr ""
 "Daou live en deus ar Rang Ghar, bet gwechall pavilhon-sport ar rouaned Ahom "
 "hag an noblañs evit arvestiñ c'hoarioù evel emgannoù bualed ha sportoù all e "
-"Rupahi Pathar, dreist-holl e-pad gouel ar Rongali Bihu e kêrbenn an Ahomed, "
+"Rupahi Pathar, dreist-holl e-pad gouel ar Rongali Bihu e kêrbenn an Ahomed,  "
 "Rangpur."
 
 #: activities/explore_monuments/resource/board/board2.qml:128
@@ -7919,7 +7870,7 @@ msgid ""
 msgstr ""
 "Iliz-veur Worms (Wormser Dom), anvet ivez Iliz-veur Sant-Per zo un iliz-veur "
 "romanek e kêr Worms e bro Alamagn. Ar savadur graet gant maen-traezh ha "
-"dezhañ tourioù kernennek a voe savet e meur a vare e-pad an daouzekvet "
+"dezhañ tourioù kernennek a voe savet e meur a vare e-pad  an daouzekvet "
 "kantved ha peurechuet e 1181."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
@@ -8308,8 +8259,8 @@ msgid ""
 "Learn about various wild animals from around the world and remember where "
 "they live."
 msgstr ""
-"Desk traoù diwar-benn loened gouez ar bed a-bezh ha pez' soñj pelec'h emaint "
-"o vevañ."
+"Desk traoù diwar-benn loened gouez ar bed a-bezh  ha pez' soñj pelec'h "
+"emaint o vevañ."
 
 #. Help manual
 #: activities/explore_world_animals/ActivityInfo.qml:27
@@ -8641,7 +8592,7 @@ msgid ""
 "location that corresponds to this music. Click on the play button if you'd "
 "like to hear the music again."
 msgstr ""
-"En eil live e klevez ur skouer sonerezh ha dav eo dit dibab al lec'h a glot "
+"En eil live e klevez ur skouer sonerezh ha dav eo dit dibab  al lec'h a glot "
 "ganti. Klik war ar bouton seniñ ma fell dit adselaoù an ton."
 
 #: activities/explore_world_music/ActivityInfo.qml:26
@@ -9493,7 +9444,7 @@ msgstr "Dibab div drederenn eus ar c'harrez."
 #: activities/fractions_create/resource/4/Data.qml:61
 msgctxt "Data|"
 msgid "Select one-quarter of the square."
-msgstr "Dibab ur c'hard eus ar c'harrez."
+msgstr "Dibab ur c'hard  eus ar c'harrez."
 
 #: activities/fractions_create/resource/2/Data.qml:42
 #: activities/fractions_create/resource/4/Data.qml:67
@@ -9549,7 +9500,7 @@ msgstr "Dibab tri fempvet eus ar c'harrez."
 #: activities/fractions_create/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a pie."
-msgstr "Niveriñ dekredel gant un tartezenn."
+msgstr "Niveroù degel gant un tartezenn."
 
 #: activities/fractions_create/resource/5/Data.qml:18
 msgctxt "Data|"
@@ -9600,7 +9551,7 @@ msgstr "Dibab 1,75 eus un dartezenn."
 #: activities/fractions_create/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Decimal numbers with a square."
-msgstr "Niveriñ dekredel gant ur c'harrez."
+msgstr "Niveroù degel gant ur c'harrez."
 
 #: activities/fractions_create/resource/6/Data.qml:18
 msgctxt "Data|"
@@ -9744,25 +9695,19 @@ msgstr "Kav an niverer hag an anver (gant ur c'harrez)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Frizenn"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Adsav an tour kinniget."
+msgstr "Adsav ha klok ar frizenn."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "algorithm"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Heuliadoù poellek"
+msgstr "Desk an algoritmoù."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9771,51 +9716,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Gra ar frizenn a-us en-dro. Gant liveoù zo e rankez klokaat ar frizenn pe "
+"adsav anezhi ur wech bezañ eñvoret anezhi."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Biroù kleiz ha dehoù: dibab bouton ur simbol"
+msgstr "Biroù kleiz ha dehoù: dibab un elfenn"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Barrenn-esaouiñ: dibab un dra"
+msgstr "Barrenn-esaouiñ: ouzhpennañ un elfenn dibabet d'ar frizenn"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: cancel last operation"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Barrenn-distro pe Lemel: nullañ ar jedadenn gent"
+msgstr "Barrenn-esaouiñ pe Lemel: lemel diouzh ar frizenn an elfenn diwezhañ"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Mont-tre: gwiriañ da respont"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Barrenn-esaouiñ: kemm etre ar modoù gwelus ha diwelus"
+msgstr "Tab: kemm etre embann ar frizenn ha sellout ouzh ar skouer"
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Prest on"
@@ -9823,7 +9752,7 @@ msgstr "Prest on"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopi ar frizenn: 2 stumm gant livioù/sinoù disheñvel."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9831,7 +9760,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Kopi ar frizenn-mañ."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9839,6 +9768,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Eñvor ha kopi ar frizenn: ne vern peseurt strollad stummoù, livioù/sinoù ha "
+"mentoù."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9846,7 +9777,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Eñvor ha kopi ar frizenn-mañ."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9854,11 +9785,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Kopi ha klok ar frizenn-mañ: etre 4 ha 7 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Kopi ha klok ar frizenn-mañ"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9866,6 +9799,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Eñvor ha kopi ar frizenn-mañ: etre 4 ha 7 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9873,6 +9808,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Kopi ha klok ar frizenn-mañ: etre 6 hag 8 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9881,7 +9818,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Kopi ha klok ar frizenn-mañ."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9889,21 +9826,23 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Eñvor ha kopi ar frizenn-mañ: etre 6 hag 8 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopi ha klok ar frizenn-mañ: 2 stumm gant livioù/sinoù disheñvel."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Eñvor ha kopi ar frizenn-mañ: 2 stumm gant livioù/sinoù disheñvel."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopi ar frizenn-mañ: 3 pe 4 stumm gant livioù/sinoù disheñvel."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9911,6 +9850,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Kopi ar frizenn-mañ: 3 pe 4 stumm gant 2 vent a c'hell kaout an hevelep "
+"livioù/sinoù."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9918,11 +9859,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Kopi ha klok ar frizenn-mañ: 3 pe 4 stumm gant 2 vent a c'hell kaout an "
+"hevelep livioù/sinoù."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Kopi ar frizenn-mañ: ne vern peseurt strollad stummoù, livioù/sinoù ha "
+"mentoù."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9931,6 +9876,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Kopi ha klok ar frizenn-mañ: ne vern peseurt strollad stummoù, livioù/sinoù "
+"ha mentoù."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10902,7 +10849,7 @@ msgstr "Na h-Eileanan Siar"
 #: activities/geo-country/resource/board/board15_0.qml:53
 msgctxt "board15_0|"
 msgid "Orkney Islands"
-msgstr "Inizi Orc'h"
+msgstr "Inizi  Orc'h"
 
 #. Council area of Scotland: Shetland Islands
 #: activities/geo-country/resource/board/board15_0.qml:60
@@ -13892,7 +13839,7 @@ msgstr ""
 #: activities/gnumch-equality/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition, multiplication, division and subtraction."
-msgstr "Pleustr war ar sammañ, al liesaat, ar rannañ hag al lemel."
+msgstr "Pleustr war ar sammanñ, al liesaat, ar rannañ hag al lemel."
 
 #. Help manual
 #: activities/gnumch-equality/ActivityInfo.qml:25
@@ -14002,7 +13949,7 @@ msgstr "1 n'eo ket un niver prim."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr "%1 n'eo ket un niver prim, setu e rannerioù: %2"
+msgstr "%1 n'eo ket un niver prim, e rannerioù zo: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
@@ -14010,14 +13957,14 @@ msgstr "%1 n'eo ket un niver prim, setu e rannerioù: %2"
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
 msgstr ""
-"Lieskementoù %1 a zo enne %2 ha %3, met %4 n'eo ket ul lieskement eus %5."
+"Lieskementoù eus %1 zo enne %2 ha %3, met %4 n'eo ket ul lieskement eus %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr "Setu rannerioù da %1: %2"
+msgstr "Rannerioù %1 zo: %2 anezhe"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14065,11 +14012,11 @@ msgid ""
 "another family."
 msgstr ""
 "Ar rannerioù eus un niver zo an niveroù gouest da rannañ an niver-se hep "
-"leuskel ur rest. Da skouer ez eo 1, 2, 3 ha 6 rannerioù eus 6. 4 n'eo ket ur "
-"ranner eus 6. Ma vez un niver ul lieskement eus un eil niver, neuze ez eo an "
-"eil niver-mañ ur ranner eus an niver kentañ.Gwelet e vez al lieskementoù "
-"evel elfennoù ur strollad. Neuze ez eo 1, 2, 3 ha 6 elfennoù ar strollad-"
-"mañ, n'eo ket 4 avat."
+"leuskel ur rest.  Da skouer ez eo 1, 2, 3 ha 6 rannerioù eus 6. 4 n'eo ket "
+"ur ranner eus 6. Ma vez un niver kentañ ul lieskement eus un eil niver, "
+"neuze ez eo an eil niver-mañ ur ranner eus an niver kentañ.Gwelet e vez al "
+"lieskementoù evel elfennoù ur strollad. Neuze ez eo 1, 2, 3 ha 6 elfennoù ar "
+"strollad-mañ, n'eo ket 4 avat."
 
 #. Activity title
 #: activities/gnumch-inequality/ActivityInfo.qml:16
@@ -14091,7 +14038,7 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication and division."
-msgstr "Pleustriñ war ar sammañ, al lemel, al liesaat hag ar rannañ."
+msgstr "Pleustr war ar sammañ, al lemel, al liesaat hag ar rannañ."
 
 #: activities/gnumch-inequality/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -14168,13 +14115,13 @@ msgstr "Niverdebrer: Niveroù kentañ"
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Heñch an debrer niveroù war-zu an holl niveroù kentañ."
+msgstr "Heñch an debrer niveroù war-zu an holl niveroù prim."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about prime numbers."
-msgstr "Desk traoù diwar-benn an niveroù kentañ."
+msgstr "Desk traoù diwar-benn an niveroù prim."
 
 #. Help manual
 #: activities/gnumch-primes/ActivityInfo.qml:23
@@ -14188,41 +14135,35 @@ msgid ""
 "5), but you can see that 6 has 2 and 3 in its family as well (6 × 1 = 6, 2 × "
 "3 = 6). So 6 is not a prime number."
 msgstr ""
-"An niveroù prim zo niveroù rannapl drezo o unan ha dre 1 hepken. Da skouer: "
-"un niver prim eo 3, 4 n'eo ket (rannapl dre 2). 5 zo un niver prim ivez "
-"(rannapl dre 5 hag 1 hepken). Rannapl eo 6 dre 2 pe 3 (3 x 2 = 6), neuze "
-"n'eo ket un niver kentañ."
+"An niveroù kentañ zo niveroù rannapl drezo o unan ha dre 1 hepken. Da "
+"skouer: un niver kentañ eo 3, 4 n'eo ket (rannapl dre 2). 5 zo un niver "
+"kentañ ivez (rannapl dre 5 hag 1 hepken). Rannapl eo 6 dre 2 pe 3 (3 x 2 = "
+"6), neuze n'eo ket un niver prim."
 
 #. Activity title
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Lenn ul linenn dereziet"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Lenn talvoudoù war ul linenn dereziet."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Desk kelc'hiad an dour."
+msgstr "Desk lenn ul linenn dereziet."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Niveroù par hag ampar"
+msgstr "Lenn ha lakaat en urzh niveroù."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14231,145 +14172,102 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"Implij ar pavez niverel pe da glavier evit reiñ an talvoud a glot gant al "
+"lec'h kinniget war al linenn dereziet."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Sifroù: bizskriv un niver"
+msgstr "Sifroù: bizskriv sifroù"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Barrenn-esaouiñ: lemel ar sifr diwezhañ ez respont"
+msgstr "Distro: lemel ar sifr diwezhañ"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Sifroù: skriv da respont"
+msgstr "Lemel: adsevel da respont"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "Barrenn-esaouiñ pe Mont-tre: gwiriañ da respont"
+msgstr "Barrenn-esaouiñ, Distro pe Mont-tre: gwiriañ da respont"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(bevennoù liesseurt)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Kav ar valafenn liv mergl"
+msgstr "Kav an niver rekis."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 1 ha 5."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 1 ha 7."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 1 ha 10."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 0 hag 20."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 0 hag 50."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 0 ha 100."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 0 ha 1 000."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 0 ha 10 000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Niveroù etre %1 hag %2."
+msgstr "Niver da gavout etre 0 hag 1 000 000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Implij ul linenn dereziet"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Lak talvoudoù war ul linenn dereziet."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Desk implijout un deiziadur"
+msgstr "Desk implijout ul linenn dereziet."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14378,82 +14276,63 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"Implij ar biroù evit dilec'hiañ ar reti betek al lec'h a glot gant an "
+"talvoud kinniget war al linenn dereziet."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Biroù kleiz ha dehoù: dilec'h an egorlestr"
+msgstr "Biroù kleiz ha dehoù: dilec'h ar reti"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Plas an niver kinniget war al linenn dereziet."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "Urzh kreskiñ, 5 niver spis etre 1 ha 5."
+msgstr "Dereziadur da gavout etre 1 ha 5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Divin un niver etre 1 ha %1."
+msgstr "Dereziadur da gavout etre 1 ha 7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Divin un niver etre 1 ha %1."
+msgstr "Dereziadur da gavout etre 1 ha 10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Disoc'h etre 20 ha 29."
+msgstr "Dereziadur da gavout etre 0 hag 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Disoc'h etre 30 hag 50."
+msgstr "Dereziadur da gavout etre 0 hag 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Disoc'h etre 30 hag 50."
+msgstr "Dereziadur da gavout etre 0 ha 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "Dereziadur da gavout etre 0 ha 1 000."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "Dereziadur da gavout etre 0 ha 10 000."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "Dereziadur da gavout etre 0 ha 1 000 000."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
@@ -14466,20 +14345,20 @@ msgstr "Dielfennañ yezhadurel"
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr "Anavezout ar rummadoù yezhadurel er frazennoù kinniget."
+msgstr "Dielfenn rummadoù yezhadurel ar frazennoù kinniget."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr "Deskiñ anavezout rummadoù yezhadurel."
+msgstr "Desk anavezout ar rummadoù yezhadurel."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Ro ar rummadoù yezhadurel reizh evit ar gerioù a glot gante."
+msgstr "Kinnig ar rummadoù yezhadurel rekis d'ar gerioù a glot gante."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14487,26 +14366,25 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Dibab ur rummad yezhadurel er roll, choaz goude ar voestig dindan ur ger ha "
-"lakaat enni e rummad."
+"Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
+"kinnig aze ar rummad."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr "Laosk ar voestig goullo ma n'ez eus rummad mat ebet."
+msgstr "Laosk goullo ar voest ma n'eus rummad reizh ebet"
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
-"Biroùigoù uhel hag izel pe stokell taolennad: kemm etre rummadoù ha gerioù"
+msgstr "Biroù uhel hag izel: kemm etre rummadoù ha gerioù"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Biroù kleiz ha dehoù: choaz elfennoù e rummadoù pe gerioù"
+msgstr "Biroù kleiz ha dehoù: dibab elfennoù e-touez rummadoù pe gerioù"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14515,14 +14393,14 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Barrenn-esaouiñ: reiñ ar rummad reizh d'ar ger dibabet ha dibab ar ger da "
-"heul"
+"Barrenn-esaouiñ: kinnig ar rummad dibabet d'ar ger dibabet ha goude dibab ar "
+"ger warlerc'h."
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Barrenn-esaouiñ: dibab ar ger kent"
+msgstr "Distro: dibab ar ger kent"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
@@ -14538,7 +14416,7 @@ msgstr "Desk anavezout ar rummadoù yezhadurel."
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel kinniget."
+msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel rekis."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14546,13 +14424,13 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Dibab ur rummad yezhadurel er roll, choaz goude ar voestig dindan ur ger ha "
-"lak enni e rummad."
+"Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
+"kinnig aze ar rummad."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Laosk ar voestig goullo ma n'ez eus rummad mat ebet."
+msgstr "Laosk goullo ar voest ma n'eus rummad reizh ebet"
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
@@ -14562,7 +14440,7 @@ msgstr "Rummadoù yezhadurel"
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel kinniget."
+msgstr "Kav an holl c'herioù a glot gant ar rummadoù yezhadurel rekis."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14570,13 +14448,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Dibab ur rummad yezhadurel er roll, choaz goude ar voestig dindan ur ger ha "
-"lak enni e rummad."
+"Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
+"kinnig aze ar rummad."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Laosk ar voestig goullo ma n'eo ket reizh ar rummad."
+msgstr "Laosk goullo ar voest ma ne glot ket ar rummad."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
@@ -14593,7 +14471,7 @@ msgstr "Rummadoù yezhadurel"
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr "Ro ar rummadoù yezhadurel reizh evit ar gerioù a glot gante."
+msgstr "Kinnig ar rummadoù yezhadurel rekis d'ar gerioù a glot gante."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14601,13 +14479,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Dibab ur rummad yezhadurel er roll, choaz goude ar voestig dindan ur ger ha "
-"lak enni e rummad."
+"Dibab ur rummad yezhadurel er roll, dibab goude ar voest dindan ur ger ha "
+"kinnig aze ar rummad."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr "Laosk ar voestig goullo ma n'eo ket reizh ar rummad."
+msgstr "Laosk goullo ar voest ma ne glot ket ar rummad."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14658,7 +14536,7 @@ msgid ""
 "node."
 msgstr ""
 "Lak livioù d'ar graf gant ma ne vo ket memes liv gant div nozelenn liammet. "
-"Dibab un nozelenn da gentañ, goude un stumm er roll da lakaat warni."
+"Dibab un nozelenn da gentañ, goude un stumm er roll da lakaat warni ."
 
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -14762,19 +14640,19 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr "Kavout 24"
+msgstr "Divin 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr "Jediñ evit kavout 24."
+msgstr "Jed evit kaout 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Pleustriñ war ar jediñ gant ar pevar arouez matematik."
+msgstr "Pleustr war ar jediñ gant ar pevar arouez jediñ."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
@@ -14788,7 +14666,7 @@ msgstr "Gouzout jediñ gant ar sammañ, al lemel, al liesaat hag ar rannañ."
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Implij ar pevar niver gant an arouezioù jediñ kinnig evit kavout 24."
+msgstr "Implij ar pevar niver gant an arouezioù jediñ kinniget evit kaout 24."
 
 #: activities/guess24/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14799,53 +14677,53 @@ msgstr "Biroù: merdeiñ e-touez niveroù hag arouezioù jediñ"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
 msgstr ""
-"Barrenn-esaouiñ, Distro pe Mont-tre: dibab pe dizibab an talvoud pe an "
-"arouez jediñ war-wel"
+"Barrenn-esaouiñ, Distro pe Mont-tre: dibab pe dizibab an talvoud war-wel pe "
+"an arouez jediñ"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr "Stokelloù an arouezioù jediñ (+,-,*,/): dibab un arouez jediñ"
+msgstr "Stokelloù jediñ (+,-,*,/): dibab an arouez jediñ"
 
 #: activities/guess24/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Barrenn-distro pe Lemel: nullañ ar jedadenn gent"
+msgstr "Distro pe Lemel: nullañ ar jedadenn diwezhañ"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr "Stokell taolennad: kemm etre niveroù hag arouezioù jediñ"
+msgstr "Tab: kemm etre an niveroù hag an arouezioù jediñ"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Implij ar pevar niver gant an arouezioù jediñ kinnig evit kavout 24."
+msgstr "Implij ar pevar niver gant an arouezioù jediñ kinniget evit kaout 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr "Da ziskoulmañ gant + ha -."
+msgstr "Diskoulmus gant + ha -."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr "Da ziskoulmañ gant +, - ha x."
+msgstr "Diskoulmus gant +, - ha x."
 
 #: activities/guess24/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Liesaat ret."
+msgstr "Ret eo liesaat."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Da ziskoumañ gant an holl arouezioù jediñ"
+msgstr "Diskoulmus gant an holl arouezioù jediñ."
 
 #: activities/guess24/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Rannañ ret"
+msgstr "Ret eo rannañ."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -14887,7 +14765,7 @@ msgstr ""
 #: activities/guesscount/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Intuition and practice of algebraic-like calculations."
-msgstr "Divinout ha pleustriñ war ar jediñ."
+msgstr "Divinout hag pleustriñ war ar jediñ."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14914,7 +14792,7 @@ msgstr "Live %1"
 #: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not positive integer"
-msgstr "An disoc'h n'eo ket un niver anterin pozitivel."
+msgstr "An disoc'h n'eo ket un niver anterin positif."
 
 #: activities/guesscount/guesscount.js:144
 msgctxt "guesscount|"
@@ -14940,22 +14818,22 @@ msgstr "Jedadurioù"
 #: activities/guesscount/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "Practice algebraic calculations with a single operator."
-msgstr "Pleustriñ war ar jediñ gant un arouez matematik nemetken."
+msgstr "Pleustr war ar jediñ gant un arouez matematik nemetken."
 
 #: activities/guesscount/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with two operators."
-msgstr "Pleustriñ war ar jediñ gant daou arouez matematik."
+msgstr "Pleustr war ar jediñ gant daou arouez matematik."
 
 #: activities/guesscount/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with three operators."
-msgstr "Pleustriñ war ar jediñ gant tri arouez matematik."
+msgstr "Pleustr war ar jediñ gant tri arouez matematik."
 
 #: activities/guesscount/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr "Pleustriñ war ar jediñ gant pevar arouez matematik."
+msgstr "Pleustr war ar jediñ gant pevar arouez matematik."
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
@@ -16240,7 +16118,7 @@ msgid ""
 "unit."
 msgstr ""
 "Ur sammadenn gant daou niver degel a vez diskouezet. Ezteurel a ra barrenn "
-"ar biroù un unanenn glok, ha pep kombod a ziskouez un dekvedenn anezhi."
+"ar biroù un unanenn glok, ha pep kombod a ziskouez un dekvedenn anezhi;"
 
 #: activities/learn_decimals/learn_decimals.js:63
 msgctxt "learn_decimals|"
@@ -16348,7 +16226,7 @@ msgid ""
 msgstr ""
 "Diskouezet e vez ar sammadenn gant daou niver degel. Rikl ar bir evit dibab "
 "un tamm eus ar varrenn, ha rikl an tamm dibabet betek an dachenn c'houllo. "
-"Kendalc'h mod-se betek ma kloto niver ar barrennoù laosket gant disoc'h ar "
+"Kendalc'h mod-se betek ma kloto  niver ar barrennoù laosket gant disoc'h ar "
 "sammadenn, ha klik goude war ar bouton OK evit gwiriañ da respont."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
@@ -16417,7 +16295,7 @@ msgstr ""
 "Ul lamadenn gant daou niver degel a zo diskouezet. Niver kentañ al lamadenn "
 "a vez diskouezet gant barrennoù. Eztaolet e vez un unanenn gant ur varrenn, "
 "ha pep kombod a ziskouez un dekvedenn anezhi. Klik war ar c'hombodoù evitl "
-"ober al lamadenn gant an eil niver ha diskouez disoc'h ar jedadenn."
+"ober al lamadenn gant an eil niver ha diskoueziñ disoc'h ar jedadenn."
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16670,8 +16548,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Diblas pep loen betek e lec'h-bevañ en ur implijout ur c'hlik-kleiz pe ur "
-"c'hlik-dehou gant al logodenn."
+"Diblas loened betek o zi en ur implijout ur c'hlik-kleiz pe ur c'hlik-dehou "
+"gant al logodenn."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
@@ -16904,7 +16782,7 @@ msgstr "Kaelioù 6x6, diaes-kenañ."
 #: activities/lightsoff/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "7×7 grids, Very Difficult."
-msgstr "Kaelioù 7z7, diaes-kenañ."
+msgstr "Kaelioù 7z7,  diaes-kenañ."
 
 #: activities/lightsoff/resource/8/Data.qml:13
 msgctxt "Data|"
@@ -17090,7 +16968,7 @@ msgid ""
 msgstr ""
 "Evit digeriñ an tog, klik warnañ. Ar steredennoù en em sil dindanañ hag un "
 "nebeut dioute zo gouest da achap. Dav eo dit kontañ pet zo chomet dindan an "
-"tog. Klik er c'hombodoù war al linenn en traoñ evit reiñ da respont a-raok "
+"tog. Klik er c'hombodoù war al linenn en traoñ  evit reiñ da respont a-raok "
 "pouezañ war OK a-zehoù."
 
 #: activities/magic-hat-minus/MagicHat.qml:93
@@ -17286,9 +17164,9 @@ msgid ""
 "levels, click on the \"barefoot / sportshoe\" icon in the upper left corner "
 "of the screen to toggle the run-fast-mode.\t"
 msgstr ""
-"Gant al liveoù uheloc'h e vo dibabet mod ar redek buan dre ziouer. Ma fell "
+"Gant al liveoù uheloc'h e vo dibabet  mod ar redek buan dre ziouer. Ma fell "
 "dit ober gant ar mod-mañ gant ul live izel pe cheñch ar mod gant ul live "
-"uheloc'h, klik war dTuks pe war an skeudennig \"diarc'hen/botoù sport\" e "
+"uheloc'h, klik war dTuks pe war an skeudennig  \"diarc'hen/botoù sport\" e "
 "korn uhel ar skramm a-gleiz.\t"
 
 #: activities/maze/Maze.qml:314
@@ -17681,7 +17559,7 @@ msgid ""
 "Each card is hiding either an operation, or a result. You have to match the "
 "operations with their result."
 msgstr ""
-"Ur jedadenn pe un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat pep "
+"Ur jedadenn pe  un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat pep "
 "jedadenn asambles gant an disoc'h a glot ganti."
 
 #: activities/memory-math-add-minus-mult-div-tux/resource/1/Data.qml:15
@@ -17832,7 +17710,7 @@ msgid ""
 "Each card is hiding either an operation (an addition or a subtraction), or a "
 "result. You have to match the operations with their result."
 msgstr ""
-"Ur jedadenn (ur sammadenn pe ul lamadenn) pe un disoc'h zo kuzhet gant pep "
+"Ur jedadenn (ur sammadenn pe ul lamadenn) pe  un disoc'h zo kuzhet gant pep "
 "kartenn. Dav eo dit lakaat pep jedadenn asambles gant an disoc'h a glot "
 "ganti."
 
@@ -17991,8 +17869,8 @@ msgid ""
 "Each card is hiding either a division, or a result. You have to match the "
 "divisions with their result."
 msgstr ""
-"Ur rannadenn pe un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat pep "
-"rannadenn asambles gant an disoc'h a glot ganti."
+"Ur rannadenn pe  un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat "
+"pep rannadenn asambles gant an disoc'h a glot ganti."
 
 #: activities/memory-math-div-tux/resource/1/Data.qml:15
 #: activities/memory-math-div/resource/1/Data.qml:15
@@ -18102,8 +17980,8 @@ msgid ""
 "Each card is hiding either a subtraction, or a result. You have to match the "
 "subtractions with their result."
 msgstr ""
-"Ul lamadenn) pe un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat pep "
-"lamadenn asambles gant an disoc'h a glot ganti."
+"Ul lamadenn) pe  un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat "
+"pep lamadenn asambles gant an disoc'h a glot ganti."
 
 #: activities/memory-math-minus-tux/resource/1/Data.qml:15
 #: activities/memory-math-minus/resource/1/Data.qml:15
@@ -18198,7 +18076,7 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications and divisions."
-msgstr "Pleustr war al liesaat hag ar rannañ."
+msgstr "Pleustr war ar sammañ, al lemel, al liesaat hag ar rannañ."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
@@ -18215,7 +18093,7 @@ msgid ""
 "Each card is hiding either an operation (a multiplication or a division), or "
 "a result. You have to match the operations with their result."
 msgstr ""
-"Ur jedadenn (ul liesadenn pe ur rannadenn) pe un disoc'h zo kuzhet gant pep "
+"Ur jedadenn (ul liesadenn pe ur rannadenn) pe  un disoc'h zo kuzhet gant pep "
 "kartenn. Dav eo dit lakaat pep jedadenn asambles gant an disoc'h a glot "
 "ganti."
 
@@ -18269,8 +18147,8 @@ msgid ""
 "Each card is hiding either a multiplication, or a result. You have to match "
 "the multiplications with their result."
 msgstr ""
-"Ul liesadenn pe un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat pep "
-"liesadenn asambles gant an disoc'h a glot ganti."
+"Ul liesadenn pe  un disoc'h zo kuzhet gant pep kartenn. Dav eo dit lakaat "
+"pep liesadenn asambles gant an disoc'h a glot ganti."
 
 #: activities/memory-math-mult-tux/resource/1/Data.qml:15
 #: activities/memory-math-mult/resource/1/Data.qml:15
@@ -18363,7 +18241,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
-msgstr "Pleustriñ war da vemor-kleved."
+msgstr "Pleustr war da vemor-kleved."
 
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:23
@@ -18413,7 +18291,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your memory and remove all the cards."
-msgstr "Pleustriñ war da vemor ha lam an holl gartoù kuit."
+msgstr "Pleustr war da vemor ha lam an holl gartoù kuit."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -18765,7 +18643,7 @@ msgstr "Ctrl+F: Kuzhat/Diskouez ar skramm klok"
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
 msgid "Ctrl+S: Toggle the activity section bar"
-msgstr "Ctrl+S: Kuzhat/Diskouez lañser rummadoù an obererezhioù"
+msgstr "Ctrl+S:  Kuzhat/Diskouez lañser rummadoù an obererezhioù"
 
 #: activities/menu/BackgroundMusicList.qml:64
 msgctxt "BackgroundMusicList|"
@@ -18814,7 +18692,7 @@ msgstr "Gwirioù: %1"
 #: activities/menu/ConfigurationItem.qml:48
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Sil an diaester "
+msgstr "Sil an diaester"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18824,7 +18702,7 @@ msgstr "Dibaber ar yezhoù"
 #: activities/menu/ConfigurationItem.qml:115
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Aotreañ pellgargañ/adnevesaat ar restroù diavaez end-eeun"
+msgstr "Aotreañ dre ziouer ar pellgargañ/adnevesaat evit ar perzhioù diavaez"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -18880,7 +18758,7 @@ msgstr "Tamm sonerezh ebet"
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
-msgstr "Titl: %1  Arzour: %2"
+msgstr "Titl: %1 Arzour: %2"
 
 #: activities/menu/ConfigurationItem.qml:251
 msgctxt "ConfigurationItem|"
@@ -19381,7 +19259,7 @@ msgstr "Distro ar moneiz"
 msgctxt "ActivityInfo|"
 msgid "Practice money usage by giving Tux his change."
 msgstr ""
-"Pleustriñ war implij an arc'hant en ur zistreiñ e voneiz da dTuks diwarni."
+"Pleustr war implij an arc'hant en ur zistreiñ e voneiz da dTuks diwarni."
 
 #. Help goal
 #: activities/money_back/ActivityInfo.qml:20
@@ -19424,7 +19302,7 @@ msgstr "Arc'hant € ha kantimoù"
 #: activities/money_cents/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice money usage including cents."
-msgstr "Pleustr war implij an arc'hant gant ar santimoù."
+msgstr "Pleustr war implij an arc'hant gant ar c'hantimoù."
 
 #. Help goal
 #: activities/money_cents/ActivityInfo.qml:20
@@ -19488,7 +19366,7 @@ msgid ""
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
 "Kod Morse a voe ijinet gant Samuel Morse. Un doare da dreuzkas kemennadennoù "
-"skrivet e stumm un heuliad kerzh-digerzh gant tonioù, gouleier pe c'hoazh "
+"skrivet e stumm un heuliad kerzh-digerzh gant tonioù, gouleier pe  c'hoazh "
 "klikoù an hini eo. "
 
 #: activities/morse_code/FirstScreen.qml:65
@@ -19504,7 +19382,7 @@ msgid ""
 msgstr ""
 "Pep simbol er c'hod Morse a eztaol arouezenn un destenn (lizherenn pe sifr) "
 "pe ur merk ha pep hini a vez eztaolet gant un heuliad dibar a bikoù ha "
-"linennigoù. Padout a ra ul linennig teir gwech hiroc'h eget ur pik. Evit "
+"linennigoù. Padout a ra ul linennig  teir gwech hiroc'h eget ur pik. Evit "
 "buanaat tizh ar c'hehentiñ e voe savet ar c'hod gant ma veze al lizherennoù "
 "boazetañ gant an niver berrañ a bikoù hag a linennigoù.\n"
 "Da skouer e talv al lizherenn voazetañ e saozneg, al lizherenn \"E\", ur pik "
@@ -19869,7 +19747,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr "Poent da heul da lakaat war-wel"
+msgstr "Diskouez ar poent warlerc'h"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -20438,7 +20316,7 @@ msgstr ""
 "div pe teir greunenn ennañ. Ar greun paket a vez lakaet gant ar c'hoarier en "
 "e di-kontañ. Koulskoude, ma rankfe seurt taol pakañ holl c'hreun un enebour, "
 "nullet e vez ar pakañ rak mod-all n'hallje ket an enebour kenderc'hel da "
-"c'hoari, ha laosket e vez neuze ar greun war ar plato. "
+"c'hoari, ha laosket e vez neuze ar greun war ar plato.  "
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -20467,7 +20345,7 @@ msgstr "C'hoari awale (gant ur c'heneil)"
 #: activities/oware_2players/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr "C'hoari strategiezh an awale a-enep ur c'heneil."
+msgstr "C'hoari  strategiezh an awale a-enep ur c'heneil."
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
@@ -21225,7 +21103,7 @@ msgstr "Setu skeulenn an alc'hwez fa evit an notennoù izeldon."
 #: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
-msgstr "Ar stokelloù du a ro notennoù diez ha. Notennoù diez o deus ar sin ♯."
+msgstr "Ar stokelloù du a ro notennoù diez ha . Notennoù diez o deus ar sin ♯."
 
 #: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
@@ -21240,7 +21118,7 @@ msgid ""
 "Click on the note symbol to write different length notes such as whole "
 "notes, half notes, quarter notes and eighth notes."
 msgstr ""
-"Klik war arouez an notenn evit skrivañ notennoù liespad evel krennennoù, "
+"Klik war arouez an notenn evit skrivañ notennoù lies-pad evel krennennoù, "
 "gwennennoù, duennoù ha krogennoù."
 
 #: activities/piano_composition/piano_composition.js:39
@@ -22114,7 +21992,7 @@ msgstr "Adsav an tren hervez ar skouer a-us."
 #: activities/railroad/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Memory training."
-msgstr "Pleustriñ war ar memor."
+msgstr "Pleustriñ war ar memor"
 
 #. Help manual
 #: activities/railroad/ActivityInfo.qml:25
@@ -23060,7 +22938,7 @@ msgid ""
 "Remember, one kilogram (\"kg\") equals 1000 grams (\"g\"). \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Soñj enni, ur c'hilogramm (\"kg\") zo par da 1000 gramm (\"g\"). \n"
+"Soñj enni, ur c'hilogramm (\"kg\") zo par da 1000 gramm (\"g\"). . \n"
 "Laosk pouezioù war an tu kleiz evit kempouezañ ar bouezerez."
 
 #. Activity title
@@ -23182,7 +23060,7 @@ msgid ""
 "The \"oz\" symbol at the end of a number means ounce. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"An arouez \"oz\" goude un niver a sinifi oñs. \n"
+"An arouez \"oz\" goude un niver a sinifi oñs.  \n"
 " Laosk pouezioù war an tu kleiz evit kempouezañ ar bouezerez."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
@@ -23350,7 +23228,7 @@ msgid ""
 "Alice wants to share 4 pieces of candy equally between 4 of her girl "
 "friends. Can you help her?"
 msgstr ""
-"Bremañ he deus c'hoant Alis da zasparzhañ 4 madig etre 4 mignonez dezhi. "
+"Bremañ he deus c'hoant Alis da zasparzhañ 4 madig  etre 4 mignonez dezhi. "
 "Gallout a rez sikour anezhi ?"
 
 #: activities/share/resource/1/Data.qml:132
@@ -23371,7 +23249,7 @@ msgstr ""
 #: activities/share/resource/1/Data.qml:152
 msgctxt "Data|"
 msgid "Alice wants to give 16 pieces of candy to her friends."
-msgstr "Bremañ he deus c'hoant Alis da zasparzhañ 16 madig etre he mignoned."
+msgstr "Bremañ he deus c'hoant Alis da zasparzhañ 16 madig  etre he mignoned."
 
 #: activities/share/resource/1/Data.qml:162
 msgctxt "Data|"
@@ -23380,9 +23258,9 @@ msgid ""
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"Fellout a ra da Alis reiñ madigoù da 4 mignon dezhi. Madigoù zo dija gant un "
-"toullad anezhe. Gallout a rez sikour anezhi da zasparzhañ 14 madig gant ma "
-"vo memes kementad gant pep mignon ?"
+"Fellout a ra da Alis reiñ  madigoù da 4 mignon dezhi. Madigoù zo dija gant "
+"un toullad anezhe. Gallout a rez sikour anezhi da zasparzhañ 14 madig gant "
+"ma vo memes kementad gant pep mignon ?"
 
 #: activities/share/resource/1/Data.qml:174
 msgctxt "Data|"
@@ -23390,8 +23268,8 @@ msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
 msgstr ""
-"Fellout a ra da vMikael rannañ ingal 5 madig etre 5 mignonez dezhañ. Gallout "
-"a rez sikour anezhañ ?"
+"Fellout a ra da vMikael rannañ ingal 5 madig etre 5 mignonez  dezhañ. "
+"Gallout a rez sikour anezhañ ?"
 
 #: activities/share/resource/1/Data.qml:184
 msgctxt "Data|"
@@ -23490,7 +23368,7 @@ msgstr "25 madig ha 5 bugel d'ar muiañ, nemorant posupl."
 #: activities/share/resource/2/Data.qml:28
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "Bremañ en deus c'hoant da zasparzhañ 5 madig etre e vignoned."
+msgstr "Bremañ en deus c'hoant da zasparzhañ 5 madig  etre e vignoned."
 
 #: activities/share/resource/2/Data.qml:38
 msgctxt "Data|"
@@ -23573,7 +23451,7 @@ msgstr ""
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr ""
-"Bremañ he deus c'hoant Alis da zasparzhañ ingal 16 madig etre he mignoned."
+"Bremañ he deus c'hoant Alis da zasparzhañ ingal 16 madig  etre he mignoned."
 
 #: activities/share/resource/2/Data.qml:152
 msgctxt "Data|"
@@ -23679,8 +23557,8 @@ msgctxt ""
 "%n pieces of candy equally between them."
 msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
-msgstr[0] "Plas an niver-mañ a baotred: %n"
-msgstr[1] "Plas an niver-mañ a baotred: %n , "
+msgstr[0] "Plas an niver-mañ a baotred:  %n"
+msgstr[1] "Plas an niver-mañ a baotred:  %n , "
 
 #: activities/share/share.js:102
 #, qt-format
@@ -23689,8 +23567,8 @@ msgctxt ""
 "split %n pieces of candy equally between them."
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
-msgstr[0] "hag an niver-se a blac'hed: %n war an dachenn e-kreiz."
-msgstr[1] "hag an niver-se a blac'hed: %n , war an dachenn."
+msgstr[0] "hag an niver-se a blac'hed:  %n war an dachenn e-kreiz."
+msgstr[1] "hag an niver-se a blac'hed:  %n , war an dachenn."
 
 #: activities/share/share.js:106
 #, qt-format
@@ -25070,8 +24948,8 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"Ret eo dit tapout muioc'h eget 90% evit dont da vezañ ur mailh war koskoriad "
-"an Heol!"
+"Ret eo dit  tapout muioc'h eget 90% evit dont da vezañ ur mailh war "
+"koskoriad an Heol!"
 
 #: activities/solar_system/SolarSystem.qml:354
 #, qt-format
@@ -25377,7 +25255,7 @@ msgstr ""
 "kaeligoù 3x3 (anvet rannoù). E GCompris e kroger el liveoù izelañ gant ur "
 "stumm eeunaet gant arouezioù hag hep rann ebet. Bewech ez eus meur a arouez "
 "pe sifr lakaet e kombodoù 'zo (ar re roet en a-raok). Pep renk, bann ha rann "
-"a rank kaout ur skouerenn hepken eus pep arouez pe sifr (Mammenn &lt;http://"
+"a rank kaout ur skouerenn hepken eus pep arouez pe sifr (Mammenn  &lt;http://"
 "fr.wikipedia.org/wiki/Sudoku&gt;)."
 
 #. Help prerequisite
@@ -25394,8 +25272,8 @@ msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Dibab un niver pe un arouez en roll ha klik war al lec'h mat. GCompris ne "
-"laosko ket ac'hanout da lakaat traoù fall."
+"Dibab un niver pe un arouez er roll ha klik war al lec'h mat da dizhout. "
+"GCompris ne laosko ket ac'hanout da ginnig respont faos."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25508,12 +25386,12 @@ msgstr ""
 "bloaz 1800. 7 pezh zo d'ar c'hoari, lesanvet \"tan\", da lakaat asambles "
 "d'ober ur c'harrez; gant kostez ar c'harrez implijet evel an unanenn, setu "
 "ar 7pezh :\n"
-"    5 tric'horn izoskelel skouer, en o zouez :\n"
-"        - 2 vihan (gant daou gostez a 1 o hirder)\n"
-"        - 1 krenn (gant daou gostez a \"2 bon daou\" o hirder)\n"
-"        - 2 vras (gant daou gostez a 2 o hirder) \n"
-"    1 c'harrez (gant kostezioù a 1 o hirder)\n"
-"    1 parallelogram (gant kostezioù a 1 pe \"2 bon daou\" o hirder)\n"
+"   5 tric'horn izoskelel skouer, en o zouez :\n"
+"   - 2 vihan (gant daou gostez a 1 o hirder)\n"
+"   - 1 krenn (gant daou gostez a \"2 bon daou\" o hirder)\n"
+"   - 2 vras (gant daou gostez a 2 o hirder) \n"
+"   1 c'harrez (gant kostezioù a 1 o hirder)\n"
+"   1 parallelogram (gant kostezioù a 1 pe \"2 bon daou\" o hirder)\n"
 "    "
 
 #. Help manual
@@ -25587,7 +25465,7 @@ msgstr "Talvoud uhelañ: 500."
 #: activities/target/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr "Talvoud uhelañ 50000."
+msgstr "Talvoud uhelañ  50000."
 
 #: activities/target/resource/5/Data.qml:13
 msgctxt "Data|"
@@ -25748,9 +25626,9 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
-"Dielfenn ar sammadurioù a-benn kaout ur c'houblad niveroù par da zek e-barzh "
-"ar c'hrommelloù. Dibab un niver er roll, choaz goude ul lec'h goullo er "
-"jedadenn evit kas an niver dibabet aze."
+"Gra en-dro ar sammadurioù a-benn kaout ur c'houblad niveroù par da zek e-"
+"barzh ar c'hrommelloù . Dibab un niver er roll, choaz goude ul lec'h goullo "
+"er jedadenn evit kas an niver dibabet aze."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -25901,7 +25779,7 @@ msgid ""
 "Click on the cloud."
 msgstr ""
 " Glizhenniñ a ra an aezhenn da sevel koumoul ha pa ya ar c'houmoul da "
-"bounner e ra glav. Klik war ar goumoulenn."
+"bounner e ra glav. Klik war ar  goumoulenn."
 
 #: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
@@ -26013,12 +25891,9 @@ msgstr ""
 "gantañ."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Troidigezhioù ouzhpennet evit: Sloveneg, Alamaneg, Galizeg."
+msgstr "Troidigezhioù ouzhpennet evit ar Bulgareg, ar Galizeg hag ar Swahili"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -26040,18 +25915,13 @@ msgid "Many bug fixes"
 msgstr "Meur a fazi reizhet"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"Urzh-linenn nevez-ouzhpennet (--diaester {talvoud|izelañ-uhelañ}) evit "
-"kregiñ GCompris gant ul live diaester resis."
+"Urzh-linenn nevez-ouzhpennet (--start-level live, to be used with --launch "
+"oberezh) evit kregiñ GCompris gant ul live diaester resis."
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -26069,8 +25939,8 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
-"Urzh-linenn nevez-ouzhpennet (--diaester {talvoud|izelañ-uhelañ}) evit "
-"kregiñ GCompris gant ul live diaester resis."
+"Urzh-linenn nevez-ouzhpennet (--difficulty {value|min-max}) evit kregiñ "
+"GCompris gant ul live diaester resis."
 
 #: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
@@ -26284,7 +26154,7 @@ msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
 "Composition)."
 msgstr ""
-"Kargañ/saveteiñ ar c'hrouadennoù (Meziantig evit skrivañ, testennoù bihan, "
+"Kargañ/saveteiñ ar c'hrouadennoù (Meziantig evit skrivañ,  testennoù bihan, "
 "Boest kempouezañ ha Sonaozouriezh piano)."
 
 #: core/ChangeLog.qml:125
@@ -26451,7 +26321,7 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
-"Bez' e c'heller reiñ ur skodenn sikour evit diorren <b>GCompris</b>, dav "
+"Bez' e c'heller reiñ ur skodenn sikour evit diorren  <b>GCompris</b>, dav "
 "bizitañ <a href='https://gcompris.net/donate-en.html'>https://gcompris.net/"
 "donate-en.html</a>."
 
@@ -26479,7 +26349,7 @@ msgstr ""
 "\"%1\">Meziantoù digor</a>. Kantadoù a veziantoù zo bet savet gant ar "
 "gumuniezh-mañ a ya da vezañ ul lodenn eus frammoù, stalioù labour ha "
 "krouidigezhioù KDE.<br /><br />KDE zo ur gevelouri gant den ebet a reolfe e-"
-"unan strivoù pe labourioù ar re all. Degemeret mat eo pep hini da gemer "
+"unan strivoù pe labourioù ar re all.  Degemeret mat eo pep hini da gemer "
 "perzh enni, ha te ivez. <br /><br />Kae betek <a href=\"%2\">%2</a> evit "
 "gouzout hiroc'h diwar-benn kumuniezh KDE hag ar meziantoù savet ganeomp."
 
@@ -26516,12 +26386,12 @@ msgid ""
 "what you need."
 msgstr ""
 "N'eo ket ret dit bezañ diorroer meziantoù evit bezañ ezel eus strollad KDE. "
-"Kemer perzh er strolladoù yezhel a dro ar meziantoù. Kinnig skeudennoù, "
-"neuzioù, sonioù ha teuliadurioù gwellaet. Dit-te da zibab! <br /><br />Kae "
-"betek <a href=\"%1\">%1</a> evit kavout titouroù diwar-benn ar raktresoù ma "
-"c'hallfez kemer perzh enne.<br /><br />Ma peus ezhomm da gaout muioc'h a "
-"ditouroù pe deuliadurioù, kae da lenn <a href=\"%2\">%2</a> a roio dit ar "
-"pezh az peus ezhomm."
+"Kemer perzh er strolladoù yezhel a dro etrefas ar meziantoù. Kinnig "
+"skeudennoù, neuzioù, sonioù ha teuliadurioù gwellaet. Dit-te da zibab! <br /"
+"><br />Kae betek <a href=\"%1\">%1</a> evit kavout titouroù diwar-benn ar "
+"raktresoù ma c'hallfez kemer perzh enne.<br /><br />Ma peus ezhomm da gaout "
+"muioc'h a ditouroù pe deuliadurioù, kae da lenn <a href=\"%2\">%2</a> a roio "
+"dit ar pezh az peus ezhomm."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -26682,7 +26552,9 @@ msgstr "Fazi gant ar pellgargañ (kod: %1): %2"
 #: core/DownloadDialog.qml:394
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
-msgstr "Berzh zo bet gant da bellgargañ. Implijapl eo ar restroù data bremañ."
+msgstr ""
+"Berzh zo bet gant da bellgargañ. Restroù ar roadennoù a c'heller implijout "
+"bremañ."
 
 #: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
@@ -26731,13 +26603,13 @@ msgstr "N'eo ket reizh sammad-gwiriañ ar restr pellgarget: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr "Mouezhioù ebet kavet evit %1."
+msgstr "Mouezh ebet kavet evit %1."
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr "Roadennoù ebet kavet evit %1."
+msgstr "Roadenn ebet kavet evit %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26880,7 +26752,7 @@ msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
-"Implijout mod neuz ar meziant e-lec'h openGL (gorrekoc'h, met gouest da "
+"Implijout mod neuz  ar meziant e-lec'h openGL (gorrekoc'h, met gouest da "
 "gerzhout gant ne vern peseurt kartenn c'hrafek)."
 
 #: core/main.cpp:197
@@ -26917,8 +26789,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
-"Resisaat gant peseurt live kregiñ an obererezh. D'ober gant an dibab --"
-"loc'hañ hepken."
+"Resisaat gant peseurt live kregiñ an obererezh. Implijet hepken pa reer gant "
+"an dibab --launch option."
 
 #: core/main.qml:269
 msgctxt "main|"
@@ -26926,8 +26798,8 @@ msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
-"Ha fellout a ra dit pellgargañ pe adnevesaat end-eeun ar restroù da heul pa "
-"vez loc'het GCompris?"
+"Ha fellout a ra dit pellgargañ dre ziouer ar perzhioù diavaez pa vez loc'het "
+"GCompris?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26995,13 +26867,13 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
-"Obererezhioù 'zo o deus roadennoù nevez implijapl. Fellout a ra dit adkregiñ "
-"gant dibab ar roadennoù?"
+"Obererezhioù zo o deus dafar nevez bremañ. Ha fellout a ra dit dibab en-dro "
+"an dafar a c'heller implijout?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr "Lakaat da dalvezout"
+msgstr "Reketiñ"
 
 #: core/main.qml:390
 msgctxt "main|"
@@ -27033,16 +26905,11 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
 
-#, fuzzy
 #~| msgctxt "Data|"
 #~| msgid "Find both numbers."
 #~ msgctxt "Data|"
 #~ msgid "Find the missing numbers"
-#~ msgstr "Kav an div niverenn."
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
+#~ msgstr "Kav an niveroù a vank."
 
 #~ msgctxt "board5_2|"
 #~ msgid "1791 Comte de Sivrac's Celerifere"
@@ -27067,6 +26934,10 @@ msgstr "Kregiñ"
 #~ msgctxt "Warning|"
 #~ msgid "and %1 are the divisors of %2."
 #~ msgstr "ha %1 zo rannerioù eus %2."
+
+#~ msgctxt "Guesscount|"
+#~ msgid "%1/%2"
+#~ msgstr "%1/%2"
 
 #~ msgctxt "Data|"
 #~ msgid "3 decimal places between 0 and 999."
@@ -27368,7 +27239,7 @@ msgstr "Kregiñ"
 #~ "illustrasjonskart&gt;."
 #~ msgstr ""
 #~ "Kartenn kontelezh bro Norvegia zo gwarezet © Kartverket (Beli Norvegia ar "
-#~ "c'hartenniñ) hag embannet dindan an aotregezh CC BY 4.0. Liammoù "
+#~ "c'hartenniñ) hag embannet dindan an aotregezh  CC BY 4.0 . Liammoù "
 #~ "pellgargañ zo da gavout diwar &lt;https://www.kartverket.no/til-lands/"
 #~ "kart/illustrasjonskart&gt;."
 
@@ -27566,8 +27437,8 @@ msgstr "Kregiñ"
 #~ "3. To add an instruction at any particular position in the main/procedure "
 #~ "code area:"
 #~ msgstr ""
-#~ "3. Evit ouzhpennañ an urzh e ne vern peseurt plas en dachenn-godiñ pennañ/"
-#~ "argerzhadurel :"
+#~ "3. Evit ouzhpennañ an urzh  e ne vern peseurt plas en dachenn-godiñ "
+#~ "pennañ/argerzhadurel :"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
@@ -27722,7 +27593,7 @@ msgstr "Kregiñ"
 #~ "Fellout a ra da Jorj rannañ ingal 14 madig etre 4 mignoned dezhañ : 2 "
 #~ "blac'h ha 2 baotr. Hag-eñ e c'hall dasparzhañ ingal ar madigoù etre e "
 #~ "vignoned ? Da gentañ, rikl ar vugale war an dachenn, da c'houde, rikl ar "
-#~ "madigoù da bep hini. Diwall mat."
+#~ "madigoù da bep  hini. Diwall mat."
 
 #~ msgctxt "Data|"
 #~ msgid ""
@@ -27852,16 +27723,17 @@ msgstr "Kregiñ"
 #~ "In the <b>level editor</b> you can create your own levels. Choose one of "
 #~ "the editing tools on the left side to modify the map cells of the "
 #~ "currently active level in the editor:\n"
-#~ " Cross: Clear a map cell completely\n"
-#~ " Horizontal Wall: Set/remove a horizontal wall on the lower edge of a "
+#~ "    Cross: Clear a map cell completely\n"
+#~ "    Horizontal Wall: Set/remove a horizontal wall on the lower edge of a "
 #~ "cell\n"
-#~ " Vertical Wall: Set/remove a vertical wall on the right edge of a cell\n"
-#~ " Hole: Set/remove a hole on a cell\n"
-#~ " Ball: Set the starting position of the ball\n"
-#~ " Door: Set the door position\n"
-#~ " Contact: Set/remove a contact button. With the spin-box you can adjust "
-#~ "the value of the contact button. It is not possible to set a value more "
-#~ "than once on a map.\n"
+#~ "    Vertical Wall: Set/remove a vertical wall on the right edge of a "
+#~ "cell\n"
+#~ "    Hole: Set/remove a hole on a cell\n"
+#~ "    Ball: Set the starting position of the ball\n"
+#~ "    Door: Set the door position\n"
+#~ "    Contact: Set/remove a contact button. With the spin-box you can "
+#~ "adjust the value of the contact button. It is not possible to set a value "
+#~ "more than once on a map.\n"
 #~ "All tools (except the clear-tool) toggle their respective target on the "
 #~ "clicked cell: An item can be placed by clicking on an empty cell, and by "
 #~ "clicking again on the same cell with the same tool, you can remove it "
@@ -27891,13 +27763,13 @@ msgstr "Kregiñ"
 #~ "Dre <b>embanner al liveoù</b> e vez krouet da liveoù dit-te. Dibab unan "
 #~ "eus an ostilhoù embann war an tu kleiz a-benn cheñch kelligoù ar gartenn "
 #~ "eus live o treiñ en embanner :\n"
-#~ "  Kroaz : skarzhañ kellig ar gartenn penn da benn\n"
-#~ "  Moger a-blaen : Lakaat/lemel ur voger a-blaen war riblenn izelañ ur "
+#~ "     Kroaz : skarzhañ kellig ar gartenn penn da benn\n"
+#~ "     Moger a-blaen : Lakaat/lemel ur voger a-blaen war riblenn izelañ ur "
 #~ "gellig\n"
-#~ "  Moger a-blom : Lakaat/lemel ur voger war riblenn dehoù ur gellig\n"
-#~ "  Mell : Krouiñ lec'hiadur deraouiñ ar vell\n"
-#~ "  Dor : Krouiñ lec'hiadur an nor\n"
-#~ "  Niveroù-stok : Lakaat/lemel ur bouton Niver-stok. Gant ar voest gant "
+#~ "     Moger a-blom : Lakaat/lemel ur voger war riblenn dehoù ur gellig\n"
+#~ "     Mell : Krouiñ lec'hiadur deraouiñ ar vell\n"
+#~ "     Dor : Krouiñ lec'hiadur an nor\n"
+#~ "     Niveroù-stok : Lakaat/lemel ur bouton Niver-stok. Gant ar voest gant "
 #~ "biroù e vez dibabet urzh ar bouton Niver-stok. Pep niver n'hall ket bezañ "
 #~ "dibabet nemet ur wech hepken. \n"
 #~ "Pep ostilh dibabet (war-bouez an ostilh skarzhañ) a dalv en ur glikañ war "
@@ -28407,7 +28279,7 @@ msgstr "Kregiñ"
 #~ "vez dizoloet nemetken da bep taol. Ret e vo dit derc'hel soñj e plas ar "
 #~ "c'hartoù evit o c'havout div ha div. Ober a rez labour an arouez PAR DA "
 #~ "(=) hag ezhomm ac'hanout o deus an niveroù evit bezañ kevredet. Pa rez an "
-#~ "dra-se ez a kuit an div gartenn. Ur wech kuit an holl gartoù e vo aet ar "
+#~ "dra-se ez a kuit an div gartenn.  Ur wech kuit an holl gartoù e vo aet ar "
 #~ "maout ganit !"
 
 #~ msgctxt "ActivityInfo|"
@@ -28460,7 +28332,7 @@ msgstr "Kregiñ"
 #~ "vez dizoloet nemetken da bep taol. Ret e vo dit derc'hel soñj e plas ar "
 #~ "c'hartoù evit o c'havout div ha div. Ober a rez labour an arouez PAR DA "
 #~ "(=) hag ezhomm ac'hanout o deus an niveroù evit bezañ kevredet. Pa rez an "
-#~ "dra-se ez a kuit an div gartenn. Ur wech kuit an holl gartoù e vo aet ar "
+#~ "dra-se ez a kuit an div gartenn.  Ur wech kuit an holl gartoù e vo aet ar "
 #~ "maout ganit !"
 
 #~ msgctxt "ActivityInfo|"
@@ -28538,7 +28410,7 @@ msgstr "Kregiñ"
 #~ "gartenn e weli he niver kuzh. Klask ar gartenn all o klokaat ar jedadenn. "
 #~ "Daou fas a vez dizoloet nemetken da bep taol. Ret e vo dit derc'hel soñj "
 #~ "e plas ar c'hartoù evit o c'havout div ha div. Ober a rez labour an "
-#~ "arouez PAR DA (=) hag ezhomm ac'hanout o deus an niveroù evit bezañ "
+#~ "arouez PAR DA (=)  hag ezhomm ac'hanout o deus an niveroù evit bezañ "
 #~ "kevredet. Pa rez an dra-se ez a kuit an div gartenn. Ur wech kuit an holl "
 #~ "gartoù ez eo aet ar maout ganit !"
 
@@ -28610,48 +28482,49 @@ msgstr "Kregiñ"
 #~ "The following icons are displayed:\n"
 #~ "(note that each icon is displayed only if available in the current "
 #~ "activity)\n"
-#~ " Home - Exit an activity, go back to menu (Ctrl+W and escape key)\n"
-#~ " Arrows - Display the current level. Click to select another level\n"
-#~ " Lips - Repeat the question\n"
-#~ " Question Mark - Help\n"
-#~ " Reload - Start the activity from the beginning again\n"
-#~ " Tool - The configuration menu\n"
-#~ " G - About GCompris\n"
-#~ " Quit - Quit GCompris (Ctrl+Q)\n"
+#~ "    Home - Exit an activity, go back to menu (Ctrl+W and escape key)\n"
+#~ "    Arrows - Display the current level. Click to select another level\n"
+#~ "    Lips - Repeat the question\n"
+#~ "    Question Mark - Help\n"
+#~ "    Reload - Start the activity from the beginning again\n"
+#~ "    Tool - The configuration menu\n"
+#~ "    G - About GCompris\n"
+#~ "    Quit - Quit GCompris (Ctrl+Q)\n"
 #~ "The stars show suitable age groups for each game:\n"
-#~ " 1, 2 or 3 simple stars - from 2 to 6 years old\n"
-#~ " 1, 2 or 3 complex stars - 7 years and up\n"
+#~ "    1, 2 or 3 simple stars - from 2 to 6 years old\n"
+#~ "    1, 2 or 3 complex stars - 7 years and up\n"
 #~ "Shortcuts:\n"
-#~ " Ctrl+B Show or Hide the control bar\n"
-#~ " Ctrl+F Toggle full screen\n"
-#~ " Ctrl+M Toggle mute for the background music\n"
-#~ " Ctrl+S Toggle the activity section bar\n"
-#~ " "
+#~ "    Ctrl+B Show or Hide the control bar\n"
+#~ "    Ctrl+F Toggle full screen\n"
+#~ "    Ctrl+M Toggle mute for the background music\n"
+#~ "    Ctrl+S Toggle the activity section bar\n"
+#~ "    "
 #~ msgstr ""
 #~ "Dibab ur skeudennig evit digeriñ un obererezh pe ur roll obererezhioù en "
 #~ "ur rummad.\n"
 #~ "E traoñ ar skramm emañ barrenn reoliñ GCompris. Diskouezet pe guzhet e "
-#~ "vez ar varrenn-mañ en ur stekiñ ouzh hec'h arouez.\n"
+#~ "vez ar varrenn-mañ en ur stekiñ ouzh hec'h arouez .\n"
 #~ "Diskouezet e vez ar skeudennoùigoù-mañ :\n"
 #~ "(Diskouezet e vez ur skeudennig nemet pa dalv evit an obererezh.)\n"
-#~ " Degemer - Kuitaat un obererezh ha distreiñ d'al lañser (Ctrl+W ha bouton "
-#~ "achap)\n"
-#~ " Biroù - Diskouez al live o treiñ. Klikañ warne evit dibab ul live all\n"
-#~ " Genoù - Adlârout ar goulenn\n"
-#~ " Pik goulennata - Skoazell\n"
-#~ " Adkargañ - Loc'hañ an obererezh en-dro adalek ar penn-kentañ\n"
-#~ " Ostilh - Lañser ar c'hefluniañ\n"
-#~ " G - Diwar-benn GCompris\n"
-#~ " Kuitaat - Kuitaat GCompris (Ctrl+Q)\n"
+#~ "    Degemer - Kuitaat un obererezh ha distreiñ d'al lañser (Ctrl+W ha "
+#~ "bouton achap)\n"
+#~ "    Biroù - Diskouez al live o treiñ. Klikañ warne evit dibab ul live "
+#~ "all\n"
+#~ "    Genoù - Adlârout ar goulenn\n"
+#~ "    Pik goulennata - Skoazell\n"
+#~ "    Adkargañ - Loc'hañ an obererezh en-dro adalek ar penn-kentañ\n"
+#~ "    Ostilh - Lañser ar c'hefluniañ\n"
+#~ "    G - Diwar-benn GCompris\n"
+#~ "    Kuitaat - Kuitaat GCompris (Ctrl+Q)\n"
 #~ "Diskouez a ra ar steredennoù ar strollad oad dereat evit pep c'hoari\n"
-#~ " 1, 2 pe 3 steredenn eeun - etre 2 ha 6 vloaz\n"
-#~ " 1, 2 pe 3 steredenn gemplezh - 7 vloaz ha koshoc'h.\n"
+#~ "    1, 2 pe 3 steredenn eeun - etre 2 ha 6 vloaz\n"
+#~ "    1, 2 pe 3 steredenn gemplezh - 7 vloaz ha koshoc'h.\n"
 #~ "Berradennoù :\n"
-#~ " Ctrl+B Diskouez pe guzhat ar varrenn reoliñ\n"
-#~ " Ctrl+F Skrammad a-bezh pe get\n"
-#~ " Ctrl+M Lazhañ ar sonerezh pe get\n"
-#~ " Ctrl+S Diskouez pe guzhat barrenn rummadoù an obererezhioù\n"
-#~ " "
+#~ "    Ctrl+B Diskouez pe guzhat ar varrenn reoliñ\n"
+#~ "    Ctrl+F Skrammad a-bezh pe get\n"
+#~ "    Ctrl+M Lazhañ ar sonerezh pe get\n"
+#~ "    Ctrl+S Diskouez pe guzhat barrenn rummadoù an obererezhioù\n"
+#~ "    "
 
 #~ msgctxt "ConfigurationItem|"
 #~ msgid "You have the full version"
@@ -28796,17 +28669,17 @@ msgstr "Kregiñ"
 #~ msgid ""
 #~ "This activity has several levels, each level adds a new functionality to "
 #~ "the previous level. \n"
-#~ " Level 1: Basic piano keyboard (white keys only) and students can "
+#~ "  Level 1: Basic piano keyboard (white keys only) and students can "
 #~ "experiment with clicking the colored rectangle keys to write music.\n"
-#~ " Level 2: The musical staff switches to bass clef, so pitches are lower "
+#~ "  Level 2: The musical staff switches to bass clef, so pitches are lower "
 #~ "than in previous level.\n"
-#~ " Level 3: Option to choose between treble and bass clef, addition of "
+#~ "  Level 3: Option to choose between treble and bass clef, addition of "
 #~ "black keys (sharp keys).\n"
-#~ " Level 4: Flat notation used for black keys.\n"
-#~ " Level 5: Option to select note duration (whole, half, quarter, eighth "
+#~ "  Level 4: Flat notation used for black keys.\n"
+#~ "  Level 5: Option to select note duration (whole, half, quarter, eighth "
 #~ "notes).\n"
-#~ " Level 6: Addition of rests (whole, half, quarter, eighth rests)\n"
-#~ " Level 7: Load children's melodies from around the world and also save "
+#~ "  Level 6: Addition of rests (whole, half, quarter, eighth rests)\n"
+#~ "  Level 7: Load children's melodies from around the world and also save "
 #~ "your composition.\n"
 #~ "\n"
 #~ "The following keyboard bindings work in this game:\n"
@@ -28816,9 +28689,9 @@ msgstr "Kregiñ"
 #~ "- space bar: play\n"
 #~ "- left/right arrow keys: switch keyboard octave\n"
 #~ "- number keys:\n"
-#~ " - 1 to 8: Corresponding white keys in the order on the displayed "
+#~ "  - 1 to 8: Corresponding white keys in the order on the displayed "
 #~ "octave.\n"
-#~ " - F1 to F5: Corresponding black keys in the order on the displayed "
+#~ "  - F1 to F5: Corresponding black keys in the order on the displayed "
 #~ "octave.\n"
 #~ msgstr ""
 #~ "Meur a live en deus an obererezh-mañ, pep live o tegas ur perzh nevez "
@@ -29024,19 +28897,19 @@ msgstr "Kregiñ"
 #~ "or popes. For example: Queen Elizabeth II. They may be used to write the "
 #~ "year a book or movie was made.\n"
 #~ "\n"
-#~ " The building of the roman numbers is made up by an agglutination of "
+#~ "  The building of the roman numbers is made up by an agglutination of "
 #~ "numbers (the thousands, joined with the hundreds, joined with the tens, "
 #~ "joined with the units → just like the arab decimal system). This "
 #~ "agglutination of numbers is interpreted as the sum of these particular "
 #~ "numbers (again → just like the arab decimal system: you add up thousands"
 #~ "+hundreds+tens+units, and you write the respective figures combined).\n"
 #~ "\n"
-#~ " Examples:\n"
+#~ "  Examples:\n"
 #~ "\n"
-#~ " 2394: we got a sum of 2000 (MM), 300 (CCC), 90 (XC) and 4 units (IV), so "
-#~ "we write this combined: MMCCCXCIV\n"
+#~ "  2394: we got a sum of 2000 (MM), 300 (CCC), 90 (XC) and 4 units (IV), "
+#~ "so we write this combined: MMCCCXCIV\n"
 #~ "\n"
-#~ " MMMCMXLIX: we got first thousands (MMM=3000), then we got hundreds "
+#~ "  MMMCMXLIX: we got first thousands (MMM=3000), then we got hundreds "
 #~ "(CM=1000–100=900), then we got tens (XL=50–10=40), and at last we got "
 #~ "units (IX=10–1=9), so we write this in the decimal system: 3949."
 #~ msgstr ""
@@ -29055,10 +28928,10 @@ msgstr "Kregiñ"
 #~ "\n"
 #~ "Skouerioù :\n"
 #~ "\n"
-#~ " 2394 : sammet e vez 2000 (MM), 300 (CCC), 90 (XC) ha 4 unanenn (IV), "
+#~ "  2394 : sammet e vez 2000 (MM), 300 (CCC), 90 (XC) ha 4 unanenn (IV), "
 #~ "neuze e skriver pep tra war an dro : MMCCCXCIV\n"
 #~ "\n"
-#~ " MMMCMXLIX : aze ez eus 3 miliad (MMM=3000), goude se ar c'hantadoù "
+#~ "  MMMCMXLIX : aze ez eus 3 miliad (MMM=3000), goude se ar c'hantadoù "
 #~ "(CM=1000–100=900), war lerc'h ez eus an degadoù (XL=50–10=40), hag erfin "
 #~ "ez eus an unanennoù (IX=10–1=9), ar pezh a skriver neuze evel-hen er "
 #~ "reizhiad niveriñ arab : 3949."
@@ -29375,7 +29248,7 @@ msgstr "Kregiñ"
 #~ "the hat. Click on the bottom area to answer."
 #~ msgstr ""
 #~ "An hudour a lavar pet steredenn ez eus dindan e dog. Klik war tog an "
-#~ "hudour evit e zigeriñ. Steredennoù a ya kuit. Pet a chom dindan an tog ? "
+#~ "hudour evit e zigeriñ.  Steredennoù a ya kuit. Pet a chom dindan an tog ? "
 #~ "Klik war ar maez en traoñ evit reiñ da respont."
 
 #, fuzzy
@@ -29772,7 +29645,7 @@ msgstr "Kregiñ"
 #~ "in-line addition."
 #~ msgstr ""
 #~ "Gant un amzervezh bevennet, kav sammad an daou niver. Deraouiñ gant ar "
-#~ "sammadur eeun war ul linenn."
+#~ "sammadur eeun  war ul linenn."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

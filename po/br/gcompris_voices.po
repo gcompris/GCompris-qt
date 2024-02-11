@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 01:35+0000\n"
-"PO-Revision-Date: 2024-01-06 17:11+0100\n"
+"PO-Revision-Date: 2024-02-10 14:25+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Kav an niveroù a vank."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -191,7 +191,7 @@ msgid ""
 "When you have achieved it, press OK"
 msgstr ""
 "Lak war enaou ar c'hlogorennoù-tredan reizh evit sevel stumm daouredel un "
-"niver dekredel. Pa 'z eo echu ganit, klik war OK."
+"niver degel. Pa 'z eo echu ganit, klik war OK."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
@@ -213,9 +213,10 @@ msgid ""
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Dibab un niver ha klik war e gombod. Ur wech hepken e rank bezañ pep niver e "
-"pep renk, bann ha rann. An niveroù er c'hombodoù ur gael a rank reiñ an "
-"disoc'h mat pa vezont implijet gant an arouez jediñ kinniget."
+"Dibab un niver ha klik war al lec'h reizh evitañ. Ur wech nemetken e rank "
+"bezañ pep niver e pep renk, bann ha rann, ma vez dioute. An niveroù er "
+"c'haelioù a rank reiñ an disoc'h kinniget pa vezont  liammet gant an arouez "
+"jediñ kinniget."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -485,7 +486,7 @@ msgstr "Kav an niverer hag an anver reizh evit ar gevrenn diskouezet."
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Adsav ha klok ar frizenn skouer."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -560,13 +561,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Kav an talvoud a glot gant al lec'h kinniget war al linenn dereziet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Plas an talvoud kinniget war al linenn dereziet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -574,7 +575,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Ro ar rummadoù yezhadurel reizh evit ar gerioù a glot gante."
+msgstr "Ro ar rummadoù yezhadurel d'ar gerioù a glot gante."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -596,7 +597,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Implij ar pevar niver gant an arouezioù jediñ evit kavout 24"
+msgstr "Implij ar pevar niver gant an arouezioù jediñ kinniget evit kaout 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -693,8 +694,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
-"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet-se "
-"eus ar varrenn betek an dachenn c'houllo evit kaout an niver degel ret."
+"Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
+"ar varrenn betek an dachenn c'houllo betek kaout an niver degel ret."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
@@ -726,7 +727,7 @@ msgid ""
 "empty area to represent the requested quantity."
 msgstr ""
 "Rikl ar bir evit dibab ur rann eus ar varrenn, ha rikl ar rann dibabet eus "
-"ar varrenn betek an dachenn c'houllo evit kaout ar c'hementad goulennet."
+"ar varrenn betek an dachenn c'houllo betek kaout ar c'hementad goulennet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
@@ -734,8 +735,8 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
-"Diblas pep loen betek e lec'h-bevañ en ur implijout ur c'hlik-kleiz pe ur "
-"c'hlik-dehou gant al logodenn."
+"Diblas al loened betek o zi en ur implijout ur c'hlik-kleiz pe  ur c'hlik-"
+"dehou gant al logodenn."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -940,7 +941,7 @@ msgstr "Klik war an arc'hant evit paeañ."
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Desk ober gant kod etrevroadel Morse."
+msgstr "Desk ober gant kod etrevroadel Morse"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1012,7 +1013,7 @@ msgstr "Lak an niveroù en urzh mat."
 #: activities/ordering_sentences/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr "Lak ar gerioù roet en urzh a-benn sevel pep a frazenn reizh."
+msgstr "Lak ar gerioù roet en urzh a-benn sevel frazennoù reizh."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
@@ -1020,7 +1021,7 @@ msgstr "Lak ar gerioù roet en urzh a-benn sevel pep a frazenn reizh."
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr "Pak 25 greunenn da nebeutañ evit gounit ar c'hoari."
+msgstr "Pak 25 greunenn da nebeutañ evit gounit ar c'hoari"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
@@ -1070,7 +1071,7 @@ msgid ""
 "the staff."
 msgstr ""
 "Desk sonaozañ sonerezh piano gant an eizhvedelloù hag an ostilhoù diskouezet "
-"a-us d'ar skeulenn."
+"a-us  d'ar skeulenn."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
 #: activities/planegame/ActivityInfo.qml:18
@@ -1098,7 +1099,7 @@ msgstr "Klik war an taboulin evit adsevel al lusk."
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
 msgid "Find the correct position"
-msgstr "Kav al lec'hiadur mat."
+msgstr "Kav al lec'hiadur mat"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
 #: activities/programmingMaze/ActivityInfo.qml:19
@@ -1292,7 +1293,7 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
-"Dielfenn ar jedadennoù a-benn kaout ur c'houblad niveroù par da zek. Dibab "
+"Gra en-dro ar jedadennoù a-benn kaout ur c'houblad niveroù par da zek. Dibab "
 "un niver er roll, choaz goude ul lec'h goullo er jedadenn evit kas an niver "
 "dibabet aze."
 
@@ -1333,11 +1334,11 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "Bizskriv ar gerioù gant da glavier a-raok ma vo tizhet al leur gante."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "C'hoari damez a-enep an urzhiataer"
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr "Lak amañ en displegadenn an testenn evit mouezh an digoradur."
 
 #~ msgid ""
 #~ "Change the planets' gravitational force by moving the sliders up and "
