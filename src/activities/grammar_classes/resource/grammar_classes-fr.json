@@ -292,7 +292,7 @@
       , "answer":   "vrb   adv  ppt  prn"
       },
       { "sentence": "Vous partirez vite demain matin."
-      , "answer":   "prn  vrb      adv  nom    nom"
+      , "answer":   "prn  vrb      adv  nou    nou"
       },
       { "sentence": "J'(ai fait) rapidement un gateau."
       , "answer":   "prn vrb     adv         dtm nou"
