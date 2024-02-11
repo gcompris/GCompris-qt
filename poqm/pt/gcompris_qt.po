@@ -799,7 +799,7 @@ msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
 msgstr "Descobrir ambos os números."
 
-#. intro: "Find the missing numbers." Help goal
+#. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 #, fuzzy
 #| msgctxt "ActivityInfo|"
