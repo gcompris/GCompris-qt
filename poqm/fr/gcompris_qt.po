@@ -942,12 +942,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Apprendre la table de multiplication de 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Tables de multiplication de 1 à 10."
+msgstr "S'entraîner aux tables de multiplication de 1 à 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1037,12 +1034,9 @@ msgid "Learn division table of 10."
 msgstr "Apprendre la table de division de 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Tables de multiplication de 1 à 10."
+msgstr "S'entraîner aux tables de division de 1 à 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1135,28 +1129,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Apprendre la table de soustraction de 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Soustrais des nombres décimaux jusqu'à 1."
+msgstr "Soustractions avec des nombres jusqu'à 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Soustrais des nombres décimaux jusqu'à 1."
+msgstr "Soustractions avec des nombres jusqu'à 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Soustrais des nombres décimaux jusqu'à 1."
+msgstr "Soustractions avec des nombres jusqu'à 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3226,13 +3211,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Résous le calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3241,6 +3226,8 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Entraîne tes capacités de raisonnement logique : positionnement spatial et "
+"déduction en utilisant le calcul."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -3261,6 +3248,14 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Sélectionne un nombre dans la liste et clique sur la position où tu veux "
+"l'ajouter sur la grille. Chaque nombre ne doit apparaître qu'une seule fois "
+"sur une même ligne ou colonne. Les cages sont des groupes de cellules dans "
+"lesquelles une information est donnée pour aider au remplissage. Les cages "
+"composées de plus d'une case ont un résultat et un opérateur : il faut "
+"atteindre le résultat en combinant tous les nombres de la cage avec "
+"l'opérateur donné. Les cages ne contenant qu'une seule case fournissent le "
+"nombre à entrer."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -14374,7 +14369,7 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr "Valeurs sur la ligne graduée"
+msgstr "Repérage sur ligne graduée"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
@@ -14386,7 +14381,7 @@ msgstr "Lis les valeurs sur la ligne graduée."
 #: activities/graduated_line_read/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Apprends à lire une ligne graduée."
+msgstr "Apprends à te repérer sur une ligne graduée."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
@@ -14402,6 +14397,8 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"Saisis sur le clavier numérique ou sur ton clavier le nombre correspondant à "
+"la valeur recherchée sur la ligne."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14427,7 +14424,7 @@ msgstr "Espace ou Entrée : valider ta réponse"
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(bornes variables)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
 msgctxt "GraduatedLineRead|"
@@ -14483,22 +14480,19 @@ msgstr "Nombre à trouver entre 0 et 1 000 000."
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Trouve le nombre sur une ligne graduée"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Place les valeurs sur la ligne graduée."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Apprends à utiliser un calendrier."
+msgstr "Apprends à placer des nombres sur une ligne graduée."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14507,19 +14501,18 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"Utilise les flèches pour déplacer le curseur à la position correspondante à "
+"la valeur sur la ligne graduée."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Flèches gauche et droite : déplacer le vaisseau"
+msgstr "Flèches gauche et droite : déplacer le curseur"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Place le nombre donné sur la ligne graduée."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
 msgctxt "Data|"
@@ -14577,20 +14570,20 @@ msgstr "Analyse grammaticale"
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Identifier les classes grammaticales dans les phrases."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Apprends à identifier les classes grammaticales."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Attribue les classes grammaticales demandées aux mots correspondants."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14598,26 +14591,27 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Sélectionne une classe grammaticale dans la liste, puis sélectionne la case "
+"sous un mot pour lui attribuer cette classe."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "Laisse la case vide si aucune classe ne correspond."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
 msgstr ""
+"Flèches haut et bas ou tabulation : bascule entre les classes et les mots"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Flèches gauche et droite : naviguer dans les boutons de signes"
+msgstr ""
+"Flèches gauche et droite : choisis l'élément dans les classes ou les mots"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14626,7 +14620,7 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
-"Espace : assigner la classe sélectionnée au mot en cours et sélectionner le "
+"Espace : attribuer la classe sélectionnée au mot en cours et sélectionner le "
 "mot suivant"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
@@ -14659,13 +14653,12 @@ msgid ""
 "and assign it the class."
 msgstr ""
 "Choisis une classe grammaticale dans la liste, puis choisis une case sous un "
-"mot et assigne lui la classe."
+"mot et attribue lui la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
-"Laisse la case blanche si aucune classe grammaticale ne correspond pas."
+msgstr "Laisse la case vide si aucune classe grammaticale ne correspond pas."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
@@ -14684,12 +14677,12 @@ msgid ""
 "and assign it the class."
 msgstr ""
 "Choisis la classe grammaticale dans la liste, puis choisis une case sous un "
-"mot et assigne lui la classe."
+"mot et attribue lui la classe."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Laisse la case vide si la classe ne correspond pas."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
@@ -14706,7 +14699,7 @@ msgstr "Classes grammaticales"
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "Attribue la classe grammaticale aux mots correspondants."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14714,11 +14707,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Choisis la classe grammaticale dans la liste, puis choisis une case sous un "
+"mot et attribue lui la classe."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Laisse la case vide si la classe ne correspond pas."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14881,90 +14876,77 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Trouve 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Calcule pour trouver 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
 msgstr "Entraîne-toi à calculer avec quatre opérateurs."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
 msgstr ""
-"Entraînement aux opérations d'addition, de soustraction, de multiplication "
-"et de division."
+"Être capable de calculer en utilisant les opérations d'addition, de "
+"soustraction, de multiplication et de division."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Combine les 4 nombres avec les opérations données pour trouver 24."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Flèches : se déplacer dans la zone"
+msgstr "Flèches : se déplacer dans les nombres et les opérateurs"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Espace ou Entrée : sélectionner ou placer un élément"
+msgstr ""
+"Espace ou Entrée : sélectionner ou désélectionner le nombre ou l'opérateur "
+"actuel"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Touche opérateur (+, -, *, /) : sélectionner l'opérateur"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Retour arrière ou suppression : annuler"
+msgstr "Retour arrière ou suppression : annuler la dernière opération"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Tabulation : bascule entre les nombres et les opérateurs"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Utilise les 4 nombres avec les opérateurs pour trouver 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "Pouvant être résolu avec + et -."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "Pouvant être résolu avec +, - et ×."
 
 #: activities/guess24/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -14974,7 +14956,7 @@ msgstr "Multiplication nécessaire."
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr ""
+msgstr "Pouvant être résolu avec tous les opérateurs."
 
 #: activities/guess24/resource/5/Data.qml:13
 msgctxt "Data|"
@@ -20069,7 +20051,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Mettre en évidence le prochain point"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -26399,18 +26381,14 @@ msgid "Many bug fixes"
 msgstr "Plein de corrections"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"Une nouvelle option en ligne de commande (--difficulty {value|min-max}) pour "
-"démarrer GCompris à la difficulté entrée"
+"Nouvelle option en ligne de commande pour démarrer une activité à un niveau "
+"donnée (--start-level niveau, doit être utilisé avec l'option --launch "
+"activité)"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -27110,13 +27088,13 @@ msgstr "Le calcul de la somme de contrôle du fichier a échoué : %1 "
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Pas de voix disponibles pour %1."
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Pas de données disponibles pour %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -27297,6 +27275,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Choisit à quel niveau démarrer l'activité. Utilisé seulement quand l'option "
+"--launch est active."
 
 #: core/main.qml:269
 msgctxt "main|"
@@ -27374,16 +27354,18 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Certaines activités ont des nouveaux jeux de données. Souhaites-tu "
+"réinitialiser leurs sélections ?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Oui"
 
 #: core/main.qml:390
 msgctxt "main|"
 msgid "Cancel"
-msgstr "Annuler"
+msgstr "Non"
 
 #: core/ReadyButton.qml:67
 msgctxt "ReadyButton|"
