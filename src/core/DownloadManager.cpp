@@ -203,6 +203,8 @@ QString DownloadManager::getLocalSubFolderForData(const GCompris::ResourceType &
     case GCompris::ResourceType::FULL:
         return localFolderForData;
         break;
+    default:
+        return QString();
     }
     return QString();
 }
@@ -232,6 +234,8 @@ QString DownloadManager::getResourcePath(/*const GCompris::ResourceType &rt*/ in
             return getLocalSubFolderForData(resource) + resourceTypeToLocalFileName["full-" COMPRESSED_AUDIO];
         }
         break;
+    default:
+        return QString();
     }
     return QString();
 }
