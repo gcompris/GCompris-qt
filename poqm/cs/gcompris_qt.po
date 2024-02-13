@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-08 23:05+0100\n"
+"PO-Revision-Date: 2024-02-12 21:50+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -4508,7 +4508,7 @@ msgstr "Uspořádej příběh přetažením obrázků."
 #: activities/chronos/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Sort the pictures into the order that tells the story."
-msgstr "Seřadit obrázky do pořadí, které vypráví příběh."
+msgstr "Seřaď obrázky do pořadí, které vypráví příběh."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -18825,7 +18825,7 @@ msgstr ""
 #: activities/money_back/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change"
-msgstr ""
+msgstr "Vrať Tuxovi nazpět"
 
 #. Help title
 #: activities/money_back/ActivityInfo.qml:17
@@ -18858,13 +18858,13 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
-msgstr ""
+msgstr "Vrať Tuxovi nazpět včetně drobných"
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Money with cents"
-msgstr ""
+msgstr "Peníze s drobnými"
 
 #. Help title
 #: activities/money_cents/ActivityInfo.qml:17
@@ -19084,7 +19084,7 @@ msgstr ""
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (against Tux)"
-msgstr ""
+msgstr "Hra mlýn (proti Tuxovi)"
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:19
@@ -19180,7 +19180,7 @@ msgstr "Zkusit znovu"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
-msgstr ""
+msgstr "Hra mlýn (s kamarádem)"
 
 #. Help goal
 #: activities/nine_men_morris_2players/ActivityInfo.qml:19
@@ -19202,7 +19202,7 @@ msgstr ""
 #: activities/note_names/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Name that note"
-msgstr ""
+msgstr "Pojmenuj notu"
 
 #. Help title
 #: activities/note_names/ActivityInfo.qml:20
@@ -19541,7 +19541,7 @@ msgstr ""
 #: activities/ordering_numbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr "Seřadit čísla"
+msgstr "Seřaď čísla"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
@@ -19646,7 +19646,7 @@ msgstr "Řazení sestupně, 8 náhodných čísel mezi 2 a 30."
 #: activities/ordering_sentences/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering sentences"
-msgstr "Seřadit větu"
+msgstr "Seřaď větu"
 
 #. Help title
 #: activities/ordering_sentences/ActivityInfo.qml:22
@@ -19987,7 +19987,7 @@ msgstr ""
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr ""
+msgstr "Relativní dekódování cesty"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:22
 #: activities/path_encoding_relative/ActivityInfo.qml:22
@@ -20046,7 +20046,7 @@ msgstr "Chyby: %1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr ""
+msgstr "Relativní kódování cesty"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20792,7 +20792,7 @@ msgstr "B♭%1"
 #: activities/planegame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
-msgstr "Čísla v pořadí"
+msgstr "Pořadí čísel"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -21137,11 +21137,12 @@ msgctxt "Data|"
 msgid "Select the image where the child is at the left of the box."
 msgstr "Vyber obrázek, kde je dítě vlevo od krabice."
 
+# 51384 AttribValues/label
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Programming maze"
-msgstr ""
+msgstr "Programovací bludiště"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -21921,7 +21922,7 @@ msgstr "Hodnota arabského čísla: %1"
 #: activities/scalesboard/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance the scales properly"
-msgstr "Správně vyrovnat váhy"
+msgstr "Vyvaž správně váhu"
 
 #. Help title
 #: activities/scalesboard/ActivityInfo.qml:17
@@ -21933,7 +21934,7 @@ msgstr "Přesuň závaží tak, aby byla váha vyvážená."
 #: activities/scalesboard/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality."
-msgstr "Výpočet v duchu, rovnost čísel."
+msgstr "Výpočet zpaměti, rovnost čísel."
 
 #. Help manual
 #: activities/scalesboard/ActivityInfo.qml:23
@@ -21953,7 +21954,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Balance up to %1."
-msgstr "Vyvážit až do %1."
+msgstr "Vyvažování až do %1."
 
 #: activities/scalesboard/resource/1/Data.qml:20
 #: activities/scalesboard/resource/2/Data.qml:20
@@ -21993,7 +21994,7 @@ msgstr "Vyvážit až do %1."
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:41
 msgctxt "Data|"
 msgid "Drop weights on the left side to balance the scales."
-msgstr "Vyvaž váhu pokládáním závaží na levou stranu."
+msgstr "Vyvaž váhu přesouváním závaží na levou stranu váhy."
 
 #: activities/scalesboard/resource/1/Data.qml:26
 #: activities/scalesboard/resource/2/Data.qml:32
@@ -22090,7 +22091,7 @@ msgstr "Pozor, teď můžeš závaží dávat na obě strany váhy."
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:81
 msgctxt "Data|"
 msgid "Now you have to guess the weight of the gift."
-msgstr "Nyní musíš odhadnout hmotnost dárku."
+msgstr "Nyní odhaduj hmotnost dárku."
 
 #: activities/scalesboard/resource/1/Data.qml:33
 #: activities/scalesboard/resource/2/Data.qml:45
@@ -22118,23 +22119,23 @@ msgstr "Vlož hmotnost dárku: %1"
 #: activities/scalesboard/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 20."
-msgstr "Vyvážit až do 20."
+msgstr "Vyvažování až do 20."
 
 #: activities/scalesboard/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 50."
-msgstr "Vyvážit až do 50."
+msgstr "Vyvažování až do 50."
 
 #: activities/scalesboard/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 100."
-msgstr "Vyvážit až do 100."
+msgstr "Vyvažování až do 100."
 
 #. Activity title
 #: activities/scalesboard_weight/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the International System of Units"
-msgstr "Vyvážit váhu v metrických jednotkách"
+msgstr "Vyvaž váhu v metrických jednotkách"
 
 #. Help title
 #: activities/scalesboard_weight/ActivityInfo.qml:17
@@ -22149,7 +22150,7 @@ msgstr "Přesouvej závaží na váhu a spočítej hmotnost."
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Mental calculation, arithmetic equality, unit conversion."
-msgstr "Výpočet z paměti, rovnost čísel, převod jednotek."
+msgstr "Výpočet zpaměti, rovnost čísel, převod jednotek."
 
 #. Help manual
 #: activities/scalesboard_weight/ActivityInfo.qml:23
@@ -22160,13 +22161,14 @@ msgid ""
 "and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g)."
 msgstr ""
 "Pro vyvážení váhy přesouvej závaží na levou stranu (na vyšších úrovních i na "
-"stranu pravou). Závaží můžeš umístit v jakémkoliv pořadí. Pozor na jednotky "
-"hmotnosti, mysli na to, že kilogram (kg) je 1000 gramů (g)."
+"stranu pravou). Závaží můžeš umístit v jakémkoliv pořadí. Dobře si všímej "
+"váhy a jednotek hmotnosti na jednotlivých závažích. Pamatuj, že kilogram "
+"(kg) je 1000 gramů (g)."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 5 grams."
-msgstr "Vyvážit do 5 gramů."
+msgstr "Vyvažování až do 5 gramů."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:18
 #: activities/scalesboard_weight/resource/2/Data.qml:18
@@ -22186,18 +22188,18 @@ msgstr "Písmeno \"g\" za číslem znamená gram."
 #: activities/scalesboard_weight/resource/1/Data.qml:32
 msgctxt "Data|"
 msgid "Take care, you can drop weights on both sides of the scale."
-msgstr "Věnuj pozornost tomu, že závaží můžeš pokládat na obě strany váhy."
+msgstr "Pozor, teď můžeš závaží dávat na obě strany váhy."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:39
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift in grams: %1"
-msgstr "Napiš hmotnost dárku v gramech: %1"
+msgstr "Vlož hmotnost dárku v gramech: %1"
 
 #: activities/scalesboard_weight/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 grams."
-msgstr "Vyvážit do 10 gramů."
+msgstr "Vyvažování do 10 gramů."
 
 #: activities/scalesboard_weight/resource/2/Data.qml:26
 #: activities/scalesboard_weight/resource/3/Data.qml:26
@@ -22207,8 +22209,8 @@ msgid ""
 "The \"g\" symbol at the end of a number means gram. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"The \"g\" symbol at the end of a number means gram. \n"
-" Polož závaží na levou stranu pro vyvážení váhy."
+"Symbol \"g\" za číslem označuje znamená gram.\n"
+" Pro vyvážení váhy přesouvej závaží na levou stranu váhy."
 
 #: activities/scalesboard_weight/resource/2/Data.qml:45
 #: activities/scalesboard_weight/resource/2/Data.qml:52
@@ -22229,12 +22231,12 @@ msgstr "Vlož hmotnost dárku v gramech: %1"
 #: activities/scalesboard_weight/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 20 grams."
-msgstr "Vyvážit do 20 gramů."
+msgstr "Vyvažování do 20 gramů."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 kilograms."
-msgstr "Vyvážit až do 10 kilogramů."
+msgstr "Vyvažování až do 10 kilogramů."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:18
 #: activities/scalesboard_weight/resource/6/Data.qml:23
@@ -22255,8 +22257,9 @@ msgid ""
 "perception of how \"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Kilogram je jednotka hmotnosti, která znázorňuje jak je předmět \"těžký\". \n"
-" Vyvaž váhu pokládáním závaží na levou stranu."
+"Kilogram je jednotka hmotnosti, vlastnosti, která odpovídá běžnému vnímání "
+"toho, jak je nějaký předmět \"těžký\".\n"
+" Vyvaž váhu přesouváním závaží na levou stranu váhy."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:80
 #: activities/scalesboard_weight/resource/4/Data.qml:87
@@ -22272,12 +22275,12 @@ msgstr "Vlož hmotnost dárku v kilogramech: %1"
 #: activities/scalesboard_weight/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 100 grams."
-msgstr "Vyvážit do 100 gramů."
+msgstr "Vyvažování do 100 gramů."
 
 #: activities/scalesboard_weight/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 kilograms including grams."
-msgstr "Vyvážit až do 10 kilogramů (včetně gramů)."
+msgstr "Vyvažování až do 10 kilogramů (včetně gramů)."
 
 #: activities/scalesboard_weight/resource/6/Data.qml:32
 msgctxt "Data|"
@@ -22287,9 +22290,10 @@ msgid ""
 "\"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Jednotka \"kg\" na konci čísla znamená kilogram. Kilogram je jednotka "
-"hmotnosti, která znázorňuje jak je předmět \"těžký\". \n"
-"Vyvaž váhu pokládáním závaží na levou stranu."
+"Symbol \"kg\" za číslem znamená kilogram. Kilogram je jednotka hmotnosti,"
+"vlastnosti, která odpovídá běžnému vnímání toho, jak je nějaký předmět "
+"\"těžký\".\n"
+" Vyvaž váhu přesouváním závaží na levou stranu váhy."
 
 #: activities/scalesboard_weight/resource/6/Data.qml:44
 #: activities/scalesboard_weight/resource/6/Data.qml:50
@@ -22298,14 +22302,14 @@ msgid ""
 "Remember, one kilogram (\"kg\") equals 1000 grams (\"g\"). \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Nezapomeň, že jeden kilogram (\"kg\") znamená 1000 gramů (\"g\"). \n"
-" Vyvaž váhu pokládáním závaží na levou stranu."
+"Pamatuj, že jeden kilogram (\"kg\") znamená 1000 gramů (\"g\"). \n"
+" Vyvaž váhu přesouváním závaží na levou stranu váhy."
 
 #. Activity title
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the imperial system of units"
-msgstr "Vyvážit váhu v Imperiálních jednotkách"
+msgstr "Vyvaž váhu v Imperiálních jednotkách"
 
 #. Help manual
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:23
@@ -22315,11 +22319,15 @@ msgid ""
 "higher levels). They can be arranged in any order. Take care of the weight "
 "and the unit of the masses, remember that a pound (lb) is 16 ounce (oz)."
 msgstr ""
+"Pro vyvážení váhy přesouvej závaží na levou stranu (na vyšších úrovních i na "
+"stranu pravou). Závaží můžeš umístit v jakémkoliv pořadí. Dobře si všímej "
+"váhy a jednotek uvedených na závaží. Také je dobré vědět, že jedna libra "
+"(lb) odpovídá 16 uncím (oz)."
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 5 ounces."
-msgstr ""
+msgstr "Vyvažování až do 5 uncí."
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:18
@@ -22340,6 +22348,8 @@ msgid ""
 "sixteen ounces. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
+"Symbol \"oz\" za číslem označuje unci. Jedna libra (lb) odpovídá 16 uncím.\n"
+" Pro vyvážení váhy přesouvej závaží na levou misku váhy."
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:39
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:45
@@ -22361,17 +22371,17 @@ msgstr "Vlož hmotnost dárku v uncích: %1"
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 ounces."
-msgstr ""
+msgstr "Vyvažování až do 10 uncí."
 
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 20 ounces."
-msgstr ""
+msgstr "Vyvažování až do 20 uncí."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 pounds."
-msgstr ""
+msgstr "Vyvažování až do 10 liber."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:23
@@ -22388,6 +22398,10 @@ msgid ""
 "mass, a property which corresponds to the common perception of how \"heavy\" "
 "an object is. This unit is used in the USA."
 msgstr ""
+"Symbol \"lb\" za číslem označuje libru. Libra je jednotka hmotnosti, "
+"vlastnosti, která odpovídá běžnému vnímání toho, jak je nějaký předmět "
+"\"těžký\". Tato jednotka hmotnosti se používá ve Spojených státech "
+"amerických."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:80
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:87
@@ -22398,12 +22412,12 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift in pound: %1"
-msgstr ""
+msgstr "Vlož hmotnost dárku v librách: %1"
 
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 100 ounces."
-msgstr ""
+msgstr "Vyvažování až do 100 uncí."
 
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:26
 msgctxt "Data|"
@@ -22411,11 +22425,13 @@ msgid ""
 "The \"oz\" symbol at the end of a number means ounce. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
+"Symbol \"oz\" za číslem označuje znamená unci.\n"
+" Pro vyvážení váhy přesouvej závaží na levou misku váhy."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 pounds including ounces."
-msgstr ""
+msgstr "Vyvažování až do 10 liber včetně uncí."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:48
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:54
@@ -22424,6 +22440,8 @@ msgid ""
 "Remember, one pound (\"lb\") equals sixteen ounces (\"oz\"). \n"
 " Drop the weights on the left side of the scales to balance it."
 msgstr ""
+"Pamatuj, že jedna libra (lb) odpovídá 16 uncím (oz).\n"
+" Pro vyvážení váhy přesouvej závaží na levou misku váhy."
 
 #: activities/share/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
@@ -22948,7 +22966,7 @@ msgstr "Zlepši svoji kreativitu."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
-msgstr ""
+msgstr "Vyber barvu a pomocí barevných čtverečků vytvoř kresby, jaké chceš."
 
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22984,100 +23002,100 @@ msgstr "Schopnost počítat."
 #: activities/smallnumbers/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling dice."
-msgstr ""
+msgstr "Napiš počet bodů, které vidíš na každé z padajících kostek."
 
 #: activities/smallnumbers/resource/1/Data.qml:14
 #: activities/smallnumbers2/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 3."
-msgstr ""
+msgstr "Čísla do 3."
 
 #: activities/smallnumbers/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, 1 nebo 2."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 3."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 3."
 
 #: activities/smallnumbers/resource/2/Data.qml:14
 #: activities/smallnumbers2/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 4."
-msgstr ""
+msgstr "Čísla do 4."
 
 #: activities/smallnumbers/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 4."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 4."
 
 #: activities/smallnumbers/resource/3/Data.qml:14
 #: activities/smallnumbers2/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 5."
-msgstr ""
+msgstr "Čísla do 5."
 
 #: activities/smallnumbers/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 5."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 5."
 
 #: activities/smallnumbers/resource/4/Data.qml:14
 #: activities/smallnumbers2/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 6."
-msgstr ""
+msgstr "Čísla do 6."
 
 #: activities/smallnumbers/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 6."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 6."
 
 #: activities/smallnumbers/resource/5/Data.qml:14
 #: activities/smallnumbers2/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 7."
-msgstr ""
+msgstr "Čísla do 7."
 
 #: activities/smallnumbers/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 7."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 7."
 
 #: activities/smallnumbers/resource/6/Data.qml:14
 #: activities/smallnumbers2/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 8."
-msgstr ""
+msgstr "Čísla do 8."
 
 #: activities/smallnumbers/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 8."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 8."
 
 #: activities/smallnumbers/resource/7/Data.qml:14
 #: activities/smallnumbers2/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 9."
-msgstr ""
+msgstr "Čísla do 9."
 
 #: activities/smallnumbers/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 9."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 1 do 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:13
 #: activities/smallnumbers2/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Numbers from 0 to 9."
-msgstr ""
+msgstr "Čísla od 0 do 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the dice, from 0 to 9."
-msgstr ""
+msgstr "Napiš číslo zobrazené na kostce, od 0 do 9."
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
@@ -23089,7 +23107,7 @@ msgstr "Čísla na dominech"
 #: activities/smallnumbers2/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number on the domino before it reaches the ground."
-msgstr ""
+msgstr "Sečti počet bodů na dominu dříve, než dopadne na zem."
 
 #. Help goal
 #: activities/smallnumbers2/ActivityInfo.qml:20
@@ -23101,52 +23119,52 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number you see on each falling domino."
-msgstr ""
+msgstr "Napiš počet bodů, které vidíš na každém z padajících domin."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, 1 nebo 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 3."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 4."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 5."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 6."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 7."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 8."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 1 do 9."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr ""
+msgstr "Napiš počet zobrazených bodů na dominu, od 0 do 9."
 
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
@@ -24331,7 +24349,7 @@ msgstr "Prohlédni si Sluneční soustavu"
 #: activities/submarine/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Pilot a submarine"
-msgstr "Řiďte ponorku"
+msgstr "Řízení ponorky"
 
 #. Help title
 #: activities/submarine/ActivityInfo.qml:17
@@ -24581,22 +24599,22 @@ msgstr ""
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Small grids using symbols."
-msgstr ""
+msgstr "Malé mřížky se symboly."
 
 #: activities/sudoku/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using symbols."
-msgstr ""
+msgstr "Střední mřížky se symboly."
 
 #: activities/sudoku/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using numbers and symbols."
-msgstr ""
+msgstr "Střední mřížky s čísly a symboly."
 
 #: activities/sudoku/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids using numbers."
-msgstr ""
+msgstr "Velké mřížky s čísly."
 
 #. Activity title
 #: activities/superbrain/ActivityInfo.qml:15
@@ -24611,7 +24629,7 @@ msgstr "Supermozek"
 #: activities/superbrain/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Tux has hidden several items. Find them in the correct order."
-msgstr ""
+msgstr "Tux několik položek schoval. Najdi je ve správném pořadí."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -24635,24 +24653,24 @@ msgstr ""
 #: activities/superbrain/Superbrain.qml:141
 msgctxt "Superbrain|"
 msgid "This item is well placed."
-msgstr ""
+msgstr "Tato položka byla umístěna právně."
 
 #: activities/superbrain/Superbrain.qml:143
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
-msgstr ""
+msgstr "Tato položka byla nesprávně umístěna."
 
 #. Activity title
 #: activities/tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The tangram puzzle game"
-msgstr ""
+msgstr "Skládačka Tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The objective is to form a given shape."
-msgstr ""
+msgstr "Úkolem je sestavit zadaný tvar."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -24681,6 +24699,10 @@ msgid ""
 "selected piece. Check the activity 'Baby Puzzle' for a simpler introduction "
 "to tangram."
 msgstr ""
+"Přesuň dílek jeho přetažením. Na položkách, které to podporují, se objeví "
+"tlačítko symetrie. Klikni na tlačítko otočení nebo přes něj daný dílek "
+"přetáhni, aby se otočil. Podívej se na aktivitu 'Dětská skládačka' pro "
+"jednodušší úvod k tangramu."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -24748,25 +24770,25 @@ msgstr "Maximální hodnota: 500000."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr ""
+msgstr "Najdi desítkový doplněk"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr ""
+msgstr "Najdi desítkový doplněk pro každé číslo."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr ""
+msgstr "Nauč se najít desítkový doplněk."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
-msgstr ""
+msgstr "Čísla od 1 do 10 a sčítání."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24777,6 +24799,10 @@ msgid ""
 "corresponding lines. To correct the errors, click on the wrong numbers to "
 "remove them and repeat the previous steps."
 msgstr ""
+"Pokud jsou všechny řádky dokončeny,  stiskni tlačítko OK pro ověření "
+"odpovědi. Pokud jsou některé odpovědi nesprávné, objeví se na odpovídajících "
+"řádcích ikona křížku. Pro opravu chyb klikni na nesprávná čísla, aby se "
+"odstranila a poté opakuj předchozí kroky."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -24785,33 +24811,35 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"Vytvoř páry, které se rovnají deseti. Vyber ze seznamu číslo a pak abys "
+"vybrané číslo přesunul na dané místo zvol prázdné místo výpočtu."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr ""
+msgstr "První číslo od 1 do 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr ""
+msgstr "První číslo od 5 do 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr ""
+msgstr "Najdi obě čísla."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr ""
+msgstr "Prohoď desítkový doplněk"
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr ""
+msgstr "Prohoď čísla pro vytvoření párů rovných deseti."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -24820,12 +24848,13 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
+"Nauč se používat desítkový doplněk pro optimalizaci pořadí čísel ve výpočtu."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr ""
+msgstr "Čísla od 1 do 30 a sčítání."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24837,45 +24866,50 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
+"Vytvářej páry čísel v závorkách rovných deseti. Pro přehození čísel vyber "
+"jedno číslo, pak ve stejné operaci vyber jiné. Pokud jsou všechny řádky "
+"dokončeny, stiskni tlačítko OK pro ověření odpovědi. Pokud jsou některé "
+"odpovědi nesprávné, objeví se na odpovídajících řádcích ikona křížku. Oprav "
+"chyby a pak stiskni tlačítko OK znovu."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr ""
+msgstr "Vytvoř 2 páry ze 4 čísel."
 
 #: activities/tens_complement_swap/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr ""
+msgstr "Vytvoř 2 páry z 5 čísel."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr ""
+msgstr "Vytvoř 3 páry ze 6 čísel."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr ""
+msgstr "Používej desítkový doplněk"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr ""
+msgstr "Používej desítkový doplněk pro zjednodušení výpočtu."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr ""
+msgstr "Nauč se praktické použití desítkového doplňku."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
-msgstr ""
+msgstr "Čísla od 1 do 50 a sčítání."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24885,21 +24919,24 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
+"Rozlož součty tak, abys vytvořil páry čísel v závorkách rovných deseti. "
+"Vyber číslo ze seznamu, pak vyber prázdné místo na operaci pro přesun "
+"vybraného čísla na dané místo."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr ""
+msgstr "Výsledek mezi 11 a 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr ""
+msgstr "Výsledek mezi 20 a 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr ""
+msgstr "Výsledek mezi 30 a 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -24932,6 +24969,8 @@ msgid ""
 "Play with Tux. Take turns to click on the square which you want to mark. The "
 "first player to create a line of 3 marks wins."
 msgstr ""
+"Hrej si s Tuxem. Hraj tak, že klikneš na čtvereček, který chceš označit. "
+"První hráč, který vytvoří linku ze tří značek vyhrává."
 
 #: activities/tic_tac_toe/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -25031,6 +25070,8 @@ msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
 "Click on the cloud."
 msgstr ""
+"Vodní pára kondenzuje, aby vytvořila mraky a když jsou mraky těžké, začne "
+"pršet. Klikni na mrak."
 
 #: activities/watercycle/Watercycle.qml:84
 msgctxt "Watercycle|"
@@ -25080,6 +25121,9 @@ msgid ""
 "cools down forming tiny droplets in clouds. When the clouds meet cool air "
 "over the land, precipitation is triggered and falls down as rain."
 msgstr ""
+"Květiny také ztrácí vodu skrze vypařování do vzduchu. Vodní pára se "
+"ochlazuje a tvoří malinké kapičky v mracích. Když se mraky setkají s "
+"chladným vzduchem nad pevninou, spustí se srážky a padají dolů jako déšť."
 
 #: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
@@ -25156,7 +25200,7 @@ msgstr "Spousta nových obrázků"
 #: core/ChangeLog.qml:62 core/ChangeLog.qml:100 core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Spousta oprav"
+msgstr "Spousta oprav chyb"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
@@ -25164,6 +25208,9 @@ msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
+"Nový volba příkazového řádku pro přímé spuštění aktivity na zadané úrovni (--"
+"start-level číslo_úrovně). Použití je pro spouštění s parametrem --launch "
+"název_aktivity"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -25181,21 +25228,23 @@ msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
 msgstr ""
+"Byla přidána nová volba příkazové řádky (--difficulty {hodnota|minimum-"
+"maximum}), která spustí GCompris na zadané obtížnosti"
 
 #: core/ChangeLog.qml:53
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
-msgstr ""
+msgstr "Oprava chyby v aktivitě comparator"
 
 #: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
-msgstr ""
+msgstr "Do aktivity zeměpis přibyla mapa Španělska"
 
 #: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "Přidány hlasy pro ukrajinštinu"
 
 #: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
@@ -25203,6 +25252,8 @@ msgid ""
 "New command-line option to list all the activities and start on a specific "
 "one"
 msgstr ""
+"Nové volby příkazového řádku pro výpis všech aktivit a spuštění některé "
+"vybrané"
 
 #: core/ChangeLog.qml:66
 msgctxt "ChangeLog|"
@@ -25210,32 +25261,35 @@ msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr ""
+"Zmenšení velikosti balíčků pro všechny platformy a externí sady obrázků slov"
 
 #: core/ChangeLog.qml:67
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
-msgstr ""
+msgstr "Vylepšení kvality obrázky v několika aktivitách"
 
 #: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
+"Oprava některých změn v aktivitách renewable_energy/watercycle pro některé "
+"platformy"
 
 #: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
-msgstr ""
+msgstr "Oprava mrtvých kláves ignorovaných na Linuxu při aktivitách psaní"
 
 #: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
-msgstr ""
+msgstr "Oprava resetování úrovně při ruční změně úrovně v Logických asociacích"
 
 #: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
-msgstr ""
+msgstr "Oprava aktivit Abeceda, Sudá a lichá čísla a Pořadí čísel "
 
 #: core/ChangeLog.qml:78 core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
@@ -25245,12 +25299,12 @@ msgstr "Několik opravených chyb"
 #: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr ""
+msgstr "Aktualizován překlad pro ruštinu"
 
 #: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr ""
+msgstr "Nové hlasy pro novou norštinu"
 
 #: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
@@ -25260,12 +25314,12 @@ msgstr "Přidány překlady pro bretonštinu, češtinu a makedonštinu"
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr ""
+msgstr "Přidán překlad pro ázerbájdžánštinu"
 
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
-msgstr ""
+msgstr "Nové mapy a aktualizace map pro zeměpisné aktivity"
 
 #: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
@@ -25273,6 +25327,8 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
+"Nové datové sady obsahující smyčkové operace pro programovací bludiště, "
+"umožnění překladu výukových obrázků"
 
 #: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
@@ -25280,6 +25336,7 @@ msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr ""
+"Přidání úrovně pro výuku napěťových smyček v aktivitě analogová elektřina"
 
 #: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
@@ -25289,27 +25346,27 @@ msgstr "Nová nabídka nastavení aktivity s výběrem datové sady"
 #: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
-msgstr ""
+msgstr "Nové podkategorie pro uspořádání aktivit"
 
 #: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr ""
+msgstr "Přidán překlad pro makedonštinu"
 
 #: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr ""
+msgstr "Nové aktivity Programovací bludiště a dětský tangram"
 
 #: core/ChangeLog.qml:112
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
-msgstr "Nová hudba a nastavení hlasitosti na pozadí."
+msgstr "Nová hudba na pozadí a nastavení hlasitosti."
 
 #: core/ChangeLog.qml:113
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
-msgstr ""
+msgstr "Nové nastavení rychlosti v několika aktivitách."
 
 #: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
@@ -25319,17 +25376,17 @@ msgstr "Nová volba v šachách pro zobrazení zabraných figurek."
 #: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
-msgstr ""
+msgstr "Nové obrázky ve hrách Barvy, Pokročilé barvy a Míření na cíl."
 
 #: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr ""
+msgstr "Nové hlasy pro americkou angličtinu."
 
 #: core/ChangeLog.qml:117 core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
-msgstr ""
+msgstr "Mnoho malých oprav a vylepšení."
 
 #: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
@@ -25337,16 +25394,18 @@ msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
 msgstr ""
+"Aktualizovány překlady pro vícero jazyků (bretonština, brazilská "
+"portugalština, finština, ...)."
 
 #: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
-msgstr ""
+msgstr "Přidána ruská datová sada pro aktivitu Klikni na písmeno."
 
 #: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
-msgstr ""
+msgstr "Aktivita lang nyní dostupná v nizozemštině."
 
 #: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
@@ -25354,16 +25413,19 @@ msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
 "geo-country activity."
 msgstr ""
+"Sloučení norských krajů Nord-Trøndelag a Sør-Trøndelag v zeměpisné aktivitě "
+"do Trøndelag."
 
 #: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
+"Oprava v aktivitách s braillovým písmem, kde buňky začínají 1 na místo 0."
 
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr ""
+msgstr "Přidány překlady pro baskičtinu, maďarštinu a malajštinu."
 
 #: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
@@ -25377,27 +25439,27 @@ msgstr ""
 #: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
-msgstr ""
+msgstr "Přidán překlad pro skotskou gaelštinu."
 
 #: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
-msgstr ""
+msgstr "Do nastavení přibyla stránka s licencí."
 
 #: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
-msgstr ""
+msgstr "Vícero změn v rozvržení pro vylepšenou ergonomii."
 
 #: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
-msgstr ""
+msgstr "Aktivita Lang je nyní dostupná v polštině, švédštině a ukrajinštině."
 
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Search feature."
-msgstr ""
+msgstr "Funkce vyhledávání."
 
 #: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
@@ -25412,7 +25474,7 @@ msgstr "Spousta malých oprav."
 #: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
-msgstr ""
+msgstr "Aktivita Lang je nyní dostupná ve francouzštině."
 
 #: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
@@ -25420,6 +25482,8 @@ msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
+"Přidání načítacího překryvu, aby uživatel věděl, že se dějí nějaké akce "
+"(například načítání aktivity) a že to může několik sekund zabrat."
 
 #: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
@@ -25966,6 +26030,8 @@ msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
+"Použít softwarové vykreslování namísto OpenGL (pomalejší, ale mělo by "
+"fungovat na jakékoliv grafické kartě)."
 
 #: core/main.cpp:197
 msgctxt "QObject|"
@@ -25979,12 +26045,12 @@ msgstr ""
 #: core/main.cpp:201
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr ""
+msgstr "Zadání aktivity při spuštění GCompris."
 
 #: core/main.cpp:206
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
-msgstr ""
+msgstr "Vypíše všechny dostupné aktivity na standardní výstup."
 
 #: core/main.cpp:210
 msgctxt "QObject|"
@@ -25992,6 +26058,9 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"Pro danou aktivitu můžeš zvolit rozsah obtížností, který chceš pro dané "
+"sezení zobrazit. Zvol buď jednu hodnotu (3) nebo rozsah (3-6). Hodnoty musí "
+"být mezi 1 a 6."
 
 #: core/main.cpp:214
 msgctxt "QObject|"
@@ -25999,6 +26068,8 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Zadej na jaké úrovni chceš aktivitu spustit. Použije se pouze v případě, "
+"když je zadána volba --launch."
 
 #: core/main.qml:269
 msgctxt "main|"
