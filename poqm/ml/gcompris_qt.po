@@ -1,11 +1,11 @@
 #
-# Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2018, 2019, 2020, 2021, 2022, 2023.
+# Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Timo <animtim@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2023-06-04 21:56+0200\n"
-"Last-Translator: Timo <animtim@gmail.com>\n"
+"PO-Revision-Date: 2024-02-11 21:05+0100\n"
+"Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
 "Language: ml\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-Qt-Contexts: true\n"
 "X-Qt-Contexts: true\n"
 
@@ -44,143 +44,92 @@ msgstr "ഉത്തരം സ്ഥിരീകരിക്കൽ"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "അടുത്തുള്ള സംഖ്യകൾ കണ്ടെത്താം"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "വിട്ടുപോയ അടുത്തുള്ള സംഖ്യകൾ കണ്ടെത്താം."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "അഭാജ്യ സംഖ്യകളെ കുറിച്ച് പഠിക്കാൻ."
+msgstr "സംഖ്യകളെ ക്രമത്തിലാക്കി പഠിക്കാൻ."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "സംഖ്യകൾ താരതമ്യം ചെയ്ത് അനുയോജ്യമായ ചിഹ്നം തിരഞ്ഞെടുക്കുക."
+msgstr "ചോദിച്ചിരിക്കുന്ന സംഖ്യകൾ കണ്ടെത്തി അനുയോജ്യമായ കളത്തിലാക്കുക."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "1നും 10നും ഇടയിലുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "20നും 0നും ഇടയിലുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0നും 100നും ഇടയിലുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "അടുത്ത സംഖ്യ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "മുമ്പുള്ള സംഖ്യ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "ഇടയിലുള്ള സംഖ്യ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "വിട്ടുപോയ സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "അടുത്ത സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "മുമ്പുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "ഇടയിലുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "-10നും -1നും ഇടയിലുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "-10നും 10നും ഇടയിലുള്ള സംഖ്യകൾ കണ്ടെത്തുക."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "വിട്ടുപോയ സംഖ്യകൾ കണ്ടെത്തുക."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -953,7 +902,7 @@ msgstr "അക്കങ്ങൾ: ഉത്തരം ടൈപ്പു ചെ�
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr "ബാക്ക്‍സ്പെയ്സ്: ഉത്തരത്തിലെ അവസാനത്തെ അക്കം മായിക്കാൻ"
+msgstr "ബാക്ക്‌സ്പെയ്സ്: ഉത്തരത്തിലെ അവസാനത്തെ അക്കം മായിക്കാൻ"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -985,9 +934,6 @@ msgid "Learn multiplication table of 10."
 msgstr "10-ന്റെ ഗുണനപ്പട്ടിക പഠിക്കാം."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
 msgstr "1 മുതൽ 10 വരെയുള്ള ഗുണനപ്പട്ടിക."
@@ -1079,12 +1025,9 @@ msgid "Learn division table of 10."
 msgstr "10-ന്റെ ഹരണപ്പട്ടിക പഠിക്കാം."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "1 മുതൽ 10 വരെയുള്ള ഗുണനപ്പട്ടിക."
+msgstr "1 മുതൽ 10 വരെയുള്ള ഹരണപ്പട്ടിക."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1175,28 +1118,19 @@ msgid "Learn subtraction table of 10."
 msgstr "10-ന്റെ കുറയ്ക്കൽ പട്ടിക പഠിക്കാം."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കുറയ്ക്കുക."
+msgstr "10 വരെയുള്ള അക്കങ്ങളുടെ കുറയ്ക്കൽ."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കുറയ്ക്കുക."
+msgstr "20 വരെയുള്ള അക്കങ്ങളുടെ കുറയ്ക്കൽ."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കുറയ്ക്കുക."
+msgstr "100 വരെയുള്ള അക്കങ്ങളുടെ കുറയ്ക്കൽ."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1285,28 +1219,19 @@ msgid "Learn addition table of 10."
 msgstr "10-ന്റെ കൂട്ടൽ പട്ടിക പഠിക്കാം."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കൂട്ടുക."
+msgstr "10 വരെയുള്ള അക്കങ്ങളുടെ കൂട്ടൽ."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "1 വരെയുള്ള ദശാംശസംഖ്യകൾ കൂട്ടുക."
+msgstr "15 വരെയുള്ള അക്കങ്ങളുടെ കൂട്ടൽ."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "10 നക്ഷത്രങ്ങൾ വരെ കൂട്ടുക."
+msgstr "100 വരെ ഉത്തരം വരുന്ന കൂട്ടൽ."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3177,13 +3102,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "കാൽകുഡോക്കു"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "കാൽകുഡോക്കു പരിഹരിക്കുക."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3192,15 +3117,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"നിങ്ങളുടെ യുക്തിവിചാര പാടവങ്ങൾ വികസിപ്പിക്കുന്നതിന്: കണക്കുകൂട്ടുമ്പോഴുള്ള ‍ഡാറ്റ ലിങ്കിങ്, "
+"അനുമാനം, സ്ഥാനബോധം എന്നിവ."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "ഈ പസിൽ പൂർത്തിയാക്കാൻ ക്ഷമയും യുക്തിബോധവും ആവശ്യമാണ്."
+msgstr "ഈ പസിൽ പൂർത്തിയാക്കാൻ ക്ഷമയും കണക്കുകൂട്ടാനുള്ള കഴിവും ആവശ്യമാണ്."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3213,39 +3137,42 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"തന്നിരിക്കുന്ന അക്കങ്ങളിൽ ഒന്ന് തിരഞ്ഞെടുത്ത് ലക്ഷ്യസ്ഥാനത്ത് ക്ലിക്കു ചെയ്ത് ഗ്രിഡ് പൂരിപ്പിക്കുക. ഓരോ "
+"അക്കവും ഒരു വരിയിലും ഒരു നിരയിലും ഒരിക്കൽ മാത്രമേ വരാൻ പാടുള്ളൂ. ഗ്രിഡ് എങ്ങനെ "
+"പൂരിപ്പിക്കണമെന്നുള്ള നിർദ്ദേശം തരുന്ന ഒരു കൂട്ടം കളങ്ങളാണ് കേജുകൾ (കട്ടിയുള്ള വരകൾകൊണ്ട് "
+"സൂചിപ്പിച്ചിരിക്കുന്നു). ഒന്നിലധികം കളങ്ങളുള്ള കേജുകളിൽ ഒരു ഉത്തരവും ഒരു ക്രിയയും തന്നിരിക്കും: "
+"കേജിലെ എല്ലാ അക്കങ്ങളും കൂടി ആ ക്രിയ ഉപയോഗിച്ച് കണക്കുകൂട്ടുമ്പോൾ തന്നിരിക്കുന്ന ഉത്തരം കിട്ടണം. "
+"ഒരക്കം മാത്രമുള്ള കളത്തിൽ നേരിട്ട് അത് നല്കാവുന്നതാണ്."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "ചെറിയ ഗ്രിഡുകൾ."
+msgstr "+ ക്രിയയുള്ള ചെറിയ ഗ്രിഡുകൾ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "+, - ക്രിയകളുള്ള ചെറിയ ഗ്രിഡുകൾ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "+, -, × ക്രിയകളുള്ള ചെറിയ ഗ്രിഡുകൾ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "+, -, × ക്രിയകളുള്ള ഇടത്തരം ഗ്രിഡുകൾ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "+, -, ×, / ക്രിയകളുള്ള വലിയ ഗ്രിഡുകൾ."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4583,23 +4510,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "എന്നിട്ട് ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കുക."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"ചന്ദ്രന്റെ ഫോട്ടോയുടെ പകർപ്പവകാശം നാസയ്ക്ക് (NASA) ആണ്. ബഹിരാകാശത്തിന്റെ ശബ്ദം ജിപിഎൽ "
-"അനുമതിപത്രത്തിൽ പുറത്തിറക്കിയിട്ടുള്ള ടക്സ് പെയിന്റിൽ നിന്നും വേഗസ്ട്രൈക്കിൽ നിന്നുമാണ്. "
-"ഗതാഗതവുമായി ബന്ധപ്പെട്ട ചിത്രങ്ങളുടെ പകർപ്പവകാശം ഫ്രാങ്ക് ദൂസെയ്ക്കാണ്. ഗതാഗതവുമായി ബന്ധപ്പെട്ട "
-"തീയതികൾ &lt;http://www.wikipedia.org&gt; എന്നതിലെ വിവരങ്ങൾ അടിസ്ഥാനമാക്കിയാണ്."
+"ചന്ദ്രന്റെ ഫോട്ടോയുടെ പകർപ്പവകാശം നാസയ്ക്ക് (NASA) ആണ്. ഗതാഗതവുമായി ബന്ധപ്പെട്ട ചിത്രങ്ങളുടെ "
+"പകർപ്പവകാശം ഫ്രാങ്ക് ദൂസെയ്ക്കാണ്. ഗതാഗതവുമായി ബന്ധപ്പെട്ട തീയതികൾ &lt;https://www."
+"wikipedia.org&gt; എന്നതിലെ വിവരങ്ങൾ അടിസ്ഥാനമാക്കിയാണ്."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4742,20 +4661,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 മോൻഗോൾഫിയേ സഹോദരന്മാരുടെ ചൂടു വായു നിറച്ച ബലൂൺ"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
+msgstr "1890 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 പോൾ കോർണ്യു, ആദ്യ ഹെലികോപ്റ്റർ പറക്കൽ"
+msgstr "1907 പോൾ കോർണ്യു, ആദ്യ ഹെലികോപ്റ്റർ പറക്കൽ"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4768,12 +4681,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 കുന്യോട്ടിന്റെ ഫാർദിയേ"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
+msgstr "1890 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4801,12 +4711,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 സ്റ്റീവൻസണിന്റെ റോക്കറ്റ് സ്റ്റീം ലോക്കോമോട്ടീവ്"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
+msgstr "1890 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4819,20 +4726,14 @@ msgid "Aviation"
 msgstr "ആകാശമാർഗം"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
+msgstr "1890 ക്ലെമൊ അദേർസിന്റെ എയോൾ"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 റൈറ്റ് സഹോദരന്മാരുടെ ഫ്ലയർ III"
+msgstr "1905 റൈറ്റ് സഹോദരന്മാരുടെ ഫ്ലയർ III"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4855,12 +4756,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 ചാൾസ് ലിൻഡ്ബെർഗ് അറ്റ്‍ലാന്റിക് മഹാസമുദ്രം കടക്കുന്നു"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 ഹെലൻ ബുഷെയുടെ 444 കി.മീ./മണിക്കൂറിൽ സ്പീഡ് റെക്കോർഡ്"
+msgstr "1934 ഹെലൻ ബുഷെയുടെ 445 കി.മീ./മണിക്കൂറിൽ സ്പീഡ് റെക്കോർഡ്"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4888,12 +4786,9 @@ msgid "Cars"
 msgstr "കാറുകൾ"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 റെനോ വാച്യുറെറ്റ്"
+msgstr "1898 റെനോ വാച്യുറെറ്റ്"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -9615,25 +9510,19 @@ msgstr "അംശവും ഛേദവു കണ്ടെത്തുക (സ�
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "മാതൃക പോലെയാക്കാം"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "തന്നിരിക്കുന്ന തൂൺ പുനർനിർമ്മിക്കൂ."
+msgstr "തന്നിരിക്കുന്ന മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn digits"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "അക്കങ്ങൾ പഠിക്കാം"
+msgstr "അൽഗൊരിതങ്ങൾ പഠിക്കാൻ."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9642,51 +9531,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"മുകളിൽ തന്നിരിക്കുന്ന മാതൃക പുനർനിർമ്മിക്കുക. ചില ഘട്ടങ്ങളിൽ, മാതൃക പൂർത്തിയാക്കുകയോ അത് "
+"ഓർമ്മിച്ചെടുത്ത് പുനർനിർമ്മിക്കുകയോ ചെയ്യേണ്ടി വരും."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "ഇടതും വലതും ആരോകൾ: ഒരു ചിഹ്നത്തിന്റെ ബട്ടൺ തിരഞ്ഞെടുക്കാൻ"
+msgstr "ഇടതും വലതും ആരോകൾ: ഒരു ഇനം തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "സ്പെയ്സ്: ഒരിനം തിരഞ്ഞെടുക്കാൻ"
+msgstr "സ്പെയ്സ്: തിരഞ്ഞെടുത്ത ഇനം ഉത്തരത്തിൽ ചേർക്കാൻ"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "സ്പെയ്സോ എന്ററോ: പട്ടികയിൽ നിന്നും ഒരിനം തിരഞ്ഞെടുക്കാൻ"
+msgstr "ബാക്ക്സ്പെയ്സോ ‍ഡിലീറ്റോ: ഉത്തരത്തിൽ നിന്നും അവസാനത്തെ ഇനം കളയാൻ"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "എന്റർ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "സ്പെയ്സ്: അദൃശ്യം, ദൃശ്യം എന്നീ മോഡുകൾ തമ്മിൽ മാറാൻ"
+msgstr "ടാബ്: ഉത്തരം എഡിറ്റു ചെയ്യലും മാതൃക കാണലും തമ്മിൽ മാറാൻ"
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "ഞാൻ‍ തയ്യാറാണ്"
@@ -9694,7 +9567,7 @@ msgstr "ഞാൻ‍ തയ്യാറാണ്"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "മാതൃക പോലെയാക്കുക: വിവിധ നിറങ്ങൾ/ചിഹ്നങ്ങൾ ഉള്ള 2 ആകൃതികൾ."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9702,7 +9575,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "മാതൃക പോലെയാക്കുക."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9710,6 +9583,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"ഓർമ്മിച്ചെടുത്ത് മാതൃക പോലെയാക്കുക: ആകൃതികൾ, നിറങ്ങൾ/ചിഹ്നങ്ങൾ, വലിപ്പങ്ങൾ എന്നിവയുടെ "
+"ഏതെങ്കിലും കൂട്ടം."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9717,7 +9592,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "ഓർമ്മിച്ചെടുത്ത് മാതൃക പോലെയാക്കുക."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9725,11 +9600,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക: 4-നും 7-നും ഇടയിലുള്ള മാതൃകകൾ, ആകൃതികൾ, "
+"നിറങ്ങൾ/ചിഹ്നങ്ങൾ, വലിപ്പങ്ങൾ എന്നിവയുടെ ഏതെങ്കിലും കൂട്ടം."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9737,6 +9614,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"ഓർമ്മിച്ചെടുത്ത് മാതൃക പോലെയാക്കുക: 4-നും 7-നും ഇടയിലുള്ള മാതൃകകൾ, ആകൃതികൾ, നിറങ്ങൾ/"
+"ചിഹ്നങ്ങൾ, വലിപ്പങ്ങൾ എന്നിവയുടെ ഏതെങ്കിലും കൂട്ടം."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -9744,6 +9623,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക: 6-നും 8-നും ഇടയിലുള്ള മാതൃകകൾ, ആകൃതികൾ, "
+"നിറങ്ങൾ/ചിഹ്നങ്ങൾ, വലിപ്പങ്ങൾ എന്നിവയുടെ ഏതെങ്കിലും കൂട്ടം."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -9752,7 +9633,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9760,28 +9641,31 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"ഓർമ്മിച്ചെടുത്ത് മാതൃക പോലെയാക്കുക: 6-നും 8-നും ഇടയിലുള്ള മാതൃകകൾ, ആകൃതികൾ, നിറങ്ങൾ/"
+"ചിഹ്നങ്ങൾ, വലിപ്പങ്ങൾ എന്നിവയുടെ ഏതെങ്കിലും കൂട്ടം."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക: വിവിധ നിറങ്ങൾ/ചിഹ്നങ്ങൾ ഉള്ള 2 ആകൃതികൾ."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "ഓർമ്മിച്ചെടുത്ത് മാതൃക പോലെയാക്കുക: വിവിധ നിറങ്ങൾ/ചിഹ്നങ്ങൾ ഉള്ള 2 ആകൃതികൾ."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "മാതൃക പോലെയാക്കുക: വിവിധ നിറങ്ങൾ/ചിഹ്നങ്ങൾ ഉള്ള 3-ഓ 4-ഓ ആകൃതികൾ."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
-msgstr ""
+msgstr "മാതൃക പോലെയാക്കുക: ഒരേ നിറങ്ങളും/ചിഹ്നങ്ങളും 2 വലിപ്പങ്ങളും ഉള്ള 3-ഓ 4-ഓ ആകൃതികൾ."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -9789,11 +9673,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക: ഒരേ നിറങ്ങളും/ചിഹ്നങ്ങളും 2 വലിപ്പങ്ങളും ഉള്ള "
+"3-ഓ 4-ഓ ആകൃതികൾ."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"മാതൃക പോലെയാക്കുക: ആകൃതികളുടെയും നിറങ്ങളുടെയും/ചിഹ്നങ്ങളുടെയും വലിപ്പങ്ങളുടെയും ഏതെങ്കിലും "
+"കൂട്ടങ്ങൾ."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -9802,6 +9690,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക: ആകൃതികളുടെയും നിറങ്ങളുടെയും/ചിഹ്നങ്ങളുടെയും "
+"വലിപ്പങ്ങളുടെയും ഏതെങ്കിലും കൂട്ടങ്ങൾ."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -13867,23 +13757,21 @@ msgstr "1 ഒരു അഭാജ്യ സംഖ്യയല്ല."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 ഒരു അഭാജ്യസംഖ്യയല്ല, അതിന്റെ ഹാരകങ്ങൾ: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "പക്ഷേ %1, %2-ന്റെ ഗുണിതമല്ല."
+msgstr "%2-ഉം %3-ഉം %1-ന്റെ ഗുണിതങ്ങളാണ്, പക്ഷേ %4, %5-ന്റെ ഗുണിതമല്ല."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "%1-ന്റെ ഹാരകങ്ങൾ: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14059,32 +13947,26 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "അടയാളമിട്ട രേഖ വായിക്കാം"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "അടയാളമിട്ട ഒരു രേഖയിലെ മൂല്യങ്ങൾ വായിക്കാം."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "ജലചക്രം പഠിക്കാൻ."
+msgstr "അടയാളമിട്ട ഒരു രേഖ വായിക്കാൻ പഠിക്കാൻ."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "ഇരട്ടസംഖ്യകളും ഒറ്റസംഖ്യകളും"
+msgstr "സംഖ്യകൾ വായിക്കലും ക്രമത്തിലാക്കലും."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14093,36 +13975,26 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"അടയാളമിട്ട രേഖയിലെ തന്നിരിക്കുന്ന സ്ഥാനത്തിന് അനുയോജ്യമായ മൂല്യം കൊടുക്കാനായി നമ്പർ പാഡോ "
+"നിങ്ങളുടെ കീബോർഡോ ഉപയോഗിക്കുക."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "സംഖ്യകൾ: ഒരു സംഖ്യ നൽകാൻ"
+msgstr "അക്കങ്ങൾ: അക്കങ്ങൾ നൽകാൻ"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "ബാക്ക്‍സ്പെയ്സ്: ഉത്തരത്തിലെ അവസാനത്തെ അക്കം മായിക്കാൻ"
+msgstr "ബാക്ക്‌സ്പെയ്സ്: ഉത്തരത്തിലെ അവസാനത്തെ അക്കം മായിക്കാൻ"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "അക്കങ്ങൾ: ഉത്തരം ടൈപ്പു ചെയ്യാൻ"
+msgstr "‍ഡിലീറ്റ്: ഉത്തരം റീസെറ്റ് ചെയ്യാൻ"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "സ്പെയ്സോ എന്ററോ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
@@ -14130,108 +14002,75 @@ msgstr "സ്പെയ്സോ എന്ററോ: ഉത്തരം സ്�
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(മാറ്റം വരാവുന്ന അതിരുകൾ)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "തുരുമ്പ് നിറമുള്ള പൂമ്പാറ്റയെ കണ്ടുപിടിക്കുക"
+msgstr "തന്നിരിക്കുന്ന അക്കം കണ്ടെത്തുക."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "1-നും 5-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "1-നും 7-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "1-നും 10-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 20-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 50-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 100-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 1000-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 10 000-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "%1-നും %2-നും ഇടയിലുള്ള സംഖ്യകൾ."
+msgstr "0-നും 1 000 000-നും ഇടയിലുള്ള അക്കങ്ങൾ."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "അടയാളമിട്ട രേഖ ഉപയോഗിക്കാം"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "അടയാളമിട്ട രേഖയിൽ മൂല്യങ്ങൾ വെക്കുക."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "കലണ്ടർ എങ്ങനെ ഉപയോഗിക്കാമെന്നു പഠിക്കാം."
+msgstr "അടയാളമിട്ട ഒരു രേഖ ഉപയോഗിക്കാൻ പഠിക്കാൻ."
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14240,108 +14079,89 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"അടയാളമിട്ട രേഖയിൽ അനുയോജ്യമായ സ്ഥാനത്ത് തന്നിരിക്കുന്ന മൂല്യം വെക്കാനായി ആരോകൾ ഉപയോഗിച്ച് "
+"കഴ്സർ നീക്കുക"
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "ഇടതും വലതും ആരോകൾ: ബഹിരാകാശ കപ്പൽ ചലിപ്പിക്കാൻ"
+msgstr "ഇടതും വലതും ആരോകൾ: കഴ്സർ നീക്കാൻ"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "തന്നിരിക്കുന്ന അക്കം അടയാളമിട്ട രേഖയിൽ എവിടെയാണെന്ന് കാണിക്കുക."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "ആരോഹണ ക്രമത്തിൽ, 1-നും 5-നും ഇടയിലുള്ള 5 സംഖ്യകൾ."
+msgstr "അടയാളങ്ങൾ 1-നും 5-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "1-നും %1-നും ഇടയിലുള്ള ഒരു സംഖ്യ ഊഹിക്കൂ."
+msgstr "അടയാളങ്ങൾ 1-നും 7-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "1-നും %1-നും ഇടയിലുള്ള ഒരു സംഖ്യ ഊഹിക്കൂ."
+msgstr "അടയാളങ്ങൾ 1-നും 10-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "ഉത്തരം 20-നും 29-നും ഇടയിൽ."
+msgstr "അടയാളങ്ങൾ 0-നും 20-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "ഉത്തരം 30-നും 50-നും ഇടയിൽ."
+msgstr "അടയാളങ്ങൾ 0-നും 50-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "ഉത്തരം 30-നും 50-നും ഇടയിൽ."
+msgstr "അടയാളങ്ങൾ 0-നും 100-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "അടയാളങ്ങൾ 0-നും 1 000-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "അടയാളങ്ങൾ 0-നും 10 000-നും ഇടയിൽ."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "അടയാളങ്ങൾ 0-നും 1 000 000-നും ഇടയിൽ."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "വ്യാകരണ വിശകലനം"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "തന്നിരിക്കുന്ന വാക്യങ്ങളിലെ ശബ്ദഭേദങ്ങൾ കണ്ടെത്തൂ."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "വ്യാകരണത്തിലെ ശബ്ദഭേദങ്ങൾ തിരിച്ചറിയാൻ പഠിക്കാം."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദങ്ങൾ അനുയോജ്യമായ വാക്കുകൾക്കു നല്കുക."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14349,26 +14169,25 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ഒരു ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള "
+"കളം തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "അനുയോജ്യമായ ഒരു ശബ്ദഭേദവും ഇല്ലെങ്കിൽ കളം ഒഴിച്ചിടാം."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "മുകളിലേക്കും താഴേക്കുമുള്ള ആരോകളും ടാബും: ശബ്ദഭേദങ്ങളും വാക്കുകളും തമ്മിൽ മാറാൻ"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "ഇടതും വലതും ആരോകൾ: ഒരു ചിഹ്നത്തിന്റെ ബട്ടൺ തിരഞ്ഞെടുക്കാൻ"
+msgstr "ഇടതും വലതും ആരോകൾ: ശബ്ദഭേദങ്ങളിലെയും വാക്കുകളിലെയും ഇനങ്ങൾ തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14376,32 +14195,29 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
-msgstr ""
+msgstr "സ്പെയ്സ്: തിരഞ്ഞെടുത്ത ശബ്ദഭേദം തിരഞ്ഞെടുത്ത വാക്കിനു നല്കി അടുത്ത വാക്ക് തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "ബാക്ക്‍സ്പെയ്സ്: ഉത്തരത്തിലെ അവസാനത്തെ അക്കം മായിക്കാൻ"
+msgstr "ബാക്ക്‌സ്പെയ്സ്: മുമ്പത്തെ വാക്കു തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "വ്യാകരണ വിശകലനം"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "വ്യാകരണത്തിലെ ശബ്ദഭേദങ്ങൾ തിരിച്ചറിയാൻ പഠിക്കാം."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദങ്ങൾക്ക് അനുയോജ്യമായ വാക്കുകൾ കണ്ടെത്തൂ."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14409,21 +14225,23 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ഒരു ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള "
+"കളം തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "അനുയോജ്യമായ ഒരു ശബ്ദഭേദവും ഇല്ലെങ്കിൽ കളം ഒഴിച്ചിടാം."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "ശബ്ദഭേദങ്ങൾ (വ്യാകരണം)"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദത്തിന് അനുയോജ്യമായ വാക്കുകൾ കണ്ടെത്തൂ."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14431,16 +14249,15 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള കളം "
+"തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "ശബ്ദഭേദം അനുയോജ്യമായതല്ല എങ്കിൽ കളം ഒഴിച്ചിടാം."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
 msgstr "കാലി"
@@ -14449,13 +14266,13 @@ msgstr "കാലി"
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "ശബ്ദഭേദങ്ങൾ (വ്യാകരണം)"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദം അനുയോജ്യമായ വാക്കുകൾക്കു നല്കുക."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14463,11 +14280,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും ശബ്ദഭേദം തിരഞ്ഞെടുക്കുക. എന്നിട്ട്, ഒരു വാക്കിനു താഴെയുള്ള കളം "
+"തിരഞ്ഞെടുത്ത് അതിലേക്ക് ആ ശബ്ദഭേദം കൊടുക്കുക."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "ശബ്ദഭേദം അനുയോജ്യമായതല്ല എങ്കിൽ കളം ഒഴിച്ചിടാം."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14618,109 +14437,90 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "24 ആക്കാം"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "24 കിട്ടുന്നതരത്തിൽ കണക്കുകൂട്ടുക."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "നാലു തരം ക്രിയകളിലൂടെ ബീജഗണിതം പരിശീലിക്കുക."
+msgstr "നാലു ക്രിയകൾ ഉപയോഗിച്ച് കണക്കുകൂട്ടാൻ പഠിക്കാൻ."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "കൂട്ടലും കുറയ്ക്കലും ഗുണിക്കലും ഹരിക്കലും പരിശീലിക്കാൻ."
+msgstr "കൂട്ടലും കുറയ്ക്കലും ഗുണിക്കലും ഹരിക്കലും ഉപയോഗിച്ച് കണക്കുകൂട്ടാൻ കഴിയണം."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
+"തന്നിരിക്കുന്ന നാല് അക്കങ്ങളും തന്നിരിക്കുന്ന ക്രിയകളും 24 ഉത്തരം കിട്ടുന്ന തരത്തിൽ ഉപയോഗിക്കുക."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "ആരോകൾ: ഒരു വിഭാഗത്തിനകത്ത് നാവിഗേറ്റു ചെയ്യാൻ"
+msgstr "ആരോകൾ: അക്കങ്ങളിലും ക്രിയകളിലും നാവിഗേറ്റു ചെയ്യാൻ"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "സ്പെയ്സോ എന്ററോ: ഒരിനം തിരഞ്ഞെടുക്കാനും വെക്കാനും"
+msgstr "സ്പെയ്സോ എന്ററോ: നിലവിലുള്ള മൂല്യമോ ക്രിയയോ തിരഞ്ഞെടുക്കാനും തിരഞ്ഞെടുത്തത് മാറ്റാനും"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "ക്രിയകളുടെ കീകൾ (+, -, *, /): ക്രിയ തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "ബാക്ക്‌സ്പെയ്സോ ഡിലീറ്റോ: അൺഡു"
+msgstr "ബാക്ക്‌സ്പെയ്സോ ഡിലീറ്റോ: അവസാനം ചെയ്ത ക്രിയ റദ്ദാക്കാൻ"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "ടാബ്: അക്കങ്ങളും ക്രിയകളും തമ്മിൽ മാറ്റാൻ"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
+"തന്നിരിക്കുന്ന നാല് അക്കങ്ങളും തന്നിരിക്കുന്ന ക്രിയകളും 24 ഉത്തരം കിട്ടുന്ന തരത്തിൽ ഉപയോഗിക്കുക."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "+ ഉം - ഉം കൊണ്ട് പരിഹരിക്കാം."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "+ ഉം - ഉം × ഉം കൊണ്ട് പരിഹരിക്കാം."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "ഗുണനം."
+msgstr "ഗുണനം ഉണ്ടായിരിക്കണം."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr ""
+msgstr "എല്ലാ ക്രിയകളും ഉപയോഗിച്ച് പരിഹരിക്കാം."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "ഹരണം."
+msgstr "ഹരണം ഉണ്ടായിരിക്കണം."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15498,12 +15298,9 @@ msgstr "ബാഞ്ചോ കണ്ടെത്തൂ"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "ബോങ്കോ കണ്ടെത്തൂ"
+msgstr "ബോങ്കോസ് കണ്ടെത്തൂ"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -18631,12 +18428,9 @@ msgid "Copyright: %1"
 msgstr "പകർപ്പവകാശം: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "കാഠിന്യ ഫിൽറ്റർ:"
+msgstr "കാഠിന്യ ഫിൽറ്റർ"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -18644,12 +18438,9 @@ msgid "Language selector"
 msgstr "ഭാഷ തിരഞ്ഞെടുക്കുക"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "ഓട്ടോമാറ്റിക് ആയി ശബ്ദ ഫയലുകളുടെ ഡൗൺലോഡ്/അപ്‍ഡേറ്റ് സാധ്യമാക്കുക"
+msgstr "ഓട്ടോമാറ്റിക്കായി പുറത്തുനിന്നുമുള്ള അസെറ്റുകൾ ഡൗൺലോഡ്/അപ്‍ഡേറ്റ് ചെയ്യുക"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -19680,7 +19471,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "അടുത്ത കൂത്ത് വലുതാക്കി കാണിക്കുക"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -25127,18 +24918,13 @@ msgstr "ഈ പസിൽ പൂർത്തിയാക്കാൻ ക്ഷമ
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"ഇടതുഭാഗത്തുള്ള അക്കമോ ചിഹ്നമോ തിരഞ്ഞെടുത്ത് ലക്ഷ്യസ്ഥാനത്തിൽ ക്ലിക്ക് ചെയ്യുക. അസാധുവായ ഉത്തരം "
-"നല്കാൻ ജികോംപ്രി നിങ്ങളെ അനുവദിക്കില്ല."
+"പട്ടികയിൽ നിന്നും ഒരു അക്കമോ ചിഹ്നമോ തിരഞ്ഞെടുത്ത് ലക്ഷ്യസ്ഥാനത്തിൽ ക്ലിക്ക് ചെയ്യുക. അസാധുവായ "
+"ഉത്തരം നല്കാൻ ജികോംപ്രി നിങ്ങളെ അനുവദിക്കില്ല."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25394,7 +25180,7 @@ msgstr "ആദ്യസംഖ്യ 5 തൊട്ട് 9 വരെ."
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തൂക."
+msgstr "രണ്ടു സംഖ്യകളും കണ്ടെത്തുക."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -25744,12 +25530,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്ക് താഴെയെത്തുന്നതിനു മുമ്പ് കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "ഇവയുടെ തർജ്ജിമ ചേർത്തിരിക്കുന്നു: സ്ലോവേനിയൻ, ജർമൻ, ഗലീഷ്യൻ."
+msgstr "ബൾഗേറിയൻ, ഗലീഷ്യൻ, സ്വാഹിലി ഭാഷകൾക്കായി തർജ്ജിമകൾ ചേർത്തിരിക്കുന്നു"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -25771,18 +25554,13 @@ msgid "Many bug fixes"
 msgstr "ധാരാളം ബഗ് ഫിക്സുകൾ"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"ഒരു പ്രത്യേക കാഠിന്യനിലയിൽ തുടങ്ങുന്നതിനുള്ള പുതിയ കമാന്റ്-ലൈൻ ഓപ്ഷൻ (--difficulty {value|"
-"min-max})"
+"ഒരു പ്രത്യേക കാഠിന്യനിലയിൽ ഒരു പ്രവർത്തനം തുടങ്ങുന്നതിനുള്ള പുതിയ കമാന്റ്-ലൈൻ ഓപ്ഷൻ (--start-"
+"level level, --launch activity എന്ന ഓപ്ഷനൊപ്പം ചേർക്കണം)"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -26090,12 +25868,9 @@ msgstr ""
 "ഈ പ്രവർത്തനത്തിന്, നിങ്ങളുടെ സിസ്റ്റത്തിൽ ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ലാത്ത ശബ്ദ ഫയലുകൾ ആവശ്യമാണ്."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "ആവശ്യമായ ശബ്ദ ഫയലുകൾ ഡൗൺലോഡ് ചെയ്യാൻ, പ്രിഫറൻസസ് ഡയലോഗിലേക്ക് പോകൂ."
+msgstr "ആവശ്യമായ ശബ്ദ ഫയലുകൾ ഡൗൺലോഡ് ചെയ്യാൻ, കോൺഫിഗറേഷൻ ഡയലോഗിലേക്ക് പോകൂ."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26222,16 +25997,7 @@ msgstr ""
 "ഉറപ്പുവരുത്തണം എന്നു മാത്രം."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26242,9 +26008,9 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"കെഡിഇ ടീമിൽ അംഗമാകുവാൻ താങ്കളൊരു സോഫ്റ്റ്‌വെയർ ഡെവലപ്പർ ആകണമെന്നില്ല. രാജ്യാന്തര ടീമുകളിൽ "
-"ചേർന്നും താങ്കൾക്ക് പ്രോഗ്രാം ഇന്റർഫേസുകൾ തർജ്ജിമ ചെയ്യാൻ സാധിക്കും. ഗ്രാഫിക്സുകളും തീമുകളും "
-"ശബ്ദങ്ങളും മെച്ചപ്പെട്ട എഴുത്തുകളും ഒക്കെ ലഭ്യമാക്കാവുന്നതാണ്. എങ്ങനെ വേണമെന്നത് താങ്കളുടെ "
+"കെഡിഇ ടീമിൽ അംഗമാകുവാൻ താങ്കളൊരു സോഫ്റ്റ്‌വെയർ ഡെവലപ്പർ ആകണമെന്നില്ല. വിവിധ ഭാഷകളുടെ "
+"ടീമുകളിൽ ചേർന്ന് താങ്കൾക്ക് പ്രോഗ്രാം ഇന്റർഫേസുകൾ തർജ്ജിമ ചെയ്യാൻ സാധിക്കും. ഗ്രാഫിക്സുകളും "
+"തീമുകളും ശബ്ദങ്ങളും മെച്ചപ്പെട്ട എഴുത്തുകളും ഒക്കെ ലഭ്യമാക്കാവുന്നതാണ്. എങ്ങനെ വേണമെന്നത് താങ്കളുടെ "
 "തീരുമാനമാണ്!<br /><br /><a href=\"%1\">%1</a> സന്ദർശിച്ച് താങ്കൾക്കു പങ്കുചേരാവുന്ന "
 "പ്രൊജക്റ്റുകളെ കുറിച്ച് അറിയൂ.<br /><br />താങ്കൾക്ക് കൂടുതൽ വിവരങ്ങളും രേഖകളും വേണമെങ്കിൽ, <a "
 "href=\"%2\">%2</a> എന്ന വിലാസത്തിൽ ലഭ്യമാണ്."
@@ -26458,13 +26224,13 @@ msgstr "ഡൗൺലോഡ് ചെയ്ത ഫയലുകളുടെ ചെ
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "%1-ന് ശബ്ദങ്ങൾ കാണുന്നില്ല."
 
 #: core/DownloadManager.cpp:773
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "%1-ന് ഡാറ്റയൊന്നും കാണുന്നില്ല."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -26642,16 +26408,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Specify on which level to start the activity. Only used when --launch option "
+"is used."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "ഇനിപറയുന്ന പുറത്തുനിന്നുമുള്ള അസെറ്റുകൾ ഇപ്പോൾ ഡൗൺലോഡ് ചെയ്യണമോ?"
+msgstr ""
+"ജികോംപ്രി തുറക്കുമ്പോൾ, ഇനിപറയുന്ന പുറത്തുനിന്നുമുള്ള അസെറ്റുകൾ ഒട്ടോമാറ്റിക്കായി ഡൗൺലോഡ് "
+"ചെയ്യുകയോ അപ്ഡേറ്റു ചെയ്യുകയോ ചെയ്യണമോ?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -26689,20 +26456,13 @@ msgid "You are running GCompris for the first time."
 msgstr "താങ്കൾ ആദ്യമായാണ് ജികോംപ്രി പ്രവർത്തിപ്പിക്കുന്നത്."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"നിങ്ങളുടെ ആപ്ലിക്കേഷൻ സെറ്റിങ്സ് എല്ലാം ശരിയാണോ എന്ന് പരിശോധിക്കുക, പ്രത്യേകിച്ച് ഭാഷ. "
-"മാത്രമല്ല, എല്ലാ ഭാഷകൾക്കുമുള്ള ശബ്ദ ഫയലുകൾ ഇൻസ്റ്റാൾ ചെയ്തിട്ടുണ്ടോ എന്നും നോക്കൂ. ഇത് പ്രിഫറൻസസ് "
-"ഡയലോഗിൽ ചെയ്യാൻ സാധിക്കും."
+"നിങ്ങളുടെ ആപ്ലിക്കേഷൻ സെറ്റിങ്സ് എല്ലാം ശരിയാണോ എന്ന് പരിശോധിക്കുക, പ്രത്യേകിച്ച് തിരഞ്ഞെടുത്ത "
+"ഭാഷ. ഇത് കോൺഫിഗറേഷൻ ഡയലോഗിൽ ചെയ്യാൻ സാധിക്കും."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -26726,16 +26486,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"ചില പ്രവർത്തനങ്ങൾക്ക് പുതിയ ഡാറ്റാസെറ്റ് ലഭ്യമാണ്. അവയുടെ ഡാറ്റാസെറ്റിന്റെ തിരഞ്ഞെടുപ്പ് റീസെറ്റ് "
+"ചെയ്യണമോ?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "വേണം"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "റദ്ദാക്കുക"
