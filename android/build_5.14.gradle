@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0'
+        classpath 'com.android.tools.build:gradle:7.0.2'
     }
 }
 
@@ -40,8 +40,6 @@ android {
      *******************************************************/
 
     compileSdkVersion androidCompileSdkVersion.toInteger()
-
-    buildToolsVersion '28.0.3'
 
     sourceSets {
         main {
