@@ -294,7 +294,7 @@
       { "sentence": "Vous partirez vite demain matin."
       , "answer":   "prn  vrb      adv  nou    nou"
       },
-      { "sentence": "J'(ai fait) rapidement un gateau."
+      { "sentence": "J'(ai fait) rapidement un gâteau."
       , "answer":   "prn vrb     adv         dtm nou"
       },
       { "sentence": "Nous mangeons trop et nous buvons trop !"
