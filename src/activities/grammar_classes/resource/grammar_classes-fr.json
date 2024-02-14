@@ -70,7 +70,7 @@
       , "answer":   "dtm nou   vrb"
       },
       { "sentence": "Tous les soirs, je joue avec mes amis."
-      , "answer":   "dtm  dtm nou    prn vrb ppt dtm nou"
+      , "answer":   "adj  dtm nou    prn vrb ppt dtm nou"
       },
       { "sentence": "L'homme porte un sac de blé."
       , "answer":   "dtm nou vrb   dtm nou ppt nou"
@@ -126,7 +126,7 @@
       , "answer":   "dtm nou  vrb adj"
       },
       { "sentence": "Ses parents courent tous les soirs."
-      , "answer":   "dtm nou     vrb     dtm  dtm nou"
+      , "answer":   "dtm nou     vrb     adj  dtm nou"
       },
       { "sentence": "Elle appelle sa meilleure amie."
       , "answer":   "prn  vrb     dtm adj      nou"
@@ -148,7 +148,7 @@
       { "sentence": "Où sont mes chaussures ?"
       , "answer":   "adv vrb dtm nou"
       },
-      { "sentence": "L'homme raconte une histoire à ses petits-enfants."
+      { "sentence": "L'homme raconte une histoire à ses (petits-enfants)."
       , "answer":   "dtm nou vrb     dtm nou      ppt dtm nou"
       },
       { "sentence": "Les avions volent haut dans le ciel."
@@ -161,10 +161,10 @@
       , "answer":   "adv   dtm  nou       vrb   adj"
       },
       { "sentence": "Quel est leur métier ?"
-      , "answer":   "prn  vrb dtm  nou"
+      , "answer":   "adj  vrb dtm  nou"
       },
       { "sentence": "Ses parents courent tous les soirs."
-      , "answer":   "dtm nou     vrb     dtm  dtm nou"
+      , "answer":   "dtm nou     vrb     adj  dtm nou"
       },
       { "sentence": "Elle appelle sa meilleure amie."
       , "answer":   "prn  vrb     dtm adj      nou"
@@ -186,7 +186,7 @@
       { "sentence": "Où sont mes chaussures bleues ?"
       , "answer":   "adv vrb dtm nou        adj"
       },
-      { "sentence": "Le vieil homme raconte une histoire vraie à ses petits-enfants."
+      { "sentence": "Le vieil homme raconte une histoire vraie à ses (petits-enfants)."
       , "answer":   "dtm adj  nou   vrb     dtm nou      adj   ppt dtm nou"
       },
       { "sentence": "Le jeune homme conduit lentement sur la longue route."
@@ -221,7 +221,7 @@
       { "sentence": "Il viendra pour nous voir."
       , "answer":   "prn vrb    ppt  prn  vrb"
       },
-      { "sentence": "Où (est - ) elle ?"
+      { "sentence": "Où est- elle ?"
       , "answer":   "adv vrb prn"
       },
       { "sentence": "Il lui parle."
@@ -236,10 +236,10 @@
       { "sentence": "Ils (sont venus) voir leur film."
       , "answer":   "prn vrb          vrb  dtm  nou"
       },
-      { "sentence": "Où (sont -) ils ?"
+      { "sentence": "Où sont- ils ?"
       , "answer":   "adv vrb prn"
       },
-      { "sentence": "(Demandez -) lui."
+      { "sentence": "Demandez- lui."
       , "answer":   "vrb      prn"
       },
       { "sentence": "Elle l'(a appelée)."
@@ -344,7 +344,7 @@
       { "sentence": "Le chat ou le chien (a cassé) ce jouet."
       , "answer":   "dtm nou cjt dtm nou vrb       dtm nou"
       },
-      { "sentence": "Je veux partir (bien que) nous soyons en retard."
+      { "sentence": "Je veux partir (avant que) nous soyons en retard."
       , "answer":   "prn vrb vrb    cjt        prn  vrb    ppt nou"
       },
       { "sentence": "Je suis malade donc je vais chez le docteur."

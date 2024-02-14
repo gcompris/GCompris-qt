@@ -7,7 +7,7 @@
       "goal": "dtm nou"
     },
     {
-      "objective": "Trouve les pronoms personnels et les verbes.",
+      "objective": "Trouve les pronoms et les verbes.",
       "difficulty": "3",
       "exercise": "personal_pronouns-verbs",
       "goal": "prn vrb"
@@ -64,7 +64,7 @@
       , "answer":   "dtm nou   vrb"
       },
       { "sentence": "Tous les soirs, je joue avec mes amis."
-      , "answer":   "dtm  dtm nou    prn vrb ppt dtm nou"
+      , "answer":   "adj  dtm nou    prn vrb ppt dtm nou"
       },
       { "sentence": "L'homme porte un sac de blé."
       , "answer":   "dtm nou vrb   dtm nou ppt nou"
@@ -120,7 +120,7 @@
       , "answer":   "prn  vrb  adj"
       },
       { "sentence": "Je cours tous les soirs."
-      , "answer":   "prn vrb  dtm  dtm nou"
+      , "answer":   "prn vrb  adj  dtm nou"
       },
       { "sentence": "Nous appelons sa meilleure amie."
       , "answer":   "prn  vrb      dtm adj      nou"
@@ -142,7 +142,7 @@
       { "sentence": "Où sont mes chaussures ?"
       , "answer":   "adv vrb dtm nou"
       },
-      { "sentence": "L'homme raconte une histoire à ses petits-enfants."
+      { "sentence": "L'homme raconte une histoire à ses (petits-enfants)."
       , "answer":   "dtm nou vrb     dtm nou      ppt dtm nou"
       },
       { "sentence": "Les avions volent haut dans le ciel."
@@ -155,10 +155,10 @@
       , "answer":   "adv   dtm  nou       vrb   adj"
       },
       { "sentence": "Quel est leur métier ?"
-      , "answer":   "prn  vrb dtm  nou"
+      , "answer":   "adj  vrb dtm  nou"
       },
       { "sentence": "Ses parents courent tous les soirs."
-      , "answer":   "dtm nou     vrb     dtm  dtm nou"
+      , "answer":   "dtm nou     vrb     adj  dtm nou"
       },
       { "sentence": "Elle appelle sa meilleure amie."
       , "answer":   "prn  vrb     dtm adj      nou"
@@ -177,7 +177,7 @@
       { "sentence": "Il viendra pour nous voir."
       , "answer":   "prn vrb    ppt  prn  vrb"
       },
-      { "sentence": "Où (est -) elle ?"
+      { "sentence": "Où est- elle ?"
       , "answer":   "adv vrb prn"
       },
       { "sentence": "Il lui parle."
@@ -192,10 +192,10 @@
       { "sentence": "Ils (sont venus) voir leur film."
       , "answer":   "prn vrb          vrb  dtm  nou"
       },
-      { "sentence": "Où (sont -) ils ?"
+      { "sentence": "Où sont- ils ?"
       , "answer":   "adv vrb prn"
       },
-      { "sentence": "(Demandez -) lui."
+      { "sentence": "Demandez- lui."
       , "answer":   "vrb      prn"
       },
       { "sentence": "Elle l'(a appelée)."
@@ -262,7 +262,7 @@
       { "sentence": "Le chat ou le chien (a cassé) ce jouet."
       , "answer":   "dtm nou cjt dtm nou vrb       dtm nou"
       },
-      { "sentence": "Je veux partir (bien que) nous soyons en retard."
+      { "sentence": "Je veux partir (avant que) nous soyons en retard."
       , "answer":   "prn vrb vrb    cjt        prn  vrb    ppt nou"
       },
       { "sentence": "Je suis malade donc je vais chez le docteur."
@@ -270,8 +270,8 @@
       }
     ],
     "interjections" : [
-      { "sentence": "Il (est tombé) ! Aïe !"
-      , "answer":   "prn vrb          itj"
+      { "sentence": "Il (est tombé). Aïe !"
+      , "answer":   "prn vrb         itj"
       },
       { "sentence": "Hmm, c'est bon !"
       , "answer":   "itj  prn vrb adj"
@@ -317,14 +317,14 @@
       { "sentence": "Les nouvelles ce matin dans le journal local ne sont pas bonnes."
       , "answer":   "dtm nou       dtm nou  ppt  dtm nou    adj   adv vrb adv adj"
       },
-      { "sentence": "Les nénuphares ne sont pas assez grands pour cette grande grenouille."
+      { "sentence": "Les nénuphars ne sont pas assez grands pour cette grande grenouille."
       , "answer":   "dtm nou        adv vrb adv adv   adj   ppt  dtm   adj    nou"
       },
       { "sentence": "Parlez plus fort pour qu'on vous entende."
-      , "answer":   "vrb    adv  adv  ppt  prn prn prn vrb"
+      , "answer":   "vrb    adv  adv  ppt  cjt prn prn vrb"
       },
-      { "sentence": "Il faut faire la vaisselle avant que maman ne revienne."
-      , "answer":   "prn vrb vrb   dtm nou      ppt   prn nou   adv vrb"
+      { "sentence": "Il faut faire la vaisselle (avant que) maman ne revienne."
+      , "answer":   "prn vrb vrb   dtm nou      cjt         nou   adv vrb"
       },
       { "sentence": "Nous (avons trouvé) la réponse en cherchant ensemble."
       , "answer":   "prn  vrb            dtm nou    ppt vrb      adv"
