@@ -27051,41 +27051,41 @@ msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Téléchargement annulé par l'utilisateur"
 
-#: core/DownloadManager.cpp:335
+#: core/DownloadManager.cpp:339
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Impossible de créer le dossier pour les ressources"
 
-#: core/DownloadManager.cpp:342
+#: core/DownloadManager.cpp:346
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Impossible d'ouvrir le fichier « %1 »"
 
-#: core/DownloadManager.cpp:711
+#: core/DownloadManager.cpp:715
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Contenu du fichier « Contents » non valable."
 
-#: core/DownloadManager.cpp:733
+#: core/DownloadManager.cpp:737
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "L'URL « %1 » n'existe pas."
 
-#: core/DownloadManager.cpp:746
+#: core/DownloadManager.cpp:750
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Le calcul de la somme de contrôle du fichier a échoué : %1 "
 
-#: core/DownloadManager.cpp:768
+#: core/DownloadManager.cpp:772
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr "Pas de voix disponibles pour %1."
 
-#: core/DownloadManager.cpp:773
+#: core/DownloadManager.cpp:777
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."

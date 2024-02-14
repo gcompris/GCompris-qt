@@ -27059,41 +27059,41 @@ msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Descărcarea a fost anulată de utilizator"
 
-#: core/DownloadManager.cpp:335
+#: core/DownloadManager.cpp:339
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Nu s-a putut crea calea resursei"
 
-#: core/DownloadManager.cpp:342
+#: core/DownloadManager.cpp:346
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Nu s-a putut deschide fișierul țintă %1"
 
-#: core/DownloadManager.cpp:711
+#: core/DownloadManager.cpp:715
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Format invalid al fișierului de conținut, Contents"
 
-#: core/DownloadManager.cpp:733
+#: core/DownloadManager.cpp:737
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "URL-ul %1 nu există."
 
-#: core/DownloadManager.cpp:746
+#: core/DownloadManager.cpp:750
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Suma de control a fișierului descărcat nu corespunde: %1"
 
-#: core/DownloadManager.cpp:768
+#: core/DownloadManager.cpp:772
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr ""
 
-#: core/DownloadManager.cpp:773
+#: core/DownloadManager.cpp:777
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
