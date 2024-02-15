@@ -403,7 +403,7 @@ QVariantList ActivityInfoTree::allCharacters()
     for (const auto &tree: constMenuTreeFull) {
         const QString &title = tree->title();
         for (const QChar &letter: title) {
-            if (letter.isLetterOrNumber() || letter == QLatin1Char('-')) {
+            if (letter.isLetterOrNumber() || letter == QLatin1Char('\'') || letter == QLatin1Char('-')) {
                 keyboardChars.insert(letter.toLower());
             }
         }
