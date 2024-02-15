@@ -135,12 +135,9 @@ msgid "Find numbers between -10 and 10."
 msgstr "Encontre números entre -10 e 10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Encontre ambos os números."
+msgstr "Encontre os números faltantes."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
