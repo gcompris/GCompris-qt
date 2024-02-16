@@ -303,7 +303,7 @@
       { "sentence": "The cat or the dog (has broken) this toy."
       , "answer":   "dtm nou cjt dtm nou vrb   dtm  nou"
       },
-      { "sentence": "I want (to go) although we are late."
+      { "sentence": "I want (to go) because we are late."
       , "answer":   "prn vrb vrb cjt   prn vrb adj"
       },
       { "sentence": "Unless he is away, you (can meet) him."
