@@ -116,7 +116,7 @@ ActivityBase {
                 width: rulerView.rulerWidth
                 height: parent.height - background.baseMargins
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.horizontalCenterOffset: rulerView.rulerModelWidth * -0.5
+                anchors.horizontalCenterOffset: rulerView.rulerModelWidth * ((items.orientation === Qt.LeftToRight) ? -0.5 : 0.5)
                 anchors.top: parent.top
                 anchors.topMargin: background.baseMargins
                 Row {
