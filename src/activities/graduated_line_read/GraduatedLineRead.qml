@@ -250,7 +250,8 @@ ActivityBase {
             width: activityMode === "tick2number" ? 90 * ApplicationInfo.ratio : 0
             height: cursor.height
             property real cursorOffset: (rulerView.rulerModelWidth - width) * 0.5
-            x: rulerView.x + rulerViewColumn.x + cursor.x + rulerView.rulerModelWidth * items.solutionGrad + cursorOffset
+            x: items.orientation === Qt.LeftToRight ? rulerView.x + rulerViewColumn.x + cursor.x + rulerView.rulerModelWidth * items.solutionGrad + cursorOffset :
+                rulerView.x + rulerView.width - rulerViewColumn.x - cursor.x - rulerView.rulerModelWidth * items.solutionGrad + cursorOffset
             y: rulerView.y + rulerViewColumn.y + cursor.y + 2 * ApplicationInfo.ratio
             radius: height * 0.1
             imageSize: height * 1.2
