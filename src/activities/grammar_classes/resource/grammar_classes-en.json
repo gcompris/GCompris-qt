@@ -82,7 +82,7 @@
       , "answer":   "dtm nou  vrb   ppt dtm nou"
       },
       { "sentence": "We all are mathematicians."
-      , "answer":   "prn adv vrb nou"
+      , "answer":   "prn prn vrb nou"
       },
       { "sentence": "Some bread (is cooking) in the oven."
       , "answer":   "dtm  nou   vrb    ppt dtm nou"
@@ -280,7 +280,7 @@
     ],
     "conjunctions" : [
       { "sentence": "Lucie is both nice and patient."
-      , "answer":   "nou   vrb cjt adv  cjt adv"
+      , "answer":   "nou   vrb cjt adj  cjt adj"
       },
       { "sentence": "I (will phone) or I (will write) to them."
       , "answer":   "prn vrb        cjt prn vrb  ppt prn"
@@ -313,7 +313,7 @@
       , "answer":   "cjt prn vrb nou        prn vrb    prn"
       },
       { "sentence": "Since you are busy, I (will do) it."
-      , "answer":   "cjt   prn vrb  adv  prn  vrb  prn"
+      , "answer":   "cjt   prn vrb  adj  prn  vrb  prn"
       }
     ],
     "interjections" : [
