@@ -2328,6 +2328,10 @@ Copyright: 2024 Divakaran Payyan Kandanchirakkal
            2024 Aiswarya Kaitheri Kandoth
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/resource/grammar_analysis-ro.json
+Copyright: 2024 Horia Pelle
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_classes/*.svg
 Copyright: 2023 Timothée Giet
 License: CC-BY-SA-4.0
