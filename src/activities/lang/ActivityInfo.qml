@@ -33,7 +33,7 @@ ActivityInfo {
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate") + ("</li><li>") +
           qsTr("Space or Enter: select an item from the list") + ("</li><li>") +
-          qsTr("Enter: validate your answer when the OK button is visible") + ("</li><li>") +
+          qsTr("Enter: validate your answer when the OK button is visible") + ("</li><li>") +
           qsTr("Tab: repeat the word") + ("</li></ul>")
   credit: "Images originally released by the Art4Apps project (https://web.archive.org/web/20120908214126/http://www.art4apps.org/) under CC BY-SA 3.0 license. Upscaled and smoothed derivative images."
   section: "reading vocabulary"
