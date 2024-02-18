@@ -2286,6 +2286,10 @@ Files: src/activities/grammar_analysis/resource/grammar_analysis-ar.json
 Copyright: 2024 Taha Zerrouki
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/resource/grammar_analysis-br.json
+Copyright: 2024 Envel Kervoas
+License: CC-BY-SA-4.0
+
 Files: src/activities/grammar_analysis/resource/grammar_analysis-ca.json
 Copyright: 2024 Josep M. Ferrer
 License: CC-BY-SA-4.0
