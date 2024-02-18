@@ -1,14 +1,20 @@
 {
   "levels": [
     {
-      "objective": "Trouve les déterminants et les noms.",
+      "objective": "issue with Breton.",
       "difficulty": "3",
-      "exercise": "determiners-nouns",
+      "exercise": "breton",
+      "goal": "dtm nou"
+    },
+    {
+      "objective": "issue with Lithuanian.",
+      "difficulty": "3",
+      "exercise": "lithuanian",
       "goal": "dtm nou"
     }
   ],
   "dataset" : {
-    "determiners-nouns" : [
+    "breton" : [
       { "sentence": "(Dont a rez) ganin da (c'hoari)?"
       , "answer":   "dtm ppt+prn ppt vrb"
       },
@@ -23,6 +29,17 @@
       },
       { "sentence": "La fleur ('est) jolie."
       , "answer":   "dtm vrb dtm vrb"
+      }
+    ],
+      "lithuanian" : [
+      { "sentence": "Dit-il"
+      , "answer":   "vrb dtm"
+      },
+      { "sentence": "Le faudra-t-il ?"
+      , "answer":   "dtm vrb dtm dtm"
+      },
+      { "sentence": "Lit - ua - nian."
+      , "answer":   "dtm vrb dtm"
       }
     ]
   },
