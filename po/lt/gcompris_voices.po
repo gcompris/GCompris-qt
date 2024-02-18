@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 01:35+0000\n"
-"PO-Revision-Date: 2023-01-08 21:54+0200\n"
+"PO-Revision-Date: 2024-02-17 13:41+0200\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
 "Language: lt\n"
@@ -17,13 +17,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Rask trūkstamus skaičius."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -127,7 +127,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
-msgstr "Paprastas teksto redaktorius, skirtas pažaisti klaviatūra."
+msgstr "Paprastas teksto redaktorius, skirtas išbandyti klaviatūrą."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
@@ -192,18 +192,16 @@ msgstr "Išmok rašyti Brailio raštu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Pasirink skaičių ar simbolį ir paspausk vietą, į kurią jį nori padėti. "
-"Kiekvienas simbolis ar skaičius gali būti tik vienas eilutėje ar stulpelyje, "
-"ar mažesnėje lentelėje, jei tokia yra."
+"Sudėk skaičius į kvadratėlius lentelėje. Kiekviename aptvare vienas "
+"kvadratėlis parodo aritmetinį veiksmą, kurį turi pritaikyti visiems aptvaro "
+"skaičiams, kad gautum nurodytą rezultatą. Atsimink – joks skaičius negali "
+"pasikartoti eilutėje ar stulpelyje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -469,7 +467,7 @@ msgstr "Surask teisingą skaitiklį ir vardiklį parodytoje trupmenoje."
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Atkurk ir pabaik ornamentą."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -539,21 +537,25 @@ msgstr "Nuvesk Skaičių Kramtuką prie visų pirminių skaičių."
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Rask skaičių, atitinkantį duotą skalės tašką."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Duotą skaičių pažymėk skalėje."
 
+# grammar_analysis.ogg
+# Atitinkamiems žodžiams priskirk nurodytas kalbos dalis.
+# grammar_classes.ogg
+# Atitinkamiems žodžiams priskirk nurodytą kalbos dalį.
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Atitinkamiems žodžiams priskirk nurodytas kalbos dalis."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -577,6 +579,8 @@ msgstr ""
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
 msgstr ""
+"Iš duotų aritmetinių veiksmų ženklų ir keturių skaičių parašyk reiškinį, "
+"kurio rezultatas būtų 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1287,7 +1291,7 @@ msgstr ""
 #: activities/wordsgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
-msgstr "Surink klaviatūra žodį,  iki kol jis nukris ant žemės."
+msgstr "Surink klaviatūra žodį, iki kol jis nukris ant žemės."
 
 #~ msgid "play checkers against the computer"
 #~ msgstr "Žaisk šaškėmis prieš Tuksą."
