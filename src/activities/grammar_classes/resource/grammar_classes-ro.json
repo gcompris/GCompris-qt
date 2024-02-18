@@ -1,0 +1,119 @@
+{
+  "levels": [
+    {
+      "objective": "Găsește cuvinte.",
+      "difficulty": "1",
+      "exercise": "scurte",
+      "goal": "sbs"
+    },
+    {
+      "objective": "Găsește verbe.",
+      "difficulty": "1",
+      "exercise": "medii",
+      "goal": "vrb"
+    },
+    {
+      "objective": "Găsește articole hotărâte.",
+      "difficulty": "2",
+      "exercise": "medii",
+      "goal": "arh"
+    },
+    {
+      "objective": "Găsește adjective.",
+      "difficulty": "3",
+      "exercise": "lungi",
+      "goal": "adj"
+    },
+    {
+      "objective": "Găsește adverbe.",
+      "difficulty": "4",
+      "exercise": "lungi",
+      "goal": "adv"
+    }
+  ],
+  "dataset" : {
+    "scurte" : [
+      { "sentence": "Floarea este foarte frumoasă."
+      , "answer":   "sbs+arh vrb adv adj"
+      },
+      { "sentence": "Pisica își face toaleta."
+      , "answer":   "sbs+arh prn vrb sbs+arh"
+      },
+      { "sentence": "(Ding dong)! Soneria sună."
+      , "answer":   "itj sbs+arh vrb"
+      }
+    ],
+    "medii" : [
+      { "sentence": "Această cremă fină de vanilie din raftul de jos miroase foarte bine."
+      , "answer":   "adj sbs adj ppt sbs ppt sbs+arh ppt adv vrb adv adv"
+      },
+      { "sentence": "Intrarea în colegiu este inaccesibilă până la noi notificări."
+      , "answer":   "sbs+arh ppt sbs vrb adj ppt ppt adj sbs"
+      },
+      { "sentence": "Câinele și pisica privesc cum înoată peștele."
+      , "answer":   "sbs+arh cjt sbs+arh vrb cjt vrb sbs+arh"
+      },
+      { "sentence": "Porumbelul umblă încet pe balcon."
+      , "answer":   "sbs+arh vrb adv ppt sbs"
+      }
+    ],
+    "lungi" : [
+      { "sentence": "Ei lucrează zilnic de acasă în biroul lor nou."
+      , "answer":   "prn vrb adv ppt adv ppt sbs+arh adj adj"
+      },
+      { "sentence": "Acum copiii cuminți își fac temele ca prieteni în camera de zi."
+      , "answer":   "adv sbs+arh adj prn vrb sbs+arh cjt sbs ppt sbs+arh ppt sbs"
+      },
+      { "sentence": "Acest vechi dans se numește tango, bunica și bunicul îl dansează deseori acasă."
+      , "answer":   "adj adj sbs prn vrb sbs sbs+arh cjt sbs+arh prn vrb adv adv"
+      }
+    ]
+  },
+  "syntax" : [
+    {
+      "code": "sbs",
+      "wordClass": "Substantiv",
+      "image": "1.svg"
+    },
+    {
+      "code": "arh",
+      "wordClass": "Articol hotărât",
+      "image": "2.svg"
+    },
+    {
+      "code": "adj",
+      "wordClass": "Adjectiv",
+      "image": "3.svg"
+    },
+    {
+      "code": "prn",
+      "wordClass": "Pronume",
+      "image": "4.svg"
+    },
+    {
+      "code": "vrb",
+      "wordClass": "Verb",
+      "image": "5.svg"
+    },
+    {
+      "code": "adv",
+      "wordClass": "Adverb",
+      "image": "6.svg"
+    },
+    {
+      "code": "cjt",
+      "wordClass": "Conjuncție",
+      "image": "7.svg"
+    },
+    {
+      "code": "ppt",
+      "wordClass": "Prepoziție",
+      "image": "8.svg"
+    },
+    {
+      "code": "itj",
+      "wordClass": "Interjecție",
+      "image": "9.svg"
+    }
+  ]
+}
