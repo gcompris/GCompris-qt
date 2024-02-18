@@ -20,7 +20,7 @@ ActivityBase {
     id: activity
 
     property string grammarMode: "_analysis"            // Modified for grammar_classes
-    readonly property bool translationMode: false       // Set this value to true to activate translator's mode
+    readonly property bool translationMode: true       // Set this value to true to activate translator's mode
 
     onStart: focus = true
     onStop: {}

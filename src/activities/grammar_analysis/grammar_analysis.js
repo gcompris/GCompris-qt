@@ -436,28 +436,38 @@ function buildAnswer() {
 
 // Analyze an exercise. Store splitted parts and computed parts in an object
 function analyzeExercise(level, exercise) {
-    var parsed = {}                                                             // Object container for parsed segments
-    parsed.sentence = exercise.sentence.replace(/\s+/,' ').trim()               // Trim multiple spaces
-    parsed.answer = exercise.answer.replace(/\s+/,' ').trim()                   // Trim multiple spaces
-    parsed.cleaned = parsed.sentence.replace(/\(|\)/g,'')                       // Delete parentheses to get a cleaned string
-    parsed.classes = parsed.answer.replace(/  +/g, ' ').split(/ /)              // Clear multiple spaces and extract classes
+    var parsed = {}                                                        // Object container for parsed segments
+    parsed.sentence = exercise.sentence.replace(/\s+/,' ').trim()          // Trim multiple spaces
+    parsed.answer = exercise.answer.replace(/\s+/,' ').trim()              // Trim multiple spaces
+    parsed.cleaned = parsed.sentence.replace(/\(|\)/g,'')                  // Delete parentheses to get a cleaned string
+    parsed.classes = parsed.answer.replace(/  +/g, ' ').split(/ /)         // Clear multiple spaces and extract classes
 
-    var tempStr = parsed.sentence                                               // Work in a temporary string
-    tempStr = tempStr.replace(/([\\'|’])/g,"$1 ")                               // Single quote as word delimiter
-    var parentheses = tempStr.match(/\([^\(\)]+\)/g)                            // Extract parentheses blocks in an array
-    var regex = new RegExp(punctuation, "g");                                   // Build regular expression with punctuation
-    tempStr = tempStr.replace(regex,' ')                                        // Punctuation is replaced by spaces
-    tempStr = tempStr.replace(/ +/g, ' ').trim()                                // Clear multiple spaces
-    tempStr = tempStr.replace(/\([^\(\)]+\)/g,"\t")                             // Replace parentheses blocks with a tabulation char
-    parsed.words = tempStr.split(/ /)                                           // Cleared string can be splitted now
+    var tempStr = parsed.sentence                                          // Work in a temporary string
+    var parentheses = tempStr.match(/\([^\(\)]+\)/g)                       // Extract parentheses blocks in an array
+    print("Pare", parentheses);
+    var regex = new RegExp(punctuation, "g");                              // Build regular expression with punctuation
+    tempStr = tempStr.replace(regex,' ')                                   // Punctuation is replaced by spaces
+    print("Apres reg1", tempStr);
+    tempStr = tempStr.replace(/ +/g, ' ').trim()                           // Clear multiple spaces
+    print("Apres reg2", tempStr);
+    tempStr = tempStr.replace(/\([^\(\)]+\)/g,"\t")                        // Replace parentheses blocks with a tabulation char
+    print("Apres reg3", tempStr);
+    tempStr = tempStr.replace(/([\\'|’])/g,"$1 ")                          // Single quote as word delimiter
+    print("Apres reg4", tempStr);
+    print("Tmp", tempStr);
+    parsed.words = tempStr.split(/ /)                                      // Cleared string can be splitted now
+    print("Mots", parsed.words);
+    print(JSON.stringify(parsed));
+
     if (parentheses !== null) {
         var idx = 0
         for (var i=0; i<parsed.words.length ; i++) {
-            if (parsed.words[i] === "\t") {                                     // Restore parentheses blocks when tabulation char found
-                parsed.words[i] = parentheses[idx++].replace(/\(|\)/g,'')       // Eliminate parentheses
+            if (parsed.words[i] === "\t") {                                // Restore parentheses blocks when tabulation char found
+                parsed.words[i] = parentheses[idx++].replace(/\(|\)/g,'')  // Eliminate parentheses
             }
         }
     }
+    print("MotsMots", parsed.cleaned);
 
     // Calculate position for each word in the cleaned string
     parsed.indexes = Array()
@@ -465,10 +475,13 @@ function analyzeExercise(level, exercise) {
     var numWord = 0
     while (numWord < parsed.words.length) {
         var strPos = parsed.cleaned.indexOf(parsed.words[numWord], strPosition) // Find position of current word
+        print("JJ", parsed.words[numWord])
         parsed.indexes.push(strPos)                                             // Save position in indexes array
         strPosition = strPos + parsed.words[numWord].length                     // Move to next start position
         numWord++
     }
+
+    print("MotsMots", parsed.words, parsed.indexes);
 
     // Test if no spaces required
     if (datas.needSpaces) {
