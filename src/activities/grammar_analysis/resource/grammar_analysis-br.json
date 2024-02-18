@@ -1,0 +1,437 @@
+{
+    "levels": [
+        {
+            "objective": "Kav ar gerioù-mell hag an anvioù",
+            "difficulty": "3",
+            "exercise": "determiners-nouns",
+            "goal": "dtm nou"
+        },
+        {
+            "objective": "Kav ar raganvioù hag ar verboù",
+            "difficulty": "3",
+            "exercise": "pronouns-verbs",
+            "goal": "prn vrb"
+        },
+        {
+            "objective": "Kav an adverboù hag ar verboù",
+            "difficulty": "3",
+            "exercise": "adverbs-verbs",
+            "goal": "adv vrb"
+        },
+        {
+            "objective": "Kav ar gerioù-mell, an anvioù hag an anvioù-gwan.",
+            "difficulty": "3",
+            "exercise": "determiners-nouns-adjectives",
+            "goal": "dtm nou adj"
+        },
+        {
+            "objective": "Kav an anvioù, ar raganvioù, ar verboù hag ar stagelloù.",
+            "difficulty": "4",
+            "exercise": "nouns-pronouns-verbs-conjunctions",
+            "goal": "nou prn vrb cjt"
+        },
+        {
+            "objective": "Kav an estlammadelloù, an anvioù hag ar verboù.",
+            "difficulty": "4",
+            "exercise": "interjections",
+            "goal": "itj nou vrb"
+        },
+         {
+            "objective": "Kav ar raganvioù hag an araogennoù.",
+            "difficulty": "4",
+            "exercise": "pronouns-verbs-prepositions",
+            "goal": "prn ppt"
+        },
+        {
+            "objective": "Kav rummad yezhadurel pep ger.",
+            "difficulty": "4",
+            "exercise": "pronouns-verbs",
+            "goal": "dtm nou adj vrb cjt prn itj ppt adv"
+        }
+    ],
+    "dataset": {
+        "determiners-nouns": [
+            {
+                "sentence": "Brav eo ar vleunienn.",
+                "answer": "adj vrb dtm nou"
+            },
+            {
+                "sentence": "(Pelec’h) emañ ma chupenn?",
+                "answer": "adj vrb dtm nou"
+            },
+            {
+                "sentence": "Al levrioù hag ar (c'haieroù) zo da gas (d'ar) gêr.",
+                "answer": "dtm nou cjt dtm nou vrb ppt vrb ppt+dtm nou"
+            },
+            {
+                "sentence": "Fall eo an amzer hiziv.",
+                "answer": "adj vrb dtm nou adv"
+            },
+            {
+                "sentence": "Anna (a zo) ur (plac'h) vras.",
+                "answer": "nou vrb dtm nou adj"
+            },
+            {
+                "sentence": "Ar wetur (a zo) dirak an ti.",
+                "answer": "dtm nou vrb ppt dtm nou"
+            },
+            {
+                "sentence": "Ur (sac'h) goullo ne chom ket en e sav.",
+                "answer": "dtm nou adj adv vrb adv ppt dtm nou"
+            },
+            {
+                "sentence": "Ul levr (a lennan).",
+                "answer": "dtm nou vrb"
+            }
+        ],
+        "pronouns-verbs": [
+            {
+                "sentence": "(Dont a rez) ganin da (c'hoari)?",
+                "answer": "vrb ppt+prn ppt vrb"
+            },
+            {
+                "sentence": "Sell ('ta) piv!",
+                "answer": "vrb itj prn"
+            },
+            {
+                "sentence": "Ni (a gomz) brezhoneg ha (c’hwi) (a gomz) brezhoneg ivez.",
+                "answer": "prn vrb nou cjt prn vrb nou adv"
+            },
+            {
+                "sentence": "Eñ hag hi (a zo) breur ha (c'hoar).",
+                "answer": "prn cjt prn vrb nou cjt nou"
+            },
+            {
+                "sentence": "Piv (a anavez) anezhañ?",
+                "answer": "prn vrb prn"
+            },
+            {
+                "sentence": "Hennezh zo laouen ('ta)!",
+                "answer": "prn vrb adj itj"
+            },
+            {
+                "sentence": "Int (a zo) kozh ha ni (a zo) yaouank.",
+                "answer": "prn vrb adj cjt prn vrb adj"
+            },
+            {
+                "sentence": "Petra zo?",
+                "answer": "prn vrb"
+            }
+        ],
+        "adverbs-verbs": [
+            {
+                "sentence": "(Alies) (ez a) Loig da gousket diwezhat.",
+                "answer": "adv vrb nou ppt vrb adv "
+            },
+            {
+                "sentence": "N'emaon ket amañ bemdez.",
+                "answer": "adv vrb adv adv adv"
+            },
+            {
+                "sentence": "Debriñ re zo fall.",
+                "answer": "vrb adv vrb adj"
+            },
+            {
+                "sentence": "Re vuan (e redez).",
+                "answer": "adv adv vrb"
+            },
+            {
+                "sentence": "Tomm eo ar soubenn bepred.",
+                "answer": "adj vrb dtm nou adv"
+            },
+            {
+                "sentence": "Pêrig (a lenn) kalz levrioù.",
+                "answer": "nou vrb adv nou"
+            },
+            {
+                "sentence": "Chomit sioul (e-pad) an abadenn.",
+                "answer": "vrb adv adv dtm nou"
+            },
+            {
+                "sentence": "Te ne lavarez ket atav ar wirionez!",
+                "answer": "prn adv vrb adv adv dtm nou "
+            }
+        ],
+        "determiners-nouns-adjectives": [
+            {
+                "sentence": "Kozh eo ar chas.",
+                "answer": "adj vrb dtm nou"
+            },
+            {
+                "sentence": "Er skol (ez eus) levrioù bras ha brav.",
+                "answer": "ppt+dtm nou vrb nou adj cjt adj"
+            },
+            {
+                "sentence": "Dre ar prenestr (e wel) honnezh al loar sklaer.",
+                "answer": "ppt dtm nou  vrb prn dtm nou adj"
+            },
+            {
+                "sentence": "He liorzh (a zo) nepell diouzh he zi nevez.",
+                "answer": "dtm nou vrb adv ppt dtm nou adj"
+            },
+            {
+                "sentence": "(Pelec'h) emañ ma loeroù ruz?",
+                "answer": "prn   vrb dtm nou adj"
+            },
+            {
+                "sentence": "An den (a gont) un istor hengounel (d') e vugale vihan.",
+                "answer": "dtm nou vrb  dtm nou adj ppt dtm nou adj"
+            },
+            {
+                "sentence": "Int (a skriv) ul lizher berr.",
+                "answer": "prn vrb dtm nou adj"
+            },
+            {
+                "sentence": "(Kuitaat a ra) ar paotr hag e vignon gwellañ ar gêr vras.",
+                "answer": "vrb dtm nou cjt dtm nou adj dtm nou adj"
+            },
+            {
+                "sentence": "(Dec'h) (e oa) serret ar stal nevez.",
+                "answer": "adv vrb adj dtm nou adj"
+            },
+            {
+                "sentence": "Piv eo da vignon karetañ?",
+                "answer": "prn vrb dtm  nou adj"
+            },
+            {
+                "sentence": "Da vignonezed karetañ (a ra) pourmenadennoù hir.",
+                "answer": "dtm nou adj    vrb nou adj"
+            },
+            {
+                "sentence": "(Skrivañ a ra) ar skolaerez nevez (d') ar gerent.",
+                "answer": "vrb dtm nou adj ppt dtm nou"
+            }
+        ],
+        "pronouns-verbs-prepositions": [
+            {
+                "sentence": "Da betra (e servij) ur forn?",
+                "answer": "ppt prn vrb dtm nou"
+            },
+            {
+                "sentence": "Ro he levr da Soazig.",
+                "answer": "vrb dtm nou ppt nou"
+            },
+            {
+                "sentence": "Petra zo war an daol?",
+                "answer": "prn vrb ppt dtm nou"
+            },
+            {
+                "sentence": "Gant piv emañ ma chupenn roz?",
+                "answer": "ppt prn vrb dtm nou adj"
+            },
+            {
+                "sentence": "Ni (a gejo) gant da vignoned fenoz.",
+                "answer": "prn vrb ppt dtm nou adv"
+            },
+            {
+                "sentence": "Hennezh (a gousk) e gwele ar gambrig.",
+                "answer": "prn vrb  ppt nou dtm nou"
+            },
+            {
+                "sentence": "(Plijout a ra) da Yannig ar gouren.",
+                "answer": "vrb ppt nou dtm nou"
+            },
+            {
+                "sentence": "(Plijout a ra) din ar sonerezh?.",
+                "answer": "vrb ppt+prn dtm nou"
+            },
+            {
+                "sentence": "(Paeañ a rin) evit Erwan ha te.",
+                "answer": "vrb ppt nou cjt prn"
+            },
+            {
+                "sentence": "Gant ur roñfl (eo bet debret) hemañ ha honnezh.",
+                "answer": "ppt dtm nou vrb prn cjt prn"
+            },
+            {
+                "sentence": "Me (a selaou) ouzh ar (c'honter).",
+                "answer": "prn vrb ppt dtm nou"
+            },
+            {
+                "sentence": "Deomp dezhi!",
+                "answer": "vrb  ppt+prn"
+            }
+        ],
+        "nouns-pronouns-verbs-conjunctions": [
+            {
+                "sentence": "Laouen eo ar skoliadez rak un notenn vat (he deus tapet).",
+                "answer": "adv vrb dtm nou cjt dtm nou adj vrb"
+            },
+            {
+                "sentence": "Soubenn an tri zraig: dour, holen ha baraig.",
+                "answer": "nou dtm adj nou nou nou cjt nou"
+            },
+            {
+                "sentence": "Er skol (ez eus) levrioù bras ha brav.",
+                "answer": "ppt+dtm nou vrb nou adj cjt adj"
+            },
+            {
+                "sentence": "Me (n') (am eus) ket naon (c'hoazh).",
+                "answer": "prn adv vrb adv nou adv"
+            },
+            {
+                "sentence": "Ar breur hag ar (c’hoar) (a c’hoarzh) kalz.",
+                "answer": "dtm nou cjt dtm nou vrb adv"
+            },
+            {
+                "sentence": "Hemañ zo diwezhat kenañ, met (n') eo ket e faot.",
+                "answer": "prn vrb adj adv cjt adv vrb adv dtm nou"
+            },
+            {
+                "sentence": "Koumoul bras ha teñval zo.",
+                "answer": "nou adj cjt adj vrb"
+            },
+            {
+                "sentence": "Ar (c'hazh) pe ar (c'hi) (en deus debret) ar wastell.",
+                "answer": "dtm nou cjt dtm nou vrb dtm nou"
+            },
+            {
+                "sentence": "Hi (a ra) diouzhtu he (labour-noz) pa erru (d') ar gêr.",
+                "answer": "prn vrb adv dtm nou cjt vrb ppt dtm nou"
+            },
+            {
+                "sentence": "Gant Izabel, ni yelo pell.",
+                "answer": "ppt nou prn vrb adv"
+            },
+            {
+                "sentence": "Ma kar homañ an arzoù (e vo) hi plijet gant ar film.",
+                "answer": "cjt vrb prn dtm nou vrb prn vrb ppt dtm nou"
+            },
+            {
+                "sentence": "Peogwir out te berniet gant da labour (ez an) da reiñ dorn dit.",
+                "answer": "cjt vrb prn vrb  ppt dtm nou vrb ppt vrb nou ppt+prn"
+            }
+        ],
+        "interjections": [
+            {
+                "sentence": "Koukoug Maï!",
+                "answer": "itj nou"
+            },
+            {
+                "sentence": "Setu ul labour diaes, alato!",
+                "answer": "prn dtm nou adj itj"
+            },
+            {
+                "sentence": "(You hou hou)! Me ('m eus tapet) anezhañ.",
+                "answer": "itj prn vrb prn"
+            },
+            {
+                "sentence": "Sell ('ta) piv!",
+                "answer": "vrb itj prn"
+            },
+            {
+                "sentence": "Deus buan amañ, ale!",
+                "answer": "vrb adv adv itj"
+            },
+            {
+                "sentence": "Hopala, petra (emaoc’h oc’h ober)?",
+                "answer": "itj   prn vrb"
+            },
+            {
+                "sentence": "O, (torret eo) ma (c'hreion).",
+                "answer": "itj vrb dtm  nou"
+            },
+            {
+                "sentence": "(Ec'h)! fall eo ar boued!",
+                "answer": "itj adj vrb dtm  nou"
+            }
+        ],
+        "determiners-nouns-pronouns-verbs-prepositions-conjunctions": [
+            {
+                "sentence": "Gant ar bus (e veajan) kalz ha pell.",
+                "answer": "ppt dtm nou  vrb adv cjt adv"
+            },
+            {
+                "sentence": "Deuomp da bourmen er (c’hoad) bremañ!",
+                "answer": "vrb ppt vrb ppt+dtm nou adv"
+            },
+            {
+                "sentence": "Pa vez glav (e chom) ar vugale en ti.",
+                "answer": "cjt  vrb nou vrb dtm nou ppt+dtm nou"
+            },
+            {
+                "sentence": "Kaer eo da liorzh, avat!",
+                "answer": "adj vrb dm nou itj"
+            },
+            {
+                "sentence": "(Warc’hoazh) (e vo) al loar nevez.",
+                "answer": "adv vrb dtm nou adj"
+            },
+            {
+                "sentence": "Deomp ni da bourmen er (c'hoad) bras bremañ.",
+                "answer": "vrb prn ppt vrb ppt+dtm nou adj adv"
+            },
+            {
+                "sentence": "Ma fell dit (e c'hellan) tuchantik sikour (ac'hanout).",
+                "answer": "cjt vrb ppt+prn vrb  adv   vrb prn"
+            },
+            {
+                "sentence": "Evit gouel ar skol (e kan) ar skolidi war al leurenn.",
+                "answer": "ppt nou dtm nou vrb dtm nou ppt dtm nou"
+            },
+            {
+                "sentence": "Gant an azen (eo bet debret) ar (c’harotez) hag ar pour.",
+                "answer": "ppt dtm nou vrb dtm nou cjt dtm nou"
+            },
+            {
+                "sentence": "Dit eo ar boned ruz?",
+                "answer": "ppt+prn vrb dtm nou adj"
+            },
+            {
+                "sentence": "Diouzh an noz (e nij) al (logod-dall).",
+                "answer": "ppt dtm nou vrb dtm nou"
+            },
+            {
+                "sentence": "Skuizh int peogwir (e labouront) start.",
+                "answer": "adj vrb cjt vrb adv"
+            }
+        ]
+    },
+    "syntax": [
+        {
+            "code": "nou",
+            "wordClass": "Anv",
+            "image": "1.svg"
+        },
+        {
+            "code": "dtm",
+            "wordClass": "Ger-mell",
+            "image": "2.svg"
+        },
+        {
+            "code": "adj",
+            "wordClass": "Anv-gwan",
+            "image": "3.svg"
+        },
+        {
+            "code": "prn",
+            "wordClass": "Raganv",
+            "image": "4.svg"
+        },
+        {
+            "code": "vrb",
+            "wordClass": "Verb",
+            "image": "5.svg"
+        },
+        {
+            "code": "cjt",
+            "wordClass": "Stagell",
+            "image": "7.svg"
+        },
+        {
+            "code": "ppt",
+            "wordClass": "Araogenn",
+            "image": "8.svg"
+        },
+        {
+            "code": "itj",
+            "wordClass": "Estlammadell",
+            "image": "9.svg"
+        },
+        {
+            "code": "adv",
+            "wordClass": " Adverb",
+            "image": "10.svg"
+        }
+    ]
+}
