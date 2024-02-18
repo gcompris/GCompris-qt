@@ -36,7 +36,9 @@ localisation:
   availableLanguages:
     - en_GB
     - en_US
+    - ar_AR
     - az_AZ
+    - bg_BG
     - br_FR
     - be_BY
     - ca_ES
@@ -44,11 +46,13 @@ localisation:
     - cs_CZ
     - de_DE
     - el_GR
+    - eo_EO
     - es_ES
     - et_EE
     - eu_ES
     - fi_FI
     - fr_FR
+    - gl_ES
     - he_IL
     - hr_HR
     - hu_HU
@@ -68,6 +72,7 @@ localisation:
     - sl_SI
     - sq_AL
     - sv_FI
+    - sw_TZ
     - tr_TR
     - uk_UA
     - zh_TW
