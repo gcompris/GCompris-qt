@@ -371,6 +371,8 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
+        // Needed to get keyboard focus on Tutorial
+        Keys.forwardTo: tutorialSection
         Keys.onPressed: Activity.handleKeys(event)
 
         //--- Debugging zone.
