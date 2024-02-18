@@ -2383,6 +2383,10 @@ Copyright: 2024 Divakaran Payyan Kandanchirakkal
            2024 Aiswarya Kaitheri Kandoth
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_classes/resource/grammar_classes-ro.json
+Copyright: 2024 Horia Pelle
+License: CC-BY-SA-4.0
+
 Files: src/activities/graph-coloring/graph-coloring.svg
 Copyright: 2016-2017 Timothée Giet
            2016-2017 Ilya Bizyaev
