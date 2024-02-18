@@ -443,12 +443,12 @@ function analyzeExercise(level, exercise) {
     parsed.classes = parsed.answer.replace(/  +/g, ' ').split(/ /)              // Clear multiple spaces and extract classes
 
     var tempStr = parsed.sentence                                               // Work in a temporary string
-    tempStr = tempStr.replace(/([\\'|’])/g,"$1 ")                               // Single quote as word delimiter
     var parentheses = tempStr.match(/\([^\(\)]+\)/g)                            // Extract parentheses blocks in an array
     var regex = new RegExp(punctuation, "g");                                   // Build regular expression with punctuation
     tempStr = tempStr.replace(regex,' ')                                        // Punctuation is replaced by spaces
     tempStr = tempStr.replace(/ +/g, ' ').trim()                                // Clear multiple spaces
     tempStr = tempStr.replace(/\([^\(\)]+\)/g,"\t")                             // Replace parentheses blocks with a tabulation char
+    tempStr = tempStr.replace(/([\\'|’])/g,"$1 ")                               // Single quote as word delimiter
     parsed.words = tempStr.split(/ /)                                           // Cleared string can be splitted now
     if (parentheses !== null) {
         var idx = 0
