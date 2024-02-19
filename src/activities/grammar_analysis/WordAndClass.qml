@@ -211,7 +211,11 @@ Item {
             if (classList[j] !== "") currentOrder++
         }
         buildProposition()
-        if (wordText.trim() !== wordText.replace(/\s+/,'').replace(/\s+/,''))             // Check for spaces between words (it was parentheses).
+        var regex = new RegExp(Activity.punctuation, "g"); // Build regular expression with punctuation
+        var wordWithoutPunctuation = wordText.replace(regex,' ')  // Punctuation is replaced by spaces
+        var wordWithoutPunctuationAndSpaces = wordWithoutPunctuation.replace(/\s+/,'').replace(/\s+/,'')
+
+        if (wordWithoutPunctuation.trim() !== wordWithoutPunctuationAndSpaces)             // Check for spaces between words (it was parentheses).
           // We replace twice, one for the spaces before the word, one for the ones after
             wordText = "<u>" + wordText + "</u>"
     }

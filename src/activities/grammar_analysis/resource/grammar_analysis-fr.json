@@ -29,6 +29,9 @@
       },
       { "sentence": "La fleur ('est) jolie."
       , "answer":   "dtm vrb dtm vrb"
+      },
+      { "sentence": "(Paris-Roubaix) Paris-Roubaix"
+      , "answer":   "dtm vrb dtm"
       }
     ],
       "lithuanian" : [
@@ -40,6 +43,9 @@
       },
       { "sentence": "Lit - ua - nian."
       , "answer":   "dtm vrb dtm"
+      },
+      { "sentence": "„Kanarėlis“ – duoda Šmurliukui  – plunksną / plunksną."
+      , "answer":   "dtm vrb dtm dtm dtm"
       }
     ]
   },

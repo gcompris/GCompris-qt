@@ -13,7 +13,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 // Punctuation includes symbols for all writing systems
-const punctuation = "\\,|\\.|:|!|¡|;|\\?|¿|\\\"|«|»|“|”|„|؟|،|。|，|：|？|！|>|<|&|#|=|-|\\*"
+const punctuation = "\\,|\\.|:|!|¡|;|\\?|¿|\\\"|«|»|“|”|„|؟|،|。|，|：|？|！|>|<|&|#|=|-|–|/|\\*"
 
 const dataUrl = "qrc:/gcompris/src/activities/grammar_analysis/resource/"
 const svgUrl = dataUrl + "svg/"
