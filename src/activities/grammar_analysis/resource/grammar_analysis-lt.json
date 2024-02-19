@@ -1,0 +1,180 @@
+{
+  "levels": [
+    {
+      "objective": "Pažymėk daiktavardžius, veiksmažodžius ir būdvardžius.",
+      "difficulty": "1",
+      "exercise": "small",
+      "goal": "dai vei bud"
+    },
+    {
+      "objective": "Pažymėk šias savarankiškas kalbos dalis.",
+      "difficulty": "2",
+      "exercise": "medium",
+      "goal": "dai vei bud iva ska priev"
+    },
+    {
+      "objective": "Pažymėk šias kalbos dalis.",
+      "difficulty": "3",
+      "exercise": "large",
+      "goal": "dai vei bud iva ska priev priel jun dal jau ist"
+    }
+  ],
+  "dataset" : {
+    "small" : [
+      { "sentence": "Kanarėlis duoda Šmurliukui plunksną."
+      , "answer":   "dai       vei   dai        dai"
+      },
+      { "sentence": "Šmurliuko tėtis sužvejojo dailų moterišką batelį."
+      , "answer":   "dai       dai   vei       bud   bud       dai"
+      },
+      { "sentence": "Vanagas nori sulesti Šmurliuką Bambaliuką."
+      , "answer":   "dai     vei  vei     dai       dai"
+      },
+      { "sentence": "Miškais ateina ruduo."
+      , "answer":   "dai     vei    dai"
+      },
+      { "sentence": "Tada pasirodė maža mergaitė su paspirtuku."
+      , "answer":   "priev vei    bud    dai     priel dai"
+      },
+      { "sentence": "Kartą gyveno tinginė dramblienė, vardu Deizė."
+      , "answer":   "dai    vei    dai    dai         dai   dai"
+      },
+      { "sentence": "Žmonės padovanojo jai pūkų patalus."
+      , "answer":   "dai    vei        iva dai  dai"
+      },
+      { "sentence": "Londone, dideliame name, gyveno žmogus, pavarde ponas Volingtonas."
+      , "answer":   "dai       bud       dai   vei    dai     dai     dai   dai"
+      },
+      { "sentence": "Medaus kvapas pažadina saldžius sapnus."
+      , "answer":   "dai    dai    vei      bud      dai"
+      }
+    ],
+    "medium" : [
+      { "sentence": "Netoliese vaikščiojo girininkas Pypkinis."
+      , "answer":   "priev     vei         dai       dai"
+      },
+      { "sentence": "Ji išgėrė visą vonią šnypščiančio limonado."
+      , "answer":   "iva vei   iva  dai   vei          dai"
+      },
+      { "sentence": "Grįžtu namo, kol saulė dar nenusileido."
+      , "answer":   "vei    priev jun dai   dal vei"
+      },
+      { "sentence": "Eisva mudu abudu / Žaliojon giružėn abudu."
+      , "answer":   "vei   iva  iva    bud      dai     iva"
+      },
+      { "sentence": "Kur aš judu mačiau?"
+      , "answer":   "priev iva iva vei"
+      },
+      { "sentence": "Petras kažkodėl nesėdo už stalo."
+      , "answer":   "dai    priev    vei   priel dai"
+      },
+      { "sentence": "To, ko nėra, nereikia bijoti."
+      , "answer":   "iva iva vei  vei      vei "
+      },
+      { "sentence": "Pro debesis, pro šiaurės vėją pabiro saulės trupiniai."
+      , "answer":   "priel dai    priel dai   dai  vei    dai    dai"
+      },
+      { "sentence": "Jis niekada neišeidavo iš namų neišskleidęs skėčio."
+      , "answer":   "iva priev   vei        priel dai vei        dai"
+      }
+    ],
+    "large" : [
+      { "sentence": "Durininkas vilkėjo mėlyną eilutę su sidabrinėmis sagomis ir žiūrėjo, kad viskas būtų gerai."
+      , "answer":   "dai        vei     bud    dai    priel bud       dai     jun vei     jun  iva   vei  priev "
+      },
+      { "sentence": "Ar nukritęs medis miške sukėlė garsą, jei jo niekas negirdėjo?"
+      , "answer":   "dal vei     dai   dai   vei    dai   jun iva iva    vei"
+      },
+      { "sentence": "„Ūūū, kur tu?“ - sušaukė mama, ieškodama, kur slepiasi jos žaidžiantis vaikas."
+      , "answer":   "jau  priev iva   vei     dai   vei        jun vei      iva vei         dai"
+      },
+      { "sentence": "Oi ne ne ne, gerbiamasis kolega, nesutinku, kad protingai pasirinkote investiciją."
+      , "answer":   "jau dal dal dal vei      dai     vei        jun priev     vei         dai"
+      },
+      { "sentence": "Petras, tai pasakodamas, šluostės rankove nuo kaktos gausiai tekantį prakaitą ir greitai alsavo."
+      , "answer":   "dai     iva vei          vei      dai    priel dai   priev   vei     dai      jun priev   vei"
+      },
+      { "sentence": "„Kakarekū!“ - gaidys taip smarkiai suriko, jog visi kaimo gyventojai pabudo."
+      , "answer":   "ist           dai    dal  priev    vei     jun iva  dai   dai        vei"
+      },
+      { "sentence": "Prieš keliolika metų – gal penkiolika – įvyko Antano vestuvės su Karolina."
+      , "answer":   "priel iva       dai    dal ska          vei   dai    dai    priel dai"
+      },
+      { "sentence": "Visiška nesąmonė – kodėl turiu mokėti net penkis šimtus eurų už tokį atsainų darbą?!"
+      , "answer":   "bud     dai        priev vei   vei    dal ska    ska    dai priel iva bud    dai"
+      },
+      { "sentence": "Pasalomis, slapstydamos prieinu prie to medžio, taikau jau lipt, ji šust! ant kito."
+      , "answer":   "priev      vei          vei     priel iva dai   vei    dal vei  iva ist  priel iva"
+      },
+      { "sentence": "Ohoho! Tokio didelio moliūgo mūsų ūkyje jau seniai nebuvo."
+      , "answer":   "jau    iva   bud     dai     iva  dai   dal priev  vei"
+      },
+      { "sentence": "Sutikti pakelėje valstiečiai jo nebesveikino, nebekėlė kepurių ir dažnas žiūrėjo į jį su panieka."
+      , "answer":   "vei     dai      dai         iva vei          vei      dai    jun iva    vei priel iva priel dai"
+      },
+      { "sentence": "Vakaras. Nereikia nieko, / Tik sėdėti ir žiūrėt, / Kaip ta saulė mus palieka, / Ir lyg vakaras žėrėt."
+      , "answer":   "dai      vei      iva     jun vei    jun vei     jun iva dai   iva vei      jun priev dai   vei"
+      },
+      { "sentence": "Vilkas, visko priėdęs, drykt pro langą iššoko, žvirblis purpt pro duris išlėkė."
+      , "answer":   "dai     iva   vei      ist   priel dai  vei    dai      ist   priel dai vei"
+      }
+    ]
+   },
+  "syntax" : [
+    {
+      "code": "dai",
+      "wordClass": "Daiktavardis",
+      "image": "1.svg"
+    },
+    {
+      "code": "bud",
+      "wordClass": "Būdvardis",
+      "image": "2.svg"
+    },
+    {
+      "code": "vei",
+      "wordClass": "Veiksmažodis",
+      "image": "3.svg"
+    },
+    {
+      "code": "iva",
+      "wordClass": "Įvardis",
+      "image": "4.svg"
+    },
+    {
+      "code": "ska",
+      "wordClass": "Skaitvardis",
+      "image": "5.svg"
+    },
+    {
+      "code": "priev",
+      "wordClass": "Prieveiksmis",
+      "image": "6.svg"
+    },
+    {
+      "code": "priel",
+      "wordClass": "Prielinksnis",
+      "image": "7.svg"
+    },
+    {
+      "code": "jun",
+      "wordClass": "Jungtukas",
+      "image": "8.svg"
+    },
+    {
+      "code": "dal",
+      "wordClass": "Dalelytė",
+      "image": "9.svg"
+    },
+    {
+      "code": "jau",
+      "wordClass": "Jaustukas",
+      "image": "10.svg"
+    },
+    {
+      "code": "ist",
+      "wordClass": "Ištiktukas",
+      "image": "11.svg"
+    }
+  ]
+}
