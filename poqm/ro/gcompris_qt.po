@@ -1,4 +1,4 @@
-# Horia PELLE <horricane@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023.
+# Horia PELLE <horricane@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024.
 # Ovidiu-Florin BOGDAN <ovidiu.b13@gmail.com>, 2015, 2016.
 # Viorel-Cătălin Răpițeanu <rapiteanu.catalin@gmail.com>, 2016.
 # Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022.
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-06-01 08:36+0200\n"
+"PO-Revision-Date: 2024-02-18 23:34+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: Romanian <kde-i18n-doc@kde.org>\n"
 "Language: ro\n"
@@ -45,143 +45,92 @@ msgstr "Validează răspunsurile"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele adiacente"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele adiacente lipsă."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Să înveți despre numerele prime."
+msgstr "Să înveți să ordonezi numere."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Compară numerele și alege semnul corespunzător."
+msgstr "Găsește numerele cerute și trage-le la locul corespunzător."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Numere între %1 și %2."
+msgstr "Găsește numere între 1 și 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Numere între %1 și %2."
+msgstr "Găsește numere între 0 și 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Numere între %1 și %2."
+msgstr "Găsește numere între 0 și 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numărul următor."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numărul precedent."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numărul intermediar."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele lipsă."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele următoare."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele precedente."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele intermediare."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Numere între %1 și %2."
+msgstr "Găsește numere între −10 și −1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Numere între %1 și %2."
+msgstr "Găsește numere între −10 și 10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Găsește ambele numere."
+msgstr "Găsește numerele lipsă"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -987,12 +936,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Învață tabla înmulțirii cu 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Tabla înmulțirii de la 1 la 10."
+msgstr "Exersează tabla înmulțirii de la 1 la 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1082,12 +1028,9 @@ msgid "Learn division table of 10."
 msgstr "Învață tabla împărțirii cu 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Tabla înmulțirii de la 1 la 10."
+msgstr "Exersează tabla înmulțirii de la 1 la 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1179,28 +1122,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Învață tabla scăderii cu 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Scade fracții zecimale până la 1."
+msgstr "Scăderi din numere de până la 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Scade fracții zecimale până la 1."
+msgstr "Scăderi din numere de până la 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Scade fracții zecimale până la 1."
+msgstr "Scăderi din numere de până la 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1290,28 +1224,19 @@ msgid "Learn addition table of 10."
 msgstr "Învață tabla adunării cu 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Adună fracții zecimale până la 1."
+msgstr "Adunări cu numere de până la 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Adună fracții zecimale până la 1."
+msgstr "Adunări cu numere de până la 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Adună steluțele, până la 10."
+msgstr "Adunări cu suma până la 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3249,13 +3174,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Rezolv Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3264,15 +3189,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Dezvoltă-ți abilitățile de gândire logică: legătura dintre date, deducția și "
+"localizarea spațială, în timp ce calculezi."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Completarea puzzle-lului necesită răbdare și abilitate logică."
+msgstr "Completarea puzzle-lului necesită răbdare și abilități aritmetice."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3285,39 +3209,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Selectează un număr în listă și fă clic pe poziția lui țintă pentru a "
+"completa grila. Fiecare număr trebuie să apară doar o dată pe o linie și pe "
+"o coloană. Cuștile sunt grupuri de celule care dau informații despre cum să "
+"fie completate. Cuștile constituite din mai mult de o celulă furnizează un "
+"rezultat și un operator: toate numerele din cușcă, combinate sub acțiunea "
+"unui operator, produc un rezultat. Cuștile constituite dintr-o singură "
+"celulă furnizează numărul care trebuie introdus."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Grile mici."
+msgstr "Grile mici cu operatorul + ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "Grile mici cu operatorii + și − ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "Grile mici cu operatorii + , − și × ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "Grile medii cu operatorii + , − și × ."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "Grile mari cu operatorii + , − , × și ÷ ."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4717,24 +4645,15 @@ msgid "Then, click on the OK button to validate your answer."
 msgstr "Apoi, fă clic pe butonul OK pentru a valida răspunsul."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
 "Doucet. Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Fotografia de pe Lună este cu drepturi de autor NASA. Sunetele din spațiu "
-"provin din Tuxpaint și Vegastrike, programe publicate sub licență GPL. "
-"Imaginile de transport sunt cu drepturi de autor pentru Franck Doucet. "
-"Datele de transport se bazează pe cele găsite la &lt;https://www.wikipedia."
-"org&gt;."
+"Fotografia de pe Lună este cu drepturi de autor NASA. Imaginile de transport "
+"sunt cu drepturi de autor pentru Franck Doucet. Datele de transport se "
+"bazează pe cele găsite la &lt;https://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4877,20 +4796,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Balonul cu aer al fraților Montgolfier"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoliana lui Clement Ader"
+msgstr "1890 Eoliana lui Clement Ader"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Zborul primului elicopter, a lui Paul Cornu"
+msgstr "1907 Zborul primului elicopter, a lui Paul Cornu"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4903,12 +4816,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Căruța cu aburi a lui Cugnot"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoliana lui Clement Ader"
+msgstr "1890 Eoliana lui Clement Ader"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4936,12 +4846,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Locomotiva „Racheta cu Abur” a lui Stephenson"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoliana lui Clement Ader"
+msgstr "1890 Eoliana lui Clement Ader"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4954,20 +4861,14 @@ msgid "Aviation"
 msgstr "Aviația"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eoliana lui Clement Ader"
+msgstr "1890 Eoliana lui Clement Ader"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Zburătorul III al fraților Wright"
+msgstr "1905 Zburătorul III al fraților Wright"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4990,12 +4891,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh trece Oceanul Atlantic"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Recordul de viteză a Hélènei Boucher (444 km/h)"
+msgstr "1934 Recordul de viteză al Hélènei Boucher (445 km/h)"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -5023,9 +4921,6 @@ msgid "Cars"
 msgstr "Mașini"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
 msgstr "1899 Mașinuța lui Renault"
@@ -9906,25 +9801,19 @@ msgstr "Află numărătorul și numitorul (cu un pătrat)."
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Friza"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Refă turnul dat."
+msgstr "Reprodu și completează friza."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "algorithm"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "algoritmul"
+msgstr "Învață algoritmi."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9933,51 +9822,35 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Reprodu friza în partea de sus. La unele nivele va trebui să completezi "
+"friza sau s-o reproduci după ce ai memorat-o."
 
 #: activities/frieze/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Săgețile Stânga și Dreapta: selectează un buton de simbol"
+msgstr "Săgețile Stânga și Dreapta: selectează un simbol"
 
 #: activities/frieze/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "Spațiu: alege un articol"
+msgstr "Spațiu: adaugă un simbol la friză"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select an item from the list"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Spațiu sau Enter: selectează un articol din listă"
+msgstr "Backspace sau Delete: înlătură ultimul simbol din friză"
 
 #: activities/frieze/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: validează răspunsul"
 
 #: activities/frieze/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space: switch between invisible and visible modes"
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr "Spațiu: comută între modul invizibil și modul vizibil"
+msgstr "Tab: comută între editarea frizei și vizualizarea modelului"
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Sunt pregătit"
@@ -9985,7 +9858,7 @@ msgstr "Sunt pregătit"
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Copiază această friză: 2 forme cu culori/simboluri diferite."
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9993,7 +9866,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Copiază această friză."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -10001,6 +9874,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Ține minte și copiază această friză: orice combinație de forme, culori/"
+"simboluri și mărimi."
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -10008,7 +9883,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Ține minte și copiază această friză."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -10016,11 +9891,13 @@ msgid ""
 "Copy and complete this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Copiază și completează această friză: modelele dintre 4 și 7, orice "
+"combinație de forme, culori/simboluri și mărimi."
 
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Copiază și completează această friză"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -10028,6 +9905,8 @@ msgid ""
 "Remember and copy this frieze: patterns between 4 and 7, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Ține minte și copiază această friză: modele între 4 și 7, orice combinație "
+"de forme, culori/simboluri și mărimi."
 
 #: activities/frieze/resource/13/Data.qml:13
 msgctxt "Data|"
@@ -10035,6 +9914,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Copiază și completează această friză: modele între 6 și 8, orice combinație "
+"de forme, culori/simboluri și mărimi."
 
 #: activities/frieze/resource/13/Data.qml:16
 #: activities/frieze/resource/2/Data.qml:17
@@ -10043,7 +9924,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Copiază și completează această friză."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -10051,21 +9932,25 @@ msgid ""
 "Remember and copy this frieze: patterns between 6 and 8, any combination of "
 "shapes, colors/signs and sizes."
 msgstr ""
+"Ține minte și copiază această friză: modele între 6 și 8, orice combinație "
+"de forme, culori/simboluri și mărimi."
 
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Copiază și completează această friză: 2 forme cu culori/simboluri diferite."
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Remember and copy this frieze: 2 shapes with different colors/signs."
 msgstr ""
+"Ține minte și copiază această friză: 2 forme cu culori/simboluri diferite."
 
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Copiază această friză: 3 sau 4 forme cu culori/simboluri diferite."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -10073,6 +9958,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"Copiază această friză: 3 sau 4 forme cu 2 mărimi și potențial aceleași "
+"culori/simboluri."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -10080,11 +9967,15 @@ msgid ""
 "Copy and complete this frieze: 3 or 4 shapes with 2 sizes and potentially "
 "same colors/signs."
 msgstr ""
+"Copiază și completează această friză: 3 sau 4 forme cu 2 mărimi și potențial "
+"aceleași culori/simboluri."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
 msgstr ""
+"Completează această friză: orice combinație de forme, culori/simboluri și "
+"mărimi."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
@@ -10093,6 +9984,8 @@ msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Copiază și completează această friză: orice combinație de forme, culori/"
+"simboluri și mărimi."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -14165,23 +14058,21 @@ msgstr "1 nu este un număr prim."
 #, qt-format
 msgctxt "Warning|"
 msgid "%1 is a non-prime number, its divisors are: %2"
-msgstr ""
+msgstr "%1 nu este un număr prim, divizorii lui sunt: %2"
 
 #. %1 is the number to find, %2 and %3 are two multiples of the number, %4 is a wrong number and %5 is the number to find.
 #: activities/gnumch-equality/Warning.qml:79
-#, fuzzy, qt-format
-#| msgctxt "Warning|"
-#| msgid "but %1 is not a multiple of %2."
+#, qt-format
 msgctxt "Warning|"
 msgid "Multiples of %1 include %2 or %3 but %4 is not a multiple of %5."
-msgstr "dar %1 nu este un multiplu de %2."
+msgstr "Multiplii de %1 includ %2 sau %3 but %4 nu este un multiplu de %5."
 
 #. the first argument corresponds to a number and the second argument corresponds to its divisors formatted as an unordered html format (<ul><li>number 1</li>...</ul>
 #: activities/gnumch-equality/Warning.qml:94
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "Divizorii lui %1 sunt: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -14370,32 +14261,26 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Read a graduated line"
-msgstr ""
+msgstr "Citește o riglă gradată"
 
 #. Help title
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr ""
+msgstr "Să citești valorile de pe o riglă gradată."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read a graduated line."
-msgstr "Să înveți circuitul apei în natură."
+msgstr "Să înveți să citești o riglă gradată."
 
 #. Help prerequisite
 #: activities/graduated_line_read/ActivityInfo.qml:21
 #: activities/graduated_line_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Even and odd numbers"
 msgctxt "ActivityInfo|"
 msgid "Reading and ordering numbers."
-msgstr "Numere pare și impare"
+msgstr "Să poți citi și ordona numere."
 
 #. Help manual
 #: activities/graduated_line_read/ActivityInfo.qml:23
@@ -14404,36 +14289,26 @@ msgid ""
 "Use the number pad or your keyboard to enter the value corresponding to the "
 "given spot on the graduated line."
 msgstr ""
+"Folosește tastatura numerică pentru a introduce valoarea corespunzătoare "
+"punctului dat de pe rigla gradată."
 
 #: activities/graduated_line_read/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: enter a number"
 msgctxt "ActivityInfo|"
 msgid "Digits: enter digits"
-msgstr "Cifre: introdu un număr"
+msgstr "Cifre: introdu cifre"
 
 #: activities/graduated_line_read/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Backspace: șterge ultima cifră în răspunsul tău"
+msgstr "Backspace: șterge ultima cifră"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Digits: type your answer"
 msgctxt "ActivityInfo|"
 msgid "Delete: reset your answer"
-msgstr "Cifre: scrie rezultatul"
+msgstr "Delete: resetează  răspunsul dat"
 
 #: activities/graduated_line_read/ActivityInfo.qml:28
 #: activities/graduated_line_use/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
 msgstr "Spațiu sau Enter: îți validează răspunsul"
@@ -14441,108 +14316,75 @@ msgstr "Spațiu sau Enter: îți validează răspunsul"
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr ""
+msgstr "(limite variabile)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
-#, fuzzy
-#| msgctxt "advanced_colors|"
-#| msgid "Find the rust butterfly"
 msgctxt "GraduatedLineRead|"
 msgid "Find the requested number."
-msgstr "Găsește fluturele ruginiu"
+msgstr "Găsește numărul cerut."
 
 #: activities/graduated_line_read/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 5."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 1 și 5."
 
 #: activities/graduated_line_read/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 7."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 1 și 7."
 
 #: activities/graduated_line_read/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 1 and 10."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 1 și 10."
 
 #: activities/graduated_line_read/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 20."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 0 și 20."
 
 #: activities/graduated_line_read/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 50."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 0 și 50."
 
 #: activities/graduated_line_read/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 100."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 0 și 100."
 
 #: activities/graduated_line_read/resource/7/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între  0 și 1000."
 
 #: activities/graduated_line_read/resource/8/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 10 000."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 0 și 10 000."
 
 #: activities/graduated_line_read/resource/9/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Number to find between 0 and 1 000 000."
-msgstr "Numere între %1 și %2."
+msgstr "Număr de găsit între 0 și 1 000 000."
 
 #. Activity title
 #: activities/graduated_line_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use a graduated line"
-msgstr ""
+msgstr "Folosește o riglă gradată"
 
 #. Help title
 #: activities/graduated_line_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Place values on a graduated line."
-msgstr ""
+msgstr "Pune valori pe o riglă gradată."
 
 #. Help goal
 #: activities/graduated_line_use/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to use a calendar."
 msgctxt "ActivityInfo|"
 msgid "Learn to use a graduated line."
-msgstr "Să înveți cum să folosești un calendar. "
+msgstr "Să înveți să folosești o riglă gradată. "
 
 #. Help manual
 #: activities/graduated_line_use/ActivityInfo.qml:23
@@ -14551,108 +14393,89 @@ msgid ""
 "Use the arrows to move the cursor to the position corresponding to the given "
 "value on the graduated line."
 msgstr ""
+"Folosește săgețile pentru a mișca cursorul în poziția corespunzătoare "
+"valorii date de pe rigla gradată."
 
 #: activities/graduated_line_use/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: move the spaceship"
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the cursor"
-msgstr "Săgețile stânga/dreapta: mișcă nava spațială"
+msgstr "Săgețile stânga/dreapta: mișcă cursorul"
 
 #: activities/graduated_line_use/GraduatedLineUse.qml:10
 msgctxt "GraduatedLineUse|"
 msgid "Place the given number on the graduated line."
-msgstr ""
+msgstr "Plasează numărul dat pe rigla gradată."
 
 #: activities/graduated_line_use/resource/1/Data.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Ascending order, 5 defined numbers between 1 and 5."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 5."
-msgstr "Ordine crescătoare, 5 numere definite între 1 și 5."
+msgstr "De găsit gradație între 1 și 5."
 
 #: activities/graduated_line_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 7."
-msgstr "Ghicește un număr între 1 și %1."
+msgstr "De găsit gradație între 1 și 7."
 
 #: activities/graduated_line_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Guess a number between 1 and %1."
 msgctxt "Data|"
 msgid "Graduation to find between 1 and 10."
-msgstr "Ghicește un număr între 1 și %1."
+msgstr "De găsit gradație între 1 și 10."
 
 #: activities/graduated_line_use/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 20 and 29."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Rezultatul între 20 și 29."
+msgstr "De găsit gradație între 0 și 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Rezultatul între 30 și 50."
+msgstr "De găsit gradație între 0 și 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Result between 30 and 50."
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Rezultatul între 30 și 50."
+msgstr "De găsit gradație între 0 și 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000."
-msgstr ""
+msgstr "De găsit gradație între 0 și 1 000."
 
 #: activities/graduated_line_use/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 10 000."
-msgstr ""
+msgstr "De găsit gradație între 0 și 10 000."
 
 #: activities/graduated_line_use/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 1 000 000."
-msgstr ""
+msgstr "De găsit gradație între 0 și 1 000 000."
 
 #. Activity title
 #: activities/grammar_analysis/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analiză gramaticală"
 
 #. Help title
 #: activities/grammar_analysis/ActivityInfo.qml:20
 #: activities/grammar_classes/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Identify grammatical classes in the given sentences."
-msgstr ""
+msgstr "Identifică clasele gramaticale din propozițiile date."
 
 #. Help goal
 #: activities/grammar_analysis/ActivityInfo.qml:23
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Să înveți să identifici clasele gramaticale."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "Atribuie clasele gramaticale cerute cuvintelor corespunzătoare."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14660,26 +14483,29 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Selectează o clasă gramaticală din listă și atribui-o unui cuvânt, făcând "
+"clic pe boxa de sub un el."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
+"Dacă clasa gramaticală cerută nu se potrivește niciunui cuvânt, atunci nu o "
+"plasa în nicio boxă."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "Săgețile Sus/Jos și Tab: comută între clase și cuvinte"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "Săgețile Stânga și Dreapta: selectează un buton de simbol"
+msgstr ""
+"Săgețile Stânga/Dreapta: selectează elementele din șirul de clase și de "
+"cuvinte"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14688,31 +14514,30 @@ msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
 msgstr ""
+"Spațiu: atribuie clasa selectată cuvântului selectat și apoi selectează noul "
+"cuvânt"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace: delete the last digit in your answer"
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Backspace: șterge ultima cifră în răspunsul tău"
+msgstr "Backspace: selectează cuvântul precedent"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Analiză gramaticală"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "Învață să identifici clasele gramaticale."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "Găsește toate cuvintele corespunzătoare claselor gramaticale cerute."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14720,21 +14545,24 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Selectează o clasă gramaticală din listă, apoi atribui-o unui cuvânt făcând "
+"clic pe boxa de sub el."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
 msgstr ""
+"Nu alege nicio boxă dacă respectiva clasă nu se potrivește niciunui cuvânt."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Clase gramaticale"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "Găsește toate cuvintele corespunzătoare clasei gramaticale cerute."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14742,31 +14570,31 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Selectează clasa gramaticală din listă și atribui-o unui cuvânt făcând clic "
+"pe boxa de sub el."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
+"Nu alege nicio boxă dacă clasa respectivă nu corespunde niciunui cuvânt."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "gol"
+msgstr "Golește"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "Clase gramaticale"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "Atribuie clasa gramaticală cerută cuvintelor corespunzătoare."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14774,11 +14602,14 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"Selectează clasa gramaticală din listă, apoi atribui-o unui cuvânt făcând "
+"clic pe boxa de sub el."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr ""
+"Nu alege nicio boxă dacă clasa respectivă nu corespunde niciunui cuvânt."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -14938,109 +14769,91 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Ghicește 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Calculează pentru a obține 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Exersează calculele algebrice cu patru operatori."
+msgstr "Învață să calculezi folosind cei patru patru operatori."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
 "divisions."
-msgstr "Exersarea operațiilor de adunare, scădere, înmulțire și împărțire."
+msgstr ""
+"Să poți face calcule folosind adunările, scăderile, înmulțirile și "
+"împărțirile."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Folosește cele patru numere cu operatorii dați pentru a obține 24."
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Săgeți: navighează în interiorul unei zone"
+msgstr "Săgeți: navighează în interiorul numerelor și al operatorilor"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Spațiu sau Enter: selectează sau plasează un articol"
+msgstr ""
+"Spațiu sau Enter: selectează sau deselectează numărul sau operatorul curent"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Tastele operatoare (+, -, *, /): selectează operatorul"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace ori Delete: refă înapoi"
+msgstr "Backspace ori Delete: anulează ultima operație făcută"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Tab: comută între numere și operatori"
 
 #: activities/guess24/Guess24.qml:106
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Folosește cele patru numere cu operatorii dați pentru a obține 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "Rezolvabil cu + și − ."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "Rezolvabil cu + , − și × ."
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Înmulțiri."
+msgstr "Necesită înmulțire."
 
 #: activities/guess24/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr ""
+msgstr "Rezolvabil cu toți operatorii."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Împărțiri."
+msgstr "Necesită împărțire."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15833,12 +15646,9 @@ msgstr "Găsește instrumentul banjo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
-msgstr "Găsește instrumentul bongo"
+msgstr "Găsește bongo-urile"
 
 #: activities/instruments/instruments.js:166
 #: activities/instruments/instruments.js:211
@@ -19039,12 +18849,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filtru de dificultate:"
+msgstr "Filtru de dificultate"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -19052,12 +18859,9 @@ msgid "Language selector"
 msgstr "Selectorul de limbă"
 
 #: activities/menu/ConfigurationItem.qml:115
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Enable automatic downloads/updates of sound files"
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Activează descărcarea/actualizarea automată a fișierelor de sunet"
+msgstr "Activează descărcările/actualizările automate ale resurselor externe"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"
@@ -20111,7 +19915,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Evidențiază punctul următor"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -25706,18 +25510,13 @@ msgstr "Completarea puzzle-lului necesită răbdare și abilitate logică."
 
 #. Help manual
 #: activities/sudoku/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select a number or a symbol on the left and click on its target position. "
-#| "GCompris will not let you enter invalid answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
-"Selectează un număr sau un simbol din stânga și fă clic pe poziția lui "
-"țintă. GCompris nu te va lăsa să introduci date greșite."
+"Selectează un număr sau un simbol din listă și fă clic pe poziția lui țintă. "
+"GCompris nu te va lăsa să introduci un răspuns greșit."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26344,12 +26143,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Scrie tot cuvântul care cade, înainte ca el să atingă pământul."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translations added for: Slovenian, German, Galician."
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Traduceri adăugate pentru limbile slovenă, germană și galiciană."
+msgstr "Traduceri adăugate pentru limbile bulgară, galiciană și swahili."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:60 core/ChangeLog.qml:95
 #: core/ChangeLog.qml:98 core/ChangeLog.qml:104
@@ -26371,18 +26167,14 @@ msgid "Many bug fixes"
 msgstr "Multe corecții de erori"
 
 #: core/ChangeLog.qml:34
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option (--difficulty {value|min-max}) to start GCompris "
-#| "at specific difficulty"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
 "start-level level, to be used with --launch activity)"
 msgstr ""
-"O nouă opțiune pentru linia de comandă (--difficulty {value|min-max}), "
-"pentru a începe GCompris la un anumit nivel de dificultate."
+"O nouă opțiune pentru linia de comandă (--start-level nivel, pentru a fi "
+"folosită cu --launch activitate), pentru a începe GCompris direct cu o "
+"activitate la un anumit nivel de dificultate."
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -26703,14 +26495,11 @@ msgstr ""
 "fișiere care nu au fost încă instalate pe sistemul dvs."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr ""
 "Pentru a descărca fișierele de sunet necesare, mergeți în meniu la dialogul "
-"secțiunii Preferințe."
+"Configurare."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -26846,16 +26635,7 @@ msgstr ""
 "că folosiți pe scara de severitate nivelul \"Wishlist\"."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26867,12 +26647,12 @@ msgid ""
 "what you need."
 msgstr ""
 "Nu este necesar să fii dezvoltator software pentru a fi membru a echipei "
-"KDE. Te poți alătura echipelor naționale care traduc interfețele "
-"programelor. Poți furniza elemente grafice, teme, sunete și o documentație "
+"KDE. Te poți alătura echipelor lingvistice care traduc interfețele "
+"programului. Poți furniza elemente grafice, teme, sunete și o documentație "
 "îmbunătățită. Tu decizi!<br/><br/>Vizitează <a href=\"%1\">%1</a> pentru "
 "informații despre câteva proiecte la care poți participa.<br/><br/>Dacă ai "
-"nevoie de mai multe informații sau documentație, o vizită la <a href=\"%2\">"
-"%2</a> îți va furniza toate informațiile necesare."
+"nevoie de mai multe informații sau documentări, o vizită la <a href=\"%2\">"
+"%2</a> îți va furniza tot ce ai nevoie."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -27084,13 +26864,13 @@ msgstr "Suma de control a fișierului descărcat nu corespunde: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Nu s-au găsit voci pentru %1."
 
 #: core/DownloadManager.cpp:777
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Nu s-au găsit date pentru %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -27269,16 +27049,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Specifică la ce nivel să înceapă activitatea. Se folosește doar împreună cu "
+"--launch opțiune."
 
 #: core/main.qml:269
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Dorești să descarci acum următoarele resurse externe?"
+msgstr ""
+"Dorești să descarci sau să actualizezi automat următoarele resurse externe "
+"atunci când pornești GCompris?"
 
 #: core/main.qml:271
 msgctxt "main|"
@@ -27316,20 +27097,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Rulezi GCompris pentru prima oară."
 
 #: core/main.qml:324
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Ar trebui să verifici că reglajele aplicației tale, în special limba, este "
-"reglată corect, și că toate fișierele de sunet specifice pentru limba ta "
-"sunt instalate. Poți face acest lucru în dialogul meniului de Preferințe."
+"reglată corect. Poți face acest lucru în dialogul de Configurare."
 
 #: core/main.qml:326
 msgctxt "main|"
@@ -27353,16 +27127,15 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Unele activități au seturi noi de date disponibile. Vrei să resetezi "
+"selecția setului lor de date?"
 
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Aplică"
 
 #: core/main.qml:390
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Anulează"
