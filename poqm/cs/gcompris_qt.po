@@ -15469,8 +15469,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Mezerník nebo Enter: vybrat věc ze seznamu"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: potvrdit odpověď (pokud je vidět tlačítko OK)"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -21778,10 +21781,15 @@ msgstr ""
 "vyjádřena písmeny latinské abecedy."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Nauč se pravidla čtení Římských číslic a trénuj jejich převod z/do číslic "
 "arabských. Odpověď potvrď kliknutím na tlačítko OK."

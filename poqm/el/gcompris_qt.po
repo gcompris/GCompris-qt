@@ -16112,8 +16112,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Μπάρα διαστήματος ή Enter: Επιλογή αντικειμένου από τη λίστα."
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: Έλεγχος της απάντησης όταν το πλήκτρο ΟΚ είναι ορατό."
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22781,10 +22784,15 @@ msgstr ""
 "από συνδυασμούς γραμμάτων του λατινικού αλφαβήτου."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Μάθε τους κανόνες ανάγνωσης του ρωμαϊκού συστήματος αρίθμησης και κάνε "
 "μετατροπές από και προς τους αραβικούς αριθμούς. Πίεσε το πλήκτρο ΟΚ για να "

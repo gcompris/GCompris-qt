@@ -15607,8 +15607,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "സ്പെയ്സോ എന്ററോ: പട്ടികയിൽ നിന്നും ഒരിനം തിരഞ്ഞെടുക്കാൻ"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "എന്റർ: ഒകെ ബട്ടൺ ഉള്ളപ്പോൾ നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കാൻ"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22086,10 +22089,15 @@ msgstr ""
 "അക്ഷരമാലയിലെ അക്ഷരങ്ങൾ കൂട്ടിച്ചേർത്താണ് ഈ സമ്പ്രദായത്തിൽ സംഖ്യകൾ പ്രതിനിധാനം ചെയ്യുന്നത്."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "റോമൻ അക്കങ്ങൾ വായിക്കാനുള്ള നിയമങ്ങൾ പഠിച്ച് അവയെ അറബി അക്കങ്ങളിലേക്കും തിരിച്ചും മാറ്റാൻ "
 "പരിശീലിക്കുക. ഒകെ ബട്ടണിൽ ക്ലിക്കു ചെയ്ത് നിങ്ങളുടെ ഉത്തരം സ്ഥിരീകരിക്കുക."

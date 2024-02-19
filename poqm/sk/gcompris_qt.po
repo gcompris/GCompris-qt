@@ -16306,9 +16306,12 @@ msgid "Space or Enter: select an item from the list"
 msgstr ""
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
-msgstr ""
+msgid "Enter: validate your answer when the OK button is visible"
+msgstr "Enter: skontrolovať správnosť odpovede"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -23080,11 +23083,18 @@ msgid ""
 msgstr ""
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
+"Ak je odpoveď správna, napíšte zodpovedajúci výsledok a overte si odpoveď "
+"kliknutím na tlačidlo OK."
 
 #: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"

@@ -16864,9 +16864,12 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Spás nó Iontráil: roghnaigh mír ón liosta"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
-msgstr ""
+msgid "Enter: validate your answer when the OK button is visible"
+msgstr "Iontráil: dearbhaigh freagra"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -23485,11 +23488,16 @@ msgid ""
 msgstr ""
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Change the color by moving the sliders on the torches or by clicking on "
+#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
-msgstr ""
+"and from arabic numerals. Click on the OK button to validate your answer."
+msgstr "Chun an dath a mheaitseáil, bog na barraí sleamhnán ar na tóirsí"
 
 #: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"

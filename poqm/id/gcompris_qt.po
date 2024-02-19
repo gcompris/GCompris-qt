@@ -16148,8 +16148,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Spasi atau Enter: pilih benda dari daftar"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: setujui jawaban kamu ketika tombol OK terlihat"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22772,10 +22775,15 @@ msgstr ""
 "alfabet Latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Pelajari aturan untuk membaca angka Romawi dan berlatih mengubahnya ke angka "
 "arab atau sebaliknya. Klik pada tombol OK untuk menyetujui jawaban kamu."

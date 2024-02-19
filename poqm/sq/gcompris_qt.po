@@ -15886,8 +15886,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Tastet Space ose Enter: përzgjidhni një objekt prej listës"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr ""
 "Tasti Enter: vlerësoni përgjigjen tuaj, kur të jetë i dukshëm butoni OK"
 
@@ -22508,10 +22511,15 @@ msgstr ""
 "shkronjash nga alfabeti latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Mësoni rregullat si të lexoni numra romakë dhe ushtrohuni në shndërrimin e "
 "tyre në numra arabë dhe anasjelltas. Klikoni mbi butonin OK që të vlerësoni "

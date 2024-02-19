@@ -15427,8 +15427,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "空白鍵或 Enter：從清單中選取"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter 鍵：在「確定」鍵亮起時檢查您的答案"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -21683,10 +21686,15 @@ msgstr ""
 "常用方式。 該系統中的數字由拉丁字母的字母組合表示。"
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "學習閱讀羅馬數值系統的規則，練習從阿拉伯數字轉換為羅馬數字。按下「確定」鍵來"
 "查看您的答案是否正確。"

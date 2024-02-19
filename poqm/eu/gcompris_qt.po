@@ -15836,8 +15836,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Zuriunea edo Sartu: zerrendako elementu bat hautatzea"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Sartu: baliozkotu zure erantzuna «Ados» botoia ikusgai dagoenean"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22422,10 +22425,15 @@ msgstr ""
 "zenbakiak alfabeto latindarreko letra konbinazioak eginez adierazten dira."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Ikasi zenbaki erromatarrak irakurtzeko arauak eta trebatu zenbakiak "
 "arabiarrera eta arabiarretik bihurtzen. Egin klik «Ados» botoiari zure "

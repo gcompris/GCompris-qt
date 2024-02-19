@@ -15818,8 +15818,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Интервал или Enter: избиране на елемент от списъка"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: потвърждаване на отговора, когато бутонът OK е видим"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22405,10 +22408,15 @@ msgstr ""
 "от латинската азбука."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Научи правилата за разчитане на римски цифри и упражнявай преобразуването на "
 "числата във и от арабски цифри. Кликни върху бутона OK, за да потвърдиш "

@@ -15940,8 +15940,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Boşluq bə ya Enter: siyahıdan seçim edin"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: OLDU (OK) düyməsi göründükdə cavabınızı doğrulayın"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22490,10 +22493,15 @@ msgstr ""
 "ibarətdir."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Rum hərflərinin yazılma qaydasını və onların ərəb rəqəmlərinə və əksinə "
 "çevrilməsini öyrənin. Cavabınızı doğrulamaq üçün OLDU  düyməsinə vurun."

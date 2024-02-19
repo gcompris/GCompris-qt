@@ -16079,8 +16079,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Espace ou Entrée : sélectionner un élément de la liste"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Entrée : valider ta réponse"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22753,10 +22756,15 @@ msgstr ""
 "par des combinaisons de lettres de l'alphabet latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Apprends les règles qui permettent de lire les nombres romains et entraîne-"
 "toi à les convertir en nombres arabes. Clique sur le bouton « Ok » pour "

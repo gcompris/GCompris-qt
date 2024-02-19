@@ -17304,7 +17304,7 @@ msgstr ""
 
 #: activities/lang/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr ""
 
 #: activities/lang/ActivityInfo.qml:37
@@ -24849,11 +24849,19 @@ msgid ""
 msgstr ""
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Drag each image from the (vertical) box on the left to its "
+#| "(corresponding) name on the right. Click the OK button to check your "
+#| "answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
+"प्रत्येक छवि को (ऊर्ध्वाधर) बॉक्स से बाईं ओर उसके (संबंधित) नाम के दाईं ओर खींचें। अपना जवाब "
+"जांचने के लिए ठीक है बटन पर क्लिक करें"
 
 #: activities/roman_numerals/ActivityInfo.qml:25
 #, fuzzy

@@ -15823,8 +15823,11 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Barrenn-esaouiñ pe Mont-tre: dibab an dra er roll"
 
 #: activities/lang/ActivityInfo.qml:36
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
-msgid "Enter: validate your answer when the OK button is visible"
+msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Mont-tre: gwiriañ da respont p'emañ war-wel ar bouton OK"
 
 #: activities/lang/ActivityInfo.qml:37
@@ -22411,10 +22414,15 @@ msgstr ""
 "ar reizhiad-mañ zo e stumm lizherennoù kenstrollet eus al lizherenneg latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Desk ar reolennoù evit lenn niveroù roman ha pleustr evit treiñ niveroù "
 "roman e niveroù arab pe en tu-gin. Klik war ar bouton OK evit gwiriañ da "
