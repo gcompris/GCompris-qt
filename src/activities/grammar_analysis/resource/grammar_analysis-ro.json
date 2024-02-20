@@ -1,59 +1,59 @@
 {
   "levels": [
     {
-      "objective": "Găsește substantive, verbe și articole hotărâte.",
+      "objective": "Găsește substantive, verbe și articole.",
       "difficulty": "1",
       "exercise": "scurte",
-      "goal": "sbs vrb arh"
+      "goal": "sbs vrb art"
     },
     {
       "objective": "Găsește aceste clase gramaticale.",
       "difficulty": "2",
       "exercise": "medii",
-      "goal": "sbs vrb adj adv arh"
+      "goal": "sbs vrb adj adv art"
     },
     {
       "objective": "Găsește aceste clase gramaticale.",
       "difficulty": "3",
       "exercise": "lungi",
-      "goal": "sbs arh vrb adj adv ppt prn"
+      "goal": "sbs art vrb adj adv ppt prn"
     }
   ],
   "dataset" : {
     "scurte" : [
       { "sentence": "Floarea este foarte frumoasă."
-      , "answer":   "sbs+arh vrb adv adj"
+      , "answer":   "sbs+art vrb adv adj"
       },
       { "sentence": "Pisica își face toaleta."
-      , "answer":   "sbs+arh prn vrb sbs+arh"
+      , "answer":   "sbs+art prn vrb sbs+art"
       },
       { "sentence": "(Ding dong)! Soneria sună."
-      , "answer":   "itj sbs+arh vrb"
+      , "answer":   "itj sbs+art vrb"
       }
     ],
     "medii" : [
       { "sentence": "Această cremă fină de vanilie din raftul de jos miroase foarte bine."
-      , "answer":   "adj sbs adj ppt sbs ppt sbs+arh ppt adv vrb adv adv"
+      , "answer":   "adj sbs adj ppt sbs ppt sbs+art ppt adv vrb adv adv"
       },
       { "sentence": "Intrarea în colegiu este inaccesibilă până la noi notificări."
-      , "answer":   "sbs+arh ppt sbs vrb adj ppt ppt adj sbs"
+      , "answer":   "sbs+art ppt sbs vrb adj ppt ppt adj sbs"
       },
       { "sentence": "Câinele și pisica privesc cum înoată peștele."
-      , "answer":   "sbs+arh cjt sbs+arh vrb cjt vrb sbs+arh"
+      , "answer":   "sbs+art cjt sbs+art vrb cjt vrb sbs+art"
       },
       { "sentence": "Porumbelul umblă încet pe balcon."
-      , "answer":   "sbs+arh vrb adv ppt sbs"
+      , "answer":   "sbs+art vrb adv ppt sbs"
       }
     ],
     "lungi" : [
       { "sentence": "Ei lucrează zilnic de acasă în biroul lor nou."
-      , "answer":   "prn vrb adv ppt adv ppt sbs+arh adj adj"
+      , "answer":   "prn vrb adv ppt adv ppt sbs+art adj adj"
       },
       { "sentence": "Acum copiii cuminți își fac temele ca prieteni în camera de zi."
-      , "answer":   "adv sbs+arh adj prn vrb sbs+arh cjt sbs ppt sbs+arh ppt sbs"
+      , "answer":   "adv sbs+art adj prn vrb sbs+art cjt sbs ppt sbs+art ppt sbs"
       },
       { "sentence": "Acest vechi dans se numește tango, bunica și bunicul îl dansează deseori acasă."
-      , "answer":   "adj adj sbs prn vrb sbs sbs+arh cjt sbs+arh prn vrb adv adv"
+      , "answer":   "adj adj sbs prn vrb sbs sbs+art cjt sbs+art prn vrb adv adv"
       }
     ]
   },
@@ -64,8 +64,8 @@
       "image": "1.svg"
     },
     {
-      "code": "arh",
-      "wordClass": "Articol hotărât",
+      "code": "art",
+      "wordClass": "Articol",
       "image": "2.svg"
     },
     {

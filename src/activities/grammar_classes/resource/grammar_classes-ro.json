@@ -1,7 +1,7 @@
 {
   "levels": [
     {
-      "objective": "Găsește cuvinte.",
+      "objective": "Găsește substantive.",
       "difficulty": "1",
       "exercise": "scurte",
       "goal": "sbs"
@@ -13,10 +13,10 @@
       "goal": "vrb"
     },
     {
-      "objective": "Găsește articole hotărâte.",
+      "objective": "Găsește articole.",
       "difficulty": "2",
       "exercise": "medii",
-      "goal": "arh"
+      "goal": "art"
     },
     {
       "objective": "Găsește adjective.",
@@ -29,43 +29,185 @@
       "difficulty": "4",
       "exercise": "lungi",
       "goal": "adv"
+    },
+    {
+      "objective": "Găsește pronume.",
+      "difficulty": "5",
+      "exercise": "pronume",
+      "goal": "prn"
+    },
+    {
+      "objective": "Găsește prepoziții.",
+      "difficulty": "6",
+      "exercise": "prepoziții",
+      "goal": "ppt"
     }
   ],
   "dataset" : {
     "scurte" : [
       { "sentence": "Floarea este foarte frumoasă."
-      , "answer":   "sbs+arh vrb adv adj"
+      , "answer":   "sbs+art vrb adv adj"
       },
       { "sentence": "Pisica își face toaleta."
-      , "answer":   "sbs+arh prn vrb sbs+arh"
+      , "answer":   "sbs+art prn vrb sbs+art"
       },
       { "sentence": "(Ding dong)! Soneria sună."
-      , "answer":   "itj sbs+arh vrb"
+      , "answer":   "itj sbs+art vrb"
       }
     ],
     "medii" : [
       { "sentence": "Această cremă fină de vanilie din raftul de jos miroase foarte bine."
-      , "answer":   "adj sbs adj ppt sbs ppt sbs+arh ppt adv vrb adv adv"
+      , "answer":   "adj sbs adj ppt sbs ppt sbs+art ppt adv vrb adv adv"
       },
       { "sentence": "Intrarea în colegiu este inaccesibilă până la noi notificări."
-      , "answer":   "sbs+arh ppt sbs vrb adj ppt ppt adj sbs"
+      , "answer":   "sbs+art ppt sbs vrb adj ppt ppt adj sbs"
       },
       { "sentence": "Câinele și pisica privesc cum înoată peștele."
-      , "answer":   "sbs+arh cjt sbs+arh vrb cjt vrb sbs+arh"
+      , "answer":   "sbs+art cjt sbs+art vrb cjt vrb sbs+art"
       },
       { "sentence": "Porumbelul umblă încet pe balcon."
-      , "answer":   "sbs+arh vrb adv ppt sbs"
+      , "answer":   "sbs+art vrb adv ppt sbs"
       }
     ],
     "lungi" : [
       { "sentence": "Ei lucrează zilnic de acasă în biroul lor nou."
-      , "answer":   "prn vrb adv ppt adv ppt sbs+arh adj adj"
+      , "answer":   "prn vrb adv ppt adv ppt sbs+art adj adj"
       },
       { "sentence": "Acum copiii cuminți își fac temele ca prieteni în camera de zi."
-      , "answer":   "adv sbs+arh adj prn vrb sbs+arh cjt sbs ppt sbs+arh ppt sbs"
+      , "answer":   "adv sbs+art adj prn vrb sbs+art cjt sbs ppt sbs+art ppt sbs"
       },
       { "sentence": "Acest vechi dans se numește tango, bunica și bunicul îl dansează deseori acasă."
-      , "answer":   "adj adj sbs prn vrb sbs sbs+arh cjt sbs+arh prn vrb adv adv"
+      , "answer":   "adj adj sbs prn vrb sbs sbs+art cjt sbs+art prn vrb adv adv"
+      }
+    ],
+    "pronume" : [
+      { "sentence": "Eu încerc (să învăț) cât mai multe."
+      , "answer":   "prn vrb vrb prn adv prn"
+      },
+      { "sentence": "Tu le-(ai spus) asta cam târziu."
+      , "answer":   "prn prn vrb prn adv adv"
+      },
+      { "sentence": "El este ajutorul ei de nădejde."
+      , "answer":   "prn vrb sbs+art prn ppt sbs"
+      },
+      { "sentence": "Totuși, ea părea că îi aprobă comportamentul."
+      , "answer":   "adv prn vrb cjt prn vrb sbs+art"
+      },
+      { "sentence": "De asta v-(am spus) noi că lor le era foame."
+      , "answer":   "ppt prn prn vrb prn cjt prn prn vrb sbs"
+      },
+      { "sentence": "Observ că la voi acasă este mare veselie!"
+      , "answer":   "vrb cjt ppt prn sbs vrb adj sbs"
+      },
+      { "sentence": "Nici ei nu le-(au spus) lor chiar tot adevărul."
+      , "answer":   "adv prn adv prn vrb prn adv adj sbs+art"
+      },
+      { "sentence": "După mine, ele (ar trebui) deja (să plece)."
+      , "answer":   "ppt prn prn vrb adv vrb"
+      },
+      { "sentence": "Cine (a cumpărat) narcisele?"
+      , "answer":   "prn vrb sbs"
+      },
+      { "sentence": "Pe care i-(ai ajutat) la udat florile?"
+      , "answer":   "ppt prn prn vrb ppt vrb sbs+art"
+      },
+      { "sentence": "Înspre cine merge Maria?"
+      , "answer":   "ppt prn vrb sbs"
+      },
+      { "sentence": "Primăvara este anotimpul care înveselește natura."
+      , "answer":   "sbs vrb sbs prn vrb sbs"
+      },
+      { "sentence": "Grădinăritul este activitatea care mă relaxează."
+      , "answer":   "sbs vrb sbs prn prn vrb"
+      },
+      { "sentence": "Niciunul nu (a tăcut) la lecție."
+      , "answer":   "prn adv vrb ppt sbs"
+      },
+      { "sentence": "Nu mă tem de nimeni."
+      , "answer":   "adv prn vrb ppt prn"
+      },
+      { "sentence": "Al său este deosebit."
+      , "answer":   "art prn vrb adj"
+      },
+      { "sentence": "Îmi fac mâncarea care îmi place."
+      , "answer":   "prn vrb sbs prn prn vrb"
+      }
+    ],
+    "prepoziții" : [
+      { "sentence": "Începe (să miroasă) deja a vacanță."
+      , "answer":   "vrb vrb adv ppt sbs"
+      },
+      { "sentence": "Dacă o sun pe ea, sigur se supără."
+      , "answer":   "cjt prn vrb ppt prn adv prn vrb"
+      },
+      { "sentence": "Mergem împreună la ei, la ora șapte."
+      , "answer":   "vrb adv ppt prn ppt sbs nmr"
+      },
+      { "sentence": "Prin dreapta se merge spre dușuri."
+      , "answer":   "ppt sbs+art prn vrb ppt sbs+art"
+      },
+      { "sentence": "(Nu prea) îmi plac sucurile cu adaos de zahăr."
+      , "answer":   "adv prn vrb sbs+art ppt sbs ppt sbs"
+      },
+      { "sentence": "Sincer, (nu prea) îi pasă de noi."
+      , "answer":   "adj adv prn vrb ppt prn"
+      },
+      { "sentence": "Mi se pare mai liniște în clasă fără ea."
+      , "answer":   "prn prn vrb adv sbs ppt sbs ppt prn"
+      },
+      { "sentence": "Iarăși dorm pisicile sub geamul nostru."
+      , "answer":   "adv vrb sbs+art ppt sbs+art prn"
+      },
+      { "sentence": "Pe dânsa (am văzut)-o adineauri în curte."
+      , "answer":   "ppt prn vrb prn adv ppt sbs"
+      },
+      { "sentence": "Prin geam se vede bine."
+      , "answer":   "ppt sbs prn vrb adv"
+      },
+      { "sentence": "(Am păstrat) o prăjitură și pentru el."
+      , "answer":   "vrb art sbs cjt ppt prn"
+      },
+      { "sentence": "Mingea asta vine către tine."
+      , "answer":   "sbs+art prn vrb ppt prn"
+      },
+      { "sentence": "Nu pot spune nimic contra dumneavoastră."
+      , "answer":   "adv vrb vrb prn ppt prn"
+      },
+      { "sentence": "Dânsul (ar putea) sta lângă ea."
+      , "answer":   "prn vrb vrb ppt prn"
+      },
+      { "sentence": "(De la) est bate crivățul."
+      , "answer":   "ppt sbs vrb sbs+art"
+      },
+      { "sentence": "(De pe la) ora șase nu mai dorm."
+      , "answer":   "ppt sbs+art nmr adv adv vrb"
+      },
+      { "sentence": "Pârâul termal curge (pe lângă) parc."
+      , "answer":   "sbs+art adj vrb ppt sbs"
+      },
+      { "sentence": "Tu speri la viață (fără de) moarte?"
+      , "answer":   "prn vrb ppt sbs ppt sbs"
+      },
+      { "sentence": "Dinspre voi s-(a auzit) ceva."
+      , "answer":   "ppt prn prn vrb prn"
+      },
+      { "sentence": "Nu vreau (să vorbim) despre asta."
+      , "answer":   "adv vrb vrb ppt prn"
+      },
+      { "sentence": "Ușa (a fost) deschisă (de către) pompieri."
+      , "answer":   "sbs vrb vrb ppt sbs"
+      },
+      { "sentence": "Deasupra dulapului este tavanul."
+      , "answer":   "ppt sbs+art vrb sbs+art"
+      },
+      { "sentence": "Îmi place când stăm toți împrejurul mesei."
+      , "answer":   "prn vrb cjt vrb prn ppt sbs"
+      },
+      { "sentence": "Ei (au fost) atunci împotriva noastră."
+      , "answer":   "prn vrb adv ppt prn"
+      },
+      { "sentence": "Copiii fugeau repede înaintea lor."
+      , "answer":   "sbs+art vrb adv ppt prn"
       }
     ]
   },
@@ -76,8 +218,8 @@
       "image": "1.svg"
     },
     {
-      "code": "arh",
-      "wordClass": "Articol hotărât",
+      "code": "art",
+      "wordClass": "Articol",
       "image": "2.svg"
     },
     {
@@ -114,6 +256,11 @@
       "code": "itj",
       "wordClass": "Interjecție",
       "image": "9.svg"
+    },
+    {
+      "code": "nmr",
+      "wordClass": "Numeral",
+      "image": "10.svg"
     }
   ]
 }
