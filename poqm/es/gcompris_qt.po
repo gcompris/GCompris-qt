@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-30 20:36+0100\n"
+"PO-Revision-Date: 2024-02-19 17:27+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -15956,9 +15956,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Espacio o Intro: seleccionar un elemento de la lista"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Intro: validar la respuesta cuando el botón «Aceptar» sea visible"
@@ -22585,11 +22582,6 @@ msgstr ""
 "se representan mediante combinaciones de letras del alfabeto latino."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "

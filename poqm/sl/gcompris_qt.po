@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-18 09:57+0100\n"
+"PO-Revision-Date: 2024-02-19 08:33+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -15743,9 +15743,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Preslednica ali Enter: izberite predmet iz seznama"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: preverite odgovor, ko je viden gumb V redu"
@@ -22276,18 +22273,13 @@ msgstr ""
 "latinske abecede."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Naučite se pravil za branje rimskih številk in vadite pretvarjanje števil v "
-"in iz arabskih številk. Kliknite na gumb  V redu, da preverite svoj odgovor."
+"in iz arabskih števil. Kliknite na gumb V redu, da preverite svoj odgovor."
 
 #: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"

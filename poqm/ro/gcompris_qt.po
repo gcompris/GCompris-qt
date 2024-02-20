@@ -15963,9 +15963,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Spațiu sau Enter: selectează un articol din listă"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: validează răspunsul atunci când butonul OK este vizibil"
@@ -22604,11 +22601,6 @@ msgstr ""
 "alfabetul latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
