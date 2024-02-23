@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-12 21:50+0100\n"
+"PO-Revision-Date: 2024-02-22 22:37+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -21463,6 +21463,8 @@ msgid ""
 "A word is shown on the board. A list of words, displayed horizontally, will "
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
+"Na tabuli se objeví slovo. Bude se ukazovat seznam slov zobrazovaný postupně "
+"zleva doprava. Objevilo se v tom seznamu zadané slovo?"
 
 #: activities/readingh/Readingh.qml:299
 #, qt-format
@@ -21505,6 +21507,8 @@ msgid ""
 "A word is shown on the board. A list of words, displayed vertically, will "
 "appear and disappear. Did the given word appear in the list?"
 msgstr ""
+"Na tabuli se objeví slovo. Bude se ukazovat seznam slov zobrazovaný postupně "
+"shora dolů. Objevilo se v tom seznamu zadané slovo?"
 
 #. Activity title
 #: activities/redraw/ActivityInfo.qml:15
@@ -21712,7 +21716,7 @@ msgstr "Vyber si zobrazení domina"
 #: activities/reversecount/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count intervals"
-msgstr ""
+msgstr "Počítej intervaly"
 
 #. Help title
 #. ----------
@@ -21727,7 +21731,7 @@ msgstr "Tux má hlad. Pomoz mu najít ryby počítáním ke správnému kusu led
 #: activities/reversecount/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read numbers on a domino."
-msgstr ""
+msgstr "Umí číst čísla na dominu."
 
 #. Help manual
 #: activities/reversecount/ActivityInfo.qml:24
@@ -21737,6 +21741,9 @@ msgid ""
 "fish. Click the domino with the right mouse button to count backwards. When "
 "done, click on the OK button or hit the Enter key."
 msgstr ""
+"Klikni na domino, abys ukázal kolik ledových políček je mezi Tuxem a rybou. "
+"Klikni na domino pravým tlačítkem myši pro snížení počtu. Jakmile jsi hotov, "
+"klikni na tlačítko OK nebo stiskni klávesu Enter."
 
 #: activities/reversecount/resource/1/Data.qml:13
 #: activities/reversecount/resource/10/Data.qml:13
@@ -23118,7 +23125,7 @@ msgstr "Sečti počet bodů na dominu dříve, než dopadne na zem."
 #: activities/smallnumbers2/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr ""
+msgstr "Spočítej počet bodů v omezeném čase."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
@@ -24381,7 +24388,7 @@ msgid ""
 "Control the various parts of the submarine (the engine, ballast tanks and "
 "diving planes) to reach the end point."
 msgstr ""
-"Ovládání různých částí ponorky (motoru, zátěžových nádrží a hloubkových "
+"Ovládání různých částí ponorky (motoru, balastních nádrží a hloubkových "
 "kormidel) pro dosažení cíle."
 
 #: activities/submarine/ActivityInfo.qml:26
@@ -24452,22 +24459,22 @@ msgstr "-: zmenši úhel hloubkového kormidla"
 #: activities/submarine/Controls.qml:166
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
-msgstr ""
+msgstr "Levá balastní nádrž"
 
 #: activities/submarine/Controls.qml:274
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
-msgstr ""
+msgstr "Střední balastní nádrž"
 
 #: activities/submarine/Controls.qml:381
 msgctxt "Controls|"
 msgid "Right Ballast Tank"
-msgstr ""
+msgstr "Pravá balastní nádrž"
 
 #: activities/submarine/submarine.js:21
 msgctxt "submarine|"
 msgid "Move the submarine to the other side of the screen."
-msgstr ""
+msgstr "Přesuň ponorku na druhou stranu obrazovky."
 
 #: activities/submarine/submarine.js:22
 msgctxt "submarine|"
@@ -24475,28 +24482,30 @@ msgid ""
 "The leftmost item in the control panel is the engine of the submarine, "
 "indicating the current speed of the submarine."
 msgstr ""
+"Položka na ovládacím panelu nejvíce vlevo je motor ponorky, který ukazuje "
+"aktuální rychlost ponorky."
 
 #: activities/submarine/submarine.js:23
 msgctxt "submarine|"
 msgid "Increase or decrease the velocity of the submarine using the engine."
-msgstr ""
+msgstr "Zvýšení nebo snížení rychlosti ponorky pomocí motoru."
 
 #: activities/submarine/submarine.js:24
 msgctxt "submarine|"
 msgid ""
 "Press the + button to increase the velocity, or the - button to decrease the "
 "velocity."
-msgstr ""
+msgstr "Stiskem tlačítka + se zvýší rychlost, tlačítkem - se rychlost sníží."
 
 #: activities/submarine/submarine.js:27
 msgctxt "submarine|"
 msgid "The item next to the engine is the ballast tank."
-msgstr ""
+msgstr "Ta položka vedle motoru je balastní nádrž."
 
 #: activities/submarine/submarine.js:28
 msgctxt "submarine|"
 msgid "The ballast tanks are used to float or dive under water."
-msgstr ""
+msgstr "Balastní nádrže jsou používány pro plavání nebo potápění pod vodou."
 
 #: activities/submarine/submarine.js:29
 msgctxt "submarine|"
@@ -24504,6 +24513,8 @@ msgid ""
 "If the ballast tanks are empty, the submarine will float. If the ballast "
 "tanks are full of water, the submarine will dive underwater."
 msgstr ""
+"Pokud jsou balastní nádrže prázdné, ponorka bude plavat. Pokud jsou balastní "
+"nádrže plné vody, ponorka se bude potápět pod vodu."
 
 #: activities/submarine/submarine.js:30
 msgctxt "submarine|"
@@ -24511,6 +24522,8 @@ msgid ""
 "Turning the upper valve on or off will alternatively allow or stop the water "
 "from filling in the ballast tank, thus allowing it to dive underwater."
 msgstr ""
+"Otočením vyššího ventilu na zapnuto nebo vypnuto se buď zapíná nebo vypíná "
+"napouštění vody do balastní nádrže, aby mohlo dojít k potopení do hloubky."
 
 #: activities/submarine/submarine.js:31
 msgctxt "submarine|"
@@ -24519,6 +24532,8 @@ msgid ""
 "from flushing out the ballast tank, thus allowing it to float on the surface "
 "of the water."
 msgstr ""
+"Otočením nižšího ventilu na zapnuto nebo vypnuto se buď zapíná nebo vypíná "
+"vytlačování vody z balastní nádrže, aby se dalo plavat na povrchu vody."
 
 #: activities/submarine/submarine.js:34
 msgctxt "submarine|"
@@ -24526,6 +24541,7 @@ msgid ""
 "The rightmost item in the control panel controls the diving planes of the "
 "submarine"
 msgstr ""
+"Položka nejvíce vpravo na ovládacím panelu řídí hloubková kormidla ponorky"
 
 #: activities/submarine/submarine.js:35
 msgctxt "submarine|"
@@ -24533,6 +24549,8 @@ msgid ""
 "The diving planes in a submarine are used to control the depth of the "
 "submarine accurately once it is underwater."
 msgstr ""
+"Hloubková kormidla na ponorce se používají na přesnější ovládání hloubky "
+"ponorky jakmile je pod vodou."
 
 #: activities/submarine/submarine.js:36
 msgctxt "submarine|"
@@ -24540,6 +24558,8 @@ msgid ""
 "Once the submarine is moving underwater, increasing or decreasing the angle "
 "of the planes will increase and decrease the depth of the submarine."
 msgstr ""
+"Jakmile se ponorka pod vodou pohybuje, zvyšování nebo snižování úhlu "
+"kormidel zvýší nebo sníží hloubku ponorky."
 
 #: activities/submarine/submarine.js:37
 msgctxt "submarine|"
@@ -24547,22 +24567,23 @@ msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
+"Tlačítko + zvýší hloubku ponorky, zatímco tlačítko - hloubku ponorky sníží."
 
 #: activities/submarine/submarine.js:38
 msgctxt "submarine|"
 msgid "Grab the crown to open the gate."
-msgstr ""
+msgstr "Seber korunu, aby se ti otevřela brána."
 
 #: activities/submarine/submarine.js:39
 msgctxt "submarine|"
 msgid "Check out the help menu for the keyboard controls."
-msgstr ""
+msgstr "Pro informace o ovládání klávesnicí se podívej do nabídky Pomoc."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku, place unique symbols in a grid"
-msgstr ""
+msgstr "Sudoku, umísti jednotlivé symboly do mřížky"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
@@ -24586,6 +24607,13 @@ msgid ""
 "'givens'). Each row, column and region must contain only one instance of "
 "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
 msgstr ""
+"Cílem této skládanky je zadat symbol nebo číslici od 1 do 9 do každé buňky v "
+"mřížce. V oficiálním Sudoku má mřížka rozměry 9×9 a je tvořena podmřížkami "
+"(regiony) o rozměru 3×3. V GComprisu začínáme na nižších úrovních s "
+"jednodušší verzí s pomocí symbolů a bez regionů. Ve všech případech je na "
+"začátku mřížka zobrazena  předvyplněnými symboly nebo číslicemi, které jsou "
+"dané. Každý řádek, sloupec a region smí obsahovat každý ze symbolů nebo "
+"číslic právě jednou."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -24600,6 +24628,8 @@ msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
+"Vyber číslo nebo symbol v seznamu a klikni na jeho cílové umístění. GCompris "
+"ti nedovolí zadat nesprávnou odpověď."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -24654,6 +24684,20 @@ msgid ""
 "items are automatically selected in your current and future guesses until "
 "you un-mark them, by double clicking on them again."
 msgstr ""
+"Klikej na položky dokud nenajdeš to, co považuješ za správnou odpověď. Potom "
+"klikni na tlačítko OK. Zobrazí se hodnocení tvé odpovědi, u které se zobrazí "
+"buď černá tečka označující, že jsi našel správnou položku na správném "
+"umístění,  nebo bíla tečka označující, že jsi našel správnou položku, ale je "
+"na nesprávném umístění. V nižších úrovních ti také Tux pomocí černého "
+"čtverce ukazuje na správné položky na správném umístění a nebo bílým "
+"čtvercem na správné položky na nesprávném umístění. V úrovních 4 a 8 mohou "
+"být položky ukryty několikrát.<br/> Pro změnu položek můžeš použít i pravé "
+"tlačítko, které mění položku v opačném pořadí, nebo výběr položky ze "
+"zobrazené nabídky položek. Pokud na dané položce podržíš prst dvě sekundy, "
+"automaticky se vybere poslední položka vybraná na tomto umístění. Dvojklikem "
+"na předchozí vybranou položku v historii hádání můžeš položku označit jako "
+"správnou. Takto označené položky jsou automaticky vybrány v současném ale i "
+"budoucím zadání, dokud je neodznačíš opětovným dvojklikem."
 
 #: activities/superbrain/Superbrain.qml:141
 msgctxt "Superbrain|"
@@ -24694,6 +24738,13 @@ msgid ""
 "    1 parallelogram (sides of 1 and square root of 2)\n"
 "    "
 msgstr ""
+"Z Wikipedie, otevřené encyklopedie. Tangram je hlavolam na principu puzzle "
+"složený ze sedmi destiček geometrických tvarů: pět trojúhelníků,jeden "
+"čtverec a jeden rovnoběžník, které společně vytvářejí základní čtverec."
+"Kombinací těchto segmentů se skládají různé plošné obrazce: "
+"existujeminimálně 6500 možných variant. Tangramy se vyrábějí ze dřeva, "
+"plastu,papíru, keramiky, skla nebo slonoviny, zpravidla bývají jednotlivé "
+"kousky barevně odlišeny. "
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:31
@@ -25577,13 +25628,8 @@ msgstr "Licence"
 msgctxt "DialogAbout|"
 msgid "translator-credits"
 msgstr ""
-"Miloslav Trmač\n"
-"Naďa Pourová\n"
-"Martin Šín\n"
-"Martin Schwarz\n"
-"Kamil Páral\n"
-"Petr Kovář\n"
-"Marek Černocký"
+"Jan Papež<br/>Vít Pelčák<br/>Miloslav Trmač<br/>Naďa Pourová<br/>Martin "
+"Šín<br/>Martin Schwarz<br/>Kamil Páral<br/>Petr Kovář<br/>Marek Černocký<br/>"
 
 #: core/DialogAbout.qml:55
 #, qt-format
