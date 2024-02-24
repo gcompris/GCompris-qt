@@ -145,7 +145,7 @@
             },
             {
                 "sentence": "Chomit sioul (e-pad) an abadenn.",
-                "answer": "vrb adv adv dtm nou"
+                "answer": "vrb adv ppt dtm nou"
             },
             {
                 "sentence": "Te ne lavarez ket atav ar wirionez!",
@@ -232,7 +232,7 @@
                 "answer": "vrb ppt nou dtm nou"
             },
             {
-                "sentence": "(Plijout a ra) din ar sonerezh?.",
+                "sentence": "(Plijout a ra) din ar sonerezh.",
                 "answer": "vrb ppt+prn dtm nou"
             },
             {
@@ -332,7 +332,7 @@
                 "answer": "itj vrb dtm  nou"
             },
             {
-                "sentence": "(Ec'h)! fall eo ar boued!",
+                "sentence": "(Ec'h)! Fall eo ar boued!",
                 "answer": "itj adj vrb dtm  nou"
             }
         ],
