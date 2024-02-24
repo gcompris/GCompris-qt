@@ -138,7 +138,7 @@
                 "answer": "vrb ppt nou dtm nou"
             },
             {
-                "sentence": "(Plijout a ra) din ar sonerezh?.",
+                "sentence": "(Plijout a ra) din ar sonerezh.",
                 "answer": "vrb ppt+prn dtm nou"
             },
             {
@@ -173,7 +173,7 @@
             },
             {
                 "sentence": "Chomit sioul (e-pad) an abadenn.",
-                "answer": "vrb adv adj dtm nou"
+                "answer": "vrb adv ppt dtm nou"
             },
             {
                 "sentence": "Ar (plac'h) (a lenn) aketus an destenn hir.",
@@ -214,7 +214,7 @@
                 "answer": "itj vrb dtm  nou"
             },
             {
-                "sentence": "(Ec'h)! fall eo ar boued!",
+                "sentence": "(Ec'h)! Fall eo ar boued!",
                 "answer": "itj adj vrb dtm  nou"
             }
         ],
