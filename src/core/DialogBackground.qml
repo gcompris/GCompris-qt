@@ -141,7 +141,7 @@ Rectangle {
 
                 GCText {
                     id: textContent
-                    text: style + "<body>" + content + "</body>"
+                    text: instructionStyle + "<body>" + content + "</body>"
                     width: flick.width
                     height: flick.height - button0.height
                     anchors.top: iconImage.bottom
@@ -149,7 +149,7 @@ Rectangle {
                     fontSize: regularSize
                     wrapMode: TextEdit.Wrap
                     textFormat: TextEdit.RichText
-                    property string style: "<head><style>A {color: #191919;}</style></head>"
+                    readonly property string instructionStyle: "<head><style>A {color: #191919;}</style></head>"
                 }
             }
             // The scroll buttons

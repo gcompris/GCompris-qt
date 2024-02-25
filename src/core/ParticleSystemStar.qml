@@ -31,7 +31,7 @@ ParticleSystem {
     /// @cond INTERNAL_DOCS
 
     property alias emitter: clickedEmitter
-    property alias clip: imageParticle.clip
+    property alias particleClip: imageParticle.clip
     /// @endcond
 
     Emitter {

@@ -180,9 +180,9 @@ Rectangle {
                     width: instructionFlick.width
                     wrapMode: TextEdit.WordWrap
                     textFormat: TextEdit.RichText
-                    text: style + "<body>" + textIn + "</body>"
+                    text: instructionStyle + "<body>" + textIn + "</body>"
                     property string textIn
-                    property string style: "<HEAD><STYLE type='text/css'>A {color: #191919;}</STYLE></HEAD>"
+                    readonly property string instructionStyle: "<head><style type='text/css'>a {color: #191919;}</style></head>"
                 }
                 Loader {
                     id: extraLoader
