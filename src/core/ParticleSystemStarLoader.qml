@@ -48,6 +48,6 @@ Loader {
             item.opacity = 0
         }
     }
-    onLoaded: item.clip = clip
-    source: "ParticleSystemStar.qml"
+    onLoaded: item.particleClip = clip
+    source: "qrc:/gcompris/src/core/ParticleSystemStar.qml"
 }
