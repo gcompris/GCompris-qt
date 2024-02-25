@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2024-01-20 18:51+0100\n"
+"PO-Revision-Date: 2024-02-24 22:21+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -15803,12 +15803,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Spaco aŭ Enigu: elektu eron el la listo"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Enigu: validigu vian respondon kiam la OK butono estas videbla"
+msgstr "Enigu: konfirmu vian respondon kiam la Bone-butono estas videbla"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -22339,18 +22336,13 @@ msgstr ""
 "la latina alfabeto."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Lernu la regulojn por legi romiajn ciferojn kaj ekzercu konverti nombrojn al "
-"kaj de arabaj ciferoj. Alklaku la OK butonon por validigi vian respondon."
+"kaj de arabaj ciferoj. Alklaku la Bone-butonon por konfirmi vian respondon."
 
 #: activities/roman_numerals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
