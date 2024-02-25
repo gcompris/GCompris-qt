@@ -93,6 +93,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
 
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
+      CMAKE_ARGS -DBUILD_EXAMPLES=OFF
       SOURCE_DIR ${_box2d_source_dir}
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
