@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-19 21:25+0100\n"
+"PO-Revision-Date: 2024-02-25 15:11+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -334,7 +334,7 @@ msgstr "Atopa a bolboreta coral"
 #: activities/advanced_colors/advanced_colors.js:849
 msgctxt "advanced_colors|"
 msgid "Find the claret butterfly"
-msgstr "Atopa a bolboreta bordeos"
+msgstr "Atopa a bolboreta clareta"
 
 #. Color #000080
 #: activities/advanced_colors/advanced_colors.js:25
@@ -364,7 +364,7 @@ msgstr "Atopa a bolboreta cobalto"
 #: activities/advanced_colors/advanced_colors.js:483
 msgctxt "advanced_colors|"
 msgid "Find the cyan butterfly"
-msgstr "Atopa a bolboreta cian"
+msgstr "Atopa a bolboreta ciana"
 
 #. Color #954535
 #: activities/advanced_colors/advanced_colors.js:45
@@ -456,7 +456,7 @@ msgstr "Atopa a bolboreta turquesa"
 #: activities/advanced_colors/advanced_colors.js:141
 msgctxt "advanced_colors|"
 msgid "Find the absinthe butterfly"
-msgstr "Atopa a bolboreta absenta"
+msgstr "Atopa a bolboreta asenta"
 
 #. Color #C04000
 #: activities/advanced_colors/advanced_colors.js:146
@@ -511,7 +511,7 @@ msgstr "Atopa a bolboreta vermellón"
 #: activities/advanced_colors/advanced_colors.js:183
 msgctxt "advanced_colors|"
 msgid "Find the ceruse butterfly"
-msgstr "Atopa a bolboreta cerusita"
+msgstr "Atopa a bolboreta cerusa"
 
 #. Color #E5AA70
 #: activities/advanced_colors/advanced_colors.js:188
@@ -598,7 +598,7 @@ msgstr "Atopa a bolboreta carmesí"
 #: activities/advanced_colors/advanced_colors.js:255
 msgctxt "advanced_colors|"
 msgid "Find the celadon butterfly"
-msgstr "Atopa a bolboreta verde celedón"
+msgstr "Atopa a bolboreta celadón"
 
 #. Color #007BA7
 #: activities/advanced_colors/advanced_colors.js:260
@@ -780,7 +780,7 @@ msgstr "Atopa a bolboreta ameixa"
 #: activities/advanced_colors/advanced_colors.js:503
 msgctxt "advanced_colors|"
 msgid "Find the prussian blue butterfly"
-msgstr "Atopa a bolboreta azul prusia"
+msgstr "Atopa a bolboreta azul prusiano"
 
 #. Color #B7410E
 #: activities/advanced_colors/advanced_colors.js:403
@@ -1398,7 +1398,7 @@ msgstr "Secuencia alfabética."
 #: activities/alphabet-sequence/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can decode letters."
-msgstr "Podo decodificar letras."
+msgstr "Podo descodificar letras."
 
 #. Help manual
 #: activities/alphabet-sequence/ActivityInfo.qml:24
@@ -1544,7 +1544,7 @@ msgid ""
 "please remove the wire causing the short."
 msgstr ""
 "Coidado! O circuíto ten un bucle nunha fonte de voltaxe, ou un "
-"cortocircuíto. Elimina o cable culpable."
+"curtocircuíto. Elimina o cable culpable."
 
 #: activities/analog_electricity/cktsim.js:139
 msgctxt "cktsim|"
@@ -1900,7 +1900,7 @@ msgid ""
 "The conventional symbol for voltage is V. The unit of measure of voltage is "
 "volt under the International System of Units, which is denoted as V."
 msgstr ""
-"O símbolo do voltaxe é «V». A unidade de medida do voltaxe no SI é o voltio, "
+"O símbolo do voltaxe é «V». A unidade de medida do voltaxe no SI é o watt, "
 "cuxo símbolo é a letra «V»."
 
 #: activities/analog_electricity/TutorialDataset.qml:181
@@ -1925,7 +1925,7 @@ msgid ""
 "as Ω."
 msgstr ""
 "O símbolo da resistencia é «R». A unidade de medida da resistencia no SI é o "
-"ohmio, cuxo símbolo é «Ω»."
+"ohm, cuxo símbolo é «Ω»."
 
 #: activities/analog_electricity/TutorialDataset.qml:196
 msgctxt "TutorialDataset|"
@@ -2236,7 +2236,7 @@ msgstr "Frechas: navegar dentro do texto"
 #: activities/baby_wordprocessor/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Shift + Arrows: select a part of the text"
-msgstr "Mayús. + Frechas: seleccionar unha parte do texto"
+msgstr "Maiús. + Frechas: seleccionar unha parte do texto"
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -3984,7 +3984,7 @@ msgstr "Coloca os números PARES na dereita e os números IMPARES na esquerda"
 #: activities/categorization/resource/board/category_renewable.qml:19
 msgctxt "category_renewable|"
 msgid "Renewable"
-msgstr "Renobábel"
+msgstr "Renovábel"
 
 #: activities/categorization/resource/board/category_renewable.qml:23
 #: activities/categorization/resource/board/category_renewable.qml:32
@@ -4731,6 +4731,7 @@ msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
 msgstr "Coloca cada obxecto na data na que se inventou."
 
+# well-spelled: Stephenson
 #: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
@@ -4791,6 +4792,7 @@ msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globo de aire quente dos irmáns Montgolfier de 1783"
 
+# well-spelled: Stephenson
 #: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
@@ -4801,6 +4803,7 @@ msgctxt "board5_4|"
 msgid "Transportation"
 msgstr "Transporte"
 
+# well-spelled: Stephenson
 #: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
@@ -5285,12 +5288,12 @@ msgstr "Demasiado amarelo"
 #: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
-msgstr "Non hai suficiente cián"
+msgstr "Non hai suficiente ciano"
 
 #: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much cyan"
-msgstr "Demasiado cián"
+msgstr "Demasiado ciano"
 
 #. Activity title
 #: activities/color_mix_light/ActivityInfo.qml:15
@@ -5487,7 +5490,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Frechas arriba e abaixo: Escolle un par de números da lsita"
+msgstr "Frechas arriba e abaixo: Escolle un par de números da lista"
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5702,7 +5705,7 @@ msgstr "Castelo de Eilean Donan"
 #: activities/details/resource/board/board11_0.qml:14
 msgctxt "board11_0|"
 msgid "Gizah Pyramids, Egypt"
-msgstr "Pirámides de Guiza, Exipto"
+msgstr "Pirámides de Gizeh, Exipto"
 
 #: activities/details/resource/board/board12_0.qml:14
 msgctxt "board12_0|"
@@ -6819,7 +6822,7 @@ msgstr "Aprender os animais da granxa"
 msgctxt "ActivityInfo|"
 msgid "Learn about farm animals, what sounds they make, and interesting facts."
 msgstr ""
-"Aprende os animais da granza, os sons que fan, e detalles interesantes."
+"Aprende os animais da granxa, os sons que fan, e detalles interesantes."
 
 #. Help goal
 #: activities/explore_farm_animals/ActivityInfo.qml:20
@@ -7052,7 +7055,7 @@ msgid ""
 "can be sheared and used to produce textile fibre."
 msgstr ""
 "A ovella berra. A maioría das razas están recubertas dun vélaro de la. O "
-"vélaro pode raparse e usarse para producir fibra textil."
+"vélaro pode raparse e usarse para producir fibra téxtil."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
@@ -7128,8 +7131,8 @@ msgid ""
 "the religion center of Yucatan for a while."
 msgstr ""
 "Chichén Itzá, que significa «na boca do pozo de Itzá», é unha cidade maia da "
-"Península de Iucatán, en México, entre Valladolid e Mérida. Construiuse "
-"antes do descubrimento de América, e probabelmente servese de centro "
+"Península de Iucatán, en México, entre Valladolid e Mérida. Construíuse "
+"antes do descubrimento de América, e probabelmente servise de centro "
 "relixioso de Iucatán durante un tempo."
 
 #: activities/explore_monuments/resource/board/board1.qml:30
@@ -7251,8 +7254,8 @@ msgid ""
 "the Mughal emperor Shah Jahan reigned to house the tomb of his favorite wife "
 "of three, Mumtaz Mahal."
 msgstr ""
-"O Taj Mahal é un mausoleo de mármore branco situado na riveira sur do río "
-"Yamuna na cidade incia de Agra. Encargouno en 1632 o emperador mogol Shah "
+"O Taj Mahal é un mausoleo de mármore branco situado na ribeira sur do río "
+"Yamuna na cidade india de Agra. Encargouno en 1632 o emperador mongol Shah "
 "Jahan para aloxar a tumba da favorita das súas 3 esposas, Mumtaz Mahal."
 
 #: activities/explore_monuments/resource/board/board1.qml:88
@@ -7327,7 +7330,7 @@ msgid ""
 "for visitors who arrive in India for the first time."
 msgstr ""
 "A Porta da India é un dos puntos de referencia máis únicos da India, e está "
-"situado en Bombai. A colosal estrutura construiuse en 1924. Situada na punta "
+"situado en Bombai. A colosal estrutura construíuse en 1924. Situada na punta "
 "de Wellington Pier, a porta atópase fronte ao porto de Bombai, e está "
 "rodeada polo Mar Arábigo no distrito de Colaba. A Porta da India é un "
 "monumento que marca os principais portos e consiste nunha atracción "
@@ -7338,7 +7341,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:54
 msgctxt "board2|"
 msgid "Great Stupa"
-msgstr "Gran Estupa"
+msgstr "Gran Stupa"
 
 #: activities/explore_monuments/resource/board/board2.qml:52
 msgctxt "board2|"
@@ -7349,7 +7352,7 @@ msgid ""
 "relics of the Buddha. It was crowned by the chatra, a parasol-like structure "
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
-"A Gran Estupa de Sanchi é a estrutura de pedra máis antiga da India e "
+"A Gran Stupa de Sanchi é a estrutura de pedra máis antiga da India e "
 "encargouna orixinalmente o emperador Aśoka no terceiro século antes de "
 "Cristo. O seu núcleo era unha simple estrutura de ladrillo hemisférica "
 "construída sobre as reliquias de Buda. Coroouse coa chatra, unha estrutura "
@@ -7412,10 +7415,10 @@ msgid ""
 "the heart of the city of Mysore. The palace was initially built by the "
 "Wodeyar kings in the 14th century."
 msgstr ""
-"O Palacio de Mysore ou Palacio do Maharaxa de Mysore é un dos monumentos "
-"máis grandes e máis espectaculares de India. Tamén se coñece como Amba "
-"Vilas, e está situada no corazón da cidade de Mysore. O palacio construírono "
-"os reis Wodeiar no século XIV."
+"O Palacio de Mysore ou Palacio do Maraxá de Mysore é un dos monumentos máis "
+"grandes e máis espectaculares de India. Tamén se coñece como Amba Vilas, e "
+"está situada no corazón da cidade de Mysore. O palacio construírono os reis "
+"Wodeyar no século XIV."
 
 #: activities/explore_monuments/resource/board/board2.qml:95
 #: activities/explore_monuments/resource/board/board2.qml:98
@@ -7432,8 +7435,8 @@ msgid ""
 "become synonymous with the monument. The Charminar is a massive and "
 "impressive structure with four minarets."
 msgstr ""
-"O Charminar en Hyderabad construiuno en Mohammed Quli Qutab Shah en 1591. "
-"Construiu o Charminar para marcar o final da praga da cidade de Hyderabad. "
+"O Charminar en Hyderabad construíuno en Mohammed Quli Qutab Shah en 1591. "
+"Construíu o Charminar para marcar o final da praga da cidade de Hyderabad. "
 "Desde a construción do Charminar, a cidade de Hyderabad converteuse case nun "
 "sinónimo do monumento. O Charminar é unha estrutura masiva e impresionante "
 "con catro minaretes."
