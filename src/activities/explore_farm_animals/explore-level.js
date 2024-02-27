@@ -94,6 +94,7 @@ function previousLevel() {
     // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
     items.audioVoices.stop()
 
+    items.currentQuestion = getCurrentQuestion();
     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
        repeat();
     }
