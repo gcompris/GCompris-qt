@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-25 15:11+0100\n"
+"PO-Revision-Date: 2024-02-27 07:11+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -4731,7 +4731,8 @@ msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
 msgstr "Coloca cada obxecto na data na que se inventou."
 
-# well-spelled: Stephenson
+# well-spelled: Stephenson's
+#
 #: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
@@ -4792,7 +4793,8 @@ msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "Globo de aire quente dos irmáns Montgolfier de 1783"
 
-# well-spelled: Stephenson
+# well-spelled: Stephenson's
+#
 #: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
@@ -4803,7 +4805,8 @@ msgctxt "board5_4|"
 msgid "Transportation"
 msgstr "Transporte"
 
-# well-spelled: Stephenson
+# well-spelled: Stephenson's
+#
 #: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
@@ -4887,7 +4890,7 @@ msgstr "Coches"
 #: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "Microcarro de Renault de 1898"
+msgstr "Microcoche de Renault de 1898"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -7457,7 +7460,7 @@ msgid ""
 msgstr ""
 "O Victoria Memorial construíuse para conmemorar o cume do Imperio Británico "
 "na India. Representa a cúspide arquitectónica da cidade de Kolkata e mestura "
-"o mellor da arquitectura británica e da arquitectura mugal. A entrada do "
+"o mellor da arquitectura británica e da arquitectura mogol. A entrada do "
 "Victoria Memorial construíuse co mármore branco de Makrana."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
@@ -7593,8 +7596,8 @@ msgid ""
 "stands almost 50 m high and is on three levels – the longest measuring 275 m "
 "– created a technical as well as an artistic masterpiece."
 msgstr ""
-"A Ponte do Gard construiuse pouco despois da era cristiana para permitir que "
-"o acueduto de Nîmes (de case 50 km de lonxitude) cruce o Río Gard. Os "
+"A Ponte do Gard construíuse pouco despois da era cristiá para permitir que o "
+"acueduto de Nîmes (de case 50 km de lonxitude) cruce o Río Gard. Os "
 "arquitectos romanos e enxeñeiros hidráulicos que deseñaron a ponte, de case "
 "50 m de altura e de tres niveis —o máis longo deles de 275 m—, crearon unha "
 "obra mestra, tanto a nivel técnico como a nivel artístico."
@@ -7614,7 +7617,7 @@ msgid ""
 "century."
 msgstr ""
 "Este anfiteatro romano data do primeiro século antes de Cristo e foi "
-"orixinalmente un lugar para batallas de gladiadores e carreras de carros na "
+"orixinalmente un lugar para batallas de gladiadores e carreiras de carros na "
 "antigüidade. Ao longo do tempo pasou por moitas modificacións, a última "
 "delas durante o século XIX."
 
@@ -7675,7 +7678,7 @@ msgid ""
 "importance. It is one of the largest and most important medieval Gothic "
 "buildings in Europe."
 msgstr ""
-"A atracción estrella de Aviñón é o Palacio dos Papas, un basto castelo con "
+"A atracción estrela de Aviñón é o Palacio dos Papas, un basto castelo con "
 "gran importancia histórica, relixiosa e arquitectónica. Trátase dun dos "
 "edificios europeos góticos medievais máis grandes e importantes."
 
@@ -7714,7 +7717,7 @@ msgid ""
 "Exhibition in 1889 for the centenary of the French Revolution. At the time "
 "of its inauguration, it was the world’s tallest monument."
 msgstr ""
-"A torre metálica famosa a nivel mundial construiuse para a Exibición "
+"A torre metálica famosa a nivel mundial construíuse para a Exhibición "
 "Internacional en París de 1889 para celebrar o centenario da Revolución "
 "Francesa. No momento da súa inauguración, tratouse do monumento máis alto do "
 "mundo."
@@ -7792,7 +7795,7 @@ msgstr ""
 "en pe, e simboliza a reunificación do leste e o oeste de Berlín. Construída "
 "no século XVIII, a Porta de Brandeburgo é a entrada de Unter den Linden, o "
 "prominente bulevar de tileiros que no pasado levaba ao palacio dos monarcas "
-"prusios. Considérase un dos puntos de referencia europeos máis famosos."
+"prusianos. Considérase un dos puntos de referencia europeos máis famosos."
 
 #: activities/explore_monuments/resource/board/board4.qml:51
 #: activities/explore_monuments/resource/board/board4.qml:54
@@ -7810,7 +7813,7 @@ msgid ""
 msgstr ""
 "A Catedral de Berlín é a igrexa máis grande da cidade, e serve de centro "
 "vital para a igrexa protestante da Alemaña. A catedral, cuxa fama vai alén "
-"da súa freguesía e de Berlín, atraé ano tras ano milleiros de visitantes da "
+"da súa freguesía e de Berlín, atrae ano tras ano milleiros de visitantes da "
 "Alemaña e do exterior."
 
 #: activities/explore_monuments/resource/board/board4.qml:62
@@ -8104,10 +8107,10 @@ msgid ""
 "exhibits offer perspectives on U.S. history, particularly the divisions "
 "between North and South that eventually resulted in the war."
 msgstr ""
-"Contruído orixinalmente como estrutura defensiva despois da Guerra de 1812, "
+"Construído orixinalmente como estrutura defensiva despois da Guerra de 1812, "
 "foi nesta fortificación costeira do Porto de Charleston, en Carolina do Sur, "
 "onde se produciron os primeiros tiros da Guerra Civil. Dentro do Fort "
-"Sumter, unha serie de exibicións ofrecen unha perspectiva sobre a historia "
+"Sumter, unha serie de exhibicións ofrecen unha perspectiva sobre a historia "
 "dos Estados Unidos, en concreto as divisións entre o Norte e o Sur que levou "
 "finalmente á guerra."
 
@@ -8223,7 +8226,7 @@ msgstr ""
 "período do Antigo Exipto. A pirámide ten 104 metros de altura, o que a "
 "converte na cuarta pirámide máis alta de Exipto. A pirámide construíuse con "
 "pedras de calcaria vermella, de aí o nome. Os exipcios denominárona «el-"
-"heram el-guatguaat» («a pirámide dos morcegos»)."
+"heram el-watwaat» («a pirámide dos morcegos»)."
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -8420,7 +8423,7 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board2.qml:55
 msgctxt "board2|"
 msgid "Scarlet macaw"
-msgstr "Arara macao"
+msgstr "Araracanga"
 
 #: activities/explore_world_animals/resource/board/board2.qml:53
 msgctxt "board2|"
@@ -8428,7 +8431,7 @@ msgid ""
 "The scarlet macaw lives in South America and is a big and bright colored "
 "parrot, able to learn up to 100 words!"
 msgstr ""
-"A arara macao habita en América do Sur e é un papagaio grande e de cores "
+"A araracanga habita en América do Sur e é un papagaio grande e de cores "
 "rechamantes, capaz de aprender ata 100 palabras!"
 
 #: activities/explore_world_animals/resource/board/board2.qml:63
@@ -9979,7 +9982,7 @@ msgstr "Alasca"
 #: activities/geo-country/resource/board/board10_0.qml:108
 msgctxt "board10_0|"
 msgid "Hawaii"
-msgstr "Havai"
+msgstr "Hawai"
 
 #. State of America: Texas
 #: activities/geo-country/resource/board/board10_0.qml:115
@@ -11016,7 +11019,7 @@ msgstr "Muntenia"
 #: activities/geo-country/resource/board/board16_0.qml:38
 msgctxt "board16_0|"
 msgid "Northern Dobruja"
-msgstr "Dobruia Setentrional"
+msgstr "Dobruxa do Norte"
 
 #. Historical Region of Romania: Moldavia
 #: activities/geo-country/resource/board/board16_0.qml:45
@@ -11348,7 +11351,7 @@ msgstr "Baixa Saxonia"
 #: activities/geo-country/resource/board/board2_0.qml:80
 msgctxt "board2_0|"
 msgid "Mecklenburg-Vorpommern"
-msgstr "Mecklenburgo-Vorpomerania"
+msgstr "Mecklemburgo-Antepomerania"
 
 #. State of Germany: Hesse
 #: activities/geo-country/resource/board/board2_0.qml:87
@@ -11372,7 +11375,7 @@ msgstr "Bremen"
 #: activities/geo-country/resource/board/board2_0.qml:108
 msgctxt "board2_0|"
 msgid "Brandenburg"
-msgstr "Brandenburgo"
+msgstr "Brandeburgo"
 
 #. State of Germany: Berlin
 #: activities/geo-country/resource/board/board2_0.qml:115
@@ -11384,7 +11387,7 @@ msgstr "Berlín"
 #: activities/geo-country/resource/board/board2_0.qml:122
 msgctxt "board2_0|"
 msgid "Bavaria"
-msgstr "Bavária"
+msgstr "Baviera"
 
 #. State of Germany: Baden-Württemberg
 #: activities/geo-country/resource/board/board2_0.qml:129
@@ -11741,7 +11744,7 @@ msgstr "Kocaeli"
 #: activities/geo-country/resource/board/board5_0.qml:137
 msgctxt "board5_0|"
 msgid "Kirsehir"
-msgstr "Kırşehir"
+msgstr "Querxequir"
 
 #. Province of Turkey: Kırklareli
 #: activities/geo-country/resource/board/board5_0.qml:144
@@ -12949,7 +12952,7 @@ msgstr "Illas Ultramarinas Menores dos Estados Unidos"
 #: activities/geography/resource/board/board14_0.qml:165
 msgctxt "board14_0|"
 msgid "Hawaii"
-msgstr "Havai"
+msgstr "Hawai"
 
 #: activities/geography/resource/board/board14_0.qml:172
 msgctxt "board14_0|"
@@ -13484,7 +13487,7 @@ msgstr "Guinea"
 #: activities/geography/resource/board/board7_0.qml:164
 msgctxt "board7_0|"
 msgid "Guinea Bissau"
-msgstr "Guinea-Bisau"
+msgstr "Guinea-Bissau"
 
 #: activities/geography/resource/board/board7_0.qml:171
 msgctxt "board7_0|"
@@ -13833,11 +13836,11 @@ msgid ""
 "you can do like with a mouse or swipe anywhere in the direction you want to "
 "move and tap to swallow the numbers."
 msgstr ""
-"Se tes un teclado podes usar as teclas de frecha para mover e a barra "
-"espazadora para tragar os números. Se tes un rato, podes premer o bloque "
-"canda a túa posición para mover e premelo de novo para tragar os números. Se "
-"usas unha pantalla táctil, podes facer o mesmo que co rato, ou podes "
-"arrastrar na dirección na que queres ir e tocar para tragar os números."
+"Se tes un teclado podes usar as teclas de frecha para mover e o espazador "
+"para tragar os números. Se tes un rato, podes premer o bloque canda a túa "
+"posición para mover e premelo de novo para tragar os números. Se usas unha "
+"pantalla táctil, podes facer o mesmo que co rato, ou podes arrastrar na "
+"dirección na que queres ir e tocar para tragar os números."
 
 #: activities/gnumch-equality/ActivityInfo.qml:27
 #: activities/gnumch-factors/ActivityInfo.qml:27
@@ -13957,7 +13960,7 @@ msgstr "Coidado, un monstro!"
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr "Factores de Grumch"
+msgstr "Factores de Gnumch"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -13966,8 +13969,8 @@ msgid ""
 "Guide the Number Muncher to all the factors of the number at the bottom of "
 "the screen."
 msgstr ""
-"Guía o Tragón de números aos divisores do número que hai na parte inferior "
-"da pantalla."
+"Guía o traga-números aos divisores do número que hai na parte inferior da "
+"pantalla."
 
 #. Help goal
 #: activities/gnumch-factors/ActivityInfo.qml:20
@@ -14050,7 +14053,7 @@ msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
 msgstr ""
-"Guía o Tragón de números a todos os múltiplos do número que está na parte "
+"Guía o traga-números a todos os múltiplos do número que está na parte "
 "inferior da pantalla."
 
 #. Help manual
@@ -14091,7 +14094,7 @@ msgstr "Primos de Gnumch"
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Guía o Tragón de números a todos os números primos."
+msgstr "Guía o traga-números a todos os números primos."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
@@ -14745,7 +14748,7 @@ msgid ""
 "Guess the algebraic expression and drag the tiles to get a result equal to "
 "the Guesscount."
 msgstr ""
-"Adiviña a expresión alxebraica e arrastra as pezas para obter un resultado "
+"Adiviña a expresión alxébrica e arrastra as pezas para obter un resultado "
 "igual ao adiviñado."
 
 #. Help goal
@@ -16739,7 +16742,7 @@ msgid ""
 "The solver algorithm is described on Wikipedia. To know more about the "
 "Lights Off game: &lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
 msgstr ""
-"O algoritmo solucionador está descrito en Wikipedia. Para saber máis sobre o "
+"O algoritmo de solución está descrito en Wikipedia. Para saber máis sobre o "
 "xogo Apagar as luces, consulte: &lt;https://en.wikipedia.org/wiki/"
 "Lights_Out_(game)&gt;"
 
@@ -17194,10 +17197,9 @@ msgid ""
 "move Tux in visible mode."
 msgstr ""
 "Usa as teclas de frecha ou pasa o dedo pola pantalla para mover a Tux ata a "
-"porta. Usa a icona de labirinto ou a barra espazadora para cambiar entre os "
-"modos visíbel e invisíbel. O modo visíbel simplemente fornece unha "
-"indicación da posición onde estás, como un mapa. No modo visíbel non podes "
-"mover a Tux."
+"porta. Usa a icona de labirinto ou o espazador para cambiar entre os modos "
+"visíbel e invisíbel. O modo visíbel simplemente fornece unha indicación da "
+"posición onde estás, como un mapa. No modo visíbel non podes mover a Tux."
 
 #: activities/mazeinvisible/ActivityInfo.qml:23
 #: activities/mazerelative/ActivityInfo.qml:24
@@ -21078,14 +21080,14 @@ msgstr "Este é o pentagrama de clave de fa para notas de tonalidade baixa."
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
 msgstr ""
-"As teclas brancas son teclas sostidas e bemois. As notas sostidas teñen un "
+"As teclas brancas son teclas sostidas e bemoles. As notas sostidas teñen un "
 "signo ♯."
 
 #: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
 msgid "Each black key has two names: flat and sharp. Flat notes have ♭ sign."
 msgstr ""
-"Cada tecla negra ten dous nomes: bemol e sostida. As notas bemois teñen un "
+"Cada tecla negra ten dous nomes: bemol e sostida. As notas bemoles teñen un "
 "signo ♭."
 
 #: activities/piano_composition/piano_composition.js:36
@@ -24975,6 +24977,7 @@ msgstr ""
 "2. A duración dun ano nun planeta <b>aumenta coa distancia ao Sol</b>."
 "<br><font color=\"#3bb0de\">%1</font>"
 
+# well-spelled: ariñeiros, ellos, oman, azás, antando, nha, oite
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
 #: activities/solar_system/SolarSystem.qml:358
 msgctxt "SolarSystem|"
@@ -26298,6 +26301,7 @@ msgctxt "DialogAbout|"
 msgid "License"
 msgstr "Licenza"
 
+# well-spelled: Gallaecio, Parodper
 #. Replace this string with your names, one name per line.
 #: core/DialogAbout.qml:46 core/DialogAbout.qml:47
 msgctxt "DialogAbout|"
@@ -26498,7 +26502,7 @@ msgstr "Autor:"
 #: core/DialogHelp.qml:53
 msgctxt "DialogHelp|"
 msgid "Prerequisite:"
-msgstr "Prerrequisito:"
+msgstr "Requisito previo:"
 
 #: core/DialogHelp.qml:58
 msgctxt "DialogHelp|"
