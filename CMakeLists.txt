@@ -178,6 +178,8 @@ set(GRAPHICAL_RENDERER "auto" CACHE STRING "Policy for choosing the renderer bac
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
   set(_data_dest_dir bin/${_bundle_bin}/../Resources)
+elseif(HAIKU)
+  set(_data_dest_dir data/Qt5/${GCOMPRIS_EXECUTABLE_NAME})
 else()
   set(_data_dest_dir share/${GCOMPRIS_EXECUTABLE_NAME})
 endif()
