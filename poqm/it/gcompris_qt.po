@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-01-19 03:42+0100\n"
+"PO-Revision-Date: 2024-02-19 20:44+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -15980,12 +15980,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Barra spaziatrice o Invio: seleziona un elemento dall'elenco"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Invio: convalida la tua risposta quando il pulsante OK è visibile"
+msgstr "Invio: convalida la tua risposta quando il pulsante OK è visibile"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -22621,18 +22618,13 @@ msgstr ""
 "combinazioni di lettere dell'alfabeto latino."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Impara le regole per leggere i numeri romani ed esercitati a convertire i "
-"numeri da e verso i numeri arabi. Fare clic sul pulsante OK per convalidare "
+"numeri da e verso i numeri arabi. Fare clic sul pulsante OK per convalidare "
 "la risposta."
 
 #: activities/roman_numerals/ActivityInfo.qml:25
