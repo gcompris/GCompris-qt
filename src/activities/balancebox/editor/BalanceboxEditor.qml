@@ -93,6 +93,7 @@ Item {
     }
 
     function startTesting() {
+        items.currentLevel = 0;
         editor.isTesting = true;
         testBox.mode = "test";
         testBox.testLevel = Activity.modelToLevel();
