@@ -57,11 +57,13 @@ ActivityBase {
             property int questionLayoutColumns
             property int questionLayoutRows
             property string modelDisplayLayout
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Keys.enabled: !items.buttonsBlocked
         Keys.onLeftPressed: {
             keyboardMode = true
             areaWithKeyboardFocus.moveCurrentIndexLeft()
@@ -283,6 +285,7 @@ ActivityBase {
 
                             MouseArea {
                                 anchors.fill: parent
+                                enabled: !items.buttonsBlocked
                                 onClicked: answer.selectCurrentCell(cellItem)
                             }
                         }
@@ -419,6 +422,7 @@ ActivityBase {
                             id: mouseArea
                             anchors.fill: imageId
                             hoverEnabled: true
+                            enabled: !items.buttonsBlocked
                             onClicked: selector.selectCurrentCell(parent)
                         }
                     }

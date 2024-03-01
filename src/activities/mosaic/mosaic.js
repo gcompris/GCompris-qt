@@ -32,6 +32,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.buttonsBlocked = false
     items.background.areaWithKeyboardFocus = items.selector
     items.selectedItem = ""
     items.nbItems = items.levels[items.currentLevel].nbOfCells
@@ -70,6 +71,7 @@ function answerSelected(index) {
     items.answer.model = answerModel
 
     if(answerModel.toString() === questionModel.toString()) {
+        items.buttonsBlocked = true
         items.bonus.good("flower")
     }
 }
