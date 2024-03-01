@@ -30,13 +30,13 @@ msgstr "ავტომატური"
 #: activities/enumerate/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
-msgstr ""
+msgstr "ღილაკი დიახ"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
-msgstr ""
+msgstr "პასუხების დადასტურება"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
@@ -14612,12 +14612,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr ""
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი"
+msgstr "შეყვანა: გადაამოწმეთ თქვენი პასუხი, როცა ღილაკი 'დიახ' ხილულია"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
