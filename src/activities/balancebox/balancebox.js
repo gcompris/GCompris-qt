@@ -472,7 +472,7 @@ function tearDown()
     ballContacts = new Array();
 }
 
-function initLevel(testLevel) {
+function initLevel() {
     items.loading.start();
 
     // reset everything
