@@ -46,7 +46,7 @@ function stop() {
 }
 
 function initLevel() {
-
+    items.buttonsBlocked = false
     // Create the initial array that holds the model data sorted
     var model = []
     for(var i = 1; i < 16; i++)
@@ -184,8 +184,10 @@ function processPressedKey(event) {
     }
 
     /* Check if success */
-    if(checkAnswer())
+    if(checkAnswer()) {
+        items.buttonsBlocked = true
         items.bonus.good('flower')
+    }
     else if(event.accepted)
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
 
