@@ -232,7 +232,7 @@ ActivityBase {
         }
         onStop: { }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
                 if(!items.buttonsBlocked)
                     items.check()
@@ -481,7 +481,7 @@ ActivityBase {
 
             onKeypress: textInput.appendText(text)
 
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         Bar {

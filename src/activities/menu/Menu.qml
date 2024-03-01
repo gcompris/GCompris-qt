@@ -38,7 +38,7 @@ ActivityBase {
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
     isMenu: true
-    onBack: {
+    onBack: (to) => {
         if (pageView.currentItem === activity) {
             // Restore focus that has been taken by the loaded activity
             focus = true
@@ -66,9 +66,9 @@ ActivityBase {
 
     enabled: ActivityInfoTree.startingActivity === ""
 
-    onDisplayDialog: pageView.pushElement(dialog)
+    onDisplayDialog: (dialog) => pageView.pushElement(dialog)
 
-    onDisplayDialogs: {
+    onDisplayDialogs: (dialogs) => {
         for (var i = 0; i < dialogs.length; i++) {
             pageView.pushElement(dialogs[i]);
         }
@@ -224,7 +224,7 @@ ActivityBase {
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(loading.active) {
                 return;
             }
@@ -731,7 +731,7 @@ ActivityBase {
                         activity.focus = true;
                 }
 
-                function onStartActivity() {
+                function onStartActivity(activityName, level) {
                     ActivityInfoTree.setCurrentActivityFromName(activityName)
                     var currentLevels = ApplicationSettings.currentLevels(ActivityInfoTree.currentActivity.name)
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
@@ -1019,7 +1019,7 @@ ActivityBase {
             visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
-            onKeypress: {
+            onKeypress: (text) => {
                 var textArray = searchTextField.text.split("");
                 var cursorPosition = searchTextField.cursorPosition
                 if(text == keyboard.backspace) {

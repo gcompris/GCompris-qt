@@ -28,7 +28,7 @@ QtObject {
         id: jsonfile
         name: ""
 
-        onError: jsonparser.error(msg);
+        onError: (msg) => jsonparser.error(msg);
     }
 
     /**

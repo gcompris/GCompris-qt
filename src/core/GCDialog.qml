@@ -287,7 +287,7 @@ Rectangle {
         return;
     }
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Up || event.key === Qt.Key_Left) {
             if(button2.visible && !button1.selected && !button2.selected) {
                 button2.selected = true;
@@ -320,7 +320,7 @@ Rectangle {
         }
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             buttonCancel.close();
             event.accepted = true;

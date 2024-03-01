@@ -51,7 +51,7 @@ ActivityBase {
         Keys.forwardTo: tutorial
         
         /* Testing purposes, A / Left Key => Reduces velocity, D / Right Key => Increases velocity */
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if (event.key === Qt.Key_D || event.key === Qt.Key_Right) {
                 submarine.increaseHorizontalVelocity(1)
             }
@@ -449,7 +449,7 @@ ActivityBase {
                         density: 1
                         friction: 0
                         restitution: 0
-                        onBeginContact: {
+                        onBeginContact: (other) => {
                             var collidedObject = other.getBody().target
 
                             if (collidedObject == whale) {
@@ -472,7 +472,7 @@ ActivityBase {
                         density: 1
                         friction: 0
                         restitution: 0
-                        onBeginContact: {
+                        onBeginContact: (other) => {
                             var collidedObject = other.getBody().target
 
                             if (collidedObject === whale) {

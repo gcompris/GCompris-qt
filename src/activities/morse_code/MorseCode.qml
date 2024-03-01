@@ -172,7 +172,7 @@ ActivityBase {
         }
 
         Keys.enabled: !items.buttonsBlocked
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
                 if(firstScreen.visible) {
                     firstScreen.visible = false;
@@ -586,7 +586,7 @@ ActivityBase {
                 // Set the focus back to the InputText for keyboard input
                 resetFocus();
             }
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         FirstScreen {

@@ -114,7 +114,7 @@ ActivityBase {
         Keys.forwardTo: tutorialSection
 
         Keys.enabled: items.isRunCodeEnabled
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             activity.keyboardNavigationVisible = true
             if(event.key === Qt.Key_Left)
                 areaWithKeyboardInput.moveCurrentIndexLeft()

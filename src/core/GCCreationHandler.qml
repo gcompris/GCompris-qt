@@ -441,7 +441,7 @@ Rectangle {
         return;
     }
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Left) {
             if(viewContainer.selectedFileIndex > 0) {
                 viewContainer.selectedFileIndex -= 1;
@@ -462,7 +462,7 @@ Rectangle {
         }
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
             if(saveButton.visible && !dialogOpened) {
                 saveButton.clicked();

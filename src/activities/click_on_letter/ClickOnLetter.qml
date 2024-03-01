@@ -94,7 +94,7 @@ ActivityBase {
             id: eventHandler
             focus: true
             Keys.enabled: !items.buttonsBlocked && !dialogActivityConfig.visible
-            Keys.onPressed: {
+            Keys.onPressed: (event) => {
                 if(event.key === Qt.Key_Tab) {
                     activity.audioVoices.clearQueue();
                     activity.audioVoices.stop();
@@ -341,7 +341,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("Click_on_letter: Error parsing JSON: " + msg);
+            onError: (msg) => console.error("Click_on_letter: Error parsing JSON: " + msg);
         }
 
     }

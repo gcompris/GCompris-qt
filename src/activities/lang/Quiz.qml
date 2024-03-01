@@ -90,7 +90,7 @@ Item {
         Keys.onTabPressed: {
             repeatItem.clicked()
         }
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if (event.key === Qt.Key_Back) {
                 event.accepted = true
                 imageReview.start()
@@ -100,7 +100,7 @@ Item {
         JsonParser {
             id: parser
 
-            onError: console.error("Lang: Error parsing json: " + msg);
+            onError: (msg) => console.error("Lang: Error parsing json: " + msg);
         }
 
         ListModel {

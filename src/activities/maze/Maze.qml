@@ -24,7 +24,7 @@ ActivityBase {
 
     }
 
-    Keys.onPressed: Activity.processPressedKey(event)
+    Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
     pageComponent: Image {
         id: background

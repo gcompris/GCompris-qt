@@ -111,7 +111,7 @@ Rectangle {
 
     Connections {
         target: activity
-        onStop: stopWinAnimation();
+        function onStop() { stopWinAnimation(); }
     }
 
     color: "#AAFFFFFF"

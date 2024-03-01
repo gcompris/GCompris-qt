@@ -121,7 +121,7 @@ Rectangle {
 
     color: "#696da3"
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
             scrollItem.down();
         } else if(event.key === Qt.Key_Up) {
@@ -135,7 +135,7 @@ Rectangle {
         dialogActivityContent.close();
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             dialogActivityContent.close();
             event.accepted = true;

@@ -354,8 +354,8 @@ bool DownloadManager::download(DownloadJob *job)
     job->reply = reply;
     connect(reply, SIGNAL(finished()), this, SLOT(finishDownload()));
     connect(reply, &QNetworkReply::readyRead, this, &DownloadManager::downloadReadyRead);
-    connect(reply, SIGNAL(error(QNetworkReply::NetworkError)),
-            this, SLOT(handleError(QNetworkReply::NetworkError)));
+    connect(reply, &QNetworkReply::errorOccurred,
+            this, &DownloadManager::handleError);
     if (job->url.fileName() != contentsFilename) {
         connect(reply, &QNetworkReply::downloadProgress,
                 this, &DownloadManager::downloadInProgress);

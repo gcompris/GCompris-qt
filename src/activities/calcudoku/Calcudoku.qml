@@ -118,7 +118,7 @@ ActivityBase {
         }
 
         Keys.enabled: !items.buttonsBlocked
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             Activity.onKeyPressed(event);
         }
 

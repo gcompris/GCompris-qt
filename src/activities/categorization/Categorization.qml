@@ -72,7 +72,7 @@ ActivityBase {
 
             File {
                 id: file
-                onError: console.error("File error: " + msg);
+                onError: (msg) => console.error("File error: " + msg);
             }
         }
 

@@ -25,7 +25,7 @@ Rectangle {
     visible: false
     focus: visible
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
             scrollItem.down();
         } else if(event.key === Qt.Key_Up) {
@@ -35,7 +35,7 @@ Rectangle {
 
     Keys.onEscapePressed: closeButton.close()
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             event.accepted = true;
             closeButton.close();

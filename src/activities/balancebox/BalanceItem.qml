@@ -80,8 +80,8 @@ Item {
 
             radius: itemImage.width / 2
 
-            onBeginContact: item.beginContact(getBody().target, other.getBody().target)
-            onEndContact: item.endContact(getBody().target, other.getBody().target)
+            onBeginContact: (other) => item.beginContact(getBody().target, other.getBody().target)
+            onEndContact: (other) => item.endContact(getBody().target, other.getBody().target)
         }
     }
 }

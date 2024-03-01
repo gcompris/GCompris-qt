@@ -78,7 +78,7 @@ ActivityBase {
         }
 
         Keys.enabled: !bonus.isPlaying
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(items.buttonsBlocked)
                 return;
             switch(event.key) {

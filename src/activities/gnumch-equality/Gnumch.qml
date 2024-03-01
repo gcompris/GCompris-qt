@@ -161,7 +161,7 @@ ActivityBase {
 
         Connections {
             target: warningRect.mArea
-            onClicked: warningRect.hideWarning()
+            function onClicked(event) { warningRect.hideWarning() }
         }
 
         Item {

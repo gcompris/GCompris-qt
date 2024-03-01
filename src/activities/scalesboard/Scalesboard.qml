@@ -391,7 +391,7 @@ ActivityBase {
         }
 
         Keys.enabled: !items.buttonsBlocked
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(okButton.enabled && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
                     Activity.checkAnswer()
             }
@@ -400,7 +400,7 @@ ActivityBase {
             }
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if(question.visible) {
                 numpad.updateAnswer(event.key, false);
             }

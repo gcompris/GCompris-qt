@@ -479,6 +479,6 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
-        Keys.onPressed: Activity.handleKeys(event)
+        Keys.onPressed: (event) => { Activity.handleKeys(event) }
     }
 }

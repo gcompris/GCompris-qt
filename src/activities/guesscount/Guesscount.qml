@@ -73,7 +73,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("Guesscount: Error parsing JSON: " + msg);
+            onError: (msg) => console.error("Guesscount: Error parsing JSON: " + msg);
         }
 
         Loader {

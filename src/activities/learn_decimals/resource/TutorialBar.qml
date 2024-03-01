@@ -24,7 +24,6 @@ Item {
     Grid {
         id: singleBarTuto
         anchors.fill: parent
-
         states: [
             State {
                 when: background.horizontalLayout

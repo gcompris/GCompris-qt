@@ -242,7 +242,7 @@ ActivityBase {
 
         Connections {
             target: audioVoices
-            onDone: {
+            function onDone() {
                 // If we have won, we wait until the last voice has played to play the bonus
                 if(items.inputLocked && !bonus.isPlaying) {
                     items.bonus.good("lion");
@@ -255,7 +255,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             onKeypress: Activity.processKeyPress(text)
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         Wordlist {
@@ -266,7 +266,7 @@ ActivityBase {
             useDefault: false
             filename: ""
 
-            onError: console.log("Gletters: Wordlist error: " + msg);
+            onError: (msg) => console.log("Gletters: Wordlist error: " + msg);
         }
 
         Timer {

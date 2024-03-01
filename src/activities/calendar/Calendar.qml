@@ -59,7 +59,14 @@ ActivityBase {
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
-        Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
+        Keys.onPressed: (event) => {
+            if(answerChoices.visible) {
+                answerChoices.handleKeys(event)
+            }
+            else {
+                handleKeys(event);
+            }
+        }
 
         Rectangle {
             id: calendarBox

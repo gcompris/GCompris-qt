@@ -21,8 +21,8 @@ ActivityBase {
     onStart: { focus = true; }
     onStop: { }
 
-    Keys.onPressed: Activity.processPressedKey(event)
-    Keys.onReleased: Activity.processReleasedKey(event)
+    Keys.onPressed: (event) => { Activity.processPressedKey(event) }
+    Keys.onReleased:  (event) => { Activity.processReleasedKey(event) }
 
     property var dataset
     property var tutorialInstructions: ""
