@@ -224,7 +224,7 @@ Item {
                 maximumLength: maximumLengthAnswer
                 wrapMode: TextInput.Wrap
                 onAccepted: {
-                    okMouseArea.clicked(toString(okMouseArea))
+                    okMouseArea.clicked(undefined) // The value is not used
                 }
             }
         }
