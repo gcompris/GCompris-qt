@@ -258,7 +258,9 @@ ActivityBase {
                            (y+height > wordDisplayList.height)) {
                             var i = wordDisplayRepeater.idToHideBecauseOverflow;
                             for(; i < index; ++i) {
-                                wordDisplayRepeater.itemAt(i).visible=false
+                                if(wordDisplayRepeater.itemAt(i)) {
+                                    wordDisplayRepeater.itemAt(i).visible = false
+                                }
                             }
                             wordDisplayRepeater.idToHideBecauseOverflow = i
                         }
