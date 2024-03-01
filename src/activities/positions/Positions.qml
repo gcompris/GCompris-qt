@@ -52,7 +52,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
             if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 Activity.verifyAnswer()
