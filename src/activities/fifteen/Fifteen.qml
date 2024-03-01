@@ -31,6 +31,7 @@ ActivityBase {
         signal start
         signal stop
 
+        Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: Activity.processPressedKey(event)
 
         Component.onCompleted: {
@@ -49,6 +50,7 @@ ActivityBase {
             property alias model: fifteenModel
             property string scene: bar.level < 5 ? Activity.url + "Fishing_Boat_Scene.svg" :
                                                    Activity.url + "Coastal_Path.svg"
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items) }
@@ -138,6 +140,8 @@ ActivityBase {
             y: puzzleArea.y
             width: puzzleArea.width
             height: puzzleArea.height
+            enabled: !items.buttonsBlocked
+
             onPressed: checkTouchPoint(touchPoints)
 
             function checkTouchPoint(touchPoints) {
@@ -148,8 +152,10 @@ ActivityBase {
                         return
                     else if(!puzzleArea.trans.running && block) {
                         Activity.onClick(block.val)
-                        if(Activity.checkAnswer())
+                        if(Activity.checkAnswer()) {
+                            items.buttonsBlocked = true
                             bonus.good('flower')
+                        }
                         else
                             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
                     }
