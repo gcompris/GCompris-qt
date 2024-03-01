@@ -326,9 +326,9 @@ function drawCar(car)
     }
     
     var color = colorMap[id];
-    var goal;
+    var goal = false;
     if (id == 'X') {
-        goal = 1;
+        goal = true;
         source = carList[0];
     }
 
