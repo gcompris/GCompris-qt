@@ -2663,17 +2663,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Hayır"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Yükle"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Kaydet"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Sına"
@@ -21926,7 +21926,7 @@ msgstr ""
 "Tahtada bir sözcük gösterilir. Yatay olarak görüntülenen bir sözcük listesi "
 "görünecek ve kaybolacaktır. Verilen sözcük listede göründü mü?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21937,12 +21937,12 @@ msgstr ""
 "\"#373737\">sözcüğünün görüntülenip görüntülenmediğini<br/></font> <b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">denetle</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Evet, onu gördüm!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Hayır, orada değildi!"

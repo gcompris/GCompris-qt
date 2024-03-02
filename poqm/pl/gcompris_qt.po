@@ -2669,17 +2669,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Nie"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Wczytaj"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Zapisz"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Próba"
@@ -22063,7 +22063,7 @@ msgstr ""
 "Słowo jest pokazywane na planszy. Lista słów, wyświetlana w poziomie, będzie "
 "się pojawiać i znikać. Pytanie czy słowo pojawiło się na liście?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22073,12 +22073,12 @@ msgstr ""
 "<font color=\"#373737\">Sprawdź czy słowo<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">jest wyświetlane</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Tak widziałem je!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nie nie było go tam!"

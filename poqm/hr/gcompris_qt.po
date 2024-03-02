@@ -2646,17 +2646,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Ne"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Učitaj"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Spremi"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Test"
@@ -21935,7 +21935,7 @@ msgstr ""
 "Riječ je prikazana na ploči. Popis riječi, prikazan vodoravno, pojavit će se "
 "i nestati. Je li se navedena riječ pojavila na popisu?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21945,12 +21945,12 @@ msgstr ""
 "<font color=\"#373737\">Provjeri je li riječ<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">prikazana</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Da, vidio sam!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, nije bila tamo!"

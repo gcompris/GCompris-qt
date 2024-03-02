@@ -2619,17 +2619,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "否"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "載入"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "儲存"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "測試"
@@ -21380,7 +21380,7 @@ msgstr ""
 "在看板上方有個單字。然後會有一串單字出現一下並消失。上方的單字有出現在這一串"
 "單字中嗎？"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21390,12 +21390,12 @@ msgstr ""
 "<font color=\"#373737\">看看單字<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">是否有出現</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "有，我看到了！"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "沒有，不在那裡！"

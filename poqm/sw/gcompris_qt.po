@@ -2662,17 +2662,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Hapana"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Pakia"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Hifadhi"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Mtihani"
@@ -22005,7 +22005,7 @@ msgstr ""
 "Neno linaonyeshwa kwenye ubao. Orodha ya maneno, iliyoonyeshwa kwa usawa, "
 "itaonekana na kutoweka. Je, neno lililotolewa lilionekana kwenye orodha?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22015,12 +22015,12 @@ msgstr ""
 "<font color=\"#373737\">Angalia ikiwa neno<br/></font> <b><font color="
 "\"#315AAA\">%1</font></b><br/> <font color=\"#373737\">inaonyeshwa</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ndiyo niliona!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Hapana, haikuwepo!"
