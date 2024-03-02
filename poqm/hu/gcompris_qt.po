@@ -2672,17 +2672,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Nem"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Betöltés"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Mentés"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Kipróbálás"
@@ -21929,7 +21929,7 @@ msgstr ""
 "A tábla jobb felső részén megjelenik egy szó. Bal oldalon szavak jelennek "
 "meg, majd tűnnek el. Szerepelt a listában az adott szó?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21939,12 +21939,12 @@ msgstr ""
 "<font color=\"#373737\">Ellenőrizd ha ez a szó<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">olvasható</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Igen, láttam!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nem, nem volt ott!"

@@ -2699,17 +2699,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Nu"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Încarcă"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Salvează"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Testează"
@@ -22272,7 +22272,7 @@ msgstr ""
 "Se dă un cuvânt pe tablă. O listă de cuvinte, afișată orizontal, va apărea "
 "și apoi va dispărea. Era cuvântul respectiv în listă?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22282,12 +22282,12 @@ msgstr ""
 "<font color=\"#373737\">Verifică dacă cuvântul<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">este afișat</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Da, l-am văzut!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nu, nu era acolo!"

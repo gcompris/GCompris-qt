@@ -2770,17 +2770,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Не"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Вчитај"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Зачувај"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Тестирај"
@@ -22642,7 +22642,7 @@ msgstr ""
 "Еден збор е прикажан на таблата. Листа на зборови, прикажани хоризонтално, "
 "ќе се појават и исчезнат. Дали дадениот збор постои во листата?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22652,12 +22652,12 @@ msgstr ""
 "<font color=\"#373737\">Проверете дали зборот<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">е прикажан</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Да, го видов!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Не, не беше таму!"

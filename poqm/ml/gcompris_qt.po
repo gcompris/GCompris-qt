@@ -2647,17 +2647,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "ലോഡ്"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "സേവ്"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "ടെസ്റ്റ്"
@@ -21769,7 +21769,7 @@ msgstr ""
 "ബോർഡിൽ ഒരു വാക്ക് കാണിച്ചിരിക്കും. തിരശ്ചീനമായി കാണിച്ചിരിക്കുന്ന ഒരു കൂട്ടം വാക്കുകൾ "
 "പ്രത്യക്ഷപ്പെടുകയും അപ്രത്യക്ഷമാവുകയും ചെയ്യും. ഇതിൽ തന്നിരിക്കുന്ന വാക്കുണ്ടായിരുന്നോ?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -21779,12 +21779,12 @@ msgstr ""
 "<font color=\"#373737\">ഈ വാക്ക്<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">കാണിക്കുന്നുണ്ടോ എന്ന് നോക്കൂ</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "ഞാൻ ആ വാക്ക് കണ്ടു!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "ആ വാക്ക് അവിടെ കണ്ടില്ല!"

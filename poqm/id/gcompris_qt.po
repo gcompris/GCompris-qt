@@ -2779,17 +2779,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Tidak"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Muat"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Simpan"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Uji"
@@ -22435,7 +22435,7 @@ msgstr ""
 "mendatar, akan muncul dan menghilang. Apakah kata yang sebutkan muncul dalam "
 "daftar?"
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22445,12 +22445,12 @@ msgstr ""
 "<font color=\"#373737\">Periksa apakah kata<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ditampilkan</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ya, aku melihatnya!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Tidak, aku tidak melihatnya!"
