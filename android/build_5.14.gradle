@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.0.0'
+        classpath 'com.android.tools.build:gradle:7.4.1'
     }
 }
 
@@ -30,7 +30,7 @@ android {
      * The following variables:
      * - androidBuildToolsVersion,
      * - androidCompileSdkVersion
-     * - qt5AndroidDir - holds the path to qt android files
+     * - qtAndroidDir - holds the path to qt android files
      *                   needed to build any Qt application
      *                   on Android.
      *
@@ -39,8 +39,8 @@ android {
      * Changing them manually might break the compilation!
      *******************************************************/
 
-    compileSdkVersion androidCompileSdkVersion.toInteger()
-    buildToolsVersion androidBuildToolsVersion
+    compileSdkVersion androidCompileSdkVersion
+    buildToolsVersion "30.0.2"
     ndkVersion androidNdkVersion
 
     // Extract native libraries from the APK
@@ -80,8 +80,8 @@ android {
 
     defaultConfig {
         resConfig "en"
-        minSdkVersion = qtMinSdkVersion
-        targetSdkVersion = qtTargetSdkVersion
+        minSdkVersion qtMinSdkVersion
+        targetSdkVersion qtTargetSdkVersion
         ndk.abiFilters = qtTargetAbiList.split(",")
     }
 }

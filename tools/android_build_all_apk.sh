@@ -7,7 +7,7 @@
 #   SPDX-License-Identifier: GPL-3.0-or-later
 
 Qt5_BaseDIR=~/Qt/5.12.12
-export ANDROID_NDK=/opt/android-ndk-r23b/
+export ANDROID_NDK=/opt/android-ndk-r25c/
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
@@ -48,8 +48,8 @@ f_cmake()
         rm -rf CMakeFiles
     fi
 
-    cmake -DANDROID_USE_LEGACY_TOOLCHAIN_FILE=ON \
-          -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+    cmake -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake \
+          -DCMAKE_VERBOSE_MAKEFILE=ON \
           -DCMAKE_ANDROID_API=23 \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
@@ -88,7 +88,7 @@ if [[ $minor -ge 14 ]]; then
 fi
 
 f_cmake armeabi-v7a ON OFF
-make -j 4
+make
 make apk_aligned_signed
 
 # Remove extra apk

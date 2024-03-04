@@ -90,6 +90,9 @@ endif()
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
+  add_custom_command(TARGET ${GCOMPRIS_EXECUTABLE_NAME} POST_BUILD
+    COMMAND ${LLVM_STRIP} --strip-all $<TARGET_FILE:${GCOMPRIS_EXECUTABLE_NAME}>)
+
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
@@ -132,6 +135,8 @@ if(BUILD_STANDALONE)
       ${QT_MAJOR}::QTgaPlugin ${QT_MAJOR}::QTiffPlugin ${QT_MAJOR}::QCocoaIntegrationPlugin
       # Should be specific plugins used on Windows
       ${QT_MAJOR}::QWindowsIntegrationPlugin ${QT_MAJOR}::QWindowsAudioPlugin ${QT_MAJOR}::AudioCaptureServicePlugin ${QT_MAJOR}::DSServicePlugin
+      # Should be specific plugins used on Android
+      ${QT_MAJOR}::QAndroidIntegrationPlugin
       )
     if(TARGET ${_plugin})
       message(STATUS "${_plugin} will be included in the package")
@@ -178,12 +183,6 @@ if(BUILD_STANDALONE)
       QtQuick/Controls.2/${_lib_prefix}qtquickcontrols2plugin
       QtQuick/Templates.2/${_lib_prefix}qtquicktemplates2plugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
-  endif()
-
-  # For Qt5, we use Qt.labs for Calendar
-  if(Qt5Widgets_VERSION VERSION_LESS "6.0")
-    list(APPEND _qml_plugins
-      Qt/labs/calendar/${_lib_prefix}qtlabscalendarplugin)
   endif()
 
   # Only explicit these dll for Windows to be sure we don't ship the debug dll in the package. Other platforms don't have this issue.

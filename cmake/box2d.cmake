@@ -50,14 +50,13 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     set(_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
     if(WIN32)
       set(_box2d_library_dir "release/")
-      set(_box2d_library_file "Box2D.dll")
+      set(_box2d_library_file "qmlbox2d.dll")
     elseif(CMAKE_HOST_APPLE)
       set(_box2d_library_dir "")
-      set(_box2d_library_file "libBox2D.dylib")
-    elseif(ANDROID AND ${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
+      set(_box2d_library_file "libqmlbox2d.dylib")
+    elseif(ANDROID)
       set(_box2d_library_dir "bin/plugins/Box2D/")
-      #set(_box2d_library_file "libBox2D_${ANDROID_ABI}.so")
-      set(_box2d_library_file "libqmlbox2d.so")
+      set(_box2d_library_file "libqml_Box2D_qmlbox2d_${ANDROID_ABI}.so")
     else()
       set(_box2d_library_dir "bin/plugins/Box2D/")
       set(_box2d_library_file "libqmlbox2d.so")
@@ -80,20 +79,17 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       endif()
     endif()
 
-    if(ANDROID AND ${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.14.0")
-      # Only build the necessary architecture for box2d
-      # Capitalize first letter of the abi...
-      string(SUBSTRING ${ANDROID_ABI} 0 1 FIRST_LETTER)
-      string(TOUPPER ${FIRST_LETTER} FIRST_LETTER)
-      string(REGEX REPLACE "^.(.*)" "${FIRST_LETTER}\\1" ANDROID_ABI_CAP "${ANDROID_ABI}")
-      #set(BOX2D_MAKE_PROGRAM ${BOX2D_MAKE_PROGRAM} -f Makefile.${ANDROID_ABI_CAP})
+    if(ANDROID)
       # I didn't find a better way to copy the libraries to the lib folder only on Android when doing an aab package...
       #set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
+      set(EXTRA_BOX2D_CMAKE_ARGS -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake)
+      # Strip box2d library for Android
+      set(EXTRA_INSTALL_ANDROID_BOX2D ${LLVM_STRIP} --strip-all ${_box2d_library_dir}${_box2d_library_file} && )
     endif()
 
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
-      CMAKE_ARGS -DBUILD_EXAMPLES=OFF
+      CMAKE_ARGS ${EXTRA_BOX2D_CMAKE_ARGS} -DCMAKE_FIND_ROOT_PATH=${CMAKE_FIND_ROOT_PATH} -DQt6_DIR=${Qt6_DIR} -DBUILD_EXAMPLES=OFF
       SOURCE_DIR ${_box2d_source_dir}
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}

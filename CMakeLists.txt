@@ -128,7 +128,7 @@ endif()
 
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
-  find_package(KF5 QUIET COMPONENTS DocTools)
+  find_package(KF6 QUIET COMPONENTS DocTools)
 endif()
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
@@ -429,7 +429,7 @@ add_custom_target(dist
         | xz > ${CMAKE_BINARY_DIR}/${ARCHIVE_NAME}.tar.xz
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-if(KF5_FOUND)
+if(KF6_FOUND)
     add_subdirectory(docs/docbook)
 endif()
 

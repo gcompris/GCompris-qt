@@ -55,6 +55,12 @@ endif()
 set(PACKAGE_SOURCE_ANDROID ${CMAKE_BINARY_DIR}/tmpAndroid)
 set(ANDROID_SDK_ROOT $ENV{ANDROID_SDK_ROOT})
 
+# Copied from ECM
+file(GLOB build-tools LIST_DIRECTORIES TRUE RELATIVE ${ANDROID_SDK_ROOT}/build-tools ${ANDROID_SDK_ROOT}/build-tools/*)
+list(SORT build-tools COMPARE NATURAL)
+list(GET build-tools -1 _default_sdk)
+set(ANDROID_SDK_BUILD_TOOLS_REVISION "${_default_sdk}" CACHE STRING "Android Build Tools version")
+
 # Copied from ~/Qt/6.4.2/android_armv7/lib/cmake/Qt6Core/Qt6AndroidMacros.cmake
 set(QT_ANDROID_ARCHITECTURES "")
 set(architecture_record_list "")
@@ -102,31 +108,28 @@ add_custom_command(
   OUTPUT createApkFromAndroidDeployQtDebug
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --debug --gradle
-  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/debug/android-build-debug.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-debug-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --debug --apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-debug-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT createApkFromAndroidDeployQtRelease
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --gradle --verbose
-  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/release/android-build-release-unsigned.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT createApkSignedAlignedFromAndroidDeployQtRelease
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --gradle --sign $ENV{ANDROID_KEYSTORE} gcompris --storepass $ENV{ANDROID_KEYSTORE_PASSWD}
-    COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/apk/release/android-build-release-signed.apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --sign $ENV{ANDROID_KEYSTORE} gcompris --storepass $ENV{ANDROID_KEYSTORE_PASSWD} --verbose --apk ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 add_custom_command(
   OUTPUT createAabFromAndroidDeploy
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --aab --release --gradle
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_BINARY_DIR}/android-build/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --aab --release
   COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_BINARY_DIR}/android-build/build/outputs/bundle/release/android-build-release.aab ${CMAKE_BINARY_DIR}/android-build/GCompris-Android-release${APK_SUFFIX}${GCOMPRIS_VERSION}.aab
   )
 
@@ -169,13 +172,12 @@ set(suffix_libssl ".so")
 
 find_program(LLVM_STRIP NAMES llvm-strip PATHS ${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin/)
 
-# TODO Bump to openssl 3.0 once Qt6.5
 ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
   SOURCE_DIR ${OPENSSL_DIR}
-  URL https://www.openssl.org/source/openssl-1.1.1w.tar.gz
-  URL_HASH SHA256=cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+  URL https://www.openssl.org/source/openssl-3.0.13.tar.gz
+  URL_HASH SHA256=88525753f79d3bec27d2fa7c66aa0b92b3aa9498dafd93d7cfa4b3780cdae313
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
@@ -184,7 +186,7 @@ ExternalProject_Add(
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
   make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs &&
   ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl} &&
-  ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl}
+  ${LLVM_STRIP} --strip-all libssl${suffix_libssl}
   INSTALL_COMMAND
   ${CMAKE_COMMAND} -E make_directory "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}" &&
   ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/" &&
