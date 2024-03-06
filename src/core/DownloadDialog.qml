@@ -355,7 +355,7 @@ Item {
     Connections {
         target: DownloadManager
 
-        function onError() {
+        function onError(code, msg) {
             //console.warn("DownloadDialog: DM reports error: " + code + ": " + msg);
             downloadDialog.finished();
             if (downloadDialog.reportError
@@ -374,14 +374,14 @@ Item {
             }
         }
 
-        onDownloadProgress: downloadDialogProgress.value = 100 * bytesReceived / bytesTotal;
+        function onDownloadProgress(bytesReceived, bytesTotal) { downloadDialogProgress.value = 100 * bytesReceived / bytesTotal; }
 
-        onDownloadStarted: {
+        function onDownloadStarted(resource) {
             //console.log("dialog: DM reports started: " + resource);
             downloadDialogProgress.value = 0;
         }
 
-        onAllDownloadsFinished: {
+        function onAllDownloadsFinished(code) {
             //console.log("dialog: DM all reports finished");
             downloadDialog.finished();
             if (downloadDialog.reportSuccess
@@ -410,7 +410,7 @@ Item {
                 downloadDialog.shutdown();
         }
 
-        onDownloadFinished: {
+        function onDownloadFinished(code) {
             //console.log("dialog: DM reports finished: " + code);
         }
     }
