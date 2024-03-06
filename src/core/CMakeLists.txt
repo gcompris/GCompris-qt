@@ -79,20 +79,12 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Core5Compat)
-
-if(${QT_MAJOR}Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0") 
-  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QmlWorkerScript)
-  if(${QT_MAJOR}Widgets_VERSION VERSION_LESS "6.0.0")
-    set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickParticles)
-  endif()
-endif()
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Core5Compat ${QT_MAJOR}::QmlWorkerScript)
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
   add_custom_command(TARGET ${GCOMPRIS_EXECUTABLE_NAME} POST_BUILD
     COMMAND ${LLVM_STRIP} --strip-all $<TARGET_FILE:${GCOMPRIS_EXECUTABLE_NAME}>)
-
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
@@ -154,11 +146,17 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qt_plugins2 "")
+  # Seems to be everywhere
+  list(APPEND _qt_plugins2 tls/${_lib_prefix}qopensslbackend)
+  list(APPEND _qt_plugins2 multimedia/${_lib_prefix}ffmpegmediaplugin)
+  
   if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT UBUNTUTOUCH)
     list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
       mediaservice/${_lib_prefix}gstcamerabin
       mediaservice/${_lib_prefix}gstmediacapture
       mediaservice/${_lib_prefix}gstmediaplayer)
+  elseif(WIN32)
+    list(APPEND _qt_plugins2 multimedia/${_lib_prefix}windowsmediaplugin)
   elseif(APPLE)
     list(APPEND _qt_plugins2 audio/${_lib_prefix}qtaudio_coreaudio
       mediaservice/${_lib_prefix}qavfmediaplayer
@@ -166,32 +164,35 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}qavfcamera)
   endif()
 
-  set(_qml_plugins
-    Qt5Compat/GraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
-    Qt5Compat/GraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
-    QtQml/Models.2/${_lib_prefix}modelsplugin
-    QtQuick/Window.2/${_lib_prefix}windowplugin
-    QtQuick/Particles.2/${_lib_prefix}particlesplugin
-    QtQuick.2/${_lib_prefix}qtquick2plugin
-    QtMultimedia/${_lib_prefix}declarative_multimedia
-    QtSensors/${_lib_prefix}declarative_sensors
-    QtCharts/${_lib_prefix}qtchartsqml2)
+   set(_qml_plugins
+     Qt5Compat/GraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
+     Qt5Compat/GraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivateplugin
+     QtQml/Models/${_lib_prefix}modelsplugin
+     QtQml/WorkerScript/${_lib_prefix}workerscriptplugin
+     QtQuick/Controls/Basic/impl/${_lib_prefix}qtquickcontrols2basicstyleimplplugin
+     QtQuick/Controls/impl/${_lib_prefix}qtquickcontrols2implplugin
+     QtQuick/Window/${_lib_prefix}quickwindowplugin
+     QtQuick/Particles/${_lib_prefix}particlesplugin
+     QtQuick/${_lib_prefix}qtquick2plugin
+     QtMultimedia/${_lib_prefix}quickmultimediaplugin
+     QtSensors/${_lib_prefix}sensorsquickplugin
+     QtCharts/${_lib_prefix}qtchartsqml2plugin)
 
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT UBUNTUTOUCH)
     list(APPEND _qml_plugins
-      QtQuick/Controls.2/${_lib_prefix}qtquickcontrols2plugin
-      QtQuick/Templates.2/${_lib_prefix}qtquicktemplates2plugin
+      QtQuick/Controls/${_lib_prefix}qtquickcontrols2plugin
+      QtQuick/Templates/${_lib_prefix}qtquicktemplates2plugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
   endif()
 
   # Only explicit these dll for Windows to be sure we don't ship the debug dll in the package. Other platforms don't have this issue.
   if(WIN32)
     list(APPEND _qml_plugins
-      QtQuick/Controls.2/Fusion/${_lib_prefix}qtquickcontrols2fusionstyleplugin
-      QtQuick/Controls.2/Imagine/${_lib_prefix}qtquickcontrols2imaginestyleplugin
-      QtQuick/Controls.2/Material/${_lib_prefix}qtquickcontrols2materialstyleplugin
-      QtQuick/Controls.2/Universal/${_lib_prefix}qtquickcontrols2universalstyleplugin)
+      QtQuick/Controls/Fusion/${_lib_prefix}qtquickcontrols2fusionstyleplugin
+      QtQuick/Controls/Imagine/${_lib_prefix}qtquickcontrols2imaginestyleplugin
+      QtQuick/Controls/Material/${_lib_prefix}qtquickcontrols2materialstyleplugin
+      QtQuick/Controls/Universal/${_lib_prefix}qtquickcontrols2universalstyleplugin)
   endif()
 
   set(GCOMPRIS_OTHER_LIBS)
@@ -256,19 +257,19 @@ if(BUILD_STANDALONE)
   # Fix for Linux 'make package' that fails to link with libicu; also package OpenSSL libs from system
   if(UNIX AND NOT APPLE AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
-    file(GLOB LIBICUDATA_SO "${Qt5_DIR}/../../libicudata.so.[0-9][0-9]")
+    file(GLOB LIBICUDATA_SO "${Qt6_DIR}/../../libicudata.so.[0-9][0-9]")
     if("${LIBICUDATA_SO}" STREQUAL "")
       file(GLOB LIBICUDATA_SO "/usr/lib/*/libicudata.so.[0-9][0-9]")
     endif()
     set_target_properties( libicudata PROPERTIES IMPORTED_LOCATION ${LIBICUDATA_SO} )
     add_library( libicui18n SHARED IMPORTED )
-    file(GLOB LIBICUI18N_SO "${Qt5_DIR}/../../libicui18n.so.[0-9][0-9]")
+    file(GLOB LIBICUI18N_SO "${Qt6_DIR}/../../libicui18n.so.[0-9][0-9]")
     if("${LIBICUI18N_SO}" STREQUAL "")
       file(GLOB LIBICUI18N_SO "/usr/lib/*/libicui18n.so.[0-9][0-9]")
     endif()
     set_target_properties( libicui18n PROPERTIES IMPORTED_LOCATION ${LIBICUI18N_SO} )
     add_library( libicuuc SHARED IMPORTED )
-    file(GLOB LIBICUUC_SO "${Qt5_DIR}/../../libicuuc.so.[0-9][0-9]")
+    file(GLOB LIBICUUC_SO "${Qt6_DIR}/../../libicuuc.so.[0-9][0-9]")
     if("${LIBICUUC_SO}" STREQUAL "")
       file(GLOB LIBICUUC_SO "/usr/lib/*/libicuuc.so.[0-9][0-9]")
     endif()
@@ -291,8 +292,8 @@ if(BUILD_STANDALONE)
         #64bit
         set(OPENSSL_DLL_SUFFIX "-x64")
       endif()
-      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
-      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
+      install(FILES "${OPENSSL_ROOT_DIR}/bin/libcrypto-3${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
+      install(FILES "${OPENSSL_ROOT_DIR}/bin/libssl-3${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
     else() # appveyor
       install(FILES "${OPENSSL_INCLUDE_DIR}/../libeay32.dll" DESTINATION bin)
       install(FILES "${OPENSSL_INCLUDE_DIR}/../libssl32.dll" DESTINATION bin)
@@ -309,7 +310,7 @@ endif()
 # install fixup_bundle script to resolve and fixup runtime dependencies
 if(BUILD_STANDALONE AND NOT ANDROID)
   # Specify the path to get the Qt libraries
-  get_target_property(QtCore_location Qt5::Core LOCATION)
+  get_target_property(QtCore_location Qt6::Core LOCATION)
   get_filename_component(QT_LIBS_DIRECTORY ${QtCore_location} DIRECTORY)
   configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
@@ -322,13 +323,13 @@ endif()
 
 if(WIN32 AND NOT MINGW)
 # install libEGL.dll, libGLESv2.dll, d3dcompiler_47.dll from Qt installation. Not sure if there is a clean way to get them...
-# Qt5_Dir is like C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/cmake/Qt5
-    install(FILES ${Qt5_DIR}/../../../bin/libEGL.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
-    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libEGL.lib)
-    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libGLESv2.lib)
-    install(FILES ${Qt5_DIR}/../../../bin/opengl32sw.dll DESTINATION bin)
+# Qt6_Dir is like C:/Qt/Qt6.5.3/mingw_64/lib/cmake/Qt6
+    install(FILES ${Qt6_DIR}/../../../bin/libEGL.dll DESTINATION bin)
+    install(FILES ${Qt6_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
+    install(FILES ${Qt6_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt6_DIR}/../../libEGL.lib)
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt6_DIR}/../../libGLESv2.lib)
+    install(FILES ${Qt6_DIR}/../../../bin/opengl32sw.dll DESTINATION bin)
     # CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS contains visual c++ libraries
     install(FILES ${CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS} DESTINATION bin)
 endif()

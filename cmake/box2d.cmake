@@ -49,10 +49,10 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
 
     set(_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
     if(WIN32)
-      set(_box2d_library_dir "release/")
+      set(_box2d_library_dir "bin/plugins/Box2D/")
       set(_box2d_library_file "qmlbox2d.dll")
     elseif(CMAKE_HOST_APPLE)
-      set(_box2d_library_dir "")
+      set(_box2d_library_dir "bin/plugins/Box2D/")
       set(_box2d_library_file "libqmlbox2d.dylib")
     elseif(ANDROID)
       set(_box2d_library_dir "bin/plugins/Box2D/")
@@ -69,15 +69,6 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
     endif()
 
     set(BOX2D_MAKE_PROGRAM ${CMAKE_MAKE_PROGRAM})
-    # Ninja is not supported by qmake.
-    # In case Ninja is set as generator, use make on Linux, nmake on Windows
-    if(${CMAKE_GENERATOR} MATCHES "Ninja")
-      if(WIN32)
-        set(BOX2D_MAKE_PROGRAM "nmake")
-      else()
-        set(BOX2D_MAKE_PROGRAM "make")
-      endif()
-    endif()
 
     if(ANDROID)
       # I didn't find a better way to copy the libraries to the lib folder only on Android when doing an aab package...
