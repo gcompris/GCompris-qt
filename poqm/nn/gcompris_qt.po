@@ -2679,17 +2679,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Nei"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:142
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Opna"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:149
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Lagra"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:156
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Test"
@@ -22023,7 +22023,7 @@ msgstr ""
 "kvart ord berre ei kort stund. Svar på om det opphavlege ordet var eit dei "
 "viste orda."
 
-#: activities/readingh/Readingh.qml:299
+#: activities/readingh/Readingh.qml:301
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22034,12 +22034,12 @@ msgstr ""
 "<font color=\"#373737\">Sjå om ordet<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">vert vist</font>"
 
-#: activities/readingh/Readingh.qml:351
+#: activities/readingh/Readingh.qml:353
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, eg såg det!"
 
-#: activities/readingh/Readingh.qml:372
+#: activities/readingh/Readingh.qml:374
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nei, det var ikkje der!"
