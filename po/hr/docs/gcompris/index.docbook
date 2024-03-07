@@ -9,7 +9,7 @@
 ><!-- replace kmyapplication here
                                             do *not* replace kappname-->
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % English "INCLUDE"
+  <!ENTITY % hr "INCLUDE"
 > <!-- ONLY If you are writing non-English
                                      original documentation, change
                                      the language here -->
@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2023-06-26</date>
+>2024-02-21</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.3</releaseinfo>
+>4.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -124,7 +124,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; dostupan je na sljedećim operacijskim sustavima: &GNU;/&Linux;, &BSD;, MacOSX, &Windows; i Android. Potrebna je 3D kartica s podrškom za <emphasis
 >OpenGL 2.1</emphasis
-> ili noviji. Obavezna dubina boje je najmanje 32-bita</para>
+> ili noviji. Obavezna dubina boje je najmanje 32-bita.</para>
 </sect1>
 
 <sect1 id="installation">
@@ -640,7 +640,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Programska autorska prava 2000-2023 Timothée Giet i drugi </para>
+>Programska autorska prava 2000-2024 Timothée Giet i drugi </para>
 
 <para
 >Prijevod GCompris aplikacije i dokumentacije: Igor Dobrača<email
