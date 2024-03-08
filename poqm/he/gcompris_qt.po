@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-02-23 08:43+0200\n"
+"PO-Revision-Date: 2024-03-07 23:43+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -4669,20 +4669,14 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 בלון האויר החם של האחים מונטגולפייר"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 האאולה של קלמנט אדר"
+msgstr "1890 האאולה של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 טיסת המסוק הראשונה של פאול קורנוּ"
+msgstr "1907 טיסת המסוק הראשונה של פאול קורנוּ"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4695,12 +4689,9 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 הפרדיאר של קוגנטס"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 האאולה של קלמנט אדר"
+msgstr "1890 האאולה של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4728,12 +4719,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 - קטר הקיטור 'רוקט' של סטפנסון"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 האאולה של קלמנט אדר"
+msgstr "1890 האאולה של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4746,20 +4734,14 @@ msgid "Aviation"
 msgstr "תעופה"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 האאולה של קלמנט אדר"
+msgstr "1890 האאולה של קלמנט אדר"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 האחים רייט המעופפים 3"
+msgstr "1905 האחים רייט המעופפים 3"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -9485,9 +9467,6 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "רווח: להחליף בין מצב נראה ומצב בלתי-נראה"
 
 #: activities/frieze/Frieze.qml:289
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "אפשר להתחיל"
