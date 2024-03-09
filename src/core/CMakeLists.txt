@@ -155,10 +155,9 @@ if(BUILD_STANDALONE)
   list(APPEND _qt_plugins2 multimedia/${_lib_prefix}ffmpegmediaplugin)
   
   if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT UBUNTUTOUCH)
-    list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
-      mediaservice/${_lib_prefix}gstcamerabin
-      mediaservice/${_lib_prefix}gstmediacapture
-      mediaservice/${_lib_prefix}gstmediaplayer)
+    list(APPEND _qt_plugins2 multimedia/${_lib_prefix}gstreamermediaplugin)
+  elseif(ANDROID)
+    list(APPEND _qt_plugins2 multimedia/${_lib_prefix}androidmediaplugin)
   elseif(WIN32)
     list(APPEND _qt_plugins2 multimedia/${_lib_prefix}windowsmediaplugin)
   elseif(APPLE)
@@ -282,10 +281,8 @@ if(BUILD_STANDALONE)
     # package installed OpenSSL libraries
     install(FILES "${OPENSSL_SSL_LIBRARY}" DESTINATION bin)
     install(FILES "${OPENSSL_CRYPTO_LIBRARY}" DESTINATION bin)
-    install(FILES "${OPENSSL_SSL_LIBRARY}.10" DESTINATION bin)
-    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.10" DESTINATION bin)
-    install(FILES "${OPENSSL_SSL_LIBRARY}.1.0.2k" DESTINATION bin)
-    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.1.0.2k" DESTINATION bin)
+    install(FILES "${OPENSSL_SSL_LIBRARY}.3" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.3" DESTINATION bin)
     target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
 
