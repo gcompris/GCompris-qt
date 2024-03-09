@@ -127,7 +127,7 @@ ActivityBase {
                         horizontalOffset: 3
                         verticalOffset: 3
                         radius: 1
-                        // samples: 16
+                        samples: 16
                         color: "#ff1c4788"
                         source: text
                     }

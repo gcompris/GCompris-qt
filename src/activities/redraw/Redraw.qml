@@ -187,7 +187,7 @@ ActivityBase {
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
-                                // samples: 16
+                                samples: 16
                                 color: "#80000000"
                                 source: text1
                             }
@@ -307,7 +307,7 @@ ActivityBase {
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
-                                // samples: 16
+                                samples: 16
                                 color: "#80000000"
                                 source: text2
                             }
@@ -355,7 +355,7 @@ ActivityBase {
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
-                                // samples: 16
+                                samples: 16
                                 color: "#80000000"
                                 source: text3
                             }
