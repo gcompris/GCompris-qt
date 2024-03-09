@@ -29,11 +29,13 @@ ColumnLayout {
     Rectangle {
         id: caseBox
         color: selected ? selectedDateColor : "#F2F2F2"
-        width: root.width
-        height: root.height
         radius: 2
         border.width: 1
         border.color: "lightgray"
+
+        Layout.fillWidth: true
+        Layout.fillHeight: true
+
         MouseArea {
             anchors.fill: parent
             onClicked: {

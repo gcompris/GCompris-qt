@@ -246,7 +246,6 @@ ActivityBase {
                 spacing: 0
 
                 readonly property int gridLineThickness: 1
-
                 Layout.fillWidth: true
                 Layout.fillHeight: true
 
@@ -432,12 +431,12 @@ ActivityBase {
                     when: answerChoices.visible
                     PropertyChanges {
                         target: errorRectangle
-                        x: answerChoices.x + answerChoices.currentItem.x
-                        y: answerChoices.y + answerChoices.currentItem.y
-                        width: answerChoices.currentItem.width
-                        height: answerChoices.currentItem.height
-                        radius: answerChoices.currentItem.radius
-                        scale: answerChoices.currentItem.scale
+                        x: answerChoices.currentItem ? answerChoices.x + answerChoices.currentItem.x : 0
+                        y: answerChoices.currentItem ? answerChoices.y + answerChoices.currentItem.y : 0
+                        width: answerChoices.currentItem ? answerChoices.currentItem.width : 0
+                        height: answerChoices.currentItem ? answerChoices.currentItem.height : 0
+                        radius: answerChoices.currentItem ? answerChoices.currentItem.radius : 0
+                        scale: answerChoices.currentItem ? answerChoices.currentItem.scale : 0
                     }
                 },
                 State {
