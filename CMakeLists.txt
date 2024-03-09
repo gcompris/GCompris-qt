@@ -35,7 +35,7 @@ include(FeatureSummary)
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/)
-set(CMAKE_PREFIX_PATH "${Qt5_DIR}/")
+set(CMAKE_PREFIX_PATH "${Qt6_DIR}/")
 
 # KDE po to qm tools
 if(ECM_FOUND)
@@ -45,7 +45,7 @@ if(ECM_FOUND)
   include(ECMCoverageOption)
 endif()
 
-add_compile_definitions(QT_DISABLE_DEPRECATED_BEFORE=0x050F00)
+add_compile_definitions(QT_DISABLE_DEPRECATED_BEFORE=0x060500)
 
 # add tools (cppcheck, clang-tidy...) if build on testing mode only
 # (slower compilation)
@@ -170,7 +170,7 @@ if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
   set(_data_dest_dir bin/${_bundle_bin}/../Resources)
 elseif(HAIKU)
-  set(_data_dest_dir data/Qt5/${GCOMPRIS_EXECUTABLE_NAME})
+  set(_data_dest_dir data/Qt6/${GCOMPRIS_EXECUTABLE_NAME})
 else()
   set(_data_dest_dir share/${GCOMPRIS_EXECUTABLE_NAME})
 endif()
