@@ -402,7 +402,7 @@ ActivityBase {
             onBpmIncreased: {
                 multipleStaff.bpmValue++
             }
-            onEmitOptionMessage: (messaeg) => clickedOptionMessage.show(message)
+            onEmitOptionMessage: (message) => clickedOptionMessage.show(message)
         }
 
         DialogActivityConfig {
