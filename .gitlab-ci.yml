@@ -4,9 +4,10 @@
 include:
   - project: sysadmin/ci-utilities
     file:
-      - /gitlab-templates/linux.yml
-      - /gitlab-templates/linux-static.yml
-      - /gitlab-templates/freebsd.yml
+      - /gitlab-templates/linux-qt6.yml
+      - /gitlab-templates/linux-qt6-static.yml
+      - /gitlab-templates/freebsd-qt6.yml
       - /gitlab-templates/flatpak.yml
       - /gitlab-templates/reuse-lint.yml
       - /gitlab-templates/json-validation.yml
+
