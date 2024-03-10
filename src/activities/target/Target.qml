@@ -28,7 +28,7 @@ ActivityBase {
         signal stop
         signal targetReached
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(items.currentArrow != items.nbArrow)
                 return
 
@@ -232,7 +232,7 @@ ActivityBase {
             }
             onKeypress: background.appendText(text)
 
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         DialogChooseLevel {
