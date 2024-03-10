@@ -23,7 +23,7 @@ ChartView {
             borderWidth: 5
         }
 
-        onClicked: {
+        onClicked: (slice) => {
             if(items.buttonsBlocked || activity.mode === "findFraction") {
                 return;
             }

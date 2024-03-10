@@ -66,7 +66,7 @@ ActivityBase {
 
         Keys.enabled: !items.buttonsBlocked
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if([Qt.Key_Enter, Qt.Key_Return].indexOf(event.key) != -1 && items.itemIndex !== -1) {
                 okButton.clicked();
             }
