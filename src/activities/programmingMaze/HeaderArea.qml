@@ -36,12 +36,13 @@ Rectangle {
         anchors.horizontalCenterOffset: -iconImage.width * 0.5
         width: parent.width - iconImage.width
         height: parent.height
-        fontSizeMode: Font.DemiBold
+        font.weight: Font.DemiBold
         minimumPointSize: 7
         fontSize: mediumSize
         wrapMode: Text.WordWrap
         color: "#2e2f2f"
         text: header.headerText
+        fontSizeMode: Text.Fit
     }
 
     Image {
