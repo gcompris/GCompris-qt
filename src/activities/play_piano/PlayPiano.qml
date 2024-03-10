@@ -40,7 +40,7 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(items.buttonsBlocked)
                 return;
 
@@ -217,7 +217,7 @@ ActivityBase {
             whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running && !items.buttonsBlocked
             whiteKeyNoteLabelsTreble: [ whiteKeyNoteLabelsArray.slice(18, 26) ]
             whiteKeyNoteLabelsBass: [ whiteKeyNoteLabelsArray.slice(11, 19)]
-            onNoteClicked: {
+            onNoteClicked: (note) => {
                 multipleStaff.playNoteAudio(note, "Quarter", clefType, 500)
                 Activity.checkAnswer(note)
             }
