@@ -70,7 +70,7 @@ ActivityBase {
         // Needed to get keyboard focus on IntroMessage
         Keys.forwardTo: introMessage
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             items.keyNavigationMode = true;
             items.currentKeyZone.handleKeys(event);
         }
