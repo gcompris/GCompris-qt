@@ -22,7 +22,7 @@ Rectangle {
     signal start
     signal stop
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Space || event.key === Qt.Key_Escape) {
             close();
         }
