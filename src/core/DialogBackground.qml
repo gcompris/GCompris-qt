@@ -40,7 +40,7 @@ Rectangle {
     signal stop
     signal button0Hit
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
             scrollItem.down();
         } else if(event.key === Qt.Key_Up) {
@@ -52,7 +52,7 @@ Rectangle {
         dialogBackground.close();
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             dialogBackground.close();
             event.accepted = true;

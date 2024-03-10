@@ -264,7 +264,7 @@ Item {
         enabled: !ApplicationInfo.isMobile && item.isClickable
         anchors.fill: parent
         acceptedButtons: Qt.LeftButton | Qt.RightButton
-        onClicked: {
+        onClicked: (mouse) => {
             if (mouse.button == Qt.LeftButton)
                 up()
             else

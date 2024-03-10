@@ -58,7 +58,7 @@ Item {
     property int textContainerWidth: 0.9 * parent.width
     property int textContainerHeight: 0.75 * parent.height - nextButton.height
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Left && previousButton.visible) {
             previousButton.clicked();
         } else if(event.key === Qt.Key_Right && nextButton.visible) {
@@ -75,12 +75,12 @@ Item {
         event.accepted = true;
     }
 
-    Keys.onEscapePressed: {
+    Keys.onEscapePressed: (event) => {
         skipButton.clicked();
         event.accepted = true;
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             skipButton.clicked();
             event.accepted = true;
