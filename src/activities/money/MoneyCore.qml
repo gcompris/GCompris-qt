@@ -198,13 +198,13 @@ ActivityBase {
             // === The Pocket Area ===
             MoneyArea {
                 id: pocketArea
-                onTransaction: Activity.pay(index)
+                onTransaction: (index) => Activity.pay(index)
             }
         }
 
         Keys.enabled: !items.buttonsBlocked
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(event.key === Qt.Key_Tab) {
                 if(items.selectedArea.count !== 0 && items.itemIndex !== -1)
                     items.selectedArea.itemAt(items.itemIndex).selected = false
