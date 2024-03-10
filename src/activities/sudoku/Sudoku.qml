@@ -234,7 +234,7 @@ ActivityBase {
             visible: nbRegions > 1
 
             anchors.fill: sudoColumn
-            property int regionLineSize: Math.round(3 * ApplicationInfo.ratio)
+            property int regionLineSize: Math.round(4 * ApplicationInfo.ratio)
 
             Repeater {
                 id: regionRepeater
