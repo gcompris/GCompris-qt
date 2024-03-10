@@ -178,10 +178,10 @@ ActivityBase {
                 }
             }
 
-            onPressed: {
+            onPressed: (touchPoints) => {
                 checkPoints(touchPoints)
             }
-            onTouchUpdated: {
+            onTouchUpdated: (touchPoints) => {
                 checkPoints(touchPoints)
             }
         }
