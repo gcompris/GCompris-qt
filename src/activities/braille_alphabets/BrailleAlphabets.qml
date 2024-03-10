@@ -36,7 +36,7 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(items.buttonsBlocked) {
                 return
             }
