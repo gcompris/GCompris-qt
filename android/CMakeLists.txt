@@ -23,7 +23,7 @@ find_program(ANDROID_DEPLOY_QT NAMES androiddeployqt PATHS ${QT_HOST_PATH}/${QT6
 
 # Look for androiddeployqt program
 if(NOT ANDROID_DEPLOY_QT)
-  message(FATAL_ERROR "Could not find androiddeployqt. Make sure you set all the Qt5_* paths to the Qt for android compiled version.")
+  message(FATAL_ERROR "Could not find androiddeployqt. Make sure you set all the Qt6_* paths to the Qt for android compiled version.")
 endif()
 
 # Set version
@@ -181,7 +181,7 @@ ExternalProject_Add(
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
-  ./Configure --prefix=${CMAKE_BINARY_DIR}/android-build --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared -D__ANDROID_API__=${CMAKE_ANDROID_API}
+  ./Configure --prefix=${CMAKE_BINARY_DIR}/android-build --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared
   BUILD_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
   make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs &&

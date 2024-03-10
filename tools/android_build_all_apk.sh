@@ -6,15 +6,12 @@
 #
 #   SPDX-License-Identifier: GPL-3.0-or-later
 
-Qt5_BaseDIR=~/Qt/5.12.12
-export ANDROID_NDK=/opt/android-ndk-r25c/
+Qt6_BaseDIR=~/Qt/6.5.3
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
-
 if [ "$#" -eq 1 ]; then
-    Qt5_BaseDIR=$1
-    echo "Overriding Qt5_BaseDIR to ${Qt5_BaseDIR}"
+    Qt6_BaseDIR=$1
+    echo "Overriding Qt6_BaseDIR to ${Qt6_BaseDIR}"
 fi
 
 # The current version
@@ -49,12 +46,11 @@ f_cmake()
     fi
 
     cmake -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake \
-          -DCMAKE_VERBOSE_MAKEFILE=ON \
           -DCMAKE_ANDROID_API=23 \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
-	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
-	  -DQt6_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
+	  -DCMAKE_FIND_ROOT_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/ \
+	  -DQt6_DIR=${Qt6_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
@@ -71,7 +67,7 @@ mkdir -p ${builddir}
 cd ${builddir}
 
 # Retrieve the Qt version
-if [[ $Qt5_BaseDIR =~ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
+if [[ $Qt6_BaseDIR =~ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
     version=${BASH_REMATCH[0]}
 fi
 n=${version//[!0-9]/ }
@@ -80,15 +76,8 @@ major=${a[0]}
 minor=${a[1]}
 patch=${a[2]}
 
-# If we use Qt > 5.14, we need to update some variables
-if [[ $minor -ge 14 ]]; then
-    echo "Using Qt5.14 or more";
-    cmake_extra_args="-DANDROID_BUILD_ABI_armeabi-v7a=ON"
-    QtTarget=android
-fi
-
 f_cmake armeabi-v7a ON OFF
-make
+make -j 4
 make apk_aligned_signed
 
 # Remove extra apk
