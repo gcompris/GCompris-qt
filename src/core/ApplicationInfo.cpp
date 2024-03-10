@@ -86,8 +86,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
 // @FIXME this does not work on iOS: https://bugreports.qt.io/browse/QTBUG-50624
 #if !defined(Q_OS_IOS)
     // Get all symbol fonts to remove them
-    QFontDatabase database;
-    m_excludedFonts = database.families(QFontDatabase::Symbol);
+    m_excludedFonts = QFontDatabase::families(QFontDatabase::Symbol);
 #endif
     // Get fonts from rcc
     const QStringList fontFilters = { "*.otf", "*.ttf" };
