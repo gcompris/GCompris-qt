@@ -137,7 +137,7 @@ Item {
 
     MouseArea {
         anchors.centerIn: parent
-        width: parent.width + margin
+        width: parent.width + board.margin
         height: width
         enabled: responsive
         onClicked: {
