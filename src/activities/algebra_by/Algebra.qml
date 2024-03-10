@@ -229,12 +229,12 @@ ActivityBase {
             enableInput: !items.buttonsBlocked
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(!items.buttonsBlocked)
                 numpad.updateAnswer(event.key, true);
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if(!items.buttonsBlocked)
                 numpad.updateAnswer(event.key, false);
         }
