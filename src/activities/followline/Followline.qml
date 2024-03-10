@@ -153,7 +153,7 @@ ActivityBase {
                 maximumTouchPoints: 1
                 enabled: ApplicationInfo.isMobile && water.opacity === 0
                 z: 1000
-                onTouchUpdated: {
+                onTouchUpdated: (touchPoints) => {
                     for(var i in touchPoints) {
                         var touch = touchPoints[i]
                         var part = lineArea.childAt(touch.x, touch.y)
