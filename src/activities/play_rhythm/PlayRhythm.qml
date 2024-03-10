@@ -83,7 +83,7 @@ ActivityBase {
         Keys.onReturnPressed: Activity.initSubLevel();
         Keys.onUpPressed: optionsRow.bpmIncreased();
         Keys.onDownPressed: optionsRow.bpmDecreased();
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if(iAmReady.visible) {
                 iAmReady.visible = false;
                 Activity.initLevel();
