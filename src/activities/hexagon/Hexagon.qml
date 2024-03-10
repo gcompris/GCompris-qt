@@ -56,7 +56,7 @@ ActivityBase {
 
         MultiPointTouchArea {
             anchors.fill: parent
-            onPressed: checkTouchPoint(touchPoints)
+            onPressed: (touchPoints) => checkTouchPoint(touchPoints)
         }
 
         Item {
