@@ -122,11 +122,11 @@ ActivityBase {
             enableInput: !bonus.isPlaying
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             numpad.updateAnswer(event.key, true);
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             numpad.updateAnswer(event.key, false);
         }
 
