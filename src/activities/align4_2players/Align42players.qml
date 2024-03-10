@@ -64,7 +64,7 @@ ActivityBase {
         onStart: { Activity.start(items, twoPlayer) }
         onStop: { Activity.stop() }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(drop.running || bonus.isPlaying || (items.counter % 2 != 0 && !twoPlayer))
                 return
             if(items.gameDone && !bonus.isPlaying)
