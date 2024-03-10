@@ -153,14 +153,14 @@ if(BUILD_STANDALONE)
   # Seems to be everywhere
   list(APPEND _qt_plugins2 tls/${_lib_prefix}qopensslbackend)
   list(APPEND _qt_plugins2 multimedia/${_lib_prefix}ffmpegmediaplugin)
-  
+
   if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT UBUNTUTOUCH)
     list(APPEND _qt_plugins2 multimedia/${_lib_prefix}gstreamermediaplugin)
   elseif(ANDROID)
     list(APPEND _qt_plugins2 multimedia/${_lib_prefix}androidmediaplugin)
   elseif(WIN32)
     list(APPEND _qt_plugins2 multimedia/${_lib_prefix}windowsmediaplugin)
-  elseif(APPLE)
+  elseif(APPLE) # Probably wrong with Qt6
     list(APPEND _qt_plugins2 audio/${_lib_prefix}qtaudio_coreaudio
       mediaservice/${_lib_prefix}qavfmediaplayer
       mediaservice/${_lib_prefix}qtmedia_audioengine

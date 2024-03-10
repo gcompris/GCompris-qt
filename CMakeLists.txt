@@ -53,24 +53,14 @@ if(BUILD_TESTING)
   include(CodeQualityUtils)
 endif()
 
-set(QT_REQUIRED_VERSION 5.12.0)
+set(QT_REQUIRED_VERSION 6.5.0)
 
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
   find_package(ECM)
   set(ANDROID 1)
-  # Require ndk minimum version to 21
-  if(ANDROID_NDK_REVISION VERSION_LESS "21.0.0")
-    message(FATAL_ERROR "android ndk 21 minimal required, actually using ${ANDROID_NDK_REVISION}")
-  endif()
-  # TODO: possibly should be setup by toolchain one day
-  set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
-  if(ECM_VERSION VERSION_GREATER "5.55.0")
-    set(QT_REQUIRED_VERSION 5.12.0)
-  endif()
-
-  # workaround until this fix is in released ECM
-  if(ECM_VERSION VERSION_LESS "5.15.0")
-    add_definitions(-DANDROID)
+  # Require ndk minimum version to 25
+  if(ANDROID_NDK_REVISION VERSION_LESS "25.0.0")
+    message(FATAL_ERROR "android ndk 25 minimal required, actually using ${ANDROID_NDK_REVISION}")
   endif()
 endif()
 
@@ -115,11 +105,6 @@ add_definitions(
     -DQT_NO_KEYWORDS
     -DQT_NO_FOREACH
 )
-
-## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
-# if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
-#   message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
-# endif()
 
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL)
