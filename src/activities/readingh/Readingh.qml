@@ -397,7 +397,7 @@ ActivityBase {
             useDefault: false
             filename: ""
 
-            onError: console.log("Reading: Wordlist error: " + msg);
+            onError: (msg) => console.log("Reading: Wordlist error: " + msg);
         }
 
         Timer {
