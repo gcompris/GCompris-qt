@@ -21,8 +21,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    Keys.onPressed: Activity.processKeyPress(event)
-    Keys.onReleased: Activity.processKeyRelease(event)
+    Keys.onPressed: (event) => { Activity.processKeyPress(event) }
+    Keys.onReleased: (event) => { Activity.processKeyRelease(event) }
 
     pageComponent: Rectangle {
         id: background
