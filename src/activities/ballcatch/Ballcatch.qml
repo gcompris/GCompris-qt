@@ -21,7 +21,7 @@ ActivityBase {
     }
     onStop: {}
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         Activity.processKey(event);
     }
 
