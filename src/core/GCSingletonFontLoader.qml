@@ -35,7 +35,7 @@ QtObject {
 
     property QtObject fontNameLoader: FontLoader {
         id: nameLoader
-        name: ApplicationSettings.font
+        source: "resource/fonts/"+ApplicationSettings.font
     }
 
 }
