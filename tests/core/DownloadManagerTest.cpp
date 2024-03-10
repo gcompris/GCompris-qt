@@ -80,7 +80,7 @@ private Q_SLOTS:
         QTest::addColumn<GCompris::ResourceType>("resource");
 
         QTest::newRow("wordset") << GCompris::ResourceType::WORDSET;
-        QTest::newRow("wordset") << GCompris::ResourceType::WORDSET;
+        QTest::newRow("wordset_2") << GCompris::ResourceType::WORDSET;
     }
     void test_downloadResource()
     {
