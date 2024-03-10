@@ -126,7 +126,7 @@ ActivityBase {
                 }
 
                 signal start(string message)
-                onStart: {
+                onStart: (message) => {
                     instruction.text = message
                     instructionArea.visible = true
                     instructionPauseAnimation.running = true
@@ -220,7 +220,7 @@ ActivityBase {
             signal startAnimation(Pit from, Pit to)
             signal stop
 
-            onStartAnimation: {
+            onStartAnimation: (from, to) => {
                 items.isDistributionAnimationPlaying = true
                 animationSeed.fromPit = from
                 animationSeed.toPit = to
@@ -283,7 +283,7 @@ ActivityBase {
 
             signal start(Pit from, Pit to)
 
-            onStart: {
+            onStart: (from, to) => {
                 teleportAnimation.fromPit = from
                 teleportAnimation.toPit = to
                 noOfSeeds = teleportAnimation.fromPit.seeds
@@ -331,7 +331,7 @@ ActivityBase {
 
             signal start(var player_, var index_)
 
-            onStart: {
+            onStart: (player_, index_) => {
                 player = player_
                 index = index_
                 pauseAnimation.running = true
@@ -358,7 +358,7 @@ ActivityBase {
 
             signal start(Pit fromPit_, ScoreItem score_)
 
-            onStart: {
+            onStart: (fromPit_, score_) => {
                 fromPit = fromPit_
                 score = score_
                 finalScore = fromPit_.seeds + score_.playerScore
@@ -413,11 +413,11 @@ ActivityBase {
             property Pit targetPit
             property string originalHighlightColor
 
-            signal start(Pit _targetPit)
+            signal start(Pit targetPit_)
 
-            onStart: {
+            onStart: (targetPit_) => {
                 items.isDistributionAnimationPlaying = true
-                targetPit = _targetPit
+                targetPit = targetPit_
                 originalHighlightColor = targetPit.highlightColor
                 targetPit.highlightColor = "#DF543D" //red
                 targetPit.highlight = true
