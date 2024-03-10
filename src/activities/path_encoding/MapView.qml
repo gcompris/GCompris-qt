@@ -55,11 +55,11 @@ Rectangle {
     MultiPointTouchArea {
         anchors.fill: parent
         maximumTouchPoints: 1
-        onPressed: {
+        onPressed: (touchPoints) => {
             checkTouchPoint(touchPoints);
         }
-        onTouchUpdated: checkTouchPoint(touchPoints);
-        onReleased: {
+        onTouchUpdated: (touchPoints) => checkTouchPoint(touchPoints);
+        onReleased: (touchPoints) => {
             checkTouchPoint(touchPoints)
             if(selectedOverlay.visible && touchEnabled && !items.tux.isAnimationRunning) {
                 var row = Math.floor(selectedOverlay.y / cellSize)
