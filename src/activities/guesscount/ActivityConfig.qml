@@ -83,7 +83,7 @@ Item {
 
                     Connections {
                         target: activityConfiguration
-                        onRefreshAdmin: levels.refreshAllTiles();
+                        function onRefreshAdmin() { levels.refreshAllTiles(); }
                     }
                 }
             }
