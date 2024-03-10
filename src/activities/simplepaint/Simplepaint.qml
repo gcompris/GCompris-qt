@@ -32,7 +32,7 @@ ActivityBase {
         property bool isColorTab: true
         property bool spaceIsPressed: false
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             items.keyboardControls = true;
 
             if(event.key === Qt.Key_Up) {
@@ -105,7 +105,7 @@ ActivityBase {
             }
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
                 spaceIsPressed = false;
             }
@@ -179,12 +179,12 @@ ActivityBase {
 
         MultiPointTouchArea {
             anchors.fill: parent
-            onPressed: {
+            onPressed: (touchPoints) => {
                 items.keyboardControls = false;
                 isColorTab = false;
                 checkTouchPoint(touchPoints);
             }
-            onTouchUpdated: checkTouchPoint(touchPoints);
+            onTouchUpdated: (touchPoints) => checkTouchPoint(touchPoints);
         }
 
         function checkTouchPoint(touchPoints) {
