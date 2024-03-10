@@ -53,7 +53,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Keys.enabled: !items.buttonsBlocked
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 Activity.verifyAnswer()
                 event.accepted = true
@@ -80,7 +80,7 @@ ActivityBase {
             }
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             keyboardMode = true
             event.accepted = false
         }
