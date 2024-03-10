@@ -70,7 +70,7 @@ ActivityBase {
         }
 
         Keys.enabled: !items.blockClicks
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             background.keyNavigationVisible = true
             if (event.key === Qt.Key_Left)
                 grid.moveCurrentIndexLeft()
