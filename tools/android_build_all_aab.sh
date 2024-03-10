@@ -6,12 +6,12 @@
 #
 #   SPDX-License-Identifier: GPL-3.0-or-later
 
-Qt5_BaseDIR=~/Qt/5.15.2
+Qt6_BaseDIR=~/Qt/6.5.3
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 if [ "$#" -eq 1 ]; then
-    Qt5_BaseDIR=$1
-    echo "Overriding Qt5_BaseDIR to ${Qt5_BaseDIR}"
+    Qt6_BaseDIR=$1
+    echo "Overriding Qt6_BaseDIR to ${Qt6_BaseDIR}"
 fi
 
 # The current version
@@ -45,10 +45,9 @@ f_cmake()
         rm -rf CMakeFiles
     fi
 
-    cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+    ${Qt6_BaseDIR}/android_x86_64/bin/qt-cmake \
+          -DCMAKE_ANDROID_API=23 \
 	  -DCMAKE_BUILD_TYPE=Release \
-	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
-	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
@@ -64,22 +63,7 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-# Retrieve the Qt version
-if [[ $Qt5_BaseDIR =~ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
-    version=${BASH_REMATCH[0]}
-fi
-n=${version//[!0-9]/ }
-a=(${n//\./ })
-major=${a[0]}
-minor=${a[1]}
-patch=${a[2]}
-
-# If we use Qt > 5.14, we need to update some variables
-if [[ $minor -le 14 ]]; then
-    echo "Using Qt5.14 or less, aborting";
-    exit 1
-fi
-cmake_extra_args="-DANDROID_BUILD_ABI_armeabi-v7a=ON -DANDROID_BUILD_ABI_arm64-v8a=ON -DANDROID_BUILD_ABI_x86_64=ON -DANDROID_BUILD_ABI_x86=ON"
+cmake_extra_args="-DQT_ANDROID_BUILD_ALL_ABIS=true"
 QtTarget=android
 
 f_cmake android ON OFF
