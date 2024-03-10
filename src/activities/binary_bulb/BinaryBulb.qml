@@ -79,7 +79,7 @@ ActivityBase {
         // Needed to get keyboard focus on Tutorial
         Keys.forwardTo: tutorialSection
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(items.buttonsBlocked)
                 return
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
