@@ -63,7 +63,7 @@ ActivityBase {
 
         GCCreationHandler {
             id: creationHandler
-            onFileLoaded: {
+            onFileLoaded: (data, filePath) => {
                 isLoadingCreation = true
                 edit.clear()
                 edit.text = data["text"]
@@ -329,7 +329,7 @@ ActivityBase {
                 }
             }
             shiftKey: true
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
             readonly property string newline: "\u21B2"
 
             function populate() {
