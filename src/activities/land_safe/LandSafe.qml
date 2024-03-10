@@ -27,8 +27,8 @@ ActivityBase {
     }
     onStop: inForeground = false;
 
-    Keys.onPressed: Activity.processKeyPress(event);
-    Keys.onReleased: Activity.processKeyRelease(event);
+    Keys.onPressed: (event) => { Activity.processKeyPress(event); }
+    Keys.onReleased: (event) => { Activity.processKeyRelease(event); }
 
     onWidthChanged: if (inForeground)
                         Activity.initLevel();
@@ -289,7 +289,7 @@ ActivityBase {
                     height: rocket.height
                     rotation: rocketBody.rotation
 
-                    onBeginContact: {
+                    onBeginContact: (other) => {
                         //console.log("XXX beginning contact with " + other.getBody().target.collisionName + " abs v=" + Math.abs(items.lastVelocity) + + " maxV=" + Activity.maxLandingVelocity);
                         if (other.getBody().target === landing &&
                                 Math.abs(items.lastVelocity) <= Activity.maxLandingVelocity &&
@@ -298,7 +298,7 @@ ActivityBase {
                         else // ground
                             Activity.finishLevel(false); // crash
                     }
-//                    onEndContact: console.log("XXX ending contact with " + other.getBody().target.collisionName);
+//                    onEndContact:  (other) => console.log("XXX ending contact with " + other.getBody().target.collisionName);
                 }
             }
 
