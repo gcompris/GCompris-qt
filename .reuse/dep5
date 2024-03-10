@@ -18,7 +18,7 @@ Copyright: 2016 Timothée Giet
 License: CC-BY-SA-4.0
 
 Files: android/configAndroid*.json.cmake
-Copyright: 2016 Johnny Jzaeix
+Copyright: 2016 Johnny Jazeix
 License: BSD-3-Clause
 
 Files: docs/docbook/index.docbook
