@@ -20,7 +20,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         Activity.processKey(event);
     }
 
