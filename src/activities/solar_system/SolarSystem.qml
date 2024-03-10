@@ -84,7 +84,7 @@ ActivityBase {
         // Needed to get keyboard focus on IntroMessage
         Keys.forwardTo: message
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(!mainQuizScreen.visible) {
                 if(event.key === Qt.Key_Down) {
                     planetView.moveCurrentIndexDown();
@@ -141,7 +141,7 @@ ActivityBase {
                 Activity.showSolarModel();
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             keyboardMode = true
         }
 
