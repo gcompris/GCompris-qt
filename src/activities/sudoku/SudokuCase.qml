@@ -32,7 +32,7 @@ Rectangle {
 
     Rectangle {
         id: topWall
-        color: "#808080"
+        color: "#909090"
         height: gridLineSize
         width: parent.width + gridLineSize
         anchors.verticalCenter: parent.top
@@ -40,7 +40,7 @@ Rectangle {
     }
     Rectangle {
         id: leftWall
-        color: "#808080"
+        color: "#909090"
         width: gridLineSize
         height: parent.height + gridLineSize
         anchors.horizontalCenter: parent.left
@@ -48,7 +48,7 @@ Rectangle {
     }
     Rectangle {
         id: rightWall
-        color: "#808080"
+        color: "#909090"
         width: gridLineSize
         height: parent.height + gridLineSize
         anchors.horizontalCenter: parent.right
@@ -56,7 +56,7 @@ Rectangle {
     }
     Rectangle {
         id: bottomWall
-        color: "#808080"
+        color: "#909090"
         height: gridLineSize
         width: parent.width + gridLineSize
         anchors.verticalCenter: parent.bottom
