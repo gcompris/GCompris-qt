@@ -94,7 +94,7 @@ ActivityBase {
 
         File {
             id: file
-            onError: console.error("File error: " + msg)
+            onError: (msg) => console.error("File error: " + msg)
         }
 
         JsonParser {
@@ -372,7 +372,7 @@ ActivityBase {
 
         // Needed to get keyboard focus on Tutorial
         Keys.forwardTo: tutorialSection
-        Keys.onPressed: Activity.handleKeys(event)
+        Keys.onPressed: (event) => { Activity.handleKeys(event) }
 
         //--- Debugging zone.
         Text {
