@@ -52,7 +52,7 @@ Item {
             anchors.fill: parent
             acceptedButtons: Qt.LeftButton | Qt.RightButton
             enabled: !animal.clicked
-            onClicked: {
+            onClicked: (mouse) => {
                 // if left target animal is clicked with left click
                 if((mouse.button === Qt.LeftButton) && (animalIdentifier === Activity.Position.left)) {
                     animal.clicked = true
