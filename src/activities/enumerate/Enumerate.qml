@@ -212,7 +212,7 @@ ActivityBase {
 
             onKeypress: Activity.currentAnswerItem.appendText(text)
 
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
 

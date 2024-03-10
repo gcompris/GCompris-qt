@@ -84,7 +84,7 @@ Rectangle {
         fillMode: Image.PreserveAspectFit
     }
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(!items.buttonsBlocked)
             appendText(event.text);
     }
