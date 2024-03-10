@@ -9,9 +9,8 @@
  */
 
 import QtQuick 2.12
-import QtQuick.Controls 2.12
+import QtQuick.Controls
 import QtQuick.Layouts 1.12
-import Qt.labs.calendar 1.0
 import GCompris 1.0
 
 import "calendar.js" as Activity
@@ -60,7 +59,14 @@ ActivityBase {
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
-        Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
+        Keys.onPressed: (event) => {
+            if(answerChoices.visible) {
+                answerChoices.handleKeys(event)
+            }
+            else {
+                handleKeys(event);
+            }
+        }
 
         Rectangle {
             id: calendarBox
@@ -240,7 +246,6 @@ ActivityBase {
                 spacing: 0
 
                 readonly property int gridLineThickness: 1
-
                 Layout.fillWidth: true
                 Layout.fillHeight: true
 
@@ -426,12 +431,12 @@ ActivityBase {
                     when: answerChoices.visible
                     PropertyChanges {
                         target: errorRectangle
-                        x: answerChoices.x + answerChoices.currentItem.x
-                        y: answerChoices.y + answerChoices.currentItem.y
-                        width: answerChoices.currentItem.width
-                        height: answerChoices.currentItem.height
-                        radius: answerChoices.currentItem.radius
-                        scale: answerChoices.currentItem.scale
+                        x: answerChoices.currentItem ? answerChoices.x + answerChoices.currentItem.x : 0
+                        y: answerChoices.currentItem ? answerChoices.y + answerChoices.currentItem.y : 0
+                        width: answerChoices.currentItem ? answerChoices.currentItem.width : 0
+                        height: answerChoices.currentItem ? answerChoices.currentItem.height : 0
+                        radius: answerChoices.currentItem ? answerChoices.currentItem.radius : 0
+                        scale: answerChoices.currentItem ? answerChoices.currentItem.scale : 0
                     }
                 },
                 State {
