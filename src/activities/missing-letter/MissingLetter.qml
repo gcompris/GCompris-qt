@@ -312,7 +312,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("missing letter: Error parsing json: " + msg);
+            onError: (msg) => console.error("missing letter: Error parsing json: " + msg);
         }
 
         Loader {
