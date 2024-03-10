@@ -13,7 +13,7 @@ Item {
     property bool rightWallVisible
     property bool bottomWallVisible
 
-    property int cageLineSize: 2 * Math.round(3 * ApplicationInfo.ratio / 2)
+    property int cageLineSize: Math.round(4 * ApplicationInfo.ratio)
 
     Rectangle {
         id: topWall

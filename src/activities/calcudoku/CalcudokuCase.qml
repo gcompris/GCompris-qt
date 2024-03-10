@@ -11,8 +11,8 @@ import "../../core"
 
 Rectangle {
     id: mCase
-    border.color: "#808080"
-    border.width: 2 * Math.round(ApplicationInfo.ratio / 2)
+    border.color: "#909090"
+    border.width: Math.round(ApplicationInfo.ratio)
     property string text
     property bool isInitial
     property string operator
