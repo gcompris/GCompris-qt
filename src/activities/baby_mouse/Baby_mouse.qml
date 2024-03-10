@@ -154,7 +154,7 @@ ActivityBase {
             property real startX
             property real startY
 
-            onPressed: {
+            onPressed: (touchPoints) => {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
                     previousX = touch.x
@@ -189,7 +189,7 @@ ActivityBase {
                 }
             }
 
-            onTouchUpdated: {
+            onTouchUpdated: (touchPoints) => {
                 if(background.isArrowPressed) return;
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
@@ -205,7 +205,7 @@ ActivityBase {
                 }
             }
 
-            onReleased: {
+            onReleased: (touchPoints) => {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
 
