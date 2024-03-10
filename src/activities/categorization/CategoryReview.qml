@@ -207,7 +207,7 @@ Item {
 
     Keys.onEscapePressed: { Activity.launchMenuScreen(); }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if (event.key === Qt.Key_Back) {
             event.accepted = true
             Activity.launchMenuScreen()
