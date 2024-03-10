@@ -268,9 +268,15 @@ Item {
     Connections {
         target: DownloadManager
 
-        onDownloadStarted: content.value |= content.download
-        onAllDownloadsFinished: content.value &= ~content.download
-        onError: content.value &= ~content.download
+        function onDownloadStarted() {
+            content.value |= content.download
+        }
+        function onAllDownloadsFinished() {
+            content.value &= ~content.download
+        }
+        function onError() {
+            content.value &= ~content.download
+        }
     }
 
     Image {
@@ -314,7 +320,9 @@ Item {
 
     Connections {
         target: content
-        onValueChanged: updateContent()
+        function onValueChanged() {
+            updateContent()
+        }
     }
 
     onContentChanged: {
@@ -394,7 +402,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
             sourceSize.width: fullButtonScaled
             visible: barRow.isHidden === false
-            onClicked: Core.quit(bar.parent);
+            onClicked: Core.quit(bar.parent.parent);
         }
     }
     Component {

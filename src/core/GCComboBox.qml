@@ -157,12 +157,12 @@ Item {
 
         // Forward event to activity if key pressed is not one of the handled key
         // (ctrl+F should still resize the window for example)
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(event.key !== Qt.Key_Back) {
                 background.currentActivity.Keys.onPressed(event)
             }
         }
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if(event.key === Qt.Key_Back) {
                 // Keep the old value
                 discardChange();

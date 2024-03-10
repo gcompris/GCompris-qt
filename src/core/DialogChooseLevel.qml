@@ -104,7 +104,7 @@ Rectangle {
         }
     }
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
             scrollItem.down();
         } else if(event.key === Qt.Key_Up) {
@@ -129,7 +129,7 @@ Rectangle {
         cancelButton.clicked();
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             cancelButton.clicked();
             event.accepted = true;

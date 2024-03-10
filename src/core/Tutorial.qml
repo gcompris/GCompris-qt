@@ -64,7 +64,7 @@ Item {
     // Emitted when previousButton is clicked
     signal previousPressed
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Left && previousButton.visible) {
             previousButton.clicked();
         } else if(event.key === Qt.Key_Right && nextButton.visible) {
@@ -81,12 +81,12 @@ Item {
         event.accepted = true;
     }
 
-    Keys.onEscapePressed: {
+    Keys.onEscapePressed: (event) => {
         skipButton.clicked();
         event.accepted = true;
     }
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Back) {
             skipButton.clicked();
             event.accepted = true;
