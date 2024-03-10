@@ -27,7 +27,7 @@ Image {
 
     signal init(string initialDirection)
 
-    onInit: {
+    onInit: (initialDirection) => {
         animationEnabled = false
         direction = initialDirection
         Activity.moveTuxToBlock()
