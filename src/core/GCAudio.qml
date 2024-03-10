@@ -228,25 +228,29 @@ Item {
             id: audioOutputItem
         }
         //muted: gcaudio.muted
-        /*onError: {
+        onErrorOccurred: (error, errorString) => {
             // This file cannot be played, remove it from the source asap
             source = ""
             if(files.length)
                 silenceTimer.start()
             else
                 gcaudio.error()
-        }*/
-        /*onStopped: {
+        }
+        onPlaybackStateChanged: {
+            if(playbackState !== MediaPlayer.StoppedState) {
+                return;
+            }
             if(files.length)
                 silenceTimer.start()
             else
                 gcaudio.done()
-        }*/
-        /*metaData.onMetaDataChanged: {
+        }
+        onMetaDataChanged: {
+            print("JJ", metaData.keys(), metaData.value(MediaMetaData.FileFormat), MediaMetaData.MediaType, metaData.value(MediaMetaData.Title), metaData.value(MediaMetaData.ContributingArtist), metaData.value(MediaMetaData.Date), metaData.value(MediaMetaData.Copyright))
             if(isBackgroundMusic) {
-                metaDataMusic = [metaData.title, metaData.contributingArtist, metaData.year, metaData.copyright]
+                metaDataMusic = [metaData.value(MediaMetaData.Title), metaData.value(MediaMetaData.ContributingArtist), metaData.value(MediaMetaData.Date), metaData.value(MediaMetaData.Copyright)]
             }
-        }*/
+        }
     }
 
     Timer {
