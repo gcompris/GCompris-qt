@@ -95,9 +95,8 @@ void DownloadManager::abortDownloads()
         while (iter.hasNext()) {
             DownloadJob *job = iter.next();
             if (!job->downloadFinished && job->reply != nullptr) {
-                disconnect(job->reply, SIGNAL(finished()), this, SLOT(finishDownload()));
-                disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
-                           this, SLOT(handleError(QNetworkReply::NetworkError)));
+                disconnect(job->reply, &QNetworkReply::finished, this, &DownloadManager::finishDownload);
+                disconnect(job->reply, &QNetworkReply::errorOccurred, this, &DownloadManager::handleError);
                 if (job->reply->isRunning()) {
                     qDebug() << "Aborting download job:" << job->url << job->resourceType;
                     job->reply->abort();
