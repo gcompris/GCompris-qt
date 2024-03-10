@@ -60,7 +60,7 @@ Image {
         return newValue
     }
 
-    onAttachArrow: {
+    onAttachArrow: (arrow) => {
         arrow.anchors.centerIn = undefined
         var coordArrow = parent.mapToItem(targetItem, arrow.x, arrow.y)
         arrow.parent = targetItem

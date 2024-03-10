@@ -18,7 +18,7 @@ Repeater {
     
     signal init(int nbArrow)
     
-    onInit: {
+    onInit: (nbArrow) => {
         // Set to 0 to force a delete of previous arrows
         model = 0
         model = nbArrow
