@@ -72,7 +72,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
 
     if(CMAKE_TOOLCHAIN_FILE)
       set(EXTRA_BOX2D_CMAKE_ARGS -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE})
-     endif()
+    endif()
     if(ANDROID)
       # I didn't find a better way to copy the libraries to the lib folder only on Android when doing an aab package...
       #set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
