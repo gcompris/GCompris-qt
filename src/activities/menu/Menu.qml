@@ -707,11 +707,11 @@ ActivityBase {
                 // Force invisibility of Androids virtual keyboard:
                 target: (ApplicationInfo.isMobile && activity.currentTag === "search"
                          && ApplicationSettings.isVirtualKeyboard) ? Qt.inputMethod : null
-                onVisibleChanged: {
+                function onVisibleChanged() {
                     if (ApplicationSettings.isVirtualKeyboard && visible)
                         Qt.inputMethod.hide();
                 }
-                onAnimatingChanged: {
+                function onAnimatingChanged() {
                     // note: seems to be never fired!
                     if (ApplicationSettings.isVirtualKeyboard && Qt.inputMethod.visible)
                         Qt.inputMethod.hide();
@@ -1038,17 +1038,18 @@ ActivityBase {
                 searchTextField.cursorPosition = cursorPosition;
             }
             function populate() {
-               var tmplayout = [];
-               var row = 0;
-               var offset = 0;
-               var cols;
-               while(offset < letter.length-1) {
-                   if(letter.length <= 100) {
-                       cols = Math.ceil((letter.length-offset) / (3 - row));
+                var tmplayout = [];
+                var row = 0;
+                var offset = 0;
+                var cols;
+                var numberOfLetters = letter.length
+                while(offset < numberOfLetters-1) {
+                   if(numberOfLetters <= 100) {
+                       cols = Math.ceil((numberOfLetters-offset) / (3 - row));
                    }
                    else {
-                       cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
-                                                       :(Math.ceil((letter.length-offset) / (22 - row)))
+                       cols = background.horizontal ? (Math.ceil((numberOfLetters-offset) / (15 - row)))
+                                                       :(Math.ceil((numberOfLetters-offset) / (22 - row)))
                        if(row === 0) {
                            tmplayout[row] = [];
                            tmplayout[row].push({ label: keyboard.backspace });
@@ -1063,7 +1064,7 @@ ActivityBase {
                    offset += j;
                    row ++;
                }
-               if(letter.length <= 100) {
+               if(numberOfLetters <= 100) {
                    tmplayout[0].push({ label: keyboard.space });
                    tmplayout[row-1].push({ label: keyboard.backspace });
                }
