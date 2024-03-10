@@ -136,7 +136,7 @@ ActivityBase {
             }
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             Activity.playSound();
         }
 
@@ -172,7 +172,7 @@ ActivityBase {
                     Activity.processKeyPress(text);
             }
             shiftKey: true
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
             readonly property string newline: "\u21B2"
 
             function populate() {
