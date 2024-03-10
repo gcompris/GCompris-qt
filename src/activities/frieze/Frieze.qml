@@ -85,7 +85,7 @@ ActivityBase {
 
         File {
             id: file
-            onError: console.error("File error: " + msg)
+            onError: (msg) => console.error("File error: " + msg)
         }
 
         Rectangle {
@@ -407,6 +407,6 @@ ActivityBase {
             onStop: (items.solution.visible = !items.levels[items.currentLevel].hidden)
         }
 
-        Keys.onPressed: Activity.handleKeys(event)
+        Keys.onPressed: (event) => { Activity.handleKeys(event) }
     }
 }
