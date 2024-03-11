@@ -12,7 +12,7 @@
  */
 
 import QtQuick 2.12
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -79,7 +79,7 @@ ActivityBase {
         property bool portrait: height >= width ? true : false
         property bool inLine: true
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if (items.buttonsBlocked){
                 return
             }
@@ -106,7 +106,7 @@ ActivityBase {
                 Activity.move("next")
         }
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             up.opacity = 1
             down.opacity = 1
             left.opacity = 1

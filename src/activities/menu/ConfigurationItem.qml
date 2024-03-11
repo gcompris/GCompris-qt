@@ -10,7 +10,7 @@
 
 import QtQuick 2.12
 import GCompris 1.0
-import QtMultimedia 5.12
+import QtMultimedia
 
 import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
@@ -134,8 +134,8 @@ Item {
             Connections {
                 target: DownloadManager
 
-                onDownloadFinished: voicesRow.localeChanged()
-                onResourceRegistered: voicesRow.localeChanged()
+                function onDownloadFinished() { voicesRow.localeChanged() }
+                function onResourceRegistered() { voicesRow.localeChanged() }
             }
 
             GCDialogCheckBox {
@@ -243,7 +243,7 @@ Item {
                 height: parent.height
                 width: parent.width - 35 * ApplicationInfo.ratio
                 text: {
-                    if(backgroundMusic.playbackState !== Audio.PlayingState || backgroundMusic.muted)
+                    if(backgroundMusic.playbackState !== MediaPlayer.PlayingState || backgroundMusic.muted)
                         return qsTr("Not playing")
                     else if (backgroundMusic.metaDataMusic[0] !== undefined)
                         return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
@@ -260,7 +260,7 @@ Item {
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
                 height: 30 * ApplicationInfo.ratio
                 sourceSize.width: height
-                visible: (backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted)
+                visible: (backgroundMusic.playbackState === MediaPlayer.PlayingState && !backgroundMusic.muted)
                 MouseArea {
                     anchors.fill: parent
                     enabled: parent.visible
@@ -289,8 +289,8 @@ Item {
 
         Connections {
             target: DownloadManager
-            onDownloadFinished: wordsetBox.updateStatus()
-            onBackgroundMusicRegistered: {
+            function onDownloadFinished() { wordsetBox.updateStatus() }
+            function onBackgroundMusicRegistered() {
                 allBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
                 if(filteredBackgroundMusic.length === 0) {
                     filteredBackgroundMusic = allBackgroundMusic

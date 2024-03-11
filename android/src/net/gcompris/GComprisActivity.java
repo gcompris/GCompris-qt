@@ -11,8 +11,8 @@
 
 package net.gcompris;
 
-import org.qtproject.qt5.android.bindings.QtApplication;
-import org.qtproject.qt5.android.bindings.QtActivity;
+import org.qtproject.qt.android.bindings.QtApplication;
+import org.qtproject.qt.android.bindings.QtActivity;
 import android.media.AudioManager;
 import android.util.Log;
 import android.content.Context;

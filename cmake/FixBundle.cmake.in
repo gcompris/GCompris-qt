@@ -4,4 +4,4 @@
 # SPDX-License-Identifier: BSD-3-Clause
 #=============================================================================
 include(BundleUtilities)
-fixup_bundle("@GCOMPRIS_BUNDLE@" "@GCOMPRIS_OTHER_LIBS@" "@Qt5_DIR@/../..;@QT_LIBS_DIRECTORY@/")
+fixup_bundle("@GCOMPRIS_BUNDLE@" "@GCOMPRIS_OTHER_LIBS@" "@Qt6_DIR@/../..;@QT_LIBS_DIRECTORY@/")

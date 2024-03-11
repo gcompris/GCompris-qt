@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 import Box2D 2.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 
 
 Item {
@@ -79,8 +79,8 @@ Item {
 
             radius: itemImage.width / 2
 
-            onBeginContact: item.beginContact(getBody().target, other.getBody().target)
-            onEndContact: item.endContact(getBody().target, other.getBody().target)
+            onBeginContact: (other) => item.beginContact(getBody().target, other.getBody().target)
+            onEndContact: (other) => item.endContact(getBody().target, other.getBody().target)
         }
     }
 }

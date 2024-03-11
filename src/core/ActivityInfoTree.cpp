@@ -408,14 +408,15 @@ QVariantList ActivityInfoTree::allCharacters()
             }
         }
     }
+    QVariantList keyboardCharacters;
     for (const QChar &letters: keyboardChars) {
-        m_keyboardCharacters.push_back(letters);
+        keyboardCharacters.push_back(letters);
     }
-    std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end(), [](const QVariant &v1, const QVariant &v2) {
+    std::sort(keyboardCharacters.begin(), keyboardCharacters.end(), [](const QVariant &v1, const QVariant &v2) {
         return ApplicationInfo::getInstance()->localeCompare(v1.toString(), v2.toString()) < 0;
     });
 
-    return m_keyboardCharacters;
+    return keyboardCharacters;
 }
 
 #include "moc_ActivityInfoTree.cpp"

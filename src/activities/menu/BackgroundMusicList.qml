@@ -9,7 +9,7 @@
  */
 
 import QtQuick 2.12
-import QtMultimedia 5.12
+import QtMultimedia
 import GCompris 1.0
 
 import "../../core"
@@ -25,7 +25,7 @@ Rectangle {
     visible: false
     focus: visible
 
-    Keys.onPressed: {
+    Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
             scrollMusicList.down();
         } else if(event.key === Qt.Key_Up) {
@@ -163,7 +163,7 @@ Rectangle {
                         width: parent.width
                         anchors.top: musicGrid.bottom
                         anchors.leftMargin: 20
-                        visible: backgroundMusic.playbackState === Audio.PlayingState && !backgroundMusic.muted
+                        visible: backgroundMusic.playbackState === MediaPlayer.PlayingState && !backgroundMusic.muted
                         GCText {
                             //: Current background music playing
                             text: qsTr("Now Playing:")

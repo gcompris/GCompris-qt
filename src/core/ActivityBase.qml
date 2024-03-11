@@ -217,20 +217,21 @@ Item {
         }
     }
 
-    onBack: menu ? menu.back(to) : ""
+    onBack: (to) => menu ? menu.back(to) : ""
     onHome: menu ? menu.home() : ""
-    onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
-    onDisplayDialogs: menu ? menu.displayDialogs(dialogs) : ""
+    onDisplayDialog: (dialog) => menu ? menu.displayDialog(dialog) : ""
+    onDisplayDialogs: (dialogs) => menu ? menu.displayDialogs(dialogs) : ""
 
     Keys.forwardTo: activity.children
     Keys.onEscapePressed: home();
-    Keys.onPressed: {
+
+    Keys.onPressed: (event) => {
         if (event.modifiers === Qt.ControlModifier && event.key === Qt.Key_W) {
 //          Ctrl+W exit the current activity
             home();
         }
     }
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if (event.key === Qt.Key_Back) {
             event.accepted = true;
             home();
