@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import "../../core"
 import "categorization.js" as Activity
-import QtQuick.Controls 2.12
+import QtQuick.Controls.Basic
 import GCompris 1.0
 
 Item {

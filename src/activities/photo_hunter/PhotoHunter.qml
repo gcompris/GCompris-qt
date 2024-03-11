@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import QtQuick.Controls 2.12
+import QtQuick.Controls.Basic
 
 import "../../core"
 import "photo_hunter.js" as Activity
