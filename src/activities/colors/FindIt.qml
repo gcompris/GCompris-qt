@@ -78,12 +78,12 @@ ActivityBase {
         }
         onStop: Activity.stop()
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(event.key === Qt.Key_Space) {
                 container.currentItem.select()
             }
         }
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             keyboardMode = true
             event.accepted = false
         }
