@@ -11,7 +11,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+import QtQuick 2.15
 import "../../core"
 import "../../core/core.js" as Core
 import GCompris 1.0
@@ -172,7 +172,7 @@ ActivityBase {
         }
 
         Keys.enabled: !items.buttonsBlocked
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
                 if(firstScreen.visible) {
                     firstScreen.visible = false;
@@ -294,8 +294,7 @@ ActivityBase {
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 cursorVisible: true
                 wrapMode: TextInput.Wrap
-                // TODO Use RegularExpressionValidator when supporting Qt5.14 minimum
-                validator: RegExpValidator { regExp: items.toAlpha ?
+                validator: RegularExpressionValidator { regularExpression: items.toAlpha ?
                                                        /^[a-zA-Z0-9 ]+$/ :
                                                        /[\.\-\x00B7 ]+$/
                                            }
@@ -587,7 +586,7 @@ ActivityBase {
                 // Set the focus back to the InputText for keyboard input
                 resetFocus();
             }
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         FirstScreen {
