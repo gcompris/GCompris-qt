@@ -299,7 +299,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("Letter-in-word: Error parsing JSON: " + msg);
+            onError: (msg) => console.error("Letter-in-word: Error parsing JSON: " + msg);
         }
 
         Loader {
