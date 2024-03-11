@@ -20,7 +20,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Drag and Drop the shapes on their respective targets.")
 //  intro: "Drag and drop the objects matching the shapes."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to match geometric shapes.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Complete the puzzle by dragging each piece on the side to the matching spot.")
