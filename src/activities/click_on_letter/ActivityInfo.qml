@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Listen to a letter and click on it.")
 //  intro: "Click on the required letter. You can listen to it again by clicking on the mouth."
   //: Help goal
-  goal: qsTr("Letter-name recognition.")
+  goal: qsTr("Recognize the name of lowercase letters.")
   //: Help prerequisite
   prerequisite: qsTr("Visual letter-recognition.")
   //: Help manual
