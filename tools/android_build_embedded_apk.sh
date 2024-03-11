@@ -10,7 +10,7 @@
 # This script builds an 'embedded' apk that includes a list of resources.
 # =======================================================================
 
-Qt5_BaseDIR=~/Qt/5.12.12
+Qt6_BaseDIR=~/Qt/6.5.3
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 # The current version
@@ -47,18 +47,18 @@ f_cmake()
     if [ -f CMakeCache.txt ]
     then
 	make clean
-	rm CMakeCache.txt
-	rm cmake_install.cmake
-        rm Makefile
+	rm -f CMakeCache.txt
+	rm -f cmake_install.cmake
+        rm -f Makefile
         rm -rf CMakeFiles
     fi
 
-    cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
-	  -DCMAKE_ANDROID_API=16 \
+    cmake -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake \
+          -DCMAKE_ANDROID_API=23 \
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
-	  -DCMAKE_FIND_ROOT_PATH=${Qt5_BaseDIR}/${QtTarget}/lib/ \
-	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
+	  -DCMAKE_FIND_ROOT_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/ \
+	  -DQt6_DIR=${Qt6_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
@@ -76,7 +76,7 @@ mkdir -p ${builddir}
 cd ${builddir}
 
 # Retrieve the Qt version
-if [[ $Qt5_BaseDIR =~ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
+if [[ $Qt6_BaseDIR =~ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
     version=${BASH_REMATCH[0]}
 fi
 n=${version//[!0-9]/ }
@@ -84,13 +84,6 @@ a=(${n//\./ })
 major=${a[0]}
 minor=${a[1]}
 patch=${a[2]}
-
-# If we use Qt > 5.14, we need to update some variables
-if [[ $minor -ge 14 ]]; then
-    echo "Using Qt5.14 or more";
-    cmake_extra_args="-DANDROID_BUILD_ABI_armeabi-v7a=ON"
-    QtTarget=android
-fi
 
 f_cmake armeabi-v7a OFF OFF $download_assets
 make -j 4
