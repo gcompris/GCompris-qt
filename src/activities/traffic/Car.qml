@@ -39,7 +39,7 @@ Item {
     // Connect the jamGrid.mode to car.mode to automatically change the wrapped object
     Connections {
         id: connection
-        onModeChanged: {
+        function onModeChanged() {
             car.mode = parent.mode;
         }
     }
