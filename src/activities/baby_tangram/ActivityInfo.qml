@@ -12,11 +12,12 @@ ActivityInfo {
   icon: "baby_tangram/baby_tangram.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Baby puzzle")
+  title: qsTr("Simple puzzle")
   //: Help title
-  description: qsTr("The objective is to assemble the baby puzzle.")
+  description: qsTr("Match the objects with their shapes.")
   // intro: "Move each puzzle piece, to obtain the completed puzzle. You can change their orientation by clicking on the arrows."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to match an object with its shape.")
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
