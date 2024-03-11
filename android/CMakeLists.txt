@@ -184,13 +184,15 @@ ExternalProject_Add(
   ./Configure --prefix=${CMAKE_BINARY_DIR}/android-build --openssldir=./ssl android-${CMAKE_ANDROID_ARCH} shared
   BUILD_COMMAND
   ${CMAKE_COMMAND} -E env PATH=${ANDROID_NDK}/toolchains/llvm/prebuilt/linux-x86_64/bin:$ENV{PATH}
-  make SHLIB_VERSION_NUMBER= SHLIB_EXT=${suffix_libssl} build_libs &&
-  ${LLVM_STRIP} --strip-all libcrypto${suffix_libssl} &&
-  ${LLVM_STRIP} --strip-all libssl${suffix_libssl}
+  make SHLIB_VERSION_NUMBER= SHLIB_EXT= build_libs &&
+  ${LLVM_STRIP} --strip-all libcrypto.so &&
+  ${LLVM_STRIP} --strip-all libssl.so &&
+  cp libcrypto.so libcrypto_3.so &&
+  cp libssl.so libssl_3.so
   INSTALL_COMMAND
   ${CMAKE_COMMAND} -E make_directory "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}" &&
-  ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/" &&
-  ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl${suffix_libssl}" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/"
+  ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto_3.so" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/" &&
+  ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl_3.so" "${CMAKE_LIBRARY_OUTPUT_DIRECTORY}/"
   )
 
 #
