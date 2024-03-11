@@ -329,7 +329,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("Hangman: Error parsing json: " + msg);
+            onError: (msg) => console.error("Hangman: Error parsing json: " + msg);
         }
 
         Image {
@@ -384,7 +384,7 @@ ActivityBase {
                 // Set the focus back to the InputText for keyboard input
                 Activity.focusTextInput();
             }
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         Bonus {
