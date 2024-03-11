@@ -8,7 +8,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
+import QtQuick 2.15
 import GCompris 1.0
 
 import "../../core"
@@ -232,7 +232,7 @@ ActivityBase {
         }
         onStop: { }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
                 if(!items.buttonsBlocked)
                     items.check()
@@ -334,7 +334,7 @@ ActivityBase {
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 cursorVisible: true
                 wrapMode: TextInput.Wrap
-                validator: RegExpValidator{regExp: items.toArabic ?
+                validator: RegularExpressionValidator{ regularExpression: items.toArabic ?
                     /[0-9]+/ :
                     /[ivxlcdmIVXLCDM]*/}
                     onTextChanged: if(text) {
@@ -481,7 +481,7 @@ ActivityBase {
 
             onKeypress: textInput.appendText(text)
 
-            onError: console.log("VirtualKeyboard error: " + msg);
+            onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
         Bar {
