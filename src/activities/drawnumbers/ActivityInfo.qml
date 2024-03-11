@@ -17,7 +17,7 @@ ActivityInfo {
     description: qsTr("Connect the dots to draw numbers from 0 to 9.")
     // intro: "Draw the numbers by connecting the dots in the correct order."
     //: Help goal
-    goal: qsTr("Learning how to draw numbers in a funny way.")
+    goal: qsTr("Learn how to draw numbers in a fun way.")
     prerequisite: ""
     //: Help manual
     manual: qsTr("Draw the numbers by connecting the dots in the correct order.")
