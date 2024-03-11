@@ -32,22 +32,24 @@ See GitHub's documentation for more information.
 
 Dependencies
 ------------
-In order to be able to compile GCompris the following Qt5 dependencies need to
-be installed (version 5.12 minimum)
+In order to be able to compile GCompris the following Qt6 dependencies need to
+be installed (version 6.5.0 minimum)
 
-    Qt 5 Development Defaults
-    Qt 5 qmake
+    Qt 6 Development Defaults
+    Qt 6 qmake
     Qt Creator
     Qt Linguist Tools
 
     Qt Core
-    Qt Graphical Effects QML Module
+    Qt5 Compatibility Module (Graphical Effects QML)
     Qt Gui
     Qt Multimedia
     Qt Multimedia QML Module
     Qt Network
+    Qt Image Formats
     Qt Qml
     Qt Quick
+    Qt Sensors
     Qt Svg
     Qt Charts (qml plugin)
 
@@ -61,22 +63,21 @@ By default, translations are also built so gettext package must be installed to 
     
 Installing dependencies on a Debian based systems can be done like this:
 
-    sudo apt install libssl-dev libqt5svg5-dev \
-                          qml-module-qtmultimedia \
-                          qml-module-qtgraphicaleffects qt5-qmake qtcreator \
-                          qtdeclarative5-dev qtmultimedia5-dev \
-                          qtquickcontrols2-5-dev qttools5-dev \
-                          qttools5-dev-tools libqt5multimedia5-plugins \
-                          qml-module-qtsensors libqt5quickparticles5 \
-                          qml-module-qtquick2 qml-module-qtquick-particles2 \
-                          qml-module-qtquick-controls2 \
-                          libqt5sensors5-dev libqt5sensors5 qml-module-qtcharts \
-                          qt5-image-formats-plugins libqt5charts5-dev
+    sudo apt install libssl-dev libqt6svg6-dev \
+                     qt6-multimedia-dev qt6-tools-dev qt6-tools-dev-tools \
+                     libqt6sensors6-dev libqt6svg6-dev \
+                     linguist-qt6 qt6-l10n-tools \
+                     qt6-declarative6-dev qml6-module-qtcharts \
+                     libqt6charts6-dev libqt6core5compat6-dev \
+                     qml6-module-qt5compat-graphicaleffects \
+                     qml6-module-qtcore qml6-module-qtquick-controls \
+                     qml6-module-qtmultimedia qml6-module-qtqml \
+                     qml6-module-qtqml-workerscript qml6-module-qtquick \
+                     qml6-module-qtquick-window qt6-image-formats-plugins \
+                     qml6-module-qtquick-templates
 
-                          
-                    
 
-To build for Android, Qt 5 AndroidExtras also needs to be installed.
+To build for Android, Qt 6 AndroidExtras also needs to be installed.
 
 If building from a .tar.gz or .zip source distribution the externals may
 need to be added.
@@ -100,6 +101,19 @@ An alternative building process is to use cmake in command-line directly.
     cmake ..
     make
     ./bin/gcompris-qt
+
+On Windows, the build is done using Ninja, MinGW and OpenSSL provided by Qt Maintenance tool (under Developer and Designer Tools). Make sure you added them to the PATH (export PATH=$PATH:/c/Qt/Tools/mingw1120_64/bin:/c/Qt/Tools/Ninja):
+
+    cd GCompris-qt-*
+    mkdir build
+    cd build
+    cmake -G "Ninja" -DQt6_DIR=/c/Qt/6.5.3/mingw_64/lib/cmake/Qt6/ -DOPENSSL_ROOT_DIR=/c/Qt/Tools/OpenSSLv3/Win_x64/ ..
+    cmake --build . -j 4 --config Release --target BuildTranslations
+    cmake --build . -j 4 --config Release
+    cpack -C Release .
+
+
+For Android, install Qt with the Android flavor you want from Qt Maintenance tool and run the script in tools to build for armeabi-v7a (./tools/android_build_all_apk.sh) or arm64-v8a (./tools/android_build_all_apk_64.sh). It takes the Qt root folder as argument (~/Qt/6.5.3/ for example).
 
 More Details
 ------------
