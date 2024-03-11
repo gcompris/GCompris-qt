@@ -32,7 +32,7 @@ ActivityBase {
         signal stop
 
         Keys.enabled: !items.buttonsBlocked
-        Keys.onPressed: Activity.processPressedKey(event)
+        Keys.onPressed: (event) => { Activity.processPressedKey(event) }
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -142,7 +142,7 @@ ActivityBase {
             height: puzzleArea.height
             enabled: !items.buttonsBlocked
 
-            onPressed: checkTouchPoint(touchPoints)
+            onPressed: (touchPoints) => checkTouchPoint(touchPoints)
 
             function checkTouchPoint(touchPoints) {
                 for(var i in touchPoints) {
