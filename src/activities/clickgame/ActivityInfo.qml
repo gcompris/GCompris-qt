@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Catch all the swimming fish before they leave the fish tank.")
 //  intro: "Catch the fish before they leave the aquarium."
   //: Help goal
-  goal: qsTr("Motor coordination: moving the hand precisely.")
+  goal: qsTr("Practice motor coordination, moving the hand precisely.")
   //: Help prerequisite
-  prerequisite: qsTr("Can move mouse and click on the correct place.")
+  prerequisite: qsTr("Can move a mouse or use a touchscreen and click on the correct place.")
   //: Help manual
   manual: qsTr("Catch all the moving fish by clicking or touching them with your finger.")
   credit: ""
