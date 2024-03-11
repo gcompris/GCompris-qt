@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Click on the right color.")
 //  intro: "Click on the right color"
   //: Help goal
-  goal: qsTr("This activity teaches you to recognize different colors.")
+  goal: qsTr("Practice recognizing different colors.")
   //: Help prerequisite
   prerequisite: qsTr("Identifying colors.")
   //: Help manual
