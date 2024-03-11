@@ -14,7 +14,7 @@ import Qt5Compat.GraphicalEffects
 import "qrc:/gcompris/src/core/core.js" as Core
 
 // For TextField
-import QtQuick.Controls 2.12
+import QtQuick.Controls.Basic
 
 /**
  * GCompris' top level menu screen.

@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 // TextField
-import QtQuick.Controls 2.12
+import QtQuick.Controls.Basic
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
