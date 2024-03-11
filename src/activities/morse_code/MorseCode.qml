@@ -579,7 +579,7 @@ ActivityBase {
                 ] ]
             }
 
-            onKeypress: {
+            onKeypress: (text) => {
                 if(!items.buttonsBlocked) {
                     textInput.appendText(text)
                 }
