@@ -39,7 +39,7 @@ DownloadManager::DownloadManager() :
     QFile file(":/gcompris/src/core/resource/isrgrootx1.pem");
     QIODevice::OpenMode openMode = QIODevice::ReadOnly | QIODevice::Text;
     if (!file.open(openMode)) {
-        qDebug() << "Error opening " << file;
+        qDebug() << "Error opening " << file.fileName();
     }
     else {
         certificates << QSslCertificate::fromData(file.readAll(), QSsl::Pem);
@@ -94,9 +94,8 @@ void DownloadManager::abortDownloads()
         while (iter.hasNext()) {
             DownloadJob *job = iter.next();
             if (!job->downloadFinished && job->reply != nullptr) {
-                disconnect(job->reply, SIGNAL(finished()), this, SLOT(finishDownload()));
-                disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
-                           this, SLOT(handleError(QNetworkReply::NetworkError)));
+                disconnect(job->reply, &QNetworkReply::finished, this, &DownloadManager::finishDownload);
+                disconnect(job->reply, &QNetworkReply::errorOccurred, this, &DownloadManager::handleError);
                 if (job->reply->isRunning()) {
                     qDebug() << "Aborting download job:" << job->url << job->resourceType;
                     job->reply->abort();
@@ -351,10 +350,10 @@ bool DownloadManager::download(DownloadJob *job)
     qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
     QNetworkReply *reply = accessManager.get(request);
     job->reply = reply;
-    connect(reply, SIGNAL(finished()), this, SLOT(finishDownload()));
+    connect(reply, &QNetworkReply::finished, this, &DownloadManager::finishDownload);
     connect(reply, &QNetworkReply::readyRead, this, &DownloadManager::downloadReadyRead);
-    connect(reply, SIGNAL(error(QNetworkReply::NetworkError)),
-            this, SLOT(handleError(QNetworkReply::NetworkError)));
+    connect(reply, &QNetworkReply::errorOccurred,
+            this, &DownloadManager::handleError);
     if (job->url.fileName() != contentsFilename) {
         connect(reply, &QNetworkReply::downloadProgress,
                 this, &DownloadManager::downloadInProgress);
