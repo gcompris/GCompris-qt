@@ -43,7 +43,7 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             var keyboardBindings = {}
             keyboardBindings[Qt.Key_1] = 0
             keyboardBindings[Qt.Key_2] = 1
@@ -115,14 +115,14 @@ ActivityBase {
 
         File {
             id: file
-            onError: console.error("File error: " + msg)
+            onError: (msg) => console.error("File error: " + msg)
         }
 
         Item {
             id: clickedOptionMessage
 
             signal show(string message)
-            onShow: {
+            onShow: (message) => {
                 messageText.text = message
                 messageAnimation.stop()
                 messageAnimation.start()
@@ -220,7 +220,7 @@ ActivityBase {
             noteHoverEnabled: true
             anchors.margins: layoutMargins
 
-            onNoteClicked: {
+            onNoteClicked: (noteIndex) => {
                 if(selectedIndex === noteIndex)
                     selectedIndex = -1
                 else {
@@ -261,7 +261,7 @@ ActivityBase {
                 visible: !background.isLyricsMode
                 currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
 
-                onNoteClicked: {
+                onNoteClicked: (note) => {
                     parent.addMusicElementAndPushToStack(note, currentType)
                 }
             }
@@ -320,7 +320,7 @@ ActivityBase {
 
         GCCreationHandler {
             id: creationHandler
-            onFileLoaded:  {
+            onFileLoaded: (data, filePath) => {
                 // We need to draw the notes twice since we first need to count the number of staffs needed for the melody (we get that from
                 // the 1st redraw call), then we redraw the 2nd time to actually display the notes perfectly. This is done because for some reason, the
                 // staves model is updated slower than the addition of notes, so the notes aggregates in their default position instead of
@@ -402,7 +402,7 @@ ActivityBase {
             onBpmIncreased: {
                 multipleStaff.bpmValue++
             }
-            onEmitOptionMessage: clickedOptionMessage.show(message)
+            onEmitOptionMessage: (message) => clickedOptionMessage.show(message)
         }
 
         DialogActivityConfig {
