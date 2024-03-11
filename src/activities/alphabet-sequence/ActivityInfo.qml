@@ -17,7 +17,7 @@ ActivityInfo {
     description: qsTr("Move the helicopter to catch the clouds following the order of the alphabet.")
 //    intro: "Move the helicopter to catch the clouds following the order of the alphabet."
     //: Help goal
-    goal: qsTr("Alphabet sequence.")
+    goal: qsTr("Learn the alphabetical order.")
     //: Help prerequisite
     prerequisite: qsTr("Can decode letters.")
     //: Help manual
