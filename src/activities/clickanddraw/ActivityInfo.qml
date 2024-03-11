@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Draw the picture by clicking on the selected points.")
 //  intro: "Click on the selected points and draw"
-  goal: ""
+  //: Help goal
+  goal: qsTr("Practice using a mouse or touchscreen to touch specific points.")
   //: Help prerequisite
   prerequisite: qsTr("Can move the mouse and click accurately on points.")
   //: Help manual
