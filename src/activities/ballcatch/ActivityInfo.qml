@@ -16,7 +16,8 @@ ActivityInfo {
     //: Help title
     description: qsTr("Press the left and right arrow keys at the same time, to make the ball go in a straight line.")
 //    intro: "Press the left and right arrows at the same time to send the ball straight on"
-    goal: ""
+    //: Help goal
+    goal: qsTr("Synchronize left and right hands movements.")
     prerequisite: ""
     //: Help manual
     manual: qsTr("Press the left and right arrow keys at the same time, to make the ball go in a straight line. On a touch screen you have to touch the two hands at the same time.")
