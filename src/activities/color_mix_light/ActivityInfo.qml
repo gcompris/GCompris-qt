@@ -17,12 +17,13 @@ ActivityInfo {
   description: qsTr("Discover light color mixing.")
 //  intro: "Match the color by moving the sliders on the torches"
   //: Help goal
-  goal: qsTr("Mix primary colors to match the given color.")
+  goal: qsTr("Learn to mix primary light colors to match a given color.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("This activity teaches how mixing primary light colors works (additive mixing).") + ("<br><br>") +
-          qsTr("Mixing light colors is just the opposite of mixing paint colors. The more light you add, the lighter the resulting color becomes. Primary colors of light are red, green and blue.") + ("<br><br>") +
-          qsTr("Change the color by moving the sliders on the torches or by clicking on the + and - buttons. Then click on the OK button to validate your answer.")
+          qsTr("Change the color by moving the sliders on the flashlights or by clicking on the + and - buttons. Then click on the OK button to validate your answer.") + ("<br><br>") +
+          qsTr("Mixing light colors is just the opposite of mixing paint colors. The more light you add, the lighter the resulting color becomes. The primary colors of light are red, green and blue.")
+
   credit: ""
   section: "sciences experiment color"
   createdInVersion: 0
