@@ -67,7 +67,7 @@ Item {
 
         JsonParser {
             id: parser
-            onError: console.error("Lang: Error parsing json: " + msg);
+            onError: (msg) => console.error("Lang: Error parsing json: " + msg);
         }
 
         Rectangle {
@@ -284,8 +284,8 @@ Item {
         width: parent.width
         visible: ApplicationSettings.isVirtualKeyboard
 
-        onKeypress: SpellActivity.processKeyPress(text)
-        onError: console.log("VirtualKeyboard error: " + msg);
+        onKeypress: (text) => SpellActivity.processKeyPress(text)
+        onError: (msg) => console.log("VirtualKeyboard error: " + msg);
     }
 
 }
