@@ -19,10 +19,11 @@ ActivityInfo {
   //: Help title
   description: qsTr("Drag and Drop the shapes on their respective targets.")
 //  intro: "Slide the images on their respective targets"
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop observation and spatial visualization skills.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Complete the puzzle by dragging each piece on the side to the matching space in the puzzle.")
+  manual: qsTr("Find a picture detail in the sidebar, and drag it to the right spot on the picture.")
   credit: qsTr("The images are from Wikimedia Commons.") + ("<ul><li>") +
           ('"Chateau de Chenonceau 2008" by Ra-smit (https://commons.wikimedia.org/wiki/File:Chateau_de_Chenonceau_2008.jpg), CC BY-SA 3.0') + ("</li><li>") +
           ('"Egeskov Slot spejling" by Malene Thyssen (https://commons.wikimedia.org/wiki/File:Egeskov_Slot_spejling.jpg), CC BY-SA 3.0') + ("</li><li>") +
