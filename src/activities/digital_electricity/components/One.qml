@@ -18,7 +18,6 @@ ElectricalComponent {
     noOfOutputs: 1
 
     information: qsTr("Digital circuits work with only two states: 0 and 1. " +
-                      "This allows to operate mathematical operations such as additions, subtractions... " +
                       "It is the basics of computer technics. In reality, 0 is often the representation of a voltage nearly equal to ground voltage " +
                       "and 1 is the representation of the supply voltage of a circuit.")
 
