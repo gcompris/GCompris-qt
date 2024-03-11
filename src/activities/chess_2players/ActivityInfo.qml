@@ -13,9 +13,11 @@ ActivityInfo {
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
   title: qsTr("Play chess (with a friend)")
-  description: ""
+  //: Help title
+  description: qsTr("Discover and practice chess.")
   //intro: "play chess against your friend"
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to play chess.")
   prerequisite: ""
   //: Help manual
   //: Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
