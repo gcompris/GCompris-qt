@@ -14,10 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Double tap or double click")
   //: Help title
-  description: qsTr("Double tap or double click to erase the area and discover the background image.")
+  description: qsTr("Double tap or double click to erase the blocks and discover the hidden picture.")
 //  intro: "Double tap or double click on the bricks to discover the hidden picture"
   //: Help goal
-  goal: qsTr("Motor-coordination.")
+  goal: qsTr("Develop motor coordination skills.")
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual

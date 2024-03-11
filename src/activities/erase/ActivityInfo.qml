@@ -14,10 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Move the mouse or touch the screen")
   //: Help title
-  description: qsTr("Move the mouse or touch the screen to erase the area and discover the background.")
+  description: qsTr("Move the mouse or touch the screen to erase the blocks and discover the hidden picture.")
 //  intro: " Clear the window with your sponge and discover the hidden picture."
   //: Help goal
-  goal: qsTr("Motor-coordination.")
+  goal: qsTr("Develop motor coordination skills.")
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
