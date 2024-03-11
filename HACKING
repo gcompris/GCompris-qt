@@ -111,6 +111,8 @@ On Windows, the build is done using Ninja, MinGW and OpenSSL provided by Qt Main
     cmake --build . -j 4 --config Release
     cpack -C Release .
 
+For Android, install Qt with the Android flavor you want from Qt Maintenance tool and run the script in tools to build for armeabi-v7a (./tools/android_build_all_apk.sh) or arm64-v8a (./tools/android_build_all_apk_64.sh). It takes the Qt root folder as argument (~/Qt/6.5.3/ for example).
+
 More Details
 ------------
 Go To this Link:
