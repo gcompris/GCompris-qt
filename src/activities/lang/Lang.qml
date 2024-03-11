@@ -81,7 +81,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("lang: Error parsing json: " + msg);
+            onError: (msg) => console.error("lang: Error parsing json: " + msg);
         }
 
         MenuScreen {
