@@ -17,7 +17,7 @@ ActivityInfo {
     description: qsTr("Place the items in the best way to count them.")
 //  intro: "Count the elements by organizing them then type the answer on your keyboard."
     //: Help goal
-    goal: qsTr("Numeration training.")
+    goal: qsTr("Practice counting small quantities.")
     //: Help prerequisite
     prerequisite: qsTr("Basic enumeration.")
     //: Help manual
