@@ -12,12 +12,12 @@ ActivityInfo {
   icon: "baby_wordprocessor/baby_wordprocessor.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
-  title: qsTr("A baby word processor")
+  title: qsTr("My first word processor")
   //: Help title
-  description: qsTr("A simplistic word processor to let the children play around with a keyboard and see letters.")
+  description: qsTr("Write your first texts.")
   //intro: "A simplistic word processor to play around with the keyboard"
   //: Help goal
-  goal: qsTr("Discover the keyboard and the letters.")
+  goal: qsTr("Learn to write a text using a word processor.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Just type on the real or virtual keyboard like in a word processor.
