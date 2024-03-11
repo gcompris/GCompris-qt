@@ -14,10 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Align four (against Tux)")
   //: Help title
-  description: qsTr("Arrange four tokens in a row.")
-//  intro: "Click on the column where you wish your token to fall and try to align of 4 tokens before Tux."
+  description: qsTr("Line up four tokens.")
+//  intro: "Click on the column where you wish your token to fall and try to align 4 tokens before Tux."
   //: Help goal
-  goal: qsTr("Create a line of 4 tokens either horizontally (lying down), vertically (standing up) or diagonally.")
+  goal: qsTr("Create a line of 4 tokens either horizontally (lying down), vertically (standing up), or diagonally.")
   //: Help manual
   manual: qsTr("Play with Tux. Take turns to click the line in which you want to drop a token. The first player to create a line of 4 tokens wins.") + ("<br>") +
           qsTr("You can use the arrow buttons to manually select the difficulty level. Tux will play better when you increase the level.") + ("<br><br>") +
