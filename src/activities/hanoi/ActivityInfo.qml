@@ -14,14 +14,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Simplified Tower of Hanoi")
   //: Help title
-  description: qsTr("Reproduce the given tower.")
+  description: qsTr("Copy the tower on the right-hand side onto the empty peg.")
   //intro: "Rebuild the same tower in the empty area as the one you see on the right hand side."
   //: Help goal
-  goal: qsTr("Reproduce the tower on the right in the empty area.")
+  goal: qsTr("Develop strategic thinking.")
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
-  manual: qsTr("Drag and Drop one top piece at a time, from one tower to another, to reproduce the tower on the right in the empty area.")
+  manual: qsTr("Drag and drop one top disc at a time, from one tower to another, to reproduce the tower on the right-hand side onto the empty peg.")
   credit: qsTr("Concept taken from EPI games.")
   section: "discovery logic"
   createdInVersion: 4000
