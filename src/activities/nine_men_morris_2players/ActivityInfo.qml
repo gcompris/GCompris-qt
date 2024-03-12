@@ -13,13 +13,14 @@ ActivityInfo {
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
   //: Activity title
   title: qsTr("Nine men's morris (with a friend)")
-  description: ""
+  //: Help title
+  description: qsTr("Play the game Nine men's morris with a friend.")
   //intro: "Click on the dot where you wish to place your piece and try to take all your friend's pieces."
   //: Help goal
-  goal: qsTr("Form mills (lines of 3 pieces) to remove your opponent's pieces until your opponent has only 2 pieces left or can not move anymore.")
+  goal: qsTr("Develop strategic and spatial visualization skills.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Play with a friend. First take turns to place nine pieces, and then take turns to move your pieces.")
+  manual: qsTr("Play with a friend. First take turns to place nine pieces, and then take turns to move your pieces. If you have only 3 pieces left, you can make them fly to any vacant spot. A player wins when the other player can't move any piece or has only 2 pieces left.")
   credit: ""
   section: "strategy"
   createdInVersion: 7000 
