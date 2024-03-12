@@ -17,10 +17,10 @@ ActivityInfo {
   description: qsTr("Kick the ball into the goal.")
 //  intro: "Drag a line from the ball to set the speed and direction of your kick."
   //: Help goal
-  goal: qsTr("Kick the ball behind the goal keeper on the right.")
+  goal: qsTr("Understand direction and speed.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag a line from the ball to set its speed and direction, and release it to kick the ball.")
+  manual: qsTr("Press the ball, and drag behind it to draw the aiming line. The longer the line, the more powerful the kick. When you release the line, the ball will follow its direction. You score a goal when the ball reaches the other edge of the field.")
   credit: ""
   section: "fun"
   createdInVersion: 0
