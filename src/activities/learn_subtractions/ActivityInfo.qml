@@ -12,12 +12,12 @@ ActivityInfo {
   icon: "learn_subtractions/learn_subtractions.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Learn subtractions")
+  title: qsTr("Learn subtraction")
   //: Help title
-  description: qsTr("Learn subtractions with small numbers.")
+  description: qsTr("Learn subtraction with small numbers.")
   //intro: "Click on the circles to give the operation's result."
   //: Help goal
-  goal: qsTr("Learn subtractions by counting their result.")
+  goal: qsTr("Learn subtraction by counting their result.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("A subtraction is displayed on the screen. Calculate the result, fill the corresponding number of circles and validate your answer.") + ("<br><br>") +

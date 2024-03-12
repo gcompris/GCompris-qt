@@ -12,12 +12,12 @@ ActivityInfo {
   icon: "learn_additions/learn_additions.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Learn additions")
+  title: qsTr("Learn addition")
   //: Help title
-  description: qsTr("Learn additions with small numbers.")
+  description: qsTr("Learn addition with small numbers.")
   //intro: "Click on the circles to give the operation's result."
   //: Help goal
-  goal: qsTr("Learn additions by counting their result.")
+  goal: qsTr("Learn addition by adding quantities.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("An addition is displayed on the screen. Calculate the result, fill the corresponding number of circles and validate your answer.") + ("<br><br>") +
