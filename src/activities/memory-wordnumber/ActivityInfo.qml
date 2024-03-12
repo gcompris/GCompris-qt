@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Flip the cards to match a numeral with its number name.")
 //  intro: "Match the numeric with the word."
   //: Help goal
-  goal: qsTr("Reading numbers, memory.")
+  goal: qsTr("Practice reading numbers.")
   //: Help prerequisite
   prerequisite: qsTr("Reading.")
   //: Help manual
