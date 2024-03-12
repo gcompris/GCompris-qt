@@ -23,7 +23,7 @@ ActivityInfo {
     description: qsTr("Arrange the given events in their chronological order.")
     //intro: "Arrange the given events in their chronological order."
     //: Help goal
-    goal: qsTr("Can decide chronological order of events.")
+    goal: qsTr("Learn to order an event sequence in chronological order.")
     //: Help prerequisite
     prerequisite: qsTr("Tell a short story.")
     //: Help manual
