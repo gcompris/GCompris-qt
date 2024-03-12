@@ -72,6 +72,10 @@ function initLevel() {
     items.movePlaneTimer.stop();
     items.cloudCreation.stop()
 
+    if(dataset[items.currentLevel].toolTipText) {
+        items.toolTipText = dataset[items.currentLevel].toolTipText
+    }
+
     items.score.message = dataset[items.currentLevel].data[currentSubLevel]
     items.score.visible = dataset[items.currentLevel].showNext
 

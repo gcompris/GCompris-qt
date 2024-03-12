@@ -77,6 +77,7 @@ ActivityBase {
             property alias cloudCreation: cloudCreation
             property bool showTutorial: activity.showTutorial
             property bool goToNextLevel: false
+            property alias toolTipText: toolTipText.text
        }
 
        onVoiceDone: {
@@ -186,5 +187,36 @@ ActivityBase {
             background: background
         }
 
+        Item {
+            id: toolTipArea
+            anchors {
+                top: parent.top
+                topMargin: 5 * ApplicationInfo.ratio
+                horizontalCenter: parent.horizontalCenter
+            }
+            width: Math.min(parent.width - 20 * ApplicationInfo.ratio,
+                            200 * ApplicationInfo.ratio)
+            height: 40 * ApplicationInfo.ratio
+            visible: toolTipText.text != ""
+
+            Rectangle {
+                anchors.centerIn: toolTipText
+                width: toolTipText.paintedWidth + 10 * ApplicationInfo.ratio
+                height: toolTipText.paintedHeight
+                radius: 5 * ApplicationInfo.ratio
+                color:"#AAFFFFFF"
+            }
+
+            GCText {
+                id: toolTipText
+                anchors.centerIn: parent
+                fontSizeMode: Text.Fit
+                fontSize: regularSize
+                color: "#373737"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                text: ""
+            }
+        }
     }
 }
