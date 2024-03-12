@@ -11,15 +11,15 @@ ActivityInfo {
   icon: "learn_decimals_additions/learn_decimals_additions.svg"
   author: "Mariam Fahmy &lt;mariamfahmy66@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Additions with decimal numbers")
+  title: qsTr("Addition with decimal numbers")
   //: Help title
-  description: qsTr("Learn additions with decimal numbers.")
+  description: qsTr("Learn addition with decimal numbers.")
   //intro: "Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area to represent the result of the addition."
   //: Help goal
-  goal: qsTr("Learn additions with decimal numbers by counting how many squares are needed to represent the result.")
+  goal: qsTr("Learn addition with decimal numbers by manipulating their visual representation.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("An addition with two decimal numbers is displayed. Drag the arrow to select a part of the bar, and drag the selected part of the bar to the empty area. Repeat these steps until the number of dropped bars corresponds to the result of the addition, and click on the OK button to validate your answer.")+ ("<br><br>") +
+  manual: qsTr("An addition with two decimal numbers is displayed. Drag the arrow to select a part of the unit bar, and drag the selected part of the bar to the empty area. Repeat these steps until the number of dropped bars corresponds to the result of the addition, and click on the OK button to validate your answer.")+ ("<br><br>") +
   qsTr("If the answer is correct, type the corresponding result, and click on the OK button to validate your answer.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Enter: validate your answer") + ("</li><li>") +
