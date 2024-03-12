@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Move each item to recreate the image.")
   //intro: "Click or drag an element next to a free space, the element will move and release its space. You must put all the pieces in the correct order. The numbers on the pieces can help you."
   //: Help goal
-  goal: qsTr("Arrange the pieces in the right order.")
+  goal: qsTr("Develop anticipation and spatial visualization skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Click or drag on any piece next to the empty space, and it will move to the empty space.") + ("<br><br>") +
