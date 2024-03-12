@@ -17,10 +17,10 @@ ActivityInfo {
   description: qsTr("Type the falling letters before they reach the ground.")
 //  intro: "Type the letters on your keyboard before they reach the ground."
   //: Help goal
-  goal: qsTr("Letter association between the screen and the keyboard.")
+  goal: qsTr("Match letters on the keyboard with letters on the screen.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Type the falling letters before they reach the ground.")
+  manual: qsTr("Type the falling letters on the keyboard before they reach the ground.")
   credit: ""
   section: "computer keyboard reading letters"
   createdInVersion: 0
