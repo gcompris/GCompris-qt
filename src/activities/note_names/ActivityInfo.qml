@@ -23,7 +23,7 @@ ActivityInfo {
   goal: qsTr("Develop a good understanding of note position and naming convention. Prepare for the 'Play Piano' and 'Piano Composition' activities.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Identify the notes correctly and score 100% to complete a level.")
+  manual: qsTr("Identify the notes, play them on the piano keyboard, and achieve a score of 100% to complete the level.")
   credit: ""
   section: "discovery music"
   createdInVersion: 9500
