@@ -22,7 +22,7 @@ ActivityInfo {
     description: qsTr("Arrange the given words to form a meaningful sentence.")
     //intro: "Arrange the given words to form a meaningful sentence."
     //: Help goal
-    goal: qsTr("Order words to form meaningful sentences.")
+    goal: qsTr("Practice ordering words to form a meaningful sentence.")
     //: Help prerequisite
     prerequisite: qsTr("Reading.")
     //: Help manual
