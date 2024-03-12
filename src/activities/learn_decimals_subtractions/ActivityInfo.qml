@@ -16,7 +16,7 @@ ActivityInfo {
   description: qsTr("Learn subtractions with decimal numbers.")
   //intro: "Click on the squares to represent the result of the subtraction."
   //: Help goal
-  goal: qsTr("Learn subtractions with decimal numbers by counting how many squares need to be subtracted to represent the result.")
+  goal: qsTr("Learn subtractions with decimal numbers by manipulating their visual representation.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("A subtraction with two decimal numbers is displayed. The first number from the subtraction is represented with bars. Each bar represents one unit, and each square in the bar represent one tenth of this unit. Click on the squares to subtract the second number and represent the result of the operation")+ ("<br><br>") +
