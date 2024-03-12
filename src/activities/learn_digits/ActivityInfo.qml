@@ -12,15 +12,15 @@ ActivityInfo {
   icon: "learn_digits/learn_digits.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Count and color the circles")
+  title: qsTr("Learn digits")
   //: Help title
-  description: qsTr("Learn digits from 0 to 9.")
+  description: qsTr("Represent the number corresponding to the given digit.")
   //intro: "Click on the circles to match the given digit."
   //: Help goal
-  goal: qsTr("Learn digits by counting their corresponding value.")
+  goal: qsTr("Learn the numbers represented by a single digit and the corresponding quantities.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("A digit is displayed on the screen. Fill the corresponding number of circles and validate your answer.") + ("<br><br>") +
+  manual: qsTr("A digit is displayed on the screen. Fill the number of circles corresponding to the number represented by the digit and validate your answer.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Arrows: navigate") + ("</li><li>") +
           qsTr("Space: select or deselect a circle") + ("</li><li>") +
