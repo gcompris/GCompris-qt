@@ -11,22 +11,29 @@ Planegame {
 
     showTutorial: true
 
+    property string evenNumberTooltip: qsTr("Catch the even numbers.")
+    property string oddNumberTooltip: qsTr("Catch the odd numbers.")
+
     dataset: [
         {
             data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
-            showNext: true
+            showNext: true,
+            toolTipText: evenNumberTooltip
         },
         {
-            data: "1 3 5 7 9 11 13 15 17 19 21".split(" "),
-            showNext: true
+            data: "1 3 5 7 9 11 13 15 17 19".split(" "),
+            showNext: true,
+            toolTipText: oddNumberTooltip
         },
         {
             data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
-            showNext: false
+            showNext: false,
+            toolTipText: evenNumberTooltip
         },
         {
-            data: "1 3 5 7 9 11 13 15 17 19 21".split(" "),
-            showNext: false
+            data: "1 3 5 7 9 11 13 15 17 19".split(" "),
+            showNext: false,
+            toolTipText: oddNumberTooltip
         }
     ]
 
