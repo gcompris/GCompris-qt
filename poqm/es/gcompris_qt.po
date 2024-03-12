@@ -26792,46 +26792,46 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Los archivos de datos locales están actualizados."
 
-#: core/DownloadManager.cpp:124
+#: core/DownloadManager.cpp:123
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Descarga cancelada por el usuario"
 
-#: core/DownloadManager.cpp:339
+#: core/DownloadManager.cpp:338
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "No se puede crear la ruta del recurso"
 
-#: core/DownloadManager.cpp:346
+#: core/DownloadManager.cpp:345
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "No se puede abrir el archivo de destino %1"
 
-#: core/DownloadManager.cpp:715
+#: core/DownloadManager.cpp:714
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "El formato del contenido del archivo no es válido"
 
-#: core/DownloadManager.cpp:737
+#: core/DownloadManager.cpp:736
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "El URL %1 no existe."
 
-#: core/DownloadManager.cpp:750
+#: core/DownloadManager.cpp:749
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "La suma de verificación del archivo descargado no coincide: %1"
 
-#: core/DownloadManager.cpp:772
+#: core/DownloadManager.cpp:771
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr "No se han encontrado voces para %1."
 
-#: core/DownloadManager.cpp:777
+#: core/DownloadManager.cpp:776
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
