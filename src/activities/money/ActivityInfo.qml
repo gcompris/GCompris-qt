@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Practice money usage.")
 //  intro: "Click or tap on the money to pay."
   //: Help goal
-  goal: qsTr("You must buy different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.")
+  goal: qsTr("Practice counting and money usage.")
   //: Help prerequisite
   prerequisite: qsTr("Can count.")
   //: Help manual
