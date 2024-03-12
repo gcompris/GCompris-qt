@@ -14,7 +14,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Point the relatives")
   //: Help title
-  description: qsTr("Click on a pair corresponding to the given relation.")
+  description: qsTr("Select two people corresponding to the given relationship.")
   //intro: "Click on a pair that defines the given relation"
   //: Help goal
   goal: qsTr("Learn the relationships in a family, according to the lineal system used in most Western societies.")
