@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Guide Tux out of the invisible maze.")
 //  intro: "Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze icon or the space key to see the map."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop spatial visualization, pathfinding and visual memory skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Use the arrow keys or swipe the screen to move Tux to the door. Use the maze icon or the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.") + "<br><br>" +

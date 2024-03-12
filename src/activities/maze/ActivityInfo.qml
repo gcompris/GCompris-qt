@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Help Tux get out of this maze.")
 //  intro: "Use the arrows keys or swipe the touch screen to help Tux find his way out."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop spatial visualization and pathfinding skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Use the arrow keys or swipe the screen to move Tux to the door.") + "<br><br>" +
