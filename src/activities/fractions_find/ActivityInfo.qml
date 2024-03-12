@@ -15,9 +15,11 @@ ActivityInfo {
   //: Help title
   description: qsTr("Find the correct numerator and denominator of the represented fraction.")
   //intro: "Find the correct numerator and denominator of the represented fraction"
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to write a fraction corresponding to a given fractional representation.")
   prerequisite: ""
-  manual: ""
+  //: Help manual
+  manual: qsTr("Count the total number of parts of the represented shape, set it as denominator. Count the number of selected parts and set it as a numerator to write the fraction corresponding to the fractional representation.")
   credit: ""
   section: "math arithmetic"
   createdInVersion: 30000
