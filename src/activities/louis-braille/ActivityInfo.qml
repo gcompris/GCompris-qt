@@ -14,9 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The history of Louis Braille")
   //: Help title
-  description: qsTr("Review the major dates of the inventor of the braille system.")
+  description: qsTr("Read about some key events in the life of the braille system inventor, and remember their chronological order.")
   //intro: "Discover the history of Louis Braille."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Remember the order of an event sequence. Learn about the life of Louis Braille.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Read the history of Louis Braille, his biography, and the invention of the braille system. Click on the previous and next buttons to move between the story pages. At the end, arrange the sequence in chronological order.") + ("<br><br>") +
