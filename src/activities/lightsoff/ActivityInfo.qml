@@ -14,10 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Lights off")
   //: Help title
-  description: qsTr("The goal is to turn off all the lights.")
+  description: qsTr("Turn off all the lights.")
 //  intro: "Click on the lamps to turn them off."
   //: Help goal
-  goal: qsTr("The goal is to turn off all the lights.")
+  goal: qsTr("Develop anticipation, strategy and spatial visualization skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("The effect of pressing a window is to toggle the state of that window, and of its immediate vertical and horizontal neighbors. You must turn off all the lights. If you click on Tux, the solution is shown.")
