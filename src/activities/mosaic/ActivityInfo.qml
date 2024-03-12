@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Put each item at the same place as in the given example.")
 //  intro: "Put each item at the same place as in the given example."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Train your observation and matching skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("First select an item from the list, and then click on a spot of the mosaic to place the item.") + ("<br><br>") +
