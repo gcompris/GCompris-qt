@@ -18,12 +18,13 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Locate the countries")
   //: Help title
-  description: qsTr("Drag and Drop the items to complete the map.")
+  description: qsTr("Place the continents and countries on the world map.")
 //  intro: "Drag and drop the objects to complete the map."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to locate and place the continents and many countries on the world map.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag and drop the map pieces to their correct locations to complete the map.")
+  manual: qsTr("Drag and drop the map pieces to their correct location to complete the map.")
   credit: ""
   section: "sciences geography"
   createdInVersion: 4000
