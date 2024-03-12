@@ -17,14 +17,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Discover the International Morse code")
   //: Help title
-  description: qsTr("Learn how to communicate with the International Morse code.")
+  description: qsTr("Communicate with the International Morse code.")
   //intro: "Learn and practice the International Morse code"
   //: Help goal
-  goal: qsTr("You have to send and receive letters and digits in International Morse code.")
+  goal: qsTr("Learn how to send and receive messages using the International Morse code.")
   //: Help prerequisite
   prerequisite: qsTr("Knowledge of alphabets and digits.")
   //: Help manual
-  manual: qsTr("You are either asked to send a message in Morse code or convert the received Morse code message to letters or digits. To learn the Morse code, you can have a look at the translation map which contains the code for all the letters and digits.")
+  manual: qsTr("You are either asked to send a message in Morse code or convert the received Morse code message to letters or digits. To learn Morse code, you can click on the Morse key icon to have a look at the translation map which contains the code for all the letters and digits.")
   credit: ""
   section: "reading letters"
   createdInVersion: 30000
