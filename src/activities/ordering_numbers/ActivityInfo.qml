@@ -22,7 +22,7 @@ ActivityInfo {
     description: qsTr("Arrange the given numbers in ascending or descending order as requested.")
     //: intro: "Arrange the numbers in the correct order."
     //: Help goal
-    goal: qsTr("Compare numbers.")
+    goal: qsTr("Practice ordering numbers.")
     //: Help prerequisite
     prerequisite: qsTr("Counting.")
     //: Help manual
