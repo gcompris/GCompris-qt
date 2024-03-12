@@ -14,10 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Letter in which word")
   //: Help title
-  description: qsTr("A letter is written. Some words are displayed, and you must find the word or the words in which this letter appears.")
+  description: qsTr("Find the words with the given letter.")
   //intro: "Click on all the words containing the wanted letter."
   //: Help goal
-  goal: qsTr("Select all the words which contain the given letter.")
+  goal: qsTr("Train to find a given letter in words.")
   //: Help prerequisite
   prerequisite: qsTr("Spelling, letter recognition.")
   //: Help manual
