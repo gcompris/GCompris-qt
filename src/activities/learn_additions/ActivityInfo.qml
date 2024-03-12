@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Learn additions with small numbers.")
   //intro: "Click on the circles to give the operation's result."
   //: Help goal
-  goal: qsTr("Learn additions by counting their result.")
+  goal: qsTr("Learn additions by adding quantities.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("An addition is displayed on the screen. Calculate the result, fill the corresponding number of circles and validate your answer.") + ("<br><br>") +
