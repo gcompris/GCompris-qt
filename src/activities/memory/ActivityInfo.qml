@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Flip the cards to find the matching pairs.")
 //  intro: "Click on a card and find its double."
   //: Help goal
-  goal: qsTr("Train your memory and remove all the cards.")
+  goal: qsTr("Train your visual memory.")
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual

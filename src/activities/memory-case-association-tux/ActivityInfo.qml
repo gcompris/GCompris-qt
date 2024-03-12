@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Flip the cards to find the uppercase and lowercase of the same letter, playing against Tux.")
   //intro: "Match the upper case card with its lower case pair."
   //: Help goal
-  goal: qsTr("Learning lowercase and uppercase letters, memory.")
+  goal: qsTr("Learn lowercase and uppercase letters.")
   //: Help prerequisite
   prerequisite: qsTr("Knowing alphabets.")
   //: Help manual
