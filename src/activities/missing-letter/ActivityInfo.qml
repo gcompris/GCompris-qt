@@ -18,7 +18,7 @@ ActivityInfo
   description: qsTr("Find the missing letter to complete the word.")
 //  intro: "Find the missing letter and complete the word by clicking on one of the letters proposed on the side."
   //: Help goal
-  goal: qsTr("Training reading skills.")
+  goal: qsTr("Learn to spell words.")
   //: Help prerequisite
   prerequisite: qsTr("Word reading.")
   //: Help manual
