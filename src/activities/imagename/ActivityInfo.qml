@@ -20,7 +20,7 @@ ActivityInfo {
   description: qsTr("Drag and Drop each item above its name.")
 //  intro: "Drag and drop each item above its name."
   //: Help goal
-  goal: qsTr("Vocabulary and reading.")
+  goal: qsTr("Enrich your vocabulary and practice reading.")
   //: Help prerequisite
   prerequisite: qsTr("Reading.")
   //: Help manual
