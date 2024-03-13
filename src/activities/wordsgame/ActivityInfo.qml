@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Type the falling words before they reach the ground.")
 //  intro: "Type the words on your keyboard before they reach the ground."
   //: Help goal
-  goal: qsTr("Keyboard training.")
+  goal: qsTr("Practice using a keyboard.")
   //: Help prerequisite
   prerequisite: qsTr("Keyboard manipulation.")
   //: Help manual
