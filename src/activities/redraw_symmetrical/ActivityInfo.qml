@@ -14,9 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Mirror the given image")
   //: Help title
-  description: qsTr("Draw the image on the empty grid as if you saw it in a mirror.")
+  description: qsTr("Reproduce the image symmetrically on the empty grid.")
   //intro: "Use the drawing tools to reproduce symmetrically the pattern on the right."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to identify a location in a grid and to reproduce a model symmetrically.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("First, select the proper color from the toolbar. Click on the grid and drag to paint, then release the click to stop painting.")

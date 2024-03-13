@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Draw perfectly the given image on the empty grid.")
   //intro: "Use the drawing tools to build an identical pattern on the right."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Learn to identify a location in a grid and to reproduce a model.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("First, select the proper color from the toolbar. Click on the grid and drag to paint, then release the click to stop painting.")
