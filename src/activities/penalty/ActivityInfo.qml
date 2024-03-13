@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Double click or double tap on any side of the goal in order to score.")
   // intro: "Double click or double tap on the goal, in order to score."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop motor coordination skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Double click or double tap on a side of the goal to kick the ball. " +
