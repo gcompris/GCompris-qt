@@ -17,7 +17,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Solar system")
   //: Help title
-  description: qsTr("Answer the questions with a correctness of 100%.")
+  description: qsTr("Learn about the solar system.")
   //intro: "Answer the questions presented and get a 100% correctness among the options."
   //: Help goal
   goal: qsTr("Learn information about the solar system. If you want to learn more about astronomy, try downloading KStars (https://edu.kde.org/kstars/) or Stellarium (https://stellarium.org/) which are astronomy Free Software.")
