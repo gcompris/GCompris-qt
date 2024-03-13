@@ -13,12 +13,12 @@ ActivityInfo {
   icon: "programmingMaze/programmingMaze.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Programming maze")
+  title: qsTr("Program the path")
   //: Help title
-  description: qsTr("This activity teaches to program Tux to reach its goal using simple instructions like move forward, turn left or right.")
+  description: qsTr("Program the path to help Tux catch the fish.")
   // intro: "Arrange the instructions and traverse the correct path to reach the fish."
   //: Help goal
-  goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")
+  goal: qsTr("Learn how to program instructions for moving along a path.")
   //: Help prerequisite
   prerequisite: qsTr("Can read instructions, and think logically to find a path.")
   //: Help manual
