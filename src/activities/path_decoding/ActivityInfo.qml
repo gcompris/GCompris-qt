@@ -15,10 +15,11 @@ ActivityInfo {
   //: Help title
   description: qsTr("Follow the given directions to help Tux reach the target.")
   //intro: "Click on the grid squares following the given directions to help Tux reach the target."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop skills in visualization and map reading, and learn to follow directions.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Click on the grid squares to move Tux following the given directions.") + "<br><br>" +
+  manual: qsTr("Click on the grid squares to move Tux to the target following the arrow directions.") + "<br><br>" +
           qsTr("The directions are absolute, they do not depend on the current orientation of Tux.")
   credit: ""
   section: "discovery logic"

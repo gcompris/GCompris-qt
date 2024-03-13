@@ -15,7 +15,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Move Tux along the path to reach the target.")
   //intro: "Use the arrows to move Tux along the path and reach the target."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop skills in visualization and map reading, and learn to follow directions.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Use the arrow buttons to move Tux along the path until he reaches the target.") + "<br><br>" +

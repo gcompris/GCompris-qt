@@ -11,14 +11,15 @@ ActivityInfo {
   icon: "path_decoding_relative/path_decoding_relative.svg"
   author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
   //: Activity title
-  title: qsTr("Path decoding relative")
+  title: qsTr("Relative path decoding")
   //: Help title
   description: qsTr("Follow the given directions to help Tux reach the target.")
   //intro: "Click on the grid squares following the given directions to help Tux reach the target."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop skills in visualization and map reading, and learn to follow directions.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Click on the grid squares to move Tux following the given directions.") + "<br><br>" +
+  manual: qsTr("Click on the grid squares to move Tux to the target following the arrow directions.") + "<br><br>" +
           qsTr("The directions are relative to the current orientation of Tux.") + "<br><br>" +
           qsTr("This means that UP moves forward, DOWN moves backward, LEFT moves to the left side of Tux and RIGHT moves to the right side of Tux.")
   credit: ""
