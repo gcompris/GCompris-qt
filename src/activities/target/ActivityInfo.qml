@@ -14,10 +14,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Practice addition with a target game")
   //: Help title
-  description: qsTr("Hit the target and count your points.")
+  description: qsTr("Throw darts at a target and count your score.")
   // intro: "Click on the target to launch darts, then count your final score!"
   //: Help goal
-  goal: qsTr("Throw darts at a target and count your score.")
+  goal: qsTr("Practice addition of several numbers.")
   //: Help prerequisite
   prerequisite: qsTr("Can move the mouse, can read numbers and count up to 15 for the first level.")
   //: Help manual
