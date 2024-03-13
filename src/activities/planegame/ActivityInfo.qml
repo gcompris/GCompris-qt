@@ -12,12 +12,12 @@ ActivityInfo {
     icon: "planegame/planegame.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     //: Activity title
-    title: qsTr("Numbers in order")
+    title: qsTr("Numerical order")
     //: Help title
     description: qsTr("Move the helicopter to catch the clouds in the correct order.")
 //  intro: "Move the helicopter with the arrow keys and catch the numbers in the clouds, in ascending order."
     //: Help goal
-    goal: qsTr("Numeration training.")
+    goal: qsTr("Learn the numerical order.")
     prerequisite: ""
     //: Help manual
     manual: qsTr("Catch the clouds in increasing order. With a keyboard, use the arrow keys to move the helicopter. With a pointing device, just click or tap on the target location. To know which number you have to catch you can either remember it or check the number on the bottom right corner.") + ("<br><br>") +
