@@ -16,7 +16,8 @@ ActivityInfo {
   //: Help title
   description: qsTr("Remove the red car from the parking lot through the gate on the right.")
 //  intro: "Slide the cars to make a space so that the red car can go out of the box."
-  goal: ""
+  //: Help goal
+  goal: qsTr("Develop anticipation and spatial visualization skills.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Each car can only move either horizontally or vertically. You must make some room in order to let the red car move through the gate on the right.")
