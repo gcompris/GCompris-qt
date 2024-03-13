@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Count the number of dots on the dice before it reaches the ground.")
 //  intro: "Count the number on the dice and type it on your keyboard before it reaches the ground."
   //: Help goal
-  goal: qsTr("In a limited time, count the number of dots.")
+  goal: qsTr("Practice counting with a time limit.")
   //: Help prerequisite
   prerequisite: qsTr("Counting skills.")
   //: Help manual

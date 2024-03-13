@@ -14,14 +14,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Numbers with dominoes")
   //: Help title
-  description: qsTr("Count the number on the domino before it reaches the ground.")
+  description: qsTr("Count the number of dots on the domino before it reaches the ground.")
 //  intro: "Count the numbers on the dominoes then type the result on your keyboard."
   //: Help goal
-  goal: qsTr("Count a number in a limited time.")
+  goal: qsTr("Practice counting with a time limit.")
   //: Help prerequisite
   prerequisite: qsTr("Counting skills.")
   //: Help manual
-  manual: qsTr("Type the number you see on each falling domino.") + ("<br><br>") +
+  manual: qsTr("Type the number of dots you see on each falling domino.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Digits: type your answer") + ("</li></ul>")
   credit: ""
