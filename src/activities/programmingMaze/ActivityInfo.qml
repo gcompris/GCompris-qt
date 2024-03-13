@@ -15,10 +15,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Programming maze")
   //: Help title
-  description: qsTr("This activity teaches to program Tux to reach its goal using simple instructions like move forward, turn left or right.")
+  description: qsTr("Program the path for Tux to catch the fish.")
   // intro: "Arrange the instructions and traverse the correct path to reach the fish."
   //: Help goal
-  goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")
+  goal: qsTr("Learn how to program instructions to move along a path.")
   //: Help prerequisite
   prerequisite: qsTr("Can read instructions, and think logically to find a path.")
   //: Help manual
