@@ -14,7 +14,7 @@ ActivityInfo {
   icon: "railroad/railroad.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   //: Activity title
-  title: qsTr("Railroad activity")
+  title: qsTr("Railroad")
   //: Help title
   description: qsTr("Rebuild the train model at the top of the screen.")
   //intro: "Observe the train and then click on the items to set up a similar train"
