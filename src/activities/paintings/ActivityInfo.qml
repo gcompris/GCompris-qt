@@ -22,7 +22,7 @@ ActivityInfo {
   description: qsTr("Drag and Drop the pieces to rebuild the original paintings.")
   // intro: "Catch and drop each piece on the points."
   //: Help goal
-  goal: qsTr("Spatial representation.")
+  goal: qsTr("Develop observation and spatial visualization skills.")
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation: movement, drag and drop.")
   //: Help manual
