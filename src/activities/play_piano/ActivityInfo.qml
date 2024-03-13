@@ -17,7 +17,8 @@ ActivityInfo {
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   //: Activity title
   title: qsTr("Play piano")
-  description: ""
+  //: Help title
+  description: qsTr("Read the score, and then play it on the keyboard.")
   //intro: "Click on the keyboard keys that match the notes that you see and hear"
   //: Help goal
   goal: qsTr("Understand how the piano keyboard can play music as written on the musical staff.")
