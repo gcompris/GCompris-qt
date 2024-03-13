@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Find the differences between the two pictures.")
   //intro: "look at the two pictures carefully and click where you see a difference"
   //: Help goal
-  goal: qsTr("Visual perception.")
+  goal: qsTr("Develop skills in perceiving details.")
   prerequisite: ""
   //: Help manual
   manual: qsTr("Observe the two pictures carefully. There are some slight differences. When you find a difference you must click on it.")
