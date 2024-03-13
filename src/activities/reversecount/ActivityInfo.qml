@@ -17,7 +17,7 @@ ActivityInfo {
   description: qsTr("Tux is hungry. Help him find fish by counting to the correct ice spot.")
 //  intro: "Click on the domino and validate your choice with the OK button to indicate the number of ice blocks Tux will have to follow to eat a fish."
   //: Help goal
-  goal: qsTr("Tux is hungry. Help him find fish by counting to the correct ice spot.")
+  goal: qsTr("Learn to count intervals.")
   //: Help prerequisite
   prerequisite: qsTr("Can read numbers on a domino.")
   //: Help manual
