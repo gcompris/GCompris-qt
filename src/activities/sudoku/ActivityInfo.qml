@@ -12,16 +12,16 @@ ActivityInfo {
   icon: "sudoku/sudoku.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Sudoku, place unique symbols in a grid")
+  title: qsTr("Sudoku")
   //: Help title
-  description: qsTr("Symbols must be unique in a row, in a column, and (if defined) in each region.")
+  description: qsTr("Solve the Sudoku.")
 //  intro: "Select a number or a symbol and click its target area. Each symbol must appear only once in a row, in a column and in a subregion if any."
   //: Help goal
-  goal: qsTr("The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each cell of a grid. In the official Sudoku the grid is 9×9 and made up of 3×3 subgrids (called 'regions'). In GCompris we start at lower levels with a simpler version using symbols and with no regions. In all cases the grid is presented with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;).")
+  goal: qsTr("Develop some skills in logical thinking (data linking, deduction) and spatial visualization.")
   //: Help prerequisite
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability.")
   //: Help manual
-  manual: qsTr("Select a number or a symbol in the list and click on its target position. GCompris will not let you enter an invalid answer.")
+  manual: qsTr("Select a number or a symbol and click its target position. Each symbol must appear only once in a row, in a column and in a subregion if any. If an action is not allowed, the game will show why. But beware: if you can place something in a square, it might not be correct for the whole Sudoku. It can still be a mistake.")
   credit: ""
   section: "discovery logic"
   createdInVersion: 0
