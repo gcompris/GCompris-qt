@@ -16,7 +16,7 @@ ActivityInfo {
   description: qsTr("Solve the Calcudoku.")
   //intro: "Select a number and click on its target position. Each number must appear only once in a row and in a column. The numbers in the cells of a cage must produce the given result when combined using the given operator."
   //: Help goal
-  goal: qsTr("Develop your logical reasoning skills: data linking, deduction and spatial location while using calculation.")
+  goal: qsTr("Develop some logical skills (data linking, deduction) and spatial visualization while using calculation.")
   //: Help prerequisite
   prerequisite: qsTr("Completing the puzzle requires patience and arithmetic abilities.")
   //: Help manual
