@@ -1,11 +1,10 @@
 # Translation of gcompris_qt to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2012, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-08-10 18:51+0200\n"
+"PO-Revision-Date: 2024-03-10 11:42+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -18,7 +17,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -50,85 +49,85 @@ msgstr "Kontroller svar"
 #: activities/adjacent_numbers/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr ""
+msgstr "Finn nabotala"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr ""
+msgstr "Finn nabotala som manglar."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr ""
+msgstr "Læra rekkjefølgja på tala."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr ""
+msgstr "Finn tala som manglar, og dra dei dit dei høyrer heime."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr ""
+msgstr "Tal frå 1 til 10"
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr ""
+msgstr "Tal frå 0 til 20"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr ""
+msgstr "Tal frå 0 til 100"
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr ""
+msgstr "Finn talet som kjem etterpå."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr ""
+msgstr "Finn talet som kjem før."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr ""
+msgstr "Finn talet som skal stå i midten."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Finn tala som manglar."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr ""
+msgstr "Finn tala som kjem etterpå."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr ""
+msgstr "Finn tala som kjem før."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr ""
+msgstr "Finn tala som skal stå i midten."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr ""
+msgstr "Tal frå −10 til −1"
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr ""
+msgstr "Tala frå −10 til 10"
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -939,7 +938,7 @@ msgstr "Lær gongetabellen for talet 10"
 #: activities/algebra_by/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr ""
+msgstr "Øv på gongetabellar for tala 1 til 10"
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1030,7 +1029,7 @@ msgstr "Lær å dela på talet 10"
 #: activities/algebra_div/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr ""
+msgstr "Øv på deling for tala 1 til 10"
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1123,17 +1122,17 @@ msgstr "Lær å trekkja frå talet 10"
 #: activities/algebra_minus/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr ""
+msgstr "Øv på å trekkja frå med tal opptil 10"
 
 #: activities/algebra_minus/resource/12/Data.qml:13
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr ""
+msgstr "Øv på å trekkja frå med tal opptil 20"
 
 #: activities/algebra_minus/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr ""
+msgstr "Øv på å trekkja frå med tal opptil 100"
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1224,17 +1223,17 @@ msgstr "Lær å leggja til talet 10"
 #: activities/algebra_plus/resource/11/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr ""
+msgstr "Øv på å leggja til med tal opptil 10"
 
 #: activities/algebra_plus/resource/12/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr ""
+msgstr "Øv på å leggja til med tal opptil 15"
 
 #: activities/algebra_plus/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr ""
+msgstr "Øv på å leggja til med tal opptil 100"
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -3134,13 +3133,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Kalkudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Løys kalkudoku-oppgåva."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3149,12 +3148,14 @@ msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
 "location while using calculation."
 msgstr ""
+"Utvikla evna til logisk tenking: sjå samanhengar, trekkja logiske "
+"slutningar, ha god romforståing og kunna rekna."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr ""
+msgstr "Å fullføra bretta krev tolmod og reknekunnskap."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3167,36 +3168,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Vel eit tal til venstre, og  trykk på cella i rutenettet der du vil plassera "
+"talet. Kvart tal kan berre stå éin gong i kvar rad og i kvar kolonne. Eit "
+"bur er ei gruppe med celler og inneheld informasjon om kva tal cellene kan "
+"ha. Alle bur som har meir enn éi celle, viser svaret på eit reknestykke og "
+"operatoren til reknestykket. Når tala i cellene til buret vert rekna saman "
+"via operatoren, må du få det same som svaret som høyrer til buret. Bur som "
+"berre har éi celle, viser direkte kva tal dei skal ha."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr ""
+msgstr "Små rutenett og +-operator"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr ""
+msgstr "Små rutenett og +- og −-operatorar"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr ""
+msgstr "Små rutenett og +-, −- og ×-operatorar"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr ""
+msgstr "Mellomstore rutenett og +-, −- og ×-operatorar"
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr ""
+msgstr "Store rutenett og +-, −-, ×- og ∕-operatorar"
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -4700,12 +4708,12 @@ msgstr "1783 – Montgolfier-brørne sin varmluftsballong"
 #: activities/chronos/resource/board/board5_1.qml:47
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 – Clément Ader sin Eole"
 
 #: activities/chronos/resource/board/board5_1.qml:55
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr ""
+msgstr "1907 – Paul Cornu og den første helikopterturen"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4720,7 +4728,7 @@ msgstr "1769 – Cugnot sin fardier"
 #: activities/chronos/resource/board/board5_2.qml:40
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 – Clément Ader sin Eole"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4754,7 +4762,7 @@ msgstr "1829 – Stephenson sitt damplokomotiv Rocket"
 #: activities/chronos/resource/board/board5_4.qml:47
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 – Clément Ader sin Eole"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4769,17 +4777,17 @@ msgstr "Luftfart"
 #: activities/chronos/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr ""
+msgstr "1890 – Clément Ader sin Eole"
 
 #: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr ""
+msgstr "1905 – Wright-brørne sin Flyer III"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "1903 – Louis Blériot kryssar Den engelske kanalen"
+msgstr "1909 – Louis Blériot kryssar Den engelske kanalen"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -4799,7 +4807,7 @@ msgstr "1927 – Charles Lindbergh kryssar Atlanteren"
 #: activities/chronos/resource/board/board6_1.qml:55
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr ""
+msgstr "1934 – Hélène Boucher sin fartsrekord på 445 km/t"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4829,7 +4837,7 @@ msgstr "Bilar"
 #: activities/chronos/resource/board/board6_3.qml:39
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr ""
+msgstr "1898 – Renault sin voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -9590,19 +9598,19 @@ msgstr "Finn teljaren og nemnaren – kvadratdiagram"
 #: activities/frieze/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Frieze"
-msgstr ""
+msgstr "Friser"
 
 #. Help title
 #: activities/frieze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr ""
+msgstr "Gjenskap eller fullfør friser."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr ""
+msgstr "Læra algoritmar."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:23
@@ -9611,41 +9619,43 @@ msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
+"Gjenskap frisa som står øvst på skjermen. På nokre brett må du gjenskapa "
+"eller fullføra frisa etter at du først har lært ho utanåt."
 
 #: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr ""
+msgstr "Pil venstre/høgre: Vel symbol"
 
 #: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr ""
+msgstr "Mellomrom: Legg symbolet til frisa"
 
 #: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr ""
+msgstr "Delete eller Rettetast: Fjern det siste symbolet frå frisa"
 
 #: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr ""
+msgstr "Enter: Sjå om svaret er rett"
 
 #: activities/frieze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
-msgstr ""
+msgstr "Tabulator: Byt mellom frisebygging og vising av modellen"
 
 #: activities/frieze/Frieze.qml:289
 msgctxt "Frieze|"
 msgid "I am Ready"
-msgstr ""
+msgstr "Eg er klar"
 
 #: activities/frieze/resource/1/Data.qml:28
 msgctxt "Data|"
 msgid "Copy this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopier frisa – 2 symbol med ulike fargar/teikn"
 
 #: activities/frieze/resource/1/Data.qml:31
 #: activities/frieze/resource/4/Data.qml:17
@@ -9653,7 +9663,7 @@ msgstr ""
 #: activities/frieze/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Copy this frieze."
-msgstr ""
+msgstr "Kopier denne frisa."
 
 #: activities/frieze/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -9661,6 +9671,8 @@ msgid ""
 "Remember and copy this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
+"Memorer og kopier frisa – vilkårleg kombinasjon av former, fargar/teikn og "
+"storleikar"
 
 #: activities/frieze/resource/10/Data.qml:17
 #: activities/frieze/resource/12/Data.qml:16
@@ -9668,7 +9680,7 @@ msgstr ""
 #: activities/frieze/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Remember and copy this frieze."
-msgstr ""
+msgstr "Memorer og kopier denne frisa."
 
 #: activities/frieze/resource/11/Data.qml:13
 msgctxt "Data|"
@@ -9677,10 +9689,11 @@ msgid ""
 "shapes, colors/signs and sizes."
 msgstr ""
 
+# Manglar punktum i originalteksten, men det er berre inkonsistens.
 #: activities/frieze/resource/11/Data.qml:16
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
-msgstr ""
+msgstr "Kopier og fullfør denne frisa."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9703,7 +9716,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr ""
+msgstr "Kopier og fullfør denne frisa."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9715,7 +9728,7 @@ msgstr ""
 #: activities/frieze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Copy and complete this frieze: 2 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopier og fullfør frisa – 2 symbol med ulike fargar/teikn"
 
 #: activities/frieze/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -9725,7 +9738,7 @@ msgstr ""
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "Kopier frisa – 3 eller 4 symbol med ulike fargar/teikn"
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -22105,17 +22118,17 @@ msgstr "Mellomrom eller Enter: Fargelegg"
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids."
-msgstr "Små ruter"
+msgstr "Små rutenett"
 
 #: activities/redraw/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids."
-msgstr "Mellomstore ruter"
+msgstr "Mellomstore rutenett"
 
 #: activities/redraw/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids."
-msgstr "Store ruter"
+msgstr "Store rutenett"
 
 #. Activity title
 #: activities/redraw_symmetrical/ActivityInfo.qml:15
@@ -22132,17 +22145,17 @@ msgstr "Lag ein spegelvend kopi av teikninga på rutenettet."
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
 msgid "Small grids (3×3)."
-msgstr "Små ruter (3 × 3)"
+msgstr "Små rutenett (3 × 3)"
 
 #: activities/redraw_symmetrical/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Medium grids (5×5)."
-msgstr "Mellomstore ruter (5 × 5)"
+msgstr "Mellomstore rutenett (5 × 5)"
 
 #: activities/redraw_symmetrical/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Large grids (7×7)."
-msgstr "Store ruter (7 × 7)"
+msgstr "Store rutenett (7 × 7)"
 
 #. Activity title
 #: activities/renewable_energy/ActivityInfo.qml:15
@@ -26469,46 +26482,46 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Du har siste versjon av dei lokale datafilene."
 
-#: core/DownloadManager.cpp:124
+#: core/DownloadManager.cpp:123
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Nedlastinga vart avbroten av brukaren"
 
-#: core/DownloadManager.cpp:339
+#: core/DownloadManager.cpp:338
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Klarte ikkje laga ressursmappe"
 
-#: core/DownloadManager.cpp:346
+#: core/DownloadManager.cpp:345
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Klarte ikkje opna målfila %1"
 
-#: core/DownloadManager.cpp:715
+#: core/DownloadManager.cpp:714
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Ugyldig format på innhaldsfil"
 
-#: core/DownloadManager.cpp:737
+#: core/DownloadManager.cpp:736
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "Adressa %1 finst ikkje."
 
-#: core/DownloadManager.cpp:750
+#: core/DownloadManager.cpp:749
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "Sjekksummen til den nedlasta fila er ikkje rett: %1"
 
-#: core/DownloadManager.cpp:772
+#: core/DownloadManager.cpp:771
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr ""
 
-#: core/DownloadManager.cpp:777
+#: core/DownloadManager.cpp:776
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
