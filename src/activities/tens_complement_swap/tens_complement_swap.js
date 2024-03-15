@@ -1,6 +1,7 @@
 /* GCompris - tens_complement_swap.js
  *
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
+ * SPDX-FileCopyrightText: 2024 Harsh Kumar <hadron43@yahoo.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
@@ -12,7 +13,6 @@ var items;
 var datasets = [];
 var currentDatasetLevel = 0;
 var numberOfDatasetLevel;
-var previousSelectedCard = undefined;
 
 function start(items_) {
     items = items_
@@ -34,7 +34,8 @@ function stop() {
 
 function initLevel() {
     clearListModels();
-    previousSelectedCard = undefined;
+    items.previousSelectedCard = undefined;
+
     for(var indexOfListModel = 0; indexOfListModel < datasets[items.currentLevel].length; indexOfListModel++) {
         var model = [];
         var valueArray = getValueArray(datasets[items.currentLevel][indexOfListModel]);
@@ -57,10 +58,21 @@ function initLevel() {
             }
             model.push(card);
         }
+
         var resultCard = {
             "type": "resultCard",
             "value": valueArray[valueArray.length - 1].toString(),
         }
+        if(items.mode === "input") {
+            resultCard = {
+                "type": "inputCard",
+                "value": "",
+                "rowNumber": indexOfListModel,
+                "selected": false,
+                "selectable": true
+            }
+        }
+
         model.push(resultCard);
         items.equations.append({
             "listmodel": model,
@@ -155,18 +167,27 @@ function swapCards(firstCard, secondCard) {
 
 function selectCard(currentSelectedCard) {
     items.equations.get(currentSelectedCard.rowNumber).isValidationImageVisible = false;
-    if(previousSelectedCard != undefined) {
-        if(previousSelectedCard.rowNumber == currentSelectedCard.rowNumber) {
-            swapCards(currentSelectedCard, previousSelectedCard)
+    if(items.previousSelectedCard != undefined) {
+        items.equations.get(items.previousSelectedCard.rowNumber).listmodel.get(items.previousSelectedCard.columnNumber).selected = false;
+        if(currentSelectedCard.type === "inputCard" || items.previousSelectedCard.type === "inputCard") {
+            if(items.previousSelectedCard.rowNumber == currentSelectedCard.rowNumber &&
+                items.previousSelectedCard.columnNumber == currentSelectedCard.columnNumber)
+                items.previousSelectedCard = undefined;
+            else
+                items.previousSelectedCard = currentSelectedCard;
+
+        } else {
+            items.equations.get(currentSelectedCard.rowNumber).listmodel.get(currentSelectedCard.columnNumber).selected = false;
+            if(items.previousSelectedCard.rowNumber == currentSelectedCard.rowNumber) {
+                swapCards(currentSelectedCard, items.previousSelectedCard);
+            }
+
+            items.previousSelectedCard = undefined;
         }
-        items.equations.get(currentSelectedCard.rowNumber).listmodel.get(currentSelectedCard.columnNumber).selected = false;
-        items.equations.get(previousSelectedCard.rowNumber).listmodel.get(previousSelectedCard.columnNumber).selected = false;
-        previousSelectedCard = undefined;
     }
     else {
-        previousSelectedCard = currentSelectedCard;
+        items.previousSelectedCard = currentSelectedCard;
     }
-
 }
 
 function nextLevel() {
@@ -184,12 +205,14 @@ function checkAnswer() {
     for(var indexOfRows = 0; indexOfRows < items.equations.count; indexOfRows++) {
         var numberCardCounter = 0;
         var sum = 0;
+        var totalSum = 0;
         var isRowCorrect = true;
         var currentRow = items.equations.get(indexOfRows);
         var currentEquation = currentRow.listmodel;
         for(var indexOfCards = 0; indexOfCards < currentEquation.count - 1; indexOfCards++) {
             var currentCard = currentEquation.get(indexOfCards);
             if(currentCard.type == "numberCard") {
+                totalSum += parseInt(currentCard.value);
                 if(numberCardCounter != 2) {
                     sum += parseInt(currentCard.value);
                 }
@@ -204,6 +227,8 @@ function checkAnswer() {
                 }
             }
         }
+        if(totalSum !== parseInt(currentEquation.get(currentEquation.count - 1).value))
+            isRowCorrect = false;
         currentRow.isGood = isRowCorrect;
         currentRow.isValidationImageVisible = true;
         isAllCorrect = isAllCorrect & isRowCorrect;
