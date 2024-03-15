@@ -183,6 +183,7 @@ sudoku
 superbrain
 tangram
 target
+tens_complement_calculate
 tens_complement_find
 tens_complement_swap
 tens_complement_use
