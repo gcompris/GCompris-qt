@@ -26535,6 +26535,70 @@ msgid "Maximum value: 500000."
 msgstr ""
 
 #. Activity title
+#: activities/tens_complement_calculate/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "instruments|"
+#| msgid "Find the trumpet"
+msgctxt "ActivityInfo|"
+msgid "Calculate with ten's complement"
+msgstr "Find trompeten"
+
+#. Help title
+#: activities/tens_complement_calculate/ActivityInfo.qml:16
+msgctxt "ActivityInfo|"
+msgid ""
+"Swap the numbers to create pairs equal to ten and input the answer of the "
+"final sum."
+msgstr ""
+
+#. Help goal
+#: activities/tens_complement_calculate/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use ten's complement to optimize the order of numbers in an "
+"operation and calculate the result."
+msgstr ""
+
+#. Help prerequisite
+#: activities/tens_complement_calculate/ActivityInfo.qml:21
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Subtraction memory game"
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and additions."
+msgstr "Minus huskespil"
+
+#. Help manual
+#: activities/tens_complement_calculate/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten within each parentheses. Select a "
+"number, then select another number of the same operation to swap their "
+"position. On each line, input the final sum in last box. When all the lines "
+"are completed, press the OK button to validate the answers. If some answers "
+"are incorrect, a cross icon will appear on the corresponding lines. Correct "
+"the errors, then press the OK button again."
+msgstr ""
+
+#: activities/tens_complement_calculate/resource/1/Data.qml:36
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "1 pair to make from 3 numbers."
+msgstr "1 er ikke et primtal."
+
+#: activities/tens_complement_calculate/resource/2/Data.qml:9
+#: activities/tens_complement_swap/resource/2/Data.qml:9
+#, fuzzy
+#| msgctxt "Warning|"
+#| msgid "1 is not a prime number."
+msgctxt "Data|"
+msgid "2 pairs to make from 5 numbers."
+msgstr "1 er ikke et primtal."
+
+#. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
 #, fuzzy
 #| msgctxt "instruments|"
@@ -26626,15 +26690,6 @@ msgid ""
 "operation."
 msgstr ""
 
-#. Help prerequisite
-#: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
-msgctxt "ActivityInfo|"
-msgid "Numbers from 1 to 30 and additions."
-msgstr "Minus huskespil"
-
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -26652,14 +26707,6 @@ msgstr ""
 #| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 er ikke et primtal."
-
-#: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
-msgctxt "Data|"
-msgid "2 pairs to make from 5 numbers."
 msgstr "1 er ikke et primtal."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9

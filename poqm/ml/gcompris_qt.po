@@ -25124,6 +25124,87 @@ msgid "Maximum value: 500000."
 msgstr "പരമാവധി വില: 500000."
 
 #. Activity title
+#: activities/tens_complement_calculate/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Use ten's complement"
+msgctxt "ActivityInfo|"
+msgid "Calculate with ten's complement"
+msgstr "പത്തിന്റെ പൂരകം ഉപയോഗിക്കാം"
+
+#. Help title
+#: activities/tens_complement_calculate/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Swap the numbers to create pairs equal to ten."
+msgctxt "ActivityInfo|"
+msgid ""
+"Swap the numbers to create pairs equal to ten and input the answer of the "
+"final sum."
+msgstr "സംഖ്യകൾ വച്ചുമാറി പത്തിനു തുല്യമായ ജോടികൾ നിർമിക്കൂ."
+
+#. Help goal
+#: activities/tens_complement_calculate/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn to use ten's complement to optimize the order of numbers in an "
+#| "operation."
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use ten's complement to optimize the order of numbers in an "
+"operation and calculate the result."
+msgstr ""
+"പത്തിന്റെ പൂരകമുപയോഗിച്ച് ഒരു ക്രിയയിലുള്ള സംഖ്യകളെ മെച്ചപ്പെട്ട രീതിയിൽ ക്രമീകരിക്കുവാൻ "
+"പഠിക്കാൻ."
+
+#. Help prerequisite
+#: activities/tens_complement_calculate/ActivityInfo.qml:21
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and additions."
+msgstr "1 തൊട്ട് 30 വരെയുള്ള സംഖ്യകളും കൂട്ടലും."
+
+#. Help manual
+#: activities/tens_complement_calculate/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Create pairs of numbers equal to ten within each parentheses. Select a "
+#| "number, then select another number of the same operation to swap their "
+#| "position. When all the lines are completed, press the OK button to "
+#| "validate the answers. If some answers are incorrect, a cross icon will "
+#| "appear on the corresponding lines. Correct the errors, then press the OK "
+#| "button again."
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten within each parentheses. Select a "
+"number, then select another number of the same operation to swap their "
+"position. On each line, input the final sum in last box. When all the lines "
+"are completed, press the OK button to validate the answers. If some answers "
+"are incorrect, a cross icon will appear on the corresponding lines. Correct "
+"the errors, then press the OK button again."
+msgstr ""
+"ഓരോ ബ്രാക്കറ്റിനകത്തും പത്തിനു തുല്യമായ സംഖ്യ ജോടികളാക്കുക. ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് "
+"അതേ ക്രിയയിലെ മറ്റൊരു സംഖ്യ തിരഞ്ഞെടുത്ത് അവയുടെ സ്ഥാനം വച്ചുമാറാം. എല്ലാ വരികളും "
+"പൂർത്തിയായാൽ, ഒകെ ബട്ടണിൽ അമർത്തി ഉത്തരങ്ങൾ സാധൂകരിക്കുക. തെറ്റായ ഉത്തരങ്ങൾ ഉണ്ടെങ്കിൽ, ആ "
+"വരികളിൽ ഒരു തെറ്റിന്റെ ചിഹ്നം കാണും. തെറ്റുകൾ തിരുത്തി, വീണ്ടും ഒകെ ബട്ടണിൽ അമർത്തുക."
+
+#: activities/tens_complement_calculate/resource/1/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 pairs to make from 4 numbers."
+msgctxt "Data|"
+msgid "1 pair to make from 3 numbers."
+msgstr "4 സംഖ്യകൾകൊണ്ട് 2 ജോടികൾ ഉണ്ടാക്കുക."
+
+#: activities/tens_complement_calculate/resource/2/Data.qml:9
+#: activities/tens_complement_swap/resource/2/Data.qml:9
+msgctxt "Data|"
+msgid "2 pairs to make from 5 numbers."
+msgstr "5 സംഖ്യകൾകൊണ്ട് 2 ജോടികൾ ഉണ്ടാക്കുക."
+
+#. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
@@ -25207,12 +25288,6 @@ msgstr ""
 "പത്തിന്റെ പൂരകമുപയോഗിച്ച് ഒരു ക്രിയയിലുള്ള സംഖ്യകളെ മെച്ചപ്പെട്ട രീതിയിൽ ക്രമീകരിക്കുവാൻ "
 "പഠിക്കാൻ."
 
-#. Help prerequisite
-#: activities/tens_complement_swap/ActivityInfo.qml:21
-msgctxt "ActivityInfo|"
-msgid "Numbers from 1 to 30 and additions."
-msgstr "1 തൊട്ട് 30 വരെയുള്ള സംഖ്യകളും കൂട്ടലും."
-
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -25232,11 +25307,6 @@ msgstr ""
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
 msgstr "4 സംഖ്യകൾകൊണ്ട് 2 ജോടികൾ ഉണ്ടാക്കുക."
-
-#: activities/tens_complement_swap/resource/2/Data.qml:9
-msgctxt "Data|"
-msgid "2 pairs to make from 5 numbers."
-msgstr "5 സംഖ്യകൾകൊണ്ട് 2 ജോടികൾ ഉണ്ടാക്കുക."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"

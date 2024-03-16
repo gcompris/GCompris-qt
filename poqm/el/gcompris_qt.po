@@ -25923,6 +25923,91 @@ msgid "Maximum value: 500000."
 msgstr "Μέγιστη τιμή: 500000."
 
 #. Activity title
+#: activities/tens_complement_calculate/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Use ten's complement"
+msgctxt "ActivityInfo|"
+msgid "Calculate with ten's complement"
+msgstr "Χρησιμοποιώ το συμπλήρωμα του 10"
+
+#. Help title
+#: activities/tens_complement_calculate/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Swap the numbers to create pairs equal to ten."
+msgctxt "ActivityInfo|"
+msgid ""
+"Swap the numbers to create pairs equal to ten and input the answer of the "
+"final sum."
+msgstr "Αντάλλαξε τους αριθμούς για να δημιουργήσεις ζεύγη ίσα με δέκα."
+
+#. Help goal
+#: activities/tens_complement_calculate/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn to use ten's complement to optimize the order of numbers in an "
+#| "operation."
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use ten's complement to optimize the order of numbers in an "
+"operation and calculate the result."
+msgstr ""
+"Μάθε να χρησιμοποιείς το συμπλήρωμα του δέκα για να βελτιώσεις τη σειρά των "
+"αριθμών σε μια πράξη."
+
+#. Help prerequisite
+#: activities/tens_complement_calculate/ActivityInfo.qml:21
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and additions."
+msgstr "Αριθμοί από 1 έως 30 και προσθέσεις."
+
+#. Help manual
+#: activities/tens_complement_calculate/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Create pairs of numbers equal to ten within each parentheses. Select a "
+#| "number, then select another number of the same operation to swap their "
+#| "position. When all the lines are completed, press the OK button to "
+#| "validate the answers. If some answers are incorrect, a cross icon will "
+#| "appear on the corresponding lines. Correct the errors, then press the OK "
+#| "button again."
+msgctxt "ActivityInfo|"
+msgid ""
+"Create pairs of numbers equal to ten within each parentheses. Select a "
+"number, then select another number of the same operation to swap their "
+"position. On each line, input the final sum in last box. When all the lines "
+"are completed, press the OK button to validate the answers. If some answers "
+"are incorrect, a cross icon will appear on the corresponding lines. Correct "
+"the errors, then press the OK button again."
+msgstr ""
+"Τα ζευγάρια αριθμών σε κάθε παρένθεση θα πρέπει να είναι ίσα με το δέκα. Αν "
+"αυτό δεν συμβαίνει, τότε πρέπει να αλλάξεις τις θέσεις τους. Αυτό γίνεται "
+"πατώντας πάνω σε δυο αριθμούς που το άθροισμά τους είναι δέκα. Όταν κάνεις "
+"τις αλλαγές σε όλες τις πράξεις, πάτησε το κουμπί OK για να επικυρώσεις τις "
+"απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα "
+"εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις τα σφάλματα, "
+"κάνε κλικ στους λάθος αριθμούς για να αφαιρεθούν και τοποθέτησέ τους πάλι "
+"στις σωστές θέσεις."
+
+#: activities/tens_complement_calculate/resource/1/Data.qml:36
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "2 pairs to make from 4 numbers."
+msgctxt "Data|"
+msgid "1 pair to make from 3 numbers."
+msgstr "2 ζεύγη από 4 αριθμούς."
+
+#: activities/tens_complement_calculate/resource/2/Data.qml:9
+#: activities/tens_complement_swap/resource/2/Data.qml:9
+msgctxt "Data|"
+msgid "2 pairs to make from 5 numbers."
+msgstr "2 ζεύγη από 5 αριθμούς."
+
+#. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
@@ -26009,12 +26094,6 @@ msgstr ""
 "Μάθε να χρησιμοποιείς το συμπλήρωμα του δέκα για να βελτιώσεις τη σειρά των "
 "αριθμών σε μια πράξη."
 
-#. Help prerequisite
-#: activities/tens_complement_swap/ActivityInfo.qml:21
-msgctxt "ActivityInfo|"
-msgid "Numbers from 1 to 30 and additions."
-msgstr "Αριθμοί από 1 έως 30 και προσθέσεις."
-
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -26038,11 +26117,6 @@ msgstr ""
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
 msgstr "2 ζεύγη από 4 αριθμούς."
-
-#: activities/tens_complement_swap/resource/2/Data.qml:9
-msgctxt "Data|"
-msgid "2 pairs to make from 5 numbers."
-msgstr "2 ζεύγη από 5 αριθμούς."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"
