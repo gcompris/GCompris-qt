@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2024-03-15 21:02\n"
+"PO-Revision-Date: 2024-03-16 20:48\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -23940,12 +23940,9 @@ msgstr "最大值：500000。"
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "和为十"
+msgstr ""
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -23983,12 +23980,9 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "1 不是质数。"
+msgstr ""
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

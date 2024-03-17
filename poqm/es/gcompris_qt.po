@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-19 17:27+0100\n"
+"PO-Revision-Date: 2024-03-17 01:56+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -25674,38 +25674,29 @@ msgstr "Valor máximo: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Usa el complemento de diez"
+msgstr "Calcula con el complemento de diez"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Intercambia los números para crear parejas iguales a diez."
+msgstr ""
+"Intercambia los números para crear parejas iguales a diez e introduce la "
+"respuesta de la suma final."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Aprende a usar el complemento de diez para optimizar el orden de los números "
-"de una operación."
+"de una operación y calcular el resultado."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25716,15 +25707,6 @@ msgstr "Números del 1 al 30 y sumas."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25736,18 +25718,16 @@ msgid ""
 msgstr ""
 "Crea parejas de números iguales a diez dentro de cada paréntesis. Selecciona "
 "primero un número, y después selecciona otro número de la misma operación "
-"para intercambiar sus posiciones. Cuando hayas completado todas las líneas, "
-"pulsa el botón «Aceptar» para validar las respuestas. Si alguna respuesta es "
-"incorrecta, verás un icono con una cruz en las líneas correspondientes. "
-"Corrige los errores y vuelve a pulsar el botón «Aceptar»."
+"para intercambiar sus posiciones. En cada línea, introduce la suma final en "
+"el último cuadro. Cuando hayas completado todas las líneas, pulsa el botón "
+"«Aceptar» para validar las respuestas. Si alguna respuesta es incorrecta, "
+"verás un icono con una cruz en las líneas correspondientes. Corrige los "
+"errores y vuelve a pulsar el botón «Aceptar»."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "Forma dos parejas a partir de 4 números."
+msgstr "Forma una pareja a partir de 3 números."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

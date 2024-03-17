@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-19 10:02+0100\n"
+"PO-Revision-Date: 2024-03-16 15:18+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -25589,38 +25589,29 @@ msgstr "Maximum waarde: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Complement van tien gebruiken"
+msgstr "Rekenen met complement van tien"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Wissel de getallen om om paren te maken gelijk aan tien."
+msgstr ""
+"Wissel de getallen om om paren te maken gelijk aan tien en voer het antwoord "
+"in van de uiteindelijke som."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Leren hoe het complement van tien te gebruiken om de volgorde van getallen "
-"in een bewerking te optimaliseren."
+"in een bewerking te optimaliseren en bereken het resultaat."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25631,15 +25622,6 @@ msgstr "Getallen van 1 tot 30 en optellingen."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25651,18 +25633,16 @@ msgid ""
 msgstr ""
 "Maak paren van getallen gelijk aan tien binnen de bij elkaar horende "
 "haakjes. Selecteer een getal, selecteer daarna een ander getal met dezelfde "
-"bewerking om hun positie te verwisselen. Wanneer alle regels zijn ingevuld, "
+"bewerking om hun positie te verwisselen. Op elke regel, voer de "
+"uiteindelijke som in in het laatste vak. Wanneer alle regels zijn ingevuld, "
 "druk op de knop OK on de antwoorden na te kijken. Als sommige antwoorden "
 "onjuist zijn zal er een pictogram met een kruis verschijnen op de "
 "bijbehorende regels. Corrigeer de fouten, druk daarna opnieuw op de knop OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 paren om vanaf 4 getallen te maken."
+msgstr "1 paar om vanaf 3 getallen te maken."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

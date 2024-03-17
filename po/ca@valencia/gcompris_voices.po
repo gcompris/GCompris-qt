@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-16 02:01+0000\n"
-"PO-Revision-Date: 2024-01-28 19:28+0100\n"
+"PO-Revision-Date: 2024-03-16 09:51+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -1308,10 +1308,7 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Create pairs of numbers equal to ten. Select a number, then select "
-#| "another number of the same operation to swap their position."
+#, kde-format
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position. Then, select the result "
@@ -1319,7 +1316,8 @@ msgid ""
 msgstr ""
 "Crea parells de nombres iguals a deu. Selecciona un nombre en la llista i, a "
 "continuació, selecciona un punt buit d'una operació per a moure el nombre "
-"seleccionat allà."
+"seleccionat allà. Després, selecciona el quadro de resultat per a teclejar-"
+"hi el resultat."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17

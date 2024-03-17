@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-02-19 10:10+0100\n"
+"PO-Revision-Date: 2024-03-16 09:55+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -26015,38 +26015,29 @@ msgstr "Valor màxim: 500.000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Utilitza el complement a deu"
+msgstr "Calcula amb el complement a deu"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Intercanvia els nombres per a crear parells iguals a deu."
+msgstr ""
+"Intercanvia els nombres per a crear parells iguals a deu i introdueix la "
+"resposta de la suma final."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Aprendre a utilitzar els complements a deu per a optimitzar l'ordre dels "
-"nombres en una operació."
+"nombres en una operació i calcular el resultat."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -26057,15 +26048,6 @@ msgstr "Nombres des de l'1 fins a 30 i sumes."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -26077,18 +26059,16 @@ msgid ""
 msgstr ""
 "Crea parells de nombres iguals a deu dins de cada parèntesi. Seleccioneu un "
 "nombre i, a continuació, seleccioneu un altre nombre de la mateixa operació "
-"per a intercanviar la seva posició. Quan totes les línies estiguin "
-"completades, premeu el botó «OK» per a validar les respostes. Si algunes "
-"respostes són incorrectes, apareixerà una icona de creu a les línies "
-"corresponents. Corregiu els errors, després torneu a prémer el botó «OK»."
+"per a intercanviar la seva posició. A cada línia, introduïu la suma final en "
+"l'últim quadre. Quan totes les línies estiguin completades, premeu el botó "
+"«OK» per a validar les respostes. Si algunes respostes són incorrectes, "
+"apareixerà una icona de creu a les línies corresponents. Corregiu els "
+"errors, després torneu a prémer el botó «OK»."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "Fer 2 parells a partir de 4 nombres."
+msgstr "Fer 2 parells a partir de 3 nombres."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

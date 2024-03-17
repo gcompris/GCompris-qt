@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-27 07:11+0100\n"
+"PO-Revision-Date: 2024-03-16 23:47+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.02.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -25480,38 +25480,29 @@ msgstr "Valor máximo: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Usar o complementos de 10"
+msgstr "Calcular co complemento de 10"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Intercambiar os números para crear parellas iguais a dez."
+msgstr ""
+"Intercambia os números para crear parellas iguais a dez e introduce o "
+"resultado da suma final."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
-"Aprender a usar o complemento de 10 para optimizar a orde dos números nunha "
-"operación."
+"Aprende a usar o complemento de 10 para optimizar a orde dos números nunha "
+"operación e calcula o resultado."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25522,15 +25513,6 @@ msgstr "Números do 1 ao 30 e sumas."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25540,20 +25522,17 @@ msgid ""
 "are incorrect, a cross icon will appear on the corresponding lines. Correct "
 "the errors, then press the OK button again."
 msgstr ""
-"Crear parellas de números iguais a 10 con cada paréntese. Selecciona un "
+"Crea parellas de números iguais a 10 con cada paréntese. Selecciona un "
 "número, logo outro da mesma operación para intercambiar as súas posicións. "
-"Unha vez completas todas as liñas, preme o botón «Aceptar» para validar as "
-"respostas. Se algunhas respostas son incorrectas, aparecerá unha icona de "
-"cruz nas liñas correspondentes. Corrixe os erros e preme o botón «Aceptar» "
-"de novo."
+"Introduce en cada liña a suma final na última caixa. Unha vez completas "
+"todas as liñas, preme o botón «Aceptar» para validar as respostas. Se "
+"algunhas respostas son incorrectas, aparecerá unha icona de cruz nas liñas "
+"correspondentes. Corrixe os erros e preme o botón «Aceptar» de novo."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 parellas para facer 4 números."
+msgstr "1 parella para facer 3 números."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

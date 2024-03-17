@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-19 08:33+0100\n"
+"PO-Revision-Date: 2024-03-16 07:31+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -25327,38 +25327,29 @@ msgstr "Maksimalna vrednost: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Uporabite dopolnilo števila deset"
+msgstr "Izračunajte z dopolnilom števila deset"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Zamenjajte med sabo števila, da ustvarite pare enake deset."
+msgstr ""
+"Zamenjajte števila, da ustvarite pare enake deset in vnesite odgovor končne "
+"vsote."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
-"Naučite se uporabiti dopolnila števila deset za optimiziranje razvrstitve "
-"števil v operaciji."
+"Naučite se uporabljati dopolnila števila deset za optimizacijo vrstnega reda "
+"števil v operaciji in izračunajte rezultat."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25369,15 +25360,6 @@ msgstr "Števila od 1 do 30 in seštevanja."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25388,18 +25370,16 @@ msgid ""
 "the errors, then press the OK button again."
 msgstr ""
 "Ustvarite pare števil enakih deset v vsakem oklepaju. Izberite število, nato "
-"izberite drugo število iste operacije, da zamenjate njun položaj. Ko so vse "
-"vrstice končane, pritisnite gumb V redu, da preverite odgovore. Če so "
-"nekateri odgovori napačni, se bo na tam prikazala ikona križa. Popravite "
-"napake, nato spet pritisnite gumb V redu."
+"izberite drugo število iste operacije, da zamenjate njun položaj. V vsako "
+"vrstico v zadnje polje vnesite končno vsoto. Ko so vse vrstice izpolnjene, "
+"pritisnite gumb OK za potrditev odgovorov. Če so nekateri odgovori napačni, "
+"se v ustreznih vrsticah pojavi ikona križca. Popravite napake in znova "
+"pritisnite gumb OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "naredite 2 para iz 4 števil."
+msgstr "naredite 1 par iz 3 števil."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
