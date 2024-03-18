@@ -246,9 +246,16 @@ Item {
                 gcaudio.done()
         }
         onMetaDataChanged: {
-            print("JJ", metaData.keys(), metaData.value(MediaMetaData.FileFormat), MediaMetaData.MediaType, metaData.value(MediaMetaData.Title), metaData.value(MediaMetaData.ContributingArtist), metaData.value(MediaMetaData.Date), metaData.value(MediaMetaData.Copyright))
-            if(isBackgroundMusic) {
-                metaDataMusic = [metaData.value(MediaMetaData.Title), metaData.value(MediaMetaData.ContributingArtist), metaData.value(MediaMetaData.Date), metaData.value(MediaMetaData.Copyright)]
+            if(isBackgroundMusic && audio.activeAudioTrack != -1) {
+                var metaDate = audio.audioTracks[audio.activeAudioTrack].value(MediaMetaData.Date)
+                var dateYear = ""
+                if(metaDate != undefined) {
+                    dateYear = Qt.formatDate(metaDate, "yyyy")
+                }
+                metaDataMusic = [audio.audioTracks[audio.activeAudioTrack].stringValue(MediaMetaData.Title),
+                audio.audioTracks[audio.activeAudioTrack].stringValue(MediaMetaData.ContributingArtist),
+                dateYear,
+                audio.audioTracks[audio.activeAudioTrack].stringValue(MediaMetaData.Copyright)]
             }
         }
     }

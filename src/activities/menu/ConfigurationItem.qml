@@ -245,7 +245,7 @@ Item {
                 text: {
                     if(backgroundMusic.playbackState !== MediaPlayer.PlayingState || backgroundMusic.muted)
                         return qsTr("Not playing")
-                    else if (backgroundMusic.metaDataMusic[0] !== undefined)
+                    else if (backgroundMusic.metaDataMusic[0] !== "")
                         return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
                     else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
                         return qsTr("Introduction music")
