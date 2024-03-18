@@ -238,23 +238,47 @@ Item {
         onErrorOccurred: (error, errorString) => {
             // This file cannot be played, remove it from the source asap
             source = ""
-            if(files.length)
+            if(files.length) {
                 silenceTimer.start()
-            else
+            }
+            else {
                 gcaudio.error()
+            }
         }
         onPlaybackStateChanged: {
             if(playbackState !== MediaPlayer.StoppedState) {
                 return;
             }
-            if(files.length)
+            if(files.length) {
                 silenceTimer.start()
-            else
+            }
+            else {
                 gcaudio.done()
+            }
+        }
+        /**
+        * Best effort to get the metadata from the audio track
+        * audio.audioTracks[audio.activeAudioTrack] seems to work on Linux
+        * audio.metaData seems to work on Windows
+        */
+        function getMetadata(metadataKey) {
+            var value = audio.audioTracks[audio.activeAudioTrack].stringValue(metadataKey);
+            if(value === "") {
+                value = audio.metaData.stringValue(metadataKey);
+            }
+            return value;
         }
         onMetaDataChanged: {
-            if(isBackgroundMusic) {
-                metaDataMusic = [metaData.value(MediaMetaData.Title), metaData.value(MediaMetaData.ContributingArtist), metaData.value(MediaMetaData.Date), metaData.value(MediaMetaData.Copyright)]
+            if(isBackgroundMusic && audio.activeAudioTrack != -1) {
+                var title = getMetadata(MediaMetaData.Title);
+                var contributingArtist = getMetadata(MediaMetaData.ContributingArtist);
+                var copyright = getMetadata(MediaMetaData.Copyright);
+                var metaDate = getMetadata(MediaMetaData.Date);
+                var dateYear = ""
+                if(metaDate != undefined && metaDate != "") {
+                    dateYear = Qt.formatDate(metaDate, "yyyy")
+                }
+                metaDataMusic = [title, contributingArtist, dateYear, copyright]
             }
         }
     }
