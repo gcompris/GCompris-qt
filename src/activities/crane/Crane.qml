@@ -210,7 +210,6 @@ ActivityBase {
 
                     property alias anim: anim
                     property int distance
-                    property int indexChange
                     property int startPoint
                     property string animationProperty
                     property int _index: index // make current index accessible from outside
@@ -222,8 +221,8 @@ ActivityBase {
                         PropertyAction { target: figure; property: "opacity"; value: 0 }
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + distance; to: figure.startPoint; duration: 0; }
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
-                        PropertyAction { target: items.answerRepeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
-                        PropertyAction { target: items.answerRepeater.itemAt(items.selected + indexChange); property: "initialIndex"; value: figure.initialIndex }
+                        PropertyAction { target: items.answerRepeater.itemAt(items.selected); property: "source"; value: figure.source }
+                        PropertyAction { target: items.answerRepeater.itemAt(items.selected); property: "initialIndex"; value: figure.initialIndex }
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
