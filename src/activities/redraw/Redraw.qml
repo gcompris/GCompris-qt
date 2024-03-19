@@ -108,6 +108,7 @@ ActivityBase {
                 width: height / 7
                 height: background.height - bar.height * 1.2
                 boundsBehavior: Flickable.StopAtBounds
+                maximumFlickVelocity: activity.height
                 contentHeight: items.numberOfColor * width
                 Column {
                     id: colorSelector

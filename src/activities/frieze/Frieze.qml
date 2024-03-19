@@ -225,6 +225,7 @@ ActivityBase {
                     anchors.left: parent.left
                     anchors.leftMargin: anchors.topMargin
                     boundsBehavior: Flickable.StopAtBounds
+                    maximumFlickVelocity: activity.height
                     keyNavigationWraps: true
                     enabled: (items.currentAnswer < answerModel.count)
                     opacity: (enabled || items.buttonsBlocked) ? 1.0 : 0.3

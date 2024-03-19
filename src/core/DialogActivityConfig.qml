@@ -218,7 +218,8 @@ Rectangle {
 
             Flickable {
                 id: flick
-                flickDeceleration: 1500
+                maximumFlickVelocity: dialogActivityContent.height
+                boundsBehavior: Flickable.StopAtBounds
                 anchors.margins: 10 * ApplicationInfo.ratio
                 anchors.fill: parent
                 flickableDirection: Flickable.VerticalFlick

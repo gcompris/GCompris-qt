@@ -163,6 +163,8 @@ ActivityBase {
             contentHeight: edit.paintedHeight
             clip: true
             flickableDirection: Flickable.VerticalFlick
+            maximumFlickVelocity: activity.height
+            boundsBehavior: Flickable.StopAtBounds
 
             function ensureVisible(r)
             {

@@ -110,7 +110,12 @@ Image {
         clip: true
         model: menuModel
         keyNavigationWraps: true
+        maximumFlickVelocity: menuScreen.height
+        boundsBehavior: Flickable.StopAtBounds
         property int spacing: 10
+        // Needed to calculate the OpacityMask offset
+        // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
+        property real hiddenBottom: ApplicationInfo.useOpenGL ? contentHeight - height - contentY : 1
 
         ReadyButton {
             id: iAmReady
@@ -215,22 +220,34 @@ Image {
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
 
-        Rectangle {
-            id: menusMask
+
+        Rectangle{
+            id: menuMask
             visible: false
             anchors.fill: menuGrid
+            // Dynamic position of the gradient used for OpacityMask
+            // If the hidden bottom part of the grid is > to the maximum height of the gradient,
+            // we use the maximum height.
+            // Else we set the gradient start position proportionnally to the hidden bottom part,
+            // until it disappears.
+            // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
+            property real gradientStartValue:
+                ApplicationInfo.useOpenGL ?
+                (menuGrid.hiddenBottom > menuGrid.height * 0.08 ?
+                    0.92 : 1 - (menuGrid.hiddenBottom / menuGrid.height)) :
+                    1
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                GradientStop { position: 0.92; color: "#FFFFFFFF" }
-                GradientStop { position: 0.96; color: "#00FFFFFF" }
+                GradientStop { position: menuMask.gradientStartValue; color: "#FFFFFFFF" }
+                GradientStop { position: menuMask.gradientStartValue + 0.04; color:"#00FFFFFF"}
             }
         }
-        
+
         layer.enabled: ApplicationInfo.useOpenGL
         layer.effect: OpacityMask {
             id: activitiesOpacity
             source: menuGrid
-            maskSource: menusMask
+            maskSource: menuMask
             anchors.fill: menuGrid
         }
     } // grid view close

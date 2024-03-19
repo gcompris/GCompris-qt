@@ -92,6 +92,7 @@ Item {
         contentWidth: staffColumn.width
         contentHeight: staffColumn.height + distanceBetweenStaff
         anchors.fill: parent
+        maximumFlickVelocity: activity.height
         clip: true
         Behavior on contentY {
             NumberAnimation { duration: 250 }

@@ -164,7 +164,8 @@ Rectangle {
 
             Flickable {
                 id: instructionFlick
-                flickDeceleration: 1500
+                maximumFlickVelocity: gcdialog.height
+                boundsBehavior: Flickable.StopAtBounds
                 anchors.fill: parent
                 anchors.margins: gcdialog.baseMargins
                 flickableDirection: Flickable.VerticalFlick

@@ -82,6 +82,8 @@ Rectangle {
         contentWidth: parent.width
         contentHeight: (grid1.height + grid2.height) * 1.1
         flickableDirection: Flickable.VerticalFlick
+        maximumFlickVelocity: brailleMap.height
+        boundsBehavior: Flickable.StopAtBounds
         clip: true
 
         Flow {

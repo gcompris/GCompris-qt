@@ -249,7 +249,8 @@ Rectangle {
         GridView {
             id: creationsList
             model: fileNames
-            flickDeceleration: 1500
+            maximumFlickVelocity: creationHandler.height
+            boundsBehavior: Flickable.StopAtBounds
             width: parent.width - 10
             height: parent.height - 10
             interactive: true

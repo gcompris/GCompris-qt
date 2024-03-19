@@ -106,6 +106,8 @@ Item {
         clip: true
         model: menuModel
         keyNavigationWraps: true
+        maximumFlickVelocity: activity.height
+        boundsBehavior: Flickable.StopAtBounds
         // Needed to calculate the OpacityMask offset
         // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
         property real hiddenBottom: ApplicationInfo.useOpenGL ? contentHeight - height - contentY : 1
