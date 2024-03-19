@@ -145,6 +145,8 @@ Rectangle {
         spacing: 5 * ApplicationInfo.ratio
         delegate: listElement
         interactive: true
+        maximumFlickVelocity: activity.height
+        boundsBehavior: Flickable.StopAtBounds
         // setting huge cacheBuffer is needed to make sure hidden children are not discarded...
         cacheBuffer: 100000
         clip: true

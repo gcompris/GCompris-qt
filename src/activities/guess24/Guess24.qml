@@ -139,6 +139,7 @@ ActivityBase {
                 cellHeight: (parent.height - background.baseMargins) * 0.5
                 highlightFollowsCurrentItem: false
                 boundsBehavior: Flickable.StopAtBounds
+                maximumFlickVelocity: activity.height
                 model: cardsModel
                 delegate: Item {   // Display a card with a number inside
                     id: cardNumber

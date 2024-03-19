@@ -104,12 +104,13 @@ Rectangle {
 
             Flickable {
                 id: flick
-                flickDeceleration: 1500
                 anchors.margins: 10 * ApplicationInfo.ratio
                 anchors.fill: parent
                 contentWidth: textContent.contentWidth
                 contentHeight: iconImage.height + button0.height + textContent.contentHeight + 70 * ApplicationInfo.ratio
                 flickableDirection: Flickable.VerticalFlick
+                maximumFlickVelocity: dialogBackground.height
+                boundsBehavior: Flickable.StopAtBounds
                 clip: true
 
                 GCButton {

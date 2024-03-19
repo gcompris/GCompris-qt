@@ -100,7 +100,8 @@ Rectangle {
 
             Flickable {
                 id: flickableList
-                flickDeceleration: 1500
+                maximumFlickVelocity: dialogBackground.height
+                boundsBehavior: Flickable.StopAtBounds
                 anchors.fill: parent
                 anchors.margins: 10 * ApplicationInfo.ratio
                 contentWidth: width

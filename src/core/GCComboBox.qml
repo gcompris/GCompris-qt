@@ -284,6 +284,8 @@ Item {
             height: popup.height - headerDescription.height - 20 * ApplicationInfo.ratio
             currentIndex: gccombobox.currentIndex
             flickableDirection: Flickable.VerticalFlick
+            maximumFlickVelocity: gccombobox.height
+            boundsBehavior: Flickable.StopAtBounds
             clip: true
             cellWidth: width / numberOfColumns
             cellHeight: elementHeight

@@ -83,6 +83,8 @@ Rectangle {
             height: parent.height
             clip: true
             flickableDirection: Flickable.VerticalFlick 
+            maximumFlickVelocity: activity.height
+            boundsBehavior: Flickable.StopAtBounds
             contentWidth: originListView.width + 2*0.01 * placeholderDropArea.width
             contentHeight: originListView.height + 2*0.01 * placeholderDropArea.width
 

@@ -87,6 +87,8 @@ Rectangle {
                     anchors.margins: 10 * ApplicationInfo.ratio
                     contentHeight: musicGrid.height + musicInfo.height + margin30
                     flickableDirection: Flickable.VerticalFlick
+                    maximumFlickVelocity: dialogBackground.height
+                    boundsBehavior: Flickable.StopAtBounds
                     clip: true
 
                     Flow {

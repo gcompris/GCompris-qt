@@ -234,6 +234,8 @@ ActivityBase {
                 model: items.colors
                 cellWidth: 60 * ApplicationInfo.ratio
                 cellHeight: cellWidth
+                maximumFlickVelocity: activity.height
+                boundsBehavior: Flickable.StopAtBounds
 
                 NumberAnimation {
                     id: moveColorSelectorAnim

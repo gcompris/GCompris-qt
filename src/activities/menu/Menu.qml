@@ -472,6 +472,8 @@ ActivityBase {
             clip: true
             model: ActivityInfoTree.menuTree
             keyNavigationWraps: true
+            maximumFlickVelocity: activity.height
+            boundsBehavior: Flickable.StopAtBounds
             property int spacing: 10
             // Needed to calculate the OpacityMask offset
             // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
