@@ -114,9 +114,17 @@ Item {
     /**
      * type:int
      *
+     * Set this to more than 1 to reduce buttons width on horizontally-constrained activities.
+     * Don't set it too high (max. 12).
+     */
+    property int widthRatio: 4
+
+    /**
+     * type:int
+     *
      * Stores the width of each key container.
      */
-    property int columnWidth: 80 * ApplicationInfo.ratio
+    property int columnWidth: Math.min(width / widthRatio, 80 * ApplicationInfo.ratio)
 
     /**
      * type:bool
@@ -146,21 +154,19 @@ Item {
                 border.width: 2
 
                 GCText {
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    text: numbers[index]
+                    anchors.fill: parent
+                    anchors.margins: 5 * ApplicationInfo.ratio
                     fontSize: 28
+                    fontSizeMode: Text.Fit
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                     font.bold: true
+                    text: numbers[index]
                 }
 
                 MouseArea {
-                    // Create a bigger area than the top rectangle to suit fingers
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        bottom: parent.bottom
-                    }
-                    width: parent.width * 2
+                    anchors.fill: parent
+                    width: parent.width
                     enabled: ApplicationSettings.isVirtualKeyboard &&
                              containerPanel.opacity > 0 && containerPanel.enableInput
 
@@ -191,11 +197,14 @@ Item {
 
             GCText {
                 id: decimalPointCharacter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                text: containerPanel.decimalPoint
+                anchors.fill: parent
+                anchors.margins: 5 * ApplicationInfo.ratio
                 fontSize: 28
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 font.bold: true
+                text: containerPanel.decimalPoint
             }
 
             MouseArea {
@@ -237,19 +246,17 @@ Item {
                 border.width:2
 
                 GCText {
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    text: numbers[index] + 5
+                    anchors.fill: parent
+                    anchors.margins: 5 * ApplicationInfo.ratio
                     fontSize: 28
+                    fontSizeMode: Text.Fit
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                     font.bold: true
+                    text: numbers[index] + 5
                 }
                 MouseArea {
-                    // Create a bigger area than the top rectangle to suit fingers
-                    anchors {
-                        right: parent.right
-                        top: parent.top
-                        bottom: parent.bottom
-                    }
+                    anchors.fill: parent
                     width: parent.width * 2
                     enabled: ApplicationSettings.isVirtualKeyboard &&
                              containerPanel.opacity > 0
@@ -279,11 +286,14 @@ Item {
             border.width: 2
 
             GCText {
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                text: "←"
+                anchors.fill: parent
+                anchors.margins: 5 * ApplicationInfo.ratio
                 fontSize: 28
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 font.bold: true
+                text: "←"
             }
 
             MouseArea {
