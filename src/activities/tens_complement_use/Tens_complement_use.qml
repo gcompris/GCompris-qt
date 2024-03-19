@@ -144,7 +144,7 @@ ActivityBase {
                 horizontalCenter: score.horizontalCenter
             }
             sourceSize.width: 60 * ApplicationInfo.ratio
-            enabled: !buttonsBlocked
+            enabled: !items.buttonsBlocked
             onClicked: Activity.checkAnswer()
         }
 
