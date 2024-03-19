@@ -78,7 +78,7 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.bottomMargin: bar.height * 0.2
             anchors.horizontalCenter: parent.horizontalCenter
-            width: numPad.visible ? (parent.width - 4 * numPad.columnWidth) : parent.width
+            width: numPad.visible ? (parent.width - 2 * numPad.columnWidth) : parent.width
 
             ListModel {
                 id: equations
@@ -129,6 +129,7 @@ ActivityBase {
         NumPad {
             id: numPad
             maxDigit: 2
+            widthRatio: 12
             visible: activity.mode === "input" && ApplicationSettings.isVirtualKeyboard
             enableInput: (items.previousSelectedCard && items.previousSelectedCard.type === "inputCard") ? true : false
             onAnswerChanged: {
