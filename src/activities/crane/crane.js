@@ -304,15 +304,14 @@ function makeMove(item, distance, startPoint, add, animationProperty) {
         items.pieceIsMoving = true
         //setup the animation
         item.distance = distance
-        item.indexChange = add
         item.startPoint = startPoint
         item.animationProperty = animationProperty
 
-        //start the animation
-        item.anim.start()
-
         //update the selected item
         items.selected += add;
+
+        //start the animation
+        item.anim.start()
     }
 }
 
