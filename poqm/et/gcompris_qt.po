@@ -9769,7 +9769,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tühik: nähtamatute ja nähtavate režiimide vaheldumisi aktiveerimine"
 
-#: activities/frieze/Frieze.qml:289
+#: activities/frieze/Frieze.qml:290
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -17007,7 +17007,7 @@ msgstr ""
 "Braille'i kiri sai ülemaailmse tunnustuse. Louis Braille tõestas, et kui sul "
 "on kindel tahe, võid teha uskumatuid asju."
 
-#: activities/louis-braille/ReorderList.qml:163
+#: activities/louis-braille/ReorderList.qml:165
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -18707,40 +18707,40 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Taustamuusika"
 
-#: activities/menu/BackgroundMusicList.qml:127
+#: activities/menu/BackgroundMusicList.qml:129
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Taustamuusika võib välja lülitada, kui sa ei taha seda kuulda."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:167
+#: activities/menu/BackgroundMusicList.qml:169
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Praegu mängitakse:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:176
+#: activities/menu/BackgroundMusicList.qml:178
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Pealkiri: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:185
+#: activities/menu/BackgroundMusicList.qml:187
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Esitaja: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:194
+#: activities/menu/BackgroundMusicList.qml:196
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Aasta: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:203
+#: activities/menu/BackgroundMusicList.qml:205
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -18997,12 +18997,12 @@ msgstr ""
 "Sea siia oma lemmiktegevused, valides iga tegevuse juures ülal paremal "
 "päikese."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:783
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Konkreetse tegevuse otsing"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tegevuse seadistused"
@@ -26544,17 +26544,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Valikud"
 
-#: core/DialogChooseLevel.qml:343
+#: core/DialogChooseLevel.qml:344
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Loobu"
 
-#: core/DialogChooseLevel.qml:351
+#: core/DialogChooseLevel.qml:352
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Salvesta"
 
-#: core/DialogChooseLevel.qml:365
+#: core/DialogChooseLevel.qml:366
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Salvesta ja käivita"
@@ -26748,12 +26748,12 @@ msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Salvesta"
 
-#: core/GCCreationHandler.qml:324
+#: core/GCCreationHandler.qml:325
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Laadi"
 
-#: core/GCCreationHandler.qml:334
+#: core/GCCreationHandler.qml:335
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Kustuta"

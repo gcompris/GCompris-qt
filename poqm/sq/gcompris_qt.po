@@ -9776,7 +9776,7 @@ msgstr ""
 "Tasti Tab: kaloni nga mënyra përpunim bordurash në parje modeli, ose "
 "anasjelltas"
 
-#: activities/frieze/Frieze.qml:289
+#: activities/frieze/Frieze.qml:290
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jam Gati"
@@ -16992,7 +16992,7 @@ msgstr ""
 "Braji u pranua si standard në mbarë botën. Lui Brajit provoi se nëse keni "
 "një nxitje, mund të bëni gjëra të pabesueshme."
 
-#: activities/louis-braille/ReorderList.qml:163
+#: activities/louis-braille/ReorderList.qml:165
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -18729,40 +18729,40 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Muzikë në sfond"
 
-#: activities/menu/BackgroundMusicList.qml:127
+#: activities/menu/BackgroundMusicList.qml:129
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Nëse s’doni të luhet muzikë në sfond, çaktivizojeni."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:167
+#: activities/menu/BackgroundMusicList.qml:169
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "Tani Po Luhet:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:176
+#: activities/menu/BackgroundMusicList.qml:178
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Titull: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:185
+#: activities/menu/BackgroundMusicList.qml:187
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artist: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:194
+#: activities/menu/BackgroundMusicList.qml:196
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Vit: %1$"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:203
+#: activities/menu/BackgroundMusicList.qml:205
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -19013,12 +19013,12 @@ msgstr ""
 "Vendosni këtu veprimtaritë tuaja të parapëlqyera në, duke klikuar mbi "
 "diellin, djathtas sipër te ajo veprimtari."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:783
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Kërkoni veprimtari të caktuara"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Rregullime Veprimtarie"
@@ -26683,17 +26683,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Mundësi"
 
-#: core/DialogChooseLevel.qml:343
+#: core/DialogChooseLevel.qml:344
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Anulojeni"
 
-#: core/DialogChooseLevel.qml:351
+#: core/DialogChooseLevel.qml:352
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Ruaje"
 
-#: core/DialogChooseLevel.qml:365
+#: core/DialogChooseLevel.qml:366
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Ruaje dhe nise"
@@ -26887,12 +26887,12 @@ msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Ruaje"
 
-#: core/GCCreationHandler.qml:324
+#: core/GCCreationHandler.qml:325
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Ngarkoje"
 
-#: core/GCCreationHandler.qml:334
+#: core/GCCreationHandler.qml:335
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Fshije"

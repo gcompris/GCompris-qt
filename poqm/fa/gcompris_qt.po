@@ -8995,7 +8995,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 
-#: activities/frieze/Frieze.qml:289
+#: activities/frieze/Frieze.qml:290
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -15990,7 +15990,7 @@ msgid ""
 "you have motivation you can do incredible things."
 msgstr ""
 
-#: activities/louis-braille/ReorderList.qml:163
+#: activities/louis-braille/ReorderList.qml:165
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -17603,40 +17603,40 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "موسیقی پس زمینه"
 
-#: activities/menu/BackgroundMusicList.qml:127
+#: activities/menu/BackgroundMusicList.qml:129
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "موسیقی پس زمینه را در صورتی که نمیخواهی پخش شوند، غیرفعال کن."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:167
+#: activities/menu/BackgroundMusicList.qml:169
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr ""
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:176
+#: activities/menu/BackgroundMusicList.qml:178
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "عنوان: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:185
+#: activities/menu/BackgroundMusicList.qml:187
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "هنرمند: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:194
+#: activities/menu/BackgroundMusicList.qml:196
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "سال: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:203
+#: activities/menu/BackgroundMusicList.qml:205
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -17891,12 +17891,12 @@ msgstr ""
 "با کلیک بر روی خورشید در گوشه سمت راست فعالیت، فعالیت های مورد علاقه خود را "
 "در اینجا قرار بده."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:783
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "جست و جوی فعالیت های به خصوص"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "تنظیمات فعالیت"
@@ -24825,17 +24825,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "تنظیمات"
 
-#: core/DialogChooseLevel.qml:343
+#: core/DialogChooseLevel.qml:344
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "لغو"
 
-#: core/DialogChooseLevel.qml:351
+#: core/DialogChooseLevel.qml:352
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "ذخیره"
 
-#: core/DialogChooseLevel.qml:365
+#: core/DialogChooseLevel.qml:366
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "ذخیره و شروع"
@@ -25030,12 +25030,12 @@ msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "ذخیره"
 
-#: core/GCCreationHandler.qml:324
+#: core/GCCreationHandler.qml:325
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "بارگیری"
 
-#: core/GCCreationHandler.qml:334
+#: core/GCCreationHandler.qml:335
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "حذف"

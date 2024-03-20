@@ -9859,7 +9859,7 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
 "Tab: alterna tra la modifica del fregio e la visualizzazione del modello"
 
-#: activities/frieze/Frieze.qml:289
+#: activities/frieze/Frieze.qml:290
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Sono pronto"
@@ -17091,7 +17091,7 @@ msgstr ""
 "Il braille è stato accettato come un standard a livello mondiale. Louis "
 "Braille provò che la motivazione permette di fare cose incredibili."
 
-#: activities/louis-braille/ReorderList.qml:163
+#: activities/louis-braille/ReorderList.qml:165
 msgctxt "ReorderList|"
 msgid ""
 "Arrange the events in the order in which they happened. Select the line to "
@@ -18822,40 +18822,40 @@ msgctxt "BackgroundMusicList|"
 msgid "Background music"
 msgstr "Musica di sottofondo"
 
-#: activities/menu/BackgroundMusicList.qml:127
+#: activities/menu/BackgroundMusicList.qml:129
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
 msgstr "Disabilita la musica di sottofondo se non vuoi riprodurli."
 
 #. Current background music playing
-#: activities/menu/BackgroundMusicList.qml:167
+#: activities/menu/BackgroundMusicList.qml:169
 msgctxt "BackgroundMusicList|"
 msgid "Now Playing:"
 msgstr "In riproduzione:"
 
 #. Title of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:176
+#: activities/menu/BackgroundMusicList.qml:178
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Title: %1"
 msgstr "Titolo: %1"
 
 #. Artist of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:185
+#: activities/menu/BackgroundMusicList.qml:187
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Artist: %1"
 msgstr "Artista: %1"
 
 #. Year of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:194
+#: activities/menu/BackgroundMusicList.qml:196
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Year: %1"
 msgstr "Anno: %1"
 
 #. Copyright of the current background music playing
-#: activities/menu/BackgroundMusicList.qml:203
+#: activities/menu/BackgroundMusicList.qml:205
 #, qt-format
 msgctxt "BackgroundMusicList|"
 msgid "Copyright: %1"
@@ -19106,12 +19106,12 @@ msgstr ""
 "Metti qui le tue attività preferite facendo clic sul sole in alto a destra "
 "dell'attività."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:783
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cerca specifiche attività"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Impostazioni delle attività"
@@ -26783,17 +26783,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Opzioni"
 
-#: core/DialogChooseLevel.qml:343
+#: core/DialogChooseLevel.qml:344
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Annulla"
 
-#: core/DialogChooseLevel.qml:351
+#: core/DialogChooseLevel.qml:352
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Salva"
 
-#: core/DialogChooseLevel.qml:365
+#: core/DialogChooseLevel.qml:366
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Salva e inizia"
@@ -26989,12 +26989,12 @@ msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Salva"
 
-#: core/GCCreationHandler.qml:324
+#: core/GCCreationHandler.qml:325
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Carica"
 
-#: core/GCCreationHandler.qml:334
+#: core/GCCreationHandler.qml:335
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Elimina"

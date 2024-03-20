@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-16 02:01+0000\n"
-"PO-Revision-Date: 2024-01-17 21:33+0100\n"
+"PO-Revision-Date: 2024-03-19 07:25+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -1254,17 +1254,15 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Create pairs of numbers equal to ten. Select a number, then select "
-#| "another number of the same operation to swap their position."
+#, kde-format
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
-"Kreu parojn de nombroj egalaj al dek. Elektu nombron, tiam elektu alian "
-"numeron de la sama operacio por interŝanĝi ilian pozicion."
+"Kreu parojn de nombroj egalaj al dek. Elektu numerron, tiam elektu alian "
+"numeron de la sama operacio por interŝanĝi ilian pozicion. Sekve, elektu la "
+"rezultkeston por tajpi la rezulton."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
