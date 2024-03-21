@@ -12,9 +12,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-30 21:49-0300\n"
+"PO-Revision-Date: 2024-03-20 19:39-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
-"Language-Team: Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5595,7 +5595,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "Enter ou Return: confere suas respostas"
+msgstr "Enter ou Return: conferir suas respostas"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -15974,12 +15974,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Espaço ou Enter: selecionar um item da lista"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "Enter: confere sua resposta quando o botão OK estiver visível"
+msgstr "Enter: conferir sua resposta quando o botão OK estiver visível"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -22618,11 +22615,6 @@ msgstr ""
 "de letras do alfabeto latino."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -25710,38 +25702,29 @@ msgstr "Valor máximo: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Use o complemento de dez"
+msgstr "Calcule com o complemento de dez"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Troque os números para criar pares cuja soma seja igual à 10."
+msgstr ""
+"Troque os números para criar pares cuja soma seja igual a 10 e digite a "
+"resposta da soma final."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Aprender a usar complementos de dez para otimizar a ordem de números em uma "
-"operação."
+"operação e calcular o resultado."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25752,15 +25735,6 @@ msgstr "Números de 1 a 30 e adições."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25772,18 +25746,16 @@ msgid ""
 msgstr ""
 "Crie pares de números cuja soma seja igual a dez dentro de cada parênteses. "
 "Selecione um número e, depois, selecione outro número da mesma operação para "
-"trocar sua posição. Quando todas as linhas estiverem concluídas, pressione o "
-"botão OK para validar as respostas. Caso alguma resposta esteja incorreta, "
-"um ícone de cruz aparecerá na(s) linha(s) correspondente(s). Corrija o(s) "
-"erro(s) e pressione o botão OK novamente."
+"trocar sua posição. Em cada linha, digite a soma final na última caixa. "
+"Quando todas as linhas estiverem concluídas, pressione o botão OK para "
+"validar as respostas. Caso alguma resposta esteja incorreta, um ícone de "
+"cruz aparecerá na(s) linha(s) correspondente(s). Corrija o(s) erro(s) e "
+"pressione o botão OK novamente."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 pares a partir de 4 números."
+msgstr "1 par a partir de 3 números."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

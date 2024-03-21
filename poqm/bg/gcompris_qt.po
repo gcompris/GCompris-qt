@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-06 10:20+0100\n"
+"PO-Revision-Date: 2024-03-20 10:07+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.02.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -25500,38 +25500,29 @@ msgstr "Максимална стойност: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Използвай допълнение от десет"
+msgstr "Изчисляване с допълнение от десет"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Размени числата, така че да се образуват двойки, равни на десет."
+msgstr ""
+"Размени числата, така че да се образуват двойки, равни на десет и въведи "
+"крайната сума в полето."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Научаване на допълнението на десет, за да се оптимизират реда на числата в "
-"дадена операция."
+"дадена операция и да се изчисли резултата."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25542,15 +25533,6 @@ msgstr "Числа от 1 до 30 и допълнения."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25560,20 +25542,17 @@ msgid ""
 "are incorrect, a cross icon will appear on the corresponding lines. Correct "
 "the errors, then press the OK button again."
 msgstr ""
-"Създай двойки числа, равни на десет във всяка скоби. Избери число, след "
-"което избери друг номер от една и съща операция, за да смените позицията си. "
-"Когато всички линии са завършени, натисни бутона OK, за да потвърдиш "
-"отговорите. Ако някои отговори са неправилни , иконка с две кръстосани линии "
-"ще се появи на съответните линии. Коригирайте грешките, след което отново "
-"натисни бутона OK."
+"Създай двойки числа, равни на десет във всяка скоба. Избери число, след "
+"което избери друг номер от една и съща операция, за да смените позицията им. "
+"На всеки ред въведете крайната сума в последното поле. Когато всички редове "
+"са завършени, натисни бутона OK, за да потвърдиш отговорите. Ако някои "
+"отговори са неправилни , иконка с две кръстосани линии ще се появи на "
+"съответните редове. Коригирай грешките, след което отново натисни бутона OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 двойки да се направят от 4 числа."
+msgstr "1 двойка да се направи от 3 числа."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
