@@ -25,9 +25,7 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
 
     m_format.setSampleRate(22050);
     m_format.setChannelCount(1);
-    m_format.setSampleFormat(QAudioFormat::Int32);
-    //? m_format.setCodec("audio/pcm");
-    //? m_format.setByteOrder(QAudioFormat::LittleEndian);
+    m_format.setSampleFormat(QAudioFormat::Int16);
 
     QAudioDevice defaultDevice(QMediaDevices::defaultAudioOutput());
     if (!defaultDevice.isFormatSupported(m_format)) {
