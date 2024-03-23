@@ -40,7 +40,6 @@ android {
      *******************************************************/
 
     compileSdkVersion androidCompileSdkVersion
-    buildToolsVersion "30.0.2"
     ndkVersion androidNdkVersion
 
     // Extract native libraries from the APK

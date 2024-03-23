@@ -84,7 +84,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       SOURCE_DIR ${_box2d_source_dir}
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
-      INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
+      INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_library_dir}/qmldir ${_box2d_install_dir}
       )
 
     add_library(qml-box2d SHARED IMPORTED)
