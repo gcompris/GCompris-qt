@@ -292,18 +292,10 @@ int main(int argc, char *argv[])
     ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
 
     if (renderer == QLatin1String("software")) {
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
         QQuickWindow::setGraphicsApi(QSGRendererInterface::Software);
-#else
-        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-#endif
     }
     else if (renderer == QLatin1String("opengl")) {
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
         QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
-#else
-        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
-#endif
     }
 
     // Start on specific activity
@@ -328,7 +320,7 @@ int main(int argc, char *argv[])
     engine.addImportPath(QStringLiteral("%1/../lib/qml")
                              .arg(QCoreApplication::applicationDirPath()));
 
-#if __ANDROID__ && QT_VERSION >= QT_VERSION_CHECK(5, 14, 0)
+#if __ANDROID__
     // Find box2d
     engine.addImportPath(QStringLiteral("assets:/"));
 #endif

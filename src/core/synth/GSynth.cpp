@@ -14,12 +14,8 @@
 
 #include <QDebug>
 #include <QQmlEngine>
-#if QT_VERSION > QT_VERSION_CHECK(6, 0, 0)
 #include <QMediaDevices>
 #include <QAudioDevice>
-#else
-#include <QAudioDeviceInfo>
-#endif
 
 GSynth *GSynth::m_instance = nullptr;
 
@@ -29,16 +25,9 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
 
     m_format.setSampleRate(22050);
     m_format.setChannelCount(1);
-#if QT_VERSION > QT_VERSION_CHECK(6, 2, 0)
     m_format.setSampleFormat(QAudioFormat::Int32);
     //? m_format.setCodec("audio/pcm");
     //? m_format.setByteOrder(QAudioFormat::LittleEndian);
-#else
-    m_format.setSampleSize(16);
-    m_format.setCodec("audio/pcm");
-    m_format.setByteOrder(QAudioFormat::LittleEndian);
-    m_format.setSampleType(QAudioFormat::SignedInt);
-#endif
 
     QAudioDevice defaultDevice(QMediaDevices::defaultAudioOutput());
     if (!defaultDevice.isFormatSupported(m_format)) {

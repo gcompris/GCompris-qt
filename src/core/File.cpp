@@ -65,11 +65,7 @@ QString File::read(const QString &name)
         QTextStream t(&file);
         /* Force utf-8 : for some languages, it seems to be loaded in other
           encoding even if the file is in utf-8 */
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
         t.setEncoding(QStringConverter::Utf8);
-#else
-        t.setCodec("UTF-8");
-#endif
         do {
             line = t.readLine();
             fileContent += line;
@@ -102,11 +98,7 @@ bool File::write(const QString &data, const QString &name)
 
     QTextStream out(&file);
     /* Force utf-8 : needed at least for Windows */
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     out.setEncoding(QStringConverter::Utf8);
-#else
-    out.setCodec("UTF-8");
-#endif
     out << data;
 
     file.close();
@@ -132,11 +124,7 @@ bool File::append(const QString &data, const QString &name)
 
     QTextStream out(&file);
     /* Force utf-8 : needed at least for Windows */
-#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
     out.setEncoding(QStringConverter::Utf8);
-#else
-    out.setCodec("UTF-8");
-#endif
 
     out << data;
 
