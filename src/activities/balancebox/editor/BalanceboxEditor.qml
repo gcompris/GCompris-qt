@@ -50,7 +50,7 @@ Item {
 
     }
 
-    Keys.onEscapePressed: event.accepted = handleBackEvent();
+    Keys.onEscapePressed: (event) => event.accepted = handleBackEvent();
 
     Keys.onReleased: (event) => {
         if (event.key === Qt.Key_Back) {

@@ -296,7 +296,7 @@ ActivityBase {
                     }
                 }
 
-                onBeginContact: (other) => {
+                onBeginContact: (item, other) => {
                     if (other.categories !== items.wallType)
                         Activity.addBallContact(other);
                     else {
@@ -305,7 +305,7 @@ ActivityBase {
                         //items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav");
                     }
                 }
-                onEndContact: (other) => {
+                onEndContact: (item, other) => {
                     if (other.categories !== items.wallType)
                         Activity.removeBallContact(other);
                 }
