@@ -13,7 +13,6 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
 import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 Item {

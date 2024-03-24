@@ -15,7 +15,6 @@ import QtQuick 2.12
 import GCompris 1.0
 
 import "../../core"
-import "piano_composition.js" as Activity
 
 Rectangle {
     id: dialogBackground
