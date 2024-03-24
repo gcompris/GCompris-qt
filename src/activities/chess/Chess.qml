@@ -366,13 +366,13 @@ ActivityBase {
                 keyNavigationWraps: true
                 model: 64
                 layoutDirection: Qt.RightToLeft
-                delegate: square
+                delegate: squareBoard
                 rotation: 180
                 z: 10
                 anchors.centerIn: boardBg
 
                 Component {
-                    id: square
+                    id: squareBoard
                     Image {
                         source: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
                         Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
@@ -455,15 +455,15 @@ ActivityBase {
         Repeater {
             id: squares
             model: items.positions
-            delegate: square
+            delegate: squareArea
             parent: chessboard
 
             DropArea {
-                id: square
+                id: squareArea
                 x: items.cellSize * (7 - pos % 8) + spacing / 2
                 y: items.cellSize * Math.floor(pos / 8) + spacing / 2
                 width: items.cellSize - spacing
-                height: square.width
+                height: squareArea.width
                 z: 1
                 keys: acceptMove ? ['acceptMe'] : ['sorryNo']
                 property bool acceptMove : false
