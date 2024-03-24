@@ -259,12 +259,12 @@ ActivityBase {
                 keyNavigationWraps: true
                 model: items.numberOfCases*items.numberOfCases
                 layoutDirection: Qt.RightToLeft
-                delegate: square
+                delegate: squareBoard
                 rotation: 180
                 z: 10
                 anchors.centerIn: boardBg
                 Component {
-                    id: square
+                    id: squareBoard
                     Image {
                         source: index % 2 + (Math.floor(index / items.numberOfCases) % 2) == 1 ?
                         Activity.url + 'checkers-white.svg' : Activity.url + 'checkers-black.svg';
@@ -289,11 +289,11 @@ ActivityBase {
         Repeater {
             id: squares
             model: items.positions
-            delegate: square
+            delegate: squareArea
             parent: chessboard
 
             DropArea {
-                id: square
+                id: squareArea
                 x: items.cellSize * (9 - pos % items.numberOfCases) + spacing / 2
                 y: items.cellSize * Math.floor(pos / items.numberOfCases) + spacing / 2
                 width: items.cellSize - spacing
