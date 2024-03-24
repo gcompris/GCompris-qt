@@ -16,7 +16,6 @@ import QtGraphicalEffects 1.0
 
 import "../../core"
 import "lang.js" as Activity
-import "spell_it.js" as SpellActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
