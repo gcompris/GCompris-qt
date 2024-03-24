@@ -9,7 +9,6 @@
  */
 import QtQuick 2.12
 
-import "../../core"
 import "../family"
 
 Family {
