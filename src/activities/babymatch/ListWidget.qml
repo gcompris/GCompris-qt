@@ -9,7 +9,6 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
 import "babymatch.js" as Activity
 
 Item {
