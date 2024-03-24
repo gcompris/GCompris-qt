@@ -10,7 +10,6 @@
 */
 import QtQuick 2.12
 
-import "gnumch-equality.js" as Activity
 
 Creature {
     id: monster
