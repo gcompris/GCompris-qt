@@ -9,8 +9,6 @@
  */
 import QtQuick 2.12
 
-import "../../core"
-import "money.js" as Activity
 
 Rectangle {
     id: moneyAreaBody
