@@ -4,11 +4,9 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtQml.Models 2.12
 
 import GCompris 1.0
 import "../../core"
-import "adjacent_numbers.js" as Activity
 
 Rectangle {
     signal tileChanged(string newValue)
