@@ -5,7 +5,6 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "../../core"
 
 Item {
     readonly property string correctAnswerImage: "qrc:/gcompris/src/core/resource/apply.svg"
