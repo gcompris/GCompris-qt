@@ -10,7 +10,6 @@
  */
 import QtQuick 2.12
 import "erase.js" as Activity
-import "../../core"
 import GCompris 1.0
 
 Image {
