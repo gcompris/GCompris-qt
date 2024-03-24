@@ -7,11 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
 
-import "../../core"
 import "../learn_digits/"
-import "../learn_digits/learn_digits.js" as Activity
 
 Learn_digits {
     id: activity
