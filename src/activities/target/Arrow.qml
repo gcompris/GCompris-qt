@@ -11,8 +11,6 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
-import "target.js" as Activity
 
 Repeater {
     id: arrowRepeater
