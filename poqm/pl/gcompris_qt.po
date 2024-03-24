@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-21 09:34+0100\n"
+"PO-Revision-Date: 2024-03-23 11:39+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -15820,9 +15820,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Klawisz spacji lub enter: zaznacza element z listy"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: zatwierdza twoją odpowiedź, gdy widoczny jest przycisk OK"
@@ -22392,11 +22389,6 @@ msgstr ""
 "liter z alfabetu łacińskiego."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -25502,38 +25494,29 @@ msgstr "Wartość największa: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Użyj dopełnienia do dziesięciu"
+msgstr "Obliż z dopełnieniem do dziesięciu"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Zamień liczby, aby utworzyć pary równe dziesięciu."
+msgstr ""
+"Zamień liczby, aby utworzyć pary równe dziesięciu i wpisz w odpowiedzi "
+"końcową sumę."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Naucz się dopełniania do dziesięciu, aby zoptymalizować kolejność liczb w "
-"działaniu."
+"działaniu i oblicz wynik."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25544,15 +25527,6 @@ msgstr "Liczby od 1 do 30 i dodawanie."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25563,19 +25537,16 @@ msgid ""
 "the errors, then press the OK button again."
 msgstr ""
 "Stwórz pary liczb w równe dziecięciu w każdym z nawiasów. Wybierz liczbę, "
-"następnie kolejną do tego samego działania, aby zamienić je miejscami. Gdy "
-"ukończysz wszystkie wiersze, naciśnij przycisk OK, aby sprawdzić odpowiedzi. "
-"Gdy niektóre z odpowiedzi będą niepoprawne, to pojawi się ikona krzyżyka "
-"obok danego wiersza. Popraw te błędy, a następnie naciśnij ponownie przycisk "
-"OK."
+"następnie kolejną do tego samego działania, aby zamienić je miejscami. W "
+"każdym wierszu wpisz ostateczną sumę w ostatnim polu. Gdy ukończysz "
+"wszystkie wiersze, naciśnij przycisk OK, aby sprawdzić odpowiedzi. Gdy "
+"niektóre z odpowiedzi będą niepoprawne, to pojawi się ikona krzyżyka obok "
+"danego wiersza. Popraw te błędy, a następnie naciśnij ponownie przycisk OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 pary do stworzenia z 4 liczb."
+msgstr "1 para do stworzenia z 3 liczb."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
