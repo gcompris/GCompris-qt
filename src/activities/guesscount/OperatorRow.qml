@@ -12,7 +12,6 @@
 
 import QtQuick 2.12
 import "../../core"
-import "guesscount.js" as Activity
 
 Row {
     id: operatorRow
