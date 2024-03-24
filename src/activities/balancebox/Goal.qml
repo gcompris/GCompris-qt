@@ -10,7 +10,6 @@
 import QtQuick 2.12
 import Box2D 2.0
 
-import "../../core"
 import "balancebox.js" as Activity
 
 Item {
