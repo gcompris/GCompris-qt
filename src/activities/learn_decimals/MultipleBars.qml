@@ -10,7 +10,6 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import "../../core"
 import "learn_decimals.js" as Activity
 
 GridView {

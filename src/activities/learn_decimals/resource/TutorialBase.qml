@@ -12,7 +12,6 @@ import QtQuick 2.12
 import GCompris 1.0
 
 import "../../../core"
-import "../"
 import "../learn_decimals.js" as Activity
 
 Image {
