@@ -10,7 +10,6 @@
 import QtQuick 2.12
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 2.12
 
 import "../../core"
 import "solar_system.js" as Activity
