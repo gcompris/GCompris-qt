@@ -12,8 +12,6 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-import "../../core"
-import "family.js" as Activity
 
 Item {
     id: node
