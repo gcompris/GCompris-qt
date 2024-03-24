@@ -6,7 +6,6 @@
  */
 import QtQuick 2.12
 
-import "../../core"
 import "left_right_click.js" as Activity
 
 Item {
