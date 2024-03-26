@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-07 17:36+0300\n"
+"PO-Revision-Date: 2024-03-25 18:50+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -15873,9 +15873,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Прагал ці Ўвод: выбраць аб'ект са спісу"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Увод: праверыць ваш адказ, калі даступная кнопка ОК"
@@ -22314,11 +22311,6 @@ msgstr ""
 "лацінскага алфавіту."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -23055,9 +23047,6 @@ msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr "Цяпер ён хоча пароўну падзяліць між сваімі сябрамі 4 цукеркі."
 
 #: activities/share/resource/1/Data.qml:38
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
@@ -23073,12 +23062,6 @@ msgstr ""
 "каб у іх усіх была аднолькавая колькасць."
 
 #: activities/share/resource/1/Data.qml:58
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
-#| "gives the rest to his friends. Can you help him equally split the 10 "
-#| "remaining pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Paul has only 12 pieces of candy left. He eats 2 pieces of candy and he "
@@ -23089,28 +23072,22 @@ msgstr ""
 "астатнія сваім сябрам. Ці зможаце Вы пароўну падзяліць астатнія 10 цукерак?"
 
 #: activities/share/resource/1/Data.qml:70
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "George wants to share 3 pieces of candy equally between 3 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 6 цукеркамі 2 сваіх сябровак. Ці зможа ён "
-"пароўну падзяліць цукеркі?"
+"Жорык хоча пароўну падзяліць свае 3 цукеркі паміж 3 сваіх сябровак. Ці зможа "
+"ён пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/1/Data.qml:80
-#, fuzzy
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 8 цукеркамі трох сваіх сяброў: аднаго хлопчыка "
-"і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
+"Марыля хоча пароўну падзяліць 6 цукерак паміж 3 сваімі сябрамі: 1 дзяўчынкі "
+"і 2 хлопчыкаў. Ці зможа яна пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/1/Data.qml:90
 msgctxt "Data|"
@@ -23124,14 +23101,13 @@ msgstr ""
 "падзяліць так, каб ува ўсіх была аднолькавая колькасць?"
 
 #: activities/share/resource/1/Data.qml:100
-#, fuzzy
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 8 цукеркамі трох сваіх сяброў: аднаго хлопчыка "
-"і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
+"Паўлюк хоча пароўну падзяліць 12 цукерак паміж трыма сваімі сябрамі: 2 "
+"хлопчыкамі і 1 дзяўчынкай. Ці зможа ён пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/1/Data.qml:110
 msgctxt "Data|"
@@ -23160,19 +23136,15 @@ msgid "Now, Alice wants to give 8 pieces of candy to her friends."
 msgstr "Цяпер, Алеся хоча даць 8 цукерак сваім сябрам."
 
 #: activities/share/resource/1/Data.qml:142
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Michelle has 12 pieces of candy and wants to split them between 4 "
-#| "brothers and 1 sister. Help her share the pieces of candy."
 msgctxt "Data|"
 msgid ""
 "Alice wants to give 10 pieces of candy to her friends, 1 girl and 3 boys, so "
 "that they all have the same amount. The girls already have some pieces of "
 "candy."
 msgstr ""
-"У Маркі 12 цукерак і яна хоча пачаставаць сваіх 4 брацікаў і 1 сястрычку. "
-"Дапамажыце ей падзяліць яе цукеркі."
+"Алеся хоча падзяліцца 12 цукеркамі са сваімі сябрамі: 1 дзяўчынкай і 3 "
+"хлопчыкамі - так, каб ім дасталася аднолькавая колькасць. У дзяўчынак ужо "
+"ёсць некалькі цукерак."
 
 #: activities/share/resource/1/Data.qml:152
 msgctxt "Data|"
@@ -23180,64 +23152,44 @@ msgid "Alice wants to give 16 pieces of candy to her friends."
 msgstr "Алеся хоча даць 16 цукерак сваім сябрам."
 
 #: activities/share/resource/1/Data.qml:162
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Bob wants to give 3 pieces of candy to his girl friends. Can you help him "
-#| "equally split the pieces of candy so that each friend will have the same "
-#| "amount?"
 msgctxt "Data|"
 msgid ""
 "Alice wants to give pieces of candy to 4 friends. Some of them already have "
 "some pieces of candy. Can you help her split 14 pieces of candy so that all "
 "her friends have the same amount?"
 msgstr ""
-"Валодзік хоча пачаставаць 3 цукеркамі сваіх сябровак. Ці зможаце вы "
-"дапамагчы яму падзяліць цукеркі так, каб у кожнага сябра апынулася роўная "
-"колькасць?"
+"Алеся хоча хоча пачаставаць цукеркамі сваіх 4 сяброў. У некаторых з іх ўжо "
+"ёсць некалькі. Ці зможаце вы дапамагчы ёй падзяліць цукеркі так, каб у "
+"кожнага сябра апынулася роўная колькасць?"
 
 #: activities/share/resource/1/Data.qml:174
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and "
-#| "4 girls. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Michael wants to share 5 pieces of candy equally between 5 of his girl "
 "friends. Can you help him?"
 msgstr ""
-"Цімка хоча пачаставаць сваімі 20 цукеркамі сваіх сяброў: аднаго хлопца і "
-"чатыры дзяўчынкі. Ці зможаце Вы яму дапамагчы?"
+"Міша хоча падзяліць свае 5 цукерак пароўну паміж 5 сваімі сяброўкамі. Ці "
+"зможаце Вы яму дапамагчы?"
 
 #: activities/share/resource/1/Data.qml:184
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces "
-#| "of candy. Help her split the pieces of candy between her friends."
 msgctxt "Data|"
 msgid ""
 "Helen has 5 friends: 2 boys and 3 girls. She wants to give them 10 pieces of "
 "candy. Help her split the pieces of candy equally between her friends."
 msgstr ""
-"У Ганці 5 сяброў: два хлопчыкі і тры дзяўчынкі. Яна хоча пачаставаць іх 10 "
+"У Аленкі 5 сяброў: два хлопчыкі і тры дзяўчынкі. Яна хоча пачаставаць іх 10 "
 "цукеркамі. Дапамажыце ёй падзяліць цукеркі паміж яе сябрамі."
 
 #: activities/share/resource/1/Data.qml:194
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Michelle has 12 pieces of candy and wants to split them between 4 "
-#| "brothers and 1 sister. Help her share the pieces of candy."
 msgctxt "Data|"
 msgid ""
 "Michelle wants to share 12 pieces of candy equally between her 4 brothers "
 "and 1 sister, so that they all have the same amount. Her sister already has "
 "some pieces of candy."
 msgstr ""
-"У Маркі 12 цукерак і яна хоча пачаставаць сваіх 4 брацікаў і 1 сястрычку. "
-"Дапамажыце ей падзяліць яе цукеркі."
+"Марыля хоча падзяліцца 12 цукеркамі пароўну між сваімі 4 брацікамі і 1 "
+"сястрычкай так, каб ува ўсіх апынулася аднолькавая колькасць. У ейнай "
+"сястрычкі ўжо ёсць некалькі цукерак."
 
 #: activities/share/resource/1/Data.qml:204
 msgctxt "Data|"
@@ -23249,25 +23201,15 @@ msgstr ""
 "чатыры дзяўчынкі. Ці зможаце Вы яму дапамагчы?"
 
 #: activities/share/resource/1/Data.qml:214
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Thomas wants to share his 20 pieces of candy with his friends: 1 boy and "
-#| "4 girls. Can you help him?"
 msgctxt "Data|"
 msgid ""
 "Paul wants to share 20 pieces of candy equally between 5 of his friends. "
 "They already have one piece of candy each. Can you help him?"
 msgstr ""
-"Цімка хоча пачаставаць сваімі 20 цукеркамі сваіх сяброў: аднаго хлопца і "
-"чатыры дзяўчынкі. Ці зможаце Вы яму дапамагчы?"
+"Паўлюк хоча падзяліць свае 20 цукерак пароўну паміж 5 сваімі сябрамі. У "
+"кожнага з іх ужо ёсць па адной цукерцы. Ці маглі б Вы дапамагчы яму?"
 
 #: activities/share/resource/1/Data.qml:226
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
@@ -23277,12 +23219,6 @@ msgstr ""
 "пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/1/Data.qml:236
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
-#| "friends: 2 girls and 1 boy. How should she split the pieces of candy to "
-#| "her friends?"
 msgctxt "Data|"
 msgid ""
 "For her birthday, Elizabeth has 8 pieces of candy to share with 3 of her "
@@ -23290,14 +23226,11 @@ msgid ""
 "should she split the pieces of candy so that they all have the same amount?"
 msgstr ""
 "У свой дзень народзінаў ў Альжусі ёсць 8 цукерак, якімі яна хоча пачаставаць "
-"сваіх 3 сяброў: 2 дзяўчынак і 1 хлопчыка. Як ёй трэба падзяліць свае цукеркі?"
+"сваіх 3 сяброў: 2 дзяўчынак і 1 хлопчыка. У дзяўчат ужо ёсць некалькі "
+"цукерак. Як ёй трэба падзяліць свае цукеркі, каб ува ўсіх стала аднолькавая "
+"колькасць?"
 
 #: activities/share/resource/1/Data.qml:246
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Jason's father gave him 16 pieces of candy to share with his friends: 2 "
-#| "boys and 2 girls. Help him give the pieces of candy to his friends."
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 16 pieces of candy to share equally with his "
@@ -23308,13 +23241,6 @@ msgstr ""
 "дзяўчынак. Дапамажыце яму падзяліць цукеркі паміж сваімі сябрамі."
 
 #: activities/share/resource/1/Data.qml:256
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "George wants to equally share 14 pieces of candy between 4 of his "
-#| "friends: 2 girls and 2 boys. Can he equally split the pieces of candy? "
-#| "First, place the children in the center, then drag the pieces of candy to "
-#| "each of them."
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy between 4 of his friends: 2 girls "
@@ -23322,18 +23248,17 @@ msgid ""
 "them to have the same amount."
 msgstr ""
 "Жорык хоча пароўну падзяліць 14 цукерак паміж 4 сваімі сябрамі: 2 хлопчыкамі "
-"і 2 дзяўчынкамі. Ці можа ён аднолькава падзяліць цукеркі? Спачатку "
-"размясціце дзяцей у цэнтры, затым перацягніце кожнаму цукеркі."
+"і 2 дзяўчынкамі. У хлопчыкаў у кожнага ўжо ёсць па 1 цукерцы. Ён хоча, каб "
+"ува ўсіх апынулася аднолькавая колькасць."
 
 #: activities/share/resource/1/Data.qml:266
-#, fuzzy
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 25 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 8 цукеркамі трох сваіх сяброў: аднаго хлопчыка "
-"і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
+"Марыля хоча пачаставаць свае 25 цукерак 5 сваіх сяброў: 3 дзяўчынак і 2 "
+"хлопчыкаў. Ці зможа яна пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/2/Data.qml:13
 #, fuzzy
