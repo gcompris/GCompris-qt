@@ -66,6 +66,7 @@ function getCoinCount (pocket) {
 function initLevel() {
     items.answerModel.clear()
     items.pocketModel.clear()
+    items.errorRectangle.resetState()
 
     var data = dataset[items.currentLevel]
     var pocket = Core.shuffle(data.pocket)
@@ -178,6 +179,8 @@ function initLevel() {
     items.itemIndex = -1
     items.selectedArea = items.pocket
 
+    //Enable controls
+    items.buttonsBlocked = false
 }
 
 // Given a price return a random object
@@ -200,12 +203,22 @@ function checkAnswer() {
 
     paid = paid.toFixed(2)
 
+    items.buttonsBlocked = true;
+
     if(!backMode) {
         if(paid === priceTotal.toFixed(2))
             items.bonus.good("flower")
+        else if(items.mode === 2) {
+            items.errorRectangle.startAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        }
     } else {
         if(paid === (dataset[items.currentLevel].paid - priceTotal).toFixed(2))
             items.bonus.good("flower")
+        else if(items.mode === 2) {
+            items.errorRectangle.startAnimation();
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        }
     }
 }
 
@@ -216,8 +229,8 @@ function pay(index) {
 
     // Remove it from the pocket
     items.pocketModel.remove(index, 1)
-
-    checkAnswer()
+    if(items.mode === 1)
+        checkAnswer()
 }
 
 function unpay(index) {
@@ -227,8 +240,8 @@ function unpay(index) {
 
     // Remove it from the Answer
     items.answerModel.remove(index, 1)
-
-    checkAnswer()
+    if(items.mode === 1)
+        checkAnswer()
 }
 
 function nextLevel() {

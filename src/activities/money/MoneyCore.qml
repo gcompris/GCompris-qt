@@ -61,6 +61,9 @@ ActivityBase {
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
+            property int mode: 1 // default is automatic
+            property alias errorRectangle: errorRectangle
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -77,13 +80,21 @@ ActivityBase {
             MoneyArea {
                 id: answerArea
                 onTransaction: Activity.unpay(index)
+
+                ErrorRectangle {
+                    id: errorRectangle
+                    anchors.fill: parent
+                    radius: 5
+                    imageSize: parent.height * 0.5
+                    function releaseControls() { items.buttonsBlocked = false; }
+                }
             }
 
             // === The Store Area ===
             property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             //tempSpace is a workaround to replace instructionsArea.realHeight that is freezing with Qt-5.9.1
-            property int tempSpace: bar.level === 1 ? 140 + columnLayout.spacing : 0
+            property int tempSpace: bar.level === 1 ? 140 + columnLayout.spacing : 50
             property int storeHeight: Math.min(1000, ((parent.height * 0.95 - columnLayout.spacing * 3 - bar.height * 1.5) - tempSpace) / 3)
             property int itemStoreSize: Core.fitItems(columnLayout.width - 20, storeHeight - 20 , nbStoreColumns) - 20
 
@@ -191,7 +202,7 @@ ActivityBase {
             }
         }
 
-        Keys.enabled: !bonus.isPlaying
+        Keys.enabled: !items.buttonsBlocked
 
         Keys.onPressed: {
             if(event.key === Qt.Key_Tab) {
@@ -246,6 +257,11 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                }
+            }
             onClose: {
                 home()
             }
@@ -273,6 +289,22 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+
+        BarButton {
+            id: okButton
+            enabled: items.mode === 2 && !items.buttonsBlocked
+            visible: items.mode === 2
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 45 * ApplicationInfo.ratio
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            width: (background.height - bar.height * 1.2) * 0.15
+            sourceSize.width: width
+            onClicked: Activity.checkAnswer()
         }
 
         Bonus {
