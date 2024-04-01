@@ -10,20 +10,22 @@
 
 #include "ApplicationSettings.h"
 #include "ApplicationInfo.h"
-#include <QAndroidJniObject>
+#include <QJniObject>
+#include <QCoreApplication>
 #include <QDebug>
-#include <QtAndroid>
+
+#include <QtCore/private/qandroidextras_p.h>
 
 bool ApplicationInfo::requestAudioFocus() const
 {
     qDebug() << "requestAudioFocus";
-    return QAndroidJniObject::callStaticMethod<jboolean>("net/gcompris/GComprisActivity",
+    return QJniObject::callStaticMethod<jboolean>("net/gcompris/GComprisActivity",
                                                          "requestAudioFocus");
 }
 
 void ApplicationInfo::abandonAudioFocus() const
 {
-    QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
+    QJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
                                               "abandonAudioFocus");
 }
 
@@ -38,20 +40,20 @@ jint JNICALL JNI_OnLoad(JavaVM *vm, void *)
 
 void ApplicationInfo::setRequestedOrientation(int orientation)
 {
-    QAndroidJniObject activity = QtAndroid::androidActivity();
+    QJniObject activity = QNativeInterface::QAndroidApplication::context();
     activity.callMethod<void>("setRequestedOrientation", "(I)V", orientation);
 }
 
 int ApplicationInfo::getRequestedOrientation()
 {
-    QAndroidJniObject activity = QtAndroid::androidActivity();
+    QJniObject activity = QNativeInterface::QAndroidApplication::context();
     jint orientation = activity.callMethod<jint>("getRequestedOrientation");
     return orientation;
 }
 
 void ApplicationInfo::setKeepScreenOn(bool value)
 {
-    QAndroidJniObject activity = QtAndroid::androidActivity();
+    QJniObject activity = QNativeInterface::QAndroidApplication::context();
     activity.callMethod<void>("setKeepScreenOn", "(Z)V", value);
 }
 
@@ -67,12 +69,13 @@ int ApplicationInfo::localeCompare(const QString &a, const QString &b,
     // which is not capable of doing locale aware comparison.
     // cf. https://bugreports.qt.io/browse/QTBUG-43637
     // Therefore use native Collation via jni:
-    jint res = QtAndroid::androidActivity().callMethod<jint>(
+    QJniObject activity = QNativeInterface::QAndroidApplication::context();
+    jint res = activity.callMethod<jint>(
         "localeCompare",
         "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I",
-        QAndroidJniObject::fromString(a).object<jstring>(),
-        QAndroidJniObject::fromString(b).object<jstring>(),
-        QAndroidJniObject::fromString(_locale).object<jstring>());
+        QJniObject::fromString(a).object<jstring>(),
+        QJniObject::fromString(b).object<jstring>(),
+        QJniObject::fromString(_locale).object<jstring>());
     return res;
 }
 
@@ -83,12 +86,12 @@ bool ApplicationInfo::checkPermissions() const
         { QString("android.permission.READ_EXTERNAL_STORAGE"),
           QString("android.permission.WRITE_EXTERNAL_STORAGE") });
     /* clang-format off */
-    if ((QtAndroid::checkPermission(permissionsRequest[0]) == QtAndroid::PermissionResult::Denied) ||
-        (QtAndroid::checkPermission(permissionsRequest[1])) == QtAndroid::PermissionResult::Denied) {
+    if ((QtAndroidPrivate::checkPermission(permissionsRequest[0]).result() == QtAndroidPrivate::Denied) ||
+        (QtAndroidPrivate::checkPermission(permissionsRequest[1])).result() == QtAndroidPrivate::Denied) {
         /* clang-format on */
-        auto permissionResults = QtAndroid::requestPermissionsSync(permissionsRequest);
         for (const QString &permission: permissionsRequest) {
-            if (permissionResults[permission] == QtAndroid::PermissionResult::Denied) {
+            auto permissionResult = QtAndroidPrivate::requestPermission(permission).result();
+            if (permissionResult == QtAndroidPrivate::Denied) {
                 qDebug() << "Permission denied for" << permission;
                 return false;
             }

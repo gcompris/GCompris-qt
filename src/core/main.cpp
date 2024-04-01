@@ -388,12 +388,16 @@ int main(int argc, char *argv[])
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
 
+#if __ANDROID__
+    window->showMaximized();
+#else
     if (isFullscreen) {
         window->showFullScreen();
     }
     else {
         window->show();
     }
-
+#endif
+    
     return app.exec();
 }

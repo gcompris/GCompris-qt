@@ -11,11 +11,12 @@
 
 package net.gcompris;
 
-import org.qtproject.qt5.android.bindings.QtApplication;
-import org.qtproject.qt5.android.bindings.QtActivity;
+import org.qtproject.qt.android.bindings.QtApplication;
+import org.qtproject.qt.android.bindings.QtActivity;
 import android.media.AudioManager;
 import android.util.Log;
 import android.content.Context;
+import android.view.View;
 import android.view.WindowManager;
 import java.text.Collator;
 import java.util.Locale;
@@ -30,6 +31,40 @@ public class GComprisActivity extends QtActivity
     public GComprisActivity()
     {
         m_instance = this;
+    }
+
+    /*
+     * Force the navigation bar invisible with space used by GCompris.
+     * And the status bar invisible but space not used by GCompris (expected as
+     * we don't want texts displayed on the camera).
+     */
+    private void forceFullscreen() {
+        this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
+        int systemUiVisibilityFlags = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+            | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+            | View.SYSTEM_UI_FLAG_FULLSCREEN
+            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+            | View.INVISIBLE;
+        this.getWindow().getAttributes().layoutInDisplayCutoutMode = WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_NEVER;
+        this.getWindow().getDecorView().setSystemUiVisibility(systemUiVisibilityFlags);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        forceFullscreen();
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus)
+    {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            forceFullscreen();
+        }
     }
 
     public static boolean requestAudioFocus() {
