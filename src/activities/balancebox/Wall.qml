@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import GCompris 1.0
 import Box2D 2.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects 1.0
 import "balancebox.js" as Activity
 
 Item {

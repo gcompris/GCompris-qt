@@ -39,8 +39,8 @@ ActivityBase {
     }
     onStop: inForeground = false;
 
-    Keys.onPressed: Activity.processKeyPress(event.key)
-    Keys.onReleased: Activity.processKeyRelease(event.key)
+    Keys.onPressed: (event) => { Activity.processKeyPress(event.key) }
+    Keys.onReleased: (event) => { Activity.processKeyRelease(event.key) }
 
     pageComponent: Image {
         id: background
@@ -75,9 +75,9 @@ ActivityBase {
                                   null);
         }
 
-        Keys.onEscapePressed: event.accepted = handleBackEvent();
+        Keys.onEscapePressed: (event) => event.accepted = handleBackEvent();
 
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             if (event.key === Qt.Key_Back)
                 event.accepted = handleBackEvent();
         }
@@ -152,7 +152,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            onError: console.error("Balancebox: Error parsing JSON: " + msg);
+            onError: (msg) => console.error("Balancebox: Error parsing JSON: " + msg);
         }
 
         // color overlay to better see the map outline
@@ -296,7 +296,7 @@ ActivityBase {
                     }
                 }
 
-                onBeginContact: {
+                onBeginContact: (item, other) => {
                     if (other.categories !== items.wallType)
                         Activity.addBallContact(other);
                     else {
@@ -305,7 +305,7 @@ ActivityBase {
                         //items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav");
                     }
                 }
-                onEndContact: {
+                onEndContact: (item, other) => {
                     if (other.categories !== items.wallType)
                         Activity.removeBallContact(other);
                 }
@@ -506,7 +506,7 @@ ActivityBase {
         GCCreationHandler {
             id: creationHandler
             readonly property bool isEditorActive: editorLoader.active && editorLoader.item.visible
-            onFileLoaded: {
+            onFileLoaded: (data, filePath) => {
                 if(!isEditorActive) {
                     activity.loadedFilePath = filePath
                 }

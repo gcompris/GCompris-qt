@@ -35,7 +35,7 @@ WorkerScript.onMessage = function(msg) {
                     maxContactValue = target + 1;
             }
             msg.mapModel.append({
-                "row": row,
+                "row2": row,
                 "col": col,
                 "value": value,
                 "contactValue": (orderNum > 0) ? contactValue : ""

@@ -50,9 +50,9 @@ Item {
 
     }
 
-    Keys.onEscapePressed: event.accepted = handleBackEvent();
+    Keys.onEscapePressed: (event) => event.accepted = handleBackEvent();
 
-    Keys.onReleased: {
+    Keys.onReleased: (event) => {
         if (event.key === Qt.Key_Back) {
             event.accepted = handleBackEvent();
         } else
@@ -368,7 +368,7 @@ Item {
             id: editorWorker
 
             source: "editor_worker.js"
-            onMessage: {
+            onMessage: (messageObject) => {
                 // worker finished, update all changed values (except the model):
                 props.contactValue = messageObject.maxContactValue;
                 props.lastBallIndex = messageObject.lastBallIndex;
@@ -567,7 +567,7 @@ Item {
                                 onExited: cell.highlighted = false
                                 onClicked: {
                                     editor.focus = true;
-                                    Activity.modifyMap(props, row, col);
+                                    Activity.modifyMap(props, row2, col);
                                 }
                             }
                         }
