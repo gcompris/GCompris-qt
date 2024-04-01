@@ -14,6 +14,8 @@
 
 #include <QDebug>
 #include <QQmlEngine>
+#include <QMediaDevices>
+#include <QAudioDevice>
 
 GSynth *GSynth::m_instance = nullptr;
 
@@ -23,33 +25,26 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
 
     m_format.setSampleRate(22050);
     m_format.setChannelCount(1);
-    m_format.setSampleSize(16);
-    m_format.setCodec("audio/pcm");
-    m_format.setByteOrder(QAudioFormat::LittleEndian);
-    m_format.setSampleType(QAudioFormat::SignedInt);
+    m_format.setSampleFormat(QAudioFormat::Int16);
 
-    QAudioDeviceInfo info(QAudioDeviceInfo::defaultOutputDevice());
-    if (!info.isFormatSupported(m_format)) {
-        qWarning() << "Default format not supported - trying to use nearest";
-        m_format = info.nearestFormat(m_format);
+    QAudioDevice defaultDevice(QMediaDevices::defaultAudioOutput());
+    if (!defaultDevice.isFormatSupported(m_format)) {
+        qWarning() << "Default format not supported - sound will probably not play";
     }
-    m_device = QAudioDeviceInfo::defaultOutputDevice();
-    m_buffer = QByteArray(bufferSize, 0);
+    m_audioSink = new QAudioSink(QMediaDevices::defaultAudioOutput(), m_format, this);
 
-    m_audioOutput = new QAudioOutput(m_device, m_format, this);
-    m_audioOutput->setBufferSize(bufferSize);
+    m_audioSink->setBufferSize(bufferSize);
     m_generator   = new Generator(m_format, this);
     // todo Only start generator if musical activity, and stop it on exit (in main.qml, activity.isMusicalActivity)
     m_generator->setPreset(PresetCustom);
     m_generator->start();
-    m_audioOutput->start(m_generator);
-    m_audioOutput->setVolume(1);
+    m_audioSink->start(m_generator);
+    m_audioSink->setVolume(1);
 }
 
 GSynth::~GSynth() {
-    m_audioOutput->stop();
+    m_audioSink->stop();
     m_generator->stop();
-    delete m_audioOutput;
     delete m_generator;
     
     auto i = m_timers.constBegin();

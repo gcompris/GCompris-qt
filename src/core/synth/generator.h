@@ -7,8 +7,8 @@
 #ifndef GENERATOR_H
 #define GENERATOR_H
 
-#include <QAudioDeviceInfo>
 #include <QAudioOutput>
+#include <QAudioFormat>
 #include <QByteArray>
 #include <QIODevice>
 

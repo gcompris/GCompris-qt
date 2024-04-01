@@ -11,8 +11,8 @@
 #ifndef GSYNTH_H
 #define GSYNTH_H
 
-#include <QAudioDeviceInfo>
-#include <QAudioOutput>
+#include <QAudioFormat>
+#include <QAudioSink>
 #include <QTimer>
 #include <QMap>
 #include "preset.h"
@@ -56,10 +56,8 @@ private Q_SLOTS:
     
 private:
     Generator        *m_generator;
-    QAudioDeviceInfo  m_device;
     QAudioFormat      m_format;
-    QByteArray        m_buffer;
-    QAudioOutput     *m_audioOutput;
+    QAudioSink       *m_audioSink;
     QMap<int, QTimer *> m_timers;
     
     Preset PresetCustom;
