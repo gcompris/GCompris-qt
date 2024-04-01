@@ -334,7 +334,7 @@ Item {
                         // update index to allow for updating z value of the rows
                         onEntered: rowList.currentIndex = index;
 
-                        onPressed: {
+                        onPressed: (mouse) => {
                             // same onPress for mobile
                             rowList.currentIndex = index;
                             // need to propagate through to the key for mobile!
