@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import "../../core"
 import GCompris 1.0
-import QtGraphicalEffects 1.0
+import Qt5Compat.GraphicalEffects
 import "qrc:/gcompris/src/core/core.js" as Core
 
 // For TextField
@@ -38,7 +38,7 @@ ActivityBase {
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
     isMenu: true
-    onBack: {
+    onBack: (to) => {
         if (pageView.currentItem === activity) {
             // Restore focus that has been taken by the loaded activity
             focus = true
@@ -66,9 +66,9 @@ ActivityBase {
 
     enabled: ActivityInfoTree.startingActivity === ""
 
-    onDisplayDialog: pageView.pushElement(dialog)
+    onDisplayDialog: (dialog) => pageView.pushElement(dialog)
 
-    onDisplayDialogs: {
+    onDisplayDialogs: (dialogs) => {
         for (var i = 0; i < dialogs.length; i++) {
             pageView.pushElement(dialogs[i]);
         }
@@ -213,7 +213,7 @@ ActivityBase {
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if(loading.active) {
                 return;
             }
@@ -233,11 +233,11 @@ ActivityBase {
                 currentActiveGrid.currentItem.selectCurrentItem()
             }
         }
-        Keys.onReleased: {
+        Keys.onReleased: (event) => {
             keyboardMode = true
             event.accepted = false
         }
-        Keys.onTabPressed: {
+        Keys.onTabPressed: (event) => {
             if(currentActiveGrid == section) {
                 if(currentTagCategories && currentTagCategories.length != 0) {
                     currentActiveGrid = categoriesGrid;
@@ -698,11 +698,11 @@ ActivityBase {
                 // Force invisibility of Androids virtual keyboard:
                 target: (ApplicationInfo.isMobile && activity.currentTag === "search"
                          && ApplicationSettings.isVirtualKeyboard) ? Qt.inputMethod : null
-                onVisibleChanged: {
+                function onVisibleChanged() {
                     if (ApplicationSettings.isVirtualKeyboard && visible)
                         Qt.inputMethod.hide();
                 }
-                onAnimatingChanged: {
+                function onAnimatingChanged() {
                     // note: seems to be never fired!
                     if (ApplicationSettings.isVirtualKeyboard && Qt.inputMethod.visible)
                         Qt.inputMethod.hide();
@@ -711,7 +711,7 @@ ActivityBase {
 
             Connections {
                 target: activity
-                onCurrentTagChanged: {
+                function onCurrentTagChanged() {
                     if (activity.currentTag === 'search') {
                         if(ApplicationSettings.isVirtualKeyboard && !keyboard.isPopulated) {
                             keyboard.populate();
@@ -722,7 +722,7 @@ ActivityBase {
                         activity.focus = true;
                 }
 
-                onStartActivity: {
+                function onStartActivity(activityName, level) {
                     ActivityInfoTree.setCurrentActivityFromName(activityName)
                     var currentLevels = ApplicationSettings.currentLevels(ActivityInfoTree.currentActivity.name)
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
@@ -1010,7 +1010,7 @@ ActivityBase {
             visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
-            onKeypress: {
+            onKeypress: (text) => {
                 var textArray = searchTextField.text.split("");
                 var cursorPosition = searchTextField.cursorPosition
                 if(text == keyboard.backspace) {
@@ -1029,17 +1029,18 @@ ActivityBase {
                 searchTextField.cursorPosition = cursorPosition;
             }
             function populate() {
-               var tmplayout = [];
-               var row = 0;
-               var offset = 0;
-               var cols;
-               while(offset < letter.length-1) {
-                   if(letter.length <= 100) {
-                       cols = Math.ceil((letter.length-offset) / (3 - row));
+                var tmplayout = [];
+                var row = 0;
+                var offset = 0;
+                var cols;
+                var numberOfLetters = letter.length
+                while(offset < numberOfLetters-1) {
+                   if(numberOfLetters <= 100) {
+                       cols = Math.ceil((numberOfLetters-offset) / (3 - row));
                    }
                    else {
-                       cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
-                                                       :(Math.ceil((letter.length-offset) / (22 - row)))
+                       cols = background.horizontal ? (Math.ceil((numberOfLetters-offset) / (15 - row)))
+                                                       :(Math.ceil((numberOfLetters-offset) / (22 - row)))
                        if(row === 0) {
                            tmplayout[row] = [];
                            tmplayout[row].push({ label: keyboard.backspace });
@@ -1054,7 +1055,7 @@ ActivityBase {
                    offset += j;
                    row ++;
                }
-               if(letter.length <= 100) {
+               if(numberOfLetters <= 100) {
                    tmplayout[0].push({ label: keyboard.space });
                    tmplayout[row-1].push({ label: keyboard.backspace });
                }
