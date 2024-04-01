@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtMultimedia 5.12
+import QtMultimedia
 import GCompris 1.0
 
 /**
@@ -39,7 +39,11 @@ Item {
      * Whether audio should be muted.
      */
     property bool muted
-
+    onMutedChanged: {
+        if(muted) {
+            audio.stop();
+        }
+    }
     /**
      * type:url
      * URL to the audio source to be played back.
@@ -89,8 +93,8 @@ Item {
      *
      * Possible values taken from Audio.status
      */
-    property var playbackState: (audio.error === Audio.NoError) ?
-                                    audio.playbackState : Audio.StoppedState;
+    property var playbackState: (audio.error === MediaPlayer.NoError) ?
+                                    audio.playbackState : MediaPlayer.StoppedState;
 
     /**
      * type:list
@@ -110,19 +114,19 @@ Item {
 
     //Pauses the currently playing audio
     function pause() {
-        if(playbackState === Audio.PlayingState)
+        if(playbackState === MediaPlayer.PlayingState)
             audio.pause()
     }
 
     //Resumes the current audio if it had been paused
     function resume() {
-        if(playbackState === Audio.PausedState || playbackState === Audio.StoppedState)
+        if(playbackState === MediaPlayer.PausedState || playbackState === MediaPlayer.StoppedState)
             audio.play()
     }
 
     // Helper to know if there is already an audio playing
     function isPlaying() {
-        return playbackState === Audio.PlayingState;
+        return playbackState === MediaPlayer.PlayingState;
     }
     /**
      * Plays back the audio resource @p file.
@@ -150,7 +154,7 @@ Item {
      * Stops audio playback.
      */
     function stop() {
-        if(audio.playbackState != Audio.StoppedState)
+        if(audio.playbackState != MediaPlayer.StoppedState)
             audio.stop()
     }
 
@@ -169,10 +173,10 @@ Item {
         if(!fileId.exists(file) || muted)
             return false
 
-        if(audio.playbackState !== Audio.PlayingState
-           || audio.status === Audio.EndOfMedia
-           || audio.status === Audio.NoMedia
-           || audio.status === Audio.InvalidMedia) {
+        if(audio.playbackState !== MediaPlayer.PlayingState
+           || audio.status === MediaPlayer.EndOfMedia
+           || audio.status === MediaPlayer.NoMedia
+           || audio.status === MediaPlayer.InvalidMedia) {
             files.push(file)
             silenceTimer.interval = 35
             silenceTimer.start()
@@ -224,10 +228,14 @@ Item {
         }
     }
 
-    Audio {
+    MediaPlayer {
         id: audio
-        muted: gcaudio.muted
-        onError: {
+        property alias volume: audioOutputItem.volume
+        audioOutput: AudioOutput {
+            id: audioOutputItem
+        }
+
+        onErrorOccurred: (error, errorString) => {
             // This file cannot be played, remove it from the source asap
             source = ""
             if(files.length)
@@ -235,15 +243,18 @@ Item {
             else
                 gcaudio.error()
         }
-        onStopped: {
+        onPlaybackStateChanged: {
+            if(playbackState !== MediaPlayer.StoppedState) {
+                return;
+            }
             if(files.length)
                 silenceTimer.start()
             else
                 gcaudio.done()
         }
-        metaData.onMetaDataChanged: {
+        onMetaDataChanged: {
             if(isBackgroundMusic) {
-                metaDataMusic = [metaData.title, metaData.contributingArtist, metaData.year, metaData.copyright]
+                metaDataMusic = [metaData.value(MediaMetaData.Title), metaData.value(MediaMetaData.ContributingArtist), metaData.value(MediaMetaData.Date), metaData.value(MediaMetaData.Copyright)]
             }
         }
     }
