@@ -88,7 +88,6 @@ private:
     QList<ActivityInfo *> m_menuTree;
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
-    QVariantList m_keyboardCharacters;
     static QString m_startingActivity;
     static int m_startingLevel;
 
