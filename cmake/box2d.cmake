@@ -70,10 +70,13 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
 
     set(BOX2D_MAKE_PROGRAM ${CMAKE_MAKE_PROGRAM})
 
+    if(CMAKE_TOOLCHAIN_FILE)
+      set(EXTRA_BOX2D_CMAKE_ARGS -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE})
+     endif()
     if(ANDROID)
       # I didn't find a better way to copy the libraries to the lib folder only on Android when doing an aab package...
       #set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
-      set(EXTRA_BOX2D_CMAKE_ARGS -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake -DANDROID_ABI=${ANDROID_ABI})
+      set(EXTRA_BOX2D_CMAKE_ARGS ${EXTRA_BOX2D_CMAKE_ARGS} -DANDROID_ABI=${ANDROID_ABI})
       # Strip box2d library for Android
       set(EXTRA_INSTALL_ANDROID_BOX2D ${LLVM_STRIP} --strip-all ${_box2d_library_dir}${_box2d_library_file} && )
     endif()
@@ -84,7 +87,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       SOURCE_DIR ${_box2d_source_dir}
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
-      INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
+      INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_library_dir}/qmldir ${_box2d_install_dir}
       )
 
     add_library(qml-box2d SHARED IMPORTED)

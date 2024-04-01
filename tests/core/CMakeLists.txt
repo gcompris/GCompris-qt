@@ -3,14 +3,14 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-find_package(Qt5 REQUIRED COMPONENTS Test)
+find_package(${QT_MAJOR} REQUIRED COMPONENTS Test)
 
 include_directories(${CMAKE_SOURCE_DIR} "${CMAKE_BINARY_DIR}/src/core/")
 
 set(CORE_TEST_LIBRARIES
     gcompris_core
-    Qt5::Core
-    Qt5::Test
+    ${QT_MAJOR}::Core
+    ${QT_MAJOR}::Test
 )
 
 ecm_add_tests(ActivityInfoTest.cpp

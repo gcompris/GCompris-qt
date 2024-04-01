@@ -39,9 +39,9 @@ function(GCOMPRIS_ADD_RCC resource_path)
   set(CREATED_RCC ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
 
   if(WIN32)
-    set(_RCC_COMMAND Qt5::rcc "--format-version" 2 "--binary" -o ${CREATED_RCC} ${CREATED_QRC})
+    set(_RCC_COMMAND ${QT_MAJOR}::rcc "--format-version" 2 "--binary" -o ${CREATED_RCC} ${CREATED_QRC})
   else()
-    set(_RCC_COMMAND Qt5::rcc "--format-version" 2 "--binary" -o ${CREATED_RCC} - < ${CREATED_QRC})
+    set(_RCC_COMMAND ${QT_MAJOR}::rcc "--format-version" 2 --compress-algo zlib --no-zstd "--binary" -o ${CREATED_RCC} - < ${CREATED_QRC})
   endif()
 
   add_custom_command(OUTPUT ${CREATED_RCC}

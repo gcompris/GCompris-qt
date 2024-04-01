@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #=============================================================================
-cmake_minimum_required(VERSION 3.7)
+cmake_minimum_required(VERSION 3.16)
 
 project(gcompris-qt C CXX)
 
@@ -12,7 +12,7 @@ set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
 include(InstallRequiredSystemLibraries)
 
 # Set c++11 support
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -35,7 +35,7 @@ include(FeatureSummary)
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/)
-set(CMAKE_PREFIX_PATH "${Qt5_DIR}/")
+set(CMAKE_PREFIX_PATH "${Qt6_DIR}/")
 
 # KDE po to qm tools
 if(ECM_FOUND)
@@ -45,30 +45,21 @@ if(ECM_FOUND)
   include(ECMCoverageOption)
 endif()
 
+add_compile_definitions(QT_DISABLE_DEPRECATED_BEFORE=0x060500)
+
 # add tools (cppcheck, clang-tidy...) if build on testing mode only
 # (slower compilation)
 if(BUILD_TESTING)
   include(CodeQualityUtils)
 endif()
 
-set(QT_REQUIRED_VERSION 5.12.0)
+set(QT_REQUIRED_VERSION 6.5.0)
 
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
-  find_package(ECM)
   set(ANDROID 1)
-  # Require ndk minimum version to 21
-  if(ANDROID_NDK_REVISION VERSION_LESS "21.0.0")
-    message(FATAL_ERROR "android ndk 21 minimal required, actually using ${ANDROID_NDK_REVISION}")
-  endif()
-  # TODO: possibly should be setup by toolchain one day
-  set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
-  if(ECM_VERSION VERSION_GREATER "5.55.0")
-    set(QT_REQUIRED_VERSION 5.12.0)
-  endif()
-
-  # workaround until this fix is in released ECM
-  if(ECM_VERSION VERSION_LESS "5.15.0")
-    add_definitions(-DANDROID)
+  # Require ndk minimum version to 25
+  if(ANDROID_NDK_REVISION VERSION_LESS "25.0.0")
+    message(FATAL_ERROR "android ndk 25 minimal required, actually using ${ANDROID_NDK_REVISION}")
   endif()
 endif()
 
@@ -94,25 +85,21 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif()
 
-set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Widgets)
-find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS
+set(QT_MAJOR Qt6)
+
+set(QT_COMPONENTS Qml Quick Gui Multimedia Core Svg Network LinguistTools Sensors QuickControls2 QuickTemplates2 Charts Widgets Core5Compat QmlWorkerScript)
+
+find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS
     ${QT_COMPONENTS})
 
-set_package_properties(Qt5 PROPERTIES TYPE REQUIRED)
+set_package_properties(${QT_MAJOR} PROPERTIES TYPE REQUIRED)
 foreach(COMPONENT ${QT_COMPONENTS})
-  set_package_properties(Qt5${COMPONENT} PROPERTIES TYPE REQUIRED)
+  set_package_properties(${QT_MAJOR}${COMPONENT} PROPERTIES TYPE REQUIRED)
 endforeach()
 
-if(Qt5Widgets_VERSION VERSION_GREATER_EQUAL "5.15.0")
-  find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS QmlModels QmlWorkerScript QuickParticles)
-  set_package_properties(Qt5QmlWorkerScript PROPERTIES TYPE REQUIRED)
-  set_package_properties(Qt5QuickParticles PROPERTIES TYPE REQUIRED)
-  set_package_properties(Qt5QmlModels PROPERTIES TYPE REQUIRED)
-endif()
-
-if(ANDROID)
-    find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS AndroidExtras)
-    set_package_properties(Qt5AndroidExtras PROPERTIES TYPE REQUIRED)
+if(UNIX AND NOT ANDROID)
+  # It seems to only be present on some Linux distributions, not FreeBSD for example
+find_package(${QT_MAJOR}QuickControls2Basic QUIET)
 endif()
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
@@ -124,20 +111,14 @@ add_definitions(
     -DQT_NO_FOREACH
 )
 
-## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
-# if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
-#   message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
-# endif()
-
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL)
     set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
 endif()
 
-
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
-  find_package(KF5 QUIET COMPONENTS DocTools)
+  find_package(KF6 QUIET COMPONENTS DocTools)
 endif()
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
@@ -179,15 +160,13 @@ if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
   set(_data_dest_dir bin/${_bundle_bin}/../Resources)
 elseif(HAIKU)
-  set(_data_dest_dir data/Qt5/${GCOMPRIS_EXECUTABLE_NAME})
+  set(_data_dest_dir data/Qt6/${GCOMPRIS_EXECUTABLE_NAME})
 else()
   set(_data_dest_dir share/${GCOMPRIS_EXECUTABLE_NAME})
 endif()
 if(ANDROID)
   # Android .so output
-  if(Qt5Widgets_VERSION VERSION_LESS "5.14.0")
-    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
-  endif()
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android-build/libs/${ANDROID_ABI}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android-build/assets/${_data_dest_dir}/rcc CACHE INTERNAL "" FORCE)
   set(ANDROID_PACKAGE "net.gcompris.full")
@@ -230,6 +209,7 @@ foreach(localeLine ${handledGComprisLocaleList})
   string(REGEX MATCH "([a-zA-Z@]*)_.*" _ ${localeFull})
   set(localeShort ${CMAKE_MATCH_1})
   list(APPEND gcomprisLocales ${localeShort})
+
 endforeach()
 # Remove all duplicated shortened locales
 list(REMOVE_DUPLICATES gcomprisLocales)
@@ -269,9 +249,9 @@ if(NOT SKIP_TRANSLATIONS)
       # Remove the obsolete translations and set po in the ts output file
       COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
       # Convert the po into ts
-      COMMAND Qt5::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+      COMMAND ${QT_MAJOR}::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
       # Convert the ts in qm removing non finished translations
-      COMMAND Qt5::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+      COMMAND ${QT_MAJOR}::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
       )
     list(APPEND QM_FILES ${QmOutput})
   endforeach()
@@ -439,7 +419,7 @@ add_custom_target(dist
         | xz > ${CMAKE_BINARY_DIR}/${ARCHIVE_NAME}.tar.xz
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
 
-if(KF5_FOUND)
+if(KF6_FOUND)
     add_subdirectory(docs/docbook)
 endif()
 
