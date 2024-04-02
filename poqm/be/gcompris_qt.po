@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-25 18:50+0300\n"
+"PO-Revision-Date: 2024-04-01 23:31+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -23261,51 +23261,33 @@ msgstr ""
 "хлопчыкаў. Ці зможа яна пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/2/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum 25 candies and 5 kids, possible rest."
 msgctxt "Data|"
 msgid "Maximum 25 pieces of candy and 5 kids, possible rest."
 msgstr "Максімум 25 цукерак і 5 дзяцей, магчыма рэшта."
 
 #: activities/share/resource/2/Data.qml:28
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now he wants to share 5 pieces of candy among his friends."
-msgstr "Цяпер ён хоча пачаставаць сваіх сяброў 4 цукеркамі."
+msgstr "Цяпер ён хоча пачаставаць сваіх сяброў 5 цукеркамі."
 
 #: activities/share/resource/2/Data.qml:38
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 7 of Paul's pieces of candy among his friends?"
-msgstr "Ці можаце Вы цяпер падзяліць 6 цукерак паміж сябрамі Паўліка?"
+msgstr "Ці можаце Вы цяпер падзяліць 7 Паўлікавых цукерак паміж яго сябрамі?"
 
 #: activities/share/resource/2/Data.qml:48
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Can you now give 6 of Paul's pieces of candy to his friends?"
 msgctxt "Data|"
 msgid "Can you now share 8 of Paul's pieces of candy among his friends?"
-msgstr "Ці можаце Вы цяпер падзяліць 6 цукерак паміж сябрамі Паўліка?"
+msgstr "Ці можаце Вы цяпер падзяліць 8 Паўлікавых цукерак паміж яго сябрамі?"
 
 #: activities/share/resource/2/Data.qml:58
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
-#| "gives the rest to his friends. Can you help him equally split the 9 "
-#| "remaining pieces of candy?"
 msgctxt "Data|"
 msgid ""
 "Paul has only 11 pieces of candy left. He eats 2 pieces of candy and he "
 "gives the rest to his friends. Can you help him split equally the 9 "
 "remaining pieces of candy?"
 msgstr ""
-"У Паўліка засталося было толькі 11 цукерак. Ён з'еў 2 і цяпер хоча аддаць "
+"У Паўліка засталося толькі 11 цукерак. Ён з'еў 2 і цяпер хоча аддаць "
 "астатнія сваім сябрам. Ці зможаце Вы пароўну падзяліць астатнія 9 цукерак?"
 
 #: activities/share/resource/2/Data.qml:70
