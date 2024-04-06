@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-27 06:11+0900\n"
+"PO-Revision-Date: 2024-04-06 01:27+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -10755,7 +10755,7 @@ msgstr "Asturias"
 #: activities/geo-country/resource/board/board18_0.qml:92
 msgctxt "board18_0|"
 msgid "Basque Country"
-msgstr "Basque Country"
+msgstr "巴斯克地區"
 
 #. Autonomous communities of Spain: La Rioja
 #: activities/geo-country/resource/board/board18_0.qml:99
@@ -25128,12 +25128,9 @@ msgid ""
 msgstr "新增命令列參數 --difficulty 以指定的難度啟動活動"
 
 #: core/ChangeLog.qml:39
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "新增亞塞拜然翻譯。"
+msgstr "新增阿拉伯語及世界語翻譯"
 
 #: core/ChangeLog.qml:40 core/ChangeLog.qml:47
 msgctxt "ChangeLog|"
@@ -25160,7 +25157,7 @@ msgstr "地理活動新增西班牙地圖"
 #: core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "新增烏克蘭發音"
+msgstr "新增烏克蘭語發音"
 
 #: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
@@ -25226,7 +25223,7 @@ msgstr "新增捷克、馬其頓等翻譯。"
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "新增亞塞拜然翻譯。"
+msgstr "新增亞塞拜然語翻譯。"
 
 #: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
@@ -25329,7 +25326,7 @@ msgstr "修正布拉耶遊戲中的問題。"
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr "增加 Basque、匈牙利語、馬來語的翻譯。"
+msgstr "增加巴斯克語、匈牙利語、馬拉雅拉姆語的翻譯。"
 
 #: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
@@ -25356,7 +25353,7 @@ msgstr "對佈局進行多項更改，以改善人體工學。"
 #: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
-msgstr "Lang activity now available in Polish, Swedish and Ukrainian."
+msgstr "語言活動現在提供波蘭語、瑞典語及烏克蘭語。"
 
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
