@@ -59,7 +59,10 @@ private:
     QAudioFormat      m_format;
     QAudioSink       *m_audioSink;
     QMap<int, QTimer *> m_timers;
-    
+#if defined(Q_OS_WIN)
+    QTimer *m_pushTimer = nullptr;
+#endif
+
     Preset PresetCustom;
 };
 

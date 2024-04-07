@@ -38,15 +38,37 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
     // todo Only start generator if musical activity, and stop it on exit (in main.qml, activity.isMusicalActivity)
     m_generator->setPreset(PresetCustom);
     m_generator->start();
+
+    // On Windows, since Qt6, the audio does not work (https://bugreports.qt.io/browse/QTBUG-108672)
+    // periodically push to QAudioSink using a timer works, but seems slower,
+    // so we keep the previous way of playing audio for all the other systems.
+#if defined(Q_OS_WIN)
+    m_pushTimer = new QTimer(this);
+
+    auto io = m_audioSink->start();
+    connect(m_pushTimer, &QTimer::timeout, [this, io]() {
+        int len = m_audioSink->bytesFree();
+        QByteArray buffer(len, 0);
+        len = m_generator->read(buffer.data(), len);
+        if(len) {
+            io->write(buffer.data(), len);
+        }
+    });
+    m_pushTimer->start(10);
+#else
     m_audioSink->start(m_generator);
+#endif
     m_audioSink->setVolume(1);
 }
 
 GSynth::~GSynth() {
+#if defined(Q_OS_WIN)
+    m_pushTimer->stop();
+#endif
     m_audioSink->stop();
     m_generator->stop();
     delete m_generator;
-    
+
     auto i = m_timers.constBegin();
     while (i != m_timers.constEnd()) {
         delete i.value();
