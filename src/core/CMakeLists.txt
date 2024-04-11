@@ -198,15 +198,6 @@ if(BUILD_STANDALONE)
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
   endif()
 
-  # Only explicit these dll for Windows to be sure we don't ship the debug dll in the package. Other platforms don't have this issue.
-  if(WIN32)
-    list(APPEND _qml_plugins
-      QtQuick/Controls/Fusion/${_lib_prefix}qtquickcontrols2fusionstyleplugin
-      QtQuick/Controls/Imagine/${_lib_prefix}qtquickcontrols2imaginestyleplugin
-      QtQuick/Controls/Material/${_lib_prefix}qtquickcontrols2materialstyleplugin
-      QtQuick/Controls/Universal/${_lib_prefix}qtquickcontrols2universalstyleplugin)
-  endif()
-
   set(GCOMPRIS_OTHER_LIBS)
 
   if(APPLE)
@@ -259,13 +250,6 @@ if(BUILD_STANDALONE)
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
 
-  ## install QtGraphicalEffects (which is not a lib but only qml files)
-  # BUT, actually there are some libs in it, and this does not work on APPLE. Moved to _qml_plugins instead
-  #
-  #set(_qml_subdir QtGraphicalEffects)
-  #getQtQmlPath(_qt_qml_path)
-  #install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
-
   # Fix for Linux 'make package' that fails to link with libicu; also package OpenSSL libs from system
   if(UNIX AND NOT APPLE AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
@@ -304,18 +288,11 @@ if(BUILD_STANDALONE)
       endif()
       install(FILES "${OPENSSL_ROOT_DIR}/bin/libcrypto-3${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
       install(FILES "${OPENSSL_ROOT_DIR}/bin/libssl-3${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
-    else() # appveyor
-      #install(FILES "${OPENSSL_INCLUDE_DIR}/../libeay32.dll" DESTINATION bin)
-      #install(FILES "${OPENSSL_INCLUDE_DIR}/../libssl32.dll" DESTINATION bin)
-      #install(FILES "${OPENSSL_INCLUDE_DIR}/../ssleay32.dll" DESTINATION bin)
     endif()
     target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
 
 endif()
-
-# Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
-#if(WIN32) set(GCOMPRIS_OTHER_LIBS "") endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
 if(BUILD_STANDALONE AND NOT ANDROID)
