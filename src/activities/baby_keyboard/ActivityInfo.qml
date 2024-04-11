@@ -12,7 +12,7 @@ ActivityInfo {
   icon: "baby_keyboard/baby_keyboard.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Baby keyboard")
+  title: qsTr("My first keyboard")
   //: Help title
   description: qsTr("A simple activity to discover the keyboard.")
   //intro: "Type any key on the keyboard and observe the result."
