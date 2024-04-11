@@ -11,7 +11,7 @@ ActivityInfo {
   icon: "baby_mouse/baby_mouse.svg"
   author: "Mariam Fahmy &lt;mariamfahmy66@gmail.com&gt;"
   //: Activity title
-  title: qsTr("Baby mouse")
+  title: qsTr("My first mouse")
   //: Help title
   description: qsTr("Move the mouse or touch the screen and observe the result.")
   //intro: "Move the mouse or touch the screen and observe the result."
