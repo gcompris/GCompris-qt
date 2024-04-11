@@ -6,8 +6,7 @@
 #=============================================================================
 #
 # Before making a Windows build we must provide the converted mp3
-# and the qm files because this is too annoying to create them on
-# windows.
+# files because this is too annoying to create them on windows.
 
 if [ ! -f CMakeLists.txt ]
 then
@@ -19,13 +18,10 @@ cd build
 cmake -D COMPRESSED_AUDIO=mp3 ..
 make createMp3FromOgg
 make BundleConvertedOggs
-make BuildTranslations
-make BundleTranslations
-#rsync -a ../converted_ogg_to_mp3-*.7z translations-*.7z gcompris.net:/var/www/download
+#rsync -a ../converted_ogg_to_mp3-*.7z gcompris.net:/var/www/download
 
 #
-# Then on Windows use the targets:
+# Then on Windows use the target:
 #
-# DlAndInstallBundledTranslations
 # DlAndInstallBundledConvertedOggs
 #

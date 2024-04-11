@@ -268,33 +268,6 @@ else()
     )
 endif()
 
-add_custom_command(
-    OUTPUT doBundleTranslations
-    COMMAND 7z a -w${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME}
-               ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z
-               ${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME}/translations
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    )
-# Bundle translations
-add_custom_target(BundleTranslations
-  DEPENDS doBundleTranslations
-  COMMENT "If you want to provide a zip of the translations on a server (run make BuildTranslations first)"
-  )
-
-add_custom_command(
-    OUTPUT doDlAndInstallBundledTranslations
-    COMMAND curl -fsS -o translations-${GCOMPRIS_VERSION}.7z
-               https://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
-    COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME}
-               translations-${GCOMPRIS_VERSION}.7z
-    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-    )
-# Download and install bundled translations
-add_custom_target(DlAndInstallBundledTranslations
-  DEPENDS doDlAndInstallBundledTranslations
-  COMMENT "Download the bundled translation and install them in the build dir"
-  )
-
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 elseif(ANDROID)
@@ -389,7 +362,7 @@ add_custom_command(
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Bundle oggs ready to be uploaded on a server. This ease build on system without the appropriate audio
-# convertion tools.
+# conversion tools.
 add_custom_target(BundleConvertedOggs
   DEPENDS doBundleConvertedOggs
   COMMENT "Bundle the converted oggs to upload them on a server. First set COMPRESSED_AUDIO appropriately."
