@@ -18,7 +18,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Learn to calculate using the four operators.")
   //: Help prerequisite
-  prerequisite: qsTr("Being able to calculate using additions, subtractions, multiplications and divisions.")
+  prerequisite: qsTr("Being able to calculate using addition, subtraction, multiplication and division.")
   //: Help manual
   manual: qsTr("Use the four numbers with given operators to find 24.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + "<ul>" +

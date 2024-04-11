@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Count how many stars are under the magic hat.")
 //  intro: "Count the number of stars hidden under the hat and then click on the stars to indicate their number."
   //: Help goal
-  goal: qsTr("Learn additions.")
+  goal: qsTr("Learn addition.")
   //: Help prerequisite
-  prerequisite: qsTr("Additions.")
+  prerequisite: qsTr("Addition.")
   //: Help manual
   manual: qsTr("Click on the hat to open it. How many stars went under it? Count carefully. Click on the bottom area to input your answer and on the OK button to validate it.")
   credit: ""

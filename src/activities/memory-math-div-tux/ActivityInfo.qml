@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Flip the cards to match a division with its result, playing against Tux.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
-  goal: qsTr("Practice divisions.")
+  goal: qsTr("Practice division.")
   //: Help prerequisite
-  prerequisite: qsTr("Divisions.")
+  prerequisite: qsTr("Division.")
   //: Help manual
   manual: qsTr("Each card is hiding either a division, or a result. You have to match the divisions with their result.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

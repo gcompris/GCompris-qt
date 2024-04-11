@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Calculate how many stars are under the magic hat.")
 //  intro: "Click on the hat. How many stars are still hiding under the hat."
   //: Help goal
-  goal: qsTr("Learn subtractions.")
+  goal: qsTr("Learn subtraction.")
   //: Help prerequisite
-  prerequisite: qsTr("Subtractions.")
+  prerequisite: qsTr("Subtraction.")
   //: Help manual
   manual: qsTr("Click on the hat to open it. Stars go in and a few stars escape. You have to calculate how many stars are still under the hat. Click on the bottom area to input your answer and on the OK button to validate it.")
   credit: ""

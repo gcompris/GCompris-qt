@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Flip the cards to match an addition with its result.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
-  goal: qsTr("Practice additions.")
+  goal: qsTr("Practice addition.")
   //: Help prerequisite
-  prerequisite: qsTr("Additions.")
+  prerequisite: qsTr("Addition.")
   //: Help manual
   manual: qsTr("Each card is hiding either an addition, or a result. You have to match the additions with their result.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

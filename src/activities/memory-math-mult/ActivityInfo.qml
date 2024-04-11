@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Flip the cards to match a multiplication with its result.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
-  goal: qsTr("Practice multiplications.")
+  goal: qsTr("Practice multiplication.")
   //: Help prerequisite
-  prerequisite: qsTr("Multiplications.")
+  prerequisite: qsTr("Multiplication.")
   //: Help manual
   manual: qsTr("Each card is hiding either a multiplication, or a result. You have to match the multiplications with their result.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

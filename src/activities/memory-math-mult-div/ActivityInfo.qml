@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Flip the cards to match a multiplication or a division with its result.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
-  goal: qsTr("Practice multiplications and divisions.")
+  goal: qsTr("Practice multiplication and division.")
   //: Help prerequisite
-  prerequisite: qsTr("Multiplications, divisions.")
+  prerequisite: qsTr("Multiplication, division.")
   //: Help manual
   manual: qsTr("Each card is hiding either an operation (a multiplication or a division), or a result. You have to match the operations with their result.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

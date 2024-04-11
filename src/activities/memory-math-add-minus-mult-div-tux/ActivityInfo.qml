@@ -17,9 +17,9 @@ ActivityInfo {
   description: qsTr("Flip the cards to match an operation with its result, playing against Tux.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
-  goal: qsTr("Practice additions, subtractions, multiplications, divisions.")
+  goal: qsTr("Practice addition, subtraction, multiplication, division.")
   //: Help prerequisite
-  prerequisite: qsTr("Additions, subtractions, multiplications, divisions.")
+  prerequisite: qsTr("Addition, subtraction, multiplication, division.")
   //: Help manual
  manual: qsTr("Each card is hiding either an operation, or a result. You have to match the operations with their result.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +

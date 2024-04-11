@@ -18,7 +18,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Learn to use ten's complement to optimize the order of numbers in an operation.")
   //: Help prerequisite
-  prerequisite: qsTr("Numbers from 1 to 30 and additions.")
+  prerequisite: qsTr("Numbers from 1 to 30 and addition.")
   //: Help manual
   manual: qsTr("Create pairs of numbers equal to ten within each parentheses. Select a number, then select another number of the same operation to swap their position. When all the lines are completed, press the OK button to validate the answers. If some answers are incorrect, a cross icon will appear on the corresponding lines. Correct the errors, then press the OK button again.")
   credit: ""

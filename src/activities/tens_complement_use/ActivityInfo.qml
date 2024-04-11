@@ -18,7 +18,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Learn a practical use of ten's complement.")
   //: Help prerequisite
-  prerequisite: qsTr("Numbers from 1 to 50 and additions.")
+  prerequisite: qsTr("Numbers from 1 to 50 and addition.")
   //: Help manual
   manual: qsTr("Decompose the additions to create pairs of numbers equal to ten within each parentheses. Select a number in the list, then select an empty spot of an operation to move the selected number there.") + "<br>" +
     qsTr("When all the lines are completed, press the OK button to validate the answers. If some answers are incorrect, a cross icon will appear on the corresponding lines. To correct the errors, click on the wrong numbers to remove them and repeat the previous steps.")
