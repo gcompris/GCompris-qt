@@ -30,8 +30,10 @@ private Q_SLOTS:
     void NameTest();
 };
 
-static const char *tempFilename = "./dummy_test_files.txt";
-static const char *fakeFilename = "-_/fezagvvx&V/d;-ùlc";
+namespace {
+    const char *tempFilename = "./dummy_test_files.txt";
+    const char *fakeFilename = "-_/fezagvvx&V/d;-ùlc";
+};
 
 void CoreFileTest::FileExistsTest()
 {
