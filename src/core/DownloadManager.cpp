@@ -883,9 +883,8 @@ void DownloadManager::registerLocalResources()
         return;
     }
 
-    QList<QString>::const_iterator iter;
-    for (iter = filenames.constBegin(); iter != filenames.constEnd(); iter++)
-        registerResource(*iter);
+    for (const QString &file: filenames)
+        registerResource(file);
 }
 
 bool DownloadManager::checkForUpdates()
@@ -902,10 +901,9 @@ bool DownloadManager::checkForUpdates()
         return false;
     }
 
-    QList<QString>::const_iterator iter;
     DownloadJob *job = new DownloadJob();
-    for (iter = filenames.constBegin(); iter != filenames.constEnd(); iter++) {
-        QUrl url = getUrlForFilename(*iter);
+    for (const QString &file: filenames)
+        QUrl url = getUrlForFilename(file);
         qDebug() << "Scheduling resource for update: " << url;
         job->queue.append(url);
     }

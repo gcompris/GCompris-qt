@@ -17,9 +17,8 @@
 #include <QStandardPaths>
 #include <QCoreApplication>
 #include <QTextStream>
+#include <QLatin1StringView>
 
-QString ActivityInfoTree::m_startingActivity = "";
-int ActivityInfoTree::m_startingLevel = -1;
 ActivityInfoTree *ActivityInfoTree::m_instance = nullptr;
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) :
@@ -153,16 +152,21 @@ void ActivityInfoTree::sortByDifficultyThenName(bool emitChanged)
 // The level is also filtered based on the global property
 void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, bool emitChanged)
 {
+    using namespace Qt::Literals::StringLiterals;
+
     m_menuTree.clear();
     // https://www.kdab.com/goodbye-q_foreach/, for loops on QList may cause detach
     const auto constMenuTreeFull = m_menuTreeFull;
+    const bool isAllTag = (tag == "all"_L1);
+    const bool isFavoriteTag = (tag == "favorite"_L1);
     for (const auto &activity: constMenuTreeFull) {
         // filter on category if given else on tag
         /* clang-format off */
-        if(((!category.isEmpty() && activity->section().indexOf(category) != -1) ||
-            (category.isEmpty() && activity->section().indexOf(tag) != -1) ||
-            tag == "all" ||
-            (tag == "favorite" && activity->favorite())) &&
+        if((isAllTag ||
+            (isFavoriteTag && activity->favorite()) ||
+            (!category.isEmpty() && activity->section().indexOf(category) != -1) ||
+            (category.isEmpty() && activity->section().indexOf(tag) != -1)
+            ) &&
             (activity->maximalDifficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
              activity->minimalDifficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
             m_menuTree.push_back(activity);
@@ -176,18 +180,14 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
 
 void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
 {
-    auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
-                             [&](const ActivityInfo *activity) {
+    m_menuTree.removeIf([&](const ActivityInfo *activity) {
                                  return activity->minimalDifficulty() < levelMin || activity->maximalDifficulty() > levelMax;
                              });
-    m_menuTree.erase(it, m_menuTree.end());
 }
 
 void ActivityInfoTree::filterEnabledActivities(bool emitChanged)
 {
-    auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
-                             [](const ActivityInfo *activity) { return !activity->enabled(); });
-    m_menuTree.erase(it, m_menuTree.end());
+    m_menuTree.removeIf([](const ActivityInfo *activity) { return !activity->enabled(); });
     if (emitChanged)
         Q_EMIT menuTreeChanged();
 }
@@ -264,7 +264,7 @@ void ActivityInfoTree::exportAsSQL()
 void ActivityInfoTree::listActivities()
 {
     QTextStream qtOut(stdout);
-    const QStringList list = ActivityInfoTree::getActivityList();
+    const QStringList list = getActivityList();
     for (const QString &activity: list) {
         qtOut << activity << '\n';
     }
@@ -290,15 +290,12 @@ QStringList ActivityInfoTree::getActivityList()
     return list;
 }
 
-QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+void ActivityInfoTree::initialize(QQmlEngine *engine)
 {
-    Q_UNUSED(scriptEngine)
-
-    ActivityInfoTree *menuTree = getInstance();
     QQmlComponent componentRoot(engine,
                                 QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
     QObject *objectRoot = componentRoot.create();
-    menuTree->setRootMenu(qobject_cast<ActivityInfo *>(objectRoot));
+    setRootMenu(qobject_cast<ActivityInfo *>(objectRoot));
 
     const QStringList activities = getActivityList();
     QString startingActivity = m_startingActivity;
@@ -313,7 +310,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
         if (activityObjectRoot != nullptr) {
             ActivityInfo *activityInfo = qobject_cast<ActivityInfo *>(activityObjectRoot);
             activityInfo->fillDatasets(engine);
-            menuTree->menuTreeAppend(activityInfo);
+            menuTreeAppend(activityInfo);
 
             // Check if the activity is the one we want to start in and set the full name
             if (!startingActivity.isEmpty() && startingActivity == line) {
@@ -333,8 +330,16 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
         m_startingActivity = startingActivity;
     }
 
-    menuTree->filterByTag("favorite");
-    menuTree->filterEnabledActivities();
+    filterByTag("favorite");
+    filterEnabledActivities();
+}
+
+QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+{
+    Q_UNUSED(scriptEngine)
+
+    ActivityInfoTree *menuTree = getInstance();
+    menuTree->initialize(engine);
     return menuTree;
 }
 

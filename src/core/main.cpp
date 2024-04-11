@@ -31,14 +31,16 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 
     file.open(QIODevice::ReadOnly);
     QDataStream in(&file);
-    uchar *data = (uchar *)malloc(file.size());
+
+    qint64 fileSize = file.size();
+    uchar *data = (uchar *)malloc(fileSize);
 
     if (!file.exists())
         qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
 
-    in.readRawData((char *)data, file.size());
+    in.readRawData((char *)data, fileSize);
 
-    if (!translator.load(data, file.size())) {
+    if (!translator.load(data, fileSize)) {
         qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
         free(data);
         return false;
@@ -310,7 +312,7 @@ int main(int argc, char *argv[])
             }
         }
         // internally, levels start at 0
-        ActivityInfoTree::setStartingActivity(startingActivity, startingLevel - 1);
+        ActivityInfoTree::getInstance()->setStartingActivity(startingActivity, startingLevel - 1);
     }
 
     QQmlApplicationEngine engine;

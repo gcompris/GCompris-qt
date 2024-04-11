@@ -49,7 +49,7 @@ public:
     void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
-    static void setStartingActivity(const QString &startingActivity, int startingLevel)
+    void setStartingActivity(const QString &startingActivity, int startingLevel)
     {
         m_startingActivity = startingActivity;
         m_startingLevel = startingLevel;
@@ -88,16 +88,17 @@ private:
     QList<ActivityInfo *> m_menuTree;
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
-    static QString m_startingActivity;
-    static int m_startingLevel;
+    QString m_startingActivity;
+    int m_startingLevel = -1;
 
+    void initialize(QQmlEngine *engine);
     static QList<ActivityInfo>::size_type menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
 
     static QList<ActivityInfo>::size_type menuTreeFullCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeFullAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
 
-    static QStringList getActivityList();
+    QStringList getActivityList();
 
 public:
     static void registerResources();

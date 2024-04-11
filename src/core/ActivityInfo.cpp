@@ -299,10 +299,9 @@ void ActivityInfo::setCurrentLevels()
 void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax)
 {
     QStringList newLevels;
-    for (auto it = m_datasets.begin(); it != m_datasets.end(); ++it) {
-        Dataset *dataset = it.value();
+    for (const auto& [key, dataset]: m_datasets.asKeyValueRange()) {
         if (levelMin <= dataset->difficulty() && dataset->difficulty() <= levelMax) {
-            newLevels << it.key();
+            newLevels << key;
             dataset->setEnabled(true);
         }
         else {
