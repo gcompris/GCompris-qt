@@ -39,7 +39,8 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        // Add here the QML items you need to access in javascript
+        // Needed to get keyboard focus on IntroMessage
+        Keys.forwardTo: message
 
         QtObject {
             id: items
@@ -726,11 +727,7 @@ ActivityBase {
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: previousLevel()
             onNextLevelClicked: nextLevel()
-            onHomeClicked: {
-                if(message.visible)
-                    message.visible = false;
-                home();
-            }
+            onHomeClicked: home();
             onReloadClicked: initLevel()
         }
 
