@@ -72,7 +72,7 @@ function addPropertiesToCategories(categories) {
 
 // Return all the properties we have to save
 function categoriesToSavedProperties() {
-    if(!items)
+    if(!items || !items.menuModel)
         return;
     var props = {}
     for(var i = 0; i < items.menuModel.count; i++) {
