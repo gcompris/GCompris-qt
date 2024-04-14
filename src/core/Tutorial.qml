@@ -49,6 +49,12 @@ Item {
     /* Do we use image or qml files for illustrations */
     property bool useImage: true
 
+    /* Store if we have a LTR locale */
+    readonly property bool isLeftToRightLocale: Core.isLeftToRightLocale(ApplicationSettings.locale)
+
+    /* Store the ApplicationInfo.ratio locally */
+    readonly property real applicationInfoRatio: ApplicationInfo.ratio
+
     // Emitted when skipButton is clicked
     signal skipPressed
 
@@ -91,16 +97,16 @@ Item {
     GCText {
         id: tutorialText
         anchors.verticalCenter: tutorialTextContainer.verticalCenter
-        anchors.left: Core.isLeftToRightLocale(ApplicationSettings.locale) ? tutorialTextContainer.left : undefined
-        anchors.right: Core.isLeftToRightLocale(ApplicationSettings.locale) ? undefined : tutorialTextContainer.right
-        anchors.leftMargin: 10 * ApplicationInfo.ratio
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
-        text: tutorialDetails ? tutorialDetails[tutorialNumber].instruction : ""
+        anchors.left: tutorialSection.isLeftToRightLocale ? tutorialTextContainer.left : undefined
+        anchors.right: tutorialSection.isLeftToRightLocale ? undefined : tutorialTextContainer.right
+        anchors.leftMargin: 10 * tutorialSection.applicationInfoRatio
+        anchors.rightMargin: 10 * tutorialSection.applicationInfoRatio
+        text: tutorialSection.tutorialDetails ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instruction : ""
         fontSizeMode: Text.Fit
         minimumPixelSize: 10
-        horizontalAlignment: Core.isLeftToRightLocale(ApplicationSettings.locale) ? Text.AlignLeft : Text.AlignRight
+        horizontalAlignment: tutorialSection.isLeftToRightLocale ? Text.AlignLeft : Text.AlignRight
         verticalAlignment: Text.AlignVCenter
-        width: parent.width - 40 * ApplicationInfo.ratio
+        width: parent.width - 40 * tutorialSection.applicationInfoRatio
         height: 0.25 * parent.height
         wrapMode: Text.WordWrap
         z: 2
@@ -113,10 +119,10 @@ Item {
     Rectangle {
         id: tutorialTextContainer
         anchors.top: parent.top
-        anchors.topMargin: 10 * ApplicationInfo.ratio
+        anchors.topMargin: 10 * tutorialSection.applicationInfoRatio
         anchors.horizontalCenter: parent.horizontalCenter
-        width: tutorialText.paintedWidth + 20 * ApplicationInfo.ratio
-        height: tutorialText.paintedHeight + 10 * ApplicationInfo.ratio
+        width: tutorialText.paintedWidth + 20 * tutorialSection.applicationInfoRatio
+        height: tutorialText.paintedHeight + 10 * tutorialSection.applicationInfoRatio
         opacity: 0.8
         radius: 10
         border.width: 6
@@ -134,12 +140,12 @@ Item {
         anchors.topMargin: 15
         anchors.rightMargin: 15
 	    anchors.top: tutorialTextContainer.bottom
-        visible: tutorialNumber != 0
+        visible: tutorialSection.tutorialNumber != 0
 
         text: qsTr("Previous")
 
         onClicked: {
-            --tutorialNumber
+            --tutorialSection.tutorialNumber
             previousPressed()
         }
     }
@@ -154,12 +160,12 @@ Item {
         anchors.topMargin: 15
         anchors.rightMargin: 15
 	    anchors.top: tutorialTextContainer.bottom
-        visible: tutorialNumber != (tutorialDetails.length - 1)
+        visible: tutorialSection.tutorialNumber != (tutorialSection.tutorialDetails.length - 1)
 
         text: qsTr("Next")
 
         onClicked: {
-	        ++tutorialNumber
+	        ++tutorialSection.tutorialNumber
             nextPressed()
         }
     }
@@ -193,7 +199,7 @@ Item {
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         mipmap: true
-        source: tutorialDetails && useImage ? tutorialDetails[tutorialNumber].instructionImage : ""
+        source: tutorialSection.tutorialDetails && useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionImage : ""
         anchors {
             top: previousButton.bottom
             topMargin: 10
@@ -207,7 +213,7 @@ Item {
         enabled: !tutorialImage.visible
         width: parent.width * 0.8
         height: (parent.height - nextButton.height) * 0.48
-        source: tutorialDetails && !useImage ? tutorialDetails[tutorialNumber].instructionQml : ""
+        source: tutorialSection.tutorialDetails && !useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionQml : ""
         anchors {
             top: previousButton.bottom
             topMargin: 10

@@ -56,6 +56,7 @@ Item {
      * Start the loading overlay.
      */
     function start() {
+        greyRectangle.visible = (ActivityInfoTree.startingActivity === "")
         visible = true;
         active = true;
     }
@@ -82,7 +83,7 @@ Item {
     }
 
     Rectangle {
-        visible: ActivityInfoTree.startingActivity === ""
+        id: greyRectangle
         anchors.fill: parent
         opacity: 0.8
         color: "grey"
