@@ -1181,6 +1181,10 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+  <branding>
+    <color type="primary" scheme_preference="light">#85d8f6/color>
+    <color type="primary" scheme_preference="dark">#16b8ea</color>
+  </branding>
   <custom>
     <value key="KDE::f_droid">https://f-droid.org/en/packages/net.gcompris.full/</value>
     <value key="KDE::google_play">https://play.google.com/store/apps/details?id=net.gcompris.full</value>
