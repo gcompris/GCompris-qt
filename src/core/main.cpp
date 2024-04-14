@@ -321,7 +321,7 @@ int main(int argc, char *argv[])
         ActivityInfoTree::setStartingActivity(startingActivity, startingLevel - 1);
     }
 
-    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+    QQmlApplicationEngine engine;
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
     // add import path for shipped qml modules:
@@ -334,6 +334,8 @@ int main(int argc, char *argv[])
 #endif
 
     ApplicationInfo::getInstance()->setBox2DInstalled(engine);
+    // We load the main file after checking for box2d to avoid computing multiple times the menu
+    engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));
 
     if (parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
