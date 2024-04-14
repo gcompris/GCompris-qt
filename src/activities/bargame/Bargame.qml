@@ -223,7 +223,7 @@ ActivityBase {
             height: width
             sourceSize.width: width
             sourceSize.height: width
-            source: Activity.url + "bar_ok.svg"
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             anchors {
                 left: ballNumberPlate.right
                 verticalCenter: ballNumberPlate.verticalCenter
