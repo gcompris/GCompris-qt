@@ -1197,7 +1197,7 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <branding>
-    <color type="primary" scheme_preference="light">#85d8f6/color>
+    <color type="primary" scheme_preference="light">#85d8f6</color>
     <color type="primary" scheme_preference="dark">#16b8ea</color>
   </branding>
   <custom>
