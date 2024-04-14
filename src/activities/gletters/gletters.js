@@ -86,7 +86,7 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
         wgAddFallSpeed = 100 * speedSetting;
     }
 
-    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
     if(locale === "ml_IN")
         noShiftLocale = true;
