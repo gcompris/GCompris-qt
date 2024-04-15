@@ -18601,67 +18601,67 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "യുക്തി"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "ലളിത കല"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr "സംഗീതം"
 
-#: activities/menu/Menu.qml:135
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "പരീക്ഷണം"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr "ചരിത്രം"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "ഭൂമിശാസ്ത്രം"
 
-#: activities/menu/Menu.qml:147
+#: activities/menu/Menu.qml:136
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "എണ്ണൽ"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "കണക്ക്"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "അളവുകൾ"
 
-#: activities/menu/Menu.qml:159
+#: activities/menu/Menu.qml:148
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "അക്ഷരങ്ങൾ"
 
-#: activities/menu/Menu.qml:160
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr "വാക്കുകൾ"
 
-#: activities/menu/Menu.qml:161
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "പദസമ്പത്ത്"
 
-#: activities/menu/Menu.qml:378
+#: activities/menu/Menu.qml:367
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18670,12 +18670,12 @@ msgstr ""
 "നിങ്ങൾക്കു പ്രിയപ്പെട്ട പ്രവർത്തനങ്ങൾ ഇവിടെ ചേർക്കാൻ ആ പ്രവർത്തനത്തിന്റെ വലത്ത് മുകളിലായുള്ള "
 "സൂര്യനിൽ ക്ലിക്കു ചെയ്യൂ."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:772
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "പ്രവർത്തനങ്ങൾ തിരയുക"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:799
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "പ്രവർത്തന ക്രമീകരണം"
@@ -21929,7 +21929,7 @@ msgstr ""
 "വീട്ടിലെത്തുമ്പോൾ, ലൈറ്റിന്റെ സ്വിച്ച് അമർത്തുക. ജയിക്കുവാനായി, എല്ലാ ഉല്പാദനമാർഗങ്ങളും "
 "സജ്ജമായിരിക്കുമ്പോൾ എല്ലാ ഉപഭോക്താക്കളുടെയും സ്വിച്ച് ഓൺ ആക്കണം."
 
-#: activities/renewable_energy/RenewableEnergy.qml:280
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -21938,7 +21938,7 @@ msgstr ""
 "മീൻ പിടുത്തം കഴിഞ്ഞ് ടക്സ് വഞ്ചിയിൽ തിരിച്ചെത്തി. അവന് വീട്ടിൽ വെളിച്ചം കിട്ടുവാൻ വൈദ്യുത "
 "വിതരണ സംവിധാനം പ്രവർത്തിപ്പിക്കൂ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:283
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -21947,7 +21947,7 @@ msgstr ""
 "വ്യത്യസ്ത ഘടകങ്ങളിൽ ക്ലിക്ക് ചെയ്യൂ: സൂര്യൻ, മേഘം, അണക്കെട്ട്, സോളാർ നിര, കാറ്റാടിപ്പാടം, "
 "ട്രാൻസ്ഫോമറുകൾ. വൈദ്യുത സംവിധാനം മുഴുവൻ പ്രവർത്തന സജ്ജമായി പുനസ്ഥാപിക്കൂ."
 
-#: activities/renewable_energy/RenewableEnergy.qml:284
+#: activities/renewable_energy/RenewableEnergy.qml:285
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -21958,13 +21958,13 @@ msgstr ""
 "ജയിക്കുവാനായി, എല്ലാ ഉല്പാദനമാർഗങ്ങളും സജ്ജമായിരിക്കുമ്പോൾ എല്ലാ ഉപഭോക്താക്കളുടെയും സ്വിച്ച് "
 "ഓൺ ആക്കണം."
 
-#: activities/renewable_energy/RenewableEnergy.qml:286
+#: activities/renewable_energy/RenewableEnergy.qml:287
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "പുനസ്ഥാപിക്കാവുന്ന ഊർജം ഉപയോഗിച്ചുള്ള വൈദ്യുത സംവിധാനത്തെ കുറിച്ച് പഠിക്കാം. ആസ്വദിക്കൂ. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:311
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -26577,22 +26577,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "ഞാൻ‍ തയ്യാറാണ്"
 
-#: core/Tutorial.qml:139
+#: core/Tutorial.qml:145
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "മുൻപുള്ളത്"
 
-#: core/Tutorial.qml:159
+#: core/Tutorial.qml:165
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "അടുത്തത്"
 
-#: core/Tutorial.qml:178
+#: core/Tutorial.qml:184
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "നോക്കാതെ വിടുക"
 
-#: core/Tutorial.qml:178
+#: core/Tutorial.qml:184
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "തുടങ്ങാം"
