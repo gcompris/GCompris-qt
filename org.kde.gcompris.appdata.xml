@@ -59,6 +59,15 @@
   <name xml:lang="zh-CN">GCompris</name>
   <name xml:lang="zh-TW">GCompris</name>
   <summary>Educational game for children</summary>
+  <summary xml:lang="bg">Образователни игри за деца</summary>
+  <summary xml:lang="ca">Joc educatiu per a infants</summary>
+  <summary xml:lang="ca-valencia">Joc educatiu per a infants</summary>
+  <summary xml:lang="es">Juego educativo para niños</summary>
+  <summary xml:lang="nl">Educatief spel voor kinderen</summary>
+  <summary xml:lang="sl">Izobraževalna igra za otroke</summary>
+  <summary xml:lang="tr">Çocuklar için Oyunlar</summary>
+  <summary xml:lang="uk">Освітня гра для дітей</summary>
+  <summary xml:lang="x-test">xxEducational game for childrenxx</summary>
   <description>
     <p>GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</p>
     <p xml:lang="ar">فهمت هو طقم برمجيّات تعليميّة عالية الجودة يضمّ مختلف الأنشطة للأطفال من سنتين إلى 10 سنوات.</p>
