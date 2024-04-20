@@ -3,4 +3,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/note_names *.qml *.svg *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/note_names
+  QML_FILES
+  *.qml
+  *.js
+  resource/*.qml
+  RESOURCES
+  *.svg
+)

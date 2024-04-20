@@ -4,4 +4,13 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/programmingMaze *.qml *.svg *.js resource/*.* resource/*/*.*)
+GCOMPRIS_ADD_RCC(activities/programmingMaze
+  QML_FILES
+  *.qml
+  *.js
+  resource/*.qml
+  resource/*/*.qml
+  RESOURCES
+  *.svg
+  resource/*.svg
+)

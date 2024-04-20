@@ -3,4 +3,10 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/memory-wordnumber *.qml *.svg *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/memory-wordnumber
+  QML_FILES
+  *.qml
+  *.js
+  RESOURCES
+  *.svg
+)

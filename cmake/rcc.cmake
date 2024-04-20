@@ -10,9 +10,10 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   set(options)
   set(oneValueArgs)
-  set(multiValueArgs)
+  set(multiValueArgs QML_FILES RESOURCES DEPENDENCIES)
   cmake_parse_arguments(_RCC "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
-  set(rcc_files ${_RCC_UNPARSED_ARGUMENTS})
+  set(rcc_files "")
+  list(APPEND rcc_files ${_RCC_QML_FILES} ${_RCC_RESOURCES})
 
   get_filename_component(activity "${resource_path}" NAME)
 

@@ -4,4 +4,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/piano_composition *.qml *.svg *.js resource/*.* resource/*/*)
+GCOMPRIS_ADD_RCC(activities/piano_composition
+  QML_FILES
+  *.qml
+  *.js
+  RESOURCES
+  *.svg
+  resource/*.svg
+)

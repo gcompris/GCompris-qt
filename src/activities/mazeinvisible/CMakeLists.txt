@@ -3,4 +3,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/mazeinvisible *.qml *.svg *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/mazeinvisible
+  QML_FILES
+  *.qml
+  RESOURCES
+  *.svg
+)

@@ -3,4 +3,11 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/numbers-odd-even *.qml *.svg *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/numbers-odd-even
+  QML_FILES
+  *.qml
+  *.js
+  resource/*.qml
+  RESOURCES
+  *.svg
+)

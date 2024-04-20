@@ -29,4 +29,4 @@ foreach(ACTIVITY ${ACTIVITIES})
   endif(${match})
 endforeach(ACTIVITY ${ACTIVITIES})
 
-GCOMPRIS_ADD_RCC(activities activities_out.txt)
+GCOMPRIS_ADD_RCC(activities RESOURCES activities_out.txt)

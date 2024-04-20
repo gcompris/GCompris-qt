@@ -3,4 +3,13 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/tangram *.qml *.svg dataset.js tangram.js resource/*/*)
+GCOMPRIS_ADD_RCC(activities/tangram
+  QML_FILES
+  *.qml
+  dataset.js
+  tangram.js
+  RESOURCES
+  *.svg
+  resource/m-tangram/*.svg
+  resource/tangram/*.svg
+)

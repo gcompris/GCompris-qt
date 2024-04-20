@@ -3,4 +3,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/readingv *.qml *.svg)
+GCOMPRIS_ADD_RCC(activities/readingv
+  QML_FILES
+  *.qml
+  RESOURCES
+  *.svg
+)

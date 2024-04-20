@@ -3,4 +3,12 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/geo-country *.qml *.svg *.js resource/*/*.* resource/*/*/*.*)
+GCOMPRIS_ADD_RCC(activities/geo-country
+  QML_FILES
+  *.qml
+  resource/board/*.qml
+  resource/*/Data.qml
+  RESOURCES
+  *.svg
+  resource/*/*.svgz
+)
