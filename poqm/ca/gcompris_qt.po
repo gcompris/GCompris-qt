@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-03-16 09:55+0100\n"
+"PO-Revision-Date: 2024-04-19 22:14+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -13762,7 +13762,7 @@ msgstr "Bòsnia i Hercegovina"
 #: activities/geography/resource/board/board6_0.qml:175
 msgctxt "board6_0|"
 msgid "Belarus"
-msgstr "Bielorússia"
+msgstr "Belarús"
 
 #: activities/geography/resource/board/board6_0.qml:182
 msgctxt "board6_0|"
