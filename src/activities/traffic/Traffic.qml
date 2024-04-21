@@ -87,8 +87,9 @@ ActivityBase {
                     name: "verticalLayout"
                     when: items.isVertical
                     PropertyChanges {
-                        target: jamBox
-                        width: parent.width
+                        jamBox {
+                            width: parent.width
+                        }
                     }
                     AnchorChanges {
                         target: jamBox
@@ -100,8 +101,9 @@ ActivityBase {
                     name: "horizontalLayout"
                     when: !items.isVertical
                     PropertyChanges {
-                        target: jamBox
-                        width: parent.height - 64 * ApplicationInfo.ratio
+                        jamBox {
+                            width: parent.height - 64 * ApplicationInfo.ratio
+                        }
                     }
                     AnchorChanges {
                         target: jamBox
