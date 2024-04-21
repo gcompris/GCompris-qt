@@ -240,7 +240,7 @@ ActivityBase {
                     }
                 }
 
-                function updateScale(zoomDelta, x, y) {
+                function updateScale(zoomDelta: real, x: real, y: real) {
                     var xx1 = background.mapFromItem(miningBg, x, y)
                     var previousScale = miningBg.scale
                     var miningBgScale = miningBg.scale
@@ -402,9 +402,9 @@ ActivityBase {
 
                 property string newState
 
-                function setState(nextState) {
+                function setState(nextState: string) {
                     if(bar.level == 1) {
-                        if(newState != nextState) {
+                        if(newState !== nextState) {
                             newState = nextState
                             anim.restart()
                         }
@@ -418,55 +418,74 @@ ActivityBase {
                     State {
                         name: "Started"
                         PropertyChanges {
-                            target: tuto;
-                            text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
+                           tuto {
+                               text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
+                           }
                         }
                     },
                     State {
                         name: "Stopped"
-                        PropertyChanges { target: tuto; text: ""}
+                        PropertyChanges {
+                            tuto {
+                                text: ""
+                            }
+                        }
                     },
                     State {
                         name: "ZoomOk"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
+                            tuto {
+                                text: qsTr("Perfect you are zooming. Continue until you see the nugget.")
+                            }
+                        }
                     },
                     State {
                         name: "ZoomBad"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
+                            tuto {
+                                text: qsTr("Hum, take care, you are zooming too far from the sparkle.")
+                            }
+                        }
                     },
                     State {
                         name: "NuggetSeen"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Now you see the nugget, click on it to catch it.")}
+                            tuto {
+                                text: qsTr("Now you see the nugget, click on it to catch it.")
+                            }
+                        }
                     },
                     State {
                         name: "NuggetNotSeen"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
+                            tuto {
+                                text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")
+                            }
+                        }
                     },
                     State {
                         name: "Unzoom"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Now unzoom and try to find another sparkle.")}
+                            tuto {
+                            text: qsTr("Now unzoom and try to find another sparkle.")
+                            }
+                        }
                     },
                     State {
                         name: "UnzoomBad"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Continue to unzoom until you see the sparkle.")}
+                            tuto {
+                                text: qsTr("Continue to unzoom until you see the sparkle.")
+                            }
+                        }
                     },
                     State {
                         name: "UnzoomOk"
                         PropertyChanges {
-                            target: tuto
-                            text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
+                            tuto {
+                                text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")
+                            }
+                        }
                     }
                 ]
 
