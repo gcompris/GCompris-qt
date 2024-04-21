@@ -34,7 +34,7 @@ Image {
     property string type
     property int counter: 0
 
-    function getMultipleOfRatioToAdjustHeight() {
+    function getMultipleOfRatioToAdjustHeight(): real {
         return (background.width >= background.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
     }
 
