@@ -76,7 +76,7 @@ ActivityBase {
 
         MultiPointTouchArea {
             anchors.fill: parent
-            onTouchUpdated: {
+            onTouchUpdated: (touchPoints) => {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
 
