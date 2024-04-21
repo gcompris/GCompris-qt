@@ -72,7 +72,7 @@ Item {
                 triggerClick(mouse.button)
             }
 
-            function triggerClick(mouseButton) {
+            function triggerClick(mouseButton: enumeration) {
                 if(mouseButton === Qt.LeftButton)
                     leftClickTrigger()
                 else
@@ -97,9 +97,10 @@ Item {
                 parent: leftArea
             }
             PropertyChanges {
-                target: animal
-                x: (leftArea.width - animal.width) * 0.5
-                y: (leftArea.height - animal.height) * 0.75
+                animal {
+                    x: (leftArea.width - animal.width) * 0.5
+                    y: (leftArea.height - animal.height) * 0.75
+                }
             }
         },
         State {
@@ -109,9 +110,10 @@ Item {
                 parent: rightArea
             }
             PropertyChanges {
-                target: animal
-                x: (leftArea.width - animal.width) * 0.5
-                y: (leftArea.height - animal.height) * 0.5
+                animal {
+                    x: (leftArea.width - animal.width) * 0.5
+                    y: (leftArea.height - animal.height) * 0.5
+                }
             }
         }
     ]
