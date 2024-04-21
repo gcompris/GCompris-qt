@@ -128,7 +128,7 @@ ActivityBase {
                     margins: 10
                 }
                 // We don't want the wrapping to happen anywhere, set no break space
-                function addNbsp(str) {
+                function addNbsp(str: string): string {
                     return str.replace(" ", "&nbsp;");
                 }
             }
