@@ -109,8 +109,9 @@ ActivityBase {
                     anchors.top: problem.bottom
                 }
                 PropertyChanges {
-                    target: frame
-                    height: background.height - problem.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
+                    frame {
+                        height: background.height - problem.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
+                    }
                 }
             },
             State {
@@ -121,8 +122,9 @@ ActivityBase {
                     anchors.top: score.bottom
                 }
                 PropertyChanges {
-                    target: frame
-                    height: background.height - score.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
+                    frame {
+                        height: background.height - score.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
+                    }
                 }
             }
         ]
@@ -155,52 +157,60 @@ ActivityBase {
                     name: "horizontalImages"
                     when: !background.vert && !background.startedHelp
                     PropertyChanges {
-                        target: img1
-                        anchors.horizontalCenterOffset: -img1.width * 0.5 - 5 * ApplicationInfo.ratio
-                        anchors.verticalCenterOffset: 0
+                        img1 {
+                            anchors.horizontalCenterOffset: -img1.width * 0.5 - 5 * ApplicationInfo.ratio
+                            anchors.verticalCenterOffset: 0
+                        }
                     }
                     PropertyChanges {
-                        target: img2
-                        anchors.horizontalCenterOffset: img1.width * 0.5 + 5 * ApplicationInfo.ratio
-                        anchors.verticalCenterOffset: 0
+                        img2 {
+                            anchors.horizontalCenterOffset: img1.width * 0.5 + 5 * ApplicationInfo.ratio
+                            anchors.verticalCenterOffset: 0
+                        }
                     }
                 },
                 State {
                     name: "horizontalHelp"
                     when: !background.vert && background.startedHelp
                     PropertyChanges {
-                        target: img1
-                        anchors.horizontalCenterOffset: 0
-                        anchors.verticalCenterOffset: 0
+                        img1 {
+                            anchors.horizontalCenterOffset: 0
+                            anchors.verticalCenterOffset: 0
+                        }
                     }
                     PropertyChanges {
-                        target: img2
-                        anchors.horizontalCenterOffset: 0
-                        anchors.verticalCenterOffset: 0
+                        img2 {
+                            anchors.horizontalCenterOffset: 0
+                            anchors.verticalCenterOffset: 0
+                        }
                     }
                 },
                 State {
                     name: "verticalImages"
                     when: background.vert && !background.startedHelp
                     PropertyChanges {
-                        target: img1
-                        anchors.verticalCenterOffset: -img1.height * 0.5 - 5 * ApplicationInfo.ratio
+                        img1 {
+                            anchors.verticalCenterOffset: -img1.height * 0.5 - 5 * ApplicationInfo.ratio
+                        }
                     }
                     PropertyChanges {
-                        target: img2
-                        anchors.verticalCenterOffset: img1.height * 0.5 + 5 * ApplicationInfo.ratio
+                        img2 {
+                            anchors.verticalCenterOffset: img1.height * 0.5 + 5 * ApplicationInfo.ratio
+                        }
                     }
                 },
                 State {
                     name: "verticallHelp"
                     when: background.vert && background.startedHelp
                     PropertyChanges {
-                        target: img1
-                        anchors.verticalCenterOffset: 0
+                        img1 {
+                            anchors.verticalCenterOffset: 0
+                        }
                     }
                     PropertyChanges {
-                        target: img2
-                        anchors.verticalCenterOffset: 0
+                        img2 {
+                            anchors.verticalCenterOffset: 0
+                        }
                     }
                 }
             ]
