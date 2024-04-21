@@ -121,9 +121,10 @@ Item {
         states: State {
             name: "scaled"; when: mouseArea.containsMouse
             PropertyChanges {
-                target: carriageItem
-                scale: /*carriageImage.scale * */ 1.2
-                z: 2
+                carriageItem {
+                    scale: /*carriageImage.scale * */ 1.2
+                    z: 2
+                }
             }
         }
 
