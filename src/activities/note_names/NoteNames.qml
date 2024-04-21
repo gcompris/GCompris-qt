@@ -42,7 +42,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: introMessage
+        Keys.forwardTo: [introMessage]
 
         Keys.onPressed: (event) => {
             var keyNoteBindings = {}
@@ -164,7 +164,7 @@ ActivityBase {
 
             function getTranslatedNoteName(noteName) {
                 for(var i = 0; i < doubleOctave.keyNames.length; i++) {
-                    if(doubleOctave.keyNames[i][0] == noteName)
+                    if(doubleOctave.keyNames[i][0] === noteName)
                         return doubleOctave.keyNames[i][1]
                 }
                 return ""
