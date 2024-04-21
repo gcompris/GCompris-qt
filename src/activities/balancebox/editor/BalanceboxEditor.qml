@@ -34,7 +34,7 @@ Item {
     property bool isDialog: true
     property bool alwaysStart: true   // enforce start signal for configDialog-to-editor-transition
 
-    function handleBackEvent()
+    function handleBackEvent(): bool
     {
         if (!isTesting) {
             if (Activity.levelChanged)

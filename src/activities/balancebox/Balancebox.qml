@@ -58,7 +58,7 @@ ActivityBase {
                 displayDialog(editorLoader.item);
         }
 
-        function handleBackEvent() {
+        function handleBackEvent(): bool {
             if (activity.mode == "test") {
                 startEditor();
                 return true;
