@@ -397,15 +397,17 @@ ActivityBase {
                         State {
                             name: ""
                             PropertyChanges {
-                                target: numKey
-                                color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
+                                numKey {
+                                    color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
+                                }
                             }
                         },
                         State {
                             name: "pressed"
                             PropertyChanges {
-                                target: numKey
-                                color: "#999"
+                                numKey {
+                                    color: "#999"
+                                }
                             }
                         }
                     ]
