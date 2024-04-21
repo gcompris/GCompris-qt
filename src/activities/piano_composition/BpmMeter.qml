@@ -94,24 +94,27 @@ Item {
             State {
                 name: "notclicked"
                 PropertyChanges {
-                    target: bpmDown
-                    scale: 1.0
+                    bpmDown {
+                        scale: 1.0
+                    }
                 }
             },
             State {
                 name: "clicked"
                 when: mouseDown.pressed
                 PropertyChanges {
-                    target: bpmDown
-                    scale: 0.9
+                    bpmDown {
+                        scale: 0.9
+                    }
                 }
             },
             State {
                 name: "hover"
                 when: mouseDown.containsMouse
                 PropertyChanges {
-                    target: bpmDown
-                    scale: 1.1
+                    bpmDown {
+                        scale: 1.1
+                    }
                 }
             }
         ]
@@ -159,24 +162,27 @@ Item {
             State {
                 name: "notclicked"
                 PropertyChanges {
-                    target: bpmUp
-                    scale: 1.0
+                    bpmUp {
+                        scale: 1.0
+                    }
                 }
             },
             State {
                 name: "clicked"
                 when: mouseUp.pressed
                 PropertyChanges {
-                    target: bpmUp
-                    scale: 0.9
+                    bpmUp {
+                        scale: 0.9
+                    }
                 }
             },
             State {
                 name: "hover"
                 when: mouseUp.containsMouse
                 PropertyChanges {
-                    target: bpmUp
-                    scale: 1.1
+                    bpmUp {
+                        scale: 1.1
+                    }
                 }
             }
         ]

@@ -97,7 +97,7 @@ Rectangle {
         optionsRow.lyricsOrPianoModeIndex = 0
     }
 
-    function setLyrics(title, origin, lyrics) {
+    function setLyrics(title: string, origin: string, lyrics: string) {
         resetLyricsArea()
         lyricsArea.title = title
         lyricsArea.origin = origin

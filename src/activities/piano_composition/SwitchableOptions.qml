@@ -39,24 +39,27 @@ Image {
         State {
             name: "notclicked"
             PropertyChanges {
-                target: switchableOptions
-                scale: 1.0
+                switchableOptions {
+                    scale: 1.0
+                }
             }
         },
         State {
             name: "clicked"
             when: mouseArea.pressed
             PropertyChanges {
-                target: switchableOptions
-                scale: 0.9
+                switchableOptions {
+                    scale: 0.9
+                }
             }
         },
         State {
             name: "hover"
             when: mouseArea.containsMouse
             PropertyChanges {
-                target: switchableOptions
-                scale: 1.1
+                switchableOptions {
+                    scale: 1.1
+                }
             }
         }
     ]

@@ -478,17 +478,19 @@ ActivityBase {
                 name: "hScreen"
                 when: horizontalLayout
                 PropertyChanges {
-                    target: clickedOptionMessage
-                    width: background.width / 12
+                    clickedOptionMessage {
+                        width: background.width / 12
+                    }
                 }
                 AnchorChanges {
                     target: optionsRow
                     anchors.top: instructionBox.bottom
                 }
                 PropertyChanges {
-                    target: optionsRow
-                    columns: 11
-                    iconsWidth: background.width / 15
+                    optionsRow {
+                        columns: 11
+                        iconsWidth: background.width / 15
+                    }
                 }
                 AnchorChanges {
                     target: multipleStaff
@@ -496,9 +498,10 @@ ActivityBase {
                     anchors.top: optionsRow.bottom
                 }
                 PropertyChanges {
-                    target: multipleStaff
-                    width: background.width * 0.5 - multipleStaffFlickButton.width - layoutMargins * 3
-                    height: background.height - instructionBox.height - optionsRow.height - bar.height - layoutMargins * 4
+                    multipleStaff {
+                        width: background.width * 0.5 - multipleStaffFlickButton.width - layoutMargins * 3
+                        height: background.height - instructionBox.height - optionsRow.height - bar.height - layoutMargins * 4
+                    }
                 }
                 AnchorChanges {
                     target: pianoLayout
@@ -510,17 +513,19 @@ ActivityBase {
                 name: "vScreen"
                 when: !horizontalLayout
                 PropertyChanges {
-                    target: clickedOptionMessage
-                    width: background.width / 6
+                    clickedOptionMessage {
+                        width: background.width / 6
+                    }
                 }
-                AnchorChanges{
+                AnchorChanges {
                     target: optionsRow
                     anchors.top: background.top
                 }
                 PropertyChanges {
-                    target: optionsRow
-                    columns: 1
-                    iconsWidth: (background.height - bar.height) / 12
+                    optionsRow {
+                        columns: 1
+                        iconsWidth: (background.height - bar.height) / 12
+                    }
                 }
                 AnchorChanges {
                     target: multipleStaff
@@ -528,9 +533,10 @@ ActivityBase {
                     anchors.top: instructionBox.bottom
                 }
                 PropertyChanges {
-                    target: multipleStaff
-                    width: background.width - multipleStaffFlickButton.width - optionsRow.width - layoutMargins * 3
-                    height: (background.height - instructionBox.height - bar.height - layoutMargins * 4) * 0.5
+                    multipleStaff {
+                        width: background.width - multipleStaffFlickButton.width - optionsRow.width - layoutMargins * 3
+                        height: (background.height - instructionBox.height - bar.height - layoutMargins * 4) * 0.5
+                    }
                 }
                 AnchorChanges {
                     target: pianoLayout

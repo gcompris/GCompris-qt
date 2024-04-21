@@ -247,7 +247,7 @@ Item {
      *
      * @param clefType: The clef type to be initialized.
      */
-    function initClefs(clefType) {
+    function initClefs(clefType: string) {
         musicElementModel.clear()
         musicElementModel.append({ "elementType_": "clef", "clefType_": clefType, "staffNb_": 0, "isDefaultClef_": true,
                                    "noteName_": "", "noteType_": "", "soundPitch_": clefType,
@@ -270,20 +270,20 @@ Item {
         }
     }
 
+    readonly property var notes: NoteNotations.get()
     /**
      * Gets all the details of any note like note image, position on staff etc. from NoteNotations.
      */
-    function getNoteDetails(noteName, noteType, clefType) {
-        var notesDetails = NoteNotations.get()
+    function getNoteDetails(noteName: string, noteType: string, clefType: string) {
         var noteNotation
         if(noteType === "Rest")
             noteNotation = noteName + noteType
         else
             noteNotation = clefType + noteName
 
-        for(var i = 0; i < notesDetails.length; i++) {
-            if(noteNotation === notesDetails[i].noteName) {
-                return notesDetails[i]
+        for(var i = 0; i < notes.length; i++) {
+            if(noteNotation === notes[i].noteName) {
+                return notes[i]
             }
         }
     }
@@ -292,7 +292,7 @@ Item {
      * Adds a note to the staff.
      */
     function addMusicElement(elementType, noteName, noteType, highlightWhenPlayed, playAudio, clefType, soundPitch, isUnflicked) {
-        if(soundPitch == undefined || soundPitch === "")
+        if(soundPitch === undefined || soundPitch === "")
             soundPitch = clefType
 
         var isNextStaff = (selectedIndex == -1) && musicElementModel.count && ((staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width) < multipleStaff.clefImageWidth)
