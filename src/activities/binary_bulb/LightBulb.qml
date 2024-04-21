@@ -65,23 +65,27 @@ Item {
         State {
             name: "off"
             PropertyChanges {
-                target: bulb
-                bit: "0"
+                bulb {
+                    bit: "0"
+                }
             }
             PropertyChanges {
-                target: bulbImage
-                source: "resource/bulb_off.svg"
+                bulbImage {
+                    source: "resource/bulb_off.svg"
+                }
             }
         },
         State {
             name: "on"
             PropertyChanges {
-                target: bulb
-                bit: "1"
+                bulb {
+                    bit: "1"
+                }
             }
             PropertyChanges {
-                target: bulbImage
-                source: "resource/bulb_on.svg"
+                bulbImage {
+                    source: "resource/bulb_on.svg"
+                }
             }
         }
     ]

@@ -48,7 +48,6 @@ Rectangle {
         Repeater {
             model: ["128", "64", "32", "16", "8", "4", "2", "1"]
             Item {
-                id: item128
                 width: parent.width / 8
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
@@ -105,7 +104,6 @@ Rectangle {
         Repeater {
             model: ["off", "off", "off", "off", "off", "off", "off", "off"]
             Item {
-                id: item128
                 width: parent.width / 8
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
@@ -128,7 +126,6 @@ Rectangle {
         Repeater {
             model: ["0", "0", "0", "0", "0", "0", "0", "0"]
             Item {
-                id: item128
                 width: parent.width / 8
                 height: parent.height
                 anchors.verticalCenter: parent.verticalCenter
