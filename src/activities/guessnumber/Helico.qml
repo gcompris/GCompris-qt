@@ -45,15 +45,17 @@ Image {
         State {
             name: "horizontal"
             PropertyChanges {
-                target: helicoRotation
-                angle: 0
+                helicoRotation {
+                    angle: 0
+                }
             }
         },
         State {
             name: "advancing"
             PropertyChanges {
-                target: helicoRotation
-                angle: 25
+                helicoRotation {
+                    angle: 25
+                }
             }
         }
     ]
