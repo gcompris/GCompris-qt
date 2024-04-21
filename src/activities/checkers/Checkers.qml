@@ -289,7 +289,6 @@ ActivityBase {
         Repeater {
             id: squares
             model: items.positions
-            delegate: squareArea
             parent: chessboard
 
             DropArea {
@@ -327,7 +326,6 @@ ActivityBase {
         Repeater {
             id: pieces
             model: items.positions
-            delegate: piece
             parent: chessboard
 
             Piece {
