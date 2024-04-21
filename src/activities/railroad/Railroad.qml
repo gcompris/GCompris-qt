@@ -68,7 +68,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: introMessage
+        Keys.forwardTo: [introMessage]
 
         Keys.onPressed: (event) => {
             items.keyNavigationMode = true;
@@ -207,8 +207,9 @@ ActivityBase {
                         name: "wagonHover"
                         when: displayWagonMouseArea.containsMouse && (items.memoryMode === true)
                         PropertyChanges {
-                            target: wagon
-                            scale: 1.1
+                            wagon {
+                                scale: 1.1
+                            }
                         }
                     }
                 }
@@ -425,8 +426,9 @@ ActivityBase {
                     name: "carHover"
                     when: mouseArea.containsMouse
                     PropertyChanges {
-                        target: loco
-                        scale: 1.1
+                        loco {
+                            scale: 1.1
+                        }
                     }
                 }
             }
