@@ -140,9 +140,10 @@ ActivityBase {
                 id: horizontalLayout
                 when: background.isHorizontalLayout
                 PropertyChanges {
-                    target: wordDisplayListBg
-                    anchors.margins: background.baseMargins
-                    width: 0.45 * mainArea.width
+                    wordDisplayListBg {
+                        anchors.margins: background.baseMargins
+                        width: 0.45 * mainArea.width
+                    }
                 }
                 AnchorChanges {
                     target: wordDisplayListBg
@@ -150,10 +151,11 @@ ActivityBase {
                     anchors.bottom: mainArea.bottom
                 }
                 PropertyChanges {
-                    target: wordToFindBoxBg
-                    anchors.margins: background.baseMargins
-                    width: mainArea.width * 0.45
-                    height: mainArea.height * 0.3
+                    wordToFindBoxBg {
+                        anchors.margins: background.baseMargins
+                        width: mainArea.width * 0.45
+                        height: mainArea.height * 0.3
+                    }
                 }
                 AnchorChanges {
                     target: wordToFindBoxBg
@@ -161,8 +163,9 @@ ActivityBase {
                     anchors.top: mainArea.top
                 }
                 PropertyChanges {
-                    target: buttonsArea
-                    height: wordDisplayListBg.height * 0.5
+                    buttonsArea {
+                        height: wordDisplayListBg.height * 0.5
+                    }
                 }
                 AnchorChanges {
                     target: buttonsArea
@@ -177,8 +180,9 @@ ActivityBase {
                 id: verticalLayout
                 when: !background.isHorizontalLayout
                 PropertyChanges {
-                    target: wordDisplayListBg
-                    anchors.margins: background.baseMargins
+                    wordDisplayListBg {
+                        anchors.margins: background.baseMargins
+                    }
                 }
                 AnchorChanges {
                     target: wordDisplayListBg
@@ -188,10 +192,11 @@ ActivityBase {
                     anchors.right: mainArea.right
                 }
                 PropertyChanges {
-                    target: wordToFindBoxBg
-                    anchors.margins: 0
-                    width: mainArea.width - 4 * background.baseMargins
-                    height: mainArea.height * 0.2
+                    wordToFindBoxBg {
+                        anchors.margins: 0
+                        width: mainArea.width - 4 * background.baseMargins
+                        height: mainArea.height * 0.2
+                    }
                 }
                 AnchorChanges {
                     target: wordToFindBoxBg
@@ -199,8 +204,9 @@ ActivityBase {
                     anchors.top: mainArea.top
                 }
                 PropertyChanges {
-                    target: buttonsArea
-                    height: wordDisplayListBg.height * 0.5
+                    buttonsArea {
+                        height: wordDisplayListBg.height * 0.5
+                    }
                 }
                 AnchorChanges {
                     target: buttonsArea
