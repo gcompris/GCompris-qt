@@ -40,7 +40,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: message
+        Keys.forwardTo: [message]
 
         onStart: {}
         onStop: {
@@ -136,10 +136,11 @@ ActivityBase {
                     name: "verticalLayout"
                     when: items.isVertical
                     PropertyChanges {
-                        target: layoutArea
-                        width: parent.width
-                        anchors.bottomMargin: bar.height * 0.2
-                        anchors.leftMargin: 0
+                        layoutArea {
+                            width: parent.width
+                            anchors.bottomMargin: bar.height * 0.2
+                            anchors.leftMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: layoutArea
@@ -151,10 +152,11 @@ ActivityBase {
                     name: "horizontalLayout"
                     when: !items.isVertical
                     PropertyChanges {
-                        target: layoutArea
-                        width: parent.height - bar.height * 1.2
-                        anchors.bottomMargin: 0
-                        anchors.leftMargin: 10 * ApplicationInfo.ratio
+                        layoutArea {
+                            width: parent.height - bar.height * 1.2
+                            anchors.bottomMargin: 0
+                            anchors.leftMargin: 10 * ApplicationInfo.ratio
+                        }
                     }
                     AnchorChanges {
                         target: layoutArea
@@ -218,25 +220,28 @@ ActivityBase {
                 State {
                     name: "tuxboatLeft"
                     PropertyChanges {
-                        target: tuxboat
-                        anchors.leftMargin: 0
-                        opacity: 1
+                        tuxboat {
+                            anchors.leftMargin: 0
+                            opacity: 1
+                        }
                     }
                 },
                 State {
                     name: "tuxboatRight"
                     PropertyChanges {
-                        target: tuxboat
-                        anchors.leftMargin: layoutArea.width - tuxboat.width
-                        opacity: 0
+                        tuxboat {
+                            anchors.leftMargin: layoutArea.width - tuxboat.width
+                            opacity: 0
+                        }
                     }
                 },
                 State {
                     name: "tuxboatRestarted"
                     PropertyChanges {
-                        target: tuxboat
-                        anchors.leftMargin: layoutArea.width - tuxboat.width
-                        opacity: 0
+                        tuxboat {
+                            anchors.leftMargin: layoutArea.width - tuxboat.width
+                            opacity: 0
+                        }
                     }
                 }
             ]
@@ -246,9 +251,9 @@ ActivityBase {
                     from: "tuxboatLeft"; to: "tuxboatRight";
                     SequentialAnimation {
                         ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav") }
-                        NumberAnimation { property: "anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
+                        NumberAnimation { property: "tuxboat.anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
                         ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav") }
-                        NumberAnimation { property: "opacity"; easing.type: Easing.InOutQuad; duration: 200 }
+                        NumberAnimation { property: "tuxboat.opacity"; easing.type: Easing.InOutQuad; duration: 200 }
                         ScriptAction { script: {
                                 boatparked.opacity = 1;
                                 shower.stop();
@@ -260,12 +265,12 @@ ActivityBase {
                 },
                 Transition {
                     from: "tuxboatRight"; to: "tuxboatLeft";
-                    PropertyAction { properties: "anchors.leftMargin, opacity" }
+                    PropertyAction { properties: "tuxboat.anchors.leftMargin, tuxboat.opacity" }
                     ScriptAction { script: boatparked.opacity = 0 }
                 },
                 Transition {
                     from: "tuxboatRight, tuxboatLeft"; to: "tuxboatRestarted"
-                    PropertyAction { properties: "anchors.leftMargin, opacity" }
+                    PropertyAction { properties: "tuxboat.anchors.leftMargin, tuxboat.opacity" }
                 }
             ]
         }
@@ -314,15 +319,17 @@ ActivityBase {
                 State {
                     name: "sunDown"
                     PropertyChanges {
-                        target: sun
-                        anchors.topMargin: layoutArea.height * 0.256
+                        sun {
+                            anchors.topMargin: layoutArea.height * 0.256
+                        }
                     }
                 },
                 State {
                     name: "sunUp"
                     PropertyChanges {
-                        target: sun
-                        anchors.topMargin: layoutArea.height * 0.056
+                        sun {
+                            anchors.topMargin: layoutArea.height * 0.056
+                        }
                     }
                 }
             ]
@@ -330,7 +337,7 @@ ActivityBase {
             transitions: [
                 Transition {
                     from: "sunUp"; to: "sunDown";
-                    NumberAnimation { property: "anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
+                    NumberAnimation { property: "sun.anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
                 },
                 Transition {
                     from: "sunDown"; to: "sunUp";
@@ -343,7 +350,7 @@ ActivityBase {
                             cloud.isUp = true;
                         }
                     }
-                    NumberAnimation { property: "anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
+                    NumberAnimation { property: "sun.anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
                 }
             ]
         }
@@ -368,25 +375,28 @@ ActivityBase {
                 State {
                     name: "vaporDown"
                     PropertyChanges {
-                        target: vapor
-                        opacity: 0
-                        anchors.topMargin: layoutArea.height * 0.28
+                        vapor {
+                            opacity: 0
+                            anchors.topMargin: layoutArea.height * 0.28
+                        }
                     }
                 },
                 State {
                     name: "vaporUp"
                     PropertyChanges {
-                        target: vapor
-                        opacity: 1
-                        anchors.topMargin: layoutArea.height * 0.1
+                        vapor {
+                            opacity: 1
+                            anchors.topMargin: layoutArea.height * 0.1
+                        }
                     }
                 },
                 State {
                     name: "vaporDownRestarted"
                     PropertyChanges {
-                        target: vapor
-                        opacity: 0
-                        anchors.topMargin: layoutArea.height * 0.28
+                        vapor {
+                            opacity: 0
+                            anchors.topMargin: layoutArea.height * 0.28
+                        }
                     }
                 }
             ]
@@ -395,16 +405,16 @@ ActivityBase {
                 Transition {
                     from: "vaporDown, vaporDownRestarted"; to: "vaporUp";
                     SequentialAnimation {
-                        NumberAnimation { property: "opacity"; duration: 200 }
-                        NumberAnimation { property: "anchors.topMargin"; duration: 5000 }
+                        NumberAnimation { property: "vapor.opacity"; duration: 200 }
+                        NumberAnimation { property: "vapor.anchors.topMargin"; duration: 5000 }
                         ScriptAction { script: vapor.state = "vaporDown" }
                     }
                 },
                 Transition {
                     from: "vaporUp"; to: "vaporDown";
                     SequentialAnimation {
-                        NumberAnimation { property: "opacity"; duration: 200 }
-                        PropertyAction { property: "anchors.topMargin" }
+                        NumberAnimation { property: "vapor.opacity"; duration: 200 }
+                        PropertyAction { property: "vapor.anchors.topMargin" }
                         ScriptAction { script: {
                                 if(vapor.animLoop === true) {
                                     vapor.animLoop = false;
@@ -419,7 +429,7 @@ ActivityBase {
                 Transition {
                     from: "vaporUp, vaporDown"; to: "vaporDownRestarted";
                     ScriptAction { script: vapor.animLoop = false }
-                    PropertyAction { properties: "anchors.topMargin, opacity" }
+                    PropertyAction { properties: "vapor.anchors.topMargin, vapor.opacity" }
                 }
             ]
         }
@@ -447,20 +457,22 @@ ActivityBase {
                     name: "cloudIsDown"
                     when: !cloud.isUp
                     PropertyChanges {
-                        target: cloud
-                        opacity: 0
-                        width: 0
-                        anchors.leftMargin: cloud.originMargin
+                        cloud {
+                            opacity: 0
+                            width: 0
+                            anchors.leftMargin: cloud.originMargin
+                        }
                     }
                 },
                 State {
                     name: "cloudIsUp"
                     when: cloud.isUp
                     PropertyChanges {
-                        target: cloud
-                        opacity: 1
-                        width: cloud.sourceSize.width
-                        anchors.leftMargin: cloud.upMargin
+                        cloud {
+                            opacity: 1
+                            width: cloud.sourceSize.width
+                            anchors.leftMargin: cloud.upMargin
+                        }
                     }
                 }
             ]
@@ -468,12 +480,12 @@ ActivityBase {
             transitions: [
                 Transition {
                     from: "cloudIsDown"; to: "cloudIsUp";
-                    NumberAnimation { property: "opacity"; easing.type: Easing.InOutQuad; duration: 5000 }
-                    NumberAnimation { properties: "width, anchors.leftMargin"; easing.type: Easing.InOutQuad; duration: 15000 }
+                    NumberAnimation { property: "cloud.opacity"; easing.type: Easing.InOutQuad; duration: 5000 }
+                    NumberAnimation { properties: "cloud.width, cloud.anchors.leftMargin"; easing.type: Easing.InOutQuad; duration: 15000 }
                 },
                 Transition {
                     from: "cloudIsUp"; to: "cloudIsDown";
-                    PropertyAction { properties: "opacity, width, anchors.leftMargin" }
+                    PropertyAction { properties: "cloud.opacity, cloud.width, cloud.anchors.leftMargin" }
                 }
             ]
 
@@ -866,24 +878,21 @@ ActivityBase {
                     name: "verticalInfo"
                     when: items.isVertical
                     PropertyChanges {
-                        target: info
-                        anchors.leftMargin: 5 * ApplicationInfo.ratio
+                        info.anchors.leftMargin: 5 * ApplicationInfo.ratio
                     }
                 },
                 State {
                     name: "horizontalInfoSide"
                     when: !items.isVertical && items.textOnSide
                     PropertyChanges {
-                        target: info
-                        anchors.leftMargin: layoutArea.width + 15 * ApplicationInfo.ratio
+                        info.anchors.leftMargin: layoutArea.width + 15 * ApplicationInfo.ratio
                     }
                 },
                 State {
                     name: "horizontalInfoOver"
                     when: !items.isVertical && !items.textOnSide
                     PropertyChanges {
-                        target: info
-                        anchors.leftMargin: parent.width * 0.5
+                        info.anchors.leftMargin: parent.width * 0.5
                     }
                 }
             ]
