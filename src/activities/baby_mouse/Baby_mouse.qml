@@ -269,7 +269,7 @@ ActivityBase {
                                                                   arrowsArea.leftArrow.moveDuckToLeft()
         }
 
-        function moveDuckHorizontally(moveX) {
+        function moveDuckHorizontally(moveX: real) {
             mainArea.previousDuckX = mainArea.mainDuckX
 
             // Duck Motion in x-direction.
@@ -284,7 +284,7 @@ ActivityBase {
             }
         }
 
-        function moveDuckVertically(moveY) {
+        function moveDuckVertically(moveY: real) {
             mainArea.previousDuckY = mainArea.mainDuckY
 
             // Duck Motion in y-direction.
@@ -359,7 +359,7 @@ ActivityBase {
             property alias downArrow: downArrow
             property alias rightArrow: rightArrow
 
-            function contains(x, y, item) {
+            function contains(x: real, y: real, item) {
                 return (x > item.x && x < item.x + item.width &&
                         y > item.y && y < item.y + item.height)
             }
