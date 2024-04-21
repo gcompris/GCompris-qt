@@ -45,10 +45,11 @@ Item {
                         anchors.verticalCenter: undefined
                     }
                     PropertyChanges {
-                        target: planetNameText
-                        anchors.bottomMargin: 20 * ApplicationInfo.ratio
-                        anchors.leftMargin: 0
-                        horizontalAlignment: Text.AlignHCenter
+                        planetNameText {
+                            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+                            anchors.leftMargin: 0
+                            horizontalAlignment: Text.AlignHCenter
+                        }
                     }
                 },
                 State {
@@ -62,10 +63,11 @@ Item {
                         anchors.verticalCenter: planetItem.verticalCenter
                     }
                     PropertyChanges {
-                        target: planetNameText
-                        anchors.bottomMargin: 0
-                        anchors.leftMargin: 20 * ApplicationInfo.ratio
-                        horizontalAlignment: Text.AlignLeft
+                        planetNameText {
+                            anchors.bottomMargin: 0
+                            anchors.leftMargin: 20 * ApplicationInfo.ratio
+                            horizontalAlignment: Text.AlignLeft
+                        }
                     }
                 }
 
@@ -100,12 +102,14 @@ Item {
                 name: "hover"
                 when: planetHovered
                 PropertyChanges {
-                    target: planetNameText
-                    scale: 1.2
+                    planetNameText {
+                        scale: 1.2
+                    }
                 }
                 PropertyChanges {
-                    target: planetImage
-                    scale: 1.2
+                    planetImage {
+                        scale: 1.2
+                    }
                 }
             }
         ]

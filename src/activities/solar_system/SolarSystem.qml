@@ -82,7 +82,7 @@ ActivityBase {
         property bool keyboardMode: false
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: message
+        Keys.forwardTo: [message]
 
         Keys.onPressed: (event) => {
             if(!mainQuizScreen.visible) {
@@ -222,15 +222,16 @@ ActivityBase {
                     anchors.top: undefined
                 }
                 PropertyChanges {
-                    target: planetView
-                    width: background.width
-                    height: cellHeight
-
+                    planetView {
+                        width: background.width
+                        height: planetView.cellHeight
+                    }
                 }
                 PropertyChanges {
-                    target: stars
-                    x: -stars.width * 0.48
-                    y: -stars.height * 0.5 + background.height * 0.5
+                    stars {
+                        x: -stars.width * 0.48
+                        y: -stars.height * 0.5 + background.height * 0.5
+                    }
                 }
             },
             State {
@@ -243,14 +244,16 @@ ActivityBase {
                     anchors.top: background.top
                 }
                 PropertyChanges {
-                    target: planetView
-                    width: cellWidth
-                    height: background.height - bar.height * 1.5
+                    planetView {
+                        width: planetView.cellWidth
+                        height: background.height - bar.height * 1.5
+                    }
                 }
                 PropertyChanges {
-                    target: stars
-                    x: -stars.width * 0.5 + background.width * 0.5
-                    y: -stars.height * 0.5 + background.height * 0.9
+                    stars {
+                        x: -stars.width * 0.5 + background.width * 0.5
+                        y: -stars.height * 0.5 + background.height * 0.9
+                    }
                 }
             }
         ]
