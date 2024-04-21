@@ -27,15 +27,15 @@ Rectangle {
     states: [
         State {
             name: "badAnswer"
-            PropertyChanges {target: answerBackground ; color: "#ea5454"} //red
+            PropertyChanges { answerBackground { color: "#ea5454" } } //red
         },
         State {
             name: "goodAnswer"
-            PropertyChanges {target: answerBackground ; color: "#54ea54"} //green
+            PropertyChanges { answerBackground { color: "#54ea54"} } //green
         },
         State {
             name: "default"
-            PropertyChanges {target: answerBackground ; color: activeFocus ? "#63ede5" : "#eeeeee"} //light blue, grey
+            PropertyChanges { answerBackground { color: activeFocus ? "#63ede5" : "#eeeeee"} } //light blue, grey
         }
     ]
 
@@ -89,7 +89,7 @@ Rectangle {
             appendText(event.text);
     }
 
-    function appendText(text) {
+    function appendText(text: string) {
         var number = parseInt(text)
         if(isNaN(number))
             return
@@ -108,7 +108,7 @@ Rectangle {
         } else {
             Activity.setUserAnswer(imgPath, parseInt(userEntry.text));
             Activity.enableOkButton();
-            }
+        }
     }
 
     GCText {
