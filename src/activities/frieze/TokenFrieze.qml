@@ -54,8 +54,9 @@ Item {
         State {
             name: "fade"
             PropertyChanges {
-                target: image
-                opacity: 0.0
+                image {
+                    opacity: 0.0
+                }
             }
         }
     ]
