@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/reversecount
+GCOMPRIS_ADD_RESOURCE(activities/reversecount
   QML_FILES
   *.qml
   *.js

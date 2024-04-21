@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/watercycle
+GCOMPRIS_ADD_RESOURCE(activities/watercycle
   QML_FILES
   *.qml
   RESOURCES

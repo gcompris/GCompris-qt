@@ -5,7 +5,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/railroad
+GCOMPRIS_ADD_RESOURCE(activities/railroad
   QML_FILES
   *.qml
   *.js

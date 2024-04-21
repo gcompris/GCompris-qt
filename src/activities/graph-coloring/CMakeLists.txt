@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/graph-coloring
+GCOMPRIS_ADD_RESOURCE(activities/graph-coloring
   QML_FILES
   *.qml
   *.js

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/memory-sound-tux
+GCOMPRIS_ADD_RESOURCE(activities/memory-sound-tux
   QML_FILES
   *.qml
   RESOURCES

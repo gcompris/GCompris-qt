@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/superbrain
+GCOMPRIS_ADD_RESOURCE(activities/superbrain
   QML_FILES
   *.qml
   *.js

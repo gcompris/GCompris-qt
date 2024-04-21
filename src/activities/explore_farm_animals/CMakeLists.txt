@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/explore_farm_animals
+GCOMPRIS_ADD_RESOURCE(activities/explore_farm_animals
   QML_FILES
   *.qml
   *.js

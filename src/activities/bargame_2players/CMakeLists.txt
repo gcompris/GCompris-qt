@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/bargame_2players
+GCOMPRIS_ADD_RESOURCE(activities/bargame_2players
   QML_FILES
   *.qml
   RESOURCES

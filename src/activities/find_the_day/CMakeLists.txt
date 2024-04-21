@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/find_the_day
+GCOMPRIS_ADD_RESOURCE(activities/find_the_day
   QML_FILES
   *.qml
   *.js

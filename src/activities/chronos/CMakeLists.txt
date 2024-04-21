@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/chronos
+GCOMPRIS_ADD_RESOURCE(activities/chronos
   QML_FILES
   *.qml
   *.js

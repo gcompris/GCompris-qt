@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/clockgame
+GCOMPRIS_ADD_RESOURCE(activities/clockgame
   QML_FILES
   *.qml
   *.js

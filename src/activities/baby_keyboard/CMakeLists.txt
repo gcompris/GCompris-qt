@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/baby_keyboard
+GCOMPRIS_ADD_RESOURCE(activities/baby_keyboard
   QML_FILES
   *.qml
   *.js

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/braille_alphabets
+GCOMPRIS_ADD_RESOURCE(activities/braille_alphabets
   QML_FILES
   *.qml
   *.js

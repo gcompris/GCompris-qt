@@ -102,22 +102,43 @@ endif()
 
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
-GCOMPRIS_ADD_RCC(core
-  QML_FILES
-  *.qml
-  *.js
-  RESOURCES
-  resource/*.${COMPRESSED_AUDIO}
-  resource/*.gif
-  resource/*.png
-  resource/*.svg
-  resource/*.pem
-  resource/bonus/*
-  resource/sounds/*
-  resource/fonts/*.*
-  qmldir
-  COPYING
-)
+if(WITH_RCC)
+  GCOMPRIS_ADD_RCC(core
+    QML_FILES
+    *.qml
+    *.js
+    RESOURCES
+    resource/*.${COMPRESSED_AUDIO}
+    resource/*.gif
+    resource/*.png
+    resource/*.svg
+    resource/*.pem
+    resource/bonus/*
+    resource/sounds/*
+    resource/fonts/*.*
+    qmldir
+    COPYING
+  )
+else()
+  add_library(core SHARED)
+  file(GLOB core_qml_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.js)
+  file(GLOB core_resources_files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/*.pem resource/bonus/* resource/sounds/* resource/fonts/*.*)
+
+  set_source_files_properties(GCSingletonFontLoader.qml PROPERTIES
+    QT_QML_SINGLETON_TYPE TRUE
+    )
+  qt_add_qml_module(
+    core
+    URI core
+    RESOURCE_PREFIX /gcompris/src/
+    VERSION 1.0
+    QML_FILES
+    ${core_qml_files}
+    RESOURCES
+    ${core_resources_files}
+    )
+  target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} core)
+endif()
 
 if(ANDROID)
   set_property(TARGET ${GCOMPRIS_EXECUTABLE_NAME} PROPERTY SUFFIX "_${CMAKE_ANDROID_ARCH_ABI}.so")

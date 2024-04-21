@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/hanoi
+GCOMPRIS_ADD_RESOURCE(activities/hanoi
   QML_FILES
   *.qml
   RESOURCES

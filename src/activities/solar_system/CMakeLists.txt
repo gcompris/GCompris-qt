@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/solar_system
+GCOMPRIS_ADD_RESOURCE(activities/solar_system
   QML_FILES
   *.qml
   *.js

@@ -2,7 +2,7 @@
 # SPDX-FileCopyrightText: 2021 Mariam Fahmy <mariamfahmy66@gmail.com>
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/baby_mouse
+GCOMPRIS_ADD_RESOURCE(activities/baby_mouse
   QML_FILES
   *.qml
   *.js

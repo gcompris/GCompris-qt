@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/chess_partyend
+GCOMPRIS_ADD_RESOURCE(activities/chess_partyend
   QML_FILES
   *.qml
   RESOURCES

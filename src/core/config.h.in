@@ -36,4 +36,5 @@
 /* Defines the renderer backend: Qt software renderer (requires Qt 5.8), openGL or default one */
 #define GRAPHICAL_RENDERER "@GRAPHICAL_RENDERER@"
 
+#cmakedefine WITH_RCC
 #endif // GCOMPRIS_CONFIG_H

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/simplepaint
+GCOMPRIS_ADD_RESOURCE(activities/simplepaint
   QML_FILES
   *.qml
   *.js

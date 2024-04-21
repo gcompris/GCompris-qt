@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/tangram
+GCOMPRIS_ADD_RESOURCE(activities/tangram
   QML_FILES
   *.qml
   dataset.js

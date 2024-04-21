@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/color_mix_light
+GCOMPRIS_ADD_RESOURCE(activities/color_mix_light
   QML_FILES
   *.qml
   RESOURCES

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/scalesboard_weight_avoirdupois
+GCOMPRIS_ADD_RESOURCE(activities/scalesboard_weight_avoirdupois
   QML_FILES
   *.qml
   *.js

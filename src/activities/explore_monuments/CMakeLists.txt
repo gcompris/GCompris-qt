@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/explore_monuments
+GCOMPRIS_ADD_RESOURCE(activities/explore_monuments
   QML_FILES
   *.qml
   resource/board/*.qml

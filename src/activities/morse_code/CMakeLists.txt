@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/morse_code
+GCOMPRIS_ADD_RESOURCE(activities/morse_code
   QML_FILES
   *.qml
   *.js

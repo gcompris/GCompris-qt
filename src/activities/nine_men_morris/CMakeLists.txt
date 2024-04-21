@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/nine_men_morris
+GCOMPRIS_ADD_RESOURCE(activities/nine_men_morris
   QML_FILES
   *.qml
   *.js

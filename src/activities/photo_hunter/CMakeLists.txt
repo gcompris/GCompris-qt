@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/photo_hunter
+GCOMPRIS_ADD_RESOURCE(activities/photo_hunter
   QML_FILES
   *.qml
   *.js

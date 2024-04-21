@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/gnumch-multiples
+GCOMPRIS_ADD_RESOURCE(activities/gnumch-multiples
   QML_FILES
   *.qml
   RESOURCES

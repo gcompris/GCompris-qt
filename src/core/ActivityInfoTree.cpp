@@ -301,9 +301,11 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
     QString startingActivity = m_startingActivity;
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
+#ifdef WITH_RCC
         if (!QResource::registerResource(
                 ApplicationInfo::getFilePath(line + ".rcc")))
             qDebug() << "Failed to load the resource file " << line + ".rcc";
+#endif
 
         QQmlComponent activityComponentRoot(engine, QUrl(url));
         QObject *activityObjectRoot = activityComponentRoot.create();
@@ -345,12 +347,13 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 void ActivityInfoTree::registerResources()
 {
+#ifdef WITH_RCC
     if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
 
     if (!QResource::registerResource(ApplicationInfo::getFilePath("menu.rcc")))
         qDebug() << "Failed to load the resource file menu.rcc";
-
+#endif
     if (!QResource::registerResource(ApplicationInfo::getFilePath("activities.rcc")))
         qDebug() << "Failed to load the resource file activities.rcc";
 }

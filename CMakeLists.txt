@@ -147,6 +147,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 #    message("${_variableName}=${${_variableName}}")
 #endforeach()
 
+option(WITH_RCC "Use rcc for activities instead of qml plugins" ON)
+
 option(WITH_DOWNLOAD "Internal download" ON)
 # @FIXME These permissions should be removed if download is disable
 #        but it makes the application crash on exit (tested on Android 6)
@@ -412,7 +414,10 @@ if(BUILD_TESTING)
 endif()
 
 add_custom_target(binaries)
-add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
+add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_activities all_activities)
+if(WITH_RCC)
+  add_dependencies(binaries rcc_menu rcc_core)
+endif()
 
 # Add a target to automatise the filling of the files requiring info for the releases: appdata/publiccode release date, fastlane changelog
 string(TIMESTAMP currentDay "%Y-%m-%d")

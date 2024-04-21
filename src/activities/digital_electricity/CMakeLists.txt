@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/digital_electricity
+GCOMPRIS_ADD_RESOURCE(activities/digital_electricity
   QML_FILES
   *.qml
   *.js

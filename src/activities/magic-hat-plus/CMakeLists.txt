@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/magic-hat-plus
+GCOMPRIS_ADD_RESOURCE(activities/magic-hat-plus
   QML_FILES
   *.qml
   resource/*/Data.qml

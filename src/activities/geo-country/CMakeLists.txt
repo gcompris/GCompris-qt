@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/geo-country
+GCOMPRIS_ADD_RESOURCE(activities/geo-country
   QML_FILES
   *.qml
   resource/board/*.qml

@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/redraw_symmetrical
+GCOMPRIS_ADD_RESOURCE(activities/redraw_symmetrical
   QML_FILES
   *.qml
   *.js

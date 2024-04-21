@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/guesscount
+GCOMPRIS_ADD_RESOURCE(activities/guesscount
   QML_FILES
   *.qml
   *.js

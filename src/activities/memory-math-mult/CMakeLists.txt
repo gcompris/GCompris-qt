@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/memory-math-mult
+GCOMPRIS_ADD_RESOURCE(activities/memory-math-mult
   QML_FILES
   *.qml
   resource/*/Data.qml

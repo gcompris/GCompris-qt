@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #=============================================================================
-GCOMPRIS_ADD_RCC(activities/algebra_minus
+GCOMPRIS_ADD_RESOURCE(activities/algebra_minus
   QML_FILES
   *.qml
   *.js
