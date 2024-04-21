@@ -63,9 +63,10 @@ Item {
                 name: "horizontalLayout"
                 when: items.isHorizontal
                 PropertyChanges {
-                    target: validationImage
-                    height: cardContainer.height
-                    anchors.margins: background.layoutMargins * 0.5
+                    validationImage {
+                        height: cardContainer.height
+                        anchors.margins: background.layoutMargins * 0.5
+                    }
                 }
                 AnchorChanges {
                     target: validationImage
@@ -81,9 +82,10 @@ Item {
                 name: "verticaleLayout"
                 when: !items.isHorizontal
                 PropertyChanges {
-                    target: validationImage
-                    height: cardContainer.height * 0.5
-                    anchors.margins: -background.layoutMargins * 0.5
+                    validationImage {
+                        height: cardContainer.height * 0.5
+                        anchors.margins: -background.layoutMargins * 0.5
+                    }
                 }
                 AnchorChanges {
                     target: validationImage
