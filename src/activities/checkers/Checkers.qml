@@ -182,20 +182,23 @@ ActivityBase {
             State {
                 name: "portraitLayout"; when: items.isPortrait
                 PropertyChanges {
-                    target: layoutArea
-                    width: background.width * 0.86
-                    height: background.height - textMessage.height - bar.height * 1.1
+                    layoutArea {
+                        width: background.width * 0.86
+                        height: background.height - textMessage.height - bar.height * 1.1
+                    }
                 }
                 PropertyChanges {
-                    target: controls
-                    width:layoutArea.width
-                    height: items.cellSize * 1.2
-                    anchors.leftMargin: controls.spacing * 0.5
-                    anchors.topMargin: 0
+                    controls {
+                        width:layoutArea.width
+                        height: items.cellSize * 1.2
+                        anchors.leftMargin: controls.spacing * 0.5
+                        anchors.topMargin: 0
+                    }
                 }
                 PropertyChanges {
-                    target: boardBg
-                    anchors.verticalCenterOffset: items.cellSize * -0.6
+                    boardBg {
+                        anchors.verticalCenterOffset: items.cellSize * -0.6
+                    }
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -211,20 +214,23 @@ ActivityBase {
             State {
                 name: "horizontalLayout"; when: !items.isPortrait
                 PropertyChanges {
-                    target: layoutArea
-                    width: background.width
-                    height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                    layoutArea {
+                        width: background.width
+                        height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                    }
                 }
                 PropertyChanges {
-                    target: controls
-                    width: items.cellSize * 1.2
-                    height: layoutArea.height
-                    anchors.leftMargin: 0
-                    anchors.topMargin: controls.spacing * 0.5
+                    controls {
+                        width: items.cellSize * 1.2
+                        height: layoutArea.height
+                        anchors.leftMargin: 0
+                        anchors.topMargin: controls.spacing * 0.5
+                    }
                 }
                 PropertyChanges {
-                    target: boardBg
-                    anchors.verticalCenterOffset: 0
+                    boardBg {
+                        anchors.verticalCenterOffset: 0
+                    }
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -293,10 +299,10 @@ ActivityBase {
 
             DropArea {
                 id: squareArea
-                x: items.cellSize * (9 - pos % items.numberOfCases) + spacing / 2
-                y: items.cellSize * Math.floor(pos / items.numberOfCases) + spacing / 2
-                width: items.cellSize - spacing
-                height: items.cellSize - spacing
+                x: items.cellSize * (9 - pos % items.numberOfCases) + squareArea.spacing / 2
+                y: items.cellSize * Math.floor(pos / items.numberOfCases) + squareArea.spacing / 2
+                width: items.cellSize - squareArea.spacing
+                height: items.cellSize - squareArea.spacing
                 z: 1
                 keys: acceptMove ? ['acceptMe'] : ['sorryNo']
                 property bool acceptMove: false
@@ -314,7 +320,7 @@ ActivityBase {
                 }
             }
 
-            function getSquareAt(pos) {
+            function getSquareAt(pos: int) {
                 for(var i=0; i < squares.count; i++) {
                     if(squares.itemAt(i).pos === pos)
                         return squares.itemAt(i)
@@ -379,7 +385,7 @@ ActivityBase {
                 }
             }
 
-            function moveTo(from, to, moves) {
+            function moveTo(from: int, to: int, moves) {
                 items.movesToDo.push({"from": from, "to": to, "move": moves});
                 if(items.movesToDo.length == 1) {
                     moveInternal();
@@ -395,7 +401,7 @@ ActivityBase {
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
 
-                if(moves.jumps.length != 0)
+                if(moves.jumps.length !== 0)
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                 else
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
@@ -412,12 +418,12 @@ ActivityBase {
                 }
             }
 
-            function promotion(to) {
+            function promotion(to: int) {
                 var toPiece = getPieceAt(to)
                 toPiece.promotion()
             }
 
-            function getPieceAt(pos) {
+            function getPieceAt(pos: int) {
                 for(var i=0; i < pieces.count; i++) {
                     if(pieces.itemAt(i).newPos === pos)
                         return pieces.itemAt(i)

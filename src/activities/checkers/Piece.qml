@@ -84,7 +84,7 @@ Image {
         }
     }
 
-    function hide(newPos) {
+    function hide(newPos: int) {
         piece.newPos = newPos
         hideAnim.start()
     }
@@ -93,7 +93,7 @@ Image {
         promotionAnim.start()
     }
 
-    function move(to) {
+    function move(to: int) {
         piece.newPos = to
         piece.pos = to
         piece.z = 2
