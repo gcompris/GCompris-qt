@@ -287,21 +287,24 @@ ActivityBase {
             State {
                 name: "portraitLayout"; when: items.isPortrait
                 PropertyChanges {
-                    target: layoutArea
-                    width: background.width * 0.86
-                    height: background.height - textMessage.height - bar.height * 1.1
+                    layoutArea {
+                        width: background.width * 0.86
+                        height: background.height - textMessage.height - bar.height * 1.1
+                    }
                 }
                 PropertyChanges {
-                    target: controls
-                    width:layoutArea.width
-                    height: items.cellSize * 1.2
-                    anchors.leftMargin: controls.spacing * 0.5
-                    anchors.topMargin: 0
-                    anchors.horizontalCenterOffset: 0
+                    controls {
+                        width:layoutArea.width
+                        height: items.cellSize * 1.2
+                        anchors.leftMargin: controls.spacing * 0.5
+                        anchors.topMargin: 0
+                        anchors.horizontalCenterOffset: 0
+                    }
                 }
                 PropertyChanges {
-                    target: boardBg
-                    anchors.verticalCenterOffset: items.cellSize * -0.6
+                    boardBg {
+                        anchors.verticalCenterOffset: items.cellSize * -0.6
+                    }
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -317,21 +320,24 @@ ActivityBase {
             State {
                 name: "horizontalLayout"; when: !items.isPortrait
                 PropertyChanges {
-                    target: layoutArea
-                    width: background.width
-                    height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                    layoutArea {
+                        width: background.width
+                        height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                    }
                 }
                 PropertyChanges {
-                    target: controls
-                    width: items.cellSize * 1.2
-                    height: layoutArea.height
-                    anchors.leftMargin: 0
-                    anchors.topMargin: controls.spacing * 0.5
-                    anchors.horizontalCenterOffset: items.cellSize * 0.8
+                    controls {
+                        width: items.cellSize * 1.2
+                        height: layoutArea.height
+                        anchors.leftMargin: 0
+                        anchors.topMargin: controls.spacing * 0.5
+                        anchors.horizontalCenterOffset: items.cellSize * 0.8
+                    }
                 }
                 PropertyChanges {
-                    target: boardBg
-                    anchors.verticalCenterOffset: 0
+                    boardBg {
+                        anchors.verticalCenterOffset: 0
+                    }
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -478,7 +484,7 @@ ActivityBase {
                 }
             }
 
-            function getSquareAt(pos) {
+            function getSquareAt(pos: int) {
                 for(var i=0; i < squares.count; i++) {
                     if(squares.itemAt(i).pos === pos)
                         return squares.itemAt(i)
@@ -541,7 +547,7 @@ ActivityBase {
                 }
             }
 
-            function moveTo(from, to) {
+            function moveTo(from: int, to: int) {
                 movesCount ++
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
@@ -585,12 +591,12 @@ ActivityBase {
                 fromPiece.move(to)
             }
 
-            function promotion(to) {
+            function promotion(to: int) {
                 var toPiece = getPieceAt(to)
                 toPiece.promotion()
             }
 
-            function getPieceAt(pos) {
+            function getPieceAt(pos: int) {
                 for(var i=0; i < pieces.count; i++) {
                     if(pieces.itemAt(i).newPos === pos)
                         return pieces.itemAt(i)
