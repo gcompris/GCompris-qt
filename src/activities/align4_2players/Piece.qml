@@ -23,40 +23,45 @@ Image {
         State {
             name: "invisible"
             PropertyChanges {
-                target: piece
-                opacity: 0
+                piece {
+                    opacity: 0
+                }
             }
         },
         State {
             name: "2" // Player 2
-            PropertyChanges{
-                target: piece
-                opacity: 1.0
-                source: Activity.url + "stone_2.svg"
+            PropertyChanges {
+                piece {
+                    opacity: 1.0
+                    source: Activity.url + "stone_2.svg"
+                }
             }
         },
         State {
             name: "1" // Player 1
             PropertyChanges {
-                target: piece
-                opacity: 1.0
-                source: Activity.url + "stone_1.svg"
+                piece {
+                    opacity: 1.0
+                    source: Activity.url + "stone_1.svg"
+                }
             }
         },
         State {
             name: "crossed1"
             PropertyChanges {
-                target: piece
-                opacity: 1.0
-                source: Activity.url + "win1.svg"
+                piece {
+                    opacity: 1.0
+                    source: Activity.url + "win1.svg"
+                }
             }
         },
         State {
             name: "crossed2"
             PropertyChanges {
-                target: piece
-                opacity: 1.0
-                source: Activity.url + "win2.svg"
+                piece {
+                    opacity: 1.0
+                    source: Activity.url + "win2.svg"
+                }
             }
         }
     ]
