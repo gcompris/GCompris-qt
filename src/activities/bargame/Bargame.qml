@@ -99,8 +99,9 @@ ActivityBase {
                 name: "tuxHover"
                 when: tuxArea.containsMouse
                 PropertyChanges {
-                    target: tux
-                    scale: 1.1
+                    tux {
+                        scale: 1.1
+                    }
                 }
             }
         }
@@ -113,12 +114,12 @@ ActivityBase {
                 State {
                     name: "horizontalBar"
                     when: horizontalLayout
-                    PropertyChanges { target: boxModel; x: 0; y: rootWindow.height - bar.height * 2}
+                    PropertyChanges { boxModel { x: 0; y: rootWindow.height - bar.height * 2} }
                 },
                 State {
                     name: "verticalBar"
                     when: !horizontalLayout
-                    PropertyChanges { target: boxModel; x: rootWindow.width * 0.5; y: 0}
+                    PropertyChanges { boxModel { x: rootWindow.width * 0.5; y: 0} }
                 }
             ]
 
@@ -250,8 +251,9 @@ ActivityBase {
                 name: "mouseHover"
                 when: okArea.containsMouse
                 PropertyChanges {
-                    target: playLabel
-                    scale: 1.2
+                    playLabel {
+                        scale: 1.2
+                    }
                 }
             }
         }
@@ -289,8 +291,9 @@ ActivityBase {
                 name: "numberHover"
                 when: numberPlateArea.containsMouse
                 PropertyChanges {
-                    target: ballNumberPlate
-                    scale: 1.1
+                    ballNumberPlate {
+                        scale: 1.1
+                    }
                 }
             }
 
