@@ -368,8 +368,9 @@ if (targetY < 0) {
                         states: State {
                             name: "scaled"; when: mouseArea.containsMouse
                             PropertyChanges {
-                                target: currentGuess
-                                scale: 1.1
+                                currentGuess {
+                                    scale: 1.1
+                                }
                             }
                         }
                         transitions: Transition {
