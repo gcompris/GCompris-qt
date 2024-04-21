@@ -176,13 +176,14 @@ ActivityBase {
                     }
                 }
                 PropertyChanges {
-                    target: numberContainerArea
-                    anchors {
-                        leftMargin: background.layoutMargins
-                        bottomMargin: 0
+                    numberContainerArea {
+                        anchors {
+                            leftMargin: background.layoutMargins
+                            bottomMargin: 0
+                        }
+                        height: width * 0.67
+                        width: (layoutArea.width - background.layoutMargins * 3) * 0.32
                     }
-                    height: width * 0.67
-                    width: (layoutArea.width - background.layoutMargins * 3) * 0.32
                 }
                 AnchorChanges {
                     target: numberContainer
@@ -215,14 +216,15 @@ ActivityBase {
                     }
                 }
                 PropertyChanges {
-                    target: numberContainerArea
-                    anchors {
-                        leftMargin: 0
-                        bottomMargin: background.layoutMargins
+                    numberContainerArea {
+                        anchors {
+                            leftMargin: 0
+                            bottomMargin: background.layoutMargins
+                        }
+                        width: Math.min(layoutArea.width - score.width * 2 - background.layoutMargins * 4,
+                        layoutArea.height * 0.5)
+                        height: width * 0.67
                     }
-                    width: Math.min(layoutArea.width - score.width * 2 - background.layoutMargins * 4,
-                                    layoutArea.height * 0.5)
-                    height: width * 0.67
                 }
                 AnchorChanges {
                     target: numberContainer
