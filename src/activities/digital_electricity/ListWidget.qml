@@ -144,15 +144,17 @@ Item {
                             State {
                                 name: "selected"
                                 PropertyChanges {
-                                    target: toolDelete
-                                    opacity: 1
+                                    toolDelete {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "notSelected"
                                 PropertyChanges {
-                                    target: toolDelete
-                                    opacity: 0.5
+                                    toolDelete {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -179,15 +181,17 @@ Item {
                             State {
                                 name: "canBeSelected"
                                 PropertyChanges {
-                                    target: info
-                                    opacity: 1
+                                    info {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
-                                    target: info
-                                    opacity: 0.5
+                                    info {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -214,15 +218,17 @@ Item {
                             State {
                                 name: "canBeSelected"
                                 PropertyChanges {
-                                    target: rotateLeft
-                                    opacity: 1
+                                    rotateLeft {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
-                                    target: rotateLeft
-                                    opacity: 0.5
+                                    rotateLeft {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -250,15 +256,17 @@ Item {
                             State {
                                 name: "canBeSelected"
                                 PropertyChanges{
-                                    target: rotateRight
-                                    opacity: 1
+                                    rotateRight {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
-                                    target: rotateRight
-                                    opacity: 0.5
+                                    rotateRight {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -281,15 +289,17 @@ Item {
                             State {
                                 name: "canZoomIn"
                                 PropertyChanges {
-                                    target: zoomInBtn
-                                    opacity: 1.0
+                                    zoomInBtn {
+                                        opacity: 1.0
+                                    }
                                 }
                             },
                             State {
                                 name: "cannotZoomIn"
                                 PropertyChanges {
-                                    target: zoomInBtn
-                                    opacity: 0.5
+                                    zoomInBtn {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -312,15 +322,17 @@ Item {
                             State {
                                 name: "canZoomOut"
                                 PropertyChanges {
-                                    target: zoomOutBtn
-                                    opacity: 1.0
+                                    zoomOutBtn {
+                                        opacity: 1.0
+                                    }
                                 }
                             },
                             State {
                                 name: "cannotZoomOut"
                                 PropertyChanges {
-                                    target: zoomOutBtn
-                                    opacity: 0.5
+                                    zoomOutBtn {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
