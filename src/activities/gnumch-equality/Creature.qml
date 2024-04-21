@@ -29,7 +29,7 @@ Item {
     readonly property int moveDown: 2
     readonly property int moveUp: 3
 
-    function moveTo(direction) {
+    function moveTo(direction: int): bool {
         if (!movable)
             return true
 
@@ -37,7 +37,6 @@ Item {
             movementOn(direction)
             return true
         } else {
-
             return false
         }
     }
@@ -48,7 +47,7 @@ Item {
         y = 0
     }
 
-    function hasReachLimit(direction) {
+    function hasReachLimit(direction: int): bool {
         switch (direction) {
         case 0:
             if ((index + 1) % 6 > 0)
@@ -70,7 +69,7 @@ Item {
         return true
     }
 
-    function movementOn(direction) {
+    function movementOn(direction: int) {
         // Compute if the direction is vertical (1) or not (0)
         var vertical = Math.floor(direction / 2)
         var sign = Math.pow(-1, (direction))

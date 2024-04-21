@@ -13,7 +13,7 @@ import GCompris 1.0
 
 
 Creature {
-    function getCaught(index) {
+    function getCaught(index: int) {
         if (!movable) {
             return
         }

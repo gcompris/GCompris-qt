@@ -264,7 +264,7 @@ ActivityBase {
             Item {
                 id: monsters
 
-                function setMovable(movable) {
+                function setMovable(movable: bool) {
                     var children = monsters.children
                     for (var it = 0; it < children.length; it++) {
                         children[it].movable = movable
@@ -278,10 +278,10 @@ ActivityBase {
                     }
                 }
 
-                function isThereAMonster(position) {
+                function isThereAMonster(position: int) {
                     var children = monsters.children
                     for (var it = 0; it < children.length; it++) {
-                        if (children[it].index == position) {
+                        if (children[it].index === position) {
                             children[it].eating = true
                             return true
                         }
@@ -289,11 +289,11 @@ ActivityBase {
                     return false
                 }
 
-                function checkOtherMonster(position) {
+                function checkOtherMonster(position: int) {
                     var children = monsters.children
                     var count = 0
                     for (var it = 0; it < children.length; it++) {
-                        if (children[it].index == position
+                        if (children[it].index === position
                                 && !children[it].movingOn) {
                             count++
                             if (count > 1) {
@@ -366,7 +366,7 @@ ActivityBase {
             ListModel {
                 id: modelCells
 
-                function regenCell(position) {
+                function regenCell(position: int) {
                     if (type === "equality" || type === "inequality") {
                         var terms
                         if (items.operator === " + ") {

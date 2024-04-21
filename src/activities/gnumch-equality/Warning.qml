@@ -34,7 +34,7 @@ Rectangle {
     property string fault
     property var mArea: area
 
-    function setFault(index) {
+    function setFault(index: int) {
         if (index === -1) {
             fault = qsTr("You were eaten by a Troggle.") + "<br>"
             return
@@ -44,18 +44,18 @@ Rectangle {
         var num1 = modelCells.get(index).number1
         var num2 = modelCells.get(index).number2
         if (activity.type == "equality" || activity.type == "inequality") {
-            if (Activity.operator == " + ") {
+            if (Activity.operator === " + ") {
                 fault +=  num1 + " + " + num2 + " = " + (num1 + num2)
-            } else if (Activity.operator == " - ") {
+            } else if (Activity.operator === " - ") {
                 fault +=  num1 + " - " + num2 + " = " + (num1 - num2)
-            } else if (Activity.operator == " * ") {
+            } else if (Activity.operator === " * ") {
                 fault +=  num1 + " * " + num2 + " = " + (num1 * num2)
-            } else if (Activity.operator == " / ") {
+            } else if (Activity.operator === " / ") {
                 fault +=  num1 + " / " + num2 + " = " + (num1 / num2)
             }
             fault += "<br>"
 
-        } else if (activity.type == "primes") {
+        } else if (activity.type === "primes") {
             if (num1 === 1) {
                 fault += qsTr("1 is not a prime number.") + "<br>"
                 return
