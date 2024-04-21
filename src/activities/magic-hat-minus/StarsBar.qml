@@ -87,7 +87,7 @@ Item {
         }
     }
 
-    function moveBackMinusStars(newRootItem, nbStars) {
+    function moveBackMinusStars(newRootItem, nbStars: int) {
         for(var i=0; i<nbStars; i++) {
             repeaterStars.itemAt(i).starToMove.newTarget =
                     newRootItem.repeaterStars.itemAt(i)

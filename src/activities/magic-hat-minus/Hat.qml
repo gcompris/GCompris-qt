@@ -48,38 +48,45 @@ Item {
             State {
                 name: "NormalPosition"
                 PropertyChanges {
-                    target: rotate
-                    angle: 0
+                    rotate {
+                        angle: 0
+                    }
                 }
                 PropertyChanges {
-                    target: baseRotAnim
-                    running: true
+                    baseRotAnim {
+                        running: true
+                    }
                 }
             },
             State {
                 name: "Rotated"
                 PropertyChanges {
-                    target: baseRotAnim
-                    running: false
+                    baseRotAnim {
+                        running: false
+                    }
                 }
                 PropertyChanges {
-                    target: rotate
-                    angle: -45
+                    rotate {
+                        angle: -45
+                    }
                 }
             },
             State {
                 name: "GuessNumber"
                 PropertyChanges {
-                    target: baseRotAnim
-                    running: false
-                }
-                PropertyChanges{
-                    target: hatImg
-                    source: Activity.url + "hat-point.svg"
+                    baseRotAnim {
+                        running: false
+                    }
                 }
                 PropertyChanges {
-                    target: rotate
-                    angle: 0
+                    hatImg {
+                        source: Activity.url + "hat-point.svg"
+                    }
+                }
+                PropertyChanges {
+                    rotate {
+                        angle: 0
+                    }
                 }
             }
         ]

@@ -73,8 +73,9 @@ Item {
                 rotation: 0
             }
             PropertyChanges {
-                target: mainItem
-                opacity: mainItem.displayBounds ? 1 : 0
+                mainItem {
+                    opacity: mainItem.displayBounds ? 1 : 0
+                }
             }
         },
         State {
@@ -87,8 +88,9 @@ Item {
                 rotation: 180
             }
             PropertyChanges {
-                target: mainItem
-                opacity: 1
+                mainItem {
+                    opacity: 1
+                }
             }
         },
         State {
@@ -101,8 +103,9 @@ Item {
                 rotation: 0
             }
             PropertyChanges {
-                target: mainItem
-                opacity: 1
+                mainItem {
+                    opacity: 1
+                }
             }
         }
     ]
