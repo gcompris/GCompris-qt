@@ -144,7 +144,7 @@ Item {
                         anchors.centerIn: parent
 
                         property string nextSource
-                        function changeSource(nextSource_) {
+                        function changeSource(nextSource_: string) {
                             nextSource = nextSource_
                             animImage.start()
                         }

@@ -44,7 +44,7 @@ Item {
     }
 
     // Start the image review at wordList sublesson
-    function initLevel(wordListIndex_) {
+    function initLevel(wordListIndex_: int) {
         wordListIndex = wordListIndex_
         score.currentSubLevel = 1
         score.numberOfSubLevels = items.wordList[wordListIndex].length
@@ -209,7 +209,7 @@ Item {
                 anchors.centerIn: parent
 
                 property string nextSource
-                function changeSource(nextSource_) {
+                function changeSource(nextSource_: string) {
                     nextSource = nextSource_
                     animImage.restart()
                 }
@@ -318,7 +318,7 @@ Item {
                 color: "#373737"
 
                 property string nextWord
-                function changeText(nextWord_) {
+                function changeText(nextWord_: string) {
                     nextWord = nextWord_
                     animWord.restart()
                 }
@@ -394,7 +394,7 @@ Item {
         --score.currentSubLevel
     }
 
-    function startMiniGame(miniGameIndex) {
+    function startMiniGame(miniGameIndex: int) {
         currentMiniGame = miniGameIndex
         var mode = miniGames[miniGameIndex][1];
         var itemToLoad = miniGames[miniGameIndex][2];
