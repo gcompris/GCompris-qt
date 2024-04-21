@@ -88,8 +88,9 @@ MouseArea {
             State {
                 when: items.warningDialog.visible
                 PropertyChanges {
-                    target: mouseArea
-                    enabled: false
+                    mouseArea {
+                        enabled: false
+                    }
                 }
             }
         ]

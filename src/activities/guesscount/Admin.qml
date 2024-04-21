@@ -72,11 +72,19 @@ Row {
             states: [
                 State {
                     name: "selected"
-                    PropertyChanges { target: tile; color: "#5cc854" }
+                    PropertyChanges {
+                        tile {
+                            color: "#5cc854"
+                        }
+                    }
                 },
                 State {
                     name: "notselected"
-                    PropertyChanges { target: tile; color: "#d94444" }
+                    PropertyChanges {
+                        tile {
+                            color: "#d94444"
+                        }
+                    }
                 }
             ]
         }

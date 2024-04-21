@@ -298,23 +298,27 @@ ActivityBase {
                 State {
                     when: warningDialog.visible
                     PropertyChanges {
-                        target: top
-                        opacity: 0.5
+                        top {
+                            opacity: 0.5
+                        }
                     }
                     PropertyChanges {
-                        target: col
-                        opacity: 0.5
+                        col {
+                            opacity: 0.5
+                        }
                     }
                 },
                 State {
                     when: !warningDialog.visible
                     PropertyChanges {
-                        target: top
-                        opacity: 1
+                        top {
+                            opacity: 1
+                        }
                     }
                     PropertyChanges {
-                        target: col
-                        opacity: 1
+                        col {
+                            opacity: 1
+                        }
                     }
                 }
             ]

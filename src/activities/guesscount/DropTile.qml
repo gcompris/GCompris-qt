@@ -29,9 +29,10 @@ DropArea {
             State {
                 when: dragTarget.containsDrag
                 PropertyChanges {
-                    target: dropRectangle
-                    color: "transparent"
-                    border.color: "#80FFFFFF"
+                    dropRectangle {
+                        color: "transparent"
+                        border.color: "#80FFFFFF"
+                    }
                 }
             }
         ]
