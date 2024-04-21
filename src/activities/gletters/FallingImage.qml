@@ -52,7 +52,7 @@ Item {
         onStopped: Activity.deleteWord(word);
     }
 
-    function checkMatch(c)
+    function checkMatch(c): bool
     {
         // We are in the ending animation
         if (wonState)
@@ -68,13 +68,13 @@ Item {
         }
     }
 
-    function startMoving(dur)
+    function startMoving(dur: int)
     {
         down.duration = dur;
         down.restart();
     }
 
-    function isCompleted()
+    function isCompleted(): bool
     {
         return (unmatchedIndex === text.length);
     }

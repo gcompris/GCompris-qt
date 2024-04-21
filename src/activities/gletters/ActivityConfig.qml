@@ -61,7 +61,7 @@ Item {
         }
     }
 
-    function setLocale(localeToSet) {
+    function setLocale(localeToSet: string) {
         // Store the locale as-is to be displayed in menu
         configurationLocale = localeToSet
         activityConfiguration.locale = Core.resolveLocale(localeToSet)
