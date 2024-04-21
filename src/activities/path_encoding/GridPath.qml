@@ -154,20 +154,23 @@ ActivityBase {
                 id: horizontalLayout
                 when: layoutArea.width >= layoutArea.height
                 PropertyChanges {
-                    target: mapView
-                    cellSize: size
+                    mapView {
+                        cellSize: size
+                    }
                 }
                 PropertyChanges {
-                    target: moveBar
-                    width: layoutArea.width - mapView.width - layoutArea.anchors.bottomMargin
-                    height: (moveButtons.visible) ? layoutArea.height / 2 : layoutArea.height
-                    anchors.topMargin: errorsArea.anchors.topMargin
+                    moveBar {
+                        width: layoutArea.width - mapView.width - layoutArea.anchors.bottomMargin
+                        height: (moveButtons.visible) ? layoutArea.height / 2 : layoutArea.height
+                        anchors.topMargin: errorsArea.anchors.topMargin
+                    }
                 }
                 PropertyChanges {
-                    target: moveButtons
-                    width: moveBar.width
-                    height: (moveButtons.visible) ? layoutArea.height / 2 : 0
-                    anchors.topMargin: 0
+                    moveButtons {
+                        width: moveBar.width
+                        height: (moveButtons.visible) ? layoutArea.height / 2 : 0
+                        anchors.topMargin: 0
+                    }
                 }
                 AnchorChanges {
                     target: mapView
@@ -191,20 +194,23 @@ ActivityBase {
                 id: verticalLayout
                 when: layoutArea.width < layoutArea.height
                 PropertyChanges {
-                    target: mapView
-                    cellSize: Math.min((layoutArea.height * 0.7) / items.rows, layoutArea.width / items.cols)
+                    mapView {
+                        cellSize: Math.min((layoutArea.height * 0.7) / items.rows, layoutArea.width / items.cols)
+                    }
                 }
                 PropertyChanges {
-                    target: moveBar
-                    width: layoutArea.width
-                    height: (layoutArea.height - mapView.height - moveButtons.height - layoutArea.anchors.bottomMargin)
-                    anchors.topMargin: errorsArea.anchors.topMargin
+                    moveBar {
+                        width: layoutArea.width
+                        height: (layoutArea.height - mapView.height - moveButtons.height - layoutArea.anchors.bottomMargin)
+                        anchors.topMargin: errorsArea.anchors.topMargin
+                    }
                 }
                 PropertyChanges {
-                    target: moveButtons
-                    width: moveBar.width
-                    height: (moveButtons.visible) ? (layoutArea.height - mapView.height - layoutArea.anchors.bottomMargin) / 2 : 0
-                    anchors.topMargin: layoutArea.anchors.bottomMargin
+                    moveButtons {
+                        width: moveBar.width
+                        height: (moveButtons.visible) ? (layoutArea.height - mapView.height - layoutArea.anchors.bottomMargin) / 2 : 0
+                        anchors.topMargin: layoutArea.anchors.bottomMargin
+                    }
                 }
                 AnchorChanges {
                     target: mapView
