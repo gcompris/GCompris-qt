@@ -173,7 +173,14 @@ ActivityBase {
             }
             sourceSize.width: 66 * bar.barZoom
             property int remainingLife: items.clockPosition
-            onRemainingLifeChanged: if(remainingLife >= 0) clockAnim.restart()
+            onRemainingLifeChanged: {
+                if(remainingLife >= 0) {
+                    petalCount = items.resourceUrl + "flower" + remainingLife + ".svg"
+                    clockAnim.restart()
+                }
+            }
+
+            property string petalCount
 
             SequentialAnimation {
                 id: clockAnim
@@ -190,7 +197,7 @@ ActivityBase {
                 }
                 PropertyAction {
                     target: clock; property: 'source';
-                    value: items.resourceUrl + "flower" + items.clockPosition + ".svg"
+                    value: clock.petalCount
                 }
                 ParallelAnimation {
                     NumberAnimation {
