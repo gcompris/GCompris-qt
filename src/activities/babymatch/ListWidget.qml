@@ -162,7 +162,7 @@ Item {
             availablePieces.view.setPreviousNavigation();
         }
 
-        function areAllPlaced() {
+        function areAllPlaced(): bool {
             for(var i = 0 ; i < model.count ; ++i) {
                 if(repeater.itemAt(i).dropStatus < 0) {
                     return false;

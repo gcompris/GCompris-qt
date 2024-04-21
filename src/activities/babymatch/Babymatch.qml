@@ -171,7 +171,7 @@ ActivityBase {
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
-            function show(newText) {
+            function show(newText: string) {
                 if(newText) {
                     text = newText;
                     opacity = 0.8;
