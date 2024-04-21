@@ -138,12 +138,13 @@ GridView {
                 name: "shown"
                 when: codeArea.possibleDropIndex != -1
                 PropertyChanges {
-                    target: dropPositionIndicator
-                    visible: true
-                    x: Math.floor(codeArea.xCoordinateInPossibleDrop / codeArea.cellWidth) *
-                       codeArea.cellWidth - 1.5 * ApplicationInfo.ratio
-                    y: Math.floor(codeArea.yCoordinateInPossibleDrop / codeArea.cellHeight) *
-                       codeArea.cellHeight + 1.5 * ApplicationInfo.ratio
+                    dropPositionIndicator {
+                        visible: true
+                        x: Math.floor(codeArea.xCoordinateInPossibleDrop / codeArea.cellWidth) *
+                            codeArea.cellWidth - 1.5 * ApplicationInfo.ratio
+                        y: Math.floor(codeArea.yCoordinateInPossibleDrop / codeArea.cellHeight) *
+                           codeArea.cellHeight + 1.5 * ApplicationInfo.ratio
+                    }
                 }
             }
         ]
@@ -264,24 +265,28 @@ GridView {
                     name: "inDrag"
                     when: index == codeArea.draggedItemIndex
 
-                    PropertyChanges { target: item; parent: codeArea }
-                    PropertyChanges { target: item; width: background.buttonWidth * 0.80 }
-                    PropertyChanges { target: item; height: background.buttonHeight * 0.80 }
-                    PropertyChanges { target: item; anchors.centerIn: undefined }
-                    PropertyChanges { target: item; x: codeAreaMouse.mouseX - item.width / 2 }
-                    PropertyChanges { target: item; y: codeAreaMouse.mouseY - item.height / 2 }
+                    PropertyChanges {
+                        item {
+                            parent: codeArea
+                            width: background.buttonWidth * 0.80
+                            height: background.buttonHeight * 0.80
+                            anchors.centerIn: undefined
+                            x: codeAreaMouse.mouseX - item.width / 2
+                            y: codeAreaMouse.mouseY - item.height / 2
+                        } 
+                    }
                 },
                 State {
                     name: "greyedOut"
                     when: (codeArea.draggedItemIndex != -1) && (codeArea.draggedItemIndex != index)
 
-                    PropertyChanges { target: item; opacity: 0.7 }
+                    PropertyChanges { item { opacity: 0.7 } }
                 },
                 State {
                     name: "inactive"
                     when: (codeArea.draggedItemIndex == -1) || (codeArea.draggedItemIndex == index)
 
-                    PropertyChanges { target: item; opacity: 1.0 }
+                    PropertyChanges { item { opacity: 1.0 } }
                 }
             ]
 
