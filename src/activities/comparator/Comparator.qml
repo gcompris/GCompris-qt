@@ -228,7 +228,7 @@ ActivityBase {
                 signValue: modelData
                 isSelected: ListView.isCurrentItem
             }
-            function enterSign(sign) {
+            function enterSign(sign: string) {
                 //increment the numberOfRowsCompleted if there was no symbol previously
                 if(dataListModel.get(items.selectedLine).symbol === "") {
                     items.numberOfRowsCompleted ++;
@@ -298,13 +298,15 @@ ActivityBase {
                     anchors.horizontalCenter: layoutArea.horizontalCenter
                 }
                 PropertyChanges {
-                    target: wholeExerciceDisplay
-                    width: layoutArea.width * 0.5
-                    anchors.horizontalCenterOffset: -items.sizeOfElement
+                    wholeExerciceDisplay {
+                        width: layoutArea.width * 0.5
+                        anchors.horizontalCenterOffset: -items.sizeOfElement
+                    }
                 }
                 PropertyChanges {
-                    target: upButton
-                    height: Math.max(layoutArea.height * 0.1, items.sizeOfElement)
+                    upButton {
+                        height: Math.max(layoutArea.height * 0.1, items.sizeOfElement)
+                    }
                 }
             },
             State {
@@ -316,13 +318,15 @@ ActivityBase {
                     anchors.horizontalCenter: undefined
                 }
                 PropertyChanges {
-                    target: wholeExerciceDisplay
-                    width: layoutArea.width * 0.7
-                    anchors.horizontalCenterOffset: 0
+                    wholeExerciceDisplay {
+                        width: layoutArea.width * 0.7
+                        anchors.horizontalCenterOffset: 0
+                    }
                 }
                 PropertyChanges {
-                    target: upButton
-                    height: layoutArea.width * 0.1
+                    upButton {
+                        height: layoutArea.width * 0.1
+                    }
                 }
             }
         ]
