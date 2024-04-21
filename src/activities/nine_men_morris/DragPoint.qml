@@ -36,36 +36,41 @@ Rectangle {
         State {
             name: "AVAILABLE" // Green color
             PropertyChanges {
-                target: dragPoint
-                color: "#74F474"
+                dragPoint {
+                    color: "#74F474"
+                }
             }
         },
         State {
             name: "UNAVAILABLE" // Red color
             PropertyChanges {
-                target: dragPoint
-                color: "#DC3D3D"
+                dragPoint {
+                    color: "#DC3D3D"
+                }
             }
         },
         State {
             name: "EMPTY" // Brown color
             PropertyChanges {
-                target: dragPoint
-                color: "#505050"
+                dragPoint {
+                    color: "#505050"
+                }
             }
         },
         State {
             name: "1"
             PropertyChanges {
-                target: dragPoint
-                color: "#DC3D3D"
+                dragPoint {
+                    color: "#DC3D3D"
+                }
             }
         },
         State {
             name: "2"
             PropertyChanges {
-                target: dragPoint
-                color: "#DC3D3D"
+                dragPoint {
+                    color: "#DC3D3D"
+                }
             }
         }
     ]

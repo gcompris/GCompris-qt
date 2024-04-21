@@ -36,7 +36,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on Tutorial
-        Keys.forwardTo: tutorialSection
+        Keys.forwardTo: [tutorialSection]
 
         // Add here the QML items you need to access in javascript
         QtObject {

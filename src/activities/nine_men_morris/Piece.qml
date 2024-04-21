@@ -79,15 +79,17 @@ Image {
         State {
             name: "1" // Player 1
             PropertyChanges {
-                target: piece
-                source: playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
+                piece {
+                    source: playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
+                }
             }
         },
         State {
             name: "2" // Player 2
             PropertyChanges {
-                target: piece
-                source: playSecond ? Activity.url + "white_piece.svg" : Activity.url + "black_piece.svg"
+                piece {
+                    source: playSecond ? Activity.url + "white_piece.svg" : Activity.url + "black_piece.svg"
+                }
             }
         }
     ]
