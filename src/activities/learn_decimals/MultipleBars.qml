@@ -25,29 +25,31 @@ GridView {
         State {
             when: background.horizontalLayout
             PropertyChanges {
-                target: multipleBars
-                cellSize: Math.min(mainRectangle.height / 6, mainRectangle.width / 11)
-                cellHeight: cellSize * 1.14
-                cellWidth: cellSize
-                width: cellSize * 10
-                height: cellSize * 5.86
-                anchors.verticalCenterOffset: cellSize * 0.14
-                anchors.horizontalCenterOffset: 0
-                flow: GridView.FlowTopToBottom
+                multipleBars {
+                    cellSize: Math.min(mainRectangle.height / 6, mainRectangle.width / 11)
+                    cellHeight: cellSize * 1.14
+                    cellWidth: cellSize
+                    width: cellSize * 10
+                    height: cellSize * 5.86
+                    anchors.verticalCenterOffset: cellSize * 0.14
+                    anchors.horizontalCenterOffset: 0
+                    flow: GridView.FlowTopToBottom
+                }
             }
         },
         State {
             when: !background.horizontalLayout
             PropertyChanges {
-                target: multipleBars
-                cellSize: Math.min(mainRectangle.width / 6, mainRectangle.height / 11)
-                cellHeight: cellSize
-                cellWidth: cellSize * 1.14
-                width: cellSize * 5.86
-                height: cellSize * 10
-                anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: cellSize * 0.14
-                flow: GridView.FlowLeftToRight
+                multipleBars {
+                    cellSize: Math.min(mainRectangle.width / 6, mainRectangle.height / 11)
+                    cellHeight: cellSize
+                    cellWidth: cellSize * 1.14
+                    width: cellSize * 5.86
+                    height: cellSize * 10
+                    anchors.verticalCenterOffset: 0
+                    anchors.horizontalCenterOffset: cellSize * 0.14
+                    flow: GridView.FlowLeftToRight
+                }
             }
         }
     ]
@@ -71,17 +73,19 @@ GridView {
                     State {
                         when: background.horizontalLayout
                         PropertyChanges {
-                            target: gridLayout
-                            rows: 1
-                            columns: 0
+                            gridLayout {
+                                rows: 1
+                                columns: 0
+                            }
                         }
                     },
                     State {
                         when: !background.horizontalLayout
                         PropertyChanges {
-                            target: gridLayout
-                            rows: 0
-                            columns: 1
+                            gridLayout {
+                                rows: 0
+                                columns: 1
+                            }
                         }
                     }
                 ]

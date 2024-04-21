@@ -26,17 +26,19 @@ Item {
             State {
                 when: background.horizontalLayout
                 PropertyChanges {
-                    target: singleBarTuto
-                    rows: 1
-                    columns: 0
+                    singleBarTuto {
+                        rows: 1
+                        columns: 0
+                    }
                 }
             },
             State {
                 when: !background.horizontalLayout
                 PropertyChanges {
-                    target: singleBarTuto
-                    rows: 0
-                    columns: 1
+                    singleBarTuto {
+                        rows: 0
+                        columns: 1
+                    }
                 }
             }
         ]

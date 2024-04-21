@@ -39,17 +39,19 @@ GridView {
                     State {
                         when: background.horizontalLayout
                         PropertyChanges {
-                            target: gridLayout
-                            rows: 1
-                            columns: 0
+                            gridLayout {
+                                rows: 1
+                                columns: 0
+                            }
                         }
                     },
                     State {
                         when: !background.horizontalLayout
                         PropertyChanges {
-                            target: gridLayout
-                            rows: 0
-                            columns: 1
+                            gridLayout {
+                                rows: 0
+                                columns: 1
+                            }
                         }
                     }
                 ]

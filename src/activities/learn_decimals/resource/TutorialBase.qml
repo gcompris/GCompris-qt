@@ -95,9 +95,10 @@ Image {
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
-                        target: topRectangleTutorial
-                        width: tutoLayoutArea.width
-                        height: activity.isSubtractionMode ? tutoLayoutArea.height * 0.8 : tutoLayoutArea.height * 0.636
+                        topRectangleTutorial {
+                            width: tutoLayoutArea.width
+                            height: activity.isSubtractionMode ? tutoLayoutArea.height * 0.8 : tutoLayoutArea.height * 0.636
+                        }
                     }
                     AnchorChanges {
                         target: topRectangleTutorial
@@ -105,13 +106,14 @@ Image {
                         anchors.horizontalCenter: tutoLayoutArea.horizontalCenter
                     }
                     PropertyChanges {
-                        target: firstBar
-                        cellSize: activity.isSubtractionMode ?
-                            Math.min(topRectangleTutorial.height / 6, topRectangleTutorial.width / 11) :
-                            Math.min(topRectangleTutorial.height / 7, topRectangleTutorial.width / 11)
-                        anchors.topMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
-                            firstBar.cellSize * 0.125
-                        anchors.leftMargin: 0
+                        firstBar {
+                            cellSize: activity.isSubtractionMode ?
+                                Math.min(topRectangleTutorial.height / 6, topRectangleTutorial.width / 11) :
+                                Math.min(topRectangleTutorial.height / 7, topRectangleTutorial.width / 11)
+                            anchors.topMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                                firstBar.cellSize * 0.125
+                            anchors.leftMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: firstBar
@@ -121,10 +123,11 @@ Image {
                         anchors.left: undefined
                     }
                     PropertyChanges {
-                        target: secondBar
-                        anchors.topMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
-                            firstBar.cellSize * 0.125
-                        anchors.leftMargin: 0
+                        secondBar {
+                            anchors.topMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                                firstBar.cellSize * 0.125
+                            anchors.leftMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: secondBar
@@ -137,10 +140,11 @@ Image {
                 State {
                     when: !background.horizontalLayout && !tutorialBase.isResultTyping
                     PropertyChanges {
-                        target: topRectangleTutorial
-                        width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
-                        height: tutoLayoutArea.height * 0.8
-                        anchors.rightMargin: 5 * ApplicationInfo.ratio
+                        topRectangleTutorial {
+                            width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
+                            height: tutoLayoutArea.height * 0.8
+                            anchors.rightMargin: 5 * ApplicationInfo.ratio
+                        }
                     }
                     AnchorChanges {
                         target: topRectangleTutorial
@@ -148,13 +152,14 @@ Image {
                         anchors.horizontalCenter: undefined
                     }
                     PropertyChanges {
-                        target: firstBar
-                        cellSize: activity.isSubtractionMode ?
-                            Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
-                            Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
-                        anchors.topMargin: 0
-                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
-                            firstBar.cellSize * 0.125
+                        firstBar {
+                            cellSize: activity.isSubtractionMode ?
+                                Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
+                                Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
+                            anchors.topMargin: 0
+                            anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                                firstBar.cellSize * 0.125
+                        }
                     }
                     AnchorChanges {
                         target: firstBar
@@ -164,10 +169,11 @@ Image {
                         anchors.left: topBarsLayout.left
                     }
                     PropertyChanges {
-                        target: secondBar
-                        anchors.topMargin: 0
-                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
-                            firstBar.cellSize * 0.125
+                        secondBar {
+                            anchors.topMargin: 0
+                            anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                                firstBar.cellSize * 0.125
+                        }
                     }
                     AnchorChanges {
                         target: secondBar
@@ -180,10 +186,11 @@ Image {
                 State {
                     when: !background.horizontalLayout && tutorialBase.isResultTyping
                     PropertyChanges {
-                        target: topRectangleTutorial
-                        width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
-                        height: tutoLayoutArea.height * 0.8
-                        anchors.rightMargin: 5 * ApplicationInfo.ratio
+                        topRectangleTutorial {
+                            width: activity.isSubtractionMode ? tutoLayoutArea.width : tutoLayoutArea.width * 0.636
+                            height: tutoLayoutArea.height * 0.8
+                            anchors.rightMargin: 5 * ApplicationInfo.ratio
+                        }
                     }
                     AnchorChanges {
                         target: topRectangleTutorial
@@ -191,13 +198,14 @@ Image {
                         anchors.horizontalCenter: tutoLayoutArea.horizontalCenter
                     }
                     PropertyChanges {
-                        target: firstBar
-                        cellSize: activity.isSubtractionMode ?
-                            Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
-                            Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
-                        anchors.topMargin: 0
-                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
-                            firstBar.cellSize * 0.125
+                        firstBar {
+                            cellSize: activity.isSubtractionMode ?
+                                Math.min(topRectangleTutorial.width / 6, topRectangleTutorial.height / 11) :
+                                Math.min(topRectangleTutorial.width / 7, topRectangleTutorial.height / 11)
+                            anchors.topMargin: 0
+                            anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                                firstBar.cellSize * 0.125
+                        }
                     }
                     AnchorChanges {
                         target: firstBar
@@ -207,10 +215,11 @@ Image {
                         anchors.left: topBarsLayout.left
                     }
                     PropertyChanges {
-                        target: secondBar
-                        anchors.topMargin: 0
-                        anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
-                            firstBar.cellSize * 0.125
+                        secondBar {
+                            anchors.topMargin: 0
+                            anchors.leftMargin: activity.isSubtractionMode ? firstBar.cellSize * 0.14 :
+                                firstBar.cellSize * 0.125
+                        }
                     }
                     AnchorChanges {
                         target: secondBar
@@ -262,13 +271,14 @@ Image {
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
-                        target: bottomRectangleTutorial
-                        width: tutoLayoutArea.width
-                        // 3/11 of layoutArea
-                        height: tutoLayoutArea.height * 0.273
-                        anchors.rightMargin: 0
-                        // 0.5/11 of layoutArea
-                        anchors.topMargin: tutoLayoutArea.height * 0.045
+                        bottomRectangleTutorial {
+                            width: tutoLayoutArea.width
+                            // 3/11 of layoutArea
+                            height: tutoLayoutArea.height * 0.273
+                            anchors.rightMargin: 0
+                            // 0.5/11 of layoutArea
+                            anchors.topMargin: tutoLayoutArea.height * 0.045
+                        }
                     }
                     AnchorChanges {
                         target: bottomRectangleTutorial
@@ -277,16 +287,18 @@ Image {
                         anchors.right: undefined
                     }
                     PropertyChanges {
-                        target: bottomBar
-                        cellSize: Math.min(bottomRectangleTutorial.height / 3, bottomRectangleTutorial.width / 11)
-                        anchors.verticalCenterOffset: -bottomBar.cellSize * 0.5
-                        anchors.horizontalCenterOffset: 0
+                        bottomBar {
+                            cellSize: Math.min(bottomRectangleTutorial.height / 3, bottomRectangleTutorial.width / 11)
+                            anchors.verticalCenterOffset: -bottomBar.cellSize * 0.5
+                            anchors.horizontalCenterOffset: 0
+                        }
                     }
                     PropertyChanges {
-                        target: arrowTutorial
-                        rotation: 0
-                        anchors.leftMargin: bottomBar.cellSize * 0.5
-                        anchors.topMargin: 0
+                        arrowTutorial {
+                            rotation: 0
+                            anchors.leftMargin: bottomBar.cellSize * 0.5
+                            anchors.topMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: arrowTutorial
@@ -295,9 +307,10 @@ Image {
                         anchors.right: undefined
                     }
                     PropertyChanges {
-                        target: redArrow
-                        height: topRectangleTutorial.height * 0.8
-                        rotation: 0
+                        redArrow {
+                            height: topRectangleTutorial.height * 0.8
+                            rotation: 0
+                        }
                     }
                     AnchorChanges {
                         target: redArrow
@@ -310,11 +323,12 @@ Image {
                 State {
                     when: !background.horizontalLayout
                     PropertyChanges {
-                        target: bottomRectangleTutorial
-                        width: tutoLayoutArea.width * 0.273
-                        height: tutoLayoutArea.height * 0.8
-                        anchors.rightMargin: tutoLayoutArea.width * 0.045
-                        anchors.topMargin: 0
+                        bottomRectangleTutorial {
+                            width: tutoLayoutArea.width * 0.273
+                            height: tutoLayoutArea.height * 0.8
+                            anchors.rightMargin: tutoLayoutArea.width * 0.045
+                            anchors.topMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: bottomRectangleTutorial
@@ -323,16 +337,18 @@ Image {
                         anchors.right: topRectangleTutorial.left
                     }
                     PropertyChanges {
-                        target: bottomBar
-                        cellSize: Math.min(bottomRectangleTutorial.width / 3, bottomRectangleTutorial.height / 11)
-                        anchors.verticalCenterOffset: 0
-                        anchors.horizontalCenterOffset: bottomBar.cellSize * 0.5
+                        bottomBar {
+                            cellSize: Math.min(bottomRectangleTutorial.width / 3, bottomRectangleTutorial.height / 11)
+                            anchors.verticalCenterOffset: 0
+                            anchors.horizontalCenterOffset: bottomBar.cellSize * 0.5
+                        }
                     }
                     PropertyChanges {
-                        target: arrowTutorial
-                        rotation: 90
-                        anchors.leftMargin: 0
-                        anchors.topMargin: bottomBar.cellSize * 0.5
+                        arrowTutorial {
+                            rotation: 90
+                            anchors.leftMargin: 0
+                            anchors.topMargin: bottomBar.cellSize * 0.5
+                        }
                     }
                     AnchorChanges {
                         target: arrowTutorial
@@ -341,9 +357,10 @@ Image {
                         anchors.right: bottomBar.left
                     }
                     PropertyChanges {
-                        target: redArrow
-                        height: topRectangleTutorial.width * 0.5
-                        rotation: 90
+                        redArrow {
+                            height: topRectangleTutorial.width * 0.5
+                            rotation: 90
+                        }
                     }
                     AnchorChanges {
                         target: redArrow

@@ -45,7 +45,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on Tutorial
-        Keys.forwardTo: tutorialSection
+        Keys.forwardTo: [tutorialSection]
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -165,10 +165,11 @@ ActivityBase {
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
-                        target: topRectangle
-                        width: layoutArea.width
-                        // 7/11 of layoutArea
-                        height: layoutArea.height * 0.636
+                        topRectangle {
+                            width: layoutArea.width
+                            // 7/11 of layoutArea
+                            height: layoutArea.height * 0.636
+                        }
                     }
                     AnchorChanges {
                         target: topRectangle
@@ -179,10 +180,11 @@ ActivityBase {
                 State {
                     when: !background.horizontalLayout && !items.typeResult
                     PropertyChanges {
-                        target: topRectangle
-                        width: layoutArea.width * 0.636
-                        height: layoutArea.height
-                        anchors.rightMargin: 10 * ApplicationInfo.ratio
+                        topRectangle {
+                            width: layoutArea.width * 0.636
+                            height: layoutArea.height
+                            anchors.rightMargin: 10 * ApplicationInfo.ratio
+                        }
                     }
                     AnchorChanges {
                         target: topRectangle
@@ -193,9 +195,10 @@ ActivityBase {
                 State {
                     when: !background.horizontalLayout && items.typeResult
                     PropertyChanges {
-                        target: topRectangle
-                        width: layoutArea.width * 0.636
-                        height: layoutArea.height
+                        topRectangle {
+                            width: layoutArea.width * 0.636
+                            height: layoutArea.height
+                        }
                     }
                     AnchorChanges {
                         target: topRectangle
@@ -236,29 +239,31 @@ ActivityBase {
                     State {
                         when: background.horizontalLayout
                         PropertyChanges {
-                            target: answerZone
-                            cellSize: Math.min(topRectangle.height / 7, topRectangle.width / 11)
-                            cellHeight: cellSize * 1.125
-                            cellWidth: cellSize
-                            width: cellSize * 10
-                            height: cellSize * 6.875
-                            anchors.verticalCenterOffset: cellSize * 0.125
-                            anchors.horizontalCenterOffset: 0
-                            flow: GridView.FlowTopToBottom
+                            answerZone {
+                                cellSize: Math.min(topRectangle.height / 7, topRectangle.width / 11)
+                                cellHeight: answerZone.cellSize * 1.125
+                                cellWidth: answerZone.cellSize
+                                width: answerZone.cellSize * 10
+                                height: answerZone.cellSize * 6.875
+                                anchors.verticalCenterOffset: answerZone.cellSize * 0.125
+                                anchors.horizontalCenterOffset: 0
+                                flow: GridView.FlowTopToBottom
+                            }
                         }
                     },
                     State {
                         when: !background.horizontalLayout
                         PropertyChanges {
-                            target: answerZone
-                            cellSize: Math.min(topRectangle.width / 7, topRectangle.height / 11)
-                            cellHeight: cellSize
-                            cellWidth: cellSize * 1.125
-                            width: cellSize * 6.875
-                            height: cellSize * 10
-                            anchors.verticalCenterOffset: 0
-                            anchors.horizontalCenterOffset: cellSize * 0.125
-                            flow: GridView.FlowLeftToRight
+                            answerZone {
+                                cellSize: Math.min(topRectangle.width / 7, topRectangle.height / 11)
+                                cellHeight: answerZone.cellSize
+                                cellWidth: answerZone.cellSize * 1.125
+                                width: answerZone.cellSize * 6.875
+                                height: answerZone.cellSize * 10
+                                anchors.verticalCenterOffset: 0
+                                anchors.horizontalCenterOffset: answerZone.cellSize * 0.125
+                                flow: GridView.FlowLeftToRight
+                            }
                         }
                     }
                 ]
@@ -283,13 +288,14 @@ ActivityBase {
                 State {
                     when: background.horizontalLayout
                     PropertyChanges {
-                        target: bottomRectangle
-                        width: layoutArea.width
-                        // 3/11 of layoutArea
-                        height: layoutArea.height * 0.273
-                        anchors.rightMargin: 0
-                        // 0.5/11 of layoutArea
-                        anchors.topMargin: layoutArea.height * 0.045
+                        bottomRectangle {
+                            width: layoutArea.width
+                            // 3/11 of layoutArea
+                            height: layoutArea.height * 0.273
+                            anchors.rightMargin: 0
+                            // 0.5/11 of layoutArea
+                            anchors.topMargin: layoutArea.height * 0.045
+                        }
                     }
                     AnchorChanges {
                         target: bottomRectangle
@@ -298,26 +304,30 @@ ActivityBase {
                         anchors.right: undefined
                     }
                     PropertyChanges {
-                        target: unselectedBar
-                        anchors.verticalCenterOffset: -unselectedBar.height * 0.5
-                        anchors.horizontalCenterOffset: 0
+                        unselectedBar {
+                            anchors.verticalCenterOffset: -unselectedBar.height * 0.5
+                            anchors.horizontalCenterOffset: 0
+                        }
                     }
                     PropertyChanges {
-                        target: selectedBar
-                        anchors.verticalCenterOffset: -selectedBar.height * 0.5
-                        anchors.horizontalCenterOffset: 0
+                        selectedBar {
+                            anchors.verticalCenterOffset: -selectedBar.height * 0.5
+                            anchors.horizontalCenterOffset: 0
+                        }
                     }
                     PropertyChanges {
-                        target: scrollBar
-                        width: unselectedBar.width
-                        height: bottomRectangle.height * 0.5
-                        x: unselectedBar.x
-                        y: unselectedBar.y + unselectedBar.height
+                        scrollBar {
+                            width: unselectedBar.width
+                            height: bottomRectangle.height * 0.5
+                            x: unselectedBar.x
+                            y: unselectedBar.y + unselectedBar.height
+                        }
                     }
                     PropertyChanges {
-                        target: arrow
-                        rotation: 0
-                        x: 0
+                        arrow {
+                            rotation: 0
+                            x: 0
+                        }
                     }
                     AnchorChanges {
                         target: arrow
@@ -335,11 +345,12 @@ ActivityBase {
                 State {
                     when: !background.horizontalLayout
                     PropertyChanges {
-                        target: bottomRectangle
-                        width: layoutArea.width * 0.273
-                        height: layoutArea.height
-                        anchors.rightMargin: layoutArea.width * 0.045
-                        anchors.topMargin: 0
+                        bottomRectangle {
+                            width: layoutArea.width * 0.273
+                            height: layoutArea.height
+                            anchors.rightMargin: layoutArea.width * 0.045
+                            anchors.topMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: bottomRectangle
@@ -348,26 +359,30 @@ ActivityBase {
                         anchors.right: topRectangle.left
                     }
                     PropertyChanges {
-                        target: unselectedBar
-                        anchors.verticalCenterOffset: 0
-                        anchors.horizontalCenterOffset: unselectedBar.width * 0.5
+                        unselectedBar {
+                            anchors.verticalCenterOffset: 0
+                            anchors.horizontalCenterOffset: unselectedBar.width * 0.5
+                        }
                     }
                     PropertyChanges {
-                        target: selectedBar
-                        anchors.verticalCenterOffset: 0
-                        anchors.horizontalCenterOffset: selectedBar.width * 0.5
+                        selectedBar {
+                            anchors.verticalCenterOffset: 0
+                            anchors.horizontalCenterOffset: selectedBar.width * 0.5
+                        }
                     }
                     PropertyChanges {
-                        target: scrollBar
-                        width: bottomRectangle.width * 0.5
-                        height: unselectedBar.height
-                        x: unselectedBar.x - width
-                        y: unselectedBar.y
+                        scrollBar {
+                            width: bottomRectangle.width * 0.5
+                            height: unselectedBar.height
+                            x: unselectedBar.x - width
+                            y: unselectedBar.y
+                        }
                     }
                     PropertyChanges {
-                        target: arrow
-                        rotation: 90
-                        y: 0
+                        arrow {
+                            rotation: 90
+                            y: 0
+                        }
                     }
                     AnchorChanges {
                         target: arrow
@@ -630,9 +645,10 @@ ActivityBase {
                     anchors.verticalCenter: undefined
                 }
                 PropertyChanges {
-                    target: answerBackground
-                    width: mainRectangle.width
-                    anchors.topMargin: 5 * ApplicationInfo.ratio
+                    answerBackground {
+                        width: mainRectangle.width
+                        anchors.topMargin: 5 * ApplicationInfo.ratio
+                    }
                 }
                 AnchorChanges {
                     target: okButton
@@ -643,10 +659,11 @@ ActivityBase {
                     anchors.left: undefined
                 }
                 PropertyChanges {
-                    target: okButton
-                    anchors.bottomMargin: 0
-                    anchors.rightMargin: okButton.width * 0.5
-                    anchors.verticalCenterOffset: -10
+                    okButton {
+                        anchors.bottomMargin: 0
+                        anchors.rightMargin: okButton.width * 0.5
+                        anchors.verticalCenterOffset: -10
+                    }
                 }
             },
             State {
@@ -659,9 +676,10 @@ ActivityBase {
                     anchors.verticalCenter: okButton.verticalCenter
                 }
                 PropertyChanges {
-                    target: answerBackground
-                    width: mainRectangle.width - okButton.width * 1.2
-                    anchors.topMargin: 0
+                    answerBackground {
+                        width: mainRectangle.width - okButton.width * 1.2
+                        anchors.topMargin: 0
+                    }
                 }
                 AnchorChanges {
                     target: okButton
@@ -672,10 +690,11 @@ ActivityBase {
                     anchors.left: undefined
                 }
                 PropertyChanges {
-                    target: okButton
-                    anchors.bottomMargin: okButton.height * 0.5
-                    anchors.rightMargin: 0
-                    anchors.verticalCenterOffset: 0
+                    okButton {
+                        anchors.bottomMargin: okButton.height * 0.5
+                        anchors.rightMargin: 0
+                        anchors.verticalCenterOffset: 0
+                    }
                 }
             }
         ]
@@ -701,8 +720,9 @@ ActivityBase {
             states: State {
                 when: hintMouseArea.containsMouse
                 PropertyChanges {
-                    target: hint
-                    scale: 1.1
+                    hint {
+                        scale: 1.1
+                    }
                 }
             }
         }
@@ -716,28 +736,31 @@ ActivityBase {
                 State {
                     when: !isSubtractionMode && !items.typeResult
                     PropertyChanges {
-                        target: errorRectangle
-                        anchors.fill: topRectangle
-                        radius: topRectangle.radius
-                        imageSize: 60 * ApplicationInfo.ratio
+                        errorRectangle {
+                            anchors.fill: topRectangle
+                            radius: topRectangle.radius
+                            imageSize: 60 * ApplicationInfo.ratio
+                        }
                     }
                 },
                 State {
                     when: isSubtractionMode && !items.typeResult
                     PropertyChanges {
-                        target: errorRectangle
-                        anchors.fill: mainRectangle
-                        radius: mainRectangle.radius
-                        imageSize: 60 * ApplicationInfo.ratio
+                        errorRectangle {
+                            anchors.fill: mainRectangle
+                            radius: mainRectangle.radius
+                            imageSize: 60 * ApplicationInfo.ratio
+                        }
                     }
                 },
                 State {
                     when: items.typeResult
                     PropertyChanges {
-                        target: errorRectangle
-                        anchors.fill: answerBackground
-                        radius: answerBackground.radius
-                        imageSize: height * 0.5
+                        errorRectangle {
+                            anchors.fill: answerBackground
+                            radius: answerBackground.radius
+                            imageSize: height * 0.5
+                        }
                     }
                 }
             ]
