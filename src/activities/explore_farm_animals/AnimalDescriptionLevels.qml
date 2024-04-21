@@ -95,14 +95,16 @@ Rectangle {
             State {
                 name: "zoomedIn"
                 PropertyChanges {
-                    target: animalImage
-                    width: rectangleDesc.width / 1.2
-                    height: rectangleDesc.height / 1.2
+                    animalImage {
+                        width: rectangleDesc.width / 1.2
+                        height: rectangleDesc.height / 1.2
+                    }
                 }
 
                 PropertyChanges {
-                    target: descriptionText
-                    visible: false
+                    descriptionText {
+                        visible: false
+                    }
                 }
 
                 AnchorChanges {
@@ -113,16 +115,18 @@ Rectangle {
             State {
                 name: "zoomedOut"
                 PropertyChanges {
-                    target: animalImage
-                    width: rectangleDesc.horizontalLayout ? parent.width / 2 : parent.width * 0.9
-                    height: rectangleDesc.horizontalLayout ?
+                    animalImage {
+                        width: rectangleDesc.horizontalLayout ? parent.width / 2 : parent.width * 0.9
+                        height: rectangleDesc.horizontalLayout ?
                                        parent.height * 0.8 :
                                        (parent.height - heading.height - descriptionText.height) * 0.9
+                    }
                 }
 
                 PropertyChanges {
-                    target: descriptionText
-                    visible: true
+                    descriptionText {
+                        visible: true
+                    }
                 }
 
                 AnchorChanges {
