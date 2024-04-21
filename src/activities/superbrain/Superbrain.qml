@@ -352,7 +352,7 @@ if (targetY < 0) {
                                     guessModel.get(0).guess.get(index).colIndex = guessModel.get(1).guess.get(index).colIndex;
                             }
 
-                            onClicked: {
+                            onClicked: (mouse) => {
                                 var obj = items.guessModel.get(0).guess.get(index);
                                 if(chooserTimer.running && chooserGrid.guessIndex === index) {
                                     if (mouse.button == Qt.LeftButton)
