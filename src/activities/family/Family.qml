@@ -187,8 +187,9 @@ ActivityBase {
                                State {
                                      name: "active"
                                      PropertyChanges {
-                                         target: currentPointer
-                                         borderColor: "#e1e1e1"
+                                         currentPointer {
+                                             borderColor: "#e1e1e1"
+                                         }
                                      }
                                },
                                State {
@@ -200,9 +201,10 @@ ActivityBase {
                                State {
                                     name: "activeTo"
                                     PropertyChanges {
-                                        target: currentPointer
-                                        borderColor: "#e77936"
-                                        color: "#80f2f2f2"
+                                        currentPointer {
+                                            borderColor: "#e77936"
+                                            color: "#80f2f2f2"
+                                        }
                                     }
                                }
                             ]

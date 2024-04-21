@@ -58,7 +58,7 @@ QtObject {
     * Returns the x coordinate of the
     * right edge of a node
     */
-    function rightXEdge(xPosition) {
+    function rightXEdge(xPosition: real) {
         return xPosition + nodeWidth
     }
 
@@ -66,7 +66,7 @@ QtObject {
     * Returns the y coordinate of the
     * midpoint of a node
     */
-    function nodeMidPointY(yPosition) {
+    function nodeMidPointY(yPosition: real) {
         return yPosition + nodeHeight / 2
     }
 
@@ -74,7 +74,7 @@ QtObject {
     * Returns the x coordinate of the
     * midpoint of two nodes
     */
-    function nodeMidPointX(xLeftPosition, xRightPosition) {
+    function nodeMidPointX(xLeftPosition: real, xRightPosition: real) {
         return ((xLeftPosition + nodeWidth) + xRightPosition) / 2
     }
 
