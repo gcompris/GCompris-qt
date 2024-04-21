@@ -199,24 +199,27 @@ ActivityBase {
                                 State {
                                     name: "notclicked"
                                     PropertyChanges {
-                                        target: img
-                                        scale: 1.0
+                                        img {
+                                            scale: 1.0
+                                        }
                                     }
                                 },
                                 State {
                                     name: "clicked"
                                     when: mouseArea.pressed
                                     PropertyChanges {
-                                        target: img
-                                        scale: 0.9
+                                        img {
+                                            scale: 0.9
+                                        }
                                     }
                                 },
                                 State {
                                     name: "hover"
                                     when: mouseArea.containsMouse
                                     PropertyChanges {
-                                        target: img
-                                        scale: 1.1
+                                        img {
+                                            scale: 1.1
+                                        }
                                     }
                                 }
                             ]
