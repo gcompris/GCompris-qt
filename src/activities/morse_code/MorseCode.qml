@@ -196,7 +196,7 @@ ActivityBase {
              "3" : "...--",  "4" : "....-", "5" : ".....", "6" : "-....",  "7" : "--...",  "8" : "---..",
              "9" : "----." , "0" : "-----"
             }
-            function morse2alpha(str) {
+            function morse2alpha(str: string): string {
                 var letters = ""
                 var input = []
                 input = str.split(' ')
@@ -215,7 +215,7 @@ ActivityBase {
                 return letters
             }
 
-            function alpha2morse(str) {
+            function alpha2morse(str: string): string {
                 var code = "";
 
                 for(var index in str) {
