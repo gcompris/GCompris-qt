@@ -142,7 +142,7 @@ ActivityBase {
             }
         }
 
-        function playNote(index) {
+        function playNote(index: int) {
             activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
                                        'xylofon_son' + (index + 1) + ".wav"))
         }
@@ -294,7 +294,7 @@ ActivityBase {
         }
 
         function checkAnswer() {
-            if(items.answer.join() == items.question.join()) {
+            if(items.answer.join() === items.question.join()) {
                 score.currentSubLevel += 1
                 score.playWinAnimation()
                 activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
