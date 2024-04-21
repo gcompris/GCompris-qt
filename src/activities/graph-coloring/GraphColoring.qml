@@ -212,8 +212,9 @@ ActivityBase {
                     states: State {
                         name: "scaled"; when: mouseArea.containsMouse
                         PropertyChanges {
-                            target: currentNode
-                            scale: 1.1
+                            currentNode {
+                                scale: 1.1
+                            }
                         }
                     }
                     transitions: Transition {
@@ -233,7 +234,7 @@ ActivityBase {
                 visible: items.currentKeyZone === graphRect && items.keyNavigationMode
                 anchors.centerIn: nodesRepeater.itemAt(0)
                 property int index: -1
-                function setHighlight(toIndex) {
+                function setHighlight(toIndex: int) {
                     index = toIndex;
                     anchors.centerIn = nodesRepeater.itemAt(index);
                 }
@@ -267,7 +268,7 @@ ActivityBase {
                 }
             }
         }
-        function showChooser(visible, guessIndex, item)
+        function showChooser(visible: bool, guessIndex: int, item)
         {
             if (!visible) {
                 chooser.visible = false;
