@@ -61,25 +61,28 @@ Item {
             State {
                 name: "tuxboatLeft"
                 PropertyChanges {
-                    target: tuxboat
-                    anchors.leftMargin: 0
-                    opacity: 1
+                    tuxboat {
+                        anchors.leftMargin: 0
+                        opacity: 1
+                    }
                 }
             },
             State {
                 name: "tuxboatRight"
                 PropertyChanges {
-                    target: tuxboat
-                    anchors.leftMargin: layoutArea.width - tuxboat.width
-                    opacity: 0
+                    tuxboat {
+                        anchors.leftMargin: layoutArea.width - tuxboat.width
+                        opacity: 0
+                    }
                 }
             },
             State {
                 name: "tuxboatRestarted"
                 PropertyChanges {
-                    target: tuxboat
-                    anchors.leftMargin: layoutArea.width - tuxboat.width
-                    opacity: 0
+                    tuxboat {
+                        anchors.leftMargin: layoutArea.width - tuxboat.width
+                        opacity: 0
+                    }
                 }
             }
         ]
@@ -89,9 +92,9 @@ Item {
                 from: "tuxboatLeft"; to: "tuxboatRight";
                 SequentialAnimation {
                     ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav") }
-                    NumberAnimation { property: "anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
+                    NumberAnimation { property: "tuxboat.anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
                     ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav") }
-                    NumberAnimation { property: "opacity"; easing.type: Easing.InOutQuad; duration: 200 }
+                    NumberAnimation { property: "tuxboat.opacity"; easing.type: Easing.InOutQuad; duration: 200 }
                     ScriptAction { script: {
                             boatparked.opacity = 1;
                             tux.visible = true;
@@ -101,12 +104,12 @@ Item {
             },
             Transition {
                 from: "tuxboatRight"; to: "tuxboatLeft";
-                PropertyAction { properties: "anchors.leftMargin, opacity" }
+                PropertyAction { properties: "tuxboat.anchors.leftMargin, tuxboat.opacity" }
                 ScriptAction { script: boatparked.opacity = 0 }
             },
             Transition {
                 from: "tuxboatRight, tuxboatLeft"; to: "tuxboatRestarted"
-                PropertyAction { properties: "anchors.leftMargin, opacity" }
+                PropertyAction { properties: "tuxboat.anchors.leftMargin, tuxboat.opacity" }
                 ScriptAction { script: {
                         boatparked.opacity = 1;
                         tux.visible = true;
@@ -161,17 +164,19 @@ Item {
             State {
                 name: "vaporDown"
                 PropertyChanges {
-                    target: vapor
-                    opacity: 0
-                    anchors.topMargin: parent.width * 0.28
+                    vapor {
+                        opacity: 0
+                        anchors.topMargin: parent.width * 0.28
+                    }
                 }
             },
             State {
                 name: "vaporUp"
                 PropertyChanges {
-                    target: vapor
-                    opacity: 1
-                    anchors.topMargin: parent.width * 0.1
+                    vapor {
+                        opacity: 1
+                        anchors.topMargin: parent.width * 0.1
+                    }
                 }
             }
         ]
@@ -180,16 +185,16 @@ Item {
             Transition {
                 from: "vaporDown"; to: "vaporUp";
                 SequentialAnimation {
-                    NumberAnimation { property: "opacity"; duration: 200 }
-                    NumberAnimation { property: "anchors.topMargin"; duration: 5000 }
+                    NumberAnimation { property: "vapor.opacity"; duration: 200 }
+                    NumberAnimation { property: "vapor.anchors.topMargin"; duration: 5000 }
                     ScriptAction { script: vapor.isUp = false }
                 }
             },
             Transition {
                 from: "vaporUp"; to: "vaporDown";
                 SequentialAnimation {
-                    NumberAnimation { property: "opacity"; duration: 200 }
-                    PropertyAction { property: "anchors.topMargin" }
+                    NumberAnimation { property: "vapor.opacity"; duration: 200 }
+                    PropertyAction { property: "vapor.anchors.topMargin" }
                     ScriptAction { script: {
                             if(vapor.animLoop === true) {
                                 vapor.animLoop = false;
@@ -240,19 +245,21 @@ Item {
             State {
                 name: "cloudIsDown"
                 PropertyChanges {
-                    target: cloud
-                    opacity: 0
-                    width: 0
-                    anchors.leftMargin: cloud.originMargin
+                    cloud {
+                        opacity: 0
+                        width: 0
+                        anchors.leftMargin: cloud.originMargin
+                    }
                 }
             },
             State {
                 name: "cloudIsUp"
                 PropertyChanges {
-                    target: cloud
-                    opacity: 1
-                    width: cloud.sourceSize.width
-                    anchors.leftMargin: cloud.upMargin
+                    cloud {
+                        opacity: 1
+                        width: cloud.sourceSize.width
+                        anchors.leftMargin: cloud.upMargin
+                    }
                 }
             }
         ]
@@ -260,12 +267,12 @@ Item {
         transitions: [
             Transition {
                 from: "cloudIsDown"; to: "cloudIsUp";
-                NumberAnimation { property: "opacity"; easing.type: Easing.InOutQuad; duration: 5000 }
-                NumberAnimation { properties: "width, anchors.leftMargin"; easing.type: Easing.InOutQuad; duration: 15000 }
+                NumberAnimation { property: "cloud.opacity"; easing.type: Easing.InOutQuad; duration: 5000 }
+                NumberAnimation { properties: "cloud.width, cloud.anchors.leftMargin"; easing.type: Easing.InOutQuad; duration: 15000 }
             },
             Transition {
                 from: "cloudIsUp"; to: "cloudIsDown";
-                PropertyAction { properties: "opacity, width, anchors.leftMargin" }
+                PropertyAction { properties: "cloud.opacity, cloud.width, cloud.anchors.leftMargin" }
             }
         ]
     }

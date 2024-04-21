@@ -40,7 +40,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: message
+        Keys.forwardTo: [message]
 
         QtObject {
             id: items
@@ -129,9 +129,10 @@ ActivityBase {
                     name: "verticalLayout"
                     when: items.isVertical
                     PropertyChanges {
-                        target: layoutArea
-                        width: parent.width
-                        anchors.bottomMargin: bar.height * 0.2
+                        layoutArea {
+                            width: parent.width
+                            anchors.bottomMargin: bar.height * 0.2
+                        }
                     }
                     AnchorChanges {
                         target: layoutArea
@@ -143,9 +144,10 @@ ActivityBase {
                     name: "horizontalLayout"
                     when: !items.isVertical
                     PropertyChanges {
-                        target: layoutArea
-                        width: parent.height - bar.height * 1.2
-                        anchors.bottomMargin: 0
+                        layoutArea {
+                            width: parent.height - bar.height * 1.2
+                            anchors.bottomMargin: 0
+                        }
                     }
                     AnchorChanges {
                         target: layoutArea
@@ -194,15 +196,17 @@ ActivityBase {
                 State {
                     name: "sunDown"
                     PropertyChanges {
-                        target: sun
-                        anchors.topMargin: layoutArea.height * 0.256
+                        sun {
+                            anchors.topMargin: layoutArea.height * 0.256
+                        }
                     }
                 },
                 State {
                     name: "sunUp"
                     PropertyChanges {
-                        target: sun
-                        anchors.topMargin: layoutArea.height * 0.056
+                        sun {
+                            anchors.topMargin: layoutArea.height * 0.056
+                        }
                     }
                 }
             ]
@@ -210,7 +214,7 @@ ActivityBase {
             transitions: [
                 Transition {
                     from: "sunUp"; to: "sunDown";
-                    NumberAnimation { property: "anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
+                    NumberAnimation { property: "sun.anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
                 },
                 Transition {
                     from: "sunDown"; to: "sunUp";
@@ -221,7 +225,7 @@ ActivityBase {
                             hydro.item.cloudIsUp = true;
                         }
                     }
-                    NumberAnimation { property: "anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
+                    NumberAnimation { property: "sun.anchors.topMargin"; easing.type: Easing.InOutQuad; duration: 5000 }
                 }
             ]
         }
