@@ -47,24 +47,26 @@ Item {
                 name: "horizontalLayout"
                 when: background.isHorizontalLayout
                 PropertyChanges {
-                    target: view
-                    width: iconSize
-                    height: background.height - 2 * bar.height
-                    orientation: ListView.Vertical
-                    iconSize: Math.min((height - (mymodel.count - 1) * spacing) / mymodel.count,
-                                       100 * ApplicationInfo.ratio)
+                    view {
+                        width: view.iconSize
+                        height: background.height - 2 * bar.height
+                        orientation: ListView.Vertical
+                        iconSize: Math.min((height - (mymodel.count - 1) * view.spacing) / mymodel.count,
+                        100 * ApplicationInfo.ratio)
+                    }
                 }
             },
             State {
                 name: "verticalLayout"
                 when: !background.isHorizontalLayout
                 PropertyChanges {
-                    target: view
-                    width: background.width - background.baseMargins * 2
-                    height: iconSize
-                    orientation: ListView.Horizontal
-                    iconSize: Math.min((width - (model.count - 1) * spacing) / mymodel.count,
-                                       100 * ApplicationInfo.ratio)
+                    view {
+                        width: background.width - background.baseMargins * 2
+                        height: view.iconSize
+                        orientation: ListView.Horizontal
+                        iconSize: Math.min((width - (model.count - 1) * view.spacing) / mymodel.count,
+                        100 * ApplicationInfo.ratio)
+                    }
                 }
             }
         ]
@@ -94,32 +96,36 @@ Item {
                             name: "notclicked"
                             when: !icon.iAmSelected && !mouseArea.containsMouse
                             PropertyChanges {
-                                target: icon
-                                scale: 0.8
+                                icon {
+                                    scale: 0.8
+                                }
                             }
                         },
                         State {
                             name: "clicked"
                             when: mouseArea.pressed
                             PropertyChanges {
-                                target: icon
-                                scale: 0.7
+                                icon {
+                                    scale: 0.7
+                                }
                             }
                         },
                         State {
                             name: "hover"
                             when: mouseArea.containsMouse && !icon.iAmSelected
                             PropertyChanges {
-                                target: icon
-                                scale: 1
+                                icon {
+                                    scale: 1
+                                }
                             }
                         },
                         State {
                             name: "selected"
                             when: icon.iAmSelected
                             PropertyChanges {
-                                target: icon
-                                scale: 0.9
+                                icon {
+                                    scale: 0.9
+                                }
                             }
                         }
                     ]
