@@ -89,98 +89,112 @@ Item {
             name: "underPosition"
             when: checkState === Activity.underPosition
             PropertyChanges {
-                target: boy
-                z: 0
-                anchors.horizontalCenterOffset: 0
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.75
+                boy {
+                    z: 0
+                    anchors.horizontalCenterOffset: 0
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.75
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: true
+                topSide {
+                    visible: true
+                }
             }
         },
         State {
             name: "rightPosition"
             when: checkState === Activity.rightPosition
             PropertyChanges {
-                target: boy
-                z: 0
-                anchors.horizontalCenterOffset: backgroundPosition.boxSize * 0.75
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.05
+                boy {
+                    z: 0
+                    anchors.horizontalCenterOffset: backgroundPosition.boxSize * 0.75
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.05
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: true
+                topSide {
+                    visible: true
+                }
             }
         },
         State {
             name: "leftPosition"
             when: checkState === Activity.leftPosition
             PropertyChanges {
-                target: boy
-                z: 15
-                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.7
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.05
+                boy {
+                    z: 15
+                    anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.7
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.05
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: true
+                topSide {
+                    visible: true
+                }
             }
         },
         State {
             name: "abovePosition"
             when: checkState === Activity.abovePosition
             PropertyChanges {
-                target: boy
-                z: 15
-                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.05
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.7
+                boy {
+                    z: 15
+                    anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.05
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.7
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: true
+                topSide {
+                    visible: true
+                }
             }
         },
         State {
             name: "insidePosition"
             when: checkState === Activity.insidePosition
             PropertyChanges {
-                target: boy
-                z: 5
-                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.05
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.25
+                boy {
+                    z: 5
+                    anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.05
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.25
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: false
+                topSide {
+                    visible: false
+                }
             }
         },
         State {
             name: "behindPosition"
             when: checkState === Activity.behindPosition
             PropertyChanges {
-                target: boy
-                z: 0
-                anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.15
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.5
+                boy {
+                    z: 0
+                    anchors.horizontalCenterOffset: backgroundPosition.boxSize * -0.15
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * -0.5
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: true
+                topSide {
+                    visible: true
+                }
             }
         },
         State {
             name: "inFrontOfPosition"
             when: checkState === Activity.inFrontOfPosition
             PropertyChanges {
-                target: boy
-                z: 15
-                anchors.horizontalCenterOffset: backgroundPosition.boxSize * 0.15
-                anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.25
+                boy {
+                    z: 15
+                    anchors.horizontalCenterOffset: backgroundPosition.boxSize * 0.15
+                    anchors.verticalCenterOffset: backgroundPosition.boxSize * 0.25
+                }
             }
             PropertyChanges {
-                target: topSide
-                visible: true
+                topSide {
+                    visible: true
+                }
             }
         }
     ]

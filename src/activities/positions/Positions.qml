@@ -118,8 +118,9 @@ ActivityBase {
                         name: "verticalScreen"
                         when: !mainScreen.horizontalLayout
                         PropertyChanges {
-                            target: backgroundScreen
-                            height: parent.height * 0.5
+                            backgroundScreen {
+                                height: parent.height * 0.5
+                            }
                         }
                     }
                 ]
@@ -180,8 +181,9 @@ ActivityBase {
                         name: "verticalScreen"
                         when: !mainScreen.horizontalLayout
                         PropertyChanges {
-                            target: answerViews
-                            height: mainScreen.height * 0.3
+                            answerViews {
+                                height: mainScreen.height * 0.3
+                            }
                         }
                     }
                 ]
