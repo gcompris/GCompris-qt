@@ -208,7 +208,7 @@ ElectricalComponent {
         }
     }
 
-    function checkComponentAnswer() {
+    function checkComponentAnswer(): string {
         // special case for level 8
         if(Activity.items.currentLevel === 7 && componentVoltage > 0 && !isBroken)
             return "bulbIn";

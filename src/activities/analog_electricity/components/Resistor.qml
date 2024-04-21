@@ -162,7 +162,7 @@ ElectricalComponent {
         Activity.netlist.push(netlistItem);
     }
 
-    function checkComponentAnswer() {
+    function checkComponentAnswer(): string {
         if(resistorCurrent > 0 && terminalConnected >= 2)
             return "resistorIn";
         else

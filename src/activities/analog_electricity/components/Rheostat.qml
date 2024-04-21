@@ -311,7 +311,7 @@ ElectricalComponent {
         Activity.netlist.push(netlistItem);
     }
 
-    function checkComponentAnswer() {
+    function checkComponentAnswer(): string {
         if(connectionPoints.itemAt(0).wires.length > 0 && connectionPoints.itemAt(2).wires.length > 0 && current === 0.005) {
             return "rheostatConst";
         } else if(terminalConnected >= 2 && current > 0) {

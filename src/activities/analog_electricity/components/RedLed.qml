@@ -188,7 +188,7 @@ ElectricalComponent {
         }
     }
 
-    function checkComponentAnswer() {
+    function checkComponentAnswer(): string {
         if(ledLight.opacity === 1) {
             return "redLedGlows";
         } else if(terminalConnected >= 2 && isBroken) {

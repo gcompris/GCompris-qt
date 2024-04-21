@@ -141,15 +141,17 @@ Item {
                             State {
                                 name: "selected"
                                 PropertyChanges {
-                                    target: toolDelete
-                                    opacity: 1
+                                    toolDelete {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "notSelected"
                                 PropertyChanges {
-                                    target: toolDelete
-                                    opacity: 0.5
+                                    toolDelete {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -176,15 +178,17 @@ Item {
                             State {
                                 name: "canBeSelected"
                                 PropertyChanges {
-                                    target: info
-                                    opacity: 1
+                                    info {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
-                                    target: info
-                                    opacity: 0.5
+                                    info {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -211,15 +215,17 @@ Item {
                             State {
                                 name: "canBeSelected"
                                 PropertyChanges {
-                                    target: rotateLeft
-                                    opacity: 1
+                                    rotateLeft {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
-                                    target: rotateLeft
-                                    opacity: 0.5
+                                    rotateLeft {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -246,16 +252,18 @@ Item {
                         states: [
                             State {
                                 name: "canBeSelected"
-                                PropertyChanges{
-                                    target: rotateRight
-                                    opacity: 1
+                                PropertyChanges {
+                                    rotateRight {
+                                        opacity: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
-                                    target: rotateRight
-                                    opacity: 0.5
+                                    rotateRight {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -278,15 +286,17 @@ Item {
                             State {
                                 name: "canZoomIn"
                                 PropertyChanges {
-                                    target: zoomInBtn
-                                    opacity: 1.0
+                                    zoomInBtn {
+                                        opacity: 1.0
+                                    }
                                 }
                             },
                             State {
                                 name: "cannotZoomIn"
                                 PropertyChanges {
-                                    target: zoomInBtn
-                                    opacity: 0.5
+                                    zoomInBtn {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -309,15 +319,17 @@ Item {
                             State {
                                 name: "canZoomOut"
                                 PropertyChanges {
-                                    target: zoomOutBtn
-                                    opacity: 1.0
+                                    zoomOutBtn {
+                                        opacity: 1.0
+                                    }
                                 }
                             },
                             State {
                                 name: "cannotZoomOut"
                                 PropertyChanges {
-                                    target: zoomOutBtn
-                                    opacity: 0.5
+                                    zoomOutBtn {
+                                        opacity: 0.5
+                                    }
                                 }
                             }
                         ]
@@ -394,24 +406,28 @@ Item {
             name: "horizontalList"
             when: listWidget.hori
             PropertyChanges {
-                target: listWidget
-                minIconWidth: Math.min((background.width - 1.5 * view.width) / 6, 100)
+                listWidget {
+                    minIconWidth: Math.min((background.width - 1.5 * view.width) / 6, 100)
+                }
             }
             PropertyChanges {
-                target: view
-                width: inputComponentsContainer.width
-                height: background.height - 2 * bar.height
-                columns: 1
-                nbItemsByGroup: parent.height / iconSize - 2
+                view {
+                    width: inputComponentsContainer.width
+                    height: background.height - 2 * bar.height
+                    columns: 1
+                    nbItemsByGroup: parent.height / view.iconSize - 2
+                }
             }
             PropertyChanges {
-                target: toolButton
-                width: listWidget.width - listWidget.anchors.leftMargin
+                toolButton {
+                    width: listWidget.width - listWidget.anchors.leftMargin
+                }
             }
             PropertyChanges {
-                target: toolsContainer
-                width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
-                height: parent.width
+                toolsContainer {
+                    width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
+                    height: parent.width
+                }
             }
             AnchorChanges {
                 target: toolsContainer
@@ -419,33 +435,38 @@ Item {
                 anchors.left: parent.right
             }
             PropertyChanges {
-                target: tools
-                anchors.leftMargin: 8 * ApplicationInfo.ratio
-                anchors.topMargin: tools.topMarginAmt
+                tools {
+                    anchors.leftMargin: 8 * ApplicationInfo.ratio
+                    anchors.topMargin: tools.topMarginAmt
+                }
             }
         },
         State {
             name: "verticalList"
             when: !listWidget.hori
             PropertyChanges {
-                target: listWidget
-                minIconWidth: Math.min((background.height - 1.5 * bar.height - view.height) / 6, 100)
+                listWidget {
+                    minIconWidth: Math.min((background.height - 1.5 * bar.height - view.height) / 6, 100)
+                }
             }
             PropertyChanges {
-                target: view
-                width: 2 * bar.height
-                height: bar.height
-                columns: nbItemsByGroup + 2
-                nbItemsByGroup: parent.width / iconSize - 2
+                view {
+                    width: 2 * bar.height
+                    height: bar.height
+                    columns: view.nbItemsByGroup + 2
+                    nbItemsByGroup: parent.width / view.iconSize - 2
+                }
             }
             PropertyChanges {
-                target: toolButton
-                width: listWidget.height - listWidget.anchors.leftMargin
+                toolButton {
+                    width: listWidget.height - listWidget.anchors.leftMargin
+                }
             }
             PropertyChanges {
-                target: toolsContainer
-                width: parent.width
-                height: (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
+                toolsContainer {
+                    width: parent.width
+                    height: (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
+                }
             }
             AnchorChanges {
                 target: toolsContainer
@@ -453,9 +474,10 @@ Item {
                 anchors.left: parent.left
             }
             PropertyChanges {
-                target: tools
-                anchors.leftMargin: tools.leftMarginAmt
-                anchors.topMargin: 8 * ApplicationInfo.ratio
+                tools {
+                    anchors.leftMargin: tools.leftMarginAmt
+                    anchors.topMargin: 8 * ApplicationInfo.ratio
+                }
             }
         }
     ]

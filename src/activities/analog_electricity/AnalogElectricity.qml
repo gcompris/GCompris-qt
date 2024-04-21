@@ -61,7 +61,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: tutorialInstruction
+        Keys.forwardTo: [tutorialInstruction]
 
         Keys.onPressed: (event) => {
             if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && okButton.enabled) {
@@ -305,7 +305,7 @@ ActivityBase {
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
-            function show(newText) {
+            function show(newText: string) {
                 if(newText) {
                     text = newText;
                     opacity = 1;
@@ -378,12 +378,13 @@ ActivityBase {
 
         states: [
             State {
-                id: "horizontalView"
+                id: horizontalView
                 when: background.hori
                 PropertyChanges {
-                    target: visibleArea
-                    width: background.width - items.toolsMargin - 10
-                    height: background.height - bar.height - items.toolsMargin - 10
+                    visibleArea {
+                        width: background.width - items.toolsMargin - 10
+                        height: background.height - bar.height - items.toolsMargin - 10
+                    }
                 }
                 AnchorChanges {
                     target: visibleArea
@@ -391,35 +392,40 @@ ActivityBase {
                     anchors.left: inputComponentsContainer.right
                 }
                 PropertyChanges {
-                    target: playArea
-                    x: items.toolsMargin
-                    y: 0
-                    width: background.width * 4 - items.toolsMargin
-                    height: background.height * 4 - (bar.height * 1.1)
+                    playArea {
+                        x: items.toolsMargin
+                        y: 0
+                        width: background.width * 4 - items.toolsMargin
+                        height: background.height * 4 - (bar.height * 1.1)
+                    }
                 }
                 PropertyChanges {
-                    target: mousePan
-                    drag.maximumX: items.toolsMargin
-                    drag.maximumY: 0
+                    mousePan {
+                        drag.maximumX: items.toolsMargin
+                        drag.maximumY: 0
+                    }
                 }
                 PropertyChanges {
-                    target: inputComponentsContainer
-                    width: items.toolsMargin
-                    height: background.height
+                    inputComponentsContainer {
+                        width: items.toolsMargin
+                        height: background.height
+                    }
                 }
                 PropertyChanges {
-                    target: containerTexture
-                    anchors.rightMargin: 3 * ApplicationInfo.ratio
-                    anchors.bottomMargin: 0
+                    containerTexture {
+                        anchors.rightMargin: 3 * ApplicationInfo.ratio
+                        anchors.bottomMargin: 0
+                    }
                 }
             },
             State {
-                id: "verticalView"
+                id: verticalView
                 when: !background.hori
                 PropertyChanges {
-                    target: visibleArea
-                    width: background.width - 10
-                    height: background.height - bar.height - 10
+                    visibleArea {
+                        width: background.width - 10
+                        height: background.height - bar.height - 10
+                    }
                 }
                 AnchorChanges {
                     target: visibleArea
@@ -427,26 +433,30 @@ ActivityBase {
                     anchors.left: parent.left
                 }
                 PropertyChanges {
-                    target: playArea
-                    x: 0
-                    y: items.toolsMargin
-                    width: background.width * 4
-                    height: background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+                    playArea {
+                        x: 0
+                        y: items.toolsMargin
+                        width: background.width * 4
+                        height: background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+                    }
                 }
                 PropertyChanges {
-                    target: mousePan
-                    drag.maximumX: 0
-                    drag.maximumY: items.toolsMargin
+                    mousePan {
+                        drag.maximumX: 0
+                        drag.maximumY: items.toolsMargin
+                    }
                 }
                 PropertyChanges {
-                    target: inputComponentsContainer
-                    width: background.width
-                    height: items.toolsMargin
+                    inputComponentsContainer {
+                        width: background.width
+                        height: items.toolsMargin
+                    }
                 }
                 PropertyChanges {
-                    target: containerTexture
-                    anchors.rightMargin: 0
-                    anchors.bottomMargin: 3 * ApplicationInfo.ratio
+                    containerTexture {
+                        anchors.rightMargin: 0
+                        anchors.bottomMargin: 3 * ApplicationInfo.ratio
+                    }
                 }
             }
         ]

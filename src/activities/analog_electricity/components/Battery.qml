@@ -107,7 +107,7 @@ ElectricalComponent {
         Activity.netlist.push(netlistItem);
     }
 
-    function checkComponentAnswer() {
+    function checkComponentAnswer(): string {
         if(terminalConnected >= 2)
             return "batteryIn";
         else

@@ -107,7 +107,7 @@ ElectricalComponent {
         }
     }
 
-    function checkComponentAnswer() {
+    function checkComponentAnswer(): string {
         if(switch1.source == Activity.url + "switch_off.svg" && terminalConnected >= 2) {
             switch1.source = Activity.url + "switch_on.svg";
             switchOn = true;
