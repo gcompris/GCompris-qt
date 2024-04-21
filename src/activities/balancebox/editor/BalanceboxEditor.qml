@@ -495,7 +495,6 @@ Item {
                             width: props.cellSize - props.wallSize
                             height: props.cellSize - props.wallSize
                             sourceComponent: BalanceItem {
-                                id: goal
                                 anchors.centerIn: parent
                                 z: 1
                                 imageSource: Activity.baseUrl + "/door.svg"
@@ -508,7 +507,6 @@ Item {
                             active: value & Activity.HOLE || (cell.highlighted && props.currentTool === Activity.TOOL_HOLE)
                             anchors.centerIn: parent
                             sourceComponent: BalanceItem {
-                                id: hole
                                 width: props.ballSize
                                 height:props.ballSize
                                 anchors.centerIn: parent
@@ -522,13 +520,12 @@ Item {
                             active: value & Activity.START || (cell.highlighted && props.currentTool === Activity.TOOL_BALL)
                             anchors.centerIn: parent
                             sourceComponent: BalanceItem {
-                                    id: ball
-                                    width: props.ballSize
-                                    height:props.ballSize
-                                    anchors.centerIn: parent
-                                    visible: true
-                                    imageSource: Activity.baseUrl + "/ball.svg"
-                                    z: 1
+                                width: props.ballSize
+                                height:props.ballSize
+                                anchors.centerIn: parent
+                                visible: true
+                                imageSource: Activity.baseUrl + "/ball.svg"
+                                z: 1
                             }
                         }
 
@@ -539,7 +536,6 @@ Item {
                             height: props.cellSize - props.wallSize
                             anchors.centerIn: parent
                             sourceComponent: BalanceContact {
-                                id: contact
                                 anchors.centerIn: parent
                                 visible: true
                                 pressed: false
