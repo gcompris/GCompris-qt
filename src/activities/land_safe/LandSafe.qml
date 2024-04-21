@@ -48,7 +48,7 @@ ActivityBase {
         signal start
         signal stop
 
-        function changeZoom(newZoom)
+        function changeZoom(newZoom: double)
         {
             var dZoom = newZoom / items.zoom;
             var curAltReal = Activity.getAltitudeReal();
@@ -83,7 +83,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: intro
+        Keys.forwardTo: [intro]
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -122,7 +122,7 @@ ActivityBase {
             property double gravity: 0.0
             property double scale: background.height / 400
             property double zoom: 1.0
-            property bool onScreenControls: /* items.world.running && */ ApplicationInfo.isMobile
+            property bool onScreenControls: /* items.world.running && */ true
         }
 
         onStart: { Activity.start(items) }
@@ -228,7 +228,7 @@ ActivityBase {
                                    applyForces();   // "rotation" mode
 
             // decompose a force/acceleration vector v using angle into x/y components
-            function decomposeVector(v, angle) {
+            function decomposeVector(v: real, angle: real) {
                 return Qt.point(v * Math.sin(Activity.degToRad(angle)), // x-component
                                 v * Math.cos(Activity.degToRad(items.rocket.rotation)));  // y-component
             }
