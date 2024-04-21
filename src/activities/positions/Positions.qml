@@ -54,7 +54,7 @@ ActivityBase {
 
         Keys.enabled: !items.buttonsBlocked
         Keys.onPressed: {
-            if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+            if((event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return) && items.view.currentItem !== null) {
                 Activity.verifyAnswer()
                 event.accepted = true
             }
