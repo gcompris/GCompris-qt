@@ -208,8 +208,9 @@ ActivityBase {
                     id: scoreHorizontal
                     when: scoreArea.width >= scoreArea.height
                     PropertyChanges {
-                        target: scoreArea
-                        scoreItemsSize: scoreArea.width * 0.4
+                        scoreArea {
+                            scoreItemsSize: scoreArea.width * 0.4
+                        }
                     }
                     AnchorChanges {
                         target: score
@@ -230,8 +231,9 @@ ActivityBase {
                     id: scoreVertical
                     when: scoreArea.width < scoreArea.height
                     PropertyChanges {
-                        target: scoreArea
-                        scoreItemsSize: scoreArea.height * 0.5
+                        scoreArea {
+                            scoreItemsSize: scoreArea.height * 0.5
+                        }
                     }
                     AnchorChanges {
                         target: score
@@ -339,9 +341,10 @@ ActivityBase {
                     anchors.left: layoutArea.left
                 }
                 PropertyChanges {
-                    target: textArea
-                    width: questionArea.width * 0.3
-                    height: questionArea.height * 0.8
+                    textArea {
+                        width: questionArea.width * 0.3
+                        height: questionArea.height * 0.8
+                    }
                 }
                 AnchorChanges {
                     target: repeatArea
@@ -358,15 +361,17 @@ ActivityBase {
                     anchors.horizontalCenter: undefined
                 }
                 PropertyChanges {
-                    target: circlesArea
-                    itemWidth: Math.min(circlesBackground.width / (items.circlesModel + 1),
+                    circlesArea {
+                        itemWidth: Math.min(circlesBackground.width / (items.circlesModel + 1),
                                         circlesBackground.height * 0.9)
-                    width: itemWidth * items.circlesModel
-                    height: itemWidth
+                        width: circlesArea.itemWidth * items.circlesModel
+                        height: circlesArea.itemWidth
+                    }
                 }
                 PropertyChanges {
-                    target: errorRectangle
-                    imageSize: height * 0.5
+                    errorRectangle {
+                        imageSize: height * 0.5
+                    }
                 }
             },
             State {
@@ -383,9 +388,10 @@ ActivityBase {
                     anchors.left: layoutArea.horizontalCenter
                 }
                 PropertyChanges {
-                    target: textArea
-                    width: questionArea.width * 0.8
-                    height: questionArea.height * 0.3
+                    textArea {
+                        width: questionArea.width * 0.8
+                        height: questionArea.height * 0.3
+                    }
                 }
                 AnchorChanges {
                     target: repeatArea
@@ -402,15 +408,17 @@ ActivityBase {
                     anchors.horizontalCenter: textArea.horizontalCenter
                 }
                 PropertyChanges {
-                    target: circlesArea
-                    itemWidth: Math.min(circlesBackground.height / (items.circlesModel + 1),
+                    circlesArea {
+                        itemWidth: Math.min(circlesBackground.height / (items.circlesModel + 1),
                                         circlesBackground.width * 0.9)
-                    width: itemWidth
-                    height: itemWidth * items.circlesModel
+                        width: circlesArea.itemWidth
+                        height: circlesArea.itemWidth * items.circlesModel
+                    }
                 }
                 PropertyChanges {
-                    target: errorRectangle
-                    imageSize: width * 0.5
+                    errorRectangle {
+                        imageSize: width * 0.5
+                    }
                 }
             }
         ]
