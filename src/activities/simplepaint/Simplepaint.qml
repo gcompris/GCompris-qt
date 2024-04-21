@@ -286,32 +286,36 @@ ActivityBase {
                                 name: "notclicked"
                                 when: !rect.iAmSelected && !mouseArea.containsMouse
                                 PropertyChanges {
-                                    target: rect
-                                    scale: 0.8
+                                    rect {
+                                        scale: 0.8
+                                    }
                                 }
                             },
                             State {
                                 name: "clicked"
                                 when: mouseArea.pressed
                                 PropertyChanges {
-                                    target: rect
-                                    scale: 0.7
+                                    rect {
+                                        scale: 0.7
+                                    }
                                 }
                             },
                             State {
                                 name: "hover"
                                 when: mouseArea.containsMouse
                                 PropertyChanges {
-                                    target: rect
-                                    scale: 1.1
+                                    rect {
+                                        scale: 1.1
+                                    }
                                 }
                             },
                             State {
                                 name: "selected"
                                 when: rect.iAmSelected
                                 PropertyChanges {
-                                    target: rect
-                                    scale: 1
+                                    rect {
+                                        scale: 1
+                                    }
                                 }
                             }
                         ]
