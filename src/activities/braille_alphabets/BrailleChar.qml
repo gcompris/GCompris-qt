@@ -83,7 +83,7 @@ Item {
         updateDotsFromBrailleChar()
     }
 
-    function switchState(value) {
+    function switchState(value: int) {
         circles.itemAt(value-1).switchState()
     }
 
@@ -111,7 +111,7 @@ Item {
 
                 property bool on: clickable ? false : click_on_off()
 
-                function click_on_off() {
+                function click_on_off(): bool {
                     var code = brailleCodes[brailleChar]
                     if(!code)
                         return false
@@ -173,8 +173,9 @@ Item {
                         name: "on"
 
                         PropertyChanges {
-                            target: incircle1
-                            on: true
+                            incircle1 {
+                                on: true
+                            }
                         }
 
                     },
@@ -182,8 +183,9 @@ Item {
                         name: "off"
 
                         PropertyChanges {
-                            target: incircle1
-                            on: false
+                            incircle1 {
+                                on: false
+                            }
                         }
                     }
                 ]
