@@ -190,7 +190,7 @@ ActivityBase {
             function selectNextWeek() {
                 addDaysToCurrentDate(7);
             }
-            function addDaysToCurrentDate(daysToAdd) {
+            function addDaysToCurrentDate(daysToAdd: int) {
                 var date = new Date(calendar.currentDate);
                 date.setDate(date.getDate()+daysToAdd);
                 if(minimumDate.getTime() <= date.getTime() &&
@@ -430,25 +430,27 @@ ActivityBase {
                 State {
                     when: answerChoices.visible
                     PropertyChanges {
-                        target: errorRectangle
-                        x: answerChoices.currentItem ? answerChoices.x + answerChoices.currentItem.x : 0
-                        y: answerChoices.currentItem ? answerChoices.y + answerChoices.currentItem.y : 0
-                        width: answerChoices.currentItem ? answerChoices.currentItem.width : 0
-                        height: answerChoices.currentItem ? answerChoices.currentItem.height : 0
-                        radius: answerChoices.currentItem ? answerChoices.currentItem.radius : 0
-                        scale: answerChoices.currentItem ? answerChoices.currentItem.scale : 0
+                        errorRectangle {
+                            x: answerChoices.currentItem ? answerChoices.x + answerChoices.currentItem.x : 0
+                            y: answerChoices.currentItem ? answerChoices.y + answerChoices.currentItem.y : 0
+                            width: answerChoices.currentItem ? answerChoices.currentItem.width : 0
+                            height: answerChoices.currentItem ? answerChoices.currentItem.height : 0
+                            radius: answerChoices.currentItem ? answerChoices.currentItem.radius : 0
+                            scale: answerChoices.currentItem ? answerChoices.currentItem.scale : 0
+                        }
                     }
                 },
                 State {
                     when: !answerChoices.visible
                     PropertyChanges {
-                        target: errorRectangle
-                        x: calendarBox.x
-                        y: calendarBox.y
-                        width: calendarBox.width
-                        height: calendarBox.height
-                        radius: calendarBox.radius
-                        scale: calendarBox.scale
+                        errorRectangle {
+                            x: calendarBox.x
+                            y: calendarBox.y
+                            width: calendarBox.width
+                            height: calendarBox.height
+                            radius: calendarBox.radius
+                            scale: calendarBox.scale
+                        }
                     }
                 }
             ]
