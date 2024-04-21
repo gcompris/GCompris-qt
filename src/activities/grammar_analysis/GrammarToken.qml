@@ -39,14 +39,15 @@ Rectangle {
         State {
             name: "moveto"
             PropertyChanges {
-                target: imgSvg
-                x: {
-                    var pos = items.boxIndexes[items.selectedBox].split('-')
-                    return mapFromItem(items.wordsFlow.children[pos[0]].rowWords.children[pos[1]].imgSvg, 0, 0).x
-                }
-                y: {
-                    var pos = items.boxIndexes[items.selectedBox].split('-')
-                    return mapFromItem(items.wordsFlow.children[pos[0]].rowWords.children[pos[1]].imgSvg, 0, 0).y
+                imgSvg {
+                    x: {
+                        var pos = items.boxIndexes[items.selectedBox].split('-')
+                        return mapFromItem(items.wordsFlow.children[pos[0]].rowWords.children[pos[1]].imgSvg, 0, 0).x
+                    }
+                    y: {
+                        var pos = items.boxIndexes[items.selectedBox].split('-')
+                        return mapFromItem(items.wordsFlow.children[pos[0]].rowWords.children[pos[1]].imgSvg, 0, 0).y
+                    }
                 }
             }
         }

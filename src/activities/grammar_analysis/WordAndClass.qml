@@ -40,7 +40,7 @@ Item {
     height: textView.height + rowWords.height + background.baseMargins
 
     // Set proposal for grammatical class number idx
-    function setProposal(idx, forward = true) {
+    function setProposal(idx: int, forward = true) {
         if (expected === "") return
         if (items.selectedClass === -1) return
         moveForward = forward
@@ -54,7 +54,7 @@ Item {
     }
 
     // Transition is finished. It time to set proposal and image.
-    function endProposal(idx) {
+    function endProposal(idx: int) {
         rowWords.children[idx].imgSvg.state = ""
         var proposal = items.goalModel.get(items.selectedClass).code
         if (proposal === "eraser") {
@@ -143,11 +143,11 @@ Item {
                         states: [
                             State {
                                 name: ""
-                                PropertyChanges { target: imgSvg; opacity: 1.0 }
+                                PropertyChanges { imgSvg { opacity: 1.0 } }
                             },
                             State {     // Token vanish when erased or replaced
                                 name: "vanish"
-                                PropertyChanges { target: imgSvg; opacity: 0.0 }
+                                PropertyChanges { imgSvg { opacity: 0.0 } }
                             }
                         ]
                         transitions: [
