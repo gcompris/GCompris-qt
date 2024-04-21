@@ -37,7 +37,7 @@ ChartView {
             }
         }
 
-        function setSliceStyle(sliceNumber, selected) {
+        function setSliceStyle(sliceNumber: int, selected: bool) {
             var slice = pieSeries.at(sliceNumber);
             slice.borderColor = "white";
             slice.borderWidth = 5;
@@ -45,7 +45,7 @@ ChartView {
         }
     }
 
-    function initLevel(pieIndex) {
+    function initLevel(pieIndex: int) {
         var pieSeries = chart.pieSeries;
         pieSeries.clear();
         var sizeOfOnePie = 1.0 / items.denominatorToFind;
@@ -58,7 +58,7 @@ ChartView {
         }
     }
 
-    function countSelectedParts() {
+    function countSelectedParts(): int {
         var selected = 0;
         for(var pieSliceIndex = 0 ; pieSliceIndex < pieSeries.count ; ++ pieSliceIndex) {
             if(pieSeries.at(pieSliceIndex).color == gridContainer.selectedColor) {

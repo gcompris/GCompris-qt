@@ -60,7 +60,7 @@ Item {
             }
         }
     }
-    function initLevel(pieIndex) {
+    function initLevel(pieIndex: int) {
         chartGrid.model.clear();
         for(var pieSliceIndex = 0 ; pieSliceIndex < items.denominatorToFind ; ++ pieSliceIndex) {
             // Select the good number of slices at the beginning
@@ -73,7 +73,7 @@ Item {
 
     }
 
-    function countSelectedParts() {
+    function countSelectedParts(): int {
         var selected = 0;
         for(var i = 0 ; i < listModel.count ; ++ i) {
             if(listModel.get(i).selected) {
