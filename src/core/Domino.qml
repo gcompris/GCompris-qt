@@ -139,7 +139,11 @@ Flipable {
 
     states: State {
         name: "back"
-        PropertyChanges { target: rotation; angle: 180 }
+        PropertyChanges { 
+            rotation {
+                angle: 180
+            }
+        }
         when: flipable.flipped
         onCompleted: flipable.flipped = false
     }

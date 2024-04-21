@@ -286,16 +286,18 @@ Item {
                 name: "button1Selected"
                 when: backgroundButton.selected
                 PropertyChanges {
-                    target: buttonSelector
-                    anchors.fill: backgroundButton
+                    buttonSelector {
+                        anchors.fill: backgroundButton
+                    }
                 }
             },
             State {
                 name: "button2Selected"
                 when: abortButton.selected
                 PropertyChanges {
-                    target: buttonSelector
-                    anchors.fill: abortButton
+                    buttonSelector {
+                        anchors.fill: abortButton
+                    }
                 }
             }
         ]

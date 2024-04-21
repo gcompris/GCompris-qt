@@ -49,12 +49,12 @@ DialogBackground {
     // git shortlog -se | sort -nr | cut -c8- | sed 's/ <.*>/,/' | xargs
     property string developers: "Timothée Giet, Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Akshat Tandon, Rajdeep Kaur, Aman Kumar Gupta, Siddhesh Suthar, Yuri Chornoivan, Aruna Sankaranarayanan, Stephane Mankowski, Amit Tomar, Thibaut ROMAIN, Deepak Kumar, Aiswarya Kaitheri Kandoth, Harsh Kumar, Amit Sagtani, Ilya Bizyaev, Pulkit Gupta, Shubham Mishra, Karl Ove Hufthammer, Mariam Fahmy, Stefan Toncu, Divyam Madaan, SagarC Agarwal, Ganesh Harshan, Ayush Agrawal, Manuel Tondeur, Horia PELLE, Rudra Nil Basu, Harry Mecwan, Akshay Kumar, Emmanuel Charruau, Alexandre Laurent, Bruno ANSELME, Burkhard Lück, Antoni Bella Pérez, Bharath M S, Zayed Al-Saidi, Per Andersson, JB BUTET, Himanshu Vishwakarma, Aastha Chauhan, Samarth Raj, Rohit Das, Arkit Vora, Anant Verma, Séamus Ó Briain, Sergey Popov, Sambhav Kaul, Nitish Chauhan, Lionel Duboeuf, Jonathan Riddell, Imran Tatriev, Igor Dobrača, Harpreet S, Harald H, Alexis Breton, Aleix Pol, Rahul Yadav, Souradeep Barua, Sai Moukthik Konduru, Riccardo Iaconelli, Rajat Asthana, Kent VanderVelden, Billy Laws, Aseem Arora, Alexander Potashev, Varun Patel, Utkarsh Tiwari, Parth Partani, Paolo Gibellini, Nick Richards, Luigi Toscano, Luciano Montanaro, Lionel Duboeuf, Isabelle Le Nabat, Envel Kervoas, Tõnis Piirits, Daniel Shahaf, Christophe Chabanois, Chaitanya KS, B.J. Cupps, Anu Mittal, Antos Vaclauski, André Marcelo Alvarenga, Łukasz Wojniłowicz, Emir SARI, Ömer Fadıl Usta, Ynon Perek, Yask Srivastava, Volker Krause, Thiago Masato Costa Sueto, Scarlett Moore, Stefan Asserhäll, Smit S. Patil, Shashwat Dixit, Sayan Biswas, Răpițeanu Viorel-Cătălin, Rohan Rashinkar, Rishabh Gupta, Pino Toscano, Peter Eszlari, Oliver Kellogg, Nicolas Fella, Mantas Kriaučiūnas, Joshua Shreve, Jose Riha, Jonathan Demeyer, Jiri Bohac, Jesús Espino, Hannah von Reth, Frederico Goncalves Guimaraes, Edgar HIPP, Vit Pelcak, Djalil Mesli, Dawid Wróbel, Neelaksh Singh, Clément Coudoin, Divakaran Payyan Kandanchirakkal, Bob Stouffer, Bharath Brat, Besnik Bleta, Carlos De Maine, Avinash Sonawane, Artur Puzio, Arnold Dumas, Anuj Yadav, Andrey Cygankov, Alex Kovrigin, Aditya Suthar, Abhay Kaushik"
 
-    property string gcVersion: ApplicationInfo.GCVersion
-    property string qtVersion: ApplicationInfo.QTVersion
-    property string openSslVersion: ApplicationInfo.OpenSSLVersion
-    property string gcVersionTxt: qsTr("GCompris %1").arg(gcVersion)
+    readonly property string gcVersion: ApplicationInfo.GCVersion
+    readonly property string qtVersion: ApplicationInfo.QTVersion
+    readonly property string openSslVersion: ApplicationInfo.OpenSSLVersion
+    readonly property string gcVersionTxt: qsTr("GCompris %1").arg(gcVersion)
     //! first string is the version of Qt, second is the version of openSSL. The second string is something like: "OpenSSL 1.1.1m 14 Dec 2021"
-    property string qtVersionTxt: qsTr("Based on Qt %1 and %2").arg(qtVersion).arg(openSslVersion)
+    readonly property string qtVersionTxt: qsTr("Based on Qt %1 and %2").arg(qtVersion).arg(openSslVersion)
 
     content:
         "<center style='color:#00000000'>.<img width='" +

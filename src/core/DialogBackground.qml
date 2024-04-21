@@ -33,6 +33,7 @@ Rectangle {
     property string content
     property string contentIcon
     property alias button0Text: button0.text
+    readonly property real applicationInfoRatio: ApplicationInfo.ratio
     signal close
     signal start
     signal pause
@@ -70,14 +71,14 @@ Rectangle {
         Rectangle {
             id: titleRectangle
             color: "#e6e6e6"
-            radius: 10 * ApplicationInfo.ratio
+            radius: 10 * dialogBackground.applicationInfoRatio
             width: parent.width
             height: title.height + 10 * 2
 
             GCText {
                 id: title
                 text: dialogBackground.title
-                width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the cancel button size
+                width: titleRectangle.width - 120 * dialogBackground.applicationInfoRatio //minus twice the cancel button size
                 anchors.horizontalCenter: titleRectangle.horizontalCenter
                 anchors.verticalCenter: titleRectangle.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
@@ -90,24 +91,24 @@ Rectangle {
             GCButtonCancel {
                 id: cancel
                 anchors.verticalCenter: titleRectangle.verticalCenter
-                anchors.margins: 2 * ApplicationInfo.ratio
+                anchors.margins: 2 * dialogBackground.applicationInfoRatio
                 onClose: dialogBackground.close()
             }
         }
         Rectangle {
             color: "#bdbed0"
-            radius: 10 * ApplicationInfo.ratio
+            radius: 10 * dialogBackground.applicationInfoRatio
             width: dialogBackground.width - 30
             height: dialogBackground.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
             border.color: "white"
-            border.width: 3 * ApplicationInfo.ratio
+            border.width: 3 * dialogBackground.applicationInfoRatio
 
             Flickable {
                 id: flick
-                anchors.margins: 10 * ApplicationInfo.ratio
+                anchors.margins: 10 * dialogBackground.applicationInfoRatio
                 anchors.fill: parent
                 contentWidth: textContent.contentWidth
-                contentHeight: iconImage.height + button0.height + textContent.contentHeight + 70 * ApplicationInfo.ratio
+                contentHeight: iconImage.height + button0.height + textContent.contentHeight + 70 * dialogBackground.applicationInfoRatio
                 flickableDirection: Flickable.VerticalFlick
                 maximumFlickVelocity: dialogBackground.height
                 boundsBehavior: Flickable.StopAtBounds
@@ -117,8 +118,8 @@ Rectangle {
                     id: button0
                     visible: text != ""
                     onClicked: { dialogBackground.button0Hit() }
-                    width: 150 * ApplicationInfo.ratio
-                    height: visible ? 40 * ApplicationInfo.ratio : 0
+                    width: 150 * dialogBackground.applicationInfoRatio
+                    height: visible ? 40 * dialogBackground.applicationInfoRatio : 0
                     anchors {
                         horizontalCenter: parent.horizontalCenter
                         top: parent.top
@@ -131,7 +132,7 @@ Rectangle {
                     id: iconImage
                     source: contentIcon
                     visible: contentIcon != ""
-                    width: 100 * ApplicationInfo.ratio
+                    width: 100 * dialogBackground.applicationInfoRatio
                     height: visible ? iconImage.width : 0
                     sourceSize.width: iconImage.width
                     sourceSize.height: iconImage.width
@@ -157,9 +158,9 @@ Rectangle {
             GCButtonScroll {
                 id: scrollItem
                 anchors.right: parent.right
-                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.rightMargin: 5 * dialogBackground.applicationInfoRatio
                 anchors.bottom: flick.bottom
-                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                anchors.bottomMargin: 5 * dialogBackground.applicationInfoRatio
                 onUp: flick.flick(0, 1000)
                 onDown: flick.flick(0, -1000)
                 upVisible: flick.atYBeginning ? false : true

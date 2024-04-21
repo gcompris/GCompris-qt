@@ -46,24 +46,27 @@ Image {
         State {
             name: "notclicked"
             PropertyChanges {
-                target: root
-                scale: 1.0
+                root {
+                    scale: 1.0
+                }
             }
         },
         State {
             name: "clicked"
             when: mouseArea.pressed
             PropertyChanges {
-                target: root
-                scale: 0.9
+                root {
+                    scale: 0.9
+                }
             }
         },
         State {
             name: "hover"
             when: mouseArea.containsMouse
             PropertyChanges {
-                target: root
-                scale: 1.1
+                root {
+                    scale: 1.1
+                }
             }
         }
     ]

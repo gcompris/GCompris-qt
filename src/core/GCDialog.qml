@@ -263,18 +263,20 @@ Rectangle {
                 name: "button1Selected"
                 when: button1.selected
                 PropertyChanges {
-                    target: buttonSelector
-                    anchors.centerIn: button1
-                    visible: true
+                    buttonSelector {
+                        anchors.centerIn: button1
+                        visible: true
+                    }
                 }
             },
             State {
                 name: "button2Selected"
                 when: button2.selected
                 PropertyChanges {
-                    target: buttonSelector
-                    anchors.centerIn: button2
-                    visible: true
+                    buttonSelector {
+                        anchors.centerIn: button2
+                        visible: true
+                    }
                 }
             }
         ]

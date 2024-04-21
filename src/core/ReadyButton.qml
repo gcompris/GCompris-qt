@@ -1,3 +1,5 @@
+
+
 /* GCompris - ReadyButton.qml
  *
  * SPDX-FileCopyrightText: 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -83,24 +85,27 @@ Rectangle {
         State {
             name: "notClicked"
             PropertyChanges {
-                target: iAmReady
-                scale: 1.0
+                iAmReady {
+                    scale: 1.0
+                }
             }
         },
         State {
             name: "clicked"
             when: mouseArea.pressed
             PropertyChanges {
-                target: iAmReady
-                scale: 0.9
+                iAmReady {
+                    scale: 0.9
+                }
             }
         },
         State {
             name: "hover"
             when: mouseArea.containsMouse
             PropertyChanges {
-                target: iAmReady
-                scale: 1.1
+                iAmReady {
+                    scale: 1.1
+                }
             }
         }
     ]

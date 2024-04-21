@@ -45,24 +45,27 @@ Rectangle {
     State {
         name: "notclicked"
         PropertyChanges {
-            target: button
-            scale: 1.0
+            button {
+                scale: 1.0
+            }
         }
     },
     State {
         name: "clicked"
         when: buttonArea.pressed
         PropertyChanges {
-            target: button
-            scale: 0.9
+            button {
+                scale: 0.9
+            }
         }
     },
     State {
         name: "hover"
         when: buttonArea.containsMouse
         PropertyChanges {
-            target: button
-            scale: 1.1
+            button {
+                scale: 1.1
+            }
         }
     }
     ]

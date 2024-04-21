@@ -219,46 +219,55 @@ Item {
         State {
             name: "first"
             PropertyChanges {
-                target: backgroundRectangle
-                color: "#80ffffff"
+                backgroundRectangle {
+                    color: "#80ffffff"
+                }
             }
             PropertyChanges {
-                target: playerImage
-                source: playerImageSource
+                playerImage {
+                    source: playerImageSource
+                }
             }
             PropertyChanges {
-                target: playerItem
-                visible: true
+                playerItem {
+                    visible: true
+                }
             }
         },
         State {
             name: "second"
             PropertyChanges {
-                target: backgroundRectangle
-                color: "transparent"
+                backgroundRectangle {
+                    color: "transparent"
+                }
             }
             PropertyChanges {
-                target: playerImage
-                source: playerImageSource
+                playerImage {
+                    source: playerImageSource
+                }
             }
             PropertyChanges {
-                target: playerItem
-                visible: true
+                playerItem {
+                    visible: true
+                }
             }
         },
         State {
             name: "win"
             PropertyChanges {
-                target: playerImage
-                source: "qrc:/gcompris/src/core/resource/win.svg"
+                playerImage {
+                    source: "qrc:/gcompris/src/core/resource/win.svg"
+                }
             }
             PropertyChanges {
-                target: playerItem
-                visible: false
+                playerItem {
+                    visible: false
+                }
             }
             PropertyChanges {
-                target: backgroundRectangle
-                color: "#80ffffff"
+                backgroundRectangle {
+                    color: "#80ffffff"
+                }
             }
         }
         ]

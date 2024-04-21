@@ -38,31 +38,35 @@ Image {
             name: "reset"
             when: !mouseArea.enabled
             PropertyChanges {
-                target: button
-                scale: 1.0
+                button {
+                    scale: 1.0
+                }
             }
         },
         State {
             name: "notclicked"
             PropertyChanges {
-                target: button
-                scale: 1.0
+                button {
+                    scale: 1.0
+                }
             }
         },
         State {
             name: "clicked"
             when: mouseArea.pressed
             PropertyChanges {
-                target: button
-                scale: 0.9
+                button {
+                    scale: 0.9
+                }
             }
         },
         State {
             name: "hover"
             when: mouseArea.containsMouse
             PropertyChanges {
-                target: button
-                scale: 1.1
+                button {
+                    scale: 1.1
+                }
             }
         }
     ]
