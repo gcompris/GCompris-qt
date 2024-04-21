@@ -200,54 +200,61 @@ ActivityBase {
                 State {
                     name: "INITIAL"
                     PropertyChanges {
-                        target: ball;
-                        sourceSize.width: 100 * ApplicationInfo.ratio
-                        x: parent.width/2 - width/2;
-                        y: parent.height*0.77 - height/2
+                        ball {
+                            sourceSize.width: 100 * ApplicationInfo.ratio
+                            x: ball.parent.width/2 - ball.width/2;
+                            y: ball.parent.height*0.77 - ball.height/2
+                        }
                     }
                     PropertyChanges {
-                        target: instruction
-                        text: qsTr("Double click or double tap on the side of the goal you want to put the ball in.")
+                        instruction {
+                            text: qsTr("Double click or double tap on the side of the goal you want to put the ball in.")
+                        }
                     }
                 },
                 State {
                     name: "RIGHT"
                     PropertyChanges {
-                        target: ball
-                        sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: background.width * 0.7
-                        y: background.height * 0.3
+                        ball {
+                            sourceSize.width: 75 * ApplicationInfo.ratio
+                            x: background.width * 0.7
+                            y: background.height * 0.3
+                        }
                     }
                 },
                 State {
                     name: "LEFT"
                     PropertyChanges {
-                        target: ball
-                        sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: background.width * 0.2
-                        y: background.height * 0.3
+                        ball {
+                            sourceSize.width: 75 * ApplicationInfo.ratio
+                            x: background.width * 0.2
+                            y: background.height * 0.3
+                        }
                     }
                 },
                 State {
                     name: "CENTER"
                     PropertyChanges {
-                        target: ball;
-                        sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: parent.width/2 - width/2;
-                        y: background.height * 0.1
+                        ball {
+                            sourceSize.width: 75 * ApplicationInfo.ratio
+                            x: parent.width/2 - width/2;
+                            y: background.height * 0.1
+                        }
                     }
                 },
                 State {
                     name: "FAIL"
                     PropertyChanges {
-                        target: ball
-                        sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: parent.width/2 - width/2
-                        y: player.y + player.height / 2
+                        ball {
+                            sourceSize.width: 75 * ApplicationInfo.ratio
+                            x: parent.width/2 - width/2
+                            y: player.y + player.height / 2
+                        }
                     }
                     PropertyChanges {
-                        target: instruction
-                        text: qsTr("Click or tap on the ball to bring it back to its initial position.")
+                        instruction {
+                            text: qsTr("Click or tap on the ball to bring it back to its initial position.")
+                        }
                     }
                 }
             ]
