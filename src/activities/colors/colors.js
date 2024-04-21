@@ -5,8 +5,8 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-function get() {
-    return [
+var colors =
+        [
             [ // Level 1
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svg",
@@ -123,5 +123,10 @@ function get() {
                  "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/blue.$CA")
              }
             ]
-        ];
+        ]
+
+
+function get() {
+    print("get");
+    return colors
 }
