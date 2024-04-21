@@ -133,9 +133,10 @@ ActivityBase {
                         anchors.horizontalCenter: undefined
                     }
                     PropertyChanges {
-                        target: answerRectangle
-                        height: mainArea.height * 0.66 - mainArea.layoutMargin * 2
-                        width: mainArea.width * 0.5  - mainArea.layoutMargin * 1.5
+                        answerRectangle {
+                            height: mainArea.height * 0.66 - mainArea.layoutMargin * 2
+                            width: mainArea.width * 0.5  - mainArea.layoutMargin * 1.5
+                        }
                     }
                     AnchorChanges {
                         target: answerRectangle
@@ -153,9 +154,10 @@ ActivityBase {
                         anchors.horizontalCenter: undefined
                     }
                     PropertyChanges {
-                        target: answerRectangle
-                        height: mainArea.height / 3 - mainArea.layoutMargin * 2
-                        width: mainArea.width - mainArea.layoutMargin * 2
+                        answerRectangle {
+                            height: mainArea.height / 3 - mainArea.layoutMargin * 2
+                            width: mainArea.width - mainArea.layoutMargin * 2
+                        }
                     }
                     AnchorChanges {
                         target: answerRectangle
@@ -188,18 +190,20 @@ ActivityBase {
                             name: "smallQuestion"
                             when: mainArea.smallQuestionMode
                             PropertyChanges {
-                                target: questionRectangleContent
-                                height: answerRectangle.height * 0.7
-                                width: answerRectangle.width * 0.7
+                                questionRectangleContent {
+                                    height: answerRectangle.height * 0.7
+                                    width: answerRectangle.width * 0.7
+                                }
                             }
                         },
                         State {
                             name: "normalQuestion"
                             when: !mainArea.smallQuestionMode
                             PropertyChanges {
-                                target: questionRectangleContent
-                                height: answerRectangle.height
-                                width: answerRectangle.width
+                                questionRectangleContent {
+                                    height: answerRectangle.height
+                                    width: answerRectangle.width
+                                }
                             }
                         }
                     ]
@@ -359,32 +363,36 @@ ActivityBase {
                                 name: "notclicked"
                                 when: !selectorItem.iAmSelected && !mouseArea.containsMouse
                                 PropertyChanges {
-                                    target: imageId
-                                    scale: 0.8
+                                    imageId {
+                                        scale: 0.8
+                                    }
                                 }
                             },
                             State {
                                 name: "clicked"
                                 when: mouseArea.pressed
                                 PropertyChanges {
-                                    target: imageId
-                                    scale: 0.7
+                                    imageId {
+                                        scale: 0.7
+                                    }
                                 }
                             },
                             State {
                                 name: "hover"
                                 when: mouseArea.containsMouse
                                 PropertyChanges {
-                                    target: imageId
-                                    scale: 1
+                                    imageId {
+                                        scale: 1
+                                    }
                                 }
                             },
                             State {
                                 name: "selected"
                                 when: selectorItem.iAmSelected
                                 PropertyChanges {
-                                    target: imageId
-                                    scale: 1
+                                    imageId {
+                                        scale: 1
+                                    }
                                 }
                             }
                         ]
