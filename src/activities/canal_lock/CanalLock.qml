@@ -40,7 +40,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: message
+        Keys.forwardTo: [message]
 
         IntroMessage {
             id: message
@@ -169,15 +169,15 @@ ActivityBase {
                 states: [
                     State {
                         name: "undef"
-                        PropertyChanges { target: water; height: water.minHeight}
+                        PropertyChanges { water { height: water.minHeight } }
                     },
                     State {
                         name: "down"
-                        PropertyChanges { target: water; height: water.minHeight}
+                        PropertyChanges { water { height: water.minHeight } }
                     },
                     State {
                         name: "up"
-                        PropertyChanges { target: water; height: water.maxHeight}
+                        PropertyChanges { water { height: water.maxHeight } }
                     }
                 ]
             }
@@ -330,15 +330,17 @@ ActivityBase {
                     State {
                         name: "green"
                         PropertyChanges {
-                            target: leftLight
-                            source: activity.url + "light_green.svg"
+                            leftLight {
+                                source: activity.url + "light_green.svg"
+                            }
                         }
                     },
                     State {
                         name: "red"
                         PropertyChanges {
-                            target: leftLight
-                            source: activity.url + "light_red.svg"
+                            leftLight {
+                                source: activity.url + "light_red.svg"
+                            }
                         }
                     }
                 ]
@@ -359,15 +361,17 @@ ActivityBase {
                     State {
                         name: "green"
                         PropertyChanges {
-                            target: rightLight
-                            source: activity.url + "light_green.svg"
+                            rightLight {
+                                source: activity.url + "light_green.svg"
+                            }
                         }
                     },
                     State {
                         name: "red"
                         PropertyChanges {
-                            target: rightLight
-                            source: activity.url + "light_red.svg"
+                            rightLight {
+                                source: activity.url + "light_red.svg"
+                            }
                         }
                     }
                 ]
@@ -443,33 +447,37 @@ ActivityBase {
                     State {
                         name: "left"
                         PropertyChanges {
-                            target: boat
-                            anchors.horizontalCenterOffset: boat.leftPositionX
-                            anchors.bottomMargin: boat.leftPositionY
+                            boat {
+                                anchors.horizontalCenterOffset: boat.leftPositionX
+                                anchors.bottomMargin: boat.leftPositionY
+                            }
                         }
                     },
                     State {
                         name: "middleDown"
                         PropertyChanges {
-                            target: boat
-                            anchors.horizontalCenterOffset: boat.middlePositionX
-                            anchors.bottomMargin: boat.leftPositionY
+                            boat {
+                                anchors.horizontalCenterOffset: boat.middlePositionX
+                                anchors.bottomMargin: boat.leftPositionY
+                            }
                         }
                     },
                     State {
                         name: "middleUp"
                         PropertyChanges {
-                            target: boat
-                            anchors.horizontalCenterOffset: boat.middlePositionX
-                            anchors.bottomMargin: boat.rightPositionY
+                            boat {
+                                anchors.horizontalCenterOffset: boat.middlePositionX
+                                anchors.bottomMargin: boat.rightPositionY
+                            }
                         }
                     },
                     State {
                         name: "right"
                         PropertyChanges {
-                            target: boat
-                            anchors.horizontalCenterOffset: boat.rightPositionX
-                            anchors.bottomMargin: boat.rightPositionY
+                            boat {
+                                anchors.horizontalCenterOffset: boat.rightPositionX
+                                anchors.bottomMargin: boat.rightPositionY
+                            }
                         }
                     }
                 ]

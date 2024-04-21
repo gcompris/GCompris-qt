@@ -31,11 +31,11 @@ Rectangle {
     states: [
         State {
             name: "open"
-            PropertyChanges { target: lock; height: lock.minHeight}
+            PropertyChanges { lock { height: lock.minHeight } }
         },
         State {
             name: "close"
-            PropertyChanges { target: lock; height: lock.maxHeight}
+            PropertyChanges { lock { height: lock.maxHeight } }
         }
     ]
 }
