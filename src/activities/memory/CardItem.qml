@@ -165,7 +165,7 @@ Flipable {
     states: [
         State {
             name: "front"
-            PropertyChanges { target: rotation; angle: 180 }
+            PropertyChanges { rotation { angle: 180 } }
             when: !card.isBack
         }
     ]
