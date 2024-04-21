@@ -68,33 +68,38 @@ Rectangle {
         State {
             name: "default"
             PropertyChanges {
-                target: mCase
-                color: "#D6F2FC"
+                mCase {
+                    color: "#D6F2FC"
+                }
             }
         },
         State {
             name: "error"
             PropertyChanges {
-                target: mCase
-                color: "#EB7878"
+                mCase {
+                    color: "#EB7878"
+                }
             }
             PropertyChanges {
-                target: restoreColorTimer
-                running: true
-           }
+                restoreColorTimer {
+                    running: true
+                }
+            }
         },
         State {
             name: "hovered"
             PropertyChanges {
-                target: mCase
-                color: "#78B4EB"
+                mCase {
+                    color: "#78B4EB"
+                }
             }
         },
         State {
             name: "initial"
             PropertyChanges {
-                target: mCase
-                color: "#EAD9F2"
+                mCase {
+                    color: "#EAD9F2"
+                }
             }
         }
     ]
