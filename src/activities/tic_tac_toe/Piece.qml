@@ -21,22 +21,25 @@ Image {
         State {
             name: "invisible"
             PropertyChanges {
-                target: piece
-                opacity: 0
+                piece {
+                    opacity: 0
+                }
             }
         },
 	State {
             name: "2" // Player 2
-            PropertyChanges{
-                target: piece
-                source: Activity.url + "circle.svg"
+            PropertyChanges {
+                piece {
+                    source: Activity.url + "circle.svg"
+                }
             }
         },
         State {
             name: "1" // Player 1
             PropertyChanges {
-                target: piece
-                source: Activity.url + "cross.svg"
+                piece {
+                    source: Activity.url + "cross.svg"
+                }
             }
         }
     ]

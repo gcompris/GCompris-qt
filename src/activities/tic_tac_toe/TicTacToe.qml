@@ -109,15 +109,17 @@ ActivityBase {
                                 State {
                                     name: "INITIAL"
                                     PropertyChanges {
-                                        target: area
-                                        visible: true
+                                        area {
+                                            visible: true
+                                        }
                                     }
                                 },
                                 State {
                                     name: "DONE"
                                     PropertyChanges {
-                                        target: area;
-                                        visible: false;
+                                        area {
+                                            visible: false
+                                        }
                                     }
                                 }
                             ]
