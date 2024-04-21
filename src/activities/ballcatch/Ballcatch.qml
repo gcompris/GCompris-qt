@@ -38,7 +38,7 @@ ActivityBase {
         property bool isVertical: background.width <= background.height     // To check if in Vertical mode
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: message
+        Keys.forwardTo: [message]
 
         Component.onCompleted: {
             activity.start.connect(start);
@@ -125,7 +125,7 @@ ActivityBase {
                 easing.type: Easing.InOutQuad
             }
 
-            function animate(newTime) {
+            function animate(newTime: int) {
                 leftHandAnimation.duration = newTime;
                 leftHandAnimation.start();
             }
@@ -158,7 +158,7 @@ ActivityBase {
             sourceSize.height: 150 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
-            function animate(newTime) {
+            function animate(newTime: int) {
                 rightHandAnimation.duration = newTime;
                 rightHandAnimation.start();
             }
@@ -230,7 +230,7 @@ ActivityBase {
             z: 10
         }
 
-        function playSound(identifier) {
+        function playSound(identifier: string) {
             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/"+ identifier + ".wav");
         }
 
