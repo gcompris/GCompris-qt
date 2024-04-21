@@ -59,7 +59,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on Tutorial
-        Keys.forwardTo: tutorialSection
+        Keys.forwardTo: [tutorialSection]
 
         QtObject {
             id: items
