@@ -453,7 +453,7 @@ Item {
     property int minFilter
     property int maxFilter
 
-    function extractMusicNameFromPath(musicPath) {
+    function extractMusicNameFromPath(musicPath: string) {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
         var musicName = String(musicPath)
         musicName = musicName.slice(musicDirectoryPath.length, musicName.length)
@@ -617,7 +617,7 @@ Item {
         { text: qsTr("All lowercase"), value: Font.AllLowercase }
     ]
 
-    function isFilteredBackgroundMusicChanged() {
+    function isFilteredBackgroundMusicChanged(): bool {
         initialFilteredMusic = ApplicationSettings.filteredBackgroundMusic
         if(initialFilteredMusic.length !== filteredBackgroundMusic.length)
             return true
@@ -628,7 +628,7 @@ Item {
         return false
     }
 
-    function hasConfigChanged() {
+    function hasConfigChanged(): bool {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
         (ApplicationSettings.exitConfirmation != exitConfirmation) ||
