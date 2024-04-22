@@ -1,13 +1,12 @@
 # Translation of gcompris_voices to Norwegian Nynorsk
 #
-# Karl Ove Hufthammer <karl@huftis.org>, 2022, 2023.
 # Øystein Steffensen-Alværvik <oysteins.omsetting@protonmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-03-16 02:01+0000\n"
-"PO-Revision-Date: 2023-01-06 22:46+0100\n"
+"PO-Revision-Date: 2024-04-21 12:29+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -15,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.0\n"
+"X-Generator: Lokalize 24.02.2\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -24,7 +23,7 @@ msgstr ""
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "Finn tala som manglar."
 
 # Er rimeleg fri i omsetjinga i denne fila. Mange av dei engelske tekstane er ganske gamle og har ikkje sett forbetringane hjelpefilene i GCompris har sett. Det er viktigaste at introtekstane her er lette å forstå og har eit enkelt språk (og helst er korte). Dei vert gjort om til tale av automatisk talesyntese. Talesyntesen taklar ikkje mjuke bindestrekar, så unngå dette. Merk tekstane har kan ha litt ukurant teiknsetting (eks. manglande/ekstra komma). Det er for å forbetra uttalen. (Tekstane vert aldri viste nokon plass.)
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
@@ -218,6 +217,9 @@ msgid ""
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
+"Vél eit tal og trykk på cella du vil plassera det i. Kvart tal kan berre stå "
+"éin gong i kvar rad og i kvar kolonne. Når tala i cellene til eit cellebur "
+"vert rekna saman via bur-operatoren, må svaret verta lik bur-talet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -489,7 +491,7 @@ msgstr "Finn rett teljar og nemnar til brøken som vert vist."
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "Gjenskap og fullfør frisa."
 
 # Er her snakk om regionar, provinsar, fylke og slikt.
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
@@ -566,13 +568,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "Finn talet som skal stå på den markerte plassen på tallinja."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "Plasser talet på rett plass på tallinja."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -581,6 +583,7 @@ msgstr ""
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
+"Tildel rett <emphasis>type</emphasis> setningsledd til orda i setningane."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -603,7 +606,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "Bruk dei fire tala og operatorane til å komma fram til svaret 24."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -1271,6 +1274,8 @@ msgid ""
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
+"Lag talpar som til saman vert ti. Byt om på to tal i same reknestykke ved å "
+"trykkja på dei. Skriv så inn svaret i svarfeltet til høgre."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17

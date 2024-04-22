@@ -26847,8 +26847,8 @@ msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"Du bør stadfesta at program­innstillingane er rette, spesielt "
-"programspråket. Dette kan du gjera i innstillingsvindauget."
+"Du bør stadfesta at program­innstillingane er rette, spesielt programspråket. "
+"Dette kan du gjera i innstillingsvindauget."
 
 #: core/main.qml:326
 msgctxt "main|"
