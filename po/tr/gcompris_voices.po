@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 03:10+0000\n"
-"PO-Revision-Date: 2024-01-16 21:21+0300\n"
+"PO-Revision-Date: 2024-04-23 00:43+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.01.90\n"
+"X-Generator: Lokalize 24.07.70\n"
 "X-POOTLE-MTIME: 1497539875.000000\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
@@ -303,13 +303,13 @@ msgstr ""
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr "Boya tüpleri üzerindeki kaydırıcıları hareket ettirerek rengi eşleştir"
+msgstr "Boya tüpleri üzerindeki sürgüleri sürerek rengi eşleştir"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Meşalelerin üzerindeki kaydırıcıları hareket ettirerek rengi eşleştir"
+msgstr "Meşalelerin üzerindeki sürgüleri sürerek rengi eşleştir"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
