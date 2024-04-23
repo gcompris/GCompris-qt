@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-16 15:10+0300\n"
+"PO-Revision-Date: 2024-04-23 00:49+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 24.02.0\n"
+"X-Generator: Lokalize 24.07.70\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -1511,7 +1511,7 @@ msgid ""
 "the rheostat value by dragging its slider."
 msgstr ""
 "Açmak ve kapatmak için anahtara tıklayabilirsin. Aynı zamanda, akım "
-"sağlayıcısı değerini kaydırıcısını sürerek değiştirebilirsin."
+"sağlayıcısı değerini sürgüsünü sürerek değiştirebilirsin."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1952,7 +1952,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:210
 msgctxt "TutorialDataset|"
 msgid "You can change the rheostat value by dragging its slider."
-msgstr "Kaydırıcısını sürerek ayarlı direnç değerini değiştirebilirsin."
+msgstr "Sürgüsünü sürerek ayarlı direnç değerini değiştirebilirsin."
 
 #: activities/analog_electricity/TutorialDataset.qml:211
 msgctxt "TutorialDataset|"
@@ -1960,8 +1960,8 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "light intensity of the bulb can be changed while dragging the slider."
 msgstr ""
-"Kaydırıcıyı sürerken ampulün ışık yoğunluğunun değiştirilebilmesi için "
-"ampulü ayarlı direncin uygun uçbirimlerine bağla."
+"Sürgüyü sürerken ampulün ışık yoğunluğunun değiştirilebilmesi için ampulü "
+"ayarlı direncin uygun uçbirimlerine bağla."
 
 #: activities/analog_electricity/TutorialDataset.qml:224
 msgctxt "TutorialDataset|"
@@ -1978,7 +1978,7 @@ msgid ""
 "Connect the bulb to the appropriate terminals of the rheostat so that the "
 "slider cannot change the light intensity of the bulb."
 msgstr ""
-"Kaydırıcının ampulün ışık yoğunluğunu değiştirememesi için ampulü ayarlı "
+"Sürgünün ampulün ışık yoğunluğunu değiştirememesi için ampulü ayarlı "
 "direncin uygun uçbirimlerine bağla."
 
 #: activities/analog_electricity/TutorialDataset.qml:238
@@ -1988,9 +1988,9 @@ msgid ""
 "slider so that the voltage drop in the bulb should be 10V. Note that the "
 "bulb intensity should vary while dragging the slider."
 msgstr ""
-"Ampulü ayarlı direncin uygun uçbirimlerine bağla ve kaydırıcıyı ampuldeki "
-"voltaj düşüşü 10V olacak şekilde ayarla. Kaydırıcıyı sürerken ampul "
-"yoğunluğunun değişmesi gerektiğini unutma."
+"Ampulü ayarlı direncin uygun uçbirimlerine bağla ve sürgüyü ampuldeki voltaj "
+"düşüşü 10 V olacak şekilde ayarla. Sürgüyü sürerken ampul yoğunluğunun "
+"değişmesi gerektiğini unutma."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
 msgctxt "TutorialDataset|"
@@ -5165,9 +5165,8 @@ msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
 "on the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Kaydırıcıları boya tüpleri üzerinde sürerek veya + ve - düğmelerine "
-"tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
-"tıkla."
+"Sürgüleri boya tüpleri üzerinde sürerek veya + ve - düğmelerine tıklayarak "
+"rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine tıkla."
 
 #: activities/color_mix/ColorMix.qml:88
 msgctxt "ColorMix|"
@@ -5273,9 +5272,8 @@ msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
 "+ and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Meşaleler üzerindeki kaydırıcıları sürerek veya + ve - düğmelerine "
-"tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
-"tıkla."
+"Meşaleler üzerindeki sürgüleri sürerek veya + ve - düğmelerine tıklayarak "
+"rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine tıkla."
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -20543,7 +20541,7 @@ msgstr ""
 #: activities/photo_hunter/PhotoHunter.qml:92
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
-msgstr "Farkları göstermek için kaydırıcıyı sür."
+msgstr "Farkları göstermek için sürgüyü sür."
 
 #: activities/photo_hunter/PhotoHunter.qml:93
 msgctxt "PhotoHunter|"
