@@ -32,6 +32,10 @@ msgstr ""
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
+#: activities/money/ActivityConfig.qml:21
+#: activities/money_back/ActivityConfig.qml:21
+#: activities/money_back_cents/ActivityConfig.qml:21
+#: activities/money_cents/ActivityConfig.qml:21
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
@@ -39,12 +43,20 @@ msgstr "Автоматично"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
 #: activities/enumerate/ActivityConfig.qml:22
+#: activities/money/ActivityConfig.qml:22
+#: activities/money_back/ActivityConfig.qml:22
+#: activities/money_back_cents/ActivityConfig.qml:22
+#: activities/money_cents/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
 msgstr "Кнопка «Гаразд»"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
+#: activities/money/ActivityConfig.qml:32
+#: activities/money_back/ActivityConfig.qml:32
+#: activities/money_back_cents/ActivityConfig.qml:32
+#: activities/money_cents/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
 msgstr "Перевіряти відповіді"
@@ -19278,7 +19290,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab: перемикання між нижньою і верхньою областями"
 
-#: activities/money/money.js:141
+#: activities/money/money.js:142
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -19288,7 +19300,7 @@ msgstr ""
 "решту. Якщо необхідно повернути монету або банкноту, клацніть на ній у "
 "верхній частині екрана."
 
-#: activities/money/money.js:172
+#: activities/money/money.js:173
 #, qt-format
 msgctxt "money|"
 msgid ""

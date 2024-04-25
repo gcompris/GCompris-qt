@@ -27,6 +27,10 @@ msgstr ""
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
+#: activities/money/ActivityConfig.qml:21
+#: activities/money_back/ActivityConfig.qml:21
+#: activities/money_back_cents/ActivityConfig.qml:21
+#: activities/money_cents/ActivityConfig.qml:21
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
@@ -34,12 +38,20 @@ msgstr ""
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
 #: activities/enumerate/ActivityConfig.qml:22
+#: activities/money/ActivityConfig.qml:22
+#: activities/money_back/ActivityConfig.qml:22
+#: activities/money_back_cents/ActivityConfig.qml:22
+#: activities/money_cents/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
 msgstr ""
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
+#: activities/money/ActivityConfig.qml:32
+#: activities/money_back/ActivityConfig.qml:32
+#: activities/money_back_cents/ActivityConfig.qml:32
+#: activities/money_cents/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
 msgstr ""
@@ -21341,7 +21353,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr ""
 
-#: activities/money/money.js:141
+#: activities/money/money.js:142
 #, fuzzy
 #| msgctxt "money|"
 #| msgid ""
@@ -21355,7 +21367,7 @@ msgstr ""
 "भुगतान करने के लिए स्क्रीन के निचले भाग में सिक्के या कागजी पैसे पर क्लिक करें। यदि आप सिक्का "
 "या नोट हटाना चाहते हैं, तो ऊपरी स्क्रीन क्षेत्र पर उस पर क्लिक करें।"
 
-#: activities/money/money.js:172
+#: activities/money/money.js:173
 #, qt-format
 msgctxt "money|"
 msgid ""

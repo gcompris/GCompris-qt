@@ -765,6 +765,10 @@ msgstr ""
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
+#: activities/money/ActivityConfig.qml:21
+#: activities/money_back/ActivityConfig.qml:21
+#: activities/money_back_cents/ActivityConfig.qml:21
+#: activities/money_cents/ActivityConfig.qml:21
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
@@ -772,12 +776,20 @@ msgstr "Automática"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
 #: activities/enumerate/ActivityConfig.qml:22
+#: activities/money/ActivityConfig.qml:22
+#: activities/money_back/ActivityConfig.qml:22
+#: activities/money_back_cents/ActivityConfig.qml:22
+#: activities/money_cents/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
 msgstr "Botão OK"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
+#: activities/money/ActivityConfig.qml:32
+#: activities/money_back/ActivityConfig.qml:32
+#: activities/money_back_cents/ActivityConfig.qml:32
+#: activities/money_cents/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
 msgstr "Validar as respostas"
@@ -20230,7 +20242,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab: alternar entre a área superior e a inferior"
 
-#: activities/money/money.js:141
+#: activities/money/money.js:142
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -20239,7 +20251,7 @@ msgstr ""
 "Carregue nas moedas ou nas notas no fundo do ecrã para pagar. Se quiser "
 "remover uma moeda ou nota, carregue sobre ela na área superior do ecrã."
 
-#: activities/money/money.js:172
+#: activities/money/money.js:173
 #, qt-format
 msgctxt "money|"
 msgid ""

@@ -25,6 +25,10 @@ msgstr ""
 #: activities/erase/ActivityConfig.qml:21
 #: activities/erase_2clic/ActivityConfig.qml:21
 #: activities/erase_clic/ActivityConfig.qml:21
+#: activities/money/ActivityConfig.qml:21
+#: activities/money_back/ActivityConfig.qml:21
+#: activities/money_back_cents/ActivityConfig.qml:21
+#: activities/money_cents/ActivityConfig.qml:21
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
@@ -32,12 +36,20 @@ msgstr "自動"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
 #: activities/enumerate/ActivityConfig.qml:22
+#: activities/money/ActivityConfig.qml:22
+#: activities/money_back/ActivityConfig.qml:22
+#: activities/money_back_cents/ActivityConfig.qml:22
+#: activities/money_cents/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
 msgstr "「確定」鍵"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
+#: activities/money/ActivityConfig.qml:32
+#: activities/money_back/ActivityConfig.qml:32
+#: activities/money_back_cents/ActivityConfig.qml:32
+#: activities/money_cents/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
 msgstr "檢查答案"
@@ -18660,7 +18672,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
 msgstr "Tab 鍵：切換到上下區域"
 
-#: activities/money/money.js:141
+#: activities/money/money.js:142
 msgctxt "money|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
@@ -18669,7 +18681,7 @@ msgstr ""
 "利用按下螢幕底部的硬幣或紙鈔來付錢。如果您想要移除某個硬幣或紙鈔，就在螢幕頂"
 "端區域它們的上方按一下。"
 
-#: activities/money/money.js:172
+#: activities/money/money.js:173
 #, qt-format
 msgctxt "money|"
 msgid ""
