@@ -33,14 +33,28 @@ Item {
             target: tileImage
             easing.type: Easing.OutQuad
             property: "x"
-            to: tileImage.moveImageX
+            to: tileImage.targetImageX
             duration: 430
         }
         NumberAnimation {
             target: tileImage
             easing.type: Easing.OutQuad
             property: "y"
-            to: tileImage.moveImageY
+            to: tileImage.targetImageY
+            duration: 430
+        }
+        NumberAnimation {
+            target: tileImage
+            easing.type: Easing.OutQuad
+            property: "width"
+            to: tileImage.targetImageWidth
+            duration: 430
+        }
+        NumberAnimation {
+            target: tileImage
+            easing.type: Easing.OutQuad
+            property: "height"
+            to: tileImage.targetImageHeight
             duration: 430
         }
         onStarted: {
@@ -78,8 +92,8 @@ Item {
 
         Image {
             id: tileImage
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: imgSize
+            sourceSize.height: imgSize
             width: imgSize
             height: imgSize
             x: parent.xCenter - width * 0.5
@@ -94,8 +108,12 @@ Item {
                                            sourceImage.sourceSize.height :
                                            backgroundImage.height * sourceImage.sourceSize.height/backgroundImageSource.sourceSize.height)
             property QtObject tileImageParent
-            property double moveImageX
-            property double moveImageY
+            // Animated properties
+            property double targetImageX
+            property double targetImageY
+            property double targetImageWidth
+            property double targetImageHeight
+
             property int dropStatus: -1 // -1: Nothing / 0: Bad pos / 1: Good pos
             property bool small: true
             property Item currentTargetSpot
@@ -125,22 +143,27 @@ Item {
                 tileImage.currentTargetSpot = null;
                 tileImage.tileImageParent = tile;
                 toSmall();
-                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width * 0.5,
-                            tile.yCenter - tileImage.height * 0.5);
-                tileImage.moveImageX = coord.x;
-                tileImage.moveImageY = coord.y;
+                // destCoord needs to be calculated with the final size of the tile -> targetImageWidth/targetImageHeight
+                var destCoord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.targetImageWidth * 0.5,
+                            tile.yCenter - tileImage.targetImageHeight * 0.5);
+                tileImage.targetImageX = destCoord.x;
+                tileImage.targetImageY = destCoord.y;
                 tileImageAnimation.start();
             }
 
             function toSmall() {
-                width = imgSize;
-                height = imgSize;
+                targetImageWidth = imgSize;
+                targetImageHeight = imgSize;
+                sourceSize.width = imgSize;
+                sourceSize.height = imgSize;
                 small = true;
             }
 
             function toFull() {
-                width = fullWidth;
-                height = fullHeight;
+                targetImageWidth = fullWidth;
+                targetImageHeight = fullHeight;
+                sourceSize.width = fullWidth;
+                sourceSize.height = fullHeight;
                 small = false;
             }
 
@@ -158,7 +181,6 @@ Item {
                 onPressed: {
                     Activity.hideInstructions();
                     item.pressed();
-                    tileImage.toSmall();
                     tileImage.anchors.centerIn = undefined;
                     tileImage.dropStatus = -1;
                     item.hideOkButton();
@@ -220,11 +242,11 @@ Item {
                         tileImage.x = originCoords.x;
                         tileImage.y = originCoords.y;
                         tileImage.toFull();
-                        var coord = tileImage.parent.mapFromItem(backgroundImage,
+                        var destCoord = tileImage.parent.mapFromItem(backgroundImage,
                                                                      closestSpot.xCenter - tileImage.fullWidth/2,
                                                                      closestSpot.yCenter - tileImage.fullHeight/2);
-                        tileImage.moveImageX = coord.x;
-                        tileImage.moveImageY = coord.y;
+                        tileImage.targetImageX = destCoord.x;
+                        tileImage.targetImageY = destCoord.y;
                         tileImage.z = 100;
                         tileImageAnimation.start();
                     }
