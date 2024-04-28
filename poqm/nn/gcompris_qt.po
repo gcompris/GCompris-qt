@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-04-20 17:11+0200\n"
+"PO-Revision-Date: 2024-04-27 13:55+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -19796,7 +19796,7 @@ msgstr "Oddetal er talet som gjev ein rest på 1 når du delar dei på 2."
 #: activities/numbers-odd-even/NumbersOddEven.qml:65
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
-msgstr "Øva deg for å sjå om du har forstått forskjellen på partal og oddetal."
+msgstr "Øv deg for å sjå om du har forstått forskjellen på partal og oddetal."
 
 #: activities/numbers-odd-even/resource/Tutorial1.qml:22
 msgctxt "Tutorial1|"
