@@ -21499,37 +21499,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "Chan eil"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:135
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:147
+#: activities/menu/Menu.qml:136
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numeration training"
@@ -21537,17 +21537,17 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Trèanadh nan àireamhan"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:159
+#: activities/menu/Menu.qml:148
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw Letters"
@@ -21555,12 +21555,12 @@ msgctxt "Menu|"
 msgid "Letters"
 msgstr "Tarraing litrichean"
 
-#: activities/menu/Menu.qml:160
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:161
+#: activities/menu/Menu.qml:150
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Vocabulary and reading"
@@ -21568,7 +21568,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Faclan is leughadh"
 
-#: activities/menu/Menu.qml:378
+#: activities/menu/Menu.qml:367
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21582,12 +21582,12 @@ msgstr ""
 "Cuir na cleasan as fhearr leat an-seo le bhith a’ taghadh na grèine gu h-àrd "
 "sa chleas ud."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:772
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Lorg gnìomhachdan sònraichte"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:799
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -25197,7 +25197,7 @@ msgstr ""
 "air a’ phutan solais air a shon. Feumaidh tu a h-uile inneal caitheimh a "
 "chur air fhad ’s a bhios na h-innealan dèanaimh air."
 
-#: activities/renewable_energy/RenewableEnergy.qml:280
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -25206,7 +25206,7 @@ msgstr ""
 "Tha Tux air tilleadh on iasgach air a’ bhàta aige. Cuir an siostam dealain "
 "air a-rithist ach am bi solas aige san taigh."
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:283
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -25222,7 +25222,7 @@ msgstr ""
 "tuathanas-gaoithe is tionndairean gus an siostam dealain gu lèir a chur a’ "
 "dol."
 
-#: activities/renewable_energy/RenewableEnergy.qml:284
+#: activities/renewable_energy/RenewableEnergy.qml:285
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -25233,14 +25233,14 @@ msgstr ""
 "a’ phutan solais air a shon. Feumaidh tu a h-uile inneal caitheimh a chur "
 "air fhad ’s a bhios na h-innealan dèanaimh air."
 
-#: activities/renewable_energy/RenewableEnergy.qml:286
+#: activities/renewable_energy/RenewableEnergy.qml:287
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Siostam dealain stèidhichte air lùths ath-nuadhachail. An dòchas gun còrd "
 "iad riut!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:311
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""

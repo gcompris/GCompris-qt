@@ -21020,37 +21020,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "नहीं"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:116
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:135
+#: activities/menu/Menu.qml:124
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:147
+#: activities/menu/Menu.qml:136
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numeration training"
@@ -21058,17 +21058,17 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "गणना प्रशिक्षण"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:159
+#: activities/menu/Menu.qml:148
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw Letters"
@@ -21076,12 +21076,12 @@ msgctxt "Menu|"
 msgid "Letters"
 msgstr "अक्षर लिखें"
 
-#: activities/menu/Menu.qml:160
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:161
+#: activities/menu/Menu.qml:150
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Vocabulary and reading"
@@ -21089,7 +21089,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "शब्दावलि तथा पढ़ाई"
 
-#: activities/menu/Menu.qml:378
+#: activities/menu/Menu.qml:367
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21102,12 +21102,12 @@ msgid ""
 msgstr ""
 "अपनी पसंदीदा गतिविधियों को यहां रखने के लिए गतिविधि के ऊपर दाईं ओर सूरज का चयन करें।"
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:772
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्ट गतिविधियों को खोजें"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:799
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -24692,7 +24692,7 @@ msgstr ""
 "टक्स उसके घर में है, उसके लिए प्रकाश बटन दबाएं। जीतने के लिए आपको सभी उपभोक्ताओं पर स्विच "
 "करना होगा, जबकि सभी उत्पादक ऊपर हैं।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:280
+#: activities/renewable_energy/RenewableEnergy.qml:281
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -24701,7 +24701,7 @@ msgstr ""
 "टक्स अपने नाव पर मछली पकड़ने से वापस आ गया है। बिजली व्यवस्था को वापस लाएं ताकि उसके "
 "घर में प्रकाश हो सके।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:282
+#: activities/renewable_energy/RenewableEnergy.qml:283
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -24716,7 +24716,7 @@ msgstr ""
 "पूरे इलेक्ट्रिकल सिस्टम को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें जैसे: "
 "सूर्य, बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:284
+#: activities/renewable_energy/RenewableEnergy.qml:285
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -24726,12 +24726,12 @@ msgstr ""
 "जब सिस्टम चालू हो जाये और टक्स अपने घर में हो तब उसके लिए प्रकाश बटन दबाएं। जीतने के लिए "
 "आपको सभी उपभोक्ताओं पर स्विच करना होगा, जब सभी उत्पादक चलो हों।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:286
+#: activities/renewable_energy/RenewableEnergy.qml:287
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "अक्षय उर्जा पर आधारित विद्युत प्रणाली के बारे में सीखें. मोज करें"
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:311
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
