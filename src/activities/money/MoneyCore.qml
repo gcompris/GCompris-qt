@@ -52,7 +52,7 @@ ActivityBase {
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property alias tuxMoney: tuxMoney
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus

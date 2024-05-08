@@ -64,7 +64,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
             property alias mainFunctionModel: mainFunctionModel

@@ -67,7 +67,7 @@ ActivityBase {
             property bool ok: true
             property int sensivity: 80
             property bool pieceIsMoving: false
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property double gridBaseWidth: items.board.width / items.columns
             property double gridBaseHeight: items.board.height / items.rows
             property bool buttonsBlocked: false

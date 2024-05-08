@@ -52,7 +52,7 @@ ActivityBase {
             property bool isPortrait: (background.height >= background.width - tux.width)
             property alias nightSky: nightSky.opacity
             property alias modelTable: modelTable
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property bool blockClicks: false
             property int nbCell: 5
             property int cellSize: isPortrait ? Math.min((parent.height - bar.height * 2.5) / items.nbCell,

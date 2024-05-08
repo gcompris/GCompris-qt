@@ -44,7 +44,7 @@ ActivityBase {
             property alias cardListModel: cardListModel
             property alias holderListModel: holderListModel
             property int selectedIndex: -1
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property alias okButton: okButton
             property alias score: score
             property double cardSize: Core.fitItems(numberContainerArea.width, numberContainerArea.height, 6)

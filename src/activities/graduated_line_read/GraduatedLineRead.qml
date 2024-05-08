@@ -43,7 +43,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias numPad: numPad
-            property var levels: activity.datasetLoader.data
+            property var levels: activity.datasets
             property GCSfx audioEffects: activity.audioEffects
 
             property int solutionGrad: 0                // Solution's graduation

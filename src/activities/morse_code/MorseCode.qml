@@ -64,7 +64,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias textInput: textInput
-            readonly property var dataset: activity.datasetLoader.data
+            readonly property var dataset: activity.datasets
             property bool toAlpha: dataset[currentLevel].toAlpha
             property bool audioMode: dataset[currentLevel].audioMode ? dataset[currentLevel].audioMode : false
             property string questionText: dataset[currentLevel].question

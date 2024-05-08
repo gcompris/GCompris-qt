@@ -131,7 +131,7 @@ Item {
      */
     property int currentLevel: 0
 
-    property alias datasetLoader: datasetLoader
+    property var datasets: []
     property var levelFolder
 
     /**
@@ -248,52 +248,17 @@ Item {
             return
         }
 
-        datasetLoader.data = []
+        datasets = [];
         var data = [];
         // sorting levelFolders in numeric manner
         levelFolder.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
-        for(var level in levelFolder /*todo maybe we don't need anymore levelFolder and we can use activityInfo.currentLevels*/) {
+        for(var level in levelFolder) {
             var id = levelFolder[level];
             var dataset = activityInfo.getDataset(id);
             if(dataset) {
                 data = data.concat(dataset.data);
             }
         }
-        datasetLoader.data = data
-        //datasetLoader.start()
-    }
-
-    // todo Maybe not needed anymore
-    Loader {
-        id: datasetLoader
-        asynchronous: false
-
-        property var dataFiles: []
-        property var currentFile
-        property var data: []
-        signal start
-        signal stop
-
-        onStart: {
-            var file = dataFiles.shift()
-            currentFile = file
-            source = file.file.toString()
-        }
-
-        onLoaded: {
-            data = data.concat(item.data)
-
-            if(dataFiles.length != 0) {
-                start()
-            }
-            else {
-                stop()
-            }
-        }
-        onStop: {
-            //print("stop", JSON.stringify(data))
-            source = ""
-            // Core.shuffle(data) do we want to shuffle??? Should depend on the activity (if we want increasing levels) or teachers (random multiplication tables for example)
-        }
+        datasets = data;
     }
 }

@@ -115,7 +115,7 @@ ActivityBase {
             property alias score: score
             property alias errorRectangle: errorRectangle
             property GCSfx audioEffects: activity.audioEffects
-            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int mode: 1 // default is automatic
             property bool buttonsBlocked: false
         }
