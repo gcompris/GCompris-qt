@@ -54,7 +54,7 @@ ActivityBase {
             property bool answerCompleted: false
             property bool buttonsEnabled: true
 
-            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
         }
         property int baseMargins: 10 * ApplicationInfo.ratio
 

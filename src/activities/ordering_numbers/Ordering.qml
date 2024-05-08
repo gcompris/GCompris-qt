@@ -45,7 +45,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             readonly property string resourceUrl: activity.resourceUrl
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property alias background: background
             property alias originListModel: originListModel
             property alias targetListModel: targetListModel

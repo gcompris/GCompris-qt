@@ -103,7 +103,7 @@ ActivityBase {
 
         QtObject {
             id: items
-            property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
+            property var levels: activity.datasets
             property alias modelCells: modelCells
             property alias bonus: bonus
             property int currentLevel: activity.currentLevel

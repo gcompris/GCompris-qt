@@ -46,7 +46,7 @@ ActivityBase {
             property int selectedIndex: -1
             property alias score: score
             property alias okButton: okButton
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property double cardSize: Core.fitItems(numberContainerArea.width, numberContainerArea.height, 6)
             property bool isHorizontal: background.width >= background.height
             property bool buttonsBlocked: false

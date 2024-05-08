@@ -49,7 +49,7 @@ ActivityBase {
             property alias textArea: textArea
             property alias infoText: userInfo
             property alias answerArea: answerArea
-            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int currentMax: 0
             property alias numpad: numpad
             property int maxSize: background.height * 0.16

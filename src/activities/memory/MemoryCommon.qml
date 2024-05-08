@@ -65,14 +65,14 @@ ActivityBase {
             property alias player2Score: player2Score
             property var playQueue
             property int selectionCount
-            readonly property var levels: activity.datasetLoader.data !=  0 ? activity.datasetLoader.data : activity.dataset
+            readonly property var levels: activity.datasets !=  0 ? activity.datasets : activity.dataset
             property alias containerModel: containerModel
             property alias grid: grid
             property bool blockClicks: false
             property int columns
             property int rows
             property int spacing: 5 * ApplicationInfo.ratio
-            property bool isMultipleDatasetMode: activity.datasetLoader.data != 0
+            property bool isMultipleDatasetMode: activity.datasets != 0
         }
 
         onStart: {

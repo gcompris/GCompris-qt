@@ -110,7 +110,7 @@ ActivityBase {
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property string mode: "rotate"  // "simple"
             property double velocity: 0.0
             property string velocityText: "<font color=\"#00FFFFFF\">-0</font>0.0"

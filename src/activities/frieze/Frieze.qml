@@ -43,7 +43,7 @@ ActivityBase {
             property alias score: score
             property GCSfx audioEffects: activity.audioEffects
 
-            property var levels: activity.datasetLoader.data
+            property var levels: activity.datasets
             property int subLevelCount: 0
             property int currentLevel: activity.currentLevel
             property int currentSubLevel: 0

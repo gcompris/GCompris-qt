@@ -48,7 +48,7 @@ ActivityBase {
             property alias secondOp: secondOp
             property alias numpad: numpad
             property int result
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property GCSfx audioEffects: activity.audioEffects
             property bool buttonsBlocked: false
         }

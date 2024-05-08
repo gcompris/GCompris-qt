@@ -58,7 +58,7 @@ ActivityBase {
             property var details
             property bool categoriesFallback
             property alias file: file
-            property var categories: activity.datasetLoader.data
+            property var categories: activity.datasets
             property bool okEnabled: true
         }
 

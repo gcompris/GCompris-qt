@@ -52,7 +52,7 @@ ActivityBase {
             readonly property string mode: activity.mode
             property int numeratorToFind: 0
             property int denominatorToFind: 0
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property string chartType: "pie"
             property bool fixedNumerator: true
             property bool fixedDenominator: true

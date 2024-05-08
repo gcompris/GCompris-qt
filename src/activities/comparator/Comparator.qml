@@ -47,7 +47,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property GCSfx audioEffects: activity.audioEffects
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property alias dataListModel: dataListModel
             property int selectedLine: -1
             property int spacingOfElement: 20 * ApplicationInfo.ratio

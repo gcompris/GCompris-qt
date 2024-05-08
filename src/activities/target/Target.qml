@@ -65,7 +65,7 @@ ActivityBase {
             property alias score: score
             property alias errorRectangle: errorRectangle
             property alias targetModel: targetItem.model
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property alias targetItem: targetItem
             property alias userEntry: userEntry
             property int currentArrow

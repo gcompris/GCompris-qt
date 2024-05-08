@@ -51,7 +51,7 @@ ActivityBase {
             property alias operatorRow: operatorRow
             property alias operandRow: operandRow
             property var data
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property int result: 0
             property alias warningDialog: warningDialog
             property GCSfx audioEffects: activity.audioEffects

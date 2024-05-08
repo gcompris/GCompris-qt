@@ -61,7 +61,7 @@ ActivityBase {
             property alias instruction: instruction
             property alias toolTip: toolTip
             property alias score: score
-            readonly property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property alias dataset: dataset
             property bool inputLocked: false
             // same formula used to define dropCircle size, here to define a minimum MouseArea

@@ -57,7 +57,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias errorRectangle: errorRectangle
-            property var levels: activity.datasetLoader.data
+            property var levels: activity.datasets
             property GCSfx audioEffects: activity.audioEffects
             property alias jsonParser: jsonParser
             property int currentValue: 0

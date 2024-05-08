@@ -47,7 +47,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias equations: equations
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property bool isHorizontal: background.width >= background.height
             property alias numPad: numPad
             property var previousSelectedCard: undefined

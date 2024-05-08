@@ -51,7 +51,7 @@ ActivityBase {
             property alias columns: calcudokuColumn.columns
             property alias rows: calcudokuColumn.rows
             property alias calcudokuModel: calcudokuModel
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property bool buttonsBlocked: false
         }
         onStart: Activity.start(items)

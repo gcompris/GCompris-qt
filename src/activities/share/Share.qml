@@ -52,7 +52,7 @@ ActivityBase {
             property int totalGirls
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
-            readonly property var levels: activity.datasetLoader.data
+            readonly property var levels: activity.datasets
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.round(Math.min(background.width / 12, background.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
