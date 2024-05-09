@@ -269,7 +269,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Boîte à outils - le menu de configuration. La configuration est enregistrée dans le dossier utilisateur sous le nom <filename
+> Boîte à outils - le menu de configuration. La configuration est enregistrée dans le dépôt (dossier) utilisateur sous le nom <filename
 >.config/gcompris/gcompris-qt.conf</filename
 >. C'est un fichier texte pouvant être édité manuellement.</para
 ></listitem
