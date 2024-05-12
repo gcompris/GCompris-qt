@@ -223,7 +223,7 @@
       <li xml:lang="bg">запознаване с компютъра: клавиатура, мишка, различни жестове с мишката, ...</li>
       <li xml:lang="br">Dizoleiñ an urzhiataer: klavier, logodenn, jestroù disheñvel gant al logodenn…</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
-      <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
+      <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí…</li>
       <li xml:lang="cs">objevování počítače: klávesnice, myš, různá gesta myší, ...</li>
       <li xml:lang="de">Entdeckung des Computers: Tastatur, Maus, verschiedene Mausgesten ...</li>
       <li xml:lang="el">ανακαλύπτω τον υπολογιστή: πληκτρολόγιο, ποντίκι, διάφορες ενδείξεις δείκτη ποντικιού, ...</li>
@@ -270,7 +270,7 @@
       <li xml:lang="bg">аритметика: броене, смятане, създаване на огледално изображение, теглене с везни, боравене с пари, ...</li>
       <li xml:lang="br">Jediñ : deskiñ an taolennoù-jediñ, niveriñ eeun, simetriezh ar skeudenn, kempouezañ ar bouezerez, distreiñ ar moneiz, ...</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
-      <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi...</li>
+      <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge a l'espill, equilibrar la balança, donar el canvi…</li>
       <li xml:lang="cs">aritmetika: tabulková paměť, výčet, zrcadlový obraz, vyvážení měřítka, dávání drobných, ...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
       <li xml:lang="el">αριθμητική: παιχνίδια memory, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
@@ -316,7 +316,7 @@
       <li xml:lang="bg">наука: принципи на управление на шлюз, смесване на цветовете, гравитация, ...</li>
       <li xml:lang="br">Skiantoù : mont en-dro ur skluj, meskañ al livioù, meizad an nerzh-dedennañ, ...</li>
       <li xml:lang="ca">ciència: blocar el canal, mescla de colors, el concepte de la gravetat...</li>
-      <li xml:lang="ca-valencia">ciència: blocar el canal, mescla de colors, el concepte de la gravetat...</li>
+      <li xml:lang="ca-valencia">ciència: blocar el canal, mescla de colors, el concepte de la gravetat…</li>
       <li xml:lang="cs">věda: zámek kanálu, míchání barev, gravitace, ...</li>
       <li xml:lang="de">Wissenschaft: Kanalschleuse, Farbmischung, Gravitation,...</li>
       <li xml:lang="el">επιστήμη: σύστημα αλλαγής στάθμης ροής, ανάμειξη χρωμάτων, η έννοια της βαρύτητας, ...</li>
@@ -362,7 +362,7 @@
       <li xml:lang="bg">игри: памет, свържете 4, морски шах, судоку, кулата на Ханой, ...</li>
       <li xml:lang="br">C'hoarioù : memor, pevar a-steud, tri merk a-steud, sudoku, tour Hanoi,…</li>
       <li xml:lang="ca">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
-      <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi...</li>
+      <li xml:lang="ca-valencia">jocs: memòria, connecta 4, tres en ratlla, sudoku, torre de Hanoi…</li>
       <li xml:lang="cs">hry: pexeso, spoj 4, piškvorky, sudoku, hanojská věž, ...</li>
       <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
       <li xml:lang="el">παιχνίδια: μνήμη, τετράδες, τρίλιζα, σουντόκου, πύργος του Ανόι, ...</li>
@@ -408,7 +408,7 @@
       <li xml:lang="bg">четене: упражнения за четене, ...</li>
       <li xml:lang="br">Lenn : pleustriñ war al lenn…</li>
       <li xml:lang="ca">Lectura: pràctica de lectura...</li>
-      <li xml:lang="ca-valencia">Lectura: pràctica de lectura...</li>
+      <li xml:lang="ca-valencia">Lectura: pràctica de lectura…</li>
       <li xml:lang="cs">čtení: procvičování čtení, ...</li>
       <li xml:lang="de">Lesen: Leseübungen ...</li>
       <li xml:lang="el">ανάγνωση: εξάσκηση στην ανάγνωση, ...</li>
@@ -455,7 +455,7 @@
       <li xml:lang="bg">други: запознаване с часовника, брайловата система, лабиринт, музикални инструменти, ...</li>
       <li xml:lang="br">A bep seurt : deskiñ reiñ an eur, meizad Braille, milendall, benvegoù sonerezh, ...</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
-      <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals...</li>
+      <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberints, instruments musicals…</li>
       <li xml:lang="cs">ostatní: nauč se čas, Braillovo písmo, bludiště, hudební nástroje, ...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
       <li xml:lang="el">άλλα: μαθαίνω να λέω την ώρα, το σύστημα μπράιγ, λαβύρινθος, μουσικά όργανα, ...</li>
