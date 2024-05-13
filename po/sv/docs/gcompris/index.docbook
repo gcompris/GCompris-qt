@@ -57,7 +57,7 @@
 > <affiliation
 ><address
 ><email
->stefan.asserhall@bredband.net</email
+>stefan.asserhall@gmail.com</email
 ></address
 ></affiliation
 > <contrib
@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2023-06-06</date>
+>2024-05-23</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.3</releaseinfo>
+>4.1</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -178,7 +178,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Varje ikon representerar en aktivitet. Omkring var och en finns små ikoner som ger ytterligare information om aktiviteten. Ett enkelklick på ikonen tar dig till en aktivitet eller en meny av aktiviteter. Det finns åtta sektioner (kategorier) av aktiviteter, som är placerade längst upp till vänster (men bara för stående orientering). Exempelvis finns sektionen "Brädspel", som inkluderar brädspel som schack, luffarschack eller arrangera fyra.</para>
+>Varje ikon representerar en aktivitet. Omkring var och en finns små ikoner som ger ytterligare information om aktiviteten. Ett enkelklick på ikonen tar dig till en aktivitet eller en meny av aktiviteter. Det finns åtta sektioner (kategorier) av aktiviteter, som är placerade längst upp eller till vänster (men bara för stående orientering). Exempelvis finns sektionen "Brädspel", som inkluderar brädspel som schack, luffarschack eller fyra i rad.</para>
 <para
 >Några kategorier har delkategorier för att filtrera aktiviteterna bättre. För matematiska aktiviteter finns tre delkategorier: räkning, aritmetik och mått.</para>
 <para
@@ -640,11 +640,11 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Program copyright 2000-2023 Timothée Giet med flera </para>
+>Program copyright 2000-2024 Timothée Giet med flera </para>
 
 <para
 >Översättning Stefan Asserhäll <email
->stefan.asserhall@bredband.net</email
+>stefan.asserhall@gmail.com</email
 ></para
 > &underFDL; &underGPL; </chapter>
 
