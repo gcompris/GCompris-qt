@@ -1375,9 +1375,9 @@ License: CC-BY-3.0
 Comment: cropping of https://commons.wikimedia.org/wiki/File:Hylobates_lar_-_Kaeng_Krachan_WB.jpg
 
 Files: src/activities/erase/resource/giraffe.webp
-Copyright: 2006 Sergio Cambelo
-License: Unlicense
-Comment: cropping, sharpening of https://commons.wikimedia.org/wiki/File:Giraffe.JPG
+Copyright: 2020 Reinhard Berlin
+License: CC0-1.0
+Comment: cropping of https://commons.wikimedia.org/wiki/File:RB_20200115_Murchison_Falls_1-92.jpg
 
 Files: src/activities/erase/resource/goat.webp
 Copyright: 2014 JoachimKohlerBremen
