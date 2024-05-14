@@ -11,7 +11,7 @@ import GCompris 1.0
 
 // 10 levels. Any combination of shapes,colors and sizes. Count : 10, 12
 Data {
-    objective: qsTr("Copy and complete this frieze: any combination of shapes, colors/signs and sizes.")
+    objective: qsTr("Copy and complete this frieze: patterns between 10 and 12, any combination of shapes, colors/signs and sizes.")
     difficulty: 3
     data: [
         {   "title": qsTr("Copy and complete this frieze."),

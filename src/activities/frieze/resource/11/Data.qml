@@ -13,7 +13,7 @@ Data {
     objective: qsTr("Copy and complete this frieze: patterns between 4 and 7, any combination of shapes, colors/signs and sizes.")
     difficulty: 5
     data: [
-        {   "title": qsTr("Copy and complete this frieze"),
+        {   "title": qsTr("Copy and complete this frieze."),
             "hidden": false,
             "shuffle": true,
             "shown": 10,
