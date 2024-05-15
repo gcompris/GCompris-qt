@@ -9801,8 +9801,13 @@ msgstr ""
 "formų, spalvų, ženklų ir dydžių derinys."
 
 #: activities/frieze/resource/11/Data.qml:16
+#: activities/frieze/resource/13/Data.qml:16
+#: activities/frieze/resource/2/Data.qml:17
+#: activities/frieze/resource/6/Data.qml:17
+#: activities/frieze/resource/8/Data.qml:17
+#: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
-msgid "Copy and complete this frieze"
+msgid "Copy and complete this frieze."
 msgstr "Nukopijuok ir užbaik šį ornamentą."
 
 #: activities/frieze/resource/12/Data.qml:13
@@ -9822,15 +9827,6 @@ msgid ""
 msgstr ""
 "Nukopijuok ir užbaik šį ornamentą: ornamentas iš 6–8 elementų, įvairių "
 "formų, spalvų, ženklų ir dydžių derinys."
-
-#: activities/frieze/resource/13/Data.qml:16
-#: activities/frieze/resource/2/Data.qml:17
-#: activities/frieze/resource/6/Data.qml:17
-#: activities/frieze/resource/8/Data.qml:17
-#: activities/frieze/resource/9/Data.qml:17
-msgctxt "Data|"
-msgid "Copy and complete this frieze."
-msgstr "Nukopijuok ir užbaik šį ornamentą."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9881,20 +9877,46 @@ msgstr ""
 "galbūt vienodomis spalvomis bei vienodais ženklais."
 
 #: activities/frieze/resource/7/Data.qml:14
-msgctxt "Data|"
-msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-msgstr ""
-"Nukopijuok šį ornamentą: įvairių formų, spalvų, ženklų ir dydžių derinys."
-
-#: activities/frieze/resource/8/Data.qml:14
-#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
-"Copy and complete this frieze: any combination of shapes, colors/signs and "
-"sizes."
+"Copy this frieze: patterns between 12 and 15, any combination of shapes, "
+"colors/signs and sizes."
 msgstr ""
-"Nukopijuok ir užbaik šį ornamentą: įvairių formų, spalvų, ženklų ir dydžių "
-"derinys."
+"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 4–7 elementų, įvairių "
+"formų, spalvų, ženklų ir dydžių derinys."
+
+#: activities/frieze/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 10 and 12, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 4–7 elementų, įvairių "
+"formų, spalvų, ženklų ir dydžių derinys."
+
+#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 16 and 20, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 6–8 elementų, įvairių "
+"formų, spalvų, ženklų ir dydžių derinys."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -27043,6 +27065,23 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy and complete this frieze"
+#~ msgstr "Nukopijuok ir užbaik šį ornamentą."
+
+#~ msgctxt "Data|"
+#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+#~ msgstr ""
+#~ "Nukopijuok šį ornamentą: įvairių formų, spalvų, ženklų ir dydžių derinys."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
+#~ "and sizes."
+#~ msgstr ""
+#~ "Nukopijuok ir užbaik šį ornamentą: įvairių formų, spalvų, ženklų ir "
+#~ "dydžių derinys."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the missing numbers"

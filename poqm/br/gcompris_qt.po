@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-10 14:23+0100\n"
+"PO-Revision-Date: 2024-05-14 18:36+0200\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -9801,9 +9801,14 @@ msgstr ""
 "stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/11/Data.qml:16
+#: activities/frieze/resource/13/Data.qml:16
+#: activities/frieze/resource/2/Data.qml:17
+#: activities/frieze/resource/6/Data.qml:17
+#: activities/frieze/resource/8/Data.qml:17
+#: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
-msgid "Copy and complete this frieze"
-msgstr "Kopi ha klok ar frizenn-mañ"
+msgid "Copy and complete this frieze."
+msgstr "Kopi ha klok ar frizenn-mañ."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9822,15 +9827,6 @@ msgid ""
 msgstr ""
 "Kopi ha klok ar frizenn-mañ: etre 6 hag 8 tres, ne vern peseurt strollad "
 "stummoù, livioù/sinoù ha mentoù."
-
-#: activities/frieze/resource/13/Data.qml:16
-#: activities/frieze/resource/2/Data.qml:17
-#: activities/frieze/resource/6/Data.qml:17
-#: activities/frieze/resource/8/Data.qml:17
-#: activities/frieze/resource/9/Data.qml:17
-msgctxt "Data|"
-msgid "Copy and complete this frieze."
-msgstr "Kopi ha klok ar frizenn-mañ."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9875,21 +9871,46 @@ msgstr ""
 "hevelep livioù/sinoù."
 
 #: activities/frieze/resource/7/Data.qml:14
-msgctxt "Data|"
-msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-msgstr ""
-"Kopi ar frizenn-mañ: ne vern peseurt strollad stummoù, livioù/sinoù ha "
-"mentoù."
-
-#: activities/frieze/resource/8/Data.qml:14
-#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
-"Copy and complete this frieze: any combination of shapes, colors/signs and "
-"sizes."
+"Copy this frieze: patterns between 12 and 15, any combination of shapes, "
+"colors/signs and sizes."
 msgstr ""
-"Kopi ha klok ar frizenn-mañ: ne vern peseurt strollad stummoù, livioù/sinoù "
-"ha mentoù."
+"Kopi ha klok ar frizenn-mañ: etre 4 ha 7 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
+
+#: activities/frieze/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 10 and 12, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Kopi ha klok ar frizenn-mañ: etre 4 ha 7 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
+
+#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 16 and 20, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Kopi ha klok ar frizenn-mañ: etre 6 hag 8 tres, ne vern peseurt strollad "
+"stummoù, livioù/sinoù ha mentoù."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -15835,9 +15856,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Barrenn-esaouiñ pe Mont-tre: dibab an dra er roll"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Mont-tre: gwiriañ da respont p'emañ war-wel ar bouton OK"
@@ -22426,11 +22444,6 @@ msgstr ""
 "ar reizhiad-mañ zo e stumm lizherennoù kenstrollet eus al lizherenneg latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -25494,38 +25507,29 @@ msgstr "Talvoud uhelañ: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Ober gant ur glokadenn d'ober dek"
+msgstr "Jediñ gant ur glokadenn d'ober dek"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Eskemm an niveroù evit krouiñ koubladoù par da zek."
+msgstr ""
+"Eskemm an niveroù evit krouiñ koubladoù par da zek ha lak ar  respont a-benn "
+"kaout ar sammad gortozet."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Desk ober gant ar glokadenn da zek evit gwellaat urzh an niveroù en ur "
-"jedadenn."
+"jedadenn ha jed an disoc'h."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25536,15 +25540,6 @@ msgstr "Niveroù adalek 1 betek 30 ha sammadurioù."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25555,18 +25550,16 @@ msgid ""
 "the errors, then press the OK button again."
 msgstr ""
 "Gra koubladoù niveroù par zek etre ar c'hrommelloù. Dibab un niver hag un "
-"eil war-lerc'h er memes jedadenn evit eskemm o lec'hiadur. Ur wech leuniet "
-"pep linenn, pouez war ar bouton OK evit gwiriañ ar respontoù. Ma chom "
-"respontoù faos e teuio skeudennig ur groaz war-wel war al linennoù da "
-"reizhañ. Difazi pep tra ha pouez goude adarre war ar bouton OK;"
+"eil war-lerc'h er memes jedadenn evit eskemm o lec'hiadur. War bep linenn, "
+"lak an disoc'h gortozet er c'hombod diwezhañ. Ur wech leuniet pep linenn, "
+"pouez war ar bouton OK evit gwiriañ ar respontoù. Ma chom respontoù faos e "
+"teuio skeudennig ur groaz war-wel war al linennoù da reizhañ. Difazi pep tra "
+"ha pouez goude adarre war ar bouton OK;"
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 goublad ingal diwar 4 niverenn."
+msgstr "1 c'houblad da gaout diwar 3 niverenn."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -26996,6 +26989,24 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy and complete this frieze"
+#~ msgstr "Kopi ha klok ar frizenn-mañ"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+#~ msgstr ""
+#~ "Kopi ar frizenn-mañ: ne vern peseurt strollad stummoù, livioù/sinoù ha "
+#~ "mentoù."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
+#~ "and sizes."
+#~ msgstr ""
+#~ "Kopi ha klok ar frizenn-mañ: ne vern peseurt strollad stummoù, livioù/"
+#~ "sinoù ha mentoù."
 
 #~| msgctxt "Data|"
 #~| msgid "Find both numbers."

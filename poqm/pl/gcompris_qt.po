@@ -9781,9 +9781,14 @@ msgstr ""
 "połączenie kształtów, barw/znaków oraz rozmiarów."
 
 #: activities/frieze/resource/11/Data.qml:16
+#: activities/frieze/resource/13/Data.qml:16
+#: activities/frieze/resource/2/Data.qml:17
+#: activities/frieze/resource/6/Data.qml:17
+#: activities/frieze/resource/8/Data.qml:17
+#: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
-msgid "Copy and complete this frieze"
-msgstr "Skopiuj i uzupełnij to frieze"
+msgid "Copy and complete this frieze."
+msgstr "Skopiuj i uzupełnij to frieze."
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9802,15 +9807,6 @@ msgid ""
 msgstr ""
 "Skopiuj i uzupełnij to frieze: wzorce pomiędzy 6, a 8 oraz dowolne "
 "połączenie kształtów, barw/znaków oraz rozmiarów."
-
-#: activities/frieze/resource/13/Data.qml:16
-#: activities/frieze/resource/2/Data.qml:17
-#: activities/frieze/resource/6/Data.qml:17
-#: activities/frieze/resource/8/Data.qml:17
-#: activities/frieze/resource/9/Data.qml:17
-msgctxt "Data|"
-msgid "Copy and complete this frieze."
-msgstr "Skopiuj i uzupełnij to frieze."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9855,20 +9851,46 @@ msgstr ""
 "potencjalnie tych samych barwach/znakach."
 
 #: activities/frieze/resource/7/Data.qml:14
-msgctxt "Data|"
-msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-msgstr ""
-"Skopiuj to frieze: dowolne połączenie kształtów, barw/znaków oraz rozmiarów."
-
-#: activities/frieze/resource/8/Data.qml:14
-#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
-"Copy and complete this frieze: any combination of shapes, colors/signs and "
-"sizes."
+"Copy this frieze: patterns between 12 and 15, any combination of shapes, "
+"colors/signs and sizes."
 msgstr ""
-"Skopiuj i uzupełnij to frieze: dowolne połączenie kształtów, barw/znaków "
-"oraz rozmiarów."
+"Skopiuj i uzupełnij to frieze: wzorce pomiędzy 4, a 7 oraz dowolne "
+"połączenie kształtów, barw/znaków oraz rozmiarów."
+
+#: activities/frieze/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 10 and 12, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Skopiuj i uzupełnij to frieze: wzorce pomiędzy 4, a 7 oraz dowolne "
+"połączenie kształtów, barw/znaków oraz rozmiarów."
+
+#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 16 and 20, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Skopiuj i uzupełnij to frieze: wzorce pomiędzy 6, a 8 oraz dowolne "
+"połączenie kształtów, barw/znaków oraz rozmiarów."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -26991,6 +27013,24 @@ msgstr "Pomiń"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Rozpocznij"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy and complete this frieze"
+#~ msgstr "Skopiuj i uzupełnij to frieze"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+#~ msgstr ""
+#~ "Skopiuj to frieze: dowolne połączenie kształtów, barw/znaków oraz "
+#~ "rozmiarów."
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
+#~ "and sizes."
+#~ msgstr ""
+#~ "Skopiuj i uzupełnij to frieze: dowolne połączenie kształtów, barw/znaków "
+#~ "oraz rozmiarów."
 
 #~ msgctxt "Data|"
 #~ msgid "Find the missing numbers"

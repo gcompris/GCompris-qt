@@ -9699,9 +9699,14 @@ msgstr ""
 "színek/jelek és méretek bármilyen kombinációjat!"
 
 #: activities/frieze/resource/11/Data.qml:16
+#: activities/frieze/resource/13/Data.qml:16
+#: activities/frieze/resource/2/Data.qml:17
+#: activities/frieze/resource/6/Data.qml:17
+#: activities/frieze/resource/8/Data.qml:17
+#: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
-msgid "Copy and complete this frieze"
-msgstr "Másolja és töltse ki ezt a sormintát!"
+msgid "Copy and complete this frieze."
+msgstr "Másolja le és töltse ki ezt a sormintát!"
 
 #: activities/frieze/resource/12/Data.qml:13
 msgctxt "Data|"
@@ -9720,15 +9725,6 @@ msgid ""
 msgstr ""
 "Másolja le és töltse ki ezt a sormintát: 6 és 8 közötti minták, a formák, "
 "színek/jelek és méretek bármilyen kombinációja!"
-
-#: activities/frieze/resource/13/Data.qml:16
-#: activities/frieze/resource/2/Data.qml:17
-#: activities/frieze/resource/6/Data.qml:17
-#: activities/frieze/resource/8/Data.qml:17
-#: activities/frieze/resource/9/Data.qml:17
-msgctxt "Data|"
-msgid "Copy and complete this frieze."
-msgstr "Másolja le és töltse ki ezt a sormintát!"
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -9776,21 +9772,46 @@ msgstr ""
 "azonos színekkel/jelekkel!"
 
 #: activities/frieze/resource/7/Data.qml:14
-msgctxt "Data|"
-msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-msgstr ""
-"Másold le ezt a sormintát: a formák, színek/jelek és méretek bármilyen "
-"kombinációja!"
-
-#: activities/frieze/resource/8/Data.qml:14
-#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
-"Copy and complete this frieze: any combination of shapes, colors/signs and "
-"sizes."
+"Copy this frieze: patterns between 12 and 15, any combination of shapes, "
+"colors/signs and sizes."
 msgstr ""
-"Másolja le és töltse ki ezt a sormintát: a formák, színek/jelek és méretek "
-"bármilyen kombinációja!"
+"Másolja le és töltse ki ezt a sormintát: 4 és 7 közötti minták, a formák, "
+"színek/jelek és méretek bármilyen kombinációjat!"
+
+#: activities/frieze/resource/8/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 10 and 12, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Másolja le és töltse ki ezt a sormintát: 4 és 7 közötti minták, a formák, "
+"színek/jelek és méretek bármilyen kombinációjat!"
+
+#: activities/frieze/resource/9/Data.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid ""
+#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
+#| "of shapes, colors/signs and sizes."
+msgctxt "Data|"
+msgid ""
+"Copy and complete this frieze: patterns between 16 and 20, any combination "
+"of shapes, colors/signs and sizes."
+msgstr ""
+"Másolja le és töltse ki ezt a sormintát: 6 és 8 közötti minták, a formák, "
+"színek/jelek és méretek bármilyen kombinációja!"
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -26781,6 +26802,24 @@ msgstr "Kihagyás"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Indítás"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy and complete this frieze"
+#~ msgstr "Másolja és töltse ki ezt a sormintát!"
+
+#~ msgctxt "Data|"
+#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
+#~ msgstr ""
+#~ "Másold le ezt a sormintát: a formák, színek/jelek és méretek bármilyen "
+#~ "kombinációja!"
+
+#~ msgctxt "Data|"
+#~ msgid ""
+#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
+#~ "and sizes."
+#~ msgstr ""
+#~ "Másolja le és töltse ki ezt a sormintát: a formák, színek/jelek és "
+#~ "méretek bármilyen kombinációja!"
 
 #~ msgctxt "Data|"
 #~ msgid "Find the missing numbers"
