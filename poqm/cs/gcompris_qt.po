@@ -9519,46 +9519,25 @@ msgstr ""
 "stejných barev/znaků."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Zopakuj a doplň tuto řadu: vzory mezi 4 a 7, různé kombinace tvarů, barev/"
-"znaků a velikostí."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Zopakuj a doplň tuto řadu: vzory mezi 4 a 7, různé kombinace tvarů, barev/"
-"znaků a velikostí."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Zopakuj a doplň tuto řadu: vzory mezi 6 a 8, různé kombinace tvarů, barev/"
-"znaků a velikostí."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -26307,18 +26286,3 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
-
-#~ msgctxt "Data|"
-#~ msgid "Copy and complete this frieze"
-#~ msgstr "Zopakuj a doplň řadu"
-
-#~ msgctxt "Data|"
-#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-#~ msgstr "Zopakuj tuto řadu: různé kombinace tvarů, barev/znaků a velikostí."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
-#~ "and sizes."
-#~ msgstr ""
-#~ "Zopakuj a doplň tuto řadu: různé kombinace tvarů, barev/znaků a velikostí."

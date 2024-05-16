@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-03-16 15:18+0100\n"
+"PO-Revision-Date: 2024-05-15 09:42+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.02.0\n"
+"X-Generator: Lokalize 24.02.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -9893,45 +9893,30 @@ msgstr ""
 "en potentieel dezelfde kleuren/tekens."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Deze fries kopiëren en voltooien: patronen tussen 4 en 7, elke combinatie "
-"van vormen, kleuren/tekens en groottes."
+"Deze fries kopiëren: patronen tussen 12 en 15, elke combinatie van vormen, "
+"kleuren/tekens en groottes."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Deze fries kopiëren en voltooien: patronen tussen 4 en 7, elke combinatie "
+"Deze fries kopiëren en voltooien: patronen tussen 10 en 12, elke combinatie "
 "van vormen, kleuren/tekens en groottes."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Deze fries kopiëren en voltooien: patronen tussen 6 en 8, elke combinatie "
+"Deze fries kopiëren en voltooien: patronen tussen 16 en 20, elke combinatie "
 "van vormen, kleuren/tekens en groottes."
 
 #. Activity title

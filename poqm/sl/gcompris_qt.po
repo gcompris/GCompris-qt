@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-16 07:31+0100\n"
+"PO-Revision-Date: 2024-05-15 07:11+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -9789,46 +9789,31 @@ msgstr ""
 "potencialno enakimi barvami/znaki."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Kopirajte in dokončajte ta friz: vzorci med 4 in 7, poljubna kombinacija "
+"Kopirajte in dokončajte ta friz: vzorci med 12 in 15, poljubna kombinacija "
 "oblike, barve/znake in velikosti."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Kopirajte in dokončajte ta friz: vzorci med 4 in 7, poljubna kombinacija "
+"Kopirajte in dokončajte ta friz: vzorci med 10 in 12, poljubna kombinacija "
 "oblike, barve/znake in velikosti."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Kopirajte si in dokončajte ta friz: vzorci med 6 in 8, poljubna kombinacija "
-"oblik, barv/znakov in velikosti."
+"Kopirajte si in dokončajte ta friz: vzorci med 16 in 20, poljubna "
+"kombinacija oblik, barv/znakov in velikosti."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
