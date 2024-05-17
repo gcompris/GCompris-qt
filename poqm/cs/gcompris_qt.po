@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-04-26 11:01+0200\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"PO-Revision-Date: 2024-05-16 23:19+0200\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -19805,7 +19805,7 @@ msgstr "Hrát oware (s kamarádem)"
 #: activities/oware_2players/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr ""
+msgstr "Zahrej si strategickou hru mlýn s kamarádem."
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
@@ -19960,14 +19960,14 @@ msgstr "Dekódování cesty"
 #: activities/path_decoding_relative/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
-msgstr ""
+msgstr "Aby Tux dosáhl cíle, následuj zadané směrové pokyny."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:21
 #: activities/path_decoding_relative/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Click on the grid squares to move Tux following the given directions."
-msgstr ""
+msgstr "Klikni na mřížku čtverců pro přesun Tuxe dle zadaných pokynů."
 
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_encoding/ActivityInfo.qml:22
@@ -19975,7 +19975,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
-msgstr ""
+msgstr "Pokyny jsou absolutní, nezáleží na současné orientaci Tuxe."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -19996,7 +19996,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1x%2 grids."
-msgstr ""
+msgstr "Mřížky %1x%2."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
@@ -20008,7 +20008,7 @@ msgstr "Relativní dekódování cesty"
 #: activities/path_encoding_relative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
-msgstr ""
+msgstr "Pokyny jsou relativní k současné orientaci Tuxe."
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -20017,6 +20017,8 @@ msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
 "left side of Tux and RIGHT moves to the right side of Tux."
 msgstr ""
+"To znamená, že NAHORU jej posune vpřed, DOLŮ jej posune vzad, VLEVO jej "
+"posune na levou stranu od Tuxe a VPRAVO jej posune na pravou stranu od Tuxe."
 
 #. Activity title
 #: activities/path_encoding/ActivityInfo.qml:14
@@ -20029,7 +20031,7 @@ msgstr "Kódování cesty"
 #: activities/path_encoding_relative/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Move Tux along the path to reach the target."
-msgstr ""
+msgstr "Přesouvej Tuxe podél cesty, aby došel do cíle."
 
 #. Help manual
 #: activities/path_encoding/ActivityInfo.qml:21
@@ -20037,7 +20039,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
-msgstr ""
+msgstr "Použij šipky pro pohyb Tuxe podle cesty, dokud nedosáhne cíle."
 
 #: activities/path_encoding/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:24
@@ -20049,7 +20051,7 @@ msgstr "Ovládání klávesnicí:"
 #: activities/path_encoding_relative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
-msgstr ""
+msgstr "Šipky: směrové pokyny"
 
 #: activities/path_encoding/GridPath.qml:125
 #, qt-format
@@ -20074,6 +20076,8 @@ msgstr "Pokutový kop"
 msgctxt "ActivityInfo|"
 msgid "Double click or double tap on any side of the goal in order to score."
 msgstr ""
+"Dvakrát klikni nebo dvakrát klepni na kteroukoliv stranu branky, abys "
+"vystřelil."
 
 #. Help manual
 #: activities/penalty/ActivityInfo.qml:22
@@ -20084,18 +20088,23 @@ msgid ""
 "click fast enough, Tux catches the ball. You must click on it to bring it "
 "back to its initial position."
 msgstr ""
+"Dvakrát klikni nebo dvakrát klepni na stranu branky pro odkopnutí míče. "
+"Kliknout dvakrát můžeš jak levým, tak pravým nebo prostředním tlačítkem "
+"myši. Pokud nebudeš klikat dostatečně rychle, Tux míč chytí. V takovém "
+"případě klikni na míč, aby se zase vrátil na původní místo."
 
 #: activities/penalty/Penalty.qml:210
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
 "in."
-msgstr "%1 BPM"
+msgstr ""
+"Dvakrát klikni nebo dvakrát klepni na stranu brány, kam chceš míč umístit."
 
 #: activities/penalty/Penalty.qml:250
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
-msgstr ""
+msgstr "Klikni nebo klepni na balon, aby se vrátil zpět na původní místo."
 
 #. Activity title
 #: activities/photo_hunter/ActivityInfo.qml:15
@@ -20943,6 +20952,8 @@ msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
 "on the drum when the line is in the middle of the notes."
 msgstr ""
+"Liché úrovně zobrazují na notové osnově svislou čáru, která sleduje rytmus: "
+"klikej na buben, jakmile je čára uprostřed not."
 
 #: activities/play_rhythm/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -20951,6 +20962,9 @@ msgid ""
 "notes length and play the rhythm accordingly. You can also click on the "
 "metronome to hear the quarter notes as reference."
 msgstr ""
+"Sudé úrovně jsou těžší, protože v nich není žádní svislá čára. Musíš si "
+"přečíst délku not a hrát rytmus správně. Také můžeš kliknout na metronom, "
+"abys uslyšel ukázku čtvrťových not."
 
 #: activities/play_rhythm/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -20982,7 +20996,7 @@ msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
-msgstr ""
+msgstr "Použij metronom pro odhad časových intervalů a správného hraní rytmu."
 
 #: activities/play_rhythm/PlayRhythm.qml:118
 msgctxt "PlayRhythm|"
@@ -20990,6 +21004,8 @@ msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
 "the rhythm correctly."
 msgstr ""
+"Následuj svislou čáru a klikej na buben nebo mačkej mezerník, abys správně "
+"hrál daný rytmus."
 
 #: activities/play_rhythm/PlayRhythm.qml:376
 msgctxt "PlayRhythm|"
@@ -21166,6 +21182,8 @@ msgid ""
 "This activity teaches to program Tux to reach its goal using simple "
 "instructions like move forward, turn left or right."
 msgstr ""
+"Tato aktivita tě naučí naprogramovat Tuxe tak, aby dosáhl svého cíle pomocí "
+"jednoduchých příkazů, jako je pohyb vpřed a otočení vlevo nebo vpravo."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
@@ -21173,14 +21191,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Tux is hungry. Help him find fish by programming him to the correct ice spot."
 msgstr ""
-"Tux mám hlad. Pomůžeš mu najít rybu, když ho naprogramuješ na správný kus "
-"ledu."
+"Tux má hlad. Pomoz mu najít rybu. Naprogramuj ho tak, aby došel na správný "
+"kus ledu."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Can read instructions, and think logically to find a path."
-msgstr ""
+msgstr "Umí číst instrukce a logicky myslet, aby našel cestu."
 
 #. Help manual
 #: activities/programmingMaze/ActivityInfo.qml:25
@@ -21188,7 +21206,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Choose the instructions from the menu, and arrange them in order to lead Tux "
 "to his goal."
-msgstr ""
+msgstr "Z nabídky vyber příkazy a seřaď je tak, aby dovedly Tuxe k jeho cíli."
 
 #: activities/programmingMaze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -21201,6 +21219,8 @@ msgid ""
 "Up and Down arrows: increase or decrease the loop counter if the loop area "
 "is selected"
 msgstr ""
+"Šipky nahoru a dolů: zvýšit nebo snížit počítadlo smyčky (pokud je vybrána "
+"oblast pro smyčku)"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -21208,21 +21228,26 @@ msgid ""
 "Space: select an instruction or append selected instruction in main/"
 "procedure/loop area"
 msgstr ""
+"Mezerník: vybrat příkaz nebo připojit vybraný příkaz do hlavní/procedurové/"
+"smyčkové oblasti"
 
 #: activities/programmingMaze/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between instructions area and main/procedure/loop area"
 msgstr ""
+"Tabulátor: přepnout mezi oblastí příkazů a hlavní/procedurovou/smyčkovou "
+"oblastí"
 
 #: activities/programmingMaze/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Delete: remove selected instruction from main/procedure/loop area"
-msgstr ""
+msgstr "Delete: odstranit vybraný příkaz z hlavní/procedurové/smyčkové oblasti"
 
 #: activities/programmingMaze/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
 msgstr ""
+"Enter: spustit kód nebo resetovat Tuxe, pokud se mu nepodaří získat rybu"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -21231,6 +21256,9 @@ msgid ""
 "instructions area, then switch to the main/procedure/loop area and press "
 "Space."
 msgstr ""
+"Pro přidání příkazu do hlavní/procedurové/smyčkové oblasti proveď jeho výběr "
+"z oblasti příkazů, pak přepni na hlavní/procedurovou/smyčkovou oblast a "
+"stiskni mezerník."
 
 #: activities/programmingMaze/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -21239,22 +21267,27 @@ msgid ""
 "procedure/loop area, then switch to instructions area, choose the new "
 "instruction and press Space."
 msgstr ""
+"Pro úpravu příkazu v hlavní/procedurové/smyčkové oblasti proveď jeho výběr v "
+"hlavní/procedurové/smyčkové oblasti, pak přepni na oblast příkazů, vyber "
+"nový příkaz a stiskni mezerník."
 
 #: activities/programmingMaze/InstructionArea.qml:27
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
-msgstr ""
+msgstr "Vyber příkazy"
 
 #: activities/programmingMaze/programmingMaze.js:96
 msgctxt "programmingMaze|"
 msgid "Instruction Area:"
-msgstr ""
+msgstr "Oblast příkazů:"
 
 #: activities/programmingMaze/programmingMaze.js:97
 msgctxt "programmingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
 msgstr ""
+"Máš k dispozici 3 příkazy, které můžeš použít pro kódování a navedení Tuxe k "
+"rybě:"
 
 #: activities/programmingMaze/programmingMaze.js:98
 msgctxt "programmingMaze|"
@@ -21262,26 +21295,28 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
+"<b>1. Posun vpřed:</b> Přesune Tuxe o jeden krok kupředu ve směru, kam se "
+"dívá."
 
 #: activities/programmingMaze/programmingMaze.js:99
 msgctxt "programmingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr ""
+msgstr "<b>2. Otočení vlevo:</b> Tux se otočí doleva."
 
 #: activities/programmingMaze/programmingMaze.js:100
 msgctxt "programmingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr ""
+msgstr "<b>3. Otočení vpravo:</b> Tux se otočí doprava."
 
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
 msgid "Main Function:"
-msgstr ""
+msgstr "Hlavní funkce:"
 
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
 msgid "The execution of the code starts here."
-msgstr ""
+msgstr "Zde začíná vykonávání kódu."
 
 #: activities/programmingMaze/programmingMaze.js:106
 msgctxt "programmingMaze|"
@@ -21289,6 +21324,8 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
+"-Klikni na některý příkaz v <b>oblasti příkazů</b>, aby mohl být přidán do "
+"<b>Hlavní funkce</b>."
 
 #: activities/programmingMaze/programmingMaze.js:107
 msgctxt "programmingMaze|"
@@ -21296,11 +21333,13 @@ msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
+"-Příkazy se vykonají ve svém pořadí dokud žádný nezbude, nebo když se "
+"dostaneš do slepé uličky nebo když Tux dojde k rybě."
 
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
 msgid "Procedure:"
-msgstr ""
+msgstr "Procedura:"
 
 #: activities/programmingMaze/programmingMaze.js:115
 msgctxt "programmingMaze|"
@@ -21308,6 +21347,8 @@ msgid ""
 "<b>Procedure</b> is a reusable set of instructions which can be <b>used in "
 "the code by calling it where needed</b>."
 msgstr ""
+"<b>Procedura</b> je znovupoužitelná sada příkazů, kterou můžeš <b>použít v "
+"kódu jejím zavoláním kdekoliv je potřeba</b>."
 
 #: activities/programmingMaze/programmingMaze.js:116
 msgctxt "programmingMaze|"
@@ -21316,6 +21357,9 @@ msgid ""
 "area</b> to add your code, click on the <b>Procedure</b> or <b>Main "
 "Function</b> label."
 msgstr ""
+"-Pro <b>přepnutí</b> mezi <b>oblastí Procedura</b> a <b>oblastí Hlavní "
+"funkce</b> za účelem přidání kódu, klepni na popisek <b>Procedura</b> nebo "
+"<b>Hlavní funkce</b>."
 
 #: activities/programmingMaze/programmingMaze.js:123
 msgctxt "programmingMaze|"
@@ -21328,6 +21372,8 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
+"<b>Smyčka</b> je sada příkazů, která je <b>opakovaně několikrát prováděna</"
+"b>. Počet opakování je nastaven číslem uvnitř smyčky."
 
 #: activities/programmingMaze/programmingMaze.js:125
 msgctxt "programmingMaze|"
@@ -21336,22 +21382,25 @@ msgid ""
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
+"-Pro <b>přepnutí mezi <b>oblastí Smyčka</b> a <b>oblastí Hlavní funkce</b> "
+"za účelem přidání kódu, klepni na popisek <b>Smyčka</b> nebo <b>Hlavní "
+"funkce</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:198
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
-msgstr ""
+msgstr "Dojdi k rybě s méně než %1 příkazy."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:262
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
-msgstr ""
+msgstr "Hlavní funkce"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
-msgstr ""
+msgstr "Procedura"
 
 #: activities/programmingMaze/ProgrammingMaze.qml:290
 msgctxt "ProgrammingMaze|"
@@ -21366,12 +21415,12 @@ msgstr "Použít pouze hlavní oblast."
 #: activities/programmingMaze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Using both the main area and the procedure area."
-msgstr ""
+msgstr "Použití jak hlavní, tak procedurové oblasti."
 
 #: activities/programmingMaze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Using both the main area and the loop area."
-msgstr ""
+msgstr "Použití jak hlavní, tak smyčkové oblasti."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
@@ -21411,7 +21460,7 @@ msgstr "<b>Ovládání klávesnicí:</b>"
 #: activities/railroad/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the sample area and in the answer area"
-msgstr "Šipky: přesouvej se v mřížce"
+msgstr "Šipky: přesun v oblasti vzorků a v oblasti pro odpověď"
 
 #: activities/railroad/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -21419,11 +21468,14 @@ msgid ""
 "Space: add an item from the samples to the answer area, or swap two items in "
 "the answer area"
 msgstr ""
+"Mezerník: vložit položku ze vzorků do místa pro odpověď nebo přehodit "
+"položky v oblasti pro odpověď"
 
 #: activities/railroad/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
 msgstr ""
+"Delete nebo Backspace: odstranit vybranou položku z oblasti pro odpověď"
 
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -24836,7 +24888,7 @@ msgstr "Maximální hodnota: 500000."
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr ""
+msgstr "Počítej s použitím desítkového doplňku"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -24845,6 +24897,8 @@ msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
 msgstr ""
+"Prohoď čísla pro vytvoření párů rovných deseti a jako odpověď zadej celkový "
+"součet."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
@@ -24853,6 +24907,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
+"Nauč se používat desítkový doplněk pro optimalizaci pořadí čísel ve výpočtu "
+"a vypočítej výsledek."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -24872,11 +24928,17 @@ msgid ""
 "are incorrect, a cross icon will appear on the corresponding lines. Correct "
 "the errors, then press the OK button again."
 msgstr ""
+"Vytvářej páry čísel v závorkách rovných deseti. Pro přehození čísel vyber "
+"jedno číslo, pak ve stejné operaci vyber jiné. Na každém řádku zadej do "
+"posledního rámečku celkový součet.Pokud jsou všechny řádky dokončeny, "
+"stiskni tlačítko OK pro ověření odpovědi. Pokud jsou některé odpovědi "
+"nesprávné, objeví se na odpovídajících řádcích ikona křížku. Oprav chyby a "
+"pak stiskni tlačítko OK znovu."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr ""
+msgstr "Vytvoř 1 pár ze 3 čísel."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9

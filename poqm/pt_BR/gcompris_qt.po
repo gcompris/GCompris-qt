@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-20 19:39-0300\n"
+"PO-Revision-Date: 2024-05-16 20:53-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -9982,45 +9982,30 @@ msgstr ""
 "necessariamente, diferentes cores/sinais."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Copie e complete este friso: entre 4 e 7 padrões, qualquer combinação de "
-"formas, cores/sinais e tamanhos."
+"Copie este friso: entre 12 e 15 padrões, qualquer combinação de formas, "
+"cores/sinais e tamanhos."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Copie e complete este friso: entre 4 e 7 padrões, qualquer combinação de "
+"Copie e complete este friso: entre 10 e 12 padrões, qualquer combinação de "
 "formas, cores/sinais e tamanhos."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Copie e complete este friso: entre 6 e 8 padrões, qualquer combinação de "
+"Copie e complete este friso: entre 16 e 20 padrões, qualquer combinação de "
 "formas, cores/sinais e tamanhos."
 
 #. Activity title
