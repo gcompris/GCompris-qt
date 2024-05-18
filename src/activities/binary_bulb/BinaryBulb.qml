@@ -20,7 +20,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property var dataset: Dataset
+    property var dataset: Dataset.get()
 
     pageComponent: Image {
         id: background
@@ -77,7 +77,7 @@ ActivityBase {
         // Tutorial section ends
 
         // Needed to get keyboard focus on Tutorial
-        Keys.forwardTo: tutorialSection
+        Keys.forwardTo: [tutorialSection]
 
         Keys.onPressed: (event) => {
             if(items.buttonsBlocked)
@@ -139,7 +139,7 @@ ActivityBase {
                 LightBulb {
                     height: background.height / 5
                     width: (background.width >= background.height) ? (background.width / 20) : ((background.width - (16 * bulbsRow.spacing)) / 8)
-                    valueVisible: Dataset.get()[items.currentLevel].bulbValueVisible
+                    valueVisible: dataset[items.currentLevel].bulbValueVisible
                 }
             }
         }
@@ -160,7 +160,7 @@ ActivityBase {
             color: "white"
             fontSize: largeSize
             text: items.numberSoFar
-            visible: Dataset.get()[items.currentLevel].enableHelp
+            visible: dataset[items.currentLevel].enableHelp
         }
 
         BarButton {

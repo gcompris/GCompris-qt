@@ -53,7 +53,7 @@ var levelDataset
 
 function start(items_, dataset_) {
     items = items_
-    dataset = dataset_.get()
+    dataset = dataset_
     numberOfLevel = dataset.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
 }
