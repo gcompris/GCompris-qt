@@ -38,7 +38,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: message
+        Keys.forwardTo: [message]
 
         // Add here the QML items you need to access in javascript
         QtObject {
