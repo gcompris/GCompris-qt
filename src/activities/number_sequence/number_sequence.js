@@ -22,10 +22,10 @@ var pointPositions2 = []
 var linePropertiesArray = []
 var url
 
-function start(_items, _mode,_dataset,_url) {
+function start(_items, _mode, _dataset, _url) {
     items = _items
     mode = _mode
-    dataset = _dataset.get()
+    dataset = _dataset
     url = _url
     numberOfLevel = dataset.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)

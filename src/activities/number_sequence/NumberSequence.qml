@@ -18,7 +18,7 @@ import "number_sequence_dataset.js" as Dataset
 ActivityBase {
     id: activity
     property string mode: "number_sequence"
-    property var dataset: Dataset
+    property var dataset: Dataset.get()
     property real pointImageOpacity: 1.0
     property string url: "qrc:/gcompris/src/activities/number_sequence/resource/"
     onStart: focus = true
@@ -57,7 +57,7 @@ ActivityBase {
             property bool highlightEnabled: true // make the point to click bigger. Always true in drawletters, drawnumbers and clickanddraw
         }
 
-        onStart: { Activity.start(items,mode,dataset,url) }
+        onStart: { Activity.start(items, mode, dataset, url) }
         onStop: { Activity.stop() }
 
         Image {

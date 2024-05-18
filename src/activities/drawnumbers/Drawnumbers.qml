@@ -12,7 +12,7 @@ import "drawnumbers_dataset.js" as Dataset
 
 NumberSequence {
     mode: "drawnumbers"
-    dataset: Dataset
+    dataset: Dataset.get()
     pointImageOpacity: 0
     url: "qrc:/gcompris/src/activities/drawnumbers/resource/"
 }

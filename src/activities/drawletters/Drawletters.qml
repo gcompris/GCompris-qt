@@ -12,7 +12,7 @@ import "drawletters_dataset.js" as Dataset
 
 NumberSequence {
     mode: "drawletters"
-    dataset: Dataset
+    dataset: Dataset.get()
     pointImageOpacity: 0
     url: "qrc:/gcompris/src/activities/drawletters/resource/"
 }
