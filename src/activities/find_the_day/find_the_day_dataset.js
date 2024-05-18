@@ -16,7 +16,6 @@
 // findDayOfWeek --> For questions based on finding day of week only.
 // findDay --> For questions based on finding day of a given month and year.
 
-
 function get() {
     return [
                 [ // Level 1

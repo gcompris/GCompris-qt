@@ -19,7 +19,7 @@ import "../../core"
 
 ActivityBase {
     id: activity
-    property var dataset: Dataset
+    property var dataset: Dataset.get()
     onStart: focus = true
     onStop: {}
 

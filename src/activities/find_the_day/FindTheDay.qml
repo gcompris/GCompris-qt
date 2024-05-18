@@ -12,6 +12,5 @@ import "../calendar"
 import "find_the_day_dataset.js" as Dataset
 
 Calendar {
-    dataset: Dataset
-
+    dataset: Dataset.get()
 }
