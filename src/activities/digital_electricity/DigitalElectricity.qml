@@ -39,7 +39,7 @@ ActivityBase {
         }
 
         // Needed to get keyboard focus on IntroMessage
-        Keys.forwardTo: tutorialInstruction
+        Keys.forwardTo: [tutorialInstruction]
 
         Keys.onPressed: (event) => {
             if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && okButton.enabled) {
