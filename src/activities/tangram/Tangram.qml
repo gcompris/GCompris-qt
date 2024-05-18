@@ -23,7 +23,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property var dataset: Dataset
+    property var dataset: Dataset.dataset
     property string resourceUrl: "qrc:/gcompris/src/activities/tangram/resource/"
 
     Keys.onPressed: (event) => { Activity.processPressedKey(event) }
@@ -76,8 +76,8 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selectedItem
-            property var currentTans: dataset.dataset[items.currentLevel]
-            property int numberOfLevel: dataset.dataset.length
+            property var currentTans: dataset[items.currentLevel]
+            property int numberOfLevel: dataset.length
             property bool editionMode: false
         }
 
