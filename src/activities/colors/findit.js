@@ -25,7 +25,7 @@ function start(items_, dataset_, mode_) {
     if (mode_ === "Colors")
         Core.checkForVoices(items_.activityPage);
     items = items_
-    dataset = dataset_.get()
+    dataset = dataset_
     numberOfLevel = dataset.length
     items.currentLevel = Core.getInitialLevel(numberOfLevel)
     items.firstQuestion = true

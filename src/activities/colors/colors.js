@@ -127,6 +127,5 @@ var colors =
 
 
 function get() {
-    print("get");
     return colors
 }

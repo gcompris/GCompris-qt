@@ -14,6 +14,6 @@ import "colors.js" as Dataset
 
 FindIt {
     mode: "Colors"
-    dataset: Dataset
+    dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svg"
 }
