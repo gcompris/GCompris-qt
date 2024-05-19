@@ -275,11 +275,24 @@ ActivityBase {
                                     activity.audioEffects.play(Activity.url + 'brush.wav')
                             }
 
+                            MouseArea {
+                                id: userMouseArea
+                                anchors.fill: parent
+                                hoverEnabled: true
+                                onEntered:
+                                {
+                                    userModel.currentItem = index
+                                    // Enable displaying cursor
+                                    userModel.keyNavigation = true
+                                }
+                            }
+
                             Rectangle {
                                 id: userRect
                                 anchors.fill: parent
-                                border.width: userModel.keyNavigation && userModel.currentItem == modelData ? 3 : 1
-                                border.color: 'black'
+                                property bool displayCursor: userModel.keyNavigation && userModel.currentItem == modelData
+                                border.width: displayCursor ? 3 : 1
+                                border.color: displayCursor ? Activity.colors[items.colorSelector] : 'black'
                                 color: parent.color
 
                                 Behavior on color {
