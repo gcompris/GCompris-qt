@@ -67,8 +67,15 @@ target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} protobuf::libprotobuf)
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
-gcompris_add_rcc(server main.qml *.js views/*.qml components/*.qml resource/*)
-
+gcompris_add_rcc(server
+  QML_FILES
+  main.qml
+  views/*.qml
+  components/*.qml
+  *.js
+  RESOURCES
+  resource/*
+)
 
 install(TARGETS ${GCOMPRIS_SERVER_EXECUTABLE_NAME}
   ARCHIVE DESTINATION bin
