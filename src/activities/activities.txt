@@ -88,6 +88,8 @@ hanoi_real
 hexagon
 imagename
 instruments
+laid-addition
+laid-subtraction
 land_safe
 lang
 learn_additions

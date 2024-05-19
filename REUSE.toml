@@ -3506,6 +3506,18 @@ SPDX-FileCopyrightText = "2023 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
+path = "src/activities/laid-addition/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Bruno Anselme"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/laid-subtraction/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Bruno Anselme"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
 path = "src/activities/land_safe/**.svg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Timothée Giet"
