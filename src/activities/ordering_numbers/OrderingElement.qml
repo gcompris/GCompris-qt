@@ -46,7 +46,7 @@ Item {
         // In origin placeholder, detect no drops
         keys: elementKey
 
-        onEntered: {
+        onEntered: (drag) => {
             if (isMoveAllowed) {
                 targetListModel.move(drag.source.index,index,1)
             }
