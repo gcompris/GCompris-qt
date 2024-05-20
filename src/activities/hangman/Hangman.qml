@@ -341,7 +341,15 @@ ActivityBase {
             }
             sourceSize.width: 66 * bar.barZoom
             property int remainingLife: items.remainingLife
-            onRemainingLifeChanged: if(remainingLife >= 0) clockAnim.restart()
+            onRemainingLifeChanged: {
+                if(remainingLife >= 0) {
+                    petalCount = "qrc:/gcompris/src/activities/reversecount/resource/" +
+                           "flower" + remainingLife + ".svg"
+                    clockAnim.restart()
+                }
+            }
+
+            property string petalCount
 
             SequentialAnimation {
                 id: clockAnim
@@ -358,8 +366,7 @@ ActivityBase {
                 }
                 PropertyAction {
                     target: clock; property: 'source';
-                    value: "qrc:/gcompris/src/activities/reversecount/resource/" +
-                           "flower" + items.remainingLife + ".svg"
+                    value: clock.petalCount
                 }
                 ParallelAnimation {
                     NumberAnimation {
