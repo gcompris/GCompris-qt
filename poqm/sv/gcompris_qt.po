@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-05-03 08:15+0200\n"
-"Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
+"PO-Revision-Date: 2024-05-19 11:46+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: sv\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -9814,45 +9814,30 @@ msgstr ""
 "potentiellt samma färger/tecken."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Kopiera och färdigställ frisen: mönster mellan 4 och 7, vilken kombination "
-"som helst av former, färger/tecken och storlekar."
+"Kopiera frisen: mönster mellan 12 och 15, vilken kombination som helst av "
+"former, färger/tecken och storlekar."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Kopiera och färdigställ frisen: mönster mellan 4 och 7, vilken kombination "
+"Kopiera och färdigställ frisen: mönster mellan 10 och 12, vilken kombination "
 "som helst av former, färger/tecken och storlekar."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Kopiera och färdigställ frisen: mönster mellan 6 och 8, vilken kombination "
+"Kopiera och färdigställ frisen: mönster mellan 16 och 20, vilken kombination "
 "som helst av former, färger/tecken och storlekar."
 
 #. Activity title
