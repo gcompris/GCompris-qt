@@ -54,7 +54,6 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property alias checkTimer: checkTimer
             property int colorSelector: 0
             property alias userModel: userModel
             property int numberOfColumn
@@ -69,7 +68,6 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: {
-            checkTimer.stop()
             Activity.stop()
         }
 
@@ -271,6 +269,8 @@ ActivityBase {
 
                             function paint(color) {
                                 colorIndex = color
+                                color = Activity.colors[colorIndex] //Needs to be set explicitly before running checkModel()
+                                Activity.checkModel()
                             }
 
                             function playEffect(color) {
@@ -303,9 +303,6 @@ ActivityBase {
                                 Behavior on color {
                                     ColorAnimation {
                                         duration: 200
-                                        onRunningChanged: {
-                                            if(!running) checkTimer.restart();
-                                        }
                                     }
                                 }
                             }
@@ -395,12 +392,6 @@ ActivityBase {
             opacity: userModel.keyNavigation ? 1 : 0
         }
 
-        Timer {
-            id: checkTimer
-            interval: 500
-            onTriggered: Activity.checkModel()
-        }
-
         MultiPointTouchArea {
             x: drawAndExampleArea.x
             y: drawAndExampleArea.y
@@ -408,7 +399,7 @@ ActivityBase {
             height: drawingArea.height
             onPressed: checkTouchPoint(touchPoints)
             onTouchUpdated: checkTouchPoint(touchPoints)
-            enabled: !bonus.isPlaying
+            enabled: !items.buttonsBlocked
 
             function checkTouchPoint(touchPoints) {
                 for(var i in touchPoints) {

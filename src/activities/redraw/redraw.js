@@ -87,7 +87,6 @@ function checkModel() {
             return false
     }
     items.buttonsBlocked = true
-    items.checkTimer.stop()
     items.bonus.good("flower")
 }
 
