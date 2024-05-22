@@ -64,6 +64,7 @@ ActivityBase {
             property var targetModelData
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property bool buttonsBlocked: false
+            property var selectedRect: null
         }
 
         onStart: { Activity.start(items) }
@@ -214,6 +215,10 @@ ActivityBase {
                         model: items.targetModelData.length
                         property int currentItem: 0
                         property bool keyNavigation: false
+                        onCurrentItemChanged: {
+                            items.selectedRect = userModel.itemAt(currentItem)
+                            selectedRectHint.parent = items.selectedRect
+                        }
 
                         function reset() {
                             for(var i=0; i < items.userModel.count; ++i)
@@ -278,7 +283,7 @@ ActivityBase {
                             MouseArea {
                                 id: userMouseArea
                                 anchors.fill: parent
-                                hoverEnabled: true
+                                hoverEnabled: !items.buttonsBlocked
                                 onEntered:
                                 {
                                     userModel.currentItem = index
@@ -292,7 +297,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 property bool displayCursor: userModel.keyNavigation && userModel.currentItem == modelData
                                 border.width: displayCursor ? 3 : 1
-                                border.color: displayCursor ? Activity.colors[items.colorSelector] : 'black'
+                                border.color: 'black'
                                 color: parent.color
 
                                 Behavior on color {
@@ -378,6 +383,16 @@ ActivityBase {
                     }
                 }
             }
+        }
+
+        Rectangle {
+            id: selectedRectHint
+            width: background.cellSize * 0.3
+            height: width
+            radius: width * 0.5
+            color: Activity.colors[items.colorSelector]
+            anchors.centerIn: parent
+            opacity: userModel.keyNavigation ? 1 : 0
         }
 
         Timer {
