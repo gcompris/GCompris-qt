@@ -31,13 +31,10 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
 
+        property int baseMargins: Math.round(10 * ApplicationInfo.ratio)
         property bool landscape: width >= height
-        property int areaWidth: landscape ? (width - colorSelectorFlick.width) / 2 - 20 :
-                                            width - colorSelectorFlick.width - 20
-        property int areaHeight: landscape ? height - bar.height * 1.2 - 20:
-                                             (height - bar.height * 1.2) / 2 - 20
-        property int cellSize: Math.min(areaWidth / items.numberOfColumn,
-                                        areaHeight / items.numberOfLine)
+        property int cellSize: Math.floor(Math.min(drawingArea.width / items.numberOfColumn,
+                                        drawingArea.height / items.numberOfLine))
         signal start
         signal stop
 
@@ -90,297 +87,328 @@ ActivityBase {
         // For creating new content, dump the drawing on the console
         Keys.onTabPressed: Activity.dump()
 
-        Row {
-            anchors {
-                top: parent.top
-                right: parent.right
-                left: parent.left
-                bottom: bar.top
-            }
-            anchors.margins: 10
-            spacing: 20
+        // The color selector
+        Flickable {
+            id: colorSelectorFlick
+            interactive: true
+            width: Math.ceil(Math.min(height / 7, 60 * ApplicationInfo.ratio))
+            height: Math.ceil(background.height - bar.height * 1.5)
+            boundsBehavior: Flickable.StopAtBounds
+            maximumFlickVelocity: activity.height
+            contentHeight: items.numberOfColor * width
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.margins: background.baseMargins
+            Column {
+                id: colorSelector
+                Repeater {
+                    model: items.numberOfColor
+                    Item {
+                        width: colorSelectorFlick.width
+                        height: width
+                        Image {
+                            id: img
+                            source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
+                            sourceSize.width: colorSelectorFlick.width
+                            z: iAmSelected ? 10 : 1
 
-            // The color selector
-            Flickable {
-                id: colorSelectorFlick
-                interactive: true
-                width: height / 7
-                height: background.height - bar.height * 1.2
-                boundsBehavior: Flickable.StopAtBounds
-                maximumFlickVelocity: activity.height
-                contentHeight: items.numberOfColor * width
-                Column {
-                    id: colorSelector
-                    Repeater {
-                        model: items.numberOfColor
-                        Item {
-                            width: colorSelectorFlick.width
-                            height: width
-                            Image {
-                                id: img
-                                source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
-                                sourceSize.width: colorSelectorFlick.width
-                                z: iAmSelected ? 10 : 1
+                            property bool iAmSelected: modelData == items.colorSelector
 
-                                property bool iAmSelected: modelData == items.colorSelector
-
-                                states: [
-                                    State {
-                                        name: "notclicked"
-                                        when: !img.iAmSelected && !mouseArea.containsMouse
-                                        PropertyChanges {
-                                            target: img
-                                            scale: 0.8
-                                        }
-                                    },
-                                    State {
-                                        name: "clicked"
-                                        when: mouseArea.pressed
-                                        PropertyChanges {
-                                            target: img
-                                            scale: 0.7
-                                        }
-                                    },
-                                    State {
-                                        name: "hover"
-                                        when: mouseArea.containsMouse && !img.iAmSelected
-                                        PropertyChanges {
-                                            target: img
-                                            scale: 1
-                                        }
-                                    },
-                                    State {
-                                        name: "selected"
-                                        when: img.iAmSelected
-                                        PropertyChanges {
-                                            target: img
-                                            scale: 1.1
-                                        }
+                            states: [
+                                State {
+                                    name: "notclicked"
+                                    when: !img.iAmSelected && !mouseArea.containsMouse
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 0.8
                                     }
-                                ]
-
-                                Behavior on scale { NumberAnimation { duration: 70 } }
-                                MouseArea {
-                                    id: mouseArea
-                                    anchors.fill: parent
-                                    hoverEnabled: true
-                                    onClicked: {
-                                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                                        items.colorSelector = modelData
+                                },
+                                State {
+                                    name: "clicked"
+                                    when: mouseArea.pressed
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 0.7
+                                    }
+                                },
+                                State {
+                                    name: "hover"
+                                    when: mouseArea.containsMouse && !img.iAmSelected
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 1
+                                    }
+                                },
+                                State {
+                                    name: "selected"
+                                    when: img.iAmSelected
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 1.1
                                     }
                                 }
-                            }
-                            GCText {
-                                id: text1
-                                anchors.fill: parent
-                                text: modelData
-                                fontSize: regularSize
-                                z: modelData == items.colorSelector ? 12 : 2
-                                font.bold: true
-                                style: Text.Outline
-                                styleColor: "black"
-                                color: "white"
-                            }
-                            DropShadow {
-                                anchors.fill: text1
-                                cached: false
-                                horizontalOffset: 1
-                                verticalOffset: 1
-                                radius: 8.0
-                                samples: 16
-                                color: "#80000000"
-                                source: text1
-                            }
-                        }
-                    }
-                }
-            }
-            Grid {
-                id: drawAndExampleArea
-                columns: background.landscape ? 2 : 1
-                width: parent.width - colorSelector.width
-                height: parent.height - bar.height * 1.2
-                spacing: 10
+                            ]
 
-                // The drawing area
-                Grid {
-                    id: drawingArea
-                    width: background.areaWidth
-                    height: background.areaHeight
-                    columns: items.numberOfColumn
-                    Repeater {
-                        id: userModel
-                        model: items.targetModelData.length
-                        property int currentItem: 0
-                        property bool keyNavigation: false
-                        onCurrentItemChanged: {
-                            items.selectedRect = userModel.itemAt(currentItem)
-                            selectedRectHint.parent = items.selectedRect
-                        }
-
-                        function reset() {
-                            for(var i=0; i < items.userModel.count; ++i)
-                                userModel.itemAt(i).paint(items.colorSelector)
-                            currentItem = 0
-                            keyNavigation = false
-                        }
-
-                        function clearCurrentItem() {
-                            userModel.itemAt(currentItem).paint(0)
-                        }
-
-                        function paintCurrentItem() {
-                            userModel.itemAt(currentItem).playEffect(items.colorSelector)
-                            userModel.itemAt(currentItem).paint(items.colorSelector)
-                        }
-
-                        function moveCurrentIndexRight() {
-                            keyNavigation = true
-                            if(currentItem++ >= items.targetModelData.length - 1)
-                                currentItem = 0
-                        }
-
-                        function moveCurrentIndexLeft() {
-                            keyNavigation = true
-                            if(currentItem-- <= 0)
-                                currentItem = items.targetModelData.length - 1
-                        }
-
-                        function moveCurrentIndexUp() {
-                            keyNavigation = true
-                            currentItem -= items.numberOfColumn
-                            if(currentItem < 0)
-                                currentItem += items.targetModelData.length
-                        }
-
-                        function moveCurrentIndexDown() {
-                            keyNavigation = true
-                            currentItem += items.numberOfColumn
-                            if(currentItem > items.targetModelData.length - 1)
-                                currentItem -= items.targetModelData.length
-                        }
-
-                        Item {
-                            id: userItem
-                            width: background.cellSize
-                            height: background.cellSize
-                            property color color: Activity.colors[colorIndex]
-                            property int colorIndex
-
-                            function paint(color) {
-                                colorIndex = color
-                                color = Activity.colors[colorIndex] //Needs to be set explicitly before running checkModel()
-                                Activity.checkModel()
-                            }
-
-                            function playEffect(color) {
-                                if(color === 0)
-                                    activity.audioEffects.play(Activity.url + 'eraser.wav')
-                                else
-                                    activity.audioEffects.play(Activity.url + 'brush.wav')
-                            }
-
+                            Behavior on scale { NumberAnimation { duration: 70 } }
                             MouseArea {
-                                id: userMouseArea
+                                id: mouseArea
                                 anchors.fill: parent
-                                hoverEnabled: !items.buttonsBlocked
-                                onEntered:
-                                {
-                                    userModel.currentItem = index
-                                    // Enable displaying cursor
-                                    userModel.keyNavigation = true
+                                hoverEnabled: true
+                                onClicked: {
+                                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                                    items.colorSelector = modelData
                                 }
-                            }
-
-                            Rectangle {
-                                id: userRect
-                                anchors.fill: parent
-                                property bool displayCursor: userModel.keyNavigation && userModel.currentItem == modelData
-                                border.width: displayCursor ? 3 : 1
-                                border.color: 'black'
-                                color: parent.color
-
-                                Behavior on color {
-                                    ColorAnimation {
-                                        duration: 200
-                                    }
-                                }
-                            }
-                            GCText {
-                                id: text2
-                                anchors.fill: parent
-                                anchors.margins: 4
-                                text: parent.colorIndex == 0 ? "" : parent.colorIndex
-                                fontSize: regularSize
-                                font.bold: true
-                                style: Text.Outline
-                                styleColor: "black"
-                                color: "white"
-                            }
-                            DropShadow {
-                                anchors.fill: text2
-                                cached: false
-                                horizontalOffset: 1
-                                verticalOffset: 1
-                                radius: 8.0
-                                samples: 16
-                                color: "#80000000"
-                                source: text2
                             }
                         }
-                    }
-                }
-
-                // The painting to reproduce
-                Grid {
-                    id: imageArea
-                    width: background.areaWidth
-                    height: background.areaHeight
-                    columns: items.numberOfColumn
-                    LayoutMirroring.enabled: activity.symmetry
-                    LayoutMirroring.childrenInherit: true
-                    Repeater {
-                        id: targetModel
-                        model: items.targetModelData
-                        Item {
-                            width: background.cellSize
-                            height: background.cellSize
-                            property alias color: targetRect.color
-
-                            Rectangle {
-                                id: targetRect
-                                anchors.fill: parent
-                                color: Activity.colors[modelData]
-                                border.width: 1
-                                border.color: 'black'
-                            }
-                            GCText {
-                                id: text3
-                                anchors.fill: parent
-                                anchors.margins: 4
-                                text: modelData == 0 ? "" : modelData
-                                fontSize: regularSize
-                                font.bold: true
-                                style: Text.Outline
-                                styleColor: "black"
-                                color: "white"
-                            }
-                            DropShadow {
-                                anchors.fill: text3
-                                cached: false
-                                horizontalOffset: 1
-                                verticalOffset: 1
-                                radius: 8.0
-                                samples: 16
-                                color: "#80000000"
-                                source: text3
-                            }
-
+                        GCText {
+                            id: text1
+                            anchors.fill: parent
+                            text: modelData
+                            fontSize: regularSize
+                            z: modelData == items.colorSelector ? 12 : 2
+                            font.bold: true
+                            style: Text.Outline
+                            styleColor: "black"
+                            color: "white"
+                        }
+                        DropShadow {
+                            anchors.fill: text1
+                            cached: false
+                            horizontalOffset: 1
+                            verticalOffset: 1
+                            radius: 8.0
+                            samples: 16
+                            color: "#80000000"
+                            source: text1
                         }
                     }
                 }
             }
         }
+
+        Item {
+            id: gridsArea
+            width: Math.floor(parent.width - colorSelector.width - background.baseMargins * 3)
+            height: colorSelectorFlick.height
+            anchors.top: colorSelectorFlick.top
+            anchors.left: colorSelectorFlick.right
+            anchors.leftMargin: background.baseMargins
+        }
+
+        // The drawing area
+        Grid {
+            id: drawingArea
+            width: Math.ceil(background.landscape ? (gridsArea.width - background.baseMargins) * 0.5 : gridsArea.width)
+            height: Math.ceil(background.landscape ? gridsArea.height : (gridsArea.height- background.baseMargins) * 0.5)
+            columns: items.numberOfColumn
+            anchors.top: gridsArea.top
+            anchors.left: gridsArea.left
+            Repeater {
+                id: userModel
+                model: items.targetModelData.length
+                property int currentItem: 0
+                property bool keyNavigation: false
+                onCurrentItemChanged: {
+                    items.selectedRect = userModel.itemAt(currentItem)
+                    selectedRectHint.parent = items.selectedRect
+                }
+
+                function reset() {
+                    for(var i=0; i < items.userModel.count; ++i)
+                        userModel.itemAt(i).paint(items.colorSelector)
+                    currentItem = 0
+                    keyNavigation = false
+                }
+
+                function clearCurrentItem() {
+                    userModel.itemAt(currentItem).paint(0)
+                }
+
+                function paintCurrentItem() {
+                    userModel.itemAt(currentItem).playEffect(items.colorSelector)
+                    userModel.itemAt(currentItem).paint(items.colorSelector)
+                }
+
+                function moveCurrentIndexRight() {
+                    keyNavigation = true
+                    if(currentItem++ >= items.targetModelData.length - 1)
+                        currentItem = 0
+                }
+
+                function moveCurrentIndexLeft() {
+                    keyNavigation = true
+                    if(currentItem-- <= 0)
+                        currentItem = items.targetModelData.length - 1
+                }
+
+                function moveCurrentIndexUp() {
+                    keyNavigation = true
+                    currentItem -= items.numberOfColumn
+                    if(currentItem < 0)
+                        currentItem += items.targetModelData.length
+                }
+
+                function moveCurrentIndexDown() {
+                    keyNavigation = true
+                    currentItem += items.numberOfColumn
+                    if(currentItem > items.targetModelData.length - 1)
+                        currentItem -= items.targetModelData.length
+                }
+
+                Item {
+                    id: userItem
+                    width: background.cellSize
+                    height: background.cellSize
+                    property color color: Activity.colors[colorIndex]
+                    property int colorIndex
+
+                    function paint(color) {
+                        colorIndex = color
+                        color = Activity.colors[colorIndex] //Needs to be set explicitly before running checkModel()
+                        Activity.checkModel()
+                    }
+
+                    function playEffect(color) {
+                        if(color === 0)
+                            activity.audioEffects.play(Activity.url + 'eraser.wav')
+                        else
+                            activity.audioEffects.play(Activity.url + 'brush.wav')
+                    }
+
+                    MouseArea {
+                        id: userMouseArea
+                        anchors.fill: parent
+                        hoverEnabled: !items.buttonsBlocked
+                        onEntered:
+                        {
+                            userModel.currentItem = index
+                            // Enable displaying cursor
+                            userModel.keyNavigation = true
+                        }
+                    }
+
+                    Rectangle {
+                        id: userRect
+                        anchors.fill: parent
+                        property bool displayCursor: userModel.keyNavigation && userModel.currentItem == modelData
+                        border.width: displayCursor ? 3 : 1
+                        border.color: 'black'
+                        color: parent.color
+
+                        Behavior on color {
+                            ColorAnimation {
+                                duration: 200
+                            }
+                        }
+                    }
+                    GCText {
+                        id: text2
+                        anchors.left: parent.left
+                        anchors.bottom: parent.bottom
+                        anchors.margins: 4
+                        width: parent.width * 0.35
+                        height: width
+                        text: parent.colorIndex == 0 ? "" : parent.colorIndex
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.bold: true
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                    }
+                    DropShadow {
+                        anchors.fill: text2
+                        cached: false
+                        horizontalOffset: 1
+                        verticalOffset: 1
+                        radius: 8.0
+                        samples: 16
+                        color: "#80000000"
+                        source: text2
+                    }
+                }
+            }
+        }
+
+        // The painting to reproduce
+        Grid {
+            id: imageArea
+            width: drawingArea.width
+            height: drawingArea.height
+            columns: items.numberOfColumn
+            layoutDirection: activity.symmetry ? Qt.RightToLeft : Qt.LeftToRight
+            states: [
+                State {
+                    name: "horizontalLayout"
+                    when: background.landscape
+                    AnchorChanges {
+                        target: imageArea
+                        anchors.top: gridsArea.top
+                        anchors.bottom: undefined
+                        anchors.right: gridsArea.right
+                        anchors.left: undefined
+                    }
+                },
+                State {
+                    name: "verticalLayout"
+                    when: !background.landscape
+                    AnchorChanges {
+                        target: imageArea
+                        anchors.top: undefined
+                        anchors.bottom: gridsArea.bottom
+                        anchors.right: gridsArea.right
+                        anchors.left: undefined
+                    }
+                }
+            ]
+            Repeater {
+                id: targetModel
+                model: items.targetModelData
+                Item {
+                    width: background.cellSize
+                    height: background.cellSize
+                    property alias color: targetRect.color
+
+                    Rectangle {
+                        id: targetRect
+                        anchors.fill: parent
+                        color: Activity.colors[modelData]
+                        border.width: 1
+                        border.color: 'black'
+                    }
+                    GCText {
+                        id: text3
+                        anchors.left: parent.left
+                        anchors.bottom: parent.bottom
+                        anchors.margins: 4
+                        width: parent.width * 0.35
+                        height: width
+                        text: modelData == 0 ? "" : modelData
+                        fontSize: regularSize
+                        fontSizeMode: Text.Fit
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.bold: true
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                    }
+                    DropShadow {
+                        anchors.fill: text3
+                        cached: false
+                        horizontalOffset: 1
+                        verticalOffset: 1
+                        radius: 8.0
+                        samples: 16
+                        color: "#80000000"
+                        source: text3
+                    }
+                }
+            }
+        }
+
 
         Rectangle {
             id: selectedRectHint
@@ -393,10 +421,11 @@ ActivityBase {
         }
 
         MultiPointTouchArea {
-            x: drawAndExampleArea.x
-            y: drawAndExampleArea.y
-            width: drawingArea.width
-            height: drawingArea.height
+            id: touchArea
+            x: drawingArea.x
+            y: drawingArea.y
+            width: background.cellSize * items.numberOfColumn
+            height: background.cellSize * items.numberOfLine
             onPressed: checkTouchPoint(touchPoints)
             onTouchUpdated: checkTouchPoint(touchPoints)
             enabled: !items.buttonsBlocked
@@ -411,6 +440,28 @@ ActivityBase {
                     }
                 }
             }
+        }
+
+        Rectangle {
+            id: drawingAreaBorders
+            x: drawingArea.x - 1
+            y: drawingArea.y - 1
+            width: touchArea.width + 2
+            height: touchArea.height + 2
+            color: "transparent"
+            border.color: "black"
+            border.width: 1
+        }
+
+        Rectangle {
+            id: imageAreaBorders
+            x: activity.symmetry ? imageArea.x + imageArea.width - width + 1 : imageArea.x - 1
+            y: imageArea.y - 1
+            width: drawingAreaBorders.width
+            height: drawingAreaBorders.height
+            color: "transparent"
+            border.color: "black"
+            border.width: 1
         }
 
         DialogChooseLevel {
