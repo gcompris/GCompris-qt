@@ -16,8 +16,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris-QT\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-16 23:24+0200\n"
-"Last-Translator: Bernardas Liukaitis <BernardasL@protonmail.com>\n"
+"PO-Revision-Date: 2024-05-22 21:24+0300\n"
+"Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
@@ -9877,45 +9877,30 @@ msgstr ""
 "galbūt vienodomis spalvomis bei vienodais ženklais."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 4–7 elementų, įvairių "
+"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 12–15 elementų, įvairių "
 "formų, spalvų, ženklų ir dydžių derinys."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 4–7 elementų, įvairių "
+"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 10–12 elementų, įvairių "
 "formų, spalvų, ženklų ir dydžių derinys."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 6–8 elementų, įvairių "
+"Nukopijuok ir užbaik šį ornamentą: ornamentas iš 16–20 elementų, įvairių "
 "formų, spalvų, ženklų ir dydžių derinys."
 
 #. Activity title
@@ -15875,9 +15860,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Tarpas arba Enter: pasirink elementą iš sąrašo"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Enter: patvirtink savo atsakymą, kai pasirodo OK mygtukas."
@@ -22465,11 +22447,6 @@ msgstr ""
 "didžiųjų raidžių deriniais."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -25559,38 +25536,29 @@ msgstr "Didžiausia reikšmė: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Naudok dešimties dėmenis"
+msgstr "Skaičiuok su dešimties dėmenimis"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Apkeisk skaičius, kad sukurtum poras, lygias dešimt."
+msgstr ""
+"Apkeisk skaičius, kad sukurtum poras, lygias dešimt, ir įvesk atsakymą – "
+"galutinę sumą."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
 "Išmok naudoti dešimties dėmenis, kad supaprastintum skaičių išdėstymą "
-"veiksme."
+"veiksme, ir suskaičiuok."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -25601,15 +25569,6 @@ msgstr "Skaičiai nuo 1 iki 30 ir sudėties veiksmai."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -25620,18 +25579,16 @@ msgid ""
 "the errors, then press the OK button again."
 msgstr ""
 "Sukurk poras skaičių, lygių dešimt. Pasirinkęs vieną skaičių, pasirink kitą "
-"to paties veiksmo skaičių, kad apkeistum juos vietomis. Kai visos eilutės "
-"bus užbaigtos, paspausk „OK“ mygtuką, kad pateiktum savo atsakymus. Jeigu "
-"kai kurie atsakymai bus neteisingi, bus parodytas kryžiukas prie atitinkamos "
-"eilutės. Ištaisęs klaidas, gali vėl paspausti „OK“ mygtuką."
+"to paties veiksmo skaičių, kad apkeistum juos vietomis. Kiekvienoje eilutėje "
+"paskutiniame laukelyje įvesk galutinę sumą. Kai visos eilutės bus užbaigtos, "
+"paspausk „OK“ mygtuką, kad pateiktum savo atsakymus. Jeigu kai kurie "
+"atsakymai bus neteisingi, bus parodytas kryžiukas prie atitinkamos eilutės. "
+"Ištaisęs klaidas, gali vėl paspausti „OK“ mygtuką."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 poros iš 4 skaičių."
+msgstr "1 pora iš 3 skaičių."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
