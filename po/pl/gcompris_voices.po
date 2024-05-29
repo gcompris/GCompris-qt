@@ -17,7 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 23.08.4\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -208,9 +207,9 @@ msgid ""
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Wybierz liczbę i naciśnij na jej położenie docelowe. Każda liczba może "
-"pojawić się tylko raz w danym wierszu i kolumnie. Liczby w kratkach klatki "
-"muszą dać dany wynik po połączeniu ich danym znakiem działania."
+"Wybierz liczbę i kliknij na jej obszar docelowy. Każda liczba może pojawić "
+"się tylko raz w wierszu i w kolumnie. Liczby w kratkach klatki muszą dać "
+"dany wynik przy użyciu danego znaku matematycznego."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -564,7 +563,7 @@ msgstr "Umieść daną wartość na linijce."
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Przypisz żądane klasy gramatyczne do odpowiednich słów."
+msgstr "Przypisz żądane klasy gramatyczne odpowiadającym słowom."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -587,7 +586,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Użyj czterech liczba z danymi znakami działań, aby znaleźć 24"
+msgstr "Użyj czterech liczb z danymi znakami matematycznymi, aby znaleźć 24"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
