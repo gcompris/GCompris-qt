@@ -1,7 +1,7 @@
 {
   "id": "org.kde.gcompris",
   "runtime": "org.kde.Platform",
-  "runtime-version": "6.6-kf6preview",
+  "runtime-version": "6.7",
   "sdk": "org.kde.Sdk",
   "rename-icon": "gcompris-qt",
   "command": "gcompris-qt",
