@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-05-16 23:19+0200\n"
-"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
+"PO-Revision-Date: 2024-05-29 11:27+0200\n"
+"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.02.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -9524,6 +9524,8 @@ msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
+"Zopakuj tuto řadu: vzory mezi 12 a 15, různé kombinace tvarů, barev/znaků a "
+"velikostí."
 
 #: activities/frieze/resource/8/Data.qml:14
 msgctxt "Data|"
@@ -9531,6 +9533,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"Zopakuj a doplň tuto řadu: vzory mezi 10 a 12, různé kombinace tvarů, barev/"
+"znaků a velikostí."
 
 #: activities/frieze/resource/9/Data.qml:14
 msgctxt "Data|"
@@ -9538,6 +9542,8 @@ msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
+"Zopakuj a doplň tuto řadu: vzory mezi 16 a 20, různé kombinace tvarů, barev/"
+"znaků a velikostí."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
