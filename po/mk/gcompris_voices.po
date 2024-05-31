@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-16 02:01+0000\n"
+"POT-Creation-Date: 2024-05-31 00:36+0000\n"
 "PO-Revision-Date: 2021-03-15 13:32+0100\n"
 "Last-Translator: Igor Risteski <fikio@yahoo.com>\n"
 "Language-Team: Macedonian Team (mk)\n"
@@ -85,9 +85,12 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on the column where you wish your token to fall and try to align of "
+#| "4 tokens before Tux."
 msgid ""
-"Click on the column where you wish your token to fall and try to align of 4 "
+"Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
 "Кликнете на колоната во која сакате да падне вашиот жетон и обидете се да "
@@ -175,7 +178,7 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
-#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame/ActivityInfo.qml:18
 #: activities/bargame_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
@@ -262,13 +265,13 @@ msgid "play checkers with your friend"
 msgstr "играј дама со пријател"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:17
+#: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
 msgstr "играј шах против Тукс"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:17
+#: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
 msgstr "играј шах против пријател"
@@ -486,7 +489,7 @@ msgstr ""
 "удар."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
-#: activities/fractions_create/ActivityInfo.qml:19
+#: activities/fractions_create/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
@@ -964,7 +967,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "Ставете ја секоја ставка на исто место како во дадениот пример."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:17
+#: activities/nine_men_morris/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -974,7 +977,7 @@ msgstr ""
 "ги земете сите фигури на Тукс."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:17
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1104,7 +1107,7 @@ msgstr ""
 "облаците, во растечки редослед."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:21
+#: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr ""
@@ -1112,7 +1115,7 @@ msgstr ""
 "и слушате"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:21
+#: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "Кликнете на тапанот за да го креирате ритамот"
@@ -1182,7 +1185,7 @@ msgstr ""
 "риба."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:17
+#: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Научете и вежбајте претворање на римски во арапски броеви"

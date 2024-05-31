@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-16 02:01+0000\n"
+"POT-Creation-Date: 2024-05-31 00:36+0000\n"
 "PO-Revision-Date: 2024-03-16 15:20+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -82,9 +82,12 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on the column where you wish your token to fall and try to align of "
+#| "4 tokens before Tux."
 msgid ""
-"Click on the column where you wish your token to fall and try to align of 4 "
+"Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
 "Klik op de kolom waar je jouw steen wilt laten vallen en probeer vier stenen "
@@ -172,7 +175,7 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
-#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame/ActivityInfo.qml:18
 #: activities/bargame_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
@@ -255,13 +258,13 @@ msgid "play checkers with your friend"
 msgstr "speel een spelletje dammen met je vriend"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:17
+#: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
 msgstr "speel schaken tegen Tux"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:17
+#: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
 msgstr "schaak spelen tegen je vriend"
@@ -477,7 +480,7 @@ msgstr ""
 "stellen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
-#: activities/fractions_create/ActivityInfo.qml:19
+#: activities/fractions_create/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
@@ -970,7 +973,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "Zet elk item op dezelfde plaats als in het gegeven voorbeeld."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:17
+#: activities/nine_men_morris/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -980,7 +983,7 @@ msgstr ""
 "Tux te pakken."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:17
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1105,7 +1108,7 @@ msgstr ""
 "wolken in oplopende volgorde."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:21
+#: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr ""
@@ -1113,7 +1116,7 @@ msgstr ""
 "ziet en hoort"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:21
+#: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "Klik op de drum om het ritme na te doen"
@@ -1179,7 +1182,7 @@ msgstr ""
 "bevestigen."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:17
+#: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Leer en oefen de conversie van Romeinse naar Arabische getallen"

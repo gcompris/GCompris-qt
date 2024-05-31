@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-16 02:01+0000\n"
+"POT-Creation-Date: 2024-05-31 00:36+0000\n"
 "PO-Revision-Date: 2024-04-21 12:29+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
@@ -84,9 +84,12 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on the column where you wish your token to fall and try to align of "
+#| "4 tokens before Tux."
 msgid ""
-"Click on the column where you wish your token to fall and try to align of 4 "
+"Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
 "Trykk der du vil sleppa kula ned, og prøv å få fire kuler på rad før Tux får "
@@ -175,7 +178,7 @@ msgstr ""
 # Merk forskjellig uttale av hòla = bunden form eintal av hòle (= bokmål hulen), og hòla = buden form fleirtal av hòl (= bokmål hullene).
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
-#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame/ActivityInfo.qml:18
 #: activities/bargame_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
@@ -257,13 +260,13 @@ msgid "play checkers with your friend"
 msgstr "Spel dam mot ein venn."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:17
+#: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
 msgstr "Spel sjakk mot Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:17
+#: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
 msgstr "Spel sjakk mot ein venn."
@@ -475,7 +478,7 @@ msgid "Drag a line from the ball to set the speed and direction of your kick."
 msgstr "Dra ei linje frå ballen for å velja fart og skotretning."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
-#: activities/fractions_create/ActivityInfo.qml:19
+#: activities/fractions_create/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
@@ -622,8 +625,8 @@ msgstr ""
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
 msgstr ""
-"Hjelp Tux å komma seg ut av <phoneme alphabet=\"CereProc\" ph=\"h oaa3 l "
-"a\">hòla</phoneme> ved å gjetta det hemmelege talet."
+"Hjelp Tux å komma seg ut av <phoneme alphabet=\"CereProc\" ph=\"h oaa3 l a"
+"\">hòla</phoneme> ved å gjetta det hemmelege talet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:21
@@ -955,7 +958,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "Plasser kvar gjenstand på same plass som i eksempelet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:17
+#: activities/nine_men_morris/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -965,7 +968,7 @@ msgstr ""
 "frå Tux."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:17
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1087,13 +1090,13 @@ msgid ""
 msgstr "Fly med helikopteret for å fanga talskyene i vist rekkjefølgje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:21
+#: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr "Trykk på tangentane som svarar til notane du ser og høyrer."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:21
+#: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr ""
@@ -1159,7 +1162,7 @@ msgstr ""
 "fisken. Trykk så på OK."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:17
+#: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "Lær å gjera om romartal til vanlege tal."

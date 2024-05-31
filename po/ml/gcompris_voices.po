@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-03-16 02:01+0000\n"
+"POT-Creation-Date: 2024-05-31 00:36+0000\n"
 "PO-Revision-Date: 2022-03-18 13:59+0100\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
@@ -74,9 +74,12 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Click on the column where you wish your token to fall and try to align of "
+#| "4 tokens before Tux."
 msgid ""
-"Click on the column where you wish your token to fall and try to align of 4 "
+"Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
 "നിങ്ങളുടെ ചിഹ്നം ചേർക്കേണ്ട വരിയിൽ ക്ലിക്കു ചെയ്യുക ശേഷം ടക്സിനു മുൻപ് നാലു ചിഹ്നങ്ങൾ "
@@ -160,7 +163,7 @@ msgstr "ഇടതും വലതും ഉള്ള ആരോ കീകൾ ഒ�
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
-#: activities/bargame/ActivityInfo.qml:19
+#: activities/bargame/ActivityInfo.qml:18
 #: activities/bargame_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
@@ -244,13 +247,13 @@ msgid "play checkers with your friend"
 msgstr "സുഹൃത്തിൻ്റെ കൂടെ ചെക്കേർസ് കളിക്കാം."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
-#: activities/chess/ActivityInfo.qml:17
+#: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
 msgstr "ടക്സിനെതിരെ ചെസ്സ് കളിക്കാം."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
-#: activities/chess_2players/ActivityInfo.qml:17
+#: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
 msgstr "സുഹൃത്തിനെതിരെ ചെസ്സ് കളിക്കാം."
@@ -455,7 +458,7 @@ msgid "Drag a line from the ball to set the speed and direction of your kick."
 msgstr "പന്തടിക്കുവാനുള്ള ദിശയും വേഗതയും ക്രമീകരിക്കാൻ പന്തിൽ നിന്നും ഒരു വര വരയ്ക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
-#: activities/fractions_create/ActivityInfo.qml:19
+#: activities/fractions_create/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
@@ -919,7 +922,7 @@ msgid "Put each item at the same place as in the given example."
 msgstr "തന്നിരിക്കുന്ന ഉദാഹരണത്തിലുള്ളതുപോലെ ഓരോ വസ്തുവും അതതിൻ്റെ സ്ഥാനത്തു വെക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
-#: activities/nine_men_morris/ActivityInfo.qml:17
+#: activities/nine_men_morris/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
@@ -929,7 +932,7 @@ msgstr ""
 "ശ്രമിക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
-#: activities/nine_men_morris_2players/ActivityInfo.qml:17
+#: activities/nine_men_morris_2players/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
@@ -1047,13 +1050,13 @@ msgstr ""
 "ആരോ കീകൾകൊണ്ട് ഹെലികോപ്റ്റർ ചലിപ്പിച്ച് ആരോഹണക്രമത്തിൽ മേഘങ്ങളിലുള്ള സംഖ്യകളെ പിടിക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
-#: activities/play_piano/ActivityInfo.qml:21
+#: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
 msgstr "നിങ്ങൾ കാണുകയും കേൾക്കുകയും ചെയ്യുന്ന സ്വരങ്ങൾക്ക് ചേരുന്നവ കീബോർഡ് കീകളിൽ ക്ലിക്ക് ചെയ്യൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
-#: activities/play_rhythm/ActivityInfo.qml:21
+#: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
 msgstr "കേൾക്കുന്ന താളം അതുപോലെ ഡ്രമ്മിൽ ക്ലിക്ക് ചെയ്ത് ഉണ്ടാക്കൂ."
@@ -1120,7 +1123,7 @@ msgstr ""
 "ചെയ്ത് നിങ്ങളുടെ ഉത്തരം ഉറപ്പിക്കാൻ ഒകെ ബട്ടൺ അമർത്തുക."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
-#: activities/roman_numerals/ActivityInfo.qml:17
+#: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr "റോമൻ അക്കങ്ങളെ അറബിക് അക്കങ്ങളിലേക്ക് മാറ്റാൻ പഠിക്കുകയും പരിശീലിക്കുകയും ചെയ്യാം."

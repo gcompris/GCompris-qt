@@ -38,8 +38,8 @@ msgctxt ""
 "%n pieces of candy equally between them."
 msgid "Place %n boy(s) "
 msgid_plural "Place %n boy(s) "
-msgstr[0] "\"Place %n boy \""
-msgstr[1] "\"Place %n boys \""
+msgstr[0] "Place %n boy "
+msgstr[1] "Place %n boys "
 
 #: ../activities/share/share.js:102
 #, qt-format
@@ -48,8 +48,8 @@ msgctxt ""
 "split %n pieces of candy equally between them."
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
-msgstr[0] "\"and %n girl in the center. \""
-msgstr[1] "\"and %n girls in the center. \""
+msgstr[0] "and %n girl in the center. "
+msgstr[1] "and %n girls in the center. "
 
 #: ../activities/share/share.js:106
 #, qt-format

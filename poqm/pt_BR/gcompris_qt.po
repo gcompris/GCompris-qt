@@ -192,7 +192,7 @@ msgstr ""
 #: activities/alphabet-sequence/ActivityInfo.qml:25
 #: activities/baby_wordprocessor/ActivityInfo.qml:25
 #: activities/braille_alphabets/ActivityInfo.qml:25
-#: activities/braille_fun/ActivityInfo.qml:24
+#: activities/braille_fun/ActivityInfo.qml:25
 #: activities/calendar/ActivityInfo.qml:25
 #: activities/click_on_letter/ActivityInfo.qml:25
 #: activities/click_on_letter_up/ActivityInfo.qml:25
@@ -227,10 +227,10 @@ msgstr ""
 #: activities/learn_subtractions/ActivityInfo.qml:24
 #: activities/leftright/ActivityInfo.qml:24
 #: activities/letter-in-word/ActivityInfo.qml:25
-#: activities/louis-braille/ActivityInfo.qml:23
-#: activities/maze/ActivityInfo.qml:27
-#: activities/mazeinvisible/ActivityInfo.qml:27
-#: activities/mazerelative/ActivityInfo.qml:28
+#: activities/louis-braille/ActivityInfo.qml:24
+#: activities/maze/ActivityInfo.qml:28
+#: activities/mazeinvisible/ActivityInfo.qml:28
+#: activities/mazerelative/ActivityInfo.qml:29
 #: activities/memory-case-association-tux/ActivityInfo.qml:25
 #: activities/memory-case-association/ActivityInfo.qml:25
 #: activities/memory-enumerate/ActivityInfo.qml:24
@@ -258,17 +258,17 @@ msgstr ""
 #: activities/money_back/ActivityInfo.qml:25
 #: activities/money_back_cents/ActivityInfo.qml:25
 #: activities/money_cents/ActivityInfo.qml:25
-#: activities/mosaic/ActivityInfo.qml:23
+#: activities/mosaic/ActivityInfo.qml:24
 #: activities/numbers-odd-even/ActivityInfo.qml:24
 #: activities/piano_composition/ActivityInfo.qml:33
 #: activities/planegame/ActivityInfo.qml:24
-#: activities/play_piano/ActivityInfo.qml:29
-#: activities/play_rhythm/ActivityInfo.qml:31
+#: activities/play_piano/ActivityInfo.qml:30
+#: activities/play_rhythm/ActivityInfo.qml:32
 #: activities/positions/ActivityInfo.qml:25
 #: activities/programmingMaze/ActivityInfo.qml:26
-#: activities/redraw/ActivityInfo.qml:24
-#: activities/redraw_symmetrical/ActivityInfo.qml:24
-#: activities/roman_numerals/ActivityInfo.qml:24
+#: activities/redraw/ActivityInfo.qml:25
+#: activities/redraw_symmetrical/ActivityInfo.qml:25
+#: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
@@ -294,9 +294,9 @@ msgstr "<b>Controles do teclado:</b>"
 #: activities/learn_digits/ActivityInfo.qml:25
 #: activities/learn_subtractions/ActivityInfo.qml:25
 #: activities/letter-in-word/ActivityInfo.qml:26
-#: activities/louis-braille/ActivityInfo.qml:24
-#: activities/maze/ActivityInfo.qml:28
-#: activities/mazeinvisible/ActivityInfo.qml:28
+#: activities/louis-braille/ActivityInfo.qml:25
+#: activities/maze/ActivityInfo.qml:29
+#: activities/mazeinvisible/ActivityInfo.qml:29
 #: activities/memory-case-association-tux/ActivityInfo.qml:26
 #: activities/memory-case-association/ActivityInfo.qml:26
 #: activities/memory-enumerate/ActivityInfo.qml:25
@@ -937,7 +937,7 @@ msgstr "Backspace: excluir o último dígito da sua resposta"
 #: activities/learn_quantities/ActivityInfo.qml:24
 #: activities/learn_subtractions/ActivityInfo.qml:27
 #: activities/letter-in-word/ActivityInfo.qml:28
-#: activities/roman_numerals/ActivityInfo.qml:27
+#: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
 msgstr "Enter: conferir sua resposta"
@@ -1326,15 +1326,21 @@ msgstr "Associações lógicas"
 # Help title
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
-msgid "Complete the arrangement of fruit."
+msgid "Complete the arrangement of fruits."
 msgstr "Complete a sequência de frutas."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
-msgid "Logic training activity."
-msgstr "Treinar conceitos de lógica."
+msgid "Logical association practice."
+msgstr "Associações lógicas"
 
 # Help manual
 #. Help manual
@@ -1359,17 +1365,25 @@ msgstr "Ligue quatro (contra o Tux)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
-msgid "Arrange four tokens in a row."
+msgid "Line up four tokens."
 msgstr "Distribua quatro peças em uma linha."
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Create a line of 4 tokens either horizontally (lying down), vertically "
+#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
-"(standing up) or diagonally."
+"(standing up), or diagonally."
 msgstr ""
 "Criar uma linha de 4 peças, na horizontal (deitada), na vertical (em pé) ou "
 "na diagonal."
@@ -1385,9 +1399,9 @@ msgstr ""
 "Jogue contra o Tux. Na sua vez, clique na coluna onde deseja soltar a peça. "
 "O primeiro jogador que criar uma linha de 4 peças, vence."
 
-#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:26
+#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
-#: activities/nine_men_morris/ActivityInfo.qml:23
+#: activities/nine_men_morris/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
@@ -1447,12 +1461,12 @@ msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
 msgstr "Mova o helicóptero para pegar as nuvens, seguindo a ordem do alfabeto."
 
-# Proposta de revisão - Tentar corrigir isso, separando o título da atividade do objetivo.
 #. Help goal
 #: activities/alphabet-sequence/ActivityInfo.qml:20
+#: activities/ordering_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
-msgid "Alphabet sequence."
-msgstr "Sequência do alfabeto"
+msgid "Learn the alphabetical order."
+msgstr "Aprender a ordem alfabética."
 
 # Help prerequisite
 #. Help prerequisite
@@ -2130,8 +2144,11 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
-msgid "Baby keyboard"
+msgid "My first keyboard"
 msgstr "Teclado infantil"
 
 #. Help title
@@ -2169,8 +2186,8 @@ msgstr ""
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
-msgid "Baby mouse"
-msgstr "Mouse infantil"
+msgid "My first mouse"
+msgstr ""
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2190,14 +2207,14 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/baby_mouse/ActivityInfo.qml:21
-#: activities/baby_tangram/ActivityInfo.qml:21
+#: activities/baby_tangram/ActivityInfo.qml:22
 #: activities/erase/ActivityInfo.qml:22
 #: activities/erase_2clic/ActivityInfo.qml:22
 #: activities/erase_clic/ActivityInfo.qml:22
 #: activities/hanoi/ActivityInfo.qml:22
 #: activities/left_right_click/ActivityInfo.qml:21
 #: activities/memory-tux/ActivityInfo.qml:22
-#: activities/memory/ActivityInfo.qml:22 activities/tangram/ActivityInfo.qml:29
+#: activities/memory/ActivityInfo.qml:22 activities/tangram/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation."
 msgstr "Manipulação do mouse."
@@ -2245,18 +2262,30 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
-msgid "Baby puzzle"
-msgstr "Quebra-cabeça infantil"
+msgid "Simple puzzle"
+msgstr "Complete o quebra-cabeça"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid "The objective is to assemble the baby puzzle."
-msgstr "O objetivo é montar o quebra-cabeça infantil."
+msgid "Match the objects with their shapes."
+msgstr ""
+
+#. Help goal
+#: activities/baby_tangram/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Flip the cards to match an operation with its result."
+msgctxt "ActivityInfo|"
+msgid "Learn to match an object with its shape."
+msgstr "Vire as cartas para encontrar a operação correspondente ao resultado."
 
 #. Help manual
-#: activities/baby_tangram/ActivityInfo.qml:23
+#: activities/baby_tangram/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. Use the rotation button if necessary. More "
@@ -2272,26 +2301,28 @@ msgstr "Toca o som da tecla quando ela é apertada"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
-msgid "A baby word processor"
+msgid "My first word processor"
 msgstr "Editor de textos infantil"
 
-# Help title
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid ""
-"A simplistic word processor to let the children play around with a keyboard "
-"and see letters."
+msgid "Write your first texts."
 msgstr ""
-"Um editor de texto simples para deixar as crianças brincarem com um teclado "
-"e ver as letras."
 
+# Help title
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
-msgid "Discover the keyboard and the letters."
-msgstr "Descobrir o teclado e as letras."
+msgid "Learn to write a text using a word processor."
+msgstr "Aprender a calcular usando as quatro operações."
 
 # Help manual
 #. Help manual
@@ -2436,14 +2467,25 @@ msgstr "Complete o quebra-cabeça"
 # Help title
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#: activities/details/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
-msgid "Drag and Drop the shapes on their respective targets."
+msgid "Drag and drop the shapes on their respective targets."
 msgstr "Arraste e solte as formas em seus respectivos alvos."
+
+#. Help goal
+#: activities/babyshapes/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to identify grammatical classes."
+msgctxt "ActivityInfo|"
+msgid "Learn to match geometric shapes."
+msgstr "Aprender a identificar as classes gramaticais."
 
 # Help manual
 #. Help manual
-#: activities/babyshapes/ActivityInfo.qml:26
+#: activities/babyshapes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
@@ -2452,7 +2494,7 @@ msgstr ""
 "para o local correspondente."
 
 # Help credit
-#: activities/babyshapes/ActivityInfo.qml:27
+#: activities/babyshapes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
 msgstr "O cachorro foi fornecido por Andre Connes e distribuído sob a GPL"
@@ -2783,8 +2825,17 @@ msgstr ""
 "Pressione as teclas de seta esquerda e direita ao mesmo tempo, para jogar a "
 "bola em linha reta."
 
+#. Help goal
+#: activities/ballcatch/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find your left and right hands"
+msgctxt "ActivityInfo|"
+msgid "Synchronize left and right hands movements."
+msgstr "Diferencie suas mãos esquerda e direita"
+
 #. Help manual
-#: activities/ballcatch/ActivityInfo.qml:22
+#: activities/ballcatch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
@@ -2841,34 +2892,29 @@ msgctxt "ActivityInfo|"
 msgid "Bargame (against Tux)"
 msgstr "Jogo das bolas (contra o Tux)"
 
-# Inverti a tradução da última frase para evitar a afirmação negativa, que pode provocar confusão nas pessoas. (Frederico)
 #. Help title
 #: activities/bargame/ActivityInfo.qml:17
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid ""
-"Select the number of balls you wish to place in the holes and then click on "
-"the OK button. The winner is the one who hasn't put a ball in the red hole."
+msgid "Anticipate and force the other player to place a ball in the last hole."
 msgstr ""
-"Clique no número de bolas que você deseja colocar nos buracos e, depois, no "
-"botão OK. Perde o jogo quem colocar a bola no buraco vermelho."
 
 #. Help goal
-#: activities/bargame/ActivityInfo.qml:21
+#: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Don't put the ball in the last hole."
-msgstr "Não colocar a bola no último buraco."
+msgid "Develop skills in strategic thinking, counting and subtracting."
+msgstr ""
 
 #. Help prerequisite
-#: activities/bargame/ActivityInfo.qml:23
+#: activities/bargame/ActivityInfo.qml:22
 #: activities/bargame_2players/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Ability to count."
 msgstr "Habilidade para contar"
 
 #. Help manual
-#: activities/bargame/ActivityInfo.qml:25
+#: activities/bargame/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
@@ -3067,7 +3113,7 @@ msgid "Digits: 1 to 6 select/deselect the corresponding dots"
 msgstr "Dígitos: 1 a 6 para marcar/desmarcar os pontos correspondentes"
 
 #: activities/braille_alphabets/ActivityInfo.qml:27
-#: activities/braille_fun/ActivityInfo.qml:25
+#: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
 msgstr "Espaço: abrir ou fechar a tabela de caracteres Braille"
@@ -3205,14 +3251,24 @@ msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
 msgstr "Praticar as letras em Braille."
 
+# Help title
+#. Help goal
+#: activities/braille_fun/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice addition inequality."
+msgctxt "ActivityInfo|"
+msgid "Practice writing in braille."
+msgstr "Pratique a soma em inequações."
+
 #. Help prerequisite
-#: activities/braille_fun/ActivityInfo.qml:21
+#: activities/braille_fun/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
 msgstr "Alfabeto Braille"
 
 #. Help manual
-#: activities/braille_fun/ActivityInfo.qml:23
+#: activities/braille_fun/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
@@ -3236,10 +3292,15 @@ msgstr "Resolva o Calcudoku"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Develop your logical reasoning skills: data linking, deduction and "
+#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
-"Develop your logical reasoning skills: data linking, deduction and spatial "
-"location while using calculation."
+"Develop some logical skills (data linking, deduction) and spatial "
+"visualization while using calculation."
 msgstr ""
 "Desenvolva suas habilidades de raciocínio lógico: vinculação de dados, "
 "dedução e localização espacial durante o uso de cálculos."
@@ -3356,37 +3417,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Espaço ou Enter: conferir suas respostas"
 
-#: activities/calendar/Calendar.qml:306
+#: activities/calendar/Calendar.qml:311
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Domingo"
 
-#: activities/calendar/Calendar.qml:307
+#: activities/calendar/Calendar.qml:312
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Segunda-feira"
 
-#: activities/calendar/Calendar.qml:308
+#: activities/calendar/Calendar.qml:313
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Terça-feira"
 
-#: activities/calendar/Calendar.qml:309
+#: activities/calendar/Calendar.qml:314
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Quarta-feira"
 
-#: activities/calendar/Calendar.qml:310
+#: activities/calendar/Calendar.qml:315
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Quinta-feira"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:316
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Sexta-feira"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:317
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Sábado"
@@ -4308,18 +4369,26 @@ msgstr "Jogue damas (contra o Tux)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Capture all the pieces of your opponent before your opponent captures all "
+#| "of yours."
 msgctxt "ActivityInfo|"
-msgid "The version in GCompris is the international draughts."
-msgstr "A versão do GCompris utiliza as regras internacionais."
+msgid ""
+"Capture all your opponent's pieces before your opponent captures all of "
+"yours."
+msgstr "Capturar todas as peças de seu oponente antes que ele capture as suas."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
-msgid ""
-"Capture all the pieces of your opponent before your opponent captures all of "
-"yours."
-msgstr "Capturar todas as peças de seu oponente antes que ele capture as suas."
+msgid "Practice playing checkers."
+msgstr "Praticar as letras em Braille."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4364,7 +4433,16 @@ msgstr ""
 "capturada. Inclusive várias peças podem ser capturadas simultaneamente, "
 "desde que essa regra seja seguida."
 
-#: activities/checkers/ActivityInfo.qml:28
+#: activities/checkers/ActivityInfo.qml:27
+#: activities/checkers_2players/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The version in GCompris is the international draughts."
+msgctxt "ActivityInfo|"
+msgid "This version of checkers follows the rules of international draughts."
+msgstr "A versão do GCompris utiliza as regras internacionais."
+
+#: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
@@ -4451,8 +4529,28 @@ msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
 msgstr "Jogue xadrez (contra o Tux)"
 
+#. Help title
+#: activities/chess/ActivityInfo.qml:17
+#: activities/chess_2players/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Discover the braille system"
+msgctxt "ActivityInfo|"
+msgid "Discover and practice chess."
+msgstr "Descubra o sistema Braille"
+
+#. Help goal
+#: activities/chess/ActivityInfo.qml:20
+#: activities/chess_2players/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
+msgctxt "ActivityInfo|"
+msgid "Learn to play chess."
+msgstr "Aprender o ciclo da água."
+
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess/ActivityInfo.qml:22
+#: activities/chess/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against the "
@@ -4495,9 +4593,9 @@ msgstr ""
 "prever as futuras jogadas do seu adversário, para que você possa capturar as "
 "peças dele ou proteger as suas de ataques."
 
-#: activities/chess/ActivityInfo.qml:29
-#: activities/chess_2players/ActivityInfo.qml:29
-#: activities/chess_partyend/ActivityInfo.qml:30
+#: activities/chess/ActivityInfo.qml:31
+#: activities/chess_2players/ActivityInfo.qml:31
+#: activities/chess_partyend/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid ""
 "Single click on undo button will undo one move. Single click on redo button "
@@ -4508,8 +4606,8 @@ msgstr ""
 "refazer irá refazer um movimento. Para desfazer todos os movimentos, "
 "pressione e segure o botão desfazer por 3 segundos."
 
-#: activities/chess/ActivityInfo.qml:30
-#: activities/chess_partyend/ActivityInfo.qml:31
+#: activities/chess/ActivityInfo.qml:32
+#: activities/chess_partyend/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
@@ -4581,7 +4679,7 @@ msgid "Play chess (with a friend)"
 msgstr "Jogue xadrez (contra um amigo)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess_2players/ActivityInfo.qml:22
+#: activities/chess_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing against a friend. It "
@@ -4625,12 +4723,24 @@ msgstr "Finalize o jogo de xadrez"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
-msgid "Play the end of the chess game against Tux."
+msgid "Play the end of a chess game against Tux."
 msgstr "Jogar a finalização do jogo de xadrez contra o Tux."
 
+#. Help goal
+#: activities/chess_partyend/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "End of chess game"
+msgctxt "ActivityInfo|"
+msgid "Finish a chess game."
+msgstr "Finalize o jogo de xadrez"
+
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
-#: activities/chess_partyend/ActivityInfo.qml:23
+#: activities/chess_partyend/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In this activity you discover the chess game by playing only the end of a "
@@ -4680,9 +4790,12 @@ msgstr "Arraste os itens para organizar a história."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
-msgid "Sort the pictures into the order that tells the story."
-msgstr "Organizar as imagens em uma sequência que conte a história."
+msgid "Learn to recognize the chronology of a story."
+msgstr "Aprender a identificar cores incomuns."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4693,22 +4806,30 @@ msgstr "Contar uma história curta"
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "If the answer is correct, type the corresponding result, and click on the "
+#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"Pick the pictures on the side and put them on the dots in the right order."
+"Arrange the pictures to make a coherent story. Drag the pictures from the "
+"sidebar to the corresponding dots, then click the OK button to validate your "
+"answer."
 msgstr ""
-"Pegue as imagens ao lado e coloque-as nos pontos vermelhos, na ordem correta."
-
-#: activities/chronos/ActivityInfo.qml:28
-msgctxt "ActivityInfo|"
-msgid "Then, click on the OK button to validate your answer."
-msgstr "Depois clique no botão OK para conferir sua resposta."
+"Caso a resposta esteja correta, digite o resultado correspondente e clique "
+"no botão OK para conferir sua resposta."
 
 #: activities/chronos/ActivityInfo.qml:29
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Moon photo is copyright NASA. The transportation images are copyright "
+#| "Franck Doucet. Dates of Transportation are based on those found in &lt;"
+#| "https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
-"Moon photo is copyright NASA. The transportation images are copyright Franck "
-"Doucet. Dates of Transportation are based on those found in &lt;https://www."
+"Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
 "A foto da Lua é de propriedade da NASA. Os direitos de imagem dos meios de "
@@ -5026,10 +5147,12 @@ msgstr "Ouça uma letra e clique nela."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#: activities/click_on_letter_up/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
-msgid "Letter-name recognition."
-msgstr "Identificar o nome da letra."
+msgid "Recognize the name of lowercase letters."
+msgstr "Clique em uma letra minúscula"
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5070,6 +5193,15 @@ msgctxt "ActivityInfo|"
 msgid "Click on an uppercase letter"
 msgstr "Clique em uma letra maiúscula"
 
+#. Help goal
+#: activities/click_on_letter_up/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click on an uppercase letter"
+msgctxt "ActivityInfo|"
+msgid "Recognize the name of uppercase letters."
+msgstr "Clique em uma letra maiúscula"
+
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
 #: activities/drawnumbers/ActivityConfig.qml:22
@@ -5104,14 +5236,24 @@ msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on the selected points."
 msgstr "Desenhe a figura clicando nos pontos selecionados."
 
+#. Help goal
+#: activities/clickanddraw/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can drag items using a mouse or touchscreen."
+msgctxt "ActivityInfo|"
+msgid "Practice using a mouse or touchscreen to touch specific points."
+msgstr ""
+"Conseguir arrastar itens utilizando o mouse ou a tela sensível ao toque."
+
 #. Help prerequisite
-#: activities/clickanddraw/ActivityInfo.qml:21
+#: activities/clickanddraw/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can move the mouse and click accurately on points."
 msgstr "Saber mover o mouse e clicar com precisão em pontos."
 
 #. Help manual
-#: activities/clickanddraw/ActivityInfo.qml:23
+#: activities/clickanddraw/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5134,14 +5276,20 @@ msgstr "Pegue todos os peixes antes que deixem o aquário."
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
-msgid "Motor coordination: moving the hand precisely."
+msgid "Practice motor coordination, moving the hand precisely."
 msgstr "Trabalhar coordenação motora: mover a mão com precisão."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
-msgid "Can move mouse and click on the correct place."
+msgid "Can move a mouse or use a touchscreen and click on the correct place."
 msgstr "Pode mover o mouse e clicar no lugar correto"
 
 #. Help manual
@@ -5287,9 +5435,11 @@ msgstr "Entenda a mistura de cores de pintura."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#: activities/color_mix_light/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
-msgid "Mix primary colors to match the given color."
+msgid "Learn to mix primary paint colors to match a given color."
 msgstr "Misturar as cores primárias para produzir a cor indicada."
 
 #. Help manual
@@ -5303,6 +5453,20 @@ msgstr ""
 "(mistura subtrativa)."
 
 #: activities/color_mix/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Change the color by moving the sliders on the torches or by clicking on "
+#| "the + and - buttons. Then click on the OK button to validate your answer."
+msgctxt "ActivityInfo|"
+msgid ""
+"Change the color by moving the sliders on the paint tubes or by clicking on "
+"the + and - buttons. Then click on the OK button to validate your answer."
+msgstr ""
+"Altere a cor movendo os controles deslizantes das lanternas ou clicando nos "
+"botões + e -. Depois clique no botão OK para conferir a sua resposta."
+
+#: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "Paints and inks absorb different colors of the light falling on it, "
@@ -5318,15 +5482,6 @@ msgstr ""
 "três cores primárias para fazer muitas novas cores. As cores primárias de "
 "pintura/tinta são ciano (um tom especial de azul), magenta (um tom especial "
 "de rosa) e amarelo."
-
-#: activities/color_mix/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid ""
-"Change the color by moving the sliders on the tubes of paint or by clicking "
-"on the + and - buttons. Then click on the OK button to validate your answer."
-msgstr ""
-"Altere a cor movendo os controles deslizantes dos tubos de tinta ou clicando "
-"nos botões + e -. Depois clique no botão OK para conferir a sua resposta."
 
 #: activities/color_mix/ColorMix.qml:88
 msgctxt "ColorMix|"
@@ -5405,6 +5560,15 @@ msgctxt "ActivityInfo|"
 msgid "Discover light color mixing."
 msgstr "Entenda a mistura de luzes coloridas."
 
+#. Help goal
+#: activities/color_mix_light/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mix primary colors to match the given color."
+msgctxt "ActivityInfo|"
+msgid "Learn to mix primary light colors to match a given color."
+msgstr "Misturar as cores primárias para produzir a cor indicada."
+
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -5416,24 +5580,35 @@ msgstr ""
 "(mistura aditiva)"
 
 #: activities/color_mix_light/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Change the color by moving the sliders on the torches or by clicking on "
+#| "the + and - buttons. Then click on the OK button to validate your answer."
+msgctxt "ActivityInfo|"
+msgid ""
+"Change the color by moving the sliders on the flashlights or by clicking on "
+"the + and - buttons. Then click on the OK button to validate your answer."
+msgstr ""
+"Altere a cor movendo os controles deslizantes das lanternas ou clicando nos "
+"botões + e -. Depois clique no botão OK para conferir a sua resposta."
+
+#: activities/color_mix_light/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Mixing light colors is just the opposite of mixing paint colors. The more "
+#| "light you add, the lighter the resulting color becomes. Primary colors of "
+#| "light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
-"light you add, the lighter the resulting color becomes. Primary colors of "
-"light are red, green and blue."
+"light you add, the lighter the resulting color becomes. The primary colors "
+"of light are red, green and blue."
 msgstr ""
 "A mistura de luzes coloridas funciona ao contrário da mistura de tintas "
 "coloridas. Quanto mais luz você adicionar mais clara será a cor resultante. "
 "As cores primárias da luz são vermelho, verde e azul."
-
-#: activities/color_mix_light/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid ""
-"Change the color by moving the sliders on the torches or by clicking on the "
-"+ and - buttons. Then click on the OK button to validate your answer."
-msgstr ""
-"Altere a cor movendo os controles deslizantes das lanternas ou clicando nos "
-"botões + e -. Depois clique no botão OK para conferir a sua resposta."
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -5449,8 +5624,11 @@ msgstr "Clique na cor certa."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
-msgid "This activity teaches you to recognize different colors."
+msgid "Practice recognizing different colors."
 msgstr "Essa atividade ensina a reconhecer cores diferentes."
 
 #. Help prerequisite
@@ -5769,18 +5947,34 @@ msgctxt "ActivityInfo|"
 msgid "Find the details"
 msgstr "Encontre os detalhes"
 
-# Help manual
+# Help title
+#. Help title
+#: activities/details/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop the shapes on their respective targets."
+msgstr "Arraste e solte as formas em seus respectivos alvos."
+
+#. Help goal
+#: activities/details/ActivityInfo.qml:23
+#: activities/paintings/ActivityInfo.qml:25
+msgctxt "ActivityInfo|"
+msgid "Develop observation and spatial visualization skills."
+msgstr ""
+
 #. Help manual
-#: activities/details/ActivityInfo.qml:25
+#: activities/details/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
-"Complete the puzzle by dragging each piece on the side to the matching space "
-"in the puzzle."
+"Find a picture detail in the sidebar, and drag it to the right spot on the "
+"picture."
 msgstr ""
-"Complete o quebra-cabeça arrastando cada peça ao lado para o espaço "
-"correspondente no quebra-cabeças."
+"Pegue as imagens ao lado e coloque-as nos pontos vermelhos, na ordem correta."
 
-#: activities/details/ActivityInfo.qml:26
+#: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "The images are from Wikimedia Commons."
 msgstr "As imagens são da Wikimedia Commons."
@@ -5918,14 +6112,20 @@ msgstr "Eletricidade digital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
-msgid "Create and simulate a digital electric schema."
+msgid "Create and simulate a digital logic circuit"
 msgstr "Crie e simule um esquema elétrico digital."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
-msgid "Create a digital electric schema with a real time simulation of it."
+msgid "Create a digital logic circuit and simulate it in real time."
 msgstr ""
 "Criar um esquema elétrico digital que funciona em um simulador em tempo real."
 
@@ -6134,11 +6334,18 @@ msgid "NOT A"
 msgstr "NOT A"
 
 #: activities/digital_electricity/components/One.qml:20
+#, fuzzy
+#| msgctxt "One|"
+#| msgid ""
+#| "Digital circuits work with only two states: 0 and 1. This allows to "
+#| "operate mathematical operations such as additions, subtractions... It is "
+#| "the basics of computer technics. In reality, 0 is often the "
+#| "representation of a voltage nearly equal to ground voltage and 1 is the "
+#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
-"Digital circuits work with only two states: 0 and 1. This allows to operate "
-"mathematical operations such as additions, subtractions... It is the basics "
-"of computer technics. In reality, 0 is often the representation of a voltage "
+"Digital circuits work with only two states: 0 and 1. It is the basics of "
+"computer technics. In reality, 0 is often the representation of a voltage "
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
@@ -6221,11 +6428,18 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
+#, fuzzy
+#| msgctxt "Zero|"
+#| msgid ""
+#| "Digital circuits work with only two states: 0 and 1. This allows to "
+#| "operate mathematical operations such as additions, subtractions... It is "
+#| "the basics of computer technics. In reality, 0 is often the "
+#| "representation of a voltage nearly equal to ground voltage and 1 is the "
+#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
-"Digital circuits work with only two states: 0 and 1. This allows to operate "
-"mathematical operations such as additions, subtractions... It is the basics "
-"of computer technics. In reality, 0 is often the representation of a voltage "
+"Digital circuits work with only two states: 0 and 1. It is the basics of "
+"computer technics. In reality, 0 is often the representation of a voltage "
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
@@ -6679,8 +6893,11 @@ msgstr "Ligue os pontos para desenhar as letras."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
-msgid "Learning how to draw letters in a funny way."
+msgid "Learn how to draw letters in a fun way."
 msgstr "Aprender a desenhar as letras de forma divertida."
 
 #. Help manual
@@ -6703,8 +6920,11 @@ msgstr "Ligue os pontos para desenhar os números de 0 a 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
-msgid "Learning how to draw numbers in a funny way."
+msgid "Learn how to draw numbers in a fun way."
 msgstr "Aprender a desenhar os números de forma divertida."
 
 #. Help manual
@@ -6725,13 +6945,15 @@ msgctxt "ActivityInfo|"
 msgid "Place the items in the best way to count them."
 msgstr "Posicione os itens da melhor maneira para contá-los."
 
+# Help title
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#: activities/numbers-odd-even/ActivityInfo.qml:20
-#: activities/planegame/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
-msgid "Numeration training."
-msgstr "Treinar numeração."
+msgid "Practice counting small quantities."
+msgstr "Pratique a subtração em equações."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6853,10 +7075,15 @@ msgstr "Mova o mouse ou toque a tela"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Move the mouse or touch the screen to erase the area and discover the "
+#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
-"Move the mouse or touch the screen to erase the area and discover the "
-"background."
+"Move the mouse or touch the screen to erase the blocks and discover the "
+"hidden picture."
 msgstr ""
 "Movimente o mouse ou toque a tela para apagar a área e descobrir o fundo."
 
@@ -6864,9 +7091,13 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
+#: activities/penalty/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
-msgid "Motor-coordination."
-msgstr "Coordenação motora."
+msgid "Develop motor coordination skills."
+msgstr "Coordenação motora fina."
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
@@ -6883,10 +7114,15 @@ msgstr "Duplo toque ou duplo clique"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Double tap or double click to erase the area and discover the background "
+#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
-"Double tap or double click to erase the area and discover the background "
-"image."
+"Double tap or double click to erase the blocks and discover the hidden "
+"picture."
 msgstr ""
 "Toque ou clique duas vezes para apagar a área e descobrir a imagem de fundo."
 
@@ -6905,8 +7141,11 @@ msgstr "Clique ou toque"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
-msgid "Click or tap to erase the area and discover the background."
+msgid "Click or tap to erase the blocks and discover the hidden picture."
 msgstr "Clique ou toque para apagar a área e descobrir o fundo."
 
 #. Help manual
@@ -9150,9 +9389,12 @@ msgstr "Indique os parentes"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
-msgid "Click on a pair corresponding to the given relation."
-msgstr "Clique no par que corresponda ao relacionamento apresentado."
+msgid "Select two people which have the given relationship."
+msgstr "Selecionar todas as palavras que contenham a letra indicada."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -9162,12 +9404,19 @@ msgstr "Leitura, movimento e clique do mouse."
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A family tree is shown, with some instructions.\n"
+#| "The circles are linked with lines to mark the relations. Married couples "
+#| "are marked with a ring on the link.\n"
+#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
-"The circles are linked with lines to mark the relations. Married couples are "
-"marked with a ring on the link.\n"
-"Click on a pair of family members which corresponds to the given relation."
+"The circles are linked with lines to mark the relationships. Married couples "
+"are marked with a ring on the link.\n"
+"Click on a pair of family members which have the given relationship."
 msgstr ""
 "Uma árvore genealógica é exibida, com algumas instruções.\n"
 "Os círculos estão ligados por linhas para marcar as relações. Casais casados "
@@ -9189,9 +9438,10 @@ msgstr "Mova cada item para recriar a imagem."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
+#: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Arrange the pieces in the right order."
-msgstr "Arrange as peças na ordem correta."
+msgid "Develop anticipation and spatial visualization skills."
+msgstr ""
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9420,18 +9670,18 @@ msgstr "Mande a bola para o gol."
 #. Help goal
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Kick the ball behind the goal keeper on the right."
-msgstr "Chutar a bola para trás do goleiro à direita."
+msgid "Understand direction and speed."
+msgstr ""
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
-"Drag a line from the ball to set its speed and direction, and release it to "
-"kick the ball."
+"Press the ball, and drag behind it to draw the aiming line. The longer the "
+"line, the more powerful the kick. When you release the line, the ball will "
+"follow its direction. You score a goal when the ball reaches the other edge "
+"of the field."
 msgstr ""
-"Arraste uma linha a partir da bola, para definir sua velocidade e direção, e "
-"solte a linha para chutar a bola."
 
 # Help title
 #. Activity title
@@ -9442,14 +9692,34 @@ msgstr "Crie as frações"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
-msgid "A shape split in equal parts is displayed on screen."
-msgstr "É exibida na tela uma figura dividida em partes iguais."
+msgid "Select the appropriate number of parts to represent the given fraction."
+msgstr ""
+"Selecione o número apropriado de partes, conforme descrito nas instruções."
 
-#: activities/fractions_create/ActivityInfo.qml:18
+#. Help goal
+#: activities/fractions_create/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to represent a quantity of objects."
+msgctxt "ActivityInfo|"
+msgid "Learn to represent a given fraction of a shape."
+msgstr "Aprender a representar uma quantidade de objetos."
+
+#. Help manual
+#: activities/fractions_create/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
-"Select the appropriate number of parts as described in the instructions."
+"A shape split in equal parts is displayed. Select the appropriate number of "
+"parts to represent the given fraction."
 msgstr ""
 "Selecione o número apropriado de partes, conforme descrito nas instruções."
 
@@ -9784,6 +10054,26 @@ msgctxt "ActivityInfo|"
 msgid "Find the correct numerator and denominator of the represented fraction."
 msgstr "Encontre o numerador e o denominador corretos da fração representada."
 
+#. Help goal
+#: activities/fractions_find/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click on a pair corresponding to the given relation."
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to write a fraction corresponding to a given fractional representation."
+msgstr "Clique no par que corresponda ao relacionamento apresentado."
+
+#. Help manual
+#: activities/fractions_find/ActivityInfo.qml:22
+msgctxt "ActivityInfo|"
+msgid ""
+"Write the fraction corresponding to the fractional representation: Count the "
+"total number of parts of the represented shape, and set it as the "
+"denominator. Then count the number of selected parts, and set it as the "
+"numerator."
+msgstr ""
+
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
 msgid "Find numerator (with a pie)."
@@ -10016,19 +10306,32 @@ msgstr "Localize a região"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
-msgid "Drag and Drop the regions to complete the country maps."
+msgid "Place the regions on the country maps."
 msgstr "Arraste e solte as regiões para completar os mapas dos países."
 
+#. Help goal
+#: activities/geo-country/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid "Learn to locate and place the regions of countries."
+msgstr ""
+
 #. Help manual
-#: activities/geo-country/ActivityInfo.qml:26
+#: activities/geo-country/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Drag and drop the map pieces to their correct locations to complete the "
+#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
-"Drag and drop different regions of the country to their correct locations to "
-"complete the map."
+"Drag and drop the regions to their correct location to complete the map."
 msgstr ""
-"Arraste e solte diferentes regiões do país para suas posições corretas para "
-"completar o mapa."
+"Arraste e solte as peças do mapa para suas posições corretas para completar "
+"o mapa.."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -12808,18 +13111,29 @@ msgctxt "ActivityInfo|"
 msgid "Locate the countries"
 msgstr "Localize os países"
 
-# Help title
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
-msgid "Drag and Drop the items to complete the map."
-msgstr "Arraste e solte os itens para completar o mapa."
+msgid "Place the continents and countries on the world map."
+msgstr ""
 
-#. Help manual
-#: activities/geography/ActivityInfo.qml:26
+#. Help goal
+#: activities/geography/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
-"Drag and drop the map pieces to their correct locations to complete the map."
+"Learn to locate and place the continents and many countries on the world map."
+msgstr ""
+
+#. Help manual
+#: activities/geography/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Drag and drop the map pieces to their correct locations to complete the "
+#| "map."
+msgctxt "ActivityInfo|"
+msgid ""
+"Drag and drop the map pieces to their correct location to complete the map."
 msgstr ""
 "Arraste e solte as peças do mapa para suas posições corretas para completar "
 "o mapa.."
@@ -13933,10 +14247,7 @@ msgid "Simple letters"
 msgstr "Letras cadentes"
 
 #. Help title
-#. ----------
-#. Help manual
 #: activities/gletters/ActivityInfo.qml:17
-#: activities/gletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters before they reach the ground."
 msgstr "Digite a letra que está caindo antes que ela atinja o chão."
@@ -13944,8 +14255,17 @@ msgstr "Digite a letra que está caindo antes que ela atinja o chão."
 #. Help goal
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Letter association between the screen and the keyboard."
-msgstr "Reconhecer, no teclado, as letras que aparecem na tela."
+msgid "Match letters on the keyboard with letters on the screen."
+msgstr ""
+
+#. Help manual
+#: activities/gletters/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Type the falling letters before they reach the ground."
+msgctxt "ActivityInfo|"
+msgid "Type the falling letters on the keyboard before they reach the ground."
+msgstr "Digite a letra que está caindo antes que ela atinja o chão."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -14667,11 +14987,9 @@ msgstr "Colora o grafo para que não existam dois nós vizinhos com a mesma cor.
 #: activities/graph-coloring/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
-"Learn to distinguish between different colors/shapes and learn about "
+"Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
 msgstr ""
-"Aprender a distinguir as diferentes cores/formas e conhecer posições "
-"relativas."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -14813,10 +15131,15 @@ msgstr "Aprender a calcular usando as quatro operações."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Being able to calculate using additions, subtractions, multiplications "
+#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
-"Being able to calculate using additions, subtractions, multiplications and "
-"divisions."
+"Being able to calculate using addition, subtraction, multiplication and "
+"division."
 msgstr ""
 "Saber calcular usando as operações de adição, subtração, multiplicação e "
 "divisão."
@@ -14911,18 +15234,18 @@ msgstr "Descubraconta"
 #. Help title
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
-msgid ""
-"Guess the algebraic expression and drag the tiles to get a result equal to "
-"the Guesscount."
+msgid "Find the operations to get the required result."
 msgstr ""
-"Descubra a expressão algébrica e arraste as peças para obter o resultado "
-"igual ao da Descubraconta."
 
+# Help title
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
-msgid "Intuition and practice of algebraic-like calculations."
-msgstr "Intuição e prática de cálculos algébricos."
+msgid "Practice decomposed calculation."
+msgstr "Praticar multiplicações."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14932,10 +15255,15 @@ msgstr "Conhecimento de operações aritméticas."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
+#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
-"Drag the appropriate numbers and the operators to the boxes to obtain the "
-"number to guess in the instruction."
+"Drag the numbers and operators to the boxes to obtain the number given in "
+"the instructions."
 msgstr ""
 "Arraste os números e operadores apropriados às caixas, para obter o "
 "resultado indicado na instrução."
@@ -15008,11 +15336,15 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Ajude o Tux a escapar da caverna, encontrando o número escondido."
 
+# Help title
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
-msgid "Numbers."
-msgstr "Números."
+msgid "Practice comparing numbers."
+msgstr "Pratique a adição de números."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15116,8 +15448,8 @@ msgstr "Adivinhe as letras de uma palavra."
 #. Help goal
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
-msgid "This is a good exercise to improve reading and spelling skills."
-msgstr "Melhorar as habilidades de leitura e ortografia."
+msgid "Improve your spelling and vocabulary."
+msgstr ""
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15186,22 +15518,31 @@ msgstr "Torre de Hanói Simplificada"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
-msgid "Reproduce the given tower."
-msgstr "Reproduza a torre apresentada."
+msgid "Copy the tower on the right-hand side onto the empty peg."
+msgstr "Reproduzir a torre da direita no espaço vazio."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
+#: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Reproduce the tower on the right in the empty area."
-msgstr "Reproduzir a torre da direita no espaço vazio."
+msgid "Develop strategic thinking."
+msgstr ""
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Drag and Drop one top piece at a time, from one tower to another, to "
+#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
-"Drag and Drop one top piece at a time, from one tower to another, to "
-"reproduce the tower on the right in the empty area."
+"Drag and drop one top disc at a time, from one tower to another, to "
+"reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
 "Arraste e solte as peças superiores de uma torre para a outra, para "
 "reproduzir a torre da direita no espaço vazio."
@@ -15219,35 +15560,25 @@ msgstr "Torre de Hanói"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
-msgid "Move the tower to the right side."
+msgid "Move the tower from the left-hand side onto the right-side peg."
 msgstr "Mova a torre para o lado direito."
 
-#. Help goal
-#: activities/hanoi_real/ActivityInfo.qml:20
-msgctxt "ActivityInfo|"
-msgid ""
-"The object of the game is to move the entire stack to another peg, obeying "
-"the following rules:\n"
-"    only one disc may be moved at a time\n"
-"    no disc may be placed atop a smaller disc\n"
-msgstr ""
-"O objetivo do jogo é mover a pilha inteira de um pino para o outro, "
-"obedecendo às seguintes regras:\n"
-"    somente um disco pode ser movido de cada vez;\n"
-"    um disco não pode ser colocado sobre um menor do que ele.\n"
-
 #. Help manual
-#: activities/hanoi_real/ActivityInfo.qml:26
+#: activities/hanoi_real/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
-"Drag and drop the top pieces only from one peg to another, to reproduce the "
-"initial left side tower on the right peg."
+"Drag and drop one top disc at a time, from one tower to another, to "
+"reproduce the tower on the left-hand side onto the right-hand side peg. The "
+"discs can move back and forth freely on the pegs, following two rules: only "
+"one disc can be moved at a time, and a disc can never be placed on a smaller "
+"disc."
 msgstr ""
-"Arraste e solte as peças superiores de um pino para outro, para reproduzir a "
-"torre da esquerda no pino à direita."
 
-#: activities/hanoi_real/ActivityInfo.qml:27
+#: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
@@ -15323,9 +15654,12 @@ msgstr "Arraste e solte cada item em seu nome."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
-msgid "Vocabulary and reading."
-msgstr "Vocabulário e leitura."
+msgid "Enrich your vocabulary and practice reading."
+msgstr "Enriqueça seu vocabulário"
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16144,21 +16478,30 @@ msgstr "transportes"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
-msgid "Learn additions"
+msgid "Learn addition"
 msgstr "Aprender adições"
 
 # Help prerequisite
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
-msgid "Learn additions with small numbers."
+msgid "Learn addition with small numbers."
 msgstr "Aprender adições com números pequenos."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
-msgid "Learn additions by counting their result."
+msgid "Learn addition by adding quantities."
 msgstr "Aprender adições contando seus resultados."
 
 #. Help manual
@@ -16199,30 +16542,35 @@ msgctxt "ActivityInfo|"
 msgid "Learn decimal numbers"
 msgstr "Aprender números decimais"
 
-# Help prerequisite
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
-msgid "Learn decimals with small numbers."
-msgstr "Aprender decimais com números pequenos."
+msgid "Represent the given decimal numbers."
+msgstr "Aprender números decimais"
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
-msgid ""
-"Learn decimals by counting how many squares are needed to represent the "
-"decimal number."
+msgid "Associate the decimal form of a number with its graphic representation."
 msgstr ""
-"Aprenda decimais contando quantos quadrados são necessários para representar "
-"o número decimal."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A decimal number is displayed. Drag the arrow to select a part of the "
+#| "bar, and drag the selected part of the bar to the empty area. Repeat "
+#| "these steps until the number of dropped bars corresponds to the displayed "
+#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"A decimal number is displayed. Drag the arrow to select a part of the bar, "
-"and drag the selected part of the bar to the empty area. Repeat these steps "
-"until the number of dropped bars corresponds to the displayed decimal "
+"A decimal number is displayed. Drag the arrow to select a part of the unit "
+"bar, and drag the selected part of the bar to the empty area. Repeat these "
+"steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
 "Um número decimal é exibido. Arraste a seta para selecionar parte da barra "
@@ -16368,34 +16716,53 @@ msgstr "Entre 1 e 5."
 # Help prerequisite
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
-msgid "Additions with decimal numbers"
+msgid "Addition with decimal numbers"
 msgstr "Adições com números decimais."
 
 # Help prerequisite
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
-msgid "Learn additions with decimal numbers."
+msgid "Learn addition with decimal numbers."
 msgstr "Aprender adições com números decimais."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn additions with decimal numbers by counting how many squares are "
+#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
-"Learn additions with decimal numbers by counting how many squares are needed "
-"to represent the result."
+"Learn addition with decimal numbers by manipulating their visual "
+"representation."
 msgstr ""
 "Aprenda adicções com números decimais contando quantos quadrados são "
 "necessários para representar o resultado."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "An addition with two decimal numbers is displayed. Drag the arrow to "
+#| "select a part of the bar, and drag the selected part of the bar to the "
+#| "empty area. Repeat these steps until the number of dropped bars "
+#| "corresponds to the result of the addition, and click on the OK button to "
+#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
-"a part of the bar, and drag the selected part of the bar to the empty area. "
-"Repeat these steps until the number of dropped bars corresponds to the "
+"a part of the unit bar, and drag the selected part of the bar to the empty "
+"area. Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
 "Uma adição com dois números decimais é exibida. Arraste a seta para "
@@ -16438,23 +16805,34 @@ msgstr "Adição de números decimais até 5."
 # Help prerequisite
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Subtractions with decimal numbers"
 msgctxt "ActivityInfo|"
-msgid "Subtractions with decimal numbers"
+msgid "Subtraction with decimal numbers"
 msgstr "Subtrações com números decimais"
 
 # Help prerequisite
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
-msgid "Learn subtractions with decimal numbers."
+msgid "Learn subtraction with decimal numbers."
 msgstr "Aprender subtrações com números decimais."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn subtractions with decimal numbers by counting how many squares need "
+#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
-"Learn subtractions with decimal numbers by counting how many squares need to "
-"be subtracted to represent the result."
+"Learn subtraction with decimal numbers by manipulating their visual "
+"representation."
 msgstr ""
 "Aprenda subtrações com números decimais contando quantos quadrados devem ser "
 "subtraídos para representar o resultado."
@@ -16519,28 +16897,44 @@ msgstr "Habilitar vozes"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
-msgid "Count and color the circles"
-msgstr "Contar e colorir os círculos"
+msgid "Learn digits"
+msgstr "Aprender adições"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
-msgid "Learn digits from 0 to 9."
-msgstr "Aprender os números de 0 a 9."
+msgid "Represent the number corresponding to the given digit."
+msgstr "Clique no par que corresponda ao relacionamento apresentado."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
-msgid "Learn digits by counting their corresponding value."
-msgstr "Aprenda os números contando o seu valor correspondente."
+msgid ""
+"Learn the numbers represented by a single digit and the corresponding "
+"quantities."
+msgstr "Compare os números e selecione o sinal correspondente."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "A digit is displayed on the screen. Fill the corresponding number of "
+#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
-"A digit is displayed on the screen. Fill the corresponding number of circles "
-"and validate your answer."
+"A digit is displayed on the screen. Fill the number of circles corresponding "
+"to the number represented by the digit and validate your answer."
 msgstr ""
 "Um número é exibido na tela. Preencha o número correspondente de círculos e "
 "confira a sua resposta."
@@ -16671,21 +17065,30 @@ msgstr "Entre 20 e 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
-msgid "Learn subtractions"
+msgid "Learn subtraction"
 msgstr "Aprender subtrações"
 
 # Help prerequisite
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
-msgid "Learn subtractions with small numbers."
+msgid "Learn subtraction with small numbers."
 msgstr "Aprender subtrações com números pequenos."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
-msgid "Learn subtractions by counting their result."
+msgid "Learn subtraction by counting their result."
 msgstr "Aprender subtrações contando seus resultados."
 
 #. Help manual
@@ -16845,19 +17248,18 @@ msgstr "Letra de uma palavra"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
-msgid ""
-"A letter is written. Some words are displayed, and you must find the word or "
-"the words in which this letter appears."
-msgstr ""
-"Uma letra é escrita. Algumas palavras serão apresentadas e você deverá "
-"encontrar a palavra ou as palavras onde essa letra apareça."
+msgid "Find the words with the given letter."
+msgstr "Selecionar todas as palavras que contenham a letra indicada."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Select all the words which contain the given letter."
-msgstr "Selecionar todas as palavras que contenham a letra indicada."
+msgid "Train to find a given letter in words."
+msgstr ""
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -16907,13 +17309,19 @@ msgstr "Apague as luzes"
 
 # Proposta de revisão - Separar o título do objetivo.
 #. Help title
-#. ----------
-#. Help goal
 #: activities/lightsoff/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The goal is to turn off all the lights."
+msgctxt "ActivityInfo|"
+msgid "Turn off all the lights."
+msgstr "O objetivo é apagar todas as luzes."
+
+#. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "The goal is to turn off all the lights."
-msgstr "O objetivo é apagar todas as luzes."
+msgid "Develop anticipation, strategy and spatial visualization skills."
+msgstr ""
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -16991,11 +17399,21 @@ msgstr "A história de Louis Braille"
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid "Review the major dates of the inventor of the braille system."
-msgstr "Revise as principais datas do inventor do Sistema Braille."
+msgid ""
+"Read about some key events in the life of the braille system inventor, and "
+"remember their chronological order."
+msgstr ""
+
+#. Help goal
+#: activities/louis-braille/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid ""
+"Remember the order of an event sequence. Learn about the life of Louis "
+"Braille."
+msgstr ""
 
 #. Help manual
-#: activities/louis-braille/ActivityInfo.qml:22
+#: activities/louis-braille/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the history of Louis Braille, his biography, and the invention of the "
@@ -17007,12 +17425,12 @@ msgstr ""
 "se nas páginas da história. Ao final, organize a sequência na ordem "
 "cronológica."
 
-#: activities/louis-braille/ActivityInfo.qml:25
+#: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
 msgstr "Espaço ou Enter: selecionar um item e alterar sua posição"
 
-#: activities/louis-braille/ActivityInfo.qml:26
+#: activities/louis-braille/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Louis Braille Video: &lt;https://www.youtube.com/watch?v=9bdfC2j_4x4&gt;"
@@ -17135,16 +17553,22 @@ msgstr "Calcular quantas estrelas estão debaixo do chapéu mágico."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
-msgid "Learn subtractions."
+msgid "Learn subtraction."
 msgstr "Aprender subtrações."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
-msgid "Subtractions."
+msgid "Subtraction."
 msgstr "Subtrações."
 
 #. Help manual
@@ -17222,16 +17646,22 @@ msgstr "Contar quantas estrelas estão debaixo do chapéu mágico."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
-msgid "Learn additions."
+msgid "Learn addition."
 msgstr "Aprender adições."
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Additions."
 msgctxt "ActivityInfo|"
-msgid "Additions."
+msgid "Addition."
 msgstr "Adições."
 
 #. Help manual
@@ -17301,16 +17731,23 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze."
 msgstr "Ajude o Tux a sair desse labirinto."
 
+#. Help goal
+#: activities/maze/ActivityInfo.qml:20
+#: activities/mazerelative/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Develop spatial visualization and pathfinding skills."
+msgstr ""
+
 #. Help manual
-#: activities/maze/ActivityInfo.qml:22
-#: activities/mazerelative/ActivityInfo.qml:22
+#: activities/maze/ActivityInfo.qml:23
+#: activities/mazerelative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the arrow keys or swipe the screen to move Tux to the door."
 msgstr ""
 "Use as teclas direcionais ou deslize o dedo pela tela de toque para mover o "
 "Tux até a porta."
 
-#: activities/maze/ActivityInfo.qml:23
+#: activities/maze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In first levels, Tux walks comfortably, one step on each move request, "
@@ -17319,9 +17756,9 @@ msgstr ""
 "Nos primeiros níveis, o Tux caminha tranquilamente pelo labirinto, um passo "
 "de cada vez."
 
-#: activities/maze/ActivityInfo.qml:24
-#: activities/mazeinvisible/ActivityInfo.qml:24
-#: activities/mazerelative/ActivityInfo.qml:25
+#: activities/maze/ActivityInfo.qml:25
+#: activities/mazeinvisible/ActivityInfo.qml:25
+#: activities/mazerelative/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "For larger mazes, there is a special walking mode, called \"run-fast-mode\". "
@@ -17333,7 +17770,7 @@ msgstr ""
 "automaticamente, até chegar a um cruzamento em que tenha que decidir qual o "
 "próximo passo a seguir."
 
-#: activities/maze/ActivityInfo.qml:25
+#: activities/maze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see whether this mode is enabled or not, by looking at Tux's feet: "
@@ -17344,9 +17781,9 @@ msgstr ""
 "o Tux estiver descalço, o \"modo-de-corrida\" está desativado. Se estiver "
 "calçando tênis vermelhos, o \"modo-de-corrida\" está ativado."
 
-#: activities/maze/ActivityInfo.qml:26
-#: activities/mazeinvisible/ActivityInfo.qml:26
-#: activities/mazerelative/ActivityInfo.qml:27
+#: activities/maze/ActivityInfo.qml:27
+#: activities/mazeinvisible/ActivityInfo.qml:27
+#: activities/mazerelative/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "At higher levels, run-fast-mode will be enabled automatically. If you want "
@@ -17380,8 +17817,14 @@ msgctxt "ActivityInfo|"
 msgid "Guide Tux out of the invisible maze."
 msgstr "Guie o Tux para fora do labirinto invisível."
 
+#. Help goal
+#: activities/mazeinvisible/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Develop spatial visualization, pathfinding and visual memory skills."
+msgstr ""
+
 #. Help manual
-#: activities/mazeinvisible/ActivityInfo.qml:22
+#: activities/mazeinvisible/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow keys or swipe the screen to move Tux to the door. Use the maze "
@@ -17395,8 +17838,8 @@ msgstr ""
 "indicação da sua posição, como em um mapa. Você não consegue mover o Tux no "
 "modo visível."
 
-#: activities/mazeinvisible/ActivityInfo.qml:23
-#: activities/mazerelative/ActivityInfo.qml:24
+#: activities/mazeinvisible/ActivityInfo.qml:24
+#: activities/mazerelative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "At the first levels, Tux walks comfortably, one step on each move request, "
@@ -17405,8 +17848,8 @@ msgstr ""
 "Nos primeiros níveis, o Tux caminha tranquilamente pelo labirinto, um passo "
 "de cada vez."
 
-#: activities/mazeinvisible/ActivityInfo.qml:25
-#: activities/mazerelative/ActivityInfo.qml:26
+#: activities/mazeinvisible/ActivityInfo.qml:26
+#: activities/mazerelative/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "You can see whether this mode is enabled or not, by looking at Tux's feet: "
@@ -17417,7 +17860,7 @@ msgstr ""
 "o Tux estiver descalço, o \"modo-de-corrida\" está desativado. Se estiver "
 "calçando sapatos vermelhos, o \"modo-de-corrida\" está ativo."
 
-#: activities/mazeinvisible/ActivityInfo.qml:29
+#: activities/mazeinvisible/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: switch between invisible and visible modes"
 msgstr "Espaço: alternar entre os modos visível e invisível"
@@ -17434,7 +17877,7 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze (moves are relative)."
 msgstr "Ajude o Tux a sair deste labirinto (os movimentos são relativos)."
 
-#: activities/mazerelative/ActivityInfo.qml:23
+#: activities/mazerelative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In this maze, the moves are relative (first person). Left and right are used "
@@ -17444,17 +17887,17 @@ msgstr ""
 "para a esquerda e direita são usadas para virar e a tecla para cima é usada "
 "para avançar."
 
-#: activities/mazerelative/ActivityInfo.qml:29
+#: activities/mazerelative/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: turn left and right"
 msgstr "Setas para a esquerda e para a direita: virar à esquerda ou à direita"
 
-#: activities/mazerelative/ActivityInfo.qml:30
+#: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Down arrow: turn backward"
 msgstr "Seta para baixo: virar para trás"
 
-#: activities/mazerelative/ActivityInfo.qml:31
+#: activities/mazerelative/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Up arrow: move forward"
 msgstr "Seta para cima: mover para frente"
@@ -17532,8 +17975,11 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
-msgid "Learning lowercase and uppercase letters, memory."
+msgid "Learn lowercase and uppercase letters."
 msgstr "Aprender letras maiúsculas e minúsculas, trabalhar a memória."
 
 #. Help prerequisite
@@ -17654,11 +18100,15 @@ msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a number with a picture."
 msgstr "Vire as cartas para encontrar o número correspondente à figura."
 
+# Help title
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
-msgid "Numeration training, memory."
-msgstr "Treinar numeração e a memória."
+msgid "Practice numeration."
+msgstr "Praticar subtrações."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -17728,15 +18178,21 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
-msgid "Practice additions, subtractions, multiplications, divisions."
+msgid "Practice addition, subtraction, multiplication, division."
 msgstr "Praticar adições, subtrações, multiplicações e divisões."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
-msgid "Additions, subtractions, multiplications, divisions."
+msgid "Addition, subtraction, multiplication, division."
 msgstr "Adições, subtrações, multiplicações, divisões."
 
 #. Help manual
@@ -17879,15 +18335,21 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
-msgid "Practice additions and subtractions."
+msgid "Practice addition and subtraction."
 msgstr "Praticar adições e subtrações."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
-msgid "Additions and subtractions."
+msgid "Addition and subtraction."
 msgstr "Adições e subtrações."
 
 #. Help manual
@@ -17935,8 +18397,11 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
-msgid "Practice additions."
+msgid "Practice addition."
 msgstr "Praticar adições."
 
 #. Help manual
@@ -18041,14 +18506,20 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
-msgid "Practice divisions."
+msgid "Practice division."
 msgstr "Praticar divisões."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Divisions."
 msgctxt "ActivityInfo|"
-msgid "Divisions."
+msgid "Division."
 msgstr "Divisões."
 
 #. Help manual
@@ -18136,8 +18607,11 @@ msgstr "Vire as cartas para encontrar a divisão associada ao seu resultado."
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Divisions"
 msgctxt "ActivityInfo|"
-msgid "Divisions"
+msgid "Division"
 msgstr "Divisões"
 
 #. Activity title
@@ -18159,8 +18633,11 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
-msgid "Practice subtractions."
+msgid "Practice subtraction."
 msgstr "Praticar subtrações."
 
 #. Help manual
@@ -18266,15 +18743,21 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
-msgid "Practice multiplications and divisions."
+msgid "Practice multiplication and division."
 msgstr "Praticar multiplicações e divisões."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
-msgid "Multiplications, divisions."
+msgid "Multiplication, division."
 msgstr "Multiplicações e divisões."
 
 #. Help manual
@@ -18323,15 +18806,21 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
-msgid "Practice multiplications."
+msgid "Practice multiplication."
 msgstr "Praticar multiplicações."
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
-msgid "Multiplications."
+msgid "Multiplication."
 msgstr "Multiplicações."
 
 #. Help manual
@@ -18494,9 +18983,12 @@ msgstr ""
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
-msgid "Train your memory and remove all the cards."
-msgstr "Treinar sua memória e remover todas as cartas."
+msgid "Train your visual memory."
+msgstr "Treinar sua memória auditiva."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -18529,11 +19021,15 @@ msgstr ""
 "Vire as cartas para encontrar o numeral correspondente ao seu nome por "
 "extenso."
 
+# Help title
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
-msgid "Reading numbers, memory."
-msgstr "Treinar a leitura de números e a memória."
+msgid "Practice reading numbers."
+msgstr "Pratique a adição de números."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -19301,9 +19797,12 @@ msgstr "Encontre a letra desaparecida para completar a palavra."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
-msgid "Training reading skills."
-msgstr "Treinar a habilidade de leitura."
+msgid "Learn to spell words."
+msgstr "Aprender a ordem alfabética."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19359,26 +19858,21 @@ msgctxt "ActivityInfo|"
 msgid "Practice money usage."
 msgstr "Pratique o uso do dinheiro."
 
-# Proposta de revisão - Objetivo se parece com o manual.
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
+#: activities/money_back/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
-msgid ""
-"You must buy different items and give the exact price. At higher levels, "
-"several items are displayed, and you must first calculate the total price."
-msgstr ""
-"Você deve comprar os diferentes itens e pagar o valor exato. Nos níveis mais "
-"altos, diversos itens são exibidos e você deve, primeiro, calcular o preço "
-"total."
+msgid "Practice counting and money usage."
+msgstr "Pratique o uso do dinheiro."
 
-#. Help goal
-#. ----------
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
 #: activities/money_back/ActivityInfo.qml:22
 #: activities/money_back_cents/ActivityInfo.qml:22
 #: activities/money_cents/ActivityInfo.qml:22
-#: activities/number_sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Can count."
 msgstr "Saber contar."
@@ -19468,28 +19962,19 @@ msgctxt "ActivityInfo|"
 msgid "Practice money usage by giving Tux his change."
 msgstr "Aprenda a usar o dinheiro, devolvendo o troco do Tux."
 
-# Proposta de revisão - Objetivo se parece com o manual.
-#. Help goal
-#: activities/money_back/ActivityInfo.qml:20
-#: activities/money_back_cents/ActivityInfo.qml:20
-msgctxt "ActivityInfo|"
-msgid ""
-"Tux bought different items from you and shows you his money. You must give "
-"him back his change. At higher levels, several items are displayed, and you "
-"must first calculate the total price."
-msgstr ""
-"O Tux comprou várias coisas e lhe deu o dinheiro. Você deve devolver o seu "
-"troco. Nos níveis mais altos, vários itens são exibidos e você deve, antes, "
-"calcular o preço total."
-
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#: activities/money_cents/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
+#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
-"Click on the coins or on the notes at the bottom of the screen to pay. If "
-"you want to remove a coin or a note, click on it on the upper screen area."
+"Click on the coins or on the notes at the bottom of the screen to give Tux "
+"his change. If you want to remove a coin or a note, click on it on the upper "
+"area of the screen."
 msgstr ""
 "Clique nas moedas ou nas cédulas na parte inferior da tela para pagar. Se "
 "quiser remover uma moeda ou uma cédula, clique nelas na parte superior da "
@@ -19500,6 +19985,16 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change, including cents"
 msgstr "Devolva o troco do Tux, incluindo os centavos"
+
+#. Help goal
+#: activities/money_back_cents/ActivityInfo.qml:20
+#: activities/money_cents/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice money usage including cents."
+msgctxt "ActivityInfo|"
+msgid "Practice counting and money usage, including cents."
+msgstr "Aprenda a usar o dinheiro, incluindo os centavos."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -19513,17 +20008,16 @@ msgctxt "ActivityInfo|"
 msgid "Practice money usage including cents."
 msgstr "Aprenda a usar o dinheiro, incluindo os centavos."
 
-# Proposta de revisão - Objetivo se parece com o manual.
-#. Help goal
-#: activities/money_cents/ActivityInfo.qml:20
+#. Help manual
+#: activities/money_cents/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
-"You must buy the different items and give the exact price. At higher levels, "
-"several items are displayed, and you must first calculate the total price."
+"Click on the coins or on the notes at the bottom of the screen to pay. If "
+"you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Você deve comprar os diferentes itens e pagar o valor exato. Nos níveis mais "
-"altos, diversos itens são exibidos e você deve, primeiro, calcular o preço "
-"total."
+"Clique nas moedas ou nas cédulas na parte inferior da tela para pagar. Se "
+"quiser remover uma moeda ou uma cédula, clique nelas na parte superior da "
+"tela."
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
@@ -19533,15 +20027,23 @@ msgstr "Descubra o código Morse internacional"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
-msgid "Learn how to communicate with the International Morse code."
+msgid "Communicate with the International Morse code."
 msgstr "Aprenda a se comunicar usando o código Morse internacional."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "You have to send and receive letters and digits in International Morse "
+#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
-"You have to send and receive letters and digits in International Morse code."
+"Learn how to send and receive messages using the International Morse code."
 msgstr ""
 "Você tem que enviar e receber letras e dígitos em código Morse internacional."
 
@@ -19553,12 +20055,19 @@ msgstr "Conhecimento de letras e dígitos."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "You are either asked to send a message in Morse code or convert the "
+#| "received Morse code message to letters or digits. To learn the Morse "
+#| "code, you can have a look at the translation map which contains the code "
+#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
-"Morse code message to letters or digits. To learn the Morse code, you can "
-"have a look at the translation map which contains the code for all the "
-"letters and digits."
+"Morse code message to letters or digits. To learn Morse code, you can click "
+"on the Morse key icon to have a look at the translation map which contains "
+"the code for all the letters and digits."
 msgstr ""
 "Será pedido a você para enviar uma mensagem em código Morse ou para "
 "converter uma mensagem recebida nesse código para letras e dígitos. Para "
@@ -19605,13 +20114,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Quando estiver pronto, clique no Tux e nós conversaremos em código Morse."
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:351
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Valor Morse: %1"
 
-#: activities/morse_code/MorseCode.qml:353
+#: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19696,8 +20205,17 @@ msgctxt "ActivityInfo|"
 msgid "Put each item at the same place as in the given example."
 msgstr "Colocar cada item no mesmo lugar do exemplo apresentado."
 
+#. Help goal
+#: activities/mosaic/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Training reading skills."
+msgctxt "ActivityInfo|"
+msgid "Train your observation and matching skills."
+msgstr "Treinar a habilidade de leitura."
+
 #. Help manual
-#: activities/mosaic/ActivityInfo.qml:22
+#: activities/mosaic/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
@@ -19706,17 +20224,17 @@ msgstr ""
 "Primeiro, selecione um item da lista e, depois, clique em um ponto do "
 "mosaico para colocar o item."
 
-#: activities/mosaic/ActivityInfo.qml:24
+#: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside an area"
 msgstr "Setas: navegar dentro de uma área"
 
-#: activities/mosaic/ActivityInfo.qml:25
+#: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
 msgstr "Espaço ou Enter: selecionar ou colocar um item"
 
-#: activities/mosaic/ActivityInfo.qml:26
+#: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
 msgstr "Tab: navegar entre a lista de itens e o mosaico"
@@ -19747,25 +20265,31 @@ msgctxt "ActivityInfo|"
 msgid "Nine men's morris (against Tux)"
 msgstr "Trilha (contra o Tux)"
 
-#. Help goal
-#: activities/nine_men_morris/ActivityInfo.qml:19
+#. Help title
+#: activities/nine_men_morris/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
-msgid ""
-"Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
-"pieces left or can not move anymore."
+msgid "Play the game Nine men's morris against Tux."
+msgstr "Trilha (contra o Tux)"
+
+#. Help goal
+#: activities/nine_men_morris/ActivityInfo.qml:20
+#: activities/nine_men_morris_2players/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Develop strategic and spatial visualization skills."
 msgstr ""
-"Formar trilhas (linhas com 3 peças) para remover as peças do Tux até ele "
-"ficar com apenas duas peças ou sem nenhuma jogada válida."
 
 #. Help manual
-#: activities/nine_men_morris/ActivityInfo.qml:22
+#: activities/nine_men_morris/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
-"move your pieces."
+"move your pieces. If you have only 3 pieces left, you can make them fly to "
+"any vacant spot. A player wins when the other player can't move any piece or "
+"has only 2 pieces left."
 msgstr ""
-"Jogue contra o Tux. Primeiro, vocês revezam para posicionar as nove peças e, "
-"depois, fazem a movimentação das peças alternadamente."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19860,25 +20384,24 @@ msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
 msgstr "Trilha (com um amigo)"
 
-#. Help goal
-#: activities/nine_men_morris_2players/ActivityInfo.qml:19
+#. Help title
+#: activities/nine_men_morris_2players/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
-msgid ""
-"Form mills (lines of 3 pieces) to remove your opponent's pieces until your "
-"opponent has only 2 pieces left or can not move anymore."
-msgstr ""
-"Formar trilhas (linhas com 3 peças) para remover as peças do adversário até "
-"ele ficar com apenas duas peças ou sem nenhuma jogada válida."
+msgid "Play the game Nine men's morris with a friend."
+msgstr "Trilha (com um amigo)"
 
 #. Help manual
-#: activities/nine_men_morris_2players/ActivityInfo.qml:22
+#: activities/nine_men_morris_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
-"turns to move your pieces."
+"turns to move your pieces. If you have only 3 pieces left, you can make them "
+"fly to any vacant spot. A player wins when the other player can't move any "
+"piece or has only 2 pieces left."
 msgstr ""
-"Jogue contra um amigo. Primeiro, vocês revezam para posicionar as nove peças "
-"e depois fazem a movimentação das peças alternadamente."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -19905,8 +20428,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
-msgid "Identify the notes correctly and score 100% to complete a level."
+msgid ""
+"Identify the notes, play them on the piano keyboard, and achieve a score of "
+"100% to complete the level."
 msgstr ""
 "Identifique as notas corretamente e atinja 100% para completar um nível."
 
@@ -19969,13 +20497,27 @@ msgstr "Sequência de números"
 #. Help title
 #: activities/number_sequence/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid "Touch the numbers in the right order."
-msgstr "Toque os números na ordem correta."
+msgid ""
+"Select the numbers one after the other according to the numerical sequence."
+msgstr ""
+
+#. Help goal
+#: activities/number_sequence/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
+msgctxt "ActivityInfo|"
+msgid "Learn the numerical sequence."
+msgstr "Aprender o ciclo da água."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Draw the picture by clicking on each number in the right order."
 msgctxt "ActivityInfo|"
-msgid "Draw the picture by clicking on each number in the right order."
+msgid ""
+"Draw the picture by clicking on the points in the numerical sequence order."
 msgstr "Desenhe a figura clicando em cada número na ordem correta."
 
 #. Activity title
@@ -19990,49 +20532,79 @@ msgctxt "ActivityInfo|"
 msgid "Move the helicopter to catch the clouds having even or odd numbers."
 msgstr "Mova o helicóptero para pegar as nuvens com números pares ou ímpares."
 
+#. Help goal
+#: activities/numbers-odd-even/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Learn to recognize even and odd numbers and their numerical order."
+msgstr ""
+
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Catch the clouds with an odd or even number, in the right order. With a "
+#| "keyboard, use the arrow keys to move the helicopter. With a pointing "
+#| "device, just click or tap on the target location. To know which number "
+#| "you have to catch you can either remember it or check the number on the "
+#| "bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
-"Catch the clouds with an odd or even number, in the right order. With a "
-"keyboard, use the arrow keys to move the helicopter. With a pointing device, "
-"just click or tap on the target location. To know which number you have to "
-"catch you can either remember it or check the number on the bottom right "
-"corner."
+"Follow the instructions: catch the clouds with an odd or even number in the "
+"right order. With a keyboard, use the arrow keys to move the helicopter. "
+"With a pointing device, just click or tap on the target location. On the "
+"first levels, you can see which number you have to catch on the counter in "
+"the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
 "Pegue as nuvens com números pares ou ímpares, na ordem correta. No teclado, "
 "use as teclas de seta para mover o helicóptero. Em um dispositivo apontador, "
 "clique ou toque no local de destino. Para saber qual o número você precisa "
 "pegar, lembre-se dele ou verifique o número no canto inferior direito."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:35
+#: activities/numbers-odd-even/NumbersOddEven.qml:14
+#, fuzzy
+#| msgctxt "TutorialBase|"
+#| msgid "Choose the even number:"
+msgctxt "NumbersOddEven|"
+msgid "Catch the even numbers."
+msgstr "Escolha o número par:"
+
+#: activities/numbers-odd-even/NumbersOddEven.qml:15
+#, fuzzy
+#| msgctxt "TutorialBase|"
+#| msgid "Choose the odd number:"
+msgctxt "NumbersOddEven|"
+msgid "Catch the odd numbers."
+msgstr "Escolha o número ímpar:"
+
+#: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
 msgstr "Essa atividade ensina os números pares e ímpares."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:39
-#: activities/numbers-odd-even/NumbersOddEven.qml:49
+#: activities/numbers-odd-even/NumbersOddEven.qml:46
+#: activities/numbers-odd-even/NumbersOddEven.qml:56
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
 msgstr ""
 "Números pares são aqueles que não deixam resto ao serem divididos por 2."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:44
+#: activities/numbers-odd-even/NumbersOddEven.qml:51
 msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
 msgstr "O que se entende por resto de um número?"
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:53
+#: activities/numbers-odd-even/NumbersOddEven.qml:60
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
 msgstr "Números ímpares são aqueles que deixam resto ao serem divididos por 2."
 
-#: activities/numbers-odd-even/NumbersOddEven.qml:57
-#: activities/numbers-odd-even/NumbersOddEven.qml:61
-#: activities/numbers-odd-even/NumbersOddEven.qml:65
+#: activities/numbers-odd-even/NumbersOddEven.qml:64
+#: activities/numbers-odd-even/NumbersOddEven.qml:68
+#: activities/numbers-odd-even/NumbersOddEven.qml:72
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
 msgstr "Exercite para testar seus conhecimentos."
@@ -20125,12 +20697,6 @@ msgstr ""
 "Organize as letras disponíveis em ordem alfabética crescente ou decrescente, "
 "conforme seja pedido."
 
-#. Help goal
-#: activities/ordering_alphabets/ActivityInfo.qml:26
-msgctxt "ActivityInfo|"
-msgid "Learn the alphabetical order."
-msgstr "Aprender a ordem alfabética."
-
 #. Help manual
 #: activities/ordering_alphabets/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -20220,9 +20786,12 @@ msgstr "Organize os eventos em sua ordem cronológica."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
-msgid "Can decide chronological order of events."
-msgstr "Conseguir definir a ordem cronológica de eventos."
+msgid "Learn to order an event sequence in chronological order."
+msgstr "Organize os eventos em sua ordem cronológica."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20266,9 +20835,12 @@ msgstr ""
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
-msgid "Compare numbers."
-msgstr "Comparar números."
+msgid "Practice ordering numbers."
+msgstr "Leitura e ordenação de números."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20376,8 +20948,11 @@ msgstr "Organize as palavras, formando uma sentença que faça sentido."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
-msgid "Order words to form meaningful sentences."
+msgid "Practice ordering words to form a meaningful sentence."
 msgstr "Organize as palavras para formar uma sentença que faça sentido."
 
 #. Help manual
@@ -20470,9 +21045,24 @@ msgstr "Jogue o jogo de estratégia Oware contra o Tux."
 #: activities/oware/ActivityInfo.qml:19
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
+msgid "Develop strategic thinking skills."
+msgstr ""
+
+#. Help manual
+#: activities/oware/ActivityInfo.qml:22
+#: activities/oware_2players/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "The game starts with four seeds in each house. The objective of the game "
+#| "is to capture more seeds than one's opponent. Since the game has only 48 "
+#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
+#| "number of seeds, it is possible for the game to end in a draw, where each "
+#| "player has captured 24."
+msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
-"to capture more seeds than one's opponent. Since the game has only 48 seeds, "
+"to capture more seeds than your opponent. Since the game has only 48 seeds, "
 "capturing 25 is sufficient to win the game. Since there is an even number of "
 "seeds, it is possible for the game to end in a draw, where each player has "
 "captured 24."
@@ -20483,18 +21073,27 @@ msgstr ""
 "de sementes, também é possível que o jogo termine em empate, onde cada "
 "jogador termina com 24 sementes."
 
-#. Help manual
-#: activities/oware/ActivityInfo.qml:22
-#: activities/oware_2players/ActivityInfo.qml:22
+#: activities/oware/ActivityInfo.qml:23
+#: activities/oware_2players/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Players take turns moving the seeds. On a turn, a player chooses one of "
+#| "the six houses under their control. The player removes all seeds from "
+#| "that house, and distributes them, dropping one in each house counter-"
+#| "clockwise from this house, in a process called sowing. Seeds are not "
+#| "distributed into the end scoring houses, nor into the house drawn from. "
+#| "The starting house is always left empty; if it contained 12 (or more) "
+#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
-"Players take turns moving the seeds. On a turn, a player chooses one of the "
-"six houses under their control. The player removes all seeds from that "
-"house, and distributes them, dropping one in each house counter-clockwise "
-"from this house, in a process called sowing. Seeds are not distributed into "
-"the end scoring houses, nor into the house drawn from. The starting house is "
-"always left empty; if it contained 12 (or more) seeds, it is skipped, and "
-"the twelfth seed is placed in the next house."
+"Players take turns moving the seeds. On each turn, a player chooses one of "
+"the six houses under their control. The player removes all seeds from that "
+"house and distributes them, in a process called sowing, into the following "
+"houses (counter-clockwise). Seeds are not distributed into the end scoring "
+"houses, nor into the house drawn from. The starting house is always left "
+"empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
+"seed is placed in the next house."
 msgstr ""
 "Os jogadores se alternam para mover as sementes. Em uma rodada, um jogador "
 "escolhe uma das seis casas que ele controla. Ele, então, remove todas as "
@@ -20505,8 +21104,8 @@ msgstr ""
 "sementes nessa casa, durante a distribuição, ela é pulada e as sementes "
 "restantes continuam sendo distribuídas a partir da próxima casa."
 
-#: activities/oware/ActivityInfo.qml:23
-#: activities/oware_2players/ActivityInfo.qml:23
+#: activities/oware/ActivityInfo.qml:24
+#: activities/oware_2players/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Capturing occurs only when a player brings the count of an opponent's house "
@@ -20532,8 +21131,8 @@ msgstr ""
 "cancelada, uma vez que isso impediria o oponente de continuar o jogo. Nesse "
 "caso, as sementes são deixadas no tabuleiro."
 
-#: activities/oware/ActivityInfo.qml:24
-#: activities/oware_2players/ActivityInfo.qml:24
+#: activities/oware/ActivityInfo.qml:25
+#: activities/oware_2players/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid ""
 "If an opponent's houses are all empty, the current player must make a move "
@@ -20573,12 +21172,6 @@ msgstr "Monte o quebra-cabeça"
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the pieces to rebuild the original paintings."
 msgstr "Arraste e solte as peças para reconstruir as pinturas originais."
-
-#. Help goal
-#: activities/paintings/ActivityInfo.qml:25
-msgctxt "ActivityInfo|"
-msgid "Spatial representation."
-msgstr "Representação espacial."
 
 #. Help prerequisite
 #: activities/paintings/ActivityInfo.qml:27
@@ -20720,16 +21313,33 @@ msgctxt "ActivityInfo|"
 msgid "Follow the given directions to help Tux reach the target."
 msgstr "Siga as instruções fornecidas para ajudar o Tux a chegar ao destino."
 
-#. Help manual
-#: activities/path_decoding/ActivityInfo.qml:21
-#: activities/path_decoding_relative/ActivityInfo.qml:21
+#. Help goal
+#: activities/path_decoding/ActivityInfo.qml:19
+#: activities/path_decoding_relative/ActivityInfo.qml:19
+#: activities/path_encoding/ActivityInfo.qml:19
+#: activities/path_encoding_relative/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
-msgid "Click on the grid squares to move Tux following the given directions."
+msgid ""
+"Develop skills in visualization and map reading, and learn to follow "
+"directions."
+msgstr ""
+
+#. Help manual
+#: activities/path_decoding/ActivityInfo.qml:22
+#: activities/path_decoding_relative/ActivityInfo.qml:22
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Click on the grid squares to move Tux following the given directions."
+msgctxt "ActivityInfo|"
+msgid ""
+"Click on the grid squares to move Tux to the target following the arrow "
+"directions."
 msgstr ""
 "Clique nos quadrados da grade para mover o Tux segundo as direções indicadas."
 
-#: activities/path_decoding/ActivityInfo.qml:22
-#: activities/path_encoding/ActivityInfo.qml:22
+#: activities/path_decoding/ActivityInfo.qml:23
+#: activities/path_encoding/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "The directions are absolute, they do not depend on the current orientation "
@@ -20760,18 +21370,21 @@ msgstr "Grade de %1x%2."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
-msgid "Path decoding relative"
-msgstr "Decodificando o caminho relativo"
+msgid "Relative path decoding"
+msgstr "Decodificando o caminho"
 
-#: activities/path_decoding_relative/ActivityInfo.qml:22
-#: activities/path_encoding_relative/ActivityInfo.qml:22
+#: activities/path_decoding_relative/ActivityInfo.qml:23
+#: activities/path_encoding_relative/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "The directions are relative to the current orientation of Tux."
 msgstr "As direções são relativas à orientação atual do Tux."
 
-#: activities/path_decoding_relative/ActivityInfo.qml:23
-#: activities/path_encoding_relative/ActivityInfo.qml:23
+#: activities/path_decoding_relative/ActivityInfo.qml:24
+#: activities/path_encoding_relative/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "This means that UP moves forward, DOWN moves backward, LEFT moves to the "
@@ -20795,8 +21408,8 @@ msgid "Move Tux along the path to reach the target."
 msgstr "Mova o Tux pelo caminho para atingir o destino."
 
 #. Help manual
-#: activities/path_encoding/ActivityInfo.qml:21
-#: activities/path_encoding_relative/ActivityInfo.qml:21
+#: activities/path_encoding/ActivityInfo.qml:22
+#: activities/path_encoding_relative/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Use the arrow buttons to move Tux along the path until he reaches the target."
@@ -20804,14 +21417,14 @@ msgstr ""
 "Use os botões de setas para mover o Tux pelo caminho, até que ele atinja o "
 "seu destino."
 
-#: activities/path_encoding/ActivityInfo.qml:23
-#: activities/path_encoding_relative/ActivityInfo.qml:24
+#: activities/path_encoding/ActivityInfo.qml:24
+#: activities/path_encoding_relative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
 msgstr "Controles do teclado:"
 
-#: activities/path_encoding/ActivityInfo.qml:24
-#: activities/path_encoding_relative/ActivityInfo.qml:25
+#: activities/path_encoding/ActivityInfo.qml:25
+#: activities/path_encoding_relative/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Setas: direções"
@@ -20824,9 +21437,12 @@ msgstr "Erros: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
-msgid "Path encoding relative"
-msgstr "Codificando o caminho relativo"
+msgid "Relative path encoding"
+msgstr "Codificando o caminho"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20842,7 +21458,7 @@ msgstr ""
 "Dê um duplo clique ou toque duas vezes em qualquer lado do gol para marcar."
 
 #. Help manual
-#: activities/penalty/ActivityInfo.qml:22
+#: activities/penalty/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Double click or double tap on a side of the goal to kick the ball. You can "
@@ -20884,8 +21500,8 @@ msgstr "Encontre as diferenças entre as duas imagens."
 #. Help goal
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Visual perception."
-msgstr "Percepção visual."
+msgid "Develop skills in perceiving details."
+msgstr ""
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21014,19 +21630,19 @@ msgstr ""
 "definidas."
 
 #: activities/piano_composition/ActivityInfo.qml:34
-#: activities/play_piano/ActivityInfo.qml:31
+#: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
 msgstr "Dígitos de 1 a 7: teclas brancas"
 
 #: activities/piano_composition/ActivityInfo.qml:35
-#: activities/play_piano/ActivityInfo.qml:32
+#: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
 msgstr "F2 a F7: teclas pretas"
 
 #: activities/piano_composition/ActivityInfo.qml:36
-#: activities/play_piano/ActivityInfo.qml:30
+#: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: play"
 msgstr "Espaço: tocar"
@@ -21047,7 +21663,7 @@ msgid "Delete: erase selected note or everything"
 msgstr "Delete: apaga a nota selecionada ou todas"
 
 #: activities/piano_composition/ActivityInfo.qml:40
-#: activities/play_piano/ActivityInfo.qml:34
+#: activities/play_piano/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid ""
 "The synthesizer original code is from https://github.com/vsr83/miniSynth"
@@ -21580,8 +22196,11 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
-msgid "Numbers in order"
+msgid "Numerical order"
 msgstr "Números em ordem"
 
 #. Help title
@@ -21589,6 +22208,15 @@ msgstr "Números em ordem"
 msgctxt "ActivityInfo|"
 msgid "Move the helicopter to catch the clouds in the correct order."
 msgstr "Movimente o helicóptero para capturar as nuvens na ordem correta."
+
+#. Help goal
+#: activities/planegame/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the alphabetical order."
+msgctxt "ActivityInfo|"
+msgid "Learn the numerical order."
+msgstr "Aprender a ordem alfabética."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -21603,6 +22231,22 @@ msgstr ""
 "mover o helicóptero. Em um dispositivo apontador, clique ou toque no local "
 "de destino. Para saber qual o número você precisa pegar, lembre-se dele ou "
 "verifique o número no canto inferior direito."
+
+#: activities/planegame/Sequence.qml:13
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Match the numbers up to 2."
+msgctxt "Sequence|"
+msgid "Catch the numbers starting from 0."
+msgstr "Correspondência de números até 2."
+
+#: activities/planegame/Sequence.qml:14
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Match the numbers up to 2."
+msgctxt "Sequence|"
+msgid "Catch the numbers starting from 10."
+msgstr "Correspondência de números até 2."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -21620,8 +22264,17 @@ msgctxt "ActivityInfo|"
 msgid "Play piano"
 msgstr "Toque piano"
 
+#. Help title
+#: activities/play_piano/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Find the correct date and select it on the calendar."
+msgctxt "ActivityInfo|"
+msgid "Read the score, and then play it on the keyboard."
+msgstr "Encontre a data correta e selecione-a no calendário."
+
 #. Help goal
-#: activities/play_piano/ActivityInfo.qml:23
+#: activities/play_piano/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Understand how the piano keyboard can play music as written on the musical "
@@ -21629,13 +22282,13 @@ msgid ""
 msgstr "Entender como tocar música em um piano, seguindo uma pauta musical."
 
 #. Help prerequisite
-#: activities/play_piano/ActivityInfo.qml:25
+#: activities/play_piano/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Knowledge of musical notation and musical staff."
 msgstr "Conhecimento de notação musical e partitura."
 
 #. Help manual
-#: activities/play_piano/ActivityInfo.qml:27
+#: activities/play_piano/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Some notes are played on the staff. Click on the keyboard keys matching the "
@@ -21644,7 +22297,7 @@ msgstr ""
 "Algumas notas são tocadas na partitura. Clique nas teclas correspondentes às "
 "notas na partitura."
 
-#: activities/play_piano/ActivityInfo.qml:28
+#: activities/play_piano/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
@@ -21653,7 +22306,7 @@ msgstr ""
 "Nos níveis 1 a 5 você praticará as notas da clave de sol e nos níveis 6 a "
 "10, as notas da clave de fá."
 
-#: activities/play_piano/ActivityInfo.qml:33
+#: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace ou Delete: desfazer"
@@ -21688,20 +22341,29 @@ msgctxt "ActivityInfo|"
 msgid "Play rhythm"
 msgstr "Acompanhe o ritmo"
 
+#. Help title
+#: activities/play_rhythm/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to follow a rhythm accurately."
+msgctxt "ActivityInfo|"
+msgid "Follow the rhythm accurately."
+msgstr "Aprenda a seguir um ritmo de forma precisa."
+
 #. Help goal
-#: activities/play_rhythm/ActivityInfo.qml:23
+#: activities/play_rhythm/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to follow a rhythm accurately."
 msgstr "Aprenda a seguir um ritmo de forma precisa."
 
 #. Help prerequisite
-#: activities/play_rhythm/ActivityInfo.qml:25
+#: activities/play_rhythm/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Simple understanding of musical rhythm."
 msgstr "Compreensão simples de ritmo musical."
 
 #. Help manual
-#: activities/play_rhythm/ActivityInfo.qml:27
+#: activities/play_rhythm/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid ""
 "Listen to the rhythm played. When you're ready, click on the drum following "
@@ -21712,7 +22374,7 @@ msgstr ""
 "mesmo ritmo. Se você clicar nos tempos corretos, outro ritmo é tocado. Caso "
 "contrário, você deve tentar novamente."
 
-#: activities/play_rhythm/ActivityInfo.qml:28
+#: activities/play_rhythm/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
@@ -21721,7 +22383,7 @@ msgstr ""
 "Níveis ímpares exibem uma linha vertical que segue o ritmo na partitura: "
 "clique no tambor quando a linha estiver no meio das notas."
 
-#: activities/play_rhythm/ActivityInfo.qml:29
+#: activities/play_rhythm/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid ""
 "Even levels are harder, because there is no vertical line. You must read the "
@@ -21733,27 +22395,27 @@ msgstr ""
 "informação. Você também pode clicar no metrônomo para escutar as notas "
 "semínimas como referência."
 
-#: activities/play_rhythm/ActivityInfo.qml:30
+#: activities/play_rhythm/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Click on the reload button if you want to replay the rhythm."
 msgstr "Clique no botão de recarregar caso você queira repetir o ritmo."
 
-#: activities/play_rhythm/ActivityInfo.qml:32
+#: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
 msgstr "Barra de espaço: tocar o tambor"
 
-#: activities/play_rhythm/ActivityInfo.qml:33
+#: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
 msgstr "Enter ou Return: repetir o ritmo"
 
-#: activities/play_rhythm/ActivityInfo.qml:34
+#: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Up and Down: increase or decrease the tempo"
 msgstr "Setas para cima e para baixo: aumentar ou diminuir o tempo"
 
-#: activities/play_rhythm/ActivityInfo.qml:35
+#: activities/play_rhythm/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: iniciar ou parar o metrônomo, caso ele esteja visível"
@@ -21941,28 +22603,23 @@ msgstr "Selecione a imagem onde a criança está à esquerda da caixa."
 #. Activity title
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
-msgid "Programming maze"
-msgstr "Labirinto de programação"
+msgid "Program the path"
+msgstr ""
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
-msgid ""
-"This activity teaches to program Tux to reach its goal using simple "
-"instructions like move forward, turn left or right."
+msgid "Program the path to help Tux catch the fish."
 msgstr ""
-"Essa atividade ensina a programar o Tux para atingir seu objetivo usando "
-"instruções simples como ir para frente e virar à esquerda ou à direita."
 
-# Proposta de revisão - Separar título do objetivo.
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
-msgid ""
-"Tux is hungry. Help him find fish by programming him to the correct ice spot."
-msgstr ""
-"Tux está com fome. Ajude-o a encontrar o peixe programando-o para ir até o "
-"ponto correto no gelo."
+msgid "Learn how to program instructions for moving along a path."
+msgstr "Saber ler instruções e pensar logicamente para encontrar um caminho."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22198,8 +22855,11 @@ msgstr "Usando a área principal e a área de laço."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
-msgid "Railroad activity"
+msgid "Railroad"
 msgstr "Atividade Ferroviária"
 
 #. Help title
@@ -22360,9 +23020,15 @@ msgctxt "ActivityInfo|"
 msgid "Draw perfectly the given image on the empty grid."
 msgstr "Desenhe perfeitamente a imagem indicada na grade vazia."
 
+#. Help goal
+#: activities/redraw/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Learn to identify a location in a grid and to reproduce a model."
+msgstr ""
+
 #. Help manual
-#: activities/redraw/ActivityInfo.qml:22
-#: activities/redraw_symmetrical/ActivityInfo.qml:22
+#: activities/redraw/ActivityInfo.qml:23
+#: activities/redraw_symmetrical/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "First, select the proper color from the toolbar. Click on the grid and drag "
@@ -22371,20 +23037,20 @@ msgstr ""
 "Primeiro, selecione a cor adequada na barra de ferramentas. Em seguida, "
 "clique na grade e arraste para pintar. Solte o clique para parar de pintar."
 
-#: activities/redraw/ActivityInfo.qml:25
-#: activities/redraw_symmetrical/ActivityInfo.qml:25
+#: activities/redraw/ActivityInfo.qml:26
+#: activities/redraw_symmetrical/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: select a color"
 msgstr "Dígitos: selecionar uma cor"
 
-#: activities/redraw/ActivityInfo.qml:26
-#: activities/redraw_symmetrical/ActivityInfo.qml:26
+#: activities/redraw/ActivityInfo.qml:27
+#: activities/redraw_symmetrical/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the grid"
 msgstr "Setas: navegar pela grade"
 
-#: activities/redraw/ActivityInfo.qml:27
-#: activities/redraw_symmetrical/ActivityInfo.qml:27
+#: activities/redraw/ActivityInfo.qml:28
+#: activities/redraw_symmetrical/ActivityInfo.qml:28
 #: activities/simplepaint/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
@@ -22413,9 +23079,20 @@ msgstr "Espelhe a imagem indicada"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
-msgid "Draw the image on the empty grid as if you saw it in a mirror."
-msgstr "Desenhe a imagem na grade vazia, tal como seria vista em um espelho."
+msgid "Reproduce the image symmetrically on the empty grid."
+msgstr "Reproduzir a torre da direita no espaço vazio."
+
+#. Help goal
+#: activities/redraw_symmetrical/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to identify a location in a grid and to reproduce a model "
+"symmetrically."
+msgstr ""
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -22558,15 +23235,21 @@ msgstr "Intervalos de contagem"
 
 # Proposta de revisão - Separar título do objetivo.
 #. Help title
-#. ----------
-#. Help goal
 #: activities/reversecount/ActivityInfo.qml:17
-#: activities/reversecount/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Tux is hungry. Help him find fish by counting to the correct ice spot."
 msgstr ""
 "Tux está com fome. Ajude-o a encontrar os peixes contando corretamente os "
 "blocos de gelos até o local correto."
+
+#. Help goal
+#: activities/reversecount/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count intervals"
+msgctxt "ActivityInfo|"
+msgid "Learn to count intervals."
+msgstr "Intervalos de contagem"
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -22610,17 +23293,30 @@ msgctxt "ActivityInfo|"
 msgid "Roman numerals"
 msgstr "Números romanos"
 
+#. Help title
+#: activities/roman_numerals/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to read a graduated line."
+msgctxt "ActivityInfo|"
+msgid "Learn to read and write Roman numerals."
+msgstr "Aprender a ler uma reta numérica."
+
 #. Help goal
-#: activities/roman_numerals/ActivityInfo.qml:19
+#: activities/roman_numerals/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn how to read roman numerals and do the conversion to and from arabic "
+#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
-"Learn how to read roman numerals and do the conversion to and from arabic "
-"numerals."
+"Learn to read and write Roman numerals and convert them to Arabic numerals."
 msgstr ""
 "Aprender a ler números romanos e fazer a conversão e e para números arábicos."
 
 #. Help manual
-#: activities/roman_numerals/ActivityInfo.qml:22
+#: activities/roman_numerals/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Roman numerals are a numeral system that originated in ancient Rome and "
@@ -22633,21 +23329,26 @@ msgstr ""
 "da idade média. O números nesse sistema são representados por uma combinação "
 "de letras do alfabeto latino."
 
-#: activities/roman_numerals/ActivityInfo.qml:23
+#: activities/roman_numerals/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Learn the rules to read Roman numerals and practice converting numbers to "
+#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
-"and from arabic numerals. Click on the OK button to validate your answer."
+"and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Aprenda as regras de leitura de números romanos e pratique-as, convertendo-"
 "os de e para números arábicos. Clique no botão OK para conferir sua resposta."
 
-#: activities/roman_numerals/ActivityInfo.qml:25
+#: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
 msgstr "Dígitos: digitar algarismos arábicos"
 
-#: activities/roman_numerals/ActivityInfo.qml:26
+#: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
 msgstr "Letras: digitar algarismos romanos (com I, V, X, L, C, D e M)"
@@ -23319,11 +24020,15 @@ msgctxt "ActivityInfo|"
 msgid "Try to split the pieces of candy between a given number of children."
 msgstr "Tente dividir os doces entre um determinado número de crianças."
 
+# Help title
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
-msgid "Learn division of numbers."
-msgstr "Aprender a divisão de números."
+msgid "Learn to share, practice division."
+msgstr "Praticar divisões."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -23816,8 +24521,8 @@ msgstr "Você não pode colocar mais que %1 doces no mesmo retângulo"
 #. Activity title
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
-msgid "A simple drawing activity"
-msgstr "Atividade de desenho simples"
+msgid "Draw in a grid"
+msgstr ""
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -23828,8 +24533,8 @@ msgstr "Crie seu próprio desenho."
 #. Help goal
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid "Enhance creative skills."
-msgstr "Estimular a criatividade."
+msgid "Express your creativity through drawing."
+msgstr ""
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -23860,9 +24565,13 @@ msgstr ""
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
+#: activities/smallnumbers2/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
-msgid "In a limited time, count the number of dots."
-msgstr "Contar o número de pontos, dentro do limite de tempo."
+msgid "Practice counting with a time limit."
+msgstr "Pratique adição com um jogo de tiro ao alvo"
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -23980,21 +24689,25 @@ msgstr "Números com dominós"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
-msgid "Count the number on the domino before it reaches the ground."
-msgstr "Conte o número de pontos do dominó antes que ele chegue ao chão."
-
-#. Help goal
-#: activities/smallnumbers2/ActivityInfo.qml:20
-msgctxt "ActivityInfo|"
-msgid "Count a number in a limited time."
-msgstr "Contar números em um tempo limitado."
+msgid "Count the number of dots on the domino before it reaches the ground."
+msgstr ""
+"Conte o número de pontos da face mais clara do dado antes que ele chegue ao "
+"chão."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
-msgid "Type the number you see on each falling domino."
-msgstr "Digite o número de pontos que aparece em cada dominó que está caindo."
+msgid "Type the number of dots you see on each falling domino."
+msgstr ""
+"Digite o número de pontos que aparecem na face mais clara de cada um dos "
+"dados que estão caindo."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -24059,9 +24772,12 @@ msgstr "Sistema Solar"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "SolarSystem|"
+#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
-msgid "Answer the questions with a correctness of 100%."
-msgstr "Responda as perguntas com 100% de acerto."
+msgid "Learn about the solar system."
+msgstr "Ver o sistema solar"
 
 # Proposta de revisão - Parte do objetivo deveria estar no manual.
 #. Help goal
@@ -25466,41 +26182,36 @@ msgstr "Confira no menu de ajuda os controles do teclado."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
-msgid "Sudoku, place unique symbols in a grid"
-msgstr "Sudoku, coloque símbolos únicos em uma grade"
+msgid "Sudoku"
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
-msgid ""
-"Symbols must be unique in a row, in a column, and (if defined) in each "
-"region."
-msgstr ""
-"Os símbolos devem ser únicos em uma linha, em uma coluna e (caso definido) "
-"em cada região."
+msgid "Solve the Sudoku."
+msgstr "Resolva o Calcudoku"
 
-# Proposta de revisão - Parte do objetivo deveria estar no manual.
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Develop your logical reasoning skills: data linking, deduction and "
+#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
-"The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
-"cell of a grid. In the official Sudoku the grid is 9×9 and made up of 3×3 "
-"subgrids (called 'regions'). In GCompris we start at lower levels with a "
-"simpler version using symbols and with no regions. In all cases the grid is "
-"presented with various symbols or numerals given in some cells (the "
-"'givens'). Each row, column and region must contain only one instance of "
-"each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
+"Develop some skills in logical thinking (data linking, deduction) and "
+"spatial visualization."
 msgstr ""
-"O objetivo do quebra-cabeça é colocar um símbolo ou um número de 1 a 9 em "
-"cada célula de uma grade. No Sudoku oficial a grade é de 9×9, feita de sub-"
-"grades de 3×3 (chamadas \"regiões\"). No GCompris começamos em níveis mais "
-"baixos, com uma versão mais simples usando símbolos e sem regiões. Em todos "
-"os casos a grade apresenta-se com vários símbolos ou dados números em "
-"algumas células (os \"fornecidos\"). Cada linha, coluna ou região deve "
-"conter apenas um exemplar de cada símbolo ou número (Fonte: traduzido de &lt;"
-"https://en.wikipedia.org/wiki/Sudoku&gt;)."
+"Desenvolva suas habilidades de raciocínio lógico: vinculação de dados, "
+"dedução e localização espacial durante o uso de cálculos."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -25512,11 +26223,12 @@ msgstr "Completar o quebra-cabeça exige paciência e habilidade lógica."
 #: activities/sudoku/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
-"Select a number or a symbol in the list and click on its target position. "
-"GCompris will not let you enter an invalid answer."
+"Select a number or a symbol and click its target position. Each symbol must "
+"appear only once in a row, in a column and in a subregion if any. If an "
+"action is not allowed, the game will show why. But beware: if you can place "
+"something in a square, it might not be correct for the whole Sudoku. It can "
+"still be a mistake."
 msgstr ""
-"Selecione um número ou um símbolo na lista e clique em sua posição de "
-"destino. O GCompris não deixa você digitar uma resposta inválida."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25546,13 +26258,18 @@ msgstr "Super cérebro"
 
 # Proposta de revisão - Desvincular o título do objetivo.
 #. Help title
-#. ----------
-#. Help goal
 #: activities/superbrain/ActivityInfo.qml:17
-#: activities/superbrain/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Tux has hidden several items. Find them in the correct order."
 msgstr "O Tux está escondendo alguns itens. Encontre-os na ordem correta."
+
+#. Help goal
+#: activities/superbrain/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid ""
+"Develop skills in logical thinking, distinguishing colors, and memorizing "
+"positions."
+msgstr ""
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -25607,49 +26324,35 @@ msgstr "Quebra-cabeça tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
-msgid "The objective is to form a given shape."
+msgid "Move the objects to reproduce the given shape."
 msgstr "O objetivo é montar uma determinada forma."
 
-# Proposta de revisão - Não tem objetivo deveria estar no manual.
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
-"From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven "
-"boards of cunning') is a Chinese puzzle. While the tangram is often said to "
-"be ancient, its existence has only been verified as far back as 1800. It "
-"consists of 7 pieces, called tans, which fit together to form a square; "
-"Using the square side as 1 unit, the 7 pieces contains:\n"
-"    5 right isosceles triangles, including:\n"
-"        - 2 small size ones (legs of 1)\n"
-"        - 1 medium size (legs of square root of 2)\n"
-"        - 2 large size (legs of 2)\n"
-"    1 square (side of 1) and\n"
-"    1 parallelogram (sides of 1 and square root of 2)\n"
-"    "
+"Develop skills in spatial visualization, memorizing positions, and "
+"reproducing models."
 msgstr ""
-"Da Wikipédia, a enciclopédia livre. Tangram (do chinês: literalmente 'sete "
-"tábuas de astúcia') é um quebra-cabeça chinês. Embora frequentemente ouve-se "
-"dizer que o tangram é algo antigo, sua existência só foi verificada perto de "
-"1800. Consiste em 7 peças, chamadas 'tans', que se combinam para formar um "
-"quadrado; Usando o lado do quadrado como 1 unidade, as 7 peças contêm:\n"
-"    5 triângulos retângulos isósceles, incluindo:\n"
-"        - 2 peças pequenas (catetos de 1)\n"
-"        - 1 peça média (catetos com a raiz quadrada de 2)\n"
-"        - 2 peças grandes (catetos de 2)\n"
-"    1 quadrado (lado de 1) e\n"
-"    1 paralelogramo (lados de 1 e raiz quadrada de 2)\n"
-"    "
 
 #. Help manual
-#: activities/tangram/ActivityInfo.qml:31
+#: activities/tangram/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Move a piece by dragging it. The symmetrical button appears on items that "
+#| "supports it. Click on the rotation button or drag around it to rotate "
+#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
+#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
-"supports it. Click on the rotation button or drag around it to rotate "
-"selected piece. Check the activity 'Baby Puzzle' for a simpler introduction "
-"to tangram."
+"support it. Drag the rotation button or around selected piece to rotate it. "
+"Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
 "Movimente as peça arrastando-as. O botão simétrico aparece nos itens que o "
 "suportam. Clique no botão de rotação ou arraste-o ao redor do item para girá-"
@@ -25665,14 +26368,18 @@ msgstr "Pratique adição com um jogo de tiro ao alvo"
 #. Help title
 #: activities/target/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid "Hit the target and count your points."
-msgstr "Acerte o alvo e conte seus pontos."
-
-#. Help goal
-#: activities/target/ActivityInfo.qml:20
-msgctxt "ActivityInfo|"
 msgid "Throw darts at a target and count your score."
 msgstr "Atirar dardos em um alvo e contar seus pontos."
+
+# Help title
+#. Help goal
+#: activities/target/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the addition of numbers."
+msgctxt "ActivityInfo|"
+msgid "Practice addition of several numbers."
+msgstr "Pratique a adição de números."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -25747,7 +26454,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
-#: activities/tens_complement_swap/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
 msgstr "Números de 1 a 30 e adições."
@@ -25802,8 +26508,11 @@ msgstr "Aprender a encontrar o complemento de dez."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
-msgid "Numbers from 1 to 10 and additions."
+msgid "Numbers from 1 to 10 and addition."
 msgstr "Números de 1 a 10 e adições."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -25869,6 +26578,15 @@ msgstr ""
 "Aprender a usar complementos de dez para otimizar a ordem de números em uma "
 "operação."
 
+#. Help prerequisite
+#: activities/tens_complement_swap/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers from 1 to 30 and additions."
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 30 and addition."
+msgstr "Números de 1 a 30 e adições."
+
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -25916,8 +26634,11 @@ msgstr "Aprender um uso prático do complemento de dez."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
-msgid "Numbers from 1 to 50 and additions."
+msgid "Numbers from 1 to 50 and addition."
 msgstr "Números de 1 a 50 e adições."
 
 #. Help manual
@@ -25964,12 +26685,8 @@ msgstr "Faça três marcas em uma linha."
 #: activities/tic_tac_toe/ActivityInfo.qml:23
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid ""
-"Place three marks in any horizontal, vertical, or diagonal row to win the "
-"game."
+msgid "Develop your strategy skills."
 msgstr ""
-"Fazer três marcas em uma linha horizontal, vertical ou diagonal para vencer "
-"o jogo."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -26018,7 +26735,7 @@ msgstr ""
 "Remova o carro vermelho do estacionamento, através do portão à direita."
 
 #. Help manual
-#: activities/traffic/ActivityInfo.qml:22
+#: activities/traffic/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Each car can only move either horizontally or vertically. You must make some "
@@ -26045,8 +26762,11 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
-msgid "Learn the water cycle."
+msgid "Learn about the water cycle."
 msgstr "Aprender o ciclo da água."
 
 #. Help manual
@@ -26181,11 +26901,15 @@ msgctxt "ActivityInfo|"
 msgid "Type the falling words before they reach the ground."
 msgstr "Digite as palavras que estão caindo antes que elas cheguem ao chão."
 
+# Help title
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
-msgid "Keyboard training."
-msgstr "Treinamento com o teclado."
+msgid "Practice using a keyboard."
+msgstr "Pratique a divisão em equações."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -26885,46 +27609,46 @@ msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Seus arquivos de dados locais estão atualizados."
 
-#: core/DownloadManager.cpp:123
+#: core/DownloadManager.cpp:122
 msgctxt "QObject|"
 msgid "Download cancelled by user"
 msgstr "Download cancelado pelo usuário"
 
-#: core/DownloadManager.cpp:338
+#: core/DownloadManager.cpp:333
 msgctxt "QObject|"
 msgid "Could not create resource path"
 msgstr "Não foi possível criar o caminho do recurso"
 
-#: core/DownloadManager.cpp:345
+#: core/DownloadManager.cpp:340
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
 msgstr "Não foi possível abrir o arquivo de destino %1"
 
-#: core/DownloadManager.cpp:714
+#: core/DownloadManager.cpp:705
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
 msgstr "Formato inválido do arquivo de conteúdo"
 
-#: core/DownloadManager.cpp:736
+#: core/DownloadManager.cpp:727
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
 msgstr "A URL %1 não existe."
 
-#: core/DownloadManager.cpp:749
+#: core/DownloadManager.cpp:740
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
 msgstr "A soma de verificação do arquivo baixado não corresponde: %1"
 
-#: core/DownloadManager.cpp:771
+#: core/DownloadManager.cpp:762
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
 msgstr "Não foram encontradas vozes para %1."
 
-#: core/DownloadManager.cpp:776
+#: core/DownloadManager.cpp:767
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
@@ -27227,6 +27951,473 @@ msgstr "Pular"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Logic training activity."
+#~ msgstr "Treinar conceitos de lógica."
+
+# Proposta de revisão - Tentar corrigir isso, separando o título da atividade do objetivo.
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Alphabet sequence."
+#~ msgstr "Sequência do alfabeto"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Baby mouse"
+#~ msgstr "Mouse infantil"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Baby puzzle"
+#~ msgstr "Quebra-cabeça infantil"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "The objective is to assemble the baby puzzle."
+#~ msgstr "O objetivo é montar o quebra-cabeça infantil."
+
+# Help title
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "A simplistic word processor to let the children play around with a "
+#~ "keyboard and see letters."
+#~ msgstr ""
+#~ "Um editor de texto simples para deixar as crianças brincarem com um "
+#~ "teclado e ver as letras."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Discover the keyboard and the letters."
+#~ msgstr "Descobrir o teclado e as letras."
+
+# Inverti a tradução da última frase para evitar a afirmação negativa, que pode provocar confusão nas pessoas. (Frederico)
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select the number of balls you wish to place in the holes and then click "
+#~ "on the OK button. The winner is the one who hasn't put a ball in the red "
+#~ "hole."
+#~ msgstr ""
+#~ "Clique no número de bolas que você deseja colocar nos buracos e, depois, "
+#~ "no botão OK. Perde o jogo quem colocar a bola no buraco vermelho."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Don't put the ball in the last hole."
+#~ msgstr "Não colocar a bola no último buraco."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Sort the pictures into the order that tells the story."
+#~ msgstr "Organizar as imagens em uma sequência que conte a história."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Then, click on the OK button to validate your answer."
+#~ msgstr "Depois clique no botão OK para conferir sua resposta."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Letter-name recognition."
+#~ msgstr "Identificar o nome da letra."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Change the color by moving the sliders on the tubes of paint or by "
+#~ "clicking on the + and - buttons. Then click on the OK button to validate "
+#~ "your answer."
+#~ msgstr ""
+#~ "Altere a cor movendo os controles deslizantes dos tubos de tinta ou "
+#~ "clicando nos botões + e -. Depois clique no botão OK para conferir a sua "
+#~ "resposta."
+
+# Help manual
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Complete the puzzle by dragging each piece on the side to the matching "
+#~ "space in the puzzle."
+#~ msgstr ""
+#~ "Complete o quebra-cabeça arrastando cada peça ao lado para o espaço "
+#~ "correspondente no quebra-cabeças."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Numeration training."
+#~ msgstr "Treinar numeração."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Motor-coordination."
+#~ msgstr "Coordenação motora."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Arrange the pieces in the right order."
+#~ msgstr "Arrange as peças na ordem correta."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Kick the ball behind the goal keeper on the right."
+#~ msgstr "Chutar a bola para trás do goleiro à direita."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Drag a line from the ball to set its speed and direction, and release it "
+#~ "to kick the ball."
+#~ msgstr ""
+#~ "Arraste uma linha a partir da bola, para definir sua velocidade e "
+#~ "direção, e solte a linha para chutar a bola."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "A shape split in equal parts is displayed on screen."
+#~ msgstr "É exibida na tela uma figura dividida em partes iguais."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Drag and drop different regions of the country to their correct locations "
+#~ "to complete the map."
+#~ msgstr ""
+#~ "Arraste e solte diferentes regiões do país para suas posições corretas "
+#~ "para completar o mapa."
+
+# Help title
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Drag and Drop the items to complete the map."
+#~ msgstr "Arraste e solte os itens para completar o mapa."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Letter association between the screen and the keyboard."
+#~ msgstr "Reconhecer, no teclado, as letras que aparecem na tela."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Learn to distinguish between different colors/shapes and learn about "
+#~ "relative positions."
+#~ msgstr ""
+#~ "Aprender a distinguir as diferentes cores/formas e conhecer posições "
+#~ "relativas."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Guess the algebraic expression and drag the tiles to get a result equal "
+#~ "to the Guesscount."
+#~ msgstr ""
+#~ "Descubra a expressão algébrica e arraste as peças para obter o resultado "
+#~ "igual ao da Descubraconta."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Intuition and practice of algebraic-like calculations."
+#~ msgstr "Intuição e prática de cálculos algébricos."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Numbers."
+#~ msgstr "Números."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "This is a good exercise to improve reading and spelling skills."
+#~ msgstr "Melhorar as habilidades de leitura e ortografia."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Reproduce the given tower."
+#~ msgstr "Reproduza a torre apresentada."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "The object of the game is to move the entire stack to another peg, "
+#~ "obeying the following rules:\n"
+#~ "    only one disc may be moved at a time\n"
+#~ "    no disc may be placed atop a smaller disc\n"
+#~ msgstr ""
+#~ "O objetivo do jogo é mover a pilha inteira de um pino para o outro, "
+#~ "obedecendo às seguintes regras:\n"
+#~ "    somente um disco pode ser movido de cada vez;\n"
+#~ "    um disco não pode ser colocado sobre um menor do que ele.\n"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Drag and drop the top pieces only from one peg to another, to reproduce "
+#~ "the initial left side tower on the right peg."
+#~ msgstr ""
+#~ "Arraste e solte as peças superiores de um pino para outro, para "
+#~ "reproduzir a torre da esquerda no pino à direita."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Vocabulary and reading."
+#~ msgstr "Vocabulário e leitura."
+
+# Help prerequisite
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn decimals with small numbers."
+#~ msgstr "Aprender decimais com números pequenos."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Learn decimals by counting how many squares are needed to represent the "
+#~ "decimal number."
+#~ msgstr ""
+#~ "Aprenda decimais contando quantos quadrados são necessários para "
+#~ "representar o número decimal."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Count and color the circles"
+#~ msgstr "Contar e colorir os círculos"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits from 0 to 9."
+#~ msgstr "Aprender os números de 0 a 9."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn digits by counting their corresponding value."
+#~ msgstr "Aprenda os números contando o seu valor correspondente."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "A letter is written. Some words are displayed, and you must find the word "
+#~ "or the words in which this letter appears."
+#~ msgstr ""
+#~ "Uma letra é escrita. Algumas palavras serão apresentadas e você deverá "
+#~ "encontrar a palavra ou as palavras onde essa letra apareça."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Review the major dates of the inventor of the braille system."
+#~ msgstr "Revise as principais datas do inventor do Sistema Braille."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Numeration training, memory."
+#~ msgstr "Treinar numeração e a memória."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Train your memory and remove all the cards."
+#~ msgstr "Treinar sua memória e remover todas as cartas."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Reading numbers, memory."
+#~ msgstr "Treinar a leitura de números e a memória."
+
+# Proposta de revisão - Objetivo se parece com o manual.
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "You must buy different items and give the exact price. At higher levels, "
+#~ "several items are displayed, and you must first calculate the total price."
+#~ msgstr ""
+#~ "Você deve comprar os diferentes itens e pagar o valor exato. Nos níveis "
+#~ "mais altos, diversos itens são exibidos e você deve, primeiro, calcular o "
+#~ "preço total."
+
+# Proposta de revisão - Objetivo se parece com o manual.
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Tux bought different items from you and shows you his money. You must "
+#~ "give him back his change. At higher levels, several items are displayed, "
+#~ "and you must first calculate the total price."
+#~ msgstr ""
+#~ "O Tux comprou várias coisas e lhe deu o dinheiro. Você deve devolver o "
+#~ "seu troco. Nos níveis mais altos, vários itens são exibidos e você deve, "
+#~ "antes, calcular o preço total."
+
+# Proposta de revisão - Objetivo se parece com o manual.
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "You must buy the different items and give the exact price. At higher "
+#~ "levels, several items are displayed, and you must first calculate the "
+#~ "total price."
+#~ msgstr ""
+#~ "Você deve comprar os diferentes itens e pagar o valor exato. Nos níveis "
+#~ "mais altos, diversos itens são exibidos e você deve, primeiro, calcular o "
+#~ "preço total."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
+#~ "pieces left or can not move anymore."
+#~ msgstr ""
+#~ "Formar trilhas (linhas com 3 peças) para remover as peças do Tux até ele "
+#~ "ficar com apenas duas peças ou sem nenhuma jogada válida."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with Tux. First take turns to place nine pieces, and then take turns "
+#~ "to move your pieces."
+#~ msgstr ""
+#~ "Jogue contra o Tux. Primeiro, vocês revezam para posicionar as nove peças "
+#~ "e, depois, fazem a movimentação das peças alternadamente."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Form mills (lines of 3 pieces) to remove your opponent's pieces until "
+#~ "your opponent has only 2 pieces left or can not move anymore."
+#~ msgstr ""
+#~ "Formar trilhas (linhas com 3 peças) para remover as peças do adversário "
+#~ "até ele ficar com apenas duas peças ou sem nenhuma jogada válida."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Play with a friend. First take turns to place nine pieces, and then take "
+#~ "turns to move your pieces."
+#~ msgstr ""
+#~ "Jogue contra um amigo. Primeiro, vocês revezam para posicionar as nove "
+#~ "peças e depois fazem a movimentação das peças alternadamente."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Touch the numbers in the right order."
+#~ msgstr "Toque os números na ordem correta."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Can decide chronological order of events."
+#~ msgstr "Conseguir definir a ordem cronológica de eventos."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Compare numbers."
+#~ msgstr "Comparar números."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Spatial representation."
+#~ msgstr "Representação espacial."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Path decoding relative"
+#~ msgstr "Decodificando o caminho relativo"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Path encoding relative"
+#~ msgstr "Codificando o caminho relativo"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Visual perception."
+#~ msgstr "Percepção visual."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Programming maze"
+#~ msgstr "Labirinto de programação"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "This activity teaches to program Tux to reach its goal using simple "
+#~ "instructions like move forward, turn left or right."
+#~ msgstr ""
+#~ "Essa atividade ensina a programar o Tux para atingir seu objetivo usando "
+#~ "instruções simples como ir para frente e virar à esquerda ou à direita."
+
+# Proposta de revisão - Separar título do objetivo.
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Tux is hungry. Help him find fish by programming him to the correct ice "
+#~ "spot."
+#~ msgstr ""
+#~ "Tux está com fome. Ajude-o a encontrar o peixe programando-o para ir até "
+#~ "o ponto correto no gelo."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the image on the empty grid as if you saw it in a mirror."
+#~ msgstr ""
+#~ "Desenhe a imagem na grade vazia, tal como seria vista em um espelho."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Learn division of numbers."
+#~ msgstr "Aprender a divisão de números."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "A simple drawing activity"
+#~ msgstr "Atividade de desenho simples"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Enhance creative skills."
+#~ msgstr "Estimular a criatividade."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "In a limited time, count the number of dots."
+#~ msgstr "Contar o número de pontos, dentro do limite de tempo."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Count the number on the domino before it reaches the ground."
+#~ msgstr "Conte o número de pontos do dominó antes que ele chegue ao chão."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Count a number in a limited time."
+#~ msgstr "Contar números em um tempo limitado."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Type the number you see on each falling domino."
+#~ msgstr ""
+#~ "Digite o número de pontos que aparece em cada dominó que está caindo."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Answer the questions with a correctness of 100%."
+#~ msgstr "Responda as perguntas com 100% de acerto."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Sudoku, place unique symbols in a grid"
+#~ msgstr "Sudoku, coloque símbolos únicos em uma grade"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Symbols must be unique in a row, in a column, and (if defined) in each "
+#~ "region."
+#~ msgstr ""
+#~ "Os símbolos devem ser únicos em uma linha, em uma coluna e (caso "
+#~ "definido) em cada região."
+
+# Proposta de revisão - Parte do objetivo deveria estar no manual.
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
+#~ "cell of a grid. In the official Sudoku the grid is 9×9 and made up of 3×3 "
+#~ "subgrids (called 'regions'). In GCompris we start at lower levels with a "
+#~ "simpler version using symbols and with no regions. In all cases the grid "
+#~ "is presented with various symbols or numerals given in some cells (the "
+#~ "'givens'). Each row, column and region must contain only one instance of "
+#~ "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/"
+#~ "Sudoku&gt;)."
+#~ msgstr ""
+#~ "O objetivo do quebra-cabeça é colocar um símbolo ou um número de 1 a 9 em "
+#~ "cada célula de uma grade. No Sudoku oficial a grade é de 9×9, feita de "
+#~ "sub-grades de 3×3 (chamadas \"regiões\"). No GCompris começamos em níveis "
+#~ "mais baixos, com uma versão mais simples usando símbolos e sem regiões. "
+#~ "Em todos os casos a grade apresenta-se com vários símbolos ou dados "
+#~ "números em algumas células (os \"fornecidos\"). Cada linha, coluna ou "
+#~ "região deve conter apenas um exemplar de cada símbolo ou número (Fonte: "
+#~ "traduzido de &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Select a number or a symbol in the list and click on its target position. "
+#~ "GCompris will not let you enter an invalid answer."
+#~ msgstr ""
+#~ "Selecione um número ou um símbolo na lista e clique em sua posição de "
+#~ "destino. O GCompris não deixa você digitar uma resposta inválida."
+
+# Proposta de revisão - Não tem objetivo deveria estar no manual.
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven "
+#~ "boards of cunning') is a Chinese puzzle. While the tangram is often said "
+#~ "to be ancient, its existence has only been verified as far back as 1800. "
+#~ "It consists of 7 pieces, called tans, which fit together to form a "
+#~ "square; Using the square side as 1 unit, the 7 pieces contains:\n"
+#~ "    5 right isosceles triangles, including:\n"
+#~ "        - 2 small size ones (legs of 1)\n"
+#~ "        - 1 medium size (legs of square root of 2)\n"
+#~ "        - 2 large size (legs of 2)\n"
+#~ "    1 square (side of 1) and\n"
+#~ "    1 parallelogram (sides of 1 and square root of 2)\n"
+#~ "    "
+#~ msgstr ""
+#~ "Da Wikipédia, a enciclopédia livre. Tangram (do chinês: literalmente "
+#~ "'sete tábuas de astúcia') é um quebra-cabeça chinês. Embora "
+#~ "frequentemente ouve-se dizer que o tangram é algo antigo, sua existência "
+#~ "só foi verificada perto de 1800. Consiste em 7 peças, chamadas 'tans', "
+#~ "que se combinam para formar um quadrado; Usando o lado do quadrado como 1 "
+#~ "unidade, as 7 peças contêm:\n"
+#~ "    5 triângulos retângulos isósceles, incluindo:\n"
+#~ "        - 2 peças pequenas (catetos de 1)\n"
+#~ "        - 1 peça média (catetos com a raiz quadrada de 2)\n"
+#~ "        - 2 peças grandes (catetos de 2)\n"
+#~ "    1 quadrado (lado de 1) e\n"
+#~ "    1 paralelogramo (lados de 1 e raiz quadrada de 2)\n"
+#~ "    "
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Hit the target and count your points."
+#~ msgstr "Acerte o alvo e conte seus pontos."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Place three marks in any horizontal, vertical, or diagonal row to win the "
+#~ "game."
+#~ msgstr ""
+#~ "Fazer três marcas em uma linha horizontal, vertical ou diagonal para "
+#~ "vencer o jogo."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Keyboard training."
+#~ msgstr "Treinamento com o teclado."
 
 #~ msgctxt "Data|"
 #~ msgid "Copy and complete this frieze"
