@@ -428,7 +428,7 @@ for example 'xx.yy.zz'
 <para
 >El &gcompris; és internacionalitzat i està disponible en més de 35 idiomes. Per a comprovar si està disponible el vostre idioma, podeu iniciar el &gcompris; i seleccionar el vostre idioma en l'opció de configuració.</para>
 <para
->Aneu amb compte, alguns idiomes necessiten tipus de lletra específics per a mostrar-se correctament. </para
+>Aneu amb compte, alguns idiomes necessiten una lletra específica per a mostrar-se correctament. </para
 > 
 <para
 >Si no s'admet el vostre idioma, podeu col·laborar amb el programari i afegir-hi la seva traducció. Si hi esteu interessat, podeu posar-vos en contacte amb l'<ulink url="https://l10n.kde.org/teams"

@@ -1286,21 +1286,15 @@ msgstr "Logické asociace"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
-msgstr "Uspořádej ovoce."
+msgstr ""
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "Logické asociace"
+msgstr ""
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1322,26 +1316,18 @@ msgstr "Zarovnat čtyři (s Tuxem)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr "Uspořádej čtyři žetony za sebou."
+msgstr ""
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
 "(standing up), or diagonally."
-msgstr "Vytvoř řadu 4 žetonů buď vodorovně, svisle, nebo úhlopříčně."
+msgstr ""
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -2070,12 +2056,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Dětská klávesnice"
+msgstr ""
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2188,12 +2171,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Dokonči hádanku"
+msgstr ""
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
@@ -2203,12 +2183,9 @@ msgstr ""
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to match an operation with its result."
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Otoč karty a najdi příklad i s jeho výsledkem."
+msgstr ""
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2227,12 +2204,9 @@ msgstr "Přehrávat název znaků při psaní"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Dětský textový procesor"
+msgstr ""
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
@@ -2242,12 +2216,9 @@ msgstr ""
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Nauč se počítat pomocí čtyř operátorů."
+msgstr ""
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2384,21 +2355,15 @@ msgstr "Dokonči hádanku"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
-msgstr "Přetáhni tvary na jejich příslušné cíle."
+msgstr ""
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Nauč se poznávat slovní druhy."
+msgstr ""
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2727,12 +2692,9 @@ msgstr "Stiskni zároveň levou a pravou šipku, aby míč letěl rovně."
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Najdi svou levou a pravou ruku"
+msgstr ""
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -3144,12 +3106,9 @@ msgstr "Procvičuj písmena v Braillově písmu."
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Procvičuj nerovnost sčítání."
+msgstr ""
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3181,18 +3140,11 @@ msgstr "Řešte Počtodoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
-"Rozvíjej své logické rozumové zkušenosti: spojování dat, dedukce a "
-"prostorové umístění, zatímco počítáš."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -4220,28 +4172,18 @@ msgstr "Hrát šachy proti Tuxovi"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
 "yours."
 msgstr ""
-"Vyřaď všechny figury svého soupeře dříve, než tvůj soupeř vyřadí všechny "
-"tvoje."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Procvičuj písmena v Braillově písmu."
+msgstr ""
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4284,12 +4226,9 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "Verze v GCompris je mezinárodní dáma."
+msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4376,22 +4315,16 @@ msgstr "Hrát šachy proti Tuxovi"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Poznej Braillovo písmo"
+msgstr ""
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Nauč se koloběh vody."
+msgstr ""
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4562,21 +4495,15 @@ msgstr "Konec šachové partie"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
-msgstr "Přehrát konec šachové partie proti Tuxovi."
+msgstr ""
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Konec šachové partie"
+msgstr ""
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4629,12 +4556,9 @@ msgstr "Uspořádej příběh přetažením obrázků."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Nauč se rozpoznávat neobvyklé barvy."
+msgstr ""
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4645,36 +4569,19 @@ msgstr "Vyprávět krátký příběh."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"Pokud je odpověď správná, napiš odpovídající výsledek a potvrď odpověď "
-"kliknutím na tlačítko OK."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The transportation images are copyright "
-#| "Franck Doucet. Dates of Transportation are based on those found in &lt;"
-#| "https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Autorská práva k fotografii měsíce vlastní NASA. Autorská práva k obrázkům "
-"dopravních prostředků vlastní Franck Doucet. Data vynálezů dopravních "
-"prostředků jsou založena na datech nalezených na &lt;https://www.wikipedia."
-"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4987,12 +4894,9 @@ msgstr "Poslechni si písmeno a klikni na něj."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Klikni na malé písmeno"
+msgstr ""
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5035,12 +4939,9 @@ msgstr "Klikni na velké písmeno"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Klikni na velké písmeno"
+msgstr ""
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5078,12 +4979,9 @@ msgstr "Nakreslete obrázek klikáním na vybrané body."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Umožňuje přetahovat položky pomocí myši nebo dotykové obrazovky."
+msgstr ""
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -5115,21 +5013,15 @@ msgstr "Chyť všechny plavající ryby, než opustí akvárium."
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
-msgstr "Motorická koordinace: přesný pohyb rukou."
+msgstr ""
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr "Dokáže pohybovat myší a klikat na správné místo."
+msgstr ""
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5276,12 +5168,9 @@ msgstr "Poznej míchání barev."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr "Smíchej základní barvy tak, aby odpovídaly dané barvě."
+msgstr ""
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -5294,18 +5183,11 @@ msgstr ""
 "míchání)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Změň barvu posunutím jezdců na svítilnách nebo kliknutím na tlačítka + a -. "
-"Poté potvrď svou odpověď kliknutím na tlačítko OK."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5403,12 +5285,9 @@ msgstr "Objevuj míchání barevných světel."
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
-msgstr "Smíchej základní barvy tak, aby odpovídaly dané barvě."
+msgstr ""
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
@@ -5421,35 +5300,19 @@ msgstr ""
 "míchání)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Změň barvu posunutím jezdců na svítilnách nebo kliknutím na tlačítka + a -. "
-"Poté potvrď svou odpověď kliknutím na tlačítko OK."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Mixing light colors is just the opposite of mixing paint colors. The more "
-#| "light you add, the lighter the resulting color becomes. Primary colors of "
-#| "light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
 "light you add, the lighter the resulting color becomes. The primary colors "
 "of light are red, green and blue."
 msgstr ""
-"Míchání barev světla je pravým opakem míchání barev. Čím více světla "
-"přidáte, tím světlejší bude výsledná barva. Základní barvy světla jsou "
-"červená, zelená a modrá."
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -5465,12 +5328,9 @@ msgstr "Klikni na správnou barvu."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
-msgstr "Tato aktivita tě naučí rozpoznávat různé barvy."
+msgstr ""
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5796,15 +5656,11 @@ msgstr ""
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
-msgstr "Vyber obrázky na straně a umísti je na tečky ve správném pořadí."
+msgstr ""
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5941,21 +5797,15 @@ msgstr "Digitální elektřina"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr "Vytvoř a simuluj digitální elektrické schéma."
+msgstr ""
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
-msgstr "Vytvoř digitální elektrické schéma se simulací v reálném čase."
+msgstr ""
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -6161,14 +6011,6 @@ msgid "NOT A"
 msgstr "NOT A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6176,10 +6018,6 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Digitální obvody fungují s pouze dvěma stavy: 0 a 1. Díky tomu můžou "
-"provádět matematické operace jako sčítání, odčítání... Jsou to základní "
-"prvky počítačové techniky. V praxi se pro 0 používá napětí blízké zemnímu a "
-"pro 1 se používá napětí zdroje obvodu."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -6250,14 +6088,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6265,10 +6095,6 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Digitální obvody fungují s pouze dvěma stavy: 0 a 1. Díky tomu můžou "
-"provádět matematické operace jako sčítání, odčítání... Jsou to základní "
-"prvky počítačové techniky. V praxi se pro 0 používá napětí blízké zemnímu a "
-"pro 1 se používá napětí zdroje obvodu."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -6696,12 +6522,9 @@ msgstr "Spoj tečky a nakresli písmena."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
-msgstr "Naučit se kreslit písmena zábavným způsobem."
+msgstr ""
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
@@ -6723,12 +6546,9 @@ msgstr "Spoj tečky a nakreslete čísla od 0 do 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr "Naučit se kreslit čísla zábavným způsobem."
+msgstr ""
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -6750,12 +6570,9 @@ msgstr "Umísti položky tak, aby šly co nejjednodušeji spočítat."
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr "Procvičuj rovnost při odčítání."
+msgstr ""
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6887,29 +6704,20 @@ msgstr "Pohybuj myší nebo se dotkni obrazovky"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the mouse or touch the screen to erase the area and discover the "
-#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the blocks and discover the "
 "hidden picture."
 msgstr ""
-"Pohybuj myší nebo se dotkni obrazovky pro výmaz oblasti a odkrytí pozadí."
 
 #. Help goal
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
-msgstr "Koordinace jemných pohybů."
+msgstr ""
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
@@ -6926,18 +6734,11 @@ msgstr "Dvakrát klepni nebo klikni"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
 msgstr ""
-"Dvojitým klepnutím nebo dvojitým kliknutím oblast vymaž a odkryj obrázek na "
-"pozadí."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -6953,12 +6754,9 @@ msgstr "Klikni nebo klepni"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
-msgstr "Klikni nebo klepni k vymazání oblasti a odkrytí pozadí."
+msgstr ""
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -8747,17 +8545,17 @@ msgstr ""
 "Ty jsi osoba v bílém kruhu. Vyber, v jakém vztahu k tobě je osoba v "
 "oranžovém kruhu.\n"
 
-#: activities/family/Family.qml:226
+#: activities/family/Family.qml:228
 msgctxt "Family|"
 msgid "Me"
 msgstr "Já"
 
-#: activities/family/Family.qml:249
+#: activities/family/Family.qml:251
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:363
+#: activities/family/Family.qml:365
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -8937,12 +8735,9 @@ msgstr "Vyber příbuzné"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Vybrat všechna slova, která obsahují dané písmeno."
+msgstr ""
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -8952,13 +8747,6 @@ msgstr "Čtení, pohyb a klikání myší."
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relations. Married couples "
-#| "are marked with a ring on the link.\n"
-#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -8966,10 +8754,6 @@ msgid ""
 "are marked with a ring on the link.\n"
 "Click on a pair of family members which have the given relationship."
 msgstr ""
-"Zobrazí se rodokmen s několika pokyny.\n"
-"Kruhy jsou spojeny čarami označující vztahy. Manželské páry jsou označeny "
-"prstenem.\n"
-"Klikni na dvojici členů rodiny, která odpovídá danému vztahu."
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
@@ -9040,132 +8824,132 @@ msgstr ""
 "Přečti si pokyny a proveď požadovaný výpočet, abyste našli datum. Poté vyber "
 "toto datum v kalendáři a potvrď svou odpověď kliknutím na tlačítko OK."
 
-#: activities/find_the_day/find_the_day_dataset.js:35
+#: activities/find_the_day/find_the_day_dataset.js:34
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 13 days after May 3rd."
 msgstr "Najdi datum 13 dní po 3. květnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:39
+#: activities/find_the_day/find_the_day_dataset.js:38
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 7 days after October 1st."
 msgstr "Najdi datum 7 dní po 1. říjnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:43
+#: activities/find_the_day/find_the_day_dataset.js:42
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 31 days after July 12th."
 msgstr "Najdi datum 31 dní po 12. červenci."
 
-#: activities/find_the_day/find_the_day_dataset.js:47
+#: activities/find_the_day/find_the_day_dataset.js:46
 msgctxt "find_the_day_dataset|"
 msgid "Find the date two weeks after November 27th."
 msgstr "Najdi datum dva týdny po 27. listopadu."
 
-#: activities/find_the_day/find_the_day_dataset.js:51
+#: activities/find_the_day/find_the_day_dataset.js:50
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 19 days before September 1st."
 msgstr "Najdi datum 19 dní před 1. zářím."
 
-#: activities/find_the_day/find_the_day_dataset.js:55
+#: activities/find_the_day/find_the_day_dataset.js:54
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 days before December 8th."
 msgstr "Najdi datum 5 dní před 8. prosincem."
 
-#: activities/find_the_day/find_the_day_dataset.js:75
+#: activities/find_the_day/find_the_day_dataset.js:74
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
 msgstr "Najdi den v týdnu 3 dny po 5. prosinci."
 
-#: activities/find_the_day/find_the_day_dataset.js:79
+#: activities/find_the_day/find_the_day_dataset.js:78
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
 msgstr "Najdi den v týdnu 12 dní před 12. listopadem."
 
-#: activities/find_the_day/find_the_day_dataset.js:83
+#: activities/find_the_day/find_the_day_dataset.js:82
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
 msgstr "Najdi den v týdnu 32 dní po 5. lednu."
 
-#: activities/find_the_day/find_the_day_dataset.js:87
+#: activities/find_the_day/find_the_day_dataset.js:86
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
 msgstr "Najdi den v týdnu 5 dní po 23. únoru."
 
-#: activities/find_the_day/find_the_day_dataset.js:91
+#: activities/find_the_day/find_the_day_dataset.js:90
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
 msgstr "Najdi den v týdnu 17 dní před 16. srpnem."
 
-#: activities/find_the_day/find_the_day_dataset.js:112
+#: activities/find_the_day/find_the_day_dataset.js:111
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
 msgstr "Najdi datum 2 týdny a 3 dny po 12. lednu."
 
-#: activities/find_the_day/find_the_day_dataset.js:116
+#: activities/find_the_day/find_the_day_dataset.js:115
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgstr "Najdi datum 3 týdny a 2 dny po 22. březnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:120
+#: activities/find_the_day/find_the_day_dataset.js:119
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 weeks and 6 days after October 5th."
 msgstr "Najdi datum 5 týdnů a 6 dní po 5. říjnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:124
+#: activities/find_the_day/find_the_day_dataset.js:123
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
 msgstr "Najdi datum 1 týden a 1 den před 8. srpnem."
 
-#: activities/find_the_day/find_the_day_dataset.js:128
+#: activities/find_the_day/find_the_day_dataset.js:127
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgstr "Najdi datum 2 týdny a 5 dní před 2. červencem."
 
-#: activities/find_the_day/find_the_day_dataset.js:148
+#: activities/find_the_day/find_the_day_dataset.js:147
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgstr "Najdi den v týdnu 5 měsíců a 2 dny po 3. červenci."
 
-#: activities/find_the_day/find_the_day_dataset.js:152
+#: activities/find_the_day/find_the_day_dataset.js:151
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgstr "Najdi den v týdnu 2 měsíce a 4 dny po 8. říjnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:156
+#: activities/find_the_day/find_the_day_dataset.js:155
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgstr "Najdi den v týdnu 1 měsíc a 3 dny před 28. prosincem."
 
-#: activities/find_the_day/find_the_day_dataset.js:160
+#: activities/find_the_day/find_the_day_dataset.js:159
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgstr "Najdi den v týdnu 8 měsíců a 7 dní po 28. únoru."
 
-#: activities/find_the_day/find_the_day_dataset.js:164
+#: activities/find_the_day/find_the_day_dataset.js:163
 msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgstr "Najdi den v týdnu 3 měsíce a 3 dny před 15. zářím."
 
-#: activities/find_the_day/find_the_day_dataset.js:183
+#: activities/find_the_day/find_the_day_dataset.js:182
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgstr "Najdi datum 2 měsíce, 1 týden a 5 dní po 12. lednu."
 
-#: activities/find_the_day/find_the_day_dataset.js:187
+#: activities/find_the_day/find_the_day_dataset.js:186
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgstr "Najdi datum 3 měsíce, 2 týdny a 1 den po 23. srpnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:191
+#: activities/find_the_day/find_the_day_dataset.js:190
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgstr "Najdi datum 5 měsíců, 3 týdny a 2 dny po 20. březnu."
 
-#: activities/find_the_day/find_the_day_dataset.js:195
+#: activities/find_the_day/find_the_day_dataset.js:194
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgstr "Najdi datum 1 měsíc 1 týden a 1 den před 10. zářím."
 
-#: activities/find_the_day/find_the_day_dataset.js:199
+#: activities/find_the_day/find_the_day_dataset.js:198
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 8 days before April 7th."
 msgstr "Najdi datum 2 měsíce, 1 týden a 8 dní před 7. dubnem."
@@ -9236,34 +9020,23 @@ msgstr "Vytvářej zlomky"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr "Vyber odpovídající počet dílků, který je popsán v zadání."
+msgstr ""
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to represent a quantity of objects."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "Nauč se vyjádřit počet věcí."
+msgstr ""
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
-msgstr "Vyber odpovídající počet dílků, který je popsán v zadání."
+msgstr ""
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -9594,13 +9367,10 @@ msgstr "Najdi správného čitatele a jmenovatele zobrazeného zlomku."
 
 #. Help goal
 #: activities/fractions_find/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr "Klikni na pár v daném příbuzenském vztahu."
+msgstr ""
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -9695,7 +9465,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulátor: přepínání mezi úpravou řady a zobrazením modelu"
 
-#: activities/frieze/Frieze.qml:290
+#: activities/frieze/Frieze.qml:291
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Jsem připraven"
@@ -9844,12 +9614,9 @@ msgstr "Najdi oblast"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
-msgstr "Přetáhni a polož oblasti pro dokončení map zemí."
+msgstr ""
 
 #. Help goal
 #: activities/geo-country/ActivityInfo.qml:24
@@ -9859,15 +9626,10 @@ msgstr ""
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
-msgstr "Přesuň dílky mapy na správné místo a dokonči mapu."
+msgstr ""
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -12662,15 +12424,10 @@ msgstr ""
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
-msgstr "Přesuň dílky mapy na správné místo a dokonči mapu."
+msgstr ""
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -13798,12 +13555,9 @@ msgstr ""
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
-msgstr "Napiš padající písmeno, než dopadne na zem."
+msgstr ""
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -14646,16 +14400,11 @@ msgstr "Nauč se počítat pomocí čtyř operátorů."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using additions, subtractions, multiplications "
-#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
 "division."
-msgstr "Budeš umět počítat pomocí sčítání, odčítání, násobení a dělení."
+msgstr ""
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -14754,12 +14503,9 @@ msgstr ""
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Procvičuj násobení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14769,16 +14515,11 @@ msgstr "Znalost matematických operací."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
-msgstr "Přesuň čísla a operátory do příkladu tak, aby vyšel správný výsledek."
+msgstr ""
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -14846,12 +14587,9 @@ msgstr "Pomoz Tuxovi ven z jeskyně tím, že uhodneš skryté číslo."
 
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Procvič si sčítání čísel."
+msgstr ""
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -14991,12 +14729,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Pokusy: %1"
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:409
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Omlouváme se, zatím nemáme překlad pro tvůj jazyk."
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:410
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15006,7 +14744,7 @@ msgstr ""
 "GCompris je vyvíjen komunitou KDE. Můžeš jej překládat připojením k "
 "překladatelskému týmu na stránce <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:405
+#: activities/hangman/Hangman.qml:412
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -15023,12 +14761,9 @@ msgstr "Zjednodušená hanojská věž"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "Postav věž v prázdné oblasti napravo."
+msgstr ""
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -15039,18 +14774,11 @@ msgstr ""
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"Táhni a pusť vždy jen jeden horní dílek, který přesuneš z jedné věže na "
-"jinou tak, abys znovu postavil tu věž vpravo na jiném prázdném místě."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15065,12 +14793,9 @@ msgstr "Hanojská věž"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Přesuň věž na pravou stranu."
+msgstr ""
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -15157,12 +14882,9 @@ msgstr "Přetáhni a polož každou položku na její název."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Obohať svou slovní zásobu"
+msgstr ""
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -15977,30 +15699,21 @@ msgstr "doprava"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
-msgstr "Nauč se sčítání"
+msgstr "Výuka sčítání"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
-msgstr "Nauč se sčítání s malými čísly."
+msgstr ""
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr "Nauč se sčítat na počítadle."
+msgstr ""
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16042,12 +15755,9 @@ msgstr "Nauč se desetinná čísla"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr "Nauč se desetinná čísla"
+msgstr ""
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
@@ -16057,13 +15767,6 @@ msgstr ""
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -16071,10 +15774,6 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
-"Zobrazuje se desetinné číslo. Přesuň šipku pro výběr části lišty, poté "
-"přesuň vybranou část lišty do prázdné oblasti. Opakuj tyto kroky dokud počet "
-"přesunutých lišt neodpovídá zobrazenému desetinnému číslu. Pak klikni na "
-"tlačítko OK pro ověření tvé odpovědi."
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -16192,7 +15891,7 @@ msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Znázorni množství: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:576
+#: activities/learn_decimals/Learn_decimals.qml:591
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16211,47 +15910,26 @@ msgstr "Mezi 1 a 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr "Sčítání s čísly desítkové soustavy"
+msgstr ""
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
-msgstr "Nauč se sčítání s čísly desítkové soustavy."
+msgstr ""
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn additions with decimal numbers by counting how many squares are "
-#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Nauč se sčítat desetinná čísla tak, že spočteš kolik čtverečků je potřeba k "
-"vyjádření výsledku."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the bar, and drag the selected part of the bar to the "
-#| "empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16259,10 +15937,6 @@ msgid ""
 "area. Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
-"Zobrazuje se součet dvou desetinných čísel. Přesuň šipku pro výběr části "
-"lišty, poté přesuň vybranou část lišty do prázdné oblasti. Opakuj tyto kroky "
-"dokud počet přesunutých lišt neodpovídá výsledku součtu. Pak klikni na "
-"tlačítko OK pro ověření tvé odpovědi."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -16297,36 +15971,23 @@ msgstr "Sčítat čísla desítkové soustavy až po 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr "Odčítání s čísly desítkové soustavy."
+msgstr ""
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
-msgstr "Nauč se odčítání s čísly desítkové soustavy."
+msgstr ""
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn subtractions with decimal numbers by counting how many squares need "
-#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Nauč se odčítání s desetinnými čísly počítáním toho, kolik čtverečku je "
-"potřeba odečíst pro zobrazení výsledku."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16387,47 +16048,31 @@ msgstr "Povolit hlasy"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr "Nauč se sčítání"
+msgstr "Nauč se číslice"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr "Klikni na pár v daném příbuzenském vztahu."
+msgstr ""
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "Porovnej čísla a vyber odpovídající symbol."
+msgstr ""
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
-"Na obrazovce se zobrazí číslice. Vyplň odpovídající počet kruhů a potvrď "
-"svou odpověď."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16546,30 +16191,21 @@ msgstr "Mezi 20 a 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
-msgstr "Nauč se odčítání"
+msgstr "Výuka odčítání"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Nauč se odčítání s malými čísly"
+msgstr ""
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
-msgstr "Naučit se odčítání počítáním jejich výsledků."
+msgstr ""
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:23
@@ -16725,12 +16361,9 @@ msgstr "V jakém slově je písmeno"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr "Vybrat všechna slova, která obsahují dané písmeno."
+msgstr ""
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
@@ -16786,12 +16419,9 @@ msgstr "Vypínání světel"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr "Cílem je zhasnout všechna světla."
+msgstr ""
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
@@ -17020,23 +16650,17 @@ msgstr "Spočítej, kolik hvězd se skrývá pod magickým kloboukem."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr "Nauč se odčítat."
+msgstr ""
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
-msgstr "Odčítání."
+msgstr ""
 
 #. Help manual
 #: activities/magic-hat-minus/ActivityInfo.qml:24
@@ -17113,23 +16737,17 @@ msgstr "Spočti kolik hvězd je pod magickým kloboukem."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
-msgstr "Nauč se sčítat."
+msgstr ""
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
-msgstr "Sčítání."
+msgstr ""
 
 #. Help manual
 #: activities/magic-hat-plus/ActivityInfo.qml:24
@@ -17433,12 +17051,9 @@ msgstr "Otoč karty a najdi stejné malé i velké písmeno proti Tuxovi."
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr "Učení se velkých a malých písmen, paměť."
+msgstr ""
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -17558,12 +17173,9 @@ msgstr "Otoč karty a najdi stejný počet s číslem na kartě."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Procvičuj odčítání."
+msgstr ""
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -17632,22 +17244,16 @@ msgstr "Otoč karty a najdi příklad i s jeho výsledkem, hraješ proti Tuxovi.
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
-msgstr "Procvičuj sčítání, odčítání, násobení, dělení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
-msgstr "Sčítání, odčítání, násobení, dělení."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -17789,22 +17395,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
-msgstr "Procvičuj sčítání, odčítání."
+msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
-msgstr "Sčítání a odčítání."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:24
@@ -17846,12 +17446,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
-msgstr "Procvičuj sčítání."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -17953,21 +17550,15 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice division."
-msgstr "Procvičuj dělení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
-msgstr "Dělení."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-div-tux/ActivityInfo.qml:24
@@ -18054,9 +17645,6 @@ msgstr "Otoč karty a najdi příklad (dělení) i s jeho výsledkem."
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "Dělení"
@@ -18079,12 +17667,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
-msgstr "Procvičuj odčítání."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -18188,22 +17773,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
-msgstr "Procvičuj násobení a dělení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
-msgstr "Násobení, dělení."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:24
@@ -18247,22 +17826,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
-msgstr "Procvičuj násobení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
-msgstr "Násobení."
+msgstr ""
 
 #. Help manual
 #: activities/memory-math-mult-tux/ActivityInfo.qml:24
@@ -18409,12 +17982,9 @@ msgstr "Otoč karty a hledej stejné obrázky do páru, hraješ proti Tuxovi."
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr "Trénuj svoji zvukovou paměť."
+msgstr ""
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -18446,12 +18016,9 @@ msgstr "Otoč karty a najdi číslo s číslovkou do páru."
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Procvič si sčítání čísel."
+msgstr ""
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -18581,22 +18148,22 @@ msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs."
 msgstr "Rozpoznej karty a najdi odpovídající pár."
 
-#: activities/memory/math_util.js:15 activities/memory/math_util.js:18
+#: activities/memory/math_util.js:20 activities/memory/math_util.js:23
 msgctxt "math_util|"
 msgid "+"
 msgstr "+"
 
-#: activities/memory/math_util.js:28
+#: activities/memory/math_util.js:38
 msgctxt "math_util|"
 msgid "−"
 msgstr "−"
 
-#: activities/memory/math_util.js:39 activities/memory/math_util.js:42
+#: activities/memory/math_util.js:54 activities/memory/math_util.js:57
 msgctxt "math_util|"
 msgid "×"
 msgstr "×"
 
-#: activities/memory/math_util.js:52
+#: activities/memory/math_util.js:72
 msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
@@ -18962,7 +18529,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Vše malými písmeny"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18971,77 +18538,77 @@ msgstr ""
 "Vybral jsi nové národní prostředí. Abys jej mohl používat, musíš restartovat "
 "GCompris. <br/> Chcete nyní stáhnout odpovídající zvukové soubory?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ano"
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "Ne"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logika"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Výtvarné umění"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Hudba"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Pokus"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "Historie"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Zeměpis"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Číslování"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Výpočty"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Míry"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Znaky"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Slova"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Slovníček"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:362
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19050,12 +18617,12 @@ msgstr ""
 "Sem vložte své oblíbené aktivity kliknutím na slunce vpravo nahoře u "
 "aktivity."
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:771
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Vyhledávání aktivit"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:798
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavení aktivit"
@@ -19143,22 +18710,22 @@ msgstr ""
 "třpyt a poté táhni jeden prst na pravé straně nebo dva prsty na středu. Na "
 "dotykovém zařízení roztáhni dva prsty ve směru od třpytu ven."
 
-#: activities/mining/Mining.qml:433
+#: activities/mining/Mining.qml:438
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Jsi skvělý v přibližování. Pokračuj, dokud neuvidíš valoun zlata."
 
-#: activities/mining/Mining.qml:439
+#: activities/mining/Mining.qml:446
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Jejda, pozor, přibližuješ obraz moc daleko od třpytu."
 
-#: activities/mining/Mining.qml:445
+#: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Teď už vidíš valoun zlata, klikni na něj, abys jej sebral."
 
-#: activities/mining/Mining.qml:451
+#: activities/mining/Mining.qml:462
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19167,17 +18734,17 @@ msgstr ""
 "No, tak teď jsi už moc daleko, abys uviděl valounek zlata. Zruš přiblížení a "
 "zkus se přiblížit znovu o něco blíže ke třpytu."
 
-#: activities/mining/Mining.qml:457
+#: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Teď si oddal přiblížení a zkus najít nový třpyt."
 
-#: activities/mining/Mining.qml:463
+#: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Pokračuj v oddalování, dokud neuvidíš třpyt."
 
-#: activities/mining/Mining.qml:469
+#: activities/mining/Mining.qml:486
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Teď můžeš vidět třpyt, můžeš pokračovat přibližováním na něm."
@@ -19196,12 +18763,9 @@ msgstr "Doplň do slova chybějící písmeno."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Nauč se pořadí v abecedě"
+msgstr ""
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19259,12 +18823,9 @@ msgstr "Procvič si používání peněz."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Procvič si používání peněz."
+msgstr ""
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19371,12 +18932,9 @@ msgstr "Vrať Tuxovi nazpět včetně drobných"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "Procvič si používání peněz včetně halířů."
+msgstr ""
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -19406,12 +18964,9 @@ msgstr ""
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Balance using the International System of Units"
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr "Vyvaž váhu v metrických jednotkách"
+msgstr ""
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -19558,12 +19113,9 @@ msgstr ""
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Procvičení čtecích schopností."
+msgstr ""
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -19616,12 +19168,9 @@ msgstr "Hra mlýn (proti Tuxovi)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "Hra mlýn (proti Tuxovi)"
+msgstr ""
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -19722,12 +19271,9 @@ msgstr "Hra mlýn (s kamarádem)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "Hra mlýn (s kamarádem)"
+msgstr ""
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -19828,22 +19374,16 @@ msgstr ""
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Nauč se koloběh vody."
+msgstr ""
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on the selected points."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "Nakreslete obrázek klikáním na vybrané body."
+msgstr ""
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -19865,13 +19405,6 @@ msgstr ""
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds in increasing order. With a keyboard, use the arrow keys "
-#| "to move the helicopter. With a pointing device, just click or tap on the "
-#| "target location. To know which number you have to catch you can either "
-#| "remember it or check the number on the bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions: catch the clouds with an odd or even number in the "
@@ -19880,26 +19413,16 @@ msgid ""
 "first levels, you can see which number you have to catch on the counter in "
 "the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
-"Chytej obláčky ve zvyšujícím se pořadí. Na klávesnici pro pohyb vrtulníku "
-"použij klávesy šipek. Na ukazovacích zařízeních jen klikni nebo klepni na "
-"cílové umístění. Abys věděl které číslo máš chytit, musíš si je buď "
-"zapamatovat nebo se podívat na číslo v pravém dolním rohu."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Porovnat čísla po 2."
+msgstr ""
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Porovnat čísla po 2."
+msgstr ""
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -20136,12 +19659,9 @@ msgstr "Seřaď daná čísla vzestupně nebo sestupně."
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Čtení a řazení čísel."
+msgstr ""
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20243,12 +19763,9 @@ msgstr "Seřaď daná slova tak, aby složily smysluplnou větu."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Seřaď slova tak, aby složily smysluplnou větu."
+msgstr ""
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -20551,15 +20068,11 @@ msgstr ""
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
-msgstr "Klikni na mřížku čtverců pro přesun Tuxe dle zadaných pokynů."
+msgstr ""
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -20592,12 +20105,9 @@ msgstr "Mřížky %1x%2."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Dekódování cesty"
+msgstr ""
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -20656,12 +20166,9 @@ msgstr "Chyby: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Kódování cesty"
+msgstr ""
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -20691,7 +20198,7 @@ msgstr ""
 "myši. Pokud nebudeš klikat dostatečně rychle, Tux míč chytí. V takovém "
 "případě klikni na míč, aby se zase vrátil na původní místo."
 
-#: activities/penalty/Penalty.qml:210
+#: activities/penalty/Penalty.qml:211
 msgctxt "Penalty|"
 msgid ""
 "Double click or double tap on the side of the goal you want to put the ball "
@@ -20699,7 +20206,7 @@ msgid ""
 msgstr ""
 "Dvakrát klikni nebo dvakrát klepni na stranu brány, kam chceš míč umístit."
 
-#: activities/penalty/Penalty.qml:250
+#: activities/penalty/Penalty.qml:256
 msgctxt "Penalty|"
 msgid "Click or tap on the ball to bring it back to its initial position."
 msgstr "Klikni nebo klepni na balon, aby se vrátil zpět na původní místo."
@@ -21233,7 +20740,7 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Uložené melodie"
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21242,12 +20749,12 @@ msgstr ""
 "Tato aktivita potřebuje zvuk, proto bude přehrávat zvuky i když jsou hlasy a "
 "zvuky zakázány v hlavním nastavení."
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:555
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:556
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Pokračovat"
@@ -21412,12 +20919,9 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "Pořadí čísel"
+msgstr ""
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -21427,12 +20931,9 @@ msgstr "Hýbej s vrtulníkem, abys chytil mraky ve správném pořadí."
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Nauč se pořadí v abecedě"
+msgstr ""
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -21449,20 +20950,14 @@ msgstr ""
 "zapamatovat nebo se podívat na číslo v pravém dolním rohu."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Porovnat čísla po 2."
+msgstr ""
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Porovnat čísla po 2."
+msgstr ""
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -21482,12 +20977,9 @@ msgstr "Hra na piano"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Najdi správné datum a vyber jej v kalendáři."
+msgstr ""
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -21559,12 +21051,9 @@ msgstr "Zahraj rytmus"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Nauč se správně následovat rytmus."
+msgstr ""
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -21826,12 +21315,9 @@ msgstr ""
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr "Umí číst instrukce a logicky myslet, aby našel cestu."
+msgstr ""
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22063,12 +21549,9 @@ msgstr "Použití jak hlavní, tak smyčkové oblasti."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr "Sledování vlaků"
+msgstr ""
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -22170,7 +21653,7 @@ msgstr ""
 "Na tabuli se objeví slovo. Bude se ukazovat seznam slov zobrazovaný postupně "
 "zleva doprava. Objevilo se v tom seznamu zadané slovo?"
 
-#: activities/readingh/Readingh.qml:301
+#: activities/readingh/Readingh.qml:307
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
@@ -22181,12 +21664,12 @@ msgstr ""
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">bylo na zobrazeno.</"
 "font>"
 
-#: activities/readingh/Readingh.qml:353
+#: activities/readingh/Readingh.qml:359
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ano, bylo tam!"
 
-#: activities/readingh/Readingh.qml:374
+#: activities/readingh/Readingh.qml:380
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, nebylo tam!"
@@ -22285,12 +21768,9 @@ msgstr "Překresli obrázek zrcadlově"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Postav věž v prázdné oblasti napravo."
+msgstr ""
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -22352,7 +21832,7 @@ msgstr ""
 "doma, rozsviť mu. Zvítězíš, až budou všechny domácnosti pod proudem a "
 "všechny elektrárny budou pracovat."
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:285
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22361,7 +21841,7 @@ msgstr ""
 "Tux se vrátil z rybaření na loďce. Spusť elektrický systém tak, aby si doma "
 "mohl rozsvítit."
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:287
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22370,7 +21850,7 @@ msgstr ""
 "Pro aktivaci celého elektrického systému klikej na související součásti: "
 "slunce, mraky, přehradu, solární panely, větrné elektrárny a trafostanice."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:289
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22382,13 +21862,13 @@ msgstr ""
 "budeš potřebovat, aby všechny elektrárny fungovaly zároveň, jinak nebudeš "
 "mít dostatek energie."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:291
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Poznávej elektrický systém postavený na obnovitelných energiích. Bav se."
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:315
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22447,12 +21927,9 @@ msgstr "Tux má hlad. Pomoz mu najít ryby počítáním ke správnému kusu led
 
 #. Help goal
 #: activities/reversecount/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count intervals"
 msgctxt "ActivityInfo|"
 msgid "Learn to count intervals."
-msgstr "Počítej intervaly"
+msgstr ""
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -22497,24 +21974,16 @@ msgstr "Římské číslice"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to read a graduated line."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "Nauč se číst číselnou osu."
+msgstr ""
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
-msgstr "Nauč se číst římské číslice a převádět je na číslice arabské"
+msgstr ""
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -22530,18 +21999,11 @@ msgstr ""
 "vyjádřena písmeny latinské abecedy."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
-"Nauč se pravidla čtení Římských číslic a trénuj jejich převod z/do číslic "
-"arabských. Odpověď potvrď kliknutím na tlačítko OK."
 
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -22733,22 +22195,22 @@ msgstr "Vyvažování až do %1."
 #: activities/scalesboard/resource/8/Data.qml:38
 #: activities/scalesboard_weight/resource/2/Data.qml:32
 #: activities/scalesboard_weight/resource/3/Data.qml:33
-#: activities/scalesboard_weight/resource/4/Data.qml:34
-#: activities/scalesboard_weight/resource/4/Data.qml:40
-#: activities/scalesboard_weight/resource/4/Data.qml:46
+#: activities/scalesboard_weight/resource/4/Data.qml:38
+#: activities/scalesboard_weight/resource/4/Data.qml:44
+#: activities/scalesboard_weight/resource/4/Data.qml:50
 #: activities/scalesboard_weight/resource/5/Data.qml:31
 #: activities/scalesboard_weight/resource/5/Data.qml:37
 #: activities/scalesboard_weight/resource/5/Data.qml:43
 #: activities/scalesboard_weight/resource/6/Data.qml:38
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:32
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:33
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:34
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:40
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:46
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:38
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:44
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:50
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:32
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:38
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:44
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:41
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:45
 msgctxt "Data|"
 msgid "Drop weights on the left side to balance the scales."
 msgstr "Vyvaž váhu přesouváním závaží na levou stranu váhy."
@@ -22771,20 +22233,20 @@ msgstr "Vyvaž váhu přesouváním závaží na levou stranu váhy."
 #: activities/scalesboard/resource/8/Data.qml:55
 #: activities/scalesboard_weight/resource/2/Data.qml:37
 #: activities/scalesboard_weight/resource/3/Data.qml:39
-#: activities/scalesboard_weight/resource/4/Data.qml:52
-#: activities/scalesboard_weight/resource/4/Data.qml:59
-#: activities/scalesboard_weight/resource/4/Data.qml:66
-#: activities/scalesboard_weight/resource/4/Data.qml:72
+#: activities/scalesboard_weight/resource/4/Data.qml:56
+#: activities/scalesboard_weight/resource/4/Data.qml:63
+#: activities/scalesboard_weight/resource/4/Data.qml:70
+#: activities/scalesboard_weight/resource/4/Data.qml:76
 #: activities/scalesboard_weight/resource/5/Data.qml:48
 #: activities/scalesboard_weight/resource/5/Data.qml:54
 #: activities/scalesboard_weight/resource/5/Data.qml:61
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:32
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:37
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:39
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:52
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:59
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:66
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:72
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:56
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:63
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:70
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:76
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:49
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:55
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:61
@@ -22815,10 +22277,10 @@ msgstr "Pozor, teď můžeš závaží dávat na obě strany váhy."
 #: activities/scalesboard_weight/resource/2/Data.qml:51
 #: activities/scalesboard_weight/resource/3/Data.qml:46
 #: activities/scalesboard_weight/resource/3/Data.qml:53
-#: activities/scalesboard_weight/resource/4/Data.qml:79
-#: activities/scalesboard_weight/resource/4/Data.qml:86
-#: activities/scalesboard_weight/resource/4/Data.qml:93
-#: activities/scalesboard_weight/resource/4/Data.qml:100
+#: activities/scalesboard_weight/resource/4/Data.qml:83
+#: activities/scalesboard_weight/resource/4/Data.qml:90
+#: activities/scalesboard_weight/resource/4/Data.qml:97
+#: activities/scalesboard_weight/resource/4/Data.qml:104
 #: activities/scalesboard_weight/resource/5/Data.qml:68
 #: activities/scalesboard_weight/resource/5/Data.qml:75
 #: activities/scalesboard_weight/resource/5/Data.qml:82
@@ -22833,19 +22295,19 @@ msgstr "Pozor, teď můžeš závaží dávat na obě strany váhy."
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:51
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:46
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:53
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:79
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:86
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:93
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:100
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:83
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:90
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:97
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:104
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:68
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:75
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:82
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:89
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:96
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:60
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:67
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:74
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:81
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:64
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:71
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:78
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:85
 msgctxt "Data|"
 msgid "Now you have to guess the weight of the gift."
 msgstr "Nyní odhaduj hmotnost dárku."
@@ -22995,19 +22457,23 @@ msgctxt "Data|"
 msgid "Balance up to 10 kilograms."
 msgstr "Vyvažování až do 10 kilogramů."
 
+#: activities/scalesboard_weight/resource/4/Data.qml:16
+#: activities/scalesboard_weight/resource/4/Data.qml:17
 #: activities/scalesboard_weight/resource/4/Data.qml:18
+#: activities/scalesboard_weight/resource/4/Data.qml:19
+#: activities/scalesboard_weight/resource/4/Data.qml:22
 #: activities/scalesboard_weight/resource/6/Data.qml:23
 #, qt-format
 msgctxt "Data|"
 msgid "%1 kg"
 msgstr "%1 kg"
 
-#: activities/scalesboard_weight/resource/4/Data.qml:26
+#: activities/scalesboard_weight/resource/4/Data.qml:30
 msgctxt "Data|"
 msgid "The \"kg\" symbol at the end of a number means kilogram."
 msgstr "Jednotka \"kg\" na konci čísla znamená kilogram."
 
-#: activities/scalesboard_weight/resource/4/Data.qml:27
+#: activities/scalesboard_weight/resource/4/Data.qml:31
 msgctxt "Data|"
 msgid ""
 "The kilogram is a unit of mass, a property which corresponds to the common "
@@ -23018,10 +22484,10 @@ msgstr ""
 "toho, jak je nějaký předmět \"těžký\".\n"
 " Vyvaž váhu přesouváním závaží na levou stranu váhy."
 
-#: activities/scalesboard_weight/resource/4/Data.qml:80
-#: activities/scalesboard_weight/resource/4/Data.qml:87
-#: activities/scalesboard_weight/resource/4/Data.qml:94
-#: activities/scalesboard_weight/resource/4/Data.qml:101
+#: activities/scalesboard_weight/resource/4/Data.qml:84
+#: activities/scalesboard_weight/resource/4/Data.qml:91
+#: activities/scalesboard_weight/resource/4/Data.qml:98
+#: activities/scalesboard_weight/resource/4/Data.qml:105
 #: activities/scalesboard_weight/resource/6/Data.qml:57
 #: activities/scalesboard_weight/resource/6/Data.qml:64
 #, qt-format
@@ -23118,8 +22584,8 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:83
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:90
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:97
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:68
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:82
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:72
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:86
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift in ounce: %1"
@@ -23140,15 +22606,24 @@ msgctxt "Data|"
 msgid "Balance up to 10 pounds."
 msgstr "Vyvažování až do 10 liber."
 
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:16
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:17
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:18
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:19
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:22
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:20
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:21
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:22
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:23
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:24
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:27
 #, qt-format
 msgctxt "Data|"
 msgid "%1 lb"
 msgstr "%1 lb"
 
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:26
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:31
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:30
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:35
 msgctxt "Data|"
 msgid ""
 "The \"lb\" symbol at the end of a number means pound. The pound is a unit of "
@@ -23160,12 +22635,12 @@ msgstr ""
 "\"těžký\". Tato jednotka hmotnosti se používá ve Spojených státech "
 "amerických."
 
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:80
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:87
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:94
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:101
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:61
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:75
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:84
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:91
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:98
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:105
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:65
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:79
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift in pound: %1"
@@ -23190,8 +22665,8 @@ msgctxt "Data|"
 msgid "Balance up to 10 pounds including ounces."
 msgstr "Vyvažování až do 10 liber včetně uncí."
 
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:48
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:54
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:52
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:58
 msgctxt "Data|"
 msgid ""
 "Remember, one pound (\"lb\") equals sixteen ounces (\"oz\"). \n"
@@ -23219,12 +22694,9 @@ msgstr "Pokus se rozdělit sladkosti mezi děti."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr "Procvičuj dělení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -23748,12 +23220,9 @@ msgstr "Spočítej tečky na kostce dříve, než dopadne na zem."
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Procvičení sčítání s hrou míření"
+msgstr ""
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -23869,21 +23338,15 @@ msgstr "Čísla na dominech"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr "Spočítej tečky na kostce dříve, než dopadne na zem."
+msgstr ""
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr "Napiš počet bodů, které vidíš na každé z padajících kostek."
+msgstr ""
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -23948,12 +23411,9 @@ msgstr "Sluneční soustava"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Prohlédni si Sluneční soustavu"
+msgstr ""
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -25070,7 +24530,7 @@ msgstr ""
 "Aby z tebe byl expert na Sluneční soustavu, musíš kvíz zvládnout s "
 "úspěšností alespoň 90%."
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:357
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25080,7 +24540,7 @@ msgstr ""
 "1. Čím <b>dále</b> je planeta od Slunce, tím <b>nižší</b> je její teplota."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25091,7 +24551,7 @@ msgstr ""
 "Slunce</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25102,12 +24562,12 @@ msgstr ""
 "b>oje <b>V</b>elmi <b>Z</b>ajímavá <b>M</b>yšlenka <b>J</b>e <b>S</b>nad "
 "<b>U</b>plně <b>N</b>anic.<br>"
 
-#: activities/solar_system/SolarSystem.qml:360
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Rada"
 
-#: activities/solar_system/SolarSystem.qml:368
+#: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Prohlédni si Sluneční soustavu"
@@ -25336,36 +24796,23 @@ msgstr "Pro informace o ovládání klávesnicí se podívej do nabídky Pomoc."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr "Počtodoku"
+msgstr ""
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Řešte Počtodoku."
+msgstr ""
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
 msgstr ""
-"Rozvíjej své logické rozumové zkušenosti: spojování dat, dedukce a "
-"prostorové umístění, zatímco počítáš."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -25475,12 +24922,9 @@ msgstr "Skládačka Tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "Úkolem je sestavit zadaný tvar."
+msgstr ""
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -25492,23 +24936,12 @@ msgstr ""
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
 "support it. Drag the rotation button or around selected piece to rotate it. "
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
-"Přesuň dílek jeho přetažením. Na položkách, které to podporují, se objeví "
-"tlačítko symetrie. Klikni na tlačítko otočení nebo přes něj daný dílek "
-"přetáhni, aby se otočil. Podívej se na aktivitu 'Dětská skládačka' pro "
-"jednodušší úvod k tangramu."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -25524,12 +24957,9 @@ msgstr "Házej šipky na cíl a spočítej své skóre."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Procvič si sčítání čísel."
+msgstr ""
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -25656,12 +25086,9 @@ msgstr "Nauč se najít desítkový doplněk."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
-msgstr "Čísla od 1 do 10 a sčítání."
+msgstr ""
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25725,12 +25152,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 30 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
-msgstr "Čísla od 1 do 30 a sčítání."
+msgstr ""
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -25778,12 +25202,9 @@ msgstr "Nauč se praktické použití desítkového doplňku."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
-msgstr "Čísla od 1 do 50 a sčítání."
+msgstr ""
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -25904,12 +25325,9 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
-msgstr "Nauč se koloběh vody."
+msgstr ""
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -26035,12 +25453,9 @@ msgstr "Napiš padající slova, než se spadnou na zem."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Procvičuj rovnost při dělení."
+msgstr ""
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -26697,23 +26112,23 @@ msgctxt "DownloadDialog|"
 msgid "Abort"
 msgstr "Přerušit"
 
-#: core/DownloadDialog.qml:366
+#: core/DownloadDialog.qml:368
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
 msgstr "Chyba při stahování (kód: %1): %2"
 
-#: core/DownloadDialog.qml:394
+#: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr "Stahování proběhlo úspěšně. Datové soubory jsou nyní k dispozici."
 
-#: core/DownloadDialog.qml:396
+#: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
 msgstr "Restartuj aktivní aktivitu."
 
-#: core/DownloadDialog.qml:398
+#: core/DownloadDialog.qml:400
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Lokalizace je aktuální."
@@ -26856,47 +26271,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Jazyk GCompris"
 
-#: core/main.cpp:164
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Spustit GCompris s výchozím kurzorem systému."
 
-#: core/main.cpp:168
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Spustit GCompris bez kurzoru (režim dotykové obrazovky)."
 
-#: core/main.cpp:172
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Spustit GCompris v režimu celé obrazovky."
 
-#: core/main.cpp:176
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Spustit GCompris v okně."
 
-#: core/main.cpp:180
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Spustit GCompris s povoleným zvukem."
 
-#: core/main.cpp:184
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Spustit GCompris bez zvuku."
 
-#: core/main.cpp:187
+#: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Zakázat režim kiosku (výchozí)."
 
-#: core/main.cpp:190
+#: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Povolit režim kiosku."
 
-#: core/main.cpp:194
+#: core/main.cpp:196
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -26905,7 +26320,7 @@ msgstr ""
 "Použít softwarové vykreslování namísto OpenGL (pomalejší, ale mělo by "
 "fungovat na jakékoliv grafické kartě)."
 
-#: core/main.cpp:197
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -26914,17 +26329,17 @@ msgstr ""
 "Použít OpenGL vykreslování namísto softwarového (rychlejší, ale na některých "
 "grafických kartách může působit pády)."
 
-#: core/main.cpp:201
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Zadání aktivity při spuštění GCompris."
 
-#: core/main.cpp:206
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Vypíše všechny dostupné aktivity na standardní výstup."
 
-#: core/main.cpp:210
+#: core/main.cpp:212
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -26934,7 +26349,7 @@ msgstr ""
 "sezení zobrazit. Zvol buď jednu hodnotu (3) nebo rozsah (3-6). Hodnoty musí "
 "být mezi 1 a 6."
 
-#: core/main.cpp:214
+#: core/main.cpp:216
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -27031,417 +26446,27 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: core/ReadyButton.qml:67
+#: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Jsem připraven"
 
-#: core/Tutorial.qml:145
+#: core/Tutorial.qml:146
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Předchozí"
 
-#: core/Tutorial.qml:165
+#: core/Tutorial.qml:166
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Následující"
 
-#: core/Tutorial.qml:184
+#: core/Tutorial.qml:185
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Přeskočit"
 
-#: core/Tutorial.qml:184
+#: core/Tutorial.qml:185
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Logic training activity."
-#~ msgstr "Aktivita pro cvičení logiky."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Alphabet sequence."
-#~ msgstr "Abeceda."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby mouse"
-#~ msgstr "Dětská myš"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby puzzle"
-#~ msgstr "Dětské puzzle"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "The objective is to assemble the baby puzzle."
-#~ msgstr "Cílem je složit dětské puzzle."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A simplistic word processor to let the children play around with a "
-#~ "keyboard and see letters."
-#~ msgstr ""
-#~ "Zjednodušený textový procesor, který umožňuje dětem hrát si s klávesnicí "
-#~ "a vidět písmena."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Discover the keyboard and the letters."
-#~ msgstr "Objevuj klávesnici a písmena."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select the number of balls you wish to place in the holes and then click "
-#~ "on the OK button. The winner is the one who hasn't put a ball in the red "
-#~ "hole."
-#~ msgstr ""
-#~ "Vyber počet kuliček, které chceš vložit do děr a poté klikni na tlačítko "
-#~ "OK. Vítězem se stává ten, kdo nevloží kuličku do červené díry."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Don't put the ball in the last hole."
-#~ msgstr "Nevlož kuličku do poslední díry."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Sort the pictures into the order that tells the story."
-#~ msgstr "Seřaď obrázky do pořadí, které vypráví příběh."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Then, click on the OK button to validate your answer."
-#~ msgstr "Poté potvrď odpověď kliknutím na tlačítko OK."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Letter-name recognition."
-#~ msgstr "Rozpoznávání názvů písmen."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Change the color by moving the sliders on the tubes of paint or by "
-#~ "clicking on the + and - buttons. Then click on the OK button to validate "
-#~ "your answer."
-#~ msgstr ""
-#~ "Změň barvu posunutím jezdců na tubách barvy nebo kliknutím na tlačítkách "
-#~ "+ a -. Poté potvrď svou odpověď kliknutím na tlačítko OK."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Complete the puzzle by dragging each piece on the side to the matching "
-#~ "space in the puzzle."
-#~ msgstr ""
-#~ "Vyřeš hádanku přetažením každého kousku na straně na správné místov "
-#~ "hádance."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numeration training."
-#~ msgstr "Trénování počítání."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Motor-coordination."
-#~ msgstr "Koordinace pohybu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Arrange the pieces in the right order."
-#~ msgstr "Uspořádej části ve správném pořadí."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Kick the ball behind the goal keeper on the right."
-#~ msgstr "Kopni míč za brankáře napravo."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag a line from the ball to set its speed and direction, and release it "
-#~ "to kick the ball."
-#~ msgstr ""
-#~ "Táhni čáru z míče, nastav rychlost a směr a uvolni jik vykopnutí míče."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "A shape split in equal parts is displayed on screen."
-#~ msgstr "Na obrazovce je zobrazen model rozdělený na rovné díly."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag and drop different regions of the country to their correct locations "
-#~ "to complete the map."
-#~ msgstr "Přesuň dílky mapy státu na správné místo a dokonči mapu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drag and Drop the items to complete the map."
-#~ msgstr "Přesouvej dílky a dokonči mapu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Letter association between the screen and the keyboard."
-#~ msgstr "Asociace mezi písmeny na obrazovce a klávesnici."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn to distinguish between different colors/shapes and learn about "
-#~ "relative positions."
-#~ msgstr "Nauč se rozeznávat barvy/tvary a jejich vzájemné umístění."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Guess the algebraic expression and drag the tiles to get a result equal "
-#~ "to the Guesscount."
-#~ msgstr ""
-#~ "Vymysli matematický příklad a přesuň dílky do příkladu tak, aby výsledkem "
-#~ "bylo myšlené číslo."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Intuition and practice of algebraic-like calculations."
-#~ msgstr "Intuice a trénink algebraických počtů"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numbers."
-#~ msgstr "Čísla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "This is a good exercise to improve reading and spelling skills."
-#~ msgstr "Jde o dobrý způsob pro zlepšení čtení a psaní."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reproduce the given tower."
-#~ msgstr "Postav danou věž."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The object of the game is to move the entire stack to another peg, "
-#~ "obeying the following rules:\n"
-#~ "    only one disc may be moved at a time\n"
-#~ "    no disc may be placed atop a smaller disc\n"
-#~ msgstr ""
-#~ "Cílem hry je přesunout celou haldu na jiný trn při zachování "
-#~ "následujících pravidel:\n"
-#~ "    v jednu chvíli je možné přesunout pouze jeden kroužek\n"
-#~ "    žádný kroužek nemůže být položen nad jiný menší\n"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag and drop the top pieces only from one peg to another, to reproduce "
-#~ "the initial left side tower on the right peg."
-#~ msgstr ""
-#~ "Táhni a pusť vrchní dílky pouze z jednoho trnu na druhý tak, abys znovu "
-#~ "postavil úvodní věž zleva na pravém trnu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Vocabulary and reading."
-#~ msgstr "Slovní zásoba a čtení."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn decimals with small numbers."
-#~ msgstr "Nauč se desetinná čísla s malými čísly."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn decimals by counting how many squares are needed to represent the "
-#~ "decimal number."
-#~ msgstr ""
-#~ "Nauč se desetinná čísla tak, že spočítáš, kolik potřebuješ čtverečků k "
-#~ "vyjádření desetinného čísla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count and color the circles"
-#~ msgstr "Spočítej a vybarvi kruhy"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits from 0 to 9."
-#~ msgstr "Nauč se číslice od 0 to 9"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits by counting their corresponding value."
-#~ msgstr "Naučit se číslice počítáním jejich odpovídající hodnoty."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A letter is written. Some words are displayed, and you must find the word "
-#~ "or the words in which this letter appears."
-#~ msgstr ""
-#~ "Je napsáno písmeno a zobrazena některá slova. Musíš najít slovo nebo "
-#~ "slova, ve kterých se toto písmeno vyskytuje."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Review the major dates of the inventor of the braille system."
-#~ msgstr "Projdi si hlavní data vynálezce Braillovy slepecké abecedy."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numeration training, memory."
-#~ msgstr "Trénování počítání, paměť."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Train your memory and remove all the cards."
-#~ msgstr "Procvičuj svou paměť a odstraň všechny karty."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading numbers, memory."
-#~ msgstr "Čtení čísel, paměť."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "You must buy different items and give the exact price. At higher levels, "
-#~ "several items are displayed, and you must first calculate the total price."
-#~ msgstr ""
-#~ "Musíš kupovat různé věci a platit přesnou sumou. Ve vyšších úrovních je "
-#~ "zobrazeno několik věcí a musíš nejdříve spočítat celkovou cenu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "You must buy the different items and give the exact price. At higher "
-#~ "levels, several items are displayed, and you must first calculate the "
-#~ "total price."
-#~ msgstr ""
-#~ "Musíš kupovat různé věci a platit přesnou sumou. Ve vyšších úrovních je "
-#~ "zobrazeno několik věcí a musíš nejdříve spočítat celkovou cenu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Stiskni čísla ve správném pořadí."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare numbers."
-#~ msgstr "Porovnej čísla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Path decoding relative"
-#~ msgstr "Relativní dekódování cesty"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Path encoding relative"
-#~ msgstr "Relativní kódování cesty"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Visual perception."
-#~ msgstr "Vizuální vnímání."
-
-# 51384 AttribValues/label
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Programming maze"
-#~ msgstr "Programovací bludiště"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "This activity teaches to program Tux to reach its goal using simple "
-#~ "instructions like move forward, turn left or right."
-#~ msgstr ""
-#~ "Tato aktivita tě naučí naprogramovat Tuxe tak, aby dosáhl svého cíle "
-#~ "pomocí jednoduchých příkazů, jako je pohyb vpřed a otočení vlevo nebo "
-#~ "vpravo."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Tux is hungry. Help him find fish by programming him to the correct ice "
-#~ "spot."
-#~ msgstr ""
-#~ "Tux má hlad. Pomoz mu najít rybu. Naprogramuj ho tak, aby došel na "
-#~ "správný kus ledu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the image on the empty grid as if you saw it in a mirror."
-#~ msgstr "Překresli obrázek zrcadlově do vedlejší mřížky."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn division of numbers."
-#~ msgstr "Nauč se dělit čísla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "A simple drawing activity"
-#~ msgstr "Jednoduché kreslení"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Enhance creative skills."
-#~ msgstr "Zlepši svoji kreativitu."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "In a limited time, count the number of dots."
-#~ msgstr "V omezeném čase spočítat počet teček."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count the number on the domino before it reaches the ground."
-#~ msgstr "Sečti počet bodů na dominu dříve, než dopadne na zem."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count a number in a limited time."
-#~ msgstr "Spočítej počet bodů v omezeném čase."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Type the number you see on each falling domino."
-#~ msgstr "Napiš počet bodů, které vidíš na každém z padajících domin."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Answer the questions with a correctness of 100%."
-#~ msgstr "Zodpověz otázky se stoprocentní úspěšností."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Sudoku, place unique symbols in a grid"
-#~ msgstr "Sudoku, umísti jednotlivé symboly do mřížky"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Symbols must be unique in a row, in a column, and (if defined) in each "
-#~ "region."
-#~ msgstr ""
-#~ "Symboly musí být jedinečné jak v řádku, tak ve sloupečku a (je-li určeno) "
-#~ "také v každé oblasti."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
-#~ "cell of a grid. In the official Sudoku the grid is 9×9 and made up of 3×3 "
-#~ "subgrids (called 'regions'). In GCompris we start at lower levels with a "
-#~ "simpler version using symbols and with no regions. In all cases the grid "
-#~ "is presented with various symbols or numerals given in some cells (the "
-#~ "'givens'). Each row, column and region must contain only one instance of "
-#~ "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/"
-#~ "Sudoku&gt;)."
-#~ msgstr ""
-#~ "Cílem této skládanky je zadat symbol nebo číslici od 1 do 9 do každé "
-#~ "buňky v mřížce. V oficiálním Sudoku má mřížka rozměry 9×9 a je tvořena "
-#~ "podmřížkami (regiony) o rozměru 3×3. V GComprisu začínáme na nižších "
-#~ "úrovních s jednodušší verzí s pomocí symbolů a bez regionů. Ve všech "
-#~ "případech je na začátku mřížka zobrazena  předvyplněnými symboly nebo "
-#~ "číslicemi, které jsou dané. Každý řádek, sloupec a region smí obsahovat "
-#~ "každý ze symbolů nebo číslic právě jednou."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select a number or a symbol in the list and click on its target position. "
-#~ "GCompris will not let you enter an invalid answer."
-#~ msgstr ""
-#~ "Vyber číslo nebo symbol v seznamu a klikni na jeho cílové umístění. "
-#~ "GCompris ti nedovolí zadat nesprávnou odpověď."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven "
-#~ "boards of cunning') is a Chinese puzzle. While the tangram is often said "
-#~ "to be ancient, its existence has only been verified as far back as 1800. "
-#~ "It consists of 7 pieces, called tans, which fit together to form a "
-#~ "square; Using the square side as 1 unit, the 7 pieces contains:\n"
-#~ "    5 right isosceles triangles, including:\n"
-#~ "        - 2 small size ones (legs of 1)\n"
-#~ "        - 1 medium size (legs of square root of 2)\n"
-#~ "        - 2 large size (legs of 2)\n"
-#~ "    1 square (side of 1) and\n"
-#~ "    1 parallelogram (sides of 1 and square root of 2)\n"
-#~ "    "
-#~ msgstr ""
-#~ "Z Wikipedie, otevřené encyklopedie. Tangram je hlavolam na principu "
-#~ "puzzle složený ze sedmi destiček geometrických tvarů: pět trojúhelníků,"
-#~ "jeden čtverec a jeden rovnoběžník, které společně vytvářejí základní "
-#~ "čtverec.Kombinací těchto segmentů se skládají různé plošné obrazce: "
-#~ "existujeminimálně 6500 možných variant. Tangramy se vyrábějí ze dřeva, "
-#~ "plastu,papíru, keramiky, skla nebo slonoviny, zpravidla bývají jednotlivé "
-#~ "kousky barevně odlišeny. "
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Hit the target and count your points."
-#~ msgstr "Zasáhni cíl a spočítej své body."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Place three marks in any horizontal, vertical, or diagonal row to win the "
-#~ "game."
-#~ msgstr ""
-#~ "Umísti tři značky do jakékoli vodorovné, svislé nebo úhlopříčné řady a "
-#~ "vyhraj hru."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Keyboard training."
-#~ msgstr "Procvičení klávesnice."

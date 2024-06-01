@@ -9470,17 +9470,17 @@ msgid ""
 "person in the orange circle.\n"
 msgstr ""
 
-#: activities/family/Family.qml:226
+#: activities/family/Family.qml:228
 msgctxt "Family|"
 msgid "Me"
 msgstr "मैं"
 
-#: activities/family/Family.qml:249
+#: activities/family/Family.qml:251
 msgctxt "Family|"
 msgid "?"
 msgstr "?"
 
-#: activities/family/Family.qml:363
+#: activities/family/Family.qml:365
 #, qt-format
 msgctxt "Family|"
 msgid "Select one of the pairs corresponding to: %1"
@@ -9820,7 +9820,7 @@ msgid ""
 "clicking on the OK button."
 msgstr "निर्देशों की समीक्षा करें और फिर वस्तुओं को निर्दिष्ट के अनुसार खींचें और छोडें। "
 
-#: activities/find_the_day/find_the_day_dataset.js:35
+#: activities/find_the_day/find_the_day_dataset.js:34
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9828,7 +9828,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 13 days after May 3rd."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:39
+#: activities/find_the_day/find_the_day_dataset.js:38
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9836,7 +9836,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 7 days after October 1st."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:43
+#: activities/find_the_day/find_the_day_dataset.js:42
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9844,7 +9844,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 31 days after July 12th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:47
+#: activities/find_the_day/find_the_day_dataset.js:46
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9852,7 +9852,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date two weeks after November 27th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:51
+#: activities/find_the_day/find_the_day_dataset.js:50
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9860,7 +9860,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 19 days before September 1st."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:55
+#: activities/find_the_day/find_the_day_dataset.js:54
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9868,7 +9868,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 days before December 8th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:75
+#: activities/find_the_day/find_the_day_dataset.js:74
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9876,7 +9876,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 days after December 5th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:79
+#: activities/find_the_day/find_the_day_dataset.js:78
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9884,7 +9884,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 12 days before November 12th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:83
+#: activities/find_the_day/find_the_day_dataset.js:82
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9892,7 +9892,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 32 days after January 5th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:87
+#: activities/find_the_day/find_the_day_dataset.js:86
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9900,7 +9900,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 days after February 23rd."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:91
+#: activities/find_the_day/find_the_day_dataset.js:90
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9908,7 +9908,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 17 days before August 16th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:112
+#: activities/find_the_day/find_the_day_dataset.js:111
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9916,7 +9916,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 3 days after January 12th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:116
+#: activities/find_the_day/find_the_day_dataset.js:115
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9924,7 +9924,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:120
+#: activities/find_the_day/find_the_day_dataset.js:119
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9932,7 +9932,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 weeks and 6 days after October 5th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:124
+#: activities/find_the_day/find_the_day_dataset.js:123
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9940,7 +9940,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:128
+#: activities/find_the_day/find_the_day_dataset.js:127
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9948,7 +9948,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 weeks and 5 days before July 2nd."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:148
+#: activities/find_the_day/find_the_day_dataset.js:147
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9956,7 +9956,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 5 months and 2 days after July 3rd."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:152
+#: activities/find_the_day/find_the_day_dataset.js:151
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9964,7 +9964,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 2 months and 4 days after October 8th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:156
+#: activities/find_the_day/find_the_day_dataset.js:155
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9972,7 +9972,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 1 month and 3 days before December 28th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:160
+#: activities/find_the_day/find_the_day_dataset.js:159
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9980,7 +9980,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 8 months and 7 days after February 28th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:164
+#: activities/find_the_day/find_the_day_dataset.js:163
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9988,7 +9988,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the day of the week 3 months and 3 days before September 15th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:183
+#: activities/find_the_day/find_the_day_dataset.js:182
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -9996,7 +9996,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 2 months, 1 week and 5 days after January 12th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:187
+#: activities/find_the_day/find_the_day_dataset.js:186
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -10004,7 +10004,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 months, 2 weeks and 1 day after August 23rd."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:191
+#: activities/find_the_day/find_the_day_dataset.js:190
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -10012,7 +10012,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:195
+#: activities/find_the_day/find_the_day_dataset.js:194
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -10020,7 +10020,7 @@ msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 month 1 week and 1 day before September 10th."
 msgstr "टी तितली को ढूंढें"
 
-#: activities/find_the_day/find_the_day_dataset.js:199
+#: activities/find_the_day/find_the_day_dataset.js:198
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the tea butterfly"
@@ -10671,7 +10671,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "निर्देश व स्कोर दिखाएँ"
 
-#: activities/frieze/Frieze.qml:290
+#: activities/frieze/Frieze.qml:291
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -16591,12 +16591,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "कोशिश: %1"
 
-#: activities/hangman/Hangman.qml:402
+#: activities/hangman/Hangman.qml:409
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षमा करें, इस भाषा का अनुवाद अभी हमारे पास उपलब्द नहीं है"
 
-#: activities/hangman/Hangman.qml:403
+#: activities/hangman/Hangman.qml:410
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -16606,7 +16606,7 @@ msgstr ""
 "जीकॉमप्री को केडीई समुदाय द्वारा विकसित किया गया है, आप <a href=\"%2\">%2</a> पर "
 "एक अनुवाद टीम में शामिल होकर जीकॉमप्री का अनुवाद कर सकते हैं।"
 
-#: activities/hangman/Hangman.qml:405
+#: activities/hangman/Hangman.qml:412
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17854,7 +17854,7 @@ msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:576
+#: activities/learn_decimals/Learn_decimals.qml:591
 #, fuzzy, qt-format
 #| msgctxt "ScaleNumber|"
 #| msgid "Enter the weight of the gift: %1"
@@ -20730,22 +20730,22 @@ msgctxt "ActivityInfo|"
 msgid "Flip the cards to find the matching pairs."
 msgstr "मिलान जोड़े खोजने के लिए कार्ड पलटें  "
 
-#: activities/memory/math_util.js:15 activities/memory/math_util.js:18
+#: activities/memory/math_util.js:20 activities/memory/math_util.js:23
 msgctxt "math_util|"
 msgid "+"
 msgstr "+"
 
-#: activities/memory/math_util.js:28
+#: activities/memory/math_util.js:38
 msgctxt "math_util|"
 msgid "−"
 msgstr ""
 
-#: activities/memory/math_util.js:39 activities/memory/math_util.js:42
+#: activities/memory/math_util.js:54 activities/memory/math_util.js:57
 msgctxt "math_util|"
 msgid "×"
 msgstr "×"
 
-#: activities/memory/math_util.js:52
+#: activities/memory/math_util.js:72
 msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
@@ -21161,7 +21161,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "सभी लोअरकेस"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:90
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid ""
@@ -21175,7 +21175,7 @@ msgstr ""
 "आपने एक नया लोकेल चुना है। आपको अपने नए लोकेल में खेलने के लिए जीकॉम्परी को फिर से शुरू करने "
 "की आवश्यकता है। <br/>क्या आप अभी संबंधित ध्वनि फ़ाइलें डाउनलोड करना चाहते हैं?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -21183,7 +21183,7 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:98
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -21191,37 +21191,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "नहीं"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:137
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numeration training"
@@ -21229,17 +21229,17 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "गणना प्रशिक्षण"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:149
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw Letters"
@@ -21247,12 +21247,12 @@ msgctxt "Menu|"
 msgid "Letters"
 msgstr "अक्षर लिखें"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:151
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Vocabulary and reading"
@@ -21260,7 +21260,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "शब्दावलि तथा पढ़ाई"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:362
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21273,12 +21273,12 @@ msgid ""
 msgstr ""
 "अपनी पसंदीदा गतिविधियों को यहां रखने के लिए गतिविधि के ऊपर दाईं ओर सूरज का चयन करें।"
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:771
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्ट गतिविधियों को खोजें"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:798
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -21365,22 +21365,22 @@ msgstr ""
 "फिर एक क्षेत्रफल पर एक उंगली खींचें और केंद्र पर दो अंगुलियां खींचें। एक स्पर्श क्षेत्र पर, दो "
 "उंगलियों को चमक से दूर खींचें, प्रत्येक दिशा में एक।"
 
-#: activities/mining/Mining.qml:433
+#: activities/mining/Mining.qml:438
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "बिल्कुल सही आप ज़ूमिंग कर रहे हैं। जब तक आप सोने का डला नहीं देखते तब तक जारी रखें। "
 
-#: activities/mining/Mining.qml:439
+#: activities/mining/Mining.qml:446
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "हूं ध्यान रखें, आप चमक से बहुत दूर ज़ूम कर रहे हैं।"
 
-#: activities/mining/Mining.qml:445
+#: activities/mining/Mining.qml:454
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "अब आप डला देखेंगे, इसे पकड़ने के लिए उस पर क्लिक करें।"
 
-#: activities/mining/Mining.qml:451
+#: activities/mining/Mining.qml:462
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -21389,17 +21389,17 @@ msgstr ""
 "हं, आप इसे देखने के लिए सोने की डली से बहुत दूर हैं फिर ज़ूम करें फिर से ज़ूम करें जितना करीब आप "
 "चमक से कर सकते हैं।"
 
-#: activities/mining/Mining.qml:457
+#: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "अब अंज़ुम करें और किसी और चमक को खोजने की कोशिश करें"
 
-#: activities/mining/Mining.qml:463
+#: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "तब तक अंज़ुम करें जब तक आप स्पार्कल नहीं देखते।"
 
-#: activities/mining/Mining.qml:469
+#: activities/mining/Mining.qml:486
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "अब आप चमक को देखते हैं, आगे बढ़ो, आप इसे ज़ूम कर सकते हैं।"
@@ -23142,7 +23142,7 @@ msgstr ""
 "पर डबल क्लिक कर सकते हैं। यदि आप हारते हैं, तो टक्स गेंद पकड़ता है आपको इसे वापस अपने पूर्व "
 "स्थान पर लाने के लिए उस पर क्लिक करना होगा"
 
-#: activities/penalty/Penalty.qml:210
+#: activities/penalty/Penalty.qml:211
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Double click or double tap on the ball to score a goal."
@@ -23152,7 +23152,7 @@ msgid ""
 "in."
 msgstr "गोल करने के लिए गेंद को दोहरा क्लिक करें या उस पर दोहरा टैप करें।"
 
-#: activities/penalty/Penalty.qml:250
+#: activities/penalty/Penalty.qml:256
 #, fuzzy
 #| msgctxt "Penalty|"
 #| msgid "Click or tap the ball to bring it back to its former position"
@@ -23746,14 +23746,14 @@ msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:548
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:549
+#: activities/piano_composition/Piano_composition.qml:555
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -23761,7 +23761,7 @@ msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/piano_composition/Piano_composition.qml:550
+#: activities/piano_composition/Piano_composition.qml:556
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -24716,7 +24716,7 @@ msgstr ""
 "एक शब्द बोर्ड के शीर्ष दाईं ओर दिखाया गया है। शब्दों की एक सूची बाएं ओर दिखाई देगी और "
 "गायब हो जाएगी।  क्या दिए गए शब्द सूची से संबंधित हैं?"
 
-#: activities/readingh/Readingh.qml:301
+#: activities/readingh/Readingh.qml:307
 #, fuzzy, qt-format
 #| msgctxt "Readingh|"
 #| msgid ""
@@ -24730,12 +24730,12 @@ msgstr ""
 "<Font color = \"# 373737\">ये जांच करें की क्या<br/> <b> <font color=\"#315AAA\">"
 "%1</font></b><br/><font color=\"# 373737 \"> शब्द प्रदर्शित किया जा रहा है।"
 
-#: activities/readingh/Readingh.qml:353
+#: activities/readingh/Readingh.qml:359
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "हाँ , मैंने इसे देखा!"
 
-#: activities/readingh/Readingh.qml:374
+#: activities/readingh/Readingh.qml:380
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "नहीं, यह वहाँ नहीं था!"
@@ -24936,7 +24936,7 @@ msgstr ""
 "उसके घर में है, उसके लिए प्रकाश बटन दबाएं। जीतने के लिए आपको सभी उपभोक्ताओं पर स्विच "
 "करना होगा, जबकि सभी उत्पादक ऊपर हैं।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:281
+#: activities/renewable_energy/RenewableEnergy.qml:285
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -24945,7 +24945,7 @@ msgstr ""
 "टक्स अपने नाव पर मछली पकड़ने से वापस आ गया है। बिजली व्यवस्था को वापस लाएं ताकि उसके "
 "घर में प्रकाश हो सके।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:283
+#: activities/renewable_energy/RenewableEnergy.qml:287
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -24960,7 +24960,7 @@ msgstr ""
 "पूरे इलेक्ट्रिकल तंत्र को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें जैसे: सूर्य, "
 "बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:289
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -24970,12 +24970,12 @@ msgstr ""
 "जब तंत्र चालू हो जाये और टक्स अपने घर में हो तब उसके लिए प्रकाश बटन दबाएं। जीतने के लिए "
 "आपको सभी उपभोक्ताओं पर स्विच करना होगा, जब सभी उत्पादक चलो हों।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:291
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "अक्षय उर्जा पर आधारित विद्युत प्रणाली के बारे में सीखें. मोज करें"
 
-#: activities/renewable_energy/RenewableEnergy.qml:311
+#: activities/renewable_energy/RenewableEnergy.qml:315
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -25349,22 +25349,22 @@ msgstr "संतुलन डब्बा"
 #: activities/scalesboard/resource/8/Data.qml:38
 #: activities/scalesboard_weight/resource/2/Data.qml:32
 #: activities/scalesboard_weight/resource/3/Data.qml:33
-#: activities/scalesboard_weight/resource/4/Data.qml:34
-#: activities/scalesboard_weight/resource/4/Data.qml:40
-#: activities/scalesboard_weight/resource/4/Data.qml:46
+#: activities/scalesboard_weight/resource/4/Data.qml:38
+#: activities/scalesboard_weight/resource/4/Data.qml:44
+#: activities/scalesboard_weight/resource/4/Data.qml:50
 #: activities/scalesboard_weight/resource/5/Data.qml:31
 #: activities/scalesboard_weight/resource/5/Data.qml:37
 #: activities/scalesboard_weight/resource/5/Data.qml:43
 #: activities/scalesboard_weight/resource/6/Data.qml:38
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:32
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:33
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:34
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:40
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:46
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:38
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:44
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:50
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:32
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:38
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:44
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:41
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:45
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Drag and Drop weights to balance the scales"
@@ -25390,20 +25390,20 @@ msgstr "तराजू को संतुलित करने के लि�
 #: activities/scalesboard/resource/8/Data.qml:55
 #: activities/scalesboard_weight/resource/2/Data.qml:37
 #: activities/scalesboard_weight/resource/3/Data.qml:39
-#: activities/scalesboard_weight/resource/4/Data.qml:52
-#: activities/scalesboard_weight/resource/4/Data.qml:59
-#: activities/scalesboard_weight/resource/4/Data.qml:66
-#: activities/scalesboard_weight/resource/4/Data.qml:72
+#: activities/scalesboard_weight/resource/4/Data.qml:56
+#: activities/scalesboard_weight/resource/4/Data.qml:63
+#: activities/scalesboard_weight/resource/4/Data.qml:70
+#: activities/scalesboard_weight/resource/4/Data.qml:76
 #: activities/scalesboard_weight/resource/5/Data.qml:48
 #: activities/scalesboard_weight/resource/5/Data.qml:54
 #: activities/scalesboard_weight/resource/5/Data.qml:61
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:32
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:37
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:39
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:52
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:59
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:66
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:72
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:56
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:63
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:70
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:76
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:49
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:55
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:61
@@ -25437,10 +25437,10 @@ msgstr "ध्यान दें, आप पैमाने के दोनो
 #: activities/scalesboard_weight/resource/2/Data.qml:51
 #: activities/scalesboard_weight/resource/3/Data.qml:46
 #: activities/scalesboard_weight/resource/3/Data.qml:53
-#: activities/scalesboard_weight/resource/4/Data.qml:79
-#: activities/scalesboard_weight/resource/4/Data.qml:86
-#: activities/scalesboard_weight/resource/4/Data.qml:93
-#: activities/scalesboard_weight/resource/4/Data.qml:100
+#: activities/scalesboard_weight/resource/4/Data.qml:83
+#: activities/scalesboard_weight/resource/4/Data.qml:90
+#: activities/scalesboard_weight/resource/4/Data.qml:97
+#: activities/scalesboard_weight/resource/4/Data.qml:104
 #: activities/scalesboard_weight/resource/5/Data.qml:68
 #: activities/scalesboard_weight/resource/5/Data.qml:75
 #: activities/scalesboard_weight/resource/5/Data.qml:82
@@ -25455,19 +25455,19 @@ msgstr "ध्यान दें, आप पैमाने के दोनो
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:51
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:46
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:53
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:79
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:86
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:93
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:100
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:83
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:90
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:97
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:104
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:68
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:75
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:82
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:89
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:96
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:60
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:67
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:74
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:81
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:64
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:71
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:78
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:85
 #, fuzzy
 #| msgctxt "ScaleNumber|"
 #| msgid "Now you have to guess the weight of the gift."
@@ -25669,7 +25669,11 @@ msgctxt "Data|"
 msgid "Balance up to 10 kilograms."
 msgstr "तराजू ठीक से संतुलित करें"
 
+#: activities/scalesboard_weight/resource/4/Data.qml:16
+#: activities/scalesboard_weight/resource/4/Data.qml:17
 #: activities/scalesboard_weight/resource/4/Data.qml:18
+#: activities/scalesboard_weight/resource/4/Data.qml:19
+#: activities/scalesboard_weight/resource/4/Data.qml:22
 #: activities/scalesboard_weight/resource/6/Data.qml:23
 #, fuzzy, qt-format
 #| msgctxt "ScalesboardWeight|"
@@ -25678,7 +25682,7 @@ msgctxt "Data|"
 msgid "%1 kg"
 msgstr "%1 कि.ग्रा."
 
-#: activities/scalesboard_weight/resource/4/Data.qml:26
+#: activities/scalesboard_weight/resource/4/Data.qml:30
 #, fuzzy
 #| msgctxt "ScalesboardWeight|"
 #| msgid "The \"kg\" symbol at the end of a number means kilogram."
@@ -25686,7 +25690,7 @@ msgctxt "Data|"
 msgid "The \"kg\" symbol at the end of a number means kilogram."
 msgstr "किसी संख्या के अंत में \"किलोग्राम\" प्रतीक का मतलब किलोग्राम है। "
 
-#: activities/scalesboard_weight/resource/4/Data.qml:27
+#: activities/scalesboard_weight/resource/4/Data.qml:31
 #, fuzzy
 #| msgctxt "ScalesboardWeight|"
 #| msgid ""
@@ -25701,10 +25705,10 @@ msgstr ""
 "पौंड द्रव्यमान का एक इकाई है, एक संपत्ति जो आम धारणा से मेल खाती है कि कैसे \"भारी\" "
 "वस्तु है यह इकाई संयुक्त राज्य अमेरिका में उपयोग की जाती है।"
 
-#: activities/scalesboard_weight/resource/4/Data.qml:80
-#: activities/scalesboard_weight/resource/4/Data.qml:87
-#: activities/scalesboard_weight/resource/4/Data.qml:94
-#: activities/scalesboard_weight/resource/4/Data.qml:101
+#: activities/scalesboard_weight/resource/4/Data.qml:84
+#: activities/scalesboard_weight/resource/4/Data.qml:91
+#: activities/scalesboard_weight/resource/4/Data.qml:98
+#: activities/scalesboard_weight/resource/4/Data.qml:105
 #: activities/scalesboard_weight/resource/6/Data.qml:57
 #: activities/scalesboard_weight/resource/6/Data.qml:64
 #, fuzzy, qt-format
@@ -25824,8 +25828,8 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:83
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:90
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:97
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:68
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:82
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:72
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:86
 #, fuzzy, qt-format
 #| msgctxt "ScalesboardWeight|"
 #| msgid "Enter the weight of the gift in ounce: %1"
@@ -25857,8 +25861,17 @@ msgctxt "Data|"
 msgid "Balance up to 10 pounds."
 msgstr "तराजू ठीक से संतुलित करें"
 
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:16
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:17
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:18
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:19
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:22
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:20
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:21
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:22
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:23
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:24
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:27
 #, fuzzy, qt-format
 #| msgctxt "ScalesboardWeight|"
 #| msgid "%1 lb"
@@ -25866,8 +25879,8 @@ msgctxt "Data|"
 msgid "%1 lb"
 msgstr "%1 पौंड"
 
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:26
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:31
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:30
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:35
 #, fuzzy
 #| msgctxt "ScalesboardWeight|"
 #| msgid ""
@@ -25882,12 +25895,12 @@ msgstr ""
 "पौंड द्रव्यमान का एक इकाई है, एक संपत्ति जो आम धारणा से मेल खाती है कि कैसे \"भारी\" "
 "वस्तु है यह इकाई संयुक्त राज्य अमेरिका में उपयोग की जाती है।"
 
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:80
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:87
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:94
-#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:101
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:61
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:75
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:84
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:91
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:98
+#: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:105
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:65
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:79
 #, fuzzy, qt-format
 #| msgctxt "ScalesboardWeight|"
 #| msgid "Enter the weight of the gift in ounce: %1"
@@ -25924,8 +25937,8 @@ msgctxt "Data|"
 msgid "Balance up to 10 pounds including ounces."
 msgstr "तराजू ठीक से संतुलित करें"
 
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:48
-#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:54
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:52
+#: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:58
 #, fuzzy
 #| msgctxt "ScalesboardWeight|"
 #| msgid "Remember, one pound (\"lb\") equals sixteen ounces (\"oz\")."
@@ -28266,7 +28279,7 @@ msgid ""
 "expert!"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:354
+#: activities/solar_system/SolarSystem.qml:357
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -28274,7 +28287,7 @@ msgid ""
 "temperature.<br><font color=\"#3bb0de\">%1</font>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:355
+#: activities/solar_system/SolarSystem.qml:358
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -28283,7 +28296,7 @@ msgid ""
 msgstr ""
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:361
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -28291,12 +28304,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:360
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr ""
 
-#: activities/solar_system/SolarSystem.qml:368
+#: activities/solar_system/SolarSystem.qml:371
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Discover the Braille system"
@@ -30062,7 +30075,7 @@ msgctxt "DownloadDialog|"
 msgid "Abort"
 msgstr "बंद करें"
 
-#: core/DownloadDialog.qml:366
+#: core/DownloadDialog.qml:368
 #, fuzzy, qt-format
 #| msgctxt "DownloadDialog|"
 #| msgid "Download error"
@@ -30070,17 +30083,17 @@ msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
 msgstr "डाउनलोड त्रुटि"
 
-#: core/DownloadDialog.qml:394
+#: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr "आपका डाउनलोड सफलतापूर्वक समाप्त हो गया। डेटा फ़ाइलें अब उपलब्ध हैं।"
 
-#: core/DownloadDialog.qml:396
+#: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
 msgstr "वर्तमान में सक्रिय किसी गतिविधि को पुनः प्रारंभ करें"
 
-#: core/DownloadDialog.qml:398
+#: core/DownloadDialog.qml:400
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "आपका स्थानीय डेटा फ़ाइलें अद्यतन हैं।"
@@ -30238,78 +30251,78 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "जीकोंप्रिस मुख्य मेनू "
 
-#: core/main.cpp:164
+#: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "जीकॉम्प्रिस को डिफ़ॉल्ट तंत्र संकेतक के साथ चलाएँ।"
 
-#: core/main.cpp:168
+#: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "जीकॉम्प्रिस को संकेतक के बिना (टच स्क्रीन मोड में) चलाएँ।"
 
-#: core/main.cpp:172
+#: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "जीकॉम्प्रिस को फुलस्क्रीन मोड में चलाएँ।"
 
-#: core/main.cpp:176
+#: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "जीकॉम्प्रिस को विंडो मोड में चलाएँ।"
 
-#: core/main.cpp:180
+#: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "जीकॉम्प्रिस को ध्वनि के साथ चलाएँ।"
 
-#: core/main.cpp:184
+#: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "जीकॉम्प्रिस को ध्वनि के बिना चलाएँ।"
 
-#: core/main.cpp:187
+#: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "कियोस्क मोड (डिफ़ॉल्ट) को अक्षम करें।"
 
-#: core/main.cpp:190
+#: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "कियास्क मोड चालू करें."
 
-#: core/main.cpp:194
+#: core/main.cpp:196
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 
-#: core/main.cpp:197
+#: core/main.cpp:199
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
 
-#: core/main.cpp:201
+#: core/main.cpp:203
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:206
+#: core/main.cpp:208
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:210
+#: core/main.cpp:212
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.cpp:214
+#: core/main.cpp:216
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -30419,17 +30432,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "फ्रांस"
 
-#: core/ReadyButton.qml:67
+#: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "मैं तैयार हूँ"
 
-#: core/Tutorial.qml:145
+#: core/Tutorial.qml:146
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "पिछला"
 
-#: core/Tutorial.qml:165
+#: core/Tutorial.qml:166
 #, fuzzy
 #| msgctxt "IntroMessage|"
 #| msgid "Next"
@@ -30437,12 +30450,12 @@ msgctxt "Tutorial|"
 msgid "Next"
 msgstr "अगला"
 
-#: core/Tutorial.qml:184
+#: core/Tutorial.qml:185
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr ""
 
-#: core/Tutorial.qml:184
+#: core/Tutorial.qml:185
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
