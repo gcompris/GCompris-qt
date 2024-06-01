@@ -59,6 +59,7 @@
   <name xml:lang="zh-CN">GCompris</name>
   <name xml:lang="zh-TW">GCompris</name>
   <summary>Educational game for children</summary>
+  <summary xml:lang="ar">لعبة تعليميّة للأطفال</summary>
   <summary xml:lang="bg">Образователни игри за деца</summary>
   <summary xml:lang="br">C'hoari kelennadel evit ar vugale</summary>
   <summary xml:lang="ca">Joc educatiu per a infants</summary>
@@ -71,6 +72,7 @@
   <summary xml:lang="fr">Jeu éducatif pour enfants</summary>
   <summary xml:lang="ia">Joco de Instruction  per infantes</summary>
   <summary xml:lang="it">Gioco didattico per bambini</summary>
+  <summary xml:lang="ka">საგანმანათლებლო თამაში ბავშვებისთვის</summary>
   <summary xml:lang="lt">Lavinamųjų pamokėlių bei žaidimų rinkinys vaikams nuo 3 iki 12</summary>
   <summary xml:lang="nl">Educatief spel voor kinderen</summary>
   <summary xml:lang="nn">Leik-og-lær-spel for barn</summary>
