@@ -8,12 +8,15 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "../../core"
+
+import "."
+import "../singletons"
 
 Item {
     property alias iconCharacter: textIcon.text
     property alias description: textDescription.text
-    property color hoverColour: Style.colourNavigationBarBackground
+    property color hoverColour: Style.colorHover
+    property bool selected: false
 
     signal navigationButtonClicked()
 
@@ -23,7 +26,7 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: enabled ? Style.colourNavigationBarBackground : Style.colourNavigationBarBackgroundDisabled
+        color: enabled ? selected ? Style.colorBackground : Style.colorNavigationBarBackground : Style.colorNavigationBarBackgroundDisabled
 
         Row {
             Text {
@@ -34,7 +37,7 @@ Item {
                     family: Style.fontAwesome
                     pixelSize: Style.pixelSizeNavigationBarIcon
                 }
-                color: Style.colourNavigationBarFont
+                color: Style.colorNavigationBarFont
                 text: "\uf11a"
                 verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
@@ -43,7 +46,7 @@ Item {
                 id: textDescription
                 width: Style.widthNavigationButtonDescription
                 height: Style.heightNavigationButtonDescription
-                color: Style.colourNavigationBarFont
+                color: Style.colorNavigationBarFont
                 text: "SET ME!!"
                 verticalAlignment: Text.AlignVCenter
                 font.pixelSize: Style.pixelSizeNavigationBarText
@@ -54,9 +57,12 @@ Item {
             anchors.fill: parent
             cursorShape: Qt.PointingHandCursor
             hoverEnabled: true
-            onEntered: background.state = "hover"
+            onEntered: if (!selected) background.state = "hover"
             onExited: background.state = ""
-            onClicked: navigationButtonClicked()
+            onClicked: {
+                background.state = ""
+                navigationButtonClicked()
+            }
         }
 
         states: [

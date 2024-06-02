@@ -33,6 +33,7 @@
 
 #ifdef WITH_SERVER
 #include "ClientNetworkMessages.h"
+#include "netconst.h"
 #endif
 
 int main(int argc, char *argv[])
@@ -295,6 +296,16 @@ int main(int argc, char *argv[])
     // Load translations
     QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
     ApplicationInfo::getInstance()->switchLocale(locale);
+
+#ifdef WITH_SERVER
+    qmlRegisterUncreatableMetaObject(
+      netconst::staticMetaObject,   // meta object created by Q_NAMESPACE macro
+      "QMLConnections",             // import statement (can be any string)
+      1, 0,                         // major and minor version of the import
+      "NetConst",                   // name in QML (does not have to match C++ name)
+      "Error: only enums"           // error in case someone tries to create a MyNamespace object
+    );
+#endif
 
     QQmlApplicationEngine engine;
 
