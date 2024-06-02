@@ -67,6 +67,9 @@ ActivityBase {
             property int mode: 1 // default is arabic numerals
             property bool voicesEnabled: true
             property string imageSource: "qrc:/gcompris/src/core/resource/empty.svg"
+
+            // Client for server version
+            property alias client: client
         }
         property string locale: ApplicationSettings.locale
         property bool isHorizontal: layoutArea.width >= layoutArea.height
@@ -79,6 +82,18 @@ ActivityBase {
                 itemsHidden();
         }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "questionText": items.questionText,
+                    "question": items.question,
+                    "answer": items.answer
+                }
+                return data
+            }
+        }
 
         function itemsVisible() {
             iAmReady.visible = false;
