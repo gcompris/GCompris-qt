@@ -93,6 +93,9 @@ ActivityBase {
             property alias textinput: textinput
             property bool inputLocked: false
             property bool instructionHidden: false
+            property alias client: client
+            property var memWords: []
+            property int errorCount: 0
         }
 
         onStart: {
@@ -116,8 +119,20 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "errors": items.errorCount,
+                    "words": items.memWords.join(" ")
+                }
+                return data
+            }
+        }
+
+
         GCTextPanel {
-            id: instructionPanel
+            id: instructionPanel        //instruction rectangle
             z: 10
             visible: items.levels
             opacity: items.instructionHidden ? 0 : 1
@@ -216,6 +231,7 @@ ActivityBase {
             id: bonus
             interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
+            onStop: items.client.sendToServer(true)         // send data for server version
         }
 
         Score {
