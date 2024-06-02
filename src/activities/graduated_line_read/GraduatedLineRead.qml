@@ -64,6 +64,7 @@ ActivityBase {
             property bool buttonsBlocked: false
             property int segmentThickness: GCStyle.thinBorder
             property int denominator: 1
+            property alias client: client
         }
 
         onStart: { Activity.start(items, activity.activityMode) }
@@ -87,6 +88,34 @@ ActivityBase {
         GCSoundEffect {
             id: smudgeSound
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var input
+                switch (activityMode) {
+                case "tick2number":
+                    input = items.cursor.children[items.solutionGrad].textValue
+                    break
+                case "number2tick":
+                    input = items.rulerModel.get(items.solutionGrad).value_.toString()
+                    break
+                }
+                var ticks = []
+                for (var i = 0; i < rulerModel.count; i++) {
+                    ticks.push(rulerModel.get(i).value_)
+                }
+
+                var data = {
+                    "start": Number(rulerModel.get(0).value_),
+                    "end": Number(rulerModel.get(rulerModel.count - 1).value_),
+                    "ticks": Number(rulerModel.count),
+                    "expected": Number(items.answer),
+                    "proposal": Number(input)
+                }
+                return data
+            }
         }
 
         GCTextPanel {
