@@ -65,6 +65,7 @@ ActivityBase {
             property bool noHint
             property bool useTwelveHourFormat: true
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: {
@@ -72,6 +73,17 @@ ActivityBase {
         }
         onStop: {
             Activity.stop()
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "expected": [items.targetH, items.targetM, items.targetS],
+                    "proposal": [items.currentH, items.currentM, items.currentS]
+                }
+                return data
+            }
         }
 
         Score {

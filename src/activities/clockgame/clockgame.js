@@ -105,6 +105,7 @@ function initQuestion() {
         items.noHint = false;
     }
     items.buttonsBlocked = false;
+    items.client.startTiming()      // for server version
 }
 
 function differentTargetH() {
@@ -171,12 +172,14 @@ function checkAnswer() {
     if (items.currentH === targetHour
                     && items.currentM === items.targetM
                     && items.currentS === items.targetS) {
-        items.score.currentSubLevel++;
-        items.score.playWinAnimation();
+        items.client.sendToServer(true)
+        items.score.currentSubLevel++
+        items.score.playWinAnimation()
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
     }
     else {
-        items.errorRectangle.startAnimation();
+        items.client.sendToServer(false)
+        items.errorRectangle.startAnimation()
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
 }
