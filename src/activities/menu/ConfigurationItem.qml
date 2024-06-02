@@ -435,7 +435,7 @@ Item {
         Flow {
             GCText {
                 id: deviceIdLabel
-                text: qsTr("Device identifier")
+                text: qsTr("Server identifier")
                 fontSize: mediumSize
                 width: dialogConfig.contentWidth / 2
                 wrapMode: Text.WordWrap

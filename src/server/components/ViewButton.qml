@@ -4,31 +4,36 @@
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Bruno Anselme <be.root@free.fr>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import "../../core"
 import QtQuick.Controls 2.12
+import "../singletons"
 
 Button {
-    property bool buttonHovered: false
-
+    width: 180
+    height: 40
     contentItem: Text {
+        anchors.fill: parent
+        anchors.margins: 5
         text: parent.text
-        opacity: parent.hovered ? 1.0 : 0.7
-        color: Style.colourNavigationBarBackground
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideRight
+        font.pixelSize: 18 * height / 40
+        font.family: Style.fontAwesome
+        color: enabled ? "black" : "gray"
     }
 
     background: Rectangle {
-        implicitWidth: 100
-        implicitHeight: 40
-        opacity: parent.hovered ? 0.1 : 1
-        radius: 2
-        color: parent.hovered ? Style.colourNavigationBarBackground : Style.colourBackground
+        implicitWidth: parent.width
+        implicitHeight: parent.height
+        radius: 5
+        color: (parent.focus || parent.hovered) ? Style.colorHoveredButton : Style.colorButton
+        border.color: "black"
+        border.width: parent.hovered ? 3 : 1
     }
 }
 

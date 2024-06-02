@@ -14,6 +14,7 @@ import QtQml
 
 import core 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
+import QMLConnections 1.0
 
 /**
  * GCompris' main QML file defining the top level window.
@@ -252,7 +253,7 @@ Window {
                 DownloadManager.downloadResource(GCompris.BACKGROUND_MUSIC);
                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
             },
-            qsTr("No"), 
+            qsTr("No"),
             function() {
                 ApplicationSettings.isAutomaticDownloadsEnabled = false;
             },
@@ -498,19 +499,24 @@ Window {
         onRequestConnection: {
             // Only show request connection on menu
             if(pageView.depth !== 1 || requestAlreadyInProgress) {
-                return;
+                return
+            }
+            if (clientNetworkMessages.connectionStatus() !== NetConst.NOT_CONNECTED) {
+                return
             }
             requestAlreadyInProgress = true;
             connection.requestDeviceId = requestDeviceId;
             connection.serverIp = serverIp;
-            Core.showMessageDialog(main,
+            var dialog = Core.showMessageDialog(main,
                     qsTr("Do you want to connect to server %1?").arg(connection.requestDeviceId),
                     qsTr("Yes"), function() {
-                        clientNetworkMessages.connectToServer(connection.serverIp);
-                        requestAlreadyInProgress = false;
+                        clientNetworkMessages.connectToServer(connection.serverIp)
+                        requestAlreadyInProgress = false
+                        pageView.focus = true
                     },
                     qsTr("No"), function() {
-                        requestAlreadyInProgress = false;
+                        requestAlreadyInProgress = false
+                        pageView.focus = true
                     },
                     null);
         }
@@ -519,11 +525,18 @@ Window {
             chooseLogin.visible = true
             chooseLogin.start()
         }
+        onPasswordRejected: {
+            Core.showMessageDialog(main,
+                    qsTr("Password rejected by server %1").arg(connection.requestDeviceId),
+                    qsTr("OK"), null, "", null, null);
+        }
     }
+
     GCInputDialog {
         id: chooseLogin
         visible: false
         active: visible
+        focus: false
         anchors.fill: parent
 
         message: qsTr("Select your login")
@@ -556,13 +569,14 @@ Window {
         content: ListView {
             id: view
             width: chooseLogin.width
-            height: 100 * ApplicationInfo.ratio
+            height: 200 * ApplicationInfo.ratio
             contentHeight: 60 * ApplicationInfo.ratio * model.count
             interactive: true
             clip: true
             model: chooseLogin.model
             delegate: GCDialogCheckBox {
                 id: userBox
+                width: chooseLogin.width - 20
                 text: modelData
                 checked: false
                 ButtonGroup.group: exclusiveGroup
@@ -579,7 +593,7 @@ Window {
         ButtonGroup {
             id: exclusiveGroup
             onClicked: {
-                if(button) chooseLogin.chosenLogin = button.text;
+                if (button) chooseLogin.chosenLogin = button.text;
             }
         }
     }
@@ -587,47 +601,87 @@ Window {
         id: choosePassword
         visible: false
         active: visible
+        focus: false
         anchors.fill: parent
+        message: qsTr("Enter your password")
 
-        message: qsTr("Select your password")
         onClose: {
             // Reinitialise info once we have logged
+            passModel.clear()
             chooseLogin.chosenLogin = ""
-            chosenPassword = "";
             choosePassword.visible = false;
         }
 
         button1Text: qsTr("OK")
         button2Text: qsTr("Cancel")
         onButton1Hit: {
-            console.log("selected password:", chosenPassword)
-            console.log("selected user name:", chooseLogin.chosenLogin)
+            var pictures = []
+            for (var i = 0; i < passModel.count; i++)
+                pictures.push(passModel.get(i).icon_)
+            var chosenPassword = pictures.join("-")
+            console.warn("selected user name:", chooseLogin.chosenLogin)
+            console.warn("selected password:", chosenPassword)
             clientNetworkMessages.sendLoginMessage(chooseLogin.chosenLogin, chosenPassword)
         }
 
-        property string chosenPassword
-        content: GridView {
-            id: view
-            width: choosePassword.width - 60
-            height: 100 * ApplicationInfo.ratio
-            contentHeight: height
+        ListModel { id: imagesModel }
+        ListModel { id: passModel }
+        content: Column {
+            spacing: 50
+            ListView {
+                id: passwordChoice
+                width: choosePassword.width - 60
+                height: 70 * ApplicationInfo.ratio
+                contentHeight: height
+                spacing: 20
+                anchors.horizontalCenter: parent.horizontalCenter
+                orientation: ListView.Horizontal
 
-            interactive: true
-            clip: true
-            model: Core.shuffle(["1", "2", "3", "4", "5", "6"])
-            delegate: Image {
-                id: userBox
-                source: "qrc:/gcompris/src/core/resource/difficulty" + modelData + ".svg"
-                sourceSize.width: 30
-                sourceSize.height: 30
-                
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        choosePassword.chosenPassword = choosePassword.chosenPassword + modelData
+                interactive: true
+                clip: true
+                model: Core.shuffle(imagesModel)
+                delegate: Image {
+                    source: "qrc:/gcompris/src/activities/algorithm/resource/" + icon_ + ".svg"
+                    sourceSize.width: passwordChoice.width / model.count
+                    sourceSize.height: sourceSize.width
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            if (passModel.count < 4)
+                                passModel.append(imagesModel.get(index))
+                        }
                     }
                 }
             }
+            ListView {
+                id: passwordView
+                width: (choosePassword.width / 2) - 60
+                height: 70 * ApplicationInfo.ratio
+                contentHeight: height
+                spacing: 20
+                anchors.horizontalCenter: parent.horizontalCenter
+                orientation: ListView.Horizontal
+
+                interactive: true
+                clip: true
+                model: passModel
+                delegate: Image {
+                    source: "qrc:/gcompris/src/activities/algorithm/resource/" + icon_ + ".svg"
+                    sourceSize.width: passwordView.width / model.count
+                    sourceSize.height: sourceSize.width
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: passModel.remove(index, 1)
+                    }
+                }
+            }
+        }
+        Component.onCompleted: {
+            var passImages = Core.getPasswordImages()
+            for (var i = 0; i < passImages.length; i++)     // Move string array to ListModel
+                imagesModel.append({ "icon_": passImages[i] })
         }
     }
 
@@ -731,7 +785,7 @@ Window {
             if(!exitItem.isDialog && !enterItem.isDialog) {
                 playIntroVoice(enterItem.activityInfo.name);
             }
-            
+
             if(enterItem.isMusicalActivity) {
                 main.isMusicalActivityRunning = true
             }
