@@ -71,18 +71,20 @@ function initializeValues() {
     items.currentSelectedBulb = -1
     items.numberSoFar = 0
     items.numberToConvert = levelDataset[items.score.currentSubLevel]
+    items.client.startTiming()      // for server version
 }
 
 function equalityCheck() {
     items.buttonsBlocked = true
-    if(items.numberSoFar == items.numberToConvert) {
+    if(items.numberSoFar === items.numberToConvert) {
         items.score.currentSubLevel++
         items.score.playWinAnimation()
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
-
+        items.client.sendToServer(true)     // for server version
     } else {
         items.errorRectangle.startAnimation()
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.client.sendToServer(false)        // for server version
     }
 }
 
@@ -98,7 +100,7 @@ function nextSubLevel() {
 
 function changeState(index) {
     var currentBulb = items.bulbs.itemAt(index)
-    if(currentBulb.state == "off") {
+    if(currentBulb.state === "off") {
         currentBulb.state = "on"
         items.numberSoFar += currentBulb.value
     }
@@ -117,6 +119,7 @@ function initLevel() {
     initializeValues()
     resetBulbs()
     items.buttonsBlocked = false
+//    items.client.startTiming()      // for server version
 }
 
 function nextLevel() {
