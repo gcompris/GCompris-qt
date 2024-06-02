@@ -57,12 +57,41 @@ ActivityBase {
             property string answer: ""
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         property int baseMargins: 10 * ApplicationInfo.ratio
 
         onStart: { Activity.start(items, activityMode) }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var input
+                switch (activityMode) {
+                case "tick2number":
+                    input = items.cursor.children[items.solutionGrad].textValue
+                    break
+                case "number2tick":
+                    input = items.rulerModel.get(items.solutionGrad).value_.toString()
+                    break
+                }
+                var ticks = []
+                for (var i = 0; i < rulerModel.count; i++) {
+                    ticks.push(rulerModel.get(i).value_)
+                }
+
+                var data = {
+                    "start": Number(rulerModel.get(0).value_),
+                    "end": Number(rulerModel.get(rulerModel.count - 1).value_),
+                    "ticks": Number(rulerModel.count),
+                    "expected": Number(items.answer),
+                    "proposal": Number(input)
+                }
+                return data
+            }
+        }
 
         Rectangle {
             id: instructionArea

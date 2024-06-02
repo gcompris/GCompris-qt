@@ -141,14 +141,15 @@ function checkResult() {
     var success = false;
     switch (activityMode) {
     case "tick2number":
-        success = (items.cursor.children[items.solutionGrad].textValue === items.answer);
+        success = (items.cursor.children[items.solutionGrad].textValue === items.answer)
         break
     case "number2tick":
-        success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer);
+        success = (items.rulerModel.get(items.solutionGrad).value_.toString() === items.answer)
         if (success)
-            items.cursor.children[items.solutionGrad].textValue = items.answer;
+            items.cursor.children[items.solutionGrad].textValue = items.answer
         break
     }
+    items.client.sendToServer(success)
     if (success) {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         items.currentSubLevel ++;
@@ -181,6 +182,7 @@ function initLevel() {
     items.currentSubLevel = 0;
     createLevel();
     createRuler();
+    items.client.startTiming()      // for server version
  }
 
 function nextLevel() {
