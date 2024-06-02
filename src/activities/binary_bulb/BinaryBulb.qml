@@ -54,6 +54,7 @@ ActivityBase {
             property alias goodAnswerSound: goodAnswerSound
             property alias badAnswerSound: badAnswerSound
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: { Activity.start(items, activity.dataset) }
@@ -67,6 +68,17 @@ ActivityBase {
         GCSoundEffect {
             id: badAnswerSound
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "expected": items.numberToConvert,
+                    "result": items.numberSoFar
+                }
+                return data
+            }
         }
 
         // Tutorial section starts
@@ -215,7 +227,7 @@ ActivityBase {
             visible: activity.dataset[items.currentLevel].enableHelp
         }
 
-        OkButton {
+        BarButton {
             id: okButton
             anchors {
                 verticalCenter: reachedSoFar.verticalCenter
@@ -226,15 +238,8 @@ ActivityBase {
             width: GCStyle.bigButtonHeight
             onClicked: Activity.equalityCheck()
             enabled: !items.buttonsBlocked
-            getDataCallback: function() {
-                var data = {
-                    "expected": items.numberToConvert,
-                    "result": items.numberSoFar,
-                    "goodAnswer": (items.numberToConvert == items.numberSoFar)
-                }
-                return data
-            }
         }
+
 
         DialogHelp {
             id: dialogHelp
