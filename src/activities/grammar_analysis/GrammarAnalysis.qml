@@ -79,6 +79,7 @@ ActivityBase {
             property alias file: file
             property alias jsonParser: jsonParser
             property alias errors: errors
+            property alias client: client
             //--- Debug properties
             property bool debugActive: false
             property alias inspector: inspector
@@ -91,6 +92,29 @@ ActivityBase {
 
         onStart: { Activity.start(items, grammarMode, translationMode) }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var words = []
+                var expects = []
+                var props = []
+                for (var i = 0; i < items.rowAnswer.count; i++) {
+                    var wordCard = items.rowAnswer.itemAt(i)
+                    if (wordCard.expected !== "") {
+                        words.push(wordCard.wordText)
+                        expects.push(wordCard.expected)
+                        props.push(wordCard.proposition)
+                    }
+                }
+                var data = {
+                    "sentence": words,
+                    "expected": expects,
+                    "proposal": props
+                }
+                return data
+            }
+        }
 
         File {
             id: file

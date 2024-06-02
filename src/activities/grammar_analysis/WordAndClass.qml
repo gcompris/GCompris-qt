@@ -134,8 +134,8 @@ Item {
 
                     Image {         //
                         id: imgSvg
-                        source: (svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : svgSource
-                        width: (expected == "") ? background.baseMargins : wordsArea.itemHeight
+                        source: (svgSource === "") ? "qrc:/gcompris/src/core/resource/empty.svg" : svgSource
+                        width: (expected === "") ? background.baseMargins : wordsArea.itemHeight
                         height: width
                         sourceSize.width: width
                         sourceSize.height: width

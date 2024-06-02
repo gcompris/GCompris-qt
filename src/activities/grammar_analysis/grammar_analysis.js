@@ -214,6 +214,7 @@ function initLevel() {
     if (datas === null) return
     buildAnswer()
     items.buttonsBlocked = false
+    items.client.startTiming()      // for server version
 }
 
 function nextLevel() {
@@ -270,9 +271,11 @@ function checkResult() {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
         items.currentExercise += 1
         items.score.playWinAnimation()
+        items.client.sendToServer(true)     // for server version
     } else {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         items.errorRectangle.startAnimation()
+        items.client.sendToServer(false)    // for server version
     }
 }
 
