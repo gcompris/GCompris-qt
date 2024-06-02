@@ -61,12 +61,26 @@ ActivityBase {
             property double widthBase: (background.horizontalLayout ? layoutArea.width - clock.height - background.baseMargin : layoutArea.width) * 0.2
             property bool tuxIsMoving: false
             property bool tuxCanMove: true
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: {
             sizeChangedTimer.stop()
             Activity.stop()
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "index": Activity.fishIndex,
+                    "currentPosition": Activity.tuxIceBlockNumber,
+                    "dice1": chooseDiceBar.value1,
+                    "dice2": chooseDiceBar.value2,
+                }
+                return data
+            }
         }
 
         Keys.onEnterPressed: chooseDiceBar.click()
