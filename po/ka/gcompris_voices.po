@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-31 00:36+0000\n"
-"PO-Revision-Date: 2024-01-21 11:45+0100\n"
+"PO-Revision-Date: 2024-06-01 07:16+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -37,6 +37,7 @@ msgid ""
 "Multiply the two numbers together and type in your answer before the balloon "
 "lands in the water"
 msgstr ""
+"გაამრავლეთ ორი რიცხვი და აკრიფეთ თქვენი პაროლი, სანამ ბუშტი წყალში ჩავარდება"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
@@ -45,6 +46,7 @@ msgid ""
 "Find the result of the division and type in your answer before the balloon "
 "lands in the water"
 msgstr ""
+"იპოვეთ გაყოფის პასუხი და აკრიფეთ თქვენი პასუხი, სანამ ბუშტი წყალში ჩავარდება"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
 #: activities/algebra_minus/ActivityInfo.qml:18
@@ -53,6 +55,7 @@ msgid ""
 "Subtract the two numbers and type in your answer before the balloon lands in "
 "the water"
 msgstr ""
+"გამოაკელით ორი რიცხვი და აკრიფეთ თქვენი პაროლი, სანამ ბუშტი წყალში ჩავარდება"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
 #: activities/algebra_plus/ActivityInfo.qml:18
@@ -61,6 +64,7 @@ msgid ""
 "Add the two numbers together and type in your answer before the balloon "
 "lands in the water"
 msgstr ""
+"მიუმატეთ ორი რიცხვი და აკრიფეთ თქვენი პაროლი, სანამ ბუშტი წყალში ჩავარდება"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
 #: activities/algorithm/ActivityInfo.qml:18
@@ -69,6 +73,8 @@ msgid ""
 "Click on the missing items on the table and follow the logical sequence "
 "displayed above it."
 msgstr ""
+"დააწკაპუნეთ ცხრილის ნაკლულ ელემენტებზე და მიჰყებით ლოგიკურ მიმდევრობას, "
+"რომელიც მის ზემოთაა ნაჩვენები."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
@@ -77,6 +83,8 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
+"დააწკაპუნეთ სვეტს, სადაც გნებავთ, თქვენი ბუშტი მოთავსდეს და სცადეთ, 4 ბუშტი "
+"ტუქსზე ადრე მოათავსოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -85,31 +93,34 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens to win."
 msgstr ""
+"დააწკაპუნეთ სვეტს, სადაც გნებავთ, თქვენი ბუშტი მოთავსდეს და სცადეთ, 4 ბუშტი "
+"ტუქსზე ადრე მოათავსოთ, რომ თამაში მოიგოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
 #: activities/alphabet-sequence/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
-msgstr ""
+msgstr "გადააადგილეთ ვერტმფრენი, რომ დაიჭიროთ ღრუბლები ანბანის მიმდევრობით."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
 #: activities/analog_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how analog electricity works and create your own circuit."
 msgstr ""
+"ისწავლეთ, როგორ მუშაობს ანალოგური ელექტრონიკა და შექმენით საკუთარი წრედი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
 #: activities/baby_keyboard/ActivityInfo.qml:18
 #, kde-format
 msgid "Type any key on the keyboard and observe the result."
-msgstr ""
+msgstr "დააჭირეთ ნებისმიერ ღილაკს კლავიატურაზე და დააკვირდით შედეგს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
 #: activities/baby_mouse/ActivityInfo.qml:17
 #, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr ""
+msgstr "გადააადგილეთ თაგუნა ან შეეხეთ ეკრანს და დააკვირდით შედეგს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
@@ -118,30 +129,32 @@ msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
+"გადაათრიეთ თითოეული მოზაიკის ნაწილი, რომ სრული მოზაიკა მიიღოთ. მათი "
+"ორიენტაციის შეცვლა ისრებზე დაწკაპუნებით შეგიძლიათ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
-msgstr ""
+msgstr "მარტივი ტექსტის დამუშავება კლავიატურაზე კრეფის სასწავლად"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop the objects matching the pictures"
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ ობიექტები, რომლებიც სურათებს ემთხვევა"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
 #: activities/babyshapes/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects matching the shapes."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ ობიექტები, რომლის ფორმაც ემთხვევა."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
 #: activities/balancebox/ActivityInfo.qml:21
 #, kde-format
 msgid "Tilt the box to navigate the ball to the door."
-msgstr ""
+msgstr "დახარეთ ყუთი, რომ ბურთი კარისკენ დაგორდეს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
 #: activities/ballcatch/ActivityInfo.qml:18
@@ -149,6 +162,7 @@ msgstr ""
 msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
 msgstr ""
+"დააწექით მარცხენა და მარჯვენა ისრებს ერთდროულად, რომ ბურთი პირდაპირ გაფრინდეს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
@@ -159,6 +173,8 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
+"აირჩიეთ ბურთების რაოდენობა, რომელიც გნებავთ, ნახვრეტებში მოთავსდეს და "
+"დააწკაპუნეთ ღილაკზე 'დიახ'. მოიგებს ის, ვისაც ბურთი წითელ ნახვრეტში არ აქვს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
 #: activities/binary_bulb/ActivityInfo.qml:18
@@ -167,18 +183,21 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK"
 msgstr ""
+"ჩართეთ სწორი ნათურები, რომ წარმოადგინოთ მითითებული ათობითი რიცხვის ორობითი "
+"წარმოდგენა. როცა მიაღწევთ ამას, დააწკაპუნეთ ღილაკზე 'დიახ'"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
 msgstr ""
+"დააწკაპუნეთ ტუქსზე, რომ დაიწყოთ და შემდეგ თავიდან შექმენით ბრაილის უჯრედები."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
 #, kde-format
 msgid "Create the Braille cell for the letter."
-msgstr ""
+msgstr "ბრეილის უჯრედის შექმნა ამ ასოსთვის."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
@@ -193,7 +212,7 @@ msgstr ""
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the asked date on the calendar"
-msgstr ""
+msgstr "აირჩიეთ საჭირო თარიღი კალენდარში"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
 #: activities/canal_lock/ActivityInfo.qml:18
@@ -208,31 +227,31 @@ msgstr ""
 #: activities/categorization/ActivityInfo.qml:18
 #, kde-format
 msgid "Categorize the items into the correct group"
-msgstr ""
+msgstr "დაალაგეთ ელემენტები სწორ ჯგუფში"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers against Tux"
-msgstr ""
+msgstr "ეთამაშეთ შაში ტუქსს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr ""
+msgstr "ეთამაშეთ შაში მეგობარს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
-msgstr ""
+msgstr "ეთამაშეთ ჭადრაკი ტუქსს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
 #: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
-msgstr ""
+msgstr "ეთამაშეთ ჭადრაკი მეგობარს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
 #: activities/chess_partyend/ActivityInfo.qml:18
@@ -246,7 +265,7 @@ msgstr ""
 #: activities/chronos/ActivityInfo.qml:22
 #, kde-format
 msgid "Slide the pictures into the order that tells the story"
-msgstr ""
+msgstr "დაალაგეთ სურათები ისტორიის მიხედვით"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
@@ -257,49 +276,51 @@ msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
 msgstr ""
+"დააწკაპუნეთ საჭირო ასოზე. მისი თავიდან მოსმენა პირზე დაწკაპუნებით შეგიძლიათ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
 #: activities/clickanddraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw"
-msgstr ""
+msgstr "დააწკაპუნეთ მონიშნულ წერტილებზე და დახატეთ"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
 #: activities/clickgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Catch the fish before they leave the aquarium."
-msgstr ""
+msgstr "დაიჭირეთ თევზი, სანამ ისინი აკვარიუმს დატოვებენ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
 #: activities/clockgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag and drop the needles of the clock to display the required time"
-msgstr ""
+msgstr "გადაათრიეთ და დააგდეთ საათის ისრები, რომ საჭირო დრო გაჩვენოთ"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
 msgstr ""
+"დააყენეთ შესაბამისი ფერი ფანრების საღებავის პაკეტის ჩოჩიების გადათრევით"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr ""
+msgstr "დააყენეთ შესაბამისი ფერი ფანრების ჩოჩიების გადათრევით"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
-msgstr ""
+msgstr "დააწკაპუნეთ სწორ ფერზე"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
 #: activities/comparator/ActivityInfo.qml:20
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "აირჩიეთ სწორი შედარებით ნიშანი სიის ყოველი რიცხვის წყვილისთვის."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -313,25 +334,25 @@ msgstr ""
 #: activities/details/ActivityInfo.qml:21
 #, kde-format
 msgid "Slide the images on their respective targets"
-msgstr ""
+msgstr "გადაათრიეთ გამოსახულებები შესაბამის სამიზნეებზე"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
 #: activities/digital_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
-msgstr ""
+msgstr "გაიგეთ, როგორ მუშაობს ციფრული ელექტრონიკა და შექმენით საკუთარი წრედი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw the letter"
-msgstr ""
+msgstr "დააწკაპუნეთ მონიშნულ წერტილებზე და დახატეთ ასო"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
 #: activities/drawnumbers/ActivityInfo.qml:18
 #, kde-format
 msgid "Draw the numbers by connecting the dots in the correct order."
-msgstr ""
+msgstr "დახატეთ რიცხვები წერტილების სწორი მიმდევრობის შეერთებით."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
 #: activities/enumerate/ActivityInfo.qml:18
@@ -339,30 +360,34 @@ msgstr ""
 msgid ""
 "Count the elements by organizing them then type the answer on your keyboard."
 msgstr ""
+"დაითვალეთ ელემენტები მათი დალაგების გზით, შემდეგ კი აკრიფეთ პასუხი თქვენს "
+"კლავიატურაზე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr ""
+msgstr " გაწმნდეთ ფანჯარა თქვენი ღრუბლით და აღმოაჩინეთ დამალული სურათი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Double tap or double click on the bricks to discover the hidden picture"
-msgstr ""
+msgstr "ორმაგ წკაპი ან ორმაგი ტყაპი აგურებზე, რომ დამალული სურათი აღმოაჩინოთ"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
 #: activities/erase_clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the transparent bricks and discover the hidden picture."
 msgstr ""
+"დააწკაპუნეთ ან დაატყაპუნეთ გამჭვირვალე აგურებზე და აღმოაჩინეთ დამალული "
+"სურათი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
 #: activities/explore_farm_animals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn about farmyard animals and the noises that they make."
-msgstr ""
+msgstr "გაიგეთ შინაური ცხოველების და მათი ხმების შესახებ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
 #: activities/explore_monuments/ActivityInfo.qml:18
@@ -374,25 +399,26 @@ msgstr "მოინახულეთ ძეგლები მთელ დე
 #: activities/explore_world_animals/ActivityInfo.qml:22
 #, kde-format
 msgid "Learn about world animals and locate them on a map."
-msgstr ""
+msgstr "გაიგეთ მეტი სამყაროს ცხოველების შესახებ და იპოვეთ ისინი რუკაზე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
 #: activities/explore_world_music/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the suitcases to learn about music from around the world."
 msgstr ""
+"დააწკაპუნეთ პორტფელზე, რომ დედამიწის ხალხების მუსიკის შესახებ მეტი შეიტყოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
 #: activities/family/ActivityInfo.qml:18
 #, kde-format
 msgid "Let us understand what to call our relatives"
-msgstr ""
+msgstr "გაიგეთ, როგორ მიმართოთ ნათესავებს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
 #: activities/family_find_relative/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a pair that defines the given relation"
-msgstr ""
+msgstr "დააწკაპუნეთ წყვილზე, რომლებიც მითითებული ტიპის ნათესავები არიან"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
 #: activities/fifteen/ActivityInfo.qml:18
@@ -413,50 +439,52 @@ msgstr "აირჩეთ საჭირო დღე."
 #: activities/followline/ActivityInfo.qml:18
 #, kde-format
 msgid " Move the mouse or your finger along the pipe to stop the fire."
-msgstr ""
+msgstr " გადაიტანეთ თაგუნა ან თქვენი თითი მილის გასწვრივ, რომ ხანძარი ჩააქროთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
 #: activities/football/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag a line from the ball to set the speed and direction of your kick."
 msgstr ""
+"გადაათრიეთ ხაზი ბუშტიდან, რომ დააყენოთ თქვენი დარტყმის სიჩქარე და "
+"მიმართულება."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
 #: activities/fractions_create/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "აირჩიეთ ნაწილების საჭირო რაოდენობა, როგორც ეს ინსტრუქციაშია აღწერილი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "სწორი გასაყოფისა და გამყოფის პოვნა მითითებული წილადისთვის"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "გაიმეორეთ და დაასრულეთ მიმდევრობა."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the regions to complete the country maps."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ რეგიონები, რომ ქვეყნების რუკები დაასრულოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
 #: activities/geography/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects to complete the map."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ ობიექტები, რომ რუკა დაასრულოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
 #: activities/gletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the letters on your keyboard before they reach the ground."
-msgstr ""
+msgstr "აკრიფეთ ასოები თქვენს კლავიატურაზე, სანამ ისინი მიწაზე დაცვივდება."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
 #: activities/gnumch-equality/ActivityInfo.qml:18
@@ -502,13 +530,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "იპოვეთ მნიშვნელობა, რომელიც შკალაზე მითითებულ ადგილს შესაბამება."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "მითითებული მნიშვნელობის მოთავსება შკალაზე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -516,13 +544,13 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "მიანიჭეთ მოთხოვნილი გრამატიკული კლასები შესაბამის სიტყვებს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
 #, kde-format
 msgid "Color the graph so that no two adjacent nodes have the same color."
-msgstr ""
+msgstr "შეღებეთ გრაფიკ ისე, რომ ახლომდებარე კვანძებს იგივე ფერი არ ჰქონდეთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
 #: activities/gravity/ActivityInfo.qml:22
@@ -530,12 +558,14 @@ msgstr ""
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
 msgstr ""
+"გადაადგილეთ კოსმოსური ხომალდი, რომ თავიდან აიცილოთ პლანეტებთან შეჯახება და "
+"მიაღწიეთ კოსმოსურ სადგურამდე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "გამოიყენეთ ოთხი რიცხვი მითითებული ოპერატორებით, რომ 24 მიიღოთ"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -543,18 +573,19 @@ msgstr ""
 msgid ""
 "Use the numbers and operations suggested to find the results proposed above."
 msgstr ""
+"გამოიყენეთ რიცხვები და ოპერაციები, რომ ზემოთ ნაჩვენები პასუხები მიიღოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
 #: activities/guessnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
-msgstr ""
+msgstr "გამოიცანით რიცხვი მითითებული შუალედიდან რიცხვის ჩაწერით."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
-msgstr ""
+msgstr "სიტყვა დამალულია. ის ასო-ასო უნდა აღმოაჩნითო."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
 #: activities/hanoi/ActivityInfo.qml:18
@@ -584,19 +615,21 @@ msgstr ""
 #: activities/imagename/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop each item above its name."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ ელემენტები თავიანთი სახელის ზემოდან."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
 #: activities/instruments/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the correct musical instrument."
-msgstr ""
+msgstr "დააწკაპუნეთ სწორ მუსიკალურ ინსტრუმენტზე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
 msgstr ""
+"გამოიყენეთ ისრის ღილაკები, რომ თქვენი კოსმოსური ხომალდი უსაფრთხოდ დასვათ "
+"დასაჯდომ მოედანზე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
 #: activities/lang/ActivityInfo.qml:24
@@ -612,7 +645,7 @@ msgstr ""
 #: activities/learn_subtractions/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr ""
+msgstr "დააწკაპუნეთ წრეებზე, რომ ოპერაციის შედეგი შეიყვანოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -634,13 +667,13 @@ msgstr ""
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
 #, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr ""
+msgstr "დააწკაპუნეთ ოთხკუთხედებზე, რომ გამოკლების პასუხი წარმოადგინოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to match the given digit."
-msgstr ""
+msgstr "დააწკაპუნეთ წრეებზე, რომ საჭირო ციფრთან დამთხვევა იპოვოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
 #: activities/learn_quantities/ActivityInfo.qml:17
@@ -669,25 +702,25 @@ msgstr ""
 #: activities/letter-in-word/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on all the words containing the wanted letter."
-msgstr ""
+msgstr "დააწკაპუნეთ ყველა სიტყვაზე, რომელიც საძებნ ასოს შეიცავს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
 #: activities/lightsoff/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the lamps to turn them off."
-msgstr ""
+msgstr "დააწკაპუნეთ ნათურებზე, რომ გამორთოთ ისინი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "louis-braille"
 #: activities/louis-braille/ActivityInfo.qml:18
 #, kde-format
 msgid "Discover the history of Louis Braille."
-msgstr ""
+msgstr "აღმოაჩინეთ ლუის ბრაილის ისტორია."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
 #: activities/magic-hat-minus/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the hat. How many stars are still hiding under the hat."
-msgstr ""
+msgstr "დააწკაპუნეთ ქუდზე. რამდენი ვარსკვლავი იმალება ჯერ კიდევ ქუდის ქვეშ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
 #: activities/magic-hat-plus/ActivityInfo.qml:18
@@ -781,7 +814,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on an audio card and find its double."
-msgstr ""
+msgstr "დააწკაპუნეთ ხმის ბარათზე და იპოვეთ მისი ასლი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
@@ -789,13 +822,13 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a card and find its double."
-msgstr ""
+msgstr "დააწკაპუნეთ ბარათზე და იპოვეთ მისი ასლი."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
 #: activities/memory-wordnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the numeric with the word."
-msgstr ""
+msgstr "რიცხვის შედარება სიტყვასთან."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
 #: activities/mining/ActivityInfo.qml:18
@@ -818,7 +851,7 @@ msgstr ""
 #: activities/money/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the money to pay."
-msgstr ""
+msgstr "დააწკაპუნეთ ან დაატყაპუნეთ ფულზე, რომ გადაიხადოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
@@ -826,25 +859,27 @@ msgstr ""
 #: activities/money_back_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money at the bottom of the screen to give Tux his change."
-msgstr ""
+msgstr "დააწკაპუნეთ ფულზე ეკრანის ქვედა ნაწილში, რომ ტუქსს ხურდა დაუბრუნოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
 #: activities/money_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money to pay."
-msgstr ""
+msgstr "დააწკაპუნეთ ფულზე, რომ გადაიხადოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr ""
+msgstr "ისწავლეთ და იმეცადინეთ საერთაშორისო მორზეს კოდი"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
 #, kde-format
 msgid "Put each item at the same place as in the given example."
 msgstr ""
+"აიღეთ თითოეული ელემენტი და დადეთ იგივე ადგილზე, რომელზეც ის მოცემულ "
+"მაგალითშია."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
@@ -866,7 +901,7 @@ msgstr ""
 #: activities/note_names/ActivityInfo.qml:21
 #, kde-format
 msgid "Identify the note and press the correct piano key"
-msgstr ""
+msgstr "გამოიცანით ნოტა და დააჭირეთ სწორ პიანინოს ღილაკს"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
 #: activities/number_sequence/ActivityInfo.qml:18
@@ -886,25 +921,25 @@ msgstr ""
 #: activities/ordering_alphabets/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the letters in the correct order."
-msgstr ""
+msgstr "დაალაგეთ ასოები სწორი მიმდევრობით."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
 #: activities/ordering_chronology/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the given events in their chronological order."
-msgstr ""
+msgstr "დაალაგეთ მითითებული მოვლენები ქრონოლოგიური მიმდევრობით."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the numbers in the correct order."
-msgstr ""
+msgstr "დაალაგეთ რიცხვები სწორი მიმდევრობით."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
 #: activities/ordering_sentences/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr ""
+msgstr "დაალაგეთ მითითებული სიტყვები, რომ აზრის მქონე წინადადება მიიღოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
@@ -912,13 +947,13 @@ msgstr ""
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr ""
+msgstr "დაიჭირეთ სულ ცოტა 25 თესლი, რომ თამაში მოიგოთ"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
 #, kde-format
 msgid "Catch and drop each piece on the points."
-msgstr ""
+msgstr "დაიჭირეთ და დაყარეთ თითოეული ნაწილი წერტილებზე."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
@@ -942,13 +977,13 @@ msgstr ""
 #: activities/penalty/ActivityInfo.qml:18
 #, kde-format
 msgid "Double click or double tap on the goal, in order to score."
-msgstr ""
+msgstr "დააწკაპუნეთ ან დაატყაპუნეთ ორჯერ კარგს, რომ გოლი გაიტანოთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
 #: activities/photo_hunter/ActivityInfo.qml:18
 #, kde-format
 msgid "look at the two pictures carefully and click where you see a difference"
-msgstr ""
+msgstr "შეხედეთ ორ სურათს დაკვირვებით და დააწკაპუნეთ განსხვავებებზე"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
 #: activities/piano_composition/ActivityInfo.qml:19
@@ -1004,12 +1039,13 @@ msgstr ""
 #, kde-format
 msgid "Read a list of words and say if a given word is in it."
 msgstr ""
+"წაიკითხეთ სიტყვების სია და თქვით, არის თუ არა მითითებული სიტყვა ამ სიაში."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
 #: activities/redraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the drawing tools to build an identical pattern on the right."
-msgstr ""
+msgstr "გამოიყენეთ ხატვის ხელსაწყოები, რომ ააგოთ იგივე ნიმუში, რაც მარჯვნივაა."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
 #: activities/redraw_symmetrical/ActivityInfo.qml:18
@@ -1017,6 +1053,8 @@ msgstr ""
 msgid ""
 "Use the drawing tools to reproduce symmetrically the pattern on the right."
 msgstr ""
+"გამოიყენეთ ხატვის ხელსაწყოები, რომ ააგოთ სიმეტრიული ნიმუში იმისა, რაც "
+"მარჯვნივაა."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
 #: activities/renewable_energy/ActivityInfo.qml:18
@@ -1037,6 +1075,8 @@ msgstr ""
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
 msgstr ""
+"ისწავლეთ და იმეცადინეთ გადაყვანა არაბულსა და რომაულ რიცხვით დამწერლობებს "
+"შორის"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
@@ -1046,7 +1086,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag the weights up to balance the scales."
-msgstr ""
+msgstr "გამოათრიეთ სიმძიმეები, რომ სასწორი გაასწოროთ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
 #: activities/share/ActivityInfo.qml:18
@@ -1175,6 +1215,8 @@ msgstr ""
 msgid ""
 "Slide the cars to make a space so that the red car can go out of the box."
 msgstr ""
+"გადაათრიეთ მანქანები, რომ გაათავისუფლოთ სივრცე ისე, რომ წითელი მანქანა "
+"გავიდეს."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
@@ -1188,4 +1230,4 @@ msgstr ""
 #: activities/wordsgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
-msgstr ""
+msgstr "აკრიფეთ სიტყვები თქვენს კლავიატურაზე, სანამ ისინი მიწაზე დაცვივდება."

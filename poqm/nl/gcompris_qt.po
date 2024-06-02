@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-05-31 12:47+0200\n"
+"PO-Revision-Date: 2024-06-01 11:46+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -9410,6 +9410,10 @@ msgid ""
 "follow its direction. You score a goal when the ball reaches the other edge "
 "of the field."
 msgstr ""
+"Druk op de bal en sleep er achter om de lijn naar het doel te trekken. Hoe "
+"langer de lijn, hoe krachtiger de schop. Wanneer u de lijn los laat zal de "
+"bal deze richting volgen. Je scoort een doelpunt wanneer de bal de andere "
+"rand van het veld bereikt."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -9790,6 +9794,9 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
+"Schrijf de fractie op die overeenkomt met de fractionele representatie: tel "
+"het totale aantal delen van de gerepresenteerde vorm en zet dat als de "
+"noemer. Tel daarna het aantal geselecteerde delen en zet dat als de teller."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -10033,7 +10040,7 @@ msgstr "Plaats de regio's op de kaart van het land."
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "Oefen het lokaliseren en plaatsen van de regio's van landen."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
@@ -12834,6 +12841,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
+"Oefen het lokaliseren en plaatsen van de continenten en vele landen op de "
+"wereldkaart."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
@@ -13963,6 +13972,7 @@ msgstr "Typ de vallende letters voor ze de grond raken."
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
 msgstr ""
+"Laat letters op het toetsenbord overeenkomen met letters op het scherm."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
@@ -14683,6 +14693,8 @@ msgid ""
 "Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
 msgstr ""
+"Ontwikkel jouw gevoel voor strategie, leer kleuren onderscheiden en onthou "
+"relatieve posities."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -14826,11 +14838,6 @@ msgstr "Oefenen met rekenen met gebruik van de vier operatoren."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using additions, subtractions, multiplications "
-#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
@@ -14934,16 +14941,13 @@ msgstr "Aantal keren raden"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Zoek de operaties om het vereiste resultaat te krijgen."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Vermenigvuldigen oefenen."
+msgstr "Oefenen met uiteen gerafelde berekeningen."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14953,18 +14957,13 @@ msgstr "Kennis van rekenkundige bewerkingen."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"Sleep de toepasselijke getallen en de operatoren naar de vakjes om het te "
-"raden getal te krijgen in de instructie."
+"Sleep de getallen en de operatoren naar de vakjes om het getal te krijgen "
+"gegeven in de instructies."
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -15032,12 +15031,9 @@ msgstr "Help Tux uit de grot ontsnappen door het verborgen gatal te vinden."
 
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Oefenen met optellen van getallen."
+msgstr "Oefenen met vergelijken van getallen."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15141,7 +15137,7 @@ msgstr "Raad de letters van het gegeven woord."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Verbeter je spelling en woordenschat."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15212,34 +15208,26 @@ msgstr "Versimpelde Toren van Hanoi"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "De toren rechts in de lege ruimte reproduceren."
+msgstr "De toren rechts kopiëren op de lege pin."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Ontwikkel strategisch denken."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"Sleep en laat los elke keer het bovenste stuk van de ene toren naar de "
-"andere om de toren rechts in het lege gebied te reproduceren."
+"Sleep en laat los elke keer de bovenste schijf van de ene toren naar de "
+"andere om de toren rechts in het lege pin te reproduceren."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15254,12 +15242,9 @@ msgstr "De Toren van Hanoi"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Verplaats de toren naar de rechterkant "
+msgstr "Verplaats de toren links naar de pin aan de rechterkant."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -15271,6 +15256,11 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
+"Sleep en laat één bovenste schijf per keer los, van de ene toren naar de "
+"ander, om de toren links te reproduceren aan de pin rechts. De schijven "
+"kunnen vrij heen en weer worden verplaatst op de pinnen, volgens twee "
+"regels: slechts één schijf tegelijk kan verplaatst worden en een schijf kan "
+"nooit geplaatst worden op een kleinere schijf."
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -15349,12 +15339,9 @@ msgstr "Sleep en laat het item los boven zijn naam."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Breid je woordenschat uit"
+msgstr "Breid je woordenschat uit en oefen lezen."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16179,21 +16166,15 @@ msgstr "Leer optellen"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
 msgstr "Optellen leren met kleine getallen."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr "Optellen leren door hun resultaat te tellen."
+msgstr "Optellen leren door hoeveelheden op te tellen."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16235,28 +16216,19 @@ msgstr "Decimale getallen leren"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr "Decimale getallen leren"
+msgstr "Representeer de gegeven decimale getallen."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
 msgstr ""
+"Associeer de decimale vorm van een getal met zijn grafische representatie."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -16264,9 +16236,9 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
-"Er wordt een decimaal getal getoond. Sleep de pijl om een deel van de balk "
-"te selecteren en sleep het geselecteerde deel van de balk naar het lege "
-"gebied. Herhaal deze stappen totdat het aantal los gelaten balken "
+"Er wordt een decimaal getal getoond. Sleep de pijl om een deel van de "
+"eenhedenbalk te selecteren en sleep het geselecteerde deel van de balk naar "
+"het lege gebied. Herhaal deze stappen totdat het aantal los gelaten balken "
 "overeenkomt met het getoonde decimale getal. Klik daarna op de knop OK om "
 "jouw antwoord na te kijken."
 
@@ -16411,47 +16383,28 @@ msgstr "Tussen 1 en 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
 msgstr "Optellen met decimale getallen"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
 msgstr "Optellen leren met decimale getallen."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn additions with decimal numbers by counting how many squares are "
-#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Optellen leren met decimale getallen door te tellen hoeveel vakjes nodig "
-"zijn om het resultaat weer te geven."
+"Optellen leren met decimale getallen door hun visuele representatie te "
+"manipuleren."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the bar, and drag the selected part of the bar to the "
-#| "empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16460,10 +16413,10 @@ msgid ""
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
 "Een optelsom met twee decimale getallen wordt getoond. Sleep de pijl om een "
-"deel van de balk te selecteren en sleep het geselecteerde deel van de balk "
-"naar het lege gebied. Herhaal deze stappen totdat het aantal los gelaten "
-"balken overeenkomt met het resultaat van de optelling en klik daarna op de "
-"knop OK om jouw antwoord na te kijken."
+"deel van de eenhedenbalk te selecteren en sleep het geselecteerde deel van "
+"de balk naar het lege gebied. Herhaal deze stappen totdat het aantal los "
+"gelaten balken overeenkomt met het resultaat van de optelling en klik daarna "
+"op de knop OK om jouw antwoord na te kijken."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -16498,36 +16451,25 @@ msgstr "Decimale getallen optellen tot 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
 msgstr "Aftrekken met decimale getallen"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
 msgstr "Aftrekken leren met decimale getallen."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn subtractions with decimal numbers by counting how many squares need "
-#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Aftrekken leren met decimale getallen door te tellen hoeveel vakjes "
-"afgetrokken moeten worden om het resultaat te weer te geven."
+"Aftrekken leren met decimale getallen door hun visuele representatie te "
+"manipuleren."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16595,38 +16537,29 @@ msgstr "Cijfers leren"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr "Klik op een paar dat overeenkomt met de gegeven relatie."
+msgstr "Representeer het getal dat overeenkomt met het gegeven cijfer."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "De getallen vergelijken en kies het bijbehorende teken."
+msgstr ""
+"Leer de getallen gerepresenteerd door een enkel cijfer en de bijbehorende "
+"hoeveelheden."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
 "Er verschijnt een cijfer op het scherm. Vul het bijbehorende aantal rondjes "
-"en kijk of jouw antwoord goed is."
+"gerepresenteerd door het cijfer en kijk of jouw antwoord goed is."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16753,21 +16686,15 @@ msgstr "Leer getallen van elkaar aftrekken"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Aftrekken leren met kleine getallen."
+msgstr "Leer aftrekken met kleine getallen."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
-msgstr "Aftrekken leren door hun resultaat te tellen."
+msgstr "Leer aftrekken door hun resultaat te tellen."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:23
@@ -16926,18 +16853,15 @@ msgstr "Letter in welk woord"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr "Alle woorden selecteren die de gegeven letter bevatten."
+msgstr "Zoek de woorden met de gegeven letter."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "Train het vinden van een gegeven letter in woorden."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -16987,18 +16911,16 @@ msgstr "Lichten uit"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr "Het doel is alle lichten uit te doen."
+msgstr "Draai alle lichten uit."
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
 msgstr ""
+"Ontwikkel anticipatie, strategie en ruimtelijke visualisatie vaardigheden."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -17080,6 +17002,8 @@ msgid ""
 "Read about some key events in the life of the braille system inventor, and "
 "remember their chronological order."
 msgstr ""
+"Lees over enige sleutelgebeurtenissen in het leven van de uitvinder van het "
+"braille systeem en onthoud hun chronologische volgorde."
 
 #. Help goal
 #: activities/louis-braille/ActivityInfo.qml:20
@@ -17088,6 +17012,8 @@ msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
 msgstr ""
+"Onthoud de volgorde van een reeks gebeurtenissen. Kom wat te weten over het "
+"leven van Louis Braille."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -17229,9 +17155,6 @@ msgstr "Bereken hoeveel sterren zich onder de magische hoed bevinden."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
 msgstr "Aftrekken leren."
@@ -17240,12 +17163,9 @@ msgstr "Aftrekken leren."
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
-msgstr "Aftrekken:"
+msgstr "Aftrekken."
 
 #. Help manual
 #: activities/magic-hat-minus/ActivityInfo.qml:24
@@ -17323,9 +17243,6 @@ msgstr "Tel hoeveel sterren zich onder de magische hoed bevinden"
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
 msgstr "Optellen leren."
@@ -17334,12 +17251,9 @@ msgstr "Optellen leren."
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
-msgstr "Optelling"
+msgstr "Optellen."
 
 #. Help manual
 #: activities/magic-hat-plus/ActivityInfo.qml:24
