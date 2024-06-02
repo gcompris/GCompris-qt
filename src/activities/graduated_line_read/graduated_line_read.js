@@ -178,6 +178,7 @@ function checkResult() {
             items.cursor.children[items.solutionGrad].textValue = items.boxText.text
         break
     }
+    items.client.sendToServer(success)
     if (success) {
         items.goodAnswerSound.play();
         items.currentSubLevel ++;
@@ -210,7 +211,8 @@ function initLevel() {
     createLevel();
     createRuler();
     updateNumpadWithDecimalPoint();
-}
+    items.client.startTiming()      // for server version
+ }
 
 function nextLevel() {
     items.score.stopWinAnimation()
