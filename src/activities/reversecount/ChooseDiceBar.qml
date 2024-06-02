@@ -14,7 +14,6 @@ import core 1.0
 import "../../core"
 import "reversecount.js" as Activity
 
-
 Item {
     id: chooseDiceBar
     z: 1000
@@ -37,7 +36,8 @@ Item {
         id: barRow
         spacing: GCStyle.baseMargins
         anchors.centerIn: parent
-        OkButton {
+
+        BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
             width: Math.min(GCStyle.bigButtonHeight,
