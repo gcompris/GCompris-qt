@@ -1,0 +1,139 @@
+/* GCompris - PupilsChart.qml
+ *
+ * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
+ *
+ * Authors:
+ *   Bruno Anselme <be.root@free.fr>
+ *
+ *   SPDX-License-Identifier: GPL-3.0-or-later
+ */
+import QtQuick 2.12
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
+import QtCharts 2.12
+import "../../singletons"
+import "../../components"
+import "../../panels"
+import "../details"
+
+Item {
+    anchors.margins: 2
+    property string activityName: ""
+
+    function executeRequest() {
+        if (!databaseController.isDatabaseLoaded())
+            return
+
+//        console.warn(userList)
+        var clauses = []
+        clauses.push(`user_.user_id=result_.user_id`)
+        if (userList.length !== 0)
+            clauses.push(`user_.user_id in (` + userList.join(",") + `)`)
+
+        var start = calendar.strDateToSql('20240101')       // Beginning of time for GCompris-Server. Nothing older.
+        var end = calendar.strDateToSql(new Date().toLocaleString(calendar.locale, 'yyyyMMdd'))
+        if (calendar.startDate !== "") {
+            start = calendar.strDateToSql(calendar.startDate)
+            end = calendar.strDateToSql(calendar.endDate)
+        }
+        start = start.substr(0, 10)
+        end = end.substr(0, 10)
+        clauses.push(`result_day BETWEEN '${start}' AND '${end}'`)
+        var request =`SELECT user_.user_id, user_name
+            , substr(result_datetime,0,11) AS result_day
+            , count(result_.activity_id) AS count_activity
+            FROM result_, user_ WHERE ` + clauses.join(" AND ") + ` GROUP BY result_.user_id, result_day`
+//        console.warn(request)
+
+        var jsonModel = JSON.parse(databaseController.selectToJson(request))
+
+        mySeries.axisX.clear()
+        mySeries.clear()
+        var spots = {}
+        for (var i = 0; i < jsonModel.length; i++) {
+            if (!spots.hasOwnProperty(jsonModel[i].result_day))     // Create a spot for this day, if it doesn't exist
+                spots[jsonModel[i].result_day] = {}
+            spots[jsonModel[i].result_day][jsonModel[i].user_id] = jsonModel[i].count_activity
+        }
+
+        var valuesLength = Object.keys(spots).length
+        var values = {}
+        for (i = 0; i < userList.length; i++)
+            values[userList[i]] = new Array(valuesLength).fill(0)      // Prepare one array of zeros for each user
+
+        if (userList.length) {
+            var position = 0
+            for (var [key, value] of Object.entries(spots).sort()) {   // Replace some zeros with user count
+                for (var [key_, value_] of Object.entries(value)) {
+                    values[key_][position] = value_
+                }
+                position++
+            }
+        }
+
+        for (var [activity, vals] of Object.entries(values)) {      // BarSets are created in this loop
+            mySeries.append(activity, vals)
+        }
+
+        var max = 10    // Find maximum value to scale graph
+        for (i = 0; i < valuesLength; i++) {
+            var colMax = 0
+            for (var [activity, vals] of Object.entries(values))
+                colMax += vals[i]
+            max = Math.max(max, colMax)
+        }
+        mySeries.axisX.categories = Object.keys(spots).sort()       // Set axis
+        mySeries.axisY.min = 0
+        mySeries.axisY.max = (Math.floor(max / 10) + 1) * 10
+    }
+
+    Rectangle {
+        anchors.fill: parent
+        color: Style.colorBackground
+
+        Component {
+            id: lineReport
+            LineReport {}
+        }
+
+        ChartView {
+            anchors.fill: parent
+            title: "User activities chart"
+            legend.alignment: Qt.AlignBottom
+            antialiasing: true
+
+            StackedBarSeries {
+                id: mySeries
+                axisX: BarCategoryAxis {
+                    labelsAngle: -90
+                }
+
+                onClicked: {
+//                    console.warn("Click:", index, barset.label)
+                    pupilsChart.parent.push(lineReport
+                                    , { userId: Number(barset.label)
+                                        , activityId: -1
+                                        , activityName: ""
+                                        , dayFilter: mySeries.axisX.categories[index]
+                                    })
+                    pupilsChart.parent.currentItem.executeRequest()
+                }
+
+                onHovered: {
+                    var user = Master.findObjectInModel(selector.pupilPane.foldModel
+                                                        , function(item) { return item.user_id === Number(barset.label) })
+                    helpText.text = status ? mySeries.axisX.categories[index] + "   " + user.user_name : ""
+                }
+            }
+            Text {
+                id: helpText
+                x: 10
+                y: 10
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        executeRequest()
+    }
+}

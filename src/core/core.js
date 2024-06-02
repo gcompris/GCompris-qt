@@ -363,3 +363,7 @@ function fitItems(x_, y_, n_, extra_) {
     
     return Math.max(cell_size1, cell_size2);
 }
+
+function getPasswordImages() {
+    return [ "apple", "banana", "cherries", "lemon", "orange", "pear", "pineapple", "plum" ]
+}
