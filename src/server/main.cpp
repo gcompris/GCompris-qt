@@ -12,26 +12,21 @@
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
-
-#include <QtCrypto>
+#include <QTranslator>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
-#include "serverMasterController/config/ServerSettings.h"
+#include "ActivityInfoTree.h"
 
 #include <QResource>
-#include <config.h>
+// #include <config.h>
 
 #include <QQuickStyle>
 #include <QQmlContext>
 
-#include "serverMasterController/controllers/master-controller.h"
-#include "serverMasterController/controllers/network-controller.h"
-#include "serverMasterController/controllers/command-controller.h"
-#include "serverMasterController/controllers/navigation-controller.h"
-#include "serverMasterController/framework/command.h"
-#include <models/GroupData.h>
-#include <models/UserData.h>
+#include "controllers/database-controller.h"
+#include "controllers/network-controller.h"
+#include "netconst.h"
 
 #define GCOMPRIS_SERVER_APPLICATION_NAME "gcompris-server"
 
@@ -41,13 +36,11 @@ int main(int argc, char *argv[])
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
     QApplication app(argc, argv);
-    app.setOrganizationName("KDE");
+    //    app.setOrganizationName("KDE");           // set config dir to ~/.config/KDE
+    app.setOrganizationName("gcompris"); // set config dir to ~/.config/gcompris
     app.setApplicationName(GCOMPRIS_SERVER_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
 
-    // Initialise QCA
-    QCA::Initializer init;
- 
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
     // http://doc.qt.io/qt-5/osx-deployment.html
@@ -59,37 +52,50 @@ int main(int argc, char *argv[])
 
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
- 
-    if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
-        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
+    ActivityInfoTree::registerResources();
+
+    //    if (!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
+    //        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
+    if (!QResource::registerResource(ApplicationInfo::getFilePath("activities_light.rcc")))
+        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("activities_light.rcc");
     if (!QResource::registerResource(ApplicationInfo::getFilePath("server.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("server.rcc");
 
-    qmlRegisterSingletonType<ServerSettings>("GCompris", 1, 0,
-                                             "ServerSettings", ServerSettings::serverSettingsProvider);
-    
+    qmlRegisterUncreatableMetaObject(
+        netconst::staticMetaObject, // meta object created by Q_NAMESPACE macro
+        "QMLConnections", // import statement (can be any string)
+        1, 0, // major and minor version of the import
+        "NetConst", // name in QML (does not have to match C++ name)
+        "Error: only enums" // error in case someone tries to create a MyNamespace object
+    );
+
+    // Create QStandardPaths::GenericDataLocation if needed
+    QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/" + GCOMPRIS_SERVER_APPLICATION_NAME;
+    if (!QDir(path).exists()) {
+        QDir().mkdir(path);
+    }
+
+    // Load translations
+    QTranslator translator;
+    if (!translator.load("gcompris_" + QLocale::system().name(), QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
+        qDebug() << "Unable to load translation for locale " << QLocale::system().name() << ", use en_US by default";
+    }
+    // Apply translation
+    app.installTranslator(&translator);
+
     QQmlApplicationEngine engine;
 
-    controllers::MasterController masterController;
-    engine.rootContext()->setContextProperty("masterController", &masterController);
+    controllers::DatabaseController databaseController;
+    engine.rootContext()->setContextProperty("databaseController", &databaseController);
     controllers::NetworkController networkController;
-    networkController.setMasterController(&masterController);
-
     engine.rootContext()->setContextProperty("networkController", &networkController);
-    engine.load(QUrl("qrc:/gcompris/src/server/main.qml"));
 
-    qmlRegisterType<controllers::MasterController>("CM", 1, 0, "MasterController");
     qmlRegisterType<controllers::NetworkController>("CM", 1, 0, "NetworkController");
-    qmlRegisterType<controllers::NavigationController>("CM", 1, 0, "NavigationController");
-    qmlRegisterType<controllers::CommandController>("CM", 1, 0, "CommandController");
-    qmlRegisterType<framework::Command>("CM", 1, 0, "Command");
-    qmlRegisterType<GroupData>("CM", 1, 0, "GroupData");
-    qmlRegisterType<UserData>("CM", 1, 0, "UserData");
-    qmlRegisterUncreatableType<ConnectionStatus>("CM", 1, 0, "ConnectionStatus", "Not creatable as it is an enum type");
+
+    engine.load(QUrl("qrc:/gcompris/src/server/Main.qml"));
 
     // add import path for shipped qml modules:
-    engine.addImportPath(QStringLiteral("%1/../lib/qml")
-                             .arg(QCoreApplication::applicationDirPath()));
+    engine.addImportPath(QStringLiteral("%1/../lib/qml").arg(QCoreApplication::applicationDirPath()));
 
     QObject *topLevel = engine.rootObjects().value(0);
 
@@ -99,7 +105,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/server/resource/gcompris-icon.png"))));
 
     window->show();
     return app.exec();

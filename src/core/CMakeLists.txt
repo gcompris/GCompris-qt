@@ -26,16 +26,16 @@ function(install_with_symlinks)
       # (where we would have expected libprotobuf.so -> libprotobuf.so.10 -> libprotobuf.so.10.0.0)
       # in this case, we do a workaround to get the libprotobuf.so.10 using objdump
       if(UNIX)
-	execute_process(COMMAND ${CMAKE_OBJDUMP} -p ${ARGS_FILE}
-	  OUTPUT_VARIABLE OBJDUMP_OUTPUT)
-	string(REGEX REPLACE ".*SONAME *([A-Za-z0-9\.]*).*" "\\1"
-	  LIB_SO_VAR ${OBJDUMP_OUTPUT})
+  execute_process(COMMAND ${CMAKE_OBJDUMP} -p ${ARGS_FILE}
+    OUTPUT_VARIABLE OBJDUMP_OUTPUT)
+  string(REGEX REPLACE ".*SONAME *([A-Za-z0-9\.]*).*" "\\1"
+    LIB_SO_VAR ${OBJDUMP_OUTPUT})
         get_filename_component(dir "${ARGS_FILE}" DIRECTORY)
         set(LIB_SO_VAR "${dir}/${LIB_SO_VAR}")
-	if(NOT LIB_SO_VAR STREQUAL ARGS_FILE AND NOT LIB_SO_VAR STREQUAL ${SYMLINK_LIB})
-	  install_with_symlinks(FILE ${LIB_SO_VAR} DESTINATION bin)
-	endif()
-	# end of workaround
+  if(NOT LIB_SO_VAR STREQUAL ARGS_FILE AND NOT LIB_SO_VAR STREQUAL ${SYMLINK_LIB})
+    install_with_symlinks(FILE ${LIB_SO_VAR} DESTINATION bin)
+  endif()
+  # end of workaround
       endif()
     endif()
     message(STATUS "Install ${ARGS_FILE} in ${ARGS_DESTINATION}")
@@ -146,12 +146,8 @@ endif()
 # Either make ClientNetworkMessages within ifdef in the whole code, else add it by default
 if(BUILD_SERVER)
   add_definitions(-DWITH_SERVER)
-  list(APPEND gcompris_SRCS ClientNetworkMessages.cpp ClientNetworkMessages.h)
-  include_directories(${Protobuf_INCLUDE_DIRS})
+  list(APPEND gcompris_SRCS ClientNetworkMessages.cpp ClientNetworkMessages.h netconst.h)
   include_directories(${CMAKE_CURRENT_BINARY_DIR})
-  protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS gcompris.proto)
-  set_property(SOURCE ${PROTO_SRCS} ${PROTO_HDRS} PROPERTY SKIP_AUTOMOC ON)
-  list(APPEND gcompris_SRCS ${PROTO_SRCS} ${PROTO_HDRS})
 endif()
 
 if(ANDROID)

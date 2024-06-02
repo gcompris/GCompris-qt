@@ -32,3 +32,9 @@ foreach(ACTIVITY ${ACTIVITIES})
 endforeach(ACTIVITY ${ACTIVITIES})
 
 GCOMPRIS_ADD_RCC(activities RESOURCES activities_out.txt)
+GCOMPRIS_ADD_RCC(activities_light
+  QML_FILES
+  */ActivityInfo.qml
+  RESOURCES
+  activities_out.txt
+  *.svg)

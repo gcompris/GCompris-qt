@@ -4,347 +4,220 @@
 *
 * Authors:
 *   Emmanuel Charruau <echarruau@gmail.com>
+*   Bruno Anselme <be.root@free.fr>
 *
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
 import QtQml.Models 2.12
-import QtQuick.Controls 2.12
+import QtQuick.Controls 2.15
 
-import CM 1.0
 import "../components"
-import "../../core"
-import "."
+import "../singletons"
+import "../dialogs"
+import "../panels"
 
 Item {
     id: managePupilsView
+    enabled: serverRunning
 
     signal pupilsNamesListSelected(var pupilsNamesList)
 
-    Connections {
-        target: masterController.ui_navigationController
-        onGoAddPupilDialog: addPupilDialog.open()
-        onGoAddPupilsFromListDialog: addPupilsFromListDialog.open()
-        onGoRemovePupilsDialog: removePupilsDialog.open()
-        onGoAddPupilToGroupsDialog: addPupilsToGroupsDialog.open()
-        onGoRemovePupilToGroupsDialog: removePupilsToGroupsDialog.open()
+    GroupDialog {
+        id: removeGroupDialog
+        textInputReadOnly: true
+        label: qsTr("Are you sure you want to remove this group ?\n Pupils will not be removed.")
+        mode: GroupDialog.DialogType.Remove
     }
 
-    TopBanner {
-        id: topBanner
-        text: qsTr("Groups and pupils management")
+    PupilDialog {
+        id: modifyPupilDialog
+        label: qsTr("Modify pupil name and groups")
+        addMode: false
     }
 
-    ManageGroupsBar {
-        id: pupilsNavigationBar
-        anchors.top: topBanner.bottom
+    GroupDialog {
+        id: modifyGroupDialog
+        label: qsTr("Modify Group Name")
+        mode: GroupDialog.DialogType.Modify
     }
 
-    Rectangle {
-        id: managePupilsViewRectangle
-        anchors.left: pupilsNavigationBar.right
-        anchors.top: topBanner.bottom
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        width: managePupilsView.width - pupilsNavigationBar.width
+    SplitView {
+        id: splitManagePupils
+        anchors.margins: 3
+        anchors.fill: parent
 
-        ColumnLayout {
-            id: pupilsDetailsColumn
+        ColumnLayout {  // Group list and Add button
+            SplitView.preferredWidth: 200
+            SplitView.minimumWidth: 180
 
-            spacing: 2
-            anchors.top: parent.top
-            width: parent.width
+            FoldDownRadio {
+                id: groupPane
+                Layout.fillHeight: true
+                Layout.fillWidth: true
+                title: qsTr("Groups")
+                foldModel: Master.groupModel
+                lineHeight: Style.mediumLineHeight
+                indexKey: "group_id"
+                nameKey: "group_name"
+                checkKey: "group_checked"
+                collapsable: false
+                delegateName: "radioGroupEdit"
+                onSelectionClicked: {
+                    Master.groupFilterId = modelId
+                    Master.filterUsers(Master.filteredUserModel, false)
+                }
+            }
 
-            property int pupilNameColWidth: pupilsDetailsColumn.width / 3
-
-            //pupils header
+            // Add group button
             Rectangle {
-                id: pupilsHeaderRectangle
+                id: addGroupLabelRectangle
+                color: "transparent"
+                Layout.fillWidth: true
+                Layout.preferredHeight: 50
 
-                height: 60
-                width: parent.width
+                ViewButton {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    text: "\uf067 " + qsTr("Add a group")
+                    onClicked: addGroupDialog.open()
+                }
 
-                RowLayout {
-                    width: managePupilsViewRectangle.width - 10
-                    height: parent.height
-
-                    CheckBox {
-                        id: selectAllCheckBox
-                        leftPadding: 20
-                        topPadding: 20
-                        onClicked: {
-                            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                                pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked = checked;
-                            }
-                        }
-                    }
-
-                    Rectangle {
-                        id: pupilNameHeader
-                        Layout.fillHeight: true
-                        Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
-                        Text {
-                            anchors.verticalCenter: parent.verticalCenter
-                            color: Style.colourNavigationBarBackground
-                            text: qsTr("Pupils Names")
-                            font.bold: true
-                            leftPadding: 60
-                            topPadding: 20
-                        }
-                    }
-                    Rectangle {
-                        id: pupilGroupsHeader
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                        Text {
-                            anchors.verticalCenter: parent.verticalCenter
-                            anchors.left: parent.left
-                            leftPadding: 10
-                            text: qsTr("Groups")
-                            font.bold: true
-                            color: Style.colourNavigationBarBackground
-                            topPadding: 20
-                        }
-                    }
+                GroupDialog {
+                    id: addGroupDialog
+                    label: qsTr("Add a group")
+                    mode: GroupDialog.DialogType.Add
+                    group_Name: ""
+                    group_Description: ""
                 }
             }
+        }
 
-            //pupils data
-            ListView {
-                id: pupilsDetailsRepeater
+        FoldDownCheck { // Pupils lists
+            id: pupilPane
+            title: qsTr("Pupils and groups")
+            foldModel: Master.filteredUserModel
+            lineHeight: Style.mediumLineHeight
+            indexKey: "user_id"
+            nameKey: "user_name"
+            checkKey: "user_checked"
+            delegateName: "checkUserEdit"
+            collapsable: false
+            SplitView.fillWidth: true
+            SplitView.minimumWidth: 300
+        }
 
-                model: masterController.ui_users
-                width: managePupilsViewRectangle.width
-                height: 400 // TODO Compute the good size and unhardcode...
-                contentHeight: lineHeight * count
+        Rectangle {
+            id: buttonsColumn
+            SplitView.preferredWidth: 210
+            SplitView.minimumWidth: 210
+            SplitView.maximumWidth: 300
+            color: Style.colorBackground
 
-                readonly property int lineHeight: 40
-                delegate: Rectangle {
-                    id: pupilDetailsRectangle
+            ColumnLayout {
+                anchors.fill: parent
+                spacing: 15
 
-                    property alias pupilNameCheckBox: pupilNameCheckBox
-
-                    width: managePupilsViewRectangle.width
-                    height: pupilsDetailsRepeater.lineHeight
-
-                    MouseArea {
-                        id: pupilDetailsRectangleMouseArea
+                Rectangle {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Style.mediumLineHeight
+                    color: Style.colorHeaderPane
+                    radius: 5
+                    Text {
                         anchors.fill: parent
-
-                        hoverEnabled: true
-                        onEntered: {
-                            pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
-
-                        }
-                        onExited: {
-                            pupilDetailsRectangle.color = Style.colourBackground
-                        }
-
-                        RowLayout {
-                            id: pupilDetailsRectangleRowLayout
-
-                            width: parent.width
-                            height: 40
-
-                            Rectangle {
-                                id: pupilName
-                                Layout.alignment: Qt.AlignLeft
-                                Layout.fillHeight: true
-                                Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
-                                color: "transparent"
-                                CheckBox {
-                                    id: pupilNameCheckBox
-                                    text: modelData.name
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    leftPadding: 20
-                                }
-                            }
-
-                            Rectangle {
-                                id: groups
-                                Layout.fillWidth: true
-                                Layout.fillHeight: true
-                                height: 40
-                                color: "transparent"
-                                Text {
-                                    id: groupsText
-                                    text: modelData.groupsList
-                                    leftPadding: 10
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    color: "grey"
-                                }
-                            }
-                            Button {
-                                id: editPupilRectangle
-                                height: 40
-                                visible: pupilDetailsRectangleMouseArea.containsMouse
-                                text: "\uf304"
-
-                                onClicked: {
-                                    modifyPupilDialog.currentPupil.name = modelData.name
-                                    // todo: get groups of user
-                                    //modifyPupilDialog.groupsNames = modelData[1]
-                                    modifyPupilDialog.pupilsListIndex = index
-                                    modifyPupilDialog.open()
-                                }
-                            }
-                        }
-                    }
-
-                    AddModifyPupilDialog {
-                        id: modifyPupilDialog
-
-                        label: qsTr("Modify the name or the groups")
-
-                        property string currentUserName
-                        property var groupsList
-                        onAccepted: {
-                            masterController.updateUser(modelData, currentPupil, groupList);
-                        }
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pixelSize: Style.defaultPixelSize
+                        font.bold: true
+                        text: qsTr("Pupils management")
+                        color: enabled ? "black": "gray"
                     }
                 }
-            }
-        }
-    }
 
-    CommandBar {
-        commandList: masterController.ui_commandController.ui_managePupilsViewContextCommands
-    }
-
-    AddModifyPupilDialog {
-        id: addPupilDialog
-
-        label: qsTr("Add pupil name and its group(s)")
-
-        onAccepted: {
-            console.log("save new user", newPupil.name, groupList)
-            // Add to database the group
-            masterController.createUser(newPupil)
-            masterController.setGroupsForUser(newPupil, groupList)
-            addPupilDialog.close()
-        }
-    }
-
-    property UserData userToAdd: UserData {}
-    AddPupilsFromListDialog {
-        id: addPupilsFromListDialog
-
-        onPupilsDetailsAdded: {
-            var pupilDetailsLineArray = pupilList.split("\n")
-            for (var i = 0; i < pupilDetailsLineArray.length; ++i) {
-                var pupilDetails = pupilDetailsLineArray[i].split(";");
-                if(pupilDetails.length > 3) {
-                    print("Line", pupilDetails, "too long");
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.topMargin: 20
+                    width: 200
+                    text: "\uf234   " + qsTr("Add pupil")
+                    onClicked: addPupilDialog.open()
                 }
-                // todo check if all groups for user exist.
-                // If at least one does not exist, ignore the user
-                // and display a warning telling user was not added because
-                // some groups do not exist
-                userToAdd.name = pupilDetails[0]
-                // todo have a feedback if user has not been created (already exist...)
-                masterController.createUser(userToAdd)
-                var groups = pupilDetails[1].split("-");
-                if(groups.length != 0) {
-                    masterController.setGroupsForUser(userToAdd, groups)
+
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: "\uf07c   " + qsTr("Add to groups")
+                    onClicked: addPupilsToGroupsDialog.open()
                 }
-            }
-        }
-    }
 
-    RemovePupilsDialog {
-        id: removePupilsDialog
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: "\uf0c7   " + qsTr("Remove from groups")
+                    onClicked: removePupilsFromGroupsDialog.open()
+                }
 
-        onOpened: {
-            var tmpPupilsNamesList = []
-            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                if (pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked === true) {
-                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text)
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: "\uf0c7   " + qsTr("Export pupils")
+                    onClicked: exportPupilsDialog.open()
+                }
+
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text:  "\uf235   " + qsTr("Import pupils")
+                    onClicked: importPupilsDialog.open()
+                }
+
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: "\uf503   " + qsTr("Remove pupils")
+                    onClicked: removePupilsDialog.open()
+                }
+
+                Rectangle {
+                    Layout.preferredWidth: parent.width
+                    Layout.preferredHeight: parent.height
+                    color: "transparent"
                 }
             }
-            console.log(tmpPupilsNamesList)
-            removePupilsDialog.pupilsNamesList = tmpPupilsNamesList
-            managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
-            var pupilsNamesListStr = ""
-            for(i = 0 ; i < pupilsNamesList.length ; i++) {
-                pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
-            }
-
-            pupilsNamesText.text = pupilsNamesListStr
-
-            console.log(pupilsNamesListStr)
-
         }
 
-        onAccepted: {
-            print(removePupilsDialog.pupilsNamesList.length, removePupilsDialog.pupilsNamesList)
-            for(var i = 0 ; i < removePupilsDialog.pupilsNamesList.length ; i++) {
-                masterController.deleteUser(removePupilsDialog.pupilsNamesList[i]);
-            }
-        }
-    }
-
-    AddPupilsToGroupsDialog {
-        id: addPupilsToGroupsDialog
-
-        onOpened: {
-            var tmpPupilsNamesList = []
-            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                if (pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked === true) {
-                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text)
-                }
-            }
-            console.log(tmpPupilsNamesList)
-            addPupilsToGroupsDialog.pupilsNamesList = tmpPupilsNamesList
-            managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
-            var pupilsNamesListStr = ""
-            for(i = 0 ; i < pupilsNamesList.length ; i++) {
-                pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
-            }
-
-            pupilsNamesText.text = pupilsNamesListStr
-
-            console.log(pupilsNamesListStr)
-
+        PupilDialog {
+            id: addPupilDialog
+            addMode: true
+            user_Name: ""
+            user_Password: ""
+            groups_Name: ""
+            groups_Id: ""
+            label: qsTr("Add pupil name and its group(s)")
         }
 
-        onAccepted: {
-            print(addPupilsToGroupsDialog.pupilsNamesList.length, addPupilsToGroupsDialog.pupilsNamesList, newGroups)
-            for(var i = 0 ; i < addPupilsToGroupsDialog.pupilsNamesList.length ; i++) {
-                masterController.addGroupsToUser(addPupilsToGroupsDialog.pupilsNamesList[i], newGroups);
-            }
+        ExportPupilsDialog {
+            id: exportPupilsDialog
+        }
+
+        ImportPupilsDialog {
+            id: importPupilsDialog
+        }
+
+        RemovePupilsDialog {
+            id: removePupilsDialog
+        }
+
+        PupilsToGroupsDialog {
+            id: addPupilsToGroupsDialog
+        }
+
+        PupilsToGroupsDialog {
+            id: removePupilsFromGroupsDialog
+            addMode: false     // remove mode
         }
     }
 
-    RemovePupilsToGroupsDialog {
-        id: removePupilsToGroupsDialog
-
-        onOpened: {
-            var tmpPupilsNamesList = []
-            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                if (pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked === true) {
-                    tmpPupilsNamesList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text)
-                }
-            }
-            console.log(tmpPupilsNamesList)
-            removePupilsToGroupsDialog.pupilsNamesList = tmpPupilsNamesList
-            managePupilsView.pupilsNamesListSelected(tmpPupilsNamesList)
-            var pupilsNamesListStr = ""
-            for(i = 0 ; i < pupilsNamesList.length ; i++) {
-                pupilsNamesListStr = pupilsNamesListStr + tmpPupilsNamesList[i] + "\r\n"
-            }
-
-            pupilsNamesText.text = pupilsNamesListStr
-
-            console.log(pupilsNamesListStr)
-
-        }
-
-        onAccepted: {
-            print(removePupilsToGroupsDialog.pupilsNamesList.length, removePupilsToGroupsDialog.pupilsNamesList, newGroups)
-            for(var i = 0 ; i < removePupilsToGroupsDialog.pupilsNamesList.length ; i++) {
-                masterController.removeGroupsToUser(removePupilsToGroupsDialog.pupilsNamesList[i], newGroups);
-            }
-        }
-    }
+    Component.onCompleted: splitManagePupils.restoreState(serverSettings.value("splitManagePupils"))
+    Component.onDestruction: serverSettings.setValue("splitManagePupils", splitManagePupils.saveState())
 }
