@@ -196,6 +196,7 @@ function initLevel() {
     }
 
     items.score.numberOfSubLevels = subLevelStartTiles.length
+    items.client.startTiming()      // for server version
 }
 
 /// Returns an array containing the possible start tiles
@@ -323,11 +324,13 @@ function checkAnswer() {
     // Check the complete answer
     if (isPupilAnswerRight(getPupilAnswerArray()))
     {
+        items.client.sendToServer(true)
         goodAnswerFeedback()
     }
     else
     {
         items.badAnswerSound.play()
+        items.client.sendToServer(false)
     }
 }
 
