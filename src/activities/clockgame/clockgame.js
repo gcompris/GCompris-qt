@@ -105,6 +105,7 @@ function initQuestion() {
         items.noHint = false;
     }
     items.buttonsBlocked = false;
+    items.client.startTiming()      // for server version
 }
 
 function differentTargetH() {
@@ -171,11 +172,13 @@ function checkAnswer() {
     if (items.currentH === targetHour
                     && items.currentM === items.targetM
                     && items.currentS === items.targetS) {
+        items.client.sendToServer(true)
         items.score.currentSubLevel++;
         items.score.playWinAnimation();
         items.goodAnswerSound.play();
     }
     else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation();
         items.badAnswerSound.play();
     }

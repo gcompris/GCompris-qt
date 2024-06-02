@@ -68,6 +68,7 @@ ActivityBase {
             property bool noHint
             property bool useTwelveHourFormat: true
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: {
@@ -85,6 +86,17 @@ ActivityBase {
         GCSoundEffect {
             id: badAnswerSound
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "expected": [items.targetH, items.targetM, items.targetS],
+                    "proposal": [items.currentH, items.currentM, items.currentS]
+                }
+                return data
+            }
         }
 
         Score {
