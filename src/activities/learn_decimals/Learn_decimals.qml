@@ -87,6 +87,7 @@ ActivityBase {
             property bool typeResult: false
             property double unit: activity.isQuantityMode ? 1 : 0.1
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: {
@@ -105,6 +106,19 @@ ActivityBase {
         GCSoundEffect {
             id: badAnswerSound
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "question": instructionPanel.textItem.text,
+                    "expected": Activity.correctAnswer,
+                    "proposal": Activity.userAnswer,
+                    "input": answerBackground.userEntry     // Keyboard user input (when required or empty)
+                }
+                return data
+            }
         }
 
         // Tutorial section starts
