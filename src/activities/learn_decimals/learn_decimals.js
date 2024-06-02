@@ -24,6 +24,7 @@ var firstNumber;
 var secondNumber = 0;
 var squaresNumber = 10;
 var correctAnswer;
+var userAnswer;
 var lastBarSquareUnits;
 var firstNumberList;
 var numberOfPossibleQuestions;
@@ -262,6 +263,8 @@ function displayDecimalNumberQuestion() {
         items.largestNumber = toDecimalLocaleNumber(firstNumber);
         items.smallestNumber = toDecimalLocaleNumber(secondNumber);
     }
+    items.answerBackground.userEntry = ""
+    items.client.startTiming()      // for server version
 }
 
 function verifyNumberRepresentation() {
@@ -287,6 +290,7 @@ function verifyNumberRepresentation() {
     if(!items.isQuantityMode)
         sum /= squaresNumber;
 
+    userAnswer = sum    // Copy to global before sending data to server
     if(sum === correctAnswer) {
         if(items.isSubtractionMode || items.isAdditionMode) {
             items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
@@ -295,12 +299,14 @@ function verifyNumberRepresentation() {
             items.buttonsBlocked = false;
         }
         else {
+            items.client.sendToServer(true)
             items.score.currentSubLevel += 1;
             items.score.playWinAnimation();
             items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         }
     }
     else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation();
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
@@ -322,10 +328,12 @@ function verifyNumberTyping(typedAnswer) {
     items.buttonsBlocked = true;
     typedAnswer = typedAnswer.replace("," , ".");
     if(parseFloat(typedAnswer) === parseFloat(correctAnswer)) {
+        items.client.sendToServer(true)
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         items.bonus.good('flower')
     }
     else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation();
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }

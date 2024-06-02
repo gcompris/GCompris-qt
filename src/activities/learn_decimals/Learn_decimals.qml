@@ -73,6 +73,8 @@ ActivityBase {
             property bool typeResult: false
             property double unit: activity.isQuantityMode ? 1 : 0.1
             property bool buttonsBlocked: false
+            property alias answerBackground: answerBackground
+            property alias client: client
         }
 
         onStart: {
@@ -81,6 +83,19 @@ ActivityBase {
         onStop: {
             timer.stop()
             Activity.stop()
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "question": questionAsked.text,
+                    "expected": Activity.correctAnswer,
+                    "proposal": Activity.userAnswer,
+                    "input": answerBackground.userEntry     // Keyboard user input (when required or empty)
+                }
+                return data
+            }
         }
 
         // Tutorial section starts
@@ -121,6 +136,7 @@ ActivityBase {
             property string quantityQuestion: qsTr("Represent the quantity: %1")
 
             GCText {
+                id: questionAsked
                 anchors.centerIn: parent
                 width: parent.width - 10 * ApplicationInfo.ratio
                 height: parent.height
