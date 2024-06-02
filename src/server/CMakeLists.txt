@@ -7,49 +7,28 @@ include(qt_helper)
 
 set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
 
-# Workaround to link to protobuf: https://github.com/protocolbuffers/protobuf/issues/14500
-set(CMAKE_EXE_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
-set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
-
 # server
 set(server_SRCS
-  serverMasterController/controllers/master-controller.cpp
-  serverMasterController/controllers/master-controller.h
-  serverMasterController/controllers/navigation-controller.h
-  serverMasterController/controllers/command-controller.h
-  serverMasterController/controllers/command-controller.cpp
-  serverMasterController/controllers/database-controller.h
-  serverMasterController/controllers/database-controller.cpp
-  serverMasterController/controllers/network-controller.h
-  serverMasterController/controllers/network-controller.cpp
-  serverMasterController/models/DatabaseElement.h
-  serverMasterController/models/GroupData.cpp
-  serverMasterController/models/GroupData.h
-  serverMasterController/models/UserData.cpp
-  serverMasterController/models/UserData.h
-  serverMasterController/framework/command.cpp
-  serverMasterController/framework/command.h
-  
-  serverMasterController/config/ServerSettings.cpp
-  serverMasterController/config/ServerSettings.h
+  controllers/database-controller.h
+  controllers/database-controller.cpp
+  controllers/network-controller.h
+  controllers/network-controller.cpp
+  ../core/netconst.h
   )
 
 # Add files that do no need to pass through the moc processor
 set(server_SRCS
   ${server_SRCS}
-   main.cpp
+  main.cpp
 )
-
-list(APPEND server_SRCS ${PROTO_SRCS} ${PROTO_HDRS})
 
 include_directories(
   ../core/  # messages
   "${CMAKE_CURRENT_BINARY_DIR}/../core"   # to find config.h
-  serverMasterController/
-  ${Protobuf_INCLUDE_DIRS}
+  controllers/
 )
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::Charts Qt5::Sql qca-qt5)
+set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::Charts Qt5::Sql)
 
 if(ANDROID)
   add_library(${GCOMPRIS_SERVER_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
@@ -63,18 +42,27 @@ else()
 endif()
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${used_qt_modules})
-target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} protobuf::libprotobuf)
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
 gcompris_add_rcc(server
   QML_FILES
-  main.qml
+  Main.qml
   views/*.qml
+  views/*/*.qml
+  activities/*.qml
+  activities/*/*.qml
   components/*.qml
+  charts/*.qml
+  dialogs/*.qml
+  panels/*.qml
+  singletons/*.qml
   *.js
   RESOURCES
   resource/*
+  singletons/qmldir
+  database/*.sql
+  help/*.html
 )
 
 install(TARGETS ${GCOMPRIS_SERVER_EXECUTABLE_NAME}
