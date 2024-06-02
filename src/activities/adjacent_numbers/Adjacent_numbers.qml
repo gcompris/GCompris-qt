@@ -56,6 +56,9 @@ ActivityBase {
             property bool buttonsEnabled: true
 
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
+
+            // Client for server version
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
@@ -69,6 +72,29 @@ ActivityBase {
         GCSoundEffect {
             id: badAnswerSound
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var proposal = []
+                var tiles = []
+                for (var i = 0; i < questionTilesModel.count; i++) {
+                    var obj = questionTilesModel.get(i)
+                    proposal.push(obj.canDrop ? `(${obj.value})` : obj.value)
+                }
+                for (i = 0; i < proposedTilesModel.count; i++) {
+                    obj = proposedTilesModel.get(i)
+                    tiles.push(obj.value)
+                }
+
+                var data = {
+                    "level": Activity.currentExercise,
+                    "tiles": tiles,
+                    "proposal": proposal
+                }
+                return data
+            }
         }
 
         GCTextPanel {
