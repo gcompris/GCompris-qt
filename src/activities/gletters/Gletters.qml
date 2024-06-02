@@ -91,6 +91,9 @@ ActivityBase {
             property alias locale: background.locale
             property alias textinput: textinput
             property bool inputLocked: false
+            property alias client: client
+            property var memWords: []
+            property int errorCount: 0
         }
 
         onStart: {
@@ -108,6 +111,17 @@ ActivityBase {
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "errors": items.errorCount,
+                    "words": items.memWords.join(" ")
+                }
+                return data
+            }
+        }
 
         //instruction rectangle
         Rectangle {
@@ -231,6 +245,7 @@ ActivityBase {
             id: bonus
             interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
+            onStop: items.client.sendToServer(true)         // send data for server version
         }
 
         Score {
