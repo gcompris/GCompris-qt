@@ -12,7 +12,7 @@ set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
 include(InstallRequiredSystemLibraries)
 
 # Set c++11 support
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -61,10 +61,6 @@ if(CMAKE_SYSTEM_NAME STREQUAL Android)
   if(ANDROID_NDK_REVISION VERSION_LESS "25.0.0")
     message(FATAL_ERROR "android ndk 25 minimal required, actually using ${ANDROID_NDK_REVISION}")
   endif()
-  # Due to use of SOURCE_SUBDIR in FetchContent to retrieve protobuf
-  if("${CMAKE_VERSION}" VERSION_LESS "3.18.0")
-    message(FATAL_ERROR "Building GCompris for android requires CMake 3.18 minimum")
-  endif() 
 
   # TODO: possibly should be setup by toolchain one day
   set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
@@ -176,34 +172,16 @@ if(ECM_FOUND)
     endif()
 endif()
 
-option(BUILD_SERVER "Build the server along the application" ON)
+if(ANDROID)
+  option(BUILD_SERVER "Build the server along the application" OFF)
+else()
+  option(BUILD_SERVER "Build the server along the application" ON)
+endif()
 
-if(BUILD_SERVER)
-  find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Sql Charts)
-
-  find_package(Qca-qt5 REQUIRED)
-  set(ANDROID_WIFI_BROADCAST_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n
-    <uses-permission android:name=\"android.permission.CHANGE_WIFI_MULTICAST_STATE\" />\n
-    <uses-permission android:name=\"android.permission.WAKE_LOCK\" />")
-
-  find_package(Protobuf)
-  if(ANDROID)
-    if(Protobuf_PROTOC_EXECUTABLE)
-      if(NOT TARGET protobuf::protoc)
-        add_executable(protobuf::protoc IMPORTED)
-        if(EXISTS "${Protobuf_PROTOC_EXECUTABLE}")
-          set_target_properties(protobuf::protoc PROPERTIES
-            IMPORTED_LOCATION "${Protobuf_PROTOC_EXECUTABLE}")
-        endif()
-      else()
-        message(ERROR "protobuf::protoc already exists")
-      endif()
-    else()
-      message(ERROR "PROTOC_EXECUTABLE not exists")
-    endif()
-
-  endif()
-endif(BUILD_SERVER)
+if(BUILD_SERVER AND NOT ANDROID)
+  find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS Sql)
+  set_package_properties(Qt5Sql PROPERTIES TYPE REQUIRED)
+endif(BUILD_SERVER AND NOT ANDROID)
 
 # Tell CMake to run moc when necessary:
 set(CMAKE_AUTOMOC ON)
@@ -224,6 +202,11 @@ option(WITH_DOWNLOAD "Internal download" ON)
 #        but it makes the application crash on exit (tested on Android 6)
 set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
 set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
+
+# Enable wifi broadcase on Android to communicate with the server
+set(ANDROID_WIFI_BROADCAST_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n
+    <uses-permission android:name=\"android.permission.CHANGE_WIFI_MULTICAST_STATE\" />\n
+    <uses-permission android:name=\"android.permission.WAKE_LOCK\" />")
 
 set(GRAPHICAL_RENDERER "auto" CACHE STRING "Policy for choosing the renderer backend [opengl|software|auto]")
 
@@ -326,7 +309,7 @@ if(NOT SKIP_TRANSLATIONS)
     list(APPEND QM_FILES ${QmOutput})
   endforeach()
 endif()
-  
+
 # Install translations
 add_custom_target(BuildTranslations ALL
     DEPENDS ${QM_FILES}
@@ -499,4 +482,4 @@ add_custom_target(updateReleaseDate
   DEPENDS doUpdateReleaseDate
   COMMENT "Run the scripts to bump the version if not already done. It assumes the changelog is already created for this version."
   )
-  
+
