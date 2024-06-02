@@ -14,7 +14,6 @@ import GCompris 1.0
 import "../../core"
 import "reversecount.js" as Activity
 
-
 Item {
     id: chooseDiceBar
     z: 1000
@@ -35,9 +34,12 @@ Item {
         id: barRow
         spacing: 8
         anchors.centerIn: parent
-        OkButton {
+
+        BarButton {
             id: ok
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 75 * ApplicationInfo.ratio
+            sourceSize.width: width
             visible: true
             anchors {
                 right: undefined
@@ -47,17 +49,6 @@ Item {
             }
             enabled: items.tuxCanMove && !bonus.isPlaying
             onClicked: Activity.moveTux(domino.value1 + domino.value2)
-
-            getDataCallback: function() {
-                var data = {
-                    "index": Activity.fishIndex,
-                    "currentPosition": Activity.tuxIceBlockNumber,
-                    "dice1": chooseDiceBar.value1,
-                    "dice2": chooseDiceBar.value2,
-                    "goodAnswer": ((Activity.tuxIceBlockNumber+chooseDiceBar.value1+chooseDiceBar.value2) % Activity.iceBlocksLayout.length == (Activity.fishIndex % Activity.iceBlocksLayout.length))
-                }
-                return data
-            }
         }
 
         Domino {

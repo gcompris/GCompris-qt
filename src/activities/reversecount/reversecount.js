@@ -73,6 +73,7 @@ function initLevel() {
     placeFishToReach()
     moveTuxToIceBlock()
     items.clockPosition = 4
+    items.client.startTiming()      // for server version.
 }
 
 function moveTux(numberOfMovesToDo) {
@@ -81,7 +82,8 @@ function moveTux(numberOfMovesToDo) {
     if(items.chooseDiceBar.value1 === 0 && items.chooseDiceBar.value2 === 0) {
         return
     }
-    else if (tuxIceBlockNumberGoal != fishIndex) {
+    items.client.sendToServer(tuxIceBlockNumberGoal === fishIndex)  // for server version.
+    if (tuxIceBlockNumberGoal !== fishIndex) {
         items.clockPosition--
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
         if (items.clockPosition === 0) {

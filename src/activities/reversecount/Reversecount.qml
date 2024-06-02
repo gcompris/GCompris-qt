@@ -52,16 +52,30 @@ ActivityBase {
             property alias fishToReach: fishToReach
             property int clockPosition: 4
             property string mode: "dot"
-            property var heightBase: (background.height - bar.height * 1.5) / 5
-            property var widthBase: background.width / 5
+            property real heightBase: (background.height - bar.height * 1.5) / 5
+            property real widthBase: background.width / 5
             property bool tuxIsMoving: false
             property bool tuxCanMove: true
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: {
             sizeChangedTimer.stop()
             Activity.stop()
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "index": Activity.fishIndex,
+                    "currentPosition": Activity.tuxIceBlockNumber,
+                    "dice1": chooseDiceBar.value1,
+                    "dice2": chooseDiceBar.value2,
+                }
+                return data
+            }
         }
 
         Keys.onEnterPressed: chooseDiceBar.click()
