@@ -174,16 +174,19 @@ function run() {
     items.result = getAnswer(firstOperandVal, secondOperandVal)
     items.balloon.startMoving(100000 / speedSetting)
     items.buttonsBlocked = false
+    items.client.startTiming()      // for server version
 }
 
 function checkAnswer() {
     items.buttonsBlocked = true
     items.balloon.startMoving(100000)
     if(validateAnswer(parseInt(items.numpad.answer))) {
+        items.client.sendToServer(true)
         items.score.currentSubLevel++
         items.score.playWinAnimation()
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
     } else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation()
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
     }

@@ -51,6 +51,7 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property GCSfx audioEffects: activity.audioEffects
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: {
@@ -59,6 +60,18 @@ ActivityBase {
         }
 
         onStop: Activity.stop()
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "operation": Activity.firstOperandVal + " " + Activity.operandText + " " + Activity.secondOperandVal,
+                    "result": items.result,
+                    "proposal": items.numpad.answer
+                }
+                return data
+            }
+        }
 
         DialogChooseLevel {
             id: dialogActivityConfig
@@ -146,7 +159,10 @@ ActivityBase {
 
         Balloon {
             id: balloon
-            onTimeout: bonus.bad("smiley")
+            onTimeout: {
+                client.sendToServer(false)
+                bonus.bad("smiley")
+            }
         }
 
         Score {
