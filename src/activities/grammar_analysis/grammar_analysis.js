@@ -214,6 +214,7 @@ function initLevel() {
     if (datas === null) return
     buildAnswer()
     items.buttonsBlocked = false
+    items.client.startTiming()      // for server version
 }
 
 function nextLevel() {
@@ -270,9 +271,11 @@ function checkResult() {
         items.goodAnswerSound.play()
         items.currentExercise += 1
         items.score.playWinAnimation()
+        items.client.sendToServer(true)     // for server version
     } else {
         items.badAnswerSound.play()
         items.errorRectangle.startAnimation()
+        items.client.sendToServer(false)    // for server version
     }
 }
 
