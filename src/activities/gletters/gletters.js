@@ -33,7 +33,7 @@ var levelData; // array to store level words
 //speed calculations, common:
 var speed = 0;           // how fast letters fall
 var fallSpeed = 0;       // how often new letters are dropped
-var incFallSpeed = 1000; // how much drop rate increases per sublevel 
+var incFallSpeed = 1000; // how much drop rate increases per sublevel
 var incSpeed = 10;       // how much speed increases per sublevel
 // gletters:
 var fallRateBase = 40;   // default for how fast letters fall (smaller is faster)
@@ -71,7 +71,7 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
 
     incSpeed = 1 * speedSetting;
     incFallSpeed = 100 * speedSetting;
-    
+
     fallRateBase = 400 / speedSetting;
     fallRateMult = 800 / speedSetting;
     dropRateBase = 60000 / speedSetting;
@@ -234,6 +234,9 @@ function initLevel() {
     else
         items.wordlist.initRandomWord(items.currentLevel + 1)
 
+    items.memWords = []
+    items.errorCount = 0
+    items.client.startTiming()      // for server version
     initSubLevel()
 }
 
@@ -274,7 +277,7 @@ function initSubLevel() {
     // note, last word is still fading out so better use droppedWordsCounter than droppedWords.length in this case
     if ((currentSubLevel == 0 || droppedWordsCounter == 0) && !items.inputLocked)
         dropWord();
-    //console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
+//    console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
 }
 
 function processKeyPress(text) {
@@ -305,6 +308,7 @@ function processKeyPress(text) {
             }
         }
         if(!found) {
+            items.errorCount++
             audioCrashPlay()
         }
     }
@@ -414,7 +418,7 @@ function createWord()
             // speed to duration:
             var duration = (items.main.height / 2) * speed / successRate;
             /* console.debug("Gletters: dropping new word " + word.text
-                    + " duration=" + duration + " (speed=" + speed + ")"  
+                    + " duration=" + duration + " (speed=" + speed + ")"
                     + " num=" + droppedWords.length);*/
             word.startMoving(duration);
         }
@@ -422,6 +426,8 @@ function createWord()
     } else if (wordComponent.status == 3 /* Component.Error */) {
         console.log("Gletters: error creating word component: " + wordComponent.errorString());
     }
+    items.memWords.push(text)
+
 }
 
 function dropWord()
@@ -444,7 +450,6 @@ function dropWord()
             fallingItem = "FallingDomino.qml"
         else
             fallingItem = "FallingWord.qml"
-
 
         wordComponent = Qt.createComponent("qrc:/gcompris/src/activities/gletters/" + fallingItem);
         if (wordComponent.status == 1 /* Component.Ready */)
