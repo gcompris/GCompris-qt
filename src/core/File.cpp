@@ -61,7 +61,6 @@ QString File::read(const QString &name)
     QFile file(m_name);
     QString fileContent;
     if (file.open(QIODevice::ReadOnly)) {
-        QString line;
         QTextStream t(&file);
         /* Force utf-8 : for some languages, it seems to be loaded in other
           encoding even if the file is in utf-8 */
@@ -70,11 +69,7 @@ QString File::read(const QString &name)
 #else
         t.setCodec("UTF-8");
 #endif
-        do {
-            line = t.readLine();
-            fileContent += line;
-        } while (!line.isNull());
-
+        fileContent = t.readAll();
         file.close();
     }
     else {

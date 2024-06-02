@@ -229,7 +229,7 @@ Rectangle {
             }
             theme: "highContrast"
             visible: text != ""
-            property bool selected: false;
+            property bool selected: true;
             enabled: !gcdialog.alreadyClicked
             onClicked: {
                 gcdialog.alreadyClicked = true;

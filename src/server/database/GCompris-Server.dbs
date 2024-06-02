@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="GCompris-Server" id="Project-1acc" database="Sqlite" >
+	<comment><![CDATA[GCompris-server database.]]></comment>
+	<comment_tag name="Version" value="0.2" />
+	<schema name="Default" >
+		<table name="activity_" prior="activity" >
+			<column name="activity_id" type="INTEGER" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTOINCREMENT]]></identity>
+			</column>
+			<column name="activity_name" type="TEXT" jt="-1" mandatory="y" />
+			<index name="pk_activity_id" unique="PRIMARY_KEY" >
+				<column name="activity_id" />
+			</index>
+			<index name="unq_activity_name" unique="UNIQUE_KEY" >
+				<column name="activity_name" />
+			</index>
+		</table>
+		<table name="group_" prior="groups" generator_rows="150" >
+			<column name="group_id" type="INTEGER" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTOINCREMENT]]></identity>
+			</column>
+			<column name="group_name" type="TEXT" jt="-1" mandatory="y" />
+			<column name="group_description" type="TEXT" jt="-1" />
+			<index name="pk_groups" unique="PRIMARY_KEY" >
+				<column name="group_id" />
+			</index>
+			<index name="unq_group_name" unique="UNIQUE_KEY" >
+				<column name="group_name" />
+			</index>
+		</table>
+		<table name="group_user_" prior="group_user" generator_rows="100" >
+			<column name="group_id" type="INTEGER" jt="4" mandatory="y" />
+			<column name="user_id" type="INTEGER" jt="4" mandatory="y" />
+			<index name="pk_group_users" unique="PRIMARY_KEY" >
+				<column name="group_id" />
+				<column name="user_id" />
+			</index>
+			<fk name="fk_group_users_user" to_schema="Default" to_table="user_" >
+				<fk_column name="user_id" pk="user_id" />
+			</fk>
+			<fk name="fk_group_users_group" to_schema="Default" to_table="group_" >
+				<fk_column name="group_id" pk="group_id" />
+			</fk>
+		</table>
+		<table name="result_" prior="result" >
+			<column name="user_id" type="INTEGER" jt="4" mandatory="y" />
+			<column name="activity_id" prior="activity_name" type="INTEGER" jt="4" mandatory="y" />
+			<column name="result_datetime" prior="activity_datetime" type="DATETIME" jt="93" mandatory="y" >
+				<defo><![CDATA[CURRENT_TIMESTAMP]]></defo>
+			</column>
+			<column name="result_data" prior="activity_data" type="TEXT" jt="-1" mandatory="y" />
+			<index name="idx_activity_user_id" unique="NORMAL" >
+				<column name="user_id" />
+			</index>
+			<index name="idx_activity_user_name" unique="NORMAL" >
+				<column name="activity_id" />
+			</index>
+			<fk name="fk_user_id" to_schema="Default" to_table="user_" >
+				<fk_column name="user_id" pk="user_id" />
+			</fk>
+			<fk name="fk_activity_id" to_schema="Default" to_table="activity_" >
+				<fk_column name="activity_id" pk="activity_id" />
+			</fk>
+		</table>
+		<table name="teacher_" prior="teacher" >
+			<column name="teacher_id" type="INTEGER" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTOINCREMENT]]></identity>
+			</column>
+			<column name="teacher_login" type="TEXT" jt="-1" mandatory="y" />
+			<column name="teacher_password" type="TEXT" jt="-1" mandatory="y" >
+				<comment><![CDATA[Crypted password]]></comment>
+			</column>
+			<column name="teacher_created" prior="teacher_create" type="DATE" jt="91" mandatory="y" >
+				<defo><![CDATA[CURRENT_TIMESTAMP]]></defo>
+			</column>
+			<index name="pk_teacher" unique="PRIMARY_KEY" >
+				<column name="teacher_id" />
+			</index>
+			<index name="unq_teacher_login" unique="UNIQUE_KEY" >
+				<column name="teacher_login" />
+			</index>
+		</table>
+		<table name="user_" prior="user" generator_rows="150" >
+			<column name="user_id" type="INTEGER" jt="4" mandatory="y" >
+				<identity><![CDATA[AUTOINCREMENT]]></identity>
+			</column>
+			<column name="user_name" type="TEXT" jt="-1" mandatory="y" />
+			<column name="user_password" type="TEXT" jt="-1" mandatory="y" >
+				<comment><![CDATA[Crypted password]]></comment>
+			</column>
+			<index name="pk_user" unique="PRIMARY_KEY" >
+				<column name="user_id" />
+			</index>
+			<index name="unq_user_name" unique="UNIQUE_KEY" >
+				<column name="user_name" />
+			</index>
+		</table>
+		<view name="_user_activity_result" >
+			<comment><![CDATA[What the fuck]]></comment>
+			<view_script><![CDATA[CREATE VIEW ${name} AS
+SELECT user_.user_id, user_name, result_.activity_id, activity_name, count(result_.activity_id)
+  FROM result_, user_, activity_
+WHERE user_.user_id=result_.user_id
+  AND activity_.activity_id=result_.activity_id
+GROUP BY user_.user_id, activity_.activity_id;]]></view_script>
+		</view>
+		<view name="the_groups_" >
+			<view_script><![CDATA[CREATE VIEW the_groups as
+SELECT user_.user_id, group_.group_id, group_name, user_name, user_password
+ FROM group_, user_, group_user_
+WHERE user_.user_id = group_user_.user_id
+  AND group_user_.group_id = group_.group_id;]]></view_script>
+		</view>
+	</schema>
+	<layout name="Main view" id="Layout-15c7" show_relation="columns" >
+		<entity schema="Default" name="activity_" color="C1D8EE" x="561" y="119" />
+		<entity schema="Default" name="group_" color="C1D8EE" x="51" y="119" />
+		<entity schema="Default" name="group_user_" color="C1D8EE" x="68" y="340" />
+		<entity schema="Default" name="result_" color="C1D8EE" x="561" y="340" />
+		<entity schema="Default" name="teacher_" color="C1D8EE" x="289" y="119" />
+		<entity schema="Default" name="user_" color="C1D8EE" x="289" y="340" />
+		<shape x="51" y="51" style="Rectangle" color="FF0000" >
+			<comment><![CDATA[GCompris-Server database]]></comment>
+		</shape>
+	</layout>
+</project>

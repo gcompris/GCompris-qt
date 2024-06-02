@@ -27,6 +27,7 @@
 
 #ifdef WITH_SERVER
 #include "ClientNetworkMessages.h"
+#include "netconst.h"
 #endif
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
@@ -324,6 +325,16 @@ int main(int argc, char *argv[])
         // internally, levels start at 0
         ActivityInfoTree::setStartingActivity(startingActivity, startingLevel - 1);
     }
+
+#ifdef WITH_SERVER
+    qmlRegisterUncreatableMetaObject(
+      netconst::staticMetaObject,   // meta object created by Q_NAMESPACE macro
+      "QMLConnections",             // import statement (can be any string)
+      1, 0,                         // major and minor version of the import
+      "NetConst",                   // name in QML (does not have to match C++ name)
+      "Error: only enums"           // error in case someone tries to create a MyNamespace object
+    );
+#endif
 
     QQmlApplicationEngine engine;
 

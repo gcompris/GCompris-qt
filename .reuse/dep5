@@ -3690,6 +3690,31 @@ Copyright: 2014 Gabriel Araujo
 License: CC0-1.0
 Source: https://www.freesound.org/people/GabrielAraujo/sounds/242501/
 
+Files: src/server/singletons/qmldir
+Copyright: 2024 Bruno Anselme
+License: CC0-1.0
+
+Files: src/server/database/*
+Copyright: 2024 Bruno Anselme
+License: CC0-1.0
+
+Files: src/server/doc/*
+Copyright: 2024 Bruno Anselme
+License: CC0-1.0
+
+Files: src/server/help/*
+Copyright: 2024 Bruno Anselme
+License: CC0-1.0
+
+Files: src/server/resource/*.svg
+Copyright: 2024 Font Awesome by Dave Gandy
+License: OFL-1.1
+Source: httpss://fontawesome.com
+
+Files: src/server/resource/fa-solid-900.ttf
+Copyright: 2024
+License: CC-BY-SA-4.0
+
 Files: tests/core/Contents.test
 Copyright: 2023 Johnny Jazeix
 License: CC0-1.0
@@ -3700,6 +3725,18 @@ License: GPL-3.0-or-later
 
 Files: tools/menus/resource/*.svg
 Copyright: 2000-2008 Bruno Coudoin
+License: GPL-3.0-only
+
+Files: tools/serverSpec/README
+Copyright: 2020 Emmanuel Charruau
+License: CC0-1.0
+
+Files: src/server/resource/aboutkde.png
+Copyright: 2014 Tyson Tan
+License: CC-BY-SA-4.0
+
+Files: src/server/resource/gcompris-icon.png
+Copyright: 2016 Timothée Giet
 License: GPL-3.0-only
 
 Files: src/activities/adjacent_numbers/adjacent_numbers.svg

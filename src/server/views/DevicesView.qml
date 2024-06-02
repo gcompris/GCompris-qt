@@ -4,229 +4,267 @@
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Bruno Anselme <be.root@free.fr>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import QtQuick 2.12
-import QtQuick.Controls 2.12
-import QtQuick.Layouts 1.12
-import QtQml.Models 2.12
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
+import Qt.labs.calendar 1.0
 
-import CM 1.0
+import GCompris 1.0
+import QMLConnections 1.0
 
+import "../singletons"
 import "../components"
-import "../../core"
+import "../panels"
 
-Item {
+Rectangle {
     id: devicesView
+    property var hostInformations: ({})
+    property var ipList: []
+    property int labelWidth: buttonsColumn.width / 2
+    property int infoWidth: buttonsColumn.width / 2
+    property int lineHeight: Style.defaultLineHeight
+    property alias splitDevicesView: splitDevicesView
+    color: "transparent"
+    enabled: serverRunning
 
-    TopBanner {
-        id: topBanner
-        text: qsTr("Connect devices")
+    function setConnectionColor(status) {
+        switch (status) {
+        case NetConst.NOT_CONNECTED:
+            return "white"
+        case NetConst.BAD_PASSWORD_INPUT:
+            return "red"
+        case NetConst.CONNECTED:
+            return "green"
+        case NetConst.CONNECTION_LOST:
+            return "yellow"
+        case NetConst.DISCONNECTED:
+            return "lightgray"
+        default:
+            return "black"      // Should never be black
+        }
     }
 
-    ManageGroupsBar {
-        id: pupilsNavigationBar
-        anchors.top: topBanner.bottom
+    function setConnectionHelp(status) {
+        switch (status) {
+        case NetConst.NOT_CONNECTED:
+            return qsTr("Not connected")
+        case NetConst.BAD_PASSWORD_INPUT:
+            return qsTr("Bad password input")
+        case NetConst.CONNECTED:
+            return qsTr("Logged")
+        case NetConst.CONNECTION_LOST:
+            return qsTr("Connection lost")
+        case NetConst.DISCONNECTED:
+            return qsTr("Disconnected")
+        default:
+            return qsTr("Unknown connection status")
+        }
     }
 
-    Rectangle {
-        id: devicesViewRectangle
-        anchors.left: pupilsNavigationBar.right
-        anchors.top: topBanner.bottom
-        anchors.bottom: parent.bottom
-        width: devicesView.width / 2
+    SplitView {
+        id: splitDevicesView
+        anchors.margins: 3
+        anchors.fill: parent
+
+        Connections {
+            target: Master
+            onNetLog: { logPanel.appendLog(message) }
+        }
+
+        Connections {
+            target: networkController
+            onNetLog: { logPanel.appendLog(message) }
+        }
+
+        FoldDownRadio {
+            id: groupPane
+            title: qsTr("Groups")
+            foldModel: Master.groupModel
+            indexKey: "group_id"
+            nameKey: "group_name"
+            checkKey: "group_checked"
+            collapsable: false
+            SplitView.preferredWidth: 200
+            SplitView.minimumWidth: 150
+            onSelectionClicked: {
+                Master.groupFilterId = modelId
+                Master.filterUsers(Master.filteredUserModel, false)
+            }
+        }
+
+        FoldDownCheck {
+            id: pupilPane
+            title: qsTr("Pupils")
+            foldModel: Master.filteredUserModel
+            indexKey: "user_id"
+            nameKey: "user_name"
+            checkKey: "user_checked"
+            delegateName: "checkUserStatus"
+            collapsable: false
+            SplitView.fillWidth: true
+            SplitView.minimumWidth: 300
+        }
+
+        Rectangle {
+            id: buttonsColumn
+            SplitView.preferredWidth: 250
+            SplitView.minimumWidth: 250
+            SplitView.maximumWidth: 350
+            SplitView.fillHeight: true
+            color: Style.colorBackground
+
+            ColumnLayout {
+                anchors.fill: parent
+                spacing: 15
+
+                Rectangle {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: Style.defaultLineHeight
+                    color: Style.colorHeaderPane
+                    radius: 5
+                    Text {
+                        anchors.fill: parent
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.pixelSize: Style.defaultPixelSize
+                        font.bold: true
+                        text: qsTr("Network")
+                        color: enabled ? "black": "gray"
+                    }
+                }
+
+                ViewButton {
+                    id: connectDevicesButton
+                    Layout.topMargin: 20
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: qsTr("Connect devices")
+
+                    onClicked: {
+                        var ipList = hostInformations.broadcastIp
+                        networkController.broadcastDatagram(ipList, serverSettings.serverID);
+                    }
+                }
+
+                ViewButton {
+                    id: loginListButton
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: qsTr("Send login list")
+
+                    onClicked: {
+                        var usersList = [];         // selected users
+                        var usersAll = []           // all users
+                        for(var i = 0 ; i < Master.filteredUserModel.count; ++ i) {
+                            var user = Master.filteredUserModel.get(i)
+                            if ((user.user_status !== NetConst.CONNECTED) && (user.user_status !== NetConst.CONNECTION_LOST)) {
+                                usersAll.push(user.user_name);
+                                if (user.user_checked)
+                                    usersList.push(user.user_name);
+                            }
+                        }
+                        if (usersList.length > 0)
+                            networkController.sendLoginList(usersList);
+                        else
+                            networkController.sendLoginList(usersAll);
+                    }
+                }
+
+                ViewButton {
+                    id: disconnectButton
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: qsTr("Disconnect selected pupils")
+
+                    onClicked: {
+                        var usersList = [];
+                        for(var i = 0 ; i < Master.filteredUserModel.count ; ++ i) {
+                            if (Master.filteredUserModel.get(i).user_checked) {
+                                networkController.disconnectSession(Master.filteredUserModel.get(i).user_id);
+                            }
+                        }
+                    }
+                }
+
+                ViewButton {
+                    id: disconnectAllButton
+                    Layout.alignment: Qt.AlignHCenter
+                    width: 200
+                    text: qsTr("Disconnect everybody")
+
+                    onClicked: {
+                        networkController.disconnectPendingSockets()
+                    }
+                }
+
+                ColumnLayout {
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 100
+                    Layout.margins: 5
+                    InformationLine { label: qsTr("Server ID:"); info: serverSettings.serverID }
+                    InformationLine { label: qsTr("Connected:"); info: (networkController) ? networkController.socketCount : 0}
+                    InformationLine { label: qsTr("Logged:"); info: (networkController) ? networkController.loggedCount : 0 }
+                    InformationLine { label: qsTr("Data received:"); info: (networkController) ? networkController.dataCount : 0 }
+                }
+
+                Rectangle {
+                    Layout.preferredWidth: parent.width
+                    Layout.preferredHeight: parent.height
+                    color: "transparent"
+                }
+            }
+        }
 
         ColumnLayout {
-            id: pupilsDetailsColumn
+            spacing: 5
+            SplitView.preferredWidth: 300
+            SplitView.minimumWidth: 100
 
-            spacing: 2
-            anchors.top: parent.top
-            width: parent.width
-
-            property int pupilNameColWidth : pupilsDetailsColumn.width / 3
-
-            //pupils header
             Rectangle {
-                id: pupilsHeaderRectangle
-
-                height: 60
-                width: parent.width
-
-                RowLayout {
-                    width: parent.width - 10
-                    height: parent.height
-                    Layout.alignment: Qt.AlignHCenter
-                    CheckBox {
-                        id: selectAllCheckBox
-                        leftPadding: 20
-                        topPadding: 20
-                        onClicked: {
-                            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
-                                pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked = checked;
-                            }
-                        }
-                    }
-
-                    Rectangle {
-                        id: pupilNameHeader
-                        Text {
-                            color: Style.colourNavigationBarBackground
-                            text: qsTr("Pupils Names")
-                            font.bold: true
-                            leftPadding: 60
-                            topPadding: 20
-                        }
-                    }
+                Layout.fillWidth: true
+                Layout.preferredHeight: Style.defaultLineHeight
+                color: Style.colorHeaderPane
+                radius: 5
+                Text {
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.pixelSize: Style.defaultPixelSize
+                    font.bold: true
+                    text: qsTr("Network logs")
+                    color: enabled ? "black": "gray"
+                }
+                SmallButton {
+                    width: Style.defaultLineHeight
+                    height: Style.defaultLineHeight
+                    anchors.top: parent.top
+                    anchors.right: parent.right
+                    font.pixelSize: Style.defaultPixelSize
+                    text: "\uf1f8"
+                    ToolTip.visible: hovered
+                    ToolTip.text: qsTr("Clear logs")
+                    onClicked: logPanel.clearLog()
+                    font.family: Style.fontAwesome
                 }
             }
-
-            //pupils data
-            ListView {
-                id: pupilsDetailsRepeater
-
-                model: masterController.ui_users
-
-                readonly property int lineHeight: 40
-                height: 400 // TODO Compute the good size and unhardcode...
-                contentHeight: lineHeight * count
-
-                delegate: Rectangle {
-                    id: pupilDetailsRectangle
-
-                    property alias pupilNameCheckBox: pupilNameCheckBox
-
-                    width: devicesViewRectangle.width
-                    height: 40
-
-                    border.color: "green"
-                    border.width: 2
-
-                    MouseArea {
-                        id: pupilDetailsRectangleMouseArea
-                        anchors.fill: parent
-
-                        hoverEnabled: true
-                        onEntered: {
-                            pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
-                        }
-                        onExited: {
-                            pupilDetailsRectangle.color = Style.colourBackground
-                        }
-
-                        RowLayout {
-                            id: pupilDetailsRectangleRowLayout
-
-                            width: parent.width
-                            height: 40
-
-                            Rectangle {
-                                id: pupilName
-                                Layout.alignment: Qt.AlignLeft
-                                Layout.fillHeight: true
-                                Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
-                                color: "transparent"
-                                CheckBox {
-                                    id: pupilNameCheckBox
-                                    text: modelData.name
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    leftPadding: 20
-                                }
-                            }
-
-                            Rectangle {
-                                id: pupilStatus
-                                Layout.alignment: Qt.AlignLeft
-                                height: parent.height - 10
-                                Layout.minimumWidth: height
-                                radius: width/2
-                                border.color: "black"
-                                color: modelData.status == ConnectionStatus.NOT_CONNECTED ? "white" :
-                                       modelData.status == ConnectionStatus.BAD_PASSWORD_INPUTTED ? "yellow" :
-                                       modelData.status == ConnectionStatus.CONNECTED ? "green" :
-                                       modelData.status == ConnectionStatus.ALREADY_CONNECTED ? "red" :
-                                       modelData.status == ConnectionStatus.DISCONNECTED ? "grey" : "red"
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        Column {
-            anchors.left: devicesViewRectangle.right
-            anchors.right: parent.right
-            Label {
-                text: qsTr("Broadcast ip")
-            }
-            TextInput {
-                id: broadcastIpText
-                // todo set default from conf, get a list of possible ip from https://doc.qt.io/qt-5/qnetworkinterface.html?
-                text: "255.255.255.255;192.168.0.255"
-            }
-
-            Label {
-                text: qsTr("Device id")
-            }
-            TextInput {
-                id: deviceIdText
-                text: "test"
-            }
-
-            ViewButton {
-                id: connectDevicesButton
-
-                text: qsTr("Connect devices")
-
-                onClicked: {
-                    var ipList = broadcastIpText.text.split(";");
-                    networkController.broadcastDatagram(ipList, deviceIdText.text);
-                }
-            }
-            ViewButton {
-                id: loginListButton
-
-                text: qsTr("Send login list")
-
-                onClicked: {
-                    var users = masterController.ui_users;
-                    var usersList = [];
-                    for(var i = 0 ; i < users.length; ++ i) {
-                        if(users[i].status != ConnectionStatus.CONNECTED && users[i].status != ConnectionStatus.ALREADY_CONNECTED) {
-                            usersList.push(users[i].name);
-                        }
-                    }
-
-                    networkController.sendLoginList(usersList);
-                }
-            }
-            ViewButton {
-                id: disconnectButton
-
-                text: qsTr("Disconnect selected pupils")
-
-                onClicked: {
-                    var usersList = [];
-                    for(var i = 0 ; i < pupilsDetailsRepeater.count ; ++ i) {
-                        if(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.checked) {
-                            usersList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text);
-                        }
-                    }
-                    networkController.disconnectSession(usersList);
-                }
-            }
-            ViewButton {
-                id: disconnectAllButton
-
-                text: qsTr("Disconnect everybody")
-
-                onClicked: {
-                    var usersList = [];
-                    for(var i = 0 ; i < pupilsDetailsRepeater.count ; ++ i) {
-                        usersList.push(pupilsDetailsRepeater.itemAtIndex(i).pupilNameCheckBox.text);
-                    }
-                    networkController.disconnectSession(usersList);
-                }
+            LogPanel {
+                id: logPanel
+                Layout.fillWidth: true
+                Layout.fillHeight: true
             }
         }
     }
+
+    Component.onCompleted: {
+        hostInformations = networkController.getHostInformations()
+        serverRunning = networkController.isRunning()
+        if (!serverRunning)
+            logPanel.appendLog(qsTr("Server already running on port 5678"))
+         splitDevicesView.restoreState(serverSettings.value("splitDevicesView"))
+    }
+    Component.onDestruction: serverSettings.setValue("splitDevicesView", splitDevicesView.saveState())
 }
