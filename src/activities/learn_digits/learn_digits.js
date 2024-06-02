@@ -108,6 +108,7 @@ function initQuestion() {
         items.imageSource = url + items.questionText + ".svg"
     }
     items.inputLocked = false;
+    items.client.startTiming()      // for server version
 }
 
 function resetCircles() {
@@ -120,11 +121,13 @@ function resetCircles() {
 function checkAnswer() {
     items.inputLocked = true
     if(items.answer === items.question) {
+        items.client.sendToServer(true)
         ++items.score.currentSubLevel;
         items.score.playWinAnimation();
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
         removeLastQuestion();
     } else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation();
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
     }
