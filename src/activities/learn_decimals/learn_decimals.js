@@ -24,6 +24,7 @@ var firstNumber;
 var secondNumber = 0;
 var squaresNumber = 10;
 var correctAnswer;
+var userAnswer;
 var lastBarSquareUnits;
 var firstNumberList;
 var numberOfPossibleQuestions;
@@ -212,6 +213,8 @@ function displayDecimalNumberQuestion() {
         items.largestNumber = toDecimalLocaleNumber(firstNumber);
         items.smallestNumber = toDecimalLocaleNumber(secondNumber);
     }
+    items.answerBackground.userEntry = ""
+    items.client.startTiming()      // for server version
 }
 
 function verifyNumberRepresentation() {
@@ -237,6 +240,7 @@ function verifyNumberRepresentation() {
     if(!items.isQuantityMode)
         sum /= squaresNumber;
 
+    userAnswer = sum    // Copy to global before sending data to server
     if(sum === correctAnswer) {
         if(items.isSubtractionMode || items.isAdditionMode) {
             items.goodAnswerSound.play();
@@ -245,12 +249,14 @@ function verifyNumberRepresentation() {
             items.buttonsBlocked = false;
         }
         else {
+            items.client.sendToServer(true)
             items.score.currentSubLevel += 1;
             items.score.playWinAnimation();
             items.goodAnswerSound.play();
         }
     }
     else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation();
         items.badAnswerSound.play();
     }
@@ -273,9 +279,11 @@ function verifyNumberTyping(typedAnswer) {
     typedAnswer = typedAnswer.replace("," , ".");
     if(parseFloat(typedAnswer) === parseFloat(correctAnswer)) {
         items.goodAnswerSound.play();
+        items.client.sendToServer(true)
         items.bonus.good('flower')
     }
     else {
+        items.client.sendToServer(false)
         items.errorRectangle.startAnimation();
         items.badAnswerSound.play();
     }
