@@ -141,8 +141,8 @@ Item {
 
                     Image {         //
                         id: imgSvg
-                        source: (token.svgSource == "") ? "qrc:/gcompris/src/core/resource/empty.svg" : token.svgSource
-                        width: (wordClassItem.expected == "") ? GCStyle.baseMargins : wordsArea.itemHeight
+                        source: (token.svgSource === "") ? "qrc:/gcompris/src/core/resource/empty.svg" : token.svgSource
+                        width: (wordClassItem.expected === "") ? GCStyle.baseMargins : wordsArea.itemHeight
                         height: width
                         sourceSize.width: width
                         sourceSize.height: width
