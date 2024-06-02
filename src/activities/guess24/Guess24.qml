@@ -76,11 +76,23 @@ ActivityBase {
             property alias animSol: animSol
             property bool keyboardNavigation: false
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var data = {
+                    "cards": Activity.problems[items.score.currentSubLevel]["puzzle"].split(" ").map(Number),
+                    "steps": Activity.reportStack,
+                    "hints": Activity.hintCount
+                }
+                return data
+            }
+        }
         JsonParser { id: jsonParser }
 
 
@@ -432,9 +444,9 @@ ActivityBase {
                 anchors.fill: parent
                 enabled: !items.buttonsBlocked
                 onClicked: {
-                    if (Activity.helpCount < 4)
-                        Activity.helpCount++
-                        solution.text = Activity.splittedSolution.slice(0, Activity.helpCount).join("\n")
+                    if (Activity.hintCount < 4)
+                        Activity.hintCount++
+                        solution.text = Activity.splittedSolution.slice(0, Activity.hintCount).join("\n")
                         solutionRect.opacity = 1.0
                         cardsBoard.enabled = false
                         operators.enabled = false

@@ -21,11 +21,12 @@ var allProblems = []        // All dataset problems
 var problems = []           // Dataset for current level
 var operationsStack = []
 var stepsStack= []
+var reportStack = []
 var result = 0
 var lastAction
 var animActions = [ "forward", "backward", "cancel" ]
 var unstack = false         // Unstack all operations when true (hintButton)
-var helpCount = 0           // Number of lines shown with hintButton (0 to 3)
+var hintCount = 0           // Number of lines shown with hintButton (0 to 3)
 var splittedSolution = []   // 3 lines for help
 
 var OperandsEnum = {
@@ -174,7 +175,7 @@ function parseSolution(solutionText) {
 }
 
 function initCards() {
-    helpCount = 0
+    hintCount = 0
     items.animationCard.state = ""
     items.cancelButton.visible = false
     items.hintButton.visible = false
@@ -192,10 +193,12 @@ function initCards() {
     unstack = false
     operationsStack = []
     stepsStack = []
+    reportStack = []
     items.steps.text = stepsStack.join("\n")
     parseSolution(randomSolution(problems[items.score.currentSubLevel], items.levels[items.currentLevel].complexities))
     items.solution.text = ""
     items.buttonsBlocked = false
+    items.client.startTiming()      // for server version
 }
 
 function valueClicked(idx) {
@@ -230,6 +233,7 @@ function valueClicked(idx) {
                 break
             }
             stepsStack.push(text)
+            reportStack.push(text)
             // Check if result is not an integer
             if (result !== Math.floor(result)) {
                 result = `${a}÷${b}`
@@ -276,6 +280,7 @@ function checkResult() {
     if (operationsStack.length === 3) {
         items.buttonsBlocked = true;
         if (Number(items.cardsModel.get(items.currentValue).value_) === 24) {
+            items.client.sendToServer(true)     // for server version
             items.cancelButton.visible = false
             items.score.currentSubLevel++
             items.score.playWinAnimation()
@@ -283,7 +288,9 @@ function checkResult() {
         } else {
             items.errorRectangle.startAnimation()
             items.badAnswerSound.play()
+            items.client.sendToServer(false)     // for server version
             items.hintButton.visible = true
+//            reportStack = []
         }
     } else {
         items.bleepSound.play()
@@ -322,6 +329,8 @@ function popOperation() {
 
 function endPopOperation() {
     stepsStack.pop()
+//    if (reportStack.length)
+        reportStack.push("back")
     items.steps.text = stepsStack.join("\n")
     items.cardsModel.setProperty(lastAction.from, "value_", lastAction.valFrom)
     items.currentValue = items. cardsBoard.currentIndex = lastAction.from
