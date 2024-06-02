@@ -1,3 +1,11 @@
+#!/usr/bin/python
+#
+# GCompris - pdfBuild.py
+#
+# SPDX-FileCopyrightText: 2020 Emmanuel Charruau <echarruau@gmail.com>
+#
+#   SPDX-License-Identifier: GPL-3.0-or-later
+
 # Python code to create control panel specification documentation in latex format 
 from pylatex import Document, Section, Subsection, Subsubsection, Tabular, MultiColumn, \
  Figure, Package, NewLine, Command, escape_latex, LineBreak

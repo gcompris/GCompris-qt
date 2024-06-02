@@ -4,12 +4,14 @@
  *
  * Authors:
  *   Emmanuel Charruau <echarruau@gmail.com>
+ *   Bruno Anselme <be.root@free.fr>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
 import QtQuick.Layouts 1.2
-import "../../core"
+
+import "../singletons"
 
 Item {
     id: underlinedTextInput
@@ -17,32 +19,29 @@ Item {
     property string defaultText: "Default text, must be set in calling element"
     property alias text: textInput.text
     property alias echoMode: textInput.echoMode
+    property bool readOnlyText: false
 
     onFocusChanged: { if(focus) textInput.forceActiveFocus(); }
-    TextInput {
-        id: textInput
-
-        anchors.top: parent.top
-        anchors.left: parent.left
-        width: parent.width * 5/6
-        text: defaultText
-        cursorVisible: false
-        echoMode: TextInput.Normal
-        font {
-            family: Style.fontAwesome
-            pixelSize: 15
-        }
-        selectByMouse: true
-        focus: true
-    }
 
     Rectangle {
         id: underlinePupilNameTextInput
-        anchors.left: textInput.left
-        anchors.top: textInput.bottom
+        anchors.fill: parent
+        color: readOnlyText ? "transparent" : Style.textInputBackground
+        border.color: "lightgray"
+        border.width: readOnlyText ? 0 : 1
+    }
 
-        width: textInput.width
-        height: 1
-        color: Style.colourNavigationBarBackground
+    TextInput {
+        id: textInput
+
+        anchors.fill: parent
+        anchors.margins: 3
+        text: defaultText
+        cursorVisible: false
+        echoMode: TextInput.Normal
+        font.pixelSize: Style.defaultPixelSize
+        selectByMouse: true
+        focus: true
+        readOnly: readOnlyText
     }
 }
