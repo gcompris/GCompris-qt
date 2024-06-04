@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-03 00:56+0200\n"
+"PO-Revision-Date: 2024-06-03 19:01+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17645,12 +17645,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr "Aprendizaje de letras en mayúsculas y minúsculas, memoria."
+msgstr "Aprende las letras en mayúsculas y minúsculas."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -17772,12 +17769,9 @@ msgstr "Da la vuelta a las cartas para emparejar un número con una imagen."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Practica las restas."
+msgstr "Practica la numeración."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -17847,22 +17841,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
-msgstr "Practica sumas, restas, multiplicaciones y divisiones."
+msgstr "Practica la suma, la resta, la multiplicación y la división."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
-msgstr "Sumas, restas, multiplicaciones y divisiones."
+msgstr "Suma, resta, multiplicación y división."
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -19408,12 +19396,9 @@ msgstr "Encuentra la letra que falta para completar la palabra."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Aprende el orden alfabético."
+msgstr "Aprende deletrear palabras."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19472,12 +19457,9 @@ msgstr "Practica el uso del dinero."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Practica el uso del dinero."
+msgstr "Practica a contar dinero y a usarlo."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19576,20 +19558,15 @@ msgstr "Practica el uso del dinero dándole a Tux su cambio."
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
-#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to give Tux "
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"Pulsa en las monedas o los billetes en la parte inferior de la pantalla para "
-"pagar. Si quieres quitar una moneda o un billete, pulsa en ella en el área "
-"superior de la pantalla."
+"Pulsa en las monedas o los billetes de la parte inferior de la pantalla para "
+"darle a Tux su cambio. Si quieres quitar una moneda o un billete, pulsa "
+"sobre ellos en el área superior de la pantalla."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -19600,12 +19577,9 @@ msgstr "Dale a Tux su cambio, incluyendo céntimos"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "Practica el uso del dinero, incluyendo céntimos."
+msgstr "Practica a contar dinero y a usarlo, incluyendo céntimos."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -19638,26 +19612,17 @@ msgstr "Descubre el sistema código morse internacional"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr "Aprende a comunicarte con el código morse internacional."
+msgstr "Comunícate con el código morse internacional."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
 msgstr ""
-"Tienes que enviar y recibir letras y dígitos en el código morse "
-"internacional."
+"Aprende a enviar y recibir mensajes usando el código morse internacional."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -20454,12 +20419,9 @@ msgstr ""
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Leer y ordenar números."
+msgstr "Practica ordenando números."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20563,12 +20525,9 @@ msgstr "Organiza las palabras indicadas para formar una frase con sentido."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Ordena las palabras para formar frases con sentido."
+msgstr "Practica ordenando palabras para formar una frase con sentido."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -20664,14 +20623,6 @@ msgstr "Desarrollar habilidades de pensamiento estratégico."
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than one's opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -20681,7 +20632,7 @@ msgid ""
 "captured 24."
 msgstr ""
 "El juego empieza con cuatro semillas en cada casa. El objetivo del juego es "
-"capturar más semillas que el oponente. Como el juego solo dispone de 48 "
+"capturar más semillas que tu oponente. Como el juego solo dispone de 48 "
 "semillas, basta con capturar 25 para ganar. Como existe un número par de "
 "semillas, es posible que el juego termine en tablas, donde cada jugador ha "
 "capturado 24."
@@ -21851,20 +21802,14 @@ msgstr ""
 "derecha."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Emparejar números hasta 2."
+msgstr "Atrapa los números empezando por 0."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Emparejar números hasta 2."
+msgstr "Atrapa los números empezando por 10."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -23638,12 +23583,9 @@ msgstr "Trata de dividir los caramelos entre un determinado número de niños."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr "Practica las divisiones."
+msgstr "Aprende a compartir, practica la división."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -24141,7 +24083,7 @@ msgstr "No puedes poner más de %1 caramelos en el mismo sitio"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "Dibuja en una cuadrícula"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -24153,7 +24095,7 @@ msgstr "Crea tu propio dibujo."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Expresa tu creatividad dibujando."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -24305,21 +24247,17 @@ msgstr "Números con fichas de dominó"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr "Cuenta el número de puntos del dado antes de que llegue al suelo."
+msgstr ""
+"Cuenta el número de puntos de la ficha de dominó antes de que llegue al "
+"suelo."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr "Escribe el número de puntos de cada dado que cae."
+msgstr "Escribe el número de puntos de cada ficha de dominó que cae."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -25927,12 +25865,9 @@ msgstr "El juego de rompecabezas tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "El objetivo es construir la forma que se indica."
+msgstr "Mueve los objetos para reproducir la forma que se indica."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -25978,12 +25913,9 @@ msgstr "Lanza dardos sobre un blanco y cuenta tu puntuación."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Practica la suma de números."
+msgstr "Practica la suma de varios números."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22

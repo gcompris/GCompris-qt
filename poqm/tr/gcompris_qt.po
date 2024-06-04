@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-15 13:55+0300\n"
+"PO-Revision-Date: 2024-06-04 01:03+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -2132,7 +2132,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "İlk farem"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2218,7 +2218,7 @@ msgstr "Yapbozu tamamla"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Nesneleri şekilleriyle eşleştir."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
@@ -2257,7 +2257,7 @@ msgstr "Bir bebek sözcük işlemci"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "İlk metnini yaz."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2818,14 +2818,14 @@ msgstr "Bar oyunu (Tux'a karşı)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "Bak ve diğer oyuncunun son deliğe bir top koymasını zorla."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Stratejik düşünme, sayma ve çıkarma yeteneklerini geliştir."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -5806,7 +5806,7 @@ msgstr "Şekilleri ilgili hedeflerine sürükleyip bırak."
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "Gözlem ve uzamsal görselleştirme yeteneklerini geliştir."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
@@ -9245,7 +9245,7 @@ msgstr "Görseli yeniden oluşturmak için her bir ögeyi taşı."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "Tahmin ve uzamsal görselleştirme yeteneklerini geliştir."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9474,7 +9474,7 @@ msgstr "Topu kaleye vur."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Yönü ve hızı anla."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
