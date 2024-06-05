@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-06-04 01:03+0300\n"
+"PO-Revision-Date: 2024-06-04 12:13+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -18227,9 +18227,6 @@ msgstr "Bölme alıştırması yap."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
 msgstr "Bölme."
@@ -18319,9 +18316,6 @@ msgstr "Sonucu bir bölme işlemi ile eşleştirmek için kartları çevir."
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "Bölme"
@@ -18344,9 +18338,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
 msgstr "Çıkarma işlemi alıştırması yap."
@@ -18453,9 +18444,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
 msgstr "Çarpma ve bölme alıştırmaları yap."
@@ -18463,9 +18451,6 @@ msgstr "Çarpma ve bölme alıştırmaları yap."
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
 msgstr "Çarpma, bölme."
@@ -18512,9 +18497,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
 msgstr "Çarpma işlemi alıştırması yap."
@@ -18522,9 +18504,6 @@ msgstr "Çarpma işlemi alıştırması yap."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "Çarpma işlemi."
@@ -18676,12 +18655,9 @@ msgstr "Tux'a karşı eşleşen çiftleri bulmak için kartları çevir."
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr "Ses belleğini çalıştır."
+msgstr "Görsel belleğini çalıştır."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -18715,12 +18691,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Toplama işlemi üzerine alıştırma yap."
+msgstr "Sayıları okuma alıştırması yap."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -19480,12 +19453,9 @@ msgstr "Sözcüğü tamamlamak için eksik harfi bul."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Abecesel sırayı öğren."
+msgstr "Sözcükleri hecelemeyi öğren."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19543,12 +19513,9 @@ msgstr "Para kullanımı alıştırması yap."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Para kullanımı alıştırması yap."
+msgstr "Sayma ve para kullanımı alıştırması yap."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19670,12 +19637,9 @@ msgstr "Tux'a para üstünü ver, kuruşlar dahil"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "Kuruşlar dahil para kullanma egzersizi yap."
+msgstr "Kuruşları da öğrenerek para kullanma alıştırması yap."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -19707,24 +19671,16 @@ msgstr "Uluslararası Mors Kodu'nu keşfet"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr "Uluslararası Mors Kodu ile nasıl iletişim kuracağını öğren"
+msgstr "Uluslararası Mors Kodu ile iletişim kur."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
-msgstr "Uluslararası Mors Kodu ile harfler ve sayılar gönderip almalısın."
+msgstr "Uluslararası Mors Kodu ile harfler ve sayılar gönderip almayı öğren."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -19734,13 +19690,6 @@ msgstr "Abeceler ve rakamlar bilgisi."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -19750,7 +19699,8 @@ msgid ""
 msgstr ""
 "Senden Mors koduyla bir ileti göndermen veya alınan Mors kodu iletisini "
 "harflere veya rakamlara dönüştürmen isteniyor. Mors alfabesini öğrenmek için "
-"tüm harf ve rakamların kodunu içeren çeviri haritasına göz atabilirsin."
+"tüm harf ve rakamların kodunu içeren Mors anahtarı simgesine tıklayıp çeviri "
+"haritasına bakabilirsin."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -19883,12 +19833,9 @@ msgstr "Her bir ögeyi verilen örnekteki gibi aynı yere koy."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Okuma becerileri egzersizi."
+msgstr "Gözlem ve eşleştirme yeteneklerini geliştir."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -19943,12 +19890,9 @@ msgstr "Dokuz taş (Tux'a karşı)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "Dokuz taş (Tux'a karşı)"
+msgstr "Tux'a karşı dokuz taş oyununu oyna."
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -20061,12 +20005,9 @@ msgstr "Dokuz taş (bir arkadaşla)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "Dokuz taş (bir arkadaşla)"
+msgstr "Bir arkadaşınla dokuz taş oyununu oyna."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -20102,14 +20043,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
-msgstr "Notaları doğru tanımla ve bir düzeyi tamamlamak hepsini doğru yap."
+msgstr ""
+"Notaları tanımla, onları piyano tuşlarıyla çal ve bölümü tamamlamak için "
+"tümünü doğru yap."
 
 #: activities/note_names/NoteNames.qml:177
 #, qt-format
@@ -20176,22 +20116,16 @@ msgstr ""
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Su döngüsünü öğren."
+msgstr "Sayı dizisini öğren."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each number in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "Doğru sıradaki her numaraya tıklayarak resmi çiz."
+msgstr "Sayısal sıradati noktalara tıklayarak resmi çiz."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -20237,20 +20171,14 @@ msgstr ""
 "ya da öğrenmek için sağ alt köşedeki numarayı kontrol edebilirsin."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Çift sayıyı seç:"
+msgstr "Çift sayıları yakala."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Tek sayıyı seç:"
+msgstr "Tek sayıları yakala."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -20461,12 +20389,9 @@ msgstr "Verilen olayları kronolojik sıraya koy."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Verilen olayları kronolojik sıraya koy."
+msgstr "Bir olay dizisini kronolojik sıraya koymayı öğren."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20508,12 +20433,9 @@ msgstr "Verilen sayıları istenildiği gibi artan veya azalan sırada düzenle.
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Sayıları okumak ve sıralamak."
+msgstr "Sayıları sıralamayı çalış."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20616,12 +20538,9 @@ msgstr "Verilen sözcükleri, anlamlı bir tümce oluşturmak için düzenle."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Anlamlı tümceler oluşturmak için sözcükleri sırala."
+msgstr "Anlamlı bir tümce oluşturmak için sözcükleri sıralamayı çalış."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29

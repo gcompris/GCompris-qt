@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-03 19:01+0200\n"
+"PO-Revision-Date: 2024-06-05 01:46+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -19632,13 +19632,6 @@ msgstr "Conocimiento de alfabetos y dígitos."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -19648,8 +19641,8 @@ msgid ""
 msgstr ""
 "Se te va a pedir que envíes un mensaje en código morse o que conviertas el "
 "mensaje en código morse que recibas en letras y números. Para aprender el "
-"código morse puedes consultar el mapa de traducción que contiene los códigos "
-"de todas las letras y números."
+"código morse puedes pulsar el icono de tecla morse para consultar el mapa de "
+"traducción que contiene los códigos de todas las letras y números."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -19785,12 +19778,9 @@ msgstr "Coloca cada elemento en el mismo lugar que en el ejemplo."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Entrenamiento de la habilidad de lectura."
+msgstr "Entrena tus habilidades de observación y emparejamiento."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -19845,12 +19835,9 @@ msgstr "Juego del molino (contra Tux)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "Juego del molino (contra Tux)"
+msgstr "Juega al juego del molino contra Tux."
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -19868,6 +19855,10 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
+"Juega con Tux. Primero, colocad por turnos nueve piezas y luego, por turnos, "
+"moved las piezas. Si solo te quedan 3 piezas, puedes trasladarlas a un lugar "
+"vacío. Un jugador gana cuando el otro jugador no puede mover ninguna pieza o "
+"solo le quedan 2 piezas."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19963,12 +19954,9 @@ msgstr "Juego del molino (con un amigo)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "Juego del molino (con un amigo)"
+msgstr "Juega al juego del molino con un amigo."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -19979,6 +19967,10 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"Juega con un amigo. Primero, colocad por turnos nueve piezas y luego, por "
+"turnos, moved las piezas. Si solo te quedan 3 piezas, puedes trasladarlas a "
+"un lugar vacío. Un jugador gana cuando el otro jugador no puede mover "
+"ninguna pieza o solo le quedan 2 piezas."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -20005,16 +19997,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
-"Identifica las notas correctamente y consigue una puntuación del 100% para "
-"completar un nivel."
+"Identifica las notas, tócalas en el teclado del piano y consigue una "
+"puntuación del 100% para completar un nivel."
 
 #: activities/note_names/NoteNames.qml:177
 #, qt-format
@@ -20078,16 +20067,13 @@ msgstr "Secuencia de números"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "Selecciona los números uno tras otro según la secuencia numérica."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Aprende el ciclo del agua."
+msgstr "Aprende la secuencia numérica."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
@@ -20117,7 +20103,7 @@ msgstr ""
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "Aprende a reconocer números pares e impares y su orden numérico."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -20144,20 +20130,14 @@ msgstr ""
 "esquina inferior derecha."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Escoge el número par:"
+msgstr "Atrapa los números pares."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Escoge el número impar:"
+msgstr "Atrapa los números impares."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"

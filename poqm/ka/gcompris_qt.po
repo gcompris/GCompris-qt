@@ -1788,7 +1788,7 @@ msgstr "დააზიანეთ ნათურა მისი ორ ე�
 msgctxt "TutorialDataset|"
 msgid ""
 "A switch can connect or disconnect the current travelling path or a circuit."
-msgstr ""
+msgstr "გადამრთველს შეუძლია შეაერთოს ან განამხოლოვოს დენის ბილიკი ან წრედი."
 
 #: activities/analog_electricity/TutorialDataset.qml:149
 msgctxt "TutorialDataset|"
@@ -1943,7 +1943,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:267
 msgctxt "TutorialDataset|"
 msgid "The battery is providing too much energy to the LED."
-msgstr ""
+msgstr "ელემენტი LED-ს მეტისმეტად ბევრ ენერგიას გადასცემს."
 
 #: activities/analog_electricity/TutorialDataset.qml:268
 msgctxt "TutorialDataset|"
@@ -1955,7 +1955,7 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:269
 msgctxt "TutorialDataset|"
 msgid "Light the red LED using the provided components."
-msgstr ""
+msgstr "აანთეთ წითელი LED მოწოდებული კომპონენტებით."
 
 #: activities/analog_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -2061,7 +2061,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Doing a simple click in the central area shows a marker at the click "
 "position."
-msgstr ""
+msgstr "ცენტრალურ ალაგზე მარტივი წკაპი ამ ადგილას მარკერს აჩვენებს."
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
@@ -2073,13 +2073,13 @@ msgstr "მარტივი პაზლი"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "იპოვეთ ობიექტები მათი მოხაზულობებით."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr ""
+msgstr "ისწავლეთ ობიექტის ფორმის გამოცნობა."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2092,7 +2092,7 @@ msgstr ""
 #: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
-msgstr ""
+msgstr "კრეფისას სიმბოლოს ხმის დაკვრა"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
@@ -2196,13 +2196,13 @@ msgstr "შენახვა"
 #: activities/babymatch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Matching items"
-msgstr ""
+msgstr "შესაბამისი ელემენტები"
 
 #. Help title
 #: activities/babymatch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the items to match them."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ შესაბამისი ელემენტები."
 
 #. Help goal
 #: activities/babymatch/ActivityInfo.qml:23
@@ -2229,7 +2229,7 @@ msgstr ""
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and drop the items to match them."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ შესაბამისი ელემენტები."
 
 #. Activity title
 #: activities/babyshapes/ActivityInfo.qml:19
@@ -2247,7 +2247,7 @@ msgstr "გადაათრიეთ და დაყარეთ ობიე
 #: activities/babyshapes/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr ""
+msgstr "ისწავლეთ გეომეტრიული ფიგურები გამოცნობა."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2384,7 +2384,7 @@ msgstr ""
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Cross: clear a map cell completely"
-msgstr ""
+msgstr "ჯვარი: რუკის უჯრედის მთლიანად გასუფთავება"
 
 #: activities/balancebox/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -2526,7 +2526,7 @@ msgstr "შემოწმება"
 #: activities/ballcatch/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Make the ball go to Tux"
-msgstr ""
+msgstr "გააგორეთ ბურთი ტუქსისკენ"
 
 #. Help title
 #: activities/ballcatch/ActivityInfo.qml:17
@@ -3463,7 +3463,7 @@ msgstr "ანბანები"
 #: activities/categorization/resource/board/category_alphabets.qml:67
 msgctxt "category_alphabets|"
 msgid "Place the LETTERS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ წერტილები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_animals.qml:19
 msgctxt "category_animals|"
@@ -3481,7 +3481,7 @@ msgstr "ცხოველები"
 #: activities/categorization/resource/board/category_animals.qml:95
 msgctxt "category_animals|"
 msgid "Place the ANIMALS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ცხოველები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_birds.qml:19
 msgctxt "category_birds|"
@@ -3499,7 +3499,7 @@ msgstr "ჩიტები"
 #: activities/categorization/resource/board/category_birds.qml:95
 msgctxt "category_birds|"
 msgid "Place the BIRDS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ჩიტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:19
 msgctxt "category_colors|"
@@ -3510,55 +3510,55 @@ msgstr "ფერები"
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching GREEN color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ მწვანე ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:32
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching WHITE color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ თეთრი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:41
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PINK color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ ვარდისფერი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:51
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching RED color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ წითელი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:60
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching BROWN color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ ყავისფერი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:69
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PURPLE color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ იისფერი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:79
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching GREY color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ ნაცრისფერი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:88
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching ORANGE color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ ნარინჯისფერი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_colors.qml:97
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching YELLOW color to the right and others to the left"
-msgstr ""
+msgstr "დაალაგეთ ყვითელი ობიექტები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_fishes.qml:19
 msgctxt "category_fishes|"
@@ -3573,7 +3573,7 @@ msgstr "თევზები"
 #: activities/categorization/resource/board/category_fishes.qml:69
 msgctxt "category_fishes|"
 msgid "Place the FISHES to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ თევზები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_flowers.qml:18
 msgctxt "category_flowers|"
@@ -3591,7 +3591,7 @@ msgstr "ყვავილები"
 #: activities/categorization/resource/board/category_flowers.qml:94
 msgctxt "category_flowers|"
 msgid "Place the FLOWERS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ყვავილები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_food.qml:19
 msgctxt "category_food|"
@@ -3606,7 +3606,7 @@ msgstr "საჭმელი"
 #: activities/categorization/resource/board/category_food.qml:68
 msgctxt "category_food|"
 msgid "Place the FOOD ITEMS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ საჭმელი მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_fruits.qml:19
 msgctxt "category_fruits|"
@@ -3623,7 +3623,7 @@ msgstr "ნაყოფი"
 #: activities/categorization/resource/board/category_fruits.qml:86
 msgctxt "category_fruits|"
 msgid "Place the FRUITS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ხილი მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_household_goods.qml:19
 msgctxt "category_household_goods|"
@@ -3646,7 +3646,7 @@ msgstr "საოჯახო საქონელი"
 #: activities/categorization/resource/board/category_household_goods.qml:141
 msgctxt "category_household_goods|"
 msgid "Place the HOUSEHOLD GOODS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ სახლის ნივთები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_insects.qml:19
 msgctxt "category_insects|"
@@ -3661,7 +3661,7 @@ msgstr "მწერები"
 #: activities/categorization/resource/board/category_insects.qml:68
 msgctxt "category_insects|"
 msgid "Place the INSECTS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ მწერები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_living_beings.qml:19
 msgctxt "category_living_beings|"
@@ -3677,7 +3677,7 @@ msgstr "ცოცხალი ორგანიზმები"
 #: activities/categorization/resource/board/category_living_beings.qml:77
 msgctxt "category_living_beings|"
 msgid "Place the living beings to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ სულიერები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_monuments.qml:19
 msgctxt "category_monuments|"
@@ -3692,7 +3692,7 @@ msgstr "ძეგლები"
 #: activities/categorization/resource/board/category_monuments.qml:68
 msgctxt "category_monuments|"
 msgid "Place the MONUMENTS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ძეგლები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_nature.qml:19
 msgctxt "category_nature|"
@@ -3709,7 +3709,7 @@ msgstr "ბუნება"
 #: activities/categorization/resource/board/category_nature.qml:86
 msgctxt "category_nature|"
 msgid "Place the NATURE images to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ბუნების სურათები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_numbers.qml:19
 msgctxt "category_numbers|"
@@ -3721,7 +3721,7 @@ msgstr "რიცხვები"
 #: activities/categorization/resource/board/category_numbers.qml:41
 msgctxt "category_numbers|"
 msgid "Place the NUMBERS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ რიცხვები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_odd_even.qml:20
 msgctxt "category_odd_even|"
@@ -3736,7 +3736,7 @@ msgstr "კენტი და ლუწი რიცხვები"
 #: activities/categorization/resource/board/category_odd_even.qml:69
 msgctxt "category_odd_even|"
 msgid "Place the EVEN Numbers to the right and the ODD Numbers to the left"
-msgstr ""
+msgstr "დაალაგეთ ლუწი რიცხვები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_renewable.qml:19
 msgctxt "category_renewable|"
@@ -3755,6 +3755,7 @@ msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
 msgstr ""
+"დაალაგეთ განახლებადი ენერგიის წყაროები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:21
 msgctxt "category_shapes|"
@@ -3765,51 +3766,69 @@ msgstr "მოყვანილობები"
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CIRCLE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც წრეს ემთხვევა, მარჯვნივ და დანარჩენი ყველაფერი "
+"მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:34
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a RECTANGLE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ოთხკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:43
 msgctxt "category_shapes|"
 msgid "Place the objects matching a SPHERE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც სფეროს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:52
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a TRAPEZOID to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ტრაპეციას ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:61
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a TRIANGLE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც სამკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:70
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a SEMICIRCLE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ნახევარწრეს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:79
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a PENTAGON to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ხუთკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:88
 msgctxt "category_shapes|"
 msgid "Place the objects matching a SQUARE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც კვადრატს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:97
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CONE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც კონუსს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:106
 msgctxt "category_shapes|"
@@ -3817,58 +3836,78 @@ msgid ""
 "Place the objects matching a PARALLELOGRAM to the right and others to the "
 "left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც პარალელოგრამს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:115
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a HEPTAGON to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც შვიდკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:124
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CUBE to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც კუბს ემთხვევა, მარჯვნივ და დანარჩენი ყველაფერი "
+"მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:133
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a RHOMBUS to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც რომბს ემთხვევა, მარჯვნივ და დანარჩენი ყველაფერი "
+"მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:142
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a NONAGON to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ცხრაკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:151
 msgctxt "category_shapes|"
 msgid "Place the objects matching a CUBOID to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც კუბოიდს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:160
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a HEXAGON to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ექვსკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:169
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching an OCTAGON to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც რვაკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:178
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a CYLINDER to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ცილინდრს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_shapes.qml:187
 msgctxt "category_shapes|"
 msgid ""
 "Place the objects matching a DECAGON to the right and others to the left"
 msgstr ""
+"დაალაგეთ ობიექტები, რომლებიც ათკუთხედს ემთხვევა, მარჯვნივ და დანარჩენი "
+"ყველაფერი მარცხნივ"
 
 #: activities/categorization/resource/board/category_tools.qml:19
 msgctxt "category_tools|"
@@ -3887,7 +3926,7 @@ msgstr "ხელსაწყოები"
 #: activities/categorization/resource/board/category_tools.qml:104
 msgctxt "category_tools|"
 msgid "Place the TOOLS to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ხელსაწყოები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_transports.qml:19
 msgctxt "category_transports|"
@@ -3907,7 +3946,7 @@ msgstr "ტრანსპორტი"
 msgctxt "category_transports|"
 msgid ""
 "Place the MEANS OF TRANSPORTATION to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ გადაადგილების საშუალებები მარჯვნივ და დანარჩენები მარცხნივ"
 
 #: activities/categorization/resource/board/category_vegetables.qml:19
 msgctxt "category_vegetables|"
@@ -3922,7 +3961,7 @@ msgstr "ბოსტნეული"
 #: activities/categorization/resource/board/category_vegetables.qml:68
 msgctxt "category_vegetables|"
 msgid "Place the VEGETABLES to the right and other objects to the left"
-msgstr ""
+msgstr "დაალაგეთ ბოსტნეული მარჯვნივ და დანარჩენები მარცხნივ"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
@@ -4729,7 +4768,7 @@ msgstr "საათის სწავლა"
 #: activities/clockgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn how to tell the time on an analog clock."
-msgstr ""
+msgstr "ისწავლეთ ანალოგური საათის ცნობა."
 
 #. Help goal
 #: activities/clockgame/ActivityInfo.qml:20
@@ -4763,7 +4802,7 @@ msgstr ""
 #: activities/clockgame/Clockgame.qml:108
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
-msgstr ""
+msgstr "დააყენეთ საათი დროზე:"
 
 #: activities/clockgame/Clockgame.qml:111
 #, qt-format
@@ -4823,13 +4862,13 @@ msgstr "მინიშნებების გარეშე."
 #: activities/color_mix/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mixing paint colors"
-msgstr ""
+msgstr "სახატავი ფერების შერევა"
 
 #. Help title
 #: activities/color_mix/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Discover paint color mixing."
-msgstr ""
+msgstr "აღმოაჩინეთ სახატავი ფერების შერევა."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
@@ -5130,7 +5169,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr ""
+msgstr "ღილაკი Enter: პასუხების გადამოწმება"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5258,22 +5297,22 @@ msgstr ""
 #: activities/crane/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Play with images."
-msgstr ""
+msgstr "თამაში გამოსახულებებით."
 
 #: activities/crane/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 3 letters."
-msgstr ""
+msgstr "თამაში სამასოიანი სიტყვებით."
 
 #: activities/crane/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 4 letters."
-msgstr ""
+msgstr "თამაში ოთხასოიანი სიტყვებით."
 
 #: activities/crane/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Play with words of 5 letters."
-msgstr ""
+msgstr "თამაში ხუთასოიანი სიტყვებით."
 
 #. Activity title
 #: activities/details/ActivityInfo.qml:18
@@ -6130,17 +6169,17 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Up arrow: select next item"
-msgstr ""
+msgstr "ღილაკი ზემოთ: შემდეგი ელემენტის არჩევა"
 
 #: activities/enumerate/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Down arrow: select previous item"
-msgstr ""
+msgstr "ღილაკი ქვემოთ: წინა ელემენტის არჩევა"
 
 #: activities/enumerate/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Digits: enter your answer for the selected item"
-msgstr ""
+msgstr "ციფრები: შეიყვანეთ თქვენი პასუხი მონიშნული ელემენტებისთვის"
 
 #: activities/enumerate/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -7697,13 +7736,13 @@ msgstr ""
 #: activities/explore_world_music/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Explore world music"
-msgstr ""
+msgstr "მსოფლიოს მუსიკის შესწავლა"
 
 #. Help title
 #: activities/explore_world_music/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn about the music of the world."
-msgstr ""
+msgstr "ისწავლეთ მეტი მსოფლიოს მუსიკის შესახებ."
 
 #. Help goal
 #: activities/explore_world_music/ActivityInfo.qml:20
@@ -7716,7 +7755,7 @@ msgstr ""
 #: activities/explore_world_music/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "There are three levels in this activity."
-msgstr ""
+msgstr "ამ აქტივობაში სამი დონეა."
 
 #: activities/explore_world_music/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -7833,7 +7872,7 @@ msgstr ""
 #: activities/explore_world_music/resource/board/board1.qml:96
 msgctxt "board1|"
 msgid "European Classical Music"
-msgstr ""
+msgstr "ევროპული კლასიკური მუსიკა"
 
 #: activities/explore_world_music/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -15201,7 +15240,7 @@ msgstr ""
 #: activities/learn_digits/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
-msgstr ""
+msgstr "არაბული ციფრები"
 
 #: activities/learn_digits/ActivityConfig.qml:24
 #: activities/reversecount/ActivityConfig.qml:21
@@ -15218,12 +15257,12 @@ msgstr "თითები"
 #: activities/learn_digits/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Digits representation"
-msgstr ""
+msgstr "ციფრების წარმოდგენა"
 
 #: activities/learn_digits/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Enable voices"
-msgstr ""
+msgstr "ხმების ჩართვა"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
@@ -15256,7 +15295,7 @@ msgstr ""
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: say the digit again"
-msgstr ""
+msgstr "ტაბი: ციფრის გამეორება"
 
 #: activities/learn_digits/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -15307,7 +15346,7 @@ msgstr "ციფრები შუალედიდან 0-9."
 #: activities/learn_quantities/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Learn quantities"
-msgstr ""
+msgstr "ისწავლეთ რაოდენობები"
 
 #. Help title
 #: activities/learn_quantities/ActivityInfo.qml:16
@@ -15418,7 +15457,7 @@ msgstr ""
 #: activities/left_right_click/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr ""
+msgstr "თაგუნას წკაპის ვარჯიში"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
@@ -15445,13 +15484,13 @@ msgstr ""
 #: activities/leftright/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Find your left and right hands"
-msgstr ""
+msgstr "იპოვეთ თქვენი მარცხენა და მარჯვენა ხელი"
 
 #. Help title
 #: activities/leftright/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Determine if a hand is a right or a left hand."
-msgstr ""
+msgstr "დადგენა, ხელი მარჯვენაა თუ მარცხენა."
 
 #. Help goal
 #: activities/leftright/ActivityInfo.qml:20
@@ -15482,22 +15521,22 @@ msgstr ""
 #: activities/leftright/Leftright.qml:144
 msgctxt "Leftright|"
 msgid "Left hand"
-msgstr ""
+msgstr "მარცხენა ხელი"
 
 #: activities/leftright/Leftright.qml:164
 msgctxt "Leftright|"
 msgid "Right hand"
-msgstr ""
+msgstr "მარჯვენა ხელი"
 
 #: activities/letter-in-word/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "All the words"
-msgstr ""
+msgstr "ყველა სიტყვა"
 
 #: activities/letter-in-word/ActivityConfig.qml:47
 msgctxt "ActivityConfig|"
 msgid "Only 5 words"
-msgstr ""
+msgstr "მხოლოდ 5 სიტყვა"
 
 #: activities/letter-in-word/ActivityConfig.qml:54
 msgctxt "ActivityConfig|"
@@ -15523,25 +15562,25 @@ msgstr "ქვედა რეგისტრი"
 #: activities/letter-in-word/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Letter in which word"
-msgstr ""
+msgstr "რომელ სიტყვაშია ასო"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr ""
+msgstr "იპოვეთ მითითებული ასოს შემცველი სიტყვები."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "ისწავლეთ მითითებული ასოს სიტყვებში ძებნა."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Spelling, letter recognition."
-msgstr ""
+msgstr "მართლწერა, ასოების გამოცნობა."
 
 #. Help manual
 #: activities/letter-in-word/ActivityInfo.qml:24
@@ -15575,13 +15614,13 @@ msgstr ""
 #: activities/lightsoff/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Lights off"
-msgstr ""
+msgstr "შუქის ჩაქრობა"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr ""
+msgstr "ჩააქრობს სინათლეს."
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
@@ -15608,53 +15647,53 @@ msgstr ""
 #: activities/lightsoff/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Very easy."
-msgstr ""
+msgstr "5×5 ბადეები, ძალიან იოლი."
 
 #: activities/lightsoff/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Easy."
-msgstr ""
+msgstr "5×5 ბადეები, იოლი."
 
 #: activities/lightsoff/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Medium."
-msgstr ""
+msgstr "5×5 ბადეები, საშუალო."
 
 #: activities/lightsoff/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Difficult."
-msgstr ""
+msgstr "5×5 ბადეები, ძნელი."
 
 #: activities/lightsoff/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "5×5 grids, Very Difficult."
-msgstr ""
+msgstr "5×5 ბადეები, ძალიან ძნელი."
 
 #: activities/lightsoff/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "6×6 grids, Very Difficult."
-msgstr ""
+msgstr "6×6 ბადეები, ძალიან ძნელი."
 
 #: activities/lightsoff/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "7×7 grids, Very Difficult."
-msgstr ""
+msgstr "7×7 ბადეები, ძალიან ძნელი."
 
 #: activities/lightsoff/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "8×8 grids, Very Difficult."
-msgstr ""
+msgstr "8×8 ბადეები, ძალიან ძნელი."
 
 #: activities/lightsoff/resource/9/Data.qml:13
 msgctxt "Data|"
 msgid "9×9 grids, Very Difficult."
-msgstr ""
+msgstr "9×9 ბადეები, ძალიან ძნელი."
 
 #. Activity title
 #: activities/louis-braille/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The history of Louis Braille"
-msgstr ""
+msgstr "ლუი ბრაილის ისტორია"
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
@@ -15776,19 +15815,19 @@ msgstr ""
 #: activities/magic-hat-plus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The magician hat"
-msgstr ""
+msgstr "ჯადოქრის ქუდი"
 
 #. Help title
 #: activities/magic-hat-minus/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Calculate how many stars are under the magic hat."
-msgstr ""
+msgstr "გამოთვალეთ, რამდენი ვარსკვლავია დამალული ჯადოსნური ქუდის ქვეშ."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr ""
+msgstr "ისწავლეთ გამოკლება."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
@@ -15810,7 +15849,7 @@ msgstr ""
 #: activities/magic-hat-minus/MagicHat.qml:93
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
-msgstr ""
+msgstr "დააწკაპუნეთ ქუდზე თამაშის დასაწყებად"
 
 #: activities/magic-hat-minus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16007,7 +16046,7 @@ msgstr ""
 #: activities/mazeinvisible/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Invisible maze"
-msgstr ""
+msgstr "უცნობი ლაბირინთი"
 
 #. Help title
 #: activities/mazeinvisible/ActivityInfo.qml:17
@@ -16080,12 +16119,12 @@ msgstr ""
 #: activities/mazerelative/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Down arrow: turn backward"
-msgstr ""
+msgstr "ისარი დაბლა: უკან გახვევა"
 
 #: activities/mazerelative/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Up arrow: move forward"
-msgstr ""
+msgstr "ისარი მაღლა: წინ წასვლა"
 
 #. Activity title
 #: activities/melody/ActivityInfo.qml:15
@@ -16097,7 +16136,7 @@ msgstr "მელოდია"
 #: activities/melody/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Reproduce a sound sequence."
-msgstr ""
+msgstr "გაიმეორეთ ხმის მიმდევრობა."
 
 #. Help goal
 #: activities/melody/ActivityInfo.qml:20
@@ -16163,7 +16202,7 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Knowing alphabets."
-msgstr ""
+msgstr "ცნობილი ანბანები."
 
 #. Help manual
 #: activities/memory-case-association-tux/ActivityInfo.qml:24
@@ -17054,7 +17093,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr ""
+msgstr "ავარჯიშეთ თქვენი ვიზუალური მეხსიერება."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -17253,13 +17292,13 @@ msgstr "გაგრძელება"
 #: activities/menu/ActivityInfo.qml:13
 msgctxt "ActivityInfo|"
 msgid "GCompris Main Menu"
-msgstr ""
+msgstr "GCompris-ის მთავარი მენიუ"
 
 #. Help title
 #: activities/menu/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Select an activity to run it."
-msgstr ""
+msgstr "აირჩიეთ აქტივობა მის გასაშვებად."
 
 #. Help goal
 #: activities/menu/ActivityInfo.qml:17
@@ -17632,7 +17671,7 @@ msgstr "გეოგრაფია"
 #: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
-msgstr ""
+msgstr "დანომრვა"
 
 #: activities/menu/Menu.qml:138
 msgctxt "Menu|"
@@ -17642,7 +17681,7 @@ msgstr "არითმეტიკა"
 #: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
-msgstr ""
+msgstr "გაზომვები"
 
 #: activities/menu/Menu.qml:149
 msgctxt "Menu|"
@@ -17657,7 +17696,7 @@ msgstr "სიტყვა"
 #: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
-msgstr ""
+msgstr "ლექსიკონი"
 
 #: activities/menu/Menu.qml:362
 msgctxt "Menu|"
@@ -18105,7 +18144,7 @@ msgstr ""
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Digits."
-msgstr ""
+msgstr "ციფრები."
 
 #: activities/morse_code/resource/2/Data.qml:23
 #: activities/morse_code/resource/2/Data.qml:39
@@ -19157,7 +19196,7 @@ msgstr ""
 #: activities/path_encoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path encoding"
-msgstr ""
+msgstr "ბილიკის დაშიფვრა"
 
 #. Help title
 #: activities/path_encoding/ActivityInfo.qml:16
@@ -19236,13 +19275,13 @@ msgstr ""
 #: activities/photo_hunter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Photo hunter"
-msgstr ""
+msgstr "სურათების მონადირე"
 
 #. Help title
 #: activities/photo_hunter/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the differences between the two pictures."
-msgstr ""
+msgstr "იპოვეთ სხვაობები ორ სურათს შორის."
 
 #. Help goal
 #: activities/photo_hunter/ActivityInfo.qml:20
@@ -19440,7 +19479,7 @@ msgstr ""
 #: activities/piano_composition/melodies.js:25
 msgctxt "melodies|"
 msgid "America: Patriotic"
-msgstr ""
+msgstr "ამერიკა: პატრიოტული"
 
 #: activities/piano_composition/melodies.js:32
 msgctxt "melodies|"
@@ -19580,42 +19619,42 @@ msgstr "მერვედი ნოტა"
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Whole rest added"
-msgstr ""
+msgstr "დაემატა მთლიანი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Half rest added"
-msgstr ""
+msgstr "დაემატა ნახევარი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Quarter rest added"
-msgstr ""
+msgstr "დაემატა მეოთხედი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:26
 msgctxt "OptionsRow|"
 msgid "Eighth rest added"
-msgstr ""
+msgstr "დაემატა მერვედი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Whole rest"
-msgstr ""
+msgstr "მთლიანი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Half rest"
-msgstr ""
+msgstr "ნახევარი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Quarter rest"
-msgstr ""
+msgstr "მეოთხედი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:27
 msgctxt "OptionsRow|"
 msgid "Eighth rest"
-msgstr ""
+msgstr "მერვედი პაუზა"
 
 #: activities/piano_composition/OptionsRow.qml:28
 msgctxt "OptionsRow|"
@@ -19630,7 +19669,7 @@ msgstr "ლირიკა"
 #: activities/piano_composition/OptionsRow.qml:60
 msgctxt "OptionsRow|"
 msgid "Play melody"
-msgstr ""
+msgstr "დაკვრა"
 
 #: activities/piano_composition/OptionsRow.qml:98
 msgctxt "OptionsRow|"
@@ -19641,12 +19680,12 @@ msgstr "დაბრუნება"
 #: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
-msgstr ""
+msgstr "შავები - დიეზებია"
 
 #: activities/piano_composition/OptionsRow.qml:166
 msgctxt "OptionsRow|"
 msgid "Flat notes"
-msgstr ""
+msgstr "შავები - ბემოლებია"
 
 #: activities/piano_composition/piano_composition.js:24
 msgctxt "piano_composition|"
@@ -19723,12 +19762,12 @@ msgstr ""
 #: activities/piano_composition/Piano_composition.qml:422
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
-msgstr ""
+msgstr "წინასწარ-აღწერილი მელოდიები"
 
 #: activities/piano_composition/Piano_composition.qml:440
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
-msgstr ""
+msgstr "თქვენი შენახული მელოდიები"
 
 #: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
@@ -20077,17 +20116,17 @@ msgstr ""
 #: activities/play_rhythm/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Space bar: click on the drum"
-msgstr ""
+msgstr "ჰარე: დოლზე დარტყმა"
 
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
-msgstr ""
+msgstr "Enter: რითმის თავიდან დაკვრა"
 
 #: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Up and Down: increase or decrease the tempo"
-msgstr ""
+msgstr "მაღლა და დაბლა: ტემპის გაზრდა ან შემცირება"
 
 #: activities/play_rhythm/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -20484,7 +20523,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr ""
+msgstr "რკინიგზა"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -20662,23 +20701,23 @@ msgstr ""
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Small grids."
-msgstr ""
+msgstr "პატარა ბადეები."
 
 #: activities/redraw/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids."
-msgstr ""
+msgstr "საშუალო ბადეები."
 
 #: activities/redraw/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids."
-msgstr ""
+msgstr "დიდი ბადეები."
 
 #. Activity title
 #: activities/redraw_symmetrical/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mirror the given image"
-msgstr ""
+msgstr "მოცემული გამოსახულების ანარეკლი"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
@@ -20697,23 +20736,23 @@ msgstr ""
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
 msgid "Small grids (3×3)."
-msgstr ""
+msgstr "პატარა ბადეები (3×3)."
 
 #: activities/redraw_symmetrical/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Medium grids (5×5)."
-msgstr ""
+msgstr "საშუალო ბადეები (5×5)."
 
 #: activities/redraw_symmetrical/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Large grids (7×7)."
-msgstr ""
+msgstr "დიდი ბადეები (7×7)."
 
 #. Activity title
 #: activities/renewable_energy/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Renewable energy"
-msgstr ""
+msgstr "განახლებადი ენერგია"
 
 #. Help title
 #: activities/renewable_energy/ActivityInfo.qml:17
@@ -22202,13 +22241,13 @@ msgstr "კვი"
 #: activities/solar_system/Dataset.js:18
 msgctxt "Dataset|"
 msgid "How large is the Sun compared to the planets in our Solar System?"
-msgstr ""
+msgstr "რამხელაა მზე მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 msgctxt "Dataset|"
 msgid "Sixth largest"
-msgstr ""
+msgstr "მეექვსე უდიდესი"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -22216,7 +22255,7 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Third largest"
-msgstr ""
+msgstr "მესამე უდიდესი"
 
 #: activities/solar_system/Dataset.js:19 activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -22231,12 +22270,12 @@ msgstr "უდიდესი"
 #: activities/solar_system/Dataset.js:370
 msgctxt "Dataset|"
 msgid "Seventh largest"
-msgstr ""
+msgstr "მეშვიდე უდიდესი"
 
 #: activities/solar_system/Dataset.js:24
 msgctxt "Dataset|"
 msgid "The temperature of the Sun is around:"
-msgstr ""
+msgstr "მზის ტემპერატურა დაახლოებით უდრის:"
 
 #: activities/solar_system/Dataset.js:25
 msgctxt "Dataset|"
@@ -22261,32 +22300,32 @@ msgstr "3638 °C"
 #: activities/solar_system/Dataset.js:30
 msgctxt "Dataset|"
 msgid "How old is the Sun?"
-msgstr ""
+msgstr "რა ხნისაა მზე?"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "1.2 billion years"
-msgstr ""
+msgstr "1.2 მილიარდი წლის"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "3 billion years"
-msgstr ""
+msgstr "3 მილიარდი წლის"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "7 billion years"
-msgstr ""
+msgstr "7 მილიარდი წლის"
 
 #: activities/solar_system/Dataset.js:31
 msgctxt "Dataset|"
 msgid "4.5 billion years"
-msgstr ""
+msgstr "4.5 მილიარდი წლის"
 
 #: activities/solar_system/Dataset.js:36
 msgctxt "Dataset|"
 msgid "How long does it take for the Sun’s light to reach the Earth?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება მზის სინათლე დედამიწამდე მოღწევას?"
 
 #: activities/solar_system/Dataset.js:37
 msgctxt "Dataset|"
@@ -22311,27 +22350,27 @@ msgstr "15 წუთი"
 #: activities/solar_system/Dataset.js:42
 msgctxt "Dataset|"
 msgid "The Sun is as big as:"
-msgstr ""
+msgstr "რამხელაა მზე დედამიწასთან შედარებით:"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1 million Earths"
-msgstr ""
+msgstr "1 მილიონი დედამიწა"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "2.6 million Earths"
-msgstr ""
+msgstr "2.6 მილიონი დედამიწა"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "1.3 million Earths"
-msgstr ""
+msgstr "1.3 მილიონი დედამიწა"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
 msgid "5 million Earths"
-msgstr ""
+msgstr "5 მილიონი დედამიწა"
 
 #: activities/solar_system/Dataset.js:51
 msgctxt "Dataset|"
@@ -22342,17 +22381,17 @@ msgstr "მერკური"
 #: activities/solar_system/Dataset.js:200
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is 58 °C."
-msgstr ""
+msgstr "დედამიწის მაქსიმალური ტემპერატურაა 58 °C."
 
 #: activities/solar_system/Dataset.js:54 activities/solar_system/Dataset.js:150
 msgctxt "Dataset|"
 msgid "The length of a year on Venus is 225 Earth days."
-msgstr ""
+msgstr "ვენერის წელიწადი 255 დედამიწის დღე გრძელდება."
 
 #: activities/solar_system/Dataset.js:57
 msgctxt "Dataset|"
 msgid "At which position is Mercury in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა მერკური მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:58 activities/solar_system/Dataset.js:103
 #: activities/solar_system/Dataset.js:346
@@ -22391,7 +22430,7 @@ msgstr "მეოთხე"
 #: activities/solar_system/Dataset.js:63
 msgctxt "Dataset|"
 msgid "How small is Mercury compared to other planets in our Solar System?"
-msgstr ""
+msgstr "რა დონეზე პატარაა მერკური მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
@@ -22401,27 +22440,27 @@ msgstr "ყველაზე პატარა"
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Second smallest"
-msgstr ""
+msgstr "მეორე უმცირესი"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Third smallest"
-msgstr ""
+msgstr "მესამე უმცირესი"
 
 #: activities/solar_system/Dataset.js:64 activities/solar_system/Dataset.js:241
 msgctxt "Dataset|"
 msgid "Fifth smallest"
-msgstr ""
+msgstr "მეხუთე მუცირესი"
 
 #: activities/solar_system/Dataset.js:69
 msgctxt "Dataset|"
 msgid "How many moons has Mercury?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს მერკურის?"
 
 #: activities/solar_system/Dataset.js:75
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mercury is:"
-msgstr ""
+msgstr "მერკურის მაქსიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -22446,7 +22485,7 @@ msgstr "273 °C"
 #: activities/solar_system/Dataset.js:81
 msgctxt "Dataset|"
 msgid "How long is a year on Mercury?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება მერკურის ერთი წელიწადი?"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:88
 #: activities/solar_system/Dataset.js:121
@@ -22475,7 +22514,7 @@ msgstr "107 დედამიწის დღე"
 #: activities/solar_system/Dataset.js:87
 msgctxt "Dataset|"
 msgid "How long is one rotation on Mercury?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება მერკურის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:88
 msgctxt "Dataset|"
@@ -22495,12 +22534,12 @@ msgstr "ვენერა"
 #: activities/solar_system/Dataset.js:99 activities/solar_system/Dataset.js:201
 msgctxt "Dataset|"
 msgid "The length of a year on Earth is 365 days."
-msgstr ""
+msgstr "დედამიწის წელიწადი 365 დღე გრძელდება."
 
 #: activities/solar_system/Dataset.js:102
 msgctxt "Dataset|"
 msgid "At which position is Venus in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა ვენერა მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
@@ -22510,7 +22549,7 @@ msgstr "წამი"
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
 msgid "Venus is as heavy as:"
-msgstr ""
+msgstr "ვენერა ისეთივე მძიმეა, როგორც:"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
@@ -22535,7 +22574,7 @@ msgstr "2.5 დედამიწა"
 #: activities/solar_system/Dataset.js:114
 msgctxt "Dataset|"
 msgid "How large is Venus compared to other planets in our Solar System?"
-msgstr ""
+msgstr "რა დონეზე დიდია ვენერა მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
@@ -22543,19 +22582,19 @@ msgstr ""
 #: activities/solar_system/Dataset.js:307
 msgctxt "Dataset|"
 msgid "Fifth largest"
-msgstr ""
+msgstr "მეხუთე უდიდესი"
 
 #: activities/solar_system/Dataset.js:115
 #: activities/solar_system/Dataset.js:190
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Fourth largest"
-msgstr ""
+msgstr "მეოთხე უდიდესი"
 
 #: activities/solar_system/Dataset.js:120
 msgctxt "Dataset|"
 msgid "How long is a year on Venus?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება ვენერას ერთი წელიწადი?"
 
 #: activities/solar_system/Dataset.js:121
 msgctxt "Dataset|"
@@ -22575,7 +22614,7 @@ msgstr "100 დედამიწის დღე"
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
 msgid "How long is one rotation on Venus?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება ვენერას ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
@@ -22585,7 +22624,7 @@ msgstr "243 დედამიწის დღე"
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
 msgid "The maximum temperature on Venus is:"
-msgstr ""
+msgstr "ვენერას მაქსიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:184
@@ -22618,7 +22657,7 @@ msgstr "45 °C"
 #: activities/solar_system/Dataset.js:138
 msgctxt "Dataset|"
 msgid "How many moons has Venus?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს ვენერას?"
 
 #: activities/solar_system/Dataset.js:147
 msgctxt "Dataset|"
@@ -22629,12 +22668,12 @@ msgstr "დედამიწა"
 #: activities/solar_system/Dataset.js:251
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is 20 °C."
-msgstr ""
+msgstr "მარსის მაქსიმალური ტემპერატურაა 20 °C."
 
 #: activities/solar_system/Dataset.js:153
 msgctxt "Dataset|"
 msgid "At which position is Earth in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა დედამიწა მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:154
 msgctxt "Dataset|"
@@ -22654,7 +22693,7 @@ msgstr "მეხუთე"
 #: activities/solar_system/Dataset.js:159
 msgctxt "Dataset|"
 msgid "How long does it take for Earth to make one revolution around the Sun?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება დედამიწა მზის გარშემო ერთ ბრუნს?"
 
 #: activities/solar_system/Dataset.js:160
 msgctxt "Dataset|"
@@ -22679,12 +22718,12 @@ msgstr "365 დღე"
 #: activities/solar_system/Dataset.js:165
 msgctxt "Dataset|"
 msgid "How many moons has Earth?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს დედამიწას?"
 
 #: activities/solar_system/Dataset.js:171
 msgctxt "Dataset|"
 msgid "How long is one rotation on Earth?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება დედამიწის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:172
 #: activities/solar_system/Dataset.js:229
@@ -22720,12 +22759,12 @@ msgstr "48 საათი"
 #: activities/solar_system/Dataset.js:177
 msgctxt "Dataset|"
 msgid "How many seasons has Earth?"
-msgstr ""
+msgstr "რამდენი სეზონია დედამიწაზე?"
 
 #: activities/solar_system/Dataset.js:183
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is:"
-msgstr ""
+msgstr "დედამიწის მაქსიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
@@ -22741,7 +22780,7 @@ msgstr "30 °C"
 #: activities/solar_system/Dataset.js:189
 msgctxt "Dataset|"
 msgid "How large is Earth compared to other planets in our Solar System?"
-msgstr ""
+msgstr "რა დონეზე დიდია დედამიწა მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:198
 msgctxt "Dataset|"
@@ -22751,12 +22790,12 @@ msgstr "მარსი"
 #: activities/solar_system/Dataset.js:204
 msgctxt "Dataset|"
 msgid "At which position is Mars in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა მარსი მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:210
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is:"
-msgstr ""
+msgstr "მარსის მაქსიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
@@ -22766,7 +22805,7 @@ msgstr "60 °C"
 #: activities/solar_system/Dataset.js:216
 msgctxt "Dataset|"
 msgid "How big is the size of Mars compared to Earth?"
-msgstr ""
+msgstr "რა ზომისაა მარსი დედამიწასთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:217
 msgctxt "Dataset|"
@@ -22791,12 +22830,12 @@ msgstr "სამჯერ"
 #: activities/solar_system/Dataset.js:222
 msgctxt "Dataset|"
 msgid "How many moons has Mars?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს მარსს?"
 
 #: activities/solar_system/Dataset.js:228
 msgctxt "Dataset|"
 msgid "How long is one rotation on Mars?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება მარსის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:229
 msgctxt "Dataset|"
@@ -22806,7 +22845,7 @@ msgstr "24.5 საათი"
 #: activities/solar_system/Dataset.js:234
 msgctxt "Dataset|"
 msgid "How long does it take for Mars to make one revolution around the Sun?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება მარსი მზის გარშემო ერთ ბრუნს?"
 
 #: activities/solar_system/Dataset.js:235
 msgctxt "Dataset|"
@@ -22826,7 +22865,7 @@ msgstr "7 დედამიწის დღე"
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
 msgid "How small is Mars compared to other planets in our Solar System?"
-msgstr ""
+msgstr "რა დონეზე პატარაა მარსი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:249
 msgctxt "Dataset|"
@@ -22837,17 +22876,17 @@ msgstr "იუპიტერი"
 #: activities/solar_system/Dataset.js:342
 msgctxt "Dataset|"
 msgid "The length of a year on Saturn is 29.5 Earth years."
-msgstr ""
+msgstr "სატურნის ერთი წელი დედამიწის 29.5 წელია."
 
 #: activities/solar_system/Dataset.js:255
 msgctxt "Dataset|"
 msgid "At which position is Jupiter in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა იუპიტერი მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:261
 msgctxt "Dataset|"
 msgid "How large is Jupiter compared to other planets in the Solar System?"
-msgstr ""
+msgstr "რა დონეზე დიდია იუპიტერი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:262
 #: activities/solar_system/Dataset.js:307
@@ -22855,12 +22894,12 @@ msgstr ""
 #: activities/solar_system/Dataset.js:421
 msgctxt "Dataset|"
 msgid "Second largest"
-msgstr ""
+msgstr "მეორე უდიდესი"
 
 #: activities/solar_system/Dataset.js:267
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is:"
-msgstr ""
+msgstr "იუპიტერის მინიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -22875,12 +22914,12 @@ msgstr "-180 °C"
 #: activities/solar_system/Dataset.js:273
 msgctxt "Dataset|"
 msgid "How many moons has Jupiter?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს იუპიტერს?"
 
 #: activities/solar_system/Dataset.js:279
 msgctxt "Dataset|"
 msgid "How long is one rotation on Jupiter?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება იუპიტერის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:280
 #: activities/solar_system/Dataset.js:364
@@ -22892,7 +22931,7 @@ msgstr "10 საათი"
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Jupiter to make one revolution around the Sun?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება იუპიტერი მზის გარშემო ერთ ბრუნს?"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
@@ -22925,32 +22964,32 @@ msgstr "სატურნი"
 #: activities/solar_system/Dataset.js:296
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is -145 °C."
-msgstr ""
+msgstr "იუპიტერის მინიმალური ტემპერატურაა -145 °C."
 
 #: activities/solar_system/Dataset.js:297
 msgctxt "Dataset|"
 msgid "The length of a year on Jupiter is 12 Earth years."
-msgstr ""
+msgstr "იუპიტერის ერთი წელი დედამიწის 12 წელია."
 
 #: activities/solar_system/Dataset.js:300
 msgctxt "Dataset|"
 msgid "At which position is Saturn in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა სატურნი მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:306
 msgctxt "Dataset|"
 msgid "How large is Saturn compared to other planets in the Solar System?"
-msgstr ""
+msgstr "რამხელაა სატურნი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:312
 msgctxt "Dataset|"
 msgid "How many moons has Saturn?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს სატურნს?"
 
 #: activities/solar_system/Dataset.js:318
 msgctxt "Dataset|"
 msgid "How long is one rotation on Saturn?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება სატურნის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:319
 msgctxt "Dataset|"
@@ -22960,7 +22999,7 @@ msgstr "10.5 საათი"
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
 msgid "The minimum temperature on Saturn is:"
-msgstr ""
+msgstr "სატურნის მინიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:325
 #: activities/solar_system/Dataset.js:376
@@ -22983,7 +23022,7 @@ msgstr "-100 °C"
 #: activities/solar_system/Dataset.js:330
 msgctxt "Dataset|"
 msgid "How long does it take for Saturn to make one revolution around the Sun?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება სატურნი მზის გარშემო ერთ ბრუნს?"
 
 #: activities/solar_system/Dataset.js:331
 msgctxt "Dataset|"
@@ -23008,12 +23047,12 @@ msgstr "ურანი"
 #: activities/solar_system/Dataset.js:341
 msgctxt "Dataset|"
 msgid "The temperature on Saturn is -178 °C."
-msgstr ""
+msgstr "სატურნის მინიმალური ტემპერატურაა -178 °C."
 
 #: activities/solar_system/Dataset.js:345
 msgctxt "Dataset|"
 msgid "At which position is Uranus in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა ურანი მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:346
 #: activities/solar_system/Dataset.js:391
@@ -23024,7 +23063,7 @@ msgstr "მერვე"
 #: activities/solar_system/Dataset.js:351
 msgctxt "Dataset|"
 msgid "How many years does it take for Uranus to go once around the Sun?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება ურანი მზის გარშემო ერთ ბრუნს?"
 
 #: activities/solar_system/Dataset.js:352
 msgctxt "Dataset|"
@@ -23044,12 +23083,12 @@ msgstr "84 დედამიწის წელიწადი"
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
 msgid "How many moons has Uranus?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს ურანს?"
 
 #: activities/solar_system/Dataset.js:363
 msgctxt "Dataset|"
 msgid "How long is one rotation on Uranus?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება ურანის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:364
 #: activities/solar_system/Dataset.js:409
@@ -23066,12 +23105,12 @@ msgstr "17 საათი"
 #: activities/solar_system/Dataset.js:369
 msgctxt "Dataset|"
 msgid "How large is Uranus compared to other planets in the Solar System?"
-msgstr ""
+msgstr "რამხელაა ურანი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/Dataset.js:375
 msgctxt "Dataset|"
 msgid "The maximum temperature on Uranus is:"
-msgstr ""
+msgstr "ურანის მაქსიმალური ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:376
 msgctxt "Dataset|"
@@ -23086,23 +23125,23 @@ msgstr "ნეპტუნი"
 #: activities/solar_system/Dataset.js:386
 msgctxt "Dataset|"
 msgid "The maximum temperature on Saturn is -178 °C."
-msgstr ""
+msgstr "სატურნის მაქსიმალური ტემპერატურაა -178 °C."
 
 #: activities/solar_system/Dataset.js:387
 msgctxt "Dataset|"
 msgid "The length of a year on Uranus is 84 Earth years."
-msgstr ""
+msgstr "ურანი ერთი წელი დედამიწის 84 წელია."
 
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
 msgid "At which position is Neptune in the Solar System?"
-msgstr ""
+msgstr "რა ადგილასაა ნეპტუნი მზის სისტემაში?"
 
 #: activities/solar_system/Dataset.js:396
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Neptune to make one revolution around the Sun?"
-msgstr ""
+msgstr "რამდენ ხანს უნდება ნეპტუნი მზის გარშემო ერთ ბრუნს?"
 
 #: activities/solar_system/Dataset.js:397
 msgctxt "Dataset|"
@@ -23122,12 +23161,12 @@ msgstr "100 დედამიწის წელიწადი"
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
 msgid "How many moons has Neptune?"
-msgstr ""
+msgstr "რამდენი მთვარე აქვს ნეპტუნს?"
 
 #: activities/solar_system/Dataset.js:408
 msgctxt "Dataset|"
 msgid "How long is one rotation on Neptune?"
-msgstr ""
+msgstr "რამდენი ხანი გრძელდება ნეპტუნის ერთი ბრუნვა?"
 
 #: activities/solar_system/Dataset.js:409
 msgctxt "Dataset|"
@@ -23137,7 +23176,7 @@ msgstr "16 საათი"
 #: activities/solar_system/Dataset.js:414
 msgctxt "Dataset|"
 msgid "The average temperature on Neptune is:"
-msgstr ""
+msgstr "ნეპტუნის საშუალო ტემპერატურაა:"
 
 #: activities/solar_system/Dataset.js:415
 msgctxt "Dataset|"
@@ -23147,7 +23186,7 @@ msgstr "-210 °C"
 #: activities/solar_system/Dataset.js:420
 msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
-msgstr ""
+msgstr "რამხელაა ნეპტუნი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
 #: activities/solar_system/QuizScreen.qml:201
 #, qt-format
@@ -23276,25 +23315,25 @@ msgstr "მინიშნება"
 #: activities/solar_system/SolarSystem.qml:371
 msgctxt "SolarSystem|"
 msgid "View the solar system"
-msgstr ""
+msgstr "მზის სისტემის ნახვა"
 
 #. Activity title
 #: activities/submarine/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Pilot a submarine"
-msgstr ""
+msgstr "წყალქვეშა ნავის მართვა"
 
 #. Help title
 #: activities/submarine/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Drive the submarine to the end point."
-msgstr ""
+msgstr "მიიყვანეთ წყალქვეშა ნავი საბოლოო წერტილში."
 
 #. Help goal
 #: activities/submarine/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to control a submarine."
-msgstr ""
+msgstr "ისწავლეთ წყალქვეშა ნავის მართვა."
 
 #. Help prerequisite
 #: activities/submarine/ActivityInfo.qml:22
@@ -23488,13 +23527,13 @@ msgstr ""
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr ""
+msgstr "სუდოკუ"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr ""
+msgstr "ამოხსენით სუდოკუ."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -23656,27 +23695,27 @@ msgstr ""
 #: activities/target/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 10."
-msgstr ""
+msgstr "მაქსიმალური მნიშვნელობა: 10."
 
 #: activities/target/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50."
-msgstr ""
+msgstr "მაქსიმალური მნიშვნელობა: 50."
 
 #: activities/target/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 500."
-msgstr ""
+msgstr "მაქსიმალური მნიშვნელობა: 500."
 
 #: activities/target/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 50000."
-msgstr ""
+msgstr "მაქსიმალური მნიშვნელობა: 50000."
 
 #: activities/target/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Maximum value: 500000."
-msgstr ""
+msgstr "მაქსიმალური მნიშვნელობა: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
@@ -24109,7 +24148,7 @@ msgstr ""
 #: core/ChangeLog.qml:104 core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Many new images"
-msgstr ""
+msgstr "ბევრი ახალი გამოსახულება"
 
 #: core/ChangeLog.qml:39
 msgctxt "ChangeLog|"
@@ -24126,7 +24165,7 @@ msgstr ""
 #: core/ChangeLog.qml:45 core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr ""
+msgstr "ბევრი თარგმანის განახლება"
 
 #: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"
@@ -24193,12 +24232,12 @@ msgstr ""
 #: core/ChangeLog.qml:83 core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
-msgstr ""
+msgstr "გასწორდა სხვადასხვა შეცდომა"
 
 #: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
-msgstr ""
+msgstr "რუსული თარგმანის განახლება"
 
 #: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
@@ -24348,17 +24387,17 @@ msgstr ""
 #: core/ChangeLog.qml:133
 msgctxt "ChangeLog|"
 msgid "Search feature."
-msgstr ""
+msgstr "ძებნის ფუნქცია."
 
 #: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "A Changelog."
-msgstr ""
+msgstr "ცვლილებების ჟურნალი."
 
 #: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
-msgstr ""
+msgstr "გასწორდა ბევრი პატარა შეცდომა."
 
 #: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
@@ -24393,7 +24432,7 @@ msgstr "ვერსია %1:"
 #: core/core.js:221
 msgctxt "core|"
 msgid "Missing sound files!"
-msgstr ""
+msgstr "ხმის ფაილები ვერ ვიპოვე!"
 
 #: core/core.js:222
 msgctxt "core|"
@@ -24689,29 +24728,29 @@ msgstr ""
 #: core/DownloadManager.cpp:122
 msgctxt "QObject|"
 msgid "Download cancelled by user"
-msgstr ""
+msgstr "გადმოწერა შეწყვეტილია მომხმარებლის მიერ"
 
 #: core/DownloadManager.cpp:333
 msgctxt "QObject|"
 msgid "Could not create resource path"
-msgstr ""
+msgstr "რესურსის ბილიკის შექმნა შეუძლებელია"
 
 #: core/DownloadManager.cpp:340
 #, qt-format
 msgctxt "QObject|"
 msgid "Could not open target file %1"
-msgstr ""
+msgstr "ვერ გავხსენი სამიზნე ფაილი %1"
 
 #: core/DownloadManager.cpp:705
 msgctxt "QObject|"
 msgid "Invalid format of Contents file"
-msgstr ""
+msgstr "შემცველობის ფაილის არასწორი ფორმატი"
 
 #: core/DownloadManager.cpp:727
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
-msgstr ""
+msgstr "ბმული %1 არ არსებობს"
 
 #: core/DownloadManager.cpp:740
 #, qt-format
@@ -24735,7 +24774,7 @@ msgstr ""
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
-msgstr ""
+msgstr "%1 წარმატებით წაიშალა!"
 
 #: core/GCCreationHandler.qml:135 core/GCCreationHandler.qml:140
 #: core/GCCreationHandler.qml:181
@@ -24752,7 +24791,7 @@ msgstr "%1-ის წაშლა შეუძლებელია!"
 #: core/GCCreationHandler.qml:172
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
-msgstr ""
+msgstr "ფაილი ამ სახელით უკვე არსებობს. გნებავთ, ჩაანაცვლოთ ის?"
 
 #: core/GCCreationHandler.qml:173
 msgctxt "GCCreationHandler|"
@@ -24817,12 +24856,12 @@ msgstr "დაწყება"
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "Your system default"
-msgstr ""
+msgstr "თქვენი სისტემის ნაგულისხმევი"
 
 #: core/LanguageList.qml:34
 msgctxt "LanguageList|"
 msgid "GCompris' language"
-msgstr ""
+msgstr "GCompris-ის ენა"
 
 #: core/main.cpp:166
 msgctxt "QObject|"
