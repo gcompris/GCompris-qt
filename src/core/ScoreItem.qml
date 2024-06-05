@@ -170,7 +170,7 @@ Item {
     Rectangle {
         id: backgroundRectangle
         anchors.fill: parent
-        radius: 15
+        radius: height * 0.1
         state: "second"
 
         Image {
