@@ -73,7 +73,7 @@ Item {
             width: parent.width
             height: parent.height
             
-            border.width: 2
+            border.width: ApplicationInfo.ratio
             border.color: "white"
             
             MultiPointTouchArea {

@@ -138,7 +138,7 @@ ActivityBase {
                             id: gridDelegate
                             height: jamGrid.height / jamGrid.rows
                             width: height
-                            border.width: 1
+                            border.width: 0.5 * ApplicationInfo.ratio
                             border.color: "#A2A2A2"
                             color: "transparent"
                         }
