@@ -93,50 +93,53 @@ ActivityBase {
             }
         }
 
-        Grid {
-            id: grid
+        Item {
             z: 2
-            anchors.horizontalCenter: parent.horizontalCenter
             anchors {
                 verticalCenter: parent.verticalCenter
                 horizontalCenter: parent.horizontalCenter
             }
-
-            spacing: 5
-            columns: 7
-            rows: 6
-
-            Repeater {
-                id: repeater
-                model: pieces
-                delegate: blueSquare
-
-                Component {
-                    id: blueSquare
-                    Rectangle {
-                        color: "#DDAAAAAA";
-                        width: items.cellSize
-                        height: items.cellSize
-                        radius: width / 2
-                        border.color: "#FFFFFFFF"
-                        border.width: 0
-                        Piece {
-                            anchors.fill: parent
-                            state: stateTemp
-                            sourceSize.width: items.cellSize
-                        }
-                    }
-                }
-            }
+            width: items.cellSize * grid.columns
+            height: items.cellSize * grid.rows
 
             Piece {
                 id: fallingPiece
+                z: 100
                 state: items.counter % 2 ? "2": "1"
                 sourceSize.width: items.cellSize
 
                 Behavior on x { PropertyAnimation { duration: 200 } }
             }
 
+            Grid {
+                id: grid
+                spacing: 5
+                columns: 7
+                rows: 6
+
+                Repeater {
+                    id: repeater
+                    model: pieces
+                    delegate: blueSquare
+
+                    Component {
+                        id: blueSquare
+                        Rectangle {
+                            color: "#DDAAAAAA";
+                            width: items.cellSize
+                            height: items.cellSize
+                            radius: width / 2
+                            border.color: "#FFFFFFFF"
+                            border.width: 0
+                            Piece {
+                                anchors.fill: parent
+                                state: stateTemp
+                                sourceSize.width: items.cellSize
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         PropertyAnimation {
