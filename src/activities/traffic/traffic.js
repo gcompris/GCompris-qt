@@ -198,7 +198,7 @@ function findYBounds(car)
 {
     if (car.yBounds !== undefined)
         return;
-    var bounds = { "lower": 0, "upper": items.jamGrid.height };
+    var bounds = { "lower": 0, "upper": items.jamGridContainer.height };
 
     for (var i = 0; i < activeCars.length; i++) {
         if (activeCars[i] != car &&
@@ -222,7 +222,7 @@ function findXBounds(car)
 {
     if (car.xBounds !== undefined)
         return;
-    var bounds = { "lower": 0, "upper": items.jamGrid.width + (car.goal ? car.blockSize : 0)};
+    var bounds = { "lower": 0, "upper": items.jamGridContainer.width + (car.goal ? car.blockSize : 0)};
     for (var i = 0; i < activeCars.length; i++) {
         if (activeCars[i] != car &&
             ((activeCars[i].yPos == car.yPos)
@@ -249,7 +249,7 @@ function updateCarPosition(car, newX, newY)
         car.x += deltaX;
         car.effX += deltaX;
         // check for reached goal:
-        if (car.goal && car.effX + car.width >= items.jamGrid.width) {
+        if (car.goal && car.effX + car.width >= items.jamGridContainer.width) {
             haveWon = true;
             items.score.currentSubLevel += 1;
             items.score.playWinAnimation();
@@ -332,7 +332,7 @@ function drawCar(car)
         source = carList[0];
     }
 
-    var carObject = carComponent.createObject( items.jamGrid, {
+    var carObject = carComponent.createObject( items.jamGridContainer, {
         "xPos": xPos,
         "yPos": yPos,
         "size": size,

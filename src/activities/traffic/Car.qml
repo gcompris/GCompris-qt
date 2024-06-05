@@ -36,7 +36,7 @@ Item {
         mode = parent.mode
         connection.target = parent
     }
-    // Connect the jamGrid.mode to car.mode to automatically change the wrapped object
+    // Connect the jamGridContainer.mode to car.mode to automatically change the wrapped object
     Connections {
         id: connection
         function onModeChanged() {

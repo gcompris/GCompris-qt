@@ -44,7 +44,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias jamBox: jamBox
-            property alias jamGrid: jamGrid
+            property alias jamGridContainer: jamGridContainer
             property bool isVertical: background.width < background.height - 64 * ApplicationInfo.ratio
         }
 
@@ -113,27 +113,35 @@ ActivityBase {
                 }
             ]
 
-            Grid {
-                id: jamGrid
+            Item {
+                id: jamGridContainer
                 anchors.centerIn: parent
                 width: parent.width * 0.75
                 height: width
-                columns: 6
-                rows: 6
-                spacing: 0
                 // Add an alias to mode so it can be used on Car items
                 property alias mode: background.mode
-                Repeater {
-                    id: gridRepeater
-                    model: jamGrid.columns * jamGrid.rows
 
-                    delegate: Rectangle {
-                        id: gridDelegate
-                        height: jamGrid.height / jamGrid.rows
-                        width: height
-                        border.width: 1
-                        border.color: "#A2A2A2"
-                        color: "transparent"
+                Grid {
+                    id: jamGrid
+                    anchors.centerIn: parent
+                    width: parent.width
+                    height: width
+                    columns: 6
+                    rows: 6
+                    spacing: 0
+
+                    Repeater {
+                        id: gridRepeater
+                        model: jamGrid.columns * jamGrid.rows
+
+                        delegate: Rectangle {
+                            id: gridDelegate
+                            height: jamGrid.height / jamGrid.rows
+                            width: height
+                            border.width: 1
+                            border.color: "#A2A2A2"
+                            color: "transparent"
+                        }
                     }
                 }
             }
