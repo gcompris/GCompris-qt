@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-01-19 03:42+0100\n"
+"PO-Revision-Date: 2024-06-01 10:48+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -1336,7 +1336,7 @@ msgstr "Forza 4 (con Tux)"
 #: activities/align4_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Arrange four tokens in a row."
-msgstr "Disponi le quattro pedine in fila."
+msgstr "Disponi i quattro gettoni in fila."
 
 # Al posto di "gettone" si potrebbe usare "pedina"
 #. Help goal
@@ -1347,8 +1347,8 @@ msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
 "(standing up) or diagonally."
 msgstr ""
-"Crea una linea di 4 pedine in orizzontale (una accanto all'altra), in "
-"verticale (una sull'altra) o in diagonale."
+"Crea una linea di 4 gettoni in orizzontale (uno accanto all'altro), in "
+"verticale (uno sull'altro) o in diagonale."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1403,8 +1403,8 @@ msgid ""
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
 "Gioca con un amico. Al tuo turno, fai clic sulla linea nella quale vuoi "
-"posizionare una pedina. Vince il primo giocatore che crea una linea di 3 "
-"pedine."
+"posizionare un gettone. Vince il primo giocatore che crea una linea di 3 "
+"gettoni."
 
 #. Activity title
 #: activities/alphabet-sequence/ActivityInfo.qml:15
@@ -4616,7 +4616,7 @@ msgstr ""
 #: activities/chess_partyend/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "End of chess game"
-msgstr "Fine della partita a scacchi"
+msgstr "Fine di una partita a scacchi"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
@@ -5409,7 +5409,7 @@ msgid ""
 "mixing)."
 msgstr ""
 "Questa attività insegna come funziona la miscelazione dei colori primari "
-"della pittura (miscelazione additiva)."
+"della luce (miscelazione additiva)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -15186,7 +15186,7 @@ msgstr "Riproduci la torre."
 #: activities/hanoi/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Reproduce the tower on the right in the empty area."
-msgstr "Riproduci la torre sul lato destro nello spazio vuoto"
+msgstr "Riproduci la torre sulla destra nello spazio vuoto"
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -15213,7 +15213,7 @@ msgstr "La torre di Hanoi"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower to the right side."
-msgstr "Sposta la torre sul lato di destra."
+msgstr "Sposta la torre sul lato destro."
 
 #. Help goal
 #: activities/hanoi_real/ActivityInfo.qml:20
@@ -16711,7 +16711,7 @@ msgstr "Sottrazioni con 1, 2, 3, 4, 5, 6, 7, 8 e 9."
 #: activities/left_right_click/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Mouse click training"
-msgstr "Esercitazione con i clic del mouse"
+msgstr "Addestramento con il clic del mouse"
 
 #. Help title
 #: activities/left_right_click/ActivityInfo.qml:16
