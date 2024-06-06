@@ -24750,7 +24750,7 @@ msgstr "შემცველობის ფაილის არასწო�
 #, qt-format
 msgctxt "QObject|"
 msgid "The url %1 does not exist."
-msgstr "ბმული %1 არ არსებობს"
+msgstr "ბმული %1 არ არსებობს."
 
 #: core/DownloadManager.cpp:740
 #, qt-format

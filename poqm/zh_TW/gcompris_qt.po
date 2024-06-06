@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-08 13:01+0900\n"
+"PO-Revision-Date: 2024-06-05 18:53+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -79,7 +79,7 @@ msgstr "找出這兩個數字。"
 #| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "學習何謂質數。"
+msgstr "學習如何照順序排數字。"
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
@@ -88,7 +88,7 @@ msgstr "學習何謂質數。"
 #| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "比較數字，並選擇相關的記號。"
+msgstr "找到要求的數字並將它們拖曳到對應的位置。"
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 #, fuzzy

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-31 00:36+0000\n"
-"PO-Revision-Date: 2024-06-04 01:01+0300\n"
+"PO-Revision-Date: 2024-06-06 02:26+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -80,7 +80,7 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
-"Jetonun düşmesini istediğin sütuna tıkla ve Tux'tan önce 4 jetonu hizalamaya "
+"Jetonun düşmesini istediğin sütuna tıkla ve Tux’tan önce 4 jetonu hizalamaya "
 "çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
@@ -180,13 +180,13 @@ msgid ""
 "When you have achieved it, press OK"
 msgstr ""
 "Verilen ondalık sayının ikilisini temsil etmek için doğru ampulleri aç. Bunu "
-"başardığında OK'ye bas"
+"başardığında OK’ye bas"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
-msgstr "Braille hücrelerini başlatmak ve yeniden oluşturmak için Tux'a tıkla."
+msgstr "Braille hücrelerini başlatmak ve yeniden oluşturmak için Tux’a tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
@@ -220,7 +220,7 @@ msgid ""
 "on the valves to cause either a drop or an increase in the water level, and "
 "click on the gates to open or close a path."
 msgstr ""
-"Tux'un karşı tarafa geçmesine yardım etmelisin. Su düzeyinde artışa veya "
+"Tux’un karşı tarafa geçmesine yardım etmelisin. Su düzeyinde artışa veya "
 "düşüşe neden olması için valflere tıkla ve bir yolu açmak veya kapatmak için "
 "kapıların üzerine tıkla."
 
@@ -234,7 +234,7 @@ msgstr "Ögeleri doğru gruplar halinde sınıflandır"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers against Tux"
-msgstr "Tux'a karşı dama oyna"
+msgstr "Tux’a karşı dama oyna"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -246,7 +246,7 @@ msgstr "arkadaşına karşı dama oyna"
 #: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
-msgstr "Tux'a karşı satranç oyna"
+msgstr "Tux’a karşı satranç oyna"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
 #: activities/chess_2players/ActivityInfo.qml:18
@@ -262,7 +262,7 @@ msgid ""
 "movements that piece can make. Try and get the black king into checkmate."
 msgstr ""
 "Beyaz bir satranç taşına tıklayınca taşın yapabileceği tüm hareketleri "
-"gösteren yeşil kutucuklar görünür. Siyah kralı Şah-Mat yapmayı dene."
+"gösteren yeşil kutucuklar görünür. Siyah kralı Şah–Mat yapmayı dene."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
 #: activities/chronos/ActivityInfo.qml:22
@@ -744,7 +744,7 @@ msgstr "Lambaları kapatmak için üstlerine tıkla."
 #: activities/louis-braille/ActivityInfo.qml:18
 #, kde-format
 msgid "Discover the history of Louis Braille."
-msgstr "Louis Braille'nin geçmişini keşfet."
+msgstr "Louis Braille’nin geçmişini keşfet."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
 #: activities/magic-hat-minus/ActivityInfo.qml:18
@@ -768,7 +768,7 @@ msgstr ""
 msgid ""
 "Use the arrows keys or swipe the touch screen to help Tux find his way out."
 msgstr ""
-"Tux'un çıkış yolunu bulmasına yardım etmek için ok düğmelerini kullan veya "
+"Tux’un çıkış yolunu bulmasına yardım etmek için ok düğmelerini kullan veya "
 "dokunmatik ekranı kaydır."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
@@ -778,7 +778,7 @@ msgid ""
 "Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
 "icon or the space key to see the map."
 msgstr ""
-"Tux'u yönlendirmek için ok düğmelerini kullan veya dokunmatik ekranı kaydır. "
+"Tux’u yönlendirmek için ok düğmelerini kullan veya dokunmatik ekranı kaydır. "
 "Haritayı görmek için labirent simgesini veya boşluk düğmesini kullan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
@@ -788,7 +788,7 @@ msgid ""
 "Help Tux find his way out. Left and right are used to turn and up to go "
 "forward."
 msgstr ""
-"Tux'un çıkış yolunu bulmasına yardım et. Sol ve sağ düğmeleri dönmek için ve "
+"Tux’un çıkış yolunu bulmasına yardım et. Sol ve sağ düğmeleri dönmek için ve "
 "yukarı düğmesi ileri gitmek için kullanılır."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
@@ -904,7 +904,7 @@ msgstr "Parayı ödemek için tıkla veya dokun."
 #: activities/money_back_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money at the bottom of the screen to give Tux his change."
-msgstr "Tux'a para üstünü vermek için ekranın altındaki paraya tıkla."
+msgstr "Tux’a para üstünü vermek için ekranın altındaki paraya tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
 #: activities/money_cents/ActivityInfo.qml:18
@@ -931,7 +931,7 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
 "Tux's pieces."
 msgstr ""
-"Parcanı yerleştirmek istediğin noktaya tıkla ve Tux'un tüm taşlarını almaya "
+"Parcanı yerleştirmek istediğin noktaya tıkla ve Tux’un tüm taşlarını almaya "
 "çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
@@ -1013,7 +1013,7 @@ msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
 msgstr ""
-"Tux'un hedefe ulaşmasına yardımcı olmak için verilen yönergeleri izleyerek "
+"Tux’un hedefe ulaşmasına yardımcı olmak için verilen yönergeleri izleyerek "
 "ızgara karelerine tıkla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
@@ -1023,7 +1023,7 @@ msgstr ""
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
 msgstr ""
-"Tux'u yol boyunca hareket ettirmek ve hedefe ulaşmak için okları kullan."
+"Tux’u yol boyunca hareket ettirmek ve hedefe ulaşmak için okları kullan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18
@@ -1126,7 +1126,7 @@ msgid ""
 "Click on the domino and validate your choice with the OK button to indicate "
 "the number of ice blocks Tux will have to follow to eat a fish."
 msgstr ""
-"Domino taşına tıkla ve Tux'un balık yemek için izlemesi gereken buz "
+"Domino taşına tıkla ve Tux’un balık yemek için izlemesi gereken buz "
 "bloklarının sayısını belirtmek için OK düğmesiyle seçimini onayla."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
@@ -1284,7 +1284,7 @@ msgid ""
 "Click on the square which you wish to mark and try to mark 3 consecutive "
 "squares before Tux."
 msgstr ""
-"İşaretlemek istediğin kareye tıkla ve Tux'tan önce 3 ardışık kareyi "
+"İşaretlemek istediğin kareye tıkla ve Tux’tan önce 3 ardışık kareyi "
 "işaretlemeye çalış."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
@@ -1302,7 +1302,7 @@ msgid ""
 "Click on the various active elements that make up the water supply. Then "
 "press the shower button for Tux."
 msgstr ""
-"Su kaynağını oluşturan çeşitli etkin elementlere tıkla. Sonrasında, Tux'a "
+"Su kaynağını oluşturan çeşitli etkin elementlere tıkla. Sonrasında, Tux’a "
 "bir duş aldır."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
