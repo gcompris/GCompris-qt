@@ -91,6 +91,11 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
         }
 
+        GCSoundEffect {
+            id: knockSound
+            source: items.url + 'knock.wav'
+        }
+
         Repeater {
             id: parts
             model: 4
@@ -106,6 +111,14 @@ ActivityBase {
                 fillMode: Image.PreserveAspectFit
 
                 property alias anim: anim
+                function play() {
+                    partSound.play()
+                }
+
+                GCSoundEffect {
+                    id: partSound
+                    source: items.url + 'xylofon_son' + (index + 1) + ".wav"
+                }
 
                 SequentialAnimation {
                     id: anim
@@ -143,8 +156,7 @@ ActivityBase {
         }
 
         function playNote(index: int) {
-            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
-                                       'xylofon_son' + (index + 1) + ".wav"))
+            parts.itemAt(index).play()
         }
         Timer {
             id: introDelay
@@ -286,20 +298,30 @@ ActivityBase {
                 introDelay.stop()
                 activity.audioVoices.stop()
                 questionPlayer.stop()
-                activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'knock.wav'))
+                knockSound.play()
                 items.questionToPlay = items.question.slice()
                 items.answer = []
                 knock.start()
             }
         }
 
+        GCSoundEffect {
+            id: goodAnswer
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswer
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
         function checkAnswer() {
             if(items.answer.join() === items.question.join()) {
                 score.currentSubLevel += 1
                 score.playWinAnimation()
-                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+                goodAnswer.play()
             } else {
-                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                badAnswer.play()
                 errorRectangle.startAnimation()
             }
         }
