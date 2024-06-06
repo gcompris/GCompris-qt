@@ -43,7 +43,6 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
             property alias duckModel: duckModel
             property bool hasBeenDragged: false
         }
@@ -142,6 +141,11 @@ ActivityBase {
                     startY = mouseY
                 }
             }
+
+            GCSoundEffect {
+                id: circleSound
+                source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+            }
         }
 
         MultiPointTouchArea {
@@ -229,7 +233,7 @@ ActivityBase {
                             pressCircle.x = touch.x - pressCircle.width / 2
                             pressCircle.y = touch.y - pressCircle.height / 2
                             pressCircle.visible = true
-                            Activity.playSound(4)
+                            circleSound.play()
                         }
                     }
 
@@ -478,6 +482,11 @@ ActivityBase {
                     clip: false
                 }
 
+                GCSoundEffect {
+                    id: duckSound
+                    source: model.sound
+                }
+
                 SequentialAnimation {
                     id: duckAnim
                     loops: 1
@@ -490,7 +499,7 @@ ActivityBase {
                     }
                     onRunningChanged: {
                         if(running) {
-                            Activity.playSound(index)
+                            duckSound.play()
                             particles.burst(20)
                         }
                         else {
