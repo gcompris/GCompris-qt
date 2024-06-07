@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-05 01:46+0200\n"
+"PO-Revision-Date: 2024-06-06 20:08+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -20077,13 +20077,10 @@ msgstr "Aprende la secuencia numérica."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each number in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "Dibuja la imagen pulsando en cada número en el orden correcto."
+msgstr "Dibuja la imagen pulsando los puntos en el orden numérico correcto."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -20107,14 +20104,6 @@ msgstr "Aprende a reconocer números pares e impares y su orden numérico."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds with an odd or even number, in the right order. With a "
-#| "keyboard, use the arrow keys to move the helicopter. With a pointing "
-#| "device, just click or tap on the target location. To know which number "
-#| "you have to catch you can either remember it or check the number on the "
-#| "bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions: catch the clouds with an odd or even number in the "
@@ -20123,11 +20112,12 @@ msgid ""
 "first levels, you can see which number you have to catch on the counter in "
 "the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
-"Atrapa las nubes con un número par o impar en el orden correcto. Con un "
-"teclado, usa las teclas de las flechas para mover el helicóptero. Con un "
-"dispositivo apuntador, haz clic o toca en la posición de destino. Para saber "
-"qué número tienes que recoger, puedes recordarlo o comprobar el número en la "
-"esquina inferior derecha."
+"Sigue las instrucciones: atrapa las nubes con un número par o impar en el "
+"orden correcto. Con un teclado, usa las teclas de las flechas para mover el "
+"helicóptero. Con un dispositivo apuntador, haz clic o toca en la posición de "
+"destino. En los primeros niveles puedes ver el número que tienes que atrapar "
+"en el contador de la esquina inferior derecha. En los niveles posteriores "
+"tendrás que recordarlo."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
 msgctxt "NumbersOddEven|"
@@ -20351,12 +20341,9 @@ msgstr "Organiza los eventos indicados por orden cronológico."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Organiza los eventos indicados por orden cronológico."
+msgstr "Aprende a ordenar una secuencia de eventos en orden cronológico."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20619,16 +20606,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On a turn, a player chooses one of "
-#| "the six houses under their control. The player removes all seeds from "
-#| "that house, and distributes them, dropping one in each house counter-"
-#| "clockwise from this house, in a process called sowing. Seeds are not "
-#| "distributed into the end scoring houses, nor into the house drawn from. "
-#| "The starting house is always left empty; if it contained 12 (or more) "
-#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -20641,8 +20618,8 @@ msgid ""
 msgstr ""
 "Los jugadores mueven las semillas por turnos. En cada turno, un jugador "
 "escoge una de las seis casas bajo su control. El jugador recoge todas las "
-"semillas de dicha casa y las distribuye dejando una en cada casa en sentido "
-"antihorario desde esa casa en un proceso que se llama «siembra». Las "
+"semillas de dicha casa y las distribuye, en un proceso llamado «siembra», en "
+"las siguientes casas (en sentido contrario a las agujas del reloj). Las "
 "semillas no se pueden dejar en las casas de puntuación de los extremos ni en "
 "la casa de las que se han recogido. La casa de inicio siempre se deja vacía; "
 "si contenía 12 (o más) semillas, se omite, colocando la duodécima semilla en "
@@ -20874,17 +20851,13 @@ msgstr ""
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Pulsa en los cuadros de la cuadrícula para mover a Tux siguiendo las "
-"instrucciones que se dan."
+"Pulsa en los cuadros de la cuadrícula para mover a Tux hasta el objetivo "
+"siguiendo las direcciones de las flechas."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -21744,12 +21717,9 @@ msgstr "Si♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "Números en orden"
+msgstr "Orden numérico"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -21759,12 +21729,9 @@ msgstr "Mueve el helicóptero para capturar las nubes en el orden correcto."
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Aprende el orden alfabético."
+msgstr "Aprende el orden numérico."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -21809,12 +21776,9 @@ msgstr "Tocar el piano"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Encuentra la fecha correcta y selecciónala en el calendario."
+msgstr "Lee la partitura y reprodúcela en el teclado."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -22147,7 +22111,7 @@ msgstr "Selecciona la imagen donde el niño está a la izquierda de la caja."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Programa la ruta"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -22157,12 +22121,9 @@ msgstr "Programa la ruta para ayudar a Tux a atrapar el pez."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr "Puede leer instrucciones y pensar con lógica para encontrar una ruta."
+msgstr "Aprende a programar instrucciones para moverte por una ruta."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22565,6 +22526,7 @@ msgstr "Dibuja correctamente la imagen dada en la cuadrícula vacía."
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
 msgstr ""
+"Aprende a identificar un lugar en una cuadrícula y a reproducir un modelo."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -22620,12 +22582,9 @@ msgstr "Reflejar la imagen indicada"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Reproduce la torre de la derecha en el espacio vacío."
+msgstr "Reproduce la imagen simétricamente en la cuadrícula vacía."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -22634,6 +22593,8 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Aprende a identificar un lugar en una cuadrícula y a reproducir un modelo "
+"simétricamente."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -24106,12 +24067,9 @@ msgstr "Cuenta el número de puntos del dado antes de que llegue al suelo."
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Practica la suma con un juego de blancos"
+msgstr "Practica contando con un límite de tiempo."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -25749,6 +25707,11 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"Selecciona un número o un símbolo y pulsa su posición de destino. Cada "
+"símbolo debe aparecer solo una vez en una fila, en una columna y en una "
+"subregión, si existiera. Si no se permite una acción, el juego mostrará por "
+"qué. Pero cuidado: que puedas colocar algo en un cuadro no significa que "
+"todo el sudoku sea correcto. Incluso así, puede ser un error."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25861,13 +25824,6 @@ msgstr ""
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -25875,8 +25831,8 @@ msgid ""
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
 "Mueve las piezas arrastrándolas. El botón de simetría aparece en los "
-"elementos que lo permiten. Pulsa el botón de rotación o arrastra sobre él "
-"para rotar la pieza seleccionada. Consulta la introducción a tangram en la "
+"elementos que lo permiten. Arrastra el botón de rotación o alrededor de la "
+"pieza seleccionada para girarla. Consulta la introducción a tangram en la "
 "actividad «Puzle para niños»."
 
 #. Activity title
