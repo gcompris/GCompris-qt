@@ -16685,6 +16685,9 @@ msgstr "Transport"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn addition"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
 msgstr "Lerne die Addition"
@@ -17102,6 +17105,9 @@ msgstr "Audiostimmen aktivieren"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn digits"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
 msgstr "Lerne die Zahlen"
@@ -17260,6 +17266,9 @@ msgstr "Zwischen 20 und 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
 msgstr "Lerne die Subtraktion"

@@ -2400,7 +2400,7 @@ msgstr ""
 #: activities/balancebox/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Hole: add/remove a hole on a cell"
-msgstr ""
+msgstr "ნახვრეტი: უჯრედისთვის ნახვრეტის დამატება/მოცილება"
 
 #: activities/balancebox/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -2628,7 +2628,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (with a friend)"
-msgstr ""
+msgstr "ბურთულები რიგში (მეგობართან ერთად)"
 
 #. Help manual
 #: activities/bargame_2players/ActivityInfo.qml:24
@@ -5277,6 +5277,8 @@ msgctxt "crane|"
 msgid ""
 "cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg"
 msgstr ""
+"cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg;"
+"ძაღლი;კატა;წითელი;მოგება;დიახ;დიდი;ყუთი;გართობა;დღე;ყინული;კვერცხი"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 4-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: blue;best;good;area
 #: activities/crane/crane.js:48
@@ -5285,6 +5287,8 @@ msgid ""
 "blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
 "sand;song"
 msgstr ""
+"blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;"
+"sand;song;სიმღერა;ქვიშა;დახმარება;გოგო;არადა;საჭმელი;ფერმა;ადვილი;ზარი;ლურჯი"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 10–20 simple 5-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: happy;child;white;apple
 #: activities/crane/crane.js:55
@@ -5293,6 +5297,9 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
+"happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
+"shape;shirt;study;გახარებული;თეთრი;ყავისფერი;ვაშლი;ყავისფერი;სიმართლე;ცხენი;"
+"სასტუმრო;ქაღალდი"
 
 #: activities/crane/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5349,17 +5356,17 @@ msgstr ""
 #: activities/details/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Play with paintings."
-msgstr ""
+msgstr "თამაში ნახატებით."
 
 #: activities/details/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Play with simple photographs."
-msgstr ""
+msgstr "თამაში მარტივი სურათებით."
 
 #: activities/details/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Play with complex photographs."
-msgstr ""
+msgstr "თამაში რთული სურათებით."
 
 #: activities/details/resource/board/board10_0.qml:14
 msgctxt "board10_0|"
@@ -7933,7 +7940,7 @@ msgstr "ოჯახი"
 #: activities/family/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select the name you should call this family member."
-msgstr ""
+msgstr "აირჩიეთ სახელი, რომელსაც ამ ოჯახის წევრს მიმართავთ."
 
 #. Help goal
 #: activities/family/ActivityInfo.qml:20
@@ -8450,7 +8457,7 @@ msgstr ""
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
 msgid "Find the represented fraction."
-msgstr ""
+msgstr "წარმოდგენილი ნაწილის პოვნა."
 
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
@@ -13533,7 +13540,7 @@ msgstr ""
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "დატოვეთ ველი ცარიელი, თუ კლასი არ ემთხვევა."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
@@ -13562,7 +13569,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "დატოვეთ ველი ცარიელი, თუ კლასი არ ემთხვევა."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -13581,7 +13588,7 @@ msgstr "მოყვანილობები"
 #: activities/graph-coloring/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Graph coloring"
-msgstr ""
+msgstr "დიაგრამის გაფერადება"
 
 #. Help title
 #: activities/graph-coloring/ActivityInfo.qml:17
@@ -13615,7 +13622,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right and Left arrows: navigate"
-msgstr ""
+msgstr "მარცხენა და მარჯვენა ისრები: ნავიგაცია"
 
 #. Activity title
 #: activities/gravity/ActivityInfo.qml:19
@@ -13983,19 +13990,19 @@ msgstr ""
 #: activities/hangman/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The classic hangman game"
-msgstr ""
+msgstr "კლასიკური ჩამოხრჩობანა"
 
 #. Help title
 #: activities/hangman/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guess the letters of the given word."
-msgstr ""
+msgstr "მიხვდით მითითებული სიტყვის ასოებს."
 
 #. Help goal
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "გაიუმჯობესეთ მართლწერა და ლექსიკა."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -14050,7 +14057,7 @@ msgstr ""
 #: activities/hanoi/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Simplified Tower of Hanoi"
-msgstr ""
+msgstr "გამარტივებული ჰანოის ჯოშკი"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
@@ -14082,7 +14089,7 @@ msgstr ""
 #: activities/hanoi_real/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The Tower of Hanoi"
-msgstr ""
+msgstr "ჰანოის კოშკები"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
@@ -14142,7 +14149,7 @@ msgstr ""
 #: activities/hexagon/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Logic-training activity."
-msgstr ""
+msgstr "ლოგიკის გავარჯიშების აქტივობა."
 
 #. Help manual
 #: activities/hexagon/ActivityInfo.qml:23
@@ -15546,7 +15553,7 @@ msgstr ""
 #: activities/letter-in-word/ActivityConfig.qml:57
 msgctxt "ActivityConfig|"
 msgid "Mixed Case"
-msgstr ""
+msgstr "სხვადასხვა რეგისტრი"
 
 #: activities/letter-in-word/ActivityConfig.qml:58
 msgctxt "ActivityConfig|"
@@ -16052,7 +16059,7 @@ msgstr "უცნობი ლაბირინთი"
 #: activities/mazeinvisible/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide Tux out of the invisible maze."
-msgstr ""
+msgstr "დაეხმარეთ ტუქსს, უჩინარი ლაბირინთიდან გამოვიდეს."
 
 #. Help goal
 #: activities/mazeinvisible/ActivityInfo.qml:20
@@ -16142,13 +16149,13 @@ msgstr "გაიმეორეთ ხმის მიმდევრობა.
 #: activities/melody/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ear-training activity."
-msgstr ""
+msgstr "ყურის ვარჯიშის აქტივობა."
 
 #. Help prerequisite
 #: activities/melody/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Move and click the mouse."
-msgstr ""
+msgstr "თაგუნას გადატანა და დაწკაპუნება."
 
 #. Help manual
 #: activities/melody/ActivityInfo.qml:24
@@ -16303,7 +16310,7 @@ msgstr ""
 #: activities/memory-enumerate/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Enumeration memory game"
-msgstr ""
+msgstr "ჩამონათვლის დამახსოვრების თამაში"
 
 #. Help title
 #: activities/memory-enumerate/ActivityInfo.qml:17
@@ -17408,12 +17415,12 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Ctrl+B: Show or Hide the control bar"
-msgstr ""
+msgstr "Ctrl+B: კონტროლის ზოლის ჩვენება ან დამალვა"
 
 #: activities/menu/ActivityInfo.qml:40
 msgctxt "ActivityInfo|"
 msgid "Ctrl+F: Toggle full screen"
-msgstr ""
+msgstr "Ctrl+F: სრულეკრანიანი რეჟიმის გადარვა"
 
 #: activities/menu/ActivityInfo.qml:41
 msgctxt "ActivityInfo|"
@@ -17428,7 +17435,7 @@ msgstr "ფონის მუსიკა"
 #: activities/menu/BackgroundMusicList.qml:129
 msgctxt "BackgroundMusicList|"
 msgid "Disable the background music if you don't want to play them."
-msgstr ""
+msgstr "გამორთავს ფონურ მუსიკას, თუ არ გნებავთ, ის დაუკრათ."
 
 #. Current background music playing
 #: activities/menu/BackgroundMusicList.qml:169
@@ -17578,7 +17585,7 @@ msgstr ""
 #: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "გასვლისას დადასტურების მოთხოვნა"
 
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
@@ -17599,17 +17606,17 @@ msgstr "ნაგულისხმები"
 #: activities/menu/ConfigurationItem.qml:407
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
-msgstr ""
+msgstr "ფონტის რეგისტრი"
 
 #: activities/menu/ConfigurationItem.qml:412
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
-msgstr ""
+msgstr "დაშორება ფონტის სიმბლოებს შორის"
 
 #: activities/menu/ConfigurationItem.qml:615
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr ""
+msgstr "სხვადასხვა რეგისტრი (ნაგულისხმევი)"
 
 #: activities/menu/ConfigurationItem.qml:616
 msgctxt "ConfigurationItem|"
@@ -17708,7 +17715,7 @@ msgstr ""
 #: activities/menu/Menu.qml:771
 msgctxt "Menu|"
 msgid "Search specific activities"
-msgstr ""
+msgstr "მითითებული აქტივობები ძებნა"
 
 #: activities/menu/Menu.qml:798
 msgctxt "Menu|"
@@ -17979,7 +17986,7 @@ msgstr "რაოდენობა 1000-მდე ერთეულის."
 #: activities/money_back/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Give Tux his change"
-msgstr ""
+msgstr "ტუქსისთვის ხურდის დაბრუნება"
 
 #. Help title
 #: activities/money_back/ActivityInfo.qml:17
@@ -18015,7 +18022,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Money with cents"
-msgstr ""
+msgstr "ფული ცენტებით"
 
 #. Help title
 #: activities/money_cents/ActivityInfo.qml:17
@@ -18099,13 +18106,13 @@ msgstr ""
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr ""
+msgstr "მორზეს მნიშვნელობა: %1"
 
 #: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr ""
+msgstr "ანბანური/რიცხვითი მნიშვნელობა: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -18122,7 +18129,7 @@ msgstr "წერილი."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "შეტყობინების %1 მორზეს კოდით გაგზავნა."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
@@ -18131,7 +18138,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr ""
+msgstr "გადაიყვანეთ შეტყობინება %1 ასოებში."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
@@ -18139,7 +18146,7 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:76
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr ""
+msgstr "იპოვეთ შესაბამისი ასო."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -18151,13 +18158,13 @@ msgstr "ციფრები."
 #, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr ""
+msgstr "გადაიყვანეთ შეტყობინება %1 ციფრებში."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr ""
+msgstr "იპოვეთ შესაბამისი ციფრი."
 
 #: activities/morse_code/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -18167,12 +18174,12 @@ msgstr "სიტყვა."
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "დაწერეთ მორზეს კოდი, რომელიც გესმით."
 
 #: activities/morse_code/resource/3/Data.qml:34
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr ""
+msgstr "გადაიყვანეთ შეტყობინება სიტყვაში."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15
@@ -18328,12 +18335,12 @@ msgstr "გილოცავთ"
 #: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
-msgstr ""
+msgstr "გილოცავთ, მოთამაშე 1"
 
 #: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
-msgstr ""
+msgstr "გილოცავთ, მოთამაშე 2"
 
 #: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
@@ -18394,7 +18401,7 @@ msgstr ""
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
-msgstr ""
+msgstr "ახალი შენიშვნა: %1"
 
 #. The following translation represents percentage.
 #: activities/note_names/NoteNames.qml:265
@@ -18432,7 +18439,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "შემდეგი წერტილის გამოკვეთა"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -18680,7 +18687,7 @@ msgstr ""
 #: activities/ordering_chronology/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering chronology"
-msgstr ""
+msgstr "ქრონოლოგიით დალაგება"
 
 #. Help title
 #: activities/ordering_chronology/ActivityInfo.qml:23
@@ -18705,7 +18712,7 @@ msgstr ""
 #: activities/ordering_chronology/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Cycle of life of a flower."
-msgstr ""
+msgstr "ყვავილის ცხოვრები სტილი."
 
 #: activities/ordering_chronology/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -18721,7 +18728,7 @@ msgstr "ტუქსი აგროვებს ვაშლებს."
 #: activities/ordering_numbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr ""
+msgstr "რიცხვების დალაგება"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
@@ -18740,7 +18747,7 @@ msgstr "ივარჯიშეთ რიცხვების დალაგ�
 #: activities/ordering_numbers/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Counting."
-msgstr ""
+msgstr "დათვლა."
 
 #. Help manual
 #: activities/ordering_numbers/ActivityInfo.qml:29
@@ -18753,27 +18760,27 @@ msgstr ""
 #: activities/ordering_numbers/ordering.js:66
 msgctxt "ordering|"
 msgid "Drag and drop the items in ascending order."
-msgstr ""
+msgstr "გადმოათრიეთ და დაყარეთ ელემენტები აღმავალი მიმდევრობით."
 
 #: activities/ordering_numbers/ordering.js:67
 msgctxt "ordering|"
 msgid "Drag and drop the items in descending order."
-msgstr ""
+msgstr "გადმოათრიეთ და დაყარეთ ელემენტები დაღმავალი მიმდევრობით."
 
 #: activities/ordering_numbers/ordering.js:68
 msgctxt "ordering|"
 msgid "Drag and drop the letters in alphabetical order."
-msgstr ""
+msgstr "გადმოათრიეთ და დაყარეთ ელემენტები ანბანური მიმდევრობით."
 
 #: activities/ordering_numbers/ordering.js:69
 msgctxt "ordering|"
 msgid "Drag and drop the letters in reverse alphabetical order."
-msgstr ""
+msgstr "გადმოათრიეთ და დაყარეთ ელემენტები უკუანბანური მიმდევრობით."
 
 #: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr ""
+msgstr "გადმოათრიეთ და დაყარეთ ელემენტები ქრონოლოგიური მიმდევრობით."
 
 #: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
@@ -18824,7 +18831,7 @@ msgstr ""
 #: activities/ordering_sentences/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering sentences"
-msgstr ""
+msgstr "წინადადებების დალაგება"
 
 #. Help title
 #: activities/ordering_sentences/ActivityInfo.qml:22
@@ -18978,7 +18985,7 @@ msgstr ""
 #: activities/paintings/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Assemble the puzzle"
-msgstr ""
+msgstr "ააწყვეთ პაზლი"
 
 #. Help title
 #: activities/paintings/ActivityInfo.qml:22
@@ -19018,12 +19025,12 @@ msgstr ""
 #: activities/paintings/resource/board/board13_0.qml:14
 msgctxt "board13_0|"
 msgid "Michelangelo, Pieta - 1499"
-msgstr ""
+msgstr "მიქელანჯელო, პიეტა - 1499"
 
 #: activities/paintings/resource/board/board14_0.qml:14
 msgctxt "board14_0|"
 msgid "Leonardo da Vinci, Mona Lisa - 1503-19"
-msgstr ""
+msgstr "ლეონარდო და ვინჩი, მონა ლიზა - 1503-19"
 
 #: activities/paintings/resource/board/board15_0.qml:14
 msgctxt "board15_0|"
@@ -19114,7 +19121,7 @@ msgstr ""
 #: activities/path_decoding/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Path decoding"
-msgstr ""
+msgstr "ბილიკის გაშიფვრა"
 
 #. Help title
 #: activities/path_decoding/ActivityInfo.qml:16
@@ -19176,7 +19183,7 @@ msgstr "%1x%2 ბადეები."
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr ""
+msgstr "ფარდობითი ბილიკის გაშიფვრა"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -19217,13 +19224,13 @@ msgstr ""
 #: activities/path_encoding_relative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
-msgstr ""
+msgstr "კლავიატურით მართვა:"
 
 #: activities/path_encoding/ActivityInfo.qml:25
 #: activities/path_encoding_relative/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
-msgstr ""
+msgstr "ისრები: მიმართულებები"
 
 #: activities/path_encoding/GridPath.qml:125
 #, qt-format
@@ -19235,13 +19242,13 @@ msgstr "შეცდომები: %1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr ""
+msgstr "ფარდობითი ბილიკის კოდირება"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Penalty kick"
-msgstr ""
+msgstr "საჯარიმო დარტყმა"
 
 #. Help title
 #: activities/penalty/ActivityInfo.qml:17
@@ -19395,19 +19402,19 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Digits 1 to 7: white keys"
-msgstr ""
+msgstr "ციფრები შუალედიდან 1-7: თეთრი ღილაკები"
 
 #: activities/piano_composition/ActivityInfo.qml:35
 #: activities/play_piano/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "F2 to F7: black keys"
-msgstr ""
+msgstr "ღილაკები შუალედიდან F2-F7: შავი ღილაკები"
 
 #: activities/piano_composition/ActivityInfo.qml:36
 #: activities/play_piano/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Space: play"
-msgstr ""
+msgstr "ჰარე: დაკვრა"
 
 #: activities/piano_composition/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -19417,12 +19424,12 @@ msgstr ""
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr ""
+msgstr "Backspace: გაუქმება"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
 msgid "Delete: erase selected note or everything"
-msgstr ""
+msgstr "Delete: მონიშნავს მონიშნულ ნოტს ან ყველაფერს"
 
 #: activities/piano_composition/ActivityInfo.qml:40
 #: activities/play_piano/ActivityInfo.qml:35
@@ -19436,28 +19443,28 @@ msgstr ""
 #, qt-format
 msgctxt "BpmMeter|"
 msgid "%1 BPM"
-msgstr ""
+msgstr "%1 დარტყმა/წთ"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
 #: activities/piano_composition/KeyOption.qml:47
 msgctxt "KeyOption|"
 msgid "Treble clef"
-msgstr ""
+msgstr "ვიოლინოს გასაღები"
 
 #: activities/piano_composition/KeyOption.qml:47
 msgctxt "KeyOption|"
 msgid "Bass clef"
-msgstr ""
+msgstr "ბანის გასაღები"
 
 #: activities/piano_composition/KeyOption.qml:63
 msgctxt "KeyOption|"
 msgid "Treble clef added"
-msgstr ""
+msgstr "ვიოლინოს გასაღები დაემატა"
 
 #: activities/piano_composition/KeyOption.qml:63
 msgctxt "KeyOption|"
 msgid "Bass clef added"
-msgstr ""
+msgstr "ბანის გასაღები დაემატა"
 
 #: activities/piano_composition/LyricsArea.qml:37
 #, qt-format
@@ -19474,7 +19481,7 @@ msgstr "წყარო: %1"
 #: activities/piano_composition/melodies.js:18
 msgctxt "melodies|"
 msgid "America: English Lullaby"
-msgstr ""
+msgstr "ამერიკა: ინგლისური იავნანა"
 
 #: activities/piano_composition/melodies.js:25
 msgctxt "melodies|"
@@ -19512,12 +19519,12 @@ msgstr "ესპანეთი"
 #: activities/piano_composition/melodies.js:67
 msgctxt "melodies|"
 msgid "German Kid's Song"
-msgstr ""
+msgstr "გერმანელი ბავშვის სიმღერა"
 
 #: activities/piano_composition/melodies.js:74
 msgctxt "melodies|"
 msgid "Children's Song from Brazil"
-msgstr ""
+msgstr "ბავშვებს სიმღერა ბრაზილიიდან"
 
 #: activities/piano_composition/melodies.js:81
 #: activities/piano_composition/melodies.js:95
@@ -19543,13 +19550,13 @@ msgstr "ბრაზილია"
 #: activities/piano_composition/melodies.js:144
 msgctxt "melodies|"
 msgid "Hungary, Nursery Rhyme"
-msgstr ""
+msgstr "უნგრეთი, ბაღის სიმღერა"
 
 #: activities/piano_composition/melodies.js:151
 #: activities/piano_composition/melodies.js:158
 msgctxt "melodies|"
 msgid "Hungary, Children's Song"
-msgstr ""
+msgstr "უნგრეთი, ბავშვბის სიმღერა"
 
 #: activities/piano_composition/melodies.js:165
 msgctxt "melodies|"
@@ -20036,7 +20043,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr ""
+msgstr "Backspace ან Delete: გაუქმება"
 
 #: activities/play_piano/PlayPiano.qml:187
 msgctxt "PlayPiano|"
@@ -20199,18 +20206,18 @@ msgstr ""
 #: activities/positions/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Basic positions."
-msgstr ""
+msgstr "ძირითადი მდებარეობები."
 
 #. it refers to the next to position
 #: activities/positions/resource/1/Data.qml:20
 msgctxt "Data|"
 msgid "beside"
-msgstr ""
+msgstr "გვერდით"
 
 #: activities/positions/resource/1/Data.qml:21
 msgctxt "Data|"
 msgid "Select the image where the child is beside the box."
-msgstr ""
+msgstr "აირჩით გამოსახულება, რომელზეც ბავშვი ყუთის გვერდზეა."
 
 #. it refers to the behind position
 #: activities/positions/resource/1/Data.qml:26
@@ -20223,33 +20230,33 @@ msgstr "უკან"
 #: activities/positions/resource/2/Data.qml:33
 msgctxt "Data|"
 msgid "Select the image where the child is behind the box."
-msgstr ""
+msgstr "აირჩით გამოსახულება, რომელზეც ბავშვი ყუთის უკანაა."
 
 #. it refers to the in front of position
 #: activities/positions/resource/1/Data.qml:32
 #: activities/positions/resource/2/Data.qml:38
 msgctxt "Data|"
 msgid "in front of"
-msgstr ""
+msgstr "წინ"
 
 #: activities/positions/resource/1/Data.qml:33
 #: activities/positions/resource/2/Data.qml:39
 msgctxt "Data|"
 msgid "Select the image where the child is in front of the box."
-msgstr ""
+msgstr "აირჩით გამოსახულება, რომელზეც ბავშვი ყუთის წინაა."
 
 #. it refers to the inside position
 #: activities/positions/resource/1/Data.qml:38
 #: activities/positions/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "inside"
-msgstr ""
+msgstr "შიგნით"
 
 #: activities/positions/resource/1/Data.qml:39
 #: activities/positions/resource/2/Data.qml:45
 msgctxt "Data|"
 msgid "Select the image where the child is inside the box."
-msgstr ""
+msgstr "აირჩით გამოსახულება, რომელზეც ბავშვი ყუთის შიგნითაა."
 
 #. it refers to the above position
 #: activities/positions/resource/1/Data.qml:44
@@ -20262,7 +20269,7 @@ msgstr "above"
 #: activities/positions/resource/2/Data.qml:51
 msgctxt "Data|"
 msgid "Select the image where the child is above the box."
-msgstr ""
+msgstr "აირჩით გამოსახულება, რომელზეც ბავშვი ყუთის ზემოთაა."
 
 #. it refers to the beneath position
 #: activities/positions/resource/1/Data.qml:50
@@ -20275,7 +20282,7 @@ msgstr "ქვეშ"
 #: activities/positions/resource/2/Data.qml:57
 msgctxt "Data|"
 msgid "Select the image where the child is under the box."
-msgstr ""
+msgstr "აირჩით გამოსახულება, რომელზეც ბავშვი ყუთის ქვემოთაა."
 
 #: activities/positions/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -20389,12 +20396,12 @@ msgstr ""
 #: activities/programmingMaze/InstructionArea.qml:27
 msgctxt "InstructionArea|"
 msgid "Choose the instructions"
-msgstr ""
+msgstr "აირჩიეთ ინსტრუქციები"
 
 #: activities/programmingMaze/programmingMaze.js:96
 msgctxt "programmingMaze|"
 msgid "Instruction Area:"
-msgstr ""
+msgstr "ინსტრუქციების ალაგი:"
 
 #: activities/programmingMaze/programmingMaze.js:97
 msgctxt "programmingMaze|"
@@ -20422,12 +20429,12 @@ msgstr ""
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
 msgid "Main Function:"
-msgstr ""
+msgstr "მთავარი ფუნქცია:"
 
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
 msgid "The execution of the code starts here."
-msgstr ""
+msgstr "კოდის შესრულება აქ იწყება."
 
 #: activities/programmingMaze/programmingMaze.js:106
 msgctxt "programmingMaze|"
@@ -20590,7 +20597,7 @@ msgstr ""
 #: activities/readingh/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Horizontal reading practice"
-msgstr ""
+msgstr "ვერტიკალურად კითხვის მეცადინეობა"
 
 #. Help title
 #: activities/readingh/ActivityInfo.qml:17
@@ -20621,6 +20628,8 @@ msgid ""
 "<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
 "\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
 msgstr ""
+"<font color=\"#373737\">შეამოწმეთ, არის თუ არა სიტყვა<br/></font><b><font "
+"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ნაჩვენები</font>"
 
 #: activities/readingh/Readingh.qml:359
 msgctxt "Readingh|"
@@ -20636,7 +20645,7 @@ msgstr "არა, ის იქ არაა!"
 #: activities/readingv/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical reading practice"
-msgstr ""
+msgstr "ვერტიკალურად კითხვის მეცადინეობა"
 
 #. Help title
 #: activities/readingv/ActivityInfo.qml:17
@@ -20683,20 +20692,20 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: select a color"
-msgstr ""
+msgstr "ციფრები: აირჩიეთ ფერი"
 
 #: activities/redraw/ActivityInfo.qml:27
 #: activities/redraw_symmetrical/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate in the grid"
-msgstr ""
+msgstr "ისრები: ნავიგაცია ბადეში"
 
 #: activities/redraw/ActivityInfo.qml:28
 #: activities/redraw_symmetrical/ActivityInfo.qml:28
 #: activities/simplepaint/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
-msgstr ""
+msgstr "Space ან Enter: დახატვა"
 
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -20841,13 +20850,13 @@ msgstr "ასლები"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr ""
+msgstr "აირჩიეთ დომინოს გარეგნობა"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Count intervals"
-msgstr ""
+msgstr "შუალედების დათვლა"
 
 #. Help title
 #: activities/reversecount/ActivityInfo.qml:17
@@ -20891,19 +20900,19 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
-msgstr ""
+msgstr "რიცხვები შუალედიდან %1-%2."
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Roman numerals"
-msgstr ""
+msgstr "რომაული ციფრები"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr ""
+msgstr "ისწავლეთ რომაული რიცხვების წერა და კითხვა."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
@@ -20932,7 +20941,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
-msgstr ""
+msgstr "ციფრები: აკრიფეთ არაბული ციფრები"
 
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -21027,13 +21036,13 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
-msgstr ""
+msgstr "რომაული მნიშვნელობა: %1"
 
 #: activities/roman_numerals/RomanNumerals.qml:379
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
-msgstr ""
+msgstr "არაბული მნიშვნელობა: %1"
 
 #. Activity title
 #: activities/scalesboard/ActivityInfo.qml:15
@@ -21069,7 +21078,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Balance up to %1."
-msgstr ""
+msgstr "ბალანსი %1-მდე."
 
 #: activities/scalesboard/resource/1/Data.qml:20
 #: activities/scalesboard/resource/2/Data.qml:20
@@ -21229,22 +21238,22 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift: %1"
-msgstr ""
+msgstr "შეიყვანეთ საჩუქრის წონა: %1"
 
 #: activities/scalesboard/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 20."
-msgstr ""
+msgstr "ბალანსი 20-მდე."
 
 #: activities/scalesboard/resource/7/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 50."
-msgstr ""
+msgstr "ბალანსი 50-მდე."
 
 #: activities/scalesboard/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 100."
-msgstr ""
+msgstr "ბალანსი 100-მდე."
 
 #. Activity title
 #: activities/scalesboard_weight/ActivityInfo.qml:15
@@ -21279,7 +21288,7 @@ msgstr ""
 #: activities/scalesboard_weight/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 5 grams."
-msgstr ""
+msgstr "ბალანსი 5 გრამამდე."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:18
 #: activities/scalesboard_weight/resource/2/Data.qml:18
@@ -21310,7 +21319,7 @@ msgstr ""
 #: activities/scalesboard_weight/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 grams."
-msgstr ""
+msgstr "ბალანსი 10 გრამამდე."
 
 #: activities/scalesboard_weight/resource/2/Data.qml:26
 #: activities/scalesboard_weight/resource/3/Data.qml:26
@@ -21340,12 +21349,12 @@ msgstr ""
 #: activities/scalesboard_weight/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 20 grams."
-msgstr ""
+msgstr "ბალანსი 20 გრამამდე."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 kilograms."
-msgstr ""
+msgstr "ბალანსი 10 კილოგრამამდე."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:16
 #: activities/scalesboard_weight/resource/4/Data.qml:17
@@ -21385,12 +21394,12 @@ msgstr ""
 #: activities/scalesboard_weight/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 100 grams."
-msgstr ""
+msgstr "ბალანსი 100 გრამამდე."
 
 #: activities/scalesboard_weight/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 kilograms including grams."
-msgstr ""
+msgstr "ბალანსი 10 კილოგრამამდე, გრამების ჩათვლით."
 
 #: activities/scalesboard_weight/resource/6/Data.qml:32
 msgctxt "Data|"
@@ -21413,7 +21422,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Balance using the imperial system of units"
-msgstr ""
+msgstr "ბალანსი იმპერიული ერთეულებით"
 
 #. Help manual
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:23
@@ -21427,7 +21436,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 5 ounces."
-msgstr ""
+msgstr "ბალანსი 5 უნციამდე."
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:18
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:18
@@ -21437,7 +21446,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1 oz"
-msgstr ""
+msgstr "%1 უნცია"
 
 #: activities/scalesboard_weight_avoirdupois/resource/1/Data.qml:26
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:26
@@ -21464,22 +21473,22 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Enter the weight of the gift in ounce: %1"
-msgstr ""
+msgstr "შეიყვანეთ საჩუქრის წონა უნციებში: %1"
 
 #: activities/scalesboard_weight_avoirdupois/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 ounces."
-msgstr ""
+msgstr "ბალანსი 10 უნციამდე."
 
 #: activities/scalesboard_weight_avoirdupois/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 20 ounces."
-msgstr ""
+msgstr "ბალანსი 20 უნციამდე."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 10 pounds."
-msgstr ""
+msgstr "ბალანსი 10 ფუნტამდე."
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:16
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:17
@@ -21495,7 +21504,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "%1 lb"
-msgstr ""
+msgstr "%1 ფუნტი"
 
 #: activities/scalesboard_weight_avoirdupois/resource/4/Data.qml:30
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:35
@@ -21520,7 +21529,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Balance up to 100 ounces."
-msgstr ""
+msgstr "ბალანსი 100 უნციამდე."
 
 #: activities/scalesboard_weight_avoirdupois/resource/5/Data.qml:26
 msgctxt "Data|"

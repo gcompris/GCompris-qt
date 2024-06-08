@@ -18738,9 +18738,6 @@ msgstr "Käännä kortit vastaamaan jakolaskua sen tulokseen."
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "Jakaminen"
