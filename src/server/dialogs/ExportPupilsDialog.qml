@@ -10,7 +10,8 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
-import Qt.labs.platform 1.1
+import QtCore // For StandardPaths
+import QtQuick.Dialogs // For FileDialog
 import GCompris 1.0
 
 import "../components"
@@ -101,8 +102,8 @@ Popup {
             id: fileDialog
             fileMode: FileDialog.SaveFile
             defaultSuffix: "csv"
-            folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
-            currentFile: folder + "/" + qsTr("Pupils") + "-" + serverSettings.lastLogin + ".csv"
+            currentFolder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+            currentFile: currentFolder + "/" + qsTr("Pupils") + "-" + serverSettings.lastLogin + ".csv"
             onAccepted: {
                 file.write(csvOutput.text, currentFile)
                 exportPupilsDialog.close()
