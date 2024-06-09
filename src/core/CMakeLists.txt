@@ -71,7 +71,6 @@ set(gcompris_SRCS
   DownloadManager.h
   GImageGrabber.cpp
   GImageGrabber.h
-  main.cpp
   config.h.in
   synth/ADSRenvelope.cpp
   synth/ADSRenvelope.h
@@ -147,19 +146,20 @@ endif()
 
 # Either make ClientNetworkMessages within ifdef in the whole code, else add it by default
 if(BUILD_SERVER)
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickDialogs2)
   add_definitions(-DWITH_SERVER)
   list(APPEND gcompris_SRCS ClientNetworkMessages.cpp ClientNetworkMessages.h netconst.h)
   include_directories(${CMAKE_CURRENT_BINARY_DIR})
 endif()
 
 if(ANDROID)
-  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
+  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} main.cpp)
 elseif(CMAKE_HOST_APPLE)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES} main.cpp)
 elseif(CMAKE_HOST_WIN32)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES})
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES} main.cpp)
 else()
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES} main.cpp)
 endif()
 
 add_library(gcompris_core STATIC ${gcompris_SRCS})
@@ -287,10 +287,6 @@ if(BUILD_STANDALONE)
     set(_qml_plugins ${_qml_plugins} QtGraphs/${_lib_prefix}graphsplugin)
   endif()
 
-   if(BUILD_SERVER)
-     list(APPEND _qt_plugins2 crypto/${_lib_prefix}qca-ossl)
-   endif()
-
   # TODO Double check for ubuntutouch, we may need qtquickcontrols2/templates2!
   if(NOT UBUNTUTOUCH)
     list(APPEND _qml_plugins
@@ -299,6 +295,13 @@ if(BUILD_STANDALONE)
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
   endif()
 
+  # Specific to the server for installation
+  if(BUILD_SERVER)
+    list(APPEND _qml_plugins
+      QtCore/${_lib_prefix}qtqmlcoreplugin
+      QtQuick/Dialogs/${_lib_prefix}qtquickdialogsplugin)
+  endif()
+  
   set(GCOMPRIS_OTHER_LIBS)
 
   if(APPLE)
