@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-21 09:34+0100\n"
+"PO-Revision-Date: 2024-06-08 10:46+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -13,6 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2195,7 +2196,7 @@ msgstr "Puzzle dla dzieci"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The objective is to assemble the baby puzzle."
-msgstr "Celem jest ułożenie dziecięcych puzzli."
+msgstr "Celem jest ułożenie puzzli dla dzieci."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:23
@@ -25427,8 +25428,8 @@ msgid ""
 msgstr ""
 "Aby przemieścić kawałek, należy go przeciągnąć. Przycisk symetrii pojawia "
 "się na elementach, które ją obsługują. Naciśnij na przycisk obrotu lub "
-"przeciągnij wokół kawałka, aby go obrócić. Zajrzyj do aktywności 'Dziecięce "
-"puzzle', aby łatwiej zrozumieć tangram."
+"przeciągnij wokół kawałka, aby go obrócić. Zajrzyj do aktywności 'Puzzle dla "
+"dzieci', aby łatwiej zrozumieć tangram."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
