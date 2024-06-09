@@ -11,7 +11,8 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.12
-import Qt.labs.platform 1.1
+import QtCore // For StandardPaths
+import QtQuick.Dialogs // For FileDialog
 import GCompris 1.0
 
 import "../singletons"
@@ -119,7 +120,7 @@ Popup {
             id: fileDialog
             fileMode: FileDialog.OpenFile
             defaultSuffix: "csv"
-            folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
+            currentFolder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
             onAccepted: {
                 var str = file.read(currentFile)
                 edit.text += str

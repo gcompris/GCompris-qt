@@ -13,8 +13,7 @@ import QtQuick.Window 2.12
 import QtQml 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.15
-import Qt.labs.settings 1.0
-import Qt.labs.platform 1.1
+import QtCore // For Settings and StandardPaths
 
 import GCompris 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
