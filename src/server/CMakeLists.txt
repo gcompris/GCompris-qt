@@ -13,7 +13,6 @@ set(server_SRCS
   controllers/database-controller.cpp
   controllers/network-controller.h
   controllers/network-controller.cpp
-  ../core/netconst.h
   )
 
 # Add files that do no need to pass through the moc processor
@@ -28,7 +27,7 @@ include_directories(
   controllers/
 )
 
-set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Sql)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Sql ${QT_MAJOR}::QuickDialogs2)
 
 if(ANDROID)
   add_library(${GCOMPRIS_SERVER_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
@@ -71,6 +70,6 @@ install(TARGETS ${GCOMPRIS_SERVER_EXECUTABLE_NAME}
   BUNDLE DESTINATION .)
 
 # install a startup script for linux bundle
-if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT UBUNTUTOUCH)
+if(BUILD_STANDALONE AND UNIX AND NOT APPLE AND NOT UBUNTUTOUCH AND NOT ANDROID )
   install(PROGRAMS ../../tools/gcompris-server.sh DESTINATION bin)
 endif()
