@@ -11,8 +11,8 @@ project(gcompris-qt C CXX)
 set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
 include(InstallRequiredSystemLibraries)
 
-# Set c++11 support
-set(CMAKE_CXX_STANDARD 11)
+# Set c++17 support
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
@@ -110,7 +110,7 @@ endforeach()
 
 if(UNIX AND NOT ANDROID)
   # It seems to only be present on some Linux distributions, not FreeBSD for example
-find_package(${QT_MAJOR}QuickControls2Basic QUIET)
+#find_package(${QT_MAJOR}QuickControls2Basic QUIET)
 endif()
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
@@ -131,8 +131,6 @@ option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
 if(COMPILE_DOC)
   find_package(KF6 QUIET COMPONENTS DocTools)
 endif()
-
-feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 if(ECM_FOUND)
     include(KDEInstallDirs)
@@ -155,7 +153,12 @@ endif()
 if(BUILD_SERVER AND NOT ANDROID)
   find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Sql)
   set_package_properties(${QT_MAJOR}Sql PROPERTIES TYPE REQUIRED)
+
+  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS QuickDialogs2)
+  set_package_properties(${QT_MAJOR}QuickDialogs2 PROPERTIES TYPE REQUIRED)
 endif(BUILD_SERVER AND NOT ANDROID)
+
+feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
 # Tell CMake to run moc when necessary:
 set(CMAKE_AUTOMOC ON)
