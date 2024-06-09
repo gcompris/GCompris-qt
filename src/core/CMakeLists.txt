@@ -162,31 +162,13 @@ else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
-# only build the lib for testing purpose
-if(BUILD_TESTING)
-  if(WIN32)
-    add_library(gcompris_core STATIC ${gcompris_SRCS})
-  else()
-    add_library(gcompris_core SHARED ${gcompris_SRCS})
-  endif()
-  target_link_libraries(gcompris_core ${used_qt_modules})
-endif()
+add_library(gcompris_core STATIC ${gcompris_SRCS})
+target_link_libraries(gcompris_core ${used_qt_modules})
 
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
 if (USE_16KB_PAGESIZE)
   target_link_options(${GCOMPRIS_EXECUTABLE_NAME} PRIVATE "-Wl,-z,max-page-size=16384")
-endif()
-
-if(BUILD_SERVER)
-  # Workaround to link to protobuf: https://github.com/protocolbuffers/protobuf/issues/14500
-  set(CMAKE_EXE_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
-  set(CMAKE_SHARED_LINKER_FLAGS "-Wl,--copy-dt-needed-entries")
-  target_link_libraries(gcompris_core protobuf::libprotobuf)
-  target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} protobuf::libprotobuf)
-  if(BUILD_STANDALONE)
-    install_with_symlinks(FILE ${Protobuf_LIBRARY} DESTINATION bin)
-  endif()
 endif()
 
 if(WITH_RCC)
