@@ -17358,7 +17358,7 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Question Mark - Help"
-msgstr ""
+msgstr "კითხვის ნიშანი - დახმარება"
 
 #: activities/menu/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -17378,12 +17378,12 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "G - About GCompris"
-msgstr ""
+msgstr "G - GCompris-ის შესახებ"
 
 #: activities/menu/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Quit - Quit GCompris (Ctrl+Q)"
-msgstr ""
+msgstr "გასვლა - GCompris-დან გასვლა (Ctrl+Q)"
 
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -17410,7 +17410,7 @@ msgstr ""
 #: activities/menu/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard shortcuts:</b>"
-msgstr ""
+msgstr "<b>კლავიატურის მალსახმობები:</b>"
 
 #: activities/menu/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -17825,12 +17825,12 @@ msgstr ""
 #: activities/mining/Mining.qml:470
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
-msgstr ""
+msgstr "ახლა დააპატარავეთ და სხვა ნაპერწკალიც იპოვეთ."
 
 #: activities/mining/Mining.qml:478
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
-msgstr ""
+msgstr "გააგრძელეთ დაპატარავება, სანამ ნაპერწკალს არ დაინახავთ."
 
 #: activities/mining/Mining.qml:486
 msgctxt "Mining|"
@@ -18076,7 +18076,7 @@ msgstr ""
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "მორზეს კოდის სწავლა"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18314,18 +18314,18 @@ msgstr ""
 #: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
-msgstr ""
+msgstr "ფრაგმენტის დადება"
 
 #: activities/nine_men_morris/nine_men_morris.js:388
 #: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
-msgstr ""
+msgstr "ფრაგმენტის გადატანა"
 
 #: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
-msgstr ""
+msgstr "ფრაგმენტის წაშლა"
 
 #: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
@@ -18373,7 +18373,7 @@ msgstr ""
 #: activities/note_names/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Name that note"
-msgstr ""
+msgstr "დაასახელეთ ნოტა"
 
 #. Help title
 #: activities/note_names/ActivityInfo.qml:20
@@ -18509,7 +18509,7 @@ msgstr "იპოვეთ კენტი რიცხვები."
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
-msgstr ""
+msgstr "ეს აქტივობა ლუწ და კენტ რიცხვებს გასწავლით."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:46
 #: activities/numbers-odd-even/NumbersOddEven.qml:56
@@ -18521,7 +18521,7 @@ msgstr ""
 #: activities/numbers-odd-even/NumbersOddEven.qml:51
 msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
-msgstr ""
+msgstr "რაას ნიშნავს ნაშთი?"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:60
 msgctxt "NumbersOddEven|"
@@ -18600,7 +18600,7 @@ msgstr ""
 #: activities/ordering_alphabets/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr ""
+msgstr "ასოების დალაგება"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -18621,7 +18621,7 @@ msgstr ""
 #: activities/ordering_alphabets/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 defined letters."
-msgstr ""
+msgstr "აღმავალი მიმდევრობა, 5 გამოცხადებული ასო."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in ascending lexicographical order.
 #: activities/ordering_alphabets/resource/1/Data.qml:22
@@ -18638,7 +18638,7 @@ msgstr "c|f|g|l|m"
 #: activities/ordering_alphabets/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 defined letters."
-msgstr ""
+msgstr "დაღმავალი მიმდევრობა, 5 გამოცხადებული ასო."
 
 #. Add 5 letters in ascending lexicographical order, separated by | character. The objective is to give children these letters in random order and ask them to sort in descending lexicographical order.
 #: activities/ordering_alphabets/resource/2/Data.qml:22
@@ -18655,7 +18655,7 @@ msgstr "a|b|d|f|g"
 #: activities/ordering_alphabets/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 5 random letters."
-msgstr ""
+msgstr "აღმავალი მიმდევრობა, 5 შემთხვევითი ასო."
 
 #. Translate the below string to the set of alphabets in ascending order in your language. The objective is to give children some random letters from this string, and ask them to order them in ascending order.
 #. ----------
@@ -18671,17 +18671,17 @@ msgstr "a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z"
 #: activities/ordering_alphabets/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 5 random letters."
-msgstr ""
+msgstr "დაღმავალი მიმდევრობა, 8 შემთხვევითი ასო."
 
 #: activities/ordering_alphabets/resource/5/Data.qml:13
 msgctxt "Data|"
 msgid "Ascending order, 8 random letters."
-msgstr ""
+msgstr "აღმავალი მიმდევრობა, 8 შემთხვევითი ასო."
 
 #: activities/ordering_alphabets/resource/6/Data.qml:13
 msgctxt "Data|"
 msgid "Descending order, 8 random letters."
-msgstr ""
+msgstr "დაღმავალი მიმდევრობა, 8 შემთხვევითი ასო."
 
 #. Activity title
 #: activities/ordering_chronology/ActivityInfo.qml:21
@@ -23832,7 +23832,7 @@ msgstr ""
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr ""
+msgstr "იპოვეთ ორივე რიცხვი."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
