@@ -89,7 +89,7 @@ namespace controllers {
         QJsonObject obj { { "deviceId", deviceId } };
         jsonDoc.setObject(obj);
         QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
-        qint64 messageSize = message.count();
+        qint64 messageSize = message.size();
 
         sendNetLog(QString("Sending broadcast to %1\n with deviceId: %2").arg(broadcastIpList.join(", ")).arg(deviceId));
         for (const QString &ip: broadcastIpList) {
@@ -105,7 +105,7 @@ namespace controllers {
         QJsonDocument jsonDoc;
         jsonDoc.setObject(obj);
         QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
-        qint64 messageSize = message.count();
+        qint64 messageSize = message.size();
         //    qWarning() << message;
         tcpSocket->write(message.constData(), messageSize);
     }
@@ -123,7 +123,7 @@ namespace controllers {
                 if (obj["content"].isArray()) {
                     QStringList logins;
                     const auto &jsonArray = obj["content"].toArray();
-                    for (int i = 0; i < jsonArray.count(); i++) {
+                    for (int i = 0; i < jsonArray.size(); i++) {
                         logins << jsonArray[i].toString();
                     }
                 }
@@ -297,17 +297,17 @@ namespace controllers {
         QStringList localMacAddresses;
         QStringList localNetmasks;
         QList<QHostAddress> hostList = QHostInfo::fromName(localhostname).addresses();
-        for (int i = 0; i < hostList.count(); i++) {
+        for (int i = 0; i < hostList.size(); i++) {
             const QHostAddress &address = hostList[i];
             if (address.protocol() == QAbstractSocket::IPv4Protocol && address.isLoopback() == false) {
                 localhostIPs << address.toString();
             }
         }
         QList<QNetworkInterface> all = QNetworkInterface::allInterfaces();
-        for (int i = 0; i < all.count(); i++) {
+        for (int i = 0; i < all.size(); i++) {
             const QNetworkInterface &networkInterface = all[i];
             QList<QNetworkAddressEntry> allEntries = networkInterface.addressEntries();
-            for (int j = 0; j < allEntries.count(); j++) {
+            for (int j = 0; j < allEntries.size(); j++) {
                 const QNetworkAddressEntry &entry = allEntries[j];
                 if (localhostIPs.contains(entry.ip().toString())) {
                     localMacAddresses << networkInterface.hardwareAddress();

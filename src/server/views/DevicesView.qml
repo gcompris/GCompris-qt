@@ -11,7 +11,6 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
-import Qt.labs.calendar 1.0
 
 import GCompris 1.0
 import QMLConnections 1.0

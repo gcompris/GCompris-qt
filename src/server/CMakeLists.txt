@@ -28,11 +28,11 @@ include_directories(
   controllers/
 )
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Sensors Qt5::QuickControls2 Qt5::Charts Qt5::Sql)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Sql)
 
 if(ANDROID)
   add_library(${GCOMPRIS_SERVER_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
-  set(used_qt_modules ${used_qt_modules} Qt5::AndroidExtras)
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} MACOSX_BUNDLE ${server_SRCS} ${server_MOC} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
@@ -42,7 +42,6 @@ else()
 endif()
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${used_qt_modules})
-
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
 gcompris_add_rcc(server
