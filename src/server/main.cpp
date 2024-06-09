@@ -21,7 +21,6 @@
 #include <QResource>
 // #include <config.h>
 
-#include <QQuickStyle>
 #include <QQmlContext>
 
 #include "controllers/database-controller.h"
