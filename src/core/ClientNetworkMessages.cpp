@@ -129,7 +129,7 @@ void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QStr
 }
 
 void ClientNetworkMessages::sendMessage(QByteArray message) {
-    qint64 messageSize = message.count();
+    qint64 messageSize = message.size();
     tcpSocket->write(message.constData(), messageSize);
 //    qWarning() << message;
 }
@@ -205,7 +205,7 @@ void ClientNetworkMessages::readFromSocket()
         case netconst::LOGIN_LIST:
             if (obj["content"].isArray()) {
                 QStringList logins;
-                for (int i = 0; i < obj["content"].toArray().count(); i++) {
+                for (int i = 0; i < obj["content"].toArray().size(); i++) {
                     logins << obj["content"].toArray()[i].toString();
                 }
                 Q_EMIT loginListReceived(logins);

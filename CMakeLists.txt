@@ -181,8 +181,8 @@ else()
 endif()
 
 if(BUILD_SERVER AND NOT ANDROID)
-  find_package(Qt5 ${QT_REQUIRED_VERSION} COMPONENTS Sql)
-  set_package_properties(Qt5Sql PROPERTIES TYPE REQUIRED)
+  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Sql)
+  set_package_properties(${QT_MAJOR}Sql PROPERTIES TYPE REQUIRED)
 endif(BUILD_SERVER AND NOT ANDROID)
 
 # Tell CMake to run moc when necessary:
