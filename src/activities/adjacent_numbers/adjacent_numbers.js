@@ -327,7 +327,7 @@ function checkAnswer() {
     }
     else
     {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.badAnswerSound.play()
     }
 }
 
@@ -343,7 +343,7 @@ function resetTile(index)
 function goodAnswerFeedback() {
         items.score.currentSubLevel++
         items.score.playWinAnimation()
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
+        items.goodAnswerSound.play()
 }
 
 function checkTileAnswer(index, value) {

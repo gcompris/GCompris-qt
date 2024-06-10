@@ -44,7 +44,8 @@ ActivityBase {
             property alias questionTilesModel: questionTilesModel
             property alias questionTilesFlow: questionTilesFlow
             property alias proposedTilesModel: proposedTilesModel
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
 
             // Activity options
             property bool randomSubLevels: true // not presented to the user
@@ -60,6 +61,16 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         Rectangle {
             id: instructionArea
