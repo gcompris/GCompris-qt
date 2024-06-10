@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-04-08 18:50+0300\n"
+"PO-Revision-Date: 2024-06-09 08:57+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.02.2\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -2157,7 +2157,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "העכבר הראשון שלי"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2418,7 +2418,7 @@ msgstr "לגרור ולשחרר את הפריטים כדי שיתאימו."
 #: activities/babyshapes/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Complete the puzzle"
-msgstr "השלם את ההרכבה"
+msgstr "נא להשלים את ההרכבה"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
@@ -2465,27 +2465,27 @@ msgstr "לוק עם צורות צבעוניות."
 #: activities/babyshapes/resource/board/board7_0.qml:15
 msgctxt "board7_0|"
 msgid "Paul Gauguin, Arearea - 1892"
-msgstr "פול גוגן, אררה - 1892"
+msgstr "פול גוגן, אריאריה - 1892"
 
 #: activities/babyshapes/resource/board/board7_1.qml:14
 msgctxt "board7_1|"
 msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
-msgstr "פיטר בורגל האב, חתונת האיכרים- 1568"
+msgstr "פיטר ברויגל האב, חתונה כפרית - 1568"
 
 #: activities/babyshapes/resource/board/board7_2.qml:14
 msgctxt "board7_2|"
 msgid "The Lady and the Unicorn - XVe century"
-msgstr "הגבירה והחד-קרן - המאה ה15"
+msgstr "הגבירה והחד-קרן - המאה ה־15"
 
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr "וינסנט ואן-גוך, חדר שינה בארלס- 1888"
+msgstr "וינסנט ואן-גוך, חדר שינה בארל - 1888"
 
 #: activities/babyshapes/resource/board/board7_4.qml:14
 msgctxt "board7_4|"
 msgid "Ambrosius Bosschaert the Elder, Flower Still Life - 1614"
-msgstr "אמבוזיוס בסשרט האב, פרחים וטבע דומם- 1614"
+msgstr "אמבוזיוס בוסחרט האב, פרחים וטבע דומם - 1614"
 
 #: activities/balancebox/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
@@ -2510,17 +2510,17 @@ msgstr "להתחיל את עורך השלבים"
 #: activities/balancebox/ActivityConfig.qml:41
 msgctxt "ActivityConfig|"
 msgid "Start the activity to access the editor"
-msgstr "כדי להיכנס לעורך- להתחיל את הפעילות"
+msgstr "כדי להיכנס לעורך יש להתחיל את הפעילות"
 
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Load saved levels"
-msgstr "טען שלבים שמורים"
+msgstr "טעינת שלבים שמורים"
 
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
-msgstr "צריך להתחיל את הפעילות כדי לטעון את השלבים"
+msgstr "צריך להתחיל את הפעילות כדי לטעון את השלבים שלך"
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
@@ -16642,18 +16642,12 @@ msgstr "בין 20 ל 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
 msgstr "ללמוד חיסור"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
 msgstr "ללמוד חיסור עם מספרים קטנים."
@@ -17107,9 +17101,6 @@ msgstr "לחשב כמה כוכבים נמצאים מתחת לכובע הקסמי
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
 msgstr "ללמוד חיסור."
@@ -17118,9 +17109,6 @@ msgstr "ללמוד חיסור."
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
 msgstr "חיסור."
@@ -17200,9 +17188,6 @@ msgstr "לספור כמה כוכבים נמצאים מתחת לכובע הקסמ
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
 msgstr "ללמוד חיבּור."
@@ -17211,9 +17196,6 @@ msgstr "ללמוד חיבּור."
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
 msgstr "חיבור."
@@ -17514,12 +17496,9 @@ msgstr "להפוך את הקלפים כדי למצוא את זוגות של או
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr "ללמוד אותיות קטנות וגדולות, זכרון."
+msgstr "ללמוד אותיות קטנות וגדולות."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -17637,12 +17616,9 @@ msgstr "להפוך את הקלפים כדי להתאים מספר לתמונה."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "להתאמן בחיסור."
+msgstr "לתרגל ספירה."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -17710,9 +17686,6 @@ msgstr "להפוך את הקלפים כדי להתאים פעולה עם התו�
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
 msgstr "לתרגל חיבור, חיסור כפל וחילוק."
@@ -17720,9 +17693,6 @@ msgstr "לתרגל חיבור, חיסור כפל וחילוק."
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
 msgstr "חיבור, חיסור, כפל וחילוק."
@@ -17864,19 +17834,13 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
-msgstr "להתאמן בחיבור וחיסור."
+msgstr "לתרגל חיבור וחיסור."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
 msgstr "חיבור וחיסור."
@@ -17920,12 +17884,9 @@ msgstr "להפוך את הקלפים כדי להתאים חיבור התוצאה
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
-msgstr "להתאמן בחיבור."
+msgstr "לתרגל חיבור."
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -18024,18 +17985,12 @@ msgstr "להפוך את הקלפים כדי להתאים חילוק עם התו�
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice division."
-msgstr "להתאמן בחילוק."
+msgstr "לתרגל חילוק."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
 msgstr "חילוק."
@@ -18123,9 +18078,6 @@ msgstr "להפוך את הקלפים כדי להתאים חילוק עם התו�
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "חילוק"
@@ -18146,12 +18098,9 @@ msgstr "להפוך את הקלפים כדי להתאים חיסור עם התו�
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
-msgstr "להתאמן בחיסור."
+msgstr "לתרגל חיסור."
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -18251,9 +18200,6 @@ msgstr "להפוך את הקלפים כדי להתאים כפל או חילוק 
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
 msgstr "לתרגל כפל וחילוק."
@@ -18261,12 +18207,9 @@ msgstr "לתרגל כפל וחילוק."
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
-msgstr "כפל וחילוק."
+msgstr "כפל, חילוק."
 
 #. Help manual
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:24
@@ -18308,9 +18251,6 @@ msgstr "להפוך את הקלפים כדי להתאים כפל עם התוצא�
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
 msgstr "לתרגל כפל."
@@ -18318,9 +18258,6 @@ msgstr "לתרגל כפל."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "כפל."
@@ -18861,12 +18798,9 @@ msgid "Copyright: %1"
 msgstr "זכויות יוצרים:  %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "מסנן דרגת קושי:"
+msgstr "מסנן דרגת קושי"
 
 #: activities/menu/ConfigurationItem.qml:108
 msgctxt "ConfigurationItem|"
@@ -19266,12 +19200,9 @@ msgstr "למצוא את האות החסרה כדי להשלים את המילה.
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "ללמוד את סדר האלפבית."
+msgstr "ללמוד איך לאיית מילים."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -25492,13 +25423,13 @@ msgstr "לבדוק את תפריט העזרה לשליטה באמצעות המק
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr ""
+msgstr "סודוקו"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr ""
+msgstr "לפתור את הסודוקו."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -26912,13 +26843,13 @@ msgstr "בדיקת אימות (Checksum) של הקבצים שירדו אינה �
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "לא נמצאו קולות עבור %1."
 
 #: core/DownloadManager.cpp:767
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "לא נמצאו נתונים עבור %1."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -27180,7 +27111,7 @@ msgstr ""
 #: core/main.qml:389
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "החלה"
 
 #: core/main.qml:390
 #, fuzzy
