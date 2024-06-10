@@ -49,7 +49,8 @@ ActivityBase {
         QtObject {
             id: items
             property GCAudio audioVoices: activity.audioVoices
-            property GCSfx audioEffects: activity.audioEffects
+            property alias bleepSound: bleepSound
+            property alias clickSound: clickSound
             property alias typedText: typedText
             property alias textinput: textinput
             property alias locale: background.locale
@@ -62,6 +63,16 @@ ActivityBase {
             Activity.focusTextInput();
         }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: bleepSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
+        }
+
+        GCSoundEffect {
+            id: clickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/audioclick.wav"
+        }
 
         Item {
             id: layoutArea

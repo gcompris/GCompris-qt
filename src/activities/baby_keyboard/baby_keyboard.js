@@ -35,7 +35,7 @@ function playLetter(letter) {
     if(items.fileId.exists(voiceFile)) {
         items.audioVoices.append(voiceFile);
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bleep.wav");
+        items.bleepSound.play();
     }
 }
 
@@ -46,7 +46,7 @@ function stopVoice() {
 
 function playSound() {
     stopVoice();
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/audioclick.wav");
+    items.clickSound.play();
     items.typedText.text = "";
 }
 
