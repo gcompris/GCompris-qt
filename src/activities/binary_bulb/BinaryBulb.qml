@@ -49,12 +49,23 @@ ActivityBase {
             property int currentSelectedBulb: -1
             property alias score: score
             property alias errorRectangle: errorRectangle
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         // Tutorial section starts
         Image {

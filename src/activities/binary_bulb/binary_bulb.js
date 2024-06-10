@@ -78,11 +78,11 @@ function equalityCheck() {
     if(items.numberSoFar == items.numberToConvert) {
         items.score.currentSubLevel++
         items.score.playWinAnimation()
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.goodAnswerSound.play()
 
     } else {
         items.errorRectangle.startAnimation()
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.badAnswerSound.play()
     }
 }
 
