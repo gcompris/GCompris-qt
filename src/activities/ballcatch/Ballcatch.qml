@@ -49,6 +49,7 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias ball: ball
+            property alias smudgeSound: smudgeSound
             property alias rightHand: rightHand
             property alias leftHand: leftHand
             property alias deltaPressedTimer: deltaPressedTimer
@@ -72,6 +73,11 @@ ActivityBase {
             leftHand.reinitPosition();
             rightHand.reinitPosition();
             ball.reinitBall();
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
         DialogHelp {
@@ -228,10 +234,6 @@ ActivityBase {
                 topMargin: 10
             }
             z: 10
-        }
-
-        function playSound(identifier: string) {
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/"+ identifier + ".wav");
         }
 
         /* Timer starting when user first presses a first key.

@@ -9,6 +9,7 @@
 import QtQuick 2.12
 import "ballcatch.js" as Activity
 import GCompris 1.0
+import "../../core"
 
 Image {
     id: ball
@@ -34,6 +35,16 @@ Image {
         animation.stop();
     }
 
+    GCSoundEffect {
+        id: brickSound
+        source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
+    }
+
+    GCSoundEffect {
+        id: winSound
+        source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+    }
+
     ParallelAnimation {
         id: animation
         running: false
@@ -51,7 +62,7 @@ Image {
                           to: 360; duration: 1000
                           easing.type: Easing.InOutQuad }
         onStarted: {
-            items.background.playSound("brick");
+            brickSound.play();
         }
 
         onStopped: {
@@ -60,7 +71,7 @@ Image {
                 return
             } else if(Activity.gameWon) {
                 // This is a win
-                items.background.playSound("completetask");
+                winSound.play();
                 bonus.good("tux");
             } else {
                 // This is a lose
