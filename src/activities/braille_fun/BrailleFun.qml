@@ -48,7 +48,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias winSound: winSound
+            property alias clickSound: clickSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias questionItem: questionItem
@@ -62,6 +63,16 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: clickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
 
         Item {
             id: layoutArea
