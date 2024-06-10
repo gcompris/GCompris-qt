@@ -55,7 +55,6 @@ ActivityBase {
             id: items
             property alias edit: edit
             property GCAudio audioVoices: activity.audioVoices
-            property GCSfx audioEffects: activity.audioEffects
             property alias fileId: fileId
             property bool audioMode: false
             property string locale: ApplicationSettings.locale
