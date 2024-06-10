@@ -41,7 +41,9 @@ ActivityBase {
             property alias choiceTray: choiceTray
             property alias question: question
             property alias answer: answer
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
+            property alias bleepSound: bleepSound
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -65,6 +67,21 @@ ActivityBase {
                 choiceGridView.moveCurrentIndexRight()
             if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
                 choiceGridView.currentItem.clicked()
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
+        }
+
+        GCSoundEffect {
+            id: bleepSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
         }
 
         Column {

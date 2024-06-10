@@ -144,13 +144,13 @@ function clickHandler(id){
             items.blockClicks = true
             items.currentSubLevel++
             items.score.playWinAnimation();
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+            items.goodAnswerSound.play();
         } else {
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
+            items.bleepSound.play();
         }
         return 1
     } else { // Wrong answer, try again
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
+        items.badAnswerSound.play();
     }
 }
 
