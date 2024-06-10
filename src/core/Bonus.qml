@@ -11,7 +11,7 @@ import QtQuick 2.12
 import GCompris 1.0
 
 // Requires the global property in the scope:
-// property GCAudio audioEffects, audioVoices
+// property GCAudio audioVoices
 
 /**
  * A QML component providing user feedback upon winning/loosing.
@@ -174,7 +174,7 @@ Image {
                     ApplicationInfo.getAudioFilePath(
                         winVoices[Math.floor(Math.random()*winVoices.length)])))
             if(winSound)
-                audioEffects.play(winSound)
+                audioVoices.play(winSound)
 
         start()
         animation.start()
@@ -193,7 +193,7 @@ Image {
         }
         if(!audioVoices.play(audio))
             if(looseSound)
-                audioEffects.play(looseSound)
+                audioVoices.play(looseSound)
         start()
         animation.start()
     }
