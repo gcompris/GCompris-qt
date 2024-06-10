@@ -96,9 +96,6 @@ Item {
      */
     property int wrongAnswerShakeAmplitude: wrongAnswerShakeAmplitudeCalc < wrongAnswerShakeAmplitudeMin ? wrongAnswerShakeAmplitudeMin : wrongAnswerShakeAmplitudeCalc
 
-    // If you want the sound effects just pass the audioEffects
-    property GCSfx audioEffects
-
     /**
      * Emitted after button is pressed as a good answer.
      *
@@ -119,12 +116,8 @@ Item {
     signal pressed
     onPressed: {
         if (isCorrectAnswer) {
-            if(audioEffects)
-                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
             correctAnswerAnimation.start();
         } else {
-            if(audioEffects)
-                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
             wrongAnswerAnimation.start();
         }
     }

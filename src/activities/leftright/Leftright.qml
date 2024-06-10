@@ -29,7 +29,6 @@ ActivityBase {
             id: items
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property GCSfx audioEffects: activity.audioEffects
             property alias imageAnimOff: imageAnimOff
             property alias leftButton: leftButton
             property alias rightButton: rightButton
@@ -133,6 +132,16 @@ ActivityBase {
                 }
             }
 
+            GCSoundEffect {
+                id: goodAnswerEffect
+                source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+            }
+
+            GCSoundEffect {
+                id: badAnswerEffect
+                source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+            }
+
             AnswerButton {
                 id: leftButton
                 width: blackBoard.paintedWidth * 0.45
@@ -142,11 +151,14 @@ ActivityBase {
                 anchors.top: blackBoard.verticalCenter
                 anchors.topMargin: blackBoard.paintedHeight * 0.5 + 10
                 textLabel: qsTr("Left hand")
-                audioEffects: activity.audioEffects
                 onPressed: {
                     items.buttonsBlocked = true
-                    if(isCorrectAnswer)
+                    if(isCorrectAnswer) {
+                        goodAnswerEffect.play()
                         Activity.goodAnswerPressed()
+                    } else {
+                        badAnswerEffect.play()
+                    }
                 }
                 blockAllButtonClicks: items.buttonsBlocked
                 onIncorrectlyPressed: items.buttonsBlocked = false
@@ -160,12 +172,15 @@ ActivityBase {
                 anchors.leftMargin: leftButton.anchors.rightMargin
                 anchors.top: blackBoard.verticalCenter
                 anchors.topMargin: leftButton.anchors.topMargin
-                audioEffects: activity.audioEffects
                 textLabel: qsTr("Right hand")
                 onPressed: {
                     items.buttonsBlocked = true
-                    if(isCorrectAnswer)
+                    if(isCorrectAnswer) {
+                        goodAnswerEffect.play()
                         Activity.goodAnswerPressed()
+                    } else {
+                        badAnswerEffect.play()
+                    }
                 }
                 blockAllButtonClicks: items.buttonsBlocked
                 onIncorrectlyPressed: items.buttonsBlocked = false

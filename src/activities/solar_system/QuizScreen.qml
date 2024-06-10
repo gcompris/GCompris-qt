@@ -138,11 +138,16 @@ Item {
                     height: optionListView.buttonHeight
                     textLabel: optionValue
                     blockAllButtonClicks: optionListView.blockAnswerButtons
-                    audioEffects: activity.audioEffects
 
                     isCorrectAnswer: closeness === 100
 
-                    onPressed: optionListView.blockAnswerButtons = true
+                    onPressed: {
+                        optionListView.blockAnswerButtons = true
+                        if(isCorrectAnswer)
+                            goodAnswerEffect.play()
+                        else
+                            badAnswerEffect.play()
+                    }
                     onIncorrectlyPressed: {
                         if(!items.assessmentMode) {
                             closenessMeter.stopAnimations()
@@ -173,6 +178,16 @@ Item {
                 }
             }
         }
+    }
+
+    GCSoundEffect {
+        id: goodAnswerEffect
+        source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+    }
+
+    GCSoundEffect {
+        id: badAnswerEffect
+        source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
     }
 
     Rectangle {

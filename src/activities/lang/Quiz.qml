@@ -238,13 +238,15 @@ Item {
                         textLabel: translatedTxt
                         anchors.right: wordImageQuiz.visible ? wordImageQuiz.left : parent.right
                         anchors.left: parent.left
-                        audioEffects: activity.audioEffects
                         blockAllButtonClicks: quiz.buttonsBlocked
                         onPressed: {
                             quiz.buttonsBlocked = true
                             if(isCorrectAnswer) {
+                                goodAnswerEffect.play()
                                 score.currentSubLevel++
                                 score.playWinAnimation()
+                            } else {
+                                badAnswerEffect.play()
                             }
                         }
                         isCorrectAnswer: translatedTxt === quiz.goodWord.translatedTxt
@@ -259,6 +261,16 @@ Item {
                     }
                 }
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerEffect
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerEffect
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         BarButton {

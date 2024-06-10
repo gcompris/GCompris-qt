@@ -346,6 +346,16 @@ ActivityBase {
             visible: !background.isHorizontalLayout && answerButtonsFlow.visible
         }
 
+        GCSoundEffect {
+            id: goodAnswerEffect
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerEffect
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
         Flow {
             id: answerButtonsFlow
             width: Math.min(250 * ApplicationInfo.ratio, buttonsArea.width)
@@ -364,11 +374,11 @@ ActivityBase {
                 onPressed: {
                     items.buttonsBlocked = true
                     if(isCorrectAnswer) {
-                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                        goodAnswerEffect.play();
                         score.currentSubLevel += 1;
                         score.playWinAnimation();
                     } else {
-                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                        badAnswerEffect.play();
                     }
                 }
             }
@@ -385,11 +395,11 @@ ActivityBase {
                 onPressed: {
                     items.buttonsBlocked = true
                     if(isCorrectAnswer) {
-                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                        goodAnswerEffect.play();
                         score.currentSubLevel += 1;
                         score.playWinAnimation();
                     } else {
-                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                        badAnswerEffect.play();
                     }
                 }
             }
