@@ -12,6 +12,8 @@ import QtQuick 2.12
 import "../../core"
 import GCompris 1.0
 
+// Requires items.clickSound in activity items
+
 Item {
     id: brailleCharItem
     height: dotWidth * 3 + grid.spacing * 4
@@ -129,7 +131,7 @@ Item {
                     } else {
                         state = "on"
                     }
-                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                    items.clickSound.play()
                     // On touch screens we don't get the exit event.
                     border.width = 2 * ApplicationInfo.ratio
                     brailleCharItem.updateBrailleCharFromDots()
