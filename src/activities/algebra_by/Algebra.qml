@@ -49,7 +49,8 @@ ActivityBase {
             property alias numpad: numpad
             property int result
             readonly property var levels: activity.datasets
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property bool buttonsBlocked: false
         }
 
@@ -147,6 +148,16 @@ ActivityBase {
         Balloon {
             id: balloon
             onTimeout: bonus.bad("smiley")
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Score {
