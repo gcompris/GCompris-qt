@@ -24,9 +24,13 @@ Item {
         topMargin: background.baseMargins
     }
 
+    GCSoundEffect {
+        id: scrollSound
+        source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+    }
+
     property alias model: mymodel;
     property alias view: view;
-    property GCSfx audioEffects
     property bool inputBlocked: false
 
     ListModel {
@@ -166,7 +170,7 @@ Item {
                         hoverEnabled: true
                         enabled: !listWidget.inputBlocked
                         onClicked: {
-                            listWidget.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                            scrollSound.play()
                             view.currentIndex = index
                         }
                     }

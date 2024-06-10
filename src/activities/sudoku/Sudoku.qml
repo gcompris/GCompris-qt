@@ -52,7 +52,10 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
-            property GCSfx audioEffects: activity.audioEffects
+            property alias canEnterSound: canEnterSound
+            property alias cantEnterSound: cantEnterSound
+            property alias completeSound: completeSound
+            property alias deleteSound: deleteSound
             property alias availablePiecesModel: availablePieces
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
@@ -63,6 +66,26 @@ ActivityBase {
         onStart: Activity.start(items)
 
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: canEnterSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
+        }
+
+        GCSoundEffect {
+            id: cantEnterSound
+            source: "qrc:/gcompris/src/core/resource/sounds/darken.wav"
+        }
+
+        GCSoundEffect {
+            id: completeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: deleteSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
 
         DialogHelp {
             id: dialogHelp
@@ -127,7 +150,6 @@ ActivityBase {
 
         SudokuListWidget {
             id: availablePieces
-            audioEffects: activity.audioEffects
             inputBlocked: items.buttonsBlocked
         }
 
