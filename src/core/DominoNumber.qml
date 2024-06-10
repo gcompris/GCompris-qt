@@ -68,10 +68,10 @@ Item {
     property bool isClickable: true // Default value
 
     /**
-     * type:GCAudio
+     * type:GCSoundEffect
      * To play sound and audio effects.
      */
-    property GCSfx audioEffects
+    property GCSoundEffect soundEffects
 
     readonly property var romans: ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
@@ -244,7 +244,7 @@ Item {
 
     // Increase the displayed integer value by one.
     function up() {
-        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+        soundEffects.play()
         if(item.value == item.valueMax)
             item.value = 0
         else
@@ -253,7 +253,7 @@ Item {
 
     // Decrease the displayed integer by one.
     function down() {
-        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+        soundEffects.play()
         if(item.value == 0)
             item.value = item.valueMax
         else

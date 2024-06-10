@@ -70,7 +70,7 @@ Flipable {
 
     // Set to false to prevent user inputs.
     property bool isClickable: true
-    property GCSfx audioEffects
+    property GCSoundEffect soundEffects
 
     front: Rectangle {
         anchors.fill: parent
@@ -92,7 +92,7 @@ Flipable {
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
-            audioEffects: flipable.audioEffects
+            soundEffects: flipable.soundEffects
         }
 
         // Separation
@@ -117,7 +117,7 @@ Flipable {
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
-            audioEffects: flipable.audioEffects
+            soundEffects: flipable.soundEffects
         }
     }
 

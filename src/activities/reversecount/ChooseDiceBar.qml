@@ -25,12 +25,16 @@ Item {
     property alias value2: domino.value2
     property alias valueMax: domino.valueMax
     property alias mode: domino.mode
-    property GCSfx audioEffects
 
     function moveTux() {
         if(ok.enabled) {
             Activity.moveTux(domino.value1 + domino.value2)
         }
+    }
+
+    GCSoundEffect {
+        id: dominoScroll
+        source: 'qrc:/gcompris/src/core/resource/sounds/scroll.wav'
     }
 
     Row {
@@ -57,7 +61,7 @@ Item {
             height: ok.height
             width: height * 2
             isClickable: ok.enabled
-            audioEffects: activity.audioEffects
+            soundEffects: dominoScroll
         }
     }
 }

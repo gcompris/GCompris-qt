@@ -240,7 +240,6 @@ ActivityBase {
             mode: items.mode
             anchors.horizontalCenter: items.background.horizontalCenter
             y: items.heightBase * 2
-            audioEffects: activity.audioEffects
         }
 
         Bonus {
