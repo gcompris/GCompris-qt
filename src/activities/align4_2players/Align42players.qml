@@ -187,12 +187,17 @@ ActivityBase {
             }
         }
 
+        GCSoundEffect {
+            id: slideSound
+            source: Activity.url + "slide.wav"
+        }
+
         PropertyAnimation {
             id: drop
             target: fallingPiece
             properties: "y"
             duration: 720
-            onStarted: activity.audioEffects.play(Activity.url + 'slide.wav')
+            onStarted: slideSound.play()
             onStopped: {
                 dynamic.display()
                 Activity.continueGame()
