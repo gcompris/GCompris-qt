@@ -401,15 +401,15 @@ function clickOn(caseX, caseY) {
     */
     if(items.calcudokuModel.get(currentCase).textValue == "") {
         if(isGood) {
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav');
+            items.canEnterSound.play();
             items.calcudokuModel.get(currentCase).textValue = currentSymbol.text;
         } else {
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+            items.cantEnterSound.play();
         }
     }
     else {
         // Already a symbol in this case, we remove it
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/darken.wav');
+        items.deleteSound.play();
         items.calcudokuModel.get(currentCase).textValue = "";
     }
 
@@ -417,7 +417,7 @@ function clickOn(caseX, caseY) {
         items.buttonsBlocked = true;
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.completeSound.play();
     }
 }
 
