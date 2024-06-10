@@ -133,7 +133,8 @@ ActivityBase {
             property var buttonType: Fixture.Category5
             property alias parser: parser
             property double dpi
-            property GCSfx audioEffects: activity.audioEffects
+            property alias winSound: winSound
+            property alias contactSound: contactSound
             property Loading loading: activity.loading
         }
 
@@ -153,6 +154,16 @@ ActivityBase {
         JsonParser {
             id: parser
             onError: (msg) => console.error("Balancebox: Error parsing JSON: " + msg);
+        }
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
+        }
+
+        GCSoundEffect {
+            id: contactSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
         // color overlay to better see the map outline
@@ -301,8 +312,8 @@ ActivityBase {
                         Activity.addBallContact(other);
                     else {
                         // sound-effect on each contact with a wall might be too annoying:
-                        //items.audioEffects.stop();
-                        //items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav");
+                        //contactSound.stop();
+                        //contactSound.play();
                     }
                 }
                 onEndContact: (item, other) => {

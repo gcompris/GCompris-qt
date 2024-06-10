@@ -200,11 +200,11 @@ function checkBallContacts()
                     ballContacts[k].pressed = true;
                     lastContact = ballContacts[k].orderNum;
                     if (lastContact === contacts.length) {
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
+                        items.winSound.play();
                         goalUnlocked = true;
                         goal.imageSource = baseUrl + "/door.svg";
                     } else
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav"); // bleep
+                        items.contactSound.play(); // bleep
                 }
             }
         }
