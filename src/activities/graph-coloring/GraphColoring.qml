@@ -74,6 +74,11 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
         Item {
             id: eventHandler
             focus: true
@@ -203,7 +208,7 @@ ActivityBase {
                         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                         onClicked:{
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                            smudgeSound.play();
                             items.currentKeyZone = chooser;
                             items.nodeHighlight.setHighlight(index);
                             showChooser(true, index, parent);
@@ -242,14 +247,14 @@ ActivityBase {
 
             function handleKeys(event) {
                 if(event.key === Qt.Key_Right) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    smudgeSound.play();
                     nodeHighlight.index += 1;
                     if(nodeHighlight.index > nodesRepeater.count - 1) {
                         nodeHighlight.index = 0;
                     }
                 }
                 if(event.key === Qt.Key_Left) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    smudgeSound.play();
                     nodeHighlight.index -= 1;
                     if(nodeHighlight.index < 0) {
                         nodeHighlight.index = nodesRepeater.count - 1;
@@ -261,7 +266,7 @@ ActivityBase {
                 }
                 nodeHighlight.anchors.centerIn = nodesRepeater.itemAt(nodeHighlight.index);
                 if(event.key === Qt.Key_Space) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    smudgeSound.play();
                     showChooser(true, nodeHighlight.index, nodesRepeater.itemAt(nodeHighlight.index));
                     items.currentKeyZone = chooser;
                     items.chooserGrid.currentIndex = 0;
@@ -366,14 +371,14 @@ ActivityBase {
 
             function handleKeys(event) {
                 if(event.key === Qt.Key_Right) {
-                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    smudgeSound.play();
                     chooserGrid.currentIndex += 1;
                     if(chooserGrid.currentIndex > chooserGrid.count - 1) {
                         chooserGrid.currentIndex = 0;
                     }
                 }
                 if(event.key === Qt.Key_Left) {
-                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    smudgeSound.play();
                     chooserGrid.currentIndex -= 1;
                     if(chooserGrid.currentIndex < 0) {
                         chooserGrid.currentIndex = chooserGrid.count - 1;
@@ -386,7 +391,7 @@ ActivityBase {
             }
 
             function selectItem() {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                smudgeSound.play();
                 var obj = items.nodesRepeater.model;
                 obj.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
                 showChooser(false);
