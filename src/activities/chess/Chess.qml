@@ -63,7 +63,6 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -112,6 +111,21 @@ ActivityBase {
                 blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
             }
             movesCount--
+        }
+
+        GCSoundEffect {
+            id: flipSound
+            source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
         Loader {
@@ -390,7 +404,7 @@ ActivityBase {
                 Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
                 function swap() {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                    flipSound.play()
                     coordsOpacity = 0
                     timerSwap.start()
                     if(chessboard.rotation == 180)
@@ -562,7 +576,7 @@ ActivityBase {
                     var pawnPiece = getPieceAt(pos)
                     if(pos != from && state[i].img === "" &&
                        pawnPiece && pawnPiece.img[1] === 'p') {
-                           items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                           smudgeSound.play()
                            if(pawnPiece.isWhite) {
                                whiteTakenPieces.takenPiecesModel.append(pawnPiece)
                                whiteTakenPieces.pushedLast.push(movesCount)
@@ -576,7 +590,7 @@ ActivityBase {
                 }
 
                 if(toPiece.img !== '') {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                    smudgeSound.play()
                     if(toPiece.isWhite) {
                         whiteTakenPieces.takenPiecesModel.append(toPiece)
                         whiteTakenPieces.pushedLast.push(movesCount)
@@ -586,7 +600,7 @@ ActivityBase {
                     }
                 }
                 else
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                    scrollSound.play()
                 toPiece.hide(from)
                 fromPiece.move(to)
             }
