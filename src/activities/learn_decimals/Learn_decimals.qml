@@ -55,7 +55,8 @@ ActivityBase {
             property bool isAdditionMode: activity.isAdditionMode
             property bool isQuantityMode: activity.isQuantityMode
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -81,6 +82,16 @@ ActivityBase {
         onStop: {
             timer.stop()
             Activity.stop()
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         // Tutorial section starts
