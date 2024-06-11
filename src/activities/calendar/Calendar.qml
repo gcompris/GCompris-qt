@@ -42,7 +42,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias errorRectangle: errorRectangle
@@ -66,6 +67,16 @@ ActivityBase {
             else {
                 handleKeys(event);
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Rectangle {
