@@ -133,6 +133,6 @@ function solve() {
 }
 
 function windowPressed(index) {
-    audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+    items.scrollSound.play()
     switchLight(index)
 }

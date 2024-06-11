@@ -47,6 +47,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property alias scrollSound: scrollSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property bool isPortrait: (background.height >= background.width - tux.width)
@@ -102,6 +103,11 @@ ActivityBase {
                 }
             }
         ]
+
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
 
         Rectangle {
             id: nightSky
