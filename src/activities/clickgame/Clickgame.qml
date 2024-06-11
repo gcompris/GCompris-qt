@@ -43,6 +43,18 @@ ActivityBase {
             fishAnimation.stop()
         }
 
+        GCSoundEffect {
+            id: bubbleSound
+            source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.wav"
+        }
+
+        GCSoundEffect {
+            id: dripSound
+            source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
+        }
+
+        property alias dripSound: dripSound
+
         QtObject {
             id: items
             property alias score: score
@@ -55,7 +67,7 @@ ActivityBase {
             interval: 5000
             running: true
             repeat: true
-            onTriggered: activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/bubble.wav")
+            onTriggered: bubbleSound.play()
         }
 
         Timer {

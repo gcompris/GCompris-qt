@@ -71,7 +71,7 @@ AnimatedSprite {
             background.animTrigger.disconnect(animTrigger)
             parent.opacity = 0
             enabled = false
-            activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/drip.wav")
+            background.dripSound.play()
             Activity.fishKilled()
             particles.burst(40);
         }
