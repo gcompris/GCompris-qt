@@ -201,7 +201,7 @@ function destroyPlanet() {
 }
 
 function crash() {
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+    items.crashSound.play();
     items.explosion.show();
     items.spaceship.hide();
     stop();

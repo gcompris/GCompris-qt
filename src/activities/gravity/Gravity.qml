@@ -55,7 +55,7 @@ ActivityBase {
             property alias planet0: planet0
             property alias planet1: planet1
             property alias arrow: arrow
-            property GCSfx audioEffects: activity.audioEffects
+            property alias crashSound: crashSound
             property double gravity: 0
             property int planetFrequency: 0
             property int spaceSpeed: planetFrequency * 4
@@ -104,6 +104,12 @@ ActivityBase {
             rewindSpace1 = true
             station.width = background.width
             station.y = -station.height
+        }
+
+
+        GCSoundEffect {
+            id: crashSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Image {
