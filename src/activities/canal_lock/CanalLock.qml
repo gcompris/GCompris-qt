@@ -39,6 +39,31 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        GCSoundEffect {
+            id: waterSound
+            source: activity.url + "water_fill.wav"
+        }
+
+        GCSoundEffect {
+            id: lockSound
+            source: activity.url + "lock.wav"
+        }
+
+        GCSoundEffect {
+            id: doorOpenSound
+            source: activity.url + "door_open.wav"
+        }
+
+        GCSoundEffect {
+            id: doorCloseSound
+            source: activity.url + "door_close.wav"
+        }
+
+        GCSoundEffect {
+            id: crashSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
         // Needed to get keyboard focus on IntroMessage
         Keys.forwardTo: [message]
 
@@ -64,6 +89,12 @@ ActivityBase {
         }
 
         onStart: water.state = 'down'
+        onStop: {
+            waterSound.stop()
+            lockSound.stop()
+            doorOpenSound.stop()
+            doorCloseSound.stop()
+        }
 
         Image {
             source: activity.url + "sun.svg"
@@ -159,7 +190,7 @@ ActivityBase {
                 onStateChanged: {
                     if( water.state == "undef")
                         return
-                    activity.audioEffects.play(activity.url + 'water_fill.wav')
+                    waterSound.play()
                     if( water.state == 'up' && boat.state == 'middleDown')
                         boat.state = 'middleUp'
                     else if( water.state == 'down' && boat.state == 'middleUp')
@@ -202,14 +233,14 @@ ActivityBase {
                         if(lock1.state == 'close' &&
                                 door2.state == 'close' &&
                                 lock2.state == 'close') {
-                            activity.audioEffects.play(activity.url + 'lock.wav')
+                            lockSound.play()
                             lock1.state = 'open'
                             water.state = 'down'
                         } else if(lock1.state == 'open') {
-                            activity.audioEffects.play(activity.url + 'lock.wav')
+                            lockSound.play()
                             lock1.state = 'close'
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            crashSound.play()
                         }
                     }
                 }
@@ -236,14 +267,14 @@ ActivityBase {
                         if(lock2.state == 'close' &&
                                 door1.state == 'close' &&
                                 lock1.state == 'close') {
-                            activity.audioEffects.play(activity.url + 'lock.wav')
+                            lockSound.play()
                             lock2.state = 'open'
                             water.state = 'up'
                         } else if(lock2.state == 'open') {
-                            activity.audioEffects.play(activity.url + 'lock.wav')
+                            lockSound.play()
                             lock2.state = 'close'
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            crashSound.play()
                         }
                     }
                 }
@@ -271,13 +302,13 @@ ActivityBase {
                                 water.state == 'down') {
                             door1.state = 'open'
                             leftLight.state = 'green'
-                            activity.audioEffects.play(activity.url + 'door_open.wav')
+                            doorOpenSound.play()
                         } else if(door1.state == 'open') {
                             door1.state = 'close'
                             leftLight.state = 'red'
-                            activity.audioEffects.play(activity.url + 'door_close.wav')
+                            doorCloseSound.play()
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            crashSound.play()
                         }
                     }
                 }
@@ -304,13 +335,13 @@ ActivityBase {
                                 water.state == 'up') {
                             door2.state = 'open'
                             rightLight.state = 'green'
-                            activity.audioEffects.play(activity.url + 'door_open.wav')
+                            doorOpenSound.play()
                         } else if(door2.state == 'open') {
                             door2.state = 'close'
                             rightLight.state = 'red'
-                            activity.audioEffects.play(activity.url + 'door_close.wav')
+                            doorCloseSound.play()
                         } else {
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            crashSound.play()
                         }
                     }
                 }
@@ -438,7 +469,7 @@ ActivityBase {
                             boat.state = "left"
 
                         if(prevState !== boat.state)
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
+                            waterSound.play()
 
                     }
                 }
