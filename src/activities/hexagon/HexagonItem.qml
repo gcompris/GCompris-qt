@@ -17,7 +17,6 @@ import GCompris 1.0
 
 Item {
     id: hexagon
-    property GCSfx audioEffects
     property ParticleSystemStar particles
     property alias color: softCanvas.color
     property bool hasStrawberry: false
@@ -100,7 +99,7 @@ Item {
             border.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svg"
-            audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+            items.winSound.play()
             Activity.strawberryFound()
             particleLoader.item.burst(40)
         } else {

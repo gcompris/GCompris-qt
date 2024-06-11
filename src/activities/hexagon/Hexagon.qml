@@ -40,6 +40,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias hexagonModel: hexagonModel
+            property alias winSound: winSound
         }
 
         onStart: Activity.start(main, items)
@@ -52,6 +53,11 @@ ActivityBase {
                 if(block)
                     block.touched()
             }
+        }
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
         }
 
         MultiPointTouchArea {
@@ -73,7 +79,6 @@ ActivityBase {
             parent: rootItem
 
             HexagonItem {
-                audioEffects: activity.audioEffects
                 ix: m_ix
                 iy: m_iy
                 nbx: m_nbx
