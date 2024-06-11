@@ -87,7 +87,7 @@ ActivityBase {
             property alias score: score
             property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
-            property GCSfx audioEffects: activity.audioEffects
+            property alias badAnswerSound: badAnswerSound
             property alias locale: background.locale
             property alias textinput: textinput
             property bool inputLocked: false
@@ -108,6 +108,11 @@ ActivityBase {
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         //instruction rectangle
         Rectangle {

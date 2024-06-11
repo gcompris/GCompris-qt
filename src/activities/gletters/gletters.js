@@ -456,7 +456,7 @@ function appendRandomWord(word) {
 function audioCrashPlay() {
     if(successRate > 0.5)
         successRate -= 0.1
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+    items.badAnswerSound.play()
 }
 
 function nextLevel() {
