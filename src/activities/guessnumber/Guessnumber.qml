@@ -60,6 +60,11 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        GCSoundEffect {
+            id: helicopterSound
+            source: "qrc:/gcompris/src/activities/guessnumber/resource/helicopter.wav"
+        }
+
         // the cave image needs to be aligned on the right to always see the exit
         Image {
             source: "resource/cave.svg"
@@ -114,7 +119,7 @@ ActivityBase {
             id: numpad
             onAnswerChanged: {
                 if(answer && answerArea.userEntry != answer)
-                    activity.audioEffects.play('qrc:/gcompris/src/activities/guessnumber/resource/helicopter.wav')
+                    helicopterSound.play()
                 answerArea.userEntry = answer
             }
             maxDigit: ("" + items.currentMax).length
