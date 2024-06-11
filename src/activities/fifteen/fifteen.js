@@ -189,7 +189,7 @@ function processPressedKey(event) {
         items.bonus.good('flower')
     }
     else if(event.accepted)
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+        items.flipSound.play()
 
 }
 

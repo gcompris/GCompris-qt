@@ -43,7 +43,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
+            property alias flipSound: flipSound
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -57,6 +57,12 @@ ActivityBase {
         onStop: { Activity.stop() }
         
         property int pieceSize: Math.round(blueFrame.width * 0.222)
+
+
+        GCSoundEffect {
+            id: flipSound
+            source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
+        }
 
         Image {
             id: blueFrame
@@ -157,7 +163,7 @@ ActivityBase {
                             bonus.good('flower')
                         }
                         else
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+                            flipSound.play()
                     }
                 }
             }
