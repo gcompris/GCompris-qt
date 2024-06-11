@@ -42,7 +42,6 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -72,6 +71,21 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: flipSound
+            source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
 
         GCText {
             id: textMessage
@@ -282,7 +296,7 @@ ActivityBase {
                 Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
                 function swap() {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                    flipSound.play()
                     if(chessboard.rotation == 180)
                         chessboard.rotation = 0
                         else
@@ -402,9 +416,9 @@ ActivityBase {
                 var toPiece = getPieceAt(to)
 
                 if(moves.jumps.length !== 0)
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                    smudgeSound.play()
                 else
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                    scrollSound.play()
 
                 toPiece.hide(from)
                 movingPiece = fromPiece
