@@ -197,6 +197,7 @@ function reverseCardsIfNeeded() {
             if(cardLeft === 0) { // no more cards in the level
                 if(items.withTux) {
                     if (items.player2Score.playerScore < items.player1Score.playerScore) {
+                        items.winSound.play()
                         youWon()
                     }
                     else {
@@ -204,13 +205,14 @@ function reverseCardsIfNeeded() {
                     }
                 }
                 else {
+                    items.winSound.play()
                     youWon()
                 }
             } else {
                 if(items.withTux && items.tuxTurn) {
                     tuxPlay()
                 } else {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
+                    items.winSound.play()
                 }
             }
 

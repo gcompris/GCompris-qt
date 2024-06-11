@@ -27,7 +27,6 @@ Flipable {
     property bool tuxTurn
 
     property GCAudio audioVoices
-    property GCSfx audioEffects
 
     signal stop
 
@@ -150,7 +149,7 @@ Flipable {
         card.isShown = true
         items.selectionCount++
         animationTimer.start()
-        audioEffects.play(Activity.url + "card_flip.wav")
+        items.flipSound.play()
     }
 
     function selectionReady() {

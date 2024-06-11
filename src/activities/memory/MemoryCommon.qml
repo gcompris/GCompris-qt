@@ -56,7 +56,8 @@ ActivityBase {
             id: items
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property GCSfx audioEffects: activity.audioEffects
+            property alias winSound: winSound
+            property alias flipSound: flipSound
             property bool withTux: activity.withTux
             property int playerCount: 1
             property bool tuxTurn: false
@@ -85,6 +86,16 @@ ActivityBase {
 
         onStop: {
             Activity.stop();
+        }
+
+        GCSoundEffect {
+            id: flipSound
+            source: Activity.url + "card_flip.wav"
+        }
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
         }
 
         ListModel {
@@ -126,7 +137,6 @@ ActivityBase {
                 width: grid.cellWidth - grid.anchors.margins
                 height: grid.cellHeight - grid.anchors.margins
                 audioVoices: activity.audioVoices
-                audioEffects: activity.audioEffects
                 onIsFoundChanged: background.keyNavigationVisible = false
             }
             interactive: false
