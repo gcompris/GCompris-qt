@@ -134,6 +134,12 @@ function reload() {
     for(var i = 0 ; i < items.dataModel.count ; ++ i) {
         items.dataModel.itemAt(i).starVisible = false;
     }
+
+    items.currentQuestion = getCurrentQuestion();
+
+    if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
+        repeat();
+    }
 }
 
 function repeat() {
