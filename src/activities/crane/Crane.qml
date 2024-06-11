@@ -50,7 +50,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias winSound: winSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias board: board
@@ -111,6 +111,12 @@ ActivityBase {
             down.opacity = 1
             left.opacity = 1
             right.opacity = 1
+        }
+
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
         }
 
         Item {
