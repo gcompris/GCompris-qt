@@ -34,13 +34,13 @@ Image {
             animWin.start()
             score.currentSubLevel += 1
             score.playWinAnimation()
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+            goodAnswerSound.play()
         } else {
             if(audioSrc && item.playAudioOnError) {
                 item.audioVoices.play(audioSrc)
             }
             crossAnim.start()
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+            badAnswerSound.play()
         }
     }
 

@@ -53,6 +53,8 @@ ActivityBase {
             id: items
             property Item activityPage: activity
             property alias background: background
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias containerModel: containerModel
@@ -94,6 +96,16 @@ ActivityBase {
         Keys.onDownPressed: container.moveCurrentIndexDown();
         Keys.onUpPressed: container.moveCurrentIndexUp();
         Keys.onTabPressed: if(repeatItem.visible) repeatItem.clicked();
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         ListModel {
             id: containerModel
