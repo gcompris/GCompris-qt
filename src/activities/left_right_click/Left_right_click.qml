@@ -39,7 +39,7 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property GCSfx audioEffects: activity.audioEffects
+            property alias badAnswerSound: badAnswerSound
             property alias animalListModel: animalListModel
             property alias animalCardsArea: animalCardsArea
             property double animalWidth: animalCardsArea.animalCardSize
@@ -55,6 +55,11 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         Image {
             id: hillArea

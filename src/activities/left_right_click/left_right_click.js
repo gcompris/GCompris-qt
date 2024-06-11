@@ -99,5 +99,5 @@ function incrementCounter() {
 }
 
 function playWrongClickSound() {
-    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/crash.wav')
+    items.badAnswerSound.play();
 }
