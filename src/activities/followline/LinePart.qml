@@ -15,7 +15,6 @@ Item {
     id: part
     property QtObject items
     property int index: 0
-    property GCSfx audioEffects
     property bool isPart: true
 
     Rectangle {
@@ -51,7 +50,7 @@ Item {
                 if(part.items.currentLock <= part.index && !Activity.movedOut) {
                     part.items.currentLock = part.index
                     if(part.items.currentLock >= part.items.lastLock) {
-                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
+                        items.waterSound.play()
                         items.background.win()
                     } else {
                         Activity.playAudioFx();

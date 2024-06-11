@@ -118,7 +118,6 @@ function createLinePart(index, x, y, width, height, rotation) {
     var part = component.createObject(
                 items.lineArea,
                 {
-                    "audioEffects": items.audioEffects,
                     "x": x,
                     "y": y,
                     "width": width,
@@ -162,6 +161,6 @@ function cursorMovedOut() {
 }
 
 function playAudioFx() {
-    if(!items.audioEffects.playing)
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav");
+    if(!items.darkenSound.playing)
+        items.darkenSound.play()
 }

@@ -40,7 +40,8 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias waterSound: waterSound
+            property alias darkenSound: darkenSound
             property alias fireman: fireman
             property alias lineArea: lineArea
             property alias fire: fire
@@ -57,6 +58,16 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: waterSound
+            source: "qrc:/gcompris/src/core/resource/sounds/water.wav"
+        }
+
+        GCSoundEffect {
+            id: darkenSound
+            source: "qrc:/gcompris/src/core/resource/sounds/darken.wav"
+        }
 
         Image {
             id: fireman
@@ -162,7 +173,7 @@ ActivityBase {
                                 items.currentLock = part.index
                                 if(items.currentLock >= items.lastLock) {
                                     background.win()
-                                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
+                                    waterSound.play()
                                 } else {
                                     Activity.playAudioFx()
                                 }
