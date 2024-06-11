@@ -23,7 +23,6 @@ Item {
     property int frames
     property int frameSize: 320
     property int animCount: 0
-    property GCSfx audioEffects
     readonly property int moveRight: 0
     readonly property int moveLeft: 1
     readonly property int moveDown: 2
@@ -95,7 +94,7 @@ Item {
         if (eating == true) {
             creatureImage.restart()
             creatureImage.resume()
-            creature.audioEffects.play("qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav")
+            items.eatSound.play()
         }
     }
 

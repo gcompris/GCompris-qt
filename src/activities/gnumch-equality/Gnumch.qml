@@ -108,6 +108,8 @@ ActivityBase {
             property alias bonus: bonus
             property int currentLevel: activity.currentLevel
             property string operator
+            property alias eatSound: eatSound
+            property alias smudgeSound: smudgeSound
         }
 
         onStart: {
@@ -143,6 +145,17 @@ ActivityBase {
 
         onWidthChanged: {
             positionTimer.restart()
+        }
+
+
+        GCSoundEffect {
+            id: eatSound
+            source: "qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav"
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
         Timer {
@@ -258,7 +271,6 @@ ActivityBase {
 
             Muncher {
                 id: muncher
-                audioEffects: activity.audioEffects
             }
 
             Item {
@@ -323,7 +335,6 @@ ActivityBase {
                                                           grid.cellWidth,
                                                           grid.cellHeight)
                         var reggie = comp.createObject(monsters, {
-                                                           audioEffects: activity.audioEffects,
                                                            direction: direction,
                                                            player: muncher,
                                                            index: result[0],

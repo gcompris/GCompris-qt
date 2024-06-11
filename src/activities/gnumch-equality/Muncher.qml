@@ -48,9 +48,8 @@ Creature {
     }
 
     onIndexChanged: {
-        audioEffects.stop()
         if(opacity == 1)
-            audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
+            items.smudgeSound.play()
 
         if (monsters.isThereAMonster(index)) {
             getCaught(-1)
