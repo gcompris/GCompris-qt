@@ -45,7 +45,8 @@ ActivityBase {
             id: items
             property Item activityPage: activity
             property GCAudio audioVoices: activity.audioVoices
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -108,6 +109,16 @@ ActivityBase {
         ReadyButton {
             id: iAmReady
             onClicked: background.itemsVisible();
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Item {
