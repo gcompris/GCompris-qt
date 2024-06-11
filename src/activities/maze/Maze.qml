@@ -49,7 +49,7 @@ ActivityBase {
             property alias mazeRows: maze.rows
             property alias mazeColumns: maze.columns
             property alias mazeRepeater: mazeRepeater.model
-            property GCSfx audioEffects: activity.audioEffects
+            property alias brickSound: brickSound
             property alias message: message
             property int playerx: 0
             property int playery: 0
@@ -68,6 +68,11 @@ ActivityBase {
         onStop: {
             timeAutoMove.stop()
             Activity.stop()
+        }
+
+        GCSoundEffect {
+            id: brickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
         Rectangle {
