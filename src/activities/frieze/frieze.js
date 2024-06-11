@@ -220,10 +220,10 @@ function checkResult() {
         for (var j= 0; j < friezeSize; j++) {
             items.solutionModel.setProperty(j, "shown_", true);
         }
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.goodAnswerSound.play();
         items.score.playWinAnimation();
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        items.badAnswerSound.play();
         items.errorRectangle.startAnimation();
         items.buttonsBlocked = false;
     }

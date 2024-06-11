@@ -41,8 +41,8 @@ ActivityBase {
             property alias background: background
             property alias bonus: bonus
             property alias score: score
-            property GCSfx audioEffects: activity.audioEffects
-
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property var levels: activity.datasets
             property int subLevelCount: 0
             property int currentLevel: activity.currentLevel
@@ -74,6 +74,16 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         ListModel { id: solutionModel }
         ListModel { id: answerModel }
