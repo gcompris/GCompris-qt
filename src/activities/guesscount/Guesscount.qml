@@ -54,7 +54,7 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property int result: 0
             property alias warningDialog: warningDialog
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
             property bool clearOperations: false
             property bool solved: false
             property var levelArr: Data.defaultOperators
@@ -70,6 +70,12 @@ ActivityBase {
                  else
                      Activity.initLevel();
         onStop: { Activity.stop() }
+
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
 
         JsonParser {
             id: parser

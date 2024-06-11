@@ -169,7 +169,7 @@ function childrenChange(item, operationRow)
 function goodAnswer() {
     items.score.currentSubLevel += 1
     items.score.playWinAnimation()
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+    items.goodAnswerSound.play()
 }
 
 function configDone(array) {
