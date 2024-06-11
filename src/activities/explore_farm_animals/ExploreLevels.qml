@@ -77,7 +77,8 @@ ActivityBase {
             id: items
 
             property GCAudio audioVoices: activity.audioVoices
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property Item main: activity.main
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -110,7 +111,6 @@ ActivityBase {
 
         onStart: {
             activity.audioVoices.done.connect(voiceDone)
-            activity.audioEffects.done.connect(voiceDone)
             Activity.start(items, url, numberOfLevels)
             if(activity.needsVoices === true) {
                 if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
@@ -128,6 +128,16 @@ ActivityBase {
                 items.bonusPlaying = false;
                 Activity.repeat();
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Repeater {
