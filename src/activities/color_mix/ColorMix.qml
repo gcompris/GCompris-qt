@@ -68,6 +68,11 @@ ActivityBase {
             Activity.stop()
         }
 
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
         Rectangle {
             id: target
             height: width / 2.5
@@ -234,7 +239,7 @@ ActivityBase {
                     items.buttonsBlocked = true
                     items.score.currentSubLevel += 1
                     items.score.playWinAnimation()
-                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+                    winSound.play()
                     helpMessage.text = ""
                 }
             }
