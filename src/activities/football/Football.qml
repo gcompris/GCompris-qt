@@ -48,7 +48,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias timer: timer
-            property GCSfx audioEffects: activity.audioEffects
+            property alias brickSound: brickSound
         }
 
         onStart: { Activity.start(items) }
@@ -58,6 +58,11 @@ ActivityBase {
             moveUp.to = 0
             moveDown.to = background.height * 0.75 - tux.height
             moveTux.restart()
+        }
+
+        GCSoundEffect {
+            id: brickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
         Image {
@@ -97,7 +102,7 @@ ActivityBase {
                             line.opacity = 0
                             Activity.startMotion(point1.x - ball.halfSize,
                                                  point1.y - ball.halfSize)
-                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                            brickSound.play()
                         }
                         onPressed: line.opacity = 1
                         onTouchUpdated: {
