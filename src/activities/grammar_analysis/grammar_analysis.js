@@ -267,11 +267,11 @@ function checkResult() {
             ok &= (wordCard.expected === wordCard.proposition)
     }
     if (ok){
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.goodAnswerSound.play()
         items.currentExercise += 1
         items.score.playWinAnimation()
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.badAnswerSound.play()
         items.errorRectangle.startAnimation()
     }
 }

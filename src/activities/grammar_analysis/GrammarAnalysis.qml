@@ -55,7 +55,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias locale: background.locale
             property alias score: score
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property bool buttonsBlocked: false
             // Qml models
             property alias syntaxModel: syntaxModel
@@ -91,6 +92,16 @@ ActivityBase {
 
         onStart: { Activity.start(items, grammarMode, translationMode) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         File {
             id: file
