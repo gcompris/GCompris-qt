@@ -53,7 +53,8 @@ ActivityBase {
             property Item activityPage: activity
             property int currentLevel: activity.currentLevel
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property alias wordsModel: wordsModel
             property int currentLetterCase: ApplicationSettings.fontCapitalization
             property int currentMode: normalModeWordCount
@@ -86,6 +87,16 @@ ActivityBase {
 
         onHeightChanged: {
                 animateX.restart();
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         DialogChooseLevel {
