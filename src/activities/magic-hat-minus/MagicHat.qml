@@ -54,7 +54,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias smudgeSound: smudgeSound
             property int currentLevel: activity.currentLevel
             readonly property var levels: activity.datasets
             property alias bonus: bonus
@@ -62,6 +62,11 @@ ActivityBase {
             property alias introductionText: introText
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
         Rectangle {
@@ -240,7 +245,6 @@ ActivityBase {
             height: (background.height - bar.height * 1.2) * 0.2
             width: height
             starsSize: background.starSize
-            audioEffects: activity.audioEffects
         }
 
         BarButton {

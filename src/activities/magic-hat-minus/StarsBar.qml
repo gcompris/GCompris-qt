@@ -81,7 +81,7 @@ Item {
     }
 
     function moveStars() {
-        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
+        items.smudgeSound.play()
         for(var i=0; i<nbStarsOn; i++) {
             repeaterStars.itemAt(i).starToMove.state = "MoveUnderHat"
         }
