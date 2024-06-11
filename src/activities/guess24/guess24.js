@@ -271,7 +271,6 @@ function checkResult() {
         return
     }
     items.steps.text = stepsStack.join("\n")
-    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
     items.cardsModel.setProperty(items.currentValue, "value_", String(result))
     if (operationsStack.length === 3) {
         items.buttonsBlocked = true;
@@ -279,12 +278,14 @@ function checkResult() {
             items.cancelButton.visible = false
             items.score.currentSubLevel++
             items.score.playWinAnimation()
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+            items.goodAnswerSound.play()
         } else {
             items.errorRectangle.startAnimation()
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+            items.badAnswerSound.play()
             items.hintButton.visible = true
         }
+    } else {
+        items.bleepSound.play()
     }
 }
 
@@ -311,7 +312,7 @@ function popOperation() {
     items.currentValue = items.cardsBoard.currentIndex = lastAction.from
     items.animationCard.action = "backward"
     items.animationCard.state = "moveto"
-    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+    items.smudgeSound.play()
     items.hintButton.visible = false
     if (operationsStack.length < 1)
         items.cancelButton.visible = false

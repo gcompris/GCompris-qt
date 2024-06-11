@@ -58,7 +58,10 @@ ActivityBase {
             property alias score: score
             property alias errorRectangle: errorRectangle
             property var levels: activity.datasets
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
+            property alias bleepSound: bleepSound
+            property alias smudgeSound: smudgeSound
             property alias jsonParser: jsonParser
             property int currentValue: 0
             property int currentOperator: -1
@@ -83,6 +86,27 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         JsonParser { id: jsonParser }
+
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: bleepSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
 
         ListModel {
             id: cardsModel
@@ -259,7 +283,7 @@ ActivityBase {
                         SequentialAnimation {
                             alwaysRunToEnd: true
                             PauseAnimation { duration: 800 }
-                            ScriptAction { script: { audioEffects.play('qrc:/gcompris/src/core/resource/sounds/crash.wav') } }
+                            ScriptAction { script: { badAnswerSound.play() }}
                             PauseAnimation { duration: 800 }
                             ScriptAction { script: { Activity.popOperation() }}
                         }
