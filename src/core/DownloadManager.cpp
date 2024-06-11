@@ -902,7 +902,7 @@ bool DownloadManager::checkForUpdates()
     }
 
     DownloadJob *job = new DownloadJob();
-    for (const QString &file: filenames)
+    for (const QString &file: filenames) {
         QUrl url = getUrlForFilename(file);
         qDebug() << "Scheduling resource for update: " << url;
         job->queue.append(url);
