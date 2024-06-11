@@ -62,7 +62,7 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias trainModel: trainModel
             property GCAudio audioVoices: activity.audioVoices
-            property GCSfx audioEffects: activity.audioEffects
+            property alias winSound: winSound
             property alias parser: parser
             property alias questionItem: questionItem
             property alias repeatItem: repeatItem
@@ -89,6 +89,21 @@ ActivityBase {
         }
 
         onStop: Activity.stop()
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        GCSoundEffect {
+            id: crashSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
 
         Item {
             id: eventHandler
@@ -305,28 +320,28 @@ ActivityBase {
         function moveErrorRectangle(clickedItem) {
             errorRectangle.parent = clickedItem
             errorRectangle.startAnimation()
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+            crashSound.play()
         }
 
         function handleKeys(event) {
             if(!items.keyNavigationMode) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                smudgeSound.play();
                 items.keyNavigationMode = true;
                 if(items.lastSelectedIndex > 0 && items.lastSelectedIndex < trainModel.count)
                     train.currentIndex = items.lastSelectedIndex;
                 else
                     train.currentIndex = 0;
             } else if(event.key === Qt.Key_Right) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                smudgeSound.play();
                 train.moveCurrentIndexRight();
             } else if(event.key === Qt.Key_Left) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                smudgeSound.play();
                 train.moveCurrentIndexLeft();
             } else if(event.key === Qt.Key_Up) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                smudgeSound.play();
                 train.moveCurrentIndexUp();
             } else if(event.key === Qt.Key_Down) {
-                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                smudgeSound.play();
                 train.moveCurrentIndexDown();
             } else if(event.key === Qt.Key_Space && activity.audioVoices.playbackState != 1) {
                 items.buttonsBlocked = true;

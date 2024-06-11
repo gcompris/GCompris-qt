@@ -183,7 +183,7 @@ function checkAnswer(index) {
     if (modelEntry.letter === currentLetter) {
         items.score.currentSubLevel++;
         items.score.playWinAnimation();
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.winSound.play();
         return true
     } else {
         return false
