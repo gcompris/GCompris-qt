@@ -92,9 +92,10 @@ Image {
 
     function playSound()
     {
-        activity.audioEffects.play(
-                    ix % 2 ? "qrc:/gcompris/src/activities/erase/resource/eraser1.wav" :
-                             "qrc:/gcompris/src/activities/erase/resource/eraser2.wav")
+        if (ix % 2)
+            eraser1Sound.play()
+        else
+            eraser2Sound.play()
     }
 
 }

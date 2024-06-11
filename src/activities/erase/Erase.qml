@@ -49,7 +49,9 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias okButton: okButton
-            property GCSfx audioEffects: activity.audioEffects
+            property alias winSound: winSound
+            property alias eraser1Sound: eraser1Sound
+            property alias eraser2Sound: eraser2Sound
             property int nbSubLevel: 6
             property int currentSubLevel: 0
             property int mode: 1 // default is automatic
@@ -72,6 +74,21 @@ ActivityBase {
                 background.verticalAlignment = Image.AlignBottom
             else
                 background.verticalAlignment = Image.AlignVCenter
+        }
+
+        GCSoundEffect {
+            id: winSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: eraser1Sound
+            source: "qrc:/gcompris/src/activities/erase/resource/eraser1.wav"
+        }
+
+        GCSoundEffect {
+            id: eraser2Sound
+            source: "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"
         }
 
         MultiPointTouchArea {

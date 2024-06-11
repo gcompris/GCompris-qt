@@ -138,7 +138,7 @@ function previousLevel() {
 function blockKilled() {
     if(++killedBlocks === createdBlocks) {
         items.currentSubLevel += 1
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.winSound.play()
         items.score.playWinAnimation()
         if(items.mode === 2) {
             items.okButton.levelFinished = true
