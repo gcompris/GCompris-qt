@@ -114,10 +114,21 @@ ActivityBase {
             property string instructionText: ""
             property alias score: score
             property alias errorRectangle: errorRectangle
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int mode: 1 // default is automatic
             property bool buttonsBlocked: false
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         DropArea {

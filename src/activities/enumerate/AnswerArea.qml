@@ -39,6 +39,11 @@ Rectangle {
         }
     ]
 
+    GCSoundEffect {
+        id: winSound
+        source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
+    }
+
     property string imgPath
 
     // True when the value is entered correctly
@@ -46,7 +51,7 @@ Rectangle {
 
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
 
-    onValidChanged: valid ? Activity.playAudio() : null
+    onValidChanged: valid ? winSound.play() : null
 
     // A top gradient
     Rectangle {

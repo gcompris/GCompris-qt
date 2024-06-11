@@ -105,7 +105,7 @@ function checkAnswersAuto() {
     items.buttonsBlocked = true;
     items.score.currentSubLevel += 1;
     items.score.playWinAnimation();
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+    items.goodAnswerSound.play();
 }
 
 function checkAnswers() {
@@ -126,9 +126,9 @@ function checkAnswers() {
         items.buttonsBlocked = true;
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.goodAnswerSound.play();
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        items.badAnswerSound.play();
         items.errorRectangle.startAnimation();
     }
 }
@@ -186,10 +186,6 @@ function enableOkButton() {
             return;
     }
     items.okButton.enabled = true;
-}
-
-function playAudio() {
-    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
 }
 
 function focusAnswerInput() {
