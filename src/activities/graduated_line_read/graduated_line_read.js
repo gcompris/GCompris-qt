@@ -120,7 +120,7 @@ function moveLeft() {
     if (items.score.isWinAnimationPlaying || items.buttonsBlocked)
         return
     if (items.solutionGrad > 1) {
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav')
+        items.clickSound.play()
         items.solutionGrad--
     }
 }
@@ -129,7 +129,7 @@ function moveRight() {
     if (items.score.isWinAnimationPlaying || items.buttonsBlocked)
         return
     if (items.solutionGrad < items.rulerModel.count - 2) {
-        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav')
+        items.clickSound.play()
         items.solutionGrad++
     }
 }
@@ -150,11 +150,11 @@ function checkResult() {
         break
     }
     if (success) {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.goodAnswerSound.play();
         items.currentSubLevel ++;
         items.score.playWinAnimation();
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.badAnswerSound.play();
         items.buttonsBlocked = true;
         items.errorRectangle.startAnimation();
     }
@@ -263,7 +263,7 @@ function handleKeys(key) {
             items.numPad.currentIndex = mapToPad[key]
             items.numPad.currentItem.state = "pressed"
         } else {
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+            items.smudgeSound.play()
         }
 
         break

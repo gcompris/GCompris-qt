@@ -44,8 +44,10 @@ ActivityBase {
             property alias score: score
             property alias numPad: numPad
             property var levels: activity.datasets
-            property GCSfx audioEffects: activity.audioEffects
-
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
+            property alias clickSound: clickSound
+            property alias smudgeSound: smudgeSound
             property int solutionGrad: 0                // Solution's graduation
             property int orientation: Qt.LeftToRight      // Updated with ApplicationSettings in start() function
 
@@ -63,6 +65,26 @@ ActivityBase {
 
         onStart: { Activity.start(items, activityMode) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: clickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/audioclick.wav"
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
 
         Rectangle {
             id: instructionArea
@@ -415,7 +437,7 @@ ActivityBase {
                         Transition {
                             to: "pressed"
                             SequentialAnimation {
-                                ScriptAction { script: audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav') }
+                                ScriptAction { script: clickSound.play() }
                                 ColorAnimation { duration: 100 }
                                 ScriptAction { script: state = "" }
                             }
