@@ -190,7 +190,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -8847,34 +8847,34 @@ msgid "Learn algorithms."
 msgstr "ისწავლეთ ალგორითმები."
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "შეყვანა: გადაამოწმეთ პასუხი"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
@@ -16544,7 +16544,7 @@ msgstr "ივარჯიშეთ მიმატებაში და გა
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
-msgstr ""
+msgstr "მიმატება და გამოკლება."
 
 #. Help manual
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:24
@@ -16571,7 +16571,7 @@ msgstr ""
 #: activities/memory-math-add-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game against Tux"
-msgstr ""
+msgstr "მიმატების დამახსოვრების თამაში ტუქსთან"
 
 #. Help title
 #: activities/memory-math-add-tux/ActivityInfo.qml:17
@@ -16660,7 +16660,7 @@ msgstr "9-ის მიმატების ცხრილი."
 #: activities/memory-math-add/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition memory game"
-msgstr ""
+msgstr "მიმატების დამახსოვრების თამაში"
 
 #. Help title
 #: activities/memory-math-add/ActivityInfo.qml:17
@@ -16672,7 +16672,7 @@ msgstr ""
 #: activities/memory-math-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game against Tux"
-msgstr ""
+msgstr "გამოკლების დამახსოვრების თამაში ტუქსთან"
 
 #. Help title
 #: activities/memory-math-div-tux/ActivityInfo.qml:17
@@ -16767,7 +16767,7 @@ msgstr "9-ის გაყოფის ცხრილი."
 #: activities/memory-math-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division memory game"
-msgstr ""
+msgstr "გაყოფის მეხსიერების თამაში"
 
 #. Help title
 #: activities/memory-math-div/ActivityInfo.qml:17
@@ -16785,7 +16785,7 @@ msgstr "გაყოფა"
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game against Tux"
-msgstr ""
+msgstr "გამოკლების დამახსოვრების თამაში ტუქსთან"
 
 #. Help title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:17
@@ -16874,7 +16874,7 @@ msgstr "9-ის გამოკლების ცხრილი."
 #: activities/memory-math-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction memory game"
-msgstr ""
+msgstr "გამოკლების მეხსიერების თამაში"
 
 #. Help title
 #: activities/memory-math-minus/ActivityInfo.qml:17
@@ -17032,7 +17032,7 @@ msgstr "9-ზე გამრავლების ცხრილი."
 #: activities/memory-math-mult/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game"
-msgstr ""
+msgstr "გამრავლების მეხსიერების თამაში"
 
 #. Help title
 #: activities/memory-math-mult/ActivityInfo.qml:17
@@ -17044,7 +17044,7 @@ msgstr ""
 #: activities/memory-sound-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game against Tux"
-msgstr ""
+msgstr "ხმის დამახსოვრების თამაში ტუქსთან"
 
 #. Help title
 #: activities/memory-sound-tux/ActivityInfo.qml:17
@@ -17057,7 +17057,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your audio memory."
-msgstr ""
+msgstr "ავარჯიშეთ თქვენი ხმოვანი მეხსიერება."
 
 #. Help manual
 #: activities/memory-sound-tux/ActivityInfo.qml:23
@@ -17075,7 +17075,7 @@ msgstr ""
 #: activities/memory-sound/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Audio memory game"
-msgstr ""
+msgstr "ხმის დამახსოვრების თამაში"
 
 #. Help title
 #: activities/memory-sound/ActivityInfo.qml:17

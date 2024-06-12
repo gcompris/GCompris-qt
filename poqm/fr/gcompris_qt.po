@@ -201,7 +201,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -10214,7 +10214,7 @@ msgid "Learn algorithms."
 msgstr "Apprends les algorithmes."
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
@@ -10223,27 +10223,27 @@ msgstr ""
 "Reproduis la frise du haut. Dans certains niveaux, tu devras soit compléter "
 "la frise, soit la reproduire après l'avoir mémorisée."
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "Flèches gauche et droite : choisir une forme"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr "Espace : ajouter la forme à la frise"
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "Retour arrière ou suppression : retirer la dernière forme de la frise"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Entrée : pour valider tes réponses"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab : basculer entre l'édition de la frise et la vue du modèle"

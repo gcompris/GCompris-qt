@@ -194,7 +194,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -9822,7 +9822,7 @@ msgid "Learn algorithms."
 msgstr "അൽഗൊരിതങ്ങൾ പഠിക്കാൻ."
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
@@ -9831,27 +9831,27 @@ msgstr ""
 "മുകളിൽ തന്നിരിക്കുന്ന മാതൃക പുനർനിർമ്മിക്കുക. ചില ഘട്ടങ്ങളിൽ, മാതൃക പൂർത്തിയാക്കുകയോ അത് "
 "ഓർമ്മിച്ചെടുത്ത് പുനർനിർമ്മിക്കുകയോ ചെയ്യേണ്ടി വരും."
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "ഇടതും വലതും ആരോകൾ: ഒരു ഇനം തിരഞ്ഞെടുക്കാൻ"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr "സ്പെയ്സ്: തിരഞ്ഞെടുത്ത ഇനം ഉത്തരത്തിൽ ചേർക്കാൻ"
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "ബാക്ക്സ്പെയ്സോ ‍ഡിലീറ്റോ: ഉത്തരത്തിൽ നിന്നും അവസാനത്തെ ഇനം കളയാൻ"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "എന്റർ: ഉത്തരം സ്ഥിരീകരിക്കാൻ"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "ടാബ്: ഉത്തരം എഡിറ്റു ചെയ്യലും മാതൃക കാണലും തമ്മിൽ മാറാൻ"

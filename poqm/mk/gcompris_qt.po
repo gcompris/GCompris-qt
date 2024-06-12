@@ -246,7 +246,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -10365,14 +10365,14 @@ msgid "Learn algorithms."
 msgstr "Учење броеви"
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Left and Right arrows: turn left and right"
@@ -10380,7 +10380,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "Лева и десна стрелка: Врти кон лево и десно"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Space: select an item"
@@ -10388,7 +10388,7 @@ msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr "Празно место: изберете ставка"
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Backspace or Delete: undo"
@@ -10396,7 +10396,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "Backspace или Delete: Вратете ја акцијата назад"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Enter: validate your answer"
@@ -10404,7 +10404,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Ентер: потврдете го вашиот одговор"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Space: switch between invisible and visible modes"

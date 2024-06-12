@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-05-29 11:27+0200\n"
+"PO-Revision-Date: 2024-06-07 11:14+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -192,7 +192,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -1288,7 +1288,7 @@ msgstr "Logické asociace"
 #: activities/algorithm/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
-msgstr ""
+msgstr "Dokonči uspořádání ovoce."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
@@ -1327,7 +1327,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
 "(standing up), or diagonally."
-msgstr ""
+msgstr "Vytvoř řadu 4 žetonů buď vodorovně, svisle, nebo úhlopříčně."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -2357,7 +2357,7 @@ msgstr "Dokonči hádanku"
 #: activities/babyshapes/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
-msgstr ""
+msgstr "Přetáhni tvary na jejich příslušné cíle."
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
@@ -5313,6 +5313,9 @@ msgid ""
 "light you add, the lighter the resulting color becomes. The primary colors "
 "of light are red, green and blue."
 msgstr ""
+"Míchání barev světla je pravým opakem míchání barev. Čím více světla "
+"přidáte, tím světlejší bude výsledná barva. Základní barvy světla jsou "
+"červená, zelená a modrá."
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -6018,6 +6021,9 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
+"Digitální obvody fungují s pouze dvěma stavy: 0 a 1. Jsou to základní prvky "
+"počítačové techniky. V praxi se pro 0 používá napětí blízké zemnímu a pro 1 "
+"se používá napětí zdroje obvodu."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -6095,6 +6101,9 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
+"Digitální obvody fungují s pouze dvěma stavy: 0 a 1. Jsou to základní prvky "
+"počítačové techniky. V praxi se pro 0 používá napětí blízké zemnímu a pro 1 "
+"se používá napětí zdroje obvodu."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -6524,7 +6533,7 @@ msgstr "Spoj tečky a nakresli písmena."
 #: activities/drawletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
-msgstr ""
+msgstr "Nauč se kreslit písmena zábavným způsobem."
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
@@ -6548,7 +6557,7 @@ msgstr "Spoj tečky a nakreslete čísla od 0 do 9."
 #: activities/drawnumbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr ""
+msgstr "Nauč se kreslit čísla zábavným způsobem."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -9431,7 +9440,7 @@ msgid "Learn algorithms."
 msgstr "Nauč se algoritmy."
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
@@ -9440,27 +9449,27 @@ msgstr ""
 "Zopakuj řadu zobrazenou nahoře. V některých úrovních si budeš nejdříve muset "
 "řadu zapamatovat a pak teprve doplnit nebo zopakovat."
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "Šipky vlevo a vpravo: výběr znaku"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr "Mezerník: vložit vybraný znak do řady"
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "Backspace nebo Delete: odstranit poslední znak z řady"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: zkontrolovat tvoji odpověď"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulátor: přepínání mezi úpravou řady a zobrazením modelu"
@@ -15774,6 +15783,10 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
+"Zobrazuje se desetinné číslo. Přesuň šipku pro výběr části lišty, poté "
+"přesuň vybranou část lišty jednotek do prázdné oblasti. Opakuj tyto kroky "
+"dokud počet přesunutých lišt neodpovídá zobrazenému desetinnému číslu. Pak "
+"klikni na tlačítko OK pro ověření tvé odpovědi."
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -15912,13 +15925,13 @@ msgstr "Mezi 1 a 5."
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr ""
+msgstr "Sčítání s čísly desítkové soustavy"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
-msgstr ""
+msgstr "Nauč se sčítání s čísly desítkové soustavy."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19

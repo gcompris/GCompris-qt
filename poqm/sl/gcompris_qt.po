@@ -194,7 +194,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -9738,7 +9738,7 @@ msgid "Learn algorithms."
 msgstr "Naučite se algoritmov."
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
@@ -9747,27 +9747,27 @@ msgstr ""
 "Reproducirajte friz na vrhu. Na nekaterih ravneh boste morda morali "
 "dokončati friz ali ga reproducirati, potem ko ste si ga zapomnili."
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "Puščici levo in desno: izberite žeton"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr "Preslednica: dodajte izbrani žeton k frizu"
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "Backspace ali Delete: odstranite zadnji žeton s friza"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Enter: preverite odgovor"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulator: preklop urejanjem friza in pogledom modela"

@@ -243,7 +243,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -10482,14 +10482,14 @@ msgid "Learn algorithms."
 msgstr "Foghlaim digití"
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Left and Right arrows: turn left and right"
@@ -10497,7 +10497,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "Saigheada ar Chlé agus ar Dheis: tiontaigh ar chlé agus ar dheis"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Space: select an item"
@@ -10505,7 +10505,7 @@ msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr "Spás: roghnaigh mír"
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Backspace: delete the last digit in your answer"
@@ -10513,7 +10513,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "Cúlspás: scrios an digit dheireanach i do fhreagra"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Enter: validate your answer"
@@ -10521,7 +10521,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "Iontráil: dearbhaigh freagra"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""

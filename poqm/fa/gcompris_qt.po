@@ -236,7 +236,7 @@ msgstr ""
 #: activities/enumerate/ActivityInfo.qml:25
 #: activities/fifteen/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:25
-#: activities/frieze/ActivityInfo.qml:24
+#: activities/frieze/ActivityInfo.qml:23
 #: activities/gnumch-equality/ActivityInfo.qml:28
 #: activities/gnumch-factors/ActivityInfo.qml:28
 #: activities/gnumch-inequality/ActivityInfo.qml:27
@@ -9141,14 +9141,14 @@ msgid "Learn algorithms."
 msgstr "یادگیری جمع ها."
 
 #. Help manual
-#: activities/frieze/ActivityInfo.qml:23
+#: activities/frieze/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Reproduce the frieze on top. On some levels, you may have to complete the "
 "frieze or to reproduce it after you've memorized it."
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:25
+#: activities/frieze/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Left and Right arrows: turn left and right"
@@ -9156,12 +9156,12 @@ msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
 msgstr "فلش چپ و راست: گردش به راست و چپ"
 
-#: activities/frieze/ActivityInfo.qml:26
+#: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
 msgstr ""
 
-#: activities/frieze/ActivityInfo.qml:27
+#: activities/frieze/ActivityInfo.qml:26
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Backspace: delete the last digit in your answer"
@@ -9169,7 +9169,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
 msgstr "پسبرد(بک اسپیس): آخرین رقم در جواب خود را پاک کن"
 
-#: activities/frieze/ActivityInfo.qml:28
+#: activities/frieze/ActivityInfo.qml:27
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Enter: validate your answer"
@@ -9177,7 +9177,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
 msgstr "وارد کن: جواب خود را تایید کن"
 
-#: activities/frieze/ActivityInfo.qml:29
+#: activities/frieze/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr ""
