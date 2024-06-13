@@ -48,7 +48,9 @@ ActivityBase {
             property alias background: background
             property bool isVertical: background.width < background.height - bar.height * 1.2
             property alias bonus: bonus
-            property GCSfx audioEffects: activity.audioEffects
+            property alias harbor1Sound: harbor1Sound
+            property alias harbor2Sound: harbor2Sound
+            property alias waterSound: waterSound
             // we initialize it to -1, so onStart it forces a layout refresh when it's set to 0
             property int currentLevel: -1
             property int numberOfLevel: 3
@@ -69,6 +71,9 @@ ActivityBase {
 
         onStart: items.currentLevel = Core.getInitialLevel(items.numberOfLevel);
         onStop: {
+            harbor1Sound.stop()
+            harbor2Sound.stop()
+            waterSound.stop()
             hydro.item.stopTimer();
             if(wind.item)
                 wind.item.stopTimer();
@@ -117,6 +122,26 @@ ActivityBase {
                     }
                     break
             }
+        }
+
+        GCSoundEffect {
+            id: harbor1Sound
+            source: "qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav"
+        }
+
+        GCSoundEffect {
+            id: harbor2Sound
+            source: "qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav"
+        }
+
+        GCSoundEffect {
+            id: waterSound
+            source: "qrc:/gcompris/src/core/resource/sounds/water.wav"
+        }
+
+        GCSoundEffect {
+            id: bleepSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
         }
 
         Item {
@@ -219,7 +244,7 @@ ActivityBase {
                 Transition {
                     from: "sunDown"; to: "sunUp";
                     ScriptAction { script: {
-                            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
+                            bleepSound.play();
                             hydro.item.vaporAnimLoop = true;
                             hydro.item.vaporIsUp = true;
                             hydro.item.cloudIsUp = true;

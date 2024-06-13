@@ -91,9 +91,9 @@ Item {
             Transition {
                 from: "tuxboatLeft"; to: "tuxboatRight";
                 SequentialAnimation {
-                    ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav") }
+                    ScriptAction { script: items.harbor1Sound.play() }
                     NumberAnimation { property: "tuxboat.anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
-                    ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav") }
+                    ScriptAction { script: items.harbor2Sound.play() }
                     NumberAnimation { property: "tuxboat.opacity"; easing.type: Easing.InOutQuad; duration: 200 }
                     ScriptAction { script: {
                             boatparked.opacity = 1;
@@ -318,7 +318,7 @@ Item {
         }
         function up() {
             isRaining = true;
-            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav');
+            items.waterSound.play();
             opacity = 1;
             rainAnim.start();
         }
