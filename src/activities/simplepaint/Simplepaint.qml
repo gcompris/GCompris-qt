@@ -199,6 +199,11 @@ ActivityBase {
             }
         }
 
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
+
         Item {
             id: rootItem
             anchors.fill: parent
@@ -354,7 +359,7 @@ ActivityBase {
                             anchors.fill: parent
                             hoverEnabled: true
                             onClicked: {
-                                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav');
+                                scrollSound.play();
                                 items.keyboardControls = false;
                                 items.selectedColor = modelData;
                                 items.current_color = items.colors.indexOf(modelData);
