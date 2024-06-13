@@ -80,7 +80,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias multipleStaff: multipleStaff
             property alias doubleOctave: doubleOctave
