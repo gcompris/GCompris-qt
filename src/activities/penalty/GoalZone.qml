@@ -7,6 +7,8 @@
 import QtQuick 2.12
 import './penalty.js' as Activity
 
+import "../../core"
+
 Rectangle {
     anchors.left: parent.left
     anchors.right: parent.right
@@ -16,6 +18,16 @@ Rectangle {
     property var progress: undefined
     state: "INITIAL"
     color: "transparent"
+
+    GCSoundEffect {
+        id: brickSound
+        source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
+    }
+
+    GCSoundEffect {
+        id: flipSound
+        source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
+    }
 
     MouseArea {
         anchors.fill: parent
@@ -43,7 +55,7 @@ Rectangle {
             progress.anim.running = false;
 
             /* Play sound */
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+            brickSound.play()
 
             /* Success or not */
             if(progress.ratio < 100) {
@@ -59,7 +71,7 @@ Rectangle {
             progress.anim.running = true;
 
             /* Play sound */
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+            flipSound.play()
         }
     }
 }
