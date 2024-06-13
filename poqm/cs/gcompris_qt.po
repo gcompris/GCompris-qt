@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-07 11:14+0200\n"
+"PO-Revision-Date: 2024-06-12 14:46+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -18398,7 +18398,7 @@ msgstr "Výběr jazyka"
 #: activities/menu/ConfigurationItem.qml:115
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Povolit automatické stahování/aktualizace vnějších sdrojů"
+msgstr "Povolit automatické stahování/aktualizace vnějších zdrojů"
 
 #: activities/menu/ConfigurationItem.qml:145
 msgctxt "ConfigurationItem|"

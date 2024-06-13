@@ -1542,6 +1542,8 @@ msgid ""
 "Warning! Simulator might produce meaningless results or no result with this "
 "circuit."
 msgstr ""
+"გაფრთხილება! სიმულატორი, ალბათ, ამ წრედისთვის უაზრო შედეგებს გამოიტანს, ან "
+"საერთოდ არ."
 
 #: activities/analog_electricity/components/Battery.qml:19
 msgctxt "Battery|"
@@ -1598,6 +1600,7 @@ msgctxt "Connection|"
 msgid ""
 "A simple connection point to connect several wires in an electrical circuit."
 msgstr ""
+"მარტივი შესაერთებელი წერტილი ელექტრულ წრედში რამდენიმე სადენის შესაერთებლად."
 
 #: activities/analog_electricity/components/RedLed.qml:19
 msgctxt "RedLed|"
@@ -1651,6 +1654,7 @@ msgid ""
 "Switch can connect or disconnect the conducting path in an electrical "
 "circuit."
 msgstr ""
+"გადამრთველს შეუძლია შეაერთოს ან განამხოლოვოს დენის ბილიკი ელექტროწრედში."
 
 #: activities/analog_electricity/components/Switch2.qml:19
 msgctxt "Switch2|"
@@ -1706,6 +1710,8 @@ msgid ""
 "A bulb glows when current travels through it. If there is a gap in the path, "
 "the current cannot travel and the electrical devices will not work."
 msgstr ""
+"ნათურა ანათებს, როცა მასში დენი გადის. თუ ბილიკში გამოტოვებაა, დენი ვერ "
+"იდენს და ელექტრომოწყობილობები არ იმუშავებს."
 
 #: activities/analog_electricity/TutorialDataset.qml:102
 msgctxt "TutorialDataset|"
@@ -1714,6 +1720,9 @@ msgid ""
 "a closed circuit. Wires can be used to connect devices and create the "
 "circuit."
 msgstr ""
+"გადაადგილების ბილიკს წრედი ეწოდება. ელექტრომოწყობილობებს, მხოლოდ, დახურულ "
+"წრედში შეუძლიათ მუშაობა. მოწყობილობების ერთმანეთზე გადასაერთებლად და წრედის "
+"შესაქმნელად სადენები შეგიძლიათ, გამოიყენოთ."
 
 #: activities/analog_electricity/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
@@ -1721,6 +1730,8 @@ msgid ""
 "For a detailed description of battery and bulb, click on those and then "
 "click on the info button."
 msgstr ""
+"ელემენტის და ნათურის დეტალური აღწერის სანახავად დააწკაპუნეთ მათზე, რომ "
+"მონიშნოთ, შემდეგ კი ინფორმაციის ღილაკზე."
 
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
@@ -1770,6 +1781,8 @@ msgctxt "TutorialDataset|"
 msgid ""
 "Too much current in an electrical circuit can damage the connected devices."
 msgstr ""
+"წრედში არსებულ მეტისმეტად დიდ დენს მიერთებული მოწყობილობების დაზიანება "
+"შეუძლია."
 
 #: activities/analog_electricity/TutorialDataset.qml:134
 msgctxt "TutorialDataset|"
@@ -1808,6 +1821,8 @@ msgid ""
 "A simple connector can be used to connect several wires in an electrical "
 "circuit."
 msgstr ""
+"მარტივი კონექტორი, რომელიც ელექტროწრედში რამდენიმე სადენის შესაერთებლად "
+"გამოიყენება."
 
 #: activities/analog_electricity/TutorialDataset.qml:164
 msgctxt "TutorialDataset|"
@@ -2259,12 +2274,12 @@ msgstr ""
 #: activities/babyshapes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr ""
+msgstr "ძაღლი მოწოდებულია ანდრე კონესის მიერ GPL ლიცენზიით"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Drag and Drop the items to match them."
-msgstr ""
+msgstr "გადაათრიეთ და დაყარეთ შესაბამისი ელემენტები."
 
 #: activities/babyshapes/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
@@ -2284,17 +2299,17 @@ msgstr "პოლ გოგენი, არეარეა - 1992"
 #: activities/babyshapes/resource/board/board7_1.qml:14
 msgctxt "board7_1|"
 msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
-msgstr ""
+msgstr "პიტერ ბრეიგელ უფროსი, გლეხების ქორწილი - 1568"
 
 #: activities/babyshapes/resource/board/board7_2.qml:14
 msgctxt "board7_2|"
 msgid "The Lady and the Unicorn - XVe century"
-msgstr ""
+msgstr "ქალბატონი და მარტორქა - XVe საუკუნე"
 
 #: activities/babyshapes/resource/board/board7_3.qml:14
 msgctxt "board7_3|"
 msgid "Vincent van Gogh, Bedroom in Arles - 1888"
-msgstr ""
+msgstr "ვინსენტ ვანგოგი, საწოლი ოთახი არლში - 1888"
 
 #: activities/babyshapes/resource/board/board7_4.qml:14
 msgctxt "board7_4|"
@@ -2352,7 +2367,7 @@ msgstr "წაიყვანეთ ბურთი კარისკენ ყ
 #: activities/balancebox/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Practice fine motor skills and basic counting."
-msgstr ""
+msgstr "ავარჯიშეთ ზუსტი მოტორული უნარები და საბაზისო თვლის უნარი."
 
 #. Help manual
 #: activities/balancebox/ActivityInfo.qml:26
@@ -2592,7 +2607,7 @@ msgstr "აირჩიეთ თქვენი სირთულე"
 #: activities/bargame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (against Tux)"
-msgstr ""
+msgstr "ბურთულები რიგში (ტუქსის წინააღმდეგ)"
 
 #. Help title
 #: activities/bargame/ActivityInfo.qml:17
@@ -2728,7 +2743,7 @@ msgstr ""
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
-msgstr ""
+msgstr "რა არის %1-ის ორობითი წარმოდგენა?"
 
 #: activities/binary_bulb/resource/tutorial4.qml:29
 msgctxt "tutorial4|"
@@ -3379,7 +3394,7 @@ msgstr ""
 #: activities/categorization/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
 msgid "Discover a category, grouping items together"
-msgstr ""
+msgstr "აღმოაჩინეთ კატეგორია ელემენტების ერთად დაჯგუფების საშუალებით"
 
 #. Activity title
 #: activities/categorization/ActivityInfo.qml:15
@@ -3391,7 +3406,7 @@ msgstr "კატეგორიზაცია"
 #: activities/categorization/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Categorize the items into correct and incorrect groups."
-msgstr ""
+msgstr "დაალაგეთ ელემენტები სწორ და არასწორ ჯგუფებად."
 
 #. Help goal
 #: activities/categorization/ActivityInfo.qml:20
@@ -3403,7 +3418,7 @@ msgstr ""
 #: activities/categorization/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can drag items using a mouse or touchscreen."
-msgstr ""
+msgstr "შეგიძლიათ გადაათრიოთ ელემენტები თაგუნათი ან სენსორული ეკრანით."
 
 #. Help manual
 #: activities/categorization/ActivityInfo.qml:24
@@ -5351,7 +5366,7 @@ msgstr ""
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "The images are from Wikimedia Commons."
-msgstr ""
+msgstr "ამ გამოსახულებების წყაროა Wikimedia Commons."
 
 #: activities/details/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5406,12 +5421,12 @@ msgstr "შატო დე შენონსოს პანორამა, �
 #: activities/details/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Windmill in Sønderho, Fanø, Denmark"
-msgstr ""
+msgstr "წისქვლი სონდეროში, ფანო, დანია"
 
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
 msgid "Nagoya Castle, Aichi Prefecture, Japan."
-msgstr ""
+msgstr "ნაგოიის სასახლე, აიჩის პრეფექტურა, იაპონია."
 
 #: activities/details/resource/board/board19_0.qml:14
 msgctxt "board19_0|"
@@ -5426,7 +5441,7 @@ msgstr "ვინცენტ ვან გოგი, სენტ-პოლი�
 #: activities/details/resource/board/board20_0.qml:14
 msgctxt "board20_0|"
 msgid "Castle Neuschwanstein at Schwangau, Bavaria, Germany"
-msgstr ""
+msgstr "ნოიშვანშტაინის სასახლე შვანგაუში, ბავარია, გერმანია"
 
 #: activities/details/resource/board/board21_0.qml:14
 msgctxt "board21_0|"
@@ -5443,27 +5458,27 @@ msgstr ""
 #: activities/details/resource/board/board3_0.qml:14
 msgctxt "board3_0|"
 msgid "Vincent van Gogh, The Church at Auvers-sur-Oise - 1890"
-msgstr ""
+msgstr "ვინსენტ ვან გოგი, ეკლესია ოვერ-სიურ-უაზში - 1890"
 
 #: activities/details/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Vincent van Gogh, Painter on His Way to Work - 1888"
-msgstr ""
+msgstr "ვინსენტ ვან გოგი, მხატვარი მიდის სამსახურში - 1888"
 
 #: activities/details/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Vincent van Gogh, The Harvest - 1888"
-msgstr ""
+msgstr "ვინსენტ ვან გოგი, მოსავალი - 1888"
 
 #: activities/details/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Vincent van Gogh, Cafe Terrace at Night - 1888"
-msgstr ""
+msgstr "ვინსენტ ვან გოგი, კაფე ტერასა ღამით - 1888"
 
 #: activities/details/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Vincent van Gogh, The Night Café - 1888"
-msgstr ""
+msgstr "ვინსენტ ვან გოგი, ღამის კაფე - 1888"
 
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
@@ -5485,7 +5500,7 @@ msgstr "ციფრული ელექტროობა"
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr ""
+msgstr "ციფრული ლოგიკური სქემის შექმნა და სიმულაცია"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -5574,6 +5589,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "You can click on a switch component to open and close it."
 msgstr ""
+"შეგიძლიათ დააწკაპუნოთ გადამრთველის კომპონენტზე მის გასაღებად ან დასახურად."
 
 #: activities/digital_electricity/components/AndGate.qml:21
 msgctxt "AndGate|"
