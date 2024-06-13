@@ -41,6 +41,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property alias brickSound: brickSound
+            property alias bleepSound: bleepSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property var model
@@ -67,6 +69,16 @@ ActivityBase {
                     problem.hideProblem = true
                 }
             }
+        }
+
+        GCSoundEffect {
+            id: brickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
+        }
+
+        GCSoundEffect {
+            id: bleepSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
         }
 
         Rectangle {

@@ -23,7 +23,6 @@ Image {
     sourceSize.width: width
     sourceSize.height: width
 
-    property GCSfx audioEffects: activity.audioEffects
     property alias repeater: repeater
     property alias circleRepeater: circleRepeater
     property int good: 0
@@ -78,7 +77,7 @@ Image {
         anchors.fill: parent
         enabled: !background.startedHelp
         onClicked: {
-            audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
+            items.brickSound.play()
             wrongAnim.start()
             wrong.x = mouseX - wrong.width/2
             wrong.y = mouseY - wrong.height/2
@@ -141,7 +140,7 @@ Image {
                 enabled: !background.startedHelp
                 onClicked: {
                     Activity.photoClicked(card,index)
-                    audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
+                    items.bleepSound.play()
                 }
             }
         }
