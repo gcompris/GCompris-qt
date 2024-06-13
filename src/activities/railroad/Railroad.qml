@@ -46,7 +46,8 @@ ActivityBase {
             property int currentLevel: activity.currentLevel 
             property alias bonus: bonus
             property alias score: score
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property alias trainAnimationTimer: trainAnimationTimer
             property alias sampleList: sampleList
             property alias listModel: listModel
@@ -66,7 +67,10 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: {
+            trainSound.stop()
+            Activity.stop()
+        }
         // Needed to get keyboard focus on IntroMessage
         Keys.forwardTo: [introMessage]
 
@@ -75,8 +79,28 @@ ActivityBase {
             items.currentKeyZone.handleKeys(event);
         }
 
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
+        GCSoundEffect {
+            id: trainSound
+            source: Activity.resourceURL + "sounds/train.wav"
+        }
+
         function playSoundFX() {
-            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+            smudgeSound.play();
         }
 
         // Countdown timer
@@ -86,7 +110,7 @@ ActivityBase {
             interval: 4000
             onTriggered: {
                 items.animateFlow.start()
-                activity.audioEffects.play(Activity.resourceURL + 'sounds/train.wav')
+                trainSound.play()
             }
         }
 
@@ -153,7 +177,7 @@ ActivityBase {
                         }
                         if(globalCoordinates.y > (background.height / 8)) {
                             // Remove it if dropped in the lower section
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                            smudgeSound.play()
                             listModel.remove(listModel.count - 1)
                         }
                     }
@@ -392,7 +416,7 @@ ActivityBase {
                     // total no. of wagons in correct answer + 2, before dropping the wagon
                     if(globalCoordinates.y <= (background.height / 12.5) &&
                             listModel.count < Activity.dataset["WagonsInCorrectAnswers"][items.currentLevel] + 2) {
-                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                        smudgeSound.play()
                         var dropIndex = Activity.getDropIndex(globalCoordinates.x)
                         Activity.addWagon(uniqueID, dropIndex);
                     }

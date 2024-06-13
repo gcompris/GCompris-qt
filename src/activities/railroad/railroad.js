@@ -146,15 +146,15 @@ function checkAnswer() {
         if(isSolution == true) {
             items.score.currentSubLevel += 1;
             items.score.playWinAnimation();
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+            items.goodAnswerSound.play();
         }
         else {
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+            items.badAnswerSound.play();
             items.errorRectangle.startAnimation();
         }
     }
     else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        items.badAnswerSound.play();
         items.errorRectangle.startAnimation();
     }
 }
