@@ -59,7 +59,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -143,12 +142,12 @@ ActivityBase {
                     stopMorseSounds();
                     score.currentSubLevel++;
                     score.playWinAnimation();
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                    goodAnswerSound.play();
                 }
                 else {
                     stopMorseSounds();
                     errorRectangle.startAnimation();
-                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                    badAnswerSound.play();
                 }
             }
 
@@ -181,6 +180,16 @@ ActivityBase {
                     items.check();
                 }
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         QtObject {
