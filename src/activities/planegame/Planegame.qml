@@ -72,7 +72,7 @@ ActivityBase {
             property alias plane: plane
             property alias fileChecker: fileChecker
             property GCAudio audioVoices: activity.audioVoices
-            property GCSfx audioEffects: activity.audioEffects
+            property alias crashSound: crashSound
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
             property bool showTutorial: activity.showTutorial
@@ -95,6 +95,11 @@ ActivityBase {
 
         File {
             id: fileChecker
+        }
+
+        GCSoundEffect {
+            id: crashSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         // Tutorial section starts
