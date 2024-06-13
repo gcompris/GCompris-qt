@@ -41,7 +41,9 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
+            property alias walkSound: walkSound
             readonly property string resourceUrl: activity.resourceUrl
             readonly property var levels: activity.datasets
             property alias background: background
@@ -86,6 +88,21 @@ ActivityBase {
                 // Move Tux
                 Activity.moveTuxToIceBlock()
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/darken.wav"
+        }
+
+        GCSoundEffect {
+            id: walkSound
+            source: items.resourceUrl + "icy_walk.wav"
         }
 
         Timer {

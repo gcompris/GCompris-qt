@@ -83,7 +83,7 @@ function moveTux(numberOfMovesToDo) {
     }
     else if (tuxIceBlockNumberGoal != fishIndex) {
         items.clockPosition--
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
+        items.badAnswerSound.play()
         if (items.clockPosition === 0) {
             lost()
             return
@@ -110,12 +110,13 @@ function moveTuxToNextIceBlock() {
         items.tux.rotation = 180
 
     moveTuxToIceBlock()
+    items.walkSound.play()
 
     var fishPos = fishIndex % iceBlocksLayout.length
     //if tux reaches its position + dice number
     if (tuxIceBlockNumber == fishPos) {
         items.tuxIsMoving = false;
-
+        items.goodAnswerSound.play()
         // if last fish reached
         if (--numberOfFish == 0) {
             won()
@@ -123,14 +124,11 @@ function moveTuxToNextIceBlock() {
             items.clockPosition++
             return
         }
-
-        items.audioEffects.play('qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav')
         calculateNextPlaceFishToReach()
         placeFishToReachBool = true
         return
     }
 
-    items.audioEffects.play(items.resourceUrl + 'icy_walk.wav')
     //if tux reaches its position + dice number before reaching the fish, calculation was wrong
     if (tuxIceBlockNumber == tuxIceBlockNumberGoal) {
         items.clockPosition--
