@@ -58,7 +58,7 @@ ActivityBase {
             property alias guessColumn: guessColumn
             property alias currentRepeater: currentRepeater
             property string mode: "color"
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
             property bool buttonsBlocked: false
         }
 
@@ -66,6 +66,11 @@ ActivityBase {
         onStop: {
             chooserTimer.stop()
             Activity.stop()
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
         }
 
         Column {
