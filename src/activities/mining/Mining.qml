@@ -51,6 +51,16 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        GCSoundEffect {
+            id: pickSound
+            source: Activity.url + "pickaxe.wav"
+        }
+
+        GCSoundEffect {
+            id: rainbowSound
+            source: Activity.url + "realrainbow.wav"
+        }
+
         Image {
                 id: miningBg
                 source: Activity.url + "rockwall.svg"
@@ -161,7 +171,7 @@ ActivityBase {
 
                             signal hit
                             onHit: {
-                                activity.audioEffects.play(Activity.url + "pickaxe.wav")
+                                pickSound.play()
                                 background.gotIt = true
                                 items.collectedNuggets++
                                 tuto.setState("Unzoom")
@@ -196,7 +206,7 @@ ActivityBase {
                             opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
-                                activity.audioEffects.play(Activity.url + "realrainbow.wav")
+                                rainbowSound.play()
                             }
 
                             ParallelAnimation {
