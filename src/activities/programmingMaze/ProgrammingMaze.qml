@@ -63,7 +63,7 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property GCSfx audioEffects: activity.audioEffects
+            property alias brickSound: brickSound
             readonly property var levels: activity.datasets
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
@@ -140,6 +140,11 @@ ActivityBase {
                 runCodeMouseArea.executeCode()
             else
                 Activity.initLevel()
+        }
+
+        GCSoundEffect {
+            id: brickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
         ListModel {
