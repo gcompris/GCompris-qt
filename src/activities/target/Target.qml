@@ -59,7 +59,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
@@ -104,6 +105,21 @@ ActivityBase {
             id: arrowRepeater
         }
 
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: arrowSound
+            source: Activity.url + "arrow.wav"
+        }
+
         Image {
             id: cross
             anchors.centerIn: parent
@@ -117,7 +133,7 @@ ActivityBase {
             anchors.fill: parent
             enabled: items.currentArrow != items.nbArrow && !items.arrowFlying && !items.inputLocked
             onClicked: {
-                activity.audioEffects.play(Activity.url + 'arrow.wav')
+                arrowSound.play()
                 items.arrowFlying = true
                 if(items.currentArrow != items.nbArrow) {
                     arrowRepeater.itemAt(items.currentArrow).opacity = 1
