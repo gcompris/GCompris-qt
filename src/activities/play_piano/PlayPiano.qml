@@ -84,7 +84,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property alias multipleStaff: multipleStaff
             property alias piano: piano
             property int currentLevel: activity.currentLevel
@@ -107,6 +108,16 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property string clefType: (items.bar.level <= 5) ? "Treble" : "Bass"
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         Timer {
             id: introductoryAudioTimer

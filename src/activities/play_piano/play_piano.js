@@ -89,9 +89,9 @@ function answerFeedback() {
     if(incorrectAnswers.length === 0) {
         items.score.currentSubLevel += 1
         items.score.playWinAnimation()
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.goodAnswerSound.play()
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.badAnswerSound.play()
         items.buttonsBlocked = false
     }
 }
