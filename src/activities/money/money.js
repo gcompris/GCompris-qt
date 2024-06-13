@@ -210,20 +210,20 @@ function checkAnswer() {
             items.bonus.good("flower")
         else if(items.mode === 2) {
             items.errorRectangle.startAnimation();
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+            items.badAnswerSound.play();
         }
     } else {
         if(paid === (dataset[items.currentLevel].paid - priceTotal).toFixed(2))
             items.bonus.good("flower")
         else if(items.mode === 2) {
             items.errorRectangle.startAnimation();
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+            items.badAnswerSound.play();
         }
     }
 }
 
 function pay(index) {
-    items.audioEffects.play(url + "money1.wav")
+    items.paySound.play()
     // Add it to the anwser
     items.answerModel.append(items.pocketModel.get(index))
 
@@ -234,7 +234,7 @@ function pay(index) {
 }
 
 function unpay(index) {
-    items.audioEffects.play(url + "money2.wav")
+    items.unpaySound.play()
     // Add it to the pocket
     items.pocketModel.append(items.answerModel.get(index))
 

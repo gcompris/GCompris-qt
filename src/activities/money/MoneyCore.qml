@@ -46,7 +46,9 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias badAnswerSound: badAnswerSound
+            property alias paySound: paySound
+            property alias unpaySound: unpaySound
             property alias answerModel: answerArea.pocketModel
             property alias pocketModel: pocketArea.pocketModel
             property alias store: store
@@ -68,6 +70,21 @@ ActivityBase {
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: paySound
+            source: Activity.url + "money1.wav"
+        }
+
+        GCSoundEffect {
+            id: unpaySound
+            source: Activity.url + "money2.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
 
         Column {
             id: columnLayout
