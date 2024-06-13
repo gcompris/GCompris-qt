@@ -105,14 +105,24 @@ ActivityBase {
                 if ((rest == 0 && ok == items.totalChildren) || (rest == okRest && ok == items.totalChildren))  {
                     score.currentSubLevel++
                     score.playWinAnimation()
-                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+                    goodAnswerSound.play()
                     return
                 }
             }
 
             //else => bad
             errorRectangle.startAnimation()
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+            badAnswerSound.play()
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         //center zone
