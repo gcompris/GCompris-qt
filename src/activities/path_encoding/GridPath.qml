@@ -36,7 +36,8 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             readonly property string resourceUrl: activity.resourceUrl
             readonly property string mode: activity.mode
             readonly property string movement: activity.movement
@@ -60,6 +61,16 @@ ActivityBase {
 
         onHeightChanged: {
             sizeChangedTimer.restart()
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Timer {
