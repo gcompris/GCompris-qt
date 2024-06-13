@@ -52,7 +52,6 @@ Item {
     property real effY: car.yPos * car.blockSize
     property real effWidth: (mode == "COLOR" || car.isHorizontal) ? car.width : car.height
     property real effHeight: (mode == "COLOR" || car.isHorizontal) ? car.height : car.width
-    property GCSfx audioEffects
 
     width: (mode == "IMAGE" || isHorizontal) ? (size * blockSize) : blockSize
     height: (mode == "IMAGE" || isHorizontal) ? blockSize : (size * blockSize)
@@ -87,7 +86,7 @@ Item {
                     if (!Activity.isMoving) {
                         Activity.isMoving = true;
                         car.isMoving = true;
-                        car.audioEffects.play(Activity.baseUrl + "car.wav")
+                        Activity.items.carSound.play();
                         rectTouch.startX = point1.x;
                         rectTouch.startY = point1.y;
                     }
@@ -135,7 +134,7 @@ Item {
                     if (!Activity.isMoving) {
                         Activity.isMoving = true;
                         car.isMoving = true;
-                        car.audioEffects.play(Activity.baseUrl + "car.wav")
+                        Activity.items.carSound.play();
                         imageTouch.startX = imagePoint.x;
                         imageTouch.startY = imagePoint.y;
                     }

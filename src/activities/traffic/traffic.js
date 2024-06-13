@@ -253,7 +253,7 @@ function updateCarPosition(car, newX, newY)
             haveWon = true;
             items.score.currentSubLevel += 1;
             items.score.playWinAnimation();
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+            items.goodAnswerSound.play();
             return;
         }
     } else {
@@ -339,9 +339,7 @@ function drawCar(car)
         "goal": goal,
         "color": color,
         "source": source,
-        "isHorizontal": isHorizontal,
-        "audioEffects": items.audioEffects
-
+        "isHorizontal": isHorizontal
     });
     if (carObject == null)
         console.error("traffic: Error creating Car object!");

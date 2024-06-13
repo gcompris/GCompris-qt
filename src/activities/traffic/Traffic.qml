@@ -38,7 +38,8 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias carSound: carSound
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -50,6 +51,16 @@ ActivityBase {
 
         onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: carSound
+            source: Activity.baseUrl + "car.wav"
+        }
 
         Rectangle {
             color: "#9EC282"
