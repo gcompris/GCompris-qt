@@ -67,6 +67,11 @@ ActivityBase {
             Activity.stop()
         }
 
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
+
         Item {
             id: topPanel
             anchors {
@@ -264,7 +269,7 @@ ActivityBase {
                 }
 
                 onStopped: {
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                    scrollSound.play()
                     animationSeed.visible = false
                     animationSeed.toPit.seeds = animationSeed.toPit.seeds + 1
                     if(items.forceStop  || items.gameOver)
