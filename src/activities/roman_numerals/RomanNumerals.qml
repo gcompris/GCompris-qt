@@ -219,9 +219,9 @@ ActivityBase {
                 if(feedback.value == items.questionValue) {
                     score.currentSubLevel += 1;
                     score.playWinAnimation();
-                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+                    goodAnswerSound.play();
                 } else {
-                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+                    badAnswerSound.play();
                     errorRectangle.startAnimation()
                 }
             }
@@ -237,6 +237,16 @@ ActivityBase {
                 if(!items.buttonsBlocked)
                     items.check()
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         QtObject {
