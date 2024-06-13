@@ -90,15 +90,6 @@ Item {
     property GCAudio audioVoices
 
     /**
-     * type:GCSfx
-     * The global audio item for audio effects.
-     *
-     * Use it to play your effects.
-     * @sa GCSfx audioEffects
-     */
-    property GCSfx audioEffects
-
-    /**
      * type:GCAudio
      * The global audio item for background music.
      *
@@ -211,7 +202,6 @@ Item {
     }
     onStopSounds: {
         if(!isMenu) {
-            audioEffects.stop();
             audioVoices.clearQueue();
             audioVoices.stop();
         }

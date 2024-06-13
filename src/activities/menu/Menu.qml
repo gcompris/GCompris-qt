@@ -607,7 +607,6 @@ ActivityBase {
                             'activityInfo': ActivityInfoTree.currentActivity,
                             'levelFolder': currentLevels,
                             'audioVoices': audioVoices,
-                            'audioEffects': audioEffects,
                             'loading': loading
                         })
                         if (activityLoader.status == Loader.Ready) loadActivity()

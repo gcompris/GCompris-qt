@@ -117,10 +117,10 @@ Window {
         if (ApplicationInfo.isMobile && applicationState !== Qt.ApplicationActive) {
             backgroundMusic.pause();
             audioVoices.stop();
-            audioEffects.stop();
         }
         else if (ApplicationInfo.isMobile && !isMusicalActivityRunning) {
             backgroundMusic.resume();
+
         }
     }
 
@@ -163,12 +163,6 @@ Window {
                 delayedWelcomeTimer.start();
             }
         }
-    }
-
-    GCSfx {
-        id: audioEffects
-        muted: !ApplicationSettings.isAudioEffectsEnabled && !main.isMusicalActivityRunning
-        volume: ApplicationSettings.audioEffectsVolume
     }
 
     GCAudio {
@@ -449,7 +443,6 @@ Window {
         Component.onCompleted: {
             push("qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name, {
                 'audioVoices': audioVoices,
-                'audioEffects': audioEffects,
                 'loading': loading,
                 'backgroundMusic': backgroundMusic
             })

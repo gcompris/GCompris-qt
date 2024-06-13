@@ -23,8 +23,9 @@ import GCompris 1.0
  */
 SoundEffect {
     id: gcSoundEffect
-    muted: !ApplicationSettings.isAudioEffectsEnabled && !isMusicalActivityRunning
+    muted: (!ApplicationSettings.isAudioEffectsEnabled && !isMusicalActivityRunning) || mobileAndInactive
     volume: ApplicationSettings.audioEffectsVolume
+    readonly property bool mobileAndInactive: ApplicationInfo.isMobile && applicationState !== Qt.ApplicationActive
 
     /**
      * Emitted when playback of sound has finished.
