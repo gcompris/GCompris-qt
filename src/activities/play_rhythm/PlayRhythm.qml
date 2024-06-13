@@ -43,7 +43,8 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -90,6 +91,21 @@ ActivityBase {
             } else if(event.key === Qt.Key_Up || event.key === Qt.Key_Down) {
                 bpmChangeDelay.restart();
             }
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: clickSound
+            source: "qrc:/gcompris/src/activities/play_rhythm/resource/click.wav"
         }
 
         Rectangle {
@@ -280,7 +296,7 @@ ActivityBase {
                     onStarted: metronomeNeedle.rotation = 12
                     onStopped: metronomeNeedle.rotation = 0
                     ScriptAction {
-                        script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                        script: clickSound.play()
                     }
                     RotationAnimator {
                         target: metronomeNeedle
@@ -290,7 +306,7 @@ ActivityBase {
                         duration: metronomeSpeed
                     }
                     ScriptAction {
-                        script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                        script: clickSound.play()
                     }
                     RotationAnimator {
                         target: metronomeNeedle

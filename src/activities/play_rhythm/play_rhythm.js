@@ -76,9 +76,9 @@ function answerFeedback() {
     if(!items.isWrongRhythm) {
         items.score.currentSubLevel += 1
         items.score.playWinAnimation()
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
+        items.goodAnswerSound.play()
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+        items.badAnswerSound.play()
         items.crashPlayed = true
         items.answerFeedbackTimer.restart()
     }
