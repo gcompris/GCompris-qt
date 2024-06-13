@@ -46,7 +46,9 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
+            property alias metalSound: metalSound
             property alias errorRectangle: errorRectangle
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
@@ -70,6 +72,21 @@ ActivityBase {
 
         property bool isHorizontal: background.width > background.height
         property bool scoreAtBottom: bar.width * 6 + okButton.width * 1.5 + score.width < background.width
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/win.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        GCSoundEffect {
+            id: metalSound
+            source: Activity.url + "metal_hit.wav"
+        }
 
         Image {
             id: scaleBoard
@@ -141,7 +158,6 @@ ActivityBase {
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
-                audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
                     NumberAnimation {
@@ -188,7 +204,6 @@ ActivityBase {
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
                 dropEnabledForThisLevel: items.rightDrop
-                audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
                     NumberAnimation {
@@ -210,7 +225,6 @@ ActivityBase {
             masseAreaLeft: masseAreaLeft
             masseAreaRight: masseAreaRight
             nbColumns: masseModel.count
-            audioEffects: activity.audioEffects
         }
 
         Message {

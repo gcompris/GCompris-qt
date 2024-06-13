@@ -35,7 +35,6 @@ Rectangle {
 
     property int weight: 0
 
-    property GCSfx audioEffects
 
     function init() {
         weight = 0
@@ -210,8 +209,7 @@ Rectangle {
 
                     onReleased: {
                         setAllZonesDropEnabled(true)
-                        if(masseArea.audioEffects)
-                            masseArea.audioEffects.play(Activity.url + 'metal_hit.wav')
+                        items.metalSound.play()
                         if(masseAreaLeft.dropArea.containsDrag &&
                            parent.currentMasseArea != masseAreaLeft) {
                             dropOnPlate(masseAreaLeft)
