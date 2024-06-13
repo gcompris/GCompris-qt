@@ -44,7 +44,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCSfx audioEffects: activity.audioEffects
+            property alias brushSound: brushSound
             property alias question: question
             property alias answer: answer
             property alias selector: selector
@@ -104,6 +104,16 @@ ActivityBase {
         function selectCell() {
             keyboardMode = true
             areaWithKeyboardFocus.selectCurrentCell(areaWithKeyboardFocus.currentItem)
+        }
+
+        GCSoundEffect {
+            id: brushSound
+            source: "qrc:/gcompris/src/activities/redraw/resource/brush.wav"
+        }
+
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
         }
 
         Rectangle {
@@ -436,7 +446,7 @@ ActivityBase {
                     }
 
                     function selectCurrentCell(selectedCell) {
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                        scrollSound.play()
                         items.selectedItem = selectedCell.imageName
                     }
 

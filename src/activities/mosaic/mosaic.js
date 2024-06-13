@@ -66,7 +66,7 @@ function answerSelected(index) {
     if(!items.selectedItem)
         return
 
-    items.audioEffects.play("qrc:/gcompris/src/activities/redraw/resource/brush.wav")
+    items.brushSound.play()
     answerModel[index] = items.selectedItem
     items.answer.model = answerModel
 
