@@ -234,10 +234,10 @@ function checkAnswer() {
         isAllCorrect = isAllCorrect & isRowCorrect;
     }
     if(isAllCorrect) {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav");
+        items.goodAnswerSound.play();
         items.bonus.good("flower");
     }
     else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav");
+        items.badAnswerSound.play();
     }
 }
