@@ -34,7 +34,8 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             readonly property var levels: activity.datasets
-            property GCSfx audioEffects: activity.audioEffects
+            property alias goodAnswerSound: goodAnswerSound
+            property alias badAnswerSound: badAnswerSound
             property alias score: score
             property int checkState: -1
             property int selectedPosition: -1
@@ -83,6 +84,16 @@ ActivityBase {
         Keys.onReleased: (event) => {
             keyboardMode = true
             event.accepted = false
+        }
+
+        GCSoundEffect {
+            id: goodAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
+        }
+
+        GCSoundEffect {
+            id: badAnswerSound
+            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
         Item {
