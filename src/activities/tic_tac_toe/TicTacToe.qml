@@ -62,6 +62,11 @@ ActivityBase {
         onStart: Activity.start(items, twoPlayer)
         onStop: Activity.stop()
 
+        GCSoundEffect {
+            id: smudgeSound
+            source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
+        }
+
         Image {
             id: board
             source: Activity.url + "board.svg"
@@ -161,7 +166,7 @@ ActivityBase {
             from: 0.0
             to: 1.0
             duration: 1000
-            onStarted: activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+            onStarted: smudgeSound.play()
             onStopped: { Activity.continueGame() }
         }
 
