@@ -45,7 +45,11 @@ ActivityBase {
         onStart: {}
         onStop: {
             timer.stop()
-            activity.audioEffects.stop()
+            harbor1Sound.stop()
+            harbor2Sound.stop()
+            waterSound.stop()
+            bubbleSound.stop()
+            apertSound.stop()
         }
 
         function initLevel() {
@@ -73,6 +77,36 @@ ActivityBase {
             timer.restart();
         }
 
+        GCSoundEffect {
+            id: harbor1Sound
+            source: "qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav"
+        }
+
+        GCSoundEffect {
+            id: harbor2Sound
+            source: "qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav"
+        }
+
+        GCSoundEffect {
+            id: bleepSound
+            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
+        }
+
+        GCSoundEffect {
+            id: waterSound
+            source: "qrc:/gcompris/src/core/resource/sounds/water.wav"
+        }
+
+        GCSoundEffect {
+            id: bubbleSound
+            source: "qrc:/gcompris/src/activities/watercycle/resource/bubble.wav"
+        }
+
+        GCSoundEffect {
+            id: apertSound
+            source: "qrc:/gcompris/src/activities/watercycle/resource/apert.wav"
+        }
+
         QtObject {
             id: items
             property var dataset: {
@@ -90,7 +124,6 @@ ActivityBase {
             property bool cycleDone: false
             property bool isVertical: background.width < background.height - bar.height * 1.2
             property bool textOnSide: background.width > layoutArea.width * 1.5
-            property GCSfx audioEffects: activity.audioEffects
         }
 
         IntroMessage {
@@ -250,9 +283,9 @@ ActivityBase {
                 Transition {
                     from: "tuxboatLeft"; to: "tuxboatRight";
                     SequentialAnimation {
-                        ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav") }
+                        ScriptAction { script: harbor1Sound.play() }
                         NumberAnimation { property: "tuxboat.anchors.leftMargin"; easing.type: Easing.InOutSine; duration: 15000 }
-                        ScriptAction { script: items.audioEffects.play("qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav") }
+                        ScriptAction { script: harbor2Sound.play() }
                         NumberAnimation { property: "tuxboat.opacity"; easing.type: Easing.InOutQuad; duration: 200 }
                         ScriptAction { script: {
                                 boatparked.opacity = 1;
@@ -342,7 +375,7 @@ ActivityBase {
                 Transition {
                     from: "sunDown"; to: "sunUp";
                     ScriptAction { script: {
-                            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav');
+                            bleepSound.play();
                             info.setKey('sun');
                             sun.hasRun = true;
                             vapor.animLoop = true;
@@ -539,7 +572,7 @@ ActivityBase {
                 }
             }
             function up() {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav');
+                waterSound.play();
                 info.setKey('rain');
                 opacity = 1;
                 rainAnim.start();
@@ -638,7 +671,7 @@ ActivityBase {
                 enabled: river.level > 0.2
                 anchors.fill: parent
                 onClicked: {
-                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav');
+                    bubbleSound.play();
                     info.setKey('tower');
                     waterplant.running = true;
                 }
@@ -681,7 +714,7 @@ ActivityBase {
                 enabled: river.opacity == 1
                 anchors.fill: parent
                 onClicked: {
-                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav');
+                    bubbleSound.play();
                     info.setKey('shower');
                     sewageplant.running = true;
                 }
@@ -775,7 +808,7 @@ ActivityBase {
                     bonus.good('smiley');
                     items.cycleDone = true;
                 }
-                items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/apert.wav');
+                apertSound.play();
             }
 
             function stop() {
