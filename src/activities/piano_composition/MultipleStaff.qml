@@ -557,7 +557,6 @@ Item {
     function stopAudios() {
         musicElementModel.clear()
         musicTimer.stop()
-        items.audioEffects.stop()
     }
 
     Timer {
