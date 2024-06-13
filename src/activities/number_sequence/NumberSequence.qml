@@ -46,7 +46,7 @@ ActivityBase {
             property alias background: background
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
-            property GCSfx audioEffects: activity.audioEffects
+            property alias clickSound: clickSound
             property GCAudio audioVoices: activity.audioVoices
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
@@ -59,6 +59,11 @@ ActivityBase {
 
         onStart: { Activity.start(items, mode, dataset, url) }
         onStop: { Activity.stop() }
+
+        GCSoundEffect {
+            id: clickSound
+            source: "qrc:/gcompris/src/core/resource/sounds/audioclick.wav"
+        }
 
         Image {
             id: imageBack

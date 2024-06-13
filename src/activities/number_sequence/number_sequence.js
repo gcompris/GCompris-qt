@@ -86,10 +86,9 @@ function drawSegment(pointIndex) {
         if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav')
             }
         }
-
+        items.clickSound.play()
         // Draw the line from pointIndex - 1 to pointIndex
         if(pointIndex == 0 || (pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1])) {
             //do nothing
