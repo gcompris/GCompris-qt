@@ -87,6 +87,21 @@ ActivityBase {
         // For creating new content, dump the drawing on the console
         Keys.onTabPressed: Activity.dump()
 
+        GCSoundEffect {
+            id: scrollSound
+            source: "qrc:/gcompris/src/core/resource/sounds/scroll.wav"
+        }
+
+        GCSoundEffect {
+            id: brushSound
+            source: Activity.url + "brush.wav"
+        }
+
+        GCSoundEffect {
+            id: eraserSound
+            source: Activity.url + "eraser.wav"
+        }
+
         // The color selector
         Flickable {
             id: colorSelectorFlick
@@ -155,7 +170,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 hoverEnabled: true
                                 onClicked: {
-                                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                                    scrollSound.play()
                                     items.colorSelector = modelData
                                 }
                             }
@@ -270,9 +285,9 @@ ActivityBase {
 
                     function playEffect(color) {
                         if(color === 0)
-                            activity.audioEffects.play(Activity.url + 'eraser.wav')
+                            brushSound.play()
                         else
-                            activity.audioEffects.play(Activity.url + 'brush.wav')
+                            eraserSound.play()
                     }
 
                     MouseArea {
