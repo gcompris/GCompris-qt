@@ -1,18 +1,18 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023 Vít Pelčák <vit@pelcak.org>
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
-# Jan Papez (honyczek) <honyczek@centrum.cz>, 2023, 2024.
+# SPDX-FileCopyrightText: 2024 Jan Papez (honyczek)
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-12 14:46+0200\n"
-"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"PO-Revision-Date: 2024-06-13 22:11+0200\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -1311,7 +1311,7 @@ msgstr "Zarovnat čtyři (s Tuxem)"
 #: activities/align4_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Arrange four tokens in a row."
-msgstr "Uspořádej čtyři žetony za sebou."
+msgstr "Uspořádej čtyři žetony do řady."
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
@@ -4153,7 +4153,7 @@ msgstr "Hrát šachy proti Tuxovi"
 #: activities/checkers_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The version in GCompris is the international draughts."
-msgstr "Verze v GCompris je mezinárodní dáma."
+msgstr "Tato verze dámy se řídí mezinárodními pravidly tahů."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
@@ -4458,7 +4458,7 @@ msgstr "Konec šachové partie"
 #: activities/chess_partyend/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Play the end of the chess game against Tux."
-msgstr "Přehrát konec šachové partie proti Tuxovi."
+msgstr "Zahraj si konec šachové partie proti Tuxovi."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:23
@@ -4520,7 +4520,7 @@ msgstr "Seřaď obrázky do pořadí, které vypráví příběh."
 #: activities/ordering_chronology/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tell a short story."
-msgstr "Vyprávět krátký příběh."
+msgstr "Vyprávění krátkých příběhů."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
@@ -16380,6 +16380,9 @@ msgid ""
 "of its immediate vertical and horizontal neighbors. You must turn off all "
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
+"Efekt stisknutí okénka provede změnu stavu tohoto okénka a jeho přímých "
+"vodorovných a svislých sousedů. Tvým úkolem je vypnout všechna světla. Pokud "
+"klikneš na Tuxe, zobrazí se řešení."
 
 #: activities/lightsoff/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -18406,7 +18409,7 @@ msgstr "Menu kategorií aktivit je viditelné"
 #: activities/menu/ConfigurationItem.qml:362
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
-msgstr ""
+msgstr "Před ukončením se ptát na potvrzení"
 
 #: activities/menu/ConfigurationItem.qml:373
 msgctxt "ConfigurationItem|"
@@ -18582,6 +18585,10 @@ msgid ""
 "reach the maximum zoom level, a gold nugget will appear at the position of "
 "the sparkle. Click on the gold nugget to collect it."
 msgstr ""
+"Pohledem na skalní stěnu můžeš někde zahlédnout nějaký třpyt. Přesuň se k "
+"tomuto třpytu a pomocí kolečka myši nebo gesta přiblížení se přibliž. "
+"Jakmile dosáhneš maximálního přiblížení, objeví se na místě třpytu hrouda "
+"zlata. Pro sebrání hroudy zlata na ni klikni."
 
 #: activities/mining/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -18591,6 +18598,10 @@ msgid ""
 "appear, showing the next gold nugget to collect. Collect enough nuggets to "
 "complete the level."
 msgstr ""
+"Po sebrání hroudy, použij kolečko myši nebo gesto oddálení pro opětovné "
+"oddálení. Jakmile dosáhnete minimální úrovně přiblížení, objeví se jiný "
+"třpyt, který tě upozorní na další hroudu zlata k posbírání. Pro dokončení "
+"úrovně posbírej dostatek hrud zlata."
 
 #: activities/mining/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -18599,22 +18610,24 @@ msgid ""
 "of already collected nuggets and the total number of nuggets to collect in "
 "this level."
 msgstr ""
+"Vagon pravém dolním rohu obrazovky ti řekne počet již posbíraných hrud a "
+"celkový počet hrud potřebných k dokončení úrovně."
 
 #: activities/mining/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
-msgstr ""
+msgstr "Děkujeme týmu Tuxpaintu za poskytnutí následujícíh zvuků pod GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "realrainbow.ogg - used when a new gold nugget appears"
-msgstr ""
+msgstr "realrainbow.ogg - použit při zobrazení nové hroudy zlata"
 
 #: activities/mining/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
-msgstr ""
+msgstr "metalpaint.wav - remixován a použit při sebrání hroudy zlata"
 
 #: activities/mining/Mining.qml:422
 msgctxt "Mining|"
@@ -18770,6 +18783,9 @@ msgid ""
 "pay. If you want to remove a coin or a note, click or tap on it on the upper "
 "screen area."
 msgstr ""
+"Pro zaplacení klikni nebo klepni na mince či bankovky na spodní straně "
+"obrazovky. Pokud chceš nějakou minci nebo bankovku odebrat, klikni či klepni "
+"na ně v horní oblasti obrazovky."
 
 #: activities/money/ActivityInfo.qml:26
 #: activities/money_back/ActivityInfo.qml:26
@@ -18777,7 +18793,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: navigate inside an area"
-msgstr ""
+msgstr "Šipky vlevo a vpravo: navigace uvnitř oblasti"
 
 #: activities/money/ActivityInfo.qml:28
 #: activities/money_back/ActivityInfo.qml:28
@@ -18785,7 +18801,7 @@ msgstr ""
 #: activities/money_cents/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the bottom and the top areas"
-msgstr ""
+msgstr "Tabulátor: navigace mezi spodní a horní oblastí"
 
 #: activities/money/money.js:141
 msgctxt "money|"
@@ -18793,6 +18809,9 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
+"Pro zaplacení klikni nebo klepni na mince či bankovky na spodní straně "
+"obrazovky. Pokud chceš nějakou minci nebo bankovku odebrat, klikni či klepni "
+"na ně v horní oblasti obrazovky."
 
 #: activities/money/money.js:172
 #, qt-format
@@ -18801,6 +18820,8 @@ msgid ""
 "Tux just bought some items in your shop.\n"
 "He gives you %1, please give back his change."
 msgstr ""
+"Tux si právě koupil nějaké položky ve tvém obchodě.\n"
+"Dává ti %1, vrať mu prosím nazpět."
 
 #: activities/money/resource/1/Data.qml:14
 #: activities/money_back/resource/1/Data.qml:14
@@ -18808,7 +18829,7 @@ msgstr ""
 #: activities/money_cents/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 10 units."
-msgstr ""
+msgstr "Částka až do 10 jednotek."
 
 #: activities/money/resource/2/Data.qml:14
 #: activities/money_back/resource/2/Data.qml:14
@@ -18816,7 +18837,7 @@ msgstr ""
 #: activities/money_cents/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 100 units."
-msgstr ""
+msgstr "Částka až do 100 jednotek."
 
 #: activities/money/resource/3/Data.qml:14
 #: activities/money_back/resource/3/Data.qml:14
@@ -18824,7 +18845,7 @@ msgstr ""
 #: activities/money_cents/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Amount up to 1000 units."
-msgstr ""
+msgstr "Částka až do 1000 jednotek."
 
 #. Activity title
 #: activities/money_back/ActivityInfo.qml:15
@@ -18848,6 +18869,9 @@ msgid ""
 "him back his change. At higher levels, several items are displayed, and you "
 "must first calculate the total price."
 msgstr ""
+"Tux si od tebe nakoupil různé položky a dává ti peníze. Ty mu musíš vrátit "
+"nazpět. Ve vyšších úrovních se zobrazuje několik položek a ty musíš nejprve "
+"spočítat celkovou cenu."
 
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
@@ -18858,6 +18882,9 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
+"Pro zaplacení klikni nebo klepni na mince či bankovky na spodní straně "
+"obrazovky. Pokud chceš nějakou minci nebo bankovku odebrat, klikni či klepni "
+"na ně v horní oblasti obrazovky."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -25297,7 +25324,7 @@ msgstr "Mnoho vylepšení použitelnosti"
 #: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr "Spousta oprav chyb"
+msgstr "Opravena spousta chyb"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
@@ -25403,7 +25430,7 @@ msgstr "Oprava aktivit Abeceda, Sudá a lichá čísla a Pořadí čísel "
 #: core/ChangeLog.qml:83 core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
-msgstr "Několik opravených chyb"
+msgstr "Oprava několika chyb"
 
 #: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
@@ -25465,7 +25492,7 @@ msgstr "Přidán překlad pro makedonštinu"
 #: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr "Nové aktivity Programovací bludiště a dětský tangram"
+msgstr "Nové aktivity Programovací bludiště a Dětský tangram"
 
 #: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
