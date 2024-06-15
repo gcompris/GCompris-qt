@@ -2397,27 +2397,27 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr "Ctrl + Shift + Z: irəlidəki"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:91
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
 msgid "Title"
 msgstr "Başlıq"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:97
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:96
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
 msgstr "Alt yazı"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:104
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:103
 msgctxt "BabyWordprocessor|"
 msgid "Paragraph"
 msgstr "Abzas"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:130
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:129
 msgctxt "BabyWordprocessor|"
 msgid "Load"
 msgstr "Yükləyin"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:140
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:139
 msgctxt "BabyWordprocessor|"
 msgid "Save"
 msgstr "Saxlayın"
@@ -2840,7 +2840,7 @@ msgstr ""
 "Topu düzünə atmaq üçün sağa və ya sola ox düymələrini vurun. Bunu üçün "
 "senror ekrana eyni anda iki barmağınız ilə vurmalısınız."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2848,7 +2848,7 @@ msgstr ""
 "Topu düz xət boyunca atmaq üçün hər iki barmağınızı eyni zamanda "
 "toxundurmalısınız."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -3038,7 +3038,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Bu cədvəl bit dəyərlərini hesablamağa kömək edəcək."
 
-#: activities/binary_bulb/BinaryBulb.qml:127
+#: activities/binary_bulb/BinaryBulb.qml:138
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3405,37 +3405,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Boşluq və ya Enter: cavabınızı təsdiq edin"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Bazar"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:323
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Baza ertəsi"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:324
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Çərşənbə axşamı"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:325
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Çərşənbə"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:326
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Cümə axşamı"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:327
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Cümə"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:328
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Şənbə"
@@ -3712,7 +3712,7 @@ msgstr ""
 "Siz şlüzün işinə cavabdehsiniz. Şlüz qapılarını və kilidləri elə açın ki, "
 "Tuks hər iki istiqamətdə qapılardan keçə bilsin."
 
-#: activities/canal_lock/CanalLock.qml:57
+#: activities/canal_lock/CanalLock.qml:82
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3721,7 +3721,7 @@ msgstr ""
 "Sənin hədəfin Tuksu şlüzdən keçirməlisən ki o ağac kötüklərini götürə "
 "bilsin. Bunun üçün müxtəlif mövcud su qurğularından istifadə edə bilərsiniz."
 
-#: activities/canal_lock/CanalLock.qml:59
+#: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3732,7 +3732,7 @@ msgstr ""
 "ki, üzərilərinə vuraraq onları idarə edə bilərsiniz. Eyni vaxtda iki növ "
 "qurğudan istifadə edə bilməzsiniz."
 
-#: activities/canal_lock/CanalLock.qml:61
+#: activities/canal_lock/CanalLock.qml:86
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4601,17 +4601,17 @@ msgid "Invalid, your king may be in check"
 msgstr "Səhv gediş, Şahınız tutla bilər"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:123
+#: activities/chess/Chess.qml:137
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Bütün hərəkətləri geri qaytarmaq istəyirsiniz?"
 
-#: activities/chess/Chess.qml:124
+#: activities/chess/Chess.qml:138
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Bəli"
 
-#: activities/chess/Chess.qml:125
+#: activities/chess/Chess.qml:139
 msgctxt "Chess|"
 msgid "No"
 msgstr "Xeyr"
@@ -5331,12 +5331,12 @@ msgid ""
 msgstr ""
 "Qısa əqrəb saatı, uzun əqrəb dəqiqəni, ən uzun əqrəb isə saniyəni göstərir."
 
-#: activities/clockgame/Clockgame.qml:108
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Saatı qurun:"
 
-#: activities/clockgame/Clockgame.qml:111
+#: activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5344,7 +5344,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n saat"
 msgstr[1] "%n saat"
 
-#: activities/clockgame/Clockgame.qml:114
+#: activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5352,7 +5352,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n dəqiqə"
 msgstr[1] "%n dəqiqə"
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5452,67 +5452,67 @@ msgstr ""
 "üçün əsas rənglər, açıq-mavi (mavinin xüsusi çaları), açıq bənövşəyi "
 "(cəhrayının xüsusi çaları) və sarı."
 
-#: activities/color_mix/ColorMix.qml:88
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Lazım olan rəngi alın"
 
-#: activities/color_mix/ColorMix.qml:201
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Qırmızı rəng azdır"
 
-#: activities/color_mix/ColorMix.qml:203
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Qırmızı rəng çoxdur"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Yazıl rəng azdır"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Yaşıl rəng çoxdur"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Mavi rəng azdır"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Mavi rəng çoxdur"
 
-#: activities/color_mix/ColorMix.qml:217
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Bənövşəyi rəng azdır"
 
-#: activities/color_mix/ColorMix.qml:219
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Bənövşəyi rəng çoxdur"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Sarı rəng azdır"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Sarı rəng çoxdur"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Açıq-mavi rəng azdır"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Açıq mavi rəng çoxdur"
@@ -5672,7 +5672,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Çəhrayı ördəyi tapın"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:272
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5681,12 +5681,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -7190,7 +7190,7 @@ msgstr ""
 "Üçüncü səviyyədə, təsadüfi mətn göstəriləcək. Siz bu mətnin məzmununa uyğun "
 "heyvanı tapmalısınız."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:345
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7199,12 +7199,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:336
+#: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:337
+#: activities/explore_farm_animals/ExploreLevels.qml:347
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -10101,7 +10101,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Boşluq:görünən və görünməz rejimləri dəyişmək"
 
-#: activities/frieze/Frieze.qml:291
+#: activities/frieze/Frieze.qml:301
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -15025,7 +15025,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Sağa, Sola oxlar: kosmik gəmini hərəkət etdirin"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -15038,7 +15038,7 @@ msgstr ""
 "kütlələrinə düz, mərkəzləri arasındakı məsafənin kvadratına isə tərs "
 "mütənasibdir."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -15050,7 +15050,7 @@ msgstr ""
 "birinə daha güclü cazibə qüvvəsi ilə təsir edirlər. İki cisimdən istənilən "
 "birinin kütləsinin artması onlar arasındakı cazibə qüvvəsini də artırır."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -15061,7 +15061,7 @@ msgstr ""
 "arasındakı məsafənin kvadratına tərs mütənasibdir: aralarında məsafə nə "
 "qədər çox olarsa cazibə qüvvəsi o ədər zəif olar."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -15072,7 +15072,7 @@ msgstr ""
 "yaxınlaşmayın ki onlar ilə toqquşmayasınız. Ox işarəsi, sizin gəmiyə təsir "
 "edən cazibə qüvvəsinin istiqamətini və gücünü göstərir."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -15146,7 +15146,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tab düyməsi: ədədlər və əməllər arasında keçid edin"
 
-#: activities/guess24/Guess24.qml:106
+#: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "24-ü tapmaq üçün verilmiş əməllər ilə dörd ədəddən istifadə edin."
@@ -15253,7 +15253,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "nəticə tam ədəd deyil"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:161
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16631,31 +16631,31 @@ msgstr ""
 "portağallar toplamanın nəticəsinə uyğun gələnədək bu addımları təkrar edin "
 "və sonra OLDU (OK) düyməsinə vuraraq cavabınızı yoxlayın."
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Bu ədədi göstərmək: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:119
+#: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Bu əməlin nəticəsi: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:120
+#: activities/learn_decimals/Learn_decimals.qml:131
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Bu əməlin nəticəsi: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:121
+#: activities/learn_decimals/Learn_decimals.qml:132
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Miqdarı göstərin: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:591
+#: activities/learn_decimals/Learn_decimals.qml:602
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -17142,12 +17142,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Sağ ox: cavab - sağ əl"
 
-#: activities/leftright/Leftright.qml:144
+#: activities/leftright/Leftright.qml:153
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Sol əl"
 
-#: activities/leftright/Leftright.qml:164
+#: activities/leftright/Leftright.qml:175
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Sağ əl"
@@ -17219,12 +17219,12 @@ msgstr ""
 "Təyyarəyə ilişdirilmiş bir hərf göstərilir. Siyahıda bu hərfdən ibarət bütün "
 "sözləri seçin və OLDU (OK) düyməsinə vurun."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:321
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Üzr istəyirik, diliniz üçün hələlik tərcümə tapılmadı."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:322
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17235,7 +17235,7 @@ msgstr ""
 "etmək üçün <a href=\"%2\">%2</a> səhifəsində tərcümə komandasına qoşula "
 "bilərsiniz."
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:324
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17521,7 +17521,7 @@ msgstr ""
 "qaçır. Sapkanın altında neçə ulduz qaldı? Alt sıradakı ulduzlara vuraraq "
 "lazımi miqdarı göstərin. OLDU düyməsinə vuraraq cavabınızı yoxlayın."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:98
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Şapkaya vuraraq oyuna başlayın"
@@ -17733,7 +17733,7 @@ msgstr ""
 "istəsəniz, ekranın sol yuxarı küncündəki \"ayaqyalın/idman ayaqqabılı\" "
 "nişanına vurun və sürətli-hərəkət-rejimini dəyişdirin.\t"
 
-#: activities/maze/Maze.qml:314
+#: activities/maze/Maze.qml:319
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17872,7 +17872,7 @@ msgstr ""
 "Oxudulan səs ardıcıllığını dinləyin və ksilofonun çubuqlarına vuraraq "
 "təkrarlayın. Təkrar düyməsinə vuraraq səs ardıcıllığını yenidən dinləyin."
 
-#: activities/melody/Melody.qml:312
+#: activities/melody/Melody.qml:334
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17881,12 +17881,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/melody/Melody.qml:313
+#: activities/melody/Melody.qml:335
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/melody/Melody.qml:314
+#: activities/melody/Melody.qml:336
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -19082,7 +19082,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:336
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19091,12 +19091,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:337
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/memory/MemoryCommon.qml:328
+#: activities/memory/MemoryCommon.qml:338
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -19537,12 +19537,12 @@ msgstr ""
 "Çalışmanı buraya əlavə etmək üçün onun yuxarı, sağındakı günəş işarəsinə "
 "vurun."
 
-#: activities/menu/Menu.qml:771
+#: activities/menu/Menu.qml:770
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Çalışmaları axtarmaq"
 
-#: activities/menu/Menu.qml:798
+#: activities/menu/Menu.qml:797
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Çalışma ayarları"
@@ -19634,7 +19634,7 @@ msgstr ""
 "metalpaint.wav - qarışdırılıb və yeni qızıl külçələri toplandıqda istifadə "
 "olunur"
 
-#: activities/mining/Mining.qml:422
+#: activities/mining/Mining.qml:432
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19651,22 +19651,22 @@ msgstr ""
 "sürüşdürün. Sensor ekranda barmaqlarınızı parıltı üzərindən ək istiamətlərdə "
 "sürüşdürün."
 
-#: activities/mining/Mining.qml:438
+#: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Əla, bu sizdə alınır, Külçə görünənə qədər davam edin."
 
-#: activities/mining/Mining.qml:446
+#: activities/mining/Mining.qml:456
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, diqqət edin, parıltıdan çox uzaqda yaxınlaşdırırsınız."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:464
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "İndi siz külçəni görürsünüz, onu götürmək üçün vurun."
 
-#: activities/mining/Mining.qml:462
+#: activities/mining/Mining.qml:472
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19675,17 +19675,17 @@ msgstr ""
 "Hmm, siz belə görünür ki, siz külçədən çox uzaqdasınız. Uzaqlaşın və "
 "parıltını gördükdə ona doğru təkrar yaxınlaşın."
 
-#: activities/mining/Mining.qml:470
+#: activities/mining/Mining.qml:480
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "İndi uzaqlaşın və başqa parıltını tapmağa çalışın."
 
-#: activities/mining/Mining.qml:478
+#: activities/mining/Mining.qml:488
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Parıltı görünənə qədər uzaqlaşın."
 
-#: activities/mining/Mining.qml:486
+#: activities/mining/Mining.qml:496
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "İndi siz parıltını görürsünüz, ona yaxınlaşmağa başlayın."
@@ -20020,13 +20020,13 @@ msgstr ""
 "Hazır olduğunuzda Tuksun üzərinə vurun və biz hərfləri Morze koduna "
 "çevirəcəyik."
 
-#: activities/morse_code/MorseCode.qml:351
+#: activities/morse_code/MorseCode.qml:360
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morze kodu: %1"
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:361
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20344,20 +20344,20 @@ msgstr ""
 "Notların adlarını düzgün tapın və səviyyəni keçmək üçün cavablara 100% doğru "
 "cavab verin."
 
-#: activities/note_names/NoteNames.qml:177
+#: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Yeni not: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:265
+#: activities/note_names/NoteNames.qml:264
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20366,12 +20366,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -21316,7 +21316,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Ox düymələri: istiqamət"
 
-#: activities/path_encoding/GridPath.qml:125
+#: activities/path_encoding/GridPath.qml:136
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -21398,12 +21398,12 @@ msgstr ""
 "İki şəkili diqqətlə araşdırın. Burada bəzi yüngül fərqlər var. Fərqi "
 "tapdıqda onun üzərinə vurmalısınız."
 
-#: activities/photo_hunter/PhotoHunter.qml:92
+#: activities/photo_hunter/PhotoHunter.qml:104
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Fərqi görmək üçün çubuğu sürüşdürün."
 
-#: activities/photo_hunter/PhotoHunter.qml:93
+#: activities/photo_hunter/PhotoHunter.qml:105
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Şəkillər arasındakı fərqlərin üzərinə vurun."
@@ -21866,38 +21866,38 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melodiya, %1 faylında saxlanıldı"
 
-#: activities/piano_composition/Piano_composition.qml:360
+#: activities/piano_composition/Piano_composition.qml:359
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr ""
 "Sizin seçilmiş heç bir notunuz yoxdur. Bütün notları silmək istəyirsiniz?"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:360
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Bəli"
 
-#: activities/piano_composition/Piano_composition.qml:367
+#: activities/piano_composition/Piano_composition.qml:366
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Xeyr"
 
-#: activities/piano_composition/Piano_composition.qml:417
+#: activities/piano_composition/Piano_composition.qml:416
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Yükləməyəcəyiniz melodiyanın növünü seçin."
 
-#: activities/piano_composition/Piano_composition.qml:422
+#: activities/piano_composition/Piano_composition.qml:421
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Əvvəlcədən müəyyən edilmiş melodiyalar"
 
-#: activities/piano_composition/Piano_composition.qml:440
+#: activities/piano_composition/Piano_composition.qml:439
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Saxladığınız melodiyalarınız"
 
-#: activities/piano_composition/Piano_composition.qml:554
+#: activities/piano_composition/Piano_composition.qml:553
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21906,12 +21906,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:555
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -22192,12 +22192,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace və ya Delete: ləğv etmək"
 
-#: activities/play_piano/PlayPiano.qml:187
+#: activities/play_piano/PlayPiano.qml:198
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Verilmiş nota uyğun olaraq piano dillərinə vurun."
 
-#: activities/play_piano/PlayPiano.qml:300
+#: activities/play_piano/PlayPiano.qml:311
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22206,12 +22206,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/play_piano/PlayPiano.qml:301
+#: activities/play_piano/PlayPiano.qml:312
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/play_piano/PlayPiano.qml:302
+#: activities/play_piano/PlayPiano.qml:313
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -22301,7 +22301,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Səkmə: Əgər görünürsə metronomu başlatmaq və ya dayandırmaq"
 
-#: activities/play_rhythm/PlayRhythm.qml:117
+#: activities/play_rhythm/PlayRhythm.qml:133
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -22309,7 +22309,7 @@ msgid ""
 msgstr ""
 "Bütün aralıqların hamısının düzgün səslənməsi üçün metronomdan istifadə edin."
 
-#: activities/play_rhythm/PlayRhythm.qml:118
+#: activities/play_rhythm/PlayRhythm.qml:134
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -22318,7 +22318,7 @@ msgstr ""
 "Ritmi düzgün səsləndirmək üçün şaquli sətirə diqqət edin və barabana vurun "
 "və ya ara boşluğu düyməsinə vurun."
 
-#: activities/play_rhythm/PlayRhythm.qml:376
+#: activities/play_rhythm/PlayRhythm.qml:392
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22327,12 +22327,12 @@ msgstr ""
 "Bu çalışma səsli işləyir, buna görə də, hətta əsas tənzimləmələrdən səs "
 "effektləri söndürülmüş olsa da bəzi səslənmə eşidiləcəkdir."
 
-#: activities/play_rhythm/PlayRhythm.qml:377
+#: activities/play_rhythm/PlayRhythm.qml:393
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Çıxış"
 
-#: activities/play_rhythm/PlayRhythm.qml:378
+#: activities/play_rhythm/PlayRhythm.qml:394
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Davam edin"
@@ -22693,23 +22693,23 @@ msgstr ""
 "funksiya sahəsi</b> arasında <b>keçid</b> etmək üçün <b>Sonsuz təkrarlanma</"
 "b> və ya <b>Əsas funksiya</b> yarlığına vurun."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:198
+#: activities/programmingMaze/ProgrammingMaze.qml:203
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "%1-dən/dan az təlimatla balığa çatdı"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:262
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Əsas funksiya"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prosedura"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Sonsuz təkrarlanma"
@@ -22791,7 +22791,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter və ya Return: cavabınızı təsdiq edin"
 
-#: activities/railroad/Railroad.qml:108
+#: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22800,7 +22800,7 @@ msgstr ""
 "Qatarın necə göründüyünü yadda saxlayın və vaqonları köçürməklə və "
 "elementləri uyğun şəkildə düzməklə qatarın oxşarını yaradın."
 
-#: activities/railroad/Railroad.qml:109
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22849,12 +22849,12 @@ msgstr ""
 "<font color=\"#373737\">Yoxlayın,<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">sözü göründümü</font>"
 
-#: activities/readingh/Readingh.qml:359
+#: activities/readingh/Readingh.qml:369
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Bəli, mən onu gördüm!"
 
-#: activities/readingh/Readingh.qml:380
+#: activities/readingh/Readingh.qml:390
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Xeyr, o burada yoxdur!"
@@ -23021,7 +23021,7 @@ msgstr ""
 "olduqda işıqlandırmaq üçün işıq düyməsinə vurun. Qazanmaq üçün bütün "
 "istehsalçılar işə başlayanda istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23030,7 +23030,7 @@ msgstr ""
 "Tuks öz qayığında balıq tutmaqdan qayıdır. Elektrik sistemini bərpa edin ki "
 "o, evini işıqlandıra bilsin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:312
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23040,7 +23040,7 @@ msgstr ""
 "elektrostansiyası və transformatorların üzərinə vurun ki, elektrik sistemi "
 "təkrar aktiv olsun."
 
-#: activities/renewable_energy/RenewableEnergy.qml:289
+#: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23051,12 +23051,12 @@ msgstr ""
 "üçün işıq düyməsinə vurun. Qazanmaq üçün bütün istehsalçılar işə başlayanda "
 "istehlakçıları işə salmalısınız."
 
-#: activities/renewable_energy/RenewableEnergy.qml:291
+#: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Bərpa olunan enerjiyə əsaslanan elektrik sistemi haqqında öyrənin."
 
-#: activities/renewable_energy/RenewableEnergy.qml:315
+#: activities/renewable_energy/RenewableEnergy.qml:340
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23336,13 +23336,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "İndi siz rum rəqəmləri ilə necə yazmağı və oxumağı bilirsiniz."
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rum rəqəmi ilə yazı: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:379
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24396,7 +24396,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Sonra %n konfeti onlar arasında bərabər bölün."
 msgstr[1] "Sonra %n konfeti onlar arasında bərabər bölün."
 
-#: activities/share/Share.qml:348
+#: activities/share/Share.qml:358
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25674,25 +25674,25 @@ msgstr ""
 "Günəş Sisteminin digər planetləri ilə müqayisədə ,Neptun böyüklüyünə görə "
 "neçəncidir?"
 
-#: activities/solar_system/QuizScreen.qml:201
+#: activities/solar_system/QuizScreen.qml:216
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Dəqiqlik: %1%"
 
-#: activities/solar_system/QuizScreen.qml:241
+#: activities/solar_system/QuizScreen.qml:256
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Sizin yekun qiymətiniz: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25703,7 +25703,7 @@ msgstr ""
 "cavab verməniz lazımdır!<br>Bacarığınızı yenidən sınayın və ya Günə Sistemi "
 "haqqında adi rejimdə öyrənməyə davam edin."
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -26184,12 +26184,12 @@ msgstr ""
 "növbəti dəfə avtomatik seçiləcəkdir. Yenidən üzərinə iki dəfə vurmaqla bu "
 "işarəni ləğv etmək olar."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Bu element düzgün yerləşdirilib."
 
-#: activities/superbrain/Superbrain.qml:143
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Bu element yerində deyil."
@@ -26673,7 +26673,7 @@ msgstr ""
 "günəş, bulud, nasos stansiyası və təmizləmə sistemi. Sistem bərpa olunduqdan "
 "sonra Tuksun duş qəbul etməsi üçün düyməyə vuraraq suyu açın."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26682,12 +26682,12 @@ msgstr ""
 "Günəş, su dövranın əsas hissəsidir. Su dövranını başlatmaq üçün günəşin "
 "üzərinə vurun."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Günəş yüksəldikcə dənizin suyu isinməyə və buxarlaşmağa başlayır."
 
-#: activities/watercycle/Watercycle.qml:82
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26696,7 +26696,7 @@ msgstr ""
 "Su buxarları bulud yaratmaq üçün sıxlaşır və bulud ağırlaşdıqda yağış yağır. "
 "Buludun üzərinə vur."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26707,7 +26707,7 @@ msgstr ""
 "nasoslar vasitəsi ilə çatdırılır. Sakinləri su ilə təmin etmək üçün nanosun "
 "üzərinə vurun."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26715,19 +26715,19 @@ msgid ""
 msgstr ""
 "Qullə su ilə dolduqda su təmizləmə sisteçmini işə salmaq üçün üzərinı vurun."
 
-#: activities/watercycle/Watercycle.qml:86
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Əla, Tuks evə çatdıqda duşa vurun."
 
-#: activities/watercycle/Watercycle.qml:87
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr ""
 "Mükəmməl, siz su dövranını tamamladınız. Oynamağa davam edə bilərsiniz."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26738,7 +26738,7 @@ msgstr ""
 "atmosferə və təkrar yerə qayıdaraq etdiyi dövrəyə deyilir. Günəşin istiliyi, "
 "okeanlar kimi su hövzələrindən susyun buxarlanması üçün enerji qaynağıdır."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26750,7 +26750,7 @@ msgstr ""
 "hava kütləsi ilə birləşdikdə yağıntı əmələ gətirir və yağış şəklində yerə "
 "tökülür."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:153
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26761,7 +26761,7 @@ msgstr ""
 "qrunt suları adlanır. Lakin suyun çox hissəsi çaylar vasitəsi ilə axaraq "
 "dənizlərə və göllərə geri qayıdır."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:155
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27724,7 +27724,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:269
+#: core/main.qml:263
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -27734,42 +27734,42 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "Aşağıdakı xarici resursları endirmək istəyirsiniz?"
 
-#: core/main.qml:271
+#: core/main.qml:265
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Diliniz üçün səslər"
 
-#: core/main.qml:272
+#: core/main.qml:266
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Tam sözlü şəkil dəsti"
 
-#: core/main.qml:273
+#: core/main.qml:267
 msgctxt "main|"
 msgid "Background music"
 msgstr "Arxa fon musiqisi"
 
-#: core/main.qml:279
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Yes"
 msgstr "Bəli"
 
-#: core/main.qml:286
+#: core/main.qml:280
 msgctxt "main|"
 msgid "No"
 msgstr "Xeyr"
 
-#: core/main.qml:322
+#: core/main.qml:316
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "GComprisə Xoş Gəldiniz!"
 
-#: core/main.qml:323
+#: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Siz GComprisi ilk dəfə açırsınız."
 
-#: core/main.qml:324
+#: core/main.qml:318
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -27785,23 +27785,23 @@ msgstr ""
 "və dilinizə uyğun səslərin yükləndiyinə əmin olun. Bunları Ayarlar "
 "menyusundan etmək olar."
 
-#: core/main.qml:326
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Sizə uğurlar!"
 
-#: core/main.qml:328
+#: core/main.qml:322
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Sizin hazırkı diliniz %1 (%2)"
 
-#: core/main.qml:360
+#: core/main.qml:354
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris yeniləndi! Yeni dəyişikliklər bunlardır: <br/>"
 
-#: core/main.qml:388
+#: core/main.qml:382
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27810,12 +27810,12 @@ msgstr ""
 "Bəzi çalışmalarda yeni verilənlər dəsti əlçatandır. Onların verilənlər dəsti "
 "seçimlərini sıfırlamaq istəyirsiniz?"
 
-#: core/main.qml:389
+#: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
 msgstr "Tətbiq edin"
 
-#: core/main.qml:390
+#: core/main.qml:384
 msgctxt "main|"
 msgid "Cancel"
 msgstr "İmtina"

@@ -2424,27 +2424,27 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr ""
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:91
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
 msgid "Title"
 msgstr "शीर्षक"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:97
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:96
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
 msgstr "सबटाइटल"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:104
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:103
 msgctxt "BabyWordprocessor|"
 msgid "Paragraph"
 msgstr "अनुच्छेद"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:130
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:129
 msgctxt "BabyWordprocessor|"
 msgid "Load"
 msgstr ""
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:140
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:139
 msgctxt "BabyWordprocessor|"
 msgid "Save"
 msgstr "सहेजें"
@@ -2852,13 +2852,13 @@ msgstr ""
 "गेंद को एक सीधी रेखा में ले जाने के लिए, एक ही समय में बाएं और दाएं तीर दबाएं। टच स्क्रीन "
 "पर आपको एक ही समय में दो हाथों को मारना होगा."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "बॉल को सीधी रेखा में जाने के लिए एक ही समय में दोनों हाथों को टैप करें।"
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -3040,7 +3040,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "इस जानवर को रात में बाहर आना पसंद है।"
 
-#: activities/binary_bulb/BinaryBulb.qml:127
+#: activities/binary_bulb/BinaryBulb.qml:138
 #, fuzzy, qt-format
 #| msgctxt "ActivityInfo|"
 #| msgid "Spatial representation"
@@ -3416,37 +3416,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr ""
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "रविवार"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:323
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "सोमवार"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:324
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "मंगलवार"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:325
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "बुधवार"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:326
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "गुरुवार"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:327
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "शुक्रवार"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:328
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "शनिवार"
@@ -3736,14 +3736,14 @@ msgstr ""
 "आप नहर लॉक के प्रभारी हैं। दरवाजे और ताले को सही क्रम में खोलें जिससे टक्स दोनों दिशाओं के "
 "द्वार के माध्यम से यात्रा कर सकता है।"
 
-#: activities/canal_lock/CanalLock.qml:57
+#: activities/canal_lock/CanalLock.qml:82
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr ""
 
-#: activities/canal_lock/CanalLock.qml:59
+#: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3751,7 +3751,7 @@ msgid ""
 "simultaneously."
 msgstr ""
 
-#: activities/canal_lock/CanalLock.qml:61
+#: activities/canal_lock/CanalLock.qml:86
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4710,7 +4710,7 @@ msgid "Invalid, your king may be in check"
 msgstr "अमान्य, आपके राजा को शह मिल सकती है"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:123
+#: activities/chess/Chess.qml:137
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -4718,7 +4718,7 @@ msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "क्या आप वाकई में जीकॉम्प्रिस से बाहर जाना चाहते हैं?"
 
-#: activities/chess/Chess.qml:124
+#: activities/chess/Chess.qml:138
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -4726,7 +4726,7 @@ msgctxt "Chess|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: activities/chess/Chess.qml:125
+#: activities/chess/Chess.qml:139
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -5507,12 +5507,12 @@ msgid ""
 "and the longest hand indicates the seconds."
 msgstr ""
 
-#: activities/clockgame/Clockgame.qml:108
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "घड़ी को सेट करें:"
 
-#: activities/clockgame/Clockgame.qml:111
+#: activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5520,7 +5520,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n घंटा"
 msgstr[1] "%n घंटे"
 
-#: activities/clockgame/Clockgame.qml:114
+#: activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5528,7 +5528,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n मिनट"
 msgstr[1] "%n मिनट"
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5651,67 +5651,67 @@ msgstr ""
 "को मिला सकते हैं। रंग / स्याही के लिए प्राथमिक रंग सियान (नीले रंग का एक विशेष छाया), "
 "मैजेंटा (गुलाबी का विशेष छाया) और पीला होते हैं।"
 
-#: activities/color_mix/ColorMix.qml:88
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "रंग मिलाएँ"
 
-#: activities/color_mix/ColorMix.qml:201
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "अपर्याप्त लाल"
 
-#: activities/color_mix/ColorMix.qml:203
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "बहुत अधिक लाल"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "अपर्याप्त हरा"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "बहुत ज्यादा हरा"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "अपर्याप्त नीला"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "बहुत ज्यादा नीला"
 
-#: activities/color_mix/ColorMix.qml:217
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "पर्याप्त मैजेंटा नहीं"
 
-#: activities/color_mix/ColorMix.qml:219
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "बहुत ज्यादा मैजेंटा"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "अपर्याप्त पीला"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "बहुत ज्यादा पीला"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "पर्याप्त सियान नहीं"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "बहुत ज्यादा सियान"
@@ -5879,19 +5879,19 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "गुलाबी बतख खोजें"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:272
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "जारी रखें"
@@ -7316,19 +7316,19 @@ msgid ""
 "animal that matches the text."
 msgstr ""
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:345
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/explore_farm_animals/ExploreLevels.qml:336
+#: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:337
+#: activities/explore_farm_animals/ExploreLevels.qml:347
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "जारी रखें"
@@ -10671,7 +10671,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "निर्देश व स्कोर दिखाएँ"
 
-#: activities/frieze/Frieze.qml:291
+#: activities/frieze/Frieze.qml:301
 #, fuzzy
 #| msgctxt "ReadyButton|"
 #| msgid "I am Ready"
@@ -16094,7 +16094,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "मीनार को दाईं ओर फिर से बनाएँ"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:216
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16114,7 +16114,7 @@ msgstr ""
 "पर निर्भर करता है और दूरी के वर्ग के विपरीत आनुपातिक होता है जो उनके केंद्रों को अलग करता "
 "है।"
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:220
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16133,7 +16133,7 @@ msgstr ""
 "अधिक बड़े ऑब्जेक्ट एक दूसरे से अधिक गुरुत्वाकर्षण बल के साथ आकर्षित होंगे। तो या तो ऑब्जेक्ट के "
 "द्रव्यमान के बढ़ने के कारण, उनके बीच गुरुत्वाकर्षण का आकर्षण भी बढ़ जाता है"
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:223
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16149,7 +16149,7 @@ msgstr ""
 "लेकिन यह बल दो परस्पर प्रभावित् वस्तुओं के बीच की दूरी के विपरीत रूप से आनुपातिक है, अधिक "
 "दूरी कमजोर गुरुत्वाकर्षण बलों में परिणाम होगा।"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:226
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16166,7 +16166,7 @@ msgstr ""
 "करना है। ग्रहों के करीब नहीं जाना है वार्ना आप उनसे टकरा जायेंगे। तीर आपके जहाज पर बल की "
 "दिशा इंगित करती है।"
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -16236,7 +16236,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr ""
 
-#: activities/guess24/Guess24.qml:106
+#: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -16358,7 +16358,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "परिणाम एक पूर्णांक नहीं है"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:161
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -17830,31 +17830,31 @@ msgid ""
 "validate your answer."
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:119
+#: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:120
+#: activities/learn_decimals/Learn_decimals.qml:131
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:121
+#: activities/learn_decimals/Learn_decimals.qml:132
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr ""
 
-#: activities/learn_decimals/Learn_decimals.qml:591
+#: activities/learn_decimals/Learn_decimals.qml:602
 #, fuzzy, qt-format
 #| msgctxt "ScaleNumber|"
 #| msgid "Enter the weight of the gift: %1"
@@ -18400,12 +18400,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr ""
 
-#: activities/leftright/Leftright.qml:144
+#: activities/leftright/Leftright.qml:153
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "बायां हाथ"
 
-#: activities/leftright/Leftright.qml:164
+#: activities/leftright/Leftright.qml:175
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "दहिना हाथ"
@@ -18500,12 +18500,12 @@ msgstr ""
 "एक अक्षर लिखा या बोला गया है।  कुछ शब्दों को प्रदर्शित किया जाता है, बच्चों को शब्द या "
 "शब्दों में ये अक्षर खोजना है।"
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:321
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षमा करें, इस भाषा का अनुवाद अभी हमारे पास उपलब्द नहीं है"
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:322
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -18515,7 +18515,7 @@ msgstr ""
 "जीकॉमप्री को केडीई समुदाय द्वारा विकसित किया गया है, आप <a href=\"%2\">%2</a> पर "
 "एक अनुवाद टीम में शामिल होकर जीकॉमप्री का अनुवाद कर सकते हैं।"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:324
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18868,7 +18868,7 @@ msgstr ""
 "इसे खोलने या बंद करने के लिए टोपी पर क्लिक करें। टोपी के नीचे, आप कितने तारे देख सकते हैं? "
 "सावधानी से गणना करें अपने जवाब को इनपुट करने के लिए नीचे-दाएं क्षेत्र में क्लिक करें।"
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:98
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "खेल शुरू करने के लिए टोपी पर क्लिक करें"
@@ -19130,7 +19130,7 @@ msgstr ""
 "टॉगल करने के लिए स्क्रीन के ऊपरी बाएं कोने में \"नंगे पैर / स्पोर्ट्शू\" पर क्लिक करें।\n"
 "\t"
 
-#: activities/maze/Maze.qml:314
+#: activities/maze/Maze.qml:319
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -19309,14 +19309,14 @@ msgstr ""
 "ध्वनि अनुक्रम को सुनें, और जीलोफ़ोन की सलाखों पर क्लिक करके इसे दोहराएं। दोबारा बटन पर "
 "क्लिक करके आप फिर से सुन सकते हैं।"
 
-#: activities/melody/Melody.qml:312
+#: activities/melody/Melody.qml:334
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/melody/Melody.qml:313
+#: activities/melody/Melody.qml:335
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -19324,7 +19324,7 @@ msgctxt "Melody|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/melody/Melody.qml:314
+#: activities/melody/Melody.qml:336
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -20750,14 +20750,14 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:336
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:337
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -20765,7 +20765,7 @@ msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/memory/MemoryCommon.qml:328
+#: activities/memory/MemoryCommon.qml:338
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -21273,12 +21273,12 @@ msgid ""
 msgstr ""
 "अपनी पसंदीदा गतिविधियों को यहां रखने के लिए गतिविधि के ऊपर दाईं ओर सूरज का चयन करें।"
 
-#: activities/menu/Menu.qml:771
+#: activities/menu/Menu.qml:770
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्ट गतिविधियों को खोजें"
 
-#: activities/menu/Menu.qml:798
+#: activities/menu/Menu.qml:797
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -21351,7 +21351,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 
-#: activities/mining/Mining.qml:422
+#: activities/mining/Mining.qml:432
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -21365,22 +21365,22 @@ msgstr ""
 "फिर एक क्षेत्रफल पर एक उंगली खींचें और केंद्र पर दो अंगुलियां खींचें। एक स्पर्श क्षेत्र पर, दो "
 "उंगलियों को चमक से दूर खींचें, प्रत्येक दिशा में एक।"
 
-#: activities/mining/Mining.qml:438
+#: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "बिल्कुल सही आप ज़ूमिंग कर रहे हैं। जब तक आप सोने का डला नहीं देखते तब तक जारी रखें। "
 
-#: activities/mining/Mining.qml:446
+#: activities/mining/Mining.qml:456
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "हूं ध्यान रखें, आप चमक से बहुत दूर ज़ूम कर रहे हैं।"
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:464
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "अब आप डला देखेंगे, इसे पकड़ने के लिए उस पर क्लिक करें।"
 
-#: activities/mining/Mining.qml:462
+#: activities/mining/Mining.qml:472
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -21389,17 +21389,17 @@ msgstr ""
 "हं, आप इसे देखने के लिए सोने की डली से बहुत दूर हैं फिर ज़ूम करें फिर से ज़ूम करें जितना करीब आप "
 "चमक से कर सकते हैं।"
 
-#: activities/mining/Mining.qml:470
+#: activities/mining/Mining.qml:480
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "अब अंज़ुम करें और किसी और चमक को खोजने की कोशिश करें"
 
-#: activities/mining/Mining.qml:478
+#: activities/mining/Mining.qml:488
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "तब तक अंज़ुम करें जब तक आप स्पार्कल नहीं देखते।"
 
-#: activities/mining/Mining.qml:486
+#: activities/mining/Mining.qml:496
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "अब आप चमक को देखते हैं, आगे बढ़ो, आप इसे ज़ूम कर सकते हैं।"
@@ -21754,7 +21754,7 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "जब आप तैयार हों, तो मुझ पर क्लिक करें और ब्रेल वर्ण पुन: प्रस्तुत करने का प्रयास करें।"
 
-#: activities/morse_code/MorseCode.qml:351
+#: activities/morse_code/MorseCode.qml:360
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Roman value: %1"
@@ -21762,7 +21762,7 @@ msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "रोमन मूल्य:  %1"
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:361
 #, fuzzy, qt-format
 #| msgctxt "RomanNumerals|"
 #| msgid "Arabic value: %1"
@@ -22113,14 +22113,14 @@ msgid ""
 "100% to complete the level."
 msgstr ""
 
-#: activities/note_names/NoteNames.qml:177
+#: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr ""
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:265
+#: activities/note_names/NoteNames.qml:264
 #, fuzzy, qt-format
 #| msgctxt "Guesscount|"
 #| msgid "%1/%2"
@@ -22128,14 +22128,14 @@ msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1/%2"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -22143,7 +22143,7 @@ msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -23093,7 +23093,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr ""
 
-#: activities/path_encoding/GridPath.qml:125
+#: activities/path_encoding/GridPath.qml:136
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -23194,7 +23194,7 @@ msgstr ""
 "दो चित्रों को सावधानीपूर्वक देखें। कुछ मामूली अंतर हैं। जब आप कोई अंतर पाते हैं, तो आपको उस "
 "पर क्लिक करना होगा।"
 
-#: activities/photo_hunter/PhotoHunter.qml:92
+#: activities/photo_hunter/PhotoHunter.qml:104
 #, fuzzy
 #| msgctxt "PhotoHunter|"
 #| msgid "Drag the slider to show the differences!"
@@ -23202,7 +23202,7 @@ msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "विभिन्नता दिखाने के लिए स्लाइडर को खींचें!"
 
-#: activities/photo_hunter/PhotoHunter.qml:93
+#: activities/photo_hunter/PhotoHunter.qml:105
 #, fuzzy
 #| msgctxt "PhotoHunter|"
 #| msgid "Click on the differences between the two images!"
@@ -23707,12 +23707,12 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr " %n लेवल को आपके लेवल फ़ाइल (%1) में सहेजा"
 
-#: activities/piano_composition/Piano_composition.qml:360
+#: activities/piano_composition/Piano_composition.qml:359
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:360
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -23720,7 +23720,7 @@ msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: activities/piano_composition/Piano_composition.qml:367
+#: activities/piano_composition/Piano_composition.qml:366
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -23728,7 +23728,7 @@ msgctxt "Piano_composition|"
 msgid "No"
 msgstr "नहीं"
 
-#: activities/piano_composition/Piano_composition.qml:417
+#: activities/piano_composition/Piano_composition.qml:416
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Select the butterfly of the correct color"
@@ -23736,24 +23736,24 @@ msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "सही रंग की तितली चुनें"
 
-#: activities/piano_composition/Piano_composition.qml:422
+#: activities/piano_composition/Piano_composition.qml:421
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:440
+#: activities/piano_composition/Piano_composition.qml:439
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:554
+#: activities/piano_composition/Piano_composition.qml:553
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:554
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -23761,7 +23761,7 @@ msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:555
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -24071,7 +24071,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr ""
 
-#: activities/play_piano/PlayPiano.qml:187
+#: activities/play_piano/PlayPiano.qml:198
 #, fuzzy
 #| msgctxt "board1|"
 #| msgid "Click on the location that matches the text."
@@ -24079,14 +24079,14 @@ msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "पाठ से मेल खाते स्थान पर क्लिक करें।"
 
-#: activities/play_piano/PlayPiano.qml:300
+#: activities/play_piano/PlayPiano.qml:311
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/play_piano/PlayPiano.qml:301
+#: activities/play_piano/PlayPiano.qml:312
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -24094,7 +24094,7 @@ msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/play_piano/PlayPiano.qml:302
+#: activities/play_piano/PlayPiano.qml:313
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -24181,28 +24181,28 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:117
+#: activities/play_rhythm/PlayRhythm.qml:133
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:118
+#: activities/play_rhythm/PlayRhythm.qml:134
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
 "the rhythm correctly."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:376
+#: activities/play_rhythm/PlayRhythm.qml:392
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
 
-#: activities/play_rhythm/PlayRhythm.qml:377
+#: activities/play_rhythm/PlayRhythm.qml:393
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Quit?"
@@ -24210,7 +24210,7 @@ msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "बाहर जाएँ?"
 
-#: activities/play_rhythm/PlayRhythm.qml:378
+#: activities/play_rhythm/PlayRhythm.qml:394
 #, fuzzy
 #| msgctxt "board1_0|"
 #| msgid "Continents"
@@ -24561,13 +24561,13 @@ msgid ""
 "label."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:198
+#: activities/programmingMaze/ProgrammingMaze.qml:203
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:262
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 #, fuzzy
 #| msgctxt "Lang|"
 #| msgid "action"
@@ -24575,12 +24575,12 @@ msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "कार्य"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr ""
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr ""
@@ -24663,14 +24663,14 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr ""
 
-#: activities/railroad/Railroad.qml:108
+#: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
 "to set up a similar train."
 msgstr ""
 
-#: activities/railroad/Railroad.qml:109
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -24730,12 +24730,12 @@ msgstr ""
 "<Font color = \"# 373737\">ये जांच करें की क्या<br/> <b> <font color=\"#315AAA\">"
 "%1</font></b><br/><font color=\"# 373737 \"> शब्द प्रदर्शित किया जा रहा है।"
 
-#: activities/readingh/Readingh.qml:359
+#: activities/readingh/Readingh.qml:369
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "हाँ , मैंने इसे देखा!"
 
-#: activities/readingh/Readingh.qml:380
+#: activities/readingh/Readingh.qml:390
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "नहीं, यह वहाँ नहीं था!"
@@ -24936,7 +24936,7 @@ msgstr ""
 "उसके घर में है, उसके लिए प्रकाश बटन दबाएं। जीतने के लिए आपको सभी उपभोक्ताओं पर स्विच "
 "करना होगा, जबकि सभी उत्पादक ऊपर हैं।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -24945,7 +24945,7 @@ msgstr ""
 "टक्स अपने नाव पर मछली पकड़ने से वापस आ गया है। बिजली व्यवस्था को वापस लाएं ताकि उसके "
 "घर में प्रकाश हो सके।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:312
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -24960,7 +24960,7 @@ msgstr ""
 "पूरे इलेक्ट्रिकल तंत्र को पुन: सक्रिय करने के लिए विभिन्न सक्रिय तत्वों पर क्लिक करें जैसे: सूर्य, "
 "बादल, बांध, सौर सरणी, पवन खेत और ट्रांसफार्मर।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:289
+#: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -24970,12 +24970,12 @@ msgstr ""
 "जब तंत्र चालू हो जाये और टक्स अपने घर में हो तब उसके लिए प्रकाश बटन दबाएं। जीतने के लिए "
 "आपको सभी उपभोक्ताओं पर स्विच करना होगा, जब सभी उत्पादक चलो हों।"
 
-#: activities/renewable_energy/RenewableEnergy.qml:291
+#: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "अक्षय उर्जा पर आधारित विद्युत प्रणाली के बारे में सीखें. मोज करें"
 
-#: activities/renewable_energy/RenewableEnergy.qml:315
+#: activities/renewable_energy/RenewableEnergy.qml:340
 #, fuzzy
 #| msgctxt "RenewableEnergy|"
 #| msgid ""
@@ -25266,13 +25266,13 @@ msgid ""
 msgstr ""
 "अब आप नियमों को जानते हैं, आप रोमन अंकों में किसी भी संख्या को पढ़ सकते हैं और लिख सकते हैं।"
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "रोमन मूल्य:  %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:379
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -26703,7 +26703,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "फिर %n कैंडी उनके बीच बराबर में बांटें."
 msgstr[1] "फिर %n कैंडी उनके बीच बराबर में बांटें."
 
-#: activities/share/Share.qml:348
+#: activities/share/Share.qml:358
 #, fuzzy, qt-format
 #| msgctxt "Share|"
 #| msgid "You can't put more than %1 candies in the same widget"
@@ -28178,7 +28178,7 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:201
+#: activities/solar_system/QuizScreen.qml:216
 #, fuzzy, qt-format
 #| msgctxt "LandSafe|"
 #| msgid "Acceleration: %1"
@@ -28186,7 +28186,7 @@ msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "त्वरण: %1"
 
-#: activities/solar_system/QuizScreen.qml:241
+#: activities/solar_system/QuizScreen.qml:256
 #, fuzzy, qt-format
 #| msgctxt "Guesscount|"
 #| msgid "%1/%2"
@@ -28194,13 +28194,13 @@ msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1/%2"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -28208,7 +28208,7 @@ msgid ""
 "System."
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -28669,7 +28669,7 @@ msgstr ""
 "आइटम स्वचालित रूप से आपके वर्तमान और भविष्य के अनुमानों में चयनित होते हैं जब तक कि आप उन्हें "
 "दो-क्लिक या टैप करके दोबारा न छापें।"
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:146
 #, fuzzy
 #| msgctxt "Superbrain|"
 #| msgid "This item is well placed"
@@ -28677,7 +28677,7 @@ msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "इस वस्तु को अच्छी तरह से रखा गया है"
 
-#: activities/superbrain/Superbrain.qml:143
+#: activities/superbrain/Superbrain.qml:148
 #, fuzzy
 #| msgctxt "Superbrain|"
 #| msgid "This item is misplaced"
@@ -29186,7 +29186,7 @@ msgstr ""
 "बादल, पम्पिंग स्टेशन और सीवेज ट्रीटमेंट प्लांट। जब तंत्र बैक अप हो जाता है और टक्स शॉवर में "
 "है, उसके लिए शॉवर बटन दबाएं।"
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:114
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -29198,12 +29198,12 @@ msgid ""
 "the water cycle."
 msgstr "जल चक्र का मुख्य घटक सूर्य है। जल चक्र शुरू करने के लिए सूरज पर क्लिक करें।"
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "जैसे जैसे सूरज उगता है, समुद्र का पानी गर्म होने और वाष्पीकृत होने लगता है।"
 
-#: activities/watercycle/Watercycle.qml:82
+#: activities/watercycle/Watercycle.qml:116
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -29217,7 +29217,7 @@ msgstr ""
 "बादल के रूप में जल वाष्प का मिश्रण होता है और जब बादल भारी हो जाते हैं, तो बारिश होती "
 "है क्लाउड पर क्लिक करें"
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:117
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -29234,19 +29234,19 @@ msgstr ""
 "पंपों के माध्यम से ले जाया जाता है। निवासियों को पानी की आपूर्ति करने के लिए मोटर पंप पर "
 "क्लिक करें"
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
 "clicking on it."
 msgstr "पानी से भरे टॉवर को देखें। उस पर क्लिक करके मलजल उपचार स्टेशन को सक्रिय करें।"
 
-#: activities/watercycle/Watercycle.qml:86
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "बहुत बढ़िया, जैसे ही टक्स घर पर आता है, शॉवर पर क्लिक करें।"
 
-#: activities/watercycle/Watercycle.qml:87
+#: activities/watercycle/Watercycle.qml:121
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid "Fantastic, you have completed water cycle. You can continue playing."
@@ -29255,7 +29255,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "बहुत खूब, आपने जल चक्र पूरा कर लिया है। आप खेल जारी रख सकते हैं।"
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -29266,7 +29266,7 @@ msgstr ""
 "आकाश तक और फिर से वापस फैलता है। सूरज की गर्मी महासागरों जैसे जल निकायों से पानी को "
 "उखाड़ने के लिए ऊर्जा प्रदान करती है।"
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:150
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -29283,7 +29283,7 @@ msgstr ""
 "छोटे बूंदों का निर्माण कर रहा है। जब बादल जमीन पर शांत हवा मिलते हैं, तो वर्षा शुरू होती "
 "है और बारिश के रूप में गिरती है।"
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:153
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -29293,7 +29293,7 @@ msgstr ""
 "कुछ पानी रॉक या मिट्टी की परतों के बीच फंस गया है, जिसे भूजल कहते हैं। लेकिन अधिकांश जल "
 "प्रवाह के रूप में बहता है, अंततः नदियों के माध्यम से समुद्र में लौटता है।"
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:155
 #, fuzzy
 #| msgctxt "Watercycle|"
 #| msgid ""
@@ -30329,7 +30329,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:269
+#: core/main.qml:263
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -30339,12 +30339,12 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "क्या आप उन्हें अभी डाउनलोड करना चाहते हैं?"
 
-#: core/main.qml:271
+#: core/main.qml:265
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:272
+#: core/main.qml:266
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Use full word image set"
@@ -30352,7 +30352,7 @@ msgctxt "main|"
 msgid "Full word image set"
 msgstr "पूर्ण शब्द छवि सेट का उपयोग करें"
 
-#: core/main.qml:273
+#: core/main.qml:267
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -30360,27 +30360,27 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "पृष्ठभूमि"
 
-#: core/main.qml:279
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: core/main.qml:286
+#: core/main.qml:280
 msgctxt "main|"
 msgid "No"
 msgstr "नहीं"
 
-#: core/main.qml:322
+#: core/main.qml:316
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "जीकोंप्रिस में आपका स्वागत है!"
 
-#: core/main.qml:323
+#: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "आप पहली बार जीकॉम्प्रिस चला रहे हैं।"
 
-#: core/main.qml:324
+#: core/main.qml:318
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -30396,35 +30396,35 @@ msgstr ""
 "की गई है, और सभी भाषा विशिष्ट ध्वनि फ़ाइलें इंस्टॉल की गई हैं। आप वरीयता संवाद में ऐसा कर "
 "सकते हैं"
 
-#: core/main.qml:326
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "मज़ा लें!"
 
-#: core/main.qml:328
+#: core/main.qml:322
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "आपका वर्तमान भाषा %1 (%2) है।"
 
-#: core/main.qml:360
+#: core/main.qml:354
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "जीकॉम्प्रिस को अद्यतन किया गया है! ये हैं नए परिवर्तन : <br/>"
 
-#: core/main.qml:388
+#: core/main.qml:382
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:389
+#: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:390
+#: core/main.qml:384
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"

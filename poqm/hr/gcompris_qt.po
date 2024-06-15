@@ -2315,27 +2315,27 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr "Ctrl + Shift + Z: vrati"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:91
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
 msgid "Title"
 msgstr "Naslov"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:97
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:96
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
 msgstr "Podnaslov"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:104
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:103
 msgctxt "BabyWordprocessor|"
 msgid "Paragraph"
 msgstr "Odlomak"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:130
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:129
 msgctxt "BabyWordprocessor|"
 msgid "Load"
 msgstr "Učitaj"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:140
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:139
 msgctxt "BabyWordprocessor|"
 msgid "Save"
 msgstr "Spremi"
@@ -2753,14 +2753,14 @@ msgstr ""
 "ravnoj liniji. Na ekranu osjetljivom na dodir moraš dodirnuti sličice dvije "
 "ruke u isto vrijeme."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr ""
 "Klikni na obje ruke u isto vrijeme kako bi lopta išla ravno prema Tuxu."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2950,7 +2950,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Ova slika će ti pomoći da izračunaš vrijednost bitova."
 
-#: activities/binary_bulb/BinaryBulb.qml:127
+#: activities/binary_bulb/BinaryBulb.qml:138
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3313,37 +3313,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Razmaknica ili Enter: potvrdi svoj odgovor"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Nedjelja"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:323
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Ponedjeljak"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:324
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Utorak"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:325
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Srijeda"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:326
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Četvrtak"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:327
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Petak"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:328
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Subota"
@@ -3620,7 +3620,7 @@ msgstr ""
 "Ti si zadužen za kanalsku branu. Otvori brane pravilnim redoslijedom, tako "
 "da Tux može proći u oba smjera."
 
-#: activities/canal_lock/CanalLock.qml:57
+#: activities/canal_lock/CanalLock.qml:82
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3629,7 +3629,7 @@ msgstr ""
 "Tvoj cilj je prevesti Tuxa preko kanalske brane kako bi preuzeo drvene "
 "balvane, koristeći različite vrste dostupnih vodenih brana."
 
-#: activities/canal_lock/CanalLock.qml:59
+#: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3639,7 +3639,7 @@ msgstr ""
 "Okomite obojene trake predstavljaju vodene brane, kojima se može upravljati "
 "klikom na njih. Dvije brave iste vrste ne mogu se koristiti istovremeno."
 
-#: activities/canal_lock/CanalLock.qml:61
+#: activities/canal_lock/CanalLock.qml:86
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4552,17 +4552,17 @@ msgid "Invalid, your king may be in check"
 msgstr "Nevažeće, tvoj kralj je možda u šahu"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:123
+#: activities/chess/Chess.qml:137
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Želi li stvarno poništiti sve poteze?"
 
-#: activities/chess/Chess.qml:124
+#: activities/chess/Chess.qml:138
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/chess/Chess.qml:125
+#: activities/chess/Chess.qml:139
 msgctxt "Chess|"
 msgid "No"
 msgstr "Ne"
@@ -5253,12 +5253,12 @@ msgstr ""
 "Najkraća kazaljka označava sate, duža kazaljka označava minute, a najduža "
 "kazaljka označava sekunde."
 
-#: activities/clockgame/Clockgame.qml:108
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Postavi sat na:"
 
-#: activities/clockgame/Clockgame.qml:111
+#: activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5267,7 +5267,7 @@ msgstr[0] "%n sat"
 msgstr[1] "%n sata"
 msgstr[2] "%n sati"
 
-#: activities/clockgame/Clockgame.qml:114
+#: activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5276,7 +5276,7 @@ msgstr[0] "%n minuta"
 msgstr[1] "%n minute"
 msgstr[2] "%n minuta"
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5377,67 +5377,67 @@ msgstr ""
 "tintu su cijan (posebna nijansa plave), magenta (posebna nijansa ružičaste) "
 "i žuta."
 
-#: activities/color_mix/ColorMix.qml:88
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Uskladi boju"
 
-#: activities/color_mix/ColorMix.qml:201
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nema dovoljno crvene"
 
-#: activities/color_mix/ColorMix.qml:203
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Previše crvene"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Nije dovoljno zeleno"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Previše zelene"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Nema dovoljno plave"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Previše plave"
 
-#: activities/color_mix/ColorMix.qml:217
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Nema dovoljno magente"
 
-#: activities/color_mix/ColorMix.qml:219
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Previše magente"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Nema dovoljno žute"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Previše žute"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Nema dovoljno cijan"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Previše cijan"
@@ -5599,7 +5599,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Pronađi ružičastu patku"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:272
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5608,12 +5608,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -7070,7 +7070,7 @@ msgstr ""
 "U trećoj razini prikazuje se nasumični tekstualni upit i moraš kliknuti na "
 "životinju koja odgovara tekstu."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:345
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7079,12 +7079,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:336
+#: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:337
+#: activities/explore_farm_animals/ExploreLevels.qml:347
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -9948,7 +9948,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tab: prebacivanje između uređivanja niza i pregledavanja modela"
 
-#: activities/frieze/Frieze.qml:291
+#: activities/frieze/Frieze.qml:301
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Spreman sam"
@@ -14838,7 +14838,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Strelice lijevo i desno: pomakni svemirski brod"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14851,7 +14851,7 @@ msgstr ""
 "masi obaju tijela i obrnuto proporcionalna kvadratu udaljenosti između "
 "njihovih središta."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14862,7 +14862,7 @@ msgstr ""
 "interakciji, masivniji objekti privlačit će jedni druge s većom "
 "gravitacijskom silom."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14873,7 +14873,7 @@ msgstr ""
 "dva objekta u interakciji, veća udaljenost rezultirat će slabijom "
 "gravitacijskom silom."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14884,7 +14884,7 @@ msgstr ""
 "stignete do svemirske stanice. Strelica pokazuje smjer i intenzitet "
 "gravitacije na vašem brodu."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14957,7 +14957,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulator: prebacivanje između brojeva i operatora"
 
-#: activities/guess24/Guess24.qml:106
+#: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Koristeći četiri broja i dane operatore dođi do broja 24."
@@ -15065,7 +15065,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "rezultat nije cijeli broj"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:161
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16439,31 +16439,31 @@ msgstr ""
 "u prazno područje. Ponavljaj ove korake dok broj naranči ne odgovara "
 "traženoj količini. Zatim klikni gumb OK kako bi potvrdio odgovor."
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Prikaži broj: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:119
+#: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Prikaži rezultat: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:120
+#: activities/learn_decimals/Learn_decimals.qml:131
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Prikaži rezultata: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:121
+#: activities/learn_decimals/Learn_decimals.qml:132
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Predstavi količinu: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:591
+#: activities/learn_decimals/Learn_decimals.qml:602
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16948,12 +16948,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Desna strelica: desna ruka kao odgovor"
 
-#: activities/leftright/Leftright.qml:144
+#: activities/leftright/Leftright.qml:153
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Lijeva ruka"
 
-#: activities/leftright/Leftright.qml:164
+#: activities/leftright/Leftright.qml:175
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Desna ruka"
@@ -17025,12 +17025,12 @@ msgstr ""
 "Na zastavi pričvršćenoj za avion prikazano je slovo. Odaberi sve riječi na "
 "popisu koje sadrže ovo slovo i zatim pritisni gumb OK."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:321
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Žao nam je, još nemamo prijevod za tvoj jezik."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:322
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17040,7 +17040,7 @@ msgstr ""
 "GCompris je razvila KDE zajednica, možeš prevesti GCompris pridruživanjem "
 "prevoditeljskom timu na <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:324
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17326,7 +17326,7 @@ msgstr ""
 "Moraš izračunati koliko je zvjezdica još ispod šešira. Klikni na donji dio "
 "za unos odgovora i na gumb OK za potvrdu."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:98
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klikni na šešir za početak igre"
@@ -17537,7 +17537,7 @@ msgstr ""
 "naprednim razinama, klikni na ikonu \"bosonogi / sportska obuća\" u gornjem "
 "lijevom kutu zaslona za prebacivanje u brzi način rada.\t"
 
-#: activities/maze/Maze.qml:314
+#: activities/maze/Maze.qml:319
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17676,7 +17676,7 @@ msgstr ""
 "Poslušaj zvučni slijed koji se reproducira i ponovi ga klikom na pločice "
 "ksilofona. Možeš ponovno poslušati zvučni niz klikom na gumb za ponavljanje."
 
-#: activities/melody/Melody.qml:312
+#: activities/melody/Melody.qml:334
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17685,12 +17685,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/melody/Melody.qml:313
+#: activities/melody/Melody.qml:335
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/melody/Melody.qml:314
+#: activities/melody/Melody.qml:336
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -18888,7 +18888,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:336
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18897,12 +18897,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:337
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/memory/MemoryCommon.qml:328
+#: activities/memory/MemoryCommon.qml:338
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -19338,12 +19338,12 @@ msgstr ""
 "Ovdje postavi tvoje omiljene aktivnosti klikom na simbol sunca u gornjem "
 "desnom kutu željene aktivnosti."
 
-#: activities/menu/Menu.qml:771
+#: activities/menu/Menu.qml:770
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Pretraži aktivnosti"
 
-#: activities/menu/Menu.qml:798
+#: activities/menu/Menu.qml:797
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Postavke aktivnosti"
@@ -19429,7 +19429,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - remiksiran i korišten kada se skuplja grumen zlata"
 
-#: activities/mining/Mining.qml:422
+#: activities/mining/Mining.qml:432
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19443,22 +19443,22 @@ msgstr ""
 "a zatim povuci jednim prstom na desno područje ili dva prsta na sredinu. Na "
 "području dodira povuci dva prsta od sjaja, po jedan u svakom smjeru."
 
-#: activities/mining/Mining.qml:438
+#: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Savršeno zumiraš. Nastavi dok ne vidiš grumen."
 
-#: activities/mining/Mining.qml:446
+#: activities/mining/Mining.qml:456
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hum, pazi, zumiraš predaleko od sjaja."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:464
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Sada vidiš grumen, klikni na njega da ga uhvatiš."
 
-#: activities/mining/Mining.qml:462
+#: activities/mining/Mining.qml:472
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19467,17 +19467,17 @@ msgstr ""
 "Hm, predaleko si od grumena da bi ga vidio. Ukloni zumiranje, a zatim "
 "ponovno zumiraj što bliže možeš od točke svjetlucanja."
 
-#: activities/mining/Mining.qml:470
+#: activities/mining/Mining.qml:480
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Sada smanji zumiranje i pokušaj pronaći drugu iskru."
 
-#: activities/mining/Mining.qml:478
+#: activities/mining/Mining.qml:488
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Nastavi smanjivati zumiranje dok ne vidiš sjaj."
 
-#: activities/mining/Mining.qml:486
+#: activities/mining/Mining.qml:496
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Sada vidiš iskru, samo naprijed, možeš je zumirati."
@@ -19809,13 +19809,13 @@ msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
 "Kada budeš spreman, klikni na Tuxa i razgovarat ćemo Morseovom abecedom."
 
-#: activities/morse_code/MorseCode.qml:351
+#: activities/morse_code/MorseCode.qml:360
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morseova vrijednost: %1"
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:361
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20131,20 +20131,20 @@ msgid ""
 "100% to complete the level."
 msgstr "Ispravno identificiraj note i osvoji 100% bodova za dovršetak razine."
 
-#: activities/note_names/NoteNames.qml:177
+#: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Nova nota: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:265
+#: activities/note_names/NoteNames.qml:264
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20153,12 +20153,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -21108,7 +21108,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Strelice: smjerovi"
 
-#: activities/path_encoding/GridPath.qml:125
+#: activities/path_encoding/GridPath.qml:136
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -21190,12 +21190,12 @@ msgstr ""
 "Pažljivo promotri dvije slike. Postoje neke male razlike. Kada pronađeš "
 "razliku moraš kliknuti na nju."
 
-#: activities/photo_hunter/PhotoHunter.qml:92
+#: activities/photo_hunter/PhotoHunter.qml:104
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Povuci klizač da bi prikazao razlike."
 
-#: activities/photo_hunter/PhotoHunter.qml:93
+#: activities/photo_hunter/PhotoHunter.qml:105
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klikni na razlike između dvije slike."
@@ -21660,37 +21660,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melodija spremljena u datoteku (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:360
+#: activities/piano_composition/Piano_composition.qml:359
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Nisi odabrao nijednu notu. Želiš li izbrisati sve note?"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:360
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/piano_composition/Piano_composition.qml:367
+#: activities/piano_composition/Piano_composition.qml:366
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Ne"
 
-#: activities/piano_composition/Piano_composition.qml:417
+#: activities/piano_composition/Piano_composition.qml:416
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Odaberi vrstu melodije za učitavanje."
 
-#: activities/piano_composition/Piano_composition.qml:422
+#: activities/piano_composition/Piano_composition.qml:421
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Unaprijed definirane melodije"
 
-#: activities/piano_composition/Piano_composition.qml:440
+#: activities/piano_composition/Piano_composition.qml:439
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Tvoje spremljene melodije"
 
-#: activities/piano_composition/Piano_composition.qml:554
+#: activities/piano_composition/Piano_composition.qml:553
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21699,12 +21699,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:555
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -21987,12 +21987,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace ili Delete: poništavanje"
 
-#: activities/play_piano/PlayPiano.qml:187
+#: activities/play_piano/PlayPiano.qml:198
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Klikni na tipke klavira koje odgovaraju zadanim notama."
 
-#: activities/play_piano/PlayPiano.qml:300
+#: activities/play_piano/PlayPiano.qml:311
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22001,12 +22001,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/play_piano/PlayPiano.qml:301
+#: activities/play_piano/PlayPiano.qml:312
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/play_piano/PlayPiano.qml:302
+#: activities/play_piano/PlayPiano.qml:313
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -22096,7 +22096,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Pokreni ili zaustavi metronom (ako je vidljiv)"
 
-#: activities/play_rhythm/PlayRhythm.qml:117
+#: activities/play_rhythm/PlayRhythm.qml:133
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -22104,7 +22104,7 @@ msgid ""
 msgstr ""
 "Pomoću metronoma procijeni vremenske intervale i pravilno  sviraj ritam."
 
-#: activities/play_rhythm/PlayRhythm.qml:118
+#: activities/play_rhythm/PlayRhythm.qml:134
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -22113,7 +22113,7 @@ msgstr ""
 "Slijedi okomitu crtu i klikni na bubanj ili pritisni razmaknicu za ispravnu "
 "reprodukciju ritma."
 
-#: activities/play_rhythm/PlayRhythm.qml:376
+#: activities/play_rhythm/PlayRhythm.qml:392
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22122,12 +22122,12 @@ msgstr ""
 "Ova aktivnost zahtijeva zvuk, pa će reproducirati neke zvukove čak i ako su "
 "audio glasovi ili efekti onemogućeni u glavnoj konfiguraciji."
 
-#: activities/play_rhythm/PlayRhythm.qml:377
+#: activities/play_rhythm/PlayRhythm.qml:393
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Zatvori"
 
-#: activities/play_rhythm/PlayRhythm.qml:378
+#: activities/play_rhythm/PlayRhythm.qml:394
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Nastavi"
@@ -22486,23 +22486,23 @@ msgstr ""
 "funkcije</b> za dodavanje kôda, klikni na <b>Petlja</b> ili na <b>Glavna "
 "funkcija</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:198
+#: activities/programmingMaze/ProgrammingMaze.qml:203
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Dohvati ribu za manje od %1 uputa."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:262
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Glavna funkcija"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Procedura"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Petlja"
@@ -22584,7 +22584,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter ili Return: pošalji svoj odgovor"
 
-#: activities/railroad/Railroad.qml:108
+#: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22593,7 +22593,7 @@ msgstr ""
 "Promatraj i zapamti vlak prije nego tajmer završi, a zatim povuci stavke da "
 "biste postavili sličan vlak."
 
-#: activities/railroad/Railroad.qml:109
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22640,12 +22640,12 @@ msgstr ""
 "<font color=\"#373737\">Provjeri je li riječ<br/></font><b><font color="
 "\"#315AAA\">%1</font></b><br/><font color=\"#373737\">prikazana</font>"
 
-#: activities/readingh/Readingh.qml:359
+#: activities/readingh/Readingh.qml:369
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Da, vidio sam!"
 
-#: activities/readingh/Readingh.qml:380
+#: activities/readingh/Readingh.qml:390
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Ne, nije bila tamo!"
@@ -22811,7 +22811,7 @@ msgstr ""
 "pritisni gumb za svjetlo umjesto njega. Za pobjedu moraš uključiti sve "
 "potrošače dok svi proizvođači rade."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22820,7 +22820,7 @@ msgstr ""
 "Tux se vratio s pecanja svojim brodom. Vrati električni sustav kako bi mogao "
 "imati svjetla u svom domu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:312
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22830,7 +22830,7 @@ msgstr ""
 "vjetroelektranu i transformatore, kako bi ponovno aktivirao cijeli "
 "električni sustav."
 
-#: activities/renewable_energy/RenewableEnergy.qml:289
+#: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22841,13 +22841,13 @@ msgstr ""
 "svjetlo umjesto njega. Za pobjedu moraš uključiti sve potrošače dok svi "
 "proizvođači rade."
 
-#: activities/renewable_energy/RenewableEnergy.qml:291
+#: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Nauči o električnom sustavu koji se temelji na obnovljivoj energiji. Uživaj."
 
-#: activities/renewable_energy/RenewableEnergy.qml:315
+#: activities/renewable_energy/RenewableEnergy.qml:340
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23123,13 +23123,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "Sada znate pravila, možeš čitati i pisati brojeve rimskim brojevima."
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rimski broj: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:379
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24188,7 +24188,7 @@ msgstr[0] "Zatim podijeli %n komad slatkiša na jednake dijelove među njima."
 msgstr[1] "Zatim podijeli %n komada slatkiša na jednake dijelove među njima."
 msgstr[2] "Zatim podijeli %n komada slatkiša na jednake dijelove među njima."
 
-#: activities/share/Share.qml:348
+#: activities/share/Share.qml:358
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25451,26 +25451,26 @@ msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Koliko je velik Neptun u usporedbi s drugim planetima Sunčevog sustava?"
 
-#: activities/solar_system/QuizScreen.qml:201
+#: activities/solar_system/QuizScreen.qml:216
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Preciznost: %1%"
 
-#: activities/solar_system/QuizScreen.qml:241
+#: activities/solar_system/QuizScreen.qml:256
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Tvoj konačni rezultat je: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25481,7 +25481,7 @@ msgstr ""
 "<br>Pokušaj ponovno testirati tvoje vještine ili treniraj u normalnom načinu "
 "rada da bi saznao više o Sunčevom sustavu."
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25962,12 +25962,12 @@ msgstr ""
 "stavke automatski se odabiru u tvojim trenutnim i budućim pogađanjima dok ih "
 "ne poništiš ponovnim dvostrukim klikom na njih."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Ova stavka je dobro postavljena."
 
-#: activities/superbrain/Superbrain.qml:143
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Ova stavka nije dobro postavljena."
@@ -26451,7 +26451,7 @@ msgstr ""
 "sustav. Kad se sustav ponovno pokrene i Tux bude pod tušem, pritisni tipku "
 "za tuš umjesto njega."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26460,12 +26460,12 @@ msgstr ""
 "Sunce je glavna komponenta ciklusa vode. Klikni na Sunce da pokreneš ciklus "
 "vode."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Kako sunce izlazi, morska voda se počinje zagrijavati i isparavati."
 
-#: activities/watercycle/Watercycle.qml:82
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26474,7 +26474,7 @@ msgstr ""
 "Vodena para se kondenzira stvarajući oblake, a kada oblaci postanu teški "
 "onda pada kiša. Klikni na oblak."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26485,7 +26485,7 @@ msgstr ""
 "do nas preko motornih pumpi. Klikni na motornu pumpu za opskrbu vodom "
 "stanovnika."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26494,18 +26494,18 @@ msgstr ""
 "Vidite toranj napunjen vodom. Aktiviraj stanicu za pročišćavanje otpadnih "
 "voda klikom na nju."
 
-#: activities/watercycle/Watercycle.qml:86
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Super, klikni na tuš, dok Tux stiže kući."
 
-#: activities/watercycle/Watercycle.qml:87
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastično, završio si vodeni ciklus. Možeš se nastaviti igrati."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26516,7 +26516,7 @@ msgstr ""
 "prolazi dok cirkulira od kopna do neba i natrag. Sunčeva toplina daje "
 "energiju za isparavanje vode iz vodenih tijela poput oceana."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26527,7 +26527,7 @@ msgstr ""
 "stvarajući sitne kapljice u oblacima. Kada se oblaci susreću s hladnim "
 "zrakom iznad kopna, stvaraju se oborine te počne padati kiša."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:153
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26538,7 +26538,7 @@ msgstr ""
 "voda. Ali većina vode teče kao otjecanje, vraćajući se na kraju u mora preko "
 "rijeka."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:155
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27472,7 +27472,7 @@ msgstr ""
 "Odredi na kojoj razini želiš pokrenuti aktivnost. Vrijedi samo ako se "
 "koristi i opcija --launch."
 
-#: core/main.qml:269
+#: core/main.qml:263
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27481,42 +27481,42 @@ msgstr ""
 "Želiš li automatski preuzeti ili ažurirati sljedeća vanjska sredstva "
 "prilikom pokretanja GComprisa?"
 
-#: core/main.qml:271
+#: core/main.qml:265
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Glasovi za tvoj jezik"
 
-#: core/main.qml:272
+#: core/main.qml:266
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Potpun slikovni rječnik"
 
-#: core/main.qml:273
+#: core/main.qml:267
 msgctxt "main|"
 msgid "Background music"
 msgstr "Pozadinska glazba"
 
-#: core/main.qml:279
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Yes"
 msgstr "Da"
 
-#: core/main.qml:286
+#: core/main.qml:280
 msgctxt "main|"
 msgid "No"
 msgstr "Ne"
 
-#: core/main.qml:322
+#: core/main.qml:316
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Dobrodošao u GCompris!"
 
-#: core/main.qml:323
+#: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Po prvi put pokrećeš GCompris."
 
-#: core/main.qml:324
+#: core/main.qml:318
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27525,23 +27525,23 @@ msgstr ""
 "Trebaš provjeriti jesu li postavke tvoje aplikacije, posebno jezik, ispravno "
 "odabran. To možeš učiniti u dijaloškom okviru konfiguracije."
 
-#: core/main.qml:326
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Zabavi se!"
 
-#: core/main.qml:328
+#: core/main.qml:322
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Tvoj trenutni jezik je %1 (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:354
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris je ažuriran! Evo novih promjena:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:382
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27550,12 +27550,12 @@ msgstr ""
 "Neke aktivnosti imaju dostupan novi skup podataka. Želiš li poništiti "
 "postojeće skupove podataka?"
 
-#: core/main.qml:389
+#: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
 msgstr "Primijeni"
 
-#: core/main.qml:390
+#: core/main.qml:384
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Odustani"

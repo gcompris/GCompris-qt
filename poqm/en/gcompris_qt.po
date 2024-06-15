@@ -7,7 +7,7 @@ msgstr ""
 "X-Language: en\n"
 "X-Qt-Contexts: true\n"
 
-#: ../activities/clockgame/Clockgame.qml:111
+#: ../activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -15,7 +15,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hour"
 msgstr[1] "%n hours"
 
-#: ../activities/clockgame/Clockgame.qml:114
+#: ../activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -23,7 +23,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minute"
 msgstr[1] "%n minutes"
 
-#: ../activities/clockgame/Clockgame.qml:117
+#: ../activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"

@@ -2347,27 +2347,27 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr "קטרל+שיפט+ז: לעשות שוב"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:91
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
 msgid "Title"
 msgstr "כותרת"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:97
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:96
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
 msgstr "כותרת משנה"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:104
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:103
 msgctxt "BabyWordprocessor|"
 msgid "Paragraph"
 msgstr "פיסקה"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:130
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:129
 msgctxt "BabyWordprocessor|"
 msgid "Load"
 msgstr "טען"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:140
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:139
 msgctxt "BabyWordprocessor|"
 msgid "Save"
 msgstr "שמור"
@@ -2764,13 +2764,13 @@ msgstr ""
 "ללחוץ על החץ ימינה ועל החץ שמאלה באותו זמן כדי לגרום לכדור להתגלגל בקו ישר. "
 "במסך מגע צריך לגעת בשתי הידיים באותו זמן."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "ללחוץ על שתי הידיים באותו זמן כדי לגלגל את הכדור בקו ישר."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2955,7 +2955,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "רישום זה יעזור לך לחשב את ערכם של הביטים."
 
-#: activities/binary_bulb/BinaryBulb.qml:127
+#: activities/binary_bulb/BinaryBulb.qml:138
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3314,37 +3314,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "רווח או אנטר: לאשר את התשובה שלך"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "ראשון"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:323
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "שני"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:324
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "שלישי"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:325
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "רביעי"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:326
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "חמישי"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:327
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "שישי"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:328
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "שבת"
@@ -3621,7 +3621,7 @@ msgstr ""
 "מחסום התעלה באחריותך. צריך לפתוח את השערים ואת מחסומי השערים בסדר הנכון ולתת "
 "לטאקס לעבור דרך השערים בשתי הדרכים."
 
-#: activities/canal_lock/CanalLock.qml:57
+#: activities/canal_lock/CanalLock.qml:82
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3630,7 +3630,7 @@ msgstr ""
 "המטרה היא להעביר את טוקס מעבר למחסום התעלה כדי להעביר את גזעי העצים. לשם כך "
 "יש להשתמש בסוגים שונים של מחסומי מים"
 
-#: activities/canal_lock/CanalLock.qml:59
+#: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3640,7 +3640,7 @@ msgstr ""
 "עמודי הצבע האנכיים מייצגים את מחסומי המים שניתן להפעיל באמצעות לחיצה עליהם. "
 "לא ניתן להפעיל שני מחסומים מאותו סוג באותו זמן."
 
-#: activities/canal_lock/CanalLock.qml:61
+#: activities/canal_lock/CanalLock.qml:86
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4479,17 +4479,17 @@ msgid "Invalid, your king may be in check"
 msgstr "לא אפשרי, אולי המלך שלך מאויים בשח"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:123
+#: activities/chess/Chess.qml:137
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "לבטל את כל המהלכים?"
 
-#: activities/chess/Chess.qml:124
+#: activities/chess/Chess.qml:138
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/chess/Chess.qml:125
+#: activities/chess/Chess.qml:139
 msgctxt "Chess|"
 msgid "No"
 msgstr "לא"
@@ -5179,12 +5179,12 @@ msgstr ""
 "המחוג הקצר ביותר מציין את השעות, המחוג הארוך יותר מציג את הדקות והמחוג הארוך "
 "ביותר מציין את השניות."
 
-#: activities/clockgame/Clockgame.qml:108
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "שנה את השעה ל:"
 
-#: activities/clockgame/Clockgame.qml:111
+#: activities/clockgame/Clockgame.qml:122
 #, fuzzy, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5194,7 +5194,7 @@ msgstr[1] "%n שעות"
 msgstr[2] ""
 msgstr[3] ""
 
-#: activities/clockgame/Clockgame.qml:114
+#: activities/clockgame/Clockgame.qml:125
 #, fuzzy, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5204,7 +5204,7 @@ msgstr[1] "%n דקות"
 msgstr[2] ""
 msgstr[3] ""
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:128
 #, fuzzy, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5302,67 +5302,67 @@ msgstr ""
 "לערבב שלושה צבעי בסיס בלבד כדי ליצור צבעים חדשים רבים. צבעי הבסיס לדיו הם "
 "ציאן (גוון מסויים של כחול), מג'נטה (גוון מסויים של ורוד), וצהוב."
 
-#: activities/color_mix/ColorMix.qml:88
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "להתאים את הצבע"
 
-#: activities/color_mix/ColorMix.qml:201
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "לא מספיק אדום"
 
-#: activities/color_mix/ColorMix.qml:203
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "יותר מדי אדום"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "לא מספיק ירוק"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "יותר מדי ירוק"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "לא מספיק כחול"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "יותר מדי כחול"
 
-#: activities/color_mix/ColorMix.qml:217
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "לא מספיק מגנטה"
 
-#: activities/color_mix/ColorMix.qml:219
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "יותר מדי מגנטה"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "לא מספיק צהוב"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "יותר מדי צהוב"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "לא מספיק ציאן"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "יותר מדי ציאן"
@@ -5521,7 +5521,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "עליך למצוא את הברווז הוורוד"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:272
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5530,12 +5530,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -6945,7 +6945,7 @@ msgid ""
 "animal that matches the text."
 msgstr "בשלב השלישי, כיתוב אקראי מוצג ועליך להקיש על החיה שמתאימה לכיתוב."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:345
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6954,12 +6954,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:336
+#: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:337
+#: activities/explore_farm_animals/ExploreLevels.qml:347
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -9765,7 +9765,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "רווח: להחליף בין מצב נראה ומצב בלתי-נראה"
 
-#: activities/frieze/Frieze.qml:291
+#: activities/frieze/Frieze.qml:301
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "אפשר להתחיל"
@@ -14668,7 +14668,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "חיצים שמאלה וימינה: להזיז את החללית"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14680,7 +14680,7 @@ msgstr ""
 "המשיכה מעבר לכדור הארץ. הכח הזה של משיכת כבידה קשור באופן ישיר למאסה של שני "
 "הגופים וביחס הפוך לריבוע המרחק בין המרכזים שלהם."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14690,7 +14690,7 @@ msgstr ""
 "מכיון שכח המשיכה נמצא ביחס ישר למאסה של שני גופים שנמצאים באינטראקציה, גופים "
 "בעלי מאסה גדולה יותר ימשכו זה את זה בכח גדול יותר."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14700,7 +14700,7 @@ msgstr ""
 "אבל הכח הזה נמצא ביחס הפוך לריבוע המרחק בין שני העצמים המעורבים, מרחק גדול "
 "יותר יגרום לכח משיכה חלש יותר."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14710,7 +14710,7 @@ msgstr ""
 "המטרה היא להזיז את החללית ולהימנע מפגיעה בכוכבים עד שתגיעי לתחנת החלל.החץ "
 "מצביע על כיוון ועוצמת כח המשיכה שמופעל  על החללית שלך."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14791,7 +14791,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr ""
 
-#: activities/guess24/Guess24.qml:106
+#: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr ""
@@ -14908,7 +14908,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "התוצאה אינה מִשתנֵה"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:161
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16268,31 +16268,31 @@ msgstr ""
 "לחזור על הצעדים האלו עד שמספר התפוזים מתאים לכמות הנדרשת. אז להקיש על כפתור "
 "OK כדי לוודא את התשובה."
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "להציג את המספר: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:119
+#: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "להציג את התוצאה של %2 + %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:120
+#: activities/learn_decimals/Learn_decimals.qml:131
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "להציג את התוצאה של %2 - %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:121
+#: activities/learn_decimals/Learn_decimals.qml:132
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "מייצג את הכמות %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:591
+#: activities/learn_decimals/Learn_decimals.qml:602
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16765,12 +16765,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "חץ ימינה: תשובה ימנית"
 
-#: activities/leftright/Leftright.qml:144
+#: activities/leftright/Leftright.qml:153
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "יש שמאל"
 
-#: activities/leftright/Leftright.qml:164
+#: activities/leftright/Leftright.qml:175
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "יד ימין"
@@ -16842,12 +16842,12 @@ msgstr ""
 "על הדגל שמובר למטוס מופיעה אות, לבחור את כל המילים או החפצים שבהן האות "
 "מופיעה ואז ללחוץ \"אישור\"."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:321
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "אנו מצטערים, אין לנו עדיין תרגום לשפה שלך."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:322
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16857,7 +16857,7 @@ msgstr ""
 "התוכנה GCompris מפותחת על ידי קהילת KDE, תוכל/י להצטרף לצוות המתרגמים/ות ב "
 "<a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:324
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17125,7 +17125,7 @@ msgstr ""
 "כמה נמצאים עדיין מתחת לכובע. ללחוץ על החלק התחתון כדי להכניס את התשובה שלך "
 "ועל כפתור ה\"אישור\" כדי לאמת אותה."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:98
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "ללחוץ על הכובע כדי להתחיל את המשחק"
@@ -17326,7 +17326,7 @@ msgstr ""
 "מוקדמים יותר או כדי לבטל אותו בשלבים מתקדמים, ללחוץ על סמל \"יחף/נעלי-ספורט"
 "\" בפינה השמאלית העליונה של המסך להחליף \"מצב-רוץ-מהר\".\t"
 
-#: activities/maze/Maze.qml:314
+#: activities/maze/Maze.qml:319
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17460,7 +17460,7 @@ msgstr ""
 "להקשיב לרצף הצלילים המנוגן ולחזור עליו באמצעות לחיצה על קלידי הקסילופון. "
 "אפשר להקשיב שוב לרצף הצלילים על ידי לחיצה על כפתור החזרה."
 
-#: activities/melody/Melody.qml:312
+#: activities/melody/Melody.qml:334
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17469,12 +17469,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/melody/Melody.qml:313
+#: activities/melody/Melody.qml:335
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/melody/Melody.qml:314
+#: activities/melody/Melody.qml:336
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -18596,7 +18596,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:336
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18605,12 +18605,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:337
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/memory/MemoryCommon.qml:328
+#: activities/memory/MemoryCommon.qml:338
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -19045,12 +19045,12 @@ msgstr ""
 "לשים את הפעילויות הכי אהובות כאן באמצעות לחיצה על השמש בצד הימני העליון של "
 "הפעילות הזו."
 
-#: activities/menu/Menu.qml:771
+#: activities/menu/Menu.qml:770
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "לחפש פעילות מסויימת"
 
-#: activities/menu/Menu.qml:798
+#: activities/menu/Menu.qml:797
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "הגדרות הפעילות"
@@ -19133,7 +19133,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "כשנאסף גוש זהב מתנגן metalpaint.wav שנכתב מחדש"
 
-#: activities/mining/Mining.qml:422
+#: activities/mining/Mining.qml:432
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19147,22 +19147,22 @@ msgstr ""
 "ולגרור אצבע אחת על האזור הימני או שתי אצבעות במרכז. על משטח מגע, לגרור שתי "
 "אצבעות מהניצנוץ והחוצה, אחת בכל כיוון."
 
-#: activities/mining/Mining.qml:438
+#: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "מיקוד נהדר. להמשיך עד שרואים גוש זהב."
 
-#: activities/mining/Mining.qml:446
+#: activities/mining/Mining.qml:456
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "אה, לשים לב, ההתמקדות רחוקה מדי מהניצנוץ."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:464
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "עכשיו רואים את גוש הזהב, להקיש עליו כדי לתפוס אותו."
 
-#: activities/mining/Mining.qml:462
+#: activities/mining/Mining.qml:472
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19171,17 +19171,17 @@ msgstr ""
 "אה, זה רחוק מדי מגוש הזהב בשביל לראות אותו. לצאת מההתמקדות ואז להתמקד מחדש "
 "הכי קרוב שאפשר לניצנוץ."
 
-#: activities/mining/Mining.qml:470
+#: activities/mining/Mining.qml:480
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "עכשיו להרחיב את המבט ולנסות למצוא ניצנוץ אחר."
 
-#: activities/mining/Mining.qml:478
+#: activities/mining/Mining.qml:488
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "להמשיך להרחיב את המבט עד שרואים את הניצנוץ."
 
-#: activities/mining/Mining.qml:486
+#: activities/mining/Mining.qml:496
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "עכשיו רואים את הניצנוץ, קדימה, אפשר להתמקד עליו."
@@ -19507,13 +19507,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "כשאתם מוכנים, לחצו על טאקס ונדבר בקוד מורס."
 
-#: activities/morse_code/MorseCode.qml:351
+#: activities/morse_code/MorseCode.qml:360
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "ערך מורס: %1"
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:361
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19823,20 +19823,20 @@ msgid ""
 "100% to complete the level."
 msgstr "לזהות נכון את התווים ולהשיג ציון 100 כדי להשלים את השלב."
 
-#: activities/note_names/NoteNames.qml:177
+#: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "תו חדש:  %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:265
+#: activities/note_names/NoteNames.qml:264
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19845,12 +19845,12 @@ msgstr ""
 "פעילות זו דורשת צליל והיא תנגן צלילים גם אם הקולות או האפקטים מבוטלים "
 "בהגדרות הראשיות."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "לצאת?"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -20789,7 +20789,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "חיצים: כיוונים"
 
-#: activities/path_encoding/GridPath.qml:125
+#: activities/path_encoding/GridPath.qml:136
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -20869,12 +20869,12 @@ msgstr ""
 "בחן את שתי התמונות בזהירות. ישנם כמה הבדלים קלים. כאשר אתה מוצא הבדל עליך "
 "ללחוץ עליו."
 
-#: activities/photo_hunter/PhotoHunter.qml:92
+#: activities/photo_hunter/PhotoHunter.qml:104
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "לגרור את המַחְלֵק כדי להראות את ההבדלים."
 
-#: activities/photo_hunter/PhotoHunter.qml:93
+#: activities/photo_hunter/PhotoHunter.qml:105
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "להקיש על ההבדלים בין שתי התמונות."
@@ -21323,37 +21323,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "המנגינה נשמרה לקובץ שלך (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:360
+#: activities/piano_composition/Piano_composition.qml:359
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "לא נבחרו תווים. האם למחוק את כל התווים?"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:360
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/piano_composition/Piano_composition.qml:367
+#: activities/piano_composition/Piano_composition.qml:366
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "לא"
 
-#: activities/piano_composition/Piano_composition.qml:417
+#: activities/piano_composition/Piano_composition.qml:416
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "לבחור את סוג המנגינה לטעינה."
 
-#: activities/piano_composition/Piano_composition.qml:422
+#: activities/piano_composition/Piano_composition.qml:421
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "מנגינות מוגדרות ראש"
 
-#: activities/piano_composition/Piano_composition.qml:440
+#: activities/piano_composition/Piano_composition.qml:439
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "המנגינות השמורות שלך"
 
-#: activities/piano_composition/Piano_composition.qml:554
+#: activities/piano_composition/Piano_composition.qml:553
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21362,12 +21362,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:555
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -21646,12 +21646,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "בקספייס (מחיקה אחורה) או דליט: לבטל פעולה אחרונה"
 
-#: activities/play_piano/PlayPiano.qml:187
+#: activities/play_piano/PlayPiano.qml:198
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "ללחוץ על קלידי הפסנתר שמתאימים לתווים הנתונים."
 
-#: activities/play_piano/PlayPiano.qml:300
+#: activities/play_piano/PlayPiano.qml:311
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21660,12 +21660,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/play_piano/PlayPiano.qml:301
+#: activities/play_piano/PlayPiano.qml:312
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/play_piano/PlayPiano.qml:302
+#: activities/play_piano/PlayPiano.qml:313
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -21753,14 +21753,14 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "טאב: להתחיל או להפסיק את המטרונות אם הוא מופיע"
 
-#: activities/play_rhythm/PlayRhythm.qml:117
+#: activities/play_rhythm/PlayRhythm.qml:133
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
 "correctly."
 msgstr "להשתמש במטרונום ( פַּעֲמָן) כדי להעריך את משכי הזמן ולנגן את הקצב נכון."
 
-#: activities/play_rhythm/PlayRhythm.qml:118
+#: activities/play_rhythm/PlayRhythm.qml:134
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21769,7 +21769,7 @@ msgstr ""
 "לעקוב אחרי הקו האנכי ולהקיש על התוף או ללחוץ על מקש הרווח כדי לנגן את המקצב "
 "נכון."
 
-#: activities/play_rhythm/PlayRhythm.qml:376
+#: activities/play_rhythm/PlayRhythm.qml:392
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21778,12 +21778,12 @@ msgstr ""
 "פעילות זו דורשת צלילים, היא תנגן צלילים אפילו אם הגדרות הקול או האפקטים "
 "מבוטלות בהגדרות המרכזיות."
 
-#: activities/play_rhythm/PlayRhythm.qml:377
+#: activities/play_rhythm/PlayRhythm.qml:393
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "לצאת"
 
-#: activities/play_rhythm/PlayRhythm.qml:378
+#: activities/play_rhythm/PlayRhythm.qml:394
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -22131,23 +22131,23 @@ msgstr ""
 "-כדי <b>להחליף</b> בין  <b>אזור הלולאה</b> ו <b>אזור פעולות עיקריות</b>כדי "
 "להוסיף את הקוד שלך, ללחוץ על <b>לולאה</b> או<b>אזור פעולות עיקריות</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:198
+#: activities/programmingMaze/ProgrammingMaze.qml:203
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "להגיע לדג בפחות מ %1 פקודות."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:262
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "פעולה עיקרית"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "הליך"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "לולאה"
@@ -22227,7 +22227,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "2. אנטר (הכנס) כדי להגיש את התשובה"
 
-#: activities/railroad/Railroad.qml:108
+#: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22236,7 +22236,7 @@ msgstr ""
 "להתבונן ולזכור את הרכבת לפני שהספירה לאחור מסתיימת ואז לגרור את החלקים כדי "
 "להרכיב רכבת זהה."
 
-#: activities/railroad/Railroad.qml:109
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22281,12 +22281,12 @@ msgstr ""
 "<font color=\"#373737\">האם המילה<br/></font><b><font color=\"#315AAA\">%1</"
 "font></b><br/><font color=\"#373737\">מופיעה</font>"
 
-#: activities/readingh/Readingh.qml:359
+#: activities/readingh/Readingh.qml:369
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "כן, ראיתי אותה!"
 
-#: activities/readingh/Readingh.qml:380
+#: activities/readingh/Readingh.qml:390
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "לא, היא לא הייתה שם!"
@@ -22450,7 +22450,7 @@ msgstr ""
 "ללחוץ על כפתור המנורה בשבילו. כדי לזכות עליך להפעיל את כל הצרכנים כאשר כל "
 "הספקים פועלים."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22459,7 +22459,7 @@ msgstr ""
 "טוקס חזר הביתה מהדייג (הוא לא באמת דג, הוא שוחה עם דולפינים) על הסירה שלו. "
 "צריך לחדש את פעולתה של מערכת החשמל כדי שיוכל להיות לו אור בבית."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:312
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22468,7 +22468,7 @@ msgstr ""
 "ללחוץ על חלקים שונים בפעילות: שמש, ענן, סכר, מערכת סולארית, חוות רוח ושנאים "
 "כדי להפעיל מחדש את מערכת החשמל כולה."
 
-#: activities/renewable_energy/RenewableEnergy.qml:289
+#: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22478,12 +22478,12 @@ msgstr ""
 "כשהמערכת שוב פועלת וטוקס נמצא בביתו, ללחוץ על כפתור המנורה בשבילו. כדי לזכות "
 "עליך להפעיל את כל הצרכנים כאשר כל הספקים פועלים."
 
-#: activities/renewable_energy/RenewableEnergy.qml:291
+#: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "ללמוד על מערכת חשמל המבוססת על אנרגיה מתחדשת. בכיף."
 
-#: activities/renewable_energy/RenewableEnergy.qml:315
+#: activities/renewable_energy/RenewableEnergy.qml:340
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22753,13 +22753,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "עכשיו כשיודעים את החוקים, אפשר לקרוא ולכתוב ספרות רומיות."
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "ערך רומי: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:379
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -23791,7 +23791,7 @@ msgstr[1] "אז לחלק %n חתיכות של סוכריות ביניהם."
 msgstr[2] ""
 msgstr[3] ""
 
-#: activities/share/Share.qml:348
+#: activities/share/Share.qml:358
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25043,25 +25043,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "כמה גדול הוא נפטון בהשוואה לכוכבי לכת אחרים במערכת השמש?"
 
-#: activities/solar_system/QuizScreen.qml:201
+#: activities/solar_system/QuizScreen.qml:216
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "דיוק: %1%"
 
-#: activities/solar_system/QuizScreen.qml:241
+#: activities/solar_system/QuizScreen.qml:256
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "הציון הסופי שלך הוא: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25071,7 +25071,7 @@ msgstr ""
 "עליך להשיג ציון גבוה מ90% כדי להפוך למומחה במערכת השמש!<br>לנסות לבחון שוב "
 "את היכולות או להתאמן במצב רגיל כדי ללמוד עוד על מערכת השמש."
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25526,12 +25526,12 @@ msgstr ""
 "ובניחושים עתידיים שלך עד שמסירים את הסימון שלהם, שוב, באמצעות הקשה כפולה או "
 "לחיצה."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "פריט זה ממוקם נכון."
 
-#: activities/superbrain/Superbrain.qml:143
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "פריט זה ממוקם לא נכון."
@@ -26005,7 +26005,7 @@ msgstr ""
 "מי השופכין (מכון קולחין) כדי להפעיל מחדש את כל מערכת המים. כאשר המערכת פועלת "
 "מחדש וטוקס נמצא במקלחת, ללחוץ על כפתור המקלחת בשבילו."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26013,12 +26013,12 @@ msgid ""
 msgstr ""
 "השמש היא החלק המרכזי במחזור המים. ללחוץ על השמש כדי להתחיל את מחזור המים."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "כאשר השמש עולה, המים בים מתחילים להתחמם ולהתאדות."
 
-#: activities/watercycle/Watercycle.qml:82
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26026,7 +26026,7 @@ msgid ""
 msgstr ""
 "אדי מים מתעבים ויוצרים עננים וכשהעננים נעשים כבדים, יורד גשם. לחצו על הענן."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26036,7 +26036,7 @@ msgstr ""
 "גשם גורם לנהרות לזרום והמים מובלים אלינו באמצעות משאבה חשמלית דרך מגדל המים. "
 "ללחוץ על המשאבה החשמלית כדי לספק מים לתושבים."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26045,18 +26045,18 @@ msgstr ""
 "לראות את המגדל מתמלא במים. להפעיל את מכון הקולחין לטיפול במי הביוב באמצעות "
 "לחיצה עליו."
 
-#: activities/watercycle/Watercycle.qml:86
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "נהדר, ללחו. על המקלחת כשטוקס מגיע הביתה."
 
-#: activities/watercycle/Watercycle.qml:87
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "יוצא מהכלל, השלמת את מחזור המים. אפשר להמשיך לשחק."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26066,7 +26066,7 @@ msgstr ""
 "מחזור המים (נקרא גם מעגל הידרולוגי) הוא מסע שהמים עוברים כשהם חוזרים מהיבשה "
 "לשמים ושוב ושוב. חום השמש מספק אנרגיה כדי לאדות מים מגופי מים כמו אוקיינוסים."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26076,7 +26076,7 @@ msgstr ""
 "גם צמחים מאבדים מים לאוויר דרך דִּיּוּת. אדי המים מתקררים ויוצרים אגלים זעירים "
 "ועננים. כאשר העננים פוגשים אויר קר מעל היבשה, נוצרים משקעים שיורדים כגשם."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:153
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26086,7 +26086,7 @@ msgstr ""
 "חלק מהמים נלכדים בין שכבות אבן וחימר ונקראים מי-תהום. אבל רוב המים זורמים "
 "כנגר-עילי, וחוזרים בסופו של דבר לים דרך הנהרות."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:155
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27025,7 +27025,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:269
+#: core/main.qml:263
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -27035,42 +27035,42 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "רוצה להוריד את התוספים החיצוניים האלו?"
 
-#: core/main.qml:271
+#: core/main.qml:265
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "קולות לשפה שלך"
 
-#: core/main.qml:272
+#: core/main.qml:266
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "ערכת דמות מילה מלאה"
 
-#: core/main.qml:273
+#: core/main.qml:267
 msgctxt "main|"
 msgid "Background music"
 msgstr "מוזיקת רקע"
 
-#: core/main.qml:279
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Yes"
 msgstr "כן"
 
-#: core/main.qml:286
+#: core/main.qml:280
 msgctxt "main|"
 msgid "No"
 msgstr "לא"
 
-#: core/main.qml:322
+#: core/main.qml:316
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "ברוך בואך לGCompris!"
 
-#: core/main.qml:323
+#: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "זאת ההפעלה הראשונה של GCompris."
 
-#: core/main.qml:324
+#: core/main.qml:318
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -27085,35 +27085,35 @@ msgstr ""
 "כדאי לוודא שהגדרות האפלקציות שלך ובמיוחד הגדרות השפה מכוונות נכון ושכל קולות "
 "השפה הייחודיים מותקנים. אפשר לעשות את זה בתפריט ההעדפות."
 
-#: core/main.qml:326
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "תעשה/י חיים!"
 
-#: core/main.qml:328
+#: core/main.qml:322
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "השפה הנוכחית שלך היא %1 (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:354
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "הידד, GCompris עודכן! אלו השינויים החדשים:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:382
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:389
+#: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
 msgstr "החלה"
 
-#: core/main.qml:390
+#: core/main.qml:384
 #, fuzzy
 #| msgctxt "DialogChooseLevel|"
 #| msgid "Cancel"

@@ -2319,27 +2319,27 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr "Ctrl + Shift + Z: Gjer om angring"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:91
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
 msgid "Title"
 msgstr "Tittel"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:97
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:96
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
 msgstr "Overskrift"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:104
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:103
 msgctxt "BabyWordprocessor|"
 msgid "Paragraph"
 msgstr "Avsnitt"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:130
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:129
 msgctxt "BabyWordprocessor|"
 msgid "Load"
 msgstr "Opna"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:140
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:139
 msgctxt "BabyWordprocessor|"
 msgid "Save"
 msgstr "Lagra"
@@ -2752,13 +2752,13 @@ msgstr ""
 "Trykk på venstre og høgre piltast samtidig for å senda ballen rett fram. På "
 "ein peikeskjerm må du trykkja på dei to hendene samtidig."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
 msgstr "Trykk på dei to hendene samtidig for å senda ballen rett fram."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2950,7 +2950,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Du kan bruka denne teikninga for å rekna ut verdien til kvar bit."
 
-#: activities/binary_bulb/BinaryBulb.qml:127
+#: activities/binary_bulb/BinaryBulb.qml:138
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3304,37 +3304,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Mellomrom eller Enter: Sjå om svaret er rett"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sundag"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:323
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Måndag"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:324
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Tysdag"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:325
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:326
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Torsdag"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:327
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Fredag"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:328
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Laurdag"
@@ -3612,14 +3612,14 @@ msgstr ""
 "rekkjefølgje, slik at Tux kan reisa fram og tilbake gjennom systemet."
 
 # Må vera lik (starten på) tilsvarande tekst i «gcompris_voices.po».
-#: activities/canal_lock/CanalLock.qml:57
+#: activities/canal_lock/CanalLock.qml:82
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr "Du må hjelpa Tux gjennom kanalslusa for å henta tømmerstokkar."
 
-#: activities/canal_lock/CanalLock.qml:59
+#: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3629,7 +3629,7 @@ msgstr ""
 "Dei loddrette firkantane er sluseportar, som du kan trykkja på for å opna "
 "eller stengja. Men du kan ikkje betena to like sluseportar samtidig."
 
-#: activities/canal_lock/CanalLock.qml:61
+#: activities/canal_lock/CanalLock.qml:86
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4479,17 +4479,17 @@ msgid "Invalid, your king may be in check"
 msgstr "Ugyldig – kongen kan vera i sjakk"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:123
+#: activities/chess/Chess.qml:137
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Er du sikker på at du vil angra alle trekka du har gjort?"
 
-#: activities/chess/Chess.qml:124
+#: activities/chess/Chess.qml:138
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/chess/Chess.qml:125
+#: activities/chess/Chess.qml:139
 msgctxt "Chess|"
 msgid "No"
 msgstr "Nei"
@@ -5153,12 +5153,12 @@ msgstr ""
 "Den kortaste visaren viser timane, den mellomste minutta og den lengste "
 "sekunda."
 
-#: activities/clockgame/Clockgame.qml:108
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Set uret til"
 
-#: activities/clockgame/Clockgame.qml:111
+#: activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5167,7 +5167,7 @@ msgstr[0] "%n time"
 msgstr[1] "%n timar"
 
 # Nødvendig med «og» for å få grammatisk setning (eks. «Set uret til 9 timar og 45 minutt»).
-#: activities/clockgame/Clockgame.qml:114
+#: activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5175,7 +5175,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "og %n minutt"
 msgstr[1] "og %n minutt"
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5269,67 +5269,67 @@ msgstr ""
 "kan me laga alle regnbogens fargar. Primærfargane for måling er cyanblå (ein "
 "lys blåfarge), magenta (ein spesiell rosa-/lilla-farge) og gul."
 
-#: activities/color_mix/ColorMix.qml:88
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Lag lik farge"
 
-#: activities/color_mix/ColorMix.qml:201
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Ikkje nok raudt"
 
-#: activities/color_mix/ColorMix.qml:203
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "For mykje raudt"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Ikkje nok grønt"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "For mykje grønt"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Ikkje nok blått"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "For mykje blått"
 
-#: activities/color_mix/ColorMix.qml:217
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Ikkje nok magenta"
 
-#: activities/color_mix/ColorMix.qml:219
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "For mykje magenta"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Ikkje nok gult"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "For mykje gult"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Ikkje nok cyanblått"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "For mykje cyanblått"
@@ -5477,7 +5477,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Finn den rosa anda"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:272
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5486,12 +5486,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -6935,7 +6935,7 @@ msgid ""
 msgstr ""
 "På det tredje brettet må du lesa litt om eit dyr og så trykkja på det dyret."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:345
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -6944,12 +6944,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:336
+#: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:337
+#: activities/explore_farm_animals/ExploreLevels.qml:347
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -9804,7 +9804,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Tabulator: Byt mellom frisebygging og vising av modellen"
 
-#: activities/frieze/Frieze.qml:291
+#: activities/frieze/Frieze.qml:301
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Eg er klar"
@@ -14731,7 +14731,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Pil venstre/høgre: Styr romskipet til venstre/høgre"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14743,7 +14743,7 @@ msgstr ""
 "jordkloten. Tiltrekkings­krafta mellom to objekt avheng av massen deira og er "
 "omvend proporsjonal med kvadratet av avstanden mellom dei."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14753,7 +14753,7 @@ msgstr ""
 "Sidan tyngdekrafta er direkte proporsjonal med massen til begge objekta, vil "
 "meir massive («tyngre») objekt tiltrekkja kvarandre sterkare."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14764,7 +14764,7 @@ msgstr ""
 "dei, så objekt som er langt frå kvarandre, vil ikkje trekkja så kraftig på "
 "kvarandre."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14775,7 +14775,7 @@ msgstr ""
 "romstasjonen. Pilene viser retninga og styrken til tyngdekreftene som verkar "
 "på romskipet."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14843,7 +14843,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Tabulator: Byt mellom tal og operatorar"
 
-#: activities/guess24/Guess24.qml:106
+#: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Bruk dei fire tala og operatorane til å komma fram til svaret 24."
@@ -14944,7 +14944,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "Svaret er ikkje eit heiltal."
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:161
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16302,31 +16302,31 @@ msgstr ""
 "appelsinar svarar til det viste talet. Trykk så på «OK»-knappen for å sjekka "
 "svaret."
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Vis talet: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:119
+#: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Vis summen: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:120
+#: activities/learn_decimals/Learn_decimals.qml:131
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Vis differansen: %1 − %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:121
+#: activities/learn_decimals/Learn_decimals.qml:132
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Uttrykk talet: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:591
+#: activities/learn_decimals/Learn_decimals.qml:602
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16778,12 +16778,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Pil venstre: Svar «høgre»"
 
-#: activities/leftright/Leftright.qml:144
+#: activities/leftright/Leftright.qml:153
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Venstrehand"
 
-#: activities/leftright/Leftright.qml:164
+#: activities/leftright/Leftright.qml:175
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Høgrehand"
@@ -16853,12 +16853,12 @@ msgstr ""
 "Flagget på flyet viser ein bokstav. Vel alle orda som inneheld bokstaven, og "
 "trykk så «OK»."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:321
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:322
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16868,7 +16868,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:324
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17150,7 +17150,7 @@ msgstr ""
 "hatten. Trykk på området nede til høgre for å svara og så på «OK»-knappen "
 "for å sjå om svaret var rett."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:98
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Trykk på hatten for å starta spelet"
@@ -17357,7 +17357,7 @@ msgstr ""
 "seinare labyrintane, kan du trykkja på «berrføtt/joggesko»-ikonet oppe til "
 "venstre.\t"
 
-#: activities/maze/Maze.qml:314
+#: activities/maze/Maze.qml:319
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17494,7 +17494,7 @@ msgstr ""
 "rekkjefølgje. Du kan høyra han om att ved å trykkja på munnbiletet nedst på "
 "skjermen."
 
-#: activities/melody/Melody.qml:312
+#: activities/melody/Melody.qml:334
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17503,12 +17503,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/melody/Melody.qml:313
+#: activities/melody/Melody.qml:335
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/melody/Melody.qml:314
+#: activities/melody/Melody.qml:336
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -18680,7 +18680,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr ":"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:336
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18689,12 +18689,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:337
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/memory/MemoryCommon.qml:328
+#: activities/memory/MemoryCommon.qml:338
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -19132,12 +19132,12 @@ msgstr ""
 "Legg favorittaktivitetane dine her ved å trykkja på sola oppe til høgre for "
 "kvar aktivitet."
 
-#: activities/menu/Menu.qml:771
+#: activities/menu/Menu.qml:770
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Søk etter aktivitetar"
 
-#: activities/menu/Menu.qml:798
+#: activities/menu/Menu.qml:797
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Endra innstillingar for aktivitetar"
@@ -19223,7 +19223,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav – remiksa og brukt når du plukkar opp ein gullklump"
 
-#: activities/mining/Mining.qml:422
+#: activities/mining/Mining.qml:432
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19239,22 +19239,22 @@ msgstr ""
 "Viss du har ein peikeskjerm, dra to fingrar i kvar si retning vekk frå "
 "glimtet."
 
-#: activities/mining/Mining.qml:438
+#: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Perfekt! Du nærmar deg. Hald fram slik, heilt til du ser gullklumpen."
 
-#: activities/mining/Mining.qml:446
+#: activities/mining/Mining.qml:456
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Pass på. No er du på veg vekk frå staden der gullklumpen er."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:464
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "No ser du gullklumpen. Trykk på han for å ta han."
 
-#: activities/mining/Mining.qml:462
+#: activities/mining/Mining.qml:472
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19263,18 +19263,18 @@ msgstr ""
 "Pass på. No er du for langt unna staden der gullklumpen er. Fjern deg frå "
 "bergveggen, og prøv på nytt når du kan sjå glimtet frå gullklumpen att."
 
-#: activities/mining/Mining.qml:470
+#: activities/mining/Mining.qml:480
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr ""
 "Fjern deg frå bergveggen att for å finna eit nytt glimt av ein gullklump."
 
-#: activities/mining/Mining.qml:478
+#: activities/mining/Mining.qml:488
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Fjern deg meir frå bergveggen, til du ser glimtet att."
 
-#: activities/mining/Mining.qml:486
+#: activities/mining/Mining.qml:496
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr ""
@@ -19586,13 +19586,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Trykk på Tux når du er klar, så skal me kommunisera med morseteikn."
 
-#: activities/morse_code/MorseCode.qml:351
+#: activities/morse_code/MorseCode.qml:360
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Morseteikn: %1"
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:361
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -19899,20 +19899,20 @@ msgid ""
 "100% to complete the level."
 msgstr "Kjenn att alle notane for å fullføra kvart nivå."
 
-#: activities/note_names/NoteNames.qml:177
+#: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Ny note: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:265
+#: activities/note_names/NoteNames.qml:264
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19921,12 +19921,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -20854,7 +20854,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Piltastar: Gå i valt retning"
 
-#: activities/path_encoding/GridPath.qml:125
+#: activities/path_encoding/GridPath.qml:136
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -20939,12 +20939,12 @@ msgstr ""
 "Sjå nøye på dei to bileta. Dei er ikkje heilt like. Trykk på alle "
 "forskjellane du finn."
 
-#: activities/photo_hunter/PhotoHunter.qml:92
+#: activities/photo_hunter/PhotoHunter.qml:104
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Dra glidebrytaren for å visa forskjellane."
 
-#: activities/photo_hunter/PhotoHunter.qml:93
+#: activities/photo_hunter/PhotoHunter.qml:105
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Trykk på forskjellane mellom dei to bileta."
@@ -21414,37 +21414,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melodien vart lagra til fil (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:360
+#: activities/piano_composition/Piano_composition.qml:359
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Du har ikkje valt nokon note. Ønskjer du å fjerna alle notane?"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:360
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/piano_composition/Piano_composition.qml:367
+#: activities/piano_composition/Piano_composition.qml:366
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Nei"
 
-#: activities/piano_composition/Piano_composition.qml:417
+#: activities/piano_composition/Piano_composition.qml:416
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Vel kva type melodi du vil opna."
 
-#: activities/piano_composition/Piano_composition.qml:422
+#: activities/piano_composition/Piano_composition.qml:421
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Ferdige melodiar"
 
-#: activities/piano_composition/Piano_composition.qml:440
+#: activities/piano_composition/Piano_composition.qml:439
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Dine lagra melodiar"
 
-#: activities/piano_composition/Piano_composition.qml:554
+#: activities/piano_composition/Piano_composition.qml:553
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21453,12 +21453,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:555
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -21731,12 +21731,12 @@ msgid "Backspace or Delete: undo"
 msgstr "Delete eller Rettetast: Angra"
 
 # Må vera lik tilsvarande tekst i «gcompris_voices.po».
-#: activities/play_piano/PlayPiano.qml:187
+#: activities/play_piano/PlayPiano.qml:198
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Trykk på tangentane som svarar til notane du ser og høyrer."
 
-#: activities/play_piano/PlayPiano.qml:300
+#: activities/play_piano/PlayPiano.qml:311
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21745,12 +21745,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/play_piano/PlayPiano.qml:301
+#: activities/play_piano/PlayPiano.qml:312
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/play_piano/PlayPiano.qml:302
+#: activities/play_piano/PlayPiano.qml:313
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -21838,7 +21838,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tabulator: Start/stopp taktmålaren dersom han er synleg"
 
-#: activities/play_rhythm/PlayRhythm.qml:117
+#: activities/play_rhythm/PlayRhythm.qml:133
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -21847,7 +21847,7 @@ msgstr ""
 "Bruk taktmålaren til å estimera tidsintervalla, til hjelp for å spela av "
 "rett rytme."
 
-#: activities/play_rhythm/PlayRhythm.qml:118
+#: activities/play_rhythm/PlayRhythm.qml:134
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -21856,7 +21856,7 @@ msgstr ""
 "Følg den loddrette linja og trykk på tromma eller mellomromstasten i rett "
 "rytme."
 
-#: activities/play_rhythm/PlayRhythm.qml:376
+#: activities/play_rhythm/PlayRhythm.qml:392
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21865,12 +21865,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/play_rhythm/PlayRhythm.qml:377
+#: activities/play_rhythm/PlayRhythm.qml:393
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/play_rhythm/PlayRhythm.qml:378
+#: activities/play_rhythm/PlayRhythm.qml:394
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -22228,23 +22228,23 @@ msgstr ""
 "– For å <b>byta</b> mellom <b>lykkje­området</b> og <b>hovudfunksjons­området</"
 "b> for å leggja til kode, trykk på <b>Lykkje</b> eller <b>Hovudfunksjon</b>."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:198
+#: activities/programmingMaze/ProgrammingMaze.qml:203
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Få tak i fisken med færre enn %1 instruksjonar."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:262
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Hovudfunksjon"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Prosedyre"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Lykkje"
@@ -22326,7 +22326,7 @@ msgid "Enter or Return: submit your answer"
 msgstr "Enter eller Return: Sjå om svaret er rett"
 
 # Må vera lik tilsvarande tekst i «gcompris_voices.po».
-#: activities/railroad/Railroad.qml:108
+#: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22335,7 +22335,7 @@ msgstr ""
 "Sjå på toget og prøv å hugsa det. Når tida er ute, skal du setja saman "
 "vognene slik toget var."
 
-#: activities/railroad/Railroad.qml:109
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22383,12 +22383,12 @@ msgstr ""
 "<font color=\"#373737\">Sjå om ordet<br/></font><b><font color=\"#315AAA\">"
 "%1</font></b><br/><font color=\"#373737\">vert vist</font>"
 
-#: activities/readingh/Readingh.qml:359
+#: activities/readingh/Readingh.qml:369
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ja, eg såg det!"
 
-#: activities/readingh/Readingh.qml:380
+#: activities/readingh/Readingh.qml:390
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Nei, det var ikkje der!"
@@ -22550,7 +22550,7 @@ msgstr ""
 "for han. For å vinna må du slå på alle maskinene mens det vert produsert "
 "straum."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22559,7 +22559,7 @@ msgstr ""
 "Tux kjem heim etter ein båttur, og du må få straumnettet i gang, slik at han "
 "får lys heime."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:312
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22568,7 +22568,7 @@ msgstr ""
 "Trykk på dei ulike elementa – sola, skyene, demningen, solcellepanela, "
 "vindmøllene og transformatorane – for å setja straumsystemet i gang."
 
-#: activities/renewable_energy/RenewableEnergy.qml:289
+#: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22579,12 +22579,12 @@ msgstr ""
 "lysbrytaren for han. For å vinna må du slå på alle maskinene mens det vert "
 "produsert straum."
 
-#: activities/renewable_energy/RenewableEnergy.qml:291
+#: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Lær om eit straumsystem basert på fornybar energi. Kos deg!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:315
+#: activities/renewable_energy/RenewableEnergy.qml:340
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -22850,13 +22850,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "No som du kan reglane, kan du lesa og skriva romartal."
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Romartal: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:379
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -23905,7 +23905,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Del så %n bitar smågodt med dei."
 msgstr[1] "Del så %n bitar smågodt med dei."
 
-#: activities/share/Share.qml:348
+#: activities/share/Share.qml:358
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25171,26 +25171,26 @@ msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Kor stor er Neptun samanlikna med dei andre planetane i solsystemet vårt?"
 
-#: activities/solar_system/QuizScreen.qml:201
+#: activities/solar_system/QuizScreen.qml:216
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Nøyaktigheit: %1 %"
 
-#: activities/solar_system/QuizScreen.qml:241
+#: activities/solar_system/QuizScreen.qml:256
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Du fekk <font color=\"#3bb0de\">%1 %</font> rett.<br><br>%2"
 
 # Det heiter læremodus (learning mode), ikkje normalmodus.
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25200,7 +25200,7 @@ msgstr ""
 "For å reknast som ekspert på solsystemet må du få minst 90 % rett!<br>Ta "
 "testen på nytt eller lær meir om solsystemet i læremodus først."
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25664,12 +25664,12 @@ msgstr ""
 "framtida, heilt du fjernar markeringa att ved eit nytt dobbeltklikk."
 
 # «item» er anten farge eller form, og «gjenstand» eller «element» vert feil/dårleg på norsk. Men det fungerer å kutta ut subtantivtet heilt.
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Denne er rett plassert."
 
-#: activities/superbrain/Superbrain.qml:143
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Denne er feilplassert."
@@ -26110,7 +26110,7 @@ msgstr ""
 "vassreinsingsanlegget – for å setja vasskrinsløpet i gang. Når du er ferdig "
 "og Tux har komme til dusjen, kan du trykkja på dusjknappen for han."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26119,12 +26119,12 @@ msgstr ""
 "Sola er hovudkomponenten i vasskrinsløpet. Trykk på sola for å starta "
 "krinsløpet."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Når sola står opp, vert vatnet i havet varmare og tek til å fordampa."
 
-#: activities/watercycle/Watercycle.qml:82
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26133,7 +26133,7 @@ msgstr ""
 "Vassdamp vert kondensert til skyer, og når skyene vert tunge, regnar dei. "
 "Trykk på skya."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26144,7 +26144,7 @@ msgstr ""
 "til oss via vasspumper og vasstårn. Trykk på vasspumpe­stasjonen for å frakta "
 "vatn til innbyggjarane."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26154,12 +26154,12 @@ msgstr ""
 "det i gang."
 
 # Tux har gjerne komme heim lenge før ein kjem til dette trinnet, så brukar «har komme» i staden for «kjem» her.
-#: activities/watercycle/Watercycle.qml:86
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Flott! Trykk på dusjen når Tux har komme heim."
 
-#: activities/watercycle/Watercycle.qml:87
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
@@ -26167,7 +26167,7 @@ msgstr ""
 "Fantastisk! Du har fullført vasskrinsløpet. Du kan halda fram med å spela, "
 "viss du vil."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26178,7 +26178,7 @@ msgstr ""
 "land til skyer og tilbake. Sola gjev varmeenergi som fordampar vatnet frå "
 "havet og andre vassmassar."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26189,7 +26189,7 @@ msgstr ""
 "ned og dannar små vassdropar i skyene. Når skyene møter kald luft over land, "
 "fell vatnet som regn."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:153
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26199,7 +26199,7 @@ msgstr ""
 "Noko av vatnet sit fast i jord og berg under jordoverflata. Dette vert kalla "
 "grunnvatn. Men det meste av vatnet renn ut i havet att, via elver."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:155
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27127,7 +27127,7 @@ msgstr ""
 "Vel kva nivå aktiviteten skal startast på. Vert berre brukt saman med «--"
 "launch»-valet."
 
-#: core/main.qml:269
+#: core/main.qml:263
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27136,42 +27136,42 @@ msgstr ""
 "Vil du automatisk lasta ned / oppdatera desse eksterne ressursane ved start "
 "av GCompris?"
 
-#: core/main.qml:271
+#: core/main.qml:265
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Talefiler for morsmålet ditt"
 
-#: core/main.qml:272
+#: core/main.qml:266
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Fullstendig ordbiletsamling"
 
-#: core/main.qml:273
+#: core/main.qml:267
 msgctxt "main|"
 msgid "Background music"
 msgstr "Bakgrunnsmusikk"
 
-#: core/main.qml:279
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/main.qml:286
+#: core/main.qml:280
 msgctxt "main|"
 msgid "No"
 msgstr "Nei"
 
-#: core/main.qml:322
+#: core/main.qml:316
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Velkommen til GCompris!"
 
-#: core/main.qml:323
+#: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Du køyrer GCompris for første gong."
 
-#: core/main.qml:324
+#: core/main.qml:318
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27180,23 +27180,23 @@ msgstr ""
 "Du bør stadfesta at program­innstillingane er rette, spesielt programspråket. "
 "Dette kan du gjera i innstillingsvindauget."
 
-#: core/main.qml:326
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Kos deg!"
 
-#: core/main.qml:328
+#: core/main.qml:322
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Språket ditt er no «%1» (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:354
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris er oppdatert! Her er det nye i denne versjonen:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:382
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27205,12 +27205,12 @@ msgstr ""
 "Nokre aktivitetar har no nye datasett tilgjengeleg. Vil du nullstilla "
 "utvalet av datasett?"
 
-#: core/main.qml:389
+#: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
 msgstr "Bruk"
 
-#: core/main.qml:390
+#: core/main.qml:384
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Avbryt"

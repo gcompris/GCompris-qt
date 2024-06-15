@@ -2325,27 +2325,27 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + Shift + Z: redo"
 msgstr "Ctrl + Shift + Z: fanya upya"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:91
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:90
 msgctxt "BabyWordprocessor|"
 msgid "Title"
 msgstr "Kichwa cha Habari"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:97
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:96
 msgctxt "BabyWordprocessor|"
 msgid "Subtitle"
 msgstr "Manukuu"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:104
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:103
 msgctxt "BabyWordprocessor|"
 msgid "Paragraph"
 msgstr "Aya"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:130
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:129
 msgctxt "BabyWordprocessor|"
 msgid "Load"
 msgstr "Pakia"
 
-#: activities/baby_wordprocessor/BabyWordprocessor.qml:140
+#: activities/baby_wordprocessor/BabyWordprocessor.qml:139
 msgctxt "BabyWordprocessor|"
 msgid "Save"
 msgstr "Hifadhi"
@@ -2769,7 +2769,7 @@ msgstr ""
 "kufanya mpira uende kwenye mstari ulionyooka. Kwenye skrini ya kugusa "
 "unapaswa kugusa mikono miwili kwa wakati mmoja."
 
-#: activities/ballcatch/Ballcatch.qml:222
+#: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
@@ -2777,7 +2777,7 @@ msgstr ""
 "Gonga mikono yote miwili kwa wakati mmoja, ili kufanya mpira uende kwenye "
 "mstari ulio sawa."
 
-#: activities/ballcatch/Ballcatch.qml:224
+#: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
 msgid ""
 "Press left and right arrow keys at the same time, to make the ball go in a "
@@ -2970,7 +2970,7 @@ msgctxt "binary_bulb|"
 msgid "This image will help you to compute bits' value."
 msgstr "Picha hii itakusaidia kukokotoa thamani ya biti."
 
-#: activities/binary_bulb/BinaryBulb.qml:127
+#: activities/binary_bulb/BinaryBulb.qml:138
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
@@ -3331,37 +3331,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Nafasi au Ingiza: thibitisha jibu lako"
 
-#: activities/calendar/Calendar.qml:311
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Jumapili"
 
-#: activities/calendar/Calendar.qml:312
+#: activities/calendar/Calendar.qml:323
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Jumatatu"
 
-#: activities/calendar/Calendar.qml:313
+#: activities/calendar/Calendar.qml:324
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Jumanne"
 
-#: activities/calendar/Calendar.qml:314
+#: activities/calendar/Calendar.qml:325
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Jumatano"
 
-#: activities/calendar/Calendar.qml:315
+#: activities/calendar/Calendar.qml:326
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Alhamisi"
 
-#: activities/calendar/Calendar.qml:316
+#: activities/calendar/Calendar.qml:327
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Ijumaa"
 
-#: activities/calendar/Calendar.qml:317
+#: activities/calendar/Calendar.qml:328
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Jumamosi"
@@ -3639,7 +3639,7 @@ msgstr ""
 "mpangilio unaofaa, ili Tux aweze kusafiri kupitia malango katika pande zote "
 "mbili."
 
-#: activities/canal_lock/CanalLock.qml:57
+#: activities/canal_lock/CanalLock.qml:82
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3648,7 +3648,7 @@ msgstr ""
 "Lengo lako ni kumwongoza Tux kuvuka kufuli ya mfereji ili kupata magogo ya "
 "mbao, kwa kutumia aina tofauti za kufuli za maji zinazopatikana."
 
-#: activities/canal_lock/CanalLock.qml:59
+#: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3659,7 +3659,7 @@ msgstr ""
 "kuendeshwa kwa kubofya. Kufuli mbili za aina moja haziwezi kuendeshwa kwa "
 "wakati mmoja."
 
-#: activities/canal_lock/CanalLock.qml:61
+#: activities/canal_lock/CanalLock.qml:86
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4520,17 +4520,17 @@ msgid "Invalid, your king may be in check"
 msgstr "Si sahihi, mfalme wako anaweza kudhibitiwa"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:123
+#: activities/chess/Chess.qml:137
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Je, kweli unataka kutendua hatua zote?"
 
-#: activities/chess/Chess.qml:124
+#: activities/chess/Chess.qml:138
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/chess/Chess.qml:125
+#: activities/chess/Chess.qml:139
 msgctxt "Chess|"
 msgid "No"
 msgstr "Hapana"
@@ -5233,12 +5233,12 @@ msgstr ""
 "Mkono mfupi zaidi unaonyesha saa, mkono mrefu zaidi unaonyesha dakika, na "
 "mkono mrefu zaidi unaonyesha sekunde."
 
-#: activities/clockgame/Clockgame.qml:108
+#: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
 msgid "Set the watch to:"
 msgstr "Weka saa iwe:"
 
-#: activities/clockgame/Clockgame.qml:111
+#: activities/clockgame/Clockgame.qml:122
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n hour(s)"
@@ -5246,7 +5246,7 @@ msgid_plural "%n hour(s)"
 msgstr[0] "%n hour"
 msgstr[1] "%n hours"
 
-#: activities/clockgame/Clockgame.qml:114
+#: activities/clockgame/Clockgame.qml:125
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n minute(s)"
@@ -5254,7 +5254,7 @@ msgid_plural "%n minute(s)"
 msgstr[0] "%n minute"
 msgstr[1] "%n minutes"
 
-#: activities/clockgame/Clockgame.qml:117
+#: activities/clockgame/Clockgame.qml:128
 #, qt-format
 msgctxt "Clockgame|"
 msgid "%n second(s)"
@@ -5354,67 +5354,67 @@ msgstr ""
 "za msingi za rangi/wino ni cyan (kivuli maalum cha bluu), magenta (kivuli "
 "maalum cha waridi), na manjano."
 
-#: activities/color_mix/ColorMix.qml:88
+#: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Linganisha rangi"
 
-#: activities/color_mix/ColorMix.qml:201
+#: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nyekundu haitoshi"
 
-#: activities/color_mix/ColorMix.qml:203
+#: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Nyekundu nyingi sana"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Haitoshi kijani"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Kijani sana"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Sio bluu ya kutosha"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Bluu nyingi sana"
 
-#: activities/color_mix/ColorMix.qml:217
+#: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Majenta haitoshi"
 
-#: activities/color_mix/ColorMix.qml:219
+#: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "magenta"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Haitoshi njano"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Njano nyingi sana"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Sio rangi ya samawati ya kutosha"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "samawati nyingi sana"
@@ -5576,7 +5576,7 @@ msgctxt "colors|"
 msgid "Find the pink duck"
 msgstr "Tafuta bata wa pinki"
 
-#: activities/colors/FindIt.qml:260
+#: activities/colors/FindIt.qml:272
 msgctxt "FindIt|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -5585,12 +5585,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/colors/FindIt.qml:261
+#: activities/colors/FindIt.qml:273
 msgctxt "FindIt|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/colors/FindIt.qml:262
+#: activities/colors/FindIt.qml:274
 msgctxt "FindIt|"
 msgid "Continue"
 msgstr "Endelea"
@@ -7078,7 +7078,7 @@ msgstr ""
 "Katika kiwango cha tatu, kidokezo cha maandishi bila mpangilio kinaonyeshwa "
 "na lazima ubofye mnyama anayelingana na maandishi."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:335
+#: activities/explore_farm_animals/ExploreLevels.qml:345
 msgctxt "ExploreLevels|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -7087,12 +7087,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/explore_farm_animals/ExploreLevels.qml:336
+#: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/explore_farm_animals/ExploreLevels.qml:337
+#: activities/explore_farm_animals/ExploreLevels.qml:347
 msgctxt "ExploreLevels|"
 msgid "Continue"
 msgstr "Endelea"
@@ -9978,7 +9978,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Kichupo: badilisha kati ya kuhariri frieze na kutazama modeli"
 
-#: activities/frieze/Frieze.qml:291
+#: activities/frieze/Frieze.qml:301
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Niko tayari"
@@ -14876,7 +14876,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Kushoto na kulia mishale: hoja spaceship"
 
-#: activities/gravity/Gravity.qml:210
+#: activities/gravity/Gravity.qml:216
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14889,7 +14889,7 @@ msgstr ""
 "moja kwa moja wingi wa vitu vyote viwili na inawiana kinyume na mraba wa "
 "umbali kati ya vituo vyao."
 
-#: activities/gravity/Gravity.qml:214
+#: activities/gravity/Gravity.qml:220
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14900,7 +14900,7 @@ msgstr ""
 "viwili vinavyoingiliana, vitu vikubwa zaidi vitavutia kila mmoja kwa nguvu "
 "kubwa zaidi ya uvutano."
 
-#: activities/gravity/Gravity.qml:217
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14910,7 +14910,7 @@ msgstr ""
 "Lakini kwa vile nguvu hii inawiana kinyume na mraba wa umbali kati ya vitu "
 "viwili vinavyoingiliana, umbali zaidi utasababisha nguvu dhaifu ya uvutano."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14921,7 +14921,7 @@ msgstr ""
 "kituo cha anga. Mshale unaonyesha mwelekeo na ukubwa wa mvuto kwenye meli "
 "yako."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -14994,7 +14994,7 @@ msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
 msgstr "Jedwali: badilisha kati ya nambari na waendeshaji"
 
-#: activities/guess24/Guess24.qml:106
+#: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
 msgstr "Tumia nambari nne zilizo na waendeshaji fulani kupata 24."
@@ -15102,7 +15102,7 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "matokeo sio nambari kamili"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:161
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -16482,31 +16482,31 @@ msgstr ""
 "inalingana na idadi iliyoombwa. Kisha ubofye kitufe cha Sawa ili "
 "kuthibitisha jibu lako."
 
-#: activities/learn_decimals/Learn_decimals.qml:118
+#: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
 msgstr "Onyesha nambari: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:119
+#: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 + %2"
 msgstr "Onyesha matokeo ya: %1 + %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:120
+#: activities/learn_decimals/Learn_decimals.qml:131
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the result of: %1 - %2"
 msgstr "Onyesha matokeo ya: %1 - %2"
 
-#: activities/learn_decimals/Learn_decimals.qml:121
+#: activities/learn_decimals/Learn_decimals.qml:132
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Represent the quantity: %1"
 msgstr "Wakilisha wingi: %1"
 
-#: activities/learn_decimals/Learn_decimals.qml:591
+#: activities/learn_decimals/Learn_decimals.qml:602
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Enter the result: %1"
@@ -16992,12 +16992,12 @@ msgctxt "ActivityInfo|"
 msgid "Right arrow: right hand answer"
 msgstr "Mshale wa kulia: jibu la mkono wa kulia"
 
-#: activities/leftright/Leftright.qml:144
+#: activities/leftright/Leftright.qml:153
 msgctxt "Leftright|"
 msgid "Left hand"
 msgstr "Mkono wa kushoto"
 
-#: activities/leftright/Leftright.qml:164
+#: activities/leftright/Leftright.qml:175
 msgctxt "Leftright|"
 msgid "Right hand"
 msgstr "Mkono wa kulia"
@@ -17069,12 +17069,12 @@ msgstr ""
 "Barua inaonyeshwa kwenye bendera iliyowekwa kwenye ndege. Chagua maneno yote "
 "kwenye orodha iliyo na herufi hii kisha ubonyeze kitufe cha Sawa."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:321
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Samahani, bado hatuna tafsiri ya lugha yako."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:322
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17084,7 +17084,7 @@ msgstr ""
 "GCompris imetengenezwa na jumuiya ya KDE, unaweza kutafsiri GCompris kwa "
 "kujiunga na timu ya utafsiri kwenye <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:324
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -17372,7 +17372,7 @@ msgstr ""
 "Unapaswa kuhesabu nyota ngapi bado ziko chini ya kofia. Bofya kwenye eneo la "
 "chini ili kuingiza jibu lako na kwenye kitufe cha Sawa ili kulithibitisha."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:98
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Bonyeza kofia ili kuanza mchezo"
@@ -17584,7 +17584,7 @@ msgstr ""
 "kukizima katika viwango vya juu, bofya aikoni ya \"barefoot/sportshoe\" "
 "kwenye kona ya juu kushoto ya skrini ili kugeuza hali ya kukimbia-haraka."
 
-#: activities/maze/Maze.qml:314
+#: activities/maze/Maze.qml:319
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -17724,7 +17724,7 @@ msgstr ""
 "Sikiliza mfuatano wa sauti unaochezwa, na urudie kwa kubofya pau za marimba. "
 "Unaweza kusikiliza tena mlolongo wa sauti kwa kubofya kitufe cha kurudia."
 
-#: activities/melody/Melody.qml:312
+#: activities/melody/Melody.qml:334
 msgctxt "Melody|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -17733,12 +17733,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/melody/Melody.qml:313
+#: activities/melody/Melody.qml:335
 msgctxt "Melody|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/melody/Melody.qml:314
+#: activities/melody/Melody.qml:336
 msgctxt "Melody|"
 msgid "Continue"
 msgstr "Endelea"
@@ -18933,7 +18933,7 @@ msgctxt "math_util|"
 msgid "÷"
 msgstr "÷"
 
-#: activities/memory/MemoryCommon.qml:326
+#: activities/memory/MemoryCommon.qml:336
 msgctxt "MemoryCommon|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -18942,12 +18942,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/memory/MemoryCommon.qml:327
+#: activities/memory/MemoryCommon.qml:337
 msgctxt "MemoryCommon|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/memory/MemoryCommon.qml:328
+#: activities/memory/MemoryCommon.qml:338
 msgctxt "MemoryCommon|"
 msgid "Continue"
 msgstr "Endelea"
@@ -19384,12 +19384,12 @@ msgstr ""
 "Weka shughuli zako uzipendazo hapa kwa kubofya jua kwenye sehemu ya juu "
 "kulia ya shughuli hiyo."
 
-#: activities/menu/Menu.qml:771
+#: activities/menu/Menu.qml:770
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Tafuta shughuli mahususi"
 
-#: activities/menu/Menu.qml:798
+#: activities/menu/Menu.qml:797
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Mipangilio ya Shughuli"
@@ -19480,7 +19480,7 @@ msgstr ""
 "metalpaint.wav - iliyochanganywa na kutumika wakati nugget ya dhahabu "
 "inakusanywa"
 
-#: activities/mining/Mining.qml:422
+#: activities/mining/Mining.qml:432
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19495,22 +19495,22 @@ msgstr ""
 "kulia au vidole viwili katikati. Kwenye eneo la kugusa, buruta vidole viwili "
 "kutoka kwenye kung'aa, kimoja katika kila upande."
 
-#: activities/mining/Mining.qml:438
+#: activities/mining/Mining.qml:448
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Ni sawa kabisa unakuza. Endelea hadi uone nugget."
 
-#: activities/mining/Mining.qml:446
+#: activities/mining/Mining.qml:456
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Ahh, kuwa mwangalifu, unakuza mbali sana na mng'ao."
 
-#: activities/mining/Mining.qml:454
+#: activities/mining/Mining.qml:464
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Sasa unaona nugget, bonyeza juu yake ili kuikamata."
 
-#: activities/mining/Mining.qml:462
+#: activities/mining/Mining.qml:472
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19519,17 +19519,17 @@ msgstr ""
 "Hum, uko mbali sana na nugget kuiona. Zungusha kisha zoom tena kwa ukaribu "
 "uwezavyo kutoka kwenye kumetameta."
 
-#: activities/mining/Mining.qml:470
+#: activities/mining/Mining.qml:480
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Sasa fungua na ujaribu kutafuta mng'aro mwingine."
 
-#: activities/mining/Mining.qml:478
+#: activities/mining/Mining.qml:488
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Endelea kuvuta hadi uone kumeta."
 
-#: activities/mining/Mining.qml:486
+#: activities/mining/Mining.qml:496
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Sasa unaona kung'aa, endelea, unaweza kuvuta juu yake."
@@ -19860,13 +19860,13 @@ msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr "Ukiwa tayari, bofya Tux na tutazungumza kwa msimbo wa Morse."
 
-#: activities/morse_code/MorseCode.qml:351
+#: activities/morse_code/MorseCode.qml:360
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
 msgstr "Thamani ya ziada: %1"
 
-#: activities/morse_code/MorseCode.qml:352
+#: activities/morse_code/MorseCode.qml:361
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
@@ -20186,20 +20186,20 @@ msgid ""
 "100% to complete the level."
 msgstr "Tambua madokezo kwa usahihi na upate alama 100% to ukamilishe kiwango."
 
-#: activities/note_names/NoteNames.qml:177
+#: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
 msgstr "Dokezo jipya: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:265
+#: activities/note_names/NoteNames.qml:264
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20208,12 +20208,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/note_names/NoteNames.qml:454
+#: activities/note_names/NoteNames.qml:453
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Endelea"
@@ -21170,7 +21170,7 @@ msgctxt "ActivityInfo|"
 msgid "Arrows: directions"
 msgstr "Mishale: maelekezo"
 
-#: activities/path_encoding/GridPath.qml:125
+#: activities/path_encoding/GridPath.qml:136
 #, qt-format
 msgctxt "GridPath|"
 msgid "Errors: %1"
@@ -21254,12 +21254,12 @@ msgstr ""
 "Zingatia picha hizo mbili kwa makini. Kuna baadhi ya tofauti kidogo. "
 "Unapopata tofauti lazima ubofye juu yake."
 
-#: activities/photo_hunter/PhotoHunter.qml:92
+#: activities/photo_hunter/PhotoHunter.qml:104
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Buruta kitelezi ili kuonyesha tofauti."
 
-#: activities/photo_hunter/PhotoHunter.qml:93
+#: activities/photo_hunter/PhotoHunter.qml:105
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Bofya kwenye tofauti kati ya picha hizo mbili."
@@ -21726,37 +21726,37 @@ msgctxt "piano_composition|"
 msgid "Melody saved to your file (%1)"
 msgstr "Melody imehifadhiwa kwenye faili yako (%1)"
 
-#: activities/piano_composition/Piano_composition.qml:360
+#: activities/piano_composition/Piano_composition.qml:359
 msgctxt "Piano_composition|"
 msgid "You have not selected any note. Do you want to erase all the notes?"
 msgstr "Hujachagua dokezo lolote. Je, ungependa kufuta madokezo yote?"
 
-#: activities/piano_composition/Piano_composition.qml:361
+#: activities/piano_composition/Piano_composition.qml:360
 msgctxt "Piano_composition|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/piano_composition/Piano_composition.qml:367
+#: activities/piano_composition/Piano_composition.qml:366
 msgctxt "Piano_composition|"
 msgid "No"
 msgstr "Hapana"
 
-#: activities/piano_composition/Piano_composition.qml:417
+#: activities/piano_composition/Piano_composition.qml:416
 msgctxt "Piano_composition|"
 msgid "Select the type of melody to load."
 msgstr "Chagua aina ya wimbo wa kupakia."
 
-#: activities/piano_composition/Piano_composition.qml:422
+#: activities/piano_composition/Piano_composition.qml:421
 msgctxt "Piano_composition|"
 msgid "Pre-defined melodies"
 msgstr "Nyimbo zilizofafanuliwa mapema"
 
-#: activities/piano_composition/Piano_composition.qml:440
+#: activities/piano_composition/Piano_composition.qml:439
 msgctxt "Piano_composition|"
 msgid "Your saved melodies"
 msgstr "Nyimbo zako ulizohifadhi"
 
-#: activities/piano_composition/Piano_composition.qml:554
+#: activities/piano_composition/Piano_composition.qml:553
 msgctxt "Piano_composition|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -21765,12 +21765,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/piano_composition/Piano_composition.qml:555
+#: activities/piano_composition/Piano_composition.qml:554
 msgctxt "Piano_composition|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/piano_composition/Piano_composition.qml:556
+#: activities/piano_composition/Piano_composition.qml:555
 msgctxt "Piano_composition|"
 msgid "Continue"
 msgstr "Endelea"
@@ -22052,12 +22052,12 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
 msgstr "Backspace au Futa: tengua"
 
-#: activities/play_piano/PlayPiano.qml:187
+#: activities/play_piano/PlayPiano.qml:198
 msgctxt "PlayPiano|"
 msgid "Click on the piano keys that match the given notes."
 msgstr "Bofya kwenye vitufe vya piano vinavyolingana na madokezo uliyopewa."
 
-#: activities/play_piano/PlayPiano.qml:300
+#: activities/play_piano/PlayPiano.qml:311
 msgctxt "PlayPiano|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22066,12 +22066,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/play_piano/PlayPiano.qml:301
+#: activities/play_piano/PlayPiano.qml:312
 msgctxt "PlayPiano|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/play_piano/PlayPiano.qml:302
+#: activities/play_piano/PlayPiano.qml:313
 msgctxt "PlayPiano|"
 msgid "Continue"
 msgstr "Endelea"
@@ -22161,7 +22161,7 @@ msgctxt "ActivityInfo|"
 msgid "Tab: Start or stop the metronome if it is visible"
 msgstr "Tab: Anzisha au usimamishe metronome ikiwa inaonekana"
 
-#: activities/play_rhythm/PlayRhythm.qml:117
+#: activities/play_rhythm/PlayRhythm.qml:133
 msgctxt "PlayRhythm|"
 msgid ""
 "Use the metronome to estimate the time intervals and play the rhythm "
@@ -22169,7 +22169,7 @@ msgid ""
 msgstr ""
 "Tumia metronome kukadiria vipindi vya saa na ucheze mdundo kwa usahihi."
 
-#: activities/play_rhythm/PlayRhythm.qml:118
+#: activities/play_rhythm/PlayRhythm.qml:134
 msgctxt "PlayRhythm|"
 msgid ""
 "Follow the vertical line and click on the drum or press space key to play "
@@ -22178,7 +22178,7 @@ msgstr ""
 "Fuata mstari wa wima na ubofye kwenye ngoma au ubonyeze kitufe cha nafasi "
 "ili kucheza mdundo kwa usahihi."
 
-#: activities/play_rhythm/PlayRhythm.qml:376
+#: activities/play_rhythm/PlayRhythm.qml:392
 msgctxt "PlayRhythm|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -22187,12 +22187,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/play_rhythm/PlayRhythm.qml:377
+#: activities/play_rhythm/PlayRhythm.qml:393
 msgctxt "PlayRhythm|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/play_rhythm/PlayRhythm.qml:378
+#: activities/play_rhythm/PlayRhythm.qml:394
 msgctxt "PlayRhythm|"
 msgid "Continue"
 msgstr "Endelea"
@@ -22553,23 +22553,23 @@ msgstr ""
 "Kuu</b> ili kuongeza msimbo wako, bofya kwenye lebo ya <b>Kurudia</b> au "
 "<b>Kazi Kuu</b> ."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:198
+#: activities/programmingMaze/ProgrammingMaze.qml:203
 #, qt-format
 msgctxt "ProgrammingMaze|"
 msgid "Reach the fish in less than %1 instructions."
 msgstr "Fikia samaki kwa chini ya maagizo %1."
 
-#: activities/programmingMaze/ProgrammingMaze.qml:262
+#: activities/programmingMaze/ProgrammingMaze.qml:267
 msgctxt "ProgrammingMaze|"
 msgid "Main function"
 msgstr "Kazi kuu"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Procedure"
 msgstr "Utaratibu"
 
-#: activities/programmingMaze/ProgrammingMaze.qml:290
+#: activities/programmingMaze/ProgrammingMaze.qml:295
 msgctxt "ProgrammingMaze|"
 msgid "Loop"
 msgstr "Kurudia"
@@ -22651,7 +22651,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Ingiza au Rudisha: wasilisha jibu lako"
 
-#: activities/railroad/Railroad.qml:108
+#: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22660,7 +22660,7 @@ msgstr ""
 "Angalia na ukumbuke treni kabla ya kipima muda kuisha na kisha uburute vitu "
 "ili kusanidi treni kama hiyo."
 
-#: activities/railroad/Railroad.qml:109
+#: activities/railroad/Railroad.qml:133
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22706,12 +22706,12 @@ msgstr ""
 "<font color=\"#373737\">Angalia ikiwa neno<br/></font> <b><font color="
 "\"#315AAA\">%1</font></b><br/> <font color=\"#373737\">inaonyeshwa</font>"
 
-#: activities/readingh/Readingh.qml:359
+#: activities/readingh/Readingh.qml:369
 msgctxt "Readingh|"
 msgid "Yes, I saw it!"
 msgstr "Ndiyo niliona!"
 
-#: activities/readingh/Readingh.qml:380
+#: activities/readingh/Readingh.qml:390
 msgctxt "Readingh|"
 msgid "No, it was not there!"
 msgstr "Hapana, haikuwepo!"
@@ -22877,7 +22877,7 @@ msgstr ""
 "ajili yake. Ili kushinda lazima uwashe watumiaji wote wakati wazalishaji "
 "wote wapo juu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:285
+#: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22886,7 +22886,7 @@ msgstr ""
 "Tux amerejea kutoka kuvua samaki kwenye mashua yake. Rudisha mfumo wa umeme "
 "ili apate mwanga nyumbani kwake."
 
-#: activities/renewable_energy/RenewableEnergy.qml:287
+#: activities/renewable_energy/RenewableEnergy.qml:312
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22895,7 +22895,7 @@ msgstr ""
 "Bofya kwenye vipengele tofauti vya kazi: jua, wingu, bwawa, safu ya jua, "
 "shamba la upepo na transfoma, ili kurejesha mfumo mzima wa umeme."
 
-#: activities/renewable_energy/RenewableEnergy.qml:289
+#: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22906,12 +22906,12 @@ msgstr ""
 "mwanga kwa ajili yake. Ili kushinda lazima uwashe watumiaji wote wakati "
 "wazalishaji wote wapo juu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:291
+#: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Jifunze kuhusu mfumo wa umeme kulingana na nishati mbadala. Furahia."
 
-#: activities/renewable_energy/RenewableEnergy.qml:315
+#: activities/renewable_energy/RenewableEnergy.qml:340
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23191,13 +23191,13 @@ msgstr ""
 "Sasa unajua sheria, unaweza kusoma na kuandika nambari katika nambari za "
 "Kirumi."
 
-#: activities/roman_numerals/RomanNumerals.qml:378
+#: activities/roman_numerals/RomanNumerals.qml:388
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Thamani ya Kirumi: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:379
+#: activities/roman_numerals/RomanNumerals.qml:389
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24270,7 +24270,7 @@ msgid_plural "Then split %n pieces of candy equally between them."
 msgstr[0] "Then split %n sweet equally between them."
 msgstr[1] "Then split %n sweets equally between them."
 
-#: activities/share/Share.qml:348
+#: activities/share/Share.qml:358
 #, qt-format
 msgctxt "Share|"
 msgid "You can't put more than %1 pieces of candy in the same rectangle"
@@ -25544,26 +25544,26 @@ msgstr ""
 "Je, Neptune ina ukubwa gani ikilinganishwa na sayari nyingine katika Mfumo "
 "wa Jua?"
 
-#: activities/solar_system/QuizScreen.qml:201
+#: activities/solar_system/QuizScreen.qml:216
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Usahihi: %1%"
 
-#: activities/solar_system/QuizScreen.qml:241
+#: activities/solar_system/QuizScreen.qml:256
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "Alama yako ya mwisho ni: <font color=\"#3bb0de\">%1%</font> .<br><br> %2"
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25574,7 +25574,7 @@ msgstr ""
 "Jaribu tena kujaribu ujuzi wako tena au fanya mazoezi katika hali ya kawaida "
 "ili upate maelezo zaidi kuhusu Mfumo wa Jua."
 
-#: activities/solar_system/QuizScreen.qml:276
+#: activities/solar_system/QuizScreen.qml:291
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -26056,12 +26056,12 @@ msgstr ""
 "kiotomatiki katika makadirio yako ya sasa na yajayo hadi utakapoviondoa, kwa "
 "kuvibofya mara mbili tena."
 
-#: activities/superbrain/Superbrain.qml:141
+#: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Kipengee hiki kimewekwa vizuri."
 
-#: activities/superbrain/Superbrain.qml:143
+#: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Kipengee hiki kimewekwa vibaya."
@@ -26546,7 +26546,7 @@ msgstr ""
 "maji, na mtambo wa maji taka, ili kurejesha mfumo mzima wa maji. Wakati "
 "mfumo umehifadhiwa na Tux yuko kwenye bafu, mshikie kitufe cha kuoga."
 
-#: activities/watercycle/Watercycle.qml:80
+#: activities/watercycle/Watercycle.qml:114
 msgctxt "Watercycle|"
 msgid ""
 "The sun is the main component of the water cycle. Click on the sun to start "
@@ -26555,12 +26555,12 @@ msgstr ""
 "Jua ni sehemu kuu ya mzunguko wa maji. Bofya kwenye jua ili kuanza mzunguko "
 "wa maji."
 
-#: activities/watercycle/Watercycle.qml:81
+#: activities/watercycle/Watercycle.qml:115
 msgctxt "Watercycle|"
 msgid "As the sun rises, the water of the sea starts heating and evaporates."
 msgstr "Jua linapochomoza, maji ya bahari huanza kupasha joto na kuyeyuka."
 
-#: activities/watercycle/Watercycle.qml:82
+#: activities/watercycle/Watercycle.qml:116
 msgctxt "Watercycle|"
 msgid ""
 "Water vapor condenses to form clouds and when clouds become heavy, it rains. "
@@ -26569,7 +26569,7 @@ msgstr ""
 "Mvuke wa maji hugandana na kutengeneza mawingu na mawingu yanapozidi kuwa "
 "mazito, mvua hunyesha. Bofya kwenye wingu."
 
-#: activities/watercycle/Watercycle.qml:83
+#: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
 msgid ""
 "The rain causes rivers to swell up and this water is transported to us via "
@@ -26580,7 +26580,7 @@ msgstr ""
 "magari kupitia minara ya maji. Bofya kwenye pampu ya magari ili kusambaza "
 "maji kwa wakazi."
 
-#: activities/watercycle/Watercycle.qml:85
+#: activities/watercycle/Watercycle.qml:119
 msgctxt "Watercycle|"
 msgid ""
 "See the tower filled with water. Activate the sewage treatment station by "
@@ -26589,18 +26589,18 @@ msgstr ""
 "Tazama mnara umejaa maji. Amilisha kituo cha matibabu ya maji taka kwa "
 "kubofya."
 
-#: activities/watercycle/Watercycle.qml:86
+#: activities/watercycle/Watercycle.qml:120
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
 msgstr "Sawa, bofya kwenye bafu, Tux anapowasili nyumbani."
 
-#: activities/watercycle/Watercycle.qml:87
+#: activities/watercycle/Watercycle.qml:121
 msgctxt "Watercycle|"
 msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Ajabu, umekamilisha mzunguko wa maji. Unaweza kuendelea kucheza."
 
-#: activities/watercycle/Watercycle.qml:114
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26612,7 +26612,7 @@ msgstr ""
 "tena. Joto la jua hutoa nishati ya kuyeyusha maji kutoka kwa miili ya maji "
 "kama bahari."
 
-#: activities/watercycle/Watercycle.qml:117
+#: activities/watercycle/Watercycle.qml:150
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26623,7 +26623,7 @@ msgstr ""
 "kutengeneza matone madogo kwenye mawingu. Wakati mawingu yanapokutana na "
 "hewa baridi juu ya ardhi, kunyesha husababishwa na kunyesha kama mvua."
 
-#: activities/watercycle/Watercycle.qml:120
+#: activities/watercycle/Watercycle.qml:153
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26634,7 +26634,7 @@ msgstr ""
 "chini ya ardhi. Lakini maji mengi hutiririka kama mkondo, hatimaye kurudi "
 "baharini kupitia mito."
 
-#: activities/watercycle/Watercycle.qml:122
+#: activities/watercycle/Watercycle.qml:155
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27577,7 +27577,7 @@ msgstr ""
 "Bainisha ni ngazi gani ya kuanza shughuli. Inatumika tu wakati --launch "
 "chaguo linatumika."
 
-#: core/main.qml:269
+#: core/main.qml:263
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27586,42 +27586,42 @@ msgstr ""
 "Je, unataka kupakua au kusasisha kiotomatiki vipengee vifuatavyo vya nje "
 "unapoanzisha GCompris?"
 
-#: core/main.qml:271
+#: core/main.qml:265
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Sauti kwa lugha yako"
 
-#: core/main.qml:272
+#: core/main.qml:266
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Seti kamili ya picha"
 
-#: core/main.qml:273
+#: core/main.qml:267
 msgctxt "main|"
 msgid "Background music"
 msgstr "Muziki wa usuli"
 
-#: core/main.qml:279
+#: core/main.qml:273
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: core/main.qml:286
+#: core/main.qml:280
 msgctxt "main|"
 msgid "No"
 msgstr "Hapana"
 
-#: core/main.qml:322
+#: core/main.qml:316
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Karibu kwenye GCompris!"
 
-#: core/main.qml:323
+#: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Unaendesha GCompris kwa mara ya kwanza."
 
-#: core/main.qml:324
+#: core/main.qml:318
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27630,23 +27630,23 @@ msgstr ""
 "Unapaswa kuthibitisha kuwa mipangilio yako ya programu haswa lugha yako "
 "imewekwa ipasavyo. Unaweza kufanya hivyo kwenye kidirisha cha Usanidi."
 
-#: core/main.qml:326
+#: core/main.qml:320
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Furahia!"
 
-#: core/main.qml:328
+#: core/main.qml:322
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Lugha yako ya sasa ni %1 (%2)."
 
-#: core/main.qml:360
+#: core/main.qml:354
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris imesasishwa! Hapa kuna mabadiliko mapya:<br/>"
 
-#: core/main.qml:388
+#: core/main.qml:382
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27655,12 +27655,12 @@ msgstr ""
 "Baadhi ya shughuli zina mkusanyiko mpya wa data unaopatikana. Je, ungependa "
 "kuweka upya uteuzi wao wa mkusanyiko wa data?"
 
-#: core/main.qml:389
+#: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
 msgstr "Omba"
 
-#: core/main.qml:390
+#: core/main.qml:384
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Sitisha"
