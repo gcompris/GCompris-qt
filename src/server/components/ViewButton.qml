@@ -23,7 +23,6 @@ Button {
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideRight
         font.pixelSize: 18 * height / 40
-        font.family: Style.fontAwesome
         color: enabled ? "black" : "gray"
     }
 
