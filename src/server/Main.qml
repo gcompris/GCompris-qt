@@ -39,7 +39,9 @@ import "views"
 Window {
     id: mainWindow
     property string databaseFile: serverSettings.lastLogin + ".sqlite"
-    property string userDataPath: (StandardPaths.writableLocation(StandardPaths.GenericDataLocation) + "/gcompris-server").replace("file://", "")
+    // file:/// is the prefix on Windows, file:// otherwise, both needs to be removed
+    readonly property string prefixToRemove: ApplicationInfo.platform === ApplicationInfo.Windows ? "file:///" : "file://"
+    property string userDataPath: (StandardPaths.writableLocation(StandardPaths.GenericDataLocation) + "/gcompris-server").replace(prefixToRemove, "")
     property bool serverRunning: false
     property alias topBanner: topBanner
     minimumWidth: 800
