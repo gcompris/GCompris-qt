@@ -11,8 +11,6 @@ pragma Singleton
 import QtQuick 2.12
 
 Item {
-    property alias fontAwesome: fontAwesomeLoader.name
-
 // Bruno's colors
     readonly property color colorBackground: "beige"
     readonly property color textInputBackground: "white"
@@ -66,9 +64,4 @@ Item {
     readonly property real heightNavigationButtonDescription: heightNavigationButtonIcon
     readonly property real widthNavigationButton: widthNavigationButtonIcon + widthNavigationButtonDescription
     readonly property real heightNavigationButton: Math.max(heightNavigationButtonIcon, heightNavigationButtonDescription)
-
-    FontLoader {
-        id: fontAwesomeLoader
-        source: "qrc:/gcompris/src/server/resource/fa-solid-900.ttf"
-    }
 }
