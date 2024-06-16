@@ -13,6 +13,7 @@ import "../components"
 import "../singletons"
 
 Item {
+    id: navigationPanel
     property bool isCollapsed: true
     property int lastIndex: 0
     property alias pupilsView: pupilsView
@@ -26,9 +27,28 @@ Item {
     anchors {
         top: parent.top
         bottom: parent.bottom
-        left: (!serverSettings.navigationPanelRight) ? parent.left : undefined
-        right: (serverSettings.navigationPanelRight) ? parent.right : undefined
     }
+    states: [
+        State {
+            name: "left"
+            when: !serverSettings.navigationPanelRight
+            AnchorChanges {
+                target: navigationPanel
+                anchors.left: parent.left
+                anchors.right: undefined
+            }
+        },
+        State {
+            name: "right"
+            when: serverSettings.navigationPanelRight
+            AnchorChanges {
+                target: navigationPanel
+                anchors.left: undefined
+                anchors.right: parent.right
+            }
+        }
+    ]
+
     width: isCollapsed ? Style.widthNavigationBarCollapsed : Style.widthNavigationBarExpanded
     clip: true
 
