@@ -136,7 +136,7 @@ Item {
                         label: qsTr("Font pixel size")
                         radios: [11, 12, 13, 14, 15, 16, 17, 18]
                         current: radios.indexOf(Style.defaultPixelSize)
-                        onRadioCheckChanged: Style.defaultPixelSize = radios[index]
+                        onRadioCheckChanged: (index) => { Style.defaultPixelSize = radios[index] }
                     }
 
                     Rectangle {

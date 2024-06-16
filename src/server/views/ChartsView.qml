@@ -50,13 +50,13 @@ Item {
                 chartLayout.children[bar.currentIndex].currentItem.executeRequest();
             }
 
-            pupilPane.onSelectionClicked: {
+            pupilPane.onSelectionClicked: (modelId, checked) => {
                 popStacks()
                 Master.foldDownToList(pupilPane, userList, modelId, checked)
                 chartLayout.children[bar.currentIndex].currentItem.executeRequest();
             }
 
-            activityPane.onSelectionClicked: {
+            activityPane.onSelectionClicked: (modelId, checked) => {
                 popStacks()
                 Master.foldDownToList(activityPane, activityList, modelId, checked)
                 chartLayout.children[bar.currentIndex].currentItem.executeRequest();

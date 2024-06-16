@@ -114,7 +114,7 @@ Item {
 
                 calendar.onCalendarChanged: pupilsData.executeRequest()
 
-                groupPane.onSelectionClicked: {
+                groupPane.onSelectionClicked: (modelId, checked) => {
                     groupId = modelId
                     userList = []
                     activityList = []
@@ -128,7 +128,7 @@ Item {
                     pupilsData.executeRequest()
                 }
 
-                pupilPane.onSelectionClicked: {
+                pupilPane.onSelectionClicked: (modelId, checked) => {
                     Master.foldDownToList(pupilPane, userList, modelId, checked)
                     activityName = ""
                     activityPane.currentChecked = -1
@@ -141,7 +141,7 @@ Item {
                     pupilsData.executeRequest()
                 }
 
-                activityPane.onSelectionClicked: {
+                activityPane.onSelectionClicked: (modelId, checked) => {
                     Master.foldDownToList(activityPane, activityList, modelId, checked)
                     pupilsData.executeRequest();
                 }

@@ -119,7 +119,7 @@ Item {
                     pupilsChart.parent.currentItem.executeRequest()
                 }
 
-                onHovered: {
+                onHovered: (status, index, barset) => {
                     var user = Master.findObjectInModel(selector.pupilPane.foldModel
                                                         , function(item) { return item.user_id === Number(barset.label) })
                     helpText.text = status ? mySeries.axisX.categories[index] + "   " + user.user_name : ""
