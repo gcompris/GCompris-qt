@@ -64,7 +64,7 @@ Item {
                 checkKey: "group_checked"
                 collapsable: false
                 delegateName: "radioGroupEdit"
-                onSelectionClicked: {
+                onSelectionClicked: (modelId) => {
                     Master.groupFilterId = modelId
                     Master.filterUsers(Master.filteredUserModel, false)
                 }

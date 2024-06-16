@@ -53,14 +53,14 @@ Window {
 
     Connections {
         target: databaseController
-        onDbError: { errorDialog.message = message; errorDialog.open() }
+        function onDbError() { errorDialog.message = message; errorDialog.open() }
     }
 
     Connections {
         target: networkController
-        onAddDataToUser: Master.addActivityDataForUser(userId, activityName, rawData)
-        onCheckUserPassword: networkController.acceptPassword(Master.checkPassword(login, password), login)
-        onStatusChanged: Master.setStatus(userId, newStatus)
+        function onAddDataToUser() { Master.addActivityDataForUser(userId, activityName, rawData) }
+        function onCheckUserPassword() { networkController.acceptPassword(Master.checkPassword(login, password), login) }
+        function onStatusChanged() { Master.setStatus(userId, newStatus) }
     }
 
     Settings {
@@ -101,7 +101,7 @@ Window {
         clip: true
         focus: true
 
-        Keys.onPressed: {
+        Keys.onPressed: (event) => {
             if (event.modifiers & Qt.MetaModifier) {
                 switch (event.key) {
                 case Qt.Key_U:

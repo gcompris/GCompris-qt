@@ -65,7 +65,7 @@ ColumnLayout {
             SplitView.preferredHeight: 8 * lineHeight
             SplitView.minimumHeight: lineHeight
             SplitView.fillHeight: withGroups && (!withActivities && !withPupils)
-            onSelectionClicked: {
+            onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
                 Master.filterUsers(selectorUserModel, false)
             }

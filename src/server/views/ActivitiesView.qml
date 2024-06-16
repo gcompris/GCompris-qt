@@ -41,7 +41,7 @@ Item {
 
             calendar.onCalendarChanged: dailyReport.executeRequest()
 
-            groupPane.onSelectionClicked: {
+            groupPane.onSelectionClicked: (modelId, checked) => {
                 if (pageStack.depth > 1)
                     pageStack.pop()
                 groupId = modelId
@@ -59,7 +59,7 @@ Item {
                 dailyReport.executeRequest()
             }
 
-            pupilPane.onSelectionClicked: {
+            pupilPane.onSelectionClicked: (modelId, checked) => {
                 if (pageStack.depth > 1)
                     pageStack.pop()
                 Master.foldDownToList(pupilPane, userList, modelId, checked)
@@ -74,7 +74,7 @@ Item {
                 dailyReport.executeRequest()
             }
 
-            activityPane.onSelectionClicked: {
+            activityPane.onSelectionClicked: (modelId, checked) => {
                 if (pageStack.depth > 1)
                     pageStack.pop()
                 Master.foldDownToList(activityPane, activityList, modelId, checked)
