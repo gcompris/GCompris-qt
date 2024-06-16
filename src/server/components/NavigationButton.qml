@@ -33,10 +33,8 @@ Item {
                 id: textIcon
                 width: Style.widthNavigationButtonIcon
                 height: Style.heightNavigationButtonIcon
-                font {
-                    family: Style.fontAwesome
-                    pixelSize: Style.pixelSizeNavigationBarIcon
-                }
+                font.pixelSize: Style.pixelSizeNavigationBarIcon
+
                 color: Style.colorNavigationBarFont
                 text: "\uf11a"
                 verticalAlignment: Text.AlignVCenter

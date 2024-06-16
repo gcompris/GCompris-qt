@@ -203,7 +203,6 @@ Item {
                     anchors.centerIn: parent
                     text: "Help page"
                     textFormat: Text.RichText
-                    font.family: Style.fontAwesome
                 }
             }
         }

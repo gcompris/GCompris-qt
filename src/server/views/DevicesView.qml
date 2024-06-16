@@ -247,7 +247,6 @@ Rectangle {
                     ToolTip.visible: hovered
                     ToolTip.text: qsTr("Clear logs")
                     onClicked: logPanel.clearLog()
-                    font.family: Style.fontAwesome
                 }
             }
             LogPanel {
