@@ -71,12 +71,12 @@ Rectangle {
 
         Connections {
             target: Master
-            onNetLog: { logPanel.appendLog(message) }
+            function onNetLog(message) { logPanel.appendLog(message) }
         }
 
         Connections {
             target: networkController
-            onNetLog: { logPanel.appendLog(message) }
+            function onNetLog(message) { logPanel.appendLog(message) }
         }
 
         FoldDownRadio {
@@ -89,7 +89,7 @@ Rectangle {
             collapsable: false
             SplitView.preferredWidth: 200
             SplitView.minimumWidth: 150
-            onSelectionClicked: {
+            onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
                 Master.filterUsers(Master.filteredUserModel, false)
             }
