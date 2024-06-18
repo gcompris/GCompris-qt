@@ -50,6 +50,7 @@ ActivityBase {
             property int currentLock: 0
             property int lastLock: 0
             property bool verticalLayout: lineArea.height > lineArea.width
+            property bool inputBlocked: false
         }
 
         onHeightChanged: Activity.initLevel()
@@ -110,6 +111,7 @@ ActivityBase {
         }
 
         function win() {
+            items.inputBlocked = true
             fireflame.opacity = 0
             water.opacity = 1
         }
@@ -137,7 +139,7 @@ ActivityBase {
             anchors.fill: parent
             enabled: !ApplicationInfo.isMobile
             hoverEnabled: true
-            onPositionChanged: items.currentLock > 0 && water.opacity === 0 ?
+            onPositionChanged: items.currentLock > 0 && !items.inputBlocked ?
                                    lineBrokenTimer.start() : false
         }
 
@@ -151,7 +153,7 @@ ActivityBase {
             MultiPointTouchArea {
                 anchors.fill: parent
                 maximumTouchPoints: 1
-                enabled: ApplicationInfo.isMobile && water.opacity === 0
+                enabled: ApplicationInfo.isMobile && !items.inputBlocked
                 z: 1000
                 onTouchUpdated: {
                     for(var i in touchPoints) {
@@ -175,7 +177,7 @@ ActivityBase {
                         }
                     }
                 }
-                onReleased: if(water.opacity === 0) lineBrokenTimer.start()
+                onReleased: if(!items.inputBlocked) lineBrokenTimer.start()
             }
         }
 
@@ -183,7 +185,7 @@ ActivityBase {
             id: lineBrokenTimer
             interval: 20
             onTriggered: {
-                if(items.currentLock > 0 && water.opacity === 0) {
+                if(items.currentLock > 0 && !items.inputBlocked) {
                     Activity.cursorMovedOut();
                     restart();
                 }

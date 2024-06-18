@@ -101,6 +101,7 @@ function initLevel() {
 
     }
     items.lastLock = index - 1
+    items.inputBlocked = false
 }
 
 function nextLevel() {
