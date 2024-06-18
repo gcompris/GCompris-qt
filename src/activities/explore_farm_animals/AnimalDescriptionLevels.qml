@@ -19,9 +19,9 @@ import "explore-level.js" as Activity
 
 Rectangle {
     id: rectangleDesc
-    radius: 30
-    border.width: 5
-    border.color: "black"
+    radius: 15 * ApplicationInfo.ratio
+    border.width: 3 * ApplicationInfo.ratio
+    border.color: "#373737"
 
     MouseArea {
         anchors.fill: parent
@@ -31,6 +31,7 @@ Rectangle {
     property alias title: heading.text
     property alias description: descriptionText.text
     property alias imageSource: animalImage.source
+    property int baseMargins: 15 * ApplicationInfo.ratio
 
     property bool horizontalLayout: background.width >= background.height
 
@@ -62,42 +63,36 @@ Rectangle {
         id: heading
         fontSize: largeSize
         horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         font.weight: Font.DemiBold
         anchors.top: parent.top
+        anchors.left: parent.left
+        anchors.right: cancelButton.left
+        anchors.margins: parent.baseMargins
         color: "#2a2a2a"
-        width: parent.width - cancelButton.width
-        wrapMode: Text.WordWrap
+        height: cancelButton.height
+        fontSizeMode: Text.Fit
     }
 
     Image {
         id: animalImage
-        width: rectangleDesc.horizontalLayout ? parent.width / 2 : parent.width * 0.9
-        height: rectangleDesc.horizontalLayout ?
-                    parent.height * 0.8 :
-                    (parent.height - heading.height - descriptionText.height) * 0.9
         fillMode: Image.PreserveAspectFit
-        anchors {
-            top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
-            horizontalCenter: rectangleDesc.horizontalLayout ? undefined : parent.horizontalCenter
-            left: rectangleDesc.horizontalLayout ? parent.left : undefined
-            leftMargin: rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
-        }
+        anchors.margins: parent.baseMargins
+        property bool zoomedOut: true
 
         MouseArea {
             anchors.fill: parent
             onClicked: parent.switchImageWithTextOrAlone()
         }
 
-        state: "zoomedOut"
-
-        // Relative width and height of the image is changed on zooming-in and zooming-out keeping original binding intact
         states: [
             State {
                 name: "zoomedIn"
+                when: !animalImage.zoomedOut
                 PropertyChanges {
                     animalImage {
-                        width: rectangleDesc.width / 1.2
-                        height: rectangleDesc.height / 1.2
+                        width: rectangleDesc.width - 2 * rectangleDesc.baseMargins
+                        height: rectangleDesc.height - heading.height - 3 * rectangleDesc.baseMargins
                     }
                 }
 
@@ -110,16 +105,16 @@ Rectangle {
                 AnchorChanges {
                     target: animalImage
                     anchors.top: heading.bottom
+                    anchors.horizontalCenter: parent.horizontalCenter
                 }
             },
             State {
-                name: "zoomedOut"
+                name: "zoomedOutHorizontal"
+                when: animalImage.zoomedOut && rectangleDesc.horizontalLayout
                 PropertyChanges {
                     animalImage {
-                        width: rectangleDesc.horizontalLayout ? parent.width / 2 : parent.width * 0.9
-                        height: rectangleDesc.horizontalLayout ?
-                                       parent.height * 0.8 :
-                                       (parent.height - heading.height - descriptionText.height) * 0.9
+                        width: (rectangleDesc.width - 3 * rectangleDesc.baseMargins) * 0.5
+                        height: rectangleDesc.height - heading.height - 3 * rectangleDesc.baseMargins
                     }
                 }
 
@@ -131,7 +126,41 @@ Rectangle {
 
                 AnchorChanges {
                     target: animalImage
-                    anchors.top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
+                    anchors.top: heading.bottom
+                    anchors.horizontalCenter: undefined
+                    anchors.left: rectangleDesc.left
+                }
+                AnchorChanges {
+                    target: descriptionText
+                    anchors.left: animalImage.right
+                }
+            },
+            State {
+                name: "zoomedOutVertical"
+                when: animalImage.zoomedOut && !rectangleDesc.horizontalLayout
+                PropertyChanges {
+                    animalImage {
+                        width: rectangleDesc.width - 2 * rectangleDesc.baseMargins
+                        height: (rectangleDesc.height - heading.height - 4 * rectangleDesc.baseMargins) * 0.5
+                        anchors.leftMargin: 0
+                    }
+                }
+
+                PropertyChanges {
+                    descriptionText {
+                        visible: true
+                    }
+                }
+
+                AnchorChanges {
+                    target: animalImage
+                    anchors.top: descriptionText.bottom
+                    anchors.horizontalCenter: rectangleDesc.horizontalCenter
+                    anchors.left: undefined
+                }
+                AnchorChanges {
+                    target: descriptionText
+                    anchors.left: rectangleDesc.left
                 }
             }
         ]
@@ -139,7 +168,7 @@ Rectangle {
         // Transition to animate zoom-in and zoom-out
         transitions: [
             Transition {
-                from: "zoomedOut"
+                from: "zoomedOutVertical"
                 to: "zoomedIn"
 
                 NumberAnimation {
@@ -153,7 +182,37 @@ Rectangle {
             },
             Transition {
                 from: "zoomedIn"
-                to: "zoomedOut"
+                to: "zoomedOutVertical"
+
+                NumberAnimation {
+                    target: animalImage
+                    properties: "width, height"
+                    duration: 250
+                }
+
+                PropertyAnimation {
+                    target: descriptionText
+                    property: "visible"
+                }
+
+                AnchorAnimation { duration: 250 }
+            },
+            Transition {
+                from: "zoomedOutHorizontal"
+                to: "zoomedIn"
+
+                NumberAnimation {
+                    target: animalImage
+                    properties: "width, height"
+                    easing.type: Easing.OutBack
+                    duration: 500
+                }
+
+                AnchorAnimation { duration: 250 }
+            },
+            Transition {
+                from: "zoomedIn"
+                to: "zoomedOutHorizontal"
 
                 NumberAnimation {
                     target: animalImage
@@ -172,12 +231,7 @@ Rectangle {
 
         // Changes the state of the image
         function switchImageWithTextOrAlone() {
-           if(state === "zoomedOut") {
-              state = "zoomedIn";
-           }
-           else {
-              state = "zoomedOut";
-           }
+           zoomedOut = !zoomedOut
         }
     }
 
@@ -186,16 +240,11 @@ Rectangle {
         font.weight: Font.DemiBold
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignJustify
-        anchors {
-            top: (heading.height > cancelButton.height) ? heading.bottom : cancelButton.bottom
-            right: parent.right
-            rightMargin: 30 * ApplicationInfo.ratio
-            left: rectangleDesc.horizontalLayout ? animalImage.right : parent.left
-            leftMargin: 30 * ApplicationInfo.ratio
-        }
+        anchors.top: heading.bottom
+        anchors.margins: parent.baseMargins
         color: "#2a2a2a"
-        width: rectangleDesc.horizontalLayout ? parent.width * 0.45 : parent.width
-        height: rectangleDesc.horizontalLayout ? parent.height * 0.5 : parent.height * 0.3
+        width: animalImage.width
+        height: animalImage.height
         wrapMode: Text.WordWrap
     }
 
@@ -206,8 +255,8 @@ Rectangle {
     }
 
     function close() {
-        if(animalImage.state === "zoomedIn") {
-            animalImage.state = "zoomedOut";
+        if(!animalImage.zoomedOut) {
+            animalImage.zoomedOut = true;
         }
         descriptionPanelCloseAnimation.start();
         if (Activity.isComplete() && !items.descriptionBonusDone) {
