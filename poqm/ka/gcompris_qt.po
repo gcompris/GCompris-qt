@@ -21572,13 +21572,13 @@ msgstr ""
 #: activities/share/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Display counters"
-msgstr ""
+msgstr "მთვლელების ჩვენება"
 
 #. Activity title
 #: activities/share/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Share pieces of candy"
-msgstr ""
+msgstr "კონფეტის ნაწილების ჩვენება"
 
 #. Help title
 #: activities/share/ActivityInfo.qml:17
@@ -21590,13 +21590,13 @@ msgstr ""
 #: activities/share/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr ""
+msgstr "ისწავლეთ გაზიარება, იმეცადინეთ გაყოფაში."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Know how to count."
-msgstr ""
+msgstr "ისწავლეთ, როგორ დათვალოთ."
 
 #. Help manual
 #: activities/share/ActivityInfo.qml:24
@@ -22021,7 +22021,7 @@ msgstr ""
 #: activities/smallnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dice"
-msgstr ""
+msgstr "რიცხვები კამათლით"
 
 #. Help title
 #: activities/smallnumbers/ActivityInfo.qml:17
@@ -22053,100 +22053,100 @@ msgstr ""
 #: activities/smallnumbers2/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 3."
-msgstr ""
+msgstr "რიცხვები 3-მდე."
 
 #: activities/smallnumbers/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1, ან 2."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 3."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 3-მდე."
 
 #: activities/smallnumbers/resource/2/Data.qml:14
 #: activities/smallnumbers2/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 4."
-msgstr ""
+msgstr "რიცხვები 4-მდე."
 
 #: activities/smallnumbers/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 4."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 4-მდე."
 
 #: activities/smallnumbers/resource/3/Data.qml:14
 #: activities/smallnumbers2/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 5."
-msgstr ""
+msgstr "რიცხვები 5-მდე."
 
 #: activities/smallnumbers/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 5."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 5-მდე."
 
 #: activities/smallnumbers/resource/4/Data.qml:14
 #: activities/smallnumbers2/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 6."
-msgstr ""
+msgstr "რიცხვები 6-მდე."
 
 #: activities/smallnumbers/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 6."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 6-მდე."
 
 #: activities/smallnumbers/resource/5/Data.qml:14
 #: activities/smallnumbers2/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 7."
-msgstr ""
+msgstr "რიცხვები 7-მდე."
 
 #: activities/smallnumbers/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 7."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 7-მდე."
 
 #: activities/smallnumbers/resource/6/Data.qml:14
 #: activities/smallnumbers2/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 8."
-msgstr ""
+msgstr "რიცხვები 8-მდე."
 
 #: activities/smallnumbers/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 8."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 8-მდე."
 
 #: activities/smallnumbers/resource/7/Data.qml:14
 #: activities/smallnumbers2/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 9."
-msgstr ""
+msgstr "რიცხვები 9-მდე."
 
 #: activities/smallnumbers/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 9."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 1-დან 9-მდე."
 
 #: activities/smallnumbers/resource/8/Data.qml:13
 #: activities/smallnumbers2/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Numbers from 0 to 9."
-msgstr ""
+msgstr "რიცხვები 0-დან 9-მდე."
 
 #: activities/smallnumbers/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the dice, from 0 to 9."
-msgstr ""
+msgstr "შეიყვანეთ რიცხვი კამათელზე, 0-დან 9-მდე."
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dominoes"
-msgstr ""
+msgstr "რიცხვები დომინოთი"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
@@ -22163,57 +22163,57 @@ msgstr ""
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1, ან 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 3-მდე."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 4-მდე."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 5-მდე."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 6-მდე."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 7-მდე."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 8-მდე."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 1-დან 9-მდე."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr ""
+msgstr "აკრიფეთ რიცხვი დომინოზე, 0-დან 9-მდე."
 
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Learning Mode"
-msgstr ""
+msgstr "სწავლის რეჟიმი"
 
 #: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Assessment Mode"
-msgstr ""
+msgstr "შეფასების რეჟიმი"
 
 #. Activity title
 #: activities/solar_system/ActivityInfo.qml:18
@@ -22225,7 +22225,7 @@ msgstr "მზის სისტემა"
 #: activities/solar_system/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr ""
+msgstr "გაიგეთ მზის სისტემის შესახებ."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -22248,12 +22248,12 @@ msgstr ""
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
-msgstr ""
+msgstr "გამოტოვება ან Enter: არჩევა"
 
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Escape: return to previous screen"
-msgstr ""
+msgstr "Escape: წინა ეკრანზე დაბრუნება"
 
 #: activities/solar_system/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -23394,7 +23394,7 @@ msgstr ""
 #: activities/submarine/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "<b>Ballast tanks</b>"
-msgstr ""
+msgstr "<b>ბალასტის ავზები</b>"
 
 #: activities/submarine/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -23444,17 +23444,17 @@ msgstr ""
 #: activities/submarine/Controls.qml:166
 msgctxt "Controls|"
 msgid "Left Ballast Tank"
-msgstr ""
+msgstr "მარცხენა ბალასტის ავზი"
 
 #: activities/submarine/Controls.qml:274
 msgctxt "Controls|"
 msgid "Central Ballast Tank"
-msgstr ""
+msgstr "შუა ბალასტის ავზი"
 
 #: activities/submarine/Controls.qml:381
 msgctxt "Controls|"
 msgid "Right Ballast Tank"
-msgstr ""
+msgstr "მარჯვენა ბალასტის ავზი"
 
 #: activities/submarine/submarine.js:21
 msgctxt "submarine|"
@@ -23590,28 +23590,28 @@ msgstr ""
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Small grids using symbols."
-msgstr ""
+msgstr "პატარა ბადეები სიმბოლოების გამოყენებით."
 
 #: activities/sudoku/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using symbols."
-msgstr ""
+msgstr "საშუალო ბადეები სიმბოლოების გამოყენებით."
 
 #: activities/sudoku/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using numbers and symbols."
-msgstr ""
+msgstr "საშუალო ბადეები სიმბოლოების და რიცხვების გამოყენებით."
 
 #: activities/sudoku/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids using numbers."
-msgstr ""
+msgstr "დიდი ბადეები რიცხვების გამოყენებით."
 
 #. Activity title
 #: activities/superbrain/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Super brain"
-msgstr ""
+msgstr "ზეტვინი"
 
 #. Help title
 #: activities/superbrain/ActivityInfo.qml:17
@@ -23649,18 +23649,18 @@ msgstr ""
 #: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"
 msgid "This item is well placed."
-msgstr ""
+msgstr "ამ საგნის მდებარეობა სწორია."
 
 #: activities/superbrain/Superbrain.qml:148
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
-msgstr ""
+msgstr "ამ საგნის მდებარეობა არასწორია."
 
 #. Activity title
 #: activities/tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "The tangram puzzle game"
-msgstr ""
+msgstr "გამოცანა ტანგრამი"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
@@ -23840,12 +23840,12 @@ msgstr ""
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr ""
+msgstr "პირველი რიცხვი 1-დან 4-მდე."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr ""
+msgstr "პირველი რიცხვი 5-დან 9-მდე."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -23935,17 +23935,17 @@ msgstr ""
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr ""
+msgstr "შედეგი 11-სა და 19-ს შორის."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr ""
+msgstr "შედეგი 20-სა და 29-ს შორის."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr ""
+msgstr "შედეგი 30-სა და 50-ს შორის."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -23958,14 +23958,14 @@ msgstr ""
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Place three marks in a row."
-msgstr ""
+msgstr "დასვით სამი ჯვარი მწკრივში."
 
 #. Help goal
 #: activities/tic_tac_toe/ActivityInfo.qml:23
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "განივითარეთ სტრატეგიული აზროვნება."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -24018,7 +24018,7 @@ msgstr ""
 #: activities/watercycle/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Watercycle"
-msgstr ""
+msgstr "წყლის ციკლი"
 
 #. Help title
 #: activities/watercycle/ActivityInfo.qml:17
@@ -24032,7 +24032,7 @@ msgstr ""
 #: activities/watercycle/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
-msgstr ""
+msgstr "შეიტყვეთ მეტი წყლის ციკლის შესახებ."
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -24126,31 +24126,31 @@ msgstr ""
 #: activities/wordsgame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Falling words"
-msgstr ""
+msgstr "სიტყვები, რომლებიც ცვივა"
 
 #. Help title
 #: activities/wordsgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Type the falling words before they reach the ground."
-msgstr ""
+msgstr "აკრიფეთ სიტყვები, სანამ ისინი მიწაზე დაცვივდება."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr ""
+msgstr "ივარჯიშეთ კლავიატურის გამოყენებაში."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Keyboard manipulation."
-msgstr ""
+msgstr "კლავიატურის მართვა."
 
 #. Help manual
 #: activities/wordsgame/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
-msgstr ""
+msgstr "აკრიფეთ სრული სიტყვა, სანამ ის დაბლა დავარდება, მისი ვარდნისას."
 
 #: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:65
 #: core/ChangeLog.qml:100 core/ChangeLog.qml:103 core/ChangeLog.qml:109
@@ -24163,7 +24163,7 @@ msgstr "მრავალი გაუმჯობესება"
 #: core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
-msgstr ""
+msgstr "ბევრი შეცდომის გასწორება"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
@@ -24187,7 +24187,7 @@ msgstr ""
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr ""
+msgstr "დაემატა არაბულის და ესპერანტოს თარგმანები"
 
 #: core/ChangeLog.qml:45 core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
@@ -24214,7 +24214,7 @@ msgstr ""
 #: core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr ""
+msgstr "დაემატა ხმები უკრაინულისთვის"
 
 #: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
@@ -24269,17 +24269,17 @@ msgstr "რუსული თარგმანის განახლებ�
 #: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
-msgstr ""
+msgstr "ახალი ხმები ნორვეგიული ნინორსკისთვის"
 
 #: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr ""
+msgstr "დაემატა თარგმანები ბრეტონულისთვის, ჩეხურისთვის და მაკედონიურისთვის"
 
 #: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr ""
+msgstr "დაემატა თარგმანი აზერბაიჯანულისთვის"
 
 #: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
@@ -24313,7 +24313,7 @@ msgstr ""
 #: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr ""
+msgstr "დაემატა თარგმანი მაკედონიურისტთვის."
 
 #: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
@@ -24328,7 +24328,7 @@ msgstr ""
 #: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
-msgstr ""
+msgstr "ახალი სიჩქარის პარამეტრი რამდენიმე აქტივობაში."
 
 #: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
@@ -24343,12 +24343,12 @@ msgstr ""
 #: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
-msgstr ""
+msgstr "ახალი ხმები აშშ ინგლისურისთვის."
 
 #: core/ChangeLog.qml:122 core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
-msgstr ""
+msgstr "გასწორდა ბევრი პატარა შეცდომა და დაემატა ფუნქციონალი."
 
 #: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
@@ -24382,7 +24382,7 @@ msgstr ""
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr ""
+msgstr "დაემატა თარგმანები ბასკურისთვის, უნგრულისთვის და მალაილამურისთვის."
 
 #: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
@@ -24394,7 +24394,7 @@ msgstr ""
 #: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
-msgstr ""
+msgstr "დაემატა თარგმანები შოტლანდიური გელურისთვის."
 
 #: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
@@ -24529,12 +24529,12 @@ msgstr "GCompris %1"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "Based on Qt %1 and %2"
-msgstr ""
+msgstr "ბაზირებულია Qt %1-ზე და %2-ზე"
 
 #: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
-msgstr ""
+msgstr "GCompris-ის საწყისი გვერდი: https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
 #: core/DialogAbout.qml:67
@@ -24735,22 +24735,23 @@ msgstr "შეწყვეტა"
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
-msgstr ""
+msgstr "გადმოწერის შეცდომა (კოდი: %1): %2"
 
 #: core/DownloadDialog.qml:396
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr ""
+"თქვენი გადმოწერა წარმატებით დასრულდა. მონაცემის ფაილები ახლა ხელმისაწვდომია."
 
 #: core/DownloadDialog.qml:398
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
-msgstr ""
+msgstr "ნებისმიერი მიმდინარე აქტივობის თავიდან დაწყება."
 
 #: core/DownloadDialog.qml:400
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
-msgstr ""
+msgstr "თქვენი ლოკალური მონაცემის ფაილები განახლებულია."
 
 #: core/DownloadManager.cpp:122
 msgctxt "QObject|"
@@ -24783,19 +24784,19 @@ msgstr "ბმული %1 არ არსებობს."
 #, qt-format
 msgctxt "QObject|"
 msgid "Checksum of downloaded file does not match: %1"
-msgstr ""
+msgstr "გადმოწერილი ფაილის საკონტროლო ჯამი არ ემთხვევა: %1"
 
 #: core/DownloadManager.cpp:762
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "%1-სთვის ხმები ვერ ვიპოვე."
 
 #: core/DownloadManager.cpp:767
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "%1-სთვის მონაცემები ვერ ვიპოვე."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -24893,42 +24894,42 @@ msgstr "GCompris-ის ენა"
 #: core/main.cpp:166
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
-msgstr ""
+msgstr "GCompris-ის გაშვება ნაგულისხმევი სისტემური კურსორით."
 
 #: core/main.cpp:170
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
-msgstr ""
+msgstr "GCompris-ის გაშვება კურსორის გარეშე (სენსორული ეკრანის რეჟიმი)."
 
 #: core/main.cpp:174
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
-msgstr ""
+msgstr "GCompris-ის გაშვება სრულეკრანიან რეჟიმში."
 
 #: core/main.cpp:178
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
-msgstr ""
+msgstr "GCompris-ის გაშვება ფანჯარაში."
 
 #: core/main.cpp:182
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
-msgstr ""
+msgstr "GCompris-ის გაშვება ჩართული ხმებით."
 
 #: core/main.cpp:186
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
-msgstr ""
+msgstr "GCompris-ის გაშვება ხმების გარეშე."
 
 #: core/main.cpp:189
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr ""
+msgstr "კიოსკის რეჟიმის გათიშვა (ნაგულისხმევი)."
 
 #: core/main.cpp:192
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
-msgstr ""
+msgstr "კიოსკის რეჟიმის ჩართვა."
 
 #: core/main.cpp:196
 msgctxt "QObject|"
@@ -25008,7 +25009,7 @@ msgstr "მოგესალმებათ GCompris!"
 #: core/main.qml:317
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
-msgstr ""
+msgstr "GCompris-ს პირველად იყენებთ."
 
 #: core/main.qml:318
 msgctxt "main|"
