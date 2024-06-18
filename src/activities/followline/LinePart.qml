@@ -45,7 +45,7 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            hoverEnabled: true
+            hoverEnabled: !items.inputBlocked
             onEntered: {
                 if(part.items.currentLock <= part.index && !Activity.movedOut) {
                     part.items.currentLock = part.index
