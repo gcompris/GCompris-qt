@@ -90,6 +90,7 @@ function nextSubLevel() {
         items.questionText = questionList[currentQuestionIndex]["text"];
     }
     items.view.currentIndex = -1;
+    items.selectedPosition = -1;
     getRandomPositions();
     items.buttonsBlocked = false;
 }

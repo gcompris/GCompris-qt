@@ -344,7 +344,7 @@ ActivityBase {
             width: (background.height - bar.height * 1.2) * 0.15
             sourceSize.width: width
             onClicked: Activity.verifyAnswer()
-            mouseArea.enabled: !items.buttonsBlocked
+            mouseArea.enabled: !items.buttonsBlocked && items.selectedPosition != -1
         }
 
         Bonus {
