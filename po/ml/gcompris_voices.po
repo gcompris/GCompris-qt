@@ -1,11 +1,11 @@
 #
-# Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2020, 2022.
+# Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>, 2020, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-05-31 00:36+0000\n"
-"PO-Revision-Date: 2022-03-18 13:59+0100\n"
+"PO-Revision-Date: 2024-06-11 12:34+0200\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
 "Language: ml\n"
@@ -13,13 +13,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr ""
+msgstr "വിട്ടുപോയ സംഖ്യകൾ കണ്ടെത്തൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
@@ -197,17 +197,15 @@ msgstr "തന്നിരിക്കുന്ന അക്ഷരത്തി�
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, fuzzy, kde-format
-#| msgid ""
-#| "Select a number or a symbol and click its target area. Each symbol must "
-#| "appear only once in a row, in a column and in a subregion if any."
+#, kde-format
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"ഒരു സംഖ്യ അല്ലെങ്കിൽ ചിഹ്നം തെരഞ്ഞെടുത്ത് അതിൻ്റെ ലക്ഷ്യസ്ഥാനത്ത് ക്ലിക്ക് ചെയ്യുക. ഓരോ ചിഹ്നവും "
-"വരിയിലും നിരയിലും സബ്റീജിയണുണ്ടെങ്കിൽ അതിലും ഒറ്റ തവണ മാത്രമേ വരാവൂ."
+"ഒരു സംഖ്യ തെരഞ്ഞെടുത്ത് അതിൻ്റെ ലക്ഷ്യസ്ഥാനത്ത് ക്ലിക്ക് ചെയ്യുക. ഓരോ ചിഹ്നവും വരിയിലും നിരയിലും "
+"ഒറ്റ തവണ മാത്രമേ വരാവൂ. ചോദിച്ചിരിക്കുന്ന ക്രിയ ഉപയോഗിച്ച് ഒരു കേജിലുള്ള കളങ്ങളിലെ സംഖ്യകൾ "
+"കണക്കാക്കിയാൽ തന്നിരിക്കുന്ന ഉത്തരം കിട്ടണം."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
@@ -235,10 +233,9 @@ msgstr "തന്നിരിക്കുന്നവയെ ശരിയായ �
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid "play chess against Tux"
+#, kde-format
 msgid "play checkers against Tux"
-msgstr "ടക്സിനെതിരെ ചെസ്സ് കളിക്കാം."
+msgstr "ടക്സിനെതിരെ ചെക്കേർസ് കളിക്കാം"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
@@ -327,7 +324,7 @@ msgstr "ശരിയായ നിറത്തിൽ ക്ലിക്ക് ച
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
+msgstr "പട്ടികയിലെ ഒരോ ജോടി സംഖ്യകൾക്കും അനുയോജ്യമായ ചിഹ്നം തിരഞ്ഞെടുക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -462,19 +459,19 @@ msgstr "പന്തടിക്കുവാനുള്ള ദിശയും �
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
+msgstr "നിർദ്ദേശത്തിൽ തന്നിരിക്കുന്നതനുസരിച്ച് കൃത്യമായ എണ്ണം ഭാഗങ്ങൾ തിരഞ്ഞെടുക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
+msgstr "സൂചിപ്പിച്ചിരിക്കുന്ന ഭിന്നസംഖ്യയുടെ അംശവും ഛേദവും കണ്ടെത്തൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr ""
+msgstr "തന്നിരിക്കുന്ന മാതൃക പുനർനിർമ്മിക്കുകയും പൂർത്തിയാക്കുകയും ചെയ്യുക."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
@@ -548,13 +545,13 @@ msgstr ""
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr ""
+msgstr "അടയാളമിട്ട രേഖയിലെ തന്നിരിക്കുന്ന സ്ഥാനത്തിന് അനുയോജ്യമായ മൂല്യം കണ്ടെത്തൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr ""
+msgstr "ക്രമമായി ഭാഗിച്ചിരിക്കുന്ന രേഖയിൽ തന്നിരിക്കുന്ന മൂല്യം അടയാളപ്പെടുത്തൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -562,7 +559,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "ചോദിച്ചിരിക്കുന്ന ശബ്ദഭേദങ്ങൾ അനുയോജ്യമായ വാക്കുകൾക്കു നല്കുക."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
@@ -581,7 +578,7 @@ msgstr "ബഹിരാകാശ കപ്പലിനെ, ഗ്രഹങ്ങ
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr ""
+msgstr "തന്നിരിക്കുന്ന നാല് സംഖ്യകളും ക്രിയകളും 24 ഉത്തരം കിട്ടുന്ന തരത്തിൽ ഉപയോഗിക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -714,6 +711,7 @@ msgstr ""
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"നിങ്ങളുടെ മൗസിൽ ഇടതു ക്ലിക്കോ വലതു ക്ലിക്കോ ഉപയോഗിച്ച് ജീവികളെ അവയുടെ വീട്ടിലെത്തിക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -910,10 +908,9 @@ msgstr "വില കൊടുക്കുവാൻ പണത്തിൽ ക്
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
-#, fuzzy, kde-format
-#| msgid "Learn and practice roman to arabic numerals conversion"
+#, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "റോമൻ അക്കങ്ങളെ അറബിക് അക്കങ്ങളിലേക്ക് മാറ്റാൻ പഠിക്കുകയും പരിശീലിക്കുകയും ചെയ്യാം."
+msgstr "അന്താരാഷ്ട്ര മോഴ്സ് കോഡ് പഠിക്കുകയും പരിശീലിക്കുകയും ചെയ്യാം"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
@@ -1229,12 +1226,17 @@ msgstr "ലക്ഷ്യ സ്ഥാനത്ത് ക്ലിക്ക് 
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create pairs of numbers equal to ten. Select a number, then select "
+#| "another number of the same operation to swap their position."
 msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
+"പത്തിനു തുല്യമായ സംഖ്യ ജോടികൾ നിർമിക്കൂ. ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് അതേ ക്രിയയിലെ "
+"മറ്റൊരു സംഖ്യ തിരഞ്ഞെടുത്ത് അവയുടെ സ്ഥാനം വച്ചുമാറൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1243,6 +1245,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
+"പത്തിനു തുല്യമായ സംഖ്യ ജോടികൾ നിർമിക്കൂ. പട്ടികയിൽ നിന്നും ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് "
+"ഒരു ക്രിയയുടെ ഒഴിഞ്ഞഭാഗം തിരഞ്ഞെടുത്ത് ആ സംഖ്യയെ അങ്ങോട്ടേക്കു നീക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1251,6 +1255,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
+"പത്തിനു തുല്യമായ സംഖ്യ ജോടികൾ നിർമിക്കൂ. ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് അതേ ക്രിയയിലെ "
+"മറ്റൊരു സംഖ്യ തിരഞ്ഞെടുത്ത് അവയുടെ സ്ഥാനം വച്ചുമാറൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1260,6 +1266,9 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
+"ക്രിയകളെ വിഘടിച്ച് പത്തിനു തുല്യമായ സംഖ്യ ജോടികൾ നിർമിക്കൂ. തന്നിരിക്കുന്ന പട്ടികയിൽ നിന്നും "
+"ഒരു സംഖ്യ തിരഞ്ഞെടുക്കുക, എന്നിട്ട് ഒരു ക്രിയയുടെ ഒഴിഞ്ഞഭാഗം തിരഞ്ഞെടുത്ത് ആ സംഖ്യയെ അങ്ങോട്ടേക്കു "
+"നീക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1296,8 +1305,8 @@ msgstr ""
 msgid "Type the words on your keyboard before they reach the ground."
 msgstr "വാക്കുകൾ താഴെ എത്തുന്നതിന് മുമ്പ് നിങ്ങളുടെ കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr " "
-
 #~ msgid "play checkers against the computer"
 #~ msgstr "കംപ്യൂട്ടറിന് എതിരെ ചെക്കേർസ് കളിക്കാം."
+
+#~ msgid "put here in comment the text for the intro voice"
+#~ msgstr " "

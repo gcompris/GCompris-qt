@@ -13462,7 +13462,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "ისწავლეთ გრამატიკული კლასების ამოცნობა."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
@@ -13778,7 +13778,7 @@ msgstr ""
 #: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "გამოიყენეთ ოთხი რიცხვი მითითებული ოპერატორებით, რომ 24 მიიღოთ."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
