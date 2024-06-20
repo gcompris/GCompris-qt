@@ -22,26 +22,9 @@ Item {
     Grid {
         id: singleBarTuto
         anchors.fill: parent
-        states: [
-            State {
-                when: background.horizontalLayout
-                PropertyChanges {
-                    singleBarTuto {
-                        rows: 1
-                        columns: 0
-                    }
-                }
-            },
-            State {
-                when: !background.horizontalLayout
-                PropertyChanges {
-                    singleBarTuto {
-                        rows: 0
-                        columns: 1
-                    }
-                }
-            }
-        ]
+        rows: 10
+        columns: 10
+        flow: background.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
 
         Repeater {
             id: rowRepeater
