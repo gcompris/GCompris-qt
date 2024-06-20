@@ -361,7 +361,7 @@ ActivityBase {
                         target: scrollBar
                         width: bottomRectangle.width * 0.5
                         height: unselectedBar.height
-                        x: unselectedBar.x - width
+                        x: unselectedBar.x - scrollBar.width
                         y: unselectedBar.y
                     }
                     PropertyChanges {
