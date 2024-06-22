@@ -235,6 +235,14 @@ Item {
             id: audioOutputItem
         }
 
+        // Workaround for https://bugreports.qt.io/browse/QTBUG-126592
+        // Affects at least Qt 6.6.2, 6.6.3, 6.7.1, 6.7.2
+        // Test next versions with letter P (U0070.ogg) in en_US to see when it's fixed
+        onPositionChanged: {
+            if(audio.position === audio.duration)
+                audio.stop()
+        }
+
         onErrorOccurred: (error, errorString) => {
             // This file cannot be played, remove it from the source asap
             source = ""
