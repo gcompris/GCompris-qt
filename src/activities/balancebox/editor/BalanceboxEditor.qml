@@ -114,13 +114,12 @@ Item {
 
         File {
             id: file
-
-            onError: console.error("File error: " + msg);
+            onError: (msg) => console.error("File error: " + msg);
         }
 
         JsonParser {
             id: parser
-            onError: console.error("Balanceboxeditor: Error parsing JSON: " + msg);
+            onError: (msg) => console.error("Balanceboxeditor: Error parsing JSON: " + msg);
         }
 
         Column {
