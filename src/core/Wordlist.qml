@@ -216,7 +216,7 @@ Item {
     JsonParser {
         id: parser
 
-        onError: wordlist.error(msg);
+        onError: (msg) => wordlist.error(msg);
     }
 
     Component.onCompleted: {

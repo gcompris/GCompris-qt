@@ -73,12 +73,12 @@ Rectangle {
 
     File {
         id: file
-        onError: console.error("File error: " + msg);
+        onError: (msg) => console.error("File error: " + msg);
     }
 
     JsonParser {
         id: parser
-        onError: console.error("Error parsing JSON: " + msg);
+        onError: (msg) => console.error("Error parsing JSON: " + msg);
     }
 
     Timer {
@@ -379,7 +379,7 @@ Rectangle {
             fileNameInput.cursorPosition = cursorPosition;
         }
         shiftKey: true
-        onError: console.log("VirtualKeyboard error: " + msg);
+        onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         readonly property string newline: "\u21B2"
 
         function populate() {

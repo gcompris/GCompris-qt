@@ -26,7 +26,7 @@ DialogBackground {
     File {
         id: licenseFile
         name: "qrc:/gcompris/src/core/COPYING"
-        onError: print(msg)
+        onError: (msg) => print(msg)
     }
     
     DialogBackground {
