@@ -2684,17 +2684,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Hayır"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:140
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Yükle"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:147
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Kaydet"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:154
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Sına"

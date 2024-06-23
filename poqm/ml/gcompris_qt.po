@@ -2697,17 +2697,17 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:140
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "ലോഡ്"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:147
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "സേവ്"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:154
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "ടെസ്റ്റ്"

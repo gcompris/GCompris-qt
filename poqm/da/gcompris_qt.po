@@ -2828,18 +2828,18 @@ msgctxt "balanceboxeditor|"
 msgid "No"
 msgstr "Nej"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:141
+#: activities/balancebox/editor/BalanceboxEditor.qml:140
 #, fuzzy
 msgctxt "BalanceboxEditor|"
 msgid "Load"
 msgstr "Indlæs"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:148
+#: activities/balancebox/editor/BalanceboxEditor.qml:147
 msgctxt "BalanceboxEditor|"
 msgid "Save"
 msgstr "Gem"
 
-#: activities/balancebox/editor/BalanceboxEditor.qml:155
+#: activities/balancebox/editor/BalanceboxEditor.qml:154
 msgctxt "BalanceboxEditor|"
 msgid "Test"
 msgstr "Test"
