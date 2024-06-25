@@ -52,7 +52,6 @@ Item {
             width: widthInColumn
             height: heightInColumn
             fillMode: Image.PreserveAspectFit
-            mipmap: true
             antialiasing: true
             source: Activity.url + imgName
         }
@@ -66,7 +65,6 @@ Item {
             height: heightInColumn
             fillMode: Image.PreserveAspectFit
             source: Activity.url + imgName
-            mipmap: true
             antialiasing: true
             opacity: 0
 

@@ -46,7 +46,6 @@ Image {
     fillMode: Image.PreserveAspectFit
 
     z: 2
-    mipmap: true
     antialiasing: true
 
     onPaintedWidthChanged: {
