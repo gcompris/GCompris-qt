@@ -57,9 +57,10 @@ Item {
             anchors.centerIn: parent
             width: smallWidth
             height: smallHeight
+            sourceSize.width: width
+            sourceSize.height: height
             fillMode: Image.PreserveAspectFit
             source: Activity.url + imgName
-            mipmap: true
             antialiasing: true
 
             property double smallWidth: widthInColumn

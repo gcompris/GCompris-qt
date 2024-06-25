@@ -130,8 +130,9 @@ ElectricalComponent {
                 anchors.centerIn: parent
                 height: parent.height
                 width: parent.width
+                sourceSize.height: height
+                sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
-                mipmap: true
                 antialiasing: true
             }
         }

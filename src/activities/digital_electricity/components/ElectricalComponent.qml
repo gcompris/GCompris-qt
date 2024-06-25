@@ -39,10 +39,11 @@ Image {
     width: imgWidth * parent.width
     height: imgHeight * parent.height
     fillMode: Image.PreserveAspectFit
+    sourceSize.width: width
+    sourceSize.height: height
 
     source: Activity.url + imgSrc
     z: 2
-    mipmap: true
     antialiasing: true
 
     onPaintedWidthChanged: {
