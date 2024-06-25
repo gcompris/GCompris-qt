@@ -162,6 +162,13 @@ function sinDeg(num)
     return Math.sin(num/180*Math.PI);
 }
 
+function stopBall()
+{
+    items.timer.stop();
+    items.ball.body.linearVelocity.x = 0;
+    items.ball.body.linearVelocity.y = 0;
+}
+
 function moveBall()
 {
     var dt = step / 1000;

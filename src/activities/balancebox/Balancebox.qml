@@ -30,7 +30,6 @@ ActivityBase {
     property var testLevel
     property bool inForeground: false   // to avoid unneeded reconfigurations
 
-    property bool alwaysStart: true     // enforce start signal for editor-to-testing- and returning from config-transition
     property bool needRestart: true
 
     onStart: {
@@ -464,7 +463,10 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: {
+                home()
+                items.timer.start();
+            }
         }
 
         Bar {
@@ -477,7 +479,7 @@ ActivityBase {
             }
             onHelpClicked: {
                 // stop everything or the ball keeps moving while we're away:
-                items.timer.stop();
+                Activity.stopBall();
                 displayDialog(dialogHelp);
             }
             onPreviousLevelClicked: if (!Activity.finishRunning)
@@ -491,7 +493,7 @@ ActivityBase {
                     activity.home()
             }
             onActivityConfigClicked: {
-                items.timer.stop();
+                Activity.stopBall();
                 displayDialog(dialogActivityConfig)
             }
         }
@@ -536,7 +538,8 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                home();
+                items.timer.start();
             }
             onLoadData: {
                 if(activityData && activityData["levels"]) {
