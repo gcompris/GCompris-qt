@@ -15,7 +15,7 @@ import "instruments.js" as Dataset
 
 FindIt {
     mode: "Instruments"
-    dataset: Dataset
+    dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svg"
     isMusicalActivity: true
 }
