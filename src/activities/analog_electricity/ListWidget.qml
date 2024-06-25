@@ -415,7 +415,7 @@ Item {
                     width: inputComponentsContainer.width
                     height: background.height - 2 * bar.height
                     columns: 1
-                    nbItemsByGroup: parent.height / view.iconSize - 2
+                    nbItemsByGroup: view.parent.height / view.iconSize - 2
                 }
             }
             PropertyChanges {
@@ -426,13 +426,13 @@ Item {
             PropertyChanges {
                 toolsContainer {
                     width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
-                    height: parent.width
+                    height: toolsContainer.parent.width
                 }
             }
             AnchorChanges {
                 target: toolsContainer
-                anchors.top: parent.top
-                anchors.left: parent.right
+                anchors.top: toolsContainer.parent.top
+                anchors.left: toolsContainer.parent.right
             }
             PropertyChanges {
                 tools {
@@ -454,7 +454,7 @@ Item {
                     width: 2 * bar.height
                     height: bar.height
                     columns: view.nbItemsByGroup + 2
-                    nbItemsByGroup: parent.width / view.iconSize - 2
+                    nbItemsByGroup: view.parent.width / view.iconSize - 2
                 }
             }
             PropertyChanges {
@@ -464,14 +464,14 @@ Item {
             }
             PropertyChanges {
                 toolsContainer {
-                    width: parent.width
+                    width: toolsContainer.parent.width
                     height: (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
                 }
             }
             AnchorChanges {
                 target: toolsContainer
-                anchors.top: parent.bottom
-                anchors.left: parent.left
+                anchors.top: toolsContainer.parent.bottom
+                anchors.left: toolsContainer.parent.left
             }
             PropertyChanges {
                 tools {
