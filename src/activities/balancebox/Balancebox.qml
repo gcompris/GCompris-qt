@@ -165,7 +165,7 @@ ActivityBase {
             id: mapWrapper
 
             property double margin: 20
-            property int barHeight: ApplicationSettings.isBarHidden ? 0 : bar.height
+            property int barHeight: ApplicationSettings.isBarHidden ? 0 : 90 * ApplicationInfo.ratio
             property int columns: 1
             property int rows: 1
             property double length: Math.min(background.height -
@@ -179,10 +179,10 @@ ActivityBase {
             anchors.horizontalCenter: background.horizontalCenter
 
             onWidthChanged: if (activity.inForeground && pageView.currentItem === activity)
-                resizeTimer.restart()
+            resizeTimer.restart()
 
             onHeightChanged: if (activity.inForeground && pageView.currentItem === activity)
-                resizeTimer.restart()
+            resizeTimer.restart()
 
             transform: [
                 Rotation {
