@@ -60,6 +60,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias hat: theHat
             property alias introductionText: introText
+            property bool inputBlocked: true
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
@@ -258,12 +259,16 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: (background.height - bar.height * 1.2) * 0.15
             sourceSize.width: width
-            enabled: !bonus.isPlaying && theHat.state === "GuessNumber"
-            onClicked: Activity.verifyAnswer()
+            enabled: !items.inputBlocked && theHat.state === "GuessNumber"
+            onClicked: {
+                items.inputBlocked = true
+                Activity.verifyAnswer()
+            }
         }
 
         Bonus {
             id: bonus
+            onLoose: items.inputBlocked = false
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
