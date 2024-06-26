@@ -2713,7 +2713,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Το αρχείο '%1' λείπει!<br>Επιστροφή στα ενσωματωμένα επίπεδα."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2721,7 +2721,7 @@ msgid ""
 msgstr ""
 "Έχεις επιλέξει προσαρμοσμένες πίστες, όμως δεν έχεις φορτώσει ακόμη καμία."
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "Εντάξει"

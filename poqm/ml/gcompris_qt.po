@@ -2664,7 +2664,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "ഫയൽ '%1' കാണാനില്ല!<br>ബിൽറ്റിൻ ലവലുകളിലേക്കു തിരിച്ചു പോകുന്നു."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2673,7 +2673,7 @@ msgstr ""
 "യൂസർ നിർവ്വചിക്കുന്ന ലവൽ സെറ്റ് നിങ്ങൾ തിരഞ്ഞെടുത്തിരിക്കുന്നു, എന്നാൽ ഒരു യൂസർ ലവലുകളും നിങ്ങൾ "
 "ലോഡ് ചെയ്തിട്ടില്ല!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "ഒകെ"

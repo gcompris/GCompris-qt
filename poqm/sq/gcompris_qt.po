@@ -2692,7 +2692,7 @@ msgstr ""
 "Kartela '%1' mungon!<br>Si rrugëzgjidhje, po përdoren nivelet e vetë "
 "programit."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2701,7 +2701,7 @@ msgstr ""
 "Përzgjodhët grupin e niveleve të përcaktuar nga përdoruesi, por s’keni "
 "ngarkuar ende ndonjë nivel përdoruesi!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "OK"

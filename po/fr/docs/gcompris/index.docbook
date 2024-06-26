@@ -381,7 +381,7 @@ for example 'xx.yy.zz'
 ></keycombo
 ></entry>
 <entry
->Sort de l'activité ou de la fenêtre de dialogue courante pour retourner au menu principal.x</entry>
+>Sort de l'activité ou de la fenêtre de dialogue courante pour retourner au menu principal.</entry>
 </row>
 <row>
 <entry
@@ -588,7 +588,7 @@ for example 'xx.yy.zz'
 <entry
 >--software-renderer</entry>
 <entry
->Utilise le mode de rendu logiciel à la place du mode avec OpenGL (Cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
+>Utilise le mode de rendu logiciel à la place du mode avec OpenGL (cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
 </row>
 <row>
 <entry

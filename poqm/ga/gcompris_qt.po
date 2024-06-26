@@ -2732,14 +2732,14 @@ msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr ""
 "Tá an comhad '%1' ar iarraidh!<br>Ag dul ar ais chuig na leibhéil ionsuite. "
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
 "user level!"
 msgstr ""
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "Maith go leor"

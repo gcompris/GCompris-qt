@@ -2819,7 +2819,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Die Datei „%1“ fehlt.<br>Es werden die eingebauten Stufen verwendet."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2828,7 +2828,7 @@ msgstr ""
 "Du hast den benutzerdefinierten Satz an Spielstufen ausgewählt, aber noch "
 "keine Benutzerebene geladen!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "OK"

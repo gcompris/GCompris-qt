@@ -16,12 +16,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Accelerator-Marker: &\n"
+"X-Environment: kde\n"
+"X-Generator: Lokalize 24.04.70\n"
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
-"X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.04.70\n"
-"X-Environment: kde\n"
-"X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2740,7 +2739,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Le fichier « %1 ». est manquant !<br>Retour aux niveaux par défaut."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2749,7 +2748,7 @@ msgstr ""
 "Tu as sélectionné un niveau défini par l'utilisateur sans charger de niveaux "
 "utilisateurs."
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "Ok"
@@ -18063,7 +18062,8 @@ msgctxt "ActivityInfo|"
 msgid "Move and click the mouse."
 msgstr "Déplacement et clic de la souris."
 
-# repeat button : pas facile à traduire. Bouton de droite ? Bouton en forme de bouche ?
+# repeat button : pas facile à traduire. Bouton de droite ? Bouton en forme de
+# bouche ?
 #. Help manual
 #: activities/melody/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
