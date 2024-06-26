@@ -114,6 +114,7 @@ function initLevel() {
             items.repeatersList[1].itemAt(i).nbStarsOn = nbStarsToAddOrRemove[i]
         }
     }
+    items.inputBlocked = false
 }
 
 function setCoefficientVisibility(visibility) {

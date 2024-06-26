@@ -32,7 +32,7 @@ Item {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        enabled: isClickable
+        enabled: isClickable && !items.inputBlocked
         hoverEnabled: true
         onClicked: {
             mainItem.selected = !mainItem.selected

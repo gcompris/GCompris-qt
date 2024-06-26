@@ -143,7 +143,7 @@ Item {
         id: hatMouseArea
         anchors.fill:hatImg
         onClicked: {
-            if(hatImg.state == "NormalPosition") {
+            if(hatImg.state == "NormalPosition" && !items.inputBlocked) {
                 baseRotAnim.running = false;
                 hatImg.rotation = 0;
                 hatImg.state = "Rotated";
