@@ -59,6 +59,9 @@ GridView {
 
             Grid {
                 id: gridLayout
+                rows: 10
+                columns: 10
+                flow: background.horizontalLayout ? Grid.LeftToRight : Grid.TopToBottom
 
                 signal barClicked
                 onBarClicked: {
@@ -66,25 +69,6 @@ GridView {
                 }
 
                 anchors.fill: parent
-
-                states: [
-                    State {
-                        when: background.horizontalLayout
-                        PropertyChanges {
-                            target: gridLayout
-                            rows: 1
-                            columns: 0
-                        }
-                    },
-                    State {
-                        when: !background.horizontalLayout
-                        PropertyChanges {
-                            target: gridLayout
-                            rows: 0
-                            columns: 1
-                        }
-                    }
-                ]
 
                 Repeater {
                     id: squareRepeater
