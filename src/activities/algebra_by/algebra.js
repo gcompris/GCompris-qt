@@ -120,11 +120,15 @@ function circularShiftElements() {
 }
 
 function nextLevel() {
+    items.errorRectangle.resetState();
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.errorRectangle.resetState();
+    items.score.stopWinAnimation();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }

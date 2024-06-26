@@ -16,7 +16,7 @@ import GCompris 1.0
 * A QML component to visualize countdown.
 *
 * Balloon usually consists of timeout duration (@ref duration)
-* and a boolean to check if animation are running at a moment (@ref disabled).
+* the timeout is called at the end of the down animation
 *
 * A balloon falls from top to bottom in a given duration on
 * calling startMoving method and stops on calling stopMoving method.
@@ -27,7 +27,6 @@ Image {
     id: balloon
     source: "qrc:/gcompris/src/core/resource/tuxballoon.svg";
     sourceSize.width: parent.width * 0.4
-    scale: 0.8
     x: parent.width / 2
     y: - balloon.height
 
@@ -43,21 +42,12 @@ Image {
     signal timeout
 
     /**
-     * Emitted when countdown is ready to start.
-     */
-    signal ready
-
-    /**
      * type:int
      * Total duration of the countdown.
      */
     property int duration
 
-    /**
-     * type:boolean
-     * To know if countdown is running at a moment.
-     */
-    property bool disabled
+    property int swingDuration: Math.floor(duration / 10)
 
     /**
      * type:boolean
@@ -76,8 +66,6 @@ Image {
     // Starts the countdown and down animation starts.
     function startMoving(durationIncoming)
     {
-        stopMoving()
-        disabled = false
         duration = durationIncoming
         down.restart()
     }
@@ -85,16 +73,14 @@ Image {
     // Stops the countdown and the down animation stops.
     function stopMoving()
     {
-        disabled = true
         down.stop()
-        reinit.start()
+        reinit.restart()
     }
 
     // Completely stop the ballon when the activity stops.
     function stopBalloon()
     {
         activityRunning = false
-        disabled = true
         down.stop()
         reinit.stop()
     }
@@ -102,45 +88,27 @@ Image {
     ParallelAnimation {
         id: reinit
         running: false
-        NumberAnimation {
-            target: balloon
-            property: "scale"
-            to: 0.8
-            duration: 1000
-        }
+
         NumberAnimation {
             target: balloon
             property: "y"
             to: - balloon.height
-            duration: 1000
+            duration: 0
             easing.type: Easing.InOutQuad
         }
         NumberAnimation {
             target: balloon
             property: "rotation"
             to: 0
-            duration: 1000
+            duration: 0
             easing.type: Easing.InOutQuad
         }
     }
 
     SequentialAnimation {
         id: down
-
-        onRunningChanged: {
-            if (!down.running && !balloon.disabled) {
-                timeout()
-            }
-        }
-
+        running: false
         ParallelAnimation {
-
-            NumberAnimation {
-                target: balloon
-                property: "scale"
-                to: 0.8
-                duration: 1000
-            }
             NumberAnimation {
                 target: balloon
                 property: "y"
@@ -158,17 +126,10 @@ Image {
         }
 
         ParallelAnimation {
-            running: false
-            NumberAnimation {
-                target: balloon
-                property: "scale"
-                to: 1
-                duration: balloon.duration
-            }
             NumberAnimation {
                 target: balloon
                 property: "y"
-                to: parent.height - balloon.height
+                to: balloon.parentHeight - balloon.height - 50 * ApplicationInfo.ratio
                 duration: balloon.duration
                 easing.type: Easing.InOutQuad
             }
@@ -177,7 +138,7 @@ Image {
                     target: balloon
                     property: "rotation"
                     to: -5
-                    duration: 3000
+                    duration: balloon.swingDuration
                     easing.type: Easing.InOutQuad
                 }
                 SequentialAnimation {
@@ -186,24 +147,26 @@ Image {
                         target: balloon
                         property: "rotation"
                         from: -5; to: 5
-                        duration: 3000
+                        duration: balloon.swingDuration * 2
                         easing.type: Easing.InOutQuad
                     }
                     NumberAnimation {
                         target: balloon
                         property: "rotation"
                         from: 5; to: -5
-                        duration: 3000
-                        easing.type: Easing.InOutQuad }
+                        duration: balloon.swingDuration * 2
+                        easing.type: Easing.InOutQuad
+                    }
                 }
                 NumberAnimation {
                     target: balloon
                     property: "rotation"
                     to: 0
-                    duration: 3000
+                    duration: balloon.swingDuration
                     easing.type: Easing.InOutQuad
                 }
             }
         }
+        ScriptAction { script: timeout(); }
     }
 }
