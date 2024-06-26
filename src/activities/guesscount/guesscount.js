@@ -214,6 +214,7 @@ function buildDataset(data, levelSchema) {
     var levelArr = (items.mode === 'builtin' && items.levels) ? defaultOperators : items.levelArr
     var noOfOperators = levelArr[items.currentLevel].length
     var index = (items.mode === 'builtin' && items.levels) ? findIndex(data) : noOfOperators - 1
+    var questions = []
 
     for(var j in data[index]) {
         if(equal(levelArr[items.currentLevel], data[index][j][0])) {
@@ -222,7 +223,7 @@ function buildDataset(data, levelSchema) {
         }
     }
 
-    var questions = Core.shuffle(questions)
+    questions = Core.shuffle(questions)
 
     for(var m = 0 ; m < levelSchema[items.currentLevel] ; ++ m) {
         level.push(questions[m])
