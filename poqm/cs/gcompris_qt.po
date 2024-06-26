@@ -2614,7 +2614,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Soubor '%1'chybí!<br>Vracím se zpět k vestavěným labyrintům."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2623,7 +2623,7 @@ msgstr ""
 "Vybral jsi uživatelskou sadu úrovní, ale zatím jsi žádnou uživatelskou "
 "úroveň nenačetl!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "OK"

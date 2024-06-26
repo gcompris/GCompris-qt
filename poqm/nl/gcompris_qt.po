@@ -2658,7 +2658,7 @@ msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr ""
 "Het bestand '%1' ontbreekt!<br>Er wordt teruggevallen op ingebouwde niveaus."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2667,7 +2667,7 @@ msgstr ""
 "Je hebt de gebruikergedefinieerde niveauset geselecteerd, maar je hebt nog "
 "geen gebruikersniveau geladen!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "OK"

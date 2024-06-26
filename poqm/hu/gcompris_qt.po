@@ -2641,7 +2641,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Az alábbi fájl '%1' nem található!<br>Betöltöm a beépített pályákat."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2650,7 +2650,7 @@ msgstr ""
 "Egy felhasználó által létrehozott pályakészletet választottál, de még egyet "
 "sem töltöttél be!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "Ok"

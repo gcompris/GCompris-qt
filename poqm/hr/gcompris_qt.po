@@ -2618,7 +2618,7 @@ msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
 msgstr "Datoteka '%1' nedostaje!<br>Vraćam se na ugrađene razine."
 
-#: activities/balancebox/Balancebox.qml:71
+#: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
 msgid ""
 "You selected the user-defined level set, but you have not yet loaded any "
@@ -2627,7 +2627,7 @@ msgstr ""
 "Odabrao si korisnički definirani skup razina, ali još nisi učitao nijednu "
 "korisničku razinu!"
 
-#: activities/balancebox/Balancebox.qml:73
+#: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "Ok"
 msgstr "OK"
