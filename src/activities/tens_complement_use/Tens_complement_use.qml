@@ -176,7 +176,7 @@ ActivityBase {
                 AnchorChanges {
                     target: numberContainerArea
                     anchors {
-                        left: parent.left
+                        left: numberContainerArea.parent.left
                         verticalCenter: answerHolderArea.verticalCenter
                         horizontalCenter: undefined
                         bottom: undefined
@@ -188,7 +188,7 @@ ActivityBase {
                             leftMargin: background.layoutMargins
                             bottomMargin: 0
                         }
-                        height: width * 0.67
+                        height: numberContainerArea.width * 0.67
                         width: (layoutArea.width - background.layoutMargins * 3) * 0.32
                     }
                 }
@@ -204,7 +204,7 @@ ActivityBase {
                     target: answerHolderArea
                     anchors {
                         left: numberContainer.right
-                        top: parent.top
+                        top: answerHolderArea.parent.top
                         bottom: score.top
                         right: score.left
                     }
@@ -230,7 +230,7 @@ ActivityBase {
                         }
                         width: Math.min(layoutArea.width - score.width * 2 - background.layoutMargins * 4,
                                     layoutArea.height * 0.35)
-                        height: width * 0.67
+                        height: numberContainerArea.width * 0.67
                     }
                 }
                 AnchorChanges {
@@ -245,7 +245,7 @@ ActivityBase {
                     target: answerHolderArea
                     anchors {
                         left: layoutArea.left
-                        top: parent.top
+                        top: answerHolderArea.parent.top
                         bottom: numberContainerArea.top
                         right: layoutArea.right
                     }
