@@ -770,7 +770,7 @@ ActivityBase {
                         errorRectangle {
                             anchors.fill: answerBackground
                             radius: answerBackground.radius
-                            imageSize: height * 0.5
+                            imageSize: errorRectangle.height * 0.5
                         }
                     }
                 }
