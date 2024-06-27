@@ -15,6 +15,6 @@ import "../tangram"
 
 Tangram {
     id: activity
-    dataset: Dataset
+    dataset: Dataset.dataset
     resourceUrl: "qrc:/gcompris/src/activities/baby_tangram/resource/"
 }
