@@ -18,6 +18,8 @@ Item {
     id: brailleCharItem
     height: dotWidth * 3 + grid.spacing * 4
 
+    signal brailleCharClicked
+
     property string brailleChar: ""
     property real dotWidth: width * 0.4
     property real dotHeight: dotWidth
@@ -131,11 +133,10 @@ Item {
                     } else {
                         state = "on"
                     }
-                    items.clickSound.play()
                     // On touch screens we don't get the exit event.
                     border.width = 2 * ApplicationInfo.ratio
                     brailleCharItem.updateBrailleCharFromDots()
-
+                    brailleCharItem.brailleCharClicked()
                 }
 
                 Behavior on color {

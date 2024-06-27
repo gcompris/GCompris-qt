@@ -49,7 +49,6 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property alias winSound: winSound
-            property alias clickSound: clickSound
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias questionItem: questionItem
@@ -178,19 +177,16 @@ ActivityBase {
                                 anchors.centerIn: rect1
                                 width: parent.width * 0.5
                                 isLetter: true
-                                onBrailleCharChanged: {
-                                    inner.brailleChar = ins.brailleChar
+                                onBrailleCharClicked: {
                                     var answerString = "" ;
-                                    if(brailleChar == "") {
-                                        // fix TypeError on level change
-                                        return
-                                    }
                                     for(var i = 0 ; i < items.currentLevel + 1 ; i++ ) {
                                         answerString = answerString + cardRepeater.itemAt(i).brailleChar;
                                     }
                                     if(answerString === items.question) {
                                         charBg.clickable(false)
                                         Activity.goodAnswer()
+                                    } else {
+                                        clickSound.play()
                                     }
                                 }
                                 property string question: items.question[modelData] ? items.question[modelData] : ""

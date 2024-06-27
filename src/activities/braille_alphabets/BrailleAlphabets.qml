@@ -198,10 +198,12 @@ ActivityBase {
                 }
                 width: Math.min(layoutArea.width * 0.18, layoutArea.height * 0.2)
                 isLetter: true
-                onBrailleCharChanged: {
+                onBrailleCharClicked: {
                     if(brailleChar === Activity.getCurrentLetter()) {
                         particles.burst(40);
                         Activity.goodAnswer();
+                    } else {
+                        clickSound.play()
                     }
                 }
             }
