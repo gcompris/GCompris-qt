@@ -319,7 +319,10 @@ ActivityBase {
                     id: selector
                     width: parent.width
                     height: parent.height
-                    anchors.centerIn: parent
+                    anchors.top: parent.top
+                    anchors.topMargin: (height - contentItem.childrenRect.height) * 0.5
+                    anchors.left: parent.left
+                    anchors.leftMargin: (width - contentItem.childrenRect.width) * 0.5
                     cellHeight: selectorRectangle.selectorItemSize
                     cellWidth: selectorRectangle.selectorItemSize
                     interactive: false
