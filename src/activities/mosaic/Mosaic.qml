@@ -266,8 +266,6 @@ ActivityBase {
                         border.color: "black"
                         opacity: 0.6
                         visible: background.keyboardMode && (background.areaWithKeyboardFocus === answer)
-                        Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                        Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
                     }
 
                     // If the image was directly used as a delegate (without containing it in the item), the highlight element would have been be hard to notice as it would get completely hidden by the image due to the same sizes.
@@ -339,8 +337,6 @@ ActivityBase {
                         border.color: "black"
                         opacity: 0.6
                         visible: background.keyboardMode && (background.areaWithKeyboardFocus === selector)
-                        Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                        Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
                     }
                     delegate: Item {
                         id: selectorItem
