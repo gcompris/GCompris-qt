@@ -172,14 +172,15 @@ ActivityBase {
 
             GCText {
                 id: questionItem
-
-                anchors {
-                    right: planeText.right
-                    rightMargin: 2 * plane.width / 3
-                    verticalCenter: planeText.verticalCenter
-                    bottomMargin: 10 * ApplicationInfo.ratio
-                }
+                width: plane.width * 0.6
+                height: plane.height * 0.8
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                anchors.verticalCenter: plane.verticalCenter
+                anchors.verticalCenterOffset : height * -0.1
+                anchors.left: plane.left
                 fontSize: hugeSize
+                fontSizeMode: Text.Fit
                 font.weight: Font.DemiBold
                 color: "#2a2a2a"
                 text: items.question
