@@ -16881,7 +16881,7 @@ msgstr ""
 "kadarının hala şapka altında olduğunu saymalısın. Yanıtını girmek için "
 "alttaki alana tıkla ve yanıtını doğrulamak için OK düğmesine tıkla."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Şapkaya tıklayarak oyuna başla"

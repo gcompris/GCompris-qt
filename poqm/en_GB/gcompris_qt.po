@@ -16921,7 +16921,7 @@ msgstr ""
 "calculate how many stars are still under the hat. Click on the bottom area "
 "to input your answer and on the OK button to validate it."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Click on the hat to begin the game"

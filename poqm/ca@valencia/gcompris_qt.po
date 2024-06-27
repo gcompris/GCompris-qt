@@ -17389,7 +17389,7 @@ msgstr ""
 "clic en l'àrea inferior per a introduir la vostra resposta i en el botó «OK» "
 "per a validar-la."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Fes clic en el barret per a començar el joc"

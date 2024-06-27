@@ -17044,7 +17044,7 @@ msgstr ""
 "капелюхом. Натисніть унизу, щоб ввести вашу відповідь, а потім натисніть "
 "кнопку «Гаразд», щоб перевірити її."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Натисніть на капелюсі, щоб розпочати гру"

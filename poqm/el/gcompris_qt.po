@@ -17280,7 +17280,7 @@ msgstr ""
 "κάτω μέρος, για να δώσεις την απάντησή σου και πάτα το κουμπί ΟΚ για να "
 "γίνει έλεγχος της απάντησής σου."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Κάνε κλικ στο καπέλο για να ξεκινήσει το παιχνίδι"

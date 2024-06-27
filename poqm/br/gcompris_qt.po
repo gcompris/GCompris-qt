@@ -16976,7 +16976,7 @@ msgstr ""
 "tog. Klik er c'hombodoù war al linenn en traoñ  evit reiñ da respont a-raok "
 "pouezañ war OK a-zehoù."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klik war an tog evit kregiñ gant ar c'hoari"

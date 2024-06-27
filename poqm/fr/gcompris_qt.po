@@ -17249,7 +17249,7 @@ msgstr ""
 "bas pour représenter ta réponse. Clique sur le bouton « Ok » une fois que tu "
 "as fini."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Appuie sur le chapeau pour commencer le jeu"

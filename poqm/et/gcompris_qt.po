@@ -17046,7 +17046,7 @@ msgstr ""
 "kübara all. Klõpsa alumisel real vastuse andmiseks ja vastuse kinnitamiseks "
 "vajuta nupule OK."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Mängu alustamiseks klõpsa kübaral"

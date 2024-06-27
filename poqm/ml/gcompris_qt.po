@@ -16741,7 +16741,7 @@ msgstr ""
 "തൊപ്പിക്കടിയിൽ എത്ര നക്ഷത്രങ്ങൾ ബാക്കിയുണ്ടെന്ന് നിങ്ങൾ എണ്ണി നോക്കണം. താഴെയുള്ള ഭാഗത്ത് ക്ലിക്ക് "
 "ചെയ്ത് ഉത്തരം കൊടുക്കുകയും ഒകെ ബട്ടൺ അമർത്തി അതു സ്ഥിരീകരിക്കുകയും ചെയ്യാം."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "തൊപ്പിയിൽ ക്ലിക്ക് ചെയ്ത് കളി തുടങ്ങൂ"

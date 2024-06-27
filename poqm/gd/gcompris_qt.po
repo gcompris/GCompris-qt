@@ -19239,7 +19239,7 @@ msgstr ""
 "gluasad fon ad? Cunnt iad gu cùramach. Briog air an raon air a’ bhonn gu "
 "deas gus freagairt a thoirt."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Briog air an ad airson an geama a chur gu dol"

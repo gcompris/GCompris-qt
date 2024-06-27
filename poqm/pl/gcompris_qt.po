@@ -16970,7 +16970,7 @@ msgstr ""
 "ucieka. Musisz zliczyć ile jest ich jeszcze pod czapką. Naciśnij w dolnym "
 "obszarze, aby podać swoją odpowiedź i na przycisku OK, aby ją potwierdzić."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Naciśnij na czapce, aby zacząć grę"

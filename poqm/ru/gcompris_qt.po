@@ -16982,7 +16982,7 @@ msgstr ""
 "звёздочкам в нижнем ряду, чтобы указать нужное количество. Нажми кнопку «ОК» "
 "для проверки своего ответа."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Щёлкни по шляпе, чтобы начать игру"

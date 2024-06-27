@@ -17224,7 +17224,7 @@ msgstr ""
 "தொப்பி மீது அதை திறக்கவோ அல்லது மூடவோ சொடுக்குங்க. எவ்வளவு நக்ஷத்திரங்கள் நகர்வதைப் "
 "பாத்தீங்க? ஜாக்கிரதையா எண்ணுங்க. :)  வலது கீழ் இடத்துல விடையை உள்ளிட சொடுக்குங்க. "
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Kick the ball into the goal"

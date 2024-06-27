@@ -17115,7 +17115,7 @@ msgstr ""
 "sombrero. Pulsa en el área inferior para poner tu respuesta y en el botón "
 "«Aceptar» para validarla."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Pulsa el sombrero para comenzar el juego"

@@ -18052,7 +18052,7 @@ msgstr ""
 "do fhreagra a scríobh isteach agus cliceáil ar an chnaipe OK le do fhreagra "
 "a dheimhniú."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Cliceáil ar an hata chun an cluiche a thoiseacht"

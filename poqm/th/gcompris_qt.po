@@ -17252,7 +17252,7 @@ msgstr ""
 "คลิกที่หมวกเพื่อเปิดหรือปิดหมวก ถามว่า ที่ใต้หมวกมีดาววิ่งอยู่กี่ดวงที่คุณเห็น? นับดีๆ นะ :) "
 "คลิกที่บริเวณล่างขวาเพื่อป้อนคำตอบ"
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Kick the ball into the goal"

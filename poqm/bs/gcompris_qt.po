@@ -16551,7 +16551,7 @@ msgstr ""
 "vidiš da se kreću unaokolo? Broj pažljivo. :) Klikni pri dnu desno da uneseš "
 "svoj odgovor."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Kick the ball into the goal"

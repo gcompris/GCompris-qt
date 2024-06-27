@@ -16523,7 +16523,7 @@ msgstr ""
 "بقيت تحت القبعة يا تُرى؟ عدّ بحرص. انقر على المساحة السفليّة  لإدخال إجابتك ثم "
 "اضغط الزر لتأكيدها."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "انقر القبّعة لبدء اللعبة"

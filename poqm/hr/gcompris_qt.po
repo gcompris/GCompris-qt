@@ -16872,7 +16872,7 @@ msgstr ""
 "Moraš izračunati koliko je zvjezdica još ispod šešira. Klikni na donji dio "
 "za unos odgovora i na gumb OK za potvrdu."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klikni na šešir za početak igre"

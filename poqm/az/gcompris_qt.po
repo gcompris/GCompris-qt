@@ -17087,7 +17087,7 @@ msgstr ""
 "qaçır. Sapkanın altında neçə ulduz qaldı? Alt sıradakı ulduzlara vuraraq "
 "lazımi miqdarı göstərin. OLDU düyməsinə vuraraq cavabınızı yoxlayın."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Şapkaya vuraraq oyuna başlayın"
