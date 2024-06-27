@@ -17583,7 +17583,7 @@ msgstr ""
 "deve calcular quantas estrelas ficaram sob o chapéu. Clique na área inferior "
 "para inserir sua resposta e no botão OK para conferi-la."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Clique no chapéu para começar o jogo"

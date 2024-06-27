@@ -17533,7 +17533,7 @@ msgstr ""
 "zvaigžņu tu redzi kustamies apkārt? Skaiti uzmanīgi. :) Klikšķini apakšā "
 "labajā pusē, lai ievadītu tavu atbildi."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Kick the ball into the goal"

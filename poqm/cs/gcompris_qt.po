@@ -16745,7 +16745,7 @@ msgstr ""
 "Tvým úkolem je spočítat, kolik hvězd zůstalo pod kloboukem. Klikni na pole "
 "pod čarou pro vložení odpovědi a potvrď ji stisknutím OK."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Pro započetí hry klikni na klobouk"

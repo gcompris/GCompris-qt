@@ -17609,7 +17609,7 @@ msgstr ""
 "gluasad fon ad? Cunnt iad gu cùramach. :) Briog air an raon air a’ bhonn gu "
 "deas gus freagairt a thoirt."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Kick the ball into the goal"

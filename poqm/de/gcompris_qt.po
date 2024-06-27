@@ -17787,7 +17787,7 @@ msgstr ""
 "Klicke auf den unteren Bereich, um deine Antwort einzutragen und drücke den "
 "OK-Knopf, um deine Antwort zu bestätigen."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klicke auf den Hut, um das Spiel zu beginnen."

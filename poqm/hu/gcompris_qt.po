@@ -17327,7 +17327,7 @@ msgstr ""
 "Meg kell számolnod, hogy maradt a kalap alatt. Kattints a lenti területre, "
 "hogy beírhasd a válaszodat, majd az OK gombra hogy ellenőizd azt."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Kattins a kalapra a játék indításához"

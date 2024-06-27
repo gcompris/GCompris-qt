@@ -17819,7 +17819,7 @@ msgstr ""
 "Musíte spočítať, koľko je ešte stále pod klobúkom. Kliknutím na spodnú časť "
 "zadajte svoju odpoveď a kliknutím na tlačidlo OK potvrďte svoju odpoveď."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klikni na klobúk na začatie hry"

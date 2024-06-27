@@ -17296,7 +17296,7 @@ msgstr ""
 "nell'area in basso per digitare la risposta e sul pulsante OK per "
 "convalidarla."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Fai clic sul cappello per iniziare il gioco"

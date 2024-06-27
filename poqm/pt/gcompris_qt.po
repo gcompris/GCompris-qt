@@ -18429,7 +18429,7 @@ msgstr ""
 "saem. Terá de contar quantas ficam debaixo da cartola. Carregue na área "
 "inferior para introduzir a sua resposta e no botão OK para a validar."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Carregue no chapéu para iniciar o jogo"

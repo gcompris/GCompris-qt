@@ -17496,7 +17496,7 @@ msgstr ""
 "të llogaritni sa yje janë ende nën kapelë. Klikoni në fushën poshtë që të "
 "jepni përgjigjen tuaj dhe mbi butonin OK, që ajo të vlerësohet."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Që të fillohet loja, klikoni mbi kapelën"

@@ -16938,7 +16938,7 @@ msgstr ""
 "按一下帽子可以把它打開或蓋上。星星會跑進去，然後有一些會溜走。您要數數看在帽"
 "子下還有多少星星。點擊底部區域並輸入您的答案，然後點「確定」來揭曉。"
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "點擊帽子開始遊戲"

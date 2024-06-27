@@ -17910,7 +17910,7 @@ msgstr ""
 "Кликнете на долниот дел за да го внесете вашиот одговор и на копчето ОК за "
 "да го потврдите вашиот одговор."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Кликнете на капата за да ја започнете играта"

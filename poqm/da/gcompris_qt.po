@@ -17779,7 +17779,7 @@ msgstr ""
 "rundt under hatten? tæl omhyggeligt. :) Klik for neden i højre side for at "
 "svare."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Kick the ball into the goal"

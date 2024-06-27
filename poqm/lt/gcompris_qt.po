@@ -17441,7 +17441,7 @@ msgstr ""
 "dar yra po skrybėle. Paspausk lango apačioje tiek žvaigždučių, kiek jų liko "
 "po skrybėle ir paskui mygtuką OK."
 
-#: activities/magic-hat-minus/MagicHat.qml:98
+#: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Paspausk ant skrybėlės, kad pradėtum žaidimą"
