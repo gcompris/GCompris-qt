@@ -244,7 +244,7 @@ ActivityBase {
                 right: parent.right
                 margins: 10 * ApplicationInfo.ratio
             }
-            onClicked: if (!activity.audioVoices.isPlaying())
+            onClicked: if (!activity.audioVoices.isPlaying() && !items.objectSelected)
                            questionItem.initQuestion()
         }
 
