@@ -13,7 +13,6 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var questionModel
-var answerModel
 var selectorModel
 
 var url = "qrc:/gcompris/src/activities/mosaic/resource/"
@@ -45,11 +44,10 @@ function initLevel() {
     questionModel = Core.shuffle(selectorModel)
     items.question.model = questionModel
 
-    answerModel = new Array()
-    for(var i=0; i < questionModel.length; i++)
-        answerModel.push("dice_0.svg")
-    items.answer.model = answerModel
-
+    items.answerModel.clear()
+    for(var i=0; i < questionModel.length; i++) {
+        items.answerModel.append({ "imgUrl": "dice_0.svg" })
+    }
 }
 
 function nextLevel() {
@@ -67,11 +65,13 @@ function answerSelected(index) {
         return
 
     items.audioEffects.play("qrc:/gcompris/src/activities/redraw/resource/brush.wav")
-    answerModel[index] = items.selectedItem
-    items.answer.model = answerModel
+    items.answerModel.set(index, { "imgUrl": items.selectedItem })
 
-    if(answerModel.toString() === questionModel.toString()) {
-        items.buttonsBlocked = true
-        items.bonus.good("flower")
+    for(var i=0; i < questionModel.length; i++) {
+        if(items.answerModel.get(i).imgUrl != questionModel[i]) {
+            return
+        }
     }
+    items.buttonsBlocked = true
+    items.bonus.good("flower")
 }
