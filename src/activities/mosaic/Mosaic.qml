@@ -46,7 +46,7 @@ ActivityBase {
             property Item main: activity.main
             property alias brushSound: brushSound
             property alias question: question
-            property alias answer: answer
+            property alias answerModel: answerModel
             property alias selector: selector
             property alias background: background
             property int currentLevel: activity.currentLevel
@@ -245,6 +245,10 @@ ActivityBase {
                 }
             }
 
+            ListModel {
+                id: answerModel
+            }
+
             // === The Answer Area ===
             Rectangle {
                 id: answerRectangle
@@ -261,6 +265,7 @@ ActivityBase {
 
                 GridView {
                     id: answer
+                    model: answerModel
                     width: cellWidth * mainArea.nbColumns
                     height: cellHeight * mainArea.nbLines
                     anchors.centerIn: parent
@@ -289,7 +294,7 @@ ActivityBase {
 
                         Image {
                             id: imageAnswerId
-                            source: Activity.url + modelData
+                            source: Activity.url + imgUrl
                             fillMode: Image.PreserveAspectFit
                             width: answer.cellWidth - mainArea.itemsMargin
                             height: width
