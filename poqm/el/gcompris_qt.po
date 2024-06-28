@@ -17420,13 +17420,13 @@ msgstr ""
 "Ένα γράμμα εμφανίζεται στη σημαία του αεροπλάνου. Επίλεξε όλες τις λέξεις ή "
 "τα αντικείμενα στα οποία εμφανίζεται το συγκεκριμένο γράμμα και πάτα OK."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:322
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Συγγνώμη, αλλά δεν υπάρχει διαθέσιμη μετάφραση για τη γλώσσα που επέλεξες."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:323
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17437,7 +17437,7 @@ msgstr ""
 "επικοινωνία με μια μεταφραστική ομάδα στο <a href=\"%2\">%2</a> για να "
 "βοηθήσεις στη μετάφρασή του."
 
-#: activities/letter-in-word/LetterInWord.qml:324
+#: activities/letter-in-word/LetterInWord.qml:325
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

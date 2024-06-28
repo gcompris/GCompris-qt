@@ -17419,12 +17419,12 @@ msgstr ""
 "Huruf ditampilkan pada bendera yang menempel pada pesawat. Pilih semua kata "
 "dalam daftar yang berisi huruf yang disebutkan dan kemudian tekan tombol OK."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:322
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Kami mohon maaf, kami belum memiliki terjemahan untuk bahasamu."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:323
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17434,7 +17434,7 @@ msgstr ""
 "GCompris dikembangkan oleh komunitas KDE, kamu bisa menerjemahkan GCompris "
 "dengan bergabung pada sebuah tim penerjemahan di <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:324
+#: activities/letter-in-word/LetterInWord.qml:325
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

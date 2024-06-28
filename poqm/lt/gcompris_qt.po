@@ -17137,12 +17137,12 @@ msgstr ""
 "Raidė matosi ant vėliavėlės, kurią tempia lėktuvas. Pasirink visus žodžius "
 "(daiktus), kurie turi tą raidę ir tada paspausk mygtuką OK."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:322
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Atsiprašome, mes dar neturime vertimo į tavo kalbą."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:323
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17153,7 +17153,7 @@ msgstr ""
 "pagerinti GCompris vertimą, prisijungdamas prie vertėjų komandos <a href="
 "\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:324
+#: activities/letter-in-word/LetterInWord.qml:325
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

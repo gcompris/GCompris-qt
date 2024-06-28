@@ -16882,12 +16882,12 @@ msgstr ""
 "На прапорі, приєднаному до літака, буде показано літеру. Позначте усі слова, "
 "у яких є ця літера, у списку і натисніть кнопку «Гаразд»."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:322
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Вибачте, у нас ще немає перекладу потрібною вам мовою."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:323
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16897,7 +16897,7 @@ msgstr ""
 "GCompris розроблено спільнотою KDE. Щоб допомогти у перекладі GCompris, "
 "долучіться до команди перекладачів на сайті <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:324
+#: activities/letter-in-word/LetterInWord.qml:325
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

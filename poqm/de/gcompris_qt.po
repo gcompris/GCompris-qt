@@ -17477,12 +17477,12 @@ msgstr ""
 "Ein Buchstabe wird auf einer Flagge an einem Flugzeug angezeigt. Wähle alle "
 "Wörter in der Liste aus, in denen der Buchstabe vorkommt, und drücke dann OK."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:322
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Leider haben wir noch keine Übersetzung für Deine Sprache."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:323
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17493,7 +17493,7 @@ msgstr ""
 "möchtest, GCompris zu übersetzen, dann tritt einem Übersetzungsteam auf <a "
 "href=\"%2\">%2</a> bei."
 
-#: activities/letter-in-word/LetterInWord.qml:324
+#: activities/letter-in-word/LetterInWord.qml:325
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

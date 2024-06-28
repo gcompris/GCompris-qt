@@ -16816,12 +16816,12 @@ msgstr ""
 "Върху знамето, прикрепено към самолета, се показва буква. Избери всички думи "
 "в списъка, които съдържат тази буква, и след това натисни бутона OK."
 
-#: activities/letter-in-word/LetterInWord.qml:321
+#: activities/letter-in-word/LetterInWord.qml:322
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Съжаляваме, но все още не разполагаме с превод за вашия език."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:323
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16831,7 +16831,7 @@ msgstr ""
 "GCompris е разработен от общността на KDE, можете да преведете GCompris, "
 "като се присъедините към екипа за превод на <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:324
+#: activities/letter-in-word/LetterInWord.qml:325
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
