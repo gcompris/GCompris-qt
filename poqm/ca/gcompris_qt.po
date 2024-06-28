@@ -17101,12 +17101,12 @@ msgstr ""
 "Apareixerà una lletra a la bandera arrossegada per l'avioneta, seleccioneu "
 "totes les paraules on aparegui i, a continuació, premeu el botó «OK»."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Ho sentim, encara no tenim una traducció al vostre idioma."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17116,7 +17116,7 @@ msgstr ""
 "El GCompris és desenvolupat per la comunitat KDE, el podeu traduir unint-vos "
 "a un equip de traducció a <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

@@ -16690,12 +16690,12 @@ msgstr ""
 "Amósase unha letra na bandeira que hai colocada no avión. Selecciona todas "
 "as palabras da lista que conteñen a letra e preme o botón de «Aceptar»."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Sentímolo, aínda non dispoñemos dunha tradución ao galego."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16705,7 +16705,7 @@ msgstr ""
 "GCompris desenvólveo a comunidade de KDE, para colaborar na súa tradución "
 "únete a un grupo de tradución en <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

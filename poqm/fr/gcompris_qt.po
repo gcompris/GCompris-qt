@@ -16960,14 +16960,14 @@ msgstr ""
 "Une lettre est écrite et/ou parlée. Des mots sont affichés, l'enfant doit "
 "trouver le ou les mots contenant cette lettre."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr ""
 "Nous sommes désolés, la traduction dans votre langue n'est pas encore "
 "disponible."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16977,7 +16977,7 @@ msgstr ""
 "GCompris est développé par la communauté KDE. Vous pouvez traduire GCompris "
 "en rejoignant l'équipe de traduction à <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

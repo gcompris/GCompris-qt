@@ -17021,12 +17021,12 @@ msgstr ""
 "Koneeseen kiinnitetyssä lipussa näkyy kirjain. Valitse kaikki tämän "
 "kirjaimen sisältävät sanat ja paina sitten OK-painiketta."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Valitettavasti kielellesi ei ole vielä käännöstä."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17036,7 +17036,7 @@ msgstr ""
 "GComprisin on kehittänyt KDE-yhteisö. Voit kääntää GComprisia liittymällä "
 "käännösryhmään osoitteessa <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

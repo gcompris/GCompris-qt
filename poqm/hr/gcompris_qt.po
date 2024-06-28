@@ -16593,12 +16593,12 @@ msgstr ""
 "Na zastavi pričvršćenoj za avion prikazano je slovo. Odaberi sve riječi na "
 "popisu koje sadrže ovo slovo i zatim pritisni gumb OK."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Žao nam je, još nemamo prijevod za tvoj jezik."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16608,7 +16608,7 @@ msgstr ""
 "GCompris je razvila KDE zajednica, možeš prevesti GCompris pridruživanjem "
 "prevoditeljskom timu na <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "

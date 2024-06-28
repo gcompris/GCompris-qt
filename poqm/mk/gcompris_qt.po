@@ -17205,12 +17205,12 @@ msgstr ""
 "На знамето прикачено на авионот се прикажува буква, одберете ги сите зборови "
 "или предмети во кои се појавува буквата и потоа притиснете ОК."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Жал ни е, сè уште немаме превод за вашиот јазик."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17220,7 +17220,7 @@ msgstr ""
 "Жикомпри е развиен од KDE заедницата, можете да го преведете Жикомпри со тоа "
 "што ќе се приклучите на тим за превод на <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
