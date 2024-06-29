@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-06-22 08:01+0300\n"
+"PO-Revision-Date: 2024-06-28 10:39+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.0\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -43,7 +43,7 @@ msgstr "אוטומטי"
 #: activities/money_cents/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
-msgstr "כפתור OK"
+msgstr "כפתור אישור"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
@@ -53,7 +53,7 @@ msgstr "כפתור OK"
 #: activities/money_cents/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
-msgstr "לאשר את התשובה"
+msgstr "אימות התשובות"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
@@ -26133,12 +26133,9 @@ msgid "Translations added for Arabic and Esperanto"
 msgstr "נוסף תירגום לאזרביז'נית! מי היה מאמין."
 
 #: core/ChangeLog.qml:45 core/ChangeLog.qml:52
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "עודכן התרגום לרוסית"
+msgstr "מגוון תרגומים עודכנו"
 
 #: core/ChangeLog.qml:51
 #, fuzzy
