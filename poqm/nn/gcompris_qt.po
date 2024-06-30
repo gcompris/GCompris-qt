@@ -16675,12 +16675,12 @@ msgstr ""
 "Flagget på flyet viser ein bokstav. Vel alle orda som inneheld bokstaven, og "
 "trykk så «OK»."
 
-#: activities/letter-in-word/LetterInWord.qml:310
+#: activities/letter-in-word/LetterInWord.qml:311
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/letter-in-word/LetterInWord.qml:311
+#: activities/letter-in-word/LetterInWord.qml:312
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16690,7 +16690,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/letter-in-word/LetterInWord.qml:313
+#: activities/letter-in-word/LetterInWord.qml:314
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -16957,7 +16957,7 @@ msgstr ""
 "hatten. Trykk på området nede til høgre for å svara og så på «OK»-knappen "
 "for å sjå om svaret var rett."
 
-#: activities/magic-hat-minus/MagicHat.qml:93
+#: activities/magic-hat-minus/MagicHat.qml:94
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Trykk på hatten for å starta spelet"
