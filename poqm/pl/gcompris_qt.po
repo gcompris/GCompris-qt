@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-08 10:46+0200\n"
+"PO-Revision-Date: 2024-06-29 10:15+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -2117,12 +2117,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse"
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr "Poruszaj myszką"
+msgstr "Moja pierwsza mysz"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2207,7 +2204,7 @@ msgstr "Proste puzzle"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Dopasowuj obiekty do ich kształtów."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
@@ -2240,7 +2237,7 @@ msgstr "Mój pierwszy edytor tekstowy"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Zacznij pisać swoje pierwsze teksty."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2799,7 +2796,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Rozwijaj umiejętności myślenia strategicznego, liczenia i odejmowania."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -5717,7 +5714,7 @@ msgstr "Przeciągaj i upuszczaj kształty na odpowiadającym im celach."
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "Rozwijaj umiejętności obserwacji i wyobraźni przestrzennej."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
@@ -9133,7 +9130,7 @@ msgstr "Przesuń każdy element, aby ułożyć obraz ponownie."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "Rozwijaj umiejętności przewidywania i wyobraźni przestrzennej."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9362,7 +9359,7 @@ msgstr "Kopnij piłką do bramki."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Zrozum czym jest kierunek i szybkość."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -9994,7 +9991,7 @@ msgstr "Umieszczaj regiony na mapach krajów."
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "Naucz się rozpoznawać i umieszczać regiony w krajach."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
@@ -12783,12 +12780,9 @@ msgstr "Ustalanie położenia państw"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Place the TOOLS to the right and others to the left"
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr "Umieśc narzędzia po prawej, a pozostałe po lewej"
+msgstr "Umieć kontynenty i kraje na mapie świata."
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
@@ -13924,7 +13918,7 @@ msgstr "Wpisuj spadające litery, zanim spadną na ziemię."
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr ""
+msgstr "Dopasuj litery z klawiatury do liter z ekranu."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
@@ -14886,7 +14880,7 @@ msgstr "Liczba zgadywana"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Szukaj działań do otrzymania żądanego wyniku."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
@@ -15079,7 +15073,7 @@ msgstr "Odgaduj litery danego słowa."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Poprawiaj swoją wymowę i słownik."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15158,7 +15152,7 @@ msgstr "Skopiuj wieżę z kołka po prawej na ten pusty."
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Rozwijaj umiejętności myślenia strategicznego."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -16789,7 +16783,7 @@ msgstr "Poszukaj słów na zadaną literę."
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "Ćwicz znajdywanie danych liter w słowach."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -16849,6 +16843,7 @@ msgstr "Wyłącz wszystkie światła."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
 msgstr ""
+"Rozwijaj umiejętności przewidywania, strategi i wyobraźni przestrzennej."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -17248,7 +17243,7 @@ msgstr "Pomóż Tuksowi wydostać się z tego labiryntu."
 #: activities/mazerelative/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization and pathfinding skills."
-msgstr ""
+msgstr "Rozwijaj umiejętności wyobraźni przestrzennej, odnajdywania ścieżek."
 
 #. Help manual
 #: activities/maze/ActivityInfo.qml:23
@@ -19676,7 +19671,7 @@ msgstr "Zagraj w młynek z Tuksem."
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "Rozwijaj umiejętności strategiczne i wyobraźni przestrzennej."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -20417,7 +20412,7 @@ msgstr "Zagraj w grę strategiczną Oware z Tuksem."
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Rozwijaj umiejętności myślenia strategicznego."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
@@ -20841,7 +20836,7 @@ msgstr "Znajduj różnice między dwoma zdjęciami."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Rozwijaj umiejętności postrzegania szczegółów."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21924,13 +21919,13 @@ msgstr "Wybierz obraz, na którym dziecko jest po lewej od pudełka."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Zaprogramuj ścieżkę"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Zaprogramuj ścieżkę, aby pomóc Tuksowi złapać rybę."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
@@ -22330,7 +22325,7 @@ msgstr "Na pustej siatce narysuj dany obraz perfekcyjnie."
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr ""
+msgstr "Naucz się rozpoznawać miejsce na siatce i odtwarzać modele."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -23840,7 +23835,7 @@ msgstr "Nie możesz umieścić więcej niż %1 słodycz w tym samym prostokącie
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "Narysuj na siatce"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -23852,7 +23847,7 @@ msgstr "Stwórz swój własny rysunek."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Wyrażaj swoją twórczość poprzez rysowanie."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -25960,7 +25955,7 @@ msgstr "Umieść trzy znaki w rzędzie."
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "Rozwijaj umiejętności strategiczne."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
