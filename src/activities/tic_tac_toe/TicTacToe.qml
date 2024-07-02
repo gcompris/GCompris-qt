@@ -75,6 +75,9 @@ ActivityBase {
                 verticalCenter: parent.verticalCenter
                 horizontalCenter: parent.horizontalCenter
             }
+            property real itemSize: grid.height * 0.275
+            property real gridLeftMargin: width / 18
+            property real gridTopMargin: width / 20
 
             ListModel {
                 id: pieces
@@ -85,11 +88,11 @@ ActivityBase {
                 rows: 3
                 columns: 3
                 anchors {
-                fill: parent
-                left: parent.left
-                leftMargin: parent.width/18
-                top: parent.top
-                topMargin: board.width/20
+                    fill: parent
+                    left: parent.left
+                    leftMargin: board.gridLeftMargin
+                    top: parent.top
+                    topMargin: board.gridTopMargin
                 }
                 spacing: board.width/16
                 Repeater {
@@ -99,11 +102,11 @@ ActivityBase {
                     Component {
                         id: blueSquare
                         Rectangle {
-                            width: (grid.height/4)*1.1
-                            height: (grid.height/4)*1.1
+                            width: board.itemSize
+                            height: board.itemSize
                             border.color: "transparent"
-                            border.width: 5
-                            radius: 10
+                            border.width: 3 * ApplicationInfo.ratio
+                            radius: 5 * ApplicationInfo.ratio
                             state: "INITIAL"
                             color: "#c7ecfb"
                             Piece {
@@ -141,13 +144,17 @@ ActivityBase {
                         }
                     }
                 }
-                Piece {
-                    id: createPiece
-                    state: (items.counter + items.playSecond) % 2 ? "2": "1"
-                    width: (grid.height/4)*1.1
-                    height: (grid.height/4)*1.1
-                    opacity: 0
-                }
+            }
+            Piece {
+                id: createPiece
+                property real pieceX: 0
+                property real pieceY: 0
+                x: pieceX + board.gridLeftMargin
+                y: pieceY + board.gridTopMargin
+                state: (items.counter + items.playSecond) % 2 ? "2": "1"
+                width: board.itemSize
+                height: board.itemSize
+                opacity: 0
             }
         }
 
@@ -157,7 +164,7 @@ ActivityBase {
             properties: "scale"
             from: 1.0
             to: 0.0
-            duration: 1
+            duration: 0
         }
         PropertyAnimation {
             id: magnify
@@ -167,7 +174,7 @@ ActivityBase {
             to: 1.0
             duration: 1000
             onStarted: smudgeSound.play()
-            onStopped: { Activity.continueGame() }
+            onFinished: { Activity.continueGame() }
         }
 
         ScoreItem {
@@ -225,6 +232,7 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: {
+                bonus.haltBonus()
                 Activity.reset()
             }
         }

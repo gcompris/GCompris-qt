@@ -82,6 +82,7 @@ function reset() {
 
 function stopAnimations() {
     items.magnify.stop();
+    items.demagnify.start();
     items.player1score.endTurn();
     items.player2score.endTurn();
 }
@@ -132,8 +133,8 @@ function changePlayToSecond() {
         var x = parseInt(rand%3) * hx
         items.repeater.itemAt(rand).state = "DONE"
         currentPiece = rand
-        items.createPiece.x = x
-        items.createPiece.y = y
+        items.createPiece.pieceX = x
+        items.createPiece.pieceY = y
         items.demagnify.start()
         items.createPiece.opacity = 1
         items.magnify.start()
@@ -172,8 +173,8 @@ function handleCreate(parent) {
     var rowno = getrowno(parent.y)
     var colno = getcolno(parent.x)
     currentPiece = (rowno * items.columns) + colno
-    items.createPiece.x=parent.x
-    items.createPiece.y=parent.y
+    items.createPiece.pieceX=parent.x
+    items.createPiece.pieceY=parent.y
     items.demagnify.start()
     items.createPiece.opacity = 1
     items.magnify.start()
