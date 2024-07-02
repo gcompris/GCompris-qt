@@ -1,3 +1,4 @@
+# SPDX-FileCopyrightText: 2020, 2021, 2024 Alois Spitzbart <spitz234@hotmail.com>
 # Manuel <manu@dreivierteleins.de> 2014.
 # Gerhard Dieringer <GDieringer@compuserve.com>, 2000.
 # Martin Herweg <m.herweg@gmx.de>, 2001.
@@ -11,15 +12,14 @@
 # Frederik Schwarzer <schwarzer@kde.org>, 2015, 2016, 2020, 2021, 2022, 2023.
 # Daniel Schlep <info@danielschlep.de>, 2019.
 # Christian Buhtz <c.buhtz@posteo.jp>, 2020.
-# Alois Spitzbart <spitz234@hotmail.com>, 2020, 2021.
 # Lars Vogdt <lars@linux-schulserver.de>, 2023.
 # Claudia und Emmanuel Charruau, 2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-07-24 21:30+0200\n"
-"Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
+"PO-Revision-Date: 2024-06-16 10:03+0200\n"
+"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 24.05.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -1158,7 +1158,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to find the difference between two numbers within a limited period of "
 "time."
-msgstr "Ermittle die Differenz zwischen zwei Zahlen in begrenzter Zeit.."
+msgstr "Ermittle die Differenz zwischen zwei Zahlen in begrenzter Zeit."
 
 #. Help prerequisite
 #: activities/algebra_minus/ActivityInfo.qml:22
@@ -1487,7 +1487,7 @@ msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
 msgstr ""
 "Bewege den Hubschrauber, um die Wolken in der Reihenfolge des Alphabets zu "
-"treffen.."
+"treffen."
 
 #. Help goal
 #: activities/alphabet-sequence/ActivityInfo.qml:20
@@ -2477,7 +2477,7 @@ msgstr ""
 "Im Bereich der Haupttafel ist ein Satz von Objekten dargestellt. In der "
 "Seitenleiste gibt es weitere Objekte. Jedes dieser Objekte passt exakt zu "
 "einem Objekt der Haupttafel. Du musst die logische Verknüpfung zwischen "
-"diesen Objekten finden. Ziehe die Objekte in die richtigen  Felder der "
+"diesen Objekten finden. Ziehe die Objekte in die richtigen Felder der "
 "Haupttafel."
 
 #: activities/babymatch/resource/board/board1_0.qml:14
@@ -3028,9 +3028,8 @@ msgid ""
 "2⁷=128."
 msgstr ""
 "Jedes Bit ergänzt einen zunehmenden Wert, der Leistung von 2 entsprechend, "
-"ansteigend von rechts nach links: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → "
-"2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 "
-"→ 2⁷=128."
+"ansteigend von rechts nach links: bit 1 → 2⁰=1, bit 2 → 2¹=2, bit 3 → 2²=4, "
+"bit 4 → 2³=8, bit 5 → 2⁴=16, bit 6 → 2⁵=32, bit 7 → 2⁶=64, bit 8 → 2⁷=128."
 
 #: activities/binary_bulb/binary_bulb.js:40
 msgctxt "binary_bulb|"
@@ -3804,7 +3803,7 @@ msgid ""
 msgstr ""
 "Du hast nicht alle Bilder für diese Aktivität. Drücke auf Aktualisieren, um "
 "den vollständigen Datensatz herunterzuladen. Drücke auf das Kreuz oder auf "
-"„Diesen Dialog nicht mehr anzeigen“, um mit der Demoversion zu spielen ."
+"„Diesen Dialog nicht mehr anzeigen“, um mit der Demoversion zu spielen."
 
 #: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
@@ -4448,13 +4447,13 @@ msgid ""
 "it.\n"
 msgstr ""
 "Dame wird mit zwei Spielern auf den gegenüberliegenden Seiten des "
-"Spielbretts gespielt. Ein Spieler nutzt die dunklen  Steine; der andere "
-"nutzt die hellen Steine. Es wird abwechselnd gezogen. Die Spieler dürfen "
-"nicht die Steine des Gegners verwenden. Ein Zug besteht aus einer diagonalen "
-"Bewegung auf ein angrenzendes, nicht besetztes Feld. Wenn ein angrenzendes "
-"Feld von einem Spielstein des Gegners besetzt ist und das Feld direkt "
-"dahinter ist frei, darf der Spielstein genommen und von Spielbrett entfernt "
-"werden, während der Spieler über ihn springt.\n"
+"Spielbretts gespielt. Ein Spieler nutzt die dunklen Steine; der andere nutzt "
+"die hellen Steine. Es wird abwechselnd gezogen. Die Spieler dürfen nicht die "
+"Steine des Gegners verwenden. Ein Zug besteht aus einer diagonalen Bewegung "
+"auf ein angrenzendes, nicht besetztes Feld. Wenn ein angrenzendes Feld von "
+"einem Spielstein des Gegners besetzt ist und das Feld direkt dahinter ist "
+"frei, darf der Spielstein genommen und von Spielbrett entfernt werden, "
+"während der Spieler über ihn springt.\n"
 "Es werden nur die dunklen Felder auf dem karierten Spielbrett genutzt. Ein "
 "Spielstein kann nur diagonal auf ein unbesetztes Feld ziehen. Ziel ist es, "
 "Spielsteine einzunehmen. Der Spieler, der keine Spielsteine mehr hat oder "
@@ -4498,7 +4497,7 @@ msgid ""
 "catch him or secure your pieces from his attacks."
 msgstr ""
 "In dieser Aktivität kannst du das Schachspiel entdecken indem du gegen den "
-"Computer spielst. Die möglichen  Zielpositionen werden für jede ausgewählte "
+"Computer spielst. Die möglichen Zielpositionen werden für jede ausgewählte "
 "Figur angezeigt, was Kindern hilft zu verstehen, wie sich einzelne "
 "Spielfiguren bewegen können. In der ersten Spielstufe spielt der Rechner "
 "rein zufällig, um den Kindern die besten Gewinnchancen zu lassen. In höheren "
@@ -4624,7 +4623,7 @@ msgid ""
 "catch him or secure your pieces from his attacks."
 msgstr ""
 "In dieser Aktivität kannst du das Schachspiel entdecken indem du gegen einen "
-"Freund spielst. Die möglichen  Zielpositionen werden für jede ausgewählte "
+"Freund spielst. Die möglichen Zielpositionen werden für jede ausgewählte "
 "Figur angezeigt, was Kindern hilft zu verstehen, wie sich einzelne "
 "Spielfiguren bewegen können.\n"
 "\n"
@@ -5196,7 +5195,7 @@ msgstr "Motorische Fähigkeiten: Die Hand präzise bewegen."
 #: activities/clickgame/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can move mouse and click on the correct place."
-msgstr "Kann die Maus bewegen und gezielt klicken.."
+msgstr "Kann die Maus bewegen und gezielt klicken."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5372,7 +5371,7 @@ msgstr ""
 "hinzufügst, desto mehr Licht wird absorbiert und desto dunkler werden die "
 "kombinierten Farben. Mit nur drei Primärfarben kann man viele neue Farben "
 "mischen. Die Primärfarben für Farbe/Tinte sind Cyan (ein spezieller "
-"Blauton), Magenta (ein rosa Farbton) und Gelb.        "
+"Blauton), Magenta (ein rosa Farbton) und Gelb."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -6205,7 +6204,7 @@ msgstr ""
 "Digitale Schaltkreise arbeiten mit nur zwei Zuständen: 0 und 1. Das erlaubt "
 "es, mathematische Operationen durchzuführen, wie Additionen, "
 "Subtraktionen... Dies sind die Grundlagen der Computertechnik. In der "
-"Realität ist 0 oft ein Repräsentant für eine Spannung nahe der Erdung  und 1 "
+"Realität ist 0 oft ein Repräsentant für eine Spannung nahe der Erdung und 1 "
 "ein Repräsentant für eine Versorgungsspannung eines Schaltkreises."
 
 #: activities/digital_electricity/components/OrGate.qml:21
@@ -7069,7 +7068,7 @@ msgstr ""
 "In Spielstufe eins erkunden die Spieler jedes Tier auf dem Bildschirm. "
 "Klicke auf ein Tier und erfahre mehr darüber, wie es heißt, welche Laute es "
 "macht und wie es aussieht. Lerne diese Informationen gut, denn du wirst in "
-"Stufe zwei und drei abgefragt!."
+"Stufe zwei und drei abgefragt!"
 
 #: activities/explore_farm_animals/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -7944,7 +7943,7 @@ msgstr ""
 "Das Chateau de Chenonceau gehört zu den vielen Schlössern im Loiretal, die "
 "mit unglaublicher Architektur und historischer Bedeutung prahlen und "
 "tausende von Reisenden aus aller Welt anziehen. Das Chateau de Chenonceau "
-"wird manchmal von Historikern das Schloss der Damen genannt. da feminine "
+"wird manchmal von Historikern das Schloss der Damen genannt, da feminine "
 "Züge die Konstruktion und die Entwicklung dieses französischen Schlosses "
 "über Jahrhunderte hinweg beeinflussten."
 
@@ -8515,7 +8514,7 @@ msgstr ""
 #: activities/explore_world_animals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "There are two levels in this game."
-msgstr "Es  gibt zwei Spielstufen in diesem Spiel."
+msgstr "Es gibt zwei Spielstufen in diesem Spiel."
 
 #: activities/explore_world_animals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -9362,17 +9361,17 @@ msgstr ""
 #: activities/find_the_day/find_the_day_dataset.js:35
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 13 days after May 3rd."
-msgstr "Finde das Datum 13 Tage nach dem  3. Mai."
+msgstr "Finde das Datum 13 Tage nach dem 3. Mai."
 
 #: activities/find_the_day/find_the_day_dataset.js:39
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 7 days after October 1st."
-msgstr "Finde das Datum 7 Tage nach dem  1. Oktober."
+msgstr "Finde das Datum 7 Tage nach dem 1. Oktober."
 
 #: activities/find_the_day/find_the_day_dataset.js:43
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 31 days after July 12th."
-msgstr "Finde das Datum 31 Tage nach dem  12. Juli."
+msgstr "Finde das Datum 31 Tage nach dem 12. Juli."
 
 #: activities/find_the_day/find_the_day_dataset.js:47
 msgctxt "find_the_day_dataset|"
@@ -9422,7 +9421,7 @@ msgstr "Finde das Datum 2 Wochen und 3 Tage nach dem 12. Januar."
 #: activities/find_the_day/find_the_day_dataset.js:116
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 3 weeks and 2 days after March 22nd."
-msgstr "Finde das Datum  3 Wochen und 2 Tage nach dem 22. März."
+msgstr "Finde das Datum 3 Wochen und 2 Tage nach dem 22. März."
 
 #: activities/find_the_day/find_the_day_dataset.js:120
 msgctxt "find_the_day_dataset|"
@@ -9432,7 +9431,7 @@ msgstr "Finde das Datum 5 Wochen und 6 Tage nach dem 5. Oktober."
 #: activities/find_the_day/find_the_day_dataset.js:124
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 1 week and 1 day before August 8th."
-msgstr "Finde das Datum  1 Woche und 1 Tag vor dem 8. August."
+msgstr "Finde das Datum 1 Woche und 1 Tag vor dem 8. August."
 
 #: activities/find_the_day/find_the_day_dataset.js:128
 msgctxt "find_the_day_dataset|"
@@ -9857,7 +9856,7 @@ msgstr "Prozentrechnen mit Kreisdiagrammen."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the pie."
-msgstr "Wähle %1% vom Kreis."
+msgstr "Wähle %1 % vom Kreis."
 
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
@@ -9874,7 +9873,7 @@ msgstr "Prozentrechnen mit Quadraten."
 #, qt-format
 msgctxt "Data|"
 msgid "Select %1% of the square."
-msgstr "Wähle  %1% des Quadrates."
+msgstr "Wähle %1 % des Quadrates."
 
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
@@ -15971,10 +15970,10 @@ msgid ""
 "and closer to the planet the acceleration increases."
 msgstr ""
 "Die Beschleunigung aufgrund der Schwerkraft, welcher das Raumschiff "
-"ausgesetzt ist, ist direkt proportional zur Masse des Planeten und "
-"umgekehrt  proportional zum Quadrat der Entfernung vom Planetenzentrum. "
-"Somit unterscheidet sich die Beschleunigung je nach Planet und erhöht sich, "
-"je näher das Raumschiff dem Planeten ist."
+"ausgesetzt ist, ist direkt proportional zur Masse des Planeten und umgekehrt "
+"proportional zum Quadrat der Entfernung vom Planetenzentrum. Somit "
+"unterscheidet sich die Beschleunigung je nach Planet und erhöht sich, je "
+"näher das Raumschiff dem Planeten ist."
 
 #: activities/land_safe/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -16381,7 +16380,7 @@ msgstr "Addition mit 1 und 2."
 #: activities/learn_additions/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Additions with 1, 2 and 3."
-msgstr "Addition mit 1, 2,  und 3."
+msgstr "Addition mit 1, 2, und 3."
 
 #: activities/learn_additions/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -17634,7 +17633,7 @@ msgid ""
 "to turn and up to move forward."
 msgstr ""
 "In diesem Labyrinth sind die Bewegungen relativ (aus Deiner Sicht). Mit "
-"„Links“ und „Rechts“  kannst Du Tux drehen und mit „Hoch“ ihn vorwärts "
+"„Links“ und „Rechts“ kannst Du Tux drehen und mit „Hoch“ ihn vorwärts "
 "bewegen."
 
 #: activities/mazerelative/ActivityInfo.qml:29
@@ -18999,7 +18998,7 @@ msgstr "1, 2 oder 3 gelbe Sterne - Für Kinder von 2 bis 6 Jahren"
 #: activities/menu/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "1, 2 or 3 red stars - 7 years and up"
-msgstr "1, 2 oder 3 rote Sterne - Für Kinder über  7 Jahre"
+msgstr "1, 2 oder 3 rote Sterne - Für Kinder über 7 Jahre"
 
 #: activities/menu/ActivityInfo.qml:37
 msgctxt "ActivityInfo|"
@@ -19373,7 +19372,7 @@ msgid ""
 "the sparkle. Click on the gold nugget to collect it."
 msgstr ""
 "Wenn du auf die Felswand schaust, kannst du irgendwo ein Funkeln sehen. Gehe "
-"neben dieses Funkeln und vergrößere  die Ansicht mit dem Mausrad oder der "
+"neben dieses Funkeln und vergrößere die Ansicht mit dem Mausrad oder der "
 "Vergrößerungs-Geste. Wenn du die maximale Vergrößerung erreicht hast, "
 "erscheint ein Gold-Klumpen an der Position des Funkelns. Klicke auf das Gold-"
 "Klumpen, um es einzusammeln."
@@ -20120,7 +20119,7 @@ msgstr "Neue Note: %1"
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr "%1%"
+msgstr "%1 %"
 
 #: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
@@ -20206,7 +20205,7 @@ msgstr ""
 "Fange die Wolken mit einer geraden oder ungeraden Zahl in der richtigen "
 "Reihenfolge. Mit einer Tastatur benutze die Pfeiltasten um den Helikopter zu "
 "bewegen. Mit einem Touchscreen kannst Du klicken oder die Zielposition "
-"antippen.  Merke Dir welche Zahl Du als nächste fangen musst, oder schaue in "
+"antippen. Merke Dir welche Zahl Du als nächste fangen musst, oder schaue in "
 "der unteren rechten Ecke nach."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:35
@@ -20304,7 +20303,7 @@ msgid ""
 "this is an odd number."
 msgstr ""
 "Das ist falsch: Bei der Division durch 2 bleibt bei %1 ein Rest von 1 übrig. "
-"daher ist dies eine ungerade Zahl."
+"Daher ist dies eine ungerade Zahl."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:64
 #: activities/numbers-odd-even/resource/TutorialBase.qml:94
@@ -20315,7 +20314,7 @@ msgid ""
 "this is an even number."
 msgstr ""
 "Das ist falsch: Bei der Division durch 2 bleibt bei %1 ein Rest von 0 übrig. "
-"daher ist dies eine gerade Zahl."
+"Daher ist dies eine gerade Zahl."
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
@@ -22223,7 +22222,7 @@ msgid ""
 "Space: select an instruction or append selected instruction in main/"
 "procedure/loop area"
 msgstr ""
-"Leerzeichen: Wähle einen Befehl aus oder füge den  ausgewählten Befehl in "
+"Leerzeichen: Wähle einen Befehl aus oder füge den ausgewählten Befehl in "
 "Hauptfunktion/Anweisung/Schleifenbereich ein."
 
 #: activities/programmingMaze/ActivityInfo.qml:30
@@ -22560,7 +22559,7 @@ msgctxt "ActivityInfo|"
 msgid "Read a vertical list of words and say if a given word is in it."
 msgstr ""
 "Lies eine vertikale Liste von Wörtern und bestimme, ob das gesuchte Wort "
-"darin vorkam.."
+"darin vorkam."
 
 #. Help manual
 #: activities/readingv/ActivityInfo.qml:24
@@ -22743,7 +22742,7 @@ msgid ""
 "equipment can shut down which, in the worst cases, can lead to a major "
 "regional blackout."
 msgstr ""
-"Es ist nicht möglich, mehr elektrische Energie zu verbrauchen, als  erzeugt "
+"Es ist nicht möglich, mehr elektrische Energie zu verbrauchen, als erzeugt "
 "wird. Es gibt, mit wenigen Ausnahmen, eine grundlegende Einschränkung bei "
 "der Verteilung von Elektrizität. Elektrische Energie kann nicht gespeichert "
 "und muss deshalb erzeugt werden, wenn sie benötigt wird. Ein ausgeklügeltes "
@@ -24253,42 +24252,42 @@ msgstr "Gib die Zahl auf dem Dominostein ein, 1 oder 2."
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 3."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 3."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 4."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 4."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 5."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 5."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 6."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 6."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 7."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 7."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 8."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 8."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 1 bis 9."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 1 bis 9."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr "Gib die Zahl auf dem Dominostein ein,  von 0 bis 9."
+msgstr "Gib die Zahl auf dem Dominostein ein, von 0 bis 9."
 
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
@@ -24334,8 +24333,8 @@ msgid ""
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
 "Klicke auf einen Planeten oder die Sonne und beantworte die zugehörigen "
-"Fragen. Jede Frage besitzt 4 Optionen. Eine von diesen ist 100% korrekt. "
-"Versuche die Fragen zu beantworten, bis du 100% in der Genauigkeitsleiste "
+"Fragen. Jede Frage besitzt 4 Optionen. Eine von diesen ist 100 % korrekt. "
+"Versuche die Fragen zu beantworten, bis du 100 % in der Genauigkeitsleiste "
 "erreichst."
 
 #: activities/solar_system/ActivityInfo.qml:29
@@ -25350,7 +25349,7 @@ msgid ""
 "your skills again or train in normal mode to learn more about the Solar "
 "System."
 msgstr ""
-"Du musst ein Ergebnis über 90% erreichen, um ein Sonnensystem-Experte zu "
+"Du musst ein Ergebnis über 90 % erreichen, um ein Sonnensystem-Experte zu "
 "werden!<br>Wiederhole es, um deine Fähigkeiten erneut zu testen oder "
 "trainiere im normalen Modus, um mehr über das Sonnensystem zu erfahren."
 
@@ -25409,10 +25408,10 @@ msgid ""
 msgstr ""
 "Nachdem ein Planet angeklickt oder angetippt wurde, zeigt die "
 "Genauigkeitsleiste unten rechts auf dem Bildschirm den Grad der Korrektheit "
-"deiner gewählten Antworten. Die am wenigsten korrekte Antwort wird mit 1% "
-"angezeigt. Versuche es nochmal, bis du 100% Genauigkeit erreichst, während "
+"deiner gewählten Antworten. Die am wenigsten korrekte Antwort wird mit 1 % "
+"angezeigt. Versuche es nochmal, bis du 100 % Genauigkeit erreichst, während "
 "du auf die Leiste achtest. Ist das Hinweissymbol sichtbar, klicke darauf, um "
-"einen  Tipp für die richtige Antwort zu erhalten."
+"einen Tipp für die richtige Antwort zu erhalten."
 
 #: activities/solar_system/SolarSystem.qml:170
 msgctxt "SolarSystem|"
@@ -25443,8 +25442,8 @@ msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr ""
-"Du musst ein Ergebnis über 90% erreichen, um die Prüfung zu bestehen und ein "
-"Sonnensystem-Experte zu werden!"
+"Du musst ein Ergebnis über 90 % erreichen, um die Prüfung zu bestehen und "
+"ein Sonnensystem-Experte zu werden!"
 
 #: activities/solar_system/SolarSystem.qml:354
 #, qt-format
@@ -25794,7 +25793,7 @@ msgstr "Mittlere Gitter mit Zahlen und Symbolen."
 #: activities/sudoku/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids using numbers."
-msgstr "Große Gitter mit Zahlen ."
+msgstr "Große Gitter mit Zahlen."
 
 #. Activity title
 #: activities/superbrain/ActivityInfo.qml:15
@@ -25894,7 +25893,7 @@ msgstr ""
 "Jahrhundert belegt werden. Es besteht aus sieben Plättchen, auch „Tans“ "
 "genannt, die aneinander gelegt ein Quadrat ergeben. Wenn man die Seitenlänge "
 "des Quadrats als Basiseinheit betrachtet erhält man folgende Spielplättchen "
-"durch „zerschneiden“ des Quadrats :\n"
+"durch „zerschneiden“ des Quadrats:\n"
 "    5 rechtwinklige, gleichschenklige Dreiecke:\n"
 "        - 2 kleinere (Schenkel der Länge 1)\n"
 "        - 1 mittelgroßes (Schenkel der Länge Wurzel aus 2)\n"
@@ -26087,7 +26086,7 @@ msgstr ""
 "Bilde innerhalb jeder Klammer Zahlenpaare gleich zehn. Wähle eine Zahl und "
 "eine weitere Zahl derselben Operation aus, um sie zu tauschen.Wenn alle "
 "Zeilen ausgefüllt sind, drücke zur Bestätigung die OK-Taste.Wenn einige "
-"Antworten falsch sind, wird ein Kreuzsymbol bei den  entsprechenden Zeilen "
+"Antworten falsch sind, wird ein Kreuzsymbol bei den entsprechenden Zeilen "
 "angezeigt. Korrigiere die Fehler und drücke dann erneut die OK-Taste."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
@@ -26388,7 +26387,7 @@ msgstr "Fallende Wörter"
 #: activities/wordsgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Type the falling words before they reach the ground."
-msgstr "Gib die fallenden Wörter ein, bevor sie den Boden erreichen.."
+msgstr "Gib die fallenden Wörter ein, bevor sie den Boden erreichen."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
@@ -26592,7 +26591,7 @@ msgstr ""
 #: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
-msgstr "Neues Menü für  Aktivitäteneinstellungen mit Auswahl von Datensätzen"
+msgstr "Neues Menü für Aktivitäteneinstellungen mit Auswahl von Datensätzen"
 
 #: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
@@ -26748,8 +26747,8 @@ msgid ""
 "(92% translated), Russian (98% translated), Slovak (92% translated), Turkish."
 msgstr ""
 "Neue Übersetzungen für Katalanisch (Valencianisch), Traditionelles "
-"Chinesisch, Finnisch (92% abgeschlossen), Russisch (98% abgeschlossen), "
-"Slowakisch (92% abgeschlossen), Türkisch"
+"Chinesisch, Finnisch (92 % abgeschlossen), Russisch (98 % abgeschlossen), "
+"Slowakisch (92 % abgeschlossen), Türkisch"
 
 #: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
@@ -27094,7 +27093,7 @@ msgstr "Bilder"
 #: core/DownloadDialog.qml:201
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
-msgstr "Herunterladen  ..."
+msgstr "Herunterladen ..."
 
 #. Run this task in background
 #: core/DownloadDialog.qml:253
