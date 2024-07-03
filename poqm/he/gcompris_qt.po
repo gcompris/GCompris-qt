@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-06-28 10:39+0300\n"
+"PO-Revision-Date: 2024-07-02 14:52+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.05.0\n"
+"X-Generator: Lokalize 24.05.1\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -1438,8 +1438,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
-"אפשר לבחור רמת קושי ידנית באמצעות החצים. ברמות קושי גבוהות יותר טאקס ישחק "
-"טוב יותר."
+"אפשר לבחור רמת קושי ידנית עם החיצים. ברמות קושי גבוהות יותר טאקס ישחק טוב "
+"יותר."
 
 #: activities/align4/ActivityInfo.qml:25
 #: activities/align4_2players/ActivityInfo.qml:24
@@ -5580,7 +5580,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "חצים למעלה ולמטה: בוחרים זוג מספרים מהרשימה"
+msgstr "חיצים למעלה ולמטה: בוחרים זוג מספרים מהרשימה"
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -9055,7 +9055,7 @@ msgstr "ללחוץ או לגרור כל חלק ליד הריבוע הריק וה
 #: activities/fifteen/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: move a piece to the empty space."
-msgstr "חצים: להזיז חלק לאזור הריק."
+msgstr "חיצים: להזיז חלק לאזור הריק."
 
 #. Activity title
 #: activities/find_the_day/ActivityInfo.qml:15
