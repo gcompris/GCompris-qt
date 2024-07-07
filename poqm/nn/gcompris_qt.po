@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-05-15 20:32+0200\n"
+"PO-Revision-Date: 2024-07-06 14:58+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -1295,7 +1295,6 @@ msgstr "Logiske samanhengar"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
 msgstr "Fullfør fruktrekkja."
