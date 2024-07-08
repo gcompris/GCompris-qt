@@ -72,7 +72,7 @@ Item {
                 triggerClick(mouse.button)
             }
 
-            function triggerClick(mouseButton: enumeration) {
+            function triggerClick(mouseButton: int): void {
                 if(mouseButton === Qt.LeftButton)
                     leftClickTrigger()
                 else
