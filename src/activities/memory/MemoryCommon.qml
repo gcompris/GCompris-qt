@@ -125,7 +125,7 @@ ActivityBase {
 
             model: containerModel
 
-            function getItemAtIndex(i: int) {
+            function getItemAtIndex(i: int): var {
                 var xi = (i % items.columns) * cellWidth + anchors.margins
                 var yi = (i / items.columns) * cellHeight + anchors.margins
                 return itemAt(xi, yi)
