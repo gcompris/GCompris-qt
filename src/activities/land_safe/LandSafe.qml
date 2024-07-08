@@ -228,7 +228,7 @@ ActivityBase {
                                    applyForces();   // "rotation" mode
 
             // decompose a force/acceleration vector v using angle into x/y components
-            function decomposeVector(v: real, angle: real) {
+            function decomposeVector(v: real, angle: real): point {
                 return Qt.point(v * Math.sin(Activity.degToRad(angle)), // x-component
                                 v * Math.cos(Activity.degToRad(items.rocket.rotation)));  // y-component
             }
