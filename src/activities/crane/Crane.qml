@@ -244,13 +244,14 @@ ActivityBase {
                         property int startX;
                         property int startY;
 
-                        onPressed: {
+                        onPressed: (mouse) => {
                             startX = mouse.x;
                             startY = mouse.y;
                         }
 
-                        onReleased:
+                        onReleased: (mouse) => {
                             Activity.gesture(mouse.x - startX, mouse.y - startY)
+                        }
 
                         // Select a figure with mouse/touch
                         onClicked: {
