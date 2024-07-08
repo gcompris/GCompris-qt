@@ -290,7 +290,7 @@ ActivityBase {
                     }
                 }
 
-                function isThereAMonster(position: int) {
+                function isThereAMonster(position: int): bool {
                     var children = monsters.children
                     for (var it = 0; it < children.length; it++) {
                         if (children[it].index === position) {

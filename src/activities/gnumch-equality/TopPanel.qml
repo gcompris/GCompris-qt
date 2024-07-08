@@ -47,7 +47,7 @@ Item {
         width: parent.width
         color: "white"
 
-        function setTextGoal(goal: string) {
+        function setTextGoal(goal: string): string {
             if (activity.type === "equality") {
                 return qsTr("Equal to %1").arg(goal)
             } else if (activity.type === "inequality") {
