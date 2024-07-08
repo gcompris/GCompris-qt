@@ -216,7 +216,7 @@ ActivityBase {
                 }
 
                 property string previousText: text;
-                function getDiffBetweenTexts(previousText: string, newText: string) {
+                function getDiffBetweenTexts(previousText: string, newText: string): string {
                     var diff = "";
                     newText.split('').forEach(function(val, i) {
                         if(val !== previousText.charAt(i) && diff === "") {
