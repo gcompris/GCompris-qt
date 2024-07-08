@@ -453,7 +453,7 @@ Item {
     property int minFilter
     property int maxFilter
 
-    function extractMusicNameFromPath(musicPath: string) {
+    function extractMusicNameFromPath(musicPath: string): string {
         var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
         var musicName = String(musicPath)
         musicName = musicName.slice(musicDirectoryPath.length, musicName.length)
