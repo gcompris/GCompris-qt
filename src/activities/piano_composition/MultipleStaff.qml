@@ -274,7 +274,7 @@ Item {
     /**
      * Gets all the details of any note like note image, position on staff etc. from NoteNotations.
      */
-    function getNoteDetails(noteName: string, noteType: string, clefType: string) {
+    function getNoteDetails(noteName: string, noteType: string, clefType: string): var {
         var noteNotation
         if(noteType === "Rest")
             noteNotation = noteName + noteType
