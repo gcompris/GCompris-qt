@@ -201,15 +201,6 @@ Item {
                 }
             }
         }
-
-        Image {
-            id: secondStaffDefaultClef
-            sourceSize.width: musicElementModel.count ? multipleStaff.clefImageWidth : 0
-            y: staves.count === 2 ? flickableTopMargin + staves.itemAt(1).y : 0
-            visible: (currentEnteringStaff === 0) && (nbStaves === 2)
-            source: background.clefType ? "qrc:/gcompris/src/activities/piano_composition/resource/" + background.clefType.toLowerCase() + "Clef.svg"
-                                        : ""
-        }
     }
 
     Rectangle {
