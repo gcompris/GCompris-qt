@@ -498,7 +498,7 @@ ActivityBase {
                 }
             }
 
-            function getSquareAt(pos: int) {
+            function getSquareAt(pos: int): var {
                 for(var i=0; i < squares.count; i++) {
                     if(squares.itemAt(i).pos === pos)
                         return squares.itemAt(i)
@@ -610,7 +610,7 @@ ActivityBase {
                 toPiece.promotion()
             }
 
-            function getPieceAt(pos: int) {
+            function getPieceAt(pos: int): var {
                 for(var i=0; i < pieces.count; i++) {
                     if(pieces.itemAt(i).newPos === pos)
                         return pieces.itemAt(i)
