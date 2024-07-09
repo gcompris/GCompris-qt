@@ -175,21 +175,12 @@ Row {
     }
 
     onPrevTextChanged: {
-        if(items.solved) {
-            return
-        }
-        if(!prevComplete) {
-            endResult.text = ""
-            operandRow.complete = false
-        }
-        else {
-            if(operator.count == 1 && operand2.count == 1) {
-                Activity.calculate(parseInt(prevText), operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                operandRow.complete = true
-                if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                    items.solved = true
-                    Activity.goodAnswer()
-                }
+        if(prevText != "" && operator.count == 1 && operand2.count == 1) {
+            Activity.calculate(parseInt(prevText), operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+            operandRow.complete = true
+            if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
+                items.solved = true
+                Activity.goodAnswer()
             }
         }
     }
