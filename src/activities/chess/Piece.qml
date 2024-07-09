@@ -91,6 +91,10 @@ Image {
         piece.newPos = to
         piece.pos = to
         piece.z = 2
+        // WORKAROUND: there's a bug when dragging a piece to a new pos, on mouse release the animation to x position is not happening, only to y.
+        // Repeating the position assignment helps to workaround this issue. (reproduced from Qt 6.6.2 to 6.7.2)
+        piece.x = items.cellSize * (7 - piece.pos % 8) + piece.spacing / 2
+        piece.y = items.cellSize * Math.floor(piece.pos / 8) + piece.spacing / 2
     }
 }
 
