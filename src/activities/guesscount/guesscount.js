@@ -132,12 +132,10 @@ function calculate(operand1, operator, operand2, operationRow)
     if(Math.round(result)-result === 0 && result >= 0) {
         operationRow.rowResult = result
         operationRow.endResult.text = operationRow.rowResult.toString()
-        operationRow.complete = true
     }
     else {
         if(result != repeat) {
             operationRow.endResult.text = ""
-            operationRow.complete = false
             if(result < 0)
                 items.warningDialog.dialogText.text = qsTr("result is not positive integer")
             else
@@ -155,13 +153,11 @@ function childrenChange(item, operationRow)
     }
     else if(item.children.length == 3) {
         item.droppedItem.parent = item.droppedItem.reparent
-        operationRow.complete=false
         if(items.warningDialog.visible)
             items.warningDialog.visible = false
     }
     else if(item.children.length == 1) {
         item.count -= 1
-        operationRow.complete = false
         operationRow.endResult.text = ""
     }
 }
