@@ -21,11 +21,19 @@ Row {
     property int noOfRows
     property int rowNo
     property int guesscount
-    property bool complete
     property bool prevComplete
     property bool reparent
     property var prevText: ""
     property string text: endResult.text
+
+    function checkAnswer(firstNumber) {
+        Activity.calculate(firstNumber, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+        if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
+            items.solved = true
+            Activity.goodAnswer()
+        }
+    }
+
     Component {
         id: component1
         DropTile {
@@ -38,11 +46,7 @@ Row {
             onChildrenChanged: {
                 Activity.childrenChange(operand1, operandRow)
                 if(operand1.count == 1 && operator.count == 1 && operand2.count == 1) {
-                    Activity.calculate(operand1.droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                    if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                        items.solved = true
-                        Activity.goodAnswer()
-                    }
+                    checkAnswer(operand1.droppedItem.datavalue)
                 }
 
             }
@@ -93,11 +97,7 @@ Row {
         onChildrenChanged: {
             Activity.childrenChange(operator, operandRow)
             if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1) {
-                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                    items.solved = true
-                    Activity.goodAnswer()
-                }
+                checkAnswer(loader.children[0].droppedItem.datavalue)
             }
         }
     }
@@ -111,12 +111,7 @@ Row {
         onChildrenChanged: {
             Activity.childrenChange(operand2, operandRow)
             if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1) {
-                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                operandRow.complete = true
-                if(!items.solved && operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                    items.solved = true
-                    Activity.goodAnswer()
-                }
+                checkAnswer(loader.children[0].droppedItem.datavalue)
             }
         }
     }
@@ -176,12 +171,7 @@ Row {
 
     onPrevTextChanged: {
         if(prevText != "" && operator.count == 1 && operand2.count == 1) {
-            Activity.calculate(parseInt(prevText), operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-            operandRow.complete = true
-            if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount) {
-                items.solved = true
-                Activity.goodAnswer()
-            }
+            checkAnswer(parseInt(prevText))
         }
     }
     onReparentChanged: {
