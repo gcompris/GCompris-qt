@@ -96,7 +96,9 @@ ActivityBase {
             // === The Answer Area ===
             MoneyArea {
                 id: answerArea
-                onTransaction: Activity.unpay(index)
+                onTransaction: (index) => {
+                    Activity.unpay(index)
+                }
 
                 ErrorRectangle {
                     id: errorRectangle
