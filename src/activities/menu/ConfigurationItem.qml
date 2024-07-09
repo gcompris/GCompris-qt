@@ -54,7 +54,7 @@ Item {
 
             Row {
                 id: starsRow
-                width: filterSlider.availableWidth - filterSlider.first.handle.width
+                width: filterSlider.childrenRect.width - filterSlider.first.handle.width
                 spacing: 0
                 anchors.top: difficultyLabel.bottom
                 anchors.horizontalCenter: filterSlider.horizontalCenter
