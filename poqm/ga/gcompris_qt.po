@@ -20365,7 +20365,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Gach litir sa chás íochtair"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -20375,77 +20375,77 @@ msgstr ""
 "cheantar nua. <br/>Ar mhaith leat na comhaid fhuaime comhfhreagrach a "
 "íoslódáil anois?"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:94
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ba mhaith"
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:101
 msgctxt "Menu|"
 msgid "No"
 msgstr "Níor mhaith"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "loighic"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "na mínealaíona"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:122
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Ceol"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "déan turgnamh"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "History"
 msgstr "Stair"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:130
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Tíreolaíocht"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Uimhriú"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Uimhríocht"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:142
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Tomhas"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Litreacha"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Focail"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:154
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Stór Focal"
 
-#: activities/menu/Menu.qml:362
+#: activities/menu/Menu.qml:365
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -20457,12 +20457,12 @@ msgstr ""
 "Cuir na gníomhaíochtaí is fearr leat anseo. Cliceáil ar an ghrian ag barr na "
 "gníomhaíochta chun seo a dhéanamh."
 
-#: activities/menu/Menu.qml:770
+#: activities/menu/Menu.qml:773
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cuardaigh gníomhaíochtaí ar leith"
 
-#: activities/menu/Menu.qml:797
+#: activities/menu/Menu.qml:800
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Socruithe Gníomhaíochta"

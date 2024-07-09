@@ -21161,7 +21161,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "सभी लोअरकेस"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid ""
@@ -21175,7 +21175,7 @@ msgstr ""
 "आपने एक नया लोकेल चुना है। आपको अपने नए लोकेल में खेलने के लिए जीकॉम्परी को फिर से शुरू करने "
 "की आवश्यकता है। <br/>क्या आप अभी संबंधित ध्वनि फ़ाइलें डाउनलोड करना चाहते हैं?"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:94
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -21183,7 +21183,7 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: activities/menu/Menu.qml:98
+#: activities/menu/Menu.qml:101
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -21191,37 +21191,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "नहीं"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:122
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:130
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numeration training"
@@ -21229,17 +21229,17 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "गणना प्रशिक्षण"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:142
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw Letters"
@@ -21247,12 +21247,12 @@ msgctxt "Menu|"
 msgid "Letters"
 msgstr "अक्षर लिखें"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:154
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Vocabulary and reading"
@@ -21260,7 +21260,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "शब्दावलि तथा पढ़ाई"
 
-#: activities/menu/Menu.qml:362
+#: activities/menu/Menu.qml:365
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21273,12 +21273,12 @@ msgid ""
 msgstr ""
 "अपनी पसंदीदा गतिविधियों को यहां रखने के लिए गतिविधि के ऊपर दाईं ओर सूरज का चयन करें।"
 
-#: activities/menu/Menu.qml:770
+#: activities/menu/Menu.qml:773
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्ट गतिविधियों को खोजें"
 
-#: activities/menu/Menu.qml:797
+#: activities/menu/Menu.qml:800
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
