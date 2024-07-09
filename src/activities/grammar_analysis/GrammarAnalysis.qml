@@ -110,7 +110,7 @@ ActivityBase {
 
         JsonParser {
             id: jsonParser
-            onError: errors.text = msg.replace(/invalid\:/,'invalid<br>')
+            onError: (msg) => errors.text = msg.replace(/invalid\:/,'invalid<br>')
         }
 
         ListModel { id: syntaxModel }
