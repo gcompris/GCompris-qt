@@ -85,8 +85,8 @@ ActivityBase {
             property bool isWarningMessage
             property alias trigComputerMove: trigComputerMove
             property alias timerSwap: timerSwap
-            property alias whiteTakenPieceModel: whiteTakenPieces.takenPiecesModel
-            property alias blackTakenPieceModel: blackTakenPieces.takenPiecesModel
+            property alias whiteTakenPieces: whiteTakenPieces
+            property alias blackTakenPieces: blackTakenPieces
             property bool displayUndoAllDialog: false
             // Used to stop piece animation on board resize; set to true on board resize, and to false on any action that triggers a piece move
             property bool noPieceAnimation: false
@@ -101,14 +101,14 @@ ActivityBase {
             Activity.undo()
             if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
                 whiteTakenPieces.pushedLast.pop()
-                whiteTakenPieces.takenPiecesModel.remove(whiteTakenPieces.takenPiecesModel.count-1)
+                whiteTakenPieces.removeLastPiece()
             }
             if(!items.twoPlayer) {
                 movesCount--
             }
             if(blackTakenPieces.pushedLast[blackTakenPieces.pushedLast.length-1] == movesCount) {
                 blackTakenPieces.pushedLast.pop()
-                blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
+                blackTakenPieces.removeLastPiece()
             }
             movesCount--
         }
@@ -578,24 +578,23 @@ ActivityBase {
                        pawnPiece && pawnPiece.img[1] === 'p') {
                            smudgeSound.play()
                            if(pawnPiece.isWhite) {
-                               whiteTakenPieces.takenPiecesModel.append(pawnPiece)
+                               whiteTakenPieces.addToList(pawnPiece)
                                whiteTakenPieces.pushedLast.push(movesCount)
                            } else {
-                               blackTakenPieces.takenPiecesModel.append(pawnPiece)
+                               blackTakenPieces.addToList(pawnPiece)
                                blackTakenPieces.pushedLast.push(movesCount)
                            }
                            pawnPiece.hide(pawnPiece.pos)
                            break
                     }
                 }
-
                 if(toPiece.img !== '') {
                     smudgeSound.play()
                     if(toPiece.isWhite) {
-                        whiteTakenPieces.takenPiecesModel.append(toPiece)
+                        whiteTakenPieces.addToList(toPiece)
                         whiteTakenPieces.pushedLast.push(movesCount)
                     } else {
-                        blackTakenPieces.takenPiecesModel.append(toPiece)
+                        blackTakenPieces.addToList(toPiece)
                         blackTakenPieces.pushedLast.push(movesCount)
                     }
                 }

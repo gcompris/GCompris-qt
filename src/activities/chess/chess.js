@@ -42,8 +42,8 @@ function initLevel() {
     items.positions = 0 // Force a model reload
     items.positions = simplifiedState(state['board'])
     clearAcceptMove()
-    items.whiteTakenPieceModel.clear()
-    items.blackTakenPieceModel.clear()
+    items.whiteTakenPieces.clearPieces()
+    items.blackTakenPieces.clearPieces()
 }
 
 function nextLevel() {

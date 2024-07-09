@@ -12,12 +12,28 @@ import "chess.js" as Activity
 
 Rectangle {
     id: listBG
-    property alias takenPiecesModel: pieceList
     property var pushedLast: []
     property bool open: false
 
     // left = false, right = true
     property bool edge
+
+    function addToList(pieceToAdd) {
+        pieceList.append(
+            {
+                "img": pieceToAdd.img,
+                "pos": pieceToAdd.pos
+            }
+        );
+    }
+
+    function removeLastPiece() {
+        pieceList.remove(pieceList.count - 1);
+    }
+
+    function clearPieces() {
+        pieceList.clear();
+    }
 
     height: parent.height
     color: edge ? "#88EEEEEE" : "#88111111"
