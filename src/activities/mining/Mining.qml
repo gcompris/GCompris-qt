@@ -318,7 +318,9 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     propagateComposedEvents: true
-                    onWheel: miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
+                    onWheel: (wheel) => {
+                        miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
+                    }
                 }
 
                 MultiPointTouchArea {
