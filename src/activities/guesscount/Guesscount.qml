@@ -60,7 +60,6 @@ ActivityBase {
             property var levelArr: Data.defaultOperators
             property string mode: "builtin"
             property int currentlevel
-            property var resultArr: ["", "", "", ""]
         }
 
         onStart: if (activity.needRestart) {
@@ -194,18 +193,13 @@ ActivityBase {
                     noOfRows: operatorRow.repeater.model.length
                     rowNo: modelData
                     guesscount: items.result
-                    prevText: index != 0 ? items.resultArr[index - 1] : ""
+                    prevText: ""
                     prevComplete: prevText != "" ? true : false
                     reparent: items.clearOperations
-                    // This workaround is needed to fix a bug caused by the repeater creating instances from
-                    // the last item to the first one but only the very first time it is loaded, so we can't
-                    // safely bind values to repeat.itemAt(index-1).property. Using an intermediate array is
-                    // the only solution I found. Also changes directly inside the array aren't detected by
-                    // the binding, so it needs to be copied to and from another temporary array.
                     onTextChanged: {
-                        var tmpResultArr = items.resultArr
-                        tmpResultArr[index] = text
-                        items.resultArr = tmpResultArr
+                        if(index + 1 < repeat.count) {
+                            repeat.itemAt(index + 1).prevText = text
+                        }
                     }
                 }
             }
