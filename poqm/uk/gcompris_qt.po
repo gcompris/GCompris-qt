@@ -14980,17 +14980,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Рівень %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "результат не є додатним цілим числом"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "результат не є цілим числом"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19259,7 +19259,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav — змінено і використано, коли ви забираєте самородок золота"
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19275,22 +19275,22 @@ msgstr ""
 "у її центральній частині. На сенсорному екрані розведіть два пальці від "
 "відблиску."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Чудове масштабування. Продовжуйте, аж доки не побачите самородка."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Г-м-м, обережніше, ви збільшити область надто далеку від відблиску."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Тепер ви бачите самородок, клацніть на ньому, щоб підібрати його."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19299,17 +19299,17 @@ msgstr ""
 "Г-м-м, ви надто далеко від самородка, щоб його побачити. Зменшіть масштаб "
 "зображення, щоб побачити відблиск."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Тепер відсуньтеся, щоб знайти інший відблиск."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Продовжуйте зменшувати масштаб, доки не побачите відблиску."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Тепер ви бачите відблиск. Зараз треба лише збільшити зображення."

@@ -15196,17 +15196,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Узровень %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "вынік не ёсць станоўчым цэлым"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "вынік не ёсць цэлым"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19513,7 +19513,7 @@ msgstr ""
 "metalpaint.wav - перароблены і выкарыстоўваецца калі забіраецца залаты "
 "самародак"
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19528,22 +19528,22 @@ msgstr ""
 "двума па цэнтры панэлі. На чулым экране, адначасова двума пальцамі - кожным "
 "у сваім напрамку - правядзіце ў бакі ад месца бляску."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Ухвальна, вы набліжаецеся. Працягвайце, пакуль не пабачыце самародак."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Хм, будзьце абачлівымі - вы набліжаеце задалёка ад месца бляску."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Цяпер перад вамі самародак - пстрыкніце, каб узяць яго."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19552,17 +19552,17 @@ msgstr ""
 "Хм, вы задалёка ад самародка, каб бачыць яго. Аддаліце, а затым зноўку "
 "наблізьце як мага бліжэй да месца бляску."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Цяпер аддаліце і паспрабуйце знайсці яшчэ бляск."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Працягвайце аддаляцца пакуль не пабачыце бляск."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Цяпер вы бачыце бляск - наперад, вы можаце набліжацца."

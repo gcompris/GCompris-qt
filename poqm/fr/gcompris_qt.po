@@ -15393,17 +15393,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Niveau %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "le résultat n'est pas un nombre entier positif"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "le résultat n'est pas un nombre entier"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19859,7 +19859,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav – remixée et utilisée quand une nouvelle pépite est récoltée"
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19874,22 +19874,22 @@ msgstr ""
 "ou deux doigts au centre. Sur une tablette, glisse deux doigts en les "
 "éloignant de l'étincelle, chacun dans une direction."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Parfait, tu agrandis. Continue jusqu'à ce que tu voies la pépite."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Attention, tu agrandis trop loin de l'étincelle."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Maintenant, tu vois la pépite. Clique dessus pour l'attraper."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19898,17 +19898,17 @@ msgstr ""
 "Tu es trop loin de la pépite pour la voir. Réduis puis agrandis encore le "
 "plus près possible de l'étincelle."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Maintenant, réduis et essaie de trouver une autre étincelle."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Continue de réduire jusqu'à ce que tu voies l'étincelle."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Maintenant, tu vois l'étincelle, vas-y, tu peux agrandir dessus."

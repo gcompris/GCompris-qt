@@ -14914,17 +14914,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Nivel %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "o resultado non é un enteiro positivo"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "o resultado non é un enteiro"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19169,7 +19169,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav — Modificouse e úsase ao recoller unha peza de ouro."
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19184,22 +19184,22 @@ msgstr ""
 "no centro; a continuación arrastra dous dedos afastándoos do brillo, cada un "
 "nunha dirección."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "Estás achegándote. Continúa ata que vexas a peza de ouro."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Anda con ollo, estás achegando a vista demasiado lonxe do brillo."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Agora podes ver a peza de ouro. Prémea para recollela."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19208,17 +19208,17 @@ msgstr ""
 "Estás demasiado lonxe da peza de ouro para vela. Afasta a vista de novo e "
 "volve achegala tan preto do brillo como poidas."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Agora afasta a vista e intenta atopar un novo brillo."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Segue afastando a vista ata que vexas un brillo."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Agora xa ve so brillo, achégate a el."

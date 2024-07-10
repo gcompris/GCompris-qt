@@ -16140,17 +16140,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Leibhéal %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "ní slánuimhir dhearfach é an toradh"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "ní slánuimhir é an toradh"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -20549,7 +20549,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - a úsáidtear nuair a bhailítear cnapóg óir."
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -20564,25 +20564,25 @@ msgstr ""
 "mhéar sa lár. Ar scáileán tadhaill, tarraing dhá mhéar ar shiúl ón drithle, "
 "méar amháin i dtreo amháin agus an mhéar eile i dtreo eile."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr ""
 "Ar fheabhas! Tá tú ag súmáil. Lean ar aghaidh go dtí go bhfeicfidh tú an "
 "chnapóg."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, bí cúramach, tá tú ag súmáil rófhada ar shiúl ón drithle."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr ""
 "Anois agus an chnapóg os do chomhair, cliceáil uirthi chun í a cheapadh."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -20592,17 +20592,17 @@ msgstr ""
 "ansin súmáil isteach arís chomh cóngarach agus is féidir leat chuig an "
 "drithle."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Anois súmáil amach agus déan iarracht drithle eile a aimsiú."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Lean ar aghaidh ag súmáil amach go dtí go bhfeiceann tú an drithle."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Anois agus an drithle os do chomhair, lean ort agus súmáil uirthi."

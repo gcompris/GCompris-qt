@@ -14944,17 +14944,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "ഘട്ടം %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "ഉത്തരം അധി പൂർണസംഖ്യയല്ല"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "ഉത്തരം പൂർണസംഖ്യയല്ല"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19292,7 +19292,7 @@ msgctxt "ActivityInfo|"
 msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr "metalpaint.wav - ഒരു സ്വർണക്കട്ട എടുക്കുമ്പോൾ (റീമിക്സ് ചെയ്തുപയോഗിച്ചിരിക്കുന്നു)"
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19307,22 +19307,22 @@ msgstr ""
 "വലിക്കുകയൊ ചെയ്യുക. ടച്ച് പാഡിലാണെങ്കിൽ രണ്ടു വിരൽ ഉപയോഗിച്ച് തിളക്കത്തിൽ നിന്നും അകലേക്ക്, "
 "രണ്ടും രണ്ടു ദിശയിലേക്ക് വലിക്കുക."
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr "കൊള്ളാം നിങ്ങൾ സൂം ചെയ്തുകൊണ്ടിരിക്കുന്നു. സ്വർണക്കട്ട കാണുന്നതുവരെ തുടരൂ."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "ഉം, ശ്രദ്ധിക്കൂ, തിളക്കമുള്ളിടത്തു നിന്ന് ഒത്തിരി അകലെയാണ് നിങ്ങൾ സൂം ചെയ്യുന്നത്."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "സ്വർണക്കട്ട കണ്ടല്ലോ, അതു കൈക്കലാക്കാൻ അതിൽ ക്ലിക്കു ചെയ്യൂ."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19331,17 +19331,17 @@ msgstr ""
 "ഉം, നിങ്ങൾ സ്വർണക്കട്ടയിൽ നിന്നും ഒത്തിരി ദൂരെയാണ്. അൺസൂം ചെയ്ത് തിളക്കം കാണുന്നതിന്റെ ഏറ്റവും "
 "അടുത്തായി സൂം ചെയ്യൂ."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "ഇനി അൺസൂം ചെയ്ത് മറ്റൊരു തിളക്കം കണ്ടെത്തൂ."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "തിളക്കം കാണുന്നതുവരെ അൺസൂം ചെയ്യൂ."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "തിളക്കം കണ്ടല്ലോ, ഇനി അതിൽ സൂം ചെയ്യൂ."

@@ -14909,17 +14909,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Poziom %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "wynikiem nie jest dodatnia liczba całkowita"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "wynikiem nie jest liczba całkowita"
 
-#: activities/guesscount/Guesscount.qml:161
+#: activities/guesscount/Guesscount.qml:160
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19154,7 +19154,7 @@ msgid "metalpaint.wav - remixed and used when a gold nugget is collected"
 msgstr ""
 "metalpaint.wav - ponownie wymieszane i użyte, gdy zebrano złoty samorodek"
 
-#: activities/mining/Mining.qml:432
+#: activities/mining/Mining.qml:434
 msgctxt "Mining|"
 msgid ""
 "Find the sparkle and zoom in around it. If you have a mouse, point the "
@@ -19169,23 +19169,23 @@ msgstr ""
 "palcami na środek. Następnie, z dotkniętego obszaru, odjedź dwoma palcami od "
 "iskry, każdym w przeciwną stronę. "
 
-#: activities/mining/Mining.qml:448
+#: activities/mining/Mining.qml:450
 msgctxt "Mining|"
 msgid "Perfect you are zooming. Continue until you see the nugget."
 msgstr ""
 "Wspaniale! Właśnie zbliżasz. Kontynuuj do chwili ujrzenia bryłki złota."
 
-#: activities/mining/Mining.qml:456
+#: activities/mining/Mining.qml:458
 msgctxt "Mining|"
 msgid "Hum, take care, you are zooming too far from the sparkle."
 msgstr "Hmm, uważaj, jesteś zbyt daleko iskry."
 
-#: activities/mining/Mining.qml:464
+#: activities/mining/Mining.qml:466
 msgctxt "Mining|"
 msgid "Now you see the nugget, click on it to catch it."
 msgstr "Teraz widzisz bryłkę złota, naciśnij na niego, aby go zabrać."
 
-#: activities/mining/Mining.qml:472
+#: activities/mining/Mining.qml:474
 msgctxt "Mining|"
 msgid ""
 "Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
@@ -19194,17 +19194,17 @@ msgstr ""
 "Hmm, jesteś za daleko od bryłki złota, aby ją zobaczyć. Pomniejsz się, a "
 "następnie przysuń się jak najbliżej iskry."
 
-#: activities/mining/Mining.qml:480
+#: activities/mining/Mining.qml:482
 msgctxt "Mining|"
 msgid "Now unzoom and try to find another sparkle."
 msgstr "Teraz oddalaj i spróbuj znaleźć kolejną iskrę."
 
-#: activities/mining/Mining.qml:488
+#: activities/mining/Mining.qml:490
 msgctxt "Mining|"
 msgid "Continue to unzoom until you see the sparkle."
 msgstr "Pomniejszaj, aż do chwili zobaczenia iskry."
 
-#: activities/mining/Mining.qml:496
+#: activities/mining/Mining.qml:498
 msgctxt "Mining|"
 msgid "Now you see the sparkle, go ahead, you can zoom on it."
 msgstr "Teraz widzisz iskrę. Śmiało! Możesz się do niej przybliżyć."
