@@ -15134,17 +15134,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Ebene %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "Das Ergebnis ist keine positive Zahl"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "Das Ergebnis ist keine ganze Zahl"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:154
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -19234,7 +19234,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Alles klein"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -19244,77 +19244,77 @@ msgstr ""
 "Sprache zu spielen.<br/>Möchtest du die zugehörigen Tondateien jetzt "
 "herunterladen?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:100
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nein"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logik"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Künste"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Musik"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experiment"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "History"
 msgstr "Geschichte"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografie"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Nummerierung"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Arithmetik"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Maße"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Buchstaben"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Wörter"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vokabeln"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19323,12 +19323,12 @@ msgstr ""
 "Sammle hier Deine Lieblingsaktivitäten indem Du die Sonne im oberen rechten "
 "Eck jeder Aktivität anklickst."
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Suche nach Aktivitäten"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Aktivitäten-Einstellungen"

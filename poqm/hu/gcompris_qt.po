@@ -14698,17 +14698,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Szint %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "az eredmény nem pozitív egész"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "az eredmény nem szám"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:154
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -18726,7 +18726,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Minden kisbetűs"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18736,77 +18736,77 @@ msgstr ""
 "beállítások érvényesítése miatt.<br/> Le akarod tölteni a hozzátartozó "
 "hangokat is?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:100
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nem"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logika"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Művészetek"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Zene"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Kísérletek"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "History"
 msgstr "Történelem"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Földrajz"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Számlálási gyakorlat"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Számtan"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mértékegységek"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Betűk"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Szavak"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Szókincs és olvasás"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18815,12 +18815,12 @@ msgstr ""
 "Jelöld meg a kedvenc feladataidat. Kattints a feladatválasztó jobb felső "
 "sarkában lévő napocskára!"
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Feladat keresése"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tevékenység beállítások"

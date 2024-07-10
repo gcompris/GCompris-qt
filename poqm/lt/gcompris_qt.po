@@ -14807,17 +14807,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Lygis %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "rezultatas nėra teigiamas sveikasis skaičius"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "rezultatas nėra sveikasis skaičius"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:154
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -18868,7 +18868,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Visos mažosios raidės"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18878,77 +18878,77 @@ msgstr ""
 "naujo, jei nori pamokėles matyti išverstas į pasirinktą kalbą.<br/> Ar nori "
 "atsisiųsti atitinkamos kalbos garso failus dabar?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Taip"
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:100
 msgctxt "Menu|"
 msgid "No"
 msgstr "Ne"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logika"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Dailė"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Muzika"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Eksperimentas"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "History"
 msgstr "Istorija"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografija"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Skaičiavimas iš eilės"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmetika"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Matavimo priemonės"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Raidės"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Žodžiai"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Žodynas"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18957,12 +18957,12 @@ msgstr ""
 "Išdėliok čia dažniausiai naudojamas pamokėles, paspausdamas ant saulutės, "
 "rodomos šalia kiekvienos pamokėlės viršuje, dešinėje."
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Rask pamokėles čia įrašydamas žodį"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Pamokėlės nustatymai"

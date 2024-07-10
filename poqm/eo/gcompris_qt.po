@@ -14772,17 +14772,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Nivelo %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "rezulto ne estas pozitiva entjero"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "rezulto ne estas entjero"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:154
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -18805,7 +18805,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Ĉiuj minuskloj"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18814,77 +18814,77 @@ msgstr ""
 "Vi elektis novan lokon, vi devas rekomenci GCompris por uzi ĝin.<br/>Ĉu vi "
 "volas elŝuti la respondajn sondosierojn nun?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Jes"
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:100
 msgctxt "Menu|"
 msgid "No"
 msgstr "Ne"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logiko"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Belartoj"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Muziko"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Eksperimento"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "History"
 msgstr "Historio"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografio"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numerado"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmetiko"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mezuroj"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Literoj"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Vortoj"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vortprovizo"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18893,12 +18893,12 @@ msgstr ""
 "Metu viajn plej ŝatatajn agadojn ĉi tie klakante sur la suno supre dekstre "
 "de tiu agado."
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Serĉu specifajn agadojn"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Agado-Agordoj"

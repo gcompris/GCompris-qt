@@ -14908,17 +14908,17 @@ msgctxt "Admin|"
 msgid "Level %1"
 msgstr "Səviyyə %1"
 
-#: activities/guesscount/guesscount.js:142
+#: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
 msgstr "nəticə müsbət tam ədəd deyil"
 
-#: activities/guesscount/guesscount.js:144
+#: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "nəticə tam ədəd deyil"
 
-#: activities/guesscount/Guesscount.qml:155
+#: activities/guesscount/Guesscount.qml:154
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
@@ -18945,7 +18945,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Bütün kiçik hərflər"
 
-#: activities/menu/Menu.qml:89
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
@@ -18954,77 +18954,77 @@ msgstr ""
 "Siz yeni dil seçdiniz, tətbiq olunması üçün GCompris'i yenidən başladın.<br/"
 ">Siz dilə uyğun səsləri indi endirmək istəyirsiniz?"
 
-#: activities/menu/Menu.qml:90
+#: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Bəli"
 
-#: activities/menu/Menu.qml:97
+#: activities/menu/Menu.qml:100
 msgctxt "Menu|"
 msgid "No"
 msgstr "Xeyr"
 
-#: activities/menu/Menu.qml:116
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Məntiqi"
 
-#: activities/menu/Menu.qml:117
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "İncəsənət"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:121
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Musiqi"
 
-#: activities/menu/Menu.qml:124
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Təcrübə"
 
-#: activities/menu/Menu.qml:125
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "History"
 msgstr "Tarix"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:129
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Coğrafiya"
 
-#: activities/menu/Menu.qml:136
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Say"
 
-#: activities/menu/Menu.qml:137
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Arifmetika"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:141
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Ölçülər"
 
-#: activities/menu/Menu.qml:148
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Hərflər"
 
-#: activities/menu/Menu.qml:149
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Sözlər"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:153
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Söz ehtiyyatı"
 
-#: activities/menu/Menu.qml:367
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19033,12 +19033,12 @@ msgstr ""
 "Çalışmanı buraya əlavə etmək üçün onun yuxarı, sağındakı günəş işarəsinə "
 "vurun."
 
-#: activities/menu/Menu.qml:772
+#: activities/menu/Menu.qml:775
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Çalışmaları axtarmaq"
 
-#: activities/menu/Menu.qml:799
+#: activities/menu/Menu.qml:802
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Çalışma ayarları"
