@@ -496,7 +496,7 @@ Window {
         property string serverIp
         property bool requestAlreadyInProgress: false
 
-        onRequestConnection: {
+        function onRequestConnection(requestDeviceId, serverIp) {
             // Only show request connection on menu
             if(pageView.depth !== 1 || requestAlreadyInProgress) {
                 return
@@ -520,12 +520,12 @@ Window {
                     },
                     null);
         }
-        onLoginListReceived: {
+        function onLoginListReceived(logins) {
             chooseLogin.model = logins;
             chooseLogin.visible = true
             chooseLogin.start()
         }
-        onPasswordRejected: {
+        function onPasswordRejected() {
             Core.showMessageDialog(main,
                     qsTr("Password rejected by server %1").arg(connection.requestDeviceId),
                     qsTr("OK"), null, "", null, null);
