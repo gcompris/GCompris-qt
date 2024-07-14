@@ -22,6 +22,7 @@ class ClientNetworkMessages : public QObject
 {
     Q_OBJECT
 //    Q_PROPERTY(bool connected MEMBER _connected NOTIFY connectionStatus)
+    Q_PROPERTY(netconst::ConnectionStatus status MEMBER status NOTIFY statusChanged)
     Q_PROPERTY(QString host READ host WRITE setHost NOTIFY hostChanged)
     Q_PROPERTY(int port READ port WRITE setPort NOTIFY portChanged)
 
@@ -30,6 +31,7 @@ public:
 
 Q_SIGNALS:
     void newServers();
+    void statusChanged();
     void hostChanged();
     void portChanged();
 //    void connectionStatus();
@@ -55,7 +57,7 @@ public:
         Q_EMIT hostChanged();
     }
 
-    int port() const{
+    int port() const {
         return _port;
     }
 
