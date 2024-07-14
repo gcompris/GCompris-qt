@@ -29,7 +29,7 @@ Component {
             checked: user_checked
             ButtonGroup.group: childGroup
             onClicked: {
-                foldModel.setProperty(index, checkKey, true)
+                foldModel.setProperty(index, checkKey, checked)
                 selectionClicked(foldModel.get(index)[indexKey], checked)
                 currentChecked = index
             }
