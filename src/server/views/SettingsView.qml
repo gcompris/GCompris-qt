@@ -104,6 +104,7 @@ Item {
                     InformationLine { label: qsTr("Broadcast IPs"); info: hostInformations.broadcastIp.join(", ") }
                     InformationLine { label: qsTr("Netmask"); info: hostInformations.netmask.join(", ") }
                     InformationLine { label: qsTr("MAC address"); info: hostInformations.mac.join(", ") }
+                    InformationLine { label: qsTr("Qt version"); info: ApplicationInfo.QTVersion }
 
                     Rectangle { Layout.fillWidth: true; height: 1; color: "black" }
 
