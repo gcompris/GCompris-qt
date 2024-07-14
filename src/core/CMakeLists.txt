@@ -457,6 +457,8 @@ if(WIN32)
   # Create shortcuts in menu to be able to launch in software or opengl mode
   list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris (Safe Mode).lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--renderer=software'")
   list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris.lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--renderer=direct3d11'")
+  if(BUILD_SERVER)
+    list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris Server.lnk' '$INSTDIR\\\\bin\\\\gcompris-server.exe'")
   string(REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
 else()
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/images/256-apps-gcompris-qt.png")

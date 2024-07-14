@@ -59,6 +59,7 @@ void ClientNetworkMessages::connectToServer(const QString& serverName)
     if(tcpSocket->state() != QAbstractSocket::ConnectedState) {
         tcpSocket->connectToHost(ipServer, port);
         status = netconst::NOT_LOGGED;
+        Q_EMIT statusChanged();
         pingTimer.start();
     }
 
@@ -68,6 +69,7 @@ void ClientNetworkMessages::connectToServer(const QString& serverName)
 void ClientNetworkMessages::forgetUser()
 {
     status = netconst::NOT_CONNECTED;
+    Q_EMIT statusChanged();
     login = "";
     password = "";
     //ApplicationSettings::getInstance()->setCurrentServer("");
@@ -161,6 +163,7 @@ void ClientNetworkMessages::ping()
     }
     if (_wait4pong) {
         status = netconst::CONNECTION_LOST;
+        Q_EMIT statusChanged();
         _wait4pong = false;
         pingTimer.setInterval(netconst::WAIT_DELAY);
 //        qWarning() << "Connection lost, client side";
@@ -197,7 +200,7 @@ void ClientNetworkMessages::readFromSocket()
 {
     QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
     QByteArray message = clientConnection->readAll();
-//    qWarning() << message;
+    qWarning() << message;
     QJsonDocument jsonDoc = QJsonDocument::fromJson(message);
     QJsonObject obj = jsonDoc.object();
     if (obj.contains("aType")) {
@@ -224,6 +227,7 @@ void ClientNetworkMessages::readFromSocket()
                 } else {
                     status = netconst::CONNECTED;
                 }
+                Q_EMIT statusChanged();
             }
             break;
         case netconst::DISCONNECT:

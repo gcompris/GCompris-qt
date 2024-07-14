@@ -12,6 +12,7 @@ import "../../core"
 import core 1.0
 import QtQuick.Effects
 import "qrc:/gcompris/src/core/core.js" as Core
+import QMLConnections 1.0
 
 // For TextField
 import QtQuick.Controls.Basic
@@ -745,6 +746,32 @@ ActivityBase {
                 }
             }
 
+            Connections {
+                target: clientNetworkMessages
+                function onStatusChanged() {
+                    print("status changed to ", clientNetworkMessages.status);
+                    switch(clientNetworkMessages.status) {
+                    case NetConst.NOT_CONNECTED:
+                        networkStatus.color = "white"
+                        break
+                    case NetConst.BAD_PASSWORD_INPUT:
+                        networkStatus.color = "red"
+                        break
+                    case NetConst.CONNECTED:
+                        networkStatus.color = "green"
+                        break
+                    case NetConst.CONNECTION_LOST:
+                        networkStatus.color = "yellow"
+                        break
+                    case NetConst.DISCONNECTED:
+                        networkStatus.color = "lightgray"
+                        break
+                    default:
+                        networkStatus.color = "black"
+                    }
+                }
+            }
+
             TextField {
                 id: searchTextField
                 width: parent.width
@@ -987,6 +1014,15 @@ ActivityBase {
                 dialogActivityConfig.loader.item.loadFromConfig()
                 displayDialog(dialogActivityConfig)
             }
+        }
+        Rectangle {
+            id: networkStatus
+            radius: width
+            width: 30 * activity.applicationInfoRatio
+            height: width
+            color: "red"
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
         }
 
         DialogAbout {
