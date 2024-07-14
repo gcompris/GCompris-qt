@@ -53,14 +53,14 @@ Window {
 
     Connections {
         target: databaseController
-        function onDbError() { errorDialog.message = message; errorDialog.open() }
+        function onDbError(message) { errorDialog.message = message; errorDialog.open() }
     }
 
     Connections {
         target: networkController
-        function onAddDataToUser() { Master.addActivityDataForUser(userId, activityName, rawData) }
-        function onCheckUserPassword() { networkController.acceptPassword(Master.checkPassword(login, password), login) }
-        function onStatusChanged() { Master.setStatus(userId, newStatus) }
+        function onAddDataToUser(userId, activityName, rawData) { Master.addActivityDataForUser(userId, activityName, rawData) }
+        function onCheckUserPassword(login, password) { networkController.acceptPassword(Master.checkPassword(login, password), login) }
+        function onStatusChanged(userId, newStatus) { Master.setStatus(userId, newStatus) }
     }
 
     Settings {
