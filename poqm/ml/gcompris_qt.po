@@ -179,8 +179,8 @@ msgstr ""
 #: activities/algebra_minus/ActivityInfo.qml:25
 #: activities/algebra_plus/ActivityInfo.qml:25
 #: activities/algorithm/ActivityInfo.qml:23
-#: activities/align4/ActivityInfo.qml:24
-#: activities/align4_2players/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:25
+#: activities/align4_2players/ActivityInfo.qml:24
 #: activities/alphabet-sequence/ActivityInfo.qml:25
 #: activities/baby_wordprocessor/ActivityInfo.qml:25
 #: activities/braille_alphabets/ActivityInfo.qml:25
@@ -1337,16 +1337,10 @@ msgstr "നാല് ചിഹ്നങ്ങളെ ഒരു നിരയിൽ
 #: activities/align4_2players/ActivityInfo.qml:20
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
+#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
-msgid ""
-"Create a line of 4 tokens either horizontally (lying down), vertically "
-"(standing up), or diagonally."
-msgstr ""
-"തിരശ്ചീനമായോ (കിടക്കുന്ന) ലംബമായോ (കുത്തനെയുള്ള) കോണോടുകോണായോ 4 ചിഹ്നങ്ങളുടെ ഒരു വരി "
-"നിർമ്മിക്കുക."
+msgid "Develop anticipation and strategy skills."
+msgstr "ചലനാവയവങ്ങളുടെ ഏകോപനം."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1358,7 +1352,22 @@ msgstr ""
 "ടക്സിന്റെ കൂടെ കളിക്കൂ. മാറി മാറി നിങ്ങൾക്കു വേണ്ട കളത്തിൽ ക്ലിക്ക് ചെയ്ത് മാർക്ക് ചെയ്യൂ. 4 "
 "മാർക്കുകളുടെ ഒരു വരി ആദ്യം നിർമ്മിക്കുന്ന ആൾ ജയിക്കും."
 
-#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:25
+#: activities/align4/ActivityInfo.qml:23
+#: activities/align4_2players/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Create a line of 4 tokens either horizontally (lying down), vertically "
+#| "(standing up) or diagonally."
+msgctxt "ActivityInfo|"
+msgid ""
+"You can create a line of 4 tokens either horizontally (lying down), "
+"vertically (standing up), or diagonally."
+msgstr ""
+"തിരശ്ചീനമായോ (കിടക്കുന്ന) ലംബമായോ (കുത്തനെയുള്ള) കോണോടുകോണായോ 4 ചിഹ്നങ്ങളുടെ ഒരു വരി "
+"നിർമ്മിക്കുക."
+
+#: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
 #: activities/nine_men_morris/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1369,20 +1378,20 @@ msgstr ""
 "കാഠിന്യത്തിന്റെ തോത് തിരഞ്ഞെടുക്കുന്നതിന് ആരോ ബട്ടൺ ഉപയോഗിക്കാവുന്നതാണ്. ഓരോ ഘട്ടം കഴിയും "
 "തോറും ടക്സ് കൂടുതൽ നന്നായി കളിക്കും."
 
-#: activities/align4/ActivityInfo.qml:25
-#: activities/align4_2players/ActivityInfo.qml:24
+#: activities/align4/ActivityInfo.qml:26
+#: activities/align4_2players/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Left arrow: move the token to the left"
 msgstr "ഇടത്തെ ആരോ: ചിഹ്നം ഇടത്തേക്കു നീക്കാൻ"
 
-#: activities/align4/ActivityInfo.qml:26
-#: activities/align4_2players/ActivityInfo.qml:25
+#: activities/align4/ActivityInfo.qml:27
+#: activities/align4_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right arrow: move the token to the right"
 msgstr "വലത്തെ ആരോ: ചിഹ്നം വലത്തേക്കു നീക്കാൻ"
 
-#: activities/align4/ActivityInfo.qml:27
-#: activities/align4_2players/ActivityInfo.qml:26
+#: activities/align4/ActivityInfo.qml:28
+#: activities/align4_2players/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Down arrow: drop the token"
 msgstr "സ്പെയ്സോ താഴേക്കുള്ള ആരോയോ: ചിഹ്നം വെക്കുവാൻ"
