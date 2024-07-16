@@ -175,8 +175,8 @@ msgstr ""
 #: activities/algebra_minus/ActivityInfo.qml:25
 #: activities/algebra_plus/ActivityInfo.qml:25
 #: activities/algorithm/ActivityInfo.qml:23
-#: activities/align4/ActivityInfo.qml:24
-#: activities/align4_2players/ActivityInfo.qml:23
+#: activities/align4/ActivityInfo.qml:25
+#: activities/align4_2players/ActivityInfo.qml:24
 #: activities/alphabet-sequence/ActivityInfo.qml:25
 #: activities/baby_wordprocessor/ActivityInfo.qml:25
 #: activities/braille_alphabets/ActivityInfo.qml:25
@@ -1325,11 +1325,8 @@ msgstr "დაალაგეთ ოთხი ბუშტი."
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
-msgid ""
-"Create a line of 4 tokens either horizontally (lying down), vertically "
-"(standing up), or diagonally."
-msgstr ""
-"შექმენით ხაზი 4 ბუშტისგან ვერტიკალურად, ჰორიზონტალურად ან დიაგონალურად."
+msgid "Develop anticipation and strategy skills."
+msgstr "განივითარეთ სტრატეგიული აზროვნება."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1341,7 +1338,16 @@ msgstr ""
 "ეთამაშეთ ტუქსს. რიგრიგობით დააწკაპუნეთ ხაზზე, სადაც გნებავთ, ბუშტი დააგდოთ. "
 "იგებს ის, ვინც 4 ბუშტის ხაზს შექმნის."
 
-#: activities/align4/ActivityInfo.qml:23 activities/bargame/ActivityInfo.qml:25
+#: activities/align4/ActivityInfo.qml:23
+#: activities/align4_2players/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"You can create a line of 4 tokens either horizontally (lying down), "
+"vertically (standing up), or diagonally."
+msgstr ""
+"შექმენით ხაზი 4 ბუშტისგან ვერტიკალურად, ჰორიზონტალურად ან დიაგონალურად."
+
+#: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
 #: activities/nine_men_morris/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1352,20 +1358,20 @@ msgstr ""
 "სიძნელის დონის ხელით ასარჩევად ისრის ღილაკები შეგიძლიათ, გამოიყენოთ. ტუქსი "
 "დონის მომატებასთან ერთად უკეთ და უკეთ თამაშობს."
 
-#: activities/align4/ActivityInfo.qml:25
-#: activities/align4_2players/ActivityInfo.qml:24
+#: activities/align4/ActivityInfo.qml:26
+#: activities/align4_2players/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Left arrow: move the token to the left"
 msgstr "ისარი მარცხნივ: ბუშტის გადატანა მარცხნივ"
 
-#: activities/align4/ActivityInfo.qml:26
-#: activities/align4_2players/ActivityInfo.qml:25
+#: activities/align4/ActivityInfo.qml:27
+#: activities/align4_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Right arrow: move the token to the right"
 msgstr "ისარი მარჯვნივ: ბუშტის გადატანა მარჯვნივ"
 
-#: activities/align4/ActivityInfo.qml:27
-#: activities/align4_2players/ActivityInfo.qml:26
+#: activities/align4/ActivityInfo.qml:28
+#: activities/align4_2players/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Down arrow: drop the token"
 msgstr "ჰარე ან ისარი დაბლა: ბუშტის დაგდება"
@@ -2223,7 +2229,7 @@ msgstr "გადაათრიეთ და დაყარეთ შესა
 #: activities/babymatch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Motor coordination. Conceptual matching."
-msgstr ""
+msgstr "მოტორული კოორდინაცია. კონცეპტუალური დამთხვევა."
 
 #. Help prerequisite
 #: activities/babymatch/ActivityInfo.qml:25
@@ -2420,7 +2426,7 @@ msgstr "ნახვრეტი: უჯრედისთვის ნახვ
 #: activities/balancebox/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Ball: set the starting position of the ball"
-msgstr ""
+msgstr "ბურთი: ბურთის საწყისი მდებარეობის დაყენება"
 
 #: activities/balancebox/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
@@ -2479,6 +2485,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Finally, to load your level set, click on the 'Load saved levels' button."
 msgstr ""
+"და ბოლოს, იმისათვის, რომ თქვენი დონეების ნაკრები ჩაიტვირთოს, დააწკაპუნეთ "
+"ღილაკზე 'შენახული დონეების ჩატვირთვა'."
 
 #: activities/balancebox/balancebox.js:72
 msgctxt "balancebox|"
@@ -2491,7 +2499,7 @@ msgstr ""
 #, qt-format
 msgctxt "balancebox|"
 msgid "The file '%1' is missing!<br>Falling back to builtin levels."
-msgstr ""
+msgstr "ფაილი '%1' აღმოჩენილი არაა!<br>გამოვიყენებ ჩაშენებულ დონეებს."
 
 #: activities/balancebox/Balancebox.qml:70
 msgctxt "Balancebox|"
@@ -2555,7 +2563,7 @@ msgstr ""
 #: activities/ballcatch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr ""
+msgstr "მარცხენა და მარჯვენა ხელების მოძრაობის სინქრონიზაცია."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2621,7 +2629,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "განივითარეთ სტრატეგიული ფიქრის, დათვლისა და გამოკლების უნარები."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -2830,7 +2838,7 @@ msgstr ""
 #: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
-msgstr ""
+msgstr "ეს მარტივია, რიცხვები ასოებთან იგივეა A-დან J-მდე."
 
 #: activities/braille_alphabets/FirstScreen.qml:26
 msgctxt "FirstScreen|"
@@ -2886,7 +2894,7 @@ msgstr ""
 #, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the letter %1."
-msgstr ""
+msgstr "დააწკაპუნეთ წერტილებზე ბრაილის უჯრედს ალაგზე, რომ შექმნათ ასო %1."
 
 #: activities/braille_alphabets/questions.js:122
 #: activities/braille_alphabets/questions.js:126
@@ -2901,7 +2909,7 @@ msgstr ""
 #, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the number %1."
-msgstr ""
+msgstr "დააწკაპუნეთ წერტილებზე ბრაილის უჯრედს ალაგზე, რომ შექმნათ რიცხვი %1."
 
 #: activities/braille_alphabets/questions.js:165
 #: activities/braille_alphabets/questions.js:169
@@ -3384,12 +3392,12 @@ msgstr ""
 #: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (with score)"
-msgstr ""
+msgstr "დაალაგეთ ერთად ყველა ელემენტი კატეგორიიდან (ქულით)"
 
 #: activities/categorization/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
 msgid "Put together all the items from a category (without score)"
-msgstr ""
+msgstr "დაალაგეთ ერთად ყველა ელემენტი კატეგორიიდან (ქულის გარეშე)"
 
 #: activities/categorization/ActivityConfig.qml:62
 msgctxt "ActivityConfig|"
@@ -5686,6 +5694,8 @@ msgctxt "OrGate|"
 msgid ""
 "An OR gate outputs 1 if any of the inputs is 1, otherwise its output is 0:"
 msgstr ""
+"ლოგიკური ელემენტი 'ან' აბრუნებს, თუ ნებისმიერი მისი შეყვანებიდან 1-ის ტოლია. "
+"სხვა შემთხვევაში შედეგია 0:"
 
 #: activities/digital_electricity/components/OrGate.qml:22
 msgctxt "OrGate|"
@@ -5831,12 +5841,13 @@ msgctxt "TutorialDataset|"
 msgid ""
 "The digital light glows when its terminal is connected with an input of 1."
 msgstr ""
+"ციფრული სინათლე ანათებს, როცა მისი ტერმინალი მიერთებულია 1-ის შეყვანასთან."
 
 #: activities/digital_electricity/TutorialDataset.qml:145
 #: activities/digital_electricity/TutorialDataset.qml:202
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided inputs."
-msgstr ""
+msgstr "ჩართეთ ციფრული სინათლე მოწოდებული შეყვანებით."
 
 #: activities/digital_electricity/TutorialDataset.qml:146
 msgctxt "TutorialDataset|"
@@ -5844,6 +5855,8 @@ msgid ""
 "To connect two terminals, click on a first terminal, then on a second "
 "terminal."
 msgstr ""
+"იმისათვის, რომ ორი ტერმინალი ერთმანეთს მიაერთოთ, ჯერ პირველ ტერმინალზე "
+"დააწკაპუნეთ, შემდეგ კი მეორეზე."
 
 #: activities/digital_electricity/TutorialDataset.qml:159
 msgctxt "TutorialDataset|"
@@ -6166,13 +6179,13 @@ msgstr "ელემენტების დათვლა"
 #: activities/enumerate/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Place the items in the best way to count them."
-msgstr ""
+msgstr "დაალაგეთ ელემენტები საუკეთესოდ, რომ დათვალოთ."
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr ""
+msgstr "ვარჯიში მცირე რაოდენობების დათვლაში."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6432,7 +6445,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
 msgid "This animal has single-toed hooves."
-msgstr ""
+msgstr "ამ ცხოველს ერთფრჩხილიანი ჩლიქები აქვს."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:33
 msgctxt "board1|"
@@ -6449,7 +6462,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
 msgid "This animal has a comb on its head."
-msgstr ""
+msgstr "ამ ცხოველს თავზე ფიჭა აქვს."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:45
 msgctxt "board1|"
@@ -6467,7 +6480,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
 msgid "This animal has around 20,000 taste buds."
-msgstr ""
+msgstr "ამ ცხოველს 20, 000-მდე გემოს რეცეპტორი გააჩნია."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:57
 msgctxt "board1|"
@@ -6502,7 +6515,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
-msgstr ""
+msgstr "ეს ცხოველი ტალახში გორაობს, რომ თავისი სხეულის ტემპერატურა მართოს."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -6519,7 +6532,7 @@ msgstr ""
 #: activities/explore_farm_animals/resource/board/board1.qml:85
 msgctxt "board1|"
 msgid "This animal has webbed feet and can swim on the water."
-msgstr ""
+msgstr "ამ ცხოველს ბადეებიანი ფეხები აქვს და წყალში ცურვა შეუძლია."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:93
 msgctxt "board1|"
@@ -7597,12 +7610,12 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board1.qml:76
 msgctxt "board1|"
 msgid "Explore wild animals from around the world."
-msgstr ""
+msgstr "შეისწავლეთ ველური ცხოველები მთელ დედამიწაზე."
 
 #: activities/explore_world_animals/resource/board/board1.qml:79
 msgctxt "board1|"
 msgid "Click on the location where the given animal lives."
-msgstr ""
+msgstr "დააწკაპუნეთ ადგილზე, სადაც მოცემული ცხოველი ცხოვრობს."
 
 #: activities/explore_world_animals/resource/board/board2.qml:19
 #: activities/explore_world_animals/resource/board/board2.qml:22
@@ -7673,12 +7686,12 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board2.qml:76
 msgctxt "board2|"
 msgid "Explore wild animals from around the world."
-msgstr ""
+msgstr "შეისწავლეთ ველური ცხოველები მთელ დედამიწაზე."
 
 #: activities/explore_world_animals/resource/board/board2.qml:79
 msgctxt "board2|"
 msgid "Click on the location where the given animal lives."
-msgstr ""
+msgstr "დააწკაპუნეთ ადგილზე, სადაც მოცემული ცხოველი ცხოვრობს."
 
 #: activities/explore_world_animals/resource/board/board3.qml:19
 #: activities/explore_world_animals/resource/board/board3.qml:22
@@ -7748,12 +7761,12 @@ msgstr ""
 #: activities/explore_world_animals/resource/board/board3.qml:76
 msgctxt "board3|"
 msgid "Explore wild animals from around the world."
-msgstr ""
+msgstr "შეისწავლეთ ველური ცხოველები მთელ დედამიწაზე."
 
 #: activities/explore_world_animals/resource/board/board3.qml:79
 msgctxt "board3|"
 msgid "Click on the location where the given animal lives."
-msgstr ""
+msgstr "დააწკაპუნეთ ადგილზე, სადაც მოცემული ცხოველი ცხოვრობს."
 
 #. Activity title
 #: activities/explore_world_music/ActivityInfo.qml:15
@@ -7807,6 +7820,8 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Images from https://commons.wikimedia.org/wiki, https://archive.org"
 msgstr ""
+"გამოსახულებები საიტებიდან https://commons.wikimedia.org/wiki, https://"
+"archive.org"
 
 #: activities/explore_world_music/resource/board/board1.qml:20
 #: activities/explore_world_music/resource/board/board1.qml:24
@@ -7934,17 +7949,17 @@ msgstr ""
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
 msgid "Explore world music. Click on the suitcases."
-msgstr ""
+msgstr "მსოფლიოს მუსიკის შესწავლა. დააწკაპუნეთ ჩემოდნებზე."
 
 #: activities/explore_world_music/resource/board/board1.qml:133
 msgctxt "board1|"
 msgid "Click on the location that matches the music you hear."
-msgstr ""
+msgstr "დააწკაპუნეთ ადგილზე, რომელიც ემთხვევა მუსიკას, რომელიც გესმით."
 
 #: activities/explore_world_music/resource/board/board1.qml:136
 msgctxt "board1|"
 msgid "Click on the location that matches the text."
-msgstr ""
+msgstr "დააწკაპუნეთ ადგილზე, რომელიც ტექსტს ემთხვევა."
 
 #. Activity title
 #: activities/family/ActivityInfo.qml:15
@@ -8837,12 +8852,12 @@ msgstr "იპოვეთ მნიშვნელი (კვადრატი
 #: activities/fractions_find/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a pie)."
-msgstr ""
+msgstr "მნიშვნელის და მრიცხველის პოვნა (წრიული გრაფიკით)."
 
 #: activities/fractions_find/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Find numerator and denominator (with a square)."
-msgstr ""
+msgstr "მნიშვნელის და მრიცხველის პოვნა (კვადრატით)."
 
 #. Activity title
 #: activities/frieze/ActivityInfo.qml:14
@@ -8873,17 +8888,17 @@ msgstr ""
 #: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr ""
+msgstr "მარცხენა და მარჯვენა ისრები: აირჩიეთ ობიექტი"
 
 #: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr ""
+msgstr "ჰარე: მონიშნული ობიექტის დამატება მიმდევრობაში"
 
 #: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr ""
+msgstr "Backspace ან Delete: ბოლო ობიექტის წაშლა მიმდევრობიდან"
 
 #: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -13768,7 +13783,7 @@ msgstr "ოპერატორის ღილაკები (+, -, *, /): �
 #: activities/guess24/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr ""
+msgstr "Backspace ან წაშლა: ბოლო ოპერაციის გაუქმება"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"

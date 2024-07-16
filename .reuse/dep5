@@ -2523,6 +2523,12 @@ Copyright: 2013 lennartgreen
 License: CC0-1.0
 Comment: extract of https://freesound.org/people/lennartgreen/sounds/203646/
 
+Files:
+  src/activities/instruments/resource/horn.ogg
+Copyright: 2023 Tatu Palo & Henri Kahkonen
+License: CC0-1.0
+Comment: source link is https://freesound.org/people/HenKonen/sounds/682227/
+
 Files: src/activities/instruments/resource/accordion.ogg
  src/activities/instruments/resource/bongo.ogg
  src/activities/instruments/resource/castanets.ogg
@@ -2531,7 +2537,6 @@ Files: src/activities/instruments/resource/accordion.ogg
  src/activities/instruments/resource/cymbal.ogg
  src/activities/instruments/resource/flute_traversiere.ogg
  src/activities/instruments/resource/harp.ogg
- src/activities/instruments/resource/horn.ogg
  src/activities/instruments/resource/maracas.ogg
  src/activities/instruments/resource/saxophone.ogg
  src/activities/instruments/resource/snare_drum.ogg
