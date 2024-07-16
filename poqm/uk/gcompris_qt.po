@@ -11,9 +11,9 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-05-31 17:59+0300\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian\n"
+"PO-Revision-Date: 2024-07-15 08:52+0300\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1336,12 +1336,9 @@ msgstr "Розташуєте чотири позначки у лінію."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Розвиток прогнозування та навичок просторової візуалізації."
+msgstr "Розвиток прогнозування та навичок стратегічного мислення."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1355,18 +1352,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Створіть лінію з чотирьох елементів: горизонтально, вертикально або по "
-"діагоналі."
+"Ви можете створити лінію з чотирьох елементів: горизонтально, вертикально "
+"або по діагоналі."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26

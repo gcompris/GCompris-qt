@@ -8,13 +8,13 @@
 # Xavier A. Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006, 2007.
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
-# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-05-31 22:57+0200\n"
+"PO-Revision-Date: 2024-07-15 08:36+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.05.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -1422,12 +1422,9 @@ msgstr "Alinear quatre fitxes."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Desenvolupeu habilitats d'anticipació i visualització espacial."
+msgstr "Desenvolupeu habilitats d'anticipació i estratègia."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1441,17 +1438,12 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Crear una línia de 4 fitxes, ja sigui horitzontal (una al costat de "
+"Podeu crear una línia de 4 fitxes, ja sigui horitzontal (una al costat de "
 "l'altra), vertical (una sobre l'altra) o en diagonal."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25

@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-22 11:52+0200\n"
+"PO-Revision-Date: 2024-07-15 16:29+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -1324,12 +1324,9 @@ msgstr "Arrangera fyra symboler i en rad."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Utveckla förutseende och rumslig visualiseringsförmåga."
+msgstr "Utveckla förutseende och strategifärdigheter."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1343,18 +1340,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Skapa en rad av fyra symboler antingen horisontellt (liggande), vertikalt "
-"(stående) eller diagonalt."
+"Du kan skapa en rad av fyra symboler antingen horisontellt (liggande), "
+"vertikalt (stående) eller diagonalt."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26

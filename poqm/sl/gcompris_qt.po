@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-31 16:38+0200\n"
+"PO-Revision-Date: 2024-07-15 07:01+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1329,12 +1329,9 @@ msgstr "Razporedite štiri žetone v vrsto."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Razvijte sposobnosti predvidevanja in prostorske vizualizacije."
+msgstr "Razvijte sposobnosti predvidevanja in strategije."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1348,17 +1345,12 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Ustvarite vrsto 4 žetonov bodisi vodoravno (ležeče), navpično (stoječe) ali "
+"Ustvarite lahko vrsto 4 žetonov vodoravno (ležeče), navpično (stoječe) ali "
 "diagonalno."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25

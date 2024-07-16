@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-06-02 15:01+0200\n"
+"PO-Revision-Date: 2024-07-15 13:11+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -1329,12 +1329,9 @@ msgstr "Zet vier tekens op een rij."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Anticipatie en ruimtelijke visualisatie vaardigheden ontwikkelen."
+msgstr "Anticipatie en strategie vaardigheden ontwikkelen."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1348,18 +1345,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Maak een lijn met 4 stukken of horizontaal (liggend), of verticaal (staand) "
-"of diagonaal (schuin)."
+"Je kunt een lijn met 4 stenen of horizontaal (liggend), of verticaal "
+"(staand) of diagonaal (schuin) maken."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
