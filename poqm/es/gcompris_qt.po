@@ -1,10 +1,11 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 # Zohra Coudoin <zohra.coudoin@gcompris.net>, 2015.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2018.
+# Eloy Cuadra <ecuadra@eloihr.net>, %Y.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-07-16 16:35+0200\n"
+"PO-Revision-Date: 2024-07-17 14:16+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -13896,7 +13897,7 @@ msgstr "Lesoto"
 #: activities/geography/resource/board/board8_0.qml:115
 msgctxt "board8_0|"
 msgid "Kenya"
-msgstr "Kenya"
+msgstr "Kenia"
 
 #: activities/geography/resource/board/board8_0.qml:122
 msgctxt "board8_0|"
