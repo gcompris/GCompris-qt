@@ -1,10 +1,11 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
 # Zohra Coudoin <zohra.coudoin@gcompris.net>, 2015.
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2018.
+# Eloy Cuadra <ecuadra@eloihr.net>, %Y.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-30 20:36+0100\n"
+"PO-Revision-Date: 2024-07-17 14:16+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -4686,7 +4687,7 @@ msgstr ""
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read numbers."
-msgstr "Para los niños que saben leer números."
+msgstr "Para niños que saben leer números."
 
 #: activities/chronos/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -13753,7 +13754,7 @@ msgstr "Lesoto"
 #: activities/geography/resource/board/board8_0.qml:115
 msgctxt "board8_0|"
 msgid "Kenya"
-msgstr "Kenya"
+msgstr "Kenia"
 
 #: activities/geography/resource/board/board8_0.qml:122
 msgctxt "board8_0|"
@@ -14989,14 +14990,14 @@ msgid ""
 "vertical center of the screen, it means your number is over or under the "
 "number to find."
 msgstr ""
-"Lee las instrucciones que te dan el intervalo de números a encontrar. "
-"Introduce el número en el cuadro azul de la parte superior derecha. Se te "
-"dirá si el número es mayor o menor que el que debes encontrar. Vuelve a "
-"intentarlo hasta que encuentres la respuesta correcta. La distancia entre "
-"Tux y el lado derecho de la pantalla representa lo lejos que estás del "
-"número a encontrar. Si Tux está por encima o por debajo del centro vertical "
-"de la pantalla, significa que tu número está por encima o por debajo del "
-"número a encontrar."
+"Lee las instrucciones que te dan el intervalo de números que tienes que "
+"encontrar. Introduce el número en el cuadro azul de la parte superior "
+"derecha. Se te dirá si el número es mayor o menor que el que debes "
+"encontrar. Vuelve a intentarlo hasta que encuentres la respuesta correcta. "
+"La distancia entre Tux y el lado derecho de la pantalla representa lo lejos "
+"que estás del número que debes encontrar. Si Tux está por encima o por "
+"debajo del centro vertical de la pantalla, significa que tu número está por "
+"encima o por debajo del número que tienes que encontrar."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16204,7 +16205,7 @@ msgid ""
 "unit, and each square in it represents one tenth of this unit."
 msgstr ""
 "Se muestra un número decimal. La barra con la flecha representa una unidad "
-"completa, y cada cuadro de ella representa una décima parte de la unidad."
+"completa y cada cuadro de ella representa una décima parte de la unidad."
 
 #: activities/learn_decimals/learn_decimals.js:37
 msgctxt "learn_decimals|"
