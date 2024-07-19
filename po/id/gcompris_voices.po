@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: gcompris-id\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-01-16 03:10+0000\n"
-"PO-Revision-Date: 2024-02-27 03:59\n"
+"PO-Revision-Date: 2023-01-18 05:53\n"
 "Last-Translator: Wantoyo <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian\n"
 "Language: id\n"
@@ -21,12 +21,13 @@ msgstr ""
 "X-Crowdin-Project: gcompris-id\n"
 "X-Crowdin-Project-ID: 481873\n"
 "X-Crowdin-Language: id\n"
-"X-Crowdin-File: /gcompris-id/4.0/gcompris_voices.po\n"
-"X-Crowdin-File-ID: 88\n"
+"X-Crowdin-File: /gcompris-id/3.0/gcompris_voices.po\n"
+"X-Crowdin-File-ID: 63\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Find the missing numbers."
 msgid "Find the missing numbers."
 msgstr "Temukan angka yang hilang."
 
@@ -118,7 +119,7 @@ msgstr ""
 #: activities/analog_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how analog electricity works and create your own circuit."
-msgstr "Pelajari cara kerja listrik analog dan buat sirkuitmu sendiri."
+msgstr "Pelajari cara kerja listrik analog dan buat sirkuit kamu sendiri."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
 #: activities/baby_keyboard/ActivityInfo.qml:18
@@ -173,7 +174,7 @@ msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
 msgstr ""
 "Tekan tombol panah kiri dan kanan bersamaan, untuk membuat bola bergerak "
-"lurus"
+"dalam garis lurus"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
@@ -184,9 +185,9 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
-"Klik jumlah bola yang ingin kamu letakkan di dalam lubang, kemudian klik "
+"Klik jumlah bola yang ingin kamu letakkan di dalam lubang dan kemudian klik "
 "tombol OK. Pemenangnya adalah pemain yang tidak menempatkan bola ke dalam "
-"lubang warna merah."
+"lubang berwarna merah."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
 #: activities/binary_bulb/ActivityInfo.qml:18
@@ -213,7 +214,11 @@ msgstr "Buat sel Braille untuk suatu huruf."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Select a number and click on its target position. Each number must appear "
+#| "only once in a row and in a column. The numbers in the cells of a cage "
+#| "must produce the given result when combined using the given operator."
 msgid ""
 "Select a number and click on its target position. Each number must appear "
 "only once in a row and in a column. The numbers in the cells of a cage must "
@@ -238,7 +243,7 @@ msgid ""
 "on the valves to cause either a drop or an increase in the water level, and "
 "click on the gates to open or close a path."
 msgstr ""
-"Kamu bertanggung jawab terhadap kunci, dan kamu harus membantu Tux "
+"Kamu bertanggung jawab terhadap kunci dan kamu harus membantu Tux "
 "melewatinya. Klik pada katup untuk mengatur penurunan atau peningkatan "
 "ketinggian air, dan klik pada gerbang untuk membuka atau menutup jalan."
 
@@ -298,7 +303,7 @@ msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
 msgstr ""
-"Klik pada huruf yang dikehendaki. Kamu bisa mendengarkan ulang suara dengan "
+"Klik pada huruf yang dikehendaki. Kamu dapat mendengarkan ulang dengan "
 "mengklik ikon mulut."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
@@ -323,13 +328,13 @@ msgstr "Seret dan lepas jarum jam untuk menampilkan waktu yang diinginkan"
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr "Cocokkan warna dengan memindah slider pada tabung cat"
+msgstr "Cocokkan warna dengan memindah penggeser pada tabung cat"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Cocokkan warna dengan memindah slider pada senter"
+msgstr "Cocokkan warna dengan memindah penggeser pada senter"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
@@ -388,7 +393,7 @@ msgid ""
 "Count the elements by organizing them then type the answer on your keyboard."
 msgstr ""
 "Hitung elemen dengan mengelompokkan mereka kemudian ketik jawaban di "
-"keyboardmu."
+"keyboard kamu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
 #: activities/erase/ActivityInfo.qml:18
@@ -476,7 +481,8 @@ msgstr "Gerakkan mouse atau jari kamu di sepanjang pipa untuk memadamkan api."
 #: activities/football/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag a line from the ball to set the speed and direction of your kick."
-msgstr "Seret garis pada bola untuk mengatur kecepatan dan arah tendanganmu."
+msgstr ""
+"Seret garis pada bola untuk mengatur kecepatan dan arah tendangan kamu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
 #: activities/fractions_create/ActivityInfo.qml:19
@@ -495,7 +501,8 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
 #: activities/frieze/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Reproduce and complete the frieze model."
 msgid "Reproduce and complete the frieze model."
 msgstr "Buat ulang dan selesaikan hiasan dinding."
 
@@ -509,13 +516,13 @@ msgstr "Seret dan lepas wilayah untuk menyelesaikan peta negara."
 #: activities/geography/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects to complete the map."
-msgstr "Seret dan jatuhkan potongan wilayah untuk melengkapi peta."
+msgstr "Seret dan jatuhkan potongan untuk melengkapi peta."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
 #: activities/gletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the letters on your keyboard before they reach the ground."
-msgstr "Ketik huruf pada keyboardmu sebelum huruf-huruf mencapai tanah."
+msgstr "Ketik huruf-huruf pada keyboard kamu sebelum mencapai tanah."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
 #: activities/gnumch-equality/ActivityInfo.qml:18
@@ -569,13 +576,16 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
 #: activities/graduated_line_read/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Find the value corresponding to the given spot on the graduated line."
 msgid "Find the value corresponding to the given spot on the graduated line."
 msgstr "Temukan nilai yang benar sesuai dengan titik pada garis graduasi."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Place the given value on the graduated line."
 msgid "Place the given value on the graduated line."
 msgstr "Letakkan nilai yang disebutkan pada garis graduasi."
 
@@ -583,7 +593,8 @@ msgstr "Letakkan nilai yang disebutkan pada garis graduasi."
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
 #: activities/grammar_analysis/ActivityInfo.qml:21
 #: activities/grammar_classes/ActivityInfo.qml:21
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Assign the requested grammatical classes to the corresponding words."
 msgid "Assign the requested grammatical classes to the corresponding words."
 msgstr ""
 "Pasangkan kelas-kelas tata bahasa yang diminta ke kata-kata yang berhubungan."
@@ -607,7 +618,8 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
 #: activities/guess24/ActivityInfo.qml:17
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Use the four numbers with given operators to find 24"
 msgid "Use the four numbers with given operators to find 24"
 msgstr "Gunakan empat angka sesuai operasi yang disebutkan untuk mencari 24"
 
@@ -651,7 +663,8 @@ msgid ""
 "placed atop a smaller disc."
 msgstr ""
 "Membangun kembali bentuk menara dengan tumpuan yang tepat. Hati-hati, tidak "
-"boleh ada cakram yang besar bisa ditempatkan di atas cakram yang lebih kecil."
+"boleh ada cakram yang besar dapat ditempatkan di atas cakram yang lebih "
+"kecil."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
 #: activities/hexagon/ActivityInfo.qml:18
@@ -1016,7 +1029,7 @@ msgstr "Aturlah huruf-huruf dalam urutan yang benar."
 #, kde-format
 msgid "Arrange the given events in their chronological order."
 msgstr ""
-"Aturlah peristiwa-peristiwa yang disebutkan sesuai urutan kronologisnya."
+"Aturlah peristiwa-peristiwa yang diberikan sesuai urutan kronologisnya."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
@@ -1123,13 +1136,15 @@ msgstr "Temukan posisi yang benar"
 #, kde-format
 msgid ""
 "Arrange the instructions and traverse the correct path to reach the fish."
-msgstr "Atur perintah dan lintasi jalur yang benar untuk meraih ikan."
+msgstr "Atur instruksi dan lintasi jalur yang benar untuk meraih ikan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
 #: activities/railroad/ActivityInfo.qml:20
 #, kde-format
 msgid "Observe the train and then click on the items to set up a similar train"
-msgstr "Amati keretanya lalu klik objek untuk menyiapkan kereta yang sama"
+msgstr ""
+"Amati bentuk kereta sebelum kereta kemudian klik pada gerbong atau lokomotif "
+"untuk menyiapkan kereta yang sama."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
@@ -1168,7 +1183,7 @@ msgid ""
 "Click on the domino and validate your choice with the OK button to indicate "
 "the number of ice blocks Tux will have to follow to eat a fish."
 msgstr ""
-"Klik pada domino dan setujui pilihanmu dengan tombol OK untuk menunjukkan "
+"Klik pada domino dan setujui pilihan kamu dengan tombol OK untuk menunjukkan "
 "jumlah balok es yang harus dilewati Tux agar bisa memakan ikan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
@@ -1219,8 +1234,8 @@ msgstr "Hitung nomor pada dadu dan ketik di keyboardmu sebelum mencapai tanah."
 msgid ""
 "Count the numbers on the dominoes then type the result on your keyboard."
 msgstr ""
-"Hitung jumlah titik pada kartu domino lalu ketikkan hasilnya dengan "
-"keyboardmu."
+"Hitung jumlah titik pada kartu domino lalu ketikkan hasilnya dengan keyboard "
+"kamu."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
 #: activities/solar_system/ActivityInfo.qml:21
@@ -1228,7 +1243,7 @@ msgstr ""
 msgid ""
 "Answer the questions presented and get a 100% correctness among the options."
 msgstr ""
-"Jawab pertanyaan yang diajukan dan dapatkan akurasi 100% di antara pilihan."
+"Jawab pertanyaan yang diajukan dan dapatkan kebenaran 100% di antara pilihan."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
 #: activities/submarine/ActivityInfo.qml:18
@@ -1278,7 +1293,7 @@ msgstr ""
 #: activities/target/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
-msgstr "Klik pada sasaran untuk meluncurkan panah, lalu hitung skormu!"
+msgstr "Klik pada sasaran untuk meluncurkan panah, lalu hitung skor kamu!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1311,7 +1326,7 @@ msgid ""
 msgstr ""
 "Mengurai suatu penjumlahan untuk membuat pasangan angka yang sama dengan "
 "sepuluh di dalam setiap tanda kurung. Pilih angka dalam daftar, lalu pilih "
-"tempat kosong dari suatu operasi untuk memindahkan angka yang dipilih ke "
+"tempat kosong dari suatu operasi untuk memindahkan nomor yang dipilih ke "
 "tempat tersebut."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
