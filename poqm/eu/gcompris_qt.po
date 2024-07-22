@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2024-07-07 10:08+0200\n"
+"PO-Revision-Date: 2024-07-20 16:02+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -1334,12 +1334,9 @@ msgstr "Lau token lerrokatzea."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Aurre hartzeko eta bistaratze espazialeko trebetasunak garatzea."
+msgstr "Aurre hartzeko eta estrategia trebetasunak garatzea."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1353,18 +1350,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Sortu 4 fitxako lerro bat, horizontalki (etzanda), bertikalki (zutik), edo "
-"diagonalki."
+"4 fitxako lerro bat sor dezakezu, horizontalki (etzanda), bertikalki "
+"(zutik), edo diagonalki."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -14929,7 +14921,7 @@ msgstr "Igarri beharreko emaitza"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Eskatutako emaitza lortzeko eragiketak aurkitu."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
@@ -15027,12 +15019,9 @@ msgstr "Lagundu Tux-i haitzulotik ateratzen, zenbaki ezkutua aurkituz."
 
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Trebatu zenbakien arteko batuketak egiten."
+msgstr "Zenbakiak konparatzen ikasi."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15137,7 +15126,7 @@ msgstr "Igarri emandako hitzeko letrak."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Letreiatzea eta hiztegia hobetu."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15220,7 +15209,7 @@ msgstr "Berregin eskuineko dorrea, hutsik dagoen lekuan."
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Estrategia pentsamendua garatu."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -15345,12 +15334,9 @@ msgstr "Arrastatu eta jaregin elementu bakoitza bere izenaren gainean."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Aberastu zure hiztegia"
+msgstr "Zure hiztegia aberastu eta irakurtzen trebatu."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16403,21 +16389,15 @@ msgstr "1 eta 5 artean."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr "Batuketak zenbaki hamartarrekin"
+msgstr "Batuketa zenbaki hamartarrekin"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
-msgstr "Ikasi zenbaki hamartarrekin batuketak egiten."
+msgstr "Zenbaki hamartarrekin batuketak egiten ikasi."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
@@ -16580,12 +16560,9 @@ msgstr "Gaitu ahotsak"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr "Ikasi batuketak egiten"
+msgstr "Digituak ikasi"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -16619,7 +16596,7 @@ msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
-"Digitu bat azaltzen da pantailan. Bete horri dagokion zirkulu kopurua eta "
+"Pantaila digitu bat azaltzen da. Bete horri dagokion zirkulu kopurua eta "
 "baliozkotu zure erantzuna."
 
 #: activities/learn_digits/ActivityInfo.qml:28
@@ -16746,21 +16723,15 @@ msgstr "Ikasi kenketak egiten"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Ikasi kenketak egiten zenbaki txikiak erabiliz."
+msgstr "Kenketa egiten ikasi zenbaki txikiak erabiliz."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
-msgstr "Ikasi kenketak egiten haien emaitzak zenbatuz."
+msgstr "Kenketa egiten ikasi haien emaitzak zenbatuz."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:23
@@ -16919,12 +16890,9 @@ msgstr "Letra zein hitzetan"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr "Aukeratu emandako letra duten hitz guztiak."
+msgstr "Emandako letra duten hitzak bilatu."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
@@ -16980,12 +16948,9 @@ msgstr "Itzali argiak"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr "Helburua argi guztiak itzaltzea da."
+msgstr "Argi guztiak itzali."
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
@@ -17221,23 +17186,17 @@ msgstr "Kalkulatu zenbat izar dauden kapela magikoaren azpian."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr "Ikasi kenketak egiten."
+msgstr "Kenketa egiten ikasi."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
-msgstr "Kenketak."
+msgstr "Kenketa."
 
 #. Help manual
 #: activities/magic-hat-minus/ActivityInfo.qml:24
@@ -17315,23 +17274,17 @@ msgstr "Zenbatu zenbat izar dauden kapela magikoaren azpian."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
-msgstr "Ikasi batuketak egiten."
+msgstr "Batuketa egiten ikasi."
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
-msgstr "Batuketak."
+msgstr "Batuketa."
 
 #. Help manual
 #: activities/magic-hat-plus/ActivityInfo.qml:24
@@ -17643,12 +17596,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr "Ikasi letra larriak eta xeheak, oroimena."
+msgstr "Letra larriak eta xeheak ikasi."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -17768,12 +17718,9 @@ msgstr "Kartak biratu zenbaki bat irudi batekin parekatzeko."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Trebatu kenketak egiten."
+msgstr "Zenbaketan trebatu."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -19449,12 +19396,9 @@ msgstr "Trebatu dirua erabiltzen."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Trebatu dirua erabiltzen."
+msgstr "Zenbatzen eta dirua erabiltzen trebatu."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19615,12 +19559,9 @@ msgstr "Ezagutu Nazioarteko Morse kodea"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr "Ikasi Nazioarteko Morse kodearekin komunikatzen."
+msgstr "Nazioarteko Morse kodearekin komunikatu."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -19853,12 +19794,9 @@ msgstr "Errota-jokoa (Tux-en aurka)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "Errota-jokoa (Tux-en aurka)"
+msgstr "Errota-jokoa Tux-en aurka jokatu."
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
@@ -19972,12 +19910,9 @@ msgstr "Errota-jokoa (lagun batekin)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "Errota-jokoa (lagun batekin)"
+msgstr "Errota-jokoan lagun batekin jokatu."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -19988,6 +19923,11 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"Lagun batekin jokatu. Aurrena, txandaka, kokatu bederatzi pieza, eta "
+"ondoren, txandaka, zure piezak mugitu. 3 pieza bakarrik gelditzen "
+"zaizkizunean, hutsik dagoen edozein puntura eraman ditzakezu hegan. Jokalari "
+"batek irabazten du, beste jokalariak piezarik mugitu ezin duenean edo 2 "
+"pieza gelditzen zaizkionean."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -20013,15 +19953,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
-"Identifikatu notak behar bezala eta puntuatu  % 100  maila bat osatzeko."
+"Notak identifikatu, haiek pianoaren teklatuan jo, eta &percnt;100 puntuazio "
+"maila lortu maila osatzeko."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -20085,15 +20023,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
 msgstr ""
+"Zenbakiak, zenbakizko sekuentziaren arabera, bata bestearen atzetik aukeratu."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Ikasi uraren zikloa."
+msgstr "Zenbakizko sekuentzia ikasi."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
@@ -20124,6 +20060,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
 msgstr ""
+"Zenbaki bakoitika eta bikoitiak eta haien zenbakizko ordena antzematen ikasi."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -20372,12 +20309,9 @@ msgstr "Antolatu emandako gertaerak ordena kronologikoan."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Antolatu emandako gertaerak ordena kronologikoan."
+msgstr "Gertaera baten sekuentzia ordena kronologikoan ordenatzen ikasi."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20527,12 +20461,9 @@ msgstr "Emandako hitzak antolatzea esanahia duen perpausa bat eratzeko."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Ordenatu hitzak esanahia duen perpausa bat eratzeko."
+msgstr "Esanahia duen perpausa bat osatzeko, hitzak ordenatzen  trebatu."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -20624,19 +20555,11 @@ msgstr "Jokatu Oware estrategia jokoa Tux-ekin"
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Estrategia pentsamendu trebetasuna garatu."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than one's opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -20652,16 +20575,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On a turn, a player chooses one of "
-#| "the six houses under their control. The player removes all seeds from "
-#| "that house, and distributes them, dropping one in each house counter-"
-#| "clockwise from this house, in a process called sowing. Seeds are not "
-#| "distributed into the end scoring houses, nor into the house drawn from. "
-#| "The starting house is always left empty; if it contained 12 (or more) "
-#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -20672,13 +20585,14 @@ msgid ""
 "empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
 "seed is placed in the next house."
 msgstr ""
-"Jokalariek, txandaka, haziak mugitzen dituzte. Txanda batean, jokalari batek "
-"bere kontrolpeko sei etxeetako bat hautatzen du. Jokalariak etxe horretako "
-"hazi guztiak kentzen ditu, eta haiek banatzen ditu, etxe bakoitzean bat, "
-"erloju-orratzen aurkako noranzkoan, ereitea deritzon prozesuan. Haziak ez "
-"dira banatzen amaierako puntuazioko etxeetan, ez eta haiek ateratako etxean "
-"ere. Abioko etxea, beti, hutsik uzten da; 12 hasi (edo gehiago baditu, honi "
-"ezikusi egiten zaio, eta hamabigarren hazia hurrengo etxeak ipintzen da."
+"Jokalariek, txandaka, haziak mugitzen dituzte. Txanda bakoitzean, jokalari "
+"batek bere kontrolpeko sei etxeetako bat hautatzen du. Jokalariak etxe "
+"horretako hazi guztiak kentzen ditu, eta haiek banatzen ditu, ereitea "
+"deritzon prozesua eginez, ondorengo etxeetan (erlojuaren aurkako "
+"noranzkoan). Haziak ez dira banatzen amaierako puntuazioko etxeetan, ez eta "
+"haien jatorrizko etxean ere. Abioko etxea, beti, hutsik uzten da; 12 hazi "
+"(edo gehiago baditu, honi ezikusi egiten zaio, eta hamabigarren hazia "
+"hurrengo etxean ipintzen da."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -20899,20 +20813,18 @@ msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
 msgstr ""
+"Irudikatzeko eta mapak irakurtzeko trebetasuna garatu, eta argibideak "
+"jarraizen ikasi."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Egin klik lauki-sareko laukietan Tux emandako jarraibideak jarraituz "
+"Egin klik saretako laukietan Tux gezien noranzkoa jarraituz jomugara "
 "mugitzeko."
 
 #: activities/path_decoding/ActivityInfo.qml:23
@@ -20947,12 +20859,9 @@ msgstr "%1x%2 lauki-sare."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Ibilbidea deskodetzea"
+msgstr "Ibilbide erlatiboa deskodetzea"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -21012,12 +20921,9 @@ msgstr "Erroreak: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Ibilbidea kodetzea"
+msgstr "Ibilbidea erlatiboa kodetzea"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21075,7 +20981,7 @@ msgstr "Bi irudien arteko ezberdintasunak bilatu."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Xehetasunak hautemateko trebetasuna garatu."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21801,20 +21707,14 @@ msgstr ""
 "gogoratu edo behean eskuin izkinan begiratu dezakezu."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Parekatu 2ra arteko zenbakiak."
+msgstr "0tik abiatuta zenbakiak harrapatu."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Parekatu 2ra arteko zenbakiak."
+msgstr "10etik abiatuta zenbakiak harrapatu."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -21834,12 +21734,9 @@ msgstr "Pianoa jotzea"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Aurkitu data zuzena eta aukeratu ezazu egutegian."
+msgstr "Nota irakurri, eta teklatuan jo."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -21912,12 +21809,9 @@ msgstr "Jo erritmoa"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Ikas esazu erritmo bat zehaztasunez jarraitzen."
+msgstr "Erritmoari zehaztasunez jarraitu."
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -22171,32 +22065,27 @@ msgstr "Aukeratu haurra kutxaren eskerrean dagoen irudia."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Ibilbidea programatu"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Tux-i arraina harrapatzen laguntzeko ibilbidea programatu."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr ""
-"Jarraibideak irakurtzen daki, eta bide bat aurkitzeko logikoki pentsatzeko "
-"gai da."
+msgstr "Ibilbide batean zehar mugitzeko jarraibideak programatzen ikasi."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Can read instructions, and think logically to find a path."
 msgstr ""
-"Jarraibideak irakurtzen daki, eta bide bat aurkitzeko logikoki pentsatzeko "
-"gai da."
+"Jarraibideak irakurtzen daki, eta ibilbide bat aurkitzeko logikoki "
+"pentsatzeko gai da."
 
 #. Help manual
 #: activities/programmingMaze/ActivityInfo.qml:25
@@ -22578,7 +22467,7 @@ msgstr ""
 #: activities/redraw/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Redraw the given image"
-msgstr "Emandako irudia birsortu"
+msgstr "Emandako irudia berregin"
 
 #. Help title
 #: activities/redraw/ActivityInfo.qml:17
@@ -22591,6 +22480,7 @@ msgstr "Ondo marraztu emandako irudia sareta hutsean."
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
 msgstr ""
+"Sareta batean kokapen bat identifikatzen eta eredu bat berregiten ikasi."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -22645,12 +22535,9 @@ msgstr "Ispilatu emandako irudia"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Berregin eskuineko dorrea, hutsik dagoen lekuan."
+msgstr "Irudia simetrikoki berregin hutsik dagoen saretan."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -22659,6 +22546,8 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Sareta batean kokapen bat identifikatzen eta eredu bat simetrikoki "
+"berregiten ikasi."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -25756,19 +25645,13 @@ msgstr "Sudokua ebaztea."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
 msgstr ""
-"Garatu zure arrazoibide logikoak: kalkuluak erabili bitartean, datuen arteko "
-"lotura egitea, ondorioak ateratzea eta espazioan kokatzea kalkuluak erabili "
-"bitartean."
+"Pentsamendu logikoan (datuak lotzea, dedukzioa) eta ikuspen espazioalean "
+"trebetasun batzuk garatu."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -25786,6 +25669,11 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"Hautatu zenbaki bat edo ikur bat eta egin klik haren jomugako kokapenean. "
+"Ikur bakoitza behin bakarrik agertu behar da errenkadan, zutabean eta azpi-"
+"eskualdean, halakorik balego. Ekintza bat baimentzen ez bada, jokoak "
+"zergatik erakutsiko du. Baina adi: karratu batean zerbait ipini ahal izatea "
+"ez du esan nahi ondo dagoenik. Baliteke gaizki egotea ere."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25826,6 +25714,8 @@ msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
 msgstr ""
+"Pentsamendu logikoan, koloreak ezberdintzen, eta kokapenak oroitzen "
+"trebetasuna garatu."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -25890,16 +25780,11 @@ msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
 msgstr ""
+"Ikuspen espazialean, kokapenak oroitzen, eta ereduak birsortzen trebetasuna "
+"garatu."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -25907,9 +25792,9 @@ msgid ""
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
 "Mugitu pieza bat hura arrastatuz. Simetria-botoia, onartzen duten "
-"elementuetan agertzen da. Egin klik biraketa-botoian edo arrastatu "
-"hautatutako pieza bere erdigunearekiko hura biratzeko. Aztertu «Haurtxo "
-"Tangram» jarduera Tangram erabiltzeko sarrerako errazago bat nahi baduzu."
+"elementuetan agertzen da. Arrastatu biraketa-botoia edo hautatutako piezaren "
+"inguruan hura biratzeko. Aztertu «Haurtxo Tangram» jarduera Tangram "
+"erabiltzeko sarrerako errazago bat nahi baduzu."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15

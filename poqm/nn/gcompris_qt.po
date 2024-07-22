@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-07-14 12:20+0200\n"
+"PO-Revision-Date: 2024-07-17 17:56+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -1352,7 +1352,6 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
@@ -2099,10 +2098,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Baby­tastatur"
+msgstr "Mitt første tastatur"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2139,7 +2137,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "Mi første mus"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2248,10 +2246,9 @@ msgstr "Uttal kvart teikn som vert tasta"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Enkel tekst­handsamar"
+msgstr "Mitt første skrive­program"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
@@ -4547,7 +4544,6 @@ msgstr "Sluttspel i sjakk"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
 msgstr "Spel sluttspel i sjakk mot Tux."
@@ -4633,15 +4629,13 @@ msgstr ""
 
 # Har sjekka i README-fila at bileta av både køyretøya og luftfartøya er teikna av Doucet.
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Månebileta er henta frå NASA, som har opphavsretten. Årstala for "
-"oppfinningane er henta frå &lt;https://www.wikipedia.org/&gt;, og bileta av "
-"køyretøya og luftfartøya er teikna av Franck Doucet."
+"Årstala for oppfinningane er henta frå &lt;https://www.wikipedia.org/&gt;, "
+"og bileta av køyretøya og luftfartøya er teikna av Franck Doucet."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5250,13 +5244,12 @@ msgstr ""
 "fargeblanding)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Endra fargen ved å dra glidebrytarane på lommelyktene eller å ved å trykkja "
+"Endra fargen ved å dra nivå­markørane på målings­tubane eller å ved å trykkja "
 "på «+»- og «−»-knappane. Trykk så på «OK»-knappen for å sjekka svaret."
 
 #: activities/color_mix/ActivityInfo.qml:25
@@ -5369,7 +5362,6 @@ msgstr ""
 "Her lærer du blanding av primærfargane for lys (additiv fargeblanding)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
@@ -5379,7 +5371,6 @@ msgstr ""
 "på «+»- og «−»-knappane. Trykk så på «OK»-knappen for å sjekka svaret."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -6192,7 +6183,6 @@ msgid "A XOR B"
 msgstr "A XELLER B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6200,11 +6190,9 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Digitalteknikk har berre to tilstandar, 0 og 1. Dette gjer det mogleg å "
-"bruka matematiske operasjonar, for eksempel addisjon og subtraksjon. Det er "
-"grunnlaget for datamaskinteknologi. I praksis representerer talet 0 ei "
-"spenning om lag lik jordspenninga og talet 1 representerer matespenninga til "
-"straumkrinsen."
+"Digitalteknikk har berre to tilstandar, 0 og 1. Det er grunnlaget for "
+"datamaskinteknologi. I praksis representerer talet 0 ei spenning om lag lik "
+"jordspenninga og talet 1 representerer matespenninga til straumkrinsen."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -6635,7 +6623,6 @@ msgstr "Teikn strekar mellom prikkane for å laga bokstavar."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
 msgstr "Læra å teikna bokstavane på ein morosam måte."
@@ -6660,7 +6647,6 @@ msgstr "Teikn strekar mellom prikkane for å laga tala 0 til 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
 msgstr "Læra å teikna siffera på ein morosam måte."
@@ -15191,7 +15177,7 @@ msgstr "Bygg opp tårnet til høgre på den ledige plassen."
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Utvikla evna til strategisk tenking."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -18173,7 +18159,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
 msgstr "Øva på å trekkja frå."
@@ -18281,7 +18266,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
 msgstr "Øv på gonging og deling."
@@ -18289,7 +18273,6 @@ msgstr "Øv på gonging og deling."
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
 msgstr "Kunna multiplikasjon og divisjon."
@@ -18337,7 +18320,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
 msgstr "Øv på gongetabellen."
@@ -18345,7 +18327,6 @@ msgstr "Øv på gongetabellen."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "Kunna multiplikasjon."
@@ -25559,17 +25540,15 @@ msgstr "Informasjon om tastaturbruk finn du i hjelpemenyen."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr "Kalkudoku"
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Løys kalkudoku-oppgåva."
+msgstr "Løys sudoku-oppgåva."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
