@@ -176,7 +176,7 @@ QtObject {
         });
         var output = "";
         // Retrieve all the activities created between the two versions
-        ActivityInfoTree.filterCreatedWithinVersions(previousVersion, newVersion);
+        ActivityInfoTree.filterCreatedWithinVersions(previousVersion, newVersion, true);
         var activities = ActivityInfoTree.menuTree;
         // display for each version an optional text ("content") then the new activities
         filtered.map(function filter(obj) {
@@ -204,8 +204,8 @@ QtObject {
         });
 
         // restore menu context
-        ActivityInfoTree.filterByTag("favorite")
-        ActivityInfoTree.filterEnabledActivities()
+        ActivityInfoTree.filterByTag("favorite", "", false)
+        ActivityInfoTree.filterEnabledActivities(true)
 
         return output
     }

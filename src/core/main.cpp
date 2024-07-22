@@ -368,7 +368,7 @@ int main(int argc, char *argv[])
         qDebug() << QStringLiteral("Setting difficulty between %1 and %2").arg(minDifficulty).arg(maxDifficulty);
         ApplicationSettings::getInstance()->setDifficultyFromCommandLine(minDifficulty, maxDifficulty);
         ActivityInfoTree::getInstance()->minMaxFiltersChanged(minDifficulty, maxDifficulty, false);
-        ActivityInfoTree::getInstance()->filterByTag("favorite");
+        ActivityInfoTree::getInstance()->filterByTag("favorite", "", false);
     }
 
     QObject *topLevel = engine.rootObjects().value(0);

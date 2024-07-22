@@ -312,8 +312,8 @@ ActivityBase {
                             ActivityInfoTree.filterBySearch(searchTextField.text);
                         }
                         else {
-                            ActivityInfoTree.filterByTag(modelData.tag, currentCategory)
-                            ActivityInfoTree.filterEnabledActivities()
+                            ActivityInfoTree.filterByTag(modelData.tag, currentCategory, false)
+                            ActivityInfoTree.filterEnabledActivities(true)
                         }
                     }
                 }
@@ -409,8 +409,8 @@ ActivityBase {
                 function selectCurrentItem() {
                     categoriesGrid.currentIndex = index
                     currentCategory = Object.keys(modelData)[0]
-                    ActivityInfoTree.filterByTag(currentTag, currentCategory)
-                    ActivityInfoTree.filterEnabledActivities()
+                    ActivityInfoTree.filterByTag(currentTag, currentCategory, false)
+                    ActivityInfoTree.filterEnabledActivities(true)
                 }
                 Image {
                     id: rightIcon
@@ -1146,8 +1146,8 @@ ActivityBase {
             }
             onClose: {
                 if(activity.currentTag != "search") {
-                    ActivityInfoTree.filterByTag(activity.currentTag, currentCategory)
-                    ActivityInfoTree.filterEnabledActivities()
+                    ActivityInfoTree.filterByTag(activity.currentTag, currentCategory, false)
+                    ActivityInfoTree.filterEnabledActivities(true)
                 } else
                     ActivityInfoTree.filterBySearch(searchTextField.text);
 

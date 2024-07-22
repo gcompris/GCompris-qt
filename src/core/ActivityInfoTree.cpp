@@ -173,7 +173,7 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
         }
         /* clang-format on */
     }
-    sortByDifficultyThenName();
+    sortByDifficultyThenName(false);
     if (emitChanged)
         Q_EMIT menuTreeChanged();
 }
@@ -332,8 +332,8 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
         m_startingActivity = startingActivity;
     }
 
-    filterByTag("favorite");
-    filterEnabledActivities();
+    filterByTag("favorite", "", false);
+    filterEnabledActivities(true);
 }
 
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
