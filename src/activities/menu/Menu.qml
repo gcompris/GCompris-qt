@@ -275,6 +275,7 @@ ActivityBase {
             keyNavigationWraps: true
             property int initialX: 4
             property int initialY: 4
+            property int currentSectionSelected: 0
 
             Component {
                 id: sectionDelegate
@@ -303,6 +304,8 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
+                        if(section.currentSectionSelected === index)
+                            return
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
                         activity.currentTagCategories = modelData.categories
@@ -320,6 +323,7 @@ ActivityBase {
                             ActivityInfoTree.filterByTag(modelData.tag, currentCategory)
                             ActivityInfoTree.filterEnabledActivities()
                         }
+                        section.currentSectionSelected = index
                     }
                 }
             }
@@ -396,6 +400,7 @@ ActivityBase {
             visible: activity.currentTag !== "search"
             cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
             cellHeight: height
+            property int currentCategorySelected: 0
 
             delegate: GCButton {
                 id: button
@@ -412,10 +417,13 @@ ActivityBase {
                 }
 
                 function selectCurrentItem() {
+                    if(categoriesGrid.currentCategorySelected === index)
+                        return
                     categoriesGrid.currentIndex = index
                     currentCategory = Object.keys(modelData)[0]
                     ActivityInfoTree.filterByTag(currentTag, currentCategory)
                     ActivityInfoTree.filterEnabledActivities()
+                    categoriesGrid.currentCategorySelected = index
                 }
                 Image {
                     id: rightIcon
