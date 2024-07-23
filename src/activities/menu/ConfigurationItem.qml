@@ -83,15 +83,16 @@ Item {
                 width: Math.min(300 * ApplicationInfo.ratio, dialogConfig.contentWidth)
                 from: 1
                 to: 7
-                first.value: minFilter
-                second.value: maxFilter + 1
-                first.onValueChanged: {
+                // Binding minFilter directly to first.value doesn't work right, so we set its value in loadFromConfig(), and do the same on second.value for consistency
+                first.value: 1
+                second.value: 7
+                first.onMoved: {
                     if(first.value >= second.value)
                         first.value = second.value - 1;
                         else
                             minFilter = first.value;
                 }
-                second.onValueChanged: {
+                second.onMoved: {
                     if(second.value <= first.value)
                         second.value = first.value + 1;
                         else
@@ -482,6 +483,8 @@ Item {
 
         minFilter = ApplicationSettings.filterLevelMin
         maxFilter = ApplicationSettings.filterLevelMax
+        filterSlider.first.value = minFilter
+        filterSlider.second.value = maxFilter + 1
 
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
