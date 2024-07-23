@@ -174,6 +174,21 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
         Q_EMIT menuTreeChanged();
 }
 
+bool ActivityInfoTree::launchedActivityMissGivenDifficulty() const{
+    bool activityMissDifficulty = true;
+    const auto constMenuTreeFull = m_menuTreeFull;
+    for (const auto &activity: constMenuTreeFull) {
+        if (activity->name() == m_startingActivity) {
+            if (activity->maximalDifficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
+                activity->minimalDifficulty() <= ApplicationSettings::getInstance()->filterLevelMax()) {
+                activityMissDifficulty = false;
+            }
+            break;
+        }
+    }
+    return activityMissDifficulty;
+}
+
 void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
 {
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
