@@ -733,7 +733,11 @@ ActivityBase {
 
                 function onStartActivity(activityName: string, level: int) {
                     ActivityInfoTree.setCurrentActivityFromName(activityName)
-                    var currentLevels = ApplicationSettings.currentLevels(ActivityInfoTree.currentActivity.name)
+                    var currentLevels
+                    if (ApplicationSettings.filterLevelOverridedByCommandLineOption)
+                        currentLevels = ActivityInfoTree.currentActivity.currentLevels
+                    else
+                        currentLevels = ApplicationSettings.currentLevels(ActivityInfoTree.currentActivity.name)
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
                     {
                         'menu': activity,

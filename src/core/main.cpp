@@ -369,6 +369,10 @@ int main(int argc, char *argv[])
         ApplicationSettings::getInstance()->setDifficultyFromCommandLine(minDifficulty, maxDifficulty);
         ActivityInfoTree::getInstance()->minMaxFiltersChanged(minDifficulty, maxDifficulty, false);
         ActivityInfoTree::getInstance()->filterByTag("favorite", "", false);
+        if(parser.isSet(clStartOnActivity) && ActivityInfoTree::getInstance()->launchedActivityMissGivenDifficulty()){
+            qWarning() << "The launched activity doesn't contain any level for given difficulty range";
+            return -1;
+        }
     }
 
     QObject *topLevel = engine.rootObjects().value(0);

@@ -105,6 +105,7 @@ public:
     static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
     void listActivities();
+    bool launchedActivityMissGivenDifficulty() const;
 };
 
 #endif // ACTIVITYINFOTREE_H
