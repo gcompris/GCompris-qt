@@ -19542,22 +19542,22 @@ msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:108
+#: activities/menu/ConfigurationItem.qml:109
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:115
+#: activities/menu/ConfigurationItem.qml:116
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:145
+#: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:154
+#: activities/menu/ConfigurationItem.qml:155
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Check for updates"
@@ -19565,7 +19565,7 @@ msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Tjek efter opdateringer"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:156
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Download"
@@ -19573,22 +19573,22 @@ msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Download"
 
-#: activities/menu/ConfigurationItem.qml:171
+#: activities/menu/ConfigurationItem.qml:172
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:181
+#: activities/menu/ConfigurationItem.qml:182
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:190
+#: activities/menu/ConfigurationItem.qml:191
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:211
+#: activities/menu/ConfigurationItem.qml:212
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -19596,12 +19596,12 @@ msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Baggrund"
 
-#: activities/menu/ConfigurationItem.qml:222
+#: activities/menu/ConfigurationItem.qml:223
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:231
+#: activities/menu/ConfigurationItem.qml:232
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -19609,23 +19609,23 @@ msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Baggrund"
 
-#: activities/menu/ConfigurationItem.qml:247
+#: activities/menu/ConfigurationItem.qml:248
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:249
+#: activities/menu/ConfigurationItem.qml:250
 #, fuzzy, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Titel - Kunstner"
 
-#: activities/menu/ConfigurationItem.qml:251
+#: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:274
+#: activities/menu/ConfigurationItem.qml:275
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -19633,7 +19633,7 @@ msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Baggrund"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:306
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the triangle"
@@ -19641,12 +19641,12 @@ msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Find trianglen"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:306
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:319
+#: activities/menu/ConfigurationItem.qml:320
 #, fuzzy
 #| msgctxt "instruments|"
 #| msgid "Find the triangle"
@@ -19654,27 +19654,27 @@ msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Find trianglen"
 
-#: activities/menu/ConfigurationItem.qml:330
+#: activities/menu/ConfigurationItem.qml:331
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Fuldskærm"
 
-#: activities/menu/ConfigurationItem.qml:341
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuelt tastatur"
 
-#: activities/menu/ConfigurationItem.qml:352
+#: activities/menu/ConfigurationItem.qml:353
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:362
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:373
+#: activities/menu/ConfigurationItem.qml:374
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Font size"
@@ -19682,13 +19682,13 @@ msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Skriftstørrelse"
 
-#: activities/menu/ConfigurationItem.qml:378
+#: activities/menu/ConfigurationItem.qml:379
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Skriftstørrelse"
 
-#: activities/menu/ConfigurationItem.qml:398
-#: activities/menu/ConfigurationItem.qml:432
+#: activities/menu/ConfigurationItem.qml:399
+#: activities/menu/ConfigurationItem.qml:433
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Default"
@@ -19696,28 +19696,28 @@ msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Standard"
 
-#: activities/menu/ConfigurationItem.qml:407
+#: activities/menu/ConfigurationItem.qml:408
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:412
+#: activities/menu/ConfigurationItem.qml:413
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:615
+#: activities/menu/ConfigurationItem.qml:618
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr ""
 
-#: activities/menu/ConfigurationItem.qml:616
+#: activities/menu/ConfigurationItem.qml:619
 #, fuzzy
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Kun &store bogstaver"
 
-#: activities/menu/ConfigurationItem.qml:617
+#: activities/menu/ConfigurationItem.qml:620
 #, fuzzy
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
@@ -19810,19 +19810,19 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Ordforråd"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:374
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:783
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr ""
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

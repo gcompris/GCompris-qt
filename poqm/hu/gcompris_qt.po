@@ -18574,154 +18574,154 @@ msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
 msgstr "Nehézségi szint:"
 
-#: activities/menu/ConfigurationItem.qml:108
+#: activities/menu/ConfigurationItem.qml:109
 msgctxt "ConfigurationItem|"
 msgid "Language selector"
 msgstr "Nyelvválasztó"
 
-#: activities/menu/ConfigurationItem.qml:115
+#: activities/menu/ConfigurationItem.qml:116
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
 msgstr "Hangfájlok automatikus letöltésésnek/frissítésének engedélyezése"
 
-#: activities/menu/ConfigurationItem.qml:145
+#: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
 msgstr "Hangok saját nyelven"
 
-#: activities/menu/ConfigurationItem.qml:154
+#: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"
 msgid "Check for updates"
 msgstr "Frissítések ellenőrzése"
 
-#: activities/menu/ConfigurationItem.qml:155
+#: activities/menu/ConfigurationItem.qml:156
 msgctxt "ConfigurationItem|"
 msgid "Download"
 msgstr "Letöltés"
 
-#: activities/menu/ConfigurationItem.qml:171
+#: activities/menu/ConfigurationItem.qml:172
 msgctxt "ConfigurationItem|"
 msgid "Enable audio voices"
 msgstr "Hangok engedélyezése"
 
-#: activities/menu/ConfigurationItem.qml:181
+#: activities/menu/ConfigurationItem.qml:182
 msgctxt "ConfigurationItem|"
 msgid "Enable audio effects"
 msgstr "Hangeffektek engedélyezése"
 
-#: activities/menu/ConfigurationItem.qml:190
+#: activities/menu/ConfigurationItem.qml:191
 msgctxt "ConfigurationItem|"
 msgid "Audio effects volume"
 msgstr "Hangeffektek hangereje"
 
-#: activities/menu/ConfigurationItem.qml:211
+#: activities/menu/ConfigurationItem.qml:212
 msgctxt "ConfigurationItem|"
 msgid "Download background music"
 msgstr "Háttérzene letöltése"
 
-#: activities/menu/ConfigurationItem.qml:222
+#: activities/menu/ConfigurationItem.qml:223
 msgctxt "ConfigurationItem|"
 msgid "Enable background music"
 msgstr "Háttérzene engedélyezése"
 
-#: activities/menu/ConfigurationItem.qml:231
+#: activities/menu/ConfigurationItem.qml:232
 msgctxt "ConfigurationItem|"
 msgid "Background Music"
 msgstr "Háttérzene"
 
-#: activities/menu/ConfigurationItem.qml:247
+#: activities/menu/ConfigurationItem.qml:248
 msgctxt "ConfigurationItem|"
 msgid "Not playing"
 msgstr "Nem szól"
 
-#: activities/menu/ConfigurationItem.qml:249
+#: activities/menu/ConfigurationItem.qml:250
 #, qt-format
 msgctxt "ConfigurationItem|"
 msgid "Title: %1  Artist: %2"
 msgstr "Szám címe: %1  Előadó: %2"
 
-#: activities/menu/ConfigurationItem.qml:251
+#: activities/menu/ConfigurationItem.qml:252
 msgctxt "ConfigurationItem|"
 msgid "Introduction music"
 msgstr "Bevezető zene"
 
-#: activities/menu/ConfigurationItem.qml:274
+#: activities/menu/ConfigurationItem.qml:275
 msgctxt "ConfigurationItem|"
 msgid "Background music volume"
 msgstr "Háttérzene hangerő"
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:306
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is installed"
 msgstr "Teljes szóképkészlet telepítve."
 
-#: activities/menu/ConfigurationItem.qml:305
+#: activities/menu/ConfigurationItem.qml:306
 msgctxt "ConfigurationItem|"
 msgid "Full word image set is not installed"
 msgstr "Nincs a teljes szóképkészlet telepítve."
 
-#: activities/menu/ConfigurationItem.qml:319
+#: activities/menu/ConfigurationItem.qml:320
 msgctxt "ConfigurationItem|"
 msgid "Download full word image set"
 msgstr "Teljes szóképkészlet letöltése"
 
-#: activities/menu/ConfigurationItem.qml:330
+#: activities/menu/ConfigurationItem.qml:331
 msgctxt "ConfigurationItem|"
 msgid "Fullscreen"
 msgstr "Teljes képernyő"
 
-#: activities/menu/ConfigurationItem.qml:341
+#: activities/menu/ConfigurationItem.qml:342
 msgctxt "ConfigurationItem|"
 msgid "Virtual Keyboard"
 msgstr "Virtuális billentyűzet"
 
-#: activities/menu/ConfigurationItem.qml:352
+#: activities/menu/ConfigurationItem.qml:353
 msgctxt "ConfigurationItem|"
 msgid "The activity section menu is visible"
 msgstr "Feladat menü láthatósága"
 
-#: activities/menu/ConfigurationItem.qml:362
+#: activities/menu/ConfigurationItem.qml:363
 msgctxt "ConfigurationItem|"
 msgid "Ask for confirmation to exit"
 msgstr "Kilépéshez üzenetet kér."
 
-#: activities/menu/ConfigurationItem.qml:373
+#: activities/menu/ConfigurationItem.qml:374
 msgctxt "ConfigurationItem|"
 msgid "Font selector"
 msgstr "Betűtipus választó"
 
-#: activities/menu/ConfigurationItem.qml:378
+#: activities/menu/ConfigurationItem.qml:379
 msgctxt "ConfigurationItem|"
 msgid "Font size"
 msgstr "Betűméret"
 
-#: activities/menu/ConfigurationItem.qml:398
-#: activities/menu/ConfigurationItem.qml:432
+#: activities/menu/ConfigurationItem.qml:399
+#: activities/menu/ConfigurationItem.qml:433
 msgctxt "ConfigurationItem|"
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: activities/menu/ConfigurationItem.qml:407
+#: activities/menu/ConfigurationItem.qml:408
 msgctxt "ConfigurationItem|"
 msgid "Font Capitalization"
 msgstr "Betűméret"
 
-#: activities/menu/ConfigurationItem.qml:412
+#: activities/menu/ConfigurationItem.qml:413
 msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Betűköz"
 
-#: activities/menu/ConfigurationItem.qml:615
+#: activities/menu/ConfigurationItem.qml:618
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Kis- és nagybetűk (alapértelmezés)"
 
-#: activities/menu/ConfigurationItem.qml:616
+#: activities/menu/ConfigurationItem.qml:619
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Minden nagybetűs"
 
-#: activities/menu/ConfigurationItem.qml:617
+#: activities/menu/ConfigurationItem.qml:620
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Minden kisbetűs"
@@ -18806,7 +18806,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Szókincs és olvasás"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:374
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18815,12 +18815,12 @@ msgstr ""
 "Jelöld meg a kedvenc feladataidat. Kattints a feladatválasztó jobb felső "
 "sarkában lévő napocskára!"
 
-#: activities/menu/Menu.qml:775
+#: activities/menu/Menu.qml:783
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Feladat keresése"
 
-#: activities/menu/Menu.qml:802
+#: activities/menu/Menu.qml:810
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tevékenység beállítások"
