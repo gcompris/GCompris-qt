@@ -168,7 +168,7 @@ ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
   SOURCE_DIR ${OPENSSL_DIR}
-  URL https://www.openssl.org/source/openssl-1.1.1w.tar.gz
+  URL https://github.com/openssl/openssl/archive/refs/tags/OpenSSL_1_1_1w.tar.gz
   URL_HASH SHA256=cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND
