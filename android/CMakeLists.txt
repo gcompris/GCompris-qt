@@ -176,7 +176,7 @@ ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
   SOURCE_DIR ${OPENSSL_DIR}
-  URL https://www.openssl.org/source/openssl-3.0.13.tar.gz
+  URL https://github.com/openssl/openssl/releases/download/openssl-3.0.13/openssl-3.0.13.tar.gz
   URL_HASH SHA256=88525753f79d3bec27d2fa7c66aa0b92b3aa9498dafd93d7cfa4b3780cdae313
   BUILD_IN_SOURCE 1
   CONFIGURE_COMMAND
