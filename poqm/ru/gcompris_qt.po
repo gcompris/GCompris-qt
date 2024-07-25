@@ -19476,12 +19476,12 @@ msgstr ""
 "Помести сюда твои любимые упражнения, нажимая на солнышко в правом верхнем "
 "углу упражнения."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Поиск упражнений"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Параметры упражнения"

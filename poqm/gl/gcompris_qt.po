@@ -19083,12 +19083,12 @@ msgstr ""
 "Para poñer aquí as túas actividades favoritas, preme o sol na parte superior "
 "dereita da actividade."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Buscar actividades específicas"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuración da actividade"

@@ -19086,12 +19086,12 @@ msgstr ""
 "Поставете любимите си занимания тук, като кликнете върху слънцето в горния "
 "десен ъгъл на картинката на заниманието."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Търсене на специфични занимания"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Настройки на заниманието"

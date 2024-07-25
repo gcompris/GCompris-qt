@@ -18694,12 +18694,12 @@ msgstr ""
 "Sem vložte své oblíbené aktivity kliknutím na slunce vpravo nahoře u "
 "aktivity."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Vyhledávání aktivit"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavení aktivit"

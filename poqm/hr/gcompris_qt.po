@@ -19346,12 +19346,12 @@ msgstr ""
 "Ovdje postavi tvoje omiljene aktivnosti klikom na simbol sunca u gornjem "
 "desnom kutu željene aktivnosti."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Pretraži aktivnosti"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Postavke aktivnosti"

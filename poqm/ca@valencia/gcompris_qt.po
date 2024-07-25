@@ -19523,12 +19523,12 @@ msgstr ""
 "Col·loca les teues activitats preferides ací fent clic damunt del Sol que hi "
 "ha en la part superior dreta de cada activitat."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Busca activitats específiques"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configureu l'activitat"

@@ -19118,12 +19118,12 @@ msgstr ""
 "Legg favorittaktivitetane dine her ved å trykkja på sola oppe til høgre for "
 "kvar aktivitet."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Søk etter aktivitetar"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Endra innstillingar for aktivitetar"

@@ -18982,12 +18982,12 @@ msgstr ""
 "Postavite svoje najljubše dejavnosti sem tako, da kliknete na sonce zgoraj "
 "desno pri tej dejavnosti."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Poišči posebne dejavnosti"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavitve dejavnosti"

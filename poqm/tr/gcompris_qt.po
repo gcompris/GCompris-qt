@@ -18970,12 +18970,12 @@ msgstr ""
 "En sevdiğin etkinlikleri buraya koymak için o etkinliğin sağ üst köşesindeki "
 "güneşe tıkla."
 
-#: activities/menu/Menu.qml:781
+#: activities/menu/Menu.qml:785
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Etkinlik ara"
 
-#: activities/menu/Menu.qml:808
+#: activities/menu/Menu.qml:812
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Etkinlik Ayarları"
