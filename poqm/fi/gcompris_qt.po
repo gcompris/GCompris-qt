@@ -19246,12 +19246,12 @@ msgstr ""
 "Lisää suosikkitoimintosi tähän valitsemalla toiminnon oikeasta yläkulmasta "
 "aurinko."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Hae tiettyjä toimintoja"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Toiminnon asetukset"

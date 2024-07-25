@@ -19561,12 +19561,12 @@ msgstr ""
 "Letakkan kegiatan favorit kamu di sini dengan mengklik matahari di kanan "
 "atas kegiatan."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cari kegiatan yang kamu inginkan"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Pengaturan Kegiatan"

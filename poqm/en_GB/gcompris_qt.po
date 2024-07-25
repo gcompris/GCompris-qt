@@ -18858,12 +18858,12 @@ msgstr ""
 "Put your favourite activities here by clicking on the sun at the top right "
 "of that activity."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Search specific activities"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Activity Settings"

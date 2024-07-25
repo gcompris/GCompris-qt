@@ -18864,12 +18864,12 @@ msgstr ""
 "Weka shughuli zako uzipendazo hapa kwa kubofya jua kwenye sehemu ya juu "
 "kulia ya shughuli hiyo."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Tafuta shughuli mahususi"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Mipangilio ya Shughuli"

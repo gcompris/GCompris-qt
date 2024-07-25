@@ -19493,12 +19493,12 @@ msgstr ""
 "Svoje obľúbené aktivity umiestnite sem, výberom slnka v pravom hornom rohu "
 "na každej aktivite."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Ukazovať zamknuté aktivity"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavenia aktivity"

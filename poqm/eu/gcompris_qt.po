@@ -18941,12 +18941,12 @@ msgstr ""
 "Jarduera gogokoenak hemen jartzeko, egin klik jarduera horren goiko "
 "eskuineko eguzkian."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Bilatu jarduera jakin batzuk"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Jarduera-ezarpenak"

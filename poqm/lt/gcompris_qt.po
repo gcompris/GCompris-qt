@@ -18957,12 +18957,12 @@ msgstr ""
 "Išdėliok čia dažniausiai naudojamas pamokėles, paspausdamas ant saulutės, "
 "rodomos šalia kiekvienos pamokėlės viršuje, dešinėje."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Rask pamokėles čia įrašydamas žodį"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Pamokėlės nustatymai"

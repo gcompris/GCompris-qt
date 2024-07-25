@@ -18613,12 +18613,12 @@ msgstr ""
 "לשים את הפעילויות הכי אהובות כאן באמצעות לחיצה על השמש בצד הימני העליון של "
 "הפעילות הזו."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "לחפש פעילות מסויימת"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "הגדרות הפעילות"

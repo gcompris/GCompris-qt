@@ -20020,12 +20020,12 @@ msgstr ""
 "Cuir na gníomhaíochtaí is fearr leat anseo. Cliceáil ar an ghrian ag barr na "
 "gníomhaíochta chun seo a dhéanamh."
 
-#: activities/menu/Menu.qml:783
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cuardaigh gníomhaíochtaí ar leith"
 
-#: activities/menu/Menu.qml:810
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Socruithe Gníomhaíochta"
