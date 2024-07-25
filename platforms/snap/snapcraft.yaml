@@ -19,9 +19,6 @@ apps:
       - pulseaudio
       - audio-record
 environment:
-  GST_PLUGIN_PATH: "$SNAP/kf6/usr/lib/$CRAFT_ARCH_TRIPLET/gstreamer-1.0"
-  GST_PLUGIN_SYSTEM_PATH: "$SNAP/kf6/usr/lib/$CRAFT_ARCH_TRIPLET/gstreamer-1.0"
-  GST_PLUGIN_SCANNER: "$SNAP/kf6/usr/lib/$CRAFT_ARCH_TRIPLET/gstreamer1.0/gstreamer-1.0/gst-plugin-scanner"
   ALSA_CONFIG_PATH: "$SNAP/kf6/etc/asound.conf"
   QT_MEDIA_BACKEND: "gstreamer"
 layout:
