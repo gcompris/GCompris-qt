@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-04-01 23:31+0300\n"
+"PO-Revision-Date: 2024-07-26 17:11+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -1385,12 +1385,9 @@ msgstr "Дапоўніць размяшчэнне фруктаў."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "Лагічныя асацыяцыі"
+msgstr "Практыка лагічных асацыяцый."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -2235,7 +2232,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "Мая першая мышка"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2320,7 +2317,7 @@ msgstr "Форма рэчаў"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Злучыце аб'екты з іх формамі."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
@@ -2359,7 +2356,7 @@ msgstr "Дзіцячы тэкставы рэдактар"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Напішыце вашыя першыя тэксты."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2518,7 +2515,7 @@ msgstr "Перацягніце фігуры ў адпаведныя ім мес�
 #: activities/babyshapes/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr ""
+msgstr "Вучыцеся суадносіць геаметрычныя фігуры."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2853,12 +2850,9 @@ msgstr "Націсніце левую і правую стрэлкі аднач�
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Вызначце вашую левую ці правую руку"
+msgstr "Сінхранізуйце рухі вашай левай і правай рукі."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2920,14 +2914,14 @@ msgstr "Гульня з палоскай (з Туксам)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "Прадбачце і вымусіце іншага гульца пакласці мячык у апошнюю лунку."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Развівайце навыкі стратэгічнага мыслення, ліку і адымання."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -4506,12 +4500,9 @@ msgstr "Шахматы (з Туксам)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Пазнаёмцеся з сістэмаю Брайля"
+msgstr "Пазнаёмцеся і гуляйце ў шахматы."
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
@@ -4703,12 +4694,9 @@ msgstr "Вырашыце шахматны эцюд Тукса."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Шахматны эцюд"
+msgstr "Закончыць гульню ў шахматы."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -5118,12 +5106,9 @@ msgstr "Пачуўшы літару, пстрыкніце па ёй."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Малыя літары"
+msgstr "Вызначайце назвы маленькіх літар."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5167,12 +5152,9 @@ msgstr "Вялікія літары"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Вялікія літары"
+msgstr "Вызначайце назвы вялікіх літар."
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5937,7 +5919,7 @@ msgstr "Перацягніце фігуры ў адпаведныя ім мес�
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "Развівайце назіральнасць і навыкі прасторавага ўяўлення."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
@@ -6087,12 +6069,9 @@ msgstr "Лічбавая электроніка"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr "Стварыце лічбавую электрычную схему і сімулюйце яе працу."
+msgstr "Стварыце лічбавую лагічную схему і сімулюйце яе працу."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -9404,7 +9383,7 @@ msgstr "Рухайце элементы, каб уз'ядняць выяву."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "Развівайце навыкі прадбачання і прасторавага ўяўлення."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9635,7 +9614,7 @@ msgstr "Стукніце мяч у браму."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Разумейце накірунак і хуткасць."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -10092,7 +10071,7 @@ msgstr ""
 #: activities/frieze/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "Стрэлкі налева і направа: выберыце фішку."
+msgstr "Стрэлкі налева і направа: выберыце фішку"
 
 #: activities/frieze/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -10102,7 +10081,7 @@ msgstr "Прагал: дадаць выбраную фішку да фрызу"
 #: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Клавіша сцірання ці выдалення: выдаліць апошнюю фішку з фрызу."
+msgstr "Клавіша сцірання ці выдалення: выдаліць апошнюю фішку з фрызу"
 
 #: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -11702,7 +11681,7 @@ msgstr "Нармандыя"
 #: activities/geo-country/resource/board/board1_0.qml:107
 msgctxt "board1_0|"
 msgid "Hauts de France"
-msgstr " О-дэ-Франс"
+msgstr "О-дэ-Франс"
 
 #. Region of France: Grand est
 #: activities/geo-country/resource/board/board1_0.qml:115
@@ -13083,12 +13062,9 @@ msgstr "Знайдзіце краіны"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Place the TOOLS to the right and others to the left"
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr "Размясціце ПРЫЛАДЫ справа, а астатнія - злева"
+msgstr "Размясціце кантыненты і краіны на мапе свету."
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
@@ -15574,12 +15550,9 @@ msgstr "Перацягніце кожны элемент да сваёй наз�
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Узбагачайце ваш слоўнікавы запас"
+msgstr "Узбагачайце ваш слоўнікавы запас і практыкуйцеся ў чытанні."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16458,12 +16431,9 @@ msgstr "Вывучыць дзесятковыя лічбы"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr "Вывучыць дзесятковыя лічбы"
+msgstr "Прадстаўце дадзеныя дзесятковыя лікі."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
@@ -19196,7 +19166,7 @@ msgstr "Выбар мовы"
 #: activities/menu/ConfigurationItem.qml:116
 msgctxt "ConfigurationItem|"
 msgid "Enable automatic downloads/updates of external assets"
-msgstr "Дазволіць аўтаматычнае пампаванне/аднаўленне знешніх далучэнняў."
+msgstr "Дазволіць аўтаматычнае пампаванне/аднаўленне знешніх далучэнняў"
 
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
@@ -20328,20 +20298,14 @@ msgstr ""
 "вы можаце па памяці ці падгледзеўшы ў правы ніжні куток."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Выберыце цотны лік:"
+msgstr "Злавіце цотныя лікі."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Выберыце няцотны лік:"
+msgstr "Злавіце няцотныя лікі."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -22321,7 +22285,7 @@ msgid ""
 "is selected"
 msgstr ""
 "Стрэлкі ўверх і ўніз: паменшыць ці павялічыць лічыльнік цыкла, калі абрана "
-"зона цыклу."
+"зона цыклу"
 
 #: activities/programmingMaze/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -22904,12 +22868,9 @@ msgstr ""
 
 #. Help goal
 #: activities/reversecount/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count intervals"
 msgctxt "ActivityInfo|"
 msgid "Learn to count intervals."
-msgstr "Лічыце інтэрвалы"
+msgstr "Вучыціся лічыць інтэрвалы."
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -24286,12 +24247,9 @@ msgstr ""
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Практыкуйце складанне ў гульні з цэльнікам"
+msgstr "Практыкуйце лік за абмежаваны час."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -24487,12 +24445,9 @@ msgstr "Сонечная сістэма"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Агляд Сонечнай сістэмы"
+msgstr "Вывучэнне Сонечнай сістэмы."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26711,7 +26666,7 @@ msgstr "Шматлікія выпраўленні памылак"
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Дададзеныя пераклады на балгарскую, галісійскую і Суахілі."
+msgstr "Дададзеныя пераклады на балгарскую, галісійскую і Суахілі"
 
 #: core/ChangeLog.qml:37 core/ChangeLog.qml:46 core/ChangeLog.qml:53
 #: core/ChangeLog.qml:66 core/ChangeLog.qml:84 core/ChangeLog.qml:99
@@ -26735,7 +26690,7 @@ msgstr "Дададзены пераклад на арабскую і эспер�
 #: core/ChangeLog.qml:45 core/ChangeLog.qml:52
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
-msgstr "Шмат аднаўленняў перакладаў."
+msgstr "Шмат аднаўленняў перакладаў"
 
 #: core/ChangeLog.qml:51
 msgctxt "ChangeLog|"

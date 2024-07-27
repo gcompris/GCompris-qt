@@ -13005,7 +13005,7 @@ msgstr "აკრიფეთ ასოები თქვენს კლავ
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr ""
+msgstr "ტოლობის მხვრელი"
 
 #. Help title
 #. ----------
@@ -13022,7 +13022,7 @@ msgstr ""
 #: activities/gnumch-equality/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition, multiplication, division and subtraction."
-msgstr ""
+msgstr "ივარჯიშეთ მიმატებაში, გამრავლებაში, გაყოფაში და გამოკლებაში."
 
 #. Help manual
 #: activities/gnumch-equality/ActivityInfo.qml:25
@@ -13157,7 +13157,7 @@ msgstr "ფრთხილად, ტროგლი!"
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr ""
+msgstr "მამრავლების მხვრელი"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -13172,7 +13172,7 @@ msgstr ""
 #: activities/gnumch-multiples/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about multiples and factors."
-msgstr ""
+msgstr "გაიგეთ მამრავლებისა და ნამრავლების შესახებ."
 
 #. Help manual
 #: activities/gnumch-factors/ActivityInfo.qml:23
@@ -13191,7 +13191,7 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Gnumch inequality"
-msgstr ""
+msgstr "უტოლობის მხვრელი"
 
 #. Help title
 #: activities/gnumch-inequality/ActivityInfo.qml:18
@@ -13205,7 +13205,7 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication and division."
-msgstr ""
+msgstr "ივარჯიშეთ მიმატებაში, გამოკლებაში, გამრავლებაში, გაყოფაში."
 
 #: activities/gnumch-inequality/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -13231,7 +13231,7 @@ msgstr "ივარჯიშეთ გაყოფის უტოლობა�
 #: activities/gnumch-multiples/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch multiples"
-msgstr ""
+msgstr "გამრავლების მხვრელი"
 
 #. Help title
 #: activities/gnumch-multiples/ActivityInfo.qml:17
@@ -13263,7 +13263,7 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr ""
+msgstr "მარტივი რიცხების მხვრელი"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
@@ -19146,12 +19146,12 @@ msgstr "ჯუზეპე არჩიმბოლდო, ბიბლიოთ
 #: activities/paintings/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
-msgstr ""
+msgstr "კაცუსიკა ჰოკუსაი, ოირანი და კამურო"
 
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
-msgstr ""
+msgstr "კაცუსიკა ჰოკუსაი, ქალი მარაოთი"
 
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
@@ -20576,12 +20576,12 @@ msgstr "მხოლოდ, მთავარი ალაგის გამ�
 #: activities/programmingMaze/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Using both the main area and the procedure area."
-msgstr ""
+msgstr "მთავარი და პროცედურის ალაგის გამოყენებით."
 
 #: activities/programmingMaze/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Using both the main area and the loop area."
-msgstr ""
+msgstr "მთავარი და მარყუჟის ალაგის გამოყენებით."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
