@@ -9015,7 +9015,7 @@ msgstr ""
 #: activities/frieze/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Copy this frieze: 3 or 4 shapes with different colors/signs."
-msgstr ""
+msgstr "დააკოპირეთ ეს მიმდევრობა: 3 ან 4 ფიგურა სხვადასხვა ფერებით/ნიშნებით."
 
 #: activities/frieze/resource/5/Data.qml:14
 msgctxt "Data|"
@@ -9023,6 +9023,8 @@ msgid ""
 "Copy this frieze: 3 or 4 shapes with 2 sizes and potentially same colors/"
 "signs."
 msgstr ""
+"დააკოპირეთ ეს მიმდევრობა: 3 ან 4 ფიგურა 2 ზომით და ალბათ იგივე ფერებით/"
+"ნიშნებით."
 
 #: activities/frieze/resource/6/Data.qml:14
 msgctxt "Data|"
@@ -16258,7 +16260,7 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr ""
+msgstr "ისწავლეთ დიდი და პატარა ასოები."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -16300,7 +16302,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr ""
+msgstr "Space ან Enter: მონიშნული ბარათის გადაბრუნება"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -16432,7 +16434,7 @@ msgstr "რიცხვების შედარება 9-მდე."
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "All operations memory game against Tux"
-msgstr ""
+msgstr "ყველა ოპერაციის დამახსოვრების თამაში ტუქსის წინააღმდეგ"
 
 #. Help title
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:17
@@ -16615,7 +16617,7 @@ msgstr ""
 #: activities/memory-math-add-minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction memory game"
-msgstr ""
+msgstr "მიმატების და გამოკლების დამახსოვრების თამაში"
 
 #. Help title
 #: activities/memory-math-add-minus/ActivityInfo.qml:17
@@ -16942,7 +16944,7 @@ msgstr ""
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr ""
+msgstr "გამრავლების და გაყოფის დამახსოვრების თამაში ტუქსის წინააღმდეგ."
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -16979,7 +16981,7 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game"
-msgstr ""
+msgstr "გამრავლების და გაყოფის მეხსიერების თამაში"
 
 #. Help title
 #: activities/memory-math-mult-div/ActivityInfo.qml:17
@@ -16991,7 +16993,7 @@ msgstr ""
 #: activities/memory-math-mult-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication memory game against Tux"
-msgstr ""
+msgstr "გამრავლების დამახსოვრების თამაში ტუქსთან"
 
 #. Help title
 #: activities/memory-math-mult-tux/ActivityInfo.qml:17
@@ -17306,7 +17308,7 @@ msgstr "ოცი"
 #: activities/memory/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Memory game with images"
-msgstr ""
+msgstr "დამახსოვრების თამაში სურათებით"
 
 #. Help title
 #: activities/memory/ActivityInfo.qml:17
