@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-07-17 17:56+0200\n"
+"PO-Revision-Date: 2024-08-01 15:56+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -1301,10 +1301,9 @@ msgstr "Fullfør fruktrekkja."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "Logiske samanhengar"
+msgstr "Øva på logiske samanhengar."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1327,7 +1326,6 @@ msgstr "Fire på rad (mot Tux)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
 msgstr "Plasser fire kuler på rad."
@@ -1335,10 +1333,9 @@ msgstr "Plasser fire kuler på rad."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Øva på finmotorikk."
+msgstr "Læra å tenkja framover og strategisk."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -2211,23 +2208,21 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Biletbitar"
+msgstr "Enkelt puslespel"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Flytt kvar gjenstand til omrisset som har same form som gjenstanden."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Snu korta heilt til du finn to der svaret stemmer med reknestykket."
+msgstr "Læra å kopla gjenstandar med omrissa av gjenstandane."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2254,14 +2249,13 @@ msgstr "Mitt første skrive­program"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Skriv dine første tekstar."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Læra å rekna med dei fire rekneartane."
+msgstr "Læra å skriva tekstar i ein teksthandsamar."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2401,17 +2395,15 @@ msgstr "Biletbitar"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
 msgstr "Flytt biletbitane til rett plass."
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Læra å kjenna att setningsledd."
+msgstr "Læra å kopla gjenstandar med omrissa av gjenstandane."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2739,10 +2731,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Venstre- og høgrehender"
+msgstr "Synkronisera rørsler med venstre og høgre hand."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2805,14 +2796,14 @@ msgstr "Barspel (mot Tux)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "Tenk framover for å tvinga motspelaren å plassera den siste kula."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Utvikla evner i strategisk tenking, teljing og subtraksjon."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -2973,19 +2964,19 @@ msgstr "0 til 255 med"
 #: activities/braille_alphabets/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Discover the braille system"
-msgstr "Lær blindeskrift"
+msgstr "Lær punktskrift"
 
 #. Help title
 #: activities/braille_alphabets/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn and memorize the braille system."
-msgstr "Lær og hugs blindeskrift."
+msgstr "Lær og hugs punktskrift."
 
 #. Help goal
 #: activities/braille_alphabets/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Let children discover the braille system."
-msgstr "Utforska braille-systemet for blindeskrift."
+msgstr "Utforska braille-systemet for punktskrift."
 
 #. Help manual
 #: activities/braille_alphabets/ActivityInfo.qml:23
@@ -3063,7 +3054,7 @@ msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
-msgstr "Blindeskrift vert brukt av blinde personar for å lesa og skriva."
+msgstr "Punktskrift vert brukt av blinde og svaksynte for å lesa og skriva."
 
 #: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
@@ -3079,7 +3070,7 @@ msgstr ""
 #: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
-msgstr "Trykk på Tux når du er klar til å prøva å skriva blindeskrift."
+msgstr "Trykk på Tux når du er klar til å prøva å skriva punktskrift."
 
 #: activities/braille_alphabets/questions.js:12
 #: activities/braille_alphabets/questions.js:16
@@ -3141,26 +3132,25 @@ msgstr "Trykk på punkta i cella for å skriva teiknet %1."
 #: activities/braille_fun/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Braille fun"
-msgstr "Gøy med blindeskrift"
+msgstr "Gøy med punktskrift"
 
 #. Help title
 #: activities/braille_fun/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
-msgstr "Øv på å skriva blindeskrift."
+msgstr "Øv på å skriva punktskrift."
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Reknestykke med addisjon"
+msgstr "Øv på å skriva punktskrift."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
-msgstr "Kjennskap til blindeskrift/punktskrift."
+msgstr "Kjennskap til punktskrift."
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:24
@@ -3187,13 +3177,12 @@ msgstr "Løys kalkudoku-oppgåva."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
-"Utvikla evna til logisk tenking: sjå samanhengar, trekkja logiske "
+"Utvikla evner innan logisk tenking: sjå samanhengar, trekkja logiske "
 "slutningar, ha god romforståing og kunna rekna."
 
 #. Help prerequisite
@@ -4215,7 +4204,6 @@ msgstr "Spel dam (mot Tux)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
@@ -4225,10 +4213,9 @@ msgstr "Slå ut alle brikkene til motspelaren før han slår ut alle dine."
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Øv på å skriva blindeskrift."
+msgstr "Øva på å spela dam."
 
 # Trur denne omsettinga er lettare å forstå enn originalen, men kan likevel klart forbetrast.
 #. Help manual
@@ -4274,7 +4261,6 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
 msgstr "Versjonen her følgjer dei internasjonale reglane."
@@ -4368,18 +4354,16 @@ msgstr "Spel sjakk (mot Tux)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Lær blindeskrift"
+msgstr "Lær om sjakk og spel nokre sjakkparti."
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Læra om vasskrinsløpet."
+msgstr "Læra å spela sjakk."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4550,10 +4534,9 @@ msgstr "Spel sluttspel i sjakk mot Tux."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Sluttspel i sjakk"
+msgstr "Spela ferdig eit sjakkparti."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4603,10 +4586,9 @@ msgstr "Set bileta i rett rekkjefølgje, slik at dei fortel ei historie."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Læra namna på meir sjeldne fargar."
+msgstr "Læra å forstå rekkjefølgja ting hender i ei forteljing."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4617,15 +4599,15 @@ msgstr "Kunna fortelja ei kort forteljing."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"Viss svaret var rett, skriv inn talet med siffer og komma. Trykk så igjen på "
-"«OK»-knappen for å sjekka talet."
+"Ordna bileta i ei rekkjefølgje som gjer at forteljinga gjev meining. Dra "
+"bileta frå sidestolpen og oppå prikkane. Trykk så på «OK»-knappen for å "
+"sjekka svaret ditt."
 
 # Har sjekka i README-fila at bileta av både køyretøya og luftfartøya er teikna av Doucet.
 #: activities/chronos/ActivityInfo.qml:29
@@ -4954,10 +4936,9 @@ msgstr "Trykk på bokstaven du høyrer."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Trykk på ein liten bokstav"
+msgstr "Kjenna att namna på dei små bokstavane."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5000,10 +4981,9 @@ msgstr "Trykk på ein stor bokstav"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Trykk på ein stor bokstav"
+msgstr "Kjenna att namna på dei store bokstavane."
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5041,10 +5021,9 @@ msgstr "Lag ei teikning ved å trykkja på dei merkte punkta."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Kunna dra element med musa eller trykkskjerm."
+msgstr "Øva på å bruka mus eller trykkskjerm for å trykkja på rette punkt."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -16983,9 +16962,9 @@ msgid ""
 "braille system. Click on the previous and next buttons to move between the "
 "story pages. At the end, arrange the sequence in chronological order."
 msgstr ""
-"Les om livet til Louis Braille og oppfinninga av blindeskrifta braille. "
-"Trykk på pilsymbola for å flytta mellom sidene. Til slutt skal du ordna "
-"hendingane i livet hans i rett rekkjefølgje."
+"Les om livet til Louis Braille og oppfinninga av punktskrifta braille. Trykk "
+"på pilsymbola for å flytta mellom sidene. Til slutt skal du ordna hendingane "
+"i livet hans i rett rekkjefølgje."
 
 #: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -17068,7 +17047,7 @@ msgid ""
 "He revised and extended braille to include mathematics, symbols, "
 "punctuations and music notations."
 msgstr ""
-"Han utvida seinare blindeskrifta til å dekkja matematikk, symbol, "
+"Han utvida seinare punktskrifta til å dekkja matematikk, symbol, "
 "teiknsetjing og musikk."
 
 #: activities/louis-braille/louis_braille_data.js:57
@@ -17086,8 +17065,8 @@ msgid ""
 "Braille got accepted as a world wide standard. Louis Braille proved that if "
 "you have motivation you can do incredible things."
 msgstr ""
-"Punktskrifta braille vart godteken som ein standard for blindeskrift i heile "
-"verda. Louis Braille viste oss at med motivasjon kan ein klara det utrulege."
+"Punktskrifta braille vart godteken som ein standard for heile verda. Louis "
+"Braille viste oss at med motivasjon kan ein klara det utrulege."
 
 #: activities/louis-braille/ReorderList.qml:164
 msgctxt "ReorderList|"
@@ -26474,7 +26453,7 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
-"Feilretting i blindeskrift-aktiviteten, der cellene startar med 1, ikkje 0"
+"Feilretting i punktskrift-aktiviteten, der cellene startar med 1, ikkje 0"
 
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"

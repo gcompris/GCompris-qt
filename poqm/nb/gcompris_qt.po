@@ -3,7 +3,6 @@
 # Kjartan Maraas <kmaraas@gnome.org>, 2000, 2001, 2002, 2003, 2004, 2005.
 # Klaus Ade Johnstad <klaus@skolelinux.no>, 2004, 2005, 2006, 2007.
 # Erlend Thune <post@erlendthune.no>, 2014, 2015.
-# Karl Ove Hufthammer <karl@huftis.org>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: nb\n"
@@ -14,7 +13,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 22.04.1\n"
+"X-Generator: Lokalize 24.05.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
