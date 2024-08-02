@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-07-14 12:20+0200\n"
+"PO-Revision-Date: 2024-08-01 15:56+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Environment: kde, gcompris\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: qtrich\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.05.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -2941,19 +2941,19 @@ msgstr "0 til 255 med"
 #: activities/braille_alphabets/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Discover the braille system"
-msgstr "Lær blindeskrift"
+msgstr "Lær punktskrift"
 
 #. Help title
 #: activities/braille_alphabets/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn and memorize the braille system."
-msgstr "Lær og hugs blindeskrift."
+msgstr "Lær og hugs punktskrift."
 
 #. Help goal
 #: activities/braille_alphabets/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Let children discover the braille system."
-msgstr "Utforska braille-systemet for blindeskrift."
+msgstr "Utforska braille-systemet for punktskrift."
 
 #. Help manual
 #: activities/braille_alphabets/ActivityInfo.qml:23
@@ -3031,7 +3031,7 @@ msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
-msgstr "Blindeskrift vert brukt av blinde personar for å lesa og skriva."
+msgstr "Punktskrift vert brukt av blinde og svaksynte for å lesa og skriva."
 
 #: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
@@ -3047,7 +3047,7 @@ msgstr ""
 #: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
-msgstr "Trykk på Tux når du er klar til å prøva å skriva blindeskrift."
+msgstr "Trykk på Tux når du er klar til å prøva å skriva punktskrift."
 
 #: activities/braille_alphabets/questions.js:12
 #: activities/braille_alphabets/questions.js:16
@@ -3109,19 +3109,19 @@ msgstr "Trykk på punkta i cella for å skriva teiknet %1."
 #: activities/braille_fun/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Braille fun"
-msgstr "Gøy med blindeskrift"
+msgstr "Gøy med punktskrift"
 
 #. Help title
 #: activities/braille_fun/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice braille letters."
-msgstr "Øv på å skriva blindeskrift."
+msgstr "Øv på å skriva punktskrift."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Braille alphabet."
-msgstr "Kjennskap til blindeskrift/punktskrift."
+msgstr "Kjennskap til punktskrift."
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:23
@@ -16791,7 +16791,7 @@ msgstr "Livshistoria til Louis Braille"
 msgctxt "ActivityInfo|"
 msgid "Review the major dates of the inventor of the braille system."
 msgstr ""
-"Lær om viktige hendingar i livet til oppfinnaren av blindeskrifta braille."
+"Lær om viktige hendingar i livet til oppfinnaren av punktskrifta braille."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:22
@@ -16801,9 +16801,9 @@ msgid ""
 "braille system. Click on the previous and next buttons to move between the "
 "story pages. At the end, arrange the sequence in chronological order."
 msgstr ""
-"Les om livet til Louis Braille og oppfinninga av blindeskrifta braille. "
-"Trykk på pilsymbola for å flytta mellom sidene. Til slutt skal du ordna "
-"hendingane i livet hans i rett rekkjefølgje."
+"Les om livet til Louis Braille og oppfinninga av punktskrifta braille. Trykk "
+"på pilsymbola for å flytta mellom sidene. Til slutt skal du ordna hendingane "
+"i livet hans i rett rekkjefølgje."
 
 #: activities/louis-braille/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -16886,7 +16886,7 @@ msgid ""
 "He revised and extended braille to include mathematics, symbols, "
 "punctuations and music notations."
 msgstr ""
-"Han utvida seinare blindeskrifta til å dekkja matematikk, symbol, "
+"Han utvida seinare punktskrifta til å dekkja matematikk, symbol, "
 "teiknsetjing og musikk."
 
 #: activities/louis-braille/louis_braille_data.js:57
@@ -16904,8 +16904,8 @@ msgid ""
 "Braille got accepted as a world wide standard. Louis Braille proved that if "
 "you have motivation you can do incredible things."
 msgstr ""
-"Punktskrifta braille vart godteken som ein standard for blindeskrift i heile "
-"verda. Louis Braille viste oss at med motivasjon kan ein klara det utrulege."
+"Punktskrifta braille vart godteken som ein standard for heile verda. Louis "
+"Braille viste oss at med motivasjon kan ein klara det utrulege."
 
 #: activities/louis-braille/ReorderList.qml:164
 msgctxt "ReorderList|"
@@ -26117,7 +26117,7 @@ msgstr ""
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
-"Feilretting i blindeskrift-aktiviteten, der cellene startar med 1, ikkje 0"
+"Feilretting i punktskrift-aktiviteten, der cellene startar med 1, ikkje 0"
 
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
