@@ -176,7 +176,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
-            onKeypress: {
+            onKeypress: (text) => {
                 if(text == backspace || text == newline)
                     Activity.playSound();
                 else
@@ -187,57 +187,29 @@ ActivityBase {
             readonly property string newline: "\u21B2"
 
             function populate() {
-                layout = [
-                [
-                    { label: "0" },
-                    { label: "1" },
-                    { label: "2" },
-                    { label: "3" },
-                    { label: "4" },
-                    { label: "5" },
-                    { label: "6" },
-                    { label: "7" },
-                    { label: "8" },
-                    { label: "9" }
-                ],
-                [
-                    { label: "A" },
-                    { label: "B" },
-                    { label: "C" },
-                    { label: "D" },
-                    { label: "E" },
-                    { label: "F" },
-                    { label: "G" },
-                    { label: "H" },
-                    { label: "I" }
-                ],
-                [
-                    { label: "J" },
-                    { label: "K" },
-                    { label: "L" },
-                    { label: "M" },
-                    { label: "N" },
-                    { label: "O" },
-                    { label: "P" },
-                    { label: "Q" },
-                    { label: "R" }
-                ],
-                [
-                    { label: "S" },
-                    { label: "T" },
-                    { label: "U" },
-                    { label: "V" },
-                    { label: "W" },
-                    { label: "X" },
-                    { label: "Y" },
-                    { label: "Z" },
-                    { label: " " },
-                    { label: backspace },
-                    { label: newline }
-                ]
-            ]
-            }
+                var tmplayout = [];
+                var row = 0;
+                var offset = 0;
+                var cols;
+                var allCharacters = keyboard.allCharacters.split("/")
+                var numberOfLetters = allCharacters.length
+                while(offset < numberOfLetters-1) {
+                    if(numberOfLetters <= 100) {
+                        cols = Math.ceil((numberOfLetters-offset) / (3 - row));
+                    }
+                    else {
+                        cols = background.horizontal ? (Math.ceil((numberOfLetters-offset) / (15 - row)))
+                        :(Math.ceil((numberOfLetters-offset) / (22 - row)))
+                    }
 
+                    tmplayout[row] = [];
+                    for (var j = 0; j < cols; j++)
+                    tmplayout[row][j] = { label: allCharacters[j+offset] };
+                    offset += j;
+                    row ++;
+                }
+                layout = tmplayout
+            }
         }
     }
 
