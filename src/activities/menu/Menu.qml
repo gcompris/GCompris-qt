@@ -1046,7 +1046,6 @@ ActivityBase {
         VirtualKeyboard {
             id: keyboard
             property bool isPopulated: false
-            readonly property var letter: ActivityInfoTree.characters
             width: parent.width
             visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
             anchors.bottom: parent.bottom
@@ -1070,6 +1069,16 @@ ActivityBase {
                 searchTextField.cursorPosition = cursorPosition;
             }
             function populate() {
+                var letter = [];
+                // Only use the translated version if it exists, else we default
+                // to retrieve all the characters from the activity descriptions
+                if(keyboard.allCharacters == "0/1/2/3/4/5/6/7/8/9/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z" && ApplicationInfo.getVoicesLocale(ApplicationSettings.locale) != "en_US") {
+                    letter = ActivityInfoTree.characters;
+                }
+                else {
+                    letter = keyboard.allCharacters.split("/");
+                }
+
                 var tmplayout = [];
                 var row = 0;
                 var offset = 0;
