@@ -146,6 +146,13 @@ class ApplicationInfo : public QObject
      */
     Q_PROPERTY(bool isBox2DInstalled READ isBox2DInstalled NOTIFY isBox2DInstalledChanged)
 
+    /**
+     * Whether the virtual keyboard is translated.
+     *
+     * If it is not translated, we browse all the activities texts to create it
+     */
+    Q_PROPERTY(bool isVirtualKeyboardTranslated READ isVirtualKeyboardTranslated NOTIFY isVirtualKeyboardTranslated)
+
 public:
     /**
      * Known host platforms.
@@ -285,6 +292,9 @@ public:
 
     bool isBox2DInstalled() const { return m_isBox2DInstalled; }
     void setBox2DInstalled(const QQmlEngine &engine);
+
+    bool isVirtualKeyboardTranslated() const { return m_isVirtualKeyboardTranslated; }
+    void setVirtualKeyboardTranslated(bool value) { m_isVirtualKeyboardTranslated = value; }
 
     /**
      * Returns the native screen orientation.
@@ -433,6 +443,7 @@ Q_SIGNALS:
     void fullscreenChanged();
     void useOpenGLChanged();
     void isBox2DInstalledChanged();
+    void isVirtualKeyboardTranslatedChanged();
 
 private:
     static ApplicationInfo *m_instance;
@@ -442,6 +453,7 @@ private:
     bool m_isMobile;
     bool m_useOpenGL;
     bool m_isBox2DInstalled;
+    bool m_isVirtualKeyboardTranslated;
     qreal m_ratio;
     qreal m_fontRatio;
 
