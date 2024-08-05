@@ -1072,11 +1072,12 @@ ActivityBase {
                 var letter = [];
                 // Only use the translated version if it exists, else we default
                 // to retrieve all the characters from the activity descriptions
-                if(keyboard.allCharacters == "0/1/2/3/4/5/6/7/8/9/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z" && ApplicationInfo.getVoicesLocale(ApplicationSettings.locale) != "en_US") {
-                    letter = ActivityInfoTree.characters;
+                if(ApplicationInfo.isVirtualKeyboardTranslated ||
+                   ApplicationInfo.getVoicesLocale(ApplicationSettings.locale) == "en_US") {
+                    letter = keyboard.allCharacters.split("/");
                 }
                 else {
-                    letter = keyboard.allCharacters.split("/");
+                    letter = ActivityInfoTree.characters;
                 }
 
                 var tmplayout = [];

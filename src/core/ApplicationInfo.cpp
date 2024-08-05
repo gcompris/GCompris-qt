@@ -376,6 +376,17 @@ QString ApplicationInfo::loadTranslation(const QString &requestedLocale)
         qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
     }
 #endif
+
+    // Look for virtual keyboard content translation to either use it directly
+    // in the search and baby_keyboard activity or to generate it from all the
+    // texts in activities if it is not translated.
+    if (m_translator.translate("VirtualKeyboard", "0/1/2/3/4/5/6/7/8/9/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z", "") != "") {
+        setVirtualKeyboardTranslated(true);
+    }
+    else {
+        setVirtualKeyboardTranslated(false);
+    }
+
     return locale;
 }
 
