@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-07-26 17:11+0300\n"
+"PO-Revision-Date: 2024-08-05 22:01+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -1376,9 +1376,6 @@ msgstr "Лагічныя асацыяцыі"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
 msgstr "Дапоўніць размяшчэнне фруктаў."
@@ -1410,9 +1407,6 @@ msgstr "Чатыры ў радок (супраць Тукса)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
 msgstr "Уладкаваць чатыры фішкі ў радок."
@@ -1420,12 +1414,9 @@ msgstr "Уладкаваць чатыры фішкі ў радок."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Удасканальваць маторную каардынацыю."
+msgstr "Удасканальваць навыкі прадбачання і стратэгіі."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1439,11 +1430,6 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
@@ -2189,12 +2175,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Дзіцячая клавіятура"
+msgstr "Мая першая клавіятура"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2306,12 +2289,9 @@ msgstr "Месца пстрычка на цэнтральнай секцыі а�
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Форма рэчаў"
+msgstr "Простыя галаваломкі"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
@@ -2321,12 +2301,9 @@ msgstr "Злучыце аб'екты з іх формамі."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to match an operation with its result."
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Перагортвайце карткі, каб суаднесці аперацыю з яе вынікам."
+msgstr "Навучыцеся сумяшчаць аб'екты з ягонай формай."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2345,12 +2322,9 @@ msgstr "Прайграваць гукі сімвалаў пры ўводзе"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Дзіцячы тэкставы рэдактар"
+msgstr "Мой першы тэкставы рэдактар"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
@@ -2360,12 +2334,9 @@ msgstr "Напішыце вашыя першыя тэксты."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Навучыцеся вылічваць пры дапамозе чатырох дзеянняў."
+msgstr "Навучыцеся пісаць тэкст, карыстаючыся тэкставым рэдактарам."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2504,9 +2475,6 @@ msgstr "Форма рэчаў"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
 msgstr "Перацягніце фігуры ў адпаведныя ім месцы."
@@ -3263,12 +3231,9 @@ msgstr "Практыка з літарамі Брайля."
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Практыка няроўнасці сум."
+msgstr "Практыкуйцеся пісаць у сістэме Брайля."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3300,18 +3265,13 @@ msgstr "Вырашыце калькудоку."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
-"Развівайце вашае лагічнае мысленне: сувязь паміж звестамі, дэдукцыя і "
-"прасторавае размяшчэнне падчас вылічэнняў."
+"Развівайце вашае лагічнае мысленне (сувязь паміж звесткамі, дэдукцыю) і "
+"прасторавае ўяўленне падчас вылічэнняў."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -4343,11 +4303,6 @@ msgstr "Гуляць у шашкі (з Туксам)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
@@ -4357,12 +4312,9 @@ msgstr "Захапіце ўсе шашкі суперніка перад тым 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Практыка з літарамі Брайля."
+msgstr "Практыкуйцеся гуляць у шашкі."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4406,12 +4358,9 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "Варыянт у GCompris - інтэрнацыянальныя шашкі."
+msgstr "Дадзеная версія шашак падпарадкоўваецца міжнародным правілам."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4507,12 +4456,9 @@ msgstr "Пазнаёмцеся і гуляйце ў шахматы."
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Даведайцеся пра цыркуляцыю вады."
+msgstr "Навучыцеся гуляць у шахматы."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4685,9 +4631,6 @@ msgstr "Шахматны эцюд"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
 msgstr "Вырашыце шахматны эцюд Тукса."
@@ -4749,12 +4692,9 @@ msgstr "Перацягніце малюнкі, каб стварыць гіст�
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Навучыцца адрозніваць адметныя колеры."
+msgstr "Навучыцца даведвацца храналогію гісторыі."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4765,19 +4705,15 @@ msgstr "Расказаць невялічкую гісторыю."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"У выпадку калі адказ слушны, увядзіце адпаведны вынік і пстрыкніце па кнопцы "
-"OK каб спраўдзіць ваш адказ."
+"Упарадкуйце выявы, каб узнавіць паслядоўную гісторыю. Перацягвайце выявы з "
+"бакавой панэлі на адпаведныя пункты, затым пстрыкніце кнопку OK каб "
+"праверыць ваш адказ."
 
 #: activities/chronos/ActivityInfo.qml:29
 #, fuzzy
