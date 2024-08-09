@@ -5212,7 +5212,7 @@ msgstr "რიცხვები 1-დან 9-მდე."
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
 msgid "3 decimal places between 0 and 999.999."
-msgstr ""
+msgstr "3 წილადი ადგილი შუალედიდან 0-999.999."
 
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
@@ -5242,17 +5242,17 @@ msgstr "რიცხვები 1-დან 1 მილიარდამდე
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9, same integer part."
-msgstr ""
+msgstr "1 წილადი ადგილი შუალედიდან 0-9.9, იგივე მთელი ნაწილი."
 
 #: activities/comparator/resource/8/Data.qml:14
 msgctxt "Data|"
 msgid "1 decimal place between 0 and 9.9."
-msgstr ""
+msgstr "1 წილადი ადგილი შუალედიდან 0-9.9."
 
 #: activities/comparator/resource/9/Data.qml:14
 msgctxt "Data|"
 msgid "2 decimal places between 0 and 99.99."
-msgstr ""
+msgstr "2 წილადი ადგილი შუალედიდან 0-99.99."
 
 #. Activity title
 #: activities/crane/ActivityInfo.qml:20
@@ -15529,6 +15529,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
 msgstr ""
+"გადააადგილეთ ცხოველები თავიანთ სახლებში თქვენი თარგუნას მარცხენა ამ მარჯვენა "
+"წკაპით."
 
 #. Help goal
 #: activities/left_right_click/ActivityInfo.qml:19
@@ -16944,7 +16946,7 @@ msgstr ""
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Multiplication and division memory game against Tux"
-msgstr "გამრავლების და გაყოფის დამახსოვრების თამაში ტუქსის წინააღმდეგ."
+msgstr "გამრავლების და გაყოფის დამახსოვრების თამაში ტუქსის წინააღმდეგ"
 
 #. Help title
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:17
@@ -20684,8 +20686,9 @@ msgstr ""
 #, qt-format
 msgctxt "Readingh|"
 msgid ""
-"<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA"
-"\">%1</font></b><br/><font color=\"#373737\">is displayed</font>"
+"<font color=\"#373737\">Check if the word<br/></font><b><font "
+"color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</"
+"font>"
 msgstr ""
 "<font color=\"#373737\">შეამოწმეთ, არის თუ არა სიტყვა<br/></font><b><font "
 "color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">ნაჩვენები</font>"
@@ -22053,6 +22056,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
+"აირჩიეთ ფერი და დახატეთ ოთხკუთხედები, როგორც გნებავთ, ნახატის შესაქმნელად."
 
 #: activities/simplepaint/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
