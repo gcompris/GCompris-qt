@@ -15,16 +15,18 @@
 namespace netconst {
     Q_NAMESPACE
 
-    static const int PING_DELAY = 500;      // Timeout between pings. Check connection (client side)
-    static const int WAIT_DELAY = 1000;     // Timeout without message or ping received, before closing socket (server side)
-    static const int PURGE_DELAY = 100;     // Timeout between messages, while purging message queue after reconnection (client side)
+    static const int PING_DELAY = 500; // Timeout between pings. Check connection (client side)
+    static const int WAIT_DELAY = 1000; // Timeout without message or ping received, before closing socket (server side)
+    static const int PURGE_DELAY = 100; // Timeout between messages, while purging message queue after reconnection (client side)
 
-    enum MessageType : int  {
+    enum MessageType : int {
         LOGIN_LIST,
         LOGIN_REPLY,
         LOGIN_ACCEPT,
         DISCONNECT,
         ACTIVITY_DATA,
+        DATASET_CREATION,
+        DATASET_REMOVE,
         PING,
         PONG
     };
