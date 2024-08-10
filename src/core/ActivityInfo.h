@@ -197,6 +197,11 @@ public:
      */
     void resetLevels();
 
+    /*
+     * Remove the dataset from the activity
+     */
+    void removeDataset(const QString &datasetName);
+
 Q_SIGNALS:
     void nameChanged();
     void sectionChanged();
