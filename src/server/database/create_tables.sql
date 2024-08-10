@@ -47,6 +47,17 @@ CREATE TABLE result_ (
 	FOREIGN KEY ( activity_id ) REFERENCES activity_( activity_id )
  );
 
+CREATE TABLE dataset_ (
+	dataset_id           INTEGER NOT NULL  PRIMARY KEY AUTOINCREMENT ,
+	activity_id          INTEGER NOT NULL    ,
+	dataset_objective    TEXT NOT NULL    ,
+	dataset_name         TEXT NOT NULL    ,
+	dataset_difficulty   INTEGER NOT NULL   ,
+	dataset_content      TEXT NOT NULL    ,
+	FOREIGN KEY ( activity_id ) REFERENCES activity_( activity_id ),
+	CONSTRAINT unq_dataset_name UNIQUE ( dataset_name, activity_id )
+ );
+
 CREATE INDEX idx_activity_user_id ON result_ ( user_id );
 
 CREATE INDEX idx_activity_user_name ON result_ ( activity_id );
