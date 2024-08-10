@@ -142,6 +142,7 @@ Rectangle {
     }
 
     function initialize() {
+        difficultiesModel = [];
         // dataset information
         chosenLevels = currentActivity.currentLevels.slice()
         difficultiesModel = []

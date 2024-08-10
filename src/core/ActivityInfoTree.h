@@ -16,6 +16,7 @@
 #include <QDir>
 #include <QtQml/qqmlregistration.h>
 #include <config.h>
+#include <QJsonObject>
 
 class ActivityInfoTree : public QObject
 {
@@ -60,6 +61,9 @@ public:
     }
 
     void initialize(QQmlEngine *engine);
+
+    void createDataset(const QJsonObject &dataset);
+    void removeDataset(const QJsonObject &dataset);
 
 protected:
     static ActivityInfoTree *m_instance;
