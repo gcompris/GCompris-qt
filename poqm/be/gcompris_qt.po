@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-08-05 22:01+0300\n"
+"PO-Revision-Date: 2024-08-09 09:43+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -4716,19 +4716,12 @@ msgstr ""
 "праверыць ваш адказ."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The transportation images are copyright "
-#| "Franck Doucet. Dates of Transportation are based on those found in &lt;"
-#| "https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Аўтарскія правы на фатаздымкі месяца належаць NASA. Малюнкі палётаў належаць "
-"Franck Doucet. Даты палётаў прыводзяцца са звестак &lt;https://www.wikipedia."
+"Даты транспартыровак прыводзяцца са звестак &lt;https://www.wikipedia."
 "org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
@@ -5128,12 +5121,11 @@ msgstr "Стварыце малюнак, клікаючы па падсвеча�
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Умею перасоўваць элементы, карыстаючыся мышкай ці сэнсарным экранам."
+msgstr ""
+"Практыкуйцеся ў карыстанні мышкі ці сэнсарнага экрану для дотыку для розных "
+"пунктаў."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -5165,18 +5157,12 @@ msgstr "Злавіце плаваючых рыбак, пакуль яны не �
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
-msgstr "Удасканальваць маторную каардынацыю, дакладна рухаючы мышкай."
+msgstr "Удасканальваць маторную каардынацыю, дакладна рухаючы рукой."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
 msgstr "Умею рухаць мышкай і рабіць пстрычкі па патрэбных месцах."
@@ -5337,12 +5323,10 @@ msgstr "Навучыцеся змешваць колеры фарбаў."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr "Змешвайце асноўныя колеры, каб атрымаць патрэбны колер."
+msgstr ""
+"Навучыцеся змешваць фарбы асноўных колераў каб атрымаць патрэбны колер."
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -5355,17 +5339,12 @@ msgstr ""
 "(субтрактыўнае змешванне)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Змяніце колер, перасоўваючы рэгулятары на ліхтарыках, ці пстрыкаючы па "
+"Змяніце колер, перасоўваючы рэгулятары на цюбіках з фарбай, ці пстрыкаючы па "
 "кнопках + і -. Затым пстрыкніце па кнопцы ОК, каб праверыць ваш адказ."
 
 #: activities/color_mix/ActivityInfo.qml:25
@@ -5464,12 +5443,10 @@ msgstr "Навучыцеся змешваць святло розных коле
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
-msgstr "Змешвайце асноўныя колеры, каб атрымаць патрэбны колер."
+msgstr ""
+"Навучыцеся змешваць святло асноўных колераў, каб атрымаць патрэбны колер."
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
@@ -5482,11 +5459,6 @@ msgstr ""
 "(аддытыўнае змешванне)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
@@ -5496,12 +5468,6 @@ msgstr ""
 "кнопках + і -. Затым пстрыкніце па кнопцы ОК, каб праверыць ваш адказ."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Mixing light colors is just the opposite of mixing paint colors. The more "
-#| "light you add, the lighter the resulting color becomes. Primary colors of "
-#| "light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -5526,12 +5492,9 @@ msgstr "Пстрыкніце па слушнаму колеру."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
-msgstr "Гэтае практыкаванне навучае адрозніваць розныя колеры."
+msgstr "Навучыцеся адрозніваць розныя колеры."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5859,15 +5822,11 @@ msgstr "Развівайце назіральнасць і навыкі прас
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
-msgstr "Вазьміце малюнкі збоку і перацягніце на кружкі ў слушным парадку."
+msgstr "Знайдзіце частку выявы і перацягніце яе на патрэбнае месца на выяве."
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -6011,9 +5970,6 @@ msgstr "Стварыце лічбавую лагічную схему і сім�
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
 msgstr "Стварыце лічбавую электрычную схему з сімуляцыяй у рэальным часе."
@@ -6229,14 +6185,6 @@ msgid "NOT A"
 msgstr "НЕ A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6245,8 +6193,7 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 "Лічбавыя схемы працуюць, выкарыстоўваючы толькі два станы: 0 і 1. Гэта "
-"дазваляе выконваць матэматычныя аперацыі, такія як складанне, адыманне... "
-"Гэта з'яўляецца асноваю кампутарнай тэхнікі. У рэальнасці за 0 лічыцца "
+"з'яўляецца асноваю кампутарнай тэхнікі. У рэальнасці за 0 лічыцца "
 "максімальна набліжаная да нуля велічыня напружання, а за 1 - велічыня "
 "напружання сілкавання схемы."
 
@@ -6323,14 +6270,6 @@ msgid "A XOR B"
 msgstr "A выключнае ЦІ B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6338,9 +6277,8 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Лічбавыя схемы працуюць, выкарыстоўваючы толькі два станы: 0 і 1. Гэта "
-"дазваляе выконваць матэматычныя аперацыі, такія як складанне, адыманне... "
-"Гэта з'яўляецца асноваю кампутарнай тэхнікі. У рэальнасці за 0 лічыцца "
+"Лічбавыя схемы працуюць, выкарыстоўваючы толькі два станы: 0 і 1.  Гэта "
+"з'яўляецца асноваю кампутарнай тэхнікі. У рэальнасці за 0 лічыцца "
 "максімальна набліжаная да нуля велічыня напружання, а за 1 - велічыня "
 "напружання сілкавання схемы."
 
@@ -6790,12 +6728,9 @@ msgstr "Злучыце кропкі, каб намаляваць літары."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
-msgstr "Навучанне маляваць літары."
+msgstr "Вясёлае навучанне маляваць літары."
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
@@ -6817,9 +6752,6 @@ msgstr "Злучыце кропкі, каб намаляваць лічбы ад
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
 msgstr "Вясёлае навучанне маляваць лічбы."
@@ -6844,12 +6776,9 @@ msgstr "Уладкуйце рэчы так, каб было найзручней
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr "Практыка на роўнасці адымання."
+msgstr "Практыка пералічэння малых колькасцяў."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6991,27 +6920,19 @@ msgstr "Коўзанне па экране"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the mouse or touch the screen to erase the area and discover the "
-#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the blocks and discover the "
 "hidden picture."
 msgstr ""
-"Рухайце мышкай, альбо пальцам па экране, каб ачысціць абшар і пабачце "
-"малюнак."
+"Рухайце мышкай, альбо пальцам па экране, каб ачысціць блокі і пабачыць "
+"схаваны малюнак."
 
 #. Help goal
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
 msgstr "Удасканальваць маторную каардынацыю."
@@ -7031,18 +6952,12 @@ msgstr "Двайны дотык ці пстрык"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
 msgstr ""
-"Двайнымі крананнямі ці пстрычкамі па кубіках ачысціце абшар і пабачце фонавы "
-"малюнак."
+"Двайнымі крананнямі ці пстрычкамі сцірайце блокі і пабачце схаваную выяву."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -7059,12 +6974,9 @@ msgstr "Пстрык ці дотык"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
-msgstr "Пстрычкамі ці дотыкамі ачысціце абшар і пабачце фон."
+msgstr "Пстрычкамі ці дотыкамі сцірайце блокі і пабачце схаваную выяву."
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -9267,12 +9179,9 @@ msgstr "Пакажыце сваякоў"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Выберыце ўсе словы, што змяшчаюць дадзеную літару."
+msgstr "Выберыце двух чалавек, якія маюць згаданыя стасункі."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
