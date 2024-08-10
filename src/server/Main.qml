@@ -97,6 +97,7 @@ Window {
         ActivitiesView {}
         ChartsView {}
         SettingsView {}
+        DatasetsView {}
         DevelopmentView {}
         clip: true
         focus: true

@@ -233,6 +233,44 @@ namespace controllers {
         sendNetLog(QString("Login list sended to %1 users").arg(count));
     }
 
+    void NetworkController::sendDatasetToUsers(const QJsonValue &dataset_content, const QStringList &selectedUsers)
+    {
+        qDebug() << "NetworkController::sendDatasetToUsers" << dataset_content << selectedUsers;
+        QJsonObject obj { { "aType", netconst::DATASET_CREATION } };
+        obj.insert("content", dataset_content);
+        int count = 0;
+
+        qDebug() << obj;
+        QList<QTcpSocket *> sockets = usersMap.keys();
+        for (int i = 0; i < sockets.size(); i++) {
+        // TODO retrieve the selected users and only send to them, not all connected
+            if (usersMap.value(sockets.at(i))->getUserId() != -1) { // Send to non connected users
+                sendJson(sockets.at(i), obj);
+                count++;
+            }
+        }
+        sendNetLog(QString("Dataset sent to %1 users").arg(count));
+    }
+
+    void NetworkController::removeDatasetToUsers(const QJsonValue &dataset_content, const QStringList &selectedUsers)
+    {
+        qDebug() << "NetworkController::removeDatasetToUsers" << dataset_content << selectedUsers;
+        QJsonObject obj { { "aType", netconst::DATASET_REMOVE } };
+        obj.insert("content", dataset_content);
+        int count = 0;
+
+        qDebug() << obj;
+        QList<QTcpSocket *> sockets = usersMap.keys();
+        for (int i = 0; i < sockets.size(); i++) {
+        // TODO retrieve the selected users and only send to them, not all connected
+            if (usersMap.value(sockets.at(i))->getUserId() != -1) { // Send to non connected users
+                sendJson(sockets.at(i), obj);
+                count++;
+            }
+        }
+        sendNetLog(QString("Dataset removed for %1 users").arg(count));
+    }
+
     void NetworkController::acceptPassword(const int userId, const QString &userName)
     {
 
