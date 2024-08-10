@@ -743,6 +743,8 @@ ActivityBase {
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
                     {
                         'menu': activity,
+                        'audioVoices': audioVoices,
+                        'loading': loading,
                         'activityInfo': ActivityInfoTree.currentActivity,
                         'levelFolder': currentLevels
                     })
