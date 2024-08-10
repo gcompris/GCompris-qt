@@ -23,6 +23,8 @@ Item {
     property alias groupModel: groupModel
     property alias activityModel: activityModel
     property alias allActivitiesModel: allActivitiesModel
+    property alias datasetModel: datasetModel
+    property alias filteredDatasetModel: filteredDatasetModel
     property bool trace: false
     property int groupFilterId: -1     // contains selected group id
 
@@ -35,6 +37,8 @@ Item {
     ListModel { id: filteredUserModel }     // For checkBoxes lists (multiselection)
     ListModel { id: activityModel }         // Contains current user or group activities
     ListModel { id: allActivitiesModel }
+    ListModel { id: datasetModel }
+    ListModel { id: filteredDatasetModel }     // For checkBoxes lists (multiselection)
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
 
 //// Groups functions
@@ -46,7 +50,7 @@ Item {
         if (trace) console.warn(groupModel.count, "Groups loaded")
     }
 
-    function createGroup(groupName, groupDescription) {     // string, strung
+    function createGroup(groupName, groupDescription) {     // string, string
         var groupId = databaseController.addGroup(groupName, groupDescription)
         if ( groupId !== -1) {
             groupModel.append({ "group_id": groupId,
@@ -451,6 +455,108 @@ Item {
         return json[0]["activity_id"]
     }
 
+    function getActivityName(activityId) {
+        var json = JSON.parse(databaseController.selectToJson(`SELECT activity_name FROM activity_ WHERE activity_id='${activityId}'`))
+        return json[0]["activity_name"]
+    }
+
+//// Datasets functions
+    function loadDatasets() {
+        modelFromRequest(datasetModel, "SELECT * FROM _dataset_activity"
+                         , { dataset_checked: false }
+                         )
+        if (trace) console.warn(groupModel.count, "Datasets loaded")
+    }
+
+    function filterDatasets(activityId, keepSelection) {   // bool - dataset filtering should keep selection now
+        if (trace) console.warn("Datasets filtered")
+        var selectedIds = []                // array of checked ids to be restored
+        if (keepSelection) {
+            for (var j = 0; j < datasetModel.count; j++) {
+                var userSel = datasetModel.get(j)
+                if (userSel.user_checked)
+                    selectedIds.push(userSel.user_id)
+            }
+        }
+        filteredDatasetModel.clear()
+        var empty = (activityId === -1)
+        for (var i = 0; i < datasetModel.count; i++) {
+            var dataset = JSON.parse(JSON.stringify(datasetModel.get(i)))     // Make a deep copy
+            if (keepSelection)
+                if (selectedIds.includes(dataset.dataset_id))                 // Check if it was already checked
+                    dataset.dataset_checked = true
+            if (empty) {
+                filteredDatasetModel.append(dataset)
+                continue
+            }
+            var datasetActivityId = dataset.activity_id
+            var show = datasetActivityId == activityId             // check if user belongs to selected groups
+            if (show) {
+                filteredDatasetModel.append(dataset)
+            }
+        }
+    }
+
+    function createDataset(datasetName, activityId, objective, difficulty, content) {     // string, string, int, string
+        var datasetId = databaseController.addDataset(datasetName, activityId, objective, difficulty, content)
+        if (datasetId !== -1) {
+            datasetModel.append({ "dataset_id": datasetId,
+                                "activity_id": activityId,
+                                "activity_name": getActivityName(activityId),
+                                "dataset_name": datasetName,
+                                "dataset_objective": objective,
+                                "dataset_difficulty": difficulty,
+                                "dataset_content": content,
+                                "dataset_checked": false
+                              })
+            if (trace) console.warn("Dataset created:", datasetName, objective)
+        }
+        return datasetId
+    }
+
+    function deleteDataset(datasetId) {       // int
+        var dataset
+        var index = -1;
+        // find the index in the model
+        for (var j = 0; j < datasetModel.count; j++) {
+            var dataSel = datasetModel.get(j)
+            if (dataSel.dataset_id == datasetId) {
+                dataset = dataSel
+                index = j
+                break;
+            }
+        }
+
+        if (databaseController.deleteDataset(dataset.dataset_id)) {
+            datasetModel.remove(index)
+            if (trace) console.warn("Dataset deleted:", dataset.dataset_id ," - ", dataset.dataset_name)
+            return true
+        }
+        return false
+    }
+    function getDataset(datasetId) {       // int
+        // find the index in the model
+        for (var j = 0; j < datasetModel.count; j++) {
+            var dataSel = datasetModel.get(j)
+            if (dataSel.dataset_id == datasetId) {
+                return dataSel
+            }
+        }
+    }
+
+    /* todo 
+        function updateDataset(idx, newDatasetName, datasetDescription) {   // int, string, string
+        if (databaseController.updateGroup(groupModel.get(idx).group_id, newGroupName, groupDescription) !== -1) {
+            groupModel.setProperty(idx, "group_name", newGroupName)
+            groupModel.setProperty(idx, "group_description", groupDescription)
+            reorderElement(groupModel, idx, "group_name")                  // Reorder if name has changed
+            if (trace) console.warn("Group updated:", newGroupName)
+            return true
+        }
+        return false
+    }*/
+
+
     function initialize() {
         if (trace) console.warn("Initialize Master component")
         loadGroups()
@@ -458,6 +564,7 @@ Item {
         filterUsers(filteredUserModel, false)
         loadAllActivities(activityModel)
         loadAllActivities(allActivitiesModel)
+        loadDatasets()
     }
 
     Component.onCompleted: {
