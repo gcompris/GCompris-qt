@@ -24,7 +24,7 @@
 
 #include "File.h"
 
-#define DB_VERSION 9
+#define DB_VERSION 10
 #define SCHEMA_SQL ":/gcompris/src/server/database/create_tables.sql"
 #define VIEWS_SQL ":/gcompris/src/server/database/create_views.sql"
 #define PATCH_SQL ":/gcompris/src/server/database/patch_%1.sql"
@@ -296,7 +296,7 @@ namespace controllers {
         if (groupAdded)
             groupId = query.lastInsertId().toInt();
         else
-            triggerDBError(query.lastError(), tr("Group <b>%1</b> allready exists.").arg(groupName));
+            triggerDBError(query.lastError(), tr("Group <b>%1</b> already exists.").arg(groupName));
         return groupId;
     }
 
@@ -362,7 +362,7 @@ namespace controllers {
         if (userAdded)
             userId = query.lastInsertId().toInt();
         else
-            triggerDBError(query.lastError(), tr("Pupil login <b>%1</b> allready exists or password is empty.").arg(userName));
+            triggerDBError(query.lastError(), tr("Pupil login <b>%1</b> already exists or password is empty.").arg(userName));
         return userId;
     }
 
@@ -521,6 +521,64 @@ namespace controllers {
         }
         return fetchedData;
     }
+
+    int DatabaseController::addDataset(const QString &datasetName, const int activityId, const QString &objective, const int difficulty, const QString &content)
+    {
+        int datasetId = -1;
+        QSqlQuery query(database);
+        // since the dataset does not exist, create the new dataset and add description and users to it
+        query.prepare("INSERT INTO dataset_ (dataset_name, activity_id, dataset_objective, dataset_difficulty, dataset_content) VALUES (:datasetName,:activityId,:objective,:difficulty,:content)");
+        query.bindValue(":datasetName", datasetName);
+        query.bindValue(":activityId", activityId);
+        query.bindValue(":objective", objective);
+        query.bindValue(":difficulty", difficulty);
+        query.bindValue(":content", content);
+
+        bool datasetAdded = query.exec();
+        if (datasetAdded)
+            datasetId = query.lastInsertId().toInt();
+        else
+            triggerDBError(query.lastError(), tr("Dataset <b>%1</b> already exists.").arg(datasetName));
+        return datasetId;
+    }
+
+    /*int DatabaseController::updateDataset(const int datasetId, const QString &newDatasetName, const QString &datasetDescription)
+    {
+        QString encryptedName(newDatasetName);
+        QString encryptedDesc(datasetDescription);
+        if (dbEncrypted) {
+            encryptedName = encryptText(newDatasetName);
+            encryptedDesc = encryptText(datasetDescription);
+        }
+        QSqlQuery query(database);
+        QString sqlStatement = "UPDATE dataset_ SET dataset_name=:newName, dataset_description=:desc WHERE dataset_id=:id";
+        if (!query.prepare(sqlStatement))
+            return false;
+        query.bindValue(":id", datasetId);
+        query.bindValue(":newName", encryptedName);
+        query.bindValue(":desc", encryptedDesc);
+
+        if (!query.exec()) {
+            triggerDBError(query.lastError(), tr("Dataset <b>%1</b> could not be updated to <b>%2</b>.").arg(datasetId).arg(newDatasetName));
+            return -1;
+        }
+        return datasetId;
+    }*/
+
+    bool DatabaseController::deleteDataset(const int datasetId)
+    {
+        bool datasetRemoved = false;
+        QSqlQuery query(database);
+        query.prepare("DELETE FROM dataset_ WHERE dataset_id=:id");
+        query.bindValue(":id", datasetId);
+        query.exec();
+        datasetRemoved = query.exec();
+        if (!datasetRemoved) {
+            triggerDBError(query.lastError(), tr("Dataset <b>%1</b> couldn't be deleted.").arg(datasetId));
+        }
+        return datasetRemoved;
+    }
+
     /*----------------------------------------------*/
     // Following functions has not be updated for error management because they are not used for now.
     bool DatabaseController::createRow(const QString &tableName, const QString &id, const QJsonObject &jsonObject) const
