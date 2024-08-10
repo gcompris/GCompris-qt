@@ -14,6 +14,7 @@
 #include <QQmlEngine>
 #include <QList>
 #include <QDir>
+#include <QJsonObject>
 
 class ActivityInfoTree : public QObject
 {
@@ -54,6 +55,9 @@ public:
         m_startingActivity = startingActivity;
         m_startingLevel = startingLevel;
     }
+
+    void createDataset(const QJsonObject &dataset);
+    void removeDataset(const QJsonObject &dataset);
 
 protected:
     static ActivityInfoTree *m_instance;
