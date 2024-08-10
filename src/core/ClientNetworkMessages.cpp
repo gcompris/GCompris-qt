@@ -12,9 +12,10 @@
 #include <QTcpSocket>
 #include <QUdpSocket>
 #include "ApplicationSettings.h"
+#include "ActivityInfoTree.h"
 #include "ClientNetworkMessages.h"
 
-ClientNetworkMessages::ClientNetworkMessages():
+ClientNetworkMessages::ClientNetworkMessages() :
     QObject(),
     tcpSocket(new QTcpSocket(this)),
     udpSocket(new QUdpSocket(this)),
@@ -26,10 +27,10 @@ ClientNetworkMessages::ClientNetworkMessages():
     userId = -1;
     pingTimer.setInterval(netconst::PING_DELAY);
 
-    if(!udpSocket->bind(5678, QUdpSocket::ShareAddress))
-         qDebug() <<"could not bind to UdpSocket";
-     else
-         qDebug() << "Connected to UdpSocket";
+    if (!udpSocket->bind(5678, QUdpSocket::ShareAddress))
+        qDebug() << "could not bind to UdpSocket";
+    else
+        qDebug() << "Connected to UdpSocket";
 
     tcpSocket->setSocketOption(QAbstractSocket::LowDelayOption, 1);
     tcpSocket->setSocketOption(QAbstractSocket::KeepAliveOption, 1);
@@ -37,6 +38,7 @@ ClientNetworkMessages::ClientNetworkMessages():
     connect(udpSocket, &QUdpSocket::readyRead, this, &ClientNetworkMessages::udpRead);
     connect(tcpSocket, &QTcpSocket::connected, this, &ClientNetworkMessages::connected);
     connect(tcpSocket, &QTcpSocket::disconnected, this, &ClientNetworkMessages::serverDisconnected);
+    connect(tcpSocket, &QAbstractSocket::errorOccurred, this, &ClientNetworkMessages::onErrorOccurred);
     connect(tcpSocket, &QAbstractSocket::readyRead, this, &ClientNetworkMessages::readFromSocket);
 
     connect(&pingTimer, SIGNAL(timeout()), this, SLOT(ping()));
@@ -46,24 +48,24 @@ ClientNetworkMessages::~ClientNetworkMessages()
 {
 }
 
-void ClientNetworkMessages::connectToServer(const QString& serverName)
+void ClientNetworkMessages::connectToServer(const QString &serverName)
 {
     ipServer = serverName;
     int port = 5678;
 
-    //if we are already connected to some server, disconnect from it first and then make a connection with new server
+    // if we are already connected to some server, disconnect from it first and then make a connection with new server
     if (_connected) { // and newServer != currentServer
         disconnectFromServer();
     }
-//    qWarning()<< "Try to connect to " << ipServer << ":" << port;
-    if(tcpSocket->state() != QAbstractSocket::ConnectedState) {
+    //    qWarning()<< "Try to connect to " << ipServer << ":" << port;
+    if (tcpSocket->state() != QAbstractSocket::ConnectedState) {
         tcpSocket->connectToHost(ipServer, port);
         status = netconst::NOT_LOGGED;
         Q_EMIT statusChanged();
         pingTimer.start();
     }
 
-    //ApplicationSettings::getInstance()->setCurrentServer(serverName);
+    // ApplicationSettings::getInstance()->setCurrentServer(serverName);
 }
 
 void ClientNetworkMessages::forgetUser()
@@ -72,11 +74,12 @@ void ClientNetworkMessages::forgetUser()
     Q_EMIT statusChanged();
     login = "";
     password = "";
-    //ApplicationSettings::getInstance()->setCurrentServer("");
+    // ApplicationSettings::getInstance()->setCurrentServer("");
 }
 
 void ClientNetworkMessages::disconnectFromServer()
 {
+    qDebug() << "disconnectFromServer";
     tcpSocket->disconnectFromHost();
     _connected = false;
     pingTimer.stop();
@@ -84,7 +87,7 @@ void ClientNetworkMessages::disconnectFromServer()
 
 void ClientNetworkMessages::connected()
 {
-    QTcpSocket* socket = qobject_cast<QTcpSocket*>(sender());
+    QTcpSocket *socket = qobject_cast<QTcpSocket *>(sender());
     _connected = true;
     if (login != "") {
         sendLoginMessage(login, password);
@@ -93,14 +96,24 @@ void ClientNetworkMessages::connected()
     Q_EMIT hostChanged();
 }
 
-void ClientNetworkMessages::serverDisconnected() {
+void ClientNetworkMessages::serverDisconnected()
+{
+    qDebug() << "serverDisconnected";
     _host = "";
     _connected = false;
-//    Q_EMIT connectionStatus();
+    //    Q_EMIT connectionStatus();
     Q_EMIT hostChanged();
 }
 
-void ClientNetworkMessages::udpRead() {
+void ClientNetworkMessages::onErrorOccurred(QAbstractSocket::SocketError socketError)
+{
+    qDebug() << "Error occurred:" << socketError << tcpSocket->errorString();
+    disconnectFromServer();
+    forgetUser();
+}
+
+void ClientNetworkMessages::udpRead()
+{
     QByteArray data;
     QHostAddress address;
     quint16 port;
@@ -113,38 +126,41 @@ void ClientNetworkMessages::udpRead() {
     if (obj.contains("deviceId")) {
         QString requestDeviceId = obj.value("deviceId").toString();
         if (ApplicationSettings::getInstance()->deviceId() == requestDeviceId) {
-            Q_EMIT requestConnection(requestDeviceId, address.toString());      // Run connectToServer if answer is yes
+            Q_EMIT requestConnection(requestDeviceId, address.toString()); // Run connectToServer if answer is yes
         }
     }
 }
 
-void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QString& newPassword)
+void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QString &newPassword)
 {
     login = newLogin;
     password = newPassword;
     QJsonObject obj { { "aType", netconst::LOGIN_REPLY } };
-    QJsonObject content { {"login", newLogin},{"password", newPassword} };
+    QJsonObject content { { "login", newLogin }, { "password", newPassword } };
     obj.insert("content", content);
     sendMessage(prepareMessage(obj));
     // store the username in config
-//    ApplicationSettings::getInstance()->setUserName(newLogin);      // Should be done after LOGIN_ACCEPT
+    //    ApplicationSettings::getInstance()->setUserName(newLogin);      // Should be done after LOGIN_ACCEPT
 }
 
-void ClientNetworkMessages::sendMessage(QByteArray message) {
+void ClientNetworkMessages::sendMessage(QByteArray message)
+{
     qint64 messageSize = message.size();
     tcpSocket->write(message.constData(), messageSize);
-//    qWarning() << message;
+    //    qWarning() << message;
 }
 
-void ClientNetworkMessages::sendNextMessage() {     // Send next message in queue
-    if(tcpSocket->state() != QAbstractSocket::ConnectedState)
+void ClientNetworkMessages::sendNextMessage()
+{ // Send next message in queue
+    if (tcpSocket->state() != QAbstractSocket::ConnectedState)
         return;
     sendMessage(messageQueue.takeFirst());
     _wait4pong = false;
 }
 
-QByteArray ClientNetworkMessages::prepareMessage(QJsonObject &obj) {
-    QJsonDocument  jsonDoc;
+QByteArray ClientNetworkMessages::prepareMessage(QJsonObject &obj)
+{
+    QJsonDocument jsonDoc;
     jsonDoc.setObject(obj);
     QByteArray message = jsonDoc.toJson(QJsonDocument::Compact);
     return message;
@@ -155,7 +171,7 @@ void ClientNetworkMessages::ping()
     if (status == netconst::CONNECTION_LOST) {
         _wait4pong = false;
         if (login != "")
-            connectToServer(ipServer);      // Try to reconnect
+            connectToServer(ipServer); // Try to reconnect
         else {
             disconnectFromServer();
         }
@@ -166,7 +182,7 @@ void ClientNetworkMessages::ping()
         Q_EMIT statusChanged();
         _wait4pong = false;
         pingTimer.setInterval(netconst::WAIT_DELAY);
-//        qWarning() << "Connection lost, client side";
+        //        qWarning() << "Connection lost, client side";
         return;
     }
     if ((!messageQueue.isEmpty()) && (status == netconst::CONNECTED)) {
@@ -175,11 +191,12 @@ void ClientNetworkMessages::ping()
             pingTimer.setInterval(netconst::PING_DELAY);
         else
             pingTimer.setInterval(netconst::PURGE_DELAY);
-    } else {
+    }
+    else {
         QJsonObject obj { { "aType", netconst::PING } };
         sendMessage(prepareMessage(obj));
         _wait4pong = true;
-//        qWarning() << "Ping";
+        //        qWarning() << "Ping";
     }
 }
 
@@ -192,7 +209,8 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
     messageQueue.append(prepareMessage(obj));
 }
 
-int ClientNetworkMessages::connectionStatus() {
+int ClientNetworkMessages::connectionStatus()
+{
     return static_cast<netconst::ConnectionStatus>(status);
 }
 
@@ -224,7 +242,8 @@ void ClientNetworkMessages::readFromSocket()
                     password = "";
                     Q_EMIT passwordRejected();
                     status = netconst::BAD_PASSWORD_INPUT;
-                } else {
+                }
+                else {
                     status = netconst::CONNECTED;
                 }
                 Q_EMIT statusChanged();
@@ -233,6 +252,12 @@ void ClientNetworkMessages::readFromSocket()
         case netconst::DISCONNECT:
             disconnectFromServer();
             forgetUser();
+            break;
+        case netconst::DATASET_CREATION:
+            ActivityInfoTree::getInstance()->createDataset(obj["content"].toObject());
+            break;
+        case netconst::DATASET_REMOVE:
+            ActivityInfoTree::getInstance()->removeDataset(obj["content"].toObject());
             break;
         case netconst::PONG:
             _wait4pong = false;
