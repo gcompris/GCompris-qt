@@ -21,6 +21,7 @@ Item {
     property alias datasView: datasView
     property alias activityDetails: activityDetails
     property alias chartsView: chartsView
+    property alias datasetsView: datasetsView
     property alias settingsView: settingsView
     property alias loginButton: loginButton
 
@@ -114,10 +115,16 @@ Item {
                 onNavigationButtonClicked: changeTo(5)
             }
             NavigationButton {
+                id: datasetsView
+                iconCharacter: "\uf15c"
+                description: qsTr("Datasets view")
+                onNavigationButtonClicked: changeTo(6)
+            }
+            NavigationButton {
                 id: datasView
                 iconCharacter: "\uf188"
                 description: qsTr("Development views (work in progress)")
-                onNavigationButtonClicked: changeTo(6)
+                onNavigationButtonClicked: changeTo(7)
             }
 
         }
