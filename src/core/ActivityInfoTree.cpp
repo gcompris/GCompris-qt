@@ -9,7 +9,10 @@
  */
 #include "ActivityInfoTree.h"
 #include "ApplicationInfo.h"
+#include "File.h"
 
+#include <QDir>
+#include <QFile>
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlComponent>
@@ -179,8 +182,8 @@ bool ActivityInfoTree::launchedActivityMissGivenDifficulty() const{
 void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
 {
     m_menuTree.removeIf([&](const ActivityInfo *activity) {
-                                 return activity->minimalDifficulty() < levelMin || activity->maximalDifficulty() > levelMax;
-                             });
+        return activity->minimalDifficulty() < levelMin || activity->maximalDifficulty() > levelMax;
+    });
 }
 
 void ActivityInfoTree::filterEnabledActivities(bool emitChanged)
@@ -347,6 +350,7 @@ ActivityInfoTree *ActivityInfoTree::create(QQmlEngine *engine, QJSEngine *script
     Q_UNUSED(scriptEngine)
 
     ActivityInfoTree *menuTree = getInstance();
+    menuTree->initialize(engine);
     return menuTree;
 }
 
@@ -426,6 +430,61 @@ QVariantList ActivityInfoTree::allCharacters()
     });
 
     return keyboardCharacters;
+}
+
+void ActivityInfoTree::createDataset(const QJsonObject &dataset)
+{
+    const QString datasetName(dataset["dataset_name"].toString());
+    const QString activityName(dataset["activity_name"].toString());
+    const QString datasetFolder(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + activityName + '/' + datasetName);
+    QDir datasetDir(datasetFolder);
+    if (!datasetDir.exists()) {
+        datasetDir.mkpath(datasetFolder);
+    }
+    const QString filename = datasetFolder + "/Data.qml";
+    QString qmlFile = QString("import GCompris 1.0\nData {\n    "
+                              "objective: \"%1\"\n    difficulty: %2\n    "
+                              "data: %3\n}\n")
+                          .arg(dataset["dataset_objective"].toString())
+                          .arg(dataset["dataset_difficulty"].toInt())
+                          .arg(dataset["dataset_content"].toString());
+
+    File datasetFile;
+    qDebug() << "Write" << qmlFile << "in" << filename;
+    datasetFile.write(qmlFile, filename);
+
+    const auto &constMenuTreeFull = m_menuTreeFull;
+    QQmlEngine *engine = qmlEngine(this);
+
+    for (const auto &activity: constMenuTreeFull) {
+        if (activity->name().split("/").at(0) == activityName) {
+            activity->fillDatasets(engine);
+            break;
+        }
+    }
+}
+
+void ActivityInfoTree::removeDataset(const QJsonObject &dataset)
+{
+    qDebug() << "ActivityInfoTree::removeDataset" << dataset;
+    const QString datasetName(dataset["dataset_name"].toString());
+    const QString activityName(dataset["activity_name"].toString());
+    const QString datasetFolder(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + activityName + '/' + datasetName);
+    QDir datasetDir(datasetFolder);
+    if (datasetDir.exists()) {
+        datasetDir.removeRecursively();
+    }
+
+    const auto &constMenuTreeFull = m_menuTreeFull;
+    QQmlEngine *engine = qmlEngine(this);
+
+    for (const auto &activity: constMenuTreeFull) {
+        if (activity->name().split("/").at(0) == activityName) {
+            activity->removeDataset(datasetName);
+            activity->fillDatasets(engine);
+            break;
+        }
+    }
 }
 
 #include "moc_ActivityInfoTree.cpp"
