@@ -19064,12 +19064,12 @@ msgstr ""
 "Tutaj umieszczaj swoje ulubione aktywności, poprzez naciśnięcie na słońce w "
 "górnym prawym narożniku aktywności."
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Wyszukaj danej aktywności"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Ustawienia aktywności"

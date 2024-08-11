@@ -19037,12 +19037,12 @@ msgstr ""
 "Metu viajn plej ŝatatajn agadojn ĉi tie klakante sur la suno supre dekstre "
 "de tiu agado."
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Serĉu specifajn agadojn"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Agado-Agordoj"

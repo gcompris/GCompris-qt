@@ -2412,11 +2412,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell"
 msgstr ""
+"ჰორიზონტალური კედელი: დაამატებს/წაშლის ჰორიზონტალურ კედელს უჯრედის ქვედა "
+"წიბოზე"
 
 #: activities/balancebox/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Vertical Wall: add/remove a vertical wall on the right edge of a cell"
 msgstr ""
+"ვერტიკალური კედელი: ვერტიკალური კედლის დამატება/წაშლა უჯრედის მარჯვენა წიბოზე"
 
 #: activities/balancebox/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -2558,6 +2561,8 @@ msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
 "a straight line."
 msgstr ""
+"დააჭირეთ მარცხენა და მარჯვენა ისრის ღილაკებს ერთდროულად, რომ ბურთმა სწორად "
+"იგოროს."
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
@@ -2573,12 +2578,14 @@ msgid ""
 "a straight line. On a touch screen you have to touch the two hands at the "
 "same time."
 msgstr ""
+"დააჭირეთ მარცხენა და მარჯვენა ისრის ღილაკებს ერთდროულად, რომ ბურთმა სწორად "
+"იგოროს. სენსორულ ეკრანზე შეგიძლიათ, ორი ხელით შეეხოთ."
 
 #: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
 msgid ""
 "Tap both hands at the same time, to make the ball go in a straight line."
-msgstr ""
+msgstr "დაატყაპუნეთ ორივე ხელით, რომ ბურთი წინ სწორ ხაზზე წავიდეს."
 
 #: activities/ballcatch/Ballcatch.qml:230
 msgctxt "Ballcatch|"
@@ -17772,12 +17779,12 @@ msgid ""
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "მითითებული აქტივობები ძებნა"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "აქტივობის მორგება"

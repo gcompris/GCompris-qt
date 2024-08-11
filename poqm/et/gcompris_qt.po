@@ -19493,12 +19493,12 @@ msgstr ""
 "Sea siia oma lemmiktegevused, valides iga tegevuse juures ülal paremal "
 "päikese."
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Konkreetse tegevuse otsing"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tegevuse seadistused"

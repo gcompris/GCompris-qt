@@ -18955,12 +18955,12 @@ msgid ""
 msgstr ""
 "ضع أنشطتك المفضلة هنا، اختر النشاط ثم انقر على الشمس في أعلى يمين هذا النشاط."
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "ابحث عن أنشطة محددة"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "إعدادات النشاط"

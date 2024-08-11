@@ -19770,12 +19770,12 @@ msgstr ""
 "Place ici tes activités favorites en cliquant sur le Soleil en haut à droite "
 "de chaque activité."
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Chercher des activités spécifiques"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuration des activités"

@@ -19167,12 +19167,12 @@ msgstr ""
 "Розташуйте тут ваші улюблені вправи. Для цього натисніть сонечко праворуч "
 "вгорі простору дій."
 
-#: activities/menu/Menu.qml:785
+#: activities/menu/Menu.qml:787
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Шукати певні вправи"
 
-#: activities/menu/Menu.qml:812
+#: activities/menu/Menu.qml:814
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Параметри вправи"
