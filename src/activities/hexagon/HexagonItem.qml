@@ -10,7 +10,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtQuick.Shapes 1.5
+import QtQuick.Shapes 1.12
 import "hexagon.js" as Activity
 import "../../core"
 import GCompris 1.0
