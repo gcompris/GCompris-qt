@@ -53,10 +53,12 @@ namespace controllers {
     {
         QTcpSocket *clientConnection = tcpServer->nextPendingConnection();
 
+        qDebug() << "NetworkController::newTcpConnection()" << clientConnection;
         connect(clientConnection, &QAbstractSocket::disconnected, this, &NetworkController::clientDisconnected);
         connect(clientConnection, &QAbstractSocket::readyRead, this, &NetworkController::slotReadyRead);
 
-        usersMap.insert(clientConnection, new UserData(clientConnection));
+        UserData *userData = new UserData(clientConnection);
+        usersMap.insert(clientConnection, userData);
         socketCount_++;
         Q_EMIT socketCountChanged();
     }
@@ -69,14 +71,17 @@ namespace controllers {
     void NetworkController::checkTimeout()
     {
         QList<QTcpSocket *> sockets = usersMap.keys();
+        qDebug() << "NetworkController::checkTimeout()" << sockets.size();
         for (int i = 0; i < sockets.size(); i++) { // Loop on sockets to check for connection lost
-            if (usersMap.value(sockets.at(i))->delaySinceTimeStamp() > netconst::WAIT_DELAY) { // Time out, remove socket
-                sendNetLog(QString("Connection lost with: %1").arg(usersMap.value(sockets.at(i))->getUserName()));
-                Q_EMIT statusChanged(usersMap.value(sockets.at(i))->getUserId(), netconst::CONNECTION_LOST);
+            QTcpSocket *socket = sockets.at(i);
+            qDebug() << usersMap.value(socket)->delaySinceTimeStamp() << netconst::WAIT_DELAY;
+            if (usersMap.value(socket)->delaySinceTimeStamp() > netconst::WAIT_DELAY) { // Time out, remove socket
+                sendNetLog(QString("Connection lost with: %1").arg(usersMap.value(socket)->getUserName()));
+                Q_EMIT statusChanged(usersMap.value(socket)->getUserId(), netconst::CONNECTION_LOST);
                 loggedCount_--;
                 Q_EMIT loggedCountChanged();
-                usersMap.remove(sockets.at(i));
-                sockets.at(i)->deleteLater();
+                usersMap.remove(socket);
+                socket->deleteLater();
                 socketCount_--;
                 Q_EMIT socketCountChanged();
             }
@@ -114,7 +119,7 @@ namespace controllers {
     {
         QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
         QByteArray message = clientConnection->readAll();
-        //    qWarning() << message;
+        qWarning() << "NetworkController::slotReadyRead()" << message;
         QJsonDocument jsonDoc = QJsonDocument::fromJson(message);
         QJsonObject obj = jsonDoc.object();
         if (obj.contains("aType")) {
@@ -165,6 +170,7 @@ namespace controllers {
     void NetworkController::clientDisconnected()
     {
         QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
+        qWarning() << "NetworkController::clientDisconnected()" << clientConnection;
         if (!clientConnection)
             return;
         qWarning() << "Removing" << clientConnection;
