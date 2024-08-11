@@ -177,7 +177,6 @@ function stop() {
 function initLevel() {
     items.errorRectangle.resetState();
     items.buttonsBlocked = false;
-    items.bar.level = items.currentLevel + 1;
     items.currentSubLevel = 0;
     createLevel();
     createRuler();

@@ -39,7 +39,6 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property int currentSubLevel: 0
             property int numberOfSubLevel: 0
-            property alias bar: bar
             property alias bonus: bonus
             property alias score: score
             property alias numPad: numPad
