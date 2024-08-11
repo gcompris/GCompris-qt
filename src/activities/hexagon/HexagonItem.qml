@@ -5,12 +5,12 @@
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
- *   Timothée Giet <animtim@gmail.com> (add mode without OpenGL)
+ *   Timothée Giet <animtim@gmail.com> (add mode without OpenGL, port to QtQuick.Shapes)
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtGraphicalEffects 1.0
+import QtQuick.Shapes 1.5
 import "hexagon.js" as Activity
 import "../../core"
 import GCompris 1.0
@@ -19,7 +19,7 @@ Item {
     id: hexagon
     property GCSfx audioEffects
     property ParticleSystemStar particles
-    property alias color: softCanvas.color
+    property alias color: cellColor.fillColor
     property bool hasStrawberry: false
     property double ix
     property double iy
@@ -42,37 +42,29 @@ Item {
         Behavior on opacity { PropertyAnimation { duration: 2000; easing.type: Easing.OutQuad } }
     }
 
-    Image {
-      id: border
-      anchors.fill: parent
-      source: Activity.url + "hexagon_border.svg"
-      Behavior on opacity { PropertyAnimation { duration: 500 } }
-    }
-
-    Image {
-      id: canvas
-      anchors.fill: parent
-      source: Activity.url + "hexagon.svg"
-      visible: false
-    }
-    
-    Rectangle {
-        id:softCanvas
-        width: parent.width * 0.8
-        height: width
-        radius: width * 0.5
-        anchors.centerIn: parent
-        opacity: strawberry.opacity == 0 ? 0.65 : 0
-        visible: ApplicationInfo.useOpenGL ? false : true
-    }
-
-    ColorOverlay {
-        id: colorOverlay
-        anchors.fill: canvas
-        source: canvas
-        onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
-        color: softCanvas.color
+    Shape {
+        id: cellFill
+        anchors.fill: border
         opacity: 0.65
+        onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
+        Behavior on opacity { PropertyAnimation { duration: 500 } }
+        ShapePath {
+            id: cellColor
+            strokeWidth: 0
+            startX: cellFill.width * 0.02; startY: cellFill.height * 0.25
+            PathLine { x: cellFill.width * 0.51 ; y: cellFill.height * 0.02 }
+            PathLine { x: cellFill.width * 0.98 ; y: cellFill.height * 0.22 }
+            PathLine { x: cellFill.width * 0.98 ; y: cellFill.height * 0.77 }
+            PathLine { x: cellFill.width * 0.51 ; y: cellFill.height * 0.97 }
+            PathLine { x: cellFill.width * 0.02 ; y: cellFill.height * 0.75 }
+            PathLine { x: cellFill.width * 0.02 ; y: cellFill.height * 0.25 }
+        }
+    }
+
+    Image {
+        id: border
+        anchors.fill: parent
+        source: Activity.url + "hexagon_border.svg"
         Behavior on opacity { PropertyAnimation { duration: 500 } }
     }
 
@@ -96,7 +88,7 @@ Item {
     property bool isTouched: false
     function touched() {
         if(hasStrawberry && !isTouched) {
-            colorOverlay.opacity = 0
+            cellFill.opacity = 0
             border.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svg"
