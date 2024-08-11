@@ -2459,7 +2459,7 @@ Files: src/activities/hexagon/hexagon.svg
 Copyright: 2017 Timothée Giet
 License: CC-BY-SA-4.0
 
-Files: src/activities/hexagon/resource/hexagon.svg src/activities/hexagon/resource/hexagon_border.svg
+Files: src/activities/hexagon/resource/hexagon_border.svg
 Copyright: 2000-2008 Bruno Coudoin and others
 License: GPL-3.0-only
 
