@@ -18940,12 +18940,12 @@ msgstr ""
 "Lak da obererezhioù karetañ amañ en ur zibab an heol war bep obererezh el "
 "lein a-zehoù."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Klask obererezhioù resis"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Dibaboù an obererezh"

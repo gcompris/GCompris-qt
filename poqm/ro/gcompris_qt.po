@@ -19093,12 +19093,12 @@ msgstr ""
 "Pune activitățile tale preferate aici, făcând clic pe soarele din partea "
 "dreapta-sus a acelei activități."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Caută activități specifice"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Reglajele activității"

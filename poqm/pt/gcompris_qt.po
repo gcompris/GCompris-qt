@@ -19970,12 +19970,12 @@ msgstr ""
 "Coloque aqui as suas actividades favoritas se seleccionar o Sol na parte "
 "superior direita de cada actividade."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Procurar por actividades específicas"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuração da Actividade"
