@@ -9,7 +9,6 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import QtGraphicalEffects 1.0
 import QtQuick.Controls 2.12
 
 Item {
@@ -84,17 +83,5 @@ Item {
             virtualKey.pressed(virtualKey);
             button.focus = false;
         }
-    }
-    
-    DropShadow {
-        anchors.fill: button
-        cached: false
-        horizontalOffset: 3
-        verticalOffset: 3
-        radius: 8.0
-        samples: 16
-        color: "#80000000"
-        source: button
-        scale: button.scale
     }
 }
