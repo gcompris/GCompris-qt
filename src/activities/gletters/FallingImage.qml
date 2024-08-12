@@ -10,7 +10,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 import GCompris 1.0
 
 import "../../core"
@@ -33,7 +33,7 @@ Item {
     onWon: {
         wonState = true
         particle.burst(30)
-        dropShadow.opacity = 0
+        dropShadow.shadowOpacity = 0
         fadeout.restart();
     }
 
@@ -90,16 +90,16 @@ Item {
         }
     }
 
-    DropShadow {
+    MultiEffect {
         id: dropShadow
         anchors.fill: image
-        cached: false
-        horizontalOffset: 1
-        verticalOffset: 1
-        radius: 3.0
-        samples: 16
-        color: "#422a2a2a"
         source: image
+        shadowEnabled: true
+        shadowBlur: 1.0
+        blurMax: 6
+        shadowHorizontalOffset: 1
+        shadowVerticalOffset: 1
+        shadowOpacity: 0.3
     }
 
     NumberAnimation {
