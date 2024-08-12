@@ -228,6 +228,7 @@ ActivityBase {
                 }
             } else if(currentTag === "search") {
                 // forward to the virtual keyboard the pressed keys
+                event.accepted = true;
                 if(event.key === Qt.Key_Backspace)
                     keyboard.keypress(keyboard.backspace);
                 else
