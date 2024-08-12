@@ -335,32 +335,28 @@ function initMap()
                                    x: x-items.wallSize/2,
                                    y: y-items.wallSize/2,
                                    width: items.cellSize + items.wallSize,
-                                   height: items.wallSize,
-                                   shadow: false});
+                                   height: items.wallSize});
             }
             if (currentCase & SOUTH) {
                 incubateObject(walls, wallComponent, {
                                    x: x-items.wallSize/2,
                                    y: y+items.cellSize-items.wallSize/2,
                                    width: items.cellSize+items.wallSize,
-                                   height: items.wallSize,
-                                   shadow: false});
+                                   height: items.wallSize});
             }
             if (currentCase & EAST) {
                 incubateObject(walls, wallComponent, {
                                    x: x+items.cellSize-items.wallSize/2,
                                    y: y-items.wallSize/2,
                                    width: items.wallSize,
-                                   height: items.cellSize+items.wallSize,
-                                   shadow: false});
+                                   height: items.cellSize+items.wallSize});
             }
             if (currentCase & WEST) {
                 incubateObject(walls, wallComponent, {
                                    x: x-items.wallSize/2,
                                    y: y-items.wallSize/2,
                                    width: items.wallSize,
-                                   height: items.cellSize+items.wallSize,
-                                   shadow: false});
+                                   height: items.cellSize+items.wallSize});
             }
 
             if (currentCase & START) {

@@ -9,7 +9,6 @@
  */
 import QtQuick 2.12
 import Box2D 2.0
-import Qt5Compat.GraphicalEffects 1.0
 
 
 Item {
@@ -34,13 +33,29 @@ Item {
     property alias restitution: itemFixture.restitution
     
     property alias shadow: itemShadow.visible
-    property alias shadowHorizontalOffset: itemShadow.horizontalOffset
-    property alias shadowVerticalOffset: itemShadow.verticalOffset
+    property alias shadowHorizontalOffset: itemShadow.anchors.horizontalCenterOffset
+    property alias shadowVerticalOffset: itemShadow.anchors.verticalCenterOffset
     // for goal in the editor, use 1.1 scale
     property alias imageScale: itemImage.scale
 
     signal beginContact(Item item, Item other)
     signal endContact(Item item, Item other)
+
+    // now only the ball has a shadow, so simplify it with a hardcoded image
+    Image {
+        id: itemShadow
+        visible: false
+        anchors.centerIn: itemImage
+        anchors.horizontalCenterOffset: 0
+        anchors.verticalCenterOffset: 0
+        width: itemImage.width
+        height: itemImage.height
+        sourceSize.width: itemImage.width
+        sourceSize.height:itemImage.height
+        source: "qrc:/gcompris/src/activities/balancebox/resource/hole.svg"
+        opacity: 0.5
+        scale: itemImage.scale
+    }
 
     Image {
         id: itemImage
@@ -51,18 +66,6 @@ Item {
         source: item.imageSource
         anchors.centerIn: parent
         scale: 1
-    }
-
-    DropShadow {
-        id: itemShadow
-        anchors.fill: itemImage
-        cached: true
-        visible: false  // note: dropping shadows for the walls is really expensive
-                        // in terms of CPU usage!
-        radius: 0
-        samples: 16
-        color: "#80000000"
-        source: itemImage
     }
 
     Body {
