@@ -12,7 +12,7 @@
 */
 import QtQuick 2.12
 import GCompris 1.0
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 
 import "../../core"
 import "categorization.js" as Activity
@@ -97,6 +97,29 @@ Image {
 
     ListModel {
         id: menuModel
+    }
+
+    Rectangle{
+        id: menuMask
+        visible: false
+        layer.enabled: true
+        anchors.fill: menuGrid
+        // Dynamic position of the gradient used for OpacityMask
+        // If the hidden bottom part of the grid is > to the maximum height of the gradient,
+        // we use the maximum height.
+        // Else we set the gradient start position proportionnally to the hidden bottom part,
+        // until it disappears.
+        // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
+        property real gradientStartValue:
+        ApplicationInfo.useOpenGL ?
+        (menuGrid.hiddenBottom > menuGrid.height * 0.08 ?
+        0.92 : 1 - (menuGrid.hiddenBottom / menuGrid.height)) :
+        1
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#FFFFFFFF" }
+            GradientStop { position: menuMask.gradientStartValue; color: "#FFFFFFFF" }
+            GradientStop { position: menuMask.gradientStartValue + 0.04; color:"#00FFFFFF"}
+        }
     }
 
     GridView {
@@ -220,35 +243,13 @@ Image {
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
 
-
-        Rectangle{
-            id: menuMask
-            visible: false
-            anchors.fill: menuGrid
-            // Dynamic position of the gradient used for OpacityMask
-            // If the hidden bottom part of the grid is > to the maximum height of the gradient,
-            // we use the maximum height.
-            // Else we set the gradient start position proportionnally to the hidden bottom part,
-            // until it disappears.
-            // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
-            property real gradientStartValue:
-                ApplicationInfo.useOpenGL ?
-                (menuGrid.hiddenBottom > menuGrid.height * 0.08 ?
-                    0.92 : 1 - (menuGrid.hiddenBottom / menuGrid.height)) :
-                    1
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                GradientStop { position: menuMask.gradientStartValue; color: "#FFFFFFFF" }
-                GradientStop { position: menuMask.gradientStartValue + 0.04; color:"#00FFFFFF"}
-            }
-        }
-
         layer.enabled: ApplicationInfo.useOpenGL
-        layer.effect: OpacityMask {
-            id: activitiesOpacity
-            source: menuGrid
+        layer.effect: MultiEffect {
+            id: menuOpacity
+            maskEnabled: true
             maskSource: menuMask
-            anchors.fill: menuGrid
+            maskThresholdMin: 0.5
+            maskSpreadAtMin: 1.0
         }
     } // grid view close
 }
