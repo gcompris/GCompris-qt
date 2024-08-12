@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 
 import "../../core"
 import "hangman.js" as Activity
@@ -181,7 +181,7 @@ ActivityBase {
         }
 
         Item {
-  		    id: imageframe
+            id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
                             background.width * 0.8,
                             hidden.y) - guessedText.height
@@ -192,8 +192,8 @@ ActivityBase {
             z: 10
             opacity: items.easyModeImage ? 1 : 0
             Image {
-		        id: wordImage
-		        smooth: true
+                id: wordImage
+                smooth: true
                 visible: false
 
                 anchors.fill: parent
@@ -226,7 +226,7 @@ ActivityBase {
             }
 
             Image {
-		        id: threshmask
+                id: threshmask
                 smooth: true
                 visible: false
                 width: 1.3*parent.width
@@ -234,14 +234,15 @@ ActivityBase {
                 source: dataSetUrl + "fog.png"
             }
 
-            ThresholdMask {
+            MultiEffect {
                 id: thresh
                 anchors.fill: wordImage
                 source: wordImage
+                maskEnabled: true
                 maskSource: threshmask
-                spread: 0.4
+                maskSpreadAtMin: 0.5
                 // remainingLife between 0 and 6 => threshold between 0 and 0.9
-                threshold: items.maskThreshold
+                maskThresholdMin: items.maskThreshold
             }
         }
 
