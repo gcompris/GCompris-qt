@@ -10,7 +10,7 @@
  */
 import QtQuick 2.12
 import GCompris 1.0
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 
 import "../../core"
 import "redraw.js" as Activity
@@ -186,15 +186,15 @@ ActivityBase {
                             styleColor: "black"
                             color: "white"
                         }
-                        DropShadow {
+                        MultiEffect {
                             anchors.fill: text1
-                            cached: false
-                            horizontalOffset: 1
-                            verticalOffset: 1
-                            radius: 8.0
-                            samples: 16
-                            color: "#80000000"
                             source: text1
+                            shadowEnabled: true
+                            shadowBlur: 1.0
+                            blurMax: 16
+                            shadowHorizontalOffset: 1
+                            shadowVerticalOffset: 1
+                            shadowOpacity: 0.5
                         }
                     }
                 }
@@ -333,15 +333,15 @@ ActivityBase {
                         styleColor: "black"
                         color: "white"
                     }
-                    DropShadow {
+                    MultiEffect {
                         anchors.fill: text2
-                        cached: false
-                        horizontalOffset: 1
-                        verticalOffset: 1
-                        radius: 8.0
-                        samples: 16
-                        color: "#80000000"
                         source: text2
+                        shadowEnabled: true
+                        shadowBlur: 1.0
+                        blurMax: 16
+                        shadowHorizontalOffset: 1
+                        shadowVerticalOffset: 1
+                        shadowOpacity: 0.5
                     }
                 }
             }
@@ -410,15 +410,15 @@ ActivityBase {
                         styleColor: "black"
                         color: "white"
                     }
-                    DropShadow {
+                    MultiEffect {
                         anchors.fill: text3
-                        cached: false
-                        horizontalOffset: 1
-                        verticalOffset: 1
-                        radius: 8.0
-                        samples: 16
-                        color: "#80000000"
                         source: text3
+                        shadowEnabled: true
+                        shadowBlur: 1.0
+                        blurMax: 16
+                        shadowHorizontalOffset: 1
+                        shadowVerticalOffset: 1
+                        shadowOpacity: 0.5
                     }
                 }
             }
