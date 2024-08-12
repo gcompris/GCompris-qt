@@ -226,6 +226,8 @@ ActivityBase {
                 event.accepted = true;
                 if(event.key === Qt.Key_Backspace)
                     keyboard.keypress(keyboard.backspace);
+                else if(event.key === Qt.Key_Escape)
+                    home();
                 else
                     keyboard.keypress(event.text);
             } else if(event.key === Qt.Key_Space && currentActiveGrid.currentItem) {
