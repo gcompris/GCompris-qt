@@ -5,7 +5,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 
 import "../../core"
 
@@ -25,14 +25,14 @@ Item {
         color: "black"
     }
 
-    DropShadow {
+    MultiEffect {
         anchors.fill: text
-        cached: true
-        horizontalOffset: 1
-        verticalOffset: 1
-        radius: 3.0
-        samples: 16
-        color: "#422a2a2a"
         source: text
+        shadowEnabled: true
+        shadowBlur: 1.0
+        blurMax: 6
+        shadowHorizontalOffset: 1
+        shadowVerticalOffset: 1
+        shadowOpacity: 0.25
     }
 }
