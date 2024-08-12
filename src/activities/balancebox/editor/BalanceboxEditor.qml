@@ -431,7 +431,6 @@ Item {
                             anchors.leftMargin: -props.wallSize / 2
                             sourceComponent: Wall {
                                 id: northWall
-                                shadow: false
                                 anchors.centerIn: parent
                                 z: 1
                             }
@@ -449,7 +448,6 @@ Item {
                             sourceComponent: Wall {
                                 id: eastWall
                                 anchors.centerIn: parent
-                                shadow: false
                                 z: 1
                             }
                         }
@@ -466,7 +464,6 @@ Item {
                             sourceComponent: Wall {
                                 id: southWall
                                 anchors.centerIn: parent
-                                shadow: false
                                 z: 1
                             }
                         }
@@ -483,7 +480,6 @@ Item {
                             sourceComponent: Wall {
                                 id: westWall
                                 anchors.centerIn: parent
-                                shadow: false
                                 z: 1
                             }
                         }
@@ -587,8 +583,6 @@ Item {
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -props.wallSize/2
-
-                shadow: false
             }
             // bottom:
             Wall {
@@ -601,8 +595,6 @@ Item {
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.bottom
                 anchors.topMargin: -props.wallSize/2
-
-                shadow: false
             }
             // top:
             Wall {
@@ -615,7 +607,6 @@ Item {
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -props.wallSize/2
-                shadow: false
             }
             // left:
             Wall {
@@ -628,7 +619,6 @@ Item {
                 anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -props.wallSize/2
-                shadow: false
             }
         }
     }

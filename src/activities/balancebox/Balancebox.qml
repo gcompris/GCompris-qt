@@ -215,10 +215,6 @@ ActivityBase {
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
-
-                shadow: false
-                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
-                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             // bottom:
             Wall {
@@ -231,10 +227,6 @@ ActivityBase {
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.bottom
                 anchors.topMargin: -items.wallSize/2
-
-                shadow: false
-                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
-                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             // top:
             Wall {
@@ -247,9 +239,6 @@ ActivityBase {
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
-                shadow: false
-                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
-                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             // left:
             Wall {
@@ -262,9 +251,6 @@ ActivityBase {
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
-                shadow: false
-                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
-                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
 
             BalanceItem {
