@@ -41,7 +41,6 @@ be installed (version 6.5.0 minimum)
     Qt Linguist Tools
 
     Qt Core
-    Qt5 Compatibility Module (Graphical Effects QML)
     Qt Gui
     Qt Multimedia
     Qt Multimedia QML Module
@@ -68,8 +67,7 @@ Installing dependencies on a Debian based systems can be done like this:
                      libqt6sensors6-dev libqt6svg6-dev \
                      linguist-qt6 qt6-l10n-tools \
                      qt6-declarative6-dev qml6-module-qtcharts \
-                     libqt6charts6-dev libqt6core5compat6-dev \
-                     qml6-module-qt5compat-graphicaleffects \
+                     libqt6charts6-dev \
                      qml6-module-qtcore qml6-module-qtquick-controls \
                      qml6-module-qtmultimedia qml6-module-qtqml \
                      qml6-module-qtqml-workerscript qml6-module-qtquick \

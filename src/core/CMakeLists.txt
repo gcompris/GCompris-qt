@@ -72,7 +72,7 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::Core5Compat ${QT_MAJOR}::QmlWorkerScript ${QT_MAJOR}::CorePrivate)
+set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::QmlWorkerScript ${QT_MAJOR}::CorePrivate)
 
 if(TARGET Qt6::QuickControls2BasicPrivate)
   set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickControls2Basic)
@@ -198,8 +198,6 @@ if(BUILD_STANDALONE)
   endif()
 
    set(_qml_plugins
-     Qt5Compat/GraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
-     Qt5Compat/GraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivateplugin
      QtQml/Models/${_lib_prefix}modelsplugin
      QtQml/WorkerScript/${_lib_prefix}workerscriptplugin
      QtQuick/Controls/Basic/impl/${_lib_prefix}qtquickcontrols2basicstyleimplplugin
