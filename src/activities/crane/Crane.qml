@@ -134,11 +134,11 @@ ActivityBase {
             property int startY;
             enabled: !items.buttonsBlocked
 
-            onPressed: {
+            onPressed: (mouse) => {
                 startX = mouse.x;
                 startY = mouse.y;
             }
-            onReleased: Activity.gesture(mouse.x - startX, mouse.y - startY)
+            onReleased: (mouse) => Activity.gesture(mouse.x - startX, mouse.y - startY)
         }
 
         Rectangle {
