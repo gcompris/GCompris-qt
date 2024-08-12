@@ -12,7 +12,7 @@
 
 import QtQuick 2.12
 import GCompris 1.0
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 import "../../core"
 import "click_on_letter.js" as Activity
 
@@ -81,15 +81,15 @@ Item {
             color: "white"
         }
 
-        DropShadow {
+        MultiEffect {
             anchors.fill: text
-            cached: false
-            horizontalOffset: 1
-            verticalOffset: 1
-            radius: 3
-            samples: 16
-            color: "#422a2a2a"
             source: text
+            shadowEnabled: true
+            shadowBlur: 1.0
+            blurMax: 6
+            shadowHorizontalOffset: 1
+            shadowVerticalOffset: 1
+            shadowOpacity: 0.25
         }
 
         MouseArea {
