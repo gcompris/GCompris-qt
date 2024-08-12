@@ -12,7 +12,6 @@
  */
 
 import QtQuick 2.12
-import Qt5Compat.GraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -176,10 +175,6 @@ ActivityBase {
             rows: items.rows
             z: 1
             anchors.centerIn: board
-            layer.enabled: ApplicationInfo.useOpenGL
-            layer.effect: OpacityMask {
-                maskSource: board
-            }
             Repeater {
                 id: gridRepeater
 
@@ -372,10 +367,6 @@ ActivityBase {
             z: 1
             opacity: showGrid1.opacity
             anchors.centerIn: modelBoard
-            layer.enabled: ApplicationInfo.useOpenGL
-            layer.effect: OpacityMask {
-                maskSource: modelBoard
-            }
             Repeater {
                 id: gridRepeater2
                 model: gridRepeater.model
