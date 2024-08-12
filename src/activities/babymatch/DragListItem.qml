@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 import GCompris 1.0
 import "babymatch.js" as Activity
 
@@ -88,6 +88,20 @@ Item {
             id: sourceImage
             visible: false
             source: Activity.imagesUrl + imgName
+        }
+
+        MultiEffect {
+            id: tileImageGlow
+            parent: tileImage.parent
+            source: tileImage
+            anchors.fill: tileImage
+            visible: view.showGlow && Activity.glowEnabled ? true : false
+            blurEnabled: true
+            blur: 1.0
+            blurMax: 16
+            colorization: 1.0
+            colorizationColor: tileImage.dropStatus === 0 ? "red" : "white"
+            brightness: 1.0
         }
 
         Image {
@@ -282,19 +296,6 @@ Item {
                 visible: view.showGlow && tileImage.dropStatus === 0
             }
 
-        }
-
-        Glow {
-            id: tileImageGlow
-            parent: tileImage.parent
-            anchors.fill: tileImage
-            radius: 8
-            samples: 17
-            color: view.showGlow && Activity.glowEnabled ?
-                       (tileImage.dropStatus === 0 ? "red" : "white") :
-                       'transparent'
-            source: tileImage
-            opacity: tileImage.opacity
         }
     }
 
