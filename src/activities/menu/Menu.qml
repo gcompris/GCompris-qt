@@ -10,7 +10,7 @@
 import QtQuick 2.12
 import "../../core"
 import GCompris 1.0
-import Qt5Compat.GraphicalEffects
+import QtQuick.Effects
 import "qrc:/gcompris/src/core/core.js" as Core
 
 // For TextField
@@ -448,6 +448,29 @@ ActivityBase {
             }
         }
 
+        Rectangle {
+            id: activitiesMask
+            visible: false
+            layer.enabled: true
+            anchors.fill: activitiesGrid
+            // Dynamic position of the gradient used for OpacityMask
+            // If the hidden bottom part of the grid is > to the maximum height of the gradient,
+            // we use the maximum height.
+            // Else we set the gradient start position proportionnally to the hidden bottom part,
+            // until it disappears.
+            // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
+            property real gradientStartValue:
+            ApplicationInfo.useOpenGL ?
+            (activitiesGrid.hiddenBottom > activitiesGrid.height * 0.08 ?
+            0.92 : 1 - (activitiesGrid.hiddenBottom / activitiesGrid.height)) :
+            1
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#FFFFFFFF" }
+                GradientStop { position: activitiesMask.gradientStartValue; color: "#FFFFFFFF" }
+                GradientStop { position: activitiesMask.gradientStartValue + 0.04; color: "#00FFFFFF"}
+            }
+        }
+
         GridView {
             id: activitiesGrid
             anchors {
@@ -640,34 +663,13 @@ ActivityBase {
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
-
-            Rectangle {
-                id: activitiesMask
-                visible: false
-                anchors.fill: activitiesGrid
-                // Dynamic position of the gradient used for OpacityMask
-                // If the hidden bottom part of the grid is > to the maximum height of the gradient,
-                // we use the maximum height.
-                // Else we set the gradient start position proportionnally to the hidden bottom part,
-                // until it disappears.
-                // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
-                property real gradientStartValue:
-                    ApplicationInfo.useOpenGL ?
-                    (activitiesGrid.hiddenBottom > activitiesGrid.height * 0.08 ?
-                        0.92 : 1 - (activitiesGrid.hiddenBottom / activitiesGrid.height)) :
-                        1
-                gradient: Gradient {
-                  GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                  GradientStop { position: activitiesMask.gradientStartValue; color: "#FFFFFFFF" }
-                  GradientStop { position: activitiesMask.gradientStartValue + 0.04; color: "#00FFFFFF"}
-                }
-            }
             layer.enabled: ApplicationInfo.useOpenGL
-            layer.effect: OpacityMask {
+            layer.effect: MultiEffect {
                 id: activitiesOpacity
-                source: activitiesGrid
+                maskEnabled: true
                 maskSource: activitiesMask
-                anchors.fill: activitiesGrid
+                maskThresholdMin: 0.5
+                maskSpreadAtMin: 1.0
             }
         }
 
