@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 
 import "../../core"
 import "fifteen.js" as Activity
@@ -127,15 +127,15 @@ ActivityBase {
                         styleColor: "#ff1c4788"
                     }
 
-                    DropShadow {
+                    MultiEffect {
                         anchors.fill: text
-                        cached: false
-                        horizontalOffset: 3
-                        verticalOffset: 3
-                        radius: 1
-                        samples: 16
-                        color: "#ff1c4788"
                         source: text
+                        shadowEnabled: true
+                        shadowBlur: 1.0
+                        blurMax: 2
+                        shadowHorizontalOffset: 3
+                        shadowVerticalOffset: 3
+                        shadowOpacity: 0.5
                     }
                 }
             }
