@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import Qt5Compat.GraphicalEffects 1.0
+import QtQuick.Effects
 
 import "../../core"
 import "scalesboard.js" as Activity
@@ -248,15 +248,15 @@ Rectangle {
                     verticalAlignment: Text.AlignVCenter
                 }
 
-                DropShadow {
+                MultiEffect {
                     anchors.fill: text
-                    cached: false
-                    horizontalOffset: 3
-                    verticalOffset: 3
-                    radius: 8.0
-                    samples: 16
-                    color: "#80000000"
                     source: text
+                    shadowEnabled: true
+                    shadowBlur: 1.0
+                    blurMax: 16
+                    shadowHorizontalOffset: 3
+                    shadowVerticalOffset: 3
+                    shadowOpacity: 0.5
                 }
             }
 
