@@ -16599,12 +16599,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "कोशिश: %1"
 
-#: activities/hangman/Hangman.qml:409
+#: activities/hangman/Hangman.qml:410
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "क्षमा करें, इस भाषा का अनुवाद अभी हमारे पास उपलब्द नहीं है"
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:411
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -16614,7 +16614,7 @@ msgstr ""
 "जीकॉमप्री को केडीई समुदाय द्वारा विकसित किया गया है, आप <a href=\"%2\">%2</a> पर "
 "एक अनुवाद टीम में शामिल होकर जीकॉमप्री का अनुवाद कर सकते हैं।"
 
-#: activities/hangman/Hangman.qml:412
+#: activities/hangman/Hangman.qml:413
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -21268,7 +21268,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "शब्दावलि तथा पढ़ाई"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:372
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21281,12 +21281,12 @@ msgid ""
 msgstr ""
 "अपनी पसंदीदा गतिविधियों को यहां रखने के लिए गतिविधि के ऊपर दाईं ओर सूरज का चयन करें।"
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्ट गतिविधियों को खोजें"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

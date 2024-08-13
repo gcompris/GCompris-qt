@@ -15074,12 +15074,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Attempted: %1"
 
-#: activities/hangman/Hangman.qml:409
+#: activities/hangman/Hangman.qml:410
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "We are sorry, we don't have yet a translation for your language."
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:411
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15089,7 +15089,7 @@ msgstr ""
 "GCompris is developed by the KDE community, you can translate GCompris by "
 "joining a translation team on <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:412
+#: activities/hangman/Hangman.qml:413
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19001,7 +19001,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulary"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:372
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19010,12 +19010,12 @@ msgstr ""
 "Put your favourite activities here by clicking on the sun at the top right "
 "of that activity."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Search specific activities"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Activity Settings"

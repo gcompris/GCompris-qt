@@ -15047,12 +15047,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Denenen harfler: %1"
 
-#: activities/hangman/Hangman.qml:409
+#: activities/hangman/Hangman.qml:410
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Özür dilerim, konuştuğun dil için bir çeviri henüz yok."
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:411
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15062,7 +15062,7 @@ msgstr ""
 "GCompris, KDE topluluğu tarafından geliştirilir, <a href=\"%2\">%2</a> "
 "üzerinden çeviri takımına katılarak GCompris’i çevirebilirsin"
 
-#: activities/hangman/Hangman.qml:412
+#: activities/hangman/Hangman.qml:413
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -18961,7 +18961,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Söz Dağarcığı"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:372
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18970,12 +18970,12 @@ msgstr ""
 "En sevdiğin etkinlikleri buraya koymak için o etkinliğin sağ üst köşesindeki "
 "güneşe tıkla."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Etkinlik ara"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Etkinlik Ayarları"

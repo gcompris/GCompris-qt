@@ -15368,12 +15368,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Klasket: %1"
 
-#: activities/hangman/Hangman.qml:409
+#: activities/hangman/Hangman.qml:410
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Digarez, n'eo ket bet troet c'hoazh evit da yezh."
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:411
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15383,7 +15383,7 @@ msgstr ""
 "Diorroet eo GCompris gant kumuniezh KDE. Troit GCompris en ur gemer perzh en "
 "ur strollad treiñ e <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:412
+#: activities/hangman/Hangman.qml:413
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19464,7 +19464,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Geriaoueg"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:372
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19473,12 +19473,12 @@ msgstr ""
 "Lak da obererezhioù karetañ amañ en ur zibab an heol war bep obererezh el "
 "lein a-zehoù."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Klask obererezhioù resis"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Dibaboù an obererezh"

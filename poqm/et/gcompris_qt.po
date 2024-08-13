@@ -15420,12 +15420,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Proovitud: %1"
 
-#: activities/hangman/Hangman.qml:409
+#: activities/hangman/Hangman.qml:410
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Vabandust, sinu keele jaoks ei ole veel tõlget olemas."
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:411
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15435,7 +15435,7 @@ msgstr ""
 "GComprist arendab KDE kogukond, seda saab tõlkida ka ise, kui liitud "
 "tõlkemeeskonnaga aadressil <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:412
+#: activities/hangman/Hangman.qml:413
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19484,7 +19484,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Sõnavara"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:372
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19493,12 +19493,12 @@ msgstr ""
 "Sea siia oma lemmiktegevused, valides iga tegevuse juures ülal paremal "
 "päikese."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Konkreetse tegevuse otsing"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tegevuse seadistused"

@@ -15826,12 +15826,12 @@ msgctxt "hangman|"
 msgid "Attempted: %1"
 msgstr "Број на обиди: %1"
 
-#: activities/hangman/Hangman.qml:409
+#: activities/hangman/Hangman.qml:410
 msgctxt "Hangman|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Жал ни е, сè уште немаме превод за вашиот јазик."
 
-#: activities/hangman/Hangman.qml:410
+#: activities/hangman/Hangman.qml:411
 #, qt-format
 msgctxt "Hangman|"
 msgid ""
@@ -15841,7 +15841,7 @@ msgstr ""
 "Жикомпри е развиен од KDE заедницата, можете да го преведете Жикомпри со тоа "
 "што ќе се приклучите на тим за превод на <a href=\"%2\">%2</a>"
 
-#: activities/hangman/Hangman.qml:412
+#: activities/hangman/Hangman.qml:413
 msgctxt "Hangman|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19949,7 +19949,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Вокабулар"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:372
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19958,12 +19958,12 @@ msgstr ""
 "Ставете ја вашата омилена активност овде со клик на сонцето десно горе од "
 "самата активност."
 
-#: activities/menu/Menu.qml:787
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Пребарај активност"
 
-#: activities/menu/Menu.qml:814
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Подесувања на активност"
