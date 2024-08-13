@@ -19024,7 +19024,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Söz ehtiyyatı"
 
-#: activities/menu/Menu.qml:374
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19033,12 +19033,12 @@ msgstr ""
 "Çalışmanı buraya əlavə etmək üçün onun yuxarı, sağındakı günəş işarəsinə "
 "vurun."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Çalışmaları axtarmaq"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Çalışma ayarları"

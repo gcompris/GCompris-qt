@@ -21568,7 +21568,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Faclan is leughadh"
 
-#: activities/menu/Menu.qml:374
+#: activities/menu/Menu.qml:377
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21582,12 +21582,12 @@ msgstr ""
 "Cuir na cleasan as fhearr leat an-seo le bhith a’ taghadh na grèine gu h-àrd "
 "sa chleas ud."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Lorg gnìomhachdan sònraichte"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

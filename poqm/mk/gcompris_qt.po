@@ -19449,7 +19449,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Вокабулар"
 
-#: activities/menu/Menu.qml:374
+#: activities/menu/Menu.qml:377
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19458,12 +19458,12 @@ msgstr ""
 "Ставете ја вашата омилена активност овде со клик на сонцето десно горе од "
 "самата активност."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Пребарај активност"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Подесувања на активност"
