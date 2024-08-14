@@ -2721,7 +2721,7 @@ msgstr ""
 #: activities/binary_bulb/binary_bulb.js:28
 msgctxt "binary_bulb|"
 msgid "In the activity 0 and 1 are simulated by bulbs, switched on or off."
-msgstr ""
+msgstr "აქტივობაში 0 და 1 სიმულირებულია ნათურებით, მათი ჩართვით ან გამორთვით."
 
 #: activities/binary_bulb/binary_bulb.js:32
 msgctxt "binary_bulb|"
@@ -2743,6 +2743,8 @@ msgstr ""
 msgctxt "binary_bulb|"
 msgid "To convert a decimal 5 to a binary value, 1 and 4 are added."
 msgstr ""
+"იმისათვის, რომ ათობითი 5 ორობით მნიშვნელობაში გადაიყვანოთ, 1 და 4 ერთმანეთს "
+"ემატება."
 
 #: activities/binary_bulb/binary_bulb.js:44
 msgctxt "binary_bulb|"
@@ -3040,7 +3042,7 @@ msgstr "კალენდარი"
 #: activities/calendar/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read the instructions and select the correct date on the calendar."
-msgstr ""
+msgstr "წაიკითხეთ ინსტრუქცია და აირჩიეთ სწორი თარიღი კალენდარში."
 
 #. Help goal
 #: activities/calendar/ActivityInfo.qml:20
@@ -3061,6 +3063,8 @@ msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
 msgstr ""
+"წაიკითხეთ ინსტრუქცია და აირჩიეთ სწორი თარიღი კალენდარში და შემდეგ "
+"გადაამოწმეთ თქვენი პასუხი ღილაკზე \"დიახ\" დაწკაპუნებით."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -4165,7 +4169,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
-msgstr ""
+msgstr "ჭადრაკის ძრავაა p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;."
 
 #: activities/chess/chess.js:117
 msgctxt "chess|"
@@ -4908,7 +4912,7 @@ msgstr "აღმოაჩინეთ სახატავი ფერებ�
 #: activities/color_mix/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr ""
+msgstr "ისწავლეთ ძირითადი ფერების შერევა მითითებულის მისაღებად."
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -5580,6 +5584,8 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "To deselect a terminal or the delete tool, click on any empty area."
 msgstr ""
+"ტერმინალზე ან წაშლის ხელსაწყოზე მონიშვნის მოსახსნელად ცარიელ ადგილას "
+"დააწკაპუნეთ."
 
 #: activities/digital_electricity/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
