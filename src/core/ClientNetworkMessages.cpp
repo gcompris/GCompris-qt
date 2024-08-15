@@ -41,7 +41,7 @@ ClientNetworkMessages::ClientNetworkMessages() :
     connect(tcpSocket, &QAbstractSocket::errorOccurred, this, &ClientNetworkMessages::onErrorOccurred);
     connect(tcpSocket, &QAbstractSocket::readyRead, this, &ClientNetworkMessages::readFromSocket);
 
-    connect(&pingTimer, SIGNAL(timeout()), this, SLOT(ping()));
+    connect(&pingTimer, &QTimer::timeout, this, &ClientNetworkMessages::ping);
 }
 
 ClientNetworkMessages::~ClientNetworkMessages()
