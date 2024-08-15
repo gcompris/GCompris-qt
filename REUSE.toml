@@ -4275,6 +4275,12 @@ SPDX-FileCopyrightText = "2020 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
+path = "src/activities/multiple_choice_questions/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
 path = "src/activities/note_names/note_names.svg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2015-2022 Timothée Giet"

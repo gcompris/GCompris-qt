@@ -139,6 +139,7 @@ money_back_cents
 money_cents
 morse_code
 mosaic
+multiple_choice_questions
 nine_men_morris
 nine_men_morris_2players
 note_names
