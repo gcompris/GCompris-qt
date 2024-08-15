@@ -1,0 +1,242 @@
+{
+  "levels": [
+    {
+      "objective": "Atrodi lietvārdus un darbības vārdus.",
+      "difficulty": "1",
+      "exercise": "simple",
+      "goal": "lie dar"
+    },
+        {
+      "objective": "Atrodi šīs vārdšķiras.",
+      "difficulty": "2",
+      "exercise": "advanced",
+      "goal": "lie dar ipa"
+    },
+    {
+      "objective": "Atrodi šīs vārdšķiras.",
+      "difficulty": "3",
+      "exercise": "difficult",
+      "goal": "lie dar aps ska vie"
+    },
+    {
+      "objective": "Atrodi šīs vārdšķiras.",
+      "difficulty": "4",
+      "exercise": "expert",
+      "goal": "lie dar ipa aps ska vie sai izs pri"
+    }
+  ],
+  "dataset" : {
+    "simple" : [
+      { "sentence": "Ģimene pusdieno."
+      , "answer": "lie dar"
+      },
+      { "sentence": "Kaķis dzer pienu."
+      , "answer": "lie dar lie"
+      },
+      { "sentence": "Suns spēlējas ar bumbiņu."
+      , "answer": "lie dar pri lie"
+      },
+      { "sentence": "Puika spēlē futbolu."
+      , "answer": "lie dar lie"
+      },
+      { "sentence": "Meitene šūpojas šūpolēs."
+      , "answer": "lie dar lie"
+      },
+      { "sentence": "Pūš vējš."
+      , "answer": "dar lie"
+      },
+      { "sentence": "Rudenī bērni iet uz skolu."
+      , "answer": "lie lie dar pri lie"
+      },
+      { "sentence": "Dārzā zied tulpes un narcises."
+      , "answer": "lie dar lie sai lie"
+      },
+      { "sentence": "Skolotāja lasa grāmatu."
+      , "answer": "lie dar lie"
+      },
+      { "sentence": "Pļavās un mežos zied puķes."
+      , "answer": "lie sai lie dar lie"
+      },
+      { "sentence": "Pingvīni ir putni."
+      , "answer": "lie dar lie"
+      },
+      { "sentence": "Kļavas lapas krīt no koka."
+      , "answer": "lie lie dar pri lie"
+      }
+    ],
+    
+    "advanced" : [
+      { "sentence": "Sarkanā puķe ir skaista."
+      , "answer": "ipa lie dar ipa"
+      },
+      { "sentence": "Kaķēnam ir balta ķepiņa."
+      , "answer": "lie dar ipa lie"
+      },
+      { "sentence": "Mammai patīk sarkanais spilvens."
+      , "answer": "lie dar ipa lie"
+      },
+      { "sentence": "Ieliec zīmuli brūnajā kastītē."
+      , "answer": "dar lie ipa lie"
+      },
+      { "sentence": "Puika brauc ar sarkanu velosipēdu."
+      , "answer": "lie dar pri ipa lie"
+      },
+      { "sentence": "Rūcošais vulkāns spļāva karstu lavu."
+      , "answer": "ipa lie dar ipa lie"
+      },
+      { "sentence": "Kaķēns mazgā balto ķepiņu."
+      , "answer": "lie dar ipa lie"
+      },
+      { "sentence": "Grāmatai ir lieli burti."
+      , "answer": "lie dar ipa lie"
+      },
+      { "sentence": "Pienenei ir dzelteni ziedi."
+      , "answer": "lie dar ipa lie"
+      },
+      { "sentence": "Gatavā zemene ir garšīga."
+      , "answer": "ipa lie dar ipa"
+      },
+      { "sentence": "Debesīs redzams lielais baltais mākonis."
+      , "answer": "lie dar ipa ipa lie"
+      },
+      { "sentence": "Visa mazā māja bija iegrimusi smaržīgos ziedos."
+      , "answer": "lie ipa lie dar dar ipa lie"
+      }
+    ],
+
+    "difficult" : [
+      { "sentence": "Reiz dzīvoja divi milži."
+      , "answer": "aps dar ska lie"
+      },
+      { "sentence": "Man ir daudz čaklu brāļu."
+      , "answer": "vie dar aps ipa lie"
+      },
+      { "sentence": "Es tikko redzēju zibeni."
+      , "answer": "vie aps dar lie"
+      },
+      { "sentence": "Šai lellei ir spilgti zili mati."
+      , "answer": "vie lie dar aps ipa lie"
+      },
+      { "sentence": "Jūrā ātri var palikt ļoti dziļš."
+      , "answer": "lie aps dar dar aps ipa"
+      },
+      { "sentence": "Tas pirmais vilciens lēnām atstāja staciju."
+      , "answer": "vie ska lie aps dar lie"
+      },
+      { "sentence": "Šajā mežā labi aug simtiem koku."
+      , "answer": "vie lie aps dar ska lie"
+      },
+      { "sentence": "Kurš no ātrajiem skrējējiem šoreiz būs pirmais?"
+      , "answer": "vie pri ipa lie aps dar ska"
+      },
+      { "sentence": "Viņi ļoti centās, bet neviens nepaspēja uz koncertu."
+      , "answer": "vie aps dar sai vie dar pri lie"
+      },
+      { "sentence": "Tas ceļotājs esot pēkšņi redzējis pingvīnu."
+      , "answer": "vie lie dar aps dar lie"
+      },
+      { "sentence": "Mamma man nopirka divus zīmuļus."
+      , "answer": "lie vie dar ska lie"
+      },
+      { "sentence": "Visur ir milti, bet šīs nav kaķīša dzirnaviņas."
+      , "answer": "aps dar lie sai vie dar lie lie"
+      }
+    ],
+
+    "expert" : [
+      { "sentence": "Dzin! Īsi nozvana skaļais durvju zvans."
+      , "answer": "izs aps dar ipa lie lie"
+      },
+      { "sentence": "Ai! Saldās konfektes ātri pazuda kādam mutē."
+      , "answer": "izs ipa lie aps dar vie lie"
+      },
+      { "sentence": "Hahaha! Šis tavs trešais joks ir ļoti smieklīgs."
+      , "answer": "izs vie vie ska lie dar aps ipa"
+      },
+      { "sentence": "Bērni rudens rītos iet uz skolu, lai cītīgi mācītos."
+      , "answer":  "lie lie lie dar pri lie sai aps dar"
+      },
+      { "sentence": "Ilzes mīļākais saldējums ir ar svaigo zemeņu garšu."
+      , "answer":  "lie ipa lie dar pri ipa lie lie"
+      },
+      { "sentence": "Jurītim ārkārtīgi patīk skatīties futbolu un basketbolu."
+      , "answer": "lie aps dar dar lie sai lie"
+      },
+      { "sentence": "Dārzā drīz nogatavosies āboli, bumbieri un plūmes."
+      , "answer": "lie aps dar lie lie sai lie"
+      },
+      { "sentence": "Mūsu dārzā aug piecas kuplas ābeles."
+      , "answer": "vie lie dar ska ipa lie"
+      },
+      { "sentence": "Pingvīni dzīvo Antarktīdā, bet polārlāči Arktikā."
+      , "answer": "lie dar lie sai lie lie"
+      },
+      { "sentence": "Man garšo sarkanie āboli, bet tev garšo bumbieri."
+      , "answer": "vie dar ipa lie sai vie dar lie"
+      },
+      { "sentence": "Divi pelēki zaķēni veikli cilpo pa kukurūzas lauku."
+      , "answer": "ska ipa lie aps dar pri lie lie"
+      },
+      { "sentence": "Mēs runci ratos iejūgsim, uz mēnestiņu nobrauksim."
+      , "answer": "vie lie lie dar pri lie dar"
+      },
+      { "sentence": "Mazā sirmā kumeliņā jāj pa ceļu pasaciņa."
+      , "answer": "ipa ipa lie dar pri lie lie"
+      },
+      { "sentence": "Citiem riekstiņš, pīrādziņš, mums, lūk, tur logā mēnestiņš."
+      , "answer": "vie lie lie vie izs vie lie lie"
+      },
+      { "sentence": "Pūķis bija dusmīgs, tomēr viņš bērniem palīdzēja."
+      , "answer": "lie dar ipa sai vie lie dar"
+      }
+    ]
+ 
+  },
+  "syntax" : [
+    {
+      "code": "lie",
+      "wordClass": "Lietvārds",
+      "image": "1.svg"
+    },
+    {
+      "code": "dar",
+      "wordClass": "Darbības vārds",
+      "image": "5.svg"
+    },
+    {
+      "code": "ipa",
+      "wordClass": "Īpašības vārds",
+      "image": "3.svg"
+    },
+    {
+      "code": "aps",
+      "wordClass": "Apstākļa vārds",
+      "image": "6.svg"
+    },
+    {
+      "code": "ska",
+      "wordClass": "Skaitļa vārds",
+      "image": "18.svg"
+    },
+    {
+      "code": "vie",
+      "wordClass": "Vietniekvārds",
+      "image": "4.svg"
+    },
+    {
+      "code": "sai",
+      "wordClass": "Saiklis",
+      "image": "7.svg"
+    },
+    {
+      "code": "pri",
+      "wordClass": "Prievārds",
+      "image": "8.svg"
+    },
+    {
+      "code": "izs",
+      "wordClass": "izsauksmes vārds",
+      "image": "9.svg"
+    }
+  ]
+}
