@@ -2327,6 +2327,10 @@ Copyright: 2024 Rolandas Jakštys
            2024 Bernardas Liukaitis
 License: CC-BY-SA-4.0
 
+Files: src/activities/grammar_analysis/resource/grammar_analysis-lv.json
+Copyright: 2024 Toms Trasūns
+License: CC0-1.0
+
 Files: src/activities/grammar_analysis/resource/grammar_analysis-ml.json
 Copyright: 2024 Divakaran Payyan Kandanchirakkal
            2024 Aiswarya Kaitheri Kandoth
