@@ -3516,6 +3516,10 @@ Files: src/activities/wordsgame/resource/default-lt.json
 Copyright: 2007 Bruno Coudoin
 License: CC0-1.0
 
+Files: src/activities/wordsgame/resource/default-lv.json
+Copyright: 2024 Toms Trasūns
+License: CC0-1.0
+
 Files: src/activities/wordsgame/resource/default-mk.json
 Copyright: 2019 Johnny Jazeix
 License: CC0-1.0
