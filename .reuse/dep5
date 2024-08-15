@@ -1062,6 +1062,10 @@ Files: src/activities/click_on_letter/resource/levels-lt.json
 Copyright: 2015 Mantas Kriaučiūnas
 License: CC0-1.0
 
+Files: src/activities/click_on_letter/resource/levels-lv.json
+Copyright: 2024 Toms Trasūns
+License: CC0-1.0
+
 Files: src/activities/click_on_letter/resource/levels-ml.json
 Copyright: 2020 Aiswarya Kaitheri Kandoth
 License: CC0-1.0

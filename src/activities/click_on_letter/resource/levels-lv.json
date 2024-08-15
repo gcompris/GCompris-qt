@@ -1,0 +1,14 @@
+[
+    { "level": 1, "questions": "a|e|i|o|u", "answers": "a|e|i|o|u" },
+    { "level": 2, "questions": "a|e|i|o|u|b", "answers": "a|e|i|o|u|b|c|s" },
+    { "level": 3, "questions": "a|e|i|o|u|b", "answers": "a|e|i|o|u|b|c|k|s|v|g|z" },
+    { "level": 4, "questions": "c|k|p|s|m|b|v|z", "answers": "c|k|p|s|m|b|v|z" },
+    { "level": 5, "questions": "b|f|g|l|m|n|k|t", "answers": "b|f|g|l|m|n|k|t" },
+    { "level": 6, "questions": "b|d|g|k|p|n|m|u", "answers": "b|d|g|k|p|n|m|u" },
+    { "level": 7, "questions": "i|l|t|h|j|v|a|e", "answers": "i|l|t|h|j|v|a|e" },
+    { "level": 8, "questions": "a|b|c|d|e|f|g|h", "answers": "a|b|c|d|e|f|g|h" },
+    { "level": 9, "questions": "i|j|k|l|m|n|o|p", "answers": "i|j|k|l|m|n|o|p" },
+    { "level": 10, "questions": "a|ā|e|ē|u|ū", "answers": "a|ā|e|ē|u|ū" },
+    { "level": 11, "questions": "a|ā|i|ī|č|ģ|š|s|ļ|ē", "answers": "a|ā|i|ī|č|ģ|š|s|ļ|ē" },
+    { "level": 12, "questions": "i|ī|h|n|ņ|z|ž|o|p|ā|r|k|ķ|l|ļ|s|š|a|d|b", "answers": "i|ī|h|n|ņ|z|ž|o|p|ā|r|k|ķ|l|ļ|s|š|a|d|b" }
+]
