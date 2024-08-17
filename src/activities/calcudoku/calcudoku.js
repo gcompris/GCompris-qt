@@ -30,6 +30,38 @@ var Direction = {
     RIGHT: 2,
     LEFT: 3
 }
+
+// Print calcudoku according to the format in https://www.calcudoku.org/ops/submit_puzzle
+// first result of the cage, then operator (+ if case is single element)
+// each case of the cage columns are letters and rows are numbers (starting at 1)
+function printCalcudoku() {
+    for(var cageId = 0 ; cageId < cages.length ; ++ cageId) {
+        var currentCage = cages[cageId];
+        var line = currentCage.result + ","
+        if(currentCage.indexes.length == 1) {
+            line = line + "+,"
+        }
+        else {
+            line = line + currentCage.operator + ","
+        }
+        var casesCount = items.rows*items.columns;
+        var rowCount = items.rows;
+
+        // Sorting is only useful to print the calcudoku, not in the real algorithm, so we onyl do it here, it does not affect the play
+        currentCage.indexes.sort((a,b) => (a-b));
+
+        for(var index = 0 ; index < currentCage.indexes.length ; ++ index) {
+            var id = currentCage.indexes[index];
+            var col = String.fromCharCode(Math.floor(id % rowCount) + 'a'.charCodeAt(0));
+            var row = Math.floor(id / rowCount) + 1;
+            currentCage.indexes[index];
+            line = line + col + row;
+        }
+        print(line);
+    }
+    print("-----")
+}
+
 function getVisualOperator(operator) {
     if(operator == "+") {
         return OperandsEnum.PLUS_SIGN;
@@ -293,6 +325,7 @@ function initLevel() {
     for(var v = 0 ; v < cagesCount ; ++ v) {
         var currentCage = initialCalcudoku.cages[v];
         cages.push(currentCage);
+
         for (var p = 0 ; p < currentCage.indexes.length ; ++ p) {
             cagesIndexes[currentCage.indexes[p]] = v;
         }
@@ -355,6 +388,8 @@ function initLevel() {
         items.availablePiecesModel.model.append({"imgName": (line+1)+".svg", "text": ""+(line+1)});
     }
     items.buttonsBlocked = false;
+
+    // printCalcudoku();
 }
 
 function reinitLevel() {
