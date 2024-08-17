@@ -2733,6 +2733,10 @@ Files: src/activities/lang/resource/content-lt.json
 Copyright: 2021 Rolandas Jakštys
 License: CC0-1.0
 
+Files: src/activities/lang/resource/content-lv.json
+Copyright: 2024 Toms Trasūns
+License: CC0-1.0
+
 Files: src/activities/lang/resource/content-mk.json
 Copyright: 2019 Sofre Garevski
            2021 Igor Risteski
