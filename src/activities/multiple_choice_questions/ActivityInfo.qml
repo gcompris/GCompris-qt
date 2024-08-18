@@ -24,5 +24,6 @@ ActivityInfo {
   credit: ""
   section: "fun"
   createdInVersion: 50000
-  levels: "1"
+  enabled: currentLevels.length != 0
+  levels: ""
 }
