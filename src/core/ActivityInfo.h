@@ -146,6 +146,12 @@ class ActivityInfo : public QObject
      */
     Q_PROPERTY(bool hasDataset READ hasDataset CONSTANT)
 
+    /**
+     * True if the activity can have datasets
+     * Needs to have levels declared in the ActivityInfo.qml file
+     */
+    Q_PROPERTY(bool acceptDataset READ acceptDataset CONSTANT)
+
 public:
     /// @cond INTERNAL_DOCS
     explicit ActivityInfo(QObject *parent = nullptr);
@@ -188,6 +194,7 @@ public:
     void setCurrentLevels(const QStringList &);
     bool hasConfig() const;
     bool hasDataset() const;
+    bool acceptDataset() const;
     QQmlListProperty<Dataset> datasets();
     void fillDatasets(QQmlEngine *engine);
     void enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax);
@@ -244,6 +251,7 @@ private:
     bool m_favorite;
     bool m_enabled;
     int m_createdInVersion;
+    bool m_acceptDataset;
     QStringList m_levels;
     QStringList m_currentLevels;
 
