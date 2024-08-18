@@ -25,7 +25,8 @@ ActivityInfo::ActivityInfo(QObject *parent) :
     m_maximalDifficulty(0),
     m_favorite(false),
     m_enabled(true),
-    m_createdInVersion(0)
+    m_createdInVersion(0),
+    m_acceptDataset(false)
 {
 }
 
@@ -206,6 +207,7 @@ QStringList ActivityInfo::levels() const
 
 void ActivityInfo::setLevels(const QStringList &levels)
 {
+    m_acceptDataset = !levels.empty();
     m_levels = levels;
     setCurrentLevels();
 
@@ -220,7 +222,8 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
         QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0], level);
 
         if(!QFileInfo::exists(url.sliced(3))) {
-            qDebug() << "INFO: did not find level" << url .sliced(3)<< "internally";
+            qDebug() << "INFO: did not find level" << url.sliced(3) << "internally";
+            removeDataset(level);
             continue;
         }
 
@@ -240,6 +243,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
     }
 
     // Load user created levels
+    bool atLeastOneLevelAdded = false;
     const QString userDatasetPath(QStandardPaths::writableLocation(QStandardPaths::AppDataLocation) + "/" + m_name.split('/')[0]);
     QDir userDatasetFolder(userDatasetPath);
     userDatasetFolder.setFilter(QDir::Dirs | QDir::NoSymLinks | QDir::NoDotAndDotDot);
@@ -257,11 +261,18 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
             m_currentLevels.push_back(datasetName);
             m_levels.push_back(datasetName);
             addDataset(datasetName, dataset);
+            atLeastOneLevelAdded = true;
         }
         else {
             qDebug() << "ERROR: failed to load " << m_name << " " << componentRoot.errors();
         }
     }
+
+    if(atLeastOneLevelAdded) {
+        Q_EMIT currentLevelsChanged();
+        Q_EMIT levelsChanged();
+    }
+
     if (m_levels.empty()) {
         setMinimalDifficulty(m_difficulty);
         setMaximalDifficulty(m_difficulty);
@@ -277,6 +288,7 @@ void ActivityInfo::removeDataset(const QString &datasetName)
     m_levels.removeOne(datasetName);
     delete m_datasets[datasetName];
     m_datasets.remove(datasetName);
+    Q_EMIT currentLevelsChanged();
 }
 
 QStringList ActivityInfo::currentLevels() const
@@ -372,6 +384,12 @@ bool ActivityInfo::hasConfig() const
 bool ActivityInfo::hasDataset() const
 {
     return !m_levels.empty();
+}
+
+bool ActivityInfo::acceptDataset() const
+{
+    // This differs from hasDataset as an activity may accept dataset (multiple choice question) but don't have by default
+    return m_acceptDataset;
 }
 
 void ActivityInfo::resetLevels()
