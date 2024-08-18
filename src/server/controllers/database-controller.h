@@ -56,6 +56,8 @@ namespace controllers {
 
         Q_INVOKABLE bool addDataToUser(const int userId, const QString &activityName, const QString &rawData, const bool success, const int duration);
 
+        Q_INVOKABLE int addActivity(const QString &activityName);
+
         QList<QVariant> getActivityData(const int userId, const QString &activityName /*, range of date*/);
 
         Q_INVOKABLE int addDataset(const QString &datasetName, const int activityId, const QString &objective = QString(), const int difficulty = 1, const QString &content = QString());
