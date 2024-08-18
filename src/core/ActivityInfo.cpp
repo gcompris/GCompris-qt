@@ -218,6 +218,12 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
     quint32 levelMax = ApplicationSettings::getInstance()->filterLevelMax();
     for (const QString &level: std::as_const(m_levels)) {
         QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0], level);
+
+        if(!QFileInfo::exists(url.sliced(3))) {
+            qDebug() << "INFO: did not find level" << url .sliced(3)<< "internally";
+            continue;
+        }
+
         QQmlComponent componentRoot(engine, QUrl(url));
         QObject *objectRoot = componentRoot.create();
         if (objectRoot != nullptr) {
