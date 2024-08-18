@@ -452,6 +452,9 @@ Item {
 
     function getActivityId(activityName) {
         var json = JSON.parse(databaseController.selectToJson(`SELECT activity_id FROM activity_ WHERE activity_name='${activityName}'`))
+        if(!json || !json[0]) {
+            return -1;
+        }
         return json[0]["activity_id"]
     }
 
@@ -556,12 +559,25 @@ Item {
         return false
     }*/
 
+    function storeActivitiesWithDatasetInDatabase() {
+        var activities = ActivityInfoTree.menuTreeFull
+        for (var key in Object.keys(activities)) {  // Convert numeric keys to short activity name keys
+            if(activities[key]['acceptDataset']) {
+                var activityName = activities[key]['name'].slice(0,activities[key]['name'].lastIndexOf('/'))
+                var activityId = getActivityId(activityName)
+                if(activityId == -1) {
+                    databaseController.addActivity(activityName)
+                }
+            }
+        }
+    }
 
     function initialize() {
         if (trace) console.warn("Initialize Master component")
         loadGroups()
         loadUsers()
         filterUsers(filteredUserModel, false)
+        storeActivitiesWithDatasetInDatabase()
         loadAllActivities(activityModel)
         loadAllActivities(allActivitiesModel)
         loadDatasets()

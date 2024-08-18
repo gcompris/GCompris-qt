@@ -473,14 +473,7 @@ namespace controllers {
             }
         }
         if (activityId == -1) { // add new activity
-            query.prepare("INSERT INTO activity_ (activity_name) VALUES(:activity)");
-            query.bindValue(":activity", name);
-            if (query.exec())
-                activityId = query.lastInsertId().toInt();
-            else {
-                triggerDBError(query.lastError(), tr("Error inserting activity: %1").arg(name));
-                return false;
-            }
+            activityId = addActivity(activityName);
         }
         //    qWarning() << "Activity:" << activityName << rawData;
         // add new result to database
@@ -495,6 +488,18 @@ namespace controllers {
             triggerDBError(query.lastError(), tr("Result could not be added for user <b>%1</b>").arg(userId));
         }
         return dataAdded;
+    }
+
+    int DatabaseController::addActivity(const QString &activityName) {
+        QSqlQuery query(database);
+        query.prepare("INSERT INTO activity_ (activity_name) VALUES(:activity)");
+        query.bindValue(":activity", activityName);
+        if (query.exec())
+            return query.lastInsertId().toInt();
+        else {
+            triggerDBError(query.lastError(), tr("Error inserting activity: %1").arg(activityName));
+            return -1;
+        }
     }
 
 #include <QJsonDocument>
