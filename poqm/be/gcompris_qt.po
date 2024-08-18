@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-08-09 09:43+0300\n"
+"PO-Revision-Date: 2024-08-17 11:40+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -9191,13 +9191,6 @@ msgstr "Чытанне, уменне рухаць і пстрыкаць мышк
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relations. Married couples "
-#| "are marked with a ring on the link.\n"
-#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -9207,7 +9200,7 @@ msgid ""
 msgstr ""
 "Паказанае сямейнае дрэва з невялічкімі тлумачэннямі.\n"
 "Кружкі звязаныя пры дапамозе ліній для адлюстравання роднасных сувязей. "
-"Сувязі шлюбных пар пазначаныя пярсцёнкам.\n"
+"Сувязі шлюбных пар пазначаныя пярсцёнкам на сувязі.\n"
 "Пстрыкніце па пары з сямейнага дрэва, якая адпавядае прыведзенай роднаснай "
 "сувязі."
 
@@ -9479,34 +9472,26 @@ msgstr "Стварыць дробы"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr "Выберыце адпаведную колькасць частак паводле інструкцыі."
+msgstr ""
+"Выберыце адпаведную колькасць частак для адлюстравання прыведзенага дзялення."
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "fractions_create|"
-#| msgid "Find the represented fraction."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "Знайдзіце паказаны дроб."
+msgstr "Навучыцеся адлюстроўваць дзяленне фігуры."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
-msgstr "Выберыце адпаведную колькасць частак паводле інструкцыі."
+msgstr ""
+"Адлюстроўваецца падзеленная на роўныя часткі фігура. Выберыце адпаведную "
+"колькасці частак лічбу, каб адлюстраваць дадзенае дзяленне."
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
