@@ -61,7 +61,7 @@ namespace controllers {
         QList<QVariant> getActivityData(const int userId, const QString &activityName /*, range of date*/);
 
         Q_INVOKABLE int addDataset(const QString &datasetName, const int activityId, const QString &objective = QString(), const int difficulty = 1, const QString &content = QString());
-        //Q_INVOKABLE int updateDataset(const int datasetId, const QString &datasetName,, const QString &objective = QString(), const int difficulty = 1, const QString &content = QString());
+        Q_INVOKABLE int updateDataset(const int datasetId, const QString &datasetName, const QString &objective = QString(), const int difficulty = 1, const QString &content = QString());
         Q_INVOKABLE bool deleteDataset(const int datasetId);
 
         /* ---------------------- */
