@@ -2815,7 +2815,7 @@ msgstr ""
 #: activities/braille_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: 1 to 6 select/deselect the corresponding dots"
-msgstr ""
+msgstr "ციფრები: 1-დან 6-მდე აირჩიეთ/მოხსენით მონიშვნა შესაბამის წერტილებს"
 
 #: activities/braille_alphabets/ActivityInfo.qml:27
 #: activities/braille_fun/ActivityInfo.qml:26
@@ -2838,6 +2838,8 @@ msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr ""
+"შეხედეთ ბრაილის სიმბოლოების ცხრილს და დააკვირდით როგორ ჰგვანან პირველი და "
+"მეორე ხაზები."
 
 #: activities/braille_alphabets/braille_alphabets.js:58
 msgctxt "braille_alphabets|"
@@ -2862,6 +2864,7 @@ msgid ""
 "The braille system is a method that is used by blind people to read and "
 "write."
 msgstr ""
+"ბრაილის სისტემა მეთოდია, რომელიც ბრმებს წერა/კითხვის საშუალებას აძლევს."
 
 #: activities/braille_alphabets/FirstScreen.qml:66
 msgctxt "FirstScreen|"
@@ -2930,7 +2933,7 @@ msgstr "დააწკაპუნეთ წერტილებზე ბრ�
 #, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the symbol %1."
-msgstr ""
+msgstr "დააწკაპუნეთ წერტილებზე ბრაილის უჯრედს ალაგზე, რომ შექმნათ ასო %1."
 
 #. Activity title
 #: activities/braille_fun/ActivityInfo.qml:15
