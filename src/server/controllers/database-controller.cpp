@@ -547,28 +547,24 @@ namespace controllers {
         return datasetId;
     }
 
-    /*int DatabaseController::updateDataset(const int datasetId, const QString &newDatasetName, const QString &datasetDescription)
+    int DatabaseController::updateDataset(const int datasetId, const QString &datasetName, const QString &objective, const int difficulty, const QString &content)
     {
-        QString encryptedName(newDatasetName);
-        QString encryptedDesc(datasetDescription);
-        if (dbEncrypted) {
-            encryptedName = encryptText(newDatasetName);
-            encryptedDesc = encryptText(datasetDescription);
-        }
         QSqlQuery query(database);
-        QString sqlStatement = "UPDATE dataset_ SET dataset_name=:newName, dataset_description=:desc WHERE dataset_id=:id";
+        QString sqlStatement = "UPDATE dataset_ SET dataset_name=:datasetName, dataset_objective=:objective, dataset_difficulty=:difficulty, dataset_content=:content WHERE dataset_id=:id";
         if (!query.prepare(sqlStatement))
             return false;
         query.bindValue(":id", datasetId);
-        query.bindValue(":newName", encryptedName);
-        query.bindValue(":desc", encryptedDesc);
+        query.bindValue(":datasetName", datasetName);
+        query.bindValue(":objective", objective);
+        query.bindValue(":difficulty", difficulty);
+        query.bindValue(":content", content);
 
         if (!query.exec()) {
-            triggerDBError(query.lastError(), tr("Dataset <b>%1</b> could not be updated to <b>%2</b>.").arg(datasetId).arg(newDatasetName));
+            triggerDBError(query.lastError(), tr("Dataset <b>%1</b> could not be updated to <b>%2</b>.").arg(datasetId).arg(datasetName));
             return -1;
         }
         return datasetId;
-    }*/
+    }
 
     bool DatabaseController::deleteDataset(const int datasetId)
     {
