@@ -38,9 +38,23 @@ Popup {
     modal: true
     closePolicy: Popup.CloseOnEscape
 
-    function openDatasetDialog(activity) {
+    function openDatasetDialog(activity, selectedDataset) {
         activityIndex = activity
-        addMode = true
+        if(selectedDataset === undefined) {
+            addMode = true
+            datasetName.text = ""
+            datasetObjective.text = ""
+            difficultyText.text = 1
+            datasetContent.text = ""
+        }
+        else {
+            addMode = false
+            dataset_Id = selectedDataset.dataset_id
+            datasetName.text = selectedDataset.dataset_name
+            datasetObjective.text = selectedDataset.dataset_objective
+            difficultyText.text = selectedDataset.dataset_difficulty
+            datasetContent.text = selectedDataset.dataset_content
+        }
         open()
     }
 
@@ -64,7 +78,7 @@ Popup {
             if (dataset_Id !== -1)
                 datasetDialog.close()
         } else {
-            if (Master.updateDataset(datasetModelIndex, dataset_Id, datasetName.text, datasetPassword, groupIdsList, groupNamesList))
+            if (Master.updateDataset(dataset_Id, datasetName.text, datasetObjective.text, difficulty, datasetContent.text))
                 datasetDialog.close();
         }
     }
@@ -73,12 +87,6 @@ Popup {
 
     onOpened: {
         datasetName.forceActiveFocus();
-    }
-
-    onAboutToShow: {
-        datasetName.text = "toto"
-        datasetObjective.text = "objective"
-        difficultyText.text = "1"
     }
 
     background: Rectangle {

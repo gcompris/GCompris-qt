@@ -537,6 +537,16 @@ Item {
         }
         return false
     }
+
+    function getDatasetModelId(datasetId) {       // int
+        // find the index in the model
+        for (var j = 0; j < datasetModel.count; j++) {
+            var dataSel = datasetModel.get(j)
+            if (dataSel.dataset_id == datasetId) {
+                return j
+            }
+        }
+    }
     function getDataset(datasetId) {       // int
         // find the index in the model
         for (var j = 0; j < datasetModel.count; j++) {
@@ -547,17 +557,18 @@ Item {
         }
     }
 
-    /* todo 
-        function updateDataset(idx, newDatasetName, datasetDescription) {   // int, string, string
-        if (databaseController.updateGroup(groupModel.get(idx).group_id, newGroupName, groupDescription) !== -1) {
-            groupModel.setProperty(idx, "group_name", newGroupName)
-            groupModel.setProperty(idx, "group_description", groupDescription)
-            reorderElement(groupModel, idx, "group_name")                  // Reorder if name has changed
-            if (trace) console.warn("Group updated:", newGroupName)
+    function updateDataset(datasetId, datasetName, objective, difficulty, content) {   // int, string, string, int, string
+        var datasetModelId = getDatasetModelId(datasetId)
+        if (databaseController.updateDataset(datasetId, datasetName, objective, difficulty, content) !== -1) {
+            datasetModel.setProperty(datasetModelId, "dataset_name", datasetName)
+            datasetModel.setProperty(datasetModelId, "dataset_objective", objective)
+            datasetModel.setProperty(datasetModelId, "dataset_difficulty", difficulty)
+            datasetModel.setProperty(datasetModelId, "dataset_content", content)
+            if (trace) console.warn("Dataset updated:", datasetName)
             return true
         }
         return false
-    }*/
+    }
 
     function storeActivitiesWithDatasetInDatabase() {
         var activities = ActivityInfoTree.menuTreeFull

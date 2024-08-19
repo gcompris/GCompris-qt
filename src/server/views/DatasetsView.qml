@@ -120,15 +120,16 @@ Item {
                     width: 200
                     text: "\uf234   " + qsTr("Create dataset")
                     enabled: datasetsView.selectedActivity != -1
-                    onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity)
+                    onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity, undefined)
                 }
 
-                /*ViewButton {
+                ViewButton {
                     Layout.alignment: Qt.AlignHCenter
                     width: 200
                     text: "\uf07c   " + qsTr("Update dataset")
-                    onClicked: addPupilsToGroupsDialog.open()
-                }*/
+                    enabled: datasetsView.selectedDataset != -1
+                    onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
+                }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
