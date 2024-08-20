@@ -37,13 +37,15 @@ Item {
         anchors.right: logo.right
         anchors.margins: 10
         spacing: 10
-        Button {
+        RoundButton {
             width: parent.width
+            radius: 8
             text: qsTr("Settings")
             onClicked: swipe.currentIndex = 0
         }
-        Button {
+        RoundButton {
             width: parent.width
+            radius: 8
             text: qsTr("Help")
             onClicked: swipe.currentIndex = 1
         }

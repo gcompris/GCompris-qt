@@ -28,6 +28,7 @@ Component {     // Need to pick up the activity's title in allActivities
             text : (Master.allActivities[activity_name] !== undefined) ? Master.allActivities[activity_name].title : ""
             checked: activity_checked
             ButtonGroup.group: childGroup
+            indicator.scale: Style.checkerScale
             onClicked: {
                 foldModel.setProperty(index, checkKey, checked)
                 selectionClicked( foldModel.get(index)[indexKey])
