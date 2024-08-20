@@ -52,6 +52,7 @@ Column {
             font.pixelSize: Style.defaultPixelSize
             font.bold: true
             text: title
+            indicator.scale: Style.checkerScale
             enabled: foldDownFilter.text === ""
             checkState: childGroup.checkState
             onClicked: {

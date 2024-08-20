@@ -43,6 +43,7 @@ Row {
             ButtonGroup.group: childGroup
             text: modelData
             checked: index === current
+            indicator.scale: Style.checkerScale
             font.pixelSize: Style.defaultPixelSize
             onClicked: radioCheckChanged(current = index)
         }
