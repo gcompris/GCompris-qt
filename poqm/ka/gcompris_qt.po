@@ -1427,6 +1427,10 @@ msgid ""
 "location. To know which letter you have to catch you can either remember it "
 "or check the bottom right corner."
 msgstr ""
+"დაიჭირეთ ანბანის ასოები. გამოიყენეთ კლავიატურის ისრის ღილაკები ვერტმფრენის "
+"გადასაადგილებლად. მაჩვენებელი მოწყობილობებით თქვენ უბრალოდ დააწკაპუნეთ ან "
+"დაატყაპუნეთ სამიზნე მდებარეობაზე. იმისათვის, რომ გაიგოთ, რომელი ასო უნდა "
+"დაიჭიროთ, ან დაიმახსოვრეთ ის, ან შეამოწმეთ ქვედა მარჯვენა კუთხე."
 
 #: activities/alphabet-sequence/ActivityInfo.qml:26
 #: activities/numbers-odd-even/ActivityInfo.qml:25
@@ -1494,6 +1498,8 @@ msgid ""
 "Drag electrical components from the selector and drop them in the working "
 "area. In the working area, you can move the components by dragging them."
 msgstr ""
+"გადაათრიეთ ელექტრული კომპონენტები ამრჩევიდან და დაყარეთ ისინი სამუშაო "
+"ალაგზე. სამუშაო ალაგზე კომპონენტების გადაადგილება მათი გადათრევით შეგიძლიათ."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1501,6 +1507,8 @@ msgid ""
 "To delete a component or wire, select the deletion tool on top of the "
 "component selector, and select the component or wire."
 msgstr ""
+"კომპონენტის ან მავთულის წასაშლელად მონიშნეთ წაშლის ხელსაწყო კომპონენტების "
+"ამრჩევის ზემოდან და აირჩიეთ კომპონენტი ან მავთული."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1508,6 +1516,8 @@ msgid ""
 "You can click on the component and then on the rotate buttons to rotate it "
 "or on the info button to get information about it."
 msgstr ""
+"შეგიძლიათ, დააწკაპუნოთ კომპონენტზე და შემდეგ კი შებრუნების ღილაკებზე, რომ "
+"შემოაბრუნოთ ის ან ინფორმაციის ღილაკზე, რომ მის შესახებ ინფორმაცია მიიღოთ."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1522,6 +1532,8 @@ msgid ""
 "To connect two terminals, click on the first terminal, then on the second "
 "terminal. To deselect a terminal, click on any empty area."
 msgstr ""
+"ორი ტერმინალის მისაერთებლად ჯერ დააწკაპუნეთ პირველ ტერმინალზე, შემდეგ კი "
+"მეორეზე. ტერმინალზე მონიშვნის მოსახსნელად ცარიელ ადგილას დააწკაპუნეთ."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1529,6 +1541,9 @@ msgid ""
 "For repairing a broken bulb or LED, click on it after disconnecting it from "
 "the circuit. The simulation is updated in real time by any user action."
 msgstr ""
+"დამწვარი ნათურის ან LED-ის გამოსაცვლელად დააწკაპუნეთ მასზე მას შემდეგ, რაც "
+"მას წრედიდან გათიშავთ. სიმულაციის განახლება რეალურ დროში, მომხმარებლის "
+"ნებისმიერი ქმედებისას ხდება."
 
 #: activities/analog_electricity/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -1889,7 +1904,7 @@ msgstr ""
 msgctxt "TutorialDataset|"
 msgid ""
 "Light the bulb so that the bulb glows with 5V using the provided components."
-msgstr ""
+msgstr "აანთეთ ნათურა ისე, რომ გაანათოს 5ვოლტით, მოწოდებული კომპონენტებით."
 
 #: activities/analog_electricity/TutorialDataset.qml:209
 msgctxt "TutorialDataset|"
@@ -2275,7 +2290,7 @@ msgstr "ისწავლეთ გეომეტრიული ფიგუ�
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching spot."
-msgstr ""
+msgstr "ააწყვეთ პაზლი თითოეული ნაწილის გადათრევით თავის ადგილას."
 
 #: activities/babyshapes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -2877,7 +2892,7 @@ msgstr ""
 #: activities/braille_alphabets/FirstScreen.qml:88
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
-msgstr ""
+msgstr "როცა მზად იქნები, დამაწკაპუნე და სცადე, ბრაილის სიმბოლოები გაიმეორო."
 
 #: activities/braille_alphabets/questions.js:12
 #: activities/braille_alphabets/questions.js:16
@@ -2991,7 +3006,7 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr ""
+msgstr "პაზლის დასრულება მოთმინებისა და არითმეტიკის უნარები სჭირდება."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3449,6 +3464,8 @@ msgstr "შეგიძლიათ გადაათრიოთ ელემ�
 msgctxt "ActivityInfo|"
 msgid "Review the instructions and then drag and drop the items as specified."
 msgstr ""
+"გადაიკითხეთ ინსტრუქციები და გადაათრიეთ და დაყარეთ ელემენტები, როგორც ამას "
+"გეტყვიან."
 
 #: activities/categorization/Categorization.qml:157
 msgctxt "Categorization|"
@@ -4052,7 +4069,7 @@ msgstr ""
 #: activities/checkers_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr ""
+msgstr "შაშის ეს ვერსია შაშის საერთაშორისო წესებს იცავს."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4776,13 +4793,15 @@ msgstr "ავარჯიშეთ მოტორული კოორდი�
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
 msgstr ""
+"შეგიძლიათ გადააადგილოთ თაგუნა ან გამოიყენოთ სენსორი ეკრანი და დააწკაპუნოთ "
+"სწორ ადგილას."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch all the moving fish by clicking or touching them with your finger."
-msgstr ""
+msgstr "დაიჭირეთ მოძრავი თევზები დაწკაპუნებით ან თითით შეხებით."
 
 #: activities/clockgame/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
@@ -4818,6 +4837,8 @@ msgid ""
 "Learn units of time (hours, minutes and seconds). Set the time on an analog "
 "clock."
 msgstr ""
+"ისწავლეთ დროის ერთეულები (საათები, წუთები და წამები). დააყენეთ დრო ანალოგურ "
+"საათზე."
 
 #. Help prerequisite
 #: activities/clockgame/ActivityInfo.qml:22
@@ -4832,6 +4853,8 @@ msgid ""
 "Set the clock to the given time. Drag the different hands to control their "
 "respective unit."
 msgstr ""
+"დააყენეთ საათი მითითებულ დროზე. გადაათრიეთ სხვადასხვა ხელები, რომ მათი "
+"შესაბამისი ერთეული აკონტროლოთ."
 
 #: activities/clockgame/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5509,12 +5532,12 @@ msgstr "ვინსენტ ვან გოგი, ღამის კაფ�
 #: activities/details/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
-msgstr ""
+msgstr "ვინცენტ ვან გოგი, პერე ტანგის პორტრეტი 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
 msgctxt "board9_0|"
 msgid "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
-msgstr ""
+msgstr "ნოტრ-დამის კათედრალი ლე დე ლა სიტეში პარიზში, საფრანგეთი."
 
 #. Activity title
 #: activities/digital_electricity/ActivityInfo.qml:15
@@ -6448,6 +6471,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"ამ აქტივობა ხმა სჭირდება, ასე რომ ის დაუკრავს ხმას მაშინაც კი, როცა ეფექტები "
+"და ხმა გათიშულია მთავარი კონფიგურაციიდან."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:346
 msgctxt "ExploreLevels|"

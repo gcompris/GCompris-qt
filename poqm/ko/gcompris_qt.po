@@ -17554,9 +17554,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "나누기"
