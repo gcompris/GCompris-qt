@@ -1,3 +1,4 @@
+module Singletons
 singleton Master 1.0 Master.qml
 singleton Definitions 1.0 Definitions.qml
 singleton Style Style.qml

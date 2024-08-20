@@ -30,6 +30,7 @@ Component {
             text: eval(nameKey)         // In these cases, eval is safe because no code injection is possible
             checked: eval(checkKey)     // Eval's parameter is an internal column name
             ButtonGroup.group: childGroup
+            indicator.scale: Style.checkerScale
             onClicked: {
                 if (currentChecked !== -1)
                     foldModel.setProperty(currentChecked, checkKey, false)

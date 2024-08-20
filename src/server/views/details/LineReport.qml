@@ -47,12 +47,16 @@ ColumnLayout {
 
     RowLayout {
         Layout.leftMargin: 10
-        Button {
+        RoundButton {
             text: qsTr("Back")
+            Layout.preferredWidth: 100
+            radius: 8
             onClicked: lineReport.parent.pop()
         }
-        Button {
+        RoundButton {
             text: qsTr("Refresh")
+            Layout.preferredWidth: 100
+            radius: 8
             onClicked: executeRequest()
         }
         Text {
@@ -176,29 +180,36 @@ ColumnLayout {
                         width: 170
                         RowLayout {
                             width: parent.width
+                            height: Style.defaultLineHeight
                             Text {
                                 Layout.fillWidth: true
+                                font.pixelSize: Style.defaultPixelSize
                                 text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
                                 font.underline: true
                             }
                             Text {
                                 Layout.preferredWidth: 25
+                                font.pixelSize: Style.defaultPixelSize
                                 height: 20
                                 horizontalAlignment: Text.AlignRight
                                 text: qsTr("%1s").arg(result_duration)
                             }
                         }
+
                         RowLayout {
                             width: parent.width
+                            height: Style.defaultLineHeight
                             Text {
                                 Layout.preferredWidth: 75
                                 height: 20
+                                font.pixelSize: Style.defaultPixelSize
                                 text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
                                 horizontalAlignment: Text.AlignLeft
                             }
                             Text {
                                 Layout.fillWidth: true
                                 height: 20
+                                font.pixelSize: Style.defaultPixelSize
                                 text: result_datetime.slice(-8)
                                 horizontalAlignment: Text.AlignRight
                             }

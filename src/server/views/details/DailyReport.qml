@@ -165,8 +165,6 @@ ColumnLayout {
         Layout.preferredHeight: 24
         Layout.leftMargin: 10
         Layout.rightMargin: 10
-        color: "lightgray"
-        radius: 4
         clip: true
         RowLayout {     // List header, columns names
             id: header
@@ -174,46 +172,59 @@ ColumnLayout {
             height: parent.height
             spacing: 2
 
-            Button {
+            RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["user_name"]
                 Layout.preferredHeight: 24
+                radius: 5
+                font.pixelSize: Style.defaultPixelSize
                 text: Definitions.columnsLabel["user_name"] + ((sort === "user_name") ? " " + arrows[order] : "")
                 onClicked: sortTable("user_name")
             }
-            Button {
+            RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["result_day"]
                 Layout.preferredHeight: 24
+                radius: 5
+                font.pixelSize: Style.defaultPixelSize
                 text: Definitions.columnsLabel["result_day"] + ((sort === "result_day") ? " " + arrows[order] : "")
                 onClicked: sortTable("result_day")
             }
-            Button {
+            RoundButton {
                 Layout.preferredWidth: Definitions.columnsSize["activity_name"]
                 Layout.preferredHeight: 24
+                radius: 5
+                font.pixelSize: Style.defaultPixelSize
                 text: Definitions.columnsLabel["activity_name"] + ((sort === "activity_name") ? " " + arrows[order] : "")
                 onClicked: sortTable("activity_name")
             }
-            Button {
-                Layout.preferredWidth: 80
+            RoundButton {
+                Layout.preferredWidth: Definitions.columnsSize["count_activity"]
                 Layout.preferredHeight: 24
+                radius: 5
+                font.pixelSize: Style.defaultPixelSize
                 text: qsTr("Count") + ((sort === "count_activity") ? " " + arrows[order] : "")
                 onClicked: sortTable("count_activity")
             }
-            Button {
-                Layout.preferredWidth: 60
+            RoundButton {
+                Layout.preferredWidth: Definitions.columnsSize["result_duration"]
                 Layout.preferredHeight: 24
+                radius: 5
+                font.pixelSize: Style.defaultPixelSize
                 text: qsTr("Time") + ((sort === "sum_duration") ? " " + arrows[order] : "")
                 onClicked: sortTable("sum_duration")
             }
             Text {
                 Layout.fillWidth: true
                 height: 20
+                font.pixelSize: Style.defaultPixelSize
                 text: resultModel.count + " " + qsTr("lines")
                 horizontalAlignment: Text.AlignHCenter
             }
 
-            Button {
-                Layout.preferredWidth: 100
+            RoundButton {
+                Layout.preferredWidth: Definitions.columnsSize["success_ratio"]
                 Layout.preferredHeight: 24
+                radius: 5
+                font.pixelSize: Style.defaultPixelSize
                 text: qsTr("Ratio") + ((sort === "success_ratio") ? " " + order : "")
                 onClicked: sortTable("success_ratio")
             }
@@ -257,32 +268,37 @@ ColumnLayout {
                         anchors.fill: parent
                         spacing: 2
                         Text {
-                            Layout.preferredWidth: 150
+                            Layout.preferredWidth: Definitions.columnsSize["user_name"]
                             height: 20
+                            font.pixelSize: Style.defaultPixelSize
                             leftPadding: 5
                             text: user_name
                         }
                         Text {
-                            Layout.preferredWidth: 150
+                            Layout.preferredWidth: Definitions.columnsSize["result_day"]
                             height: 20
+                            font.pixelSize: Style.defaultPixelSize
                             leftPadding: 5
                             text: new Date(result_day).toLocaleDateString(Qt.locale())
                         }
                         Text {
-                            Layout.preferredWidth: 250
+                            Layout.preferredWidth: Definitions.columnsSize["activity_name"]
                             height: 20
+                            font.pixelSize: Style.defaultPixelSize
                             leftPadding: 10
                             text: Master.allActivities[activity_name]["title"]
                         }
                         Text {
-                            Layout.preferredWidth: 80
+                            Layout.preferredWidth: Definitions.columnsSize["count_activity"]
                             height: 20
+                            font.pixelSize: Style.defaultPixelSize
                             text: count_activity
                             horizontalAlignment: Text.AlignHCenter
                         }
                         Text {
-                            Layout.preferredWidth: 60
+                            Layout.preferredWidth: Definitions.columnsSize["result_duration"]
                             height: 20
+                            font.pixelSize: Style.defaultPixelSize
                             text: {
                                 var date = new Date(0)
                                 date.setSeconds(sum_duration)
@@ -307,8 +323,9 @@ ColumnLayout {
                         }
 
                         Text {
-                            Layout.preferredWidth: 100
+                            Layout.preferredWidth: Definitions.columnsSize["success_ratio"]
                             height: 20
+                            font.pixelSize: Style.defaultPixelSize
                             rightPadding: 5
                             text: parseFloat(success_ratio * 100).toFixed(2)+" %"
                             horizontalAlignment: Text.AlignRight

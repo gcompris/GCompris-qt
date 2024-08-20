@@ -50,7 +50,7 @@ Item {
                                             "result_success": 80,
                                             "result_duration": 80,
                                             "result_data": 800,
-                                            "result_day": 150,
+                                            "result_day": 160,
                                             "count_activity": 100,
                                             "count_success": 80,
                                             "count_failed": 80,

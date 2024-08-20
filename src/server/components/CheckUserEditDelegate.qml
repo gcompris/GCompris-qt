@@ -30,6 +30,7 @@ Component {
             text: user_name
             checked: user_checked
             ButtonGroup.group: childGroup
+            indicator.scale: Style.checkerScale
             onClicked: {
                 foldModel.setProperty(index, checkKey, checked)
                 selectionClicked(foldModel.get(index)[indexKey], checked)
@@ -41,6 +42,7 @@ Component {
             anchors.right: parent.right
             width: parent.width / 2
             height: parent.height
+            font.pixelSize: Style.defaultPixelSize
             verticalAlignment: Text.AlignVCenter
             text: groups_name
             color: enabled ? "black": "gray"
