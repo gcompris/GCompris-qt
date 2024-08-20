@@ -50,6 +50,7 @@ Column {
             height: lineHeight
             anchors.left: parent.left
             font.pixelSize: Style.defaultPixelSize
+            scale: Style.checkerScale
             text: "\uf068"
             enabled: collapseButton.checked && ((childGroup.checkedButton != null) || (!childGroup.exclusive))
             onClicked: {    // Uncheck all buttons

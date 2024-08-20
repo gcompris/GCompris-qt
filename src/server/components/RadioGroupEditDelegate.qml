@@ -31,6 +31,7 @@ Component {
             text: group_name
             checked: group_checked
             ButtonGroup.group: childGroup
+            indicator.scale: Style.checkerScale
             onClicked: {
                 if (currentChecked !== -1)
                     foldModel.setProperty(currentChecked, checkKey, false)
