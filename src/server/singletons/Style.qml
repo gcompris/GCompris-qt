@@ -35,6 +35,7 @@ Item {
     property int defaultLineHeight: 1.8 * defaultPixelSize
     property int mediumLineHeight: defaultLineHeight + 6
     property int defaultPixelSize: 13
+    property real checkerScale: 0.7
 
 //    readonly property int defaultLineHeight: 25
 //    readonly property int mediumLineHeight: 35
