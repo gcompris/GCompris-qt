@@ -1,16 +1,17 @@
 # SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Xavier Besnard <xavier.besnard@kde.org>
-# Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Jazeix Johnny <jazeix@gmail.com>
-# charruau <echarruau@gmail.com>, 2016, 2017, 2018, 2020, 2021, 2022.
+# SPDX-FileCopyrightText: 2016, 2017, 2018, 2020, 2021, 2022, 2024 charruau <echarruau@gmail.com>
+# SPDX-FileCopyrightText: 2021, 2024 Timothée Giet <animtim@gmail.com>
+# Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Christian Wiatrowski <w9204-wi@yahoo.com>, 2018.
-# Timothée Giet <animtim@gmail.com>, 2021.
+# Timothée Giet <animtim@gmail.com>, 2021, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-01-27 15:56+0100\n"
-"Last-Translator: Johnny Jazeix <jazeix@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"PO-Revision-Date: 2024-08-10 10:38+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 24.04.70\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Text-Markup: qtrich\n"
@@ -2241,8 +2242,9 @@ msgid ""
 "complicated levels can be found in tangram activity."
 msgstr ""
 "Déplace une pièce en la faisant glisser. Clique sur le bouton de rotation ou "
-"fais glisser ton doigt autour de la pièce pour la faire tourner. Des formes "
-"plus compliquées à former peuvent être trouvées dans l'activité de Tangram."
+"fais glisser ton doigt autour de la pièce pour la faire tourner si "
+"nécessaire. Des formes plus compliquées à assembler peuvent être trouvées "
+"dans l'activité du jeu du Tangram."
 
 #: activities/baby_wordprocessor/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
@@ -3254,7 +3256,7 @@ msgstr ""
 "composées de plus d'une case ont un résultat et un opérateur : il faut "
 "atteindre le résultat en combinant tous les nombres de la cage avec "
 "l'opérateur donné. Les cages ne contenant qu'une seule case fournissent le "
-"nombre à entrer."
+"nombre à saisir."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
@@ -9527,7 +9529,7 @@ msgstr "Représente les fractions"
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr "Une forme divisée en nombre égal de parts est affichée à l'écran."
+msgstr "Une forme divisée en parts égales est affichée à l'écran."
 
 #: activities/fractions_create/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -19624,7 +19626,7 @@ msgstr "Découvre le code Morse international"
 #: activities/morse_code/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr "Apprends à communiquer en code Morse international."
+msgstr "Apprends à communiquer avec le code Morse international."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -19686,7 +19688,7 @@ msgstr ""
 "points et de tirets. La durée d'un tiret est trois fois plus longue que "
 "celle d'un point. Afin d'augmenter la vitesse de communication, le code a "
 "été conçu de manière à ce que les lettres les plus courantes aient les "
-"séquences de points et de tirets les plus courtes.Par exemple, la lettre la "
+"séquences de points et de tirets les plus courtes. Par exemple, la lettre la "
 "plus courante en anglais, la lettre « E », a le code le plus court, un seul "
 "point."
 
@@ -19998,7 +20000,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr ""
-"Identifie les notes de façon correcte et atteint un score de 100 % pour "
+"Identifie les notes de façon correcte et atteins un score de 100 % pour "
 "finir le niveau."
 
 #: activities/note_names/NoteNames.qml:177
@@ -20051,7 +20053,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr "Mettre en évidence le prochain point"
+msgstr "Mettre en valeur le prochain point"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -22877,8 +22879,8 @@ msgid ""
 "possible units, tens or hundreds, you must use differences too. On the other "
 "hand, it limits the maximum roman number to 3999 (MMMCMXCIX)."
 msgstr ""
-"Les additions de M sont utilisés pour construire les milliers : M, MM et "
-"MMM.\n"
+"Les additions de M sont utilisés pour construire les milliers : soit M, MM "
+"et MMM.\n"
 "Veuillez noter que vous ne pouvez mettre côte à côte plus de 3 symboles "
 "identiques. La première conséquence de cette règle est que vous ne pouvez "
 "utiliser seulement des sommes pour construire tous les nombres, unités, "
