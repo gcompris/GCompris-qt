@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-08-17 11:40+0300\n"
+"PO-Revision-Date: 2024-08-23 22:25+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -9822,13 +9822,11 @@ msgstr "Знайдзіце слушнае дзялімае і дзельнік �
 
 #. Help goal
 #: activities/fractions_find/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr "Выберыце пару, адпаведную дадзенай роднаснай сувязі."
+msgstr ""
+"Навучыцеся запісаць дробны лік, адпаведны прэзентацыі дадедзенага падзялення."
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -10038,32 +10036,22 @@ msgstr ""
 "аднолькавымі колерамі/знакамі."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 4 і 7, любыя камбінацыі форм, "
-"колераў/знакаў і памераў."
+"Скапіюйце гэты фрыз: шаблоны паміж 12 і 15, любыя камбінацыі форм, колераў/"
+"знакаў і памераў."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 4 і 7, любыя камбінацыі форм, "
-"колераў/знакаў і памераў."
+"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 10 і 12, любыя камбінацыі "
+"форм, колераў/знакаў і памераў."
 
 #: activities/frieze/resource/9/Data.qml:14
 #, fuzzy
