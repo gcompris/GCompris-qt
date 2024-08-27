@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-13 16:58+0300\n"
+"PO-Revision-Date: 2024-08-22 15:45+0300\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -1323,12 +1323,9 @@ msgstr "Izkārto rindā četrus žetonus."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Develop anticipation and spatial visualization skills."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Attīsta nojautas un telpiskās vizualizācijas prasmes."
+msgstr "Attīsta intuīcijas un stratēģijas prasmes."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1342,18 +1339,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Izveido rindu ar četriem žetoniem horizontāli (guļoši), vertikāli (stāvoši) "
-"vai diagonāli (slīpi)."
+"Vari izveidot rindu ar četriem žetoniem horizontāli (līmeniski), vertikāli "
+"(stateniski) vai diagonāli (slīpi)."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -9065,7 +9057,7 @@ msgstr "Pārvieto katru vienumu, lai no jauna izveidot attēlu."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr "Attīsta nojautas un telpiskās vizualizācijas prasmes."
+msgstr "Attīsta intuīcijas un telpiskās vizualizācijas prasmes."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -16764,7 +16756,7 @@ msgstr "Izslēdz visas gaismas."
 #: activities/lightsoff/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
-msgstr "Attīsti nojautu, stratēģijas un telpiskās vizualizācijas prasmes."
+msgstr "Attīsti intuīciju, stratēģijas un telpiskās vizualizācijas prasmes."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
