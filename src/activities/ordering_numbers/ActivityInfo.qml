@@ -20,7 +20,7 @@ ActivityInfo {
     title: qsTr("Ordering numbers")
     //: Help title
     description: qsTr("Arrange the given numbers in ascending or descending order as requested.")
-    //: intro: "Arrange the numbers in the correct order."
+    //intro: "Arrange the numbers in the correct order."
     //: Help goal
     goal: qsTr("Practice ordering numbers.")
     //: Help prerequisite
