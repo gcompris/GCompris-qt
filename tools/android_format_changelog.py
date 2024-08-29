@@ -115,7 +115,7 @@ def main(argv):
 
     output = ""
     # List taken from the android list in https://android.googlesource.com/platform/frameworks/base/+/master/core/res/res/values/locale_config.xml
-    for locale in ["en-US", "az-AZ", "be", "ca", "cs-CZ", "de-DE", "el-GR", "en-GB", "es-ES", "eu-ES", "fi-FI", "fr-FR", "gl-ES", "hr", "hu-HU", "id", "it-IT", "iw-IL", "lt", "mk-MK", "ml-IN", "nl-NL", "no-NO", "pl-PL", "pt-BR", "pt-PT", "ro", "ru-RU", "sk", "sl", "sq", "sv-SE", "tr-TR", "uk", "zh-CN", "zh-TW"]:
+    for locale in ["en-US", "az-AZ", "be", "ca", "cs-CZ", "de-DE", "el-GR", "en-GB", "es-ES", "eu-ES", "fi-FI", "fr-FR", "gl-ES", "hr", "hu-HU", "id", "it-IT", "iw-IL", "lt", "lv-LV", "mk-MK", "ml-IN", "nl-NL", "no-NO", "pl-PL", "pt-BR", "pt-PT", "ro", "ru-RU", "sk", "sl", "sq", "sv-SE", "tr-TR", "uk", "zh-CN", "zh-TW"]:
         is_translation_ok, locale_changes = generate_for_locale(changelog_qml, locale)
         if is_translation_ok:
             output += locale_changes
