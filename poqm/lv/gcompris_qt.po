@@ -125,12 +125,9 @@ msgid "Find numbers between -10 and 10."
 msgstr "Atrodi skaitļus starp −10 un 10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "Data|"
 msgid "Find the missing numbers"
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "trodi trūkstošos skaitļus."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -1282,18 +1279,12 @@ msgstr "Loģiskās asociācijas"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruits."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruit."
 msgstr "Pabeidz augļu izkārtojumu."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logic training activity"
 msgctxt "ActivityInfo|"
 msgid "Logic training activity."
 msgstr "Loģikas attīstīšanas nodarbības"
@@ -1318,9 +1309,6 @@ msgstr "Izkārto četrus (pret Tuksu)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Line up four tokens."
 msgctxt "ActivityInfo|"
 msgid "Arrange four tokens in a row."
 msgstr "Izkārto rindā četrus žetonus."
@@ -1328,11 +1316,6 @@ msgstr "Izkārto rindā četrus žetonus."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up), or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create a line of 4 tokens either horizontally (lying down), vertically "
@@ -1412,12 +1395,9 @@ msgstr "Pārvieto helikopteri, lai noķertu mākoņus alfabēta secībā."
 
 #. Help goal
 #: activities/alphabet-sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Alphabet sequence"
 msgctxt "ActivityInfo|"
 msgid "Alphabet sequence."
-msgstr "Alfabēta rinda"
+msgstr "Alfabēta rinda."
 
 #. Help prerequisite
 #: activities/alphabet-sequence/ActivityInfo.qml:22
@@ -2072,9 +2052,6 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "My first keyboard"
 msgctxt "ActivityInfo|"
 msgid "Baby keyboard"
 msgstr "Mana pirmā tastatūra"
@@ -2215,9 +2192,6 @@ msgstr "Rakstot atskaņo rakstzīmes skaņu"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "My first word processor"
 msgctxt "ActivityInfo|"
 msgid "A baby word processor"
 msgstr "Mana pirmā tekstapstrādes programma"
@@ -2232,9 +2206,6 @@ msgstr ""
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the keyboard."
 msgctxt "ActivityInfo|"
 msgid "Discover the keyboard and the letters."
 msgstr "Izpēti tastatūru."
@@ -2771,12 +2742,9 @@ msgstr ""
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:21
 #: activities/bargame_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Kick the ball into the goal"
 msgctxt "ActivityInfo|"
 msgid "Don't put the ball in the last hole."
-msgstr "Iesper bumbu vārtos"
+msgstr "Attīsti prasmes stratēģiskajā domāšanā, skaitīšanā un atņemšanā."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:23
@@ -3145,11 +3113,6 @@ msgstr "Atrisini Kalkudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop some logical skills (data linking, deduction) and spatial "
-#| "visualization while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop your logical reasoning skills: data linking, deduction and spatial "
@@ -4214,10 +4177,6 @@ msgstr "Spēlē dambreti (pret Tuksu)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "This version of checkers follows the rules of international draughts."
 msgctxt "ActivityInfo|"
 msgid "The version in GCompris is the international draughts."
 msgstr "Šī dambretes versija atbilst starptautiskajiem dambretes noteikumiem."
@@ -4225,11 +4184,6 @@ msgstr "Šī dambretes versija atbilst starptautiskajiem dambretes noteikumiem."
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all your opponent's pieces before your opponent captures all of "
-#| "yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all the pieces of your opponent before your opponent captures all of "
@@ -4526,9 +4480,6 @@ msgstr "Šaha partijas beigas"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of a chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of the chess game against Tux."
 msgstr "Izspēlē šaha partijas beigas pret Tuksu."
@@ -4595,34 +4546,20 @@ msgstr "Izstāsti īsu stāstu."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Find a picture detail in the sidebar, and drag it to the right spot on "
-#| "the picture."
 msgctxt "ActivityInfo|"
 msgid ""
 "Pick the pictures on the side and put them on the dots in the right order."
-msgstr "Atrodi attēla sīkumu sānu joslā un to aizvelc uz pareizo vietu attēlā."
+msgstr ""
+"Izkārto attēlus, lai iegūtu loģisku stāstu. Velc attēlus no sānu joslas uz "
+"attiecīgajiem punktiem, pēc tam spied uz „Labi“ pogas, lai pārbaudītu "
+"atbildu."
 
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid "Then, click on the OK button to validate your answer."
-msgstr ""
-"Ja atbilde ir pareiza, ieraksti rezultātu un spied uz „Labi“ pogas, lai "
-"atbildi pārbaudītu."
+msgstr " "
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Dates of Transportation are based on those found in &lt;https://www."
-#| "wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Moon photo is copyright NASA. The transportation images are copyright Franck "
@@ -4942,9 +4879,6 @@ msgstr "Klausies burtu un noklikšķini uz tā."
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Letter-name recognition"
 msgctxt "ActivityInfo|"
 msgid "Letter-name recognition."
 msgstr "Burtu nosaukumu atpazīšana"
@@ -5052,19 +4986,12 @@ msgstr "Notver visas peldošās zivis pirms tās atstāj akvāriju."
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice motor coordination, moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Motor coordination: moving the hand precisely."
 msgstr "Trenē kustību koordināciju, precīzi pārvietojot roku."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Can move a mouse or use a touchscreen and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move mouse and click on the correct place."
 msgstr ""
@@ -5217,9 +5144,6 @@ msgstr "Atklāj krāsu jaukšanu."
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix the primary colors to match to the given color"
 msgctxt "ActivityInfo|"
 msgid "Mix primary colors to match the given color."
 msgstr "Jaukt primārās krāsas, lai atbilstu dotajām krāsām"
@@ -5251,12 +5175,6 @@ msgstr ""
 "un dzeltenā krāsa."
 
 #: activities/color_mix/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the paint tubes or by clicking "
-#| "on the + and - buttons. Then click on the OK button to validate your "
-#| "answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the tubes of paint or by clicking "
@@ -5353,12 +5271,6 @@ msgstr ""
 "saskaitīšanu)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Mixing light colors is just the opposite of mixing paint colors. The more "
-#| "light you add, the lighter the resulting color becomes. The primary "
-#| "colors of light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -5370,12 +5282,6 @@ msgstr ""
 "ir sarkanā, zaļā un zilā."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the paint tubes or by clicking "
-#| "on the + and - buttons. Then click on the OK button to validate your "
-#| "answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the torches or by clicking on the "
@@ -5398,9 +5304,6 @@ msgstr "Klikšķini uz pareizās krāsas."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice recognizing different colors."
 msgctxt "ActivityInfo|"
 msgid "This activity teaches you to recognize different colors."
 msgstr "Mācies atpazīt dažādas krāsas."
@@ -5719,11 +5622,6 @@ msgstr "Atrodi sīkumus"
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Complete the puzzle by dragging each piece on the side to the matching "
-#| "spot."
 msgctxt "ActivityInfo|"
 msgid ""
 "Complete the puzzle by dragging each piece on the side to the matching space "
@@ -5865,21 +5763,15 @@ msgstr "Digitālā elektrība"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate an analog electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital electric schema."
-msgstr "Izveido un simulē analogu elektrisko shēmu"
+msgstr "Izveido un simulē digitālo loģisko shēmu"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create an analog electric schema with a real time simulation."
 msgctxt "ActivityInfo|"
 msgid "Create a digital electric schema with a real time simulation of it."
-msgstr "Izveido analogu elektrisko shēmu ar reāllaika simulāciju."
+msgstr "Izveido un reāllaikā simulē digitālo loģisko shēmu."
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -6076,13 +5968,6 @@ msgid "NOT A"
 msgstr "NOT A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. It is the basics of "
-#| "computer technics. In reality, 0 is often the representation of a voltage "
-#| "nearly equal to ground voltage and 1 is the representation of the supply "
-#| "voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. This allows to operate "
@@ -6165,13 +6050,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. It is the basics of "
-#| "computer technics. In reality, 0 is often the representation of a voltage "
-#| "nearly equal to ground voltage and 1 is the representation of the supply "
-#| "voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. This allows to operate "
@@ -6618,9 +6496,6 @@ msgstr "Savieno punktus, lai rakstītu burtus."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to draw letters in a fun way."
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw letters in a funny way."
 msgstr "Mācies rakstīt burtus interesantā veidā."
@@ -6645,9 +6520,6 @@ msgstr "Savienot punktus, lai rakstītu skaitļus no 0 līdz 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to draw numbers in a fun way."
 msgctxt "ActivityInfo|"
 msgid "Learning how to draw numbers in a funny way."
 msgstr "Mācies rakstīt skaitļus interesantā veidā."
@@ -6674,9 +6546,6 @@ msgstr "Novieto vienumus labākajā veidā, lai tos saskaitītu."
 #: activities/enumerate/ActivityInfo.qml:20
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numeration training"
 msgctxt "ActivityInfo|"
 msgid "Numeration training."
 msgstr "Skaitīšanas apmācība"
@@ -6809,11 +6678,6 @@ msgstr "Pārvieto peli vai pieskaries ekrānam"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the mouse or touch the screen to erase the blocks and discover the "
-#| "hidden picture."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the area and discover the "
@@ -6826,9 +6690,6 @@ msgstr ""
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor-coordination"
 msgctxt "ActivityInfo|"
 msgid "Motor-coordination."
 msgstr "Kustību koordinācija"
@@ -6849,11 +6710,6 @@ msgstr "Divi uzsitieni vai dubultklikšķis"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the blocks and discover the hidden "
-#| "picture."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the area and discover the background "
@@ -6876,9 +6732,6 @@ msgstr "Klikšķini vai uzsit"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the blocks and discover the hidden picture."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the area and discover the background."
 msgstr "Klikšķini vai uzsit, lai dzēstu blokus un atklātu slēpto attēlu."
@@ -9079,12 +8932,9 @@ msgstr "Norādi uz radiniekiem"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "board6|"
-#| msgid "Click on the location of the given pyramid."
 msgctxt "ActivityInfo|"
 msgid "Click on a pair corresponding to the given relation."
-msgstr "Spied uz norādītās piramīdas atrašanās vietas."
+msgstr "Atlasi divus cilvēkus, kurām ir šādas attiecības"
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -9094,13 +8944,6 @@ msgstr "Lasīšana, pārvietošana un klikšķināšana ar peli"
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relationships. Married "
-#| "couples are marked with a ring on the link.\n"
-#| "Click on a pair of family members which have the given relationship."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -9127,12 +8970,9 @@ msgstr "Pārvieto katru vienumu, lai no jauna izveidot attēlu."
 
 #. Help goal
 #: activities/fifteen/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Arrange the pieces in the right order."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Attīsta nojautas un telpiskās vizualizācijas prasmes."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9366,12 +9206,9 @@ msgstr "Iesper bumbu vārtos."
 
 #. Help goal
 #: activities/football/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Kick the ball into the black hole on the right"
 msgctxt "ActivityInfo|"
 msgid "Kick the ball behind the goal keeper on the right."
-msgstr "Sper bumbu uz melno caurumu labajā pusē"
+msgstr "Izproti virzienu un ātrumu."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -9380,6 +9217,9 @@ msgid ""
 "Drag a line from the ball to set its speed and direction, and release it to "
 "kick the ball."
 msgstr ""
+"Nospied uz bumbas, tad velc aiz tās, lai iezīmētu mērķēšanas līniju. Jo "
+"garāka ir līnija, jo stiprāks ir spēriens. Kad atlaid līniju, bumba sekos "
+"tās virzienam. Tu gūsti vārtus, kad bumba sasniedz otru lauka galu."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -9389,26 +9229,17 @@ msgstr "Veido daļas"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A shape split in equal parts is displayed. Select the appropriate number "
-#| "of parts to represent the given fraction."
 msgctxt "ActivityInfo|"
 msgid "A shape split in equal parts is displayed on screen."
-msgstr ""
-"Programma parāda figūru, kas ir sadalīta vienādās daļās. Atlasi šo daļu "
-"attiecīgo skaitu, lai parādītu doto daļskaitli."
+msgstr "Atlasi attiecīgo daļu skaitu, kas reprezentē doto daļskaitli."
 
 #: activities/fractions_create/ActivityInfo.qml:18
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts to represent the given fraction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr "Atlasi attiecīgo daļu skaitu, kas reprezentē doto daļskaitli."
+msgstr ""
+"Programma parāda figūru, kas ir sadalīta vienādās daļās. Atlasi šo daļu "
+"attiecīgo skaitu, lai parādītu doto daļskaitli."
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -9865,9 +9696,6 @@ msgstr ""
 "izmēru kombinācija."
 
 #: activities/frieze/resource/11/Data.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Copy and complete this frieze."
 msgctxt "Data|"
 msgid "Copy and complete this frieze"
 msgstr "Kopē un pabeidz šo frīzi."
@@ -9942,29 +9770,18 @@ msgstr ""
 "iespējamām vienādām krāsām/zīmēm."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Remember and copy this frieze: any combination of shapes, colors/signs "
-#| "and sizes."
 msgctxt "Data|"
 msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-msgstr ""
-"Iegaumē kopē šo frīzi: jebkāda figūru, krāsu/zīmju un izmēru kombinācija."
+msgstr "Kopēt šo frīzi: jebkāda figūru, krāsu/zīmju un izmēru kombinācija."
 
 #: activities/frieze/resource/8/Data.qml:14
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Remember and copy this frieze: any combination of shapes, colors/signs "
-#| "and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: any combination of shapes, colors/signs and "
 "sizes."
 msgstr ""
-"Iegaumē kopē šo frīzi: jebkāda figūru, krāsu/zīmju un izmēru kombinācija."
+"Kopē un pabeidz šo frīzi: jebkāda figūru, krāsu/zīmju un izmēru kombinācija."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -9974,23 +9791,17 @@ msgstr "Atrodi šo reģionu"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop weights to balance the scales"
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the regions to complete the country maps."
-msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
+msgstr "Novieto reģionus valstu kartēs."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop weights to balance the scales"
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop different regions of the country to their correct locations to "
 "complete the map."
-msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
+msgstr "Velc un nomet reģionus pareizajās vietās, lai pabeigtu karti."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -12772,20 +12583,12 @@ msgstr "Atrodi valstis"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop weights to balance the scales"
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to complete the map."
-msgstr "Velc un nomet atsvarus, lai līdzsvarotu svarus"
+msgstr "Novieto kontinentus un valstis pasaules kartē."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct location to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct locations to complete the map."
@@ -13910,12 +13713,9 @@ msgstr "Raksti krītošos burtus pirms tie sasniedz zemi."
 
 #. Help goal
 #: activities/gletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Letter association between the screen and the keyboard"
 msgctxt "ActivityInfo|"
 msgid "Letter association between the screen and the keyboard."
-msgstr "Burtu saistība ar ekrānu un klaviatūru"
+msgstr "Atrodi ekrānā redzamajam burtam atbilstošo burtu uz tastatūras."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -14618,14 +14418,13 @@ msgstr "Aizkrāso diagrammu tā, lai blakus esošās daļas nebūtu vienā krās
 
 #. Help goal
 #: activities/graph-coloring/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ability to distinguish different colors/shapes, sense of positions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to distinguish between different colors/shapes and learn about "
 "relative positions."
-msgstr "Spēja atšķirt dažādas krāsas/formas, izpratne par novietojumu."
+msgstr ""
+"Attīsti stratēģisko domāšanu, atšķirt krāsas un iegaumēt relatīvos "
+"novietojumus."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -14762,11 +14561,6 @@ msgstr "Mācies rēķināt, izmantojot četrus operatorus."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using addition, subtraction, multiplication and "
-#| "division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using additions, subtractions, multiplications and "
@@ -14885,11 +14679,6 @@ msgstr "Zināšanas par aritmētiskajām darbībām."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the numbers and operators to the boxes to obtain the number given in "
-#| "the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the appropriate numbers and the operators to the boxes to obtain the "
@@ -14964,12 +14753,9 @@ msgstr "Atrodi paslēpto skaitli, lai Tukss varētu izkļūt no alas."
 
 #. Help prerequisite
 #: activities/guessnumber/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Simple Letters"
 msgctxt "ActivityInfo|"
 msgid "Numbers."
-msgstr "Vienkārši burti"
+msgstr "Skaitļus"
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15141,29 +14927,18 @@ msgstr "Vienkāršots „Hanojas tornis“"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the given tower."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Nokopē labajā pusē esošo torni tukšajā vietā."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Copy the tower on the right-hand side onto the empty peg."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the tower on the right in the empty area."
-msgstr "Nokopē labajā pusē esošo torni tukšajā vietā."
+msgstr "Attīsta stratēģisko domāšanu."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop one top disc at a time, from one tower to another, to "
-#| "reproduce the tower on the right-hand side onto the empty peg."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and Drop one top piece at a time, from one tower to another, to "
@@ -15185,9 +14960,6 @@ msgstr "Hanojas tornis"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower from the left-hand side onto the right-side peg."
 msgctxt "ActivityInfo|"
 msgid "Move the tower to the right side."
 msgstr "Pārvieto torni no kreisās puses uz labajā pusē esošo vietu."
@@ -15201,21 +14973,20 @@ msgid ""
 "    only one disc may be moved at a time\n"
 "    no disc may be placed atop a smaller disc\n"
 msgstr ""
+"Diskus iespējams pārvietot brīvi atpakaļ un uz priekšu visās vietās, "
+"ievērojot divus noteikumus: vienlaicīgi var pārvietot tikai vienu disku un "
+"lielāku disku nekad nevar novietot uz mazāka diska.\n"
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop one top disc at a time, from one tower to another, to "
-#| "reproduce the tower on the right-hand side onto the empty peg."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the top pieces only from one peg to another, to reproduce the "
 "initial left side tower on the right peg."
 msgstr ""
-"Velc no nomet vienu augšējo disku reizē no viena torņa uz citu, lai tukšajā "
-"vietā izveidoto tādu pašu torni, kāds ir labajā pusē."
+"Velc un nomet pa vienam augšējam diskam no viena torņa uz citu, lai "
+"izveidotu tādu pašu torni, kāds ir kreisajā pusē, arī labajā pusē esošajā "
+"vietā."
 
 #: activities/hanoi_real/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15292,12 +15063,9 @@ msgstr "Velc un nomet katru vienumu virs tā nosaukuma."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Word reading."
 msgctxt "ActivityInfo|"
 msgid "Vocabulary and reading."
-msgstr "Vārdu lasīšana."
+msgstr "Bagātini savu vārdnīcu un trenējies lasīšanā."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -15959,9 +15727,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Atstarpes vai „Enter“ taustiņš: sarakstā atlasa vienumu"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr ""
@@ -16114,30 +15879,21 @@ msgstr "transports"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "ActivityInfo|"
 msgid "Learn additions"
 msgstr "Mācies saskaitīšanu"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn additions with small numbers."
 msgstr "Mācies saskaitīšanu ar maziem skaitļiem"
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn additions by counting their result."
-msgstr "Apgūsti atņemšanu, skaitot tās rezultātu."
+msgstr "Mācies saskaitīšanu, saskaitot daudzumus."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16179,37 +15935,20 @@ msgstr "Mācies decimālskaitļus"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Learn decimals with small numbers."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Reprezentē dotos decimālskaitļus."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn quantities by counting how many oranges are needed to represent the "
-#| "requested quantity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn decimals by counting how many squares are needed to represent the "
 "decimal number."
-msgstr ""
-"Apgūsti daudzumus, skaitot, cik daudz apelsīnu vajag, lai parādītu norādīto "
-"daudzumu."
+msgstr "Sasaisti skaitļa decimālo formu ar tā grafisko reprezentāciju."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "unit bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the bar, "
@@ -16358,47 +16097,28 @@ msgstr "Starp 1 un 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Additions with decimal numbers"
 msgstr "Saskaitīšana ar decimālskaitļiem"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn additions with decimal numbers."
 msgstr "Mācies saskaitīšanu ar decimālskaitļiem."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn quantities by counting how many oranges are needed to represent the "
-#| "requested quantity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn additions with decimal numbers by counting how many squares are needed "
 "to represent the result."
 msgstr ""
-"Apgūsti daudzumus, skaitot, cik daudz apelsīnu vajag, lai parādītu norādīto "
-"daudzumu."
+"Mācies saskaitīšanu ar decimālskaitļiem, manipulējot ar to vizuālo "
+"reprezentāciju."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the unit bar, and drag the selected part of the bar to "
-#| "the empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16444,36 +16164,25 @@ msgstr "Saskaiti decimālskaitļus līdz 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtractions with decimal numbers"
 msgstr "Atņem ar decimālskaitļiem"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with decimal numbers."
 msgstr "Mācies atņemšanu ar decimālskaitļiem."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn quantities by counting how many oranges are needed to represent the "
-#| "requested quantity."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtractions with decimal numbers by counting how many squares need to "
 "be subtracted to represent the result."
 msgstr ""
-"Apgūsti daudzumus, skaitot, cik daudz apelsīnu vajag, lai parādītu norādīto "
-"daudzumu."
+"Mācies atņemšanu ar decimālskaitļiem, manipulējot ar to vizuālo "
+"reprezentāciju."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16534,45 +16243,33 @@ msgstr "Ieslēgt balsis"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Count and color the circles"
-msgstr "Saskaiti objektus"
+msgstr "Apgūt ciparus"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Learn digits from 0 to 9."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Reprezentē skaitli atbilstoši dotajam ciparam."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn digits by counting their corresponding value."
-msgstr "Apgūsti atņemšanu"
+msgstr ""
+"Mācies skaitļus, kas ir reprezentēti ar atsevišķu ciparu un attiecīgos "
+"daudzumus."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition is displayed on the screen. Calculate the result, fill the "
-#| "corresponding number of circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the corresponding number of circles "
 "and validate your answer."
 msgstr ""
-"Ekrānā ir parādīta saskaitīšana. Aprēķini rezultātu, ieraksti pareizu apļu "
-"skaitu un pārbaudi savu atbildi."
+"Ekrānā ir parādīts skaitlis. Ieraksti apļu skaitu atbilstoši skaitlim, ko "
+"reprezentē cipars, un pārbaudi atbildi."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16692,27 +16389,18 @@ msgstr "Starp 20 un 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions"
 msgstr "Apgūsti atņemšanu"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions with small numbers."
 msgstr "Apgūsti atņemšanu ar maziem skaitļiem."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions by counting their result."
 msgstr "Apgūsti atņemšanu, skaitot tās rezultātu."
@@ -16880,12 +16568,9 @@ msgstr ""
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the words with the given letter."
 msgctxt "ActivityInfo|"
 msgid "Select all the words which contain the given letter."
-msgstr "Atrodi vārdus ar parādīto burtu."
+msgstr "Trenējies atrast vārdos doto burtu."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -16938,12 +16623,9 @@ msgstr "Izslēdz gaismu"
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:17
 #: activities/lightsoff/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "The goal is to turn off all the lights."
-msgstr "Izslēdz visas gaismas."
+msgstr "Attīsti intuīciju, stratēģijas un telpiskās vizualizācijas prasmes."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -17020,12 +16702,11 @@ msgstr "Luija Braila vēsture"
 
 #. Help title
 #: activities/louis-braille/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Let kids discover the Braille system."
 msgctxt "ActivityInfo|"
 msgid "Review the major dates of the inventor of the braille system."
-msgstr "Ļauj bērniem iepazīt Braila rakstību."
+msgstr ""
+"Izlasi par galvenajiem notikumiem Braila raksta ieviesēja dzīvē un iegaumē "
+"to hronoloģisko secību."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:22
@@ -17163,20 +16844,14 @@ msgstr "Saskaiti, cik daudz zvaigžņu ir zem burvju cepures."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtraction"
 msgctxt "ActivityInfo|"
 msgid "Learn subtractions."
-msgstr "Apgūsti atņemšanu"
+msgstr "Mācies atņemšanu."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction."
 msgctxt "ActivityInfo|"
 msgid "Subtractions."
 msgstr "Atņemšana."
@@ -17257,20 +16932,14 @@ msgstr "Saskaiti, cik daudz zvaigžņu ir zem maģiskās cepures."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "ActivityInfo|"
 msgid "Learn additions."
-msgstr "Mācies saskaitīšanu"
+msgstr "Apgūsti saskaitīšanu."
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition."
 msgctxt "ActivityInfo|"
 msgid "Additions."
 msgstr "Saskaitīšana."
@@ -17571,9 +17240,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn lowercase and uppercase letters."
 msgctxt "ActivityInfo|"
 msgid "Learning lowercase and uppercase letters, memory."
 msgstr "Mācies mazos un lielos burtus."
@@ -17771,9 +17437,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication, division."
 msgctxt "ActivityInfo|"
 msgid "Practice additions, subtractions, multiplications, divisions."
 msgstr "Trenējies saskaitīšanu, atņemšanu, reizināšanu un dalīšanu."
@@ -17781,9 +17444,6 @@ msgstr "Trenējies saskaitīšanu, atņemšanu, reizināšanu un dalīšanu."
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition, subtraction, multiplication, division."
 msgctxt "ActivityInfo|"
 msgid "Additions, subtractions, multiplications, divisions."
 msgstr "Saskaitīšana, atņemšana, reizināšana un dalīšana."
@@ -17928,9 +17588,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition and subtraction."
 msgctxt "ActivityInfo|"
 msgid "Practice additions and subtractions."
 msgstr "Mācies saskaitīšanu un atņemšanu."
@@ -17938,9 +17595,6 @@ msgstr "Mācies saskaitīšanu un atņemšanu."
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition and subtraction."
 msgctxt "ActivityInfo|"
 msgid "Additions and subtractions."
 msgstr "Saskaitīšana un atņemšana."
@@ -17988,9 +17642,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Practice additions."
 msgstr "Trenējies saskaitīt."
@@ -18096,18 +17747,12 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice division."
 msgctxt "ActivityInfo|"
 msgid "Practice divisions."
 msgstr "Trenējies dalīšanu."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division."
 msgctxt "ActivityInfo|"
 msgid "Divisions."
 msgstr "Dalīšana."
@@ -18198,9 +17843,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Division"
 msgctxt "ActivityInfo|"
 msgid "Divisions"
 msgstr "Dalīšana"
@@ -18223,9 +17865,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Practice subtractions."
 msgstr "Trenējies atņemšanu."
@@ -18333,9 +17972,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplication and division."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications and divisions."
 msgstr "Trenējies reizināšanu un dalīšanu."
@@ -18343,9 +17979,6 @@ msgstr "Trenējies reizināšanu un dalīšanu."
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication, division."
 msgctxt "ActivityInfo|"
 msgid "Multiplications, divisions."
 msgstr "Reizināšana, dalīšana."
@@ -18394,9 +18027,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplication."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplications."
 msgstr "Trenējies reizināt."
@@ -18404,9 +18034,6 @@ msgstr "Trenējies reizināt."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication."
 msgctxt "ActivityInfo|"
 msgid "Multiplications."
 msgstr "Reizināšana."
@@ -18557,12 +18184,9 @@ msgstr "Apgriez kartiņas, lai atrastu atbilstošus pārus, spēlējot pret Tuks
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your memory and remove all the cards"
 msgctxt "ActivityInfo|"
 msgid "Train your memory and remove all the cards."
-msgstr "Trenē atmiņu, noņemot visas kārtis"
+msgstr "Trenē atmiņu, noņemot visas kārtis."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -19362,12 +18986,9 @@ msgstr "Atrodi trūkstošo burtu, lai pabeigtu vārdu."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading skills."
 msgctxt "ActivityInfo|"
 msgid "Training reading skills."
-msgstr "Lasīšanas prasmes."
+msgstr "Apgūsti vārdu pareizrakstību."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19425,12 +19046,6 @@ msgstr "Mācies izmantot naudu."
 
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You must buy the different items and give the exact price. At higher "
-#| "levels, several items are displayed, and you must first calculate the "
-#| "total price."
 msgctxt "ActivityInfo|"
 msgid ""
 "You must buy different items and give the exact price. At higher levels, "
@@ -19538,12 +19153,6 @@ msgstr "Trenējies izmantot naudu, izdodot Tuksam atlikumu."
 #. Help goal
 #: activities/money_back/ActivityInfo.qml:20
 #: activities/money_back_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Tux bought you different items and shows you his money. You must give him "
-#| "back his change. At higher levels, several items are displayed, and you "
-#| "must first calculate the total price."
 msgctxt "ActivityInfo|"
 msgid ""
 "Tux bought different items from you and shows you his money. You must give "
@@ -19602,19 +19211,12 @@ msgstr "Iepazīsti Morzes kodu"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
 msgstr "Sazinies, izmantojot Morzes kodu."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to send and receive messages using the International Morse code."
 msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
@@ -19628,13 +19230,6 @@ msgstr "Zināšanas par alfabētiem un cipariem."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn Morse code, "
-#| "you can click on the Morse key icon to have a look at the translation map "
-#| "which contains the code for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -19976,11 +19571,6 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Identify the notes, play them on the piano keyboard, and achieve a score "
-#| "of 100% to complete the level."
 msgctxt "ActivityInfo|"
 msgid "Identify the notes correctly and score 100% to complete a level."
 msgstr ""
@@ -20045,20 +19635,12 @@ msgstr "Skaitļu secība"
 
 #. Help title
 #: activities/number_sequence/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Touch the numbers in the right order."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Atlasi skaitli vienu pēc otra, ievērojot skaitlisko secību."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on the points in the numerical sequence "
-#| "order."
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on each number in the right order."
 msgstr "Zīmē attēlu, klikšķinot uz punktiem, ievērojot skaitļu secību."
@@ -20077,13 +19659,6 @@ msgstr "Pārvieto helikopteru, lai noķertu mākoņus ar pāra un nepāra skait�
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds in increasing order. With a keyboard, use the arrow keys "
-#| "to move the helicopter. With a pointing device, just click or tap on the "
-#| "target location. To know which number you have to catch you can either "
-#| "remember it or check the number on the bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Catch the clouds with an odd or even number, in the right order. With a "
@@ -20307,12 +19882,9 @@ msgstr "Sakārto šos notikumus hronoloģiski."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ordering|"
-#| msgid "Drag and drop the items in chronological order."
 msgctxt "ActivityInfo|"
 msgid "Can decide chronological order of events."
-msgstr "Velc un nomet vienumus hronoloģiskā secībā."
+msgstr "Mācies notikumu secības hronoloģisku kārtību."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20354,12 +19926,9 @@ msgstr "Sakārto skaitļus augošā vai dilstošā secībā, ievērojot uzdevumu
 
 #. intro: "Arrange the numbers in the correct order." Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Compare numbers."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Mācies sakārtot skaitļus."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20462,9 +20031,6 @@ msgstr "Izkārto vārdus, lai no tiem izveidotos jēgpilns teikums."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice ordering words to form a meaningful sentence."
 msgctxt "ActivityInfo|"
 msgid "Order words to form meaningful sentences."
 msgstr "Trenējies kārtot vārdus, lai no tiem izveidotos jēgpilns teikums."
@@ -20556,14 +20122,6 @@ msgstr "Spēlē stratēģijas spēli ovari pret Tuksu."
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
 #: activities/oware_2players/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than your opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -20581,16 +20139,6 @@ msgstr ""
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On each turn, a player chooses one "
-#| "of the six houses under their control. The player removes all seeds from "
-#| "that house and distributes them, in a process called sowing, into the "
-#| "following houses (counter-clockwise). Seeds are not distributed into the "
-#| "end scoring houses, nor into the house drawn from. The starting house is "
-#| "always left empty; if it contained 12 (or more) seeds, it is skipped, and "
-#| "the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On a turn, a player chooses one of the "
@@ -20680,12 +20228,9 @@ msgstr "Velc un nomet gabaliņus, lai atjaunotu oriģinālās gleznas."
 
 #. Help goal
 #: activities/paintings/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Digits representation"
 msgctxt "ActivityInfo|"
 msgid "Spatial representation."
-msgstr "Ciparu reprezentācija"
+msgstr "Telpiskais attēlojums."
 
 #. Help prerequisite
 #: activities/paintings/ActivityInfo.qml:27
@@ -20830,11 +20375,6 @@ msgstr "Seko dotajām norādēm, lai palīdzētu Tuksam nokļūt galamērķī."
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:21
 #: activities/path_decoding_relative/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux to the target following the arrow "
-#| "directions."
 msgctxt "ActivityInfo|"
 msgid "Click on the grid squares to move Tux following the given directions."
 msgstr ""
@@ -20872,12 +20412,9 @@ msgstr "%1×%2 režģi."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Path decoding relative"
-msgstr "Saskaiti objektus"
+msgstr "Relatīvā ceļa atkodēšana"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:22
 #: activities/path_encoding_relative/ActivityInfo.qml:22
@@ -20937,12 +20474,9 @@ msgstr "Kļūdas: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the items"
 msgctxt "ActivityInfo|"
 msgid "Path encoding relative"
-msgstr "Saskaiti objektus"
+msgstr "Relatīvā ceļa kodēšana"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21000,12 +20534,9 @@ msgstr "Atrodi atšķirības starp diviem attēliem."
 
 #. Help goal
 #: activities/photo_hunter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Visual letter-recognition. Can move the mouse."
 msgctxt "ActivityInfo|"
 msgid "Visual perception."
-msgstr "Vizuāla burtu atpazīšana. Var izmantot peli."
+msgstr "Attīsti detaļu uztveršanas prasmes."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
