@@ -20574,7 +20574,7 @@ msgstr ""
 "Ordonne les nombres donnés selon un ordre croissant ou décroissant comme "
 "demandé."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."

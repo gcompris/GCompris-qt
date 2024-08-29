@@ -21245,7 +21245,7 @@ msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
 msgstr "Tegn billedet ved at klikke på hvert nummer i den rigtige rækkefølge."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

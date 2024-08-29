@@ -20241,7 +20241,7 @@ msgid ""
 msgstr ""
 "Подредете дадените числа във възходящ или низходящ ред, според заданието."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."

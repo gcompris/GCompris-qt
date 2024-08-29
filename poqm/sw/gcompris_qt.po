@@ -20593,7 +20593,7 @@ msgid ""
 msgstr ""
 "Panga nambari ulizopewa kwa mpangilio wa kupanda au kushuka kama ulivyoombwa."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

@@ -20744,7 +20744,7 @@ msgstr ""
 "Verilmiş sayları tələb olunduğu kimi onların artma və ya azalma ardıcıllığı "
 "ilə düzün."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

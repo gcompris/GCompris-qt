@@ -20375,7 +20375,7 @@ msgstr ""
 "Упарадкуйце дадзеныя лікі ў парадку павелічэння альбо змяншэння паводле "
 "задання."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

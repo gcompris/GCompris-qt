@@ -20390,7 +20390,7 @@ msgid ""
 msgstr ""
 "ചോദിച്ചിരിക്കുന്നതിനനുസരിച്ച് തന്നിരിക്കുന്ന സംഖ്യകളെ ആരോഹണക്രമത്തിലോ അവരോഹണക്രമത്തിലോ ആക്കുക. "
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

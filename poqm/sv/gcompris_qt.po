@@ -20156,7 +20156,7 @@ msgstr ""
 "Arrangera angivna tal enligt instruktionerna i stigande eller fallande "
 "ordning."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."

@@ -20673,7 +20673,7 @@ msgstr ""
 "Korraldage antud numbrid tõusvas või kahanevas järjestuses vastavalt "
 "ülesande kirjeldusele."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

@@ -20674,7 +20674,7 @@ msgid ""
 msgstr ""
 "Расположи указанные числа по возрастанию или убыванию (согласно заданию)"
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

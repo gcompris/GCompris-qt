@@ -20749,7 +20749,7 @@ msgid ""
 msgstr ""
 "Sistemojini numrat e dhënë në rend rritës ose zbritës, siç ju kërkohet."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

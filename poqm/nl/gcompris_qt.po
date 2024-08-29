@@ -20322,7 +20322,7 @@ msgid ""
 msgstr ""
 "Zet de gegeven getallen in oplopende of aflopende volgorde zoals gevraagd."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."

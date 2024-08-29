@@ -20120,7 +20120,7 @@ msgstr ""
 "Razvrstite dana števila v naraščajočem ali padajočem vrstnem redu kot je "
 "zahtevano."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."

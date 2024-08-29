@@ -21168,7 +21168,7 @@ msgstr ""
 "Подредете ги дадените броеви во растечки или опаѓачки редослед како што се "
 "бара."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

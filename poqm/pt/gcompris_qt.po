@@ -21669,7 +21669,7 @@ msgstr ""
 "Organize os números indicados por ordem ascendente ou descendente, tal como "
 "indicado."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

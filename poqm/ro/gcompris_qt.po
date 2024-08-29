@@ -20821,7 +20821,7 @@ msgstr ""
 "Aranjează numerele date în ordine crescătoare sau descrescătoare, cum ți se "
 "cere."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 #, fuzzy
 #| msgctxt "ActivityInfo|"

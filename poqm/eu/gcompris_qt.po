@@ -20242,7 +20242,7 @@ msgstr ""
 "Antolatu emandako zenbakiak hurrenkera gorakorrean edo beherakorrean, "
 "eskatutakoaren arabera."
 
-#. intro: "Arrange the numbers in the correct order." Help goal
+#. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
