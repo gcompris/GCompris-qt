@@ -2092,7 +2092,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr ""
+msgstr "Mana pirmā pele"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2167,13 +2167,13 @@ msgstr ""
 #: activities/baby_tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Baby puzzle"
-msgstr ""
+msgstr "Vienkārša puzle"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "The objective is to assemble the baby puzzle."
-msgstr ""
+msgstr "Atrodi katram objektam atbilstošo formu."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:23
@@ -2202,7 +2202,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "A simplistic word processor to let the children play around with a keyboard "
 "and see letters."
-msgstr ""
+msgstr "Raksti savus pirmos tekstus."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2738,6 +2738,8 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
+"Paredzi nākamo gājienu un piespied otram spēlētājam ievietot bumbu pēdējā "
+"caurumā."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:21
@@ -4535,7 +4537,7 @@ msgstr "Velc un nomet vienumus, lai sakārtotu stāstu."
 #: activities/chronos/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Sort the pictures into the order that tells the story."
-msgstr ""
+msgstr "Mācies atpazīt stāsta hronoloģiju."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -14663,13 +14665,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Guess the algebraic expression and drag the tiles to get a result equal to "
 "the Guesscount."
-msgstr ""
+msgstr "Atrodi vajadzīgās darbības, lai iegūtu prasīto rezultātu."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Intuition and practice of algebraic-like calculations."
-msgstr ""
+msgstr "Trenējies sadalītu rēķināšanu."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14857,7 +14859,7 @@ msgstr "Uzmini dotā vārda burtus."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "This is a good exercise to improve reading and spelling skills."
-msgstr ""
+msgstr "Uzlabo pareizrakstību un vārdu krājumu."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -16564,7 +16566,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "A letter is written. Some words are displayed, and you must find the word or "
 "the words in which this letter appears."
-msgstr ""
+msgstr "Atrodi vārdus ar parādīto burtu."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
@@ -19428,7 +19430,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
 "pieces left or can not move anymore."
-msgstr ""
+msgstr "Attīsti stratēģisko domāšanu un telpiskās vizualizācijas prasmes."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:22
@@ -19437,6 +19439,10 @@ msgid ""
 "Play with Tux. First take turns to place nine pieces, and then take turns to "
 "move your pieces."
 msgstr ""
+"Spēlē ar Tuksu. Vispirms pēc kārtas uzlieciet deviņus kauliņus, bet pēc tam "
+"pēc kārtas pārvietojiet savus kauliņus. Ja Tev ir tikai trīs kauliņi, vari "
+"tos pārvietot uz jebkuru brīvo vietu. Spēlētājs uzvar, kad citi spēlētāji "
+"vairs nevar pārvietot nevienu kauliņu vai ir atlikuši tikai divi kauliņi."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19537,7 +19543,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Form mills (lines of 3 pieces) to remove your opponent's pieces until your "
 "opponent has only 2 pieces left or can not move anymore."
-msgstr ""
+msgstr "Attīsti stratēģisko domāšanu un telpiskās vizualizācijas prasmes."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:22
@@ -19546,6 +19552,10 @@ msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
 "turns to move your pieces."
 msgstr ""
+"Spēlē ar draugu. Vispirms pēc kārtas uzlieciet deviņus kauliņus, bet pēc tam "
+"pēc kārtas pārvietojiet savus kauliņus. Ja Tev ir tikai trīs kauliņi, vari "
+"tos pārvietot uz jebkuru brīvo vietu. Spēlētājs uzvar, kad citi spēlētāji "
+"vairs nevar pārvietot nevienu kauliņu vai ir atlikuši tikai divi kauliņi."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -21228,9 +21238,6 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numerical order"
 msgctxt "ActivityInfo|"
 msgid "Numbers in order"
 msgstr "Skaitliskā kārtība"
@@ -21591,7 +21598,7 @@ msgstr "Atlasi attēlu, kurā bērns atrodas kastei kreisajā pusē."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Programming maze"
-msgstr ""
+msgstr "Programmē ceļu"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -21599,20 +21606,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "This activity teaches to program Tux to reach its goal using simple "
 "instructions like move forward, turn left or right."
-msgstr ""
+msgstr "Programmē ceļu, lai palīdzētu Tuksam noķert zivi."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Tux is hungry. Help him find fish by counting to the correct ice spot."
 msgctxt "ActivityInfo|"
 msgid ""
 "Tux is hungry. Help him find fish by programming him to the correct ice spot."
-msgstr ""
-"Tuksis ir izsalcis. Palīdzi viņam atrast zivis, saskaitot līdz pareizajam "
-"ledus laukumam."
+msgstr "Mācies programmēšanas instrukcijas, lai pārvietotos pa ceļu."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -21847,9 +21848,6 @@ msgstr "Izmantojot gan pamata zonu, gan cikla zonu."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad"
 msgctxt "ActivityInfo|"
 msgid "Railroad activity"
 msgstr "Dzelzceļš"
@@ -22061,7 +22059,7 @@ msgstr "Atkārto doto attēlu spoguļskatā"
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Draw the image on the empty grid as if you saw it in a mirror."
-msgstr ""
+msgstr "Zīmē attēlu simetriski tukšā režģī."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -22258,11 +22256,6 @@ msgstr "Romiešu skaitļi"
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to read and write Roman numerals and convert them to Arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to read roman numerals and do the conversion to and from arabic "
@@ -22285,11 +22278,6 @@ msgstr ""
 "kombinācija."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from Arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -22970,12 +22958,9 @@ msgstr "Mēģini sadalīt saldumu starp noteiktu bērnu skaitu."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction memory game"
 msgctxt "ActivityInfo|"
 msgid "Learn division of numbers."
-msgstr "Atņemšanas atmiņas spēle"
+msgstr "Mācies dalīties un trenējies dalīšanu."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -23472,12 +23457,9 @@ msgstr "Tu vari vienā četrstūrī novietot vairāk par %1 konfektēm"
 
 #. Activity title
 #: activities/simplepaint/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logic training activity"
 msgctxt "ActivityInfo|"
 msgid "A simple drawing activity"
-msgstr "Loģikas attīstīšanas nodarbības"
+msgstr "Zīmē režģī"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -23487,12 +23469,9 @@ msgstr "Izveido savu zīmējumu."
 
 #. Help goal
 #: activities/simplepaint/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills"
 msgctxt "ActivityInfo|"
 msgid "Enhance creative skills."
-msgstr "Lasīšanas prasmju trenēšana"
+msgstr "Izpaud savu radošumu caur zīmēšanu."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -23520,9 +23499,6 @@ msgstr "Saskaiti punktiņus uz metamā kauliņa pirms tas nokrīt."
 
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "In a limited time, count the number of dots"
 msgctxt "ActivityInfo|"
 msgid "In a limited time, count the number of dots."
 msgstr "Ierobežotā laikā saskaiti punktus"
@@ -23641,31 +23617,21 @@ msgstr "Skaitļi ar domino kauliņiem"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on dice before they reach the ground"
 msgctxt "ActivityInfo|"
 msgid "Count the number on the domino before it reaches the ground."
-msgstr "Saskaiti punktus uz kauliņiem, pirms tie sasniedz zemi"
+msgstr "Saskaiti punktiņu skaitu uz domino kauliņiem pirms tie nokrīt."
 
 #. Help goal
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "In a limited time, find the difference between two numbers"
 msgctxt "ActivityInfo|"
 msgid "Count a number in a limited time."
-msgstr "Ierobežotā laikā atrast divu skaitļu starpību"
+msgstr "Mācies skaitīt ierobežotā laikā."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "With the keyboard, type the number of dots you see on the falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number you see on each falling domino."
-msgstr "Ar tastatūras palīdzību ievadi saskaitīto punktu daudzumu uz kauliņa."
+msgstr "Ieraksti krītošā domino kauliņa punktiņu skaitu."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -23732,7 +23698,7 @@ msgstr "Saules sistēma"
 #: activities/solar_system/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Answer the questions with a correctness of 100%."
-msgstr ""
+msgstr "Mācies par Saules sistēmu."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -25116,39 +25082,20 @@ msgstr "Apskaties palīdzības izvēlni, lai uzzinātu, kā vadīt ar taustiņie
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Sudoku, place unique symbols in a square."
 msgctxt "ActivityInfo|"
 msgid "Sudoku, place unique symbols in a grid"
-msgstr "Sudoku, izkārto unikālus simbolus kvadrātā."
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Symbols must be unique in a row, in a column, and (if defined) each "
-#| "region."
 msgctxt "ActivityInfo|"
 msgid ""
 "Symbols must be unique in a row, in a column, and (if defined) in each "
 "region."
-msgstr ""
-"Simboliem jābūt unikāliem vienā rindā, kolonnā un (ja noteikts) katrā "
-"reģionā."
+msgstr "Atrisini sudoku mīklu."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in "
-#| "each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids "
-#| "(called 'regions'), starting with various symbols or numerals given in "
-#| "some cells (the 'givens'). Each row, column and region must contain only "
-#| "one instance of each symbol or numeral (Source &lt;http://en.wikipedia."
-#| "org/wiki/Sudoku&gt;)."
 msgctxt "ActivityInfo|"
 msgid ""
 "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
@@ -25159,12 +25106,8 @@ msgid ""
 "'givens'). Each row, column and region must contain only one instance of "
 "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
 msgstr ""
-"Mērķis ir ievadīt simbolu vai skaitli no 1 līdz 9 katrā lauka šūnā. "
-"Visbiežāk tas ir 9x9 laukums, veidots no 3x3 apakšlaukumiem (sauktiem par "
-"'reģioniem'). Dažās šūnās jau no sākuma tiek ievadīti skaitļi vai simboli "
-"('dotie'). Katrai rindai, kolonnai un reģionam jāsatur viens simbols vai "
-"skaitlis, un tie nedrīkst atkārtoties. (Avots &lt;http://en.wikipedia.org/"
-"wiki/Sudoku&gt;)."
+"Attīsti loģiskās domāšanas prasmes (datu sasaistīšanu, dedukciju) un "
+"telpisko vizualizāciju."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -25180,6 +25123,11 @@ msgid ""
 "Select a number or a symbol in the list and click on its target position. "
 "GCompris will not let you enter an invalid answer."
 msgstr ""
+"Atlasi skaitli vai simbolu un klikšķini, kur vēlies to novietot. Katrs "
+"simbols rindā, kolonnā un kastē var atkārtoties tikai vienu reizi. Ja "
+"programma neļauj veikt kādu darbību, programma pateiks, kāpēc tā ir. Tomēr "
+"uzmanies — lauciņš iespējams kaut ko ievietot nepareizi, kas neļaus salikt "
+"sudoku mīklu un būs kļūda."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -25265,9 +25213,6 @@ msgstr "Tangrams"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the objects to reproduce the given shape."
 msgctxt "ActivityInfo|"
 msgid "The objective is to form a given shape."
 msgstr "Pārvieto objektus, lai izveidotu doto figūru."
@@ -25289,16 +25234,11 @@ msgid ""
 "    1 parallelogram (sides of 1 and square root of 2)\n"
 "    "
 msgstr ""
+"Attīsta telpiskās vizualizācijas, novietojuma atmiņas un modeļu "
+"reproducēšanas prasmes."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "support it. Drag the rotation button or around selected piece to rotate "
-#| "it. Check the activity 'Baby Puzzle' for a simpler introduction to "
-#| "tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -25319,18 +25259,15 @@ msgstr "Trenējies saskaitīšanā ar mērķa spēli"
 
 #. Help title
 #: activities/target/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Hit the target and count your points"
 msgctxt "ActivityInfo|"
 msgid "Hit the target and count your points."
-msgstr "Trāpi mērķī un skaiti savus punktus"
+msgstr "Met šautriņas mērķī un skaiti savu rezultātu."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Throw darts at a target and count your score."
-msgstr "Met šautriņas mērķī un skaiti savu rezultātu."
+msgstr "Trenējies saskaitīt vairākus skaitļus."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -25397,9 +25334,6 @@ msgstr "Mācies atrast saskaitāmos, lai iegūtu desmit."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and addition."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and additions."
 msgstr "Skaitļi no 1 līdz 10 un saskaitīšana."
@@ -25520,9 +25454,6 @@ msgstr "Mācies saskaitīšanā izmantot desmitus."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and addition."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and additions."
 msgstr "Skaitļi no 1 līdz 50 un saskaitīšana."
@@ -25574,7 +25505,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Place three marks in any horizontal, vertical, or diagonal row to win the "
 "game."
-msgstr ""
+msgstr "Attīsti savas stratēģijas prasmes."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -25651,9 +25582,6 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the water cycle."
 msgstr "Mācies par ūdens ciklu."
@@ -25785,9 +25713,6 @@ msgstr "Ievadi krītošos vārdus, pirms tie sasniedz zemi."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard training"
 msgctxt "ActivityInfo|"
 msgid "Keyboard training."
 msgstr "Tastatūras treniņš"
@@ -25804,32 +25729,41 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Ieraksti krītošo vārdu pirms tas sasniedz zemi."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:100 core/ChangeLog.qml:103 core/ChangeLog.qml:109
+#: core/ChangeLog.qml:30
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Translation added for Azerbaijani"
+msgctxt "ChangeLog|"
+msgid "Translation added for Latvian"
+msgstr "Pievienots azerbaidžāņu valodas tulkojums"
+
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
+#: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Daudzi lietojamības uzlabojumi"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:38 core/ChangeLog.qml:47
-#: core/ChangeLog.qml:54 core/ChangeLog.qml:67 core/ChangeLog.qml:105
-#: core/ChangeLog.qml:111
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:37 core/ChangeLog.qml:44
+#: core/ChangeLog.qml:53 core/ChangeLog.qml:60 core/ChangeLog.qml:73
+#: core/ChangeLog.qml:111 core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Daudzi kļūdu labojumi"
 
-#: core/ChangeLog.qml:35
+#: core/ChangeLog.qml:41
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Pievienots tulkojums bulgāru, galisiešu un svahili valodā"
 
-#: core/ChangeLog.qml:37 core/ChangeLog.qml:46 core/ChangeLog.qml:53
-#: core/ChangeLog.qml:66 core/ChangeLog.qml:84 core/ChangeLog.qml:99
-#: core/ChangeLog.qml:104 core/ChangeLog.qml:110
+#: core/ChangeLog.qml:43 core/ChangeLog.qml:52 core/ChangeLog.qml:59
+#: core/ChangeLog.qml:72 core/ChangeLog.qml:90 core/ChangeLog.qml:105
+#: core/ChangeLog.qml:110 core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Daudzi jauni attēli"
 
-#: core/ChangeLog.qml:39
+#: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -25838,17 +25772,17 @@ msgstr ""
 "Jaunas komandrindas iespējas, lai tiešā veidā sāktu darbību noteiktā līmenī "
 "(„--start-level“ līmenis izmantošanai ar „--launch“ aktivitāti)"
 
-#: core/ChangeLog.qml:44
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Pievienots arābu un esperanto tulkojums"
 
-#: core/ChangeLog.qml:45 core/ChangeLog.qml:52
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Daudzi tulkojumu atjauninājumi"
 
-#: core/ChangeLog.qml:51
+#: core/ChangeLog.qml:57
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -25857,22 +25791,22 @@ msgstr ""
 "Jaunas komandrindas iespējas ((--difficulty {value|min-max}), lai „GCompris“ "
 "palaistu ar noteiktu grūtības līmeni"
 
-#: core/ChangeLog.qml:58
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Novērsta kļūme salīdzināšanas aktivitātē"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:68
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Ģeogrāfijas aktivitātei pievienota Spānijas karte"
 
-#: core/ChangeLog.qml:63
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Ukraiņu valodai pievienotas balsis"
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:70
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25881,38 +25815,38 @@ msgstr ""
 "Jauna komandrindas iespēja, lai uzskaitītu visas aktivitātes un sāktu ar "
 "noteiktu"
 
-#: core/ChangeLog.qml:71
+#: core/ChangeLog.qml:77
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
 "images set"
 msgstr "Samazināts pakotnes izmērs visām platformām un ārējām attēlu kopām"
 
-#: core/ChangeLog.qml:72
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Uzlabota attēlu kvalitāte vairākām aktivitātēm"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:79
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Labotas atsevišķas pārejas dažās platformās atjaunīgās enerģijas/ūdens cikla"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:80
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Labotas diakritiskās zīmes taustiņa ignorēšana „Linux“ rakstīšanas "
 "aktivitātēs"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:81
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Fiksēta līmeņa atiestatīšana, manuāli mainot līmeni Loģiskajās asociācijās"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -25920,37 +25854,37 @@ msgstr ""
 "Labota alfabētiskā secība, nepāra un pāra skaitļi un skaitļi kārtošanas "
 "aktivitātēs"
 
-#: core/ChangeLog.qml:83 core/ChangeLog.qml:91
+#: core/ChangeLog.qml:89 core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Vairāku kļūdu labojumi"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Tulkojumu atjauninājumi krievu valodai"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Jaunas balsis jaunnorvēģu valodai"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Tulkojumi bretoņu, čehu un maķedoniešu valodā."
 
-#: core/ChangeLog.qml:95
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Pievienots azerbaidžāņu valodas tulkojums"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Jaunas kartes un karšu atjauninājumi ģeogrāfijas aktivitātēm"
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:103
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -25959,7 +25893,7 @@ msgstr ""
 "Jauna datu kopa, kas satur ciklu operācijas labirintu programmēšanai, un "
 "pamācītu attēli padarīti tulkojami"
 
-#: core/ChangeLog.qml:98
+#: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -25968,57 +25902,57 @@ msgstr ""
 "Līmeņa pievienošana, lai mācītu sprieguma avota ciklu analogās elektrības "
 "aktivitātē"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:114
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Jauna aktivitāšu iestatījumu izvēlne ar datu kopas atlasi"
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Jaunas apakškategorijas aktivitāšu organizēšanai"
 
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Pievienots tulkojums maķedoniešu valodai."
 
-#: core/ChangeLog.qml:116
+#: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Jaunas aktivitātes: labirinta programmēšana un bērnu tangrams"
 
-#: core/ChangeLog.qml:117
+#: core/ChangeLog.qml:123
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Jauni fona mūzikas un skaļuma iestatījumi."
 
-#: core/ChangeLog.qml:118
+#: core/ChangeLog.qml:124
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Jauni ātruma iestatījumi vairākās aktivitātēs."
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Jauna iespēja šahā parādīt paņemtās figūras."
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Jauni attēli krāsu, papildu krāsu un mērķa spēlē."
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Jaunas balsis ASV angļu valodai."
 
-#: core/ChangeLog.qml:122 core/ChangeLog.qml:130
+#: core/ChangeLog.qml:128 core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Daudzi sīki labojumi un uzlabojumi."
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26027,18 +25961,18 @@ msgstr ""
 "Atjaunināts tulkojums vairākām valodām (bretoņu, Brazīlijas portugāļu, "
 "somu...)."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Pievienota krievu valodas datu kopa klikšķināšanas uz burta aktivitātei."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Valodu aktivitāte holandiešu valodā."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26047,17 +25981,17 @@ msgstr ""
 "Valstu aktivitātē apvienoti Norvēģijas novadi Nūrtrendelāga un Sērtrendelāga "
 "vienā Trendelāgas novadā."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:133
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Labojums Braila aktivitātēs, šūnām sākoties ar 1, bet ne 0."
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Pievienots tulkojums basku, ungāru un malaju valodai."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26066,47 +26000,47 @@ msgstr ""
 "Izveidotā satura ielāde/saglabāšana (bērnu tekstapstrādes programma, "
 "līdzsvara kaste un klavieru kompozīcija)."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Pievienots tulkojums skotu gēlu valodai."
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Konfigurācijai ir pievienota licences lapa."
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Vairākas izkārtojuma izmaiņas ergonomikas uzlabošanai"
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Valodas aktivitāte ir pieejama poļu, zviedru un ukraiņu valodai."
 
-#: core/ChangeLog.qml:133
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Meklēšanas iespēja."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Izmaiņu žurnāls."
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Daudzi sīki labojumi."
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Valodas aktivitāte pieejama franču valodai."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26115,7 +26049,7 @@ msgstr ""
 "Pievienots ielādēšanās virsekrāns, lai lietotāju informētu par notiekošajām "
 "darbībām (piemēram, aktivitātes ielādi), kas var aizņemt kādu laiku."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26125,12 +26059,12 @@ msgstr ""
 "(92% iztulkoti), krievu (98% iztulkoti), slovāku (92% iztulkoti), turku "
 "valodai."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Pievienoti tulkojumi slovēņu, vācu un galisiešu valodai."
 
-#: core/ChangeLog.qml:191
+#: core/ChangeLog.qml:197
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
