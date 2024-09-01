@@ -90,7 +90,7 @@ ActivityBase {
     }
     function newVoicesDialog() {
         Core.showMessageDialog(activity,
-                qsTr("You selected a new locale, you need to restart GCompris to use it.<br/>Do you want to download the corresponding sound files now?"),
+                qsTr("You selected a new locale, do you want to download the corresponding sound files now?"),
                 qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(

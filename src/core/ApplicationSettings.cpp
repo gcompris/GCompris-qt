@@ -175,6 +175,8 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
     connect(this, &ApplicationSettings::backgroundMusicVolumeChanged, this, &ApplicationSettings::notifyBackgroundMusicVolumeChanged);
     connect(this, &ApplicationSettings::audioEffectsVolumeChanged, this, &ApplicationSettings::notifyAudioEffectsVolumeChanged);
+
+    connect(this, &ApplicationSettings::localeChanged, ApplicationInfo::getInstance(), qOverload<>(&ApplicationInfo::switchLocale));
 }
 
 ApplicationSettings::~ApplicationSettings()

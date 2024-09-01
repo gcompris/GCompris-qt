@@ -517,8 +517,8 @@ Item {
         }
 
         // Set font capitalization
-        for(i = 0 ; i < fontCapitalizationModel.length ; i ++) {
-            if(fontCapitalizationModel[i].value === ApplicationSettings.fontCapitalization) {
+        for(i = 0 ; i < fontCapitalizationModel.count ; i ++) {
+            if(fontCapitalizationModel.get(i).value === ApplicationSettings.fontCapitalization) {
                 fontCapitalizationBox.currentIndex = i;
                 break;
             }
@@ -542,7 +542,7 @@ Item {
         ApplicationSettings.exitConfirmation = exitConfirmation
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
-        ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
+        ApplicationSettings.fontCapitalization = fontCapitalizationModel.get(fontCapitalizationBox.currentIndex).value
 
         if(ApplicationSettings.filterLevelMin !== minFilter ||
            ApplicationSettings.filterLevelMax !== maxFilter) {
@@ -568,6 +568,8 @@ Item {
                 DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
             }
         }
+        languageBox.restoreBinding();
+        fontCapitalizationBox.restoreBinding();
     }
 
     ListModel {
@@ -614,11 +616,21 @@ Item {
         }
     }
 
-    property var fontCapitalizationModel: [
-        { text: qsTr("Mixed case (default)"), value: Font.MixedCase },
-        { text: qsTr("All uppercase"), value: Font.AllUppercase },
-        { text: qsTr("All lowercase"), value: Font.AllLowercase }
-    ]
+    ListModel {
+        id: fontCapitalizationModel
+        ListElement {
+            text: qsTr("Mixed case (default)")
+            value: Font.MixedCase
+        }
+        ListElement {
+            text: qsTr("All uppercase")
+            value: Font.AllUppercase
+        }
+        ListElement {
+            text: qsTr("All lowercase")
+            value: Font.AllLowercase
+        }
+    }
 
     function isFilteredBackgroundMusicChanged(): bool {
         initialFilteredMusic = ApplicationSettings.filteredBackgroundMusic
@@ -638,7 +650,7 @@ Item {
         (ApplicationSettings.font = fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
-        (ApplicationSettings.fontCapitalization !== fontCapitalizationModel[(fontcapitalizationBox.currentIndex)].value) ||
+        (ApplicationSettings.fontCapitalization !== fontCapitalizationModel.get(fontcapitalizationBox.currentIndex).value) ||
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||

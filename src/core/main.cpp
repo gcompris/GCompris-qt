@@ -11,10 +11,8 @@
 #include <QApplication>
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
-#include <QQmlComponent>
 #include <QStandardPaths>
 #include <QObject>
-#include <QTranslator>
 #include <QCommandLineParser>
 #include <QCursor>
 #include <QPixmap>
@@ -24,98 +22,6 @@
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
-
-bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
-{
-    QFile file("assets:/share/GCompris/gcompris_" + locale + ".qm");
-
-    file.open(QIODevice::ReadOnly);
-    QDataStream in(&file);
-
-    qint64 fileSize = file.size();
-    uchar *data = (uchar *)malloc(fileSize);
-
-    if (!file.exists())
-        qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
-
-    in.readRawData((char *)data, fileSize);
-
-    if (!translator.load(data, fileSize)) {
-        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
-        free(data);
-        return false;
-    }
-    // Do not free data, it is still needed by translator
-    return true;
-}
-
-/**
- * Checks if the locale is supported. Locale may have been removed because
- * translation progress was not enough or invalid language put in configuration.
- */
-bool isSupportedLocale(const QString &locale)
-{
-    bool isSupported = false;
-    QQmlEngine engine;
-    QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
-    QObject *object = component.create();
-    if (!object) {
-        qWarning() << "isSupportedLocale:" << component.errors();
-        return false;
-    }
-    QVariant variant = object->property("languages");
-    QJSValue languagesList = variant.value<QJSValue>();
-    const int length = languagesList.property("length").toInt();
-    for (int i = 0; i < length; ++i) {
-        if (languagesList.property(i).property("locale").toString() == locale) {
-            isSupported = true;
-        }
-    }
-    delete object;
-    return isSupported;
-}
-// Return the locale
-QString loadTranslation(const QSettings &config, QTranslator &translator)
-{
-    QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
-
-    if (!isSupportedLocale(locale)) {
-        qDebug() << "locale" << locale << "not supported, defaulting to" << GC_DEFAULT_LOCALE;
-        locale = GC_DEFAULT_LOCALE;
-        ApplicationSettings::getInstance()->setLocale(locale);
-    }
-
-    if (locale == GC_DEFAULT_LOCALE)
-        locale = QString(QLocale::system().name() + ".UTF-8");
-
-    if (locale == "C.UTF-8")
-        locale = "en_US.UTF-8";
-
-    // Load translation
-    // Remove .UTF8
-    locale.remove(".UTF-8");
-
-#if defined(Q_OS_ANDROID)
-    if (!loadAndroidTranslation(translator, locale))
-        loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
-#else
-
-#if (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
-    // only useful for translators: load from $application_dir/../share/... if exists as it is where kde scripts install translations
-    if (translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale))) {
-        qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale);
-    }
-    else if (translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]))) {
-        qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]);
-    }
-    else
-#endif
-        if (!translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
-        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
-    }
-#endif
-    return locale;
-}
 
 int main(int argc, char *argv[])
 {
@@ -222,12 +128,6 @@ int main(int argc, char *argv[])
     plugin.registerTypes("GCompris");
     ActivityInfoTree::registerResources();
 
-    // Load translations
-    QTranslator translator;
-    loadTranslation(config, translator);
-    // Apply translation
-    app.installTranslator(&translator);
-
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
 
@@ -315,6 +215,10 @@ int main(int argc, char *argv[])
         ActivityInfoTree::getInstance()->setStartingActivity(startingActivity, startingLevel - 1);
     }
 
+    // Load translations
+    QString locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
+    ApplicationInfo::getInstance()->switchLocale(locale);
+
     QQmlApplicationEngine engine;
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
@@ -328,6 +232,7 @@ int main(int argc, char *argv[])
 #endif
 
     ApplicationInfo::getInstance()->setBox2DInstalled(engine);
+
     // We load the main file after checking for box2d to avoid computing multiple times the menu
     engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));
 
@@ -369,7 +274,7 @@ int main(int argc, char *argv[])
         ApplicationSettings::getInstance()->setDifficultyFromCommandLine(minDifficulty, maxDifficulty);
         ActivityInfoTree::getInstance()->minMaxFiltersChanged(minDifficulty, maxDifficulty, false);
         ActivityInfoTree::getInstance()->filterByTag("favorite", "", false);
-        if(parser.isSet(clStartOnActivity) && ActivityInfoTree::getInstance()->launchedActivityMissGivenDifficulty()){
+        if (parser.isSet(clStartOnActivity) && ActivityInfoTree::getInstance()->launchedActivityMissGivenDifficulty()) {
             qWarning() << "The launched activity doesn't contain any level for given difficulty range";
             return -1;
         }
@@ -396,6 +301,6 @@ int main(int argc, char *argv[])
         window->show();
     }
 #endif
-    
+
     return app.exec();
 }

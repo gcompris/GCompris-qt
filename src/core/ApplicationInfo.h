@@ -18,6 +18,7 @@
 
 #include <QObject>
 #include <QSslSocket>
+#include <QTranslator>
 
 class QQmlEngine;
 class QQuickWindow;
@@ -274,6 +275,14 @@ public:
     {
         return localeShort(ApplicationSettings::getInstance()->locale());
     }
+
+    /**
+     * Switch the locale in GCompris to the new one.
+     * The locale will be fetched from ApplicationSettings if not passed in parameter
+     */
+    void switchLocale();
+    void switchLocale(const QString &locale);
+
     static QString GCVersion() { return VERSION; }
     static int GCVersionCode() { return VERSION_CODE; }
     static QString QTVersion() { return qVersion(); }
@@ -284,7 +293,7 @@ public:
     void setUseOpenGL(bool useOpenGL) { m_useOpenGL = useOpenGL; }
 
     bool isBox2DInstalled() const { return m_isBox2DInstalled; }
-    void setBox2DInstalled(const QQmlEngine &engine);
+    void setBox2DInstalled(QQmlEngine &engine);
 
     /**
      * Returns the native screen orientation.
@@ -436,6 +445,8 @@ Q_SIGNALS:
 
 private:
     static ApplicationInfo *m_instance;
+    QQmlEngine *m_engine { nullptr };
+    QTranslator m_translator;
     int m_applicationWidth;
     Platform m_platform;
     bool m_isPortraitMode;
@@ -451,6 +462,10 @@ private:
     QStringList m_backgroundMusicFromRcc;
 
     static QQuickWindow *m_window;
+
+    bool loadAndroidTranslation(const QString &locale);
+    bool isSupportedLocale(const QString &locale);
+    QString loadTranslation(const QString &requestedLocale);
 };
 
 #endif // APPLICATIONINFO_H

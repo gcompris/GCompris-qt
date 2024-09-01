@@ -225,8 +225,9 @@ void ApplicationInfo::notifyFullscreenChanged()
 }
 
 // Would be better to create a component importing Box2D 2.0 using QQmlContext and test if it exists but it does not work.
-void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine)
+void ApplicationInfo::setBox2DInstalled(QQmlEngine &engine)
 {
+    m_engine = &engine;
     /*
       QQmlContext *context = new QQmlContext(engine.rootContext());
       context->setContextObject(&myDataSet);
@@ -284,6 +285,118 @@ QVariantList ApplicationInfo::localeSort(QVariantList list,
                   return (localeCompare(a.toString(), b.toString(), locale) < 0);
               });
     return list;
+}
+
+bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
+{
+    QFile file("assets:/share/GCompris/gcompris_" + locale + ".qm");
+
+    file.open(QIODevice::ReadOnly);
+    QDataStream in(&file);
+
+    qint64 fileSize = file.size();
+    uchar *data = (uchar *)malloc(fileSize);
+
+    if (!file.exists())
+        qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
+
+    in.readRawData((char *)data, fileSize);
+
+    if (!m_translator.load(data, fileSize)) {
+        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
+        free(data);
+        return false;
+    }
+    // Do not free data, it is still needed by translator
+    return true;
+}
+
+/**
+ * Checks if the locale is supported. Locale may have been removed because
+ * translation progress was not enough or invalid language put in configuration.
+ */
+bool ApplicationInfo::isSupportedLocale(const QString &locale)
+{
+    bool isSupported = false;
+    QQmlEngine engine;
+    QQmlComponent component(&engine, QUrl("qrc:/gcompris/src/core/LanguageList.qml"));
+    QObject *object = component.create();
+    if (!object) {
+        qWarning() << "isSupportedLocale:" << component.errors();
+        return false;
+    }
+    QVariant variant = object->property("languages");
+    QJSValue languagesList = variant.value<QJSValue>();
+    const int length = languagesList.property("length").toInt();
+    for (int i = 0; i < length; ++i) {
+        if (languagesList.property(i).property("locale").toString() == locale) {
+            isSupported = true;
+        }
+    }
+    delete object;
+    return isSupported;
+}
+
+// Return the locale
+QString ApplicationInfo::loadTranslation(const QString &requestedLocale)
+{
+    QString locale = requestedLocale;
+    if (!isSupportedLocale(locale)) {
+        qDebug() << "locale" << locale << "not supported, defaulting to" << GC_DEFAULT_LOCALE;
+        locale = GC_DEFAULT_LOCALE;
+        ApplicationSettings::getInstance()->setLocale(locale);
+    }
+
+    if (locale == GC_DEFAULT_LOCALE)
+        locale = QString(QLocale::system().name() + ".UTF-8");
+
+    if (locale == "C.UTF-8")
+        locale = "en_US.UTF-8";
+
+    // Load translation
+    // Remove .UTF8
+    locale.remove(".UTF-8");
+
+#if defined(Q_OS_ANDROID)
+    if (!loadAndroidTranslation(locale))
+        loadAndroidTranslation(ApplicationInfo::localeShort(locale));
+#else
+
+#if (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
+    // only useful for translators: load from $application_dir/../share/... if exists as it is where kde scripts install translations
+    if (m_translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale))) {
+        qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale);
+    }
+    else if (m_translator.load("gcompris_qt.qm", QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]))) {
+        qDebug() << "load translation for locale " << locale << " in " << QString("%1/../share/locale/%2/LC_MESSAGES").arg(QCoreApplication::applicationDirPath(), locale.split('_')[0]);
+    }
+    else
+#endif
+        if (!m_translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
+        qDebug() << "Unable to load translation for locale " << locale << ", use en_US by default";
+    }
+#endif
+    return locale;
+}
+
+void ApplicationInfo::switchLocale()
+{
+    switchLocale(ApplicationSettings::getInstance()->locale());
+}
+
+void ApplicationInfo::switchLocale(const QString &locale)
+{
+    qDebug() << "switch locale to" << locale;
+
+    // Remove previous translation
+    QCoreApplication::removeTranslator(&m_translator);
+    loadTranslation(locale);
+    // Apply translation
+    QCoreApplication::installTranslator(&m_translator);
+
+    if (m_engine) {
+        m_engine->retranslate();
+    }
 }
 
 QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,

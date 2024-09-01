@@ -55,7 +55,6 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<quint32>("previousHeight");
     QTest::addColumn<quint32>("previousWidth");
     QTest::addColumn<bool>("isVirtualKeyboard");
-    QTest::addColumn<QString>("locale");
     QTest::addColumn<QString>("font");
     QTest::addColumn<bool>("isEmbeddedFont");
     QTest::addColumn<quint32>("fontCapitalization");
@@ -78,8 +77,8 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<qreal>("audioEffectsVolume");
     QTest::addColumn<QStringList>("filteredBackgroundMusic");
     
-    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << true << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer" << (qreal)0.5 << (qreal)0.7 << (QStringList() << "music1");
-    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << false << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer" << (qreal)1.0 << (qreal)0.0 << (QStringList() << "music2" << "music3");
+    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << true << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer" << (qreal)0.5 << (qreal)0.7 << (QStringList() << "music1");
+    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << false << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer" << (qreal)1.0 << (qreal)0.0 << (QStringList() << "music2" << "music3");
 }
 
 void CoreApplicationSettingsTest::ApplicationSettingsTest()
@@ -93,7 +92,6 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest()
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(quint32, previousHeight, setPreviousHeight, previousHeightChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(quint32, previousWidth, setPreviousWidth, previousWidthChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isVirtualKeyboard, setVirtualKeyboard, virtualKeyboardChanged);
-    APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, locale, setLocale, localeChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, font, setFont, fontChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isEmbeddedFont, setIsEmbeddedFont, embeddedFontChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(quint32, fontCapitalization, setFontCapitalization, fontCapitalizationChanged);

@@ -84,6 +84,14 @@ Item {
         currentText = isModelArray ? model[currentIndex].text : (model && model.get(currentIndex) ? model.get(currentIndex).text : "")
     }
 
+    // This function is called when we change locale to dynamically change it without restart
+    function restoreBinding() {
+        // This is done for font capitalisation box, else the text does not refresh
+        currentIndexChanged();
+        // This is done to reset the binding of the language box, else the index is reset to 0 after changing locale
+        gridview.currentIndex = Qt.binding(function() { return currentIndex });
+    }
+
     /**
      * type:Column
      * Combobox display when inactive: the label and the button with current choice.
