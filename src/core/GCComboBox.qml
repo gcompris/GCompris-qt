@@ -213,7 +213,6 @@ Item {
                     }
                 }
             }
-            gridview.currentIndex = currentIndex;
         }
 
         // Accept the change. Updates the currentIndex and text of the button
