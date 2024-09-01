@@ -26207,8 +26207,6 @@ msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 
 #: core/ChangeLog.qml:30
 #, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
