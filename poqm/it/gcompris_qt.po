@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-06-01 10:48+0200\n"
+"PO-Revision-Date: 2024-08-30 14:42+0200\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -7056,7 +7056,7 @@ msgid ""
 msgstr ""
 "La mucca fa «muu». Le mucche hanno un ampio campo visivo di 330°. Hanno un "
 "pozzo-sviluppato il senso del gusto, con circa 20.000 papille gustative. "
-"Possono rilevareodori a 8 km di distanza."
+"Possono rilevare odori a 8 km di distanza."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
@@ -26148,12 +26148,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Digita la parola completa mentre cade, prima che tocchi terra."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Traduzione aggiunte per azero"
+msgstr "Traduzione aggiunta per lettone"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
@@ -26300,7 +26297,7 @@ msgstr "Traduzione aggiunta per bretone, ceco e macedone."
 #: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "Traduzione aggiunte per azero"
+msgstr "Traduzione aggiunta per azero"
 
 #: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
