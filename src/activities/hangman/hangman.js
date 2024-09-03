@@ -111,6 +111,10 @@ function initLevel() {
 }
 
 function processKeyPress(text) {
+    if(items.ok.visible){
+        items.ok.clicked();
+        return;
+    }
     if(items.remainingLife === 0 || items.goodIcon.visible) {
         return
     }
