@@ -26721,12 +26721,9 @@ msgstr ""
 "gantañ."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Ouzhpennet eo bet an droidigezh evit ar Azerbaijani"
+msgstr "Ouzhpennet eo bet an droidigezh evit al Latveg"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109

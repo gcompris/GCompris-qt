@@ -1278,7 +1278,7 @@ msgid ""
 msgstr ""
 "Krou koubladoù niveroù par da zek. Dibab un niver, choaz goude un niver all "
 "er memes jedadenn a-benn eskemm o flas. Dibab goude kombod an disoc'h a-benn "
-"biskrivañ an disoc'h."
+"bizskrivañ an disoc'h."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
