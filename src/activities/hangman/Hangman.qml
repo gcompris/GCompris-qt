@@ -177,7 +177,7 @@ ActivityBase {
                     text = "";
                 }
             }
-            onAccepted: if(items.remainingLife === 0) Activity.nextSubLevel()
+            onAccepted: if(ok.visible) ok.clicked()
         }
 
         Item {
