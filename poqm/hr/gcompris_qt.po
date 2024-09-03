@@ -9727,7 +9727,7 @@ msgstr ""
 #: activities/frieze/resource/9/Data.qml:17
 msgctxt "Data|"
 msgid "Copy and complete this frieze."
-msgstr "Kopiraj i dovrši ovaj niz"
+msgstr "Kopiraj i dovrši ovaj niz."
 
 #: activities/frieze/resource/14/Data.qml:13
 msgctxt "Data|"
@@ -14056,7 +14056,7 @@ msgstr "Očitaj brojevnu crtu"
 #: activities/graduated_line_read/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Read values on a graduated line."
-msgstr "Očitaj vrijednosti na brojevnoj crti"
+msgstr "Očitaj vrijednosti na brojevnoj crti."
 
 #. Help goal
 #: activities/graduated_line_read/ActivityInfo.qml:19
@@ -25242,18 +25242,18 @@ msgid ""
 "    1 parallelogram (sides of 1 and square root of 2)\n"
 "    "
 msgstr ""
-"Tangram (kineski: doslovno 'sedam ploča lukavstva') je kineska zagonetka. "
-"Dok se za tangram često kaže da je drevan, njegovo postojanje je potvrđeno "
-"tek 1800. godine. Sastoji se od 7 dijelova, koji se nazivaju tan, koji se "
-"uklapaju u kvadrat; Koristeći kvadratnu stranicu kao 1 jedinicu, 7 dijelova "
-"sadrži:\n"
+"Prema Wikipediji, tangram (kineski: doslovno 'sedam ploča lukavstva') je "
+"kineska zagonetka. Dok se za tangram često kaže da je drevan, njegovo "
+"postojanje je potvrđeno tek 1800. godine. Sastoji se od 7 dijelova, koji se "
+"nazivaju tan, koji se uklapaju u kvadrat; Koristeći kvadratnu stranicu kao 1 "
+"jedinicu, 7 dijelova sadrži:\n"
 "     5 pravokutnih jednakokračnih trokuta, uključujući:\n"
 "         - 2 mala jednakokračna pravokutna trokuta\n"
 "         - 1 jednakokračni pravokutni trokut srednje veličine)\n"
 "         - 2 velika jednakokračna pravokutna trokuta\n"
 "     1 kvadrat i\n"
 "     1 paralelogram\n"
-"Izvor: Wikipedia"
+"    "
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:31
@@ -25749,12 +25749,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Upišite cijelu riječ dok pada, prije nego što dotakne tlo."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Prijevod dodan za azerbajdžanski"
+msgstr "Dodan latvijski prijevod"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
