@@ -15,18 +15,18 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var currentSubLevel
-var numberOfLevel
-var maxSubLevel
-var items
+var currentSubLevel;
+var numberOfLevel;
+var maxSubLevel;
+var items;
 
-var currentWord
-var sp ="_ "
-var dataset = null
-var lessons
-var wordList
-var subLevelsLeft
-var alreadyTypedLetters
+var currentWord;
+var sp ="_ ";
+var dataset = null;
+var lessons;
+var wordList;
+var subLevelsLeft;
+var alreadyTypedLetters;
 
 // js strings are immutable, can't replace letter like that...
 // http://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
@@ -35,22 +35,22 @@ String.prototype.replaceAt = function(index, character) {
 }
 
 function start(items_) {
-    items = items_
+    items = items_;
     currentSubLevel = 0;
     items.remainingLife = 6;
 
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
 
-    var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
+    var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/";
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale})
+    GCompris.DownloadManager.updateResource(GCompris.GCompris.VOICES, {"locale": locale});
 
     var data = Lang.loadDataset(items.parser, resourceUrl, locale);
     dataset = data["dataset"];
     items.background.englishFallback = data["englishFallback"];
-    lessons = Lang.getAllLessons(dataset)
-    numberOfLevel = lessons.length
+    lessons = Lang.getAllLessons(dataset);
+    numberOfLevel = lessons.length;
     items.currentLevel = Core.getInitialLevel(numberOfLevel);
     initLevel();
 }
@@ -73,17 +73,17 @@ function initLevel() {
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.visible = true;
 
-    subLevelsLeft = []
+    subLevelsLeft = [];
     for(var i in wordList)
-        subLevelsLeft.push(i)
+        subLevelsLeft.push(i);
 
     initSubLevel();
 
     //to set the layout...populate
     var letters = new Array();
-    for (var i = 0; i < wordList.length; i++) {
+    for(var i = 0; i < wordList.length; i++) {
         var word = wordList[i].translatedTxt;
-        for (var j = 0; j < word.length; j++) {
+        for(var j = 0; j < word.length; j++) {
             var letter = word.charAt(j).toLocaleLowerCase();
             if (letters.indexOf(letter) === -1)
                 letters.push(letter);
@@ -91,9 +91,9 @@ function initLevel() {
     }
     letters = GCompris.ApplicationInfo.localeSort(letters, items.locale);
     // Remove space character if in list
-    var indexOfSpace = letters.indexOf(' ')
+    var indexOfSpace = letters.indexOf(' ');
     if(indexOfSpace > -1)
-        letters.splice(indexOfSpace, 1)
+        letters.splice(indexOfSpace, 1);
     // generate layout from letter map
     var layout = new Array();
     var row = 0;
@@ -111,7 +111,7 @@ function initLevel() {
 }
 
 function processKeyPress(text) {
-    if(items.ok.visible){
+    if(items.ok.visible) {
         items.ok.clicked();
         return;
     }
@@ -119,7 +119,7 @@ function processKeyPress(text) {
         return
     }
 
-    text = text.toLocaleLowerCase()
+    text = text.toLocaleLowerCase();
 
     // Check if the character has already been typed
     if(alreadyTypedLetters.indexOf(text) !== -1) {
@@ -130,7 +130,7 @@ function processKeyPress(text) {
     alreadyTypedLetters.push(text);
 
     // add the typed character in the "Attempted characters" text field
-    createAttemptedText()
+    createAttemptedText();
 
     // Get all the indices of this letter in the word
     var indices = [];
@@ -145,7 +145,7 @@ function processKeyPress(text) {
         // If no more life, we display the good word and show the bonus
         if(--items.remainingLife == 0) {
             items.hidden.text = items.goodWord.translatedTxt;
-            items.playWord()
+            items.playWord();
             items.bonus.bad("lion");
             return;
         }
@@ -163,7 +163,7 @@ function processKeyPress(text) {
         items.maskThreshold = 0;
         items.playWord();
         items.hidden.text = items.goodWord.translatedTxt;
-        items.goodIcon.visible = true
+        items.goodIcon.visible = true;
         items.winTimer.start();
     }
 }
@@ -186,21 +186,21 @@ function initSubLevel() {
     if(items.score.currentSubLevel < items.score.numberOfSubLevels)
         items.score.currentSubLevel = currentSubLevel + 1;
     else
-        items.score.visible = false
-    items.goodWordIndex = subLevelsLeft.pop()
-    items.ok.visible = false
-    items.goodIcon.visible = false
-    items.goodWord = wordList[items.goodWordIndex]
+        items.score.visible = false;
+    items.goodWordIndex = subLevelsLeft.pop();
+    items.ok.visible = false;
+    items.goodIcon.visible = false;
+    items.goodWord = wordList[items.goodWordIndex];
     items.wordImage.changeSource(items.goodWord.image);
     items.remainingLife = 6;
     alreadyTypedLetters = new Array();
     currentWord = items.goodWord.translatedTxt;
-    items.hidden.text = ""
-    createAttemptedText()
+    items.hidden.text = "";
+    createAttemptedText();
 
     for(var i = 0; i < currentWord.length ; ++ i) {
         if(currentWord[i] == " ") {
-            items.hidden.text = items.hidden.text + " " + " "
+            items.hidden.text = items.hidden.text + " " + " ";
         } else {
             items.hidden.text = items.hidden.text + sp;
         }
@@ -208,8 +208,8 @@ function initSubLevel() {
 }
 
 function createAttemptedText() {
-    alreadyTypedLetters.sort()
-    items.guessedText.text = qsTr("Attempted: %1").arg(alreadyTypedLetters.join(", "))
+    alreadyTypedLetters.sort();
+    items.guessedText.text = qsTr("Attempted: %1").arg(alreadyTypedLetters.join(", "));
 }
 
 function nextSubLevel() {
