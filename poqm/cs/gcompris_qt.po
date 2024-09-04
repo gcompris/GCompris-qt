@@ -14773,7 +14773,7 @@ msgstr ""
 "Pokud je volba \"Říct slova pro hledání...\" aktivní a je k dispozici "
 "odpovídající hlas, uslyšíš slovo, které hledáš, pokud zbývají tři pokusy."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

@@ -15449,7 +15449,7 @@ msgstr ""
 "Əgər \"Tapılacaq sözü səsləndirin\" seçimi aktivdirsə və uyğun səs "
 "mövcuddursa, üç cəhd qaldıqda tapılacaq sözü eşidəcəksiniz."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

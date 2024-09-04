@@ -14965,7 +14965,7 @@ msgstr ""
 "إذا تم تنشيط خيار \"نطق الكلمات التي تبحث عنها...\" ، وإذا كان الصوت المناسب "
 "متاحًا ، فستسمع الكلمة المطلوبة حين تبقى ثلاث محاولات."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-08-23 22:25+0300\n"
+"PO-Revision-Date: 2024-09-03 10:34+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -10054,18 +10054,13 @@ msgstr ""
 "форм, колераў/знакаў і памераў."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 6 і 8, любыя камбінацыі форм, "
-"колераў/знакаў і памераў."
+"Скапіюйце і завяршыце гэты фрыз: шаблоны паміж 16 і 20, любыя камбінацыі "
+"форм, колераў/знакаў і памераў."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10075,12 +10070,9 @@ msgstr "Знайдзіце рэгіён"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
-msgstr "Перацягніце рэгіёны, каб запоўніць мапы краін."
+msgstr "Размясціце рэгіёны, каб запоўніць мапы краін."
 
 #. Help goal
 #: activities/geo-country/ActivityInfo.qml:24
@@ -10090,11 +10082,6 @@ msgstr ""
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
@@ -12893,11 +12880,6 @@ msgstr ""
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
@@ -14025,12 +14007,10 @@ msgstr ""
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
-msgstr "Уводзьце падаючыя літары перад тым, як яны дакрануцца зямлі."
+msgstr ""
+"Уводзьце падаючыя літары з клавіятуры перад тым, як яны дакрануцца зямлі."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -14858,17 +14838,12 @@ msgstr "Навучыцеся вылічваць пры дапамозе чаты
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using additions, subtractions, multiplications "
-#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
 "division."
 msgstr ""
-"Умею лічыць, карыстаючыся складаннем, адыманнем, множаннем і дзяленнем."
+"Уменне лічыць, карыстаючыся складаннем, адыманнем, множаннем і дзяленнем."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -14966,12 +14941,9 @@ msgstr ""
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Практыка множання."
+msgstr "Практыка вылічэнняў з раскладаннем."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -15196,7 +15168,7 @@ msgstr ""
 "запіс голасу даступны, вы пачуеце слова для пошуку калі застанецца тры "
 "спробы."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

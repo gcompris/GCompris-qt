@@ -15037,7 +15037,7 @@ msgstr ""
 "Če je vključena možnost \"Izgovori iskane besede...\", in če je je na voljo "
 "ustrezen glas, boste zaslišali besedo, ko so preostali le še trije poskusi."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

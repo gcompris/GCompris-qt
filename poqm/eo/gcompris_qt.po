@@ -15097,7 +15097,7 @@ msgstr ""
 "responda voĉo disponeblas, vi aŭdos la vorton por trovi kiam restas tri "
 "provoj."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

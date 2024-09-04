@@ -15067,7 +15067,7 @@ msgstr ""
 "motsvarande röst är tillgänglig, hör du orden för att ta reda på när tre "
 "försök återstår."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

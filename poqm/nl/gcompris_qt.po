@@ -15175,7 +15175,7 @@ msgstr ""
 "bijbehorende stem beschikbaar is, zul je het te vinden woord horen wanneer "
 "drie pogingen overblijven."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

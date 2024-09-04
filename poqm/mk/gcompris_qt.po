@@ -15820,7 +15820,7 @@ msgstr ""
 "соодветниот глас е достапен, ќе го слушнете бараниот збор кога ви остануваат "
 "уште три обиди."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

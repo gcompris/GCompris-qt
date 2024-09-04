@@ -15414,7 +15414,7 @@ msgstr ""
 "Kui valik \"Räägi otsimiseks sõnu...\" on aktiveeritud ja kui vastav hääl on "
 "saadaval, kuulete sõna, mida leida, kui kolm katset on jäänud."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

@@ -15264,7 +15264,7 @@ msgstr ""
 "hangfile elérhető, az adott szót fogod hallani, ha már csak három "
 "lehetőséged maradt"
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

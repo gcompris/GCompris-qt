@@ -15409,7 +15409,7 @@ msgstr ""
 "përkatës është instaluar, do të dëgjoni fjalën që duhet të gjeni, kur ju "
 "mbeten edhe tre përpjekje."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

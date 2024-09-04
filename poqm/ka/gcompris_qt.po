@@ -1558,6 +1558,8 @@ msgid ""
 "Warning! Circuit has a voltage source loop or a source shorted by a wire, "
 "please remove the wire causing the short."
 msgstr ""
+"გაფრთხილება! წრედს აქვს დენის წყაროს მარყუჟი, ან წყარო დამოკლებულია "
+"მავთულით. მოაცილეთ მავთული, რომელიც წრედს ამოკლებს."
 
 #: activities/analog_electricity/cktsim.js:139
 msgctxt "cktsim|"
@@ -1575,6 +1577,9 @@ msgid ""
 "a closed circuit. Which means there should be a path for the current to flow "
 "from one terminal of the battery to the other."
 msgstr ""
+"ელემენტები ელექტრომოწყობილობების კვებისთვის გამოიყენება. მას ვოლტაჟის "
+"მიწოდება შეუძლია დახურულ წრედში. ეს ნიშნავს, რომ უნდა არსებობდეს ბილიკი, "
+"რომლითაც დენი ელემენტის ერთი ბოლოდან მეორემდე ივლის."
 
 #: activities/analog_electricity/components/Battery.qml:19
 msgctxt "Battery|"
@@ -1603,6 +1608,9 @@ msgid ""
 "supplied voltage. It will be broken if there is a power greater than a "
 "certain limit."
 msgstr ""
+"ნათურა ანათებს, როცა საკმარისი კვება აქვს. ნათების ინტენსივობა მიწოდებული "
+"ვოლტაჟის პროპორციულია. ის გაფუჭდება, თუ დენის ძალას გარკვეულ მნიშვნელობაზე "
+"მაღლა ასწევთ."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Bulb.qml:21
@@ -1632,6 +1640,9 @@ msgid ""
 "if the current flow is in the direction of the arrow. Electrical energy more "
 "than a certain limit can break it."
 msgstr ""
+"წითელ LED-ს ელექტროენერგია წითელ ნათებაში გადაჰყავს. მას ნათება, მხოლოდ, "
+"მაშინ შეუძლია, თუ დენი ისრის მიმართულებით მოძრაობს. ელექტროენერგიას, რომელიც "
+"მის სტანდარტულს აჭარბებს, შეუძლია, დააზიანოს ის."
 
 #: activities/analog_electricity/components/Resistor.qml:19
 msgctxt "Resistor|"
@@ -1762,6 +1773,8 @@ msgid ""
 "Turn on the bulb using the provided battery. To connect two terminals, click "
 "on a terminal, then on a second terminal."
 msgstr ""
+"ჩართეთ ნათურა მოწოდებული ელემენტით. იმისათვის, რომ ორი ბოლო დააკავშიროთ, "
+"დააწკაპუნეთ ბოლოზე, შემდეგ კი მეორე ბოლოზე."
 
 #: activities/analog_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
@@ -1769,6 +1782,8 @@ msgid ""
 "When connecting two terminals which are not supposed to be connected, it "
 "creates a short circuit (also called short) in the electrical circuit."
 msgstr ""
+"ბოლოების, რომლებიც არ უნდა შეგეერთებინათ, მიერთებით თქვენ ქმნით მოკლე "
+"ჩართვას (ასევე ეძახიან დამოკლებას)."
 
 #: activities/analog_electricity/TutorialDataset.qml:118
 msgctxt "TutorialDataset|"
@@ -1777,6 +1792,9 @@ msgid ""
 "are shorted, then those batteries create a voltage source loop and they "
 "cannot act as a voltage source for the circuit."
 msgstr ""
+"ზოგიერთი ელემენტის ორივე ბოლო ერთმანეთთან პირდაპირაა დაკავშირებული ან "
+"დამოკლებულია, მაშინ ეს ელემენტები ვოლტაჟის წყაროს მარყუჟს ქმნიან და მათ "
+"წრედის ვოლტაჟის წყაროდ ვერ გამოიყენებთ."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -1784,6 +1802,8 @@ msgid ""
 "For example, if two terminals of one battery are directly connected "
 "together, it creates a voltage source loop."
 msgstr ""
+"მაგალითად, თუ ერთი ელემენტის ორი ბოლო პირდაპირ არიან გადაერთებულები "
+"ერთმანეთთან, ეს ვოლტაჟის წყაროს მარყუჟს ქმნის."
 
 #: activities/analog_electricity/TutorialDataset.qml:119
 msgctxt "TutorialDataset|"
@@ -1791,6 +1811,7 @@ msgid ""
 "Or, if two batteries are forming a closed circuit together, it creates a "
 "voltage source loop."
 msgstr ""
+"ან, თუ ორი ელემენტი ქმნის დახურულ წრეს, ესეც ქმნის ვოლტაჟის წყაროს მარყუჟს."
 
 #: activities/analog_electricity/TutorialDataset.qml:120
 msgctxt "TutorialDataset|"
@@ -1814,6 +1835,9 @@ msgid ""
 "from the circuit. Don't forget to disable the delete button after removing "
 "the connected wires."
 msgstr ""
+"იმისათვის, რომ ამ აქტივობაში დაზიანებული ნათურა შეაკეთოთ, დააწკაპუნეთ მასზე "
+"მისი წრედიდან ამოღების შემდეგ. არ დაგავიწყდეთ, რომ გამორთოთ წაშლის ღილაკი, "
+"როცა მიერთებულ მავთულებს მოაცილებთ."
 
 #: activities/analog_electricity/TutorialDataset.qml:135
 msgctxt "TutorialDataset|"
@@ -1837,6 +1861,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when the switch is on."
 msgstr ""
+"შექმენით წრედი მოწოდებული ნაწილებით ის, რომ ნათურა, მხოლოდ, მაშინ ანთია, "
+"როცა ჩამრთველი ჩართულია."
 
 #: activities/analog_electricity/TutorialDataset.qml:163
 msgctxt "TutorialDataset|"
@@ -1853,6 +1879,8 @@ msgid ""
 "Create a circuit so that one bulb should be always lit and the other should "
 "be lit only when the switch is on."
 msgstr ""
+"შექმენით წრედი ისე, რომ ერთი ნათურა ყოველთვის ენთოს და მეორე, მხოლოდ, მაშინ, "
+"როცა ჩამრთველი ჩართულია."
 
 #: activities/analog_electricity/TutorialDataset.qml:177
 msgctxt "TutorialDataset|"
@@ -1867,6 +1895,8 @@ msgid ""
 "The conventional symbol for current is I. The unit of current is ampere "
 "under the International System of Units, which is denoted as A."
 msgstr ""
+"მიღებული სიმბოლო დენისთვის I-ია. საერთაშორისო ერთეულების სისტემაში დენის "
+"ძალის ერთეულია ამპერი, რომელიც იწერება, როგორც A."
 
 #: activities/analog_electricity/TutorialDataset.qml:179
 msgctxt "TutorialDataset|"
@@ -2539,6 +2569,8 @@ msgid ""
 "You have unsaved changes!<br/> Do you really want to leave this level and "
 "lose your changes?"
 msgstr ""
+"გაქვთ შეუნახავი ცვლილებები!<br/>მართლა გნებავთ, მიატოვოთ ეს დონე და დაკარგოთ "
+"თქვენი ცვლილებები?"
 
 #: activities/balancebox/editor/balanceboxeditor.js:256
 msgctxt "balanceboxeditor|"
@@ -3344,6 +3376,8 @@ msgid ""
 "Human Rights Day is celebrated five days after December 5.<br> Find the date "
 "of Human Rights Day in 2017."
 msgstr ""
+"ადამიანის უფლებების დღე 5 დეკემბერის შემდეგ, 5 დღეში აღინიშნება.<br> იპოვეთ "
+"ადამიანის უფლებების დღე 2017 წელში."
 
 #: activities/calendar/calendar_dataset.js:288
 msgctxt "calendar_dataset|"
@@ -3351,6 +3385,8 @@ msgid ""
 "Braille Day is celebrated one day before January 5.<br> Find the date of "
 "Braille Day in 2018"
 msgstr ""
+"ბრაილის დღე 5 იანვრამდე ერთი დღით ადრე აღინიშნება.<br> იპოვეთ ბრაილის დღის "
+"თარიღი 2018 წელში"
 
 #: activities/calendar/calendar_dataset.js:292
 msgctxt "calendar_dataset|"
@@ -3358,6 +3394,8 @@ msgid ""
 "Mark's birthday is on November 4. In 2017 his party was exactly two weeks "
 "later.<br> Find the date of his party in 2017"
 msgstr ""
+"მარკის დაბადების დღე 4 ნოემბერსაა. 2017 წელში ეს ზუსტად 2 კვირით გვიან "
+"აღნიშნეს.<br> იპოვეთ დაბადების დღის გადახდის თარიღი 2017 წელში"
 
 #: activities/calendar/calendar_dataset.js:296
 msgctxt "calendar_dataset|"
@@ -3365,6 +3403,8 @@ msgid ""
 "International Women's Day is celebrated two days before March 10.<br> Find "
 "the date of International Women's Day in 2018."
 msgstr ""
+"საერთაშორისო ქალების დღე 10 მარტამდე 2 დღით ადრე აღინიშნება.<br> იპოვეთ "
+"საერთაშორისო ქალები დღის თარიღი 2018 წელში."
 
 #: activities/calendar/calendar_dataset.js:300
 msgctxt "calendar_dataset|"
@@ -3372,6 +3412,8 @@ msgid ""
 "The sports competition was held on last Friday of September 2017.<br> Select "
 "the date of the sports competition on the calendar."
 msgstr ""
+"სპორტული შეჯიბრი 2017 წლის სექტემბრის ბოლო პარასკევს იყო.<br> აირჩიეთ "
+"სპორტული შეჯიბრის თარიღი კალენდარზე."
 
 #. Activity title
 #: activities/canal_lock/ActivityInfo.qml:15
@@ -3386,6 +3428,8 @@ msgid ""
 "Tux is in trouble, and needs to take his boat through a lock. Help Tux and "
 "find out how a canal lock works."
 msgstr ""
+"ტუქსს პრობლემები აქვს და ნავი საკეტს მიღმა უნდა გაიყვანოს. დაეხმარეთ ტუქსს "
+"და გაიგეთ, როგორ მუშაობს არხის ჩაკეტვა."
 
 #. Help goal
 #: activities/canal_lock/ActivityInfo.qml:20
@@ -5921,12 +5965,12 @@ msgctxt "TutorialDataset|"
 msgid ""
 "The AND gate produces an output of 1 when both of its input terminals are of "
 "value 1."
-msgstr ""
+msgstr "გეითი და გამოსცემს 1-ს, როცა ორივე მისი შეყვანის ტერმინალი 1-ის ტოლია."
 
 #: activities/digital_electricity/TutorialDataset.qml:160
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an AND gate and the provided inputs."
-msgstr ""
+msgstr "ჩართეთ ციფრული სინათლე და გეითით და მოწოდებული შეყვანებით."
 
 #: activities/digital_electricity/TutorialDataset.qml:173
 msgctxt "TutorialDataset|"
@@ -5934,32 +5978,36 @@ msgid ""
 "The OR gate produces an output of 1 when at least one of its input terminals "
 "is of value 1."
 msgstr ""
+"გეითი ან გამოსცემს 1-ს, როცა მისი ორი შეყვანის ტერმინალიდან ერთ-ერთი მაინც 1-"
+"ის ტოლია."
 
 #: activities/digital_electricity/TutorialDataset.qml:174
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using an OR gate and the provided inputs."
-msgstr ""
+msgstr "ჩართეთ ციფრული სინათლე ან გეითით და მოწოდებული შეყვანებით."
 
 #: activities/digital_electricity/TutorialDataset.qml:187
 msgctxt "TutorialDataset|"
 msgid "You can draw multiple wires from the output terminal of a component."
-msgstr ""
+msgstr "ნაწილის გამოყვანის ბოლოდან ერთზე მეტი მავთულის დახატვა შეგიძლიათ."
 
 #: activities/digital_electricity/TutorialDataset.qml:188
 msgctxt "TutorialDataset|"
 msgid "Turn on the digital light using the provided components."
-msgstr ""
+msgstr "ჩართეთ ციფრული სინათლე მოწოდებული ნაწილებით."
 
 #: activities/digital_electricity/TutorialDataset.qml:201
 msgctxt "TutorialDataset|"
 msgid ""
 "The NOT gate takes a single binary input and flips the value in the output."
 msgstr ""
+"გეითი არ იღებს ბინარულ რიცხვს და გამოტანაში შეაბრუნებს მის მნიშვნელობას."
 
 #: activities/digital_electricity/TutorialDataset.qml:215
 msgctxt "TutorialDataset|"
 msgid "The NAND gate takes two binary inputs and produces one binary output."
 msgstr ""
+"გეითი არა-ან იღებს ორ ბინარულ შეყვანას და გამოიტანს ერთ ბინარულ გამოტანას."
 
 #: activities/digital_electricity/TutorialDataset.qml:216
 msgctxt "TutorialDataset|"
@@ -5967,6 +6015,8 @@ msgid ""
 "The output of the NAND gate is zero if both of its inputs are 1. Else, the "
 "output is one."
 msgstr ""
+"გეითის არა-ან გამოტანა ნულია თუ მისი ორივე შეყვანა 1-ია. წინააღმდეგ "
+"შემთხვევა ში გამოტანა ერთის ტოლია."
 
 #: activities/digital_electricity/TutorialDataset.qml:217
 msgctxt "TutorialDataset|"
@@ -5974,6 +6024,8 @@ msgid ""
 "For a more detailed description about the NAND gate, select it and click on "
 "the info button."
 msgstr ""
+"გეითის არა-ან შესახებ მეტი ინფორმაციისთვის მონიშნეთ ის და ინფორმაციის "
+"ღილაკზე დააწკაპუნეთ."
 
 #: activities/digital_electricity/TutorialDataset.qml:218
 msgctxt "TutorialDataset|"
@@ -5988,6 +6040,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows only "
 "when both of the switches are turned on."
 msgstr ""
+"შექმენით წრედი მოწოდებული ნაწილებით ის, რომ ნათურა, მხოლოდ, მაშინ ანთია, "
+"როცა ორივე ჩამრთველი ჩართულია."
 
 #: activities/digital_electricity/TutorialDataset.qml:250
 #: activities/digital_electricity/TutorialDataset.qml:402
@@ -5996,6 +6050,8 @@ msgid ""
 "Create a circuit using the provided components so that the bulb glows when "
 "either of the switch is turned on."
 msgstr ""
+"შექმენით წრედი მოწოდებული ნაწილებით ის, რომ ნათურა, მხოლოდ, მაშინ ანთია, "
+"როცა ორი ჩამრთველიდან ჩართულია ერთი მაინც."
 
 #: activities/digital_electricity/TutorialDataset.qml:266
 msgctxt "TutorialDataset|"
@@ -6003,6 +6059,8 @@ msgid ""
 "Light the bulb using the three switches so that the bulb glows only if all "
 "the three switches are turned on."
 msgstr ""
+"აანთეთ ნათურა სამი გადამრთველით ისე, რომ ნათურა ანათებს, მხოლოდ, მაშინ თუ "
+"ჩართულია სამივე გადამრთველი."
 
 #: activities/digital_electricity/TutorialDataset.qml:282
 msgctxt "TutorialDataset|"
@@ -6010,16 +6068,21 @@ msgid ""
 "Light the bulb using the three switches so that the bulb glows if any of the "
 "switches are turned on."
 msgstr ""
+"აანთეთ ნათურა სამი გადამრთველით ისე, რომ ნათურა ანათებს, მხოლოდ, მაშინ თუ "
+"სამი გადამრთველიდან ერთი მაინცაა ჩართული."
 
 #: activities/digital_electricity/TutorialDataset.qml:295
 msgctxt "TutorialDataset|"
 msgid "Use the gates so that the bulb glows only when the switch is on."
 msgstr ""
+"გამოიყენეთ გეითები ისე, რომ ნათურა, მხოლოდ, მაშინ ანათებდეს, როცა "
+"გადამრთველი ჩართულია."
 
 #: activities/digital_electricity/TutorialDataset.qml:308
 msgctxt "TutorialDataset|"
 msgid "The XOR Gate takes two binary inputs and produces one binary output."
 msgstr ""
+"გეითი ექს-ან იღებს ორ ბინარულ შეყვანას და გამოიტანს ერთ ბინარულ გამოტანას."
 
 #: activities/digital_electricity/TutorialDataset.qml:309
 msgctxt "TutorialDataset|"
@@ -6507,6 +6570,9 @@ msgid ""
 "escape predators, and possess an excellent sense of balance. They have "
 "single-toed hooves."
 msgstr ""
+"ცხენი ხვიხვინებს. ცხენები კარგად დარბიან, რაც მტაცებლებისგან გაქცევაში "
+"ეხმარებათ და გააჩნიათ ბალანსის შესანიშნავი გრძნობა. მათი ჩლიქები "
+"ერთქუსლიანია."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:25
 msgctxt "board1|"
@@ -6524,6 +6590,8 @@ msgid ""
 "The chicken goes 'cluck'. Domestic chickens have wings, but are not capable "
 "of long-distance flight. They have a comb on their head."
 msgstr ""
+"ქათამი კაკანებს. შინაურ ქათმებს აქვთ ფრთები, მაგრამ დიდ მანძილებზე ვერ "
+"დაფრინავენ. თავზე კი ბიბილო აქვთ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:37
 msgctxt "board1|"
@@ -6542,6 +6610,9 @@ msgid ""
 "developed sense of taste, with around 20,000 taste buds. They can detect "
 "odours 8km away."
 msgstr ""
+"ძროხა ზმუის. ძროხებს 330 გრადუსიანი ხედი აქვთ. ასევე გააჩნიათ ძალიან კარგი "
+"გემოს შეგრძნება, 20 000-მდე გრძNობის რეცეპტორით. სუნის დადგენა 8-მდე "
+"კილომეტრიდან შეუძლიათ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
@@ -6560,6 +6631,9 @@ msgid ""
 "ability to chase mice and other rodents. They purr to communicate various "
 "emotions."
 msgstr ""
+"კატა კნავის. კატებს ადამიანები მათი მეგობრობისთვის და თაგვებზე და სხვა "
+"მღრღნელებზე ნადირობისთვის უყვართ. ისინი კრუტუნებენ, როცა გრძნობების "
+"გამოხატვა სურთ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:61
 msgctxt "board1|"
@@ -6577,6 +6651,8 @@ msgid ""
 "The pig goes 'oink'. Pigs wallow in the mud, mainly to control their body "
 "temperature."
 msgstr ""
+"ღორი ღრუტუნებს. ღორები ტალახში გორაობენ. ძირითადად სხეულის ტემპერატურის "
+"სამართავად."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:73
 msgctxt "board1|"
@@ -6645,6 +6721,8 @@ msgid ""
 "The sheep goes 'baa'. Most sheep breeds bear a fleece of wool. The fleece "
 "can be sheared and used to produce textile fibre."
 msgstr ""
+"ცხვარი კიკინებს. ცხვრის თითქმის ყველა ჯიშს ხორცის ან ბეწვის გამო ამრავლებენ. "
+"მატყლი შეგიძლიათ, დაწნათ და საქსოვი ძაფი გააკეთოთ."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:121
 msgctxt "board1|"
@@ -14136,7 +14214,7 @@ msgid ""
 "attempts are remaining."
 msgstr ""
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

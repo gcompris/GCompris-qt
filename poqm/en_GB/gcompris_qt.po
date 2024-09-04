@@ -15068,7 +15068,7 @@ msgstr ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
