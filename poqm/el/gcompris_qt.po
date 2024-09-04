@@ -15266,7 +15266,7 @@ msgstr ""
 "απομένουν τρεις προσπάθειες' είναι ενεργοποιημένη και έχουν απομείνει τρεις "
 "προσπάθειες, θα ακούγεται η λέξη που προσπαθήσεις να μαντέψεις."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

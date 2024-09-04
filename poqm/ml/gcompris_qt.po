@@ -14776,7 +14776,7 @@ msgstr ""
 "'മൂന്നു ശ്രമങ്ങൾ ബാക്കിയുള്ളപ്പോൾ...' എന്ന ഓപ്ഷൻ തിരഞ്ഞെടുത്തിട്ടുണ്ടെങ്കിൽ, അനുബന്ധ ശബ്ദം "
 "ലഭ്യമാണെങ്കിൽ, മൂന്നു ശ്രമങ്ങൾ ബാക്കിയുള്ളപ്പോൾ കണ്ടത്തേണ്ട വാക്ക് നിങ്ങൾ കേൾക്കും."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

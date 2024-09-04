@@ -14907,7 +14907,7 @@ msgstr ""
 "'Bulmak için sözcükleri söyle...' seçeneği etkinleştirildiyse ve karşılık "
 "gelen ses varsa üç denemeniz kaldığında bulunacak sözcüğü duyacaksınız."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

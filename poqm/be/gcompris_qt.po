@@ -15037,7 +15037,7 @@ msgstr ""
 "запіс голасу даступны, вы пачуеце слова для пошуку калі застанецца тры "
 "спробы."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

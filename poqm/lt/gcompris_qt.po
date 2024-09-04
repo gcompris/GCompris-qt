@@ -15001,7 +15001,7 @@ msgstr ""
 "Jei įjungta parinktis „Ištarti ieškomą žodį ...“, išgirsi ieškomą žodį, kai "
 "liks trys bandymai."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

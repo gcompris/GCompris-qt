@@ -14765,7 +14765,7 @@ msgstr ""
 "אם האפשרות 'להגיד את המילים כדי למצוא...' פעילה ואם הקולות המתאימים זמינים, "
 "אפשר לשמוע את המילים כדי לדעת מתי נשאר שלושה נסיונות."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

@@ -15134,7 +15134,7 @@ msgstr ""
 "correspondente estiver disponível, você ouvirá a palavra a ser encontrada "
 "quando estiverem faltando três tentativas."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

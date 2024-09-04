@@ -14988,7 +14988,7 @@ msgstr ""
 "Ma tro an dibab \"Lavar ar gerioù da gavout...\" ha ma 'z eus eus ar vouezh "
 "dereat e klevin ar ger da gavout pa chomo tri zaol-esa ganit."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

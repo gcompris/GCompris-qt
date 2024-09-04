@@ -15139,7 +15139,7 @@ msgstr ""
 "corrispondente è disponibile, sentirai la parola da trovare quando restano "
 "tre tentativi."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

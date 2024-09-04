@@ -14977,7 +14977,7 @@ msgstr ""
 "наличен съответният глас, ще чуеш думата за намиране, когато останат три "
 "опита."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"

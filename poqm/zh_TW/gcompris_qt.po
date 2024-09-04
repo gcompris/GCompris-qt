@@ -14603,7 +14603,7 @@ msgstr ""
 "若開啟「剩下三次機會時，唸出單字來協助找出答案」選項，而且該單字有聲音檔，在"
 "剩下三次機會時您會聽到單字的發音。"
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
