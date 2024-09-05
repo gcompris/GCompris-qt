@@ -2757,7 +2757,7 @@ msgstr ""
 #: activities/binary_bulb/binary_bulb.js:20
 msgctxt "binary_bulb|"
 msgid "This activity teaches how to convert decimal numbers to binary numbers."
-msgstr ""
+msgstr "ეს აქტივობა ათობითი რიცხვების ორობითში გადაყვანას გასწავლით."
 
 #: activities/binary_bulb/binary_bulb.js:24
 msgctxt "binary_bulb|"
@@ -5268,6 +5268,8 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
+"თუ ზოგიერთ პასუხი არასწორია, შესაბამის ხაზებზე ჯვრის ხატულა გაჩნდება. "
+"შეასწორეთ შეცდომები და ღილაკი 'დიახ' თავიდან აირჩიეთ."
 
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
