@@ -175,6 +175,7 @@ scalesboard_weight
 scalesboard_weight_avoirdupois
 share
 simplepaint
+sketch
 smallnumbers
 smallnumbers2
 solar_system
