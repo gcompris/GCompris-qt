@@ -16,7 +16,7 @@
 # Claudia und Emmanuel Charruau, 2015.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2024-06-16 10:03+0200\n"
 "Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
