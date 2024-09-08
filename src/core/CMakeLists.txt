@@ -80,8 +80,6 @@ endif()
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
-  add_custom_command(TARGET ${GCOMPRIS_EXECUTABLE_NAME} POST_BUILD
-    COMMAND ${LLVM_STRIP} --strip-all $<TARGET_FILE:${GCOMPRIS_EXECUTABLE_NAME}>)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
