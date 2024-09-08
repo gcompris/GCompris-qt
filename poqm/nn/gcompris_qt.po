@@ -14964,7 +14964,7 @@ msgstr ""
 "finst eit lydopptak av ordet, får du høyra opptaket når du har tre forsøk "
 "att på å gjetta ordet."
 
-#: activities/hangman/hangman.js:208
+#: activities/hangman/hangman.js:212
 #, qt-format
 msgctxt "hangman|"
 msgid "Attempted: %1"
