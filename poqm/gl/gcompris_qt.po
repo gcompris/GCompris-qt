@@ -14,6 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 24.05.2\n"
 "X-Qt-Contexts: true\n"
+"X-Environment: kids\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -26731,7 +26732,7 @@ msgstr ""
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the development team:</b> %1"
-msgstr "<b>Un agradecemento especial ao equipo de desenvolvemento:</b> %1"
+msgstr "<b>Un agradecemento especial ao equipo desenvolvedor:</b> %1"
 
 #: core/DialogAbout.qml:143
 #, qt-format

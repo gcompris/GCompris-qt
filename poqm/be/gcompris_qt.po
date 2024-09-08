@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-09-03 10:34+0300\n"
+"PO-Revision-Date: 2024-09-07 15:35+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -14953,17 +14953,13 @@ msgstr "Веданне арыфметычных аперацый."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"Перацягвайце пасуючыя лічбы і аператары ў ячэйкі каб атрымаць патрэбны лік."
+"Перацягвайце лічбы і аператары ў ячэйкі каб атрымаць лік, апісаны ў "
+"інструкцыі."
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -15030,12 +15026,9 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Знайшоўшы схаваную лічбу, дапамажыце Туксу выйсці з пячоры."
 
 #: activities/guessnumber/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Практыкуйце складанне лікаў."
+msgstr "Практыкуйце параўнанне лікаў."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15206,12 +15199,9 @@ msgstr "Спрошчаная Вежа Ханою"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "Утварыце паказаную справа вежу на вольным месцы."
+msgstr "Скапіюйце паказаную справа вежу на вольным колышку."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
@@ -15222,18 +15212,13 @@ msgstr ""
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
 "Перацягніце па адной верхняй частцы з адной вежы на другую, каб утварыць на "
-"вольным месцы такую ж вежу, што ёсць справа."
+"вольным колышку такую ж вежу, што ёсць справа."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15248,12 +15233,9 @@ msgstr "Вежа Ханою"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Перанясіце вежу праваруч."
+msgstr "Перанясіце вежу злева на колышак справа."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -16165,21 +16147,15 @@ msgstr "Навучыцца складаць"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
 msgstr "Навучыцца складаць маленькія лікі."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr "Навучыцца складанню праз падлік выніку."
+msgstr "Навучыцца складанню праз падлік колькасцяў."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16358,32 +16334,24 @@ msgstr "Паміж 1 і 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
 msgstr "Складанне дзесятковых лікаў"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
 msgstr "Навучыцеся складаць дзесятковыя дробы."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
-msgstr "Навучыцеся складаць дзесятковыя дробы."
+msgstr ""
+"Навучыцеся складаць дзесятковыя дробы праз іх візуальнае прадстаўленне."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
