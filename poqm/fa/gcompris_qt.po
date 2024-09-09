@@ -18143,17 +18143,17 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "فاصله حروف فونت"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "وضعیت مرکب (پیش فرض)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "همه حروف بزرگ باشند"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "همه حروف کوچک باشند"
@@ -18161,8 +18161,8 @@ msgstr "همه حروف کوچک باشند"
 #: activities/menu/Menu.qml:93
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
 msgstr ""
 
 #: activities/menu/Menu.qml:94
@@ -25627,47 +25627,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "زبان جی‌کامپریس"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "جی‌کامپریس را در حالت مکان نمای پیش فرض اجرا کن."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "جی‌کامپریس را بدون مکان نما اجرا کن(حالت لمس بر صفحه)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "جی‌کامپریس را در حالت تمام صفحه اجرا کن."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "جی‌کامپریس را در حالت پنجره ای اجرا کن."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "جی‌کامپریس را با صدای فعال شده اجرا کن."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "جی‌کامپریس را بدون صدا اجرا کن."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "غیرفعال کردن وضعیت کیوسک (پیش فرض)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "فعالسازی وضعیت کیوسک"
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -25676,7 +25676,7 @@ msgstr ""
 "از ارائه دهنده نرم افزار به جای اوپن‌جی‌ال(openGL) استفاده کن(کندتر است هر چند "
 "که با هر کارت گرافیکی کار میکند)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -25685,17 +25685,17 @@ msgstr ""
 "از اوپن‌جی‌ال(openGL) به جای نرم افزار استفاده کن(سریع تر است هر چند که با "
 "توجه به کارت گرافیک ممکن است دچار هنگ احتمالی شود)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "فعالیت را هنگام شروع کردن GCompris تعیین کنید."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "همه فعالیت های موجود در خروجی استاندار را خارج میکند."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -25705,7 +25705,7 @@ msgstr ""
 "مقدار واحد به شکل(۲)، و یک بازه به به شکل(۳-۶) نمایش داده میشود. مقادیر حتما "
 "باید بین ۱ تا ۶ باشد."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

@@ -19369,30 +19369,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Esaouiñ ar skriturioù"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Stummoù mesket al lizherennoù (dre ziouer)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "E pennlizherennoù"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "E lizherennoù munut"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Dibabet peus ur yezh nevez. Ret eo dit adloc'hañ GCompris evit c'hoari gant "
-"da yezh nevez.<br/>Ha fellout a ra dit pellgargañ ar restroù son a glot "
-"ganti bremañ ?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Ha fellout a ra dit pellgargañ ar restroù son a glot ganti bremañ ?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -27543,47 +27543,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Langaj GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Lakaat da dreiñ GCompris gant bir al logodenn er reizhiad dre ziouer."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Lakaat da dreiñ GCompris hep bir al logodenn (mod ar skramm stekiñ)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Lakaat da dreiñ GCompris gant ar mod skramm a-bezh."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Lakaat da dreiñ GCompris gant ar mod prenestr."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Lakaat da dreiñ GCompris gant ar sonioù."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Lakaat da dreiñ GCompris hep ar sonioù."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Dilezel ar mod kiosk (dre ziouer)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Aotreañ ar mod kiosk."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27592,7 +27592,7 @@ msgstr ""
 "Implijout mod neuz  ar meziant e-lec'h openGL (gorrekoc'h, met gouest da "
 "gerzhout gant ne vern peseurt kartenn c'hrafek)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27601,17 +27601,17 @@ msgstr ""
 "Implijout openGL e-lec'h mod neuz ar meziant (fonnusoc'h, met posupl e vefe "
 "chom sac'het hervez ar gartenn c'hrafek, ezhomm zo eus Qt 5.8 d'an nebeutañ)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Dibab an obererezh pa loc'her GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Sortial an holl obererezhioù er roll skouer."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27620,7 +27620,7 @@ msgstr ""
 "Dibab an hed embannet evit diaester un obererezh e-doug un abadenn. Pe un "
 "talvoud hepken (2), pe un hed (3-6). Ret eo d'an talvoudoù bezañ etre 1 ha 6."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -27741,6 +27741,15 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Dibabet peus ur yezh nevez. Ret eo dit adloc'hañ GCompris evit c'hoari "
+#~ "gant da yezh nevez.<br/>Ha fellout a ra dit pellgargañ ar restroù son a "
+#~ "glot ganti bremañ ?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -30385,10 +30394,6 @@ msgstr "Kregiñ"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Ha fellout a ra dit pellgargañ anezhañ bremañ ?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Ha fellout a ra dit pellgargañ ar restroù son a glot ganti bremañ ?"
 
 #~ msgctxt "main|"
 #~ msgid ""

@@ -19242,30 +19242,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Betűköz"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Kis- és nagybetűk (alapértelmezés)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Minden nagybetűs"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Minden kisbetűs"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Új nyelvet választottál. Újra kell indítani a GCompris-t a nyelvi "
-"beállítások érvényesítése miatt.<br/> Le akarod tölteni a hozzátartozó "
-"hangokat is?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Szeretnéd most letölteni a hangokat?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -27350,47 +27350,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "A GCompris  nyelvi beállítása"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "GCompris futtatása alapértelmezett egérmutatóval."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "GCompris futtatása kurzor nélkül. (Érintő mód)"
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "GCompris futtatása teljes képernyőn."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "GCompris futtatása ablakban."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "GCompris futtatása hangokkal."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "GCompris futtatása hang nélkül."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Teljes képernyős mód kikapcsolva. (Alapértelmezett)"
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Mozi mód engedélyezése."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27399,7 +27399,7 @@ msgstr ""
 "Szoftveres megjelenítési mód opelGL helyett (lassabb de bármilyen "
 "videokártyával működik)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27408,17 +27408,17 @@ msgstr ""
 "OpenGL mód használata (gyorsabb de bizonyos grafikus kártyák esetén "
 "problémát okozhat)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Kiválasztható egy tevékenyég a GCompris indításánál."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Minden lehetséges tevékenységet kilistáz az alap lehetőségek közül."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27428,7 +27428,7 @@ msgstr ""
 "Vagy egyetlen érték (2), vagy egy tartomány (3-6). Az értékeknek 1 és 6 "
 "között kell lenniük."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -27549,6 +27549,15 @@ msgstr "Kihagyás"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Indítás"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Új nyelvet választottál. Újra kell indítani a GCompris-t a nyelvi "
+#~ "beállítások érvényesítése miatt.<br/> Le akarod tölteni a hozzátartozó "
+#~ "hangokat is?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -30116,10 +30125,6 @@ msgstr "Indítás"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Szeretnéd most letölteni őket?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Szeretnéd most letölteni a hangokat?"
 
 #~ msgctxt "Dataset|"
 #~ msgid "How long does it take for Earth to complete one year?"

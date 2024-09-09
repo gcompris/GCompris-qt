@@ -20358,30 +20358,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Spásáil idir na litreacha"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Cás measctha (réamhshocrú)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Gach litir sa chás uachtair"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Gach litir sa chás íochtair"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Roghnaigh tú ceantar nua. Ní mór duit GCompris a atosú le súgradh i do "
-"cheantar nua. <br/>Ar mhaith leat na comhaid fhuaime comhfhreagrach a "
-"íoslódáil anois?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Ar mhaith leat na comhaid fhuaime comhfhreagracha a íoslódáil anois?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -28737,78 +28737,78 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Teanga GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Rith GCompris leis an réamhshocrú cúrsóir an chórais."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Rith GCompris gan an cúrsóir (mód scáileán tadhaill)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Rith GCompris sa mhód lánscáileáin."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Rith GCompris sa mhód fuinneoige."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Rith GCompris le fuaim."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Rith GCompris gan fuaim."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Díchumasaigh an mód kiosk (réamhshocraithe)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Cumasaigh an mód kiosk."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr ""
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr ""
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -28936,6 +28936,15 @@ msgstr "Scipeáil"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Tosaigh"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Roghnaigh tú ceantar nua. Ní mór duit GCompris a atosú le súgradh i do "
+#~ "cheantar nua. <br/>Ar mhaith leat na comhaid fhuaime comhfhreagrach a "
+#~ "íoslódáil anois?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -31280,11 +31289,6 @@ msgstr "Tosaigh"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Ar mhaith leat iad a íoslódáil anois?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr ""
-#~ "Ar mhaith leat na comhaid fhuaime comhfhreagracha a íoslódáil anois?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

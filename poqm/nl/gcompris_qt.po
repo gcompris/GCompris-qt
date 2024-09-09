@@ -19064,30 +19064,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Ruimte tussen letters"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Gemengde hoofd- en kleine letters (standaard)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Alles hoofdletters"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Alles kleine letters"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Je hebt een nieuwe taalcode geselecteerd, je moet GCompris opnieuw starten "
-"om deze te gebruiken.<br/>Wil je de overeenkomstige geluidsbestanden nu "
-"downloaden?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Wilt u de overeenkomstige geluidsbestanden nu downloaden?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -27123,47 +27123,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Taal van GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "GCompris uitvoeren met de standaard systeemcursor."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "GCompris uitvoeren zonder cursor (modus aanraakscherm)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "GCompris uitvoeren in volledig scherm."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "GCompris uitvoeren in een venster."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "GCompris uitvoeren met het geluid aan."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "GCompris uitvoeren zonder geluid."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "De kioskmodus uitschakelen (standaard)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "De kioskmodus inschakelen."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27172,7 +27172,7 @@ msgstr ""
 "Software renderer gebruiken in plaats van openGL (langzamer maar zou met "
 "elke grafische kaart moeten werken)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27181,17 +27181,17 @@ msgstr ""
 "Renderen met openGL gebruiken in plaats van software (sneller maar kan "
 "crashen afhankelijk van uw grafische kaart)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "De activiteit specificeren bij starten van GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Voert alle beschikbare activiteiten uit op de standaard uitvoer."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27201,7 +27201,7 @@ msgstr ""
 "specificeren. Ofwel een enkele waarde (2) of een reeks (3-6). Waarden moeten "
 "liggen tussen 1 en 6."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -27322,6 +27322,15 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Je hebt een nieuwe taalcode geselecteerd, je moet GCompris opnieuw "
+#~ "starten om deze te gebruiken.<br/>Wil je de overeenkomstige "
+#~ "geluidsbestanden nu downloaden?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -31573,10 +31582,6 @@ msgstr "Begin"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Wil je het nu downloaden?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Wilt u de overeenkomstige geluidsbestanden nu downloaden?"
 
 #~ msgctxt "Data|"
 #~ msgid "Countries of Australia."

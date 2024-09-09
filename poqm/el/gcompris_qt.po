@@ -19683,30 +19683,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Αραίωση γραμματοσειράς"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Πεζά και κεφαλαία"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Όλα κεφαλαία"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Όλα πεζά"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Επέλεξες μια νέα γλώσσα. Πρέπει να κάνεις επανεκκίνηση του GCompris για να "
-"εφαρμοστεί η νέα ρύθμιση.<br/>Θέλεις να κάνεις λήψη και των αντίστοιχων "
-"αρχείων ήχου τώρα;"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Θέλεις να κατεβάσεις τα αντίστοιχα αρχεία ήχου τώρα;"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -28026,47 +28026,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Γλώσσα του GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Εκτέλεση του GCompris με τον προκαθορισμένο δρομέα του συστήματος."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Εκτέλεση του GCompris χωρίς δρομέα (λειτουργία για οθόνες αφής)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Εκτέλεση του GCompris σε λειτουργία πλήρους οθόνης."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Εκτέλεση του GCompris σε λειτουργία παραθύρου."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Εκτέλεση του GCompris με ενεργοποιημένους ήχους."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Εκτέλεση του GCompris χωρίς ήχους."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Απενεργοποίηση περιορισμένης λειτουργίας (προκαθορισμένο)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Ενεργοποίηση περιορισμένης λειτουργίας."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28075,7 +28075,7 @@ msgstr ""
 "Χρησιμοποιήστε πρόγραμμα απόδοσης λογισμικού αντί για openGL (πιο αργό αλλά "
 "θα πρέπει να εκτελείται με οποιαδήποτε κάρτα γραφικών)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28084,17 +28084,17 @@ msgstr ""
 "Χρησιμοποιήστε openGL αντί του λογισμικού απόδοσης (είναι πιο γρήγορο αλλά "
 "μπορεί να σταματήσει να λειτουργεί ανάλογα με την κάρτα γραφικών που έχεις)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Καθορίστε τη δραστηριότητα κατά την εκκίνηση του GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Εξάγει όλες τις διαθέσιμες δραστηριότητες στην τυπική έξοδο."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28104,7 +28104,7 @@ msgstr ""
 "συνεδρία. Είτε με μια μεμονωμένη τιμή (2) είτε με ένα εύρος (3-6). Οι τιμές "
 "πρέπει να είναι μεταξύ 1 και 6."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -28226,6 +28226,15 @@ msgstr "Παράλειψη"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Έναρξη"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Επέλεξες μια νέα γλώσσα. Πρέπει να κάνεις επανεκκίνηση του GCompris για "
+#~ "να εφαρμοστεί η νέα ρύθμιση.<br/>Θέλεις να κάνεις λήψη και των "
+#~ "αντίστοιχων αρχείων ήχου τώρα;"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -31277,10 +31286,6 @@ msgstr "Έναρξη"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Θέλεις να τις κατεβάσεις τώρα;"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Θέλεις να κατεβάσεις τα αντίστοιχα αρχεία ήχου τώρα;"
 
 #~ msgctxt "Dataset|"
 #~ msgid "How long does it take for Earth to complete one year?"

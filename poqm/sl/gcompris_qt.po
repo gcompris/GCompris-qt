@@ -18878,26 +18878,31 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Razmik med črkami pisave"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Mešana velikost (privzeto)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "VELIKE ČRKE"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Samo male črke"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid ""
+#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
 msgstr ""
 "Izbrali ste novo lokalno nastavite, zato morate ponovno zagnati GCompris, da "
 "bi to novo nastavitev tudi uporabil.<br/> Aliželite zdaj prenesti tudi "
@@ -26834,47 +26839,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Jezik GComprisa"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Zaženi GCompris s privzeto sistemsko kazalko."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Zaženi GCompris brez kazalke (način za dotik)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Zaženi GCompris v celozaslonskem načinu."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Zaženi GCompris v okenskem načinu."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Zaženi GCompris z omogočenimi zvoki."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Zaženi GCompris brez zvokov."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Onemogoči način kioska (privzeto)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Omogoči način kioska."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -26883,7 +26888,7 @@ msgstr ""
 "Uporaba programske upodobitve namesto openGL (je počasneje, a bi moralo "
 "delovati s katerokoli grafično kartico)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -26892,17 +26897,17 @@ msgstr ""
 "Uporabi openGL namesto programja (je hitreje, je možen potencialen izpad "
 "odvisno od vaše grafične kartice)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Določi dejavnost ob zagonu programa GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Usmeri izhod vseh razpoložljivih dejavnosti na standardni izhod."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -26911,7 +26916,7 @@ msgstr ""
 "Določite obseg zahtevnosti dejavnosti prikaza seje. Lahko je le ena vrednost "
 "(2) ali obseg (3-6). Vrednosti morajo biti med 1 in 6."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

@@ -19513,29 +19513,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Spațierea între literele fontului"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Litere mari și mici (varianta implicită)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Doar majuscule"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Doar litere mici"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Ai selectat un nou profil local. Trebuie să repornești GCompris pentru a-l "
-"folosi.<br/>Vrei să descarci fișierele de sunet corespunzătoare acum?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Dorești să descarci acum fișierele corespunzătoare de sunet?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -27801,47 +27802,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Limba GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Rulează GCompris cu cursorul implicit al sistemului tău."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Rulează GCompris fără cursor (în modul tactil)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Rulează GCompris în modul pe tot ecranul."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Rulează GCompris în modul fereastră."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Rulează GCompris cu sunetul activat."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Rulează GCompris fără sunet."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Dezactivează modul chioșc (varianta implicită)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Activează modul chioșc."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27850,7 +27851,7 @@ msgstr ""
 "Folosește randarea software în locul openGL (mai înceată, dar ar trebui să "
 "ruleze cu orice placă video)"
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27859,17 +27860,17 @@ msgstr ""
 "Folosește randarea openGL în locul randării software (mai rapidă, dar poate "
 "„crăpa”, în funcție de placa ta video)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Specifică activitatea dorită când pornește GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Pune la dispoziție toate activitățile disponibile."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27879,7 +27880,7 @@ msgstr ""
 "afișat pentru sesiune. Poate să fie o singură valoare (2) sau un interval "
 "(3-6). Valorile trebuie să fie între 1 și 6."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -28000,6 +28001,14 @@ msgstr "Sari peste"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Ai selectat un nou profil local. Trebuie să repornești GCompris pentru a-"
+#~ "l folosi.<br/>Vrei să descarci fișierele de sunet corespunzătoare acum?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -31332,10 +31341,6 @@ msgstr "Start"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Dorești să o descarci acum?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Dorești să descarci acum fișierele corespunzătoare de sunet?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

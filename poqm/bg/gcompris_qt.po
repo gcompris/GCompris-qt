@@ -18983,26 +18983,31 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Разстояние между буквите на шрифта"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Смесени случаи (по подразбиране)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Всички главни букви"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Всички малки букви"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "Menu|"
+#| msgid ""
+#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
 msgstr ""
 "Избрахте нов локал, трябва да рестартирате Gcompris, за да го използвате.<br/"
 ">Искате ли да изтеглите съответните звукови файлове сега?"
@@ -27036,47 +27041,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Език на GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Изпълняване на GCompris със системния курсор по подразбиране."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Изпълняване на GCompris без курсор (режим на сензорен екран)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Изпълняване на GCompris в режим на цял екран."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Изпълняване на GCompris в режим на прозорец."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Изпълняване на GCompris с включен звук."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Изпълняване на GCompris без звук."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Деактивиране на киоск режима (по подразбиране)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Включване на режим киоск."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27085,7 +27090,7 @@ msgstr ""
 "Използване на софтуерен рендер вместо openGL (по-бавно, но би трябвало да "
 "работи с всяка графична карта)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27094,17 +27099,17 @@ msgstr ""
 "Използване на openGL рендер вместо софтуерен (по-бързо, но е възможно да се "
 "срине в зависимост от графичната ви карта)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Избери заданието при стартиране на GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Извежда всички налични занимания на стандартния изход."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27114,7 +27119,7 @@ msgstr ""
 "сесията. Стойностите трябва да са между 1 и 6, Може да се зададе както и "
 "една стойност (2), така и диапазон от стойности (3-6)."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

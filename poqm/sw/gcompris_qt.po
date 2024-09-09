@@ -19289,29 +19289,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Nafasi za herufi"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Kesi iliyochanganywa (chaguo-msingi)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Herufi kubwa zote"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Herufi ndogo zote"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Umechagua lugha mpya, unahitaji kuanzisha upya GCompris ili kuitumia.<br/> "
-"Je, ungependa kupakua faili za sauti zinazolingana sasa?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Je, ungependa kupakua faili za sauti zinazolingana sasa?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -27508,47 +27509,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Lugha ya GCompris"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Endesha GCompris ukitumia kiteuzi chaguo-msingi cha mfumo."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Endesha GCompris bila kishale (modi ya skrini ya kugusa)."
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Endesha GCompris katika hali ya skrini nzima."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Endesha GCompris katika hali ya dirisha."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Endesha GCompris ukiwasha sauti."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Endesha GCompris bila sauti."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Zima hali ya kiosk (chaguo-msingi)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Washa modi ya kioski."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27557,7 +27558,7 @@ msgstr ""
 "Tumia kionyeshi cha programu badala ya openGL (polepole lakini inapaswa "
 "kuendeshwa na kadi yoyote ya picha)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27566,17 +27567,17 @@ msgstr ""
 "Tumia kionyeshi cha openGL badala ya programu (haraka zaidi lakini itaacha "
 "kufanya kazi kulingana na kadi yako ya picha)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Bainisha shughuli unapoanzisha GCompris."
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Hutoa shughuli zote zinazopatikana kwenye pato la kawaida."
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27585,7 +27586,7 @@ msgstr ""
 "Bainisha anuwai ya ugumu wa shughuli ya kuonyesha kwa kipindi. Ama thamani "
 "moja (2), au masafa (3-6). Thamani lazima ziwe kati ya 1 na 6."
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -27706,6 +27707,14 @@ msgstr "Ruka"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Anzisha"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Umechagua lugha mpya, unahitaji kuanzisha upya GCompris ili kuitumia.<br/"
+#~ "> Je, ungependa kupakua faili za sauti zinazolingana sasa?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -31220,10 +31229,6 @@ msgstr "Anzisha"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Je, ungependa kuipakua sasa?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Je, ungependa kupakua faili za sauti zinazolingana sasa?"
 
 #~ msgctxt "Data|"
 #~ msgid "Countries of Australia."

@@ -19855,29 +19855,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "Растојание на букви"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "Мешовит случај (стандардно)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "Сите големи букви"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Сите мали букви"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"Избравте нов јазик. Треба да го рестартирате Жикомпри за да работи за новиот "
-"јазик.<br/>Дали сакате сега да ги преземете соодветните датотеки за звук?"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "Дали сакате да ги преземете соодветните датотеки за звук сега?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -28128,47 +28129,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Јазик на Жикомпри"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Стартувајте го Жикомпри со стандардниот покажувач на системот."
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Стартувај го Жикомпри без курсор (режим на екран на допир)"
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Стартувај го Жикомпри на цел екран."
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Стартувај го Жикомпри во режим на прозорец."
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Стартувај го Жикомпри со звук."
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Стартувај го Жикомпри без звук."
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Оневозможете го режимот на киоск (стандардно)."
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Овозможете го режимот на киоск."
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -28182,7 +28183,7 @@ msgstr ""
 "Користете софтверски рендерер наместо openGL (побавен, но треба да работи со "
 "која било графичка картичка, потребен е Qt 5,8 минимум)."
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28191,24 +28192,24 @@ msgstr ""
 "Користете го OpenGL-рендерерот наместо софтверски (побрз, но може да не "
 "работи во зависност од вашата графичка картичка)."
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr ""
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -28337,6 +28338,15 @@ msgstr "Прескокни"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Старт"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "Избравте нов јазик. Треба да го рестартирате Жикомпри за да работи за "
+#~ "новиот јазик.<br/>Дали сакате сега да ги преземете соодветните датотеки "
+#~ "за звук?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -30940,7 +30950,3 @@ msgstr "Старт"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "Дали сакате да ја преземете сега?"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "Дали сакате да ги преземете соодветните датотеки за звук сега?"

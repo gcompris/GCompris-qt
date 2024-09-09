@@ -18810,29 +18810,30 @@ msgctxt "ConfigurationItem|"
 msgid "Font letter spacing"
 msgstr "字型字母間隔"
 
-#: activities/menu/ConfigurationItem.qml:618
+#: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
 msgstr "大小寫混用(預設)"
 
-#: activities/menu/ConfigurationItem.qml:619
+#: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
 msgid "All uppercase"
 msgstr "全部大寫"
 
-#: activities/menu/ConfigurationItem.qml:620
+#: activities/menu/ConfigurationItem.qml:630
 msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "全部小寫"
 
 #: activities/menu/Menu.qml:93
+#, fuzzy
+#| msgctxt "main|"
+#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
-"You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-"you want to download the corresponding sound files now?"
-msgstr ""
-"您選擇了一個新的語系。您需要重新啟動 GCompris 才能切換到新的語系。<br/>您要現"
-"在下載相關的音效檔嗎？"
+"You selected a new locale, do you want to download the corresponding sound "
+"files now?"
+msgstr "您要現在下載相關的音效檔嗎？"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -26612,71 +26613,71 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "GCompris 的語言"
 
-#: core/main.cpp:166
+#: core/main.cpp:72
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "以預設系統游標模式執行 GCompris。"
 
-#: core/main.cpp:170
+#: core/main.cpp:76
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "以觸控螢幕模式執行 GCompris (沒有游標)。"
 
-#: core/main.cpp:174
+#: core/main.cpp:80
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "以全螢幕模式執行 GCompris。"
 
-#: core/main.cpp:178
+#: core/main.cpp:84
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "以視窗模式執行 GCompris。"
 
-#: core/main.cpp:182
+#: core/main.cpp:88
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "執行 GCompris 並開啟聲音。"
 
-#: core/main.cpp:186
+#: core/main.cpp:92
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "執行 GCompris 但不開聲音。"
 
-#: core/main.cpp:189
+#: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "關閉特別設定模式（預設）。"
 
-#: core/main.cpp:192
+#: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "開啟特別設定模式。"
 
-#: core/main.cpp:196
+#: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card)."
 msgstr "使用軟體算繪而非 OpenGL（會比較慢，但在任何顯示卡上應該都可以用）。"
 
-#: core/main.cpp:199
+#: core/main.cpp:105
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card)."
 msgstr "使用 OpenGL 算繪（比較快，但您的顯卡未必支援）。"
 
-#: core/main.cpp:203
+#: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "啟動 GCompris 時指定要玩的活動。"
 
-#: core/main.cpp:208
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "輸出所有可用的活動到標準輸出。"
 
-#: core/main.cpp:212
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -26685,7 +26686,7 @@ msgstr ""
 "指定啟動活動時的困難度。可以是單一值（如 2）或一個範圍（3-6）。此值必須在 1 "
 "到 6 之間。"
 
-#: core/main.cpp:216
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
@@ -26809,6 +26810,14 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "Menu|"
+#~ msgid ""
+#~ "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
+#~ "you want to download the corresponding sound files now?"
+#~ msgstr ""
+#~ "您選擇了一個新的語系。您需要重新啟動 GCompris 才能切換到新的語系。<br/>您"
+#~ "要現在下載相關的音效檔嗎？"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."
@@ -29262,10 +29271,6 @@ msgstr "開始"
 #~ msgctxt "main|"
 #~ msgid "Do you want to download it now?"
 #~ msgstr "您要現在下載嗎？"
-
-#~ msgctxt "main|"
-#~ msgid "Do you want to download the corresponding sound files now?"
-#~ msgstr "您要現在下載相關的音效檔嗎？"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
