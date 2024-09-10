@@ -99,11 +99,15 @@ int main(int argc, char *argv[])
     parser.addOption(clWithKioskMode);
 
     QCommandLineOption clSoftwareRenderer(QStringList() << "software-renderer",
-                                          QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card)."));
+                                          QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card). Deprecated, use --renderer=software instead."));
     parser.addOption(clSoftwareRenderer);
     QCommandLineOption clOpenGLRenderer(QStringList() << "opengl-renderer",
-                                        QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
+                                        QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card). Deprecated, use --renderer=opengl instead."));
     parser.addOption(clOpenGLRenderer);
+
+    QCommandLineOption clRenderer(QStringList() << "renderer",
+                                        QObject::tr("Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."), "renderer");
+    parser.addOption(clRenderer);
 
     QCommandLineOption clStartOnActivity("launch",
                                          QObject::tr("Specify the activity when starting GCompris."), "activity");
@@ -182,23 +186,39 @@ int main(int argc, char *argv[])
     if (parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
+    // This will be removed later, for now, it is ignored if --renderer option is set
     if (parser.isSet(clSoftwareRenderer)) {
         ApplicationSettings::getInstance()->setRenderer(QStringLiteral("software"));
     }
     if (parser.isSet(clOpenGLRenderer)) {
         ApplicationSettings::getInstance()->setRenderer(QStringLiteral("opengl"));
     }
+    QMap<QString, QSGRendererInterface::GraphicsApi> existingRenderers;
+    existingRenderers[QLatin1String("software")] = QSGRendererInterface::Software;
+    existingRenderers[QLatin1String("opengl")] = QSGRendererInterface::OpenGL;
+#if defined(Q_OS_MACOS)
+    existingRenderers[QLatin1String("metal")] = QSGRendererInterface::Metal;
+#endif
+#if defined(Q_OS_WIN)
+    existingRenderers[QLatin1String("direct3d11")] = QSGRendererInterface::Direct3D11;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 6, 0)
+    existingRenderers[QLatin1String("direct3d12")] = QSGRendererInterface::Direct3D12;
+#endif
+#endif
+    if(parser.isSet(clRenderer)) {
+        QString rendererValue = parser.value(clRenderer);
+        if(!existingRenderers.contains(rendererValue)) {
+            qWarning() << "Renderer" << rendererValue << "is not a supported renderer. Supported renderers:" << existingRenderers.keys();
+        }
+        else {
+            ApplicationSettings::getInstance()->setRenderer(rendererValue);
+        }
+    }
 
     // Set the renderer used
     const QString &renderer = ApplicationSettings::getInstance()->renderer();
     ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
-
-    if (renderer == QLatin1String("software")) {
-        QQuickWindow::setGraphicsApi(QSGRendererInterface::Software);
-    }
-    else if (renderer == QLatin1String("opengl")) {
-        QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGL);
-    }
+    QQuickWindow::setGraphicsApi(existingRenderers[renderer]);
 
     // Start on specific activity
     if (parser.isSet(clStartOnActivity)) {
