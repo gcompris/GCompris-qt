@@ -43,7 +43,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
     m_platform = Android;
 #elif defined(UBUNTUTOUCH)
     m_platform = UbuntuTouchOS;
-#elif defined(Q_OS_MAC)
+#elif defined(Q_OS_MACOS)
     m_platform = MacOSX;
 #elif (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
     m_platform = Linux;
@@ -126,7 +126,7 @@ QString ApplicationInfo::getFilePath(const QString &file)
 {
 #if defined(Q_OS_ANDROID)
     return QString("assets:/share/GCompris/rcc/%1").arg(file);
-#elif defined(Q_OS_MACX)
+#elif defined(Q_OS_MACOS)
     return QString("%1/../Resources/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
 #elif defined(Q_OS_IOS)
     return QString("%1/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
