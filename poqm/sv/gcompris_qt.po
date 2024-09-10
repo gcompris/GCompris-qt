@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-30 06:39+0200\n"
+"PO-Revision-Date: 2024-09-09 18:28+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -18931,14 +18931,13 @@ msgid "All lowercase"
 msgstr "Bara små bokstäver"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Vill du ladda ner motsvarande ljudfiler nu?"
+msgstr ""
+"Du har valt nya landsinställningar, vill du ladda ner motsvarande ljudfiler "
+"nu?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"

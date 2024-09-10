@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-08-30 08:17+0300\n"
+"PO-Revision-Date: 2024-09-09 09:10+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -19080,18 +19080,12 @@ msgid "All lowercase"
 msgstr "Усі малі"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 msgstr ""
-"Вами вибрано новий переклад. Щоб грати з новим перекладом, вам доведеться "
-"перезапустити GCompris.<br/>Хочете отримати відповідні звукові файли зараз?"
+"Вами вибрано новий переклад. Хочете отримати відповідні звукові файли зараз?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"

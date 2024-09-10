@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-30 12:45+0200\n"
+"PO-Revision-Date: 2024-09-09 09:36+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -19080,14 +19080,13 @@ msgid "All lowercase"
 msgstr "Alles kleine letters"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Wilt u de overeenkomstige geluidsbestanden nu downloaden?"
+msgstr ""
+"U hebt een nieuwe taaldefinitie geselecteerd, wilt u de bijbehorende "
+"geluidsbestanden nu downloaden?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
