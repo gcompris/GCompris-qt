@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
     QGuiApplication::setDesktopFileName("org.kde.gcompris");
 
     // add a variable to disable default fullscreen on Mac, see below..
-#if defined(Q_OS_MAC)
+#if defined(Q_OS_MACOS)
     // Sandboxing on MacOSX as documented in:
     // https://doc.qt.io/qt-5/osx-deployment.html
     QDir dir(QGuiApplication::applicationDirPath());
@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
     ApplicationInfo::getInstance()->checkPermissions();
 
     // Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
-#if defined(Q_OS_MAC)
+#if defined(Q_OS_MACOS)
     bool isFullscreen = false;
 #else
     // for other platforms, fullscreen is the default value

@@ -17,7 +17,7 @@
 #define VERSION_CODE @GCOMPRIS_VERSION_CODE@
 
 /* Folder where rccs and translations are installed */
-#ifdef  Q_OS_MACX
+#ifdef  Q_OS_MACOS
 #define GCOMPRIS_DATA_FOLDER "../Resources"
 #elif  Q_OS_IOS
 #define GCOMPRIS_DATA_FOLDER "."
