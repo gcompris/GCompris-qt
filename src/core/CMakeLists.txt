@@ -200,6 +200,7 @@ if(BUILD_STANDALONE)
      QtQml/WorkerScript/${_lib_prefix}workerscriptplugin
      QtQuick/Controls/Basic/impl/${_lib_prefix}qtquickcontrols2basicstyleimplplugin
      QtQuick/Controls/impl/${_lib_prefix}qtquickcontrols2implplugin
+     QtQuick/Effects/${_lib_prefix}effectsplugin
      QtQuick/Window/${_lib_prefix}quickwindowplugin
      QtQuick/Particles/${_lib_prefix}particlesplugin
      QtQuick/${_lib_prefix}qtquick2plugin
