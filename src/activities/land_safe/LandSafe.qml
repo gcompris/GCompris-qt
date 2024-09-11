@@ -313,7 +313,7 @@ ActivityBase {
                 height:  width * 2 + width * rocket.leftAccel
                 sourceSize.width: width
                 sourceSize.height: height
-                visible: ApplicationInfo.useOpenGL ? false : true
+                visible: ApplicationInfo.useSoftwareRenderer
             }
 
             ParticleSystem {
@@ -355,7 +355,7 @@ ActivityBase {
                 height:  width * 2 + width * rocket.rightAccel
                 sourceSize.width: width
                 sourceSize.height: height
-                visible: ApplicationInfo.useOpenGL ? false : true
+                visible: ApplicationInfo.useSoftwareRenderer
             }
 
             ParticleSystem {
@@ -396,7 +396,7 @@ ActivityBase {
                 height: rocket.accel > 0 ? width * 2 : 0
                 sourceSize.width: width
                 sourceSize.height: height
-                visible: ApplicationInfo.useOpenGL ? false : true
+                visible: ApplicationInfo.useSoftwareRenderer
             }
 
             ParticleSystem {

@@ -78,7 +78,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent) :
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
-    m_useOpenGL = true;
+    m_useSoftwareRenderer = false;
 
     if (m_isMobile)
         connect(qApp->primaryScreen(), &QScreen::physicalSizeChanged, this, &ApplicationInfo::notifyPortraitMode);

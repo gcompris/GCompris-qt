@@ -134,11 +134,11 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(bool isDownloadAllowed READ isDownloadAllowed CONSTANT)
 
     /**
-     * Whether the application is currently using OpenGL or not.
+     * Whether the application is currently using software renderer or not.
      *
-     * Use to deactivate some effects if OpenGL not used.
+     * Use to deactivate some effects if software renderer used.
      */
-    Q_PROPERTY(bool useOpenGL READ useOpenGL WRITE setUseOpenGL NOTIFY useOpenGLChanged)
+    Q_PROPERTY(bool useSoftwareRenderer READ useSoftwareRenderer WRITE setUseSoftwareRenderer NOTIFY useSoftwareRendererChanged)
 
     /**
      * Whether Box2D is installed or not.
@@ -289,8 +289,8 @@ public:
     static QString OpenSSLVersion() { return QSslSocket::sslLibraryVersionString(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
-    bool useOpenGL() const { return m_useOpenGL; }
-    void setUseOpenGL(bool useOpenGL) { m_useOpenGL = useOpenGL; }
+    bool useSoftwareRenderer() const { return m_useSoftwareRenderer; }
+    void setUseSoftwareRenderer(bool useSoftwareRenderer) { m_useSoftwareRenderer = useSoftwareRenderer; }
 
     bool isBox2DInstalled() const { return m_isBox2DInstalled; }
     void setBox2DInstalled(QQmlEngine &engine);
@@ -440,7 +440,7 @@ Q_SIGNALS:
     void fontRatioChanged();
     void applicationSettingsChanged();
     void fullscreenChanged();
-    void useOpenGLChanged();
+    void useSoftwareRendererChanged();
     void isBox2DInstalledChanged();
 
 private:
@@ -451,7 +451,7 @@ private:
     Platform m_platform;
     bool m_isPortraitMode;
     bool m_isMobile;
-    bool m_useOpenGL;
+    bool m_useSoftwareRenderer;
     bool m_isBox2DInstalled;
     qreal m_ratio;
     qreal m_fontRatio;

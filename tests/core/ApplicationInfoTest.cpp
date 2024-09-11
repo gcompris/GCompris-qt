@@ -74,7 +74,7 @@ void ApplicationInfoTest::LocaleTest()
 
 void ApplicationInfoTest::WindowTest_data()
 {
-    QTest::addColumn<bool>("useOpenGL");
+    QTest::addColumn<bool>("useSoftwareRenderer");
     QTest::addColumn<int>("applicationWidth");
     QTest::addColumn<bool>("portraitMode");
     QTest::newRow("dummy1") << true
@@ -87,15 +87,15 @@ void ApplicationInfoTest::WindowTest()
     ApplicationInfo appInfo;
     ApplicationInfo::getInstance();
 
-    QFETCH(bool, useOpenGL);
+    QFETCH(bool, useSoftwareRenderer);
     QFETCH(int, applicationWidth);
     QFETCH(bool, portraitMode);
 
     appInfo.setApplicationWidth(applicationWidth);
     appInfo.setIsPortraitMode(portraitMode);
-    appInfo.setUseOpenGL(useOpenGL);
+    appInfo.setUseSoftwareRenderer(useSoftwareRenderer);
 
-    QVERIFY(appInfo.useOpenGL() == useOpenGL);
+    QVERIFY(appInfo.useSoftwareRenderer() == useSoftwareRenderer);
     QVERIFY(appInfo.applicationWidth() == applicationWidth);
     QVERIFY(appInfo.isPortraitMode() == portraitMode);
 }

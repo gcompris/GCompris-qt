@@ -217,7 +217,7 @@ int main(int argc, char *argv[])
 
     // Set the renderer used
     const QString &renderer = ApplicationSettings::getInstance()->renderer();
-    ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
+    ApplicationInfo::getInstance()->setUseSoftwareRenderer(renderer == QLatin1String("software"));
     QQuickWindow::setGraphicsApi(existingRenderers[renderer]);
 
     // Start on specific activity

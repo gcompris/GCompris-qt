@@ -109,9 +109,9 @@ Image {
         // we use the maximum height.
         // Else we set the gradient start position proportionnally to the hidden bottom part,
         // until it disappears.
-        // And if not using OpenGL, the mask is disabled, so we save the calculation and set it to 1
+        // And if using useSoftwareRenderer, the mask is disabled, so we save the calculation and set it to 1
         property real gradientStartValue:
-        ApplicationInfo.useOpenGL ?
+        !ApplicationInfo.useSoftwareRenderer ?
         (menuGrid.hiddenBottom > menuGrid.height * 0.08 ?
         0.92 : 1 - (menuGrid.hiddenBottom / menuGrid.height)) :
         1
@@ -137,8 +137,8 @@ Image {
         boundsBehavior: Flickable.StopAtBounds
         property int spacing: 10
         // Needed to calculate the OpacityMask offset
-        // If not using OpenGL, this value is not used, so we save the calculation and set it to 1
-        property real hiddenBottom: ApplicationInfo.useOpenGL ? contentHeight - height - contentY : 1
+        // If using software renderer, this value is not used, so we save the calculation and set it to 1
+        property real hiddenBottom: ApplicationInfo.useSoftwareRenderer ? 1 : contentHeight - height - contentY
 
         ReadyButton {
             id: iAmReady
@@ -243,7 +243,7 @@ Image {
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
 
-        layer.enabled: ApplicationInfo.useOpenGL
+        layer.enabled: !ApplicationInfo.useSoftwareRenderer
         layer.effect: MultiEffect {
             id: menuOpacity
             maskEnabled: true
