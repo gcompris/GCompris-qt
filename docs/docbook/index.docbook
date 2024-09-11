@@ -326,12 +326,16 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <entry>Disable the kiosk mode (default).</entry>
 </row>
 <row>
+<entry>--renderer={renderer}</entry>
+<entry>Specify which graphical renderer to use. On all platforms, opengl and software are available. On Windows, you can use direct3d11 or direct3d12 (if it was compiled with Qt>=6.6). On MacOS, you can use metal.</entry>
+</row>
+<row>
 <entry>--software-renderer</entry>
-<entry>Use software renderer instead of openGL (should work with any graphical card).</entry>
+<entry>Use software renderer instead of openGL (should work with any graphical card). Deprecated, use --renderer=software instead.</entry>
 </row>
 <row>
 <entry>--opengl-renderer</entry>
-<entry>Use openGL renderer instead of software (faster and more graphical effects but can crash with some graphical cards).</entry>
+<entry>Use openGL renderer instead of software (faster and more graphical effects but can crash with some graphical cards). Deprecated, use --renderer=opengl instead.</entry>
 </row>
 </tbody>
 </tgroup>
