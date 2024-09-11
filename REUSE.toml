@@ -1,0 +1,5080 @@
+# SPDX-FileCopyrightText: 2024 Johnny Jazeix
+# 
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+SPDX-PackageName = "GCompris"
+SPDX-PackageSupplier = "GCompris <support@gcompris.net>"
+SPDX-PackageDownloadLocation = "https://invent.kde.org/education/gcompris-qt"
+
+[[annotations]]
+path = [".clang-format", ".flatpak-manifest.json", ".gitattributes", ".gitmodules", "publiccode.yml", "HACKING", "README", "README.md", "snapcraft.yaml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "None"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "android/**.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "android/configAndroid.json.cmake"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Johnny Jazeix"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+[[annotations]]
+path = "docs/docbook/index.docbook"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2015 Burkhard Lück", "2015 Johnny Jazeix"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "docs/docbook/**.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Johnny Jazeix"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "docs/Doxyfile.local"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Holger Kaelberer"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "docs/manual-general"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "docs/docbook/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "fastlane/metadata/android/en-US/images/**.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "fastlane/metadata/android/**.txt"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "logo.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "images/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "installer/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "platforms/flatpak/README"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "platforms/ios/icon_no_corner.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Bruno Coudoin"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = ["platforms/ios/.gitignore", "platforms/ios/gcompris.pro", "platforms/ios/Info.plist", "platforms/ios/README"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "platforms/ubuntutouch/gcompris.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "platforms/ubuntutouch/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Lionel Duboeuf"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activityintro2msg.awk"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Pino Toscano"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/activities.txt"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "None"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/advanced_colors/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/algebra_**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/algorithm/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/align4**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/align4_2players/resource/slide.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2011 jberkuta14", "2014 kwahmah_02"]
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "\n  A mix of the 2 sounds\n    https://www.freesound.org/people/jberkuta14/sounds/134894/ (under CC-BY-3.0)\n    https://www.freesound.org/people/kwahmah_02/sounds/251366/ (under CC0-1.0)"
+
+[[annotations]]
+path = "src/activities/alphabet-sequence/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/analog_electricity/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/baby_keyboard/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/baby_mouse/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/baby_tangram/baby_tangram.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Johnny Jazeix"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/baby_tangram/resource/**car1/**.svg", "src/activities/baby_tangram/resource/**truck/**.svg", "src/activities/baby_tangram/resource/tangram/**.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2015-2023 Timothée Giet", "2016 Bruno Coudoin"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/baby_tangram/resource/**train/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "Inspired from https://openclipart.org/detail/218332/toy-train-with-5-wagons (public domain)"
+
+[[annotations]]
+path = "src/activities/baby_wordprocessor/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/babymatch/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/babymatch/resource/images/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/babyshapes/babyshapes.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/babyshapes/resource/food/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/babyshapes/resource/shapeBackground/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/babyshapes/resource/dog1/**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/babyshapes/resource/dog2/**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/babyshapes/resource/image/**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/balancebox/balancebox.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2015 Timothée Giet", "2015 Holger Kaelberer"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/balancebox/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/balancebox/resource/levels-default.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Holger Kaelberer"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/ballcatch/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/ballcatch/resource/youcannot.wav", "src/activities/ballcatch/resource/tuxok.wav"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/data/sounds/)"
+
+[[annotations]]
+path = "src/activities/bargame**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/binary_bulb/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/binary_bulb/resource/transistor.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2018 Inductiveload", "2018 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/braille_alphabets/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/braille_fun/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/calcudoku/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/calendar/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/canal_lock/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/canal_lock/resource/door_open.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 lolamadeus"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://www.freesound.org/people/lolamadeus/sounds/161228/"
+
+[[annotations]]
+path = "src/activities/canal_lock/resource/door_close.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 lolamadeus"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://www.freesound.org/people/lolamadeus/sounds/161230/"
+
+[[annotations]]
+path = "src/activities/canal_lock/resource/lock.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 MAJ061785"
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "https://www.freesound.org/people/MAJ061785/sounds/85533/"
+
+[[annotations]]
+path = "src/activities/canal_lock/resource/water_fill.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 inchadney"
+SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "https://www.freesound.org/people/inchadney/sounds/34681/"
+
+[[annotations]]
+path = ["src/activities/categorization/categorization.svg", "src/activities/categorization/resource/background.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/alphabets/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "Base on Kabel font"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/alphabets/alphabets.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Divyam Madaan"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Karelj"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Pomacanthus_arcuatus_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Atherina_hepsetus_Stefano_Guerrieri_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013-2020 Paolo Neo"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Placidochromis_electra_Aquarium_fish_stock_photo.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 United States Department of Agriculture"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:YellowPerch.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Atherina_hepsetus_Stefano_Guerrieri_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish6.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Bernard Spragg"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Discus_fish_(10765052495).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish7.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Florin DUMITRESCU"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Black_sea_mullus_barbatus_ponticus_01.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish8.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005-2017 U.S. National Oceanic and Atmospheric Administration"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Atlantischer_Lachs.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish9.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2002 Jan Derk"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Common_clownfish.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish10.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Alan Slater"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Anthia_goldfish.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish11.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 Jon Sullivan"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Golden_trout_fish_sea_world.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish12.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Pagellus_acarne_04-08-04.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish13.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Symphodus_ocellatus_24-05-07_(Stefano_Guerrieri).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish14.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Anthias_anthias_Stefano_Guerrieri1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish15.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Labrus_Merula_Tuscany.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish16.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Pagellus_erythrinus_27-09-05.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish17.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Pierluigi Angioi"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Coelorinchus_caelorhincus_Sardinia.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish18.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Pierluigi Angioi"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Capros_aper_Sardinia.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish19.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Pagrus_pagrus_20-10-06.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish20.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Alessandro Duci"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Oedalechilus_labeo.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish21.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Roberto Pillon"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Trachinotus_ovatus_Alonissos.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish22.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Roberto Pillon"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Symphodus_tinca_femmina_Muggia.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish23.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Coris_julis_14-07-05_female.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish24.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Coris_julis_24-05-07_male.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish25.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Necrophorus"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Goldfisch_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish26.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Atherina_hepsetus_Stefano_Guerrieri.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish27.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Stefano Guerrieri"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Trachinus_draco_Stefano_Guerrieri.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/fishes/fish28.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Bernard Spragg"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Spotted_Puffer_Fish._(13421084473).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/arcDeTriomphe.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Markus Mark"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_du_Carrousel,_Paris_May_2009_001.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/bayterek.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 MaxPixel"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://www.maxpixel.net/Figure-Astana-City-Icon-Kazakhstan-Buildings-4274669"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/brandenburgGate.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Evans1551"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_(summer_2005).JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/burj.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Rafikas"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Burj.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/cathedral.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Michelangelo-36"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Catedral_de_Santiago_de_Compostela7.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/christTheRedeemer.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 MaxPixel"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://www.maxpixel.net/Christ-The-Redeemer-Rio-De-Janeiro-Brazil-Corcovado-5404701"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/colosseum.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Urse Ovidiu"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Colosseum_Roma_2009.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/eiffelTower.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Alex Liivet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_(26514311499).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/empireState.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Alex Liivet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:New_York_2007_(24636948519).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/greatPyramid.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2002 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Giza_Great_Pyramid_of_Khufu_(9793952173).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/greatWall.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Ahazan"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Great_wall_of_china-mutianyu_4.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/IndiaGate.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 David Castor"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:India_Gate-5.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/jucheTower.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 MaxPixel"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://www.maxpixel.net/Architecture-Sky-City-Building-Travel-Landmark-3329298"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/kutubMinar.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Srikumar Mukherjee"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:KUTUB_MINAR_DELHI_INDIA.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/leaningTowerOfPisa.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Andrux"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%96%D0%B7%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B0_%D0%B2%D0%B5%D0%B6%D0%B0._Pisa_tower.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/leMusee.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Wichien W"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:The_Grand_Louvre_(235493607).jpeg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/monument1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Jerusalem_Temple_Mount_Dome_of_the_Rock_(43195420361).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/monument2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Mustafa Ajlan Abudak"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Tetrapylon.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/monument3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Dimitry Anikin"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Kaiser-Jubil%C3%A4ums-Kirche.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/mountRushmore.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Jim Olah"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Mount_Rushmore_-a.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/operaHouse.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Anonymous"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_(2017).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/parthenon.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Jebulon"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Parthenon_east_side_Acropolis_Athens,_Greece.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/statueOfLiberty.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Alex Liivet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty_(22941884789).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/tajMahal.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 David Castor"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Taj_Mahal-09.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/usCapitol.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Thomson200"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:US_Capitol_building,_April_20,_2019.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/victoriaMemorial.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Gryffindor"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Victoria_Memorial_London_April_2006_056.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/monuments/zimniPalace.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 AndreyA"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:WinterPalactNight-center.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/baseball.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Cody escadron delta"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Baseball_ball.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/blackslate.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Andrzej 22"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Black(green)board.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/bucket.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Daderot"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Milk_pail,_America,_1800s,_pine,_ash_-_Concord_Museum_-_Concord,_MA_-_DSC05807.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/buffetset.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Rijksmuseum"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Kop_en_schotel_beschilderd_met_vlinders_en_libellen,_BK-15423-J.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/bulb.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Vitaium"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Philips_LED_bulb.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/chair.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Pierre Gencey"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Gabriel_00.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/cup.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 FA2010"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Fermanagh_cup_makffm_13817.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/erasers.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 MasterTux"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Eraser_shreddings.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/igloo.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Estormiz"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Igloo_Cafe_Oulu_20180330_02.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/knife.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Perblo"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Folke_Arstrom_Facette.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/pan.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Suricata"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Pfanne_(Gusseisen).jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/pencil.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Charm"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Pencil-db.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/pillow.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Choe Kwangmo"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:2014-04-22_IMG_7242_%EC%B5%9C%EA%B4%91%EB%AA%A8.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/plate.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Metropolitan Museum of Art"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:MET_DP324688.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/spoons.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Wolfgangus Mozart"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Spoons.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/volleyball.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Amada44"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Beach_volleyball_ball.png"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/others/weighingMachine.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Karelj"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Balance_Scaltec.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/dam1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Damsuki"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Amagasedam-d6ebeb2d.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/dam2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 László Szalai"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Bekes-dam_duzzaszto.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/dam3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Navian"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Iedigawa_dam.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/dam4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Judgefloro"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:1644Don_Joaquin_Dam_07.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/dam5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Davidusb"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Caruachi_Dam_in_Venezuela.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/geothermal.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Titin36-commonswiki"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Iceland_Geothermal_facility.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Fluffyarse"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:%22Sungril%22_solar_cooker_photo1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Ljubica Šaran"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Sun%C4%8Deva_pe%C4%87nica.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 atlascuisinesolaire.free.fr"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Fours_solaires_ULOG_sun_oven_horno_solar.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 el.wikipedia"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Solar_tracker_in_Lixouri.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Raysonho"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:SolarCellPanel.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar6.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Pujanak"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Solar_panels_on_a_roof.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar7.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 MarkBuckawicki"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Solar_Panel_.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/solar8.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010Garitzko"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Solar_collectors_Northern_Germany.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 G-Man"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Chesterton_Windmill.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Jebulon"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_harbour_Rhodes.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Redlands597198"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Bekonscot_model_windmill.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Ykliu"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Mykonos_windmills.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Иван Клещинский"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_Podgoschi.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Aschroet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_Schillingstedt.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill6.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Xavi Gaya"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill7.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Dartford Warbler"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Nutley_Windmill_2.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill8.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Koos van den beukel"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Portugese_windmill1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill9.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Aschroet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_Linda_2.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill11.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Aschroet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_Dudutki_04.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill12.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Мастер Снов"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_in_Khokhlovka.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill13.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Alf van Beem"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Dutch_windmill_at_Kinderdijk_pic43.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill14.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Aschroet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_Linda_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/renewable/windmill15.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Aschroet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Windmill_Altenbeichlingen_1.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/cuttingTool.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Baran Ivo"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Cutting_tool_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Marina Shemesh"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=134245&picture=single-hammer"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Junior Libby"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=25081&picture=hammer"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Video Girl"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=266857&picture=heavy-sledgehammer"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Kevin Phillips"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=141359&picture=workshop-tools-1"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Evan-Amos"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Claw-hammer.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer6.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Bukk"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Hammer_r%C3%BCckschlagfrei.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer7.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Metropolitan Museum of Art"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Armorer%27s_Hammer_MET_12.230.2_001feb2014.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer8.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 George Hodan"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=182654&picture=old-hammer"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/hammer9.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 George Hodan"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=182655&picture=old-hammer"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/measuringTape1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Evan-Amos"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Measuring-tape.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/measuringTape2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 W.carter"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Retractable_twenty_meter_tape_measure_1.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/measuringTape3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 George Hodan"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=168690&picture=measuring-tape"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/measuringTape4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 George Hodan"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=168724&picture=measuring-tape"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/measuringTape5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Junior Libby"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=26532&picture=tape-measure"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/measuringTape6.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Contributor"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Massband.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/multimeter1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Neo139"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Multimeter_ut33c.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/multimeter2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Bougainville"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:MultimeterShortTimeDuty.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/multimeter3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Neo139"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Multimeter_gtm2012.jpeg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/nailCutter.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Tripy-commonswiki"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Cortaunyas.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/plier1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Baran Ivo"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Plier01.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/plier2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Alex Myasnikov"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Ostrogubetz.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/plier3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Baran Ivo"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Plier02.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/plier4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 VladimirZhV"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Ploskogubcy_Pliers.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/scissors1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Evan-Amos"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Fiskars-scissors.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/scissors2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Julo"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Nozyce_stajenne-do_strzyzenia_grzyw_konskich.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/scissors3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Saltanat ebli"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Surgical_scissors_05.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/scissors4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Comet27"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Skalm_2.JPG"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/screwDriver.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Oktaeder"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Schraubenzieher.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/screwDriver1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 Leon Brooks"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Philips_plus_or_cross_screwdriver_on_table.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/screwDriver2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 hystiff"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Screwdriver_Phillips.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/screwDriver3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Dezertscorpion"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Torque-screw-driver.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/sickle.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 sogning"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Sickle_sigd.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/sideCutter1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 M338"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Carbon_steel_diagonal_side_cutters.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/spray.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 George Hodan"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://publicdomainpictures.net/en/view-image.php?image=67036&picture=spray-bottle"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/tweezer.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Yapparina"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Tweezers_made_of_martensitic_stainless_steel_JIS_SUS410.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/tweezer1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Evan-Amos"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Tweezers-variety.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/wrench.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Raysonho"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:AdjustableWrenchWhiteBackground.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/tools/wrench1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 M338"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Adjustable_Angle_Wrenches.jpg"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/numbers/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "Base on Kabel font"
+
+[[annotations]]
+path = "src/activities/categorization/resource/images/numbers/numbers.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Divyam Madaan"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/checkers**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/chess**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016-2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/chronos/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020-2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/clickanddraw/clickanddraw.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/clickgame/clickgame.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/NoteForDatasets"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "NONE"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ar.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Zayed Al-Saidi"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-be.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Antos Vaclauski"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ca.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Antoni Bella Pérez"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ca@valencia.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Antoni Bella Pérez"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-cs.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Vit Pelcak"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-el.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Yannis Kaskamanidis"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-en_GB.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-es.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-et.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Tõnis Piirits"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-eu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Iñigo Salvador Azurmendi"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-fr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-hr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Igor Dobrača"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-lt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Mantas Kriaučiūnas"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-lv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Toms Trasūns"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ml.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Aiswarya Kaitheri Kandoth"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-pt_BR.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Frederico Guimaraes"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ro.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Horia PELLE"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-ru.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Konstantin Golubev"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-sq.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Besnik Bleta"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-tr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Emir SARI"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/resource/levels-uk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Yuri Chornoivan"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/click_on_letter_up/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/bubble.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/data/sounds/)"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/drip.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/magic/sounds/)"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/sea1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Ruthven"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Parco_archeologico_di_Baia_-_via_herculanea_2.jpg"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/sea2.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Ruthven"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Parco_archeologico_di_Baia_-_portus_Julius_4.jpg"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/sea3.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 SolarSurfer"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Finding_Nemo_Porthole.JPG"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/sea4.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Pseudopanax"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Black_coral_at_Milford_Sound_Underwater_Observatory.jpg"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/sea5.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Rita Segantini"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:DSCN1716.JPG"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/sea6.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 U.S. Fish and Wildlife Service"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://commons.wikimedia.org/wiki/File:Basket_starfish_underwater_astrophyton_muriatum.jpg"
+
+[[annotations]]
+path = ["src/activities/clickgame/resource/b**.webp", "src/activities/clickgame/resource/c**.webp", "src/activities/clickgame/resource/d**.webp", "src/activities/clickgame/resource/f**.webp", "src/activities/clickgame/resource/m**.webp", "src/activities/clickgame/resource/n**.webp", "src/activities/clickgame/resource/Q**.webp", "src/activities/clickgame/resource/shark1.webp", "src/activities/clickgame/resource/six_barred.webp", "src/activities/clickgame/resource/teeth.webp"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1992-1996 Jonathan Greenblatt, Dave Lemke, Eric Bina"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Images are from xfishtank"
+
+[[annotations]]
+path = "src/activities/clickgame/resource/bubble.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/clockgame/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/color_mix**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/colors/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Timothée Giet"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "src/activities/comparator/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/crane/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/details/details.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Chenonceau_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on an original image by Ra-smit, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Chateau_de_Chenonceau_2008.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/EgeskovSlotSpejling_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on an original image by Malene Thyssen, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Egeskov_Slot_spejling.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Eglise_dAuvers-sur-Oise_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise,_View_from_the_Chevet_-_Google_Art_Project.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/EilanDonanCastle_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Guillaume Piolle, license CC-BY 3.0, source at https://commons.wikimedia.org/wiki/File:Eilean_Donan_castle_-_95mm.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/FanoeWindmill_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Cnyborg, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:DK_Fanoe_Windmill01.JPG"
+
+[[annotations]]
+path = "src/activities/details/resource/image/GizahPyramids_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Ricardo Liberato, license CC-BY-SA 2.0, source at https://commons.wikimedia.org/wiki/File:Pyramids_at_Gizah.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Gogh4_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Gogh4.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Louvre_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Benh LIEU SONG, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Louvre_2007_02_24_c.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Nagoya_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Base64, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Nagoya_Castle(Edit2).jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/NDP_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Sanchezn, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:NotreDameDeParis.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Neuschwanstein_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Softeis, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Castle_Neuschwanstein.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/OperaSidney_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by David Iliff, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/PortraitOfPereTanguy_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Le_Pere_Tanguy.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/TajMahal_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Dhirad, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Taj_Mahal_in_March_2004.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/TourEiffel_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by Benh LIEU SONG, license CC-BY-SA 3.0, source at https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/TowerBridgeLondon_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on a photo by David Iliff, license CC-BY-SA 4.0, source at https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Feb_2006.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/Van_Gogh_The_Night_Cafe_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Night_Cafe_in_Arles,_The.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/VincentVanGogh0012_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Vincent_Van_Gogh_0012.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/VincentVanGogh0013_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Vincent_Van_Gogh_0013.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/VincentVanGogh0019_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Vincent_Van_Gogh_0019.jpg"
+
+[[annotations]]
+path = "src/activities/details/resource/image/VincentVanGoghBridge_**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000, 2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "based on an original painting by Van Gogh, Public domain image, https://commons.wikimedia.org/wiki/File:Vincent_Van_Gogh_0014.jpg"
+
+[[annotations]]
+path = ["src/activities/digital_electricity/**.svg", "src/activities/digital_electricity/**.webp"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/drawletters/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016 Nitish Chauhan", "2018 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/drawletters/drawletters.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2018 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/drawletters/resource/paper.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/drawnumbers/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016 Nitish Chauhan", "2018 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/drawnumbers/drawnumbers.svg", "src/activities/drawnumbers/resource/paper.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/erase**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/erase/resource/eraser1.wav", "src/activities/erase/resource/eraser2.wav"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/data/sounds/)"
+
+[[annotations]]
+path = "src/activities/erase/resource/alpaca.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Dietmar Rabich / Wikimedia Commons"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_B%C3%B6rnste,_Alpakas_--_2020_--_5338.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/bee.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 aussiegall"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Pollinationn.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/butterfly.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Jee & Rani Nature Photography"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "non-linear rescaling, cropping, sharpening of https://commons.wikimedia.org/wiki/File:Parantica_aglea_at_Nayikayam_Thattu.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/calf.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Basile Morin"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Close-up_photograph_of_a_calf%27s_head_looking_at_the_viewer_with_pricked_ears_in_Don_Det_Laos.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/camels.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Alexandr frolov"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Camelus_bactrianus_in_western_Mongolia_02.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/caterpillar.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Ivar Leidus"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Papilio_machaon_-_Daucus_carota_-_Keila.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/chamaeleon.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Benny Trapp"
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:BennyTrapp_Chamaeleo_chamaeleon_Samos_Griechenland.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/cheetah.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Charles J. Sharp"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Cheetah_(Acinonyx_jubatus)_female_2.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/crab.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Nosferattus"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Sally_Lightfoot_Crab_2019.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/dolphin.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 טל שמע"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening, removed a few spots of https://commons.wikimedia.org/wiki/File:Eilat_Dolphin_Reef_(3).jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/flying_fox.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Andrew Mercer"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening, removed a few spots of https://commons.wikimedia.org/wiki/File:Grey_headed_flying_fox_-_AndrewMercer_IMG41848.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/gibbon.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 JJ Harrison"
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "cropping of https://commons.wikimedia.org/wiki/File:Hylobates_lar_-_Kaeng_Krachan_WB.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/giraffe.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Reinhard Berlin"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "cropping of https://commons.wikimedia.org/wiki/File:RB_20200115_Murchison_Falls_1-92.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/goat.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 JoachimKohlerBremen"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Walliser_Schwarzhalsziege,_Belalp_2014.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/gorilla.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Charles J. Sharp"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Mountain_gorilla_(Gorilla_beringei_beringei)_female_2.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/gosling.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Stephan Sprinz"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Graugans-G%C3%B6ssel_(anser_anser)_im_Naturschutzgebiet_Wagbachniederung.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/heron.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Stephan Sprinz"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping of https://commons.wikimedia.org/wiki/File:Purpurreiher_(ardea_purpurea)_im_Flug_-_NSG_Wagbachniederung_1.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/horse.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Eatcha"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Zaniskari_Horse_in_Ladakh.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/kingfisher.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Frank-2.0"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Eisvogel_kingfisher.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/kitten.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 GalgenTX"
+SPDX-License-Identifier = "CC-BY-2.0"
+SPDX-FileComment = "cropping, colour adjustment, sharpening of https://commons.wikimedia.org/wiki/File:A_posing_kitten_(Flickr).jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/long_nosed_monkey.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Charles J. Sharp"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Proboscis_monkey_(Nasalis_larvatus)_female_and_baby.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/macaque.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 PJeganathan"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Bonnet_macaques_in_anaimalai_hills_JEG2730.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/meerkats.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Charles J. Sharp"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/northern_harrier.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Frank Schulenburg"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Female_northern_harrier_in_flight-1142.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/nubian_ibex.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Rhododendrites"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "non-linear rescaling, ccropping, sharpening of https://commons.wikimedia.org/wiki/File:Juvenile_Nubian_ibex_in_Mitzpe_Ramon_(40409).jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/penguin.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Gordon Leggett / Wikimedia Commons"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "non-linear rescaling, cropping, sharpening of https://commons.wikimedia.org/wiki/File:2019-03-03_Chinstrap_penguin_on_Barrientos_Island,_Antarctica.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/pika.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 NPS Climate Change Response"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "cropping, sharpening of https://www.flickr.com/photos/npsclimatechange/23072904076/"
+
+[[annotations]]
+path = "src/activities/erase/resource/red_panda.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Mathias Appel"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Red_Panda_(30324056733).jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/rhinoceros.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Charles J. Sharp"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Indian_rhinoceros_(Rhinoceros_unicornis)_4.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/spoonbills.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Ryzhkov Sergey"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D1%81%D0%B0%D1%80%D1%96_%D0%B2_%D0%B4%D0%B5%D0%BB%D1%8C%D1%82%D1%96_%D0%94%D1%83%D0%BD%D0%B0%D1%8E.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/squirrel.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Роман Наумов"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:%D0%91%D1%96%D0%BB%D0%BA%D0%B0_%D0%BD%D0%B0_%D0%B4%D0%B5%D1%80%D0%B5%D0%B2%D1%96_%D0%B2_%D0%B4%D0%B5%D0%BD%D0%B4%D1%80%D0%BE%D0%BF%D0%B0%D1%80%D0%BA%D1%83_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D1%96%D1%8F.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/swans.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Charles J. Sharp"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Mute_swans_(Cygnus_olor)_and_cygnets.jpg"
+
+[[annotations]]
+path = "src/activities/erase/resource/toucan.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 LG Nyqvist"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "cropping, sharpening of https://commons.wikimedia.org/wiki/File:Pteroglossus_torquatus_Costa_Rica.jpg"
+
+[[annotations]]
+path = "src/activities/enumerate/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/**.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000,2008 Bruno Coudoin"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/cat.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Loliloli"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/chicken.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Tranquilles"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/cow.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Dohduhdah"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/dog.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Hans Kemperman"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/duck.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Bernard Spragg"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/horse.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Seth Zeigler"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/owl.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Lepale"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/pig.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Teinesavaii"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_farm_animals/resource/animals/sheep.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Rob Mitchell"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018-2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/egypt/bentPyramid.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Neithsabes"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/egypt/greatPyramidOfGiza.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2002 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/egypt/meidumPyramid.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Neithsabes"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/egypt/redPyramid.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2003 Chipdawes"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/arlesAmphitheater.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 (WT-fr) OT Arles"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/chateaudeChambord.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 BjörnT"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/chateaudeChenonceau.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Alf van Beem"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/citedeCarcassonne.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Petitemontagnedujura"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/eiffelTower.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Tognopop"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/montStMichel.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Ali Sabbagh"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/palaisdesPapes.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Tognopop"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/pontduGard.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Mimova"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/reimsCathedral.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Mattana"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/france/rocamadour.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 François Darras"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/aulaPalatina.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Berthold Werner"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/berlinCathedral.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/brandenburgGate.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Evans1551"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/neuschwansteinCastle.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 cameralends"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/schwerinPalace.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Hermann Luyken"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/trierImperialBaths.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Berthold Werner"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/germany/wormsCathedral.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Immanuel Giel"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/ajantaCave.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Jonathanawhite"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/charminar.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Goutamkhandelwal"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/gatewayofIndia.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Simon Steinberger"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/goldenTemple.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Jasdeep Singh"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/greatStupa.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1999 ArnoldBetten"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/hawaMahal.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Janwiki"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/konarkSunTemple.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Tetraktys"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/mysorePalace.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Shiva sg"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/qutubMinar.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 pramadas"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/rangGhar.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Porikolpok Oxom"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/india/victoriaMemorial.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Anourag"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/cabrillo.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 allyndon"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/canyondeChelly.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1998 Nikater"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/castillodeSanMarcos.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 National Park Service"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/castleClinton.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1961 Jack E. Boucher, National Park Service"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/fortSumter.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1998 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/georgeWashingtonBirthplace.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2003 National Park Service"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/lincolnMemorial.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Brylie Christopher Oxley"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/mountRushmore.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Eekim"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/navajo.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Jon Sullivan"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/usa/statueofLiberty.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 (WT-shared) Ypsilonatshared"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/chichenItza.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Daniel Schwen"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/christTheRedeemer.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Chensiyuan"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/colosseum.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Urse Ovidiu"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/greatWallofChina.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Nicolas Perrault III"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/machuPicchu.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Guillaume Pascal"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/petra.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Berthold Werner"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/wonders/tajMahal.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Yann"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/bison.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Kurt Kaiser"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/chameleon.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Nilesh1104"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/crocodile.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Djambalawa"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/dragon.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 TimVickers"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/giraffe.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Mike and Lara Wolfe"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/hedgehog.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 George Chernilevsky"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/jaguar.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Frieda Bredesen"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/kangaroo.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Vicki Nunn"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/koala.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2002 BurningWell"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/lemur.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Mathias Appel"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/moose.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Ryan Hagerty"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/narwhal.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Dr Kristin Laidre"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/panda.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2004 Jeff Kubina"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/polar_bear.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 anonymous"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_animals/resource/animals/scarlet_macaw.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Dcoetzee"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/africa.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Kenneth Ritchards"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/america.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2002 Tom Harpel"
+SPDX-License-Identifier = "CC-BY-2.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/australia.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Steve Evans"
+SPDX-License-Identifier = "CC-BY-2.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/ireland.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 candyschwartz"
+SPDX-License-Identifier = "CC-BY-2.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/italy.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 SoriamuséuM"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/japan.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 takami torao"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/mexico.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Elidealista"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/middleeast.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Metropolitan Museum of Art"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/orchestra.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 ABC Informática"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/africa.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Michi Henning"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/america.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Karel Schmiedberger"
+SPDX-License-Identifier = "CC-BY-3.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/australia.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Jouke kooistra and Rob Tol"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/beethoven.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Drummyfish"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/ireland.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 peakfiddler"
+SPDX-License-Identifier = "CC-BY-3.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/italy.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1920 Adam Cuerden"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/japan.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 Scott Harding"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/mexico.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Mex-Django"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/explore_world_music/resource/music/middleeast.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Safiye Ayla"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/activities/family**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/fifteen/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/find_the_day/find_the_day.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/followline/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/football/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/fractions_**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/frieze/**.svg", "src/activities/frieze/resources/svg/**.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/geo-country/geo-country.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/geo-country/MapSources/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "\n  Read sources file to have more information on how to create new maps"
+
+[[annotations]]
+path = "src/activities/geo-country/resource/**/**.svgz"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "\n  All the maps (except romania-historical and lithuania-cultural) were created based on data from OpenStreetMap (downloaded with https://osm-boundaries.com/), converted to country-specific projections using reproject (https://www.npmjs.com/package/reproject), converted to svg with geojson-to-svg (https://www.npmjs.com/package/geojson-to-svg), and then heavily edited in Inkscape.\n  romania-historical map was based on https://commons.wikimedia.org/wiki/File:Romania_historic_regions.svg (CC-BY-SA 3.0 Unported license, by Andein), with heavy editing in Inkscape.\n  lithuania-cultural map was based on https://commons.wikimedia.org/wiki/File:Liet-etno-regionai.png (public domain license), with heavy editing in Inkscape."
+
+[[annotations]]
+path = "src/activities/geo-country/resource/spain/spain_**.svgz"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Jesús Espino"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/geography/geography.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2017 Timothée Giet", "2017 Harpreet S"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/geography/MapSources/Continents.svgz"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "modified mix of https://commons.wikimedia.org/wiki/File:Continents.svg (public domain) and https://en.wikipedia.org/wiki/File:Continents_colour2.svg by Peterfitzgerald (CC-BY-SA-3.0)"
+
+[[annotations]]
+path = "src/activities/geography/MapSources/oceania.svgz"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016 Alexander Milevski", "2021 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://milevski.co/geojson2svg/demo/lands.svg (under MIT licence)"
+
+[[annotations]]
+path = "src/activities/geography/MapSources/**.svgz"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://commons.wikimedia.org/wiki/File:States_and_territories_of_Oceania.svg"
+
+[[annotations]]
+path = "src/activities/geography/resource/**.svgz"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/gletters/gletters.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ar.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Zayed Al-Saidi"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ast.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-be.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Antoś Vaclaŭski"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-bg.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-br.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ca.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Antoni Bella Pérez"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ca@valencia.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Antoni Bella Pérez"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-cs.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-da.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-de.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-el.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-en_GB.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-es.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-et.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-eu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Iñigo Salvador Azurmendi"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-fa.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-fi.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-fr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ga.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-gd.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-gl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-gu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-he.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-hr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Igor Dobrača"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-hu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-it.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Paolo Gibellini"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ka.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-lt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-lv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Toms Trasūns"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-mk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ml.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Aiswarya Kaitheri Kandoth"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-nb.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-nl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-nn.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-pl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-pt_BR.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 André Marcelo Alvarenga"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ro.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ru.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-sk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-sl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-so.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-sq.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Besnik Bleta"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-sr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-sr@latin.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-sv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-ta.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-tr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Emir SARI"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-uk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/default-vi.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/upper-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gletters/resource/upper-gd.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/gnumch-**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/gnumch-equality/resource/eat.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/graduated_line_read/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/graduated_line_use/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/**.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Bruno Anselme"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/**.md"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Bruno Anselme"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/examples/**.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Bruno Anselme"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-ar.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Taha Zerrouki"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-br.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Envel Kervoas"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-ca.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Josep M. Ferrer"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-cs.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Jan Papež"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-el.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Yannis Kaskamanidis"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Emmanuel Charruau"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-fr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Emmanuel Charruau"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-hr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Igor Dobrača"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-hu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 István Lipták"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-lt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2024 Rolandas Jakštys", "2024 Bernardas Liukaitis"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-lv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Toms Trasūns"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-ml.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2024 Divakaran Payyan Kandanchirakkal", "2024 Aiswarya Kaitheri Kandoth"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_analysis/resource/grammar_analysis-ro.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Horia Pelle"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-ar.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2024 Taha Zerrouki", "2024 Zayed Al-Saidi"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-br.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Envel Kervoas"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-ca.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Josep M. Ferrer"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-cs.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Jan Papež"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-el.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Yannis Kaskamanidis"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Emmanuel Charruau"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-fr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Emmanuel Charruau"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-hr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Igor Dobrača"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-hu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 István Lipták"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-lt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2024 Rolandas Jakštys", "2024 Bernardas Liukaitis"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-lv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Toms Trasūns"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-ml.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2024 Divakaran Payyan Kandanchirakkal", "2024 Aiswarya Kaitheri Kandoth"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/grammar_classes/resource/grammar_classes-ro.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Horia Pelle"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/graph-coloring/graph-coloring.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/graph-coloring/resource/shapes/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/gravity/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/gravity/resource/planet0.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["1989 NASA", "2020 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Neptune.jpg"
+
+[[annotations]]
+path = "src/activities/gravity/resource/planet1.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2001 NASA and the Hubble Heritage Team", "2020 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Mars_Hubble.jpg"
+
+[[annotations]]
+path = "src/activities/guess24/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/guess24/**.csv", "src/activities/guess24/**.php", "src/activities/guess24/**.md", "src/activities/guess24/**.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Bruno Anselme"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/guesscount/guesscount.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2017 Rahul Yadav", "2017 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/guesscount/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/guessnumber/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/guessnumber/resource/helicopter.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 fridobeck"
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "original source from https://web.archive.org/web/20180316105002/https://freesound.org/people/fridobeck/sounds/194250/ - https://freesound.org/people/deleted_user_3544904/sounds/194250/"
+
+[[annotations]]
+path = "src/activities/hangman/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/hangman/resource/fog.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Rajdeep Kaur"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/hanoi/hanoi.svg", "src/activities/hanoi_real/hanoi_real.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2017 Timothée Giet", "2017 Harpreet S"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/hanoi**/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/hexagon/hexagon.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/hexagon/resource/hexagon_border.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/hexagon/resource/strawberry.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Franck Doucet"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/hexagon/hexagon.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/imagename/imagename.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/instruments/instruments.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/instruments/resource/drum_kit.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Krishmeister"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/instruments/resource/banjo.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 pflanigan"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/instruments/resource/organ.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Mike Hayes"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "extract of https://commons.wikimedia.org/wiki/File:Lloyd-Study_in_Canon_for_Organ.ogg"
+
+[[annotations]]
+path = "src/activities/instruments/resource/piano.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Felipe Chagas"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "source link is https://freesound.org/people/Felipe%20Chagas/sounds/537526/"
+
+[[annotations]]
+path = "src/activities/instruments/resource/guitar.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Argenisflores"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "extract of https://freesound.org/people/Argenisflores/sounds/632817/"
+
+[[annotations]]
+path = "src/activities/instruments/resource/harmonica.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006D avid Monniaux"
+SPDX-License-Identifier = "GFDL-1.2-or-later"
+SPDX-FileComment = "source link is https://commons.wikimedia.org/wiki/File:Harmonica-pumping.ogg"
+
+[[annotations]]
+path = "src/activities/instruments/resource/violin.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Finnssound"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "extract of https://freesound.org/people/Finnssound/sounds/668450/"
+
+[[annotations]]
+path = "src/activities/instruments/resource/electric_guitar.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 lennartgreen"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "extract of https://freesound.org/people/lennartgreen/sounds/203646/"
+
+[[annotations]]
+path = "src/activities/instruments/resource/horn.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Tatu Palo & Henri Kahkonen"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "source link is https://freesound.org/people/HenKonen/sounds/682227/"
+
+[[annotations]]
+path = ["src/activities/instruments/resource/accordion.ogg", "src/activities/instruments/resource/bongo.ogg", "src/activities/instruments/resource/castanets.ogg", "src/activities/instruments/resource/cello.ogg", "src/activities/instruments/resource/clarinet.ogg", "src/activities/instruments/resource/cymbal.ogg", "src/activities/instruments/resource/flute_traversiere.ogg", "src/activities/instruments/resource/harp.ogg", "src/activities/instruments/resource/maracas.ogg", "src/activities/instruments/resource/saxophone.ogg", "src/activities/instruments/resource/snare_drum.ogg", "src/activities/instruments/resource/tambourine.ogg", "src/activities/instruments/resource/timpani.ogg", "src/activities/instruments/resource/triangle.ogg", "src/activities/instruments/resource/trombone.ogg", "src/activities/instruments/resource/trumpet.ogg", "src/activities/instruments/resource/tuba.ogg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Sylvain Dechy, Jérome Blanchard, Julie Jules, Chloé Tuvuku"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = ["src/activities/instruments/resource/background.svg", "src/activities/instruments/resource/accordion.svg", "src/activities/instruments/resource/banjo.svg", "src/activities/instruments/resource/bongo.svg", "src/activities/instruments/resource/castanets.svg", "src/activities/instruments/resource/cello.svg", "src/activities/instruments/resource/clarinet.svg", "src/activities/instruments/resource/cymbal.svg", "src/activities/instruments/resource/drum_kit.svg", "src/activities/instruments/resource/electric_guitar.svg", "src/activities/instruments/resource/flute_traversiere.svg", "src/activities/instruments/resource/guitar.svg", "src/activities/instruments/resource/harmonica.svg", "src/activities/instruments/resource/harp.svg", "src/activities/instruments/resource/horn.svg", "src/activities/instruments/resource/maracas.svg", "src/activities/instruments/resource/organ.svg", "src/activities/instruments/resource/piano.svg", "src/activities/instruments/resource/saxophone.svg", "src/activities/instruments/resource/snare_drum.svg", "src/activities/instruments/resource/tambourine.svg", "src/activities/instruments/resource/timpani.svg", "src/activities/instruments/resource/triangle.svg", "src/activities/instruments/resource/trombone.svg", "src/activities/instruments/resource/trumpet.svg", "src/activities/instruments/resource/tuba.svg", "src/activities/instruments/resource/violin.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/land_safe/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/lang/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/words_sample/**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2012 art4apps.org", "2022 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "\n  Originally released by art4apps.org under the CC-BY-SA 3.0 license (https://web.archive.org/web/20120908214126/http://www.art4apps.org/). Upscaled and smoothed images."
+
+[[annotations]]
+path = ["src/activities/lang/resource/words.json", "src/activities/lang/resource/words_sample.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ar.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Zayed Al-Saidi"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-az.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Kheyyam Gojayev"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-be.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Antoś Vaclaŭski"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-bg.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Mincho Kondarev"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-br.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Envel Kervoas"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ca.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Antoni Bella Pérez", "2019 Josep M. Ferrer"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ca@valencia.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Antoni Bella Pérez", "2019 Josep M. Ferrer"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-cs.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Vit Pelcak"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-da.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 schlander"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-de.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Burkhard Lück", "2021 Frederik Schwarzer"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-el.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Stelios", "2020 Yannis Kaskamanidis"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Siddhesh Suthar"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-en_GB.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Steve Allewell"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-eo.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Oliver Kellogg"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-es.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Antoni Bella Pérez", "2020 Eloy Cuadra"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-et.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Tõnis Piirits"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-eu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Iñigo Salvador Azurmendi", "2019 Alexander Gabilondo"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-fi.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2020 Tommi Nieminen", "2022 Lasse Liehu"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-fr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Jazeix Johnny", "2019 Simon Depiets", "2020 Xavier Besnard"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ga.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Seamusandy"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-gd.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Jazeix Johnny"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-gl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Adrián Chaves", "2023 Pablo"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-he.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 amihaygal"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-hi.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2020 G Karunakar", "2021 Raashi Saigal", "2021 Sameer Singh", "2021 Raghavendra Kamath"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-hr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Igor Dobrača"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-hu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 István Lipták"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-id.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Iwan S Tahari", "2019 Rania Amina", "2017 Andika Triwidada"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-it.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Vincenzo Reale"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ka.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Temuri Doghonadze"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-lt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Rolandas Jakštys"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-lv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Toms Trasūns"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-mk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Sofre Garevski", "2021 Igor Risteski"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ml.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Aiswarya KK"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-nl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Freek de Kruijf"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-nn.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Karl Ove Hufthammer"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-pl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Łukasz Wojniłowicz"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-pt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 José Nuno Coelho Pires"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-pt_BR.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Luiz Fernando Ranghetti", "2019 Frederico Gonçalves Guimarães"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ro.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Horia PELLE", "2020 Sergiu Bivol"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-ru.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Alexander Potashev", "2019 Alexey Loginov"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-sk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Roman Paholík", "2020 Matej Mrenica"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-sl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Matjaž Jeran"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-sq.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Besnik Bleta"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-sv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Stefan Asserhäll"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-sw.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Godlove Kyando"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-tr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2020 Filiz Alver", "2022 Emir SARI"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-uk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Yuri Chornoivan"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-zh_CN.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 guoyunhe"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/lang/resource/content-zh_TW.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 pan93412", "2020 Franklin Weng"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/learn_**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/left_right_click/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/leftright/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/leftright/resource/**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/letter-in-word/letter-in-word.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/lightsoff/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/louis-braille/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/louis-braille/resource/louis.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/magic-hat**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/maze**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/melody/melody.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/melody/resource/knock.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/melody/resource/xylofon**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 José Jorge"
+SPDX-License-Identifier = "GPL-3.0-only"
+SPDX-FileComment = "Made with csound for GCompris: https://github.com/gcompris/GCompris-gtk/commit/b241c73368d536452ffe0fb7d14ccf29a0d5ea40#diff-91c5b46dc84a94604a4e4d0caed9bf85590a2eddbb12d2e8dc80badf324a9dfb"
+
+[[annotations]]
+path = "src/activities/memory**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/memory/resource/card_flip.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 f4ngy"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "src/activities/memory-sound/resource/guitar_**.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 José Jorge"
+SPDX-License-Identifier = "GPL-3.0-only"
+SPDX-FileComment = "Made with csound for GCompris: https://github.com/gcompris/GCompris-gtk/commit/b241c73368d536452ffe0fb7d14ccf29a0d5ea40#diff-91c5b46dc84a94604a4e4d0caed9bf85590a2eddbb12d2e8dc80badf324a9dfb"
+
+[[annotations]]
+path = "src/activities/memory-sound/resource/LR**.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Lionel Allorge"
+SPDX-License-Identifier = "LicenseRef-Free-Art-Licence-1.2"
+SPDX-FileComment = "Made by Lionel Allorge (association \"Lune Rouge\"). Files marked _cut are the same sound in shorted version, by Yves Combe."
+
+[[annotations]]
+path = "src/activities/menu/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2019 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/mining/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/mining/resource/pickaxe.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/magic/sounds/). metalpaint.wav has been remixed by Bruno Coudoin to pickaxe.ogg"
+
+[[annotations]]
+path = "src/activities/mining/resource/realrainbow.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "File from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/magic/sounds/)"
+
+[[annotations]]
+path = "src/activities/missing-letter/missing-letter.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/missing-letter/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/money**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/money/resource/money1.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2008 florian_reinke"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/money/resource/money2.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 keweldog"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["src/activities/morse_code/resource/dash.wav", "src/activities/morse_code/resource/dot.wav"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Crasy Marvin"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "src/activities/morse_code/resource/silence.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Johnny Jazeix"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/morse_code/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/mosaic/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/note_names/note_names.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/nine_men_morris/nine_men_morris.svg", "src/activities/nine_men_morris_2players/nine_men_morris_2players.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016 Timothée Giet", "2016 Pulkit Gupta"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/nine_men_morris/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/numbers-odd-even/numbers-odd-even.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/number_sequence/number_sequence.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/number_sequence/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2018 Timothée Giet"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+SPDX-FileComment = "Original images from Olivier Ponchaut (https://github.com/gcompris/GCompris-gtk/blob/master/src/drawnumber-activity/resources/drawnumber/README)"
+
+[[annotations]]
+path = "src/activities/ordering_**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/oware**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/paintings/paintings.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/paintings/resource/image/bg.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/paintings/resource/image/**.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["1994-2006 Nicolas Pioch", "2008 Bruno Coudoin"]
+SPDX-License-Identifier = "GPL-3.0-only"
+SPDX-FileComment = "\n  All the paintings are from the WebMuseum.\n  As per the WebMuseum license, the paintings are released under the GPLv3 or later.\n  http://www.ibiblio.org/wm/about/license.html"
+
+[[annotations]]
+path = "src/activities/path**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/penalty/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/photo_hunter/photo_hunter.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016 Timothée Giet", "2017 Harpreet S"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/photo_hunter/resource/photo1.svg", "src/activities/photo_hunter/resource/photo1_**.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2014 Moini", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/193191/05-Mai-Paint-it-green"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo2**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016 Gordon Dylan Johnson", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/241524/Animals-Flourish-Landscape"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo3**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2007 carlitos", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/8006/carlitos-Cartoon-Landscape"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo4**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2013 Cyber Scooty", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/188283/cyberscooty-watermill-in-landscape"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo5**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2013 Cyber Scooty", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/185885/cyberscoty-landscape"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo6**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2013 OlKu", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/178626/fir-forest-horizontaly-seamless-pattern"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo7**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2010 slabbie", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/79099/Land-1"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo8**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2011 palomaironique", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/142357/Landscape-001-Summer"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo9**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2014 Olku", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/205417/montains"
+
+[[annotations]]
+path = "src/activities/photo_hunter/resource/photo10**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2008 Peileppe", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/17626/Peileppe-Castle"
+
+[[annotations]]
+path = "src/activities/planegame/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/piano_composition/piano_composition.svg", "src/activities/piano_composition/resource/add.svg", "src/activities/piano_composition/resource/bassClefButton.svg", "src/activities/piano_composition/resource/erase.svg", "src/activities/piano_composition/resource/failed.svg", "src/activities/piano_composition/resource/lyrics.svg", "src/activities/piano_composition/resource/open.svg", "src/activities/piano_composition/resource/passed.svg", "src/activities/piano_composition/resource/piano.svg", "src/activities/piano_composition/resource/play.svg", "src/activities/piano_composition/resource/save.svg", "src/activities/piano_composition/resource/stop.svg", "src/activities/piano_composition/resource/trebbleClefButton.svg", "src/activities/piano_composition/resource/undo.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/piano_composition/resource/eighthRest.svg", "src/activities/piano_composition/resource/halfRest.svg", "src/activities/piano_composition/resource/quarterRest.svg", "src/activities/piano_composition/resource/wholeRest.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/piano_composition/resource/bass**4**.svg", "src/activities/piano_composition/resource/treble**3**.svg", "src/activities/piano_composition/resource/treble**4**.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "all these images use the notes images which are in CC0-1.0 (licences/copyright below)"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/bassClef.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Rick van der Zwet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/12475/bass-clef"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/trebleClef.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 Rick van der Zwet"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/12473/treble-clef"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/blackflat.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 dannya"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/198043/mono-music-flat"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/blacksharp.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 dannya"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/198039/mono-music-cross"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/half-note.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Jason Rebuck"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/92971/half-note-stem-facing-up"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/quarter-note.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Jason Rebuck"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/92875/quarter-note-stem-facing-up"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/eighth-note.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Jason Rebuck"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/92869/eighth-note-stem-facing-up"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/genericNoteHalf.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Jason Rebuck"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/92971/half-note-(stem-facing-up)-by-jaschon"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/genericNoteEighth.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Jason Rebuck"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/92869/eighth-note-(stem-facing-up)-by-jaschon"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/genericNoteQuarter.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Jason Rebuck"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/92875/quarter-note-(stem-facing-up)-by-jaschon"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/genericNoteWhole.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 10binary"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/140893/whole-note-by-10binary"
+
+[[annotations]]
+path = "src/activities/piano_composition/resource/whole-note.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Chandler Isaac Klebs"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "image from https://openclipart.org/detail/140893/whole-note"
+
+[[annotations]]
+path = "src/activities/play_piano/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/play_piano/dataset.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Aman Kumar Gupta"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "src/activities/play_rhythm/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/play_rhythm/resource/click.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2014 Druminfected", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "edited version of https://freesound.org/people/Druminfected/sounds/250552/"
+
+[[annotations]]
+path = "src/activities/play_rhythm/resource/dataset.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Aman Kumar Gupta"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "src/activities/positions/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/programmingMaze/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019-2021 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/railroad/railroad.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/railroad/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/railroad/resource/sounds/train.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://opengameart.org/content/steam-whistle by bart, CC0-1.0"
+
+[[annotations]]
+path = ["src/activities/readingh/**.svg", "src/activities/readingv/**.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/activities/redraw/**.svg", "src/activities/redraw_symmetrical/**.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/redraw/resource/brush.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 acrober"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/redraw/resource/eraser.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 esperri"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/renewable_energy/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "images in resource/ are based on artwork by Cabaraux Stéphane, 2008"
+
+[[annotations]]
+path = "src/activities/reversecount/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016-2019 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/reversecount/resource/icy_walk.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 tim kahn"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "src/activities/roman_numerals/roman_numerals.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/roman_numerals/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/scalesboard**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/scalesboard/resource/metal_hit.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 jorickhoofd"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "src/activities/share/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2019 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/simplepaint/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018-2020 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/smallnumbers**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/smallnumbers**/resource/default-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/solar_system/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/mercury.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2011 NASA", "2018 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://en.wikipedia.org/wiki/File:Mercury_Globe-MESSENGER_mosaic_centered_at_0degN-0degE.jpg"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/venus.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 NASA"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Venus_globe_-_transparent_background.png"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/earth.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2005 NASA", "2018 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:The_Blue_Marble.jpg"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/mars.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2001 NASA and the Hubble Heritage Team", "2020 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Mars_Hubble.jpg"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/jupiter.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "1990 NASA"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Jupiter_(transparent).png"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/saturn.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2009 NASA", "2018 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Saturn_during_Equinox.jpg"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/uranus.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["1986 NASA", "2018 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Uranus.jpg"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/neptune.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["1989 NASA", "2020 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:Neptune.jpg"
+
+[[annotations]]
+path = "src/activities/solar_system/resource/sun.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2010 NASA", "2020 Timothée Giet"]
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "original source at https://commons.wikimedia.org/wiki/File:The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg"
+
+[[annotations]]
+path = "src/activities/submarine/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/sudoku/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/submarine/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/superbrain/superbrain.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Bruno Coudoin"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/superbrain/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/target/target.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/target/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/target/resource/arrow.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2012 gezortenplotz", "2006 Consul92"]
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "\n  A mix of the 2 sounds\n    https://www.freesound.org/people/gezortenplotz/sounds/20131/ (under CC-BY-3.0)\n    https://www.freesound.org/people/Consul92/sounds/171306/ (under CC0-1.0)"
+
+[[annotations]]
+path = "src/activities/tangram/tangram.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2016-2017 Timothée Giet", "2016-2017 Ilya Bizyaev"]
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/tangram/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/template/template.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/tens_complement**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/tic_tac_toe**/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/traffic/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/traffic/resource/car.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 henrique85n"
+SPDX-License-Identifier = "CC-BY-SA-3.0"
+SPDX-FileComment = "extract"
+
+[[annotations]]
+path = "src/activities/watercycle/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "images in resource/ are based on artwork by Cabaraux Stéphane, 2008"
+
+[[annotations]]
+path = "src/activities/watercycle/resource/**.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin and others"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/wordsgame/wordsgame.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2022 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/background.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on http://openclipart.org/detail/16504/castle-by-ibinbin"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-af.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 friedelwolff"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ar.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Zayed Al-Saidi"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ast.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Xandru Armesto"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-be.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Antoś Vaclaŭski"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-bg.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-br.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Envel Kervoas"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ca.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Antoni Bella Pérez"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ca@valencia.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-cs.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 Marek Černocký"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-da.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-de.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-el.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-en.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-en_GB.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-eo.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Jacob Nordfalk"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-es.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-et.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Tõnis Piirits"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-eu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-fi.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-fr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ga.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Séamus Ó Briain"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-gd.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 gunchleoc"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-gl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 Gonçalo Cordeiro"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-he.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-hu.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-id.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-it.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Paolo Gibellini"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-lt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-lv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Toms Trasūns"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-mk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ml.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2020 Aiswarya Kaitheri Kandoth"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-nb.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-nl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-nn.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-pt.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-pt_BR.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 André Marcelo Alvarenga"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ro.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-ru.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-sk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-sl.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 Bruno Coudoin"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-sq.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021 Besnik Bleta"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-sv.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 yeager"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-tr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Emir SARI"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/default-uk.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Yuri Chornoivan"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/activities/wordsgame/resource/README"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Holger Kaelberer"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/core/Mainpage.dox"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Holger Kaelberer"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = ["src/core/qmldir", "src/core/GCompris.rc"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/core/qt.conf"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Thibaut ROMAIN"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/core/resource/arrows_move.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2010 warszawianka"
+SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "https://openclipart.org/detail/30475/tango-style-arrows-red"
+
+[[annotations]]
+path = "src/core/resource/intro.ogg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2005 Ludovic Grossard"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+SPDX-FileComment = "based on a theme by Djilali Sebihi"
+
+[[annotations]]
+path = "src/core/resource/aboutkde.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Tyson Tan"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/core/resource/arrow.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Holger Kaelberer"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/core/resource/star.png"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Bruno Coudoin"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "src/core/resource/tuxballoon.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on http://openclipart.org/detail/32719/architetto"
+
+[[annotations]]
+path = "src/core/resource/win.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "based on https://openclipart.org/detail/48937/Trophy"
+
+[[annotations]]
+path = ["src/core/resource/gcompris-icon.png", "src/core/resource/gcompris-logo-full.svg"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Timothée Giet"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/core/resource/file_icon.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Web Lab X"
+SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "https://www.iconfinder.com/icons/370083/file_document_files_page_paper_sheet_icon"
+
+[[annotations]]
+path = "src/core/resource/loader.gif"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/core/resource/isrgrootx1.pem"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "None"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/core/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015-2017 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = "src/core/resource/bonus/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = ["src/core/resource/fonts/OpenDyslexic-Regular.otf", "src/core/resource/fonts/OpenDyslexic-Regular.ttf"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Abelardo Gonzalez"
+SPDX-License-Identifier = "CC-BY-3.0"
+
+[[annotations]]
+path = ["src/core/resource/fonts/OpenDyslexic-Regular.otf", "src/core/resource/fonts/OpenDyslexic-Regular.ttf"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 SIL International"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = "src/core/resource/fonts/Andika-R.ttf"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006 SIL NRSI team"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = ["src/core/resource/fonts/**.txt", "src/core/resource/fonts/feat_set_tuned.xml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "None"
+SPDX-License-Identifier = "Unlicense"
+
+[[annotations]]
+path = "src/core/resource/sounds/audioclick.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2006-2023 Brandon Morris"
+SPDX-License-Identifier = "CC-BY-3.0"
+
+[[annotations]]
+path = ["src/core/resource/sounds/bleep.wav", "src/core/resource/sounds/brick.wav", "src/core/resource/sounds/darken.wav", "src/core/resource/sounds/flip.wav", "src/core/resource/sounds/scroll.wav", "src/core/resource/sounds/smudge.wav"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 William Kendrick"
+SPDX-License-Identifier = "GPL-2.0-or-later"
+SPDX-FileComment = "Files from TuxPaint (https://sourceforge.net/p/tuxpaint/tuxpaint/ci/master/tree/data/sounds/)"
+
+[[annotations]]
+path = "src/core/resource/sounds/bonus.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2023 stormystock", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "extract from https://freesound.org/people/stormystock/sounds/677804/"
+
+[[annotations]]
+path = "src/core/resource/sounds/crash.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2018 Jacco18", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "remastered version of https://freesound.org/people/Jacco18/sounds/419023/"
+
+[[annotations]]
+path = "src/core/resource/sounds/completetask.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Brandon Morris"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "src/core/resource/sounds/water.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2019 Random Mind", "2023 Timothée Giet"]
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "remastered extract from https://opengameart.org/content/sea-and-river-wave-sounds"
+
+[[annotations]]
+path = "src/core/resource/sounds/win.wav"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2014 Gabriel Araujo"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "tests/core/Contents.test"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 Johnny Jazeix"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
+path = "tools/inkscape/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2021-2023 Timothée Giet"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = "tools/menus/resource/**.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000-2008 Bruno Coudoin"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = "src/activities/adjacent_numbers/adjacent_numbers.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Timothée Giet"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
