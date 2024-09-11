@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-08-29 16:32+0300\n"
+"PO-Revision-Date: 2024-09-09 21:32+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -23657,7 +23657,7 @@ msgstr "אי אפשר לשים יותר מ %1 חתיכות של סוכריות �
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "ציור ברשת"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -23669,7 +23669,7 @@ msgstr "ליצור את הציור שלך."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "להביע את היצירתיות שלך בציור."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -25950,12 +25950,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "להקליד את המילים לפני שהן מגיעות לקרקע."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "נוסף תירגום לאזרביז'נית! מי היה מאמין."
+msgstr "נוסף תרגום ללטבית"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
@@ -25996,12 +25993,9 @@ msgid ""
 msgstr "אפשרות חדשה בשורת-הפקודה לרשום את כל הפעילויות ולהתחיל באחת ספציפית."
 
 #: core/ChangeLog.qml:50
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "נוסף תירגום לאזרביז'נית! מי היה מאמין."
+msgstr "נוסף תרגום לערבית ולאספרנטו"
 
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:58
 msgctxt "ChangeLog|"
@@ -26098,7 +26092,7 @@ msgstr "נוספו תרגומים לבְּרֶטוֹנית, צ'כית ומקדו
 #: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
-msgstr "נוסף תירגום לאזרביז'נית! מי היה מאמין."
+msgstr "נוסף תרגום לאזרית! מי היה מאמין."
 
 #: core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
@@ -26111,8 +26105,8 @@ msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr ""
-"ערכת נתונים חדשה המכילה לולאות והליכים למבוך התיכנות ותירגום של תמונות "
-"הוראות היצירה"
+"ערכת נתונים חדשה המכילה לולאות והליכים למבוך התיכנות ותרגום של תמונות הוראות "
+"היצירה"
 
 #: core/ChangeLog.qml:104
 msgctxt "ChangeLog|"
@@ -26134,7 +26128,7 @@ msgstr "תת-קטגוריה חדשה לאירגון הפעילויות"
 #: core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
-msgstr "נוסף תירגום למקדונית!"
+msgstr "נוסף תרגום למקדונית!"
 
 #: core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
@@ -26176,7 +26170,7 @@ msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
 "Finnish...)."
-msgstr "עודכן התירגום לכמה שפות (ברטון, פורטוגזית ברזילאית, פינית, עברית...)"
+msgstr "עודכן התרגום לכמה שפות (ברטונית, פורטוגלית ברזילאית, פינית, עברית…)."
 
 #: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
@@ -26492,7 +26486,7 @@ msgstr "<b>תודה גדולה לצוות הפיתוח:</b> %1"
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr "<b>תודה גדולה לצוות התירגום:</b> %1"
+msgstr "<b>תודה גדולה לצוות התרגום:</b> %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
