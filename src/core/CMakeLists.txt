@@ -74,8 +74,12 @@ endif()
 
 set(used_qt_modules ${QT_MAJOR}::Qml ${QT_MAJOR}::Quick ${QT_MAJOR}::Widgets ${QT_MAJOR}::Gui ${QT_MAJOR}::Multimedia ${QT_MAJOR}::Core ${QT_MAJOR}::Svg ${QT_MAJOR}::Sensors ${QT_MAJOR}::QuickControls2 ${QT_MAJOR}::QuickTemplates2 ${QT_MAJOR}::Charts ${QT_MAJOR}::QmlWorkerScript ${QT_MAJOR}::CorePrivate)
 
-if(TARGET Qt6::QuickControls2BasicPrivate)
-  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickControls2Basic)
+if(TARGET ${QT_MAJOR}::QuickControls2Basic)
+  set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::QuickControls2Basic ${QT_MAJOR}::QuickControls2BasicPrivate)
+  # This should not be needed! But for some reason, on windows it does not find
+  # automatically the library so we need to install it manually
+  get_target_property(QuickControls2BasicLibrary ${QT_MAJOR}::QuickControls2Basic IMPORTED_LOCATION)
+  install(FILES ${QuickControls2BasicLibrary} DESTINATION bin)
 endif()
 
 if(ANDROID)

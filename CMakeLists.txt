@@ -97,10 +97,8 @@ foreach(COMPONENT ${QT_COMPONENTS})
   set_package_properties(${QT_MAJOR}${COMPONENT} PROPERTIES TYPE REQUIRED)
 endforeach()
 
-if(UNIX AND NOT ANDROID)
-  # It seems to only be present on some Linux distributions, not FreeBSD for example
-find_package(${QT_MAJOR}QuickControls2Basic QUIET)
-endif()
+# It seems to only be present on some Linux distributions, not FreeBSD for example and starting Qt6.6 so not enforcing it
+find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS QuickControls2Basic)
 
 # Starting C++20, emit() is a function in standard library. To avoid using Qt keywords like signals, slots, emit, we define this variable
 add_definitions(
