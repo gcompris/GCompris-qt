@@ -19011,10 +19011,6 @@ msgstr "Berre små bokstavar"
 
 #: activities/menu/Menu.qml:93
 #, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
