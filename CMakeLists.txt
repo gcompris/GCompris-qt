@@ -172,19 +172,15 @@ if(ECM_FOUND)
     endif()
 endif()
 
-if(ANDROID)
-  option(BUILD_SERVER "Build the server along the application" OFF)
-else()
-  option(BUILD_SERVER "Build the server along the application" ON)
-endif()
+option(BUILD_SERVER "Build the server along the application" ON)
 
-if(BUILD_SERVER AND NOT ANDROID)
+if(BUILD_SERVER)
   find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS Sql)
   set_package_properties(${QT_MAJOR}Sql PROPERTIES TYPE REQUIRED)
 
   find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} COMPONENTS QuickDialogs2)
   set_package_properties(${QT_MAJOR}QuickDialogs2 PROPERTIES TYPE REQUIRED)
-endif(BUILD_SERVER AND NOT ANDROID)
+endif(BUILD_SERVER)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
