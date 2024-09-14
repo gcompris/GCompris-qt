@@ -12,7 +12,6 @@ import QtQuick 2.12
 import GCompris 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
 pragma Singleton
-import QMLConnections 1.0
 
 Item {
     property string activityBaseUrl: "qrc:/gcompris/src/server/activities"
