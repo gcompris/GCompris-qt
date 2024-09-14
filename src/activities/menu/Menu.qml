@@ -12,7 +12,6 @@ import "../../core"
 import core 1.0
 import QtQuick.Effects
 import "qrc:/gcompris/src/core/core.js" as Core
-import QMLConnections 1.0
 
 // For TextField
 import QtQuick.Controls.Basic

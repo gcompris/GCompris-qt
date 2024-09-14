@@ -14,7 +14,6 @@ import QtQml
 
 import core 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
-import QMLConnections 1.0
 
 /**
  * GCompris' main QML file defining the top level window.
