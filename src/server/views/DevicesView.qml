@@ -13,7 +13,6 @@ import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
 
 import GCompris 1.0
-import QMLConnections 1.0
 
 import "../singletons"
 import "../components"

@@ -300,7 +300,7 @@ int main(int argc, char *argv[])
 #ifdef WITH_SERVER
     qmlRegisterUncreatableMetaObject(
       netconst::staticMetaObject,   // meta object created by Q_NAMESPACE macro
-      "QMLConnections",             // import statement (can be any string)
+      "GCompris",                   // import statement (can be any string)
       1, 0,                         // major and minor version of the import
       "NetConst",                   // name in QML (does not have to match C++ name)
       "Error: only enums"           // error in case someone tries to create a MyNamespace object
