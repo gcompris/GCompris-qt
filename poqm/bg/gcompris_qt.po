@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-07-16 19:33+0200\n"
+"PO-Revision-Date: 2024-09-11 12:31+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -18999,18 +18999,12 @@ msgid "All lowercase"
 msgstr "Всички малки букви"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 msgstr ""
-"Избрахте нов локал, трябва да рестартирате Gcompris, за да го използвате.<br/"
-">Искате ли да изтеглите съответните звукови файлове сега?"
+"Избрахте нов локал. Искате ли да изтеглите съответните звукови файлове сега?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -26215,12 +26209,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Напиши цялата дума, докато пада, преди да достигне земята."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Добавен е превод за азербайджански език"
+msgstr "Добавен е превод на латвийски"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109

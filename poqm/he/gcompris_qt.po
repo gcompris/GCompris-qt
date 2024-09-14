@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-09-09 21:32+0300\n"
+"PO-Revision-Date: 2024-09-13 06:15+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -9612,12 +9612,9 @@ msgstr "להעתיק את המגדל."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn digits"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "ללמוד ספרות"
+msgstr "ללמוד אלגוריתמים."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:22
@@ -15929,9 +15926,6 @@ msgstr "תחבורה"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
 msgstr "ללמוד חיבּור"
@@ -16334,12 +16328,9 @@ msgstr "לאפשר קולות"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr "ללמוד חיבּור"
+msgstr "ללמוד ספרות"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -19743,22 +19734,16 @@ msgstr "נא לבחור את המספרים בזה אחר זה לפי הרצף �
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "ללמוד את מחזור המים."
+msgstr "ללמוד את הרצף המספרי."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each number in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "לצייר את התמונה באמצעות הקשה על כל מספר בסדר הנכון."
+msgstr "אפשר לצייר תמונה על ידי לחיצה על הנקודות לפי הרצף המספרי."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -19802,20 +19787,14 @@ msgstr ""
 "התחתונה."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "לבחור את המספרים הזוגיים:"
+msgstr "לתפוס את המספרים הזוגיים."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "לבחור את המספרים האי-זוגיים:"
+msgstr "לתפוס את המספרים האי־זוגיים."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -21388,12 +21367,9 @@ msgstr "סי♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "מספרים לפי הסדר"
+msgstr "סדר מספרי"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -22025,12 +22001,9 @@ msgstr "שימוש באזור המרכזי ובאזור הלולאה."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr "פעילות מסילות רכבת"
+msgstr "מסילת רכבת"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -26365,7 +26338,7 @@ msgstr "מבוסס על Qt %1 ו־ %2"
 #: core/DialogAbout.qml:64
 msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
-msgstr "דף הבית של ג'יקומפריס: ‎ https://gcompris.net"
+msgstr "דף הבית של ג׳יקומפרי: ‎ https://gcompris.net"
 
 #. Replace the link with the page in your language if it exists, else keep the english page link
 #: core/DialogAbout.qml:67
@@ -26426,16 +26399,7 @@ msgstr ""
 "משאלות\" (\"Wishlist\")."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -26446,11 +26410,11 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"לא חייבים להיות מפתח תוכנה כדי להיות חבר/ה בצוות KDE. אפשר להצטרף לצוותים "
-"הלאומיים שמתרגמים את הממשקים של התוכנות. אפשר לספק תמונת, קולות ולשפר את "
-"התיעוד. מה שתחליט/י!<br /><br />בקרו ב־<a href=\"%1\">%1</a>למידע נוסף על "
-"פרוייקטים נוספים שבהם ניתן לקחת חלק.<br /><br />אם את/ה צריך/ה מידע נוסף או "
-"תיעוד, בקר/י ב־<a href=\"%2\">%2</a> שם תקבל/י כל מה שצריך."
+"אפשר להצטרף לחברות בצוות KDE גם ללא ידע בתכנות .בזכות הצטרפות לצוותים לפי "
+"שפה ניתן לתרגם את ממשקי היישומים. אפשר לספק גרפיקה, ערכות עיצוב, צלילים "
+"ושיפורים בתיעוד. הבחירה בידיך!<br /><br />מומלץ לבקר ב־<a href=\"%1\">%1</a> "
+"לקבלת מידע על חלק מהמיזמים בהם ניתן להשתתף.<br /><br />למידע נוסף או לתיעוד, "
+"ביקור ב־<a href=\"%2\">%2</a> אמור לספק לך את מה שנחוץ."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -26819,7 +26783,7 @@ msgstr ""
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
-msgstr "לציין פעילות שתפתח כשמתחילים את ג'יקומפריס."
+msgstr "לציין את הפעילות עם הפעלת ג׳יקומפרי."
 
 #: core/main.cpp:114
 msgctxt "QObject|"
@@ -26929,12 +26893,9 @@ msgid "Apply"
 msgstr "החלה"
 
 #: core/main.qml:384
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
-msgstr "לבטל"
+msgstr "ביטול"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
