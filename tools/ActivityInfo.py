@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+# GCompris - ActivityInfo.py
+#
+# SPDX-FileCopyrightText: 2021 Johnny Jazeix <jazeix@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 from PyQt6.QtCore import pyqtProperty, QObject
 
