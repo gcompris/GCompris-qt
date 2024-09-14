@@ -6,7 +6,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from PyQt5.QtCore import pyqtProperty, QObject
+from PyQt6.QtCore import pyqtProperty, QObject
 
 class ActivityInfo(QObject):
     def __init__(self, parent=None):

@@ -3,7 +3,7 @@
 #
 # user_manual_generator.py
 #
-# Copyright (C) 2018-2022 Johnny Jazeix <jazeix@gmail.com>
+# Copyright (C) 2018-2024 Johnny Jazeix <jazeix@gmail.com>
 #
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -19,11 +19,11 @@
 #   along with this program; if not, see <http://www.gnu.org/licenses/>.
 
 from pylatex import Document, Section, Subsection, Tabular, MultiColumn, \
- Figure, Package, NewLine, Command, escape_latex
+ Figure, Package, NewLine, NewPage, Command, escape_latex
 from pylatex.utils import NoEscape
 
-from PyQt5.QtCore import QCoreApplication, QUrl, QTranslator
-from PyQt5.QtQml import qmlRegisterType, qmlRegisterSingletonType, QQmlComponent, QQmlEngine
+from PyQt6.QtCore import QCoreApplication, QUrl, QTranslator
+from PyQt6.QtQml import qmlRegisterType, qmlRegisterSingletonType, QQmlComponent, QQmlEngine
 
 from ActivityInfo import ActivityInfo
 from ApplicationInfo import ApplicationInfo
@@ -67,7 +67,7 @@ gcompris_web_screenshots = web_source + "/screenshots_qt/middle/"
 
 # todo check existence of po and screenshots files
 gcompris_source = getEnvVar('GCOMPRIS_SRC')
-gcompris_src_po = gcompris_source + "/po/gcompris_" + locale + ".po"
+gcompris_src_po = gcompris_source + "/poqm/" + locale + "/gcompris_qt.po"
 activity_dir = gcompris_source + "/src/activities/"
 # todo check existence of po and activity files
 
@@ -121,14 +121,23 @@ if os.path.exists(gcompris_source + "/docs/manual-general"):
 app = QCoreApplication(sys.argv)
 translator = QTranslator()
 translator.load(os.path.join(web_source, "locale", locale,"LC_MESSAGES/gcompris_qt.qm"))
+# TODO Need to fix this to ensure it is on an existing build folder!
+translator.load(os.path.join(gcompris_source, "build/share/gcompris-qt/translations/gcompris_" + locale + ".qm"))
 app.installTranslator(translator)
 
 # create qml engine to read the files
 engine = QQmlEngine()
 activityInfoComponent = QQmlComponent(engine)
-qmlRegisterSingletonType(ApplicationInfo, "GCompris", 1, 0, "ApplicationInfo", ApplicationInfo.createSingleton);
+qmlRegisterSingletonType(ApplicationInfo, "GCompris", 1, 0, ApplicationInfo.createSingleton, "ApplicationInfo");
 qmlRegisterType(ActivityInfo, "GCompris", 1, 0, "ActivityInfo");
 qmlRegisterType(Dataset, "GCompris", 1, 0, "Data");
+
+# Load sections from menu, should be done with Qt but seems difficult to load GCompris
+menuPath = os.path.join(activity_dir,"menu","Menu.qml")
+sections = list(re.findall(r'"(.*)"', line)[0] for line in open(menuPath) if 'tag:' in line and not 'favorite' in line and not 'search' in line)
+print(sections) # TODO Needs to be translated somewhere
+
+activitiesPerSection = {}
 
 for activity in os.listdir(activity_dir):
     if activity in ["CMakeLists.txt", "template", "createit.sh", "README", "activities.txt", "activities_out.txt", "activities.qrc", "menu"]:
@@ -145,58 +154,79 @@ for activity in os.listdir(activity_dir):
     if not activityInfo.property('enabled'):
         print("Disabling", activityInfo.property('name'))
         continue
-    description = activityInfo.property('description').replace('\n', '<br/>')
-    name = activityInfo.property('name').split('/')[0]
-    title = activityInfo.property('title')
-    credit = activityInfo.property('credit').replace('\n', '<br/>')
-    goal = activityInfo.property('goal').replace('\n', '<br/>')
-    section = activityInfo.property('section')
-    author = activityInfo.property('author')
-    manual = activityInfo.property('manual').replace('\n', '<br/>')
-    difficulty = activityInfo.property('difficulty')
-    category = activityInfo.property('category')
-    prerequisite = activityInfo.property('prerequisite').replace('\n', '<br/>')
-    icon = activityInfo.property('icon').split('/')[0]
+    activityDict = {}
+    activityDict['description'] = activityInfo.property('description').replace('\n', '<br/>')
+    activityDict['name'] = activityInfo.property('name').split('/')[0]
+    activityDict['title'] = activityInfo.property('title')
+    activityDict['credit'] = activityInfo.property('credit').replace('\n', '<br/>')
+    activityDict['goal'] = activityInfo.property('goal').replace('\n', '<br/>')
+    activityDict['section'] = activityInfo.property('section').split(' ')
+    activityDict['author'] = activityInfo.property('author')
+    activityDict['manual'] = activityInfo.property('manual').replace('\n', '<br/>')
+    activityDict['difficulty'] = activityInfo.property('difficulty')
+    activityDict['category'] = activityInfo.property('category')
+    activityDict['prerequisite'] = activityInfo.property('prerequisite').replace('\n', '<br/>')
+    activityDict['icon'] = activityInfo.property('icon').split('/')[0]
     if len(activityInfo.property('levels')) != 0:
-        levels = activityInfo.property('levels').split(',')
+        activityDict['levels'] = activityInfo.property('levels').split(',')
     else:
-        levels = None
+        activityDict['levels'] = None
     hasError = False
 
-    translated_title = escape_latex(title)
+    activityDict['translated_title'] = escape_latex(activityDict['title'])
     # remove quotes if there are
-    translated_title = translated_title.replace("\"", "")
-    with doc.create(Section(translated_title, numbering=False)):
-        doc.append(NoEscape(r'\addcontentsline{toc}{section}{'+translated_title+'}'));
-        doc.append(escape_latex(description))
-        doc.append(NewLine())
-        doc.append(app.translate(None, "Goal:") + " " + goal)
+    activityDict['translated_title'] = activityDict['translated_title'].replace("\"", "")
 
-        with doc.create(Figure(position='H')) as activity_picture:
-            activity_image = gcompris_web_screenshots + activity + ".png"
-            activity_picture.add_image(activity_image, width='250px')
-            activity_picture.add_caption(translated_title)
+    for section in activityDict['section']:
+        if section in sections:
+            currentList = activitiesPerSection[section] if section in activitiesPerSection else []
+            currentList.append(activityDict)
+            activitiesPerSection[section] = currentList
 
-        if levels != None:
-            with doc.create(Tabular("|p{5cm}|p{12cm}|")) as objective_tabular:
-                objective_tabular.add_hline()
-                # needs translation
-                objective_tabular.add_row(('Levels', 'Objectives'))
-                objective_tabular.add_hline()
-                for level in levels:
-                    # needs to be opened via qml to get the full string
-                    # (in case of line break)
-                    dataComponent = QQmlComponent(engine)
-                    dataComponent.loadUrl(QUrl(os.path.join(activity_dir, activity, "resource", level, "Data.qml")))
-                    data = dataComponent.create()
-                    for error in dataComponent.errors():
-                        print("JJ", error.toString())
-                        hasError = True
-                    if hasError:
-                        break
-                    objective = data.property('objective')
-                    objective_tabular.add_row((level, objective))
+for section in activitiesPerSection:
+    doc.append(NewPage())
+    with doc.create(Section(section, numbering=False)):
+        doc.append(NoEscape(r'\addcontentsline{toc}{section}{'+section+'}'));
+
+    for activityDict in activitiesPerSection[section]:
+        print(activityDict);
+        description = activityDict['description'];
+        goal = activityDict['goal'];
+        levels = activityDict['levels'];
+        translated_title = activityDict['translated_title'];
+        activityName = activityDict['name'];
+        with doc.create(Subsection(translated_title, numbering=False)):
+            doc.append(NoEscape(r'\addcontentsline{toc}{subsection}{'+translated_title+'}'));
+            doc.append(escape_latex(description))
+            doc.append(NewLine())
+            doc.append(app.translate(None, "Goal:") + " " + goal)
+
+            with doc.create(Figure(position='H')) as activity_picture:
+                activity_image = gcompris_web_screenshots + activityName + ".png"
+                activity_picture.add_image(activity_image, width='250px')
+                activity_picture.add_caption(translated_title)
+
+            if levels != None:
+                with doc.create(Tabular("|p{5cm}|p{9cm}|p{3cm}|")) as objective_tabular:
                     objective_tabular.add_hline()
+                    # needs translation
+                    objective_tabular.add_row(('Levels', 'Objectives', 'Difficulty'))
+                    objective_tabular.add_hline()
+                    for level in levels:
+                        # needs to be opened via qml to get the full string
+                        # (in case of line break)
+                        dataComponent = QQmlComponent(engine)
+                        dataComponent.loadUrl(QUrl(os.path.join(activity_dir, activityName, "resource", level, "Data.qml")))
+                        data = dataComponent.create()
+                        for error in dataComponent.errors():
+                            print("JJ", error.toString())
+                            hasError = True
+                        if hasError:
+                            break
+                        objective = data.property('objective')
+                        difficulty = data.property('difficulty')
+                        objective_tabular.add_row((level, objective, difficulty))
+                        objective_tabular.add_hline()
 
 # would be great to use but do not work with Greek or Ukrainian for example as 
 #doc.generate_pdf(filename, clean_tex=False)

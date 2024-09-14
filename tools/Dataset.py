@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PyQt5.QtCore import pyqtProperty, QObject
+from PyQt6.QtCore import pyqtProperty, QObject
 
 class Dataset(QObject):
     def __init__(self, parent=None):

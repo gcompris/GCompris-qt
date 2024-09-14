@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from PyQt5.QtCore import pyqtProperty, QObject, pyqtSignal, pyqtSlot
+from PyQt6.QtCore import pyqtProperty, QObject, pyqtSignal, pyqtSlot
 
 class ApplicationInfo(QObject):
     box2DInstalledChanged = pyqtSignal()

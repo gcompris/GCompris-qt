@@ -6,7 +6,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from PyQt5.QtCore import pyqtProperty, QObject, pyqtSignal
+from PyQt6.QtCore import pyqtProperty, QObject, pyqtSignal
 
 class ApplicationInfo(QObject):
     box2DInstalledChanged = pyqtSignal()
