@@ -26,6 +26,7 @@ function createLevel() {    // Create an array of exercice
     items.answerModel.clear();
     var sublevel = items.levels[items.currentLevel].subLevels[items.currentSubLevel];
     items.instruction.text = sublevel.question;
+    items.mode = sublevel.mode;
     var numberOfAnswers = sublevel.answers.length;
     if(sublevel.shuffleAnswers) {
         Core.shuffle(sublevel.answers);
@@ -38,7 +39,6 @@ function createLevel() {    // Create an array of exercice
 
         items.answerModel.append({ "content_": answer,
                                    "isSolution_": isCorrect,
-                                   "mode_": sublevel.mode,
                                    "correctAnswerText_": correctAnswerText,
                                    "wrongAnswerText_": wrongAnswerText,
                                    "checked_": false });
@@ -54,6 +54,7 @@ function initLevel() {
         Core.shuffle(level.subLevels);
     }
     createLevel();
+    items.client.startTiming()      // for server version
 }
 
 function nextLevel() {
@@ -94,4 +95,5 @@ function checkResult() {
 
     var text = success ? items.answerModel.get(0).correctAnswerText_ : items.answerModel.get(0).wrongAnswerText_
     items.feedbackArea.display(success, text);
+    items.client.sendToServer(success)     // for server version
 }
