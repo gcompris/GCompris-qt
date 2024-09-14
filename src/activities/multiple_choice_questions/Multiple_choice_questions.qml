@@ -38,6 +38,8 @@ ActivityBase {
             property int currentSubLevel: 0
             property int numberOfSubLevel: 0
             property var levels: activity.datasets
+            property string mode
+            property string currentAnswer
             property alias bonus: bonus
             property alias score: score
             property alias goodAnswerSound: goodAnswerSound
@@ -46,6 +48,7 @@ ActivityBase {
             property alias answerModel: answerModel
             property alias feedbackArea: feedbackArea
             property bool buttonsBlocked: false
+            property alias client: client
         }
 
         onStart: { Activity.start(items) }
@@ -64,6 +67,38 @@ ActivityBase {
         GCSoundEffect {
             id: badAnswerSound
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
+        }
+
+        Client {    // Client for server version. Prepare data from activity to server
+            id: client
+            getDataCallback: function() {
+                var question = instruction.text
+                var answers = []
+                var correctAnswer = []
+                var selectedAnswer = []
+
+                if(items.mode === "oneAnswer") {
+                    selectedAnswer.push(items.currentAnswer);
+                }
+                for(var i = 0; i < items.answerModel.count; i++) {
+                    var answer = items.answerModel.get(i);
+                    answers.push(answer.content_);
+                    if(answer.checked_) {
+                        selectedAnswer.push(answer.content_);
+                    }
+                    if(answer.isSolution_) {
+                        correctAnswer.push(answer.content_);
+                    }
+                }
+                var data = {
+                    "question": question,
+                    "expected": correctAnswer,
+                    "selected": selectedAnswer,
+                    "proposal": answers
+                }
+                print(JSON.stringify(data))
+                return data
+            }
         }
 
         //Keys.onSpacePressed: answerColumn.currentItem.select();
@@ -121,24 +156,27 @@ ActivityBase {
                     height: (layoutArea.height
                              - 10 * ApplicationInfo.ratio * answerModel.count) / answerModel.count
                     AnswerButton {
-                        visible: mode_ === "oneAnswer"
+                        visible: items.mode === "oneAnswer"
                         anchors.fill: parent
                         textLabel: content_
                         blockAllButtonClicks: items.buttonsBlocked
                         isCorrectAnswer: isSolution_
                         onCorrectlyPressed: {
                             feedbackArea.display(isCorrectAnswer, correctAnswerText_)
+                            items.client.sendToServer(true)     // for server version
                         }
                         onPressed: {
                             items.buttonsBlocked = true
+                            items.currentAnswer = content_
                         }
                         onIncorrectlyPressed: {
                             feedbackArea.display(isCorrectAnswer, wrongAnswerText_)
                             items.buttonsBlocked = false
+                            items.client.sendToServer(false)     // for server version
                         }
                     }
                     GCCheckBox {
-                        visible: mode_ === "multipleAnswers"
+                        visible: items.mode === "multipleAnswers"
                         anchors.fill: parent
                         text: content_
                         onCheckedChanged: {
