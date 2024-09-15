@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2024-07-20 17:03+0200\n"
+"PO-Revision-Date: 2024-09-14 11:22+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -18950,18 +18950,12 @@ msgid "All lowercase"
 msgstr "Ĉiuj minuskloj"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "Menu|"
-#| msgid ""
-#| "You selected a new locale, you need to restart GCompris to use it.<br/>Do "
-#| "you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 msgstr ""
-"Vi elektis novan lokon, vi devas rekomenci GCompris por uzi ĝin.<br/>Ĉu vi "
-"volas elŝuti la respondajn sondosierojn nun?"
+"Vi elektis novan lokon, ĉu vi volas elŝuti la respondajn sondosierojn nun?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -26081,12 +26075,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Tajpu la kompletan vorton dum ĝi falas, antaŭ ol ĝi atingas la teron."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Traduko aldonita por azera"
+msgstr "Traduko aldonita por la latva"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109

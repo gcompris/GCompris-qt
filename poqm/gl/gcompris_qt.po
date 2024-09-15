@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-30 12:26+0200\n"
+"PO-Revision-Date: 2024-09-14 17:02+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -18997,14 +18997,13 @@ msgid "All lowercase"
 msgstr "Todo en minúsculas"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Queres descargar os ficheiros de son correspondentes agora?"
+msgstr ""
+"Seleccionou unha nova configuración rexional, quere descargar os ficheiros "
+"de son correspondentes agora?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
