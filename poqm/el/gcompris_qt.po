@@ -1,4 +1,3 @@
-#
 # Stelios <sstavra@gmail.com>, 2017, 2018, 2021.
 msgid ""
 msgstr ""
@@ -12,9 +11,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Language: el\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.4.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -2437,9 +2436,6 @@ msgstr "Παζλ"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
 msgstr "Μετακίνησε και τοποθέτησε τα σχήματα στα περιγράμματά τους."
