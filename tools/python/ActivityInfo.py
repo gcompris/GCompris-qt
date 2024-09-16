@@ -25,7 +25,7 @@ class ActivityInfo(QObject):
         self._icon = ''
         self._createdInVersion = 0
         self._difficulty = 0
-        self._levels = 0
+        self._levels = None
         self._enabled = True
 
     @pyqtProperty('QString')

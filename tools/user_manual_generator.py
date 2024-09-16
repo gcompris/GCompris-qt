@@ -14,12 +14,14 @@ from pylatex.utils import NoEscape
 from PyQt6.QtCore import QCoreApplication, QUrl, QTranslator
 from PyQt6.QtQml import qmlRegisterType, qmlRegisterSingletonType, QQmlComponent, QQmlEngine
 
+import sys
+sys.path.append("python")
+
 from ActivityInfo import ActivityInfo
 from ApplicationInfo import ApplicationInfo
 from Dataset import Dataset
 
 import subprocess
-import sys
 import os
 import re
 import polib

@@ -6,14 +6,14 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from PyQt6.QtCore import pyqtProperty, QObject, pyqtSignal
+from PyQt6.QtCore import pyqtProperty, QObject, pyqtSignal, pyqtSlot
 
 class ApplicationInfo(QObject):
     box2DInstalledChanged = pyqtSignal()
+    localeShortChanged = pyqtSignal()
 
     def __init__(self, parent=None):
         super().__init__(parent)
-
         # Initialise the value of the properties.
         self._isBox2DInstalled = True
         self._isMobile = False
@@ -26,5 +26,17 @@ class ApplicationInfo(QObject):
     def isBox2DInstalled(self, isBox2DInstalled):
         self._isBox2DInstalled = isBox2DInstalled
 
+    @pyqtProperty('QString')
+    def localeShort(self, notify=localeShortChanged, constant=True):
+        return "fr"
+    
     def createSingleton(self, engine):
         return ApplicationInfo(self)
+
+    @pyqtSlot()
+    def getAudioFilePath(self):
+        return ""
+
+    @pyqtSlot()
+    def sensorIsSupported(self, string):
+        return True
