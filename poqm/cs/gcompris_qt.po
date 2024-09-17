@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-30 16:26+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2024-09-11 17:26+0200\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -18918,13 +18918,13 @@ msgstr ""
 #: activities/morse_code/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Discover the International Morse code"
-msgstr ""
+msgstr "Objevuj mezinárodní Morseovu abecedu"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to communicate with the International Morse code."
-msgstr ""
+msgstr "Nauč se komunikovat mezinárodní Morseovou abecedou."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
@@ -18932,12 +18932,13 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You have to send and receive letters and digits in International Morse code."
 msgstr ""
+"Musíš posílat a přijímat písmena a čísla v mezinárodní Morseově abecedě."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Knowledge of alphabets and digits."
-msgstr ""
+msgstr "Znalost abecedy a číslic."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
@@ -18948,11 +18949,15 @@ msgid ""
 "have a look at the translation map which contains the code for all the "
 "letters and digits."
 msgstr ""
+"Buď jsi požádán o odeslání zprávy v Morseově abecedě nebo převedení přijaté "
+"zprávy z Morseovy abecedy do písmen a číslic. Aby ses naučil Morseovu "
+"abecedu, můžeš se podívat na překladovou mapu, která obsahuje kódy pro "
+"všechna písmena a číslice."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
 msgid "Exploring Morse Code"
-msgstr ""
+msgstr "Objev Morseovy abecedy"
 
 #: activities/morse_code/FirstScreen.qml:64
 msgctxt "FirstScreen|"
@@ -18960,6 +18965,8 @@ msgid ""
 "Morse code was developed by Samuel Morse. It is a method of transmitting "
 "text information as a series of on-off tones, lights, or clicks."
 msgstr ""
+"Morseova abeceda byla vyvinuta Samuelem Morsem. Jedná se o metodu přenosu "
+"textové informace pomocí tónů, světel nebo klepání."
 
 #: activities/morse_code/FirstScreen.qml:65
 msgctxt "FirstScreen|"
@@ -18972,23 +18979,32 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
+"Každý symbol Morseovy abecedy představuje buď textový znak (písmeno nebo "
+"číslici) nebo procedurální znak. Ty jsou reprezentovány jedinečnou řadou "
+"teček a čárek. Doba trvání jedné čárky je trojnásobkem trvání jedné tečky. "
+"Pro zvýšení rychlosti komunikace byla abeceda navržena tak, aby nejběžnější "
+"písmena měla co nejkratší sekvenci teček a čárek.\n"
+"Například v angličtině nejběžnější písmeno \"E\" má nejkratší kód jednu "
+"tečku."
 
 #: activities/morse_code/FirstScreen.qml:90
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on Tux and we will converse in Morse code."
 msgstr ""
+"Jakmile jsi připraven, klikni na Tuxe a budeme spolu konverzovat v Morseově "
+"abecedě."
 
 #: activities/morse_code/MorseCode.qml:352
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Morse value: %1"
-msgstr ""
+msgstr "Hodnota v Morseově abecedě: %1"
 
 #: activities/morse_code/MorseCode.qml:353
 #, qt-format
 msgctxt "MorseCode|"
 msgid "Alphabet/Numeric value: %1"
-msgstr ""
+msgstr "Abecední/číselná hodnota: %1"
 
 #: activities/morse_code/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19005,7 +19021,7 @@ msgstr "Znaky."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr ""
+msgstr "Pošli zprávu %1 v Morseově abecedě."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
@@ -19014,7 +19030,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to letters."
-msgstr ""
+msgstr "Převeď zprávu %1 na písmena."
 
 #: activities/morse_code/resource/1/Data.qml:28
 #: activities/morse_code/resource/1/Data.qml:44
@@ -19022,7 +19038,7 @@ msgstr ""
 #: activities/morse_code/resource/1/Data.qml:76
 msgctxt "Data|"
 msgid "Find the corresponding letter."
-msgstr ""
+msgstr "Najdi odpovídající písmeno."
 
 #: activities/morse_code/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -19034,13 +19050,13 @@ msgstr "Číslice."
 #, qt-format
 msgctxt "Data|"
 msgid "Convert the message %1 to digits."
-msgstr ""
+msgstr "Převeď zprávu %1 na číslice."
 
 #: activities/morse_code/resource/2/Data.qml:28
 #: activities/morse_code/resource/2/Data.qml:44
 msgctxt "Data|"
 msgid "Find the corresponding digit."
-msgstr ""
+msgstr "Najdi odpovídající číslici."
 
 #: activities/morse_code/resource/3/Data.qml:13
 msgctxt "Data|"
@@ -19050,12 +19066,12 @@ msgstr "Slova."
 #: activities/morse_code/resource/3/Data.qml:24
 msgctxt "Data|"
 msgid "Write the Morse code you hear."
-msgstr ""
+msgstr "Napiš Morseovou abecedou to, co slyšíš."
 
 #: activities/morse_code/resource/3/Data.qml:34
 msgctxt "Data|"
 msgid "Convert the message in a word."
-msgstr ""
+msgstr "Převeď zprávu na slovo."
 
 #. Activity title
 #: activities/mosaic/ActivityInfo.qml:15

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-02-11 21:05+0100\n"
+"PO-Revision-Date: 2024-09-16 21:26+0200\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
 "Language: ml\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 "X-Qt-Contexts: true\n"
 
@@ -13167,7 +13167,7 @@ msgstr "ലിത്വേനിയ"
 #: activities/geography/resource/board/board6_0.qml:126
 msgctxt "board6_0|"
 msgid "Latvia"
-msgstr "ലാറ്റ്വിയ"
+msgstr "ലാത്വിയ"
 
 #: activities/geography/resource/board/board6_0.qml:133
 msgctxt "board6_0|"
@@ -25530,12 +25530,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "വീണു കൊണ്ടിരിക്കുന്ന വാക്ക് താഴെയെത്തുന്നതിനു മുമ്പ് കീബോർഡിൽ ടൈപ്പ് ചെയ്യുക."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "അസർബൈജാനി തർജ്ജിമ ചേർത്തിരിക്കുന്നു"
+msgstr "ലാത്വിയൻ തർജ്ജിമ ചേർത്തിരിക്കുന്നു"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
 #: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
