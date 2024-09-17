@@ -1,0 +1,663 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>كتاب إدارة فهمت</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>طاقم فهمت</othername>
+<contrib
+>مطورون</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>طه</firstname
+><surname
+>زروقي</surname
+><affiliation
+><address
+><email
+>taha.zerrouki@gmail.com</email
+></address
+></affiliation
+><contrib
+>ترجمة إلى العربية</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>2024-09-20</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>4.2</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>فهمت برنامج تعليمي متعدد الأنشطة. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>تعليم</keyword>
+<keyword
+>أطفال</keyword>
+<keyword
+>ألعاب</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>كتاب الإدارة</title>
+
+<sect1 id="introduction">
+<title
+>مقدمة</title>
+<para
+>فهمت  مجموعةُ برامجَ تعليميةٍ ثريّةٍ بالأنشطة  المتنوعة.</para>
+<para
+>يقدم هذا البرنامج أنشطة كثيرة لتغطية مجالات متنوعة. وتشمل موضوعات القراءة والكتابة والحساب والجغرافيا والعلوم وغيرها. وهو مخصص للاستخدام في المنزل والمدرسة.</para>
+<para
+>الغرض من فهمت توفير أنشطة ترفيهية ولكن دائمًا تعليمية.</para>
+<para
+>فهمت هو جزء من مشروع كيدي ويخضع لرخصة  <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>AGPLv3</ulink
+>.تخضع جميع التعليمات البرمجية، باستثناء محرك النشاط الكهربائي التماثلي، لرخصة <ulink url="https://www.gnu.org/licenses/gpl.html"
+>GPLv3</ulink
+>.</para>
+<para
+>يتوفر فهمت على أنظمة التشغيل التالية: &GNU;/&Linux;،&BSD;، MacOSX، &Windows;، Android. ويتطلب بطاقة ثلاثية الأبعاد تدعم<emphasis
+>OpenGL 2.1</emphasis
+> أو أعلى. عمق ألوان 32 بت إلزامي.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>تثبيت</title>
+<para
+>البرنامج متوفر للتحميل في أشكال مختلفة. اتبع التعليمات حسب حالتك. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: استعمل الحزم الخاصة بتوزيعة لنظام &GNU;/&Linux; . إن كان فهمت ليس له حزمة خاصة بتوزيعتك من  &Linux; , رجاءً اتصل بهم لطلب إدراج  فهمت في توزيعتك من &Linux;.</para
+></listitem>
+<listitem
+><para
+>&Windows;:  متوفرة حسب برنامج التثبيت العادي لنظام &Windows; أو في متجر مايكروسوف.</para
+></listitem>
+<listitem
+><para
+>MacOSX: متوفرة حسب برنامج التثبيت العادي.</para
+></listitem>
+<listitem
+><para
+>أندرويد: متوفرة في متجر غوغل بلاي ومتجر F-Droid .ملف apk متوفر أيضا.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>واجهة المستخدم</title>
+<para
+>الواجهة مصمّمة لتسهيل استخدامها للأطفال الصغار. التحكم في التطبيق باستخدام الفأرة أو التنقل بلوحة المفاتيح في معظم الأنشطة.</para>
+
+<sect2 id="main-window">
+<title
+> النافذة الرئيسية</title>
+<para
+>عند انطلاق البرنامج، فهمت تظهر واجهة رسومية فيها قائمة الأنشطة وشريط تحكم في الأسفل.</para>
+<screenshot>
+<screeninfo
+>فيما يلي لقطة شاشة للنافذة الرئيسية لـفهمت</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>فهمت النافذة الرئيسية</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>يمثل كل رمز نشاطًا. حول كل رمز أيقوناتٌ صغيرة فيها معلومات إضافية حول النشاط. النقر البسيط على الرمز ينْقُلك إلى نشاط أو قائمة أنشطة.الأنشطة مقسمة إلى 8 أقسام (فئات)، وموضوعة  في الأعلى أو على اليسار (فقط إن كان اتجاهك عموديًا).على سبيل المثال، قسم "ألعاب اللوح"، يتضمن ألعاب الطاولة، مثل الشطرنج أو لعبة "تيك تاك تو" أو لعبة "صف الأربعة".</para>
+<para
+>بعض الفئات فيها فئات فرعية لتنظيم الأنشطة تنظيمًا أفضل. مثلا أنشطة الرياضيات، فيها ثلاث فروع: التعداد والحساب والقياسات.</para>
+<para
+>تظهر النجوم الفئات العمرية المناسبة لكل لعبة:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>نجمة واحدة أو نجمتان أو 3 نجوم صفراء - من عمر سنتين (2) إلى 6 سنوات.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>نجمة واحدة أو نجمتان أو 3 نجوم حمراء -لعمر يبدأ من 6 سنوات.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>في أسفل الشاشة شريط تحكم لـ فهمت. والرموز المتاحة (المتوفرة في النشاط الحالي) هي:</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> المنزل- ترك النشاط الحالي والعودة إلى القائمة السابقة.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "موافق" - التحقق من صحة الإجابة وتأكيدها. لا تكتشف بعض الأنشطة تلقائيًا ما إذا كان الطفل قد أكمل المهمة أم لا. لذا، عليك النقر على هذا الرمز. يمكنك أيضًا استخدام &Enter; على لوحة المفاتيح.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> الضوء - عرض تلميح للنشاط. يمكننا مساعدة الأطفال في بعض الأنشطة للوصول إلى الإجابات.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> الأسهم - المستوى الحالي معروض. انقر على الأسهم لتحديد مستوى آخر. عمومًا، للأنشطة مستويات عديدة على حسبها. في فهمت، يمكن الانتقال إلى المستوى التالي دون إكمال المستوى الحالي.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> الشفاه - اطلب من فهمت تكرار السؤال.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> علامة الاستفهام - عرض مربع حوار المساعدة. أحيانًا، قد يكون النشاط معقدًا فلا يكفي وصفه لشرح عمله. لذا  تتيح هذه الوظيفة معلومات إضافية.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> صندوق الأدوات - قائمة الإعدادات. تُحفظ الإعدادات في مستودع المستخدم (المجلد) تحت اسم <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>.  وهو ملف نصي يمكن تحريره يدويًا.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> عنصر القائمة - عرض قائمة إعدادات النشاط. هناك علامتا تبويب محتملتان هنا. الأولى، "مجموعة البيانات"، لاختيار  مستويات الأنشطة حسب الأهداف. والثانية، "الخيارات"، لتعديل إعدادات النشاط إن وُجدت. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> حرف "G" - صندوق معلومات فهمت، عن المساهمين الرئيسيين وإصدار البرنامج.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> تشغيل- خروج فهمت. يمكنك استخدام اختصار على لوحة المفاتيح <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>وضع الكشك</title>
+<para
+>عند استخدام فهمت مع أطفال صغار أو في كشك الخدمة الذاتية، يمكنك تعطيل بعض الخيارات:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : يُخفي زري <guiicon
+>الخروج</guiicon
+> و <guiicon
+>الإعدادات</guiicon
+>.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : يُظهر زري <guiicon
+>الخروج</guiicon
+> و <guiicon
+>الإعدادات</guiicon
+>.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> :شغّل فهمت في وضع ملء الشّاشة</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+>:شغّل  بدون مؤشّر (وضع شاشة اللمس)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>يمكن بالطبع دمج هذه الخيارات.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>اختصارات لوحة المفاتيح</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>اختصار</entry>
+<entry
+>أمر</entry>
+</row>
+<row>
+<entry
+>&Esc; or <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>مغادرة النشاط أو الحوار الحالي والعودة إلى القائمة الرئيسية.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>إنهاء فهمت دون إشعار آخر.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>تبديل وضع ملء الشّاشة.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>تبديل كتم الصوت.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>إظهار أو إخفاء شريط التحكم.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>ملاحظة على تعدد اللغات</title>
+<para
+>فهمت  متعدد اللغات به أكثر من 35 لغة.للتحقق من توفر لغتك، شغّل فهمت وابحث عن لغتك في الإعدادات.</para>
+<para
+>انتبه، بعض اللغات تحتاج إلى خطوط معينة لتُعرض عرضًا صحيحًا. </para
+> 
+<para
+>إذا لم تكن لغتك مدعومة، ساهم معنا  في البرنامج وإضافة ترجمة لغتك. إذا كنت مهتمًا، اتصل بفريق الترجمة في مشروع كيدي للغتك. تحقّق من مستوى الترجمة للغتك على  <ulink url="https://l10n.kde.org/"
+>موقع ترجمة كيدي</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>تعلُّم اللغات</title>
+<para
+>يمكنك استخدام فهمت بلغة أجنبية تتعلمها. حدّد لغة أجنبية في قائمة الإعدادات. لا تنس تنزيل الأصوات الاختيارية لهذه اللغة.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>تخصيص الأنشطة</title>
+<para
+>يمكنك تخصيص بعض الأنشطة بزر الإعداد فيها.مثلًا، يمكنك تعيين الإعدادات المحلية في بعض الأنشطة النصية (مثل لعبة الكلمات)، أو جعلها تعرض صور سيارات حقيقية بدلاً من المستطيلات (حركة المرور).</para>
+
+<para
+>في بعض الأنشطة، يمكنك اختيار من مجموعة البيانات في الإعدادات. ولكل منها هدف محدد موصوف.</para>
+<screenshot>
+<screeninfo
+>بيانات نشاط "عد العناصر"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>بيانات نشاط "عد العناصر"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>يمكنك اختيار الخيارات لهذا النشاط.</para>
+<screenshot>
+<screeninfo
+>اختر نمط نشاط "عد العناصر"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>اختر نمط نشاط "عد العناصر"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>مفاتيح الطرفية</title>
+<para
+>تشغيل فهمت من سطر الأوامر بالخيار --help يعرض كل المعلمات المتاحة:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>شغّل فهمت في وضع ملء الشّاشة.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>شغّل فهمت بوضع النّافذة.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>شغّل فهمت والصّوت مفعّل.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>شغّل فهمت دون صوت.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>شغّل فهمت بمؤشّر النّظام الافتراضيّ.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>شغّل فهمت بدون مؤشّر (وضع شاشة اللمس).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>اعرض نسخة فهمت.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>اعرض كل الأنشطة المتاحة على المخرج القياسي.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>حدد النشاط عند بدء "فهمتُ".</entry>
+</row>
+<row>
+<entry
+>--start-level level</entry>
+<entry
+>حدد المستوى الذي سيبدأ فيه النشاط المحدد بواسطة خيار --launchعند انطلاق GCompris. سيتجاهل البرنامج المستوى إن لم يكن صالحا، أو لم يستعمل الخيار --launch.</entry>
+</row>
+<row>
+<entry
+>--difficulty {value|min-max}</entry>
+<entry
+>بالنسبة للجلسة، أجبِر درجة صعوبة أنشطة GCompris إما عند قيمة ما أو منا بين قيمتين دنيا وقصوى.تتراوح القيم ما بين 1 و6، أما إذا اخترت مجالا، فيجب أن تقلّ القيمة الدنيا عن القصوى. إذا لم يكن الأمر كذلك، فلن يشتغل GCompris.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>تصدير الأنشطة بصيغة SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>قم بتمكين وضع الكشك (يُخفي زر الخروج والإعدادات).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>تعطيل وضع الكشك (افتراضي).</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>استخدم معالج عرض برمجي بدلًا من  أوبن جي ال (أبطأ ولكنه يعمل على أي بطاقة رسومية).</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>استخدم عارض OpenGL بدلاً من البرنامج (أسرع ولكن من المحتمل أن يتعطل بناءً على بطاقتك الرسومية).</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>&Windows; مثال</title>
+<para
+>يمكنك إضافة هذه المفاتيح في خصائص أيقونة سطح المكتب.ليك مثالَا يُشغّل فهمت في وضع الكشك في وضع ملء الشاشة،بدون زر الإعداد والمؤشر:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>&GNU;/&Linux; مثال</title>
+<para
+>أنشئ مُطلِقًا للتطبيق و عليك إعداد معلمات سطر الأوامر.إليك مثالَا يُشغّل فهمت في وضع الكشك في وضع ملء الشاشة،بدون زر الإعداد والمؤشر:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>ترخيص وإشادات</title>
+
+<para
+>فهمت </para>
+<para
+>حقوق البرنامج 2000-2024 Timothée Giet and others </para>
+
+<para
+><email
+>taha.zerrouki@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
