@@ -1,0 +1,10 @@
+„GCompris“ ir kvalitatīvu izglītojošu spēļu komplekts, kas piedāvā dažādas nodarbības bērniem no divu līdz desmit gadu vecumam.
+Dažas aktivitātes ir veidotas kā spēles, bet tās tāpat ir izglītojošas.
+Tālāk redzēsi kategoriju sarakstu ar dažām no šajā kategorijā atrodamajām spēlēm.
+- datora atkāšana: tastatūra, pele, dažādi žesti ar peli u.c.
+- aritmētika: atmiņas tabula, skaitīšana, spoguļattēls, svaru līdzsvarošana, atlikuma izdošana u.c.
+- zinātne: kanāla slūžas, krāsu jaukšana, gravitācijas darbība u.c.
+- spēles: atmiņa, četri rindā, krustiņi un nullītes, sudoku, Hanojas tornis u.c.
+- lasīšana: lasīšanas vingrinājumi u.c.
+- citas: mācies pateikt laiku, Braila raksts, labirints, mūzikas instrumenti u.c.
+Šobrīd „GCompris“ piedāvā vairāk nekā 100 aktivitāšu un to skaits aug. „GCompris“ ir brīvā programmatūra — tas nozīmē, ka vari to pielāgot savām vajadzībām, uzlabot un, protams, dalīties ar bērniem visā pasaulē!

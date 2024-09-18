@@ -1,0 +1,13 @@
+- Categorías gramaticais
+- Usa unha liña graduada
+- Atopa os números adxacentes
+- Le unha liña graduada.
+- Análise gramatical
+- Adiviña 24
+- Fresco
+- Calcudoku
+- Engadíronse traducións para o búlgaro, o galego e o suahili.
+- Moitas melloras de usabilidade.
+- Moitas imaxes novas.
+- Moitas correccións de fallos.
+- Nova opción da liña de ordes para iniciar directamente unha actividade nun nivel indicado («--start-level nivel», para usar con «--launch actividade»).

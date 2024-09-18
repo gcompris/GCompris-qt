@@ -1,0 +1,13 @@
+- Slovnični razredi
+- Uporabite mersko lestvico
+- Poiščite sosednji števili
+- Berite mersko lestvico
+- Slovnična analiza
+- Ugani 24
+- Friz
+- Calcudoku
+- Dodani prevodi za bolgarščino, galicijščino in Svahili
+- Veliko uporabnih izboljšav
+- Veliko novih slik
+- Veliko popravljenih napak
+- Nova možnost ukaza za zagon GComprisa pri določeni zahtevnosti (--start-level level, mora biti uporabljeno z možnostjo --launch activity)

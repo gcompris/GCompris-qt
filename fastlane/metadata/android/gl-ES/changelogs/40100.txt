@@ -1,0 +1,2 @@
+- Moitas melloras de usabilidade.
+- Moitas correccións de fallos.

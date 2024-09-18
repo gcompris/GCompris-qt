@@ -1,0 +1,13 @@
+- Grammatiska ordklasser
+- Använd en graderad linje
+- Finn intilliggande tal
+- Läs av en graderad linje
+- Grammatikanalys
+- Gissa 24
+- Fris
+- Kalkudoku
+- Översättningar tillagda för bulgariska, galiciska och swahili.
+- Många användbarhetsförbättringar
+- Många nya bilder
+- Många felrättningar
+- Ny kommandoradsväljare för att direkt starta en aktivitet med en specifik nivå (--start-level nivå, att användas med --launch activity)

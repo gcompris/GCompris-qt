@@ -1,0 +1,3 @@
+- Traduction ajoutée pour le letton.
+- Beaucoup d'améliorations d'ergonomie.
+- Plein de corrections

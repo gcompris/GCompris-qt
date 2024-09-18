@@ -1,0 +1,13 @@
+- Kalbos dalys
+- Naudok skalę
+- Rask gretimus skaičius.
+- Pažink skalę
+- Kalbos dalių analizė
+- Gauk 24
+- Ornamentas
+- Calcudoku
+- Pridėti vertimai į bulgarų, galų ir suahilių kalbas.
+- Daug įvairių pagerinimų
+- Daug naujų paveikslėlių
+- Daug klaidų pataisymų.
+- Nauja komandinės eilutės parinktis  (--start-level lygis, naudojama su --launch pamokėlė), skirta paleisti GCompris pamokėlę tam tikrame lygyje

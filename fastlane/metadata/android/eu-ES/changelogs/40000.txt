@@ -1,0 +1,13 @@
+- Gramatika-klaseak
+- Erabili graduatutako lerro bat
+- Aurkitu aldameneko zenbakiak
+- Irakurri graduatutako lerro bat
+- Gramatika-azterketa
+- Igarri 24
+- Frisoa
+- Kalkudoku
+- Itzulpenak gehitu dira: bulgariera, galiziera eta Swahilia
+- Erabilerraztasun hobekuntza ugari
+- Irudi berri ugari
+- Akats-konponketa ugari
+- Jarduera bat maila jakin batean abiatzeko komando-lerroko aukera berri bat («--start-level maila», «--launch jarduera» aukerarekin erabili beharrekoa)

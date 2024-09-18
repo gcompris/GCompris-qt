@@ -1,0 +1,13 @@
+- Classes gramaticals
+- Useu una línia graduada
+- Troba els nombres adjacents
+- Llegiu una línia graduada
+- Anàlisi gramatical
+- Endevina 24
+- Fris
+- Calcudoku
+- Traduccions afegides per al búlgar, gallec i suahili
+- Moltes millores en la usabilitat
+- Moltes imatges noves
+- Moltes esmenes d'errors
+- Opció nova de la línia d'ordres per a iniciar directament una activitat en un nivell específic (--start-level level, cal que es faci servir amb --launch activity)

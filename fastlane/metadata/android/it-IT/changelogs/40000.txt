@@ -1,0 +1,13 @@
+- Classi grammaticali
+- Usa una linea graduata
+- Trova i numeri adiacenti
+- Leggi una riga graduata
+- Analisi grammaticale
+- Indovina 24
+- Fregio
+- Calcudoku
+- Traduzioni aggiunte per bulgaro, galiziano e swahili
+- Molti miglioramenti all'usabilità
+- Molte nuove immagini
+- Numerose correzioni di bug
+- Nuova opzione della riga di comando per avviare direttamente un'attività a un livello specifico (--start-level livello, da utilizzare con --launch attività)

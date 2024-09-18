@@ -1,0 +1,13 @@
+- Klasy gramatyczne
+- Korzystaj z linijki
+- Znajdź sąsiadujące liczby
+- Odczytuj linijkę
+- Analiza gramatyczna
+- Odgadnij 24
+- Frieze
+- Calcudoku
+- Dodano tłumaczenie na: Bułgarski, Galicyjski oraz Swahili
+- Wiele poprawek do użyteczności
+- Wiele nowych obrazów
+- Wiele małych poprawek
+- Nowe ustawienie wiersza poleceń, (--start-level poziom, do użytku z --launch aktywność) aby rozpocząć GCompris z danym poziomem trudności

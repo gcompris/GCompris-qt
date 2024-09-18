@@ -1,0 +1,13 @@
+- Classes gramaticais
+- Use a reta numérica
+- Encontre os números adjacentes
+- Leia a reta numérica
+- Análise gramatical
+- Chegue ao 24
+- Friso
+- Calcudoku
+- Adição de traduções para: búlgaro, galego e suaíli
+- Várias melhorias de usabilidade
+- Várias novas imagens
+- Várias correções de erros.
+- Nova opção de linha de comando para iniciar uma atividade diretamente em um nível específico (--start-level nível), usado em conjunto com "--launch atividade".

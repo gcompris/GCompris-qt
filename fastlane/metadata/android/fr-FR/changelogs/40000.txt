@@ -1,0 +1,13 @@
+- Classes grammaticales
+- Trouve le nombre sur une ligne graduée
+- Trouve les nombres adjacents
+- Repérage sur ligne graduée
+- Analyse grammaticale
+- Trouve 24
+- La frise
+- Calcudoku
+- Traductions ajoutées pour le bulgare, le galicien et le swahili.
+- Beaucoup d'améliorations d'ergonomie.
+- Beaucoup de nouvelles images
+- Plein de corrections
+- Nouvelle option en ligne de commande pour démarrer une activité à un niveau donnée (--start-level niveau, doit être utilisé avec l'option --launch activité)
