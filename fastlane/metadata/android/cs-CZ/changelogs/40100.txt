@@ -1,0 +1,2 @@
+- Mnoho vylepšení použitelnosti
+- Opravena spousta chyb

@@ -1,0 +1,13 @@
+- Dilbilgisi sınıflandırmaları
+- Dereceli bir çizgi kullan
+- Bitişik sayıları bul
+- Dereceli bir çizgi oku
+- Dilbilgisi çözümlemesi
+- 24’ü Bul
+- Friz
+- Hesapdoku
+- Çeviriler eklendi: Bulgarca, Galiçyaca ve Suahili
+- Birçok kullanılabilirlik iyileştirmesi
+- Birçok yeni görsel
+- Birçok hata düzeltmesi
+- Bir etkinliği belirli bir düzeyde başlatmak için yeni komut satırı seçeneği (--start-level düzey, --launch etkinlik seçeneğiyle birlikte kullanılmalıdır)

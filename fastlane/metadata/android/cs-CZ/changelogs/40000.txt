@@ -1,0 +1,13 @@
+- Slovní druhy
+- Používání číselné osy
+- Najdi následující čísla
+- Čtení číselné osy
+- Určování slovních druhů
+- Uhádni 24
+- Řada
+- Počtodoku
+- Přidány překlady pro bulharštinu, galícijštinu a svahilštinu
+- Mnoho vylepšení použitelnosti
+- Spousta nových obrázků
+- Opravena spousta chyb
+- Nový volba příkazového řádku pro přímé spuštění aktivity na zadané úrovni (--start-level číslo_úrovně). Použití je pro spouštění s parametrem --launch název_aktivity

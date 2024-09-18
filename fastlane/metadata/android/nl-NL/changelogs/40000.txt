@@ -1,0 +1,13 @@
+- Grammaticale klassen
+- Een schaalverdeling gebruiken
+- Zoek de bijbehorende getallen
+- Lees een schaalverdeling
+- Analyse van grammatica
+- 24 raden
+- Fries
+- Calcudoku
+- Vertalingen toegevoegd voor Bulgaars, Gallisch en Swahili.
+- Veel nuttige verbeteringen
+- Veel nieuwe afbeeldingen
+- Vele fouten gerepareerd
+- Nieuwe optie voor de opdrachtregel om direct een activiteit te starten op een specifiek niveau (--start-level, te gebruiken met --launch activiteit)

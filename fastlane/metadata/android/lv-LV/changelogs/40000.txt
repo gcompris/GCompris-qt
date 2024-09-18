@@ -1,0 +1,13 @@
+- Vārdšķiras
+- Izmanto līniju ar iedaļām
+- Atrodi blakus esošos numurus
+- Nolasi līniju ar iedaļām
+- Gramatiskā analīze
+- Uzmini 24
+- Frīze
+- Kalkudoku
+- Pievienots tulkojums bulgāru, galisiešu un svahili valodā
+- Daudzi lietojamības uzlabojumi
+- Daudzi jauni attēli
+- Daudzi kļūdu labojumi
+- Jaunas komandrindas iespējas, lai tiešā veidā sāktu darbību noteiktā līmenī („--start-level“ līmenis izmantošanai ar „--launch“ aktivitāti)

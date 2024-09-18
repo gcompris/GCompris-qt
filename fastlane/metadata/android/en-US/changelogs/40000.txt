@@ -1,0 +1,13 @@
+- Grammatical classes
+- Use a graduated line
+- Find the adjacent numbers
+- Read a graduated line
+- Grammatical analysis
+- Guess 24
+- Frieze
+- Calcudoku
+- Translations added for Bulgarian, Galician and Swahili
+- Many usability improvements
+- Many new images
+- Many bug fixes
+- New command-line option to directly start an activity at a specific level (--start-level level, to be used with --launch activity)

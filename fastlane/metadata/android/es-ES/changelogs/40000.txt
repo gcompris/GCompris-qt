@@ -1,0 +1,13 @@
+- Categorías gramaticales
+- Usa una línea graduada
+- Encuentra los números adyacentes
+- Lee una línea graduada
+- Análisis gramatical
+- Calcula 24
+- Friso
+- Calcudoku
+- Se han añadido traducciones para el búlgaro, el gallego y el suajili.
+- Numerosas mejoras de usabilidad.
+- Muchas imágenes nuevas.
+- Muchas correcciones de errores.
+- Nueva opción de la línea de órdenes iniciar una actividad en el nivel indicado («--start-level nivel», que se debe usar con «--launch actividad»).
