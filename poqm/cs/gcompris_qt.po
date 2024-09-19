@@ -4,15 +4,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-11 17:26+0200\n"
-"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
+"PO-Revision-Date: 2024-09-17 13:40+0200\n"
+"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -18612,6 +18612,8 @@ msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 msgstr ""
+"Vybral jsi nové národní prostředí. Chceš nyní stáhnout odpovídající zvukové "
+"soubory?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -26453,34 +26455,49 @@ msgid "Enable the kiosk mode."
 msgstr "Povolit režim kiosku."
 
 #: core/main.cpp:102
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use software renderer instead of openGL (slower but should run with any "
+#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
-"graphical card)."
+"graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Použít softwarové vykreslování namísto OpenGL (pomalejší, ale mělo by "
 "fungovat na jakékoliv grafické kartě)."
 
 #: core/main.cpp:105
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use openGL renderer instead of software (faster but crash potentially "
+#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
-"depending on your graphical card)."
+"depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Použít OpenGL vykreslování namísto softwarového (rychlejší, ale na některých "
 "grafických kartách může působit pády)."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
+msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
+msgstr ""
+
+#: core/main.cpp:113
+msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Zadání aktivity při spuštění GCompris."
 
-#: core/main.cpp:114
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Vypíše všechny dostupné aktivity na standardní výstup."
 
-#: core/main.cpp:118
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -26490,7 +26507,7 @@ msgstr ""
 "sezení zobrazit. Zvol buď jednu hodnotu (3) nebo rozsah (3-6). Hodnoty musí "
 "být mezi 1 a 6."
 
-#: core/main.cpp:122
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

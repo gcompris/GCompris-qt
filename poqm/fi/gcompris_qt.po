@@ -27860,19 +27860,29 @@ msgid "Enable the kiosk mode."
 msgstr "Käytä kioskitilaa."
 
 #: core/main.cpp:102
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use software renderer instead of openGL (slower but should run with any "
+#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
-"graphical card)."
+"graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Käytä ohjelmistohahmonnusta OpenGL:n sijaan (hitaampaa mutta toimii kaikilla "
 "näytönohjaimilla)."
 
 #: core/main.cpp:105
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use openGL renderer instead of software (faster but crash potentially "
+#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
-"depending on your graphical card)."
+"depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Käytä OpenGL-hahmonnusta ohjelmiston sijaan (nopeampaa mutta saattaa kaatua "
 "joillakin näytönohjaimilla).Käytä OpenGL-hahmonnusta ohjelmiston sijaan "
@@ -27880,16 +27890,21 @@ msgstr ""
 
 #: core/main.cpp:109
 msgctxt "QObject|"
+msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
+msgstr ""
+
+#: core/main.cpp:113
+msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Määritä GComprisin aloittava toiminto."
 
-#: core/main.cpp:114
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Tulostaa vakiotulostevirtaan kaikki saatavilla olevat toiminnot."
 
 # Huom! ”3-6” sisältää tarkoituksella yhdysmerkin, koska voisi olettaa, että syötettäessä sitä on käytettävä.
-#: core/main.cpp:118
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27898,7 +27913,7 @@ msgstr ""
 "Määritä istunnon toimintojen vaikeusalue. Anna yksittäinen arvo (2) tai alue "
 "(3-6). Arvojen on oltava väliltä 1–6."
 
-#: core/main.cpp:122
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

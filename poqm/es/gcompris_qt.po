@@ -27259,19 +27259,29 @@ msgid "Enable the kiosk mode."
 msgstr "Activar el modo kiosko."
 
 #: core/main.cpp:102
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use software renderer instead of openGL (slower but should run with any "
+#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
-"graphical card)."
+"graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Usar el generador de gráficos por software en lugar de OpenGL (es más lento, "
 "aunque debería funcionar con todas las tarjetas gráficas)."
 
 #: core/main.cpp:105
+#, fuzzy
+#| msgctxt "QObject|"
+#| msgid ""
+#| "Use openGL renderer instead of software (faster but crash potentially "
+#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
-"depending on your graphical card)."
+"depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Usar el generador de gráficos OpenGL en lugar de generarlos por software (es "
 "más rápido, aunque puede producir fallos potencialmente dependiendo de la "
@@ -27279,15 +27289,20 @@ msgstr ""
 
 #: core/main.cpp:109
 msgctxt "QObject|"
+msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
+msgstr ""
+
+#: core/main.cpp:113
+msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Indicar la actividad al iniciar GCompris."
 
-#: core/main.cpp:114
+#: core/main.cpp:118
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Muestra todas las actividades disponibles en la salida estándar."
 
-#: core/main.cpp:118
+#: core/main.cpp:122
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27297,7 +27312,7 @@ msgstr ""
 "sesión. Puede ser un valor aislado (2) o un intervalo (3-6). Los valores "
 "deben estar entre 1 y 6."
 
-#: core/main.cpp:122
+#: core/main.cpp:126
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
