@@ -588,15 +588,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={renderizador}</entry>
+<entry
+>Indica el renderizador gráfico que se debe usar. «opengl» y «software» están disponibles en todas las plataformas. En Windows, se puede usar «direct3d11» o «direct3d12» (si se ha compilado con Qt 
+>= 6.6). En macOS se puede usar «metal».</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Usar el renderizador por software en lugar de openGL (debería funcionar con todas las tarjetas gráficas).</entry>
+>Usar el renderizador por software en lugar de openGL (debería funcionar con todas las tarjetas gráficas). Obsoleto (usar en su lugar --renderer=software).</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Usar el renderizador openGL en lugar de renderizar por software (más rápido y con más efectos gráficos, aunque puede producir fallos con algunas tarjetas gráficas).</entry>
+>Usar el renderizador openGL en lugar de renderizar por software (más rápido y con más efectos gráficos, aunque puede producir fallos con algunas tarjetas gráficas). Obsoleto (usar en su lugar --renderer=opengl).</entry>
 </row>
 </tbody>
 </tgroup>

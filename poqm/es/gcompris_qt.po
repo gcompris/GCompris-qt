@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-10 01:32+0200\n"
+"PO-Revision-Date: 2024-09-20 02:04+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -27259,25 +27259,16 @@ msgid "Enable the kiosk mode."
 msgstr "Activar el modo kiosko."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Usar el generador de gráficos por software en lugar de OpenGL (es más lento, "
-"aunque debería funcionar con todas las tarjetas gráficas)."
+"aunque debería funcionar con todas las tarjetas gráficas). Obsoleto (usar en "
+"su lugar --renderer=software)."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27285,12 +27276,14 @@ msgid ""
 msgstr ""
 "Usar el generador de gráficos OpenGL en lugar de generarlos por software (es "
 "más rápido, aunque puede producir fallos potencialmente dependiendo de la "
-"tarjeta gráfica que use)."
+"tarjeta gráfica que use). Obsoleto (usar en su lugar --renderer=opengl)."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Seleccionar el renderizador (opengl, software, Direct3D11, Direct3D12, "
+"Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"

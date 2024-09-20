@@ -574,15 +574,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={renderer}</entry>
+<entry
+>Specificeer welke grafische renderer te gebruiken. Op alle platforms zijn opengl en software beschikbaar. Op Windows kunt u direct3d11 of direct3d12 gebruiken (als het is gecompileerd met Qt
+>=6.6). Op MacOS kunt u metal gebruiken.</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Software renderer gebruiken in plaats van openGL (zou met elke grafische kaart moeten werken).</entry>
+>Software renderer gebruiken in plaats van openGL (zou met elke grafische kaart moeten werken). Afgekeurd, in plaats daarvan --renderer=software gebruiken.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Renderen met openGL gebruiken in plaats van software (sneller en meer grafische effecten maar kan crashen bij sommige grafische kaarten).</entry>
+>Renderen met openGL gebruiken in plaats van software (sneller en meer grafische effecten maar kan crashen bij sommige grafische kaarten). Afgekeurd, in plaats daarvan --renderer=opengl gebruiken.</entry>
 </row>
 </tbody>
 </tgroup>

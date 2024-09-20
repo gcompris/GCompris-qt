@@ -578,15 +578,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={renderitzador}</entry>
+<entry
+>Especifica el renderitzador gràfic que s'emprarà. A totes les plataformes, són disponibles «opengl» i «software». Al Windows, podeu fer servir «direct3d11» o «direct3d12» (si es van compilar amb Qt
+>=6.6). Al MacOS, podeu fer servir «metal».</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Utilitza el renderitzador per programari en lloc d'openGL (s'executa amb qualsevol targeta gràfica).</entry>
+>Utilitza el renderitzador per programari en lloc d'openGL (s'executa amb qualsevol targeta gràfica). Obsolet, en el seu lloc feu servir --renderer=software.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilitza el renderitzador openGL en comptes del per programari (més ràpid, però pot fallar amb algunes targetes gràfiques).</entry>
+>Utilitza el renderitzador openGL en comptes del de programari (més ràpid, però pot fallar amb algunes targetes gràfiques). Obsolet, en el seu lloc feu servir --renderer=opengl.</entry>
 </row>
 </tbody>
 </tgroup>
