@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-07 11:24+0200\n"
+"PO-Revision-Date: 2024-09-21 11:38+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -18977,14 +18977,13 @@ msgid "All lowercase"
 msgstr "Wszystkie małymi literami"
 
 #: activities/menu/Menu.qml:93
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Czy chcesz teraz pobrać odpowiednie pliki dźwiękowe teraz?"
+msgstr ""
+"Wybrałeś nowy język. Czy chcesz teraz pobrać odpowiadające mu pliki "
+"dźwiękowe?"
 
 #: activities/menu/Menu.qml:94
 msgctxt "Menu|"
@@ -27049,37 +27048,31 @@ msgid "Enable the kiosk mode."
 msgstr "Włącz tryb kiosku."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Użyj wyświetlania programowego zamiast OpenGL (wolniejsze, lecz powinno dać "
-"się uruchomić na każdej karcie graficznej)."
+"się uruchomić na każdej karcie graficznej). Jest to jednak przestarzały "
+"sposób, więc zamiast tego użyj --renderer=software."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Użyj wyświetlania OpenGL zamiast programowego (szybsze, lecz potencjalnie "
-"mniej stabilne, co zależy od karty graficznej)"
+"mniej stabilne, co zależy od karty graficznej).  Jest to jednak przestarzały "
+"sposób, więc zamiast tego użyj --renderer=opengl."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Wybierz silnik wyświetlania (opengl, software, Direct3D11, Direct3D12, "
+"Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
