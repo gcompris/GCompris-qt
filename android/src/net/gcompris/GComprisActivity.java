@@ -11,10 +11,8 @@
 
 package net.gcompris;
 
-import org.qtproject.qt.android.bindings.QtApplication;
 import org.qtproject.qt.android.bindings.QtActivity;
 import android.media.AudioManager;
-import android.util.Log;
 import android.content.Context;
 import android.view.View;
 import android.view.WindowManager;
@@ -103,14 +101,12 @@ public class GComprisActivity extends QtActivity
 		if (value)
 			GComprisActivity.this.runOnUiThread(new Runnable() {
 				public void run() {
-					Log.d(QtApplication.QtTAG, "Disabling screensaver");
 					getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 				}
 			});
 		else
 			GComprisActivity.this.runOnUiThread(new Runnable() {
 				public void run() {
-					Log.d(QtApplication.QtTAG, "Enabling screensaver");
 					getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 				}
 			});
