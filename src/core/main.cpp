@@ -129,7 +129,7 @@ int main(int argc, char *argv[])
     parser.process(app);
 
     GComprisPlugin plugin;
-    plugin.registerTypes("core");
+    plugin.registerTypes("GCompris");
     ActivityInfoTree::registerResources();
 
     // Tell media players to stop playing, it's GCompris time
