@@ -407,7 +407,7 @@ void ActivityInfoTree::filterBySearch(const QString &text)
 
 void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool doSynchronize)
 {
-    for (ActivityInfo *activity: qAsConst(m_menuTreeFull)) {
+    for (ActivityInfo *activity: std::as_const(m_menuTreeFull)) {
         activity->enableDatasetsBetweenDifficulties(levelMin, levelMax);
     }
     if (doSynchronize) {

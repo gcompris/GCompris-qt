@@ -370,7 +370,7 @@ inline DownloadManager::DownloadJob *DownloadManager::getJobByType_locked(GCompr
 inline DownloadManager::DownloadJob *DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
-    for (auto activeJob: qAsConst(activeJobs))
+    for (auto activeJob: std::as_const(activeJobs))
         if (activeJob->reply == r)
             return activeJob;
     return nullptr; // should never happen!
@@ -603,7 +603,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
     DownloadJob *job = nullptr;
     // don't call getJobByReply to not cause deadlock with mutex
-    for (auto activeJob: qAsConst(activeJobs)) {
+    for (auto activeJob: std::as_const(activeJobs)) {
         if (activeJob->reply == reply) {
             job = activeJob;
             break;
@@ -616,7 +616,7 @@ void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal
     job->bytesTotal = bytesTotal;
     qint64 allJobsBytesReceived = 0;
     qint64 allJobsBytesTotal = 0;
-    for (auto activeJob: qAsConst(activeJobs)) {
+    for (auto activeJob: std::as_const(activeJobs)) {
         allJobsBytesReceived += activeJob->bytesReceived;
         allJobsBytesTotal += activeJob->bytesTotal;
     }
