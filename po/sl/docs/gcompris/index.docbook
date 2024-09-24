@@ -1,0 +1,672 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!-- Define an entity for your application if it is not part of KDE
+       Git -->
+  <!ENTITY gcompris "<application
+>GCompris</application
+>">
+  <!ENTITY kappname "&gcompris;"
+><!-- replace kmyapplication here
+                                            do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Slovenian "INCLUDE"
+> <!-- ONLY If you are writing non-English
+                                     original documentation, change
+                                     the language here -->
+
+  <!-- Do not define any other entities; instead, use the entities
+       from entities/general.entities and en/user.entities. -->
+]>
+<book id="gcompris" lang="&language;">
+
+<bookinfo>
+<title
+>&gcompris; Priročnik za skrbništvo</title>
+
+<authorgroup>
+<author>
+<personname
+><firstname
+>Johnny</firstname
+> <surname
+>Jazeix</surname
+> </personname>
+</author>
+<author>
+<personname
+><firstname
+>Timothée</firstname
+> <surname
+>Giet</surname
+> </personname>
+</author>
+
+<othercredit role="developer">
+<othername
+>&gcompris; Skupina</othername>
+<contrib
+>Razvijalci</contrib>
+</othercredit
+> 
+
+<othercredit role="translator"
+><firstname
+>Luka</firstname
+><surname
+>Puhar</surname
+><affiliation
+><address
+><email
+>puhar.luka@gmail.com</email
+></address
+></affiliation
+><contrib
+>Prevod</contrib
+></othercredit
+> 
+</authorgroup>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<!-- Date of the documentation
+Don't forget to include this last date.
+Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
+-->
+<date
+>20.09.2024</date>
+
+<!--version information of the application and kde this documentation is valid for.
+for example 'xx.yy.zz'
+-->
+<releaseinfo
+>4.2</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para
+>&gcompris; je izobraževalna programska oprema za več dejavnosti. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>izobraževanje</keyword>
+<keyword
+>otroci</keyword>
+<keyword
+>igre</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="administration-handbook">
+<title
+>Administrativni priročnik</title>
+
+<sect1 id="introduction">
+<title
+>Uvod</title>
+<para
+>&gcompris; je bogat paket izobraževalne programske opreme, ki vsebuje širok nabor dejavnosti.</para>
+<para
+>Ponuja različne dejavnosti, ki pokrivajo različna področja. Teme vključujejo branje in tipkanje, aritmetiko, geografijo, naravoslovje in druge teme. Namenjen je uporabi doma in v šoli.</para>
+<para
+>Namen projekta &gcompris; je zagotoviti igrive dejavnosti, ki pa so vedno poučne.</para>
+<para
+>&gcompris; je del projekta &kde; in je pod <ulink url="https://www.gnu.org/licenses/agpl-3.0.html"
+>licenco AGPLv3</ulink
+>. Vsa koda, razen motorja za analogno električno dejavnost, je pod <ulink url="https://www.gnu.org/licenses/gpl.html"
+>licenco GPLv3</ulink
+>.</para>
+<para
+>&gcompris; je na voljo v naslednjih operacijskih sistemih: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android. Zahteva kartico 3D s podporo <emphasis
+>OpenGL 2.1</emphasis
+> ali višjo. 32-bitna barvna globina je obvezna.</para>
+</sect1>
+
+<sect1 id="installation">
+<title
+>Namestitev</title>
+<para
+>Programska oprema je na voljo v več oblikah. Postopek izvajajte v skladu s svojim primerom. </para>
+<itemizedlist>
+<listitem
+><para
+>&GNU;/&Linux;: uporabite pakete, ki jih zagotavlja vaša distribucija &GNU;/&Linux;. Če program &gcompris; ni priložen k distribuciji &Linux;, se obrnite nanje in jih prosite za vključitev programa &gcompris; v distribucijo &Linux;.</para
+></listitem>
+<listitem
+><para
+>&Windows;: je na voljo s klasičnim namestitvenim programom za &Windows; ali prek trgovine Microsoft Store.</para
+></listitem>
+<listitem
+><para
+>MacOSX: dobavljen v klasičnem namestitvenem programu.</para
+></listitem>
+<listitem
+><para
+>Android: distribuira ga trgovina F-Droid ali trgovina Google Play. Na voljo je tudi datoteka Apk.</para
+></listitem>
+</itemizedlist>
+</sect1>
+
+<sect1 id="user-interface">
+<title
+>Uporabniški vmesnik</title>
+<para
+>Vmesnik je zasnovan tako, da ga lahko uporabljajo tudi majhni otroci. &gcompris; upravlja se z miško. Pri večini dejavnosti je na voljo tudi navigacija s tipkovnico.</para>
+
+<sect2 id="main-window">
+<title
+>Glavno okno</title>
+<para
+>Ob zagonu programa &gcompris; se prikaže grafični vmesnik, ki prikazuje seznam dejavnosti z nadzorno vrstico na dnu.</para>
+<screenshot>
+<screeninfo
+>Tukaj je posnetek zaslona &gcompris; Glavno okno</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>&gcompris; Glavno okno</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Vsaka ikona predstavlja dejavnost. Okoli vsake od njih so majhne ikone, ki vsebujejo dodatne informacije o dejavnosti. S preprosti klik na ikono vas vodi do dejavnosti ali menija dejavnosti. Na voljo je 8 razdelkov (kategorij) dejavnosti, ki so nameščeni na vrhu ali na levi strani (samo če je orientacija portretna). Na primer, v razdelku "Namizne igre" so na voljo namizne igre, kot so šah, pikado ali štiri v vrsto.</para>
+<para
+>Nekatere kategorije imajo podkategorije za boljše filtriranje dejavnosti. Pri matematičnih dejavnostih imamo tri podkategorije: štetje, aritmetika in mere.</para>
+<para
+>Z zvezdicami je označena starostna skupina, za katero je posamezna igra namenjena:</para
+> 
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 ali 3 rumene zvezdice - za otroke, stare od 2 do 6 let.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject
+></inlinemediaobject
+>1, 2 ali 3 rdeče zvezdice - starejši od 6 let.</para
+></listitem
+> 
+</itemizedlist>
+
+<para
+>Na dnu zaslona je nadzorna vrstica za &gcompris;. Možne so naslednje ikone (ikone so prikazane le, če so na voljo v dejavnosti):</para>
+<itemizedlist>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Domov - zapusti trenutno dejavnost in se vrne v prejšnji meni.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> "V redu" - potrdite svoj odgovor. Nekatere dejavnosti ne zaznajo samodejno, ali je otrok opravil nalogo ali ne. V tem primeru morate klikniti na to ikono. Uporabite lahko tudi tipko &Enter; na tipkovnici.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Svetloba - Prikažite namig za dejavnost. Otrokom lahko pomagamo pri nekaterih dejavnostih in jih usmerjamo pri iskanju odgovorov.</para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject
+></inlinemediaobject>
+<inlinemediaobject
+><imageobject
+><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Puščice - Prikaže se trenutna raven. Če želite izbrati drugo raven, kliknite eno od puščic. Na splošno je pri dejavnostih na voljo več ravni, katerih število je odvisno od dejavnosti. V igri &gcompris; lahko preidete na naslednjo stopnjo, ne da bi končali trenutno stopnjo.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Ustnice - Prosite &gcompris;, naj ponovi vprašanje.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Vprašalni znak - Prikaže pogovorno okno pomoči. Včasih je lahko dejavnost preveč zapletena, da bi jo bilo mogoče preprosto opisati v območju za opis. V tem primeru ta funkcija omogoča dostop do dodatnih informacij.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Orodjarna - meni Konfiguracija. Konfiguracija je shranjena v uporabniški shrambi (mapi) pod imenom <filename
+>.config/gcompris/gcompris-qt.conf</filename
+>. To je besedilna datoteka, ki jo lahko urejate ročno.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Element seznama - Prikaz menija z nastavitvami dejavnosti. Na voljo sta dva možna zavihka. Prvi, "Nabor podatkov", omogoča izbiro ravni dejavnosti glede na več ciljev, drugi, "Možnosti", pa omogoča posodobitev konfiguracije dejavnosti, če je na voljo. </para
+></listitem>
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Velika črka "G" - Okno z informacijami o &gcompris; predstavlja glavne sodelavce in različico programske opreme.</para
+></listitem
+> 
+<listitem
+><para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
+></inlinemediaobject
+> Izklop - Opustite &gcompris;. Uporabite lahko tudi bližnjico na tipkovnici <keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></para
+></listitem
+> 
+</itemizedlist>
+</sect2>
+
+<sect2 id="kiosk-mode">
+<title
+>Način Kiosk</title>
+<para
+>Če &gcompris; uporabljate z majhnimi otroki ali na samopostrežnem kiosku, lahko onemogočite določeno število možnosti:</para>
+<itemizedlist>
+<listitem
+><para
+><userinput
+><command
+>gcompris --enable-kioskmode</command
+></userinput
+> : Izključi <guiicon
+>Izhod</guiicon
+> in <guiicon
+>Konfiguracija</guiicon
+> tipki.</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris --disable-kioskmode</command
+></userinput
+> : Vključi <guiicon
+>Izhod</guiicon
+> in <guiicon
+>Konfiguracija</guiicon
+> tipki.</para
+></listitem>
+<listitem
+><para
+><userinput
+><command
+>gcompris -f</command
+></userinput
+> : zaženite &gcompris; v celozaslonskem načinu</para
+></listitem
+> 
+<listitem
+><para
+><userinput
+><command
+>gcompris -C</command
+></userinput
+> : onemogoči kurzor (način zaslona na dotik)</para
+></listitem
+> 
+</itemizedlist>
+<para
+>Te možnosti lahko seveda kombinirate.</para>
+</sect2>
+
+<sect2 id="keyboard-shortcuts">
+<title
+>Bližnjice na tipkovnici</title>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>Bližnjica</entry>
+<entry
+>Dejanje</entry>
+</row>
+<row>
+<entry
+>&Esc; ali <keycombo action="simul"
+>&Ctrl;<keycap
+>W</keycap
+></keycombo
+></entry>
+<entry
+>Zaključite trenutno dejavnost ali pogovorno okno in se vrnite v glavni meni.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>Q</keycap
+></keycombo
+></entry>
+<entry
+>Opustite &gcompris; brez dodatnega obvestila.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>F</keycap
+></keycombo
+></entry>
+<entry
+>Preklopite celozaslonski način.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>M</keycap
+></keycombo
+></entry>
+<entry
+>Preklapljanje izklopa zvoka.</entry>
+</row>
+<row>
+<entry
+><keycombo action="simul"
+>&Ctrl;<keycap
+>B</keycap
+></keycombo
+></entry>
+<entry
+>Prikažite ali skrijte nadzorno vrstico.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</sect2>
+
+</sect1>
+
+<sect1 id="internationalization">
+<title
+>Opombe o internacionalizaciji</title>
+<para
+>&gcompris; je internacionaliziran in na voljo v več kot 35 jezikih. Če želite preveriti, ali je vaš jezik na voljo, lahko zaženete program &gcompris; in v možnosti konfiguracije izberete svoj jezik.</para>
+<para
+>Bodite previdni, saj nekateri jeziki za pravilen prikaz potrebujejo posebne pisave. </para
+> 
+<para
+>Če vaš jezik ni podprt, lahko prispevate k programski opremi in dodate prevod svojega jezika. Če vas to zanima, se lahko obrnete na <ulink url="https://l10n.kde.org/teams"
+>prevajalsko ekipo</ulink
+> projekta &kde; za svoj jezik. Stopnjo prevoda za svoj jezik lahko preverite na <ulink url="https://l10n.kde.org/"
+>&kde; spletnem mestu s prevodi</ulink
+>.</para>
+</sect1>
+
+<sect1 id="learning-language">
+<title
+>Učenje jezikov</title>
+<para
+>V tujem jeziku, ki se ga učite, lahko uporabite &gcompris;. V meniju konfiguracije izberite tuji jezik. Ne pozabite prenesti izbirnih zvočnih modulov za ta jezik.</para>
+</sect1>
+
+<sect1 id="customizing-activities">
+<title
+>Dejavnosti prilagajanja</title>
+<para
+>Nekatere dejavnosti lahko prilagodite z gumbom za konfiguracijo v njih. Na primer, lahko nastavite lokalne nastavitve v nekaterih besedilnih dejavnostih (npr. besedna igra) ali naj prikazuje prave slike avtomobilov namesto zapolnjenih pravokotnikov (promet).</para>
+
+<para
+>Pri več dejavnostih lahko v konfiguraciji izberete več podatkovnih nizov. Vsak od njih ima poseben cilj, ki je opisan.</para>
+<screenshot>
+<screeninfo
+>Nabor podatkov dejavnosti "Preštej elemente"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="dataset.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Nabor podatkov dejavnosti "Preštej elemente"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para
+>Izberete lahko možnosti za to dejavnost.</para>
+<screenshot>
+<screeninfo
+>Izberi način dejavnosti "Preštej predmete"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Izberi način dejavnosti "Preštej predmete"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="console-switches">
+<title
+>Konzolna stikala</title>
+<para
+>Če zaženete ukaz &gcompris; iz ukazne konzole z možnostjo --help, se prikažejo vsi parametri, ki jih sprejme:</para>
+<informaltable>
+<tgroup cols="2">
+<tbody>
+<row>
+<entry
+>-f, --fullscreen</entry>
+<entry
+>Zaženi &gcompris; v celozaslonskem načinu.</entry>
+</row>
+<row>
+<entry
+>-w, --window</entry>
+<entry
+>Zaženi &gcompris; v okenskem načinu.</entry>
+</row>
+<row>
+<entry
+>-s, --sound</entry>
+<entry
+>Zaženi &gcompris; z omogočenim zvokom.</entry>
+</row>
+<row>
+<entry
+>-m, --mute</entry>
+<entry
+>Zaženi &gcompris; brez zvoka.</entry>
+</row>
+<row>
+<entry
+>-c, --cursor</entry>
+<entry
+>Zaženi &gcompris; s privzetim sistemskim kurzorjem.</entry>
+</row>
+<row>
+<entry
+>-C, --nocursor</entry>
+<entry
+>Zaženi &gcompris; brez kazalca (način zaslona na dotik).</entry>
+</row>
+<row>
+<entry
+>-v, --version</entry>
+<entry
+>Natisni različico &gcompris;.</entry>
+</row>
+<row>
+<entry
+>-l, --list-activities</entry>
+<entry
+>Na standardni izhod izpiše vse razpoložljive dejavnosti.</entry>
+</row>
+<row>
+<entry
+>--launch activity</entry>
+<entry
+>Določi dejavnost ob zagonu programa GCompris.</entry>
+</row>
+<row>
+<entry
+>--start-level raven</entry>
+<entry
+>Podajte raven, na kateri želite začeti dejavnost, določeno z možnostjo --launchpri zagonu GCompris. Prezrto, če ni možnosti --launch ali če je navedena raven neveljavna.</entry>
+</row>
+<row>
+<entry
+>--difficulty {value|min-max}</entry>
+<entry
+>Za sejo zahtevajte, da je težavnost dejavnosti GCompris enaka vrednosti ali med najmanjšo in največjo vrednostjo. Vrednosti morajo biti med 1 in 6, in če je format min-max, mora biti najmanjša vrednost manjša od največje vrednosti. V nasprotnem primeru se GCompris ne bo zagnal.</entry>
+</row>
+<row>
+<entry
+>--export-activities-as-sql</entry>
+<entry
+>Izvoz dejavnosti kot SQL.</entry>
+</row>
+<row>
+<entry
+>--enable-kioskmode</entry>
+<entry
+>Omogoči kiosk način (skrije gumba Izhod in Konfiguracija).</entry>
+</row>
+<row>
+<entry
+>--disable-kioskmode</entry>
+<entry
+>Onemogoči način kioska (privzeto).</entry>
+</row>
+<row>
+<entry
+>--renderer={renderer}</entry>
+<entry
+>Določite, kateri grafični upodobilnik želite uporabiti. Na vseh platformah sta na voljo opengl in software. V sistemu Windows lahko uporabite direct3d11 ali direct3d12 (če je bil preveden s Qt
+>=6.6). V sistemu MacOS lahko uporabite metal.</entry>
+</row>
+<row>
+<entry
+>--software-renderer</entry>
+<entry
+>Uporabite programski upodobilnik namesto openGL (deluje z vsako grafično kartico). Zastarelo, namesto tega uporabite --renderer=software.</entry>
+</row>
+<row>
+<entry
+>--opengl-renderer</entry>
+<entry
+>Uporabite upodobilnik openGL namesto programske opreme (hitrejši in več grafičnih učinkov, vendar se lahko sesuje pri nekaterih grafičnih karticah). Zastarelo, namesto tega uporabite --renderer=opengl.</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<sect2 id="windows-example">
+<title
+>&Windows; Primer</title>
+<para
+>Ta stikala lahko dodate v lastnostih ikone namizja. Tukaj je primer, ki izvaja &gcompris; v načinu kiosk v celozaslonskem načinu, brez gumba Konfiguracija in kazalca:</para>
+<para
+><userinput
+><command
+>"C:\Program Files\GCompris-Qt\bin\GCompris.exe" --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+<sect2 id="gnu-linux-example">
+<title
+>&GNU;/&Linux; Primer</title>
+<para
+>Ustvari zaganjalnik aplikacije in konfigurirajte parametre ukazne vrstice. Tukaj je primer, ki izvaja &gcompris; v načinu kiosk na celotnem zaslonu, brez gumba Config in kurzorja:</para
+> 
+<para
+><userinput
+><command
+>gcompris-qt --enable-kioskmode -f -C</command
+></userinput
+></para>
+</sect2>
+
+</sect1>
+
+</chapter>
+<chapter id="credits">
+
+<title
+>Zasluge in licenca</title>
+
+<para
+>&gcompris; </para>
+<para
+>Program copyright 2000-2024 Timothée Giet and others </para>
+
+<para
+>Prevod: Luka Puhar<email
+>puhar.luka@gmail.com</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->
