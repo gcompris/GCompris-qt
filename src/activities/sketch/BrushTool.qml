@@ -56,7 +56,7 @@ Item {
 
     function defaultModeInit() {
         processTimer.interval = selectedMode.timerInterval
-        tempCanvas.opacity = selectedMode.actualBrushOpacity
+        tempCanvas.opacity = selectedMode.actualToolOpacity
         tempCanvas.ctx.lineCap = tempCanvas.ctx.lineJoin = "round"
         tempCanvas.ctx.strokeStyle = tempCanvas.ctx.fillStyle = items.foregroundColor
         tempCanvas.ctx.globalAlpha = 1
@@ -97,40 +97,40 @@ Item {
     // All brush presets, one item for each
     Item {
         id: roundBrush
-        // note: brushSize range between 1 and 100
+        // note: toolSize range between 1 and 100
         // NOTE: if changing values, don't forget to also change initial values in BrushToolSettings !!!
-        property real brushOpacity: 0.5
-        property real defaultBrushOpacity: 0.5
-        property real brushSize: 5
-        property real defaultBrushSize: 5
-        property int minBrushSize: 1
-        property int maxBrushSize: 100
+        property real toolOpacity: 0.5
+        property real defaultToolOpacity: 0.5
+        property int toolSize: 5
+        property int defaultToolSize: 5
+        property int minToolSize: 1
+        property int maxToolSize: 100
         property int sizeSliderStepSize: 1
-        property real radiusSize: actualBrushSize * 0.5
-        property int timerInterval: 15 * (items.eraserMode ? eraserSmoothing : brushSmoothing)
-        property int brushPattern: 0
-        property int defaultBrushPattern: 0
+        property real radiusSize: actualToolSize * 0.5
+        property int timerInterval: 15 * (items.eraserMode ? eraserSmoothing : toolSmoothing)
+        property int toolPattern: 0
+        property int defaultToolPattern: 0
         // TODO for later, try to make a less laggy smoothing method...
-        property int brushSmoothing: 2
-        property int defaultBrushSmoothing: 2
+        property int toolSmoothing: 2
+        property int defaultToolSmoothing: 2
 
         // eraserMode
-        property real eraserBrushOpacity: 1
-        property real defaultEraserBrushOpacity: 1
-        property real eraserBrushSize: 10
-        property real defaultEraserBrushSize: 10
-        property var eraserPattern: 0
+        property real eraserOpacity: 1
+        property real defaultEraserOpacity: 1
+        property int eraserSize: 10
+        property int defaultEraserSize: 10
+        property int eraserPattern: 0
         property int defaultEraserPattern: 0
         // TODO for later, try to make a less laggy smoothing method...
         property int eraserSmoothing: 2
         property int defaultEraserSmoothing: 2
 
-        property real actualBrushOpacity: items.eraserMode ? eraserBrushOpacity : brushOpacity
-        property real actualBrushSize: (items.eraserMode ? eraserBrushSize : brushSize) / items.devicePixelRatio
-        property int actualPattern: items.eraserMode ? eraserPattern : brushPattern
+        property real actualToolOpacity: items.eraserMode ? eraserOpacity : toolOpacity
+        property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
+        property int actualPattern: items.eraserMode ? eraserPattern : toolPattern
 
         function modeInit() {
-            tempCanvas.ctx.lineWidth = actualBrushSize
+            tempCanvas.ctx.lineWidth = actualToolSize
             brushTool.defaultModeInit()
             if(actualPattern > 0) {
                 brushTool.pattern = tempCanvas.ctx.createPattern(items.foregroundColor, items.patternList[selectedMode.actualPattern])
@@ -154,38 +154,38 @@ Item {
 
     Item {
         id: fillBrush
-        property real brushOpacity: 0.5
-        property real defaultBrushOpacity: 0.5
-        property real brushSize: 1
-        property real defaultBrushSize: 1
-        property real minBrushSize: 1
-        property real maxBrushSize: 5
+        property real toolOpacity: 0.5
+        property real defaultToolOpacity: 0.5
+        property int toolSize: 1
+        property int defaultToolSize: 1
+        property int minToolSize: 1
+        property int maxToolSize: 5
         property int sizeSliderStepSize: 1
-        property real radiusSize: brushSize * 0.5
-        property int timerInterval: 15 * (items.eraserMode ? brushSmoothing : eraserSmoothing)
-        property int brushPattern: 0
-        property int defaultBrushPattern: 0
+        property real radiusSize: toolSize * 0.5
+        property int timerInterval: 15 * (items.eraserMode ? toolSmoothing : eraserSmoothing)
+        property int toolPattern: 0
+        property int defaultToolPattern: 0
         // TODO for later, try to make a less laggy smoothing method...
-        property int brushSmoothing: 2
-        property int defaultBrushSmoothing: 2
+        property int toolSmoothing: 2
+        property int defaultToolSmoothing: 2
 
         // eraserMode
-        property real eraserBrushOpacity: 1
-        property real defaultEraserBrushOpacity: 1
-        property real eraserBrushSize: 1
-        property real defaultEraserBrushSize: 1
+        property real eraserOpacity: 1
+        property real defaultEraserOpacity: 1
+        property int eraserSize: 1
+        property int defaultEraserSize: 1
         property int eraserPattern: 0
         property int defaultEraserPattern: 0
         // TODO for later, try to make a less laggy smoothing method...
         property int eraserSmoothing: 2
         property int defaultEraserSmoothing: 2
 
-        property real actualBrushOpacity: items.eraserMode ? eraserBrushOpacity : brushOpacity
-        property real actualBrushSize: (items.eraserMode ? eraserBrushSize : brushSize) / items.devicePixelRatio
-        property int actualPattern: items.eraserMode ? eraserPattern : brushPattern
+        property real actualToolOpacity: items.eraserMode ? eraserOpacity : toolOpacity
+        property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
+        property int actualPattern: items.eraserMode ? eraserPattern : toolPattern
 
         function modeInit() {
-            tempCanvas.ctx.lineWidth = actualBrushSize
+            tempCanvas.ctx.lineWidth = actualToolSize
             brushTool.defaultModeInit()
             if(actualPattern > 0) {
                 brushTool.pattern = tempCanvas.ctx.createPattern(items.foregroundColor, items.patternList[selectedMode.actualPattern])
@@ -218,34 +218,34 @@ Item {
 
     Item {
         id: airBrush
-        // note: brushSize range between 10 and 300
-        property real brushOpacity: 0.5
-        property real defaultBrushOpacity: 0.5
-        property real brushSize: 150
-        property real defaultBrushSize: 150
-        property real minBrushSize: 10
-        property real maxBrushSize: 300
+        // note: toolSize range between 10 and 300
+        property real toolOpacity: 0.5
+        property real defaultToolOpacity: 0.5
+        property int toolSize: 150
+        property int defaultToolSize: 150
+        property int minToolSize: 10
+        property int maxToolSize: 300
         property int sizeSliderStepSize: 10
-        property real radiusSize: actualBrushSize * 0.5
-        property int timerInterval: 300 / (items.eraserMode ? eraserSpeed : speed)
-        property int speed: 10
-        property int defaultSpeed: 10
-        property real density: (items.eraserMode ? eraserDensity : brushDensity) * 0.1
-        property int brushDensity: 5
-        property int defaultBrushDensity: 5
+        property real radiusSize: actualToolSize * 0.5
+        property int timerInterval: 300 / (items.eraserMode ? eraserSpeed : toolSpeed)
+        property int toolSpeed: 10
+        property int defaultToolSpeed: 10
+        property real density: (items.eraserMode ? eraserDensity : toolDensity) * 0.1
+        property int toolDensity: 5
+        property int defaultToolDensity: 5
 
         // eraserMode
-        property real eraserBrushOpacity: 1
-        property real defaultEraserBrushOpacity: 1
-        property real eraserBrushSize: 150
-        property real defaultEraserBrushSize: 150
+        property real eraserOpacity: 1
+        property real defaultEraserOpacity: 1
+        property int eraserSize: 150
+        property int defaultEraserSize: 150
         property int eraserSpeed: 10
         property int defaultEraserSpeed: 10
         property int eraserDensity: 10
         property int defaultEraserDensity: 10
 
-        property real actualBrushOpacity: items.eraserMode ? eraserBrushOpacity : brushOpacity
-        property real actualBrushSize: (items.eraserMode ? eraserBrushSize : brushSize) / items.devicePixelRatio
+        property real actualToolOpacity: items.eraserMode ? eraserOpacity : toolOpacity
+        property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
 
         function drawRadialGradient() {
             var newPoint = canvasInput.savePoint()
@@ -257,7 +257,7 @@ Item {
             gradient.addColorStop(0, items.colorStop1)
             gradient.addColorStop(1, items.colorStop2)
             tempCanvas.ctx.fillStyle = gradient;
-            tempCanvas.ctx.fillRect(canvasInput.currentPoint.x - radiusSize, canvasInput.currentPoint.y - radiusSize, actualBrushSize, actualBrushSize)
+            tempCanvas.ctx.fillRect(canvasInput.currentPoint.x - radiusSize, canvasInput.currentPoint.y - radiusSize, actualToolSize, actualToolSize)
             tempCanvas.requestPaint()
         }
 
@@ -286,37 +286,37 @@ Item {
 
     Item {
         id: sketchBrush
-        // note: brushSize range between 1 and 10
+        // note: toolSize range between 1 and 10
         property var connectedPoints: []
-        property int distance: 1000 * actualBrushSize
+        property int distance: 1000 * actualToolSize
 
-        property real brushOpacity: 0.5
-        property real defaultBrushOpacity: 0.5
-        property real brushSize: 2
-        property real defaultBrushSize: 2
-        property real minBrushSize: 1
-        property real maxBrushSize: 10
+        property real toolOpacity: 0.5
+        property real defaultToolOpacity: 0.5
+        property int toolSize: 2
+        property int defaultToolSize: 2
+        property int minToolSize: 1
+        property int maxToolSize: 10
         property int sizeSliderStepSize: 1
-        property real radiusSize: actualBrushSize * 0.5
+        property real radiusSize: actualToolSize * 0.5
         property int timerInterval: 15
         // NOTE: don't go below 0.05, else it can produce huge color deviations with accumulations...
-        property real density: (items.eraserMode ? eraserDensity : brushDensity) * 0.05
-        property int brushDensity: 5
-        property int defaultBrushDensity: 5
+        property real density: (items.eraserMode ? eraserDensity : toolDensity) * 0.05
+        property int toolDensity: 5
+        property int defaultToolDensity: 5
 
         // eraserMode
-        property real eraserBrushOpacity: 1
-        property real defaultEraserBrushOpacity: 1
-        property real eraserBrushSize: 2
-        property real defaultEraserBrushSize: 2
+        property real eraserOpacity: 1
+        property real defaultEraserOpacity: 1
+        property int eraserSize: 2
+        property int defaultEraserSize: 2
         property int eraserDensity: 10
         property int defaultEraserDensity: 10
 
-        property real actualBrushOpacity: items.eraserMode ? eraserBrushOpacity : brushOpacity
-        property real actualBrushSize: (items.eraserMode ? eraserBrushSize : brushSize) / items.devicePixelRatio
+        property real actualToolOpacity: items.eraserMode ? eraserOpacity : toolOpacity
+        property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
 
         function modeInit() {
-            tempCanvas.ctx.lineWidth = actualBrushSize
+            tempCanvas.ctx.lineWidth = actualToolSize
             brushTool.defaultModeInit()
             tempCanvas.ctx.globalAlpha = density
             connectedPoints = []
@@ -386,44 +386,44 @@ Item {
     Item {
         id: sprayBrush
         // settings: brush size, opacity, speed, circles (dots) size
-        // note: brushSize range between 10 and 300 (actual radius is * 2...)
-        property real brushOpacity: 0.5
-        property real defaultBrushOpacity: 0.5
-        property real brushSize: 150
-        property real defaultBrushSize: 150
-        property real minBrushSize: 10
-        property real maxBrushSize: 300
+        // note: toolSize range between 10 and 300 (actual radius is * 2...)
+        property real toolOpacity: 0.5
+        property real defaultToolOpacity: 0.5
+        property int toolSize: 150
+        property int defaultToolSize: 150
+        property int minToolSize: 10
+        property int maxToolSize: 300
         property int sizeSliderStepSize: 10
-        property real radiusSize: actualBrushSize * 0.5
-        property int timerInterval: 300 / (items.eraserMode ? eraserSpeed : speed)
-        property int speed: 3
-        property int defaultSpeed: 3
+        property real radiusSize: actualToolSize * 0.5
+        property int timerInterval: 300 / (items.eraserMode ? eraserSpeed : toolSpeed)
+        property int toolSpeed: 3
+        property int defaultToolSpeed: 3
         property int dotsSize: 3
         property int defaultDotsSize: 3
 
         // eraserMode
-        property real eraserBrushOpacity: 1
-        property real defaultEraserBrushOpacity: 1
-        property real eraserBrushSize: 150
-        property real defaultEraserBrushSize: 150
+        property real eraserOpacity: 1
+        property real defaultEraserOpacity: 1
+        property int eraserSize: 150
+        property int defaultEraserSize: 150
         property int eraserSpeed: 3
         property int defaultEraserSpeed: 3
         property int eraserDotsSize: 3
         property int defaultEraserDotsSize: 3
 
-        property real actualBrushOpacity: items.eraserMode ? eraserBrushOpacity : brushOpacity
-        property real actualBrushSize: (items.eraserMode ? eraserBrushSize : brushSize) / items.devicePixelRatio
+        property real actualToolOpacity: items.eraserMode ? eraserOpacity : toolOpacity
+        property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
         property real actualDotsSize: (items.eraserMode ? eraserDotsSize : dotsSize) / items.devicePixelRatio
 
-        property int numberOfParticles: (actualBrushSize * actualBrushSize) / 100
+        property int numberOfParticles: (actualToolSize * actualToolSize) / 100
         property real dotsRadius: actualDotsSize * 0.5
         property real pixelSize: 1 / items.devicePixelRatio
-        property real toolSizeSquare: Math.pow(actualBrushSize, 2)
+        property real toolSizeSquare: Math.pow(actualToolSize, 2)
 
         function sprayPixels() {
             canvasInput.currentPoint = canvasInput.savePoint()
             for(var i = numberOfParticles; i--; i > 0) {
-                var radius = actualBrushSize
+                var radius = actualToolSize
                 var offsetX = brushTool.getRandomInt(-radius, radius);
                 var offsetY = brushTool.getRandomInt(-radius, radius);
                 if(Math.pow(offsetX, 2) + Math.pow(offsetY, 2) <= toolSizeSquare) {
@@ -437,7 +437,7 @@ Item {
             canvasInput.currentPoint = canvasInput.savePoint()
             tempCanvas.ctx.beginPath()
             for(var i = numberOfParticles; i--; i > 0) {
-                var radius = actualBrushSize
+                var radius = actualToolSize
                 var offsetX = brushTool.getRandomInt(-radius, radius);
                 var offsetY = brushTool.getRandomInt(-radius, radius);
                 if(Math.pow(offsetX, 2) + Math.pow(offsetY, 2) <= toolSizeSquare) {
@@ -474,28 +474,28 @@ Item {
     Item {
         id: circlesBrush
         // note: toolSize range between 5 and 150
-        property real brushOpacity: 0.5
-        property real defaultBrushOpacity: 0.5
-        property real brushSize: 50
-        property real defaultBrushSize: 50
-        property int minBrushSize: 5
-        property int maxBrushSize: 150
+        property real toolOpacity: 0.5
+        property real defaultToolOpacity: 0.5
+        property int toolSize: 50
+        property int defaultToolSize: 50
+        property int minToolSize: 5
+        property int maxToolSize: 150
         property int sizeSliderStepSize: 5
-        property real radiusSize: actualBrushSize * 0.5
-        property int timerInterval: 300 / (items.eraserMode ? eraserSpeed : speed)
-        property int speed: 10
-        property int defaultSpeed: 10
+        property real radiusSize: actualToolSize * 0.5
+        property int timerInterval: 300 / (items.eraserMode ? eraserSpeed : toolSpeed)
+        property int toolSpeed: 10
+        property int defaultToolSpeed: 10
 
         // eraserMode
-        property real eraserBrushOpacity: 1
-        property real defaultEraserBrushOpacity: 1
-        property real eraserBrushSize: 50
-        property real defaultEraserBrushSize: 50
+        property real eraserOpacity: 1
+        property real defaultEraserOpacity: 1
+        property int eraserSize: 50
+        property int defaultEraserSize: 50
         property int eraserSpeed: 10
         property int defaultEraserSpeed: 10
 
-        property real actualBrushOpacity: items.eraserMode ? eraserBrushOpacity : brushOpacity
-        property real actualBrushSize: (items.eraserMode ? eraserBrushSize : brushSize) / items.devicePixelRatio
+        property real actualToolOpacity: items.eraserMode ? eraserOpacity : toolOpacity
+        property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
 
         function drawCircle() {
             canvasInput.currentPoint = canvasInput.savePoint()
@@ -512,8 +512,8 @@ Item {
             tempCanvas.ctx.lineCap = tempCanvas.ctx.lineJoin = "round"
             tempCanvas.ctx.strokeStyle = Qt.rgba(1,1,1,1)
             tempCanvas.ctx.fillStyle = items.foregroundColor
-            tempCanvas.ctx.globalAlpha = actualBrushOpacity
-            tempCanvas.opacity = selectedMode.actualBrushOpacity
+            tempCanvas.ctx.globalAlpha = actualToolOpacity
+            tempCanvas.opacity = selectedMode.actualToolOpacity
         }
 
         function start() {

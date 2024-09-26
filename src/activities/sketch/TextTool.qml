@@ -9,7 +9,7 @@ import QtQuick
 
 Item {
     id: textTool
-
+    property alias selectedMode: textTool
     property bool usePositionChanged: true
     property string textString: ""
 
@@ -17,8 +17,13 @@ Item {
     property real defaultToolOpacity: 1
     property int toolRotation: 0
     property int defaultToolRotation: 0
+    property int maxToolRotation: 360
+    property int rotationSliderStepSize: 15
     property int toolSize: 20
     property int defaultToolSize: 20
+    property int minToolSize: 10
+    property int maxToolSize: 100
+    property int sizeSliderStepSize: 1
 
 
     function toolInit() {

@@ -19,6 +19,8 @@ Item {
     property alias radialGradient: radialGradient
     property alias invertedRadialGradient: invertedRadialGradient
 
+    property string radiusString: qsTr("Inner Circle Size")
+
     onSelectedModeChanged: {
         if(tempCanvas.ctx)
             toolInit()
@@ -59,8 +61,8 @@ Item {
         } else {
             radialGradientFill.centerX = canvasInput.lastPoint.x
             radialGradientFill.centerY = canvasInput.lastPoint.y
-            radialGradientFill.focalRadius = selectedMode.focalRadius / items.devicePixelRatio
-            radialGradientFill.centerRadius = selectedMode.focalRadius / items.devicePixelRatio
+            radialGradientFill.focalRadius = selectedMode.toolRadius / items.devicePixelRatio
+            radialGradientFill.centerRadius = selectedMode.toolRadius / items.devicePixelRatio
             gradientShapePath.fillGradient = radialGradientFill
         }
     }
@@ -121,8 +123,9 @@ Item {
         id: radialGradient
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property real focalRadius: 1
-        property real defaultFocalRadius: 1
+        property int toolRadius: 1
+        property int defaultToolRadius: 1
+        property int maxToolRadius: 300
 
         function modeInit() {
             gradientTool.defaultModeInit()
@@ -145,8 +148,9 @@ Item {
         id: invertedRadialGradient
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property real focalRadius: 1
-        property real defaultFocalRadius: 1
+        property int toolRadius: 1
+        property int defaultToolRadius: 1
+        property int maxToolRadius: 300
 
         function modeInit() {
             gradientTool.defaultModeInit()

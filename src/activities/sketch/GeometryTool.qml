@@ -19,6 +19,8 @@ Item {
     property alias freeLineMode: freeLineMode
     property alias hortoLineMode: hortoLineMode
 
+    property string radiusString: qsTr("Rounded Corners")
+
     onSelectedModeChanged: {
         if(tempCanvas.ctx)
             selectedMode.modeInit()
@@ -43,7 +45,7 @@ Item {
     function defaultModeInit() {
         tempCanvas.opacity = selectedMode.toolOpacity
         geometryShape.radius = selectedMode.radius / items.devicePixelRatio
-        geometryShape.rotation = selectedMode.toolRotation
+        geometryShape.rotation = selectedMode.toolRotation ? selectedMode.toolRotation : 0
     }
 
     function defaultStart() {
@@ -75,10 +77,13 @@ Item {
         id: rectangleMode
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property int radius: 0
-        property int defaultRadius: 0
-        property real toolRotation: 0
-        property real defaultToolRotation: 0
+        property int toolRadius: 0
+        property int defaultToolRadius: 0
+        property int maxToolRadius: 100
+        property int toolRotation: 0
+        property int defaultToolRotation: 0
+        property int maxToolRotation: 180
+        property int rotationSliderStepSize: 5
 
         function modeInit() {
             geometryTool.defaultModeInit()
@@ -102,10 +107,13 @@ Item {
         id: squareMode
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property int radius: 0
-        property int defaultRadius: 0
-        property real toolRotation: 0
-        property real defaultToolRotation: 0
+        property int toolRadius: 0
+        property int defaultToolRadius: 0
+        property int maxToolRadius: 100
+        property int toolRotation: 0
+        property int defaultToolRotation: 0
+        property int maxToolRotation: 180
+        property int rotationSliderStepSize: 5
 
         function modeInit() {
             geometryTool.defaultModeInit()
@@ -144,8 +152,10 @@ Item {
         id: ovalMode
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property real toolRotation: 0
-        property real defaultToolRotation: 0
+        property int toolRotation: 0
+        property int defaultToolRotation: 0
+        property int maxToolRotation: 180
+        property int rotationSliderStepSize: 5
 
         function modeInit() {
             tempCanvas.opacity = selectedMode.toolOpacity
@@ -187,7 +197,6 @@ Item {
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
         property int radius: 0
-        property real toolRotation: 0
 
         function modeInit() {
             geometryTool.defaultModeInit()
@@ -226,14 +235,16 @@ Item {
         id: freeLineMode
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-
-        property int lineWidth: 2
-        property int defaultLineWidth: 2
-        property real actualLineWidth: lineWidth / items.devicePixelRatio
+        property int toolSize: 2
+        property int defaultToolSize: 2
+        property int minToolSize: 1
+        property int maxToolSize: 100
+        property int sizeSliderStepSize: 1
+        property real actualToolSize: toolSize / items.devicePixelRatio
 
         function modeInit() {
             tempCanvas.opacity = selectedMode.toolOpacity
-            lineShapePath.strokeWidth = actualLineWidth
+            lineShapePath.strokeWidth = actualToolSize
         }
 
         function start() {
@@ -260,14 +271,16 @@ Item {
         id: hortoLineMode
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-
-        property int lineWidth: 2
-        property int defaultLineWidth: 2
-        property real actualLineWidth: lineWidth / items.devicePixelRatio
+        property int toolSize: 2
+        property int defaultToolSize: 2
+        property int minToolSize: 1
+        property int maxToolSize: 100
+        property int sizeSliderStepSize: 1
+        property real actualToolSize: toolSize / items.devicePixelRatio
 
         function modeInit() {
             tempCanvas.opacity = selectedMode.toolOpacity
-            lineShapePath.strokeWidth = actualLineWidth
+            lineShapePath.strokeWidth = actualToolSize
         }
 
         function start() {

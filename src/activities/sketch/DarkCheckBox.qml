@@ -15,25 +15,25 @@ CheckBox {
 
     focusPolicy: Qt.NoFocus
 
+    property string labelText: ""
+
     indicator: Image {
-        sourceSize.height: checkBox.height
+        sourceSize.height: checkBox.height * 0.8
         anchors.right: checkBox.right
+        anchors.verticalCenter: parent.verticalCenter
         anchors.margins: items.baseMargins
         source:
         checkBox.checked ? "qrc:/gcompris/src/core/resource/apply_white.svg" :
         "qrc:/gcompris/src/core/resource/cancel_white.svg"
     }
-    contentItem: GCText {
+    GCText {
         color: items.contentColor
         anchors.right: indicator.left
         anchors.rightMargin: items.baseMargins
         anchors.left: checkBox.left
-        anchors.top: undefined
-        anchors.bottom: undefined
         anchors.verticalCenter: checkBox.verticalCenter
         height: checkBox.height * 0.5
-        width: checkBox.width - indicator.width - items.baseMargins * 2
-        text: checkBox.text
+        text: checkBox.labelText
         fontSize: regularSize
         fontSizeMode: Text.Fit
         verticalAlignment: Text.AlignVCenter

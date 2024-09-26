@@ -9,7 +9,7 @@ import QtQuick
 
 Item {
     id: stampTool
-
+    property alias selectedMode: stampTool
     property bool usePositionChanged: true
     property int selectedStampIndex: 0
 
@@ -17,12 +17,15 @@ Item {
     property real defaultToolOpacity: 1
     property int toolRotation: 0
     property int defaultToolRotation: 0
-    property int toolSize: 100
-    property int defaultToolSize: 100
+    property int maxToolRotation: 360
+    property int rotationSliderStepSize: 15
+    property int toolSize: 200
+    property int defaultToolSize: 200
+    property int minToolSize: 20
+    property int maxToolSize: 500
+    property int sizeSliderStepSize: 10
     property real actualToolSize: toolSize / items.devicePixelRatio
     property bool toolMirror: false
-    property bool defaultToolMirror: false
-
 
     property list<string> stamps: [
         "qrc:/gcompris/src/activities/babymatch/resource/images/star.svg",
