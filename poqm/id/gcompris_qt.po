@@ -1,3 +1,6 @@
+# Indonesian translation of GCompris
+#
+#
 # Sokibi <istanalinux@gmail.com>, 2017-2021.
 # Iwan S. Tahari <iwantahari@gmail.com>,2017-2021.
 # Ahmad Haris <ahmadharis1982@gmail.com>, 2017, 2021.
@@ -18,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-id\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-09-16 10:02\n"
+"PO-Revision-Date: 2023-05-28 11:36+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
 "Language: id\n"
@@ -31,8 +34,8 @@ msgstr ""
 "X-Crowdin-Project: gcompris-id\n"
 "X-Crowdin-Project-ID: 481873\n"
 "X-Crowdin-Language: id\n"
-"X-Crowdin-File: /gcompris-id/4.2/gcompris_qt.po\n"
-"X-Crowdin-File-ID: 106\n"
+"X-Crowdin-File: /gcompris-id/3.0/gcompris_qt.po\n"
+"X-Crowdin-File-ID: 59\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -141,7 +144,7 @@ msgstr "Temukan angka antara -10 dan -1."
 #: activities/adjacent_numbers/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Temukan angka antara -10 dan 10."
+msgstr "Temukan angka antara -10 dan -10."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:53
 msgctxt "Data|"
@@ -1253,7 +1256,7 @@ msgstr "Penjumlahan dengan angka hingga 15."
 #: activities/algebra_plus/resource/13/Data.qml:13
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Penjumlahan dengan hasil hingga 100."
+msgstr "Penjumlahan dengan angka hingga 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -6057,7 +6060,7 @@ msgstr ""
 "membandingkannya output dengan nilai 3. Output pertama adalah 1 jika A < B, "
 "jika tidak maka hasilnya 0. Output kedua adalah 1 jika A = B, jika tidak "
 "maka hasilnya 0. Output ketiga adalah 1 jika A > B, jika tidak maka hasilnya "
-"0. "
+"0."
 
 #: activities/digital_electricity/components/DigitalLight.qml:20
 msgctxt "DigitalLight|"
@@ -14417,17 +14420,17 @@ msgstr "Garis bertingkat untuk menemukan antara 1 dan 10."
 #: activities/graduated_line_use/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 20."
-msgstr "Garis bertingkat untuk menemukan antara 0 dan 20."
+msgstr "Garis bertingkat untuk menemukan antara 1 dan 20."
 
 #: activities/graduated_line_use/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 50."
-msgstr "Garis bertingkat untuk menemukan antara 0 dan 50."
+msgstr "Garis bertingkat untuk menemukan antara 1 dan 50."
 
 #: activities/graduated_line_use/resource/6/Data.qml:9
 msgctxt "Data|"
 msgid "Graduation to find between 0 and 100."
-msgstr "Garis bertingkat untuk menemukan antara 0 dan 100."
+msgstr "Garis bertingkat untuk menemukan antara 1 dan 100."
 
 #: activities/graduated_line_use/resource/7/Data.qml:9
 msgctxt "Data|"
@@ -26240,7 +26243,7 @@ msgstr "Suara baru untuk Nynorsk Norwegia"
 #: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
-msgstr "Terjemahan ditambahkan untuk bahasa Breton, Ceko, dan Makedonia"
+msgstr "Terjemahan ditambahkan untuk bahasa Breton, Ceko, dan Makedonia."
 
 #: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
@@ -26507,7 +26510,7 @@ msgid "translator-credits"
 msgstr ""
 "Sokibi &lt;istanalinux@gmail.com&gt;, (2017-2022).\n"
 "Iwan S. Tahari &lt;iwantahari@gmail.com&gt;, (2017-2021).\n"
-"Ahmad Haris &lt;ahmadharis1982@gmail.com&gt;, (2017, 2024).\n"
+"Ahmad Haris &lt;ahmadharis1982@gmail.com&gt;, (2017, 2021).\n"
 "Ahmad Rasyid Salim &lt;ahmadrasyidsalim@outlook.com&gt;, (2017).\n"
 "Aris Winardi &lt;ariswinardy@gmail.com&gt;, (2017).\n"
 "Cahaya Maulidian &lt;winluxhuman@gmail.com&gt;, (2017, 2020).\n"
