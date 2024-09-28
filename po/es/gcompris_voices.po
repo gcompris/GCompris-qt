@@ -4,7 +4,7 @@
 #
 # Automatically generated, 2017.
 # SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Eloy Cuadra <ecuadra@eloihr.net>
-# Antoni Bella Pérez <antonibella5@yahoo.com>, 2018.
+# SPDX-FileCopyrightText: 2018 Antoni Bella Pérez <antonibella5@yahoo.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
