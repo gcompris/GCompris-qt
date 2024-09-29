@@ -55,6 +55,8 @@ public:
         m_startingLevel = startingLevel;
     }
 
+    void initialize(QQmlEngine *engine);
+
 protected:
     static ActivityInfoTree *m_instance;
 
@@ -91,7 +93,6 @@ private:
     QString m_startingActivity;
     int m_startingLevel = -1;
 
-    void initialize(QQmlEngine *engine);
     static QList<ActivityInfo>::size_type menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
 

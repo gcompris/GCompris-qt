@@ -17,11 +17,37 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QSettings>
+#include <QSplashScreen>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
+
+#include <QPainter>
+
+class SplashScreen: public QSplashScreen {
+public:
+    SplashScreen(const QPixmap &pixmap = QPixmap()) : QSplashScreen(pixmap, Qt::WindowStaysOnTopHint) {
+        QImage bg(logo);
+        bg.fill(Qt::blue);
+        QPixmap background;
+        background.convertFromImage(bg);
+        setPixmap(background);
+    }
+
+    void drawContents(QPainter *painter) {
+        painter->drawImage(0, 0, logo);
+
+        qDebug() << "paint";
+
+        painter->drawPixmap((logo.width() - loading.width()) / 2, 0, loading);
+        QSplashScreen::drawContents(painter);
+    }
+private:
+    QImage logo = QImage(QStringLiteral(":/gcompris/src/core/resource/gcompris-logo-full.svg"));
+    QPixmap loading = QPixmap::fromImage(QImage(QStringLiteral(":/gcompris/src/core/resource/loading.svg")));
+};
 
 int main(int argc, char *argv[])
 {
@@ -131,6 +157,10 @@ int main(int argc, char *argv[])
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
     ActivityInfoTree::registerResources();
+
+    SplashScreen splash;
+    //splash.show();
+    //QCoreApplication::processEvents();
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
@@ -255,6 +285,32 @@ int main(int argc, char *argv[])
 
     // We load the main file after checking for box2d to avoid computing multiple times the menu
     engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));
+    QObject *topLevel = engine.rootObjects().value(0);
+
+    QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
+    if (window == nullptr) {
+        qWarning("Error: Your root item has to be a Window.");
+        return -1;
+    }
+    ApplicationInfo::setWindow(window);
+
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+
+#if __ANDROID__
+    window->showMaximized();
+#else
+    if (isFullscreen) {
+        window->showFullScreen();
+    }
+    else {
+        window->show();
+    }
+#endif
+
+    // To force the refresh of the splash screen in the window
+    QCoreApplication::processEvents();
+
+    ActivityInfoTree::getInstance()->initialize(&engine);
 
     if (parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
@@ -299,28 +355,6 @@ int main(int argc, char *argv[])
             return -1;
         }
     }
-
-    QObject *topLevel = engine.rootObjects().value(0);
-
-    QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
-    if (window == nullptr) {
-        qWarning("Error: Your root item has to be a Window.");
-        return -1;
-    }
-    ApplicationInfo::setWindow(window);
-
-    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
-
-#if __ANDROID__
-    window->showMaximized();
-#else
-    if (isFullscreen) {
-        window->showFullScreen();
-    }
-    else {
-        window->show();
-    }
-#endif
 
     return app.exec();
 }

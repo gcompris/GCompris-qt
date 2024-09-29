@@ -316,6 +316,7 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
     QString startingActivity = m_startingActivity;
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
+        qDebug() << "load " << url;
 #ifdef WITH_RCC
         if (!QResource::registerResource(
                 ApplicationInfo::getFilePath(line + ".rcc")))
@@ -337,6 +338,7 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
         else {
             qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
         }
+        QCoreApplication::processEvents();
     }
 
     // In case we have asked for a specific activity to start but the activity does not exist, we reinitialise the value
@@ -356,7 +358,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     Q_UNUSED(scriptEngine)
 
     ActivityInfoTree *menuTree = getInstance();
-    menuTree->initialize(engine);
+    //menuTree->initialize(engine);
     return menuTree;
 }
 
