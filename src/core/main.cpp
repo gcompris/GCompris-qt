@@ -255,6 +255,27 @@ int main(int argc, char *argv[])
 
     // We load the main file after checking for box2d to avoid computing multiple times the menu
     engine.load(QUrl("qrc:/gcompris/src/core/main.qml"));
+    QObject *topLevel = engine.rootObjects().value(0);
+
+    QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
+    if (window == nullptr) {
+        qWarning("Error: Your root item has to be a Window.");
+        return -1;
+    }
+    ApplicationInfo::setWindow(window);
+
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+
+#if !__ANDROID__
+    if (isFullscreen) {
+        window->showFullScreen();
+    }
+    else {
+        window->show();
+    }
+#endif
+
+    ActivityInfoTree::getInstance()->initialize(&engine);
 
     if (parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree *>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
@@ -300,26 +321,10 @@ int main(int argc, char *argv[])
         }
     }
 
-    QObject *topLevel = engine.rootObjects().value(0);
-
-    QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
-    if (window == nullptr) {
-        qWarning("Error: Your root item has to be a Window.");
-        return -1;
-    }
-    ApplicationInfo::setWindow(window);
-
-    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+    topLevel->setProperty("activitiesLoaded", true);
 
 #if __ANDROID__
     window->showMaximized();
-#else
-    if (isFullscreen) {
-        window->showFullScreen();
-    }
-    else {
-        window->show();
-    }
 #endif
 
     return app.exec();

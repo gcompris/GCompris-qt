@@ -44,8 +44,6 @@ public:
     void setCurrentActivity(ActivityInfo *currentActivity);
     ActivityInfo *getCurrentActivity() const;
     void menuTreeAppend(ActivityInfo *menu);
-    void menuTreeAppend(QQmlEngine *engine,
-                        const QDir &menuDir, const QString &menuFile);
     void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 
@@ -54,6 +52,8 @@ public:
         m_startingActivity = startingActivity;
         m_startingLevel = startingLevel;
     }
+
+    void initialize(QQmlEngine *engine);
 
 protected:
     static ActivityInfoTree *m_instance;
@@ -91,7 +91,6 @@ private:
     QString m_startingActivity;
     int m_startingLevel = -1;
 
-    void initialize(QQmlEngine *engine);
     static QList<ActivityInfo>::size_type menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, QList<ActivityInfo>::size_type index);
 

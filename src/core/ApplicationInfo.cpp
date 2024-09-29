@@ -291,14 +291,16 @@ bool ApplicationInfo::loadAndroidTranslation(const QString &locale)
 {
     QFile file("assets:/share/GCompris/gcompris_" + locale + ".qm");
 
+    if (!file.exists()) {
+        qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
+        return false;
+    }
+
     file.open(QIODevice::ReadOnly);
     QDataStream in(&file);
 
     qint64 fileSize = file.size();
     uchar *data = (uchar *)malloc(fileSize);
-
-    if (!file.exists())
-        qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
 
     in.readRawData((char *)data, fileSize);
 

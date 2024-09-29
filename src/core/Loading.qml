@@ -56,8 +56,8 @@ Item {
      * Start the loading overlay.
      */
     function start() {
-        greyRectangle.visible = (ActivityInfoTree.startingActivity === "")
-        visible = true;
+        // We don't display the Loading if we are starting an activity in command-line, the loading will be handled by the splash screen in main.qml
+        visible = (ActivityInfoTree.startingActivity === "");
         active = true;
     }
 
