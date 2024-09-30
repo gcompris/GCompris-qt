@@ -19,6 +19,7 @@ var undo = [];
 var redo = [];
 
 var backgroundImageSet = [
+    "qrc:/gcompris/src/core/resource/cancel_white.svg",
     "qrc:/gcompris/src/activities/photo_hunter/resource/photo1.svg",
     "qrc:/gcompris/src/activities/photo_hunter/resource/photo2.svg",
     "qrc:/gcompris/src/activities/photo_hunter/resource/photo3.svg",
@@ -28,22 +29,50 @@ var backgroundImageSet = [
     "qrc:/gcompris/src/activities/photo_hunter/resource/photo7.svg",
     "qrc:/gcompris/src/activities/photo_hunter/resource/photo8.svg",
     "qrc:/gcompris/src/activities/photo_hunter/resource/photo9.svg",
-    "qrc:/gcompris/src/activities/photo_hunter/resource/photo10.svg"
+    "qrc:/gcompris/src/activities/photo_hunter/resource/photo10.svg",
+    "qrc:/gcompris/src/activities/algebra_by/resource/background.svg",
+    "qrc:/gcompris/src/activities/align4_2players/resource/background.svg",
+    "qrc:/gcompris/src/activities/bargame/resource/background.svg",
+    "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg",
+    "qrc:/gcompris/src/activities/categorization/resource/background.svg",
+    "qrc:/gcompris/src/activities/click_on_letter/resource/background.svg",
+    "qrc:/gcompris/src/activities/color_mix/resource/background.svg",
+    "qrc:/gcompris/src/activities/colors/resource/background.svg",
+    "qrc:/gcompris/src/activities/crane/resource/background.svg",
+    "qrc:/gcompris/src/activities/enumerate/resource/background.svg",
+    "qrc:/gcompris/src/activities/family/resource/background.svg",
+    "qrc:/gcompris/src/activities/followline/resource/background.svg",
+    "qrc:/gcompris/src/activities/football/resource/background.svg",
+    "qrc:/gcompris/src/activities/gletters/resource/background.svg",
+    "qrc:/gcompris/src/activities/hangman/resource/background.svg",
+    "qrc:/gcompris/src/activities/hanoi_real/resource/background.svg",
+    "qrc:/gcompris/src/activities/instruments/resource/background.svg",
+    "qrc:/gcompris/src/activities/land_safe/resource/background.svg",
+    "qrc:/gcompris/src/activities/magic-hat-minus/resource/background.svg",
+    "qrc:/gcompris/src/activities/menu/resource/background.svg",
+    "qrc:/gcompris/src/activities/missing-letter/resource/background.svg",
+    "qrc:/gcompris/src/activities/mosaic/resource/background.svg",
+    "qrc:/gcompris/src/activities/redraw/resource/background.svg",
+    "qrc:/gcompris/src/activities/scalesboard/resource/background.svg",
+    "qrc:/gcompris/src/activities/smallnumbers/resource/background.svg",
+    "qrc:/gcompris/src/activities/smallnumbers2/resource/background.svg",
+    "qrc:/gcompris/src/activities/submarine/resource/background.svg",
+    "qrc:/gcompris/src/activities/sudoku/resource/background.svg",
+    "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg",
+    "qrc:/gcompris/src/activities/wordsgame/resource/background.svg",
+    "qrc:/gcompris/src/activities/color_mix/resource/background2.svg"
     ]
 
-var extensions = ["*.svg", "*.png", "*.jpg", "*.jpeg", "*.webp"];
-
-var savedImages = [];
+var imageToLoad = "";
 
 function start(items_) {
     items = items_;
     currentLevel = 0;
     initLevel();
-    // items.foldablePanels.colorUpdate();
 }
 
 function stop() {
-    items.canvasArea.width = items.canvasArea.height = 0
+    items.canvasArea.width = items.canvasArea.height = 0;
 }
 
 function initLevel() {
@@ -51,7 +80,15 @@ function initLevel() {
     resetRedo();
     initCanvas();
     items.canvasArea.init();
+    items.isSaved = true;
     items.canvasLocked = false;
+}
+
+function resetLevel() {
+    items.resetRequested = false
+    items.backgroundColor = Qt.rgba(1,1,1,1);
+    items.backgroundToLoad = ""
+    initLevel();
 }
 
 // set fixed canvas size at init to avoid various bugs...
@@ -61,31 +98,12 @@ function initCanvas() {
     canvasHeight = 2 * parseInt(items.layoutArea.height / 2);
     items.canvasArea.width = canvasWidth;
     items.canvasArea.height = canvasHeight;
-    items.canvasColor.color = items.backgroundColor
+    items.canvasColor.color = items.backgroundColor;
     items.canvasImage.source = "";
     items.tempCanvas.initContext();
     //add empty undo item to restore empty canvas
     items.tempCanvas.paintActionFinished();
 }
-
-
-// function fillCanvas() {
-//     // init white background by default
-//     items.canvasLocked = true;
-//     items.tempCanvas.ctx = items.tempCanvas.getContext("2d");
-//     items.tempCanvas.ctx.globalAlpha = 1;
-//     items.tempCanvas.ctx.fillStyle = "white";
-//     items.tempCanvas.ctx.fillRect(0, 0, canvasWidth, canvasHeight);
-//     items.tempCanvas.requestPaint();
-// }
-
-// function drawUrlImage() {
-//     items.canvas.ctx = items.canvas.getContext("2d");
-//     items.canvas.ctx.globalCompositeOperation = "source-over";
-//     items.canvas.ctx.globalAlpha = 1.0;
-//     items.canvas.loadImage(items.urlImage)
-//     console.log("drawUrlImage called")
-// }
 
 function pushToUndo(undoPath) {
     // push last snapshot png to UNDO stack
@@ -95,10 +113,9 @@ function pushToUndo(undoPath) {
         undo.shift();
     }
     items.undoIndex += 1;
-    if(items.undoIndex > 11)
-        items.undoIndex = 1
-    console.log("undo length is " + undo.length)
-    console.log("undo index is " + items.undoIndex)
+    if(items.undoIndex > 11) {
+        items.undoIndex = 1;
+    }
 }
 
 function resetUndo() {
@@ -120,13 +137,12 @@ function undoAction() {
         items.canvasLocked = true;
         redo.push(undo.pop());
         items.canvasImageSource = undo[undo.length - 1];
-        items.canvasImage.source = items.canvasImageSource
-        items.undoIndex -= 1
-        if(items.undoIndex < 0)
-            items.undoIndex = 10
+        items.canvasImage.source = items.canvasImageSource;
+        items.undoIndex -= 1;
+        if(items.undoIndex < 0) {
+            items.undoIndex = 10;
+        }
         items.canvasLocked = false;
-        console.log("undo length is " + undo.length)
-        console.log("undo index is " + items.undoIndex)
     }
 }
 
@@ -135,10 +151,54 @@ function redoAction() {
         items.scrollSound.play();
         items.canvasLocked = true;
         items.canvasImageSource = redo.pop();
-        items.canvasImage.source = items.canvasImageSource
+        items.canvasImage.source = items.canvasImageSource;
         pushToUndo(items.canvasImageSource);
         items.canvasLocked = false;
     }
 }
 
+function loadImage() {
+    items.canvasImage.source = "";
+    items.loadedImage.sourceSize.width = undefined
+    items.loadedImage.sourceSize.height = undefined
+    items.loadedImage.source = imageToLoad;
+    imageToLoad = "";
+    items.loadedImage.visible = true;
+    initLevel();
+}
 
+function loadBackground() {
+    items.canvasImage.source = "";
+    items.loadedImage.sourceSize.width = items.loadedImage.width
+    items.loadedImage.sourceSize.height = items.loadedImage.height
+    items.loadedImage.source = items.backgroundToLoad;
+    items.loadedImage.visible = true;
+    initLevel();
+}
+
+function requestNewImage() {
+    if(items.isSaved) {
+        newImage()
+    } else {
+        items.newImageDialog.active = true
+    }
+}
+
+function newImage() {
+    items.backgroundColor = items.newBackgroundColor
+    if(imageToLoad != "") {
+        loadImage();
+    } else if(items.backgroundToLoad != "") {
+        loadBackground();
+    } else {
+        initLevel();
+    }
+}
+
+function saveImageDialog() {
+    items.creationHandler.saveWindow(items.canvasImageSource)
+}
+
+function openImageDialog() {
+    items.creationHandler.loadWindow()
+}

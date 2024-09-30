@@ -54,6 +54,7 @@ Rectangle {
         foldablePanel.isOpen = false
         foldablePanel.isAnimationRunning = false
         foldablePanel.close()
+        items.openPanel = null
         foldablePanel.z = 0
     }
 

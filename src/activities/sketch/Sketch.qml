@@ -53,9 +53,14 @@ ActivityBase {
             property real panelGridY
 
             property bool canvasLocked: true
-            property color selectedForegroundColor: Qt.rgba(0,0,0,1)
+            property bool isSaved: true
+            property bool resetRequested: false
+            property bool homeRequested: false
+            property color selectedForegroundColor: colorsPanel.selectedColor
             property color foregroundColor: eraserMode ? backgroundColor : selectedForegroundColor
             property color backgroundColor: Qt.rgba(1,1,1,1)
+            property color newBackgroundColor: backgroundColorSelector.newBackgroundColor
+            property string backgroundToLoad: ""
             property color colorStop1
             property color colorStop2
             property real selectedAlpha: 0.5
@@ -64,9 +69,12 @@ ActivityBase {
             property alias canvasArea: canvasArea
             property alias canvasColor: canvasColor
             property alias canvasImage: canvasImage
+            property alias loadedImage: loadedImage
             property alias tempCanvas: tempCanvas
             property alias scrollSound: scrollSound
             property alias smudgeSound: smudgeSound
+            property alias newImageDialog: newImageDialog
+            property alias creationHandler: creationHandler
             property color panelColor: "#383838"
             property color contentColor: "#D2D2D2"
             property var canvasImageSource
@@ -99,7 +107,6 @@ ActivityBase {
             // reset saved open panel to isOpen = false, as they close automatically on window size change.
             if(items.openPanel) {
                 items.openPanel.forceClose()
-                items.openPanel = null
             }
         }
 
@@ -117,23 +124,27 @@ ActivityBase {
             Activity.stop()
         }
 
-        // // TO TEST Blending modes...
-        // Keys.onPressed: (event) => {
-        //     if (event.key === Qt.Key_Right) {
-        //         selectNextBlendingMode()
-        //     }
-        // }
-        // property var blendingModes: ["source-atop", "source-in", "source-out", "source-over", "destination-atop", "destination-in", "destination-out", "destination-over", "lighter", "copy", "xor", "qt-clear", "qt-destination", "qt-multiply", "qt-screen", "qt-overlay", "qt-darken", "qt-lighten", "qt-color-dodge", "qt-color-burn", "qt-hard-light", "qt-soft-light", "qt-difference", "qt-exclusion"]
-        // property var selectedBlendingMode: 0
-        // function selectNextBlendingMode() {
-        //     selectedBlendingMode += 1
-        //     if(selectedBlendingMode >= blendingModes.length) {
-        //         selectedBlendingMode = 0;
-        //     }
-        //     tempCanvas.ctx.globalCompositeOperation = blendingModes[selectedBlendingMode]
-        //     console.log("Blending mode is " + blendingModes[selectedBlendingMode])
-        // }
-        // //
+        Keys.onPressed: (event) => {
+            if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Z)) {
+                Activity.undoAction()
+                event.accepted = true
+            } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Y)) {
+                Activity.redoAction()
+                event.accepted = true
+            } else if(event.key === Qt.Key_Delete ||
+                    event.key === Qt.Key_Backspace ||
+                    ((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_N))) {
+                Activity.requestNewImage()
+                event.accepted = true
+            } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_S)) {
+                Activity.saveImageDialog()
+                event.accepted = true
+            } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_O)) {
+                Activity.openImageDialog()
+                event.accepted = true
+            }
+        }
+
 
         GCSoundEffect {
             id: scrollSound
@@ -157,7 +168,12 @@ ActivityBase {
             id: canvasArea
             anchors.centerIn: layoutArea
 
-            property url savePath: "file://" + ApplicationSettings.userDataPath + "/sketch/cache" + items.undoIndex.toString() + ".png"
+            function saveImage(filePath) {
+                canvasArea.grabToImage(function(result) {
+                    result.saveToFile(filePath)
+                }, Qt.size(items.grabWidth, items.grabHeight))
+                items.isSaved = true
+            }
 
             function init() {
                 canvasInput.resetPoints()
@@ -167,6 +183,16 @@ ActivityBase {
             Rectangle {
                 id: canvasColor
                 anchors.fill: parent
+            }
+
+            Image {
+                id: loadedImage
+                anchors.fill: parent
+                fillMode: Image.PreserveAspectFit
+                cache: false
+                smooth: true
+                source: ""
+                visible: false
             }
 
             // The QML Canvas has lots of issues when deviceRatio != 1, especially it can't load images at real pixel size, only device pixel size.
@@ -182,9 +208,9 @@ ActivityBase {
 
                 // After loading canvas result to image, clear Canvas and hide other drawing sources
                 onSourceChanged: {
-                    console.log("source changed")
                     tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
                     tempCanvas.requestPaint()
+                    loadedImage.visible = false
                     geometryShape.visible = false
                     ovalShape.visible = false
                     lineShape.visible = false
@@ -243,8 +269,10 @@ ActivityBase {
                     }
 
                     onPressed: {
-                        if(!items.canvasLocked)
+                        if(!items.canvasLocked) {
+                            items.isSaved = false
                             items.selectedTool.toolStart()
+                        }
                     }
 
                     onReleased: {
@@ -441,8 +469,8 @@ ActivityBase {
         }
 
         // All 3 foldable panels
-        MenuPanel {
-            id: menuPanel
+        FilesPanel {
+            id: filesPanel
         }
 
         ToolsPanel {
@@ -479,7 +507,7 @@ ActivityBase {
                     sourceSize.height: items.buttonSize
                     MouseArea {
                         anchors.fill: parent
-                        // enabled: !items.canvasLocked
+                        enabled: !items.canvasLocked
                         onPressed: parent.scale = 0.9
                         onReleased: parent.scale = 1
                         onClicked: {
@@ -498,7 +526,7 @@ ActivityBase {
                     sourceSize.height: items.buttonSize
                     MouseArea {
                         anchors.fill: parent
-                        // enabled: !items.canvasLocked
+                        enabled: !items.canvasLocked
                         onPressed: parent.scale = 0.9
                         onReleased: parent.scale = 1
                         onClicked: {
@@ -565,6 +593,64 @@ ActivityBase {
 
         ]
 
+        GCCreationHandler {
+            id: creationHandler
+            imageMode: true
+            fileExtensions: ["*.svg", "*.png", "*.jpg", "*.jpeg", "*.webp"]
+            onSaveImage: (filePath) => {
+                canvasArea.saveImage(filePath)
+            }
+            onFileLoaded: (data, filePath) => {
+                Activity.imageToLoad = filePath
+                Activity.requestNewImage()
+            }
+            onClose: {
+                filesPanel.forceClose()
+            }
+        }
+
+        BackgroundSelector {
+            id: backgroundSelector
+            visible: false
+            onClose: home()
+        }
+
+        BackgroundColorSelector {
+            id: backgroundColorSelector
+            visible: false
+            onClose: home()
+        }
+
+        Loader {
+            id: newImageDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: items.homeRequested ?
+                    qsTr("You didn't save this image. Are you sure you want to close this activity?") :
+                    qsTr("Are you sure you want to erase this image?")
+                button1Text: qsTr("Yes")
+                button2Text: qsTr("No")
+                onClose: newImageDialog.active = false
+                onButton1Hit: {
+                    if(items.homeRequested) {
+                        activity.home()
+                    } else if(items.resetRequested) {
+                        Activity.resetLevel()
+                    } else {
+                        Activity.newImage()
+                    }
+                }
+                onButton2Hit: {
+                    Activity.imageToLoad = ""
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: false
+            onStatusChanged: if(status == Loader.Ready) item.start()
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -577,28 +663,20 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
-                activity.home()
-                // saveToFilePrompt.buttonPressed = "home"
-                // if (!items.nothingChanged) {
-                //     saveToFilePrompt.text = qsTr("Do you want to save your painting?")
-                //     saveToFilePrompt.opacity = 1
-                //     saveToFilePrompt.z = 200
-                // } else {
-                //     if (main.x == 0)
-                //         load.opacity = 0
-                //         activity.home()
-                // }
+                if(items.isSaved) {
+                    activity.home()
+                } else {
+                    items.homeRequested = true
+                    newImageDialog.active = true
+                }
             }
             onReloadClicked: {
-                Activity.initLevel()
-                // if (!items.nothingChanged) {
-                //     saveToFilePrompt.buttonPressed = "reload"
-                //     saveToFilePrompt.text = qsTr("Do you want to save your painting before reseting the board?")
-                //     saveToFilePrompt.opacity = 1
-                //     saveToFilePrompt.z = 200
-                // } else {
-                //     Activity.initLevel()
-                // }
+                if(items.isSaved) {
+                    Activity.resetLevel()
+                } else {
+                    items.resetRequested = true
+                    newImageDialog.active = true
+                }
             }
         }
     }

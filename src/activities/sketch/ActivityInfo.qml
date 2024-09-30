@@ -20,14 +20,14 @@ ActivityInfo {
   goal: qsTr("Learn about basic drawing tools.")
   prerequisite: ""
   manual: qsTr("Select tools and colors from the foldable panels and draw images.<br><br>") +
-          qsTr("<b>Keyboard Controls:</b><br>") +
-          qsTr("1. Use Ctrl + Z to undo last changes.<br>") +
-          qsTr("2. Use Ctrl + Y to redo last changes.<br>") +
-          qsTr("3. Use Ctrl + N to erase the drawing.<br>") +
-          qsTr("4. Use Ctrl + S to save the drawing.<br>") +
-          qsTr("5. Use Ctrl + O to load saved drawings.<br>")
+          qsTr("<b>Keyboard controls:") + ("<ul><li>") +
+          qsTr("Ctrl + Z: undo last action") + ("</li><li>") +
+          qsTr("Ctrl + Y: redo last action") + ("</li><li>") +
+          qsTr("Ctrl + S: save the image") + ("</li><li>") +
+          qsTr("Ctrl + O: open an image") + ("</li><li>") +
+          qsTr("Ctrl + N, Delete or Backspace: create a new image") + ("</li></ul>")
   credit: ""
-  section: "discovery arts"
+  section: "discovery arts fun"
   createdInVersion: 250000
   enabled: true // TODO disable if software rendering is used!
 }
