@@ -27,6 +27,13 @@ Rectangle {
     z: 2000
     focus: true
 
+    // used in Sketch activity
+    property bool imageMode: false
+    signal saveImage(var filePath)
+    property var fileExtensions: []
+
+    property string fileToOverwrite: ""
+
     onVisibleChanged: {
         if(visible) {
             creationHandler.forceActiveFocus();
@@ -41,6 +48,7 @@ Rectangle {
 
     signal close
     signal fileLoaded(var data, var filePath)
+
 
     onClose: {
         fileNameInput.focus = false
@@ -61,7 +69,8 @@ Rectangle {
     property bool dialogOpened: false
     readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
-    readonly property string fileSavePath: "file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json"
+    readonly property string fileName: imageMode ? fileNameInput.text + ".png" : fileNameInput.text + ".json"
+    readonly property string fileSavePath: "file://" + sharedDirectoryPath + fileName
 
     ListModel {
         id: fileNames
@@ -97,6 +106,31 @@ Rectangle {
         }
     }
 
+    Timer {
+        id: deleteFileTimer
+        interval: 500
+        onTriggered: {
+            deleteFile();
+        }
+    }
+
+    Timer {
+        id: refreshTimer
+        interval: 500
+        onTriggered: {
+            refreshWindow();
+        }
+    }
+
+    function resetFileToOverwrite() {
+        fileToOverwrite = "";
+    }
+
+    function cancelOverwriteFile() {
+        resetFileToOverwrite();
+        restoreFocusTimer.restart();
+    }
+
     function refreshWindow(filterText) {
         var pathExists = file.exists(sharedDirectoryPath)
         if(!pathExists)
@@ -104,11 +138,20 @@ Rectangle {
 
         fileNames.clear()
 
-        var files = directory.getFiles(sharedDirectoryPath)
+        var files = null
+        if(fileExtensions.length > 0) {
+            files = directory.getFiles(sharedDirectoryPath, fileExtensions)
+        } else {
+            files = directory.getFiles(sharedDirectoryPath)
+        }
         for(var i = 0; i < files.length; i++) {
             if(filterText === undefined || filterText === "" ||
-              (files[i].toLowerCase()).indexOf(filterText) !== -1)
+              (files[i].toLowerCase()).indexOf(filterText) !== -1) {
                 fileNames.append({ "name": files[i] })
+            }
+        }
+        if(fileToOverwrite != "") {
+            resetFileToOverwrite();
         }
     }
 
@@ -121,7 +164,10 @@ Rectangle {
 
     function loadFile(fileName) {
         var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
-        var data = parser.parseFromUrl(filePath)
+        var data = null
+        if(!imageMode) {
+            var data = parser.parseFromUrl(filePath)
+        }
         creationHandler.fileLoaded(data, filePath)
         creationHandler.close()
     }
@@ -160,6 +206,7 @@ Rectangle {
             file.mkpath(sharedDirectoryPath)
 
         if(file.exists(fileSavePath)) {
+            fileToOverwrite = fileName
             replaceFileDialog();
         }
         else
@@ -170,16 +217,27 @@ Rectangle {
         dialogOpened = true;
         Core.showMessageDialog(creationHandler,
                                qsTr("A file with this name already exists. Do you want to replace it?"),
-                               qsTr("Yes"), function() { writeDataTimer.restart(); }, qsTr("No"), function() { restoreFocusTimer.restart(); }, null);
+                               qsTr("Yes"), function() { writeDataTimer.restart(); }, qsTr("No"), function() { cancelOverwriteFile(); }, null);
+    }
+
+    function confirmFileDeleteDialog() {
+        dialogOpened = true;
+        Core.showMessageDialog(creationHandler,
+                               qsTr("Are you sure you want to delete this file?"),
+                               qsTr("Yes"), function() { deleteFileTimer.restart(); }, qsTr("No"), function() { restoreFocusTimer.restart(); }, null);
     }
 
     function writeData() {
         dialogOpened = true;
-        file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
+        if(imageMode) {
+            saveImage(fileSavePath);
+        } else {
+            file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
+        }
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
-                               qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
-        refreshWindow();
+                               qsTr("Ok"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); });
+        refreshTimer.restart();
     }
 
     function searchFiles() {
@@ -225,7 +283,7 @@ Rectangle {
         onClicked: saveFile()
     }
 
-    property real cellWidth: 50 * ApplicationInfo.ratio
+    property real cellWidth: imageMode ? creationsList.width * 0.2 : 50 * ApplicationInfo.ratio
     property real cellHeight: cellWidth * 1.3
 
     Rectangle {
@@ -292,7 +350,11 @@ Rectangle {
                     height: parent.height / 1.5
                     anchors.top: parent.top
                     anchors.topMargin: 3
-                    source: "qrc:/gcompris/src/core/resource/file_icon.svg"
+                    fillMode: Image.PreserveAspectFit
+                    // the empty file is used to make a switch to reload overwritten image
+                    source: creationHandler.imageMode ?
+                        (fileName.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : "file://" + sharedDirectoryPath + fileName.text) :
+                        "qrc:/gcompris/src/core/resource/file_icon.svg"
                 }
 
                 GCText {
@@ -300,12 +362,13 @@ Rectangle {
                     anchors.top: fileIcon.bottom
                     height: parent.height - fileIcon.height - 15
                     width: creationHandler.cellWidth
-                    font.pointSize: tinySize
+                    font.pointSize: regularSize
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     horizontalAlignment: Text.AlignHCenter
-                    // Exclude ".json" while displaying file name
-                    text: name.slice(0, name.length - 5)
+                    // Exclude ".json" while displaying file name if not imageMode
+                    text: creationHandler.imageMode ? name :
+                        name.slice(0, name.length - 5)
                 }
             }
         }
@@ -335,7 +398,7 @@ Rectangle {
             text: qsTr("Delete")
             enabled: viewContainer.selectedFileIndex != -1
             theme: "highContrast"
-            onClicked: deleteFile()
+            onClicked: confirmFileDeleteDialog()
         }
     }
 
@@ -465,7 +528,9 @@ Rectangle {
 
     Keys.onReleased: (event) => {
         if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
-            if(saveButton.visible && !dialogOpened) {
+            if(dialogOpened) {
+                return
+            } else if(saveButton.visible) {
                 saveButton.clicked();
             } else if(buttonRow.visible && viewContainer.selectedFileIndex != -1){
                 loadButton.clicked();
