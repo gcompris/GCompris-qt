@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-17 13:40+0200\n"
+"PO-Revision-Date: 2024-09-30 10:03+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -5486,7 +5486,7 @@ msgid ""
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
 "Pokud jsou některé odpovědi nesprávné, objeví se u daných řádků křížek. "
-"Následně oprav chyby a znovu klepni na tlačítko OK."
+"Následně oprav chyby a znovu vyber tlačítko OK."
 
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -21605,7 +21605,7 @@ msgid ""
 "Function</b> label."
 msgstr ""
 "-Pro <b>přepnutí</b> mezi <b>oblastí Procedura</b> a <b>oblastí Hlavní "
-"funkce</b> za účelem přidání kódu, klepni na popisek <b>Procedura</b> nebo "
+"funkce</b> za účelem přidání kódu, klikni na popisek <b>Procedura</b> nebo "
 "<b>Hlavní funkce</b>."
 
 #: activities/programmingMaze/programmingMaze.js:123
@@ -21629,8 +21629,8 @@ msgid ""
 "area</b> to add your code, click on the <b>Loop</b> or <b>Main Function</b> "
 "label."
 msgstr ""
-"-Pro <b>přepnutí mezi <b>oblastí Smyčka</b> a <b>oblastí Hlavní funkce</b> "
-"za účelem přidání kódu, klepni na popisek <b>Smyčka</b> nebo <b>Hlavní "
+"-Pro <b>přepnutí</b> mezi <b>oblastí Smyčka</b> a <b>oblastí Hlavní funkce</"
+"b> za účelem přidání kódu, klikni na popisek <b>Smyčka</b> nebo <b>Hlavní "
 "funkce</b>."
 
 #: activities/programmingMaze/ProgrammingMaze.qml:203
@@ -26455,32 +26455,24 @@ msgid "Enable the kiosk mode."
 msgstr "Povolit režim kiosku."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
-"Použít softwarové vykreslování namísto OpenGL (pomalejší, ale mělo by "
-"fungovat na jakékoliv grafické kartě)."
+"Použít softwarové vykreslování namísto openGL (pomalejší, ale mělo by "
+"fungovat na každé grafické kartě, potřebuje minimálně Qt 5.8). Zastaralé, "
+"namísto toho použijte --renderer=software."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Použít OpenGL vykreslování namísto softwarového (rychlejší, ale na některých "
-"grafických kartách může působit pády)."
+"grafických kartách může působit pády). Zastaralé, namísto toho použijte --"
+"renderer=software."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
