@@ -32,7 +32,7 @@ Image {
 
     SequentialAnimation {
         id: anim
-        running: true
+        running: cancel.parent.visible
         loops: Animation.Infinite
         NumberAnimation {
             target: cancel
