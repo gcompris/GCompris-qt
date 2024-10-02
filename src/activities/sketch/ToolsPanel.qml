@@ -583,10 +583,10 @@ FoldablePanel {
                     height: toolsPanel.settingsDoubleLineHeight
                     controlsHeight: toolsPanel.settingsLineHeight
                     labelText: qsTr("Smoothing")
-                    from: 1
+                    from: 0
                     to: 5
                     stepSize: 1
-                    value: 2 // NOTE init default values on start (value; others are fixed anyway)
+                    value: 1 // NOTE init default values on start (value; others are fixed anyway)
                     onSliderMoved: {
                         if(items.eraserMode) {
                             items.selectedTool.selectedMode.eraserSmoothing = value
@@ -617,11 +617,9 @@ FoldablePanel {
                     width: toolsPanel.settingsColumnWidth
                     height: toolsPanel.settingsDoubleLineHeight
                     controlsHeight: toolsPanel.settingsLineHeight
-                    //: Rectangle or Square radius size
-                    labelText: qsTr("Rounded Corners")
                     from: 0
                     to: 100
-                    stepSize: 1
+                    stepSize: 5
                     value: 0
                     onSliderMoved: {
                         items.selectedTool.selectedMode.toolRadius = value

@@ -27,32 +27,32 @@ Item {
 
 
     function toolInit() {
-        tempCanvas.opacity = 1
-        textShape.text = textString
-        textShape.rotation = toolRotation
-        textShape.fontSize = toolSize
+        tempCanvas.opacity = 1;
+        textShape.text = textString;
+        textShape.rotation = toolRotation;
+        textShape.fontSize = toolSize;
     }
 
     function placeText() {
-        canvasInput.lastPoint = canvasInput.savePoint()
-        textShape.x = canvasInput.lastPoint.x - tempCanvas.width * 0.5
-        textShape.y = canvasInput.lastPoint.y - tempCanvas.height * 0.5
+        canvasInput.lastPoint = canvasInput.savePoint();
+        textShape.x = canvasInput.lastPoint.x - tempCanvas.width * 0.5;
+        textShape.y = canvasInput.lastPoint.y - tempCanvas.height * 0.5;
     }
 
     function toolStart() {
-        placeText()
-        textShape.opacity = 0.5
-        textShape.visible = true
+        placeText();
+        textShape.opacity = 0.5;
+        textShape.visible = true;
     }
 
     function toolProcess() {
-        placeText()
+        placeText();
     }
 
     function toolStop() {
-        textShape.opacity = toolOpacity
-        canvasInput.resetPoints()
-        tempCanvas.paintActionFinished()
+        textShape.opacity = toolOpacity;
+        canvasInput.resetPoints();
+        tempCanvas.paintActionFinished();
     }
 
 }

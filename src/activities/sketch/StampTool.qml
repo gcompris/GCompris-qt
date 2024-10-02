@@ -103,33 +103,33 @@ Item {
     ]
 
     function toolInit() {
-        tempCanvas.opacity = 1
-        stampImage.source = stamps[selectedStampIndex]
-        stampImage.width = actualToolSize
-        stampImage.rotation = toolRotation
-        stampImage.mirror = toolMirror
+        tempCanvas.opacity = 1;
+        stampImage.source = stamps[selectedStampIndex];
+        stampImage.width = actualToolSize;
+        stampImage.rotation = toolRotation;
+        stampImage.mirror = toolMirror;
     }
 
     function placeImage() {
-        canvasInput.lastPoint = canvasInput.savePoint()
-        stampImage.x = canvasInput.lastPoint.x - actualToolSize * 0.5
-        stampImage.y = canvasInput.lastPoint.y - actualToolSize * 0.5
+        canvasInput.lastPoint = canvasInput.savePoint();
+        stampImage.x = canvasInput.lastPoint.x - actualToolSize * 0.5;
+        stampImage.y = canvasInput.lastPoint.y - actualToolSize * 0.5;
     }
 
     function toolStart() {
-        placeImage()
-        stampImage.opacity = 0.5
-        stampImage.visible = true
+        placeImage();
+        stampImage.opacity = 0.5;
+        stampImage.visible = true;
     }
 
     function toolProcess() {
-        placeImage()
+        placeImage();
     }
 
     function toolStop() {
-        stampImage.opacity = toolOpacity
-        canvasInput.resetPoints()
-        tempCanvas.paintActionFinished()
+        stampImage.opacity = toolOpacity;
+        canvasInput.resetPoints();
+        tempCanvas.paintActionFinished();
     }
 
 }

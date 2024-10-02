@@ -26,7 +26,8 @@ ActivityInfo {
           qsTr("Ctrl + S: save the image") + ("</li><li>") +
           qsTr("Ctrl + O: open an image") + ("</li><li>") +
           qsTr("Ctrl + N, Delete or Backspace: create a new image") + ("</li></ul>")
-  credit: ""
+  credit: qsTr("Brush smoothing concept from:") + " https://lazybrush.dulnan.net/ <br>" +
+          qsTr("Sketch brush concept from:") + " https://mrdoob.com/projects/harmony/ "
   section: "discovery arts fun"
   createdInVersion: 250000
   enabled: true // TODO disable if software rendering is used!

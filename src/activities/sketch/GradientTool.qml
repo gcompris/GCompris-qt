@@ -23,75 +23,75 @@ Item {
 
     onSelectedModeChanged: {
         if(tempCanvas.ctx)
-            toolInit()
+            toolInit();
     }
 
     function drawLinearGradient() {
-        linearGradientFill.x2 = canvasInput.currentPoint.x
-        linearGradientFill.y2 = canvasInput.currentPoint.y
+        linearGradientFill.x2 = canvasInput.currentPoint.x;
+        linearGradientFill.y2 = canvasInput.currentPoint.y;
     }
 
     function drawRadialGradient() {
-        var outsideRadius = Math.sqrt(Math.pow(canvasInput.currentPoint.x - canvasInput.lastPoint.x, 2) + Math.pow(canvasInput.currentPoint.y - canvasInput.lastPoint.y, 2))
-        radialGradientFill.centerRadius = outsideRadius
+        var outsideRadius = Math.sqrt(Math.pow(canvasInput.currentPoint.x - canvasInput.lastPoint.x, 2) +
+                                    Math.pow(canvasInput.currentPoint.y - canvasInput.lastPoint.y, 2));
+        radialGradientFill.centerRadius = outsideRadius;
     }
 
     function toolInit() {
-        tempCanvas.opacity = selectedMode.toolOpacity
-        tempCanvas.ctx.lineCap = tempCanvas.ctx.lineJoin = "round"
-        tempCanvas.ctx.strokeStyle = Qt.rgba(0.5,0.5,0.5,0.5)
-        tempCanvas.ctx.lineWidth = 2 / items.devicePixelRatio
-        tempCanvas.ctx.globalAlpha = 1
-        items.colorStop1 = items.foregroundColor
-        items.colorStop2 = items.foregroundColor
+        tempCanvas.opacity = selectedMode.toolOpacity;
+        tempCanvas.ctx.lineCap = tempCanvas.ctx.lineJoin = "round";
+        tempCanvas.ctx.strokeStyle = Qt.rgba(0.5,0.5,0.5,0.5);
+        tempCanvas.ctx.lineWidth = 2 / items.devicePixelRatio;
+        tempCanvas.ctx.globalAlpha = 1;
+        items.colorStop1 = items.colorStop2 = items.foregroundColor;
         items.colorStop2.a = 0
         if(gradientTool.selectedMode == invertedRadialGradient) {
-            radialGradientFill.isInverted = true
+            radialGradientFill.isInverted = true;
         } else {
-            radialGradientFill.isInverted = false
+            radialGradientFill.isInverted = false;
         }
     }
 
     function toolStart() {
-        canvasInput.lastPoint = canvasInput.savePoint()
+        canvasInput.lastPoint = canvasInput.savePoint();
         if(gradientTool.selectedMode == linearGradient) {
-            linearGradientFill.x1 = linearGradientFill.x2 = canvasInput.lastPoint.x
-            linearGradientFill.y1 = linearGradientFill.y2 = canvasInput.lastPoint.y
-            gradientShapePath.fillGradient = linearGradientFill
+            linearGradientFill.x1 = linearGradientFill.x2 = canvasInput.lastPoint.x;
+            linearGradientFill.y1 = linearGradientFill.y2 = canvasInput.lastPoint.y;
+            gradientShapePath.fillGradient = linearGradientFill;
         } else {
-            radialGradientFill.centerX = canvasInput.lastPoint.x
-            radialGradientFill.centerY = canvasInput.lastPoint.y
-            radialGradientFill.focalRadius = selectedMode.toolRadius / items.devicePixelRatio
-            radialGradientFill.centerRadius = selectedMode.toolRadius / items.devicePixelRatio
-            gradientShapePath.fillGradient = radialGradientFill
+            radialGradientFill.centerX = canvasInput.lastPoint.x;
+            radialGradientFill.centerY = canvasInput.lastPoint.y;
+            radialGradientFill.focalRadius = selectedMode.toolRadius / items.devicePixelRatio;
+            radialGradientFill.centerRadius = selectedMode.toolRadius / items.devicePixelRatio;
+            gradientShapePath.fillGradient = radialGradientFill;
         }
     }
 
     function toolProcess() {
-        var newPoint = canvasInput.savePoint()
+        var newPoint = canvasInput.savePoint();
         if(canvasInput.currentPoint.x == newPoint.x && canvasInput.currentPoint.y == newPoint.y) {
-            return
+            return;
         }
-        canvasInput.currentPoint = newPoint
-        tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
+        canvasInput.currentPoint = newPoint;
+        tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height);
         if(selectedMode.isLinear) {
-            drawLinearGradient()
+            drawLinearGradient();
         } else {
-            drawRadialGradient()
+            drawRadialGradient();
         }
-        tempCanvas.ctx.beginPath()
-        tempCanvas.ctx.moveTo(canvasInput.lastPoint.x, canvasInput.lastPoint.y)
-        tempCanvas.ctx.lineTo(canvasInput.currentPoint.x, canvasInput.currentPoint.y)
-        tempCanvas.ctx.stroke()
-        tempCanvas.requestPaint()
-        gradientShape.visible = true
+        tempCanvas.ctx.beginPath();
+        tempCanvas.ctx.moveTo(canvasInput.lastPoint.x, canvasInput.lastPoint.y);
+        tempCanvas.ctx.lineTo(canvasInput.currentPoint.x, canvasInput.currentPoint.y);
+        tempCanvas.ctx.stroke();
+        tempCanvas.requestPaint();
+        gradientShape.visible = true;
     }
 
     function toolStop() {
-        tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
-        tempCanvas.requestPaint()
-        canvasInput.resetPoints()
-        tempCanvas.paintActionFinished()
+        tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height);
+        tempCanvas.requestPaint();
+        canvasInput.resetPoints();
+        tempCanvas.paintActionFinished();
     }
 
     Item {
@@ -102,19 +102,19 @@ Item {
         property bool isLinear: true
 
         function modeInit() {
-            gradientTool.defaultModeInit()
+            gradientTool.defaultModeInit();
         }
 
         function start() {
-            gradientTool.defaultModeStart()
+            gradientTool.defaultModeStart();
         }
 
         function process() {
-            gradientTool.defaultModeProcess()
+            gradientTool.defaultModeProcess();
         }
 
         function stop() {
-            gradientTool.defaultModeStop()
+            gradientTool.defaultModeStop();
         }
 
     }
@@ -123,24 +123,24 @@ Item {
         id: radialGradient
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property int toolRadius: 1
-        property int defaultToolRadius: 1
+        property int toolRadius: 0
+        property int defaultToolRadius: 0
         property int maxToolRadius: 300
 
         function modeInit() {
-            gradientTool.defaultModeInit()
+            gradientTool.defaultModeInit();
         }
 
         function start() {
-            gradientTool.defaultModeStart()
+            gradientTool.defaultModeStart();
         }
 
         function process() {
-            gradientTool.defaultModeProcess()
+            gradientTool.defaultModeProcess();
         }
 
         function stop() {
-            gradientTool.defaultModeStop()
+            gradientTool.defaultModeStop();
         }
     }
 
@@ -148,24 +148,24 @@ Item {
         id: invertedRadialGradient
         property real toolOpacity: 1
         property real defaultToolOpacity: 1
-        property int toolRadius: 1
-        property int defaultToolRadius: 1
+        property int toolRadius: 0
+        property int defaultToolRadius: 0
         property int maxToolRadius: 300
 
         function modeInit() {
-            gradientTool.defaultModeInit()
+            gradientTool.defaultModeInit();
         }
 
         function start() {
-            gradientTool.defaultModeStart()
+            gradientTool.defaultModeStart();
         }
 
         function process() {
-            gradientTool.defaultModeProcess()
+            gradientTool.defaultModeProcess();
         }
 
         function stop() {
-            gradientTool.defaultModeStop()
+            gradientTool.defaultModeStop();
         }
     }
 

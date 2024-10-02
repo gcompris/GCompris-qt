@@ -53,6 +53,7 @@ ActivityBase {
             property real panelGridY
 
             property bool canvasLocked: true
+            property bool toolStarted: false
             property bool isSaved: true
             property bool resetRequested: false
             property bool homeRequested: false
@@ -272,16 +273,18 @@ ActivityBase {
                         if(!items.canvasLocked) {
                             items.isSaved = false
                             items.selectedTool.toolStart()
+                            items.toolStarted = true
                         }
                     }
 
                     onReleased: {
                         items.canvasLocked = true
                         items.selectedTool.toolStop()
+                        items.toolStarted = false
                     }
 
                     onPositionChanged: {
-                        if(items.selectedTool.usePositionChanged) {
+                        if(items.selectedTool.usePositionChanged && items.toolStarted) {
                             items.selectedTool.toolProcess()
                         }
                     }
