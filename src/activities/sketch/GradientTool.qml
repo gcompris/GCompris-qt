@@ -38,6 +38,7 @@ Item {
     }
 
     function toolInit() {
+        items.outlineCursorRadius = 0;
         tempCanvas.opacity = selectedMode.toolOpacity;
         tempCanvas.ctx.lineCap = tempCanvas.ctx.lineJoin = "round";
         tempCanvas.ctx.strokeStyle = Qt.rgba(0.5,0.5,0.5,0.5);

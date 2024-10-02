@@ -72,6 +72,7 @@ ActivityBase {
             property alias canvasImage: canvasImage
             property alias loadedImage: loadedImage
             property alias tempCanvas: tempCanvas
+            property alias outlineCursorRadius: outlineCursor.radius
             property alias scrollSound: scrollSound
             property alias smudgeSound: smudgeSound
             property alias newImageDialog: newImageDialog
@@ -256,6 +257,7 @@ ActivityBase {
                     id: canvasInput
                     anchors.fill: parent
                     enabled: true
+                    hoverEnabled: true
 
                     property var lastPoint
                     property var midPoint
@@ -439,6 +441,28 @@ ActivityBase {
                     text: ""
                 }
 
+            }
+        }
+
+        Rectangle {
+            id: outlineCursor
+            color: "#00000000"
+            border.color: "#80000000"
+            border.width: 1
+            radius: 0
+            width: 2 * radius
+            height: width
+            visible: canvasInput.containsMouse && radius > 0
+            x: canvasInput.mouseX - radius + canvasArea.x
+            y: canvasInput.mouseY - radius + canvasArea.y
+
+            Rectangle {
+                anchors.fill: parent
+                anchors.margins: 1
+                color: parent.color
+                border.color: "#80FFFFFF"
+                border.width: 1
+                radius: width
             }
         }
 

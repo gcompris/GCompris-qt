@@ -103,6 +103,7 @@ Item {
     ]
 
     function toolInit() {
+        items.outlineCursorRadius = 0;
         tempCanvas.opacity = 1;
         stampImage.source = stamps[selectedStampIndex];
         stampImage.width = actualToolSize;

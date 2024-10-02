@@ -27,6 +27,7 @@ Item {
 
 
     function toolInit() {
+        items.outlineCursorRadius = 0;
         tempCanvas.opacity = 1;
         textShape.text = textString;
         textShape.rotation = toolRotation;

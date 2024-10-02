@@ -180,6 +180,7 @@ Item {
         property int actualPattern: items.eraserMode ? eraserPattern : toolPattern
 
         function modeInit() {
+            items.outlineCursorRadius = Math.max(smoothingRadius, radiusSize);
             tempCanvas.ctx.lineWidth = actualToolSize;
             brushTool.defaultModeInit();
             if(actualPattern > 0) {
@@ -212,7 +213,7 @@ Item {
         property int minToolSize: 1
         property int maxToolSize: 5
         property int sizeSliderStepSize: 1
-        property real radiusSize: toolSize * 0.5
+        property real radiusSize: actualToolSize * 0.5
         property int timerInterval: 15
         property int toolPattern: 0
         property int defaultToolPattern: 0
@@ -236,6 +237,7 @@ Item {
         property int actualPattern: items.eraserMode ? eraserPattern : toolPattern
 
         function modeInit() {
+            items.outlineCursorRadius = Math.max(smoothingRadius, radiusSize);
             tempCanvas.ctx.lineWidth = actualToolSize;
             brushTool.defaultModeInit();
             if(actualPattern > 0) {
@@ -318,6 +320,7 @@ Item {
         }
 
         function modeInit() {
+            items.outlineCursorRadius = radiusSize
             brushTool.defaultModeInit();
             processTimer.interval = timerInterval;
             items.colorStop1 = items.foregroundColor;
@@ -372,6 +375,7 @@ Item {
         property real actualToolSize: (items.eraserMode ? eraserSize : toolSize) / items.devicePixelRatio
 
         function modeInit() {
+            items.outlineCursorRadius = radiusSize
             tempCanvas.ctx.lineWidth = actualToolSize;
             brushTool.defaultModeInit();
             tempCanvas.ctx.globalAlpha = density;
@@ -505,6 +509,7 @@ Item {
         }
 
         function modeInit() {
+            items.outlineCursorRadius = actualToolSize
             brushTool.defaultModeInit();
             processTimer.interval = timerInterval;
         }
@@ -563,6 +568,7 @@ Item {
         }
 
         function modeInit() {
+            items.outlineCursorRadius = radiusSize
             tempCanvas.ctx.lineWidth = 1.5 / items.devicePixelRatio;
             processTimer.interval = timerInterval;
             tempCanvas.ctx.lineCap = tempCanvas.ctx.lineJoin = "round";

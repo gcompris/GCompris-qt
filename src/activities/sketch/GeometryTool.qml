@@ -28,6 +28,7 @@ Item {
     }
 
     function toolInit() {
+        items.outlineCursorRadius = 0;
         selectedMode.modeInit();
     }
 
