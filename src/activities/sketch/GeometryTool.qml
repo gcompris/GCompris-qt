@@ -50,28 +50,33 @@ Item {
         geometryShape.rotation = selectedMode.toolRotation ? selectedMode.toolRotation : 0;
     }
 
-    function defaultStart() {
+    function defaultStart(shape) {
         canvasInput.lastPoint = canvasInput.savePoint();
-        geometryShape.x = canvasInput.lastPoint.x;
-        geometryShape.y = canvasInput.lastPoint.y;
-        geometryShape.width = 0;
-        geometryShape.height = 0;
-        geometryShape.visible = true;
+        shape.x = canvasInput.lastPoint.x;
+        shape.y = canvasInput.lastPoint.y;
+        shape.width = 0;
+        shape.height = 0;
+        shape.visible = true;
     }
 
-    function defaultProcess() {
+    function rectangleProcess(shape) {
         canvasInput.currentPoint = canvasInput.savePoint();
-        geometryShape.width = Math.abs(canvasInput.lastPoint.x - canvasInput.currentPoint.x);
-        geometryShape.height = Math.abs(canvasInput.lastPoint.y - canvasInput.currentPoint.y);
-        if(canvasInput.lastPoint.x < canvasInput.currentPoint.x) {
-            geometryShape.x = canvasInput.lastPoint.x;
-        } else {
-            geometryShape.x = canvasInput.currentPoint.x;
-        }
-        if(canvasInput.lastPoint.y < canvasInput.currentPoint.y) {
-            geometryShape.y = canvasInput.lastPoint.y;
-        } else {
-            geometryShape.y = canvasInput.currentPoint.y;
+        shape.width = Math.abs(canvasInput.lastPoint.x - canvasInput.currentPoint.x) * 2;
+        shape.height = Math.abs(canvasInput.lastPoint.y - canvasInput.currentPoint.y) * 2;
+        shape.x = canvasInput.lastPoint.x - shape.width * 0.5;
+        shape.y = canvasInput.lastPoint.y - shape.height * 0.5;
+    }
+
+    function squareProcess(isCircle = false) {
+        canvasInput.currentPoint = canvasInput.savePoint();
+        var squareHalf = Math.min(Math.abs(canvasInput.lastPoint.x - canvasInput.currentPoint.x),
+                                  Math.abs(canvasInput.lastPoint.y - canvasInput.currentPoint.y));
+
+        geometryShape.width = geometryShape.height = squareHalf * 2;
+        geometryShape.x = canvasInput.lastPoint.x - geometryShape.width * 0.5;
+        geometryShape.y = canvasInput.lastPoint.y - geometryShape.height * 0.5;
+        if(isCircle) {
+            geometryShape.radius = squareHalf
         }
     }
 
@@ -92,11 +97,11 @@ Item {
         }
 
         function start() {
-            geometryTool.defaultStart();
+            geometryTool.defaultStart(geometryShape);
         }
 
         function process() {
-            geometryTool.defaultProcess();
+            geometryTool.rectangleProcess(geometryShape)
         }
 
         function stop() {
@@ -122,26 +127,11 @@ Item {
         }
 
         function start() {
-            geometryTool.defaultStart();
+            geometryTool.defaultStart(geometryShape);
         }
 
         function process() {
-            canvasInput.currentPoint = canvasInput.savePoint();
-
-            var squareSize = Math.min(Math.abs(canvasInput.lastPoint.x - canvasInput.currentPoint.x),
-                                      Math.abs(canvasInput.lastPoint.y - canvasInput.currentPoint.y));
-
-            geometryShape.width = geometryShape.height = squareSize;
-            if(canvasInput.lastPoint.x < canvasInput.currentPoint.x) {
-                geometryShape.x = canvasInput.lastPoint.x;
-            } else {
-                geometryShape.x = canvasInput.lastPoint.x - squareSize;
-            }
-            if(canvasInput.lastPoint.y < canvasInput.currentPoint.y) {
-                geometryShape.y = canvasInput.lastPoint.y;
-            } else {
-                geometryShape.y = canvasInput.lastPoint.y - squareSize;
-            }
+            geometryTool.squareProcess();
         }
 
         function stop() {
@@ -165,28 +155,11 @@ Item {
         }
 
         function start() {
-            canvasInput.lastPoint = canvasInput.savePoint();
-            ovalShape.x = canvasInput.lastPoint.x;
-            ovalShape.y = canvasInput.lastPoint.y;
-            ovalShape.width = 0;
-            ovalShape.height = 0;
-            ovalShape.visible = true;
+            geometryTool.defaultStart(ovalShape);
         }
 
         function process() {
-            canvasInput.currentPoint = canvasInput.savePoint();
-            ovalShape.width = Math.abs(canvasInput.lastPoint.x - canvasInput.currentPoint.x);
-            ovalShape.height = Math.abs(canvasInput.lastPoint.y - canvasInput.currentPoint.y);
-            if(canvasInput.lastPoint.x < canvasInput.currentPoint.x) {
-                ovalShape.x = canvasInput.lastPoint.x;
-            } else {
-                ovalShape.x = canvasInput.currentPoint.x;
-            }
-            if(canvasInput.lastPoint.y < canvasInput.currentPoint.y) {
-                ovalShape.y = canvasInput.lastPoint.y;
-            } else {
-                ovalShape.y = canvasInput.currentPoint.y;
-            }
+            geometryTool.rectangleProcess(ovalShape);
         }
 
         function stop() {
@@ -205,27 +178,11 @@ Item {
         }
 
         function start() {
-            geometryTool.defaultStart();
+            geometryTool.defaultStart(geometryShape);
         }
 
         function process() {
-            canvasInput.currentPoint = canvasInput.savePoint();
-
-            var squareSize = Math.min(Math.abs(canvasInput.lastPoint.x - canvasInput.currentPoint.x),
-                                      Math.abs(canvasInput.lastPoint.y - canvasInput.currentPoint.y));
-
-            geometryShape.width = geometryShape.height = squareSize;
-            if(canvasInput.lastPoint.x < canvasInput.currentPoint.x) {
-                geometryShape.x = canvasInput.lastPoint.x;
-            } else {
-                geometryShape.x = canvasInput.lastPoint.x - squareSize;
-            }
-            if(canvasInput.lastPoint.y < canvasInput.currentPoint.y) {
-                geometryShape.y = canvasInput.lastPoint.y;
-            } else {
-                geometryShape.y = canvasInput.lastPoint.y - squareSize;
-            }
-            geometryShape.radius = squareSize * 0.5;
+            geometryTool.squareProcess(true);
         }
 
         function stop() {
