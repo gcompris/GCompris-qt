@@ -80,11 +80,11 @@ Rectangle {
                 anchors.fill: parent
                 onClicked: {
                     if(index != 0) {
-                        items.backgroundToLoad = imageFromGrid.source
+                        items.backgroundToLoad = imageFromGrid.source;
                     } else {
-                        items.backgroundToLoad = ""
+                        items.backgroundToLoad = "";
                     }
-                    backgroundSelector.close()
+                    backgroundSelector.close();
                 }
             }
         }
@@ -93,7 +93,7 @@ Rectangle {
     GCButtonCancel {
         id: exitButton
         onClose: {
-            backgroundSelector.close()
+            backgroundSelector.close();
         }
     }
 }

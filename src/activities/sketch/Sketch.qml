@@ -33,8 +33,8 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+            activity.start.connect(start);
+            activity.stop.connect(stop);
         }
 
         // Add here the QML items you need to access in javascript
@@ -108,42 +108,42 @@ ActivityBase {
         function clearOpenPanels() {
             // reset saved open panel to isOpen = false, as they close automatically on window size change.
             if(items.openPanel) {
-                items.openPanel.forceClose()
+                items.openPanel.forceClose();
             }
         }
 
         onWidthChanged: {
-            clearOpenPanels()
+            clearOpenPanels();
         }
 
         onHeightChanged: {
-            clearOpenPanels()
+            clearOpenPanels();
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items); }
         onStop: {
-            processTimer.stop()
-            Activity.stop()
+            processTimer.stop();
+            Activity.stop();
         }
 
         Keys.onPressed: (event) => {
             if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Z)) {
-                Activity.undoAction()
-                event.accepted = true
+                Activity.undoAction();
+                event.accepted = true;
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Y)) {
-                Activity.redoAction()
-                event.accepted = true
+                Activity.redoAction();
+                event.accepted = true;
             } else if(event.key === Qt.Key_Delete ||
                     event.key === Qt.Key_Backspace ||
                     ((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_N))) {
-                Activity.requestNewImage()
-                event.accepted = true
+                Activity.requestNewImage();
+                event.accepted = true;
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_S)) {
-                Activity.saveImageDialog()
-                event.accepted = true
+                Activity.saveImageDialog();
+                event.accepted = true;
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_O)) {
-                Activity.openImageDialog()
-                event.accepted = true
+                Activity.openImageDialog();
+                event.accepted = true;
             }
         }
 
@@ -172,14 +172,14 @@ ActivityBase {
 
             function saveImage(filePath) {
                 canvasArea.grabToImage(function(result) {
-                    result.saveToFile(filePath)
+                    result.saveToFile(filePath);
                 }, Qt.size(items.grabWidth, items.grabHeight))
-                items.isSaved = true
+                items.isSaved = true;
             }
 
             function init() {
-                canvasInput.resetPoints()
-                items.selectedTool.toolInit()
+                canvasInput.resetPoints();
+                items.selectedTool.toolInit();
             }
 
             Rectangle {
@@ -210,17 +210,17 @@ ActivityBase {
 
                 // After loading canvas result to image, clear Canvas and hide other drawing sources
                 onSourceChanged: {
-                    tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
-                    tempCanvas.requestPaint()
-                    loadedImage.visible = false
-                    geometryShape.visible = false
-                    ovalShape.visible = false
-                    lineShape.visible = false
-                    gradientShape.visible = false
-                    gradientShapePath.fillGradient = null
-                    stampImage.visible = false
-                    textShape.visible = false
-                    items.canvasLocked = false
+                    tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height);
+                    tempCanvas.requestPaint();
+                    loadedImage.visible = false;
+                    geometryShape.visible = false;
+                    ovalShape.visible = false;
+                    lineShape.visible = false;
+                    gradientShape.visible = false;
+                    gradientShapePath.fillGradient = null;
+                    stampImage.visible = false;
+                    textShape.visible = false;
+                    items.canvasLocked = false;
                 }
             }
 
@@ -238,15 +238,15 @@ ActivityBase {
                 property url tempPath: StandardPaths.writableLocation(StandardPaths.TempLocation) + "/GCSketchCache"
 
                 function initContext() {
-                    ctx = getContext("2d")
+                    ctx = getContext("2d");
                 }
 
                 function paintActionFinished() {
                     canvasArea.grabToImage(function(result) {
                         items.canvasImageSource = result.url;
                         canvasImage.source = items.canvasImageSource;
-                        var undoPath = tempPath + items.undoIndex.toString() + ".png"
-                        result.saveToFile(undoPath)
+                        var undoPath = tempPath + items.undoIndex.toString() + ".png";
+                        result.saveToFile(undoPath);
                         // push last snapshot to undo stack
                         Activity.pushToUndo(undoPath);
                         Activity.resetRedo();
@@ -264,30 +264,30 @@ ActivityBase {
                     property var currentPoint
 
                     function savePoint() {
-                        return { x: mouseX, y: mouseY }
+                        return { x: mouseX, y: mouseY };
                     }
 
                     function resetPoints() {
-                        lastPoint = midPoint = currentPoint = { x: -1, y: -1 }
+                        lastPoint = midPoint = currentPoint = { x: -1, y: -1 };
                     }
 
                     onPressed: {
                         if(!items.canvasLocked) {
-                            items.isSaved = false
-                            items.selectedTool.toolStart()
-                            items.toolStarted = true
+                            items.isSaved = false;
+                            items.selectedTool.toolStart();
+                            items.toolStarted = true;
                         }
                     }
 
                     onReleased: {
-                        items.canvasLocked = true
-                        items.selectedTool.toolStop()
-                        items.toolStarted = false
+                        items.canvasLocked = true;
+                        items.selectedTool.toolStop();
+                        items.toolStarted = false;
                     }
 
                     onPositionChanged: {
                         if(items.selectedTool.usePositionChanged && items.toolStarted) {
-                            items.selectedTool.toolProcess()
+                            items.selectedTool.toolProcess();
                         }
                     }
                 }
@@ -297,7 +297,7 @@ ActivityBase {
                     interval: 30
                     repeat: true
                     onTriggered: {
-                        items.selectedTool.toolProcess()
+                        items.selectedTool.toolProcess();
                     }
                 }
 
@@ -491,7 +491,7 @@ ActivityBase {
             anchors.fill: parent
             enabled: items.openPanel!= null
             onClicked: {
-                items.openPanel.toggleOpen()
+                items.openPanel.toggleOpen();
             }
         }
 
@@ -538,7 +538,7 @@ ActivityBase {
                         onPressed: parent.scale = 0.9
                         onReleased: parent.scale = 1
                         onClicked: {
-                            Activity.undoAction()
+                            Activity.undoAction();
                         }
                     }
                 }
@@ -557,7 +557,7 @@ ActivityBase {
                         onPressed: parent.scale = 0.9
                         onReleased: parent.scale = 1
                         onClicked: {
-                            Activity.redoAction()
+                            Activity.redoAction();
                         }
                     }
                 }
@@ -625,27 +625,27 @@ ActivityBase {
             imageMode: true
             fileExtensions: ["*.svg", "*.png", "*.jpg", "*.jpeg", "*.webp"]
             onSaveImage: (filePath) => {
-                canvasArea.saveImage(filePath)
+                canvasArea.saveImage(filePath);
             }
             onFileLoaded: (data, filePath) => {
-                Activity.imageToLoad = filePath
-                Activity.requestNewImage()
+                Activity.imageToLoad = filePath;
+                Activity.requestNewImage();
             }
             onClose: {
-                filesPanel.forceClose()
+                filesPanel.forceClose();
             }
         }
 
         BackgroundSelector {
             id: backgroundSelector
             visible: false
-            onClose: home()
+            onClose: home();
         }
 
         BackgroundColorSelector {
             id: backgroundColorSelector
             visible: false
-            onClose: home()
+            onClose: home();
         }
 
         Loader {
@@ -658,51 +658,51 @@ ActivityBase {
                     qsTr("Are you sure you want to erase this image?")
                 button1Text: qsTr("Yes")
                 button2Text: qsTr("No")
-                onClose: newImageDialog.active = false
+                onClose: newImageDialog.active = false;
                 onButton1Hit: {
                     if(items.homeRequested) {
-                        activity.home()
+                        activity.home();
                     } else if(items.resetRequested) {
-                        Activity.resetLevel()
+                        Activity.resetLevel();
                     } else {
-                        Activity.newImage()
+                        Activity.newImage();
                     }
                 }
                 onButton2Hit: {
-                    Activity.imageToLoad = ""
+                    Activity.imageToLoad = "";
                 }
             }
             anchors.fill: parent
             focus: true
             active: false
-            onStatusChanged: if(status == Loader.Ready) item.start()
+            onStatusChanged: if(status == Loader.Ready) item.start();
         }
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: home();
         }
 
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | reload }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                displayDialog(dialogHelp);
             }
             onHomeClicked: {
                 if(items.isSaved) {
-                    activity.home()
+                    activity.home();
                 } else {
-                    items.homeRequested = true
-                    newImageDialog.active = true
+                    items.homeRequested = true;
+                    newImageDialog.active = true;
                 }
             }
             onReloadClicked: {
                 if(items.isSaved) {
-                    Activity.resetLevel()
+                    Activity.resetLevel();
                 } else {
-                    items.resetRequested = true
-                    newImageDialog.active = true
+                    items.resetRequested = true;
+                    newImageDialog.active = true;
                 }
             }
         }

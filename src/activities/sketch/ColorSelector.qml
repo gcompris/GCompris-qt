@@ -24,42 +24,42 @@ Item {
     signal resetSelectedPalette()
 
     function selectColor(newSelectedColor) {
-        selectedColor = newSelectedColor
-        hueSelector.setValue(selectedColor.hslHue)
-        saturationSelector.setValue(selectedColor.hslSaturation)
-        lightnessSelector.setValue(selectedColor.hslLightness)
+        selectedColor = newSelectedColor;
+        hueSelector.setValue(selectedColor.hslHue);
+        saturationSelector.setValue(selectedColor.hslSaturation);
+        lightnessSelector.setValue(selectedColor.hslLightness);
     }
 
     function editColor(colorIndex, editedColor) {
-        selectedColor = editedColor
-        colorButtonsGrid.itemAtIndex(colorIndex).buttonColor = selectedColor
-        colorEdited(colorIndex, selectedColor)
+        selectedColor = editedColor;
+        colorButtonsGrid.itemAtIndex(colorIndex).buttonColor = selectedColor;
+        colorEdited(colorIndex, selectedColor);
     }
 
     function resetColor() {
-        palette[colorButtonsGrid.currentIndex].r = defaultPalette[colorButtonsGrid.currentIndex].r
-        palette[colorButtonsGrid.currentIndex].g = defaultPalette[colorButtonsGrid.currentIndex].g
-        palette[colorButtonsGrid.currentIndex].b = defaultPalette[colorButtonsGrid.currentIndex].b
-        reloadPaletteToButtons()
-        colorEdited(colorButtonsGrid.currentIndex, palette[colorButtonsGrid.currentIndex])
+        palette[colorButtonsGrid.currentIndex].r = defaultPalette[colorButtonsGrid.currentIndex].r;
+        palette[colorButtonsGrid.currentIndex].g = defaultPalette[colorButtonsGrid.currentIndex].g;
+        palette[colorButtonsGrid.currentIndex].b = defaultPalette[colorButtonsGrid.currentIndex].b;
+        reloadPaletteToButtons();
+        colorEdited(colorButtonsGrid.currentIndex, palette[colorButtonsGrid.currentIndex]);
     }
 
     function resetPalette() {
         for(var i = 0; i < palette.length; i++) {
-            palette[i].r = defaultPalette[i].r
-            palette[i].g = defaultPalette[i].g
-            palette[i].b = defaultPalette[i].b
+            palette[i].r = defaultPalette[i].r;
+            palette[i].g = defaultPalette[i].g;
+            palette[i].b = defaultPalette[i].b;
         }
-        reloadPaletteToButtons()
-        resetSelectedPalette()
+        reloadPaletteToButtons();
+        resetSelectedPalette();
     }
 
     function reloadPaletteToButtons() {
         // We need to manually assign again the colors as the color assignments when editing color break the bindings
         for(var i = 0; i < palette.length; i++) {
-            colorButtonsGrid.itemAtIndex(i).buttonColor = palette[i]
+            colorButtonsGrid.itemAtIndex(i).buttonColor = palette[i];
         }
-        selectColor(colorButtonsGrid.currentItem.buttonColor)
+        selectColor(colorButtonsGrid.currentItem.buttonColor);
     }
 
     Item {
@@ -103,8 +103,8 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        colorButtonsGrid.currentIndex = index
-                        colorSelector.selectColor(buttonRectangle.color)
+                        colorButtonsGrid.currentIndex = index;
+                        colorSelector.selectColor(buttonRectangle.color);
                     }
                 }
             }
@@ -177,7 +177,7 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
 
             onButtonClicked: {
-                colorSelector.resetPalette()
+                colorSelector.resetPalette();
             }
         }
     }
@@ -243,14 +243,14 @@ Item {
                     GradientStop { position: 1    ; color: Qt.hsla(1, 1, 0.5) }
                 }
                 onValueChanged: (newValue) => {
-                    selectedColorRectangle.color.hslHue = newValue
-                    colorSelector.editColor(colorButtonsGrid.currentIndex, selectedColorRectangle.color)
+                    selectedColorRectangle.color.hslHue = newValue;
+                    colorSelector.editColor(colorButtonsGrid.currentIndex, selectedColorRectangle.color);
                 }
                 Component.onCompleted: {
                     if(colorSelector.selectedColor.hslHue) {
-                        setValue(colorSelector.selectedColor.hslHue)
+                        setValue(colorSelector.selectedColor.hslHue);
                     } else {
-                        setValue(0)
+                        setValue(0);
                     }
                 }
             }
@@ -266,16 +266,16 @@ Item {
                 }
                 onValueChanged: (newValue) => {
                     if(selectedColorRectangle.color.hslHue < 0) {
-                        selectedColorRectangle.color.hslHue = 0
+                        selectedColorRectangle.color.hslHue = 0;
                     }
-                    selectedColorRectangle.color.hslSaturation = newValue
-                    colorSelector.editColor(colorButtonsGrid.currentIndex, selectedColorRectangle.color)
+                    selectedColorRectangle.color.hslSaturation = newValue;
+                    colorSelector.editColor(colorButtonsGrid.currentIndex, selectedColorRectangle.color);
                 }
                 Component.onCompleted: {
                     if(colorSelector.selectedColor.hslValue) {
-                        setValue(colorSelector.selectedColor.hslValue)
+                        setValue(colorSelector.selectedColor.hslValue);
                     } else {
-                        setValue(0)
+                        setValue(0);
                     }
                 }
             }
@@ -292,16 +292,16 @@ Item {
                 }
                 onValueChanged: (newValue) => {
                     if(selectedColorRectangle.color.hslHue < 0) {
-                        selectedColorRectangle.color.hslHue = 0
+                        selectedColorRectangle.color.hslHue = 0;
                     }
-                    selectedColorRectangle.color.hslLightness= newValue
-                    colorSelector.editColor(colorButtonsGrid.currentIndex, selectedColorRectangle.color)
+                    selectedColorRectangle.color.hslLightness= newValue;
+                    colorSelector.editColor(colorButtonsGrid.currentIndex, selectedColorRectangle.color);
                 }
                 Component.onCompleted: {
                     if(colorSelector.selectedColor.hslLightness) {
-                        setValue(colorSelector.selectedColor.hslLightness)
+                        setValue(colorSelector.selectedColor.hslLightness);
                     } else {
-                        setValue(0)
+                        setValue(0);
                     }
                 }
             }
@@ -341,7 +341,7 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
 
             onButtonClicked: {
-                colorSelector.resetColor()
+                colorSelector.resetColor();
             }
         }
     }

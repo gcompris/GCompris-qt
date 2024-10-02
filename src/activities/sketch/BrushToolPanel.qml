@@ -18,14 +18,14 @@ Item {
 
     // Set selected mode on selected tool, and triggered when selecting the tool
     function setToolMode() {
-        items.selectedTool.selectedMode = selectedModeButton.toolMode
-        toolsPanel.loadModeSettings()
+        items.selectedTool.selectedMode = selectedModeButton.toolMode;
+        toolsPanel.loadModeSettings();
     }
 
     // Save selected mode for current tool (brush or eraser), then call setToolMode
     function selectMode(modeButton) {
-        selectedModeButton = modeButton
-        setToolMode()
+        selectedModeButton = modeButton;
+        setToolMode();
     }
 
     Grid {
@@ -44,7 +44,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/roundBrush.svg"
             property Item toolMode: brushTool.roundBrush
             onButtonClicked: {
-                brushToolPanel.selectMode(self)
+                brushToolPanel.selectMode(self);
             }
         }
 
@@ -56,7 +56,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/sketchBrush.svg"
             property Item toolMode: brushTool.sketchBrush
             onButtonClicked: {
-                brushToolPanel.selectMode(self)
+                brushToolPanel.selectMode(self);
             }
         }
 
@@ -68,7 +68,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/fillBrush.svg"
             property Item toolMode: brushTool.fillBrush
             onButtonClicked: {
-                brushToolPanel.selectMode(self)
+                brushToolPanel.selectMode(self);
             }
         }
 
@@ -80,7 +80,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/airBrush.svg"
             property Item toolMode: brushTool.airBrush
             onButtonClicked: {
-                brushToolPanel.selectMode(self)
+                brushToolPanel.selectMode(self);
             }
         }
 
@@ -92,7 +92,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/sprayBrush.svg"
             property Item toolMode: brushTool.sprayBrush
             onButtonClicked: {
-                brushToolPanel.selectMode(self)
+                brushToolPanel.selectMode(self);
             }
         }
 
@@ -104,7 +104,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/circlesBrush.svg"
             property Item toolMode: brushTool.circlesBrush
             onButtonClicked: {
-                brushToolPanel.selectMode(self)
+                brushToolPanel.selectMode(self);
             }
         }
     }

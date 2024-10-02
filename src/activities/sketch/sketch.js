@@ -61,7 +61,7 @@ var backgroundImageSet = [
     "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg",
     "qrc:/gcompris/src/activities/wordsgame/resource/background.svg",
     "qrc:/gcompris/src/activities/color_mix/resource/background2.svg"
-    ]
+    ];
 
 var imageToLoad = "";
 
@@ -85,9 +85,9 @@ function initLevel() {
 }
 
 function resetLevel() {
-    items.resetRequested = false
+    items.resetRequested = false;
     items.backgroundColor = Qt.rgba(1,1,1,1);
-    items.backgroundToLoad = ""
+    items.backgroundToLoad = "";
     initLevel();
 }
 
@@ -159,8 +159,8 @@ function redoAction() {
 
 function loadImage() {
     items.canvasImage.source = "";
-    items.loadedImage.sourceSize.width = undefined
-    items.loadedImage.sourceSize.height = undefined
+    items.loadedImage.sourceSize.width = undefined;
+    items.loadedImage.sourceSize.height = undefined;
     items.loadedImage.source = imageToLoad;
     imageToLoad = "";
     items.loadedImage.visible = true;
@@ -169,8 +169,8 @@ function loadImage() {
 
 function loadBackground() {
     items.canvasImage.source = "";
-    items.loadedImage.sourceSize.width = items.loadedImage.width
-    items.loadedImage.sourceSize.height = items.loadedImage.height
+    items.loadedImage.sourceSize.width = items.loadedImage.width;
+    items.loadedImage.sourceSize.height = items.loadedImage.height;
     items.loadedImage.source = items.backgroundToLoad;
     items.loadedImage.visible = true;
     initLevel();
@@ -178,14 +178,14 @@ function loadBackground() {
 
 function requestNewImage() {
     if(items.isSaved) {
-        newImage()
+        newImage();
     } else {
-        items.newImageDialog.active = true
+        items.newImageDialog.active = true;
     }
 }
 
 function newImage() {
-    items.backgroundColor = items.newBackgroundColor
+    items.backgroundColor = items.newBackgroundColor;
     if(imageToLoad != "") {
         loadImage();
     } else if(items.backgroundToLoad != "") {
@@ -196,9 +196,9 @@ function newImage() {
 }
 
 function saveImageDialog() {
-    items.creationHandler.saveWindow(items.canvasImageSource)
+    items.creationHandler.saveWindow(items.canvasImageSource);
 }
 
 function openImageDialog() {
-    items.creationHandler.loadWindow()
+    items.creationHandler.loadWindow();
 }

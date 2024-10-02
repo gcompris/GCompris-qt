@@ -27,35 +27,36 @@ Rectangle {
     signal close()
 
     function toggleOpen() {
-        foldablePanel.isOpen = !foldablePanel.isOpen
+        foldablePanel.isOpen = !foldablePanel.isOpen;
         if(foldablePanel.isOpen) {
-            items.openPanel = foldablePanel
+            items.openPanel = foldablePanel;
             if(items.isHorizontalLayout) {
-                openAnimationX.start()
+                openAnimationX.start();
             } else {
-                openAnimationY.start()
+                openAnimationY.start();
             }
         } else {
-            items.openPanel = null
+            items.openPanel = null;
             if(items.isHorizontalLayout) {
-                closeAnimationX.start()
+                closeAnimationX.start();
             } else {
-                closeAnimationY.start()
+                closeAnimationY.start();
             }
         }
     }
 
     function forceClose() {
         foldablePanel.state = "empty"
-        if(items.isHorizontalLayout)
-            foldablePanel.state = "horizontalLayout"
-        else
-            foldablePanel.state = "verticalLayout"
-        foldablePanel.isOpen = false
-        foldablePanel.isAnimationRunning = false
-        foldablePanel.close()
-        items.openPanel = null
-        foldablePanel.z = 0
+        if(items.isHorizontalLayout) {
+            foldablePanel.state = "horizontalLayout";
+        } else {
+            foldablePanel.state = "verticalLayout";
+        }
+        foldablePanel.isOpen = false;
+        foldablePanel.isAnimationRunning = false;
+        foldablePanel.close();
+        items.openPanel = null;
+        foldablePanel.z = 0;
     }
 
     // override MouseArea on canvas below
@@ -103,7 +104,7 @@ Rectangle {
             enabled: items.openPanel == null || foldablePanel.isOpen
             onClicked: {
                 if(!foldablePanel.isAnimationRunning)
-                    foldablePanel.toggleOpen()
+                    foldablePanel.toggleOpen();
             }
         }
     }
@@ -121,12 +122,12 @@ Rectangle {
         duration: 200
         easing.type: Easing.InOutQuad
         onStarted: {
-            foldablePanel.isAnimationRunning = true
-            foldablePanel.z = 10
-            items.smudgeSound.play()
+            foldablePanel.isAnimationRunning = true;
+            foldablePanel.z = 10;
+            items.smudgeSound.play();
         }
         onStopped: {
-            foldablePanel.isAnimationRunning = false
+            foldablePanel.isAnimationRunning = false;
         }
     }
 
@@ -138,13 +139,13 @@ Rectangle {
         duration: 200
         easing.type: Easing.InOutQuad
         onStarted: {
-            foldablePanel.isAnimationRunning = true
-            items.smudgeSound.play()
-            foldablePanel.close()
+            foldablePanel.isAnimationRunning = true;
+            items.smudgeSound.play();
+            foldablePanel.close();
         }
         onStopped: {
-            foldablePanel.isAnimationRunning = false
-            foldablePanel.z = 0
+            foldablePanel.isAnimationRunning = false;
+            foldablePanel.z = 0;
         }
     }
 
@@ -156,12 +157,12 @@ Rectangle {
         duration: 200
         easing.type: Easing.InOutQuad
         onStarted: {
-            foldablePanel.isAnimationRunning = true
-            foldablePanel.z = 10
-            items.smudgeSound.play()
+            foldablePanel.isAnimationRunning = true;
+            foldablePanel.z = 10;
+            items.smudgeSound.play();
         }
         onStopped: {
-            foldablePanel.isAnimationRunning = false
+            foldablePanel.isAnimationRunning = false;
         }
     }
 
@@ -173,13 +174,13 @@ Rectangle {
         duration: 200
         easing.type: Easing.InOutQuad
         onStarted: {
-            foldablePanel.isAnimationRunning = true
-            items.smudgeSound.play()
-            foldablePanel.close()
+            foldablePanel.isAnimationRunning = true;
+            items.smudgeSound.play();
+            foldablePanel.close();
         }
         onStopped: {
-            foldablePanel.isAnimationRunning = false
-            foldablePanel.z = 0
+            foldablePanel.isAnimationRunning = false;
+            foldablePanel.z = 0;
         }
     }
 

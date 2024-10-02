@@ -17,26 +17,29 @@ Item {
     signal patternClicked()
 
     function selectPreviousPattern() {
-        if(patternListView.currentIndex == 0)
-            return
-        selectPattern(patternListView.currentIndex - 1)
+        if(patternListView.currentIndex == 0) {
+            return;
+        }
+        selectPattern(patternListView.currentIndex - 1);
     }
 
     function selectNextPattern() {
-        if(patternListView.currentIndex == patternListView.count - 1)
-            return
-        selectPattern(patternListView.currentIndex + 1)
+        if(patternListView.currentIndex == patternListView.count - 1) {
+            return;
+        }
+        selectPattern(patternListView.currentIndex + 1);
     }
 
     function selectPattern(index) {
-        if(index == value)
-            return
-        patternListView.currentIndex = index
-        patternClicked()
+        if(index == value) {
+            return;
+        }
+        patternListView.currentIndex = index;
+        patternClicked();
     }
 
     onWidthChanged: {
-        patternListView.positionViewAtIndex(patternListView.currentIndex, ListView.Contain)
+        patternListView.positionViewAtIndex(patternListView.currentIndex, ListView.Contain);
     }
 
     Component {
@@ -51,17 +54,17 @@ Item {
                 width: height
                 anchors.centerIn: parent
                 onPaint: {
-                    var ctx = getContext("2d")
-                    var pattern = ctx.createPattern(Qt.rgba(1,1,1,0.5), items.patternList[index])
-                    ctx.fillStyle = pattern
-                    ctx.fillRect(0, 0, width, height)
+                    var ctx = getContext("2d");
+                    var pattern = ctx.createPattern(Qt.rgba(1,1,1,0.5), items.patternList[index]);
+                    ctx.fillStyle = pattern;
+                    ctx.fillRect(0, 0, width, height);
                 }
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    patternSelector.selectPattern(index)
+                    patternSelector.selectPattern(index);
                 }
             }
         }
@@ -115,7 +118,7 @@ Item {
                     onReleased: leftButtonIcon.scale = 1
                     enabled: leftButtonIcon.opacity == 1
                     onClicked: {
-                        patternSelector.selectPreviousPattern()
+                        patternSelector.selectPreviousPattern();
                     }
                 }
             }
@@ -132,7 +135,7 @@ Item {
                 model: items.patternList
                 delegate: patternItem
                 onCurrentIndexChanged: {
-                    positionViewAtIndex(currentIndex, ListView.Contain)
+                    positionViewAtIndex(currentIndex, ListView.Contain);
                 }
             }
 
@@ -156,7 +159,7 @@ Item {
                     onReleased: rightButtonIcon.scale = 1
                     enabled: rightButtonIcon.opacity == 1
                     onClicked: {
-                        patternSelector.selectNextPattern()
+                        patternSelector.selectNextPattern();
                     }
                 }
             }

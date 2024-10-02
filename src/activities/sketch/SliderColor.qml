@@ -20,20 +20,22 @@ Item {
 
     function setValue(value) {
         if(value < 0) {
-            value = 0
+            value = 0;
         } else if(value > 1) {
-            value = 1
+            value = 1;
         }
-        sliderHandle.value = value
+        sliderHandle.value = value;
     }
 
     function sliderValueChanged(mouseXPosition) {
-        if(mouseXPosition < 0)
-            mouseXPosition = 0
-        if(mouseXPosition > valueSlider.width)
-            mouseXPosition = valueSlider.width
-        sliderHandle.value = mouseXPosition / valueSlider.width
-        valueChanged(sliderHandle.value)
+        if(mouseXPosition < 0) {
+            mouseXPosition = 0;
+        }
+        if(mouseXPosition > valueSlider.width) {
+            mouseXPosition = valueSlider.width;
+        }
+        sliderHandle.value = mouseXPosition / valueSlider.width;
+        valueChanged(sliderHandle.value);
     }
 
     GCText {
@@ -87,10 +89,10 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 onClicked: (mouse) => {
-                    sliderValueChanged(mouse.x)
+                    sliderValueChanged(mouse.x);
                 }
                 onPositionChanged: (mouse) => {
-                    sliderValueChanged(mouse.x)
+                    sliderValueChanged(mouse.x);
                 }
             }
         }

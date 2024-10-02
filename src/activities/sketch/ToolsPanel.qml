@@ -29,12 +29,12 @@ FoldablePanel {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: textToolPanel.textEdit.focus = false
+        onClicked: textToolPanel.textEdit.focus = false;
     }
 
     onClose: {
-        textToolPanel.textEdit.focus = false
-        canvasArea.init()
+        textToolPanel.textEdit.focus = false;
+        canvasArea.init();
     }
 
     // NOTE: check eraserMode only in functions related to settings used in brush/eraser tools
@@ -42,50 +42,50 @@ FoldablePanel {
     function loadOpacitySettings() {
         // All tools have opacity setting
         if(items.eraserMode) {
-            opacitySlider.value = items.selectedTool.selectedMode.eraserOpacity
+            opacitySlider.value = items.selectedTool.selectedMode.eraserOpacity;
         } else {
-            opacitySlider.value = items.selectedTool.selectedMode.toolOpacity
+            opacitySlider.value = items.selectedTool.selectedMode.toolOpacity;
         }
     }
 
     function loadSizeSettings() {
         if(items.selectedTool.selectedMode.toolSize == null) {
-            sizeSlider.visible = false
+            sizeSlider.visible = false;
         } else {
-            sizeSlider.visible = true
-            sizeSlider.from = items.selectedTool.selectedMode.minToolSize
-            sizeSlider.to = items.selectedTool.selectedMode.maxToolSize
-            sizeSlider.stepSize = items.selectedTool.selectedMode.sizeSliderStepSize
+            sizeSlider.visible = true;
+            sizeSlider.from = items.selectedTool.selectedMode.minToolSize;
+            sizeSlider.to = items.selectedTool.selectedMode.maxToolSize;
+            sizeSlider.stepSize = items.selectedTool.selectedMode.sizeSliderStepSize;
             if(items.eraserMode) {
-                sizeSlider.value = items.selectedTool.selectedMode.eraserSize
+                sizeSlider.value = items.selectedTool.selectedMode.eraserSize;
             } else {
-                sizeSlider.value = items.selectedTool.selectedMode.toolSize
+                sizeSlider.value = items.selectedTool.selectedMode.toolSize;
             }
         }
     }
 
     function loadSpeedSettings() {
         if(items.selectedTool.selectedMode.toolSpeed == null) {
-            speedSlider.visible = false
+            speedSlider.visible = false;
         } else {
-            speedSlider.visible = true
+            speedSlider.visible = true;
             if(items.eraserMode) {
-                speedSlider.value = items.selectedTool.selectedMode.eraserSpeed
+                speedSlider.value = items.selectedTool.selectedMode.eraserSpeed;
             } else {
-                speedSlider.value = items.selectedTool.selectedMode.toolSpeed
+                speedSlider.value = items.selectedTool.selectedMode.toolSpeed;
             }
         }
     }
 
     function loadDensitySettings() {
         if(items.selectedTool.selectedMode.toolDensity == null) {
-            densitySlider.visible = false
+            densitySlider.visible = false;
         } else {
-            densitySlider.visible = true
+            densitySlider.visible = true;
             if(items.eraserMode) {
-                densitySlider.value = items.selectedTool.selectedMode.eraserDensity
+                densitySlider.value = items.selectedTool.selectedMode.eraserDensity;
             } else {
-                densitySlider.value = items.selectedTool.selectedMode.toolDensity
+                densitySlider.value = items.selectedTool.selectedMode.toolDensity;
             }
         }
     }
@@ -93,13 +93,13 @@ FoldablePanel {
 
     function loadDotsSizeSettings() {
         if(items.selectedTool.selectedMode.dotsSize == null) {
-            dotsSizeSlider.visible = false
+            dotsSizeSlider.visible = false;
         } else {
-            dotsSizeSlider.visible = true
+            dotsSizeSlider.visible = true;
             if(items.eraserMode) {
-                dotsSizeSlider.value = items.selectedTool.selectedMode.eraserDotsSize
+                dotsSizeSlider.value = items.selectedTool.selectedMode.eraserDotsSize;
             } else {
-                dotsSizeSlider.value = items.selectedTool.selectedMode.dotsSize
+                dotsSizeSlider.value = items.selectedTool.selectedMode.dotsSize;
             }
         }
     }
@@ -107,13 +107,13 @@ FoldablePanel {
 
     function loadSmoothingSettings() {
         if(items.selectedTool.selectedMode.toolSmoothing == null) {
-            smoothingSlider.visible = false
+            smoothingSlider.visible = false;
         } else {
-            smoothingSlider.visible = true
+            smoothingSlider.visible = true;
             if(items.eraserMode) {
-                smoothingSlider.value = items.selectedTool.selectedMode.eraserSmoothing
+                smoothingSlider.value = items.selectedTool.selectedMode.eraserSmoothing;
             } else {
-                smoothingSlider.value = items.selectedTool.selectedMode.toolSmoothing
+                smoothingSlider.value = items.selectedTool.selectedMode.toolSmoothing;
             }
         }
     }
@@ -121,118 +121,118 @@ FoldablePanel {
 
     function loadPatternSettings() {
         if(items.selectedTool.selectedMode.toolPattern == null) {
-            patternSelector.visible = false
+            patternSelector.visible = false;
         } else {
-            patternSelector.visible = true
+            patternSelector.visible = true;
             if(items.eraserMode) {
-                patternSelector.value = items.selectedTool.selectedMode.eraserPattern
+                patternSelector.value = items.selectedTool.selectedMode.eraserPattern;
             } else {
-                patternSelector.value = items.selectedTool.selectedMode.toolPattern
+                patternSelector.value = items.selectedTool.selectedMode.toolPattern;
             }
         }
     }
 
     function loadRadiusSettings() {
         if(items.selectedTool.selectedMode.toolRadius == null) {
-            radiusSlider.visible = false
+            radiusSlider.visible = false;
         } else {
-            radiusSlider.visible = true
-            radiusSlider.to = items.selectedTool.selectedMode.maxToolRadius
-            radiusSlider.labelText = items.selectedTool.radiusString
-            radiusSlider.value = items.selectedTool.selectedMode.toolRadius
+            radiusSlider.visible = true;
+            radiusSlider.to = items.selectedTool.selectedMode.maxToolRadius;
+            radiusSlider.labelText = items.selectedTool.radiusString;
+            radiusSlider.value = items.selectedTool.selectedMode.toolRadius;
         }
     }
 
     function loadRotationSettings() {
         if(items.selectedTool.selectedMode.toolRotation == null) {
-            rotationSlider.visible = false
+            rotationSlider.visible = false;
         } else {
-            rotationSlider.visible = true
-            rotationSlider.to = items.selectedTool.selectedMode.maxToolRotation
-            rotationSlider.stepSize = items.selectedTool.selectedMode.rotationSliderStepSize
-            rotationSlider.value = items.selectedTool.selectedMode.toolRotation
+            rotationSlider.visible = true;
+            rotationSlider.to = items.selectedTool.selectedMode.maxToolRotation;
+            rotationSlider.stepSize = items.selectedTool.selectedMode.rotationSliderStepSize;
+            rotationSlider.value = items.selectedTool.selectedMode.toolRotation;
         }
     }
 
     function loadMirrorSettings() {
         if(items.selectedTool.selectedMode.toolMirror == null) {
-            mirrorButton.visible = false
+            mirrorButton.visible = false;
         } else {
-            mirrorButton.visible = true
-            mirrorButton.checked = items.selectedTool.selectedMode.toolMirror
+            mirrorButton.visible = true;
+            mirrorButton.checked = items.selectedTool.selectedMode.toolMirror;
         }
     }
 
     // Load all settings from selected tool mode
     function loadModeSettings() {
-        loadOpacitySettings()
-        loadSizeSettings()
-        loadSpeedSettings()
-        loadDensitySettings()
-        loadDotsSizeSettings()
-        loadSmoothingSettings()
-        loadPatternSettings()
-        loadRadiusSettings()
-        loadRotationSettings()
-        loadMirrorSettings()
+        loadOpacitySettings();
+        loadSizeSettings();
+        loadSpeedSettings();
+        loadDensitySettings();
+        loadDotsSizeSettings();
+        loadSmoothingSettings();
+        loadPatternSettings();
+        loadRadiusSettings();
+        loadRotationSettings();
+        loadMirrorSettings();
     }
 
     // Reload default values for selected tool mode
     function reloadDefaultModeSettings() {
         if(items.eraserMode) {
-            items.selectedTool.selectedMode.eraserOpacity = items.selectedTool.selectedMode.defaultEraserOpacity
-            items.selectedTool.selectedMode.eraserSize = items.selectedTool.selectedMode.defaultEraserSize
+            items.selectedTool.selectedMode.eraserOpacity = items.selectedTool.selectedMode.defaultEraserOpacity;
+            items.selectedTool.selectedMode.eraserSize = items.selectedTool.selectedMode.defaultEraserSize;
             if(items.selectedTool.selectedMode.eraserSpeed != null) {
-                items.selectedTool.selectedMode.eraserSpeed = items.selectedTool.selectedMode.defaultEraserSpeed
+                items.selectedTool.selectedMode.eraserSpeed = items.selectedTool.selectedMode.defaultEraserSpeed;
             }
             if(items.selectedTool.selectedMode.eraserDensity != null) {
-                items.selectedTool.selectedMode.eraserDensity = items.selectedTool.selectedMode.defaultEraserDensity
+                items.selectedTool.selectedMode.eraserDensity = items.selectedTool.selectedMode.defaultEraserDensity;
             }
             if(items.selectedTool.selectedMode.eraserDotsSize != null) {
-                items.selectedTool.selectedMode.eraserDotsSize = items.selectedTool.selectedMode.defaultEraserDotsSize
+                items.selectedTool.selectedMode.eraserDotsSize = items.selectedTool.selectedMode.defaultEraserDotsSize;
             }
             if(items.selectedTool.selectedMode.eraserSmoothing != null) {
-                items.selectedTool.selectedMode.eraserSmoothing = items.selectedTool.selectedMode.defaultEraserSmoothing
+                items.selectedTool.selectedMode.eraserSmoothing = items.selectedTool.selectedMode.defaultEraserSmoothing;
             }
             if(items.selectedTool.selectedMode.eraserPattern != null) {
-                items.selectedTool.selectedMode.eraserPattern = items.selectedTool.selectedMode.defaultEraserPattern
+                items.selectedTool.selectedMode.eraserPattern = items.selectedTool.selectedMode.defaultEraserPattern;
             }
         } else {
-            items.selectedTool.selectedMode.toolOpacity = items.selectedTool.selectedMode.defaultToolOpacity
+            items.selectedTool.selectedMode.toolOpacity = items.selectedTool.selectedMode.defaultToolOpacity;
             if(items.selectedTool.selectedMode.toolSize != null) {
-                items.selectedTool.selectedMode.toolSize = items.selectedTool.selectedMode.defaultToolSize
+                items.selectedTool.selectedMode.toolSize = items.selectedTool.selectedMode.defaultToolSize;
             }
             if(items.selectedTool.selectedMode.toolSpeed != null) {
-                items.selectedTool.selectedMode.toolSpeed = items.selectedTool.selectedMode.defaultToolSpeed
+                items.selectedTool.selectedMode.toolSpeed = items.selectedTool.selectedMode.defaultToolSpeed;
             }
             if(items.selectedTool.selectedMode.toolDensity != null) {
-                items.selectedTool.selectedMode.toolDensity = items.selectedTool.selectedMode.defaultToolDensity
+                items.selectedTool.selectedMode.toolDensity = items.selectedTool.selectedMode.defaultToolDensity;
             }
             if(items.selectedTool.selectedMode.dotsSize != null) {
-                items.selectedTool.selectedMode.dotsSize = items.selectedTool.selectedMode.defaultDotsSize
+                items.selectedTool.selectedMode.dotsSize = items.selectedTool.selectedMode.defaultDotsSize;
             }
             if(items.selectedTool.selectedMode.toolSmoothing != null) {
-                items.selectedTool.selectedMode.toolSmoothing = items.selectedTool.selectedMode.defaultToolSmoothing
+                items.selectedTool.selectedMode.toolSmoothing = items.selectedTool.selectedMode.defaultToolSmoothing;
             }
             if(items.selectedTool.selectedMode.toolPattern != null) {
-                items.selectedTool.selectedMode.toolPattern = items.selectedTool.selectedMode.defaultToolPattern
+                items.selectedTool.selectedMode.toolPattern = items.selectedTool.selectedMode.defaultToolPattern;
             }
             if(items.selectedTool.selectedMode.toolRadius!= null) {
-                items.selectedTool.selectedMode.toolRadius = items.selectedTool.selectedMode.defaultToolRadius
+                items.selectedTool.selectedMode.toolRadius = items.selectedTool.selectedMode.defaultToolRadius;
             }
             if(items.selectedTool.selectedMode.toolRotation != null) {
-                items.selectedTool.selectedMode.toolRotation = items.selectedTool.selectedMode.defaultToolRotation
+                items.selectedTool.selectedMode.toolRotation = items.selectedTool.selectedMode.defaultToolRotation;
             }
             if(items.selectedTool.selectedMode.toolMirror != null) {
-                items.selectedTool.selectedMode.toolMirror = false
+                items.selectedTool.selectedMode.toolMirror = false;
             }
             if(items.selectedTool == textTool) {
-                textToolPanel.textEdit.text = ""
+                textToolPanel.textEdit.text = "";
             }
         }
 
         // then load again the settings to the panel
-        loadModeSettings()
+        loadModeSettings();
     }
 
 
@@ -275,15 +275,15 @@ FoldablePanel {
             property Item selectedButton: brushToolButton // NOTE init default value on start
 
             function selectTool(buttonToSelect, toolPanelToSelect, toolToSelect, isEraserTool = false) {
-                toolsPanel.activeToolPanel.visible = false
-                scrollSound.play()
-                selectedButton = buttonToSelect
-                items.selectedTool = null
-                items.eraserMode = isEraserTool
-                items.selectedTool = toolToSelect
-                toolsPanel.activeToolPanel = toolPanelToSelect
-                toolsPanel.activeToolPanel.visible = true
-                toolsPanel.activeToolPanel.setToolMode()
+                toolsPanel.activeToolPanel.visible = false;
+                scrollSound.play();
+                selectedButton = buttonToSelect;
+                items.selectedTool = null;
+                items.eraserMode = isEraserTool;
+                items.selectedTool = toolToSelect;
+                toolsPanel.activeToolPanel = toolPanelToSelect;
+                toolsPanel.activeToolPanel.visible = true;
+                toolsPanel.activeToolPanel.setToolMode();
             }
 
             SelectionButton {
@@ -292,7 +292,7 @@ FoldablePanel {
                 isButtonSelected: toolButtonsGrid.selectedButton == self
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/brushTools.svg"
                 onButtonClicked: {
-                    parent.selectTool(self, brushToolPanel, brushTool)
+                    parent.selectTool(self, brushToolPanel, brushTool);
                 }
             }
 
@@ -302,7 +302,7 @@ FoldablePanel {
                 isButtonSelected: toolButtonsGrid.selectedButton == self
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/geometryTools.svg"
                 onButtonClicked: {
-                    parent.selectTool(self, geometryToolPanel, geometryTool)
+                    parent.selectTool(self, geometryToolPanel, geometryTool);
                 }
             }
 
@@ -312,7 +312,7 @@ FoldablePanel {
                 isButtonSelected: toolButtonsGrid.selectedButton == self
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/gradientTools.svg"
                 onButtonClicked: {
-                    parent.selectTool(self, gradientToolPanel, gradientTool)
+                    parent.selectTool(self, gradientToolPanel, gradientTool);
                 }
             }
 
@@ -322,7 +322,7 @@ FoldablePanel {
                 isButtonSelected: toolButtonsGrid.selectedButton == self
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/stampTools.svg"
                 onButtonClicked: {
-                    parent.selectTool(self, stampToolPanel, stampTool)
+                    parent.selectTool(self, stampToolPanel, stampTool);
                 }
             }
 
@@ -332,7 +332,7 @@ FoldablePanel {
                 isButtonSelected: toolButtonsGrid.selectedButton == self
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/textTools.svg"
                 onButtonClicked: {
-                    parent.selectTool(self, textToolPanel, textTool)
+                    parent.selectTool(self, textToolPanel, textTool);
                 }
             }
 
@@ -342,7 +342,7 @@ FoldablePanel {
                 isButtonSelected: toolButtonsGrid.selectedButton == self
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/eraserTools.svg"
                 onButtonClicked: {
-                    parent.selectTool(self, eraserToolPanel, brushTool, true)
+                    parent.selectTool(self, eraserToolPanel, brushTool, true);
                 }
             }
         }
@@ -445,7 +445,7 @@ FoldablePanel {
                 anchors.verticalCenter: parent.verticalCenter
 
                 onButtonClicked: {
-                    toolsPanel.reloadDefaultModeSettings()
+                    toolsPanel.reloadDefaultModeSettings();
                 }
             }
         }
@@ -491,9 +491,9 @@ FoldablePanel {
                     useImageInfo: true
                     onSliderMoved: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserOpacity = value
+                            items.selectedTool.selectedMode.eraserOpacity = value;
                         } else {
-                            items.selectedTool.selectedMode.toolOpacity = value
+                            items.selectedTool.selectedMode.toolOpacity = value;
                         }
                     }
                 }
@@ -510,9 +510,9 @@ FoldablePanel {
                     value: 5
                     onSliderMoved: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserSize = value
+                            items.selectedTool.selectedMode.eraserSize = value;
                         } else {
-                            items.selectedTool.selectedMode.toolSize = value
+                            items.selectedTool.selectedMode.toolSize = value;
                         }
                     }
                 }
@@ -530,9 +530,9 @@ FoldablePanel {
                     value: 6
                     onSliderMoved: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserSpeed = value
+                            items.selectedTool.selectedMode.eraserSpeed = value;
                         } else {
-                            items.selectedTool.selectedMode.toolSpeed = value
+                            items.selectedTool.selectedMode.toolSpeed = value;
                         }
                     }
                 }
@@ -550,9 +550,9 @@ FoldablePanel {
                     value: 5
                     onSliderMoved: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserDensity = value
+                            items.selectedTool.selectedMode.eraserDensity = value;
                         } else {
-                            items.selectedTool.selectedMode.toolDensity = value
+                            items.selectedTool.selectedMode.toolDensity = value;
                         }
                     }
                 }
@@ -570,9 +570,9 @@ FoldablePanel {
                     value: 2
                     onSliderMoved: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserDotsSize = value
+                            items.selectedTool.selectedMode.eraserDotsSize = value;
                         } else {
-                            items.selectedTool.selectedMode.dotsSize = value
+                            items.selectedTool.selectedMode.dotsSize = value;
                         }
                     }
                 }
@@ -589,9 +589,9 @@ FoldablePanel {
                     value: 1 // NOTE init default values on start (value; others are fixed anyway)
                     onSliderMoved: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserSmoothing = value
+                            items.selectedTool.selectedMode.eraserSmoothing = value;
                         } else {
-                            items.selectedTool.selectedMode.toolSmoothing = value
+                            items.selectedTool.selectedMode.toolSmoothing = value;
                         }
                     }
                 }
@@ -604,9 +604,9 @@ FoldablePanel {
                     value: 0 // NOTE init default values on start
                     onPatternClicked: {
                         if(items.eraserMode) {
-                            items.selectedTool.selectedMode.eraserPattern = value
+                            items.selectedTool.selectedMode.eraserPattern = value;
                         } else {
-                            items.selectedTool.selectedMode.toolPattern = value
+                            items.selectedTool.selectedMode.toolPattern = value;
                         }
                     }
                 }
@@ -622,7 +622,7 @@ FoldablePanel {
                     stepSize: 5
                     value: 0
                     onSliderMoved: {
-                        items.selectedTool.selectedMode.toolRadius = value
+                        items.selectedTool.selectedMode.toolRadius = value;
                     }
                 }
 
@@ -638,7 +638,7 @@ FoldablePanel {
                     stepSize: 5
                     value: 0
                     onSliderMoved: {
-                        items.selectedTool.selectedMode.toolRotation = value
+                        items.selectedTool.selectedMode.toolRotation = value;
                     }
                 }
 
@@ -650,7 +650,7 @@ FoldablePanel {
                     checked: false
                     labelText: qsTr("Mirror image")
                     onCheckedChanged: {
-                        items.selectedTool.selectedMode.toolMirror = checked
+                        items.selectedTool.selectedMode.toolMirror = checked;
                     }
                 }
             }

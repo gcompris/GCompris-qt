@@ -39,7 +39,7 @@ FoldablePanel {
                 isButtonSelected: false
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileSave.svg"
                 onButtonClicked: {
-                    Activity.saveImageDialog()
+                    Activity.saveImageDialog();
                 }
                 anchors.left: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -61,7 +61,7 @@ FoldablePanel {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: saveButton.buttonClicked()
+                    onClicked: saveButton.buttonClicked();
                 }
             }
         }
@@ -76,7 +76,7 @@ FoldablePanel {
                 isButtonSelected: false
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileOpen.svg"
                 onButtonClicked: {
-                    Activity.openImageDialog()
+                    Activity.openImageDialog();
                 }
                 anchors.left: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -98,7 +98,7 @@ FoldablePanel {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: openButton.buttonClicked()
+                    onClicked: openButton.buttonClicked();
                 }
             }
         }
@@ -157,8 +157,8 @@ FoldablePanel {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    backgroundColorSelector.visible = true
-                    displayDialog(backgroundColorSelector)
+                    backgroundColorSelector.visible = true;
+                    displayDialog(backgroundColorSelector);
                 }
             }
         }
@@ -203,8 +203,8 @@ FoldablePanel {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    backgroundSelector.visible = true
-                    displayDialog(backgroundSelector)
+                    backgroundSelector.visible = true;
+                    displayDialog(backgroundSelector);
                 }
             }
         }
@@ -219,8 +219,8 @@ FoldablePanel {
                 isButtonSelected: false
                 iconSource: "qrc:/gcompris/src/activities/sketch/resource/fileNew.svg"
                 onButtonClicked: {
-                    Activity.requestNewImage()
-                    filesPanel.forceClose()
+                    Activity.requestNewImage();
+                    filesPanel.forceClose();
                 }
                 anchors.left: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -243,7 +243,7 @@ FoldablePanel {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        newButton.buttonClicked()
+                        newButton.buttonClicked();
                     }
                 }
             }

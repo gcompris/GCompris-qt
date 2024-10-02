@@ -16,7 +16,7 @@ FoldablePanel {
     property alias selectedColor: colorSelector.selectedColor
 
     onClose: {
-        items.selectedTool.toolInit()
+        items.selectedTool.toolInit();
     }
 
     property var paletteList: [
@@ -60,12 +60,12 @@ FoldablePanel {
             width: height
 
             function refreshColor(rectIndex, newColor) {
-                paletteGrid.itemAtIndex(rectIndex).color = newColor
+                paletteGrid.itemAtIndex(rectIndex).color = newColor;
             }
 
             function reloadPaletteColors(palette) {
                 for(var i = 0; i < palette.length; i++) {
-                    paletteGrid.itemAtIndex(i).color = palette[i]
+                    paletteGrid.itemAtIndex(i).color = palette[i];
                 }
             }
 
@@ -87,7 +87,7 @@ FoldablePanel {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    paletteSelector.selectPalette(index)
+                    paletteSelector.selectPalette(index);
                 }
             }
         }
@@ -102,20 +102,22 @@ FoldablePanel {
         height: 50 * ApplicationInfo.ratio
 
         function selectPreviousPalette() {
-            if(paletteListView.currentIndex == 0)
-                return
-            selectPalette(paletteListView.currentIndex - 1)
+            if(paletteListView.currentIndex == 0) {
+                return;
+            }
+            selectPalette(paletteListView.currentIndex - 1);
         }
 
         function selectNextPalette() {
-            if(paletteListView.currentIndex == paletteListView.count - 1)
-                return
-            selectPalette(paletteListView.currentIndex + 1)
+            if(paletteListView.currentIndex == paletteListView.count - 1) {
+                return;
+            }
+            selectPalette(paletteListView.currentIndex + 1);
         }
 
         function selectPalette(index) {
-            paletteListView.currentIndex = index
-            colorSelector.reloadPaletteToButtons()
+            paletteListView.currentIndex = index;
+            colorSelector.reloadPaletteToButtons();
         }
 
         GCText {
@@ -157,7 +159,7 @@ FoldablePanel {
                     onReleased: leftButtonIcon.scale = 1
                     enabled: leftButtonIcon.opacity == 1
                     onClicked: {
-                        paletteSelector.selectPreviousPalette()
+                        paletteSelector.selectPreviousPalette();
                     }
                 }
             }
@@ -183,7 +185,7 @@ FoldablePanel {
                 delegate: paletteItem
                 currentIndex: 0
                 onCurrentIndexChanged: {
-                    positionViewAtIndex(currentIndex, ListView.Contain)
+                    positionViewAtIndex(currentIndex, ListView.Contain);
                 }
             }
 
@@ -207,7 +209,7 @@ FoldablePanel {
                     onReleased: rightButtonIcon.scale = 1
                     enabled: rightButtonIcon.opacity == 1
                     onClicked: {
-                        paletteSelector.selectNextPalette()
+                        paletteSelector.selectNextPalette();
                     }
                 }
             }
@@ -241,14 +243,14 @@ FoldablePanel {
 
         // save edited colors to palette lists and refresh paletteListView
         onColorEdited: (colorIndex, editedColor) => {
-           colorsPanel.paletteList[paletteListView.currentIndex][colorIndex] = editedColor
-           paletteListView.currentItem.refreshColor(colorIndex, editedColor)
+           colorsPanel.paletteList[paletteListView.currentIndex][colorIndex] = editedColor;
+           paletteListView.currentItem.refreshColor(colorIndex, editedColor);
         }
         onResetSelectedPalette: {
             for(var i = 0; i < palette.length; i++) {
-                colorsPanel.paletteList[paletteListView.currentIndex][i] = palette[i]
+                colorsPanel.paletteList[paletteListView.currentIndex][i] = palette[i];
             }
-            paletteListView.currentItem.reloadPaletteColors(colorsPanel.paletteList[paletteListView.currentIndex])
+            paletteListView.currentItem.reloadPaletteColors(colorsPanel.paletteList[paletteListView.currentIndex]);
         }
     }
 }

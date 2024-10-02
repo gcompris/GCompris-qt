@@ -41,7 +41,7 @@ Item {
         onPressed: buttonColor.opacity = 0.5
         onReleased: buttonColor.opacity = 0.1
         onClicked: {
-            selectionButton.buttonClicked()
+            selectionButton.buttonClicked();
         }
     }
 }

@@ -74,7 +74,7 @@ Rectangle {
     GCButtonCancel {
         id: exitButton
         onClose: {
-            backgroundSelector.close()
+            backgroundSelector.close();
         }
     }
 }

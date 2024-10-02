@@ -18,14 +18,14 @@ Item {
 
     // Set selected mode on selected tool, and triggered when selecting the tool
     function setToolMode() {
-        items.selectedTool.selectedMode = selectedModeButton.toolMode
-        toolsPanel.loadModeSettings()
+        items.selectedTool.selectedMode = selectedModeButton.toolMode;
+        toolsPanel.loadModeSettings();
     }
 
     // Save selected mode for current tool, then call setToolMode
     function selectMode(modeButton) {
-        selectedModeButton = modeButton
-        setToolMode()
+        selectedModeButton = modeButton;
+        setToolMode();
     }
 
     Grid {
@@ -44,7 +44,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/rectangleTool.svg"
             property Item toolMode: geometryTool.rectangleMode
             onButtonClicked: {
-                geometryToolPanel.selectMode(self)
+                geometryToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -55,7 +55,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/squareTool.svg"
             property Item toolMode: geometryTool.squareMode
             onButtonClicked: {
-                geometryToolPanel.selectMode(self)
+                geometryToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -66,7 +66,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/ovalTool.svg"
             property Item toolMode: geometryTool.ovalMode
             onButtonClicked: {
-                geometryToolPanel.selectMode(self)
+                geometryToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -77,7 +77,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/circleTool.svg"
             property Item toolMode: geometryTool.circleMode
             onButtonClicked: {
-                geometryToolPanel.selectMode(self)
+                geometryToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -88,7 +88,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/freeLineTool.svg"
             property Item toolMode: geometryTool.freeLineMode
             onButtonClicked: {
-                geometryToolPanel.selectMode(self)
+                geometryToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -99,7 +99,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/hortoLineTool.svg"
             property Item toolMode: geometryTool.hortoLineMode
             onButtonClicked: {
-                geometryToolPanel.selectMode(self)
+                geometryToolPanel.selectMode(self);
             }
         }
     }

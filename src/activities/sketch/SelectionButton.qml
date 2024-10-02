@@ -38,7 +38,7 @@ Item {
         onReleased: buttonIcon.scale = 1
         enabled: !selectionButton.isButtonSelected
         onClicked: {
-            selectionButton.buttonClicked()
+            selectionButton.buttonClicked();
         }
     }
 

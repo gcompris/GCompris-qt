@@ -18,14 +18,14 @@ Item {
 
     // Set selected mode on selected tool, and triggered when selecting the tool
     function setToolMode() {
-        items.selectedTool.selectedMode = selectedModeButton.toolMode
-        toolsPanel.loadModeSettings()
+        items.selectedTool.selectedMode = selectedModeButton.toolMode;
+        toolsPanel.loadModeSettings();
     }
 
     // Save selected mode for current tool, then call setToolMode
     function selectMode(modeButton) {
-        selectedModeButton = modeButton
-        setToolMode()
+        selectedModeButton = modeButton;
+        setToolMode();
     }
 
     Grid {
@@ -44,7 +44,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/linearGradient.svg"
             property Item toolMode: gradientTool.linearGradient
             onButtonClicked: {
-                gradientToolPanel.selectMode(self)
+                gradientToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -55,7 +55,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/radialGradient.svg"
             property Item toolMode: gradientTool.radialGradient
             onButtonClicked: {
-                gradientToolPanel.selectMode(self)
+                gradientToolPanel.selectMode(self);
             }
         }
         SelectionButton {
@@ -66,7 +66,7 @@ Item {
             iconSource: "qrc:/gcompris/src/activities/sketch/resource/invertedRadialGradient.svg"
             property Item toolMode: gradientTool.invertedRadialGradient
             onButtonClicked: {
-                gradientToolPanel.selectMode(self)
+                gradientToolPanel.selectMode(self);
             }
         }
     }

@@ -18,12 +18,12 @@ Item {
     property string toolTitle: qsTr("Stamp Tool")
 
     onSelectedModeButtonChanged: {
-        stampTool.selectedStampIndex = modeList.currentIndex
+        stampTool.selectedStampIndex = modeList.currentIndex;
     }
 
     // Triggered when selecting the tool
     function setToolMode() {
-        toolsPanel.loadModeSettings()
+        toolsPanel.loadModeSettings();
     }
 
     GridView {
@@ -40,7 +40,7 @@ Item {
             buttonSize: toolsPanel.stampButtonsSize
             isButtonSelected: index == modeList.currentIndex
             iconSource: modelData
-            onButtonClicked: modeList.currentIndex = index
+            onButtonClicked: modeList.currentIndex = index;
             Rectangle {
                 z: -1
                 anchors.fill: parent

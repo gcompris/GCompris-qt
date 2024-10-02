@@ -47,7 +47,7 @@ Item {
                 stepSize: 0.1
                 value: 0.5
                 onMoved: {
-                    sliderSettings.sliderMoved()
+                    sliderSettings.sliderMoved();
                 }
             }
             Rectangle {
