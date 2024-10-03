@@ -147,7 +147,7 @@ FoldablePanel {
                 Image {
                     id: leftButtonIcon
                     anchors.fill: parent
-                    source: "qrc:/gcompris/src/activities/sketch/resource/empty.svg"
+                    source: "qrc:/gcompris/src/activities/sketch/resource/arrow.svg"
                     sourceSize.width: width
                     sourceSize.height: height
                     opacity: paletteListView.currentIndex == 0 ? 0.5 : 1
@@ -197,7 +197,8 @@ FoldablePanel {
                 Image {
                     id: rightButtonIcon
                     anchors.fill: parent
-                    source: "qrc:/gcompris/src/activities/sketch/resource/empty.svg"
+                    source: "qrc:/gcompris/src/activities/sketch/resource/arrow.svg"
+                    mirror: true
                     sourceSize.width: items.buttonSize
                     sourceSize.height: items.buttonSize
                     opacity: paletteListView.currentIndex == paletteListView.count - 1 ? 0.5 : 1

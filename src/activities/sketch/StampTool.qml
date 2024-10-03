@@ -30,6 +30,8 @@ Item {
     property list<string> stamps: [
         "qrc:/gcompris/src/activities/babymatch/resource/images/star.svg",
         "qrc:/gcompris/src/activities/babymatch/resource/images/sun.svg",
+        "qrc:/gcompris/src/activities/sketch/resource/moon.svg",
+        "qrc:/gcompris/src/activities/sketch/resource/heart.svg",
 
         "qrc:/gcompris/src/core/resource/player_1.svg",
         "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg",
