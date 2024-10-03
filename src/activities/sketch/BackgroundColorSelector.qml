@@ -60,15 +60,8 @@ Rectangle {
         doubleLineHeight: toolsPanel.settingsDoubleLineHeight
         buttonSize: toolsPanel.modeButtonsSize
 
-        palette:
-            [Qt.rgba(1, 1, 1, 1), Qt.rgba(0.91, 0.47, 0.21, 1), Qt.rgba(0.91, 0.73, 0.21, 1),
-            Qt.rgba(0.46, 0.82, 0.11, 1), Qt.rgba(0.11, 0.82, 0.82, 1), Qt.rgba(0.11, 0.55, 0.82, 1),
-            Qt.rgba(0.8, 0.47, 0.84, 1), Qt.rgba(0.88, 0.44, 0.44, 1), Qt.rgba(0, 0, 0, 1)]
-
-        defaultPalette:
-            [Qt.rgba(1, 1, 1, 1), Qt.rgba(0.91, 0.47, 0.21, 1), Qt.rgba(0.91, 0.73, 0.21, 1),
-            Qt.rgba(0.46, 0.82, 0.11, 1), Qt.rgba(0.11, 0.82, 0.82, 1), Qt.rgba(0.11, 0.55, 0.82, 1),
-            Qt.rgba(0.8, 0.47, 0.84, 1), Qt.rgba(0.88, 0.44, 0.44, 1), Qt.rgba(0, 0, 0, 1)]
+        palette: ["#ffffff","#e87836","#e8ba36","#75d11c","#1cd1d1","#1c8cd1","#cc78d6","#e07070","#000000"]
+        defaultPalette: ["#ffffff","#e87836","#e8ba36","#75d11c","#1cd1d1","#1c8cd1","#cc78d6","#e07070","#000000"]
     }
 
     GCButtonCancel {

@@ -20,26 +20,58 @@ FoldablePanel {
     }
 
     property var paletteList: [
-        // Test Palette 1
-        [Qt.rgba(0, 0, 0, 1), Qt.rgba(0.91, 0.47, 0.21, 1), Qt.rgba(0.91, 0.73, 0.21, 1),
-        Qt.rgba(0.46, 0.82, 0.11, 1), Qt.rgba(0.11, 0.82, 0.82, 1), Qt.rgba(0.11, 0.55, 0.82, 1),
-        Qt.rgba(0.8, 0.47, 0.84, 1), Qt.rgba(0.88, 0.44, 0.44, 1), Qt.rgba(1, 1, 1, 1)],
-        // Gray Palette
-        [Qt.rgba(0.1, 0.1, 0.1, 1), Qt.rgba(0.2, 0.2, 0.2, 1), Qt.rgba(0.3, 0.3, 0.3, 1),
-        Qt.rgba(0.4, 0.4, 0.4, 1), Qt.rgba(0.5, 0.5, 0.5, 1), Qt.rgba(0.6, 0.6, 0.6, 1),
-        Qt.rgba(0.7, 0.7, 0.7, 1), Qt.rgba(0.8, 0.8, 0.8, 1), Qt.rgba(0.9, 0.9, 0.9, 1)]
+        // Default palette
+        ["#000000","#e87836","#e8ba36","#75d11c","#1cd1d1","#1c8cd1","#cc78d6","#e07070","#ffffff"],
+        // Gray palette
+        ["#1a1a1a","#333333","#4d4d4d","#666666","#808080","#999999","#b3b3b3","#cccccc","#e6e6e6"],
+        // Red
+        ["#730c0c","#991010","#be1515","#ea1313","#ee3939","#f26161","#f88585","#faadad","#fcd7d7"],
+        // Orange
+        ["#73330c","#994710","#be5915","#ea6913","#ee7d39","#f29b61","#f8b385","#faccad","#fce6d7"],
+        // Yellow
+        ["#735c0c","#997d10","#be9c15","#eabf13","#eec639","#f2d561","#f8e185","#faebad","#fcf4d7"],
+        // Green (yellowish)
+        ["#35730c","#479910","#5dbe15","#69ea13","#81ee39","#9bf261","#b6f885","#ccfaad","#e6fcd7"],
+        // Green (bluish)
+        ["#0c7333","#109944","#15be59","#13ea64","#39ee81","#61f298","#85f8b3","#adfacc","#d7fce6"],
+        // Blue (sky)
+        ["#0c5e73","#107d99","#15a0be","#13bfea","#39caee","#61d5f2","#85e1f8","#adebfa","#d7f5fc"],
+        // Blue (marine)
+        ["#0c3573","#104799","#155dbe","#1369ea","#3981ee","#619bf2","#85b6f8","#adccfa","#d7e6fc"],
+        // Purple (bluish)
+        ["#330c73","#471099","#5915be","#6913ea","#7d39ee","#9b61f2","#b385f8","#ccadfa","#e5d7fc"],
+        // Purple (redish)
+        ["#5c0c73","#7a1099","#9c15be","#ba13ea","#c639ee","#d161f2","#de85f8","#e9adfa","#f4d7fc"],
+        // Pink
+        ["#730c35","#991047","#be155d","#ea1369","#ee3981","#f2619b","#f885b3","#faadcc","#fcd7e6"]
     ]
 
     // Copy of paletteList to restore edited values
     readonly property var defaultPaletteList: [
-        // Test Palette 1
-        [Qt.rgba(0, 0, 0, 1), Qt.rgba(0.91, 0.47, 0.21, 1), Qt.rgba(0.91, 0.73, 0.21, 1),
-        Qt.rgba(0.46, 0.82, 0.11, 1), Qt.rgba(0.11, 0.82, 0.82, 1), Qt.rgba(0.11, 0.55, 0.82, 1),
-        Qt.rgba(0.8, 0.47, 0.84, 1), Qt.rgba(0.88, 0.44, 0.44, 1), Qt.rgba(1, 1, 1, 1)],
-        // Gray Palette
-        [Qt.rgba(0.1, 0.1, 0.1, 1), Qt.rgba(0.2, 0.2, 0.2, 1), Qt.rgba(0.3, 0.3, 0.3, 1),
-        Qt.rgba(0.4, 0.4, 0.4, 1), Qt.rgba(0.5, 0.5, 0.5, 1), Qt.rgba(0.6, 0.6, 0.6, 1),
-        Qt.rgba(0.7, 0.7, 0.7, 1), Qt.rgba(0.8, 0.8, 0.8, 1), Qt.rgba(0.9, 0.9, 0.9, 1)]
+        // Default palette
+        ["#000000","#e87836","#e8ba36","#75d11c","#1cd1d1","#1c8cd1","#cc78d6","#e07070","#ffffff"],
+        // Gray palette
+        ["#1a1a1a","#333333","#4d4d4d","#666666","#808080","#999999","#b3b3b3","#cccccc","#e6e6e6"],
+        // Red
+        ["#730c0c","#991010","#be1515","#ea1313","#ee3939","#f26161","#f88585","#faadad","#fcd7d7"],
+        // Orange
+        ["#73330c","#994710","#be5915","#ea6913","#ee7d39","#f29b61","#f8b385","#faccad","#fce6d7"],
+        // Yellow
+        ["#735c0c","#997d10","#be9c15","#eabf13","#eec639","#f2d561","#f8e185","#faebad","#fcf4d7"],
+        // Green (yellowish)
+        ["#35730c","#479910","#5dbe15","#69ea13","#81ee39","#9bf261","#b6f885","#ccfaad","#e6fcd7"],
+        // Green (bluish)
+        ["#0c7333","#109944","#15be59","#13ea64","#39ee81","#61f298","#85f8b3","#adfacc","#d7fce6"],
+        // Blue (sky)
+        ["#0c5e73","#107d99","#15a0be","#13bfea","#39caee","#61d5f2","#85e1f8","#adebfa","#d7f5fc"],
+        // Blue (marine)
+        ["#0c3573","#104799","#155dbe","#1369ea","#3981ee","#619bf2","#85b6f8","#adccfa","#d7e6fc"],
+        // Purple (bluish)
+        ["#330c73","#471099","#5915be","#6913ea","#7d39ee","#9b61f2","#b385f8","#ccadfa","#e5d7fc"],
+        // Purple (redish)
+        ["#5c0c73","#7a1099","#9c15be","#ba13ea","#c639ee","#d161f2","#de85f8","#e9adfa","#f4d7fc"],
+        // Pink
+        ["#730c35","#991047","#be155d","#ea1369","#ee3981","#f2619b","#f885b3","#faadcc","#fcd7e6"]
     ]
 
     Rectangle {
