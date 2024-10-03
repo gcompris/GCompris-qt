@@ -30,5 +30,5 @@ ActivityInfo {
           qsTr("Sketch brush concept from:") + " https://mrdoob.com/projects/harmony/ "
   section: "discovery arts fun"
   createdInVersion: 250000
-  enabled: true // TODO disable if software rendering is used!
+  enabled: !ApplicationInfo.useSoftwareRenderer
 }
