@@ -596,11 +596,21 @@ FoldablePanel {
                     }
                 }
 
+                // Takes 1.5 height compared to Sliders...
+                GCText {
+                    id: patternLabel
+                    visible: patternSelector.visible
+                    text: "Pattern"
+                    color: items.contentColor
+                    width: toolsPanel.settingsColumnWidth
+                    height: toolsPanel.settingsLineHeight
+                    fontSize: regularSize
+                    fontSizeMode: Text.Fit
+                    verticalAlignment: Text.AlignBottom
+                }
                 PatternSelector {
                     id: patternSelector
                     width: toolsPanel.settingsColumnWidth
-                    height: toolsPanel.settingsDoubleLineHeight
-                    controlsHeight: toolsPanel.settingsLineHeight
                     value: 0 // NOTE init default values on start
                     onPatternClicked: {
                         if(items.eraserMode) {
@@ -610,6 +620,7 @@ FoldablePanel {
                         }
                     }
                 }
+                //
 
                 SliderSettings {
                     id: radiusSlider
