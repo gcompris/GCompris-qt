@@ -202,12 +202,14 @@ if(BUILD_STANDALONE)
    set(_qml_plugins
      QtQml/Models/${_lib_prefix}modelsplugin
      QtQml/WorkerScript/${_lib_prefix}workerscriptplugin
+     QtCore/${_lib_prefix}qtqmlcoreplugin
      QtQuick/Controls/Basic/impl/${_lib_prefix}qtquickcontrols2basicstyleimplplugin
      QtQuick/Controls/impl/${_lib_prefix}qtquickcontrols2implplugin
      QtQuick/Effects/${_lib_prefix}effectsplugin
      QtQuick/Window/${_lib_prefix}quickwindowplugin
      QtQuick/Particles/${_lib_prefix}particlesplugin
      QtQuick/${_lib_prefix}qtquick2plugin
+     QtQuick/Shapes/${_lib_prefix}qmlshapesplugin
      QtMultimedia/${_lib_prefix}quickmultimediaplugin
      QtSensors/${_lib_prefix}sensorsquickplugin
      QtCharts/${_lib_prefix}qtchartsqml2plugin)
