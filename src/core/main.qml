@@ -290,88 +290,7 @@ Window {
     }
 
     Component.onCompleted: {
-        piou.start();
-        console.log("enter main.qml (run #" + ApplicationSettings.exeCount
-                    + ", ratio=" + ApplicationInfo.ratio
-                    + ", fontRatio=" + ApplicationInfo.fontRatio
-                    + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
-                    + ", userDataPath=" + ApplicationSettings.userDataPath
-                    + ")");
-        DownloadManager.initializeAssets();
-
-        // Register local full rcc if it exists. We don't try to check if there is one more up to date on the server, we register the one we have
-        var fullRccPath = DownloadManager.getResourcePath(GCompris.FULL, {});
-        if(fullRccPath != "") {
-            DownloadManager.registerResource(fullRccPath);
-        }
-
-        if (ApplicationSettings.exeCount === 1 &&
-                !ApplicationSettings.isKioskMode) {
-            checkVoices();
-            checkWordset();
-            checkBackgroundMusic();
-            // first run
-            var dialog;
-            dialog = Core.showMessageDialog(
-                        pageView,
-                        qsTr("Welcome to GCompris!") + ("<br>")
-                        + qsTr("You are running GCompris for the first time.") + "\n"
-                        + qsTr("You should verify that your application settings especially your language is set correctly. You can do this in the Configuration dialog.")
-                        + "\n"
-                        + qsTr("Have Fun!")
-                        + ("<br><br>")
-                        + qsTr("Your current language is %1 (%2).")
-                          .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
-                          .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)),
-                        "", null,
-                        "", null,
-                        function() {
-                            pageView.currentItem.focus = true;
-                            if(ApplicationInfo.isDownloadAllowed) {
-                                initialAssetsDownload();
-                            }
-                        }
-             );
-        }
-        else {
-            // Register voices-resources for current locale, updates/downloads only if
-            // not prohibited by the settings
-            DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
-
-            checkWordset();
-            DownloadManager.updateResource(GCompris.WORDSET, {});
-
-            checkBackgroundMusic();
-            DownloadManager.updateResource(GCompris.BACKGROUND_MUSIC, {});
-
-            if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
-                lastGCVersionRanCopy = ApplicationSettings.lastGCVersionRan;
-
-                const newDatasets = changelog.getNewDatasetsBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode);
-
-                // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
-                Core.showMessageDialog(
-                pageView,
-                qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
-                "", null,
-                "", null,
-                function() {
-                    if(newDatasets.length != 0) {
-                        showNewDatasetsDialog(newDatasets);
-                    }
-                    else {
-                        pageView.currentItem.focus = true;
-                    }
-                }
-                );
-
-                // Store new version after update
-                ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
-            }
-        }
-        //Store version on first run in any case
-        if(ApplicationSettings.lastGCVersionRan === 0)
-            ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
+        load.start();
     }
 
     Loader {
@@ -438,21 +357,102 @@ Window {
     }
 
     Timer {
-        id: piou
-        interval: 5000
+        id: load
+        triggeredOnStart: true
         repeat: false
 
         onTriggered: {
-            print("hide splash");
-            splash.visible = false
+            console.log("enter main.qml (run #" + ApplicationSettings.exeCount
+                        + ", ratio=" + ApplicationInfo.ratio
+                        + ", fontRatio=" + ApplicationInfo.fontRatio
+                        + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
+                        + ", userDataPath=" + ApplicationSettings.userDataPath
+                        + ")");
+            DownloadManager.initializeAssets();
+
+            // Register local full rcc if it exists. We don't try to check if there is one more up to date on the server, we register the one we have
+            var fullRccPath = DownloadManager.getResourcePath(GCompris.FULL, {});
+            if(fullRccPath != "") {
+                DownloadManager.registerResource(fullRccPath);
+            }
+
+            if (ApplicationSettings.exeCount === 1 &&
+                    !ApplicationSettings.isKioskMode) {
+                checkVoices();
+                checkWordset();
+                checkBackgroundMusic();
+                // first run
+                var dialog;
+                dialog = Core.showMessageDialog(
+                            pageView,
+                            qsTr("Welcome to GCompris!") + ("<br>")
+                            + qsTr("You are running GCompris for the first time.") + "\n"
+                            + qsTr("You should verify that your application settings especially your language is set correctly. You can do this in the Configuration dialog.")
+                            + "\n"
+                            + qsTr("Have Fun!")
+                            + ("<br><br>")
+                            + qsTr("Your current language is %1 (%2).")
+                              .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
+                              .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)),
+                            "", null,
+                            "", null,
+                            function() {
+                                pageView.currentItem.focus = true;
+                                if(ApplicationInfo.isDownloadAllowed) {
+                                    initialAssetsDownload();
+                                }
+                            }
+                 );
+            }
+            else {
+                // Register voices-resources for current locale, updates/downloads only if
+                // not prohibited by the settings
+                DownloadManager.updateResource(GCompris.VOICES, {"locale": ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)});
+
+                checkWordset();
+                DownloadManager.updateResource(GCompris.WORDSET, {});
+
+                checkBackgroundMusic();
+                DownloadManager.updateResource(GCompris.BACKGROUND_MUSIC, {});
+
+                if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
+                    lastGCVersionRanCopy = ApplicationSettings.lastGCVersionRan;
+
+                    const newDatasets = changelog.getNewDatasetsBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode);
+
+                    // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
+                    Core.showMessageDialog(
+                    pageView,
+                    qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
+                    "", null,
+                    "", null,
+                    function() {
+                        if(newDatasets.length != 0) {
+                            showNewDatasetsDialog(newDatasets);
+                        }
+                        else {
+                            pageView.currentItem.focus = true;
+                        }
+                    }
+                    );
+
+                    // Store new version after update
+                    ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
+                }
+            }
+            //Store version on first run in any case
+            if(ApplicationSettings.lastGCVersionRan === 0)
+                ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
+
         }
     }
 
+    property bool startInProgress: true
     color: "#16B8EA"
     // splash screen
     Item {
         id: splash
-        visible: true
+        visible: startInProgress
         anchors.fill: parent
         Image {
             id: logo

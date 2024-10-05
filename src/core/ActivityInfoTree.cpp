@@ -338,6 +338,8 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
         else {
             qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
         }
+        // As we need to load the qml files within the main thread, we need to process the events so
+        // the qml loading screen is active and do not only display a white screen
         QCoreApplication::processEvents();
     }
 
@@ -358,7 +360,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     Q_UNUSED(scriptEngine)
 
     ActivityInfoTree *menuTree = getInstance();
-    //menuTree->initialize(engine);
     return menuTree;
 }
 

@@ -17,37 +17,11 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QSettings>
-#include <QSplashScreen>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
-
-#include <QPainter>
-
-class SplashScreen: public QSplashScreen {
-public:
-    SplashScreen(const QPixmap &pixmap = QPixmap()) : QSplashScreen(pixmap, Qt::WindowStaysOnTopHint) {
-        QImage bg(logo);
-        bg.fill(Qt::blue);
-        QPixmap background;
-        background.convertFromImage(bg);
-        setPixmap(background);
-    }
-
-    void drawContents(QPainter *painter) {
-        painter->drawImage(0, 0, logo);
-
-        qDebug() << "paint";
-
-        painter->drawPixmap((logo.width() - loading.width()) / 2, 0, loading);
-        QSplashScreen::drawContents(painter);
-    }
-private:
-    QImage logo = QImage(QStringLiteral(":/gcompris/src/core/resource/gcompris-logo-full.svg"));
-    QPixmap loading = QPixmap::fromImage(QImage(QStringLiteral(":/gcompris/src/core/resource/loading.svg")));
-};
 
 int main(int argc, char *argv[])
 {
@@ -157,10 +131,6 @@ int main(int argc, char *argv[])
     GComprisPlugin plugin;
     plugin.registerTypes("GCompris");
     ActivityInfoTree::registerResources();
-
-    SplashScreen splash;
-    //splash.show();
-    //QCoreApplication::processEvents();
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
@@ -307,9 +277,6 @@ int main(int argc, char *argv[])
     }
 #endif
 
-    // To force the refresh of the splash screen in the window
-    QCoreApplication::processEvents();
-
     ActivityInfoTree::getInstance()->initialize(&engine);
 
     if (parser.isSet(exportActivitiesAsSQL)) {
@@ -355,6 +322,8 @@ int main(int argc, char *argv[])
             return -1;
         }
     }
+
+    topLevel->setProperty("startInProgress", false);
 
     return app.exec();
 }
