@@ -266,9 +266,7 @@ int main(int argc, char *argv[])
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
 
-#if __ANDROID__
-    window->showMaximized();
-#else
+#if !__ANDROID__
     if (isFullscreen) {
         window->showFullScreen();
     }
@@ -324,6 +322,10 @@ int main(int argc, char *argv[])
     }
 
     topLevel->setProperty("startInProgress", false);
+
+#if __ANDROID__
+    window->showMaximized();
+#endif
 
     return app.exec();
 }

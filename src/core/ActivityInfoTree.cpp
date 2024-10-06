@@ -300,7 +300,7 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
     QString startingActivity = m_startingActivity;
     for (const QString &line: activities) {
         QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
-        qDebug() << "load " << url;
+
 #ifdef WITH_RCC
         if (!QResource::registerResource(
                 ApplicationInfo::getFilePath(line + ".rcc")))
@@ -322,9 +322,12 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
         else {
             qDebug() << "ERROR: failed to load " << line << " " << activityComponentRoot.errors();
         }
+
+#if !__ANDROID__
         // As we need to load the qml files within the main thread, we need to process the events so
         // the qml loading screen is active and do not only display a white screen
         QCoreApplication::processEvents();
+#endif
     }
 
     // In case we have asked for a specific activity to start but the activity does not exist, we reinitialise the value

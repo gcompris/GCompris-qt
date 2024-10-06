@@ -447,41 +447,35 @@ Window {
         }
     }
 
-    property bool startInProgress: true
-    color: "#16B8EA"
-    // splash screen
-    Item {
-        id: splash
-        visible: startInProgress
-        anchors.fill: parent
-        Image {
-            id: logo
-            source: "qrc:/gcompris/src/core/resource/gcompris-logo-full.svg"
-            anchors.bottom: parent.bottom
-            anchors.right: parent.right
-            anchors.margins: 20
-            width: parent.width * 0.3
-            sourceSize.width: width
-            fillMode: Image.PreserveAspectFit
-        }
-        Image {
-            id: loadingImage
-            source: "qrc:/gcompris/src/core/resource/loading.svg"
-            anchors.centerIn: parent
-            sourceSize.width: 150
-            width: sourceSize.width
-            height: sourceSize.width
-            opacity: 0.8
+    Timer {
+        id: startApplicationTimer
+        interval: 1000
+        repeat: false
 
-            RotationAnimation on rotation {
-                id: rotation
-                running: splash.visible
-                from: 0
-                to: 360
-                loops: Animation.Infinite
-                duration: 1500
-            }
+        onTriggered: {
+            print("Start activity", ActivityInfoTree.startingActivity, "at level", ActivityInfoTree.startingLevel);
+            pageView.currentItem.startActivity(ActivityInfoTree.startingActivity, ActivityInfoTree.startingLevel);
         }
+    }
+
+    property bool startInProgress: true
+    onStartInProgressChanged: {
+        pageView.push("qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name, {
+            'audioVoices': audioVoices,
+            'loading': loading,
+            'backgroundMusic': backgroundMusic
+        })
+        if(ActivityInfoTree.startingActivity !== "") {
+            startApplicationTimer.start();
+        }
+    }
+
+    SplashScreen {
+        id: splash
+        // We display the splash screen if we are loading GCompris (startInProgress) and
+        // when we are starting an activity via --launch
+        visible: startInProgress || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active))
+        anchors.fill: parent
     }
 
     StackView {
@@ -489,30 +483,6 @@ Window {
         anchors.fill: parent
         visible: !splash.visible
         focus: true
-        onVisibleChanged: {
-            if(!visible) return;
-            push("qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name, {
-                'audioVoices': audioVoices,
-                'loading': loading,
-                'backgroundMusic': backgroundMusic
-            })
-
-            if(ActivityInfoTree.startingActivity != "") {
-                startApplicationTimer.start();
-            }
-        }
-
-        Timer {
-            id: startApplicationTimer
-            interval: 1000
-            repeat: false
-
-            onTriggered: {
-                print("Start activity", ActivityInfoTree.startingActivity, "at level", ActivityInfoTree.startingLevel);
-                pageView.currentItem.startActivity(ActivityInfoTree.startingActivity, ActivityInfoTree.startingLevel);
-            }
-        }
-
 
         property var enterItem
         property var exitItem
