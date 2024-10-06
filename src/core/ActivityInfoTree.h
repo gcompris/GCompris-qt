@@ -44,8 +44,6 @@ public:
     void setCurrentActivity(ActivityInfo *currentActivity);
     ActivityInfo *getCurrentActivity() const;
     void menuTreeAppend(ActivityInfo *menu);
-    void menuTreeAppend(QQmlEngine *engine,
-                        const QDir &menuDir, const QString &menuFile);
     void sortByDifficultyThenName(bool emitChanged = true);
     QVariantList allCharacters();
 

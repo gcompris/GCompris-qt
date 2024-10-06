@@ -117,22 +117,6 @@ void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
     m_menuTreeFull.append(menu);
 }
 
-void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
-                                      const QDir &menuDir, const QString &menuFile)
-{
-    QQmlComponent component(engine,
-                            QUrl::fromLocalFile(menuDir.absolutePath() + '/' + menuFile));
-    QObject *object = component.create();
-    if (component.isReady()) {
-        if (QQmlProperty::read(object, "section").toString() == "/") {
-            menuTreeAppend(qobject_cast<ActivityInfo *>(object));
-        }
-    }
-    else {
-        qDebug() << menuFile << ": Failed to load";
-    }
-}
-
 void ActivityInfoTree::sortByDifficultyThenName(bool emitChanged)
 {
     std::sort(m_menuTree.begin(), m_menuTree.end(),
