@@ -3,14 +3,14 @@
 # Ferdinand Galko <galko.ferdinand@gmail.com>, 2015, 2019.
 # Matej Mrenica <matejm98mthw@gmail.com>, 2020.
 # Jose Riha <jose1711@gmail.com>, 2020.
-# Miroslav Ďurian <aasami@gmail.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Miroslav Ďurian <aasami@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2023-05-31 15:56+0200\n"
+"PO-Revision-Date: 2024-10-06 02:32+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
-"Language-Team: Slovak <kde-i18n-doc@kde.org>\n"
+"Language-Team:  kde-sk\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Language: sk\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -59,135 +59,87 @@ msgstr "Overiť odpovede"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi susediace čísla"
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi chýbajúce susedné čísla."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Naučte sa o prvočíslach."
+msgstr "Učiť sa zoraďovať čísla."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Porovnaj čísla a zvoľ príslušné znamienko."
+msgstr "Nájdi požadované čísla a potiahni ich na príslušné miesto."
 
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Čísla medzi %1 a %2."
+msgstr "Nájdi čísla medzi 1 a 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Čísla medzi %1 a %2."
+msgstr "Nájdi čísla medzi 0 a 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Čísla medzi %1 a %2."
+msgstr "Nájdi čísla medzi 0 a 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi nasledujúce číslo."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi predchádzajúce číslo."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi prostredné číslo."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi chýbajúce čísla."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi nasledujúce čísla."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi predchádzajúce čísla."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Nájdite obidve čísla."
+msgstr "Nájdi prostredné čísla."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Čísla medzi %1 a %2."
+msgstr "Nájdi čísla medzi -10 a -1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Čísla medzi %1 a %2."
+msgstr "Nájdi čísla medzi -10 a 10."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -993,12 +945,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Naučte sa tabuľku násobkov 10."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Tabuľky násobkov od 1 do 10."
+msgstr "Precvičiť si tabuľku násobkov od 1 do 10."
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1087,12 +1036,9 @@ msgid "Learn division table of 10."
 msgstr "Naučte sa tabuľku delenia 10."
 
 #: activities/algebra_div/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice division tables from 1 to 10."
-msgstr "Tabuľky násobkov od 1 do 10."
+msgstr "Precvičiť si tabuľku delenia od 1 do 10."
 
 #: activities/algebra_div/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1183,28 +1129,19 @@ msgid "Learn subtraction table of 10."
 msgstr "Naučte sa tabuľku odčítania 10."
 
 #: activities/algebra_minus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 10."
-msgstr "Odčítavanie desatinných čísel do 1."
+msgstr "Odčítavanie od čísla nie väčšieho ako 10."
 
 #: activities/algebra_minus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 20."
-msgstr "Odčítavanie desatinných čísel do 1."
+msgstr "Odčítavanie od čísla nie väčšieho ako 20."
 
 #: activities/algebra_minus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtract decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Subtractions from number up to 100."
-msgstr "Odčítavanie desatinných čísel do 1."
+msgstr "Odčítavanie od čísla nie väčšieho ako 100."
 
 #: activities/algebra_minus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1293,28 +1230,19 @@ msgid "Learn addition table of 10."
 msgstr "Naučte sa tabuľku sčítania 10."
 
 #: activities/algebra_plus/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 10."
-msgstr "Pridávanie desatinných čísel do 1."
+msgstr "Sčítavanie čísel nie väčších ako 10."
 
 #: activities/algebra_plus/resource/12/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add decimal numbers up to 1."
 msgctxt "Data|"
 msgid "Additions with numbers up to 15."
-msgstr "Pridávanie desatinných čísel do 1."
+msgstr "Sčítavanie čísel nie väčších ako 15."
 
 #: activities/algebra_plus/resource/13/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Add stars up to 10."
 msgctxt "Data|"
 msgid "Additions with result up to 100."
-msgstr "Sčítavanie hviezd do 10."
+msgstr "Sčítavanie čísel nie väčších ako 100."
 
 #: activities/algebra_plus/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1364,21 +1292,15 @@ msgstr "Logické asociácie"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
 msgstr "Dokončiť usporiadanie ovocia."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "Logické asociácie"
+msgstr "Precvičiť si logické asociácie."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1401,9 +1323,6 @@ msgstr "Zarovnať štyri (proti tučniakovi)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
 msgstr "Usporiadať štyri žetóny do jedného radu."
@@ -1411,12 +1330,9 @@ msgstr "Usporiadať štyri žetóny do jedného radu."
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Jemná motorická koordinácia."
+msgstr "Rozvoj predvídavosti a strategickej zručnosti."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1430,18 +1346,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
 "Vytvoriť líniu štyroch žetónov horizontálne (naležato), vertikálne "
-"(nastojato) alebo diagonálne."
+"(nastojato) alebo diagonálne (šikmo)."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -2100,12 +2011,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Klávesnica pre najmenších"
+msgstr "Moja prvá klávesnica"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2140,12 +2048,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse"
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr "Pohni myšou"
+msgstr "Moja prvá myš"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2219,27 +2124,21 @@ msgstr "Jednoduchý klik v stednej časti zobrazí značku na mieste kliknutia."
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Doplniť tvary"
+msgstr "Jednoduchá skladačka"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Zarovnajte predmety s ich tvarmi."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to find the matching pairs"
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Otáčaj karty a nájdi zhodné páry"
+msgstr "Učiť sa zarovnať predmet s jeho tvarom."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2258,42 +2157,24 @@ msgstr "Prahrať zvuky znakov pri stlačení"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Detský textový editor"
+msgstr "Môj prvý textový editor"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Napíš svoje prvé texty."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction with a fun game"
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Precvičovanie odčítania pomocou zábavnej hry"
+msgstr "Učiť sa písanie textu pomocou textového editora."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Just type on the real or virtual keyboard like in a wordprocessor.\n"
-#| "    Clicking on the 'Title' button will make the text bigger. Similarly, "
-#| "the 'subtitle' button will make the text slightly less bigger. Clicking "
-#| "on 'paragraph' will remove the formatting.\n"
-#| "    Press 'Shift' and use the arrow keys to select the text. Use Ctrl+C "
-#| "to copy, Ctrl+V to paste and Crtl+X to cut text. Ctrl+Z can be used to "
-#| "undo changes.\n"
-#| "    Try to fiddle around and find more shortcuts. For example, what is "
-#| "the shortcut to select all the text?"
 msgctxt "ActivityInfo|"
 msgid ""
 "Just type on the real or virtual keyboard like in a word processor.\n"
@@ -2301,16 +2182,10 @@ msgid ""
 "'subtitle' button will make the text slightly less bigger. Clicking on "
 "'paragraph' will remove the formatting."
 msgstr ""
-"Stačí písať na skutočnú alebo virtuálnu klávesnicu ako v textovom "
-"procesore.\n"
+"Stačí písať na skutočnú alebo virtuálnu klávesnicu ako v textovom editore.\n"
 "    Kliknutím na tlačidlo 'Nadpis' sa text zväčší. Podobne aj tlačidlo "
 "'podnadpis' spôsobí, že text bude o niečo väčší. Kliknutím na 'odsek' sa "
-"formátovanie odstráni.\n"
-"    Stlačte 'Shift' a pomocou šípok vyberte text. Použite Ctrl+C na "
-"kopírovanie, Ctrl+V na vloženie a Crtl+X na vystrihnutie textu. Ctrl+Z sa "
-"môže použiť na vrátenie zmien.\n"
-"    Skúste sa pohrať a nájsť ďalšie skratky. Napríklad, aká je skratka na "
-"výber celého textu?"
+"formátovanie odstráni."
 
 #: activities/baby_wordprocessor/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -3258,7 +3133,7 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Kalkudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
@@ -10286,12 +10161,9 @@ msgstr "Reprodukovať danú veža."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "algorithm"
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "Zostavovanie algoritmu"
+msgstr "Učiť sa algoritmy."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:22
@@ -10342,9 +10214,6 @@ msgid "Tab: switch between editing the frieze and viewing the model"
 msgstr "Inštrukcie viditeľné a skóre neviditeľné"
 
 #: activities/frieze/Frieze.qml:301
-#, fuzzy
-#| msgctxt "ReadyButton|"
-#| msgid "I am Ready"
 msgctxt "Frieze|"
 msgid "I am Ready"
 msgstr "Som pripravený"
@@ -15174,12 +15043,9 @@ msgid "Leave the box blank if the class doesn't match."
 msgstr ""
 
 #: activities/grammar_analysis/grammar_analysis.js:421
-#, fuzzy
-#| msgctxt "Admin|"
-#| msgid "empty"
 msgctxt "grammar_analysis|"
 msgid "Empty"
-msgstr "prázdne"
+msgstr "Prázdne"
 
 #. Activity title
 #: activities/grammar_classes/ActivityInfo.qml:18
@@ -15395,23 +15261,17 @@ msgstr ""
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction with a fun game"
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "Precvičovanie odčítania pomocou zábavnej hry"
+msgstr "Učiť sa počítať pomocou štyroch operátorov."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
 "division."
-msgstr "Precvič si sčítanie, odčítanie, násobenie a delenie."
+msgstr "Schopnosť počítať pomocou sčítania, odčítania, násobenia a delenia."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -15420,20 +15280,15 @@ msgid "Use the four numbers with given operators to find 24."
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrows: navigate inside an area"
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside numbers and operators"
-msgstr "Šípky: pohyb v priestore"
+msgstr "Šípky: pohyb po číslach a operátoroch"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "Medzerník alebo Enter: zvoliť alebo umiestniť položku"
+msgstr ""
+"Medzerník alebo Enter: zvoliť alebo nezvoliť aktuálnu hodnotu alebo operátor"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -15441,12 +15296,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr ""
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Backspace alebo Delete: krok späť"
+msgstr "Backspace alebo Delete: zrušiť poslednú operáciu"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -15469,28 +15321,19 @@ msgid "Solvable with +, - and ×."
 msgstr ""
 
 #: activities/guess24/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "Data|"
 msgid "Multiplication required."
-msgstr "Násobenie"
+msgstr "Vyžaduje znalosť násobenia."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "Malé mriežky"
+msgstr "Riešiteľné všetkými operátormi."
 
 #: activities/guess24/resource/5/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "Data|"
 msgid "Division required."
-msgstr "Delenie."
+msgstr "Vyžaduje znalosť delenia."
 
 #: activities/guesscount/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
@@ -15526,12 +15369,9 @@ msgstr ""
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Precvičovanie násobilky."
+msgstr "Precvičovanie počítania s rozkladom."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -15541,18 +15381,13 @@ msgstr "znalosť matematických operácií."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"Potiahnite príslušné čísla a operátory do políčok a získajte číslo, ktoré sa "
-"dá uhádnuť v inštrukcii."
+"Potiahnite príslušné čísla a operátory do políčok a získajte predpísané "
+"číslo."
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -15587,20 +15422,14 @@ msgid "Operators"
 msgstr "Operátori"
 
 #: activities/guesscount/resource/1/Data.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction with a fun game"
 msgctxt "Data|"
 msgid "Practice algebraic calculations with a single operator."
-msgstr "Precvičovanie odčítania pomocou zábavnej hry"
+msgstr "Precvičovanie algebraických výpočtov s jedným operátorom."
 
 #: activities/guesscount/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation"
 msgctxt "Data|"
 msgid "Practice algebraic calculations with two operators."
-msgstr "Precvičovanie odčítania"
+msgstr "Precvičovanie algebraických výpočtov s dvoma operátormi."
 
 #: activities/guesscount/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -15608,12 +15437,9 @@ msgid "Practice algebraic calculations with three operators."
 msgstr ""
 
 #: activities/guesscount/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction with a fun game"
 msgctxt "Data|"
 msgid "Practice algebraic calculations with four operators."
-msgstr "Precvičovanie odčítania pomocou zábavnej hry"
+msgstr "Precvičovanie algebraických výpočtov so štyrmi operátormi."
 
 #. Activity title
 #: activities/guessnumber/ActivityInfo.qml:15
@@ -15628,12 +15454,9 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Pomôž Tuxovi uniknúť z jaskyne tak, že nájdeš skryté číslo."
 
 #: activities/guessnumber/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Precvičovanie sčítania čísel."
+msgstr "Precvičovanie porovnania čísel."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -16301,9 +16124,6 @@ msgstr "Nájdi bendžo"
 
 #: activities/instruments/instruments.js:161
 #: activities/instruments/instruments.js:206
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the bongo"
 msgctxt "instruments|"
 msgid "Find the bongos"
 msgstr "Nájdi bongo"
@@ -16764,12 +16584,9 @@ msgstr "prenos"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
-msgstr "Učíme sa sčítať"
+msgstr "Učiť sa sčítavanie"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
@@ -17125,12 +16942,9 @@ msgstr "Povoliť hlasové odozvy"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr "Učme sa sčítanie"
+msgstr "Učiť sa číslice"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
@@ -17279,12 +17093,9 @@ msgstr "Medzi 20 a 50. "
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
-msgstr "Učme sa odčítavať"
+msgstr "Učiť sa odčítavať"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
@@ -17791,20 +17602,14 @@ msgstr "Spočítaj koľko hviezdičiek je pod čarovným klobúkom"
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr "Učme sa odčítať."
+msgstr "Učiť sa odčítavať."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
 msgstr "Odčítavanie."
@@ -17899,9 +17704,6 @@ msgstr "Spočítaj koľko hviezdičiek je pod čarovným klobúkom"
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
 msgstr "Učiť sa sčítavanie."
@@ -17910,9 +17712,6 @@ msgstr "Učiť sa sčítavanie."
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
 msgstr "Sčítavanie."
@@ -18821,9 +18620,6 @@ msgstr "Precvičovanie delenia."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
 msgstr "Delenie."
@@ -18914,12 +18710,9 @@ msgstr "Otáčaj karty a nájdi zhodné páry"
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
-msgstr "Divízie"
+msgstr "Delenie"
 
 #. Activity title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
@@ -19120,9 +18913,6 @@ msgstr "Precvičovanie násobilky."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "Násobenie"
@@ -19681,12 +19471,9 @@ msgid "Copyright: %1"
 msgstr "Copyright: %1"
 
 #: activities/menu/ConfigurationItem.qml:48
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Difficulty filter:"
 msgctxt "ConfigurationItem|"
 msgid "Difficulty filter"
-msgstr "Filter obtiažnosti:"
+msgstr "Filter obtiažnosti"
 
 #: activities/menu/ConfigurationItem.qml:109
 msgctxt "ConfigurationItem|"
@@ -22481,12 +22268,9 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "Čísla v poradí"
+msgstr "Poradie čísel"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -23163,12 +22947,9 @@ msgstr ""
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr "Železničná aktivita"
+msgstr "Železnica"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -26521,12 +26302,9 @@ msgstr ""
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse"
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Pohni myšou"
+msgstr "Vyriešiť Sudoku"
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -28231,9 +28009,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:384
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Zrušiť"
