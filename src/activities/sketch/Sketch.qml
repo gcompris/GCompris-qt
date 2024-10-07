@@ -170,13 +170,6 @@ ActivityBase {
             id: canvasArea
             anchors.centerIn: layoutArea
 
-            function saveImage(filePath) {
-                canvasArea.grabToImage(function(result) {
-                    result.saveToFile(filePath);
-                }, Qt.size(items.grabWidth, items.grabHeight))
-                items.isSaved = true;
-            }
-
             function init() {
                 canvasInput.resetPoints();
                 items.selectedTool.toolInit();
@@ -624,8 +617,8 @@ ActivityBase {
             id: creationHandler
             imageMode: true
             fileExtensions: ["*.svg", "*.png", "*.jpg", "*.jpeg", "*.webp"]
-            onSaveImage: (filePath) => {
-                canvasArea.saveImage(filePath);
+            onSaved: {
+                items.isSaved = true;
             }
             onFileLoaded: (data, filePath) => {
                 Activity.imageToLoad = filePath;

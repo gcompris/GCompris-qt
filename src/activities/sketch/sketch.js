@@ -17,6 +17,7 @@ var canvasWidth = 1;
 var canvasHeight = 1;
 var undo = [];
 var redo = [];
+var currentSnapshot = "";
 
 var backgroundImageSet = [
     "qrc:/gcompris/src/core/resource/cancel_white.svg",
@@ -108,6 +109,7 @@ function initCanvas() {
 function pushToUndo(undoPath) {
     // push last snapshot png to UNDO stack
     undo.push(undoPath);
+    currentSnapshot = undoPath;
     // undo size hardcoded to 11 to limit memory use as it can easily get too heavy.
     if(undo.length > 11) {
         undo.shift();
@@ -138,6 +140,7 @@ function undoAction() {
         redo.push(undo.pop());
         items.canvasImageSource = undo[undo.length - 1];
         items.canvasImage.source = items.canvasImageSource;
+        currentSnapshot = items.canvasImage.source
         items.undoIndex -= 1;
         if(items.undoIndex < 0) {
             items.undoIndex = 10;
@@ -152,6 +155,7 @@ function redoAction() {
         items.canvasLocked = true;
         items.canvasImageSource = redo.pop();
         items.canvasImage.source = items.canvasImageSource;
+        currentSnapshot = items.canvasImage.source
         pushToUndo(items.canvasImageSource);
         items.canvasLocked = false;
     }
@@ -196,7 +200,7 @@ function newImage() {
 }
 
 function saveImageDialog() {
-    items.creationHandler.saveWindow(items.canvasImageSource);
+    items.creationHandler.saveWindow(currentSnapshot);
 }
 
 function openImageDialog() {
