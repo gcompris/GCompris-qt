@@ -69,7 +69,8 @@ Rectangle {
     readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileName: imageMode ? fileNameInput.text + ".png" : fileNameInput.text + ".json"
-    readonly property string fileSavePath: "file://" + sharedDirectoryPath + fileName
+    readonly property string filePrefix: sharedDirectoryPath.startsWith("/") ? "file://" : "file:///"
+    readonly property string fileSavePath: filePrefix + sharedDirectoryPath + fileName
 
     ListModel {
         id: fileNames
@@ -162,7 +163,7 @@ Rectangle {
     }
 
     function loadFile(fileName) {
-        var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
+        var filePath = filePrefix + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
         var data = null
         if(!imageMode) {
             var data = parser.parseFromUrl(filePath)
@@ -173,7 +174,7 @@ Rectangle {
 
     function deleteFile() {
         dialogOpened = true;
-        var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
+        var filePath = filePrefix + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
                                    qsTr("%1 deleted successfully!").arg(filePath),
@@ -353,7 +354,7 @@ Rectangle {
                     fillMode: Image.PreserveAspectFit
                     // the empty file is used to make a switch to reload overwritten image
                     source: creationHandler.imageMode ?
-                        (fileName.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : "file://" + sharedDirectoryPath + fileName.text) :
+                        (fileName.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : filePrefix + sharedDirectoryPath + fileName.text) :
                         "qrc:/gcompris/src/core/resource/file_icon.svg"
                 }
 
