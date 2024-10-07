@@ -249,7 +249,7 @@ ActivityBase {
                 MouseArea {
                     id: canvasInput
                     anchors.fill: parent
-                    enabled: true
+                    enabled: items.openPanel == null
                     hoverEnabled: true
 
                     property var lastPoint
