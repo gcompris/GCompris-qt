@@ -626,6 +626,7 @@ ActivityBase {
             }
             onClose: {
                 filesPanel.forceClose();
+                activity.focus = true;
             }
         }
 
