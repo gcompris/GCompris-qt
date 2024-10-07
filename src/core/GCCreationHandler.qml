@@ -29,7 +29,6 @@ Rectangle {
 
     // used in Sketch activity
     property bool imageMode: false
-    signal saveImage(var filePath)
     property var fileExtensions: []
 
     property string fileToOverwrite: ""
@@ -48,7 +47,7 @@ Rectangle {
 
     signal close
     signal fileLoaded(var data, var filePath)
-
+    signal saved
 
     onClose: {
         fileNameInput.focus = false
@@ -230,13 +229,14 @@ Rectangle {
     function writeData() {
         dialogOpened = true;
         if(imageMode) {
-            saveImage(fileSavePath);
+            file.copy(creationHandler.dataToSave, fileSavePath);
         } else {
             file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
         }
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
                                qsTr("Ok"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); });
+        saved();
         refreshTimer.restart();
     }
 

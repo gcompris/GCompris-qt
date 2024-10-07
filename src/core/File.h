@@ -69,6 +69,18 @@ public:
      * @sa name
      */
     Q_INVOKABLE bool append(const QString &data, const QString &name = QString());
+
+    /**
+     * Copies @p sourceFile to a file.
+     *
+     * @param sourceFile Text data to write.
+     * @param name [optional] Filename to write to. If omitted writes to
+     *             the file specified by the member name.
+     * @returns success of the operation.
+     * @sa name
+     */
+    Q_INVOKABLE bool copy(const QString &sourceFile, const QString &name = QString());
+
     /**
      * Checks whether file @p path exists.
      *

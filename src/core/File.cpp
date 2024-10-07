@@ -133,6 +133,32 @@ bool File::append(const QString &data, const QString &name)
     return true;
 }
 
+bool File::copy(const QString &sourceFile, const QString &name)
+{
+    if (!name.isEmpty())
+        setName(name);
+
+    if (m_name.isEmpty()) {
+        Q_EMIT error("source is empty");
+        return false;
+    }
+
+    QFile file(m_name);
+    if (!file.open(QFile::WriteOnly | QFile::Truncate)) {
+        Q_EMIT error("could not open file " + m_name);
+        return false;
+    }
+
+    if (QFile::exists(m_name)) {
+        QFile::remove(m_name);
+    }
+
+    QString sanitizedSourceFile = sanitizeUrl(sourceFile);
+    QFile::copy(sanitizedSourceFile, m_name);
+
+    return true;
+}
+
 bool File::exists(const QString &path)
 {
     return QFile::exists(sanitizeUrl(path));
