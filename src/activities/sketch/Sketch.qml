@@ -655,7 +655,7 @@ ActivityBase {
                 onClose: newImageDialog.active = false;
                 onButton1Hit: {
                     if(items.homeRequested) {
-                        activity.home();
+                        return;
                     } else if(items.resetRequested) {
                         Activity.resetLevel();
                     } else {
@@ -666,6 +666,11 @@ ActivityBase {
                     items.homeRequested = false;
                     items.resetRequested = false;
                     Activity.imageToLoad = "";
+                }
+                onDeferredAction: {
+                    if(items.homeRequested) {
+                        activity.home();
+                    }
                 }
             }
             anchors.fill: parent
