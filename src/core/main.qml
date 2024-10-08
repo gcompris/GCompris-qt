@@ -460,6 +460,8 @@ Window {
 
     property bool startInProgress: true
     onStartInProgressChanged: {
+        splash.colorChangeTimer.stop();
+        splash.currentCircle = 3;
         pageView.push("qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name, {
             'audioVoices': audioVoices,
             'loading': loading,

@@ -12,6 +12,9 @@ import QtQuick
 Rectangle {
     id: splash
     color: "#16B8EA"
+    property int currentCircle: 0
+    property alias colorChangeTimer: colorChangeTimer
+
     Image {
         id: logo
         source: "qrc:/gcompris/src/core/resource/gcompris-logo-full.svg"
@@ -22,6 +25,7 @@ Rectangle {
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
     }
+
     Image {
         id: loadingImage
         source: "qrc:/gcompris/src/core/resource/loading.svg"
@@ -30,14 +34,34 @@ Rectangle {
         width: sourceSize.width
         height: sourceSize.width
         opacity: 0.8
+    }
 
-        RotationAnimation on rotation {
-            id: rotation
-            running: splash.visible
-            from: 0
-            to: 360
-            loops: Animation.Infinite
-            duration: 1500
+    Timer {
+        id: colorChangeTimer
+        running: splash.visible
+        repeat: true
+        interval: 500
+        onTriggered: {
+            currentCircle = currentCircle > 2 ? 0 : ++currentCircle;
+        }
+    }
+
+    Row {
+        id: loadingCircles
+        anchors.top: loadingImage.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.topMargin: 50
+        spacing: 50
+        Repeater {
+            model: 3
+            Rectangle {
+                width: 75
+                height: width
+                radius: width
+                color: currentCircle > index ? "#e77935" : "#80FFFFFF"
+                border.color: "#80FFFFFF"
+                border.width: 3
+            }
         }
     }
 }
