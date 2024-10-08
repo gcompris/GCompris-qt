@@ -663,6 +663,8 @@ ActivityBase {
                     }
                 }
                 onButton2Hit: {
+                    items.homeRequested = false;
+                    items.resetRequested = false;
                     Activity.imageToLoad = "";
                 }
             }
