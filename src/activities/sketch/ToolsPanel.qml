@@ -586,7 +586,7 @@ FoldablePanel {
                     from: 0
                     to: 5
                     stepSize: 1
-                    value: 1 // NOTE init default values on start (value; others are fixed anyway)
+                    value: ApplicationInfo.isMobile ? 0 : 1 // NOTE init default values on start (value; others are fixed anyway)
                     onSliderMoved: {
                         if(items.eraserMode) {
                             items.selectedTool.selectedMode.eraserSmoothing = value;

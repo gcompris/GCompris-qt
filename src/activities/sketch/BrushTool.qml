@@ -6,6 +6,7 @@
  */
 
 import QtQuick
+import GCompris 1.0
 
 Item {
     id: brushTool
@@ -160,8 +161,9 @@ Item {
         property int timerInterval: 30
         property int toolPattern: 0
         property int defaultToolPattern: 0
-        property int toolSmoothing: 1
-        property int defaultToolSmoothing: 1
+        // on mobile, the smoothing can actually make it worse, so better set it to 0 by default there...
+        property int toolSmoothing: ApplicationInfo.isMobile ? 0 : 1
+        property int defaultToolSmoothing: ApplicationInfo.isMobile ? 0 : 1
 
         // eraserMode
         property real eraserOpacity: 1
@@ -170,8 +172,8 @@ Item {
         property int defaultEraserSize: 10
         property int eraserPattern: 0
         property int defaultEraserPattern: 0
-        property int eraserSmoothing: 1
-        property int defaultEraserSmoothing: 1
+        property int eraserSmoothing: ApplicationInfo.isMobile ? 0 : 1
+        property int defaultEraserSmoothing: ApplicationInfo.isMobile ? 0 : 1
 
         property int smoothingRadius: (items.eraserMode ? eraserSmoothing : toolSmoothing) * 5
         property real smoothingFriction: 0.05
@@ -217,8 +219,8 @@ Item {
         property int timerInterval: 15
         property int toolPattern: 0
         property int defaultToolPattern: 0
-        property int toolSmoothing: 2
-        property int defaultToolSmoothing: 2
+        property int toolSmoothing: ApplicationInfo.isMobile ? 0 : 1
+        property int defaultToolSmoothing: ApplicationInfo.isMobile ? 0 : 1
 
         // eraserMode
         property real eraserOpacity: 1
@@ -227,8 +229,8 @@ Item {
         property int defaultEraserSize: 1
         property int eraserPattern: 0
         property int defaultEraserPattern: 0
-        property int eraserSmoothing: 1
-        property int defaultEraserSmoothing: 1
+        property int eraserSmoothing: ApplicationInfo.isMobile ? 0 : 1
+        property int defaultEraserSmoothing: ApplicationInfo.isMobile ? 0 : 1
 
         property int smoothingRadius: (items.eraserMode ? eraserSmoothing : toolSmoothing) * 5
         property real smoothingFriction: 0.05
