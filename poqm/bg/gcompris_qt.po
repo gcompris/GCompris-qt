@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-09-29 14:39+0200\n"
+"PO-Revision-Date: 2024-10-05 23:56+0200\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.07.70\n"
+"X-Generator: Lokalize 24.08.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -9115,8 +9115,7 @@ msgstr ""
 "Показва се родословно дърво с някои инструкции.\n"
 "Кръговете са свързани с линии за отбелязване на връзките. Семейните двойки "
 "са отбелязани с пръстен на връзката.\n"
-"\"<nnl >\"Щракнете върху чифт членове на семейството, които имат дадената "
-"връзка."
+"Щракнете върху чифт членове на семейството, които имат дадената връзка."
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
@@ -22142,7 +22141,7 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
-"<b>Цикъл</b> е последователност от инструкции, която се повтаря толкова "
+"<b>Цикъл</b> е последователност от инструкции, която се <b>повтаря толкова "
 "пъти, за колкото е зададено</b>."
 
 #: activities/programmingMaze/programmingMaze.js:125

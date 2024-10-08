@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-06 02:32+0200\n"
+"PO-Revision-Date: 2024-10-08 00:32+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team:  kde-sk\n"
 "Language: sk\n"
@@ -2283,15 +2283,6 @@ msgstr "Kultúrne odkazy."
 
 #. Help manual
 #: activities/babymatch/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "In the main board area, a set of objects is displayed. In the vertical "
-#| "box (at the left of the main board) another set of objects is shown, each "
-#| "object in the group on the left matching exactly one object in the main "
-#| "board area. This game challenges you to find the logical link between "
-#| "these objects. How do they fit together? Drag each object to the correct "
-#| "red space in the main area."
 msgctxt "ActivityInfo|"
 msgid ""
 "In the main board area, a set of objects is displayed. In the side panel, "
@@ -2299,12 +2290,11 @@ msgid ""
 "logically to one object in the main board area. Drag each object from the "
 "side panel to the correct spot in the main area."
 msgstr ""
-"V hlavnej oblasti plochy sa zobrazí sada objektov. Vo vertikálnom poli (na "
-"ľavej strane hlavnej plochy) je znázornený ďalší súbor objektov, každý "
-"objekt v skupine na ľavej strane zodpovedá presne jednému objektu v hlavnej "
-"oblasti plochy. Táto hra vás vyzýva, aby ste našli logickú súvislosť medzi "
-"týmito objektmi. Ako k sebe pasujú? Pretiahnite každý objekt na správne "
-"červené miesto v hlavnej oblasti."
+"V hlavnej oblasti plochy sa zobrazí sada objektov. Vo bočnom paneli (na "
+"ľavej strane hlavnej plochy) je znázornený ďalší súbor predmetov, každý "
+"predmet v skupine na ľavej strane logicky zodpovedá jednému predmetu v "
+"hlavnej oblasti plochy. Pretiahnite každý predmet z bočného panela na "
+"správne miesto na hlavnej ploche."
 
 #: activities/babymatch/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -2319,9 +2309,6 @@ msgstr "Doplniť tvary"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
 msgstr "Presunúť tvary na im prislúchajúce miesto."
@@ -2330,7 +2317,7 @@ msgstr "Presunúť tvary na im prislúchajúce miesto."
 #: activities/babyshapes/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr ""
+msgstr "Učiť sa zarovnať geometrické tvary."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2627,29 +2614,20 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Nájdi svoju ľavú a pravú ruku"
+msgstr "Zosúlaď pohyby pravej a ľavej ruky."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Press the left and right arrow at the same time, to make the ball go in a "
-#| "straight line. On a touch screen you have to hit the two hands at the "
-#| "same time."
 msgctxt "ActivityInfo|"
 msgid ""
 "Press the left and right arrow keys at the same time, to make the ball go in "
 "a straight line. On a touch screen you have to touch the two hands at the "
 "same time."
 msgstr ""
-"Stlačiť ľavú a pravú šípku v rovnakom čase, aby išla lopta po rovnej čiare. "
-"Na dotykovej obrazovke musíte udrieť dvoma rukami v rovnakomčase."
+"Stlač ľavú a pravú šípku naraz, aby išla lopta priamo. Na dotykovej "
+"obrazovke sa musíš dotknúť oboch rúk naraz."
 
 #: activities/ballcatch/Ballcatch.qml:228
 msgctxt "Ballcatch|"
@@ -2700,14 +2678,14 @@ msgstr "Barová hra (proti Tuxovi)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "Predvídaj a prinúť protivníka aby umiestnil guľku do poslednej jamky."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Rozvíjaj si zručnosti v strategickom myslení, počítaní a odpočítavaní."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -2718,19 +2696,15 @@ msgstr "Schopnosť počítať."
 
 #. Help manual
 #: activities/bargame/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Place balls in the holes. You win if the computer has to place the last "
-#| "ball. If you want Tux to begin, just click on him"
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"Umiestnite lopty do dier. Vyhráte, ak počítač musí umiestniť poslednú loptu. "
-"Ak chcete, aby Tux začal, kliknite naňho."
+"Pre výber počtu guličiek, klikni na ikonu guľky, potom umiestni guľky do "
+"jamiek kliknutím na tlačidlo OK. Vyhráš ak Tux bude musieť umiestniť "
+"poslednú guľku. Ak chceš aby začínal Tux, len naňho klikni."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -2740,19 +2714,15 @@ msgstr "Barová hra (s priateľom)"
 
 #. Help manual
 #: activities/bargame_2players/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Place balls in the holes. You win if your friend has to place the last "
-#| "ball."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the ball icon to select a number of balls, then click on the OK "
 "button to place the balls in the holes. You win if your friend has to place "
 "the last ball."
 msgstr ""
-"Umiestnite lopty do dier. Vyhráte, ak váš priateľ musí umiestniť poslednú "
-"loptu."
+"Pre výber počtu guličiek, klikni na ikonu guľky, potom umiestni guľky do "
+"jamiek kliknutím na tlačidlo OK. Vyhráš ak tvoj kamarát bude musieť "
+"umiestniť poslednú guľku."
 
 #. Activity title
 #: activities/binary_bulb/ActivityInfo.qml:15
@@ -2883,95 +2853,71 @@ msgstr "Naučiť a zapamätať si Braillovo písmo"
 
 #. Help goal
 #: activities/braille_alphabets/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Let children discover the Braille system."
 msgctxt "ActivityInfo|"
 msgid "Let children discover the braille system."
-msgstr "Umožniť deťom spoznať Braillovo písmo."
+msgstr "Umožňuje deťom objavit Braillovo písmo."
 
 #. Help manual
 #: activities/braille_alphabets/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The screen has 3 sections: an interactive braille cell, an instruction "
-#| "telling you the letter to reproduce, and at the top the Braille letters "
-#| "to use as a reference. Each level teaches a set of 10 letters."
 msgctxt "ActivityInfo|"
 msgid ""
 "The screen has 3 sections: an interactive braille cell, an instruction "
 "telling you the character to reproduce, and at the top the braille "
 "characters to use as a reference. Each level teaches a set of 10 characters."
 msgstr ""
-"Obrazovka má tri časti: interaktívnu braillovu bunku, text, ktorý hovorí, "
-"aké písmeno treba reprodukovať a v hornej časti braillove písmená, slúžiace "
-"ako vzory. Každá úroveň pozostáva z množiny desiatich písmen."
+"Obrazovka má 3 časti: interaktívnu braillovu bunku, text, ktorý hovorí, aké "
+"písmeno treba reprodukovať a v hornej časti braillove znaky, slúžiace ako "
+"vzory. Každá úroveň vyučuje sadu 10 znakov."
 
 #: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Reproduce the requested character in the interactive braille cell."
-msgstr ""
+msgstr "Reprodukuj požadovaný znak v interaktívnej braillovej bunke."
 
 #: activities/braille_alphabets/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the strawberry by clicking on the blue fields"
 msgctxt "ActivityInfo|"
 msgid ""
 "You can open the braille chart by clicking on the blue braille cell icon."
-msgstr "Nájdi jahôdku klikaním na modré políčka"
+msgstr ""
+"Kliknutím na modrú ikonu braillovej bunky môžeš otvorit braillovu tabuľku."
 
 #: activities/braille_alphabets/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: 1 to 6 select/deselect the corresponding dots"
-msgstr ""
+msgstr "Číslice: 1 až 6 vybrať/nevybrať zodpovedajúce bodky"
 
 #: activities/braille_alphabets/ActivityInfo.qml:27
 #: activities/braille_fun/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space: open or close the braille chart"
-msgstr "Medzerník: otvoriť alebo zavriet Brailovu tabuľku"
+msgstr "Medzerník: otvoriť alebo zatvoriť Brailovu tabuľku"
 
 #: activities/braille_alphabets/braille_alphabets.js:43
 #: activities/braille_alphabets/braille_alphabets.js:53
 #: activities/braille_alphabets/braille_alphabets.js:63
 #: activities/braille_alphabets/braille_alphabets.js:73
 #: activities/braille_alphabets/braille_alphabets.js:83
-#, fuzzy
-#| msgctxt "braille_alphabets|"
-#| msgid "Now it's a little bit harder without the braille map."
 msgctxt "braille_alphabets|"
 msgid "Now it's a little bit harder without the reference."
-msgstr "Teraz je to trochu ťažšie bez tabuľky Braillovho písma."
+msgstr "Teraz je to trochu ťažšie bez predlohy."
 
 #: activities/braille_alphabets/braille_alphabets.js:48
-#, fuzzy
-#| msgctxt "braille_alphabets|"
-#| msgid ""
-#| "Look at the Braille character map and observe how similar the first and "
-#| "second line are."
 msgctxt "braille_alphabets|"
 msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr ""
-"Pozri sa na tabuľku Braillovho písma a pozoruj, ako sú si podobné prvý a "
+"Pozri sa na tabuľku Braillových znakov a pozoruj, ako sú si podobné prvý a "
 "druhý riadok."
 
 #: activities/braille_alphabets/braille_alphabets.js:58
-#, fuzzy
-#| msgctxt "braille_alphabets|"
-#| msgid ""
-#| "Again, similar as the first line but take care, the 'W' letter was added "
-#| "afterwards."
 msgctxt "braille_alphabets|"
 msgid ""
 "Again, similar to the first line in the character chart but take care, the "
 "'W' letter was added afterward."
 msgstr ""
-"Opäť, podobné prvému riadku, ale všimni si, že na konci sme pridali písmeno "
-"'W'."
+"Opäť, podobné ako v prvom riadku znakovej tabuľky, ale všimni si, že na "
+"konci pribudlo písmeno 'W'."
 
 #: activities/braille_alphabets/braille_alphabets.js:68
 msgctxt "braille_alphabets|"
@@ -2984,11 +2930,6 @@ msgid "Braille: Unlocking the Code"
 msgstr "Braillovo písmo: Odomknutie kódu"
 
 #: activities/braille_alphabets/FirstScreen.qml:65
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "The Braille system is a method that is used by blind people to read and "
-#| "write."
 msgctxt "FirstScreen|"
 msgid ""
 "The braille system is a method that is used by blind people to read and "
@@ -2997,27 +2938,17 @@ msgstr ""
 "Braillovo písmo je písmo, ktoré používajú nevidiaci na čítanie a písanie."
 
 #: activities/braille_alphabets/FirstScreen.qml:66
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "Each Braille character, or cell, is made up of six dot positions, "
-#| "arranged in a rectangle containing two columns of three dots each. As "
-#| "seen on the left, each dot is referenced by a number from 1 to 6."
 msgctxt "FirstScreen|"
 msgid ""
 "Each braille character, or cell, is made up of six dot positions, arranged "
 "in a rectangle containing two columns of three dots each. As seen on the "
 "left, each dot is referenced by a number from 1 to 6."
 msgstr ""
-"Každé písmeno je v Braillovom písme tvorené najviac šiestimi bodkami, ktoré "
-"sú vybrané z dvojstĺpcového obdĺžnika, kde každý stĺpec má tri pozície. Ako "
-"vidíš vľavo, každej bodke je priradené číslo od 1 do 6."
+"Každý znak alebo bunka je v Braillovom písme tvorená najviac šiestimi "
+"bodkami, usporiadanými v obdľžniku obsahujúcom dva stĺpce, kde každý stĺpec "
+"má tri pozície. Ako vidíš vľavo, každej bodke je priradené číslo od 1 do 6."
 
 #: activities/braille_alphabets/FirstScreen.qml:88
-#, fuzzy
-#| msgctxt "FirstScreen|"
-#| msgid ""
-#| "When you are ready, click on me and try reproducing Braille characters."
 msgctxt "FirstScreen|"
 msgid "When you are ready, click on me and try reproducing braille characters."
 msgstr ""
@@ -3049,9 +2980,7 @@ msgstr ""
 #: activities/braille_alphabets/questions.js:108
 #: activities/braille_alphabets/questions.js:112
 #: activities/braille_alphabets/questions.js:116
-#, fuzzy, qt-format
-#| msgctxt "questions|"
-#| msgid "Click on the dots in braille cell area to produce the letter %1."
+#, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the letter %1."
 msgstr "Klikaním na bodky v braillovej bunke vytvor písmeno %1."
@@ -3066,9 +2995,7 @@ msgstr "Klikaním na bodky v braillovej bunke vytvor písmeno %1."
 #: activities/braille_alphabets/questions.js:151
 #: activities/braille_alphabets/questions.js:155
 #: activities/braille_alphabets/questions.js:159
-#, fuzzy, qt-format
-#| msgctxt "questions|"
-#| msgid "Click on the dots in braille cell area to produce the number %1."
+#, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the number %1."
 msgstr "Kliknúť na bodky v oblasti braillovej bunky na vytvorenie čísla %1."
@@ -3078,9 +3005,7 @@ msgstr "Kliknúť na bodky v oblasti braillovej bunky na vytvorenie čísla %1."
 #: activities/braille_alphabets/questions.js:173
 #: activities/braille_alphabets/questions.js:177
 #: activities/braille_alphabets/questions.js:181
-#, fuzzy, qt-format
-#| msgctxt "questions|"
-#| msgid "Click on the dots in braille cell area to produce the symbol %1."
+#, qt-format
 msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the symbol %1."
 msgstr "Kliknúť na bodky v oblasti braillovej bunky na vytvorenie symbolu %1."
@@ -3099,12 +3024,9 @@ msgstr "Precvičovanie Braillových písmen."
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Precvičovanie nerovnosti súčtov."
+msgstr "Precvičovanie písania Braillovým písmom."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3114,20 +3036,13 @@ msgstr "Braillove abecedné kódy"
 
 #. Help manual
 #: activities/braille_fun/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Enter the braille code in the tile for the letters on the banner pulled "
-#| "by Tux in his plane across the screen. Check the braille chart by "
-#| "clicking on the toggle button for help."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create the braille cells for the letters on the banner. Check the braille "
 "chart by clicking on the blue braille cell icon if you need some help."
 msgstr ""
-"Zadať braillov kód v dlaždici pre písmená na transparente ťahanom Tuxom v "
-"lietadle cez obrazovku. Skontrolovať braillovu mapu kliknutím na prepínacie "
-"tlačidlo pre pomocníka."
+"Vytvor Braillovu bunku pre písmenu na transparente. Ak potrebuješ pomoc, "
+"kliknutím na modrú ikonu brailovej bunky si mrkni braillovu tabuľku."
 
 #. Activity title - the game is the KenKen but we cannot use KenKen as it is a trademark name
 #: activities/calcudoku/ActivityInfo.qml:14
@@ -3139,7 +3054,7 @@ msgstr "Kalkudoku"
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Vylúšti Kalkudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3148,15 +3063,14 @@ msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
+"Rozviň si isté logické zručnosti (prepájanie údajov, dedukcia) a priestorová "
+"predstavivosť počas počítania."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "Vyriešenie hádanky vyžaduje trpezlivosť a schopnosť logicky myslieť."
+msgstr "Vyriešenie hádanky vyžaduje trpezlivosť a schopnosť počítania."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -3169,51 +3083,43 @@ msgid ""
 "cage, when combined using the operator, must produce the result. Cages made "
 "of only one cell directly provide the number to enter."
 msgstr ""
+"Pre vyplnenie mriežky, zvoľ číslo v zozname a klikni na jeho cieľové "
+"umiestnenie. Každé číslo sa musí nachádzať v celom riadku a celom stľpci iba "
+"raz. Klietky sú skupiny buniek, ktoré poskytujú informáciu ako ich vyplniť. "
+"Klietky, ktoré  tvorí viac ako jedna bunka poskytujú výsledok a operátor: "
+"keď sa skombinujú všetky čísla v klietke pomocou operátora, musí vyjsť "
+"výsledok. Klietky pozostávajúce len z jednej bunky pokytujú priamo číslo, "
+"ktoré treba zadať."
 
 #. + is the unicode character for addition mathematical operator (+)
 #: activities/calcudoku/resource/1/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + operator."
-msgstr "Malé mriežky"
+msgstr "Malé mriežky s operátorom +."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-)
 #: activities/calcudoku/resource/2/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with + and − operators."
-msgstr "Malé mriežky"
+msgstr "Malé mriežky s operátormi + a -."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Small grids with +, − and × operators."
-msgstr "Malé mriežky"
+msgstr "Malé mriežky s operátormi +, - a ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*)
 #: activities/calcudoku/resource/4/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Medium grids with +, − and × operators."
-msgstr "Malé mriežky"
+msgstr "Stredne veľké mriežky s operátormi +, - a ×."
 
 #. + is the unicode character for addition mathematical operator (+), − for subtraction (-), × for multiplication (*), ∕ for division (:)
 #: activities/calcudoku/resource/5/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Large grids with +, −, × and ∕ operators."
-msgstr "Malé mriežky"
+msgstr "Veľké mriežky s operátormi +, - × a /."
 
 #. Activity title
 #: activities/calendar/ActivityInfo.qml:15
@@ -3241,14 +3147,13 @@ msgstr "Chápanie týždňa, mesiaca a roku."
 
 #. Help manual
 #: activities/calendar/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Read the instructions and select the correct date on the calendar."
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions and select the correct date on the calendar, and then "
 "validate your answer by clicking on the OK button."
-msgstr "Prečítajte si inštrukcie a vyberte správny dátum v kalendári."
+msgstr ""
+"Prečítajte si pokyny a vyberte správny dátum v kalendári. Potom overte "
+"správnosť svojej odpovede kliknutím na tlačidlo OK."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -3257,12 +3162,14 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
+"V niektorých úrovniach, treba nájsť deň v týždni pre určitý dátum. V takomto "
+"prípade, klikni na príslušný deň v týždni v zozname."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate through the answers"
-msgstr ""
+msgstr "Šípky: pohyb po odpovediach"
 
 #: activities/calendar/ActivityInfo.qml:27
 #: activities/find_the_day/ActivityInfo.qml:27
@@ -3565,7 +3472,7 @@ msgstr ""
 #: activities/canal_lock/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand how a canal lock works."
-msgstr ""
+msgstr "Pochop ako funguje uzáver kanála."
 
 #. Help manual
 #: activities/canal_lock/ActivityInfo.qml:23
@@ -4182,32 +4089,23 @@ msgstr "Umiestnite zeleninu napravo a ostatné objekty naľavo."
 #: activities/checkers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "Hrať dámu (proti Tuxovi)"
+msgstr "Hrať Dámu (proti Tuxovi)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
 "yours."
-msgstr ""
-"Zoberte všetky figúrky svojho súpera skôr, ako súper zachytí všetky vaše."
+msgstr "Zajmi všetky figúrky svojho súpera skôr, ako súper zajme tie tvoje."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Precvičovanie Braillových písmen."
+msgstr "Precvičovanie hry Dáma."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4252,12 +4150,9 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "Táto verzia v GCompris je medzinárodný návrh."
+msgstr "Táto verzia Dámy sa hrá podľa medzinárodných pravidiel."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4342,27 +4237,21 @@ msgstr ""
 #: activities/chess/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "Hrať šach (proti Tuxovi)"
+msgstr "Hrať Šachy (proti Tuxovi)"
 
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Objavovanie Braillovho systému"
+msgstr "Objav a precvič si Šachy."
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Naučte sa vodný cyklus."
+msgstr "Naučte sa hrať Šachy."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4414,6 +4303,9 @@ msgid ""
 "will redo one move. To undo all the moves, press and hold the undo button "
 "for 3 seconds."
 msgstr ""
+"Jeden klik na tlačidlo Späť, vráti jeden ťah. Jeden klik na tlačidlo Znova, "
+"zopakuje vrátený ťah. Na vrátenie všetkých ťahov treba stlačiť a podržať "
+"tlačidlo Späť 3 sekundy."
 
 #: activities/chess/ActivityInfo.qml:32
 #: activities/chess_partyend/ActivityInfo.qml:32
@@ -4504,46 +4396,40 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
-"V tejto aktivite objavujete šachovú hru hraním proti priateľovi. Zobrazuje "
-"možnú cieľovú pozíciu pre každý vybranú figúrku, čo pomáha deťom pochopiť, "
+"V tejto aktivite objavuješ hru Šach, hraním proti kamarátovi. Zobrazuje "
+"možnú cieľovú pozíciu pre každú vybranú figúrku, čo pomáha deťom pochopiť, "
 "ako sa figúrky pohybujú.\n"
 "\n"
-"Mat môžete dosiahnuť skôr, ak sa budete riadiť týmito jednoduchými "
+"Mat môžeš dosiahnuť skôr, ak sa budeš riadiť týmito jednoduchými "
 "pravidlami:\n"
 "    Snaha zahnať súperovho kráľa do rohu.\n"
 "<b>Vysvetlenie</b>: týmto spôsobom by mala súperova figúrka iba 3 smery na "
 "ťah namiesto 8 z najlepšej pozície.\n"
-"    'Vytvorenie pasce'. Použite svojich pešiakov ako návnadu.\n"
-"<b>Vysvetlenie</b>: týmto spôsobom môžete vylákať súpera z jeho 'komfortnej "
+"    'Vytvorenie pasce'. Použi svojich pešiakov ako návnadu.\n"
+"<b>Vysvetlenie</b>: týmto spôsobom môžeš vylákať súpera z jeho 'komfortnej "
 "zóny'.\n"
-"    Buďte dosť trpezliví.\n"
-"<b>Vysvetlenie</b>: neponáhľajte sa príliš rýchlo, buďte trpezliví. Trochu "
-"porozmýšľajte a pokúste sa predpovedať budúce ťahy súpera, aby ste ho mohli "
-"pristihnúť na tom alebo zaistiť svoje figúrky pred jeho útokmi."
+"    Buď trpezliví.\n"
+"<b>Vysvetlenie</b>: neponáhľaj sa príliš, buď trpezliví. Trochu porozmýšľaj "
+"a pokús sa predpovedať budúce ťahy súpera, aby si ho mohol nachytať z "
+"nenazdajky alebo zaistiť svoje figúrky pred jeho útokmi."
 
 #. Activity title
 #: activities/chess_partyend/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "End of chess game"
-msgstr "Koniec šachovej hry"
+msgstr "Koniec šachovej partie"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
-msgstr "Zahrajte si koniec šachovej hry proti Tuxovi"
+msgstr "Zahraj si koniec šachovej partie proti Tuxovi."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Koniec šachovej hry"
+msgstr "Dokonči šachovú partiu."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4565,22 +4451,22 @@ msgid ""
 "little bit and try to predict your opponent's future moves, so that you can "
 "catch him or secure your pieces from his attacks."
 msgstr ""
-"V tejto aktivite objavujete šachovú hru hraním iba konca hry. Zobrazuje "
-"možnú cieľovú pozíciu pre každý vybranú figúrku, čo pomáha deťom pochopiť, "
-"ako sa figúrky pohybujú.\n"
+"V tejto aktivite objavuješ hru Šach hraním iba konca partie. Zobrazuje možnú "
+"cieľovú pozíciu pre každú vybranú figúrku, čo pomáha deťom pochopiť, ako sa "
+"figúrky pohybujú.\n"
 "\n"
-"Mat môžete dosiahnuť skôr, ak sa budete riadiť týmito jednoduchými "
+"Mat môžeš dosiahnuť skôr, ak sa budeš riadiť týmito jednoduchými "
 "pravidlami:\n"
 "    Snaha zahnať súperovho kráľa do rohu.\n"
 "<b>Vysvetlenie</b>: týmto spôsobom by mala súperova figúrka iba 3 smery na "
 "ťah namiesto 8 z najlepšej pozície.\n"
-"    'Vytvorenie pasce'. Použite svojich pešiakov ako návnadu.\n"
-"<b>Vysvetlenie</b>: týmto spôsobom môžete vylákať súpera z jeho 'komfortnej "
+"    'Vytvorenie pasce'. Použi svojich pešiakov ako návnadu.\n"
+"<b>Vysvetlenie</b>: týmto spôsobom môžeš vylákať súpera z jeho 'komfortnej "
 "zóny'.\n"
-"    Buďte dosť trpezliví.\n"
-"<b>Vysvetlenie</b>: neponáhľajte sa príliš rýchlo, buďte trpezliví. Trochu "
-"porozmýšľajte a pokúste sa predpovedať budúce ťahy súpera, aby ste ho mohli "
-"pristihnúť na tom alebo zaistiť svoje figúrky pred jeho útokmi."
+"    Buď trpezliví.\n"
+"<b>Vysvetlenie</b>: neponáhľaj sa príliš, buď trpezliví. Trochu porozmýšľaj "
+"a pokús sa predpovedať budúce ťahy súpera, aby si ho mohol nachytať z "
+"nenazdajky alebo zaistiť svoje figúrky pred jeho útokmi."
 
 #. Activity title
 #: activities/chronos/ActivityInfo.qml:19
@@ -4592,16 +4478,13 @@ msgstr "Chronos"
 #: activities/chronos/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the items to organize the story."
-msgstr "Pretiahnuť položky, aby sa usporiadal príbeh."
+msgstr "Prsunúť položky, aby tvorili príbeh."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Naučiť sa rozpoznávať nezvyčajné farby."
+msgstr "Naučiť sa rozpoznávať časovú súvislosť príbehu."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4612,37 +4495,23 @@ msgstr "Povedať krátky príbeh."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"Ak je odpoveď správna, napíšte zodpovedajúci výsledok a overte si odpoveď "
-"kliknutím na tlačidlo OK."
+"Usporiadaj obrázky aby vypovedali súvislý príbeh. Presuň obrázky z bočného "
+"panela na príslušné bodky, potom over svoju odpoveď kliknutím na tlačidlo OK."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
-#| "Vegastrike which are released under the GPL license. The transportation "
-#| "images are copyright Franck Doucet. Dates of Transportation are based on "
-#| "those found in &lt;https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Na fotku mesiaca má autorské práva NASA. Vesmírne zvuky pochádzajú z "
-"Tuxpaint a Vegastrike, ktoré sú dostupné pod licenciou GPL. Transportné "
-"obrázky sú chránené autorskými právami Francka Douceta. Termíny transportu "
-"sú založené na tých, ktoré sa nachádzajú v &lt;https://www.wikipedia.org&gt;."
+"Dátumy dopravných prostriedkov sú prevzaté z &lt;https://www.wikipedia."
+"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4757,7 +4626,7 @@ msgstr "4"
 #: activities/chronos/resource/board/board5_0.qml:16
 msgctxt "board5_0|"
 msgid "Place each object on the date it was invented."
-msgstr "Umiestniť každý obrázok v poradí a na dátum, kedy bol vynájdený."
+msgstr "Umiestni každý predmet na dátum, kedy bol vynájdený."
 
 #: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
@@ -4772,12 +4641,12 @@ msgstr "1769 Cugnotov fardier"
 #: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
 msgid "Transportation"
-msgstr "Doprava"
+msgstr "Dopravné prostriedky"
 
 #: activities/chronos/resource/board/board5_1.qml:15
 msgctxt "board5_1|"
 msgid "Transportation"
-msgstr "Doprava"
+msgstr "Dopravné prostriedky"
 
 #: activities/chronos/resource/board/board5_1.qml:39
 msgctxt "board5_1|"
@@ -4785,25 +4654,19 @@ msgid "1783 Montgolfier brothers' hot air balloon"
 msgstr "1783 Teplovzdušný balón bratov Montgolfiérovcov"
 
 #: activities/chronos/resource/board/board5_1.qml:47
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eole Clementa Adera"
+msgstr "1890 Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board5_1.qml:55
-#, fuzzy
-#| msgctxt "board5_1|"
-#| msgid "1906 Paul Cornu First helicopter flight"
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1906 Prvý let vrtuľníkom Paula Cornua"
+msgstr "1907 Prvý let vrtuľníkom Paula Cornua"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
 msgid "Transportation"
-msgstr "Doprava"
+msgstr "Dopravné prostriedky"
 
 #: activities/chronos/resource/board/board5_2.qml:32
 msgctxt "board5_2|"
@@ -4811,17 +4674,14 @@ msgid "1769 Cugnot's fardier"
 msgstr "1769 Cugnotov fardier"
 
 #: activities/chronos/resource/board/board5_2.qml:40
-#, fuzzy
-#| msgctxt "board5_2|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eole Clementa Adera"
+msgstr "1890 Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
 msgid "Transportation"
-msgstr "Doprava"
+msgstr "Dopravné prostriedky"
 
 #: activities/chronos/resource/board/board5_3.qml:32
 msgctxt "board5_3|"
@@ -4836,7 +4696,7 @@ msgstr "1829 Stephensonova parná lokomotíva Rocket"
 #: activities/chronos/resource/board/board5_4.qml:15
 msgctxt "board5_4|"
 msgid "Transportation"
-msgstr "Doprava"
+msgstr "Dopravné prostriedky"
 
 #: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
@@ -4844,12 +4704,9 @@ msgid "1829 Stephenson's Rocket Steam locomotive"
 msgstr "1829 Stephensonova parná lokomotíva Rocket"
 
 #: activities/chronos/resource/board/board5_4.qml:47
-#, fuzzy
-#| msgctxt "board5_4|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eole Clementa Adera"
+msgstr "1890 Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4862,20 +4719,14 @@ msgid "Aviation"
 msgstr "Letectvo"
 
 #: activities/chronos/resource/board/board6_0.qml:40
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1880 Clement Ader's Eole"
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1880 Eole Clementa Adera"
+msgstr "1890 Eole Clementa Adera"
 
 #: activities/chronos/resource/board/board6_0.qml:48
-#, fuzzy
-#| msgctxt "board6_0|"
-#| msgid "1903 The Wright brothers' Flyer III"
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1903 Flyer III bratov Wrightovcov"
+msgstr "1905 Flyer III bratov Wrightovcov"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
@@ -4898,12 +4749,9 @@ msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
 msgstr "1927 Charles Lindbergh prechádza cez Atlantický oceán"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 Hélène Boucherov rýchlostný rekord 444 km/h"
+msgstr "1934 Hélène Boucherov rýchlostný rekord 445 km/h"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4923,7 +4771,7 @@ msgstr "1769 Cugnotov fardier"
 #: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
 msgid "1885 The first petrol car by Benz"
-msgstr "1885 Prvý benzínový vozidlo od Benza"
+msgstr "1885 Prvý vozidlo na benzín od Benza"
 
 #: activities/chronos/resource/board/board6_3.qml:15
 msgctxt "board6_3|"
@@ -4931,12 +4779,9 @@ msgid "Cars"
 msgstr "Autá"
 
 #: activities/chronos/resource/board/board6_3.qml:39
-#, fuzzy
-#| msgctxt "board6_3|"
-#| msgid "1899 Renault voiturette"
 msgctxt "board6_3|"
 msgid "1898 Renault voiturette"
-msgstr "1899 Renault voiturette"
+msgstr "1898 Renault voiturette"
 
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
@@ -4962,7 +4807,7 @@ msgstr "1955 Citroën DS 19"
 #: activities/wordsgame/ActivityConfig.qml:40
 msgctxt "ActivityConfig|"
 msgid "Select your locale"
-msgstr "Vyberte si svoje miestne nastavenie"
+msgstr "Vyber si miestne nastavenie"
 
 #. Activity title
 #: activities/click_on_letter/ActivityInfo.qml:15
@@ -4979,12 +4824,9 @@ msgstr "Vypočuj si písmenko a potom naň klikni"
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Klikni na malé písmenko"
+msgstr "Rozpoznaj znaky malých písmen."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5001,8 +4843,8 @@ msgid ""
 "A letter is spoken. Click on the matching letter in the main area. You can "
 "listen to the letter again by clicking on the mouth icon."
 msgstr ""
-"Je vyslovené písmo. Kliknite na zodpovedajúce písmenko v hlavnej oblasti. "
-"Písmeno si môžete znova vypočuť, keď kliknete na ikonku úst."
+"Je vyslovené písmeno. Klikni na zodpovedajúce písmeno v hlavnej oblasti. "
+"Písmeno si môžeš znova vypočuť, keď klikneš na ikonu úst."
 
 #: activities/click_on_letter/ActivityInfo.qml:27
 #: activities/click_on_letter_up/ActivityInfo.qml:27
@@ -5027,12 +4869,9 @@ msgstr "Klikni na veľké písmenko"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Klikni na veľké písmenko"
+msgstr "Rozpoznaj znaky veľkých písmen."
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5054,7 +4893,7 @@ msgstr "Ručne"
 #: activities/number_sequence/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
-msgstr "Prejdite na ďalšiu úroveň"
+msgstr "Prejsť na ďalšiu úroveň"
 
 #. Activity title
 #: activities/clickanddraw/ActivityInfo.qml:15
@@ -5066,16 +4905,13 @@ msgstr "Klikni a kresli"
 #: activities/clickanddraw/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on the selected points."
-msgstr "Nakresliť obrázok klikaním na vybrané body."
+msgstr "Nakresli obrázok klikaním na vybrané body."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Môže presúvať prvky pomocou myši alebo dotykovej obrazovky."
+msgstr "Precvičiť triafanie bodov pomocou myši alebo dotykovej obrazovky."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -5107,21 +4943,17 @@ msgstr "Uloviť všetky plávajúce ryby skôr ako odplávajú z akvária"
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
-msgstr "Motorická koordinácia: presný pohyb rukou."
+msgstr "Precvičovanie motorickej koordinácie: presný pohyb rukou."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr "Dokáže pohybovať myšou a klikať na správnom mieste"
+msgstr ""
+"Dokáže pohybovať myšou alebo používať dotykovú obrazovku a klikať na "
+"správnom mieste."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5157,7 +4989,7 @@ msgstr "Učenie sa hodín"
 #: activities/clockgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn how to tell the time on an analog clock."
-msgstr "Naučiť sa, ako  povedať čas na analógových hodinách"
+msgstr "Naučiť sa, koľko je hodín na analógových hodinách."
 
 #. Help goal
 #: activities/clockgame/ActivityInfo.qml:20
@@ -5182,6 +5014,8 @@ msgid ""
 "Set the clock to the given time. Drag the different hands to control their "
 "respective unit."
 msgstr ""
+"Nastav hodiny na daný čas. Ťahaj rôzne ručičky na nastavenie príslušných "
+"časových jednotiek."
 
 #: activities/clockgame/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5189,6 +5023,8 @@ msgid ""
 "The shortest hand indicates the hours, a longer hand indicates the minutes, "
 "and the longest hand indicates the seconds."
 msgstr ""
+"Najkratšia ručička zobrazuje hodiny, dlhšia ručička zobrazuje minúty a "
+"najdlhšia ručička zobrazuje sekundy."
 
 #: activities/clockgame/Clockgame.qml:119
 msgctxt "Clockgame|"
@@ -5256,19 +5092,16 @@ msgstr "Žiadne rady."
 #: activities/color_mix/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Mixing paint colors"
-msgstr "Miešanie maliarskych farieb"
+msgstr "Miešanie pigmentových farieb"
 
 #. Help title
 #: activities/color_mix/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Discover paint color mixing."
-msgstr "Objavovať miešanie maliarskych farieb."
+msgstr "Objavovať miešanie pigmentových farieb."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
 msgstr "Namiešaj základné farby, aby si dostal zadanú farbu."
@@ -5280,36 +5113,19 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
+"Táto činnosť učí ako funguje miešanie základných farieb (miešanie "
+"odoberaním)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Ak je odpoveď správna, napíšte zodpovedajúci výsledok a overte si odpoveď "
-"kliknutím na tlačidlo OK."
+"Posúvaním posuvníkov na farebných tubách zmeň farbu. Alebo klikni na "
+"tlačidlá + a -. Potom over svoju odpoveď stlačením tlačidla OK."
 
 #: activities/color_mix/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "\n"
-#| "The activity deals with mixing primary colors of paint (subtractive "
-#| "mixing).\n"
-#| "\n"
-#| "In case of paints the inks absorb different colors of light falling on "
-#| "it, subtracting it from what you see. The more ink you add, the more "
-#| "light is absorbed, and the darker the combined color gets. We can mix "
-#| "just three primary colors to make many new colors. The primary colors for "
-#| "paint/ink are cyan (a special shade of blue), magenta (a special shade of "
-#| "pink), and yellow.\n"
-#| "        "
 msgctxt "ActivityInfo|"
 msgid ""
 "Paints and inks absorb different colors of the light falling on it, "
@@ -5319,17 +5135,12 @@ msgid ""
 "cyan (a special shade of blue), magenta (a special shade of pink), and "
 "yellow."
 msgstr ""
-"\n"
-"Aktivita sa zaoberá miešaním základných farieb náterov (subtraktívne "
-"miešanie).\n"
-"\n"
-"V prípade náterov atramenty absorbujú rôzne farby svetla dopadajúceho na ne, "
-"jeho odpočítaním od toho, čo vidíte. Čím viac atramentu pridáte, tým viac "
-"svetla je pohlteného a skombinovaná farba bude tmavšia. Môžeme miešať len "
-"tri základné farby, aby ste dostali veľa nových farieb. Primárne farby "
-"náteru/atramentu sú azúrová (zvláštny odtieň modrej), purpurová (zvláštny "
-"odtieň ružovej) a žltá.\n"
-"        "
+"Farebný pigment v náteroch a atramentoch absorbuje rôzne farby svetla "
+"dopadajúceho naň, jeho odobratím od toho, čo naň dopadlo. Čím viac atramentu "
+"pridáš, tým viac svetla je pohlteného a skombinovaná farba bude tmavšia. "
+"Miešaním len troch základných farieb, možno dostať veľa nových farieb. "
+"Primárne farby pigmentov sú azúrová (zvláštny odtieň modrej), purpurová "
+"(zvláštny odtieň ružovej) a žltá."
 
 #: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
@@ -5339,7 +5150,7 @@ msgstr "Rozpoznávanie zodpovedajúcich si farieb"
 #: activities/color_mix/ColorMix.qml:206
 msgctxt "ColorMix|"
 msgid "Not enough red"
-msgstr "Nedostatok červenej"
+msgstr "Málo červenej"
 
 #: activities/color_mix/ColorMix.qml:208
 msgctxt "ColorMix|"
@@ -5349,7 +5160,7 @@ msgstr "Priveľa červenej"
 #: activities/color_mix/ColorMix.qml:211
 msgctxt "ColorMix|"
 msgid "Not enough green"
-msgstr "Nedostatok zelenej"
+msgstr "Málo zelenej"
 
 #: activities/color_mix/ColorMix.qml:213
 msgctxt "ColorMix|"
@@ -5359,7 +5170,7 @@ msgstr "Priveľa zelenej"
 #: activities/color_mix/ColorMix.qml:216
 msgctxt "ColorMix|"
 msgid "Not enough blue"
-msgstr "Nedostatok modrej"
+msgstr "Málo modrej"
 
 #: activities/color_mix/ColorMix.qml:218
 msgctxt "ColorMix|"
@@ -5369,7 +5180,7 @@ msgstr "Priveľa modrej"
 #: activities/color_mix/ColorMix.qml:222
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
-msgstr "Nedostatok purpurovej"
+msgstr "Málo purpurovej"
 
 #: activities/color_mix/ColorMix.qml:224
 msgctxt "ColorMix|"
@@ -5379,7 +5190,7 @@ msgstr "Priveľa purpurovej"
 #: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
-msgstr "Nedostatok žltej"
+msgstr "Málo žltej"
 
 #: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
@@ -5389,7 +5200,7 @@ msgstr "Priveľa žltej"
 #: activities/color_mix/ColorMix.qml:232
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
-msgstr "Nedostatok azúrovej"
+msgstr "Málo azúrovej"
 
 #: activities/color_mix/ColorMix.qml:234
 msgctxt "ColorMix|"
@@ -5410,12 +5221,9 @@ msgstr "Odhaliť miešanie farieb svetla."
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
-msgstr "Namiešaj základné farby, aby si dostal zadanú farbu."
+msgstr "Nauč sa miešať základné farby svetla, aby si dostal zadanú farbu."
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
@@ -5424,42 +5232,26 @@ msgid ""
 "This activity teaches how mixing primary light colors works (additive "
 "mixing)."
 msgstr ""
+"Táto činnosť učí ako funguje miešanie základných farieb svetla (miešanie "
+"pridávaním)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Ak je odpoveď správna, napíšte zodpovedajúci výsledok a overte si odpoveď "
-"kliknutím na tlačidlo OK."
+"Zmeň farbu posúvaním posuvníkov na baterkách alebo klikaním na + a -. Potom "
+"si over odpoveď kliknutím na tlačidlo OK."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "\n"
-#| "The activity deals with mixing primary colors of light (additive "
-#| "mixing).\n"
-#| "\n"
-#| "In case of light it is just the opposite of mixing color with paints! The "
-#| "more light you add the lighter the resultant color will get. Primary "
-#| "colors of light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
 "light you add, the lighter the resulting color becomes. The primary colors "
 "of light are red, green and blue."
 msgstr ""
-"\n"
-"Aktivita sa zaoberá miešaním základných farieb svetla (aditívne miešanie).\n"
-"\n"
-"V prípade svetla je to práve opak miešania farieb s nátermi! Ak pridáte viac "
+"Miešanie farieb svetla je len opakom miešania pigmentových farieb. Pridaním "
 "svetla, bude výsledná farba svetlejšia. Hlavné farby svetla sú červená, "
 "zelená a modrá."
 
@@ -5477,24 +5269,21 @@ msgstr "Klikni na správnu farbu"
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
-msgstr "Táto aktivita vás učí  rozpoznávať rôzne farby."
+msgstr "Precvič si rozoznávanie rôznych farieb."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Identifying colors."
-msgstr "Rozpoznávanie farieb."
+msgstr "Určovanie farieb."
 
 #. Help manual
 #: activities/colors/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Listen to the color and click on the matching duck."
-msgstr "Vypočuť si farbu a kliknúť na zodpovedajúcu kačku."
+msgstr "Vypočuj si farbu a klikni na zodpovedajúcu kačku."
 
 #: activities/colors/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
