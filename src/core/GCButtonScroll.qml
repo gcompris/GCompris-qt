@@ -21,8 +21,8 @@ import GCompris 1.0
 Rectangle {
     id: scrollButtons
     color: "#00000000"
-    width: (isHorizontal ? 110 : 50) * ApplicationInfo.ratio
-    height: (isHorizontal ? 50 : 110) * ApplicationInfo.ratio
+    width: defaultWidth
+    height: defaultHeight
 
     signal up
     signal down
@@ -30,6 +30,8 @@ Rectangle {
     property bool upVisible: false
     property bool downVisible: false
 
+    property int defaultWidth: (isHorizontal ? 110 : 50) * ApplicationInfo.ratio
+    property int defaultHeight: (isHorizontal ? 50 : 110) * ApplicationInfo.ratio
     property bool isHorizontal: false
     property real heightRatio: isHorizontal ? (50 / 110) : (110 / 50)
     property real widthRatio: 1 / heightRatio

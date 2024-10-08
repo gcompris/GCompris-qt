@@ -20,9 +20,6 @@ Rectangle {
     width: parent.width
     height: parent.height
     color: "#ABCDEF"
-    border.color: "white"
-    border.width: 2
-    radius: 20
     visible: false
     z: 2000
     focus: true
@@ -30,7 +27,6 @@ Rectangle {
     // used in Sketch activity
     property bool imageMode: false
     property var fileExtensions: []
-
     property string fileToOverwrite: ""
 
     onVisibleChanged: {
@@ -53,19 +49,19 @@ Rectangle {
         fileNameInput.focus = false
         fileNameInput.text = ""
         visible = false
-        viewContainer.selectedFileIndex = -1
-        creationsList.flick(0, 1400)
+        creationsList.currentIndex = -1
+        fileNames.clear()
     }
 
     MouseArea {
         anchors.fill: parent
-        onClicked: viewContainer.selectedFileIndex = -1
+        onClicked: creationsList.currentIndex = -1
     }
-
 
     property var dataToSave
     property bool isSaveMode: false
     property bool dialogOpened: false
+    property int baseMargins: 5 * ApplicationInfo.ratio
     readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileName: imageMode ? fileNameInput.text + ".png" : fileNameInput.text + ".json"
@@ -163,7 +159,7 @@ Rectangle {
     }
 
     function loadFile(fileName) {
-        var filePath = filePrefix + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
+        var filePath = filePrefix + sharedDirectoryPath + fileNames.get(creationsList.currentIndex).name
         var data = null
         if(!imageMode) {
             var data = parser.parseFromUrl(filePath)
@@ -174,7 +170,7 @@ Rectangle {
 
     function deleteFile() {
         dialogOpened = true;
-        var filePath = filePrefix + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
+        var filePath = filePrefix + sharedDirectoryPath + fileNames.get(creationsList.currentIndex).name
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
                                    qsTr("%1 deleted successfully!").arg(filePath),
@@ -186,7 +182,7 @@ Rectangle {
                                    qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
 
-        viewContainer.selectedFileIndex = -1
+        creationsList.currentIndex = -1
         refreshWindow()
     }
 
@@ -242,67 +238,70 @@ Rectangle {
     }
 
     function searchFiles() {
-        viewContainer.selectedFileIndex = -1
+        creationsList.currentIndex = -1
         refreshWindow(fileNameInput.text.toLowerCase())
     }
 
-    TextField {
-        id: fileNameInput
-        width: parent.width / 2
-        font.pointSize: NaN
-        font.pixelSize: height * 0.6
-        height: cancelButton.height * 0.5
+    Rectangle {
+        id: fileNameBackground
+        width: Math.floor(parent.width * 0.5)
+        height: Math.floor(cancelButton.height * 0.7)
         anchors.verticalCenter: saveButton.verticalCenter
         anchors.left: parent.left
-        anchors.leftMargin: 20
-        verticalAlignment: TextInput.AlignVCenter
-        selectByMouse: true
-        maximumLength: 15
-        placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
-        onTextChanged: {
-            if(!creationHandler.isSaveMode)
-                searchFiles()
-        }
-        color: "black"
-        background: Rectangle {
-            border.color: "black"
-            border.width: 1
-            radius: fileNameInput.height / 4
+        anchors.leftMargin: creationHandler.baseMargins
+        border.color: "#191919"
+        border.width: ApplicationInfo.ratio
+        radius: creationHandler.baseMargins
+
+        TextField {
+            id: fileNameInput
+            anchors.fill: parent
+            font.pointSize: NaN
+            font.pixelSize: fileNameBackground.height * 0.6
+            topPadding: 0
+            bottomPadding: 0
+            selectByMouse: true
+            maximumLength: 20
+            placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
+            onTextChanged: {
+                if(!creationHandler.isSaveMode)
+                    searchFiles()
+            }
+            color: "#191919"
+            background.visible: false
         }
     }
 
     GCButton {
         id: saveButton
-        height: fileNameInput.height
+        height: fileNameBackground.height
         visible: creationHandler.isSaveMode
         text: qsTr("Save")
         theme: "highContrast"
         anchors.verticalCenter: cancelButton.verticalCenter
-        anchors.left: fileNameInput.right
+        anchors.left: fileNameBackground.right
         anchors.right: cancelButton.left
-        anchors.margins: 20 * ApplicationInfo.ratio
+        anchors.margins: creationHandler.baseMargins
         onClicked: saveFile()
     }
 
-    property real cellWidth: imageMode ? creationsList.width * 0.2 : 50 * ApplicationInfo.ratio
-    property real cellHeight: cellWidth * 1.3
+    property real cellWidth: Math.min(Math.floor(creationsList.width  * 0.2), creationsList.height)
+    property real cellHeight: cellWidth
 
     Rectangle {
         id: viewContainer
         anchors.top: cancelButton.bottom
         anchors.bottom: buttonRow.top
-        anchors.margins: 10 * ApplicationInfo.ratio
-        border.color: "black"
-        border.width: 2
-        radius: 20
         anchors.left: parent.left
         anchors.right: parent.right
-
-        property int selectedFileIndex: -1
+        anchors.margins: creationHandler.baseMargins
+        border.color: "#191919"
+        border.width: ApplicationInfo.ratio
+        radius: creationHandler.baseMargins
 
         MouseArea {
             anchors.fill: parent
-            onClicked: viewContainer.selectedFileIndex = -1
+            onClicked: creationsList.currentIndex = -1
         }
 
         GridView {
@@ -310,47 +309,35 @@ Rectangle {
             model: fileNames
             maximumFlickVelocity: creationHandler.height
             boundsBehavior: Flickable.StopAtBounds
-            width: parent.width - 10
-            height: parent.height - 10
+            anchors.fill: parent
+            anchors.margins: creationHandler.baseMargins
+            anchors.rightMargin: creationHandler.baseMargins + scrollButtons.width
             interactive: true
             cellHeight: creationHandler.cellHeight
             cellWidth: creationHandler.cellWidth
-            anchors.top: parent.top
-            anchors.topMargin: 10
-            anchors.left: parent.left
-            anchors.leftMargin: 5
             clip: true
-
-            MouseArea {
-                anchors.fill: parent
-                enabled: !creationHandler.isSaveMode
-                onClicked: {
-                    var itemIndex = creationsList.indexAt(mouseX, mouseY+creationsList.contentY)
-                    if(itemIndex === -1)
-                        viewContainer.selectedFileIndex = -1
-                    else
-                        viewContainer.selectedFileIndex = itemIndex
-                }
+            onCurrentIndexChanged: positionViewAtIndex(currentIndex, GridView.Contain)
+            keyNavigationWraps: true
+            highlightFollowsCurrentItem: true
+            highlightMoveDuration: 0
+            highlight: Rectangle {
+                height: creationHandler.cellHeight
+                width: creationHandler.cellWidth
+                color: "#E77936"
+                opacity: 0.4
+                radius: creationHandler.baseMargins
             }
-
             delegate: Item {
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
                 readonly property string fileName: fileName.text
-                Rectangle {
-                    anchors.fill: parent
-                    visible: index === viewContainer.selectedFileIndex
-                    color: "#E77936"
-                    opacity: 0.4
-                    radius: 10
-                }
-
                 Image {
                     id: fileIcon
-                    width: creationHandler.cellWidth
-                    height: parent.height / 1.5
+                    width: creationHandler.cellWidth - creationHandler.baseMargins * 2
+                    height: (creationHandler.cellHeight - creationHandler.baseMargins * 3) * 0.75
                     anchors.top: parent.top
-                    anchors.topMargin: 3
+                    anchors.topMargin: creationHandler.baseMargins
+                    anchors.horizontalCenter: parent.horizontalCenter
                     fillMode: Image.PreserveAspectFit
                     // the empty file is used to make a switch to reload overwritten image
                     source: creationHandler.imageMode ?
@@ -361,15 +348,24 @@ Rectangle {
                 GCText {
                     id: fileName
                     anchors.top: fileIcon.bottom
-                    height: parent.height - fileIcon.height - 15
-                    width: creationHandler.cellWidth
+                    anchors.bottom: parent.bottom
+                    anchors.left: parent.left
+                    anchors.right: parent.right
                     font.pointSize: regularSize
                     fontSizeMode: Text.Fit
                     wrapMode: Text.WordWrap
                     horizontalAlignment: Text.AlignHCenter
+                    elide: Text.ElideRight
                     // Exclude ".json" while displaying file name if not imageMode
                     text: creationHandler.imageMode ? name :
                         name.slice(0, name.length - 5)
+                }
+            }
+            MouseArea {
+                anchors.fill: parent
+                enabled: !creationHandler.isSaveMode
+                onClicked: {
+                    creationsList.currentIndex = creationsList.indexAt(mouseX, mouseY+creationsList.contentY)
                 }
             }
         }
@@ -377,17 +373,17 @@ Rectangle {
 
     Row {
         id: buttonRow
-        spacing: 20 * ApplicationInfo.ratio
-        anchors.horizontalCenter: viewContainer.horizontalCenter
+        spacing: creationHandler.baseMargins
+        anchors.horizontalCenter: creationHandler.horizontalCenter
         anchors.bottom: keyboardCreation.top
-        anchors.bottomMargin: 10 * ApplicationInfo.ratio
+        anchors.bottomMargin: creationHandler.baseMargins
         visible: !creationHandler.isSaveMode
         GCButton {
             id: loadButton
-            width: viewContainer.width * 0.5 - 20 * ApplicationInfo.ratio
-            height: saveButton.height
+            width: (viewContainer.width - 2 * creationHandler.baseMargins) * 0.5
+            height: buttonRow.visible ? Math.min(saveButton.height, safeSizeHint.height * 0.3) : 0
             text: qsTr("Load")
-            enabled: viewContainer.selectedFileIndex != -1
+            enabled: creationsList.currentIndex != -1
             theme: "highContrast"
             onClicked: creationHandler.loadFile()
         }
@@ -395,9 +391,9 @@ Rectangle {
         GCButton {
             id: deleteButton
             width: loadButton.width
-            height: saveButton.height
+            height: loadButton.height
             text: qsTr("Delete")
-            enabled: viewContainer.selectedFileIndex != -1
+            enabled: creationsList.currentIndex != -1
             theme: "highContrast"
             onClicked: confirmFileDeleteDialog()
         }
@@ -410,12 +406,22 @@ Rectangle {
         }
     }
 
+    Item {
+        id: safeSizeHint
+        anchors.top: cancelButton.bottom
+        anchors.bottom: keyboardCreation.top
+        anchors.right: parent.right
+        width: 1
+    }
+
     // The scroll buttons
     GCButtonScroll {
+        id: scrollButtons
+        height: Math.min(defaultHeight, viewContainer.height)
+        width: Math.min(defaultWidth, viewContainer.height * widthRatio)
         anchors.right: viewContainer.right
-        anchors.rightMargin: 5 * ApplicationInfo.ratio
         anchors.bottom: viewContainer.bottom
-        anchors.bottomMargin: 5 * ApplicationInfo.ratio
+        anchors.margins: creationHandler.baseMargins
         onUp: creationsList.flick(0, 1000)
         onDown: creationsList.flick(0, -1000)
         upVisible: creationsList.atYBeginning ? false : true
@@ -508,22 +514,13 @@ Rectangle {
 
     Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Left) {
-            if(viewContainer.selectedFileIndex > 0) {
-                viewContainer.selectedFileIndex -= 1;
-            } else {
-                viewContainer.selectedFileIndex = creationsList.count - 1;
-            }
-        }
-        if(event.key === Qt.Key_Right) {
-            if(viewContainer.selectedFileIndex < creationsList.count - 1) {
-                viewContainer.selectedFileIndex += 1;
-            } else {
-                viewContainer.selectedFileIndex = 0;
-            }
-        }
-        if(event.key === Qt.Key_Up || event.key === Qt.Key_Down) {
-            if(!dialogOpened)
-                fileNameInput.forceActiveFocus();
+            creationsList.moveCurrentIndexLeft();
+        } else if(event.key === Qt.Key_Right) {
+            creationsList.moveCurrentIndexRight();
+        } else if(event.key === Qt.Key_Up) {
+            creationsList.moveCurrentIndexUp();
+        } else if(event.key == Qt.Key_Down) {
+            creationsList.moveCurrentIndexDown();
         }
     }
 
@@ -533,12 +530,12 @@ Rectangle {
                 return
             } else if(saveButton.visible) {
                 saveButton.clicked();
-            } else if(buttonRow.visible && viewContainer.selectedFileIndex != -1){
+            } else if(buttonRow.visible && creationsList.currentIndex != -1){
                 loadButton.clicked();
             }
         }
         else if(event.key === Qt.Key_Delete) {
-            if(buttonRow.visible && viewContainer.selectedFileIndex != -1){
+            if(buttonRow.visible && creationsList.currentIndex != -1){
                 deleteButton.clicked();
             }
         }
