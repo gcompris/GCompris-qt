@@ -94,6 +94,11 @@ Rectangle {
     signal button2Hit
 
     /**
+     * Emitted after the dialog is stopped, useful to trigger some actions AFTER the dialog is closed
+     */
+    signal deferredAction
+
+    /**
      * type:Component
      * Content component which holds the optional content
      * after instructionText
@@ -124,6 +129,7 @@ Rectangle {
         opacity = 0;
         parent.Keys.enabled = true;
         parent.forceActiveFocus();
+        deferredAction();
     }
     onClose: {
         if(isDestructible)
