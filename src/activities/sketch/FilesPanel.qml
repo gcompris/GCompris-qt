@@ -61,6 +61,8 @@ FoldablePanel {
 
                 MouseArea {
                     anchors.fill: parent
+                    onPressed: saveButton.buttonPressed();
+                    onReleased: saveButton.buttonReleased();
                     onClicked: saveButton.buttonClicked();
                 }
             }
@@ -98,6 +100,8 @@ FoldablePanel {
 
                 MouseArea {
                     anchors.fill: parent
+                    onPressed: openButton.buttonPressed();
+                    onReleased: openButton.buttonReleased();
                     onClicked: openButton.buttonClicked();
                 }
             }
@@ -242,9 +246,9 @@ FoldablePanel {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: {
-                        newButton.buttonClicked();
-                    }
+                    onPressed: newButton.buttonPressed();
+                    onReleased: newButton.buttonReleased();
+                    onClicked: newButton.buttonClicked();
                 }
             }
         }

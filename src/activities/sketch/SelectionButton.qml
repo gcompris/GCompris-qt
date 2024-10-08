@@ -21,6 +21,14 @@ Item {
 
     signal buttonClicked()
 
+    function buttonPressed() {
+        buttonIcon.scale = 0.9
+    }
+
+    function buttonReleased() {
+        buttonIcon.scale = 1
+    }
+
     Image {
         id: buttonIcon
         source: parent.iconSource
@@ -34,8 +42,8 @@ Item {
 
     MouseArea {
         anchors.fill: parent
-        onPressed: buttonIcon.scale = 0.9
-        onReleased: buttonIcon.scale = 1
+        onPressed: buttonPressed();
+        onReleased: buttonReleased();
         enabled: !selectionButton.isButtonSelected
         onClicked: {
             selectionButton.buttonClicked();

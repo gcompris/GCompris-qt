@@ -1,4 +1,4 @@
-/* GCompris - SelectionButton.qml
+/* GCompris - ActionButton.qml
  *
  * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  *
