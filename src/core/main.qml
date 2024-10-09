@@ -148,21 +148,6 @@ Window {
                 }
             }
         }
-
-        Component.onCompleted: {
-            if(ActivityInfoTree.startingActivity != "") {
-                // Don't play welcome intro
-                welcomePlayed = true;
-            }
-            else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
-                delayedWelcomeTimer.playWelcome();
-            }
-            else {
-                DownloadManager.voicesRegistered.connect(
-                        delayedWelcomeTimer.playWelcome);
-                delayedWelcomeTimer.start();
-            }
-        }
     }
 
     GCAudio {
@@ -468,7 +453,17 @@ Window {
             'backgroundMusic': backgroundMusic
         })
         if(ActivityInfoTree.startingActivity !== "") {
+            // Don't play welcome intro
+            welcomePlayed = true;
             startApplicationTimer.start();
+        }
+        else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
+            delayedWelcomeTimer.playWelcome();
+        }
+        else {
+            DownloadManager.voicesRegistered.connect(
+                    delayedWelcomeTimer.playWelcome);
+            delayedWelcomeTimer.start();
         }
     }
 
