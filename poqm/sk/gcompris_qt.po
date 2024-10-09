@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-08 00:32+0200\n"
+"PO-Revision-Date: 2024-10-09 00:08+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team:  kde-sk\n"
 "Language: sk\n"
@@ -5538,7 +5538,7 @@ msgstr "Šípky: presunúť vybratý predmet"
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space or Enter or Tab: select the next item"
-msgstr ""
+msgstr "Medzerník alebo Enter alebo Tab: zvoliť ďalšiu položku"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
 #: activities/crane/crane.js:41
@@ -5605,21 +5605,17 @@ msgstr "Presunúť tvary na im prislúchajúce miesto."
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "Rozvíjaj si pozorovacie schopnosti a priestorovú predstavivosť."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
 msgstr ""
-"Vyberať si z obrázkov na ľavej strane a dať ich na červené bodky v správnom "
-"poradí."
+"Nájdi podrobnosti obrázkov na ľavej strane a presuň ich na správne miesto na "
+"obrázku."
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5744,11 +5740,6 @@ msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
 msgstr "Vincent van Gogh, Portrét Pere Tanguy 1887-8"
 
 #: activities/details/resource/board/board9_0.qml:14
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid ""
-#| "Notre Dame de Paris cathedral on the Île de la Cité island in Paris, "
-#| "France."
 msgctxt "board9_0|"
 msgid "Notre Dame de Paris cathedral on the Île de la Cité in Paris, France."
 msgstr ""
@@ -5762,22 +5753,15 @@ msgstr "Digitálna elektrina"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr "Vytvorte a simulujte digitálnu elektrickú schému"
+msgstr "Vytvor a simuluj digitálny logický obvod"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
-msgstr ""
-"Voľne vytvorte digitálnu elektrickú schému so simuláciou v reálnom čase."
+msgstr "Vytvor digitálny logický obvod so simuláciou v reálnom čase."
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -6588,21 +6572,15 @@ msgstr "Prepojiť body na kreslenie písmen."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
-msgstr "Učenie sa ako kresliť písmená zábavným spôsobom."
+msgstr "Nauč sa kresliť písmená zábavným spôsobom."
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the letter by connecting the dots in the correct order"
 msgctxt "ActivityInfo|"
 msgid "Draw the letters by connecting the dots in the correct order."
-msgstr "Nakresli písmeno prepojením bodov v správnom poradí."
+msgstr "Nakresli písmená prepojením bodov v správnom poradí."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6618,12 +6596,9 @@ msgstr "Prepojiť body na kreslenie čísel od 0 po 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr "Učenie sa ako kresliť čísla zábavným spôsobom."
+msgstr "Nauč sa ako kresliť čísla zábavným spôsobom."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -6645,12 +6620,9 @@ msgstr "Umiestni si predmety tak, aby si ich čo najľahšie spočítal."
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr "Precvičovanie rovnosti po odčítaní."
+msgstr "Precvičovanie počítania malých množstiev."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6660,21 +6632,15 @@ msgstr "Základné počítanie"
 
 #. Help manual
 #: activities/enumerate/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "First, properly organize the items so that you can count them. Then, "
-#| "select the item you want to answer in the top left area. Enter the answer "
-#| "with the keyboard."
 msgctxt "ActivityInfo|"
 msgid ""
 "First, properly organize the items so that you can count them. Then, click "
 "on an item of the answers list in the top left area and enter the "
 "corresponding answer with the keyboard."
 msgstr ""
-"Najprv správne usporiadajte položky, aby ste ich mohli spočítať. Potom "
-"vyberte položku, na ktorú chcete odpovedať v ľavej hornej časti. Zadajte "
-"odpoveď pomocou klávesnice."
+"Najprv správne usporiadaj položky, aby si ich mohol spočítať. Potom klikni "
+"na položku v zozname odpovedí v ľavej hornej časti. Zadaj odpoveď pomocou "
+"klávesnice."
 
 #: activities/enumerate/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -6689,7 +6655,7 @@ msgstr "Šípka dole: výber predchádzajúcej položky"
 #: activities/enumerate/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Digits: enter your answer for the selected item"
-msgstr ""
+msgstr "Číslice: zadaj odpoveď pre zvolenú položku"
 
 #: activities/enumerate/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -6697,6 +6663,8 @@ msgid ""
 "Enter: validate your answer (if the 'Validate answers' option is set to 'OK "
 "button')"
 msgstr ""
+"Enter: over svoju odpoveď (ak je voľba \"Overiť odpoveď\" nastavená na "
+"tlačidlo \"OK\")"
 
 #: activities/enumerate/resource/1/Data.qml:13
 #: activities/enumerate/resource/1/Data.qml:29
@@ -6719,54 +6687,54 @@ msgstr "Vyčísliť do 3 ovocí."
 #: activities/enumerate/resource/3/Data.qml:29
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (5 fruit max)."
-msgstr ""
+msgstr "Zoskup 2 typy ovocia a vyčísli každú skupinu (najviac 5 ovocí)."
 
 #: activities/enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
+msgstr "Zoskup 2 typy ovocia a vyčísli každú skupinu (najviac 3 ovocia)."
 
 #: activities/enumerate/resource/2/Data.qml:23
 msgctxt "Data|"
 msgid "Group 2 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
+msgstr "Zoskup 2 typy ovocia a vyčísli každú skupinu (najviac 4 ovocia)."
 
 #: activities/enumerate/resource/3/Data.qml:13
 #: activities/enumerate/resource/3/Data.qml:35
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
+msgstr "Zoskup 3 typy ovocia a vyčísli každú skupinu (najviac 6 ovocí)."
 
 #: activities/enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (3 fruit max)."
-msgstr ""
+msgstr "Zoskup 3 typy ovocia a vyčísli každú skupinu (najviac 3 ovocia)."
 
 #: activities/enumerate/resource/3/Data.qml:23
 msgctxt "Data|"
 msgid "Group 3 types of fruit and enumerate each group (4 fruit max)."
-msgstr ""
+msgstr "Zoskup 3 typy ovocia a vyčísli každú skupinu (najviac 4 ovocia)."
 
 #: activities/enumerate/resource/4/Data.qml:13
 #: activities/enumerate/resource/4/Data.qml:35
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (9 fruit max)."
-msgstr ""
+msgstr "Zoskup 4 typy ovocia a vyčísli každú skupinu (najviac 9 ovocí)."
 
 #: activities/enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (6 fruit max)."
-msgstr ""
+msgstr "Zoskup 4 typy ovocia a vyčísli každú skupinu (najviac 6 ovocí)."
 
 #: activities/enumerate/resource/4/Data.qml:23
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (7 fruit max)."
-msgstr ""
+msgstr "Zoskup 4 typy ovocia a vyčísli každú skupinu (najviac 7 ovocí)."
 
 #: activities/enumerate/resource/4/Data.qml:29
 msgctxt "Data|"
 msgid "Group 4 types of fruit and enumerate each group (8 fruit max)."
-msgstr ""
+msgstr "Zoskup 4 typy ovocia a vyčísli každú skupinu (najviac 8 ovocí)."
 
 #. Activity title
 #: activities/erase/ActivityInfo.qml:15
