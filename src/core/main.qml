@@ -180,19 +180,6 @@ Window {
             if(main.isMusicalActivityRunning)
                 backgroundMusic.pause()
         }
-
-        Component.onCompleted: {
-            if(ApplicationSettings.isBackgroundMusicEnabled && ActivityInfoTree.startingActivity == "") {
-                backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
-            }
-            if(ApplicationSettings.isBackgroundMusicEnabled
-               && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-                   backgroundMusic.playBackgroundMusic()
-            }
-            else {
-                DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
-            }
-        }
     }
 
     function playIntroVoice(name) {
@@ -464,6 +451,17 @@ Window {
             DownloadManager.voicesRegistered.connect(
                     delayedWelcomeTimer.playWelcome);
             delayedWelcomeTimer.start();
+        }
+
+        if(ApplicationSettings.isBackgroundMusicEnabled && ActivityInfoTree.startingActivity == "") {
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+        }
+        if(ApplicationSettings.isBackgroundMusicEnabled
+           && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+               backgroundMusic.playBackgroundMusic()
+        }
+        else {
+            DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
         }
     }
 
