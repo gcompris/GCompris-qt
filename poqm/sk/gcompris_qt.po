@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-09 00:08+0200\n"
+"PO-Revision-Date: 2024-10-09 23:50+0200\n"
 "Last-Translator: Miroslav Ďurian <aasami@gmail.com>\n"
 "Language-Team:  kde-sk\n"
 "Language: sk\n"
@@ -27105,13 +27105,9 @@ msgstr ""
 "nainštalované na vašom systéme."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr ""
-"K stiahnutiu potrebných zvukových súborov prejsť do dialógu predvolieb."
+msgstr "Pre stiahnutie potrebných zvukových súborov choď do ponuky Nastavenia."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -27241,16 +27237,7 @@ msgstr ""
 "používate kritickosť s názvom \"Wishlist\"."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -27261,12 +27248,12 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"<html>Nemusíte byť vývojárom softvéru, aby ste sa stali členom tímu KDE. "
-"Môžete sa pripojiť k národným tímom, ktoré prekladajú rozhranie programov. "
-"Môžete tvoriť grafiku, témy, zvuky a lepšiu dokumentáciu. Vy sa musíte "
-"rozhodnúť!<br /><br />Informácie o projektoch na ktorých sa môžete podieľať "
-"nájdete na <a href=\"%1\">%1</a>.<br /><br />Ak potrebujete viac informácií "
-"alebo dokumentáciu, navštívte <a href=\"%2\">%2</a>.</html>"
+"Nemusíte byť vývojárom softvéru, aby ste sa stali členom tímu KDE. Môžete sa "
+"pripojiť k národným tímom, ktoré prekladajú rozhranie programov. Môžete "
+"tvoriť grafiku, témy, zvuky a lepšiu dokumentáciu. Vy sa musíte rozhodnúť!"
+"<br /><br />Informácie o projektoch na ktorých sa môžete podieľať nájdete na "
+"<a href=\"%1\">%1</a>.<br /><br />Ak potrebujete viac informácií alebo "
+"dokumentáciu, navštívte <a href=\"%2\">%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -27476,13 +27463,13 @@ msgstr "Kontrolný súčet stiahnutého súboru sa nezhoduje: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "Pre %1 sa nenašli žiadne hlasy."
 
 #: core/DownloadManager.cpp:767
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "Pre %1 sa nenašli žiadne údaje."
 
 #: core/GCCreationHandler.qml:134
 #, qt-format
@@ -27618,37 +27605,30 @@ msgid "Enable the kiosk mode."
 msgstr "Povoliť režim kiosku."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Namiesto openGL použite softvérové vykresľovanie (pomalšie, ale malo by "
-"bežať s akoukoľvek grafickou kartou)."
+"bežať s akoukoľvek grafickou kartou). Zastarané; namiesto toho použi radšej "
+"--renderer=software"
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
-"Namiesto softvéru použite openGL vykresľovanie (rýchlejšie, ale\tpotenciálne "
-"zlyhanie v závislosti od grafickej karty)"
+"Namiesto softvérového, použi openGL vykresľovanie (rýchlejšie, ale\tmôže "
+"zlyhať v závislosti od grafickej karty). Zastarané; namiesto toho použi "
+"radšej --renderer=opengl"
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Zvoľ spôsob vykresľovania (OpenGL, softvér, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
@@ -27675,16 +27655,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Uveď na akej úrovni sa má začať činnosť. Použije sa len vtedy, ked je "
+"použitá voľba --launch."
 
 #: core/main.qml:263
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Chcete teraz stiahnuť nasledujúci externý obsah?"
+msgstr ""
+"Chcete aby GCompris pri spustení automaticky stiahol alebo aktualizoval "
+"nasledujúci externý obsah?"
 
 #: core/main.qml:265
 msgctxt "main|"
@@ -27722,20 +27703,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Spustili ste GCompris prvýkrát."
 
 #: core/main.qml:318
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
 "Mali by ste si overiť, že vaše nastavenia aplikácie, predovšetkým váš jazyk "
-"je nastavený správne a či sú nainštalované všetky špecifické zvukové súbory "
-"jazyka. To môžete urobiť v dialógu Predvoľby."
+"je nastavený správne. To môžete urobiť v dialógu Predvoľby."
 
 #: core/main.qml:320
 msgctxt "main|"
@@ -27759,11 +27733,13 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Niektoré činnosti majú novú sadu údajov. Prajete si znovu nastaviť výber "
+"údajovej sady?"
 
 #: core/main.qml:383
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Použiť"
 
 #: core/main.qml:384
 msgctxt "main|"
