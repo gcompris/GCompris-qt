@@ -25361,16 +25361,11 @@ msgid ""
 msgstr ""
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
-msgstr "使用 OpenGL 渲染器而不是软件渲染 (更快，但是可能会崩溃，依显卡而定)"
+msgstr ""
 
 #: core/main.cpp:109
 msgctxt "QObject|"
