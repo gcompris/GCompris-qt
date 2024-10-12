@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-10-10 00:05+0300\n"
+"PO-Revision-Date: 2024-10-11 16:12+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14558,7 +14558,7 @@ msgstr "בקספייס (מחיקה אחורה) או דליט: לבטל פעול�
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "טאב: לעבור בין מספרים וסימנים"
 
 #: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
@@ -15025,12 +15025,9 @@ msgstr "לגרור ולשחרר כל פריט מעל השם שלו."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "להעשיר את אוצר המילים שלך"
+msgstr "להעשיר את אוצר המילים שלך ולתרגל קריאה."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -15687,12 +15684,9 @@ msgid "Space or Enter: select an item from the list"
 msgstr "רווח או אנטר: לבחור פריט מהרשימה."
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "הכנס (אנטר): לאשר את התשובה שלך כאשר כפתור הOK מופיע."
+msgstr "אנטר/Enter: לאשר את התשובה שלך כאשר כפתור האישור מופיע."
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
