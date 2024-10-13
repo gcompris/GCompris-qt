@@ -30,5 +30,7 @@ ActivityInfo {
           qsTr("Sketch brush concept from:") + " https://mrdoob.com/projects/harmony/ "
   section: "discovery arts fun"
   createdInVersion: 250000
+  // WARNING: if devicePixelRatio is not integer or .5 value (like 2.75), and software renderer is used, it will lead to incremental blur on the image...
+  // So better disable the activity in case software renderer is used.
   enabled: !ApplicationInfo.useSoftwareRenderer
 }

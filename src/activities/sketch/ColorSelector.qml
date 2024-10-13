@@ -118,8 +118,8 @@ Item {
             anchors.left: parent.left
             anchors.bottom: parent.bottom
 
-            property int colorButtonsWidth: (width - items.baseMargins * 2) * 0.33
-            property int colorButtonsHeight: (height - items.baseMargins * 2) * 0.33
+            readonly property int colorButtonsWidth: (width - items.baseMargins * 2) * 0.33
+            readonly property int colorButtonsHeight: (height - items.baseMargins * 2) * 0.33
 
             GridView {
                 id: colorButtonsGrid
@@ -256,8 +256,8 @@ Item {
             }
 
             SliderColor {
-                //: Color saturation
                 id: saturationSelector
+                //: Color saturation
                 title: qsTr("Saturation", "color saturation")
                 gradient: Gradient {
                     orientation: Gradient.Horizontal

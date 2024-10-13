@@ -14,7 +14,7 @@ Item {
     anchors.fill: parent
 
     property Item selectedModeButton: Item { property string iconSource: "qrc:/gcompris/src/activities/sketch/resource/textMode.svg" }
-    property string toolTitle: qsTr("Text Tool")
+    readonly property string toolTitle: qsTr("Text Tool")
 
     property alias textString: textEdit.text
     property alias textEdit: textEdit

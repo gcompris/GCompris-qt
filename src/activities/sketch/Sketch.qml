@@ -43,8 +43,8 @@ ActivityBase {
             property Item selectedTool: brushTool
             property Item openPanel
 
-            property int baseMargins: 5 * ApplicationInfo.ratio
-            property bool isHorizontalLayout: background.width >= background.height
+            readonly property int baseMargins: 5 * ApplicationInfo.ratio
+            readonly property bool isHorizontalLayout: background.width >= background.height
             property int buttonSize
             property real panelHandleWidth
             property real panelHandleHeight
@@ -58,7 +58,7 @@ ActivityBase {
             property bool resetRequested: false
             property bool homeRequested: false
             property color selectedForegroundColor: colorsPanel.selectedColor
-            property color foregroundColor: eraserMode ? backgroundColor : selectedForegroundColor
+            readonly property color foregroundColor: eraserMode ? backgroundColor : selectedForegroundColor
             property color backgroundColor: Qt.rgba(1,1,1,1)
             property color newBackgroundColor: backgroundColorSelector.newBackgroundColor
             property string backgroundToLoad: ""
@@ -77,17 +77,15 @@ ActivityBase {
             property alias smudgeSound: smudgeSound
             property alias newImageDialog: newImageDialog
             property alias creationHandler: creationHandler
-            property color panelColor: "#383838"
-            property color contentColor: "#D2D2D2"
+            readonly property color panelColor: "#383838"
+            readonly property color contentColor: "#D2D2D2"
             property var canvasImageSource
             property int undoIndex: 0
-            // WARNING: if devicePixelRatio is not integer or .5 value (like 2.75), and software renderer is used, it will lead to incremental blur on the image...
-            // Maybe we should disable the activity in case of such system combination...
-            property real devicePixelRatio: Screen.devicePixelRatio
-            property real grabWidth: canvasArea.width * devicePixelRatio
-            property real grabHeight: canvasArea.height * devicePixelRatio
+            readonly property real devicePixelRatio: Screen.devicePixelRatio
+            readonly property real grabWidth: canvasArea.width * devicePixelRatio
+            readonly property real grabHeight: canvasArea.height * devicePixelRatio
 
-            property var patternList: [
+            readonly property var patternList: [
                                         Qt.SolidPattern,
                                         Qt.HorPattern,
                                         Qt.VerPattern,
@@ -196,7 +194,7 @@ ActivityBase {
             Image {
                 id: canvasImage
                 anchors.fill: parent
-                // DO NOT use Imgage.PreserveAspectFit, as it progressively adds some blur at each paint iteration when deviceRatio != 1...
+                // DO NOT use Image.PreserveAspectFit, as it progressively adds some blur at each paint iteration when deviceRatio != 1...
                 fillMode: Image.Stretch
                 cache: false
                 smooth: true

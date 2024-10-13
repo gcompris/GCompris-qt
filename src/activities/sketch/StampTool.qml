@@ -10,24 +10,24 @@ import QtQuick
 Item {
     id: stampTool
     property alias selectedMode: stampTool
-    property bool usePositionChanged: true
+    readonly property bool usePositionChanged: true
     property int selectedStampIndex: 0
 
     property real toolOpacity: 1
-    property real defaultToolOpacity: 1
+    readonly property real defaultToolOpacity: 1
     property int toolRotation: 0
-    property int defaultToolRotation: 0
-    property int maxToolRotation: 360
-    property int rotationSliderStepSize: 15
+    readonly property int defaultToolRotation: 0
+    readonly property int maxToolRotation: 360
+    readonly property int rotationSliderStepSize: 15
     property int toolSize: 200
-    property int defaultToolSize: 200
-    property int minToolSize: 20
-    property int maxToolSize: 500
-    property int sizeSliderStepSize: 10
-    property real actualToolSize: toolSize / items.devicePixelRatio
+    readonly property int defaultToolSize: 200
+    readonly property int minToolSize: 20
+    readonly property int maxToolSize: 500
+    readonly property int sizeSliderStepSize: 10
+    readonly property real actualToolSize: toolSize / items.devicePixelRatio
     property bool toolMirror: false
 
-    property list<string> stamps: [
+    readonly property list<string> stamps: [
         "qrc:/gcompris/src/activities/babymatch/resource/images/star.svg",
         "qrc:/gcompris/src/activities/babymatch/resource/images/sun.svg",
         "qrc:/gcompris/src/activities/sketch/resource/moon.svg",

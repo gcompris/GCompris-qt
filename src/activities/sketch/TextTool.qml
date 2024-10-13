@@ -10,20 +10,20 @@ import QtQuick
 Item {
     id: textTool
     property alias selectedMode: textTool
-    property bool usePositionChanged: true
+    readonly property bool usePositionChanged: true
     property string textString: ""
 
     property real toolOpacity: 1
-    property real defaultToolOpacity: 1
+    readonly property real defaultToolOpacity: 1
     property int toolRotation: 0
-    property int defaultToolRotation: 0
-    property int maxToolRotation: 360
-    property int rotationSliderStepSize: 15
+    readonly property int defaultToolRotation: 0
+    readonly property int maxToolRotation: 360
+    readonly property int rotationSliderStepSize: 15
     property int toolSize: 20
-    property int defaultToolSize: 20
-    property int minToolSize: 10
-    property int maxToolSize: 100
-    property int sizeSliderStepSize: 1
+    readonly property int defaultToolSize: 20
+    readonly property int minToolSize: 10
+    readonly property int maxToolSize: 100
+    readonly property int sizeSliderStepSize: 1
 
 
     function toolInit() {

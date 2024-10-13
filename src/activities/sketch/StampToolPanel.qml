@@ -15,7 +15,7 @@ Item {
     anchors.fill: parent
 
     property Item selectedModeButton: modeList.currentItem
-    property string toolTitle: qsTr("Stamp Tool")
+    readonly property string toolTitle: qsTr("Stamp Tool")
 
     onSelectedModeButtonChanged: {
         stampTool.selectedStampIndex = modeList.currentIndex;

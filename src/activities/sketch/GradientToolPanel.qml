@@ -14,7 +14,7 @@ Item {
     anchors.fill: parent
 
     property Item selectedModeButton: linearModeButton // NOTE init default value on start
-    property string toolTitle: qsTr("Gradient Tools")
+    readonly property string toolTitle: qsTr("Gradient Tools")
 
     // Set selected mode on selected tool, and triggered when selecting the tool
     function setToolMode() {

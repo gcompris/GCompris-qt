@@ -14,7 +14,7 @@ Item {
     anchors.fill: parent
 
     property Item selectedModeButton: roundBrushButton // NOTE init default value on start
-    property string toolTitle: items.eraserMode ? qsTr("Eraser Tools") : qsTr("Drawing Tools")
+    readonly property string toolTitle: items.eraserMode ? qsTr("Eraser Tools") : qsTr("Drawing Tools")
 
     // Set selected mode on selected tool, and triggered when selecting the tool
     function setToolMode() {

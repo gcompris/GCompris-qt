@@ -14,7 +14,7 @@ Item {
     anchors.fill: parent
 
     property Item selectedModeButton: rectangleModeButton // NOTE init default value on start
-    property string toolTitle: qsTr("Geometry Tools")
+    readonly property string toolTitle: qsTr("Geometry Tools")
 
     // Set selected mode on selected tool, and triggered when selecting the tool
     function setToolMode() {

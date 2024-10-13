@@ -10,7 +10,7 @@ import QtQuick
 Item {
     id: geometryTool
     property Item selectedMode: rectangleMode // NOTE init default value on start
-    property bool usePositionChanged: true
+    readonly property bool usePositionChanged: true
 
     property alias rectangleMode: rectangleMode
     property alias squareMode: squareMode
@@ -20,7 +20,7 @@ Item {
     property alias hortoLineMode: hortoLineMode
 
     //: Rectangle or Square radius size
-    property string radiusString: qsTr("Rounded Corners")
+    readonly property string radiusString: qsTr("Rounded Corners")
 
     onSelectedModeChanged: {
         if(tempCanvas.ctx)
@@ -83,14 +83,14 @@ Item {
     Item {
         id: rectangleMode
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolRadius: 0
-        property int defaultToolRadius: 0
-        property int maxToolRadius: 100
+        readonly property int defaultToolRadius: 0
+        readonly property int maxToolRadius: 100
         property int toolRotation: 0
-        property int defaultToolRotation: 0
-        property int maxToolRotation: 180
-        property int rotationSliderStepSize: 5
+        readonly property int defaultToolRotation: 0
+        readonly property int maxToolRotation: 180
+        readonly property int rotationSliderStepSize: 5
 
         function modeInit() {
             geometryTool.defaultModeInit();
@@ -113,14 +113,14 @@ Item {
     Item {
         id: squareMode
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolRadius: 0
-        property int defaultToolRadius: 0
-        property int maxToolRadius: 100
+        readonly property int defaultToolRadius: 0
+        readonly property int maxToolRadius: 100
         property int toolRotation: 0
-        property int defaultToolRotation: 0
-        property int maxToolRotation: 180
-        property int rotationSliderStepSize: 5
+        readonly property int defaultToolRotation: 0
+        readonly property int maxToolRotation: 180
+        readonly property int rotationSliderStepSize: 5
 
         function modeInit() {
             geometryTool.defaultModeInit();
@@ -143,11 +143,11 @@ Item {
     Item {
         id: ovalMode
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolRotation: 0
-        property int defaultToolRotation: 0
-        property int maxToolRotation: 180
-        property int rotationSliderStepSize: 5
+        readonly property int defaultToolRotation: 0
+        readonly property int maxToolRotation: 180
+        readonly property int rotationSliderStepSize: 5
 
         function modeInit() {
             tempCanvas.opacity = selectedMode.toolOpacity;
@@ -170,7 +170,7 @@ Item {
     Item {
         id: circleMode
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int radius: 0
 
         function modeInit() {
@@ -193,13 +193,13 @@ Item {
     Item {
         id: freeLineMode
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolSize: 2
-        property int defaultToolSize: 2
-        property int minToolSize: 1
-        property int maxToolSize: 100
-        property int sizeSliderStepSize: 1
-        property real actualToolSize: toolSize / items.devicePixelRatio
+        readonly property int defaultToolSize: 2
+        readonly property int minToolSize: 1
+        readonly property int maxToolSize: 100
+        readonly property int sizeSliderStepSize: 1
+        readonly property real actualToolSize: toolSize / items.devicePixelRatio
 
         function modeInit() {
             tempCanvas.opacity = selectedMode.toolOpacity;
@@ -229,13 +229,13 @@ Item {
     Item {
         id: hortoLineMode
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolSize: 2
-        property int defaultToolSize: 2
-        property int minToolSize: 1
-        property int maxToolSize: 100
-        property int sizeSliderStepSize: 1
-        property real actualToolSize: toolSize / items.devicePixelRatio
+        readonly property int defaultToolSize: 2
+        readonly property int minToolSize: 1
+        readonly property int maxToolSize: 100
+        readonly property int sizeSliderStepSize: 1
+        readonly property real actualToolSize: toolSize / items.devicePixelRatio
 
         function modeInit() {
             tempCanvas.opacity = selectedMode.toolOpacity;

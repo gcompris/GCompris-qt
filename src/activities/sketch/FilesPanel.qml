@@ -16,18 +16,14 @@ FoldablePanel {
     icon1Source: "qrc:/gcompris/src/activities/sketch/resource/filesMenu.svg"
     icon2Source: ""
 
-    onClose: {
-        return
-    }
-
     Column {
         id: panelLayout
         anchors.fill: parent
         anchors.margins: items.baseMargins
         spacing: items.baseMargins
 
-        property int lineHeight: height * 0.15
-        property int buttonSize: Math.min(lineHeight, ApplicationInfo.ratio * 60)
+        readonly property int lineHeight: height * 0.15
+        readonly property int buttonSize: Math.min(lineHeight, ApplicationInfo.ratio * 60)
 
         Item {
             width: parent.width

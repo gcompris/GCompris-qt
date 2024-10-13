@@ -16,14 +16,14 @@ FoldablePanel {
     icon2Rotation: rotationSlider.visible ? rotationSlider.value : 0
     icon2Mirror: mirrorButton.visible ? mirrorButton.checked : false
 
-    property int settingsColumnWidth: (settingsArea.width - ApplicationInfo.ratio - items.baseMargins * 2) * 0.5
-    property int settingsLineHeight: (settingsArea.height - 6 * items.baseMargins) * 0.1
-    property int settingsDoubleLineHeight: settingsLineHeight * 2
-    property int modeButtonsSize: Math.min(
+    readonly property int settingsColumnWidth: (settingsArea.width - ApplicationInfo.ratio - items.baseMargins * 2) * 0.5
+    readonly property int settingsLineHeight: (settingsArea.height - 6 * items.baseMargins) * 0.1
+    readonly property int settingsDoubleLineHeight: settingsLineHeight * 2
+    readonly property int modeButtonsSize: Math.min(
         (settingsColumnWidth - items.baseMargins * 2) * 0.33,
         (settingsArea.height - items.baseMargins * 3 - settingsLineHeight * 3) * 0.5)
 
-    property int stampButtonsSize: (settingsColumnWidth - items.baseMargins * 2) * 0.25
+    readonly property int stampButtonsSize: (settingsColumnWidth - items.baseMargins * 2) * 0.25
 
     property Item activeToolPanel: brushToolPanel
 

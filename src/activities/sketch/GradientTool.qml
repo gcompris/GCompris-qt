@@ -13,13 +13,13 @@ import QtQuick
 Item {
     id: gradientTool
     property Item selectedMode: linearGradient // NOTE init default value on start
-    property bool usePositionChanged: true
+    readonly property bool usePositionChanged: true
 
     property alias linearGradient: linearGradient
     property alias radialGradient: radialGradient
     property alias invertedRadialGradient: invertedRadialGradient
 
-    property string radiusString: qsTr("Inner Circle Size")
+    readonly property string radiusString: qsTr("Inner Circle Size")
 
     onSelectedModeChanged: {
         if(tempCanvas.ctx)
@@ -33,7 +33,7 @@ Item {
 
     function drawRadialGradient() {
         var outsideRadius = Math.sqrt(Math.pow(canvasInput.currentPoint.x - canvasInput.lastPoint.x, 2) +
-                                    Math.pow(canvasInput.currentPoint.y - canvasInput.lastPoint.y, 2));
+                                            Math.pow(canvasInput.currentPoint.y - canvasInput.lastPoint.y, 2));
         radialGradientFill.centerRadius = outsideRadius;
     }
 
@@ -98,7 +98,7 @@ Item {
     Item {
         id: linearGradient
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
 
         property bool isLinear: true
 
@@ -123,10 +123,10 @@ Item {
     Item {
         id: radialGradient
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolRadius: 0
-        property int defaultToolRadius: 0
-        property int maxToolRadius: 300
+        readonly property int defaultToolRadius: 0
+        readonly property int maxToolRadius: 300
 
         function modeInit() {
             gradientTool.defaultModeInit();
@@ -148,10 +148,10 @@ Item {
     Item {
         id: invertedRadialGradient
         property real toolOpacity: 1
-        property real defaultToolOpacity: 1
+        readonly property real defaultToolOpacity: 1
         property int toolRadius: 0
-        property int defaultToolRadius: 0
-        property int maxToolRadius: 300
+        readonly property int defaultToolRadius: 0
+        readonly property int maxToolRadius: 300
 
         function modeInit() {
             gradientTool.defaultModeInit();
