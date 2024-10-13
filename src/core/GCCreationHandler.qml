@@ -219,7 +219,7 @@ Rectangle {
     function confirmFileDeleteDialog() {
         dialogOpened = true;
         Core.showMessageDialog(creationHandler,
-                               qsTr("Are you sure you want to delete this file?"),
+                               qsTr("Do you really want to delete this file?"),
                                qsTr("Yes"), function() { deleteFileTimer.restart(); }, qsTr("No"), function() { restoreFocusTimer.restart(); }, null);
     }
 
