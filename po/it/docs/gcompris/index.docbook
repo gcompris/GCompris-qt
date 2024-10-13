@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->23/5/2024</date>
+>20/9/2024</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->4.1</releaseinfo>
+>4.2</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -588,15 +588,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={renderer}</entry>
+<entry
+>Specifica quale renderer grafico usare. Su tutte le piattaforme, opengl e software sono disponibili. Su Windows, puoi usare direct3d11 o direct3d12 (se è stato compilato con Qt
+>=6.6). Su MacOS, puoi usare metal.</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Utilizzare il renderer software invece di openGL (dovrebbe funzionare con qualsiasi scheda video).</entry>
+>Utilizzare il motore di rendering software invece di OpenGL (dovrebbe funzionare con qualsiasi scheda video). Obsoleto, utilizzare invece --renderer=software.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilizzare il renderer openGL invece del software (più veloce e con più effetti grafici, ma può bloccarsi con alcune schede video).</entry>
+>Utilizzare il motore di rendering OpenGL invece di quello software (più veloce e più effetti grafici, ma con possibilità di chiusure inattese in base alla tua scheda video). Obsoleto, utilizzare invece --renderer=opengl.</entry>
 </row>
 </tbody>
 </tgroup>
