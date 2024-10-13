@@ -30,8 +30,8 @@ Rectangle {
     property bool upVisible: false
     property bool downVisible: false
 
-    property int defaultWidth: (isHorizontal ? 110 : 50) * ApplicationInfo.ratio
-    property int defaultHeight: (isHorizontal ? 50 : 110) * ApplicationInfo.ratio
+    readonly property int defaultWidth: (isHorizontal ? 110 : 50) * ApplicationInfo.ratio
+    readonly property int defaultHeight: (isHorizontal ? 50 : 110) * ApplicationInfo.ratio
     property bool isHorizontal: false
     property real heightRatio: isHorizontal ? (50 / 110) : (110 / 50)
     property real widthRatio: 1 / heightRatio
