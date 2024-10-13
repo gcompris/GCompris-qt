@@ -28,6 +28,7 @@ private Q_SLOTS:
     void ReadWriteErrorsTest_data();
     void ReadWriteTest();
     void NameTest();
+    void CopyTest();
 };
 
 namespace {
@@ -119,6 +120,7 @@ void CoreFileTest::NameTest()
     // test sanitizeUrl
     const QString sameNameUnsanitized = QStringLiteral("file://")+tempFilename;
     file.setName(sameNameUnsanitized);
+
     // no update triggered as same name after sanitization
     QVERIFY(spyName.count() == 1);
     QCOMPARE(file.name(), QString(tempFilename));
@@ -128,6 +130,18 @@ void CoreFileTest::NameTest()
     // no update triggered as same name after sanitization
     QVERIFY(spyName.count() == 2);
     QCOMPARE(file.name(), QStringLiteral(":/")+tempFilename);
+
+    // test sanitizeUrl for windows case
+    const QString windowsNameUnsanitized = QStringLiteral("file:///c:/windows.png");
+    file.setName(windowsNameUnsanitized);
+    QCOMPARE(file.name(), QString("c:/windows.png"));
+}
+
+void CoreFileTest:: CopyTest()
+{
+    File file;
+    QVERIFY(file.copy(tempFilename, "./copy.txt"));
+    QFile::remove("./copy.txt");
 }
 
 void CoreFileTest::cleanup()
