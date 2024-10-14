@@ -660,12 +660,20 @@ ActivityBase {
                 parent: activity
                 isDestructible: false
                 message: items.homeRequested ?
-                    qsTr("You didn't save this image. Are you sure you want to close this activity?") :
-                    qsTr("Are you sure you want to erase this image?")
+                    qsTr("You didn't save this image. Do you want to close this activity?") :
+                    qsTr("Do you want to erase this image?")
                 button1Text: qsTr("Yes")
                 button2Text: qsTr("No")
-                onClose: newImageDialog.active = false;
+                onClose: {
+                    newImageDialog.active = false;
+                    items.homeRequested = false;
+                    items.resetRequested = false;
+                }
+
+                property bool yesPressed: false
+
                 onButton1Hit: {
+                    yesPressed = true;
                     if(items.homeRequested) {
                         return;
                     } else if(items.resetRequested) {
@@ -675,12 +683,11 @@ ActivityBase {
                     }
                 }
                 onButton2Hit: {
-                    items.homeRequested = false;
-                    items.resetRequested = false;
+                    yesPressed = false;
                     Activity.imageToLoad = "";
                 }
                 onDeferredAction: {
-                    if(items.homeRequested) {
+                    if(items.homeRequested && yesPressed) {
                         activity.home();
                     }
                 }
