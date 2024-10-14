@@ -283,6 +283,7 @@ Rectangle {
         anchors.right: cancelButton.left
         anchors.margins: creationHandler.baseMargins
         onClicked: saveFile()
+        enabled: fileNameInput.text != ""
     }
 
     property real cellWidth: Math.min(Math.floor(creationsList.width  * 0.2), creationsList.height)
