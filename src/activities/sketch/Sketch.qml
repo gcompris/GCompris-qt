@@ -124,6 +124,8 @@ ActivityBase {
             Activity.stop();
         }
 
+        Keys.onEscapePressed: requestHome();
+
         Keys.onPressed: (event) => {
             if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_Z)) {
                 Activity.undoAction();
@@ -142,6 +144,18 @@ ActivityBase {
             } else if((event.modifiers & Qt.ControlModifier) && (event.key === Qt.Key_O)) {
                 Activity.openImageDialog();
                 event.accepted = true;
+            } else if((event.modifiers === Qt.ControlModifier && event.key === Qt.Key_W) || event.key === Qt.Key_Back) {
+                requestHome();
+                event.accepted = true;
+            }
+        }
+
+        function requestHome() {
+            if(items.isSaved) {
+                activity.home();
+            } else {
+                items.homeRequested = true;
+                newImageDialog.active = true;
             }
         }
 
@@ -689,12 +703,7 @@ ActivityBase {
                 displayDialog(dialogHelp);
             }
             onHomeClicked: {
-                if(items.isSaved) {
-                    activity.home();
-                } else {
-                    items.homeRequested = true;
-                    newImageDialog.active = true;
-                }
+                background.requestHome();
             }
             onReloadClicked: {
                 if(items.isSaved) {
