@@ -48,8 +48,8 @@ ActivityBase {
             property int buttonSize
             property real panelHandleWidth
             property real panelHandleHeight
-            property int panelHandleColumns
-            property int panelHandleRows
+            property int panelHandleRows: 2
+            property int panelHandleColumns: 2
             property real panelGridY
 
             property bool canvasLocked: true
@@ -604,8 +604,8 @@ ActivityBase {
                     items.buttonSize: Math.min((background.width - 15 * items.baseMargins) * 0.125, 50 * ApplicationInfo.ratio)
                     items.panelHandleWidth: items.buttonSize * 2 + items.baseMargins * 3
                     items.panelHandleHeight: items.buttonSize + items.baseMargins * 3
-                    items.panelHandleColumns: 2
                     items.panelHandleRows: 1
+                    items.panelHandleColumns: 2
                     items.panelGridY: items.baseMargins * 2
 
                     layoutArea.anchors.topMargin: items.buttonSize + items.baseMargins * 3
