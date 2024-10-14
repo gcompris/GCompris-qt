@@ -35,7 +35,6 @@ include(FeatureSummary)
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/)
-set(CMAKE_PREFIX_PATH "${Qt6_DIR}/")
 
 # KDE po to qm tools
 if(ECM_FOUND)
