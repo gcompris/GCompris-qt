@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-09-19 10:07+0200\n"
+"PO-Revision-Date: 2024-10-14 20:20+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 24.08.0\n"
+"X-Generator: Lokalize 24.08.1\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -17212,7 +17212,7 @@ msgstr "Trobar les paraules amb la lletra indicada."
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr "Entrenar-se per a trobar un lletra indicada en paraules."
+msgstr "Entrenar-se per a trobar una lletra indicada en paraules."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -20666,7 +20666,7 @@ msgstr "Viatge a la Lluna."
 #: activities/ordering_chronology/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Tux gathers an apple."
-msgstr "En Tux recull una poma."
+msgstr "En Tux cull una poma."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
