@@ -660,7 +660,7 @@ ActivityBase {
                 parent: activity
                 isDestructible: false
                 message: items.homeRequested ?
-                    qsTr("You didn't save this image. Do you want to close this activity?") :
+                    qsTr("You did not save this image. Do you want to close this activity?") :
                     qsTr("Do you want to erase this image?")
                 button1Text: qsTr("Yes")
                 button2Text: qsTr("No")

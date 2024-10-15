@@ -15,9 +15,9 @@ ActivityInfo {
   icon: "sketch/sketch.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;, Amit Sagtani &lt;asagtani06@gmail.com&gt;, Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   title: qsTr("Sketch")
-  description: qsTr("Use the various tools to draw images.")
+  description: qsTr("Use the various digital painting tools to draw images.")
   //intro: "Use the tools to draw images."
-  goal: qsTr("Learn about basic drawing tools.")
+  goal: qsTr("Learn about some digital painting tools.")
   prerequisite: ""
   manual: qsTr("Select tools and colors from the foldable panels and draw images.<br><br>") +
           qsTr("<b>Keyboard controls:") + ("<ul><li>") +
