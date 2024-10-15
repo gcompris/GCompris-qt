@@ -105,7 +105,7 @@ On Windows, the build is done using Ninja, MinGW and OpenSSL provided by Qt Main
     cd GCompris-qt-*
     mkdir build
     cd build
-    cmake -G "Ninja" -DQt6_DIR=/c/Qt/6.5.3/mingw_64/lib/cmake/Qt6/ -DOPENSSL_ROOT_DIR=/c/Qt/Tools/OpenSSLv3/Win_x64/ ..
+    cmake -G "Ninja" -DCMAKE_PREFIX_PATH=/c/Qt/6.5.3/mingw_64/ -DOPENSSL_ROOT_DIR=/c/Qt/Tools/OpenSSLv3/Win_x64/ ..
     cmake --build . -j 4 --config Release --target BuildTranslations
     cmake --build . -j 4 --config Release
     cpack -C Release .

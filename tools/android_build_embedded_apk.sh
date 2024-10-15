@@ -13,6 +13,11 @@
 Qt6_BaseDIR=~/Qt6/6.6.3
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
+if [ "$#" -eq 1 ]; then
+    Qt6_BaseDIR=$1
+    echo "Overriding Qt6_BaseDIR to ${Qt6_BaseDIR}"
+fi
+
 # The current version
 version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeLists.txt)
 
@@ -59,7 +64,7 @@ f_cmake()
 	  -DCMAKE_BUILD_TYPE=Release \
 	  -DANDROID_ABI=$1 \
 	  -DCMAKE_FIND_ROOT_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/ \
-	  -DQt6_DIR=${Qt6_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
+	  -DCMAKE_PREFIX_PATH=${Qt6_BaseDIR}/${QtTarget}/lib/cmake/Qt6 \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DWITH_DOWNLOAD=$2 \
