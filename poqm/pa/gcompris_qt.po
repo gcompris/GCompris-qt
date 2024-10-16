@@ -22137,6 +22137,293 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr ""
 
+#: activities/sketch/ActivityInfo.qml:17
+msgctxt "ActivityInfo|"
+msgid "Sketch"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "Use the various digital painting tools to draw images."
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:20
+msgctxt "ActivityInfo|"
+msgid "Learn about some digital painting tools."
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:22
+msgctxt "ActivityInfo|"
+msgid ""
+"Select tools and colors from the foldable panels and draw images.<br><br>"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "<b>Keyboard controls:</b>"
+msgctxt "ActivityInfo|"
+msgid "<b>Keyboard controls:"
+msgstr "<b>ਕੀਬੋਰਡ ਕੰਟਰੋਲ:</b>"
+
+#: activities/sketch/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:25
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + N, Delete or Backspace: create a new image"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Brush smoothing concept from:"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Sketch brush concept from:"
+msgstr ""
+
+#: activities/sketch/BackgroundColorSelector.qml:40
+#, fuzzy
+msgctxt "BackgroundColorSelector|"
+msgid "Background color"
+msgstr "ਬੈਕਗਰਾਊਂਡ"
+
+#: activities/sketch/BackgroundSelector.qml:42
+#, fuzzy
+msgctxt "BackgroundSelector|"
+msgid "Background image"
+msgstr "ਬੈਕਗਰਾਊਂਡ"
+
+#: activities/sketch/BrushToolPanel.qml:17
+msgctxt "BrushToolPanel|"
+msgid "Eraser Tools"
+msgstr ""
+
+#: activities/sketch/BrushToolPanel.qml:17
+msgctxt "BrushToolPanel|"
+msgid "Drawing Tools"
+msgstr ""
+
+#: activities/sketch/ColorSelector.qml:75
+msgctxt "ColorSelector|"
+msgid "Palette Colors"
+msgstr ""
+
+#: activities/sketch/ColorSelector.qml:159
+msgctxt "ColorSelector|"
+msgid "Reset palette"
+msgstr ""
+
+#: activities/sketch/ColorSelector.qml:210
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
+msgctxt "ColorSelector|"
+msgid "Selected Color"
+msgstr "ਚੁਣੇ"
+
+#. Color hue
+#: activities/sketch/ColorSelector.qml:234
+msgctxt "ColorSelector|color hue"
+msgid "Hue"
+msgstr ""
+
+#. Color saturation
+#: activities/sketch/ColorSelector.qml:261
+#, fuzzy
+msgctxt "ColorSelector|color saturation"
+msgid "Saturation"
+msgstr "ਸ਼ਨਿੱਚਰ"
+
+#. Color lightness
+#: activities/sketch/ColorSelector.qml:286
+msgctxt "ColorSelector|color lightness"
+msgid "Lightness"
+msgstr ""
+
+#. Reload default color for selected slot
+#: activities/sketch/ColorSelector.qml:323
+msgctxt "ColorSelector|"
+msgid "Reset Color"
+msgstr ""
+
+#: activities/sketch/ColorsPanel.qml:157
+msgctxt "ColorsPanel|"
+msgid "Palettes"
+msgstr ""
+
+#: activities/sketch/FilesPanel.qml:46
+msgctxt "FilesPanel|"
+msgid "Save your image"
+msgstr ""
+
+#: activities/sketch/FilesPanel.qml:85
+msgctxt "FilesPanel|"
+msgid "Open an image"
+msgstr ""
+
+#: activities/sketch/FilesPanel.qml:116
+#, fuzzy
+msgctxt "FilesPanel|"
+msgid "New image settings"
+msgstr "ਸੈਟਿੰਗਾਂ"
+
+#: activities/sketch/FilesPanel.qml:144
+#, fuzzy
+msgctxt "FilesPanel|"
+msgid "Background color"
+msgstr "ਬੈਕਗਰਾਊਂਡ"
+
+#: activities/sketch/FilesPanel.qml:190
+#, fuzzy
+msgctxt "FilesPanel|"
+msgid "Background image"
+msgstr "ਬੈਕਗਰਾਊਂਡ"
+
+#: activities/sketch/FilesPanel.qml:231
+msgctxt "FilesPanel|"
+msgid "Create a new image"
+msgstr ""
+
+#. Rectangle or Square radius size
+#: activities/sketch/GeometryTool.qml:23
+msgctxt "GeometryTool|"
+msgid "Rounded Corners"
+msgstr ""
+
+#: activities/sketch/GeometryToolPanel.qml:17
+msgctxt "GeometryToolPanel|"
+msgid "Geometry Tools"
+msgstr ""
+
+#: activities/sketch/GradientTool.qml:22
+msgctxt "GradientTool|"
+msgid "Inner Circle Size"
+msgstr ""
+
+#: activities/sketch/GradientToolPanel.qml:17
+msgctxt "GradientToolPanel|"
+msgid "Gradient Tools"
+msgstr ""
+
+#: activities/sketch/Sketch.qml:663
+msgctxt "Sketch|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr ""
+
+#: activities/sketch/Sketch.qml:664
+msgctxt "Sketch|"
+msgid "Do you want to erase this image?"
+msgstr ""
+
+#: activities/sketch/Sketch.qml:665
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "Sketch|"
+msgid "Yes"
+msgstr "ਹਾਂ"
+
+#: activities/sketch/Sketch.qml:666
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "Sketch|"
+msgid "No"
+msgstr "ਨਹੀਂ"
+
+#: activities/sketch/StampToolPanel.qml:18
+msgctxt "StampToolPanel|"
+msgid "Stamp Tool"
+msgstr ""
+
+#: activities/sketch/TextToolPanel.qml:17
+msgctxt "TextToolPanel|"
+msgid "Text Tool"
+msgstr ""
+
+#: activities/sketch/TextToolPanel.qml:33
+msgctxt "TextToolPanel|"
+msgid "Type your text here"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:253
+#, fuzzy
+#| msgctxt "category_tools|"
+#| msgid "Tools"
+msgctxt "ToolsPanel|"
+msgid "Tools"
+msgstr "ਟੂਲ"
+
+#: activities/sketch/ToolsPanel.qml:427
+msgctxt "ToolsPanel|"
+msgid "Reset tool settings"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:483
+msgctxt "ToolsPanel|"
+msgid "Opacity"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:506
+msgctxt "ToolsPanel|"
+msgid "Size"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:526
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "ToolsPanel|"
+msgid "Speed"
+msgstr "ਗਤੀ"
+
+#: activities/sketch/ToolsPanel.qml:546
+msgctxt "ToolsPanel|"
+msgid "Density"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:566
+#, fuzzy
+msgctxt "ToolsPanel|"
+msgid "Dots Size"
+msgstr "ਬਿੰਦੀਆਂ"
+
+#: activities/sketch/ToolsPanel.qml:585
+msgctxt "ToolsPanel|"
+msgid "Smoothing"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:646
+#, fuzzy
+msgctxt "ToolsPanel|"
+msgid "Rotation"
+msgstr "ਕਾਰਵਾਈ"
+
+#: activities/sketch/ToolsPanel.qml:662
+msgctxt "ToolsPanel|"
+msgid "Mirror image"
+msgstr ""
+
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -24988,71 +25275,76 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr ""
 
-#: core/GCCreationHandler.qml:134
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:135 core/GCCreationHandler.qml:140
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "Ok"
 msgstr "ਠੀਕ ਹੈ"
 
-#: core/GCCreationHandler.qml:139
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:172
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr ""
 
-#: core/GCCreationHandler.qml:173
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "ਹਾਂ"
 
-#: core/GCCreationHandler.qml:173
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "ਨਹੀਂ"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:222
+msgctxt "GCCreationHandler|"
+msgid "Do you really want to delete this file?"
+msgstr ""
+
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:202
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr ""
 
-#: core/GCCreationHandler.qml:202
+#: core/GCCreationHandler.qml:265
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "ਖੋਜੋ"
 
-#: core/GCCreationHandler.qml:219
+#: core/GCCreationHandler.qml:279
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "ਸੰਭਾਲੋ"
 
-#: core/GCCreationHandler.qml:325
+#: core/GCCreationHandler.qml:386
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "ਲੋਡ ਕਰੋ"
 
-#: core/GCCreationHandler.qml:335
+#: core/GCCreationHandler.qml:396
 #, fuzzy
 msgctxt "GCCreationHandler|"
 msgid "Delete"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-31 00:36+0000\n"
+"POT-Creation-Date: 2024-10-16 00:36+0000\n"
 "PO-Revision-Date: 2024-05-31 12:48+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -1212,6 +1212,12 @@ msgid ""
 msgstr ""
 "Kies een kleur en teken de rechthoeken zoals jij wilt om een tekening te "
 "maken."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
+#: activities/sketch/ActivityInfo.qml:19
+#, kde-format
+msgid "Use the tools to draw images."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18

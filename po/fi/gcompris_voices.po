@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-31 00:36+0000\n"
+"POT-Creation-Date: 2024-10-16 00:36+0000\n"
 "PO-Revision-Date: 2023-05-18 18:06+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -1206,6 +1206,12 @@ msgstr ""
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr "Valitse väri ja piirrä neliöillä miten haluat luodaksesi piirroksen."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
+#: activities/sketch/ActivityInfo.qml:19
+#, kde-format
+msgid "Use the tools to draw images."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18

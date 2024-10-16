@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-31 00:36+0000\n"
+"POT-Creation-Date: 2024-10-16 00:36+0000\n"
 "PO-Revision-Date: 2024-05-31 10:49+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -1225,6 +1225,12 @@ msgid ""
 msgstr ""
 "Selecciona un color i pinta els rectangles com més t'agrade per a crear un "
 "dibuix."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
+#: activities/sketch/ActivityInfo.qml:19
+#, kde-format
+msgid "Use the tools to draw images."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18

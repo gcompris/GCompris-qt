@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-31 00:36+0000\n"
+"POT-Creation-Date: 2024-10-16 00:36+0000\n"
 "PO-Revision-Date: 2021-12-02 11:20+0200\n"
 "Last-Translator: Tõnis Piirits <tonis.piirits@gmail.com>\n"
 "Language-Team: Estonian <kde-i18n-doc@kde.org>\n"
@@ -1184,6 +1184,12 @@ msgstr "Jagage kõik kommid laste vahel võrdselt ära. Mõni komm võib jääda
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr "Joonistamiseks vali värv ja joonista ristkülikuid."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
+#: activities/sketch/ActivityInfo.qml:19
+#, kde-format
+msgid "Use the tools to draw images."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18

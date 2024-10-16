@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-31 00:36+0000\n"
+"POT-Creation-Date: 2024-10-16 00:36+0000\n"
 "PO-Revision-Date: 2024-05-31 13:26+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -1174,6 +1174,12 @@ msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
 "Elektu koloron kaj pentru la rektangulojn kiel vi ŝatas krei desegnaĵon."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
+#: activities/sketch/ActivityInfo.qml:19
+#, kde-format
+msgid "Use the tools to draw images."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18

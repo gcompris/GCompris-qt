@@ -24054,6 +24054,348 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "ടാബ്: നിറം തിരഞ്ഞെടുക്കുന്ന ഭാഗവും ചായമടിക്കുന്ന ഭാഗവും തമ്മിൽ മാറാൻ"
 
+#: activities/sketch/ActivityInfo.qml:17
+msgctxt "ActivityInfo|"
+msgid "Sketch"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:18
+msgctxt "ActivityInfo|"
+msgid "Use the various digital painting tools to draw images."
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:20
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn about multiples and factors."
+msgctxt "ActivityInfo|"
+msgid "Learn about some digital painting tools."
+msgstr "ഗുണിതങ്ങളെയും ഘടകങ്ങളെയും കുറിച്ച് പഠിക്കാൻ."
+
+#: activities/sketch/ActivityInfo.qml:22
+msgctxt "ActivityInfo|"
+msgid ""
+"Select tools and colors from the foldable panels and draw images.<br><br>"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Keyboard controls:"
+msgctxt "ActivityInfo|"
+msgid "<b>Keyboard controls:"
+msgstr "കീബോർഡ് നിയന്ത്രണങ്ങൾ:"
+
+#: activities/sketch/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + Z: undo"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Z: undo last action"
+msgstr "Ctrl + Z: അൺഡു ചെയ്യാൻ"
+
+#: activities/sketch/ActivityInfo.qml:25
+msgctxt "ActivityInfo|"
+msgid "Ctrl + Y: redo last action"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:26
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Ctrl + A: select all the text"
+msgctxt "ActivityInfo|"
+msgid "Ctrl + S: save the image"
+msgstr "Ctrl + A: മുഴുവൻ ടെക്സ്റ്റും തിരഞ്ഞെടുക്കാൻ"
+
+#: activities/sketch/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Ctrl + O: open an image"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Ctrl + N, Delete or Backspace: create a new image"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Brush smoothing concept from:"
+msgstr ""
+
+#: activities/sketch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Sketch brush concept from:"
+msgstr ""
+
+#: activities/sketch/BackgroundColorSelector.qml:40
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "BackgroundColorSelector|"
+msgid "Background color"
+msgstr "പിന്നാമ്പുറത്ത്"
+
+#: activities/sketch/BackgroundSelector.qml:42
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "BackgroundSelector|"
+msgid "Background image"
+msgstr "പിന്നാമ്പുറത്ത്"
+
+#: activities/sketch/BrushToolPanel.qml:17
+msgctxt "BrushToolPanel|"
+msgid "Eraser Tools"
+msgstr ""
+
+#: activities/sketch/BrushToolPanel.qml:17
+msgctxt "BrushToolPanel|"
+msgid "Drawing Tools"
+msgstr ""
+
+#: activities/sketch/ColorSelector.qml:75
+#, fuzzy
+#| msgctxt "ColorMix|"
+#| msgid "Match the color"
+msgctxt "ColorSelector|"
+msgid "Palette Colors"
+msgstr "ഈ നിറം ഉണ്ടാക്കുക"
+
+#: activities/sketch/ColorSelector.qml:159
+msgctxt "ColorSelector|"
+msgid "Reset palette"
+msgstr ""
+
+#: activities/sketch/ColorSelector.qml:210
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Selected"
+msgctxt "ColorSelector|"
+msgid "Selected Color"
+msgstr "തിരഞ്ഞെടുത്തത്"
+
+#. Color hue
+#: activities/sketch/ColorSelector.qml:234
+#, fuzzy
+#| msgctxt "board14_0|"
+#| msgid "Hubei"
+msgctxt "ColorSelector|color hue"
+msgid "Hue"
+msgstr "ഹ്യൂബേയ്"
+
+#. Color saturation
+#: activities/sketch/ColorSelector.qml:261
+#, fuzzy
+#| msgctxt "Dataset|"
+#| msgid "Saturn"
+msgctxt "ColorSelector|color saturation"
+msgid "Saturation"
+msgstr "ശനി"
+
+#. Color lightness
+#: activities/sketch/ColorSelector.qml:286
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Lights off"
+msgctxt "ColorSelector|color lightness"
+msgid "Lightness"
+msgstr "വെളിച്ചം കെടുത്താം"
+
+#. Reload default color for selected slot
+#: activities/sketch/ColorSelector.qml:323
+msgctxt "ColorSelector|"
+msgid "Reset Color"
+msgstr ""
+
+#: activities/sketch/ColorsPanel.qml:157
+#, fuzzy
+#| msgctxt "board9_0|"
+#| msgid "Palestine"
+msgctxt "ColorsPanel|"
+msgid "Palettes"
+msgstr "പലസ്തീൻ"
+
+#: activities/sketch/FilesPanel.qml:46
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Select your mode"
+msgctxt "FilesPanel|"
+msgid "Save your image"
+msgstr "മോഡ് തിരഞ്ഞെടുക്കുക"
+
+#: activities/sketch/FilesPanel.qml:85
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Many new images"
+msgctxt "FilesPanel|"
+msgid "Open an image"
+msgstr "ധാരാളം പുതിയ ചിത്രങ്ങൾ"
+
+#: activities/sketch/FilesPanel.qml:116
+#, fuzzy
+#| msgctxt "DialogChooseLevel|"
+#| msgid "%1 settings"
+msgctxt "FilesPanel|"
+msgid "New image settings"
+msgstr "%1 ക്രമീകരണം"
+
+#: activities/sketch/FilesPanel.qml:144
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "FilesPanel|"
+msgid "Background color"
+msgstr "പിന്നാമ്പുറത്ത്"
+
+#: activities/sketch/FilesPanel.qml:190
+#, fuzzy
+#| msgctxt "DownloadDialog|"
+#| msgid "Background"
+msgctxt "FilesPanel|"
+msgid "Background image"
+msgstr "പിന്നാമ്പുറത്ത്"
+
+#: activities/sketch/FilesPanel.qml:231
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid "Many new images"
+msgctxt "FilesPanel|"
+msgid "Create a new image"
+msgstr "ധാരാളം പുതിയ ചിത്രങ്ങൾ"
+
+#. Rectangle or Square radius size
+#: activities/sketch/GeometryTool.qml:23
+msgctxt "GeometryTool|"
+msgid "Rounded Corners"
+msgstr ""
+
+#: activities/sketch/GeometryToolPanel.qml:17
+msgctxt "GeometryToolPanel|"
+msgid "Geometry Tools"
+msgstr ""
+
+#: activities/sketch/GradientTool.qml:22
+msgctxt "GradientTool|"
+msgid "Inner Circle Size"
+msgstr ""
+
+#: activities/sketch/GradientToolPanel.qml:17
+msgctxt "GradientToolPanel|"
+msgid "Gradient Tools"
+msgstr ""
+
+#: activities/sketch/Sketch.qml:663
+#, fuzzy
+#| msgctxt "Piano_composition|"
+#| msgid "You have not selected any note. Do you want to erase all the notes?"
+msgctxt "Sketch|"
+msgid "You did not save this image. Do you want to close this activity?"
+msgstr "നിങ്ങൾ ഒരു സ്വരവും തിരഞ്ഞെടുത്തിട്ടില്ല. എല്ലാ സ്വരങ്ങളും മായിച്ചു കളയണമോ?"
+
+#: activities/sketch/Sketch.qml:664
+#, fuzzy
+#| msgctxt "ConfigurationItem|"
+#| msgid "Do you want to download it now?"
+msgctxt "Sketch|"
+msgid "Do you want to erase this image?"
+msgstr "അവ ഇപ്പോൾ ഡൗൺലോഡ് ചെയ്യണമോ?"
+
+#: activities/sketch/Sketch.qml:665
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "Yes"
+msgctxt "Sketch|"
+msgid "Yes"
+msgstr "വേണം"
+
+#: activities/sketch/Sketch.qml:666
+#, fuzzy
+#| msgctxt "balanceboxeditor|"
+#| msgid "No"
+msgctxt "Sketch|"
+msgid "No"
+msgstr "വേണ്ട"
+
+#: activities/sketch/StampToolPanel.qml:18
+msgctxt "StampToolPanel|"
+msgid "Stamp Tool"
+msgstr ""
+
+#: activities/sketch/TextToolPanel.qml:17
+msgctxt "TextToolPanel|"
+msgid "Text Tool"
+msgstr ""
+
+#: activities/sketch/TextToolPanel.qml:33
+msgctxt "TextToolPanel|"
+msgid "Type your text here"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:253
+#, fuzzy
+#| msgctxt "category_tools|"
+#| msgid "Tools"
+msgctxt "ToolsPanel|"
+msgid "Tools"
+msgstr "ഉപകരണങ്ങൾ"
+
+#: activities/sketch/ToolsPanel.qml:427
+msgctxt "ToolsPanel|"
+msgid "Reset tool settings"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:483
+msgctxt "ToolsPanel|"
+msgid "Opacity"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:506
+msgctxt "ToolsPanel|"
+msgid "Size"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:526
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Speed"
+msgctxt "ToolsPanel|"
+msgid "Speed"
+msgstr "വേഗത"
+
+#: activities/sketch/ToolsPanel.qml:546
+msgctxt "ToolsPanel|"
+msgid "Density"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:566
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Dots"
+msgctxt "ToolsPanel|"
+msgid "Dots Size"
+msgstr "കുത്തുകൾ"
+
+#: activities/sketch/ToolsPanel.qml:585
+msgctxt "ToolsPanel|"
+msgid "Smoothing"
+msgstr ""
+
+#: activities/sketch/ToolsPanel.qml:646
+#, fuzzy
+#| msgctxt "Lang|"
+#| msgid "action"
+msgctxt "ToolsPanel|"
+msgid "Rotation"
+msgstr "പ്രവൃത്തി"
+
+#: activities/sketch/ToolsPanel.qml:662
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Mirror the given image"
+msgctxt "ToolsPanel|"
+msgid "Mirror image"
+msgstr "ചിത്രത്തെ പ്രതിബിംബിപ്പിക്കുക"
+
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
@@ -27096,65 +27438,73 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "%1-ന് ഡാറ്റയൊന്നും കാണുന്നില്ല."
 
-#: core/GCCreationHandler.qml:134
+#: core/GCCreationHandler.qml:176
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 വിജയകരമായി മായിച്ചു കളഞ്ഞു!"
 
-#: core/GCCreationHandler.qml:135 core/GCCreationHandler.qml:140
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
+#: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "Ok"
 msgstr "ഒകെ"
 
-#: core/GCCreationHandler.qml:139
+#: core/GCCreationHandler.qml:181
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "%1 മായിച്ചു കളയാൻ സാധ്യമല്ല!"
 
-#: core/GCCreationHandler.qml:172
+#: core/GCCreationHandler.qml:215
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "ഈ പേരിൽ ഒരു ഫയൽ നിലവിലുണ്ട്. അതിനു പകരം വെയ്ക്കണമോ?"
 
-#: core/GCCreationHandler.qml:173
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: core/GCCreationHandler.qml:173
+#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: core/GCCreationHandler.qml:180
+#: core/GCCreationHandler.qml:222
+#, fuzzy
+#| msgctxt "Chess|"
+#| msgid "Do you really want to undo all the moves?"
+msgctxt "GCCreationHandler|"
+msgid "Do you really want to delete this file?"
+msgstr "എല്ലാ നീക്കങ്ങളും പഴയപടിയാക്കണമെന്ന് ഉറപ്പാണോ?"
+
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "വിജയകരമായി സേവ് ചെയ്തു!"
 
-#: core/GCCreationHandler.qml:202
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "ഫയലിന്റെ പേര് ടൈപ്പ് ചെയ്യുക"
 
-#: core/GCCreationHandler.qml:202
+#: core/GCCreationHandler.qml:265
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "തിരയുക"
 
-#: core/GCCreationHandler.qml:219
+#: core/GCCreationHandler.qml:279
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "സേവ് ചെയ്യൂ"
 
-#: core/GCCreationHandler.qml:325
+#: core/GCCreationHandler.qml:386
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "ലോഡ് ചെയ്യൂ"
 
-#: core/GCCreationHandler.qml:335
+#: core/GCCreationHandler.qml:396
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "മായിച്ചു കളയുക"
@@ -29427,10 +29777,6 @@ msgstr "തുടങ്ങാം"
 #~ msgctxt "ConfigurationItem|"
 #~ msgid "The background music is not yet installed. "
 #~ msgstr "പശ്ചാത്തല സംഗീതം ഇതുവരെ ഇൻസ്റ്റാൾ ചെയ്തിട്ടില്ല. "
-
-#~ msgctxt "ConfigurationItem|"
-#~ msgid "Do you want to download it now?"
-#~ msgstr "അവ ഇപ്പോൾ ഡൗൺലോഡ് ചെയ്യണമോ?"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""

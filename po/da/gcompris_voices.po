@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-05-31 00:36+0000\n"
+"POT-Creation-Date: 2024-10-16 00:36+0000\n"
 "PO-Revision-Date: 2019-12-28 18:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
@@ -1173,6 +1173,12 @@ msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
 msgstr ""
 "Vælg en farve, og mal rektanglerne som du vil, for at oprette en tegning."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
+#: activities/sketch/ActivityInfo.qml:19
+#, kde-format
+msgid "Use the tools to draw images."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
