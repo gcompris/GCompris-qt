@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-10-14 20:20+0200\n"
+"PO-Revision-Date: 2024-10-16 12:29+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -24395,261 +24395,198 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Esbós"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr ""
+"Fes servir les diverses eines de pintura digital per a dibuixar imatges."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Aprendre sobre els múltiples i els factors."
+msgstr "Aprendre sobre algunes eines de pintura digital."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Selecciona eines i colors des dels plafons plegables i dibuixa imatges."
+"<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "Controls del teclat:"
+msgstr "<b>Controls del teclat:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: per a desfer"
+msgstr "Ctrl + Z: desfà l'última acció"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: refà l'última acció"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: per a seleccionar tot el text"
+msgstr "Ctrl + S: desa la imatge"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: obre una imatge"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Suprimir o Retrocés: crea una imatge nova"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Concepte de suavitat del pinzell de:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Concepte de pinzell d'esbós de:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "En segon pla"
+msgstr "Color de fons"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "En segon pla"
+msgstr "Imatge de fons"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Eines d'esborrar"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Eines de dibuix"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Iguala el color"
+msgstr "Colors de la paleta"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Reinicia la paleta"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Seleccionat"
+msgstr "Color seleccionat"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "To"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturn"
+msgstr "Saturació"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Apaga els llums"
+msgstr "Claredat"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Reinicia el color"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestina"
+msgstr "Paletes"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Trieu el vostre mode"
+msgstr "Desa la imatge"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Moltes imatges noves"
+msgstr "Obre una imatge"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "Configuració de %1"
+msgstr "Configuració de la imatge nova"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "En segon pla"
+msgstr "Color de fons"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "En segon pla"
+msgstr "Imatge de fons"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Moltes imatges noves"
+msgstr "Crea una imatge nova"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Cantonades arrodonides"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Eines de geometria"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Mida del cercle interior"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Eines de degradat"
 
 #: activities/sketch/Sketch.qml:663
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "No has seleccionat cap nota. Vols esborrar-les totes?"
+msgstr "No has desat aquesta imatge. Vols tancar aquesta activitat?"
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Estàs segur que vols desfer tots els moviments?"
+msgstr "Vols esborrar aquesta imatge?"
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Sí"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "No"
@@ -24657,45 +24594,39 @@ msgstr "No"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Eina de segells"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Eina de text"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Teclegeu aquí el text"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
-msgstr "Eines"
+msgstr "Tools"
 
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Reinicia la configuració de les eines"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Opacitat"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Mida"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Velocitat"
@@ -24703,36 +24634,27 @@ msgstr "Velocitat"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Densitat"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Punts"
+msgstr "Mida dels punts"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Suavitzat"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "Accions"
+msgstr "Gir"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Reflecteix la imatge mostrada"
+msgstr "Reflecteix la imatge"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -27842,12 +27764,9 @@ msgid "No"
 msgstr "No"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Estàs segur que vols desfer tots els moviments?"
+msgstr "Segur que vols desfer suprimir aquest fitxer?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"

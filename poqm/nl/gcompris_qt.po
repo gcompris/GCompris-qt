@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-19 10:35+0200\n"
+"PO-Revision-Date: 2024-10-16 12:14+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -23991,261 +23991,200 @@ msgstr "Tab: schakelen tussen de kleurselectie en het schildergebied"
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Schets"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr ""
+"Gebruik de verschillende digitale hulpmiddelen voor tekenen om afbeeldingen "
+"te tekenen."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Leren over meervouden en factoren."
+msgstr "Leren over enige hulpmiddelen voor tekenen."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Selecteer hulpmiddelen en kleuren uit de opvouwbare panelen en teken "
+"afbeeldingen.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "Toetsenbordbesturing:"
+msgstr "<b>Toetsenbordbesturing:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: ongedaan maken"
+msgstr "Ctrl + Z: laatste actie ongedaan maken"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: laatste actie weer opnieuw doen"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: alle tekst selecteren"
+msgstr "Ctrl + S: de afbeelding opslaan"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: een afbeelding openen"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Del of Backspace: een nieuwe afbeelding aanmaken"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Penseelstreek vloeiend maken concept uit:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Schetspenseel concept uit:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Achtergrond"
+msgstr "Achtergrondkleur"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Achtergrond"
+msgstr "Achtergrondafbeelding"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Hulpmiddelen voor uitgummen"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Tekenhulpmiddelen"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Maak dezelfde kleur"
+msgstr "Paletkleuren"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Palet resetten"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Geselecteerd"
+msgstr "Geselecteerde kleur"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Tint"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturnus"
+msgstr "Verzadiging"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "board15_0|"
-#| msgid "Caithness"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Caithness"
+msgstr "Lichtheid"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Kleur terugzetten"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestina"
+msgstr "Paletten"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Selecteer jouw modus"
+msgstr "Sla uw afbeelding op"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Veel nieuwe afbeeldingen"
+msgstr "Een afbeelding openen"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 instellingen"
+msgstr "Instellingen van nieuwe afbeelding"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Achtergrond"
+msgstr "Achtergrondkleur"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Achtergrond"
+msgstr "Achtergrondafbeelding"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Veel nieuwe afbeeldingen"
+msgstr "Een nieuwe afbeelding aanmaken"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Afgeronde hoeken"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Hulpmiddelen voor geometrie"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Grootte van binnencirkel"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Hulpmiddelen voor kleurverloop"
 
 #: activities/sketch/Sketch.qml:663
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Je hebt geen enkele noot geselecteerd. Wil je alle noten wissen?"
+msgstr ""
+"Je hebt deze afbeelding niet opgeslagen. Wil je deze activiteit sluiten?"
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download it now?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Wil je het nu downloaden?"
+msgstr "Wil je deze afbeelding wissen?"
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ja"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nee"
@@ -24253,22 +24192,19 @@ msgstr "Nee"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Hulpmiddel voor stempelen"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Hulpmiddel voor tekst"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Tekst hier intypen"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Hulpmiddelen"
@@ -24276,22 +24212,19 @@ msgstr "Hulpmiddelen"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Reset instellingen voor hulpmiddel"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Dekking"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Grootte"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Snelheid"
@@ -24299,36 +24232,27 @@ msgstr "Snelheid"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Dichtheid"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Stippen"
+msgstr "Stipgrootte"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Vloeiend maken"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "actie"
+msgstr "Rotatie"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "De gegeven afbeelding spiegelen"
+msgstr "Afbeelding spiegelen"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -27405,12 +27329,9 @@ msgid "No"
 msgstr "Nee"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Wil je alle zetten ongedaan maken?"
+msgstr "Wil je echt dit bestand verwijderen?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"

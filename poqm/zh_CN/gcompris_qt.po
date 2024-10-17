@@ -22413,12 +22413,9 @@ msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "学习倍数和因数。"
+msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
@@ -22427,20 +22424,14 @@ msgid ""
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "键盘控制："
+msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z：撤销"
+msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -22448,12 +22439,9 @@ msgid "Ctrl + Y: redo last action"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: 选择所有文本"
+msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22476,20 +22464,14 @@ msgid "Sketch brush concept from:"
 msgstr ""
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "背景"
+msgstr ""
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "背景"
+msgstr ""
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
@@ -22502,12 +22484,9 @@ msgid "Drawing Tools"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "匹配颜色"
+msgstr ""
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
@@ -22515,39 +22494,27 @@ msgid "Reset palette"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "已选择"
+msgstr ""
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "湖北"
+msgstr ""
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "土星"
+msgstr ""
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "灭灯"
+msgstr ""
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
@@ -22556,28 +22523,19 @@ msgid "Reset Color"
 msgstr ""
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "巴勒斯坦"
+msgstr ""
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "选择模式"
+msgstr ""
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "大量新图片"
+msgstr ""
 
 #: activities/sketch/FilesPanel.qml:116
 msgctxt "FilesPanel|"
@@ -22585,28 +22543,19 @@ msgid "New image settings"
 msgstr ""
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "背景"
+msgstr ""
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "背景"
+msgstr ""
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "大量新图片"
+msgstr ""
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
@@ -22635,25 +22584,16 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "您真的想要撤销所有的移动吗？"
+msgstr ""
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "是"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "否"
@@ -22674,9 +22614,6 @@ msgid "Type your text here"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "工具"
@@ -22697,9 +22634,6 @@ msgid "Size"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "速度"
@@ -22710,12 +22644,9 @@ msgid "Density"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "点"
+msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
@@ -22723,20 +22654,14 @@ msgid "Smoothing"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "操作"
+msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "翻转给定的图像"
+msgstr ""
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -25590,12 +25515,9 @@ msgid "No"
 msgstr "否"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "您真的想要撤销所有的移动吗？"
+msgstr ""
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"

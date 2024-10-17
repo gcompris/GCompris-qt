@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -22209,7 +22209,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "ესკიზი"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -22217,12 +22217,9 @@ msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "გაიგეთ მამრავლებისა და ნამრავლების შესახებ."
+msgstr "გაიგეთ ზოგიერთი ციფრული ხატვის ხელსაწყოს შესახებ."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
@@ -22231,20 +22228,14 @@ msgid ""
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "კლავიატურით მართვა:"
+msgstr "<b>კლავიატურით მართვა:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: დაბრუნება"
+msgstr "Ctrl + Z: ბოლო ქმედების დაბრუნება"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -22252,12 +22243,9 @@ msgid "Ctrl + Y: redo last action"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: ტექსტის სრულად მონიშვნა"
+msgstr "Ctrl + S: გამოსახულების შენახვა"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -22280,20 +22268,14 @@ msgid "Sketch brush concept from:"
 msgstr ""
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "ფონი"
+msgstr "ფონის ფერი"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "ფონი"
+msgstr "ფონური გამოსახულება"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
@@ -22306,12 +22288,9 @@ msgid "Drawing Tools"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "მიიღე ფერი"
+msgstr "პალიტრის ფერები"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
@@ -22319,39 +22298,27 @@ msgid "Reset palette"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "მონიშნული"
+msgstr "არჩეული ფერი"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "ჰუბეი"
+msgstr "ტონი"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "სატურნი"
+msgstr "გაჯერებულობა"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "შუქის ჩაქრობა"
+msgstr "სიკაშკაშე"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
@@ -22360,60 +22327,39 @@ msgid "Reset Color"
 msgstr ""
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "პალესტინა"
+msgstr "პალიტრები"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "აირჩიეთ თქვენი რეჟიმი"
+msgstr "თქვენი გამოსახულების შენახვა"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "ბევრი ახალი გამოსახულება"
+msgstr "გამოსახულების გახსნა"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 -ის მორგება"
+msgstr "ახალი გამოსახულების პარამეტრები"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "ფონი"
+msgstr "ფონის ფერი"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "ფონი"
+msgstr "ფონური გამოსახულება"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "ბევრი ახალი გამოსახულება"
+msgstr "ახალი გამოსახულების შექმნა"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
@@ -22442,25 +22388,16 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "მართლა გნებავთ ყველა სვლის გაუქმება?"
+msgstr "გნებავთ ამ გამოსახულების წაშლა?"
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
-msgstr "დიახ"
+msgstr "კი"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "არა"
@@ -22473,7 +22410,7 @@ msgstr ""
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "ტექსტის ხელსაწყო"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
@@ -22481,9 +22418,6 @@ msgid "Type your text here"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "ხელსაწყოები"
@@ -22496,17 +22430,14 @@ msgstr ""
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "გაუმჭირვალობა"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "ზომა"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "სიჩქარე"
@@ -22514,36 +22445,27 @@ msgstr "სიჩქარე"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "სიმკვრივე"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "წერტილები"
+msgstr "წერტილების ზომა"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "დაგლუვება"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "action"
+msgstr "შემობრუნება"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "მოცემული გამოსახულების ანარეკლი"
+msgstr "გამოსახულების ანარეკლი"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -25369,12 +25291,9 @@ msgid "No"
 msgstr "არა"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "მართლა გნებავთ ყველა სვლის გაუქმება?"
+msgstr "მართლა გსურთ ამ ფაილის წაშლა?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"

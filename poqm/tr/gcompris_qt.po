@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-09-19 19:34+0300\n"
+"PO-Revision-Date: 2024-10-16 11:54+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -23737,261 +23737,196 @@ msgstr "Sekme: Renk seçici ve boyama alanı arasında geçiş yap"
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Eskiz"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "Görseller çizmek için çeşitli sayısal boyama araçlarını kullan."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Katları ve çarpanları öğren."
+msgstr "Sayısal boyama araçları hakkında bilgi edin."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Katlanabilir panellerden araçlar ve renkler seç ve görseller çiz.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "Klavye denetimleri:"
+msgstr "<b>Klavye denetimleri:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Kontrol + Z: Geri al"
+msgstr "Kontrol + Z: Son eylemi geri al"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Kontrol+Y: Son eylemi geri al"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Kontrol + A: Tüm metni seç"
+msgstr "Kontrol + S: Görseli kaydet"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Kontrol+0: Bir görsel aç"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Kontrol+N, Sil veya Geri Sil: Yeni bir görsel oluştur"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Fırça pürüzsüzleştirme konsepti:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Eskiz fırçası konsepti:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Arka Planda İndir"
+msgstr "Arka plan rengi"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Arka Planda İndir"
+msgstr "Arka plan görseli"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Silgi Araçları"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Çizim Araçları"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Rengi eşleştir"
+msgstr "Palet Renkleri"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Paleti Sıfırla"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Seçildi"
+msgstr "Seçili Renk"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Ton"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Satürn"
+msgstr "Doygunluk"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Işıklar kapalı"
+msgstr "Açıklık"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Rengi Sıfırla"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Filistin"
+msgstr "Paletler"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Kip seç"
+msgstr "Görselini kaydet"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Birçok yeni görsel"
+msgstr "Görsel aç"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 ayarları"
+msgstr "Yeni görsel ayarları"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Arka Planda İndir"
+msgstr "Arka plan rengi"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Arka Planda İndir"
+msgstr "Arka plan görseli"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Birçok yeni görsel"
+msgstr "Yeni görsel oluştur"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Yuvarlatılmış Köşeler"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Geometri Araçları"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "İç Çember Boyutu"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Gradyan Araçları"
 
 #: activities/sketch/Sketch.qml:663
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Herhangi bir nota seçmedin. Tüm notaları silmek istiyor musun?"
+msgstr "Bu görseli kaydetmedin. Bu etkinliği kapatmak mı istiyorsun?"
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Tüm hareketleri gerçekten geri almak istiyor musunuz?"
+msgstr "Bu görseli silmek mi istiyorsun?"
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Evet"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Hayır"
@@ -23999,22 +23934,19 @@ msgstr "Hayır"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Damga Aracı"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Metin Aracı"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Metnini buraya yaz"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Araçlar"
@@ -24022,22 +23954,19 @@ msgstr "Araçlar"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Araç Ayarlarını Sıfırla"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Matlık"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Boyut"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Hız"
@@ -24045,36 +23974,27 @@ msgstr "Hız"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Yoğunluk"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Noktalar"
+msgstr "Noktalar Boyutu"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Pürüzsüzleştirme"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "eylem"
+msgstr "Döndürme"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Verilen görseli yansıt"
+msgstr "Görseli Yansıt"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -27139,12 +27059,9 @@ msgid "No"
 msgstr "Hayır"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Tüm hareketleri gerçekten geri almak istiyor musunuz?"
+msgstr "Bu dosyayı silmeyi gerçekten istiyor musun?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"

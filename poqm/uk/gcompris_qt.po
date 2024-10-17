@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-09-19 09:06+0300\n"
+"PO-Revision-Date: 2024-10-16 14:58+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -23987,261 +23987,197 @@ msgstr "Tab: перемикання між засобом вибору коль�
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Ескіз"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "Використання різноманітних інструментів цифрового малювання."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Навчання кратним числам і множникам."
+msgstr "Навчання користуванню інструментами цифрового малювання."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Виберіть інструменти та кольори на придатних до згортання панелях і малюйте."
+"<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "Керування за допомогою клавіатури:"
+msgstr "<b>Керування за допомогою клавіатури:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: скасувати"
+msgstr "Ctrl + Z: скасувати останню дію"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: повторити останню дію"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: позначити увесь текст"
+msgstr "Ctrl + S: зберегти зображення"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: відкрити зображення"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Delete або Backspace: створити зображення"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Концепція згладжування мазків пензлем:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Концепція ескізного пензля:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Тло"
+msgstr "Колір тла"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Тло"
+msgstr "Зображення у тлі"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Інструменти гумки"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Інструменти малювання"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Відповідність кольору"
+msgstr "Кольори палітри"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Скинути палітру"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Вибрано"
+msgstr "Позначений колір"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Хубей"
+msgstr "Відтінок"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Сатурн"
+msgstr "Насиченість"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "board15_0|"
-#| msgid "Caithness"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Кейтнесс"
+msgstr "Освітленість"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Скинути колір"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Палестина"
+msgstr "Палітри"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Виберіть режим"
+msgstr "Зберегти ваше зображення"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Багато нових малюнків"
+msgstr "Відкрити зображення"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "Параметри %1"
+msgstr "Параметри нового зображення"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Тло"
+msgstr "Колір тла"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Тло"
+msgstr "Зображення у тлі"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Багато нових малюнків"
+msgstr "Створення зображення"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Закруглені кути"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Інструменти геометрії"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Розмір внутрішнього кола"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Інструменти градієнта"
 
 #: activities/sketch/Sketch.qml:663
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Вами не вибрано жодної ноти. Хочете вилучити усі ноти?"
+msgstr "Вами не збережено це зображення. Хочете закрити цю вправу?"
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Ви справді хочете скасувати усі ходи?"
+msgstr "Хочете витерти це зображення?"
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Так"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ні"
@@ -24249,22 +24185,19 @@ msgstr "Ні"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Інструмент штампа"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Інструмент тексту"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Тут ви можете ввести текст"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Інструменти"
@@ -24272,22 +24205,19 @@ msgstr "Інструменти"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Відновити початкові параметри інструмента"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Непрозорість"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Розмір"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Швидкість"
@@ -24295,36 +24225,27 @@ msgstr "Швидкість"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Щільність"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Крапки"
+msgstr "Розмір крапок"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Згладжування"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "дія"
+msgstr "Обертання"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Віддзеркалити вказане зображення"
+msgstr "Віддзеркалити зображення"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -27413,12 +27334,9 @@ msgid "No"
 msgstr "Ні"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Ви справді хочете скасувати усі ходи?"
+msgstr "Ви справді хочете вилучити цей файл?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
