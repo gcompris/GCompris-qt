@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-14 21:36+0300\n"
+"PO-Revision-Date: 2024-10-18 11:17+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -20133,12 +20133,9 @@ msgstr "Упарадкуйце дадзеныя падзеі ў іх храна�
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Упарадкуйце дадзеныя падзеі ў іх храналагічным парадку."
+msgstr "Навучыцеся ўпарадкоўваць падзеі ў іх храналагічным парадку."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20180,12 +20177,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Чытанне і ўпарадкаванне лікаў."
+msgstr "Практыка ўпарадкавання лікаў."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20591,15 +20585,13 @@ msgstr ""
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
-msgstr "Пстрыкніце па ячэйке сеткі каб прасунуць Тукса ў неабходным накірунку."
+msgstr ""
+"Пстрыкайце па ячэйках сеткі каб прасунуць Тукса да мэты, следуючы накірункам "
+"стрэлак."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -20632,12 +20624,9 @@ msgstr ""
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Relative maze"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Адносны лабірынт"
+msgstr "Распазнаванне адноснага шляху"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -20694,12 +20683,9 @@ msgstr ""
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Relative maze"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Адносны лабірынт"
+msgstr "Пракладванне адноснага шляху"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21454,12 +21440,9 @@ msgstr "Сі♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "Лікі па парадку"
+msgstr "Лікавае парадкаванне"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -21469,12 +21452,9 @@ msgstr "Лавіце аблокі ў слушным парадку, кіруюч
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Навучыцеся алфавітнаму парадку."
+msgstr "Навучыцеся лікаваму парадкаванню."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
