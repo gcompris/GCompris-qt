@@ -321,7 +321,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    topLevel->setProperty("startInProgress", false);
+    topLevel->setProperty("activitiesLoaded", true);
 
 #if __ANDROID__
     window->showMaximized();

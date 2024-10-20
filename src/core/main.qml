@@ -430,46 +430,57 @@ Window {
         }
     }
 
-    property bool startInProgress: true
-    onStartInProgressChanged: {
+    // Once we have loaded all the activities in c++, we display the three circle in orange
+    // for the duration of this timer and then we hide the splash screen
+    property bool startLoadingFinished: false
+    Timer {
+        id: secondTimer
+        interval: 100
+        onTriggered: {
+            if(ActivityInfoTree.startingActivity !== "") {
+                // Don't play welcome intro
+                welcomePlayed = true;
+                startApplicationTimer.start();
+            }
+            else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
+                delayedWelcomeTimer.playWelcome();
+            }
+            else {
+                DownloadManager.voicesRegistered.connect(
+                        delayedWelcomeTimer.playWelcome);
+                delayedWelcomeTimer.start();
+            }
+
+            if(ApplicationSettings.isBackgroundMusicEnabled && ActivityInfoTree.startingActivity == "") {
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+            }
+            if(ApplicationSettings.isBackgroundMusicEnabled
+               && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+                   backgroundMusic.playBackgroundMusic()
+            }
+            else {
+                DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
+            }
+            startLoadingFinished = true;
+        }
+    }
+    property bool activitiesLoaded: false
+    onActivitiesLoadedChanged: {
         splash.colorChangeTimer.stop();
         splash.currentCircle = 3;
+        secondTimer.start();
         pageView.push("qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name, {
             'audioVoices': audioVoices,
             'loading': loading,
             'backgroundMusic': backgroundMusic
         })
-        if(ActivityInfoTree.startingActivity !== "") {
-            // Don't play welcome intro
-            welcomePlayed = true;
-            startApplicationTimer.start();
-        }
-        else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
-            delayedWelcomeTimer.playWelcome();
-        }
-        else {
-            DownloadManager.voicesRegistered.connect(
-                    delayedWelcomeTimer.playWelcome);
-            delayedWelcomeTimer.start();
-        }
-
-        if(ApplicationSettings.isBackgroundMusicEnabled && ActivityInfoTree.startingActivity == "") {
-            backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
-        }
-        if(ApplicationSettings.isBackgroundMusicEnabled
-           && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-               backgroundMusic.playBackgroundMusic()
-        }
-        else {
-            DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
-        }
     }
 
     SplashScreen {
         id: splash
-        // We display the splash screen if we are loading GCompris (startInProgress) and
+        // We display the splash screen if we are loading GCompris (startLoadingFinished) and
         // when we are starting an activity via --launch
-        visible: startInProgress || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active))
+        visible: !startLoadingFinished || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active))
         anchors.fill: parent
     }
 
