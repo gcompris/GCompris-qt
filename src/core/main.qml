@@ -480,7 +480,8 @@ Window {
         id: splash
         // We display the splash screen if we are loading GCompris (startLoadingFinished) and
         // when we are starting an activity via --launch
-        visible: !startLoadingFinished || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active))
+        visible: !ApplicationInfo.isMobile && (
+                     !startLoadingFinished || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active)))
         anchors.fill: parent
     }
 
