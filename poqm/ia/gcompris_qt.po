@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-07-12 16:18+0200\n"
+"PO-Revision-Date: 2024-10-20 18:16+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -14285,7 +14285,7 @@ msgstr "van"
 #: activities/imagename/resource/board/board6_0.qml:58
 msgctxt "board6_0|"
 msgid "castle"
-msgstr ""
+msgstr "castello"
 
 #: activities/imagename/resource/board/board6_0.qml:66
 msgctxt "board6_0|"
@@ -21931,7 +21931,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Sketch"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
@@ -21950,12 +21950,9 @@ msgid ""
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "Controlos de claviero:"
+msgstr "<b>Controlos de claviero:"
 
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -21993,20 +21990,14 @@ msgid "Sketch brush concept from:"
 msgstr ""
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Fundo"
+msgstr "Color de fundo"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Fundo"
+msgstr "Imagine de fundo"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
@@ -22016,15 +22007,12 @@ msgstr ""
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Instrumento de Designar"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Designa Litteras"
+msgstr "Colores de paletta"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
@@ -22032,36 +22020,27 @@ msgid "Reset palette"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Selectionate"
+msgstr "Color selectionate "
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Tinta"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturno"
+msgstr "Saturation"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr ""
+msgstr "Brillantia"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
@@ -22070,12 +22049,9 @@ msgid "Reset Color"
 msgstr ""
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestina"
+msgstr "Palettas"
 
 #: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
@@ -22088,28 +22064,19 @@ msgid "Open an image"
 msgstr ""
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 preferentias"
+msgstr "Preferentias de nove imagine"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Fundo"
+msgstr "Color de fundo"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Fundo"
+msgstr "Imagine de fundo"
 
 #: activities/sketch/FilesPanel.qml:231
 msgctxt "FilesPanel|"
@@ -22120,7 +22087,7 @@ msgstr ""
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Angulos arrotundate"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
@@ -22148,17 +22115,11 @@ msgid "Do you want to erase this image?"
 msgstr ""
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Si"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "No"
@@ -22171,7 +22132,7 @@ msgstr ""
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Instrumento de Texto"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
@@ -22179,9 +22140,6 @@ msgid "Type your text here"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Instrumentos"
@@ -22194,17 +22152,14 @@ msgstr ""
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Opacitate"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Dimension"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Velocitate"
@@ -22212,28 +22167,22 @@ msgstr "Velocitate"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Densitate"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Punctos"
+msgstr "Grandor de Punctos"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Lisiar"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "action"
+msgstr "Rotation"
 
 #: activities/sketch/ToolsPanel.qml:662
 msgctxt "ToolsPanel|"

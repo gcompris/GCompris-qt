@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-10-11 16:12+0300\n"
+"PO-Revision-Date: 2024-10-19 08:47+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -3090,12 +3090,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Completing the puzzle requires patience and logical ability."
 msgctxt "ActivityInfo|"
 msgid "Completing the puzzle requires patience and arithmetic abilities."
-msgstr "סיום החידה דורש סבלנות ויכולת לוגית."
+msgstr "סיום החידה דורש סבלנות ויכולות חישוב."
 
 #. Help manual
 #: activities/calcudoku/ActivityInfo.qml:23
@@ -4100,26 +4097,18 @@ msgstr "לשחק דמקה (נגד טוקס)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
 "yours."
-msgstr "צריך לאכול את כל הכלים של היריב לפני שהוא יאכל את שלך"
+msgstr "צריך לאכול את כל הכלים של היריב לפני שהוא יאכל את שלך."
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "להתאמן באותיות ברייל."
+msgstr "להתאמן בדמקה."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4158,12 +4147,9 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "הגירסה ב־GCompris היא של החוקים הבינלאומיים"
+msgstr "הגרסה הזאת של דמקה תואמת לכללים הבינלאומיים של דמקה."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4416,12 +4402,9 @@ msgstr "סיום משחק שחמט"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
-msgstr "לשחק סיומים במשחק שחמט נגד טוקס."
+msgstr "לשחק סוף של משחקי שחמט נגד טאקס."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
@@ -4476,12 +4459,9 @@ msgstr "יש לגרור ולהפיל את הפריטים בכדי לסדר את 
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "ללמוד לזהות צבעים בלתי-רגילים."
+msgstr "ללמוד לזהות רצף זמן של סיפור."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4527,17 +4507,17 @@ msgstr ""
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read numbers."
-msgstr "למי שיודע/ת לקרוא מספרים."
+msgstr "לילדים שיודעים לקרוא מספרים."
 
 #: activities/chronos/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read words."
-msgstr "למי שיודע/ת לקרוא מילים."
+msgstr "לילדים שיודעים לקרוא מילים."
 
 #: activities/chronos/resource/board/board1_0.qml:15
 msgctxt "board1_0|"
 msgid "Moonwalker"
-msgstr "ללכת על הירח"
+msgstr "הליכת ירח"
 
 #: activities/chronos/resource/board/board1_0.qml:46
 msgctxt "board1_0|"
@@ -4642,12 +4622,12 @@ msgstr "צריך למקם כל חפץ על התאריך שבו הוא הומצא
 #: activities/chronos/resource/board/board5_0.qml:33
 msgctxt "board5_0|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 - קטר הקיטור 'רוקט' של סטפנסון"
+msgstr "1829 קטר הקיטור ‚רוקט’ של סטיבנסון"
 
 #: activities/chronos/resource/board/board5_0.qml:41
 msgctxt "board5_0|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 קוגנטס פרדיאר"
+msgstr "1769 הפרדייה של קוניו"
 
 #: activities/chronos/resource/board/board5_0.qml:49
 msgctxt "board5_0|"
@@ -4662,17 +4642,17 @@ msgstr "תחבורה"
 #: activities/chronos/resource/board/board5_1.qml:39
 msgctxt "board5_1|"
 msgid "1783 Montgolfier brothers' hot air balloon"
-msgstr "1783 בלון האויר החם של האחים מונטגולפייר"
+msgstr "1783 בלון האוויר החם של האחים מונטגולפייה"
 
 #: activities/chronos/resource/board/board5_1.qml:47
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האאולה של קלמנט אדר"
+msgstr "1890 האיל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_1.qml:55
 msgctxt "board5_1|"
 msgid "1907 Paul Cornu First helicopter flight"
-msgstr "1907 טיסת המסוק הראשונה של פאול קורנוּ"
+msgstr "1907 טיסת המסוק הראשונה של פול קורנוּ"
 
 #: activities/chronos/resource/board/board5_2.qml:15
 msgctxt "board5_2|"
@@ -4682,12 +4662,12 @@ msgstr "תחבורה"
 #: activities/chronos/resource/board/board5_2.qml:32
 msgctxt "board5_2|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 הפרדיאר של קוגנטס"
+msgstr "1769 הפרדייה של קוניו"
 
 #: activities/chronos/resource/board/board5_2.qml:40
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האאולה של קלמנט אדר"
+msgstr "1890 האיל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4697,12 +4677,12 @@ msgstr "תחבורה"
 #: activities/chronos/resource/board/board5_3.qml:32
 msgctxt "board5_3|"
 msgid "1783 Montgolfier brothers' hot air balloon"
-msgstr "1783 בלון האויר החם של האחים מונטגולפייר"
+msgstr "1783 בלון האוויר החם של האחים מונטגולפייה"
 
 #: activities/chronos/resource/board/board5_3.qml:40
 msgctxt "board5_3|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 - קטר הקיטור 'רוקט' של סטפנסון"
+msgstr "1829 קטר הקיטור ‚רוקט’ של סטיבנסון"
 
 #: activities/chronos/resource/board/board5_4.qml:15
 msgctxt "board5_4|"
@@ -4712,17 +4692,17 @@ msgstr "תחבורה"
 #: activities/chronos/resource/board/board5_4.qml:39
 msgctxt "board5_4|"
 msgid "1829 Stephenson's Rocket Steam locomotive"
-msgstr "1829 - קטר הקיטור 'רוקט' של סטפנסון"
+msgstr "1829 קטר הקיטור ‚רוקט’ של סטיבנסון"
 
 #: activities/chronos/resource/board/board5_4.qml:47
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האאולה של קלמנט אדר"
+msgstr "1890 האיל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 קוגנטס פרדיאר"
+msgstr "1769 הפרדייה של קוניו"
 
 #: activities/chronos/resource/board/board6_0.qml:16
 msgctxt "board6_0|"
@@ -4732,17 +4712,17 @@ msgstr "תעופה"
 #: activities/chronos/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האאולה של קלמנט אדר"
+msgstr "1890 האיל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
 msgid "1905 The Wright brothers' Flyer III"
-msgstr "1905 האחים רייט המעופפים 3"
+msgstr "1905 מעופף 3 של האחים רייט"
 
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "1909- לואיס בלריוט חוצה את התעלה האנגלית"
+msgstr "1909 לואי בלרואה חוצה את תעלת למאנש"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -4752,20 +4732,17 @@ msgstr "תעופה"
 #: activities/chronos/resource/board/board6_1.qml:39
 msgctxt "board6_1|"
 msgid "1947 Chuck Yeager breaks the sound-barrier"
-msgstr "1947 צ'אק ייגר שובר את מחסום מהירות הקול"
+msgstr "1947 צ׳אק ייגר שובר את מחסום מהירות הקול"
 
 #: activities/chronos/resource/board/board6_1.qml:47
 msgctxt "board6_1|"
 msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
-msgstr "1927 צ'ארלס לינדנברג חוצה את האוקיינוס האטלנטי"
+msgstr "1927 צ׳ארלס לינדברג חוצה את האוקיינוס האטלנטי"
 
 #: activities/chronos/resource/board/board6_1.qml:55
-#, fuzzy
-#| msgctxt "board6_1|"
-#| msgid "1934 Hélène Boucher's speed record of 444km/h"
 msgctxt "board6_1|"
 msgid "1934 Hélène Boucher's speed record of 445km/h"
-msgstr "1934 שיא המהירות של הלנה בואצ'ר  444 קמ\"ש"
+msgstr "1934 הלן בושה שוברת שיא מהירות על סך 445 קמ״ש"
 
 #: activities/chronos/resource/board/board6_2.qml:15
 msgctxt "board6_2|"
@@ -4775,12 +4752,12 @@ msgstr "מכוניות"
 #: activities/chronos/resource/board/board6_2.qml:39
 msgctxt "board6_2|"
 msgid "1878 Amédée Bollée's La Mancelle"
-msgstr "1878 המנסלה של אמדה בוליה "
+msgstr "1878 המונסל של אמדה בולה"
 
 #: activities/chronos/resource/board/board6_2.qml:47
 msgctxt "board6_2|"
 msgid "1769 Cugnot's fardier"
-msgstr "1769 הפרדיאר של קוגנט"
+msgstr "1769 הפרדייה של קוניו"
 
 #: activities/chronos/resource/board/board6_2.qml:55
 msgctxt "board6_2|"
@@ -4800,12 +4777,12 @@ msgstr "1898 הוויטורט של רנו"
 #: activities/chronos/resource/board/board6_3.qml:47
 msgctxt "board6_3|"
 msgid "1923 Lancia Lambda"
-msgstr "1923 לנציה למבדה"
+msgstr "1923 לנצ׳יה למדה"
 
 #: activities/chronos/resource/board/board6_3.qml:55
 msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
-msgstr "1955 סיטרואן ds 19"
+msgstr "1955 סיטרואן DS 19"
 
 #: activities/click_on_letter/ActivityConfig.qml:35
 #: activities/click_on_letter_up/ActivityConfig.qml:35
@@ -4827,7 +4804,7 @@ msgstr "לבחור את המיקום שלך"
 #: activities/click_on_letter/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Click on a lowercase letter"
-msgstr "אותיות לטיניות קטנות"
+msgstr "נא ללחוץ אות לטינית קטנה"
 
 #. Help title
 #: activities/click_on_letter/ActivityInfo.qml:17
@@ -4847,7 +4824,7 @@ msgstr "זיהוי שמות של אותיות לטיניות קטנות."
 #: activities/click_on_letter_up/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Visual letter-recognition."
-msgstr "זיהוי אותיות וויזואלי."
+msgstr "זיהוי אותיות חזותי."
 
 #. Help manual
 #: activities/click_on_letter/ActivityInfo.qml:24
@@ -23561,20 +23538,14 @@ msgid "Sketch brush concept from:"
 msgstr ""
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "רקע"
+msgstr "צבע רקע"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "רקע"
+msgstr "תמונת רקע"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
@@ -23587,12 +23558,9 @@ msgid "Drawing Tools"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "להתאים את הצבע"
+msgstr "צבעי לוח צבעים"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
@@ -23600,39 +23568,27 @@ msgid "Reset palette"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "נבחר"
+msgstr "צבע נבחר"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "הובֵּיי"
+msgstr "גוון"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "שבתאי"
+msgstr "רוויה"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "כיבוי אורות"
+msgstr "בהירות"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
@@ -23641,60 +23597,39 @@ msgid "Reset Color"
 msgstr ""
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "פלסטין-השטחים"
+msgstr "לוחות צבעים"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "לבחור את המצב"
+msgstr "שמירת התמונה שלך"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "הרבה תמונות חדשות"
+msgstr "פתיחת תמונה"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "הגדרות %1"
+msgstr "הגדרות תמונה חדשה"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "רקע"
+msgstr "צבע רקע"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "רקע"
+msgstr "תמונת רקע"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "הרבה תמונות חדשות"
+msgstr "יצירת תמונה חדשה"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
@@ -23718,33 +23653,21 @@ msgid "Gradient Tools"
 msgstr ""
 
 #: activities/sketch/Sketch.qml:663
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "לא נבחרו תווים. האם למחוק את כל התווים?"
+msgstr "לא שמרת את התמונה הזאת. לסגור את הפעילות הזאת?"
 
 #: activities/sketch/Sketch.qml:664
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "לבטל את כל המהלכים?"
+msgstr "למחוק את התמונה הזאת?"
 
 #: activities/sketch/Sketch.qml:665
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "כן"
 
 #: activities/sketch/Sketch.qml:666
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "לא"
@@ -23765,12 +23688,9 @@ msgid "Type your text here"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
-msgstr "כלי עבודה"
+msgstr "כלים"
 
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
@@ -23788,9 +23708,6 @@ msgid "Size"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "מהירות"
@@ -23801,12 +23718,9 @@ msgid "Density"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "נקודות"
+msgstr "גודל נקודות"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
@@ -23814,20 +23728,14 @@ msgid "Smoothing"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "מספור"
+msgstr "הטיה"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "מראָה של התמונה הנתונה"
+msgstr "היפוך התמונה"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -25534,12 +25442,9 @@ msgstr "משחק חידות טנגרם"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "המטרה היא ליצור את הצורה הנתונה."
+msgstr "יש להזיז את הפריטים כדי לייצר את הצורה הנתונה מחדש."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
