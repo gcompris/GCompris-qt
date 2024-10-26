@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-14 18:36+0200\n"
+"PO-Revision-Date: 2024-10-25 17:45+0200\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -1293,18 +1293,12 @@ msgstr "Kevrediñ kempoell"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
-msgstr "Klok an heuliad frouezhioù"
+msgstr "Klok an heuliad frouezhioù."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
 msgstr "Kevrediñ kempoell"
@@ -1330,22 +1324,16 @@ msgstr "Pevar a-steud (a-enep Tuks)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr "Sav ur renkad 4 fezh"
+msgstr "Sav ur renkad 4 fezh."
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Kenurzhiañ fin ar jestroù."
+msgstr "Diorren ar barregezhioù diarbenn ha strategiezh."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1360,16 +1348,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
-msgstr "Sav ur renkad 4 fezh a-blaen, a-blom pe a-dreuz."
+msgstr ""
+"Bez e c'heller sevel ur renkad 4 fezh a-blaen (a-led), a-blom (a-serzh) pe a-"
+"dreuz."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -1380,7 +1365,7 @@ msgid ""
 "will play better when you increase the level."
 msgstr ""
 "Bez' e c'heller implijout boutonoù ar biroù evit choaz end-eeun al live "
-"diaester. Tukx a c'hoari gwelloc'h ma vez kresket al live."
+"diaester. Tuks a c'hoari gwelloc'h ma vez kresket al live."
 
 #: activities/align4/ActivityInfo.qml:26
 #: activities/align4_2players/ActivityInfo.qml:25
@@ -2105,12 +2090,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Klavier ar babigoù"
+msgstr "Ma c'hlavier kentañ"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2146,12 +2128,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse"
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr "Dilec'hiañ al logodenn."
+msgstr "Ma logodenn gentañ"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2226,27 +2205,21 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Sav ar miltamm"
+msgstr "Miltamm eeun"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Lak an tammoù da glotañ gant an traoù."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to match an operation with its result."
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Tro ar c'hartoù evit kavout ur jedadenn hag an disoc'h a glot ganti."
+msgstr "Desk lakaat un dra da glotañ gant e stumm."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2265,27 +2238,21 @@ msgstr "Son an arouez a vez klevet pa vizskriver anezhañ"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Ur meziantig evit skrivañ"
+msgstr "Ma c'hentañ meziant skrivañ"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Skriv da destennoù kentañ."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Pleustr war ar jediñ gant ar pevar arouez jediñ."
+msgstr "Desk skrivañ un destenn gant ur meziant skrivañ."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2423,21 +2390,15 @@ msgstr "Sav ar miltamm"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
-msgstr "Rikl ha laosk ar stummoù war o lec'h mat."
+msgstr "Rikl ha laosk ar stummoù war pep lec'h mat."
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Desk anavezout ar rummadoù yezhadurel."
+msgstr "Desk kenglotañ stummoù geometrek."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2773,12 +2734,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Kav an dorn kleiz hag an dorn dehoù"
+msgstr "Sinkronelaat jestroù an dorn kleiz hag an dorn dehou."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2841,14 +2799,14 @@ msgstr "C'hoari ar varrenn (a-enep Tuks)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "Rakwel ha lak ar c'hoarier all da blasañ ur voull en toull diwezhañ."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Diorro barregezhioù an ijin strategiezh, ar c'hontañ hag al lemel."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -3193,12 +3151,9 @@ msgstr "Skriv al lizherennoù braille"
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Pleustriñ war ar sammañ dizingal."
+msgstr "Pleustriñ war ar skritur braille."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3231,18 +3186,13 @@ msgstr "Diskoulm ar C'halcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
-"Diorren da varregezhioù poellek: liammañ ar roadennoù, dezastum ha lec'hiañ "
-"en egor en ur jediñ."
+"Diorren barregezhioù poellek (liammañ ar roadennoù, dezastum) hag al "
+"lec'hiañ en egor en ur jediñ."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -4274,11 +4224,6 @@ msgstr "C'hoari damoù a-enep Tuks"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
@@ -4288,12 +4233,9 @@ msgstr "Pak holl bezhioù da enebour a-raok ma fako da holl re."
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Skriv al lizherennoù braille"
+msgstr "Pleustriñ war ar c'hoari damoù."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4338,12 +4280,9 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "Reolennoù ar c'hoari damoù e GCompris a zo ar re etrevroadel"
+msgstr "Reolennoù ar c'hoari damoù e GCompris a zo ar re etrevroadel."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4353,7 +4292,7 @@ msgid ""
 "draughts.js&gt;. Manual is from wikipedia &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 msgstr ""
-"Amañ e vo kavet stum ar c'hoari: draughts.js  &lt;https://github.com/"
+"Amañ e vo kavet stumm ar c'hoari: draughts.js  &lt;https://github.com/"
 "shubhendusaurabh/draughts.js&gt;. Hag aze an dornlevr: wikipedia &lt;https://"
 "en.wikipedia.org/wiki/Draughts&gt;"
 
@@ -4433,22 +4372,16 @@ msgstr "C'hoari echedoù (a-enep Tuks)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Dizolo reizhiad Braille"
+msgstr "Dizolo ha pleustr war ar c'hoari echedoù."
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Desk kelc'hiad an dour."
+msgstr "Desk c'hoari an echedoù."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4624,21 +4557,15 @@ msgstr "Dibenn an echedoù"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
 msgstr "C'hoari dibenn un abadenn echedoù a-enep Tuks."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Dibenn an echedoù"
+msgstr "Echu un abadenn c'hoari echedoù."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4692,12 +4619,9 @@ msgstr "Rikl ha laosk ar skeudennoù da sevel an istor."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Desk anavezout al livioù divoutin."
+msgstr "Desk anavezout red an amzer en un istor."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4708,35 +4632,24 @@ msgstr "Kont un istor verr."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"Ma 'z eo mat ar respont, biskriv an disoc'h a glot ha klik war ar bouton OK "
-"evit gwiriañ da respont."
+"Lak ar skeudennoù hervez red an amzer a-benn sevel un istor poellek. Rikl ar "
+"skeudennoù eus ar varrenn-gostez betek ar pikoù reizh, klik goude war ar "
+"bouton OK evit gwiriañ da respont."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The transportation images are copyright "
-#| "Franck Doucet. Dates of Transportation are based on those found in &lt;"
-#| "https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Miret strizh gant an NASA eo ar gwirioù war skeudennoù al loar. Miret strizh "
-"gant Franck Doucet eo ar gwirioù war skeudennoù an treuzdougen. Bloaziadoù "
-"istorel an treuzdougen zo o tont eus &lt;http://www.wikipedia.org&gt;."
+"Bloaziadoù  istorel an treuzdougen zo diazezet war ar re kinniget gant &lt;"
+"http://www.wikipedia.org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5049,12 +4962,9 @@ msgstr "Selaou ul lizherenn ha klik warni."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Klik war ul lizherenn vunut"
+msgstr "Anavezout anvioù al lizherennoù munut."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5097,12 +5007,9 @@ msgstr "Klik war ur bennlizherenn"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Klik war ur bennlizherenn"
+msgstr "Anavezout anvioù ar pennlizherennoù."
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5140,12 +5047,10 @@ msgstr "Tres ar skeudenn dre glikañ war ar pikoù dibabet."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Gallout diblasañ traoù gant al logodenn pe ar skramm-stok."
+msgstr ""
+"Pleustr gant al logodenn pe ar skramm-stok a-benn touch lec'hioù resis."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -5178,21 +5083,17 @@ msgstr "Tap an holl besked a-raok ma vint aet er-maez eus an akwariom."
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
 msgstr "Kenurzhiañ ar jestroù: dilec'hiañ spis an dorn."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr "Bezañ gouest da zilec'hiañ al logodenn ha klikañ war al lec'h dereat."
+msgstr ""
+"Bezañ gouest da zilec'hiañ ul logodenn pe d'ober gant ur skramm-stok ha "
+"klikañ war al lec'h dereat."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5338,9 +5239,6 @@ msgstr "Dizolo al livioù pentur kemmesket."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
 msgstr "Kemmesk al livioù kentañ da genglotañ gant al liv diskouezet."
@@ -5356,11 +5254,6 @@ msgstr ""
 "(kemmeskañ dre lemel)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
@@ -5466,9 +5359,6 @@ msgstr "Dizolo livioù ar gouloù kemmesket."
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
 msgstr "Kemmesk al livioù kentañ da genglotañ gant al liv diskouezet."
@@ -5484,11 +5374,6 @@ msgstr ""
 "(kemmeskañ dre ouzhpennañ)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
@@ -5498,12 +5383,6 @@ msgstr ""
 "kemm al liv. Klik goude war ar bouton OK evit gwiriañ da respont."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Mixing light colors is just the opposite of mixing paint colors. The more "
-#| "light you add, the lighter the resulting color becomes. Primary colors of "
-#| "light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -5528,12 +5407,9 @@ msgstr "Klik war al liv reizh."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
-msgstr "Deskiñ a ra an obererezh-mañ anavezout livioù disheñvel."
+msgstr "Desk anavezout livioù disheñvel."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5860,21 +5736,17 @@ msgstr "Rikl ha laosk ar stummoù war o lec'h mat."
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "Diorro ar barregezhioù rakwelout ha lec'hiañ en egor."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
 msgstr ""
-"Tap e-touez ar skeudennoù war an tu kleiz ha lak anezhe war ar pikoù ruz en "
-"urzh mat."
+"Tap tamm ur skeudenn war an tu kleiz ha lak anezhañ war ar pik mat war ar "
+"skeudenn."
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -6012,21 +5884,15 @@ msgstr "Tredan elektronek"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr "Krouiñ ha patromañ brastres an tredan elektronek"
+msgstr "Krouiñ ha patromañ brastres an tredan elektronek."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
-msgstr "Krou brastres an tredan elektronek gant ur patromañ diouzhtu."
+msgstr "Krou brastres an tredan elektronek ha patrom anezhañ war ar prim."
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -6235,14 +6101,6 @@ msgid "NOT A"
 msgstr "NANN A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6250,10 +6108,10 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Mont a ra en dro an elektronek daouredel gant daou stad nemetken: 0 hag 1. "
-"Evel-se e c'haller ober jedadurioù evel sammadurioù, lamadurioù... Diazez "
-"teknikoù an urzhiataer an hini eo. E gwirionez e talv alies 0 kement hag ur "
-"voltadur tost da hini ar sol hag 1 kement ha voltadur pourvezel un amredad."
+"Mont a ra en dro an elektronek daouredel gant daou stad nemetken: 0 hag 1.  "
+"Diazez teknikoù an urzhiataer an hini eo. E gwirionez e talv alies 0 kement "
+"hag ur voltadur tost da hini ar sol hag 1 kement ha voltadur pourvezel un "
+"amredad."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -6328,14 +6186,6 @@ msgid "A XOR B"
 msgstr "A PE-HEPKEN B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6344,9 +6194,9 @@ msgid ""
 "voltage of a circuit."
 msgstr ""
 "Mont a ra en dro an elektronek daouredel gant daou stad nemetken: 0 hag 1. "
-"Evel-se e c'haller ober jedadurioù evel sammadurioù, lamadurioù... Diazez "
-"teknikoù an urzhiataer an hini eo. E gwirionez e talv alies 0 kement hag ur "
-"voltadur tost da hini ar sol hag 1 kement ha voltadur pourvezel un amredad."
+"Diazez teknikoù an urzhiataer an hini eo. E gwirionez e talv alies 0 kement "
+"hag ur voltadur tost da hini ar sol hag 1 kement ha voltadur pourvezel un "
+"amredad."
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -6804,9 +6654,6 @@ msgstr "Liamm ar pikoù evit tresañ lizherennoù."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
 msgstr "Deskiñ penaos tresañ lizherennoù en un doare plijus."
@@ -6831,9 +6678,6 @@ msgstr "Liamm ar pikoù evit tresañ niveroù adalek 0 betek 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
 msgstr "Deskiñ penaos tresañ niveroù en un doare plijus."
@@ -6858,12 +6702,9 @@ msgstr "Lak an traoù a-benn ma vo an aesañ da gontañ anezhe."
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr "Pleustriñ war al lemel ingal."
+msgstr "Pleustriñ ha kontañ kementad bihan."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6985,27 +6826,19 @@ msgstr "Dilec'h al logodenn pe stok ar skramm"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the mouse or touch the screen to erase the area and discover the "
-#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the blocks and discover the "
 "hidden picture."
 msgstr ""
 "Dilec'h al logodenn pe stok ar skramm evit diverkañ pep tra ha dizoleiñ ar "
-"pezh zo a-dreñv."
+"skeudenn a zo kuzhet a-dreñv."
 
 #. Help goal
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
 msgstr "Kenurzhiañ fin ar jestroù."
@@ -7025,18 +6858,13 @@ msgstr "Daoustok pe daouglik"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
 msgstr ""
 "Daouglik gant al logodenn pe zaoustok a-benn diverkañ pep tra ha dizoleiñ ar "
-"skeudenn a-dreñv."
+"skeudenn a zo kuzhet a-dreñv."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -7054,14 +6882,11 @@ msgstr "Klik pe stok"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
 msgstr ""
-"Klik gant al logodenn pe stok a-benn diverkañ pep tra ha dizoleiñ ar pezh zo "
-"a-dreñv"
+"Klik gant al logodenn pe stok a-benn diverkañ pep tra ha dizoleiñ ar "
+"skeudenn a zo kuzhet a-dreñv"
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -9274,12 +9099,9 @@ msgstr "Klik war an dud-kar"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Dibab an holl c'herioù gant al lizherenn ginniget enne."
+msgstr "Dibab un daouad gantañ al liamm kerentiezh kinniget."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -9289,13 +9111,6 @@ msgstr "Lenn, fiñval ha klikañ gant al logodenn."
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relations. Married couples "
-#| "are marked with a ring on the link.\n"
-#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -9305,7 +9120,7 @@ msgid ""
 msgstr ""
 "Setu gwezenn ul lignez.\n"
 "Ar c'helc'hioù zo liammet gant linennoù evit merkañ al liammoù kerentiezh. "
-"Ur walenn zo war al liamm evit an daouadoù eurejet.\n"
+"Ur walenn zo war al liamm evit an daouadoù euredet.\n"
 "Klik war un daouad tud kar a glot gant al liamm kerentiezh kinniget."
 
 #. Activity title
@@ -9325,7 +9140,7 @@ msgstr "Diblas pep tamm a-benn adsevel ar skeudenn."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "Diorro barregezhioù rakwelout ha lec'hiañ en egor."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9573,7 +9388,7 @@ msgstr "Kas ar vell er pal."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Kompren stur ha tizh."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -9584,6 +9399,10 @@ msgid ""
 "follow its direction. You score a goal when the ball reaches the other edge "
 "of the field."
 msgstr ""
+"Klik war ar vell ha sach a-dreñv dezhi a-benn sevel linenn ar bukañ. Seul "
+"hiroc'h al linenn, seul greñvoc'h an tenn. Pa zieubez al linenn e kemer ar "
+"vell hent he stur. Ur poent a c'hounezez bewech ma vez tizhet penn all an "
+"dachenn gant ar vell."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -9593,34 +9412,25 @@ msgstr "Krou ar c'hevrennoù"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr "Dibab an niveroù reizh a bep tu evel deskrivet en urzhioù. "
+msgstr "Dibab an niveroù reizh a bep tu evit diskouez ar gevrenn ginniget. "
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to represent a quantity of objects."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "Desk diskoueziñ ur c'hementad elfennoù."
+msgstr "Desk diskouez kevrenn ur stumm."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
-msgstr "Dibab an niveroù reizh a bep tu evel deskrivet en urzhioù. "
+msgstr ""
+"Rannoù ingal ur stumm a vez diskouezet. Dibab niver reizh ar stummoù a-benn "
+"diskouez ar gevrenn ginnige. "
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -9955,13 +9765,10 @@ msgstr "Kav an niverer hag an anver reizh evit ar gevrenn diskouezet."
 
 #. Help goal
 #: activities/fractions_find/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr "Klik war un daouad a glot gant al liamm kerentiezh."
+msgstr "Desk skrivañ ur gevrenn a glot gant an eztaol kevrennek kinniget"
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -9972,6 +9779,9 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
+"Skriv ar gevrenn a glot gant an eztaol kevrennek: kont niver holl rannoù ar "
+"stumm diskouezet ha lak hemañ da vezañ an anver. Kont goude niver ar rannoù "
+"dibabet ha lak hennezh da vezañ an niverer."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -10171,45 +9981,30 @@ msgstr ""
 "hevelep livioù/sinoù."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Kopi ha klok ar frizenn-mañ: etre 4 ha 7 tres, ne vern peseurt strollad "
+"Kopi ha klok ar frizenn-mañ: etre 12 ha 15 tres, ne vern peseurt strollad "
 "stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Kopi ha klok ar frizenn-mañ: etre 4 ha 7 tres, ne vern peseurt strollad "
+"Kopi ha klok ar frizenn-mañ: etre 10 ha 12 tres, ne vern peseurt strollad "
 "stummoù, livioù/sinoù ha mentoù."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Kopi ha klok ar frizenn-mañ: etre 6 hag 8 tres, ne vern peseurt strollad "
+"Kopi ha klok ar frizenn-mañ: etre 16 hag 20 tres, ne vern peseurt strollad "
 "stummoù, livioù/sinoù ha mentoù."
 
 #. Activity title
@@ -10220,31 +10015,23 @@ msgstr "Lec'hia ar rannvro"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
-msgstr "Rikl ha laosk ar ranndirioù evit adsevel ar vro en he fezh."
+msgstr "Rikl ha laosk ar ranndirioù war ar c'hartoù-bro."
 
 #. Help goal
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "Desk lec'hiañ ha plasañ rannvroioù ar broioù."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
 msgstr ""
-"Rikl ha laosk pezhioù ar gartenn el lec'h mat evit adsevel ar gartenn a-bezh."
+"Rikl ha laosk ar ranndirioù  el lec'h mat evit adsevel ar gartenn a-bezh."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -13026,14 +12813,9 @@ msgstr "Lec'hia ar broioù"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty space on the left"
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr ""
-"Adsav an tour kinniget war an tu dehou war ar maez goullo war tu kleiz ar "
-"skramm."
+msgstr "Lec'h ar c'hevandiroù hag ar broioù war ar gartenn-ved."
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
@@ -13041,14 +12823,10 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
+"Desk lec'hiañ ha plasañ ar c'hevandiroù ha meur a vro war ar gartenn-ved."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
@@ -14174,12 +13952,10 @@ msgstr "Bizskriv al lizherennoù o kouezhañ a-raok ma vo tizhet al leur gante."
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
 msgstr ""
+"Lak lizherennoù ar c'hlavier da glotañ gant al lizherennoù war ar skramm."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
 msgstr "Bizskriv al lizherennoù o kouezhañ a-raok ma vo tizhet al leur gante."
@@ -14888,6 +14664,8 @@ msgid ""
 "Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
 msgstr ""
+"Diorro da spered strategiezh, desk anavezout al livioù hag eñvoriñ "
+"lec'hiadurioù daveel."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -14941,7 +14719,7 @@ msgid ""
 "anticipate by looking at the size and direction of the arrow showing the "
 "gravity force."
 msgstr ""
-"Stur an egorlestr gant ar birou kleiz ha dehoù, pe gant boutonoù skramm ur "
+"Stur an egorlestr gant ar biroù kleiz ha dehoù, pe gant boutonoù skramm ur "
 "pell-hezoug. Klask chom e-kreiz ar skramm ha sell ouzh ment ha tuadur ar bir "
 "o tiskouez an nerzh-dedennañ evit rakwelout da hent."
 
@@ -15024,11 +14802,6 @@ msgstr "Pleustr war ar jediñ gant ar pevar arouez jediñ."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using additions, subtractions, multiplications "
-#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
@@ -15128,16 +14901,13 @@ msgstr "Divinañ ar gont"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Kav ar jedadurioù evit kavout an disoc'h ret."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Pleustriñ war al liesaat."
+msgstr "Pleustr war ar jediñ digenaozet."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -15147,11 +14917,6 @@ msgstr "Gouzout ober gant jedadurioù."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
@@ -15169,7 +14934,7 @@ msgstr "Live %1"
 #: activities/guesscount/guesscount.js:140
 msgctxt "guesscount|"
 msgid "result is not positive integer"
-msgstr "An disoc'h n'eo ket un niver anterin positif."
+msgstr "An disoc'h n'eo ket un niver anterin pozitivel."
 
 #: activities/guesscount/guesscount.js:142
 msgctxt "guesscount|"
@@ -15225,12 +14990,9 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Sikour Tuks mont er-maez eus ar vougev en ur gavour an niver kuzhet."
 
 #: activities/guessnumber/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Pleustriñ war ar sammañ"
+msgstr "Pleustriñ war ar c'heñveriañ niveroù."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15333,7 +15095,7 @@ msgstr "Divin al lizherennoù er ger kinniget."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Gwella da lizherenniñ ha da c'heriaoueg."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15400,34 +15162,26 @@ msgstr "Tour Hanoi eeunaet"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "Adsav war ar peul a-zehoù an tour kinniget."
+msgstr "Adsav war ar peul goullo a-zehoù an tour kinniget."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Diorro da ijin strategiezh."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"Rikl ha laosk unan-hag-unan ur pezh e krec'h eus ur peul d'unan all a-benn "
-"adsevel an tour war ar peul a-zehoù."
+"Rikl ha laosk unan-hag-unan un disk e krec'h eus ur peul d'unan all a-benn "
+"adsevel an tour war ar peul goullo a-zehoù."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15442,12 +15196,9 @@ msgstr "Tour Hanoi"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Adsav an tour kinniget war an tu dehoù"
+msgstr "Dilec'h an tour eus an tu kleiz betek peul an tu dehoù."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -15459,6 +15210,11 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
+"Rikl ha laosk unan-hag-unan un disk e krec'h eus ur peul d'unan all a-benn "
+"adsevel an tour war ar peul goullo a-zehoù. Ar diskoù a c'heller kas war-"
+"raok pe war-gil d'ur peul all, o toujañ ouzh div reolenn: un disk hepken a "
+"vez diblaset en un taol, ha disk ebet n'hell bezañ lakaet war ur disk "
+"bihanoc'h."
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -15536,12 +15292,9 @@ msgstr "Rikl ha laosk pep tra a-us d'e anv."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Pinvidika da c'heriaoueg"
+msgstr "Pinvidika da c'heriaoueg ha pleustr war al lenn."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16355,30 +16108,21 @@ msgstr "an treuzdougen"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
 msgstr "Desk sammañ"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
 msgstr "Desk sammañ gant niveroù bihan."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr "Deskiñ sammañ dre gontañ an disoc'h."
+msgstr "Deskiñ sammañ dre sammañ kemetatoù."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16420,28 +16164,18 @@ msgstr "Desk niveroù degel"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr "Desk niveroù degel"
+msgstr "Diskouez an niveroù degel kinniget."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
-msgstr ""
+msgstr "Stroll stumm degel un niver gant e eztaol grafek."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -16591,47 +16325,27 @@ msgstr "Niveroù etre 1 hag 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
 msgstr "Sammañ gant niveroù degel."
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
 msgstr "Desk sammañ gant niveroù degel."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn additions with decimal numbers by counting how many squares are "
-#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Desk sammañ gant niveroù degel en ur gontañ pet kombod zo ret evit ezteurel "
-"an disoc'h."
+"Desk sammañ gant niveroù degel en ur gontañ o stummoù eztaolet dre welet."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the bar, and drag the selected part of the bar to the "
-#| "empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16677,36 +16391,25 @@ msgstr "Ouzhpenn niveroù degel betek 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
 msgstr "Lamadurioù gant niveroù degel."
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
-msgstr "Desk al lamadurioù gant niveroù bihan."
+msgstr "Desk al lamadurioù gant niveroù degel."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn subtractions with decimal numbers by counting how many squares need "
-#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Desk lemel gant niveroù degel en ur gontañ pet kombod zo ret evit ezteurel "
-"an disoc'h."
+"Desk al lamadurioù gant niveroù degel en ur ober gant o stummoù eztaolet dre "
+"welet."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16773,38 +16476,29 @@ msgstr "Desk ar sifroù"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr "Klik war un daouad a glot gant al liamm kerentiezh."
+msgstr "Eztaol an niver a glot gant ar sifr kinniget"
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "Ret eo keñveriañ an niveroù ha dibab ar sign dereat."
+msgstr ""
+"Desk an niveroù eztaolet gant ur sifr hepken hag ar c'hementadoù a glot "
+"gante."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
-"Ur sifr zo diskouezet war ar skaamm. Klik war an niver a gelc'hioù a glot "
-"gantañ ha gwiria da respont."
+"Ur sifr zo diskouezet war ar skramm. Klik war an niver a gelc'hioù a glot "
+"gantañ a-raok gwiriañ da respont."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16924,27 +16618,18 @@ msgstr "Etre 20 hag 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
 msgstr "Desk lemel"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
 msgstr "Desk lemel gant niveroù bihan."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
 msgstr "Desk lemel dre gontañ an disoc'h."
@@ -17106,18 +16791,15 @@ msgstr "Lizherenn e peseurt ger"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr "Dibab an holl c'herioù gant al lizherenn ginniget enne."
+msgstr "Dibab ar gerioù gant al lizherenn ginniget enne."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "Pleustr a-benn kavout ul lizherenn resis e gerioù 'zo."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -17167,9 +16849,6 @@ msgstr "Gouleier lazhet"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
 msgstr "Ret eo dit lazhañ an holl c'houleier."
@@ -17178,7 +16857,7 @@ msgstr "Ret eo dit lazhañ an holl c'houleier."
 #: activities/lightsoff/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
-msgstr ""
+msgstr "Diorro ar barregezhioù rakwelout, strategiezh ha lec'hiañ en egor."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -17260,6 +16939,8 @@ msgid ""
 "Read about some key events in the life of the braille system inventor, and "
 "remember their chronological order."
 msgstr ""
+"Desk darvoudoù meur e-barzh buhez ijinour ar reizhiad braille, ha pez soñj "
+"eus urzh an amzer en darvoudoù-se."
 
 #. Help goal
 #: activities/louis-braille/ActivityInfo.qml:20
@@ -17268,6 +16949,8 @@ msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
 msgstr ""
+"Pez soñj eus urzh an amzer en darvoud. Desk traoù diwar-benn buhez Louis "
+"Braille."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -17408,9 +17091,6 @@ msgstr "Kont pet steredenn ez eus dindan an tog hud."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
 msgstr "Desk lemel."
@@ -17419,9 +17099,6 @@ msgstr "Desk lemel."
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
 msgstr "Lamadurioù."
@@ -17502,9 +17179,6 @@ msgstr "Kont pet steredenn ez eus dindan an tog hud."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
 msgstr "Desk sammañ."
@@ -17513,9 +17187,6 @@ msgstr "Desk sammañ."
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
 msgstr "Sammañ"
@@ -17592,7 +17263,7 @@ msgstr "Sikour Tuks da vont er-maez eus ar milendall-se."
 #: activities/mazerelative/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization and pathfinding skills."
-msgstr ""
+msgstr "Diorro ar barregezhioù lec'hiañ en egor ha kavout an hent."
 
 #. Help manual
 #: activities/maze/ActivityInfo.qml:23
@@ -17676,6 +17347,7 @@ msgstr "Heñch Tuks evit mont er-maez eus ar milendall diwelus."
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization, pathfinding and visual memory skills."
 msgstr ""
+"Diorro barregezhioù lec'hiañ en egor, kavout an hent hag eñvoriñ dre wel."
 
 #. Help manual
 #: activities/mazeinvisible/ActivityInfo.qml:23
@@ -17829,13 +17501,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr ""
-"Deskiñ al lizherennoù munut hag ar pennlizherennoù gant ur c'hoari memor."
+msgstr "Deskiñ al lizherennoù munut hag ar pennlizherennoù."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -17957,12 +17625,9 @@ msgstr "Tro ar c'hartoù a-benn lakaat an niver da genglotañ gant ar skeudenn."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Pleustriñ war al lemel."
+msgstr "Pleustriñ war an niveriñ."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -18033,9 +17698,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
 msgstr "Pleustr war ar sammañ, al lemel, al liesaat hag ar rannañ."
@@ -18043,9 +17705,6 @@ msgstr "Pleustr war ar sammañ, al lemel, al liesaat hag ar rannañ."
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
 msgstr "Sammañ, lemel, liesaat, rannañ."
@@ -18190,22 +17849,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
-msgstr "Sammadennoù ha lamadennoù."
+msgstr "Pleustr war ar sammañ hag al lemel."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
-msgstr "Sammadennoù ha lamadennoù."
+msgstr "Sammañ ha lemel."
 
 #. Help manual
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:24
@@ -18251,12 +17904,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
-msgstr "Pleustriñ war ar sammañ."
+msgstr "Pleustr war ar sammañ."
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -18359,18 +18009,12 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice division."
-msgstr "Pleustriñ war ar rannañ."
+msgstr "Pleustr war ar rannañ."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
 msgstr "Rannañ."
@@ -18460,9 +18104,6 @@ msgstr "Tro ar c'hartoù evit kavout ur rannadenn hag an disoc'h a glot ganti."
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "Rannañ"
@@ -18485,12 +18126,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
-msgstr "Pleustriñ war al lemel."
+msgstr "Pleustr war al lemel."
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -18594,19 +18232,13 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
-msgstr "Pleustr war ar sammañ, al lemel, al liesaat hag ar rannañ."
+msgstr "Pleustr war al liesaat hag ar rannañ."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
 msgstr "Liesaat, rannañ."
@@ -18654,9 +18286,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
 msgstr "Pleustriñ war al liesaat."
@@ -18664,9 +18293,6 @@ msgstr "Pleustriñ war al liesaat."
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "Liesaat."
@@ -18821,12 +18447,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr "Pleustr war da vemor-kleved."
+msgstr "Pleustr war da vemor-gwelout."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -18862,12 +18485,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Pleustriñ war ar sammañ"
+msgstr "Pleustriñ war al lenn niveroù."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -19634,12 +19254,9 @@ msgstr "Kav al lizherenn o vankout evit klokaat ar ger."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Desk urzh al lizherenneg"
+msgstr "Desk lizherenniñ gerioù."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19698,12 +19315,9 @@ msgstr "Pleustriñ war implij an arc'hant."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Pleustriñ war implij an arc'hant."
+msgstr "Pleustr war ar c'hontañ hag  ober gant an arc'hant."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19802,19 +19416,15 @@ msgstr ""
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
-#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to give Tux "
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"Klik war ar pezhioù hag ar bilhedoù e traoñ ar skramm evit paeañ. Ma fell "
-"dit tennañ ur pezh pe ur bilhed kuit, klik warnañ war ar banell e krec'h."
+"Klik war ar pezhioù hag ar bilhedoù e traoñ ar skramm evit reiñ da d/Tuks an "
+"arc'hant dleet. Ma fell dit tennañ ur pezh pe ur bilhed kuit, klik warnañ "
+"war ar banell e krec'h."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -19825,12 +19435,9 @@ msgstr "Arc'hant € ha kantimoù, distro ar moneiz"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "Pleustr war implij an arc'hant gant ar c'hantimoù."
+msgstr "Pleustr war ar c'hontañ hag ober gant an arc'hant, ar santimoù ivez."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -19862,25 +19469,16 @@ msgstr "Dizolo kod etrevroadel Morse"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
 msgstr "Deskiñ penaos kehentiñ gant kod etrevroadel Morse."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
-msgstr ""
-"Ret eo dit kas ha resev lizherennoù ha sifroù gant kod etrevroadel Morse."
+msgstr "Desk penaos kas ha resev kemennadennoù gant kod etrevroadel Morse."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -19890,13 +19488,6 @@ msgstr "Gouzout ober gant al lizherennegoù hag ar sifroù."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -19905,9 +19496,9 @@ msgid ""
 "the code for all the letters and digits."
 msgstr ""
 "Goulennet e vez diganit kas ur gemennadenn gant kod etrevroadel Morse pe "
-"lakaat e lizherennoù ha sifroù ur gemennadenn resevet dindan kod Morse. Evit "
-"deskiñ kod Morse e c'hellez sell ouzh kartenn-dreiñ enni kod an holl "
-"lizherennoù ha sifroù."
+"treiñ el lizherennoù ha sifroù ur gemennadenn resevet dindan kod Morse. Evit "
+"deskiñ kod Morse e c'hellez klikañ war skeudennig Morse pe sell ouzh kartenn-"
+"dreiñ enni kod an holl lizherennoù ha sifroù."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -20042,12 +19633,9 @@ msgstr "Lak pep tra war ar memes lec'h hag hini ar skouer."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Pleustriñ war al lenn."
+msgstr "Pleustriñ war ar barregezhioù evezh ha klotañ."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -20102,9 +19690,6 @@ msgstr "C'hoari ar vilin (a-enep Tuks)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
 msgstr "C'hoari ar vilin (a-enep Tuks)"
@@ -20114,7 +19699,7 @@ msgstr "C'hoari ar vilin (a-enep Tuks)"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "Diorro barregezhioù strategiezh ha lec'hiañ en egor."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -20125,6 +19710,11 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
+"C'hoari gant Tuks. Da gentañ, pep hini d'e dro a lak nav fezh unan-hag-unan "
+"a-raok da bep hini d'e dro diblasañ e bezhioù unan-hag-unan. Ma ne chom "
+"nemet tri fezh ganit e c'hellez diblasañ anezhe betek ne vern peseurt lec'h "
+"goullo. Gounit a ra ur c'hoari pa n'hell ket ar c'hoarier diblasañ pezh ebet "
+"ken pe pa ne chom nemet daou bezh gantañ."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -20221,9 +19811,6 @@ msgstr "C'hoari ar vilin (gant ur c'heneil)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
 msgstr "C'hoari ar vilin (gant ur c'heneil)"
@@ -20237,6 +19824,11 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"C'hoari gant ur mignon. Da gentañ, pep hini d'e dro a lak nav fezh unan-hag-"
+"unan a-raok da bep hini d'e dro diblasañ e bezhioù unan-hag-unan.  Ma ne "
+"chom nemet tri fezh ganit e c'hellez diblasañ anezhe betek ne vern peseurt "
+"lec'h goullo. Gounit a ra ur c'hoari pa n'hell ket ar c'hoarier diblasañ "
+"pezh ebet ken pe pa ne chom nemet daou bezh gantañ."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -20262,14 +19854,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
-msgstr "Klask anavezout mat an notennoù ha tap 100% evit peurechuiñ ul live."
+msgstr ""
+"Klask anavezout mat an notennoù, c'hoari anezhe gant klavier ar piano ha tap "
+"100% evit peurechuiñ ul live."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -20334,26 +19925,20 @@ msgstr "Heuliad niveroù"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "Dibab an niveroù unan-hag-unan hervez heuliad an niveroù."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Desk kelc'hiad an dour."
+msgstr "Desk heuliad an niveroù."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each number in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "Tres ar skeudenn dre glikañ war bep niver en urzh mat."
+msgstr "Tres ar skeudenn dre glikañ war bep pik en urzh mat an niveroù."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -20373,18 +19958,10 @@ msgstr ""
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "Desk anavezout niveroù ampar ha par, hag o urzh niverel."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds with an odd or even number, in the right order. With a "
-#| "keyboard, use the arrow keys to move the helicopter. With a pointing "
-#| "device, just click or tap on the target location. To know which number "
-#| "you have to catch you can either remember it or check the number on the "
-#| "bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions: catch the clouds with an odd or even number in the "
@@ -20393,26 +19970,21 @@ msgid ""
 "first levels, you can see which number you have to catch on the counter in "
 "the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
-"Tap ar c'houmoulennoù gante un niver par pe ampar. Gant ur c'hlavier, gra "
-"gant ar biroù da zilec'hiañ ar viñsaskell. Gant al logodenn pe ar pavez "
-"stekiñ, klik pe stok ouzh al lec'h mat. Da c'houzout pe niver zo da dapout, "
-"dalc'h soñj eus outañ pe taol ur sell er c'hornad a-zehoù en traoñ."
+"Sent ouzh an urzhioù-mañ: Tap ar c'houmoulennoù gante un niver par pe ampar "
+"en urzh mat. Gant ur c'hlavier, gra gant ar biroù da zilec'hiañ ar "
+"viñsaskell. Gant al logodenn pe ar pavez stekiñ, klik pe stok ouzh al lec'h "
+"mat da dizhout. Da c'houzout pe niver zo da dapout e liveoù kentañ, taol ur "
+"sell er c'hornad a-zehoù en traoñ. El liveoù uheloc'h, dalc'h soñj ennañ"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Dibab an niver par :"
+msgstr "Tap an niveroù par."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Dibab an niver ampar :"
+msgstr "Tap an niveroù ampar."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -20627,12 +20199,9 @@ msgstr "Plas an darvoudoù en urzh mat."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Plas an darvoudoù en urzh mat."
+msgstr "Desk urzhiañ an darvoudoù hervez red an amzer."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20676,12 +20245,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Lenn ha lakaat en urzh niveroù."
+msgstr "Pleustr war urzh an niveroù."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20783,12 +20349,9 @@ msgstr "Lak ar gerioù pourvezet en urzh a-benn sevel ur frazenn reizh."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Ro gerioù en urzh a-benn sevel frazennoù reizh."
+msgstr "Pleustr war urzh ar  gerioù a-benn sevel ur frazenn reizh."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -20879,19 +20442,11 @@ msgstr "C'hoari strategiezh gant an awale a-enep Tuks."
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Diorro da varregezhioù ijin er strategiezh."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than one's opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -20901,23 +20456,13 @@ msgid ""
 "captured 24."
 msgstr ""
 "Kregiñ a ra ar c'hoari gant peder greunenn e pep ti. Pal ar c'hoari a zo "
-"pakañ muioc'h a c'hreun eget re an enebour. Peogwir n'ez eus nemet 48 "
+"pakañ muioc'h a c'hreun eget ma ra an enebour. Peogwir n'ez eus nemet 48 "
 "greunenn, trawalc'h eo pakañ 25 evit gounit ar c'hoari. Dre ma 'z eus un "
 "niver par a c'hreunennoù, posupl eo d'ar c'hoari echuiñ rampo, gant 24 "
-"greunenn gant pep c'hoarier"
+"greunenn dastumet gant pep c'hoarier."
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On a turn, a player chooses one of "
-#| "the six houses under their control. The player removes all seeds from "
-#| "that house, and distributes them, dropping one in each house counter-"
-#| "clockwise from this house, in a process called sowing. Seeds are not "
-#| "distributed into the end scoring houses, nor into the house drawn from. "
-#| "The starting house is always left empty; if it contained 12 (or more) "
-#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -20930,12 +20475,12 @@ msgid ""
 msgstr ""
 "Pep c'hoarier d'e dro a ziblas ar greun. E-doug e dro e tibab ar c'hoarier "
 "unan eus ar c'hwec'h ti eus e du. Lemel a ra ar c'hoarier an holl c'hreun "
-"ennañ ha dasparzhañ pep a c'hreunenn en un ti en tu enep d'an horolaj en ur "
-"bellaat ouzh an ti goullonderet, ar pezh a vez lesanvet hadañ. Arabat hadañ "
-"greun nag en tiez-kontañ e pennoù ar plato, nag en ti bet lamet ar greun "
-"dioutañ. An ti a groger ennañ a chom goullo; ma oa ennañ 12 greunenn (pe "
-"muioc'h c'hoazh), tremenet e vez hebioù hag an daouzekvet greunenn a vez "
-"lakaet en ti da heul."
+"ennañ ha dasparzhañ pep a c'hreunenn en  tiez all (en tu enep d'an horolaj) "
+"en ur bellaat ouzh an ti goullonderet, ar pezh a vez lesanvet hadañ. Arabat "
+"hadañ greun nag en tiez-kontañ e pennoù ar plato, nag en ti bet lamet ar "
+"greun dioutañ. An ti a groger ennañ a chom atav goullo; ma oa ennañ 12 "
+"greunenn (pe muioc'h c'hoazh), e vez tremenet hebioù hag an daouzekvet "
+"greunenn a vez lakaet en ti da heul."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -21154,21 +20699,19 @@ msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
 msgstr ""
+"Diorro barregezhioù lec'hiañ ha lenn ur gartenn, ha desk heuliañ an urzhioù-"
+"hent"
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Klik war kombodoù ar gael a-benn lakaat Tuks da vont hervez an urzhioù-hent "
-"roet."
+"Klik war kombodoù ar gael a-benn lakaat Tuks da vont war-zu ar pal o heuliañ "
+"ar biroù sturiañ."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -21177,7 +20720,7 @@ msgid ""
 "The directions are absolute, they do not depend on the current orientation "
 "of Tux."
 msgstr ""
-"Dizave eo an tuadurioù, ne zepandont ket eus savboent Tuks er mare-mañ."
+"Dizave eo an tuadurioù, ne zepandont ket eus ar stur kemeret gant Tuks."
 
 #: activities/path_decoding/resource/1/Data.qml:13
 #: activities/path_decoding/resource/2/Data.qml:13
@@ -21202,12 +20745,9 @@ msgstr "Kaelioù %1x%2."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Diskodiñ an hent"
+msgstr "Diskodiñ an hent daveel"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -21266,12 +20806,9 @@ msgstr "Fazioù: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Kodiñ an hent"
+msgstr "Kodiñ an hent daveel"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21328,7 +20865,7 @@ msgstr "Kav an diforc'hioù etre an div skeudenn."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Diorro barregezhioù ar merzhout pizh."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -22024,12 +21561,9 @@ msgstr "Si♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "Niveroù en urzh"
+msgstr "Urzh an niveroù"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -22039,12 +21573,9 @@ msgstr "Dilec'h ar viñsaskell evit tapout ar c'houmoulennoù en urzh reizh."
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Desk urzh al lizherenneg"
+msgstr "Desk urzh an niveroù."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -22061,20 +21592,14 @@ msgstr ""
 "pe taol ur sell ouzh ar c'horn kleiz en traoñ."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Lakaat da glotañ niveroù betek 2."
+msgstr "Tap an niveroù war gresk adalek 0."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Lakaat da glotañ niveroù betek 2."
+msgstr "Tap an niveroù war zigresk adalek 10"
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -22094,12 +21619,9 @@ msgstr "Son piano"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Kav an deiziad reizh ha dibab anezhañ war an deiziadur."
+msgstr "Lenn ar skrid muzik ha son anezhañ gant ar c'hlavier."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -22174,9 +21696,6 @@ msgstr "C'hoari al lusk"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
 msgstr "Desk heuliañ resis ul lusk."
@@ -22433,22 +21952,19 @@ msgstr "Dibab ar skeudenn m'emañ ar paotr a-gleiz d'ar voest."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Programm an hent"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Programm an hent evit sikour Tuks da dapout ar pesk."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr "Lenn urzhioù hag prederiañ war an hent poellek."
+msgstr "Desk penaos programmiñ urzhioù a-benn kerzhout a-hed an hent."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22682,9 +22198,6 @@ msgstr "Implijout an tachennoù pennañ ha boukl."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
 msgstr "An hent-houarn"
@@ -22847,7 +22360,7 @@ msgstr "Tres peurvat ar skeudenn ginniget war ar gael c'houllo."
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr ""
+msgstr "Desk anavezout ul lec'h resis en ur gael hag adsevel ur patrom."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -22902,12 +22415,9 @@ msgstr "Tres simetriezh ar skeudenn"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Adsav war ar peul a-zehoù an tour kinniget."
+msgstr "Adsav er c'hael c'houllo ar skeudenn en ur doare simetrek."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -22916,6 +22426,8 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Desk anavezout ul lec'h en ur c'hael hag adsevel ur skouer en un doare "
+"simetrek."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -23067,12 +22579,9 @@ msgstr ""
 
 #. Help goal
 #: activities/reversecount/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count intervals"
 msgctxt "ActivityInfo|"
 msgid "Learn to count intervals."
-msgstr "Kont ar pazennoù"
+msgstr "Desk kontañ pazennoù."
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -23118,26 +22627,16 @@ msgstr "Sifroù roman"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to read a graduated line."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "Desk lenn ul linenn dereziet."
+msgstr "Desk lenn ha skrivañ niveroù roman."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
-msgstr ""
-"Desk penaos lenn an niveroù roman ha treiñ anezhe e niveroù arab pe en tu-"
-"gin. "
+msgstr "Desk lenn ha skrivan niveroù roman ha treiñ anezhe e niveroù arab."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -23153,11 +22652,6 @@ msgstr ""
 "ar reizhiad-mañ zo e stumm lizherennoù kenstrollet eus al lizherenneg latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -23857,12 +23351,9 @@ msgstr "Klask dasparzhañ ar madigoù hervez niver ar vugale kinniget."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr "Pleustriñ war ar rannañ."
+msgstr "Desk dasparzhañ, pleustriñ war ar rannañ."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -24355,7 +23846,7 @@ msgstr "N'hallez ket lakaat en ur c'hombod muioc'h a vadigoù eget %1."
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "Tres en ur gael"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -24367,7 +23858,7 @@ msgstr "Sav da dresadenn dit."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Tres a-benn ezteurel da ijin krouiñ."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -24741,12 +24232,9 @@ msgstr "Kont an niver a bikoù war pep diñs a-raok ma vo tizhet al leur gantañ
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "C'hoari ar gwenn gant sammadennoù"
+msgstr "Pleustr war ar c'hontañ e-doug un amzer vevennet."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -24862,21 +24350,16 @@ msgstr "Niveroù gant dominoioù"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr "Kont an niver a bikoù war pep diñs a-raok ma vo tizhet al leur gantañ."
+msgstr ""
+"Kont an niver a bikoù war pep domino a-raok ma vo tizhet al leur gantañ."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr "Bizskriv an niver a bikoù a welez war pep diñs o kouezhañ."
+msgstr "Bizskriv an niver a bikoù a welez war pep domino o kouezhañ."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -24941,12 +24424,9 @@ msgstr "Koskoriad an Heol"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Sell ouzh koskoriad an Heol"
+msgstr "Desk traoù diwar-benn koskoriad an Heol"
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26337,36 +25817,25 @@ msgstr ""
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr "Calcudoku"
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Diskoulm ar C'halcudoku."
+msgstr "Diskoulm ar Sudoku."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
 msgstr ""
 "Diorren da varregezhioù poellek: liammañ ar roadennoù, dezastum ha lec'hiañ "
-"en egor en ur jediñ."
+"en egor."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -26385,6 +25854,11 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"Dibab un niver pe un arouez ha klik war al lec'h da dizhout. Ur wech "
+"nemetken e rank bezañ pep arouez e pep renk, bann ha rann. Ma tibabez ul "
+"lec'h difennet e vo diskouezet dit perak gant ar c'hoari. Diwall mat: n'eo "
+"ket peogwir e c'hellez plasañ un dra en ur gael eo mat evit ar Sudoku a-"
+"bezh. Ur fazi a c'hell bezañ memestra."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26426,6 +25900,8 @@ msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
 msgstr ""
+"Diorro barregezhioù en ijin poellek, diforc'hañ livioù hag eñvoriñ "
+"lec'hiadurioù."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -26475,12 +25951,9 @@ msgstr "Tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "Ret eo adsevel ar stumm kinniget dit."
+msgstr "Dilec'h ar stummoù evit adsevel ar stumm kinniget dit."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -26489,16 +25962,11 @@ msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
 msgstr ""
+"Diorro barregezhioù lec'hiañ en egor, eñvoriñ lec'hiadurioù hag adsevel "
+"skouerioù."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -26506,9 +25974,9 @@ msgid ""
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
 "Diblas ur pezh en ur riklañ anezhañ. Bouton ar simetriezh a zeu war-wel evit "
-"ar pezhioù a c'hall ober gantañ. Pouez war ar bouton treiñ ha rikl tro-dro "
-"dezhañ evit treiñ ar pezh evel ma karez. Taol ur sell war obererezh ar "
-"miltammig evit kaout un digoradur diwar-benn an tangram."
+"ar pezhioù a c'haller ober gantañ. Rikl ar bouton treiñ pe tro-dro d'ur pezh "
+"dibabet evit treiñ ar pezh. Taol ur sell war obererezh ar 'Baby Puzzle' evit "
+"kaout un digoradur eeun diwar-benn an tangram."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -26524,12 +25992,9 @@ msgstr "Bann biroùigoù ouzh ar gwenn ha jed da gont."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Pleustriñ war ar sammañ"
+msgstr "Pleustriñ war ar sammañ gant meur a niver."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -26658,9 +26123,6 @@ msgstr "Desk kavout ar glokadenn d'ober dek."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
 msgstr "Niveroù adalek 1 betek 10 and sammadurioù."
@@ -26728,9 +26190,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 30 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
 msgstr "Niveroù adalek 1 betek 30 ha sammadurioù."
@@ -26781,9 +26240,6 @@ msgstr "Desk un doare pleustrek d'ober gant ar glokadenn da zek."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
 msgstr "Niveroù adalek 1 betek 50 ha sammadurioù."
@@ -26833,7 +26289,7 @@ msgstr "Lak tri merk a-steud."
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "Diorro da varregezhioù strategiezh."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -26909,9 +26365,6 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
 msgstr "Desk kelc'hiad an dour."
@@ -27043,12 +26496,9 @@ msgstr "Bizskriv ar gerioù o kouezhañ a-raok ma vo tizhet al leur gante."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Pleustriñ war ar rannañ ingal."
+msgstr "Pleustriñ war ur c'hlavier."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
