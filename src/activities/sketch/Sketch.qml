@@ -118,7 +118,14 @@ ActivityBase {
             clearOpenPanels();
         }
 
-        onStart: { Activity.start(items); }
+        onStart: {
+            Activity.start(items);
+            // TODO: remove this and uncomment the properties in ovalShape and lineShape items after we set minimum Qt >= 6.6
+            if(ApplicationInfo.QTVersion.startsWith("6.5.") === false) {
+                ovalShape.preferredRendererType = Shape.CurveRenderer;
+                lineShape.preferredRendererType = Shape.CurveRenderer;
+            }
+        }
         onStop: {
             processTimer.stop();
             Activity.stop();
@@ -380,7 +387,9 @@ ActivityBase {
                     y: 0
                     width: 0
                     height: 0
-                    preferredRendererType: Shape.CurveRenderer
+                    // TODO: uncomment this and update the start function once we set minimum Qt version required >= 6.6
+                    // This property is not available on Qt 6.5, so for now we set it conditionally in the start function.
+                    // preferredRendererType: Shape.CurveRenderer
                     onVisibleChanged: {
                         if(!visible) {
                             x = y = width = height =0
@@ -417,7 +426,8 @@ ActivityBase {
                     y: 0
                     width: parent.width
                     height: parent.height
-                    preferredRendererType: Shape.CurveRenderer
+                    // TODO: see comment in ovalShape...
+                    // preferredRendererType: Shape.CurveRenderer
                     ShapePath {
                         id: lineShapePath
                         capStyle: ShapePath.RoundCap
