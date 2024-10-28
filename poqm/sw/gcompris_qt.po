@@ -24545,7 +24545,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:663
+#: activities/sketch/Sketch.qml:673
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -24553,7 +24553,7 @@ msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Hujachagua dokezo lolote. Je, ungependa kufuta madokezo yote?"
 
-#: activities/sketch/Sketch.qml:664
+#: activities/sketch/Sketch.qml:674
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download it now?"
@@ -24561,7 +24561,7 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Je, ungependa kuipakua sasa?"
 
-#: activities/sketch/Sketch.qml:665
+#: activities/sketch/Sketch.qml:675
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -24569,7 +24569,7 @@ msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/sketch/Sketch.qml:666
+#: activities/sketch/Sketch.qml:676
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"

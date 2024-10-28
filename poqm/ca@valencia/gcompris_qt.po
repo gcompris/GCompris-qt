@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-10-16 12:29+0200\n"
+"PO-Revision-Date: 2024-10-27 17:48+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -11244,7 +11244,7 @@ msgstr "Hubei"
 #: activities/geo-country/resource/board/board14_0.qml:164
 msgctxt "board14_0|"
 msgid "Shanghai"
-msgstr "Xangai"
+msgstr "Shanghai"
 
 #. Province of China: Zhejiang
 #: activities/geo-country/resource/board/board14_0.qml:171
@@ -12955,7 +12955,7 @@ msgstr "Manitoba"
 #: activities/geo-country/resource/board/board8_0.qml:73
 msgctxt "board8_0|"
 msgid "Ontario"
-msgstr "Ontàrio"
+msgstr "Ontario"
 
 #. Provinces and territories of Canada: Quebec
 #: activities/geo-country/resource/board/board8_0.qml:80
@@ -24584,22 +24584,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Eines de degradat"
 
-#: activities/sketch/Sketch.qml:663
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "No has guardat esta imatge. Vols tancar esta activitat?"
 
-#: activities/sketch/Sketch.qml:664
+#: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Vols esborrar esta imatge?"
 
-#: activities/sketch/Sketch.qml:665
+#: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Sí"
 
-#: activities/sketch/Sketch.qml:666
+#: activities/sketch/Sketch.qml:676
 msgctxt "Sketch|"
 msgid "No"
 msgstr "No"

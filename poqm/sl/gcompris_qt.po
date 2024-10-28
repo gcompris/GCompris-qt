@@ -23916,22 +23916,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Orodja za gradient"
 
-#: activities/sketch/Sketch.qml:663
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Te slike niste shranili. Ali želite zapreti to dejavnost?"
 
-#: activities/sketch/Sketch.qml:664
+#: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Ali želite izbrisati to sliko?"
 
-#: activities/sketch/Sketch.qml:665
+#: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Da"
 
-#: activities/sketch/Sketch.qml:666
+#: activities/sketch/Sketch.qml:676
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ne"

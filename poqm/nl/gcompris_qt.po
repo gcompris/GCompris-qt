@@ -24168,23 +24168,23 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr "Hulpmiddelen voor kleurverloop"
 
-#: activities/sketch/Sketch.qml:663
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 "Je hebt deze afbeelding niet opgeslagen. Wil je deze activiteit sluiten?"
 
-#: activities/sketch/Sketch.qml:664
+#: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "Wil je deze afbeelding wissen?"
 
-#: activities/sketch/Sketch.qml:665
+#: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/sketch/Sketch.qml:666
+#: activities/sketch/Sketch.qml:676
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nee"

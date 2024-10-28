@@ -23405,7 +23405,7 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:663
+#: activities/sketch/Sketch.qml:673
 #, fuzzy
 #| msgctxt "Piano_composition|"
 #| msgid "You have not selected any note. Do you want to erase all the notes?"
@@ -23413,7 +23413,7 @@ msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr "لم تقم بتحديد أي علامة. هل تريد محو كل العلامات؟"
 
-#: activities/sketch/Sketch.qml:664
+#: activities/sketch/Sketch.qml:674
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -23421,12 +23421,12 @@ msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr "أتريد تنزيل ملفّاتها الصّوتيّة المقابلة الآن؟"
 
-#: activities/sketch/Sketch.qml:665
+#: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "نعم"
 
-#: activities/sketch/Sketch.qml:666
+#: activities/sketch/Sketch.qml:676
 msgctxt "Sketch|"
 msgid "No"
 msgstr "لا"

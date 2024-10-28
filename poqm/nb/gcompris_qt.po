@@ -22102,22 +22102,22 @@ msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:663
+#: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:664
+#: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:665
+#: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr ""
 
-#: activities/sketch/Sketch.qml:666
+#: activities/sketch/Sketch.qml:676
 msgctxt "Sketch|"
 msgid "No"
 msgstr ""
