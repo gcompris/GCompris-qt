@@ -1819,6 +1819,8 @@ msgid ""
 "Create a voltage source loop with the provided batteries. Then click on the "
 "warning box to make it disappear and click on the OK button."
 msgstr ""
+"შექმენით ვოლტაჟის მოკლე ჩართვა მოწოდებული ელემენტებისთვის. შემდეგ "
+"დააწკაპუნეთ გაფრთხილების ზოლს, რომ ის გააქროთ და დააწკაპუნეთ ღილაკზე 'დიახ'."
 
 #: activities/analog_electricity/TutorialDataset.qml:133
 msgctxt "TutorialDataset|"
@@ -1888,6 +1890,8 @@ msgid ""
 "Electric current intensity or simply current is a flow of electric charge. "
 "One can imagine like a flow of electrons."
 msgstr ""
+"ელექტრული დენის ინტენსივოვობა, ან უბრალოდ დენი ელექტრული მუხტის ნაკადია. "
+"შეგიძლიათ, წარმოიდგინოთ, როგორც ელექტრონების დინება."
 
 #: activities/analog_electricity/TutorialDataset.qml:178
 msgctxt "TutorialDataset|"
@@ -14013,7 +14017,7 @@ msgstr "იპოვეთ ოპერაციები აუცილებ�
 #: activities/guesscount/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr ""
+msgstr "გამრავლებაში მეცადინეობა."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -19097,13 +19101,13 @@ msgstr ""
 #: activities/oware/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (against Tux)"
-msgstr ""
+msgstr "ოვარის თამაში (ტუქსის წინააღმდეგ)"
 
 #. Help title
 #: activities/oware/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game against Tux."
-msgstr ""
+msgstr "ითამაშეთ სტრატეგიული თამაში ოვარი ტუქსის წინააღმდეგ."
 
 #. Help goal
 #: activities/oware/ActivityInfo.qml:19
@@ -19171,13 +19175,13 @@ msgstr "არასწორი სვლა!"
 #: activities/oware_2players/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Play oware (with a friend)"
-msgstr ""
+msgstr "ოვარის თამაში (მეგობართან)"
 
 #. Help title
 #: activities/oware_2players/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Play the Oware strategy game with a friend."
-msgstr ""
+msgstr "ითამაშეთ სტრატეგიული თამაში ოვარი მეგობართან."
 
 #. Activity title
 #: activities/paintings/ActivityInfo.qml:20
@@ -19690,12 +19694,12 @@ msgstr "ამერიკა: პატრიოტული"
 #: activities/piano_composition/melodies.js:32
 msgctxt "melodies|"
 msgid "America: Shaker Tune"
-msgstr ""
+msgstr "ამერიკა: შეიკერების სიმღერა"
 
 #: activities/piano_composition/melodies.js:39
 msgctxt "melodies|"
 msgid "America: Nursery Rhyme"
-msgstr ""
+msgstr "ამერიკა: საბავშვო სიმღერები"
 
 #: activities/piano_composition/melodies.js:46
 #: activities/piano_composition/melodies.js:214
@@ -19788,7 +19792,7 @@ msgstr "უკრაინა"
 #: activities/piano_composition/melodies.js:235
 msgctxt "melodies|"
 msgid "Mexican song to break a piñata"
-msgstr ""
+msgstr "მექსიკური სიმღერა პინიატას გასატეხად"
 
 #: activities/piano_composition/melodies.js:242
 msgctxt "melodies|"
@@ -22240,7 +22244,7 @@ msgstr "Ctrl + Z: ბოლო ქმედების დაბრუნებ
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: ბოლო ქმედების გამეორება"
 
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -22250,7 +22254,7 @@ msgstr "Ctrl + S: გამოსახულების შენახვა"
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: გამოსახულების გახსნა"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -22280,12 +22284,12 @@ msgstr "ფონური გამოსახულება"
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "საშლელი ხელსაწყოები"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "ხატვის ხელსაწყოები"
 
 #: activities/sketch/ColorSelector.qml:75
 msgctxt "ColorSelector|"
@@ -22295,7 +22299,7 @@ msgstr "პალიტრის ფერები"
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "პალიტრის ჩამოყრა"
 
 #: activities/sketch/ColorSelector.qml:210
 msgctxt "ColorSelector|"
@@ -22324,7 +22328,7 @@ msgstr "სიკაშკაშე"
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "ფერის ჩამოყრა"
 
 #: activities/sketch/ColorsPanel.qml:157
 msgctxt "ColorsPanel|"
@@ -22365,27 +22369,27 @@ msgstr "ახალი გამოსახულების შექმნ�
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "მომრგვალებული კუთხეები"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "გეომეტრიის ინსტრუმენტები"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "შიდა წრის ზომა"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "გრადიენტის ხელსაწყები"
 
 #: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr ""
+msgstr "გამოსახულება არ შეგინახავთ. გნებავთ, დახუროთ ეს აქტივობა?"
 
 #: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
@@ -22405,7 +22409,7 @@ msgstr "არა"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "ბეჭდის ხელსაწყო"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
@@ -22415,7 +22419,7 @@ msgstr "ტექსტის ხელსაწყო"
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "ჩაწერეთ თქვენი ტექსტი აქ"
 
 #: activities/sketch/ToolsPanel.qml:253
 msgctxt "ToolsPanel|"
@@ -22425,7 +22429,7 @@ msgstr "ხელსაწყოები"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "ხელსაწყოს პარამეტრების ჩამოყრა"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
