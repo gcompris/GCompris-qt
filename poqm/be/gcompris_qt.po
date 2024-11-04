@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-18 11:17+0300\n"
+"PO-Revision-Date: 2024-11-03 22:43+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -21471,20 +21471,14 @@ msgstr ""
 "падгледзеўшы ў правы ніжні куток."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Суадносьце лічбы да 2."
+msgstr "Злавіце лічбы, якія пачынаюцца з 0."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Суадносьце лічбы да 2."
+msgstr "Злавіце лічбы, якія пачынаюцца ад 10."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -21504,12 +21498,9 @@ msgstr "Ігра на піяніна"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Знайдзіце слушную дату і выберыце яе на календары."
+msgstr "Прачытайце ноту, а затым зграйце яе на клавіятуры."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -21584,12 +21575,9 @@ msgstr "Грайце рытм"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Навучыцеся дакладна следаваць рытму."
+msgstr "Дакладна следуйце рытму."
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -21851,12 +21839,9 @@ msgstr ""
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr "Чытанне інструкцый і лагічнае мысленне для пошуку шляху."
+msgstr "Навучыцеся як праграмаваць інструкцыі каб рухацца ўздоўж шляху."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22085,12 +22070,9 @@ msgstr ""
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr "Практыкаванне з чыгункай"
+msgstr "Чыгунка"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -22305,12 +22287,9 @@ msgstr "Адлюструйце дадзены малюнак"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Утварыце паказаную справа вежу на вольным месцы."
+msgstr "Узнавіце выяву сіметрычна на пустой сетцы."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -22516,12 +22495,9 @@ msgstr "Рымскія лічбы"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to read a graduated line."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "Навучыцеся чытаць градуяваную лінію."
+msgstr "Навучыцеся чытаць і пісаць Рымскія лічбы."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
@@ -24157,12 +24133,9 @@ msgid "Smoothing"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "дзеянне"
+msgstr "Паварот"
 
 #: activities/sketch/ToolsPanel.qml:662
 #, fuzzy
