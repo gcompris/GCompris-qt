@@ -13,6 +13,7 @@ Rectangle {
     id: splash
     color: "#16B8EA"
     property int currentCircle: 0
+    property bool fullyLoaded: false
     property alias colorChangeTimer: colorChangeTimer
 
     Image {
@@ -42,7 +43,7 @@ Rectangle {
         repeat: true
         interval: 500
         onTriggered: {
-            currentCircle = currentCircle > 2 ? 0 : ++currentCircle;
+            currentCircle = currentCircle >= 2 ? 0 : ++currentCircle;
         }
     }
 
@@ -58,7 +59,7 @@ Rectangle {
                 width: 75
                 height: width
                 radius: width
-                color: currentCircle > index ? "#e77935" : "#80FFFFFF"
+                color: fullyLoaded || currentCircle == index ? "#e77935" : "#80FFFFFF"
                 border.color: "#80FFFFFF"
                 border.width: 3
             }

@@ -435,7 +435,7 @@ Window {
     property bool startLoadingFinished: false
     Timer {
         id: secondTimer
-        interval: 100
+        interval: 500
         onTriggered: {
             if(ActivityInfoTree.startingActivity !== "") {
                 // Don't play welcome intro
@@ -467,7 +467,7 @@ Window {
     property bool activitiesLoaded: false
     onActivitiesLoadedChanged: {
         splash.colorChangeTimer.stop();
-        splash.currentCircle = 3;
+        splash.fullyLoaded = true;
         secondTimer.start();
         pageView.push("qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name, {
             'audioVoices': audioVoices,
