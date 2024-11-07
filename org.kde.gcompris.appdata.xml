@@ -5,10 +5,13 @@
   SPDX-FileCopyrightText: 2017 Johnny Jazeix <jazeix@gmail.com>
 -->
 <component type="desktop">
-  <id>org.kde.gcompris.desktop</id>
+  <id>org.kde.gcompris</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>AGPL-3.0</project_license>
-  <developer_name translate="no">KDE</developer_name>
+  <developer id="org.kde">
+    <name translate="no">KDE</name>
+    <url>https://kde.org</url>
+  </developer>
   <launchable type="desktop-id">org.kde.gcompris.desktop</launchable>
   <name>GCompris</name>
   <name xml:lang="ar">فهمت</name>
@@ -1172,6 +1175,7 @@
   <url type="help">https://docs.kde.org/?application=gcompris</url>
   <url type="donation">https://gcompris.net/donate-en.html</url>
   <url type="translate">https://gcompris.net/wiki/Developer%27s_corner#Translation</url>
+  <url type="vcs-browser">https://invent.kde.org/education/gcompris</url>
   <update_contact>gcompris-devel@kde.org</update_contact>
   <project_group>KDE</project_group>
   <provides>
