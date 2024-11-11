@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-11-03 22:43+0300\n"
+"PO-Revision-Date: 2024-11-10 13:20+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -22501,17 +22501,10 @@ msgstr "Навучыцеся чытаць і пісаць Рымскія ліч�
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
-msgstr ""
-"Навучыцеся чытаць рымскія лічбы і выконвайце пераўтварэнне з арабскіх і "
-"назад."
+msgstr "Навучыцеся чытаць рымскія лічбы і пераўтварыце іх у арабскія."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -22528,11 +22521,6 @@ msgstr ""
 "лацінскага алфавіту."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -23231,12 +23219,9 @@ msgstr "Паспрабуйце раздзяліць цукеркі паміж д
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr "Практыка аперацыі дзялення."
+msgstr "Вучыцеся дзяліцца, практыка дзялення."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -23529,17 +23514,12 @@ msgstr ""
 "астатнія сваім сябрам. Ці зможаце Вы пароўну падзяліць астатнія 9 цукерак?"
 
 #: activities/share/resource/2/Data.qml:70
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Charles wants to share his 6 pieces of candy with 2 of his girl friends. "
-#| "Can he split the pieces of candy equally?"
 msgctxt "Data|"
 msgid ""
 "Bob wants to share 3 pieces of candy equally between 3 of his girl friends. "
 "Can he split the pieces of candy equally?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 6 цукеркамі 2 сваіх сябровак. Ці зможа ён "
+"Кірук хоча пачаставаць сваімі 3 цукеркамі 3 сваіх сябровак. Ці зможа ён "
 "пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/2/Data.qml:80
@@ -23578,12 +23558,9 @@ msgstr ""
 "колькасць?"
 
 #: activities/share/resource/2/Data.qml:122
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
-msgstr "Цяпер ён хоча пачаставаць сваіх сяброў 4 цукеркамі."
+msgstr "Цяпер Аліса хоча па-роўну пачаставаць сваіх сяброў 8 цукеркамі."
 
 #: activities/share/resource/2/Data.qml:132
 msgctxt "Data|"
@@ -23595,12 +23572,9 @@ msgstr ""
 "сябрамі: 1 дзяўчынкай і 3 хлопчыкамі? У дзяўчынкі ўжо ёсць некалькі цукерак."
 
 #: activities/share/resource/2/Data.qml:142
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Now he wants to give 4 pieces of candy to his friends."
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
-msgstr "Цяпер ён хоча пачаставаць сваіх сяброў 4 цукеркамі."
+msgstr "Аліса хоча падзяліць па-роўну 16 цукерак паміж сваімі сябрамі."
 
 #: activities/share/resource/2/Data.qml:152
 #, fuzzy
