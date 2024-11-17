@@ -32,6 +32,8 @@ ActivityBase {
 
     property bool twoPlayers: false
     property bool displayTakenPiecesButton: true
+    // In end of party mode, we consider we need a check mate to win, a draw is not enough
+    property bool drawIsWin: true
     property int coordsOpacity: 1
     property int movesCount: 0
     // difficultyByLevel means that at level 1 computer is bad better at last level
@@ -72,6 +74,7 @@ ActivityBase {
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
+            property bool drawIsWin: activity.drawIsWin
             property var positions
             property var pieces: pieces
             property var squares: squares
