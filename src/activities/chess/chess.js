@@ -128,10 +128,15 @@ function updateMessage(move) {
                 items.bonus.good('tux')
         else
             items.bonus.good('flower')
-    } else if((move.flags & Engine.P4_MOVE_FLAG_MATE) == Engine.P4_MOVE_FLAG_MATE) {
+    } else if((move.flags & Engine.P4_MOVE_FLAG_MATE) == Engine.P4_MOVE_FLAG_MATE || ((move.flags & Engine.P4_MOVE_FLAG_DRAW) == Engine.P4_MOVE_FLAG_DRAW)) {
         items.message = qsTr("Drawn game")
         items.gameOver = true
-        items.bonus.good('flower')
+        if(items.drawIsWin) {
+            items.bonus.good('flower')
+        }
+        else {
+            items.bonus.bad('flower')
+        }
     } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
         items.message = items.blackTurn ? qsTr("White checks", "black king is under attack") : qsTr("Black checks", "white king is under attack")
     } else if(move.flags === Engine.P4_MOVE_ILLEGAL) {

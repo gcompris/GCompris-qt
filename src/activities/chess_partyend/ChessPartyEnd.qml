@@ -15,6 +15,7 @@ Chess {
     twoPlayers: false
     difficultyByLevel: false
     displayTakenPiecesButton: false
+    drawIsWin: false
     fen: [
         ["", "4k3/8/8/8/8/8/8/K4QQ1 w - - 0 1"],
         ["", "1k6/8/8/8/8/8/8/K4RR1 w - - 0 1"],
