@@ -4683,33 +4683,33 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Unentschiedenes Spiel"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Schwarz steht im Schach"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Weiß steht im Schach"
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Ungültig, dein König würde im Schach stehen"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Möchtest du wirklich alle Züge zurücknehmen?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 msgctxt "Chess|"
 msgid "No"
 msgstr "Nein"
@@ -19748,7 +19748,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Alles klein"
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -19758,77 +19758,77 @@ msgid ""
 "files now?"
 msgstr "Möchtest du die entsprechenden Tondateien jetzt herunterladen?"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ja"
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nein"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logik"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Künste"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Musik"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experiment"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr "Geschichte"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografie"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Nummerierung"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Arithmetik"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Maße"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Buchstaben"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Wörter"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vokabeln"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19837,12 +19837,12 @@ msgstr ""
 "Sammle hier Deine Lieblingsaktivitäten indem Du die Sonne im oberen rechten "
 "Eck jeder Aktivität anklickst."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Suche nach Aktivitäten"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Aktivitäten-Einstellungen"
@@ -28527,7 +28527,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:263
+#: core/main.qml:235
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -28537,42 +28537,62 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "Möchtest Du die folgenden externen Ressourcen herunterladen?"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Stimmen für deine Sprache"
 
-#: core/main.qml:266
+#: core/main.qml:238
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Vollständige Bildersammlung"
 
-#: core/main.qml:267
+#: core/main.qml:239
 msgctxt "main|"
 msgid "Background music"
 msgstr "Hintergrundmusik"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ja"
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "Nein"
 
-#: core/main.qml:316
+#: core/main.qml:274
+msgctxt "main|"
+msgid ""
+"Some activities have new dataset available. Do you want to reset their "
+"dataset selection?"
+msgstr ""
+
+#: core/main.qml:275
+msgctxt "main|"
+msgid "Apply"
+msgstr ""
+
+#: core/main.qml:276
+#, fuzzy
+#| msgctxt "DialogChooseLevel|"
+#| msgid "Cancel"
+msgctxt "main|"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: core/main.qml:360
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Willkommen zu GCompris"
 
-#: core/main.qml:317
+#: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Du benutzt GCompris zum ersten Mal."
 
-#: core/main.qml:318
+#: core/main.qml:362
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -28588,41 +28608,21 @@ msgstr ""
 "Spracheinstellungen richtig sind, und dass alle Sprachtondateien installiert "
 "sind. Gehe dafür in den Einstellungsdialog."
 
-#: core/main.qml:320
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Viel Spaß!"
 
-#: core/main.qml:322
+#: core/main.qml:366
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Die aktuelle Sprache ist %1 (%2)."
 
-#: core/main.qml:354
+#: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris wurde aktualisiert. Hier sind die letzten Änderungen:<br/>"
-
-#: core/main.qml:382
-msgctxt "main|"
-msgid ""
-"Some activities have new dataset available. Do you want to reset their "
-"dataset selection?"
-msgstr ""
-
-#: core/main.qml:383
-msgctxt "main|"
-msgid "Apply"
-msgstr ""
-
-#: core/main.qml:384
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
-msgctxt "main|"
-msgid "Cancel"
-msgstr "Abbrechen"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

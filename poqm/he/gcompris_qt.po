@@ -4324,33 +4324,33 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr "המשחק הסתיים בתיקו"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "לבן מכריז שח"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "שחור מכריז שח"
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "לא אפשרי, אולי המלך שלך מאויים בשח"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "לבטל את כל המהלכים?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 msgctxt "Chess|"
 msgid "No"
 msgstr "לא"
@@ -18651,7 +18651,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "הכול באותיות קטנות"
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -18665,77 +18665,77 @@ msgstr ""
 "נבחר מקום חדש. צריך לאתחל את GCompris כדי להשתמש בו.<br/> להוריד את קובצי "
 "הקול המתאימים עכשיו?"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 msgctxt "Menu|"
 msgid "No"
 msgstr "לא"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "היגיון"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "אומנות יפה"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr "מוזיקה"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "ניסוי"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr "היסטוריה"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "גאוגרפיה"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "ספירה"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "חשבון"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "מדידות"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "אותיות"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr "מילים"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "אוצר מילים"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18744,12 +18744,12 @@ msgstr ""
 "אפשר להציב את הפעילויות האהובות ביותר כאן על ידי לחיצה על השמש בצד הימני "
 "העליון של הפעילות הזו."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "לחפש פעילות מסוימת"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "הגדרות הפעילות"
@@ -26903,7 +26903,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:263
+#: core/main.qml:235
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the following external assets?"
@@ -26913,42 +26913,59 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "רוצה להוריד את התוספים החיצוניים האלו?"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "קולות לשפה שלך"
 
-#: core/main.qml:266
+#: core/main.qml:238
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "ערכת דמויות מילים מלאות"
 
-#: core/main.qml:267
+#: core/main.qml:239
 msgctxt "main|"
 msgid "Background music"
 msgstr "מוזיקת רקע"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "כן"
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "לא"
 
-#: core/main.qml:316
+#: core/main.qml:274
+msgctxt "main|"
+msgid ""
+"Some activities have new dataset available. Do you want to reset their "
+"dataset selection?"
+msgstr ""
+
+#: core/main.qml:275
+msgctxt "main|"
+msgid "Apply"
+msgstr "החלה"
+
+#: core/main.qml:276
+msgctxt "main|"
+msgid "Cancel"
+msgstr "ביטול"
+
+#: core/main.qml:360
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "ברוך בואך לג׳יקומפרי!"
 
-#: core/main.qml:317
+#: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "זאת ההפעלה הראשונה של ג׳יקומפרי."
 
-#: core/main.qml:318
+#: core/main.qml:362
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -26963,38 +26980,21 @@ msgstr ""
 "כדאי לוודא שהגדרות האפלקציות שלך ובמיוחד הגדרות השפה מכוונות נכון ושכל קולות "
 "השפה הייחודיים מותקנים. אפשר לעשות את זה בתפריט ההעדפות."
 
-#: core/main.qml:320
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "שיהיה רק כיף!"
 
-#: core/main.qml:322
+#: core/main.qml:366
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "השפה הנוכחית שלך היא %1 (%2)."
 
-#: core/main.qml:354
+#: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "הידד, ג׳יקומפרי עודכן! אלו השינויים החדשים:<br/>"
-
-#: core/main.qml:382
-msgctxt "main|"
-msgid ""
-"Some activities have new dataset available. Do you want to reset their "
-"dataset selection?"
-msgstr ""
-
-#: core/main.qml:383
-msgctxt "main|"
-msgid "Apply"
-msgstr "החלה"
-
-#: core/main.qml:384
-msgctxt "main|"
-msgid "Cancel"
-msgstr "ביטול"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

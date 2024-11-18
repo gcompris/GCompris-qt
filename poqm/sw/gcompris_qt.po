@@ -4513,33 +4513,33 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Mchezo uliochorwa"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Cheki nyeupe"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Hundi nyeusi"
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Si sahihi, mfalme wako anaweza kudhibitiwa"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Je, kweli unataka kutendua hatua zote?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 msgctxt "Chess|"
 msgid "No"
 msgstr "Hapana"
@@ -19304,7 +19304,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Herufi ndogo zote"
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -19314,77 +19314,77 @@ msgid ""
 "files now?"
 msgstr "Je, ungependa kupakua faili za sauti zinazolingana sasa?"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 msgctxt "Menu|"
 msgid "No"
 msgstr "Hapana"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Mantiki"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Sanaa Nzuri"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Muziki"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Jaribio"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr "Historia"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Jiografia"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Kuhesabu"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Hesabu"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Vipimo"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Barua"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Maneno"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Msamiati"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19393,12 +19393,12 @@ msgstr ""
 "Weka shughuli zako uzipendazo hapa kwa kubofya jua kwenye sehemu ya juu "
 "kulia ya shughuli hiyo."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Tafuta shughuli mahususi"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Mipangilio ya Shughuli"
@@ -27960,7 +27960,7 @@ msgstr ""
 "Bainisha ni ngazi gani ya kuanza shughuli. Inatumika tu wakati --launch "
 "chaguo linatumika."
 
-#: core/main.qml:263
+#: core/main.qml:235
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27969,67 +27969,32 @@ msgstr ""
 "Je, unataka kupakua au kusasisha kiotomatiki vipengee vifuatavyo vya nje "
 "unapoanzisha GCompris?"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Sauti kwa lugha yako"
 
-#: core/main.qml:266
+#: core/main.qml:238
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Seti kamili ya picha"
 
-#: core/main.qml:267
+#: core/main.qml:239
 msgctxt "main|"
 msgid "Background music"
 msgstr "Muziki wa usuli"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "Hapana"
 
-#: core/main.qml:316
-msgctxt "main|"
-msgid "Welcome to GCompris!"
-msgstr "Karibu kwenye GCompris!"
-
-#: core/main.qml:317
-msgctxt "main|"
-msgid "You are running GCompris for the first time."
-msgstr "Unaendesha GCompris kwa mara ya kwanza."
-
-#: core/main.qml:318
-msgctxt "main|"
-msgid ""
-"You should verify that your application settings especially your language is "
-"set correctly. You can do this in the Configuration dialog."
-msgstr ""
-"Unapaswa kuthibitisha kuwa mipangilio yako ya programu haswa lugha yako "
-"imewekwa ipasavyo. Unaweza kufanya hivyo kwenye kidirisha cha Usanidi."
-
-#: core/main.qml:320
-msgctxt "main|"
-msgid "Have Fun!"
-msgstr "Furahia!"
-
-#: core/main.qml:322
-#, qt-format
-msgctxt "main|"
-msgid "Your current language is %1 (%2)."
-msgstr "Lugha yako ya sasa ni %1 (%2)."
-
-#: core/main.qml:354
-msgctxt "main|"
-msgid "GCompris has been updated! Here are the new changes:<br/>"
-msgstr "GCompris imesasishwa! Hapa kuna mabadiliko mapya:<br/>"
-
-#: core/main.qml:382
+#: core/main.qml:274
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -28038,15 +28003,50 @@ msgstr ""
 "Baadhi ya shughuli zina mkusanyiko mpya wa data unaopatikana. Je, ungependa "
 "kuweka upya uteuzi wao wa mkusanyiko wa data?"
 
-#: core/main.qml:383
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Apply"
 msgstr "Omba"
 
-#: core/main.qml:384
+#: core/main.qml:276
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Sitisha"
+
+#: core/main.qml:360
+msgctxt "main|"
+msgid "Welcome to GCompris!"
+msgstr "Karibu kwenye GCompris!"
+
+#: core/main.qml:361
+msgctxt "main|"
+msgid "You are running GCompris for the first time."
+msgstr "Unaendesha GCompris kwa mara ya kwanza."
+
+#: core/main.qml:362
+msgctxt "main|"
+msgid ""
+"You should verify that your application settings especially your language is "
+"set correctly. You can do this in the Configuration dialog."
+msgstr ""
+"Unapaswa kuthibitisha kuwa mipangilio yako ya programu haswa lugha yako "
+"imewekwa ipasavyo. Unaweza kufanya hivyo kwenye kidirisha cha Usanidi."
+
+#: core/main.qml:364
+msgctxt "main|"
+msgid "Have Fun!"
+msgstr "Furahia!"
+
+#: core/main.qml:366
+#, qt-format
+msgctxt "main|"
+msgid "Your current language is %1 (%2)."
+msgstr "Lugha yako ya sasa ni %1 (%2)."
+
+#: core/main.qml:398
+msgctxt "main|"
+msgid "GCompris has been updated! Here are the new changes:<br/>"
+msgstr "GCompris imesasishwa! Hapa kuna mabadiliko mapya:<br/>"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

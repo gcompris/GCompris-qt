@@ -4515,33 +4515,33 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Döntetlen"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "Fehér sakk"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "Fekete sakk"
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Helytelen lépés, a kiráylod sakkban van"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Valóban vissza akarod vonni az összes lépést?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 msgctxt "Chess|"
 msgid "No"
 msgstr "Nem"
@@ -19257,7 +19257,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Minden kisbetűs"
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -19267,77 +19267,77 @@ msgid ""
 "files now?"
 msgstr "Szeretnéd most letölteni a hangokat?"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Igen"
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 msgctxt "Menu|"
 msgid "No"
 msgstr "Nem"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Logika"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Művészetek"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Zene"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Kísérletek"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr "Történelem"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Földrajz"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Számlálási gyakorlat"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Számtan"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Mértékegységek"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Betűk"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Szavak"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Szókincs és olvasás"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19346,12 +19346,12 @@ msgstr ""
 "Jelöld meg a kedvenc feladataidat. Kattints a feladatválasztó jobb felső "
 "sarkában lévő napocskára!"
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Feladat keresése"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Tevékenység beállítások"
@@ -27802,7 +27802,7 @@ msgstr ""
 "Megadható, hogy a tevékenységet melyik szinten kívánjuk elindítani. Csak "
 "akkor használatos, ha a --launch opciót használjuk."
 
-#: core/main.qml:263
+#: core/main.qml:235
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -27811,67 +27811,32 @@ msgstr ""
 "Szeretnéd automatikusan letölteni vagy frissíteni a külső forrrásokat a "
 "GCompris indításakor?"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Anyanyelvi hangok"
 
-#: core/main.qml:266
+#: core/main.qml:238
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Teljes szóképkészlet használata"
 
-#: core/main.qml:267
+#: core/main.qml:239
 msgctxt "main|"
 msgid "Background music"
 msgstr "Háttérzene"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "Igen"
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "Nem"
 
-#: core/main.qml:316
-msgctxt "main|"
-msgid "Welcome to GCompris!"
-msgstr "Köszöntünk a GComprisban!"
-
-#: core/main.qml:317
-msgctxt "main|"
-msgid "You are running GCompris for the first time."
-msgstr "Első alkalommal futtatod a GComprist."
-
-#: core/main.qml:318
-msgctxt "main|"
-msgid ""
-"You should verify that your application settings especially your language is "
-"set correctly. You can do this in the Configuration dialog."
-msgstr ""
-"Ellenőrizd a program beállításait, különösen a nyelvi beáéllításokat. Mindez "
-"beállítható a Tulajdonságok panelen."
-
-#: core/main.qml:320
-msgctxt "main|"
-msgid "Have Fun!"
-msgstr "Jó szórakozást!"
-
-#: core/main.qml:322
-#, qt-format
-msgctxt "main|"
-msgid "Your current language is %1 (%2)."
-msgstr "A jelenlegi nyelved %1 (%2)."
-
-#: core/main.qml:354
-msgctxt "main|"
-msgid "GCompris has been updated! Here are the new changes:<br/>"
-msgstr "A GCompris frissült. A változások a következők:<br/>"
-
-#: core/main.qml:382
+#: core/main.qml:274
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
@@ -27880,15 +27845,50 @@ msgstr ""
 "Néhány tevékenységhez új adatkészlet áll rendelkezésre. Szeretnéd "
 "visszaállítani az adatkészlet kiválasztását?"
 
-#: core/main.qml:383
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Apply"
 msgstr "Alkalmaz"
 
-#: core/main.qml:384
+#: core/main.qml:276
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Mégsem"
+
+#: core/main.qml:360
+msgctxt "main|"
+msgid "Welcome to GCompris!"
+msgstr "Köszöntünk a GComprisban!"
+
+#: core/main.qml:361
+msgctxt "main|"
+msgid "You are running GCompris for the first time."
+msgstr "Első alkalommal futtatod a GComprist."
+
+#: core/main.qml:362
+msgctxt "main|"
+msgid ""
+"You should verify that your application settings especially your language is "
+"set correctly. You can do this in the Configuration dialog."
+msgstr ""
+"Ellenőrizd a program beállításait, különösen a nyelvi beáéllításokat. Mindez "
+"beállítható a Tulajdonságok panelen."
+
+#: core/main.qml:364
+msgctxt "main|"
+msgid "Have Fun!"
+msgstr "Jó szórakozást!"
+
+#: core/main.qml:366
+#, qt-format
+msgctxt "main|"
+msgid "Your current language is %1 (%2)."
+msgstr "A jelenlegi nyelved %1 (%2)."
+
+#: core/main.qml:398
+msgctxt "main|"
+msgid "GCompris has been updated! Here are the new changes:<br/>"
+msgstr "A GCompris frissült. A változások a következők:<br/>"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

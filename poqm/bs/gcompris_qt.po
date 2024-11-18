@@ -4425,34 +4425,34 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr ""
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr ""
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr ""
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr ""
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 #, fuzzy
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Jeste i sigurni da želite da izađete?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 msgctxt "Chess|"
 msgid "Yes"
 msgstr ""
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 msgctxt "Chess|"
 msgid "No"
 msgstr ""
@@ -18761,106 +18761,106 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr ""
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
 msgstr ""
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "Yes"
 msgstr ""
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 msgctxt "Menu|"
 msgid "No"
 msgstr ""
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 #, fuzzy
 #| msgid "Login"
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Prijava"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 #, fuzzy
 #| msgid "Time, Geography, ..."
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Vrijeme, Geografija, ..."
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 #, fuzzy
 #| msgid "Numeration"
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Prebrojavanje"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 #, fuzzy
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Jednostavna slova"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 #, fuzzy
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Čitanje riječi"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 #, fuzzy
 #| msgid "Mathematical activities."
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Matematičke vježbe."
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -26778,25 +26778,25 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:263
+#: core/main.qml:235
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
 msgstr ""
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:266
+#: core/main.qml:238
 #, fuzzy
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Pronađi trokut"
 
-#: core/main.qml:267
+#: core/main.qml:239
 #, fuzzy
 #| msgctxt "DialogConfig|"
 #| msgid "Enable audio voices"
@@ -26804,66 +26804,66 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "Uključi zvuke i glasove"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr ""
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr ""
 
-#: core/main.qml:316
-#, fuzzy
-msgctxt "main|"
-msgid "Welcome to GCompris!"
-msgstr "O GKomprisu"
-
-#: core/main.qml:317
-msgctxt "main|"
-msgid "You are running GCompris for the first time."
-msgstr ""
-
-#: core/main.qml:318
-msgctxt "main|"
-msgid ""
-"You should verify that your application settings especially your language is "
-"set correctly. You can do this in the Configuration dialog."
-msgstr ""
-
-#: core/main.qml:320
-#, fuzzy
-msgctxt "main|"
-msgid "Have Fun!"
-msgstr "Braille zabava"
-
-#: core/main.qml:322
-#, qt-format
-msgctxt "main|"
-msgid "Your current language is %1 (%2)."
-msgstr ""
-
-#: core/main.qml:354
-msgctxt "main|"
-msgid "GCompris has been updated! Here are the new changes:<br/>"
-msgstr ""
-
-#: core/main.qml:382
+#: core/main.qml:274
 msgctxt "main|"
 msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
 
-#: core/main.qml:383
+#: core/main.qml:275
 msgctxt "main|"
 msgid "Apply"
 msgstr ""
 
-#: core/main.qml:384
+#: core/main.qml:276
 msgctxt "main|"
 msgid "Cancel"
+msgstr ""
+
+#: core/main.qml:360
+#, fuzzy
+msgctxt "main|"
+msgid "Welcome to GCompris!"
+msgstr "O GKomprisu"
+
+#: core/main.qml:361
+msgctxt "main|"
+msgid "You are running GCompris for the first time."
+msgstr ""
+
+#: core/main.qml:362
+msgctxt "main|"
+msgid ""
+"You should verify that your application settings especially your language is "
+"set correctly. You can do this in the Configuration dialog."
+msgstr ""
+
+#: core/main.qml:364
+#, fuzzy
+msgctxt "main|"
+msgid "Have Fun!"
+msgstr "Braille zabava"
+
+#: core/main.qml:366
+#, qt-format
+msgctxt "main|"
+msgid "Your current language is %1 (%2)."
+msgstr ""
+
+#: core/main.qml:398
+msgctxt "main|"
+msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr ""
 
 #: core/ReadyButton.qml:69

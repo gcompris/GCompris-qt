@@ -4646,37 +4646,37 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr "Ισόπαλο παιχνίδι"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr ""
 "Ο παίκτης με τα λευκά απειλεί\n"
 "το βασιλιά του αντιπάλου"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr ""
 "Ο παίκτης με τα μαύρα απειλεί\n"
 "το βασιλιά του αντιπάλου"
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "Μη έγκυρη κίνηση. Ο βασιλιάς σου μπορεί να βρίσκεται σε κίνδυνο"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "Θέλεις πραγματικά να αναιρέσεις όλες τις κινήσεις;"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 msgctxt "Chess|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 msgctxt "Chess|"
 msgid "No"
 msgstr "Όχι"
@@ -19692,7 +19692,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Όλα πεζά"
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -19702,77 +19702,77 @@ msgid ""
 "files now?"
 msgstr "Θέλεις να κατεβάσεις τα αντίστοιχα αρχεία ήχου τώρα;"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 msgctxt "Menu|"
 msgid "No"
 msgstr "Όχι"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Λογική"
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Καλές Τέχνες"
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Μουσική"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Πείραμα"
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr "Ιστορία"
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Γεωγραφία"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Αρίθμηση"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Πράξεις"
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Μετρήσεις"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Γράμματα"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Λέξεις"
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Λεξιλόγιο"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19781,12 +19781,12 @@ msgstr ""
 "Τοποθέτησε τις αγαπημένες σου δραστηριότητες εδώ, επιλέγοντας τον ήλιο που "
 "έχει καθεμιά στην επάνω δεξιά γωνία της εικόνας της."
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Αναζήτηση συγκεκριμένων δραστηριοτήτων"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Ρυθμίσεις δραστηριότητας"
@@ -28455,7 +28455,7 @@ msgstr ""
 "Καθόρισε σε ποιο επίπεδο θα ξεκινήσει η δραστηριότητα. Χρησιμοποιείται μόνο "
 "όταν έχει γίνει η επιλογή --launch."
 
-#: core/main.qml:263
+#: core/main.qml:235
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
@@ -28464,42 +28464,61 @@ msgstr ""
 "Θέλεις να γίνεται αυτόματα η λήψη ή η ενημέρωση των παρακάτω εξωτερικών "
 "πακέτων όταν ξεκινά το GCompris;"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr "Αρχεία ήχου για τη γλώσσα σου"
 
-#: core/main.qml:266
+#: core/main.qml:238
 msgctxt "main|"
 msgid "Full word image set"
 msgstr "Χρήση σειράς εικόνων με ολόκληρες λέξεις"
 
-#: core/main.qml:267
+#: core/main.qml:239
 msgctxt "main|"
 msgid "Background music"
 msgstr "Μουσική παρασκηνίου"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "Ναι"
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "Όχι"
 
-#: core/main.qml:316
+#: core/main.qml:274
+msgctxt "main|"
+msgid ""
+"Some activities have new dataset available. Do you want to reset their "
+"dataset selection?"
+msgstr ""
+"Για μερικές δραστηριότητες υπάρχουν διαθέσιμα νέα σύνολα δεδομένων. Θέλεις "
+"να επαναφέρεις την επιλογή του συνόλου δεδομένων τους;"
+
+#: core/main.qml:275
+msgctxt "main|"
+msgid "Apply"
+msgstr "Εφαρμογή"
+
+#: core/main.qml:276
+msgctxt "main|"
+msgid "Cancel"
+msgstr "Άκυρο"
+
+#: core/main.qml:360
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Καλωσήρθες στο GCompris!"
 
-#: core/main.qml:317
+#: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Εκτελείς το GCompris για πρώτη φορά."
 
-#: core/main.qml:318
+#: core/main.qml:362
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -28509,40 +28528,21 @@ msgstr ""
 "έχουν προσαρμοστεί σωστά στις δικές σου προτιμήσεις. Τέτοιες επιλογές "
 "μπορείς να κάνεις από τις Ρυθμίσεις."
 
-#: core/main.qml:320
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Να περάσεις καλά!"
 
-#: core/main.qml:322
+#: core/main.qml:366
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Η ενεργή γλώσσα είναι τα %1 (%2)."
 
-#: core/main.qml:354
+#: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "Το GCompris ενημερώθηκε. Εδώ είναι οι αλλαγές που έγιναν:<br/>"
-
-#: core/main.qml:382
-msgctxt "main|"
-msgid ""
-"Some activities have new dataset available. Do you want to reset their "
-"dataset selection?"
-msgstr ""
-"Για μερικές δραστηριότητες υπάρχουν διαθέσιμα νέα σύνολα δεδομένων. Θέλεις "
-"να επαναφέρεις την επιλογή του συνόλου δεδομένων τους;"
-
-#: core/main.qml:383
-msgctxt "main|"
-msgid "Apply"
-msgstr "Εφαρμογή"
-
-#: core/main.qml:384
-msgctxt "main|"
-msgid "Cancel"
-msgstr "Άκυρο"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

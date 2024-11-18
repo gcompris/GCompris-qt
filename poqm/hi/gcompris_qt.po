@@ -4703,23 +4703,23 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr "खेल बराबर"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr "सफेद की शह"
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr "काले की शह"
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr "अमान्य, आपके राजा को शह मिल सकती है"
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -4727,7 +4727,7 @@ msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "क्या आप वाकई में जीकॉम्प्रिस से बाहर जाना चाहते हैं?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -4735,7 +4735,7 @@ msgctxt "Chess|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -21169,7 +21169,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "सभी लोअरकेस"
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -21179,7 +21179,7 @@ msgid ""
 "files now?"
 msgstr "क्या आप अभी संबंधित ध्वनि फ़ाइलों को डाउनलोड करना चाहते हैं?"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "Yes"
@@ -21187,7 +21187,7 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 #, fuzzy
 #| msgctxt "balanceboxeditor|"
 #| msgid "No"
@@ -21195,37 +21195,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "नहीं"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numeration training"
@@ -21233,17 +21233,17 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "गणना प्रशिक्षण"
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Draw Letters"
@@ -21251,12 +21251,12 @@ msgctxt "Menu|"
 msgid "Letters"
 msgstr "अक्षर लिखें"
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Vocabulary and reading"
@@ -21264,7 +21264,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "शब्दावलि तथा पढ़ाई"
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -21277,12 +21277,12 @@ msgid ""
 msgstr ""
 "अपनी पसंदीदा गतिविधियों को यहां रखने के लिए गतिविधि के ऊपर दाईं ओर सूरज का चयन करें।"
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्ट गतिविधियों को खोजें"
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -30682,7 +30682,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:263
+#: core/main.qml:235
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Do you want to download them now?"
@@ -30692,12 +30692,12 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "क्या आप उन्हें अभी डाउनलोड करना चाहते हैं?"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:266
+#: core/main.qml:238
 #, fuzzy
 #| msgctxt "ConfigurationItem|"
 #| msgid "Use full word image set"
@@ -30705,7 +30705,7 @@ msgctxt "main|"
 msgid "Full word image set"
 msgstr "पूर्ण शब्द छवि सेट का उपयोग करें"
 
-#: core/main.qml:267
+#: core/main.qml:239
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -30713,27 +30713,47 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "पृष्ठभूमि"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "हाँ "
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "नहीं"
 
-#: core/main.qml:316
+#: core/main.qml:274
+msgctxt "main|"
+msgid ""
+"Some activities have new dataset available. Do you want to reset their "
+"dataset selection?"
+msgstr ""
+
+#: core/main.qml:275
+msgctxt "main|"
+msgid "Apply"
+msgstr ""
+
+#: core/main.qml:276
+#, fuzzy
+#| msgctxt "board5_0|"
+#| msgid "France"
+msgctxt "main|"
+msgid "Cancel"
+msgstr "फ्रांस"
+
+#: core/main.qml:360
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "जीकोंप्रिस में आपका स्वागत है!"
 
-#: core/main.qml:317
+#: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "आप पहली बार जीकॉम्प्रिस चला रहे हैं।"
 
-#: core/main.qml:318
+#: core/main.qml:362
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -30749,41 +30769,21 @@ msgstr ""
 "की गई है, और सभी भाषा विशिष्ट ध्वनि फ़ाइलें इंस्टॉल की गई हैं। आप वरीयता संवाद में ऐसा कर "
 "सकते हैं"
 
-#: core/main.qml:320
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "मज़ा लें!"
 
-#: core/main.qml:322
+#: core/main.qml:366
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "आपका वर्तमान भाषा %1 (%2) है।"
 
-#: core/main.qml:354
+#: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "जीकॉम्प्रिस को अद्यतन किया गया है! ये हैं नए परिवर्तन : <br/>"
-
-#: core/main.qml:382
-msgctxt "main|"
-msgid ""
-"Some activities have new dataset available. Do you want to reset their "
-"dataset selection?"
-msgstr ""
-
-#: core/main.qml:383
-msgctxt "main|"
-msgid "Apply"
-msgstr ""
-
-#: core/main.qml:384
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "France"
-msgctxt "main|"
-msgid "Cancel"
-msgstr "फ्रांस"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"

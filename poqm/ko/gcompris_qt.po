@@ -4224,23 +4224,23 @@ msgctxt "chess|"
 msgid "Drawn game"
 msgstr ""
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|black king is under attack"
 msgid "White checks"
 msgstr ""
 
-#: activities/chess/chess.js:136
+#: activities/chess/chess.js:141
 msgctxt "chess|white king is under attack"
 msgid "Black checks"
 msgstr ""
 
-#: activities/chess/chess.js:139
+#: activities/chess/chess.js:144
 msgctxt "chess|"
 msgid "Invalid, your king may be in check"
 msgstr ""
 
 #. Translators: undo all the moves in chess activity
-#: activities/chess/Chess.qml:137
+#: activities/chess/Chess.qml:140
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Do you really want to quit GCompris?"
@@ -4248,7 +4248,7 @@ msgctxt "Chess|"
 msgid "Do you really want to undo all the moves?"
 msgstr "GCompris를 종료하시겠습니까?"
 
-#: activities/chess/Chess.qml:138
+#: activities/chess/Chess.qml:141
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Yes"
@@ -4256,7 +4256,7 @@ msgctxt "Chess|"
 msgid "Yes"
 msgstr "예"
 
-#: activities/chess/Chess.qml:139
+#: activities/chess/Chess.qml:142
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "No"
@@ -18489,7 +18489,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr ""
 
-#: activities/menu/Menu.qml:93
+#: activities/menu/Menu.qml:91
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -18499,7 +18499,7 @@ msgid ""
 "files now?"
 msgstr "해당하는 음성 파일을 다운로드하시겠습니까?"
 
-#: activities/menu/Menu.qml:94
+#: activities/menu/Menu.qml:92
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Yes"
@@ -18507,7 +18507,7 @@ msgctxt "Menu|"
 msgid "Yes"
 msgstr "예"
 
-#: activities/menu/Menu.qml:101
+#: activities/menu/Menu.qml:99
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "No"
@@ -18515,37 +18515,37 @@ msgctxt "Menu|"
 msgid "No"
 msgstr "아니요"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Logic"
 msgstr ""
 
-#: activities/menu/Menu.qml:121
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr ""
 
-#: activities/menu/Menu.qml:122
+#: activities/menu/Menu.qml:120
 msgctxt "Menu|"
 msgid "Music"
 msgstr ""
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr ""
 
-#: activities/menu/Menu.qml:129
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "History"
 msgstr ""
 
-#: activities/menu/Menu.qml:130
+#: activities/menu/Menu.qml:128
 msgctxt "Menu|"
 msgid "Geography"
 msgstr ""
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:138
 #, fuzzy
 #| msgctxt "DialogHelp|"
 #| msgid "Section: "
@@ -18553,44 +18553,44 @@ msgctxt "Menu|"
 msgid "Numeration"
 msgstr "부분: "
 
-#: activities/menu/Menu.qml:141
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr ""
 
-#: activities/menu/Menu.qml:142
+#: activities/menu/Menu.qml:140
 msgctxt "Menu|"
 msgid "Measures"
 msgstr ""
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Letters"
 msgstr ""
 
-#: activities/menu/Menu.qml:153
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Words"
 msgstr ""
 
-#: activities/menu/Menu.qml:154
+#: activities/menu/Menu.qml:152
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr ""
 
-#: activities/menu/Menu.qml:372
+#: activities/menu/Menu.qml:370
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:792
+#: activities/menu/Menu.qml:790
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr ""
 
-#: activities/menu/Menu.qml:819
+#: activities/menu/Menu.qml:817
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""
@@ -26435,7 +26435,7 @@ msgid ""
 "is used."
 msgstr ""
 
-#: core/main.qml:263
+#: core/main.qml:235
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -26445,12 +26445,12 @@ msgid ""
 "assets when starting GCompris?"
 msgstr "해당하는 음성 파일을 다운로드하시겠습니까?"
 
-#: core/main.qml:265
+#: core/main.qml:237
 msgctxt "main|"
 msgid "Voices for your language"
 msgstr ""
 
-#: core/main.qml:266
+#: core/main.qml:238
 #, fuzzy
 #| msgctxt "core|"
 #| msgid "Download in progress"
@@ -26458,7 +26458,7 @@ msgctxt "main|"
 msgid "Full word image set"
 msgstr "다운로드 진행 중"
 
-#: core/main.qml:267
+#: core/main.qml:239
 #, fuzzy
 #| msgctxt "DownloadDialog|"
 #| msgid "Background"
@@ -26466,27 +26466,47 @@ msgctxt "main|"
 msgid "Background music"
 msgstr "백그라운드 작업"
 
-#: core/main.qml:273
+#: core/main.qml:245
 msgctxt "main|"
 msgid "Yes"
 msgstr "예"
 
-#: core/main.qml:280
+#: core/main.qml:252
 msgctxt "main|"
 msgid "No"
 msgstr "아니요"
 
-#: core/main.qml:316
+#: core/main.qml:274
+msgctxt "main|"
+msgid ""
+"Some activities have new dataset available. Do you want to reset their "
+"dataset selection?"
+msgstr ""
+
+#: core/main.qml:275
+msgctxt "main|"
+msgid "Apply"
+msgstr ""
+
+#: core/main.qml:276
+#, fuzzy
+#| msgctxt "board5_0|"
+#| msgid "France"
+msgctxt "main|"
+msgid "Cancel"
+msgstr "프랑스"
+
+#: core/main.qml:360
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "GCompris에 오신 것을 환영합니다!"
 
-#: core/main.qml:317
+#: core/main.qml:361
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "GCompris를 최초로 실행했습니다."
 
-#: core/main.qml:318
+#: core/main.qml:362
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -26501,41 +26521,21 @@ msgstr ""
 "사용할 언어 등 앱 설정이 올바른지 확인하고, 언어별 음성 파일이 설치되어 있는"
 "지 확인하십시오. 설정 대화 상자에서 확인할 수 있습니다."
 
-#: core/main.qml:320
+#: core/main.qml:364
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr ""
 
-#: core/main.qml:322
+#: core/main.qml:366
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "현재 언어는 %1(%2)입니다."
 
-#: core/main.qml:354
+#: core/main.qml:398
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr ""
-
-#: core/main.qml:382
-msgctxt "main|"
-msgid ""
-"Some activities have new dataset available. Do you want to reset their "
-"dataset selection?"
-msgstr ""
-
-#: core/main.qml:383
-msgctxt "main|"
-msgid "Apply"
-msgstr ""
-
-#: core/main.qml:384
-#, fuzzy
-#| msgctxt "board5_0|"
-#| msgid "France"
-msgctxt "main|"
-msgid "Cancel"
-msgstr "프랑스"
 
 #: core/ReadyButton.qml:69
 msgctxt "ReadyButton|"
