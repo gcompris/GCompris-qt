@@ -18,23 +18,12 @@ Rectangle {
 
     Image {
         id: logo
-        source: "qrc:/gcompris/src/core/resource/gcompris-logo-full.svg"
-        anchors.bottom: parent.bottom
-        anchors.right: parent.right
-        anchors.margins: 20
-        width: parent.width * 0.3
+        source: "qrc:/gcompris/src/core/resource/gcompris-splash.svg"
+        anchors.centerIn: parent
+        anchors.verticalCenterOffset: width * -0.2
+        width: Math.min(parent.width, parent.height) * 0.4
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
-    }
-
-    Image {
-        id: loadingImage
-        source: "qrc:/gcompris/src/core/resource/loading.svg"
-        anchors.centerIn: parent
-        sourceSize.width: 150
-        width: sourceSize.width
-        height: sourceSize.width
-        opacity: 0.8
     }
 
     Timer {
@@ -49,17 +38,17 @@ Rectangle {
 
     Row {
         id: loadingCircles
-        anchors.top: loadingImage.bottom
+        anchors.top: logo.bottom
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.topMargin: 50
-        spacing: 50
+        anchors.topMargin: spacing
+        spacing: logo.width * 0.1
         Repeater {
             model: 3
             Rectangle {
-                width: 75
+                width: loadingCircles.spacing
                 height: width
                 radius: width
-                color: fullyLoaded || currentCircle == index ? "#e77935" : "#80FFFFFF"
+                color: fullyLoaded || currentCircle == index ? "#FFF" : "#80FFFFFF"
                 border.color: "#80FFFFFF"
                 border.width: 3
             }

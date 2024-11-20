@@ -4955,7 +4955,7 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 SPDX-FileComment = "based on https://openclipart.org/detail/48937/Trophy"
 
 [[annotations]]
-path = ["src/core/resource/gcompris-icon.png", "src/core/resource/gcompris-logo-full.svg"]
+path = ["src/core/resource/gcompris-icon.png", "src/core/resource/gcompris-logo-full.svg", "src/core/resource/gcompris-splash.svg"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2016 Timothée Giet"
 SPDX-License-Identifier = "GPL-3.0-only"
