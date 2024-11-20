@@ -27,7 +27,6 @@ import QtQuick.Controls.Basic
  *
  * The list of available activities depends on the following settings:
  *
- * * ApplicationSettings.showLockedActivities
  * * ApplicationSettings.filterLevelMin
  * * ApplicationSettings.filterLevelMax
  *
