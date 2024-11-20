@@ -330,7 +330,8 @@ Window {
 
     Timer {
         id: load
-        triggeredOnStart: true
+        interval: 100
+        triggeredOnStart: false
         repeat: false
 
         onTriggered: {
