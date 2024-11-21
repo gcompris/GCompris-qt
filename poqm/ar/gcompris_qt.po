@@ -18482,7 +18482,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "كلّها بأحرف صغيرة"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
@@ -18490,77 +18490,77 @@ msgid ""
 msgstr ""
 "اخترت إعدادات محلية جديدة، هل تريد تنزيل ملفّات الأصوات المقابلة لها الآن؟"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "نعم"
 
-#: activities/menu/Menu.qml:99
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "لا"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "المنطق"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "فنون جميلة"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "الموسيقى"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "تجربة"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "التّأريخ"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "الجغرافيا"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "العد"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "الحِساب"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "القِياس"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "الحُروف"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "الكلمات"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "المعجم"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:369
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18568,12 +18568,12 @@ msgid ""
 msgstr ""
 "ضع أنشطتك المفضلة هنا، اختر النشاط ثم انقر على الشمس في أعلى يمين هذا النشاط."
 
-#: activities/menu/Menu.qml:790
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "ابحث عن أنشطة محددة"
 
-#: activities/menu/Menu.qml:817
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "إعدادات النشاط"
@@ -26678,17 +26678,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "ألغِ"
 
-#: core/main.qml:360
+#: core/main.qml:361
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "مرحبًا بك في «فهمت»!"
 
-#: core/main.qml:361
+#: core/main.qml:362
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "أنت تشغّل «فهمت» لأوّل مرّة."
 
-#: core/main.qml:362
+#: core/main.qml:363
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -26697,18 +26697,18 @@ msgstr ""
 "عليك التّحقّق من أنّ إعدادات التّطبيق وبخاصّة لغتك معدّة إعدادًا صحيحًا، يمكنك فعل "
 "ذلك من حواريّ الإعدادات."
 
-#: core/main.qml:364
+#: core/main.qml:365
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "استمتع!"
 
-#: core/main.qml:366
+#: core/main.qml:367
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "لغتك الحاليّة هي %1 ‏(%2)."
 
-#: core/main.qml:398
+#: core/main.qml:399
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "لقد تحدّث «فهمت»! هذه هي التّغييرات الجديدة:<br/>"

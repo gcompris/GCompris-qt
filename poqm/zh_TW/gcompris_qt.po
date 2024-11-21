@@ -18825,7 +18825,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "全部小寫"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -18835,89 +18835,89 @@ msgid ""
 "files now?"
 msgstr "您要現在下載相關的音效檔嗎？"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "是"
 
-#: activities/menu/Menu.qml:99
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "否"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "邏輯"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "精緻藝術"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "音樂"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "實驗"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "歷史"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "地理"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "計數"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "運算"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "測量"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "字母"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "單字"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "字彙"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:369
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr "只要選擇每個活動右上方的太陽，就可以把您最喜歡的活動放在這裡。"
 
-#: activities/menu/Menu.qml:790
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "搜尋特定的活動"
 
-#: activities/menu/Menu.qml:817
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "活動設定"
@@ -27110,17 +27110,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "取消"
 
-#: core/main.qml:360
+#: core/main.qml:361
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "歡迎使用 GCompris!"
 
-#: core/main.qml:361
+#: core/main.qml:362
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "您是第一次執行 GCompris。"
 
-#: core/main.qml:362
+#: core/main.qml:363
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -27135,18 +27135,18 @@ msgstr ""
 "您應該檢查您的應用程式設定，特別是您的語言是否正確，還有語言相關的聲音檔是否"
 "都已安裝。您可以在喜好設定對話框中進行設定。"
 
-#: core/main.qml:364
+#: core/main.qml:365
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "祝您玩得開心！"
 
-#: core/main.qml:366
+#: core/main.qml:367
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "您目前的語言為 %1 (%2)。"
 
-#: core/main.qml:398
+#: core/main.qml:399
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris 已經更新了。新的變更包括：<br/>"

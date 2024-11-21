@@ -18651,7 +18651,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "הכול באותיות קטנות"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 #, fuzzy
 #| msgctxt "Menu|"
 #| msgid ""
@@ -18665,77 +18665,77 @@ msgstr ""
 "נבחר מקום חדש. צריך לאתחל את GCompris כדי להשתמש בו.<br/> להוריד את קובצי "
 "הקול המתאימים עכשיו?"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "כן"
 
-#: activities/menu/Menu.qml:99
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "לא"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "היגיון"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "אומנות יפה"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "מוזיקה"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "ניסוי"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "היסטוריה"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "גאוגרפיה"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "ספירה"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "חשבון"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "מדידות"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "אותיות"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "מילים"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "אוצר מילים"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:369
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18744,12 +18744,12 @@ msgstr ""
 "אפשר להציב את הפעילויות האהובות ביותר כאן על ידי לחיצה על השמש בצד הימני "
 "העליון של הפעילות הזו."
 
-#: activities/menu/Menu.qml:790
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "לחפש פעילות מסוימת"
 
-#: activities/menu/Menu.qml:817
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "הגדרות הפעילות"
@@ -26955,17 +26955,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "ביטול"
 
-#: core/main.qml:360
+#: core/main.qml:361
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "ברוך בואך לג׳יקומפרי!"
 
-#: core/main.qml:361
+#: core/main.qml:362
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "זאת ההפעלה הראשונה של ג׳יקומפרי."
 
-#: core/main.qml:362
+#: core/main.qml:363
 #, fuzzy
 #| msgctxt "main|"
 #| msgid ""
@@ -26980,18 +26980,18 @@ msgstr ""
 "כדאי לוודא שהגדרות האפלקציות שלך ובמיוחד הגדרות השפה מכוונות נכון ושכל קולות "
 "השפה הייחודיים מותקנים. אפשר לעשות את זה בתפריט ההעדפות."
 
-#: core/main.qml:364
+#: core/main.qml:365
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "שיהיה רק כיף!"
 
-#: core/main.qml:366
+#: core/main.qml:367
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "השפה הנוכחית שלך היא %1 (%2)."
 
-#: core/main.qml:398
+#: core/main.qml:399
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "הידד, ג׳יקומפרי עודכן! אלו השינויים החדשים:<br/>"

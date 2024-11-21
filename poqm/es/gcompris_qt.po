@@ -19149,7 +19149,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Todo en minúsculas"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
@@ -19158,77 +19158,77 @@ msgstr ""
 "Has seleccionado una nueva configuración regional. ¿Quieres descargar los "
 "archivos de sonido correspondientes ahora?"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Sí"
 
-#: activities/menu/Menu.qml:99
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "No"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Lógica"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Bellas artes"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Música"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experimentos"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "Historia"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Geografía"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Numeración"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Aritmética"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Medidas"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Letras"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Palabras"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulario"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:369
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19237,12 +19237,12 @@ msgstr ""
 "Pon tus actividades preferidas aquí haciendo clic en el sol de la esquina "
 "superior derecha de cada actividad."
 
-#: activities/menu/Menu.qml:790
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Buscar actividades específicas"
 
-#: activities/menu/Menu.qml:817
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Preferencias de las actividades"
@@ -27637,17 +27637,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: core/main.qml:360
+#: core/main.qml:361
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "¡Bienvenido a GCompris!"
 
-#: core/main.qml:361
+#: core/main.qml:362
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Estás usando GCompris por primera vez."
 
-#: core/main.qml:362
+#: core/main.qml:363
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27656,18 +27656,18 @@ msgstr ""
 "Debes comprobar que la configuración de la aplicación sea correcta, "
 "especialmente el idioma. Puedes hacerlo en el diálogo de preferencias."
 
-#: core/main.qml:364
+#: core/main.qml:365
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "¡Diviértete!"
 
-#: core/main.qml:366
+#: core/main.qml:367
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "El idioma actual es %1 (%2)."
 
-#: core/main.qml:398
+#: core/main.qml:399
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "¡GCompris se ha actualizado! Estos son los nuevos cambios:<br/>"

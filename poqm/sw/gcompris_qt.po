@@ -19304,7 +19304,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "Herufi ndogo zote"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -19314,77 +19314,77 @@ msgid ""
 "files now?"
 msgstr "Je, ungependa kupakua faili za sauti zinazolingana sasa?"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "Ndiyo"
 
-#: activities/menu/Menu.qml:99
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "Hapana"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "Mantiki"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "Sanaa Nzuri"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "Muziki"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Jaribio"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "Historia"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "Jiografia"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "Kuhesabu"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "Hesabu"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "Vipimo"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "Barua"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "Maneno"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Msamiati"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:369
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19393,12 +19393,12 @@ msgstr ""
 "Weka shughuli zako uzipendazo hapa kwa kubofya jua kwenye sehemu ya juu "
 "kulia ya shughuli hiyo."
 
-#: activities/menu/Menu.qml:790
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Tafuta shughuli mahususi"
 
-#: activities/menu/Menu.qml:817
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Mipangilio ya Shughuli"
@@ -28013,17 +28013,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "Sitisha"
 
-#: core/main.qml:360
+#: core/main.qml:361
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "Karibu kwenye GCompris!"
 
-#: core/main.qml:361
+#: core/main.qml:362
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "Unaendesha GCompris kwa mara ya kwanza."
 
-#: core/main.qml:362
+#: core/main.qml:363
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -28032,18 +28032,18 @@ msgstr ""
 "Unapaswa kuthibitisha kuwa mipangilio yako ya programu haswa lugha yako "
 "imewekwa ipasavyo. Unaweza kufanya hivyo kwenye kidirisha cha Usanidi."
 
-#: core/main.qml:364
+#: core/main.qml:365
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "Furahia!"
 
-#: core/main.qml:366
+#: core/main.qml:367
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "Lugha yako ya sasa ni %1 (%2)."
 
-#: core/main.qml:398
+#: core/main.qml:399
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "GCompris imesasishwa! Hapa kuna mabadiliko mapya:<br/>"

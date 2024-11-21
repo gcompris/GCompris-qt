@@ -19123,7 +19123,7 @@ msgctxt "ConfigurationItem|"
 msgid "All lowercase"
 msgstr "ചെറിയക്ഷരം"
 
-#: activities/menu/Menu.qml:91
+#: activities/menu/Menu.qml:90
 #, fuzzy
 #| msgctxt "main|"
 #| msgid "Do you want to download the corresponding sound files now?"
@@ -19133,77 +19133,77 @@ msgid ""
 "files now?"
 msgstr "അനുയോജ്യമായ ശബ്ദ ഫയലുകൾ ഇപ്പോൾ ഡൗൺലോഡ് ചെയ്യണമോ?"
 
-#: activities/menu/Menu.qml:92
+#: activities/menu/Menu.qml:91
 msgctxt "Menu|"
 msgid "Yes"
 msgstr "വേണം"
 
-#: activities/menu/Menu.qml:99
+#: activities/menu/Menu.qml:98
 msgctxt "Menu|"
 msgid "No"
 msgstr "വേണ്ട"
 
-#: activities/menu/Menu.qml:118
+#: activities/menu/Menu.qml:117
 msgctxt "Menu|"
 msgid "Logic"
 msgstr "യുക്തി"
 
-#: activities/menu/Menu.qml:119
+#: activities/menu/Menu.qml:118
 msgctxt "Menu|"
 msgid "Fine Arts"
 msgstr "ലളിത കല"
 
-#: activities/menu/Menu.qml:120
+#: activities/menu/Menu.qml:119
 msgctxt "Menu|"
 msgid "Music"
 msgstr "സംഗീതം"
 
-#: activities/menu/Menu.qml:126
+#: activities/menu/Menu.qml:125
 msgctxt "Menu|"
 msgid "Experiment"
 msgstr "പരീക്ഷണം"
 
-#: activities/menu/Menu.qml:127
+#: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
 msgstr "ചരിത്രം"
 
-#: activities/menu/Menu.qml:128
+#: activities/menu/Menu.qml:127
 msgctxt "Menu|"
 msgid "Geography"
 msgstr "ഭൂമിശാസ്ത്രം"
 
-#: activities/menu/Menu.qml:138
+#: activities/menu/Menu.qml:137
 msgctxt "Menu|"
 msgid "Numeration"
 msgstr "എണ്ണൽ"
 
-#: activities/menu/Menu.qml:139
+#: activities/menu/Menu.qml:138
 msgctxt "Menu|"
 msgid "Arithmetic"
 msgstr "കണക്ക്"
 
-#: activities/menu/Menu.qml:140
+#: activities/menu/Menu.qml:139
 msgctxt "Menu|"
 msgid "Measures"
 msgstr "അളവുകൾ"
 
-#: activities/menu/Menu.qml:150
+#: activities/menu/Menu.qml:149
 msgctxt "Menu|"
 msgid "Letters"
 msgstr "അക്ഷരങ്ങൾ"
 
-#: activities/menu/Menu.qml:151
+#: activities/menu/Menu.qml:150
 msgctxt "Menu|"
 msgid "Words"
 msgstr "വാക്കുകൾ"
 
-#: activities/menu/Menu.qml:152
+#: activities/menu/Menu.qml:151
 msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "പദസമ്പത്ത്"
 
-#: activities/menu/Menu.qml:370
+#: activities/menu/Menu.qml:369
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19212,12 +19212,12 @@ msgstr ""
 "നിങ്ങൾക്കു പ്രിയപ്പെട്ട പ്രവർത്തനങ്ങൾ ഇവിടെ ചേർക്കാൻ ആ പ്രവർത്തനത്തിന്റെ വലത്ത് മുകളിലായുള്ള "
 "സൂര്യനിൽ ക്ലിക്കു ചെയ്യൂ."
 
-#: activities/menu/Menu.qml:790
+#: activities/menu/Menu.qml:789
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "പ്രവർത്തനങ്ങൾ തിരയുക"
 
-#: activities/menu/Menu.qml:817
+#: activities/menu/Menu.qml:816
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "പ്രവർത്തന ക്രമീകരണം"
@@ -27693,17 +27693,17 @@ msgctxt "main|"
 msgid "Cancel"
 msgstr "റദ്ദാക്കുക"
 
-#: core/main.qml:360
+#: core/main.qml:361
 msgctxt "main|"
 msgid "Welcome to GCompris!"
 msgstr "ജികോംപ്രിയിലേക്കു സ്വാഗതം!"
 
-#: core/main.qml:361
+#: core/main.qml:362
 msgctxt "main|"
 msgid "You are running GCompris for the first time."
 msgstr "താങ്കൾ ആദ്യമായാണ് ജികോംപ്രി പ്രവർത്തിപ്പിക്കുന്നത്."
 
-#: core/main.qml:362
+#: core/main.qml:363
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
@@ -27712,18 +27712,18 @@ msgstr ""
 "നിങ്ങളുടെ ആപ്ലിക്കേഷൻ സെറ്റിങ്സ് എല്ലാം ശരിയാണോ എന്ന് പരിശോധിക്കുക, പ്രത്യേകിച്ച് തിരഞ്ഞെടുത്ത "
 "ഭാഷ. ഇത് കോൺഫിഗറേഷൻ ഡയലോഗിൽ ചെയ്യാൻ സാധിക്കും."
 
-#: core/main.qml:364
+#: core/main.qml:365
 msgctxt "main|"
 msgid "Have Fun!"
 msgstr "ആസ്വദിക്കൂ!"
 
-#: core/main.qml:366
+#: core/main.qml:367
 #, qt-format
 msgctxt "main|"
 msgid "Your current language is %1 (%2)."
 msgstr "നിങ്ങളുടെ ഇപ്പോഴത്തെ ഭാഷ %1 (%2) ആണ്."
 
-#: core/main.qml:398
+#: core/main.qml:399
 msgctxt "main|"
 msgid "GCompris has been updated! Here are the new changes:<br/>"
 msgstr "ജികോംപ്രി അപ്‍ഡേറ്റ് ചെയ്യപ്പെട്ടു! ഇതൊക്കെയാണ് പുതിയ മാറ്റങ്ങൾ:<br/>"
