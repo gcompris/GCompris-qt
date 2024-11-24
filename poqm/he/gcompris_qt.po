@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-10-19 08:47+0300\n"
+"PO-Revision-Date: 2024-11-23 15:34+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -22263,18 +22263,13 @@ msgstr ""
 "אותיות מהאלף-בית הלטיני."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
-"ללמוד את החוקים לקרוא ספרות רומיות ולהתאמן בהמרת מספים לצורה של ספרות "
-"ערביות. ללחוץ על כפתור ה OK  כדי לאשר את התשובה."
+"מידע על הכללים לקריאת ספרות רומיות והמרתן למספרים ערביים (כמו שלנו). יש "
+"ללחוץ על אישור כדי לאמת את התשובה שלך."
 
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -23475,12 +23470,9 @@ msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "אכול את כל המשבצות שעליהן כפולות של המספר הנתון."
+msgstr "מידע נוסף על כלי ציור דיגיטליים"
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
@@ -23489,20 +23481,14 @@ msgid ""
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "שליטה באמצעות המקשים:"
+msgstr "<b>פקדי מקלדת:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "קטרל+ז: לבטל פעולה אחרונה"
+msgstr "Ctrl + Z: הסגת הפעולה האחרונה"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -23510,12 +23496,9 @@ msgid "Ctrl + Y: redo last action"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "קטרל+ש: לבחור את כל הכתוב"
+msgstr "Ctrl + S: שמירת התמונה"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -23650,7 +23633,7 @@ msgstr ""
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "כלי מדרגים"
 
 #: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
@@ -23675,17 +23658,17 @@ msgstr "לא"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "כלי חותמות"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "כלי טקסט"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "נא להקליד כאן את הטקסט שלך"
 
 #: activities/sketch/ToolsPanel.qml:253
 msgctxt "ToolsPanel|"
@@ -23695,17 +23678,17 @@ msgstr "כלים"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "איפוס הגדרות כלי"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "אטימות"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "גודל"
 
 #: activities/sketch/ToolsPanel.qml:526
 msgctxt "ToolsPanel|"
@@ -23715,7 +23698,7 @@ msgstr "מהירות"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "צפיפות"
 
 #: activities/sketch/ToolsPanel.qml:566
 msgctxt "ToolsPanel|"
@@ -23725,7 +23708,7 @@ msgstr "גודל נקודות"
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "החלקה"
 
 #: activities/sketch/ToolsPanel.qml:646
 msgctxt "ToolsPanel|"
