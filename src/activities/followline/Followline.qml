@@ -150,8 +150,46 @@ ActivityBase {
             anchors.fill: parent
             enabled: !ApplicationInfo.isMobile
             hoverEnabled: true
-            onPositionChanged: items.currentLock > 0 && !items.inputBlocked ?
-                                   lineBrokenTimer.start() : false
+            onPositionChanged: {
+                Activity.movedOut = true;
+                if(items.currentLock > 0 && !items.inputBlocked) {
+                    lineBrokenTimer.start();
+                }
+            }
+        }
+
+        MultiPointTouchArea {
+            anchors.fill: parent
+            maximumTouchPoints: 1
+            enabled: ApplicationInfo.isMobile && !items.inputBlocked
+            onTouchUpdated: (touchPoints) => {
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i]
+                    var part = lineArea.childAt(touch.x - lineArea.x, touch.y - lineArea.y)
+                    if(part && part.isPart) {
+                        if(items.currentLock <= part.index && !Activity.movedOut) {
+                            items.currentLock = part.index
+                            if(items.currentLock >= items.lastLock) {
+                                background.win()
+                                waterSound.play()
+                            } else {
+                                Activity.playAudioFx()
+                            }
+                        } else if(items.currentLock >= part.index && Activity.movedOut) {
+                            lineBrokenTimer.stop();
+                            Activity.movedOut = false;
+                        }
+                    } else {
+                        lineBrokenTimer.start()
+                    }
+                }
+            }
+            onReleased: {
+                Activity.movedOut = true;
+                if(!items.inputBlocked) {
+                    lineBrokenTimer.start();
+                }
+            }
         }
 
         Item {
@@ -161,34 +199,14 @@ ActivityBase {
             anchors.bottom: fire.top
             anchors.right: fire.left
 
-            MultiPointTouchArea {
-                anchors.fill: parent
-                maximumTouchPoints: 1
-                enabled: ApplicationInfo.isMobile && !items.inputBlocked
-                z: 1000
-                onTouchUpdated: (touchPoints) => {
-                    for(var i in touchPoints) {
-                        var touch = touchPoints[i]
-                        var part = lineArea.childAt(touch.x, touch.y)
-                        if(part && part.isPart) {
-                            if(items.currentLock <= part.index && !Activity.movedOut) {
-                                items.currentLock = part.index
-                                if(items.currentLock >= items.lastLock) {
-                                    background.win()
-                                    waterSound.play()
-                                } else {
-                                    Activity.playAudioFx()
-                                }
-                            } else if(items.currentLock >= part.index && Activity.movedOut) {
-                                lineBrokenTimer.stop();
-                                Activity.movedOut = false;
-                            }
-                        } else {
-                            lineBrokenTimer.start()
-                        }
-                    }
-                }
-                onReleased: if(!items.inputBlocked) lineBrokenTimer.start()
+            Rectangle {
+                id: debugRect
+                color: "#80FF00FF"
+                width: 10
+                height: 10
+                radius: 5
+                x: 0
+                y:0
             }
         }
 

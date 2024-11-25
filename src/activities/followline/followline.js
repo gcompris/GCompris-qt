@@ -125,7 +125,6 @@ function createLinePart(index, x, y, width, height, rotation) {
                     "height": height,
                     "rotation": rotation,
                     "z": index,
-                    "items": items,
                     "index": index
                 });
 
