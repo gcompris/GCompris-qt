@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-11-23 15:34+0200\n"
+"PO-Revision-Date: 2024-11-23 17:08+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -23503,12 +23503,12 @@ msgstr "Ctrl + S: שמירת התמונה"
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: פתיחת תמונה"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N,‏ Delete או Backspace: יצירת תמונה חדשה"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -23533,12 +23533,12 @@ msgstr "תמונת רקע"
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "כלי מחיקה"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "כלי ציור"
 
 #: activities/sketch/ColorSelector.qml:75
 msgctxt "ColorSelector|"
@@ -23548,7 +23548,7 @@ msgstr "צבעי לוח צבעים"
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "איפוס לוח צבעים"
 
 #: activities/sketch/ColorSelector.qml:210
 msgctxt "ColorSelector|"
@@ -23577,7 +23577,7 @@ msgstr "בהירות"
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "איפוס צבע"
 
 #: activities/sketch/ColorsPanel.qml:157
 msgctxt "ColorsPanel|"
@@ -23618,17 +23618,17 @@ msgstr "יצירת תמונה חדשה"
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "פינות מעוגלות"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "כלי גאומטריה"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "גודל עיגול פנימי"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
@@ -25375,7 +25375,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
-msgstr ""
+msgstr "פיתוח מיומנויות חשיבה, הבדלה בין צבעים וזיכרון חזותי."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -25435,7 +25435,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
-msgstr ""
+msgstr "פיתוח מיומנויות ראייה מרחבית, זיכרון חזותי ושחזור דגמים."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
@@ -26860,7 +26860,7 @@ msgstr ""
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
-msgstr ""
+msgstr "נא לבחור מנוע עיבוד (opengl, תוכנה, Direct3D11,‏ Direct3D12, חומרה)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
@@ -26878,6 +26878,8 @@ msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
 "a single value (2), or a range (3-6). Values must be between 1 and 6."
 msgstr ""
+"נא לציין את טווח קושי הפעילות להצגה למפגש. ערך יחיד (2) או טווח (3‏-6). "
+"הערכים חייבים להיות בין 1 ל־6."
 
 #: core/main.cpp:126
 msgctxt "QObject|"
