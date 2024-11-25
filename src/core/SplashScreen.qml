@@ -54,4 +54,14 @@ Rectangle {
             }
         }
     }
+
+    Image {
+        id: kdeLogo
+        source: "qrc:/gcompris/src/core/resource/kde-logo-white.svg"
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: loadingCircles.spacing
+        height: anchors.margins
+        fillMode: Image.PreserveAspectFit
+    }
 }

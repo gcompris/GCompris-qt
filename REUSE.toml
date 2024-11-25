@@ -4935,6 +4935,12 @@ SPDX-FileCopyrightText = "2014 Holger Kaelberer"
 SPDX-License-Identifier = "GPL-3.0-only"
 
 [[annotations]]
+path = "src/core/resource/kde-logo-white.svg"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 KDE"
+SPDX-License-Identifier = "LGPL-2.1-or-later"
+
+[[annotations]]
 path = "src/core/resource/star.png"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Bruno Coudoin"
