@@ -163,6 +163,7 @@ if(BUILD_STANDALONE)
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
+    QtQuick/Shapes/${_lib_prefix}qmlshapesplugin
     QtMultimedia/${_lib_prefix}declarative_multimedia
     QtSensors/${_lib_prefix}declarative_sensors
     QtCharts/${_lib_prefix}qtchartsqml2)
