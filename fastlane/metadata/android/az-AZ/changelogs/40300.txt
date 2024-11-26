@@ -1,0 +1,2 @@
+- Rahat istifadəsi üçün bir çox yaxşılaşdırmalar
+- Çoxsaylı xəta düzəlişləri

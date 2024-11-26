@@ -1,0 +1,2 @@
+- Banyak perbaikan pada fungsi
+- Banyak perbaikan kutu

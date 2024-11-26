@@ -1,0 +1,2 @@
+- Mnoga poboljšanja upotrebljivosti
+- Mnogi ispravci grešaka
