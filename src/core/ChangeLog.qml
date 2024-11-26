@@ -26,6 +26,11 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 40300, "content": [
+                qsTr("Many usability improvements"),
+                qsTr("Many bug fixes")
+                ]
+            },
             { "versionCode": 40200, "content": [
                 qsTr("Translation added for Latvian"),
                 qsTr("Many usability improvements"),
