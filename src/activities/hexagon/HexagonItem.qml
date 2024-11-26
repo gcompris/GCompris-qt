@@ -36,35 +36,34 @@ Item {
     Image {
         id: strawberry
         anchors.fill: parent
+        z: 1000
         opacity: 0
         onSourceChanged: opacity = 1
-        Behavior on opacity { PropertyAnimation { duration: 2000; easing.type: Easing.OutQuad } }
+        Behavior on opacity { PropertyAnimation { duration: 500; easing.type: Easing.OutQuad } }
     }
 
-    Shape {
-        id: cellFill
-        anchors.fill: border
-        opacity: 0.65
-        onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
-        Behavior on opacity { PropertyAnimation { duration: 500 } }
-        ShapePath {
-            id: cellColor
-            strokeWidth: 0
-            startX: cellFill.width * 0.02; startY: cellFill.height * 0.25
-            PathLine { x: cellFill.width * 0.51 ; y: cellFill.height * 0.02 }
-            PathLine { x: cellFill.width * 0.98 ; y: cellFill.height * 0.22 }
-            PathLine { x: cellFill.width * 0.98 ; y: cellFill.height * 0.77 }
-            PathLine { x: cellFill.width * 0.51 ; y: cellFill.height * 0.97 }
-            PathLine { x: cellFill.width * 0.02 ; y: cellFill.height * 0.75 }
-            PathLine { x: cellFill.width * 0.02 ; y: cellFill.height * 0.25 }
-        }
+    ShapePath {
+        id: cellColor
+        strokeWidth: 0
+        strokeColor: "transparent"
+        Behavior on fillColor { PropertyAnimation { duration: 100 } }
+        startX: hexagon.x + border.width * 0.02; startY: hexagon.y + border.height * 0.25
+        PathLine { x: hexagon.x + border.width * 0.51 ; y: hexagon.y + border.height * 0.02 }
+        PathLine { x: hexagon.x + border.width * 0.99 ; y: hexagon.y + border.height * 0.22 }
+        PathLine { x: hexagon.x + border.width * 0.99 ; y: hexagon.y + border.height * 0.77 }
+        PathLine { x: hexagon.x + border.width * 0.51 ; y: hexagon.y + border.height * 0.97 }
+        PathLine { x: hexagon.x + border.width * 0.02 ; y: hexagon.y + border.height * 0.75 }
+        PathLine { x: hexagon.x + border.width * 0.02 ; y: hexagon.y + border.height * 0.25 }
+        Component.onCompleted: items.shapeData.push(cellColor)
     }
 
     Image {
         id: border
         anchors.fill: parent
+        sourceSize.width: width
         source: Activity.url + "hexagon_border.svg"
-        Behavior on opacity { PropertyAnimation { duration: 500 } }
+        Behavior on opacity { PropertyAnimation { duration: 100 } }
+        onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
     }
 
     // Create a particle only for the strawberry
@@ -86,8 +85,11 @@ Item {
 
     property bool isTouched: false
     function touched() {
-        if(hasStrawberry && !isTouched) {
-            cellFill.opacity = 0
+        if(isTouched) {
+            return
+        } else if(hasStrawberry) {
+            items.inputLocked = true
+            hexagon.color = "transparent"
             border.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svg"
