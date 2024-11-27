@@ -12,6 +12,7 @@
  "application-binary": "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@/libGCompris.so",
  "android-package-source-directory": "@PACKAGE_SOURCE_ANDROID@/",
  "android-package": "net.gcompris",
+ "qml-root-path": "@CMAKE_SOURCE_DIR@/src",
  "android-extra-plugins": "@CMAKE_BINARY_DIR@/lib/qml"
  @STDCPP_PATH@
 }
