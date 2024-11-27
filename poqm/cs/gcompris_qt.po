@@ -25867,38 +25867,38 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napiš celé padající slovo dřív, než spadnou na zem."
 
-#: core/ChangeLog.qml:30
-msgctxt "ChangeLog|"
-msgid "Translation added for Latvian"
-msgstr "Přidán překlad pro Lotyštinu"
-
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
-#: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:41
+#: core/ChangeLog.qml:47 core/ChangeLog.qml:76 core/ChangeLog.qml:111
+#: core/ChangeLog.qml:114 core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Mnoho vylepšení použitelnosti"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:37 core/ChangeLog.qml:44
-#: core/ChangeLog.qml:53 core/ChangeLog.qml:60 core/ChangeLog.qml:73
-#: core/ChangeLog.qml:111 core/ChangeLog.qml:117
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:37 core/ChangeLog.qml:42
+#: core/ChangeLog.qml:49 core/ChangeLog.qml:58 core/ChangeLog.qml:65
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:116 core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Opravena spousta chyb"
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:35
+msgctxt "ChangeLog|"
+msgid "Translation added for Latvian"
+msgstr "Přidán překlad pro Lotyštinu"
+
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Přidány překlady pro bulharštinu, galícijštinu a svahilštinu"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:52 core/ChangeLog.qml:59
-#: core/ChangeLog.qml:72 core/ChangeLog.qml:90 core/ChangeLog.qml:105
-#: core/ChangeLog.qml:110 core/ChangeLog.qml:116
+#: core/ChangeLog.qml:48 core/ChangeLog.qml:57 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:77 core/ChangeLog.qml:95 core/ChangeLog.qml:110
+#: core/ChangeLog.qml:115 core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Spousta nových obrázků"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -25908,17 +25908,17 @@ msgstr ""
 "start-level číslo_úrovně). Použití je pro spouštění s parametrem --launch "
 "název_aktivity"
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Přidány překlady pro arabštinu a esperanto"
 
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:58
+#: core/ChangeLog.qml:56 core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Spousta aktualizací překladů"
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:62
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -25927,22 +25927,22 @@ msgstr ""
 "Byla přidána nová volba příkazové řádky (--difficulty {hodnota|minimum-"
 "maximum}), která spustí GCompris na zadané obtížnosti"
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Oprava chyby v aktivitě comparator"
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:73
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Do aktivity zeměpis přibyla mapa Španělska"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Přidány hlasy pro ukrajinštinu"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -25951,7 +25951,7 @@ msgstr ""
 "Nové volby příkazového řádku pro výpis všech aktivit a spuštění některé "
 "vybrané"
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -25959,65 +25959,65 @@ msgid ""
 msgstr ""
 "Zmenšení velikosti balíčků pro všechny platformy a externí sady obrázků slov"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Vylepšení kvality obrázky v několika aktivitách"
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Oprava některých změn v aktivitách renewable_energy/watercycle pro některé "
 "platformy"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "Oprava mrtvých kláves ignorovaných na Linuxu při aktivitách psaní"
 
-#: core/ChangeLog.qml:81
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr "Oprava resetování úrovně při ruční změně úrovně v Logických asociacích"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
 msgstr "Oprava aktivit Abeceda, Sudá a lichá čísla a Pořadí čísel "
 
-#: core/ChangeLog.qml:89 core/ChangeLog.qml:97
+#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Oprava několika chyb"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Aktualizován překlad pro ruštinu"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Nové hlasy pro novou norštinu"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Přidány překlady pro bretonštinu, češtinu a makedonštinu"
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Přidán překlad pro ázerbájdžánštinu"
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nové mapy a aktualizace map pro zeměpisné aktivity"
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26026,7 +26026,7 @@ msgstr ""
 "Nové datové sady obsahující smyčkové operace pro programovací bludiště, "
 "umožnění překladu výukových obrázků"
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -26034,57 +26034,57 @@ msgid ""
 msgstr ""
 "Přidání úrovně pro výuku napěťových smyček v aktivitě analogová elektřina"
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Nová nabídka nastavení aktivity s výběrem datové sady"
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nové podkategorie pro uspořádání aktivit"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Přidán překlad pro makedonštinu"
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nové aktivity Programovací bludiště a Dětský tangram"
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nová hudba na pozadí a nastavení hlasitosti."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Nové nastavení rychlosti v několika aktivitách."
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nová volba v šachách pro zobrazení zabraných figurek."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nové obrázky ve hrách Barvy, Pokročilé barvy a Míření na cíl."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nové hlasy pro americkou angličtinu."
 
-#: core/ChangeLog.qml:128 core/ChangeLog.qml:136
+#: core/ChangeLog.qml:133 core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mnoho malých oprav a vylepšení."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26093,17 +26093,17 @@ msgstr ""
 "Aktualizovány překlady pro vícero jazyků (bretonština, brazilská "
 "portugalština, finština, ...)."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Přidána ruská datová sada pro aktivitu Klikni na písmeno."
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Aktivita lang nyní dostupná v nizozemštině."
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26112,18 +26112,18 @@ msgstr ""
 "Sloučení norských krajů Nord-Trøndelag a Sør-Trøndelag v zeměpisné aktivitě "
 "do Trøndelag."
 
-#: core/ChangeLog.qml:133
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Oprava v aktivitách s braillovým písmem, kde buňky začínají 1 na místo 0."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Přidány překlady pro baskičtinu, maďarštinu a malajštinu."
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26132,47 +26132,47 @@ msgstr ""
 "Načítání/ukládání tvorby (Dětský textový procesor, Naklápěcí labyrint a "
 "Skládej na pianu)."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Přidán překlad pro skotskou gaelštinu."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Do nastavení přibyla stránka s licencí."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Vícero změn v rozvržení pro vylepšenou ergonomii."
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Aktivita Lang je nyní dostupná v polštině, švédštině a ukrajinštině."
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Funkce vyhledávání."
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Seznam změn"
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Spousta malých oprav."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Aktivita Lang je nyní dostupná ve francouzštině."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26181,7 +26181,7 @@ msgstr ""
 "Přidání načítacího překryvu, aby uživatel věděl, že se dějí nějaké akce "
 "(například načítání aktivity) a že to může několik sekund zabrat."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26191,12 +26191,12 @@ msgstr ""
 "finštinu (92% přeloženo), ruština (98% přeložena), slovenština (92% "
 "přeložena), turečtina."
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Přidány překlady pro: slovinštinu, němčinu, galicijštinu."
 
-#: core/ChangeLog.qml:197
+#: core/ChangeLog.qml:202
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"

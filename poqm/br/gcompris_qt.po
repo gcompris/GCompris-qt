@@ -26514,38 +26514,38 @@ msgstr ""
 "Bizskriv ar ger klok e-pad m'emañ o kouezhañ a-raok ma vo tizhet al leur "
 "gantañ."
 
-#: core/ChangeLog.qml:30
-msgctxt "ChangeLog|"
-msgid "Translation added for Latvian"
-msgstr "Ouzhpennet eo bet an droidigezh evit al Latveg"
-
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:36 core/ChangeLog.qml:42
-#: core/ChangeLog.qml:71 core/ChangeLog.qml:106 core/ChangeLog.qml:109
-#: core/ChangeLog.qml:115
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:41
+#: core/ChangeLog.qml:47 core/ChangeLog.qml:76 core/ChangeLog.qml:111
+#: core/ChangeLog.qml:114 core/ChangeLog.qml:120
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Meur a wellaennig-implij"
 
-#: core/ChangeLog.qml:32 core/ChangeLog.qml:37 core/ChangeLog.qml:44
-#: core/ChangeLog.qml:53 core/ChangeLog.qml:60 core/ChangeLog.qml:73
-#: core/ChangeLog.qml:111 core/ChangeLog.qml:117
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:37 core/ChangeLog.qml:42
+#: core/ChangeLog.qml:49 core/ChangeLog.qml:58 core/ChangeLog.qml:65
+#: core/ChangeLog.qml:78 core/ChangeLog.qml:116 core/ChangeLog.qml:122
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Meur a fazi reizhet"
 
-#: core/ChangeLog.qml:41
+#: core/ChangeLog.qml:35
+msgctxt "ChangeLog|"
+msgid "Translation added for Latvian"
+msgstr "Ouzhpennet eo bet an droidigezh evit al Latveg"
+
+#: core/ChangeLog.qml:46
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Troidigezhioù ouzhpennet evit ar Bulgareg, ar Galizeg hag ar Swahili"
 
-#: core/ChangeLog.qml:43 core/ChangeLog.qml:52 core/ChangeLog.qml:59
-#: core/ChangeLog.qml:72 core/ChangeLog.qml:90 core/ChangeLog.qml:105
-#: core/ChangeLog.qml:110 core/ChangeLog.qml:116
+#: core/ChangeLog.qml:48 core/ChangeLog.qml:57 core/ChangeLog.qml:64
+#: core/ChangeLog.qml:77 core/ChangeLog.qml:95 core/ChangeLog.qml:110
+#: core/ChangeLog.qml:115 core/ChangeLog.qml:121
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Meur a skeudenn nevez"
 
-#: core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -26554,17 +26554,17 @@ msgstr ""
 "Urzh-linenn nevez-ouzhpennet (--start-level live, to be used with --launch "
 "oberezh) evit kregiñ GCompris gant ul live diaester resis."
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Ouzhpennet eo bet an troidigezhioù evit an Arabeg hag an Esperanto"
 
-#: core/ChangeLog.qml:51 core/ChangeLog.qml:58
+#: core/ChangeLog.qml:56 core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Hizivaet eo bet an droidigezh evit meur a yezh."
 
-#: core/ChangeLog.qml:57
+#: core/ChangeLog.qml:62
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -26573,22 +26573,22 @@ msgstr ""
 "Urzh-linenn nevez-ouzhpennet (--difficulty {value|min-max}) evit kregiñ "
 "GCompris gant ul live diaester resis."
 
-#: core/ChangeLog.qml:64
+#: core/ChangeLog.qml:69
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Kempenn en obererezh ar c'heñverier"
 
-#: core/ChangeLog.qml:68
+#: core/ChangeLog.qml:73
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Kartenn bro Spagn ouzhpennet evit an obererezhioù geografiezh"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Mouezhioù ouzhpennet evit an Ukraineg"
 
-#: core/ChangeLog.qml:70
+#: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -26597,7 +26597,7 @@ msgstr ""
 "Urzh-dibab nevez evit renabliñ an holl obererezhioù ha kregiñ gant unan "
 "resis."
 
-#: core/ChangeLog.qml:77
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -26606,30 +26606,30 @@ msgstr ""
 "Bihanaat ment ar pakadoù evit an holl savennoù hag ar restr diavaez evit "
 "skeudennoù ar gerioù"
 
-#: core/ChangeLog.qml:78
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Gwellaat kalite ar skeudennoù e-barzh meur a obererezh "
 
-#: core/ChangeLog.qml:79
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Mennañ un nebeud tremenadurioù en obererezhioù Gremm adnevesadus / Kelc'hiad "
 "an dour evit savennoù 'zo"
 
-#: core/ChangeLog.qml:80
+#: core/ChangeLog.qml:85
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Mennañ ar stokelloù dianavezet gant Linux evit an obererezhioù bizskrivañ"
 
-#: core/ChangeLog.qml:81
+#: core/ChangeLog.qml:86
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr "Mennañ live an adkregiñ pa cheñcher live end-eeun e Kevrediñ kempoell"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:90
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -26637,39 +26637,39 @@ msgstr ""
 "Mennañ Heuliad al lizherenneg, Niveroù dibar ha par ha Niveroù en "
 "obererezhioù-urzhiañ"
 
-#: core/ChangeLog.qml:89 core/ChangeLog.qml:97
+#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Meur a fazi reizhet"
 
-#: core/ChangeLog.qml:91
+#: core/ChangeLog.qml:96
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Hizivaet eo bet an droidigezh evit ar rusianeg"
 
-#: core/ChangeLog.qml:92
+#: core/ChangeLog.qml:97
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Mouezhioù nevez evit norvegeg Ninorsk"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:101
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr ""
 "Ouzhpennet eo bet an droidigezh evit ar Brezhoneg, an Tchekeg hag ar "
 "Makedoneg."
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Ouzhpennet eo bet an droidigezh evit ar Azerbaijani"
 
-#: core/ChangeLog.qml:102
+#: core/ChangeLog.qml:107
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Kartennoù nevez hag adnevesaet evit an obererezhioù geografiezh"
 
-#: core/ChangeLog.qml:103
+#: core/ChangeLog.qml:108
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26678,7 +26678,7 @@ msgstr ""
 "Roadennoù nevez enne ober gant boukloù evit programmiñ ar milendall, ha reiñ "
 "troidigezhioù d'ar skeudennoù titouriñ"
 
-#: core/ChangeLog.qml:104
+#: core/ChangeLog.qml:109
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -26687,57 +26687,57 @@ msgstr ""
 "Ouzhpennet zo bet ul live evit deskiñ ar boukl voltadur en obererezh tredan "
 "elektronek"
 
-#: core/ChangeLog.qml:114
+#: core/ChangeLog.qml:119
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Lañser nevez an obererezhioù, gant an dibaboù"
 
-#: core/ChangeLog.qml:120
+#: core/ChangeLog.qml:125
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Isrummadoù nevez evit renkañ an oberezhioù"
 
-#: core/ChangeLog.qml:121
+#: core/ChangeLog.qml:126
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Ouzhpennet eo bet an droidigezh evit ar Makedoneg."
 
-#: core/ChangeLog.qml:122
+#: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Obererezhioù nevez: Programmiñ ar Milendall ha Tangram ar re vihan"
 
-#: core/ChangeLog.qml:123
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Dibaboù nevez: ar sonerezh a-dreñv ha ment an ton."
 
-#: core/ChangeLog.qml:124
+#: core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Dibab nevez an tizh e meur a obererezh"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Dibab nevez en echedoù evit diskouez ar pezhioù tapet."
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Skeudennoù nevez e Livioù, Livioù diaes ha C'hoari ar pal."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:132
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Mouezhioù nevez evit saozneg Amerika."
 
-#: core/ChangeLog.qml:128 core/ChangeLog.qml:136
+#: core/ChangeLog.qml:133 core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Meur a zifazi hag a wellaennig."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -26746,17 +26746,17 @@ msgstr ""
 "Adnevesaet eo bet an droidigezh evit meur a yezh (Brezhoneg, Portugaleg bro-"
 "Vrazil, Finneg...)."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Ouzhpenn an dafar e Rusianeg evit an obererezh Klik war al lizherenn."
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Kerzh a ra bremañ an obererezh yezh en Hollandeg."
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -26765,21 +26765,21 @@ msgstr ""
 "Mesk kontelezhioù Norvegia Nord-Trøndelag ha Sør-Trøndelag e Trøndelag evit "
 "an obererezh o tennañ d'ar broioù ha d'ar geografiezh."
 
-#: core/ChangeLog.qml:133
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Bet difaziet obererezhioù braille pa grog ar c'helligoù gant 1, ha ket gant "
 "0."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr ""
 "Ouzhpennet eo bet an troidigezhioù evit an Euskareg, an Hungareg hag ar "
 "Malayalameg."
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -26788,47 +26788,47 @@ msgstr ""
 "Kargañ/saveteiñ ar c'hrouadennoù (Meziantig evit skrivañ,  testennoù bihan, "
 "Boest kempouezañ ha Sonaozouriezh piano)."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Troidigezhioù ouzhpennet evit Gouezeleg bro-Skos."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Pajenn al lañvaz ouzhpennet er c'hefluniañ."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:142
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Meur a gemm er framm evit aesaat an implij."
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Kerzh a ra bremañ an obererezh yezh e Poloneg, Svedeg hag Ukraineg."
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Klask."
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Roll ar c'hemmoù."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Meur a zifazi bihan."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Kerzh a ra bremañ an obererezh yezh e Galleg."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -26838,7 +26838,7 @@ msgstr ""
 "ez eus traoù o treiñ (da skouer un obererezh o kargañ) hag e c'hall padout "
 "ur pennadig."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -26847,12 +26847,12 @@ msgstr ""
 "Troidigezhioù ouzhpennet evit: Katalaneg (Valensianeg), Sinaeg hengounel, "
 "Finneg (92% troet), Rusianeg (98% troet), Slovakeg (92% troet), Turkeg."
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Troidigezhioù ouzhpennet evit: Sloveneg, Alamaneg, Galizeg."
 
-#: core/ChangeLog.qml:197
+#: core/ChangeLog.qml:202
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
