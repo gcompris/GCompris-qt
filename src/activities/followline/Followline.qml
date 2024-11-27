@@ -198,16 +198,6 @@ ActivityBase {
             anchors.left: fireman.right
             anchors.bottom: fire.top
             anchors.right: fire.left
-
-            Rectangle {
-                id: debugRect
-                color: "#80FF00FF"
-                width: 10
-                height: 10
-                radius: 5
-                x: 0
-                y:0
-            }
         }
 
         Timer {
