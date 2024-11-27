@@ -46,7 +46,6 @@ Item {
         id: cellColor
         strokeWidth: 0
         strokeColor: "transparent"
-        Behavior on fillColor { PropertyAnimation { duration: 100 } }
         startX: hexagon.x + border.width * 0.02; startY: hexagon.y + border.height * 0.25
         PathLine { x: hexagon.x + border.width * 0.51 ; y: hexagon.y + border.height * 0.02 }
         PathLine { x: hexagon.x + border.width * 0.99 ; y: hexagon.y + border.height * 0.22 }
