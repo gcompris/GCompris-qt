@@ -10,6 +10,7 @@
  */
 
 import QtQuick 2.12
+import QtQuick.Shapes 1.5
 import GCompris 1.0
 
 import "../../core"
@@ -40,12 +41,17 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias hexagonModel: hexagonModel
+            property alias shapeData: cellFill.data
+            property bool inputLocked: true
         }
 
         onStart: Activity.start(main, items)
         onStop: Activity.stop()
 
         function checkTouchPoint(touchPoints) {
+            if(items.inputLocked) {
+                return
+            }
             for(var i in touchPoints) {
                 var touch = touchPoints[i]
                 var block = rootItem.childAt(touch.x, touch.y)
@@ -57,6 +63,12 @@ ActivityBase {
         MultiPointTouchArea {
             anchors.fill: parent
             onPressed: checkTouchPoint(touchPoints)
+        }
+
+        Shape {
+            id: cellFill
+            anchors.fill: parent
+            asynchronous: true
         }
 
         Item {

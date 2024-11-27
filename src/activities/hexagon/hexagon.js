@@ -35,6 +35,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.shapeData = []
     items.hexagonModel.clear()
     nbx = 10 + items.currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
@@ -53,6 +54,7 @@ function initLevel() {
                 } )
         }
     }
+    items.inputLocked = false
 }
 
 function nextLevel() {
