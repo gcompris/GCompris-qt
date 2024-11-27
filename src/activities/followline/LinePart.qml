@@ -8,12 +8,12 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
+import GCompris 1.0
 import "../../core"
 import "followline.js" as Activity
 
 Item {
     id: part
-    property QtObject items
     property int index: 0
     property GCSfx audioEffects
     property bool isPart: true
@@ -38,26 +38,27 @@ Item {
         height: parent.height * 0.9
         radius: height / 4
         z: 5
-        color: index < part.items.currentLock
+        color: index < Activity.items.currentLock
                ? "#3ca7e0"
-               : index === part.items.currentLock
+               : index === Activity.items.currentLock
                  ? "#dd3128"
                  : "#7A7F8E"
 
         MouseArea {
             anchors.fill: parent
-            hoverEnabled: !items.inputBlocked
+            enabled: !ApplicationInfo.isMobile
+            hoverEnabled: !Activity.items.inputBlocked
             onEntered: {
-                if(part.items.currentLock <= part.index && !Activity.movedOut) {
-                    part.items.currentLock = part.index
-                    if(part.items.currentLock >= part.items.lastLock) {
+                if(Activity.items.currentLock <= part.index && !Activity.movedOut) {
+                    Activity.items.currentLock = part.index
+                    if(Activity.items.currentLock >= Activity.items.lastLock) {
                         audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
-                        items.background.win()
+                        Activity.items.background.win()
                     } else {
                         Activity.playAudioFx();
                     }
-                } else if(part.items.currentLock >= part.index && Activity.movedOut) {
-                    items.lineBrokenTimer.stop();
+                } else if(Activity.items.currentLock >= part.index && Activity.movedOut) {
+                    Activity.items.lineBrokenTimer.stop();
                     Activity.movedOut = false;
                 }
             }
