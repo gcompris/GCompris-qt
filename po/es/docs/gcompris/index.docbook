@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2024-09-20</date>
+>2024-11-29</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->4.2</releaseinfo>
+>4.3</releaseinfo>
 
 <!-- Abstract about this handbook -->
 

@@ -6,13 +6,13 @@
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2023.
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2014, 2015, 2016.
 # Edely <edely.gomes@gmail.com>, 2015.
-# Frederico Goncalves Guimaraes <frederico@teia.bio.br>, 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
 # Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-05-16 20:53-0300\n"
+"PO-Revision-Date: 2024-11-27 19:47-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.08.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -1326,21 +1326,15 @@ msgstr "Associações lógicas"
 # Help title
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
 msgstr "Complete a sequência de frutas."
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "Associações lógicas"
+msgstr "Praticar associações lógicas."
 
 # Help manual
 #. Help manual
@@ -1365,22 +1359,16 @@ msgstr "Ligue quatro (contra o Tux)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr "Distribua quatro peças em uma linha."
+msgstr "Alinhe quatro peças."
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Coordenação motora fina."
+msgstr "Desenvolver habilidades de antecipação e de estratégia."
 
 # Correção
 #. Help manual
@@ -1395,18 +1383,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Criar uma linha de 4 peças, na horizontal (deitada), na vertical (em pé) ou "
-"na diagonal."
+"Você pode criar uma linha de 4 peças, na horizontal (deitada), na vertical "
+"(em pé) ou na diagonal."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -2153,12 +2136,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Teclado infantil"
+msgstr "Meu primeiro teclado"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2196,7 +2176,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "Meu primeiro mouse"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2271,27 +2251,21 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Complete o quebra-cabeça"
+msgstr "Quebra-cabeça simples"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Faça a correspondência entre os objetos e suas formas."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to match an operation with its result."
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Vire as cartas para encontrar a operação correspondente ao resultado."
+msgstr "Aprender a fazer a correspondência entre um objeto e seu formato."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2310,28 +2284,22 @@ msgstr "Toca o som da tecla quando ela é apertada"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Editor de textos infantil"
+msgstr "Meu primeiro editor de textos"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Escreva seus primeiros textos."
 
 # Help title
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Aprender a calcular usando as quatro operações."
+msgstr "Aprenda a escrever textos usando um processador de textos."
 
 # Help manual
 #. Help manual
@@ -2476,21 +2444,15 @@ msgstr "Complete o quebra-cabeça"
 # Help title
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
 msgstr "Arraste e solte as formas em seus respectivos alvos."
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Aprender a identificar as classes gramaticais."
+msgstr "Aprender a fazer correspondências com formas geométricas."
 
 # Help manual
 #. Help manual
