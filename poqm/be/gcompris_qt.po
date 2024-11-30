@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-11-22 14:54+0300\n"
+"PO-Revision-Date: 2024-11-29 09:30+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -23643,46 +23643,38 @@ msgstr ""
 "свае цукеркі?"
 
 #: activities/share/resource/2/Data.qml:226
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Jason's father gave him 16 pieces of candy to share with his friends: 2 "
-#| "boys and 2 girls. Help him give the pieces of candy to his friends."
 msgctxt "Data|"
 msgid ""
 "Jason's father gave him 17 pieces of candy to share equally between his "
 "friends: 2 boys and 2 girls. Help him give the pieces of candy to his "
 "friends."
 msgstr ""
-"Якусеў тата даў яму 16 цукерак, каб пачаставаць сяброў: 2 хлопчыкаў і 2 "
-"дзяўчынак. Дапамажыце яму падзяліць цукеркі паміж сваімі сябрамі."
+"Якусеў тата даў яму 17 цукерак, каб пароўну падзяліць між сваіх сяброў: 2 "
+"хлопчыкаў і 2 дзяўчынак. Дапамажыце яму падзяліць цукеркі паміж сваімі "
+"сябрамі."
 
 #: activities/share/resource/2/Data.qml:236
-#, fuzzy
 msgctxt "Data|"
 msgid ""
 "George wants to share 14 pieces of candy equally between 4 of his friends: 2 "
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 8 цукеркамі трох сваіх сяброў: аднаго хлопчыка "
-"і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
+"Рыгорка хоча пачаставаць сваімі 14 цукеркамі чатырох сваіх сяброў: дзвюх "
+"дзяўчынак і двух хлопчыкаў . Ці зможа ён пароўну падзяліць цукеркі між сваіх "
+"сяброў?"
 
 #: activities/share/resource/2/Data.qml:246
-#, fuzzy
 msgctxt "Data|"
 msgid ""
 "Maria wants to share 23 pieces of candy equally between 5 of her friends: 3 "
 "girls and 2 boys. Can she share the pieces of candy equally between her "
 "friends?"
 msgstr ""
-"Кірук хоча пачаставаць сваімі 8 цукеркамі трох сваіх сяброў: аднаго хлопчыка "
-"і дзвюх дзяўчынак. Ці зможа ён пароўну падзяліць цукеркі?"
+"Марыля хоча падзяліць свае 23 цукеркі пароўну паміж пяццю сваімі сябрамі: "
+"трыма дзяўчынкамі і двума хлопчыкамі. Ці зможа яна пароўну падзяліць цукеркі?"
 
 #: activities/share/resource/3/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Maximum 30 candies and 6 kids, possible rest."
 msgctxt "Data|"
 msgid "Maximum 30 pieces of candy and 6 kids, possible rest."
 msgstr "Максімум 30 цукерак і 6 дзяцей, магчыма рэшта."
@@ -23771,12 +23763,9 @@ msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Вывучайце кратныя і дзельнікі."
+msgstr "Даведайцеся пра некаторыя прылады лічбавага выяўленчага мастацтва."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
@@ -23785,20 +23774,14 @@ msgid ""
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Keyboard controls:"
 msgctxt "ActivityInfo|"
 msgid "<b>Keyboard controls:"
-msgstr "Кіраванне з клавіятуры:"
+msgstr "<b>Кіраванне з клавіятуры:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: адмяніць"
+msgstr "Ctrl + Z: адмяніць апошняе дзеянне"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -23806,12 +23789,9 @@ msgid "Ctrl + Y: redo last action"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: выбраць увесь тэкст"
+msgstr "Ctrl + S: захаваць выяву"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -23834,20 +23814,14 @@ msgid "Sketch brush concept from:"
 msgstr ""
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Фон"
+msgstr "Колер фону"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Фон"
+msgstr "Фонавая выява"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
@@ -23860,12 +23834,9 @@ msgid "Drawing Tools"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Падбярыце колер"
+msgstr "Колеравая палітра"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
@@ -23873,39 +23844,27 @@ msgid "Reset palette"
 msgstr ""
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Выбрана"
+msgstr "Абраны колер"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Хубэй"
+msgstr "Адценне"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Сатурн"
+msgstr "Насычанасць"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Выключэнне святла"
+msgstr "Асвятлённасць"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
@@ -23914,60 +23873,39 @@ msgid "Reset Color"
 msgstr ""
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw letters"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Маляванне літар"
+msgstr "Палітры"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Выберыце рэжым"
+msgstr "Захавайце вашую выяву"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Шмат новых выяваў"
+msgstr "Адкрыць выяву"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 налады"
+msgstr "Налады новай выявы"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Фон"
+msgstr "Колер фону"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Фон"
+msgstr "Фонавая выява"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Шмат новых выяваў"
+msgstr "Стварыце новую выяву"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
@@ -23991,12 +23929,9 @@ msgid "Gradient Tools"
 msgstr ""
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Вы не выбралі ніякай ноты. Ці жадаеце сцерці ўсе ноты?"
+msgstr "Вы не захавалі выяву. Вы жадаеце закрыць практыкаванне?"
 
 #: activities/sketch/Sketch.qml:674
 #, fuzzy
