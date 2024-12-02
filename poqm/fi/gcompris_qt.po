@@ -2,12 +2,12 @@
 # Jyrki Kuoppala <jkp@kaapeli.fi>, 2001.
 # Ilkka Tuohela <hile@iki.fi>, 2005.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2014, 2015, 2016.
-# Tommi Nieminen <translator@legisign.org>, 2014, 2015, 2018, 2019, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2014, 2015, 2018, 2019, 2020, 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 # Rami Aubourg-Kaires <rami at kaires.org>, 2003-2004.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2023-06-06 19:53+0300\n"
+"PO-Revision-Date: 2024-10-27 09:56+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,9 +15,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Language: fi\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 23.04.1\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -58,135 +57,88 @@ msgstr "Tarkista vastaukset"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the adjacent numbers"
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi vierekkäiset luvut."
 
 #. Help title
 #: activities/adjacent_numbers/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "ActivityInfo|"
 msgid "Find the missing adjacent numbers."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi puuttuvat vierekkäiset luvut."
 
 #. Help goal
 #: activities/adjacent_numbers/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about prime numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn to order numbers."
-msgstr "Opi alkulukuja."
+msgstr "Opi järjestämään lukuja."
 
 #. Help manual
 #: activities/adjacent_numbers/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid "Find the requested numbers and drag them to the corresponding spot."
-msgstr "Vertaa lukuja ja valitse oikea merkki."
+msgstr "Etsi vaaditut luvut ja vedä ne oikeisiin kohtiin."
 
+# Huom! … eikä –, jotta negatiiviset luvut erottuisivat
 #: activities/adjacent_numbers/resource/1/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsi lukuja väliltä 1…10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsi lukuja väliltä 0…20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsi lukuja väliltä 0…100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next number."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi seuraava luku."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:27
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous number."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi edellinen luku."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:40
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi välissä oleva luku."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the missing numbers."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi puuttuvat luvut."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:66
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the next numbers."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi seuraavat luvut."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:79
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the previous numbers."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi edelliset luvut."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:105
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Find both numbers."
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Etsi kumpikin luku."
+msgstr "Etsi välissä olevat luvut."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsi lukuja väliltä –10…–1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between %1 and %2."
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Luvut väliltä %1–%2."
+msgstr "Etsi lukuja väliltä -10…10."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -992,12 +944,9 @@ msgid "Learn multiplication table of 10."
 msgstr "Opi 1:n kertotaulu."
 
 #: activities/algebra_by/resource/11/Data.qml:13
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplication tables from 1 to 10."
 msgctxt "Data|"
 msgid "Practice multiplication tables from 1 to 10."
-msgstr "Kertotaulut yhdestä kymmeneen."
+msgstr "Harjoittele kertotauluja yhdestä kymmeneen"
 
 #: activities/algebra_by/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -1421,18 +1370,13 @@ msgstr "Hyvä liikekoordinaatio."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Play with a friend. Take turns to click the line in which you want to "
-#| "drop a token. The first player to create a line of 4 tokens wins."
 msgctxt "ActivityInfo|"
 msgid ""
 "Play with Tux. Take turns to click the line in which you want to drop a "
 "token. The first player to create a line of 4 tokens wins."
 msgstr ""
-"Pelaa kaveria vastaan. Napsauttakaa kukin vuorollaan ruutua, jonka haluatte "
-"merkitä. Pelaaja, joka ensimmäisenä saa meljä merkkiä riviin voittaa."
+"Pelaa TuXin kanssa. Napsautatte vuorotellen riviä, johon haluatte pudottaa "
+"merkin. Ensimmäinen neljän merkin rivin saanut pelaaja voittaa."
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
@@ -2168,12 +2112,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Vauvanäppäimistö"
+msgstr "Ensimmäinen näppäimistöni"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2211,7 +2152,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "Ensimmäinen hiireni"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2286,18 +2227,15 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Täydennä palapeli"
+msgstr "Yksinkertainen pulma"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Sovita oliot muotoihinsa."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
@@ -2325,18 +2263,15 @@ msgstr "Toista merkin ääni kirjoitettaessa"
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Tekstinkäsittely vauvoille"
+msgstr "Ensimmäinen tekstinkäsittelyohjelmani"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Kirjoita ensimmäiset tekstisi."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2492,7 +2427,7 @@ msgstr "Vedä ja pudota muotoja vastaaviin kohteisiin."
 #: activities/babyshapes/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr ""
+msgstr "Opi tunnistamaan geometrisia muotoja."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2581,7 +2516,7 @@ msgstr "Lataa tallennetut tasot"
 #: activities/balancebox/ActivityConfig.qml:51
 msgctxt "ActivityConfig|"
 msgid "Start the activity to load your levels"
-msgstr "Aloita aktiviteetti ladataksesi tasosi"
+msgstr "Lataa tasot käynnistämällä harjoitus"
 
 #. Activity title
 #: activities/balancebox/ActivityInfo.qml:18
@@ -2623,10 +2558,10 @@ msgid ""
 "set, select the 'user' level set and start the level editor by clicking on "
 "the corresponding button."
 msgstr ""
-"Aktiviteettiasetukset-valikossa voit valita oletusarvoisen "
-"'Sisäänrakennettu' tasoasetuksen tai itse määriteltävän ('Käyttäjä') "
-"välillä. Luo tasosarja valitsemalla 'käyttäjän' tasosarja ja käynnistä "
-"tasoeditori napsauttamalla vastaavaa painiketta."
+"Harjoitusasetusten valikossa voi valita oletusarvoisen ”Sisään rakennetun” "
+"tai itse määritettävän ”Käyttäjän” tasojoukon. Luo tasosarja valitsemalla "
+"”käyttäjän” tasojoukko ja käynnistä tasomuokkain napsauttamalla vastaavaa "
+"painiketta."
 
 #: activities/balancebox/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -2635,9 +2570,9 @@ msgid ""
 "editing tools on the side to modify the map cells of the currently active "
 "level in the editor:"
 msgstr ""
-"<b>Tasoeditorissa</b> voit luoda omia tasojasi. Valitse jokin sivussa "
-"olevista muokkaustyökaluista muokataksesi editorin aktiivisen tason "
-"karttasoluja:"
+"<b>Tasomuokkaimessa</b> voi luoda omia tasoja. Muokkaa muokkaimessa "
+"aktiivisena olevan tason karttasoluja valitsemalla jokin reunalla olevista "
+"työkaluista:"
 
 #: activities/balancebox/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
@@ -2730,8 +2665,8 @@ msgid ""
 "To return to the activity settings click on the home-button on the bar or "
 "press Escape on your keyboard or the back button on your mobile device."
 msgstr ""
-"Palataksesi aktiviteettiasetuksiin napsauta palkin kotipainiketta tai paina "
-"näppäimistön Esc-painiketta tai mobiililaitteen takaisin-painiketta."
+"Palataksesi harjoitusasetuksiin napsauta palkin kotipainiketta, näppäimistön "
+"Esc-painiketta tai mobiililaitteen Takaisin-painiketta."
 
 #: activities/balancebox/ActivityInfo.qml:44
 msgctxt "ActivityInfo|"
@@ -2893,13 +2828,14 @@ msgstr "Baaripeli (Tuxia vastaan)"
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
 msgstr ""
+"Ennakoi ja pakota toinen pelaaja sijoittamaan pallonsa viimeiseen koloon."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Kehitä strategisen ajattelun kykyä, laskemista ja vähentämistä."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -3097,7 +3033,7 @@ msgstr ""
 #: activities/braille_alphabets/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Reproduce the requested character in the interactive braille cell."
-msgstr "Toista pyydetty merkki interaktiivisessa pistekirjoitussolussa."
+msgstr "Toista pyydetty merkki vuorovaikutteisessa pistekirjoitussolussa."
 
 #: activities/braille_alphabets/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -3277,13 +3213,13 @@ msgstr ""
 #: activities/calcudoku/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calcudoku"
-msgstr ""
+msgstr "Calcudoku"
 
 #. Help title
 #: activities/calcudoku/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Solve the Calcudoku."
-msgstr ""
+msgstr "Ratkaisu Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
@@ -3292,6 +3228,8 @@ msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
+"Kehitä loogisia kykyjä (tiedon yhdistäminen, päättely) ja spatiaalista "
+"havaintoa laskentaa käyttämällä."
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -5474,8 +5412,8 @@ msgid ""
 "This activity teaches how mixing primary paint colors works (subtractive "
 "mixing)."
 msgstr ""
-"Tämä harjoitus opettaa, kuinka päävärien sekoittaminen toimii "
-"(substraktiivisessa)."
+"Tämä harjoitus opettaa, kuinka päävärien (substraktiivinen) sekoittaminen "
+"toimii."
 
 #: activities/color_mix/ActivityInfo.qml:24
 #, fuzzy
@@ -15056,7 +14994,7 @@ msgstr "Askelpalautin: poista vastauksen viimeinen numero"
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
 msgid "Grammatical analysis"
-msgstr ""
+msgstr "Kielioppianalyysi"
 
 #: activities/grammar_analysis/grammar_analysis.js:38
 #: activities/grammar_analysis/grammar_analysis.js:48
@@ -15133,7 +15071,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "Jätä laatikko tyhjäksi, ellei luokka täsmää."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -15169,6 +15107,8 @@ msgid ""
 "Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
 msgstr ""
+"Kehitä strategian tajusi, opi erottamaan värejä ja muistamaan suhteellinen "
+"sijainti."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -15291,13 +15231,13 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr ""
+msgstr "Arvaa 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Calculate to find 24."
-msgstr ""
+msgstr "Laske löytääksesi luvun 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
@@ -15323,7 +15263,7 @@ msgstr "Harjoittele yhteen-, vähennys-, kerto- ja jakolaskua."
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Käytä neljää lukua annetuilla laskutoimituksilla saadaksesi luvun 24."
 
 #: activities/guess24/ActivityInfo.qml:25
 #, fuzzy
@@ -15344,7 +15284,7 @@ msgstr "Välilyönti tai Enter: valitse tai sijoita kohde"
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Operator keys (+, -, *, /): select operator"
-msgstr ""
+msgstr "Toimintonäppäimet (+, -, *, /): valitse laskutoimitus"
 
 #: activities/guess24/ActivityInfo.qml:28
 #, fuzzy
@@ -15357,22 +15297,22 @@ msgstr "Askelpalautin tai Del: kumoa"
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
-msgstr ""
+msgstr "Sarkain: vaihda numeroiden ja laskutoimitusten välillä"
 
 #: activities/guess24/Guess24.qml:130
 msgctxt "Guess24|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr ""
+msgstr "Käytä neljää lukua annetuilla laskutoimituksilla saadaksesi luvun 24."
 
 #: activities/guess24/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with + and -."
-msgstr ""
+msgstr "Ratkaistavissa +:lla ja -:lla."
 
 #: activities/guess24/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Solvable with +, - and ×."
-msgstr ""
+msgstr "Ratkaistavissa +:lla, -:lla ja ×:lla."
 
 #: activities/guess24/resource/3/Data.qml:13
 #, fuzzy
@@ -15428,7 +15368,7 @@ msgstr "Arvausmäärä"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Etsi vaaditun tuloksen tuottavat laskutoimitukset."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
@@ -15608,7 +15548,7 @@ msgstr "Arvaa luku väliltä 1–%1."
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
 msgid "Display the image to find as hint"
-msgstr "Näytä vihjeeksi etsittävä kuva"
+msgstr "Näytä etsittävä kuva vihjeenä"
 
 #: activities/hangman/ActivityConfig.qml:50
 msgctxt "ActivityConfig|"
@@ -15633,7 +15573,7 @@ msgstr "Arvaa annetun sanan kirjaimet."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Kehitä oikeinkirjoitustasi ja sanastoasi."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15649,7 +15589,7 @@ msgid ""
 "If the option 'Display the image to find as hint' is activated, on every "
 "wrong try a part of the image representing the word will be revealed."
 msgstr ""
-"Jos vaihtoehto \"Näytä kuva etsittäväksi vihjeenä\" on aktivoitu, jokaisella "
+"Jos vaihtoehto ”Näytä etsittävä kuva vihjeenä” on käytössä, kullakin "
 "väärällä yrityksellä tulee näkyviin osa sanaa edustavasta kuvasta."
 
 #: activities/hangman/ActivityInfo.qml:25
@@ -15712,7 +15652,7 @@ msgstr "Tee uudelleen oikealla oleva torni tyhjään tilaan."
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Kehitä strategista ajattelua."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -16730,7 +16670,7 @@ msgstr "Opi desimaaliluvut"
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
-msgstr ""
+msgstr "Yhdistä luvun desimaalinen muoto graafiseen esitysmuotoonsa."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
@@ -17417,7 +17357,7 @@ msgstr "Valitse kaikki sanat, jotka sisältävät annetun kirjaimen."
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "Harjoittele löytämään sanoista tietty kirjain."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -19350,10 +19290,10 @@ msgid ""
 "At the bottom of the screen is the GCompris control bar. Notice that you can "
 "hide or show the bar by touching its anchor."
 msgstr ""
-"Valitse kuvake syöttääksesi aktiviteetin tai näyttääksesi luettelon luokan "
-"toiminnoista.\n"
-"Näytön alareunassa on GCompris-ohjauspalkki. Huomaa, että voit piilottaa tai "
-"näyttää palkin koskettamalla sen ankkuria."
+"Siirry harjoitukseen tai näytä luokan harjoitusten luettelo valitsemalla "
+"kuvake.\n"
+"Näytön alareunassa on GComprisin ohjauspalkki. Huomaa, että palkin voi "
+"piilottaa tai näyttää koskettamalla sen ankkuria."
 
 #: activities/menu/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -21688,8 +21628,8 @@ msgid ""
 "This activity has several levels, each level adding a new functionality to "
 "the previous one."
 msgstr ""
-"Tällä aktiviteetilla on useita tasoja, joista jokainen lisää uusia "
-"toimintoja edelliseen."
+"Tässä harjoituksessa on useita tasoja, joista kukin lisää aiempaan uusia "
+"toimintoja."
 
 #: activities/piano_composition/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -23249,11 +23189,11 @@ msgid ""
 "the system is back up and Tux is in his home, push the light button for him. "
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
-"Napsauta eri aktiivisia elementtejä: aurinko, pilvi, pato, aurinkopaneeli, "
-"tuulipuisto ja muuntajat aktivoidaksesi koko sähköjärjestelmän uudelleen. "
-"Kun järjestelmä on jälleen toiminnassa ja Tux on kotonaan, paina hänen "
-"valopainikettaan. Voittaaksesi sinun on kytkettävä kaikki kuluttajat päälle, "
-"kun kaikki tuottajat ovat käynnissä."
+"Aktivoi koko sähköjärjestelmä uudelleen napsauttamalla eri aktiivisia "
+"elementtejä: aurinkoa, pilviä, patoa, aurinkopaneelia, tuulipuistoa ja "
+"muuntajia. Kun järjestelmä on jälleen toiminnassa ja Tux kotonaan, paina "
+"hänen valopainikettaan. Voittaaksesi sinun on otettava käyttöön kaikki "
+"kuluttajat, kun kaikki tuottajat ovat käynnissä."
 
 #: activities/renewable_energy/RenewableEnergy.qml:310
 msgctxt "RenewableEnergy|"
@@ -23271,8 +23211,9 @@ msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
-"Napsauta eri aktiivisia elementtejä: aurinko, pilvi, pato, aurinkopaneeli, "
-"tuulipuisto ja muuntajat aktivoidaksesi koko sähköjärjestelmän uudelleen."
+"Aktivoi koko sähköjärjestelmä uudelleen napsauttamalla eri aktiivisia "
+"elementtejä: aurinkoa, pilviä, patoa, aurinkopaneelia, tuulipuistoa ja "
+"muuntajia."
 
 #: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
@@ -24694,12 +24635,9 @@ msgid "<b>Keyboard controls:"
 msgstr "Näppäimistöohjaus:"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: kumoa"
+msgstr "Ctrl + Z: kumoa viimeisin toiminto"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -24707,12 +24645,9 @@ msgid "Ctrl + Y: redo last action"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: valitse koko teksti"
+msgstr "Ctrl + S: tallenna kuva"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -24735,169 +24670,124 @@ msgid "Sketch brush concept from:"
 msgstr ""
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Lataa taustalla"
+msgstr "Taustaväri"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Lataa taustalla"
+msgstr "Taustakuva"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Pyyhekumityökalut"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Piirtotyökalut"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Sovita värit"
+msgstr "Palettivärit"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Palauta paletti"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Valittu"
+msgstr "Valittu väri"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Sävy"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturnus"
+msgstr "Kylläisyys"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Valot pois"
+msgstr "Valoisuus"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Palauta väri"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestiina"
+msgstr "Paletit"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Valitse tila"
+msgstr "Tallenna kuvasi"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Monia uusia kuvia"
+msgstr "Avaa kuva"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 asetukset"
+msgstr "Uuden kuvan asetukset"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Lataa taustalla"
+msgstr "Taustaväri"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Lataa taustalla"
+msgstr "Taustakuva"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Monia uusia kuvia"
+msgstr "Luo uusi kuva"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Pyöristetyt kulmat"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Geometriatyökalut"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Sisemmän ympyrän koko"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Liukuvärityökalut"
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Et ole valinnut mitään nuottia. Haluatko tyhjentää kaikki nuotit?"
+msgstr "Et tallentanut kuvaa. Haluatko sulkea harjoituksen?"
 
 #: activities/sketch/Sketch.qml:674
 #, fuzzy
@@ -24926,17 +24816,17 @@ msgstr "Ei"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Leimatyökalu"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Tekstityökalu"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Kirjoita teksti tähän"
 
 #: activities/sketch/ToolsPanel.qml:253
 #, fuzzy
@@ -24949,17 +24839,17 @@ msgstr "Työkalut"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Palauta työkalun asetukset"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Peittävyys"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Koko"
 
 #: activities/sketch/ToolsPanel.qml:526
 #, fuzzy
@@ -24972,7 +24862,7 @@ msgstr "Nopeus"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Tiheys"
 
 #: activities/sketch/ToolsPanel.qml:566
 #, fuzzy
@@ -24985,7 +24875,7 @@ msgstr "Pisteet"
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Pehmennys"
 
 #: activities/sketch/ToolsPanel.qml:646
 #, fuzzy
@@ -26613,13 +26503,13 @@ msgstr "Tarkista näppäimet ohjevalikosta."
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr ""
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr ""
+msgstr "Ratkaise sudoku."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -27521,7 +27411,7 @@ msgstr "Makedoniannos lisätty."
 #: core/ChangeLog.qml:127
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
-msgstr "Uusia aktiviteetteja, Ohjelmointilabyrintti ja Vauvojen Tangram"
+msgstr "Uusia harjoituksia, ohjelmointisokkelo ja vauvojen tangram"
 
 #: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
@@ -28031,7 +27921,7 @@ msgstr "Käyttäjä perui latauksen"
 #: core/DownloadManager.cpp:333
 msgctxt "QObject|"
 msgid "Could not create resource path"
-msgstr "Resurssin polkua ei voitu luoda"
+msgstr "Resurssin sijaintia ei voitu luoda"
 
 #: core/DownloadManager.cpp:340
 #, qt-format
@@ -28060,13 +27950,13 @@ msgstr "Ladattujen tiedostojen tarkistussummat eivät täsmää: %1"
 #, qt-format
 msgctxt "QObject|"
 msgid "No voices found for %1."
-msgstr ""
+msgstr "%1: ääniä ei löytynyt."
 
 #: core/DownloadManager.cpp:767
 #, qt-format
 msgctxt "QObject|"
 msgid "No data found for %1."
-msgstr ""
+msgstr "%1: dataa ei löytynyt."
 
 #: core/GCCreationHandler.qml:176
 #, qt-format
@@ -28242,6 +28132,7 @@ msgstr ""
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Valitse hahmontaja (opengl, ohjelmallinen, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
@@ -28269,16 +28160,17 @@ msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
 "is used."
 msgstr ""
+"Valitse, miltä tasolta harjoitus aloitetaan. Käytössä vain --launch-"
+"valitsimen kanssa."
 
 #: core/main.qml:235
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "Haluatko ladata seuraavat ulkoiset resurssit?"
+msgstr ""
+"Haluatko automaattisesti ladata tai päivittää seuraavat ulkoiset voimavarat "
+"GComprisia käynnistettäessä?"
 
 #: core/main.qml:237
 msgctxt "main|"
@@ -28311,6 +28203,8 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
+"Joissakin harjoituksissa on uusia tietojoukkoja. Haluatko palauttaa niiden "
+"tietojoukkovalinnat?"
 
 #: core/main.qml:275
 msgctxt "main|"
@@ -28318,9 +28212,6 @@ msgid "Apply"
 msgstr ""
 
 #: core/main.qml:276
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "Cancel"
 msgctxt "main|"
 msgid "Cancel"
 msgstr "Peru"
@@ -28336,20 +28227,13 @@ msgid "You are running GCompris for the first time."
 msgstr "Olet käynnistänyt GComprisin ensimmäistä kertaa."
 
 #: core/main.qml:363
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"Tarkista, että sovelluksen asetukset ovat oikein. Tarkista erityisesti "
-"kielivalinta ja että kaikki kielikohtaiset äänitiedostot on asennettu. Voit "
-"tarkistaa ne asetusnäkymästä."
+"Tarkista, että sovelluksen asetukset, erityisesti kielivalinnat, ovat "
+"oikein. Tämän voi tehdä asetusikkunassa."
 
 #: core/main.qml:365
 msgctxt "main|"
