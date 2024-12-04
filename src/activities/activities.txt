@@ -88,8 +88,6 @@ hanoi_real
 hexagon
 imagename
 instruments
-laid-addition
-laid-subtraction
 land_safe
 lang
 learn_additions
@@ -193,5 +191,8 @@ tens_complement_use
 tic_tac_toe
 tic_tac_toe_2players
 traffic
+vertical_addition
+vertical_subtraction
+vertical_subtraction_compensation
 watercycle
 wordsgame
