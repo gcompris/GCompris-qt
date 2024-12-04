@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022,2023.
+# Besnik Bleta <besnik@programeshqip.org>, 2020,2021,2022,2023, 2024.
 # Falënderime Dashamir Hoxhës për një numër sugjerimesh të vlefshme <dashohoxha@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-03 12:24+0300\n"
+"PO-Revision-Date: 2024-12-01 22:16+0200\n"
 "Last-Translator: Besnik Bleta <besnik@programeshqip.org>\n"
 "Language-Team: Albanian <kde-i18n-doc@kde.org>\n"
 "Language: sq\n"
@@ -41,7 +41,7 @@ msgstr "Butoni OK"
 #: activities/enumerate/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
-msgstr "Vlerësoi përgjigjet"
+msgstr "Vlerësoji përgjigjet"
 
 #. Activity title
 #: activities/adjacent_numbers/ActivityInfo.qml:14
@@ -372,7 +372,7 @@ msgstr "Gjeni fluturën ngjyrë kobalti"
 #: activities/advanced_colors/advanced_colors.js:483
 msgctxt "advanced_colors|"
 msgid "Find the cyan butterfly"
-msgstr "Gjeni fluturën ngjyrë qitro"
+msgstr "Gjeni fluturën e kaltër"
 
 #. Color #954535
 #: activities/advanced_colors/advanced_colors.js:45
@@ -823,7 +823,7 @@ msgstr "Gjeni fluturën ngjyrë të gjelbër të errët"
 #: activities/advanced_colors/advanced_colors.js:792
 msgctxt "advanced_colors|"
 msgid "Find the verdigris butterfly"
-msgstr "Gjeni fluturën ngjyrë bakëri"
+msgstr ""
 
 #. Color #32004A
 #: activities/advanced_colors/advanced_colors.js:428
@@ -1195,7 +1195,7 @@ msgstr "Ushtrohuni në mbledhjen e numrave."
 msgctxt "ActivityInfo|"
 msgid "Learn to find the sum of two numbers within a limited period of time."
 msgstr ""
-"Mësoni si të gjeni shumën e dy numrave brenda një periudhe kufizuar kohe."
+"Mësoni si të gjeni shumën e dy numrave brenda një periudhe të kufizuar kohe."
 
 #. Help prerequisite
 #: activities/algebra_plus/ActivityInfo.qml:22
@@ -1508,7 +1508,7 @@ msgid ""
 "component selector, and select the component or wire."
 msgstr ""
 "Që të fshihet një element ose një tel, përzgjidhni mjetin e fshirjes në krye "
-"të përzgjedhësit të elementëve, dhe përzgjidhni elementin ose telin."
+"të përzgjedhësit të elementëve dhe përzgjidhni elementin ose telin."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1534,9 +1534,8 @@ msgid ""
 "To connect two terminals, click on the first terminal, then on the second "
 "terminal. To deselect a terminal, click on any empty area."
 msgstr ""
-"Që të lidhni dy skaje, klikoni mbi skajin e e parë, mandej mbi skajin e "
-"dytë. Që të hiqet përzgjedhja për një skaj, klikoni mbi çfarëdo zone të "
-"zbrazët."
+"Që të lidhni dy skaje, klikoni mbi skajin e parë, mandej mbi skajin e dytë. "
+"Që të hiqet përzgjedhja për një skaj, klikoni mbi çfarëdo zone të zbrazët."
 
 #: activities/analog_electricity/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -1774,7 +1773,7 @@ msgid ""
 "on a terminal, then on a second terminal."
 msgstr ""
 "Ndizeni llambën duke përdorur baterinë e dhënë. Që të lidhni dy skaje, "
-"klikoni mbi skajin e e parë, mandej mbi skajin e dytë."
+"klikoni mbi skajin e parë, mandej mbi skajin e dytë."
 
 #: activities/analog_electricity/TutorialDataset.qml:117
 msgctxt "TutorialDataset|"
@@ -1835,14 +1834,14 @@ msgstr ""
 #: activities/analog_electricity/TutorialDataset.qml:135
 msgctxt "TutorialDataset|"
 msgid "Break the bulb by connecting it with the two batteries."
-msgstr "Digjeni llambën duke e duke lidhur me të dyja bateritë."
+msgstr "Digjeni llambën duke e lidhur me të dyja bateritë."
 
 #: activities/analog_electricity/TutorialDataset.qml:148
 msgctxt "TutorialDataset|"
 msgid ""
 "A switch can connect or disconnect the current travelling path or a circuit."
 msgstr ""
-"Çelësi mund të lidhë ose shkëputë shtegun aktual të përçimit ose një qark."
+"Çelësi mund të lidhë ose shkëputë shtegun aktual të përçimit, ose një qark."
 
 #: activities/analog_electricity/TutorialDataset.qml:149
 msgctxt "TutorialDataset|"
@@ -2059,7 +2058,7 @@ msgid ""
 "Create a circuit so that the voltage drop in both bulbs are equal to the "
 "voltage source (battery)."
 msgstr ""
-"Krijoni një qark në mënyrë që tensioni në të dyja llambat të jetë e "
+"Krijoni një qark në mënyrë që tensioni në të dyja llambat të jetë i "
 "barabartë me tensionin e burimit (bateri)."
 
 #. Activity title
@@ -2104,7 +2103,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Baby mouse"
-msgstr "Puzzle çiliminjsh"
+msgstr "Mi çilimiu"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2567,7 +2566,7 @@ msgid ""
 "clicking again on the same cell with the same tool, you can remove it again."
 msgstr ""
 "Për krejt mjetet (hiq mjetin e spastrimit), klikimi mbi një kuti këmben "
-"veprimin: Një element mund të vendoset duke klikuar në një kuti të zbrazët, "
+"veprimin: Një element mund të vendoset duke klikuar në një kuti të zbrazët "
 "dhe po të klikohet sërish mbi të njëjtën kuti, mund ta hiqni."
 
 #: activities/balancebox/ActivityInfo.qml:40
@@ -2928,7 +2927,7 @@ msgstr "Kjo figurë do t’ju ndihmojë të llogaritni vlerën e elementëve."
 #, qt-format
 msgctxt "BinaryBulb|"
 msgid "What is the binary representation of %1?"
-msgstr "Cili është përfaqësimi dyor i %1?"
+msgstr "Cila është paraqitja dyore e %1?"
 
 #: activities/binary_bulb/resource/tutorial4.qml:29
 msgctxt "tutorial4|"
@@ -3007,7 +3006,7 @@ msgid ""
 "Look at the braille character chart and observe how similar the first and "
 "second lines are."
 msgstr ""
-"Shihni tabelën e shenjave braj dhe vëzhgoni se sa të ngjashme janë rreshtat "
+"Shihni tabelën e shenjave braj dhe vëzhgoni se sa të ngjashëm janë rreshtat "
 "e parë dhe të dytë."
 
 #: activities/braille_alphabets/braille_alphabets.js:58
@@ -3639,7 +3638,7 @@ msgstr "Sistemojini objektet në grupin e saktë dhe jo të saktë."
 #: activities/categorization/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Build conceptual thinking and enrich knowledge."
-msgstr "Formoni të menduar konceptual dhe pasuroni dijen."
+msgstr "Formoni të menduarit konceptual dhe pasuroni dijen."
 
 #. Help prerequisite
 #: activities/categorization/ActivityInfo.qml:22
@@ -3660,10 +3659,10 @@ msgid ""
 "set' to download the full word image set. Click on the cross or on 'Never "
 "show this dialog again' to play with the demo version."
 msgstr ""
-"S’i keni krejt figurat për këtë veprimtari. Klikoni mbi “Përditëso grupin e "
-"figurave” që të shkarkohet grupi i plotë i figurave për fjalët. Klikoni mbi "
-"kryqin ose mbi “Mos e rishfaq më kurrë dialog” që të luani me versionin "
-"demonstrim."
+"S’i keni krejt figurat për këtë veprimtari. Që të shkarkohet grupi i plotë i "
+"figurave për fjalët, klikoni “Përditëso grupin e figurave”. Që të luani me "
+"versionin demonstrim, klikoni mbi kryqin, ose mbi “Mos e rishfaq më kurrë "
+"dialog”."
 
 #: activities/categorization/Categorization.qml:160
 msgctxt "Categorization|"
@@ -3680,7 +3679,7 @@ msgctxt "CategoryReview|"
 msgid ""
 "Place the majority category images to the right and other images to the left"
 msgstr ""
-"Figurat e kategorisë më të madhe vendosini në të djathtë dhe të tjerët në të "
+"Figurat e kategorisë më të madhe vendosini në të djathtë dhe të tjerat në të "
 "majtë"
 
 #: activities/categorization/resource/1/Data.qml:13
@@ -3759,72 +3758,72 @@ msgctxt "category_colors|"
 msgid ""
 "Place the objects matching GREEN color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e BLERTË vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën e BLERTË vendosini në të djathtë dhe "
+"objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:32
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching WHITE color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e BARDHË vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën e BARDHË vendosini në të djathtë objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:41
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PINK color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën ROZË vendosini në të djathtë dhe të tjerët "
-"në të majtë"
+"Objektet që përputhen me ngjyrën ROZË vendosini në të djathtë objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:51
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching RED color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e KUQE vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën e KUQE vendosini në të djathtë objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:60
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching BROWN color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e KAFE vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën KAFE vendosini në të djathtë objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:69
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching PURPLE color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e PURPURT vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën e PURPURT vendosini në të djathtë objektet "
+"e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:79
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching GREY color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e GRI vendosini në të djathtë dhe të tjerët "
-"në të majtë"
+"Objektet që përputhen me ngjyrën GRI vendosini në të djathtë objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:88
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching ORANGE color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e PORTOKALLI vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën PORTOKALLI vendosini në të djathtë objektet "
+"e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_colors.qml:97
 msgctxt "category_colors|"
 msgid ""
 "Place the objects matching YELLOW color to the right and others to the left"
 msgstr ""
-"Objektet që përputhen me ngjyrën e VERDHË vendosini në të djathtë dhe të "
-"tjerët në të majtë"
+"Objektet që përputhen me ngjyrën e VERDHË vendosini në të djathtë objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_fishes.qml:19
 msgctxt "category_fishes|"
@@ -3839,7 +3838,7 @@ msgstr "Peshq"
 #: activities/categorization/resource/board/category_fishes.qml:69
 msgctxt "category_fishes|"
 msgid "Place the FISHES to the right and other objects to the left"
-msgstr "PESHQIT vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "PESHQIT vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_flowers.qml:18
 msgctxt "category_flowers|"
@@ -3857,7 +3856,7 @@ msgstr "Lule"
 #: activities/categorization/resource/board/category_flowers.qml:94
 msgctxt "category_flowers|"
 msgid "Place the FLOWERS to the right and other objects to the left"
-msgstr "LULET vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "LULET vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_food.qml:19
 msgctxt "category_food|"
@@ -3872,7 +3871,8 @@ msgstr "Ushqim"
 #: activities/categorization/resource/board/category_food.qml:68
 msgctxt "category_food|"
 msgid "Place the FOOD ITEMS to the right and other objects to the left"
-msgstr "ARTIKUJT USHQIMORË vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr ""
+"ARTIKUJT USHQIMORË vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_fruits.qml:19
 msgctxt "category_fruits|"
@@ -3889,7 +3889,7 @@ msgstr "Fruta"
 #: activities/categorization/resource/board/category_fruits.qml:86
 msgctxt "category_fruits|"
 msgid "Place the FRUITS to the right and other objects to the left"
-msgstr "FRUTAT vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "FRUTAT vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_household_goods.qml:19
 msgctxt "category_household_goods|"
@@ -3912,7 +3912,8 @@ msgstr "Artikujsh shtëpiakë"
 #: activities/categorization/resource/board/category_household_goods.qml:141
 msgctxt "category_household_goods|"
 msgid "Place the HOUSEHOLD GOODS to the right and other objects to the left"
-msgstr "ARTIKUJT SHTËPIAKE vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr ""
+"ARTIKUJT SHTËPIAKË vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_insects.qml:19
 msgctxt "category_insects|"
@@ -3927,7 +3928,7 @@ msgstr "Insekte"
 #: activities/categorization/resource/board/category_insects.qml:68
 msgctxt "category_insects|"
 msgid "Place the INSECTS to the right and other objects to the left"
-msgstr "INSEKTET vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "INSEKTET vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_living_beings.qml:19
 msgctxt "category_living_beings|"
@@ -3943,7 +3944,8 @@ msgstr "Gjallesa"
 #: activities/categorization/resource/board/category_living_beings.qml:77
 msgctxt "category_living_beings|"
 msgid "Place the living beings to the right and other objects to the left"
-msgstr "Qeniet e gjalla vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr ""
+"Qeniet e gjalla vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_monuments.qml:19
 msgctxt "category_monuments|"
@@ -3958,7 +3960,7 @@ msgstr "Monumente"
 #: activities/categorization/resource/board/category_monuments.qml:68
 msgctxt "category_monuments|"
 msgid "Place the MONUMENTS to the right and other objects to the left"
-msgstr "MONUMENTET vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "MONUMENTET vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_nature.qml:19
 msgctxt "category_nature|"
@@ -3975,7 +3977,8 @@ msgstr "Natyrë"
 #: activities/categorization/resource/board/category_nature.qml:86
 msgctxt "category_nature|"
 msgid "Place the NATURE images to the right and other objects to the left"
-msgstr "Figura me NATYRË vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr ""
+"Figura me NATYRË vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_numbers.qml:19
 msgctxt "category_numbers|"
@@ -3987,7 +3990,7 @@ msgstr "Numra"
 #: activities/categorization/resource/board/category_numbers.qml:41
 msgctxt "category_numbers|"
 msgid "Place the NUMBERS to the right and other objects to the left"
-msgstr "NUMRAT vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "NUMRAT vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_odd_even.qml:20
 msgctxt "category_odd_even|"
@@ -4021,8 +4024,8 @@ msgctxt "category_renewable|"
 msgid ""
 "Place the RENEWABLE energy sources to the right and other objects to the left"
 msgstr ""
-"Burimet e energjisë së RINOVUESHME vendosini në të djathtë dhe të tjerët në "
-"të majtë"
+"Burimet e energjisë së RINOVUESHME vendosini në të djathtë dhe objektet e "
+"tjera në të majtë"
 
 #: activities/categorization/resource/board/category_shapes.qml:21
 msgctxt "category_shapes|"
@@ -4193,7 +4196,7 @@ msgstr "Vegla"
 #: activities/categorization/resource/board/category_tools.qml:104
 msgctxt "category_tools|"
 msgid "Place the TOOLS to the right and other objects to the left"
-msgstr "VEGLAT vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "VEGLAT vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_transports.qml:19
 msgctxt "category_transports|"
@@ -4213,7 +4216,8 @@ msgstr "Transport"
 msgctxt "category_transports|"
 msgid ""
 "Place the MEANS OF TRANSPORTATION to the right and other objects to the left"
-msgstr "MJETET E TRANSPORTIT vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr ""
+"MJETET E TRANSPORTIT vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #: activities/categorization/resource/board/category_vegetables.qml:19
 msgctxt "category_vegetables|"
@@ -4228,7 +4232,7 @@ msgstr "Zarzavate"
 #: activities/categorization/resource/board/category_vegetables.qml:68
 msgctxt "category_vegetables|"
 msgid "Place the VEGETABLES to the right and other objects to the left"
-msgstr "ZARZAVATET vendosini në të djathtë dhe të tjerët në të majtë"
+msgstr "ZARZAVATET vendosini në të djathtë dhe objektet e tjera në të majtë"
 
 #. Activity title
 #: activities/checkers/ActivityInfo.qml:15
@@ -4368,10 +4372,10 @@ msgstr ""
 "detyrueshme. Lojtari që mbetet pa pulla, ose që s’mund të lëvizë, ngaqë "
 "është bllokuar, humb lojën.\n"
 "Kur një ushtar mbërrin rreshtin e mbretit (rreshti më i largët përpara), "
-"bëhet mbret, dhe kjo tregohet përmes një pulle shtesë që vihet sipër "
-"ushtarit, dhe fiton fuqi shtesë, përfshi këtu aftësinë për të lëvizur së "
+"bëhet mbret dhe kjo tregohet përmes një pulle shtesë që vihet sipër "
+"ushtarit, fiton fuqi shtesë, përfshi këtu aftësinë për të lëvizur së "
 "prapthi. Nëse ka një pullë në një diagonale që mbreti mund ta përlajë, ai "
-"mund të lëvizë në çfarëdo largësie te diagonalja, dhe mund të përlajë një "
+"mund të lëvizë në çfarëdo largësie te diagonalja dhe mund të përlajë një "
 "pullë të kundërshtarit sado larg, duke kapërcyer mbi çfarëdo kutish të "
 "pazëna menjëherë pas saj.\n"
 
@@ -4407,7 +4411,7 @@ msgstr ""
 "Në këtë veprimtari njiheni me lojën e shahut, duke luajtur kundër "
 "kompjuterit. Veprimtaria shfaq pozicionet e mundshme për lëvizje për çfarëdo "
 "guri të përzgjedhur, çka i ndihmon fëmijët të kuptojnë se si lëvizin gurët e "
-"shahut. Në nivelin e parë, kompjuteri është plotësisht kuturu, për t’u dhënë "
+"shahut. Në nivelin e parë, kompjuteri luan plotësisht në tym, për t’u dhënë "
 "më tepër shanse fëmijëve. Dora-dorës që rritet niveli, kompjuteri luan më "
 "mirë. Mund të përdorni butonat shigjetë për të përzgjedhur dorazi nivelin e "
 "vështirësisë.\n"
@@ -4582,7 +4586,7 @@ msgstr ""
 "Në këtë veprimtari njiheni me lojën e shahut, duke luajtur fundin e një "
 "loje. Veprimtaria shfaq pozicionet e mundshme për lëvizje për çfarëdo guri "
 "të përzgjedhur, çka i ndihmon fëmijët të kuptojnë se si lëvizin gurët e "
-"shahut. Në nivelin e parë, kompjuteri është plotësisht kuturu, për t’u dhënë "
+"shahut. Në nivelin e parë, kompjuteri luan plotësisht në tym, për t’u dhënë "
 "më tepër shanse fëmijëve. Dora-dorës që rritet niveli, kompjuteri luan më "
 "mirë.\n"
 "\n"
@@ -4866,7 +4870,7 @@ msgstr "1905, Fluturuesi III i vëllezërve Rajt"
 #: activities/chronos/resource/board/board6_0.qml:56
 msgctxt "board6_0|"
 msgid "1909 Louis Bleriot crosses the English Channel"
-msgstr "1909, Lui Blerioi kalon Kanalin Anglez"
+msgstr "1909, Lui Blerioi kalon La Manshin"
 
 #: activities/chronos/resource/board/board6_1.qml:15
 msgctxt "board6_1|"
@@ -5111,7 +5115,7 @@ msgstr "Mësoni sahatin"
 #: activities/clockgame/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn how to tell the time on an analog clock."
-msgstr "Mësoni si të rrëfeni orën në një sahat analog."
+msgstr "Mësoni si të tregoni orën në një sahat analog."
 
 #. Help goal
 #: activities/clockgame/ActivityInfo.qml:20
@@ -5251,8 +5255,8 @@ msgstr ""
 "duke i hequr prej çfarë shihni. Sa më shumë ngjyrë që të shtoni, aq më tepër "
 "dritë përthithet dhe aq më e errët bëhet ngjyra e përftuar. Mund të "
 "përziejmë thjesht tre ngjyra themelore për të krijuar mjaft ngjyra të reja. "
-"Ngjyrat themelore për bojëra janë cian (një ton special i blusë), magenta "
-"(një ton special i së trëndafiltës) dhe e verdha."
+"Ngjyrat themelore për bojëra janë cian (një ton i veçantë i blusë), magenta "
+"(një ton i veçantë i së trëndafiltës) dhe e verdha."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5322,12 +5326,12 @@ msgstr "Shumë të verdhë"
 #: activities/color_mix/ColorMix.qml:227
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
-msgstr "Gurkali e pamjaftueshme"
+msgstr "Cain e pamjaftueshme"
 
 #: activities/color_mix/ColorMix.qml:229
 msgctxt "ColorMix|"
 msgid "Too much cyan"
-msgstr "Shumë gurkali"
+msgstr "Shumë cian"
 
 #. Activity title
 #: activities/color_mix_light/ActivityInfo.qml:15
@@ -5471,7 +5475,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/colors/FindIt.qml:261
@@ -5951,8 +5955,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "You can pan the working area by clicking on an empty area and dragging it."
-msgstr ""
-"Një zonë pune mund ta të lëvizni duke klikuar mbi të dhe duke e tërhequr."
+msgstr "Një zonë pune mund ta lëvizni duke klikuar mbi të dhe duke e tërhequr."
 
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -5966,8 +5969,8 @@ msgid ""
 "input is equal to 0 the result is 0. The output for a 2 inputs AND gate is:"
 msgstr ""
 "Një portë DHE jep 1, vetëm nëse krejt sinjalet në hyrje për të janë baras me "
-"1. Sapo një nga sinjalet të jetë baras me 0, përfundimi është në dalje është "
-"0. Përfundimi për portën DHE të 2 sinjaleve në hyrje është:"
+"1. Sapo një nga sinjalet të jetë baras me 0, përfundimi në dalje është 0. "
+"Përfundimi për portën DHE të 2 sinjaleve në hyrje është:"
 
 #: activities/digital_electricity/components/AndGate.qml:24
 msgctxt "AndGate|"
@@ -6008,7 +6011,7 @@ msgstr ""
 "Një krahasues pranon dy numra si argument, A dhe B. I krahason ata dhe "
 "prodhon 3 përfundime. Përfundimi i parë është 1, nëse A < B, përndryshe "
 "është 0. Përfundimi i dytë është 1, nëse A = B, përndryshe është 0. "
-"Përfundimi i tretë është 1, nëse > B, përndryshe është 0. "
+"Përfundimi i tretë është 1, nëse A > B, përndryshe është 0. "
 
 #: activities/digital_electricity/components/DigitalLight.qml:20
 msgctxt "DigitalLight|"
@@ -6016,9 +6019,9 @@ msgid ""
 "A digital light is used to check the output of other digital components. It "
 "turns green if the input is 1, and turns red if the input is 0."
 msgstr ""
-"Për të kontrolluar ç’japin përbërësit e tjetër dixhitalë, përdoret një "
-"llambë dixhitale. Bëhet e gjelbër, nëse sinjali në hyrje është 1 dhe bëhet e "
-"kuqe, nëse sinjali në hyrje është 0."
+"Për të kontrolluar ç’japin përbërësit e tjerë dixhitalë, përdoret një llambë "
+"dixhitale. Bëhet e gjelbër, nëse sinjali në hyrje është 1 dhe bëhet e kuqe, "
+"nëse sinjali në hyrje është 0."
 
 #: activities/digital_electricity/components/NandGate.qml:21
 msgctxt "NandGate|"
@@ -6042,9 +6045,9 @@ msgid ""
 "input the output is equal to 0. To obtain a 1 all the inputs must be equal "
 "to 0:"
 msgstr ""
-"Një urë JOOSE prodhon të kundërtën e një ure OR. Sapo të ketë një 1 te "
-"sinjali në hyrje, përfundimi në dalje do të jetë baras me 0. Që të përftohet "
-"një 1, krejt sinjalet në hyrje duhet të jenë baras me 0:"
+"Një urë AS prodhon të kundërtën e një ure OSE. Sapo të ketë një 1 te sinjali "
+"në hyrje, përfundimi në dalje do të jetë baras me 0. Që të përftohet një 1, "
+"krejt sinjalet në hyrje duhet të jenë baras me 0:"
 
 #: activities/digital_electricity/components/NorGate.qml:24
 msgctxt "NorGate|"
@@ -6057,7 +6060,7 @@ msgid ""
 "A Not gate (also known as inverter) outputs the opposite of the input. An "
 "input 0 gives an output 1. An Input 1 gives an output 0:"
 msgstr ""
-"Një urë Not (e njohur edhe si përmbysës) prodhon të kundërtën e sinjalit në "
+"Një urë Jo (e njohur edhe si përmbysës) prodhon të kundërtën e sinjalit në "
 "hyrje. Një sinjal 0 në hyrje, jep një 1 në dalje. Një sinjal 1 në hyrje, jep "
 "një 0 në dalje:"
 
@@ -6144,8 +6147,8 @@ msgid ""
 "of 1 in inputs is even. In this activity, a 2 inputs XOR gate is shown. The "
 "output for a 2 inputs XOR gate is:"
 msgstr ""
-"Një portë XOSE prodhon 1 nëse numri i 1-shave te sinjalet në hyrje është tek "
-"dhe 0, nëse numri i 1-shave te sinjalet në hyrje është çift. Në këtë "
+"Një portë XOSE prodhon 1, nëse numri i 1-shave te sinjalet në hyrje është "
+"tek dhe 0, nëse numri i 1-shave te sinjalet në hyrje është çift. Në këtë "
 "veprimtari, shfaqet një portë XOSE me dy vende sinjalesh në hyrje. Sinjali "
 "në dalje për portën XOSE me 2 sinjale në hyrje është:"
 
@@ -6222,7 +6225,7 @@ msgstr "Portë JOEDHE"
 #: activities/digital_electricity/TutorialDataset.qml:75
 msgctxt "TutorialDataset|"
 msgid "NOR gate"
-msgstr "Portë JOSE"
+msgstr "Portë AS"
 
 #: activities/digital_electricity/TutorialDataset.qml:89
 msgctxt "TutorialDataset|"
@@ -6267,7 +6270,7 @@ msgid ""
 "To connect two terminals, click on a first terminal, then on a second "
 "terminal."
 msgstr ""
-"Që të lidhni dy skaje, klikoni mbi skajin e e parë, mandej mbi skajin e dytë."
+"Që të lidhni dy skaje, klikoni mbi skajin e parë, mandej mbi skajin e dytë."
 
 #: activities/digital_electricity/TutorialDataset.qml:159
 msgctxt "TutorialDataset|"
@@ -6435,7 +6438,7 @@ msgid ""
 "A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, "
 "otherwise produces an output of 0."
 msgstr ""
-"Një portë JOSEA pranon 2 sinjale dyorë në hyrje dhe prodhon 1, nëse që të dy "
+"Një portë AS pranon 2 sinjale dyorë në hyrje dhe prodhon 1, nëse që të dy "
 "ata janë 0, përndryshe prodhon një sinjal 0 në dalje."
 
 #: activities/digital_electricity/TutorialDataset.qml:356
@@ -6444,13 +6447,13 @@ msgid ""
 "For a more detailed description about the NOR gate, select it and click on "
 "the info button."
 msgstr ""
-"Për një përshkrim më të hollësishëm të portës JOOSE, përzgjidheni dhe "
-"klikoni mbi butonin e informacionit."
+"Për një përshkrim më të hollësishëm të portës AS, përzgjidheni dhe klikoni "
+"mbi butonin e informacionit."
 
 #: activities/digital_electricity/TutorialDataset.qml:357
 msgctxt "TutorialDataset|"
 msgid "Light the bulb using the provided NOR gate."
-msgstr "Ndizeni llambën duke përdorur portën JOOSE të dhënë."
+msgstr "Ndizeni llambën duke përdorur portën AS të dhënë."
 
 #: activities/digital_electricity/TutorialDataset.qml:370
 msgctxt "TutorialDataset|"
@@ -6568,7 +6571,7 @@ msgstr ""
 "Prodhuesi i sinjalit në të majtë përdoret për të prodhuar sinjale që "
 "alternohen mes 0-s dhe 1-shit në një periudhë kohore të dhënë, e cila i "
 "jepet si ndryshore funksionit. Periudha kohore, si parazgjedhje, është 1 "
-"sekondë, por mund të ndryshohet mes 0.25 dhe 2s."
+"sekondë, por mund të ndryshohet mes 0.25 dhe 2 sekondash."
 
 #: activities/digital_electricity/TutorialDataset.qml:542
 msgctxt "TutorialDataset|"
@@ -6623,7 +6626,7 @@ msgstr "Mësoni në mënyrë zbavitëse si të vizatoni shkronja."
 msgctxt "ActivityInfo|"
 msgid "Draw the letters by connecting the dots in the correct order."
 msgstr ""
-"Vizaton shkronjat duke lidhur pikat me njëra-tjetrën në rendin e duhur."
+"Vizatoni shkronjat duke lidhur pikat me njëra-tjetrën në rendin e duhur."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6889,7 +6892,7 @@ msgid ""
 "level 2 and 3."
 msgstr ""
 "Në shkallën e parë, lojtarëve do t’u shijojë eksplorimi i çdo kafshe në "
-"ekran. Klikoni mbi një kafshë dhe mësoni rreth saj, si quhet, ç’tingull bën, "
+"ekran. Klikoni mbi një kafshë dhe mësoni rreth saj, si quhet, ç’tingull bën "
 "dhe si duket. Studiojeni mirë këtë informacion, sepse do të merreni në provë "
 "në shkallët 2 dhe 3."
 
@@ -6919,7 +6922,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/explore_farm_animals/ExploreLevels.qml:336
@@ -6986,7 +6989,7 @@ msgid ""
 msgstr ""
 "Lopa bën “muuuuuu”. Lopët kanë fushë të gjerë vështrimi, 330°. Kanë një "
 "ndjesi të zhvilluar shijeje, me afërsisht 20 mijë puprra shijuese. Mund të "
-"nuhasin aroma 8km larg."
+"nuhasin aroma 8 km larg."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:49
 msgctxt "board1|"
@@ -7032,8 +7035,7 @@ msgstr ""
 msgctxt "board1|"
 msgid "This animal wallows in the mud to control its body temperature."
 msgstr ""
-"Kjo kafshë zhgërryhet në llucë, për të rregulluar temperaturën e tyre "
-"trupore."
+"Kjo kafshë zhgërryhet në llucë, për të rregulluar temperaturën e vet trupore."
 
 #: activities/explore_farm_animals/resource/board/board1.qml:81
 msgctxt "board1|"
@@ -7207,8 +7209,8 @@ msgstr ""
 "Koloseu, ose Koliseu, sot është ndërtimi më i dallueshëm i Romës Klasike. "
 "Edhe 2000 mijë vjet pasi qe ndërtuar dhe edhe pse për ca shekuj qe braktisur "
 "dhe u vodh për material ndërtimi, është e dallueshme menjëherë si një gjedhe "
-"klasike për stadiumet sot. Qe amfiteatri i parë permanent që u ngrit në "
-"Romë, dhe arena më mbresëlënëse që ka parë bota klasike."
+"klasike për stadiumet sot. Qe amfiteatri i parë permanent që u ngrit në Romë "
+"dhe arena më mbresëlënëse që ka parë bota klasike."
 
 #: activities/explore_monuments/resource/board/board1.qml:41
 #: activities/explore_monuments/resource/board/board1.qml:44
@@ -7287,7 +7289,7 @@ msgid ""
 "visited tourist attraction."
 msgstr ""
 "Petra është një qytet historik dhe arkeologjik në prefekturën e Maanit në "
-"Jordaninë jugor, që është i famshëm për arkitekturën e tij të prerjes në "
+"Jordaninë jugore, që është i famshëm për arkitekturën e tij të prerjes në "
 "shkëmb dhe për sistemin hidraulik të tij. Krijuar sipas gjasash që më 312 p."
 "e.r si kryeqyteti i natataeanëve arabë, është simboli i Jordanisë, si dhe "
 "objekti turistik më i vizituar i vendit."
@@ -7307,8 +7309,8 @@ msgid ""
 msgstr ""
 "Taxh Mahalli është një mauzole në mermer të bardhë, që gjendet në bregun "
 "jugor të lumit Jamuna, në qytetin indian të Agrës. U porosit më 1632-shin "
-"nga perandori Mughal emperor Shah Jahan për të mbajtur varrin e gruassë tij "
-"të parapëlqyer të tre fëmijëve, Mumtaz Mahal."
+"nga perandori Mughal, Shah Jahan për të mbajtur varrin e gruas së tij të "
+"parapëlqyer të tre fëmijëve, Mumtaz Mahal."
 
 #: activities/explore_monuments/resource/board/board1.qml:88
 msgctxt "board1|"
@@ -7362,8 +7364,8 @@ msgstr ""
 "Hava Mahall është një pallat në Xhajpur, Indi, quajtur kështu, ngaqë në "
 "thelb qe një mur i lartë fshehës, i ndërtuar që gratë e familjes mbretërore "
 "të mund të shihnin festimet e zhvilluara në rrugë, pa u parë vetë nga "
-"jashtë. I ngritur me shkëmb ranor të kuq dhe të trëndafiltë, the pallati "
-"gjendet në skaj të City Palace dhe shtrihet te zenanatë, ose dhomat e grave."
+"jashtë. I ngritur me shkëmb ranor të kuq dhe të trëndafiltë, pallati gjendet "
+"në skaj të City Palace dhe shtrihet te zenanatë, ose dhomat e grave."
 
 #: activities/explore_monuments/resource/board/board2.qml:40
 #: activities/explore_monuments/resource/board/board2.qml:43
@@ -7427,8 +7429,8 @@ msgid ""
 "gesture, pose and form. Since 1983, the caves have been a UNESCO World "
 "Heritage Site."
 msgstr ""
-"Shpellat e Axhantës janë gati 29 monumente budiste shpella të hapura në "
-"shkëmb, që vijnë prej shekullit II p.e.s deri në 480 e.s në distriktin e "
+"Shpellat e Axhantës rreth 29 monumente budiste, shpella të hapura në shkëmb, "
+"që vijnë prej shekullit II p.e.s. deri në 480 e.s. në distriktin e "
 "Aurangabadit, shteti Maharashtra i Indisë. Shpellat përmbajnë vizatime dhe "
 "skulptura të gdhendura në shkëmb, të përshkruara si mes shembujve më të mirë "
 "të mbetur deri sot të artit indian, veçanërisht vizatimet shprehëse që "
@@ -7508,8 +7510,8 @@ msgid ""
 "Memorial hall was built with white Makrana marbles."
 msgstr ""
 "Përmendorja e Viktorias u ndërtua për të përkujtuar kulmin e Perandorisë "
-"Britanike në Indi. Përfaqëson kulmin arkitekturor të qytetit të Kalkutës, "
-"dhe shkrin më të mirën e arkitekturës britanike dhe mugalase. Salla e "
+"Britanike në Indi. Përfaqëson kulmin arkitekturor të qytetit të Kalkutës dhe "
+"shkrin më të mirën e arkitekturës britanike dhe mugalase. Salla e "
 "Përmendores së Viktorias u ndërtua me mermer të bardhë nga Makrana."
 
 #: activities/explore_monuments/resource/board/board2.qml:117
@@ -7625,7 +7627,7 @@ msgid ""
 msgstr ""
 "Për nga madhësia, Katedralja e Reimsit është një ndërtim jo pak i "
 "jashtëzakonshëm: e konceptuar të nxërë turma të mëdha, përmasat gjigante të "
-"saj përfshijnë një zonë 6650 metra katrorë dhe një gjatësi 122m. Një "
+"saj përfshijnë një zonë 6650 metra katrorë dhe një gjatësi 122 metra. Një "
 "kryevepër e artit gotik dhe vendi i kurorëzimit të mbretërve të Francës, "
 "është pjesë e Trashëgimive Botërore të UNESCO-s që më 1991-shin. Meka për "
 "turistët e rajoni të Shampanjës mirëpret 1 milionë e gjysmë vizitorë çdo vit."
@@ -7648,7 +7650,7 @@ msgstr ""
 "Ura e Gardit qe ndërtuar pak para erës së krishterë, për të lejuar "
 "ujësjellësin e Nimës (që është thuajse 50 km i gjatë) të kalojë lumin "
 "Gardon. Arkitektët dhe teknikët hidraulikë romakë që hartuan këtë urë, e "
-"cila ngrihet thuajse në lartësi 50m në tri nivele – më i gjati 275m – "
+"cila ngrihet thuajse në lartësi 50 m në tri nivele – më i gjati 275 m – "
 "krijuan një kryevepër teknike, po aq sa edhe artistike."
 
 #: activities/explore_monuments/resource/board/board3.qml:62
@@ -7802,9 +7804,9 @@ msgid ""
 msgstr ""
 "Kështjella ideale e përrallave, Nojshvanshtajni gjendet në një kodër të "
 "ashpër pranë Fysenit, në jugperëndim të Bavarisë. Qe frymëzimi për "
-"kështjellat e Bukuroshja e Fjetur në parqet Disneyland. Kështjella u porosit "
-"nga mbreti Ludwig II i Bavarisë, që u shpall i shkarë kur kështjella thuajse "
-"ishte e përfunduara, më 1886-n dhe u gjet i vdekur pak ditë më vonë. "
+"kështjellat “Bukuroshja e Fjetur” në parqet Disneyland. Kështjella u porosit "
+"nga mbreti Ludwig II i Bavarisë, që u shpall i shkarë, kur kështjella "
+"thuajse ishte e përfunduara, më 1886-n dhe u gjet i vdekur pak ditë më vonë. "
 "Nojshvanshtajni është ndërtesa më e fotografuar në vend dhe një nga objektet "
 "turistike më popullore në Gjermani."
 
@@ -7898,10 +7900,10 @@ msgid ""
 "built a settlement inside the roofless ruin. In the 12th century, the apse "
 "was converted into a tower to accommodate the Archbishop of Trier."
 msgstr ""
-"Struktura e gjatë pre tullash, me tavane të lartë qe froni i perandorit "
-"romak deri në shkatërrimin e qytetit nga fiset gjermanike. Pushtuesi ngritën "
-"një vendbanim brenda rrënojave pa çati. Në shekullin e 12-të, absida u "
-"shndërrua në një kullë për të banuar kryepeshkopi i Trierit."
+"Struktura e gjatë prej tullash, me tavane të lartë, qe froni i perandorit "
+"romak deri në shkatërrimin e qytetit nga fiset gjermanike. Pushtuesit "
+"ngritën një vendbanim brenda rrënojave pa çati. Në shekullin e 12-të, absida "
+"u shndërrua në një kullë për të banuar kryepeshkopi i Trierit."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
 #: activities/explore_monuments/resource/board/board4.qml:87
@@ -7952,7 +7954,7 @@ msgstr ""
 "Kabrijos përkujton evropianin e parë që shkeli në Bregun Perëndimor të "
 "Shteteve të Bashkuara, Huan Rodrigez Kabrijo. Lindur në Portugali, Kabrijo "
 "ishte nën flamurin spanjoll gjatë pushtimeve të tija në Botën e Re. Ai "
-"mbërriti në Gjirin e San Diegos në shtator të 1542-s, tre muaj pasi ishte "
+"mbërriti në Gjirin e San Diegos në shtator të 1542-shit, tre muaj pasi ishte "
 "nisur nga Barra de Navidad në bregun perëndimor të Meksikës."
 
 #: activities/explore_monuments/resource/board/board5.qml:29
@@ -8019,7 +8021,7 @@ msgstr ""
 "ishullit Manhatan, daton 50 vjet para asaj të Ellis Island si pika e parë e "
 "kontrollit të emigracionit në Sh.B.A. Kështjella Klinton (nps.gov/cacl) "
 "fillimisht u ndërtua si një fortesë për të mbrojtur Nju Jorkun nga një "
-"mësymje britanike gjatë Luftës së 1812-s dhe i regjistruar si monument "
+"mësymje britanike gjatë Luftës së 1812-s dhe u regjistrua si monument "
 "kombëtar më 1946-n."
 
 #: activities/explore_monuments/resource/board/board5.qml:62
@@ -8037,7 +8039,7 @@ msgid ""
 "February 22, 1732. He lived here until age three, returning later as a "
 "teenager."
 msgstr ""
-"Monumenti Kombëtar i Vendlindjes së Xhorxh Uashingtonit gjendet në kontenë "
+"Monumenti Kombëtar i Vendlindjes së Xhorxh Uashingtonit gjendet në kontenë e "
 "Uestmorlandit, Virxhinia, Shtetet e Bashkuara. Xhorxh Uashingtoni u lind "
 "këtu më 22 shkurt të 1732-shit, në shtëpinë ku pat banuar në fillim Xhon "
 "Uashingtoni, stërgjyshi i Xhorxh Uashingtonit. Banoi në të deri në moshën "
@@ -8064,7 +8066,7 @@ msgstr ""
 "Linkolnit është një nga strukturat më të njohura në Shtetet e Bashkuara të "
 "Amerikës. Përmendorja gjendet në anën perëndimore të National Mall, në "
 "Parkun e Potomakut Perëndimor dhe është një shembull i arkitekturës "
-"neoklasike. Përmban vetëm një statujë 5.8m të lartë të Abraham Linkolnit "
+"neoklasike. Përmban vetëm një statujë 5.8 m të lartë të Abraham Linkolnit "
 "ulur mendueshëm, me hapësirat në të dy anët e saj me mbishkrime me pjesë nga "
 "Fjala e Inaugurimit të Dytë si president i Linkolnit dhe asaj që mbahet si "
 "fjala më e famshme e tij, Fjala në Getisburg."
@@ -8073,7 +8075,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board5.qml:87
 msgctxt "board5|"
 msgid "Mount Rushmore"
-msgstr "Maut Rashmor"
+msgstr "Maunt Rashmor"
 
 #: activities/explore_monuments/resource/board/board5.qml:85
 msgctxt "board5|"
@@ -8089,7 +8091,7 @@ msgstr ""
 "përmendore për Xhorxh Uashingtonin, lindjen, rritjen dhe idealet e këtij "
 "vendi. Maunt Rashmor simbolizon madhështinë e këtij kombi përmes madhështisë "
 "së udhëheqësve të tij. Skulptura epike ravijëzon fytyrat e katër "
-"presidentësh amerikanë që simbolizojnë historinë e pasur të këtij kombi, "
+"presidentëve amerikanë që simbolizojnë historinë e pasur të këtij kombi, "
 "vendosmërinë e tij të fuqishme dhe arritjet që mbeten."
 
 #: activities/explore_monuments/resource/board/board5.qml:95
@@ -8224,9 +8226,9 @@ msgstr ""
 "nga faraoni Sneferu. Çuditërisht, kjo piramidë e njëmendtë ngrihet nga "
 "shkretëtira në një kënd prej 55 gradësh dhe mandej papritmas ndryshon në një "
 "kënd më gradual prej 43 gradësh. Sipas një teorie, për shkak të pjerrësisë "
-"së këndit fillestar, pesha që duhej shtuar mbi dhomat e dhe korridoret e "
+"së këndit fillestar, pesha që duhej shtuar mbi dhomat dhe korridoret e "
 "brendshëm u bë shumë e madhe, duke i detyruar ndërtuesit të kalojnë në një "
-"kënd më të vogël. Sot, Piramida i Përkulur është piramida e vetme në Egjipt "
+"kënd më të vogël. Sot, Piramida e Përkulur është piramida e vetme në Egjipt "
 "guaska e jashtme e së cilës prej guri gëlqeror të lëmuar është ende në një "
 "masë të madhe e paprekur."
 
@@ -8248,8 +8250,8 @@ msgid ""
 "marking the first attempt by the ancient Egyptians at the construction of a "
 "true pyramid."
 msgstr ""
-"8 km në jug të Saqarasë në Egjipt qëndron piramida misterioze në formë kulle "
-"e Mejdumit, e cila sot pak ngjan me një piramidë tipike. Kjo piramidë ka "
+"8 km në jug të Saqarasë në Egjipt qëndron piramida misterioze e Mejdumit, në "
+"formë kulle, e cila sot pak ngjan me një piramidë tipike. Kjo piramidë ka "
 "gjasa të jetë ngritur gjatë sundimit të faraonit të dinastisë së IV, "
 "Sneferu, edhe pse disa besojnë se piramida mund të jetë filluar nga "
 "pararendësi i Sneferusë, Huni. Në një farë pike gjatë ndërtimit të saj, "
@@ -8276,9 +8278,10 @@ msgstr ""
 "Piramida e Kuqe qe një nga përpjekjet më të mira dhe më të suksesshme të "
 "faraonit Sneferu në ndërtimin e piramidës së parë të botës me faqe të "
 "lëmuara në periudhën e Egjiptit të Lashtë. Lartësia e piramidës është 104 "
-"metra, duke bërë piramidën e 4-t në Egjipt për nga madhësia. Piramida është "
-"ndërtuar me gurë të kuq gëlqeror, prej nga i vjen edhe emri. Banorët vendas "
-"e quanin “el-heram el-watwaat”, që do të thotë Piramida Lakuriq i Natës."
+"metra, duke bërë piramidën e katërt në Egjipt për nga madhësia. Piramida "
+"është ndërtuar me gurë të kuq gëlqerorë, prej nga i vjen edhe emri. Banorët "
+"vendas e quanin “el-heram el-watwaat”, që do të thotë Piramida Lakuriq i "
+"Natës."
 
 #: activities/explore_monuments/resource/board/board6.qml:63
 msgctxt "board6|"
@@ -8355,7 +8358,7 @@ msgid ""
 "The jaguar's jaw is well developed. Because of this, it has the strongest "
 "bite of all the felines, being able to break even a tortoise shell!"
 msgstr ""
-"Nofulla e jaguarit është e zhvilluar mirë. Prej kësaj, ka kafshimin më të "
+"Nofullat e jaguarit janë të zhvilluar mirë. Prej kësaj, ka kafshimin më të "
 "fortë në krejt mishngrënësit, duke qenë i aftë të thyejë madje edhe guaskën "
 "e breshkës!"
 
@@ -9278,7 +9281,7 @@ msgstr "Gjeni datën 3 muaj, 2 javë dhe 1 ditë para 23 gushtit."
 #: activities/find_the_day/find_the_day_dataset.js:191
 msgctxt "find_the_day_dataset|"
 msgid "Find the date 5 months, 3 weeks and 2 days after March 20th."
-msgstr "Gjeni datën 5 muaj, 3 javë dhe 2 ditë para 2o marsit."
+msgstr "Gjeni datën 5 muaj, 3 javë dhe 2 ditë para 20 marsit."
 
 #: activities/find_the_day/find_the_day_dataset.js:195
 msgctxt "find_the_day_dataset|"
@@ -9736,7 +9739,7 @@ msgstr "Bordurë"
 #: activities/frieze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Reproduce and complete the frieze."
-msgstr "Riprodhoni dhe plotësoni bordurin."
+msgstr "Riprodhoni dhe plotësoni bordurën."
 
 #. Help goal
 #: activities/frieze/ActivityInfo.qml:19
@@ -9899,7 +9902,7 @@ msgid ""
 "same colors/signs."
 msgstr ""
 "Kopjoni dhe plotësoni këtë bordurë: 3 ose 4 forma, me 2 madhësi dhe "
-"mundësisht të njëjtat ngjyrash/shenja."
+"mundësisht të njëjtat ngjyra/shenja."
 
 #: activities/frieze/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -10155,7 +10158,7 @@ msgstr "Karolinë e Veriut"
 #: activities/geo-country/resource/board/board10_0.qml:241
 msgctxt "board10_0|"
 msgid "South Carolina"
-msgstr "Karolina e Jugut"
+msgstr "Karolinë e Jugut"
 
 #. State of America: Georgia
 #: activities/geo-country/resource/board/board10_0.qml:248
@@ -10882,7 +10885,7 @@ msgstr "Marri"
 #: activities/geo-country/resource/board/board15_0.qml:46
 msgctxt "board15_0|"
 msgid "Na h-Eileanan Siar"
-msgstr "Në Helanën Shiër"
+msgstr "Na Helanën Shiër"
 
 #. Council area of Scotland: Orkney Islands
 #: activities/geo-country/resource/board/board15_0.qml:53
@@ -12901,7 +12904,7 @@ msgstr "Kore e Jugut"
 #: activities/geography/resource/board/board13_0.qml:59
 msgctxt "board13_0|"
 msgid "Taiwan"
-msgstr "Taivan"
+msgstr "Tajvan"
 
 #: activities/geography/resource/board/board14_0.qml:15
 msgctxt "board14_0|"
@@ -14052,9 +14055,9 @@ msgid ""
 msgstr ""
 "Faktorët e një numri janë krejt numrat që e pjesëtojnë atë numër plotësisht. "
 "Për shembull, faktorët e 6-s janë 1, 2, 3 dhe 6. 4-a s’është faktor i 6-s, "
-"ngaqë 6 s’mund të ndahet në pjesë 4 pjesë të plota të barabarta. Nëse një "
-"numër është një shumëfish i një tjetri, ky i dyti është një faktor i numrit "
-"të parë. Shumëfishat mund t’i mendoni si familje dhe faktorët si njerëzit e "
+"ngaqë 6 s’mund të ndahet në 4 pjesë të plota të barabarta. Nëse një numër "
+"është një shumëfish i një tjetri, ky i dyti është një faktor i numrit të "
+"parë. Shumëfishat mund t’i mendoni si familje dhe faktorët si njerëzit e "
 "këtyre familjeve. Pra 1-i, 2-i, 3-i dhe 6-a që të tërë hyjnë te familja e 6-"
 "s, ndërsa 4 bën pjesë te një tjetër familje."
 
@@ -14136,15 +14139,15 @@ msgstr ""
 "Shumëfishët e një numri janë krejt numrat që janë të barabartë me të "
 "shumëzuar me numër tjetër. Për shembull, 24, 36, 48 dhe 60 janë që të tërë "
 "shumëfishë të 12-s. 25 s’është shumëfish i 12-së, ngaqë s’ka ndonjë numër që "
-"të mund të shumëzohet me 12 dhe të janë 25. Nëse një numër është një faktor "
+"të mund të shumëzohet me 12 dhe të japë 25. Nëse një numër është një faktor "
 "i një tjetri, atëherë ky i dyti është një shumëfish i të parit. Shumëfishët "
 "mund t’i mendoni si familje dhe faktorët janë njerëzit që u takojnë këtyre "
 "familjeve. Faktori 5, ka për prind 10,për gjysh 15, për stërgjysh 20, për "
 "stër-stërgjysh 25 dhe çdo hap i mëtejshëm prej 5 shton një tjetër stër- "
 "përpara! Por numri 5 nuk i përket familjeve 8 ose 23. S’gjeni dot ndonjë "
-"numër 5-ash te 8 ose 23 pa mbetje. Pra, 8 s’është shumëfish i 5-s, as 23 "
-"s’është. Vetëm 5, 10, 15, 20, 25 … janë shumëfishë (ose familje ose hapa) të "
-"5-s."
+"numër 5-ash, pa mbetje, te 8-a ose 23-shi. Pra, 8 s’është shumëfish i 5-s, "
+"as 23 s’është. Vetëm 5, 10, 15, 20, 25 … janë shumëfishë (ose familje ose "
+"hapa) të 5-s."
 
 #. Activity title
 #: activities/gnumch-primes/ActivityInfo.qml:15
@@ -14403,7 +14406,7 @@ msgstr "Mësoni të identifikoni klasa gramatikore."
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Caktojuni klasat gramatikore të domosdoshme fjalëve korresponduese."
+msgstr "Caktojuni klasat gramatikore të domosdoshme fjalëve përkatëse."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14411,7 +14414,7 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
-"Përzgjidhni nga listë një klasë gramatikore, mandej përzgjidhni kutizën nën "
+"Përzgjidhni nga lista një klasë gramatikore, mandej përzgjidhni kutizën nën "
 "fjalën dhe caktojini klasën."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
@@ -14519,7 +14522,7 @@ msgstr "Klasa gramatikore"
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr "Caktojuni klasat gramatikore të domosdoshme fjalëve korresponduese."
+msgstr "Caktojuni klasat gramatikore të domosdoshme fjalëve përkatëse."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14680,7 +14683,7 @@ msgid ""
 msgstr ""
 "Synimi juaj është të lëvizni anijen kozmike dhe të shmangni përplasjen me "
 "planetët, deri sa të mbërrini në stacionin hapësinor. Shigjeta tregon "
-"drejtim dhe intensitetin e rëndesës mbi anijen tuaj."
+"drejtimin dhe intensitetin e rëndesës mbi anijen tuaj."
 
 #: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
@@ -14695,7 +14698,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr "Guess 24"
+msgstr "Gjeni 24"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
@@ -14837,7 +14840,7 @@ msgid ""
 "Drag the appropriate numbers and the operators to the boxes to obtain the "
 "number to guess in the instruction."
 msgstr ""
-"Tërhiqni te kutitë numrat dhe veprimet e duhura që të përftoni numrin që "
+"Tërhiqni te kutitë numrat dhe veprimet e duhura, që të përftoni numrin që "
 "duhet hamendësuar te udhëzimi."
 
 #: activities/guesscount/Admin.qml:30
@@ -14926,7 +14929,7 @@ msgstr ""
 "sipër djathtas jepni një numër. Do t’ju thuhet nëse numri juaj është më "
 "sipër ose më poshtë se ai që duhet të gjeni. Mandej provoni prapë, deri sa "
 "të gjeni përgjigjen e saktë. Largësia me Tux-it dhe anës së djathtë të "
-"ekrani tregon se sa larg jeni nga numri që duhet të gjeni. Nëse Tux-i është "
+"ekranit tregon se sa larg jeni nga numri që duhet të gjeni. Nëse Tux-i është "
 "mbi ose nën qendrën vertikale të ekranit, kjo do të thotë se numri juaj "
 "është sipër ose poshtë numrit që duhet të gjeni."
 
@@ -15070,7 +15073,7 @@ msgid ""
 "We switched to English for this activity but you can select another language "
 "in the configuration dialog."
 msgstr ""
-"E kaluan në anglisht këtë veprimtari, por mund të përzgjidhni gjuhë tjetër, "
+"E kaluam në anglisht këtë veprimtari, por mund të përzgjidhni gjuhë tjetër, "
 "që nga dialogu i formësimit."
 
 #. Activity title
@@ -15718,7 +15721,7 @@ msgid ""
 msgstr ""
 "Akselerometri në anën e djathtës shfaq përshpejtimin e përgjithshëm vertikal "
 "të raketës tuaj, përfshi forcën e rëndesës. Në zonën e sipërme të gjelbër të "
-"akselerometrit, përshpejtimi juaj është më i madh se sa forca e rëndesë, në "
+"akselerometrit, përshpejtimi juaj është më i madh se sa forca e rëndesës, në "
 "zonën e poshtme të kuqe është më i vogël dhe në vijën blu në zonën e verdhë "
 "në mes, dy forcat anulojnë njëra-tjetrën."
 
@@ -15772,7 +15775,7 @@ msgstr "Rëndesë: %1"
 msgctxt "Data|"
 msgid "The spaceship translates when you use the direction keys."
 msgstr ""
-"Anije kozmike zhvendoset në mënyrë drejtvizore, kur përdorni tastet e "
+"Anija kozmike zhvendoset në mënyrë drejtvizore, kur përdorni tastet e "
 "drejtimit."
 
 #: activities/land_safe/resource/1/Data.qml:17
@@ -15805,7 +15808,7 @@ msgstr "Plutoni"
 #: activities/land_safe/resource/2/Data.qml:38
 msgctxt "Data|"
 msgid "Titan"
-msgstr "Titan"
+msgstr "Titani"
 
 #: activities/land_safe/resource/1/Data.qml:48
 #: activities/land_safe/resource/2/Data.qml:47
@@ -15834,7 +15837,7 @@ msgstr "Toka"
 #: activities/land_safe/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "The spaceship rotates when you use the direction keys."
-msgstr "Anije kozmike rrotullohet, kur përdorni tastet e drejtimit."
+msgstr "Anija kozmike rrotullohet, kur përdorni tastet e drejtimit."
 
 #: activities/land_safe/resource/2/Data.qml:24
 msgctxt "Data|"
@@ -16219,7 +16222,7 @@ msgid ""
 "validate your answer."
 msgstr ""
 "Tërhiqeni shigjetën që të përzgjidhni një numër portokajsh, mandej tërhiqini "
-"portokajtë e përzgjedhur te zona e zbrazët. Përsëritini këta hapa deri sa "
+"portokajtë e përzgjedhur te zona e zbrazët. Përsëritini këto hapa deri sa "
 "numri i portokajve të lënë t’i përkojë sasisë së kërkuar. Mandej klikoni mbi "
 "butonin OK, që të vlerësohet përgjigja juaj."
 
@@ -16522,7 +16525,7 @@ msgid ""
 msgstr ""
 "Kërkohet një sasi. Tërhiqeni shigjetën që të përzgjidhni një numër "
 "portokajsh, mandej tërhiqini portokajtë e përzgjedhur te zona e zbrazët. "
-"Përsëritini këta hapa deri sa numri i portokajve të lënë t’i përkojë sasisë "
+"Përsëritini këto hapa deri sa numri i portokajve të lënë t’i përkojë sasisë "
 "së kërkuar. Mandej klikoni mbi butonin OK që të vlerësohet përgjigja juaj."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
@@ -16809,7 +16812,7 @@ msgid ""
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
 "Efekti i shtypjes së një dritareje është ndryshimi i gjendjes së saj dhe i "
-"fqinjëve të tij të menjëhershëm vertikalë dhe horizontalë. Duhet të fikni "
+"fqinjëve të saj të menjëhershëm vertikalë dhe horizontalë. Duhet të fikni "
 "krejt dritat. Nëse klikoni mbi Tux-in, shfaqet zgjidhja."
 
 #: activities/lightsoff/ActivityInfo.qml:24
@@ -16906,7 +16909,7 @@ msgstr ""
 #: activities/louis-braille/louis_braille_data.js:12
 msgctxt "louis_braille_data|"
 msgid "Born on January 4th 1809 in Coupvray near Paris in France."
-msgstr "Lindur më 4 janar, 1809, në Kupvrej, pranë Parisit, Francë."
+msgstr "Lindur më 4 janar 1809, në Kupvrej, pranë Parisit, Francë."
 
 #: activities/louis-braille/louis_braille_data.js:17
 msgctxt "louis_braille_data|"
@@ -16923,7 +16926,7 @@ msgid ""
 "At the age of three, Louis became blind due to a severe infection that "
 "spread to his left eye."
 msgstr ""
-"Në moshën tre vjeç. Lui humbi shikimin për shkak të një infeksioni të rëndë "
+"Në moshën tre vjeç, Lui humbi shikimin për shkak të një infeksioni të rëndë "
 "që u përhap në syrin e tij të majtë."
 
 #: activities/louis-braille/louis_braille_data.js:27
@@ -16939,7 +16942,7 @@ msgstr ""
 msgctxt "louis_braille_data|"
 msgid "He impressed his classmates and began to play the piano and the organ."
 msgstr ""
-"U la përshtypja shokëve të klasës dhe zuri të luajë në piano dhe në organo."
+"U la përshtypje shokëve të klasës dhe zuri të luajë në piano dhe në organo."
 
 #: activities/louis-braille/louis_braille_data.js:37
 msgctxt "louis_braille_data|"
@@ -16974,7 +16977,7 @@ msgid ""
 "punctuations and music notations."
 msgstr ""
 "E ripunoi dhe zgjeroi brajin që të përfshinte matematikë, simbole, shenja "
-"pikësim dhe shkrim muzike."
+"pikësimi dhe shkrim muzike."
 
 #: activities/louis-braille/louis_braille_data.js:57
 msgctxt "louis_braille_data|"
@@ -16991,8 +16994,8 @@ msgid ""
 "Braille got accepted as a world wide standard. Louis Braille proved that if "
 "you have motivation you can do incredible things."
 msgstr ""
-"Braji u pranua si standard në mbarë botën. Lui Brajit provoi se nëse keni "
-"një nxitje, mund të bëni gjëra të pabesueshme."
+"Braji u pranua si standard në mbarë botën. Lui Braj provoi se nëse keni një "
+"nxitje, mund të bëni gjëra të pabesueshme."
 
 #: activities/louis-braille/ReorderList.qml:164
 msgctxt "ReorderList|"
@@ -17198,7 +17201,7 @@ msgid ""
 "In first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr ""
-"Në nivelet e para, Tux-i lëviz pa kokëçarje, në hap për çdo kërkesë "
+"Në nivelet e para, Tux-i lëviz pa kokëçarje, një hap për çdo kërkesë "
 "lëvizjeje nga ju, nëpër labirint."
 
 #: activities/maze/ActivityInfo.qml:24
@@ -17211,7 +17214,7 @@ msgid ""
 "until he reaches a fork and you have to decide which way to go further."
 msgstr ""
 "Për labirinte më të mëdhenj, ka një mënyrë speciale ecjeje, e quajtur "
-"“mënyra turru”. Nëse është aktivizuar mënyra turru. Tux-i do të turret "
+"“mënyra turru”. Nëse është aktivizuar mënyra turru, Tux-i do të turret "
 "vetvetiu, deri sa të gjendet para një degëzimi dhe juve ju duhet të vendosni "
 "sipas cilës udhë të shkojë më tej."
 
@@ -17284,7 +17287,7 @@ msgid ""
 "At the first levels, Tux walks comfortably, one step on each move request, "
 "through the maze."
 msgstr ""
-"Në nivelet e para, Tux-i lëviz pa kokëçarje, në hap për çdo kërkesë "
+"Në nivelet e para, Tux-i lëviz pa kokëçarje, një hap për çdo kërkesë "
 "lëvizjeje nga ju, nëpër labirint."
 
 #: activities/mazeinvisible/ActivityInfo.qml:25
@@ -17384,7 +17387,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj, ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/melody/Melody.qml:313
@@ -18389,7 +18392,7 @@ msgid ""
 "twins, they both disappear."
 msgstr ""
 "Çdo letër ka një figurë në anën e fshehur dhe çdo letër ka një binjake me po "
-"atë figurë. Klikoni mbi një kartë që të shihni figurën e fshehur në të, dhe "
+"atë figurë. Klikoni mbi një kartë që të shihni figurën e fshehur në të dhe "
 "provoni të gjeni binjaket. Mund të ktheni në anë tjetër vetëm dy letra në "
 "herë, ndaj ju duhet të mbani mend ku ishte një figurë, ndërkohë që kërkoni "
 "për binjaken e saj. Kur keni kthyer në anë tjetër binjaket, zhduken që të "
@@ -18422,7 +18425,7 @@ msgid ""
 "the corresponding number names."
 msgstr ""
 "Çdo letër fsheh ose një numër (shkruar në shifra), ose një emër numri "
-"(shkruan në fjalë). Duhet të përputhni numrat me emrat e tyre."
+"(shkruar në fjalë). Duhet të përputhni numrat me emrat e tyre."
 
 #: activities/memory-wordnumber/dataset.js:11
 msgctxt "dataset|"
@@ -18567,7 +18570,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/memory/MemoryCommon.qml:327
@@ -18645,7 +18648,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Arrows - Display the current level. Click to select another level"
 msgstr ""
-"Shigjeta - Shfani nivelin pasues. Klikoni që të përzgjidhet një nivel tjetër"
+"Shigjeta - Shfaqni nivelin pasues. Klikoni që të përzgjidhet një nivel tjetër"
 
 #: activities/menu/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -19012,8 +19015,8 @@ msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
 "that activity."
 msgstr ""
-"Vendosni këtu veprimtaritë tuaja të parapëlqyera në, duke klikuar mbi "
-"diellin, djathtas sipër te ajo veprimtari."
+"Vendosni këtu veprimtaritë tuaja të parapëlqyera, duke klikuar mbi diellin, "
+"djathtas sipër te ajo veprimtari."
 
 #: activities/menu/Menu.qml:792
 msgctxt "Menu|"
@@ -19046,7 +19049,7 @@ msgid ""
 "Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
 msgstr ""
 "Mësoni të përdorni rrotëzën e miut ose gjestin për zmadhim/zvogëlim, ose të "
-"pickimit për të njëjtin efekt."
+"pickimit, për të njëjtin efekt."
 
 #. Help prerequisite
 #: activities/mining/ActivityInfo.qml:22
@@ -19065,7 +19068,7 @@ msgid ""
 "the sparkle. Click on the gold nugget to collect it."
 msgstr ""
 "Po të vini re te damari, mund të shihni një xixëllim diku. Afrojuni "
-"xixëllimit dhe përdorni rrotëzën e miut pse gjestet për zmadhim/zvogëlim, "
+"xixëllimit dhe përdorni rrotëzën e miut ose gjestet për zmadhim/zvogëlim, "
 "për ta zmadhuar pamjen. Kur mbërrini në nivelin maksimum të zmadhimit, te "
 "pozicioni i xixëllimit do të shfaqet një copë ar. Klikoni mbi të që ta "
 "mblidhni."
@@ -19078,7 +19081,7 @@ msgid ""
 "appear, showing the next gold nugget to collect. Collect enough nuggets to "
 "complete the level."
 msgstr ""
-"Pas mbledhjes së copës, përdorni rrotëzën e miut ose pickimin në ekrani me "
+"Pas mbledhjes së copës, përdorni rrotëzën e miut ose pickimin në ekran me "
 "prekje, që të bëni zvogëlim të pamjes. Kur mbërrini në nivelin minimum, do "
 "të shfaqet një tjetër xixëllim, për t’ju treguar copën tjetër të arit që "
 "duhet të mblidhni. Mblidhni aq sa duhet për të plotësuar nivelin."
@@ -19099,7 +19102,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Thanks to the Tuxpaint team for providing the following sounds under GPL:"
 msgstr ""
-"Faleminderit të ekipit të Tuxpaint-it për dhënien e tingujve vijues nën GPL:"
+"Faleminderit ekipit të Tuxpaint-it për dhënien e tingujve vijues nën GPL:"
 
 #: activities/mining/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19259,7 +19262,7 @@ msgstr ""
 #: activities/number_sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Can count."
-msgstr "Mund të numëroje."
+msgstr "Mund të numërojë."
 
 #. Help manual
 #: activities/money/ActivityInfo.qml:24
@@ -19507,7 +19510,7 @@ msgstr "Shkronja."
 #, qt-format
 msgctxt "Data|"
 msgid "Send the message %1 in Morse code."
-msgstr "Dërgojeni mesazhin %1 në kodin Morse."
+msgstr "Dërgojeni mesazhin %1 në kodin Mors."
 
 #: activities/morse_code/resource/1/Data.qml:23
 #: activities/morse_code/resource/1/Data.qml:39
@@ -19658,7 +19661,7 @@ msgid ""
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
 "are left on the board."
 msgstr ""
-"Nëse formoni në mulli (rresht me 3 gurë), atëherë përzgjidhni një nga gurët "
+"Nëse formoni një mulli (rresht me 3 gurë), atëherë përzgjidhni një nga gurët "
 "Tux-it që të hiqet. S’mund të hiqen gurë të një mulliri të formuar, veç në "
 "mos pastë mbetur më gur në fushë."
 
@@ -19752,8 +19755,8 @@ msgid ""
 "Play with a friend. First take turns to place nine pieces, and then take "
 "turns to move your pieces."
 msgstr ""
-"Luani me një shok. pari, pullat vendosen një herë njëri, një herë tjetri, "
-"dhe mandej, po sipas asaj radhe, lëvizni pullat tuaja."
+"Luani me një shok. pari, pullat vendosen një herë njëri, një herë tjetri dhe "
+"mandej, po sipas asaj radhe, lëvizni pullat tuaja."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -19803,7 +19806,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj, ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/note_names/NoteNames.qml:453
@@ -19989,7 +19992,7 @@ msgstr ""
 #: activities/ordering_alphabets/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering letters"
-msgstr "Renditje shkronash"
+msgstr "Renditje shkronjash"
 
 #. Help title
 #: activities/ordering_alphabets/ActivityInfo.qml:23
@@ -20392,15 +20395,16 @@ msgid ""
 "this would prevent the opponent from continuing the game, and the seeds are "
 "instead left on the board."
 msgstr ""
-"Kapje farash ndodh kur një lojtar e shpie numrin e një foleje të "
-"kundërshtarit saktësisht dy ose tre, me farën e fundit që mbolli pas radhës "
-"së tij. Kjo sjell përherë kapje të farave në folenë përkatëse dhe mundet "
-"edhe më tepër: nëse fara para të fundit shpuri një fole të kundërshtarit në "
-"dy ose tre fara, edhe këto kapen, e me radhë, deri sa mbërrihet në një fole "
-"që nuk përmban dy ose tre fara, ose që s’i përket kundërshtarit. Farat e "
-"kapura vendosen te foleja e pikëve të lojtarit. Por, nëse një lëvizje do të "
-"sillte kapjen e krejt farave të një kundërshtari, kapja falet, ngaqë kjo do "
-"ta pengonte kundërshtarin të vazhdojë lojën dhe farat lihen te vendi i lojës."
+"Kapje farash ndodh vetëm kur një lojtar e shpie numrin e një foleje të "
+"kundërshtarit saktësisht sa dy ose tre, me farën e fundit që mbolli pas "
+"radhës së tij. Kjo sjell përherë kapje të farave në folenë përkatëse dhe "
+"mundet edhe më tepër: nëse fara para të fundit shpuri një fole të "
+"kundërshtarit në dy ose tre fara, edhe këto kapen, e me radhë, deri sa "
+"mbërrihet në një fole që nuk përmban dy ose tre fara, ose që s’i përket "
+"kundërshtarit. Farat e kapura vendosen te foleja e pikëve të lojtarit. Por, "
+"nëse një lëvizje do të sillte kapjen e krejt farave të një kundërshtari, "
+"kapja falet, ngaqë kjo do ta pengonte kundërshtarin të vazhdojë lojën dhe "
+"farat lihen te fusha."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -21193,9 +21197,7 @@ msgstr "Ky është çelësi i basit, për nota të ulëta."
 #: activities/piano_composition/piano_composition.js:30
 msgctxt "piano_composition|"
 msgid "The black keys are sharp and flat keys. Sharp notes have a ♯ sign."
-msgstr ""
-"Tastet e zinj janë tastet janë taste diez dhe bemol. Notat diez kanë një "
-"shenjë ♯."
+msgstr "Tastet e zinj janë taste diez dhe bemol. Notat diez kanë një shenjë ♯."
 
 #: activities/piano_composition/piano_composition.js:33
 msgctxt "piano_composition|"
@@ -21208,7 +21210,7 @@ msgid ""
 "Click on the note symbol to write different length notes such as whole "
 "notes, half notes, quarter notes and eighth notes."
 msgstr ""
-"Klikoni mbi simbolin e notës për të shkuar nota me gjatësi të ndryshme, të "
+"Klikoni mbi simbolin e notës për të shkruar nota me gjatësi të ndryshme, të "
 "tilla si, nota të plota, gjysma note, çerekë notash dhe nota tetëshe."
 
 #: activities/piano_composition/piano_composition.js:39
@@ -21275,7 +21277,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/piano_composition/Piano_composition.qml:549
@@ -21538,7 +21540,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/play_piano/PlayPiano.qml:301
@@ -21651,7 +21653,7 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
-"Kjo veprimtari lyp tinguj. ndaj do të luajë ca tinguj, edhe nëse zërat ose "
+"Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
 #: activities/play_rhythm/PlayRhythm.qml:377
@@ -22138,8 +22140,7 @@ msgid ""
 "to set up a similar train."
 msgstr ""
 "Vëzhgoni dhe mbani mend trenin, përpara se të mbarojë koha e treguar nga "
-"kohëmatësi dhe mandej tërhiqni elementët që të të krijoni një tren të "
-"ngjashëm."
+"kohëmatësi dhe mandej tërhiqni elementët që të krijoni një tren të ngjashëm."
 
 #: activities/railroad/Railroad.qml:109
 msgctxt "Railroad|"
@@ -22427,7 +22428,7 @@ msgstr "Figura"
 #: activities/smallnumbers2/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
-msgstr "Përzgjidhi Paraqitje Me Domino"
+msgstr "Përzgjidhni Paraqitje Me Domino"
 
 #. Activity title
 #: activities/reversecount/ActivityInfo.qml:15
@@ -22509,7 +22510,7 @@ msgid ""
 msgstr ""
 "Numrat romakë janë një sistem numerik që e ka origjinën në Romën e lashtë "
 "dhe mbeti një mënyrë e zakonshme shkrimi numrash nëpër Evropë deri në "
-"Mesjetën e Vonë. Numrat në këtë sistem përfaqëson nga një ndërthurje "
+"Mesjetën e Vonë. Numrat në këtë sistem përfaqësohen nga një ndërthurje "
 "shkronjash nga alfabeti latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -23026,7 +23027,7 @@ msgid ""
 "\"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"Simboli “kg” në fund të një numri do të thotë kilogram Kilogrami është një "
+"Simboli “kg” në fund të një numri do të thotë kilogram. Kilogrami është një "
 "njësi mase, një veti që i korrespondon perceptimit të rëndomtë se sa “i "
 "rëndë” është një objekt. \n"
 " Lini pesha në anën e majtë që të baraspeshoni peshoret."
@@ -23240,7 +23241,7 @@ msgid ""
 "Can you help him? First, place the children in the center, then drag the "
 "pieces of candy to each of them."
 msgstr ""
-"Pali dëshiron të ndajë në mënyrë të barabartë 2 copa kallamsheqeri mes 2 nga "
+"Pali dëshiron të ndajë në mënyrë të barabartë 2 copa kallamsheqeri me 2 nga "
 "shoqet e tij. E ndihmoni dot? Së pari, vendosni fëmijët në qendër, mandej "
 "tërhiqni copat e kallamsheqerit te secili prej tyre."
 
@@ -23248,15 +23249,15 @@ msgstr ""
 msgctxt "Data|"
 msgid "Now he wants to share 4 pieces of candy equally among his friends."
 msgstr ""
-"Tashti dëshiron të ndajë në mënyrë të barabartë 4 copa kallamsheqeri shokëve "
-"të tij."
+"Tashti dëshiron t’uë ndajë në mënyrë të barabartë 4 copa kallamsheqeri "
+"shokëve të tij."
 
 #: activities/share/resource/1/Data.qml:38
 msgctxt "Data|"
 msgid ""
 "Can you now share 6 of Paul's pieces of candy equally among his friends?"
 msgstr ""
-"A mund të ndani në mënyrë të barabartë shokëve të Palit 6 copat e "
+"A mund t’u ndani në mënyrë të barabartë shokëve të Palit 6 copat e "
 "kallamsheqerit?"
 
 #: activities/share/resource/1/Data.qml:48
@@ -23294,8 +23295,8 @@ msgid ""
 "Maria wants to share 6 pieces of candy equally between 3 of her friends: 1 "
 "girl and 2 boys. Can she split the pieces of candy equally?"
 msgstr ""
-"Moza dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri mes 3 nga "
-"shokët e saj: 1 vjazë dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
+"Moza dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri me 3 nga "
+"shokët e saj: 1 vajzë dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
 "copat e kallamsheqerit?"
 
 #: activities/share/resource/1/Data.qml:90
@@ -23305,7 +23306,7 @@ msgid ""
 "boy and 2 girls. The boy already has one. Can he make sure that they all "
 "have the same amount?"
 msgstr ""
-"Goni dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri mes 3 nga "
+"Goni dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri me 3 nga "
 "shokët e tij: 1 djalë dhe 2 vajza. Djali ka tashmë një copë. I ndan dot ai "
 "që të tërë të kenë të njëjtën sasi?"
 
@@ -23315,9 +23316,9 @@ msgid ""
 "Paul wants to share 12 pieces of candy equally between 3 of his friends: 2 "
 "boys and 1 girl. Can he split the pieces of candy equally?"
 msgstr ""
-"Koli dëshiron të ndajë në mënyrë të barabartë 12 copa kallamsheqeri mes 3 "
-"nga shokët e tij: 2 djem dhe 1 vajzë. I ndan dot në mënyrë të barabartë ai "
-"copat e kallamsheqerit?"
+"Koli dëshiron të ndajë në mënyrë të barabartë 12 copa kallamsheqeri me 3 nga "
+"shokët e tij: 2 djem dhe 1 vajzë. I ndan dot në mënyrë të barabartë ai copat "
+"e kallamsheqerit?"
 
 #: activities/share/resource/1/Data.qml:110
 msgctxt "Data|"
@@ -23326,9 +23327,9 @@ msgid ""
 "2 girls. The girls already have some pieces of candy. Can she split the "
 "pieces of candy so that they all have the same amount?"
 msgstr ""
-"Moza dëshiron të ndajë në mënyrë të barabartë 11 copa kallamsheqeri mes 3 "
-"nga shokët e saj: 1 djalë dhe 2 vajza. Vajzat kanë tashmë ca copa. I ndan "
-"dot ajo copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
+"Moza dëshiron të ndajë në mënyrë të barabartë 11 copa kallamsheqeri me 3 nga "
+"shokët e saj: 1 djalë dhe 2 vajza. Vajzat kanë tashmë ca copa. I ndan dot "
+"ajo copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
 #: activities/share/resource/1/Data.qml:122
 #: activities/share/resource/2/Data.qml:112
@@ -23423,7 +23424,7 @@ msgid ""
 "Charles wants to share his 6 pieces of candy equally with 2 of his girl "
 "friends. Can he split the pieces of candy equally?"
 msgstr ""
-"Koli dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri mes 2 nga "
+"Koli dëshiron të ndajë në mënyrë të barabartë 6 copa kallamsheqeri me 2 nga "
 "shoqet e tij. I ndan dot në mënyrë të barabartë ai copat e kallamsheqerit?"
 
 #: activities/share/resource/1/Data.qml:236
@@ -23517,7 +23518,7 @@ msgid ""
 "girls. The boy already has one piece of candy. Can he split the pieces of "
 "candy so that they all have the same amount?"
 msgstr ""
-"Tori dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri mes 3 nga "
+"Tori dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri me 3 nga "
 "shokët e tij: 1 djalë dhe 2 vajza. Djali ka tashmë një copë. I ndan dot ai "
 "copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
@@ -23528,7 +23529,7 @@ msgid ""
 "girls. The girls already have some pieces of candy. Can she split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Moza dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri mes 3 nga "
+"Moza dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri me 3 nga "
 "shokët e saj: 1 djalë dhe 2 vajza. Vajzat kanë tashmë ca copa. I ndan dot "
 "ajo copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
@@ -23539,15 +23540,15 @@ msgid ""
 "2 girls. The boy already has some pieces of candy. Can he split the pieces "
 "of candy so that they all have the same amount?"
 msgstr ""
-"Tori dëshiron të ndajë në mënyrë të barabartë 12 copa kallamsheqeri mes 3 "
-"nga shokët e saj: 1 djalë dhe 2 vajza. Djali ka tashmë ca copa. I ndan dot "
-"ai copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
+"Tori dëshiron të ndajë në mënyrë të barabartë 12 copa kallamsheqeri me 3 nga "
+"shokët e saj: 1 djalë dhe 2 vajza. Djali ka tashmë ca copa. I ndan dot ai "
+"copat e kallamsheqerit që të tërë të kenë të njëjtën sasi?"
 
 #: activities/share/resource/2/Data.qml:122
 msgctxt "Data|"
 msgid "Now, Alice wants to share 8 pieces of candy equally among her friends."
 msgstr ""
-"Tashti Lulja dëshiron të ndajë në mënyrë të barabartë 8 copa kallamsheqeri "
+"Tashti Lulja dëshiron t’u ndajë në mënyrë të barabartë 8 copa kallamsheqeri "
 "shokëve të saj."
 
 #: activities/share/resource/2/Data.qml:132
@@ -23563,8 +23564,8 @@ msgstr ""
 msgctxt "Data|"
 msgid "Alice wants to share 16 pieces of candy equally among her friends."
 msgstr ""
-"Lulja dëshiron të ndajë në mënyrë të barabartë 16 copa kallamsheqeri shokëve "
-"të saj."
+"Lulja dëshiron t’u ndajë në mënyrë të barabartë 16 copa kallamsheqeri "
+"shokëve të saj."
 
 #: activities/share/resource/2/Data.qml:152
 msgctxt "Data|"
@@ -23648,9 +23649,9 @@ msgid ""
 "girls and 2 boys. Can he equally split the pieces of candy between his "
 "friends?"
 msgstr ""
-"Gimi dëshiron të ndajë në mënyrë të barabartë 14 copa kallamsheqeri mes 4 "
-"nga shokët e tij: 2 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
-"copat e kallamsheqerit?"
+"Gimi dëshiron të ndajë në mënyrë të barabartë 14 copa kallamsheqeri me 4 nga "
+"shokët e tij: 2 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë ai copat "
+"e kallamsheqerit?"
 
 #: activities/share/resource/2/Data.qml:246
 msgctxt "Data|"
@@ -23659,8 +23660,8 @@ msgid ""
 "girls and 2 boys. Can she share the pieces of candy equally between her "
 "friends?"
 msgstr ""
-"Moza dëshiron të ndajë në mënyrë të barabartë 23 copa kallamsheqeri mes 5 "
-"nga shokët e saj: 3 vjaza dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
+"Moza dëshiron të ndajë në mënyrë të barabartë 23 copa kallamsheqeri me 5 nga "
+"shokët e saj: 3 vajza dhe 2 djem. I ndan dot në mënyrë të barabartë ajo "
 "copat e kallamsheqerit?"
 
 #: activities/share/resource/3/Data.qml:13
@@ -23779,7 +23780,7 @@ msgstr "Numra deri në 3."
 #: activities/smallnumbers/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr "Shtypni numrin te dominoja, 1 ose 2."
+msgstr "Shtypni numrin te zari, 1 ose 2."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
 msgctxt "Data|"
@@ -23963,8 +23964,9 @@ msgid ""
 "Stellarium (https://stellarium.org/) which are astronomy Free Software."
 msgstr ""
 "Mësoni të dhëna rreth sistemit diellor. Nëse doni të mësoni më tepër rreth "
-"astronomisë, provoni duke shkarkuar KStars (https://edu.kde.org/kstars/) ose "
-"Stellarium (https://stellarium.org/) që janë Software i Lirë për astronomi."
+"astronomisë, provoni duke shkarkuar KStars (https://edu.kde.org/kstars/), "
+"ose Stellarium (https://stellarium.org/) që janë Software i Lirë për "
+"astronomi."
 
 #. Help manual
 #: activities/solar_system/ActivityInfo.qml:26
@@ -23974,9 +23976,9 @@ msgid ""
 "Each question contains 4 options. One of those is 100% correct. Try to "
 "answer the questions until you get 100% in the closeness meter."
 msgstr ""
-"Klikoni mbi një planet ose mbi Diellin dhe përgjigjuni pyetjeve përkatëse. "
+"Klikoni mbi një planet, ose mbi Diellin dhe përgjigjuni pyetjeve përkatëse. "
 "Çdo pyetje përmban 4 mundësi. Një nga këto është 100% e saktë. Përpiquni t’u "
-"përgjigjeni pyetjeve derisa të shihni 100% te matësi i afërsisë."
+"përgjigjeni pyetjeve deri sa të shihni 100% te matësi i afërsisë."
 
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24307,7 +24309,7 @@ msgstr "Në cilin pozicion gjendet Afërdita në Sistemin Diellor?"
 #: activities/solar_system/Dataset.js:103
 msgctxt "Dataset|"
 msgid "Second"
-msgstr "I dyti"
+msgstr "E dyta"
 
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
@@ -24443,7 +24445,7 @@ msgstr "Në cilin pozicion gjendet Toka në Sistemin Diellor?"
 #: activities/solar_system/Dataset.js:154
 msgctxt "Dataset|"
 msgid "Third"
-msgstr "I treti"
+msgstr "E treta"
 
 #: activities/solar_system/Dataset.js:154
 #: activities/solar_system/Dataset.js:205
@@ -24644,7 +24646,7 @@ msgstr "Jupiteri"
 #: activities/solar_system/Dataset.js:342
 msgctxt "Dataset|"
 msgid "The length of a year on Saturn is 29.5 Earth years."
-msgstr "Gjatësi e një viti në Saturn është 29.5 vjet tokësorë."
+msgstr "Gjatësia e një viti në Saturn është 29.5 vjet tokësorë."
 
 #: activities/solar_system/Dataset.js:255
 msgctxt "Dataset|"
@@ -24701,8 +24703,7 @@ msgstr "10 orë"
 msgctxt "Dataset|"
 msgid ""
 "How long does it take for Jupiter to make one revolution around the Sun?"
-msgstr ""
-"Sa kohë i duhet Tokës Jupiterit që të bëjë një rrotullim rreth Diellit?"
+msgstr "Sa kohë i duhet Jupiterit që të bëjë një rrotullim rreth Diellit?"
 
 #: activities/solar_system/Dataset.js:286
 msgctxt "Dataset|"
@@ -24820,7 +24821,7 @@ msgstr "Urani"
 #: activities/solar_system/Dataset.js:341
 msgctxt "Dataset|"
 msgid "The temperature on Saturn is -178 °C."
-msgstr "Temperatura në Saturn është e -178 °C."
+msgstr "Temperatura në Saturn është -178 °C."
 
 #: activities/solar_system/Dataset.js:345
 msgctxt "Dataset|"
@@ -24904,7 +24905,7 @@ msgstr "Temperatura maksimum në Saturn është -178 °C."
 #: activities/solar_system/Dataset.js:387
 msgctxt "Dataset|"
 msgid "The length of a year on Uranus is 84 Earth years."
-msgstr "Gjatësi e një viti në Uran është 84 vjet Toke."
+msgstr "Gjatësia e një viti në Uran është 84 vjet Toke."
 
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
@@ -25000,7 +25001,7 @@ msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
 "questions."
 msgstr ""
-"Bukur! Mund të riluani provimin që të provoni dijet tuaja me më shumë pyetje."
+"Bukur! Mund të ribëni provimin që të provoni dijet tuaja me më shumë pyetje."
 
 #: activities/solar_system/SolarSystem.qml:160
 #, qt-format
@@ -25060,7 +25061,7 @@ msgid ""
 "the bottom right of the screen shows your percentage score."
 msgstr ""
 "Fillimisht ka 20 pyetje me 4 mundësi secila. Shtylla e ecurisë djathtas "
-"poshtë ekrani tregon pikët tuaja si përqindje."
+"poshtë ekranit tregon pikët tuaja si përqindje."
 
 #: activities/solar_system/SolarSystem.qml:171
 msgctxt "SolarSystem|"
@@ -25073,7 +25074,7 @@ msgstr ""
 "Nëse përgjigja juaj është e saktë, pikët tuaja shtohen.<br>Nëse përgjigja "
 "juaj është e gabuar, pikët tuaja ulen dhe në fund do t’ju bëhet edhe një "
 "pyetje tjetër, tok me pyetjen së cilës iu përgjigjët gabimisht.<br>Do të "
-"pyeten maksimumi 25 pyetje, pas të cilave s’do të shtohet pyetje tjetër."
+"bëhen maksimumi 25 pyetje, pas të cilave s’do të shtohet pyetje tjetër."
 
 #: activities/solar_system/SolarSystem.qml:172
 msgctxt "SolarSystem|"
@@ -25282,7 +25283,7 @@ msgstr "Objekti në krah të motorit është depozita e balastit."
 msgctxt "submarine|"
 msgid "The ballast tanks are used to float or dive under water."
 msgstr ""
-"Depozitat e balastit përdore për të pluskuar ose për t’u zhytur nën ujë."
+"Depozitat e balastit përdoren, për të pluskuar ose për t’u zhytur nën ujë."
 
 #: activities/submarine/submarine.js:29
 msgctxt "submarine|"
@@ -25897,9 +25898,9 @@ msgid ""
 "him."
 msgstr ""
 "Klikoni mbi elementë të ndryshëm aktivë: diell, re, stacion pompimi dhe "
-"stacioni të trajtimit të ujërave të zeza, që të mund të riaktivizoni krejt "
-"sistemin ujor. Kur sistemi të jetë sërish në punë dhe Tux-i në dush, shtypni "
-"për të butonin e dushit."
+"stacion trajtimi ujërash të zeza, që të mund të riaktivizoni krejt sistemin "
+"ujor. Kur sistemi të jetë sërish në punë dhe Tux-i në dush, shtypni për të "
+"butonin e dushit."
 
 #: activities/watercycle/Watercycle.qml:80
 msgctxt "Watercycle|"
@@ -25947,7 +25948,7 @@ msgstr ""
 #: activities/watercycle/Watercycle.qml:86
 msgctxt "Watercycle|"
 msgid "Great, click on the shower, as Tux arrives home."
-msgstr "Bukur, klikoni mbi dushi, teksa Tux-i mbërrin në shtëpi."
+msgstr "Bukur, klikoni mbi dushin, teksa Tux-i mbërrin në shtëpi."
 
 #: activities/watercycle/Watercycle.qml:87
 msgctxt "Watercycle|"
@@ -25964,7 +25965,7 @@ msgid ""
 msgstr ""
 "Cikli ujor (i njohur edhe si cikël hidrologjik) është udhëtimi që bën uji "
 "teksa qarkullon nga toka në ajër dhe prapë në të. Nxehtësia e diellit "
-"furnizon energjinë që avullin ujin nga masa ujore të tilla si oqeanet."
+"furnizon energjinë që avullon ujin nga masa ujore të tilla si oqeanet."
 
 #: activities/watercycle/Watercycle.qml:117
 msgctxt "Watercycle|"
@@ -26076,7 +26077,7 @@ msgstr ""
 #: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
-msgstr "U shtua përkthime për arabishten dhe esperanton"
+msgstr "U shtuan përkthime për arabishten dhe esperanton"
 
 #: core/ChangeLog.qml:56 core/ChangeLog.qml:63
 msgctxt "ChangeLog|"
@@ -26105,7 +26106,7 @@ msgstr "Hartë e Spanjës shtuar për veprimtari gjeografie"
 #: core/ChangeLog.qml:74
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
-msgstr "U shtun zërat për ukrainishten"
+msgstr "U shtuan zërat për ukrainishten"
 
 #: core/ChangeLog.qml:75
 msgctxt "ChangeLog|"
@@ -26350,9 +26351,9 @@ msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
 "place (loading an activity for example) and can take some seconds."
 msgstr ""
-"Shtim i një treguesi ngarkimi për ta lënë përdoruesin të dijë po kryhen disa "
-"veprime (ngarkimi i një veprimtarie, për shembull) dhe kjo mund të hajë disa "
-"sekonda."
+"Shtim i një treguesi ngarkimi për ta lënë përdoruesin të dijë se po kryhen "
+"disa veprime (ngarkimi i një veprimtarie, për shembull) dhe kjo mund të hajë "
+"disa sekonda."
 
 #: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
@@ -26386,7 +26387,7 @@ msgid ""
 "This activity uses language sound files, that are not yet installed on your "
 "system."
 msgstr ""
-"KJo veprimtari përdor kartela zanore gjuhësh, të cilat s’janë instaluar ende "
+"Kjo veprimtari përdor kartela zanore gjuhësh, të cilat s’janë instaluar ende "
 "në sistemin tuaj."
 
 #: core/core.js:225
@@ -26440,7 +26441,7 @@ msgstr "Licencë"
 #: core/DialogAbout.qml:46 core/DialogAbout.qml:47
 msgctxt "DialogAbout|"
 msgid "translator-credits"
-msgstr "kredite përkthyesi"
+msgstr "Besnik Bleta"
 
 #: core/DialogAbout.qml:55
 #, qt-format
@@ -26514,10 +26515,10 @@ msgid ""
 "\"Wishlist\"."
 msgstr ""
 "Software-i mund të përmirësohet përherë dhe ekipi i KDE-së është gati ta "
-"bëjë këtë. Por, ju - përdoruesi - duhet të na tregojë kur diçka nuk "
-"funksionon si pritet ose mund të ishte bërë më mirë.<br /><br />KDE-ja ka "
-"një sistem ndjekje të metash. Që të njoftoni një të metë, vizitoni <a href="
-"\"%1\">%1</a>.<br /><br />Nëse keni një sugjerim për përmirësim, jeni i "
+"bëjë këtë. Por, ju - përdoruesi - duhet të na tregoni, kur diçka "
+"s’funksionon siç pritet, ose mund të ishte bërë më mirë.<br /><br />KDE-ja "
+"ka një sistem ndjekje të metash. Që të njoftoni një të metë, vizitoni <a "
+"href=\"%1\">%1</a>.<br /><br />Nëse keni një sugjerim për përmirësim, jeni i "
 "mirëpritur të përdorni sistemin e ndjekjes së të metave, që të regjistrohet "
 "ajo çka doni. Sigurohuni se si rëndësi zgjidhni “Wishlist”."
 
@@ -26533,14 +26534,6 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"You do not have to be a software developer to be a member of the KDE team. "
-"You can join the language teams that translate program interfaces. You can "
-"provide graphics, themes, sounds, and improved documentation. You decide!"
-"<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
-"which you can participate.<br /><br />If you need more information or "
-"documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
-"what you need.\n"
-"\n"
 "S’duhet doemos të jeni zhvillues software-i, që të jeni një anëtar i ekipit "
 "KDE. Mund të bëheni pjesë e ekipeve të gjuhëve, që përkthejnë ndërfaqe "
 "programesh. Mund të sillni art grafik, tema, tinguj dhe dokumentim të "
@@ -27021,7 +27014,7 @@ msgid ""
 "Some activities have new dataset available. Do you want to reset their "
 "dataset selection?"
 msgstr ""
-"Disa nga veprimtaritë kanë grupe të reja të dhëash. Doni që përzgjedhja për "
+"Disa nga veprimtaritë kanë grupe të reja të dhënash. Doni që përzgjedhja për "
 "grupin e tyre të të dhënave të rikthehet te parazgjedhja?"
 
 #: core/main.qml:389
@@ -27058,31 +27051,3 @@ msgstr "Anashkaloje"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Fillo"
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
-
-#~ msgctxt "board5_2|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Kseleriferi i Kontit de Sivrak"
-
-#~ msgctxt "board5_3|"
-#~ msgid "1791 Comte de Sivrac's Celerifere"
-#~ msgstr "1791 Kseleriferi i Kontit de Sivrak"
-
-#~ msgctxt "Warning|"
-#~ msgid "%1 is divisible by %2"
-#~ msgstr "%1 është i pjesëtueshëm me %2"
-
-#~ msgctxt "Warning|"
-#~ msgid "and"
-#~ msgstr "dhe"
-
-#~ msgctxt "Warning|"
-#~ msgid "Multiples of %1 include %2, "
-#~ msgstr "Te shumëfishat e %1 përfshihet %2, "
-
-#~ msgctxt "Warning|"
-#~ msgid "and %1 are the divisors of %2."
-#~ msgstr "dhe %1 janë pjesëtues të %2."
