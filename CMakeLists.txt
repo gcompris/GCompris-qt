@@ -31,6 +31,7 @@ endif()
 string(TIMESTAMP BUILD_DATE %Y%m)
 
 include(FeatureSummary)
+include(GNUInstallDirs)
 
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
@@ -161,11 +162,9 @@ set(GRAPHICAL_RENDERER "auto" CACHE STRING "Policy for choosing the renderer bac
 # Set output directory
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
-  set(_data_dest_dir bin/${_bundle_bin}/../Resources)
-elseif(HAIKU)
-  set(_data_dest_dir data/Qt6/${GCOMPRIS_EXECUTABLE_NAME})
+  set(_data_dest_dir ${CMAKE_INSTALL_BINDIR}/${_bundle_bin}/../Resources)
 else()
-  set(_data_dest_dir share/${GCOMPRIS_EXECUTABLE_NAME})
+  set(_data_dest_dir ${CMAKE_INSTALL_DATADIR}/${GCOMPRIS_EXECUTABLE_NAME})
 endif()
 if(ANDROID)
   # Android .so output
@@ -268,7 +267,7 @@ add_custom_target(BuildTranslations ALL
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 elseif(ANDROID)
-  install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION "share")
+  install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${CMAKE_INSTALL_DATADIR})
 else()
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_data_dest_dir})
 endif()
