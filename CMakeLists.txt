@@ -31,6 +31,7 @@ endif()
 string(TIMESTAMP BUILD_DATE %Y%m)
 
 include(FeatureSummary)
+include(GNUInstallDirs)
 
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
