@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-11-29 09:30+0300\n"
+"PO-Revision-Date: 2024-12-06 17:38+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -23934,23 +23934,16 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Вы не захавалі выяву. Вы жадаеце закрыць практыкаванне?"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Ці жадаеце заладаваць іх зараз ?"
+msgstr "Вы жадаеце сцерці гэтую выяву?"
 
 #: activities/sketch/Sketch.qml:675
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Так"
 
 #: activities/sketch/Sketch.qml:676
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Не"
@@ -23971,9 +23964,6 @@ msgid "Type your text here"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Прылады"
@@ -23994,9 +23984,6 @@ msgid "Size"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Хуткасць"
@@ -24007,12 +23994,9 @@ msgid "Density"
 msgstr ""
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Кропкі"
+msgstr "Памер кропкі"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
@@ -24025,12 +24009,9 @@ msgid "Rotation"
 msgstr "Паварот"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Адлюструйце дадзены малюнак"
+msgstr "У люстраным выглядзе"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -24166,22 +24147,15 @@ msgstr "Лікі з даміно"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr ""
-"Падлічыце колькасці кропак на кубіках, перад тым як яны ўпадуць на дол."
+msgstr "Падлічыце колькасць кропак на даміно, перад тым як яны ўпадуць на дол."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr "Увядзіце з клавіятуры колькасць кропак на кожным падаючым кубіку."
+msgstr "Увядзіце з клавіятуры колькасць кропак на кожным падаючым даміно."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -24441,12 +24415,9 @@ msgid "The maximum temperature on Earth is 58 °C."
 msgstr "Максімальнай тэмпературай на Зямлі з'яўляецца 58 °C."
 
 #: activities/solar_system/Dataset.js:54 activities/solar_system/Dataset.js:150
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Venus is 225 days."
 msgctxt "Dataset|"
 msgid "The length of a year on Venus is 225 Earth days."
-msgstr "Даўжыня года на Венеры складаецца з 225 дзён."
+msgstr "Даўжыня года на Венеры складае 225 Зямных дзён."
 
 #: activities/solar_system/Dataset.js:57
 msgctxt "Dataset|"
@@ -24557,12 +24528,9 @@ msgid "365 Earth days"
 msgstr "365 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:82
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "365 Earth days"
 msgctxt "Dataset|"
 msgid "433 Earth days"
-msgstr "365 Зямных дзён"
+msgstr "433 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:82 activities/solar_system/Dataset.js:127
 msgctxt "Dataset|"
@@ -24663,28 +24631,19 @@ msgid "How long is a year on Venus?"
 msgstr "Колькі доўжыцца год на Венеры?"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "50 Earth days"
 msgctxt "Dataset|"
 msgid "225 Earth days"
-msgstr "50 Зямных дзён"
+msgstr "225 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "117 Earth days"
 msgctxt "Dataset|"
 msgid "116 Earth days"
-msgstr "117 Зямных дзён"
+msgstr "116 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:121
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "107 Earth days"
 msgctxt "Dataset|"
 msgid "100 Earth days"
-msgstr "107 Зямных дзён"
+msgstr "100 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:126
 msgctxt "Dataset|"
@@ -24692,12 +24651,9 @@ msgid "How long is one rotation on Venus?"
 msgstr "Колькі займае адзін абарот Венеры?"
 
 #: activities/solar_system/Dataset.js:127
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "365 Earth days"
 msgctxt "Dataset|"
 msgid "243 Earth days"
-msgstr "365 Зямных дзён"
+msgstr "243 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
@@ -24928,28 +24884,19 @@ msgid "How long does it take for Mars to make one revolution around the Sun?"
 msgstr "За які час Марс робіць адзін абарот вакол Сонца?"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "88 Earth days"
 msgctxt "Dataset|"
 msgid "687 Earth days"
-msgstr "88 Зямных дзён"
+msgstr "687 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "50 Earth days"
 msgctxt "Dataset|"
 msgid "30 Earth days"
-msgstr "50 Зямных дзён"
+msgstr "30 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:235
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "107 Earth days"
 msgctxt "Dataset|"
 msgid "7 Earth days"
-msgstr "107 Зямных дзён"
+msgstr "7 Зямных дзён"
 
 #: activities/solar_system/Dataset.js:240
 msgctxt "Dataset|"
@@ -25155,28 +25102,19 @@ msgid "How many years does it take for Uranus to go once around the Sun?"
 msgstr "Колькі гадоў займае адзін абарот Урана вакол Сонца?"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "12 Earth years"
 msgctxt "Dataset|"
 msgid "24 Earth years"
-msgstr "12 Зямных год"
+msgstr "24 Зямных гадоў"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "68 Earth years"
-msgstr "5 Зямных год"
+msgstr "68 Зямных гадоў"
 
 #: activities/solar_system/Dataset.js:352
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "84 Earth years"
-msgstr "5 Зямных год"
+msgstr "84 Зямных гадоў"
 
 #: activities/solar_system/Dataset.js:357
 msgctxt "Dataset|"
@@ -25226,12 +25164,9 @@ msgid "The maximum temperature on Saturn is -178 °C."
 msgstr "Максімальная тэмпература на Сатурне складае -178 °C."
 
 #: activities/solar_system/Dataset.js:387
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "The length of a year on Uranus is 84 years."
 msgctxt "Dataset|"
 msgid "The length of a year on Uranus is 84 Earth years."
-msgstr "Даўжыня году на Уране складае 84 гады."
+msgstr "Даўжыня году на Уране складае 84 Зямных гадоў."
 
 #: activities/solar_system/Dataset.js:390
 msgctxt "Dataset|"
@@ -25245,28 +25180,19 @@ msgid ""
 msgstr "За які час Нептун робіць адзін абарот вакол Сонца?"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "5 Earth years"
 msgctxt "Dataset|"
 msgid "165 Earth years"
-msgstr "5 Зямных год"
+msgstr "165 Зямных гадоў"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "30 Earth years"
 msgctxt "Dataset|"
 msgid "3 Earth years"
-msgstr "30 Зямных год"
+msgstr "3 Зямныя гады"
 
 #: activities/solar_system/Dataset.js:397
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "10 Earth years"
 msgctxt "Dataset|"
 msgid "100 Earth years"
-msgstr "10 Зямных гадоў"
+msgstr "100 Зямных гадоў"
 
 #: activities/solar_system/Dataset.js:402
 msgctxt "Dataset|"
