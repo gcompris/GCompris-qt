@@ -174,12 +174,12 @@ Rectangle {
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
                                    qsTr("%1 deleted successfully!").arg(filePath),
-                                   qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
+                                   qsTr("OK"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
         else {
             Core.showMessageDialog(creationHandler,
                                    qsTr("Unable to delete %1!").arg(filePath),
-                                   qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
+                                   qsTr("OK"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
 
         creationsList.currentIndex = -1
@@ -232,7 +232,7 @@ Rectangle {
         }
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
-                               qsTr("Ok"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); });
+                               qsTr("OK"), function() { close(); }, "", null, function() { restoreFocusTimer.restart(); });
         saved();
         refreshTimer.restart();
     }
