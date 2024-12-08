@@ -69,7 +69,7 @@ ActivityBase {
             Core.showMessageDialog(activity,
                                   qsTr("You selected the user-defined level set, but you have not yet loaded any user level!") + "<br/>" +
                                   Activity.createLevelsMsg,
-                                  qsTr("Ok"), null,
+                                  qsTr("OK"), null,
                                   "", null,
                                   null);
         }
