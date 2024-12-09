@@ -2661,9 +2661,12 @@ msgstr ""
 "user level!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "Ok"
+msgid "OK"
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27023,9 +27026,12 @@ msgstr "%1 deleted successfully!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "Ok"
+msgid "OK"
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27316,6 +27322,14 @@ msgstr "Skip"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Ok"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -32502,10 +32516,6 @@ msgstr "Start"
 #~ msgctxt "board9_0|"
 #~ msgid "South Africa"
 #~ msgstr "South Africa"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

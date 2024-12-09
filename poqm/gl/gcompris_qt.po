@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-11-13 21:36+0100\n"
+"PO-Revision-Date: 2024-12-08 20:21+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -1724,7 +1724,7 @@ msgstr "Conmutador"
 #: activities/analog_electricity/TutorialDataset.qml:56
 msgctxt "TutorialDataset|"
 msgid "Simple connector"
-msgstr "Punto de conexión"
+msgstr "Conector simple"
 
 #: activities/analog_electricity/TutorialDataset.qml:64
 msgctxt "TutorialDataset|"
@@ -1999,7 +1999,7 @@ msgid ""
 "bulb intensity should vary while dragging the slider."
 msgstr ""
 "Conecta a lámpada ás terminais axeitadas do reóstato e move o regulador de "
-"xeito que o voltaxe da lámpada sexa de 10V. Fíxate en que a intensidade da "
+"xeito que a voltaxe da lámpada sexa de 10 V. Fíxate en que a intensidade da "
 "lámpada cambia segundo vas arrastrando o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
@@ -2069,8 +2069,8 @@ msgid ""
 "Create a circuit so that the voltage drop in both bulbs are equal to the "
 "voltage source (battery)."
 msgstr ""
-"Crea un circuíto de xeito que a diferencia de voltaxe en ambas lámpadas sexa "
-"igual ao da fonte de voltaxe (a batería)."
+"Crea un circuíto de xeito que a diferencia de voltaxe en ambas as lámpadas "
+"sexa igual á da fonte de voltaxe (a batería)."
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
@@ -2656,8 +2656,11 @@ msgstr ""
 "Escolliches os niveis creados por usuarios, pero non cargaches ningún nivel!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "Aceptar"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -7766,7 +7769,7 @@ msgid ""
 "buildings in Europe."
 msgstr ""
 "A atracción estrela de Aviñón é o Palacio dos Papas, un basto castelo con "
-"gran importancia histórica, relixiosa e arquitectónica. Trátase dun dos "
+"grande importancia histórica, relixiosa e arquitectónica. Trátase dun dos "
 "edificios europeos góticos medievais máis grandes e importantes."
 
 #: activities/explore_monuments/resource/board/board3.qml:106
@@ -8031,7 +8034,7 @@ msgid ""
 "still a Spanish territory. Constructed out of the rare coquina limestone, "
 "the star-shaped Castillo also is the oldest masonry fort in the country."
 msgstr ""
-"Estabelecido en máis de 8 hectáreas en San Agustín, Florida, o Castelo de "
+"Estabelecido en máis de 8 hectáreas en Santo Agustín, Florida, o Castelo de "
 "San Marcos completouse en 1695 para servir como forte que defendese a "
 "cidade, cando Florida aínda era territorio español. Construído cun material "
 "pouco común, coquina calcaria, o castelo con forma de estrela é o forte de "
@@ -8844,8 +8847,8 @@ msgid ""
 "for rock n' roll music. This music features vocalists, guitars, and drums."
 msgstr ""
 "Os Estados Unidos de América teñen tamén unha gran variedade de xéneros "
-"musicais, pero a música rock n’ roll é probabelmente a máis coñecida. Tócase "
-"con vocalistas, guitarras e percusión."
+"musicais, pero a música rock é probabelmente a máis coñecida. Tócase con "
+"vocalistas, guitarras e percusión."
 
 #: activities/explore_world_music/resource/board/board1.qml:130
 msgctxt "board1|"
@@ -14227,7 +14230,7 @@ msgstr ""
 "familias. O factor 5 ten pais (10), avós (15), bisavós (20), etc. Pero o "
 "número 5 non forma parte das familias de 8 ou 23. Non podes cadrar ningunha "
 "cantidade de números 5 nun 8 ou un 23 sen nada restante. Así que 8 e 23 non "
-"son múltiplos de 5. Só son múltiplos (ou “familias” ou “pasos“) de 5 os "
+"son múltiplos de 5. Só son múltiplos (ou “familias” ou “pasos”) de 5 os "
 "números 5, 10, 15, 20, 25, etc."
 
 #. Activity title
@@ -15854,7 +15857,7 @@ msgid ""
 msgstr ""
 "Usa as teclas de arriba e abaixo para controlar o impulso.<br/> Usa as "
 "teclas de esquerda e dereita para controlar a dirección.<br/> Debes conducir "
-"a nave de Tux cara a zona de aterraxe.<br/> A zona de aterraxe vólvese verde "
+"a nave de Tux cara á zona de aterraxe.<br/> A zona de aterraxe vólvese verde "
 "cando a velocidade é axeitada para aterrar con seguridade."
 
 #: activities/land_safe/resource/1/Data.qml:30
@@ -20637,7 +20640,7 @@ msgstr "Ejiri na provincia de Suruga, Katsushika Hokusai, 1830-1833"
 #: activities/paintings/resource/board/board7_0.qml:14
 msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
-msgstr "A gran onda ás aforas de Kanagawa, Katsushika Hokusai, 1823-1829"
+msgstr "A grande onda ás aforas de Kanagawa, Katsushika Hokusai, 1823-1829"
 
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
@@ -20896,7 +20899,7 @@ msgstr ""
 "compoñer música cun teclado de piano. Esta actividade cubre moitos aspectos "
 "fundamentais da música, pero hai moito máis para explorar sobre composición "
 "musical. Se gozas desta actividade pero queres unha ferramenta máis avanzada "
-"proba a descargar Minuet (https://minuet.kde.org/), un software libre de "
+"proba a descargar Minuet (https://minuet.kde.org/), un programa libre de "
 "educación musical, ou MuseScore (https://musescore.org), unha ferramenta "
 "libre de notación musical."
 
@@ -22046,7 +22049,7 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
-"<b>1. Avanzar:</b> Move a Tux un paso cada adiante na dirección cara a que "
+"<b>1. Avanzar:</b> Move a Tux un paso cada adiante na dirección cara á que "
 "mira."
 
 #: activities/programmingMaze/programmingMaze.js:99
@@ -26708,7 +26711,7 @@ msgstr "Corrixe na actividade de braille onde as celas comezan en 1, non 0."
 #: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
-msgstr "Engadíronse traducións para o éuscara, o húngaro e o malaio."
+msgstr "Engadíronse traducións para o éuscaro, o húngaro e o malaio."
 
 #: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
@@ -26912,15 +26915,15 @@ msgid ""
 ">Visit <a href=\"%2\">%2</a> for more information about the KDE community "
 "and the software we produce."
 msgstr ""
-"<b>KDE</b> é unha rede mundial de enxeñeiros de software, artistas, "
-"escritores, tradutores e facilitadores comprometidos co desenvolvemento do "
-"<a href=\"%1\">software libre</a>. Esta comunidade creou centos de "
-"aplicacións de software libre como parte das infraestruturas, dos espazos de "
-"traballo e das aplicacións de KDE.<br /><br />KDE é un proxecto cooperativo "
-"no que ningunha entidade única controla nin os esforzos nin os produtos de "
-"KDE excluíndo os demais. Todo o mundo é benvido a unirse e colaborar con "
-"KDE, vostede incluído.<br /><br />Visite <a href=\"%2\">%2</a> para obter "
-"máis información sobre a comunidade KDE e do software que produce."
+"<b>KDE</b> é unha rede mundial de persoas que programan, deseñan, escriben,"
+"traducen e colaboran de mil maneiras, comprometidas co desenvolvemento dos "
+"<a href=\"%1\">programas libres</a>. Esta comunidade creou centos de "
+"aplicacións libres como parte das infraestruturas, dos espazos de traballo e "
+"das aplicacións de KDE.<br /><br />KDE é un proxecto cooperativo no que "
+"ningunha entidade única controla nin os esforzos nin os produtos de KDE "
+"excluíndo os demais. Todo o mundo é benvido a unirse e colaborar con KDE, "
+"tamén vostede.<br /><br />Visite <a href=\"%2\">%2</a> para obter máis "
+"información sobre a comunidade KDE e dos programas que produce."
 
 #: core/DialogAbout.qml:93
 #, qt-format
@@ -26934,8 +26937,8 @@ msgid ""
 "system to register your wish. Make sure you use the severity called "
 "\"Wishlist\"."
 msgstr ""
-"O software sempre pode mellorarse, e o Equipo de KDE está preparado para "
-"facelo. Porén, vostede - o usuario - ten que informarnos se algo non "
+"Os programas sempre poden mellorarse, e o equipo de KDE está preparado para "
+"facelo. Porén vostede, como persoa usuaria, ten que informarnos se algo non "
 "funciona como debería, ou puidera facerse mellor.<br/><br/>KDE ten un "
 "sistema de seguimento de incidencias. Visite <a href=\"%1\">%1</a> para "
 "comunicar fallos.<br/><br/>Se ten algunha suxestión para facer algunha "
@@ -27188,8 +27191,11 @@ msgstr "%1 eliminouse correctamente!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "Aceptar"
 
 #: core/GCCreationHandler.qml:181
@@ -27318,13 +27324,14 @@ msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Activar o modo de quiosco."
 
+# skip-rule: rag-en-software, rag-gl-software
 #: core/main.cpp:102
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
-"Usar o renderizador de software en vez de openGL (máis lento pero debería "
+"Usar o renderizador lóxico en vez de openGL (máis lento pero debería "
 "funcionar con calquera tarxeta gráfica). Obsoleto, mellor use --"
 "renderer=software."
 
@@ -27334,7 +27341,7 @@ msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
-"Usar o renderizador de openGL en vez de o de software (máis rápido pero pode "
+"Usar o renderizador de openGL en vez de o lóxico (máis rápido pero pode "
 "quebrar segundo a tarxeta gráfica). Obsoleto, mellor use --renderer=opengl."
 
 #: core/main.cpp:109
@@ -27485,6 +27492,14 @@ msgstr "Saltar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Aceptar"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Aceptar"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -31365,10 +31380,6 @@ msgstr "Iniciar"
 #~ msgctxt "LandSafe|"
 #~ msgid "Planet: %1"
 #~ msgstr "Planeta: %1"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "Aceptar"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

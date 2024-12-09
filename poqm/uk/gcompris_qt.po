@@ -2704,8 +2704,8 @@ msgstr ""
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "Гаразд"
+msgid "OK"
+msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27309,8 +27309,8 @@ msgstr "%1 успішно вилучено!"
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "Гаразд"
+msgid "OK"
+msgstr ""
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27606,6 +27606,14 @@ msgstr "Пропустити"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Почати"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Гаразд"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Гаразд"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."

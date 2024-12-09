@@ -2742,9 +2742,12 @@ msgstr ""
 "пользовательского уровня."
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "ОK"
+msgid "OK"
+msgstr "ОК"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27878,9 +27881,12 @@ msgstr "%1 удалён."
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "ОK"
+msgid "OK"
+msgstr "ОК"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -28184,6 +28190,14 @@ msgstr "Пропустить"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Начать"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "ОK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "ОK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -32387,10 +32401,6 @@ msgstr "Начать"
 #~ "В этом упражнении ты изучишь игру шахматы, играя только эндшпиль "
 #~ "(концовку игры). В игре показываются все возможные целевые позиции, чтобы "
 #~ "помочь понять, как ходят фигуры."
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "ОК"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Read training in a limited time"

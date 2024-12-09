@@ -2740,8 +2740,11 @@ msgstr ""
 "niciun nivel de utilizator!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Imageid|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -28059,8 +28062,11 @@ msgstr "%1 s-a șters cu succes!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Imageid|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
@@ -28366,6 +28372,14 @@ msgstr "Sari peste"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "OK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -32523,10 +32537,6 @@ msgstr "Start"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Practice reading by finding the word matching an image"
 #~ msgstr "Exersează citirea găsind cuvântul corespunzător imaginii."
-
-#~ msgctxt "Imageid|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Readingh|"
 #~ msgid "Left to right mode"

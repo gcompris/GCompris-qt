@@ -2703,8 +2703,11 @@ msgstr ""
 "kiwango chochote cha mtumiaji!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "Sawa"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -27766,8 +27769,11 @@ msgstr "%1 dimefanikiwa kuchaguliwa!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "Sawa"
 
 #: core/GCCreationHandler.qml:181
@@ -28072,6 +28078,14 @@ msgstr "Ruka"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Anzisha"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Sawa"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Sawa"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -32544,10 +32558,6 @@ msgstr "Anzisha"
 #~ msgctxt "board9_0|"
 #~ msgid "South Africa"
 #~ msgstr "South Africa"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "Sawa"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

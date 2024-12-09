@@ -2778,8 +2778,8 @@ msgstr ""
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "Oldu"
+msgid "OK"
+msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27921,8 +27921,8 @@ msgstr "%1 uğurla silindi!"
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "Oldu"
+msgid "OK"
+msgstr ""
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -28232,6 +28232,14 @@ msgstr "Ötürün"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başladın"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Oldu"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Oldu"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Logic training activity."

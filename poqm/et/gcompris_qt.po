@@ -2767,8 +2767,11 @@ msgstr ""
 "kasutajataset laadinud!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -27762,8 +27765,11 @@ msgstr "%1 kustutati edukalt!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
@@ -28073,6 +28079,14 @@ msgstr "Jäta vahele"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Alusta"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "OK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -29931,10 +29945,6 @@ msgstr "Alusta"
 #~ "Siin saab õppida malemängu, mängides ainult lõppmängu. Kui valida nupp, "
 #~ "näidatakse kõiki kohti, kuhu sellega saab käia, mis aitab õppida tundma "
 #~ "vigurite käiguvõimalusi."
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

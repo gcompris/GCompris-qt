@@ -2689,8 +2689,11 @@ msgstr ""
 "geen gebruikersniveau geladen!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -27303,8 +27306,11 @@ msgstr "%1 met succes verwijderd!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
@@ -27599,6 +27605,14 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "OK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -32869,10 +32883,6 @@ msgstr "Begin"
 #~ msgctxt "LandSafe|"
 #~ msgid "Planet: %1"
 #~ msgstr "Planeet: %1"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

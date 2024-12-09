@@ -2559,9 +2559,12 @@ msgstr ""
 "žiadne úrovne používateľa."
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "Ok"
+msgid "OK"
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27821,9 +27824,12 @@ msgstr "%1 úspešne vymazané!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "Ok"
+msgid "OK"
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -28120,6 +28126,14 @@ msgstr "Preskočiť"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustiť"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Ok"
 
 #, fuzzy
 #~| msgctxt "ConfigurationItem|"
@@ -31149,10 +31163,6 @@ msgstr "Spustiť"
 #~ msgctxt "board9_0|"
 #~ msgid "South Africa"
 #~ msgstr "Južná Afrika"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

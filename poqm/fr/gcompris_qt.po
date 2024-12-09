@@ -2720,8 +2720,11 @@ msgstr ""
 "utilisateurs."
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "Ok"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -27759,8 +27762,11 @@ msgstr "%1 supprimé avec succès"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "Ok"
 
 #: core/GCCreationHandler.qml:181
@@ -28069,6 +28075,14 @@ msgstr "Ignorer"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Démarrer"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Ok"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -33335,10 +33349,6 @@ msgstr "Démarrer"
 #~ msgctxt "board9_0|"
 #~ msgid "South Africa"
 #~ msgstr "Afrique du Sud"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "Ok"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

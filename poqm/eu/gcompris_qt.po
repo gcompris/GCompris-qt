@@ -2687,8 +2687,8 @@ msgstr ""
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "Ados"
+msgid "OK"
+msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27216,8 +27216,8 @@ msgstr "%1 ondo ezabatu da!"
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "Ados"
+msgid "OK"
+msgstr ""
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27513,6 +27513,14 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "Ados"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "Ados"
 
 #~ msgctxt "Menu|"
 #~ msgid ""

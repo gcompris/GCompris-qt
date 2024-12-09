@@ -2792,7 +2792,7 @@ msgstr ""
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -27960,7 +27960,7 @@ msgstr ""
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr ""
 
 #: core/GCCreationHandler.qml:181

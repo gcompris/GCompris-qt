@@ -2662,8 +2662,8 @@ msgstr "您選擇了使用者自訂的關卡集，但尚未載入任何關卡！
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "確定"
+msgid "OK"
+msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -26871,8 +26871,8 @@ msgstr "成功刪除 %1！"
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "確定"
+msgid "OK"
+msgstr ""
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27175,6 +27175,14 @@ msgstr "略過"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "開始"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "確定"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "確定"
 
 #~ msgctxt "Menu|"
 #~ msgid ""

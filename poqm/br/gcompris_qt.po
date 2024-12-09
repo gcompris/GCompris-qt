@@ -2678,9 +2678,12 @@ msgstr ""
 "betek-hen!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "OK"
+msgid "OK"
+msgstr "Mat eo"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -27250,9 +27253,12 @@ msgstr "%1 bet lamet digudenn!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "OK"
+msgid "OK"
+msgstr "Mat eo"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27558,6 +27564,14 @@ msgstr "Tremen hepti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Kregiñ"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "OK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -30612,10 +30626,6 @@ msgstr "Kregiñ"
 #~ "abadenn nemetken. An arvonedoù a vez tizhet gant ar pezhioù e skramm evit "
 #~ "an holl bezhioù diuzet. Komprenet e vo penaos e vez dilec'hiet ar pezhioù "
 #~ "gant ar c'hoarier."
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "Mat eo"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

@@ -2610,8 +2610,8 @@ msgstr "لقد اخترت مجموعة مستويات مخصصة من المست
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "حسنًا"
+msgid "OK"
+msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -26451,8 +26451,8 @@ msgstr "تم حذف %1 بِنَجاح!"
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "حسنًا"
+msgid "OK"
+msgstr ""
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -26737,6 +26737,14 @@ msgstr "تخطّى"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "ابدأ"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "حسنًا"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "حسنًا"
 
 #~ msgctxt "Menu|"
 #~ msgid ""

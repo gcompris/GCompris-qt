@@ -2838,8 +2838,11 @@ msgstr ""
 "keine Benutzerebene geladen!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -28337,8 +28340,11 @@ msgstr "%1 wurde erfolgreich gelöscht."
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
@@ -28648,6 +28654,14 @@ msgstr "Überspringen"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "OK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -33559,10 +33573,6 @@ msgstr "Start"
 #~ msgctxt "board9_0|"
 #~ msgid "South Africa"
 #~ msgstr "Südafrika"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

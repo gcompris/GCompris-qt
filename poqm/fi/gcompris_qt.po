@@ -2701,8 +2701,11 @@ msgstr ""
 "yhtään käyttäjätasoa!"
 
 #: activities/balancebox/Balancebox.qml:72
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "Balancebox|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
@@ -27966,8 +27969,11 @@ msgstr "%1 poistettiin onnistuneesti!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
+#, fuzzy
+#| msgctxt "Hangman|"
+#| msgid "OK"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
+msgid "OK"
 msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
@@ -28275,6 +28281,14 @@ msgstr "Ohita"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Käynnistä"
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "OK"
 
 #~ msgctxt "Menu|"
 #~ msgid ""
@@ -31846,10 +31860,6 @@ msgstr "Käynnistä"
 #~ msgctxt "board9_0|"
 #~ msgid "South Africa"
 #~ msgstr "Etelä-Afrikka"
-
-#~ msgctxt "Hangman|"
-#~ msgid "OK"
-#~ msgstr "OK"
 
 #~ msgctxt "Lang|"
 #~ msgid "The images for this activity are not yet installed."

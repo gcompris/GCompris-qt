@@ -2789,8 +2789,8 @@ msgstr ""
 
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
-msgid "Ok"
-msgstr "ठीक"
+msgid "OK"
+msgstr ""
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -30491,12 +30491,9 @@ msgstr ""
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
-#, fuzzy
-#| msgctxt "Balancebox|"
-#| msgid "Ok"
 msgctxt "GCCreationHandler|"
-msgid "Ok"
-msgstr "ठीक"
+msgid "OK"
+msgstr ""
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -30812,6 +30809,17 @@ msgstr ""
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""
+
+#~ msgctxt "Balancebox|"
+#~ msgid "Ok"
+#~ msgstr "ठीक"
+
+#, fuzzy
+#~| msgctxt "Balancebox|"
+#~| msgid "Ok"
+#~ msgctxt "GCCreationHandler|"
+#~ msgid "Ok"
+#~ msgstr "ठीक"
 
 #, fuzzy
 #~| msgctxt "ConfigurationItem|"
