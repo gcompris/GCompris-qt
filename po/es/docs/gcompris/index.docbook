@@ -214,7 +214,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_home.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Inicio - Abandona la actividad actual y vuelve al menú anterior.</para
+> Inicio: Abandona la actividad actual y vuelve al menú anterior.</para
 ></listitem
 > 
 <listitem
@@ -223,7 +223,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> «Aceptar» - Validar o confirmar tu respuesta. Algunas actividades no detectan automáticamente cuándo has terminado la tarea. En este caso, debes hacer clic en este icono. También puedes usar la tecla &Enter; del teclado.</para
+> «Aceptar»: Validar o confirmar tu respuesta. Algunas actividades no detectan automáticamente cuándo has terminado la tarea. En este caso, debes hacer clic en este icono. También puedes usar la tecla &Enter; del teclado.</para
 ></listitem
 > 
 <listitem
@@ -232,7 +232,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Luz - Muestra una pista para la actividad. Podemos ayudar al niño en algunas actividades para guiarlo a encontrar las respuestas.</para
+> Luz: Muestra una pista para la actividad. Podemos ayudar al niño en algunas actividades para guiarlo a encontrar las respuestas.</para
 ></listitem>
 <listitem
 ><para
@@ -244,7 +244,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_next.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Flechas - Se muestra el nivel actual. Haz clic en una de las flechas para seleccionar otro nivel. Normalmente, las actividades ofrecen varios niveles. En &gcompris; es posible ir al siguiente nivel sin haber completado el nivel actual.</para
+> Flechas: Se muestra el nivel actual. Haz clic en una de las flechas para seleccionar otro nivel. Normalmente, las actividades ofrecen varios niveles. En &gcompris; es posible ir al siguiente nivel sin haber completado el nivel actual.</para
 ></listitem
 > 
 <listitem
@@ -253,7 +253,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Labios - Le piden a &gcompris; que repita la pregunta.</para
+> Labios: Le piden a &gcompris; que repita la pregunta.</para
 ></listitem
 > 
 <listitem
@@ -262,7 +262,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_help.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Signo de interrogación - Muestra un cuadro de ayuda. A veces, una actividad puede ser demasiado compleja para describirla fácilmente en el área informativa. En este caso, esta función proporciona acceso a información adicional.</para
+> Signo de interrogación: Muestra un cuadro de ayuda. A veces, una actividad puede ser demasiado compleja para describirla fácilmente en el área informativa. En este caso, esta función proporciona acceso a información adicional.</para
 ></listitem
 > 
 <listitem
@@ -271,7 +271,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Caja de herramientas - El menú de configuración. La configuración se guarda en la carpeta del usuario con el nombre <filename
+> Caja de herramientas: El menú de configuración. La configuración se guarda en la carpeta del usuario con el nombre <filename
 >.config/gcompris/gcompris-qt.conf</filename
 >, que es un archivo de texto que se puede editar de forma manual.</para
 ></listitem
@@ -282,7 +282,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Listar elemento - Muestra el menú de propiedades de la actividad. Aquí existen dos pestañas posibles. La primera de ellas, «Conjunto de datos», permite escoger los niveles de las actividades dependiendo de varios objetivos; la segunda, «Opciones», permite actualizar la configuración de la actividad, si está disponible. </para
+> Listar elemento: Muestra el menú de propiedades de la actividad. Aquí existen dos pestañas posibles. La primera de ellas, «Conjunto de datos», permite escoger los niveles de las actividades dependiendo de varios objetivos; la segunda, «Opciones», permite actualizar la configuración de la actividad, si está disponible. </para
 ></listitem>
 <listitem
 ><para
@@ -290,7 +290,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_about.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> «G» mayúscula - Cuadro de información sobre &gcompris; que muestra los colaboradores principales y la versión del software.</para
+> «G» mayúscula: Cuadro de información sobre &gcompris; que muestra los colaboradores principales y la versión del software.</para
 ></listitem
 > 
 <listitem
@@ -299,7 +299,7 @@ for example 'xx.yy.zz'
 ><imageobject
 ><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject
 ></inlinemediaobject
-> Botón de apagado - Sale de &gcompris;. También puedes usar el acceso rápido de teclado <keycombo action="simul"
+> Botón de apagado: Sale de &gcompris;. También puedes usar el atajo de teclado <keycombo action="simul"
 >&Ctrl;<keycap
 >Q</keycap
 ></keycombo
@@ -365,13 +365,13 @@ for example 'xx.yy.zz'
 
 <sect2 id="keyboard-shortcuts">
 <title
->Accesos rápidos de teclado</title>
+>Atajos de teclado</title>
 <informaltable>
 <tgroup cols="2">
 <tbody>
 <row>
 <entry
->Acceso rápido</entry>
+>Atajo de teclado</entry>
 <entry
 >Acción</entry>
 </row>

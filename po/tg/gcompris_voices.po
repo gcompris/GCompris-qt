@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-16 00:36+0000\n"
+"POT-Creation-Date: 2024-12-10 00:36+0000\n"
 "PO-Revision-Date: 2021-09-08 23:39-0700\n"
 "Last-Translator: Victor Ibragimov <victor.ibragimov@gmail.com>\n"
 "Language-Team: Tajik Language Support\n"
@@ -1179,6 +1179,20 @@ msgstr ""
 #, kde-format
 msgid ""
 "Slide the cars to make a space so that the red car can go out of the box."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
+#: activities/vertical_addition/ActivityInfo.qml:17
+#, kde-format
+msgid "Solve the given addition."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
+#: activities/vertical_subtraction/ActivityInfo.qml:17
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
+#, kde-format
+msgid "Solve the given subtraction."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"

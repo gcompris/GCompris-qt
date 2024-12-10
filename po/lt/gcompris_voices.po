@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-10-16 00:36+0000\n"
+"POT-Creation-Date: 2024-12-10 00:36+0000\n"
 "PO-Revision-Date: 2024-05-22 21:25+0300\n"
 "Last-Translator: Rolandas Jakštys <rolandas@jakstys.lt>\n"
 "Language-Team: Lithuanian <kde-i18n-doc@kde.org>\n"
@@ -1296,6 +1296,20 @@ msgid ""
 msgstr ""
 "Padaryk kelią raudonam automobiliui išvažiuoti iš stovėjimo aikštelės pro "
 "vartus dešinėje."
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
+#: activities/vertical_addition/ActivityInfo.qml:17
+#, kde-format
+msgid "Solve the given addition."
+msgstr ""
+
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
+#. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
+#: activities/vertical_subtraction/ActivityInfo.qml:17
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
+#, kde-format
+msgid "Solve the given subtraction."
+msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

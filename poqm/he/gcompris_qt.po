@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-11-23 17:08+0200\n"
+"PO-Revision-Date: 2024-12-09 08:17+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -328,7 +328,7 @@ msgstr "חיצים: לנווט"
 #: activities/money_cents/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item"
-msgstr "רווח או אנטר: לבחור את הפריט"
+msgstr "רווח או Enter: לבחור פריט"
 
 #. Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors Color #FF7F50
 #. ----------
@@ -929,7 +929,7 @@ msgstr "מחק לאחור (בקספּייס): למחוק את הספרה האח�
 #: activities/roman_numerals/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer"
-msgstr "הכנס (אנטר): לאשר את התשובה שלך"
+msgstr "Enter: לאשר את התשובה שלך"
 
 #: activities/algebra_by/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -1314,7 +1314,7 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (against Tux)"
-msgstr "ארבעה בשורה (נגד טוקס)"
+msgstr "ארבעה בשורה (נגד טאקס)"
 
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
@@ -2597,7 +2597,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "אישור"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -2636,7 +2636,7 @@ msgstr "בדיקה"
 #: activities/ballcatch/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Make the ball go to Tux"
-msgstr "להעביר את הכדור לטוקס"
+msgstr "להעביר את הכדור לטאקס"
 
 #. Help title
 #: activities/ballcatch/ActivityInfo.qml:17
@@ -2704,7 +2704,7 @@ msgstr "לבחור את רמת הקושי"
 #: activities/bargame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (against Tux)"
-msgstr "ברגמה (נגד טוקס)"
+msgstr "ברגמה (נגד טאקס)"
 
 #. Help title
 #: activities/bargame/ActivityInfo.qml:17
@@ -2735,9 +2735,9 @@ msgid ""
 "button to place the balls in the holes. You win if Tux has to place the last "
 "ball. If you want Tux to begin, just click on him."
 msgstr ""
-"לחצו על סמל הכדור כדי לבחור את מספר הכדורים, ואז לחצו על כפתור \"OK\" כדי "
-"לשים את הכדורים בחורים. תנצח/י אם המחשב צריך לשים את הכדור האחרון. אם תרצה "
-"שטוקס יתחיל, לחץ עליו."
+"יש ללחוץ על סמל הכדור כדי לבחור את מספר הכדורים, ואז ללחוץ על כפתור „אישור” "
+"כדי לשים את הכדורים בחורים. אפשר לנצח אם המחשב צריך לשים את הכדור האחרון. "
+"כדי לבחור שטאקס יתחיל, נא ללחוץ עליו."
 
 #. Activity title
 #: activities/bargame_2players/ActivityInfo.qml:15
@@ -3190,7 +3190,7 @@ msgstr "חיצים: לנווט בין התשובות"
 #: activities/find_the_day/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
-msgstr "רווח או אנטר: לאשר את התשובה שלך"
+msgstr "רווח או Enter: לאשר את התשובה שלך"
 
 #: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
@@ -3480,8 +3480,8 @@ msgid ""
 "Tux is in trouble, and needs to take his boat through a lock. Help Tux and "
 "find out how a canal lock works."
 msgstr ""
-"טאקס בבעיה עם הספינה שלו, הוא צריך לעבור את המחסום. עזור לטוקס להבין אין "
-"מחסום תעלה פועל."
+"טאקס בבעיה עם הספינה שלו, הוא צריך לעבור את המחסום. עליך לעזור לטאקס להבין "
+"אין מחסום תעלה פועל."
 
 #. Help goal
 #: activities/canal_lock/ActivityInfo.qml:20
@@ -3505,8 +3505,8 @@ msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr ""
-"המטרה היא להעביר את טוקס מעבר למחסום התעלה כדי להעביר את גזעי העצים. לשם כך "
-"יש להשתמש בסוגים שונים של מחסומי מים"
+"המטרה היא להעביר את טאקס מעבר למחסום התעלה כדי להעביר את גזעי העצים. לשם כך "
+"יש להשתמש בסוגים שונים של מחסומי מים."
 
 #: activities/canal_lock/CanalLock.qml:84
 msgctxt "CanalLock|"
@@ -3524,8 +3524,8 @@ msgid ""
 "The water level inside the lock will change according to the side of the "
 "canal it is connected to. Use this property to help Tux get the job done."
 msgstr ""
-"גובה פני המים בתוך המחסומים ישתנה לפי צד התעלה שאליו הם מחוברים. להשתמש "
-"בתכונה זו כדי לעזור לטוקס לסיים את העבודה."
+"גובה פני המים בתוך המחסומים ישתנה לפי צד התעלה שאליו הם מחוברים. כדאי להשתמש "
+"בפרט זה כדי לעזור לטאקס לסיים את העבודה."
 
 #: activities/categorization/ActivityConfig.qml:38
 msgctxt "ActivityConfig|"
@@ -4092,7 +4092,7 @@ msgstr "צריך למקם את הירקות בצד ימין ואת שאר הדב
 #: activities/checkers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play checkers (against Tux)"
-msgstr "לשחק דמקה (נגד טוקס)"
+msgstr "לשחק דמקה (נגד טאקס)"
 
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
@@ -4222,7 +4222,7 @@ msgstr ""
 #: activities/chess/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "לשחק שחמט (נגד טוקס)"
+msgstr "לשחק שחמט (נגד טאקס)"
 
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
@@ -5293,7 +5293,7 @@ msgstr "להקשיב לשם הצבע ולהקיש על הברווז המתאים
 #: activities/colors/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an answer"
-msgstr "רווח או אנטר: לבחור תשובה"
+msgstr "רווח או Enter: לבחור תשובה"
 
 #: activities/colors/colors.js:13 activities/colors/colors.js:45
 #: activities/colors/colors.js:87
@@ -5426,7 +5426,7 @@ msgstr "רווח: מכניס את הסימן שעל הכפתור הנוכחי"
 #: activities/comparator/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Return: validate the answers"
-msgstr "הכנס (אנטר): בדוק את התשובות"
+msgstr "Enter: בדיקת התשובות"
 
 #: activities/comparator/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
@@ -5529,7 +5529,7 @@ msgstr "חיצים: להזיז את הפריט הנבחר"
 #: activities/crane/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Space or Enter or Tab: select the next item"
-msgstr "רווח או אנטר או טאב: לבחור את הפריט הבא"
+msgstr "רווח או Enter או Tab: לבחור את הפריט הבא"
 
 #. Translators: NOTE: Word list for crane activity. Translate this into a list of 15–25 simple 3-letter words separated by semi-colons. The words can only contain lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
 #: activities/crane/crane.js:41
@@ -6550,7 +6550,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Enter: validate your answer (if the 'Validate answers' option is set to 'OK "
 "button')"
-msgstr "אנטר: לאשר את התשובה שלך (אם האפשרות 'לאשר תשובות' מכוונת ל'כפתור OK')"
+msgstr ""
+"Enter: לאשר את התשובה שלך (אם האפשרות ‚לאשר תשובות’ מכוונת ל‚כפתור אישור’)"
 
 #: activities/enumerate/resource/1/Data.qml:13
 #: activities/enumerate/resource/1/Data.qml:29
@@ -9528,12 +9529,9 @@ msgid ""
 msgstr ""
 
 #: activities/frieze/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: select a symbol button"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select a token"
-msgstr "חיצים שמאלה וימינה: בוחרים כפתור סימן"
+msgstr "חיצים שמאלה וימינה: בחירת אסימון"
 
 #: activities/frieze/ActivityInfo.qml:25
 #, fuzzy
@@ -9541,7 +9539,7 @@ msgstr "חיצים שמאלה וימינה: בוחרים כפתור סימן"
 #| msgid "Space: select an item"
 msgctxt "ActivityInfo|"
 msgid "Space: add selected token to the frieze"
-msgstr "רווח: לבחור פריט"
+msgstr "רווח: לבחור "
 
 #: activities/frieze/ActivityInfo.qml:26
 #, fuzzy
@@ -9549,15 +9547,12 @@ msgstr "רווח: לבחור פריט"
 #| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "בקספייס (מחיקה אחורה) או דליט: לבטל פעולה אחרונה"
+msgstr "Backspace או Delete: הסרת האסימון האחרון מה"
 
 #: activities/frieze/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate the answer"
-msgstr "הכנס (אנטר): לאשר את התשובה שלך"
+msgstr "Enter: אימות התשובה"
 
 #: activities/frieze/ActivityInfo.qml:28
 #, fuzzy
@@ -9696,12 +9691,9 @@ msgstr "למצוא את האזור"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
-msgstr "יש לגרור ולשחרר את האזורים כדי להשלים את מפת המדינה."
+msgstr "להציב את האזורים על מפות המדינות."
 
 #. Help goal
 #: activities/geo-country/ActivityInfo.qml:24
@@ -9711,15 +9703,10 @@ msgstr ""
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
-msgstr "לגרור ולשחרר את חלקי המפה למקומם הנכון כדי להשלים את המפה."
+msgstr "יש לגרור ולשחרר את האזורים למקומם הנכון כדי להשלים את המפה."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -12514,15 +12501,10 @@ msgstr ""
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
-msgstr "לגרור ולשחרר את חלקי המפה למקומם הנכון כדי להשלים את המפה."
+msgstr "יש לגרור ולשחרר את חלקי המפה למקומם הנכון כדי להשלים את המפה."
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -12832,7 +12814,7 @@ msgstr "אסיה"
 #: activities/geography/resource/board/board1_0.qml:45
 msgctxt "board1_0|"
 msgid "Antarctica"
-msgstr "אנטרטיקה"
+msgstr "אנטארקטיקה"
 
 #: activities/geography/resource/board/board1_0.qml:52
 msgctxt "board1_0|"
@@ -13646,12 +13628,9 @@ msgstr ""
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
-msgstr "להקליד את האותיות הנופלות לפני שהן מגיעות לקרקע."
+msgstr "להקליד את האותיות הנופלות במקלדת לפני שהן מגיעות לקרקע."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -14020,7 +13999,7 @@ msgstr "Delete: איפוס התשובה שלך"
 #: activities/graduated_line_use/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: validate your answer"
-msgstr "רווח או אנטר: לאשר את התשובה שלך"
+msgstr "רווח או Enter: לאשר את התשובה שלך"
 
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
@@ -14225,12 +14204,9 @@ msgstr ""
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Left and Right arrows: turn left and right"
 msgctxt "ActivityInfo|"
 msgid "Left and right arrows: select items in classes or words"
-msgstr "חיצים שמאלה וימינה: לפנות שמאלה וימינה"
+msgstr "חיצים שמאלה וימינה: לבחור פריטים במחלקות או מילים"
 
 #: activities/grammar_analysis/ActivityInfo.qml:32
 #: activities/grammar_classes/ActivityInfo.qml:32
@@ -14482,23 +14458,17 @@ msgstr "חישוב למציאת 24."
 
 #. Help goal
 #: activities/guess24/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice algebraic calculations with four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to calculate using the four operators."
-msgstr "להתאמן בחישובים אלגבריים עם ארבע פעולות."
+msgstr "ללמוד לחשב בעזרת ארבעה סימנים."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition, subtraction, multiplication and division."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
 "division."
-msgstr "תרגול חיבור, חיסור כפל וחילוק."
+msgstr "היכולת לחשב בעזרת חיבור, חיסור, הכפלה וחילוק."
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -14512,12 +14482,9 @@ msgid "Arrows: navigate inside numbers and operators"
 msgstr "חיצים: לנווט בתוך מספרים וסימנים"
 
 #: activities/guess24/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Space or Enter: select or place an item"
 msgctxt "ActivityInfo|"
 msgid "Space, Return or Enter: select or deselect current value or operator"
-msgstr "רווח או אנטר: לבחור או למקם פריט"
+msgstr "רווח, Return או Enter: לבחור או לבטל את הבחירה של הערך או הסימן הנוכחי"
 
 #: activities/guess24/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14525,12 +14492,9 @@ msgid "Operator keys (+, -, *, /): select operator"
 msgstr "מקשי פעולות (+, -, *, /): נא לבחור פעולה"
 
 #: activities/guess24/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Backspace or Delete: undo"
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "בקספייס (מחיקה אחורה) או דליט: לבטל פעולה אחרונה"
+msgstr "Backspace או Delete: ביטול הפעולה האחרונה"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -14558,12 +14522,9 @@ msgid "Multiplication required."
 msgstr "צריך כפל."
 
 #: activities/guess24/resource/4/Data.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Small grids."
 msgctxt "Data|"
 msgid "Solvable with all operators."
-msgstr "רשת קטנה."
+msgstr "פתיר עם כל הסימנים."
 
 #: activities/guess24/resource/5/Data.qml:13
 msgctxt "Data|"
@@ -14694,15 +14655,12 @@ msgstr "ניחושים"
 #: activities/guessnumber/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Help Tux escape the cave by finding the hidden number."
-msgstr "לעזור לטוקס לברוח מהמערה באמצעות גילוי של המספרים החבויים."
+msgstr "לעזור לטאקס לברוח מהמערה באמצעות גילוי של המספרים החבויים."
 
 #: activities/guessnumber/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "להתאמן בחיבור של מספרים."
+msgstr "תרגול השוואת מספרים."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15658,12 +15616,12 @@ msgstr "בהגדרות אפשר לבחור את השפה שרוצים ללמוד
 #: activities/lang/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item from the list"
-msgstr "רווח או אנטר: לבחור פריט מהרשימה."
+msgstr "רווח או Enter: לבחור פריט מהרשימה"
 
 #: activities/lang/ActivityInfo.qml:36
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
-msgstr "אנטר/Enter: לאשר את התשובה שלך כאשר כפתור האישור מופיע."
+msgstr "Enter: לאשר את התשובה שלך כאשר כפתור האישור מופיע"
 
 #: activities/lang/ActivityInfo.qml:37
 #: activities/missing-letter/ActivityInfo.qml:27
@@ -16592,7 +16550,7 @@ msgid ""
 "the lights. If you click on Tux, the solution is shown."
 msgstr ""
 "ההשפעה של לחיצה על חלון היא שינוי המצב של אותו חלון ושל השכנים הקרובים אליו "
-"במאונך ומאוזן. עליך לכבות את כל האורות. אם לוחצים על טוקס, הפתרון מופיע."
+"במאונך ומאוזן. עליך לכבות את כל האורות. אם לוחצים על טאקס, הפתרון מופיע."
 
 #: activities/lightsoff/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -16687,7 +16645,7 @@ msgstr ""
 #: activities/louis-braille/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select an item and change its position"
-msgstr "רווח או אנטר: לבחור פריט ולשנות את מקומו"
+msgstr "רווח או Enter: לבחור פריט ולשנות את מקומו"
 
 #: activities/louis-braille/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -16963,7 +16921,7 @@ msgstr "מבוך"
 #: activities/maze/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Help Tux get out of this maze."
-msgstr "לעזור לטוקס להחלץ מהמבוך."
+msgstr "לעזור לטאקס להחלץ מהמבוך."
 
 #. Help goal
 #: activities/maze/ActivityInfo.qml:20
@@ -17239,7 +17197,7 @@ msgstr "כל קלף מסתיר אות קטנה או גדולה. עליך להת�
 #: activities/memory/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
-msgstr "רווח או אנטר: להפוך את הקלף הנבחר"
+msgstr "רווח או Enter: להפוך את הקלף הנבחר"
 
 #: activities/memory-case-association/ActivityConfig.qml:23
 #: activities/memory-enumerate/ActivityConfig.qml:23
@@ -19322,7 +19280,7 @@ msgstr "חיצים: לנווט בתוך אזור"
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr "רווח או אנטר: לבחור או למקם פריט"
+msgstr "רווח או Enter: לבחור או למקם פריט"
 
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -20357,7 +20315,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
-msgstr ""
+msgstr "פיתוח מיומנויות בהמחשה ובקריאת מפות ולימוד מעקב אחר הנחיות."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
@@ -20521,7 +20479,7 @@ msgstr "למצוא את ההבדלים בין שתי התמונות."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "פיתוח מיומנויות הבחנה בפרטים."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21390,7 +21348,7 @@ msgstr "רווח: להקיש על התוף"
 #: activities/play_rhythm/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: replay the rhythm"
-msgstr "אנטר: לנגן שוב את הקצב"
+msgstr "Enter: לנגן את הקצב שוב"
 
 #: activities/play_rhythm/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -21469,7 +21427,7 @@ msgstr ""
 #: activities/positions/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate selected answer"
-msgstr "רווח או אנטר: לאשר את התשובה הנבחרת"
+msgstr "רווח או Enter: לאשר את התשובה הנבחרת"
 
 #: activities/positions/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -21583,7 +21541,7 @@ msgstr "לבחור את התמונה שבה הילד נמצא משמאל לקו�
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "תכנות הנתיב"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
@@ -21610,7 +21568,7 @@ msgid ""
 "Choose the instructions from the menu, and arrange them in order to lead Tux "
 "to his goal."
 msgstr ""
-"לבחור את ההוראות מהתפריט ולארגן אותן לפי הסדר שיוביל את טוקס למטרה שלו."
+"לבחור את ההוראות מהתפריט ולארגן אותן לפי הסדר שיוביל את טאקס למטרה שלו."
 
 #: activities/programmingMaze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -21646,7 +21604,7 @@ msgstr "דליט (Delete): מוחק את הפקודת הנבחרת באזור ה
 #: activities/programmingMaze/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Enter: run the code or reset Tux when it fails to reach the fish"
-msgstr "אנטר (Enter): מריץ את הקוד או מחזיר את טוקס כשהוא נכשל להגיע לדג"
+msgstr "Enter: מריץ את הקוד או מחזיר את טאקס כשהוא נכשל להגיע לדג"
 
 #: activities/programmingMaze/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -21683,7 +21641,7 @@ msgstr "אזור הוראות:"
 msgctxt "programmingMaze|"
 msgid ""
 "There are 3 instructions which you can use to code and lead Tux to the fish:"
-msgstr "ישנן 3 הוראות שניתן להשתמש בהן כדי לכתוב קוד ולהוביל את טוקס לדג:"
+msgstr "ישנן 3 הוראות שניתן להשתמש בהן כדי לכתוב קוד ולהוביל את טאקס לדג:"
 
 #: activities/programmingMaze/programmingMaze.js:98
 msgctxt "programmingMaze|"
@@ -21691,17 +21649,17 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
-"<b>1. לנוע קדימה:</b> מזיז את טוקס צעד אחד קדימה בכיוון שאליו הוא מסתכל."
+"<b>1. לנוע קדימה:</b> מזיז את טאקס צעד אחד קדימה בכיוון שאליו הוא מסתכל."
 
 #: activities/programmingMaze/programmingMaze.js:99
 msgctxt "programmingMaze|"
 msgid "<b>2. Turn left:</b> Turns Tux to the left."
-msgstr "<b>2. לפנות שמאלה:</b> מפנה את טוקס לשמאל."
+msgstr "<b>2. לפנות שמאלה:</b> מפנה את טאקס לשמאל."
 
 #: activities/programmingMaze/programmingMaze.js:100
 msgctxt "programmingMaze|"
 msgid "<b>3. Turn right:</b> Turns Tux to the right."
-msgstr "<b>3. לפנות ימינה:</b> מפנה את טוקס לימין."
+msgstr "<b>3. לפנות ימינה:</b> מפנה את טאקס לימין."
 
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
@@ -21728,7 +21686,7 @@ msgid ""
 "-The instructions will execute in order until there's none left, or until a "
 "dead-end, or when Tux reaches the fish."
 msgstr ""
-"-ההוראות יבוצעו לפי הסדר עד האחרונה או עד מבוי סתום, או עד שטוקס מגיע לדג."
+"-ההוראות תבוצענה לפי הסדר עד האחרונה או עד מבוי סתום, או עד שטאקס מגיע לדג."
 
 #: activities/programmingMaze/programmingMaze.js:114
 msgctxt "programmingMaze|"
@@ -21868,7 +21826,7 @@ msgstr "דליט (מחיקה) או בקספייס: למחוק את הפריט ה
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
-msgstr "2. אנטר (הכנס) כדי להגיש את התשובה"
+msgstr "Enter: להגיש את התשובה"
 
 #: activities/railroad/Railroad.qml:132
 msgctxt "Railroad|"
@@ -22002,7 +21960,7 @@ msgstr "חיצים: לנווט ברשת"
 #: activities/simplepaint/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: paint"
-msgstr "רווח או אנטר: לצבוע"
+msgstr "רווח או Enter: לצבוע"
 
 #: activities/redraw/resource/1/Data.qml:14
 msgctxt "Data|"
@@ -22070,8 +22028,8 @@ msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
 "up so he can have light in his home."
 msgstr ""
-"טוקס חזר הביתה מהטיול על הסירה שלו. צריך להפעיל מחדש את מערכת-החשמל שיהיה לו "
-"אור בבית."
+"טאקס חזר הביתה מהטיול על הסירה שלו. צריך לחבר את מערכת החשמל מחדש כדי שיהיה "
+"לו אור בבית."
 
 #. Help goal
 #: activities/renewable_energy/ActivityInfo.qml:20
@@ -22089,7 +22047,7 @@ msgid ""
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
 "ללחוץ על חלקים שונים בפעילות: שמש, ענן, סכר, מערכת סולארית, חוות רוח ושנאים "
-"כדי להפעיל מחדש את מערכת החשמל כולה. כשהמערכת שוב פועלת וטוקס נמצא בביתו, "
+"כדי להפעיל מחדש את מערכת החשמל כולה. כשהמערכת שוב פועלת וטאקס נמצא בביתו, נא "
 "ללחוץ על כפתור המנורה בשבילו. כדי לזכות עליך להפעיל את כל הצרכנים כאשר כל "
 "הספקים פועלים."
 
@@ -22099,8 +22057,8 @@ msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
 "up so he can have light in his home."
 msgstr ""
-"טוקס חזר הביתה מהדייג (הוא לא באמת דג, הוא שוחה עם דולפינים) על הסירה שלו. "
-"צריך לחדש את פעולתה של מערכת החשמל כדי שיוכל להיות לו אור בבית."
+"טאקס חזר הביתה מהדיג (הוא לא באמת דג, הוא שוחה עם דולפינים) על הסירה שלו. "
+"צריך לחבר את החשמל כדי שיוכל להיות לו אור בבית."
 
 #: activities/renewable_energy/RenewableEnergy.qml:312
 msgctxt "RenewableEnergy|"
@@ -22118,8 +22076,8 @@ msgid ""
 "him. To win you must switch on all the consumers while all the producers are "
 "up."
 msgstr ""
-"כשהמערכת שוב פועלת וטוקס נמצא בביתו, ללחוץ על כפתור המנורה בשבילו. כדי לזכות "
-"עליך להפעיל את כל הצרכנים כאשר כל הספקים פועלים."
+"כשהמערכת שוב פועלת וטאקס נמצא בביתו, נא ללחוץ על כפתור המנורה בשבילו. כדי "
+"לזכות עליך להפעיל את כל הצרכנים כאשר כל הספקים פועלים."
 
 #: activities/renewable_energy/RenewableEnergy.qml:316
 msgctxt "RenewableEnergy|"
@@ -22179,7 +22137,8 @@ msgstr "לספור את הרווחים"
 #: activities/reversecount/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Tux is hungry. Help him find fish by counting to the correct ice spot."
-msgstr "טוקס רעב. לעזור לו למצוא דגים בעזרת ספירה לנקודת הקרח הנכונה."
+msgstr ""
+"טאקס רעב. משימתך היא לעזור לו למצוא דגים בעזרת ספירה לנקודת הקרח הנכונה."
 
 #. Help goal
 #: activities/reversecount/ActivityInfo.qml:20
@@ -22201,9 +22160,9 @@ msgid ""
 "fish. Click the domino with the right mouse button to count backwards. When "
 "done, click on the OK button or hit the Enter key."
 msgstr ""
-"ללחוץ על הדומינו כדי לגלות כמה נקודות קרח נמצאות בין טוקס והדג. ללחוץ על "
-"הדומינו עם הכפתור הימני בעכבר כדי לספור לאחור. כשמסיימים, ללחוץ על כפתור OK "
-"או על מקש האנטר."
+"ללחוץ על הדומינו כדי לגלות כמה נקודות קרח נמצאות בין טאקס לדג. ללחוץ על "
+"הדומינו עם הכפתור הימני בעכבר כדי לספור לאחור. כשמסיימים, ללחוץ על כפתור "
+"אישור או על מקש ה־Enter."
 
 #: activities/reversecount/resource/1/Data.qml:13
 #: activities/reversecount/resource/10/Data.qml:13
@@ -23326,7 +23285,7 @@ msgstr ""
 msgctxt "Data|"
 msgid ""
 "Help Tux split 19 pieces of candies between his friends: 4 boys and 1 girl."
-msgstr "לעזור לטוקס לחלק 19 חתיכות של סוכריה לחבריו: 4 בנים ובת 1."
+msgstr "לעזור לטאקס לחלק 19 ממתקים לחבריו: 4 בנים ובת 1."
 
 #: activities/share/resource/2/Data.qml:194
 msgctxt "Data|"
@@ -23400,16 +23359,16 @@ msgstr[2] ""
 msgstr[3] ""
 
 #: activities/share/share.js:102
-#, fuzzy, qt-format
+#, qt-format
 msgctxt ""
 "share|Second part of Place %n boy(s) and %n girl(s) in the center. Then "
 "split %n pieces of candy equally between them."
 msgid "and %n girl(s) in the center. "
 msgid_plural "and %n girl(s) in the center. "
-msgstr[0] "ובת %n במרכז. "
-msgstr[1] "ו %n בנות במרכז. "
-msgstr[2] ""
-msgstr[3] ""
+msgstr[0] "ובת במרכז. "
+msgstr[1] "ושתי בנות במרכז. "
+msgstr[2] "ן־%n בנות במרכז"
+msgstr[3] "ו־%n בנות במרכז. "
 
 #: activities/share/share.js:106
 #, fuzzy, qt-format
@@ -23478,7 +23437,7 @@ msgstr "מידע נוסף על כלי ציור דיגיטליים"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr ""
+msgstr "ניתן לבחור כלים וצבעים מהלוחות המתקפלים  ולצייר ציורים.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
@@ -23493,7 +23452,7 @@ msgstr "Ctrl + Z: הסגת הפעולה האחרונה"
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: חזרה על הפעולה החארונה"
 
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -23957,7 +23916,7 @@ msgstr ""
 #: activities/solar_system/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select"
-msgstr "רווח או אנטר: לבחור"
+msgstr "רווח או Enter: לבחור"
 
 #: activities/solar_system/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -25367,7 +25326,7 @@ msgstr "מוח על"
 #: activities/superbrain/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Tux has hidden several items. Find them in the correct order."
-msgstr "טוקס החביא מספר חפצים. עליך לגלות אותם הסדר הנכון."
+msgstr "טאקס החביא מספר חפצים. עליך לגלות אותם בסדר הנכון."
 
 #. Help goal
 #: activities/superbrain/ActivityInfo.qml:20
@@ -25755,7 +25714,7 @@ msgstr "התוצאה בין 30 ל־50."
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr "איקס עיגול (נגד טוקס)"
+msgstr "איקס עיגול (נגד טאקס)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -25824,6 +25783,340 @@ msgstr ""
 "המכוניות מסומנות בצבעים שונים. הן יכולות לנוע רק בקווים ישרים, לפי הכיוון בו "
 "הן נמצאות.  עליך לפנות את המכוניות האחרות כך שהמכונית האדומה תוכל לצאת דרך "
 "השער בצד ימין."
+
+#. Activity title
+#: activities/vertical_addition/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice addition."
+msgctxt "ActivityInfo|"
+msgid "Vertical addition"
+msgstr "לתרגל חיבור."
+
+#. Help title
+#: activities/vertical_addition/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Reproduce the given tower."
+msgctxt "ActivityInfo|"
+msgid "Solve the given addition."
+msgstr "להעתיק את המגדל."
+
+#. Help goal
+#: activities/vertical_addition/ActivityInfo.qml:19
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Learn to share, practice division."
+msgctxt "ActivityInfo|"
+msgid "Learn to solve vertical additions."
+msgstr "ללמוד לחלוק, לתרגל חילוק."
+
+#. Help prerequisite
+#: activities/vertical_addition/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Addition table of 1."
+msgctxt "ActivityInfo|"
+msgid "Addition tables."
+msgstr "טבלת חיבור של 1."
+
+#. Help manual
+#: activities/vertical_addition/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"In a vertical addition, numbers are written one below the other. They need "
+"to be lined-up properly, starting from the column on the right-hand side. "
+"The result is written on the bottom line. To solve the addition, start by "
+"adding up the numbers of the first column (on the right-hand side), and "
+"write the result on the bottom line of the same column. If the result gives "
+"a two digit number, write only the units digit on the result, and add the "
+"tens digit next to the top number of the next column: this is called the "
+"carry. Then add up the numbers of the next column, including the carry "
+"number, and repeat the process until the operation is finished. Once you "
+"have found the result, click on the OK button to validate your answer. In "
+"some levels, you will be need to write the given operation before solving "
+"it; in this case, click on the Ready button when the operation is written "
+"correctly and then solve it."
+msgstr ""
+
+#: activities/vertical_addition/resource/1/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 2 digits, 2 lines, without carry."
+msgstr ""
+
+#: activities/vertical_addition/resource/10/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 4 digits, 3 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/11/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 4 digits, 4 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/12/Data.qml:12
+msgctxt "Data|"
+msgid "Write your own addition and solve it."
+msgstr ""
+
+#: activities/vertical_addition/resource/2/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve addition, 2 digits, 2 lines, without carry."
+msgstr ""
+
+#: activities/vertical_addition/resource/3/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 2 digits, 2 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/4/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve addition, 2 digits, 2 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/5/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve addition, 2 digits, 3 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/6/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 3 digits, 2 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/7/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve addition, 3 digits, 2 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/8/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 3 digits, 3 lines."
+msgstr ""
+
+#: activities/vertical_addition/resource/9/Data.qml:12
+msgctxt "Data|"
+msgid "Solve addition, 4 digits, 2 lines."
+msgstr ""
+
+#. Activity title
+#: activities/vertical_subtraction/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice subtraction."
+msgctxt "ActivityInfo|"
+msgid "Vertical subtraction"
+msgstr "לתרגל חיסור."
+
+#. Help title
+#: activities/vertical_subtraction/ActivityInfo.qml:16
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
+#, fuzzy
+#| msgctxt "InstructionArea|"
+#| msgid "Choose the instructions"
+msgctxt "ActivityInfo|"
+msgid "Solve the given subtraction."
+msgstr "לבחור את הפקודות"
+
+#. Help goal
+#: activities/vertical_subtraction/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to solve vertical subtractions, with the borrowing by regrouping "
+"method."
+msgstr ""
+
+#. Help prerequisite
+#: activities/vertical_subtraction/ActivityInfo.qml:21
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtraction table of 1."
+msgctxt "ActivityInfo|"
+msgid "Subtraction tables."
+msgstr "טבלת חיסור של 1."
+
+#. Help manual
+#: activities/vertical_subtraction/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"In a vertical subtraction, numbers are written one below the other. They "
+"need to be lined-up properly, starting from the column on the right-hand "
+"side. The top number is called the minuend: it is the amount that we are "
+"starting with, that another number is being subtracted from to get the "
+"difference. The number below is called the subtrahend: it is the amount to "
+"substract from the minuend to get the difference. The result is written on "
+"the bottom line. To solve the subtraction, start by subtracting the bottom "
+"number of the first column from the top number of the first column (on the "
+"right-hand side), and write the result on the bottom line of the same "
+"column. If the top number is smaller than the bottom number, you can borrow "
+"from the minuend on the next column: for example, if you add 10 units to the "
+"top number, you need to remove one unit from the top number of the next "
+"column. This is called the borrowing by regrouping method. To do that in "
+"this activity, click on the empty rectangle on the left of the top number, "
+"select 1, and on the next column click on the empty rectangle on the right "
+"of the top number and select -1. Then write the result of the column on the "
+"bottom line, and do the same on the next columns until the operation is "
+"finished. Once you have found the result, click on the OK button to validate "
+"your answer. In some levels, you will be need to write the given operation "
+"before solving it; in this case, click on the Ready button when the "
+"operation is written correctly and then solve it."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/1/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
+msgctxt "Data|"
+msgid "Solve subtraction, 2 digits, 2 lines, without carry."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/10/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
+msgctxt "Data|"
+msgid "Solve subtraction, 4 digits, 3 lines."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/11/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
+msgctxt "Data|"
+msgid "Solve subtraction, 4 digits, 4 lines."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/12/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Learn subtraction table of 1."
+msgctxt "Data|"
+msgid "Write your own subtraction and solve it."
+msgstr "ללמוד טבלאות חיסור של 1."
+
+#: activities/vertical_subtraction/resource/2/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/3/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
+msgctxt "Data|"
+msgid "Solve subtraction, 2 digits, 2 lines."
+msgstr "חיסור עם 1, 2 ו־3."
+
+#: activities/vertical_subtraction/resource/4/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve subtraction, 2 digits, 2 lines."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/5/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve subtraction, 2 digits, 3 lines."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/6/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
+msgctxt "Data|"
+msgid "Solve subtraction, 3 digits, 2 lines."
+msgstr "חיסור עם 1, 2 ו־3."
+
+#: activities/vertical_subtraction/resource/7/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
+msgctxt "Data|"
+msgid "Write and solve subtraction, 3 digits, 2 lines."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/8/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
+msgctxt "Data|"
+msgid "Solve subtraction, 3 digits, 3 lines."
+msgstr ""
+
+#: activities/vertical_subtraction/resource/9/Data.qml:12
+#: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
+msgctxt "Data|"
+msgid "Solve subtraction, 4 digits, 2 lines."
+msgstr "חיסור עם 1, 2 ו־3."
+
+#: activities/vertical_subtraction/subtraction.js:65
+msgctxt "subtraction|"
+msgid "Write:"
+msgstr ""
+
+#: activities/vertical_subtraction/subtraction.js:65
+msgctxt "subtraction|"
+msgid "Solve:"
+msgstr ""
+
+#. Solve (= Find the result of): %1 (= the operation to solve)
+#: activities/vertical_subtraction/subtraction.js:160
+#, fuzzy, qt-format
+#| msgctxt "BackgroundMusicList|"
+#| msgid "Title: %1"
+msgctxt "subtraction|"
+msgid "Solve: %1"
+msgstr "כותרת: %1"
+
+#: activities/vertical_subtraction/VerticalSubtraction.qml:326
+#, fuzzy
+#| msgctxt "Frieze|"
+#| msgid "I am Ready"
+msgctxt "VerticalSubtraction|"
+msgid "Ready"
+msgstr "אפשר להתחיל"
+
+#. Activity title
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Practice the subtraction operation."
+msgctxt "ActivityInfo|"
+msgid "Vertical subtraction (compensation)"
+msgstr "אימון בפעולת חיסור."
+
+#. Help goal
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to solve vertical subtractions, with the borrowing by compensation "
+"method."
+msgstr ""
+
+#. Help manual
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid ""
+"In a vertical subtraction, numbers are written one below the other. They "
+"need to be lined-up properly, starting from the column on the right-hand "
+"side. The top number is called the minuend: it is the amount that we are "
+"starting with, that another number is being subtracted from to get the "
+"difference. The number below is called the subtrahend: it is the amount to "
+"substract from the minuend to get the difference. The result is written on "
+"the bottom line. To solve the subtraction, start by subtracting the bottom "
+"number of the first column from the top number of the first column (on the "
+"right-hand side), and write the result on the bottom line of the same "
+"column. If the top number is smaller than the bottom number, you can borrow "
+"from the subtrahend on the next column: for example, if you add 10 units to "
+"the top number, you need to add one unit to the bottom number of the next "
+"column. This is called the borrowing by compensation method. To do that in "
+"this activity, click on the empty rectangle on the left of the top number, "
+"select 1, and on the next column click on the empty rectangle on the right "
+"of the bottom number and select +1. Then write the result of the column on "
+"the bottom line, and do the same on the next columns until the operation is "
+"finished. Once you have found the result, click on the OK button to validate "
+"your answer. In some levels, you will be need to write the given operation "
+"before solving it; in this case, click on the Ready button when the "
+"operation is written correctly and then solve it."
+msgstr ""
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26699,7 +26992,7 @@ msgstr "%1 נמחק בהצלחה!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "אישור"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27152,10 +27445,6 @@ msgstr "להתחיל"
 #~ msgctxt "ActivityInfo|"
 #~ msgid "This is a good exercise to improve reading and spelling skills."
 #~ msgstr "זהו תרגול מצויין כדי לשפר את יכולות הקריאה והאיות."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reproduce the given tower."
-#~ msgstr "להעתיק את המגדל."
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid ""
