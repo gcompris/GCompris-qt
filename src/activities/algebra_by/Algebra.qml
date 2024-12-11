@@ -117,10 +117,7 @@ ActivityBase {
             anchors.verticalCenter: score.verticalCenter
             anchors.left: score.right
             anchors.leftMargin: 0.2 * height
-            height: bar.height;
-            width: height
-            sourceSize.height: height
-            sourceSize.width: height
+            width: bar.height
             onClicked: Activity.checkAnswer();
             enabled: visible && !items.buttonsBlocked && numpad.answer != ""
         }

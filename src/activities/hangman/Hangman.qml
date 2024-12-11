@@ -318,7 +318,7 @@ ActivityBase {
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            sourceSize.width: Math.min(score.width, clock.width)
+            width: Math.min(score.width, clock.width)
             visible: false
             anchors {
                 top: score.bottom

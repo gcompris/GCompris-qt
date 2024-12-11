@@ -497,9 +497,6 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: Math.min(70 * ApplicationInfo.ratio, tools.height * 0.4)
-            height: width
-            sourceSize.height: width
-            sourceSize.width: width
             anchors.bottom: score.top
             anchors.bottomMargin: background.baseMargins
             anchors.horizontalCenter: score.horizontalCenter

@@ -515,10 +515,7 @@ ActivityBase {
           anchors.bottom: bar.top
           anchors.margins: 2 * background.layoutMargins
           enabled: !items.buttonsBlocked
-          height: bar.height
-          width: height
-          sourceSize.height: height
-          sourceSize.width: height
+          width: bar.height
           onClicked: items.check()
         }
 

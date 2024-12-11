@@ -356,7 +356,6 @@ ActivityBase {
                 width: 60 * ApplicationInfo.ratio
                 anchors.right: parent.right
                 anchors.bottom: parent.bottom
-                sourceSize.width: width
                 onClicked: Activity.checkResult()
                 mouseArea.enabled: !items.buttonsBlocked
             }

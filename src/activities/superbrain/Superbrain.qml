@@ -388,9 +388,7 @@ if (targetY < 0) {
                     id: okButton
                     enabled: !items.buttonsBlocked
                     source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                    sourceSize.width: 66 * bar.barZoom
                     width: guessColumn.guessSize * currentRow.factor
-                    height: guessColumn.guessSize * currentRow.factor
                     visible: true
                     z: 8
                     onClicked: {

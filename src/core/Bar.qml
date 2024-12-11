@@ -401,7 +401,7 @@ Item {
         id: exit
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: Core.quit(bar.parent.parent);
         }
@@ -410,7 +410,7 @@ Item {
         id: about
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.aboutClicked()
         }
@@ -419,7 +419,7 @@ Item {
         id: help
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.helpClicked()
         }
@@ -428,7 +428,8 @@ Item {
         id: previous
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-            sourceSize.width: halfButtonScaled
+            height: fullButtonScaled
+            width: fullButtonScaled * 0.5
             visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
@@ -459,7 +460,8 @@ Item {
         id: next
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_next.svg";
-            sourceSize.width: halfButtonScaled
+            height: fullButtonScaled
+            width: fullButtonScaled * 0.5
             visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
@@ -472,7 +474,7 @@ Item {
         id: repeat
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.repeatClicked()
         }
@@ -481,7 +483,7 @@ Item {
         id: hint
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.hintClicked()
         }
@@ -490,7 +492,7 @@ Item {
         id: activityConfigImage
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.activityConfigClicked()
         }
@@ -499,7 +501,7 @@ Item {
         id: reload
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.reloadClicked()
         }
@@ -508,7 +510,7 @@ Item {
         id: config
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_config.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: bar.configClicked()
         }
@@ -520,7 +522,7 @@ Item {
             source: ActivityInfoTree.startingActivity != "" ?
                 "qrc:/gcompris/src/core/resource/bar_exit.svg" :
                 "qrc:/gcompris/src/core/resource/bar_home.svg";
-            sourceSize.width: fullButtonScaled
+            width: fullButtonScaled
             visible: barRow.isHidden === false
             onClicked: {
                 bar.homeClicked();

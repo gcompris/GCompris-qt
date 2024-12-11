@@ -203,10 +203,7 @@ ActivityBase {
             visible: enabled
 
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: width
             width: score.width
-            sourceSize.width: width
-            sourceSize.height: height
             z: score.z
             anchors {
                 bottom: score.top

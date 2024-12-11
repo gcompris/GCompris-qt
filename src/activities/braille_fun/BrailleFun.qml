@@ -257,7 +257,7 @@ ActivityBase {
                 top: background.top
                 margins: items.baseMargins
             }
-            sourceSize.width: 60 * ApplicationInfo.ratio
+            width: 60 * ApplicationInfo.ratio
             onClicked: {
                 dialogMap.visible = true
                 displayDialog(dialogMap)

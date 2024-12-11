@@ -21,6 +21,9 @@ import GCompris 1.0
 Image {
     id: button
     state: "notclicked"
+    height: width  // usually only set width when using it as default ratio is 1
+    sourceSize.width: width
+    sourceSize.height: height
 
     property alias mouseArea: mouseArea
 

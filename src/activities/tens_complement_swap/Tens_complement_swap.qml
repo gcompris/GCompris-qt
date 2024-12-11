@@ -124,7 +124,7 @@ ActivityBase {
 
             BarButton {
                 id: okButton
-                sourceSize.width: 60 * ApplicationInfo.ratio
+                width: 60 * ApplicationInfo.ratio
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
                 anchors {
                     horizontalCenter: okButtonArea.horizontalCenter

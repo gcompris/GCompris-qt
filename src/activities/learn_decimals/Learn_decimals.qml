@@ -822,7 +822,6 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 60 * ApplicationInfo.ratio
-            sourceSize.width: width
             onClicked: items.typeResult? Activity.verifyNumberTyping(answerBackground.userEntry) : Activity.verifyNumberRepresentation()
             mouseArea.enabled: !items.buttonsBlocked
         }

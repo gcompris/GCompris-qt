@@ -624,10 +624,7 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
-            height: ledContainer.height
-            width: height
-            sourceSize.height: height
-            sourceSize.width: height
+            width: ledContainer.height
             visible: !firstScreen.visible && items.audioMode
             anchors {
                 verticalCenter: layoutArea.verticalCenter
@@ -669,10 +666,7 @@ ActivityBase {
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.rightMargin: background.layoutMargins
             enabled: !items.buttonsBlocked
-            height: ledContainer.height
-            width: height
-            sourceSize.height: height
-            sourceSize.width: height
+            width: ledContainer.height
             onClicked: items.check()
         }
 
@@ -684,10 +678,7 @@ ActivityBase {
             anchors.verticalCenter: layoutArea.verticalCenter
             anchors.rightMargin: background.layoutMargins
             enabled: !items.buttonsBlocked
-            height: ledContainer.height
-            width: height
-            sourceSize.height: height
-            sourceSize.width: height
+            width: ledContainer.height
             onClicked: {
                 morseMap.visible = true
                 displayDialog(morseMap)

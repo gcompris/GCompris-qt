@@ -219,9 +219,6 @@ ActivityBase {
             anchors.verticalCenter: score.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: 70 * ApplicationInfo.ratio
-            height: width
-            sourceSize.height: width
-            sourceSize.width: width
             onClicked: validateKey();
             enabled: visible && items.buttonsEnabled
             visible: !items.immediateAnswer && items.answerCompleted

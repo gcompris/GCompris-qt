@@ -568,10 +568,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: score.height
-            width: height
-            sourceSize.width: width
-            sourceSize.height: height
+            width: score.height
             anchors.top: score.top
             z: score.z
             enabled: items.mouseEnabled

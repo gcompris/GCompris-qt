@@ -213,7 +213,7 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            width: 80 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
                 right: parent.right
@@ -286,8 +286,6 @@ ActivityBase {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: repeatItem.width
-            height: width
-            sourceSize.width: width
             anchors {
                 bottom: score.top
                 margins: 10 * ApplicationInfo.ratio

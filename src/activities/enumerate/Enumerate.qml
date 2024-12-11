@@ -291,7 +291,7 @@ ActivityBase {
                 bottomMargin: 9 * ApplicationInfo.ratio
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            width: 80 * ApplicationInfo.ratio
             onClicked: Activity.checkAnswers();
         }
 

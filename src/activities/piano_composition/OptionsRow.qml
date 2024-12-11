@@ -74,7 +74,7 @@ Grid {
         source: multipleStaff.isMusicPlaying ?
             "qrc:/gcompris/src/activities/piano_composition/resource/stop.svg" :
             "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
-        sourceSize.width: optionsRow.iconsWidth
+        width: optionsRow.iconsWidth
         visible: playButtonVisible
         onClicked: {
                 optionsRow.playButtonClicked()
@@ -84,7 +84,7 @@ Grid {
     BarButton {
         id: clearButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/erase.svg"
-        sourceSize.width: optionsRow.iconsWidth
+        width: optionsRow.iconsWidth
         visible: clearButtonVisible
         onClicked: clearButtonClicked()
     }
@@ -92,7 +92,7 @@ Grid {
     BarButton {
         id: undoButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/undo.svg"
-        sourceSize.width: optionsRow.iconsWidth
+        width: optionsRow.iconsWidth
         visible: undoButtonVisible
         onClicked: {
                 emitOptionMessage(qsTr("Undo"))
@@ -130,7 +130,6 @@ Grid {
                 emitOptionMessage(optionsRow.translatedRestNames[currentIndex])
             }
             width: optionsRow.iconsWidth * 0.9
-            sourceSize.width: width
             visible: restOptionsVisible
             anchors.topMargin: -3
             anchors.left: parent.left
@@ -140,7 +139,7 @@ Grid {
         BarButton {
             id: addRestButton
             width: restOptions.width
-            sourceSize.width: width
+            height: width
             source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter
@@ -171,8 +170,7 @@ Grid {
         id: noteOptions
         source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
         nbOptions: optionsRow.noteLengthName.length
-        sourceSize.width: optionsRow.iconsWidth
-        sourceSize.height: optionsRow.iconsWidth
+        width: optionsRow.iconsWidth
         currentIndex: 2
         onClicked: {
             background.currentType = optionsRow.noteLengthName[currentIndex][1]
@@ -184,7 +182,8 @@ Grid {
     BarButton {
         id: openButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
-        sourceSize.width: optionsRow.iconsWidth
+        width: optionsRow.iconsWidth
+        height: width
         visible: openButtonVisible
         onClicked: openButtonClicked()
     }
@@ -192,7 +191,8 @@ Grid {
     BarButton {
         id: saveButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
-        sourceSize.width: optionsRow.iconsWidth
+        width: optionsRow.iconsWidth
+        height: width
         visible: saveButtonVisible
         onClicked: saveButtonClicked()
     }
@@ -200,6 +200,7 @@ Grid {
     SwitchableOptions {
         id: lyricsOrPianoModeOption
         nbOptions: optionsRow.lyricsOrPianoModes.length
+        width: optionsRow.iconsWidth
         source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex][1])
         visible: lyricsOrPianoModeOptionVisible
         onClicked: emitOptionMessage(optionsRow.lyricsOrPianoModes[currentIndex][0])

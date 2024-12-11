@@ -13,9 +13,7 @@ import "../../core"
 
 BarButton {
     id: signButton
-    height: parent.height
     width: parent.height
-    sourceSize.height: height * scale
     source: signValue == "=" ? "qrc:/gcompris/src/activities/comparator/resource/equal.svg" :
                                 "qrc:/gcompris/src/activities/comparator/resource/superior.svg"
     rotation: signValue == "<" ? 180 : 0

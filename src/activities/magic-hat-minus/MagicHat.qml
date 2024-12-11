@@ -258,7 +258,6 @@ ActivityBase {
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: (background.height - bar.height * 1.2) * 0.15
-            sourceSize.width: width
             enabled: !items.inputBlocked && theHat.state === "GuessNumber"
             onClicked: {
                 items.inputBlocked = true

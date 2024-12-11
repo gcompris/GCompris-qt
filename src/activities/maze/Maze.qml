@@ -279,7 +279,7 @@ ActivityBase {
         BarButton {
             id: fastmode
             source: Activity.url + "fast-mode-button.svg"
-            sourceSize.width: 66 * bar.barZoom
+            width: 66 * bar.barZoom
             visible: !message.visible
             x: 10 * ApplicationInfo.ratio
             y: 10 * ApplicationInfo.ratio
@@ -294,7 +294,7 @@ ActivityBase {
                 top: parent.top
                 margins: 10
             }
-            sourceSize.width: 66 * bar.barZoom
+            width: 66 * bar.barZoom
             visible: invisibleMode
             onClicked: {
                 items.wallVisible = !items.wallVisible

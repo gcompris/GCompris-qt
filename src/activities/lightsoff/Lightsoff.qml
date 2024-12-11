@@ -198,7 +198,6 @@ ActivityBase {
                     anchors.fill: parent
                     fillMode: Image.PreserveAspectFit
                     source: lighton === 1 ? Activity.url + "on.svg" : Activity.url + "off.svg"
-                    sourceSize.height: items.cellSize
                     mouseArea.hoverEnabled: !items.blockClicks
                     mouseArea.enabled: !items.blockClicks
                     onClicked: Activity.windowPressed(index)
@@ -233,8 +232,7 @@ ActivityBase {
             id: tux
             fillMode: Image.PreserveAspectFit
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
-            height: bar.height
-            sourceSize.height: height
+            width: bar.height
             visible: true
             anchors {
                 right: parent.right

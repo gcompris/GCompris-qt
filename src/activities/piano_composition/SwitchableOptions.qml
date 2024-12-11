@@ -22,7 +22,9 @@ Image {
     
     signal clicked
 
-    sourceSize.width: optionsRow.iconsWidth
+    height: width
+    sourceSize.width: width
+    sourceSize.height: height
 
     MouseArea {
         id: mouseArea

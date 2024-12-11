@@ -159,9 +159,6 @@ Item {
             id: validate
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: bar.height * 0.8
-            height: width
-            sourceSize.width: width
-            sourceSize.height: height
             enabled: items.okEnabled
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio

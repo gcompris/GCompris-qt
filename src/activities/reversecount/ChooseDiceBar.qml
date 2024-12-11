@@ -44,7 +44,7 @@ Item {
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            sourceSize.width: 75 * ApplicationInfo.ratio
+            width: 75 * ApplicationInfo.ratio
             visible: true
             anchors {
                 right: undefined

@@ -157,7 +157,7 @@ ActivityBase {
                 bottomMargin: background.layoutMargins
                 horizontalCenter: score.horizontalCenter
             }
-            sourceSize.width: 60 * ApplicationInfo.ratio
+            width: 60 * ApplicationInfo.ratio
             enabled: !items.buttonsBlocked
             onClicked: Activity.checkAnswer()
         }

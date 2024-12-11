@@ -174,14 +174,12 @@ ActivityBase {
             anchors.verticalCenter: wholeExerciceDisplay.verticalCenter
             anchors.right: wholeExerciceDisplay.left
             anchors.rightMargin: background.layoutMargins
-            height: upButton.height * 3
+            height: upButton.width * 3
             width: upButton.width
             BarButton {
                 id: upButton
                 source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                // height defined in states
-                width: height
-                sourceSize.height: height * scale
+                // width defined in states
                 rotation: -90
                 anchors.top: parent.top
                 anchors.right: parent.right
@@ -200,9 +198,7 @@ ActivityBase {
             BarButton {
                 id: downButton
                 source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
-                height: upButton.height
-                width: height
-                sourceSize.height: height * scale
+                width: upButton.width
                 rotation: 90
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
@@ -253,7 +249,8 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             visible: items.numberOfRowsCompleted == dataListModel.count
-            sourceSize.width: 60 * ApplicationInfo.ratio
+            width: 60 * ApplicationInfo.ratio
+            height: width
             enabled: !bonus.isPlaying
             anchors {
                 bottom: score.top
@@ -316,7 +313,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     upButton {
-                        height: Math.max(layoutArea.height * 0.1, items.sizeOfElement)
+                        width: Math.max(layoutArea.height * 0.1, items.sizeOfElement)
                     }
                 }
             },
@@ -336,7 +333,7 @@ ActivityBase {
                 }
                 PropertyChanges {
                     upButton {
-                        height: layoutArea.width * 0.1
+                        width: layoutArea.width * 0.1
                     }
                 }
             }

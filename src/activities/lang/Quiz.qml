@@ -276,8 +276,7 @@ Item {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 64 * ApplicationInfo.ratio
-
+            width: 64 * ApplicationInfo.ratio
             z: 12
             anchors {
                 top: parent.top

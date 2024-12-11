@@ -104,10 +104,7 @@ ActivityBase {
 
             BarButton {
                 id: previousMonth
-                height: parent.height * 0.8
-                width: previousMonth.height
-                sourceSize.height: previousMonth.height
-                sourceSize.width: previousMonth.width
+                width: parent.height * 0.8
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.left: parent.left
                 anchors.leftMargin: parent.height * 0.1
@@ -134,10 +131,7 @@ ActivityBase {
             }
             BarButton {
                 id: nextMonth
-                height: previousMonth.height
-                width: nextMonth.height
-                sourceSize.height: nextMonth.height
-                sourceSize.width: nextMonth.width
+                width: previousMonth.height
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: parent.right
                 anchors.rightMargin: previousMonth.anchors.leftMargin
@@ -471,10 +465,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: bar.height * 0.8
-            width: okButton.height
-            sourceSize.width: okButton.width
-            sourceSize.height: okButton.height
+            width: bar.height * 0.8
             enabled: !items.buttonsBlocked
             z: 10
             anchors.top: calendarBox.bottom

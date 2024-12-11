@@ -157,7 +157,7 @@ ActivityBase {
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            sourceSize.width: 70 * ApplicationInfo.ratio
+            width: 70 * ApplicationInfo.ratio
             enabled: !bonus.isPlaying && (originListModel.count === 0)
             visible: originListModel.count === 0
             anchors.horizontalCenter: originPlaceholder.horizontalCenter

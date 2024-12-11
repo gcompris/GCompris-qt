@@ -284,7 +284,7 @@ ActivityBase {
                 BarButton {
                     id: repeatItem
                     source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-                    sourceSize.width: 60 * ApplicationInfo.ratio
+                    width: 60 * ApplicationInfo.ratio
                     anchors.right: parent.right
                     visible: items.score.currentSubLevel == 2 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
                     onClicked: {

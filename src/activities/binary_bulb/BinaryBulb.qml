@@ -159,7 +159,7 @@ ActivityBase {
             id: errorRectangle
             anchors.fill: bulbsRow
             z: score.z
-            imageSize: okButton.sourceSize.width
+            imageSize: okButton.width
             function releaseControls() { items.buttonsBlocked = false; }
         }
 
@@ -183,7 +183,7 @@ ActivityBase {
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 60 * ApplicationInfo.ratio
+            width: 60 * ApplicationInfo.ratio
             onClicked: Activity.equalityCheck()
             enabled: !items.buttonsBlocked
         }

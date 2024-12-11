@@ -40,7 +40,6 @@ Item {
         source: "qrc:/gcompris/src/activities/piano_composition/resource/" + (!currentIndex ? "trebbleClefButton.svg"
         : "bassClefButton.svg")
         width: optionsRow.iconsWidth * 0.9
-        sourceSize.width: width
         visible: clefButtonVisible
         onClicked: {
             //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
@@ -53,7 +52,6 @@ Item {
     BarButton {
         id: addClefButton
         width: clefButton.width
-        sourceSize.width: width
         source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter

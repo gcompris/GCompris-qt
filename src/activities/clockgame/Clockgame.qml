@@ -477,7 +477,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 60 * ApplicationInfo.ratio
+            width: 60 * ApplicationInfo.ratio
             anchors.bottom: bar.top
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right

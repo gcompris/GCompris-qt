@@ -146,8 +146,7 @@ ActivityBase {
             id: repeatItem
             visible: false
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
-            sourceSize.width: repeatArea.height > repeatArea.width ?
-                                    repeatArea.width * 0.6 : repeatArea.height * 0.6
+            width: repeatArea.height > repeatArea.width ? repeatArea.width * 0.6 : repeatArea.height * 0.6
             anchors.centerIn: repeatArea
             onClicked: {
                 if(!items.inputLocked && !audioVoices.isPlaying()) {
@@ -204,10 +203,7 @@ ActivityBase {
             BarButton {
                 id: okButton
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                height: scoreArea.scoreItemsSize
                 width: scoreArea.scoreItemsSize
-                sourceSize.height: height
-                sourceSize.width: height
                 enabled: !items.inputLocked
                 onClicked: {
                     if(!items.inputLocked)

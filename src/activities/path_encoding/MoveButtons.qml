@@ -28,7 +28,7 @@ Item {
             id: upButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: -90
-            sourceSize.width: size
+            width: size
             onClicked: Activity.moveTowards(Activity.Directions.UP)
             Rectangle {
                 anchors.fill: parent
@@ -43,7 +43,7 @@ Item {
             id: downButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: 90
-            sourceSize.width: size
+            width: size
             onClicked: Activity.moveTowards(Activity.Directions.DOWN)
             Rectangle {
                 anchors.fill: parent
@@ -58,7 +58,7 @@ Item {
             id: leftButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: -180
-            sourceSize.width: size
+            width: size
             onClicked: Activity.moveTowards(Activity.Directions.LEFT)
             Rectangle {
                 anchors.fill: parent
@@ -73,7 +73,7 @@ Item {
             id: rightButton
             source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
             rotation: 0
-            sourceSize.width: size
+            width: size
             onClicked: Activity.moveTowards(Activity.Directions.RIGHT)
             Rectangle {
                 anchors.fill: parent
