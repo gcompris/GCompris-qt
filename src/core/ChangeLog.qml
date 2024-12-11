@@ -26,6 +26,15 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 250000, "content": [
+                qsTr("Many usability improvements"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes"),
+                qsTr("Automatic application of new language when changing in the menu (no need to restart GCompris)"),
+                qsTr("Add splash screen at startup"),
+                qsTr("New command-line option to switch the renderer (--renderer renderer)")
+                ]
+            },
             { "versionCode": 40300, "content": [
                 qsTr("Many usability improvements"),
                 qsTr("Many bug fixes")
