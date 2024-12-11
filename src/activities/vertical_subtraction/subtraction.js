@@ -1,6 +1,7 @@
 /* GCompris - subtraction.js
  *
  * SPDX-FileCopyrightText: 2024 Bruno ANSELME <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  */
@@ -44,7 +45,10 @@ function calcDigitCount() {
 
 function buildNumbersModel() {
     items.numbersModel.clear()
-    items.board.digitCount = Math.max(items.nbDigits + 1, calcDigitCount(values) + 1)
+    items.board.digitCount = Math.max(items.nbDigits, calcDigitCount(values))
+    if(items.operation === items.operationType.Addition) {
+        items.board.digitCount += 1     // add 1 slot for additions as the final sum can have one more digit
+    }
     operationString = ""
     var result = values[0]
     for (var i = 0; i < values.length; i++) {

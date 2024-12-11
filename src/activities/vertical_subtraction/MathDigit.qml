@@ -1,6 +1,7 @@
 /* GCompris - MathDigit.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno ANSELME <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
@@ -8,7 +9,7 @@ import QtQuick
 import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
 
-Rectangle {
+Item {
     id: mathDigit
     property int value: -1
     property int expected: -1
@@ -19,43 +20,68 @@ Rectangle {
     property int carryValue: 0
     property int computedValue: ((value === -1) ? 0 : value) + (10 * tensValue) + carryValue
 
-    width: items.digitHeight * items.ratioWH
+    width: items.digitWidth
     height: items.digitHeight
-    color: "moccasin"
-    border.color: "burlywood"
-    border.width: (droppable && mouseArea.containsMouse) ? 3 : 0
-    radius: 5
 
-    GCText {
-        id: digitValue
-        width: parent.width / 2
-        height: items.digitHeight
-        anchors.centerIn: parent
-        horizontalAlignment: Text.AlignHCenter
-        fontSize: mediumSize
-        text: (value > -1) ? value : ""
+    function mapPadToItem(pad_, item_){
+        var tempX = item_.mapToItem(background, 0, 0).x + item_.width * 0.5 - pad_.width * 0.5
+        var tempY = item_.mapToItem(background, 0, 0).y + item_.height * 0.5 - pad_.height * 0.5
+        pad_.x = Core.clamp(tempX, items.baseMargins, pad_.maxX)
+        pad_.y = Core.clamp(tempY, items.baseMargins, pad_.maxY)
     }
 
     Rectangle {
-        id: tens
-        width: parent.width / 4
-        height: items.digitHeight / 2
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.left: parent.left
-        anchors.margins: 4
-        color: (tensValue === 0) ? "beige" : "mediumspringgreen"
+        id: digitBg
+        anchors.centerIn: parent
+        width: items.digitBgWidth
+        height: items.digitBgHeight
+        color: "moccasin"
         border.color: "burlywood"
-        border.width: tensMouseArea.containsMouse ? 2 : 0
-        radius: 3
+        border.width: (droppable && mouseArea.containsMouse) ? 3 : 0
+        radius: 5
+    }
+
+    GCText {
+        id: digitValue
+        width: digitBg.width * 0.5
+        height: digitBg.height
+        anchors.centerIn: parent
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        fontSize: mediumSize
+        fontSizeMode: Text.Fit
+        text: (value > -1) ? value : ""
+    }
+
+    Item {
+        id: tens
+        width: digitBg.width * 0.5
+        height: digitBg.height
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: digitBg.left
         visible: !droppable && hasTens && (items.operation !== VerticalSubtraction.OperationType.Addition) && items.withCarry
+
+        Rectangle {
+            id: tensBg
+            width: digitBg.width * 0.3
+            height: digitBg.height * 0.5
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: digitBg.width * 0.05
+            color: (tensValue === 0) ? "beige" : "mediumspringgreen"
+            border.color: "burlywood"
+            border.width: tensMouseArea.containsMouse ? 2 * ApplicationInfo.ratio : 0
+            radius: items.baseRadius
+        }
 
         GCText {
             id: tensText
-            anchors.fill: parent
-            anchors.centerIn: parent
+            anchors.fill: tensBg
+            anchors.centerIn: tensBg
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            fontSize: tinySize
+            fontSize: regularSize
+            fontSizeMode: Text.Fit
             text: (tensValue === 0) ? "" : tensValue
         }
 
@@ -69,37 +95,42 @@ Rectangle {
                 items.miniPad.isCarry = false
                 items.miniPad.color = "mediumspringgreen"
                 items.miniPad.repeater.model = [ 3, 2, 1, 0 ]
-                items.miniPad.x = mapToItem(background, 0, 0).x - items.miniPad.width + tens.width
-                items.miniPad.y = mapToItem(background, 0, 0).y
-                        - items.miniPad.height
-                        + tens.height
-                        + (tensValue * items.miniPad.cellHeight)
+                mapPadToItem(items.miniPad, tensBg)
                 items.miniPad.visible = true
             }
         }
     }
 
-    Rectangle {
+    Item {
         id: carry
-        width: parent.width / 4
-        height: items.digitHeight / 2
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.margins: 4
-        color: (carryValue === 0) ? "beige" : "salmon"
-        border.color: "burlywood"
-        border.width: carryMouseArea.containsMouse ? 2 : 0
-        radius: 3
+        width: tens.width
+        height: tens.height
+        anchors.bottom: digitBg.bottom
+        anchors.right: digitBg.right
         opacity: (!droppable && hasCarry) ? 1.0 : 0.0
         visible: !droppable && hasCarry && items.withCarry
 
+        Rectangle {
+            id: carryBg
+            width: tensBg.width
+            height: tensBg.height
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
+            anchors.margins: tensBg.anchors.leftMargin
+            color: (carryValue === 0) ? "beige" : "salmon"
+            border.color: "burlywood"
+            border.width: carryMouseArea.containsMouse ? 2 * ApplicationInfo.ratio : 0
+            radius: items.baseRadius
+        }
+
         GCText {
             id: incrText
-            anchors.fill: parent
-            anchors.centerIn: parent
+            anchors.fill: carryBg
+            anchors.centerIn: carryBg
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            fontSize: tinySize
+            fontSize: regularSize
+            fontSizeMode: Text.Fit
             text: (carryValue === 0) ? "" : (carryValue > 0) ? `+${carryValue}` : carryValue
         }
 
@@ -114,11 +145,7 @@ Rectangle {
                 items.miniPad.isCarry = true
                 items.miniPad.color = "salmon"
                 items.miniPad.repeater.model = up ? [ "+3", "+2", "+1", "" ] : [ "", "-1", "-2", "-3" ]
-                items.miniPad.x = mapToItem(background, 0, 0).x - items.miniPad.width + tens.width
-                items.miniPad.y = mapToItem(background, 0, 0).y
-                        - (items.miniPad.height * up)
-                        + (carry.height * up)
-                        + (carryValue * items.miniPad.cellHeight)
+                mapPadToItem(items.miniPad, carryBg)
                 items.miniPad.open()
             }
         }
@@ -131,8 +158,7 @@ Rectangle {
         enabled: mathNumber.enabled && droppable && !items.inputLocked
         onClicked: {
             items.numPad.currentDigit = parent
-            items.numPad.x = mapToItem(background, 0, 0).x - items.digitHeight
-            items.numPad.y = mapToItem(background, 0, 0).y - items.digitHeight
+            mapPadToItem(items.numPad, digitBg)
             items.numPad.open()
         }
     }

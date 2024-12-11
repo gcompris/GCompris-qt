@@ -1,6 +1,7 @@
 /* GCompris - VerticalSubtraction.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno ANSELME <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  *
  * References:
@@ -40,11 +41,14 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
         readonly property string digits: "0123456789"
         anchors.fill: parent
-        color: "#ABCDEF"
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -61,9 +65,14 @@ ActivityBase {
             property int currentLevel: activity.currentLevel
             property alias bonus: bonus
             property alias score: score
-            readonly property int digitHeight: 70
+            // readonly property int digitHeight: 70
             readonly property double ratioWH: 1.6
-
+            readonly property int baseMargins: 10 * ApplicationInfo.ratio
+            readonly property int baseRadius: 2 * ApplicationInfo.ratio
+            readonly property int digitWidth: Math.min(70 * ApplicationInfo.ratio, (layoutArea.width - baseMargins * 2) / Math.max(6, nbDigits + 2))
+            property int digitHeight: 1
+            readonly property int digitBgWidth: digitWidth - items.baseMargins
+            readonly property int digitBgHeight: digitHeight - items.baseMargins
             property var levels: activity.datasets
             property int currentSubLevel: 0
             property int subLevelCount: 0
@@ -106,78 +115,142 @@ ActivityBase {
 
         ListModel { id: numbersModel }
 
+        Item {
+            id: captionArea
+            anchors.top: score.top
+            anchors.left: parent.left
+            anchors.right: score.left
+            anchors.bottom: score.bottom
+            anchors.leftMargin: items.baseMargins
+            anchors.rightMargin: items.baseMargins
+        }
+
+        Rectangle {
+            color: "#80FFFFFF"
+            anchors.centerIn: caption
+            width: caption.paintedWidth + items.baseMargins * 2
+            height: caption.paintedHeight + items.baseMargins
+            radius: items.baseRadius
+        }
+
         GCText {
             id: caption
-            anchors.top: parent.top
-            width: parent.width
+            anchors.fill: captionArea
+            anchors.margins: items.baseMargins
+            fontSize: regularSize
+            fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
-            height: 100
+            verticalAlignment: Text.AlignVCenter
         }
 
-        Column {
-            id: boardColumn
-            anchors.top: caption.bottom
+        Item {
+            id: layoutArea
+            anchors.top: captionArea.bottom
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.margins: items.baseMargins
+            anchors.bottomMargin: bar.height * 1.5
+        }
+
+        Rectangle {
+            id: board
+            property int digitCount: 0
+            property int result: 0
+            width: resultNumber.width + items.baseMargins * 2
+            height: childrenRect.height + items.baseMargins * 2
+            anchors.top: layoutArea.top
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 20
+            color: "#F0F0F0"
+            radius: items.baseRadius
 
-            Rectangle {
-                id: board
-                property int digitCount: 0
-                property int result: 0
-                width: resultNumber.width + 40
-                height: childrenRect.height + 40
-                anchors.horizontalCenter: parent.horizontalCenter
-                color: "beige"
-                radius: 10
-                border.width: 3
-
-                Column {
-                    spacing: 5
-                    Repeater {
-                        id: numberRepeater
-                        model: numbersModel
-                        delegate: MathNumber {
-                            numberValue: value_
-                            lineIndex: index
-                            digitCount: board.digitCount
-                            droppable: !items.alreadyLaid
-                            operator: operator_
-                        }
-                    }
-
-                    Rectangle {     // Separator line
-                        width: board.width
-                        height: 30
-                        x: 15
-                        color: "transparent"
-                        Rectangle {
-                            width: resultNumber.width
-                            height: 3
-                            anchors.bottom: parent.bottom
-                            color: "black"
-                        }
-                    }
-
-                    MathNumber {
-                        id: resultNumber
+            Column {
+                spacing: 0
+                x: items.baseMargins
+                y: items.baseMargins
+                Repeater {
+                    id: numberRepeater
+                    model: numbersModel
+                    delegate: MathNumber {
+                        numberValue: value_
+                        lineIndex: index
                         digitCount: board.digitCount
-                        droppable: true
-                        enabled: okButton.visible
-                        lineIndex: -1   // Means result number line
+                        droppable: !items.alreadyLaid
+                        operator: operator_
                     }
                 }
-            }
 
-            BarButton {
-                id: okButton
-                source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                width: 100
-                anchors.horizontalCenter: parent.horizontalCenter
-                sourceSize.width: width
-                onClicked: Activity.checkResult()
-                mouseArea.enabled: !items.inputLocked
+                Item {
+                    id: equalLine
+                    width: resultNumber.width
+                    height: items.baseMargins
+                    Rectangle {
+                        width: resultNumber.width
+                        height: 2 * ApplicationInfo.ratio
+                        anchors.centerIn: parent
+                        color: "#191919"
+                    }
+                }
+
+                MathNumber {
+                    id: resultNumber
+                    digitCount: board.digitCount
+                    droppable: true
+                    digitsVisible: !readyButton.visible
+                    enabled: okButton.visible
+                    lineIndex: -1   // Means result number line
+                }
             }
         }
+
+        Item {
+            id: rightSideArea
+            anchors.left: board.right
+            anchors.right: layoutArea.right
+            anchors.top: layoutArea.top
+            anchors.bottom: layoutArea.bottom
+            anchors.margins: items.baseMargins
+        }
+
+        BarButton {
+            id: okButton
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            width: 60 * ApplicationInfo.ratio
+            anchors.top: board.bottom
+            anchors.topMargin: items.baseMargins
+            anchors.horizontalCenter: parent.horizontalCenter
+            onClicked: Activity.checkResult()
+            mouseArea.enabled: !items.inputLocked
+        }
+
+        states: [
+            State {
+                name: "okRight"
+                when: rightSideArea.width >= okButton.width
+                PropertyChanges {
+                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height  - items.baseMargins * 2) / Math.max(5, items.nbLines))
+                }
+                AnchorChanges {
+                    target: okButton
+                    anchors.verticalCenter: rightSideArea.verticalCenter
+                    anchors.horizontalCenter: rightSideArea.horizontalCenter
+                    anchors.top: undefined
+                }
+            },
+            State {
+                name: "okBottom"
+                when: rightSideArea.width < okButton.width
+                PropertyChanges {
+                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height - okButton.height - items.baseMargins * 3) / Math.max(5, items.nbLines))
+                }
+                AnchorChanges {
+                    target: okButton
+                    anchors.verticalCenter: undefined
+                    anchors.horizontalCenter: background.horizontalCenter
+                    anchors.top: board.bottom
+                }
+            }
+        ]
 
         Popup {
             id: miniPad
@@ -185,21 +258,22 @@ ActivityBase {
             property bool isCarry: true
             property string color: "#E5E5E5"
             property alias repeater: repeater
-            property int cellHeight: items.digitHeight * items.ratioWH / 3
-            height: 4 * cellHeight
-            width: (items.digitHeight / 2) + 2
+            property int maxX: background.width - width - items.baseMargins
+            property int maxY: background.height - height - items.baseMargins
+            height: 4 * items.digitBgHeight
+            width: items.digitBgWidth
             padding: 0
-            background: Rectangle { color: "transparent" }
+            background: Item {}
             modal: true
             contentItem: Column {
                 Repeater {
                     id: repeater
                     model: [ "", "+1", "+2", "+3" ]
                     delegate: Rectangle {
-                        width: items.digitHeight * items.ratioWH / 3
-                        height: miniPad.cellHeight
+                        width: items.digitBgWidth
+                        height: items.digitBgHeight
                         color: miniPad.color
-                        radius: 3
+                        radius: items.baseRadius
                         border.color: "#808080"
                         border.width: miniArea.containsMouse ? 2 : 1
 
@@ -250,29 +324,30 @@ ActivityBase {
         Popup {
             id: numPad
             property var currentDigit: null
-            width: items.digitHeight * 3
-            height: items.digitHeight * 4
+            property int maxX: background.width - width - items.baseMargins
+            property int maxY: background.height - height - items.baseMargins
+            width: items.digitBgWidth * 3
+            height: items.digitBgHeight * 4
             padding: 0
-            background: Rectangle { color: "transparent" }
+            background: Item {}
             modal: true
             contentItem: GridView {
                 id: gridPad
                 width: Math.ceil(3 * cellWidth)
                 height: Math.ceil(4 * cellHeight)
-                cellWidth: items.digitHeight
-                cellHeight: items.digitHeight
+                cellWidth: items.digitBgWidth
+                cellHeight: items.digitBgHeight
                 interactive: false
                 model: padModel
 
                 delegate: Rectangle {
                     id: numKey
-                    width: items.digitHeight
-                    height: items.digitHeight
-                    anchors.margins: 2
+                    width: items.digitBgWidth
+                    height: items.digitBgHeight
                     color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
                     border.color: "#808080"
                     border.width: 2
-                    radius: height * 0.1
+                    radius: items.baseRadius
 
                     GCText {
                         anchors.centerIn: parent
@@ -310,31 +385,20 @@ ActivityBase {
             }
         }
 
-
-        Rectangle {
-            anchors.centerIn: readyButton
-            width: readyButton.width + 20
-            height: readyButton.height + 20
-            radius: 20
-            color: "#FFF"
-            visible: readyButton.visible
-            border.color: "#62BA62"
-            border.width: 5
-        }
         GCButton {
             id: readyButton
             text: qsTr("Ready")
             visible: !okButton.visible
             anchors.horizontalCenter: background.horizontalCenter
             anchors.bottom: errorRectangle.bottom
-            anchors.bottomMargin: 20
+            anchors.bottomMargin: items.baseMargins + items.digitHeight * 0.5 - height * 0.5
             onClicked: Activity.checkDropped()
         }
 
         ErrorRectangle {
             id: errorRectangle
-            x: boardColumn.x + board.x
-            y: boardColumn.y + board.y
+            x: board.x
+            y: board.y
             width: board.width
             height: board.height
             radius: board.radius

@@ -1,6 +1,7 @@
 /* GCompris - MathNumber.qml
  *
  * SPDX-FileCopyrightText: 2024 Bruno ANSELME <be.root@free.fr>
+ * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick
@@ -8,7 +9,7 @@ import QtQuick
 import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
 
-Rectangle {
+Item {
     id: mathNumber
     property string numberValue: "0"
     property string operator: ""
@@ -16,12 +17,12 @@ Rectangle {
     property bool droppable: false
     property int digitCount: 0
     property alias digitRepeater: digitRepeater
+    property bool digitsVisible: true
 
     signal clickedIn(var item)
 
-    width:(items.digitHeight * items.ratioWH + number.spacing) * (digitCount + 1)
-    height: items.digitHeight + 5
-    color: "transparent"
+    width: items.digitWidth * (digitCount + 1)
+    height: items.digitHeight
 
     function buildDigits(aNumber, tens, carry) {
         digitsModel.clear()
@@ -86,34 +87,32 @@ Rectangle {
     ListModel { id: digitsModel }
 
     Row {
-        x: 20
-        y: 20
+        anchors.top: parent.top
         anchors.right: parent.right
+        visible: mathNumber.digitsVisible
 
-        Rectangle {
-            width: items.digitHeight * items.ratioWH
+        Item {
+            width: items.digitWidth
             height: items.digitHeight
-            color: "moccasin"
-            radius: 5
             visible: (lineIndex !== 0) && (lineIndex !== -1)
             GCText {
                 id: operatorValue
                 text: (lineIndex === 0) ? "" : operator
-                width: parent.width / 2
-                height: items.digitHeight
                 anchors.centerIn: parent
+                width: parent.width * 0.5
+                height: parent.height
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 fontSize: mediumSize
+                fontSizeMode: Text.Fit
             }
         }
 
         Flow {
             id: number
-            width: (items.digitHeight * items.ratioWH + spacing) * digitCount
+            width: items.digitWidth * digitCount + 1
             height: items.digitHeight
-            anchors.margins: 5
             anchors.verticalCenter: parent.verticalCenter
-            spacing: 10
             layoutDirection: Qt.RightToLeft
 
             Repeater {
