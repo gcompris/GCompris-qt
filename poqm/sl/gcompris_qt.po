@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-09 07:09+0100\n"
+"PO-Revision-Date: 2024-12-10 10:21+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -26117,39 +26117,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Vadite seštevanje."
+msgstr "Navpično seštevanje."
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Poustvari podan stolp."
+msgstr "Rešite dano seštevanje."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Naučite se deliti, vadite deljenje."
+msgstr "Naučite se reševati navpična seštevanja."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tabela seštevanja števila 1."
+msgstr "Tabela seštevanj."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -26169,85 +26157,91 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"Pri navpičnem seštevanju so števke zapisane ena pod drugo. Morajo biti "
+"pravilno poravnane, od prvega stolpca na desni strani. Rezultat je zapisan "
+"na spodnji vrstici. Seštevanje rešite tako, da seštejete števke prvega "
+"stolpca (na desni strani) in rezultat zapišete v spodnjo vrstico istega "
+"stolpca. Če je rezultat dvomestno število, na rezultat zapišite samo števko "
+"enote in dodajte desetico poleg zgornje števke naslednjega stolpca: to se "
+"imenuje prenos. Nato seštejte števke naslednjega stolpca, vključno s števko "
+"prenosa in ponavljajte postopek, dokler operacija ni končana. Ko najdete "
+"rezultat, kliknite gumb V redu, da potrdite svoj odgovor. Na nekaterih "
+"stopnjah boste morali napisati dano operacijo, preden jo rešite; v tem "
+"primeru kliknite na gumb Pripravljen, ko je operacija pravilno zapisana in "
+"jo nato rešite."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Rešite seštevanje 2 števki, 2 vrstici brez prenosa."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Rešite seštevanje 4 števke, 3 vrstice."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Rešite seštevanje 4 števke, 4 vrstice."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Napišite svoj seštevek in ga rešite."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Napišite in rešite seštevanje 2 števki, 2 vrstici brez prenosa."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Rešite seštevanje 2 števki, 2 vrstici."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Napišite in rešite seštevanje 2 števki, 2 vrstici."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Napišite in rešite seštevanje 2 števki, 3 vrstice."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Rešite seštevanje 3 števke, 2 vrstici."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Napišite in rešite seštevanje 3 števke, 2 vrstici."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Rešite seštevanje 3 števke, 3 vrstice."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Rešite seštevanje 4 števke, 2 vrstici."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Vadite odštevanje."
+msgstr "Navpično odštevanje"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Izberite navodila"
+msgstr "Rešite dano odštevanje."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:19
@@ -26256,16 +26250,14 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Naučite se reševati navpično odštevanje, z metodo izposoje z združevanjem."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tabela odštevanja števila 1."
+msgstr "Tabela odštevanja."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -26293,126 +26285,126 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Pri navpičnem odštevanju so števke zapisane ena pod drugo. Morajo biti "
+"pravilno poravnane, od prvega stolpca na desni strani. Zgornje število se "
+"imenuje minuend: to je znesek, s katerim začnemo, od katerega se odšteje "
+"drugo število, da dobimo razliko. Spodnje število se imenuje subtrahend: to "
+"je znesek, ki ga odštejemo od minuenda, da dobimo razliko. Rezultat je "
+"zapisan na spodnji vrstici. Če želite rešiti odštevanje, začnite tako, da "
+"odštejete spodnjo števko prvega stolpca od zgornje števke prvega stolpca (na "
+"desni strani) in zapišite rezultat v spodnjo vrstico istega stolpca. Če je "
+"zgornja števka manjša od spodnje števke, si lahko izposodite minuend v "
+"naslednjem stolpcu: na primer, če dodate 10 enot zgornji števki, morate "
+"odstraniti eno enoto iz zgornje števke naslednjega stolpca. To se imenuje "
+"metoda izposoje po prerazporeditvi. Če želite to narediti v tej dejavnosti, "
+"kliknite na prazen pravokotnik na levi strani zgornje števke, izberite 1 in "
+"v naslednjem stolpcu kliknite na prazen pravokotnik na desni strani zgornje "
+"števke in izberite -1. Nato v spodnjo vrstico zapišite rezultat stolpca in "
+"enako naredite v naslednjih stolpcih, dokler operacija ni končana. Ko "
+"najdete rezultat, kliknite gumb V redu, da potrdite svoj odgovor. Na "
+"nekaterih stopnjah boste morali napisati dano operacijo, preden jo rešite; v "
+"tem primeru kliknite na gumb Pripravljen, ko je operacija pravilno zapisana "
+"in jo nato rešite."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Rešite odštevanje 2 števki, 2 vrstici brez prenosa."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgstr "Rešite odštevanje 4 števke, 3 vrstice."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgstr "Rešite odštevanje 4 števke, 4 vrstice."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Nauči se tabelo odštevanja števila 1."
+msgstr "Napišite svoje odštevanje in ga rešite."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Pišite in rešite odštevanje 2 števki, 2 vrstici brez prenosa."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "Odštevanja števil 1, 2 in 3."
+msgstr "Rešite odštevanje 2 števki, 2 vrstici."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgstr "Zapišite in rešite odštevanje 2 števki, 2 vrstici."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgstr "Zapišite in rešite odštevanje 2 števki,3 vrstice."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 2 lines."
-msgstr "Odštevanja števil 1, 2 in 3."
+msgstr "Rešite odštevanje 3 števke, 2 vrstici."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgstr "Zapišite in rešite odštevanje 3 števke, 2 vrstici."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgstr "Rešite odštevanje 3 števke, 3 vrstice."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 2 lines."
-msgstr "Odštevanja števil 1, 2 in 3."
+msgstr "Rešite odštevanje 4 števke, 2 vrstici."
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Zapišite:"
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Rešite:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Naslov: %1"
+msgstr "Rešite: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Pripravljen(-a) sem"
+msgstr "Pripravljeni"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Vaje odštevanja."
+msgstr "Navpično odštevanje (kompenzacija)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
@@ -26421,6 +26413,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Naučite se reševati navpično odštevanje, z metodo izposoje po kompenzaciji."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
@@ -26448,6 +26441,26 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Pri navpičnem odštevanju so števke zapisane ena pod drugo. Morajo biti "
+"pravilno poravnane od prvega stolpca na desni strani. Zgornje število se "
+"imenuje minuend: to je znesek, s katerim začnemo, od katerega se odšteje "
+"drugo število, da dobimo razliko. Spodnje število se imenuje subtrahend: to "
+"je znesek, ki ga odštejemo od minuenda, da dobimo razliko. Rezultat je "
+"zapisan na spodnji vrstici. Če želite rešiti odštevanje, začnite tako, da "
+"odštejete spodnjo števko prvega stolpca od zgornje števke prvega stolpca (na "
+"desni strani) in zapišite rezultat v spodnjo vrstico istega stolpca. Če je "
+"zgornja števka manjša od spodnje števke, si lahko izposodite subtrahend v "
+"naslednjem stolpcu: na primer, če dodate 10 enot zgornji števki, morate "
+"dodati eno enoto spodnji števki naslednjega stolpca. To se imenuje metoda "
+"izposoje s kompenzacijo. Če želite to narediti v tej dejavnosti, kliknite na "
+"prazen pravokotnik na levi strani zgornje števke, izberite 1 in v naslednjem "
+"stolpcu kliknite na prazen pravokotnik na desni strani spodnje števke in "
+"izberite +1. Nato v spodnjo vrstico zapišite rezultat stolpca in enako "
+"naredite v naslednjih stolpcih, dokler operacija ni končana. Ko najdete "
+"rezultat, kliknite gumb V redu, da potrdite svoj odgovor. Na nekaterih "
+"stopnjah boste morali napisati dano operacijo, preden jo rešite; v tem "
+"primeru kliknite na gumb Pripravljen, ko je operacija pravilno zapisana in "
+"jo nato rešite."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15

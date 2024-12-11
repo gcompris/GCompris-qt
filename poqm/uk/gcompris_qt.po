@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-12-09 15:23+0200\n"
+"PO-Revision-Date: 2024-12-10 16:05+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -26405,39 +26405,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Вправи на додавання."
+msgstr "Вертикальне додавання"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Відтворіть задану башту."
+msgstr "Знайти результат вказаного додавання."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Навчання поділу, вправи на ділення."
+msgstr "Навчання вертикальному додаванню."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Таблиця додавання для 1."
+msgstr "Таблиці додавання."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -26457,85 +26445,93 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"При вертикальному додаванні числа записують одне під одним. Їх потрібно "
+"правильно вирівняти, починаючи з найправішої позиції. Результат записують у "
+"нижньому рядку. Щоб знайти результат, почніть із додавання чисел першого "
+"стовпчика (праворуч) і запишіть результат у нижньому рядку цього ж "
+"стовпчика. Якщо результат дає двозначне число, напишіть у результаті лише "
+"цифру одиниць і додайте цифру десятків до верхнього числа наступного "
+"стовпця: це називається перенесенням. Потім складіть числа наступного "
+"стовпця і перенесене число і повторюйте процес, доки дію не буде завершено. "
+"Коли ви знайдете результат, натисніть кнопку «Гаразд», щоб підтвердити свою "
+"відповідь. На деяких рівнях вам потрібно буде написати задану дію перед її "
+"виконанням; у цьому випадку натисніть кнопку «Готово», коли дію буде "
+"написано правильно, а потім знайдіть результат."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 2 цифри, 2 рядки, без перенесення."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 4 цифри, 3 рядки."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 4 цифри, 4 рядки."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Запишіть власне додавання і знайдіть його результат."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
 msgstr ""
+"Запишіть віднімання і знайдіть його результат, 2 цифри, 2 рядки, без "
+"перенесення."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 2 цифри, 2 рядки."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Запишіть віднімання і знайдіть його результат, 2 цифри, 2 рядки."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Запишіть віднімання і знайдіть його результат, 3 цифри, 2 рядки."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 3 цифри, 2 рядки."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Запишіть віднімання і знайдіть його результат, 3 цифри, 2 рядки."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 3 цифри, 3 рядки."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 2 цифри, 4 рядки."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Вправи на віднімання."
+msgstr "Вертикальне віднімання"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Виберіть команди"
+msgstr "Знайти результат вказаного віднімання."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:19
@@ -26544,16 +26540,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Навчання вертикальному відніманню без використання способу запозичення "
+"перегрупуванням."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Таблиця віднімання для 1."
+msgstr "Таблиці віднімання."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -26581,126 +26576,128 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"При вертикальному відніманні числа записуються одне під одним. Їх потрібно "
+"правильно вирівняти, починаючи з найправішої позиції. Верхнє число "
+"називається зменшуваним: це величина, з якої ми починаємо, від якої "
+"віднімається інше число, щоб отримати різницю. Наведене нижче число "
+"називається від'ємником: це величина, яку потрібно відняти від зменшеного, "
+"щоб отримати різницю. Результат записується у нижньому рядку. Щоб знайти "
+"результат, почніть з віднімання нижнього числа першого стовпця від верхнього "
+"числа першого стовпця (праворуч) і запишіть результат у нижньому рядку того "
+"самого стовпця. Якщо верхнє число менше нижнього, ви можете запозичити зі "
+"зменшуваного у наступному стовпці: наприклад, якщо ви додаєте 10 одиниць до "
+"верхнього числа, вам слід відняти одну одиницю від верхнього числа "
+"наступного стовпця. Це називається методом запозичення шляхом "
+"перегрупування. Щоб зробити це у цій вправі, натисніть порожній прямокутник "
+"ліворуч від верхнього числа, виберіть 1, а у наступному стовпці натисніть "
+"порожній прямокутник праворуч від верхнього числа і виберіть -1. Потім "
+"запишіть результат стовпця в нижній рядок і виконайте те ж саме в наступних "
+"стовпцях, поки операція не буде завершена. Коли ви знайдете результат, "
+"натисніть кнопку «Гаразд», щоб підтвердити свою відповідь. На деяких рівнях "
+"вам потрібно буде написати задану дію перед її виконанням; у цьому випадку "
+"натисніть кнопку «Готово», коли дія написана правильно, а потім виконайте її."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 2 цифри, 2 рядки, без перенесення."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 4 цифри, 3 рядки."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 4 цифри, 4 рядки."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Вивчення таблиці віднімання 1."
+msgstr "Запишіть власне віднімання і знайдіть його результат."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
 msgstr ""
+"Запишіть віднімання і знайдіть його результат, 2 цифри, 2 рядки, без "
+"перенесення."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "Віднімання з 1, 2 і 3."
+msgstr "Знайдіть результат віднімання, 2 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgstr "Запишіть віднімання і знайдіть результат, 2 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgstr "Запишіть віднімання і знайдіть результат, 2 цифри, 3 рядки."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 2 lines."
-msgstr "Віднімання з 1, 2 і 3."
+msgstr "Знайдіть результат віднімання, 3 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgstr "Запишіть віднімання і знайдіть результат, 3 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgstr "Знайдіть результат віднімання, 3 цифри, 3 рядки."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 2 lines."
-msgstr "Віднімання з 1, 2 і 3."
+msgstr "Знайдіть результат віднімання, 4 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Запис:"
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Розв'язок:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Композиція: %1"
+msgstr "Розв'яжіть: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Можна починати"
+msgstr "Готово"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Вправи на віднімання."
+msgstr "Вертикальне віднімання (компесанція)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
@@ -26709,6 +26706,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Навчання вертикальному відніманню без використання способу врівноваження "
+"перегрупуванням."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
@@ -26736,6 +26735,26 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"При вертикальному відніманні числа записуються одне під одним. Їх потрібно "
+"правильно вирівняти, починаючи з найправішої позиції. Верхнє число "
+"називається зменшуваним: це величина, з якої ми починаємо, від якої "
+"віднімається інше число, щоб отримати різницю. Наведене нижче число "
+"називається від'ємником: це величина, яку потрібно відняти від зменшеного, "
+"щоб отримати різницю. Результат записується у нижньому рядку. Щоб знайти "
+"результат, почніть з віднімання нижнього числа першого стовпця від верхнього "
+"числа першого стовпця (праворуч) і запишіть результат у нижньому рядку того "
+"самого стовпця. Якщо верхнє число менше нижнього, ви можете запозичити зі "
+"від'ємника у наступному стовпці: наприклад, якщо ви додаєте 10 одиниць до "
+"верхнього числа, вам слід додати видалити одну одиницю до нижнього числа "
+"наступного стовпця. Це називається методом запозичення шляхом врівноваження. "
+"Щоб зробити це у цій вправі, натисніть порожній прямокутник ліворуч від "
+"верхнього числа, виберіть 1, а у наступному стовпці натисніть порожній "
+"прямокутник праворуч від нижнього числа і виберіть +1. Потім запишіть "
+"результат стовпця в нижній рядок і виконайте те ж саме в наступних стовпцях, "
+"поки операція не буде завершена. Коли ви знайдете результат, натисніть "
+"кнопку «Гаразд», щоб підтвердити свою відповідь. На деяких рівнях вам "
+"потрібно буде написати задану дію перед її виконанням; у цьому випадку "
+"натисніть кнопку «Готово», коли дія написана правильно, а потім виконайте її."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15

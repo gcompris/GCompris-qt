@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-10 00:36+0000\n"
-"PO-Revision-Date: 2024-10-16 09:43+0200\n"
+"PO-Revision-Date: 2024-12-10 07:22+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -1319,7 +1319,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:17
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Rešite dani seštevek."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1327,7 +1327,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Rešite dano odštevanje."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

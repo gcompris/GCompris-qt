@@ -2565,7 +2565,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "დიახ"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -24473,39 +24473,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "ივარჯიშეთ რიცხვების მიმატებაში."
+msgstr "ვერტიკალური მიმატება"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "ამოხსენით კალკუდოკუ."
+msgstr "ამოხსენით მოცემული მიმატება."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "ისწავლეთ გაზიარება, იმეცადინეთ გაყოფაში."
+msgstr "ისწავლეთ, როგორ ამოხსნათ ვერტიკალური მიმატება."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "1-ის მიმატების ცხრილი."
+msgstr "მიმატების ცხრილები."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -24588,22 +24576,16 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "ივარჯიშეთ გამოკლებაში."
+msgstr "ვერტიკალური გამოკლება"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "აირჩიეთ ინსტრუქციები"
+msgstr "ამოხსენით მოცემული გამოკლება."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:19
@@ -24616,12 +24598,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "1-ის გამოკლების ცხრილი."
+msgstr "გამოკლების ცხრილები."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -24670,12 +24649,9 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "ისწავლეთ 1-ის გამოკლების ცხრილი."
+msgstr "დაწერთ თქვენი გამოკლება და ამოხსენით ის."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -24685,12 +24661,9 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "გამოკლებები 1-ით, 2-ით და 3-ით."
+msgstr "ამოხსენით გამოკლება, 2 ციფრი, 2 ხაზი."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
@@ -24706,12 +24679,9 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 2 lines."
-msgstr "გამოკლებები 1-ით, 2-ით და 3-ით."
+msgstr "ამოხსენით გამოკლება, 3 ციფრი, 2 ხაზი."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
@@ -24727,17 +24697,14 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 2 lines."
-msgstr "გამოკლებები 1-ით, 2-ით და 3-ით."
+msgstr "ამოხსენით გამოკლება, 4 ციფრი, 2 ხაზი."
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "ჩაწერა:"
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
@@ -24746,29 +24713,21 @@ msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "სათაური: %1"
+msgstr "ამოხსნა: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "მზად ვარ"
+msgstr "მზადაა"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "რიცხვების გამოკლების მეცადინეობა."
+msgstr "ვერტიკალური გამოკლება (კომპენსაცია)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
@@ -25605,7 +25564,7 @@ msgstr "%1 წარმატებით წაიშალა!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "დიახ"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format

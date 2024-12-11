@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2024-12-09 02:22+0100\n"
+"PO-Revision-Date: 2024-12-10 23:14+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -26481,39 +26481,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Practica la suma."
+msgstr "Suma vertical"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Reproduce la torre indicada."
+msgstr "Resuelve la suma indicada."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Aprende a compartir, practica la división."
+msgstr "Aprende a resolver sumas verticales."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tabla de sumar del 1."
+msgstr "Tablas de sumar."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -26533,85 +26521,93 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"En una suma vertical, los números se escriben unos debajo de otros. Deben "
+"estar alineados de forma correcta, empezando por la columna de la derecha. "
+"El resultado se escribe en la línea inferior. Para resolver la suma, empieza "
+"sumando los números de la primera columna (en el lado derecho) y escribe el "
+"resultado en la línea inferior, en la misma columna. Si el resultado es un "
+"número de dos dígitos, escribe solo el dígito de las unidades y añade el "
+"dígito de las decenas al número superior de la siguiente columna: esto se "
+"llama acarreo. A continuación, suma los números de la siguiente columna, "
+"incluido el número de acarreo, y repite el proceso hasta que la operación "
+"haya terminado. Cuando hayas encontrado el resultado, pulsa el botón "
+"«Aceptar» para validar tu respuesta. En algunos niveles tendrás que escribir "
+"la operación indicada antes de resolverlos; en este caso, pulsa el botón "
+"«Preparado» cuando hayas escrito la operación correctamente y después "
+"resuélvela."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Resuelve una suma de 2 dígitos y 2 líneas sin acarreo."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Resuelve una suma de 4 dígitos y 3 líneas."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Resuelve una suma de 4 dígitos y 4 líneas."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Escribe tu propia suma y resuélvela."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Escribe y resuelve una suma de 2 dígitos y dos líneas sin acarreo."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Resuelve una suma de 2 dígitos y 2 líneas."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Escribe y resuelve una suma de 2 dígitos y 2 líneas."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Escribe y resuelve una suma de 2 dígitos y 3 líneas."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Resuelve una suma de 3 dígitos y 2 líneas."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Escribe y resuelve una suma de 3 dígitos y 2 líneas."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Resuelve  una suma de 3 dígitos y 3 líneas."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Resuelve una suma de 4 dígitos y 2 líneas."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Practica la resta."
+msgstr "Resta vertical"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Escoge las instrucciones"
+msgstr "Resuelve la resta indicada."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:19
@@ -26620,16 +26616,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Aprende a resolver restas verticales con el método de préstamo con "
+"reagrupamiento."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tabla de restar del 1."
+msgstr "Tablas de restar."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -26657,126 +26652,128 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"En una resta vertical, los números se escriben uno debajo del otro. Deben "
+"estar alineados correctamente, comenzando por la columna del lado derecho. "
+"El número de arriba se llama minuendo: es la cantidad con la que comenzamos, "
+"a la que se resta otro número para obtener la diferencia. El número de abajo "
+"se llama sustraendo: es la cantidad que se resta del minuendo para obtener "
+"la diferencia. El resultado se escribe en la línea inferior. Para resolver "
+"la resta, empieza restando el número de abajo de la primera columna del "
+"número de arriba de la primera columna (en el lado derecho) y escribe el "
+"resultado en la línea inferior de la misma columna. Si el número de arriba "
+"es menor que el número de abajo, puedes tomar prestado del minuendo de la "
+"siguiente columna: por ejemplo, si añades 10 unidades al número de arriba, "
+"debes quitar una unidad del número de arriba de la siguiente columna. Esto "
+"se llama el método de préstamo por reagrupamiento. Para hacer esto en esta "
+"actividad, haz clic en el rectángulo vacío que hay a la izquierda del número "
+"superior, selecciona 1 y, en la siguiente columna, haz clic en el rectángulo "
+"vacío que a la derecha del número superior y selecciona -1. Luego, escribe "
+"el resultado de la columna en la línea inferior y haz lo mismo en las "
+"siguientes columnas hasta que la operación esté terminada. Una vez que hayas "
+"encontrado el resultado, haz clic en el botón «Aceptar» para validar tu "
+"respuesta. En algunos niveles será necesario que escribas la operación "
+"indicada antes de resolverla; en este caso, haz clic en el botón «Preparado» "
+"cuando la operación esté escrita correctamente y luego resuélvela."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Resuelve una resta de 2 dígitos y 2 líneas sin acarreo."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgstr "Resuelve una resta de 4 dígitos y 3 líneas."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgstr "Resuelve una resta de 4 dígitos y 4 líneas."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Aprende la tabla de restar del 1."
+msgstr "Escribe tu propia resta y resuélvela."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Escribe y resuelve una resta de 2 dígitos y 2 líneas sin acarreo."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "Restas con 1, 2 y 3."
+msgstr "Resuelve una resta de 2 dígitos y 2 líneas."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgstr "Escribe y resuelve una resta de 2 dígitos y 2 líneas."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgstr "Escribe y resuelve una resta de 2 dígitos y 3 líneas."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 2 lines."
-msgstr "Restas con 1, 2 y 3."
+msgstr "Resuelve una resta de 3 dígitos y 2 líneas."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgstr "Escribe y resuelve una resta de 3 dígitos y 2 líneas."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgstr "Resuelve una resta de 3 dígitos y 3 líneas."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 2 lines."
-msgstr "Restas con 1, 2 y 3."
+msgstr "Resuelve una resta de 4 dígitos y 2 líneas."
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Escribe:"
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Resuelve:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Título: %1"
+msgstr "Resuelve: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Estoy preparado"
+msgstr "Preparado"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Practica la operación de resta."
+msgstr "Resta vertical (compensación)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
@@ -26785,6 +26782,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Aprende a resolver restas verticales con el método de préstamo con "
+"compensación."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
@@ -26812,6 +26811,28 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"En una resta vertical, los números se escriben uno debajo del otro. Deben "
+"estar alineados correctamente, comenzando por la columna del lado derecho. "
+"El número de arriba se llama minuendo: es la cantidad con la que comenzamos, "
+"a la que se resta otro número para obtener la diferencia. El número de abajo "
+"se llama sustraendo: es la cantidad que se resta del minuendo para obtener "
+"la diferencia. El resultado se escribe en la línea inferior. Para resolver "
+"la resta, empieza restando el número de abajo de la primera columna del "
+"número de arriba de la primera columna (en el lado derecho) y escribe el "
+"resultado en la línea inferior de la misma columna. Si el número de arriba "
+"es menor que el de abajo, puedes tomar prestado del sustraendo de la "
+"siguiente columna: por ejemplo, si añades 10 unidades al número de arriba, "
+"debes sumar una unidad al número de abajo de la siguiente columna. Esto se "
+"llama método de préstamo por compensación. Para hacer esto en esta "
+"actividad, haz clic en el rectángulo vacío que hay a la izquierda del número "
+"superior, selecciona 1 y, en la siguiente columna, haz clic en el rectángulo "
+"vacío que hay a la derecha del número inferior y selecciona +1. Luego, "
+"escribe el resultado de la columna en la línea inferior y haz lo mismo en "
+"las siguientes columnas hasta que la operación esté terminada. Una vez que "
+"hayas encontrado el resultado, haz clic en el botón «Aceptar» para validar "
+"tu respuesta. En algunos niveles será necesario que escribas la operación "
+"indicada antes de resolverla; en este caso, haz clic en el botón «Preparado» "
+"cuando la operación esté escrita correctamente y luego resuélvela."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15

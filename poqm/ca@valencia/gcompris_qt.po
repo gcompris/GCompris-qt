@@ -5,16 +5,16 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Antoni Bella Pérez <antonibella5@yahoo.com>
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
 # Xavier A. Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006, 2007.
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-10-27 17:48+0100\n"
+"PO-Revision-Date: 2024-12-10 13:20+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -689,7 +689,8 @@ msgid "Find the dove butterfly"
 msgstr "Troba la palometa colom"
 
 # Nota: http://encycolorpedia.es/943543
-# https://ca.wikipedia.org/wiki/Granat_(color) (to diferent #800000 -l'article pot ser incorrecte-)
+# https://ca.wikipedia.org/wiki/Granat_(color) (to diferent #800000 -l'article
+# pot ser incorrecte-)
 #. Color #943543
 #: activities/advanced_colors/advanced_colors.js:272
 msgctxt "advanced_colors|"
@@ -2818,7 +2819,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "D'acord"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -6080,7 +6081,8 @@ msgctxt "board19_0|"
 msgid "Taj Mahal, Agra, India"
 msgstr "Taj Mahal, Agra, Índia"
 
-# Nota: http://www.wikiart.org/en/vincent-van-gogh/the-entrance-hall-of-saint-paul-hospital-1889
+# Nota: http://www.wikiart.org/en/vincent-van-gogh/the-entrance-hall-of-saint-
+# paul-hospital-1889
 #: activities/details/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
 msgid "Vincent van Gogh, Entrance Hall of Saint-Paul Hospital - 1889"
@@ -6114,7 +6116,8 @@ msgctxt "board3_0|"
 msgid "Vincent van Gogh, The Church at Auvers-sur-Oise - 1890"
 msgstr "Vincent van Gogh, L'església d'Auvers-sur-Oise - 1890"
 
-# Nota: http://www.vangoghgallery.com/catalog/Painting/374/Painter-on-His-Way-to-Work,-The.html
+# Nota: http://www.vangoghgallery.com/catalog/Painting/374/Painter-on-His-Way-
+# to-Work,-The.html
 #: activities/details/resource/board/board4_0.qml:14
 msgctxt "board4_0|"
 msgid "Vincent van Gogh, Painter on His Way to Work - 1888"
@@ -8167,7 +8170,8 @@ msgstr ""
 "Neuschwanstein és l'edifici més fotografiat al país i una de les atraccions "
 "turístiques més populars d'Alemanya."
 
-# Nota: <http://wikimapia.org/2017129/ca/Les-Termes-Imperials-de-Tr%C3%A9veris>
+# Nota: <http://wikimapia.org/2017129/ca/Les-Termes-Imperials-de-
+# Tr%C3%A9veris>
 #: activities/explore_monuments/resource/board/board4.qml:29
 #: activities/explore_monuments/resource/board/board4.qml:32
 msgctxt "board4|"
@@ -8249,7 +8253,8 @@ msgstr ""
 "Va ser acabada el 1857 i simbolitza la poderosa dinastia del seu fundador, "
 "Friedrich Franz II."
 
-# Nota: <https://ca.wikipedia.org/wiki/Bas%C3%ADlica_de_Constant%C3%AD_de_Tr%C3%A8veris>
+# Nota:
+# <https://ca.wikipedia.org/wiki/Bas%C3%ADlica_de_Constant%C3%AD_de_Tr%C3%A8veris>
 #: activities/explore_monuments/resource/board/board4.qml:73
 #: activities/explore_monuments/resource/board/board4.qml:76
 msgctxt "board4|"
@@ -8324,7 +8329,8 @@ msgstr ""
 "a la badia de San Diego el setembre de 1542, tres mesos després d'eixir des "
 "de Barra de Navidad, a la costa oest de Mèxic."
 
-# Nota: <https://ca.wikipedia.org/wiki/Monument_Nacional_del_Cany%C3%B3_de_Chelly>
+# Nota:
+# <https://ca.wikipedia.org/wiki/Monument_Nacional_del_Cany%C3%B3_de_Chelly>
 #: activities/explore_monuments/resource/board/board5.qml:29
 #: activities/explore_monuments/resource/board/board5.qml:32
 msgctxt "board5|"
@@ -8401,7 +8407,8 @@ msgctxt "board5|"
 msgid "George Washington Birthplace"
 msgstr "Lloc de naixement de George Washington"
 
-# Nota: <https://en.wikipedia.org/wiki/George_Washington_Birthplace_National_Monument>
+# Nota:
+# <https://en.wikipedia.org/wiki/George_Washington_Birthplace_National_Monument>
 #: activities/explore_monuments/resource/board/board5.qml:63
 msgctxt "board5|"
 msgid ""
@@ -21121,13 +21128,15 @@ msgctxt "board4_0|"
 msgid "Katsushika Hokusai, Oiran and Kamuro"
 msgstr "Katsushika Hokusai, Oiran i el seu Kamuro"
 
-# Nota: http://www.wikiart.org/en/katsushika-hokusai/portrait-of-a-woman-holding-a-fan
+# Nota: http://www.wikiart.org/en/katsushika-hokusai/portrait-of-a-woman-
+# holding-a-fan
 #: activities/paintings/resource/board/board5_0.qml:14
 msgctxt "board5_0|"
 msgid "Katsushika Hokusai, Woman holding a fan"
 msgstr "Katsushika Hokusai, Dona que sosté un ventall"
 
-# Nota: http://www.katsushikahokusai.org/Ejiri-in-Suruga-Province-(Sunshu-Ejiri).html
+# Nota: http://www.katsushikahokusai.org/Ejiri-in-Suruga-Province-(Sunshu-
+# Ejiri).html
 #: activities/paintings/resource/board/board6_0.qml:14
 msgctxt "board6_0|"
 msgid "Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833"
@@ -21139,7 +21148,8 @@ msgctxt "board7_0|"
 msgid "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829"
 msgstr "Katsushika Hokusai, La gran ona de Kanagawa - 1823-1829"
 
-# Nota: http://www.wikiart.org/en/hiroshige/benzaiten-shrine-at-inokashira-in-snow
+# Nota: http://www.wikiart.org/en/hiroshige/benzaiten-shrine-at-inokashira-in-
+# snow
 #: activities/paintings/resource/board/board8_0.qml:14
 msgctxt "board8_0|"
 msgid "Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70"
@@ -26834,39 +26844,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Practicar sumar."
+msgstr "Suma vertical"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Resol Calcudoku."
+msgstr "Resoleu la suma indicada."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Aprendre a compartir, practicar la divisió."
+msgstr "Aprendre a solucionar sumes verticals."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Suma amb la taula de l'1."
+msgstr "Taules de sumar."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -26886,85 +26884,92 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"En una suma vertical, els números s'escriuen un davall de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El resultat "
+"s'escriu a la línia inferior. Per a resoldre la suma, comenceu sumant els "
+"números de la primera columna (a la part dreta), i escriviu el resultat a la "
+"línia inferior de la mateixa columna. Si el resultat dona un número de dos "
+"dígits, escriviu només el dígit de les unitats en el resultat, i afegiu el "
+"dígit de les desenes al costat del número superior de la columna següent: "
+"açò s'anomena portar-ne. A continuació, sumeu els números de la columna "
+"següent, inclòs el número portat, i repetiu el procés fins que s'acabe "
+"l'operació. Una vegada trobat el resultat, feu clic en el botó D'acord per a "
+"validar la resposta. En alguns nivells, haureu d'escriure l'operació "
+"indicada abans de resoldre-la; en este cas, feu clic en el botó Preparat "
+"quan l'operació s'haja escrit correctament i després resoleu-la."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Resoleu la suma, 2 dígits, 2 línies, sense portar-ne."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Resoleu la suma, 4 dígits, 3 línies."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Resoleu la suma, 4 dígits, 4 línies."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Escriviu la vostra pròpia suma i resoleu-la."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Escriviu i resoleu la suma, 2 dígits, 2 línies, sense portar-ne."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Resoleu la suma, 2 dígits, 2 línies."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Escriviu i resoleu la suma, 2 dígits, 2 línies."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Escriviu i resoleu la suma, 2 dígits, 3 línies."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Resoleu la suma, 3 dígits, 2 línies."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Escriviu i resoleu la suma, 3 dígits, 2 línies."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Resoleu la suma, 3 dígits, 3 línies."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Resoleu la suma, 4 dígits, 2 línies."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Practicar restar."
+msgstr "Resta vertical"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Tria les instruccions"
+msgstr "Resoleu la resta indicada."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:19
@@ -26973,16 +26978,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Aprendre a resoldre restes verticals, amb el mètode de portant-ne per "
+"reagrupament."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Resta amb la taula de l'1."
+msgstr "Taules de restar."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -27010,126 +27014,127 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"En una resta vertical, els números s'escriuen un davall de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El número "
+"superior s'anomena minuend: és la quantitat amb la qual comencem, de la qual "
+"restarem un altre número per a obtindre la diferència. El nombre següent "
+"s'anomena subtrahend: és la quantitat a restar del minuend per a obtindre la "
+"diferència. El resultat s'escriu a la línia inferior. Per a resoldre la "
+"resta, comenceu restant el número inferior de la primera columna del número "
+"superior de la primera columna (al costat dret), i escriviu el resultat a la "
+"línia inferior de la mateixa columna. Si el número superior és més xicotet "
+"que el número inferior, podeu demanar prestat del minuend de la columna "
+"següent: per exemple, si afegiu 10 unitats al número superior, haureu "
+"d'eliminar una unitat del número superior de la columna següent. Açò "
+"s'anomena mètode de portar-ne per reagrupament. Per a fer-ho en esta "
+"activitat, feu clic en el rectangle buit a l'esquerra del número superior, "
+"seleccioneu 1, i a la columna següent feu clic en el rectangle buit a la "
+"dreta del número superior i seleccioneu -1. Després escriviu el resultat de "
+"la columna a la línia inferior, i feu el mateix a les columnes següents fins "
+"que l'operació haja acabat. Una vegada trobeu el resultat, feu clic en el "
+"botó D'acord per a validar la resposta. En alguns nivells, haureu d'escriure "
+"l'operació indicada abans de resoldre-la; en este cas, feu clic en el botó "
+"Preparat quan l'operació s'haja escrit correctament i després resoleu-la."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Resoleu la resta, 2 dígits, 2 línies, sense portar-ne."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgstr "Resoleu la resta, 4 dígits, 3 línies."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgstr "Resoleu la resta, 4 dígits, 4 línies."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Aprendre la taula de restar de l'1."
+msgstr "Escriviu la vostra pròpia resta i resoleu-la."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Escriviu i resoleu la resta, 2 dígits, 2 línies, sense portar-ne."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "Restes amb l'1, 2 i 3."
+msgstr "Resoleu la resta, 2 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgstr "Escriviu i resoleu la resta, 2 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgstr "Escriviu i resoleu la resta, 2 dígits, 3 línies."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 2 lines."
-msgstr "Restes amb l'1, 2 i 3."
+msgstr "Resoleu la resta, 3 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgstr "Escriviu i resoleu la resta, 3 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgstr "Resoleu la resta, 3 dígits, 3 línies."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 2 lines."
-msgstr "Restes amb l'1, 2 i 3."
+msgstr "Resoleu la resta, 4 dígits, 2 línies."
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Escriviu:"
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Resoleu:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Títol: %1"
+msgstr "Resol: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Estic preparat"
+msgstr "Preparat"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Practiqueu l'operació de resta."
+msgstr "Resta vertical (compensació)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
@@ -27138,6 +27143,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Apreneu resoldre restes verticals, amb el mètode de portar-ne per "
+"compensació."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
@@ -27165,6 +27172,39 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"En una resta vertical, els números s'escriuen un davall de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El número "
+"superior s'anomena minuend: és la quantitat amb la qual comencem, de la qual "
+"restarem un altre número per a obtindre la diferència. El nombre següent "
+"s'anomena subtrahend: és la quantitat a restar del minuend per a obtindre la "
+"diferència. El resultat s'escriu a la línia inferior. Per a resoldre la "
+"resta, comenceu restant el número inferior de la primera columna del número "
+"superior de la primera columna (al costat dret), i escriviu el resultat a la "
+"línia inferior de la mateixa columna. Si el número superior és més xicotet "
+"que el número inferior, podeu demanar prestat del subtrahend de la columna "
+"següent: per exemple, si afegiu 10 unitats al número superior, haureu "
+"d'afegir una unitat del número inferior de la columna següent. Açò s'anomena "
+"mètode de portar-ne per compensació. Per a fer-ho en esta activitat, feu "
+"clic en el rectangle buit a l'esquerra del número superior, seleccioneu 1, i "
+"a la columna següent feu clic en el rectangle buit a la dreta del número "
+"superior i seleccioneu +1. Després escriviu el resultat de la columna a la "
+"línia inferior, i feu el mateix a les columnes següents fins que l'operació "
+"haja acabat. Una vegada trobeu el resultat, feu clic en el botó D'acord per "
+"a validar la resposta. En alguns nivells, haureu d'escriure l'operació "
+"indicada abans de resoldre-la; en este cas, feu clic en el botó Preparat "
+"quan l'operació s'haja escrit correctament i després resoleu-la. Si el "
+"número superior és més xicotet que el número inferior, podeu demanar prestat "
+"del subtrahend a la columna següent: per exemple, si afegiu 10 unitats al "
+"número superior, heu d'afegir una unitat al número inferior de la columna "
+"següent. Açò s'anomena préstec per mètode de compensació. Per fer-ho en esta "
+"activitat, feu clic en el rectangle buit a l'esquerra del número superior, "
+"seleccioneu 1, i a la columna següent feu clic en el rectangle buit a la "
+"dreta del número inferior i seleccioneu +1. Després escriu el resultat de la "
+"columna a la línia inferior, i fes el mateix a les següents columnes fins "
+"que l'operació haja acabat. Una vegada trobat el resultat, feu clic en el "
+"botó D'acord per validar la resposta. En alguns nivells, haureu d'escriure "
+"l'operació donada abans de resoldre-la; en este cas, feu clic en el botó "
+"Prepara quan l'operació s'escriu correctament i després resoleu-la."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -28086,7 +28126,7 @@ msgstr "S'ha suprimit %1 amb èxit!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "D'acord"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -28382,11 +28422,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "D'acord"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "D'acord"

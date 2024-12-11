@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-10 00:36+0000\n"
-"PO-Revision-Date: 2024-10-16 05:37+0200\n"
+"PO-Revision-Date: 2024-12-10 05:46+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -1336,7 +1336,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:17
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "ამოხსენით მოცემული მიმატება."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1344,7 +1344,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "ამოხსენით მოცემული გამოკლება."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

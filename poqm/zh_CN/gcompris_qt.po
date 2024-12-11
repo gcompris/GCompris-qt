@@ -24670,39 +24670,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Vertical reading practice"
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "纵向阅读练习"
+msgstr ""
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "解开聪明格谜题"
+msgstr ""
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize musical instruments."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "学习分辨乐器。"
+msgstr ""
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "1 的加法表。"
+msgstr ""
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -24785,12 +24773,9 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Vertical reading practice"
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "纵向阅读练习"
+msgstr ""
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
@@ -24810,12 +24795,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "1 的减法表。"
+msgstr ""
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -24864,12 +24846,9 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "学习1的减法表。"
+msgstr ""
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -24931,29 +24910,21 @@ msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "标题：%1"
+msgstr ""
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "准备好了"
+msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "减法运算练习。"
+msgstr ""
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19

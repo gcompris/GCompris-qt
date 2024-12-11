@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-09 12:43+0100\n"
+"PO-Revision-Date: 2024-12-10 12:43+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -26394,39 +26394,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Optellen oefenen."
+msgstr "Verticaal optellen"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "De gegeven toren reproduceren."
+msgstr "Los de gegeven optelling op."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Leer te delen, oefen de deling."
+msgstr "Leer het oplossen van verticaal optellen."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tafel optellen met 1."
+msgstr "Opteltafels."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:23
@@ -26446,85 +26434,94 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"In een verticale optelling worden getallen de ene onder de ander "
+"opgeschreven. Ze moeten juist uitgelijnd zijn, beginnend vanaf de kolom aan "
+"de rechterkant. Het resultaat wordt op de onderste regel geschreven. Om de "
+"optelling te starten, begin door de cijfers van de eerste kolom (aan de "
+"rechterkant) op te tellen en schrijf het resultaat op de onderste regel van "
+"dezelfde kolom. Als het resultaat een tweede cijfer geeft, schrijf dan "
+"alleen het eenheidscijfer op het resultaat en tel het tiendengetal op bij "
+"het bovenste cijfer van de volgende kolom: dit wordt de overdracht genoemd. "
+"Tel daarna de cijfers van de volgende kolom op, inclusief het overgedragen "
+"getal en herhaal het proces totdat de bewerking is geëindigd. Nadat u het "
+"resultaat hebt gevonden, klik op de knop OK om uw antwoord te controleren. "
+"In sommige niveaus moet u de gegeven bewerking opschrijven voor het "
+"oplossen; in dat geval, klik op de Knop Klaar wanneer de bewerking juist is "
+"opgeschreven en los het daarna op."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Los de optelling op, 2 cijfers, 2 regels, zonder overdracht."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Los de optelling op, 4 cijfers, 3 regels."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Los de optelling op, 4 cijfers, 4 regels."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Schrijf uw eigen optelling en los het op."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
 msgstr ""
+"Schrijf en los de optelling op, 2 cijfers, 2 regels, zonder overdracht."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Los de optelling op, 2 cijfers, 2 regels."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Schrijf en los de optelling op, 2 cijfers, 2 regels."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Schrijf en los de optelling op, 2 cijfers, 3 regels."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Los de optelling op, 3 cijfers, 2 regels."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Schrijf en los de optelling op, 3 cijfers, 2 regels."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Los de optelling op, 3 cijfers, 3 regels."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Los de optelling op, 4 cijfers, 2 regels."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Aftrekken oefenen."
+msgstr "Verticaal aftrekken"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:16
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "De instructies kiezen"
+msgstr "Los de gegeven aftrekking op."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:19
@@ -26533,16 +26530,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Leer het oplossen van verticaal aftrekken, met lenen door de methode "
+"hergroeperen."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:21
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tafel aftrekken met 1."
+msgstr "Aftrektafels."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:23
@@ -26570,126 +26566,129 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"In een verticale aftrekking worden cijfers de ene onder de andere "
+"geschreven. Ze moeten juist zijn uitgelijnd, beginnend vanaf de kolom aan de "
+"rechterkant. Het bovenste getal wordt het aftrekgetal genoemd: het is de "
+"hoeveelheid waarmee we beginnen, dat andere getal wordt er van afgetrokken "
+"om het verschil te krijgen. Het getal eronder wordt de aftrekker genoemd: "
+"het is de hoeveelheid om af te trekken van het aftrekgetal om het verschil "
+"te krijgen. Het resultaat wordt op de onderste regel geschreven. Om de "
+"aftrekking op te lossen, begin door het onderste cijfer van de eerste kolom "
+"af te trekken van het bovenste cijfer van de eerste kolom (aan de "
+"rechterkant) en schrijf het resultaat op de onderste regel van dezelfde "
+"kolom. Als het bovenste cijfer kleiner is dan het onderste cijfer, dan kunt "
+"u lenen van het aftrekgetal in de volgende kolom: bijvoorbeeld, als u 10 "
+"eenheden optelt bij het bovenste cijfer, moet u het één eenheid aftrekken "
+"van het bovenste cijfer van de volgende kolom. Dit wordt de methode lenen "
+"door hergroeperen genoemd. Om dat te doen in deze activiteit, klik op de "
+"lege rechthoek links van het bovenste getal, selecteer 1, en op de volgende "
+"kolom klik op de lege rechthoek rechts van het bovenste getal en selecteer "
+"-1. Schrijf daarna het resultaat van de kolom op de onderste regel, en doe "
+"hetzelfde in de volgende kolommen totdat de bewerking is voltooid. Nadat u "
+"het resultaat hebt gevonden, klik op de knop OK om uw antwoord te "
+"controleren. In sommige niveaus moet u de gegeven bewerking opschrijven voor "
+"het oplossen; in dat geval, klik op de knap Klaar wanneer de bewerking juist "
+"is opgeschreven en los het daarna op."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Los de aftrekking op,  cijfers, 2 regels, zonder lenen."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgstr "Los de aftrekking op, 4 cijfers, 3 regels."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgstr "Los de aftrekking op, 4 cijfers, 4 regels."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Tafel met aftrekken met 1 leren."
+msgstr "Schrijf uw eigen aftrekking en los het op."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Schrijf en los de aftrekking op, 2 cijfers, 2 regels, zonder lenen."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "Aftrekken met 1, 2 en 3."
+msgstr "Los de aftrekking op, 2 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgstr "Schrijf en los de aftrekking op, 2 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgstr "Schrijf en los de aftrekking op, 2 cijfers, 3 regels."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 2 lines."
-msgstr "Aftrekken met 1, 2 en 3."
+msgstr "Los de aftrekking op, 3 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgstr "Schrijf en los de aftrekking op, 3 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgstr "Los de aftrekking op, 3 cijfers, 3 regels."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 digits, 2 lines."
-msgstr "Aftrekken met 1, 2 en 3."
+msgstr "Los de aftrekking op, 4 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Schrijven:"
 
 #: activities/vertical_subtraction/subtraction.js:65
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Oplossen:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:160
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Titel: %1"
+msgstr "Oplossen: %1 "
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:326
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Ik ben klaar"
+msgstr "Klaar"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Oefenen met de bewerking aftrekken."
+msgstr "Verticaal aftrekken (compenseren)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
@@ -26698,6 +26697,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Leer het oplossen van verticaal aftrekken, met lenen door de methode "
+"compenseren."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
@@ -26725,6 +26726,29 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"In een verticale aftrekking worden cijfers de ene onder de andere "
+"geschreven. Ze moeten juist zijn uitgelijnd, beginnend vanaf de kolom aan de "
+"rechterkant. Het bovenste getal wordt het aftrekgetal genoemd: het is de "
+"hoeveelheid waarmee we beginnen, dat andere getal wordt er van afgetrokken "
+"om het verschil te krijgen. Het getal eronder wordt de aftrekker genoemd: "
+"het is de hoeveelheid om af te trekken van het aftrekgetal om het verschil "
+"te krijgen. Het resultaat wordt op de onderste regel geschreven. Om de "
+"aftrekking op te lossen, begin door het onderste cijfer van de eerste kolom "
+"af te trekken van het bovenste cijfer van de eerste kolom (aan de "
+"rechterkant) en schrijf het resultaat op de onderste regel van dezelfde "
+"kolom. Als het bovenste cijfer kleiner is dan het onderste cijfer, dan kunt "
+"u lenen van de aftrekker in de volgende kolom: bijvoorbeeld, als u 10 "
+"eenheden optelt bij het bovenste cijfer, moet u één eenheid optellen bij het "
+"onderste cijfer van de volgende kolom. Dit wordt de methode lenen door "
+"compenseren genoemd. Om dat te doen in deze activiteit, klik op de lege "
+"rechthoek links van het onderste getal, selecteer 1, en op de volgende kolom "
+"klik op de lege rechthoek rechts van het bovenste getal en selecteer +1. "
+"Schrijf daarna het resultaat van de kolom op de onderste regel, en doe "
+"hetzelfde in de volgende kolommen totdat de bewerking is voltooid. Nadat u "
+"het resultaat hebt gevonden, klik op de knop OK om uw antwoord te "
+"controleren. In sommige niveaus moet u de gegeven bewerking opschrijven voor "
+"het oplossen; in dat geval, klik op de knap Klaar wanneer de bewerking juist "
+"is opgeschreven en los het daarna op."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-10 00:36+0000\n"
-"PO-Revision-Date: 2024-10-16 21:23+0200\n"
+"PO-Revision-Date: 2024-12-10 23:43+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -1344,7 +1344,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:17
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Emandako batuketa ebatzi."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1352,7 +1352,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Emandako kenketa ebatzi."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
