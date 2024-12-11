@@ -363,3 +363,13 @@ function fitItems(x_, y_, n_, extra_) {
     
     return Math.max(cell_size1, cell_size2);
 }
+/**
+ * Function that returns a clamped number between min_ and max_
+ *
+ * @param x_: initial number
+ * @param min_: minimum value
+ * @param max_: maximum value
+ */
+function clamp(x_, min_, max_) {
+    return Math.min(Math.max(x_, min_), max_);
+}
