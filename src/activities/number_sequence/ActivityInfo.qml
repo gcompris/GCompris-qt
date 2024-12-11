@@ -20,7 +20,7 @@ ActivityInfo {
   goal: qsTr("Learn the numerical sequence.")
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Draw the picture by clicking on the points in the numerical sequence order.")
+  manual: qsTr("Draw the picture by clicking on the points in the numerical sequence order. You can click and drag from one point to the next ones, or click on each point one after the other.")
   credit: ""
   section: "math numeration"
   createdInVersion: 0

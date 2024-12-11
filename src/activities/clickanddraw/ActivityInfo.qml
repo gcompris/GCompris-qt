@@ -21,7 +21,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Can move the mouse and click accurately on points.")
   //: Help manual
-  manual: qsTr("Draw the picture by clicking on each point in sequence. Each time a point is selected the next blue one appears.")
+  manual: qsTr("Draw the picture by clicking on each point in sequence. Each time a point is selected the next blue one appears. You can click and drag from one point to the next ones, or click on each point one after the other.")
   credit: ""
   section: "computer mouse"
   createdInVersion: 0

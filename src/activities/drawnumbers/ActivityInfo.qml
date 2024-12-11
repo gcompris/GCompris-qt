@@ -20,7 +20,7 @@ ActivityInfo {
     goal: qsTr("Learn how to draw numbers in a fun way.")
     prerequisite: ""
     //: Help manual
-    manual: qsTr("Draw the numbers by connecting the dots in the correct order.")
+    manual: qsTr("Draw the numbers by connecting the dots in the correct order. You can click and drag from one point to the next ones, or click on each point one after the other.")
     credit: ""
     section: "math numeration"
     createdInVersion: 7000
