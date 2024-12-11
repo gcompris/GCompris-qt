@@ -9,7 +9,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Solve subtraction, 4 digits, 3 lines.")
+    objective: qsTr("Solve subtraction, 4 or 5 digits, 3 lines.")
     difficulty: 1
     data: [
         {   "title": objective,
