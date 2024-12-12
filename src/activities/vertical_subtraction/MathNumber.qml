@@ -103,7 +103,7 @@ Item {
                 height: parent.height
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                fontSize: mediumSize
+                fontSize: largeSize
                 fontSizeMode: Text.Fit
             }
         }
