@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-10 00:36+0000\n"
+"POT-Creation-Date: 2024-12-12 00:37+0000\n"
 "PO-Revision-Date: 2024-09-19 14:56+0300\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
@@ -1373,15 +1373,15 @@ msgstr ""
 "μπορεί να βγει από το κουτί."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
-#: activities/vertical_addition/ActivityInfo.qml:17
+#: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
-#: activities/vertical_subtraction/ActivityInfo.qml:17
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
+#: activities/vertical_subtraction/ActivityInfo.qml:18
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
 msgstr ""
