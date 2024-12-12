@@ -27,6 +27,8 @@ function start(items_) {
 }
 
 function stop() {
+    items.miniPad.close()
+    items.numPad.close()
 }
 
 function randInt(max) { return Math.floor(Math.random() * max) }
