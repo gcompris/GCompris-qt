@@ -3508,7 +3508,7 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = ["src/activities/vertical_addition/**.svg", "src/activities/vertical_subtraction/**.svg", "src/activities/vertical_subtraction_compensation/**.svg"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2024 Bruno Anselme"
+SPDX-FileCopyrightText = "2024 Timothée Giet"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
