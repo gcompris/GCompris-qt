@@ -26,6 +26,6 @@ ActivityInfo {
           qsTr("Space or Enter: paint") + ("</li><li>") +
           qsTr("Tab: switch between the color selector and the painting area") + ("</li></ul>")
   credit: ""
-  section: "fun"
+  section: "discovery arts fun"
   createdInVersion: 4000
 }
