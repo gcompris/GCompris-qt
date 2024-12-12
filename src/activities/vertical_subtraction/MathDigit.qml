@@ -35,10 +35,10 @@ Item {
         anchors.centerIn: parent
         width: items.digitBgWidth
         height: items.digitBgHeight
-        color: "moccasin"
-        border.color: "burlywood"
-        border.width: (droppable && mouseArea.containsMouse) ? 3 : 0
-        radius: 5
+        color: (droppable && mouseArea.containsMouse) ? "#80A1CBD9" : "#00FFFFFF"
+        border.color: "#A1CBD9"
+        border.width: 2 * ApplicationInfo.ratio
+        radius: items.baseRadius
     }
 
     GCText {
@@ -68,9 +68,9 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
             anchors.leftMargin: digitBg.width * 0.05
-            color: (tensValue === 0) ? "beige" : "mediumspringgreen"
-            border.color: "burlywood"
-            border.width: tensMouseArea.containsMouse ? 2 * ApplicationInfo.ratio : 0
+            color: tensMouseArea.containsMouse ? "#80A1CBD9" : "#00FFFFFF"
+            border.color: (tensValue === 0) ? "#A1CBD9" : "#A1D9A1"
+            border.width: ApplicationInfo.ratio
             radius: items.baseRadius
         }
 
@@ -93,7 +93,7 @@ Item {
             onClicked: {
                 items.miniPad.current = mathDigit
                 items.miniPad.isCarry = false
-                items.miniPad.color = "mediumspringgreen"
+                items.miniPad.color = "#A1D9A1"
                 items.miniPad.repeater.model = [ 3, 2, 1, 0 ]
                 mapPadToItem(items.miniPad, tensBg)
                 items.miniPad.visible = true
@@ -117,9 +117,9 @@ Item {
             anchors.bottom: parent.bottom
             anchors.right: parent.right
             anchors.margins: tensBg.anchors.leftMargin
-            color: (carryValue === 0) ? "beige" : "salmon"
-            border.color: "burlywood"
-            border.width: carryMouseArea.containsMouse ? 2 * ApplicationInfo.ratio : 0
+            color: carryMouseArea.containsMouse ? "#80A1CBD9" : "#00FFFFFF"
+            border.color: (carryValue === 0) ? "#A1CBD9" : "#D9A1A1"
+            border.width: ApplicationInfo.ratio
             radius: items.baseRadius
         }
 
@@ -143,7 +143,7 @@ Item {
                 var up = ((items.operation === VerticalSubtraction.OperationType.Subtraction) && hasTens) ? 0 : 1
                 items.miniPad.current = mathDigit
                 items.miniPad.isCarry = true
-                items.miniPad.color = "salmon"
+                items.miniPad.color = "#D9A1A1"
                 items.miniPad.repeater.model = up ? [ "+3", "+2", "+1", "" ] : [ "", "-1", "-2", "-3" ]
                 mapPadToItem(items.miniPad, carryBg)
                 items.miniPad.open()

@@ -69,10 +69,13 @@ ActivityBase {
             readonly property double ratioWH: 1.6
             readonly property int baseMargins: 10 * ApplicationInfo.ratio
             readonly property int baseRadius: 2 * ApplicationInfo.ratio
-            readonly property int digitWidth: Math.min(70 * ApplicationInfo.ratio, (layoutArea.width - baseMargins * 2) / Math.max(6, nbDigits + 2))
+            // size calculations are based on maximum 4 nbDigits and 4 nbLines
+            readonly property int digitWidth: Math.min(100 * ApplicationInfo.ratio, (layoutArea.width - baseMargins * 2) / (nbDigits + 2))
             property int digitHeight: 1
             readonly property int digitBgWidth: digitWidth - items.baseMargins
             readonly property int digitBgHeight: digitHeight - items.baseMargins
+            readonly property bool okOnSide: layoutArea.width - digitWidth * 6 - baseMargins * 2 >= 2 * (okButton.width + baseMargins * 2)
+
             property var levels: activity.datasets
             property int currentSubLevel: 0
             property int subLevelCount: 0
@@ -226,9 +229,9 @@ ActivityBase {
         states: [
             State {
                 name: "okRight"
-                when: rightSideArea.width >= okButton.width
+                when: items.okOnSide
                 PropertyChanges {
-                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height  - items.baseMargins * 2) / Math.max(5, items.nbLines))
+                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height  - items.baseMargins * 2) / (items.nbLines + 1))
                 }
                 AnchorChanges {
                     target: okButton
@@ -239,9 +242,9 @@ ActivityBase {
             },
             State {
                 name: "okBottom"
-                when: rightSideArea.width < okButton.width
+                when: !items.okOnSide
                 PropertyChanges {
-                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height - okButton.height - items.baseMargins * 3) / Math.max(5, items.nbLines))
+                    items.digitHeight: Math.min(items.digitWidth, (layoutArea.height - equalLine.height - okButton.height - items.baseMargins * 3) / (items.nbLines + 1))
                 }
                 AnchorChanges {
                     target: okButton
@@ -275,7 +278,13 @@ ActivityBase {
                         color: miniPad.color
                         radius: items.baseRadius
                         border.color: "#808080"
-                        border.width: miniArea.containsMouse ? 2 : 1
+                        border.width: ApplicationInfo.ratio
+
+                        Rectangle {
+                            color: "#33000000"
+                            anchors.fill: parent
+                            visible: miniArea.containsMouse
+                        }
 
                         GCText {
                             id: padText
@@ -346,7 +355,7 @@ ActivityBase {
                     height: items.digitBgHeight
                     color: numArea.containsMouse ? "#C0C0C0" : "#E5E5E5"
                     border.color: "#808080"
-                    border.width: 2
+                    border.width: ApplicationInfo.ratio
                     radius: items.baseRadius
 
                     GCText {
