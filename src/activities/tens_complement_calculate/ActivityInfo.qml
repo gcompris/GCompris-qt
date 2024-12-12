@@ -23,6 +23,6 @@ ActivityInfo {
   manual: qsTr("Create pairs of numbers equal to ten within each parentheses. Select a number, then select another number of the same operation to swap their position. On each line, input the final sum in last box. When all the lines are completed, press the OK button to validate the answers. If some answers are incorrect, a cross icon will appear on the corresponding lines. Correct the errors, then press the OK button again.")
   credit: ""
   section: "math arithmetic"
-  createdInVersion: 50000
+  createdInVersion: 250000
   levels: "1,2"
 }
