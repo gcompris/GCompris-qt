@@ -30,7 +30,7 @@ QtObject {
                 qsTr("Many usability improvements"),
                 qsTr("Many new images"),
                 qsTr("Many bug fixes"),
-                qsTr("Automatic application of new language when changing in the menu (no need to restart GCompris)"),
+                qsTr("Automatic application of new language when changing it in the menu (no need to restart GCompris)"),
                 qsTr("Add splash screen at startup"),
                 qsTr("New command-line option to switch the renderer (--renderer renderer)")
                 ]
