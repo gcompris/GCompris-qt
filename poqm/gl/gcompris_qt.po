@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-12 19:44+0100\n"
+"PO-Revision-Date: 2024-12-13 09:31+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -16139,8 +16139,8 @@ msgid ""
 "An addition is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
-"Amósase unha suma na pantalla. Calcula o resultado, insire o número de "
-"círculos correspondente e valida a resposta."
+"Amósase unha suma na pantalla. Calcula o resultado, enche o número "
+"correspondente de círculos e valida a resposta."
 
 #: activities/learn_additions/ActivityInfo.qml:26
 #: activities/learn_digits/ActivityInfo.qml:26
@@ -16508,8 +16508,8 @@ msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
-"Amósase un díxito na pantalla. Insire o número de círculos que corresponde "
-"ao número que representa o díxito e valida a resposta."
+"Amósase un díxito na pantalla. Enche o número de círculos que corresponde ao "
+"número que representa o díxito e valida a resposta."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -16652,7 +16652,7 @@ msgid ""
 "A subtraction is displayed on the screen. Calculate the result, fill the "
 "corresponding number of circles and validate your answer."
 msgstr ""
-"Amósase unha resta na pantalla. Calcula o resultado, insire o número de "
+"Amósase unha resta na pantalla. Calcula o resultado, enche o número de "
 "círculos correspondente e valida a resposta."
 
 #: activities/learn_subtractions/resource/1/Data.qml:14
