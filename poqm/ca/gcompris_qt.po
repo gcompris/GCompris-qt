@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-12-10 13:20+0100\n"
+"PO-Revision-Date: 2024-12-13 09:06+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -5309,11 +5309,6 @@ msgstr "Poder moure el ratolí i fer clic amb precisió sobre els punts."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5321,7 +5316,8 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Dibuixeu la imatge fent clic en cada punt en ordre. Cada vegada que se "
-"selecciona un punt apareixerà el següent blau."
+"selecciona un punt apareixerà el següent blau. Podeu fer clic i arrossegar "
+"des d'un punt als següents, o fer clic a cada punt un darrere l'altre."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6945,6 +6941,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Dibuixeu les lletres connectant els punts en l'ordre correcte. Podeu fer "
+"clic i arrossegar d'un punt als següents, o fer clic a cada punt un darrere "
+"l'altre."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6972,6 +6971,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Dibuixeu els números connectant els punts en l'ordre correcte. Podeu fer "
+"clic i arrossegar d'un punt als següents, o fer clic a cada punt un darrere "
+"l'altre."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -20388,19 +20390,15 @@ msgstr "Aprendre la seqüència numèrica."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Dibuixeu la imatge fent clic en cada punt en ordre. Cada vegada que se "
-"selecciona un punt apareixerà el següent blau."
+"Dibuixeu la imatge fent clic en els punts en ordre seqüencial numèric. Podeu "
+"fer clic i arrossegar des d'un punt als següents, o fer clic a cada punt un "
+"darrere l'altre."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -27051,21 +27049,15 @@ msgstr "Resoleu la resta, 2 dígits, 2 línies, sense portar-ne."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Resoleu la resta, 4 dígits, 3 línies."
+msgstr "Resoleu la resta, 4 o 5 dígits, 3 línies."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 4 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Resoleu la resta, 4 dígits, 4 línies."
+msgstr "Resoleu la resta, 4 o 5 dígits, 4 línies."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
@@ -27081,66 +27073,45 @@ msgstr "Escriviu i resoleu la resta, 2 dígits, 2 línies, sense portar-ne."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Resoleu la resta, 3 dígits, 2 línies."
+msgstr "Resoleu la resta, 2 o 3 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Escriviu i resoleu la resta, 3 dígits, 2 línies."
+msgstr "Escriviu i resoleu la resta, 2 o 3 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 2 digits, 3 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Escriviu i resoleu la resta, 2 dígits, 3 línies."
+msgstr "Escriviu i resoleu la resta, 2 o 3 dígits, 3 línies."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Resoleu la resta, 3 dígits, 2 línies."
+msgstr "Resoleu la resta, 3 o 4 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Escriviu i resoleu la resta, 3 dígits, 2 línies."
+msgstr "Escriviu i resoleu la resta, 3 o 4 dígits, 2 línies."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Resoleu la resta, 4 dígits, 3 línies."
+msgstr "Resoleu la resta, 3 o 4 dígits, 3 línies."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Resoleu la resta, 4 dígits, 2 línies."
+msgstr "Resoleu la resta, 4 o 5 dígits, 2 línies."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
@@ -27440,23 +27411,20 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Aplicació automàtica de l'idioma nou en canviar-lo al menú (no cal reiniciar "
+"el GCompris)"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Afegeix una pantalla de presentació en iniciar"
 
 #: core/ChangeLog.qml:35
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Opció nova de la línia d'ordres per a llistar totes les activitats i iniciar-"
-"ne una concreta"
+"Opció nova de la línia d'ordres per a canviar el renderitzador (--renderer "
+"renderitzador)"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -28482,521 +28450,3 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "Dibuixeu les lletres connectant els punts en l'ordre correcte."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "Dibuixeu els números connectant els punts en l'ordre correcte."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Draw the picture by clicking on the points in the numerical sequence "
-#~ "order."
-#~ msgstr ""
-#~ "Dibuixeu la imatge fent clic sobre els punts en l'ordre seqüencial "
-#~ "numèric."
-
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Resoleu la resta, 2 dígits, 2 línies."
-
-#~ msgctxt "Data|"
-#~ msgid "Write and solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Escriviu i resoleu la resta, 2 dígits, 2 línies."
-
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 3 digits, 3 lines."
-#~ msgstr "Resoleu la resta, 3 dígits, 3 línies."
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "D'acord"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "D'acord"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Logic training activity."
-#~ msgstr "Activitat d'entrenament amb lògica."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Alphabet sequence."
-#~ msgstr "Ordre de l'alfabet."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby mouse"
-#~ msgstr "Ratolí de nadó"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby puzzle"
-#~ msgstr "Trencaclosques de nadó"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "The objective is to assemble the baby puzzle."
-#~ msgstr "L'objectiu és muntar el trencaclosques de nadó."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A simplistic word processor to let the children play around with a "
-#~ "keyboard and see letters."
-#~ msgstr ""
-#~ "Un senzill processador de textos per a deixar que els infants juguin amb "
-#~ "un teclat i vegin les lletres."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Discover the keyboard and the letters."
-#~ msgstr "Descobrir el teclat i les lletres."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select the number of balls you wish to place in the holes and then click "
-#~ "on the OK button. The winner is the one who hasn't put a ball in the red "
-#~ "hole."
-#~ msgstr ""
-#~ "Seleccioneu el nombre de bales que voleu posar als forats i després feu "
-#~ "clic al botó «OK». El guanyador serà qui no hagi posat una bala al forat "
-#~ "vermell."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Don't put the ball in the last hole."
-#~ msgstr "No usar la bala en l'últim forat."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Sort the pictures into the order that tells the story."
-#~ msgstr "Ordenar les imatges en l'ordre en què s'explica la història."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Then, click on the OK button to validate your answer."
-#~ msgstr "Després, feu clic sobre el botó «OK» per a validar la resposta."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Letter-name recognition."
-#~ msgstr "Reconèixer el nom de les lletres."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Change the color by moving the sliders on the tubes of paint or by "
-#~ "clicking on the + and - buttons. Then click on the OK button to validate "
-#~ "your answer."
-#~ msgstr ""
-#~ "Canvieu el color movent els controls lliscants que hi ha sobre els tubs "
-#~ "de pintura o fent clic als botons «+» i «-». Després, feu clic sobre el "
-#~ "botó «OK» per a validar la resposta."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Complete the puzzle by dragging each piece on the side to the matching "
-#~ "space in the puzzle."
-#~ msgstr ""
-#~ "Completeu el trencaclosques arrossegant cada peça del costat al lloc "
-#~ "corresponent en el trencaclosques."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numeration training."
-#~ msgstr "Entrenar la numeració."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Motor-coordination."
-#~ msgstr "Coordinació motora."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Arrange the pieces in the right order."
-#~ msgstr "Ordeneu les peces en l'ordre correcte."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Kick the ball behind the goal keeper on the right."
-#~ msgstr "Xutar la pilota fins darrere de l'arquer."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag a line from the ball to set its speed and direction, and release it "
-#~ "to kick the ball."
-#~ msgstr ""
-#~ "Arrossegueu una línia des de la pilota per a ajustar la seva velocitat i "
-#~ "direcció, i deixeu anar per a xutar."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "A shape split in equal parts is displayed on screen."
-#~ msgstr "Es mostra a la pantalla una forma dividida en parts iguals."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag and drop different regions of the country to their correct locations "
-#~ "to complete the map."
-#~ msgstr ""
-#~ "Arrossegueu i deixeu anar les diferents regions del país a les "
-#~ "localitzacions correctes per a completar el mapa."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drag and Drop the items to complete the map."
-#~ msgstr "Arrossegueu i deixeu anar els elements per a completar el mapa."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Letter association between the screen and the keyboard."
-#~ msgstr "Associar les lletres entre la pantalla i el teclat."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn to distinguish between different colors/shapes and learn about "
-#~ "relative positions."
-#~ msgstr ""
-#~ "Aprendre a distingir entre colors/formes diferents i aprendre quant a les "
-#~ "posicions relatives."
-
-# skip-rule: barb-igual
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Guess the algebraic expression and drag the tiles to get a result equal "
-#~ "to the Guesscount."
-#~ msgstr ""
-#~ "Esbrineu l'expressió algebraica i arrossegueu les rajoles per a obtenir "
-#~ "un resultat igual."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Intuition and practice of algebraic-like calculations."
-#~ msgstr "Intuïció i pràctica dels càlculs algebraics."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numbers."
-#~ msgstr "Números."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "This is a good exercise to improve reading and spelling skills."
-#~ msgstr "Aquest és un bon exercici per a millorar la lectura i la dicció."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The object of the game is to move the entire stack to another peg, "
-#~ "obeying the following rules:\n"
-#~ "    only one disc may be moved at a time\n"
-#~ "    no disc may be placed atop a smaller disc\n"
-#~ msgstr ""
-#~ "L'objectiu del joc és moure la pila sencera a una altra vareta, seguint "
-#~ "les regles següents:\n"
-#~ " * només es pot moure un disc cada vegada\n"
-#~ " * cap disc es pot posar a sobre d'un de més petit\n"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag and drop the top pieces only from one peg to another, to reproduce "
-#~ "the initial left side tower on the right peg."
-#~ msgstr ""
-#~ "Arrossegueu i deixeu anar només les peces de dalt d'una vareta a una "
-#~ "altra, per a reproduir la torre inicial de l'esquerra a la vareta de la "
-#~ "dreta."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Vocabulary and reading."
-#~ msgstr "Vocabulari i lectura."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn decimals with small numbers."
-#~ msgstr "Aprendre els decimals amb nombres petits."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn decimals by counting how many squares are needed to represent the "
-#~ "decimal number."
-#~ msgstr ""
-#~ "Aprendre decimals comptant quants quadrats es necessiten per a "
-#~ "representar el nombre decimal."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count and color the circles"
-#~ msgstr "Compta i acoloreix els cercles"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits from 0 to 9."
-#~ msgstr "Aprendre els dígits des del 0 fins al 9."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits by counting their corresponding value."
-#~ msgstr "Apreneu els dígits comptant el seu valor corresponent."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A letter is written. Some words are displayed, and you must find the word "
-#~ "or the words in which this letter appears."
-#~ msgstr ""
-#~ "S'escriu o es pronuncia una lletra. Es mostren algunes paraules, i la "
-#~ "mainada ha de cercar la paraula o les paraules en les quals apareix "
-#~ "aquesta lletra."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Review the major dates of the inventor of the braille system."
-#~ msgstr "Reviseu les dates importants de l'inventor del sistema braille."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numeration training, memory."
-#~ msgstr "Entrenar la numeració, memòria."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Train your memory and remove all the cards."
-#~ msgstr "Entrenar la memòria i desfer-se de totes les targetes."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading numbers, memory."
-#~ msgstr "Lectura de números, memòria."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "You must buy different items and give the exact price. At higher levels, "
-#~ "several items are displayed, and you must first calculate the total price."
-#~ msgstr ""
-#~ "Heu de comprar diferents articles i donar el preu exacte. En els nivells "
-#~ "superiors es mostren diferents objectes, i heu de calcular primer el preu "
-#~ "total."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Tux bought different items from you and shows you his money. You must "
-#~ "give him back his change. At higher levels, several items are displayed, "
-#~ "and you must first calculate the total price."
-#~ msgstr ""
-#~ "En Tux us comprarà diferents articles i us ensenyarà els seus diners. Li "
-#~ "heu de tornar el canvi. En els nivells superiors es mostren diferents "
-#~ "articles, i primer heu de calcular el preu total."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "You must buy the different items and give the exact price. At higher "
-#~ "levels, several items are displayed, and you must first calculate the "
-#~ "total price."
-#~ msgstr ""
-#~ "Heu de comprar diferents articles i donar el preu exacte. En els nivells "
-#~ "superiors es mostren diferents objectes, i heu de calcular primer el preu "
-#~ "total."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
-#~ "pieces left or can not move anymore."
-#~ msgstr ""
-#~ "Formeu molins (línies de 3 peces) per a eliminar peces d'en Tux fins que "
-#~ "en Tux només tingui 2 peces o ja no pugui moure."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with Tux. First take turns to place nine pieces, and then take turns "
-#~ "to move your pieces."
-#~ msgstr ""
-#~ "Jugueu amb en Tux. En primer lloc feu torns per a posar les nou peces, i "
-#~ "després feu torns per a moure-les."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Form mills (lines of 3 pieces) to remove your opponent's pieces until "
-#~ "your opponent has only 2 pieces left or can not move anymore."
-#~ msgstr ""
-#~ "Formeu molins (línia de 3 peces) per a eliminar les peces de l'oponent "
-#~ "fins que a l'oponent només li quedin dues peces o ja no pugui moure."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with a friend. First take turns to place nine pieces, and then take "
-#~ "turns to move your pieces."
-#~ msgstr ""
-#~ "Jugueu amb un amic. En primer lloc feu torns per a posar les nou peces, i "
-#~ "després feu torns per a moure-les."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Toqueu els números en l'ordre correcte."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Can decide chronological order of events."
-#~ msgstr "Podeu decidir l'ordre cronològic dels esdeveniments."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare numbers."
-#~ msgstr "Compara els números."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Spatial representation."
-#~ msgstr "Representació espacial."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Path decoding relative"
-#~ msgstr "Descodifica el camí relatiu"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Path encoding relative"
-#~ msgstr "Codificació relativa del camí"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Visual perception."
-#~ msgstr "Percepció visual."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Programming maze"
-#~ msgstr "Programació en el laberint"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "This activity teaches to program Tux to reach its goal using simple "
-#~ "instructions like move forward, turn left or right."
-#~ msgstr ""
-#~ "Aquesta activitat ensenya a programar en Tux per a aconseguir el seu "
-#~ "objectiu mitjançant instruccions senzilles com ara avança, gira a "
-#~ "l'esquerra o a la dreta."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Tux is hungry. Help him find fish by programming him to the correct ice "
-#~ "spot."
-#~ msgstr ""
-#~ "En Tux està afamat. Ajudeu-lo a trobar peixos programant-lo per la zona "
-#~ "de gel correcta."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the image on the empty grid as if you saw it in a mirror."
-#~ msgstr ""
-#~ "Dibuixeu la imatge a la quadrícula buida com si la veiéssiu en un mirall."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn division of numbers."
-#~ msgstr "Aprendre la divisió dels números."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "A simple drawing activity"
-#~ msgstr "Una eina senzilla de dibuix vectorial"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Enhance creative skills."
-#~ msgstr "Millorar les habilitats creatives."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "In a limited time, count the number of dots."
-#~ msgstr "Comptar el nombre de punts en un temps limitat."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count the number on the domino before it reaches the ground."
-#~ msgstr ""
-#~ "Compteu el número en les fitxes de dominó abans que arribin a terra."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count a number in a limited time."
-#~ msgstr "Comptar un número en un temps limitat."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Type the number you see on each falling domino."
-#~ msgstr "Escriviu el número que veieu en cada fitxa de dominó que cau."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Answer the questions with a correctness of 100%."
-#~ msgstr "Responeu les preguntes amb una correcció del 100%."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Sudoku, place unique symbols in a grid"
-#~ msgstr "Sudoku, col·loca símbols únics en una quadrícula"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Symbols must be unique in a row, in a column, and (if defined) in each "
-#~ "region."
-#~ msgstr ""
-#~ "Els símbols han de ser únics en una fila, en una columna i (si està "
-#~ "definit) en cada regió."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
-#~ "cell of a grid. In the official Sudoku the grid is 9×9 and made up of 3×3 "
-#~ "subgrids (called 'regions'). In GCompris we start at lower levels with a "
-#~ "simpler version using symbols and with no regions. In all cases the grid "
-#~ "is presented with various symbols or numerals given in some cells (the "
-#~ "'givens'). Each row, column and region must contain only one instance of "
-#~ "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/"
-#~ "Sudoku&gt;)."
-#~ msgstr ""
-#~ "L'objectiu del trencaclosques és introduir un símbol o un nombre de l'1 "
-#~ "al 9 en cada cel·la d'una quadrícula. Al Sudoku oficial, la quadrícula és "
-#~ "de 9x9 creant subquadrícules de 3x3 (anomenades «regions»). Al GCompris "
-#~ "començarem en nivells més baixos amb una versió més senzilla emprant "
-#~ "símbols i sense regions. En tots els casos, la quadrícula es presenta amb "
-#~ "diversos símbols o nombres en algunes de les cel·les (els «donats»). Cada "
-#~ "fila, columna i regió només ha de contenir una instància de cada símbol o "
-#~ "nombre (font: &lt;https://ca.wikipedia.org/wiki/Sudoku&gt;)."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select a number or a symbol in the list and click on its target position. "
-#~ "GCompris will not let you enter an invalid answer."
-#~ msgstr ""
-#~ "Seleccioneu un número o un símbol de la llista i feu clic en la seva "
-#~ "posició de destinació. El GCompris no us deixarà introduir una resposta "
-#~ "no vàlida."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven "
-#~ "boards of cunning') is a Chinese puzzle. While the tangram is often said "
-#~ "to be ancient, its existence has only been verified as far back as 1800. "
-#~ "It consists of 7 pieces, called tans, which fit together to form a "
-#~ "square; Using the square side as 1 unit, the 7 pieces contains:\n"
-#~ "    5 right isosceles triangles, including:\n"
-#~ "        - 2 small size ones (legs of 1)\n"
-#~ "        - 1 medium size (legs of square root of 2)\n"
-#~ "        - 2 large size (legs of 2)\n"
-#~ "    1 square (side of 1) and\n"
-#~ "    1 parallelogram (sides of 1 and square root of 2)\n"
-#~ "    "
-#~ msgstr ""
-#~ "Segons la Viquipèdia, l'enciclopèdia lliure, el Tangram (en xinès: "
-#~ "literalment «set taulers d'astúcia») és un trencaclosques xinès. Tot i "
-#~ "que el Tangram se sol considerar antic, de fet només se'n coneix "
-#~ "l'existència des del 1800. Consisteix en 7 peces, anomenades «tans», que "
-#~ "s'uneixen per a formar un quadrat. Prenent el costat del quadrat com 1 "
-#~ "unitat, les 7 peces contenen:\n"
-#~ "    5 triangles isòsceles, que inclouen:\n"
-#~ "        - 2 de mida petita (costats d'1)\n"
-#~ "        - 1 de mida mitjana (costats arrel quadrada de 2)\n"
-#~ "        - 2 de mida gran (costats de 2)\n"
-#~ "    1 quadrat (costat d'1) i\n"
-#~ "    1 paral·lelogram (costats d'1 i arrel quadrada de 2)\n"
-#~ "    "
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Hit the target and count your points."
-#~ msgstr "Toqueu l'objectiu i compteu els vostres punts."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Place three marks in any horizontal, vertical, or diagonal row to win the "
-#~ "game."
-#~ msgstr ""
-#~ "Col·locar les tres marques respectives en qualsevol fila horitzontal, "
-#~ "vertical o diagonal per a guanyar el joc."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Keyboard training."
-#~ msgstr "Entrenar amb el teclat."
-
-#~ msgctxt "Data|"
-#~ msgid "Copy and complete this frieze"
-#~ msgstr "Copieu i completeu aquest fris"
-
-#~ msgctxt "Data|"
-#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-#~ msgstr ""
-#~ "Copieu aquest fris: qualsevol combinació de formes, colors/signes i mides."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
-#~ "and sizes."
-#~ msgstr ""
-#~ "Copieu i completeu aquest fris: qualsevol combinació de formes, colors/"
-#~ "signes i mides."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "Troba els nombres que manquen"
-
-#~ msgctxt "Guesscount|"
-#~ msgid "%1/%2"
-#~ msgstr "%1/%2"
