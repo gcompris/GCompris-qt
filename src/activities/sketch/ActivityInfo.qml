@@ -20,7 +20,7 @@ ActivityInfo {
   goal: qsTr("Learn about some digital painting tools.")
   prerequisite: ""
   manual: qsTr("Select tools and colors from the foldable panels and draw images.<br><br>") +
-          qsTr("<b>Keyboard controls:") + ("<ul><li>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Ctrl + Z: undo last action") + ("</li><li>") +
           qsTr("Ctrl + Y: redo last action") + ("</li><li>") +
           qsTr("Ctrl + S: save the image") + ("</li><li>") +
