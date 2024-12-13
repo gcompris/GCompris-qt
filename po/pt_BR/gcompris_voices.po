@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-10 00:36+0000\n"
+"POT-Creation-Date: 2024-12-13 02:28+0000\n"
 "PO-Revision-Date: 2024-03-20 19:45-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -1338,15 +1338,15 @@ msgstr ""
 "caixa."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
-#: activities/vertical_addition/ActivityInfo.qml:17
+#: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
-#: activities/vertical_subtraction/ActivityInfo.qml:17
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
+#: activities/vertical_subtraction/ActivityInfo.qml:18
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
 msgstr ""

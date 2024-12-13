@@ -3362,37 +3362,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Tarpas ar Enter: patvirtinti atsakymą"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:316
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sekmadienis"
 
-#: activities/calendar/Calendar.qml:323
+#: activities/calendar/Calendar.qml:317
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Pirmadienis"
 
-#: activities/calendar/Calendar.qml:324
+#: activities/calendar/Calendar.qml:318
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Antradienis"
 
-#: activities/calendar/Calendar.qml:325
+#: activities/calendar/Calendar.qml:319
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Trečiadienis"
 
-#: activities/calendar/Calendar.qml:326
+#: activities/calendar/Calendar.qml:320
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Ketvirtadienis"
 
-#: activities/calendar/Calendar.qml:327
+#: activities/calendar/Calendar.qml:321
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Penktadienis"
 
-#: activities/calendar/Calendar.qml:328
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Šeštadienis"
@@ -5159,10 +5159,16 @@ msgstr "Mokėti valdyti pelę ir tiksliai paspausti ant taškų."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Draw the picture by clicking on each point in sequence. Each time a point "
+#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
-"selected the next blue one appears."
+"selected the next blue one appears. You can click and drag from one point to "
+"the next ones, or click on each point one after the other."
 msgstr ""
 "Nupiešk paveikslėlį paspausdamas paeiliui ant kiekvieno taškelio. Kassyk "
 "paspaudus pasirinktą taškelį, atsiranda sekantis mėlynas taškelis."
@@ -6821,8 +6827,11 @@ msgstr "Mokymasis piešti raides įdomiu būdu."
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Draw the letters by connecting the dots in the correct order."
-msgstr "Nupiešk raides sujungdamas taškus teisinga tvarka."
+msgid ""
+"Draw the letters by connecting the dots in the correct order. You can click "
+"and drag from one point to the next ones, or click on each point one after "
+"the other."
+msgstr ""
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6848,8 +6857,11 @@ msgstr "Mokymasis piešti skaičius įdomiu būdu."
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Draw the numbers by connecting the dots in the correct order."
-msgstr "Nupiešk skaičius sujungdamas taškus teisinga tvarka."
+msgid ""
+"Draw the numbers by connecting the dots in the correct order. You can click "
+"and drag from one point to the next ones, or click on each point one after "
+"the other."
+msgstr ""
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -17145,12 +17157,12 @@ msgstr ""
 "Raidė matosi ant vėliavėlės, kurią tempia lėktuvas. Pasirink visus žodžius "
 "(daiktus), kurie turi tą raidę ir tada paspausk mygtuką OK."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:320
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Atsiprašome, mes dar neturime vertimo į tavo kalbą."
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:321
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -17161,7 +17173,7 @@ msgstr ""
 "pagerinti GCompris vertimą, prisijungdamas prie vertėjų komandos <a href="
 "\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:325
+#: activities/letter-in-word/LetterInWord.qml:323
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -20357,12 +20369,17 @@ msgstr "Suprask vandens judėjimą gamtoje."
 #: activities/number_sequence/ActivityInfo.qml:23
 #, fuzzy
 #| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each number in the right order."
+#| msgid ""
+#| "Draw the picture by clicking on each point in sequence. Each time a point "
+#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
-"Draw the picture by clicking on the points in the numerical sequence order."
+"Draw the picture by clicking on the points in the numerical sequence order. "
+"You can click and drag from one point to the next ones, or click on each "
+"point one after the other."
 msgstr ""
-"Nupiešk paveikslėlį spausdamas ant sunumeruotų taškelių tinkama tvarka."
+"Nupiešk paveikslėlį paspausdamas paeiliui ant kiekvieno taškelio. Kassyk "
+"paspaudus pasirinktą taškelį, atsiranda sekantis mėlynas taškelis."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -21510,22 +21527,22 @@ msgid "%1 BPM"
 msgstr "%1 TKM (kirčiai/min.)"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:47
+#: activities/piano_composition/KeyOption.qml:46
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "Smuiko raktas"
 
-#: activities/piano_composition/KeyOption.qml:47
+#: activities/piano_composition/KeyOption.qml:46
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "Boso raktas"
 
-#: activities/piano_composition/KeyOption.qml:63
+#: activities/piano_composition/KeyOption.qml:61
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "Pridėtas smuiko raktas"
 
-#: activities/piano_composition/KeyOption.qml:63
+#: activities/piano_composition/KeyOption.qml:61
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "Pridėtas boso raktas"
@@ -21748,12 +21765,12 @@ msgid "Undo"
 msgstr "Atšauk veiksmą"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:166
+#: activities/piano_composition/OptionsRow.qml:165
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "Diezai"
 
-#: activities/piano_composition/OptionsRow.qml:166
+#: activities/piano_composition/OptionsRow.qml:165
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "Bemoliai"
@@ -26921,7 +26938,7 @@ msgstr ""
 "vartus dešinėje."
 
 #. Activity title
-#: activities/vertical_addition/ActivityInfo.qml:14
+#: activities/vertical_addition/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice additions."
@@ -26930,7 +26947,7 @@ msgid "Vertical addition"
 msgstr "Mokykis sudėti skaičius."
 
 #. Help title
-#: activities/vertical_addition/ActivityInfo.qml:16
+#: activities/vertical_addition/ActivityInfo.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Reproduce the given tower."
@@ -26939,7 +26956,7 @@ msgid "Solve the given addition."
 msgstr "Pastatyk bokštą pagal duotą pavyzdį."
 
 #. Help goal
-#: activities/vertical_addition/ActivityInfo.qml:19
+#: activities/vertical_addition/ActivityInfo.qml:20
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice divisions."
@@ -26948,7 +26965,7 @@ msgid "Learn to solve vertical additions."
 msgstr "Mokytis dalybos veiksmų."
 
 #. Help prerequisite
-#: activities/vertical_addition/ActivityInfo.qml:21
+#: activities/vertical_addition/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Addition table of 1."
@@ -26957,7 +26974,7 @@ msgid "Addition tables."
 msgstr "Skaičių sudėtis su dėmeniu 1."
 
 #. Help manual
-#: activities/vertical_addition/ActivityInfo.qml:23
+#: activities/vertical_addition/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical addition, numbers are written one below the other. They need "
@@ -27036,7 +27053,7 @@ msgid "Solve addition, 4 digits, 2 lines."
 msgstr ""
 
 #. Activity title
-#: activities/vertical_subtraction/ActivityInfo.qml:14
+#: activities/vertical_subtraction/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice subtractions."
@@ -27045,8 +27062,8 @@ msgid "Vertical subtraction"
 msgstr "Mokytis atimties veiksmų."
 
 #. Help title
-#: activities/vertical_subtraction/ActivityInfo.qml:16
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
+#: activities/vertical_subtraction/ActivityInfo.qml:17
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 #, fuzzy
 #| msgctxt "InstructionArea|"
 #| msgid "Choose the instructions"
@@ -27055,7 +27072,7 @@ msgid "Solve the given subtraction."
 msgstr "Pasirink komandas"
 
 #. Help goal
-#: activities/vertical_subtraction/ActivityInfo.qml:19
+#: activities/vertical_subtraction/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
@@ -27063,8 +27080,8 @@ msgid ""
 msgstr ""
 
 #. Help prerequisite
-#: activities/vertical_subtraction/ActivityInfo.qml:21
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
+#: activities/vertical_subtraction/ActivityInfo.qml:22
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Subtraction table of 1."
@@ -27073,7 +27090,7 @@ msgid "Subtraction tables."
 msgstr "Skaičių atimtis su atėminiu 1."
 
 #. Help manual
-#: activities/vertical_subtraction/ActivityInfo.qml:23
+#: activities/vertical_subtraction/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27107,15 +27124,21 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgid "Solve subtraction, 4 or 5 digits, 3 lines."
+msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgid "Solve subtraction, 4 or 5 digits, 4 lines."
+msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
@@ -27138,20 +27161,26 @@ msgstr ""
 #| msgctxt "Data|"
 #| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 2 digits, 2 lines."
+msgid "Solve subtraction, 2 or 3 digits, 2 lines."
 msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
+msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
+msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
@@ -27159,20 +27188,26 @@ msgstr ""
 #| msgctxt "Data|"
 #| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 3 digits, 2 lines."
+msgid "Solve subtraction, 3 or 4 digits, 2 lines."
 msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
+msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgid "Solve subtraction, 3 or 4 digits, 3 lines."
+msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
@@ -27180,21 +27215,21 @@ msgstr ""
 #| msgctxt "Data|"
 #| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 2 lines."
+msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
-#: activities/vertical_subtraction/subtraction.js:65
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:65
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:160
+#: activities/vertical_subtraction/subtraction.js:166
 #, fuzzy, qt-format
 #| msgctxt "BackgroundMusicList|"
 #| msgid "Title: %1"
@@ -27202,7 +27237,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Pavadinimas: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:326
+#: activities/vertical_subtraction/VerticalSubtraction.qml:399
 #, fuzzy
 #| msgctxt "Frieze|"
 #| msgid "I am Ready"
@@ -27211,7 +27246,7 @@ msgid "Ready"
 msgstr "Aš pasiruošiau"
 
 #. Activity title
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice the subtraction operation."
@@ -27220,7 +27255,7 @@ msgid "Vertical subtraction (compensation)"
 msgstr "Mokykis atimties veiksmų."
 
 #. Help goal
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
@@ -27228,7 +27263,7 @@ msgid ""
 msgstr ""
 
 #. Help manual
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -27428,21 +27463,53 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr ""
 "Su klaviatūra surink krentantį žodį, kol jis dar nenusileido ant žemės."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:41
-#: core/ChangeLog.qml:47 core/ChangeLog.qml:76 core/ChangeLog.qml:111
-#: core/ChangeLog.qml:114 core/ChangeLog.qml:120
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:39 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50 core/ChangeLog.qml:56 core/ChangeLog.qml:85
+#: core/ChangeLog.qml:120 core/ChangeLog.qml:123 core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Daug įvairių pagerinimų"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:37 core/ChangeLog.qml:42
-#: core/ChangeLog.qml:49 core/ChangeLog.qml:58 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:78 core/ChangeLog.qml:116 core/ChangeLog.qml:122
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:57 core/ChangeLog.qml:66
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:86 core/ChangeLog.qml:104
+#: core/ChangeLog.qml:119 core/ChangeLog.qml:124 core/ChangeLog.qml:130
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Daug naujų paveikslėlių"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:58 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:74 core/ChangeLog.qml:87 core/ChangeLog.qml:125
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Daug klaidų pataisymų."
 
+#: core/ChangeLog.qml:33
+msgctxt "ChangeLog|"
+msgid ""
+"Automatic application of new language when changing it in the menu (no need "
+"to restart GCompris)"
+msgstr ""
+
+#: core/ChangeLog.qml:34
+msgctxt "ChangeLog|"
+msgid "Add splash screen at startup"
+msgstr ""
+
 #: core/ChangeLog.qml:35
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid "New command-line option to switch the renderer (--renderer renderer)"
+msgstr ""
+"Naujas pasirinkimas komandinėje eilutėje norint gauti visų pamokėlių sąrašą "
+"ir konkrečiai pradėti vieną iš jų"
+
+#: core/ChangeLog.qml:44
 #, fuzzy
 #| msgctxt "ChangeLog|"
 #| msgid "Translation added for Azerbaijani"
@@ -27450,19 +27517,12 @@ msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Pridėtas vertimas į azerbaidžaniečių kalbą."
 
-#: core/ChangeLog.qml:46
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Pridėti vertimai į bulgarų, galų ir suahilių kalbas."
 
-#: core/ChangeLog.qml:48 core/ChangeLog.qml:57 core/ChangeLog.qml:64
-#: core/ChangeLog.qml:77 core/ChangeLog.qml:95 core/ChangeLog.qml:110
-#: core/ChangeLog.qml:115 core/ChangeLog.qml:121
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Daug naujų paveikslėlių"
-
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -27471,17 +27531,17 @@ msgstr ""
 "Nauja komandinės eilutės parinktis  (--start-level lygis, naudojama su --"
 "launch pamokėlė), skirta paleisti GCompris pamokėlę tam tikrame lygyje"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Pridėti vertimai į arabų ir esperanto kalbas"
 
-#: core/ChangeLog.qml:56 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:65 core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Daug vertimo atnaujinimų."
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:71
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -27490,22 +27550,22 @@ msgstr ""
 "Nauja komandinės eilutės parinktis (--difficulty {value|min-max}), skirta "
 "paleisti GCompris tam tikrame lygyje"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Ištaisyta klaida pamokėlėje „Palygink skaičius“"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Pridėtas Ispanijos žemėlapis geografijos pamokėlėse"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Pridėtas ukrainiečių kalbos įgarsinimas"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -27514,7 +27574,7 @@ msgstr ""
 "Naujas pasirinkimas komandinėje eilutėje norint gauti visų pamokėlių sąrašą "
 "ir konkrečiai pradėti vieną iš jų"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -27522,32 +27582,32 @@ msgid ""
 msgstr ""
 "Sumažintas visų platformų pakuočių ir išorinių žodžių vaizdų rinkinio dydis"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Keliose veiklose pagerinta vaizdų kokybė"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Kai kuriose platformose pataisyti kai kurie perėjimai atsinaujinanti "
 "energija / vandens ciklas"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Pataisyti neaktyvūs klavišai, kurie buvo ignoruojami Linux rašymo pamokėlėse"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Pataisytas lygio atstatymas rankiniu būdu keičiant lygį loginiuose "
 "susiejimuose"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -27555,102 +27615,102 @@ msgstr ""
 "Pataisyta abėcėlės seka, lyginių ir nelyginių skaičius bei skaičių rūšiavimo "
 "pamokėlėse"
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:103 core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Ištaisyta keletas klaidų"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Atnaujintas vertimas į rusų kalbą."
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Naujas Norvegų Nynorsk įgarsinimas"
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Pridėtas vertimas į bretonų, čekų ir makedoniečių kalbas."
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Pridėtas vertimas į azerbaidžaniečių kalbą."
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nauji ir atnaujinti žemėlapiai geografijos pamokėlėse"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
 "tutorial images translated"
 msgstr "Naujas duomenų rinkinys, su ciklo operacijomis programuoti labirintą"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "Nauji lygiai  mokytis analoginės elektros grandinių"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Naujas pamokėlės nustatymų langas su duomenų pasirinkimu"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Naujos pakategorės, skirtos sisteminti pamokėlėms"
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Pridėtas vertimas į makedoniečių kalbą."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Naujos pamokėlės Programavimo Labirintas ir Mažoji Tangrama"
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nauji foninės muzikos ir garso nustatymai."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Nauji greičio nustatymai kai kuriose pamokėlėse."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nauja galimybė šachmatų žaidime, rodanti nukirstas figūras."
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr ""
 "Nauji paveikslėliai Spalvų, Ypatingų spalvų bei Taikinio (Target) žaidimams."
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nauji įgarsinimai amerikiečių anglų kalba."
 
-#: core/ChangeLog.qml:133 core/ChangeLog.qml:141
+#: core/ChangeLog.qml:142 core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Daugybė smulkių pataisymų ir pagerinimų."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -27659,19 +27719,19 @@ msgstr ""
 "Atnaujintas vertimas į daugybę kalbų (bretonų, brazilišką portugalų, "
 "suomių...)"
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr ""
 "Pridėtas rusiškų raidžių ir garsų rinkinys pamokėlėms „Spustelk ant "
 "išgirstos raidės“."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Kalbos pamokėlė jau yra ir olandų kalba."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27680,17 +27740,17 @@ msgstr ""
 "Sujungtos Norvegų apygardos Nord- Trøndelag ir Sør-Trøndelag į vieną "
 "apygardą geo-šalies pamokos metu."
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr "Taisymai brailio pamokėlėse, kur elementas prasideda ties 1, ne 0."
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Pridėtį vertimai į baskų, malajalių ir vengrų kalbas."
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27699,47 +27759,47 @@ msgstr ""
 "Sukurtų darbų įkėlimas/įrašymas (Tekstų rašyklė, Svarstyklės ir Pianino "
 "kompozicija)."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Pridėtas vertimas į škotų galų kalbą."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Nustatymuose pridėtas licencijos puslapis."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Patogesnis langų išdėstymas."
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Kalbos pamokėlė jau pateikiama lenkų, švedų bei ukrainiečių kalbomis."
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Paieškos galimybė."
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Patobulinimų žurnalas."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Daug nedidelių pataisymų."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Kalbos pamokėlė jau pateikiama ir prancūzų kalba."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27749,7 +27809,7 @@ msgstr ""
 "kurie veiksmai (pvz., pamokėlės įkėlimas) ir kad jie gali užtrukti keletą "
 "sekundžių."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27758,12 +27818,12 @@ msgstr ""
 "Pridėti vertimai į šias kalbas: katalonų (Valensijos) tradicinę kinų, suomių "
 "(išversta 92%), rusų (išversta 98%), slovakų ( išversta 92%), turkų."
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Pridėti vertimai į: slovėnų, vokiečių, galų kalbas."
 
-#: core/ChangeLog.qml:202
+#: core/ChangeLog.qml:211
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -28477,6 +28537,31 @@ msgstr "Praleisti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Pradėti"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the letters by connecting the dots in the correct order."
+#~ msgstr "Nupiešk raides sujungdamas taškus teisinga tvarka."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the numbers by connecting the dots in the correct order."
+#~ msgstr "Nupiešk skaičius sujungdamas taškus teisinga tvarka."
+
+#, fuzzy
+#~| msgctxt "ActivityInfo|"
+#~| msgid "Draw the picture by clicking on each number in the right order."
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Draw the picture by clicking on the points in the numerical sequence "
+#~ "order."
+#~ msgstr ""
+#~ "Nupiešk paveikslėlį spausdamas ant sunumeruotų taškelių tinkama tvarka."
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Subtractions with 1, 2 and 3."
+#~ msgctxt "Data|"
+#~ msgid "Solve subtraction, 2 digits, 2 lines."
+#~ msgstr "Atimtis su skaičiais 1, 2 ir 3."
 
 #~ msgctxt "Balancebox|"
 #~ msgid "Ok"

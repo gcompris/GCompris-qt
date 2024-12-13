@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2018-11-30 13:03+0000\n"
-"PO-Revision-Date: 2024-12-11 23:13+0100\n"
+"PO-Revision-Date: 2024-12-12 21:28+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -3316,37 +3316,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Zuriunea edo Sartu: zure erantzuna balioztatzea"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:316
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Igandea"
 
-#: activities/calendar/Calendar.qml:323
+#: activities/calendar/Calendar.qml:317
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Astelehena"
 
-#: activities/calendar/Calendar.qml:324
+#: activities/calendar/Calendar.qml:318
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Asteartea"
 
-#: activities/calendar/Calendar.qml:325
+#: activities/calendar/Calendar.qml:319
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Asteazkena"
 
-#: activities/calendar/Calendar.qml:326
+#: activities/calendar/Calendar.qml:320
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Osteguna"
 
-#: activities/calendar/Calendar.qml:327
+#: activities/calendar/Calendar.qml:321
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Ostirala"
 
-#: activities/calendar/Calendar.qml:328
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Larunbata"
@@ -5048,7 +5048,7 @@ msgstr "Egin klik eta marraztu"
 #: activities/clickanddraw/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Draw the picture by clicking on the selected points."
-msgstr "Irudia marraztu hautatutako puntuetan klik eginez."
+msgstr "Marraztu irudia hautatutako puntuetan klik eginez."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
@@ -5064,10 +5064,16 @@ msgstr "Sagua mugitu eta puntuetan zehaztasunez klik egin dezake."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Draw the picture by clicking on each point in sequence. Each time a point "
+#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
-"selected the next blue one appears."
+"selected the next blue one appears. You can click and drag from one point to "
+"the next ones, or click on each point one after the other."
 msgstr ""
 "Marraztu ezazu irudia sekuentziako puntu bakoitzean klik eginez. Puntu bat "
 "aukeratzen den bakoitzean hurrengo puntu urdina agertzen da."
@@ -6658,8 +6664,11 @@ msgstr "Letrak era dibertigarri batean marrazten ikastea."
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Draw the letters by connecting the dots in the correct order."
-msgstr "Marraztu letrak, puntuak ordena egokian lotuz."
+msgid ""
+"Draw the letters by connecting the dots in the correct order. You can click "
+"and drag from one point to the next ones, or click on each point one after "
+"the other."
+msgstr ""
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6682,8 +6691,11 @@ msgstr "Zenbakiak era dibertigarri batean marrazten ikastea."
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Draw the numbers by connecting the dots in the correct order."
-msgstr "Marraztu zenbakiak puntuak ordena egokian lotuz."
+msgid ""
+"Draw the numbers by connecting the dots in the correct order. You can click "
+"and drag from one point to the next ones, or click on each point one after "
+"the other."
+msgstr ""
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -16826,12 +16838,12 @@ msgstr ""
 "Letra bat azaltzen du hegazkinak daraman banderak. Hautatu letra hori duten "
 "zerrendako hitz guztiak, eta ondoren, sakatu «Ados» botoia."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:320
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Atsekabez, ez dugu oraindik zure hizkuntzarako itzulpenik."
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:321
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16841,7 +16853,7 @@ msgstr ""
 "GCompris KDE komunitateak garatzen du. GCompris itzul dezakezu itzulpen "
 "talde batera batuz, hemen, <a href=\"%2\">%2</a>"
 
-#: activities/letter-in-word/LetterInWord.qml:325
+#: activities/letter-in-word/LetterInWord.qml:323
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19932,10 +19944,19 @@ msgstr "Zenbakizko sekuentzia ikasi."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Draw the picture by clicking on each point in sequence. Each time a point "
+#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
-"Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "Irudia marraztu, zenbaki-sekuentziaren ordenan puntuetan klik eginez."
+"Draw the picture by clicking on the points in the numerical sequence order. "
+"You can click and drag from one point to the next ones, or click on each "
+"point one after the other."
+msgstr ""
+"Marraztu ezazu irudia sekuentziako puntu bakoitzean klik eginez. Puntu bat "
+"aukeratzen den bakoitzean hurrengo puntu urdina agertzen da."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -21048,22 +21069,22 @@ msgid "%1 BPM"
 msgstr "%1 PM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:47
+#: activities/piano_composition/KeyOption.qml:46
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "Sol klabea"
 
-#: activities/piano_composition/KeyOption.qml:47
+#: activities/piano_composition/KeyOption.qml:46
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "Fa 4. klabea"
 
-#: activities/piano_composition/KeyOption.qml:63
+#: activities/piano_composition/KeyOption.qml:61
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "Sol klabea gehitu da"
 
-#: activities/piano_composition/KeyOption.qml:63
+#: activities/piano_composition/KeyOption.qml:61
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "Fa 4. klabea gehitu da"
@@ -21286,12 +21307,12 @@ msgid "Undo"
 msgstr "Desegin"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:166
+#: activities/piano_composition/OptionsRow.qml:165
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "Dieseak"
 
-#: activities/piano_composition/OptionsRow.qml:166
+#: activities/piano_composition/OptionsRow.qml:165
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "bemolak"
@@ -26316,31 +26337,31 @@ msgstr ""
 "duzu auto gorria eskuinaldeko atetik atera dadin."
 
 #. Activity title
-#: activities/vertical_addition/ActivityInfo.qml:14
+#: activities/vertical_addition/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
 msgstr "Batuketa bertikala"
 
 #. Help title
-#: activities/vertical_addition/ActivityInfo.qml:16
+#: activities/vertical_addition/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
 msgstr "Emandako batuketa ebatzi."
 
 #. Help goal
-#: activities/vertical_addition/ActivityInfo.qml:19
+#: activities/vertical_addition/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
 msgstr "Batuketa bertikalak ebazten ikasi."
 
 #. Help prerequisite
-#: activities/vertical_addition/ActivityInfo.qml:21
+#: activities/vertical_addition/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
 msgstr "Batuketa taulak."
 
 #. Help manual
-#: activities/vertical_addition/ActivityInfo.qml:23
+#: activities/vertical_addition/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical addition, numbers are written one below the other. They need "
@@ -26431,20 +26452,20 @@ msgid "Solve addition, 4 digits, 2 lines."
 msgstr "Batuketa ebatzi, 4 digitu, 2 lerro."
 
 #. Activity title
-#: activities/vertical_subtraction/ActivityInfo.qml:14
+#: activities/vertical_subtraction/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
 msgstr "Kenketa bertikala"
 
 #. Help title
-#: activities/vertical_subtraction/ActivityInfo.qml:16
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
+#: activities/vertical_subtraction/ActivityInfo.qml:17
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
 msgstr "Emandako kenketa ebatzi."
 
 #. Help goal
-#: activities/vertical_subtraction/ActivityInfo.qml:19
+#: activities/vertical_subtraction/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
@@ -26453,15 +26474,14 @@ msgstr ""
 "Kenketa bertikalak ebazten ikasi, birtaldekatze metodoarekinmailegatuz."
 
 #. Help prerequisite
-#: activities/vertical_subtraction/ActivityInfo.qml:21
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
+#: activities/vertical_subtraction/ActivityInfo.qml:22
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
 msgstr "Kenketa taulak."
 
 #. Help manual
-#: activities/vertical_subtraction/ActivityInfo.qml:23
-#, fuzzy
+#: activities/vertical_subtraction/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -26487,13 +26507,21 @@ msgid ""
 "operation is written correctly and then solve it."
 msgstr ""
 "Kenketa bertikal batean, zenbakiak bata bestearen azpian idazten dira. Behar "
-"bezala lerrokatu behar dira, eskuin aldeko zutabetik hasita. Emaitza beheko "
-"lerroan idazten da. Batuketa ebazteko, hasi lehen zutabeko (eskuin aldekoa) "
-"zenbakiak batzen, eta idatzi emaitza zutabe bereko beheko lerroan. Emaitzak "
-"bi digituko zenbaki bat ematen badu, emaitzan unitateen digitua bakarrik "
-"idatzi, eta gehitu hamarreko digitua hurrengo zutabeko goiko zenbakiaren "
-"ondoan: horri deitzen zaio eramandakoa. Ondoren batu hurrengo zutabeko "
-"zenbakiak, eramandakoa barne, eta prozesua errepikatu eragiketa bukatu arte. "
+"bezala lerrokatu behar dira, eskuin aldeko zutabetik hasita. Goiko "
+"zenbakiari kenkizuna esaten zaio: hasteko dugun kopurua da, hari kentzen "
+"zaio beste zenbakia bat bien arteko aldea lortzeko. Beheko zenbakiari "
+"kentzailea esaten zaio: aldea lortzeko kenkizunari kendu beharreko kopurua "
+"da. Emaitza beheko lerroan idazten da. Kenketa ebazteko, hasi lehen zutabeko "
+"(eskuin aldeko) goiko zenbakiari zutabe bereko bere azpiko zenbakia kentzen, "
+"eta idatzi emaitza zutabe bereko beheko lerroan. Goiko zenbaki beheko "
+"zenbakia baino txikiagoa bada, kenkizunaren hurrengo zutabetik hartu "
+"dezakezu: adibidez, goiko zenbakiari 10 unitate gehitzen badizkiozu, goiko "
+"zenbakiaren hurrengo zutabeari unitate bat kendu behar diozu. Horri "
+"birtaldekatze metodoaren arabera hartzea deitzen zaio. Jarduera honetan hori "
+"egiteko, egin klik goiko zenbakiaren ezkerrean dagoen laukizuzen hutsean, "
+"hautatu 1, eta hurrengo zutabean egin klik goiko zenbakiaren eskuineko "
+"laukizuzen hutsean eta hautatu -1. Ondoren idatzi zutabearen emaitza beheko "
+"lerroan, eta egin gauza bera hurrengo zutabeetan eragiketa bukatu arte. "
 "Emaitza aurkitu duzunean, egin klik Ados botoiari zure erantzuna "
 "baliozkotzeko. Maila batzuetan, emandako eragiketa ebatzi aurretik, hura "
 "idatzi beharko duzu; kasu horretan, egin klik Prest botoiari eragiketa ondo "
@@ -26507,14 +26535,20 @@ msgstr "Kenketa ebatzi, 2 digitu, 2 lerro, geroko eraman gabe."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 3 lines."
+msgid "Solve subtraction, 4 or 5 digits, 3 lines."
 msgstr "Kenketa ebatzi, 4 digitu, 3 lerro."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Solve subtraction, 4 digits, 4 lines."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 4 lines."
+msgid "Solve subtraction, 4 or 5 digits, 4 lines."
 msgstr "Kenketa ebatzi, 4 digitu, 4 lerro."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
@@ -26531,76 +26565,97 @@ msgstr "Kenketa idatzi eta ebatzi, 2 digitu, 2 lerro, geroko eraman gabe."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
-msgid "Solve subtraction, 2 digits, 2 lines."
-msgstr "Kenketa ebatzi, 2 digitu, 2 lerro."
+msgid "Solve subtraction, 2 or 3 digits, 2 lines."
+msgstr "Kenketa ebatzi, 3 digitu, 2 lerro."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr "Kenketa idatzi eta ebatzi, 2 digitu, 2 lerro."
+msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
+msgstr "Kenketa idatzi eta ebatzi, 3 digitu, 2 lerro."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write and solve subtraction, 2 digits, 3 lines."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 2 digits, 3 lines."
+msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
 msgstr "Kenketa idatzi eta ebatzi, 2 digitu, 3 lerro."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
-msgid "Solve subtraction, 3 digits, 2 lines."
+msgid "Solve subtraction, 3 or 4 digits, 2 lines."
 msgstr "Kenketa ebatzi, 3 digitu, 2 lerro."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 3 digits, 2 lines."
+msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
 msgstr "Kenketa idatzi eta ebatzi, 3 digitu, 2 lerro."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
-msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr "Kenketa ebatzi, 3 digitu, 3 lerro."
+msgid "Solve subtraction, 3 or 4 digits, 3 lines."
+msgstr "Kenketa ebatzi, 4 digitu, 3 lerro."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Solve subtraction, 4 digits, 2 lines."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 2 lines."
+msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Kenketa ebatzi, 4 digitu, 2 lerro."
 
-#: activities/vertical_subtraction/subtraction.js:65
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "Idatzi:"
 
-#: activities/vertical_subtraction/subtraction.js:65
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "Ebatzi:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:160
+#: activities/vertical_subtraction/subtraction.js:166
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Ebatzi: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:326
+#: activities/vertical_subtraction/VerticalSubtraction.qml:399
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Prest"
 
 #. Activity title
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
 msgstr "Kenketa bertikala (konpentsazioa)"
 
 #. Help goal
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
@@ -26609,7 +26664,7 @@ msgstr ""
 "Kenketa bertikalak ebazten ikasi, konpentsazio metodoarekin mailegatuz."
 
 #. Help manual
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -26634,6 +26689,26 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Kenketa bertikal batean, zenbakiak bata bestearen azpian idazten dira. Behar "
+"bezala lerrokatu behar dira, eskuin aldeko zutabetik hasita. Goiko "
+"zenbakiari kenkizuna esaten zaio: hasteko dugun kopurua da, hari kentzen "
+"zaio beste zenbakia bat bien arteko aldea lortzeko. Beheko zenbakiari "
+"kentzailea esaten zaio: aldea lortzeko kenkizunari kendu beharreko kopurua "
+"da. Emaitza beheko lerroan idazten da. Kenketa ebazteko, hasi lehen zutabeko "
+"(eskuin aldeko) goiko zenbakiari zutabe bereko bere azpiko zenbakia kentzen, "
+"eta idatzi emaitza zutabe bereko beheko lerroan. Goiko zenbaki beheko "
+"zenbakia baino txikiagoa bada, kenkizunaren hurrengo zutabetik hartu "
+"dezakezu: adibidez, goiko zenbakiari 10 unitate gehitzen badizkiozu, beheko "
+"zenbakiaren hurrengo zutabeari unitate bat gehitu behar diozu. Horri "
+"konpentsazio metodoaren arabera hartzea deitzen zaio. Jarduera honetan hori "
+"egiteko, egin klik goiko zenbakiaren ezkerrean dagoen laukizuzen hutsean, "
+"hautatu 1, eta hurrengo zutabean egin klik beheko zenbakiaren eskuineko "
+"laukizuzen hutsean eta hautatu +1. Ondoren idatzi zutabearen emaitza beheko "
+"lerroan, eta egin gauza bera hurrengo zutabeetan eragiketa bukatu arte. "
+"Emaitza aurkitu duzunean, egin klik Ados botoiari zure erantzuna "
+"baliozkotzeko. Maila batzuetan, emandako eragiketa ebatzi aurretik, hura "
+"idatzi beharko duzu; kasu horretan, egin klik Prest botoiari eragiketa ondo "
+"idatzi ondoren, eta gero, hura ebatzi."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26801,38 +26876,63 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Tekleatu hitz osoa erortzen ari den bitartean, lurra ukitu aurretik."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:41
-#: core/ChangeLog.qml:47 core/ChangeLog.qml:76 core/ChangeLog.qml:111
-#: core/ChangeLog.qml:114 core/ChangeLog.qml:120
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:39 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50 core/ChangeLog.qml:56 core/ChangeLog.qml:85
+#: core/ChangeLog.qml:120 core/ChangeLog.qml:123 core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Erabilerraztasun hobekuntza ugari"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:37 core/ChangeLog.qml:42
-#: core/ChangeLog.qml:49 core/ChangeLog.qml:58 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:78 core/ChangeLog.qml:116 core/ChangeLog.qml:122
-msgctxt "ChangeLog|"
-msgid "Many bug fixes"
-msgstr "Akats-konponketa ugari"
-
-#: core/ChangeLog.qml:35
-msgctxt "ChangeLog|"
-msgid "Translation added for Latvian"
-msgstr "Letonieraren itzulpena gehitu da"
-
-#: core/ChangeLog.qml:46
-msgctxt "ChangeLog|"
-msgid "Translations added for Bulgarian, Galician and Swahili"
-msgstr "Itzulpenak gehitu dira: bulgariera, galiziera eta Swahilia"
-
-#: core/ChangeLog.qml:48 core/ChangeLog.qml:57 core/ChangeLog.qml:64
-#: core/ChangeLog.qml:77 core/ChangeLog.qml:95 core/ChangeLog.qml:110
-#: core/ChangeLog.qml:115 core/ChangeLog.qml:121
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:57 core/ChangeLog.qml:66
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:86 core/ChangeLog.qml:104
+#: core/ChangeLog.qml:119 core/ChangeLog.qml:124 core/ChangeLog.qml:130
 msgctxt "ChangeLog|"
 msgid "Many new images"
 msgstr "Irudi berri ugari"
 
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:58 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:74 core/ChangeLog.qml:87 core/ChangeLog.qml:125
+#: core/ChangeLog.qml:131
+msgctxt "ChangeLog|"
+msgid "Many bug fixes"
+msgstr "Akats-konponketa ugari"
+
+#: core/ChangeLog.qml:33
+msgctxt "ChangeLog|"
+msgid ""
+"Automatic application of new language when changing it in the menu (no need "
+"to restart GCompris)"
+msgstr ""
+
+#: core/ChangeLog.qml:34
+msgctxt "ChangeLog|"
+msgid "Add splash screen at startup"
+msgstr ""
+
+#: core/ChangeLog.qml:35
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid "New command-line option to switch the renderer (--renderer renderer)"
+msgstr ""
+"Jarduera guztiak zerrendatzeko eta berri batean hasteko komando-lerroko "
+"aukera berri bat"
+
+#: core/ChangeLog.qml:44
+msgctxt "ChangeLog|"
+msgid "Translation added for Latvian"
+msgstr "Letonieraren itzulpena gehitu da"
+
+#: core/ChangeLog.qml:55
+msgctxt "ChangeLog|"
+msgid "Translations added for Bulgarian, Galician and Swahili"
+msgstr "Itzulpenak gehitu dira: bulgariera, galiziera eta Swahilia"
+
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -26841,17 +26941,17 @@ msgstr ""
 "Jarduera bat maila jakin batean abiatzeko komando-lerroko aukera berri bat "
 "(«--start-level maila», «--launch jarduera» aukerarekin erabili beharrekoa)"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Arabieraren eta Esperantoaren itzulpenak gehitu dira"
 
-#: core/ChangeLog.qml:56 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:65 core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Itzulpenetan eguneratze asko"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:71
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -26860,22 +26960,22 @@ msgstr ""
 "GCompris zehaztutako zailtasunarekin abiatzeko, komando-lerroko aukera "
 "berria (--difficulty {value|min-max})"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Konparatzailea jardueran azaroa konpontzea"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Jarduera geografikorako Espainiako mapa erantsi da"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Ukraineraren ahotsak gehitu dira"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -26884,7 +26984,7 @@ msgstr ""
 "Jarduera guztiak zerrendatzeko eta berri batean hasteko komando-lerroko "
 "aukera berri bat"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -26893,30 +26993,30 @@ msgstr ""
 "Plataforma guztietako paketeen neurria txikitzea eta hitzen kanpoko irudi-"
 "multzoarena ere bai"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Zenbait jardueratan irudien kalitatea hobetzea."
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Plataforma batzuetan, «energia-berriztagarria/uraren zikloa» jardueran "
 "trantsizio batzuk konpontzea"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr "Linuxen ezikusitako tekla-hilak konpontzea, tekleatzeko jardueretan"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Maila berrezartzea konpontzea, Elkarketa logikoetan maila eskuz aldatzean"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -26924,37 +27024,37 @@ msgstr ""
 "Alfabetoaren hurrenkera, Zenbaki bikoitiak eta bakoitia eta Zenbakiak "
 "ordenan konpontzea"
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:103 core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Hainbat akats-konponketa"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Errusieraren itzulpena eguneratu da"
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Norvegiera Nynorsk-erako ahots berriak"
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Bretoieraren, txekieraren eta mazedonieraren itzulpenak gehitu dira"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Azerbaijaneraren itzulpena gehitu da"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Mapa berriak eta geografia jardueretako mapen eguneratzea"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26963,7 +27063,7 @@ msgstr ""
 "Labirinto programagarrietarako begizta eragiketak dituen datu-multzo berri "
 "bat eta tutoretzetako irudiak itzulgarriak egitea"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
@@ -26972,57 +27072,57 @@ msgstr ""
 "Elektrizitate analogikoko jardueran tentsio-iturriaren begizta irakasteko "
 "maila bat gehitzea"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "«Jarduera ezarpenak» menu berria, datu-multzo hautapenarekin"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Jarduerak antolatzeko azpi-kategoria berriak"
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Mazedonieraren itzulpena gehitu da."
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Jarduera berriak, Programatzeko Labirintoa eta Haurtxo Tangram"
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Hondoko musika eta bolumen ezarpen berriak."
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Abiadura ezarpen berria zenbait jardueratan."
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Xakean atzemandako piezak azaltzeko aukera berria."
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Irudi berriak Koloreak, Kolore aurreratuak eta Punteria jokoan."
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "AEBko ingeleserako ahots berriak."
 
-#: core/ChangeLog.qml:133 core/ChangeLog.qml:141
+#: core/ChangeLog.qml:142 core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Zuzenketa eta hobekuntza txiki ugari."
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -27031,17 +27131,17 @@ msgstr ""
 "Hizkuntza askotarako itzulpen eguneratua (Bretoiera, Brasilgo Portugesa, "
 "Finlandiera ...)."
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Gehitu Errusiako datu-multzoa «Egin klik letran» jardueran."
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "«Lang» jarduera, orain nederlanderaz ere erabilgarri."
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27050,19 +27150,19 @@ msgstr ""
 "Norvegiako Nord-Trøndelag eta Sør-Trøndelag konderriak Trøndelag-en "
 "bateratzea«Geo-herrialdea» jardueran."
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Konponketa «braille» jardueretan non gelaxkak 1ekin, ez 0rekin,  hasten "
 "diren."
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Euskara, hungariera eta malabarera itzulpenak gehitu dira."
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27071,49 +27171,49 @@ msgstr ""
 "Sorkuntza lanak zamatzea/gordetzea (Haurrentzako testu-prozesatzailea, Oreka "
 "kaxa eta Pianorekin konposatzea)."
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Eskoziako gaelerako itzulpenak gehitu dira."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Lizentziaren orria gehitu da konfigurazioan."
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Hainbat aldaketa antolamenduan, ergonomia hobetzeko."
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr ""
 "«Lang» jarduera, orain, eskuragarri dago polonieraz, suedieraz eta "
 "ukraineraz."
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Bilatzeko ezaugarria."
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Aldaketen egunkari bat."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Konponketa txiki asko."
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "«Lang» jarduera erabilgarri dago, orain, frantsesez."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27123,7 +27223,7 @@ msgstr ""
 "direla (jarduera bat zamatzea adibidez) eta horrek segundo batzuk beharko "
 "dituela jakin dezan."
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27132,12 +27232,12 @@ msgstr ""
 "Itzulpenak gehitu dira: katalana (Valentziera), txinera, finlandiera (% 92a "
 "itzulita), errusiera (% 98 itzulita), eslovakiera (% 92 itzulita), turkiera."
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Itzulpenak gehitu dira: esloveniera, alemana eta galiziera."
 
-#: core/ChangeLog.qml:202
+#: core/ChangeLog.qml:211
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -27833,6 +27933,33 @@ msgstr "Saihestu"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Hasi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the letters by connecting the dots in the correct order."
+#~ msgstr "Marraztu letrak, puntuak ordena egokian lotuz."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the numbers by connecting the dots in the correct order."
+#~ msgstr "Marraztu zenbakiak puntuak ordena egokian lotuz."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Draw the picture by clicking on the points in the numerical sequence "
+#~ "order."
+#~ msgstr ""
+#~ "Irudia marraztu, zenbaki-sekuentziaren ordenan puntuetan klik eginez."
+
+#~ msgctxt "Data|"
+#~ msgid "Solve subtraction, 2 digits, 2 lines."
+#~ msgstr "Kenketa ebatzi, 2 digitu, 2 lerro."
+
+#~ msgctxt "Data|"
+#~ msgid "Write and solve subtraction, 2 digits, 2 lines."
+#~ msgstr "Kenketa idatzi eta ebatzi, 2 digitu, 2 lerro."
+
+#~ msgctxt "Data|"
+#~ msgid "Solve subtraction, 3 digits, 3 lines."
+#~ msgstr "Kenketa ebatzi, 3 digitu, 3 lerro."
 
 #~ msgctxt "Balancebox|"
 #~ msgid "Ok"

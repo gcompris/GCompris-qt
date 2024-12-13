@@ -3296,37 +3296,37 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: validate your answer"
 msgstr "Mellomrom eller Enter: Sjå om svaret er rett"
 
-#: activities/calendar/Calendar.qml:322
+#: activities/calendar/Calendar.qml:316
 msgctxt "Calendar|"
 msgid "Sunday"
 msgstr "Sundag"
 
-#: activities/calendar/Calendar.qml:323
+#: activities/calendar/Calendar.qml:317
 msgctxt "Calendar|"
 msgid "Monday"
 msgstr "Måndag"
 
-#: activities/calendar/Calendar.qml:324
+#: activities/calendar/Calendar.qml:318
 msgctxt "Calendar|"
 msgid "Tuesday"
 msgstr "Tysdag"
 
-#: activities/calendar/Calendar.qml:325
+#: activities/calendar/Calendar.qml:319
 msgctxt "Calendar|"
 msgid "Wednesday"
 msgstr "Onsdag"
 
-#: activities/calendar/Calendar.qml:326
+#: activities/calendar/Calendar.qml:320
 msgctxt "Calendar|"
 msgid "Thursday"
 msgstr "Torsdag"
 
-#: activities/calendar/Calendar.qml:327
+#: activities/calendar/Calendar.qml:321
 msgctxt "Calendar|"
 msgid "Friday"
 msgstr "Fredag"
 
-#: activities/calendar/Calendar.qml:328
+#: activities/calendar/Calendar.qml:322
 msgctxt "Calendar|"
 msgid "Saturday"
 msgstr "Laurdag"
@@ -5033,10 +5033,16 @@ msgstr "Kan flytta på musa og trykkja på små punkt."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Draw the picture by clicking on each point in sequence. Each time a point "
+#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
-"selected the next blue one appears."
+"selected the next blue one appears. You can click and drag from one point to "
+"the next ones, or click on each point one after the other."
 msgstr ""
 "Lag ei teikning ved å trykkja på punkta i rett rekkjefølgje. Kvar gong du "
 "trykkjer på eit punkt, vert eit nytt punkt vist med blått."
@@ -6609,8 +6615,11 @@ msgstr "Læra å teikna bokstavane på ein morosam måte."
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Draw the letters by connecting the dots in the correct order."
-msgstr "Teikn bokstavane ved å kopla saman prikkane i rett rekkjefølgje."
+msgid ""
+"Draw the letters by connecting the dots in the correct order. You can click "
+"and drag from one point to the next ones, or click on each point one after "
+"the other."
+msgstr ""
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6633,8 +6642,11 @@ msgstr "Læra å teikna siffera på ein morosam måte."
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
-msgid "Draw the numbers by connecting the dots in the correct order."
-msgstr "Teikn tala ved å kopla saman prikkane i rett rekkjefølgje."
+msgid ""
+"Draw the numbers by connecting the dots in the correct order. You can click "
+"and drag from one point to the next ones, or click on each point one after "
+"the other."
+msgstr ""
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -16823,12 +16835,12 @@ msgstr ""
 "Flagget på flyet viser ein bokstav. Vel alle orda som inneheld bokstaven, og "
 "trykk så «OK»."
 
-#: activities/letter-in-word/LetterInWord.qml:322
+#: activities/letter-in-word/LetterInWord.qml:320
 msgctxt "LetterInWord|"
 msgid "We are sorry, we don't have yet a translation for your language."
 msgstr "Me har dessverre ikkje ei omsetjing for språket ditt enno."
 
-#: activities/letter-in-word/LetterInWord.qml:323
+#: activities/letter-in-word/LetterInWord.qml:321
 #, qt-format
 msgctxt "LetterInWord|"
 msgid ""
@@ -16838,7 +16850,7 @@ msgstr ""
 "GCompris er utvikla av KDE-fellesskapet. Du kan setja om GCompris til eit "
 "anna språk ved å verta med i ei omsetjingsgruppe på <a href=\"%2\">%2</a>."
 
-#: activities/letter-in-word/LetterInWord.qml:325
+#: activities/letter-in-word/LetterInWord.qml:323
 msgctxt "LetterInWord|"
 msgid ""
 "We switched to English for this activity but you can select another language "
@@ -19937,10 +19949,18 @@ msgstr "Læra om vasskrinsløpet."
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
 #, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid ""
+#| "Draw the picture by clicking on each point in sequence. Each time a point "
+#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
-"Draw the picture by clicking on the points in the numerical sequence order."
-msgstr "Lag ei teikning ved å trykkja på tala i rett rekkjefølgje."
+"Draw the picture by clicking on the points in the numerical sequence order. "
+"You can click and drag from one point to the next ones, or click on each "
+"point one after the other."
+msgstr ""
+"Lag ei teikning ved å trykkja på punkta i rett rekkjefølgje. Kvar gong du "
+"trykkjer på eit punkt, vert eit nytt punkt vist med blått."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -21068,22 +21088,22 @@ msgid "%1 BPM"
 msgstr "%1 BPM"
 
 #. Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-#: activities/piano_composition/KeyOption.qml:47
+#: activities/piano_composition/KeyOption.qml:46
 msgctxt "KeyOption|"
 msgid "Treble clef"
 msgstr "G-nøkkel"
 
-#: activities/piano_composition/KeyOption.qml:47
+#: activities/piano_composition/KeyOption.qml:46
 msgctxt "KeyOption|"
 msgid "Bass clef"
 msgstr "F-nøkkel"
 
-#: activities/piano_composition/KeyOption.qml:63
+#: activities/piano_composition/KeyOption.qml:61
 msgctxt "KeyOption|"
 msgid "Treble clef added"
 msgstr "G-nøkkel lagd til"
 
-#: activities/piano_composition/KeyOption.qml:63
+#: activities/piano_composition/KeyOption.qml:61
 msgctxt "KeyOption|"
 msgid "Bass clef added"
 msgstr "F-nøkkel lagd til"
@@ -21310,12 +21330,12 @@ msgid "Undo"
 msgstr "Angra"
 
 #. Sharp notes and Flat notes represents the accidental style of the notes in the music.
-#: activities/piano_composition/OptionsRow.qml:166
+#: activities/piano_composition/OptionsRow.qml:165
 msgctxt "OptionsRow|"
 msgid "Sharp notes"
 msgstr "Kryssnotar"
 
-#: activities/piano_composition/OptionsRow.qml:166
+#: activities/piano_composition/OptionsRow.qml:165
 msgctxt "OptionsRow|"
 msgid "Flat notes"
 msgstr "♭-notar"
@@ -26327,14 +26347,14 @@ msgstr ""
 "gjera plass slik at den raude bilen kan køyra ut utgangen til høgre."
 
 #. Activity title
-#: activities/vertical_addition/ActivityInfo.qml:14
+#: activities/vertical_addition/ActivityInfo.qml:15
 #, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
 msgstr "Øva på å leggja til."
 
 #. Help title
-#: activities/vertical_addition/ActivityInfo.qml:16
+#: activities/vertical_addition/ActivityInfo.qml:17
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Solve the Calcudoku."
@@ -26343,14 +26363,14 @@ msgid "Solve the given addition."
 msgstr "Løys kalkudoku-oppgåva."
 
 #. Help goal
-#: activities/vertical_addition/ActivityInfo.qml:19
+#: activities/vertical_addition/ActivityInfo.qml:20
 #, fuzzy
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
 msgstr "Øva på å dela tal."
 
 #. Help prerequisite
-#: activities/vertical_addition/ActivityInfo.qml:21
+#: activities/vertical_addition/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Addition table of 1."
@@ -26359,7 +26379,7 @@ msgid "Addition tables."
 msgstr "Addisjon med talet 1"
 
 #. Help manual
-#: activities/vertical_addition/ActivityInfo.qml:23
+#: activities/vertical_addition/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical addition, numbers are written one below the other. They need "
@@ -26438,7 +26458,7 @@ msgid "Solve addition, 4 digits, 2 lines."
 msgstr ""
 
 #. Activity title
-#: activities/vertical_subtraction/ActivityInfo.qml:14
+#: activities/vertical_subtraction/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice subtraction."
@@ -26447,8 +26467,8 @@ msgid "Vertical subtraction"
 msgstr "Øva på å trekkja frå."
 
 #. Help title
-#: activities/vertical_subtraction/ActivityInfo.qml:16
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:16
+#: activities/vertical_subtraction/ActivityInfo.qml:17
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 #, fuzzy
 #| msgctxt "InstructionArea|"
 #| msgid "Choose the instructions"
@@ -26457,7 +26477,7 @@ msgid "Solve the given subtraction."
 msgstr "Vel instruksjonar"
 
 #. Help goal
-#: activities/vertical_subtraction/ActivityInfo.qml:19
+#: activities/vertical_subtraction/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
@@ -26465,8 +26485,8 @@ msgid ""
 msgstr ""
 
 #. Help prerequisite
-#: activities/vertical_subtraction/ActivityInfo.qml:21
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:21
+#: activities/vertical_subtraction/ActivityInfo.qml:22
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
 #, fuzzy
 #| msgctxt "Data|"
 #| msgid "Subtraction table of 1."
@@ -26475,7 +26495,7 @@ msgid "Subtraction tables."
 msgstr "Subtraksjon med talet 1"
 
 #. Help manual
-#: activities/vertical_subtraction/ActivityInfo.qml:23
+#: activities/vertical_subtraction/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -26509,15 +26529,21 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 3 lines."
-msgstr ""
+msgid "Solve subtraction, 4 or 5 digits, 3 lines."
+msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 4 lines."
-msgstr ""
+msgid "Solve subtraction, 4 or 5 digits, 4 lines."
+msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
@@ -26540,20 +26566,26 @@ msgstr ""
 #| msgctxt "Data|"
 #| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 2 digits, 2 lines."
+msgid "Solve subtraction, 2 or 3 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 2 digits, 2 lines."
-msgstr ""
+msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
+msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 2 digits, 3 lines."
-msgstr ""
+msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
+msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
@@ -26561,20 +26593,26 @@ msgstr ""
 #| msgctxt "Data|"
 #| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 3 digits, 2 lines."
+msgid "Solve subtraction, 3 or 4 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Write and solve subtraction, 3 digits, 2 lines."
-msgstr ""
+msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
+msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
+#, fuzzy
+#| msgctxt "Data|"
+#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 3 digits, 3 lines."
-msgstr ""
+msgid "Solve subtraction, 3 or 4 digits, 3 lines."
+msgstr "Subtraksjon med 1, 2 og 3"
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
@@ -26582,21 +26620,21 @@ msgstr ""
 #| msgctxt "Data|"
 #| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
-msgid "Solve subtraction, 4 digits, 2 lines."
+msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
 
-#: activities/vertical_subtraction/subtraction.js:65
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:65
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:160
+#: activities/vertical_subtraction/subtraction.js:166
 #, fuzzy, qt-format
 #| msgctxt "BackgroundMusicList|"
 #| msgid "Title: %1"
@@ -26604,7 +26642,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Tittel: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:326
+#: activities/vertical_subtraction/VerticalSubtraction.qml:399
 #, fuzzy
 #| msgctxt "Frieze|"
 #| msgid "I am Ready"
@@ -26613,7 +26651,7 @@ msgid "Ready"
 msgstr "Eg er klar"
 
 #. Activity title
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:14
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice the subtraction operation."
@@ -26622,7 +26660,7 @@ msgid "Vertical subtraction (compensation)"
 msgstr "Øv på å trekkja frå."
 
 #. Help goal
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:19
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
@@ -26630,7 +26668,7 @@ msgid ""
 msgstr ""
 
 #. Help manual
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:23
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "In a vertical subtraction, numbers are written one below the other. They "
@@ -26824,39 +26862,64 @@ msgctxt "ActivityInfo|"
 msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Skriv inn heile orda mens dei dalar ned, før dei når bakken."
 
-#: core/ChangeLog.qml:30 core/ChangeLog.qml:36 core/ChangeLog.qml:41
-#: core/ChangeLog.qml:47 core/ChangeLog.qml:76 core/ChangeLog.qml:111
-#: core/ChangeLog.qml:114 core/ChangeLog.qml:120
+#: core/ChangeLog.qml:30 core/ChangeLog.qml:39 core/ChangeLog.qml:45
+#: core/ChangeLog.qml:50 core/ChangeLog.qml:56 core/ChangeLog.qml:85
+#: core/ChangeLog.qml:120 core/ChangeLog.qml:123 core/ChangeLog.qml:129
 msgctxt "ChangeLog|"
 msgid "Many usability improvements"
 msgstr "Er blitt mykje meir brukarvennleg"
 
-#: core/ChangeLog.qml:31 core/ChangeLog.qml:37 core/ChangeLog.qml:42
-#: core/ChangeLog.qml:49 core/ChangeLog.qml:58 core/ChangeLog.qml:65
-#: core/ChangeLog.qml:78 core/ChangeLog.qml:116 core/ChangeLog.qml:122
+#: core/ChangeLog.qml:31 core/ChangeLog.qml:57 core/ChangeLog.qml:66
+#: core/ChangeLog.qml:73 core/ChangeLog.qml:86 core/ChangeLog.qml:104
+#: core/ChangeLog.qml:119 core/ChangeLog.qml:124 core/ChangeLog.qml:130
+msgctxt "ChangeLog|"
+msgid "Many new images"
+msgstr "Mange nye bilete"
+
+#: core/ChangeLog.qml:32 core/ChangeLog.qml:40 core/ChangeLog.qml:46
+#: core/ChangeLog.qml:51 core/ChangeLog.qml:58 core/ChangeLog.qml:67
+#: core/ChangeLog.qml:74 core/ChangeLog.qml:87 core/ChangeLog.qml:125
+#: core/ChangeLog.qml:131
 msgctxt "ChangeLog|"
 msgid "Many bug fixes"
 msgstr "Mange feilrettingar"
 
+#: core/ChangeLog.qml:33
+msgctxt "ChangeLog|"
+msgid ""
+"Automatic application of new language when changing it in the menu (no need "
+"to restart GCompris)"
+msgstr ""
+
+#: core/ChangeLog.qml:34
+msgctxt "ChangeLog|"
+msgid "Add splash screen at startup"
+msgstr ""
+
 #: core/ChangeLog.qml:35
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "New command-line option to list all the activities and start on a "
+#| "specific one"
+msgctxt "ChangeLog|"
+msgid "New command-line option to switch the renderer (--renderer renderer)"
+msgstr ""
+"Kommandolinje-val for å visa oversikt over aktivitetar og starta ein "
+"aktivitet direkte"
+
+#: core/ChangeLog.qml:44
 #, fuzzy
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:46
+#: core/ChangeLog.qml:55
 msgctxt "ChangeLog|"
 msgid "Translations added for Bulgarian, Galician and Swahili"
 msgstr "Lagt til omsetjingar for bulgarsk, galisisk og swahili"
 
-#: core/ChangeLog.qml:48 core/ChangeLog.qml:57 core/ChangeLog.qml:64
-#: core/ChangeLog.qml:77 core/ChangeLog.qml:95 core/ChangeLog.qml:110
-#: core/ChangeLog.qml:115 core/ChangeLog.qml:121
-msgctxt "ChangeLog|"
-msgid "Many new images"
-msgstr "Mange nye bilete"
-
-#: core/ChangeLog.qml:50
+#: core/ChangeLog.qml:59
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to directly start an activity at a specific level (--"
@@ -26865,17 +26928,17 @@ msgstr ""
 "Nytt kommandolinjeval for å starta aktivitet direkte på valt nivå («--start-"
 "level nivå», som skal brukast saman med «--launch aktivitets-ID»)"
 
-#: core/ChangeLog.qml:55
+#: core/ChangeLog.qml:64
 msgctxt "ChangeLog|"
 msgid "Translations added for Arabic and Esperanto"
 msgstr "Lagt til omsetjing for arabisk og esperanto"
 
-#: core/ChangeLog.qml:56 core/ChangeLog.qml:63
+#: core/ChangeLog.qml:65 core/ChangeLog.qml:72
 msgctxt "ChangeLog|"
 msgid "Many translation updates"
 msgstr "Mange oppdaterte omsetjingar"
 
-#: core/ChangeLog.qml:62
+#: core/ChangeLog.qml:71
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
@@ -26884,22 +26947,22 @@ msgstr ""
 "Nytt kommandolinjeval («--difficulty {verdi|min-maks}») for å starta "
 "GCompris med vald vanskegrad"
 
-#: core/ChangeLog.qml:69
+#: core/ChangeLog.qml:78
 msgctxt "ChangeLog|"
 msgid "Fix issue in comparator activity"
 msgstr "Retta feil i talsamanliknings­aktiviteten"
 
-#: core/ChangeLog.qml:73
+#: core/ChangeLog.qml:82
 msgctxt "ChangeLog|"
 msgid "Map of Spain added for geography activity"
 msgstr "Kart over Spania i geografi-aktiviteten"
 
-#: core/ChangeLog.qml:74
+#: core/ChangeLog.qml:83
 msgctxt "ChangeLog|"
 msgid "Voices added for Ukrainian"
 msgstr "Ukrainske talefiler"
 
-#: core/ChangeLog.qml:75
+#: core/ChangeLog.qml:84
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option to list all the activities and start on a specific "
@@ -26908,7 +26971,7 @@ msgstr ""
 "Kommandolinje-val for å visa oversikt over aktivitetar og starta ein "
 "aktivitet direkte"
 
-#: core/ChangeLog.qml:82
+#: core/ChangeLog.qml:91
 msgctxt "ChangeLog|"
 msgid ""
 "Reduce the size of the packages for all platforms and of the external word "
@@ -26917,33 +26980,33 @@ msgstr ""
 "Redusert storleiken på program­pakkane (alle plattformer) og på den eksterne "
 "biletsamlinga"
 
-#: core/ChangeLog.qml:83
+#: core/ChangeLog.qml:92
 msgctxt "ChangeLog|"
 msgid "Improve images quality in several activities"
 msgstr "Forbetra biletkvaliteten i fleire aktivitetar"
 
-#: core/ChangeLog.qml:84
+#: core/ChangeLog.qml:93
 msgctxt "ChangeLog|"
 msgid "Fix some transitions in renewable_energy/watercycle on some platforms"
 msgstr ""
 "Retta feil i nokre overgangs­animasjonar i aktivitetane «Fornybar energi» og "
 "«Vasskrinsløpet»"
 
-#: core/ChangeLog.qml:85
+#: core/ChangeLog.qml:94
 msgctxt "ChangeLog|"
 msgid "Fix dead keys ignored on Linux for typing activities"
 msgstr ""
 "Retta problem med at dødtastar vart ignorerte i nokre skriveaktivitetar på "
 "Linux"
 
-#: core/ChangeLog.qml:86
+#: core/ChangeLog.qml:95
 msgctxt "ChangeLog|"
 msgid "Fix level reset when changing level manually in Logical associations"
 msgstr ""
 "Retta nullstilling av brettet når ein manuelt endra nivå i aktiviteten "
 "«Logiske samanhengar»"
 
-#: core/ChangeLog.qml:90
+#: core/ChangeLog.qml:99
 msgctxt "ChangeLog|"
 msgid ""
 "Fix Alphabet sequence, Even and odd numbers and Numbers in order activities"
@@ -26951,37 +27014,37 @@ msgstr ""
 "Retta feil i aktivitetane «Rekkjefølgja på bokstavane i alfabetet», «Partal "
 "og oddetal» og «Tal i rekkjefølgje»"
 
-#: core/ChangeLog.qml:94 core/ChangeLog.qml:102
+#: core/ChangeLog.qml:103 core/ChangeLog.qml:111
 msgctxt "ChangeLog|"
 msgid "Several bug fixes"
 msgstr "Fleire feilrettingar"
 
-#: core/ChangeLog.qml:96
+#: core/ChangeLog.qml:105
 msgctxt "ChangeLog|"
 msgid "Translation updated for Russian"
 msgstr "Oppdatert omsetjing for russisk"
 
-#: core/ChangeLog.qml:97
+#: core/ChangeLog.qml:106
 msgctxt "ChangeLog|"
 msgid "New voices for Norwegian Nynorsk"
 msgstr "Nynorske talefiler"
 
-#: core/ChangeLog.qml:101
+#: core/ChangeLog.qml:110
 msgctxt "ChangeLog|"
 msgid "Translations added for Breton, Czech and Macedonian"
 msgstr "Lagt til omsetjingar for bretonsk, tsjekkisk og makedonsk"
 
-#: core/ChangeLog.qml:106
+#: core/ChangeLog.qml:115
 msgctxt "ChangeLog|"
 msgid "Translation added for Azerbaijani"
 msgstr "Lagt til omsetjing for aserbajdsjansk"
 
-#: core/ChangeLog.qml:107
+#: core/ChangeLog.qml:116
 msgctxt "ChangeLog|"
 msgid "New maps and update of the maps for geography activities"
 msgstr "Nye kart og oppdaterte kart for geografiske aktivitetar"
 
-#: core/ChangeLog.qml:108
+#: core/ChangeLog.qml:117
 msgctxt "ChangeLog|"
 msgid ""
 "New dataset containing loops operations for programming maze, and make "
@@ -26990,64 +27053,64 @@ msgstr ""
 "Nytt datasett for lykkjer i programmerings­labyrinten, og gjort opplærings­"
 "bileta mogleg å omsetja"
 
-#: core/ChangeLog.qml:109
+#: core/ChangeLog.qml:118
 msgctxt "ChangeLog|"
 msgid ""
 "Addition of a level to teach voltage source loop in analog electricity "
 "activity"
 msgstr "Nytt brett for å læra om kortslutningar i analogteknikk-aktiviteten"
 
-#: core/ChangeLog.qml:119
+#: core/ChangeLog.qml:128
 msgctxt "ChangeLog|"
 msgid "New Activity Settings menu, with dataset selection"
 msgstr "Ny innstillingsmeny i aktivitetane, med val av datasett"
 
-#: core/ChangeLog.qml:125
+#: core/ChangeLog.qml:134
 msgctxt "ChangeLog|"
 msgid "New sub-categories to organize activities"
 msgstr "Nye organisering av aktivitetane, med underkategoriar"
 
-#: core/ChangeLog.qml:126
+#: core/ChangeLog.qml:135
 msgctxt "ChangeLog|"
 msgid "Translation added for Macedonian."
 msgstr "Lagt til omsetjing for makedonsk"
 
-#: core/ChangeLog.qml:127
+#: core/ChangeLog.qml:136
 msgctxt "ChangeLog|"
 msgid "New activities Programming Maze and Baby Tangram"
 msgstr "Nye aktivitetar: programmerings­labyrint og babytangram"
 
-#: core/ChangeLog.qml:128
+#: core/ChangeLog.qml:137
 msgctxt "ChangeLog|"
 msgid "New background music and volume settings."
 msgstr "Nye innstillingar for bakgrunnsmusikk og lydstyrke"
 
-#: core/ChangeLog.qml:129
+#: core/ChangeLog.qml:138
 msgctxt "ChangeLog|"
 msgid "New speed setting in several activities."
 msgstr "Ny fartsinnstilling i fleire aktivitetar"
 
-#: core/ChangeLog.qml:130
+#: core/ChangeLog.qml:139
 msgctxt "ChangeLog|"
 msgid "New option in chess to display captured pieces."
 msgstr "Nytt alternativ i sjakk­aktivitetane for å visa brikkene som er tekne"
 
-#: core/ChangeLog.qml:131
+#: core/ChangeLog.qml:140
 msgctxt "ChangeLog|"
 msgid "New images in Colors, Advanced colors and Target game."
 msgstr "Nye teikningar for fargar, avanserte fargar og målskivespelet"
 
-#: core/ChangeLog.qml:132
+#: core/ChangeLog.qml:141
 msgctxt "ChangeLog|"
 msgid "New voices for US English."
 msgstr "Nye talefiler for engelsk (amerikansk)"
 
-#: core/ChangeLog.qml:133 core/ChangeLog.qml:141
+#: core/ChangeLog.qml:142 core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Many little fixes and improvements."
 msgstr "Mange små rettingar og forbetringar"
 
-#: core/ChangeLog.qml:134
+#: core/ChangeLog.qml:143
 msgctxt "ChangeLog|"
 msgid ""
 "Translation updated for multiple languages (Breton, Brazilian Portuguese, "
@@ -27056,17 +27119,17 @@ msgstr ""
 "Oppdatert omsetjing for fleire språk (nynorsk, bretonsk, brasiliansk "
 "portugisisk, finsk, …)"
 
-#: core/ChangeLog.qml:135
+#: core/ChangeLog.qml:144
 msgctxt "ChangeLog|"
 msgid "Add Russian dataset for Click on letter activity."
 msgstr "Lagt til russisk datasett i «Trykk på ein bokstav»-aktiviteten"
 
-#: core/ChangeLog.qml:136
+#: core/ChangeLog.qml:145
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Dutch."
 msgstr "Språkaktiviteten er no tilgjengeleg på nederlandsk"
 
-#: core/ChangeLog.qml:137
+#: core/ChangeLog.qml:146
 msgctxt "ChangeLog|"
 msgid ""
 "Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in "
@@ -27075,18 +27138,18 @@ msgstr ""
 "Dei norske fylka Nord-Trøndelag og Sør-Trøndelag er slått saman til eitt i "
 "kartaktiviteten"
 
-#: core/ChangeLog.qml:138
+#: core/ChangeLog.qml:147
 msgctxt "ChangeLog|"
 msgid "Fix in braille activities where the cells start at 1, not 0."
 msgstr ""
 "Feilretting i punktskrift-aktiviteten, der cellene startar med 1, ikkje 0"
 
-#: core/ChangeLog.qml:139
+#: core/ChangeLog.qml:148
 msgctxt "ChangeLog|"
 msgid "Translation added for Basque, Hungarian and Malayalam."
 msgstr "Lagt til omsetjingar for baskisk, ungarsk og malayalam"
 
-#: core/ChangeLog.qml:140
+#: core/ChangeLog.qml:149
 msgctxt "ChangeLog|"
 msgid ""
 "Loading/saving of creations (Baby Wordprocessor, Balance Box and Piano "
@@ -27095,47 +27158,47 @@ msgstr ""
 "Kan no lagra og opna filer (enkel teksthandsamar, balanseøskje og "
 "pianokomponering)"
 
-#: core/ChangeLog.qml:141
+#: core/ChangeLog.qml:150
 msgctxt "ChangeLog|"
 msgid "Translations added for Scottish Gaelic."
 msgstr "Lagt til omsetjing for skotsk-gælisk"
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "License page added in configuration."
 msgstr "Lagt til lisensside i oppsettet"
 
-#: core/ChangeLog.qml:142
+#: core/ChangeLog.qml:151
 msgctxt "ChangeLog|"
 msgid "Multiple changes on layouts to improve the ergonomy."
 msgstr "Fleire utformingsendringar for betre ergonomi"
 
-#: core/ChangeLog.qml:143
+#: core/ChangeLog.qml:152
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in Polish, Swedish and Ukrainian."
 msgstr "Språkaktiviteten finst no òg på polsk, svensk og ukrainsk"
 
-#: core/ChangeLog.qml:144
+#: core/ChangeLog.qml:153
 msgctxt "ChangeLog|"
 msgid "Search feature."
 msgstr "Ein søkjefunksjon"
 
-#: core/ChangeLog.qml:145
+#: core/ChangeLog.qml:154
 msgctxt "ChangeLog|"
 msgid "A Changelog."
 msgstr "Ein endringslogg"
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "Many little fixes."
 msgstr "Mange små rettingar"
 
-#: core/ChangeLog.qml:146
+#: core/ChangeLog.qml:155
 msgctxt "ChangeLog|"
 msgid "Lang activity now available in French."
 msgstr "Språkaktiviteten finst no òg på fransk"
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Adding a loading overlay to let the user know that some actions are taking "
@@ -27144,7 +27207,7 @@ msgstr ""
 "Lagt til innlastingsbilete som viser at noko kan ta nokre sekund å fullføra "
 "(for eksempel innlasting av ein aktivitet)"
 
-#: core/ChangeLog.qml:147
+#: core/ChangeLog.qml:156
 msgctxt "ChangeLog|"
 msgid ""
 "Translations added for: Catalan (Valencian), Chinese Traditional, Finnish "
@@ -27153,12 +27216,12 @@ msgstr ""
 "Lagt til omsetjingar for katalansk, kinesisk (tradisjonell), finsk (92 % "
 "omsett), russisk (98 % omsett), slovakisk (92 % omsett) og tyrkisk"
 
-#: core/ChangeLog.qml:148
+#: core/ChangeLog.qml:157
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
 msgstr "Lagt til omsetjingar for slovensk, tysk og galisisk"
 
-#: core/ChangeLog.qml:202
+#: core/ChangeLog.qml:211
 #, qt-format
 msgctxt "ChangeLog|"
 msgid "Version %1:"
@@ -27842,6 +27905,28 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the letters by connecting the dots in the correct order."
+#~ msgstr "Teikn bokstavane ved å kopla saman prikkane i rett rekkjefølgje."
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "Draw the numbers by connecting the dots in the correct order."
+#~ msgstr "Teikn tala ved å kopla saman prikkane i rett rekkjefølgje."
+
+#, fuzzy
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ "Draw the picture by clicking on the points in the numerical sequence "
+#~ "order."
+#~ msgstr "Lag ei teikning ved å trykkja på tala i rett rekkjefølgje."
+
+#, fuzzy
+#~| msgctxt "Data|"
+#~| msgid "Subtractions with 1, 2 and 3."
+#~ msgctxt "Data|"
+#~ msgid "Solve subtraction, 2 digits, 2 lines."
+#~ msgstr "Subtraksjon med 1, 2 og 3"
 
 #~ msgctxt "Balancebox|"
 #~ msgid "Ok"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-10 00:36+0000\n"
+"POT-Creation-Date: 2024-12-13 02:28+0000\n"
 "PO-Revision-Date: 2024-04-22 16:04\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf6-trunk/messages/gcompris/gcompris_voices.pot\n"
-"X-Crowdin-File-ID: 53742\n"
+"X-Crowdin-File: /kf6-stable/messages/gcompris/gcompris_voices.pot\n"
+"X-Crowdin-File-ID: 56778\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -1204,15 +1204,15 @@ msgid ""
 msgstr "滑动汽车以腾出空间，这样红色的车就可以从箱子里出来了。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
-#: activities/vertical_addition/ActivityInfo.qml:17
+#: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
 msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
-#: activities/vertical_subtraction/ActivityInfo.qml:17
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
+#: activities/vertical_subtraction/ActivityInfo.qml:18
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
 msgstr ""

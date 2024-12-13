@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-10 00:36+0000\n"
+"POT-Creation-Date: 2024-12-13 02:28+0000\n"
 "PO-Revision-Date: 2024-12-10 12:28+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -1363,15 +1363,15 @@ msgstr ""
 "aparcamiento."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
-#: activities/vertical_addition/ActivityInfo.qml:17
+#: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
 msgstr "Resuelve la suma indicada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
-#: activities/vertical_subtraction/ActivityInfo.qml:17
-#: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
+#: activities/vertical_subtraction/ActivityInfo.qml:18
+#: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
 msgstr "Resuelve la resta indicada."
