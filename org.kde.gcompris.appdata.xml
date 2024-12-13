@@ -1239,6 +1239,7 @@
     <value key="KDE::supporters">[jdkiser](https://social.sdf.org/@jdkiser);fabacam;Michael Klingberg;[Gianmarco Gargiulo](https://mastodon.uno/@gianmarcogg03);nukke</value>
   </custom>
   <releases>
+    <release version="25.0" date="2025-01-30"/>
     <release version="4.3" date="2024-11-29"/>
     <release version="4.2" date="2024-09-20"/>
     <release version="4.1" date="2024-05-23"/>
