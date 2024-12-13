@@ -4814,17 +4814,12 @@ msgstr "能移动鼠标并精确点击在点上。"
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
-msgstr "按顺序点击每个绿点绘制图画。每选择一个点后，将出现下一个蓝色的点。"
+msgstr ""
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -18873,17 +18868,12 @@ msgstr ""
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
-msgstr "按顺序点击每个绿点绘制图画。每选择一个点后，将出现下一个蓝色的点。"
+msgstr ""
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -24917,24 +24907,24 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:69
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:69
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:164
+#: activities/vertical_subtraction/subtraction.js:166
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr ""
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:390
+#: activities/vertical_subtraction/VerticalSubtraction.qml:399
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr ""
@@ -25149,8 +25139,8 @@ msgstr "大量错误修复"
 #: core/ChangeLog.qml:33
 msgctxt "ChangeLog|"
 msgid ""
-"Automatic application of new language when changing in the menu (no need to "
-"restart GCompris)"
+"Automatic application of new language when changing it in the menu (no need "
+"to restart GCompris)"
 msgstr ""
 
 #: core/ChangeLog.qml:34
@@ -26100,11 +26090,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "按照正确的顺序把点连起来画出字母."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "按照正确的顺序把点连起来画出数字。"

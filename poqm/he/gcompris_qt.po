@@ -26086,18 +26086,18 @@ msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "חיסור עם 1, 2 ו־3."
 
-#: activities/vertical_subtraction/subtraction.js:69
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr ""
 
-#: activities/vertical_subtraction/subtraction.js:69
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:164
+#: activities/vertical_subtraction/subtraction.js:166
 #, fuzzy, qt-format
 #| msgctxt "BackgroundMusicList|"
 #| msgid "Title: %1"
@@ -26105,7 +26105,7 @@ msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "כותרת: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:390
+#: activities/vertical_subtraction/VerticalSubtraction.qml:399
 #, fuzzy
 #| msgctxt "Frieze|"
 #| msgid "I am Ready"
@@ -26340,8 +26340,8 @@ msgstr "הרבה תיקוני שגיאות"
 #: core/ChangeLog.qml:33
 msgctxt "ChangeLog|"
 msgid ""
-"Automatic application of new language when changing in the menu (no need to "
-"restart GCompris)"
+"Automatic application of new language when changing it in the menu (no need "
+"to restart GCompris)"
 msgstr ""
 
 #: core/ChangeLog.qml:34

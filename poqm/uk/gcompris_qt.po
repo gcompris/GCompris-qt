@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-12-10 16:05+0200\n"
+"PO-Revision-Date: 2024-12-12 11:23+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -5106,11 +5106,6 @@ msgstr "Можна рухати вказівник миші і клацати т
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5118,7 +5113,9 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Намалюйте малюнок, послідовно клацаючи на кожній крапці. Щойно буде вибрано "
-"крапку, на малюнку з'явиться наступна синя крапка."
+"крапку, на малюнку з'явиться наступна синя крапка. Ви можете натиснути і "
+"перетягувати лінію від однієї крапки до наступних або натискати кожну з "
+"крапок, одна за одною."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6730,6 +6727,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Намалюйте літери, з'єднуючи крапки у правильному порядку. Ви можете "
+"натиснути і перетягувати лінію від однієї крапки до наступних або натискати "
+"кожну з крапок, одна за одною."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6757,6 +6757,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Намалюйте цифри, з'єднуючи крапки у правильному порядку. Ви можете натиснути "
+"і перетягувати лінію від однієї крапки до наступних або натискати кожну з "
+"крапок, одна за одною."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -20031,19 +20034,15 @@ msgstr "Ознайомлення із послідовністю чисел."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Намалюйте малюнок, послідовно клацаючи на кожній крапці. Щойно буде вибрано "
-"крапку, на малюнку з'явиться наступна синя крапка."
+"Намалюйте малюнок, послідовно клацаючи на кожній крапці за числовою "
+"послідовністю. Ви можете натиснути і перетягувати лінію від однієї крапки до "
+"наступних або натискати кожну з крапок, одна за одною."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -26625,21 +26624,15 @@ msgstr "Знайдіть результат віднімання, 2 цифри, 
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Знайдіть результат віднімання, 4 цифри, 3 рядки."
+msgstr "Знайдіть результат віднімання, 4 або 5 цифр, 3 рядки."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 4 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Знайдіть результат віднімання, 4 цифри, 4 рядки."
+msgstr "Знайдіть результат віднімання, 4 або 5 цифр, 4 рядки."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
@@ -26657,85 +26650,64 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Знайдіть результат віднімання, 3 цифри, 2 рядки."
+msgstr "Знайдіть результат віднімання, 2 або 3 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Запишіть віднімання і знайдіть результат, 3 цифри, 2 рядки."
+msgstr "Запишіть віднімання і знайдіть результат, 2 або 3 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 2 digits, 3 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Запишіть віднімання і знайдіть результат, 2 цифри, 3 рядки."
+msgstr "Запишіть віднімання і знайдіть результат, 2 або 3 цифри, 3 рядки."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Знайдіть результат віднімання, 3 цифри, 2 рядки."
+msgstr "Знайдіть результат віднімання, 3 або 4 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Запишіть віднімання і знайдіть результат, 3 цифри, 2 рядки."
+msgstr "Запишіть віднімання і знайдіть результат, 3 або 4 цифри, 2 рядки."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Знайдіть результат віднімання, 4 цифри, 3 рядки."
+msgstr "Знайдіть результат віднімання, 3 або 4 цифри, 3 рядки."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Знайдіть результат віднімання, 4 цифри, 2 рядки."
+msgstr "Знайдіть результат віднімання, 4 або 5 цифр, 2 рядки."
 
-#: activities/vertical_subtraction/subtraction.js:69
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
 msgstr "Запис:"
 
-#: activities/vertical_subtraction/subtraction.js:69
+#: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
 msgstr "Розв'язок:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:164
+#: activities/vertical_subtraction/subtraction.js:166
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Розв'яжіть: %1"
 
-#: activities/vertical_subtraction/VerticalSubtraction.qml:390
+#: activities/vertical_subtraction/VerticalSubtraction.qml:399
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Готово"
@@ -26993,28 +26965,30 @@ msgid "Many bug fixes"
 msgstr "Багато виправлень вад"
 
 #: core/ChangeLog.qml:33
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "Automatic application of new language when changing in the menu (no need "
+#| "to restart GCompris)"
 msgctxt "ChangeLog|"
 msgid ""
-"Automatic application of new language when changing in the menu (no need to "
-"restart GCompris)"
+"Automatic application of new language when changing it in the menu (no need "
+"to restart GCompris)"
 msgstr ""
+"Автоматичне застосування нової мови при зміні у меню (не потрібно "
+"перезапускати GCompris)"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Додано екран вітання під час запуску"
 
 #: core/ChangeLog.qml:35
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Новий параметр командного рядка для показу списку усіх вправ та запуску "
-"специфічної вправи"
+"Новий параметр командного рядка для перемикання засобу обробки зображення (--"
+"renderer засіб_обробки)"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
