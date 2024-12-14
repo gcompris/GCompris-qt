@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-10-16 14:44+0200\n"
+"PO-Revision-Date: 2024-12-13 16:21+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -259,6 +259,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -2721,9 +2722,6 @@ msgstr ""
 "caricato alcun livello utente!"
 
 #: activities/balancebox/Balancebox.qml:72
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "OK"
@@ -5180,19 +5178,16 @@ msgstr "Saper muovere il mouse e fare clic, in modo preciso, su punti."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
-"Disegna l'immagine facendo clic su ogni punto in sequenza. Ogni volta che un "
-"punto viene selezionato, apparirà il punto blu successivo."
+"Disegna l'immagine facendo clic su ogni punto in sequenza. Ogni volta che "
+"selezioni un punto, appare quello blu successivo. Puoi fare clic e "
+"trascinare da un punto a quelli successivi, oppure fare clic su ogni punto "
+"uno dopo l'altro."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6793,6 +6788,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Disegna le lettere collegando i punti nell'ordine corretto. Puoi fare clic e "
+"trascinare da un punto a quelli successivi, oppure fare clic su ogni punto "
+"uno dopo l'altro."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6820,6 +6818,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Disegna i numeri collegando i punti nell'ordine corretto. Puoi fare clic e "
+"trascinare da un punto a quelli successivi, oppure fare clic su ogni punto "
+"uno dopo l'altro."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -20152,19 +20153,15 @@ msgstr "Impara la sequenza numerica."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Disegna l'immagine facendo clic su ogni punto in sequenza. Ogni volta che un "
-"punto viene selezionato, apparirà il punto blu successivo."
+"Disegna l'immagine facendo clic sui punti nell'ordine della sequenza "
+"numerica. Puoi fare clic e trascinare da un punto a quelli successivi, "
+"oppure fare clic su ogni punto uno dopo l'altro."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -24159,11 +24156,6 @@ msgstr ""
 "Seleziona strumenti e colori dai pannelli pieghevoli e disegna immagini."
 "<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Controlli da tastiera:"
-
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
@@ -25782,7 +25774,7 @@ msgid ""
 msgstr ""
 "3. Ricorda sempre questa frase per imparare la posizione dei pianeti, "
 "esamina la prima lettera di ogni parola - <b>M</b>entre <b>V</b>olavo <b>T</"
-"b>u <b>M</b>i <b>G</b>ettasti <b>S</b>u <b>U</b>n <b>N</b>ido.<br>"
+"b>u <b>M</b>i <b>G</b>ettasti <b>S</b>u <b>U</b>n <b>N</b>Ido.<br>"
 
 #: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
@@ -26569,40 +26561,28 @@ msgstr ""
 # Anche "Esercizi con l'addizione"
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Esercitati con l'addizione."
+msgstr "Addizione verticale"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Riproduci la torre."
+msgstr "Risolvi l'addizione data."
 
 # Anche "Esercizi con la sottrazione"
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Impara a condividere, esercitati con la divisione."
+msgstr "Impara a risolvere le addizioni verticali."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tavola dell'addizione di 1."
+msgstr "Tavole dell'addizione."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26622,86 +26602,94 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"In un'addizione verticale, i numeri sono scritti uno sotto l'altro. Devono "
+"essere allineati correttamente, partendo dalla colonna sul lato destro. Il "
+"risultato è scritto sulla riga inferiore. Per risolvere l'addizione, inizia "
+"sommando i numeri della prima colonna (sul lato destro) e scrivi il "
+"risultato sulla riga inferiore della stessa colonna. Se il risultato "
+"fornisce un numero a due cifre, scrivi solo la cifra delle unità sul "
+"risultato e aggiungi la cifra delle decine accanto al numero in alto della "
+"colonna successiva: questo è chiamato riporto. Quindi somma i numeri della "
+"colonna successiva, incluso il numero del riporto, e ripeti il ​​processo fino "
+"al termine dell'operazione. Una volta trovato il risultato, fai clic sul "
+"pulsante OK per convalidare la tua risposta. In alcuni livelli, dovrai "
+"scrivere l'operazione data prima di risolverla; in questo caso, fai clic sul "
+"pulsante Pronto quando l'operazione è scritta correttamente e quindi "
+"risolvila."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Risolvi l'addizione, 2 cifre, 2 righe, senza riporto."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Risolvi l'addizione, 4 cifre, 3 righe."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Risolvi l'addizione, 4 cifre, 4 righe."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Scrivi la tua addizione e risolvila."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Scrivi e risolvi l'addizione, 2 cifre, 2 righe, senza riporto."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Risolvi l'addizione, 2 cifre, 2 righe."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Scrivi e risolvi l'addizione, 2 cifre, 2 righe."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Scrivi e risolvi l'addizione, 2 cifre, 3 righe."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Risolvi l'addizione, 3 cifre, 2 righe."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Scrivi e risolvi l'addizione, 3 cifre, 2 righe."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Risolvi l'addizione, 3 cifre, 3 righe."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Risolvi l'addizione, 4 cifre, 2 righe."
 
 # Anche "Esercizi con la sottrazione"
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Esercitati con la sottrazione."
+msgstr "Sottrazione verticale"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Scegli le istruzioni"
+msgstr "Risolvi la sottrazione data."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26710,16 +26698,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Impara a risolvere le sottrazioni verticali, con il metodo del prestito "
+"tramite raggruppamento."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tavola della sottrazione di 1."
+msgstr "Tavole della sottrazione."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -26747,145 +26734,129 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"In una sottrazione verticale, i numeri sono scritti uno sotto l'altro. "
+"Devono essere allineati correttamente, partendo dalla colonna sul lato "
+"destro. Il numero in alto è chiamato minuendo: è la quantità da cui stiamo "
+"iniziando, da cui un altro numero viene sottratto per ottenere la "
+"differenza. Il numero sotto è chiamato sottraendo: è la quantità da "
+"sottrarre dal minuendo per ottenere la differenza. Il risultato è scritto "
+"sulla riga inferiore. Per risolvere la sottrazione, inizia sottraendo il "
+"numero in basso della prima colonna dal numero in alto della prima colonna "
+"(sul lato destro) e scrivi il risultato sulla riga inferiore della stessa "
+"colonna. Se il numero in alto è più piccolo del numero in basso, puoi "
+"prendere in prestito dal minuendo sulla colonna successiva: ad esempio, se "
+"aggiungi 10 unità al numero in alto, devi rimuovere un'unità dal numero in "
+"alto della colonna successiva. Questo è chiamato metodo di prestito tramite "
+"raggruppamento. Per farlo in questa attività, fai clic sul rettangolo vuoto "
+"a sinistra del numero in alto, seleziona 1 e nella colonna successiva fai "
+"clic sul rettangolo vuoto a destra del numero in alto e seleziona -1. Poi "
+"scrivi il risultato della colonna sulla riga inferiore e fai lo stesso nelle "
+"colonne successive fino al termine dell'operazione. Una volta trovato il "
+"risultato, fai clic sul pulsante OK per convalidare la tua risposta. In "
+"alcuni livelli, dovrai scrivere l'operazione data prima di risolverla; in "
+"questo caso, fai clic sul pulsante Pronto quando l'operazione è scritta "
+"correttamente e poi risolvila."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Risolvi la sottrazione, 2 cifre, 2 righe, senza riporto."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Risolvi la sottrazione, 4 o 5 cifre, 3 righe."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Risolvi la sottrazione, 4 o 5 cifre, 4 righe."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Impara la tavola della sottrazione di 1."
+msgstr "Scrivi la tua sottrazione e risolvila."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Scrivi e risolvi la sottrazione, 2 cifre, 2 righe, senza riporto."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Risolvi la sottrazione, 2 o 3 cifre, 2 righe."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Scrivi e risolvi la sottrazione, 2 o 3 cifre, 2 righe."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Scrivi e risolvi la sottrazione, 2 o 3 cifre, 3 righe."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Risolvi la sottrazione, 3 o 4 cifre, 2 righe."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Scrivi e risolvi la sottrazione, 3 o 4 cifre, 2 righe."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Risolvi la sottrazione, 3 o 4 cifre, 3 righe."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Sottrazioni con 1, 2 e 3."
+msgstr "Risolvi la sottrazione, 4 o 5 cifre, 2 righe."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Scrivi:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Risolvi:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Titolo: %1"
+msgstr "Risolvi: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Sono pronto"
+msgstr "Pronto"
 
 # Anche "Esercizi con la sottrazione"
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Esercizi con l'operazione di sottrazione."
+msgstr "Sottrazione verticale (compensazione)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26894,6 +26865,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Impara a risolvere le sottrazioni verticali, con il metodo del prestito "
+"tramite raggruppamento."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26921,6 +26894,27 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"In una sottrazione verticale, i numeri sono scritti uno sotto l'altro. "
+"Devono essere allineati correttamente, partendo dalla colonna sul lato "
+"destro. Il numero in alto è chiamato minuendo: è l'importo da cui partiamo, "
+"da cui un altro numero viene sottratto per ottenere la differenza. Il numero "
+"in basso è chiamato sottraendo: è l'importo da sottrarre al minuendo per "
+"ottenere la differenza. Il risultato è scritto sulla riga inferiore. Per "
+"risolvere la sottrazione, inizia sottraendo il numero in basso della prima "
+"colonna dal numero in alto della prima colonna (sul lato destro) e scrivi il "
+"risultato sulla riga inferiore della stessa colonna. Se il numero in alto è "
+"più piccolo del numero in basso, puoi prendere in prestito dal sottraendo "
+"sulla colonna successiva: ad esempio, se aggiungi 10 unità al numero in "
+"alto, devi aggiungere un'unità al numero in basso della colonna successiva. "
+"Questo è chiamato metodo del prestito per compensazione. Per farlo in questa "
+"attività, fai clic sul rettangolo vuoto a sinistra del numero in alto, "
+"seleziona 1 e nella colonna successiva fai clic sul rettangolo vuoto a "
+"destra del numero in basso e seleziona +1. Poi scrivi il risultato della "
+"colonna sulla riga in basso e fai lo stesso nelle colonne successive fino al "
+"termine dell'operazione. Una volta trovato il risultato, fai clic sul "
+"pulsante OK per convalidare la tua risposta. In alcuni livelli, dovrai "
+"scrivere l'operazione data prima di risolverla; in questo caso, fai clic sul "
+"pulsante Pronto quando l'operazione è scritta correttamente e poi risolvila."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -27121,23 +27115,20 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Applicazione automatica della nuova lingua quando la si modifica nel menu "
+"(non è necessario riavviare GCompris)"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Aggiungi la schermata iniziale all'avvio"
 
 #: core/ChangeLog.qml:35
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Nuova opzione della riga di comando per elencare tutte le attività e "
-"avviarne una specifica"
+"Nuova opzione della riga di comando per cambiare il renderer (--renderer "
+"renderer)"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -27855,9 +27846,6 @@ msgstr "%1 eliminato correttamente!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
@@ -28158,6 +28146,10 @@ msgstr "Salta"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inizia"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Controlli da tastiera:"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Draw the letters by connecting the dots in the correct order."

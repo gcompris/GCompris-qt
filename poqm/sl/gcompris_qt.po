@@ -262,6 +262,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -23780,11 +23781,6 @@ msgid ""
 msgstr ""
 "Izberite orodja in barve iz zložljivih plošč in narišite slike.<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Nadzor tipkovnice:"
-
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
@@ -27692,6 +27688,10 @@ msgstr "Preskoči"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Zaženi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Nadzor tipkovnice:"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Draw the letters by connecting the dots in the correct order."

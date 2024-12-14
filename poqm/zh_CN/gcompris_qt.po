@@ -258,6 +258,7 @@ msgstr "您将看见不同颜色舞动的蝴蝶和一个问题。您必须找出
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -4814,17 +4815,12 @@ msgstr "能移动鼠标并精确点击在点上。"
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
-msgstr "按顺序点击每个绿点绘制图画。每选择一个点后，将出现下一个蓝色的点。"
+msgstr ""
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -18873,17 +18869,12 @@ msgstr ""
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
-msgstr "按顺序点击每个绿点绘制图画。每选择一个点后，将出现下一个蓝色的点。"
+msgstr ""
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -22440,11 +22431,6 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr ""
-
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:24
@@ -26100,11 +26086,3 @@ msgstr "跳过"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "开始"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "按照正确的顺序把点连起来画出字母."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "按照正确的顺序把点连起来画出数字。"

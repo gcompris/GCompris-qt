@@ -266,6 +266,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -5034,10 +5035,6 @@ msgstr "Kan flytta på musa og trykkja på små punkt."
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -19949,10 +19946,6 @@ msgstr "Læra om vasskrinsløpet."
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
@@ -23950,12 +23943,6 @@ msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:23
-#, fuzzy
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "Tastar:"
-
 #: activities/sketch/ActivityInfo.qml:24
 #, fuzzy
 msgctxt "ActivityInfo|"
@@ -26356,8 +26343,6 @@ msgstr "Øva på å leggja til."
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
 msgstr "Løys kalkudoku-oppgåva."
@@ -26372,8 +26357,6 @@ msgstr "Øva på å dela tal."
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
 msgstr "Addisjon med talet 1"
@@ -26460,8 +26443,6 @@ msgstr ""
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
 msgstr "Øva på å trekkja frå."
@@ -26470,8 +26451,6 @@ msgstr "Øva på å trekkja frå."
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 #, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
 msgstr "Vel instruksjonar"
@@ -26488,8 +26467,6 @@ msgstr ""
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
 msgstr "Subtraksjon med talet 1"
@@ -26530,8 +26507,6 @@ msgstr ""
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26539,8 +26514,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26548,8 +26521,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
 msgstr "Lær å trekkja frå talet 1"
@@ -26563,8 +26534,6 @@ msgstr ""
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26572,8 +26541,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26581,8 +26548,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26590,8 +26555,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26599,8 +26562,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26608,8 +26569,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26617,8 +26576,6 @@ msgstr "Subtraksjon med 1, 2 og 3"
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
 #, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
 msgstr "Subtraksjon med 1, 2 og 3"
@@ -26636,16 +26593,12 @@ msgstr ""
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
 #, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
 msgctxt "subtraction|"
 msgid "Solve: %1"
 msgstr "Tittel: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
 #, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Eg er klar"
@@ -26653,8 +26606,6 @@ msgstr "Eg er klar"
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
 msgstr "Øv på å trekkja frå."
@@ -26898,10 +26849,6 @@ msgstr ""
 
 #: core/ChangeLog.qml:35
 #, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
@@ -27906,32 +27853,7 @@ msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
 
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "Teikn bokstavane ved å kopla saman prikkane i rett rekkjefølgje."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "Teikn tala ved å kopla saman prikkane i rett rekkjefølgje."
-
 #, fuzzy
 #~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Draw the picture by clicking on the points in the numerical sequence "
-#~ "order."
-#~ msgstr "Lag ei teikning ved å trykkja på tala i rett rekkjefølgje."
-
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Subtractions with 1, 2 and 3."
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Subtraksjon med 1, 2 og 3"
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "OK"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "OK"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "Tastar:"

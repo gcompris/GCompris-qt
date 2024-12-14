@@ -256,6 +256,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -21958,11 +21959,6 @@ msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Controlos de claviero:"
-
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
@@ -25627,6 +25623,10 @@ msgstr "Salta"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Initia"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Controlos de claviero:"
 
 #~ msgctxt "Balancebox|"
 #~ msgid "Ok"
