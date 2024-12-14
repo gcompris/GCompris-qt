@@ -1,31 +1,32 @@
+# Sanskrit translations for gcompris package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the gcompris package.
+# Kali <EMAIL@ADDRESS>, 2024.
 #
-# SPDX-FileCopyrightText: 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Vincenzo Reale <smart2128vr@gmail.com>
 msgid ""
 msgstr ""
-"Project-Id-Version: gcompris_voices\n"
+"Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:37+0000\n"
-"PO-Revision-Date: 2024-12-10 17:51+0100\n"
-"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
-"Language-Team: Italian <kde-i18n-it@kde.org>\n"
-"Language: it\n"
+"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"Last-Translator: Kali <EMAIL@ADDRESS>\n"
+"Language-Team: Sanskrit\n"
+"Language: sa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 24.08.3\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the missing numbers."
-msgstr "Trova i numeri mancanti."
+msgstr "लुप्तसङ्ख्याः ज्ञातव्याः।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "advanced_colors"
 #: activities/advanced_colors/ActivityInfo.qml:18
 #, kde-format
 msgid "click on the required color"
-msgstr "fai clic sul colore richiesto"
+msgstr "आवश्यकं वर्णं क्लिक् कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_by"
 #: activities/algebra_by/ActivityInfo.qml:18
@@ -33,9 +34,7 @@ msgstr "fai clic sul colore richiesto"
 msgid ""
 "Multiply the two numbers together and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
-"Moltiplica i due numeri tra di loro e digita la tua risposta prima che il "
-"pallone atterri in acqua"
+msgstr "द्वयोः सङ्ख्यायोः एकत्र गुणनं कृत्वा गुब्बारेण जले अवतरितुं पूर्वं स्वस्य उत्तरं टङ्कयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_div"
 #: activities/algebra_div/ActivityInfo.qml:18
@@ -43,9 +42,7 @@ msgstr ""
 msgid ""
 "Find the result of the division and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
-"Trova il risultato della divisione e digita la tua risposta prima che il "
-"pallone atterri in acqua"
+msgstr "विभागस्य परिणामं अन्विष्य गुब्बारेण जले अवतरितुं पूर्वं स्वस्य उत्तरं टङ्कयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_minus"
 #: activities/algebra_minus/ActivityInfo.qml:18
@@ -53,9 +50,7 @@ msgstr ""
 msgid ""
 "Subtract the two numbers and type in your answer before the balloon lands in "
 "the water"
-msgstr ""
-"Sottrai i due numeri e digita la tua risposta prima che il pallone atterri "
-"in acqua"
+msgstr "सङ्ख्याद्वयं हृत्वा गुब्बारेण जले अवतरितुं पूर्वं स्वस्य उत्तरं टङ्कयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algebra_plus"
 #: activities/algebra_plus/ActivityInfo.qml:18
@@ -63,9 +58,7 @@ msgstr ""
 msgid ""
 "Add the two numbers together and type in your answer before the balloon "
 "lands in the water"
-msgstr ""
-"Somma i due numeri e digita la risposta prima che il pallone atterri "
-"nell'acqua"
+msgstr "सङ्ख्याद्वयं एकत्र योजयित्वा गुब्बारेण जले अवतरितुं पूर्वं स्वस्य उत्तरं टङ्कयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "algorithm"
 #: activities/algorithm/ActivityInfo.qml:18
@@ -73,9 +66,7 @@ msgstr ""
 msgid ""
 "Click on the missing items on the table and follow the logical sequence "
 "displayed above it."
-msgstr ""
-"Fai clic sugli elementi mancanti nella tabella e segui la sequenza logica "
-"visualizzata sopra."
+msgstr "सारणीयां लुप्तवस्तूनि नुत्वा तस्य उपरि प्रदर्शितं तार्किकं क्रमं अनुसृत्य ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
@@ -84,8 +75,8 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
 msgstr ""
-"Fai clic sulla colonna dove desideri che cada il tuo gettone e prova ad "
-"allineare 4 gettoni prima di Tux."
+"यत्र भवान् स्वस्य टोकनं पततु इति इच्छति तस्मिन् स्तम्भे क्लिक् कृत्वा Tux इत्यस्मात् पूर्वं 4 टोकनं "
+"संरेखयितुं प्रयतस्व ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -94,34 +85,33 @@ msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens to win."
 msgstr ""
-"Fai clic sulla colonna dove desideri che cada il tuo gettone e prova ad "
-"allineare 4 gettoni per vincere."
+"यत्र भवान् स्वस्य टोकनं पततु इति इच्छति तस्मिन् स्तम्भे क्लिक् कृत्वा विजयाय ४ टोकन् संरेखितुं "
+"प्रयतस्व ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "alphabet-sequence"
 #: activities/alphabet-sequence/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Move the helicopter to catch the clouds following the order of the alphabet."
-msgstr ""
-"Sposta l'elicottero per catturare le nuvole seguendo l'ordine dell'alfabeto."
+msgstr "वर्णमालाक्रमम् अनुसृत्य मेघान् ग्रहीतुं हेलिकॉप्टरं चालयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "analog_electricity"
 #: activities/analog_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how analog electricity works and create your own circuit."
-msgstr "Impara come funziona l'elettricità analogica e crea il tuo circuito."
+msgstr "एनालॉग् विद्युत् कथं कार्यं करोति इति ज्ञात्वा स्वकीयं परिपथं निर्मायताम् ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_keyboard"
 #: activities/baby_keyboard/ActivityInfo.qml:18
 #, kde-format
 msgid "Type any key on the keyboard and observe the result."
-msgstr "Premi un tasto sulla tastiera e osserva il risultato."
+msgstr "कीबोर्ड् मध्ये यत्किमपि कीलं टङ्कयित्वा परिणामं अवलोकयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_mouse"
 #: activities/baby_mouse/ActivityInfo.qml:17
 #, kde-format
 msgid "Move the mouse or touch the screen and observe the result."
-msgstr "Sposta il mouse o tocca lo schermo e osserva il risultato."
+msgstr "मूषकं चालयन्तु अथवा पटलं स्पृशन्तु तथा परिणामं अवलोकयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_tangram"
 #: activities/baby_tangram/ActivityInfo.qml:18
@@ -130,41 +120,39 @@ msgid ""
 "Move each puzzle piece, to obtain the completed puzzle. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Sposta ogni pezzo del puzzle, per ottenere il puzzle completo. Puoi "
-"modificare l'orientazione facendo clic sulle frecce."
+"प्रत्येकं प्रहेलिकाखण्डं चालयन्तु, सम्पूर्णं प्रहेलिकां प्राप्तुं। भवन्तः बाणान् नुत्वा तेषां अभिमुखीकरणं "
+"परिवर्तयितुं शक्नुवन्ति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "baby_wordprocessor"
 #: activities/baby_wordprocessor/ActivityInfo.qml:18
 #, kde-format
 msgid "A simplistic word processor to play around with the keyboard"
-msgstr "Un elaboratore di testi semplice per giocare con la tastiera"
+msgstr "कीबोर्डेन सह क्रीडितुं सरलः शब्दसंसाधकः"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babymatch"
 #: activities/babymatch/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop the objects matching the pictures"
-msgstr "Trascina e rilascia gli oggetti che corrispondono alle immagini"
+msgstr "चित्रैः सह सङ्गतानि वस्तूनि कर्षयन्तु, पातयन्तु च"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "babyshapes"
 #: activities/babyshapes/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects matching the shapes."
-msgstr "Trascina e rilascia gli oggetti che corrispondono alle forme."
+msgstr "आकारैः सह सङ्गतानि वस्तूनि कर्षयन्तु, पातयन्तु च ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "balancebox"
 #: activities/balancebox/ActivityInfo.qml:21
 #, kde-format
 msgid "Tilt the box to navigate the ball to the door."
-msgstr "Inclina la casella per indirizzare la palla verso la porta."
+msgstr "कन्दुकं द्वारं प्रति गन्तुं पेटीम् तिर्यक् कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ballcatch"
 #: activities/ballcatch/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Press the left and right arrows at the same time to send the ball straight on"
-msgstr ""
-"Premi le frecce direzionali sinistra e destra contemporaneamente, per fare "
-"in modo che la palla vada dritta"
+msgstr "कन्दुकं ऋजुं प्रेषयितुं वामदक्षिणबाणौ एकस्मिन् समये निपीडयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "bargame_2players"
@@ -175,9 +163,8 @@ msgid ""
 "Select the number of balls you wish to place in the holes and then click on "
 "the OK button. The winner is the one who hasn't put a ball in the red hole."
 msgstr ""
-"Seleziona il numero di bilie che desideri posizionare nei buchi e poi fai "
-"clic sul pulsante OK. Il vincitore è colui il quale non ha posizionato una "
-"bilia nel buco rosso."
+"छिद्रेषु यत् गोलकं स्थापयितुम् इच्छति तस्य संख्यां चित्वा ततः OK बटन् नुदतु । विजेता यः "
+"रक्तरन्ध्रे कन्दुकं न स्थापितवान्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "binary_bulb"
 #: activities/binary_bulb/ActivityInfo.qml:18
@@ -186,20 +173,20 @@ msgid ""
 "Turn on the right bulbs to represent the binary of the given decimal number. "
 "When you have achieved it, press OK"
 msgstr ""
-"Accendi le lampadine giuste per rappresentare il binario del numero decimale "
-"specificato. Una volta finito, premi OK"
+"दत्तस्य दशमलवसङ्ख्यायाः द्विचक्रीयस्य प्रतिनिधित्वार्थं दक्षिणबल्ब्स् चालू कुर्वन्तु । यदा भवता "
+"तत् प्राप्तं तदा OK नुदन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_alphabets"
 #: activities/braille_alphabets/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on Tux to start and then re-create the Braille cells."
-msgstr "Fai clic su Tux per avviare e quindi ricreare le celle Braille."
+msgstr "आरम्भार्थं Tux इत्यत्र नुदन्तु ततः ब्रेल-कोष्ठकानि पुनः रचयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "braille_fun"
 #: activities/braille_fun/ActivityInfo.qml:18
 #, kde-format
 msgid "Create the Braille cell for the letter."
-msgstr "Crea la cella Braille per la lettera."
+msgstr "अक्षरस्य कृते ब्रेल-कोष्ठकं रचयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calcudoku"
 #: activities/calcudoku/ActivityInfo.qml:17
@@ -209,16 +196,15 @@ msgid ""
 "only once in a row and in a column. The numbers in the cells of a cage must "
 "produce the given result when combined using the given operator."
 msgstr ""
-"Seleziona un numero e fai clic sulla sua posizione di destinazione. Ogni "
-"numero deve comparire una sola volta in una riga e in una colonna. I numeri "
-"nelle celle di una gabbia devono produrre il risultato dato se combinati "
-"utilizzando l'operatore specificato."
+"एकं सङ्ख्यां चित्वा तस्य लक्ष्यस्थानं नुदन्तु । प्रत्येकं सङ्ख्या एकवारं पङ्क्तौ स्तम्भे च अवश्यं दृश्यते "
+"। पञ्जरस्य कोष्ठकेषु सङ्ख्याः दत्तस्य संचालकस्य उपयोगेन संयोजिताः सति दत्तं परिणामं अवश्यं "
+"जनयन्ति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "calendar"
 #: activities/calendar/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the asked date on the calendar"
-msgstr "Seleziona la data richiesta nel calendario"
+msgstr "पञ्चाङ्गे पृष्टं तिथिं चिनोतु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "canal_lock"
 #: activities/canal_lock/ActivityInfo.qml:18
@@ -228,39 +214,39 @@ msgid ""
 "on the valves to cause either a drop or an increase in the water level, and "
 "click on the gates to open or close a path."
 msgstr ""
-"Sei responsabile per il blocco e devi aiutare Tux a passare attraverso. Fai "
-"clic sulle valvole per causare un calo o un aumento del livello dell'acqua e "
-"fai clic sulle chiuse per aprire o chiudere un percorso."
+"भवन्तः तालस्य उत्तरदायी सन्ति तथा च भवन्तः टक्स इत्यस्य माध्यमेन गन्तुं साहाय्यं कर्तुं "
+"अर्हन्ति। जलस्तरस्य पतनं वा वृद्धिः वा कर्तुं कपाटेषु क्लिक् कुर्वन्तु, मार्गं उद्घाटयितुं वा पिधातुं "
+"वा द्वारेषु क्लिक् कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "categorization"
 #: activities/categorization/ActivityInfo.qml:18
 #, kde-format
 msgid "Categorize the items into the correct group"
-msgstr "Categorizza gli elementi nel gruppo corretto"
+msgstr "वस्तूनि सम्यक् समूहे वर्गीकृत्य स्थापयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers"
 #: activities/checkers/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers against Tux"
-msgstr "gioca a scacchi con Tux"
+msgstr "टक्स विरुद्धं चेकर् क्रीडन्ति"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "checkers_2players"
 #: activities/checkers_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play checkers with your friend"
-msgstr "gioca a dama con il tuo amico"
+msgstr "मित्रेण सह चेकर् क्रीडन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess"
 #: activities/chess/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against Tux"
-msgstr "gioca a scacchi contro Tux"
+msgstr "टक्सविरुद्धं शतरंजं क्रीडन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_2players"
 #: activities/chess_2players/ActivityInfo.qml:18
 #, kde-format
 msgid "play chess against your friend"
-msgstr "gioca a scacchi contro il tuo amico"
+msgstr "मित्रस्य विरुद्धं शतरंजं क्रीडतु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chess_partyend"
 #: activities/chess_partyend/ActivityInfo.qml:18
@@ -269,15 +255,14 @@ msgid ""
 "Click on a white chess piece and green boxes will appear to indicate all the "
 "movements that piece can make. Try and get the black king into checkmate."
 msgstr ""
-"Fai clic su un pezzo bianco degli scacchi e delle caselle verdi appariranno "
-"per indicare tutti i movimenti che il pezzo può fare. Prova a ottenere lo "
-"scacco matto del re nero."
+"श्वेतशतरंजखण्डे क्लिक् कुर्वन्तु ततः हरितवर्णीयपेटिकाः दृश्यन्ते येन सः खण्डः कर्तुं शक्नोति इति "
+"सर्वाणि गतिः सूचयन्ति । प्रयतस्व कृष्णराजं चेकमेट्-मध्ये स्थापयतु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "chronos"
 #: activities/chronos/ActivityInfo.qml:22
 #, kde-format
 msgid "Slide the pictures into the order that tells the story"
-msgstr "Fai scorrere le immagini nell'ordine in cui racconta la storia"
+msgstr "चित्राणि तस्मिन् क्रमे स्खलन्तु यत् कथां कथयति"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter_up"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "click_on_letter"
@@ -287,56 +272,50 @@ msgstr "Fai scorrere le immagini nell'ordine in cui racconta la storia"
 msgid ""
 "Click on the required letter. You can listen to it again by clicking on the "
 "mouth."
-msgstr ""
-"Fare clic sulla lettera richiesta. Puoi ascoltare nuovamente facendo clic "
-"sulla bocca."
+msgstr "आवश्यकं पत्रं क्लिक् कुर्वन्तु। मुखं क्लिक् कृत्वा पुनः श्रोतुं शक्नुवन्ति।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickanddraw"
 #: activities/clickanddraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw"
-msgstr "Fai clic sui punti selezionati e disegna"
+msgstr "चयनितबिन्दून् नुत्वा आकर्षयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clickgame"
 #: activities/clickgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Catch the fish before they leave the aquarium."
-msgstr "Cattura i pesci prima che lascino l'acquario."
+msgstr "मत्स्यालयात् निर्गन्तुं पूर्वं मत्स्यान् गृह्यताम्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "clockgame"
 #: activities/clockgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag and drop the needles of the clock to display the required time"
-msgstr ""
-"Trascina e rilascia le lancette dell'orologio per visualizzare il tempo "
-"richiesto"
+msgstr "आवश्यकं समयं प्रदर्शयितुं घण्टायाः सुईः कर्षयन्तु, पातयन्तु च"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix"
 #: activities/color_mix/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the tubes of paint"
-msgstr "Abbina il colore spostando i cursori sui tubi di vernice"
+msgstr "रङ्गस्य नलिकेषु स्लाइडर्स् चालयित्वा वर्णस्य मेलनं कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "color_mix_light"
 #: activities/color_mix_light/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the color by moving the sliders on the torches"
-msgstr "Abbina il colore spostando i cursori sulle torce"
+msgstr "मशालेषु स्लाइडर्-इत्येतत् चालयित्वा वर्णस्य मेलनं कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "colors"
 #: activities/colors/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the right color"
-msgstr "Fai clic sul colore giusto"
+msgstr "सम्यक् वर्णं नुदन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "comparator"
 #: activities/comparator/ActivityInfo.qml:20
 #, kde-format
 msgid ""
 "Select the correct comparator sign for each pair of numbers in the list."
-msgstr ""
-"Seleziona il segno di comparazione corretto per ciascuna coppia di numeri "
-"nell'elenco."
+msgstr "सूचीस्थस्य प्रत्येकस्य संख्यायुग्मस्य कृते सम्यक् तुलनात्मकचिह्नं चिनोतु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "crane"
 #: activities/crane/ActivityInfo.qml:23
@@ -345,96 +324,93 @@ msgid ""
 " Click on each item in turn, in the blue frame, and move them to reproduce "
 "the pattern from the pink frame."
 msgstr ""
-" Fai clic su ogni elemento a turno, nel riquadro di sinistra, e spostali per "
-"riprodurre il modello del riquadro rosa."
+" प्रत्येकं द्रव्यं क्रमेण नुदन्तु, नीलवर्णीयचतुष्कोणे, गुलाबीचतुष्कोणात् प्रतिमानं पुनः प्रदर्शयितुं "
+"तान् चालयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "details"
 #: activities/details/ActivityInfo.qml:21
 #, kde-format
 msgid "Slide the images on their respective targets"
-msgstr "Fai scorrere le immagini sui loro rispettivi bersagli"
+msgstr "चित्राणि स्वस्वलक्ष्येषु स्लाइड् कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "digital_electricity"
 #: activities/digital_electricity/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn how digital electronics work and create your own circuit."
-msgstr "Impara come funziona l'elettricità digitale e crea il tuo circuito."
+msgstr "डिजिटल इलेक्ट्रॉनिक्स कथं कार्यं करोति इति ज्ञात्वा स्वकीयं परिपथं निर्मायताम्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawletters"
 #: activities/drawletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the selected points and draw the letter"
-msgstr "Fai clic sui punti selezionati e disegna la lettera"
+msgstr "चयनितबिन्दून् नुत्वा अक्षरं आकर्षयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "drawnumbers"
 #: activities/drawnumbers/ActivityInfo.qml:18
 #, kde-format
 msgid "Draw the numbers by connecting the dots in the correct order."
-msgstr "Disegna i numeri collegando i punti nell'ordine corretto."
+msgstr "बिन्दून् सम्यक् क्रमेण संयोजयित्वा संख्याः आकर्षयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "enumerate"
 #: activities/enumerate/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Count the elements by organizing them then type the answer on your keyboard."
-msgstr ""
-"Conta gli elementi organizzandoli, poi digita la risposta sulla tastiera."
+msgstr "तत्त्वानि व्यवस्थित्य गणयन्तु ततः उत्तरं स्वस्य कीबोर्ड् मध्ये टङ्कयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase"
 #: activities/erase/ActivityInfo.qml:18
 #, kde-format
 msgid " Clear the window with your sponge and discover the hidden picture."
-msgstr " Pulisci la finestra con la spugna e scopri l'immagine nascosta."
+msgstr " स्पञ्जेन खिडकीं स्वच्छं कृत्वा गुप्तं चित्रं आविष्करोतु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_2clic"
 #: activities/erase_2clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Double tap or double click on the bricks to discover the hidden picture"
-msgstr ""
-"Tocca due volte o fai doppio clic sui mattoni per scoprire l'immagine "
-"nascosta"
+msgstr "इष्टकानां उपरि द्विवारं ट्याप् कुर्वन्तु अथवा द्विवारं क्लिक् कृत्वा गुप्तचित्रं आविष्करोतु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "erase_clic"
 #: activities/erase_clic/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the transparent bricks and discover the hidden picture."
-msgstr "Fai clic o tocca i mattoni trasparenti e scopri l'immagine nascosta."
+msgstr "पारदर्शी इष्टकासु क्लिक् अथवा ट्याप् कृत्वा गुप्तचित्रं आविष्करोतु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_farm_animals"
 #: activities/explore_farm_animals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn about farmyard animals and the noises that they make."
-msgstr "Conosci gli animali da cortile e i versi che fanno."
+msgstr "कृषिक्षेत्रस्य पशूनां विषये, तेषां कोलाहलानां विषये च ज्ञातव्यम्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_monuments"
 #: activities/explore_monuments/ActivityInfo.qml:18
 #, kde-format
 msgid "Explore Monuments around the world."
-msgstr "Esplora i monumenti da tutto il mondo."
+msgstr "विश्वस्य स्मारकानाम् अन्वेषणं कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_animals"
 #: activities/explore_world_animals/ActivityInfo.qml:22
 #, kde-format
 msgid "Learn about world animals and locate them on a map."
-msgstr "Scopri gli animali del mondo e localizzali su una mappa."
+msgstr "विश्वस्य पशूनां विषये ज्ञात्वा तेषां स्थानं मानचित्रे ज्ञातव्यम्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "explore_world_music"
 #: activities/explore_world_music/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the suitcases to learn about music from around the world."
-msgstr "Fare clic sulle valigie per apprendere la musica da tutto il mondo."
+msgstr "विश्वस्य सङ्गीतस्य विषये ज्ञातुं सूटकेसेषु क्लिक् कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family"
 #: activities/family/ActivityInfo.qml:18
 #, kde-format
 msgid "Let us understand what to call our relatives"
-msgstr "Comprendiamo come chiamare i nostri parenti"
+msgstr "अस्माकं ज्ञातिजनाः किम् इति अवगच्छामः"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "family_find_relative"
 #: activities/family_find_relative/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a pair that defines the given relation"
-msgstr "Fai clic su una coppia che definisce la data relazione"
+msgstr "दत्तसम्बन्धं परिभाषयति इति युग्मं नुदन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fifteen"
 #: activities/fifteen/ActivityInfo.qml:18
@@ -444,68 +420,64 @@ msgid ""
 "release its space. You must put all the pieces in the correct order. The "
 "numbers on the pieces can help you."
 msgstr ""
-"Fare clic o trascina un elemento accanto a uno spazio libero, l'elemento si "
-"sposterà e lascerà il suo spazio. Devi mettere tutti i pezzi nell'ordine "
-"corretto. I numeri sui pezzi possono aiutarti."
+"मुक्तस्थानस्य पार्श्वे एकं तत्त्वं नुदन्तु अथवा कर्षयन्तु, तत्त्वं गत्वा स्वस्य स्थानं मुक्तं करिष्यति । "
+"भवता सर्वाणि खण्डानि सम्यक् क्रमेण स्थापयितव्यानि। खण्डेषु स्थापिताः सङ्ख्याः भवतः साहाय्यं "
+"कर्तुं शक्नुवन्ति।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "find_the_day"
 #: activities/find_the_day/ActivityInfo.qml:18
 #, kde-format
 msgid "Select the required day."
-msgstr "Seleziona il giorno richiesto."
+msgstr "आवश्यकं दिवसं चिनोतु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "followline"
 #: activities/followline/ActivityInfo.qml:18
 #, kde-format
 msgid " Move the mouse or your finger along the pipe to stop the fire."
-msgstr " Sposta il mouse o le tue dita lungo il tubo per fermare il fuoco."
+msgstr " अग्निं निवारयितुं मूषकं वा अङ्गुलीं वा नलिके चालयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "football"
 #: activities/football/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag a line from the ball to set the speed and direction of your kick."
-msgstr ""
-"Trascina una linea dalla palla per impostare la velocità e la direzione del "
-"tuo calcio."
+msgstr "भवतः पादप्रहारस्य वेगं दिशां च निर्धारयितुं कन्दुकात् रेखां कर्षयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_create"
 #: activities/fractions_create/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Select the appropriate number of parts as described in the instructions."
-msgstr ""
-"Seleziona il numero appropriato di parti come descritto nelle istruzioni."
+msgstr "निर्देशेषु यथा वर्णितं तथा भागानां समुचितसङ्ख्यां चिनोतु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "fractions_find"
 #: activities/fractions_find/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the correct numerator and denominator of the represented fraction"
-msgstr ""
-"Trova il numeratore e il denominatore corretti della frazione rappresentata"
+msgstr "प्रतिनिधित्वं कृतस्य भिन्नस्य सम्यक् गणकं हरं च ज्ञातव्यम्"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "frieze"
 #: activities/frieze/ActivityInfo.qml:17
 #, kde-format
 msgid "Reproduce and complete the frieze model."
-msgstr "Riproduci e completa il modello di fregio."
+msgstr "फ्रीज मॉडलस्य पुनरुत्पादनं कृत्वा सम्पूर्णं कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geo-country"
 #: activities/geo-country/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the regions to complete the country maps."
-msgstr "Trascina e rilascia le regioni per completare le mappe delle nazioni."
+msgstr "देशस्य मानचित्रं पूर्णं कर्तुं प्रदेशान् कर्षयन्तु, पातयन्तु च।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "geography"
 #: activities/geography/ActivityInfo.qml:22
 #, kde-format
 msgid "Drag and drop the objects to complete the map."
-msgstr "Trascina e rilascia gli oggetti per completare la mappa."
+msgstr "नक्शां पूर्णं कर्तुं वस्तुनि कर्षयन्तु, पातयन्तु च ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gletters"
 #: activities/gletters/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the letters on your keyboard before they reach the ground."
-msgstr "Digita le lettere sulla tastiera prima che tocchino terra."
+msgstr "अक्षराणि भूमौ प्राप्तुं पूर्वं भवतः कीबोर्ड् मध्ये टङ्कयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-equality"
 #: activities/gnumch-equality/ActivityInfo.qml:18
@@ -514,8 +486,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the required numbers and press "
 "the space bar to swallow them."
 msgstr ""
-"Guida il mangiatore di numeri con le frecce direzionali verso i numeri "
-"richiesti e premi la barra spaziatrice per ingoiarli."
+"बाणकुंजीभिः संख्याभक्षकं आवश्यकसङ्ख्यां प्रति मार्गदर्शनं कुर्वन्तु तथा च तान् निगलितुं स्पेसबारं "
+"नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-factors"
 #: activities/gnumch-factors/ActivityInfo.qml:18
@@ -524,8 +496,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the factors of the displayed "
 "number and press space to swallow them."
 msgstr ""
-"Guida il mangiatore di numeri con le frecce direzionali verso i fattori del "
-"numero visualizzato e premi la barra spaziatrice per ingoiarli."
+"बाणकुंजीभिः संख्याभक्षकं प्रदर्शितसङ्ख्यायाः कारकं प्रति मार्गदर्शनं कुर्वन्तु तथा च तान् निगलितुं "
+"स्थानं नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-inequality"
 #: activities/gnumch-inequality/ActivityInfo.qml:19
@@ -534,8 +506,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the numbers that are different "
 "from the ones displayed and press the space bar to swallow them."
 msgstr ""
-"Guida il mangiatore di numeri con le frecce direzionali verso i numeri "
-"diversi da quelli visualizzati e premi la barra spaziatrice per ingoiarli."
+"बाणकुंजीभिः संख्याभक्षकं प्रदर्शितानां सङ्ख्याभ्यः भिन्नानां सङ्ख्यानां मार्गदर्शनं कुर्वन्तु तथा च "
+"तान् निगलितुं स्थानपट्टिकां नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-multiples"
 #: activities/gnumch-multiples/ActivityInfo.qml:18
@@ -544,8 +516,8 @@ msgid ""
 "Guide the number eater with the arrow keys to the multiples of the displayed "
 "number and press space to swallow them."
 msgstr ""
-"Guida il mangiatore di numeri con le frecce direzionali verso i multipli del "
-"numero visualizzato e premi la barra spaziatrice per ingoiarli."
+"बाणकुंजीभिः संख्याभक्षकं प्रदर्शितसङ्ख्यायाः गुणनफलं प्रति मार्गदर्शनं कुर्वन्तु तथा च तान् "
+"निगलितुं स्थानं नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gnumch-primes"
 #: activities/gnumch-primes/ActivityInfo.qml:18
@@ -554,20 +526,20 @@ msgid ""
 "Guide the number eater with the arrow keys to the prime numbers and press "
 "space to swallow them."
 msgstr ""
-"Guida il mangiatore di numeri con le frecce direzionali verso i numeri primi "
-"e premi la barra spaziatrice per ingoiarli."
+"बाणकुंजीभिः संख्याभक्षकं अभाज्यसङ्ख्यां प्रति मार्गदर्शनं कुर्वन्तु तथा च तान् निगलितुं स्थानं नुदन्तु "
+"।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_read"
 #: activities/graduated_line_read/ActivityInfo.qml:17
 #, kde-format
 msgid "Find the value corresponding to the given spot on the graduated line."
-msgstr "Trova il valore corrispondente al punto indicato sulla linea graduata."
+msgstr "स्नातकरेखायां दत्तस्थानस्य अनुरूपं मूल्यं ज्ञातव्यम् ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graduated_line_use"
 #: activities/graduated_line_use/ActivityInfo.qml:17
 #, kde-format
 msgid "Place the given value on the graduated line."
-msgstr "Posiziona il valore indicato sulla linea graduata."
+msgstr "दत्तं मूल्यं स्नातकरेखायां स्थापयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_classes"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "grammar_analysis"
@@ -575,30 +547,26 @@ msgstr "Posiziona il valore indicato sulla linea graduata."
 #: activities/grammar_classes/ActivityInfo.qml:21
 #, kde-format
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr "Assegna le classi grammaticali richieste alle parole corrispondenti."
+msgstr "अनुरोधितव्याकरणवर्गान् तत्सम्बद्धेषु शब्देषु नियुक्तं कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "graph-coloring"
 #: activities/graph-coloring/ActivityInfo.qml:18
 #, kde-format
 msgid "Color the graph so that no two adjacent nodes have the same color."
-msgstr ""
-"Colora il grafico in modo che nessun due nodi adiacenti abbia lo stesso "
-"colore."
+msgstr "आलेखं वर्णयन्तु यत् समीपस्थयोः नोडयोः समानवर्णः न भवति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "gravity"
 #: activities/gravity/ActivityInfo.qml:22
 #, kde-format
 msgid ""
 "Move the spaceship to avoid hitting the planets and reach the space station."
-msgstr ""
-"Sposta l'astronave per evitare di colpire i pianeti e raggiungi la stazione "
-"spaziale."
+msgstr "ग्रहाणां प्रहारं न कर्तुं अन्तरिक्षयानं चालयन्तु, अन्तरिक्षस्थानकं प्राप्नुवन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guess24"
 #: activities/guess24/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the four numbers with given operators to find 24"
-msgstr "Usa i quattro numeri con gli operatori indicati per trovare 24"
+msgstr "२४ अन्वेष्टुं दत्तसञ्चालकैः सह चतुर्णां सङ्ख्यानां उपयोगं कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guesscount"
 #: activities/guesscount/ActivityInfo.qml:22
@@ -606,21 +574,19 @@ msgstr "Usa i quattro numeri con gli operatori indicati per trovare 24"
 msgid ""
 "Use the numbers and operations suggested to find the results proposed above."
 msgstr ""
-"Utilizza i numeri e le operazioni suggerite per trovare i risultati proposti "
-"sopra."
+"उपरि प्रस्तावितानि परिणामानि अन्वेष्टुं सुझातानां संख्यानां, क्रियाणां च उपयोगं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "guessnumber"
 #: activities/guessnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Find out the number by typing a number from the range proposed."
-msgstr ""
-"Scopri il numero digitando un numero compreso nell'intervallo proposto."
+msgstr "प्रस्तावितायाः परिधितः सङ्ख्यां टङ्कयित्वा सङ्ख्यां ज्ञातव्यम् ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hangman"
 #: activities/hangman/ActivityInfo.qml:21
 #, kde-format
 msgid "A word is hidden, you must discover it letter by letter."
-msgstr "Una parola è nascosta, devi scoprirla lettera per lettera."
+msgstr "एकः शब्दः गुप्तः अस्ति, भवता अक्षरशः तस्य आविष्कारः करणीयः।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi"
 #: activities/hanoi/ActivityInfo.qml:18
@@ -628,9 +594,7 @@ msgstr "Una parola è nascosta, devi scoprirla lettera per lettera."
 msgid ""
 "Rebuild the same tower in the empty area as the one you see on the right "
 "hand side."
-msgstr ""
-"Ricostruisci la stessa torre nell'area vuota come quella che vedi sul lato "
-"destro."
+msgstr "शून्यक्षेत्रे यत् गोपुरं दक्षिणपार्श्वे दृश्यते तत् एव गोपुरं पुनः निर्मायताम् ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hanoi_real"
 #: activities/hanoi_real/ActivityInfo.qml:18
@@ -639,8 +603,8 @@ msgid ""
 "Rebuild the model tower on the right support. Take care, no disc may be "
 "placed atop a smaller disc."
 msgstr ""
-"Ricostruisci il modello della torre sul supporto di destra. Attenzione, "
-"nessun disco può essere posizionato in cima a un disco più piccolo."
+"समीचीनसमर्थने आदर्शगोपुरस्य पुनर्निर्माणं कुर्वन्तु। सावधानं कुर्वन्तु, लघुतरचक्रस्य उपरि कोऽपि "
+"चक्रः न स्थाप्यते ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "hexagon"
 #: activities/hexagon/ActivityInfo.qml:18
@@ -648,29 +612,25 @@ msgstr ""
 msgid ""
 "Click on the hexagons to find the hidden object, the red zone indicates that "
 "you're close to it!"
-msgstr ""
-"Fai clic sugli esagoni per trovare l'oggetto nascosto, la zona rossa indica "
-"che sei vicino!"
+msgstr "गुप्तं वस्तु अन्वेष्टुं षट्कोणेषु क्लिक् कुर्वन्तु, रक्तक्षेत्रं सूचयति यत् भवान् तस्य समीपे अस्ति!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "imagename"
 #: activities/imagename/ActivityInfo.qml:21
 #, kde-format
 msgid "Drag and drop each item above its name."
-msgstr "Trascina e rilascia ogni elemento sopra il suo nome."
+msgstr "प्रत्येकं द्रव्यं तस्य नामस्य उपरि कर्षयन्तु, पातयन्तु च ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "instruments"
 #: activities/instruments/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the correct musical instrument."
-msgstr "Fai clic sullo strumento musicale corretto."
+msgstr "सम्यक् वाद्ययन्त्रे क्लिक् कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "land_safe"
 #: activities/land_safe/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the arrow keys to pilot your spaceship safely onto the landing pad."
-msgstr ""
-"Utilizza le frecce direzionali per pilotare la tua astronave in modo sicuro "
-"sulla piattaforma di atterraggio."
+msgstr "स्वस्य अन्तरिक्षयानं सुरक्षिततया अवरोहणपट्टिकायां चालयितुं बाणकुंजीनां उपयोगं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lang"
 #: activities/lang/ActivityInfo.qml:24
@@ -679,8 +639,7 @@ msgid ""
 "Select the language you want to learn then review the words before doing the "
 "exercises."
 msgstr ""
-"Seleziona la lingua che vuoi imparare e poi ripassa le parole prima di fare "
-"gli esercizi."
+"भवन्तः यत् भाषां ज्ञातुम् इच्छन्ति तत् चिनोतु ततः अभ्यासान् कर्तुं पूर्वं शब्दानां समीक्षां कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_additions"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_subtractions"
@@ -688,7 +647,7 @@ msgstr ""
 #: activities/learn_subtractions/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to give the operation's result."
-msgstr "Fai clic sui cerchi per fornire il risultato dell'operazione."
+msgstr "ऑपरेशनस्य परिणामं दातुं वृत्तेषु क्लिक् कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals"
 #: activities/learn_decimals/ActivityInfo.qml:17
@@ -697,9 +656,8 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the decimal number."
 msgstr ""
-"Trascina la freccia per selezionare una parte della barra e trascina la "
-"parte selezionata della barra nell'area vuota per rappresentare il numero "
-"decimale."
+"पट्टिकायाः भागं चिन्वितुं बाणं कर्षयन्तु, दशमलवसङ्ख्यां प्रतिनिधितुं पट्टिकायाः चयनितं भागं "
+"रिक्तक्षेत्रे कर्षयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_additions"
 #: activities/learn_decimals_additions/ActivityInfo.qml:17
@@ -708,22 +666,20 @@ msgid ""
 "Drag the arrow to select a part of the bar, and drag the selected part of "
 "the bar to the empty area to represent the result of the addition."
 msgstr ""
-"Trascina la freccia per selezionare una parte della barra e trascina la "
-"parte selezionata della barra nell'area vuota per rappresentare il risultato "
-"della somma."
+"पट्टिकायाः भागं चिन्वितुं बाणं कर्षयन्तु, पट्टिकायाः चयनितं भागं च रिक्तक्षेत्रे कर्षयन्तु यत् "
+"योजनस्य परिणामं प्रतिनिधितुं शक्नुवन्ति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_decimals_subtractions"
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:17
 #, kde-format
 msgid "Click on the squares to represent the result of the subtraction."
-msgstr ""
-"Fai clic sui quadrati per rappresentare il risultato della sottrazione."
+msgstr "घटनस्य परिणामं दर्शयितुं वर्गेषु क्लिक् कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_digits"
 #: activities/learn_digits/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the circles to match the given digit."
-msgstr "Fai clic sui cerchi per abbinare la cifra indicata."
+msgstr "दत्ताङ्कस्य सङ्गतिं कर्तुं वृत्तेषु नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "learn_quantities"
 #: activities/learn_quantities/ActivityInfo.qml:17
@@ -732,17 +688,15 @@ msgid ""
 "Drag the arrow to select a number of oranges, and drag the oranges to the "
 "empty area to represent the requested quantity."
 msgstr ""
-"Trascina la freccia per selezionare un numero di arance e trascina le arance "
-"nell'area vuota per rappresentare la quantità richiesta."
+"संतराणां संख्यां चिन्वितुं बाणं कर्षयन्तु, अनुरोधितमात्रायाः प्रतिनिधित्वार्थं च नारङ्गाः "
+"रिक्तक्षेत्रे कर्षयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "left_right_click"
 #: activities/left_right_click/ActivityInfo.qml:17
 #, kde-format
 msgid ""
 "Move animals to their homes using a left click or right click on your mouse."
-msgstr ""
-"Sposta gli animali nelle loro case usando un clic sinistro o un clic destro "
-"del mouse."
+msgstr "मूषकस्य वामक्लिक् अथवा राइट् क्लिक् इत्यस्य उपयोगेन पशून् स्वगृहं प्रति स्थानान्तरयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "leftright"
 #: activities/leftright/ActivityInfo.qml:18
@@ -751,33 +705,32 @@ msgid ""
 "Guess if the picture presents a left or right hand and click on the correct "
 "answer."
 msgstr ""
-"Indovina se l'immagine presenta una mano sinistra o destra e fai clic sulla "
-"risposta corretta."
+"अनुमानं कुरुत यत् चित्रं वामहस्तं वा दक्षिणहस्तं वा प्रस्तुतं करोति तर्हि सम्यक् उत्तरं क्लिक् "
+"कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "letter-in-word"
 #: activities/letter-in-word/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on all the words containing the wanted letter."
-msgstr "Fai clic su tutte le parole contenenti la lettera desiderata."
+msgstr "इष्टपत्रं युक्तेषु सर्वेषु शब्देषु क्लिक् कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "lightsoff"
 #: activities/lightsoff/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the lamps to turn them off."
-msgstr "Fare clic sulle lampade per spegnerle."
+msgstr "दीपाः निष्क्रियं कर्तुं दीपाः नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "louis-braille"
 #: activities/louis-braille/ActivityInfo.qml:18
 #, kde-format
 msgid "Discover the history of Louis Braille."
-msgstr "Scopri la storia di Louis Braille."
+msgstr "लुईस् ब्रेलस्य इतिहासं अन्वेषयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-minus"
 #: activities/magic-hat-minus/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the hat. How many stars are still hiding under the hat."
-msgstr ""
-"Fai clic sul cappello. Quante stelle sono ancora nascosto sotto il cappello."
+msgstr "टोपीं क्लिक् कुर्वन्तु। अद्यापि कति तारकाः टोप्याः अधः निगूढाः सन्ति।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "magic-hat-plus"
 #: activities/magic-hat-plus/ActivityInfo.qml:18
@@ -786,8 +739,8 @@ msgid ""
 "Count the number of stars hidden under the hat and then click on the stars "
 "to indicate their number."
 msgstr ""
-"Conta il numero di stelle nascoste sotto il cappello e poi fai clic sulle "
-"stelle per indicare il loro numero."
+"टोप्याः अधः निगूढानां ताराणां संख्यां गणयन्तु ततः ताराणां संख्यां सूचयितुं ताराणां उपरि क्लिक् "
+"कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "maze"
 #: activities/maze/ActivityInfo.qml:18
@@ -795,8 +748,8 @@ msgstr ""
 msgid ""
 "Use the arrows keys or swipe the touch screen to help Tux find his way out."
 msgstr ""
-"Utilizza le frecce direzionali o scorri sullo schermo tattile per aiutare "
-"Tux a uscire."
+"बाणकुंजीनां उपयोगं कुर्वन्तु अथवा स्पर्शपट्टिकां स्वाइप् कुर्वन्तु येन Tux इत्यस्य बहिः मार्गं ज्ञातुं "
+"साहाय्यं भवति।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazeinvisible"
 #: activities/mazeinvisible/ActivityInfo.qml:18
@@ -805,9 +758,8 @@ msgid ""
 "Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze "
 "icon or the space key to see the map."
 msgstr ""
-"Utilizza le frecce direzionali o scorri lo schermo tattile per far uscire "
-"Tux. Utilizza l'icona del labirinto o la barra spaziatrice per visualizzare "
-"la mappa."
+"Tux इत्यस्य बहिः मार्गदर्शनार्थं बाणकुंजीनां उपयोगं कुर्वन्तु अथवा स्पर्शपट्टिकां स्वाइप् कुर्वन्तु "
+"। नक्शां द्रष्टुं maze icon अथवा space key इत्यस्य उपयोगं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mazerelative"
 #: activities/mazerelative/ActivityInfo.qml:18
@@ -816,8 +768,8 @@ msgid ""
 "Help Tux find his way out. Left and right are used to turn and up to go "
 "forward."
 msgstr ""
-"Aiuta Tux a trovare la via d'uscita. Sinistra e a destra sono utilizzati per "
-"girare e su per andare avanti."
+"टक्सस्य बहिः गन्तुं मार्गं ज्ञातुं साहाय्यं कुर्वन्तु। वामदक्षिणयोः उपयोगः अग्रे गन्तुं ऊर्ध्वं च "
+"भवति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "melody"
 #: activities/melody/ActivityInfo.qml:18
@@ -825,9 +777,7 @@ msgstr ""
 msgid ""
 "Listen to the sound sequence played, and reproduce it by clicking on the "
 "xylophone's bars"
-msgstr ""
-"Ascolta la sequenza sonora riprodotta e riproducila facendo clic sulle barre "
-"dello xilofono"
+msgstr "वाद्यमानं ध्वनिक्रमं शृणुत, xylophone इत्यस्य पट्टिकासु क्लिक् कृत्वा पुनः प्रदर्शयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-case-association"
@@ -835,16 +785,14 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the upper case card with its lower case pair."
-msgstr "Abbina la carta con la maiuscola con la sua minuscola."
+msgstr "उच्चाक्षरपत्रस्य लघुवर्णयुग्मेन सह मेलनं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-enumerate"
 #: activities/memory-enumerate/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Match a number card with a card displaying the same number of butterflies."
-msgstr ""
-"Verifica il numero di una carta con una carta che visualizzi lo stesso "
-"numero di farfalle."
+msgstr "संख्यापत्रस्य समानसङ्ख्यायाः भृङ्गानाम् प्रदर्शनं कृत्वा पत्तकेन सह मेलनं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-minus"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-math-add-tux"
@@ -876,7 +824,7 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:18
 #, kde-format
 msgid "Turn over two cards to match the calculation with its answer."
-msgstr "Gira due carte per abbinare il calcolo con relativa risposta."
+msgstr "गणनायाः तस्य उत्तरेण सह मेलयितुम् द्वौ पत्तौ परिवर्तयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-sound-tux"
@@ -884,7 +832,7 @@ msgstr "Gira due carte per abbinare il calcolo con relativa risposta."
 #: activities/memory-sound/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on an audio card and find its double."
-msgstr "Fai clic su una scheda audio e trova il suo doppio."
+msgstr "एकस्मिन् ऑडियो कार्ड् उपरि क्लिक् कृत्वा तस्य द्विगुणं अन्वेष्टुम्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-tux"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory"
@@ -892,13 +840,13 @@ msgstr "Fai clic su una scheda audio e trova il suo doppio."
 #: activities/memory/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on a card and find its double."
-msgstr "Fai clic su una carta e trova il suo doppio."
+msgstr "एकं कार्डं क्लिक् कृत्वा तस्य द्विगुणं अन्वेष्टुम्।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "memory-wordnumber"
 #: activities/memory-wordnumber/ActivityInfo.qml:18
 #, kde-format
 msgid "Match the numeric with the word."
-msgstr "Abbina il numero alla parola."
+msgstr "संख्यात्मकं शब्देन सह मेलनं कुरुत।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mining"
 #: activities/mining/ActivityInfo.qml:18
@@ -908,9 +856,8 @@ msgid ""
 "cursor next to this sparkle and use the mousewheel or the zoom gesture to "
 "zoom in."
 msgstr ""
-"Guardando al muro di pietra, puoi vedere una scintilla da qualche parte. "
-"Spostati con il puntatore del mouse vicino a questa scintilla e usa la "
-"rotella del mouse o il gesto di zoom per ingrandire."
+"शिलाप्राचीरं पश्यन् कुत्रचित् स्फुरणं दृश्यते । अस्य स्पार्क्ल् इत्यस्य पार्श्वे मूषकस्य कर्सरं चालयन्तु "
+"तथा च जूम इन कर्तुं मूषकचक्रस्य अथवा जूम् इशारस्य उपयोगं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "missing-letter"
 #: activities/missing-letter/ActivityInfo.qml:19
@@ -918,15 +865,13 @@ msgstr ""
 msgid ""
 "Find the missing letter and complete the word by clicking on one of the "
 "letters proposed on the side."
-msgstr ""
-"Trova la lettera mancante e completa la parola facendo clic su una delle "
-"lettere proposte a lato."
+msgstr "लुप्तं अक्षरं अन्विष्य पार्श्वे प्रस्तावितेषु अक्षरेषु एकं नुत्वा शब्दं सम्पूर्णं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money"
 #: activities/money/ActivityInfo.qml:18
 #, kde-format
 msgid "Click or tap on the money to pay."
-msgstr "Fare clic o tocca i soldi per pagare."
+msgstr "दातुं धनं क्लिक् कुर्वन्तु अथवा ट्याप् कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back_cents"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_back"
@@ -934,27 +879,25 @@ msgstr "Fare clic o tocca i soldi per pagare."
 #: activities/money_back_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money at the bottom of the screen to give Tux his change."
-msgstr ""
-"Fai clic sui soldi nella parte inferiore dello schermo per dare Tux il suo "
-"resto."
+msgstr "Tux इत्यस्य परिवर्तनं दातुं पटलस्य अधः स्थितं धनं क्लिक् कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "money_cents"
 #: activities/money_cents/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the money to pay."
-msgstr "Fai clic sui soldi per pagare."
+msgstr "दातुं धनं क्लिक् कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "morse_code"
 #: activities/morse_code/ActivityInfo.qml:21
 #, kde-format
 msgid "Learn and practice the International Morse code"
-msgstr "Impara e fai pratica con il codice Morse internazionale"
+msgstr "अन्तर्राष्ट्रीयमोर्स् कोडं ज्ञात्वा अभ्यासं कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "mosaic"
 #: activities/mosaic/ActivityInfo.qml:18
 #, kde-format
 msgid "Put each item at the same place as in the given example."
-msgstr "Posiziona ogni elemento nello stesso posto come nell'esempio."
+msgstr "प्रत्येकं द्रव्यं दत्ते उदाहरणे यथा भवति तथा तस्मिन् एव स्थाने स्थापयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris"
 #: activities/nine_men_morris/ActivityInfo.qml:18
@@ -963,8 +906,8 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all "
 "Tux's pieces."
 msgstr ""
-"Fai clic sul punto dove desideri posizionare il pezzo e prova a prendere "
-"tutti i pezzi di Tux."
+"यत्र भवान् स्वस्य खण्डं स्थापयितुम् इच्छति तस्मिन् बिन्दौ क्लिक् कृत्वा Tux इत्यस्य सर्वाणि "
+"खण्डानि ग्रहीतुं प्रयतस्व ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "nine_men_morris_2players"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:18
@@ -973,20 +916,20 @@ msgid ""
 "Click on the dot where you wish to place your piece and try to take all your "
 "friend's pieces."
 msgstr ""
-"Fai clic sul punto dove desideri posizionare la pedina e tenta di catturare "
-"tutte le pedine del tuo amico."
+"यत्र भवन्तः स्वस्य खण्डं स्थापयितुम् इच्छन्ति तस्मिन् बिन्दौ क्लिक् कृत्वा मित्रस्य सर्वाणि "
+"खण्डानि ग्रहीतुं प्रयतन्ते ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "note_names"
 #: activities/note_names/ActivityInfo.qml:21
 #, kde-format
 msgid "Identify the note and press the correct piano key"
-msgstr "Identifica le note e premi il tasto corretto del pianoforte"
+msgstr "स्वरं चित्वा सम्यक् पियानो कीलं नुदन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "number_sequence"
 #: activities/number_sequence/ActivityInfo.qml:18
 #, kde-format
 msgid "Draw the picture by touching the numbers in ascending order."
-msgstr "Disegna l'immagine toccando ogni numero in ordine crescente."
+msgstr "आरोहणक्रमेण संख्यानां स्पर्शं कृत्वा चित्रं आकर्षयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "numbers-odd-even"
 #: activities/numbers-odd-even/ActivityInfo.qml:18
@@ -994,33 +937,31 @@ msgstr "Disegna l'immagine toccando ogni numero in ordine crescente."
 msgid ""
 "Move the helicopter to catch the clouds having even or odd numbers, in the "
 "shown order."
-msgstr ""
-"Sposta l'elicottero per catturare le nuvole con i numeri pari e dispari, "
-"nell'ordine mostrato."
+msgstr "समं विषमसंख्यायुक्तं वा मेघं ग्रहीतुं हेलिकॉप्टरं चालयन्तु, दर्शितक्रमेण।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_alphabets"
 #: activities/ordering_alphabets/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the letters in the correct order."
-msgstr "Disponi le lettere nell'ordine corretto."
+msgstr "अक्षराणि सम्यक् क्रमेण व्यवस्थितानि कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_chronology"
 #: activities/ordering_chronology/ActivityInfo.qml:24
 #, kde-format
 msgid "Arrange the given events in their chronological order."
-msgstr "Disponi gli eventi dati nel loro ordine cronologico."
+msgstr "दत्तानां घटनानां कालक्रमेण व्यवस्थापयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_numbers"
 #: activities/ordering_numbers/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the numbers in the correct order."
-msgstr "Disponi i numeri nell'ordine corretto."
+msgstr "संख्याः सम्यक् क्रमेण व्यवस्थापयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "ordering_sentences"
 #: activities/ordering_sentences/ActivityInfo.qml:23
 #, kde-format
 msgid "Arrange the given words to form a meaningful sentence."
-msgstr "Disponi le parole date per formare una frase significativa."
+msgstr "दत्तशब्दान् सार्थकं वाक्यं निर्मातुं व्यवस्थापयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "oware"
@@ -1028,13 +969,13 @@ msgstr "Disponi le parole date per formare una frase significativa."
 #: activities/oware_2players/ActivityInfo.qml:17
 #, kde-format
 msgid "Capture at least 25 seeds to win the game"
-msgstr "Cattura almeno 25 semi per vincere il gioco"
+msgstr "क्रीडायां विजयं प्राप्तुं न्यूनातिन्यूनं २५ बीजानि गृह्यताम्"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "paintings"
 #: activities/paintings/ActivityInfo.qml:23
 #, kde-format
 msgid "Catch and drop each piece on the points."
-msgstr "Cattura e rilascia ogni pezzo sui punti."
+msgstr "प्रत्येकं खण्डं गृहीत्वा बिन्दुषु पातयन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_decoding_relative"
@@ -1044,9 +985,7 @@ msgstr "Cattura e rilascia ogni pezzo sui punti."
 msgid ""
 "Click on the grid squares following the given directions to help Tux reach "
 "the target."
-msgstr ""
-"Fai clic sui quadrati della griglia seguendo le direzioni fornite per "
-"aiutare Tux a raggiungere l'obiettivo."
+msgstr "दत्तनिर्देशान् अनुसृत्य जालवर्गेषु क्लिक् कुर्वन्तु येन Tux लक्ष्यं प्राप्तुं साहाय्यं भवति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "path_encoding_relative"
@@ -1054,22 +993,19 @@ msgstr ""
 #: activities/path_encoding_relative/ActivityInfo.qml:17
 #, kde-format
 msgid "Use the arrows to move Tux along the path and reach the target."
-msgstr ""
-"Usa le frecce direzionali per sposta Tux lungo il percorso e raggiungere "
-"l'obiettivo."
+msgstr "मार्गेण टक्सं चालयितुं लक्ष्यं प्राप्तुं च बाणानां उपयोगं कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "penalty"
 #: activities/penalty/ActivityInfo.qml:18
 #, kde-format
 msgid "Double click or double tap on the goal, in order to score."
-msgstr "Doppio clic o doppio tocco sulla porta, per segnare un gol."
+msgstr "लक्ष्यस्य उपरि द्विवारं क्लिक् कुर्वन्तु अथवा द्विवारं ट्याप् कुर्वन्तु, स्कोरं कर्तुं ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "photo_hunter"
 #: activities/photo_hunter/ActivityInfo.qml:18
 #, kde-format
 msgid "look at the two pictures carefully and click where you see a difference"
-msgstr ""
-"guarda attentamente le due immagini e fai clic dove vedi una differenza"
+msgstr "चित्रद्वयं सम्यक् पश्यन्तु यत्र भवन्तः भेदं पश्यन्ति तत्र क्लिक् कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "piano_composition"
 #: activities/piano_composition/ActivityInfo.qml:19
@@ -1078,8 +1014,7 @@ msgid ""
 "Learn to compose piano music using the octaves and the tools presented above "
 "the staff."
 msgstr ""
-"Scopri come comporre musica al pianoforte utilizzando le ottave e gli "
-"strumenti sopra il pentagramma."
+"सप्तकस्य, दण्डस्य उपरि प्रस्तुतानां साधनानां च उपयोगेन पियानोसङ्गीतस्य रचनां कर्तुं शिक्षन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "planegame"
 #: activities/planegame/ActivityInfo.qml:18
@@ -1087,45 +1022,38 @@ msgstr ""
 msgid ""
 "Move the helicopter with the arrow keys and catch the numbers in the clouds, "
 "in ascending order."
-msgstr ""
-"Sposta l'elicottero con le frecce direzionali e cattura il numero nelle "
-"nuvole, in ordine crescente."
+msgstr "बाणकुंजीभिः हेलिकॉप्टरं चालयित्वा मेघेषु सङ्ख्याः गृह्यताम्, आरोहणक्रमेण।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_piano"
 #: activities/play_piano/ActivityInfo.qml:22
 #, kde-format
 msgid "Click on the keyboard keys that match the notes that you see and hear"
-msgstr ""
-"Fai clic sui tasti della tastiera che corrispondono alle note che vedi e "
-"ascolti"
+msgstr "भवन्तः यत् टिप्पणं पश्यन्ति, शृण्वन्ति च तेषां सङ्गतिं कुर्वन्ति कीबोर्ड-कील-उपरि नुदन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "play_rhythm"
 #: activities/play_rhythm/ActivityInfo.qml:22
 #, kde-format
 msgid "Click the drum to recreate the rhythm"
-msgstr "Fai clic sul tamburo per ricreare il ritmo"
+msgstr "लयं पुनः निर्मातुं ढोलकं नुदन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "positions"
 #: activities/positions/ActivityInfo.qml:18
 #, kde-format
 msgid "Find the correct position"
-msgstr "Trova la posizione corretta"
+msgstr "सम्यक् स्थानं ज्ञातव्यम्"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "programmingMaze"
 #: activities/programmingMaze/ActivityInfo.qml:19
 #, kde-format
 msgid ""
 "Arrange the instructions and traverse the correct path to reach the fish."
-msgstr ""
-"Disponi le istruzioni e attraversa il percorso corretto per raggiungere il "
-"pesce."
+msgstr "निर्देशान् व्यवस्थित्य मत्स्यं प्राप्तुं सम्यक् मार्गं भ्रमन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "railroad"
 #: activities/railroad/ActivityInfo.qml:20
 #, kde-format
 msgid "Observe the train and then click on the items to set up a similar train"
-msgstr ""
-"Osserva il treno e poi fai clic sugli elementi per creare un treno simile"
+msgstr "रेलयानं अवलोकयन्तु ततः समानं रेलयानं स्थापयितुं वस्तूनि क्लिक् कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingh"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "readingv"
@@ -1133,29 +1061,26 @@ msgstr ""
 #: activities/readingv/ActivityInfo.qml:18
 #, kde-format
 msgid "Read a list of words and say if a given word is in it."
-msgstr "Leggi un elenco di parole e dici se una determinata parola è in esso."
+msgstr "शब्दानां सूचीं पठित्वा तस्मिन् दत्तः शब्दः अस्ति वा इति वदन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw"
 #: activities/redraw/ActivityInfo.qml:18
 #, kde-format
 msgid "Use the drawing tools to build an identical pattern on the right."
-msgstr ""
-"Utilizza gli strumenti di disegno per creare un modello identico a destra."
+msgstr "दक्षिणभागे समानं प्रतिरूपं निर्मातुं रेखाचित्रसाधनानाम् उपयोगं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "redraw_symmetrical"
 #: activities/redraw_symmetrical/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Use the drawing tools to reproduce symmetrically the pattern on the right."
-msgstr ""
-"Utilizza gli strumenti di disegno per riprodurre simmetricamente il modello "
-"a destra."
+msgstr "दक्षिणतः प्रतिरूपं सममितरूपेण पुनः प्रदर्शयितुं रेखाचित्रसाधनानाम् उपयोगं कुर्वन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "renewable_energy"
 #: activities/renewable_energy/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the different stages that go to make up the power supply."
-msgstr "Fai clic su varie fasi che compongono la fornitura elettrica."
+msgstr "विद्युत् आपूर्तिं निर्मातुं गच्छन्ति भिन्नाः चरणाः नुदन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "reversecount"
 #: activities/reversecount/ActivityInfo.qml:18
@@ -1164,15 +1089,14 @@ msgid ""
 "Click on the domino and validate your choice with the OK button to indicate "
 "the number of ice blocks Tux will have to follow to eat a fish."
 msgstr ""
-"Fai clic sul domino e conferma la scelta con il tasto OK per indicare il "
-"numero di blocchi di ghiaccio che Tux dovrà seguire per mangiare un pesce."
+"डोमिनो इत्यत्र क्लिक् कृत्वा OK बटनेन स्वस्य पसन्दस्य प्रमाणीकरणं कुर्वन्तु यत् टक्स इत्यनेन मत्स्यं "
+"खादितुम् अनुसरणं कर्तव्यं हिमखण्डानां संख्यां सूचयितुं शक्यते।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "roman_numerals"
 #: activities/roman_numerals/ActivityInfo.qml:18
 #, kde-format
 msgid "Learn and practice roman to arabic numerals conversion"
-msgstr ""
-"Impara e fai pratica con la conversione dei numeri romanzi in numeri arabi"
+msgstr "रोमनतः अरबीसंख्यापर्यन्तं परिवर्तनं शिक्षन्तु अभ्यासं च कुर्वन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "scalesboard_weight_avoirdupois"
@@ -1182,7 +1106,7 @@ msgstr ""
 #: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:18
 #, kde-format
 msgid "Drag the weights up to balance the scales."
-msgstr "Trascina i pesi per equilibrare la bilancia."
+msgstr "तराजूनां सन्तुलनार्थं भारं उपरि कर्षन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "share"
 #: activities/share/ActivityInfo.qml:18
@@ -1191,23 +1115,21 @@ msgid ""
 "Share the candies equally among the specified number of children and notice "
 "that there may be a rest left"
 msgstr ""
-"Condividi le caramelle equamente tra il numero specificato di bambini e nota "
-"che potrebbe esserci un resto"
+"निर्दिष्टसङ्ख्यायां बालकानां मध्ये मिष्टान्नानि समानरूपेण विभज्य विश्रामः अवशिष्टः भवेत् इति "
+"अवलोकयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "simplepaint"
 #: activities/simplepaint/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Select a color and paint the rectangles as you like to create a drawing."
-msgstr ""
-"Seleziona un colore e dipingi i rettangoli come preferisci per creare un "
-"disegno."
+msgstr "एकं वर्णं चित्वा यथा इच्छसि रेखाचित्रं निर्मातुम् इच्छति तथा आयतान् रङ्गयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr "Utilizza gli strumenti per disegnare immagini."
+msgstr "चित्राणि आकर्षयितुं साधनानां उपयोगं कुर्वन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1215,26 +1137,21 @@ msgstr "Utilizza gli strumenti per disegnare immagini."
 msgid ""
 "Count the number on the dice and type it on your keyboard before it reaches "
 "the ground."
-msgstr ""
-"Conta il numero sul dado e digitalo sulla tastiera prima che tocchi terra."
+msgstr "पासायां सङ्ख्यां गणयित्वा भूमौ प्राप्तुं पूर्वं स्वस्य कीबोर्ड् मध्ये टङ्कयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers2"
 #: activities/smallnumbers2/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Count the numbers on the dominoes then type the result on your keyboard."
-msgstr ""
-"Conta il numero di punti sulle tessere del domino e digita il risultato "
-"sulla tastiera."
+msgstr "डोमिनोस् इत्यत्र सङ्ख्याः गणयन्तु ततः स्वस्य कीबोर्ड् इत्यत्र परिणामं टङ्कयन्तु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "solar_system"
 #: activities/solar_system/ActivityInfo.qml:21
 #, kde-format
 msgid ""
 "Answer the questions presented and get a 100% correctness among the options."
-msgstr ""
-"Rispondi alle domande presentate e ottieni una correttezza del 100% tra le "
-"opzioni."
+msgstr "प्रस्तुतप्रश्नानां उत्तरं दत्त्वा विकल्पेषु शतप्रतिशतम् सम्यक्त्वं प्राप्नुवन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "submarine"
 #: activities/submarine/ActivityInfo.qml:18
@@ -1242,9 +1159,7 @@ msgstr ""
 msgid ""
 "Drive the submarine to the right end of the screen without colliding with "
 "any objects"
-msgstr ""
-"Guida il sottomarino all'estremità destra dello schermo senza entrare in "
-"collisione con alcun oggetto"
+msgstr "पनडुब्बीं पटलस्य दक्षिणान्तं यावत् किमपि वस्तुना सह संधर्षं न कृत्वा चालयन्तु"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sudoku"
 #: activities/sudoku/ActivityInfo.qml:18
@@ -1253,9 +1168,8 @@ msgid ""
 "Select a number or a symbol and click its target area. Each symbol must "
 "appear only once in a row, in a column and in a subregion if any."
 msgstr ""
-"Seleziona un numero o un simbolo e fai clic sulla sua area di destinazione. "
-"Ogni simbolo deve comparire una sola volta in una riga, in una colonna e in "
-"una sottoregione, se presente."
+"सङ्ख्यां वा चिह्नं वा चित्वा तस्य लक्ष्यक्षेत्रं नुदन्तु । प्रत्येकं चिह्नं पङ्क्तौ एकवारमेव, स्तम्भे, "
+"उपक्षेत्रे च यदि अस्ति तर्हि अवश्यं दृश्यते ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "superbrain"
 #: activities/superbrain/ActivityInfo.qml:18
@@ -1266,10 +1180,9 @@ msgid ""
 "framed in a white square means it's the correct colour, but in the wrong "
 "position."
 msgstr ""
-"Scopri la giusta combinazione di colori. Un punto incorniciato in una "
-"quadrato nero significa che hai trovato il colore corretto nella posizione "
-"corretta, un punto incorniciato un un quadrato bianco significa che è il "
-"colore corretto, ma nella posizione sbagliata."
+"वर्णानाम् सम्यक् संयोजनं ज्ञातव्यम्। कृष्णचतुष्कोणे फ्रेमकृतस्य बिन्दुस्य अर्थः अस्ति यत् भवान् "
+"समीचीनस्थाने सम्यक् वर्णं प्राप्तवान्, यदा तु श्वेतवर्गे फ्रेमकृतस्य बिन्दुस्य अर्थः अस्ति यत् सः "
+"सम्यक् वर्णः अस्ति, परन्तु गलतस्थाने"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tangram"
 #: activities/tangram/ActivityInfo.qml:18
@@ -1278,16 +1191,13 @@ msgid ""
 "Click on each object to obtain the same figure. You can change their "
 "orientation by clicking on the arrows."
 msgstr ""
-"Fai clic su ogni oggetto per ottenere la stessa figura. Puoi modificare "
-"l'orientamento facendo clic sulle frecce."
+"प्रत्येकं वस्तु नुदन्तु समानं आकृतिं प्राप्तुं । बाणान् नुत्वा तेषां अभिमुखीकरणं परिवर्तयितुं शक्नुवन्ति ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "target"
 #: activities/target/ActivityInfo.qml:18
 #, kde-format
 msgid "Click on the target to launch darts, then count your final score!"
-msgstr ""
-"Fai clic sul bersaglio per lanciare le freccette, poi conta il tuo punteggio "
-"finale!"
+msgstr "बाणानां प्रक्षेपणार्थं लक्ष्यं क्लिक् कुर्वन्तु, ततः स्वस्य अन्तिमस्कोरं गणयन्तु!"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_calculate"
 #: activities/tens_complement_calculate/ActivityInfo.qml:17
@@ -1297,9 +1207,8 @@ msgid ""
 "number of the same operation to swap their position. Then, select the result "
 "box to type the result."
 msgstr ""
-"Crea coppie di numeri uguali a dieci. Seleziona un numero, quindi seleziona "
-"un altro numero della stessa operazione per scambiare la loro posizione. "
-"Seleziona poi la casella dei risultati per digitare il risultato."
+"दशसदृशानि संख्यायुगलानि रचयन्तु। एकं सङ्ख्यां चिनोतु, ततः तेषां स्थानं स्वैप कर्तुं समानस्य "
+"क्रियायाः अन्यं सङ्ख्यां चिनोतु । ततः, परिणामं टङ्कयितुं परिणामपेटिकां चिनोतु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_find"
 #: activities/tens_complement_find/ActivityInfo.qml:17
@@ -1308,9 +1217,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"Crea coppie di numeri uguali a dieci. Seleziona un numero nell'elenco, "
-"quindi seleziona un punto vuoto di un'operazione per spostare lì il numero "
-"selezionato."
+"दशसदृशानि संख्यायुगलानि रचयन्तु। सूचीयां सङ्ख्यां चिनोतु, ततः चयनितसङ्ख्यां तत्र स्थानान्तरयितुं "
+"कस्यचित् ऑपरेशनस्य रिक्तस्थानं चिनोतु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_swap"
 #: activities/tens_complement_swap/ActivityInfo.qml:17
@@ -1319,8 +1227,8 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number, then select another "
 "number of the same operation to swap their position."
 msgstr ""
-"Crea coppie di numeri uguali a dieci. Seleziona un numero, quindi seleziona "
-"un altro numero della stessa operazione per scambiare la loro posizione."
+"दशसदृशानि संख्यायुगलानि रचयन्तु। एकं सङ्ख्यां चिनोतु, ततः तेषां स्थानं स्वैप कर्तुं समानस्य "
+"क्रियायाः अन्यं सङ्ख्यां चिनोतु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tens_complement_use"
 #: activities/tens_complement_use/ActivityInfo.qml:17
@@ -1330,9 +1238,8 @@ msgid ""
 "number in the list, then select an empty spot of an operation to move the "
 "selected number there."
 msgstr ""
-"Scomponi le operazioni per includere una coppia di numeri uguali a dieci. "
-"Seleziona un numero nell'elenco, quindi seleziona un punto vuoto di "
-"un'operazione per spostare lì il numero selezionato."
+"दशसमं संख्यायुगलं समावेशयितुं क्रियाणां विघटनं कुर्वन्तु । सूचीयां सङ्ख्यां चिनोतु, ततः "
+"चयनितसङ्ख्यां तत्र स्थानान्तरयितुं कस्यचित् क्रियायाः रिक्तस्थानं चिनोतु ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe_2players"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "tic_tac_toe"
@@ -1343,23 +1250,21 @@ msgid ""
 "Click on the square which you wish to mark and try to mark 3 consecutive "
 "squares before Tux."
 msgstr ""
-"Fai clic sul quadrato che desideri marcare e tenta di contrassegnare 3 "
-"quadrati consecutivi prima di Tux."
+"यस्य वर्गस्य चिह्नं कर्तुम् इच्छति तस्मिन् क्लिक् कृत्वा Tux इत्यस्मात् पूर्वं क्रमशः ३ वर्गान् "
+"चिह्नितुं प्रयतध्वम् ।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "traffic"
 #: activities/traffic/ActivityInfo.qml:18
 #, kde-format
 msgid ""
 "Slide the cars to make a space so that the red car can go out of the box."
-msgstr ""
-"Fai scorrere le auto per creare uno spazio in modo che la macchina rossa "
-"possa uscire dal garage."
+msgstr "एकं स्थानं निर्मातुं काराः स्खलन्तु येन रक्तः वाहनः पेटीतः बहिः गन्तुं शक्नोति।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_addition"
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr "Risolvi l'addizione data."
+msgstr "दत्तं योजकं समाधानं कुरुत।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1367,7 +1272,7 @@ msgstr "Risolvi l'addizione data."
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr "Risolvi la sottrazione data."
+msgstr "दत्तहरणस्य समाधानं कुरुत।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
@@ -1376,55 +1281,11 @@ msgid ""
 "Click on the various active elements that make up the water supply. Then "
 "press the shower button for Tux."
 msgstr ""
-"Fai clic sui vari elementi attivi che costituiscono la fornitura idrica. "
-"Quindi premi il pulsante della doccia per Tux."
+"जलप्रदायं निर्मायन्ते ये विविधाः सक्रियतत्त्वानि तेषां उपरि क्लिक् कुर्वन्तु । ततः Tux कृते "
+"shower बटनं नुदन्तु।"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "wordsgame"
 #: activities/wordsgame/ActivityInfo.qml:18
 #, kde-format
 msgid "Type the words on your keyboard before they reach the ground."
-msgstr "Digita le parole sulla tastiera prima che tocchino terra."
-
-#~ msgid "put here in comment the text for the intro voice"
-#~ msgstr "metti qui in commento il testo per la voce introduttiva"
-
-#~ msgid "play checkers against the computer"
-#~ msgstr "gioca a dama contro il computer"
-
-#~ msgid ""
-#~ "Drag the arrow to select a part of the bar then drop it in the empty area "
-#~ "to represent the decimal number."
-#~ msgstr ""
-#~ "Trascina la freccia per selezionare una parte della barra, quindi "
-#~ "rilasciala nell'area vuota per rappresentare il numero decimale."
-
-#~ msgid ""
-#~ "Arrange the alphabets in the correct order by placing an alphabet in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Disponi gli alfabeti nell'ordine corretto inserendo un alfabeto nella sua "
-#~ "posizione corretta"
-
-#~ msgid ""
-#~ "Arrange the numbers in the correct order by placing a number in its "
-#~ "correct position"
-#~ msgstr ""
-#~ "Disponi i numeri nell'ordine corretto inserendo un numero nella sua "
-#~ "posizione corretta"
-
-#~ msgid ""
-#~ "Change the planets' gravitational force by moving the sliders up and "
-#~ "down. Be careful not to crash Tux's spaceship."
-#~ msgstr ""
-#~ "Cambia la forza gravitazionale dei pianeti spostando i cursori verso "
-#~ "l'alto e verso il basso. Fai attenzione a non far schiantare l'astronave "
-#~ "di Tux."
-
-#~ msgid "Match the alphabet with its upper);"
-#~ msgstr "Trova la corrispondenza dell'alfabeto con la sua maiuscola);"
-
-#~ msgid ""
-#~ "Use the drawing tools to reproduce the right-hand side symmetrical figure."
-#~ msgstr ""
-#~ "Utilizza gli strumenti di disegno per riprodurre la figura simmetrica sul "
-#~ "lato destro."
+msgstr "शब्दान् भूमौ प्राप्तुं पूर्वं भवतः कीबोर्ड् मध्ये टङ्कयन्तु ।"

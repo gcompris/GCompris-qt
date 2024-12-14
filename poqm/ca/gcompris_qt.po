@@ -271,6 +271,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -24444,11 +24445,6 @@ msgstr ""
 "Selecciona eines i colors des dels plafons plegables i dibuixa imatges."
 "<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Controls del teclat:"
-
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
@@ -28450,6 +28446,10 @@ msgstr "Omet"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inicia"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Controls del teclat:"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Draw the letters by connecting the dots in the correct order."

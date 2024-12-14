@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-12 07:31+0100\n"
+"PO-Revision-Date: 2024-12-13 07:14+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -262,6 +262,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -23780,11 +23781,6 @@ msgid ""
 msgstr ""
 "Izberite orodja in barve iz zložljivih plošč in narišite slike.<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Nadzor tipkovnice:"
-
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
@@ -26667,17 +26663,12 @@ msgid "Many bug fixes"
 msgstr "Veliko popravljenih napak"
 
 #: core/ChangeLog.qml:33
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "Automatic application of new language when changing in the menu (no need "
-#| "to restart GCompris)"
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
-"Samodejna uporaba novega jezika ob spremembi v meniju (ni potrebe po "
+"Samodejna uporaba novega jezika, ko ga spremenite v meniju (ni potrebe po "
 "ponovnem zagonu GComprisa)"
 
 #: core/ChangeLog.qml:34
@@ -27697,6 +27688,10 @@ msgstr "Preskoči"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Zaženi"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Nadzor tipkovnice:"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Draw the letters by connecting the dots in the correct order."

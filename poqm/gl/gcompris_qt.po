@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-13 09:31+0100\n"
+"PO-Revision-Date: 2024-12-13 23:26+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -261,6 +261,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -1357,8 +1358,8 @@ msgid ""
 "You can use the arrow buttons to manually select the difficulty level. Tux "
 "will play better when you increase the level."
 msgstr ""
-"Podes usar as frechas para cambiar o nivel de dificultade. Canto máis alto "
-"sexa o nivel mellor xogará Tux."
+"Podes usar as frechas para seleccionar o nivel de dificultade. Canto máis "
+"alto sexa o nivel mellor xogará Tux."
 
 #: activities/align4/ActivityInfo.qml:26
 #: activities/align4_2players/ActivityInfo.qml:25
@@ -1758,8 +1759,8 @@ msgid ""
 "circuit."
 msgstr ""
 "O camiño que escolle a electricidade chámase circuíto. Todos os dispositivos "
-"electrónicos precisan dun circuíto para funcionar. Para conectar varios "
-"dispositivos e crear un circuíto úsanse cables."
+"electrónicos precisan dun circuíto pechado para funcionar. Para conectar "
+"varios dispositivos e crear un circuíto úsanse cables."
 
 #: activities/analog_electricity/TutorialDataset.qml:103
 msgctxt "TutorialDataset|"
@@ -1855,6 +1856,7 @@ msgstr ""
 "Un interruptor pode permitir ou impedir que corrente continúe por algunha "
 "ruta ou circuíto."
 
+# skip-rule: trasno-close
 #: activities/analog_electricity/TutorialDataset.qml:149
 msgctxt "TutorialDataset|"
 msgid "You can click on the switch to open and close it."
@@ -1962,7 +1964,7 @@ msgstr "Un reóstato serve para variar a resistencia nun circuíto."
 #: activities/analog_electricity/TutorialDataset.qml:210
 msgctxt "TutorialDataset|"
 msgid "You can change the rheostat value by dragging its slider."
-msgstr "Podes variar o valor do reóstato arrastrando o seu regulador."
+msgstr "Podes cambiar o valor do reóstato arrastrando o seu regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:211
 msgctxt "TutorialDataset|"
@@ -1971,7 +1973,7 @@ msgid ""
 "light intensity of the bulb can be changed while dragging the slider."
 msgstr ""
 "Conecta a lámpada ás terminais axeitadas do reóstato para que a intensidade "
-"da lámpada varíe ao mover o regulador."
+"da lámpada cambie ao mover o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:224
 msgctxt "TutorialDataset|"
@@ -1989,7 +1991,7 @@ msgid ""
 "slider cannot change the light intensity of the bulb."
 msgstr ""
 "Conecta a lámpada ás terminais axeitadas do reóstato para que a intensidade "
-"da lámpada non varíe ao mover o regulador."
+"da lámpada non cambie ao mover o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:238
 msgctxt "TutorialDataset|"
@@ -2000,7 +2002,7 @@ msgid ""
 msgstr ""
 "Conecta a lámpada ás terminais axeitadas do reóstato e move o regulador de "
 "xeito que a voltaxe da lámpada sexa de 10 V. Fíxate en que a intensidade da "
-"lámpada cambia segundo vas arrastrando o regulador."
+"lámpada varía segundo vas arrastrando o regulador."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
 msgctxt "TutorialDataset|"
@@ -2121,6 +2123,7 @@ msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen and observe the result."
 msgstr "Move o rato ou toca a pantalla táctil e observa o que pasa."
 
+# skip-rule: trasno-audio
 #. Help goal
 #: activities/baby_mouse/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -6017,6 +6020,7 @@ msgid ""
 msgstr ""
 "Podes desprazar a zona de traballo premendo unha zona baleira e arrastrándoa."
 
+# skip-rule: trasno-close
 #: activities/digital_electricity/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "You can click on a switch component to open and close it."
@@ -7197,7 +7201,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn about various monuments from around the world and remember their "
 "location."
-msgstr "Descubre monumentos de todo o mundo e lembra de onde son."
+msgstr "Descubre monumentos de todo o mundo e lembra a súa localización."
 
 #. Help prerequisite
 #: activities/explore_monuments/ActivityInfo.qml:22
@@ -10017,7 +10021,7 @@ msgstr "Coloca as rexións nos mapas de países."
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr "Aprende a localizar e colocar as rexións de países."
+msgstr "Aprende a atopar e colocar as rexións de países."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
@@ -10417,6 +10421,7 @@ msgctxt "board11_0|"
 msgid "Umbria"
 msgstr "Umbría"
 
+# skip-rule: trasno-check3_reverse
 #. Region of Italy: Marche
 #: activities/geo-country/resource/board/board11_0.qml:94
 msgctxt "board11_0|"
@@ -12817,7 +12822,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
-"Aprende a localizar e colocar os continentes e moitos países no mapa mundial."
+"Aprende a atopar e colocar os continentes e moitos países no mapa mundial."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
@@ -14515,6 +14520,7 @@ msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
 msgstr "Deixa a caixa baleira se ningunha categoría gramatical se corresponde."
 
+# skip-rule: trasno-tabulators_reverse
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -14838,6 +14844,7 @@ msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
 msgstr "Borrar ou Suprimir: cancelar a última operación"
 
+# skip-rule: trasno-tabulators_reverse
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Tabulation: switch between numbers and operators"
@@ -20514,7 +20521,7 @@ msgstr ""
 #: activities/oware/oware.js:107
 msgctxt "oware|"
 msgid "Invalid Move!"
-msgstr "Ese movemento non vale!"
+msgstr "Ese movemento non é válido!"
 
 #. Activity title
 #: activities/oware_2players/ActivityInfo.qml:14
@@ -23360,7 +23367,7 @@ msgid ""
 "boys/girls to the center, then drag pieces of candy to each child's "
 "rectangle."
 msgstr ""
-"Segue as instrucións que se mostran na pantalla: primeiro, arrastra o número "
+"Segue as instrucións que se amosan na pantalla: primeiro, arrastra o número "
 "de nenas e nenos indicado ao centro, e a continuación arrastra os doces ao "
 "rectángulo de cada persoa."
 
@@ -23912,11 +23919,6 @@ msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 "Selecciona ferramentas e cores nos paneis pregábeis e debuxa imaxes.<br><br>"
-
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Controis de teclado:"
 
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -25910,6 +25912,7 @@ msgstr ""
 "Desenvolve habilidades de visualización espacial, memorización de posicións, "
 "e reprodución de modelos."
 
+# skip-rule: trasno-check
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -25920,8 +25923,8 @@ msgid ""
 msgstr ""
 "Arrastra unha peza para movela. O botón de simetría aparece nos elementos "
 "que o permiten. Arrastra o botón de xirar ou ao redor da peza seleccionada "
-"para rotala. Bota un ollo á actividade «Quebracabezas para bebés» para unha "
-"mellor introdución a tangram."
+"para rotala. Olla a actividade «Quebracabezas para bebés» para unha mellor "
+"introdución a tangram."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -25958,8 +25961,8 @@ msgid ""
 "Enter the score with the keyboard."
 msgstr ""
 "Comproba a velocidade e a dirección do obxectivo e despois prémeo para "
-"lanzar un dardo. Cando teñas lanzados todos os dardos, aparecerá unha xanela "
-"pedíndoche que contes a túa puntuación. Insire a puntuación co teclado."
+"lanzar un dardo. Unha vez lanzados todos os dardos, terás que contar a túa "
+"puntuación. Insire a puntuación co teclado."
 
 #: activities/target/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26824,11 +26827,6 @@ msgid "Many bug fixes"
 msgstr "Moitas correccións de fallos."
 
 #: core/ChangeLog.qml:33
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "Automatic application of new language when changing in the menu (no need "
-#| "to restart GCompris)"
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
@@ -27872,6 +27870,10 @@ msgstr "Saltar"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Iniciar"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Controis de teclado:"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Draw the letters by connecting the dots in the correct order."

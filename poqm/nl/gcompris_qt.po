@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-12 13:58+0100\n"
+"PO-Revision-Date: 2024-12-13 11:26+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -260,6 +260,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:23
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -24029,11 +24030,6 @@ msgstr ""
 "Selecteer hulpmiddelen en kleuren uit de opvouwbare panelen en teken "
 "afbeeldingen.<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:23
-msgctxt "ActivityInfo|"
-msgid "<b>Keyboard controls:"
-msgstr "<b>Toetsenbordbesturing:"
-
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
@@ -26957,18 +26953,13 @@ msgid "Many bug fixes"
 msgstr "Vele fouten gerepareerd"
 
 #: core/ChangeLog.qml:33
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "Automatic application of new language when changing in the menu (no need "
-#| "to restart GCompris)"
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
-"Automatische toepassing van nieuwe taal bij wijziging in het menu (geen "
-"noodzaak om GCompris opnieuw te starten)"
+"Automatische toepassing van nieuwe taal bij wijziging ervan in het menu "
+"(geen noodzaak om GCompris opnieuw te starten)"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
@@ -28000,6 +27991,10 @@ msgstr "Overslaan"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Begin"
+
+#~ msgctxt "ActivityInfo|"
+#~ msgid "<b>Keyboard controls:"
+#~ msgstr "<b>Toetsenbordbesturing:"
 
 #~ msgctxt "ActivityInfo|"
 #~ msgid "Draw the letters by connecting the dots in the correct order."
