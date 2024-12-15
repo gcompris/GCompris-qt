@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-10-19 13:20+0200\n"
+"PO-Revision-Date: 2024-12-14 13:14+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.08.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2673,9 +2673,6 @@ msgstr ""
 "jeszcze żadnego poziomu użytkownika!"
 
 #: activities/balancebox/Balancebox.qml:72
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "OK"
@@ -5049,11 +5046,6 @@ msgstr "Może przesuwać myszą i dokładnie naciskać na punkty."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5061,7 +5053,9 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Narysuj obraz naciskając na punkty w odpowiedniej kolejności. Po każdym "
-"zaznaczeniu punktu pojawi się następny niebieski punkt."
+"zaznaczeniu punktu pojawi się następny niebieski punkt. Możesz nacisnąć i "
+"przeciągnąć z jednego punktu do następnych lub naciskać na każdym punkcie "
+"jeden po drugim."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6654,6 +6648,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Rysuj litery, łącząc kropki w odpowiedniej kolejności. Możesz nacisnąć i "
+"przeciągnąć od jednego punktu do kolejnych, lub naciskać kropki jedna po "
+"drugiej."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6681,6 +6678,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Rysuj cyfry, łącząc kropki w odpowiedniej kolejności. Możesz nacisnąć i "
+"przeciągnąć od jednego punktu do kolejnych, lub naciskać kropki jedna po "
+"drugiej."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -19924,19 +19924,16 @@ msgstr "Naucz się kolejności liczbowej."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Narysuj obraz naciskając na punkty w odpowiedniej kolejności. Po każdym "
-"zaznaczeniu punktu pojawi się następny niebieski punkt."
+"Narysuj obraz naciskając na punkty w kolejności liczbowej. Po każdym "
+"zaznaczeniu punktu pojawi się następny niebieski punkt. Możesz nacisnąć i "
+"przeciągnąć z jednego punktu do następnych lub naciskać na każdym punkcie "
+"jeden po drugim."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -26299,39 +26296,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Naucz się dodwać."
+msgstr "Dodawanie w pionie"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Odtwórz daną wieżę."
+msgstr "Rozwiąż dane dodawanie."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Naucz się dzielić z innymi i w matematyce."
+msgstr "Naucz się dodawać w pionie."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tabliczka dodawania do 1."
+msgstr "Dodatkowe tabliczki."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26351,85 +26336,91 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"W dodawaniu pionowym, liczby są zapisywane jedna pod drugą. Muszą być "
+"odpowiednio wyrównane, zaczynając od słupka po prawej stronie. Wynik jest "
+"zapisywany w wierszu na dole. Aby rozwiązać dodawanie, zacznij od dodawania "
+"cyfry z pierwszego słupka (licząc od prawej strony) i zapisz wynik w wierszu "
+"na dole w tym samym słupku. Jeśli wynik ten da dwucyfrową liczbę, to zapisz "
+"cyfrę tylko jedności w wyniku, a cyfrę dziesiątek w kolejnym w słupku górnej "
+"liczby: nazywa się to przenoszeniem. Następnie dodaj cyfry w następnej "
+"kolumnie, uwzględniając tę przeniesioną cyfrę i powtarzaj tak, aż do "
+"ukończenia działania. Po wyliczeniu wyniku, naciśnij przycisk OK, aby go "
+"sprawdzić. Na niektórych poziomach, będzie trzeba wpisać dane działanie "
+"przed jego rozwiązaniem; w tym przypadku, naciśnij na przycisku Gotowe, po "
+"zapisaniu takiego działania, a następnie rozwiąż je."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 2 cyfry, 2 wiersze, bez przenoszenia."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 4 cyfry, 3 wiersze."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 4 cyfry, 4 wiersze."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Napisz swoje własne dodawania i rozwiąż je."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Napisz i rozwiąż dodawanie, 2 cyfry, 2 wiersze, z przenoszeniem."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 2 cyfry, 2 wiersze."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Napisz i rozwiąż dodawanie, 2 cyfry, 2 wiersze."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Napisz i rozwiąż dodawanie, 2 cyfry, 3 wiersze."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 3 cyfry, 2 wiersze."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Napisz i rozwiąż dodawanie, 3 cyfry, 2 wiersze."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 3 cyfry, 3 wiersze."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Rozwiąż dodawanie, 4 cyfry, 2 wiersze."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Ćwicz odejmowanie."
+msgstr "Odejmowanie w pionie"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Wybierz instrukcje"
+msgstr "Rozwiąż dane odejmowanie."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26438,16 +26429,14 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Naucz się odejmować w słupkach poprzez zapożyczanie metodą przegrupowywania."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tabliczka odejmowania do 1."
+msgstr "Tabliczka odejmowania."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -26475,144 +26464,127 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"W odejmowaniu pionowym, liczby są zapisywane jedna pod drugą. Muszą być "
+"odpowiednio wyrównane, zaczynając od słupka po prawej stronie. Liczba na "
+"górze nazywana jest odjemną: jest to liczba, od której zaczynamy, od której "
+"odejmowana jest druga liczba, aby uzyskać różnicę. Liczba na dole nazywana "
+"jest odjemnikiem: jest to liczba, którą należy odjąć od odjemnej, aby "
+"uzyskać różnicę. Wynik jest zapisywany w wierszu na dole. Aby rozwiązać "
+"odejmowanie, zacznij od odejmowania cyfry na dole z pierwszego słupka od "
+"cyfry na górze także z pierwszego słupka (licząc od prawej strony) i zapisz "
+"wynik w wierszu na dole w tym samym słupku. Jeśli cyfra na górze jest "
+"mniejsza niż ta na dole, to możesz pożyczyć od odjemnej w następnym słupku: "
+"na przykład, jeśli dodasz 10 jednostek do cyfry na górze, to będziesz musiał "
+"odjąć też jedną jednostkę od cyfry na górze w następnym słupku. Nazywa się "
+"to zapożyczaniem metodą przegrupowania. Aby wykonać to w bieżącej "
+"aktywności, naciśnij na pustym prostokącie po lewej w górnej cyfrze, wybierz "
+"1, a następnie w następnym słupku naciśnij na pustym prostokącie po prawej w "
+"górnej cyfrze i wybierz -1. Następnie wpisz wynik słupka w wierszu na dole i "
+"wykonaj to podobnie w kolejnych słupkach, aż do ukończenia działania. Po "
+"wyliczeniu wyniku, naciśnij przycisk OK, aby go sprawdzić. Na niektórych "
+"poziomach, będzie trzeba wpisać dane działanie przed jego rozwiązaniem; w "
+"tym przypadku, naciśnij na przycisku Gotowe, po zapisaniu takiego działania, "
+"a następnie rozwiąż je."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Rozwiąż odejmowanie, 2 cyfry, 2 wiersze, bez przenoszenia."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Rozwiąż odejmowanie, 4 lub 5 cyfr, 3 wiersze."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Rozwiąż odejmowanie, 4 lub 5 cyfr, 4 wiersze."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Naucz się tabliczki odejmowania do 1."
+msgstr "Napisz swoje własne odejmowanie i rozwiąż je."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Napisz i rozwiąż odejmowanie, 2 cyfry, 2 wiersze, bez przenoszenia."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Rozwiąż odejmowanie, 2 lub 3 cyfry, 2 wiersze."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Napisz i rozwiąż odejmowanie, 2 lub 3 cyfry, 2 wiersze."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Napisz i rozwiąż odejmowanie, 2 lub 3 cyfry, 3 wiersze."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Rozwiąż odejmowanie, 3 lub 4 cyfry, 2 wiersze."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Napisz i rozwiąż odejmowanie, 3 lub 4 cyfry, 2 wiersze."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Rozwiąż odejmowanie, 3 lub 4 cyfry, 3 wiersze."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Odejmowanie z użyciem 1, 2  oraz 3."
+msgstr "Rozwiąż odejmowanie, 4 lub 5 cyfry, 2 wiersze."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Napisz:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Rozwiąż:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Tytuł: %1"
+msgstr "Rozwiąż: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Jestem gotowy"
+msgstr "Gotowe"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Ćwicz działanie odejmowania."
+msgstr "Odejmowanie w pionie (kompensacja)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26621,6 +26593,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Naucz się odejmować w słupkach poprzez zapożyczanie metodą kompensacji."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26648,6 +26621,27 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"W odejmowaniu pionowym, liczby są zapisywane jedna pod drugą. Muszą być "
+"odpowiednio wyrównane, zaczynając od słupka po prawej stronie. Liczba na "
+"górze nazywana jest odjemną: jest to liczba, od której zaczynamy, od której "
+"odejmowana jest druga liczba, aby uzyskać różnicę. Liczba na dole nazywana "
+"jest odjemnikiem: jest to liczba, którą należy odjąć od odjemnej, aby "
+"uzyskać różnicę. Wynik jest zapisywany w wierszu na dole. Aby rozwiązać "
+"odejmowanie, zacznij od odejmowania cyfry na dole z pierwszego słupka od "
+"cyfry na górze także z pierwszego słupka (licząc od prawej strony) i zapisz "
+"wynik w wierszu na dole w tym samym słupku. Jeśli cyfra na górze jest "
+"mniejsza niż ta na dole, to możesz pożyczyć od odjemnika w następnym słupku: "
+"na przykład, jeśli dodasz 10 jednostek do cyfry na górze, to będziesz musiał "
+"dodać też jedną jednostkę do cyfry na dole w następnym słupku. Nazywa się to "
+"zapożyczaniem metodą kompensacji. Aby wykonać to w bieżącej aktywności, "
+"naciśnij na pustym prostokącie po lewej w górnej cyfrze, wybierz 1, a "
+"następnie w następnym słupku naciśnij na pustym prostokącie po prawej w "
+"dolnej cyfrze i wybierz +1. Następnie wpisz wynik słupka w wierszu na dole i "
+"wykonaj to podobnie w kolejnych słupkach, aż do ukończenia działania. Po "
+"wyliczeniu wyniku, naciśnij przycisk OK, aby go sprawdzić. Na niektórych "
+"poziomach, będzie trzeba wpisać dane działanie przed jego rozwiązaniem; w "
+"tym przypadku, naciśnij na przycisku Gotowe, po zapisaniu takiego działania, "
+"a następnie rozwiąż je."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26845,23 +26839,20 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Zmiana na nowy język aplikacji bez konieczności ponownego uruchamiania "
+"GCompris"
 
 #: core/ChangeLog.qml:34
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Dodano ekran powitalny do uruchamiania programu"
 
 #: core/ChangeLog.qml:35
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Nowe ustawienie wiersza poleceń, aby wymienić wszystkie aktywności i "
-"rozpocząć nowe"
+"Nowy przełącznik wiersza poleceń do zmiany programu wyświetlającego (--"
+"renderer renderer)"
 
 #: core/ChangeLog.qml:44
 msgctxt "ChangeLog|"
@@ -27580,9 +27571,6 @@ msgstr "Usunięto pomyślnie %1!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
