@@ -3777,6 +3777,12 @@ SPDX-FileCopyrightText = ["2019 Alexander Potashev", "2019 Alexey Loginov"]
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/lang/resource/content-sa.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = ["2024 kali"]
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/lang/resource/content-sk.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = ["2019 Roman Paholík", "2020 Matej Mrenica"]
