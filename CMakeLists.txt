@@ -278,15 +278,9 @@ if(NOT SKIP_TRANSLATIONS)
 endif()
   
 # Install translations
-if(WIN32)
-    add_custom_target(BuildTranslations
-        DEPENDS ${QM_FILES}
-    )
-else()
-    add_custom_target(BuildTranslations ALL
-        DEPENDS ${QM_FILES}
-    )
-endif()
+add_custom_target(BuildTranslations ALL
+    DEPENDS ${QM_FILES}
+)
 
 add_custom_command(
     OUTPUT doBundleTranslations
