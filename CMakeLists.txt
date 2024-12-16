@@ -257,15 +257,9 @@ if(NOT SKIP_TRANSLATIONS)
 endif()
   
 # Install translations
-if(WIN32)
-    add_custom_target(BuildTranslations
-        DEPENDS ${QM_FILES}
-    )
-else()
-    add_custom_target(BuildTranslations ALL
-        DEPENDS ${QM_FILES}
-    )
-endif()
+add_custom_target(BuildTranslations ALL
+    DEPENDS ${QM_FILES}
+)
 
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
