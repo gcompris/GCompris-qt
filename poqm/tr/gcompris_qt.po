@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-13 11:41+0300\n"
+"PO-Revision-Date: 2024-12-16 13:16+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -25848,7 +25848,7 @@ msgstr "En yüksek değer: 500.000."
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "On’un tümleyeniyle hesapla"
+msgstr "10’un tümleyeniyle hesapla"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -25857,7 +25857,7 @@ msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
 msgstr ""
-"On’a eşit çiftler oluşturmak için sayıları birbirleriyle değiştir ve "
+"10’a eşit çiftler oluşturmak için sayıları birbirleriyle değiştir ve "
 "toplamayı gir."
 
 #. Help goal
@@ -25909,19 +25909,19 @@ msgstr "5 sayıdan yapılacak 2 çift."
 #: activities/tens_complement_find/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "On’un tümleyenini bul"
+msgstr "10’un tümleyenini bul"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Find the ten's complement of each number."
-msgstr "Her sayının on’un tümleyenini bulun."
+msgstr "Her sayının on’un tümleyenini bul."
 
 #. Help goal
 #: activities/tens_complement_find/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to find ten's complement."
-msgstr "On’un tümleyenini bulmayı öğren."
+msgstr "10’un tümleyenini bulmayı öğren."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
@@ -25950,7 +25950,7 @@ msgid ""
 "Create pairs of numbers equal to ten. Select a number in the list, then "
 "select an empty spot of an operation to move the selected number there."
 msgstr ""
-"On’a eşit sayı çiftleri oluştur. Listeden bir numara seç, ardından seçilen "
+"10’a eşit sayı çiftleri oluştur. Listeden bir numara seç, ardından seçilen "
 "numarayı oraya taşımak için bir işlemin boş bir yerini seç."
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
@@ -25972,13 +25972,13 @@ msgstr "Her iki sayıyı da bul."
 #: activities/tens_complement_swap/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Swap ten's complement"
-msgstr "On’un tümleyinini değiştir."
+msgstr "10’un tümleyinini değiştir."
 
 #. Help title
 #: activities/tens_complement_swap/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Swap the numbers to create pairs equal to ten."
-msgstr "On’a eşit çiftler oluşturmak için sayıları birbirleriyle değiştir."
+msgstr "10’a eşit çiftler oluşturmak için sayıları birbirleriyle değiştir."
 
 #. Help goal
 #: activities/tens_complement_swap/ActivityInfo.qml:19
@@ -26026,19 +26026,19 @@ msgstr "6 sayıdan yapılacak 3 çift."
 #: activities/tens_complement_use/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Use ten's complement"
-msgstr "On’un tümleyenini kullan"
+msgstr "10’un tümleyenini kullan"
 
 #. Help title
 #: activities/tens_complement_use/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Use a ten's complement to simplify the operation."
-msgstr "İşlemi basitleştirmek için on’un tümleyenini kullan."
+msgstr "İşlemi basitleştirmek için 10’un tümleyenini kullan."
 
 #. Help goal
 #: activities/tens_complement_use/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn a practical use of ten's complement."
-msgstr "On’un tümleyeninin pratik kullanımını öğren."
+msgstr "10’un tümleyeninin pratik kullanımını öğren."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
@@ -26323,7 +26323,7 @@ msgstr ""
 "tarafta) çıkararak başla ve sonucu aynı sütunun alt satırına yaz. Üst sayı "
 "alt sayıdan küçükse bir sonraki sütundaki eksilenden ödünç alabilirsin; "
 "örneğin, üst sayıya 10 birim eklersen bir sonraki sütunun üst sayısından bir "
-"birim kaldırman gerekir. Buna yeniden gruplama yöntemi ile borçlanma denir. "
+"birim kaldırman gerekir. Buna yeniden gruplama yöntemi ile ödünç alma denir. "
 "Bu etkinlikte bunu yapmak için üst sayının solundaki boş dikdörtgene tıkla, "
 "1’i seç ve bir sonraki sütunda, üst sayının sağındaki boş dikdörtgene "
 "tıklayıp −1’i seç. Ardından, sütunun sonucunu alt satıra yaz ve işlem bitene "
@@ -26430,7 +26430,7 @@ msgstr "Hazır"
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Dikey çıkarma (ödünç alarak)"
+msgstr "Dikey çıkarma (dengeleyerek)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26438,7 +26438,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr "Ödünç alma yöntemi ile dikey çıkarmaları yapmayı öğren."
+msgstr "Dengeleme yöntemi ile dikey çıkarmaları yapmayı öğren."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26475,7 +26475,7 @@ msgstr ""
 "(sağ tarafta) çıkararak başla ve sonucu aynı sütunun alt satırına yaz. Üst "
 "sayı alt sayıdan küçükse bir sonraki sütundaki alt satırdan ödünç "
 "alabilirsiniz: Örneğin, üst sayıya 10 birim eklersen bir sonraki sütunun alt "
-"numarasına bir birim eklemen gerekir. Buna ödünç alma yöntemiyle borçlanma "
+"numarasına bir birim eklemen gerekir. Buna dengeleme yöntemiyle ödünç alma "
 "denir. Bu etkinlikte bunu yapmak için üst sayının solundaki boş dikdörtgene "
 "tıkla, 1’ seç ve bir sonraki sütunda, alt sayının sağındaki boş dikdörtgene "
 "tıklayıp +1’i seç. Ardından, sütunun sonucunu alt satıra yaz ve işlem bitene "
@@ -26649,12 +26649,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Sözcüğün tamamını yere düşmeden önce yaz."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Letonca çeviri eklendi"
+msgstr "Sanskritçe çeviri eklendi"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -27709,511 +27706,3 @@ msgstr "Atla"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Başlat"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard controls:"
-#~ msgstr "<b>Klavye denetimleri:"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "Noktaları doğru sırayla birleştirerek harfleri çiz."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "Noktaları doğru sırayla birleştirerek sayıları çiz."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Draw the picture by clicking on the points in the numerical sequence "
-#~ "order."
-#~ msgstr "Sayısal sıradati noktalara tıklayarak resmi çiz."
-
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Çıkarmayı yap; 2 basamak, 2 satır."
-
-#~ msgctxt "Data|"
-#~ msgid "Write and solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Çıkarmayı yaz ve yap; 2 basamak, 2 satır."
-
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 3 digits, 3 lines."
-#~ msgstr "Çıkarmayı yaz ve yap; 3 basamak, 3 satır."
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "Tamam"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "Tamam"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Logic training activity."
-#~ msgstr "Mantık egzersizi etkinliği."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Alphabet sequence."
-#~ msgstr "Abece sıralaması."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby mouse"
-#~ msgstr "Bebek fare"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Baby puzzle"
-#~ msgstr "Bebek yapboz"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "The objective is to assemble the baby puzzle."
-#~ msgstr "Amaç, bebek yapbozunu bir araya getirmektir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A simplistic word processor to let the children play around with a "
-#~ "keyboard and see letters."
-#~ msgstr ""
-#~ "Çocukların bir klavye ile oynamasına ve harfleri görebilmesine izin veren "
-#~ "yalın bir sözcük işlemci."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Discover the keyboard and the letters."
-#~ msgstr "Klavyeyi ve harfleri keşfet."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select the number of balls you wish to place in the holes and then click "
-#~ "on the OK button. The winner is the one who hasn't put a ball in the red "
-#~ "hole."
-#~ msgstr ""
-#~ "Deliklere yerleştirmek istediğin topların sayısını seç ve ardından Tamam "
-#~ "düğmesine tıkla. Kırmızı deliğe top atmayan kişi oyunu kazanır."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Don't put the ball in the last hole."
-#~ msgstr "Topu son deliğe koyma."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Sort the pictures into the order that tells the story."
-#~ msgstr "Resimleri hikayeyi anlatan sıraya göre sırala."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Then, click on the OK button to validate your answer."
-#~ msgstr "Ardından, yanıtını doğrulamak için OK düğmesine tıkla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Letter-name recognition."
-#~ msgstr "Harfleri tanı."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Change the color by moving the sliders on the tubes of paint or by "
-#~ "clicking on the + and - buttons. Then click on the OK button to validate "
-#~ "your answer."
-#~ msgstr ""
-#~ "Sürgüleri boya tüpleri üzerinde sürerek veya + ve - düğmelerine "
-#~ "tıklayarak rengi değiştir. Ardından yanıtını doğrulamak için OK düğmesine "
-#~ "tıkla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Complete the puzzle by dragging each piece on the side to the matching "
-#~ "space in the puzzle."
-#~ msgstr ""
-#~ "Yan taraftaki her bir parçayı yapbozdaki eşleşen alana sürükleyerek "
-#~ "bulmacayı tamamla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numeration training."
-#~ msgstr "Sayma egzersizi."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Motor-coordination."
-#~ msgstr "Motor koordinasyon."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Arrange the pieces in the right order."
-#~ msgstr "Parçaları doğru sırayla düzenle."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Kick the ball behind the goal keeper on the right."
-#~ msgstr "Sağdaki kalecinin arkasından topa vur."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag a line from the ball to set its speed and direction, and release it "
-#~ "to kick the ball."
-#~ msgstr ""
-#~ "Hızını ve yönünü ayarlamak için toptan bir çizgi çek ve topa vurmak için "
-#~ "serbest bırak."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "A shape split in equal parts is displayed on screen."
-#~ msgstr "Ekranda eşit parçalara bölünmüş bir şekil görüntülenir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag and drop different regions of the country to their correct locations "
-#~ "to complete the map."
-#~ msgstr ""
-#~ "Haritayı tamamlamak için ülkenin farklı bölgelerini doğru konumlarına "
-#~ "sürükleyip bırak."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Drag and Drop the items to complete the map."
-#~ msgstr "Haritayı tamamlamak için ögeleri sürükleyip bırak."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Letter association between the screen and the keyboard."
-#~ msgstr "Ekran ve klavyedeki harflerin eşleştirilmesi."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn to distinguish between different colors/shapes and learn about "
-#~ "relative positions."
-#~ msgstr ""
-#~ "Farklı renkleri/şekilleri ayırt etmeyi öğren ve göreceli konumlar "
-#~ "hakkında bilgi edin."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Guess the algebraic expression and drag the tiles to get a result equal "
-#~ "to the Guesscount."
-#~ msgstr ""
-#~ "Cebirsel ifadeyi tahmin et ve SayıTahmin'e eşit bir sonuç elde etmek için "
-#~ "karoları sürükle."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Intuition and practice of algebraic-like calculations."
-#~ msgstr "Cebirsel benzeri hesaplamaların sezgi ve pratiği."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numbers."
-#~ msgstr "Sayılar."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "This is a good exercise to improve reading and spelling skills."
-#~ msgstr ""
-#~ "Bu oyun okuma ve konuşma yeteneğini geliştirmek için güzel bir "
-#~ "alıştırmadır."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The object of the game is to move the entire stack to another peg, "
-#~ "obeying the following rules:\n"
-#~ "    only one disc may be moved at a time\n"
-#~ "    no disc may be placed atop a smaller disc\n"
-#~ msgstr ""
-#~ "Oyunun amacı, aşağıdaki kurallara uyarak tüm diskleri başka bir direğe "
-#~ "taşımaktır:\n"
-#~ "    bir kerede yalnızca bir disk hareket ettirilebilir\n"
-#~ "    daha küçük bir diskin üzerine daha büyük disk yerleştirilemez\n"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Drag and drop the top pieces only from one peg to another, to reproduce "
-#~ "the initial left side tower on the right peg."
-#~ msgstr ""
-#~ "İlk sol yan kuleyi sağ mandalda yeniden oluşturmak için üst parçaları "
-#~ "yalnızca bir mandaldan diğerine sürükleyip bırak."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Vocabulary and reading."
-#~ msgstr "Söz dağarcığı ve okuma."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn decimals with small numbers."
-#~ msgstr "Küçük sayılarla ondalıkları öğren."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Learn decimals by counting how many squares are needed to represent the "
-#~ "decimal number."
-#~ msgstr ""
-#~ "Ondalık sayıyı temsil etmek için kaç tane kare gerektiğini sayarak "
-#~ "ondalık sayıları öğren."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count and color the circles"
-#~ msgstr "Daireleri say ve renklendir"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits from 0 to 9."
-#~ msgstr "0'dan 9'a kadar rakamları öğren."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn digits by counting their corresponding value."
-#~ msgstr "Rakamları karşılık gelen değerlerini sayarak öğren."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "A letter is written. Some words are displayed, and you must find the word "
-#~ "or the words in which this letter appears."
-#~ msgstr ""
-#~ "Bir mektup yazıldı. Bazı sözcükler görüntülenecek ve bu harfin geçtiği "
-#~ "sözcüğü veya sözcükleri bulman gerek."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Review the major dates of the inventor of the braille system."
-#~ msgstr "Braille sisteminin mucidinin başlıca geçmişini gözden geçir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Numeration training, memory."
-#~ msgstr "Numaralandırma eğitimi, bellek."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Train your memory and remove all the cards."
-#~ msgstr "Belleğini geliştir ve tüm kartları kaldır."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Reading numbers, memory."
-#~ msgstr "Sayıl okuma, bellek."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "You must buy different items and give the exact price. At higher levels, "
-#~ "several items are displayed, and you must first calculate the total price."
-#~ msgstr ""
-#~ "Farklı ürünler satın almalı ve tam fiyatı vermelisin. Daha yüksek "
-#~ "düzeylerde birkaç öge görüntülenir ve önce toplam fiyatı hesaplaman "
-#~ "gerekir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Tux bought different items from you and shows you his money. You must "
-#~ "give him back his change. At higher levels, several items are displayed, "
-#~ "and you must first calculate the total price."
-#~ msgstr ""
-#~ "Tux senden farklı eşyalar aldı ve sana parasını gösteriyor. Ona para "
-#~ "üstünü geri vermelisin. Daha yüksek düzeylerde, birkaç öge görüntülenir "
-#~ "ve önce toplam fiyatı hesaplaman gerekir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "You must buy the different items and give the exact price. At higher "
-#~ "levels, several items are displayed, and you must first calculate the "
-#~ "total price."
-#~ msgstr ""
-#~ "Farklı ürünler alıp tam para vermelisin. İleri düzeylerde birden fazla "
-#~ "ürün görüntülenir ve öderken toplam fiyat hesaplanmalıdır."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 "
-#~ "pieces left or can not move anymore."
-#~ msgstr ""
-#~ "Tux'un parçalarını yalnızca 2 parçası kalana veya artık hareket edemeyene "
-#~ "kadar çıkarmak için miller (3 parçalık sıralar) oluştur."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with Tux. First take turns to place nine pieces, and then take turns "
-#~ "to move your pieces."
-#~ msgstr ""
-#~ "Tux ile oyna. Önce sırayla dokuz parçayı yerleştir ve ardından sırayla "
-#~ "parçalarını hareket ettir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Form mills (lines of 3 pieces) to remove your opponent's pieces until "
-#~ "your opponent has only 2 pieces left or can not move anymore."
-#~ msgstr ""
-#~ "Rakibinin yalnızca 2 parçası kalana veya artık hareket edemeyene kadar "
-#~ "rakibinin taşlarını çıkarmak için miller (3 parçalı çizgiler) oluştur."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Play with a friend. First take turns to place nine pieces, and then take "
-#~ "turns to move your pieces."
-#~ msgstr ""
-#~ "Arkadaşınla oyna. Önce sırayla dokuz parçayı yerleştir ve ardından "
-#~ "sırayla parçalarını hareket ettir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Touch the numbers in the right order."
-#~ msgstr "Doğru sıradaki numaralara dokun."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Can decide chronological order of events."
-#~ msgstr "Olayların kronolojik sırasına karar verebilir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Compare numbers."
-#~ msgstr "Sayıları karşılaştır."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Spatial representation."
-#~ msgstr "Uzamsal temsil."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Path decoding relative"
-#~ msgstr "Göreceli yol bulma"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Path encoding relative"
-#~ msgstr "Göreceli yol bulma"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Visual perception."
-#~ msgstr "Görsel algı."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Programming maze"
-#~ msgstr "Programlama labirenti"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "This activity teaches to program Tux to reach its goal using simple "
-#~ "instructions like move forward, turn left or right."
-#~ msgstr ""
-#~ "Bu etkinlik, ileri git, sola veya sağa dön gibi basit yönergeleri "
-#~ "kullanarak Tux'u hedefine ulaşacak şekilde programlamayı öğretir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Tux is hungry. Help him find fish by programming him to the correct ice "
-#~ "spot."
-#~ msgstr ""
-#~ "Tux acıktı. Doğru buz noktasına programlayarak balık bulmasına yardımcı "
-#~ "ol."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the image on the empty grid as if you saw it in a mirror."
-#~ msgstr "Görseli aynada görmüş gibi boş ızgaraya çizin."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Learn division of numbers."
-#~ msgstr "Sayıların bölünmesini öğrenme."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "A simple drawing activity"
-#~ msgstr "Basit bir çizim etkinliği"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Enhance creative skills."
-#~ msgstr "Yaratıcı becerileri geliştir."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "In a limited time, count the number of dots."
-#~ msgstr "Sınırlı bir süre içinde kaç nokta olduğunu say."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count the number on the domino before it reaches the ground."
-#~ msgstr "Yere ulaşmadan önce domino üzerindeki sayıyı say."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Count a number in a limited time."
-#~ msgstr "Sınırlı bir süre içinde sayı say."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Type the number you see on each falling domino."
-#~ msgstr "Her düşen domino üzerinde gördüğün sayıyı yaz."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Answer the questions with a correctness of 100%."
-#~ msgstr "Soruların hepsini doğru yanıtla."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Sudoku, place unique symbols in a grid"
-#~ msgstr "Sudoku, benzersiz sembolleri bir kareye yerleştir"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Symbols must be unique in a row, in a column, and (if defined) in each "
-#~ "region."
-#~ msgstr ""
-#~ "Semboller bir satırda, bir sütunda ve her bölgede (tanımlanmışsa) "
-#~ "benzersiz olmalıdır."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "The aim of the puzzle is to enter a symbol or numeral from 1 to 9 in each "
-#~ "cell of a grid. In the official Sudoku the grid is 9×9 and made up of 3×3 "
-#~ "subgrids (called 'regions'). In GCompris we start at lower levels with a "
-#~ "simpler version using symbols and with no regions. In all cases the grid "
-#~ "is presented with various symbols or numerals given in some cells (the "
-#~ "'givens'). Each row, column and region must contain only one instance of "
-#~ "each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/"
-#~ "Sudoku&gt;)."
-#~ msgstr ""
-#~ "Bulmacanın amacı, bir ızgaranın her hücresine 1'den 9'a kadar bir sembol "
-#~ "veya rakam girmektir. Resmi Sudoku'da ızgara 9 × 9'dur ve 3 × 3 alt "
-#~ "ızgaralardan oluşur (“bölgeler” olarak adlandırılır). GCompris'te "
-#~ "semboller kullanan ve bölge içermeyen daha basit bir sürümle daha düşük "
-#~ "düzeylerden başlıyoruz. Her durumda ızgara, bazı hücrelerde (\"verilenler"
-#~ "\") verilen çeşitli semboller veya rakamlarla sunulur. Her satır, sütun "
-#~ "ve bölge, her sembol veya rakamın yalnızca bir örneğini içermelidir "
-#~ "(Kaynak &lt;https://en.wikipedia.org/wiki/Sudoku&gt;)."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Select a number or a symbol in the list and click on its target position. "
-#~ "GCompris will not let you enter an invalid answer."
-#~ msgstr ""
-#~ "Listeden bir sayı veya sembol seç ve hedef konuma tıkla. GCompris "
-#~ "geçersiz bir yanıt girmene izin vermez."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven "
-#~ "boards of cunning') is a Chinese puzzle. While the tangram is often said "
-#~ "to be ancient, its existence has only been verified as far back as 1800. "
-#~ "It consists of 7 pieces, called tans, which fit together to form a "
-#~ "square; Using the square side as 1 unit, the 7 pieces contains:\n"
-#~ "    5 right isosceles triangles, including:\n"
-#~ "        - 2 small size ones (legs of 1)\n"
-#~ "        - 1 medium size (legs of square root of 2)\n"
-#~ "        - 2 large size (legs of 2)\n"
-#~ "    1 square (side of 1) and\n"
-#~ "    1 parallelogram (sides of 1 and square root of 2)\n"
-#~ "    "
-#~ msgstr ""
-#~ "Vikipedi'den. Tangram (Çince: Sözcüğün tam anlamıyla 'yedi kurnazlık "
-#~ "tahtası') bir Çin bilmecesidir. Tangram'ın genellikle eski olduğu "
-#~ "söylense de, varlığı yalnızca 1800 yılına kadar doğrulanmıştır. Tangram "
-#~ "adı verilen ve bir kare oluşturacak şekilde birbirine uyan 7 parçadan "
-#~ "oluşur; kare kenarı 1 birim olarak kullanırsak, 7 parça şunları içerir:\n"
-#~ "     5 dik ikizkenar üçgen, aşağıdakileri içerir:\n"
-#~ "         - 2 küçük boy (1 bacak)\n"
-#~ "         - 1 orta boy (2'nin karekökünün bacakları)\n"
-#~ "         - 2 büyük boy (2'li ayak)\n"
-#~ "     1 kare (1'in kenarı) ve\n"
-#~ "     1 paralelkenar (1'in kenarları ve 2'nin karekökü)\n"
-#~ "    "
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Hit the target and count your points."
-#~ msgstr "Hedefi vur ve puanlarını say."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Place three marks in any horizontal, vertical, or diagonal row to win the "
-#~ "game."
-#~ msgstr ""
-#~ "Oyunu kazanmak için herhangi bir yatay, dikey veya çapraz sıraya üç im "
-#~ "koy."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Keyboard training."
-#~ msgstr "Klavye egzersizi."
-
-#~ msgctxt "Data|"
-#~ msgid "Copy and complete this frieze"
-#~ msgstr "Bu frizi kopyala ve tamamla"
-
-#~ msgctxt "Data|"
-#~ msgid "Copy this frieze: any combination of shapes, colors/signs and sizes."
-#~ msgstr ""
-#~ "Bu frizi kopyala: Herhangi bir şekil, renk/işaret ve boyut kombinasyonu."
-
-#~ msgctxt "Data|"
-#~ msgid ""
-#~ "Copy and complete this frieze: any combination of shapes, colors/signs "
-#~ "and sizes."
-#~ msgstr ""
-#~ "Bu frizi kopyala ve tamamla: Herhangi bir şekil, renk/işaret ve boyut "
-#~ "kombinasyonu."
-
-#~ msgctxt "Data|"
-#~ msgid "Find the missing numbers"
-#~ msgstr "Eksik sayıları bul"
