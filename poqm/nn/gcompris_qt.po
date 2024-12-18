@@ -27858,8 +27858,3 @@ msgstr "Lukk"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Start"
-
-#, fuzzy
-#~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard controls:"
-#~ msgstr "Tastar:"

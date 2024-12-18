@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-16 00:40+0100\n"
+"PO-Revision-Date: 2024-12-17 22:41+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -1769,6 +1769,7 @@ msgstr ""
 "Para unha descrición máis detallada da batería e da lámpada, selecciónaos e "
 "preme o botón de información."
 
+# skip-rule: trasno-provide
 #: activities/analog_electricity/TutorialDataset.qml:104
 msgctxt "TutorialDataset|"
 msgid ""
@@ -1814,6 +1815,7 @@ msgstr ""
 "Ou tamén se formaría un bucle se dúas baterías forman un circuíto pechado "
 "entre elas."
 
+# skip-rule: trasno-provide
 #: activities/analog_electricity/TutorialDataset.qml:120
 msgctxt "TutorialDataset|"
 msgid ""
@@ -2044,6 +2046,7 @@ msgstr ""
 "Conecta o LED vermello fornecido en polarización directa. Ignora o LED "
 "estragado."
 
+# skip-rule: trasno-provide
 #: activities/analog_electricity/TutorialDataset.qml:267
 msgctxt "TutorialDataset|"
 msgid "The battery is providing too much energy to the LED."
@@ -2121,7 +2124,7 @@ msgctxt "ActivityInfo|"
 msgid "Move the mouse or touch the screen and observe the result."
 msgstr "Move o rato ou toca a pantalla táctil e observa o que pasa."
 
-# skip-rule: trasno-audio
+# skip-rule: trasno-audio, trasno-provide
 #. Help goal
 #: activities/baby_mouse/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
@@ -5569,8 +5572,8 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"Aparecerá unha cruz nas liñas con fallos. Corrixe os erros e volve a premer "
-"en «Aceptar»."
+"Aparecerá unha icona de cruz nas liñas con fallos. Corrixe os erros e volve "
+"a premer en «Aceptar»."
 
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -19053,6 +19056,7 @@ msgctxt "Menu|"
 msgid "Experiment"
 msgstr "Experimento"
 
+# skip-rule: trasno-history
 #: activities/menu/Menu.qml:126
 msgctxt "Menu|"
 msgid "History"
@@ -20202,6 +20206,7 @@ msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
 msgstr "Aprende a ordenar unha secuencia de momentos en orde cronolóxica."
 
+# skip-rule: trasno-provide
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -20353,6 +20358,7 @@ msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
 msgstr "Practica ordenar palabras para formar oracións con sentido."
 
+# skip-rule: trasno-provide
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -22501,6 +22507,7 @@ msgstr ""
 "solares, o parque eólico e os transformadores para activar de novo o sistema "
 "eléctrico."
 
+# skip-rule: trasno-item_reverse
 #: activities/renewable_energy/RenewableEnergy.qml:314
 msgctxt "RenewableEnergy|"
 msgid ""
@@ -25950,7 +25957,7 @@ msgid ""
 "Can move the mouse, can read numbers and count up to 15 for the first level."
 msgstr "Podes mover o rato, ler números e contar ata 15 para o primeiro nivel."
 
-# skip-rule: trasno-launch
+# skip-rule: trasno-gl_lanzar
 #. Help manual
 #: activities/target/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -26804,12 +26811,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Escribe a palabra completa mentres cae e antes de que chegue ao chan."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Engadiuse unha tradución ao letón."
+msgstr "Engadiuse unha tradución ao sánscrito."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -27271,6 +27275,7 @@ msgctxt "DialogAbout|"
 msgid "GCompris Home Page: https://gcompris.net"
 msgstr "Páxina principal de GCompris: https://gcompris.net"
 
+# skip-rule: trasno-provide
 #. Replace the link with the page in your language if it exists, else keep the english page link
 #: core/DialogAbout.qml:67
 msgctxt "DialogAbout|"
