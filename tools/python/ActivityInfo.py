@@ -6,7 +6,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from PyQt5.QtCore import pyqtProperty, QObject
+from PySide6.QtCore import Property, QObject
 
 class ActivityInfo(QObject):
     def __init__(self, parent=None):
@@ -28,7 +28,7 @@ class ActivityInfo(QObject):
         self._levels = 0
         self._enabled = True
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def section(self):
         return self._section
 
@@ -36,7 +36,7 @@ class ActivityInfo(QObject):
     def section(self, section):
         self._section = section
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def author(self):
         return self._author
 
@@ -44,7 +44,7 @@ class ActivityInfo(QObject):
     def author(self, author):
         self._author = author
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def icon(self):
         return self._icon
 
@@ -52,7 +52,7 @@ class ActivityInfo(QObject):
     def icon(self, icon):
         self._icon = icon
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def description(self):
         return self._description
 
@@ -60,7 +60,7 @@ class ActivityInfo(QObject):
     def description(self, description):
         self._description = description
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def name(self):
         return self._name
 
@@ -68,7 +68,7 @@ class ActivityInfo(QObject):
     def name(self, name):
         self._name = name
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def goal(self):
         return self._goal
 
@@ -76,7 +76,7 @@ class ActivityInfo(QObject):
     def goal(self, goal):
         self._goal = goal
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def prerequisite(self):
         return self._prerequisite
 
@@ -84,7 +84,7 @@ class ActivityInfo(QObject):
     def prerequisite(self, prerequisite):
         self._prerequisite = prerequisite
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def manual(self):
         return self._manual
 
@@ -92,7 +92,7 @@ class ActivityInfo(QObject):
     def manual(self, manual):
         self._manual = manual
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def credit(self):
         return self._credit
 
@@ -100,7 +100,7 @@ class ActivityInfo(QObject):
     def credit(self, credit):
         self._credit = credit
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def title(self):
         return self._title
 
@@ -108,7 +108,7 @@ class ActivityInfo(QObject):
     def title(self, title):
         self._title = title
 
-    @pyqtProperty(int)
+    @Property(int)
     def difficulty(self):
         return self._difficulty
 
@@ -116,7 +116,7 @@ class ActivityInfo(QObject):
     def difficulty(self, difficulty):
         self._difficulty = difficulty
 
-    @pyqtProperty(int)
+    @Property(int)
     def createdInVersion(self):
         return self._createdInVersion
 
@@ -124,7 +124,7 @@ class ActivityInfo(QObject):
     def createdInVersion(self, createdInVersion):
         self._createdInVersion = createdInVersion
 
-    @pyqtProperty('QString')
+    @Property('QString')
     def levels(self):
         return self._levels
 
@@ -132,7 +132,7 @@ class ActivityInfo(QObject):
     def levels(self, levels):
         self._levels = levels
 
-    @pyqtProperty(bool)
+    @Property(bool)
     def enabled(self):
         return self._enabled
 

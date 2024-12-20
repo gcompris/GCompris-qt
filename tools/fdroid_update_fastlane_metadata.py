@@ -13,8 +13,8 @@ import glob
 import subprocess
 import xml.etree.ElementTree as ET
 
-from PyQt5.QtCore import QCoreApplication, QUrl
-from PyQt5.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
+from PySide6.QtCore import QCoreApplication, QUrl
+from PySide6.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
 import polib
 
 from python.ActivityInfo import ActivityInfo

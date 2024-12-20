@@ -6,10 +6,10 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from PyQt5.QtCore import pyqtProperty, QObject, pyqtSignal
+from PySide6.QtCore import QObject, Property, Signal
 
 class ApplicationInfo(QObject):
-    box2DInstalledChanged = pyqtSignal()
+    box2DInstalledChanged = Signal()
 
     def __init__(self, parent=None):
         super().__init__(parent)
@@ -18,7 +18,7 @@ class ApplicationInfo(QObject):
         self._isBox2DInstalled = True
         self._isMobile = False
 
-    @pyqtProperty(bool, notify=box2DInstalledChanged)
+    @Property(bool, notify=box2DInstalledChanged)
     def isBox2DInstalled(self):
         return self._isBox2DInstalled
 
@@ -26,5 +26,5 @@ class ApplicationInfo(QObject):
     def isBox2DInstalled(self, isBox2DInstalled):
         self._isBox2DInstalled = isBox2DInstalled
 
-    def createSingleton(self, engine):
+    def createSingleton(self):
         return ApplicationInfo(self)

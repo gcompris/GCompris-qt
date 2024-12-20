@@ -12,8 +12,8 @@ import re
 import glob
 
 import polib
-from PyQt5.QtCore import QCoreApplication, QUrl
-from PyQt5.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
+from PySide6.QtCore import QCoreApplication, QUrl
+from PySide6.QtQml import qmlRegisterType, QQmlComponent, QQmlEngine
 from python.ActivityInfo import ActivityInfo
 
 if len(sys.argv) < 2:
