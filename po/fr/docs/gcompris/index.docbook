@@ -72,13 +72,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->20/09/2024</date>
+>2025-01-30</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->4.2</releaseinfo>
+>25.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -586,15 +586,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={renderer}</entry>
+<entry
+>Spécifie le moteur de rendu graphique à utiliser. Sur toutes les plateformes, opengl et le rendu logiciel sont disponibles. Sous Windows, vous pouvez utiliser direct3d11 ou direct3d12 (si GCompris a été compilé avec Qt
+>=6.6). Sur MacOS, vous pouvez utiliser metal.</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Utilise le mode de rendu logiciel à la place du mode avec OpenGL (cela devrait fonctionner avec n'importe quelle carte graphique).</entry>
+>Utilise le mode de rendu logiciel à la place du mode openGL (cela devrait fonctionner avec n'importe quelle carte graphique). Utiliser --renderer=software de préférence, cette option sera supprimée.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques).</entry>
+>Utilise le mode de rendu avec OpenGL à la place du mode de rendu logiciel (plus rapide et avec des effets graphiques mais peut ne pas fonctionner sur certaines cartes graphiques). Utiliser --renderer=opengl de préférence, cette option sera supprimée.</entry>
 </row>
 </tbody>
 </tgroup>

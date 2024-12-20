@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-10-20 18:16+0200\n"
+"PO-Revision-Date: 2024-12-19 18:56+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -2468,7 +2468,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -9337,7 +9337,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board11_0.qml:66
 msgctxt "board11_0|"
 msgid "Friuli Venezia Giulia"
-msgstr ""
+msgstr "Friuli Venezia Giulia"
 
 #. Region of Italy: Emilia-Romagna
 #: activities/geo-country/resource/board/board11_0.qml:73
@@ -9968,7 +9968,7 @@ msgstr ""
 #: activities/geo-country/resource/board/board15_1.qml:59
 msgctxt "board15_1|"
 msgid "Fife"
-msgstr ""
+msgstr "Fife"
 
 #. Council areas of Scotland: Scottish Borders
 #: activities/geo-country/resource/board/board15_1.qml:66
@@ -10271,7 +10271,7 @@ msgstr "Navarre"
 #: activities/geo-country/resource/board/board18_0.qml:120
 msgctxt "board18_0|"
 msgid "Extremadura"
-msgstr ""
+msgstr "Extremadura"
 
 #. Autonomous communities of Spain: Canary Islands
 #: activities/geo-country/resource/board/board18_0.qml:127
@@ -13745,7 +13745,7 @@ msgstr "Selectionate"
 #: activities/guesscount/ActivityConfig.qml:68
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
-msgstr ""
+msgstr "non selectionate."
 
 #. Activity title
 #: activities/guesscount/ActivityInfo.qml:19
@@ -24193,39 +24193,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition"
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Apprende addition"
+msgstr "Addition vertical"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Apprende addition."
+msgstr "Resolve le date addition."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn addition."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Apprende addition."
+msgstr "Apprende a resolver additiones vertical."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Addition."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Addition."
+msgstr "Tabellas de Addition."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -24308,22 +24296,16 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Practica subtraction."
+msgstr "Subtraction vertical."
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Practica subtraction."
+msgstr "Resolve le date subtraction."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -24336,12 +24318,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtraction."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Subtraction."
+msgstr "Tabellas de Subtraction."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -24445,29 +24424,24 @@ msgstr ""
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Scribe:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Resolve: "
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Titulo: %1"
+msgstr "Resolve: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Io es preste"
+msgstr "Preste"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -25349,7 +25323,7 @@ msgstr ""
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
