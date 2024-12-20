@@ -108,6 +108,10 @@ add_definitions(
     -DQT_NO_FOREACH
 )
 
+if(UNIX AND NOT APPLE AND NOT ANDROID)
+    find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS WaylandClient)
+endif()
+
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL)
     set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
