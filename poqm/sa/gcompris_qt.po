@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-19 22:10+0530\n"
+"PO-Revision-Date: 2024-12-20 21:51+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -2120,7 +2120,7 @@ msgstr "मूषक-हेरफेरम् ।"
 #: activities/baby_mouse/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "The screen has 3 sections:"
-msgstr "पटलस्य ३ विभागाः सन्ति : १."
+msgstr "पटलस्य ३ विभागाः सन्ति :"
 
 #: activities/baby_mouse/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -2721,7 +2721,7 @@ msgstr "स्वस्य कठिनतां चिनुत"
 #: activities/bargame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (against Tux)"
-msgstr "बरगमे (टक्सविरुद्ध) २."
+msgstr "बरगमे (टक्सविरुद्ध)"
 
 #. Help title
 #: activities/bargame/ActivityInfo.qml:17
@@ -2760,7 +2760,7 @@ msgstr ""
 #: activities/bargame_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Bargame (with a friend)"
-msgstr "बर्गमे (मित्रेण सह) २."
+msgstr "बर्गमे (मित्रेण सह)"
 
 #. Help manual
 #: activities/bargame_2players/ActivityInfo.qml:24
@@ -4258,7 +4258,7 @@ msgstr ""
 #: activities/chess/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (against Tux)"
-msgstr "शतरंजं क्रीडन्तु (टक्सविरुद्धम्) २."
+msgstr "शतरंजं क्रीडन्तु (टक्सविरुद्धम्)"
 
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
@@ -4390,7 +4390,7 @@ msgstr "नहि"
 #: activities/chess_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Play chess (with a friend)"
-msgstr "शतरंजं क्रीडन्तु (मित्रेण सह) २."
+msgstr "शतरंजं क्रीडन्तु (मित्रेण सह)"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_2players/ActivityInfo.qml:24
@@ -5897,7 +5897,7 @@ msgstr ""
 #: activities/digital_electricity/components/NandGate.qml:24
 msgctxt "NandGate|"
 msgid "NOT (A AND B)"
-msgstr "न (क च ख) २."
+msgstr "न (क च ख)"
 
 #: activities/digital_electricity/components/NorGate.qml:21
 msgctxt "NorGate|"
@@ -5912,7 +5912,7 @@ msgstr ""
 #: activities/digital_electricity/components/NorGate.qml:24
 msgctxt "NorGate|"
 msgid "NOT (A OR B)"
-msgstr "न (क वा ख) २."
+msgstr "न (क वा ख)"
 
 #: activities/digital_electricity/components/NotGate.qml:20
 msgctxt "NotGate|"
@@ -14020,7 +14020,7 @@ msgstr "Space, Return or Enter: स्वस्य उत्तरस्य प�
 #: activities/graduated_line_read/graduated_line_read.js:116
 msgctxt "graduated_line_read|"
 msgid "(variable boundaries)"
-msgstr "(चर सीमाः) २."
+msgstr "(चर सीमाः)"
 
 #: activities/graduated_line_read/GraduatedLineRead.qml:15
 msgctxt "GraduatedLineRead|"
@@ -14445,7 +14445,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Guess 24"
-msgstr "अनुमानं २४"
+msgstr "अनुमानं"
 
 #. Help title
 #: activities/guess24/ActivityInfo.qml:16
@@ -17622,7 +17622,7 @@ msgstr ""
 #: activities/memory-math-div/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Division table of 1."
-msgstr "विभागसारणी १."
+msgstr "विभागसारणी"
 
 #: activities/memory-math-div-tux/resource/10/Data.qml:15
 #: activities/memory-math-div/resource/10/Data.qml:15
@@ -17891,7 +17891,7 @@ msgstr ""
 #: activities/memory-math-mult/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Multiplication table of 1."
-msgstr "गुणनसारणी १."
+msgstr "गुणनसारणी"
 
 #: activities/memory-math-mult-tux/resource/10/Data.qml:15
 #: activities/memory-math-mult/resource/10/Data.qml:15
@@ -18326,7 +18326,7 @@ msgstr "त्यजतु - GCompris (Ctrl+Q) त्यजतु"
 #: activities/menu/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "The stars show suitable age groups for each activity:"
-msgstr "ताराणि प्रत्येकस्य कार्यस्य कृते उपयुक्तानि आयुवर्गाणि दर्शयन्ति- १."
+msgstr "ताराणि प्रत्येकस्य कार्यस्य कृते उपयुक्तानि आयुवर्गाणि दर्शयन्ति-"
 
 #: activities/menu/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
@@ -18556,7 +18556,7 @@ msgstr "फन्ट् अक्षरान्तरम्"
 #: activities/menu/ConfigurationItem.qml:622
 msgctxt "ConfigurationItem|"
 msgid "Mixed case (default)"
-msgstr "मिश्रितः प्रकरणः (पूर्वनिर्धारितः) २."
+msgstr "मिश्रितः प्रकरणः (पूर्वनिर्धारितः)"
 
 #: activities/menu/ConfigurationItem.qml:626
 msgctxt "ConfigurationItem|"
@@ -19233,7 +19233,7 @@ msgstr "२४ वस्तूनि यावत्, बहुपङ्क्�
 #: activities/nine_men_morris/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (against Tux)"
-msgstr "नव पुरुषाणां मोरिस् (टक्सविरुद्धम्) २."
+msgstr "नव पुरुषाणां मोरिस् (टक्सविरुद्धम्)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
@@ -19351,7 +19351,7 @@ msgstr "पुनः प्रयासं कुर्वन्तु"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Nine men's morris (with a friend)"
-msgstr "नव पुरुषस्य मोरिस् (मित्रेण सह) २."
+msgstr "नव पुरुषस्य मोरिस् (मित्रेण सह)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
@@ -19414,7 +19414,7 @@ msgstr "नवीनं टिप्पणी: %1"
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
-msgstr "%1% २."
+msgstr "%1%"
 
 #: activities/note_names/NoteNames.qml:451
 msgctxt "NoteNames|"
@@ -19577,7 +19577,7 @@ msgid ""
 "of 0 when divided by 2."
 msgstr ""
 "यथा - १२, ३८, ५२, ६८, १०२, ११८, १६८, १८८, ५०२, ५३२, ७००, ७९८, ८४२, ८९२, १००० "
-"।एताः सर्वाः सङ्ख्याः समसङ्ख्याः यतः ते विभक्ते ० शेषं त्यजन्ति २."
+"।एताः सर्वाः सङ्ख्याः समसङ्ख्याः यतः ते विभक्ते ० शेषं त्यजन्ति"
 
 #: activities/numbers-odd-even/resource/Tutorial3.qml:22
 msgctxt "Tutorial3|"
@@ -19592,12 +19592,12 @@ msgstr ""
 #: activities/numbers-odd-even/resource/TutorialBase.qml:32
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
-msgstr "समसङ्ख्यां चिनोतु : १."
+msgstr "समसङ्ख्यां चिनोतु :"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:32
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
-msgstr "विषमसङ्ख्यां चिनोतु : १."
+msgstr "विषमसङ्ख्यां चिनोतु :"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:57
 #: activities/numbers-odd-even/resource/TutorialBase.qml:87
@@ -20299,7 +20299,7 @@ msgstr "यावत् सः लक्ष्यं न प्राप्न�
 #: activities/path_encoding_relative/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Keyboard controls:"
-msgstr "कीबोर्डनियन्त्रणानि : १."
+msgstr "कीबोर्डनियन्त्रणानि :"
 
 #: activities/path_encoding/ActivityInfo.qml:25
 #: activities/path_encoding_relative/ActivityInfo.qml:26
@@ -21535,7 +21535,7 @@ msgstr "निर्देशान् चिनोतु"
 #: activities/programmingMaze/programmingMaze.js:96
 msgctxt "programmingMaze|"
 msgid "Instruction Area:"
-msgstr "निर्देशक्षेत्रम् : १."
+msgstr "निर्देशक्षेत्रम् :"
 
 #: activities/programmingMaze/programmingMaze.js:97
 msgctxt "programmingMaze|"
@@ -21565,7 +21565,7 @@ msgstr "<b>3. दक्षिणं गच्छतु :</b> टक्सं द
 #: activities/programmingMaze/programmingMaze.js:104
 msgctxt "programmingMaze|"
 msgid "Main Function:"
-msgstr "मुख्य कार्य : १."
+msgstr "मुख्य कार्य :"
 
 #: activities/programmingMaze/programmingMaze.js:105
 msgctxt "programmingMaze|"
@@ -23874,7 +23874,7 @@ msgstr "सप्तमः बृहत्तमः"
 #: activities/solar_system/Dataset.js:24
 msgctxt "Dataset|"
 msgid "The temperature of the Sun is around:"
-msgstr "सूर्यस्य तापमानं प्रायः : १."
+msgstr "सूर्यस्य तापमानं प्रायः :"
 
 #: activities/solar_system/Dataset.js:25
 msgctxt "Dataset|"
@@ -23949,7 +23949,7 @@ msgstr "१५ मिनिट्"
 #: activities/solar_system/Dataset.js:42
 msgctxt "Dataset|"
 msgid "The Sun is as big as:"
-msgstr "सूर्यः तावत् विशालः अस्ति : १."
+msgstr "सूर्यः तावत् विशालः अस्ति :"
 
 #: activities/solar_system/Dataset.js:43
 msgctxt "Dataset|"
@@ -24059,7 +24059,7 @@ msgstr "बुधस्य कति चन्द्राः सन्ति ?"
 #: activities/solar_system/Dataset.js:75
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mercury is:"
-msgstr "बुधग्रहे अधिकतमं तापमानं भवति : १."
+msgstr "बुधग्रहे अधिकतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:76 activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -24148,7 +24148,7 @@ msgstr "क्षण"
 #: activities/solar_system/Dataset.js:108
 msgctxt "Dataset|"
 msgid "Venus is as heavy as:"
-msgstr "शुक्रः तावत् गुरुः अस्ति यथा- १."
+msgstr "शुक्रः तावत् गुरुः अस्ति यथा-"
 
 #: activities/solar_system/Dataset.js:109
 msgctxt "Dataset|"
@@ -24223,7 +24223,7 @@ msgstr "२४३ पृथिवीदिनानि"
 #: activities/solar_system/Dataset.js:132
 msgctxt "Dataset|"
 msgid "The maximum temperature on Venus is:"
-msgstr "शुक्रे अधिकतमं तापमानं भवति : १."
+msgstr "शुक्रे अधिकतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:133
 #: activities/solar_system/Dataset.js:184
@@ -24363,7 +24363,7 @@ msgstr "पृथिव्याः कति ऋतुः अस्ति ?"
 #: activities/solar_system/Dataset.js:183
 msgctxt "Dataset|"
 msgid "The maximum temperature on Earth is:"
-msgstr "पृथिव्यां अधिकतमं तापमानं भवति : १."
+msgstr "पृथिव्यां अधिकतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:184
 msgctxt "Dataset|"
@@ -24394,7 +24394,7 @@ msgstr "सौरमण्डले मंगलग्रहः कस्मि�
 #: activities/solar_system/Dataset.js:210
 msgctxt "Dataset|"
 msgid "The maximum temperature on Mars is:"
-msgstr "मंगलग्रहे अधिकतमं तापमानं भवति : १."
+msgstr "मंगलग्रहे अधिकतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:211
 msgctxt "Dataset|"
@@ -24498,7 +24498,7 @@ msgstr "द्वितीयं बृहत्तमम्"
 #: activities/solar_system/Dataset.js:267
 msgctxt "Dataset|"
 msgid "The minimum temperature on Jupiter is:"
-msgstr "बृहस्पतिग्रहे न्यूनतमं तापमानं भवति : १."
+msgstr "बृहस्पतिग्रहे न्यूनतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:268
 msgctxt "Dataset|"
@@ -24598,7 +24598,7 @@ msgstr "१०.५ घण्टाः"
 #: activities/solar_system/Dataset.js:324
 msgctxt "Dataset|"
 msgid "The minimum temperature on Saturn is:"
-msgstr "शनिग्रहे न्यूनतमं तापमानं भवति : १."
+msgstr "शनिग्रहे न्यूनतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:325
 #: activities/solar_system/Dataset.js:376
@@ -24709,7 +24709,7 @@ msgstr "सौरमण्डलस्य अन्येषां ग्रह�
 #: activities/solar_system/Dataset.js:375
 msgctxt "Dataset|"
 msgid "The maximum temperature on Uranus is:"
-msgstr "यूरेनसस्य उपरि अधिकतमं तापमानं भवति : १."
+msgstr "यूरेनसस्य उपरि अधिकतमं तापमानं भवति :"
 
 #: activities/solar_system/Dataset.js:376
 msgctxt "Dataset|"
@@ -24797,7 +24797,7 @@ msgstr "सटीकता : %1% ."
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
-msgstr "%1% २."
+msgstr "%1%"
 
 #: activities/solar_system/QuizScreen.qml:291
 #, qt-format
@@ -25601,7 +25601,7 @@ msgstr "३० तः ५० पर्यन्तं परिणामः ।"
 #: activities/tic_tac_toe/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (against Tux)"
-msgstr "Tic tac toe (टक्सविरुद्ध) २."
+msgstr "Tic tac toe (टक्सविरुद्ध)"
 
 #. Help title
 #: activities/tic_tac_toe/ActivityInfo.qml:20
@@ -25636,7 +25636,7 @@ msgstr "यदा भवन्तः स्तरं वर्धयन्ति
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Tic tac toe (with a friend)"
-msgstr "टिक् टक् टो (मित्रेण सह) २."
+msgstr "टिक् टक् टो (मित्रेण सह)"
 
 #. Help manual
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:26
@@ -25950,7 +25950,7 @@ msgstr "आत्त"
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "ऊर्ध्वाधरहरणम् (क्षतिपूर्तिः) २."
+msgstr "ऊर्ध्वाधरहरणम् (क्षतिपूर्तिः)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26756,7 +26756,7 @@ msgstr "लेखकः:"
 #: core/DialogHelp.qml:53
 msgctxt "DialogHelp|"
 msgid "Prerequisite:"
-msgstr "पूर्वापेक्षा : १."
+msgstr "पूर्वापेक्षा :"
 
 #: core/DialogHelp.qml:58
 msgctxt "DialogHelp|"
