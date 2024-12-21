@@ -28244,8 +28244,8 @@ msgid ""
 msgstr ""
 "Utilise le moteur de rendu logiciel à la place du moteur openGL (cette "
 "option est plus lente mais marche potentiellement avec toutes les cartes "
-"graphiques. Qt 5.8 minimum). Cette option est obsolète, il faut utiliser --"
-"renderer=software à la place."
+"graphiques). Cette option est obsolète, il faut utiliser --renderer=software "
+"à la place."
 
 #: core/main.cpp:105
 msgctxt "QObject|"
