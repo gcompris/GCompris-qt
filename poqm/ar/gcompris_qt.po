@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-10-17 08:39+0400\n"
+"PO-Revision-Date: 2024-12-21 16:32+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -1295,7 +1295,7 @@ msgstr "أكمل ترتيب الفاكهة."
 #: activities/algorithm/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "تدريب الارتباط المنطقي"
+msgstr "تدريب الارتباط المنطقي."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -2193,7 +2193,7 @@ msgstr "أول محرر نصوص لي"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr "اكتب نصوصك الأولى"
+msgstr "اكتب نصوصك الأولى."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
@@ -2612,7 +2612,7 @@ msgstr "لقد اخترت مجموعة مستويات مخصصة من المست
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "حسنا"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -4438,7 +4438,7 @@ msgstr "العب نهاية لعبة الشطرنج مع تُكس."
 #: activities/chess_partyend/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "أَنْهِ لعبة الشطرنج"
+msgstr "أَنْهِ لعبة الشطرنج."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4884,7 +4884,7 @@ msgstr "تعرّف على الأشكال الكبيرة للحروف."
 #: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Manual"
-msgstr "إرشادات:"
+msgstr "إرشادات"
 
 #: activities/clickanddraw/ActivityConfig.qml:31
 #: activities/drawletters/ActivityConfig.qml:31
@@ -4923,11 +4923,6 @@ msgstr "تحريك الفأرة والنّقر بدقّة على النّقط."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -4935,7 +4930,8 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "ارسم الصورة بالنقر على النقاط حسب الترتيب،في كل مرّة تحدد نقطة ، تتلون التي "
-"بعدها بالأزرق."
+"بعدها بالأزرق. يمكنك النقر والسحب من نقطة لنقطة موالية، أو النقر على نقطة "
+"بعد أخرى."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -5744,7 +5740,7 @@ msgstr "كهرباء رقمية"
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr "أنشِئ دارتك المنطقية الرقمية وجرّبها بالمحاكاة."
+msgstr "أنشِئ دارتك المنطقية الرقمية وجرّبها بالمحاكاة"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -6456,6 +6452,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"ارسم الحروف بتوصيل النقاط بالترتيب الصحيح.  انقر واسحب من نقطة إلى أخرى، أو "
+"انقر على كل نقطة واحدة تلو الأخرى."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6483,6 +6481,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"ارسم الأرقام بتوصيل النقاط بالترتيب الصحيح.  انقر واسحب من نقطة إلى أخرى، أو "
+"انقر على كل نقطة واحدة تلو الأخرى."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -9476,7 +9476,7 @@ msgstr "أعد رسم الزخرفة وأكملها."
 #: activities/frieze/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn algorithms."
-msgstr "تعلّم الخوارزميات"
+msgstr "تعلّم الخوارزميات."
 
 #. Help manual
 #: activities/frieze/ActivityInfo.qml:22
@@ -16649,7 +16649,7 @@ msgstr "احسب عدد النجوم تحت القبّعة السحريّة."
 #: activities/magic-hat-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr "تعلّم الطّرح"
+msgstr "تعلّم الطّرح."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
@@ -19393,19 +19393,15 @@ msgstr "تعلّم التسلسل العددي."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"ارسم الصورة بالنقر على النقاط حسب الترتيب،في كل مرّة تحدد نقطة ، تتلون التي "
-"بعدها بالأزرق."
+"ارسم الصورة بالنقر على النقاط حسب الترتيب الرقمي، في كل مرّة تحدد نقطة ، "
+"تتلون التي بعدها بالأزرق. يمكنك النقر والسحب من نقطة لنقطة موالية، أو النقر "
+"على نقطة بعد أخرى."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -23225,7 +23221,7 @@ msgstr "ارسم لوحتك."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr "عبّر عن إبداعك بالرسم"
+msgstr "عبّر عن إبداعك بالرسم."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -23247,62 +23243,53 @@ msgstr "ارسم"
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "استخدم أدوات الرسم الرقمية المتنوعة لرسم الصور."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "تعلّم مضاعفات الأعداد وقواسمها."
+msgstr "أدوات رسم للتدرب على الأرقام."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr ""
+msgstr "حدد الأدوات والألوان من لوحة الأدوات وارسم الصور.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "كونترول + Z: للإِلْغَاء"
+msgstr "Ctrl + Z: تراجع عن آخر عملية"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: إعادة العملية الأخيرة"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "كونترول + A: لاختيار النَّص بأكمله"
+msgstr "Ctrl + S: احفظ الصورة"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: افتح صورة"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, حذف أو Backspace: إنشاء صورة جديدة"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "مفهوم تنعيم الفرشاة من:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "مفهوم فرشاة الرسم من:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
 msgctxt "BackgroundColorSelector|"
@@ -23317,7 +23304,7 @@ msgstr "صورة الخلفية"
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "أدوات الممحاة"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
@@ -23325,17 +23312,14 @@ msgid "Drawing Tools"
 msgstr "أدوات الرسم"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "طابق اللون"
+msgstr "لوحة الألوان"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "إعادة تعيين لوح الألوان"
 
 #: activities/sketch/ColorSelector.qml:210
 msgctxt "ColorSelector|"
@@ -23364,7 +23348,7 @@ msgstr "الخفة"
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "إعادة تعيين الألوان"
 
 #: activities/sketch/ColorsPanel.qml:157
 msgctxt "ColorsPanel|"
@@ -23405,38 +23389,32 @@ msgstr "أنشئ صورة جديدة"
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "زوايا مستديرة"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "أدوات الهندسة"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "حجم الدائرة الداخلية"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "أدوات التدرج"
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "لم تقم بتحديد أي علامة. هل تريد محو كل العلامات؟"
+msgstr "لم تحفظ الصورة. هل ترغب في إغلاق هذا النشاط؟"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "أتريد تنزيل ملفّاتها الصّوتيّة المقابلة الآن؟"
+msgstr "أتريد حذف هذه الصورة؟"
 
 #: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
@@ -23451,7 +23429,7 @@ msgstr "لا"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "أداة الختم"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
@@ -23461,7 +23439,7 @@ msgstr "أداة النصوص"
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "اكتب نصًا هنا"
 
 #: activities/sketch/ToolsPanel.qml:253
 msgctxt "ToolsPanel|"
@@ -23471,7 +23449,7 @@ msgstr "أدوات"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "إعادة تعيين إعدادات الأدوات"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
@@ -25603,39 +25581,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "تدرّب على عملية الجمع."
+msgstr "الجمع عموديا"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "أبن برجا مماثلا للمعطى."
+msgstr "احسب الجمع المعطى."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "تدرّب على عمليّة القِسمة."
+msgstr "تدرّب على عمليّة الجمع عموديًا."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "جدول عملية جمع 1."
+msgstr "جداول الجمع."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -25655,85 +25621,87 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"في الجمع العمودي، تُكتب الأعداد بعضها فوق بعض. وتحاذى رقما لرقم عموديًا. تُكتب "
+"النتيجة على السطر السفلي. لحل الجمع، ابدأ بالجمع رقمًا رقمًا من اليمين، واكتب "
+"النتيجة في السطر السفلي من نفس العمود. إذا أعطت النتيجة عددًا ذا رقمين، فاكتب "
+"رقم الآحاد فقط في النتيجة، وأضف رقم العشرات بجوار الرقم العلوي في العمود "
+"التالي: يُسمى هذا الاحتفاظ. ثم اجمع أرقام العمود التالي، بما في ذلك الاحتفاظ، "
+"وكرر العملية حتى تنهي. بعد الانتهاء، انقر فوق الزر موافق للتحقق من صحة "
+"إجابتك. في بعض المستويات، ستحتاج إلى كتابة العملية المعطاة قبل حلها؛ في هذه "
+"الحالة، انقر فوق الزر جاهز عندما تنهي كتابة العملية كتابة صحيحة ثم حلها."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "حل عملية الجمع، رقمين، سطرين، دون احتفاظ."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "حل عملية الجمع، 4أرقام، 3 أسطر."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "حل عملية الجمع، 4أرقام، 4 أسطر."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "اكتب عملية جمع من عندك ثم حلها."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "اكتب عملية الجمع ثم حلها، رقمين، سطرين، دون احتفاظ."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "حل عملية الجمع، رقمين، سطرين."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "اكتب عملية جمع ثم حلها، رقمين، سطرين."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "اكتب عملية الجمع ثم حلها، رقمين، 3 أسطر."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "حل عملية الجمع، 3أرقام، سطرين."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "اكتب عملية الجمع ثم حلها، 3 أرقام، سطرين."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "حل عملية الجمع، 3 أرقام، 3 أسطر."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "حل عملية الجمع، 4 أرقام، سطرين."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "تمرّن على الطرح."
+msgstr "الطرح عموديًا"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "اختر التعليمات"
+msgstr "احسب الطرح المعطى."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -25741,17 +25709,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "تعلم  حل عمليات الطرح، بالاستعارة وطريقة التجميع."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "جَدْوَل الطَّرْح لِلعَدَد 1."
+msgstr "جَداول الطَّرْح."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -25779,144 +25744,121 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"في عملية الطرح العمودي، يُكتب العددان أسفل بعضهما البعض، رقما تحت رقم، محاذين "
+"إلى اليمين. ويُسمى العدد العلوي بالمطروح منه: أي يُطرح منه عدد آخر للحصول على "
+"الفرق. ويُسمى العدد السفلي بالمطروح: وهو العدد الذي ننقصه من العدد الأول "
+"للحصول على الفرق. وتُكتب النتيجة على السطر السفلي. لحل عملية الطرح، ابدأ بطرح "
+"الرقم السفلي في العمود الأول من الرقم العلوي ابتداء من العمود الأيمن، واكتب "
+"النتيجة على السطر السفلي في نفس العمود. إذا كان الرقم العلوي أصغر من الرقم "
+"السفلي، فيمكنك الاقتراض من المطروح منه في العمود التالي: على سبيل المثال، "
+"إذا أضفت 10 وحدات إلى الرقم العلوي، فيجب عليك إزالة وحدة واحدة من الرقم "
+"العلوي في العمود التالي. وهذا ما يسمى بالاقتراض عن طريق التجميع. للقيام بذلك "
+"في هذا النشاط، انقر فوق المستطيل الفارغ على يسار الرقم العلوي، وحدد 1، وفي "
+"العمود التالي انقر فوق المستطيل الفارغ على يمين الرقم العلوي وحدد -1. ثم "
+"اكتب نتيجة العمود في السطر السفلي، وافعل الأمر نفسه في الأعمدة التالية حتى "
+"تنتهي العملية. بمجرد العثور على النتيجة، انقر فوق زر موافق للتحقق من صحة "
+"إجابتك. في بعض المستويات، ستحتاج إلى كتابة العملية المعطاة قبل حلها؛ في هذه "
+"الحالة، انقر فوق زر جاهز عندما تكون العملية مكتوبة بشكل صحيح ثم حلها."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "حل عملية الطرح، رقمين، سطرين، دون احتفاظ."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "احسب الطرح على 4 أو 5 أرقام، 3 أسطر."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "احسب الطرح، 4 أو 5 أرقام، 4 أسطر."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "تَعَلّم جَدْوَل الطَّرْح لِلعَدَد 1."
+msgstr "اكتب عملية طرح من عندك ثم حلها."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "اكتب وحل عملية الطرح، رقمين، سطرين، دون احتفاظ."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "احسب الطرح، رقمين أو 3 أرقام، سطرين."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "اكتب عملية الطرح، رقمين أو 3 أرقام، سطرين."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "اكتب عملية الطرح ثم حلها، رقمين أو 3 أرقام، 3 أسطر."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "احسب عملية الطرح، 3 أو4 أرقام، سطرين."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "اكتب عملية الطرح ثم حلها، 3 أو 4 أرقام، سطرين."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "احسب عملية الطرح، 3 أو 4 أرقام، 3 أسطر."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "الطرح مع 1 و 2 و 3."
+msgstr "احسب عملية الطرح، 4 أو 5 أرقام، سطرين."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "اكتب:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "حُلّ:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "عنوان: %1"
+msgstr "احسب: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "أنا جاهز"
+msgstr "جاهز"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "تدرّب على عمليّة الطّرح."
+msgstr "الطرح عموديا (تعويض)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -25924,7 +25866,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr ""
+msgstr "تعلم الطرح عموديًا، بالاستعارة وطريقة التعويض."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -25952,6 +25894,20 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"في عملية الطرح العمودي، يُكتب العددان أسفل بعضهما البعض، رقما تحت رقم، محاذين "
+"إلى اليمين. ويُسمى العدد العلوي بالمطروح منه، والذي يُطرح منه عدد آخر للحصول "
+"على الفرق.ويُسمى العدد السفلي بالمطروح: وهو العدد الذي ننقصه من العدد الأول "
+"للحصول على الفرق.وتُكتب النتيجة على السطر السفلي. لحل عملية الطرح، ابدأ بطرح "
+"الرقم السفلي في العمود الأول من الرقم العلوي ابتداء من العمود الأيمن، واكتب "
+"النتيجة على السطر السفلي في نفس العمود. إذا كان الرقم العلوي أصغر من الرقم "
+"السفلي، فيمكنك الاقتراض من المطروح منه في العمود التالي: على سبيل المثال، "
+"إذا أضفت 10 وحدات إلى الرقم العلوي، فأنت بحاجة إلى إضافة وحدة واحدة إلى "
+"الرقم السفلي للعمود التالي. وهذا ما يسمى بطريقة الاقتراض بالتعويض. للقيام "
+"بذلك في هذا النشاط، انقر فوق المستطيل الفارغ على يسار الرقم العلوي، وحدد 1، "
+"وفي العمود التالي انقر فوق المستطيل الفارغ على يمين الرقم السفلي وحدد +1. ثم "
+"اكتب نتيجة العمود في السطر السفلي، وافعل الشيء نفسه في الأعمدة التالية حتى "
+"تنتهي العملية.. في بعض المستويات، ستحتاج إلى كتابة العملية المعطاة قبل حلها؛ "
+"في هذه الحالة، انقر فوق زر جاهز عندما تكون العملية مكتوبة بشكل صحيح ثم حلها."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26111,12 +26067,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "اكتب الكلمات المتساقطة قبل أن تصل إلى الأرض."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "أضيفت الترجمة إلى اللغة اللاتفية"
+msgstr "أضيفت الترجمة إلى اللغة السنسكريتية"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -26145,24 +26098,17 @@ msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
-msgstr ""
+msgstr "تطبيق تبديل اللغة دون الحاجة إلى إعادة تشغيل البرنامج."
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "إضافة صفحة بدء التشغيل"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
-msgstr ""
-"New command-line option to list all the activities and start on a specific "
-"one"
+msgstr "خيار جديد  في سطر الأوامر، لتعديل معالج العرض (--renderer renderer)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -26854,7 +26800,7 @@ msgstr "تم حذف %1 بِنَجاح!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "حسنا"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -26989,7 +26935,7 @@ msgid ""
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "استخدم معالج عرض برمجي بدلًا من  أوبن جي ال (أبطأ ولكنه يعمل على أي بطاقة "
-"رسومية). هجرت لذا استعمل --renderer=opengl"
+"رسومية). لم تعد مستعملة، لذا استعمل بدلا عنها --renderer=opengl."
 
 #: core/main.cpp:105
 msgctxt "QObject|"
@@ -26998,7 +26944,7 @@ msgid ""
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "استخدم عارض OpenGL بدلاً من البرمجي (أسرع ولكن من المحتمل أن يتعطل بناءً على "
-"بطاقتك الرسومية). هجرت لذا استعمل --renderer=opengl"
+"بطاقتك الرسومية). لم تعد مستعملة، لذا استعمل بدلا عنها --renderer=opengl."
 
 #: core/main.cpp:109
 msgctxt "QObject|"

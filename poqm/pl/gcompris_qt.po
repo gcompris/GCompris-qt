@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-14 13:14+0100\n"
+"PO-Revision-Date: 2024-12-21 11:11+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -26812,12 +26812,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napisz całe spadające słowo, zanim spadnie na ziemię."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Dodano tłumaczenie na łotewski."
+msgstr "Dodano tłumaczenie na sanskryt"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-12-09 08:17+0200\n"
+"PO-Revision-Date: 2024-12-20 14:22+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 "X-Qt-Contexts: true\n"
 "X-Poedit-Bookmarks: -1,2919,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
@@ -13789,7 +13789,7 @@ msgstr "כפולות של %1 כולל %2 או %3 אך %4 הוא לא כפולה 
 #, qt-format
 msgctxt "Warning|"
 msgid "Divisors of %1 are: %2"
-msgstr ""
+msgstr "המחלקים של %1 הם: %2"
 
 #: activities/gnumch-equality/Warning.qml:124
 msgctxt "Warning|"
@@ -16328,9 +16328,6 @@ msgstr "ללמוד חיסור עם מספרים קטנים."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
 msgstr "ללמוד חיסור באמצעות ספירה של התוצאה."
@@ -18929,12 +18926,9 @@ msgstr "להתאמן בשימוש בכסף."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "להתאמן בשימוש בכסף."
+msgstr "תרגול ספירה ושימוש בכסף."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19056,12 +19050,9 @@ msgstr "לתת לטוקס את העודף שלו, כולל אגורות"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "שלם את המחיר הנכון, כולל אגורות."
+msgstr "תרגול ספירה ושימוש בכסף, כולל אגורות."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -19094,26 +19085,16 @@ msgstr "לגלות את קוד מוֹרְס (Morse) הבינלאומי"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr "ללמוד לתקשר באמצעות קוד מורס הבינלאומי (International Morse)"
+msgstr "לתקשר באמצעות קוד המורס הבינלאומי"
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
-msgstr ""
-"יש לשלוח ולקבל אותיות (לטיניות) וספרות בקוד מורס בינלאומי (International "
-"Morse)."
+msgstr "מידע על שליחת וקבלת הודעות בעזרת קוד המורס הבינלאומי."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -21233,12 +21214,9 @@ msgstr "לנגן בפסנתר"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "למצוא את התאריך הנכון ולבחור אותו בלוח השנה."
+msgstr "לקרוא את התווים ואז לנגן אותם על הקלידים."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -25803,39 +25781,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "לתרגל חיבור."
+msgstr "חיבור אנכי."
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "להעתיק את המגדל."
+msgstr "לפתור את החיבור שסופק."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "ללמוד לחלוק, לתרגל חילוק."
+msgstr "ללמוד לפתור חיבורים במאונך."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "טבלת חיבור של 1."
+msgstr "טבלאות חיבור."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -25918,22 +25884,16 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "לתרגל חיסור."
+msgstr "חיסור אנכי"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "לבחור את הפקודות"
+msgstr "לפתור את החיבור הנבחר."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -25946,12 +25906,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "טבלת חיסור של 1."
+msgstr "טבלאות חיסור."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -25988,30 +25945,21 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לפתור חיסור, 4 או 5 ספרות, 3 שורות."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לפתור חיסור, 4 או 5 ספרות, 4 שורות."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "ללמוד טבלאות חיסור של 1."
+msgstr "לכתוב חיסור משלך ולפתור אותו."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -26021,66 +25969,45 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לפתור חיסור, 2 או 3 ספרות, 2 שורות."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לכתוב ולפתור חיסור, 2 או 3 ספרות, 2 שורות."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לכתוב ולפתור חיסור, 2 או 3 ספרות, 3 שורות."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לפתור חיסור, 3 או 4 ספרות, 2 שורות."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לכתוב ולפתור חיסור, 3 או 4 ספרות, 2 שורות."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לפתור חיסור, 3 או 4 ספרות, 3 שורות."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "חיסור עם 1, 2 ו־3."
+msgstr "לפתור חיסור, 2 או 5 ספרות, 4 שורות."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
@@ -26094,12 +26021,10 @@ msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "כותרת: %1"
+msgstr "לפתור: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
 #, fuzzy
@@ -26312,12 +26237,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "להקליד את המילים לפני שהן מגיעות לקרקע."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "נוסף תרגום ללטבית"
+msgstr "נוסף תרגום לסנסקריט"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86

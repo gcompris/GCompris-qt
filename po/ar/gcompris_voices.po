@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:37+0000\n"
-"PO-Revision-Date: 2024-05-31 18:35+0400\n"
+"PO-Revision-Date: 2024-12-21 16:32+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -1121,7 +1122,7 @@ msgstr "حدد لونًا وارسم بالمستطيلات كما تشاء."
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "استخدم الأدوات لرسم الصور."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1255,7 +1256,7 @@ msgstr "حرّك السيارات، لتفسح للسيارة الحمراء ل�
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "احسب الجمع المعطى."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1263,7 +1264,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "احسب الطرح المعطى."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
