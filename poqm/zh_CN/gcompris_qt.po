@@ -25111,12 +25111,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr ""
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation updated for Russian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "俄文翻译已更新"
+msgstr ""
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
