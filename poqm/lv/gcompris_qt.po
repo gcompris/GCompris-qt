@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-01 16:14+0200\n"
+"PO-Revision-Date: 2024-12-16 16:48+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -2647,7 +2647,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "Labi"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -5035,11 +5035,6 @@ msgstr "Prot pārvietot peli un nospiest precīzi uz punktiem."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5047,7 +5042,8 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Zīmē attēlu, spiežot uz katra no punktiem pēc kārtas. Katru reizi pēc punkta "
-"nospiešanas, parādās nākamais zilais punkts."
+"nospiešanas, parādās nākamais zilais punkts. Vari spiest un vilkt no viena "
+"punkta uz nākamajiem, vai arī klikšķināt pēc kārtas uz katra punkta."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6601,6 +6597,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Raksti burtus, pareizā secībā savienojot punktus. Vari spiest un vilkt no "
+"viena punkta uz nākamajiem, vai arī pēc kārtas klikšķināt uz katra punkta."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6628,6 +6626,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Raksti skaitļus, pareizā secībā savienojot punktus. Vari spiest un vilkt no "
+"viena punkta uz nākamajiem, vai arī pēc kārtas klikšķināt uz katra punkta."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -19833,19 +19833,14 @@ msgstr "Iemācies skaitlisko secību."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Zīmē attēlu, spiežot uz katra no punktiem pēc kārtas. Katru reizi pēc punkta "
-"nospiešanas, parādās nākamais zilais punkts."
+"Zīmē attēlu, pareizā secībā savienojot punktus. Vari spiest un vilkt no "
+"viena punkta uz nākamajiem, vai arī pēc kārtas klikšķināt uz katra punkta."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -26137,39 +26132,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Trenējies saskaitīt."
+msgstr "Saskaitīšana rakstos"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Draw the picture by clicking on each numbers in the right order."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem."
+msgstr "Saskaiti."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Mācies dalīties un trenējies dalīšanu."
+msgstr "Mācies saskaitīt stabiņos"
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Saskaitīšanas tabula ar 1."
+msgstr "Saskaitīšanas tabulas."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26189,85 +26172,92 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"Skaitot rakstos, cipari ir rakstāmi viens zem otra. Tie ir jāizkārto "
+"stabiņā, izlīdzinot pret labu posu. Rezultātu raksta zem apakšējās līnijas. "
+"Lai saskaitītu, sāc skaitīt ciparus pirmajā stabiņā (stabiņš labajā pusē), "
+"tad pieraksti rezultātu šī stabiņā apakšā zem līnijas. Ja rezultātā iegūsti "
+"divciparu skaitli, pie rezultātiem raksti tikai skaitļa otro daļu, bet pirmo "
+"daļu (desmitus) pievieno nākamā stabiņa augšpusē — to sauc par atlikumu. Pēc "
+"tam saskaiti nākamo stabiņu, ieskaitot arī atlikumu, un atkārto šo procesu "
+"līdz ir saskaitīti visi stabiņi. Pēc gala rezultāta iegūšanas spied „Labi“ "
+"pogu, lai atbildi pārbaudītu. Dažos līmeņos pirms atrisinājuma ir "
+"jāpieraksta dotā operācija — šādā gadījumā, kad visa darbība ir pareizi "
+"pierakstīta, spied uz „Gatavs“ pogas un to atrisini."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Saskaiti divciparu skaitļus divās rindās bez atlikuma."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Saskaiti četrciparu skaitļus trīs rindās"
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Saskaiti četrciparu skaitļus četrās rindās."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Uzraksti savu saskaitīšanas darbību un to atrisini."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
 msgstr ""
+"Pieraksti darbības un saskaiti ar divciparu skaitļiem divās rindās bez "
+"atlikuma."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Saskaiti ar divciparu skaitļiem divās rindās."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Pieraksti darbības un atrisini divciparus skaitļus divās rindās."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Pieraksti darbības un saskaiti divciparu skaitļus trīs rindās."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Saskaiti trīsciparu skaitļus divās rindās."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Pieraksti darbības un saskaiti trīsciparu skaitļus divās rindās."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Saskaiti trīsciparu skaitļus trijās rindās."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Saskaiti četrciparu skaitļus divās rindās."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Trenējies atņemšanu."
+msgstr "Atņemšana rakstos"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Izmanto instrukcijas"
+msgstr "Veic doto atņemšanu"
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26275,17 +26265,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "Mācies atņemt rakstos ar aizņemšanās un pārkārtošanas metodi."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Atņemšanas tabula ar 1."
+msgstr "Atņemšanas tabulas."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -26313,144 +26300,127 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Atņemot rakstos, skaitļi ir rakstāmi viens zem otra. Tiem ir jābūt "
+"izkārtotiem pret labo pusi tā, lai tie veidotu stabiņus. Augšējo skaitli "
+"sauc par mazināmo — tas ir sākotnējais daudzums, no kura atņemam otru "
+"skaitli, lai iegūtu starpību. Apakšā esošo skaitli sauc par mazinātāju — tas "
+"ir daudzums, par kādu samazinās mazināmais, aprēķinot starpību. Rezultātu "
+"raksta apakšējā rindā zem līnijas. Atņemšanu sāc, atņemot apakšējo ciparu no "
+"augšējā pirmajā stabiņā (stabiņš labajā pusē), Rezultātā iegūto ciparu "
+"raksti tajā pašā stabiņā zem līnijas. Ja augšējais cipars ir mazāks par "
+"apakšējo, vari aizņemties no mazināmā nākamajā kolonnā. Piemēram, ja "
+"pieskaiti 10 vienību augšējam ciparam, tev ir jānoņem viena vienība no "
+"nākamajā stabiņā esošā cipara. To sauc par aizņemšanos ar pārkārtošanu. Lai "
+"to izdarītu šajā aktivitātē, klikšķini uz tukšā taisnstūra augšējā cipara "
+"kreisajā pusē, atlasi 1, bet tad klikšķini uz nākamā tukšā taisnstūra cipara "
+"augšā labajā pusē un atlasi −1. Pēc tam raksti stabiņā rezultātu zem "
+"apakšējās līnijas. Turpini šīs darbības līdz ir izdevies atņemt visus "
+"stabiņus. Pēc rezultāta iegūšanas spied uz „Labi“ un pārbaudi iegūto "
+"atbildi. Dažos līmeņus pirms atbildes ierakstīšanas būs jāpieraksta dotā "
+"darbība. Šādā gadījumā pēc darbības pierakstīšanas spied uz „Gatavs“ pogas "
+"un pēc tam veic atņemšanu."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Atņem divciparu skaitļus divās rindās bez aizņemšanās."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Atņemšana ar četrciparu un piecciparu skaitļiem trijās rindās."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Atņemšana ar četrciparu un piecciparu skaitļiem četrās rindās."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Apgūsti atņemšanu ar 1."
+msgstr "Pieraksti savu atņemšanas darbību un to atrisini."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
 msgstr ""
+"Pieraksti un atrisini atņemšanu ar divciparu skaitļiem divās rindās bez "
+"aizņemšanās."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Atņem ar divciparu vai trīsciparu skaitļiem divās rindās."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Pieraksti un atņem divciparu vai trīsciparu skaitļus divās rindās."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Pieraksti un atņem divciparu vai trīsciparu skaitļus trijās rindās."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Atņem trīsciparu vai četrciparu skaitļus divās rindās."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Pieraksti un atņem trīsciparu vai četrciparu skaitļus divās rindās."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Atņem trīsciparu vai četrciparu skaitļus trijās rindās."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Atņemšana ar 1, 2 un 3."
+msgstr "Atņem četrciparu vai piecciparu skaitļus divās rindās."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Pieraksti:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Atrisini:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Nosaukums: %1"
+msgstr "Atrisini: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Esmu gatavs"
+msgstr "Gatavs"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Apgūsti apņemšanas darbības."
+msgstr "Atņemšana rakstos (kompensācija)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26458,7 +26428,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr ""
+msgstr "Mācies atņemt rakstos, izmantojot aizņemšanās un kompensācijas metodi."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26486,6 +26456,25 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Atņemot rakstos, skaitļi ir rakstāmi viens zem otra. Tiem ir jābūt "
+"izkārtotiem pret labo pusi tā, lai tie veidotu stabiņus un izlīdzinātiem "
+"pret kreiso malu. Augšējo skaitli sauc par mazināmo — tas ir sākotnējais "
+"daudzums, no kura atņemam otru skaitli, lai iegūtu starpību. Apakšā esošo "
+"skaitli sauc par mazinātāju — tas ir daudzums, par kādu samazinās "
+"mazināmais, aprēķinot starpību. Rezultātu raksta apakšējā rindā zem līnijas. "
+"Atņemšanu sāc, atņemot apakšējo ciparu no augšējā pirmajā stabiņā (stabiņš "
+"labajā pusē), Rezultātā iegūto ciparu raksti tajā pašā stabiņā zem līnijas. "
+"Ja augšējais cipars ir mazāks par apakšējo, vari aizņemties no mazināmā "
+"nākamajā kolonnā. Piemēram, ja pieskaiti 10 vienību augšējam ciparam, tev ir "
+"jānoņem viena vienība no nākamajā stabiņā esošā cipara. To sauc par "
+"aizņemšanos ar kompensēšanu. Lai to izdarītu šajā aktivitātē, klikšķini uz "
+"tukšā taisnstūra apakšējā cipara kreisajā pusē, atlasi 1, bet tad klikšķini "
+"uz nākamā tukšā taisnstūra cipara labajā pusē apakšā un atlasi +1. Pēc tam "
+"stabiņā zem apakšējās līnijas raksti rezultātu. Turpini šīs darbības līdz ir "
+"izdevies atņemt visus stabiņus. Pēc rezultāta iegūšanas spied uz „Labi“ un "
+"pārbaudi iegūto atbildi. Dažos līmeņus pirms atbildes ierakstīšanas būs "
+"jāpieraksta dotā darbība. Šādā gadījumā pēc darbības pierakstīšanas spied uz "
+"„Gatavs“ pogas un pēc tam veic atņemšanu."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26683,28 +26672,29 @@ msgid "Many bug fixes"
 msgstr "Daudzi kļūdu labojumi"
 
 #: core/ChangeLog.qml:34
+#, fuzzy
+#| msgctxt "ChangeLog|"
+#| msgid ""
+#| "Automatic application of new language when changing in the menu (no need "
+#| "to restart GCompris)"
 msgctxt "ChangeLog|"
 msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Automātiska jaunas valodas pielietošana, mainot izvēlni (nav nepieciešamas "
+"pārstartēt „GCompris“)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Ieslēdzoties parāda sākuma ekrānu"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Jauna komandrindas iespēja, lai uzskaitītu visas aktivitātes un sāktu ar "
-"noteiktu"
+"Jauna komandrindas opcija, lai pārslēgtu atveidotāju (--renderer atveidotājs)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -27416,7 +27406,7 @@ msgstr "%1 ir izdzēsts!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "Labi"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
