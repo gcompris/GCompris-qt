@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-12-20 14:22+0200\n"
+"PO-Revision-Date: 2024-12-24 08:15+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -7630,9 +7630,9 @@ msgid ""
 "It is designated as part of the Roman Monuments, Cathedral of St. Peter and "
 "Church of Our Lady in Trier UNESCO World Heritage Site."
 msgstr ""
-"מרחצאות הקיסר בטריאר הם אוסף גדול של מרחצאות רומאיים בטריאֵר, גרמניה. הם "
-"הוכרזו כחלק מהמבנים הרומאיים, הקתדרלה של סנט פטר והכנסייה של גבירתנו מטריאר ע"
-"\"י אונסקו כאתר מורשת בינלאומי."
+"מרחצאות הקיסר בטריאר הם אוסף גדול של מרחצאות רומיים בטריאֵר, גרמניה. הם "
+"הוכרזו כחלק מהמבנים הרומיים, הקתדרלה של סנט פטר והכנסייה של גבירתנו מטריאר "
+"ע״י אונסקו כאתר מורשת בינלאומי."
 
 #: activities/explore_monuments/resource/board/board4.qml:40
 #: activities/explore_monuments/resource/board/board4.qml:43
@@ -7687,7 +7687,7 @@ msgid ""
 "symbolized the powerful dynasty of its founder, Friedrich Franz II."
 msgstr ""
 "מבצר סיפורי האגדות הרומנטי הזה, על מגדליו הרבים, האולמות והאגפים, משתקף "
-"במימיו של אגם שוֵּרין. הוא הושלם ב1857 ומסמל את השושלת החזקה של מייסדו, "
+"במימיו של אגם שוֵּרין. הוא הושלם ב־1857 ומסמל את השושלת החזקה של מייסדו, "
 "פרידריך פראנץ השני."
 
 #: activities/explore_monuments/resource/board/board4.qml:73
@@ -7704,8 +7704,8 @@ msgid ""
 "built a settlement inside the roofless ruin. In the 12th century, the apse "
 "was converted into a tower to accommodate the Archbishop of Trier."
 msgstr ""
-"מבנה לבנים ארוך וגבה-תקרה זה היה אולם הכתר של הקיסר הקומי עד חורבן העיר על "
-"ידי השבטים הגרמאנים. הפולשים בנו התיישבות בתוך ההריסות חסרות הגג. במאה ה12, "
+"מבנה לבנים ארוך וגבה-תקרה זה היה אולם הכתר של הקיסר הרומי עד חורבן העיר על "
+"ידי השבטים הגרמאנים. הפולשים בנו התיישבות בתוך ההריסות חסרות הגג. במאה ה־12, "
 "האכסדרה המקושתת שונתה למגדל כדי לאכלס את הארכיבישופ של טריאר."
 
 #: activities/explore_monuments/resource/board/board4.qml:84
@@ -7724,7 +7724,7 @@ msgid ""
 msgstr ""
 "קתדרלת וּוֹרמס (וּרמסר דוֹם) הידועה גם כקתדרלה של פטר הקדוש, היא קתדרלה רומנסקית "
 "בעיר הגרמנית וּוֹרמס. מבנה אבן-חול עם מגדלים חרוטיים בולטים, קתדרלת וּוֹרמס "
-"נבנתה לסירוגין במהלך המאה השתים עשר והושלמה ברובה ב1181."
+"נבנתה לסירוגין במהלך המאה השתיים עשרה והושלמה ברובה ב־1181."
 
 #: activities/explore_monuments/resource/board/board4.qml:97
 msgctxt "board4|"
@@ -22112,7 +22112,7 @@ msgstr "מספרים בערבית"
 #: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
-msgstr "מספרים רומיים"
+msgstr "ספרות רומיות"
 
 #: activities/reversecount/ActivityConfig.qml:24
 #: activities/smallnumbers2/ActivityConfig.qml:23
@@ -22185,28 +22185,20 @@ msgstr "מספרים בין %1 ו %2."
 #: activities/roman_numerals/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Roman numerals"
-msgstr "מיספור רומאי"
+msgstr "ספרות רומיות"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "ללמוד את מחזור המים."
+msgstr "ללמוד לקרוא ולכתוב ספרות רומיות."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
-msgstr "ללמוד איך לקרוא ספרות רומיות ולבצע המרה לספרות ערביות."
+msgstr "ללמוד איך לקרוא ספרות רומיות ולהמיר אותן לספרות ערביות."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -22217,9 +22209,9 @@ msgid ""
 "Late Middle Ages. Numbers in this system are represented by combinations of "
 "letters from the Latin alphabet."
 msgstr ""
-"ספרות רומיות הן שיטת מיספור שמקורה ברומא העתיקה והיא נותרה הדרך הרגילה לכתוב "
+"ספרות רומיות הן שיטת מספור שמקורה ברומא העתיקה והיא נותרה הדרך הרגילה לכתוב "
 "מספרים ברחבי אירופה עד ימי הביניים המאוחרים. המספרים מיוצגים על ידי שילוב של "
-"אותיות מהאלף-בית הלטיני."
+"אותיות מהאלפבית הלטיני."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -22238,7 +22230,7 @@ msgstr "ספרות: להקליד ספרות ערביות"
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Letters: type roman numerals (with I, V, X, L, C, D and M)"
-msgstr "אותיות: להקליד ספרות רומיות (עם M, I, V, X, L, C, D)"
+msgstr "אותיות: להקליד ספרות רומיות (עם M,‏ I,‏ V,‏ X,‏ L,‏ C,‏ D)"
 
 #: activities/roman_numerals/RomanNumerals.qml:79
 #: activities/roman_numerals/RomanNumerals.qml:85
@@ -22252,12 +22244,12 @@ msgid ""
 " An interesting observation here is that the roman numeric system lacks the "
 "number 0."
 msgstr ""
-"המספרים הרומאיים בנויים כולם מ7 הספרות האלו:\n"
-"I ו V (אחדות, 1 ו 5)\n"
-"X ו L (עשרות, 10 ו 50)\n"
-"C ו D (מאות, 100 ו 500)\n"
-"ו M (1000)\n"
-"נקודה מעניינת היא שבמערכת המספרים הרומאית לא קיים המספר 0."
+"כל הספרות הרומיות מורכבות מ־7 הספרות האלו:\n"
+"I ו־V (אחדות, 1 ו־5)\n"
+"X ו־L (עשרות, 10 ו־50)\n"
+"C ו־D (מאות, 100 ו־500)\n"
+" ו־M (1000).\n"
+" הנקודה המעניינת היא שבמערכת הספרות הרומיות לא קיים המספר 0."
 
 #: activities/roman_numerals/RomanNumerals.qml:80
 #: activities/roman_numerals/RomanNumerals.qml:92
@@ -22267,7 +22259,7 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
-msgstr "הִפכו את המספר הרומאי %1 לספרות ערביות."
+msgstr "להמיר המספר הרומי %1 לספרות ערביות."
 
 #: activities/roman_numerals/RomanNumerals.qml:86
 #: activities/roman_numerals/RomanNumerals.qml:98
@@ -22281,7 +22273,7 @@ msgstr "הִפכו את המספר הרומאי %1 לספרות ערביות."
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
-msgstr "הִפכו את המספר הערבי %1 לספרות רומיות."
+msgstr "להמיר את המספר הערבי %1 לספרות רומיות."
 
 #: activities/roman_numerals/RomanNumerals.qml:91
 #: activities/roman_numerals/RomanNumerals.qml:97
@@ -22299,6 +22291,7 @@ msgstr ""
 
 #: activities/roman_numerals/RomanNumerals.qml:103
 #: activities/roman_numerals/RomanNumerals.qml:109
+#, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
 "All the tens except 40 and 90 are built using sums of X and L:\n"
@@ -22313,6 +22306,7 @@ msgstr ""
 
 #: activities/roman_numerals/RomanNumerals.qml:115
 #: activities/roman_numerals/RomanNumerals.qml:121
+#, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
 "All the hundreds except 400 and 900 are built using sums of C and D:\n"
@@ -22327,6 +22321,7 @@ msgstr ""
 
 #: activities/roman_numerals/RomanNumerals.qml:127
 #: activities/roman_numerals/RomanNumerals.qml:133
+#, fuzzy
 msgctxt "RomanNumerals|"
 msgid ""
 "Sums of M are used for building thousands: M, MM, MMM.\n"
@@ -26027,12 +26022,9 @@ msgid "Solve: %1"
 msgstr "לפתור: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "אפשר להתחיל"
+msgstr "בהמתנה"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
@@ -26318,16 +26310,13 @@ msgid "Many translation updates"
 msgstr "מגוון תרגומים עודכנו"
 
 #: core/ChangeLog.qml:72
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid ""
 "New command-line option (--difficulty {value|min-max}) to start GCompris at "
 "specific difficulty"
-msgstr "אפשרות חדשה בשורת-הפקודה לרשום את כל הפעילויות ולהתחיל באחת ספציפית."
+msgstr ""
+"אפשרות חדשה בשורת הפקודה (‎--difficulty {value|min-max}) כדי להפעיל את "
+"ג׳יקומפרי בדרגת קושי מסוימת."
 
 #: core/ChangeLog.qml:79
 msgctxt "ChangeLog|"
@@ -26605,12 +26594,9 @@ msgid ""
 msgstr "פעילות זו עושה שימוש בקובצי קול שאינם מותקנים על המערכת שלך."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
-msgstr "כדי להוריד את קובצי הקול לגשת לתפריט ההעדפות."
+msgstr "להורדת קובצי הצלילים הנחוצים נא לגשת לחלונית ההגדרות."
 
 #: core/core.js:257
 msgctxt "core|"
@@ -27004,12 +26990,9 @@ msgid "No"
 msgstr "לא"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "לבטל את כל המהלכים?"
+msgstr "למחוק את הקובץ הזה?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
