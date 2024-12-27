@@ -7,6 +7,7 @@ $outputFile = "../resource/guess24.json";
 $difficultyFile = "Guess24-difficulty.csv";
 $solutionFile = "Guess24-solutions.csv";
 $limitRate = 80.0;
+$maxRate = 40.0;
 $verbose = false;
 $noSolutions = false;
 
@@ -48,6 +49,7 @@ function stripFirstLine($text) {
 
 $solutions = array();
 $problems = array();
+$hardProblems = array();
 $rejected = 0;
 // Load files, remove non-breaking spaces and split into an array
 $ranked   = preg_split("/\n/", stripFirstLine(trim(preg_replace("/\xc2\xa0/", '', file_get_contents($difficultyFile)))));
@@ -57,13 +59,13 @@ foreach($solutext as $sol) {
     $sols = preg_split("/,/", $sol);
     array_shift($sols);
     $puz = trim(array_shift($sols));
-    while (trim($sols[array_key_last($sols)]) === "") {   // Remove empty solutions
+    while (trim($sols[array_key_last($sols)]) === "") {   // Remove last solutions if empty
         array_pop($sols);
     }
     $translatedSols = Array();
     foreach($sols as $idx => $val) {
         $val = preg_replace(array("/×/", "/÷/"), array("*", "/"), trim($val));
-        $val = trim($val);
+        // $val = trim($val);
         $result = 0;
         $sols[$idx] = $val;
         if (preg_match_all("/\([^\)]+\)/", $val, $matches)) {    // Check for rational intermediate result
@@ -92,10 +94,15 @@ foreach($ranked as $line) {
             'puzzle' => $puzzle,
             'solutions' => $solutions[$puzzle]
         );
+    } else if (($solvedRate > $maxRate) && count($solutions[$puzzle])) {
+        $hardProblems[] = array(
+            'puzzle' => $puzzle,
+            'solutions' => $solutions[$puzzle]
+        );
     }
 }
 
-$difficount = array(0, 0, 0);
+$difficount = array(0, 0, 0, 0);
 foreach($problems as $num => $problem) {
     $complexity = 3;
     foreach($problem['solutions'] as $solution) {
@@ -115,15 +122,21 @@ foreach($problems as $num => $problem) {
     $difficount[$complexity - 1]++;
 }
 
-file_put_contents($outputFile, json_encode($problems, JSON_PRETTY_PRINT));
+foreach($hardProblems as $num => $problem) {
+    $hardProblems[$num]['complexity'] = 4;
+    $difficount[3]++;
+}
+
+file_put_contents($outputFile, json_encode(array_merge($problems, $hardProblems), JSON_PRETTY_PRINT));
 
 // Statistics on stdout
-$total = $difficount[0] + $difficount[1] + $difficount[2];
+$total = $difficount[0] + $difficount[1] + $difficount[2] + $difficount[3];
 print("Problems with a solved rate greater than $limitRate%\n");
 print(str_repeat("-", 20)."\n");
 print("Complexity 1: {$difficount[0]} problems\n");
 print("Complexity 2: {$difficount[1]} problems\n");
 print("Complexity 3: {$difficount[2]} problems\n");
+print("Complexity 4: {$difficount[3]} problems\n");
 print("Total: $total problems\n");
 print(str_repeat("-", 20)."\n");
 print("Output file: $outputFile\n");

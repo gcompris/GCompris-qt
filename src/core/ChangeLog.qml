@@ -26,6 +26,13 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 260000, "content": [
+                qsTr("Many usability improvements"),
+                qsTr("Many new images"),
+                qsTr("Many bug fixes")
+                ],
+               "newDatasets": ["guess24"]
+           },
             { "versionCode": 250000, "content": [
                 qsTr("Translation added for Sanskrit"),
                 qsTr("Many usability improvements"),
@@ -35,7 +42,7 @@ QtObject {
                 qsTr("Add splash screen at startup"),
                 qsTr("New command-line option to switch the renderer (--renderer renderer)")
                 ]
-            },
+           },
             { "versionCode": 40300, "content": [
                 qsTr("Many usability improvements"),
                 qsTr("Many bug fixes")

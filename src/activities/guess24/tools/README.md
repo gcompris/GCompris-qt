@@ -37,6 +37,7 @@ It prepares the data but is not useful for running the activity.
         **1**: problems with at least one solution containing only addition and/or subtraction.
         **2**: problems with at least one solution containing one multiplication.
         **3**: problems with division required.
+        **4**: problems with lower solved rate.
 
 This script produces the file `resource/guess24.json` and outputs a report to the terminal :
 
@@ -45,7 +46,8 @@ This script produces the file `resource/guess24.json` and outputs a report to th
     Complexity 1: 217 problems
     Complexity 2: 742 problems
     Complexity 3: 118 problems
-    Total: 1077 problems
+    Complexity 4: 233 problems
+    Total: 1310 problems
     --------------------
     Output file: ../resource/guess24.json
     Output file size: 173673 bytes
