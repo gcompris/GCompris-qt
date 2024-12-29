@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris_voices\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:37+0000\n"
-"PO-Revision-Date: 2024-05-31 13:26+0200\n"
+"PO-Revision-Date: 2024-12-28 17:41+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -1179,7 +1179,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "Uzu la ilojn por desegni bildojn."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1326,7 +1326,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Solvu la donitan adicion."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1334,7 +1334,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Solvu la donitan subtrahon."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
