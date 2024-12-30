@@ -3508,6 +3508,10 @@ Files: src/activities/wordsgame/resource/default-he.json
 Copyright: 2007 Bruno Coudoin
 License: CC0-1.0
 
+Files: src/activities/wordsgame/resource/default-hr.json
+Copyright: 2024 Igor Dobrača
+License: CC0-1.0
+
 Files: src/activities/wordsgame/resource/default-hu.json
 Copyright: 2007 Bruno Coudoin
 License: CC0-1.0
