@@ -4777,6 +4777,12 @@ SPDX-FileCopyrightText = "2007 Bruno Coudoin"
 SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
+path = "src/activities/wordsgame/resource/default-hr.json"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2024 Igor Dobrača"
+SPDX-License-Identifier = "CC0-1.0"
+
+[[annotations]]
 path = "src/activities/wordsgame/resource/default-hu.json"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 Bruno Coudoin"
