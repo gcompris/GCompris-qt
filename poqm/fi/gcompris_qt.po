@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
-"PO-Revision-Date: 2024-10-27 09:56+0200\n"
+"PO-Revision-Date: 2024-12-17 17:54+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -5118,12 +5118,9 @@ msgstr "Kuuntele kirjaimen ääntäminen ja napsauta oikeaa kirjainta."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Napsauta kirjainta"
+msgstr "Tunnista pienaakkosellinen nimi."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5166,12 +5163,9 @@ msgstr "Napsauta kirjainta"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Napsauta kirjainta"
+msgstr "Tunnista suuraakkosellinen nimi."
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5209,12 +5203,11 @@ msgstr "Piirrä kuva napsauttamalla valittuja pisteitä."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Voi vetää esineitä hiirellä."
+msgstr ""
+"Harjoittele hiiren tai kosketusnäytön käyttöä koskettamalla tiettyjä "
+"pisteitä."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -5252,21 +5245,17 @@ msgstr "Sieppaa kaikki uivat kalat ennen kuin ne poistuvat akvaariosta."
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
-msgstr "Motorinen koordinaatio: käden tarkka liike."
+msgstr "Harjoittele motorista koordinaatiota liikuttamalla tarkasti kättä."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr "Osaa liikuttaa hiirtä ja napsauttaa oikeaan paikkaan."
+msgstr ""
+"Osaa liikuttaa hiirtä tai käyttää kosketusnäyttöä ja napsauttaa oikeaan "
+"paikkaan."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5408,12 +5397,9 @@ msgstr "Opi värien sekoittaminen."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr "Sekoita päävärejä saadaksesi niistä sama annettu väri."
+msgstr "Opi sekoittamaan päävärejä saadaksesi vastineen annetulle värille."
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -9733,7 +9719,7 @@ msgstr "Potkaise pallo maaliin."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Ymmärrä suuntaa ja nopeutta."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -9790,7 +9776,7 @@ msgstr "Etsi esitetty murtoluku."
 #: activities/fractions_create/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Simplified fractions with a pie."
-msgstr ""
+msgstr "Sievennetyt murtoluvut piirakalla."
 
 #: activities/fractions_create/resource/1/Data.qml:18
 #: activities/fractions_create/resource/3/Data.qml:17
@@ -9942,7 +9928,7 @@ msgstr "Valitse oikeanvärinen perhonen."
 #: activities/fractions_create/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a pie."
-msgstr ""
+msgstr "Sieventämättömät murtoluvut piirakalla."
 
 #: activities/fractions_create/resource/3/Data.qml:73
 #, fuzzy
@@ -9955,7 +9941,7 @@ msgstr "Valitse annetun kuun viides torstai"
 #: activities/fractions_create/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Non-simplified fractions with a square."
-msgstr ""
+msgstr "Sieventämättömät murtoluvut neliöllä."
 
 #: activities/fractions_create/resource/4/Data.qml:73
 #, fuzzy
@@ -10070,7 +10056,7 @@ msgstr "Valitse 1,75 neliötä."
 #: activities/fractions_create/resource/7/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a pie."
-msgstr ""
+msgstr "Prosentit piirakalla."
 
 #. Select %1 percent of the pie.
 #: activities/fractions_create/resource/7/Data.qml:19
@@ -10089,7 +10075,7 @@ msgstr "Valitse piirakasta %1 %."
 #: activities/fractions_create/resource/8/Data.qml:9
 msgctxt "Data|"
 msgid "Percentages with a square."
-msgstr ""
+msgstr "Prosentit neliöllä."
 
 #. Select %1 percent of the square.
 #: activities/fractions_create/resource/8/Data.qml:19
@@ -10106,14 +10092,14 @@ msgstr "Valitse neliöstä %1 %."
 #: activities/fractions_create/resource/9/Data.qml:9
 msgctxt "Data|"
 msgid "Specific questions with a pie."
-msgstr ""
+msgstr "Täsmäkysymyksiä piirakalla."
 
 #: activities/fractions_create/resource/9/Data.qml:18
 #: activities/fractions_create/resource/9/Data.qml:24
 msgctxt "Data|"
 msgid ""
 "Select as many parts as you can without taking more than half of the pie."
-msgstr ""
+msgstr "Valitse niin montaa osaat kuin voit ottamatta piirakasta yli puolta."
 
 #. Activity title
 #: activities/fractions_find/ActivityInfo.qml:14
@@ -20551,7 +20537,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
-msgstr ""
+msgstr "Korosta seuraava piste"
 
 #. Activity title
 #: activities/number_sequence/ActivityInfo.qml:15
@@ -20564,7 +20550,7 @@ msgstr "Lukusarja"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "Valitse luvut yksi toisensa jälkeen numerojärjestyksessä."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
@@ -20610,6 +20596,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
 msgstr ""
+"Opi tunnistamaan parilliset ja parittomat luvut ja niiden numerojärjestys."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -21121,7 +21108,7 @@ msgstr "Pelaa Oware-strategiapeliä Tuxia vastaan."
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Kehitä strategisen ajattelun kykyä."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
@@ -22689,7 +22676,7 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Auta Tuxia pyydystämään kala ohjelmoimalla polku."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
@@ -23095,7 +23082,7 @@ msgstr "Piirrä annettu kuva täydellisesti tyhjään ruudukkoon."
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr ""
+msgstr "Opi tunnistamaan sijainti ruudukossa ja toistamaan malli."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -23164,6 +23151,7 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Opi tunnistamaan sijainti ruudukossa ja toistamaan malli symmetrisesti."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -24598,7 +24586,7 @@ msgstr "Samaan neliöön ei voi panna yli %1 karkkia"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "Piirrä ruudukkoon"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -24610,7 +24598,7 @@ msgstr "Luo oma piirroksesi."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Ilmaise luovuuttasi piirtämällä."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -24627,12 +24615,12 @@ msgstr "Sarkain: vaihda värivalitsimen ja piirtoalueen välillä"
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Luonnos"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "Piirrä kuvia käyttämällä eri digimaalaustyökaluja."
 
 #: activities/sketch/ActivityInfo.qml:20
 #, fuzzy
@@ -24656,7 +24644,7 @@ msgstr "Ctrl + Z: kumoa viimeisin toiminto"
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: toista viimeisin toimenpide"
 
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -24666,12 +24654,12 @@ msgstr "Ctrl + S: tallenna kuva"
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: avaa kuva"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Del tai askelpalautin: luo uusi kuva"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24804,25 +24792,16 @@ msgid "You did not save this image. Do you want to close this activity?"
 msgstr "Et tallentanut kuvaa. Haluatko sulkea harjoituksen?"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download them now?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Haluatko ladata ne nyt?"
+msgstr "Haluatko pyyhkiä tämän kuvan?"
 
 #: activities/sketch/Sketch.qml:675
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Kyllä"
 
 #: activities/sketch/Sketch.qml:676
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ei"
@@ -24843,9 +24822,6 @@ msgid "Type your text here"
 msgstr "Kirjoita teksti tähän"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Työkalut"
@@ -24866,9 +24842,6 @@ msgid "Size"
 msgstr "Koko"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Nopeus"
@@ -24879,12 +24852,9 @@ msgid "Density"
 msgstr "Tiheys"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Pisteet"
+msgstr "Pistekoko"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
@@ -24892,20 +24862,14 @@ msgid "Smoothing"
 msgstr "Pehmennys"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "tekeminen"
+msgstr "Kierto"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Piirrä peilikuva"
+msgstr "Peilikuva"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -24922,12 +24886,9 @@ msgstr "Laske nopan pisteiden määrä ennen kuin noppa osuu maahan."
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Yhteenlaskua tikkapelin avulla"
+msgstr "Harjoittele laskemista aikarajoituksella."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -27973,9 +27934,6 @@ msgstr ""
 "järjestelmääsi."
 
 #: core/core.js:225
-#, fuzzy
-#| msgctxt "core|"
-#| msgid "For downloading the needed sound files go to the preferences dialog."
 msgctxt "core|"
 msgid "For downloading the needed sound files go to the Configuration dialog."
 msgstr "Ladataksesi tarvittavat äänitiedostot siirry asetusikkunaan."
@@ -28113,16 +28071,7 @@ msgstr ""
 "”Wishlist”."
 
 #: core/DialogAbout.qml:105
-#, fuzzy, qt-format
-#| msgctxt "DialogAbout|"
-#| msgid ""
-#| "You do not have to be a software developer to be a member of the KDE "
-#| "team. You can join the national teams that translate program interfaces. "
-#| "You can provide graphics, themes, sounds, and improved documentation. You "
-#| "decide!<br /><br />Visit <a href=\"%1\">%1</a> for information on some "
-#| "projects in which you can participate.<br /><br />If you need more "
-#| "information or documentation, then a visit to <a href=\"%2\">%2</a> will "
-#| "provide you with what you need."
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "You do not have to be a software developer to be a member of the KDE team. "
@@ -28133,13 +28082,12 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
-"Sinun ei tarvitse olla ohjelmistokehittäjä liittyäksesi KDE-tiimiin. Voit "
-"liittyä kansallisiin ryhmiin ja auttaa kääntämään KDE:tä omalle kielellesi. "
-"Voit myös tehdä grafiikkaa, teemoja, ääniä tai parantaa dokumentaatiota. "
-"Päätät itse, mitä haluat tehdä.<br /><br />Vieraile osoitteessa <a href="
-"\"%1\">%1</a>, jos haluat lisätietoa projekteista, joihin voit osallistua."
-"<br /><br />Lisätietoa ja ohjeistusta löytyy osoitteesta <a href=\"%2\">%2</"
-"a>."
+"KDE-työryhmään liittyäkseen ei tarvitse olla ohjelmistokehittäjä: voi "
+"liittyä kansalliseen ryhmään ja auttaa kääntämään KDE:tä omalle kielelleen "
+"tai voi tehdä grafiikkaa, teemoja, ääniä tai parantaa dokumentaatiota. Päätä "
+"itse!<br /><br />Käy osoitteessa <a href=\"%1\">%1</a>, jos haluat "
+"lisätietoa projekteista, joihin voit osallistua.<br /><br />Lisätietoa ja "
+"ohjeistusta löytyy osoitteesta <a href=\"%2\">%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -28394,12 +28342,9 @@ msgid "No"
 msgstr "Ei"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Haluatko varmasti kumota kaikki siirrot?"
+msgstr "Haluatko varmasti poistaa tämän tiedoston?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
@@ -28502,33 +28447,23 @@ msgid "Enable the kiosk mode."
 msgstr "Käytä kioskitilaa."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
-"Käytä ohjelmistohahmonnusta OpenGL:n sijaan (hitaampaa mutta toimii kaikilla "
-"näytönohjaimilla)."
+"Käytä OpenGL:n sijaan ohjelmistohahmonnusta (hitaampaa mutta toimii kaikilla "
+"näytönohjaimilla). Vanhentunut, käytä tämän sijaan --renderer=software."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
-"Käytä OpenGL-hahmonnusta ohjelmiston sijaan (nopeampaa mutta saattaa kaatua "
-"joillakin näytönohjaimilla).Käytä OpenGL-hahmonnusta ohjelmiston sijaan "
-"(nopeampaa mutta saattaa kaatua joillakin näytönohjaimilla)."
+"Käytä ohjelmistohahmonnuksen sijaan OpenGL:ää (nopeampaa mutta saattaa "
+"kaatua joillakin näytönohjaimilla). Vanhentunut, käytä tämän sijaan --"
+"renderer=opengl."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
@@ -28611,7 +28546,7 @@ msgstr ""
 #: core/main.qml:275
 msgctxt "main|"
 msgid "Apply"
-msgstr ""
+msgstr "Käytä"
 
 #: core/main.qml:276
 msgctxt "main|"
