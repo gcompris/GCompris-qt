@@ -164,19 +164,19 @@ if(BUILD_STANDALONE)
   # Qt plugins to install
   set(_qt_plugins "")
 
+  set(default_plugins ${QT_MAJOR}::QSvgPlugin ${QT_MAJOR}::QWebpPlugin ${QT_MAJOR}::QGifPlugin ${QT_MAJOR}::genericSensorPlugin ${QT_MAJOR}::QtSensorGesturePlugin ${QT_MAJOR}::QShakeSensorGesturePlugin)
+  if(WIN32)
+    set(default_plugins ${default_plugins} ${QT_MAJOR}::QICOPlugin ${QT_MAJOR}::QWindowsIntegrationPlugin ${QT_MAJOR}::QWindowsAudioPlugin ${QT_MAJOR}::AudioCaptureServicePlugin ${QT_MAJOR}::DSServicePlugin)
+  elseif(ANDROID)
+    set(default_plugins ${default_plugins} ${QT_MAJOR}::QAndroidIntegrationPlugin)
+  elseif(APPLE)
+    set(default_plugins ${default_plugins} ${QT_MAJOR}::QICNSPlugin ${QT_MAJOR}::QTgaPlugin ${QT_MAJOR}::QTiffPlugin ${QT_MAJOR}::QCocoaIntegrationPlugin)
+  else()
+    set(default_plugins ${default_plugins} ${QT_MAJOR}::QComposePlatformInputContextPlugin ${QT_MAJOR}::QXcbIntegrationPlugin ${QT_MAJOR}::QXcbEglIntegrationPlugin ${QT_MAJOR}::QXcbGlxIntegrationPlugin ${QT_MAJOR}::QAlsaPlugin ${QT_MAJOR}::QPulseAudioPlugin ${QT_MAJOR}::QWaylandIntegrationPlugin ${QT_MAJOR}::QWaylandXdgShellIntegrationPlugin ${QT_MAJOR}::QWaylandEglPlatformIntegrationPlugin ${QT_MAJOR}::QWaylandEglClientBufferPlugin)
+  endif()
+
   # First plugins should be used on all platforms
-  foreach(_plugin ${QT_MAJOR}::QSvgPlugin ${QT_MAJOR}::QWebpPlugin ${QT_MAJOR}::QICOPlugin ${QT_MAJOR}::QICNSPlugin ${QT_MAJOR}::QGifPlugin ${QT_MAJOR}::QJpegPlugin ${QT_MAJOR}::QWbmpPlugin ${QT_MAJOR}::genericSensorPlugin ${QT_MAJOR}::QtSensorGesturePlugin ${QT_MAJOR}::QShakeSensorGesturePlugin
-      # Should be specific plugins used on Linux
-      ${QT_MAJOR}::QComposePlatformInputContextPlugin ${QT_MAJOR}::QXcbIntegrationPlugin ${QT_MAJOR}::QXcbEglIntegrationPlugin ${QT_MAJOR}::QXcbGlxIntegrationPlugin ${QT_MAJOR}::QAlsaPlugin ${QT_MAJOR}::QPulseAudioPlugin
-      # Wayland for Linux
-      ${QT_MAJOR}::QWaylandIntegrationPlugin ${QT_MAJOR}::QWaylandXdgShellIntegrationPlugin ${QT_MAJOR}::QWaylandEglPlatformIntegrationPlugin ${QT_MAJOR}::QWaylandEglClientBufferPlugin
-      # Should be specific plugins used on MacOS
-      ${QT_MAJOR}::QTgaPlugin ${QT_MAJOR}::QTiffPlugin ${QT_MAJOR}::QCocoaIntegrationPlugin
-      # Should be specific plugins used on Windows
-      ${QT_MAJOR}::QWindowsIntegrationPlugin ${QT_MAJOR}::QWindowsAudioPlugin ${QT_MAJOR}::AudioCaptureServicePlugin ${QT_MAJOR}::DSServicePlugin
-      # Should be specific plugins used on Android
-      ${QT_MAJOR}::QAndroidIntegrationPlugin
-      )
+  foreach(_plugin ${default_plugins})
     if(TARGET ${_plugin})
       message(STATUS "${_plugin} will be included in the package")
       list(APPEND _qt_plugins ${_plugin})
@@ -210,6 +210,7 @@ if(BUILD_STANDALONE)
      QtQml/WorkerScript/${_lib_prefix}workerscriptplugin
      QtCore/${_lib_prefix}qtqmlcoreplugin
      QtQuick/Controls/Basic/impl/${_lib_prefix}qtquickcontrols2basicstyleimplplugin
+     QtQuick/Controls/Basic/${_lib_prefix}qtquickcontrols2basicstyleplugin
      QtQuick/Controls/impl/${_lib_prefix}qtquickcontrols2implplugin
      QtQuick/Effects/${_lib_prefix}effectsplugin
      QtQuick/Window/${_lib_prefix}quickwindowplugin
