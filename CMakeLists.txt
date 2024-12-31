@@ -253,7 +253,7 @@ if(NOT SKIP_TRANSLATIONS)
       # Convert the po into ts
       COMMAND ${QT_MAJOR}::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
       # Convert the ts in qm removing non finished translations
-      COMMAND ${QT_MAJOR}::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+      COMMAND ${QT_MAJOR}::lrelease -removeidentical -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput} -verbose
       )
     list(APPEND QM_FILES ${QmOutput})
   endforeach()
