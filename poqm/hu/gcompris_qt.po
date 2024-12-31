@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-01-25 15:22+0100\n"
+"PO-Revision-Date: 2024-12-30 14:16+0100\n"
 "Last-Translator: István Lipták <elistvan@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -1292,18 +1292,12 @@ msgstr "Logikai asszociációk"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
 msgstr "Rendezd sorrendbe a gyümölcsöket!"
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
 msgstr "Logikai asszociációk"
@@ -1329,22 +1323,16 @@ msgstr "Amőba (Tux ellen)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr "Helyezz négy korongot egy vonalba "
+msgstr "Helyezz négy korongot egy vonalba!"
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Finommozgás-koordináció"
+msgstr "Előrejelzési és stratégiai készségek fejlesztése."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1358,11 +1346,6 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
@@ -2102,9 +2085,6 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
 msgstr "Virtuális billentyűzet"
@@ -2145,7 +2125,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "Az első egerem"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2221,9 +2201,6 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
 msgstr "Rakd ki a kirakót!"
@@ -2232,16 +2209,13 @@ msgstr "Rakd ki a kirakót!"
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Párosítsd a tárgyakat az alakjukhoz"
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to match an operation with its result."
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr "Fordítsd meg a lapokat az egyező párok megtalálásához!"
+msgstr "Tanulj meg egy tárgyat az alakjához rendelni."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2260,9 +2234,6 @@ msgstr "Billenyűhang bekapcsolása gépelés közben."
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
 msgstr "Szövegszerkesztő gyerekeknek"
@@ -2271,16 +2242,13 @@ msgstr "Szövegszerkesztő gyerekeknek"
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Első szövegek írása."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Tanulj meg számolni a négy művelet segítségével."
+msgstr "Tanulj meg szöveget írni szövegszerkesztővel!"
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2424,21 +2392,15 @@ msgstr "Rakd ki a kirakót!"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
 msgstr "Fogd meg a tárgyakat és húzd őket a körvonalukra!"
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Tanuljuk meg a szófajok feliserését!"
+msgstr "Tanuljuk meg a geometriai alakzatok párosítását!"
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2713,7 +2675,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -2765,12 +2727,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Keresd a kezet"
+msgstr "A bal és a jobb kéz mozgásának szinkronizálása."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2834,6 +2793,8 @@ msgstr "Golyófogó (Tux ellen)"
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
 msgstr ""
+"Védekezzünk az ellenfél ellen és kényszerítsük rá, hogy a labdát az utolsó "
+"lyukba helyezze."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
@@ -2841,6 +2802,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
 msgstr ""
+"A stratégiai gondolkodás, a számolás és a kivonás készségeinek fejlesztése."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -3186,12 +3148,9 @@ msgstr "Braille betűk"
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Gyakorold az összeadást!"
+msgstr "Braille-írás gyakolrása"
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3224,11 +3183,6 @@ msgstr "Oldd meg a Calcudoku-t!"
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
@@ -4257,11 +4211,6 @@ msgstr "Dámajáték (Tux ellen)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
@@ -4271,12 +4220,9 @@ msgstr "Szedd le az ellenfeled össze bábúját mielőtt ő szedné le a tiéde
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Braille betűk"
+msgstr "Dámajáték"
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4319,12 +4265,9 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "A GComprisban a nemzetközi változat található."
+msgstr "A dámajáték ezen változata a nemzetközi dámajáték szabályait követi."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4412,22 +4355,16 @@ msgstr "Sakk (Tux ellen)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Fedezd fel a Braille írást"
+msgstr "Fedezd fel és játssz Sakkot!"
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "A vízkörforgás megtanulása"
+msgstr "Sakkjáték"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4600,18 +4537,12 @@ msgstr "Adj mattot!"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
 msgstr "Fejezd be a parti végét Tux ellen!"
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
 msgstr "Adj mattot!"
@@ -4666,12 +4597,9 @@ msgstr "Húzd a helyükre a képeket a történet rendezéséhez!"
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Tanuld meg felismerni a ritka színeket."
+msgstr "Tanuld meg felismerni egy történet időrendi sorrendjét!"
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4682,35 +4610,24 @@ msgstr "Mesélj el egy rövid történetet!"
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"Ha az eredmény helyes, írd be a megfelelő végeredményt majd kattints az OK "
-"gombra a válaszod ellenőrzéséhez!"
+"Rendezd a képeket úgy, hogy egy összefüggő történetet alkoss! Húzd a képeket "
+"az oldalsávról a megfelelő pontokra, majd kattints az OK gombra a válaszod "
+"érvényesítéséhez!"
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The transportation images are copyright "
-#| "Franck Doucet. Dates of Transportation are based on those found in &lt;"
-#| "https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"A Hold képe a NASA-tól van.  A szállítóeszközök képeinek szerzői joga Franck "
-"Douceté. A szállítóeszközökkel kapcsolatos dátumok alapja a &lt;http://www."
-"wikipedia.org&gt;."
+"A szállítási dátumok a &lt;https://www.wikipedia.org&gt; című dokumentumban "
+"szereplő dátumokon alapulnak."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5023,9 +4940,6 @@ msgstr "Hallgasd meg a betűt, majd kattints rá!"
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
 msgstr "Kattints egy kisbetűre"
@@ -5071,9 +4985,6 @@ msgstr "Kattints egy nagybetűre"
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
 msgstr "Kattints egy nagybetűre"
@@ -5114,9 +5025,6 @@ msgstr "Rajzolj képet a kiválasztott pontokra kattintással."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
 msgstr "Az elemeket az egér segítségével húzhatod"
@@ -5129,19 +5037,16 @@ msgstr "Az egér segítségével pontosabban kattinthatsz."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
-"Kattints sorban az összes pontra, hogy megrajzold a képet! Ha egy pontra "
-"rákattintassz, a következő elkékül."
+"Rajzold meg a képet úgy, hogy egymás után kattinttasz az egyes pontokra. "
+"Minden egyes pont kiválasztásakor megjelenik a következő kék pont. Az egyik "
+"pontról a következőre kattintva húzhatod, vagy egymás után kattinthatsz az "
+"egyes pontokra."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -5157,18 +5062,12 @@ msgstr "Kattints a halakra mielőtt eltűnnek az akváriumból!"
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
 msgstr "Finimmotorikus képességek: Kézmozgás, apró mozdulatok."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
 msgstr "Egér mozgatása és kattintás a megfelelő helyre."
@@ -5315,9 +5214,6 @@ msgstr "Fedezd fel a színkeverést."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
 msgstr "Keverd össze az elsődleges színeket, hogy megkapd a megadott színt!"
@@ -5333,11 +5229,6 @@ msgstr ""
 "keveréssel)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
@@ -5444,9 +5335,6 @@ msgstr "Világos színek keverése."
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
 msgstr "Keverd össze az elsődleges színeket, hogy megkapd a megadott színt!"
@@ -5462,11 +5350,6 @@ msgstr ""
 "keveréssel)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
@@ -5476,23 +5359,15 @@ msgstr ""
 "és a - gombokat! Majd az OK gombbal véglegesítsd a válaszodat!"
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Mixing light colors is just the opposite of mixing paint colors. The more "
-#| "light you add, the lighter the resulting color becomes. Primary colors of "
-#| "light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
 "light you add, the lighter the resulting color becomes. The primary colors "
 "of light are red, green and blue."
 msgstr ""
-"A tevékenység a fény elsődleges színeinek keverésével (összeadó keverés) "
-"foglalkozik.\n"
-"A fény esete a festékekkel való színkeverés ellentéte! Minél több fényt adsz "
-"hozzá, a kapott szín annál világosabb lesz. A fény elsődleges színei a "
-"piros, zöld és kék."
+"A világos színek keverése éppen az ellentéte a festékszínek keverésének. "
+"Minél több fényt adsz hozzá, annál világosabb lesz a kapott szín. A fény "
+"elsődleges színei a vörös, a zöld és a kék."
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -5508,9 +5383,6 @@ msgstr "Kattints a megfelelő színre!"
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
 msgstr "Ez a tevékenység megtanítja, a színek felismerését."
@@ -5837,14 +5709,10 @@ msgstr "Fogd meg a tárgyakat és húzd őket a körvonalukra!"
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "A megfigyelési és térbeli vizualizációs készség fejlesztése."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
@@ -5989,18 +5857,12 @@ msgstr "Digitális elektromosság"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
 msgstr "Áramköri rajz készítése és szimulációja"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
 msgstr "Tervezz digitális áramköri rajzot, valós idejű szimulációval!"
@@ -6202,14 +6064,6 @@ msgid "NOT A"
 msgstr "NEM A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6292,14 +6146,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6754,9 +6600,6 @@ msgstr "Kösd össze a pontokat a betűalakok megrazolásához!"
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
 msgstr "Betűalakok rajzolása viccesen."
@@ -6769,6 +6612,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Rajzold le a betűket a pontok megfelelő sorrendben történő összekötésével. "
+"Kattinthatsz és húzhatod az egyik pontról a másikra, vagy kattinthatsz az "
+"egyes pontokra egymás után."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6784,9 +6630,6 @@ msgstr "Rajzold meg a számokat! Kösd össze a pontokat!"
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
 msgstr "Számok rajzolása viccesen."
@@ -6799,6 +6642,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Rajzold le a számokat a pontok megfelelő sorrendben történő összekötésével. "
+"Kattinthatsz és húzhatod az egyik pontról a másikra, vagy kattinthatsz az "
+"egyes pontokra egymás után."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -6815,12 +6661,9 @@ msgstr ""
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr "Gyakorold a kivonást!"
+msgstr "Gyakorold a számolást kis számokkal!"
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6954,11 +6797,6 @@ msgstr "Fedd fel a képet!"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the mouse or touch the screen to erase the area and discover the "
-#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the blocks and discover the "
@@ -6972,12 +6810,9 @@ msgstr ""
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
-msgstr "Finommozgás-koordináció"
+msgstr "Finommozgás-koordináció fejlesztése"
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
@@ -6995,18 +6830,13 @@ msgstr "2 kattintásos képfelfedés"
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
 msgstr ""
 "Kattints vagy koppints duplán hogy kitörölje az adott területet és felfedezd "
-"a háttérképet!"
+"a rejtett képet!"
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -7024,12 +6854,11 @@ msgstr "Kattints vagy érintsd meg"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
-msgstr "Kattints  és felfedezd a hátteret"
+msgstr ""
+"Kattints vagy koppints a blokkok eltüntetéséhez és a rejtett kép "
+"felfedezéséhez!"
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -9203,12 +9032,9 @@ msgstr "Válaszd ki az irányokat!"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Válaszd ki az összes olyan szót amiben megtalálható az adott betű!"
+msgstr "Válassz ki két embert, akik között az adott kapcsolat fennáll!"
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -9218,13 +9044,6 @@ msgstr "Olvasás, az egérmozgás gyakorlása"
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relations. Married couples "
-#| "are marked with a ring on the link.\n"
-#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -9254,7 +9073,7 @@ msgstr "Mozgasd az elemeket, a kép rendezéséhez."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "Fejleszti az előrelátást és a térbeli vizualizációs készséget."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9482,7 +9301,7 @@ msgstr "Lődd a labdát a célba!"
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Irány és a sebesség megértése"
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -9493,6 +9312,9 @@ msgid ""
 "follow its direction. You score a goal when the ball reaches the other edge "
 "of the field."
 msgstr ""
+"Nyomd meg a labdát, és húzd mögé a célzóvonalat. Minél hosszabb a vonal, "
+"annál erősebb a rúgás. Amikor elengeded a vonalat, a labda követni fogja "
+"annak irányát. Akkor kapsz gólt, ha a labda eléri a pálya másik szélét."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -9502,29 +9324,18 @@ msgstr "Törtek készítése"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr "Válaszd ki az utasításoknak megfelelő számú részt!"
+msgstr "Válaszd ki a megfelelő számú részeket az adott tört ábrázolásához!"
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to represent a quantity of objects."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "Tanuld meg, hogy mit jelent a mértkegység."
+msgstr "Tanuld meg egy adott alakzat törtrészének ábrázolását."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
@@ -9863,13 +9674,10 @@ msgstr "Keresd meg a megfelelő számlálót és nevezőt a jelölt törtben!"
 
 #. Help goal
 #: activities/fractions_find/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr "Kattints az irányhoz megfelelő nyílra!"
+msgstr "Tanuld meg egy adott tört ábrázolásnak megfelelő törtet írni!"
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -9880,6 +9688,9 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
+"Írja ki a tört ábrázolásnak megfelelő törtet: Számoljuk meg az ábrázolt "
+"alakzat összes részének számát, és ezt adjuk meg nevezőnek. Ezután számold "
+"meg a kiválasztott részek számát, és állítsd be számlálónak."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -10082,45 +9893,30 @@ msgstr ""
 "azonos színekkel/jelekkel!"
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Másolja le és töltse ki ezt a sormintát: 4 és 7 közötti minták, a formák, "
+"Másolja le és töltse ki ezt a sormintát: 12 és 15 közötti minták, a formák, "
 "színek/jelek és méretek bármilyen kombinációjat!"
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Másolja le és töltse ki ezt a sormintát: 4 és 7 közötti minták, a formák, "
+"Másolja le és töltse ki ezt a sormintát: 10 és 12 közötti minták, a formák, "
 "színek/jelek és méretek bármilyen kombinációjat!"
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Másolja le és töltse ki ezt a sormintát: 6 és 8 közötti minták, a formák, "
+"Másolja le és töltse ki ezt a sormintát: 16 és 20 közötti minták, a formák, "
 "színek/jelek és méretek bármilyen kombinációja!"
 
 #. Activity title
@@ -10131,9 +9927,6 @@ msgstr "Helyezd el a régiókat"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
 msgstr "Húzd a régiókat a helyükre az ország összeállításához!"
@@ -10142,15 +9935,10 @@ msgstr "Húzd a régiókat a helyükre az ország összeállításához!"
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "Tanulja meg meghatározni és elhelyezni az országok régióit."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
@@ -12938,7 +12726,7 @@ msgstr "Keresd az országokat!"
 #: activities/geography/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr ""
+msgstr "Helyezze el a kontinenseket és az országokat a világtérképen."
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
@@ -12946,14 +12734,11 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
+"Tanulja meg a kontinensek és számos ország helyét meghatározni és elhelyezni "
+"a világtérképen."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
@@ -14077,13 +13862,10 @@ msgstr "Nyomd meg a billentyűt, mielőtt a betű leérne a földre!"
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr ""
+msgstr "Párosítsd a billentyűzeten lévő betűket a képernyőn lévő betűkkel."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
 msgstr "Nyomd meg a billentyűt, mielőtt a betű leérne a földre!"
@@ -14795,6 +14577,8 @@ msgid ""
 "Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
 msgstr ""
+"Fejleszd a stratégiai érzékedet, tanulj meg színeket megkülönböztetni és "
+"megjegyezni a relatív pozíciókat."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -14933,11 +14717,6 @@ msgstr "Tanulj meg számolni a négy művelet segítségével."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using additions, subtractions, multiplications "
-#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
@@ -15036,16 +14815,13 @@ msgstr "Találat számláló"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Keresse meg a műveleteket a kívánt eredmény eléréséhez."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Gyakorold a szorzást!"
+msgstr "Gyakorold  a bontott számolást!"
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -15055,11 +14831,6 @@ msgstr "Aritmatikai műveletek gyakorlása"
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
@@ -15135,12 +14906,9 @@ msgstr ""
 "találnod."
 
 #: activities/guessnumber/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Gyakorold az összeadást!"
+msgstr "Gyakorold a számok összehasonlítását!"
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15244,7 +15012,7 @@ msgstr "Próbáld kitalálni az adott szót betűk segítségével!"
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Javítsa helyesírását és szókincsét."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15314,9 +15082,6 @@ msgstr "Egyszerűsített Hanoi torony"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
 msgstr "Építsd fel a jobb oldalon látható tornyot a mellette lévő üres helyen!"
@@ -15326,15 +15091,10 @@ msgstr "Építsd fel a jobb oldalon látható tornyot a mellette lévő üres he
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Stratégikus gondolkodás fejlesztése."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
@@ -15356,9 +15116,6 @@ msgstr "Hanoi torony"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
 msgstr "Építsd fel a tornyot a jobb oldalon!"
@@ -15373,6 +15130,10 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
+"Húzz át egy-egy felső korongot az egyik toronyból a másikba, hogy a bal "
+"oldali torony a jobb oldali csapra kerüljön. A korongok szabadon mozoghatnak "
+"ide-oda a csapokon, két szabályt betartva: egyszerre csak egy korongot lehet "
+"mozgatni, és egy korong soha nem kerülhet egy kisebb korongra."
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -15450,9 +15211,6 @@ msgstr "Húzd a képeket a neveik fölé!"
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
 msgstr "Bővítsd a szókincsed"
@@ -16115,9 +15873,6 @@ msgid "Space or Enter: select an item from the list"
 msgstr "Szóköz vagy Enter: Hozzáadás a listáról"
 
 #: activities/lang/ActivityInfo.qml:36
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enter: validate your answer when the OK button is visible"
 msgctxt "ActivityInfo|"
 msgid "Enter: validate your answer when the OK button is visible"
 msgstr "Az Enter véglegesíti a választ ha az OK gomb látható."
@@ -16269,27 +16024,18 @@ msgstr "közlekedés"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
 msgstr "Összeadás megtanulása"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
-msgstr "Kis számok kivonása"
+msgstr "Kis számok összeadása"
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
 msgstr "Összeadás tanulása, az eredmény megszámlálásával."
@@ -16334,9 +16080,6 @@ msgstr "Tizedes számok megtanulása"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
 msgstr "Tizedes számok megtanulása"
@@ -16345,17 +16088,10 @@ msgstr "Tizedes számok megtanulása"
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
-msgstr ""
+msgstr "Egy szám tizedes alakjának és grafikus ábrázolásának összekapcsolása.."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -16501,29 +16237,18 @@ msgstr "1 és 5 között."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
 msgstr "Összeadások decimális számokkal"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
 msgstr "Összeadás tanulás tizedesekkel."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn additions with decimal numbers by counting how many squares are "
-#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
@@ -16534,14 +16259,6 @@ msgstr ""
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the bar, and drag the selected part of the bar to the "
-#| "empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16587,29 +16304,18 @@ msgstr "Tizedes számok összeadása 5-ig,"
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
 msgstr "Kivonás tizedesekkel"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
 msgstr "Kivonás gyakolrása tizedesekkel"
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn subtractions with decimal numbers by counting how many squares need "
-#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
@@ -16677,40 +16383,27 @@ msgstr "Hangok engedélyezése"
 
 #. Activity title
 #: activities/learn_digits/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr "Összeadás megtanulása"
+msgstr "Számjegyek tanulása"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr "Kattints az irányhoz megfelelő nyílra!"
+msgstr "Az adott számjegyhez tartozó szám ábrázolása."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "Hasonlítsd össze a számokat a megfelelő jelek segítségével!"
+msgstr ""
+"Ismerd meg az egy számjegyű számokat és a hozzájuk tartozó mennyiségeket!"
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
@@ -16834,27 +16527,18 @@ msgstr "20 és 50 között!"
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
 msgstr "A kivonás tanulása"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
 msgstr "Kis számok kivonása"
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
 msgstr "Tanuld meg a kivonást az eredmény emgszámlálása segítségével!"
@@ -17014,9 +16698,6 @@ msgstr "Melyik szóban van az a betű"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
 msgstr "Válaszd ki az összes olyan szót amiben megtalálható az adott betű!"
@@ -17025,7 +16706,7 @@ msgstr "Válaszd ki az összes olyan szót amiben megtalálható az adott betű!
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "Gyakorolj, hogy megtaláld az adott betűt a szavakban."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -17073,9 +16754,6 @@ msgstr "Fények le"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
 msgstr "A cél az összes fény lekapcsolása."
@@ -17085,6 +16763,8 @@ msgstr "A cél az összes fény lekapcsolása."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
 msgstr ""
+"Fejleszti az előrelátást, a stratégiát és a térbeli vizualizációs "
+"képességeket."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -17167,6 +16847,8 @@ msgid ""
 "Read about some key events in the life of the braille system inventor, and "
 "remember their chronological order."
 msgstr ""
+"Olvasd el a Braille-rendszer feltalálójának életében történt néhány "
+"kulcsfontosságú eseményt, és emlékezz azok időrendi sorrendjére!"
 
 #. Help goal
 #: activities/louis-braille/ActivityInfo.qml:20
@@ -17175,6 +16857,7 @@ msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
 msgstr ""
+"Emlékezz az eseménysorozat sorrendjére. Ismerje meg Louis Braille életét!"
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -17317,9 +17000,6 @@ msgstr "Számold meg, hány csillag van a bűvös kalap alatt!"
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
 msgstr "A kivonás tanulása"
@@ -17328,9 +17008,6 @@ msgstr "A kivonás tanulása"
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
 msgstr "Kivonás"
@@ -17410,9 +17087,6 @@ msgstr "Számold meg, hány csillag van a bűvös kalap alatt!"
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
 msgstr "Összeadás megtanulása"
@@ -17421,9 +17095,6 @@ msgstr "Összeadás megtanulása"
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
 msgstr "Összeadás"
@@ -17500,7 +17171,7 @@ msgstr "Segíts Tuxnak kijutni a labirintusból!"
 #: activities/mazerelative/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization and pathfinding skills."
-msgstr ""
+msgstr "Térbeli vizualizációs és útkeresési készségek fejlesztése."
 
 #. Help manual
 #: activities/maze/ActivityInfo.qml:23
@@ -17584,6 +17255,8 @@ msgstr "Vezesd ki Tuxot a láthatatlan labirintusból!"
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization, pathfinding and visual memory skills."
 msgstr ""
+"A térbeli vizualizáció, az útkeresés és a vizuális memória képességeinek "
+"fejlesztése."
 
 #. Help manual
 #: activities/mazeinvisible/ActivityInfo.qml:23
@@ -17733,9 +17406,6 @@ msgstr "Győzd le Tuxot! Keresd meg a kisbetűs és nagybetűs kártyákat!"
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
 msgstr "Memóriajáték, kis és nagybetűk gyakorlása."
@@ -17861,12 +17531,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Gyakorold a kivonást!"
+msgstr "Gyakorold a számolást!"
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -17934,9 +17601,6 @@ msgstr "Győzd le Tuxot! Keresd meg az egyforma kártyákat!"
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
 msgstr "Gyakorold az összeadást, kivonást, szorzást és osztást!"
@@ -17944,9 +17608,6 @@ msgstr "Gyakorold az összeadást, kivonást, szorzást és osztást!"
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
 msgstr "Összeadás, kivonás, szorzás, osztás"
@@ -18091,9 +17752,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
 msgstr "Összeadás és kivonás"
@@ -18101,9 +17759,6 @@ msgstr "Összeadás és kivonás"
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
 msgstr "Összeadás és kivonás"
@@ -18149,9 +17804,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
 msgstr "Gyakorold az összeadást!"
@@ -18256,18 +17908,12 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice division."
 msgstr "Osztás gyakorlása"
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
 msgstr "Osztás"
@@ -18357,9 +18003,6 @@ msgstr "Fordítsd meg a lapokat az egyező párok megtalálásához!"
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
 msgstr "Osztás"
@@ -18380,9 +18023,6 @@ msgstr "Győzd le Tuxot! Keresd meg az egyforma kártyákat!"
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
 msgstr "Gyakorold a kivonást!"
@@ -18489,19 +18129,13 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
-msgstr "Gyakorold az összeadást, kivonást, szorzást és osztást!"
+msgstr "Gyakorold a szorzást és osztást!"
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
 msgstr "Szorzás, osztás"
@@ -18548,9 +18182,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
 msgstr "Gyakorold a szorzást!"
@@ -18558,9 +18189,6 @@ msgstr "Gyakorold a szorzást!"
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
 msgstr "Szorzás"
@@ -18712,12 +18340,9 @@ msgstr "Győzd le Tuxot! Keresd meg az egyforma kártyákat!"
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr "Hagfelismerés gyakorlása, szedd le az összes kártyát!"
+msgstr "Eddzd a vizuális memóriádat!"
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -18751,12 +18376,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Gyakorold az összeadást!"
+msgstr "Gyakorold a számalakok olvasását!"
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -19270,14 +18892,12 @@ msgid "All lowercase"
 msgstr "Minden kisbetűs"
 
 #: activities/menu/Menu.qml:90
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Szeretnéd most letölteni a hangokat?"
+msgstr ""
+"Új nyelvet választottál, szeretnéd most letölteni a megfelelő hangfájlokat?"
 
 #: activities/menu/Menu.qml:91
 msgctxt "Menu|"
@@ -19518,9 +19138,6 @@ msgstr "Találd meg a hiányzó betűt a szó kiegészítéséhez!"
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
 msgstr "Az ábácérend megtanulása."
@@ -19581,12 +19198,9 @@ msgstr "Gyakorold a pénz használatát!"
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Gyakorold a pénz használatát!"
+msgstr "Gyakorold a számolást és a pénz használatát!"
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19685,20 +19299,15 @@ msgstr "Gyakorold a pénz használatát az apró visszaadásával Tuxnak!"
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
-#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to give Tux "
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"Kattints a fém- vagy papírpénzekre a képernyő alján a fizetéshez! Ha el "
-"akarsz távolítani egy érmét vagy papírpénzt, akkor kattints rá a képernyő "
-"felső részén."
+"Kattints az érmékre vagy a képernyő alján lévő bankjegyekre, hogy odaadd "
+"Tuxnak a visszajárót. Ha el akarsz távolítani egy érmét vagy egy bankjegyet, "
+"kattints rá a képernyő felső részén."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -19709,9 +19318,6 @@ msgstr "Add vissza Tuxnak az aprót, még a centeket is"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
 msgstr "Gyakorold a pénz használatát, az aprópénzzel együtt"
@@ -19747,20 +19353,12 @@ msgstr "Fedezd fel a Morze-jeleket"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
 msgstr "Tanuld meg a Morze-kód használatát!"
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
@@ -19776,13 +19374,6 @@ msgstr "Számok és betűk ismerete."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -19925,12 +19516,9 @@ msgstr "Tedd az összes darabot a helyére a megadott ábra alapján!"
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Olvasási képességek fejlesztése"
+msgstr "A megfigyelési és megfelelési készségek fejlesztése."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -19985,9 +19573,6 @@ msgstr "Malom játék (Tux ellen)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
 msgstr "Malom játék (Tux ellen)"
@@ -19997,7 +19582,7 @@ msgstr "Malom játék (Tux ellen)"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "Stratégiai és térbeli vizualizációs készségek fejlesztése."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -20008,6 +19593,10 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
+"Játssz a Tux-szal. Először felváltva helyezz el kilenc bábut, majd felváltva "
+"mozgasd a bábukat. Ha már csak 3 bábu van hátra, akkor bármelyik szabad "
+"helyre ugorhatsz velük. Egy játékos akkor nyer, ha a másik játékos nem tud "
+"egyetlen bábut sem mozgatni, vagy csak 2 bábuja maradt."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -20103,9 +19692,6 @@ msgstr "Malom (két személyes)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
 msgstr "Malom (két személyes)"
@@ -20119,6 +19705,10 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"Játssz egy barátoddal. Először felváltva helyezz el kilenc bábut, majd "
+"felváltva mozgasd a bábukat. Ha már csak 3 bábu van hátra, akkor bármelyik "
+"szabad helyre ugorhatsz velük. Egy játékos akkor nyer, ha a másik játékos "
+"nem tud egyetlen bábut sem mozgatni, vagy csak 2 bábuja maradt."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -20143,9 +19733,6 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
@@ -20213,24 +19800,16 @@ msgstr "Számsorozat"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "Válaszd ki a számokat egymás után a számsorrendnek megfelelően."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "A vízkörforgás megtanulása"
+msgstr "A szásorrend megtanulása"
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
@@ -20256,18 +19835,10 @@ msgstr "A helikopter segítségével kapd el a számozott felhőket!"
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "Ismerd fel a páros és páratlan számokat és azok számsorrendjét!"
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds with an odd or even number, in the right order. With a "
-#| "keyboard, use the arrow keys to move the helicopter. With a pointing "
-#| "device, just click or tap on the target location. To know which number "
-#| "you have to catch you can either remember it or check the number on the "
-#| "bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions: catch the clouds with an odd or even number in the "
@@ -20281,17 +19852,11 @@ msgstr ""
 "van szükséged a jobb alsó sarokban találod."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
 msgstr "Válaszd ki a páros számot:"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
 msgstr "Válaszd ki a páratlan számokat:"
@@ -20503,9 +20068,6 @@ msgstr "Rendezd az eseményeket kornolóhia sorrendbe!"
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
 msgstr "Rendezd az eseményeket kornolóhia sorrendbe!"
@@ -20549,9 +20111,6 @@ msgstr "Rendezd sorba a megadott számokat ahogy a feladat kéri!"
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
 msgstr "Számok olvasása és rendezése"
@@ -20658,9 +20217,6 @@ msgstr "Rendezd a megadott szavakat egy értelmes mondattá!"
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
 msgstr "Rendezd a szavakat értelmes mondattá!"
@@ -20754,19 +20310,11 @@ msgstr "Oware stratégiai játék Tux ellen"
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Stratégiai gondolkodási készségek fejlesztése."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than one's opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -20782,16 +20330,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On a turn, a player chooses one of "
-#| "the six houses under their control. The player removes all seeds from "
-#| "that house, and distributes them, dropping one in each house counter-"
-#| "clockwise from this house, in a process called sowing. Seeds are not "
-#| "distributed into the end scoring houses, nor into the house drawn from. "
-#| "The starting house is always left empty; if it contained 12 (or more) "
-#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -21026,14 +20564,12 @@ msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
 msgstr ""
+"Fejleszd a vizualizációs és térképolvasási készségeket, és tanuld meg "
+"követni az utasításokat."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
@@ -21071,9 +20607,6 @@ msgstr "%1x%2 kocka."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
 msgstr "Út dekódolás"
@@ -21136,9 +20669,6 @@ msgstr "Hibák: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
 msgstr "Útvonalkövetés"
@@ -21197,7 +20727,7 @@ msgstr "Keresd meg a két kép közti különbséget!"
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Fejleszd a részletek érzékelésének készségét."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21889,9 +21419,6 @@ msgstr "B♯%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
 msgstr "Számok sorrendje"
@@ -21905,9 +21432,6 @@ msgstr ""
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
 msgstr "Az ábácérend megtanulása."
@@ -21927,20 +21451,14 @@ msgstr ""
 "ellenőrizd a jobb alsó sarkoban."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Párosítsd a számokat 2-ig!"
+msgstr "Kapd el  számokat 0-tól!"
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Párosítsd a számokat 2-ig!"
+msgstr "Kapd el  számokat 10-től!"
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -21960,12 +21478,9 @@ msgstr "Játssz a zongorán"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Keresd meg a pontos dátumot a naptárban."
+msgstr "Olvassa el a kottát, majd játszd el a zongotán!"
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -22037,9 +21552,6 @@ msgstr "Ritmusjáték"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
 msgstr "Ritmuskövetés elsajátítása"
@@ -22296,19 +21808,16 @@ msgstr "Válaszd ki azt a képet ahol a gyerek a doboz bal oldalán van!"
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Programozd le az útvonalat"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Programozd be az utat, hogy segíts Tuxnak elkapni a halat."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
 msgstr "Ismerje az utasításokat. Gondolja végig logikusan az utat."
@@ -22541,9 +22050,6 @@ msgstr "A főablak és a hurok terület használatával."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
 msgstr "Vonatos játék"
@@ -22708,6 +22214,8 @@ msgstr "Másold le pontosan a megadott ábrát az üres területre!"
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
 msgstr ""
+"Tanulj meg azonosítani egy helyszínt egy rácshálóban és reprodukálni egy "
+"modellt."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -22762,9 +22270,6 @@ msgstr "Tükrözd a megadott képet!"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
 msgstr "Építsd fel a jobb oldalon látható tornyot a mellette lévő üres helyen!"
@@ -22776,6 +22281,8 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Tanulj meg azonosítani egy helyet a rácson, és szimmetrikusan reprodukálni "
+"egy modellt."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -22922,12 +22429,9 @@ msgstr ""
 
 #. Help goal
 #: activities/reversecount/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count intervals"
 msgctxt "ActivityInfo|"
 msgid "Learn to count intervals."
-msgstr "Számold meg a tárgyakat!"
+msgstr "Tanulj meg intervallumokat számolni."
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -22972,20 +22476,12 @@ msgstr "Római sorszámok"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to read a graduated line."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "Számegyenes leolvasásának megtanulása"
+msgstr "Római számok írása és olvasása."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
@@ -23007,11 +22503,6 @@ msgstr ""
 "betüivel jelölik."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
@@ -23701,9 +23192,6 @@ msgstr "Próbáld meg elosztani a cukrot a gyerekek közt!"
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
 msgstr "Osztás gyakorlása"
@@ -24187,7 +23675,7 @@ msgstr "Nem tehetsz %1-nál/nél több szeletet ide"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "Rajzolj egy rácsra!"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -24199,7 +23687,7 @@ msgstr "Készítsd el saját rajzaidat!"
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Fejezd ki kreativitásodat rajzolással!"
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -24216,31 +23704,27 @@ msgstr "Tab: váltás a színválasztó és a festő terület között"
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Vázlat"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "Használd a különböző digitális festőeszközöket képek rajzolásához!"
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Tanulj a többszörösökről és a osztókról."
+msgstr "Ismerj meg néhány digitális festőeszközt!"
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Válassz eszközöket és színeket a kihajtható panelekből, és rajzolj képeket!"
+"<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "CTRL + Z: Visszavonás"
@@ -24248,66 +23732,54 @@ msgstr "CTRL + Z: Visszavonás"
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: utolsó művelet megismétlése"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "CTRL + A: A teljes szöveg kijelölése."
+msgstr "CTRL + S: A kép mentése"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O:  kép megnyitása"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Delete vagy Backspace: Új kép létrehozása"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Ecsetsimító koncepció:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Vázlat ecset koncepció:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Háttérben"
+msgstr "Háttérszín"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Háttérben"
+msgstr "Háttérkép"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Radír eszközök"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Rajz eszközök"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Keverd ki a színt"
@@ -24315,154 +23787,109 @@ msgstr "Keverd ki a színt"
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Paletta visszaálítása"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Kiválasztva"
+msgstr "Kiválasztott szín"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hupej tartomány"
+msgstr "Árnyalat"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Szaturnusz"
+msgstr "Szaturáció"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Fények le"
+msgstr "Világosság"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Szín visszaálítása"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palesztina"
+msgstr "Paletta"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Válassz módot!"
+msgstr "Mentsd el a képet!"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Rengeteg új kép"
+msgstr "Kép megnyitása"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 beállítások"
+msgstr "Új kép beállításai"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Háttérben"
+msgstr "Háttérszín"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Háttérben"
+msgstr "Háttérkép"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Rengeteg új kép"
+msgstr "Új kép létrehozása"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Lekerekítés"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Sokszög eszközök"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Belső kör mérete"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Gradiens eszközök"
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Nem választottál egy hangot sem. Biztosan mindent törölni szeretnél?"
+msgstr "Nem mentetted el ezt a képet. Be akarod zárni ezt a tevékenységet?"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download it now?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Szeretnéd most letölteni őket?"
+msgstr "Szeretnéd törölni a képet?"
 
 #: activities/sketch/Sketch.qml:675
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Igen"
 
 #: activities/sketch/Sketch.qml:676
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nem"
@@ -24470,22 +23897,19 @@ msgstr "Nem"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Pecsét ezközök"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Szövegeszközök"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Írd ide a szöveget!"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Eszközök"
@@ -24493,22 +23917,19 @@ msgstr "Eszközök"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Visszalító eszköz beállításai"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Átlátszóság"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Méret"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Sebesség"
@@ -24516,33 +23937,24 @@ msgstr "Sebesség"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Denzitás"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Pontok"
+msgstr "Pontok mérete"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Simítás"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "cselekvés"
+msgstr "Forgatás"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
 msgstr "Tükrözd a megadott képet!"
@@ -24562,12 +23974,9 @@ msgstr "Számold meg a pontokat a dobókockán, mielőtt az leérne a földre!"
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Gyakorold az összeadást egy célba dobó játékkal"
+msgstr "Számolás gyakorlása időlimittel"
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -24683,18 +24092,12 @@ msgstr "Számok dominókkal"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr "Számold meg a pontokat a dobókockán, mielőtt az leérne a földre!"
+msgstr "Számold meg a pontokat a dominón, mielőtt az leérne a földre!"
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
 msgstr "A billentyűzeten írd be a leeső kockán lévő pontok számát!"
@@ -24762,12 +24165,9 @@ msgstr "Naprendszer"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Megnézem a Naprendszert"
+msgstr "Tanuljunk a Naprendszeről!"
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26146,36 +25546,25 @@ msgstr "A Segítség menüben megtalálod az irányítást."
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
 msgstr "Calcudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
 msgstr "Oldd meg a Calcudoku-t!"
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
 msgstr ""
-"Fejleszd logikai gondolkodási képességeidet: adatok összekapcsolása, "
-"következtetés és térbeli helymeghatározás számolás közben."
+"A logikus gondolkodás (adatok összekapcsolása, következtetés) és a térbeli "
+"vizualizáció bizonyos készségeinek fejlesztése."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -26193,6 +25582,11 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"Válassz ki egy számot vagy szimbólumot, és kattints a célhelyzetére. Minden "
+"szimbólum csak egyszer jelenhet meg egy sorban, egy oszlopban és egy "
+"alrégióban, ha van ilyen. Ha egy művelet nem megengedett, a játék "
+"megmutatja, hogy miért. De vigyázz: ha valamit elhelyezhetsz egy négyzetben, "
+"az nem biztos, hogy az egész Sudoku esetében helyes. Ettől még lehet hibás."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26235,6 +25629,8 @@ msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
 msgstr ""
+"Fejleszti a logikus gondolkodást, a színek megkülönböztetését és a pozíciók "
+"megjegyzése terén szerzett készségeket."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -26284,9 +25680,6 @@ msgstr "Tangram kirakójáték"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
 msgstr "A cél egy magadott forma létrehozása"
@@ -26298,16 +25691,11 @@ msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
 msgstr ""
+"Fejleszti a térbeli megjelenítést, a pozíciók megjegyzését és a modellek "
+"reprodukálása terén szerzett készségeket."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -26334,9 +25722,6 @@ msgstr "Dobd a nyilakat a céltáblára, majd számold össze a pontjaidat."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
 msgstr "Gyakorold az összeadást!"
@@ -26387,18 +25772,12 @@ msgstr "Maximális érték 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
 msgstr "A tíz bontott alakjának használata"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
@@ -26407,11 +25786,6 @@ msgstr "Cseréld ki a számokat a tíz bontásában!"
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
@@ -26428,15 +25802,6 @@ msgstr "Számok 1-től 30-ig és össeadások."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -26453,12 +25818,9 @@ msgstr ""
 "Javítsd ki a hibákat majd nyomd meg újra az OK gombot!"
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "Négy számból legyen két pár."
+msgstr "Három számból legyen két pár."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -26486,9 +25848,6 @@ msgstr "Tanuljunk meg a tíz bontását!"
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
 msgstr "Számok 1-10-ig és összeadások."
@@ -26557,9 +25916,6 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 30 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
 msgstr "Számok 1-től 30-ig és össeadások."
@@ -26610,9 +25966,6 @@ msgstr "Tanuljuk meg a tíz bontásának praktikus használatát."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
 msgstr "Számok 1-50-ig és összeadások."
@@ -26662,7 +26015,7 @@ msgstr "Rakj három jelet egy sorba!"
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "Stratégikus készségek fejlesztése."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -26719,39 +26072,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
 msgstr "Gyakorold az összeadást!"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Építsd fel a megadott tornyot!"
+msgstr "Oldd meg az összeadást!"
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Osztás gyakorlása"
+msgstr "Függőleges összeadás gyakolrása "
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Összeadás 1 -el."
+msgstr "Összeadás tábla"
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26771,85 +26112,91 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"A függőleges összeadásnál a számokat egymás alá írjuk. Ezeket megfelelően "
+"kell felsorakoztatni, a jobb oldali oszlopból kiindulva. Az eredményt az "
+"alsó sorba írjuk. Az összeadás megoldásához kezdd az első oszlop (jobb "
+"oldali) számainak összeadásával, és az eredményt írd fel ugyanannak az "
+"oszlopnak az alsó sorába. Ha az eredmény kétjegyű számot ad, akkor az "
+"eredményre csak az egységjegyet írjuk, és a tízes számjegyet adjuk hozzá a "
+"következő oszlop felső számjegye mellé: ezt nevezzük átvitelnek. Ezután "
+"adjuk össze a következő oszlop számait, beleértve az átvitelszámot is, és "
+"ismételjük a műveletet, amíg a művelet be nem fejeződik. Ha megvan az "
+"eredmény, kattintson az OK gombra a válasz érvényesítéséhez. Egyes szinteken "
+"az adott műveletet a megoldás előtt ki kell írni; ebben az esetben a művelet "
+"helyes kiírása után kattints a Kész gombra, majd oldd meg."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Összeadás megoldása, 2 számjegy, 2 sor, átvitel nélkül."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Összeadás megoldása, 4 számjegy, 3 sor."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Összeadás megoldása, 4 számjegy, 4 sor."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Írj saját összeadást és oldd meg!"
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Írd és oldd meg az összeadást, 2 számjegy, 2 sor, átvitel nélkül."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Összeadás megoldása, 2 számjegy, 2 sor."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Írd és oldd meg az összeadást, 2 számjegy, 2 sor."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Összeadás írása és megoldása, 2 számjegy, 3 sor."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Összeadás megoldása, 3 számjegy, 2 sor."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Összeadás írása és megoldása, 3 számjegy, 2 sor."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Összeadás megoldása, 3 számjegy, 3 sor."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Összeadás megoldása, 4 számjegy, 2 sor."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Gyakorold a kivonást!"
+msgstr "Kivonás függélegesen"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Válaszd ki a parancsot"
+msgstr "Oldd meg a kivonást!"
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26858,13 +26205,12 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Tanuld meg megoldani a függőleges kivonásokat az átcsoportosításos "
+"kölcsönzés módszerével."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
 msgstr "Kivonás"
@@ -26895,144 +26241,126 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"A függőleges kivonásnál a számokat egymás alá írjuk. Ezeket megfelelően kell "
+"felsorakoztatni, a jobb oldali oszlopból kiindulva. A legfelső számot "
+"minuendnek nevezzük: ez az az összeg, amivel kezdünk, amiből egy másik "
+"számot kivonunk, hogy megkapjuk a különbséget. Az alatta lévő számot "
+"nevezzük szubtrendnek: ez az az összeg, amelyet a minuendből kivonunk, hogy "
+"megkapjuk a különbséget. Az eredményt az alsó sorba írjuk. A kivonás "
+"megoldásához kezdjük azzal, hogy az első oszlop alsó számát kivonjuk az első "
+"oszlop felső számából (a jobb oldalon), és az eredményt írjuk fel ugyanannak "
+"az oszlopnak az alsó sorába. Ha a felső szám kisebb, mint az alsó szám, "
+"akkor a következő oszlop minuendájából kölcsönözhetsz: például ha a felső "
+"számhoz 10 egységet adsz hozzá, akkor a következő oszlop felső számából kell "
+"egy egységet kivenned. Ezt nevezzük átcsoportosítással történő kölcsönzés "
+"módszernek. Ehhez ebben a feladatban kattints a felső szám bal oldalán lévő "
+"üres téglalapra, válaszd ki az 1-et, a következő oszlopban pedig kattints a "
+"felső szám jobb oldalán lévő üres téglalapra, és válaszd ki a -1-t. Ezután "
+"írd fel az oszlop eredményét az alsó sorba, és ugyanígy járj el a következő "
+"oszlopoknál is, amíg a művelet be nem fejeződik. Ha megtalálta az eredményt, "
+"kattintson az OK gombra a válasz érvényesítéséhez. Egyes szinteken az adott "
+"műveletet a megoldása előtt ki kell írnia; ebben az esetben kattintson a "
+"Kész gombra, amikor a művelet helyesen ki van írva, majd oldja meg."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Kivonás megoldása, 2 számjegy, 2 sor, átvitel nélkül."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonások 4 és 5-tel 3-sorban."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonások 4 és 5-tel 4-sorban."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "A kivonás tanulása."
+msgstr "Írd meg a saját kivonásodat és oldd meg!"
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Kivonás írása és megoldása, 2 számjegy, 2 sor, átvitel nélkül."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonások 2 és 3-mal 2-sorban."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Írj és végezzz kivonásokat 2 és 3-mal 2 sorban!"
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
 msgstr "Kivonások 1-2-3-al."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonás megoldása, 3 vagy 4 számjeggyel, 2 sor."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonások írása és megoldása, 3 vagy 4 számjeggyel, 2 sor."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonás megoldása, 3 vagy 4 számjeggyel, 3 sor."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Kivonások 1-2-3-al."
+msgstr "Kivonás megoldása, 4 vagy 5 számjeggyel, 2 sor."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Írás:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Megoldva:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Címe: %1"
+msgstr "Megoldás: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Készen állok."
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Gyakorold a kivonást!"
+msgstr "Függőleges kivonás (kompenzáció)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -27041,6 +26369,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Tanuld meg megoldani a függőleges kivonásokat a kompenzációs kölcsönzés "
+"módszerével."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -27068,6 +26398,26 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"A függőleges kivonásnál a számokat egymás alá írjuk. Ezeket megfelelően kell "
+"felsorakoztatni, a jobb oldali oszlopból kiindulva. A legfelső számot "
+"minuendnek nevezzük: ez az az összeg, amivel kezdünk, amiből egy másik "
+"számot kivonunk, hogy megkapjuk a különbséget. Az alatta lévő számot "
+"nevezzük szubtrendnek: ez az az összeg, amelyet a minuendből kivonunk, hogy "
+"megkapjuk a különbséget. Az eredményt az alsó sorba írjuk. A kivonás "
+"megoldásához kezdjük azzal, hogy az első oszlop alsó számát kivonjuk az első "
+"oszlop felső számából (a jobb oldalon), és az eredményt írjuk fel ugyanannak "
+"az oszlopnak az alsó sorába. Ha a felső szám kisebb, mint az alsó szám, "
+"akkor a következő oszlopban lévő kivonásból kölcsönözhetsz: például ha a "
+"felső számhoz 10 egységet adsz hozzá, akkor a következő oszlop alsó számához "
+"egy egységet kell hozzáadnod. Ezt nevezzük kompenzációs kölcsönzés "
+"módszernek. Ehhez ebben a feladatban kattints a felső szám bal oldalán lévő "
+"üres téglalapra, válaszd ki az 1-et, a következő oszlopban pedig kattints az "
+"alsó szám jobb oldalán lévő üres téglalapra, és válaszd ki a +1-et. Ezután "
+"írja az oszlop eredményét az alsó sorba, és tegye ugyanezt a következő "
+"oszlopokon is, amíg a művelet be nem fejeződik. Ha megtalálta az eredményt, "
+"kattintson az OK gombra a válasz érvényesítéséhez. Egyes szinteken az adott "
+"műveletet a megoldása előtt ki kell írni; ebben az esetben kattintson a Kész "
+"gombra, amikor a művelet helyesen ki van írva, majd oldja meg."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -27086,9 +26436,6 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
 msgstr "A vízkörforgás megtanulása"
@@ -27223,12 +26570,9 @@ msgstr "Gépeld be a leeső szavakat, mielőtt leérnének a földre!"
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Osztás gyakorlása."
+msgstr "A billentyűzet használatlának gyakorlása."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -27243,12 +26587,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Gépeld be a leeső teljes szót, mielőtt az leérne a földre!"
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Új fordítások: azerbajdzsáni."
+msgstr "Új fordítások: szanszkrit"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -27278,31 +26619,23 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Az új nyelv automatikus alkalmazása a menüben történő váltáskor (nem kell "
+"újraindítani a GCompris-t)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Nyitóképernyő indításkor"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
-msgstr ""
-"Új parancssori művelettel kilistázhatók a tevékenységek vagy egy magadott "
-"indítható."
+msgstr "Új parancssori opció a renderelő váltásához (--renderer renderer)"
 
 #: core/ChangeLog.qml:45
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Azerbaijani"
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr "Új fordítások: azerbajdzsáni."
+msgstr "Új fordítások: litván"
 
 #: core/ChangeLog.qml:56
 msgctxt "ChangeLog|"
@@ -28004,7 +27337,7 @@ msgstr "%1 sikeresen törölve!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -28028,12 +27361,9 @@ msgid "No"
 msgstr "Nem"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Valóban vissza akarod vonni az összes lépést?"
+msgstr "Biztosan ki akarod törölni ezt a file-t?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
@@ -28136,37 +27466,30 @@ msgid "Enable the kiosk mode."
 msgstr "Mozi mód engedélyezése."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
-"Szoftveres megjelenítési mód opelGL helyett (lassabb de bármilyen "
-"videokártyával működik)."
+"Használjon szoftveres renderelőt az openGL helyett (lassabb, de bármilyen "
+"grafikus kártyával futtatható). Elavult, használd helyette a --"
+"renderer=software-t."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
-"OpenGL mód használata (gyorsabb de bizonyos grafikus kártyák esetén "
-"problémát okozhat)."
+"Használjon openGL renderelőt szoftveres helyett (gyorsabb, de a grafikus "
+"kártyától függően összeomolhat). Elavult, használd helyette a --"
+"renderer=opengl-t."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Válassz megjelítőt:  (opengl, software, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
