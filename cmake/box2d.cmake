@@ -78,7 +78,10 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       #set(EXTRA_INSTALL_ANDROID_BOX2D ${CMAKE_COMMAND} -E make_directory ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} && )
       set(EXTRA_BOX2D_CMAKE_ARGS ${EXTRA_BOX2D_CMAKE_ARGS} -DANDROID_ABI=${ANDROID_ABI})
       # Strip box2d library for Android
-      set(EXTRA_INSTALL_ANDROID_BOX2D ${LLVM_STRIP} --strip-all ${_box2d_library_dir}${_box2d_library_file} && )
+      set(STRIP_BOX2D_COMMAND ${LLVM_STRIP} --strip-all ${_box2d_library_dir}${_box2d_library_file} && )
+    else()
+      find_program(STRIP_COMMAND NAMES strip)
+      set(STRIP_BOX2D_COMMAND ${STRIP_COMMAND} --strip-all ${_box2d_library_dir}${_box2d_library_file} && )
     endif()
 
     ExternalProject_Add(qml_box2d
@@ -87,7 +90,7 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
       SOURCE_DIR ${_box2d_source_dir}
       BUILD_COMMAND ${BOX2D_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
-      INSTALL_COMMAND ${EXTRA_INSTALL_ANDROID_BOX2D} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_library_dir}/qmldir ${_box2d_install_dir}
+      INSTALL_COMMAND ${STRIP_BOX2D_COMMAND} ${CMAKE_COMMAND} -E copy ${_box2d_library_dir}${_box2d_library_file} ${_box2d_library_dir}/qmldir ${_box2d_install_dir}
       )
 
     add_library(qml-box2d SHARED IMPORTED)
