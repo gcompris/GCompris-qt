@@ -327,6 +327,11 @@ else()
   option(BUILD_STANDALONE "Build a standalone package when typing 'make package'" ON)
 endif()
 
+# Default to Release if we build a package
+if(BUILD_STANDALONE)
+  set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build." FORCE)
+endif()
+
 option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
 
 if(WIN32)
