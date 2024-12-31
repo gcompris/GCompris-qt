@@ -100,7 +100,12 @@ function(installQmlPlugin _plugin _dest_dir _lib)
   get_filename_component(_qml_subdir ${_plugin} PATH)
   get_filename_component(_qml_subdir_root ${_qml_subdir} PATH)
   getQtQmlPath(_qt_qml_path)
-  install(DIRECTORY ${_qt_qml_path}/${_qml_subdir} DESTINATION ${_dest_dir}/${_qml_subdir_root})
+  file(GLOB plugin_files LIST_DIRECTORIES false "${_qt_qml_path}/${_qml_subdir}/*")
+  # Usually, a plugin is a qmldir, plugins.qmltypes and a library
+  # For QtQuick.Controls.Basic, there are also .qml we don't need to package, so ignore them
+  list(FILTER plugin_files EXCLUDE REGEX "\.qml$")
+
+  install(FILES ${plugin_files} DESTINATION ${_dest_dir}/${_qml_subdir})
   if(CMAKE_HOST_WIN32)
     set(_dbg_suffix "d")
   else()
