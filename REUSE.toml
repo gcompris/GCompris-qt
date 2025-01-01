@@ -2109,54 +2109,63 @@ path = "src/activities/explore_farm_animals/resource/animals/cat.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Loliloli"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Spielendes_K%C3%A4tzchen.JPG"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/chicken.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 Tranquilles"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Chickens_at_Tranquilles_B%26B.JPG"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/cow.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Dohduhdah"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Cow-IMG_2050.JPG"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/dog.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Hans Kemperman"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:German-shepherd-4040871920._(2).jpg"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/duck.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2010 Bernard Spragg"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Aylesbury_Duck._(9373723157).jpg"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/horse.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 Seth Zeigler"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Nokota_Horse_Stud_Band.jpg"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/owl.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2016 Lepale"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Owl_The_Nightbird.jpg"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/pig.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 Teinesavaii"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Pig_1,_Savaii,_Samoa.JPG"
 
 [[annotations]]
 path = "src/activities/explore_farm_animals/resource/animals/sheep.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Rob Mitchell"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Sheep_(33625876592).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/**.svg"
@@ -2169,294 +2178,343 @@ path = "src/activities/explore_monuments/resource/egypt/bentPyramid.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 Neithsabes"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Pyramide_rhomboidale_01.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/egypt/greatPyramidOfGiza.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2002 Gary Todd"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Giza_Great_Pyramid_of_Khufu_(9793952173).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/egypt/meidumPyramid.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 Neithsabes"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Meidoum_pyramide_006.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/egypt/redPyramid.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2003 Chipdawes"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:RedPyramid.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/arlesAmphitheater.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 (WT-fr) OT Arles"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Arenes_arles.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/chateaudeChambord.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 BjörnT"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Chambord_Frontansicht.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/chateaudeChenonceau.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Alf van Beem"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Chenonceau_photo_1.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/citedeCarcassonne.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2004 Petitemontagnedujura"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Carcassonne_-_la_Cit%C3%A9.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/eiffelTower.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2005 Tognopop"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Eiffel_Tower_20051010.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/montStMichel.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Ali Sabbagh"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Mont_Saint-Michel_IMG_5109_(48875955288).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/palaisdesPapes.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2005 Tognopop"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Main_entrance_of_the_Palais_des_Papes_-_20050823.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/pontduGard.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Mimova"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Pontdugard.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/reimsCathedral.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Mattana"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Reims_Cathedrale_Notre_Dame_002_chevet.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/france/rocamadour.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2005 François Darras"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Rocamadour_fda.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/aulaPalatina.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Berthold Werner"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Trier_Konstantinbasilika_BW_1.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/berlinCathedral.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2016 Gary Todd"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Berlin_Cathedral_(28668994926).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/brandenburgGate.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 Evans1551"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Brandenburg_Gate_(summer_2005).JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/neuschwansteinCastle.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 cameralends"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle_(532850).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/schwerinPalace.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 Hermann Luyken"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:2012.02.26.121724_Schloss_Schwerin.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/trierImperialBaths.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Berthold Werner"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Trier_Kaiserthermen_BW_1.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/germany/wormsCathedral.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2010 Immanuel Giel"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Dommodell_Worms_04.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/ajantaCave.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Jonathanawhite"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Aurangabad_-_Ajanta_Caves_(32).JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/charminar.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Goutamkhandelwal"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Charminar_1.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/gatewayofIndia.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2010 Simon Steinberger"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Gateway-of-India.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/goldenTemple.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 Jasdeep Singh"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Golden_Temple_.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/greatStupa.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "1999 ArnoldBetten"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Sanchi_Stupa_1_(1999).JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/hawaMahal.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Janwiki"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Hawa_Mahal,_Jaipur,_India.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/konarkSunTemple.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Tetraktys"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Konark_Sun_Temple_Front_view.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/mysorePalace.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Shiva sg"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Mysore_Palace_2006.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/qutubMinar.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 pramadas"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Qutubmin.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/rangGhar.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 Porikolpok Oxom"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Rangghar_Assam.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/india/victoriaMemorial.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2010 Anourag"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Calcutta.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/cabrillo.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 allyndon"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Cabrillo_National_Monument._California_Historical_Landmark_%5E56_-_Flickr_-_allyndon.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/canyondeChelly.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "1998 Nikater"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Canyon_de_chelly09.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/castillodeSanMarcos.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 National Park Service"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Castillo_de_San_Marcos.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/castleClinton.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "1961 Jack E. Boucher, National Park Service"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Castle_Clinton_National_Monument_in_Battery_Park_-_New_York_City_-_Areal_view_-_1961.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/fortSumter.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "1998 Gary Todd"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Fort_Sumter,_South_Carolina_(12583090893).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/georgeWashingtonBirthplace.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2003 National Park Service"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:George_Washington_Birthplace_National_Monument,_Virginia_(e1c27488-14f6-4478-ab87-d36af60e34d3).jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/lincolnMemorial.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Brylie Christopher Oxley"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:US-WashingtonDC-LincolnMemorial-20140312_014138_HDR_v1.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/mountRushmore.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Eekim"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Mount_Rushmore,_Keystone,_South_Dakota.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/navajo.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2004 Jon Sullivan"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Betatakin_Cliff_Dwellings.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/usa/statueofLiberty.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 (WT-shared) Ypsilonatshared"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Liberty_enlightening_the_world.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/chichenItza.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 Daniel Schwen"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/christTheRedeemer.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Chensiyuan"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:1_cristor_redentor_2014.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/colosseum.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 Urse Ovidiu"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Colosseum_Roma_2009.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/greatWallofChina.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Nicolas Perrault III"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/machuPicchu.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Guillaume Pascal"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Yet_another_pic_of_machu_picchu.jpg"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/petra.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 Berthold Werner"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Petra_Jordan_BW_36.JPG"
 
 [[annotations]]
 path = "src/activities/explore_monuments/resource/wonders/tajMahal.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2010 Yann"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/**.svg"
@@ -2469,90 +2527,105 @@ path = "src/activities/explore_world_animals/resource/animals/bison.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Kurt Kaiser"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:American_Bison_9.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/chameleon.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Nilesh1104"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:GARDEN_CHAMELEON.jpeg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/crocodile.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Djambalawa"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Saltwater_Crocodile_on_a_river_bank_(cropped).jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/dragon.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 TimVickers"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Varanus_komodoensis_(5).jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/giraffe.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Mike and Lara Wolfe"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Giraffe_courtship_(25657342808).jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/hedgehog.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2020 George Chernilevsky"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Erinaceus_roumanicus_2020_G2.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/jaguar.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Frieda Bredesen"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Two_Jaguar_Sisters.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/kangaroo.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 Vicki Nunn"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Eastern_Grey_Kangaroo_%26_Joey2.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/koala.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2002 BurningWell"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Koala_Perth_Zoo.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/lemur.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Mathias Appel"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Lemur_(37122852696).jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/moose.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 Ryan Hagerty"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Male_Moose.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/narwhal.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006 Dr Kristin Laidre"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Pod_Monodon_monoceros.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/panda.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2004 Jeff Kubina"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Giant_Panda_2004-03-2.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/polar_bear.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 anonymous"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Churchill_Wildlife_Management_Area_polar_bear30.JPG"
 
 [[annotations]]
 path = "src/activities/explore_world_animals/resource/animals/scarlet_macaw.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 Dcoetzee"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Scarlet_macaw_at_Cougar_Mountain_Zoological_Park.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/**.svg"
@@ -2565,108 +2638,126 @@ path = "src/activities/explore_world_music/resource/music/africa.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 Kenneth Ritchards"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Bata_drums.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/america.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2002 Tom Harpel"
 SPDX-License-Identifier = "CC-BY-2.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Onalaska-Practice6.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/australia.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 Steve Evans"
 SPDX-License-Identifier = "CC-BY-2.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Australia_Aboriginal_Culture_009.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/ireland.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 candyschwartz"
 SPDX-License-Identifier = "CC-BY-2.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Lunny_irvine_o_flynn_glackin.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/italy.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2013 SoriamuséuM"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:%C3%93pera_c%C3%A1sina.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/japan.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 takami torao"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Agidaiko03.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/mexico.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 Elidealista"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Wikipedia_10_Guadalajara_-_Mariachi.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/middleeast.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Metropolitan Museum of Art"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Dut%C4%81r_MET_DP703859.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/orchestra.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 ABC Informática"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Orchestra_of_the_18th_Century.jpg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/africa.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 Michi Henning"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Djembe_accompaniment.ogg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/america.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Karel Schmiedberger"
 SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:08-rock-n-roll.ogg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/australia.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2005 Jouke kooistra and Rob Tol"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://archive.org/details/didgeridoorelax"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/beethoven.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2019 Drummyfish"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Sym_9_Second_Movement.ogg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/ireland.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2019 peakfiddler"
 SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:The_Wind_that_Shakes_the_Barley.ogg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/italy.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "1920 Adam Cuerden"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Enrico_Caruso,_George_Frideric_Handel,_Ombra_mai_fu_(Serse).ogg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/japan.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2013 Scott Harding"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:02_Taiko2_(short).oga"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/mexico.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 Mex-Django"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Himno_Nacional_Mexicano_-_Mariachi_Mexico_de_Pepe_Villa.ogg"
 
 [[annotations]]
 path = "src/activities/explore_world_music/resource/music/middleeast.ogg"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 Safiye Ayla"
 SPDX-License-Identifier = "Unlicense"
+SPDX-FileComment = "Source: https://archive.org/details/KatibimuskudaraGiderIken-SafiyeAyla"
 
 [[annotations]]
 path = "src/activities/family**/**.svg"
@@ -3990,12 +4081,14 @@ path = "src/activities/money/resource/money1.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2008 florian_reinke"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/florian_reinke/sounds/63523/"
 
 [[annotations]]
 path = "src/activities/money/resource/money2.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2013 keweldog"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/keweldog/sounds/181761/"
 
 [[annotations]]
 path = ["src/activities/morse_code/resource/dash.wav", "src/activities/morse_code/resource/dot.wav"]
@@ -4365,12 +4458,14 @@ path = "src/activities/redraw/resource/brush.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2009 acrober"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/acrober/sounds/86113/"
 
 [[annotations]]
 path = "src/activities/redraw/resource/eraser.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2011 esperri"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/esperri/sounds/119143/"
 
 [[annotations]]
 path = "src/activities/renewable_energy/**.svg"
@@ -4390,6 +4485,7 @@ path = "src/activities/reversecount/resource/icy_walk.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2007 tim kahn"
 SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/Corsica_S/sounds/28662/"
 
 [[annotations]]
 path = "src/activities/roman_numerals/roman_numerals.svg"
@@ -4414,6 +4510,7 @@ path = "src/activities/scalesboard/resource/metal_hit.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 jorickhoofd"
 SPDX-License-Identifier = "CC-BY-4.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/jorickhoofd/sounds/160045/"
 
 [[annotations]]
 path = "src/activities/share/**.svg"
@@ -4604,7 +4701,7 @@ path = "src/activities/traffic/resource/car.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2012 henrique85n"
 SPDX-License-Identifier = "CC-BY-SA-3.0"
-SPDX-FileComment = "extract"
+SPDX-FileComment = "extract of source: https://www.freesound.org/people/henrique85n/sounds/160442/"
 
 [[annotations]]
 path = "src/activities/watercycle/**.svg"
@@ -5044,6 +5141,7 @@ path = "src/core/resource/sounds/audioclick.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2006-2023 Brandon Morris"
 SPDX-License-Identifier = "CC-BY-3.0"
+SPDX-FileComment = "Source: https://soundbible.com/1294-Button-Click-Off.html"
 
 [[annotations]]
 path = ["src/core/resource/sounds/bleep.wav", "src/core/resource/sounds/brick.wav", "src/core/resource/sounds/darken.wav", "src/core/resource/sounds/flip.wav", "src/core/resource/sounds/scroll.wav", "src/core/resource/sounds/smudge.wav"]
@@ -5071,6 +5169,7 @@ path = "src/core/resource/sounds/completetask.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2015 Brandon Morris"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://opengameart.org/content/completion-sound"
 
 [[annotations]]
 path = "src/core/resource/sounds/water.wav"
@@ -5084,6 +5183,7 @@ path = "src/core/resource/sounds/win.wav"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Gabriel Araujo"
 SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://www.freesound.org/people/GabrielAraujo/sounds/242501/"
 
 [[annotations]]
 path = "tests/core/Contents.test"
