@@ -110,12 +110,20 @@ add_definitions(
 )
 
 if(UNIX AND NOT APPLE AND NOT ANDROID)
-    find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS WaylandClient)
+  find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS WaylandClient)
+endif()
+
+# For systems where ICU is not packaged with Qt installer
+# And we want to package it from system
+option(SHIP_SYSTEM_ICU "Ship system ICU in packages and not the one packaged by Qt" OFF)
+if(SHIP_SYSTEM_ICU)
+  find_package(ICU COMPONENTS data uc i18n)
+  set_package_properties(ICU PROPERTIES TYPE REQUIRED)
 endif()
 
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
-    find_package(OpenSSL)
-    set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
+  find_package(OpenSSL)
+  set_package_properties(OpenSSL PROPERTIES TYPE REQUIRED)
 endif()
 
 option(COMPILE_DOC "Enable compilation of GCompris docbook" OFF)
