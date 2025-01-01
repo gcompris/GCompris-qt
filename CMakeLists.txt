@@ -111,6 +111,9 @@ add_definitions(
 
 if(UNIX AND NOT APPLE AND NOT ANDROID)
     find_package(${QT_MAJOR} ${QT_REQUIRED_VERSION} OPTIONAL_COMPONENTS WaylandClient)
+
+    find_package(ICU COMPONENTS data uc i18n)
+    set_package_properties(ICU PROPERTIES TYPE REQUIRED)
 endif()
 
 if((UNIX AND NOT APPLE AND NOT ANDROID) OR WIN32)
