@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2020-05-22 10:49+0200\n"
-"PO-Revision-Date: 2024-09-14 11:22+0200\n"
+"PO-Revision-Date: 2024-12-26 21:43+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -5062,11 +5062,6 @@ msgstr "Povas movi la muson kaj klaki precize sur punktoj."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5074,7 +5069,8 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Desegnu la bildon klakante sur ĉiu punkto en sinsekvo. Ĉiufoje kiam punkto "
-"estas elektita, la sekva blua aperas."
+"estas elektita, la sekva blua aperas. Vi povas alklaki kaj treni ek de unu "
+"punkto al la sekvantaj, aŭ klaki al ĉiu punkto unu post la alia."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -14797,7 +14793,7 @@ msgstr ""
 #: activities/guess24/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Use the four numbers with given operators to find 24."
-msgstr "Uzu la kvar nombrojn kun donitaj operatoroj por trovi 24."
+msgstr "Uzu la kvar nombroj kun donitaj operatoroj por trovi 24."
 
 #: activities/guess24/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -19883,11 +19879,6 @@ msgstr "Lernu la numeran sinsekvon."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
@@ -19895,7 +19886,8 @@ msgid ""
 "point one after the other."
 msgstr ""
 "Desegnu la bildon klakante sur ĉiu punkto en sinsekvo. Ĉiufoje kiam punkto "
-"estas elektita, la sekva blua aperas."
+"estas elektita, la sekva blua aperas. Vi povas alklaki kaj treni ek de unu "
+"punkto al la sekvantaj, aŭ klaki al ĉiu punkto unu post la alia."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -23814,12 +23806,9 @@ msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Lernu pri multobloj kaj faktoroj."
+msgstr "Lernu pri iuj ciferecaj pentriloj."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
@@ -23828,22 +23817,16 @@ msgid ""
 msgstr ""
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: malfari"
+msgstr "Ctrl + Z: malfari lastan agon"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: refari lastan agon"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + A: elektu la tutan tekston"
@@ -23851,208 +23834,154 @@ msgstr "Ctrl + A: elektu la tutan tekston"
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: malferi bildon"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Delete aŭ Retropaŝo: krei novan bildon"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Penikoglatiga koncepto de:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Skizopenika koncepto de:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Fono"
+msgstr "Fonkoloro"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Fono"
+msgstr "Fonbildo"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Skrapgumo"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Desegniloj"
 
 #: activities/sketch/ColorSelector.qml:75
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Kongruu kun la koloro"
+msgstr "Paletraj Koloroj"
 
 #: activities/sketch/ColorSelector.qml:159
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Restarigi paletron"
 
 #: activities/sketch/ColorSelector.qml:210
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Elektita"
+msgstr "Elektita Koloro"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:234
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubejo"
+msgstr "Kolornuanco"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:261
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturno"
+msgstr "Satureco"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:286
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Lumoj estingitaj"
+msgstr "Lumeco"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:323
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Restarigi Koloron"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestino"
+msgstr "Paletroj"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
 msgstr "Elektu vian reĝimon"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Multaj novaj bildoj"
+msgstr "Malfermi bildon"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 agordoj"
+msgstr "Agordo de nova bildo"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Fono"
+msgstr "Fonkoloro"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Fono"
+msgstr "Fonbildo"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Multaj novaj bildoj"
+msgstr "Keri novan bildon"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Rondigitaj Anguloj"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Geometriaj Iloj"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Grandeco de Ena Cirklo"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Kolortransiraj Iloj"
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Vi elektis neniun noton. Ĉu vi volas forviŝi ĉiujn notojn?"
+msgstr "Vi ne konservis tiun ĉi bildon. Ĉu vi volas fermi ĉi aktivecon?"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Ĉu vi vere volas malfari ĉiujn movojn?"
+msgstr "Ĉu vi volas forviŝi ĉi bildon?"
 
 #: activities/sketch/Sketch.qml:675
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Jes"
 
 #: activities/sketch/Sketch.qml:676
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ne"
@@ -24060,22 +23989,19 @@ msgstr "Ne"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Stampilo"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Tekstilo"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Tajpu vian tekston ĉi tie"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Iloj"
@@ -24083,22 +24009,19 @@ msgstr "Iloj"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Restarigi agordon de iloj"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Opakeco"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Grandeco"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Rapido"
@@ -24106,36 +24029,27 @@ msgstr "Rapido"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Denseco"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Punktoj"
+msgstr "Grandeco de Punktoj"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Glatigo"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "ago"
+msgstr "Rotacio"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Spegulu la donitan bildon"
+msgstr "Speguli bildon"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -26265,39 +26179,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Ekzercu adicion."
+msgstr "Vertikala adicio"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Solvu la Kalkudokuon."
+msgstr "Solvu la donitan adicion."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Lernu kundividi, ekzercu dividon."
+msgstr "Lernu solvi vertikalajn adiciojn."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Aldontabelo de 1."
+msgstr "Adiciaj tabeloj."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26380,22 +26282,16 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Ekzercu subtrahon."
+msgstr "Vertikala subtraho"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Elektu la instrukciojn"
+msgstr "Solvu la donitan subtrahon."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26408,12 +26304,9 @@ msgstr ""
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Subtrahotabelo de 1."
+msgstr "Subtrahotabeloj."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -26450,30 +26343,21 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Solvu subtrahon, 4 aŭ 5 ciferoj, 3 linioj."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Solvu subtrahon, 4 aŭ 5 ciferoj, 4 linioj."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Lernu subtrahotabelon de 1."
+msgstr "Skribu vian propran subtrahon kaj solvu ĝin."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
@@ -26483,102 +26367,73 @@ msgstr ""
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Solvu subtrahon, 2 aŭ 3 ciferoj, 2 linioj."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Skribu kaj solvu subtrahon, 2 aŭ 3 ciferoj, 2 linioj."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Skribu kaj solvu subtrahon, 2 aŭ 3 ciferoj, 3 linioj."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Solvu subtrahon, 3 aŭ 4 ciferoj, 2 linioj."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Skribu kaj solvu subtrahon, 3 aŭ 4 ciferoj, 2 linioj."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Solvu subtrahon, 3 aŭ 4 ciferoj, 3 linioj."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Subtrahoj kun 1, 2 kaj 3."
+msgstr "Solvu subtrahon, 4 aŭ 5 ciferoj, 2 linioj."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Skribu:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Solvu:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Titolo: %1"
+msgstr "Solvu: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Mi pretas"
+msgstr "Preta"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Ekzercu la operacion de subtraho."
+msgstr "Vertikala subtraho (kompenso)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26782,12 +26637,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Tajpu la kompletan vorton dum ĝi falas, antaŭ ol ĝi atingas la teron."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Traduko aldonita por la latva"
+msgstr "Traduko aldonita por la sanskrita"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -26824,15 +26676,10 @@ msgid "Add splash screen at startup"
 msgstr ""
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Nova komandlinia opcio por listigi ĉiujn agadojn kaj komenci per specifa"
+"Nova komandlinia opcio por baskuligi la bildigilon (--renderer renderer)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -27561,12 +27408,9 @@ msgid "No"
 msgstr "Ne"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Ĉu vi vere volas malfari ĉiujn movojn?"
+msgstr "Ĉu vi vere volas forigi ĉi tiun dosieron?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
@@ -27669,32 +27513,22 @@ msgid "Enable the kiosk mode."
 msgstr "Ebligu la kioskan reĝimon."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Uzu programaran bildilon anstataŭ openGL (pli malrapide sed devus funkcii "
-"per iu ajn grafika karto)."
+"per iu ajn grafika karto). Evitinda, uzu --renderer=software anstataŭe."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
-"Uzu openGL-bildilon anstataŭ programaro (pli rapide sed kraŝas eble depende "
-"de via grafika karto)."
+"Uzu openGL-bildilon anstataŭ programaro (pli rapida sed eble paneas depende "
+"de via grafika karto). Evitinda, uzu --renderer=opengl anstataŭe."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
@@ -27841,40 +27675,3 @@ msgstr "Salti"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Komenci"
-
-#, fuzzy
-#~| msgctxt "ActivityInfo|"
-#~| msgid "Keyboard controls:"
-#~ msgctxt "ActivityInfo|"
-#~ msgid "<b>Keyboard controls:"
-#~ msgstr "Klavaraj kontroloj:"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "Desegnu la literojn kunligante la punktojn en la ĝusta ordo."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "Desegnu la nombrojn kunligante la punktojn en la ĝusta ordo."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Draw the picture by clicking on the points in the numerical sequence "
-#~ "order."
-#~ msgstr ""
-#~ "Desegnu la bildon klakante sur la punktoj el la ordo de nombra sinsekvo."
-
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Subtractions with 1, 2 and 3."
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Subtrahoj kun 1, 2 kaj 3."
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "Bone"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "Bone"
