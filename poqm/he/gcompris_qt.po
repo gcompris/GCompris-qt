@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2024-12-24 08:15+0200\n"
+"PO-Revision-Date: 2025-01-01 07:09+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -21321,7 +21321,7 @@ msgid ""
 "Odd levels display a vertical line on the staff following the rhythm: click "
 "on the drum when the line is in the middle of the notes."
 msgstr ""
-"שלבים אי-זוגיים מציגים קו אנכי על החמשה שעוקב אחרי הקצב: להקיש על התוף כאשר "
+"שלבים אי־זוגיים מציגים קו אנכי על החמשה שעוקב אחרי הקצב: להקיש על התוף כאשר "
 "הקו במרכז התו."
 
 #: activities/play_rhythm/ActivityInfo.qml:30
@@ -23421,7 +23421,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "אפשר להשתמש במגוון כלי ציור דיגיטליים כדי לצייר תמונות."
 
 #: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
@@ -23462,7 +23462,7 @@ msgstr "Ctrl + N,‏ Delete או Backspace: יצירת תמונה חדשה"
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "רעיון החלקת המברשת מתוך:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -25778,7 +25778,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "חיבור אנכי."
+msgstr "חיבור במאונך."
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
@@ -25881,7 +25881,7 @@ msgstr ""
 #: activities/vertical_subtraction/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "חיסור אנכי"
+msgstr "חיסור במאונך"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
@@ -26028,12 +26028,9 @@ msgstr "בהמתנה"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "אימון בפעולת חיסור."
+msgstr "חיסור במאונך (משלים)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
