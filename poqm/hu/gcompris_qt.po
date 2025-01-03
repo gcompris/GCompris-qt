@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-30 14:16+0100\n"
+"PO-Revision-Date: 2025-01-02 10:30+0100\n"
 "Last-Translator: István Lipták <elistvan@gmail.com>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
@@ -23720,9 +23720,7 @@ msgstr "Ismerj meg néhány digitális festőeszközt!"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr ""
-"Válassz eszközöket és színeket a kihajtható panelekből, és rajzolj képeket!"
-"<br><br>"
+msgstr "Válassz eszközöket a menükből, és rajzolj képeket!<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -23917,7 +23915,7 @@ msgstr "Eszközök"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr "Visszalító eszköz beállításai"
+msgstr "Eszközbeállítások visszaállítása"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
@@ -26189,7 +26187,7 @@ msgstr "Összeadás megoldása, 4 számjegy, 2 sor."
 #: activities/vertical_subtraction/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Kivonás függélegesen"
+msgstr "Függőleges kivonás"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
@@ -26205,8 +26203,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
-"Tanuld meg megoldani a függőleges kivonásokat az átcsoportosításos "
-"kölcsönzés módszerével."
+"Tanuld meg megoldani a függőleges kivonásokat az tízesátlépés módszerével."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -26342,7 +26339,7 @@ msgstr "Írás:"
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr "Megoldva:"
+msgstr "Művelet:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
@@ -26369,8 +26366,7 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
-"Tanuld meg megoldani a függőleges kivonásokat a kompenzációs kölcsönzés "
-"módszerével."
+"Tanuld meg megoldani a függőleges kivonásokat a tízesátlépés módszerével."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26409,15 +26405,15 @@ msgstr ""
 "az oszlopnak az alsó sorába. Ha a felső szám kisebb, mint az alsó szám, "
 "akkor a következő oszlopban lévő kivonásból kölcsönözhetsz: például ha a "
 "felső számhoz 10 egységet adsz hozzá, akkor a következő oszlop alsó számához "
-"egy egységet kell hozzáadnod. Ezt nevezzük kompenzációs kölcsönzés "
-"módszernek. Ehhez ebben a feladatban kattints a felső szám bal oldalán lévő "
-"üres téglalapra, válaszd ki az 1-et, a következő oszlopban pedig kattints az "
-"alsó szám jobb oldalán lévő üres téglalapra, és válaszd ki a +1-et. Ezután "
-"írja az oszlop eredményét az alsó sorba, és tegye ugyanezt a következő "
-"oszlopokon is, amíg a művelet be nem fejeződik. Ha megtalálta az eredményt, "
-"kattintson az OK gombra a válasz érvényesítéséhez. Egyes szinteken az adott "
-"műveletet a megoldása előtt ki kell írni; ebben az esetben kattintson a Kész "
-"gombra, amikor a művelet helyesen ki van írva, majd oldja meg."
+"egy egységet kell hozzáadnod. Ezt nevezzük tízesátlépéses módszernek. Ehhez "
+"ebben a feladatban kattints a felső szám bal oldalán lévő üres téglalapra, "
+"válaszd ki az 1-et, a következő oszlopban pedig kattints az alsó szám jobb "
+"oldalán lévő üres téglalapra, és válaszd ki a +1-et. Ezután írja az oszlop "
+"eredményét az alsó sorba, és tegye ugyanezt a következő oszlopokon is, amíg "
+"a művelet be nem fejeződik. Ha megtalálta az eredményt, kattintson az OK "
+"gombra a válasz érvényesítéséhez. Egyes szinteken az adott műveletet a "
+"megoldása előtt ki kell írni; ebben az esetben kattintson a Kész gombra, "
+"amikor a művelet helyesen ki van írva, majd oldja meg."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
