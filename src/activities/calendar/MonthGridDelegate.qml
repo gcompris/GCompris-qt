@@ -55,7 +55,7 @@ ColumnLayout {
             id: dayText
             text: day
             anchors.centerIn: parent
-            font.family: GCSingletonFontLoader.fontLoader.name
+            font.family: GCSingletonFontLoader.fontName
             font.pixelSize: Math.min(parent.height/3, parent.width/3)
             color: {
                 var theColor = invalidDateColor;

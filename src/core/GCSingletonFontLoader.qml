@@ -26,16 +26,17 @@ pragma Singleton
  * @sa ApplicationSettings.isEmbeddedFont, ApplicationSettings.font
  */
 QtObject {
-    property QtObject fontLoader: ApplicationSettings.isEmbeddedFont ? sourceLoader : nameLoader
-
-    property QtObject fontSourceLoader: FontLoader {
+    property QtObject fontLoader: FontLoader {
         id: sourceLoader
-        source: ApplicationSettings.isEmbeddedFont ? "resource/fonts/"+ApplicationSettings.font : ""
+        // Set default embedded font name to avoid FontLoader.Error
+        source: "resource/fonts/Andika-R.ttf"
+    }
+    // Using direct binding for fontLoader source can cause errors as font and isEmbeddedFont values change one after the other...
+    // Setting the value on signal trigger avoid errors.
+    property string appSettingsFont: ApplicationSettings.font
+    onAppSettingsFontChanged: {
+        sourceLoader.source =  "resource/fonts/" + (ApplicationSettings.isEmbeddedFont ? appSettingsFont : "Andika-R.ttf")
     }
 
-    property QtObject fontNameLoader: FontLoader {
-        id: nameLoader
-        source: "resource/fonts/"+ApplicationSettings.font
-    }
-
+    property string fontName: ApplicationSettings.isEmbeddedFont ? fontLoader.name : ApplicationSettings.font
 }

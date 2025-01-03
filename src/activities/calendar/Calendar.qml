@@ -232,7 +232,7 @@ ActivityBase {
                     radius: 5
                     Label {
                         text: grid.locale.dayName((grid.locale.firstDayOfWeek+index) % 7, Locale.ShortFormat)
-                        font.family: GCSingletonFontLoader.fontLoader.name
+                        font.family: GCSingletonFontLoader.fontName
                         fontSizeMode: Text.Fit
                         minimumPixelSize: 1
                         font.pixelSize: items.horizontalLayout ? parent.height * 0.7 : parent.width * 0.2

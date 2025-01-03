@@ -190,7 +190,7 @@ ActivityBase {
                     pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
                     weight: Font.DemiBold
-                    family: GCSingletonFontLoader.fontLoader.name
+                    family: GCSingletonFontLoader.fontName
                     letterSpacing: ApplicationSettings.fontLetterSpacing
                     wordSpacing: 10
                 }

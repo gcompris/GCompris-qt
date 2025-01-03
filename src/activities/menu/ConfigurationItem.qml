@@ -649,7 +649,6 @@ Item {
         (ApplicationSettings.exitConfirmation != exitConfirmation) ||
         (ApplicationSettings.font = fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
-        (ApplicationSettings.isEmbeddedFont !== fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.fontCapitalization !== fontCapitalizationModel.get(fontcapitalizationBox.currentIndex).value) ||
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
