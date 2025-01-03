@@ -339,7 +339,7 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 font.pointSize: questionLabel.pointSize
                 font.weight: Font.DemiBold
-                font.family: GCSingletonFontLoader.fontLoader.name
+                font.family: GCSingletonFontLoader.fontName
                 font.capitalization: ApplicationSettings.fontCapitalization
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 cursorVisible: true

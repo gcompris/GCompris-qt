@@ -762,7 +762,7 @@ ActivityBase {
                 opacity: 0.5
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
-                font.family: GCSingletonFontLoader.fontLoader.name
+                font.family: GCSingletonFontLoader.fontName
                 inputMethodHints: Qt.ImhNoPredictiveText
                 // Note: we give focus to the textfield also in case
                 // isMobile && !ApplicationSettings.isVirtualKeyboard

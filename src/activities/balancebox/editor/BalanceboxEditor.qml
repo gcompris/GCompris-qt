@@ -355,7 +355,7 @@ Item {
                         value: props.contactValue
                         to: 99
                         from: 1
-                        font.family: GCSingletonFontLoader.fontLoader.name
+                        font.family: GCSingletonFontLoader.fontName
                         font.pixelSize: height / 2
                         onValueChanged: if (value != props.contactValue) props.contactValue = value;
                     }

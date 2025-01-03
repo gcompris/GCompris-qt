@@ -217,7 +217,7 @@ Item {
                 verticalAlignment: TextInput.AlignVCenter
                 font.pointSize: hintText.pointSize
                 font.weight: Font.DemiBold
-                font.family: GCSingletonFontLoader.fontLoader.name
+                font.family: GCSingletonFontLoader.fontName
                 font.capitalization: ApplicationSettings.fontCapitalization
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 maximumLength: maximumLengthAnswer
