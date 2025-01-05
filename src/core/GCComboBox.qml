@@ -279,13 +279,12 @@ Item {
         GridView {
             id: gridview
             z: 4
-            readonly property int elementHeight: 40 * ApplicationInfo.ratio
-
             // each element has a 300 width size minimum. If the screen is larger than it,
             // we do a grid with cases with 300px for width at minimum.
             // If you have a better idea/formula to have a different column number, don't hesitate, change it :).
             readonly property int numberOfColumns: Math.max(1, Math.floor(width / (300 * ApplicationInfo.ratio)))
-            contentHeight: isModelArray ? elementHeight*model.count/numberOfColumns : elementHeight*model.length/numberOfColumns
+            contentWidth: contentItem.childrenRect.width
+            contentHeight: contentItem.childrenRect.height
             width: headerDescription.width
             height: popup.height - headerDescription.height - 20 * ApplicationInfo.ratio
             currentIndex: gccombobox.currentIndex
@@ -293,21 +292,27 @@ Item {
             maximumFlickVelocity: popup.height
             boundsBehavior: Flickable.StopAtBounds
             clip: true
-            cellWidth: width / numberOfColumns
-            cellHeight: elementHeight
+            cellWidth: headerDescription.width / numberOfColumns
+            cellHeight: 40 * ApplicationInfo.ratio
             anchors.top: headerDescription.bottom
             anchors.topMargin: 5 * ApplicationInfo.ratio
             anchors.horizontalCenter: popup.horizontalCenter
+            onVisibleChanged: {
+                if(visible) {
+                    positionViewAtIndex(currentIndex, GridView.Center);
+                }
+            }
 
             delegate: Component {
                 Item {
                     id: gridItem
                     width: gridview.cellWidth
-                    height: gridview.elementHeight
+                    height: gridview.cellHeight
                     property bool itemSelected : GridView.isCurrentItem
                     Rectangle {
-                        width: gridview.cellWidth - radius
-                        height: gridview.elementHeight - radius
+                        id: itemBg
+                        width: parent.width - radius
+                        height: parent.height - radius
                         color: gridItem.itemSelected ? "#e6e6e6" : "#bdbed0"
                         border.width: gridItem.itemSelected ? 3 : 1
                         border.color: "white"
@@ -321,14 +326,14 @@ Item {
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.leftMargin: 10
-                        sourceSize.width: (gridview.elementHeight * 0.8)
+                        sourceSize.width: parent.height * 0.8
                     }
                     GCText {
                         id: textValue
                         text: isModelArray ? modelData.text : model.text
                         anchors.centerIn: parent
-                        height: parent.height
-                        width: parent.width - isSelectedIcon.width * 2 - 20
+                        height: itemBg.height
+                        width: itemBg.width - isSelectedIcon.width * 2 - 20
                         fontSizeMode: Text.Fit
                         minimumPointSize: 7
                         fontSize: mediumSize
