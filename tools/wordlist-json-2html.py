@@ -26,7 +26,6 @@ header="""<html dir=\"ltr\" lang=\"fr\">
 <body>
   <a name=\"words_by_section\" href=\"words_by_section.html\"/>Same list of words by section</a>
   <p></p>
-  <a name=\"empty json\" href=\"words.json\"/>Empty json data file ready to be translated</a>
   <hr>
 """
 
