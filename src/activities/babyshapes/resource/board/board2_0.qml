@@ -15,68 +15,92 @@ QtObject {
       {
           "pixmapfile" : "food/bread_slice.svg",
           "x" : "0.5",
-          "y" : "0.75"
+          "y" : "0.75",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/banana.svg",
           "x" : "0.8",
-          "y" : "0.25"
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/yogurt.svg",
           "x" : "0.5",
-          "y" : "0.25"
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/sugar_box.svg",
           "x" : "0.2",
-          "y" : "0.75"
+          "y" : "0.75",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/french_croissant.svg",
           "x" : "0.2",
-          "y" : "0.25"
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/baby_bottle.svg",
           "x" : "0.8",
-          "y" : "0.75"
+          "y" : "0.75",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_french_croissant.svg",
           "x" : "0.2",
           "y" : "0.25",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_yogurt.svg",
           "x" : "0.5",
           "y" : "0.25",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_banana.svg",
           "x" : "0.8",
           "y" : "0.25",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_sugar_box.svg",
           "x" : "0.2",
           "y" : "0.75",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_bread_slice.svg",
           "x" : "0.5",
           "y" : "0.75",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_baby_bottle.svg",
           "x" : "0.8",
           "y" : "0.75",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       }
    ]
 }

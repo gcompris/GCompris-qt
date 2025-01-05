@@ -15,68 +15,92 @@ QtObject {
       {
           "pixmapfile" : "food/yogurt.svg",
           "x" : "0.5",
-          "y" : "0.75"
+          "y" : "0.75",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/baby_bottle.svg",
           "x" : "0.5",
-          "y" : "0.25"
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/pear.svg",
           "x" : "0.2",
-          "y" : "0.75"
+          "y" : "0.75",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/banana.svg",
           "x" : "0.2",
-          "y" : "0.25"
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/milk_cup.svg",
           "x" : "0.8",
-          "y" : "0.75"
+          "y" : "0.75",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "food/round_cookie.svg",
           "x" : "0.8",
-          "y" : "0.25"
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_banana.svg",
           "x" : "0.2",
           "y" : "0.25",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_baby_bottle.svg",
           "x" : "0.5",
           "y" : "0.25",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_round_cookie.svg",
           "x" : "0.8",
           "y" : "0.25",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_pear.svg",
           "x" : "0.2",
           "y" : "0.75",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_yogurt.svg",
           "x" : "0.5",
           "y" : "0.75",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       },
       {
           "pixmapfile" : "shapeBackground/T_milk_cup.svg",
           "x" : "0.8",
           "y" : "0.75",
-          "type" : "SHAPE_BACKGROUND"
+          "type" : "SHAPE_BACKGROUND",
+          "height" : 0.25,
+          "width" : 0.25
       }
    ]
 }
