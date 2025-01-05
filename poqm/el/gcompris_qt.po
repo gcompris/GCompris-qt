@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-02 13:26+0200\n"
+"PO-Revision-Date: 2025-01-04 10:38+0200\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -5667,9 +5667,9 @@ msgid ""
 "If some answers are incorrect, a cross icon will appear on the corresponding "
 "lines. Correct the errors, then select the OK button again."
 msgstr ""
-"Εάν ορισμένες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα εικονίδιο "
-"σταυρού στις αντίστοιχες γραμμές. Διόρθωσε τα σφάλματα και, στη συνέχεια, "
-"επίλεξε πάλι το κουμπί OK."
+"Εάν κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα κόκκινο "
+"εικονίδιο με Χ στις αντίστοιχες γραμμές. Διόρθωσε τα σφάλματα και, στη "
+"συνέχεια, επίλεξε πάλι το κουμπί OK."
 
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -5701,7 +5701,7 @@ msgstr "&lt;, &gt; ή =: εισάγει το αντίστοιχο σύμβολο
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Αριθμοί από το 1 ως το 9."
+msgstr "Ο πρώτος αριθμός της πράξης να είναι από 1 έως το 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -14216,7 +14216,7 @@ msgstr "Πληκτρολόγησε τα γράμματα που πέφτουν �
 #: activities/gnumch-equality/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch equality"
-msgstr "Φρουτέρατα & ισότητες"
+msgstr "Αριθμοφάγοι & ισότητες"
 
 #. Help title
 #. ----------
@@ -14228,7 +14228,7 @@ msgid ""
 "Guide the Number Muncher to the expressions that equal the number at the "
 "bottom of the screen."
 msgstr ""
-"Οδήγησε το Φρουτέρας στις αριθμητικές πράξεις των οποίων το αποτέλεσμα "
+"Οδήγησε τον Αριθμοφάγο στις αριθμητικές πράξεις των οποίων το αποτέλεσμα "
 "ισούται με τον αριθμό στο επάνω μέρος της οθόνης."
 
 #. Help goal
@@ -14265,7 +14265,7 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Take care to avoid the Troggles."
-msgstr "Πρόσεχε τα Φρουτέρατα. Πρέπει να τα αποφεύγεις."
+msgstr "Πρόσεχε τους Αριθμοφάγους. Πρέπει να τα αποφεύγεις."
 
 #: activities/gnumch-equality/ActivityInfo.qml:30
 #: activities/gnumch-factors/ActivityInfo.qml:30
@@ -14329,7 +14329,7 @@ msgstr "Πρώτοι αριθμοί μικρότεροι του %1"
 #: activities/gnumch-equality/Warning.qml:39
 msgctxt "Warning|"
 msgid "You were eaten by a Troggle."
-msgstr "Σε έφαγε το Φρουτέρας."
+msgstr "Σε έφαγε ο Αριθμοφάγος."
 
 #: activities/gnumch-equality/Warning.qml:43
 msgctxt "Warning|"
@@ -14372,13 +14372,13 @@ msgstr "Πάτησε το κουμπί \"Enter\" ή πάτα σε μένα γι�
 #: activities/gnumch-equality/WarnMonster.qml:41
 msgctxt "WarnMonster|"
 msgid "Be careful, a troggle!"
-msgstr "Προσοχή, το Φρουτέρας!"
+msgstr "Προσοχή, ο Αριθμοφάγος!"
 
 #. Activity title
 #: activities/gnumch-factors/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch factors"
-msgstr "Φρουτέρατα & διαιρέτες"
+msgstr "Αριθμοφάγοι & διαιρέτες"
 
 #. Help title
 #: activities/gnumch-factors/ActivityInfo.qml:17
@@ -14387,7 +14387,7 @@ msgid ""
 "Guide the Number Muncher to all the factors of the number at the bottom of "
 "the screen."
 msgstr ""
-"Οδήγησε το Φρουτέρας σε όλους τους διαιρέτες του αριθμού που εμφανίζονται "
+"Οδήγησε τον Αριθμοφάγο σε όλους τους διαιρέτες του αριθμού που εμφανίζονται "
 "στο κάτω μέρος της οθόνης."
 
 #. Help goal
@@ -14426,7 +14426,7 @@ msgstr ""
 #: activities/gnumch-inequality/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Gnumch inequality"
-msgstr "Φρουτέρατα & ανισότητες"
+msgstr "Αριθμοφάγοι & ανισότητες"
 
 #. Help title
 #: activities/gnumch-inequality/ActivityInfo.qml:18
@@ -14435,8 +14435,9 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
-"Οδήγησε το Φρουτέρας σε όλες τις αριθμητικές παραστάσεις, το αποτέλεσμα των "
-"οποίων δεν είναι ίσο με τον αριθμό που εμφανίζεται στο κάτω μέρος της οθόνης."
+"Οδήγησε τον Αριθμοφάγο σε όλες τις αριθμητικές παραστάσεις, το αποτέλεσμα "
+"των οποίων δεν είναι ίσο με τον αριθμό που εμφανίζεται στο κάτω μέρος της "
+"οθόνης."
 
 #. Help goal
 #: activities/gnumch-inequality/ActivityInfo.qml:21
@@ -14469,7 +14470,7 @@ msgstr "Εξάσκηση σε διαιρέσεις με πηλίκα διαφο�
 #: activities/gnumch-multiples/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch multiples"
-msgstr "Φρουτέρατα & πολλαπλάσια"
+msgstr "Αριθμοφάγοι & πολλαπλάσια"
 
 #. Help title
 #: activities/gnumch-multiples/ActivityInfo.qml:17
@@ -14478,7 +14479,7 @@ msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
 msgstr ""
-"Οδήγησε το Φρουτέρας σε όλα τα πολλαπλάσια του αριθμού που εμφανίζεται στο "
+"Οδήγησε τον Αριθμοφάγο σε όλα τα πολλαπλάσια του αριθμού που εμφανίζεται στο "
 "κάτω μέρος της οθόνης."
 
 #. Help manual
@@ -14516,13 +14517,13 @@ msgstr ""
 #: activities/gnumch-primes/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Gnumch primes"
-msgstr "Φρουτέρατα & πρώτοι αριθμοί"
+msgstr "Αριθμοφάγοι & πρώτοι αριθμοί"
 
 #. Help title
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Οδήγησε το Φρουτέρας σε όλους τους πρώτους αριθμούς."
+msgstr "Οδήγησε τον Αριθμοφάγο σε όλους τους πρώτους αριθμούς."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
@@ -14549,8 +14550,8 @@ msgstr ""
 "5 ανήκει σε αυτή την κατηγορία (μόνο 5×1 = 5), όχι όμως και το 6 γιατί έχει "
 "το 2 και το 3 στην οικογένειά του (6×1 = 6, 2×3 = 6). Το 6 λοιπόν δεν είναι "
 "πρώτος αριθμός. Χρησιμοποίησε τα βέλη για να περιηγηθείς στον πίνακα, "
-"αποφεύγοντας τα Φρουτέρατα. Πίεσε το κουμπί διαστήματος για να 'φας' έναν "
-"αριθμό."
+"αποφεύγοντας τους Αριθμοφάγους. Πίεσε το κουμπί διαστήματος για να 'φας' "
+"έναν αριθμό."
 
 #. Activity title
 #: activities/graduated_line_read/ActivityInfo.qml:14
@@ -24318,7 +24319,7 @@ msgstr "Ctrl + Z: Αναίρεση τελευταίας ενέργειας"
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr "Ctrl + Y: ακύρωση αναίρεσης τελευταίας ενέργειας"
+msgstr "Ctrl + Y: Ακύρωση αναίρεσης τελευταίας ενέργειας"
 
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -24328,12 +24329,12 @@ msgstr "Ctrl + S: Αποθήκευση της εικόνας."
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr "Ctrl + O: άνοιγμα εικόνας"
+msgstr "Ctrl + O: Άνοιγμα εικόνας"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr "Ctrl + N, Delete ή Backspace: δημιουργία νέας εικόνας"
+msgstr "Ctrl + N, Delete ή Backspace: Δημιουργία νέας εικόνας"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -24412,12 +24413,12 @@ msgstr "Παλέτες"
 #: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Αποθήκευσε την εικόνα σου"
+msgstr "Αποθήκευση εικόνας"
 
 #: activities/sketch/FilesPanel.qml:85
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Άνοιξε μια εικόνα"
+msgstr "Άνοιγμα εικόνας"
 
 #: activities/sketch/FilesPanel.qml:116
 msgctxt "FilesPanel|"
@@ -26429,7 +26430,7 @@ msgstr "Μέγιστη τιμή: 500000."
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Υπολογισμός με συμπληρώματα του δέκα."
+msgstr "Υπολογισμός με συμπληρώματα του δέκα"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -26448,8 +26449,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
-"Μάθε να χρησιμοποιείς τα συμπληρώματα του δέκα για να βελτιστοποιήσεις τη "
-"σειρά των αριθμών σε μια πράξη και να υπολογίσεις το αποτέλεσμα."
+"Μάθε να χρησιμοποιείς τα συμπληρώματα του δέκα για να βελτιώσεις τη σειρά "
+"των αριθμών σε μια πράξη και να υπολογίσεις το αποτέλεσμα."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -26471,22 +26472,22 @@ msgstr ""
 "Δημιούργησε ζεύγη αριθμών μέσα σε κάθε παρένθεση, που το άθροισμά τους είναι "
 "ίσο με δέκα. Επίλεξε έναν αριθμό και, στη συνέχεια, επίλεξε έναν άλλο αριθμό "
 "της ίδιας πράξης για να ανταλλάξεις τη θέση τους. Σε κάθε γραμμή, γράψε το "
-"τελικό άθροισμα στο τελευταίο πλαίσιο. Όταν ολοκληρωθούν όλες οι γραμμές, "
-"πάτησε το πλήκτρο ΟΚ για να επικυρώσεις τις απαντήσεις. Εάν κάποιες "
-"απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα εικονίδιο σταυρού στις "
-"αντίστοιχες γραμμές. Διόρθωσε τα λάθη και, στη συνέχεια, πάτησε ξανά το "
-"πλήκτρο ΟΚ."
+"τελικό άθροισμα στο τελευταίο πλαίσιο. Όταν ολοκληρωθούν οι πράξεις σε όλες "
+"τις γραμμές, πάτησε το πλήκτρο ΟΚ για να επικυρώσεις τις απαντήσεις σου. Εάν "
+"κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα κόκκινο εικονίδιο με "
+"Χ στις αντίστοιχες γραμμές. Διόρθωσε τα λάθη και, στη συνέχεια, πάτησε ξανά "
+"το πλήκτρο ΟΚ."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "1 ζευγάρι από 3 αριθμούς."
+msgstr "3 αριθμοί, οι 2 σε παρένθεση και 1 εκτός."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "2 ζευγάρια από 5 αριθμούς."
+msgstr "5 αριθμοί μοιρασμένοι ανά 2 σε παρενθέσεις και 1 εκτός."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
@@ -26523,9 +26524,9 @@ msgid ""
 msgstr ""
 "Όταν κάνεις τις αλλαγές σε όλες τις πράξεις, πάτησε το κουμπί OK για να "
 "επικυρώσεις τις απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα "
-"εμφανιστεί ένα εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις "
-"τα σφάλματα, κάνε κλικ στους λάθος αριθμούς για να αφαιρεθούν και τοποθέτησέ "
-"τους πάλι στις σωστές θέσεις."
+"εμφανιστεί ένα κόκκινο εικονίδιο με Χ στις αντίστοιχες γραμμές. Για να "
+"διορθώσεις τα σφάλματα, κάνε κλικ στους λάθος αριθμούς για να αφαιρεθούν και "
+"τοποθέτησέ τους πάλι στις σωστές θέσεις."
 
 #. Help manual
 #: activities/tens_complement_find/ActivityInfo.qml:23
@@ -26541,17 +26542,17 @@ msgstr ""
 #: activities/tens_complement_find/resource/1/Data.qml:25
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Πρώτος αριθμός από το 1 μέχρι το 4."
+msgstr "Ο πρώτος προσθετέος να είναι από 1 έως το 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Πρώτος αριθμός από το 5 μέχρι το 9."
+msgstr "Ο πρώτος προσθετέος να είναι από 5 έως το 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find both numbers."
-msgstr "Βρες και τους δύο αριθμούς."
+msgstr "Βρες και τους δύο προσθετέους."
 
 #. Activity title
 #: activities/tens_complement_swap/ActivityInfo.qml:14
@@ -26572,8 +26573,8 @@ msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation."
 msgstr ""
-"Μάθε να χρησιμοποιείς το συμπλήρωμα του δέκα για να βελτιώσεις τη σειρά των "
-"αριθμών σε μια πράξη."
+"Μάθε να χρησιμοποιείς τα συμπληρώματα του δέκα για να βελτιώσεις τη σειρά "
+"των αριθμών σε μια πράξη."
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
@@ -26593,22 +26594,22 @@ msgid ""
 msgstr ""
 "Τα ζευγάρια αριθμών σε κάθε παρένθεση θα πρέπει να είναι ίσα με το δέκα. Αν "
 "αυτό δεν συμβαίνει, τότε πρέπει να αλλάξεις τις θέσεις τους. Αυτό γίνεται "
-"πατώντας πάνω σε δυο αριθμούς που το άθροισμά τους είναι δέκα. Όταν κάνεις "
-"τις αλλαγές σε όλες τις πράξεις, πάτησε το κουμπί OK για να επικυρώσεις τις "
-"απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα εμφανιστεί ένα "
-"εικονίδιο σταυρού στις αντίστοιχες γραμμές. Για να διορθώσεις τα σφάλματα, "
-"κάνε κλικ στους λάθος αριθμούς για να αφαιρεθούν και τοποθέτησέ τους πάλι "
-"στις σωστές θέσεις."
+"πατώντας διαδοχικά πάνω σε δυο αριθμούς που το άθροισμά τους είναι δέκα. "
+"Όταν κάνεις τις αλλαγές σε όλες τις πράξεις, πάτησε το κουμπί OK για να "
+"επικυρώσεις τις απαντήσεις. Εάν κάποιες απαντήσεις είναι λανθασμένες, θα "
+"εμφανιστεί ένα κόκκινο εικονίδιο με Χ στις αντίστοιχες γραμμές. Για να "
+"διορθώσεις τα σφάλματα, κάνε κλικ διαδοχικά στους λάθος αριθμούς για να τους "
+"τοποθετήσεις στις σωστές θέσεις."
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "2 ζεύγη από 4 αριθμούς."
+msgstr "4 αριθμοί μοιρασμένοι ανά 2 σε παρενθέσεις."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "3 ζεύγη από 6 αριθμούς."
+msgstr "6 αριθμοί μοιρασμένοι ανά 3 σε παρενθέσεις."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -26650,17 +26651,17 @@ msgstr ""
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Αποτελέσματα μεταξύ 11 και 19."
+msgstr "Αθροίσματα μεταξύ 11 και 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Αποτελέσματα μεταξύ 20 και 29."
+msgstr "Αθροίσματα μεταξύ 20 και 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Αποτελέσματα μεταξύ 30 και 50."
+msgstr "Αθροίσματα μεταξύ 30 και 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18
@@ -26751,7 +26752,7 @@ msgstr "Κάθετη πρόσθεση"
 #: activities/vertical_addition/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Φτιάξε στον κενό πάσσαλο τον συγκεκριμένο πύργο."
+msgstr "Λύσε τη δοσμένη πρόσθεση."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
@@ -26785,32 +26786,35 @@ msgid ""
 msgstr ""
 "Στην κάθετη πρόσθεση, οι αριθμοί γράφονται ο ένας κάτω από τον άλλο. Πρέπει "
 "να είναι σωστά τοποθετημένοι, οι μονάδες κάτω από τις μονάδες, οι δεκάδες "
-"κάτω από τις δεκάδες κ.ο.κ. Το αποτέλεσμα γράφεται στην κάτω γραμμή. Για να "
-"κάνεις την πρόσθεση, ξεκίνα προσθέτοντας τους αριθμούς της στήλης στη δεξιά "
-"πλευρά και γράψε το αποτέλεσμα στην ίδια στήλη κάτω από τη γραμμή. Αν το "
-"αποτέλεσμα είναι διψήφιος αριθμός, γράψε μόνο το ψηφίο των μονάδων κάτω από "
-"τη γραμμή και τοποθέτησε το ψηφίο των δεκάδων δίπλα στον επάνω αριθμό της "
-"επόμενης στήλης (αυτό ονομάζεται μεταφορά). Στη συνέχεια πρόσθεσε τους "
-"αριθμούς της διπλανής στήλης, μαζί με τον αριθμό που μετέφερες προηγουμένως, "
-"και ξανακάνε την ίδια διαδικασία μέχρι να ολοκληρωθεί η πράξη. Μόλις βρεις "
-"το τελικό αποτέλεσμα, κάνε κλικ στο κουμπί OK για να το επικυρώσεις. Σε "
-"ορισμένα επίπεδα θα χρειαστεί να γράψεις εσύ τους αριθμούς πριν κάνεις την "
-"πρόσθεση. Μόλις τους γράψεις πάτησε το πλήκτρο 'Έτοιμος' και συνέχισε."
+"κάτω από τις δεκάδες κ.ο.κ. Το αποτέλεσμα γράφεται κάτω από τη γραμμή. Για "
+"να κάνεις την πρόσθεση, ξεκίνα προσθέτοντας τους αριθμούς της στήλης στη "
+"δεξιά πλευρά (μονάδες) και γράψε το αποτέλεσμα στην ίδια στήλη κάτω από τη "
+"γραμμή. Αν το αποτέλεσμα είναι διψήφιος αριθμός, γράψε μόνο το ψηφίο των "
+"μονάδων κάτω από τη γραμμή και τοποθέτησε το ψηφίο των δεκάδων δίπλα στον "
+"επάνω αριθμό της επόμενης στήλης (δεκάδες) (αυτό ονομάζεται μεταφορά). Στη "
+"συνέχεια πρόσθεσε τους αριθμούς της στήλης των δεκάδων, μαζί με τον αριθμό "
+"που μετέφερες προηγουμένως, και ξανακάνε την ίδια διαδικασία μέχρι να "
+"ολοκληρωθεί η πράξη. Μόλις βρεις το τελικό αποτέλεσμα, κάνε κλικ στο κουμπί "
+"OK για να το επικυρώσεις. Σε ορισμένα επίπεδα θα χρειαστεί να γράψεις εσύ "
+"τους αριθμούς πριν κάνεις την πρόσθεση. Μόλις τους γράψεις πάτησε το πλήκτρο "
+"'Έτοιμος' και συνέχισε."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr "Επίλυση πρόσθεσης, 2 ψηφία, 2 γραμμές, χωρίς μεταφορά."
+msgstr ""
+"Πρόσθεση με διψήφιους αριθμούς που είναι ήδη γραμμένοι σε 2 γραμμές, χωρίς "
+"μεταφορά."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr "Επίλυση πρόσθεσης, 4 ψηφία, 3 γραμμές."
+msgstr "Πρόσθεση με τετραψήφιους αριθμούς που βρίσκονται σε 3 γραμμές."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr "Επίλυση πρόσθεσης, 4 ψηφία, 4 γραμμές."
+msgstr "Πρόσθεση με τετραψήφιους αριθμούς που βρίσκονται σε 4 γραμμές."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
@@ -26820,42 +26824,44 @@ msgstr "Γράψε τη δική σου πρόσθεση και λύσε την.
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr "Γράψιμο και επίλυση πρόσθεσης, 2 ψηφία, 2 γραμμές, χωρίς μεταφορά."
+msgstr ""
+"Πρόσθεση με διψήφιους αριθμούς που πρέπει να γραφούν σε 2 γραμμές, χωρίς "
+"μεταφορά."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr "Επίλυση πρόσθεσης, 2 ψηφία, 2 γραμμές."
+msgstr "Πρόσθεση με διψήφιους αριθμούς που βρίσκονται σε 2 γραμμές."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr "Γράψιμο και επίλυση πρόσθεσης, 2 ψηφία, 2 γραμμές."
+msgstr "Πρόσθεση με διψήφιους αριθμούς που πρέπει να γραφούν σε 2 γραμμές."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr "Γράψιμο και επίλυση πρόσθεσης, 2 ψηφία, 3 γραμμές."
+msgstr "Πρόσθεση με διψήφιους αριθμούς που πρέπει να γραφούν σε 3 γραμμές."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr "Επίλυση πρόσθεσης, 3 ψηφία, 2 γραμμές."
+msgstr "Πρόσθεση με τριψήφιους αριθμούς που βρίσκονται σε 2 γραμμές."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr "Γράψιμο και επίλυση πρόσθεσης, 3 ψηφία, 2 γραμμές."
+msgstr "Πρόσθεση με τριψήφιους αριθμούς που πρέπει να γραφούν σε 2 γραμμές."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr "Επίλυση πρόσθεσης, 3 ψηφία, 3 γραμμές."
+msgstr "Πρόσθεση με τριψήφιους αριθμούς που βρίσκονται σε 3 γραμμές."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr "Επίλυση πρόσθεσης, 4 ψηφία, 2 γραμμές."
+msgstr "Πρόσθεση με τετραψήφιους αριθμούς που βρίσκονται σε 2 γραμμές."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
@@ -26937,19 +26943,22 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Επίλυση αφαίρεσης, 2 ψηφία, 2 γραμμές, χωρίς μεταφορά."
+msgstr ""
+"Αφαίρεση με διψήφιους αριθμούς που βρίσκονται σε 2 γραμμές, χωρίς μεταφορά."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Επίλυση αφαίρεσης, 4 ή 5 ψηφία, 3 γραμμές."
+msgstr ""
+"Αφαίρεση με τετραψήφιους ή πενταψήφιους αριθμούς που βρίσκονται σε 3 γραμμές."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Επίλυση αφαίρεσης, 4 ή 5 ψηφία, 4 γραμμές."
+msgstr ""
+"Αφαίρεση με τετραψήφιους ή πενταψήφιους αριθμούς που βρίσκονται σε 4 γραμμές."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
@@ -26961,49 +26970,59 @@ msgstr "Γράψε τη δική σου αφαίρεση και λύσε την.
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr "Γράψιμο και επίλυση αφαίρεσης, 2 ψηφία, 2 γραμμές, χωρίς μεταφορά."
+msgstr ""
+"Αφαίρεση με διψήφιους αριθμούς που πρέπει να γραφούν σε 2 γραμμές, χωρίς "
+"μεταφορά."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Επίλυση αφαίρεσης, 2 ή 3 ψηφία, 2 γραμμές."
+msgstr "Αφαίρεση με διψήφιους ή τριψήφιους αριθμούς, σε 2 γραμμές."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Γράψε και λύσε την αφαίρεση, 2 ή 3 ψηφία, 2 γραμμές."
+msgstr ""
+"Αφαίρεση με διψήφιους ή τριψήφιους αριθμούς που πρέπει να γραφούν σε 2 "
+"γραμμές."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Γράψε και λύσε την αφαίρεση, 2 ή 3 ψηφία, 3 γραμμές."
+msgstr ""
+"Αφαίρεση με διψήφιους ή τριψήφιους αριθμούς που πρέπει να γραφούν σε 3 "
+"γραμμές."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Επίλυση αφαίρεσης, 3 ή 4 ψηφία, 2 γραμμές."
+msgstr ""
+"Αφαίρεση με τριψήφιους ή τετραψήφιους αριθμούς που βρίσκονται σε 2 γραμμές."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Γράψε και λύσε την αφαίρεση, 3 ή 4 ψηφία, 2 γραμμές."
+msgstr ""
+"Αφαίρεση με τριψήφιους ή τετραψήφιους αριθμούς, που βρίσκονται σε 2 γραμμές."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Επίλυση αφαίρεσης, 3 ή 4 ψηφία, 3 γραμμές."
+msgstr ""
+"Αφαίρεση με τριψήφιους ή τετραψήφιους αριθμούς που βρίσκονται σε 3 γραμμές."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Επίλυση αφαίρεσης, 4 ή 5 ψηφία, 2 γραμμές."
+msgstr ""
+"Αφαίρεση με τετραψήφιους ή πενταψήφιους αριθμούς που βρίσκονται σε 2 γραμμές."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
