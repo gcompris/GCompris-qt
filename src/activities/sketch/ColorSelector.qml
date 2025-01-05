@@ -33,6 +33,7 @@ Item {
     function editColor(colorIndex, editedColor) {
         selectedColor = editedColor;
         colorButtonsGrid.itemAtIndex(colorIndex).buttonColor = selectedColor;
+        palette[colorIndex] = selectedColor;
         colorEdited(colorIndex, selectedColor);
     }
 
