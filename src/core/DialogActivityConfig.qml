@@ -225,6 +225,7 @@ Rectangle {
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
+                interactive: dialogActivityContent.focus
                 Loader {
                     id: loader
                     active: false
