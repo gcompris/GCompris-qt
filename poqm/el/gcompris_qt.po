@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-04 10:38+0200\n"
+"PO-Revision-Date: 2025-01-04 18:14+0200\n"
 "Last-Translator: Antonis Geralis <capoiosct@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
@@ -5701,7 +5701,7 @@ msgstr "&lt;, &gt; ή =: εισάγει το αντίστοιχο σύμβολο
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Ο πρώτος αριθμός της πράξης να είναι από 1 έως το 9."
+msgstr "Οι προσθετέοι να είναι από 1 έως το 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -16232,7 +16232,7 @@ msgstr "Ολοκληρωμένες δραστηριότητες εκμάθηση
 #: activities/lang/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary in your native language or in a foreign one."
-msgstr "Εμπλουτισμός του λεξικού σου στην μητρική σου γλώσσα ή σε μια ξένη."
+msgstr "Εμπλουτισμός του λεξιλογίου στην μητρική σου γλώσσα, ή σε μια ξένη."
 
 #. Help manual
 #: activities/lang/ActivityInfo.qml:30
@@ -16243,7 +16243,7 @@ msgid ""
 "voice and the image, then only from the voice, and finally an exercise to "
 "type the text."
 msgstr ""
-"Επισκόπηση ενός συνόλου λέξεων. Κάθε λέξη διαθέτει ήχο, κείμενο και εικόνα."
+"Δες προσεκτικά μια ομάδα λέξεων. Κάθε λέξη διαθέτει ήχο, κείμενο και εικόνα."
 "<br/>Όταν τελειώσεις, θα δοθούν μερικές ασκήσεις για να αναγνωρίσεις τη λέξη "
 "από τον ήχο και την εικόνα, κατόπιν μόνο από τον ήχο και, τέλος, μια άσκηση "
 "για να πληκτρολογήσεις λέξεις."
@@ -16298,27 +16298,27 @@ msgstr ""
 #: activities/lang/Lang.qml:187 activities/lang/Lang.qml:188
 msgctxt "Lang|"
 msgid "other"
-msgstr "άλλο"
+msgstr "διάφορα"
 
 #: activities/lang/Lang.qml:189
 msgctxt "Lang|"
 msgid "action"
-msgstr "πράξη"
+msgstr "ενέργειες"
 
 #: activities/lang/Lang.qml:189
 msgctxt "Lang|"
 msgid "adjective"
-msgstr "επίθετο"
+msgstr "επίθετα"
 
 #: activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "color"
-msgstr "χρώμα"
+msgstr "χρώματα"
 
 #: activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "number"
-msgstr "αριθμός"
+msgstr "αριθμοί"
 
 #: activities/lang/Lang.qml:191
 msgctxt "Lang|"
@@ -16328,7 +16328,7 @@ msgstr "άνθρωποι"
 #: activities/lang/Lang.qml:191
 msgctxt "Lang|"
 msgid "bodyparts"
-msgstr "μέλη του σώματος"
+msgstr "μέρη του σώματος"
 
 #: activities/lang/Lang.qml:192
 msgctxt "Lang|"
@@ -16338,7 +16338,7 @@ msgstr "ρούχα"
 #: activities/lang/Lang.qml:192
 msgctxt "Lang|"
 msgid "emotion"
-msgstr "συναίσθημα"
+msgstr "συναισθήματα"
 
 #: activities/lang/Lang.qml:193
 msgctxt "Lang|"
@@ -16358,17 +16358,17 @@ msgstr "φύση"
 #: activities/lang/Lang.qml:194
 msgctxt "Lang|"
 msgid "animal"
-msgstr "ζώο"
+msgstr "ζώα"
 
 #: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "fruit"
-msgstr "φρούτο"
+msgstr "φρούτα"
 
 #: activities/lang/Lang.qml:195
 msgctxt "Lang|"
 msgid "plant"
-msgstr "φυτό"
+msgstr "φυτά"
 
 #: activities/lang/Lang.qml:196
 msgctxt "Lang|"
@@ -16378,12 +16378,12 @@ msgstr "λαχανικά"
 #: activities/lang/Lang.qml:196
 msgctxt "Lang|"
 msgid "object"
-msgstr "διάφορα αντικείμενα"
+msgstr "αντικείμενα"
 
 #: activities/lang/Lang.qml:197
 msgctxt "Lang|"
 msgid "construction"
-msgstr "κατασκευή"
+msgstr "κατασκευές"
 
 #: activities/lang/Lang.qml:198
 msgctxt "Lang|"
@@ -16398,12 +16398,12 @@ msgstr "οικιακά είδη"
 #: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "tool"
-msgstr "εργαλείο"
+msgstr "εργαλεία"
 
 #: activities/lang/Lang.qml:199
 msgctxt "Lang|"
 msgid "food"
-msgstr "φαγητό"
+msgstr "φαγητά"
 
 #: activities/lang/Lang.qml:200
 msgctxt "Lang|"
@@ -24366,41 +24366,41 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Εργαλεία σχεδίασης"
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Χρώματα παλέτας"
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Επαναφορά παλέτας"
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Επιλεγμένο χρώμα"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Απόχρωση"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Κορεσμός"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Φωτεινότητα"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Επαναφορά χρώματος"
@@ -26609,7 +26609,7 @@ msgstr "4 αριθμοί μοιρασμένοι ανά 2 σε παρενθέσε
 #: activities/tens_complement_swap/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "6 αριθμοί μοιρασμένοι ανά 3 σε παρενθέσεις."
+msgstr "6 αριθμοί μοιρασμένοι ανά 2 σε παρενθέσεις."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -26803,8 +26803,7 @@ msgstr ""
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
 msgstr ""
-"Πρόσθεση με διψήφιους αριθμούς που είναι ήδη γραμμένοι σε 2 γραμμές, χωρίς "
-"μεταφορά."
+"Πρόσθεση με διψήφιους αριθμούς που βρίσκονται σε 2 γραμμές, χωρίς μεταφορά."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
@@ -27008,7 +27007,8 @@ msgstr ""
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
 msgstr ""
-"Αφαίρεση με τριψήφιους ή τετραψήφιους αριθμούς, που βρίσκονται σε 2 γραμμές."
+"Αφαίρεση με τριψήφιους ή τετραψήφιους αριθμούς που πρέπει να γραφούν σε 2 "
+"γραμμές."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
@@ -27896,17 +27896,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Επιλογές"
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Αποθήκευση και εκκίνηση"

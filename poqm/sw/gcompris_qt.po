@@ -24428,7 +24428,7 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 #, fuzzy
 #| msgctxt "ColorMix|"
 #| msgid "Match the color"
@@ -24436,12 +24436,12 @@ msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Linganisha rangi"
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -24450,7 +24450,7 @@ msgid "Selected Color"
 msgstr "Imechaguliwa"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 #, fuzzy
 #| msgctxt "board14_0|"
 #| msgid "Hubei"
@@ -24459,7 +24459,7 @@ msgid "Hue"
 msgstr "Hubei"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 #, fuzzy
 #| msgctxt "Dataset|"
 #| msgid "Saturn"
@@ -24468,7 +24468,7 @@ msgid "Saturation"
 msgstr "Zohali"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Lights off"
@@ -24477,7 +24477,7 @@ msgid "Lightness"
 msgstr "Taa zimezimwa"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
@@ -28006,17 +28006,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Machaguo"
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Sitisha"
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Hifadhi"
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Hifadhi na anza"

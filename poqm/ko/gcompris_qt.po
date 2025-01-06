@@ -23105,17 +23105,17 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 #, fuzzy
 #| msgctxt "Traffic|"
 #| msgid "Select your mode"
@@ -23124,13 +23124,13 @@ msgid "Selected Color"
 msgstr "모드 선택"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr ""
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 #, fuzzy
 #| msgctxt "DialogHelp|"
 #| msgid "Section: "
@@ -23139,13 +23139,13 @@ msgid "Saturation"
 msgstr "부분: "
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr ""
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
@@ -26407,7 +26407,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "부분: "
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -26415,12 +26415,12 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "프랑스"
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""

@@ -23838,41 +23838,41 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr "Zīmēšanas rīks"
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Paletes krāsas"
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr "Atiestatīt paleti"
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 msgctxt "ColorSelector|"
 msgid "Selected Color"
 msgstr "Atlasīt krāsu"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr "Nokrāsa"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Piesātinājums"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Gaišums"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr "Atiestatīt krāsu"
@@ -27255,17 +27255,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Opcijas"
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Atcelt"
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Saglabāt"
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Saglabāt un sākt"

@@ -23450,7 +23450,7 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 #, fuzzy
 #| msgctxt "ColorMix|"
 #| msgid "Match the color"
@@ -23458,12 +23458,12 @@ msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Uskladite boju"
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 #, fuzzy
 #| msgid "Select a profile:"
 msgctxt "ColorSelector|"
@@ -23471,27 +23471,27 @@ msgid "Selected Color"
 msgstr "Izaberite profil:"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr ""
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 #, fuzzy
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
 msgstr "Oduzimanje"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 #, fuzzy
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
 msgstr "Pogasi svjetla"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
@@ -26770,17 +26770,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Sabiranje"
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr ""
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""
