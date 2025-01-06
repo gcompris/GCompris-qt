@@ -26855,7 +26855,7 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 #, fuzzy
 #| msgctxt "ColorMix|"
 #| msgid "Match the color"
@@ -26863,12 +26863,12 @@ msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "रंग मिलाएँ"
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "Selected"
@@ -26877,13 +26877,13 @@ msgid "Selected Color"
 msgstr "चयनित"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
 msgstr ""
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 #, fuzzy
 #| msgctxt "Calendar|"
 #| msgid "Saturday"
@@ -26892,7 +26892,7 @@ msgid "Saturation"
 msgstr "शनिवार"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Lights Off"
@@ -26901,7 +26901,7 @@ msgid "Lightness"
 msgstr "लाइट बंद"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
@@ -30701,7 +30701,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "कार्य"
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 #, fuzzy
 #| msgctxt "board5_0|"
 #| msgid "France"
@@ -30709,7 +30709,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "फ्रांस"
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 #, fuzzy
 #| msgctxt "BalanceboxEditor|"
 #| msgid "Save"
@@ -30717,7 +30717,7 @@ msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "सहेजें"
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr ""

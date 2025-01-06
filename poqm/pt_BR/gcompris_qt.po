@@ -24305,7 +24305,7 @@ msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:75
+#: activities/sketch/ColorSelector.qml:76
 #, fuzzy
 #| msgctxt "ColorMix|"
 #| msgid "Match the color"
@@ -24313,12 +24313,12 @@ msgctxt "ColorSelector|"
 msgid "Palette Colors"
 msgstr "Acerte a cor"
 
-#: activities/sketch/ColorSelector.qml:159
+#: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
 msgstr ""
 
-#: activities/sketch/ColorSelector.qml:210
+#: activities/sketch/ColorSelector.qml:211
 #, fuzzy
 #| msgctxt "ActivityConfig|"
 #| msgid "Selected"
@@ -24327,7 +24327,7 @@ msgid "Selected Color"
 msgstr "Selecionado"
 
 #. Color hue
-#: activities/sketch/ColorSelector.qml:234
+#: activities/sketch/ColorSelector.qml:235
 #, fuzzy
 #| msgctxt "board14_0|"
 #| msgid "Hubei"
@@ -24336,7 +24336,7 @@ msgid "Hue"
 msgstr "Hubei"
 
 #. Color saturation
-#: activities/sketch/ColorSelector.qml:261
+#: activities/sketch/ColorSelector.qml:262
 #, fuzzy
 #| msgctxt "Dataset|"
 #| msgid "Saturn"
@@ -24345,7 +24345,7 @@ msgid "Saturation"
 msgstr "Saturno"
 
 #. Color lightness
-#: activities/sketch/ColorSelector.qml:286
+#: activities/sketch/ColorSelector.qml:287
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Lights off"
@@ -24354,7 +24354,7 @@ msgid "Lightness"
 msgstr "Apague as luzes"
 
 #. Reload default color for selected slot
-#: activities/sketch/ColorSelector.qml:323
+#: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
 msgstr ""
@@ -27899,17 +27899,17 @@ msgctxt "DialogChooseLevel|"
 msgid "Options"
 msgstr "Opções"
 
-#: core/DialogChooseLevel.qml:344
+#: core/DialogChooseLevel.qml:345
 msgctxt "DialogChooseLevel|"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: core/DialogChooseLevel.qml:352
+#: core/DialogChooseLevel.qml:353
 msgctxt "DialogChooseLevel|"
 msgid "Save"
 msgstr "Salvar"
 
-#: core/DialogChooseLevel.qml:366
+#: core/DialogChooseLevel.qml:367
 msgctxt "DialogChooseLevel|"
 msgid "Save and start"
 msgstr "Salvar e iniciar"
