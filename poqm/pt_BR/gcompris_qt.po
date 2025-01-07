@@ -6,13 +6,13 @@
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2014, 2015, 2017, 2018, 2019, 2020, 2022, 2023.
 # André Marcelo Alvarenga <alvarenga@kde.org>, 2014, 2015, 2016.
 # Edely <edely.gomes@gmail.com>, 2015.
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
+# SPDX-FileCopyrightText: 2015, 2016, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Frederico Goncalves Guimaraes <frederico@teia.bio.br>
 # Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-26 17:33-0300\n"
+"PO-Revision-Date: 2025-01-06 17:08-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: pt_BR\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.08.2\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -1479,7 +1479,7 @@ msgid ""
 "or check the bottom right corner."
 msgstr ""
 "Pegue as letras do alfabeto. Em um teclado use as teclas de seta para mover "
-"o helicóptero. Em uma tela de toque clique ou toque na posição de destino. "
+"o helicóptero. Em uma tela de toque, clique ou toque na posição de destino. "
 "Caso você não saiba qual é a próxima letra, dê uma olhada no canto inferior "
 "direito da tela."
 
@@ -20072,15 +20072,12 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
-"Identifique as notas corretamente e atinja 100% para completar um nível."
+"Identifique as notas, toque-as no piano e atinja 100% para completar o nível."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -20144,31 +20141,25 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
 msgstr ""
+"Selecione os números um após o outro, de acordo com a sequência numérica."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Aprender o ciclo da água."
+msgstr "Aprender a sequência numérica."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Desenhe a figura clicando em cada ponto, na sequência. Cada vez que um ponto "
-"é selecionado o próximo, azul, aparece."
+"Desenhe a figura clicando nos pontos na ordem da sequência numérica. Você "
+"pode clicar e arrastar de um ponto a cada um dos próximos, ou clicar em cada "
+"um dos pontos, um atrás do outro."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -20186,18 +20177,10 @@ msgstr "Mova o helicóptero para pegar as nuvens com números pares ou ímpares.
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "Aprender a reconhecer números pares e ímpares e a sua ordem numérica."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds with an odd or even number, in the right order. With a "
-#| "keyboard, use the arrow keys to move the helicopter. With a pointing "
-#| "device, just click or tap on the target location. To know which number "
-#| "you have to catch you can either remember it or check the number on the "
-#| "bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions: catch the clouds with an odd or even number in the "
@@ -20206,26 +20189,22 @@ msgid ""
 "first levels, you can see which number you have to catch on the counter in "
 "the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
-"Pegue as nuvens com números pares ou ímpares, na ordem correta. No teclado, "
-"use as teclas de seta para mover o helicóptero. Em um dispositivo apontador, "
-"clique ou toque no local de destino. Para saber qual o número você precisa "
-"pegar, lembre-se dele ou verifique o número no canto inferior direito."
+"Siga as instruções: pegue as nuvens com números pares ou ímpares, na ordem "
+"correta. Em um teclado, use as teclas de seta para mover o helicóptero. Em "
+"um dispositivo apontador, por exemplo, uma tela de toque, clique ou toque no "
+"local de destino. Nos primeiros níveis, você pode ver qual número você deve "
+"pegar, no contador que fica no canto inferior direito da tela. Nos níveis "
+"mais avançados, você precisa lembrar dele."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Escolha o número par:"
+msgstr "Pegue os números pares."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Escolha o número ímpar:"
+msgstr "Pegue os números ímpares."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -20436,12 +20415,9 @@ msgstr "Organize os eventos em sua ordem cronológica."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Organize os eventos em sua ordem cronológica."
+msgstr "Aprender a ordenar uma sequência de eventos em ordem cronológica."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20485,12 +20461,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Leitura e ordenação de números."
+msgstr "Praticar a ordenação de números."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20598,12 +20571,10 @@ msgstr "Organize as palavras, formando uma sentença que faça sentido."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Organize as palavras para formar uma sentença que faça sentido."
+msgstr ""
+"Praticar a organização de palavras para formar uma sentença que faça sentido."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -20696,19 +20667,11 @@ msgstr "Jogue o jogo de estratégia Oware contra o Tux."
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Desenvolver habilidades de pensamento estratégico."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than one's opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -20725,16 +20688,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On a turn, a player chooses one of "
-#| "the six houses under their control. The player removes all seeds from "
-#| "that house, and distributes them, dropping one in each house counter-"
-#| "clockwise from this house, in a process called sowing. Seeds are not "
-#| "distributed into the end scoring houses, nor into the house drawn from. "
-#| "The starting house is always left empty; if it contained 12 (or more) "
-#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -20747,7 +20700,7 @@ msgid ""
 msgstr ""
 "Os jogadores se alternam para mover as sementes. Em uma rodada, um jogador "
 "escolhe uma das seis casas que ele controla. Ele, então, remove todas as "
-"sementes dessa casa e as distribui, uma em cada casa, no sentido anti-"
+"sementes dessa casa e as distribui nas casa subsequentes, no sentido anti-"
 "horário. Esse processo se chama \"semeadura\". As sementes não são colocadas "
 "nem na casas finais, de pontuação, nem na casa de onde elas foram tiradas. "
 "Ou seja, a casa inicial, sempre fica vazia. Inclusive, existam 12 (ou mais) "
@@ -20973,20 +20926,19 @@ msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
 msgstr ""
+"Desenvolver habilidades de visualização e leitura de mapas  e aprender a "
+"seguir direções."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Clique nos quadrados da grade para mover o Tux segundo as direções indicadas."
+"Clique nos quadrados da grade para mover o Tux até o alvo, seguindo as "
+"direções da seta."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -21020,12 +20972,9 @@ msgstr "Grade de %1x%2."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Decodificando o caminho"
+msgstr "Decodificação de caminho relativo"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -21087,12 +21036,9 @@ msgstr "Erros: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Codificando o caminho"
+msgstr "Codificação de caminho relativo"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21151,7 +21097,7 @@ msgstr "Encontre as diferenças entre as duas imagens."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Desenvolver habilidades de percepção de detalhes."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21846,12 +21792,9 @@ msgstr "B♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr "Números em ordem"
+msgstr "Ordem numérica"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -21861,12 +21804,9 @@ msgstr "Movimente o helicóptero para capturar as nuvens na ordem correta."
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Aprender a ordem alfabética."
+msgstr "Aprender a ordem numérica."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -21883,20 +21823,14 @@ msgstr ""
 "verifique o número no canto inferior direito."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Correspondência de números até 2."
+msgstr "Pegue os números, iniciando do 0."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Correspondência de números até 2."
+msgstr "Pegue os números, iniciando do 10."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -21916,12 +21850,9 @@ msgstr "Toque piano"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Encontre a data correta e selecione-a no calendário."
+msgstr "Leia a partitura e toque-a no teclado."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -21993,12 +21924,9 @@ msgstr "Acompanhe o ritmo"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Aprenda a seguir um ritmo de forma precisa."
+msgstr "Siga o ritmo com precisão."
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -22254,13 +22182,13 @@ msgstr "Selecione a imagem onde a criança está à esquerda da caixa."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Programe o caminho"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Programe o caminho para ajudar o Tux a pegar o peixe."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
