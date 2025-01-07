@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2023, 2024 Adrián Chaves (Gallaecio)
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Adrián Chaves (Gallaecio)
 # Adrián Chaves Fernández <adriyetichaves@gmail.com>, 2015, 2016, 2017.
 # Pablo <parodper@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-17 22:41+0100\n"
+"PO-Revision-Date: 2025-01-06 13:34+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -20405,6 +20405,7 @@ msgctxt "Data|"
 msgid "Below 10 words."
 msgstr "Menos de 10 palabras."
 
+# skip-rule: trasno-log/signout-log/signoff_reverse
 #. These sentences should not need to be translated word by word. Please add at least 10 sentences, each one being between 6 and 10 words. Use | to separate group of words. The aim of the string is to shuffle the group of words and let the child reorder them correctly. We should not be able to form a correct sentence by shuffling some words in the final sentence.
 #: activities/ordering_sentences/resource/2/Data.qml:18
 msgctxt "Data|"
@@ -20420,15 +20421,15 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
-"A|rapaza|atou|os|cordóns|e|saíu.\n"
-"Escoito|a|radio|case|todos|os|días.\n"
+"A|rapaza|atou|os|cordóns|das|deportivas.\n"
+"Escoito|a|radio|cando|emiten|o|meu|programa|favorito.\n"
 "As|nenas|e|nenos|xogan|no|parque.\n"
-"Xabier|sabe|moito|sobre|ciencia|e tecnoloxía.\n"
+"Xabier|sabe|moito|sobre|ciencias|da|información.\n"
 "Inés|púxose|enferma|por|comer|demasiados|doces.\n"
-"A|nosa|familia|vai|á|aldea|cada|ano.\n"
+"A|nosa|familia|vai|á|aldea|durante|as|vacacións.\n"
 "A|lúa|brilla|iluminada|pola|luz|do|sol.\n"
 "A|ensalada|leva|noces|e|anacos|de|mazá.\n"
-"A|tía|Alicia|regaloume|unha|pandeireta|negra|e dourada.\n"
+"A|tía|Alicia|regaloume|unha|pandeireta|negra.\n"
 "Subir|polas|escaleiras|é|máis|saudábel|que|usar|o|ascensor."
 
 #. Activity title
@@ -25710,6 +25711,7 @@ msgstr ""
 "Xirar a válvula superior a un ou outro lado permitirá ou impedirá que a auga "
 "encha o tanque de lastre, permitíndolle somerxerse baixo a auga."
 
+# skip-rule: trasno-log/signout-log/signoff_reverse
 #: activities/submarine/submarine.js:31
 msgctxt "submarine|"
 msgid ""
