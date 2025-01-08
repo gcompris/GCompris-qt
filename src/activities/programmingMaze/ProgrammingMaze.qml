@@ -24,13 +24,13 @@ ActivityBase {
 
     property int oldWidth: width
     onWidthChanged: {
-        Activity.repositionObjectsOnWidthChanged(width / oldWidth)
+        Activity.repositionObjectsOnWidthChanged()
         oldWidth = width
     }
 
     property int oldHeight: height
     onHeightChanged: {
-        Activity.repositionObjectsOnHeightChanged(height / oldHeight)
+        Activity.repositionObjectsOnHeightChanged()
         oldHeight = height
     }
 
@@ -83,7 +83,7 @@ ActivityBase {
             property int maxNumberOfInstructionsAllowed
             property int numberOfInstructionsAdded
             // When the activity is stopped, avoid calling initLevel on activity width/height changed
-            property bool activityStopped: false
+            property bool activityStopped: true
         }
 
         // This function catches the signal emitted after completion of movement of Tux after executing each instruction.
@@ -543,7 +543,6 @@ ActivityBase {
                 tutorialDetails: tutorialImage.selectInstructionTutorial()
                 useImage: false
                 onSkipPressed: {
-                    Activity.initLevel()
                     tutorialImage.visible = false
                     tutorialNumber = 0
                 }
