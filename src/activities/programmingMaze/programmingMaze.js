@@ -385,14 +385,14 @@ function previousLevel() {
     initLevel();
 }
 
-function repositionObjectsOnWidthChanged(factor) {
+function repositionObjectsOnWidthChanged() {
     resetTux = true
     if(items && items.activityStopped == false) {
         initLevel()
     }
 }
 
-function repositionObjectsOnHeightChanged(factor) {
+function repositionObjectsOnHeightChanged() {
     resetTux = true
     if(items && items.activityStopped == false) {
         initLevel()
