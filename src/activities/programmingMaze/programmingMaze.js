@@ -201,6 +201,7 @@ function initLevel() {
     if(!items)
         return
 
+    items.activityStopped = false
     loopsNumber = 1
     destroyInstructionObjects()
 
@@ -386,14 +387,16 @@ function previousLevel() {
 
 function repositionObjectsOnWidthChanged(factor) {
     resetTux = true
-    if(items && !items.activityStopped)
+    if(items && items.activityStopped == false) {
         initLevel()
+    }
 }
 
 function repositionObjectsOnHeightChanged(factor) {
     resetTux = true
-    if(items && !items.activityStopped)
+    if(items && items.activityStopped == false) {
         initLevel()
+    }
 }
 
 function reloadLevel() {
