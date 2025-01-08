@@ -8,7 +8,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "readingv/Readingv.qml"
-  difficulty: 2
+  difficulty: 3
   icon: "readingv/readingv.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   //: Activity title

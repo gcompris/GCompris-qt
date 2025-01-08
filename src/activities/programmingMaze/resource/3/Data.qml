@@ -12,7 +12,7 @@ import "../../programmingMaze.js" as Activity
 
 Data {
     objective: qsTr("Using both the main area and the loop area.")
-    difficulty: 3
+    difficulty: 4
     data: [
         // Level one
         {

@@ -9,7 +9,7 @@ import GCompris 1.0
 ActivityInfo
 {
   name: "missing-letter/MissingLetter.qml"
-  difficulty: 2
+  difficulty: 3
   icon: "missing-letter/missing-letter.svg"
   author: "Amit Tomar &lt;a.tomar@outlook.com&gt;"
   //: Activity title
