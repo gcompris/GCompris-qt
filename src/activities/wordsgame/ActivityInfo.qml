@@ -8,7 +8,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "wordsgame/Wordsgame.qml"
-  difficulty: 2
+  difficulty: 3
   icon: "wordsgame/wordsgame.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   //: Activity title

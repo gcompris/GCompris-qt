@@ -11,7 +11,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "tic_tac_toe_2players/Tic_tac_toe_2players.qml"
-  difficulty: 2
+  difficulty: 1
   icon: "tic_tac_toe_2players/tic_tac_toe_2players.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   //: Activity title
