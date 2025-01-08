@@ -7,7 +7,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "oware/Oware.qml"
-  difficulty: 2
+  difficulty: 3
   icon: "oware/oware.svg"
   author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
   //: Activity title

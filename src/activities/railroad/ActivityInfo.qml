@@ -10,7 +10,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "railroad/Railroad.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "railroad/railroad.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   //: Activity title

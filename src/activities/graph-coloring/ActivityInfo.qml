@@ -8,7 +8,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "graph-coloring/GraphColoring.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "graph-coloring/graph-coloring.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.in&gt;"
   //: Activity title

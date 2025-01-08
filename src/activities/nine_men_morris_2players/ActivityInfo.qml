@@ -8,7 +8,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "nine_men_morris_2players/NineMenMorris2players.qml"
-  difficulty: 2
+  difficulty: 3
   icon: "nine_men_morris_2players/nine_men_morris_2players.svg"
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
   //: Activity title

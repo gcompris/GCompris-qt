@@ -7,7 +7,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "oware_2players/Oware_2players.qml"
-  difficulty: 2
+  difficulty: 3
   icon: "oware_2players/oware_2players.svg"
   author: "Harsh Kumar &lt;hadron43@yahoo.com&gt;"
   //: Activity title

@@ -12,7 +12,7 @@ import "../../programmingMaze.js" as Activity
 
 Data {
     objective: qsTr("Using the main area only.")
-    difficulty: 1
+    difficulty: 3
     data: [
         // Level one
         {

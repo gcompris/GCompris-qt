@@ -8,7 +8,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "baby_wordprocessor/BabyWordprocessor.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "baby_wordprocessor/baby_wordprocessor.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
