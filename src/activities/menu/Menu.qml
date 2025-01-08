@@ -404,6 +404,8 @@ ActivityBase {
             cellHeight: height
             property int currentCategorySelected: 0
 
+            onModelChanged: currentCategorySelected = 0;
+
             delegate: GCButton {
                 id: button
                 selected: currentCategory === button.category
