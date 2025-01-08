@@ -10,7 +10,7 @@ Data {
     difficulty: 6
     data: [
         {
-            //~ we show two of five numbers and the missing numbers (2nd, 3rd and 4th) need to be found
+            //~ we show two of three numbers and the last one needs to be found
             "title": qsTr("Find the next number."),
             "lowerBound": -10,
             "upperBound": 8, // inclusive
@@ -23,7 +23,7 @@ Data {
             "numberPropositions": 5
         },
         {
-            //~ we show two of five numbers and the missing numbers (2nd, 3rd and 4th) need to be found
+            //~ we show two of three numbers and the first one needs to be found
             "title": qsTr("Find the previous number."),
             "lowerBound": -10,
             "upperBound": 8, // inclusive
