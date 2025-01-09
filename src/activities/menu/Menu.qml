@@ -279,6 +279,14 @@ ActivityBase {
                     width: sectionCellWidth
                     height: sectionCellWidth
 
+                    Rectangle {
+                        anchors.fill: parent
+                        visible: section.currentSectionSelected === index
+                        color: "transparent"
+                        border.width: 4
+                        border.color: "white"
+                    }
+
                     Image {
                         source: modelData.icon
                         sourceSize.height: sectionIconWidth
@@ -329,12 +337,12 @@ ActivityBase {
 
                 Rectangle {
                     anchors.fill: parent
-                    color:  "#5AFFFFFF"
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#80FFFFFF" }
+                        GradientStop { position: 1.0; color: "#40FFFFFF" }
+                    }
                 }
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    anchors.fill: parent
-                }
+
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
@@ -422,6 +430,7 @@ ActivityBase {
                     ActivityInfoTree.filterEnabledActivities(true)
                     categoriesGrid.currentCategorySelected = index
                 }
+
                 Image {
                     id: rightIcon
                     visible: horizontal
@@ -440,10 +449,8 @@ ActivityBase {
                 z: -1
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
-                color:  "#00FFFFFF"
+                color:  "#F0F0F0"
                 radius: 10
-                border.width: 4
-                border.color: "#FF87A6DD"
                 visible: true
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
