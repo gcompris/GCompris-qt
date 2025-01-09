@@ -19972,12 +19972,12 @@ msgstr ""
 "Ставете ја вашата омилена активност овде со клик на сонцето десно горе од "
 "самата активност."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Пребарај активност"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Подесувања на активност"

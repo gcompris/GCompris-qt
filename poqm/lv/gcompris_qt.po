@@ -18997,12 +18997,12 @@ msgstr ""
 "Pievieno te savas iecienītākās aktivitātes, klikšķinot uz saules ikonas pie "
 "attiecīgās aktivitātes."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Meklēt attiecīgās aktivitātes"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Aktivitātes iestatījumi"
