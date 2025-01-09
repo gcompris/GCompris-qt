@@ -405,7 +405,7 @@ ActivityBase {
                 theme: "categories"
                 textSize: "regular"
                 rightIconSize: rightIcon.width + rightIcon.anchors.rightMargin
-                width: categoriesGrid.width / (currentTagCategories.length + 1)
+                width: categoriesGrid.cellWidth - 10
                 height: categoriesGrid.cellHeight
                 text: modelData[category]
                 property string category: Object.keys(modelData)[0]
@@ -437,12 +437,12 @@ ActivityBase {
                 }
             }
             highlight: Rectangle {
-                z: 10
+                z: -1
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
                 color:  "#00FFFFFF"
                 radius: 10
-                border.width: 5
+                border.width: 4
                 border.color: "#FF87A6DD"
                 visible: true
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -843,7 +843,7 @@ ActivityBase {
                     categoriesGrid {
                         width: main.width
                         height: categoriesHeight * 0.5
-                        x: currentTagCategories ? categoriesGrid.width / (4 * (currentTagCategories.length + 1)) : 0
+                        x: 5
                     }
                 }
                 PropertyChanges {
@@ -916,7 +916,7 @@ ActivityBase {
                     categoriesGrid {
                         width: main.width - section.width
                         height: categoriesHeight
-                        x: currentTagCategories ? categoriesGrid.width / (4 * (currentTagCategories.length + 1)) + section.width : 0
+                        x: section.width + 5
                     }
                 }
                 PropertyChanges {
@@ -989,7 +989,7 @@ ActivityBase {
                     categoriesGrid {
                         width: main.width - section.width
                         height: categoriesHeight
-                        x: currentTagCategories ? categoriesGrid.width / (4 * (currentTagCategories.length + 1)) + section.width : 0
+                        x: section.width + 5
                     }
                 }
                 PropertyChanges {
