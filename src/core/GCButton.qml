@@ -128,7 +128,7 @@ Button {
     focusPolicy: Qt.NoFocus
     
     background: Rectangle {
-        border.width: buttonControl.activeFocus ? 4 : 2
+        border.width: buttonControl.activeFocus || buttonControl.selected ? 4 : 2
         border.color: themes[theme].borderColor
         radius: 10
         gradient: Gradient {
