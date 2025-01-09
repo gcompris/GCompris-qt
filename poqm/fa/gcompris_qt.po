@@ -18252,12 +18252,12 @@ msgstr ""
 "با کلیک بر روی خورشید در گوشه سمت راست فعالیت، فعالیت های مورد علاقه خود را "
 "در اینجا قرار بده."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "جست و جوی فعالیت های به خصوص"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "تنظیمات فعالیت"

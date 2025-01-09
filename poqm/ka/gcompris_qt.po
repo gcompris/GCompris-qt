@@ -17920,12 +17920,12 @@ msgid ""
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "მითითებული აქტივობები ძებნა"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "აქტივობის მორგება"

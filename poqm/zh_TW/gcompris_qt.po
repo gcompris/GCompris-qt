@@ -18925,12 +18925,12 @@ msgid ""
 "that activity."
 msgstr "只要選擇每個活動右上方的太陽，就可以把您最喜歡的活動放在這裡。"
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "搜尋特定的活動"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "活動設定"

@@ -19850,12 +19850,12 @@ msgstr ""
 "Sammle hier Deine Lieblingsaktivitäten indem Du die Sonne im oberen rechten "
 "Eck jeder Aktivität anklickst."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Suche nach Aktivitäten"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Aktivitäten-Einstellungen"

@@ -18859,14 +18859,14 @@ msgid ""
 "that activity."
 msgstr ""
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 #, fuzzy
 #| msgid "Mathematical activities."
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Matematičke vježbe."
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr ""

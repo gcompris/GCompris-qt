@@ -113,7 +113,7 @@ msgstr "Trouve le nombre précédent."
 #: activities/adjacent_numbers/resource/3/Data.qml:40
 msgctxt "Data|"
 msgid "Find the in-between number."
-msgstr "Trouve les nombres avant et après."
+msgstr "Trouve le nombre du milieu."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:53
 msgctxt "Data|"
@@ -133,7 +133,7 @@ msgstr "Trouve les nombres précédents."
 #: activities/adjacent_numbers/resource/3/Data.qml:105
 msgctxt "Data|"
 msgid "Find the in-between numbers."
-msgstr "Trouve les nombres avant et après."
+msgstr "Trouve les nombres du milieu."
 
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -19419,12 +19419,12 @@ msgstr ""
 "Place ici tes activités favorites en cliquant sur le Soleil en haut à droite "
 "de chaque activité."
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Chercher des activités spécifiques"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuration des activités"
@@ -24377,66 +24377,51 @@ msgstr "Image d'arrière-plan"
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Outils de gommage"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Outils de dessin"
 
 #: activities/sketch/ColorSelector.qml:76
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Fais correspondre la couleur"
+msgstr "Couleurs de la palette"
 
 #: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Réinitialiser la palette"
 
 #: activities/sketch/ColorSelector.qml:211
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Sélectionné"
+msgstr "Couleur sélectionnée"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:235
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Teinte"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:262
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturne"
+msgstr "Saturation"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:287
-#, fuzzy
-#| msgctxt "board15_0|"
-#| msgid "Caithness"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Caithness"
+msgstr "Luminosité"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Réinitialiser la couleur"
 
 #: activities/sketch/ColorsPanel.qml:157
 msgctxt "ColorsPanel|"
@@ -24480,22 +24465,22 @@ msgstr "Créer une nouvelle image"
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Bords arrondis"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Outils de géométrie"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Taille du cercle intérieur"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Outils de dégradé"
 
 #: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
@@ -24520,17 +24505,17 @@ msgstr "Non"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Outil de tampon"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Outil de texte"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Écris ton texte ici"
 
 #: activities/sketch/ToolsPanel.qml:253
 msgctxt "ToolsPanel|"
@@ -24540,22 +24525,19 @@ msgstr "Outils"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Réinitialiser la configuration de l'outil"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Opacité"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Taille"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Vitesse"
@@ -24563,36 +24545,27 @@ msgstr "Vitesse"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Densité"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Points"
+msgstr "Taille des points"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Lissage"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "les actions"
+msgstr "Rotation"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Reproduis l'image symétrique"
+msgstr "Image renversée"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -26810,12 +26783,9 @@ msgstr "Pratiquer les tables d'addition."
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Empile les disques pour reproduire la tour modèle."
+msgstr "Résous l'addition affichée."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
@@ -26828,12 +26798,9 @@ msgstr "Apprendre à partager, pratiquer la division."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Table d'addition de 1."
+msgstr "Tables d'addition."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26857,62 +26824,62 @@ msgstr ""
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Résous l'addition, 2 chiffres, 2 lignes, sans retenue."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Résous l'addition, 4 chiffres, 3 lignes."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Résous l'addition, 4 chiffres, 4 lignes."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Écris l'addition de ton choix et résous la."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Écris et résous l'addition, 2 chiffres, 2 lignes, sans retenue."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Résous l'addition, 2 chiffres, 2 lignes, sans retenue."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Écris et résous l'addition, 2 chiffres, 2 lignes."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Écris et résous l'addition, 2 chiffres, 3 lignes."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Résous l'addition, 3 chiffres, 2 lignes."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Écris et résous l'addition, 3 chiffres, 2 lignes."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Résous l'addition, 3 chiffres, 3 lignes."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Résous l'addition, 4 chiffres, 2 lignes."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15

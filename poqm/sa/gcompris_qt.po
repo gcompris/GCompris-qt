@@ -18654,12 +18654,12 @@ msgid ""
 msgstr ""
 "तस्य क्रियाकलापस्य उपरि दक्षिणभागे सूर्यं क्लिक् कृत्वा भवतः प्रियं क्रियाकलापं अत्र स्थापयतु ।"
 
-#: activities/menu/Menu.qml:789
+#: activities/menu/Menu.qml:791
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "विशिष्टानि क्रियाकलापाः अन्वेष्टुम्"
 
-#: activities/menu/Menu.qml:816
+#: activities/menu/Menu.qml:818
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "गतिविधिसेटिंग्स्"
