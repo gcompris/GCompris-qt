@@ -236,7 +236,10 @@ ActivityBase {
             event.accepted = false
         }
         Keys.onTabPressed: (event) => {
-            if(currentActiveGrid == section) {
+            if(!ApplicationSettings.sectionVisible) {
+                currentActiveGrid = activitiesGrid;
+            }
+            else if(currentActiveGrid == section) {
                 if(currentTagCategories && currentTagCategories.length != 0) {
                     currentActiveGrid = categoriesGrid;
                 }
@@ -268,6 +271,7 @@ ActivityBase {
             cellHeight: sectionCellWidth
             interactive: false
             keyNavigationWraps: true
+            highlightMoveDuration: 0
             property int initialX: 4
             property int initialY: 4
             property int currentSectionSelected: 0
@@ -280,10 +284,13 @@ ActivityBase {
                     height: sectionCellWidth
 
                     Rectangle {
-                        anchors.fill: parent
                         visible: section.currentSectionSelected === index
-                        color: "transparent"
-                        border.width: 4
+                        anchors.fill: parent
+                        gradient: Gradient {
+                            GradientStop { position: 0.0; color: "#80FFFFFF" }
+                            GradientStop { position: 1.0; color: "#40FFFFFF" }
+                        }
+                        border.width: 2
                         border.color: "white"
                     }
 
@@ -307,8 +314,10 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
-                        if(section.currentSectionSelected === index)
+                        if(section.currentSectionSelected === index) {
+                            section.currentIndex = index // in case it was moved with keyboard
                             return
+                        }
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
                         activity.currentTagCategories = modelData.categories
@@ -331,20 +340,10 @@ ActivityBase {
                 }
             }
             delegate: sectionDelegate
-            highlight: Item {
-                width: sectionCellWidth
-                height: sectionCellWidth
-
-                Rectangle {
-                    anchors.fill: parent
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#80FFFFFF" }
-                        GradientStop { position: 1.0; color: "#40FFFFFF" }
-                    }
-                }
-
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            highlight: Rectangle {
+                    color: "transparent"
+                    border.width: 4
+                    border.color: "white"
             }
         }
 
@@ -400,6 +399,7 @@ ActivityBase {
             topMargin: 5
             interactive: false
             keyNavigationWraps: true
+            highlightFollowsCurrentItem: false
             visible: activity.currentTag !== "search"
             cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
             cellHeight: height
@@ -409,7 +409,8 @@ ActivityBase {
 
             delegate: GCButton {
                 id: button
-                selected: currentCategory === button.category
+                selected: categoriesGrid.currentIndex === index
+                down: currentCategory === button.category
                 theme: "categories"
                 textSize: "regular"
                 rightIconSize: rightIcon.width + rightIcon.anchors.rightMargin
@@ -422,8 +423,10 @@ ActivityBase {
                 }
 
                 function selectCurrentItem() {
-                    if(categoriesGrid.currentCategorySelected === index)
+                    if(categoriesGrid.currentCategorySelected === index) {
+                        categoriesGrid.currentIndex = index // in case it was moved with keyboard
                         return
+                    }
                     categoriesGrid.currentIndex = index
                     currentCategory = Object.keys(modelData)[0]
                     ActivityInfoTree.filterByTag(currentTag, currentCategory, false)
@@ -445,16 +448,7 @@ ActivityBase {
                     }
                 }
             }
-            highlight: Rectangle {
-                z: -1
-                width: activityCellWidth - activitiesGrid.spacing
-                height: activityCellHeight - activitiesGrid.spacing
-                color:  "#F0F0F0"
-                radius: 10
-                visible: true
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
-            }
+            highlight: Item {}
         }
 
         Rectangle {
@@ -667,7 +661,7 @@ ActivityBase {
                 height: activityCellHeight - activitiesGrid.spacing
                 color:  "#AAFFFFFF"
                 border.width: 3
-                border.color: "black"
+                border.color: "#FFF"
                 visible: background.keyboardMode
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
