@@ -1,9 +1,11 @@
 /* GCompris - Bar.qml
  *
  * SPDX-FileCopyrightText: 2014-2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -35,61 +37,36 @@ Item {
     id: bar
 
     readonly property real applicationInfoRatio: ApplicationInfo.ratio
-    /**
-      * type: real
-      * Minimum size for BarZoom
-      */
-    readonly property real minWidth: (parent.width - 20 -
-                                      10 * applicationInfoRatio) / (totalWidth + textLength)
-
-    /**
-      * type: real
-      * Maximum size for barZoom
-      */
-    readonly property real maxWidth: 1.2 * applicationInfoRatio
-
-    /**
-      * type: real
-      * Length of level String
-      */
-    property real textLength
-
-    /**
-      * type: real
-      * The maximum size allowed for the bar
-      */
-    readonly property real maxBarWidth: (totalWidth+textLength) * maxWidth +
-                               (numberOfButtons - 1) * 5 + 10 * applicationInfoRatio
-    /**
-      * type: real
-      * Font size for text level
-      */
-    readonly property real textSize: (parent.width<maxBarWidth) ? 32 * minWidth / maxWidth : 32
-
-    /**
-     * type:real
-     * Zoom factor of the bar and its children.
-     */
-    property real barZoom: (parent.width<maxBarWidth) ? minWidth : maxWidth
 
     /**
       * type: real
       * Keeps track of the number of buttons that are displayed
       */
-    property int numberOfButtons: 0
+    property real numberOfButtons: 0
 
-    //totalWidth has 66 as initial value because it will always have the "hideBar" button
     /**
-      * type: real
-      * Width of all the buttons
+     * type: real
+     * Margin between the buttons
+     */
+    readonly property int buttonMargins: 5 * applicationInfoRatio
+
+    /**
+      * type: int
+      * Size of the openBar button, and maximum size for other buttons
       */
-    property real totalWidth: 66
+    readonly property int baseButtonSize: 78 * applicationInfoRatio
 
-    readonly property int fullButton: 66
-    readonly property int halfButton: 30
+    /**
+     * type: int
+     * available width for all buttons except openBar
+     */
+    readonly property int allButtonsWidth: Math.floor(parent.width - openBar.width - buttonMargins)
 
-    readonly property int fullButtonScaled: fullButton * barZoom
-    readonly property int halfButtonScaled: halfButton * barZoom
+    /**
+     * type: int
+     * Size of each button (except openBar). For previous/next/levelText we calculate their size based on it.
+     */
+    readonly property int buttonSize: Math.floor(Math.min(baseButtonSize, allButtonsWidth / numberOfButtons - buttonMargins))
 
     /**
      * type:BarEnumContent
@@ -258,25 +235,25 @@ Item {
 
     x: 0
     anchors.bottom: parent.bottom
-    width: openBar.width
-    height: openBar.height
+    width: parent.width
+    height: openBar.height + buttonMargins * 2 // + offset of barRow bottomMargin
     z: 1000
 
     function show(newContent) {
-        content.value = newContent
+        content.value = newContent;
     }
 
     Connections {
         target: DownloadManager
 
         function onDownloadStarted() {
-            content.value |= content.download
+            content.value |= content.download;
         }
         function onAllDownloadsFinished() {
-            content.value &= ~content.download
+            content.value &= ~content.download;
         }
         function onError() {
-            content.value &= ~content.download
+            content.value &= ~content.download;
         }
     }
 
@@ -285,7 +262,10 @@ Item {
         source: "qrc:/gcompris/src/core/resource/bar_open.svg";
         anchors.bottom: parent.bottom
         anchors.left: parent.left
-        sourceSize.width: fullButtonScaled
+        width: baseButtonSize
+        height: width
+        sourceSize.width: width
+        sourceSize.height: height
         MouseArea {
             anchors.fill: parent
 
@@ -295,48 +275,42 @@ Item {
         }
     }
 
-    function computeWidth(bid) {
-        if (bid===levelText) {
-            return 0
-        }
-        else if (bid===previous||bid===next)
-            return halfButton
-        else return fullButton
-    }
-
     function updateContent() {
-        var newButtonModel = []
-        numberOfButtons = 0
-        totalWidth = 66;
+        var newButtonModel = [];
+        numberOfButtons = 0;
         for(var def in buttonList) {
-            if((content.value & buttonList[def].contentId) &&
-               buttonList[def].allowed) {
-                newButtonModel.push(buttonList[def])
-                totalWidth += computeWidth(buttonList[def].bid)
-                numberOfButtons++
+            if((content.value & buttonList[def].contentId) && buttonList[def].allowed) {
+                newButtonModel.push(buttonList[def]);
+                if(buttonList[def].bid === previous || buttonList[def].bid === next) {
+                    numberOfButtons += 0.5;
+                } else {
+                    numberOfButtons += 1;
+                }
             }
         }
-        buttonModel = newButtonModel
+        buttonModel = newButtonModel;
     }
 
     Connections {
         target: content
         function onValueChanged() {
-            updateContent()
+            updateContent();
         }
     }
 
     onContentChanged: {
-        updateContent()
+        updateContent();
     }
 
     Row {
         id: barRow
-        spacing: 5
+        spacing: buttonMargins
+        height: buttonSize
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: 10
+        anchors.bottomMargin: buttonMargins * 2
+        anchors.topMargin: buttonMargins // used in hidden state
         anchors.left: openBar.right
-        anchors.leftMargin: 10 * applicationInfoRatio
+        anchors.leftMargin: buttonMargins
         property bool isHidden: false
         Repeater {
             model: buttonModel
@@ -362,8 +336,8 @@ Item {
 
                 AnchorChanges {
                     target: barRow
-                    anchors.bottom: undefined
                     anchors.top: parent.bottom
+                    anchors.bottom: undefined
                 }
             }
         ]
@@ -401,7 +375,7 @@ Item {
         id: exit
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
-            width: fullButtonScaled
+            width: buttonSize
             visible: barRow.isHidden === false
             onClicked: Core.quit(bar.parent.parent);
         }
@@ -410,26 +384,26 @@ Item {
         id: about
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svg";
-            width: fullButtonScaled
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.aboutClicked()
+            onClicked: bar.aboutClicked();
         }
     }
     Component {
         id: help
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svg";
-            width: fullButtonScaled
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.helpClicked()
+            onClicked: bar.helpClicked();
         }
     }
     Component {
         id: previous
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-            height: fullButtonScaled
-            width: fullButtonScaled * 0.5
+            height: buttonSize
+            width: buttonSize * 0.5
             visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
@@ -443,25 +417,25 @@ Item {
         GCText {
             id: levelTextId
             text: "" + level
-            fontSize: textSize
+            width: buttonSize * 0.8
+            height: buttonSize
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            fontSize: 64
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "black"
             color: "white"
             visible: content.level & content.value && barRow.isHidden === false
-            onTextChanged: {
-                if (level>9)
-                    textLength = fullButtonScaled
-                else textLength = halfButtonScaled
-            }
         }
     }
     Component {
         id: next
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg";
-            height: fullButtonScaled
-            width: fullButtonScaled * 0.5
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            height: buttonSize
+            width: buttonSize * 0.5
             visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
@@ -473,46 +447,46 @@ Item {
     Component {
         id: repeat
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            width: fullButtonScaled
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.repeatClicked()
+            onClicked: bar.repeatClicked();
         }
     }
     Component {
         id: hint
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
-            width: fullButtonScaled
+            source: "qrc:/gcompris/src/core/resource/bar_hint.svg"
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.hintClicked()
+            onClicked: bar.hintClicked();
         }
     }
     Component {
         id: activityConfigImage
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg";
-            width: fullButtonScaled
+            source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg"
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.activityConfigClicked()
+            onClicked: bar.activityConfigClicked();
         }
     }
     Component {
         id: reload
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
-            width: fullButtonScaled
+            source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.reloadClicked()
+            onClicked: bar.reloadClicked();
         }
     }
     Component {
         id: config
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_config.svg";
-            width: fullButtonScaled
+            source: "qrc:/gcompris/src/core/resource/bar_config.svg"
+            width: buttonSize
             visible: barRow.isHidden === false
-            onClicked: bar.configClicked()
+            onClicked: bar.configClicked();
         }
     }
     Component {
@@ -521,8 +495,8 @@ Item {
             // Replace home icon with exit icon in case activity is started as standalone
             source: ActivityInfoTree.startingActivity != "" ?
                 "qrc:/gcompris/src/core/resource/bar_exit.svg" :
-                "qrc:/gcompris/src/core/resource/bar_home.svg";
-            width: fullButtonScaled
+                "qrc:/gcompris/src/core/resource/bar_home.svg"
+            width: buttonSize
             visible: barRow.isHidden === false
             onClicked: {
                 bar.homeClicked();
@@ -547,4 +521,3 @@ Item {
 
     /// @endcond
 }
-
