@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2017, 2018, 2020.
-# Frederico Gonçalves Guimarães <frederico@teia.bio.br>, 2019, 2021, 2023, 2024.
+# SPDX-FileCopyrightText: 2019, 2021, 2023, 2024, 2025 Frederico Gonçalves Guimarães <frederico@teia.bio.br>
 # Geraldo Simiao <geraldosimiao@fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:37+0000\n"
-"PO-Revision-Date: 2024-03-20 19:45-0300\n"
+"PO-Revision-Date: 2025-01-09 13:58-0300\n"
 "Last-Translator: Frederico Goncalves Guimaraes <frederico@teia.bio.br>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "adjacent_numbers"
 #: activities/adjacent_numbers/ActivityInfo.qml:17
@@ -82,10 +82,7 @@ msgstr ""
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4"
 #: activities/align4/ActivityInfo.qml:18
-#, fuzzy, kde-format
-#| msgid ""
-#| "Click on the column where you wish your token to fall and try to align of "
-#| "4 tokens before Tux."
+#, kde-format
 msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
@@ -1194,7 +1191,7 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "Use as ferramentas para desenhar imagens."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1341,7 +1338,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Resolva a adição indicada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1349,7 +1346,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Resolva a subtração indicada."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

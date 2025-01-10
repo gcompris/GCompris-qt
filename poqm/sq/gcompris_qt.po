@@ -19180,7 +19180,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Fjalor"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19189,12 +19189,12 @@ msgstr ""
 "Vendosni këtu veprimtaritë tuaja të parapëlqyera, duke klikuar mbi diellin, "
 "djathtas sipër te ajo veprimtari."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Kërkoni veprimtari të caktuara"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Rregullime Veprimtarie"

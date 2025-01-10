@@ -19025,7 +19025,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Ordförråd"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19034,12 +19034,12 @@ msgstr ""
 "Lägg till favoritaktiviteter här genom att klicka på solen längst upp till "
 "höger i aktiviteten."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Sök efter specifika aktiviteter"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Aktivitetsinställningar"

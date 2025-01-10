@@ -19486,7 +19486,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Slovník"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19495,12 +19495,12 @@ msgstr ""
 "Svoje obľúbené aktivity umiestnite sem, výberom slnka v pravom hornom rohu "
 "na každej aktivite."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Ukazovať zamknuté aktivity"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavenia aktivity"

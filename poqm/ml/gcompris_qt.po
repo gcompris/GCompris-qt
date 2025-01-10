@@ -19216,7 +19216,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "പദസമ്പത്ത്"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19225,12 +19225,12 @@ msgstr ""
 "നിങ്ങൾക്കു പ്രിയപ്പെട്ട പ്രവർത്തനങ്ങൾ ഇവിടെ ചേർക്കാൻ ആ പ്രവർത്തനത്തിന്റെ വലത്ത് മുകളിലായുള്ള "
 "സൂര്യനിൽ ക്ലിക്കു ചെയ്യൂ."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "പ്രവർത്തനങ്ങൾ തിരയുക"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "പ്രവർത്തന ക്രമീകരണം"

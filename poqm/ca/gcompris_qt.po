@@ -19530,7 +19530,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulari"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19539,12 +19539,12 @@ msgstr ""
 "Col·loca les teves activitats preferides aquí fent clic sobre el Sol que hi "
 "ha a la part superior dreta de cada activitat."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cerca activitats específiques"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuració de l'activitat"

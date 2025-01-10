@@ -1,18 +1,19 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023, 2024 Vít Pelčák <vit@pelcak.org>
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
-# SPDX-FileCopyrightText: 2024 Jan Papez (honyczek)
+# SPDX-FileCopyrightText: 2025 Jan Papež (honyczek) <honyczek@centrum.cz>
+# SPDX-FileCopyrightText: 2024, 2025 Jan Papez (honyczek)
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-09-30 10:03+0200\n"
-"Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
+"PO-Revision-Date: 2025-01-09 23:08+0100\n"
+"Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 24.08.1\n"
+"X-Generator: Lokalize 25.03.70\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -2648,7 +2649,7 @@ msgstr ""
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -5008,11 +5009,6 @@ msgstr "Dokáže pohybovat myší a přesně klikat na body."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5020,7 +5016,8 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Nakresli obrázek kliknutím na každý bod v řadě. Pokaždé, když je bod vybrán, "
-"objeví se další modrý bod."
+"objeví se další modrý bod. Můžeš kliknout a táhnout od jednoho bodu k dalším "
+"bodům. Nebo můžeš klikat na každý bod zvlášť, jeden po druhém."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6571,6 +6568,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Nakresli písmena spojováním bodů ve správném pořadí. Můžeš kliknout a "
+"táhnout od jednoho bodu k dalším bodům. Nebo můžeš klikat na každý bod "
+"zvlášť, jeden po druhém."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6598,6 +6598,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Nakresli číslice spojováním bodů ve správném pořadí. Můžeš kliknout a "
+"táhnout od jednoho bodu k dalším bodům. Nebo můžeš klikat na každý bod "
+"zvlášť, jeden po druhém."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -18698,7 +18701,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Slovníček"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18707,12 +18710,12 @@ msgstr ""
 "Sem vložte své oblíbené aktivity kliknutím na slunce vpravo nahoře u "
 "aktivity."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Vyhledávání aktivit"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Nastavení aktivit"
@@ -19239,7 +19242,7 @@ msgstr "Sestav mozaiku"
 #: activities/mosaic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Put each item at the same place as in the given example."
-msgstr ""
+msgstr "Polož každou věc na stejné místo jako je to v uvedeném příkladu."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
@@ -19254,41 +19257,43 @@ msgid ""
 "First select an item from the list, and then click on a spot of the mosaic "
 "to place the item."
 msgstr ""
+"Nejprve vyber věc v seznamu a potom klikni na místo v mozaice, kam chceš "
+"tuto věc umístit."
 
 #: activities/mosaic/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Arrows: navigate inside an area"
-msgstr ""
+msgstr "Šipky: navigace uvnitř oblasti"
 
 #: activities/mosaic/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Space or Enter: select or place an item"
-msgstr ""
+msgstr "Mezerník nebo Enter: vyber nebo umísti věc"
 
 #: activities/mosaic/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Tab: navigate between the item list and the mosaic"
-msgstr ""
+msgstr "Tabulátor: navigace mezi seznamem věcí a mozaikou"
 
 #: activities/mosaic/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 5 items, on a single line."
-msgstr ""
+msgstr "Až 5 věcí na jednom řádku."
 
 #: activities/mosaic/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 8 items, on a single line."
-msgstr ""
+msgstr "Až 8 věcí na jednom řádku."
 
 #: activities/mosaic/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 16 items, on multiple lines."
-msgstr ""
+msgstr "Až 16 věcí na více řádcích."
 
 #: activities/mosaic/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Up to 24 items, on multiple lines."
-msgstr ""
+msgstr "Až 24 věcí na více řádcích."
 
 #. Activity title
 #: activities/nine_men_morris/ActivityInfo.qml:15
@@ -19307,7 +19312,7 @@ msgstr "Zahraj si hru mlýn (proti Tuxovi)."
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "Rozvíjej dovednosti strategie a prostorového zobrazení."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -19318,6 +19323,10 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
+"Zahraj si s Tuxem. Nejprve v rámci jednotlivých tahů umísti devět kamenů a v "
+"následujících tazích přesouvej svoje kameny. Pokud už ti zbývají jen 3 "
+"kameny, můžeš je nechat odletět na kterékoliv volné místo. Vyhrává ten hráč, "
+"který druhému zabrání v pohybu nebo mu zůstanou jen dva kameny."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -19325,6 +19334,8 @@ msgid ""
 "You and Tux start with 9 pieces each, and take turns to place your pieces on "
 "the empty spots of the board (by clicking on the spots)."
 msgstr ""
+"Ty a Tux začínáte každý s 9 kameny. Umísti své kameny na volná místa na "
+"desce (pomocí klikání na tato místa). "
 
 #: activities/nine_men_morris/nine_men_morris.js:33
 msgctxt "nine_men_morris|"
@@ -19333,6 +19344,9 @@ msgid ""
 "remove it. Pieces of formed mill can not be removed unless no other pieces "
 "are left on the board."
 msgstr ""
+"Pokud postavíš mlýn (řadu 3 kamenů), tak vyber jeden Tuxům kámen, který bude "
+"odstraněn. Kameny, které tvoří mlýn, nemohou být odstraněny, dokud jsou na "
+"desce jiné kameny, které je možné odstranit."
 
 #: activities/nine_men_morris/nine_men_morris.js:37
 msgctxt "nine_men_morris|"
@@ -19341,6 +19355,10 @@ msgid ""
 "Click on one of your pieces, and then on an adjacent empty spot to move it "
 "there. Green color spots indicates where you can move."
 msgstr ""
+"Poté co jsou všechny kameny umístěny, ty i Tux táhnete tak, že jednotlivé "
+"kameny přesouváte. Klikni na jeden ze svých kamenů a pak na sousední volné "
+"místo, aby se tam kámen přesunul. Zeleně vybarvená místa ukazují, kam je "
+"možné táhnout."
 
 #: activities/nine_men_morris/nine_men_morris.js:41
 msgctxt "nine_men_morris|"
@@ -19348,6 +19366,8 @@ msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr ""
+"Pokud ti zbývají poslední 3 kameny, dostávají schopnost létat, takže se "
+"mohou přesunout na kterékoliv volné místo na desce."
 
 #: activities/nine_men_morris/nine_men_morris.js:45
 msgctxt "nine_men_morris|"
@@ -19355,38 +19375,40 @@ msgid ""
 "If you immobilize the computer or leave it with less than 3 pieces, then you "
 "win the game."
 msgstr ""
+"Pokud znehybníš protihráče nebo mu zůstanou méně než 3 kameny, pak vyhráváš "
+"hru."
 
 #: activities/nine_men_morris/nine_men_morris.js:262
 #: activities/nine_men_morris/nine_men_morris.js:1108
 msgctxt "nine_men_morris|"
 msgid "Place a piece"
-msgstr ""
+msgstr "Polož kámen"
 
 #: activities/nine_men_morris/nine_men_morris.js:388
 #: activities/nine_men_morris/nine_men_morris.js:1166
 msgctxt "nine_men_morris|"
 msgid "Move a piece"
-msgstr ""
+msgstr "Přesuň kámen"
 
 #: activities/nine_men_morris/nine_men_morris.js:940
 msgctxt "nine_men_morris|"
 msgid "Remove a piece"
-msgstr ""
+msgstr "Odstraň kámen"
 
 #: activities/nine_men_morris/nine_men_morris.js:1143
 msgctxt "nine_men_morris|"
 msgid "Congratulations"
-msgstr ""
+msgstr "Blahopřejeme"
 
 #: activities/nine_men_morris/nine_men_morris.js:1146
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 1"
-msgstr ""
+msgstr "Blahopřejeme Hráči č. 1"
 
 #: activities/nine_men_morris/nine_men_morris.js:1157
 msgctxt "nine_men_morris|"
 msgid "Congratulations Player 2"
-msgstr ""
+msgstr "Blahopřejeme Hráči č. 2"
 
 #: activities/nine_men_morris/nine_men_morris.js:1160
 msgctxt "nine_men_morris|"
@@ -19403,7 +19425,7 @@ msgstr "Hra mlýn (s kamarádem)"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "Zahraj si hru mlýn (s kamarádem)."
+msgstr "Zahraj si hru mlýn s kamarádem."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -19414,6 +19436,10 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"Zahraj si s kamarádem. Nejprve v rámci jednotlivých tahů umísti devět kamenů "
+"a v následujících tazích přesouvej svoje kameny. Pokud už ti zbývají jen 3 "
+"kameny, můžeš je nechat odletět na kterékoliv volné místo. Vyhrává ten hráč, "
+"který druhému zabrání v pohybu nebo mu zůstanou jen dva kameny."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -19425,7 +19451,7 @@ msgstr "Pojmenuj notu"
 #: activities/note_names/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn the names of the notes, in bass and treble clef."
-msgstr ""
+msgstr "Nauč se pojmenovat noty v basovém a houslovém klíči."
 
 #. Help goal
 #: activities/note_names/ActivityInfo.qml:23
@@ -19444,12 +19470,14 @@ msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
+"Poznávej noty, zahraj si je na klavíru a dosáhni 100% skóre pro dokončení "
+"úrovně."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
 msgctxt "NoteNames|"
 msgid "New note: %1"
-msgstr "Nová poznámka: %1"
+msgstr "Nová nota: %1"
 
 #. The following translation represents percentage.
 #: activities/note_names/NoteNames.qml:264
@@ -19464,6 +19492,8 @@ msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr ""
+"Tato aktivita vyžaduje zvuk, aby mohla přehrávat některé zvuky, i když jsou "
+"v hlavní konfiguraci zvuku zakázané hlasy a efekty."
 
 #: activities/note_names/NoteNames.qml:452
 msgctxt "NoteNames|"
@@ -19483,6 +19513,10 @@ msgid ""
 "you have already learned.<br>Reference notes are colored in red and will "
 "help you to read the notes placed around them."
 msgstr ""
+"Tato aktivita tě naučí číst noty od F1 v basovém klíči až po D6 v houslovém "
+"klíči.<br> Na každé úrovni se naučíš nové noty a budeš procvičovat ty, co už "
+"ses naučil.<br> Některé noty jsou vyznačeny červeně a pomáhají ve čtení "
+"těch, které jsou umístěny okolo nich."
 
 #: activities/number_sequence/ActivityConfig.qml:36
 msgctxt "ActivityConfig|"
@@ -19510,19 +19544,15 @@ msgstr "Nauč se číselné pořadí."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Nakresli obrázek kliknutím na každý bod v řadě. Pokaždé, když je bod vybrán, "
-"objeví se další modrý bod."
+"Nakresli obrázek klikáním na body podle číselného pořadí. Můžeš kliknout a "
+"táhnout od jednoho bodu k dalším bodům. Nebo můžeš klikat na každý bod "
+"zvlášť, jeden po druhém."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -19540,7 +19570,7 @@ msgstr "Pochytej vrtulníkem všechna sudá nebo lichá čísla."
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "Nauč se rozpoznávat sudá a lichá čísla a jejich číselné pořadí."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -19571,33 +19601,33 @@ msgstr "Chytej lichá čísla."
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
 msgid "This activity teaches about even and odd numbers."
-msgstr ""
+msgstr "Tatu aktivita učí rozpoznávat sudá a lichá čísla."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:46
 #: activities/numbers-odd-even/NumbersOddEven.qml:56
 msgctxt "NumbersOddEven|"
 msgid ""
 "Even numbers are numbers which leave a remainder of 0 when divided by 2."
-msgstr ""
+msgstr "Sudá čísla jsou čísla, která mají po dělení číslem 2 zbytek rovný 0."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:51
 msgctxt "NumbersOddEven|"
 msgid "What is meant by remainder?"
-msgstr ""
+msgstr "Co to znamená zbytek?"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:60
 msgctxt "NumbersOddEven|"
 msgid ""
 "Odd numbers are numbers which do not leave a remainder of 0 when divided by "
 "2."
-msgstr ""
+msgstr "Lichá čísla jsou čísla, která po dělení 2 nemají zbytek rovný 0."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:64
 #: activities/numbers-odd-even/NumbersOddEven.qml:68
 #: activities/numbers-odd-even/NumbersOddEven.qml:72
 msgctxt "NumbersOddEven|"
 msgid "Exercise to test your understanding."
-msgstr ""
+msgstr "Cvičení pro správné pochopení."
 
 #: activities/numbers-odd-even/resource/Tutorial1.qml:22
 msgctxt "Tutorial1|"
@@ -19607,6 +19637,9 @@ msgid ""
 " If 6 is divided by 2 the result is 3 and the remainder is 0.\n"
 " If 7 is divided by 2 the result is 3 and the remainder is 1."
 msgstr ""
+"Zbytek je zbylé množství po dělení počtu jiným počtem.\n"
+" Pokud je 6 děleno 2, výsledek je 3 a zbytek 0.\n"
+" Pokud je 7 děleno 2, výsledek je 3 a zbytek 1."
 
 #: activities/numbers-odd-even/resource/Tutorial2.qml:22
 msgctxt "Tutorial2|"
@@ -19615,6 +19648,8 @@ msgid ""
 "892, 1000. All of these numbers are even numbers as they leave a remainder "
 "of 0 when divided by 2."
 msgstr ""
+"Například: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, 892, "
+"1000. Všechna tato čísla jsou sudá a pokud je vydělíme 2, dostaneme zbytek 0."
 
 #: activities/numbers-odd-even/resource/Tutorial3.qml:22
 msgctxt "Tutorial3|"
@@ -19623,22 +19658,24 @@ msgid ""
 "897, 1001. All of these numbers are odd numbers as they do not leave a "
 "remainder of 0 when divided by 2."
 msgstr ""
+"Například: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, 897, "
+"1001. Všechna tato čísla jsou lichá a pokud je vydělíme 2, zbytek není 0."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:32
 msgctxt "TutorialBase|"
 msgid "Choose the even number:"
-msgstr ""
+msgstr "Vyber sudá čísla:"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:32
 msgctxt "TutorialBase|"
 msgid "Choose the odd number:"
-msgstr ""
+msgstr "Vyber lichá čísla:"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:57
 #: activities/numbers-odd-even/resource/TutorialBase.qml:87
 msgctxt "TutorialBase|"
 msgid "Great"
-msgstr ""
+msgstr "Skvěle"
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:61
 #: activities/numbers-odd-even/resource/TutorialBase.qml:91
@@ -19648,6 +19685,7 @@ msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 1. Therefore "
 "this is an odd number."
 msgstr ""
+"Chyba: Když je %1 děleno 2, zůstává zbytek 1. Takže toto je liché číslo."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:64
 #: activities/numbers-odd-even/resource/TutorialBase.qml:94
@@ -19657,6 +19695,7 @@ msgid ""
 "There is an error: when divided by 2, %1 leaves a remainder of 0. Therefore "
 "this is an even number."
 msgstr ""
+"Chyba: Když je %1 děleno 2, zůstává zbytek 0. Takže toto je sudé číslo."
 
 #. Activity title
 #: activities/ordering_alphabets/ActivityInfo.qml:21
@@ -23354,43 +23393,44 @@ msgstr "Tabulátor: přepínání mezi výběrem barvy a oblastí pro malování
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Náčrt"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "Kresli si obrázky pomocí rozličných digitálních kreslících nástrojů."
 
 #: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr ""
+msgstr "Nauč se něco o digitálních kreslicích nástrojích."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Ze skládacích panelů si vyber nástroje a barvy a nakresli si obrázky.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr ""
+msgstr "Ctrl + Z: Vrátit zpět poslední činnost"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: Znovu provést poslední činnost."
 
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr ""
+msgstr "Ctrl + S: uložit obrázek"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl+O: Otevřít obrázek"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
