@@ -51,22 +51,10 @@ Item {
     readonly property int buttonMargins: 5 * applicationInfoRatio
 
     /**
-      * type: int
-      * Size of the openBar button, and maximum size for other buttons
-      */
-    readonly property int baseButtonSize: 78 * applicationInfoRatio
-
-    /**
      * type: int
-     * available width for all buttons except openBar
+     * Size of each button. For previous/next/levelText we calculate their size based on it.
      */
-    readonly property int allButtonsWidth: Math.floor(parent.width - openBar.width - buttonMargins)
-
-    /**
-     * type: int
-     * Size of each button (except openBar). For previous/next/levelText we calculate their size based on it.
-     */
-    readonly property int buttonSize: Math.floor(Math.min(baseButtonSize, allButtonsWidth / numberOfButtons - buttonMargins))
+    readonly property int buttonSize: Math.floor(Math.min(78 * applicationInfoRatio, parent.width / (numberOfButtons + 1) - buttonMargins))
 
     /**
      * type:BarEnumContent
@@ -235,7 +223,7 @@ Item {
 
     x: 0
     anchors.bottom: parent.bottom
-    width: parent.width
+    width: openBar.width
     height: openBar.height + buttonMargins * 2 // + offset of barRow bottomMargin
     z: 1000
 
@@ -262,7 +250,7 @@ Item {
         source: "qrc:/gcompris/src/core/resource/bar_open.svg";
         anchors.bottom: parent.bottom
         anchors.left: parent.left
-        width: baseButtonSize
+        width: buttonSize
         height: width
         sourceSize.width: width
         sourceSize.height: height
