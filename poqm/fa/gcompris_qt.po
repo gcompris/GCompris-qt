@@ -18243,7 +18243,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "فرهنگ لغات"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -18252,12 +18252,12 @@ msgstr ""
 "با کلیک بر روی خورشید در گوشه سمت راست فعالیت، فعالیت های مورد علاقه خود را "
 "در اینجا قرار بده."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "جست و جوی فعالیت های به خصوص"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "تنظیمات فعالیت"

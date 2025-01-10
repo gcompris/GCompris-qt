@@ -49,7 +49,7 @@ msgstr "Automatique"
 #: activities/money_cents/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "OK button"
-msgstr "Bouton OK"
+msgstr "Bouton « Ok »"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
 #: activities/enumerate/ActivityConfig.qml:32
@@ -1862,7 +1862,7 @@ msgid ""
 msgstr ""
 "Crée une boucle de source de tension avec les piles fournies. Clique ensuite "
 "sur la case d'avertissement pour la faire disparaître et clique sur le "
-"bouton OK."
+"bouton « Ok »."
 
 #: activities/analog_electricity/TutorialDataset.qml:133
 msgctxt "TutorialDataset|"
@@ -2874,9 +2874,9 @@ msgid ""
 msgstr ""
 "Dans la zone verte, choisis le nombre de boules que tu vas placer en "
 "cliquant sur la boule. Attention, tu ne peux choisir qu'une des valeurs qui "
-"sont proposées. Quand la quantité choisie est affichée, clique sur OK. Tes "
-"boules sont alors déposées dans les trous libres en partant de la gauche. "
-"Immédiatement après c'est Tux qui joue. Tu dois mettre au point une "
+"sont proposées. Quand la quantité choisie est affichée, clique sur « Ok ». "
+"Tes boules sont alors déposées dans les trous libres en partant de la "
+"gauche. Immédiatement après c'est Tux qui joue. Tu dois mettre au point une "
 "stratégie qui te permettra d'éviter de poser la dernière boule (c'est-à-dire "
 "dans le trou marqué en rouge).\n"
 "Si tu veux que ce soit Tux qui joue en premier, clique lui dessus dès le "
@@ -2898,11 +2898,11 @@ msgid ""
 msgstr ""
 "Dans la zone verte, choisis le nombre de boules que tu vas placer en "
 "cliquant sur la boule. Attention, tu ne peux choisir qu'une des valeurs qui "
-"sont proposées. Quand la quantité choisie est affichée, clique sur OK. Tes "
-"boules sont alors déposées dans les trous libres en partant de la gauche. Tu "
-"gagnes si ton ami pose la dernière boule. Tu dois mettre au point une "
-"stratégie qui te permettra d'éviter de poser la dernière boule (c'est-à-dire "
-"dans le trou marqué en rouge)."
+"sont proposées. Quand la quantité choisie est affichée, clique sur « Ok ». "
+"Tes boules sont alors déposées dans les trous libres en partant de la "
+"gauche. Tu gagnes si ton ami pose la dernière boule. Tu dois mettre au point "
+"une stratégie qui te permettra d'éviter de poser la dernière boule (c'est-à-"
+"dire dans le trou marqué en rouge)."
 
 #. Activity title
 #: activities/binary_bulb/ActivityInfo.qml:15
@@ -2940,7 +2940,7 @@ msgid ""
 "When you have achieved it, press OK."
 msgstr ""
 "Allume les bonnes ampoules pour afficher la valeur binaire correspondant au "
-"nombre décimal donné. Appuie sur le bouton OK lorsque tu as terminé."
+"nombre décimal donné. Appuie sur le bouton « Ok » lorsque tu as terminé."
 
 #: activities/binary_bulb/binary_bulb.js:20
 msgctxt "binary_bulb|"
@@ -3354,7 +3354,7 @@ msgid ""
 "validate your answer by clicking on the OK button."
 msgstr ""
 "Sélectionne la date demandée sur le calendrier et confirme ensuite ta "
-"réponse en appuyant sur le bouton OK."
+"réponse en appuyant sur le bouton « Ok »."
 
 #: activities/calendar/ActivityInfo.qml:24
 #: activities/find_the_day/ActivityInfo.qml:24
@@ -4782,7 +4782,7 @@ msgid ""
 msgstr ""
 "Ordonne les images afin d'obtenir une histoire cohérente. Fais glisser les "
 "pièces depuis le présentoir sur les points rouges, puis clique sur le bouton "
-"OK pour valider ta réponse."
+"« Ok » pour valider ta réponse."
 
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5407,8 +5407,8 @@ msgid ""
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
 "Modifie la couleur en bougeant les curseurs sur les lampes ou en cliquant "
-"sur le bouton + et le bouton -. Puis clique sur le bouton OK pour confirmer "
-"ta réponse."
+"sur le bouton + et le bouton -. Puis clique sur le bouton « Ok » pour "
+"confirmer ta réponse."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5528,8 +5528,8 @@ msgid ""
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
 "Modifie la couleur en bougeant les curseurs sur les lampes ou en cliquant "
-"sur le bouton + et le bouton -. Puis clique sur le bouton OK pour confirmer "
-"ta réponse."
+"sur le bouton + et le bouton -. Puis clique sur le bouton « Ok » pour "
+"confirmer ta réponse."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -6914,7 +6914,7 @@ msgid ""
 "button')"
 msgstr ""
 "Entrée : valider ta réponse (si l'option « Valide les réponses » est "
-"assignée au bouton OK"
+"assignée au bouton « Ok »"
 
 #: activities/enumerate/resource/1/Data.qml:13
 #: activities/enumerate/resource/1/Data.qml:29
@@ -15585,8 +15585,8 @@ msgid ""
 "Click on the OK button to check your answer."
 msgstr ""
 "Attrape et fais glisser les images situées dans le présentoir (à gauche) "
-"vers les emplacements qui correspondent à leur nom. Clique le bouton OK pour "
-"vérifier ta réponse."
+"vers les emplacements qui correspondent à leur nom. Clique le bouton « Ok » "
+"pour vérifier ta réponse."
 
 #: activities/imagename/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -16472,7 +16472,7 @@ msgstr ""
 "partie de la barre, puis fais glisser la partie sélectionnée de la barre "
 "vers la zone vide. Répète ces étapes jusqu'à ce que le nombre de barres "
 "déposées corresponde au nombre décimal affiché. Clique ensuite sur le bouton "
-"OK pour valider ta réponse."
+"« Ok » pour valider ta réponse."
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -16494,7 +16494,7 @@ msgstr ""
 "Fais glisser la flèche pour sélectionner une partie de la barre, puis fais "
 "glisser la partie sélectionnée de la barre vers la zone vide. Répète ces "
 "étapes jusqu'à ce que le nombre de barres déposées corresponde au nombre "
-"décimal affiché. Clique ensuite sur le bouton OK pour valider ta réponse."
+"décimal affiché. Clique ensuite sur le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals/learn_decimals.js:44
 msgctxt "learn_decimals|"
@@ -16515,7 +16515,7 @@ msgid ""
 "operation, and click on the OK button to validate your answer."
 msgstr ""
 "Clique sur les carrés pour les soustraire et afficher le résultat de "
-"l'opération. Ensuite, clique sur le bouton OK pour valider ta réponse."
+"l'opération. Ensuite, clique sur le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals/learn_decimals.js:52
 #: activities/learn_decimals/learn_decimals.js:67
@@ -16525,7 +16525,7 @@ msgid ""
 "button to validate your answer."
 msgstr ""
 "Si la réponse est correcte, saisis le résultat correspondant et clique sur "
-"le bouton OK pour valider ta réponse."
+"le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals/learn_decimals.js:59
 msgctxt "learn_decimals|"
@@ -16549,7 +16549,7 @@ msgstr ""
 "Fais glisser la flèche pour sélectionner une partie de la barre, puis fais "
 "glisser la partie sélectionnée de la barre vers la zone vide. Répète ces "
 "étapes jusqu'à ce que le nombre de barres déposées corresponde au résultat "
-"de l'addition. Clique sur le bouton OK pour valider ta réponse."
+"de l'addition. Clique sur le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals/learn_decimals.js:74
 msgctxt "learn_decimals|"
@@ -16569,7 +16569,7 @@ msgstr ""
 "Fais glisser la flèche pour sélectionner un nombre d'oranges, puis fais "
 "glisser les oranges sélectionnées vers la zone vide. Répète ces étapes "
 "jusqu'à ce que le nombre d'oranges corresponde à la quantité demandée. "
-"Clique sur le bouton OK pour valider ta réponse."
+"Clique sur le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals/Learn_decimals.qml:129
 #, qt-format
@@ -16647,7 +16647,7 @@ msgstr ""
 "pour sélectionner une partie de la barre et fais glisser la partie "
 "sélectionnée de la barre vers la zone vide. Répète ces étapes jusqu'à ce que "
 "le nombre de barres déposées corresponde au résultat de l'addition. Enfin, "
-"clique sur le bouton OK pour valider ta réponse."
+"clique sur le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -16657,7 +16657,7 @@ msgid ""
 "button to validate your answer."
 msgstr ""
 "Si la réponse est correcte, saisis le résultat correspondant et clique sur "
-"le bouton OK pour valider ta réponse."
+"le bouton « Ok » pour valider ta réponse."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:26
@@ -16879,8 +16879,8 @@ msgstr ""
 "Une quantité est demandée. Fais glisser la flèche pour sélectionner un "
 "nombre d'oranges, puis fais glisser les oranges sélectionnées vers la zone "
 "vide. Répète ces étapes jusqu'à ce que le nombre d'oranges déposées "
-"corresponde à la quantité demandée. Clique sur le bouton OK pour valider ta "
-"réponse."
+"corresponde à la quantité demandée. Clique sur le bouton « Ok » pour valider "
+"ta réponse."
 
 #: activities/learn_quantities/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -17420,8 +17420,8 @@ msgstr ""
 "Clique sur le chapeau pour le soulever. Des étoiles se glissent dessous mais "
 "quelques unes s'échappent. En tout, combien d'étoiles y a-t-il encore sous "
 "le chapeau ? Compte attentivement. Clique sur les étoiles dans la zone du "
-"bas pour représenter ta réponse. Clique sur le bouton OK une fois que tu as "
-"fini."
+"bas pour représenter ta réponse. Clique sur le bouton « Ok » une fois que tu "
+"as fini."
 
 #: activities/magic-hat-minus/MagicHat.qml:99
 msgctxt "MagicHat|"
@@ -17515,7 +17515,7 @@ msgstr ""
 "Clique sur le chapeau pour le soulever. Des étoiles se glissent dedans. En "
 "tout, combien d'étoiles as-tu vu y entrer ? Compte attentivement. Clique sur "
 "les étoiles dans la zone du bas pour représenter ta réponse et appuie sur le "
-"bouton OK pour valider."
+"bouton « Ok » pour valider."
 
 #: activities/magic-hat-plus/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -19410,7 +19410,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Vocabulaire"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19419,12 +19419,12 @@ msgstr ""
 "Place ici tes activités favorites en cliquant sur le Soleil en haut à droite "
 "de chaque activité."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Chercher des activités spécifiques"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Configuration des activités"
@@ -22998,7 +22998,8 @@ msgstr ""
 "D'abord, compte de combien de glaçons doit se déplacer Tux pour atteindre le "
 "poisson. Ensuite, clique sur le domino pour sélectionner le bon nombre. Tu "
 "peux aussi utiliser le bouton droit de la souris pour compter à l'envers. "
-"Quand tu as terminé, clique sur le bouton OK ou utilise la touche « Entrée »."
+"Quand tu as terminé, clique sur le bouton « Ok » ou utilise la touche "
+"« Entrée »."
 
 #: activities/reversecount/resource/1/Data.qml:13
 #: activities/reversecount/resource/10/Data.qml:13
@@ -23059,7 +23060,7 @@ msgid ""
 "and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Apprends les règles qui permettent de lire les nombres romains et entraîne-"
-"toi à les convertir en nombres arabes. Clique sur le bouton OK pour "
+"toi à les convertir en nombres arabes. Clique sur le bouton « Ok » pour "
 "confirmer ta réponse."
 
 #: activities/roman_numerals/ActivityInfo.qml:26
@@ -26340,14 +26341,14 @@ msgid ""
 "you un-mark them, by double clicking on them again."
 msgstr ""
 "Appuie sur les éléments jusqu'à ce que tu penses avoir trouvé la bonne "
-"réponse. Ensuite, confirme en appuyant sur OK. Dans les niveaux du début, "
-"Tux t'aide en entourant les bons éléments trouvés par un carré noir. Dans "
-"les niveaux 4 et 8 une couleur peut être utilisée pour différents éléments."
-"<br/>Tu peux utiliser le bouton droit de ta souris pour choisir les couleurs "
-"dans le sens opposé ou utiliser le sélecteur de couleur pour choisir "
-"directement une couleur. Reste appuyé sur le bouton de la souris ou sur "
-"l'écran tactile pour automatiquement avoir la dernière couleur utilisée sur "
-"une case."
+"réponse. Ensuite, confirme en appuyant sur « Ok ». Dans les niveaux du "
+"début, Tux t'aide en entourant les bons éléments trouvés par un carré noir. "
+"Dans les niveaux 4 et 8 une couleur peut être utilisée pour différents "
+"éléments.<br/>Tu peux utiliser le bouton droit de ta souris pour choisir les "
+"couleurs dans le sens opposé ou utiliser le sélecteur de couleur pour "
+"choisir directement une couleur. Reste appuyé sur le bouton de la souris ou "
+"sur l'écran tactile pour automatiquement avoir la dernière couleur utilisée "
+"sur une case."
 
 #: activities/superbrain/Superbrain.qml:146
 msgctxt "Superbrain|"

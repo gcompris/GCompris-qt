@@ -19414,7 +19414,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Λεξιλόγιο"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19423,12 +19423,12 @@ msgstr ""
 "Τοποθέτησε τις αγαπημένες σου δραστηριότητες εδώ, επιλέγοντας τον ήλιο που "
 "έχει καθεμιά στην επάνω δεξιά γωνία της εικόνας της."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Αναζήτηση συγκεκριμένων δραστηριοτήτων"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Ρυθμίσεις δραστηριότητας"

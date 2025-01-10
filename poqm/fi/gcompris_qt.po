@@ -19683,7 +19683,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Sanasto"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19692,12 +19692,12 @@ msgstr ""
 "Lisää suosikkitoimintosi tähän valitsemalla toiminnon oikeasta yläkulmasta "
 "aurinko."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Hae tiettyjä toimintoja"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Toiminnon asetukset"

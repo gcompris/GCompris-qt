@@ -20466,7 +20466,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Stór Focal"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -20478,12 +20478,12 @@ msgstr ""
 "Cuir na gníomhaíochtaí is fearr leat anseo. Cliceáil ar an ghrian ag barr na "
 "gníomhaíochta chun seo a dhéanamh."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Cuardaigh gníomhaíochtaí ar leith"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Socruithe Gníomhaíochta"

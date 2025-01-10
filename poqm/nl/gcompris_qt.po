@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-10 12:43+0100\n"
+"PO-Revision-Date: 2024-12-16 11:13+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:21
@@ -5074,11 +5074,6 @@ msgstr "Je kunt de muis verplaatsen en precies op de punten klikken."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5086,7 +5081,9 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Teken de figuur door achter elkaar te klikken op elk stipje. Elke keer dat "
-"er een stipje is gekozen verschijnt de volgende blauwe."
+"er een stipje is gekozen verschijnt de volgende blauwe. Je kunt klikken en "
+"slepen van het ene punt naar het volgende of klik op elk punt het ene na het "
+"andere."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6677,6 +6674,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Teken de letters door de punten in de juiste volgorde te verbinden. Je kunt "
+"klikken en slepen van het ene punt naar het volgende of klik op elk point "
+"het ene na het andere."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6704,6 +6704,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Teken de cijfers door de punten in de juiste volgorde te verbinden. Je kunt "
+"klikken en slepen van het ene punt naar het volgende of klik op elk point "
+"het ene na het andere."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -19169,7 +19172,7 @@ msgctxt "Menu|"
 msgid "Vocabulary"
 msgstr "Woordenschat"
 
-#: activities/menu/Menu.qml:369
+#: activities/menu/Menu.qml:376
 msgctxt "Menu|"
 msgid ""
 "Put your favorite activities here by clicking on the sun at the top right of "
@@ -19178,12 +19181,12 @@ msgstr ""
 "Zet je favoriete activiteiten hier neer door op de zon van de activiteit "
 "rechtsboven te klikken."
 
-#: activities/menu/Menu.qml:791
+#: activities/menu/Menu.qml:792
 msgctxt "Menu|"
 msgid "Search specific activities"
 msgstr "Specifieke activiteiten zoeken"
 
-#: activities/menu/Menu.qml:818
+#: activities/menu/Menu.qml:819
 msgctxt "Menu|"
 msgid "Activity Settings"
 msgstr "Instellingen voor activiteiten"
@@ -20028,19 +20031,15 @@ msgstr "Leer de numerieke volgorde."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Teken de figuur door achter elkaar te klikken op elk stipje. Elke keer dat "
-"er een stipje is gekozen verschijnt de volgende blauwe."
+"Teken de figuur door te klikken op de punten in de numerieke volgorde. Je "
+"kunt klikken en slepen van het ene punt naar het volgende of klik op elk "
+"punt het ene na het andere."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -26611,21 +26610,15 @@ msgstr "Los de aftrekking op,  cijfers, 2 regels, zonder lenen."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Los de aftrekking op, 4 cijfers, 3 regels."
+msgstr "Los de aftrekking op, 4 of 5 cijfers, 3 regels."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 4 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Los de aftrekking op, 4 cijfers, 4 regels."
+msgstr "Los de aftrekking op, 4 of 5 cijfers, 4 regels."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
@@ -26641,66 +26634,45 @@ msgstr "Schrijf en los de aftrekking op, 2 cijfers, 2 regels, zonder lenen."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Los de aftrekking op, 3 cijfers, 2 regels."
+msgstr "Los de aftrekking op, 2 of 3 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Schrijf en los de aftrekking op, 3 cijfers, 2 regels."
+msgstr "Schrijf en los de aftrekking op, 2 of 3 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 2 digits, 3 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Schrijf en los de aftrekking op, 2 cijfers, 3 regels."
+msgstr "Schrijf en los de aftrekking op, 2 of 3 cijfers, 3 regels."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Los de aftrekking op, 3 cijfers, 2 regels."
+msgstr "Los de aftrekking op, 3 of 4 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Write and solve subtraction, 3 digits, 2 lines."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Schrijf en los de aftrekking op, 3 cijfers, 2 regels."
+msgstr "Schrijf en los de aftrekking op, 3 of 4 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 3 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Los de aftrekking op, 4 cijfers, 3 regels."
+msgstr "Los de aftrekking op, 3 of 4 cijfers, 3 regels."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Solve subtraction, 4 digits, 2 lines."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Los de aftrekking op, 4 cijfers, 2 regels."
+msgstr "Los de aftrekking op, 4 of 5 cijfers, 2 regels."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
@@ -26959,12 +26931,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Typ het hele woord terwijl het valt, voor het de grond raakt."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Vertalingen voor Lets toegevoegd."
+msgstr "Vertalingen voor Sanskrit toegevoegd"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -26994,23 +26963,20 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Automatische toepassing van nieuwe taal bij wijziging ervan in het menu "
+"(geen noodzaak om GCompris opnieuw te starten)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Opstartscherm toevoegen bij opstarten"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Nieuwe optie voor de opdrachtregel om een lijst te tonen van alle "
-"activiteiten en een specifieke te starten"
+"Nieuwe optie voor de opdrachtregel om de renderer om te schakelen (--"
+"renderer renderer)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
