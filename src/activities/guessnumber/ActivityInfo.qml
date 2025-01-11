@@ -15,7 +15,8 @@ ActivityInfo {
   title: qsTr("Guess a number")
   //: Help title
   description: qsTr("Help Tux escape the cave by finding the hidden number.")
-//  intro: "Find out the number by typing a number from the range proposed."
+  //  intro: "Find out the number by typing a number from the range proposed."
+  //: Help goal
   goal: qsTr("Practice comparing numbers.")
   //: Help prerequisite
   prerequisite: ""
