@@ -163,6 +163,7 @@ function checkGuess() {
         items.score.currentSubLevel += 1;
         items.score.playWinAnimation();
         items.goodAnswerSound.play();
+        return;
     }
 
     for (var i = 0; i < remainingIndices.length; i++) {
