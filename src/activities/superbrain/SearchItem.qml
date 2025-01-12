@@ -24,11 +24,11 @@ Item {
         visible: items.mode === "symbol"
         fillMode: Image.PreserveAspectFit
         source: Activity.symbols[root.searchItemIndex]
-        anchors.left: parent.left
-        anchors.top: parent.top
-        anchors.margins: 3
-        width: parent.width - 6
-        height: parent.height - 6
+        anchors.centerIn: parent
+        width: parent.width * 0.9
+        height: width
+        sourceSize.width: width
+        sourceSize.height: height
     }
     Rectangle {
         id: symbolHighlighter
@@ -48,6 +48,6 @@ Item {
         anchors.fill: parent
         width: parent.width
         height: parent.height
-        radius: width / 2
+        radius: width * 0.5
     }
 }
