@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-01-01 07:09+0200\n"
+"PO-Revision-Date: 2025-01-11 15:25+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -350,7 +350,7 @@ msgstr "עליך למצוא את הפרפר בצבע אלמוג (קורל)"
 #: activities/advanced_colors/advanced_colors.js:849
 msgctxt "advanced_colors|"
 msgid "Find the claret butterfly"
-msgstr "עליך למצוא את הפרפר בצבע קלרט"
+msgstr "עליך למצוא את הפרפר בצבע בורדו"
 
 #. Color #000080
 #: activities/advanced_colors/advanced_colors.js:25
@@ -419,13 +419,13 @@ msgstr "עליך למצוא את הפרפר בצבע אודם"
 #: activities/advanced_colors/advanced_colors.js:824
 msgctxt "advanced_colors|"
 msgid "Find the sienna butterfly"
-msgstr "עליך למצוא את הפרפר בצבע סִייְנה"
+msgstr "עליך למצוא את הפרפר בצבע חום-אדמדם"
 
 #. Color #BCB88A
 #: activities/advanced_colors/advanced_colors.js:104
 msgctxt "advanced_colors|"
 msgid "Find the sage butterfly"
-msgstr "עליך למצוא את הפרפר בצבע מרווה רפואית"
+msgstr "עליך למצוא את הפרפר בצבע ירוק מרווה"
 
 #. Color #FF8C69
 #: activities/advanced_colors/advanced_colors.js:109
@@ -433,7 +433,7 @@ msgstr "עליך למצוא את הפרפר בצבע מרווה רפואית"
 #: activities/advanced_colors/advanced_colors.js:703
 msgctxt "advanced_colors|"
 msgid "Find the salmon butterfly"
-msgstr "מיצאי את הפרפר בצבע סלומון (אִלְתִּית)"
+msgstr "מיצאי את הפרפר בצבע ורוד סלמון (אִלְתִּית)"
 
 #. Color #704214
 #: activities/advanced_colors/advanced_colors.js:114
@@ -441,7 +441,7 @@ msgstr "מיצאי את הפרפר בצבע סלומון (אִלְתִּית)"
 #: activities/advanced_colors/advanced_colors.js:787
 msgctxt "advanced_colors|"
 msgid "Find the sepia butterfly"
-msgstr "עליך למצוא את הפרפר בצבע ספיה"
+msgstr "עליך למצוא את הפרפר בצבע אפור-חומחומי"
 
 #. Color #E4BB25
 #: activities/advanced_colors/advanced_colors.js:119
@@ -472,7 +472,7 @@ msgstr "עליך למצוא את הפרפר בצבע טורקיז"
 #: activities/advanced_colors/advanced_colors.js:141
 msgctxt "advanced_colors|"
 msgid "Find the absinthe butterfly"
-msgstr "מיצאי את הפרפר בצבע אבסינט'"
+msgstr "מיצאי את הפרפר בצבע אבסינת"
 
 #. Color #C04000
 #: activities/advanced_colors/advanced_colors.js:146
@@ -499,7 +499,7 @@ msgstr "עליך למצוא את הפרפר בצבע בהט (alabaster)"
 #: activities/advanced_colors/advanced_colors.js:708
 msgctxt "advanced_colors|"
 msgid "Find the amber butterfly"
-msgstr "עליך למצוא את הפרפר בצבע עינבר"
+msgstr "עליך למצוא את הפרפר בצבע ענבר"
 
 #. Color #9966CC
 #: activities/advanced_colors/advanced_colors.js:166
@@ -1609,8 +1609,8 @@ msgid ""
 "supplied voltage. It will be broken if there is a power greater than a "
 "certain limit."
 msgstr ""
-"נורה דולקת כאשר יש מספיק כח. העוצמה שלה יחסית לזרם שמסופק לה. היא תישבר אם "
-"הזרם עובר גבול מסויים."
+"נורה דולקת כאשר יש מספיק כוח. העוצמה שלה יחסית לזרם שמסופק לה. היא תיהרס אם "
+"הזרם עובר גבול מסוים."
 
 #. 1st V for Voltage, 2nd V for Volt
 #: activities/analog_electricity/components/Bulb.qml:21
@@ -1640,7 +1640,7 @@ msgid ""
 "than a certain limit can break it."
 msgstr ""
 "נורת לד אדומה ממירה אנרגיה חשמלית לאנרגיית אור אדום. אנרגיה חשמלית מעל גבול "
-"מסויים עלולה לקלקל אותה."
+"מסוים עלולה לקלקל אותה."
 
 #: activities/analog_electricity/components/Resistor.qml:19
 msgctxt "Resistor|"
@@ -1722,7 +1722,7 @@ msgstr "מחבר פשוט"
 #: activities/analog_electricity/TutorialDataset.qml:64
 msgctxt "TutorialDataset|"
 msgid "Rheostat"
-msgstr "נגד-מישתנה"
+msgstr "נגד משתנה"
 
 #: activities/analog_electricity/TutorialDataset.qml:73
 msgctxt "TutorialDataset|"
@@ -1979,7 +1979,7 @@ msgctxt "TutorialDataset|"
 msgid ""
 " A red LED converts electrical energy into red light energy under particular "
 "conditions."
-msgstr " נורת לֶד אדומה ממירה אנרגיה חשמלית לאור אדום בתנאים מסויימים."
+msgstr " נורת לֶד אדומה ממירה אנרגיה חשמלית לאור אדום בתנאים מסוימים."
 
 #: activities/analog_electricity/TutorialDataset.qml:252
 msgctxt "TutorialDataset|"
@@ -2000,7 +2000,7 @@ msgid ""
 "activity, you can click on the broken red LED after disconnecting from the "
 "circuit to repair it."
 msgstr ""
-"אנרגיה חשמלית בעוצמה חזקה מגבול מסויים יכולה לקלקל לד. בפעילות זו אפשר להקיש "
+"אנרגיה חשמלית בעוצמה חזקה מגבול מסוים יכולה להרוס לד. בפעילות זו אפשר להקיש "
 "על נורת הלד המקולקלת, אחרי ניתוק שלה מהמעגל, כדי לתקן אותה."
 
 #: activities/analog_electricity/TutorialDataset.qml:254
@@ -2348,7 +2348,7 @@ msgstr "להשלים את הפאזל באמצעות גרירה של כל חתי�
 #: activities/babyshapes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "The dog is provided by Andre Connes and released under the GPL"
-msgstr "הכלב של אנדרה קונס ומופץ תחת רשיון GPL"
+msgstr "הכלב סופק על ידי אנדרה קונס וכפוף לרשיון GPL"
 
 #: activities/babyshapes/resource/board/board1_0.qml:14
 msgctxt "board1_0|"
@@ -3178,8 +3178,8 @@ msgid ""
 "In some levels, you need to find the day of the week for a given date. In "
 "this case, click on the corresponding day of the week in the list."
 msgstr ""
-"בשלבים מסויימים צריך למצוא את היום בשבוע לתאריך נתון. במקרה כזה ללחוץ על "
-"היום המתאים בשבוע מהרשימה הזו."
+"בשלבים מסוימים צריך למצוא את היום בשבוע לתאריך נתון. במקרה כזה ללחוץ על היום "
+"המתאים בשבוע מהרשימה הזו."
 
 #: activities/calendar/ActivityInfo.qml:26
 #: activities/find_the_day/ActivityInfo.qml:26
@@ -4648,7 +4648,7 @@ msgstr "1783 בלון האוויר החם של האחים מונטגולפייה
 #: activities/chronos/resource/board/board5_1.qml:47
 msgctxt "board5_1|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האיל של קלמנט אדר"
+msgstr "1890 האֵוֹל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_1.qml:55
 msgctxt "board5_1|"
@@ -4668,7 +4668,7 @@ msgstr "1769 הפרדייה של קוניו"
 #: activities/chronos/resource/board/board5_2.qml:40
 msgctxt "board5_2|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האיל של קלמנט אדר"
+msgstr "1890 האֵוֹל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_3.qml:15
 msgctxt "board5_3|"
@@ -4698,7 +4698,7 @@ msgstr "1829 קטר הקיטור ‚רוקט’ של סטיבנסון"
 #: activities/chronos/resource/board/board5_4.qml:47
 msgctxt "board5_4|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האיל של קלמנט אדר"
+msgstr "1890 האֵוֹל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board5_4.qml:55
 msgctxt "board5_4|"
@@ -4713,7 +4713,7 @@ msgstr "תעופה"
 #: activities/chronos/resource/board/board6_0.qml:40
 msgctxt "board6_0|"
 msgid "1890 Clement Ader's Eole"
-msgstr "1890 האיל של קלמנט אדר"
+msgstr "1890 האֵוֹל של קלמנט אדר"
 
 #: activities/chronos/resource/board/board6_0.qml:48
 msgctxt "board6_0|"
@@ -5141,7 +5141,7 @@ msgstr ""
 "צבע ודיו בולעים צבעים שונים מתוך האור שפוגע בהם ומפחיתים אותם ממה שרואים. "
 "ככל שמוסיפים יותר דיו, הוא בולע יותר אור והצבע שנוצר נעשה כהה יותר. נוכל "
 "לערבב שלושה צבעי בסיס בלבד כדי ליצור צבעים חדשים רבים. צבעי הבסיס לדיו הם "
-"ציאן (גוון מסויים של כחול), מג'נטה (גוון מסויים של ורוד), וצהוב."
+"ציאן (גוון מסוים של כחול), מג׳נטה (גוון מסוים של ורוד), וצהוב."
 
 #: activities/color_mix/ColorMix.qml:93
 msgctxt "ColorMix|"
@@ -5830,7 +5830,7 @@ msgid ""
 "You can read information about the selected component using the info button "
 "(i icon) from the tool menu."
 msgstr ""
-"אפשר לקרוא מידע אודות הרכיב הנבחר באמצעות תפריט המידע (סמל הi) מתפריט הכלים."
+"אפשר לקרוא מידע על הרכיב הנבחר באמצעות תפריט המידע (סמל ה־i) מתפריט הכלים."
 
 #: activities/digital_electricity/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
@@ -5838,8 +5838,8 @@ msgid ""
 "You can zoom in or out the working area using the + and - keys, using the "
 "zoom buttons from the tool menu, or using pinch gestures on a touchscreen."
 msgstr ""
-"אפשר להתמקד פנימה והחוצה על אזור העבודה באמצעות מקשי ה+ וה- או באמצעות "
-"כפתורי המיקוד מתפריט הכלים או באמצעות צביטה במסך מגע."
+"אפשר להתמקד פנימה והחוצה על אזור העבודה באמצעות מקשי + ו־- או באמצעות כפתורי "
+"המיקוד מתפריט הכלים או בצביטה במסך מגע."
 
 #: activities/digital_electricity/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -6008,7 +6008,7 @@ msgstr ""
 #, qt-format
 msgctxt "SignalGenerator|"
 msgid "%1 s"
-msgstr "%1 ש'"
+msgstr "%1 שנ׳"
 
 #: activities/digital_electricity/components/Switch.qml:21
 msgctxt "Switch|"
@@ -6931,6 +6931,7 @@ msgid "Dog"
 msgstr "כלב"
 
 #: activities/explore_farm_animals/resource/board/board1.qml:106
+#, fuzzy
 msgctxt "board1|"
 msgid ""
 "The dog goes 'woof'. Dogs are probably the oldest domesticated species. They "
@@ -7882,7 +7883,7 @@ msgstr ""
 "הר רשמור ניצב כמקדש לדמוקרטיה, אנדרטה ואתר הנצחה לג'ורג' וושינגטון, לידתה של "
 "האומה, צמיחתה והעקרונות שלה. הר רשמור מסמל את גדולתה של האומה דרך גדולתם של "
 "מנהיגיה. הפסל העצום של הר רשמור מציג את פניהם של ארבעה נשיאים אמריקאים "
-"יוצאים מהכלל המייצגים את ההיסטוריה העשירה של האומה האמריקאית, ההחלטה הנחושה "
+"יוצאים מהכלל המייצגים את ההיסטוריה העשירה של האומה האמריקאית, נחישותה האיתנה "
 "וההישגים שלה."
 
 #: activities/explore_monuments/resource/board/board5.qml:95
@@ -8033,7 +8034,7 @@ msgstr ""
 "8 קילומטרים דרומית לסָקארה במצרים עומדות הפירמידות המסתוריות ודמויות המגדל של "
 "מידום שכיום דומות באופן מרוחק בלבד לפירמידות. הפירמידות נבנו ככל הנראה בזמן "
 "שליטתה של שושלת הפרעונים הרביעית סנֵפֵרוּ למרות שיש שמאמינים שהפירמידה נוסדה על "
-"ידי יורשו של סנֵפֵרוּ- חוּני. בשלב מסויים בזמן הבניה מדרגות הפרמידה מולאו באבן "
+"ידי יורשו של סנֵפֵרוּ- חוּני. בשלב מסוים בזמן הבניה מדרגות הפרמידה מולאו באבן "
 "גיר המכילות סימונים לנסיונות בניה של פירמידה אמיתית על ידי המצרים הקדמונים."
 
 #: activities/explore_monuments/resource/board/board6.qml:50
@@ -8472,7 +8473,7 @@ msgid ""
 "played to call worshipers to prayer. The lute is an instrument invented "
 "thousands of years ago and still in use today."
 msgstr ""
-"המוזיקה היא חלק חשוב מהתרבות במזרח התיכון. שירים מסויימים מושמעים כדי לקרוא "
+"המוזיקה היא חלק חשוב מהתרבות במזרח התיכון. שירים מסוימים מושמעים כדי לקרוא "
 "למתפללים לתפילה. הלאוּטָה היא כלי שהומצא לפני אלפי שנים ועדיין נמצא בשימוש "
 "היום."
 
@@ -19369,7 +19370,7 @@ msgid ""
 "If you are left with 3 pieces, they gain the ability to 'fly' and can be "
 "moved to any vacant spot on the board."
 msgstr ""
-"אם נותרת עם 3 כלים, הכלים שלכה יקבלו את היכולת 'לעוף' ואפשר להזיז אותם לכל "
+"אם נותרת עם 3 כלים, הכלים שלך יקבלו את היכולת ‚לרחף’ ואפשר להזיז אותם לכל "
 "נקודה ריקה על הלוח."
 
 #: activities/nine_men_morris/nine_men_morris.js:45
@@ -21853,7 +21854,7 @@ msgstr "זהה את המילה"
 #: activities/readingh/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read a list of words and say if a given word is in it."
-msgstr "לקרוא רשימת מילים ולהגיד אם מילה מסויימת נמצאת בה."
+msgstr "לקרוא רשימת מילים ולהגיד אם מילה מסוימת נמצאת בה."
 
 #. Help goal
 #: activities/readingh/ActivityInfo.qml:20
@@ -21902,7 +21903,7 @@ msgstr "אימון קריאה אנכית"
 #: activities/readingv/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Read a vertical list of words and say if a given word is in it."
-msgstr "לקרוא רשימה אנכית של מילים ולהגיד אם מילה מסויימת מופיעה בה."
+msgstr "לקרוא רשימה אנכית של מילים ולהגיד אם מילה מסוימת מופיעה בה."
 
 #. Help manual
 #: activities/readingv/ActivityInfo.qml:24
@@ -22613,7 +22614,7 @@ msgstr "לאזן עד 5 גרם."
 #, qt-format
 msgctxt "Data|"
 msgid "%1 g"
-msgstr "%1 ג'"
+msgstr "%1 ג׳"
 
 #: activities/scalesboard_weight/resource/1/Data.qml:26
 msgctxt "Data|"
@@ -22682,7 +22683,7 @@ msgstr "לאזן עד 10 קילוגרם."
 #, qt-format
 msgctxt "Data|"
 msgid "%1 kg"
-msgstr "%1 ק\"ג"
+msgstr "%1 ק״ג"
 
 #: activities/scalesboard_weight/resource/4/Data.qml:30
 msgctxt "Data|"
@@ -25825,22 +25826,23 @@ msgstr ""
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "לפתור חיבור, 4 ספרות, 3 שורות."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "לפתור חיבור, 4 ספרות, 4 שורות."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "לכתוב תרגיל חיבור משלך ולפתור אותו."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
+#, fuzzy
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "לכתוב לפתור חיבור, 2 ספרות, 2 שורות, בלי ."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"

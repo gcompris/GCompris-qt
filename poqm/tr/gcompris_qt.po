@@ -1,12 +1,12 @@
 # Ozge <ozgebarbaros@gmail.com>.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 # Volkan Gezer <volkangezer@gmail.com>, 2017, 2021.
 # Filiz Alver <filizalvr@gmail.com>, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-19 20:43+0300\n"
+"PO-Revision-Date: 2025-01-11 17:21+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -5661,7 +5661,7 @@ msgid ""
 "happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;"
 "shape;shirt;study"
 msgstr ""
-"mutlu;çocuk;beyaz;elma;kahverengi;gerçek;taze;yeşil;at;otel;ev;kağıt;şekil;"
+"mutlu;çocuk;beyaz;elma;kahverengi;gerçek;taze;yeşil;at;otel;ev;kâğıt;şekil;"
 "gömlek;çalışma"
 
 #: activities/crane/resource/1/Data.qml:13
@@ -5771,7 +5771,7 @@ msgstr "Chenonceau Şatosu Manzarası, Indre–et–Loire, Fransa."
 #: activities/details/resource/board/board17_0.qml:14
 msgctxt "board17_0|"
 msgid "Windmill in Sønderho, Fanø, Denmark"
-msgstr "Sønderho Rüzgar Gülü, Fanø, Denmark"
+msgstr "Sønderho Yel Değirmeni, Fanø, Denmark"
 
 #: activities/details/resource/board/board18_0.qml:14
 msgctxt "board18_0|"
@@ -19222,8 +19222,8 @@ msgid ""
 "pay. If you want to remove a coin or a note, click or tap on it on the upper "
 "screen area."
 msgstr ""
-"Ödemek için ekranın alt bölümündeki madeni veya kağıt paraya tıkla veya "
-"ekrana dokun. Madeni parayı veya kağıt parayı kaldırmak için üstüne tıkla "
+"Ödemek için ekranın alt bölümündeki madeni veya kâğıt paraya tıkla veya "
+"ekrana dokun. Madeni parayı veya kâğıt parayı kaldırmak için üstüne tıkla "
 "veya dokun."
 
 #: activities/money/ActivityInfo.qml:26
@@ -19248,8 +19248,8 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Ödemek için ekranın altındaki bozuk veya kağıt paralara tıkla. Bir bozuk "
-"para veya banknot (kağıt para) çıkarmak istiyorsan ekranın üst kısmında "
+"Ödemek için ekranın altındaki bozuk veya kâğıt paralara tıkla. Bir bozuk "
+"para veya banknot (kâğıt para) çıkarmak istiyorsan ekranın üst kısmında "
 "paranın üzerine tıkla."
 
 #: activities/money/money.js:173
@@ -19344,8 +19344,8 @@ msgid ""
 "Click on the coins or on the notes at the bottom of the screen to pay. If "
 "you want to remove a coin or a note, click on it on the upper screen area."
 msgstr ""
-"Ödemek için ekranın alt bölümündeki bozuk veya kağıt paraya tıkla. Bozuk "
-"veya kağıt parayı kaldırmak için üstüne tıkla."
+"Ödemek için ekranın alt bölümündeki bozuk veya kâğıt paraya tıkla. Bozuk "
+"veya kâğıt parayı kaldırmak için üstüne tıkla."
 
 #. Activity title
 #: activities/morse_code/ActivityInfo.qml:18
@@ -22343,7 +22343,7 @@ msgid ""
 "To win you must switch on all the consumers while all the producers are up."
 msgstr ""
 "Tüm elektrik sistemini yeniden etkinleştirmek için farklı etkin ögelere "
-"tıkla: Güneş, bulut, baraj, güneş dizilimi, rüzgar çiftliği ve "
+"tıkla: Güneş, bulut, baraj, güneş dizilimi, rüzgâr çiftliği ve "
 "transformatörler. Sistem yeniden açıldığında ve Tux evindeyken, onun için "
 "ışığı aç. Kazanmak için tüm üreticiler çalışırken, tüm tüketicileri de "
 "devreye sokmalısın."
@@ -22364,7 +22364,7 @@ msgid ""
 "and transformers, in order to reactivate the entire electrical system."
 msgstr ""
 "Tüm elektrik sistemini yeniden etkinleştirmek için güneş, bulut, baraj, "
-"güneş panelleri, rüzgar çiftliği ve transformatörler gibi farklı etkin "
+"güneş panelleri, rüzgâr çiftliği ve transformatörler gibi farklı etkin "
 "elementlere tıkla."
 
 #: activities/renewable_energy/RenewableEnergy.qml:314
