@@ -26,14 +26,14 @@ Item {
 
     property bool lastPartition: false
 
-    readonly property int yShift: activity.horizontalLayout ? 0 : 1.5
+    readonly property int yShift: background.horizontalLayout ? 0 : 1.5
 
     Repeater {
         id: staffLines
         model: nbLines
         Rectangle {
             width: staff.width
-            height: activity.horizontalLayout ? 5 : 3
+            height: background.horizontalLayout ? 5 : 3
             border.width: height / 2
             color: "black"
             y: index * verticalDistanceBetweenLines + yShift
@@ -43,7 +43,7 @@ Item {
     // Ending vertical line of the staff.
     Rectangle {
         id: staffEndLine
-        width: activity.horizontalLayout ? 5 : 3
+        width: background.horizontalLayout ? 5 : 3
         border.width: width / 2
         height: (nbLines - 1) * verticalDistanceBetweenLines + width
         color: "black"
@@ -54,7 +54,7 @@ Item {
     // The 2nd vertical line denoting the end of multiple staves
     Rectangle {
         id: multiStaffEndLine
-        width: activity.horizontalLayout ? 5 : 3
+        width: background.horizontalLayout ? 5 : 3
         border.width: width / 2
         height: (nbLines - 1) * verticalDistanceBetweenLines + width
         visible: lastPartition
