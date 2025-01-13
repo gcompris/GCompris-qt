@@ -55,7 +55,7 @@ Item {
             anchors.margins: items.baseMargins
             clip: true
 
-            function ensureVisible(r) {
+            function ensureVisible(r: var) {
                 if(contentX >= r.x) {
                     contentX = r.x;
                 } else if (contentX+width <= r.x+r.width) {
