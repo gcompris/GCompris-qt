@@ -109,8 +109,8 @@ ActivityBase {
 
         Rectangle {
             id: tooltipRect
-            width: tooltipText.paintedWidth + 10 * ApplicationInfo.ratio
-            height: tooltipText.paintedHeight + background.baseMargins
+            width: tooltipText.contentWidth + 10 * ApplicationInfo.ratio
+            height: tooltipText.contentHeight + background.baseMargins
             radius: 4
             x: 0
             y: 0

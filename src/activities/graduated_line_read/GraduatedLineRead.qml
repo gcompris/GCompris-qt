@@ -233,7 +233,7 @@ ActivityBase {
         Rectangle {
             anchors.centerIn: leftLimit
             width: background.baseMargins
-            height: leftLimit.paintedHeight
+            height: leftLimit.contentHeight
             color: "#e9e9e9"
         }
 
@@ -251,7 +251,7 @@ ActivityBase {
         Rectangle {
             anchors.centerIn: rightLimit
             width: background.baseMargins
-            height: rightLimit.paintedHeight
+            height: rightLimit.contentHeight
             color: "#e9e9e9"
         }
 

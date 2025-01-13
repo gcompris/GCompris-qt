@@ -131,8 +131,8 @@ ActivityBase {
         Rectangle {
             color: "#80FFFFFF"
             anchors.centerIn: caption
-            width: caption.paintedWidth + items.baseMargins * 2
-            height: caption.paintedHeight + items.baseMargins
+            width: caption.contentWidth + items.baseMargins * 2
+            height: caption.contentHeight + items.baseMargins
             radius: items.baseRadius
         }
 

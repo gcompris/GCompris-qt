@@ -116,8 +116,8 @@ ActivityBase {
 
         Rectangle {
             id: captionBg
-            width: caption.paintedWidth + background.baseMargins * 2
-            height: caption.paintedHeight + background.baseMargins
+            width: caption.contentWidth + background.baseMargins * 2
+            height: caption.contentHeight + background.baseMargins
             color: "#80FFFFFF"
             radius: background.baseRadius
             anchors.horizontalCenter: parent.horizontalCenter

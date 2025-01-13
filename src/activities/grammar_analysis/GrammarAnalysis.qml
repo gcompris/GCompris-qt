@@ -178,8 +178,8 @@ ActivityBase {
                 spacing: background.baseMargins
                 Rectangle {
                     id: objectiveContainer
-                    width: objective.paintedWidth + background.baseMargins * 2
-                    height: objective.paintedHeight + background.baseMargins
+                    width: objective.contentWidth + background.baseMargins * 2
+                    height: objective.contentHeight + background.baseMargins
                     color: "#80FFFFFF"
                     radius: background.baseRadius
                     anchors.horizontalCenter: parent.horizontalCenter

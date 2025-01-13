@@ -96,8 +96,8 @@ Rectangle {
         }
     }
 
-    width: warning.paintedWidth + 10 * ApplicationInfo.ratio
-    height: warning.paintedHeight + 10 * ApplicationInfo.ratio
+    width: warning.contentWidth + 10 * ApplicationInfo.ratio
+    height: warning.contentHeight + 10 * ApplicationInfo.ratio
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
     z: 3
