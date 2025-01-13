@@ -18,35 +18,35 @@ var levelProperties = [
                 "backgroundImage": 1
             },
             {
-                "timerInc": 350,
+                "timerInc": 800,
                 "backgroundImage": 1
             },
             {
-                "timerInc": 300,
+                "timerInc": 700,
                 "backgroundImage": 2
+            },
+            {
+                "timerInc": 600,
+                "backgroundImage": 2
+            },
+            {
+                "timerInc": 500,
+                "backgroundImage": 3
+            },
+            {
+                "timerInc": 400,
+                "backgroundImage": 3
+            },
+            {
+                "timerInc": 300,
+                "backgroundImage": 4
             },
             {
                 "timerInc": 200,
-                "backgroundImage": 2
-            },
-            {
-                "timerInc": 150,
-                "backgroundImage": 3
+                "backgroundImage": 4
             },
             {
                 "timerInc": 100,
-                "backgroundImage": 3
-            },
-            {
-                "timerInc": 60,
-                "backgroundImage": 4
-            },
-            {
-                "timerInc": 30,
-                "backgroundImage": 4
-            },
-            {
-                "timerInc": 15,
                 "backgroundImage": 4
             },
         ]

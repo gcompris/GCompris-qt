@@ -13,11 +13,8 @@ import "../../core"
 
 Image {
     id: ball
-
-    property bool isVertical: background.width <= background.height    // To check if in Vertical mode
-
     source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
-    sourceSize.height: background.isVertical ? 175 * Application.ratio : 200 * ApplicationInfo.ratio
+    sourceSize.height: 100 * ApplicationInfo.ratio
     z: 3
 
     readonly property real initScale: 1.0
@@ -25,8 +22,8 @@ Image {
     // If won, ball goes on tux, if lose, depends on the side clicked first
     property int finishX
 
-    readonly property int finishY: tux.y + tux.height / 4
-    readonly property real finishScale: initScale / 2
+    readonly property int finishY: tux.y + tux.paintedHeight - height
+    readonly property real finishScale: 0.5
     property int radius: initScale
     property bool levelChange: false    //needed in case of changing level while animation is running
 
@@ -85,10 +82,10 @@ Image {
             finishX = x;
         }
         else if(Activity.items.leftPressed) {
-            finishX = tux.x + tux.width * 2;
+            finishX = tux.x + tux.paintedWidth;
         }
         else {
-            finishX = tux.x - tux.width * 2;
+            finishX = tux.x - tux.paintedWidth;
         }
         /* Only start the timer if the game is at init state.
            In init state, radius is initScale */
@@ -97,8 +94,8 @@ Image {
     }
 
     function reinitBall() {
-        x = background.width / 2 - width / 2;
-        y = leftHand.y - height / 3;
+        x = background.width * 0.5 - width * 0.5;
+        y = leftHand.y + leftHand.height * 0.5 - height * 0.5;
         ball.scale = initScale;
         ball.rotation = 0;
         levelChange = false;
