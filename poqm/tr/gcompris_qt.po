@@ -25735,12 +25735,12 @@ msgstr ""
 "işaretlenmiş ögeler, sen işaretlerini kaldırana kadar geçerli ve gelecekteki "
 "tahminlerinde otomatik olarak seçilir ve yeniden çift tıklanır."
 
-#: activities/superbrain/Superbrain.qml:146
+#: activities/superbrain/Superbrain.qml:151
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Bu öge iyi yerleştirilmiş."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:153
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Bu öge yanlış yerleştirilmiş."
