@@ -158,8 +158,8 @@ ActivityBase {
                 bottom: bar.top
                 margins: 10
             }
-            contentWidth: edit.paintedWidth
-            contentHeight: edit.paintedHeight
+            contentWidth: edit.contentWidth
+            contentHeight: edit.contentHeight
             clip: true
             flickableDirection: Flickable.VerticalFlick
             maximumFlickVelocity: activity.height

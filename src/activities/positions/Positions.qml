@@ -259,8 +259,8 @@ ActivityBase {
             Rectangle {
                 id: questionArea
                 anchors.centerIn: questionItem
-                width: questionItem.paintedWidth * 1.1
-                height: questionItem.paintedHeight * 1.1
+                width: questionItem.contentWidth * 1.1
+                height: questionItem.contentHeight * 1.1
                 radius: 10
                 color: "#373737"
                 border.width: 2

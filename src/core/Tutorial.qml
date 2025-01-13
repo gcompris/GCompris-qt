@@ -122,8 +122,8 @@ Item {
         anchors.top: parent.top
         anchors.topMargin: 10 * tutorialSection.applicationInfoRatio
         anchors.horizontalCenter: parent.horizontalCenter
-        width: tutorialText.paintedWidth + 20 * tutorialSection.applicationInfoRatio
-        height: tutorialText.paintedHeight + 10 * tutorialSection.applicationInfoRatio
+        width: tutorialText.contentWidth + 20 * tutorialSection.applicationInfoRatio
+        height: tutorialText.contentHeight + 10 * tutorialSection.applicationInfoRatio
         opacity: 0.8
         radius: 10
         border.width: 6

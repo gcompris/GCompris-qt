@@ -206,8 +206,8 @@ ActivityBase {
 
             Rectangle {
                 anchors.centerIn: toolTipText
-                width: toolTipText.paintedWidth + 10 * ApplicationInfo.ratio
-                height: toolTipText.paintedHeight
+                width: toolTipText.contentWidth + 10 * ApplicationInfo.ratio
+                height: toolTipText.contentHeight
                 radius: 5 * ApplicationInfo.ratio
                 color:"#AAFFFFFF"
             }
