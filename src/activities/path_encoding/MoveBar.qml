@@ -38,8 +38,8 @@ Rectangle {
                 // orange, gray, blue
                 color: (active) ? "#E99E33" : (faded) ? "#B4B4B4" : "#1DB2E3"
                 border.color: "#F2F2F2"
-                border.width: (active) ? 8 : 4
-                radius: width / 2
+                border.width: (active ? 4 : 2) * ApplicationInfo.ratio
+                radius: width * 0.5
 
                 Image {
                     source: "qrc:/gcompris/src/activities/path_encoding/resource/arrow.svg"
