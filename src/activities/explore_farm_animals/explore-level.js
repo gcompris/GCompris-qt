@@ -49,7 +49,6 @@ function initLevel() {
     items.progressbar.currentSubLevel = 1
     items.progressbar.currentSubLevel = 0
     items.descriptionPanel.visible = false
-    items.instruction.visible = true
     items.buttonsBlocked = false
 
     reload();

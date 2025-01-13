@@ -87,7 +87,6 @@ ActivityBase {
             property alias errorRectangle: errorRectangle
             property alias dataModel: dataModel
             property alias dataset: dataset
-            property alias instruction: instruction
             property alias descriptionPanel: descriptionPanel
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property var questionOrder
@@ -140,6 +139,90 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
         }
 
+        Rectangle {
+            id: instruction
+            width: instructionText.contentWidth + 20 * ApplicationInfo.ratio
+            height: instructionText.contentHeight + 10 * ApplicationInfo.ratio
+            anchors.centerIn: instructionText
+            color: "#E8E8E8"
+            radius: 5 * ApplicationInfo.ratio
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "#87A6DD"
+        }
+
+        GCText {
+            id: instructionText
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.right: score.left
+            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.topMargin: 20 * ApplicationInfo.ratio
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            height: bar.height * 0.55 - 20 * ApplicationInfo.ratio
+            wrapMode: Text.Wrap
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
+            color: "#2a2a2a"
+            visible: instruction.visible
+            text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels  && items.score.currentSubLevel != 0) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
+        }
+
+        Rectangle {
+            id: question
+            anchors.centerIn: questionText
+            width: questionText.contentWidth + 20 * ApplicationInfo.ratio
+            height: questionText.contentHeight
+            color: "#FFF"
+            radius: instruction.radius
+            border.width: 0
+            visible: items.score.currentSubLevel == 3 || (items.score.currentSubLevel == 2 && !items.hasAudioQuestions)
+        }
+
+        GCText {
+            id: questionText
+            anchors.top: instruction.bottom
+            anchors.left: parent.left
+            anchors.right: score.left
+            anchors.margins: instructionText.anchors.margins
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            width: instructionText.width
+            height: instructionText.height
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
+            color: "#2a2a2a"
+            wrapMode: Text.Wrap
+            text: items.currentQuestion ? items.currentQuestion.text2 : ""
+            visible: question.visible
+        }
+
+        Score {
+            id: score
+            z: 1
+            isScoreCounter: false
+            anchors {
+                bottom: undefined
+                right: parent.right
+                top: parent.top
+            }
+        }
+
+        BarButton {
+            id: repeatItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            width: Math.min(70 * ApplicationInfo.ratio, score.width)
+            anchors.top: score.bottom
+            anchors.right: parent.right
+            anchors.margins: 10 * ApplicationInfo.ratio
+            visible: items.score.currentSubLevel == 2 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
+            onClicked: {
+                if(!items.audioVoices.isPlaying()) {
+                    Activity.repeat();
+                }
+            }
+        }
+
         Repeater {
             id: dataModel
             model: dataset && dataset.item && dataset.item.tab ? dataset.item.tab.length : 0
@@ -176,33 +259,23 @@ ActivityBase {
             z: instruction.z + 1
         }
 
-        Column {
-            id: progress
+        Score {
+            id: progressbar
             visible: items.score.currentSubLevel != 1
             anchors.bottom: bar.top
             anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottomMargin: progressbar.height
-            Score {
-                id: progressbar
-                anchors {
-                    top: undefined
-                    bottom: undefined
-                    left: undefined
-                    right: undefined
-                }
-                onStop: Activity.nextSubSubLevel();
-            }
+            anchors.margins: 10 * ApplicationInfo.ratio
+            onStop: Activity.nextSubSubLevel();
         }
 
         Image {
             id: okButton
             visible: false
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: questionText.height * 2
+            sourceSize.width: 70 * ApplicationInfo.ratio
             fillMode: Image.PreserveAspectFit
-            anchors.right: progress.right
-            anchors.verticalCenter: progress.verticalCenter
+            anchors.right: parent.right
+            anchors.bottom: progressbar.top
             anchors.margins: 10 * ApplicationInfo.ratio
             MouseArea {
                 anchors.fill: parent
@@ -210,95 +283,8 @@ ActivityBase {
             }
         }
 
-        Row {
-            id: row
-            spacing: 10 * ApplicationInfo.ratio
-            anchors.fill: parent
-            anchors.margins: 10 * ApplicationInfo.ratio
-            layoutDirection: leftCol.width === 0 ? Qt.RightToLeft : Qt.LeftToRight
-            Column {
-                id: leftCol
-                spacing: 10 * ApplicationInfo.ratio
-
-                Rectangle {
-                    id: instruction
-                    width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
-                    height: instructionText.height
-                    color: "#CCCCCCCC"
-                    radius: 10
-                    border.width: 3
-                    border.color: "black"
-
-                    GCText {
-                        id: instructionText
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        anchors.centerIn: parent.Center
-                        color: "black"
-                        width: parent.width
-                        wrapMode: Text.Wrap
-                        text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels  && items.score.currentSubLevel != 0) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
-                    }
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: instruction.visible = false
-                        enabled: instruction.visible
-                    }
-                }
-
-                Rectangle {
-                    id: question
-                    width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
-                    height: questionText.height
-                    color: '#CCCCCCCC'
-                    radius: 10
-                    border.width: 3
-                    border.color: "black"
-                    visible: items.score.currentSubLevel == 3 || (items.score.currentSubLevel == 2 && !items.hasAudioQuestions)
-                    GCText {
-                        id: questionText
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        anchors.centerIn: parent.Center
-                        color: "black"
-                        width: parent.width
-                        wrapMode: Text.Wrap
-                        text: items.currentQuestion ? items.currentQuestion.text2 : ""
-                    }
-                }
-            }
-
-            Column {
-                id: rightCol
-                spacing: 10 * ApplicationInfo.ratio
-
-                Score {
-                    id: score
-                    isScoreCounter: false
-                    anchors {
-                        bottom: undefined
-                        right: undefined
-                    }
-                }
-
-                BarButton {
-                    id: repeatItem
-                    source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-                    width: 60 * ApplicationInfo.ratio
-                    anchors.right: parent.right
-                    visible: items.score.currentSubLevel == 2 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
-                    onClicked: {
-                        if(!items.audioVoices.isPlaying()) {
-                            Activity.repeat();
-                        }
-                    }
-                }
-            }
-        }
-
         ErrorRectangle {
             id: errorRectangle
-            anchors.centerIn: parent
             width: 0
             height: 0
             imageSize: 60 * ApplicationInfo.ratio
