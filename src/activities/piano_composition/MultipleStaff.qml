@@ -88,10 +88,10 @@ Item {
         id: flickableStaves
         interactive: multipleStaff.isFlickable
         flickableDirection: Flickable.VerticalFlick
-        contentWidth: staffColumn.width
-        contentHeight: staffColumn.height + distanceBetweenStaff
+        contentWidth: contentItem.childrenRect.width
+        contentHeight: contentItem.childrenRect.height
         anchors.fill: parent
-        maximumFlickVelocity: activity.height
+        maximumFlickVelocity: contentHeight
         clip: true
         Behavior on contentY {
             NumberAnimation { duration: 250 }
@@ -205,7 +205,7 @@ Item {
 
     Rectangle {
         id: pulseMarker
-        width: activity.horizontalLayout ? 5 : 3
+        width: background.horizontalLayout ? 5 : 3
         border.width: width / 2
         height: staves.itemAt(0) == undefined ? 0 : 4 * staves.itemAt(0).verticalDistanceBetweenLines + width
         opacity: isPulseMarkerDisplayed && pulseMarkerAnimation.running
@@ -305,7 +305,7 @@ Item {
                                       "isDefaultClef_": true, "elementType_": "clef"})
 
             if(!isUnflicked)
-                flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+                flickableStaves.flick(0, - nbStaves * multipleStaff.height * 1.3)
 
             if(elementType === "clef")
                 return 0
@@ -381,7 +381,7 @@ Item {
         // Remove the remaining unused staffs.
         if((multipleStaff.currentEnteringStaff + 1 < multipleStaff.nbStaves) && (multipleStaff.nbStaves > 2)) {
             nbStaves = multipleStaff.currentEnteringStaff + 1
-            flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+            flickableStaves.flick(0, - nbStaves * multipleStaff.height * 1.3)
         }
 
         var lastMusicElement = musicElementModel.get(musicElementModel.count - 1)
@@ -499,6 +499,8 @@ Item {
             var tempModel = createNotesBackup()
             redraw(tempModel)
         }
+        if(isFlickable)
+            flickableStaves.contentY = 0
     }
 
     /**
@@ -525,7 +527,7 @@ Item {
         selectedIndex = -1
         musicTimer.interval = 1
         if(isFlickable)
-            flickableStaves.flick(0, nbStaves * multipleStaff.height)
+            flickableStaves.contentY = 0
 
         pulseMarkerAnimation.stop()
 

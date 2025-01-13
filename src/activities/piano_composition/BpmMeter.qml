@@ -34,14 +34,13 @@ Item {
 
     Rectangle {
         id: bpmBg
-        color: "yellow"
-        opacity: 0.1
-        border.width: 2
-        border.color: "black"
+        color: "#80FFFFFF"
+        border.width: 2 * ApplicationInfo.ratio
+        border.color: "#80000000"
         width: optionsRow.iconsWidth
         height: optionsRow.iconsWidth
         anchors.left: parent.left
-        radius: 10
+        radius: 5 * ApplicationInfo.ratio
     }
     GCText {
         //: BPM is the abbreviation for Beats Per Minute.
@@ -53,15 +52,19 @@ Item {
         anchors.centerIn: bpmBg
         fontSizeMode: Text.Fit
     }
-    Image {
+    Item {
         id: bpmDown
-        source: "qrc:/gcompris/src/core/resource/bar_down.svg"
         width: iconsWidth
         height: iconsWidth * 0.5
-        sourceSize.width: width
-        fillMode: Image.PreserveAspectFit
         anchors.bottom: parent.bottom
         anchors.left: bpmBg.right
+        Image {
+            source: "qrc:/gcompris/src/core/resource/bar_down.svg"
+            anchors.centerIn: parent
+            width: parent.width * 0.9
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
+        }
         Timer {
             id: decreaseBpm
             interval: 500
@@ -123,13 +126,18 @@ Item {
     }
     Image {
         id: bpmUp
-        source: "qrc:/gcompris/src/core/resource/bar_up.svg"
         width: iconsWidth
         height: bpmDown.height
-        sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         anchors.top: parent.top
         anchors.left: bpmBg.right
+        Image {
+            source: "qrc:/gcompris/src/core/resource/bar_up.svg"
+            anchors.centerIn: parent
+            width: parent.width * 0.9
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
+        }
         Timer {
             id: increaseBpm
             interval: 500

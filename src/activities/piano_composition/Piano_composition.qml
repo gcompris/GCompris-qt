@@ -26,8 +26,6 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    property bool horizontalLayout: background.width >= background.height
-
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
@@ -37,11 +35,14 @@ ActivityBase {
 
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
+        readonly property bool horizontalLayout: background.width >= background.height
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+
+        readonly property int baseMargins: 5 * ApplicationInfo.ratio
 
         Keys.onPressed: (event) => {
             var keyboardBindings = {}
@@ -187,12 +188,13 @@ ActivityBase {
 
         Rectangle {
             id: instructionBox
-            radius: 10
-            width: background.width * 0.75
+            radius: background.baseMargins
+            width: background.horizontalLayout ? background.width * 0.75 : background.width - 2 * (optionsRow.iconsWidth + background.baseMargins)
             height: background.height * 0.15
+            anchors.top: parent.top
             anchors.right: parent.right
             opacity: 0.8
-            border.width: 6
+            border.width: 2 * ApplicationInfo.ratio
             color: "white"
             border.color: "#87A6DD"
 
@@ -201,8 +203,8 @@ ActivityBase {
                 color: "black"
                 z: 3
                 anchors.fill: parent
-                anchors.rightMargin: parent.width * 0.02
-                anchors.leftMargin: parent.width * 0.02
+                anchors.rightMargin: background.baseMargins
+                anchors.leftMargin: background.baseMargins
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
