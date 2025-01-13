@@ -26117,12 +26117,12 @@ msgstr ""
 "atuais e futuros, até que você os desmarque, dando um duplo clique neles "
 "novamente."
 
-#: activities/superbrain/Superbrain.qml:146
+#: activities/superbrain/Superbrain.qml:151
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Este item está no lugar correto."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:153
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Este item está no lugar errado."

@@ -25720,12 +25720,12 @@ msgstr ""
 "automātiski atlasīti pašreizējos un nākotnes minējumos līdz tu noņem šo "
 "atzīmi, uz tiem vēlreiz veicot dubultklikšķi."
 
-#: activities/superbrain/Superbrain.qml:146
+#: activities/superbrain/Superbrain.qml:151
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Šis vienums ir pareizi novietots."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:153
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Šis vienums ir nepareizi novietots."

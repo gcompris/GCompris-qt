@@ -25989,12 +25989,12 @@ msgstr ""
 "worden automatisch geselecteerd in jouw huidig en toekomstig giswerk totdat "
 "je deze markering hiervan weghaalt, door er opnieuw dubbel op te klikken."
 
-#: activities/superbrain/Superbrain.qml:146
+#: activities/superbrain/Superbrain.qml:151
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Dit item is goed geplaatst."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:153
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Dit item is fout geplaatst."

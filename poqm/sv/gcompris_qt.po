@@ -25760,12 +25760,12 @@ msgstr ""
 "väljes automatiskt i aktuella eller framtida gissningar tills de avmarkeras, "
 "genom att dubbelklicka på dem igen."
 
-#: activities/superbrain/Superbrain.qml:146
+#: activities/superbrain/Superbrain.qml:151
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Saken är välplacerad."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:153
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Saken är felplacerad."

@@ -26999,12 +26999,12 @@ msgstr ""
 "избираат во вашите сегашни и идни нагаѓања се додека не ги одштиклирате, "
 "повторно со двојно кликање или допирање."
 
-#: activities/superbrain/Superbrain.qml:146
+#: activities/superbrain/Superbrain.qml:151
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Овој предмет е добро поставен."
 
-#: activities/superbrain/Superbrain.qml:148
+#: activities/superbrain/Superbrain.qml:153
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Овој предмет е погрешно поставен."
