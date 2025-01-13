@@ -22,8 +22,6 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    property bool horizontalLayout: width >= height
-
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
@@ -33,6 +31,7 @@ ActivityBase {
 
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
+        readonly property bool horizontalLayout: width >= height
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -208,15 +207,15 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
-            height: horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
+            width: background.horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
+            height: background.horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
             bpmValue: 90
             nbStaves: 1
             clef: clefType
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: horizontalLayout ? 0 : parent.height * 0.1
+            anchors.topMargin: background.horizontalLayout ? 0 : parent.height * 0.1
             centerNotesPosition: true
             firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
             spaceBetweenNotes: width / (2.5 * (musicElementModel.count - 1))
@@ -231,7 +230,7 @@ ActivityBase {
         Image {
             id: tempo
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.svg"
-            width: horizontalLayout ? parent.width / 7 : parent.width / 4
+            width: background.horizontalLayout ? parent.width / 7 : parent.width / 4
             sourceSize.width: width
             fillMode: Image.PreserveAspectFit
             anchors.top: metronome.top
