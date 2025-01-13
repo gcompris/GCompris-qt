@@ -71,7 +71,6 @@ Image {
                 return
             }
             var questionTargetId = items.questionOrder[Activity.items.progressbar.currentSubLevel]
-            Activity.items.instruction.visible = false
             if (Activity.items.score.currentSubLevel === 1) {
                 if(animalImg.audio) {
                     audioVoices.play(animalImg.audio);
@@ -86,7 +85,9 @@ Image {
                     items.progressbar.playWinAnimation();
                     items.goodAnswerSound.play();
                 } else {
-                    items.errorRectangle.parent = animalImg;
+                    var errorPosition = background.mapFromItem(animalImg, animalImg.width * 0.5, animalImg.height * 0.5)
+                    items.errorRectangle.x = errorPosition.x;
+                    items.errorRectangle.y = errorPosition.y;
                     items.errorRectangle.startAnimation();
                     items.badAnswerSound.play();
                 }
