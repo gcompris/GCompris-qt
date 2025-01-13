@@ -107,6 +107,7 @@ ActivityBase {
             MouseArea {
                 id: mouseMovement
                 anchors.fill: parent
+                enabled: !ApplicationInfo.isMobile
                 hoverEnabled: true
 
                 property real startX: 0
@@ -195,8 +196,8 @@ ActivityBase {
 
             onTouchUpdated: (touchPoints) => {
                 if(background.isArrowPressed) return;
-                for(var i in touchPoints) {
-                    var touch = touchPoints[i]
+                if(touchPoints[0]) {
+                    var touch = touchPoints[0]
                     var moveX = touch.x - previousX
                     var moveY = touch.y - previousY
 
