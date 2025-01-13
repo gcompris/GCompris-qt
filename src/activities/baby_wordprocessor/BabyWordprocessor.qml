@@ -165,8 +165,7 @@ ActivityBase {
             maximumFlickVelocity: activity.height
             boundsBehavior: Flickable.StopAtBounds
 
-            function ensureVisible(r: real)
-            {
+            function ensureVisible(r: var) {
                 if (contentX >= r.x)
                     contentX = r.x;
                 else if (contentX+width <= r.x+r.width)
