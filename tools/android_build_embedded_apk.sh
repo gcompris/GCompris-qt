@@ -92,7 +92,7 @@ minor=${a[1]}
 patch=${a[2]}
 
 f_cmake armeabi-v7a OFF OFF $download_assets
-make -j 4
+make -j 16
 make getAssets
 make apk_aligned_signed
 

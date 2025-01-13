@@ -68,5 +68,5 @@ cmake_extra_args="-DQT_ANDROID_BUILD_ALL_ABIS=true"
 QtTarget=android
 
 f_cmake android ON OFF
-make -j 4
+make -j 16
 make aab_release
