@@ -22,8 +22,6 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    property bool horizontalLayout: width >= height * 1.2
-
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
@@ -33,6 +31,7 @@ ActivityBase {
 
         // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
         property bool audioDisabled: false
+        readonly property bool horizontalLayout: width >= height * 1.2
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -170,7 +169,7 @@ ActivityBase {
             anchors.top: background.top
             anchors.bottom: undefined
             numberOfSubLevels: 5
-            width: horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
+            width: background.horizontalLayout ? parent.width / 10 : (parent.width - instruction.x - instruction.width - 1.5 * anchors.rightMargin)
             onStop: Activity.nextSubLevel()
         }
 
@@ -201,15 +200,15 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
-            height: horizontalLayout ? parent.height * 0.85 : parent.height * 0.58
+            width: background.horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
+            height: background.horizontalLayout ? parent.height * 0.85 : parent.height * 0.58
             nbStaves: 1
             clef: clefType
             coloredNotes: (items.mode === "coloredNotes") ? ['C', 'D', 'E', 'F', 'G', 'A', 'B'] : []
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: instruction.bottom
-            anchors.topMargin: horizontalLayout ? parent.height * 0.02 : parent.height * 0.15
+            anchors.topMargin: background.horizontalLayout ? parent.height * 0.02 : parent.height * 0.15
             onNoteClicked: {
                 playNoteAudio(musicElementModel.get(noteIndex).noteName_, musicElementModel.get(noteIndex).noteType_,  musicElementModel.get(noteIndex).soundPitch_)
             }
@@ -218,7 +217,7 @@ ActivityBase {
 
         PianoOctaveKeyboard {
             id: piano
-            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.7
+            width: background.horizontalLayout ? parent.width * 0.5 : parent.width * 0.7
             height: parent.height * 0.3
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
@@ -243,8 +242,8 @@ ActivityBase {
             color: "white"
             opacity: 0.5
             radius: 10
-            y: horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
-            x: horizontalLayout ? multipleStaff.x + multipleStaff.width + 25 : background.width / 2 - width / 2
+            y: background.horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
+            x: background.horizontalLayout ? multipleStaff.x + multipleStaff.width + 25 : background.width / 2 - width / 2
         }
 
         OptionsRow {
