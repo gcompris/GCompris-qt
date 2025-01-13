@@ -15,7 +15,8 @@ import "positions.js" as Activity
 Item {
     id: backgroundPosition
     property int checkState
-    property real boxSize: Math.min(backgroundPosition.width * 0.4, backgroundPosition.height * 0.4)
+    property real boxSize: width * 0.4
+    height: width
 
     Image {
         id: boy
