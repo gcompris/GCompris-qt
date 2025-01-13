@@ -28,6 +28,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
 
         property bool keyboardMode: false
+        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         QtObject {
             id: items
@@ -98,53 +99,41 @@ ActivityBase {
 
         Item {
             id: mainScreen
-            width: background.width - okButton.width
             height: background.height - bar.height * 1.5
             anchors.top: background.top
             anchors.left: background.left
+            anchors.right: okButton.width > score.width ? okButton.left : score.left
+            anchors.margins: background.baseMargins
 
             property bool horizontalLayout: mainScreen.width >= mainScreen.height
 
             Rectangle {
                 id: backgroundScreen
-                width: parent.width * 0.7
-                height: parent.height * 0.7
+                width: parent.width - 2 * background.baseMargins
+                height: mainScreen.horizontalLayout ? parent.height * 0.6 : parent.height * 0.4
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                anchors.topMargin: 30 * ApplicationInfo.ratio
+                anchors.topMargin: background.baseMargins
                 visible: items.currentLevel % 2 !== 0 ? true : false
                 color: "#55333333"
-                radius: 5
+                radius: background.baseMargins
 
                 BoxBoyPosition {
                     id: currentPosition
                     anchors.centerIn: parent
                     checkState: items.checkState
                     width: Math.min(parent.width, parent.height)
-                    height: width
                 }
-
-                states: [
-                    State {
-                        name: "verticalScreen"
-                        when: !mainScreen.horizontalLayout
-                        PropertyChanges {
-                            backgroundScreen {
-                                height: parent.height * 0.5
-                            }
-                        }
-                    }
-                ]
             }
 
             GridView {
                 id: answerViews
-                width: mainScreen.width * 0.7
-                height: mainScreen.height * 0.1
+                width: backgroundScreen.width
                 anchors.horizontalCenter: parent.horizontalCenter
                 visible: items.currentLevel % 2 !== 0 ? true : false
                 anchors.top: backgroundScreen.bottom
-                anchors.topMargin: 30 * ApplicationInfo.ratio
+                anchors.bottom: parent.bottom
+                anchors.margins: background.baseMargins
                 cellWidth: mainScreen.horizontalLayout ? answerViews.width / answerViews.count : answerViews.width
                 cellHeight: mainScreen.horizontalLayout ? answerViews.height : answerViews.height / answerViews.count
                 keyNavigationWraps: true
@@ -156,8 +145,8 @@ ActivityBase {
                     id: answer
                     color: index == answerViews.currentIndex ? "#FFFFFFFF" : "#80FFFFFF"
                     radius: 15
-                    width: answerViews.cellWidth - 2 * ApplicationInfo.ratio
-                    height: answerViews.cellHeight - 2 * ApplicationInfo.ratio
+                    width: answerViews.cellWidth - background.baseMargins
+                    height: answerViews.cellHeight - background.baseMargins
                     border.width: index == answerViews.currentIndex ? 3 : 0
                     border.color: "#373737"
 
@@ -165,11 +154,12 @@ ActivityBase {
                     GCText {
                         id: answerText
                         text: stateName
-                        fontSize: smallSize
+                        fontSize: mediumSize
                         wrapMode: Text.WordWrap
                         fontSizeMode: Text.Fit
-                        width: answer.width
+                        width: answer.width - background.baseMargins
                         height: answer.height
+                        anchors.centerIn: parent
                         verticalAlignment: Text.AlignVCenter
                         horizontalAlignment: Text.AlignHCenter
                     }
@@ -186,18 +176,35 @@ ActivityBase {
                         items.selectedPosition = stateId
                     }
                 }
+            }
 
-                states: [
-                    State {
-                        name: "verticalScreen"
-                        when: !mainScreen.horizontalLayout
-                        PropertyChanges {
-                            answerViews {
-                                height: mainScreen.height * 0.3
-                            }
-                        }
-                    }
-                ]
+            Rectangle {
+                id: questionArea
+                anchors.centerIn: questionItem
+                width: questionItem.contentWidth + background.baseMargins * 2
+                height: questionItem.contentHeight + background.baseMargins
+                radius: 10
+                color: "#373737"
+                border.width: 2
+                border.color: "#F2F2F2"
+                visible: questionItem.visible
+            }
+
+            GCText {
+                id: questionItem
+                visible: items.currentLevel % 2 === 0 ? true : false
+                anchors.top: mainScreen.top
+                anchors.left: mainScreen.left
+                anchors.right: mainScreen.right
+                anchors.margins: background.baseMargins
+                height: score.height
+                text: items.questionText
+                fontSize: mediumSize
+                fontSizeMode: Text.Fit
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                color: "white"
             }
 
             ListModel {
@@ -207,10 +214,11 @@ ActivityBase {
             GridView {
                 id: positionViews
                 anchors.top: questionArea.bottom
-                anchors.horizontalCenter: mainScreen.horizontalCenter
+                anchors.topMargin: background.baseMargins
+                anchors.left: parent.left
+                width: parent.width
+                height: parent.height - questionArea.height - background.baseMargins
                 visible: items.currentLevel % 2 === 0 ? true : false
-                width: mainScreen.width * 0.9
-                height: mainScreen.height * 0.8
                 interactive: false
                 cellWidth: itemWidth
                 cellHeight: itemWidth
@@ -221,7 +229,7 @@ ActivityBase {
                 focus: false
                 currentIndex: -1
 
-                property int itemWidth: Core.fitItems(positionViews.width, positionViews.height, positionViews.count)
+                property int itemWidth: Core.fitItems(positionViews.width, positionViews.height, Math.max(positionModels.count, 1))
 
                 delegate: BoxBoyPosition {
                     id: posItem
@@ -255,32 +263,6 @@ ActivityBase {
                     Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
                  }
             }
-
-            Rectangle {
-                id: questionArea
-                anchors.centerIn: questionItem
-                width: questionItem.contentWidth * 1.1
-                height: questionItem.contentHeight * 1.1
-                radius: 10
-                color: "#373737"
-                border.width: 2
-                border.color: "#F2F2F2"
-                visible: questionItem.visible
-            }
-
-            GCText {
-                id: questionItem
-                visible: items.currentLevel % 2 === 0 ? true : false
-                anchors.horizontalCenter: mainScreen.horizontalCenter
-                anchors.top: mainScreen.top
-                anchors.topMargin: background.height * 0.02
-                text: items.questionText
-                fontSize: smallSize
-                width: parent.width * 0.8
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WordWrap
-                color: "white"
-            }
         }
         
         ErrorRectangle {
@@ -297,8 +279,8 @@ ActivityBase {
                     errorRectangle.x = answerViews.x + items.view.currentItem.x;
                     errorRectangle.y = answerViews.y + items.view.currentItem.y;
                 } else {
-                    errorRectangle.x = positionViews.x + items.view.currentItem.x;
-                    errorRectangle.y = positionViews.y + items.view.currentItem.y;
+                    errorRectangle.x = mainScreen.x + positionViews.x + items.view.currentItem.x;
+                    errorRectangle.y = mainScreen.y + positionViews.y + items.view.currentItem.y;
                 }
                 errorAnimation.restart();
             }
@@ -346,15 +328,11 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            anchors {
-                bottom: bar.top
-                right: parent.right
-                leftMargin: 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
-                bottomMargin: 10 * ApplicationInfo.ratio
-            }
+            anchors.verticalCenter: mainScreen.verticalCenter
+            anchors.right: background.right
+            anchors.margins: background.baseMargins
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: (background.height - bar.height * 1.2) * 0.15
+            width: Math.min(70 * ApplicationInfo.ratio, background.width * 0.2)
             onClicked: Activity.verifyAnswer()
             mouseArea.enabled: !items.buttonsBlocked && items.selectedPosition != -1
         }
@@ -366,11 +344,10 @@ ActivityBase {
 
         Score {
             id: score
-            width: background.width * 0.1
-            height: background.height * 0.1
             anchors.top: background.top
-            anchors.topMargin: parent.height * 0.01
+            anchors.right: background.right
             anchors.bottom: undefined
+            anchors.margins: background.baseMargins
             onStop: Activity.nextSubLevel()
         }
     }
