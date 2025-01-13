@@ -78,7 +78,7 @@ minor=${a[1]}
 patch=${a[2]}
 
 f_cmake arm64-v8a ON OFF
-make
+make -j 16
 make apk_aligned_signed
 
 # Remove extra apk

@@ -78,7 +78,7 @@ minor=${a[1]}
 patch=${a[2]}
 
 f_cmake armeabi-v7a ON OFF
-make -j 4
+make -j 16
 make apk_aligned_signed
 
 # Remove extra apk
