@@ -111,28 +111,30 @@ ActivityBase {
         Rectangle {
             id: instructionBox
             radius: 10
-            width: background.width * 0.7
-            height: background.height / 9
-            anchors.horizontalCenter: parent.horizontalCenter
+            width: instructionText.contentWidth + 20 * ApplicationInfo.ratio
+            height: instructionText.contentHeight + 10 * ApplicationInfo.ratio
+            anchors.centerIn: instructionText
             opacity: 0.8
-            border.width: 6
+            border.width: 2 * ApplicationInfo.ratio
             color: "white"
             border.color: "#87A6DD"
+        }
 
-            GCText {
-                id: instructionText
-                color: "black"
-                z: 3
-                anchors.fill: parent
-                anchors.rightMargin: parent.width * 0.02
-                anchors.leftMargin: parent.width * 0.02
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                wrapMode: Text.WordWrap
-                text: items.isMetronomeVisible ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
-                                               : qsTr("Follow the vertical line and click on the drum or press space key to play the rhythm correctly.")
-            }
+        GCText {
+            id: instructionText
+            color: "#303030"
+            anchors.right: score.left
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.margins: 20 * ApplicationInfo.ratio
+            height: score.height
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
+            wrapMode: Text.WordWrap
+            text: items.isMetronomeVisible ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
+            : qsTr("Follow the vertical line and click on the drum or press space key to play the rhythm correctly.")
         }
 
         Timer {
@@ -201,7 +203,6 @@ ActivityBase {
             anchors.top: background.top
             anchors.bottom: undefined
             numberOfSubLevels: 3
-            width: horizontalLayout ? parent.width / 10 : (parent.width - instructionBox.x - instructionBox.width - 1.5 * anchors.rightMargin)
             onStop: Activity.nextSubLevel()
         }
 
