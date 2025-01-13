@@ -126,7 +126,7 @@ ActivityBase {
             radius: height * 0.5
             color: "#f2f2f2"
             border.color: "#e74444"
-            border.width: 4
+            border.width: 2 * ApplicationInfo.ratio
         }
 
         GCText {
