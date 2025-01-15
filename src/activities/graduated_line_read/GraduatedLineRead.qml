@@ -58,6 +58,7 @@ ActivityBase {
             property string answer: ""
             property alias errorRectangle: errorRectangle
             property bool buttonsBlocked: false
+            property int segmentThickness: Math.max(1, 2 * ApplicationInfo.ratio)
         }
 
         property int baseMargins: 10 * ApplicationInfo.ratio
@@ -135,7 +136,7 @@ ActivityBase {
             Column {
                 id: rulerViewColumn
                 width: rulerView.rulerWidth
-                height: parent.height - background.baseMargins
+                height: parent.height - background.baseMargins - leftLimit.contentHeight
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.horizontalCenterOffset: rulerView.rulerModelWidth * ((items.orientation === Qt.LeftToRight) ? -0.5 : 0.5)
                 anchors.top: parent.top
@@ -144,7 +145,7 @@ ActivityBase {
                     id: cursor
                     z: 100
                     width: parent.width
-                    height: parent.height * 0.3
+                    height: parent.height * 0.4
                     anchors.horizontalCenter: parent.horizontalCenter
                     layoutDirection: items.orientation
                     Repeater {
@@ -196,7 +197,7 @@ ActivityBase {
                 Row {
                     id: ruler
                     width: rulerView.rulerWidth
-                    height: parent.height
+                    height: parent.height * 0.6
                     layoutDirection: items.orientation
                     anchors.horizontalCenter: parent.horizontalCenter
                     Repeater {
@@ -205,21 +206,21 @@ ActivityBase {
                             property int value: value_
                             property int thickness: thickness_
                             width: rulerView.rulerModelWidth
-                            height: 100
-                            transform: Scale { origin.x: width / 2; xScale: (items.orientation === Qt.LeftToRight) ? 1 : -1 }
+                            height: parent.height
+                            transform: Scale { origin.x: width * 0.5; xScale: (items.orientation === Qt.LeftToRight) ? 1 : -1 }
 
                             Rectangle {     // Line between graduations
-                                width: (index && (index !== (rulerModel.count - 1))) ? parent.width : parent.width / 2
-                                height: Activity.segmentThickness * ApplicationInfo.ratio
+                                width: (index && (index !== (rulerModel.count - 1))) ? parent.width : parent.width * 0.5
+                                height: items.segmentThickness
                                 anchors.verticalCenter: parent.verticalCenter
                                 anchors.left: (index) ? parent.left : undefined
                                 anchors.right: (!index) ? parent.right : undefined
                                 color: "#c27a33"
                             }
                             Rectangle {     // vertical graduation
-                                width: thickness * ApplicationInfo.ratio
+                                width: thickness
                                 height: ((!index) || (index === (rulerModel.count - 1)) || (index === items.solutionGrad))
-                                ?  parent.height : (parent.height / 2)
+                                ?  parent.height : (parent.height * 0.5)
                                 anchors.centerIn: parent
                                 color: (index === items.solutionGrad) ? "#633E0C" : "#c27a33"
                                 radius: (index === items.solutionGrad) ? 0 : width * 0.5

@@ -14,7 +14,7 @@ var items
 var activityMode
 var maxSolutionSize = 0
 var mapToPad = {}       // Maps keyboard charcodes to numPad's indexes to animate graphics from computer's numpad
-var segmentThickness = 2
+var segmentThickness
 var exercices = []
 
 function randInt(max) { return Math.floor(Math.random() * max) }
@@ -163,6 +163,7 @@ function checkResult() {
 function start(items_, activityMode_) {
     items = items_;
     activityMode = activityMode_
+    segmentThickness = items.segmentThickness
     items.orientation = (Core.isLeftToRightLocale(GCompris.ApplicationSettings.locale)) ?  Qt.LeftToRight : Qt.RightToLeft
 //    items.orientation = Qt.RightToLeft  // Force RightToLeft here
     // Make sure numberOfLevel is initialized before calling Core.getInitialLevel
