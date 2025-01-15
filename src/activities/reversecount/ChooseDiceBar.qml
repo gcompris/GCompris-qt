@@ -18,8 +18,6 @@ import "reversecount.js" as Activity
 Item {
     id: chooseDiceBar
     z: 1000
-    width: barRow.width
-    height: barRow.height
 
     property alias value1: domino.value1
     property alias value2: domino.value2
@@ -44,7 +42,9 @@ Item {
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            width: 75 * ApplicationInfo.ratio
+            width: Math.min(75 * ApplicationInfo.ratio,
+                            Math.min((chooseDiceBar.width - background.baseMargin) * 0.33),
+                            chooseDiceBar.height)
             visible: true
             anchors {
                 right: undefined
