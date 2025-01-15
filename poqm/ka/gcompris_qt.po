@@ -15211,7 +15211,7 @@ msgstr "ისწავლეთ ათობითი რიცხვები"
 #: activities/learn_decimals/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr ""
+msgstr "ათობითი რიცხვების შესწავლა."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
@@ -20254,6 +20254,8 @@ msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
 "you will practice bass clef notes."
 msgstr ""
+"1-დან 5-მდე დონეზე თქვენ ივარჯიშებთ ტრიპლის clef ნოტებს და 6-დან 10 დონემდე "
+"თქვენ ივარჯიშებთ ბას clef ნოტებს."
 
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -20634,6 +20636,8 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
+"<b>1. წინსვლა:</b> მოძრაობს Tux ერთი ნაბიჯით წინ იმ მიმართულებით, რომელსაც "
+"ის აწყდება."
 
 #: activities/programmingMaze/programmingMaze.js:99
 msgctxt "programmingMaze|"
@@ -20661,6 +20665,8 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
+"-დააჭირეთ <b>ინსტრუქციის არეალში</b> მოცემულ ნებისმიერ ინსტრუქციას, რომ "
+"დაამატოთ იგი <b>მთავარ ფუნქციაში</b>."
 
 #: activities/programmingMaze/programmingMaze.js:107
 msgctxt "programmingMaze|"
@@ -20700,6 +20706,8 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
+"<b>Loop</b> არის ინსტრუქციების თანმიმდევრობა, რომელიც <b>მუდმივად მეორდება "
+"მის შიგნით მოცემული რიცხვით განსაზღვრული რაოდენობის რაოდენობაზე</b>."
 
 #: activities/programmingMaze/programmingMaze.js:125
 msgctxt "programmingMaze|"
@@ -23998,6 +24006,8 @@ msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
+"+ ღილაკი გაზრდის წყალქვეშა ნავის სიღრმეს, ხოლო ღილაკი შეამცირებს წყალქვეშა "
+"ნავის სიღრმეს."
 
 #: activities/submarine/submarine.js:38
 msgctxt "submarine|"
@@ -25232,7 +25242,7 @@ msgstr ""
 #: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
-msgstr ""
+msgstr "დაემატა თარგმანი ენებისთვის: სლოვენიური, გერმანული, გალისიური."
 
 #: core/ChangeLog.qml:212
 #, qt-format
@@ -25374,6 +25384,13 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
+"KDE გუნდის მონაწილე რომ გახდეთ აუცილებელი არაა პროგრამისტი იყოთ. შეგიძლიათ "
+"მიუერთდეთ ეროვნულ გუნებს KDE-ეს მშობლიურ ენაზე სათარგმნელად. შეგიძლიათ "
+"შექმნათ ნახატები, თემები, ხმოვანი ფაილები და გააუმჯობესოთ დოკუმენტაცია. "
+"გადაწყვიტეთ რას ისურვებთ!<br><br>არსებული პროექტების გასაცნობად და "
+"მონაწილეობის მისაღებად მოინახულეთ <a href=\"%1\">%1</a>.<br><br>უფრო "
+"დეტალური ინფორმაცია და დოკუმენტაცია შეგიძლიათ მოიპოვოთ საიტზე <a href=\"%2\">"
+"%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -25390,6 +25407,16 @@ msgid ""
 "donation, using one of the ways described at <a href=\"%2\">%2</a>.<br /"
 "><br />Thank you very much in advance for your support."
 msgstr ""
+"KDE უფასოდ ვრცელდება, მაგრამ მისი შექმნა ხარჯებთანაა დაკავშირებული."
+"<br><br>ამიტომ KDE-ს გუნდმა დააარსა KDE ასოციაცია, არამომგებიანი "
+"ორგანიზაცია, რომელიც ტიუბინგენშია (გერმანია) რეგისტრირებული. KDE ასოციაცია "
+"KDE პროექტს წარმოადგენს იურიდიულ და ფინანსურ ასპექტებში. KDE ასოციაციის "
+"შესახებ უფრო დეტალური ინფორმაციის მისაღებად მოინახულეთ <a href=\"%1\">%1<a>."
+"<br><br>KDE გუნდს ესაჭიროება ფინანსური დახმარება. თანხის უდიდესი ნაწილი "
+"იხარჯება მონაწილეების იმ ხარჯების ასანაზღაურებლად, რომლებიც მათ გასწიეს KDE "
+"პროექტში წვლილის შეტანისას. KDE გუნდის მხარდაჭერა შეგიძლიათ ფინანსური "
+"შეწირულობებით ან სხვადასხვა სახით, რომლებიც აღწერილია საიტზე <a href=\"%2\">"
+"%2</a>.<br><br>წინასწარ გმადლობთ მხარდაჭერისთვის."
 
 #: core/DialogAbout.qml:139
 #, qt-format
@@ -25401,7 +25428,7 @@ msgstr ""
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr ""
+msgstr "<b>დიდი მადლობა მთარგმნელობით გუნდს</b> : %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
