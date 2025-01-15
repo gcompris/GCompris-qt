@@ -286,22 +286,20 @@ ActivityBase {
             onRomanChanged: arabic = roman2Arabic(roman)
         }
 
-        Rectangle {
+        Item {
             id: questionArea
             anchors.top: background.top
             anchors.left: background.left
             anchors.right: background.right
             anchors.margins: background.layoutMargins
-            color: "#f2f2f2"
-            radius: background.layoutMargins
-            height: questionLabel.height + 20 * ApplicationInfo.ratio
+            height: questionLabel.contentHeight + 20 * ApplicationInfo.ratio
             Rectangle {
                 anchors.centerIn: parent
-                width: parent.width - background.layoutMargins
-                height: parent.height - background.layoutMargins
+                width: questionLabel.contentWidth + 2 * background.layoutMargins
+                height: questionLabel.contentHeight + background.layoutMargins
                 color: "#f2f2f2"
-                radius: parent.radius
-                border.width: 3 * ApplicationInfo.ratio
+                radius: background.layoutMargins
+                border.width: 2 * ApplicationInfo.ratio
                 border.color: "#9fb8e3"
                 GCText {
                     id: questionLabel
@@ -309,7 +307,7 @@ ActivityBase {
                     wrapMode: TextEdit.WordWrap
                     text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
                     color: "#373737"
-                    width: parent.width * 0.9
+                    width: questionArea.width - 2 * background.layoutMargins
                     horizontalAlignment: Text.AlignHCenter
                 }
             }
@@ -400,7 +398,7 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: instructionArea
             visible: items.instruction != ''
             anchors.top: feedbackArea.bottom
@@ -408,18 +406,21 @@ ActivityBase {
             anchors.left: background.left
             anchors.right: background.right
             anchors.margins: background.layoutMargins
-            color: "#9fb8e3"
+
             Rectangle {
-                width: parent.width - background.layoutMargins
-                height: parent.height - background.layoutMargins
+                width: instruction.contentWidth + 2 * background.layoutMargins
+                height: instruction.contentHeight + background.layoutMargins
                 anchors.centerIn: parent
                 color: "#f2f2f2"
+                border.color: "#9fb8e3"
+                border.width: 2 * ApplicationInfo.ratio
+
                 GCText {
                     id: instruction
                     wrapMode: TextEdit.WordWrap
                     anchors.centerIn: parent
-                    width: parent.width
-                    height: parent.height
+                    width: instructionArea.width - 2 * background.layoutMargins
+                    height: instructionArea.height - 2 * background.layoutMargins
                     text: items.instruction
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
