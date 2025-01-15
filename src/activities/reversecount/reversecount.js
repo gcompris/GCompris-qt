@@ -25,21 +25,6 @@ var placeFishToReachBool = false
 
 var level = null;
 
-var fishes = [
-            "Benzfish.svg",
-            "blue-fish.svg",
-            "drunken_duck_cartoon_globefish_kugelfisch.svg",
-            "Fish02.svg",
-            "molumen_Codfish.svg",
-            "mystica_Aquarium_fish_-_Amphiprion_percula.svg",
-            "pepinux_Pez_dorado.svg",
-            "The_Whale-Fish.svg",
-            "Benzfish.svg",
-            "blue-fish.svg",
-            "drunken_duck_cartoon_globefish_kugelfisch.svg",
-            "Fish02.svg"
-        ]
-
 var numberOfFish
 var fishIndex = -1
 
