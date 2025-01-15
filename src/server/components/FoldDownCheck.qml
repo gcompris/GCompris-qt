@@ -10,6 +10,7 @@
 import QtQuick 2.15
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
+import "."
 import "../singletons"
 
 Column {
@@ -177,21 +178,26 @@ Column {
                         }
 
                         // Externals delegates
-                        CheckSimpleDelegate {       // Basic checkbox
+                        Component {
                             id: checkSimpleDelegate
+                            CheckSimpleDelegate {}      // Basic checkbox
                         }
 
-                        CheckActivityDelegate {     // Need to pick up the activity's title in allActivities
+                        Component {
                             id: checkActivityDelegate
+                            CheckActivityDelegate {}    // Need to pick up the activity's title in allActivities
                         }
 
-                        CheckUserStatusDelegate {   // Add user's connection status
+                        Component {
                             id: checkUserStatusDelegate
+                            CheckUserStatusDelegate {}  // Add user's connection status
                         }
 
-                        CheckUserEditDelegate {   // Add user's connection status
+                        Component {
                             id: checkUserEditDelegate
+                            CheckUserEditDelegate {}    // Add user's connection status
                         }
+
                     }
                 }
             }
