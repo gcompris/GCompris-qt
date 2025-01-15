@@ -340,7 +340,7 @@ ActivityBase {
                 top: guessedTextBg.bottom
                 margins: 0.025 * parent.width
             }
-            sourceSize.width: 66 * bar.barZoom
+            sourceSize.width: 66 * ApplicationInfo.ratio
             property int remainingLife: items.remainingLife
             onRemainingLifeChanged: {
                 if(remainingLife >= 0) {

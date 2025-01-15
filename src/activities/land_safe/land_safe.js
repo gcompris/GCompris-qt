@@ -102,7 +102,7 @@ function initLevel() {
     items.rocket.body.linearVelocity = Qt.point(0,0)
     // for landing random placement shall not intersect with bar -- or osd
     // controls on mobile:
-    min = items.onScreenControls ? items.leftRightControl.width : items.bar.fullButton * items.bar.barZoom;
+    min = items.onScreenControls ? items.leftRightControl.width : items.bar.width;
     max = items.onScreenControls ? items.background.width - items.upDownControl.width - items.landing.width : max;
     items.landing.anchors.leftMargin = Math.random() * (max- min) + min;
     items.landing.overlayColor = "-g";

@@ -192,29 +192,26 @@ Item {
 
     Rectangle {
         id: closenessMeter
-        x: ((background.width - items.bar.barZoom * items.bar.fullButton * 5.6) < (width + 10 * ApplicationInfo.ratio) && background.horizontalLayout) ? background.width - width - 42 * ApplicationInfo.ratio : background.width - width - 10 * ApplicationInfo.ratio
-        y: (background.width - items.bar.barZoom * items.bar.fullButton * 5.6) < (width + 10 * ApplicationInfo.ratio) ? background.height - bar.height - height - 10 * ApplicationInfo.ratio : background.height - height  - 10 * ApplicationInfo.ratio
+        x: background.width - width - 10 * ApplicationInfo.ratio
+        y: background.height - bar.height - height - 10 * ApplicationInfo.ratio
+        width: 170 * ApplicationInfo.ratio
         height: 40 * ApplicationInfo.ratio
-        width: 150 * ApplicationInfo.ratio
         radius: width * 0.06
         border.width: 2
         border.color: "black"
         opacity: 0.78
         visible: !items.assessmentMode
-        Item {
-            width: parent.width - 3 * ApplicationInfo.ratio
-            height: parent.height
-            anchors.centerIn: parent
 
-            GCText {
-                id: closenessText
-                color: "black"
-                anchors.fill: parent
-                fontSizeMode: Text.Fit
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                text: qsTr("Accuracy: %1%").arg(closenessMeterValue)
-            }
+        GCText {
+            id: closenessText
+            color: "black"
+            height: parent.height - 10 * ApplicationInfo.ratio
+            width: parent.width - 20 * ApplicationInfo.ratio
+            anchors.centerIn: parent
+            fontSizeMode: Text.Fit
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            text: qsTr("Accuracy: %1%").arg(closenessMeterValue)
         }
 
         SequentialAnimation {
