@@ -108,9 +108,9 @@ function processKeyPress(event) {
     var key = event.key;
     event.accepted = true;
     if(key === Qt.Key_Left) {
-        controlMove += -controlSpeed;
+        controlMove = -controlSpeed;
     } else if(key === Qt.Key_Right) {
-        controlMove += controlSpeed;
+        controlMove = controlSpeed;
     }
 }
 
@@ -152,25 +152,22 @@ function moveSpaceship() {
         var hypothenuse = Math.sqrt(
             Math.pow((currentPlanet.x + (currentPlanet.width * 0.5)) - items.spaceshipX, 2) +
             Math.pow((currentPlanet.y + (currentPlanet.height * 0.5)) - items.spaceshipY, 2));
-        items.gravity = (planetGravity * (items.currentLevel * 0.33 + 1)) / Math.pow(hypothenuse, 2) * 100;
+        items.gravity = (planetGravity * (items.currentLevel * 0.33 + 1)) / Math.pow(hypothenuse, 2) * items.gravityFactor;
     } else {
         items.gravity = 0;
     }
-    move += controlMove + (items.gravity);
+    move += (controlMove + items.gravity) * items.moveFactor;
     items.spaceshipX += move;
 
     // Check for crash
     computeOverlap();
 
-    // Don't go out of the screen or stay stuck on the borders
-    if(items.spaceshipX > items.background.width - items.borderMargin) {
+    if(items.spaceshipX < items.borderMargin) {
+        items.spaceshipX = items.borderMargin;
         move = 0;
-        controlMove = 0;
-        items.spaceshipX -= 1;
-    } else if(items.spaceshipX < items.borderMargin) {
+    } else if(items.spaceshipX > items.rightMargin) {
+        items.spaceshipX = items.rightMargin;
         move = 0;
-        controlMove = 0;
-        items.spaceshipX += 1;
     }
 }
 
