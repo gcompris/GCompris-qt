@@ -74,13 +74,13 @@ Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
 <date
->2023-06-06</date>
+>2025-01-30</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
 <releaseinfo
->3.3</releaseinfo>
+>25.0</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -178,7 +178,7 @@ for example 'xx.yy.zz'
 </screenshot>
 
 <para
->Každá ikona představuje nějakou aktivitu. Kolem ikony ještě najdete menší  ikony, které podávají další informace o aktivitě. Jednoduché kliknutí na  ikonu otevře danou aktivitu nebo nabídku aktivit. V horní nebo levé části  obrazovky (záleží, zda je orientace obrazovky na portrét) naleznete 8 oddílů  (kategorií). Například je zde kategorie "Stolní hry", která obsahuje stolní  hry jako šachy, piškvorky nebo zarovnej čtyři.</para>
+>Každá ikona představuje nějakou aktivitu. Kolem ikony ještě najdete menší ikony, které podávají další informace o aktivitě. Jednoduché kliknutí na ikonu otevře danou aktivitu nebo nabídku aktivit. V horní nebo levé části obrazovky (záleží, zda je orientace obrazovky na portrét) naleznete 8 oddílů (kategorií). Například je zde kategorie "Stolní hry", která obsahuje stolní hry jako šachy, piškvorky nebo zarovnej čtyři.</para>
 <para
 >Některé z kategorií mají podkategorie pro lepší filtrování aktivit. Pro matematické  aktivity tu máme 3 podkategorie: Číslování, výpočty a míry.</para>
 <para
@@ -588,15 +588,22 @@ for example 'xx.yy.zz'
 </row>
 <row>
 <entry
+>--renderer={vykreslovač}</entry>
+<entry
+>Zadání grafického vykreslovače, který se má použít. Na všech platformách jsou dostupné vykreslovače opengl a softwarový vykreslovač (software). Na Windows můžete také použít direct3d11 nebo direct3d12 (pokud byl program sestaven nad Qt ve verzi 
+>= 6.6). V systému MacOS můžete použít metal.</entry>
+</row>
+<row>
+<entry
 >--software-renderer</entry>
 <entry
->Použije se softwarové vykreslování namísto OpenGL (toto by mělo fungovat  na jakékoliv grafické kartě).</entry>
+>Použije se softwarové vykreslování namísto openGL (toto by mělo fungovat  na jakékoliv grafické kartě). Zastaralá volba, místo ní použijte --renderer=software.</entry>
 </row>
 <row>
 <entry
 >--opengl-renderer</entry>
 <entry
->Použít vykreslování OpenGL namísto softwarového (je rychlejší a má více  grafických efektů, ale může na některých grafických kartách havarovat).</entry>
+>Použít vykreslování openGL namísto softwarového (je rychlejší a má více  grafických efektů, ale může na některých grafických kartách havarovat). Zastaralá volba, místo ní použijte --renderer=opengl.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -640,7 +647,7 @@ for example 'xx.yy.zz'
 <para
 >&gcompris; </para>
 <para
->Copyright programu 2000-2023 Timothée Giet a další </para>
+>Copyright programu 2000-2024 Timothée Giet a další </para>
 
 <para
 >Český překladatelský tým <email

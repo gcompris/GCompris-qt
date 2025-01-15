@@ -15211,7 +15211,7 @@ msgstr "ისწავლეთ ათობითი რიცხვები"
 #: activities/learn_decimals/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr ""
+msgstr "ათობითი რიცხვების შესწავლა."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19

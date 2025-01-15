@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-06 17:38+0300\n"
+"PO-Revision-Date: 2025-01-14 09:35+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -5136,19 +5136,16 @@ msgstr "Умею рухаць мыш і дакладна пстрыкаць па
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
-"Стварыце малюнак, пстрыкаючы паслядоўна па патрэбных кропках. Пасля кожнага "
-"слушнага пстрычку, будзе падсвечаная наступная кропка."
+"Стварыце малюнак, пстрыкаючы паслядоўна па кожнай кропцы. Пасля кожнага "
+"выбару кропкі з'яўляцца новая блакітнага колеру. Вы можаце пстрыкаць і "
+"перацягваць з адной кропкі на наступныя, альбо пстрыкаць па кожнай кропцы "
+"адна за другой."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -19892,19 +19889,16 @@ msgstr "Вывучайце лічбавыя паслядоўнасці."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Стварыце малюнак, пстрыкаючы паслядоўна па патрэбных кропках. Пасля кожнага "
-"слушнага пстрычку, будзе падсвечаная наступная кропка."
+"Стварыце малюнак, пстрыкаючы паслядоўна па кожнай кропцы ў лікавым парадку. "
+"Пасля кожнага выбару кропкі з'яўляцца новая блакітнага колеру. Вы можаце "
+"пстрыкаць і перацягваць з адной кропкі на наступныя, альбо пстрыкаць па "
+"кожнай кропцы адна за другой."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -25380,23 +25374,16 @@ msgstr ""
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
 #: activities/solar_system/SolarSystem.qml:361
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid ""
-#| "3. Always remember this rhyme to learn the position of planets, examine "
-#| "the first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent "
-#| "<b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles."
-#| "<br><font color=\"#3bb0de\">%1</font>"
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
 "first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</"
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr ""
-"3. Наступнае выслоўе дапаможа вам запомніць парадак размяшчэння планет, "
-"звярніце ўвагу на першыя літары ў кожным слове: <b>М</b>ы <b>В</b>андроўнікі "
+"3. Заўсёды памятайце наступнае выслоўе для запамінання размяшчэння планет, "
+"звярніце ўвагу на першыя літары кожнага слова: <b>М</b>ы <b>В</b>андроўнікі "
 "<b>З</b>емляне <b>М</b>арым <b>Ю</b>нацтва <b>С</b>узор'ямі <b>У</"
-"b>збагаціць <b>Н</b>азаўжды.<br><font color=\"#3bb0de\">%1</font>"
+"b>збагаціць <b>Н</b>азаўжды.<br>"
 
 #: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
@@ -25643,21 +25630,15 @@ msgstr "Праз меню дапамогі можна даведацца пра 
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr "Калькудоку"
+msgstr "Судоку"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Вырашыце калькудоку."
+msgstr "Вырашыце судоку."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -26211,12 +26192,9 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Практыка складання."
+msgstr "Складанне ў слупок"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
@@ -26326,22 +26304,16 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Практыка адымання."
+msgstr "Адыманне ў слупок"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Выберыце інструкцыі"
+msgstr "Выканайце дадзенае адыманне."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
