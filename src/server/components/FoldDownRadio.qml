@@ -10,6 +10,7 @@
 import QtQuick 2.15
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
+import "."
 import "../singletons"
 import "../dialogs"
 
@@ -156,24 +157,29 @@ Column {
                         }
 
                         // Externals delegates
-                        RadioSimpleDelegate {       // Basic radio button
+                        Component {
                             id: radioSimpleDelegate
+                            RadioSimpleDelegate {}      // Basic radio button
                         }
 
-                        RadioActivityDelegate {     // Need to pick up the activity's title in allActivities
+                        Component {
                             id: radioActivityDelegate
+                            RadioActivityDelegate {}    // Need to pick up the activity's title in allActivities
                         }
 
-                        RadioGroupEditDelegate {    // Editions buttons for groups
+                        Component {
                             id: radioGroupEditDelegate
+                            RadioGroupEditDelegate {}   // Editions buttons for groups
                         }
 
-                        CheckUserStatusDelegate {   // Add user's connection status
+                        Component {
                             id: checkUserStatusDelegate
+                            CheckUserStatusDelegate {}  // Add user's connection status
                         }
 
-                        CheckUserEditDelegate {     // Add user's connection status
+                        Component {
                             id: checkUserEditDelegate
+                            CheckUserEditDelegate {}    // Add user's connection status
                         }
                     }
                 }
