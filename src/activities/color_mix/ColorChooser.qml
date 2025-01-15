@@ -22,13 +22,16 @@ Image {
     property int currentStep: 0
     property string brushHue
     onCurrentStepChanged: setSliderX();
+    width: height * 2
+    sourceSize.width: width
+    sourceSize.height: height
 
     Image {
         id: intensityScreen
         source: activity.modeRGB ? Activity.url + "flashlight2" + brushHue + ".svg" : "qrc:/gcompris/src/core/resource/empty.svg"
-        sourceSize.height: parent.sourceSize.height
-        sourceSize.width: parent.sourceSize.width
-        z: 2
+        anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
         opacity: currentStep / maxSteps
         visible: activity.modeRGB
     }
@@ -37,50 +40,51 @@ Image {
         id: intensityBrush
         source: Activity.url + (activity.modeRGB ? 
                     "light" + brushHue + ".svg" : "brush" + brushHue + ".svg")
-        sourceSize.height: parent.sourceSize.height * 0.25 + currentStep / maxSteps * 15
-        z: 2
+        height: (activity.modeRGB ? parent.height * 1.1 : parent.height * 0.25) * (currentStep / maxSteps)
+        width: activity.modeRGB ? parent.width * 0.25 : height
+        sourceSize.width: width
+        sourceSize.height: height
         anchors {
             left: parent.right
-            leftMargin: activity.modeRGB ? -20 * ApplicationInfo.ratio : 0
+            leftMargin: activity.modeRGB ? - parent.width * 0.18 : 0
             verticalCenter: parent.verticalCenter
         }
         opacity: activity.modeRGB ? currentStep / maxSteps * 2 : 1
         visible: currentStep > 0
-        fillMode: Image.PreserveAspectFit
-    }
-
-    ColorButton {
-        id: plusButton
-        source: Activity.url + "plus.svg"
-        anchors {
-            verticalCenter: parent.verticalCenter
-            right: parent.right
-            rightMargin: parent.width * 0.2
-        }
-        onClicked: currentStep = Math.min(currentStep + 1, maxSteps);
     }
 
     Item {
-        id: sliderLayout
-        height: parent.height * 0.25
-        anchors {
-            verticalCenter: parent.verticalCenter
-            left: minusButton.right
-            right: plusButton.left
-        }
+        id: controlsArea
+        width: parent.width * 0.8
+        height: parent.height * 0.4
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: parent.left
     }
 
     Rectangle {
         id: sliderArea
-        z: 100
-        height: sliderLayout.height
-        width: sliderLayout.width * 0.8
-        anchors.centerIn: sliderLayout
-        color: "#B0FFFFFF"
+        height: controlsArea.height
+        anchors {
+            verticalCenter: controlsArea.verticalCenter
+            left: minusButton.right
+            right: plusButton.left
+        }
+        color: "#00FFFFFF"
         radius: height * 0.2
         border.width: height * 0.1
         border.color: "#888888"
         property int maxLimit: width - sliderHandle.width
+        onWidthChanged: setSliderX();
+        Rectangle {
+            z: -1
+            radius: parent.radius
+            anchors.left: sliderHandle.left
+            anchors.top: sliderArea.top
+            anchors.bottom: sliderArea.bottom
+            anchors.right: sliderArea.right
+            anchors.margins: parent.border.width * 0.5
+            color: "#B0FFFFFF"
+        }
         Rectangle {
             id: sliderHandle
             width: parent.width * 0.1
@@ -110,12 +114,22 @@ Image {
     }
 
     ColorButton {
+        id: plusButton
+        source: Activity.url + "plus.svg"
+        anchors {
+            verticalCenter: controlsArea.verticalCenter
+            right: controlsArea.right
+        }
+        onClicked: currentStep = Math.min(currentStep + 1, maxSteps);
+    }
+
+    ColorButton {
         id: minusButton
+        rotation: parent.rotation
         source: Activity.url + "minus.svg"
         anchors {
-            verticalCenter: parent.verticalCenter
-            left: parent.left
-            leftMargin: parent.width * 0.3
+            verticalCenter: controlsArea.verticalCenter
+            left: controlsArea.left
         }
         onClicked: currentStep = Math.max(currentStep - 1, 0);
     }
