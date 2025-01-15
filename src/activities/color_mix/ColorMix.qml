@@ -56,9 +56,7 @@ ActivityBase {
             property alias currentColor1: color1.currentStep
             property alias currentColor2: color2.currentStep
             property alias currentColor3: color3.currentStep
-            property int margins: 20
-            property int chooserHeight: Math.min(background.height * 0.2,
-                                                 background.width * 0.2)
+            property int margins: 10 * ApplicationInfo.ratio
         }
 
         onStart: {
@@ -75,16 +73,16 @@ ActivityBase {
 
         Rectangle {
             id: target
-            height: width / 2.5
-            width: parent.width / 5
-            radius: height / 10
+            height: width * 0.4
+            width: Math.min(parent.width  * 0.2, 70 * ApplicationInfo.ratio)
+            radius: Math.min(height * 0.1, score.height)
             anchors {
                 top: parent.top
                 topMargin: items.margins
                 horizontalCenter: parent.horizontalCenter
             }
-            border.color: "#2a2a2a"
-            border.width: 0
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "#808080"
             color: Activity.getColor(items.targetColor1, items.targetColor2,
                                      items.targetColor3)
         }
@@ -93,43 +91,63 @@ ActivityBase {
             text: qsTr("Match the color")
             color: "#2a2a2a"
             horizontalAlignment: Text.AlignRight
+            verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             anchors {
                 top: target.top
+                bottom: target.bottom
                 right: target.left
                 left: parent.left
                 rightMargin: items.margins
+                leftMargin: items.margins
             }
+        }
+
+        Rectangle {
+            color: "#80FFFFFF"
+            anchors.centerIn: helpMessage
+            width: helpMessage.contentWidth + items.margins * 2
+            height: helpMessage.contentHeight + items.margins
+            visible: helpMessage.text != ""
         }
 
         GCText {
             id: helpMessage
             text: ""
+            color: "#2a2a2a"
             fontSizeMode: Text.Fit
-            horizontalAlignment: Text.AlignLeft
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
             anchors {
-                top: target.top
-                left: target.right
-                right: parent.right
-                leftMargin: items.margins
-                bottom: result.top
+                top: color1.bottom
+                left: layoutArea.left
+                right: color2.left
+                bottom: layoutArea.bottom
+                margins: items.margins
             }
         }
+
+        Item {
+            id: layoutArea
+            anchors.top: target.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: bar.top
+            anchors.margins: items.margins
+            anchors.topMargin: target.height
+        }
+
         Rectangle {
             id: result
             height: width
-            width: Math.min(target.width * 0.75, 90 * ApplicationInfo.ratio)
-            radius: height / 2
-
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: target.bottom
-                topMargin: (background.height - items.chooserHeight * 4) / 3
-            }
-            border.color: "#2a2a2a"
-            border.width: 0
+            width: Math.min(layoutArea.width * 0.2, layoutArea.height * 0.33) - items.margins
+            radius: height * 0.5
+            anchors.top: layoutArea.top
+            anchors.horizontalCenter: layoutArea.horizontalCenter
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "#808080"
             color: Activity.getColor(items.currentColor1, items.currentColor2,
                                      items.currentColor3)
         }
@@ -138,7 +156,7 @@ ActivityBase {
             id: color1
             brushHue: activity.modeRGB ? "-r" : "-m" /* red / magenta */
             source: Activity.url + (activity.modeRGB ? "flashlight-red.svg" : "tube-magenta.svg")
-            sourceSize.height: items.chooserHeight
+            height: result.width
             maxSteps: items.maxSteps
             anchors {
                 right: result.left
@@ -151,12 +169,12 @@ ActivityBase {
             id: color2
             brushHue: activity.modeRGB ? "-g" : "-y" /* green / yellow */
             source: Activity.url + (activity.modeRGB ? "flashlight-green.svg" : "tube-yellow.svg")
-            sourceSize.height: items.chooserHeight
+            height: result.width
             maxSteps: items.maxSteps
             anchors {
                 horizontalCenter: result.horizontalCenter
                 top: result.bottom
-                topMargin: items.margins + width / 2 - height / 2
+                topMargin: items.margins + height * 0.5
             }
             rotation: -90
         }
@@ -165,7 +183,7 @@ ActivityBase {
             id: color3
             brushHue: activity.modeRGB ? "-b" : "-c" /* blue / cyan */
             source: Activity.url + (activity.modeRGB ? "flashlight-blue.svg" : "tube-cyan.svg")
-            sourceSize.height: items.chooserHeight
+            height: result.width
             maxSteps: items.maxSteps
             anchors {
                 left: result.right
@@ -177,10 +195,10 @@ ActivityBase {
 
         Score {
             id: score
-            y: parent.height * 0.65
-            anchors.left: parent.left
-            anchors.right: undefined
+            anchors.right: parent.right
+            anchors.top: parent.top
             anchors.bottom: undefined
+            anchors.margins: items.margins
             currentSubLevel: 0
             numberOfSubLevels: 10
             onStop: Activity.nextSubLevel()
@@ -189,14 +207,13 @@ ActivityBase {
         BarButton {
             id: validate
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 66 * bar.barZoom
+            width: 70 * ApplicationInfo.ratio
             visible: true
             enabled: !items.buttonsBlocked
             anchors {
                 right: parent.right
                 rightMargin: items.margins
-                top: color3.bottom
-                topMargin: items.margins
+                verticalCenter: layoutArea.verticalCenter
             }
             onClicked: {
                 var message = ""

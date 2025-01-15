@@ -8,32 +8,41 @@
 *   SPDX-License-Identifier: GPL-3.0-or-later
 */
 import QtQuick 2.12
-
+import GCompris 1.0
 
 Item {
     id: button
-    height: parent.height / 4
-    width: height
-    z: 3
+    width: parent.width * 0.15
+    height: width
 
     property alias source: buttonImage.source
 
     signal clicked
 
+    Rectangle {
+        anchors.centerIn: parent
+        width: parent.width * 0.9
+        height: width
+        radius: width * 0.5
+        color: "#E2E2E2"
+        border.color: "#2a2a2a"
+        border.width: 2 * ApplicationInfo.ratio
+    }
+
     Image {
         id: buttonImage
         anchors.centerIn: parent
-        sourceSize.width: parent.width
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
+        width: parent.width * 0.6
+        height: width
+        sourceSize.width: width
+        sourceSize.height: height
     }
 
     MouseArea {
         id: mouseArea
         anchors.centerIn: parent
         enabled: !items.buttonsBlocked
-        height: 2.3 * parent.height
-        width: 2.3 * parent.width
+        anchors.fill: parent
         hoverEnabled: true
 
         onClicked: button.clicked()
