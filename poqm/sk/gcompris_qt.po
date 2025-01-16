@@ -5152,67 +5152,67 @@ msgstr ""
 "Primárne farby pigmentov sú azúrová (zvláštny odtieň modrej), purpurová "
 "(zvláštny odtieň ružovej) a žltá."
 
-#: activities/color_mix/ColorMix.qml:93
+#: activities/color_mix/ColorMix.qml:91
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Rozpoznávanie zodpovedajúcich si farieb"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Málo červenej"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:225
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Priveľa červenej"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:228
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Málo zelenej"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Priveľa zelenej"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:233
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Málo modrej"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Priveľa modrej"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Málo purpurovej"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Priveľa purpurovej"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Málo žltej"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Priveľa žltej"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Málo azúrovej"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Priveľa azúrovej"
@@ -14939,7 +14939,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr ""
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:219
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14959,7 +14959,7 @@ msgstr ""
 "oboch objektov a nepriamo úmerná druhej mocnine vzdialenosti, ktorá oddeľuje "
 "ich stredy."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:223
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14979,7 +14979,7 @@ msgstr ""
 "väčšia gravitačná sila. Preto, ak sa hmotnosť ktoréhokoľvek objektu zvyšuje, "
 "príťažlivá sila medzi nimi sa tiež zvyšuje"
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:226
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -14996,7 +14996,7 @@ msgstr ""
 "vzájomne na seba pôsobiacimi objektami, väčší odstup vedie k oslabeniu "
 "gravitačných síl."
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:229
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -15013,7 +15013,7 @@ msgstr ""
 "množstva okolitých planét. Nedostaňte sa príliš blízko k planétam, lebo do "
 "nich narazíte. Šípka ukazuje smer sily na vašej lodi."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -23352,13 +23352,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "Teraz viete pravidlá, môžete čítať a písať čísla rímskymi číslicami."
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Rímska hodnota: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:389
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -26001,25 +26001,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "Aký veľký je Neptún v porovnaní s inými planétami v slnečnej sústave?"
 
-#: activities/solar_system/QuizScreen.qml:216
+#: activities/solar_system/QuizScreen.qml:214
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Presnosť: %1%"
 
-#: activities/solar_system/QuizScreen.qml:256
+#: activities/solar_system/QuizScreen.qml:253
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Vaše konečné skóre je: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, fuzzy
 #| msgctxt "QuizScreen|"
 #| msgid ""
@@ -26036,7 +26036,7 @@ msgstr ""
 "viac ako 90%!<br>Pokúste sa znova vyskúšať svoje schopnosti alebo školiť sa "
 "v normálnom režime, aby ste prebádali viac o slnečnej sústave."
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

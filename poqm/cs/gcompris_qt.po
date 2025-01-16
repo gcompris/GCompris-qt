@@ -1,13 +1,13 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2023, 2024 Vít Pelčák <vit@pelcak.org>
 # SPDX-FileCopyrightText: 2021, 2022, 2023, 2024 Vit Pelcak <vit@pelcak.org>
-# SPDX-FileCopyrightText: 2025 Jan Papež (honyczek) <honyczek@centrum.cz>
+# SPDX-FileCopyrightText: 2025 Jan Papež (honyczek)
 # SPDX-FileCopyrightText: 2024, 2025 Jan Papez (honyczek)
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-09 23:08+0100\n"
+"PO-Revision-Date: 2025-01-16 00:19+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
-"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -5229,67 +5229,67 @@ msgstr ""
 "barvy inkoustu jsou azurová (speciální odstín modré), purpurová (speciální "
 "odstín růžové) a žlutá."
 
-#: activities/color_mix/ColorMix.qml:93
+#: activities/color_mix/ColorMix.qml:91
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "Slaďte s barvou"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "Nedostatek červené"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:225
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "Příliš mnoho červené"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:228
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "Nedostatek zelené"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "Příliš mnoho zelené"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:233
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "Nedostatek modré"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "Příliš mnoho modré"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "Málo purpurové"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "Příliš purpurové"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "Nedostatek žluté"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "Příliš mnoho žluté"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "Málo azurové"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "Příliš azurové"
@@ -14391,7 +14391,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "Levá a Pravá šipka: řízení vesmírné lodi"
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14404,7 +14404,7 @@ msgstr ""
 "na hmotnosti obou předmětů a opačné úměře druhé mocniny vzdálenosti mezi "
 "jejich středy."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14414,7 +14414,7 @@ msgstr ""
 "Protože gravitační síla je přímo úměrná hmotnosti obou ovlivňujících se "
 "předmětů, těžší předmět bude ten druhý přitahovat větší gravitační silou."
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14425,7 +14425,7 @@ msgstr ""
 "ovlivňujícími se předměty, takže větší vzdálenost povede ke slabší "
 "gravitační síle."
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14436,7 +14436,7 @@ msgstr ""
 "se nedostaneš k vesmírné stanici. Šipka představuje směr a intenzitu "
 "gravitace působící na tvou loď."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -19790,19 +19790,19 @@ msgstr "Sestupně, 8 náhodných písmen."
 #: activities/ordering_chronology/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Ordering chronology"
-msgstr ""
+msgstr "Seřaď podle času"
 
 #. Help title
 #: activities/ordering_chronology/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Arrange the given events in their chronological order."
-msgstr ""
+msgstr "Seřaď dané události podle časové posloupnosti."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr ""
+msgstr "Nauč se seřadit posloupnost událostí podle jejich časové posloupnosti."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -19811,21 +19811,23 @@ msgid ""
 "You are provided with some images. Drag and drop them to the upper area in "
 "their chronological order."
 msgstr ""
+"Máš k dispozici nějaké obrázky. Přetahuj je na horní oblast podle jejich "
+"časové posloupnosti."
 
 #: activities/ordering_chronology/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "Cycle of life of a flower."
-msgstr ""
+msgstr "Cyklus života květiny."
 
 #: activities/ordering_chronology/resource/2/Data.qml:13
 msgctxt "Data|"
 msgid "Travel to the Moon."
-msgstr ""
+msgstr "Cesta na Měsíc."
 
 #: activities/ordering_chronology/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Tux gathers an apple."
-msgstr ""
+msgstr "Tux sbírá jablko."
 
 #. Activity title
 #: activities/ordering_numbers/ActivityInfo.qml:20
@@ -19885,7 +19887,7 @@ msgstr "Přetahuj písmena podle obrácené abecedy."
 #: activities/ordering_numbers/ordering.js:70
 msgctxt "ordering|"
 msgid "Drag and drop the items in chronological order."
-msgstr ""
+msgstr "Přetahuj položky podle časové posloupnosti."
 
 #: activities/ordering_numbers/ordering.js:71
 msgctxt "ordering|"
@@ -19980,6 +19982,16 @@ msgid ""
 "Tigers|live|in|forests.\n"
 "Football|is|a|team|game."
 msgstr ""
+"Ten|pes|štěká.\n"
+"Tento|dům|je|červený.\n"
+"Chlapec|si|čte|knihu.\n"
+"Mám|milého|přítele.\n"
+"To|je|nádherný|výhled!\n"
+"Petr|skáče|do|bazénu.\n"
+"Lenka|chce|novou|knihu.\n"
+"Máma|mi|udělala|svačinu.\n"
+"Vlci|žijí|v|lese.\n"
+"Fotbal|je|týmová|hra."
 
 #: activities/ordering_sentences/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -20001,6 +20013,14 @@ msgid ""
 "Mom|has|asked|me|to|play|in|the|room.\n"
 "I|think|we|are|going|to|have|a|good|day."
 msgstr ""
+"Půjdeš|s|námi|někam|na|oběd?\n"
+"Marie|si|obula|boty|a|vyrazila|ven.\n"
+"Pavel|snědl|hodně|sladkostí|a|teď|mu|není|dobře.\n"
+"Naše|rodina|jezdí|na|dovolenou|k|moři|každý|rok.\n"
+"Můj|dědeček|mi|dal|loďku|vyrobenou|ze|dřeva.\n"
+"Až|dojíš|svůj|oběd|můžeš|si|sníst|zákusek.\n"
+"Přišel|za|mnou|kamarád|jestli|s|ním|půjdu|hrát|fotbal.\n"
+"Když|je|venku|pěkně|rád|si|jezdím|na|kole."
 
 #. Activity title
 #: activities/oware/ActivityInfo.qml:14
@@ -20032,6 +20052,10 @@ msgid ""
 "seeds, it is possible for the game to end in a draw, where each player has "
 "captured 24."
 msgstr ""
+"Hra začíná se čtyřmi zrnky v každém domečku. Cílem této hry je získat více "
+"zrnek než tvůj protihráč. Protože hra má jenom 48 zrnek, stačí ti jich "
+"získat jen 25, abys vyhrál. Jelikož je ve hře sudý počet zrnek, je možné, že "
+"hra skončí remízou, pokud oba hráči získají 24 zrnek."
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
@@ -20045,6 +20069,13 @@ msgid ""
 "empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
 "seed is placed in the next house."
 msgstr ""
+"Hráči ve svém tahu přesouvají zrnka. V každém tahu si hráč vybere jeden ze "
+"šesti domečků, které ovládá. Tento hráč vybere všechna zrnka z vybraného "
+"domečku a rozmístí je zasíváním do následujících domečku (proti směru "
+"hodinových ručiček). Zrnka nejsou zasívána do konečných bodovacích domečků "
+"ani do domečků, ze kterých byla vytažena. Počáteční domeček vyždy zůstane "
+"prázdný; pokud obsahoval 12 (nebo více) zrnek, je přeskočen a dvanácté zrnko "
+"je umístěno do dalšího domečku."
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -20061,6 +20092,15 @@ msgid ""
 "this would prevent the opponent from continuing the game, and the seeds are "
 "instead left on the board."
 msgstr ""
+"Získání zrnek nastává tehdy, pokud hráč dosáhne počtu zrnek v protihráčově "
+"domečku přesně dvou nebo tří zrnek a to v místě, kde ukončil tah. Takto vždy "
+"získává zrnka z odpovídajícího domečku a někdy i více: pokud předposlední "
+"domeček v tomto tahu dosáhl také počtu dvou nebo tří zrnek, tak také náleží "
+"hráči na tahu. A to ještě dále, dokud se nejdojde k domečku s jiným počtem "
+"zrnek nebo k domečku aktuálního hráče. Získaná zrnka jsou umístěna do "
+"bodovacího domečku. Pokud by však během tahu získal všechna protihráčova "
+"zrnka, zisk propadá, protože by to zabránilo protihráči pokračovat ve hře. V "
+"takovém případě zrnka zůstávají na místě."
 
 #: activities/oware/ActivityInfo.qml:25
 #: activities/oware_2players/ActivityInfo.qml:25
@@ -20070,6 +20110,9 @@ msgid ""
 "that gives the opponent seeds. If no such move is possible, the current "
 "player captures all seeds in their own territory, ending the game."
 msgstr ""
+"Pokud jsou všechny protihráčovy domečky prázdné, současný hráč musí udělat "
+"tah, který dá protihráčovi nějaká zrnka. Pokud není takový tah možný, "
+"současný hráč získává všechna zrnka na svém území a hra končí."
 
 #: activities/oware/oware.js:107
 msgctxt "oware|"
@@ -20246,7 +20289,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
-msgstr ""
+msgstr "Rozvíjej dovednosti v zobrazování a čtení map a nauč se sledovat směr."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
@@ -20410,7 +20453,7 @@ msgstr "Najdi rozdíly mezi dvěma obrázky."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Rozvíjej si schopnosti vnímání detailů."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -21494,7 +21537,7 @@ msgstr "Naprogramuj cestu"
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Naprogramuj cestu, abys pomohl Tuxovi chytit rybu."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
@@ -22310,13 +22353,13 @@ msgstr ""
 "Nyní, když znáš pravidla římských číslic, můžeš číst a psát čísla v římské "
 "soustavě."
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "Hodnota římského čísla: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:389
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -23430,222 +23473,223 @@ msgstr "Ctrl + S: uložit obrázek"
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr "Ctrl+O: Otevřít obrázek"
+msgstr "Ctrl + O: Otevřít obrázek"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Delete nebo Backspace: vytvořit nový obrázek"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Koncept vyhlazování štětcem od:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Koncept náčrtkového štětce od:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr ""
+msgstr "Barva pozadí"
 
 #: activities/sketch/BackgroundSelector.qml:42
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr ""
+msgstr "Obrázek na pozadí"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Mazací nástroje"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Nástroje pro kresbu"
 
 #: activities/sketch/ColorSelector.qml:76
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr ""
+msgstr "Paleta barev"
 
 #: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Přenastavit paletu"
 
 #: activities/sketch/ColorSelector.qml:211
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr ""
+msgstr "Vybraná barva"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr ""
+msgstr "Odstín"
 
+# Viz saturation
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:262
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr ""
+msgstr "Sytost"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:287
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr ""
+msgstr "Jas"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Přenastavit barvu"
 
 #: activities/sketch/ColorsPanel.qml:157
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr ""
+msgstr "Palety"
 
 #: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr ""
+msgstr "Uložte si obrázek"
 
 #: activities/sketch/FilesPanel.qml:85
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr ""
+msgstr "Otevřít obrázek"
 
 #: activities/sketch/FilesPanel.qml:116
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr ""
+msgstr "Nastavení nového obrázku"
 
 #: activities/sketch/FilesPanel.qml:144
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr ""
+msgstr "Barva pozadí"
 
 #: activities/sketch/FilesPanel.qml:190
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr ""
+msgstr "Obrázek na pozadí"
 
 #: activities/sketch/FilesPanel.qml:231
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr ""
+msgstr "Vytvořit nový obrázek"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Zakulacené rohy"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Geometrické nástroje"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Velikost vnitřního kruhu"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Nástroje pro přechody"
 
 #: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr ""
+msgstr "Tento obrázek jste neuložili. Chcete tuto aktivitu zavřít?"
 
 #: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr ""
+msgstr "Chcete tento obrázek odstranit?"
 
 #: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
 msgid "Yes"
-msgstr ""
+msgstr "Ano"
 
 #: activities/sketch/Sketch.qml:676
 msgctxt "Sketch|"
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Nástroj razítka"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Nástroj na text"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Zde napište svůj text"
 
 #: activities/sketch/ToolsPanel.qml:253
 msgctxt "ToolsPanel|"
 msgid "Tools"
-msgstr ""
+msgstr "Nástroje"
 
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Přenastavit nastavení nástroje"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Krytí"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Velikost"
 
 #: activities/sketch/ToolsPanel.qml:526
 msgctxt "ToolsPanel|"
 msgid "Speed"
-msgstr ""
+msgstr "Rychlost"
 
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Hustota"
 
 #: activities/sketch/ToolsPanel.qml:566
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr ""
+msgstr "Velikost bodů"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Vyhlazování"
 
 #: activities/sketch/ToolsPanel.qml:646
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr ""
+msgstr "Otočení"
 
 #: activities/sketch/ToolsPanel.qml:662
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr ""
+msgstr "Zrcadlit obrázek"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -24856,25 +24900,25 @@ msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 "Jak velký je Neptun ve srovnání s ostatními planetami Sluneční soustavy?"
 
-#: activities/solar_system/QuizScreen.qml:216
+#: activities/solar_system/QuizScreen.qml:214
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "Přesnost: %1%"
 
-#: activities/solar_system/QuizScreen.qml:256
+#: activities/solar_system/QuizScreen.qml:253
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "Tvé konečné skóre je <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24885,7 +24929,7 @@ msgstr ""
 "<br>Otestuj své znalosti znovu, nebo zkus trénovat ve výukovém režimu pro "
 "získání dalších znalostí o Sluneční soustavě."
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -25764,39 +25808,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Procvičuj sčítání."
+msgstr "Sčítání pod sebou"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Řešte Počtodoku."
+msgstr "Vyřeš zadaný součet."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Nauč se dělit s druhými a procvičuj dělení."
+msgstr "Nauč se vyřešit sčítání pod sebou."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Sčítání s 1."
+msgstr "Sčítací tabulky."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -25820,81 +25852,75 @@ msgstr ""
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Řešení sčítání, 2 číslice, 2 řádky, bez převádění."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Řešení sčítání, 4 číslice, 3 řádky."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Řešení sčítání, 4 číslice, 4 řádky."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Napiš své vlastní sčítání a vyřeš ho."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Napiš a vyřeš sčítání, 2 číslice, 2 řádky, bez převádění."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Řešení sčítání, 2 číslice, 2 řádky."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Napiš a vyřeš sčítání, 2 číslice, 2 řádky."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Napiš a vyřeš sčítání, 2 číslice, 3 řádky."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Řešení sčítání, 2 číslice, 3 řádky."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Napiš a vyřeš sčítání, 3 číslice, 2 řádky."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Řešení sčítání, 3 číslice, 3 řádky."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Řešení sčítání, 4 číslice, 2 řádky."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Procvičuj odčítání."
+msgstr "Odčítání pod sebou"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Vyber příkazy"
+msgstr "Vyřeš zadaný rozdíl."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -25902,17 +25928,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "Nauč se vyřešit odčítání pod sebou s půjčováním přeskupovací metodou.."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tabulka odčítání 1."
+msgstr "Odčítací tabulky."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -25945,139 +25968,101 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Řešení odčítání, 2 číslice, 2 řádky, bez převádění."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Řešení odčítání, 4 nebo 5 číslic, 3 řádky."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Řešení odčítání, 4 nebo 5 číslic, 4 řádky."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Nauč se tabulku odčítání 1."
+msgstr "Napiš své vlastní odčítání a vyřeš ho."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Napiš a vyřeš odčítání, 2 číslice, 2 řádky, bez převádění."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Řešení odčítání, 2 nebo 3 číslice, 2 řádky."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Napiš a vyřeš odčítání, 2 nebo 3 číslice, 2 řádky."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Napiš a vyřeš odčítání, 2 nebo 3 číslice, 3 řádky."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Řešení odčítání, 3 nebo 4 číslice, 2 řádky."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Napiš a vyřeš odčítání, 3 nebo 4 číslice, 2 řádky."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Řešení odčítání, 3 nebo 4 číslice, 3 řádky."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Odčítání s 1, 2 a 3."
+msgstr "Řešení odčítání, 4 nebo 5 číslic, 2 řádky."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Napiš:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Vyřeš:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Název: %1"
+msgstr "Vyřeš: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Jsem připraven"
+msgstr "Připraven"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Procvič si operaci odčítání."
+msgstr "Odčítání pod sebou (kompenzační)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26085,7 +26070,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr ""
+msgstr "Nauč se vyřešit odčítání pod sebou s půjčováním kompenzační metodou."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26277,12 +26262,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Napiš celé padající slovo dřív, než spadnou na zem."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Přidán překlad pro Lotyštinu"
+msgstr "Přidán překlad pro sanskrt"
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -26312,23 +26294,20 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Automatické použití nového jazyka při změně z nabídky (není vyžadován "
+"restart GComprisu)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Přidána spouštěcí obrazovka při startu"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"Nové volby příkazového řádku pro výpis všech aktivit a spuštění některé "
-"vybrané"
+"Nová volba příkazového řádku pro přepnutí vykreslovače (--renderer "
+"vykreslovač)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -27034,7 +27013,7 @@ msgstr "%1 úspěšně smazán!"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -27060,7 +27039,7 @@ msgstr "Ne"
 #: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr ""
+msgstr "Opravdu si přejete smazat tento soubor?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"

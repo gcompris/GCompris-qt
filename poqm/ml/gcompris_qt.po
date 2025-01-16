@@ -5312,67 +5312,67 @@ msgstr ""
 "മഷിയുടെ പ്രാഥമിക നിറങ്ങൾ, സിയാൻ (ഒരു പ്രത്യേകതരം നീല), മജന്ത (ഒരു പ്രത്യേകതരം പിങ്ക്), "
 "മഞ്ഞ എന്നിവയാണ്."
 
-#: activities/color_mix/ColorMix.qml:93
+#: activities/color_mix/ColorMix.qml:91
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "ഈ നിറം ഉണ്ടാക്കുക"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "ചുവപ്പ് ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:225
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "ചുവപ്പ് കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:228
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "പച്ച ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "പച്ച കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:233
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "നീല ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "നീല കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "മജന്ത ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "മജന്ത കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "മഞ്ഞ ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "മഞ്ഞ കൂടുതൽ"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "സിയാൻ ആവശ്യമുള്ളത്ര ഇല്ല"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "സിയാൻ കൂടുതൽ"
@@ -14752,7 +14752,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "ഇടതും വലതും ആരോകൾ: ബഹിരാകാശ കപ്പൽ ചലിപ്പിക്കാൻ"
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14765,7 +14765,7 @@ msgstr ""
 "അനുപാതത്തിലും വസ്തുക്കളുടെ കേന്ദ്രങ്ങൾ തമ്മിലുള്ള ദൂരത്തിന്റെ വർഗ്ഗത്തിന് വിപരീത "
 "അനുപാതത്തിലുമായിരിക്കും."
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14775,7 +14775,7 @@ msgstr ""
 "ഗുരുത്വാകർഷണ ബലം, സമ്പർക്കത്തിലുള്ള രണ്ട് വസ്തുക്കളുടെയും പിണ്ഡത്തിന് നേർ അനുപാതത്തിൽ ആയതിനാൽ "
 "കൂടുതൽ പിണ്ഡമുള്ള വസ്തുക്കൾ തമ്മിൽ വലിയ ഗുരുത്വാകർഷണ ബലത്തോടുകൂടി ആകർഷിക്കപ്പെടും. "
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14785,7 +14785,7 @@ msgstr ""
 "എന്നാൽ, ഈ ബലം സമ്പർക്കത്തിലുള്ള വസ്തുക്കളുടെ കേന്ദ്രങ്ങൾ തമ്മിലുള്ള ദൂരത്തിന്റെ വർഗ്ഗത്തിന് വിപരീത "
 "അനുപാതത്തിലായതിനാൽ, വേർപാടകലം കൂടുംതോറും ഉണ്ടാകുന്ന ഗുരുത്വാകർഷണ ബലം ദുർബലമാകും."
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14796,7 +14796,7 @@ msgstr ""
 "നിങ്ങളുടെ ലക്ഷ്യം. നിങ്ങളുടെ കപ്പലിനുള്ള ഗുരുത്വാകർഷണത്തിന്റെ ദിശയും തീവ്രതയുമാണ് ആരോ "
 "സൂചിപ്പിക്കുന്നത്."
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -22987,13 +22987,13 @@ msgstr ""
 "ഇപ്പോൾ നിങ്ങൾക്ക് നിയമങ്ങളറിയാം, ഇനി എല്ലാ റോമൻ അക്കങ്ങളെയും വായിക്കാനും എഴുതാനും നിങ്ങൾക്ക് "
 "കഴിയും."
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "റോമൻ വില: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:389
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -25624,26 +25624,26 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "സൗരയൂഥത്തിലെ മറ്റു ഗ്രഹങ്ങളെ അപേക്ഷിച്ച് നെപ്റ്റ്യൂൺ എത്ര വലുതാണ്?"
 
-#: activities/solar_system/QuizScreen.qml:216
+#: activities/solar_system/QuizScreen.qml:214
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "കൃത്യത: %1%"
 
-#: activities/solar_system/QuizScreen.qml:256
+#: activities/solar_system/QuizScreen.qml:253
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "നിങ്ങളുടെ അവസാനത്തെ സ്കോർ നില: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -25654,7 +25654,7 @@ msgstr ""
 "പരീക്ഷിക്കാൻ ഒന്നുകൂടി ശ്രമിക്കൂ അല്ലെങ്കിൽ പഠിക്കൽ എന്ന മോഡിൽ പരിശീലിച്ച് സൗരയൂഥത്തെ കുറിച്ച് "
 "കൂടുതൽ അറിയൂ."
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
