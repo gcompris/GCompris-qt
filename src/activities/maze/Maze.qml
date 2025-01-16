@@ -34,6 +34,9 @@ ActivityBase {
         signal start
         signal stop
 
+        readonly property bool horizontalLayout: layoutArea.width >= layoutArea.height
+        readonly property int baseMargins: 10 * ApplicationInfo.ratio
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -55,8 +58,8 @@ ActivityBase {
             property int playery: 0
             property int playerr: 270
             property int doory: 0
-            property int cellSize: Math.min((parent.height - bar.height * 1.2 - 40) / mazeRows,
-                                            (parent.width - 40) / mazeColumns)
+            property int cellSize: Math.min(mazeArea.height / mazeRows,
+                                            mazeArea.width / mazeColumns)
             property int wallSize: Math.max(2, cellSize / 10)
             property bool wallVisible: true
             property bool fastMode: false
@@ -75,6 +78,24 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.bottomMargin: bar.height * 1.2
+        }
+
+        Item {
+            id: mazeArea
+            anchors.top: layoutArea.top
+            anchors.left: layoutArea.left
+            anchors.right: layoutArea.right
+            anchors.topMargin: background.horizontalLayout ? 3 * background.baseMargins : fastmode.height + 2 * background.baseMargins
+            anchors.leftMargin: background.horizontalLayout ? fastmode.width + 2 * background.baseMargins : background.baseMargins
+            anchors.rightMargin: anchors.leftMargin
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: ApplicationSettings.isBarHidden && background.horizontalLayout ? 3 * background.baseMargins : bar.height * 1.2
+        }
+
         Rectangle {
             color: "#E3DEDB"
             anchors.fill: maze
@@ -82,9 +103,8 @@ ActivityBase {
 
         Grid {
             id: maze
-            anchors.top: parent.top
-            anchors.topMargin: 40
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: mazeArea.verticalCenter
+            anchors.horizontalCenter: mazeArea.horizontalCenter
             columns: 1
             rows: 1
             spacing: 0
@@ -202,18 +222,6 @@ ActivityBase {
             }
         }
 
-        // Show an hint to show that can move by swiping anywhere
-        Image {
-            anchors {
-                right: parent.right
-                bottom: parent.bottom
-                margins: 12
-            }
-            source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
-            sourceSize.width: 140
-            opacity: bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
-        }
-
         Image {
             id: player
             source: Activity.url + "tux_top_south.svg"
@@ -281,8 +289,8 @@ ActivityBase {
             source: Activity.url + "fast-mode-button.svg"
             width: 66 * ApplicationInfo.ratio
             visible: !message.visible
-            x: 10 * ApplicationInfo.ratio
-            y: 10 * ApplicationInfo.ratio
+            x: background.baseMargins
+            y: background.baseMargins
             onClicked: items.fastMode = !items.fastMode
         }
 
@@ -292,14 +300,23 @@ ActivityBase {
             anchors {
                 right: parent.right
                 top: parent.top
-                margins: 10
+                margins: background.baseMargins
             }
-            width: 66 * ApplicationInfo.ratio
+            width: fastmode.width
             visible: invisibleMode
             onClicked: {
                 items.wallVisible = !items.wallVisible
                 message.visible = items.wallVisible
             }
+        }
+
+        Rectangle {
+            anchors.centerIn: message
+            width: message.contentWidth + 2 * background.baseMargins
+            height: message.contentHeight
+            color: "#D0FFFFFF"
+            border.width: 0
+            visible: message.visible
         }
 
         GCText {
@@ -308,15 +325,32 @@ ActivityBase {
                 left: parent.left
                 right: switchMaze.left
                 top: parent.top
-                margins: 10
+                leftMargin: background.baseMargins * 2
+                rightMargin: background.baseMargins * 2
+                topMargin: background.horizontalLayout ? 0 : background.baseMargins
             }
-            width: background.width - x - 20
+            height: background.horizontalLayout ? 3 * background.baseMargins: fastmode.height
             fontSize: regularSize
+            fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             visible: false
             wrapMode: Text.Wrap
             text: qsTr("Look at your position, then switch back to invisible mode to continue your moves")
+        }
+
+        // A hint to show that you can move by swiping anywhere
+        Image {
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                rightMargin: background.baseMargins
+                bottomMargin: ApplicationSettings.isBarHidden ? background.baseMargins : bar.height * 1.2
+            }
+            z: 10
+            source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+            sourceSize.width: 40 * ApplicationInfo.ratio
+            opacity: bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
         }
 
         DialogHelp {
