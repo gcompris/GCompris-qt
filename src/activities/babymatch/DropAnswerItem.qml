@@ -40,6 +40,10 @@ Rectangle {
         id: targetImage
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
+        width: 1 // init not 0 size to avoid lag on first item drag
+        height: 1
+        sourceSize.width: width
+        sourceSize.height: height
         z: -1
     }
 
@@ -61,8 +65,6 @@ Rectangle {
         targetImage.source = tileImageItem.source
         targetImage.width = tileImageItem.fullWidth
         targetImage.height = tileImageItem.fullHeight
-        targetImage.sourceSize.width = tileImageItem.fullWidth
-        targetImage.sourceSize.height = tileImageItem.fullHeight
         if(currentTileImageItem) {
             currentTileImageItem.opacity = 0
         }
