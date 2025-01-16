@@ -5667,67 +5667,67 @@ msgstr ""
 "को मिला सकते हैं। रंग / स्याही के लिए प्राथमिक रंग सियान (नीले रंग का एक विशेष छाया), "
 "मैजेंटा (गुलाबी का विशेष छाया) और पीला होते हैं।"
 
-#: activities/color_mix/ColorMix.qml:93
+#: activities/color_mix/ColorMix.qml:91
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "रंग मिलाएँ"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "अपर्याप्त लाल"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:225
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "बहुत अधिक लाल"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:228
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "अपर्याप्त हरा"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "बहुत ज्यादा हरा"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:233
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "अपर्याप्त नीला"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "बहुत ज्यादा नीला"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "पर्याप्त मैजेंटा नहीं"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "बहुत ज्यादा मैजेंटा"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "अपर्याप्त पीला"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "बहुत ज्यादा पीला"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "पर्याप्त सियान नहीं"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "बहुत ज्यादा सियान"
@@ -16116,7 +16116,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "मीनार को दाईं ओर फिर से बनाएँ"
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:219
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16136,7 +16136,7 @@ msgstr ""
 "पर निर्भर करता है और दूरी के वर्ग के विपरीत आनुपातिक होता है जो उनके केंद्रों को अलग करता "
 "है।"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:223
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16155,7 +16155,7 @@ msgstr ""
 "अधिक बड़े ऑब्जेक्ट एक दूसरे से अधिक गुरुत्वाकर्षण बल के साथ आकर्षित होंगे। तो या तो ऑब्जेक्ट के "
 "द्रव्यमान के बढ़ने के कारण, उनके बीच गुरुत्वाकर्षण का आकर्षण भी बढ़ जाता है"
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:226
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16171,7 +16171,7 @@ msgstr ""
 "लेकिन यह बल दो परस्पर प्रभावित् वस्तुओं के बीच की दूरी के विपरीत रूप से आनुपातिक है, अधिक "
 "दूरी कमजोर गुरुत्वाकर्षण बलों में परिणाम होगा।"
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:229
 #, fuzzy
 #| msgctxt "IntroGravity|"
 #| msgid ""
@@ -16188,7 +16188,7 @@ msgstr ""
 "करना है। ग्रहों के करीब नहीं जाना है वार्ना आप उनसे टकरा जायेंगे। तीर आपके जहाज पर बल की "
 "दिशा इंगित करती है।"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -25289,13 +25289,13 @@ msgid ""
 msgstr ""
 "अब आप नियमों को जानते हैं, आप रोमन अंकों में किसी भी संख्या को पढ़ सकते हैं और लिख सकते हैं।"
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "रोमन मूल्य:  %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:389
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -28520,7 +28520,7 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:216
+#: activities/solar_system/QuizScreen.qml:214
 #, fuzzy, qt-format
 #| msgctxt "LandSafe|"
 #| msgid "Acceleration: %1"
@@ -28528,7 +28528,7 @@ msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "त्वरण: %1"
 
-#: activities/solar_system/QuizScreen.qml:256
+#: activities/solar_system/QuizScreen.qml:253
 #, fuzzy, qt-format
 #| msgctxt "Guesscount|"
 #| msgid "%1/%2"
@@ -28536,13 +28536,13 @@ msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1/%2"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -28550,7 +28550,7 @@ msgid ""
 "System."
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

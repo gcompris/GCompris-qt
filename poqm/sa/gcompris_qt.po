@@ -5133,67 +5133,67 @@ msgstr ""
 "वर्णाः निर्मातुं शक्नुमः । रङ्गस्य/मसिस्य प्राथमिकवर्णाः सियान (नीलस्य विशेषछाया), मैजेन्टा "
 "(गुलाबीविशेषछाया), पीतवर्णः च सन्ति ।"
 
-#: activities/color_mix/ColorMix.qml:93
+#: activities/color_mix/ColorMix.qml:91
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "वर्णस्य मेलनं कुरुत"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "न पर्याप्तं रक्तम्"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:225
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "अत्यधिकं रक्तम्"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:228
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "न पर्याप्तं हरितं"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "अतिशयेन हरित"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:233
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "न पर्याप्तं नीलवर्णम्"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "अतिशयेन नीलवर्णः"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "न पर्याप्तं मैजेन्टा"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "अत्यधिकं मैजेन्टा"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "न पर्याप्तं पीतं"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "अत्यधिकं पीतं भवति"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "न पर्याप्तं सियान"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "अतिशयेन सियान"
@@ -14390,7 +14390,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "वामः दक्षिणः च बाणाः : अन्तरिक्षयानं चालयन्तु"
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -14402,7 +14402,7 @@ msgstr ""
 "पृथिव्याः परं विस्तारयति । इदं गुरुत्वाकर्षणबलं प्रत्यक्षतया उभयवस्तूनाम् द्रव्यमानेन आश्रितं "
 "भवति, तेषां केन्द्रान्तरस्य वर्गस्य च विपरीतरूपेण आनुपातिकं भवति"
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -14412,7 +14412,7 @@ msgstr ""
 "गुरुत्वाकर्षणबलं द्वयोः परस्परक्रियाशीलवस्तूनाम् द्रव्यमानस्य साक्षात् आनुपातिकत्वात् "
 "अधिकविशालवस्तूनि अधिकेन गुरुत्वाकर्षणबलेन परस्परं आकर्षयिष्यन्ति"
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -14422,7 +14422,7 @@ msgstr ""
 "परन्तु यतः एतत् बलं द्वयोः परस्परक्रियाशीलवस्तूनाम् अन्तरस्य वर्गस्य विपरीतरूपेण आनुपातिकं "
 "भवति, तस्मात् अधिकं दूरं दुर्बलतरं गुरुत्वाकर्षणबलं भविष्यति"
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -14432,7 +14432,7 @@ msgstr ""
 "भवतः लक्ष्यं अस्ति यत् अन्तरिक्षयानं चालयितुं यावत् भवन्तः अन्तरिक्षस्थानकं न प्राप्नुवन्ति तावत् "
 "ग्रहाणां प्रहारं परिहरन्तु । बाणः भवतः पोते गुरुत्वाकर्षणस्य दिशां तीव्रता च सूचयति ।"
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -22238,13 +22238,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr "इदानीं भवन्तः नियमाः जानन्ति, रोमनसङ्ख्यासु संख्याः पठितुं लिखितुं च शक्नुवन्ति।"
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "रोमन मूल्यम् : %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:389
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -24787,26 +24787,26 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "सौरमण्डले अन्यग्रहाणाम् तुलने नेपच्यूनः कियत् विशालः अस्ति ?"
 
-#: activities/solar_system/QuizScreen.qml:216
+#: activities/solar_system/QuizScreen.qml:214
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "सटीकता : %1% ."
 
-#: activities/solar_system/QuizScreen.qml:256
+#: activities/solar_system/QuizScreen.qml:253
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr ""
 "भवतः अन्तिमः स्कोरः अस्ति: <font color=\"#3bb0de\">%1%</font> ।<br><br> %2"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -24817,7 +24817,7 @@ msgstr ""
 "परीक्षणार्थं पुनः प्रयासं कुर्वन्तु अथवा सौरमण्डलस्य विषये अधिकं ज्ञातुं सामान्यविधाने प्रशिक्षणं "
 "कुर्वन्तु।"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "

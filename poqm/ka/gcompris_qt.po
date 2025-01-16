@@ -5024,67 +5024,67 @@ msgid ""
 "yellow."
 msgstr ""
 
-#: activities/color_mix/ColorMix.qml:93
+#: activities/color_mix/ColorMix.qml:91
 msgctxt "ColorMix|"
 msgid "Match the color"
 msgstr "მიიღე ფერი"
 
-#: activities/color_mix/ColorMix.qml:206
+#: activities/color_mix/ColorMix.qml:223
 msgctxt "ColorMix|"
 msgid "Not enough red"
 msgstr "არასაკმარისი წითელი"
 
-#: activities/color_mix/ColorMix.qml:208
+#: activities/color_mix/ColorMix.qml:225
 msgctxt "ColorMix|"
 msgid "Too much red"
 msgstr "მეტისმეტად ბევრი წითელი"
 
-#: activities/color_mix/ColorMix.qml:211
+#: activities/color_mix/ColorMix.qml:228
 msgctxt "ColorMix|"
 msgid "Not enough green"
 msgstr "არასაკმარისი მწვანე"
 
-#: activities/color_mix/ColorMix.qml:213
+#: activities/color_mix/ColorMix.qml:230
 msgctxt "ColorMix|"
 msgid "Too much green"
 msgstr "მეტისმეტად ბევრი მწვანე"
 
-#: activities/color_mix/ColorMix.qml:216
+#: activities/color_mix/ColorMix.qml:233
 msgctxt "ColorMix|"
 msgid "Not enough blue"
 msgstr "არასაკმარისი ლურჯი"
 
-#: activities/color_mix/ColorMix.qml:218
+#: activities/color_mix/ColorMix.qml:235
 msgctxt "ColorMix|"
 msgid "Too much blue"
 msgstr "მეტისმეტად ბევრი ლურჯი"
 
-#: activities/color_mix/ColorMix.qml:222
+#: activities/color_mix/ColorMix.qml:239
 msgctxt "ColorMix|"
 msgid "Not enough magenta"
 msgstr "არასაკმარისი ალისფერი"
 
-#: activities/color_mix/ColorMix.qml:224
+#: activities/color_mix/ColorMix.qml:241
 msgctxt "ColorMix|"
 msgid "Too much magenta"
 msgstr "მეტისმეტად ბევრი ალისფერი"
 
-#: activities/color_mix/ColorMix.qml:227
+#: activities/color_mix/ColorMix.qml:244
 msgctxt "ColorMix|"
 msgid "Not enough yellow"
 msgstr "არასაკმარისი ყვითელი"
 
-#: activities/color_mix/ColorMix.qml:229
+#: activities/color_mix/ColorMix.qml:246
 msgctxt "ColorMix|"
 msgid "Too much yellow"
 msgstr "მეტისმეტად ბევრი ყვითელი"
 
-#: activities/color_mix/ColorMix.qml:232
+#: activities/color_mix/ColorMix.qml:249
 msgctxt "ColorMix|"
 msgid "Not enough cyan"
 msgstr "არასაკმარისი ცისფერი"
 
-#: activities/color_mix/ColorMix.qml:234
+#: activities/color_mix/ColorMix.qml:251
 msgctxt "ColorMix|"
 msgid "Too much cyan"
 msgstr "მეტისმეტად ბევრი ცისფერი"
@@ -13858,7 +13858,7 @@ msgctxt "ActivityInfo|"
 msgid "Left and Right arrows: move the spaceship"
 msgstr "მარცხნივ და მარჯვნივ ისრები: გადაადგილეთ კოსმოსური ხომალდი"
 
-#: activities/gravity/Gravity.qml:216
+#: activities/gravity/Gravity.qml:219
 msgctxt "Gravity|"
 msgid ""
 "Gravity is universal and Newton's law of universal gravitation extends "
@@ -13867,7 +13867,7 @@ msgid ""
 "square of the distance between their centers."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:220
+#: activities/gravity/Gravity.qml:223
 msgctxt "Gravity|"
 msgid ""
 "Since the gravitational force is directly proportional to the mass of both "
@@ -13875,7 +13875,7 @@ msgid ""
 "greater gravitational force."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:223
+#: activities/gravity/Gravity.qml:226
 msgctxt "Gravity|"
 msgid ""
 "But as this force is inversely proportional to the square of the distance "
@@ -13883,7 +13883,7 @@ msgid ""
 "gravitational force."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:226
+#: activities/gravity/Gravity.qml:229
 msgctxt "Gravity|"
 msgid ""
 "Your goal is to move the spaceship and avoid hitting the planets until you "
@@ -13891,7 +13891,7 @@ msgid ""
 "of the gravity on your ship."
 msgstr ""
 
-#: activities/gravity/Gravity.qml:229
+#: activities/gravity/Gravity.qml:232
 msgctxt "Gravity|"
 msgid ""
 "Try to stay near the center of the screen, and anticipate by looking at the "
@@ -20254,6 +20254,8 @@ msgid ""
 "On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 "
 "you will practice bass clef notes."
 msgstr ""
+"1-დან 5-მდე დონეზე თქვენ ივარჯიშებთ ტრიპლის clef ნოტებს და 6-დან 10 დონემდე "
+"თქვენ ივარჯიშებთ ბას clef ნოტებს."
 
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
@@ -20634,6 +20636,8 @@ msgid ""
 "<b>1. Move forward:</b> Moves Tux one step forward in the direction it is "
 "facing."
 msgstr ""
+"<b>1. წინსვლა:</b> მოძრაობს Tux ერთი ნაბიჯით წინ იმ მიმართულებით, რომელსაც "
+"ის აწყდება."
 
 #: activities/programmingMaze/programmingMaze.js:99
 msgctxt "programmingMaze|"
@@ -20661,6 +20665,8 @@ msgid ""
 "-Click on any instruction in the <b>instruction area</b> to add it to the "
 "<b>Main Function</b>."
 msgstr ""
+"-დააჭირეთ <b>ინსტრუქციის არეალში</b> მოცემულ ნებისმიერ ინსტრუქციას, რომ "
+"დაამატოთ იგი <b>მთავარ ფუნქციაში</b>."
 
 #: activities/programmingMaze/programmingMaze.js:107
 msgctxt "programmingMaze|"
@@ -20700,6 +20706,8 @@ msgid ""
 "<b>Loop</b> is a sequence of instructions that is <b>continually repeated "
 "the number of times defined by the number inside it</b>."
 msgstr ""
+"<b>Loop</b> არის ინსტრუქციების თანმიმდევრობა, რომელიც <b>მუდმივად მეორდება "
+"მის შიგნით მოცემული რიცხვით განსაზღვრული რაოდენობის რაოდენობაზე</b>."
 
 #: activities/programmingMaze/programmingMaze.js:125
 msgctxt "programmingMaze|"
@@ -21252,13 +21260,13 @@ msgid ""
 "Now you know the rules, you can read and write numbers in roman numerals."
 msgstr ""
 
-#: activities/roman_numerals/RomanNumerals.qml:388
+#: activities/roman_numerals/RomanNumerals.qml:386
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Roman value: %1"
 msgstr "რომაული მნიშვნელობა: %1"
 
-#: activities/roman_numerals/RomanNumerals.qml:389
+#: activities/roman_numerals/RomanNumerals.qml:387
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
@@ -23674,25 +23682,25 @@ msgctxt "Dataset|"
 msgid "How large is Neptune compared to other planets in the Solar System?"
 msgstr "რამხელაა ნეპტუნი მზის სისტემის სხვა პლანეტებთან შედარებით?"
 
-#: activities/solar_system/QuizScreen.qml:216
+#: activities/solar_system/QuizScreen.qml:214
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Accuracy: %1%"
 msgstr "სიზუსტე: %1%"
 
-#: activities/solar_system/QuizScreen.qml:256
+#: activities/solar_system/QuizScreen.qml:253
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 #, qt-format
 msgctxt "QuizScreen|"
 msgid "Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 msgstr "თქვენი საბოლოო ქულაა: <font color=\"#3bb0de\">%1%</font>.<br><br>%2"
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "You should score above 90% to become a Solar System expert!<br>Retry to test "
@@ -23700,7 +23708,7 @@ msgid ""
 "System."
 msgstr ""
 
-#: activities/solar_system/QuizScreen.qml:291
+#: activities/solar_system/QuizScreen.qml:288
 msgctxt "QuizScreen|"
 msgid ""
 "Great! You can replay the assessment to test your knowledge on more "
@@ -23998,6 +24006,8 @@ msgid ""
 "The + button will increase the depth of the submarine, while the - button "
 "will decrease the depth of the submarine."
 msgstr ""
+"+ ღილაკი გაზრდის წყალქვეშა ნავის სიღრმეს, ხოლო ღილაკი შეამცირებს წყალქვეშა "
+"ნავის სიღრმეს."
 
 #: activities/submarine/submarine.js:38
 msgctxt "submarine|"
@@ -25232,7 +25242,7 @@ msgstr ""
 #: core/ChangeLog.qml:158
 msgctxt "ChangeLog|"
 msgid "Translations added for: Slovenian, German, Galician."
-msgstr ""
+msgstr "დაემატა თარგმანი ენებისთვის: სლოვენიური, გერმანული, გალისიური."
 
 #: core/ChangeLog.qml:212
 #, qt-format
@@ -25374,6 +25384,13 @@ msgid ""
 "documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
 "what you need."
 msgstr ""
+"KDE გუნდის მონაწილე რომ გახდეთ აუცილებელი არაა პროგრამისტი იყოთ. შეგიძლიათ "
+"მიუერთდეთ ეროვნულ გუნებს KDE-ეს მშობლიურ ენაზე სათარგმნელად. შეგიძლიათ "
+"შექმნათ ნახატები, თემები, ხმოვანი ფაილები და გააუმჯობესოთ დოკუმენტაცია. "
+"გადაწყვიტეთ რას ისურვებთ!<br><br>არსებული პროექტების გასაცნობად და "
+"მონაწილეობის მისაღებად მოინახულეთ <a href=\"%1\">%1</a>.<br><br>უფრო "
+"დეტალური ინფორმაცია და დოკუმენტაცია შეგიძლიათ მოიპოვოთ საიტზე <a href=\"%2\">"
+"%2</a>."
 
 #: core/DialogAbout.qml:122
 #, qt-format
@@ -25390,6 +25407,16 @@ msgid ""
 "donation, using one of the ways described at <a href=\"%2\">%2</a>.<br /"
 "><br />Thank you very much in advance for your support."
 msgstr ""
+"KDE უფასოდ ვრცელდება, მაგრამ მისი შექმნა ხარჯებთანაა დაკავშირებული."
+"<br><br>ამიტომ KDE-ს გუნდმა დააარსა KDE ასოციაცია, არამომგებიანი "
+"ორგანიზაცია, რომელიც ტიუბინგენშია (გერმანია) რეგისტრირებული. KDE ასოციაცია "
+"KDE პროექტს წარმოადგენს იურიდიულ და ფინანსურ ასპექტებში. KDE ასოციაციის "
+"შესახებ უფრო დეტალური ინფორმაციის მისაღებად მოინახულეთ <a href=\"%1\">%1<a>."
+"<br><br>KDE გუნდს ესაჭიროება ფინანსური დახმარება. თანხის უდიდესი ნაწილი "
+"იხარჯება მონაწილეების იმ ხარჯების ასანაზღაურებლად, რომლებიც მათ გასწიეს KDE "
+"პროექტში წვლილის შეტანისას. KDE გუნდის მხარდაჭერა შეგიძლიათ ფინანსური "
+"შეწირულობებით ან სხვადასხვა სახით, რომლებიც აღწერილია საიტზე <a href=\"%2\">"
+"%2</a>.<br><br>წინასწარ გმადლობთ მხარდაჭერისთვის."
 
 #: core/DialogAbout.qml:139
 #, qt-format
@@ -25401,7 +25428,7 @@ msgstr ""
 #, qt-format
 msgctxt "DialogAbout|"
 msgid "<b>A big thanks to the translation team:</b> %1"
-msgstr ""
+msgstr "<b>დიდი მადლობა მთარგმნელობით გუნდს</b> : %1"
 
 #: core/DialogActivityConfig.qml:84
 #, qt-format
