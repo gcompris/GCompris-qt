@@ -210,10 +210,8 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: grid
-
-            color: "transparent"
             z: 2
             x: background.verticalBar ? 90 * ApplicationInfo.ratio : 0
             y: background.verticalBar ? 0 : 90 * ApplicationInfo.ratio
