@@ -115,9 +115,9 @@ ActivityBase {
             function initQuestion() {
                 questionText.text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
-                    if(items.firstQuestion)
+                    if(items.firstQuestion) {
                         items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
-                    else {
+                    } else {
                         activity.audioVoices.clearQueue()
                         items.audioOk = activity.audioVoices.play(Activity.getCurrentAudioQuestion())
                     }
@@ -128,11 +128,11 @@ ActivityBase {
             // initialization sequence for first question of first level
             SequentialAnimation {
                 id: initAnim
-                ScriptAction { script: questionItem.initQuestion() }
                 PauseAnimation { duration: 50 }
                 ScriptAction { script: if(!items.modelCopied)
                                             Activity.tempModelToContainer()
                 }
+                ScriptAction { script: questionItem.initQuestion() }
                 NumberAnimation { target: questionItem; property: "opacity"; to: 1; duration: 300 }
             }
 
