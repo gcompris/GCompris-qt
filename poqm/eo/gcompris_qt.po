@@ -17300,7 +17300,7 @@ msgstr ""
 "altnivelaj niveloj, alklaku la piktogramon \"nudpieda / sportŝuo\" en la "
 "supra maldekstra angulo de la ekrano por ŝanĝi la rapidreĝimon.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

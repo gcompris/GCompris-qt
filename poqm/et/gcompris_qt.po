@@ -17710,7 +17710,7 @@ msgstr ""
 "lülitada, klõpsa üleval vasakul nurgas palja jala / spordijalatsi ikoonile, "
 "millega saad seda vahetada.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

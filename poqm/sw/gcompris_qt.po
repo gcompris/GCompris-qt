@@ -17608,7 +17608,7 @@ msgstr ""
 "kukizima katika viwango vya juu, bofya aikoni ya \"barefoot/sportshoe\" "
 "kwenye kona ya juu kushoto ya skrini ili kugeuza hali ya kukimbia-haraka."
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

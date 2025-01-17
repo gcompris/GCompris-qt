@@ -17337,7 +17337,7 @@ msgstr ""
 "uheloc'h, klik war dTuks pe war an skeudennig  \"diarc'hen/botoù sport\" e "
 "korn uhel ar skramm a-gleiz.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

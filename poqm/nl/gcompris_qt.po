@@ -17407,7 +17407,7 @@ msgstr ""
 "geavanceerde niveaus, klik op het pictogram \"blootsvoets / sportschoen\" "
 "linksboven op het scherm om de snelloop-modus in of uit te schakelen.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

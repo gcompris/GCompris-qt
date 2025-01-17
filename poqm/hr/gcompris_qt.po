@@ -17227,7 +17227,7 @@ msgstr ""
 "naprednim razinama, klikni na ikonu \"bosonogi / sportska obuća\" u gornjem "
 "lijevom kutu zaslona za prebacivanje u brzi način rada.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

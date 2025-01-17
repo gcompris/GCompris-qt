@@ -17626,7 +17626,7 @@ msgstr ""
 "chaussures de sport » dans le coin en haut à gauche de l'écran pour le "
 "(dés)activer."
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

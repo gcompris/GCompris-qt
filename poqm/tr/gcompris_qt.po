@@ -17232,7 +17232,7 @@ msgstr ""
 "kapatmak istiyorsan ekranın sol üst köşesindeki “yalın ayak/spor ayakkabı” "
 "simgesine tıkla ve “Hızlı Koş Kipi”ni aç/kapat.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

@@ -17803,7 +17803,7 @@ msgstr ""
 "pictograma de „picioare goale / pantofi sport” din colțul din stânga sus al "
 "ecranului, pentru a comuta între cele două regimuri.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

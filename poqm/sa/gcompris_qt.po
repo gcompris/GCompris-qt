@@ -16930,7 +16930,7 @@ msgstr ""
 "उपयोक्तुं इच्छति अथवा उन्नतस्तरयोः अक्षमीकरणं कर्तुम् इच्छति तर्हि run-fast-mode इत्यस्य "
 "टॉगलं कर्तुं स्क्रीनस्य उपरि वामकोणे \"barefoot / sportshoe\" इति चिह्नं नुदतु\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

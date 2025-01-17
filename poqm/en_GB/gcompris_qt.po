@@ -17280,7 +17280,7 @@ msgstr ""
 "levels, click on the \"barefoot / sport shoe\" icon in the upper left corner "
 "of the screen to toggle the run-fast-mode.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

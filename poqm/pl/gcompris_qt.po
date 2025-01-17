@@ -17323,7 +17323,7 @@ msgstr ""
 "na wyższych poziomach, naciśnij na ikonę \"boso / buty sportowe\" w lewym "
 "górnym narożniku ekranu, aby przełączyć tryb-szybkiego-biegania.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

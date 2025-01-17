@@ -17529,7 +17529,7 @@ msgstr ""
 "«scalzo/scarpe sportive» nell'angolo in alto a sinistra dello schermo per "
 "cambiare la modalità.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

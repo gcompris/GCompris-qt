@@ -17641,7 +17641,7 @@ msgstr ""
 "απενεργοποιήσεις στα μεγαλύτερα επίπεδα, κάνε κλικ στο εικονίδιο πάνω "
 "αριστερά που εμφανίζει τα πόδια του Tux γυμνά ή με παπούτσια.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

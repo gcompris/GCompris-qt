@@ -17754,7 +17754,7 @@ msgstr ""
 "istəsəniz, ekranın sol yuxarı küncündəki \"ayaqyalın/idman ayaqqabılı\" "
 "nişanına vurun və sürətli-hərəkət-rejimini dəyişdirin.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

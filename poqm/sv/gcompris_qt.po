@@ -17273,7 +17273,7 @@ msgstr ""
 "ikonen med \"barfota eller sportsko\" i skärmens övre vänstra hörn för att "
 "sätta på eller stänga av snabbmetoden.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

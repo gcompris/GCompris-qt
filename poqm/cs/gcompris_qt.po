@@ -16970,7 +16970,7 @@ msgstr ""
 "bludištích, kliknutím na ikonu \"bosý / běžecké boty\" v levém horním rohu "
 "lze rychlochůzi přepínat."
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

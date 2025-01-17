@@ -17667,7 +17667,7 @@ msgstr ""
 "сложном, щёлкни по значку «босиком/кроссовки» в левом верхнем углу экрана.\n"
 "\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
