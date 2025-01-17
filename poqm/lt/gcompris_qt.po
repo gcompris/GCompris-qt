@@ -17675,7 +17675,7 @@ msgstr ""
 "ant ženkliuko „basos pėdos/sportbačiai“ viršutiniame kairiajame ekrano kampe."
 "\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

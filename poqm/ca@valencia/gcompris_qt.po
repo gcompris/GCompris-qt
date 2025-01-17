@@ -17766,7 +17766,7 @@ msgstr ""
 "o vols inhabilitar-la en els nivells avançats, fes clic damunt de la icona "
 "«descalç / sabata esportiva» en el cantó superior esquerre de la pantalla.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

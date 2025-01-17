@@ -19151,7 +19151,7 @@ msgstr ""
 "टॉगल करने के लिए स्क्रीन के ऊपरी बाएं कोने में \"नंगे पैर / स्पोर्ट्शू\" पर क्लिक करें।\n"
 "\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

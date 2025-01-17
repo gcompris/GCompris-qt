@@ -17409,7 +17409,7 @@ msgstr ""
 "për nivelet e përparuara, klikoni mbi ikonën “zbathur/atlete” në cepin e "
 "sipërm majtas në ekran që të kaloni/dilni nga mënyra turru.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

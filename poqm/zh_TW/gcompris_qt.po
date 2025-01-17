@@ -17162,7 +17162,7 @@ msgstr ""
 "在更高的關卡中，會自動開啟快跑模式。如果您在前面的關卡要使用，或是要在進階關"
 "卡中關掉此功能，只需要點擊左上方的腳或運動鞋的圖示即可。\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

@@ -16994,7 +16994,7 @@ msgstr ""
 "מוקדמים יותר או כדי לבטל אותו בשלבים מתקדמים, ללחוץ על סמל \"יחף/נעלי-ספורט"
 "\" בפינה השמאלית העליונה של המסך להחליף \"מצב-רוץ-מהר\".\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

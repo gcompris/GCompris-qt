@@ -17313,7 +17313,7 @@ msgstr ""
 "вышэйшых, то пстрыкніце па выяве \"басанож / абутак\" у левым верхнім кутку "
 "экрану, каб пераключыць шпаркую хаду.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

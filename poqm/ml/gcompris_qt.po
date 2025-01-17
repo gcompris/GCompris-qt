@@ -17431,7 +17431,7 @@ msgstr ""
 "വേണമെങ്കിലോ ഉയർന്ന ഘട്ടങ്ങളിൽ ഇല്ലാതാക്കണമെങ്കിലോ, സ്ക്രീനിന്റെ മുകളിൽ ഇടതു മൂലയിലുള്ള "
 "\"കാലുകൾ / സ്പോർട്ഷൂ\" ഐക്കണിൽ ക്ലിക്ക് ചെയ്താൽ മതി.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

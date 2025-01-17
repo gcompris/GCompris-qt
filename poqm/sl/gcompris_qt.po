@@ -17245,7 +17245,7 @@ msgstr ""
 "nižjih ravneh ali onemogočanje na višjih, je možnost mogoče preklopiti s "
 "klikom na ikono \"bosonog/obut\" v levem zgornjem kotu zaslona.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

@@ -17336,7 +17336,7 @@ msgstr ""
 "seinare labyrintane, kan du trykkja på «berrføtt/joggesko»-ikonet oppe til "
 "venstre.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

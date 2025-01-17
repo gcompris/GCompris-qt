@@ -18666,7 +18666,7 @@ msgstr ""
 "nó má tá tú ag iarraidh é a mhúchadh, cliceáil ar an deilbhín \"cosnochta/"
 "bróga reatha\" atá suite sa choirnéal uachtair ar chlé."
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

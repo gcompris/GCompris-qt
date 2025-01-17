@@ -9,13 +9,14 @@
 # Xavier A. Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006, 2007.
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
+# SPDX-FileCopyrightText: 2025 Anna Miró <ame.cic98@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2024-12-16 10:19+0100\n"
-"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"PO-Revision-Date: 2025-01-16 16:44+0100\n"
+"Last-Translator: Anna Miró <ame.cic98@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.03.70\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -90,17 +91,17 @@ msgstr "Troba els nombres sol·licitats i arrossega'ls al punt corresponent."
 #: activities/adjacent_numbers/resource/1/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 1 and 10."
-msgstr "Troba números entre 1 i 10."
+msgstr "Troba nombres entre 1 i 10."
 
 #: activities/adjacent_numbers/resource/2/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 0 and 20."
-msgstr "Troba números entre 0 i 20."
+msgstr "Troba nombres entre 0 i 20."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between 0 and 100."
-msgstr "Troba números entre 0 i 100."
+msgstr "Troba nombres entre 0 i 100."
 
 #: activities/adjacent_numbers/resource/3/Data.qml:14
 msgctxt "Data|"
@@ -140,12 +141,12 @@ msgstr "Troba els nombres intermedis."
 #: activities/adjacent_numbers/resource/4/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between -10 and -1."
-msgstr "Troba números entre -10 i -1."
+msgstr "Troba nombres entre -10 i -1."
 
 #: activities/adjacent_numbers/resource/5/Data.qml:9
 msgctxt "Data|"
 msgid "Find numbers between -10 and 10."
-msgstr "Troba números entre -10 i 10."
+msgstr "Troba nombres entre -10 i 10."
 
 #. Activity title
 #: activities/advanced_colors/ActivityInfo.qml:15
@@ -969,7 +970,7 @@ msgstr "Practiqueu la taula de multiplicar."
 #: activities/algebra_by/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to multiply numbers within a limited period of time."
-msgstr "Aprendre a multiplicar números en un temps limitat."
+msgstr "Aprendre a multiplicar nombres en un temps limitat."
 
 #. Help prerequisite
 #: activities/algebra_by/ActivityInfo.qml:22
@@ -988,8 +989,8 @@ msgid ""
 msgstr ""
 "A la pantalla es mostra una multiplicació. Trobeu ràpidament el resultat i "
 "empreu el teclat de l'ordinador o el teclat en pantalla per a escriure el "
-"producte dels números. Haureu de ser ràpid i enviar la resposta abans que "
-"els pingüins aterrin amb globus!"
+"producte dels nombres. Haureu de ser ràpid i enviar la resposta abans que "
+"els pingüins aterrin amb el globus!"
 
 #: activities/algebra_by/ActivityInfo.qml:26
 #: activities/algebra_div/ActivityInfo.qml:26
@@ -1087,7 +1088,7 @@ msgstr "Aprendre la taula de multiplicar del 9."
 #: activities/algebra_div/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Division of numbers"
-msgstr "Divisió de números"
+msgstr "Divisió de nombres"
 
 #. Help title
 #: activities/algebra_div/ActivityInfo.qml:17
@@ -1178,7 +1179,7 @@ msgstr "Aprendre la taula de divisió del 9."
 #: activities/algebra_minus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Subtraction of numbers"
-msgstr "Resta de números"
+msgstr "Resta de nombres"
 
 #. Help title
 #: activities/algebra_minus/ActivityInfo.qml:17
@@ -1192,7 +1193,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to find the difference between two numbers within a limited period of "
 "time."
-msgstr "Aprendre a trobar la diferència entre dos números en un temps limitat."
+msgstr "Aprendre a trobar la diferència entre dos nombres en un temps limitat."
 
 #. Help prerequisite
 #: activities/algebra_minus/ActivityInfo.qml:22
@@ -1281,25 +1282,25 @@ msgstr "Aprendre la taula de restar del 9."
 #: activities/algebra_plus/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Addition of numbers"
-msgstr "Suma de números"
+msgstr "Suma de nombres"
 
 #. Help title
 #: activities/algebra_plus/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Practice the addition of numbers."
-msgstr "Practiqueu la suma de números."
+msgstr "Practiqueu la suma de nombres."
 
 #. Help goal
 #: activities/algebra_plus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to find the sum of two numbers within a limited period of time."
-msgstr "Aprendre a trobar la suma de dos números en un temps limitat."
+msgstr "Aprendre a trobar la suma de dos nombres en un temps limitat."
 
 #. Help prerequisite
 #: activities/algebra_plus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Simple addition. Can recognize written numbers."
-msgstr "Suma senzilla. Saber reconèixer números escrits."
+msgstr "Suma senzilla. Saber reconèixer nombres escrits."
 
 #. Help manual
 #: activities/algebra_plus/ActivityInfo.qml:24
@@ -2240,9 +2241,9 @@ msgid ""
 "    "
 msgstr ""
 "Escriviu amb qualsevol tecla en el teclat.\n"
-"    Les lletres, números i altres tecles de caràcter mostraran el caràcter "
+"    Les lletres, nombres i altres tecles de caràcter mostraran el caràcter "
 "corresponent a la pantalla.\n"
-"    Si hi ha una veu corresponent, es reproduirà, en cas contrari, es "
+"    Si hi ha una veu corresponent, es reproduirà; en cas contrari, es "
 "reproduirà un so de xiulet.\n"
 "    Les altres tecles només reproduiran un so de clic.\n"
 "    "
@@ -2649,7 +2650,7 @@ msgid ""
 msgstr ""
 "Feu anar la bola fins a la porta. Aneu amb compte que no caigui per cap "
 "forat. Per a desbloquejar la porta, s'han de tocar en l'ordre correcte els "
-"botons de contacte amb número que hi ha en el quadre. Podeu moure la bola "
+"botons de contacte amb nombres que hi ha en el quadre. Podeu moure la bola "
 "inclinant el dispositiu mòbil. A les plataformes d'escriptori, useu les "
 "tecles de fletxa per a simular la inclinació."
 
@@ -3049,7 +3050,7 @@ msgid ""
 "Binary system uses these numbers very efficiently, allowing to count from 0 "
 "to 255 with 8 bits only."
 msgstr ""
-"El sistema binari usa aquests números d'una manera molt eficient, permetent "
+"El sistema binari usa aquests nombres d'una manera molt eficient, permetent "
 "comptar des de 0 fins al 255 només amb 8 bits."
 
 # skip-rule: t-sp_co
@@ -3189,7 +3190,7 @@ msgstr ""
 msgctxt "braille_alphabets|"
 msgid "This is easy, numbers are the same as letters from A to J."
 msgstr ""
-"Això és fàcil, els números són els mateixos que les lletres de l'A a la J."
+"Això és fàcil, els nombres són els mateixos que les lletres de l'A a la J."
 
 #: activities/braille_alphabets/FirstScreen.qml:26
 msgctxt "FirstScreen|"
@@ -3271,7 +3272,7 @@ msgctxt "questions|"
 msgid "Click on the dots in the braille cell area to produce the number %1."
 msgstr ""
 "Fes clic en els punts a l'àrea de la cel·la de braille per a presentar el "
-"número %1."
+"nombre %1."
 
 #: activities/braille_alphabets/questions.js:165
 #: activities/braille_alphabets/questions.js:169
@@ -3364,9 +3365,9 @@ msgstr ""
 "destinació per a omplir la quadrícula. Cada nombre ha d'aparèixer només una "
 "vegada en una fila i en una columna. Les gàbies són grups de cel·les que "
 "proporcionen informació sobre com omplir-les. Les gàbies fetes de més d'una "
-"cèl·lula proporcionen un resultat i un operador: tots els nombres de la "
-"gàbia, quan es combinen utilitzant l'operador, han de produir el resultat. "
-"Les gàbies fetes només amb una cel·la proporcionen directament el nombre a "
+"cel·la proporcionen un resultat i un operador: tots els nombres de la gàbia, "
+"quan es combinen utilitzant l'operador, han de produir el resultat. Les "
+"gàbies fetes només amb una cel·la proporcionen directament el nombre a "
 "introduir."
 
 #. + is the unicode character for addition mathematical operator (+)
@@ -4175,14 +4176,14 @@ msgstr ""
 #: activities/categorization/resource/board/category_numbers.qml:19
 msgctxt "category_numbers|"
 msgid "Numbers"
-msgstr "Números"
+msgstr "Nombres"
 
 #: activities/categorization/resource/board/category_numbers.qml:23
 #: activities/categorization/resource/board/category_numbers.qml:32
 #: activities/categorization/resource/board/category_numbers.qml:41
 msgctxt "category_numbers|"
 msgid "Place the NUMBERS to the right and other objects to the left"
-msgstr "Col·loca els NÚMEROS a la dreta i els altres objectes a l'esquerra"
+msgstr "Col·loca els NOMBRES a la dreta i els altres objectes a l'esquerra"
 
 #: activities/categorization/resource/board/category_odd_even.qml:20
 msgctxt "category_odd_even|"
@@ -4642,9 +4643,9 @@ msgstr ""
 "     Mireu d'empènyer el rei del rival cap a una cantonada.\n"
 "<b>Explicació</b>: d'aquesta manera el rei del rival només tindrà 3 "
 "direccions per a moure en lloc de 8 per a anar a una posició millor.\n"
-"     «Feu un parany». Empreu els vostres peons com esquer.\n"
+"     «Feu un parany». Empreu els vostres peons com a esquer.\n"
 "<b>Explicació</b>: d'aquesta manera atraureu l'oponent fora de la seva «zona "
-"confortable».\n"
+"de confort».\n"
 "     Sigueu prou pacient.\n"
 "<b>Explicació</b>: no us afanyeu gaire a moure, cal tenir paciència. "
 "Permeteu-vos pensar una mica i mireu de predir les futures jugades i "
@@ -4879,7 +4880,7 @@ msgstr ""
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
 msgid "For children who can read numbers."
-msgstr "Per a infants que poden llegir els números."
+msgstr "Per a infants que poden llegir els nombres."
 
 #: activities/chronos/resource/2/Data.qml:13
 msgctxt "Data|"
@@ -5763,13 +5764,13 @@ msgstr "Continua"
 #: activities/comparator/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Compare numbers"
-msgstr "Comparar els números"
+msgstr "Comparar els nombres"
 
 #. Help title
 #: activities/comparator/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Compare the numbers and choose the corresponding sign."
-msgstr "Compareu els números i trieu el signe corresponent."
+msgstr "Compareu els nombres i trieu el signe corresponent."
 
 #. Help goal
 #: activities/comparator/ActivityInfo.qml:22
@@ -5785,7 +5786,7 @@ msgid ""
 "symbol for this pair. When each line contains a symbol, select the OK button "
 "to validate the answers."
 msgstr ""
-"Seleccioneu un parell de números de la llista. A continuació, seleccioneu el "
+"Seleccioneu un parell de nombres de la llista. A continuació, seleccioneu el "
 "símbol de comparació correcte per a aquest parell. Quan cada línia contingui "
 "un símbol, seleccioneu el botó «OK» per a validar les respostes."
 
@@ -5801,7 +5802,7 @@ msgstr ""
 #: activities/comparator/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Up and Down arrows: select a pair of numbers in the list"
-msgstr "Fletxa amunt o avall: selecciona un parell de números de la llista"
+msgstr "Fletxa amunt o avall: selecciona un parell de nombres de la llista"
 
 #: activities/comparator/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -5827,7 +5828,7 @@ msgstr "&lt;, &gt; o =: introdueix el símbol corresponent"
 #: activities/tens_complement_find/resource/3/Data.qml:9
 msgctxt "Data|"
 msgid "Numbers from 1 to 9."
-msgstr "Números des de l'1 fins al 9."
+msgstr "Nombres des de l'1 fins al 9."
 
 #: activities/comparator/resource/10/Data.qml:14
 msgctxt "Data|"
@@ -5837,27 +5838,27 @@ msgstr "3 posicions decimals entre 0 i 999,999."
 #: activities/comparator/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 19."
-msgstr "Números des de l'1 fins al 19."
+msgstr "Nombres des de l'1 fins al 19."
 
 #: activities/comparator/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 100."
-msgstr "Números des de l'1 fins al 100."
+msgstr "Nombres des de l'1 fins al 100."
 
 #: activities/comparator/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000."
-msgstr "Números des de l'1 fins al 1000."
+msgstr "Nombres des de l'1 fins al 1000."
 
 #: activities/comparator/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1000000."
-msgstr "Números des de l'1 fins a 1000000."
+msgstr "Nombres des de l'1 fins a 1000000."
 
 #: activities/comparator/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers from 1 to 1 billion."
-msgstr "Números des de l'1 fins a 1 miliard."
+msgstr "Nombres des de l'1 fins a 1 miliard."
 
 #: activities/comparator/resource/7/Data.qml:14
 msgctxt "Data|"
@@ -6295,7 +6296,7 @@ msgid ""
 "number starting from 0 which is increased by one at each tick."
 msgstr ""
 "Un comptador BCD generalment pren un generador de senyals com a entrada. La "
-"sortida és un número BCD a partir de 0 que s'incrementa en un a cada pas."
+"sortida és un nombre BCD a partir de 0 que s'incrementa en un a cada pas."
 
 #: activities/digital_electricity/components/BCDToSevenSegment.qml:29
 msgctxt "BCDToSevenSegment|"
@@ -6308,7 +6309,7 @@ msgstr ""
 "Un convertidor BCD a 7 segments pren 4 entrades binàries i proporciona 7 "
 "sortides binàries, les quals permeten encendre els segments del nombre BCD "
 "(decimal codificat en binari «binary-coded decimal») per a mostrar els "
-"números entre el 0 i 9. La sortida BCD convertida a 7 segments és:"
+"nombres entre el 0 i 9. La sortida BCD convertida a 7 segments és:"
 
 #: activities/digital_electricity/components/Comparator.qml:22
 msgctxt "Comparator|"
@@ -6318,7 +6319,7 @@ msgid ""
 "output is 1 if A = B, otherwise it's 0. The third output is 1 if A > B, "
 "otherwise it's 0. "
 msgstr ""
-"Un comparador pren 2 números com a entrada, A i B. Els compara i dona un "
+"Un comparador pren 2 nombres com a entrada, A i B. Els compara i dona un "
 "resultat amb 3 valors. La primera sortida serà 1 si A < B, d'altra manera "
 "serà 0. La segona serà 1 si A = B, d'altra manera serà 0. La tercera serà 1 "
 "si A > B, d'altra manera serà 0."
@@ -6416,7 +6417,7 @@ msgstr ""
 "Una visualització de 7 segments pren 7 entrades binàries. La visualització "
 "es compon de 7 segments i cada segment s'encén segons l'entrada. En generar "
 "combinacions diferents d'entrades binàries, la visualització es pot usar per "
-"a mostrar números des del 0 fins al 9 i algunes lletres. El diagrama és:"
+"a mostrar nombres des del 0 fins al 9 i algunes lletres. El diagrama és:"
 
 #: activities/digital_electricity/components/SignalGenerator.qml:22
 msgctxt "SignalGenerator|"
@@ -6457,7 +6458,7 @@ msgid ""
 "output for a 2 inputs XOR gate is:"
 msgstr ""
 "Una sortida d'1 a la porta XOR si el nombre d'1 a l'entrada és senar i 0 si "
-"el número d'1 a l'entrada és parell. En aquesta activitat, es mostra una "
+"el nombre d'1 a l'entrada és parell. En aquesta activitat, es mostra una "
 "porta XOR amb una entrada de 2. La sortida per a la porta XOR amb una "
 "entrada de 2 és:"
 
@@ -6717,7 +6718,7 @@ msgid ""
 "The output of the XOR gate is one if the number of 1 in the input is odd. "
 "Else, the output is zero."
 msgstr ""
-"La sortida de la porta XOR serà un si el número d'1 a l'entrada és senar. "
+"La sortida de la porta XOR serà un si el nombre d'1 a l'entrada és senar. "
 "Altrament, la sortida serà zero."
 
 #: activities/digital_electricity/TutorialDataset.qml:310
@@ -6831,7 +6832,7 @@ msgid ""
 "output. The first value is 1 if A < B, the second value is 1 if A = B and "
 "the third value is 1 if A > B."
 msgstr ""
-"Un comparador pren dos números (A i B) com a entrada i produeix 3 valors com "
+"Un comparador pren dos nombres (A i B) com a entrada i produeix 3 valors com "
 "a sortida. El primer valor serà 1 si A < B, el segon valor serà 1 si A = B i "
 "el tercer valor serà 1 si A > B."
 
@@ -6873,7 +6874,7 @@ msgstr ""
 #: activities/digital_electricity/TutorialDataset.qml:528
 msgctxt "TutorialDataset|"
 msgid "Display the number 6 in the seven segment display."
-msgstr "Mostra el número 6 a la visualització de set segments."
+msgstr "Mostra el nombre 6 a la visualització de set segments."
 
 #: activities/digital_electricity/TutorialDataset.qml:541
 msgctxt "TutorialDataset|"
@@ -6950,19 +6951,19 @@ msgstr ""
 #: activities/drawnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw numbers"
-msgstr "Dibuixa els números"
+msgstr "Dibuixa els nombres"
 
 #. Help title
 #: activities/drawnumbers/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Connect the dots to draw numbers from 0 to 9."
-msgstr "Connecteu els punts per a dibuixar els números del 0 al 9."
+msgstr "Connecteu els punts per a dibuixar els nombres del 0 al 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr "Aprendre a dibuixar els números d'una manera divertida."
+msgstr "Aprendre a dibuixar els nombres d'una manera divertida."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -6972,7 +6973,7 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
-"Dibuixeu els números connectant els punts en l'ordre correcte. Podeu fer "
+"Dibuixeu els nombres connectant els punts en l'ordre correcte. Podeu fer "
 "clic i arrossegar d'un punt als següents, o fer clic a cada punt un darrere "
 "l'altre."
 
@@ -14375,7 +14376,7 @@ msgid ""
 "Guide the Number Muncher to the expressions that equal the number at the "
 "bottom of the screen."
 msgstr ""
-"Guieu al mastegador de números fins a les expressions que igualen el número "
+"Guieu al mastegador de nombres fins a les expressions que igualen el nombre "
 "a la part inferior de la pantalla."
 
 #. Help goal
@@ -14399,11 +14400,11 @@ msgid ""
 "move and tap to swallow the numbers."
 msgstr ""
 "Si teniu un teclat, podeu emprar les tecles de cursor per a moure i prémer "
-"la barra espaiadora per a menjar-vos els números. Amb un ratolí podeu fer "
+"la barra espaiadora per a menjar-vos els nombres. Amb un ratolí podeu fer "
 "clic al bloc del costat de la vostra posició per a moure i feu clic de nou "
-"per a menjar-vos els números. Amb una pantalla tàctil podeu fer-ho com amb "
+"per a menjar-vos els nombres. Amb una pantalla tàctil podeu fer-ho com amb "
 "un ratolí o arrossegar el dit en la direcció que voleu moure i toqueu per a "
-"menjar-vos els números."
+"menjar-vos els nombres."
 
 #: activities/gnumch-equality/ActivityInfo.qml:27
 #: activities/gnumch-factors/ActivityInfo.qml:27
@@ -14421,7 +14422,7 @@ msgstr "Ves amb compte per a evitar els Troggles."
 #: activities/gnumch-primes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Space: swallow the numbers"
-msgstr "Espai: per a menjar-se els números"
+msgstr "Espai: per a menjar-se els nombres"
 
 #: activities/gnumch-equality/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -14481,7 +14482,7 @@ msgstr "Se t'ha menjat un Troggle."
 #: activities/gnumch-equality/Warning.qml:43
 msgctxt "Warning|"
 msgid "You ate a wrong number."
-msgstr "T'has menjat un número incorrecte."
+msgstr "T'has menjat un nombre incorrecte."
 
 #: activities/gnumch-equality/Warning.qml:60
 msgctxt "Warning|"
@@ -14533,7 +14534,7 @@ msgid ""
 "Guide the Number Muncher to all the factors of the number at the bottom of "
 "the screen."
 msgstr ""
-"Guieu al mastegador de números fins a tots els factors del número a la part "
+"Guieu el mastegador de nombres fins a tots els factors del nombre a la part "
 "inferior de la pantalla."
 
 #. Help goal
@@ -14555,10 +14556,10 @@ msgid ""
 "families. So 1, 2, 3 and 6 all fit into the 6 family, but 4 belongs to "
 "another family."
 msgstr ""
-"Els factors d'un número són tots els números que divideixen enterament "
-"aquest número. Per exemple, els factors de 6 són 1, 2, 3 i 6. El 4 no és un "
-"factor de 6, perquè el 6 no es pot dividir en 4 parts iguals. Si un número "
-"és múltiple d'un segon número, llavors el segon serà un factor del primer. "
+"Els factors d'un nombre són tots els nombres que divideixen enterament "
+"aquest nombre. Per exemple, els factors de 6 són 1, 2, 3 i 6. El 4 no és un "
+"factor de 6, perquè el 6 no es pot dividir en 4 parts iguals. Si un nombre "
+"és múltiple d'un segon nombre, llavors el segon serà un factor del primer. "
 "Podeu pensar en els múltiples com en famílies, i els factors són la gent que "
 "pertany a aquesta família. Per tant 1, 2, 3 i 6 pertanyen a la família del "
 "6, però el 4 pertany a una altra família."
@@ -14576,8 +14577,8 @@ msgid ""
 "Guide the Number Muncher to all the expressions that do not equal the number "
 "at the bottom of the screen."
 msgstr ""
-"Guieu al mastegador de números fins a totes les expressions que no siguin "
-"iguals que el número a la part inferior de la pantalla."
+"Guieu el mastegador de nombres fins a totes les expressions que no siguin "
+"iguals que el nombre a la part inferior de la pantalla."
 
 #. Help goal
 #: activities/gnumch-inequality/ActivityInfo.qml:21
@@ -14618,7 +14619,7 @@ msgid ""
 "Guide the Number Muncher to all the multiples of the number at the bottom of "
 "the screen."
 msgstr ""
-"Guieu al mastegador de números fins a tots els múltiples del número a la "
+"Guieu el mastegador de nombres fins a tots els múltiples del nombre a la "
 "part inferior de la pantalla."
 
 # Aquesta explicació és massa enrevessada, l'he reduït una mica...
@@ -14639,15 +14640,15 @@ msgid ""
 "over. So 8 isn't a multiple of 5, nor is 23. Only 5, 10, 15, 20, 25 ... are "
 "multiples (or families or steps) of 5."
 msgstr ""
-"Els múltiples d'un número són tots els números que són iguals a l'original "
-"un nombre de vegades que un altre número. Per exemple, el 24, 36, 48 i 60 "
+"Els múltiples d'un nombre són tots els nombres que són iguals a l'original "
+"un nombre de vegades que un altre nombre. Per exemple, el 24, 36, 48 i 60 "
 "són tots múltiples de 12. El 25 no és un múltiple de 12 perquè no hi ha cap "
-"nombre enter que es pugui multiplicar per 12 i doni 25. Si un número és un "
-"factor d'un segon número, llavors el segon serà un múltiple del primer. Una "
+"nombre enter que es pugui multiplicar per 12 i doni 25. Si un nombre és un "
+"factor d'un segon nombre, llavors el segon serà un múltiple del primer. Una "
 "vegada més, podeu pensar en els múltiples com en famílies, i els factors són "
 "la gent que pertany a aquesta família. El factor 5, té 10 pares, 15 avis, 20 "
 "besavis, 25 rebesavis, i cada pas addicional de 5 seran més parents! Però el "
-"número 5 no pertany a les famílies del 8 o del 23. No trobareu cap número de "
+"nombre 5 no pertany a les famílies del 8 o del 23. No trobareu cap nombre de "
 "la família del 5 a la del 8 o del 23. Per tant el 8 no és un múltiple de 5, "
 "ni de 23. Només el 5, 10, 15, 20, 25... són múltiples (o famílies o passos) "
 "del 5."
@@ -14662,7 +14663,7 @@ msgstr "Primers amb en Gnumch"
 #: activities/gnumch-primes/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Guide the Number Muncher to all the prime numbers."
-msgstr "Guieu al mastegador de números fins a tots els nombres primers."
+msgstr "Guieu el mastegador de nombres fins a tots els nombres primers."
 
 #. Help goal
 #: activities/gnumch-primes/ActivityInfo.qml:20
@@ -14682,11 +14683,11 @@ msgid ""
 "5), but you can see that 6 has 2 and 3 in its family as well (6 × 1 = 6, 2 × "
 "3 = 6). So 6 is not a prime number."
 msgstr ""
-"Els nombres primers són números divisibles només entre ells mateixos i l'1. "
+"Els nombres primers són nombres divisibles només entre ells mateixos i l'1. "
 "Per exemple, el 3 és un nombre primer, però el 4 no (perquè és divisible "
 "entre 2). Podeu pensar que els nombres primers són com famílies amb només "
-"dos membres: ells mateixos i l'1. No trobareu cap altre número sense que "
-"sobri res. El 5 també és un d'aquests números solitaris (només 5 x 1 = 5), "
+"dos membres: ells mateixos i l'1. No trobareu cap altre nombre sense que "
+"sobri res. El 5 també és un d'aquests nombres solitaris (només 5 x 1 = 5), "
 "però en canvi el 6 no és un nombre primer perquè té a la seva família el 2 i "
 "el 3 (6 x 1 = 6, 2 x 3 = 6). Per tant el 6 no és un nombre primer."
 
@@ -15342,8 +15343,8 @@ msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"Arrossegueu els números i els operadors fins als quadres per a obtenir el "
-"número que voleu indicat a les instruccions."
+"Arrossegueu els nombres i els operadors fins als quadres per a obtenir el "
+"nombre que voleu indicat a les instruccions."
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -15370,7 +15371,7 @@ msgstr "Endevina el compte: %1"
 #: activities/guesscount/OperandRow.qml:40
 msgctxt "OperandRow|"
 msgid "Numbers"
-msgstr "Números"
+msgstr "Nombres"
 
 #: activities/guesscount/OperatorRow.qml:41
 msgctxt "OperatorRow|"
@@ -15401,18 +15402,18 @@ msgstr "Practica càlculs algebraics amb quatre operadors."
 #: activities/guessnumber/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Guess a number"
-msgstr "Endevina un número"
+msgstr "Endevina un nombre"
 
 #. Help title
 #: activities/guessnumber/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Help Tux escape the cave by finding the hidden number."
-msgstr "Ajudeu en Tux a escapar de la cova trobant el número ocult."
+msgstr "Ajudeu en Tux a escapar de la cova trobant el nombre ocult."
 
 #: activities/guessnumber/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Practicar la comparació de números."
+msgstr "Practicar la comparació de nombres."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15426,39 +15427,39 @@ msgid ""
 "vertical center of the screen, it means your number is over or under the "
 "number to find."
 msgstr ""
-"Llegiu les instruccions que us donen l'interval del número a trobar. "
-"Introduïu un número en el quadre d'entrada superior dret i se us dirà si el "
-"número és més gran o inferior. Torneu-ho a provar fins que trobeu la "
+"Llegiu les instruccions que us donen l'interval del nombre a trobar. "
+"Introduïu un nombre en el quadre d'entrada superior dret i se us dirà si el "
+"nombre és més gran o més petit. Torneu-ho a provar fins que trobeu la "
 "resposta correcta. La distància entre en Tux i el costat dret de la pantalla "
-"representa com de lluny esteu del número a trobar. Si en Tux està per sobre "
-"o per sota del centre vertical de la pantalla, vol dir que el vostre número "
-"està per sobre o per sota del número a trobar."
+"representa com de lluny esteu del nombre a trobar. Si en Tux està per sobre "
+"o per sota del centre vertical de la pantalla, vol dir que el vostre nombre "
+"està per sobre o per sota del nombre a trobar."
 
 #: activities/guessnumber/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
-msgstr "Dígits: per a introduir un número"
+msgstr "Dígits: per a introduir un nombre"
 
 #: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
-msgstr "Retrocés: per a esborrar un número"
+msgstr "Retrocés: per a esborrar un nombre"
 
 #: activities/guessnumber/guessnumber.js:57
 #: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
-msgstr "El número és massa alt"
+msgstr "El nombre és massa alt"
 
 #: activities/guessnumber/guessnumber.js:64
 msgctxt "guessnumber|"
 msgid "Your number is too low"
-msgstr "El número és massa baix"
+msgstr "El nombre és massa baix"
 
 #: activities/guessnumber/guessnumber.js:68
 msgctxt "guessnumber|"
 msgid "You found the number!"
-msgstr "Troba el número!"
+msgstr "Troba el nombre!"
 
 #: activities/guessnumber/resource/1/Data.qml:14
 #: activities/guessnumber/resource/1/Data.qml:19
@@ -15485,7 +15486,7 @@ msgstr "Troba el número!"
 #, qt-format
 msgctxt "Data|"
 msgid "Guess a number between 1 and %1."
-msgstr "Endevina un número entre l'1 i el %1."
+msgstr "Endevina un nombre entre l'1 i el %1."
 
 #: activities/hangman/ActivityConfig.qml:42
 msgctxt "ActivityConfig|"
@@ -16443,7 +16444,7 @@ msgstr "Colors"
 #: activities/lang/Lang.qml:190
 msgctxt "Lang|"
 msgid "number"
-msgstr "Números"
+msgstr "Nombres"
 
 #: activities/lang/Lang.qml:191
 msgctxt "Lang|"
@@ -16719,7 +16720,7 @@ msgstr ""
 #, qt-format
 msgctxt "Learn_decimals|"
 msgid "Display the number: %1"
-msgstr "Mostra el número: %1"
+msgstr "Mostra el nombre: %1"
 
 #: activities/learn_decimals/Learn_decimals.qml:130
 #, qt-format
@@ -16859,7 +16860,7 @@ msgstr ""
 "Es mostra una resta amb dos nombres decimals. El primer nombre de la resta "
 "es representa amb barres. Cada barra representa una unitat i cada quadre a "
 "la barra representa una dècima part d'aquesta unitat. Feu clic sobre els "
-"quadrats per a restar el segon número i representar el resultat de l'operació"
+"quadrats per a restar el segon nombre i representar el resultat de l'operació"
 
 #: activities/learn_decimals_subtractions/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -16879,7 +16880,7 @@ msgstr "Resta nombres decimals fins a 5."
 #: activities/learn_digits/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
-msgstr "Nombres àrabs"
+msgstr "Nombres aràbics"
 
 #: activities/learn_digits/ActivityConfig.qml:24
 #: activities/reversecount/ActivityConfig.qml:21
@@ -17762,7 +17763,7 @@ msgstr ""
 "«descalç / sabata esportiva» a la cantonada superior esquerra de la pantalla."
 "\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
@@ -18065,7 +18066,7 @@ msgstr "Joc de memòria per a enumerar"
 #: activities/memory-enumerate/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a number with a picture."
-msgstr "Destapeu les targetes per a fer coincidir un número amb una imatge."
+msgstr "Destapeu les targetes per a fer coincidir un nombre amb una imatge."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
@@ -18081,47 +18082,47 @@ msgid ""
 "You have to match the numbers with the corresponding pictures."
 msgstr ""
 "Cada targeta amaga una imatge amb un nombre d'elements. Haureu de fer "
-"coincidir els números amb les imatges corresponents."
+"coincidir els nombres amb les imatges corresponents."
 
 #: activities/memory-enumerate/resource/1/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 2."
-msgstr "Relaciona els números fins al 2."
+msgstr "Relaciona els nombres fins al 2."
 
 #: activities/memory-enumerate/resource/2/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 3."
-msgstr "Relaciona els números fins al 3."
+msgstr "Relaciona els nombres fins al 3."
 
 #: activities/memory-enumerate/resource/3/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 4."
-msgstr "Relaciona els números fins al 4."
+msgstr "Relaciona els nombres fins al 4."
 
 #: activities/memory-enumerate/resource/4/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 5."
-msgstr "Relaciona els números fins al 5."
+msgstr "Relaciona els nombres fins al 5."
 
 #: activities/memory-enumerate/resource/5/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 6."
-msgstr "Relaciona els números fins al 6."
+msgstr "Relaciona els nombres fins al 6."
 
 #: activities/memory-enumerate/resource/6/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 7."
-msgstr "Relaciona els números fins al 7."
+msgstr "Relaciona els nombres fins al 7."
 
 #: activities/memory-enumerate/resource/7/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 8."
-msgstr "Relaciona els números fins al 8."
+msgstr "Relaciona els nombres fins al 8."
 
 #: activities/memory-enumerate/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Match the numbers up to 9."
-msgstr "Relaciona els números fins al 9."
+msgstr "Relaciona els nombres fins al 9."
 
 #. Activity title
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:15
@@ -18923,19 +18924,19 @@ msgstr ""
 #: activities/memory-wordnumber/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Wordnumber memory game"
-msgstr "Joc de memòria paraula-número"
+msgstr "Joc de memòria paraula-nombre"
 
 #. Help title
 #: activities/memory-wordnumber/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Flip the cards to match a numeral with its number name."
-msgstr "Destapeu les targetes per a fer coincidir un número amb el seu nom."
+msgstr "Destapeu les targetes per a fer coincidir un nombre amb el seu nom."
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Practiqueu la lectura de números."
+msgstr "Practiqueu la lectura de nombres."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -18945,8 +18946,8 @@ msgid ""
 "number name (a number written in words). You have to match the numerals with "
 "the corresponding number names."
 msgstr ""
-"Cada targeta oculta un número (un número escrit en xifres) o un nom del "
-"número (un número escrit en paraules). Haureu de fer coincidir els números "
+"Cada targeta oculta un nombre (un nombre escrit en xifres) o un nom del "
+"nombre (un nombre escrit en paraules). Haureu de fer coincidir els nombres "
 "amb els seus noms corresponents."
 
 #: activities/memory-wordnumber/dataset.js:11
@@ -19975,7 +19976,7 @@ msgid ""
 "For example, the most common letter in English, the letter \"E\", has the "
 "shortest code, a single dot."
 msgstr ""
-"Cada símbol del codi Morse representa un caràcter de text (lletra o número) "
+"Cada símbol del codi Morse representa un caràcter de text (lletra o nombre) "
 "o un signe de procediment i està representat per una seqüència única de "
 "punts i ratlles. La durada d'una ratlla és tres vegades la d'un punt. Per a "
 "augmentar la velocitat de la comunicació, el codi va ser dissenyat de manera "
@@ -20373,7 +20374,7 @@ msgstr "Ressalta el punt següent"
 #: activities/number_sequence/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Number sequence"
-msgstr "Ordre dels números"
+msgstr "Ordre dels nombres"
 
 #. Help title
 #: activities/number_sequence/ActivityInfo.qml:17
@@ -20381,7 +20382,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
 msgstr ""
-"Seleccioneu els números un darrere l'altre segons la seqüència numèrica."
+"Seleccioneu els nombres un darrere l'altre segons la seqüència numèrica."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
@@ -20435,7 +20436,7 @@ msgstr ""
 "Seguiu les instruccions: atrapeu els núvols amb un nombre parell o senar en "
 "l'ordre correcte. Amb un teclat, empreu les tecles de cursor per a moure "
 "l'helicòpter. Amb un dispositiu apuntador, només feu clic o toqueu a la "
-"ubicació de destinació. Per a saber quin número heu d'atrapar, podeu "
+"ubicació de destinació. Per a saber quin nombre heu d'atrapar, podeu "
 "recordar-lo o comprovar la cantonada inferior dreta. En els nivells "
 "posteriors, cal recordar-lo."
 
@@ -20492,7 +20493,7 @@ msgid ""
 " If 6 is divided by 2 the result is 3 and the remainder is 0.\n"
 " If 7 is divided by 2 the result is 3 and the remainder is 1."
 msgstr ""
-"La resta és la quantitat «sobrant» després de dividir un número amb "
+"La resta és la quantitat «sobrant» després de dividir un nombre amb "
 "l'altre.\n"
 " Si 6 es divideix per 2, el resultat és 3 i la resta és 0.\n"
 " Si 7 es divideix per 2, el resultat és 3 i la resta és 1."
@@ -20505,7 +20506,7 @@ msgid ""
 "of 0 when divided by 2."
 msgstr ""
 "Per exemple: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, "
-"892, 1000. Tots aquests números són nombres parells, ja que deixen una resta "
+"892, 1000. Tots aquests nombres són nombres parells, ja que deixen una resta "
 "de 0 quan es divideixen per 2."
 
 #: activities/numbers-odd-even/resource/Tutorial3.qml:22
@@ -20516,7 +20517,7 @@ msgid ""
 "remainder of 0 when divided by 2."
 msgstr ""
 "Per exemple: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, "
-"897, 1001. Tots aquests números són nombres senars, ja que no deixen una "
+"897, 1001. Tots aquests nombres són nombres senars, ja que no deixen una "
 "resta de 0 quan es divideixen per 2."
 
 #: activities/numbers-odd-even/resource/TutorialBase.qml:32
@@ -20698,7 +20699,7 @@ msgstr "En Tux cull una poma."
 #: activities/ordering_numbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Ordering numbers"
-msgstr "Ordena els números"
+msgstr "Ordena els nombres"
 
 #. Help title
 #: activities/ordering_numbers/ActivityInfo.qml:22
@@ -20706,7 +20707,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the given numbers in ascending or descending order as requested."
 msgstr ""
-"Ordeneu els números indicats en ordre ascendent o descendent segons es "
+"Ordeneu els nombres indicats en ordre ascendent o descendent segons es "
 "demani."
 
 #. Help goal
@@ -20728,7 +20729,7 @@ msgid ""
 "You are provided with some numbers. Drag and drop them to the upper area in "
 "ascending or descending order as requested."
 msgstr ""
-"Es proporcionen alguns números. Arrossegueu i deixeu anar els números a "
+"Es proporcionen alguns nombres. Arrossegueu i deixeu anar els nombres a "
 "l'àrea de dalt en ordre ascendent o descendent segons es demani."
 
 #: activities/ordering_numbers/ordering.js:66
@@ -22094,18 +22095,18 @@ msgid ""
 msgstr ""
 "Atrapeu els núvols en ordre creixent. Amb un teclat empreu les tecles de "
 "cursor per a moure l'helicòpter. Amb un dispositiu apuntador simplement feu "
-"clic o toqueu a la ubicació de destinació. Per a saber quin número heu "
+"clic o toqueu a la ubicació de destinació. Per a saber quin nombre heu "
 "d'atrapar podeu recordar-lo o comprovar la cantonada inferior dreta."
 
 #: activities/planegame/Sequence.qml:13
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Atrapar el números començant des del 0."
+msgstr "Atrapar el nombres començant des del 0."
 
 #: activities/planegame/Sequence.qml:14
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Atrapar el números començant des del 10."
+msgstr "Atrapar el nombres començant des del 10."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -22672,7 +22673,7 @@ msgid ""
 "the number of times defined by the number inside it</b>."
 msgstr ""
 "El <b>bucle</b> és una seqüència d'instruccions que es <b>repeteix "
-"contínuament el nombre de vegades definit pel número dins seu</b>."
+"contínuament el nombre de vegades definit pel nombre dins seu</b>."
 
 #: activities/programmingMaze/programmingMaze.js:125
 msgctxt "programmingMaze|"
@@ -23077,7 +23078,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
-msgstr "Nombres àrabs"
+msgstr "Nombres aràbics"
 
 #: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:22
@@ -23122,7 +23123,7 @@ msgstr "Aprendre a comptar intervals."
 #: activities/reversecount/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can read numbers on a domino."
-msgstr "Poder llegir els números en una fitxa de dominó."
+msgstr "Poder llegir els nombres en una fitxa de dominó."
 
 #. Help manual
 #: activities/reversecount/ActivityInfo.qml:24
@@ -23152,7 +23153,7 @@ msgstr ""
 #, qt-format
 msgctxt "Data|"
 msgid "Numbers between %1 and %2."
-msgstr "Números entre el %1 i el %2."
+msgstr "Nombres entre el %1 i el %2."
 
 #. Activity title
 #: activities/roman_numerals/ActivityInfo.qml:15
@@ -23202,7 +23203,7 @@ msgstr ""
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: type arabic numerals"
-msgstr "Dígits: per a escriure els nombres àrabs"
+msgstr "Dígits: per a escriure els nombres aràbics"
 
 #: activities/roman_numerals/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -23224,9 +23225,9 @@ msgstr ""
 "Els nombres romans es construeixen a partir d'aquests 7 nombres:\n"
 "I i V (unitats, 1 i 5)\n"
 "X i L (desenes, 10 i 50)\n"
-"C i D (centenars, 100 i 500)\n"
+"C i D (centenes, 100 i 500)\n"
 " i M (1000).\n"
-" Una observació interessant és que el sistema numèric romà no té el número 0."
+" Una observació interessant és que el sistema numèric romà no té el nombre 0."
 
 #: activities/roman_numerals/RomanNumerals.qml:80
 #: activities/roman_numerals/RomanNumerals.qml:92
@@ -23236,7 +23237,7 @@ msgstr ""
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the roman number %1 to arabic."
-msgstr "Converteix el número romà %1 a àrab."
+msgstr "Converteix el nombre romà %1 a aràbic."
 
 #: activities/roman_numerals/RomanNumerals.qml:86
 #: activities/roman_numerals/RomanNumerals.qml:98
@@ -23250,7 +23251,7 @@ msgstr "Converteix el número romà %1 a àrab."
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Convert the arabic number %1 to roman."
-msgstr "Converteix el número àrab %1 a romà."
+msgstr "Converteix el nombre aràbic %1 a romà."
 
 #: activities/roman_numerals/RomanNumerals.qml:91
 #: activities/roman_numerals/RomanNumerals.qml:97
@@ -23289,7 +23290,7 @@ msgid ""
 "The 400 and the 900 hundreds are built using differences:\n"
 "CD (100 taken from 500) and CM (100 taken from 1000)."
 msgstr ""
-"Tots els centenars, excepte el 400 i 900, es construeixen amb sumes de C i "
+"Totes les centenes, excepte el 400 i 900, es construeixen amb sumes de C i "
 "D:\n"
 "C, CC, CCC, D, DC, DCC, DCCC.\n"
 "Els centenars 400 i 900 es construeixen emprant diferències:\n"
@@ -23308,8 +23309,8 @@ msgstr ""
 "S'usen sumes de M per a construir els milers: M, MM, MMM.\n"
 "Tingues en compte que no pots unir més de tres símbols idèntics. La primera "
 "implicació d'aquesta regla és que no es poden usar només sumes per a "
-"construir totes les unitats possibles, desenes o centenars, sinó que també "
-"cal emprar diferències. D'altra banda, això limita el número romà màxim a "
+"construir totes les unitats possibles, desenes o centenes, sinó que també "
+"cal emprar diferències. D'altra banda, això limita el nombre romà màxim a "
 "3999 (MMMCMXCIX)."
 
 #: activities/roman_numerals/RomanNumerals.qml:139
@@ -23328,7 +23329,7 @@ msgstr "Valor romà: %1"
 #, qt-format
 msgctxt "RomanNumerals|"
 msgid "Arabic value: %1"
-msgstr "Valor àrab: %1"
+msgstr "Valor aràbic: %1"
 
 #. Activity title
 #: activities/scalesboard/ActivityInfo.qml:15
@@ -23600,7 +23601,7 @@ msgstr "%1 g"
 #: activities/scalesboard_weight/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "The \"g\" symbol at the end of a number means gram."
-msgstr "El símbol «g» a la part final d'un número significa gram."
+msgstr "El símbol «g» a la part final d'un nombre significa gram."
 
 #: activities/scalesboard_weight/resource/1/Data.qml:32
 msgctxt "Data|"
@@ -23626,7 +23627,7 @@ msgid ""
 "The \"g\" symbol at the end of a number means gram. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"El símbol «g» al final d'un número significa gram. \n"
+"El símbol «g» al final d'un nombre significa gram. \n"
 " Deixeu anar els pesos al plat esquerre per a equilibrar la balança."
 
 #: activities/scalesboard_weight/resource/2/Data.qml:45
@@ -23669,7 +23670,7 @@ msgstr "%1 kg"
 #: activities/scalesboard_weight/resource/4/Data.qml:30
 msgctxt "Data|"
 msgid "The \"kg\" symbol at the end of a number means kilogram."
-msgstr "El símbol «kg» a la part final d'un número significa quilogram."
+msgstr "El símbol «kg» a la part final d'un nombre significa quilogram."
 
 #: activities/scalesboard_weight/resource/4/Data.qml:31
 msgctxt "Data|"
@@ -23711,7 +23712,7 @@ msgid ""
 "\"heavy\" an object is. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"El símbol «kg» a la part final d'un número significa quilogram. El quilogram "
+"El símbol «kg» a la part final d'un nombre significa quilogram. El quilogram "
 "és una unitat de massa, una propietat que correspon a la percepció comuna de "
 "quant «pesa» un objecte. \n"
 " Deixeu anar els pesos al plat esquerre per a equilibrar la balança."
@@ -23768,7 +23769,7 @@ msgid ""
 "sixteen ounces. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"El símbol «oz» a la part final d'un número significa unça. Una lliura "
+"El símbol «oz» a la part final d'un nombre significa unça. Una lliura "
 "equival a setze unces. \n"
 " Deixeu anar els pesos al plat esquerre per a equilibrar la balança."
 
@@ -23828,7 +23829,7 @@ msgid ""
 "mass, a property which corresponds to the common perception of how \"heavy\" "
 "an object is. This unit is used in the USA."
 msgstr ""
-"El símbol «lb» a la part final d'un número significa lliura. La lliura és "
+"El símbol «lb» a la part final d'un nombre significa lliura. La lliura és "
 "una unitat de massa, una propietat que correspon a la percepció comuna de "
 "quant «pesa» un objecte. Aquesta unitat s'empra als EUA."
 
@@ -23854,7 +23855,7 @@ msgid ""
 "The \"oz\" symbol at the end of a number means ounce. \n"
 " Drop weights on the left side to balance the scales."
 msgstr ""
-"El símbol «oz» a la part final d'un número significa unça. \n"
+"El símbol «oz» a la part final d'un nombre significa unça. \n"
 " Deixeu anar els pesos al plat esquerre per a equilibrar la balança."
 
 #: activities/scalesboard_weight_avoirdupois/resource/6/Data.qml:13
@@ -24684,7 +24685,7 @@ msgstr "Reflecteix la imatge"
 #: activities/smallnumbers/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dice"
-msgstr "Números amb daus"
+msgstr "Nombres amb daus"
 
 #. Help title
 #: activities/smallnumbers/ActivityInfo.qml:17
@@ -24716,100 +24717,100 @@ msgstr "Escriviu el nombre de punts que veieu en cada dau que cau."
 #: activities/smallnumbers2/resource/1/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 3."
-msgstr "Números fins al 3."
+msgstr "Nombres fins al 3."
 
 #: activities/smallnumbers/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, 1 or 2."
-msgstr "Escriu el número en el dau, l'1 o el 2."
+msgstr "Escriu el nombre en el dau, l'1 o el 2."
 
 #: activities/smallnumbers/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 3."
-msgstr "Escriu el número en el dau, des de l'1 fins al 3."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 3."
 
 #: activities/smallnumbers/resource/2/Data.qml:14
 #: activities/smallnumbers2/resource/2/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 4."
-msgstr "Números fins al 4."
+msgstr "Nombres fins al 4."
 
 #: activities/smallnumbers/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 4."
-msgstr "Escriu el número en el dau, des de l'1 fins al 4."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 4."
 
 #: activities/smallnumbers/resource/3/Data.qml:14
 #: activities/smallnumbers2/resource/3/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 5."
-msgstr "Números fins al 5."
+msgstr "Nombres fins al 5."
 
 #: activities/smallnumbers/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 5."
-msgstr "Escriu el número en el dau, des de l'1 fins al 5."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 5."
 
 #: activities/smallnumbers/resource/4/Data.qml:14
 #: activities/smallnumbers2/resource/4/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 6."
-msgstr "Números fins al 6."
+msgstr "Nombres fins al 6."
 
 #: activities/smallnumbers/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 6."
-msgstr "Escriu el número en el dau, des de l'1 fins al 6."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 6."
 
 #: activities/smallnumbers/resource/5/Data.qml:14
 #: activities/smallnumbers2/resource/5/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 7."
-msgstr "Números fins al 7."
+msgstr "Nombres fins al 7."
 
 #: activities/smallnumbers/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 7."
-msgstr "Escriu el número en el dau, des de l'1 fins al 7."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 7."
 
 #: activities/smallnumbers/resource/6/Data.qml:14
 #: activities/smallnumbers2/resource/6/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 8."
-msgstr "Números fins al 8."
+msgstr "Nombres fins al 8."
 
 #: activities/smallnumbers/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 8."
-msgstr "Escriu el número en el dau, des de l'1 fins al 8."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 8."
 
 #: activities/smallnumbers/resource/7/Data.qml:14
 #: activities/smallnumbers2/resource/7/Data.qml:14
 msgctxt "Data|"
 msgid "Numbers up to 9."
-msgstr "Números fins al 9."
+msgstr "Nombres fins al 9."
 
 #: activities/smallnumbers/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the dice, from 1 to 9."
-msgstr "Escriu el número en el dau, des de l'1 fins al 9."
+msgstr "Escriu el nombre en el dau, des de l'1 fins al 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:13
 #: activities/smallnumbers2/resource/8/Data.qml:13
 msgctxt "Data|"
 msgid "Numbers from 0 to 9."
-msgstr "Números des del 0 fins al 9."
+msgstr "Nombres des del 0 fins al 9."
 
 #: activities/smallnumbers/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the dice, from 0 to 9."
-msgstr "Escriu el número en el dau, des del 0 fins al 9."
+msgstr "Escriu el nombre en el dau, des del 0 fins al 9."
 
 #. Activity title
 #: activities/smallnumbers2/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numbers with dominoes"
-msgstr "Números amb fitxes de dominó"
+msgstr "Nombres amb fitxes de dominó"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
@@ -24826,47 +24827,47 @@ msgstr "Escriviu el nombre de punts que veieu en cada dominó que cau."
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, 1 or 2."
-msgstr "Escriviu el número a la fitxa de dominó, l'1 o el 2."
+msgstr "Escriviu el nombre a la fitxa de dominó, l'1 o el 2."
 
 #: activities/smallnumbers2/resource/1/Data.qml:26
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 3."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 3."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 3."
 
 #: activities/smallnumbers2/resource/2/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 4."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 4."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 4."
 
 #: activities/smallnumbers2/resource/3/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 5."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 5."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 5."
 
 #: activities/smallnumbers2/resource/4/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 6."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 6."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 6."
 
 #: activities/smallnumbers2/resource/5/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 7."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 7."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 7."
 
 #: activities/smallnumbers2/resource/6/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 8."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 8."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 8."
 
 #: activities/smallnumbers2/resource/7/Data.qml:18
 msgctxt "Data|"
 msgid "Type the number on the domino, from 1 to 9."
-msgstr "Escriviu el número a la fitxa de dominó, des de l'1 fins al 9."
+msgstr "Escriviu el nombre a la fitxa de dominó, des de l'1 fins al 9."
 
 #: activities/smallnumbers2/resource/8/Data.qml:17
 msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
-msgstr "Escriviu el número a la fitxa de dominó, des del 0 fins al 9."
+msgstr "Escriviu el nombre a la fitxa de dominó, des del 0 fins al 9."
 
 #: activities/solar_system/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
@@ -26358,12 +26359,12 @@ msgstr "Quadrícules de mida mitjana usant símbols."
 #: activities/sudoku/resource/3/Data.qml:13
 msgctxt "Data|"
 msgid "Medium grids using numbers and symbols."
-msgstr "Quadrícules de mida mitjana usant números i símbols."
+msgstr "Quadrícules de mida mitjana usant nombres i símbols."
 
 #: activities/sudoku/resource/4/Data.qml:13
 msgctxt "Data|"
 msgid "Large grids using numbers."
-msgstr "Quadrícules més grans usant números."
+msgstr "Quadrícules més grans usant nombres."
 
 # skip-rule: k-Super
 #. Activity title
@@ -26486,7 +26487,7 @@ msgstr "Llançar els dards a un objectiu i comptar la vostra puntuació."
 #: activities/target/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Practicar la suma de diversos números."
+msgstr "Practicar la suma de diversos nombres."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -26494,7 +26495,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Can move the mouse, can read numbers and count up to 15 for the first level."
 msgstr ""
-"Poder moure el ratolí, llegir els números i comptar fins a 15 en el primer "
+"Poder moure el ratolí, llegir els nombres i comptar fins a 15 en el primer "
 "nivell."
 
 #. Help manual
@@ -26633,7 +26634,7 @@ msgstr ""
 "Quan totes les línies estiguin completades, premeu el botó «OK» per a "
 "validar les respostes. Si algunes respostes són incorrectes, apareixerà una "
 "icona de creu a les línies corresponents. Per a corregir els errors, feu "
-"clic en els números incorrectes per a eliminar-los i repetir els passos "
+"clic en els nombres incorrectes per a eliminar-los i repetir els passos "
 "anteriors."
 
 #. Help manual
@@ -26700,7 +26701,7 @@ msgid ""
 "the answers. If some answers are incorrect, a cross icon will appear on the "
 "corresponding lines. Correct the errors, then press the OK button again."
 msgstr ""
-"Crea parells de nombres iguals a deu dins de cada parèntesi. Seleccioneu un "
+"Creeu parells de nombres iguals a deu dins de cada parèntesi. Seleccioneu un "
 "nombre i, a continuació, seleccioneu un altre nombre de la mateixa operació "
 "per a intercanviar la seva posició. Quan totes les línies estiguin "
 "completades, premeu el botó «OK» per a validar les respostes. Si algunes "
@@ -26749,10 +26750,9 @@ msgid ""
 "parentheses. Select a number in the list, then select an empty spot of an "
 "operation to move the selected number there."
 msgstr ""
-"Descompon les sumes per a crear parells de nombres iguals a deu dintre de "
-"cada parèntesi. Selecciona un nombre a la llista i, a continuació, "
-"selecciona un punt buit d'una operació per a moure el nombre seleccionat "
-"allà."
+"Descompon les sumes per a crear parells de nombres iguals a deu dins de cada "
+"parèntesi. Selecciona un nombre a la llista i, a continuació, selecciona un "
+"punt buit d'una operació per a moure el nombre seleccionat allà."
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
 msgctxt "Data|"
@@ -26885,18 +26885,18 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
-"En una suma vertical, els números s'escriuen un sota de l'altre. Han d'estar "
+"En una suma vertical, els nombres s'escriuen un sota de l'altre. Han d'estar "
 "ben alineats, començant per la columna de la dreta. El resultat s'escriu a "
-"la línia inferior. Per a resoldre la suma, comenceu sumant els números de la "
+"la línia inferior. Per a resoldre la suma, comenceu sumant els nombres de la "
 "primera columna (a la part dreta), i escriviu el resultat a la línia "
-"inferior de la mateixa columna. Si el resultat dona un número de dos dígits, "
+"inferior de la mateixa columna. Si el resultat dona un nombre de dos dígits, "
 "escriviu només el dígit de les unitats en el resultat, i afegiu el dígit de "
-"les desenes al costat del número superior de la columna següent: això "
-"s'anomena portar-ne. A continuació, sumeu els números de la columna següent, "
-"inclòs el número portat, i repetiu el procés fins que s'acabi l'operació. Un "
-"cop trobat el resultat, feu clic al botó D'acord per a validar la resposta. "
-"En alguns nivells, haureu d'escriure l'operació indicada abans de resoldre-"
-"la; en aquest cas, feu clic al botó Preparat quan l'operació s'hagi escrit "
+"les desenes al costat del nombre superior de la columna següent: això "
+"s'anomena portar-ne. A continuació, sumeu els nombres de la columna següent, "
+"inclòs el nombre portat, i repetiu el procés fins que s'acabi l'operació. Un "
+"cop trobat el resultat, feu clic al botó «OK» per a validar la resposta. En "
+"alguns nivells, haureu d'escriure l'operació indicada abans de resoldre-la; "
+"en aquest cas, feu clic al botó «Preparat» quan l'operació s'hagi escrit "
 "correctament i després resoleu-la."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
@@ -27015,27 +27015,27 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"En una resta vertical, els números s'escriuen un sota de l'altre. Han "
-"d'estar ben alineats, començant per la columna de la dreta. El número "
+"En una resta vertical, els nombres s'escriuen un sota de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El nombre "
 "superior s'anomena minuend: és la quantitat amb la qual comencem, de la qual "
-"restarem un altre número per obtenir la diferència. El nombre següent "
+"restarem un altre nombre per obtenir la diferència. El nombre següent "
 "s'anomena subtrahend: és la quantitat a restar del minuend per a obtenir la "
 "diferència. El resultat s'escriu a la línia inferior. Per a resoldre la "
-"resta, comenceu restant el número inferior de la primera columna del número "
+"resta, comenceu restant el nombre inferior de la primera columna del nombre "
 "superior de la primera columna (al costat dret), i escriviu el resultat a la "
-"línia inferior de la mateixa columna. Si el número superior és més petit que "
-"el número inferior, podeu demanar prestat del minuend de la columna següent: "
-"per exemple, si afegiu 10 unitats al número superior, haureu d'eliminar una "
-"unitat del número superior de la columna següent. Això s'anomena mètode de "
+"línia inferior de la mateixa columna. Si el nombre superior és més petit que "
+"el nombre inferior, podeu manllevar del minuend de la columna següent: per "
+"exemple, si afegiu 10 unitats al nombre superior, haureu d'eliminar una "
+"unitat del nombre superior de la columna següent. Això s'anomena mètode de "
 "portar-ne per reagrupament. Per a fer-ho en aquesta activitat, feu clic al "
-"rectangle buit a l'esquerra del número superior, seleccioneu 1, i a la "
-"columna següent feu clic al rectangle buit a la dreta del número superior i "
+"rectangle buit a l'esquerra del nombre superior, seleccioneu 1, i a la "
+"columna següent feu clic al rectangle buit a la dreta del nombre superior i "
 "seleccioneu -1. Després escriviu el resultat de la columna a la línia "
 "inferior, i feu el mateix a les columnes següents fins que l'operació hagi "
-"acabat. Un cop trobeu el resultat, feu clic al botó D'acord per a validar la "
+"acabat. Un cop trobeu el resultat, feu clic al botó «OK» per a validar la "
 "resposta. En alguns nivells, haureu d'escriure l'operació indicada abans de "
-"resoldre-la; en aquest cas, feu clic al botó Preparat quan l'operació s'hagi "
-"escrit correctament i després resoleu-la."
+"resoldre-la; en aquest cas, feu clic al botó «Preparat» quan l'operació "
+"s'hagi escrit correctament i després resoleu-la."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -27173,39 +27173,39 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
-"En una resta vertical, els números s'escriuen un sota de l'altre. Han "
-"d'estar ben alineats, començant per la columna de la dreta. El número "
+"En una resta vertical, els nombres s'escriuen un sota de l'altre. Han "
+"d'estar ben alineats, començant per la columna de la dreta. El nombre "
 "superior s'anomena minuend: és la quantitat amb la qual comencem, de la qual "
-"restarem un altre número per obtenir la diferència. El nombre següent "
+"restarem un altre nombre per obtenir la diferència. El nombre següent "
 "s'anomena subtrahend: és la quantitat a restar del minuend per a obtenir la "
 "diferència. El resultat s'escriu a la línia inferior. Per a resoldre la "
-"resta, comenceu restant el número inferior de la primera columna del número "
+"resta, comenceu restant el nombre inferior de la primera columna del nombre "
 "superior de la primera columna (al costat dret), i escriviu el resultat a la "
-"línia inferior de la mateixa columna. Si el número superior és més petit que "
-"el número inferior, podeu demanar prestat del subtrahend de la columna "
-"següent: per exemple, si afegiu 10 unitats al número superior, haureu "
-"d'afegir una unitat del número inferior de la columna següent. Això "
-"s'anomena mètode de portar-ne per compensació. Per a fer-ho en aquesta "
-"activitat, feu clic al rectangle buit a l'esquerra del número superior, "
-"seleccioneu 1, i a la columna següent feu clic al rectangle buit a la dreta "
-"del número superior i seleccioneu +1. Després escriviu el resultat de la "
-"columna a la línia inferior, i feu el mateix a les columnes següents fins "
-"que l'operació hagi acabat. Un cop trobeu el resultat, feu clic al botó "
-"D'acord per a validar la resposta. En alguns nivells, haureu d'escriure "
-"l'operació indicada abans de resoldre-la; en aquest cas, feu clic al botó "
-"Preparat quan l'operació s'hagi escrit correctament i després resoleu-la. Si "
-"el número superior és més petit que el número inferior, podeu demanar "
-"prestat del subtrahend a la columna següent: per exemple, si afegiu 10 "
-"unitats al número superior, heu d'afegir una unitat al número inferior de la "
-"columna següent. Això s'anomena préstec per mètode de compensació. Per fer-"
-"ho en aquesta activitat, feu clic al rectangle buit a l'esquerra del número "
-"superior, seleccioneu 1, i a la columna següent feu clic al rectangle buit a "
-"la dreta del número inferior i seleccioneu +1. Després escriu el resultat de "
-"la columna a la línia inferior, i fes el mateix a les següents columnes fins "
-"que l'operació hagi acabat. Un cop trobat el resultat, feu clic al botó "
-"D'acord per validar la resposta. En alguns nivells, haureu d'escriure "
-"l'operació donada abans de resoldre-la; en aquest cas, feu clic al botó "
-"Prepara quan l'operació s'escriu correctament i després resoleu-la."
+"línia inferior de la mateixa columna. Si el nombre superior és més petit que "
+"el nombre inferior, podeu manllevar del subtrahend de la columna següent: "
+"per exemple, si afegiu 10 unitats al nombre superior, haureu d'afegir una "
+"unitat del nombre inferior de la columna següent. Això s'anomena mètode de "
+"portar-ne per compensació. Per a fer-ho en aquesta activitat, feu clic al "
+"rectangle buit a l'esquerra del nombre superior, seleccioneu 1, i a la "
+"columna següent feu clic al rectangle buit a la dreta del nombre superior i "
+"seleccioneu +1. Després escriviu el resultat de la columna a la línia "
+"inferior, i feu el mateix a les columnes següents fins que l'operació hagi "
+"acabat. Un cop trobeu el resultat, feu clic al botó D'acord per a validar la "
+"resposta. En alguns nivells, haureu d'escriure l'operació indicada abans de "
+"resoldre-la; en aquest cas, feu clic al botó Preparat quan l'operació s'hagi "
+"escrit correctament i després resoleu-la. Si el nombre superior és més petit "
+"que el nombre inferior, podeu demanar prestat del subtrahend a la columna "
+"següent: per exemple, si afegiu 10 unitats al nombre superior, heu d'afegir "
+"una unitat al nombre inferior de la columna següent. Això s'anomena préstec "
+"per mètode de compensació. Per fer-ho en aquesta activitat, feu clic al "
+"rectangle buit a l'esquerra del nombre superior, seleccioneu 1, i a la "
+"columna següent feu clic al rectangle buit a la dreta del nombre inferior i "
+"seleccioneu +1. Després escriu el resultat de la columna a la línia "
+"inferior, i fes el mateix a les següents columnes fins que l'operació hagi "
+"acabat. Un cop trobat el resultat, feu clic al botó D'acord per validar la "
+"resposta. En alguns nivells, haureu d'escriure l'operació donada abans de "
+"resoldre-la; en aquest cas, feu clic al botó Prepara quan l'operació "
+"s'escriu correctament i després resoleu-la."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -28047,7 +28047,7 @@ msgstr "Punts"
 #: core/Domino.qml:59
 msgctxt "Domino|"
 msgid "Arabic Numbers"
-msgstr "Nombres àrabs"
+msgstr "Nombres aràbics"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
 #: core/Domino.qml:61

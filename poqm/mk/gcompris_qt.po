@@ -18146,7 +18146,7 @@ msgstr ""
 "горниот лев агол на екранот за да го овозможите или оневозможите режимот за "
 "брзо одење.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

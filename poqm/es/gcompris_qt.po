@@ -17484,7 +17484,7 @@ msgstr ""
 "«deportivas» en la esquina superior izquierda de la pantalla para activar o "
 "desactivar el modo rápido.\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "

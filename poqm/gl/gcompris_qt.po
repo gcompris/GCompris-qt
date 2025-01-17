@@ -17341,7 +17341,7 @@ msgstr ""
 "superiores, preme a icona de «Descalzo ou calzado» na esquina superior "
 "esquerda da pantalla para activar ou desactivar o modo.\t\t"
 
-#: activities/maze/Maze.qml:319
+#: activities/maze/Maze.qml:339
 msgctxt "Maze|"
 msgid ""
 "Look at your position, then switch back to invisible mode to continue your "
