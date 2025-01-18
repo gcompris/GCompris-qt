@@ -1327,7 +1327,7 @@ msgstr ""
 #: activities/align4/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (against Tux)"
-msgstr "Puissance 4 (contre Tux)"
+msgstr "4 en ligne (contre Tux)"
 
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
@@ -1399,7 +1399,7 @@ msgstr "Espace ou flèche du bas : lâcher le jeton"
 #: activities/align4_2players/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Align four (with a friend)"
-msgstr "Puissance 4 (avec un ami)"
+msgstr "4 en ligne (avec un ami)"
 
 #. Help manual
 #: activities/align4_2players/ActivityInfo.qml:22
@@ -5394,9 +5394,9 @@ msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Modifie la couleur en bougeant les curseurs sur les lampes ou en cliquant "
-"sur le bouton + et le bouton -. Puis clique sur le bouton OK pour confirmer "
-"ta réponse."
+"Modifie la couleur en bougeant les curseurs sur les tubes de peinture ou en "
+"cliquant sur le bouton + et le bouton -. Puis clique sur le bouton OK pour "
+"confirmer ta réponse."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -26287,7 +26287,7 @@ msgstr "Grilles de grande taille, avec des nombres."
 #: activities/superbrain/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Super brain"
-msgstr "Mastermind"
+msgstr "Devine le code secret"
 
 #. Help title
 #: activities/superbrain/ActivityInfo.qml:17
