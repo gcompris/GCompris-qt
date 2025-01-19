@@ -132,10 +132,8 @@ Popup {
             Layout.fillWidth: true
             Layout.leftMargin: 100
             Layout.rightMargin: 100
-            // TODO FIXME when we have openssl, we can enable it
             text: qsTr("Encrypted database (default will be yes)")
-            checked: false
-            enabled: false
+            checked: true
         }
 
         OkCancelButtons {
