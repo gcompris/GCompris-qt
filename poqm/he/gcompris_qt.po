@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-01-13 18:27+0200\n"
+"PO-Revision-Date: 2025-01-18 22:20+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -14190,13 +14190,13 @@ msgstr "זיהוי מחלקות לשוניות של המשפטים שמוצעי�
 #: activities/grammar_classes/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "למידה איך לזהות יחסות דקדוקיות."
 
 #. Help manual
 #: activities/grammar_analysis/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical classes to the corresponding words."
-msgstr ""
+msgstr "להקצות את היחסות הדקדוקיות המבוקשות למילים המתאימות."
 
 #: activities/grammar_analysis/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14204,17 +14204,19 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"נא לבחור יחסה דקדוקית מהרשימה ואז לבחור את התיבה שמתחת למילה ולהקצות לה את "
+"היחסה."
 
 #: activities/grammar_analysis/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "יש להשאיר את התיבה ריקה אם אין אף יחסה מתאימה."
 
 #: activities/grammar_analysis/ActivityInfo.qml:30
 #: activities/grammar_classes/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Up and down arrows or tabulation: switch between classes and words"
-msgstr ""
+msgstr "חצים למעלה/למטה או טאב: מעבר בין יחסות ומילים"
 
 #: activities/grammar_analysis/ActivityInfo.qml:31
 #: activities/grammar_classes/ActivityInfo.qml:31
@@ -14228,7 +14230,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Space: assign the selected class to the selected word and then select the "
 "next word"
-msgstr ""
+msgstr "רווח: הקצאת היחסה הנבחרת מילה הנבחרת ואז לבחור את המילה הבאה"
 
 #: activities/grammar_analysis/ActivityInfo.qml:33
 #: activities/grammar_classes/ActivityInfo.qml:33
@@ -14245,12 +14247,12 @@ msgstr "ניתוח דקדוקי"
 #: activities/grammar_analysis/grammar_analysis.js:48
 msgctxt "grammar_analysis|"
 msgid "Learn to identify grammatical classes."
-msgstr ""
+msgstr "למידה איך לזהות יחסות דקדוקיות."
 
 #: activities/grammar_analysis/grammar_analysis.js:39
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical classes."
-msgstr ""
+msgstr "לאתר את כל המילים שמתאימות ליחסות הדקדוקיות המבוקשות."
 
 #: activities/grammar_analysis/grammar_analysis.js:40
 msgctxt "grammar_analysis|"
@@ -14258,21 +14260,23 @@ msgid ""
 "Select a grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"נא לבחור יחסה דקדוקית מהרשימה ואז לבחור את התיבה שמתחת למילה ולהקצות לה את "
+"היחסה."
 
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr ""
+msgstr "יש להשאיר את התיבה ריקה אם אין אף יחסה מתאימה."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "יחסות דקדוקיות"
 
 #: activities/grammar_analysis/grammar_analysis.js:49
 msgctxt "grammar_analysis|"
 msgid "Find all the words corresponding to the requested grammatical class."
-msgstr ""
+msgstr "איתור כל המילים שמתאימות ליחסה הדקדוקית המבוקשת."
 
 #: activities/grammar_analysis/grammar_analysis.js:50
 msgctxt "grammar_analysis|"
@@ -14280,11 +14284,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"נא לבחור יחסה דקדוקית מהרשימה ואז לבחור את התיבה שמתחת למילה ולהקצות לה את "
+"היחסה."
 
 #: activities/grammar_analysis/grammar_analysis.js:51
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "יש להשאיר את הריבוע ריק אם היחסה לא תואמת."
 
 #: activities/grammar_analysis/grammar_analysis.js:421
 msgctxt "grammar_analysis|"
@@ -14295,13 +14301,13 @@ msgstr "ריק"
 #: activities/grammar_classes/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Grammatical classes"
-msgstr ""
+msgstr "יחסות דקדוקיות"
 
 #. Help manual
 #: activities/grammar_classes/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Assign the requested grammatical class to the corresponding words."
-msgstr ""
+msgstr "להקצות את היחסה הדקדוקית המבוקשת למילים המתאימות."
 
 #: activities/grammar_classes/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14309,11 +14315,13 @@ msgid ""
 "Select the grammatical class from the list, then select the box under a word "
 "and assign it the class."
 msgstr ""
+"נא לבחור יחסה דקדוקית מהרשימה ואז לבחור את התיבה שמתחת למילה ולהקצות לה את "
+"היחסה."
 
 #: activities/grammar_classes/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
-msgstr ""
+msgstr "יש להשאיר את הריבוע ריק אם היחסה לא תואמת."
 
 #: activities/graph-coloring/ActivityConfig.qml:21
 #: activities/superbrain/ActivityConfig.qml:21
@@ -26264,7 +26272,7 @@ msgstr ""
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "הוספת מסך פתיחה עם העלייה"
 
 #: core/ChangeLog.qml:36
 #, fuzzy
