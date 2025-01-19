@@ -11,6 +11,10 @@
 
 #include "database-controller.h"
 
+#include <openssl/evp.h>
+#include <openssl/aes.h>
+#include <openssl/err.h>
+
 #include <QDebug>
 #include <QCryptographicHash>
 #include <QJsonDocument>
@@ -29,10 +33,11 @@
 #define VIEWS_SQL ":/gcompris/src/server/database/create_views.sql"
 #define PATCH_SQL ":/gcompris/src/server/database/patch_%1.sql"
 
-static const char *AES_ALGORITHM = "aes128";
-static const char *AES_ENCRYPTION = "aes128-cbc-pkcs7";
-static const char *INITIALIZATION_VECTOR = "gcomprisInitialisationVector";
+static const char *AES_ENCRYPTION = "AES-128-CBC-CTS";
+static const unsigned char INITIALIZATION_VECTOR[] = "gcomprisInitialisationVector";
 
+static const char *COMMA_SEPARATOR = ",";
+static const char *COMMA_CRYPTED_SEPARATOR = "=,,";
 #include <iostream>
 
 namespace controllers {
@@ -164,14 +169,127 @@ namespace controllers {
         return QString::number(-1);
     }
 
+    
+    void handleErrors(const char *where)
+    {
+        qDebug() << "An error occurred in" << where;
+        while(unsigned long errCode = ERR_get_error()) {
+            char *err = ERR_error_string(errCode, NULL);
+            qDebug() << "OpenSSL error:" << err << errCode;
+        }
+    }
+    
     QString DatabaseController::decryptText(const QString &value)
     {
-        return value; // TODO Implement
+        if(value.isEmpty()) {
+            return value;
+        }
+        QByteArray cipherData = value.toLatin1();
+        cipherData.replace(COMMA_CRYPTED_SEPARATOR, COMMA_SEPARATOR);
+        int cipherTextLength = cipherData.size();
+        unsigned char* cipherText = (unsigned char*)cipherData.data();
+        unsigned char* plainText = (unsigned char*) malloc(cipherTextLength + AES_BLOCK_SIZE);
+
+        EVP_CIPHER_CTX *ctx = NULL;
+        int len = 0, plaintext_len = 0;
+
+        /* Create and initialise the context */
+        if(!(ctx = EVP_CIPHER_CTX_new())) {
+            handleErrors("EVP_CIPHER_CTX_new");
+        }
+
+        EVP_CIPHER *cipher = EVP_CIPHER_fetch(NULL, AES_ENCRYPTION, NULL);
+        /* Initialise the decryption operation. */
+        if(!EVP_DecryptInit_ex2(ctx, cipher, teacherPasswordKeyAsSha, INITIALIZATION_VECTOR, NULL)) {
+            handleErrors("EVP_DecryptInit_ex2");
+        }
+
+        /* Provide the message to be decrypted, and obtain the plaintext output.
+         * EVP_DecryptUpdate can be called multiple times if necessary
+         */
+        if(cipherText) {
+            if(!EVP_DecryptUpdate(ctx, plainText, &len, cipherText, cipherTextLength)) {
+                handleErrors("EVP_DecryptUpdate");
+            }
+
+            plaintext_len = len;
+        }
+
+        /* Finalise the decryption. A positive return value indicates success,
+         * anything else is a failure - the plaintext is not trustworthy.
+         */
+        EVP_DecryptFinal_ex(ctx, plainText + len, &len);
+
+        plaintext_len += len;
+
+        QByteArray out((char *) plainText, plaintext_len);
+        out.replace("+++++++++++++++++", "");
+        QByteArray base64 = QByteArray::fromBase64(out);
+        QString ret = QString::fromUtf8(base64);
+
+        /* Clean up */
+        EVP_CIPHER_free(cipher);
+        EVP_CIPHER_CTX_free(ctx);
+        free(plainText);
+
+        return ret;
     }
 
     QString DatabaseController::encryptText(const QString &value)
     {
-        return value; // TODO Implement
+        if(value.isEmpty()) {
+            return value;
+        }
+        QByteArray plainData = value.toUtf8().toBase64();
+        plainData.append("+++++++++++++++++");
+
+        int plainTextLength = plainData.size();
+        int cipherLength = plainTextLength;
+        unsigned char* cipherText = (unsigned char*) malloc(cipherLength);
+        unsigned char* plainText = (unsigned char*)plainData.data();
+
+        EVP_CIPHER_CTX *ctx = NULL;
+        int len = 0, ciphertext_len = 0;
+
+        /* Create and initialise the context */
+        if(!(ctx = EVP_CIPHER_CTX_new())) {
+            handleErrors("EVP_CIPHER_CTX_new");
+        }
+
+        EVP_CIPHER *cipher = EVP_CIPHER_fetch(NULL, AES_ENCRYPTION, NULL);
+
+        /* Initialise the encryption operation. */
+        if(1 != EVP_EncryptInit_ex2(ctx, cipher, teacherPasswordKeyAsSha, INITIALIZATION_VECTOR, NULL)) {
+            handleErrors("EVP_EncryptInit_ex2");
+        }
+
+        /* Provide the message to be encrypted, and obtain the encrypted output.
+         * EVP_EncryptUpdate can be called multiple times if necessary
+         */
+        if(plainText) {
+            if(1 != EVP_EncryptUpdate(ctx, cipherText, &len, plainText, plainTextLength)) {
+                handleErrors("EVP_EncryptUpdate");
+            }
+            ciphertext_len = len;
+        }
+
+        /* Finalise the encryption. Normally ciphertext bytes may be written at
+         * this stage, but this does not occur in GCM mode
+         */
+        if(1 != EVP_EncryptFinal_ex(ctx, cipherText + len, &len)) {
+            handleErrors("EVP_EncryptFinal_ex");
+        }
+        ciphertext_len += len;
+
+        QByteArray out((char *) cipherText, ciphertext_len);
+    
+        /* Clean up */
+        EVP_CIPHER_free(cipher);
+        EVP_CIPHER_CTX_free(ctx);
+        free(cipherText);
+
+        out.replace(COMMA_SEPARATOR, COMMA_CRYPTED_SEPARATOR);
+        return QString::fromLatin1(out);
     }
 
     bool DatabaseController::isDatabaseLoaded()
@@ -191,6 +309,8 @@ namespace controllers {
     void DatabaseController::setKey(const QString &teacherKey)
     {
         teacherPasswordKey = teacherKey;
+        QByteArray base64 = teacherPasswordKey.toUtf8().toBase64();
+        SHA256((unsigned char*)base64.data(), base64.size(), teacherPasswordKeyAsSha);
     }
 
     bool DatabaseController::isDatabaseLocked()
@@ -730,6 +850,43 @@ namespace controllers {
         }
     }
 
+    /**
+       Let's assume we have a string `in` #<¿BILY/ú\u007F¯á\u000Eã\u0005S\u007FÁoktn/Ã\u0090,Ô&?m&\u009A4ùQë¤=,,!ãB¤:64È*
+       We want to split on "," but not on "=,,"
+       First step is to split on "=,," => QList("#<¿BILY/ú\u007F¯á\u000Eã\u0005S\u007FÁoktn/Ã\u0090,Ô&?m&\u009A4ùQë¤", "!ãB¤:64È*")
+       Second step to split the list on "," => QList(QList("#<¿BILY/ú\u007F¯á\u000Eã\u0005S\u007FÁoktn/Ã\u0090", "Ô&?m&\u009A4ùQë¤"), QList("!ãB¤:64È*"))
+       Then we can merge back the list on one list and we join the last element of each list with the first one of the next list using the exclude separator =>
+       QList("#<¿BILY/ú\u007F¯á\u000Eã\u0005S\u007FÁoktn/Ã\u0090", "Ô&?m&\u009A4ùQë¤=,,!ãB¤:64È*")
+       We have splitted the original string with the correct separator!
+
+       This is used as the strings in the db are joined by `,`. However, with the crypting, we can have `,` in the output. Thus, we first modify the `,` in the crypted strings to `=,,` so we are sure everytime we face a `=,,` it should be converted back to a `,` and the change is reversible (we cannot have a single `,` in the crypted string, and `=,,` is always a `,`, as if we had `=,,` in the original crypted string, it would be converted to `==,,=,,`).
+     */
+    QStringList split(const QString &in, const QString &separator, const QString &exclude) {
+        QStringList splittedByExcluded = in.split(exclude);
+        QList<QStringList> splittedBySeparator;
+        for(int i = 0; i < splittedByExcluded.size(); ++ i) {
+            splittedBySeparator.push_back(splittedByExcluded[i].split(separator));
+        }
+        QStringList out;
+        QString lastElementOfPreviousList;
+        for(int i = 0; i < splittedBySeparator.size(); ++ i) {
+            QStringList list = splittedBySeparator[i];
+            for(int j = 0 ; j < list.size(); ++ j) {
+                QString atomicElement = list[j];
+                if(i != 0 && j == 0) {
+                    QString element = lastElementOfPreviousList + QString(COMMA_CRYPTED_SEPARATOR) + atomicElement;
+                    out << element;
+                }
+                else if(j < list.size() - 1) {
+                    out << atomicElement;
+                }
+                else {
+                    lastElementOfPreviousList = atomicElement;
+                }
+            }
+        }
+        return out;
+    }
     // Code based on: https://stackoverflow.com/questions/18058936/qt-qsqlquery-return-in-json
     // Execute request and returns a json array of objects as a string.
     // Decrypt fields contained in cryptedFields and cryptedLists
@@ -755,7 +912,7 @@ namespace controllers {
                         }
                         else if (cryptedLists.contains(field)) { // decrypt merged fields
                             QString str = value.toString();
-                            QStringList names = str.split(",");
+                            QStringList names = split(value.toString(), COMMA_SEPARATOR, COMMA_CRYPTED_SEPARATOR);
                             for (int i = 0; i < names.size(); ++i) {
                                 names[i] = decryptText(names[i]);
                             }

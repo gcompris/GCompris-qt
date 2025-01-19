@@ -28,10 +28,13 @@
 #include "controllers/network-controller.h"
 #include "netconst.h"
 
+#include <openssl/err.h>
+
 #define GCOMPRIS_SERVER_APPLICATION_NAME "gcompris-server"
 
 int main(int argc, char *argv[])
 {
+    ERR_load_crypto_strings();     
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
