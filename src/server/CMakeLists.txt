@@ -41,6 +41,7 @@ else()
 endif()
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${used_qt_modules})
+target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} OpenSSL::Crypto OpenSSL::SSL)
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
 gcompris_add_rcc(server

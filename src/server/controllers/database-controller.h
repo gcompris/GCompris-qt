@@ -19,6 +19,7 @@
 #include <QSqlQueryModel>
 #include <QSqlRecord>
 #include <QSqlError>
+#include <openssl/sha.h>
 
 namespace controllers {
 
@@ -93,6 +94,12 @@ namespace controllers {
         QString teacherPasswordKey;
         QStringList cryptedFields;
         QStringList cryptedLists;
+        /*
+          The teacher key will be converted to a sha256 to be used as encryption key for AES.
+          The QString will be encrypted as a base64 string from its UTF8 value and read as Latin1 text.
+          To decode it, the opposite conversion will be done. First, retrieve the bytearray as Latin1, then decode it, convert it from base64 and convert it to UTF8.
+         */
+        unsigned char teacherPasswordKeyAsSha[SHA256_DIGEST_LENGTH];
     };
 
 }
