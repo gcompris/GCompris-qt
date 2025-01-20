@@ -5,18 +5,18 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Antoni Bella Pérez <antonibella5@yahoo.com>
-# SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024 Josep M. Ferrer <txemaq@gmail.com>
+# SPDX-FileCopyrightText: 2025 Anna Miró <ame.cic98@gmail.com>
 # Xavier A. Conde Rueda <xavi.conde@gmail.com>, 2003, 2004, 2005, 2006, 2007.
 # Francesc Vilches Batet <francesc-vilches@gmail.com>, 2007, 2008.
 # Pau Iranzo <paugnu@gmail.com>, 2010.
-# SPDX-FileCopyrightText: 2025 Anna Miró <ame.cic98@gmail.com>
+# Josep M. Ferrer <txemaq@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-01-16 16:44+0100\n"
-"Last-Translator: Anna Miró <ame.cic98@gmail.com>\n"
+"PO-Revision-Date: 2025-01-19 12:59+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -13229,8 +13229,8 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
 msgstr ""
-"Arrossegueu i deixeu anar les peces del mapa a les seva localització "
-"correcta per a completar el mapa."
+"Arrossegueu i deixeu anar les peces del mapa a la seva localització correcta "
+"per a completar el mapa."
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -19313,7 +19313,7 @@ msgstr "Habilita les baixades/actualitzacions dels recursos externs"
 #: activities/menu/ConfigurationItem.qml:146
 msgctxt "ConfigurationItem|"
 msgid "Localized voices"
-msgstr "Veus localitzades"
+msgstr "Veus traduïdes"
 
 #: activities/menu/ConfigurationItem.qml:155
 msgctxt "ConfigurationItem|"

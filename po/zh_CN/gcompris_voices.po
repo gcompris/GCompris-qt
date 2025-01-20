@@ -75,7 +75,7 @@ msgstr "单击表上缺少的项目，然后按照其上方显示的逻辑顺序
 msgid ""
 "Click on the column where you wish your token to fall and try to align 4 "
 "tokens before Tux."
-msgstr ""
+msgstr "单击您希望硬币落入的列，并尝试在 Tux 完成对齐之前对齐 4 个硬币。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "align4_2players"
 #: activities/align4_2players/ActivityInfo.qml:18
@@ -1078,7 +1078,7 @@ msgstr "选择一种颜色并为您喜欢的矩形上色，尝试着组合成一
 #: activities/sketch/ActivityInfo.qml:19
 #, kde-format
 msgid "Use the tools to draw images."
-msgstr ""
+msgstr "使用工具绘制图像。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "smallnumbers"
 #: activities/smallnumbers/ActivityInfo.qml:18
@@ -1207,7 +1207,7 @@ msgstr "滑动汽车以腾出空间，这样红色的车就可以从箱子里出
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "解决给定的加法。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1215,7 +1215,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "解决给定的减法。"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18
