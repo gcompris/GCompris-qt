@@ -17,8 +17,8 @@ import "photo_hunter.js" as Activity
 Image {
     id: card
 
-    width: background.vert ? Math.min((parent.height - 30 * ApplicationInfo.ratio - slider.height) * 0.5, parent.width - 20 * ApplicationInfo.ratio) :
-                            Math.min((parent.width - 30 * ApplicationInfo.ratio) * 0.5, parent.height - 20 * ApplicationInfo.ratio - slider.height)
+    width: background.isHorizontal ? Math.min(frame.height - slider.height, parent.width * 0.5) - 10 * ApplicationInfo.ratio:
+                                    Math.min(frame.width, parent.height * 0.5 - 10 * ApplicationInfo.ratio)
     height: width
     sourceSize.width: width
     sourceSize.height: width
@@ -27,10 +27,10 @@ Image {
     property alias circleRepeater: circleRepeater
     property int good: 0
     property bool show: false
-    property double minimumSize: 20 * ApplicationInfo.ratio
+    property double minimumSize: 30 * ApplicationInfo.ratio
 
     Behavior on anchors.horizontalCenterOffset {
-        enabled: !background.vert
+        enabled: background.isHorizontal
         NumberAnimation {
             duration: 1000
             easing.type: Easing.InOutQuad
@@ -38,7 +38,7 @@ Image {
     }
 
     Behavior on anchors.verticalCenterOffset {
-        enabled: background.vert
+        enabled: !background.isHorizontal
         NumberAnimation {
             duration: 1000
             easing.type: Easing.InOutQuad
