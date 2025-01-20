@@ -1283,13 +1283,13 @@ msgstr "逻辑关联"
 #: activities/algorithm/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
-msgstr ""
+msgstr "完成水果排列。"
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr ""
+msgstr "逻辑关联练习。"
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1313,14 +1313,14 @@ msgstr "四子连珠 (和小企鹅玩)"
 #: activities/align4_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr ""
+msgstr "将四个硬币排成一排。"
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr ""
+msgstr "培养预判能力与策略技巧。"
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1338,7 +1338,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
-msgstr ""
+msgstr "在水平 (平着放)，垂直 (竖着放) 或斜线其中一个方向上使四个硬币成一排。"
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -1998,7 +1998,7 @@ msgstr "创建电路，使两个灯泡两端的电压都与电压源（电池）
 #: activities/baby_keyboard/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr ""
+msgstr "我的第一个键盘"
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2034,7 +2034,7 @@ msgstr ""
 #: activities/baby_mouse/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr ""
+msgstr "我的第一个鼠标"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2104,19 +2104,19 @@ msgstr "在中间区域进行简单点击，屏幕会显示点击位置的标记
 #: activities/baby_tangram/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr ""
+msgstr "简单智力游戏"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "匹配对象的形状。"
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr ""
+msgstr "学习将物体与其形状进行匹配。"
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2137,19 +2137,19 @@ msgstr "打字时播放字符读音"
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr ""
+msgstr "我的第一款文字处理器"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "写下您的第一篇文字内容。"
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr ""
+msgstr "学习如何使用文字处理器编写文本。"
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2285,13 +2285,13 @@ msgstr "完成谜题"
 #: activities/babyshapes/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
-msgstr ""
+msgstr "将形状拖放到各自的目标上。"
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr ""
+msgstr "学习匹配几何形状。"
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2551,7 +2551,7 @@ msgstr "您选择了用户定义的级别，但您尚未加载任何用户级别
 #: activities/balancebox/Balancebox.qml:72
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr ""
+msgstr "确定"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -2603,7 +2603,7 @@ msgstr "同时按下左右方向键，使球走直线。"
 #: activities/ballcatch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr ""
+msgstr "使左右手动作同步。"
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2662,14 +2662,14 @@ msgstr "Bargame (和 Tux)"
 #: activities/bargame_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
-msgstr ""
+msgstr "预判并迫使另一名玩家将球放入最后一个洞。"
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "培养战略思维、计数与减法技能。"
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -2990,7 +2990,7 @@ msgstr "练习盲文字母。"
 #: activities/braille_fun/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr ""
+msgstr "练习用盲文书写。"
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3027,6 +3027,7 @@ msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
+"在运用计算的同时，培养一些逻辑技能（数据关联、推理）以及空间想象能力。 "
 
 #. Help prerequisite
 #: activities/calcudoku/ActivityInfo.qml:21
@@ -4027,14 +4028,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
 "yours."
-msgstr ""
+msgstr "在你的对手吃掉您的所有棋子之前吃掉对手的所有棋子。"
 
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr ""
+msgstr "练习下跳棋。"
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4074,7 +4075,7 @@ msgstr ""
 #: activities/checkers_2players/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr ""
+msgstr "这个版本的跳棋遵循国际跳棋规则。"
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4158,14 +4159,14 @@ msgstr "（跟小企鹅）下棋"
 #: activities/chess_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr ""
+msgstr "探索并练习下国际象棋。"
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr ""
+msgstr "学习下国际象棋。"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4327,13 +4328,13 @@ msgstr "象棋残局"
 #: activities/chess_partyend/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
-msgstr ""
+msgstr "跟 Tux 玩国际象棋残局。"
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr ""
+msgstr "完成一场国际象棋游戏。"
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4382,7 +4383,7 @@ msgstr "拖放各个项目来组织故事。"
 #: activities/chronos/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr ""
+msgstr "学习如何识别故事的时间顺序。"
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4399,13 +4400,15 @@ msgid ""
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
+"排列图片以组成一个连贯的故事。将图片从侧边栏拖到相应的点上，然后点击“确定”按"
+"钮来验证你的答案。"
 
 #: activities/chronos/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
-msgstr ""
+msgstr "运输日期以在&lt;https://www.wikipedia.org&gt;上获取的信息为依据 。"
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -4720,7 +4723,7 @@ msgstr "听字母读音并点击它。"
 #: activities/click_on_letter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr ""
+msgstr "识别小写字母的名称。"
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -4765,7 +4768,7 @@ msgstr "点击一个大写字母"
 #: activities/click_on_letter_up/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr ""
+msgstr "识别大写字母的名称。"
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -4805,7 +4808,7 @@ msgstr "点击选中的点来绘制图画。"
 #: activities/clickanddraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr ""
+msgstr "使用鼠标或触摸屏来触摸特定的点。"
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -4821,6 +4824,8 @@ msgid ""
 "selected the next blue one appears. You can click and drag from one point to "
 "the next ones, or click on each point one after the other."
 msgstr ""
+"通过依次点击各个点来绘制图片。每次选中一个点，下一个蓝色的点就会出现。你可以"
+"从一个点点击并拖动到下一个点，也可以逐个点击每个点。 "
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -4838,13 +4843,13 @@ msgstr "在鱼游出鱼缸前全部抓住它们."
 #: activities/clickgame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
-msgstr ""
+msgstr "促进协调能力，精确的移动手。"
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr ""
+msgstr "可以移动鼠标或使用触摸屏，点击正确的位置。"
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -4981,7 +4986,7 @@ msgstr "探索颜料色彩混合。"
 #: activities/color_mix/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr ""
+msgstr "学会混合原色颜料以匹配给定的颜色。"
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -4997,6 +5002,8 @@ msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
+"通过移动绘画管上的滑块或点击 + 和 - 按钮来更改颜色。 然后点击“确定”按钮来验证"
+"您的答案。"
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5094,7 +5101,7 @@ msgstr "探索光的颜色混合。"
 #: activities/color_mix_light/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
-msgstr ""
+msgstr "学会混合原色光以匹配给定的颜色。"
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
@@ -5110,6 +5117,8 @@ msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
+"通过移动手电筒上的滑块或点击 + 和 - 按钮来更改颜色。 然后点击“确定”按钮来验证"
+"您的答案。"
 
 #: activities/color_mix_light/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5118,6 +5127,8 @@ msgid ""
 "light you add, the lighter the resulting color becomes. The primary colors "
 "of light are red, green and blue."
 msgstr ""
+"混合光的颜色与混合颜料的颜色恰恰相反。添加的光越多，最终得到的颜色就越浅。光"
+"的三原色是红色、绿色和蓝色。 "
 
 #. Activity title
 #: activities/colors/ActivityInfo.qml:15
@@ -5135,7 +5146,7 @@ msgstr "点击正确的颜色。"
 #: activities/colors/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
-msgstr ""
+msgstr "练习识别不同的颜色。"
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5455,7 +5466,7 @@ msgstr "将形状拖放到各自的目标上。"
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "培养观察力与空间想象能力。"
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
@@ -5463,7 +5474,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
-msgstr ""
+msgstr "在侧栏中找到图片详细信息，并将其拖动到图片的正确位置。"
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -5602,13 +5613,13 @@ msgstr "数字电路"
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr ""
+msgstr "创建并模拟一个数字逻辑电路"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
-msgstr ""
+msgstr "创建一个数字逻辑电路并实时模拟。"
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -5803,6 +5814,8 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
+"数字电路仅处理两种状态：0 和 1 。这是计算机技术的基础。在实际中，0 通常表示近"
+"乎等于接地电压的电压值，而 1 则表示电路的电源电压。 "
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -5878,6 +5891,8 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
+"数字电路仅处理两种状态：0 和 1 。这是计算机技术的基础。在实际中，0 通常表示近"
+"乎等于接地电压的电压值，而 1 则表示电路的电源电压。 "
 
 #: activities/digital_electricity/DigitalElectricity.qml:248
 msgctxt "DigitalElectricity|"
@@ -6275,7 +6290,7 @@ msgstr "把点连起来画字母。"
 #: activities/drawletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
-msgstr ""
+msgstr "学习如何以有趣的方式绘制字母。"
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
@@ -6285,6 +6300,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"按正确顺序连接各点来画出字母。你可以从一个点点击并拖动到下一个点，也可以逐个"
+"点击每个点。 "
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6302,7 +6319,7 @@ msgstr "把点连起来，画出数字 0 到 9。"
 #: activities/drawnumbers/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr ""
+msgstr "学习如何以有趣的方式绘制数字。"
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -6312,6 +6329,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"按正确顺序连接各点来画出数字。你可以从一个点点击并拖动到下一个点，也可以逐个"
+"点击每个点。 "
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -6329,7 +6348,7 @@ msgstr "按最佳计数方法放置物体."
 #: activities/enumerate/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr ""
+msgstr "练习数少量物品。"
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -6452,7 +6471,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the blocks and discover the "
 "hidden picture."
-msgstr ""
+msgstr "移动鼠标或触摸屏幕以擦除方块，从而发现隐藏的图片。"
 
 #. Help goal
 #: activities/erase/ActivityInfo.qml:20
@@ -6461,7 +6480,7 @@ msgstr ""
 #: activities/penalty/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
-msgstr ""
+msgstr "培养动作协调能力。"
 
 #. Help manual
 #: activities/erase/ActivityInfo.qml:24
@@ -6482,7 +6501,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
-msgstr ""
+msgstr "双击（屏幕或鼠标）以擦除方块，从而发现隐藏的图片。"
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -6500,7 +6519,7 @@ msgstr "点击或轻击"
 #: activities/erase_clic/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
-msgstr ""
+msgstr "点击或轻敲以擦除方块，从而发现隐藏的图片。"
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -8540,7 +8559,7 @@ msgstr "点亲属点"
 #: activities/family_find_relative/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr ""
+msgstr "选择具有给定关系的两个人。"
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -8557,6 +8576,9 @@ msgid ""
 "are marked with a ring on the link.\n"
 "Click on a pair of family members which have the given relationship."
 msgstr ""
+"展示了一个家谱，并附有一些说明。\n"
+"圆圈之间用线条相连以表明关系。已婚夫妇的连线标有圆环。\n"
+"单击具有给定关系的一对家庭成员。 "
 
 #. Activity title
 #: activities/fifteen/ActivityInfo.qml:15
@@ -8575,7 +8597,7 @@ msgstr "移动每项重建图像。"
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "培养预判能力与空间想象能力。"
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -8800,7 +8822,7 @@ msgstr "踢球进洞."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "了解方向和速度。"
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -8811,6 +8833,8 @@ msgid ""
 "follow its direction. You score a goal when the ball reaches the other edge "
 "of the field."
 msgstr ""
+"按下球，然后在球后方拖动以绘制瞄准线。线越长，踢球的力度就越大。当你松开这条"
+"线时，球将沿着其方向滚动。当球到达场地另一边时，您就得分了。 "
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -8822,13 +8846,13 @@ msgstr "创建分数"
 #: activities/fractions_create/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr ""
+msgstr "按照给定的说明选择合适数量的部件。"
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr ""
+msgstr "学习表示给定形状的分数。"
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
@@ -8837,6 +8861,8 @@ msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
 msgstr ""
+"屏幕上会显示一个被分割成相等部分的图形。请选择合适数量的部分，以表示给定的分"
+"数。"
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -9170,7 +9196,7 @@ msgstr "找到正确的分子和分母。"
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr ""
+msgstr "学习写出与给定分数表现形式相对应的分数。"
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -9181,6 +9207,8 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
+"写出与分数表示相对应的分数：数出所表示图形的总份数，将其设为分母。然后数出选"
+"定的份数，将其设为分子。 "
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -9394,20 +9422,20 @@ msgstr "定位区域"
 #: activities/geo-country/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
-msgstr ""
+msgstr "将这些地区放在国家地图上。"
 
 #. Help goal
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "学习查找并标注各国的区域位置。"
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
-msgstr ""
+msgstr "将该国的不同地区拖放到正确的位置以完成地图。"
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -12191,21 +12219,21 @@ msgstr "定位国家"
 #: activities/geography/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr ""
+msgstr "将各大陆和国家放在世界地图上。"
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
-msgstr ""
+msgstr "学会在世界地图上找出各大洲及众多国家的位置并标注出来。 "
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
-msgstr ""
+msgstr "将地图碎片拖放到正确的位置以完成地图。"
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -13325,13 +13353,13 @@ msgstr "在字母落地前键入对应的字母。"
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr ""
+msgstr "匹配键盘上的字母与屏幕上的字母。"
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
-msgstr ""
+msgstr "在字母落地前在键盘上键入对应的字母。"
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -13990,7 +14018,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
-msgstr ""
+msgstr "培养您的策略意识，学会辨别颜色并记住相对位置。"
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -14110,7 +14138,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
 "division."
-msgstr ""
+msgstr "能够用加法、减法、乘法和除法计算。"
 
 #. Help manual
 #: activities/guess24/ActivityInfo.qml:23
@@ -14203,13 +14231,13 @@ msgstr ""
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "找到能得出所需结果的运算方法。"
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr ""
+msgstr "练习分解计算。"
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -14223,7 +14251,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
-msgstr ""
+msgstr "将数字和运算符拖到方框中，以得出指令中给出的数字。"
 
 #: activities/guesscount/Admin.qml:30
 #, qt-format
@@ -14292,7 +14320,7 @@ msgstr "通过找到隐藏数字来帮助小企鹅逃离洞穴。"
 #: activities/guessnumber/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr ""
+msgstr "练习比较数字。"
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -14387,7 +14415,7 @@ msgstr "猜出给定词的字母。"
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "提升您的拼写能力和词汇量。"
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -14450,14 +14478,14 @@ msgstr "汉诺塔 (简化版)"
 #: activities/hanoi/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr ""
+msgstr "将右侧的塔复制到空桩上。"
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "发展战略思维。"
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
@@ -14466,6 +14494,7 @@ msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
+"一次拖动一个盘子到另一个柱子上，使得右边空位置上能建造起和左边一模一样的塔。"
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -14482,7 +14511,7 @@ msgstr "汉诺塔"
 #: activities/hanoi_real/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr ""
+msgstr "将左侧的塔移到右侧的桩上。"
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -14494,6 +14523,9 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
+"每次从一座塔上拖放最上面的一个圆盘到另一座塔，把左边的塔复制到右边的桩上。圆"
+"盘在桩上可以自由来回移动，但要遵循两条规则：每次只能移动一个圆盘；并且大圆盘"
+"永远不能放在小圆盘之上。 "
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -14562,7 +14594,7 @@ msgstr ""
 #: activities/imagename/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr ""
+msgstr "丰富您的词汇量并练习阅读。"
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -15345,19 +15377,19 @@ msgstr ""
 #: activities/learn_additions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
-msgstr ""
+msgstr "学习加法"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
-msgstr ""
+msgstr "用小数字学习加法。"
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr ""
+msgstr "通过累加数量来学习加法。"
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -15399,13 +15431,13 @@ msgstr ""
 #: activities/learn_decimals/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr ""
+msgstr "表示给定的小数。"
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
-msgstr ""
+msgstr "将数字的小数形式与其图形表示联系起来。"
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
@@ -15416,6 +15448,9 @@ msgid ""
 "steps until the number of dropped bars corresponds to the displayed decimal "
 "number. Then click on the OK button to validate your answer."
 msgstr ""
+"屏幕上会显示一个小数。拖动箭头选择单位长条的一部分，然后将选中的长条部分拖到"
+"空白区域。重复这些步骤，直到拖出的长条数量与显示的小数相符。然后点击“确定”按"
+"钮来验证你的答案。 "
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -15532,13 +15567,13 @@ msgstr "介于1和5之间。"
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr ""
+msgstr "带小数的加法"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
-msgstr ""
+msgstr "学习带小数的加法。"
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
@@ -15546,7 +15581,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
-msgstr ""
+msgstr "通过操作小数的直观表示来学习带小数的加法。"
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
@@ -15557,6 +15592,9 @@ msgid ""
 "area. Repeat these steps until the number of dropped bars corresponds to the "
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
+"屏幕上会显示一道两个小数相加的算式。拖动箭头选择单位长条的一部分，然后将选中"
+"的长条部分拖到空白区域。重复这些步骤，直到拖出的长条数量与加法运算的结果相"
+"符，接着点击“确定”按钮来验证答案。 "
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:23
@@ -15591,13 +15629,13 @@ msgstr ""
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr ""
+msgstr "带小数的减法"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
-msgstr ""
+msgstr "学习带小数的减法。"
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
@@ -15605,7 +15643,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
-msgstr ""
+msgstr "通过操作小数的直观表示来学习带小数的减法。"
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -15664,13 +15702,13 @@ msgstr "启用声音"
 #: activities/learn_digits/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn digits"
-msgstr ""
+msgstr "学习数字"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr ""
+msgstr "表示出与给定数字相对应的数值。"
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
@@ -15678,7 +15716,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr ""
+msgstr "学习由单个数字表示的数以及相应的数量。"
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
@@ -15687,6 +15725,8 @@ msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
+"屏幕上会显示一个数字。填充与该数字所代表数量相符的圆圈数量，然后确认你的答"
+"案。"
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -15802,19 +15842,19 @@ msgstr "介于20和50之间。"
 #: activities/learn_subtractions/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
-msgstr ""
+msgstr "学习减法"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr ""
+msgstr "用小数字学习减法。"
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
-msgstr ""
+msgstr "通过数出结果来学习减法。"
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:23
@@ -15964,13 +16004,13 @@ msgstr "字母在哪个单词中？"
 #: activities/letter-in-word/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr ""
+msgstr "找出含有给定字母的单词。"
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "训练在单词中找出指定字母。"
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -16018,13 +16058,13 @@ msgstr "灭灯"
 #: activities/lightsoff/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr ""
+msgstr "关闭所有的灯。"
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
-msgstr ""
+msgstr "培养预判能力、策略思维以及空间想象能力。"
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -16099,7 +16139,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Read about some key events in the life of the braille system inventor, and "
 "remember their chronological order."
-msgstr ""
+msgstr "了解盲文系统发明者生平中的一些关键事件，并记住它们的先后顺序。"
 
 #. Help goal
 #: activities/louis-braille/ActivityInfo.qml:20
@@ -16108,6 +16148,7 @@ msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
 msgstr ""
+"记住一系列事件的顺序。了解路易斯·布莱叶（Louis Braille ，盲文发明者）的生平。"
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -16229,7 +16270,7 @@ msgstr ""
 #: activities/magic-hat-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr ""
+msgstr "学习减法。"
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
@@ -16237,7 +16278,7 @@ msgstr ""
 #: activities/memory-math-minus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
-msgstr ""
+msgstr "减法。"
 
 #. Help manual
 #: activities/magic-hat-minus/ActivityInfo.qml:24
@@ -16313,7 +16354,7 @@ msgstr ""
 #: activities/magic-hat-plus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
-msgstr ""
+msgstr "学习加法。"
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
@@ -16321,7 +16362,7 @@ msgstr ""
 #: activities/memory-math-add/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition."
-msgstr ""
+msgstr "加法。"
 
 #. Help manual
 #: activities/magic-hat-plus/ActivityInfo.qml:24
@@ -16392,7 +16433,7 @@ msgstr "帮助小企鹅走出迷宫。"
 #: activities/mazerelative/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization and pathfinding skills."
-msgstr ""
+msgstr "培养空间想象能力与路径寻找技巧。"
 
 #. Help manual
 #: activities/maze/ActivityInfo.qml:23
@@ -16462,7 +16503,7 @@ msgstr ""
 #: activities/mazeinvisible/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization, pathfinding and visual memory skills."
-msgstr ""
+msgstr "培养空间想象、路径寻找和视觉记忆能力。"
 
 #. Help manual
 #: activities/mazeinvisible/ActivityInfo.qml:23
@@ -16601,7 +16642,7 @@ msgstr ""
 #: activities/memory-case-association/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr ""
+msgstr "学习小写字母和大写字母。"
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -16721,7 +16762,7 @@ msgstr ""
 #: activities/memory-enumerate/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr ""
+msgstr "练习识数。"
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -16789,14 +16830,14 @@ msgstr ""
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
-msgstr ""
+msgstr "练习加法、乘法、除法和减法。"
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
-msgstr ""
+msgstr "加法、减法、乘法、除法。"
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -16936,14 +16977,14 @@ msgstr ""
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
-msgstr ""
+msgstr "练习加减法。"
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
-msgstr ""
+msgstr "加减法。"
 
 #. Help manual
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:24
@@ -16984,7 +17025,7 @@ msgstr ""
 #: activities/memory-math-add/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
-msgstr ""
+msgstr "练习加法。"
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -17085,13 +17126,13 @@ msgstr ""
 #: activities/memory-math-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice division."
-msgstr ""
+msgstr "练习除法。"
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Division."
-msgstr ""
+msgstr "除法。"
 
 #. Help manual
 #: activities/memory-math-div-tux/ActivityInfo.qml:24
@@ -17178,7 +17219,7 @@ msgstr ""
 #: activities/memory-math-div/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Division"
-msgstr ""
+msgstr "除法"
 
 #. Activity title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
@@ -17198,7 +17239,7 @@ msgstr ""
 #: activities/memory-math-minus/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
-msgstr ""
+msgstr "练习减法"
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -17300,14 +17341,14 @@ msgstr ""
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
-msgstr ""
+msgstr "练习乘法和除法。"
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
-msgstr ""
+msgstr "乘法、除法。"
 
 #. Help manual
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:24
@@ -17349,14 +17390,14 @@ msgstr ""
 #: activities/memory-math-mult/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
-msgstr ""
+msgstr "练习乘法。"
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
-msgstr ""
+msgstr "乘法。"
 
 #. Help manual
 #: activities/memory-math-mult-tux/ActivityInfo.qml:24
@@ -17499,7 +17540,7 @@ msgstr ""
 #: activities/memory/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr ""
+msgstr "训练您的视觉记忆。"
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -17529,7 +17570,7 @@ msgstr ""
 #: activities/memory-wordnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr ""
+msgstr "练习读数字。"
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -18030,7 +18071,7 @@ msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr ""
+msgstr "您选择了一个新的区域设置，是否现在下载相应的声音文件？"
 
 #: activities/menu/Menu.qml:91
 msgctxt "Menu|"
@@ -18253,7 +18294,7 @@ msgstr ""
 #: activities/missing-letter/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr ""
+msgstr "学习拼写单词。"
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -18309,7 +18350,7 @@ msgstr "练习钱的使用。"
 #: activities/money_back/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr ""
+msgstr "练习数数和使用金钱。"
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -18411,6 +18452,8 @@ msgid ""
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
+"点击屏幕底部的硬币或纸币，给 Tux 找零。如果您想拿走一枚硬币或一张纸币，请点击"
+"屏幕上方区域中的相应硬币或纸币。 "
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -18423,7 +18466,7 @@ msgstr "给小企鹅找钱 (包括一分钱)"
 #: activities/money_cents/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr ""
+msgstr "练习数数以及货币使用，包括美分。 "
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -18457,14 +18500,14 @@ msgstr ""
 #: activities/morse_code/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
-msgstr ""
+msgstr "用国际摩尔斯电码进行交流。"
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
-msgstr ""
+msgstr "学习如何使用国际摩尔斯电码发送和接收消息。"
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -18481,6 +18524,9 @@ msgid ""
 "on the Morse key icon to have a look at the translation map which contains "
 "the code for all the letters and digits."
 msgstr ""
+"您会被要求用摩尔斯电码发送信息，或者将接收到的摩尔斯电码信息转换成字母或数"
+"字。要学习摩尔斯电码，您可以点击“摩尔斯电键”图标，查看翻译表，其中包含所有字"
+"母和数字的编码。 "
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -18606,7 +18652,7 @@ msgstr "按照示范，将每个东西放在相同的位置。"
 #: activities/mosaic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr ""
+msgstr "训练您的观察力与匹配能力。"
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -18661,14 +18707,14 @@ msgstr "直棋 (与 Tux 对战)"
 #: activities/nine_men_morris/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr ""
+msgstr "与 Tux 玩九子棋游戏。"
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "培养策略思维与空间想象能力。"
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -18679,6 +18725,9 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
+"和 Tux 一起玩。首先轮流放置九个棋子，之后轮流移动棋子。如果你只剩下 3 个棋"
+"子，您可以将它们移到任意空白位置。当对方无法移动任何棋子或者只剩下 2 个棋子"
+"时，该玩家获胜。 "
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -18764,7 +18813,7 @@ msgstr "直棋 (和朋友对战)"
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr ""
+msgstr "与朋友玩九子棋游戏。"
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -18775,6 +18824,9 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"和朋友一起玩。首先轮流放置九个棋子，之后轮流移动棋子。如果你只剩下 3 个棋子，"
+"您可以将它们移到任意空白位置。当对方无法移动任何棋子或者只剩下 2 个棋子时，该"
+"玩家获胜。 "
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -18802,7 +18854,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
-msgstr ""
+msgstr "识别音符，在钢琴键盘上弹奏它们，达到 100% 的准确率以通关。"
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -18859,13 +18911,13 @@ msgstr "数字序列"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "按照数字顺序依次选择数字。"
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr ""
+msgstr "学习数字顺序。"
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
@@ -18875,6 +18927,8 @@ msgid ""
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
+"按照数字顺序依次点击各个点来绘图。你可以点击并从一个点拖到下一个点，也可以逐"
+"个依次点击每个点。"
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -18892,7 +18946,7 @@ msgstr ""
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "学习识别偶数和奇数及其数字顺序。"
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
@@ -18904,16 +18958,19 @@ msgid ""
 "first levels, you can see which number you have to catch on the counter in "
 "the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
+"请按照说明操作：按正确顺序捕捉带有奇数或偶数的云朵。若使用键盘，请通过方向键"
+"移动直升机；若使用指点设备，只需点击目标位置。在初始关卡，您可以在右下角的计"
+"数器上看到要捕捉的数字。到后面的关卡，您就需要记住它了。 "
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr ""
+msgstr "捕捉偶数。"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr ""
+msgstr "捕捉奇数。"
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -19108,7 +19165,7 @@ msgstr ""
 #: activities/ordering_chronology/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr ""
+msgstr "学习按时间顺序排序。"
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -19150,7 +19207,7 @@ msgstr ""
 #: activities/ordering_numbers/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr ""
+msgstr "练习排列数字。"
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -19252,7 +19309,7 @@ msgstr "将给定的词组成一个有意义的句子。"
 #: activities/ordering_sentences/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr ""
+msgstr "练习排列单词以组成有意义的句子 。"
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -19321,7 +19378,7 @@ msgstr ""
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "培养战略思维能力。"
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
@@ -19334,6 +19391,9 @@ msgid ""
 "seeds, it is possible for the game to end in a draw, where each player has "
 "captured 24."
 msgstr ""
+"游戏开始时，每个格子里有四颗种子。游戏的目标是比对手捕获更多的种子。由于游戏"
+"中总共只有 48 颗种子，捕获 25 颗种子就足以赢得比赛。因为种子数量是偶数，所以"
+"游戏有可能以平局结束，即每位玩家都捕获 24 颗种子。 "
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
@@ -19347,6 +19407,11 @@ msgid ""
 "empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
 "seed is placed in the next house."
 msgstr ""
+"玩家依次轮流移动种子。轮到某玩家时，其需从自己掌控的六个 “屋舍” 中挑选一个。"
+"玩家将所选屋舍内的所有种子取出，通过一种名为 “播种” 的操作，沿逆时针方向将这"
+"些种子分配到后续的屋舍中。种子既不会被分配到最终计分的屋舍，也不会回到取出种"
+"子的那个屋舍。起始的屋舍始终会被留空；若该屋舍原本有 12 颗或更多种子，就跳过"
+"此屋舍，把第 12 颗种子放置到下一个屋舍。 "
 
 #: activities/oware/ActivityInfo.qml:24
 #: activities/oware_2players/ActivityInfo.qml:24
@@ -19548,7 +19613,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
-msgstr ""
+msgstr "培养空间想象和地图阅读技能，并学会遵循指示。"
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
@@ -19557,7 +19622,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
-msgstr ""
+msgstr "按照箭头方向，点击方格，引导 Tux 到达目标位置。"
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -19592,7 +19657,7 @@ msgstr ""
 #: activities/path_decoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr ""
+msgstr "相对路径解码"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -19651,7 +19716,7 @@ msgstr "错误：%1"
 #: activities/path_encoding_relative/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr ""
+msgstr "相对路径编码"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -19703,7 +19768,7 @@ msgstr "找出两张照片间的不同之处。"
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "培养感知细节的技能。"
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -20364,7 +20429,7 @@ msgstr "B♭%1"
 #: activities/planegame/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
-msgstr ""
+msgstr "数字顺序"
 
 #. Help title
 #: activities/planegame/ActivityInfo.qml:17
@@ -20376,7 +20441,7 @@ msgstr ""
 #: activities/planegame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr ""
+msgstr "学习数字顺序。"
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -20391,12 +20456,12 @@ msgstr ""
 #: activities/planegame/Sequence.qml:13
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr ""
+msgstr "抓取从0开始的数字。"
 
 #: activities/planegame/Sequence.qml:14
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr ""
+msgstr "抓取从10开始的数字。"
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -20418,7 +20483,7 @@ msgstr "弹钢琴"
 #: activities/play_piano/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr ""
+msgstr "阅读乐谱，然后在键盘上弹奏出来。"
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -20486,7 +20551,7 @@ msgstr ""
 #: activities/play_rhythm/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr ""
+msgstr "准确地跟随节奏。"
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -20724,19 +20789,19 @@ msgstr ""
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "规划路径"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "规划路径，帮助 Tux 捕鱼。"
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr ""
+msgstr "学习如何为沿路径移动编写指令程序。"
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -20939,7 +21004,7 @@ msgstr ""
 #: activities/railroad/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr ""
+msgstr "铁路"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -21085,7 +21150,7 @@ msgstr "在空格上完美的画出给定的图像。"
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr ""
+msgstr "学习在网格中识别位置，并重现一个模型。"
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -21140,7 +21205,7 @@ msgstr "翻转给定的图像"
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr ""
+msgstr "在空白网格上对称地重现该图像。"
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -21148,7 +21213,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
-msgstr ""
+msgstr "学习在网格中识别位置，并对称地重现一个模型。"
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -21284,7 +21349,7 @@ msgstr "小企鹅饿了。请算出正确的冰点斑点数目来帮助他找到
 #: activities/reversecount/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to count intervals."
-msgstr ""
+msgstr "学会计时。"
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -21328,14 +21393,14 @@ msgstr "罗马数字"
 #: activities/roman_numerals/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr ""
+msgstr "学会读写罗马数字。"
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
-msgstr ""
+msgstr "学会读写罗马数字并将其转换为阿拉伯数字。"
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -21353,6 +21418,8 @@ msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
+"学习读取罗马数字的规则，并练习阿拉伯数字与罗马数字之间的相互转换。点击“确"
+"定”按钮验证你的答案。"
 
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -21988,7 +22055,7 @@ msgstr ""
 #: activities/share/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr ""
+msgstr "学习分享，练习除法运算。"
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -22386,7 +22453,7 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "在网格中画图"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -22398,7 +22465,7 @@ msgstr ""
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "通过绘画来展现您的创造力。"
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -22415,183 +22482,183 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "草稿"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "使用各种数字绘画工具绘制图像。"
 
 #: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr ""
+msgstr "学习一些数字绘画工具。"
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
-msgstr ""
+msgstr "从可折叠面板中选择工具和颜色，然后绘制图像。<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr ""
+msgstr "Ctrl + Z：撤销上一步操作"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y：重做上一步操作"
 
 #: activities/sketch/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr ""
+msgstr "Ctrl + S：保存图像"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O：打开图像"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Delete 或 Backspace：创建一张新图像。"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "画笔平滑概念源自："
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "草图画笔概念来自："
 
 #: activities/sketch/BackgroundColorSelector.qml:40
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr ""
+msgstr "背景色"
 
 #: activities/sketch/BackgroundSelector.qml:42
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr ""
+msgstr "背景图像"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "擦除工具"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "绘图工具"
 
 #: activities/sketch/ColorSelector.qml:76
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr ""
+msgstr "调色板的颜色"
 
 #: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "重设调色板"
 
 #: activities/sketch/ColorSelector.qml:211
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr ""
+msgstr "选定的颜色"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:235
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr ""
+msgstr "色相"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:262
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr ""
+msgstr "饱和度"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:287
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr ""
+msgstr "亮度"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "重置颜色"
 
 #: activities/sketch/ColorsPanel.qml:157
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr ""
+msgstr "调色板"
 
 #: activities/sketch/FilesPanel.qml:46
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr ""
+msgstr "保存您的图像"
 
 #: activities/sketch/FilesPanel.qml:85
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr ""
+msgstr "打开图片"
 
 #: activities/sketch/FilesPanel.qml:116
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr ""
+msgstr "新图像设置"
 
 #: activities/sketch/FilesPanel.qml:144
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr ""
+msgstr "背景色"
 
 #: activities/sketch/FilesPanel.qml:190
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr ""
+msgstr "背景图像"
 
 #: activities/sketch/FilesPanel.qml:231
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr ""
+msgstr "创建新的图像"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "圆角"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "几何工具"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "内圆大小"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "渐变工具"
 
 #: activities/sketch/Sketch.qml:673
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr ""
+msgstr "您没有保存此图像。您想要关闭此活动吗？"
 
 #: activities/sketch/Sketch.qml:674
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr ""
+msgstr "您想要删除这个图像吗？"
 
 #: activities/sketch/Sketch.qml:675
 msgctxt "Sketch|"
@@ -22606,17 +22673,17 @@ msgstr "否"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "图章工具"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "文字工具"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "在此输入文字"
 
 #: activities/sketch/ToolsPanel.qml:253
 msgctxt "ToolsPanel|"
@@ -22626,17 +22693,17 @@ msgstr "工具"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "重置工具设置"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "不透明度"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #: activities/sketch/ToolsPanel.qml:526
 msgctxt "ToolsPanel|"
@@ -22646,27 +22713,27 @@ msgstr "速度"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "密度"
 
 #: activities/sketch/ToolsPanel.qml:566
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr ""
+msgstr "点大小"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "平滑"
 
 #: activities/sketch/ToolsPanel.qml:646
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr ""
+msgstr "旋转"
 
 #: activities/sketch/ToolsPanel.qml:662
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr ""
+msgstr "镜像"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -22685,7 +22752,7 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr ""
+msgstr "在限时内练习数数。"
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -22803,13 +22870,13 @@ msgstr ""
 #: activities/smallnumbers2/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
-msgstr ""
+msgstr "在多米诺骨牌落地前数出它的点数."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr ""
+msgstr "请输入你在每块下落的多米诺骨牌上看到的点数。"
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -22876,7 +22943,7 @@ msgstr "太阳系"
 #: activities/solar_system/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr ""
+msgstr "学习太阳系。"
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -24205,13 +24272,13 @@ msgstr ""
 #: activities/sudoku/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr ""
+msgstr "数独"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr ""
+msgstr "解数独。"
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
@@ -24219,7 +24286,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
-msgstr ""
+msgstr "培养一些逻辑思维技能（数据关联、推理）以及空间想象能力。"
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -24237,6 +24304,9 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"选择一个数字或符号，然后点击其目标位置。每行、每列以及（若有）每个子区域内，"
+"每个符号都只能出现一次。如果某个操作不被允许，游戏会说明原因。但请注意：即便"
+"某个元素能填入某个方格，对于整个数独而言也未必正确，仍有可能是个错误。 "
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -24276,7 +24346,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
-msgstr ""
+msgstr "培养逻辑思维、辨别颜色以及记忆位置的技能。"
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -24317,7 +24387,7 @@ msgstr "七巧板游戏"
 #: activities/tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr ""
+msgstr "移动这些物体，以重现给定的形状。"
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -24325,7 +24395,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
-msgstr ""
+msgstr "培养空间想象、位置记忆以及模型再现的技能。"
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
@@ -24335,6 +24405,9 @@ msgid ""
 "support it. Drag the rotation button or around selected piece to rotate it. "
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
+"通过拖动来移动拼图块。支持对称操作的拼图块上会出现对称按钮。拖动旋转按钮或者"
+"围绕所选拼图块拖动以旋转它。若想对七巧板有更简单的入门了解，可以查看 “婴儿拼"
+"图” 这个活动。 "
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -24352,7 +24425,7 @@ msgstr "投射飞镖射向目标并计算您的成绩。"
 #: activities/target/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr ""
+msgstr "练习多个数字的加法运算。"
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -24470,7 +24543,7 @@ msgstr "学习找到和为10的数。"
 #: activities/tens_complement_find/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
-msgstr ""
+msgstr "1到10之间的数字以及加法。"
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -24533,7 +24606,7 @@ msgstr ""
 #: activities/tens_complement_swap/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
-msgstr ""
+msgstr "1到30之间的数字以及加法。"
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -24578,7 +24651,7 @@ msgstr ""
 #: activities/tens_complement_use/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
-msgstr ""
+msgstr "1到50之间的数字以及加法。"
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -24622,7 +24695,7 @@ msgstr "将三个标记组成一排。"
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "培养您的策略技巧。"
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -24677,25 +24750,25 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr ""
+msgstr "竖式加法"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr ""
+msgstr "解决给定的加法。"
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr ""
+msgstr "学习解决竖式加法。"
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr ""
+msgstr " 加法表。"
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -24715,79 +24788,86 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"在竖式加法中，数字上下依次书写。从最右边的列开始，必须将它们正确对齐。结果写"
+"在最下面一行。要进行加法运算，先从最右边第一列的数字相加，然后将结果写在同一"
+"列的最下面一行。如果结果是两位数，只把个位数字写在结果处，将十位数字加到下一"
+"列上面数字的旁边：这就叫做进位。然后把下一列的数字相加，包括进位的数字，重复"
+"这个过程，直到运算完成。一旦得出结果，请点击“确定”按钮来验证你的答案。在某些"
+"关卡中，你需要在求解之前写出给定的算式；在这种情况下，当算式正确写出后，请点"
+"击“准备就绪”按钮，然后再进行求解。 "
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "求解两位数的加法运算，分两行，无需进位。"
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "解四位数的加法运算，分三行。"
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "解四位数的加法运算，分四行。"
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "写出你自己的加法算式并求解。"
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "写出并求解两位数的加法运算，两个数，分两行，无需进位。"
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "解两位数的加法运算，分两行。"
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "写出并求解两位数的加法运算，分两行。 "
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "写出并求解两位数的加法运算，分三行。 "
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "解三位数的加法运算，分两行。"
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "写出并求解三位数的加法运算，分两行。 "
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "解三位数的加法运算，分三行。"
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "解四位数的加法运算，分两行。"
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr ""
+msgstr "竖式减法"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "解决给定的减法。"
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -24795,14 +24875,14 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
-msgstr ""
+msgstr "学习用借位重组法来解决竖式减法。"
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr ""
+msgstr " 减法表。"
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -24830,106 +24910,117 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"在竖式减法中，数字一个写在另一个下方。它们需要从右侧的列开始正确对齐。上面的"
+"数字称为被减数：它是我们起始的数量，另一个数要从这个数中减去，以得到差值。下"
+"面的数字称为减数：它是要从被减数中减去以得到差值的数。结果写在最下面一行。\n"
+"要解决减法运算，先从第一列（右侧）的上面数字减去下面数字，然后将结果写在同一"
+"列的最下面一行。如果上面的数字小于下面的数字，你可以从下一列的被减数借位：例"
+"如，如果你给上面的数字加上 10 个单位，你需要从下一列上面的数字中减去 1 个单"
+"位。这就叫做借位分组法。在这个活动中，要做到这一点，请点击上面数字左边的空白"
+"矩形，选择 1 ，然后在下一列点击上面数字右边的空白矩形并选择 -1 。然后将该列的"
+"结果写在最下面一行，对接下来的列也做同样操作，直到运算完成。一旦你得出结果，"
+"点击“确定”按钮来验证你的答案。在某些关卡中，你需要在求解之前写出给定的运算式"
+"子；在这种情况下，当运算式子正确写出后，点击“准备就绪”按钮，然后再求解。 "
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "求解两位数的减法运算，两个数，分两行，无需借位。"
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr ""
+msgstr "求解四位或五位数的减法运算，分三行。 "
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr ""
+msgstr "求解四位或五位数的减法运算，分四行。 "
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr ""
+msgstr "写出你自己的减法算式并求解。"
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "写出并求解两位数的减法运算，两个数，分两行，无需借位。"
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr ""
+msgstr "求解两位或三位数的减法运算，分两行。 "
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr ""
+msgstr "写出并求解两位或三位数的减法运算，分两行。 "
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr ""
+msgstr "写出并求解两位或三位数的减法运算，分三行。 "
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr ""
+msgstr "求解三位或四位数的减法运算，分两行。 "
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr ""
+msgstr "写出并求解三位或四位数的减法运算，分两行。 "
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr ""
+msgstr "求解三位或四位数的减法运算，分三行。 "
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr ""
+msgstr "求解四位或五位数的减法运算，分两行。 "
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "写："
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "解："
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr ""
+msgstr "解：%1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr ""
+msgstr "准备就绪"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr ""
+msgstr "竖式减法 (补偿法) "
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -24937,7 +25028,7 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
-msgstr ""
+msgstr "学习用补偿法来解决竖式减法。"
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -24965,6 +25056,17 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"在竖式减法中，数字上下依次书写。从最右边的列开始，它们必须正确对齐。上面的数"
+"字称为被减数：它是我们起始的数量，通过从这个数中减去另一个数来得到差值。下面"
+"的数字称为减数：它是从被减数中减去以得出差值的数量。结果写在最下面一行。要进"
+"行减法运算，请先从最右边第一列的上面数字减去下面数字，然后将结果写在同一列的"
+"最下面一行。如果上面的数字小于下面的数字，您可以从下一列的减数借位：例如，如"
+"果您给上面的数字加上10个单位，您需要给下一列的下面数字加上 1 个单位。这称为补"
+"偿借位法。在本活动中，要实现这一点，点击上面数字左边的空白矩形，选择 1 ，然后"
+"在下一列点击下面数字右边的空白矩形并选择 +1 。然后将该列的结果写在最下面一"
+"行，对后续各列重复此操作，直到运算完成。一旦得出结果，点击“确定”按钮来验证答"
+"案。在某些关卡中，您需要在求解之前写出给定的算式；这种情况下，当算式正确写出"
+"后，点击“准备就绪”按钮，然后再进行求解。 "
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -24984,7 +25086,7 @@ msgstr "小企鹅从一次漫长的捕鱼派对归来了。请开启供水系统
 #: activities/watercycle/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
-msgstr ""
+msgstr "学习水循环知识。"
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -25096,7 +25198,7 @@ msgstr ""
 #: activities/wordsgame/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr ""
+msgstr "练习使用键盘。"
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -25147,17 +25249,17 @@ msgstr "在菜单中更改语言时自动应用新语言（无需重新启动 GC
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "在启动时添加欢迎屏幕"
 
 #: core/ChangeLog.qml:36
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
-msgstr ""
+msgstr "用于切换渲染器的新的命令行选项 (--renderer renderer) 。"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
 msgid "Translation added for Latvian"
-msgstr ""
+msgstr "已添加拉脱维亚语的翻译"
 
 #: core/ChangeLog.qml:56
 msgctxt "ChangeLog|"
@@ -25812,7 +25914,7 @@ msgstr "%1 删除成功！"
 #: core/GCCreationHandler.qml:235
 msgctxt "GCCreationHandler|"
 msgid "OK"
-msgstr ""
+msgstr "确认"
 
 #: core/GCCreationHandler.qml:181
 #, qt-format
@@ -25838,7 +25940,7 @@ msgstr "否"
 #: core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr ""
+msgstr "您真的想要删除此文件吗？"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
@@ -25946,6 +26048,8 @@ msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
+"使用软件渲染器而不是 openGL (较慢，但是可以在任意显卡上工作)。已弃用，请改为"
+"使用 --renderer=software。"
 
 #: core/main.cpp:105
 msgctxt "QObject|"
@@ -25953,11 +26057,13 @@ msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
+"使用 OpenGL 渲染器而不是软件渲染 (更快，但是可能会崩溃，依显卡而定) 。已弃"
+"用，请改为使用 --renderer=opengl。"
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
-msgstr ""
+msgstr "选择渲染器(opengl, 软件、Direct3D11, Direct3D12, Metal)。"
 
 #: core/main.cpp:113
 msgctxt "QObject|"
