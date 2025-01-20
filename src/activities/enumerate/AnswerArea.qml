@@ -16,18 +16,18 @@ import "../../core"
 
 Rectangle {
     id: answerBackground
-    width: Math.min(140 * ApplicationInfo.ratio, background.width / 4)
-    height: width / 2
-    radius: 10
+    width: background.answersWidth
+    height: width * 0.5
+    radius: background.baseMargins
     border {
-        width: activeFocus && state === "default" ?  5 : 1
+        width: activeFocus && state === "default" ?  3 * ApplicationInfo.ratio : Math.max(1, ApplicationInfo.ratio)
         color: "#373737"
     }
 
     states: [
         State {
             name: "badAnswer"
-            PropertyChanges { answerBackground { color: "#ea5454" } } //red
+            PropertyChanges { answerBackground { color: "#D94444" } } //red
         },
         State {
             name: "goodAnswer"
@@ -35,7 +35,7 @@ Rectangle {
         },
         State {
             name: "default"
-            PropertyChanges { answerBackground { color: activeFocus ? "#63ede5" : "#eeeeee"} } //light blue, grey
+            PropertyChanges { answerBackground { color: activeFocus ? "#6bcbde" : "#fff"} } //lightblue, white
         }
     ]
 
@@ -56,15 +56,16 @@ Rectangle {
     // A top gradient
     Rectangle {
         anchors.fill: parent
-        anchors.margins: parent.activeFocus ?  5 : 1
-        radius: 10
+        anchors.margins: parent.border.width
+        radius: parent.radius - parent.border.width
         visible: answerBackground.state === "default"
         gradient: Gradient {
-            GradientStop { position: 0.0; color: valid ? "#ff54ea54" : "#CCFFFFFF" }
-            GradientStop { position: 0.5; color: valid ? "#ff54ea54" : "#80FFFFFF" }
-            GradientStop { position: 1.0; color: valid ? "#ff54ea54" : "#00000000" }
+                GradientStop { position: 0.0; color: valid ? "#54ea54" : "#CCFFFFFF" }
+                GradientStop { position: 0.5; color: valid ? "#54ea54" : "#80FFFFFF" }
+                GradientStop { position: 1.0; color: valid ? "#54ea54" : "#00000000" }
         }
     }
+
 
     MouseArea {
         id: mouseArea
@@ -80,10 +81,10 @@ Rectangle {
         id: img
         anchors {
             left: parent.left
-            leftMargin: 10
+            leftMargin: background.baseMargins
             verticalCenter: parent.verticalCenter
         }
-        height: parent.height * 0.75
+        height: parent.height - background.baseMargins
         width: height
         source: imgPath
         fillMode: Image.PreserveAspectFit
@@ -120,12 +121,15 @@ Rectangle {
         id: userEntry
         anchors {
             left: img.right
-            verticalCenter: img.verticalCenter
-            leftMargin: 10
+            right: parent.right
+            top: parent.top
+            bottom: parent.bottom
+            margins: background.baseMargins
         }
         text: "?"
         color: "black"
         fontSize: 28
+        fontSizeMode: Text.Fit
         style: Text.Outline
         styleColor: "white"
     }
