@@ -174,13 +174,13 @@ function checkDropped() {
 
 function checkResult() {
     items.inputLocked = true
-    var sums = Array(items.board.digitCount).fill(0)
-    for (var j = 0; j < items.board.digitCount; j++) {
+    var sums = Array(items.board.digitCount).fill(0)        // sums in an array [ unit, ten, hundred, ...]. 123 => [ 3, 2, 1 ]
+    for (var j = 0; j < items.board.digitCount; j++) {      // Build sums with first number
         sums[j] = items.numberRepeater.itemAt(0).digitRepeater.itemAt(j).computedValue
     }
-    for (var i = 1; i < items.numberRepeater.count; i++) {
+    for (var i = 1; i < items.numberRepeater.count; i++) {  // Compute each number
         var number = items.numberRepeater.itemAt(i)
-        for (j = 0; j < number.digitRepeater.count; j++) {
+        for (j = 0; j < number.digitRepeater.count; j++) {  // Add or subtract each digit
             if (items.operation === items.operationType.Addition)
                 sums[j] += number.digitRepeater.itemAt(j).computedValue
             else
@@ -188,16 +188,21 @@ function checkResult() {
         }
     }
     var ok = true
-    for (j = 0; j < items.resultNumber.digitRepeater.count; j++) {
+    var zeros = true
+    for (j = items.resultNumber.digitRepeater.count - 1; j >=0 ; j--) { // Compare each sums digit with answer digit from end to start
         sums[j] = sums[j] % 10
-        ok &= (sums[j] === items.resultNumber.digitRepeater.itemAt(j).computedValue)
+        var item = items.resultNumber.digitRepeater.itemAt(j)
+        ok &= (sums[j] === item.computedValue)                          // Same digit ?
+        ok &= (zeros || (item.value !== -1))                            // Accept empty digit while first non zero value is not detected
+        if (item.computedValue !== 0)                                   // Detect first non zero value. After empty digit are not allowed
+            zeros = false
     }
     if (ok) {
         items.currentSubLevel++
         items.score.playWinAnimation()
         items.completeTaskSound.play()
     } else {
-        items.errorRectangle.startAnimation();
+        items.errorRectangle.startAnimation()
         items.crashSound.play()
     }
 }
