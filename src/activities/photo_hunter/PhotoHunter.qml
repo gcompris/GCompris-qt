@@ -56,18 +56,13 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: frame.width <= frame.height
-        property double barHeight: ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
+        property bool isHorizontal: frame.width >= frame.height
+        property double barHeight: ApplicationSettings.isBarHidden ? bar.height : bar.height * 1.5
         property bool startedHelp: false
 
         function checkAnswer() {
             if (items.totalFound === items.model.length) {
                 bonus.good("flower")
-
-                // after completing a level, mark the problem as shown
-                if (!problem.hideProblem) {
-                    problem.hideProblem = true
-                }
             }
         }
 
@@ -83,70 +78,40 @@ ActivityBase {
 
         Rectangle {
             id: problem
-            width: parent.width - score.width - 20 * ApplicationInfo.ratio
-            height:  hideProblem ? 0 : problemText.height
-            anchors.top: parent.top
-            anchors.topMargin: hideProblem ? 0 : 10 * ApplicationInfo.ratio
-            anchors.left: parent.left
+            width: problemText.contentWidth + 20 * ApplicationInfo.ratio
+            height:  problemText.contentHeight + 10 * ApplicationInfo.ratio
+            anchors.centerIn: problemText
             color: "#C0373737"
-            z: hideProblem ? -5 : 5
-
-            property bool hideProblem: false
-
-            GCText {
-                id: problemText
-                anchors.centerIn: parent
-                width: parent.width * 0.9
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                text: background.startedHelp ? qsTr("Drag the slider to show the differences.") :
-                                          qsTr("Click on the differences between the two images.")
-                color: "white"
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: problem.hideProblem = true
-            }
         }
 
-        states: [
-            State {
-                name: "anchorProblem"
-                when: problem.height >= score.height
-                AnchorChanges {
-                    target: frame
-                    anchors.top: problem.bottom
-                }
-                PropertyChanges {
-                    frame {
-                        height: background.height - problem.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
-                    }
-                }
-            },
-            State {
-                name: "anchorScore"
-                when: score.height > problem.height
-                AnchorChanges {
-                    target: frame
-                    anchors.top: score.bottom
-                }
-                PropertyChanges {
-                    frame {
-                        height: background.height - score.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
-                    }
-                }
-            }
-        ]
+        GCText {
+            id: problemText
+            anchors.left: parent.left
+            anchors.right: score.left
+            anchors.top: score.top
+            anchors.bottom: score.bottom
+            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: 20 * ApplicationInfo.ratio
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
+            width: parent.width * 0.9
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            text: background.startedHelp ? qsTr("Drag the slider to show the differences.") :
+            qsTr("Click on the differences between the two images.")
+            color: "white"
+        }
 
         Item {
             id: frame
-            height: background.height - problem.height - bar.height * 1.5 - 10 * ApplicationInfo.ratio
-            anchors.top: problem.bottom
+            anchors.top: score.bottom
             anchors.left: background.left
             anchors.right: background.right
+            anchors.bottom: parent.bottom
+            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: background.barHeight
 
             //left/top image
             Observe {
@@ -167,7 +132,7 @@ ActivityBase {
             states: [
                 State {
                     name: "horizontalImages"
-                    when: !background.vert && !background.startedHelp
+                    when: background.isHorizontal && !background.startedHelp
                     PropertyChanges {
                         img1 {
                             anchors.horizontalCenterOffset: -img1.width * 0.5 - 5 * ApplicationInfo.ratio
@@ -182,24 +147,8 @@ ActivityBase {
                     }
                 },
                 State {
-                    name: "horizontalHelp"
-                    when: !background.vert && background.startedHelp
-                    PropertyChanges {
-                        img1 {
-                            anchors.horizontalCenterOffset: 0
-                            anchors.verticalCenterOffset: 0
-                        }
-                    }
-                    PropertyChanges {
-                        img2 {
-                            anchors.horizontalCenterOffset: 0
-                            anchors.verticalCenterOffset: 0
-                        }
-                    }
-                },
-                State {
                     name: "verticalImages"
-                    when: background.vert && !background.startedHelp
+                    when: !background.isHorizontal && !background.startedHelp
                     PropertyChanges {
                         img1 {
                             anchors.verticalCenterOffset: -img1.height * 0.5 - 5 * ApplicationInfo.ratio
@@ -213,7 +162,7 @@ ActivityBase {
                 },
                 State {
                     name: "verticallHelp"
-                    when: background.vert && background.startedHelp
+                    when: background.startedHelp
                     PropertyChanges {
                         img1 {
                             anchors.verticalCenterOffset: 0
@@ -230,7 +179,6 @@ ActivityBase {
             GCSlider {
                 id: slider
                 value: 0
-                height: background.startedHelp ? 50 : 0
                 width: img1.width * 0.9
                 z: background.startedHelp ? 5 : -5
                 opacity: background.startedHelp ? 1 : 0
@@ -239,8 +187,8 @@ ActivityBase {
                 stepSize: 0
 
                 anchors {
-                    top: img1.bottom
-                    topMargin: 20
+                    top: img2.bottom
+                    topMargin: 10 * ApplicationInfo.ratio
                     horizontalCenter: img1.horizontalCenter
                 }
             }
