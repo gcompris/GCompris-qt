@@ -13,33 +13,28 @@ import GCompris 1.0
 import "enumerate.js" as Activity
 
 Image {
-    sourceSize.width: Math.min(90 * ApplicationInfo.ratio, main.width / 5)
+    width: Math.min(70 * ApplicationInfo.ratio, Math.min(layoutArea.width, layoutArea.height) * 0.2)
+    height: width
+    sourceSize.width: width
+    sourceSize.height: height
     fillMode: Image.PreserveAspectFit
     z: 0
     // Let the items comes from random side of the screen
-    x: Math.random() > 0.5 ? -width : main.width
-    y: Math.random() > 0.5 ? -height : main.height
-
-    property real xRatio
-    property real yRatio
-    property Item main
+    x: Math.random() > 0.5 ? -width : background.width
+    y: Math.random() > 0.5 ? -height : background.height
 
     Component.onCompleted: {        
-        xRatio = Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio) /
-                (main.width  - 220 * ApplicationInfo.ratio)
-        yRatio = Activity.getRandomInt(10, main.height - 180 * ApplicationInfo.ratio) /
-                (main.height - 180 * ApplicationInfo.ratio)
         positionMe()
     }
 
     function positionMe() {
-        x = (main.width - 220 * ApplicationInfo.ratio) * xRatio
-        y = (main.height- 180 * ApplicationInfo.ratio) * yRatio
+        x = Activity.getRandomInt(0, layoutArea.width - width)
+        y = Activity.getRandomInt(0 , layoutArea.height - width)
     }
 
     Drag.active: dragArea.drag.active
-    Drag.hotSpot.x: width / 2
-    Drag.hotSpot.y: height / 2
+    Drag.hotSpot.x: width * 0.5
+    Drag.hotSpot.y: height * 0.5
 
     MouseArea {
         id: dragArea

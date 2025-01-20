@@ -39,6 +39,9 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
 
+        readonly property int answersWidth: Math.min(140 * ApplicationInfo.ratio, background.width * 0.25)
+        readonly property int baseMargins: 10 * ApplicationInfo.ratio
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -50,16 +53,14 @@ ActivityBase {
         //instruction rectangle
         Rectangle {
             id: instruction
-            anchors {
-                top: parent.top
-                topMargin: 5
-                horizontalCenter: parent.horizontalCenter
-            }
-            height: instructionTxt.contentHeight * 1.1
-            width: Math.max(Math.min(parent.width * 0.8, instructionTxt.text.length * 10), parent.width * 0.3)
+            anchors.horizontalCenter: instructionTxt.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: background.baseMargins
+            height: instructionTxt.contentHeight + background.baseMargins * 2
+            width: instructionTxt.contentWidth + background.baseMargins * 2
             opacity: 0.8
             visible: items.levels
-            radius: 10
+            radius: background.baseMargins
             border.width: 2
             z: instruction.opacity === 0 ? -10 : 10
             border.color: "#DDD"
@@ -72,23 +73,26 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: instruction.opacity = instruction.opacity == 0 ? 0.8 : 0
             }
+        }
 
-            GCText {
-                id: instructionTxt
-                anchors {
-                    top: parent.top
-                    topMargin: 5
-                    horizontalCenter: parent.horizontalCenter
-                }
-                opacity: instruction.opacity
-                z: instruction.z
-                fontSize: smallSize
-                color: "white"
-                text: items.instructionText
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width * 0.8
-                wrapMode: TextEdit.WordWrap
+        GCText {
+            id: instructionTxt
+            anchors {
+                top: parent.top
+                right: parent.right
+                left: answer.right
+                margins: background.baseMargins * 2
             }
+            height: 60 * ApplicationInfo.ratio
+            opacity: instruction.opacity
+            z: instruction.z
+            fontSize: smallSize
+            fontSizeMode: Text.Fit
+            color: "white"
+            text: items.instructionText
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignTop
+            wrapMode: TextEdit.WordWrap
         }
 
         Keys.onDownPressed: {
@@ -119,6 +123,7 @@ ActivityBase {
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
             property int mode: 1 // default is automatic
             property bool buttonsBlocked: false
+            property bool activityStopped: false
         }
 
         GCSoundEffect {
@@ -152,9 +157,10 @@ ActivityBase {
             anchors {
                 left: parent.left
                 top: parent.top
-                margins: 10
+                margins: background.baseMargins
             }
-            spacing: 5
+            width: background.answersWidth
+            spacing: background.baseMargins
 
             Repeater {
                 id: answerColumn
@@ -173,23 +179,52 @@ ActivityBase {
             }
         }
 
-        // Reposition the items to find when whidh or height changes
-        onWidthChanged: {
-            for(var i in itemList.model)
-                itemList.itemAt(i).positionMe()
+        BarButton {
+            id: okButton
+            enabled: items.mode === 2 && !items.buttonsBlocked
+            visible: items.mode === 2
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                margins: background.baseMargins
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            width: 70 * ApplicationInfo.ratio
+            onClicked: Activity.checkAnswers();
         }
 
-        onHeightChanged: {
-            for(var i in itemList.model)
-                itemList.itemAt(i).positionMe()
+        Item {
+            id: layoutArea
+            anchors.top: parent.top
+            anchors.left: answer.right
+            anchors.right: parent.right
+            anchors.bottom: score.top
+
+            onWidthChanged: resizeTimer.restart();
+            onHeightChanged: resizeTimer.restart();
+
+            function repositionItems() {
+                if(items.itemListModel) {
+                    for(var i in itemList.model) {
+                        itemList.itemAt(i).positionMe();
+                    }
+                }
+            }
+
+            Repeater {
+                id: itemList
+                ItemToEnumerate {
+                    source: modelData
+                }
+            }
         }
 
-        Repeater {
-            id: itemList
-
-            ItemToEnumerate {
-                source: modelData
-                main: background
+        // Reposition the items to find when width or height changes
+        Timer {
+            id: resizeTimer
+            interval: 50
+            onTriggered: {
+                    layoutArea.repositionItems();
             }
         }
 
@@ -255,7 +290,7 @@ ActivityBase {
             anchors.bottom: undefined
             anchors.verticalCenter: okButton.verticalCenter
             anchors.right: okButton.visible ? okButton.left : background.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: background.baseMargins
             onStop: Activity.nextSubLevel()
         }
 
@@ -278,21 +313,6 @@ ActivityBase {
             onActivityConfigClicked: {
                  displayDialog(dialogActivityConfig)
              }
-        }
-
-        BarButton {
-            id: okButton
-            enabled: items.mode === 2 && !items.buttonsBlocked
-            visible: items.mode === 2
-            anchors {
-                bottom: bar.top
-                right: parent.right
-                rightMargin: 9 * ApplicationInfo.ratio
-                bottomMargin: 9 * ApplicationInfo.ratio
-            }
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 80 * ApplicationInfo.ratio
-            onClicked: Activity.checkAnswers();
         }
 
         Keys.onReturnPressed: okButton.visible && okButton.enabled === true ? Activity.checkAnswers() : ""
