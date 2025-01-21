@@ -21070,12 +21070,12 @@ msgstr ""
 "രണ്ട് ചിത്രങ്ങളും ശ്രദ്ധയോടെ നിരീക്ഷിക്കുക. അവ തമ്മിൽ ചെറിയ ചില വ്യത്യാസങ്ങളുണ്ട്. ഒരു വ്യത്യാസം "
 "കണ്ടെത്തിയാൽ നിങ്ങൾ അതിൽ ക്ലിക്കു ചെയ്യണം."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "വ്യത്യാസങ്ങൾ കാണാൻ സ്ലൈഡറിനെ വലിക്കുക."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "രണ്ടു ചിത്രങ്ങളും തമ്മിലുള്ള വ്യത്യാസങ്ങളിൽ ക്ലിക്ക് ചെയ്യുക."

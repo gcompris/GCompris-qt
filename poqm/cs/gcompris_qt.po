@@ -20465,12 +20465,12 @@ msgstr ""
 "Prohlédni si pořádně dva obrázky. Jsou na nich drobné rozdíly. Když najdeš "
 "rozdíl, musíš na něj kliknout."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Přesuň posuvník pro zobrazení rozdílů."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klikni na rozdíly mezi dvěma obrázky."

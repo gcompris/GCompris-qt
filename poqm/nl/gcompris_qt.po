@@ -20988,12 +20988,12 @@ msgstr ""
 "Kijk goed naar beide plaatjes. Er zijn enkele kleine verschillen. Wanneer je "
 "een verschil ziet, moet je er op klikken."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Versleep de schuif om de verschillen te zien."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klik op de verschillen tussen de twee plaatjes."

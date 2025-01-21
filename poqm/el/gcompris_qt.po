@@ -21243,12 +21243,12 @@ msgstr ""
 "Παρατήρησε τις δύο εικόνες προσεκτικά. Υπάρχουν μερικές μικρές διαφορές. "
 "Κάθε φορά που βρίσκεις μια διαφορά, κάνε κλικ σε αυτήν."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Σύρε τον δρομέα για να δεις τις διαφορές."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Κάνε κλικ στις διαφορές που έχουν οι δυο εικόνες."

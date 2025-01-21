@@ -21381,12 +21381,12 @@ msgstr ""
 "Observeu les dues imatges detingudament. Existeixen algunes diferències. "
 "Quan en trobeu una, feu clic sobre seu."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Arrossega el control lliscant per a mostrar les diferències."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Fes clic a les diferències entre les dues imatges."
