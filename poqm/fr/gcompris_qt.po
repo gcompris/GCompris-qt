@@ -1,6 +1,6 @@
 # SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024 Xavier Besnard <xavier.besnard@kde.org>
 # SPDX-FileCopyrightText: 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Jazeix Johnny <jazeix@gmail.com>
-# SPDX-FileCopyrightText: 2016, 2017, 2018, 2020, 2021, 2022, 2024 charruau <echarruau@gmail.com>
+# SPDX-FileCopyrightText: 2016, 2017, 2018, 2020, 2021, 2022, 2024, 2025 charruau <echarruau@gmail.com>
 # SPDX-FileCopyrightText: 2021, 2024 Timothée Giet <animtim@gmail.com>
 # Ludovic Grossard <ludovic.grossard@unilim.fr>, 2014, 2015.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
@@ -9,9 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-08-10 10:38+0200\n"
-"Last-Translator: Johnny Jazeix <jazeix@gmail.com>\n"
-"Language-Team: French <French <kde-francophone@kde.org>>\n"
+"PO-Revision-Date: 2025-01-20 21:00+0100\n"
+"Last-Translator: charruau <echarruau@gmail.com>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: &\n"
 "X-Environment: kde\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.08.1\n"
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 "X-Text-Markup: qtrich\n"
@@ -6815,6 +6815,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Écris les lettres en reliant les points dans le bon ordre. Tu peux cliquer "
+"puis glisser d'un point à l'autre, ou cliquer sur chaque point l'un après "
+"l'autre."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6842,6 +6845,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Écris les chiffres en reliant les points dans le bon ordre. Tu peux cliquer "
+"puis glisser d'un point à l'autre, ou cliquer sur chaque point l'un après "
+"l'autre."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -24291,26 +24297,26 @@ msgstr ""
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Croquis"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr ""
+"Utilise différents outils de peinture numérique pour dessiner des images."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Apprends à reconnaître les multiples et les diviseurs."
+msgstr "Apprends l'utilisation de différents outils de peinture numérique."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Sélectionne les outils et les couleurs des panneaux pliables et dessiner tes "
+"images.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -24340,12 +24346,12 @@ msgstr "Ctrl + N, suppression ou retour arrière : créer une nouvelle image"
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Concept du lissage de brosse de :"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Concept de la brosse de croquis de :"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
 msgctxt "BackgroundColorSelector|"
@@ -24422,12 +24428,9 @@ msgid "Open an image"
 msgstr "Ouvrir une image"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "Configuration de %1"
+msgstr "Configuration de la nouvelle image"
 
 #: activities/sketch/FilesPanel.qml:144
 msgctxt "FilesPanel|"
@@ -26757,12 +26760,9 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Pratiquer les tables d'addition."
+msgstr "Addition verticale"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
@@ -26772,12 +26772,9 @@ msgstr "Résous l'addition affichée."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Apprendre à partager, pratiquer la division."
+msgstr "Apprendre à résoudre des additions verticales."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
@@ -26803,6 +26800,20 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"Dans une addition verticale, les nombres sont écrits l'un sous l'autre. Ils "
+"doivent être alignés correctement, en commençant par la colonne de droite, "
+"celle des unités. Le résultat est écrit sur la ligne du bas. Pour résoudre "
+"l'addition, commence par additionner les chiffres de la colonne la plus "
+"droite et écris le résultat sur la ligne inférieure de la même colonne. Si "
+"le résultat donne un nombre à deux chiffres, écris seulement le chiffre des "
+"unités, et ajoute le chiffre des dizaines à côté du nombre supérieur de la "
+"colonne suivante (à gauche) : c'est ce qu'on appelle la retenue. Additionne "
+"ensuite les chiffres de la colonne suivante, y compris la retenue, et répète "
+"le processus jusqu'à ce que l'opération soit terminée. Une fois le résultat "
+"trouvé, clique sur le bouton OK pour valider ta réponse. Dans certains "
+"niveaux, tu devras écrire l'opération donnée avant de la résoudre ; dans ce "
+"cas, clique sur le bouton Prêt lorsque l'opération est écrite correctement, "
+"puis résous-la."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
@@ -26866,22 +26877,16 @@ msgstr "Résous l'addition, 4 chiffres, 2 lignes."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Pratiquer les tables de soustraction."
+msgstr "Soustraction verticale"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Choisis les instructions"
+msgstr "Résous la soustraction affichée."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26890,6 +26895,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Apprends à résoudre des soustractions verticales, avec la méthode de "
+"l'emprunt par regroupement."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
@@ -26924,6 +26931,29 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Dans une soustraction verticale, les nombres sont écrits l'un sous l'autre. "
+"Ils doivent être alignés correctement, en commençant par la colonne de "
+"droite, la colonne des unités. Le nombre du haut est appelé le diminuende : "
+"c'est le montant avec lequel nous commençons, auquel un autre nombre est "
+"soustrait pour obtenir la différence. Le nombre du dessous est appelé le "
+"terme soustractif : c'est le montant à soustraire du diminuende pour obtenir "
+"la différence. Le résultat est écrit sur la ligne du bas. Pour résoudre la "
+"soustraction, on commence par soustraire le nombre inférieur de la première "
+"colonne du nombre supérieur de la première colonne (du côté droit), et on "
+"écrit le résultat sur la ligne inférieure de la même colonne. Si le nombre "
+"du haut est plus petit que celui du bas, tu peux emprunter au diminuende de "
+"la colonne suivante : par exemple, si tu ajoutes 10 unités au nombre du "
+"haut, tu dois enlever une unité au nombre du haut de la colonne suivante. "
+"C'est ce qu'on appelle la méthode d'emprunt par regroupement. Pour ce faire, "
+"dans cette activité, clique sur le rectangle vide à gauche du nombre "
+"supérieur, sélectionne 1, et dans la colonne suivante, clique sur le "
+"rectangle vide à droite du nombre supérieur et sélectionne -1. Écris ensuite "
+"le résultat de la colonne sur la ligne du bas, et fais de même dans les "
+"colonnes suivantes jusqu'à ce que l'opération soit terminée. Une fois le "
+"résultat trouvé, clique sur le bouton OK pour valider votre réponse. Dans "
+"certains niveaux, tu devras écrire l'opération donnée avant de la résoudre ; "
+"dans ce cas, clique sur le bouton Prêt lorsque l'opération est écrite "
+"correctement, puis résous-la."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
@@ -27021,12 +27051,9 @@ msgstr "Je suis prêt"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Entraînement à la soustraction."
+msgstr "Soustraction verticale (méthode de l'emprunt par compensation)."
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -27035,6 +27062,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Apprendre à résoudre des soustractions verticales, avec la méthode de "
+"l'emprunt par compensation."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -27062,6 +27091,28 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Dans une soustraction verticale, les nombres sont écrits l'un sous l'autre. "
+"Ils doivent être alignés correctement, en commençant par la colonne de "
+"droite. Le nombre du haut est appelé le diminuende : c'est le montant avec "
+"lequel nous commençons, auquel un autre nombre est soustrait pour obtenir la "
+"différence. Le nombre du dessous est appelé le terme soustractif : c'est le "
+"montant à soustraire de la valeur minimale pour obtenir la différence. Le "
+"résultat est écrit sur la ligne du bas. Pour résoudre la soustraction, "
+"commence par soustraire le nombre inférieur de la première colonne du nombre "
+"supérieur de la première colonne (du côté droit), et écris le résultat sur "
+"la ligne inférieure de la même colonne. Si le chiffre du haut est plus petit "
+"que celui du bas, on peut emprunter au terme soustractif de la colonne "
+"suivante : par exemple, si l'on ajoute 10 unités au chiffre du haut, il faut "
+"ajouter une unité au chiffre du bas de la colonne suivante. C'est ce qu'on "
+"appelle la méthode de l'emprunt par compensation. Pour ce faire, dans cette "
+"activité, clique sur le rectangle vide à gauche du chiffre du haut, "
+"sélectionne 1, et dans la colonne suivante, clique sur le rectangle vide à "
+"droite du chiffre du bas et sélectionne +1. Écris ensuite le résultat de la "
+"colonne sur la ligne du bas, et fais de même sur les colonnes suivantes "
+"jusqu'à ce que l'opération soit terminée. Une fois le résultat trouvé, "
+"clique sur le bouton OK pour valide la réponse. Dans certains niveaux, tu "
+"devras écrire l'opération donnée avant de la résoudre ; dans ce cas, clique "
+"sur le bouton Prêt lorsque l'opération est écrite puis résous-la."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
