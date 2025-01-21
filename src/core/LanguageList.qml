@@ -60,6 +60,7 @@ QtObject {
             { "text": "Magyar", "locale": "hu_HU.UTF-8" },
             { "text": "Indonesia", "locale": "id_ID.UTF-8" },
             { "text": "Italiano", "locale": "it_IT.UTF-8" },
+            { "text": "ქართული", "locale": "ka_GE.UTF-8" },
             { "text": "Lietuvių", "locale": "lt_LT.UTF-8" },
             { "text": "Latviešu", "locale": "lv_LV.UTF-8" },
             { "text": "Македонски", "locale": "mk_MK.UTF-8" },
