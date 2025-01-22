@@ -56,7 +56,7 @@ ActivityBase {
 
             readonly property var levels: activity.datasets.length !== 0 ? activity.datasets : null
         }
-        property int baseMargins: 10 * ApplicationInfo.ratio
+        readonly property int baseMargins: 10 * ApplicationInfo.ratio
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
@@ -99,25 +99,24 @@ ActivityBase {
             z: 100
             anchors.top: layoutArea.top
             anchors.topMargin: background.baseMargins
-            anchors.horizontalCenter: layoutArea.horizontalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
             width: layoutArea.width - background.baseMargins * 2
             height: (layoutArea.height  - background.baseMargins * 3) * 0.5
-            property int tileSize: Core.fitItems(questionArea.width, questionArea.height, questionTilesModel.count) - background.baseMargins
+            property int tileSize: Math.min(questionArea.width / questionTilesModel.count - background.baseMargins, height - 2 * background.baseMargins)
 
             Rectangle {
                 anchors.centerIn: parent
-                width: questionTilesFlow.childrenRect.width + background.baseMargins
-                height: questionTilesFlow.childrenRect.height + background.baseMargins
+                width: questionTilesFlow.childrenRect.width + 2 * background.baseMargins
+                height: questionTilesFlow.childrenRect.height + 2 * background.baseMargins
                 color: "#80FFFFFF"
                 radius: height * 0.1
             }
 
             Item {
                 anchors.centerIn: parent
-                anchors.verticalCenterOffset: background.baseMargins * 0.5
-                anchors.horizontalCenterOffset: anchors.verticalCenterOffset
-                width: questionTilesFlow.childrenRect.width + background.baseMargins
-                height: questionTilesFlow.childrenRect.height + background.baseMargins
+                anchors.horizontalCenterOffset: background.baseMargins * 0.5
+                width: (parent.tileSize + background.baseMargins) * questionTilesModel.count
+                height: parent.tileSize
                 DelegateModel {
                     id: questionTilesDelegateModel
                     model: ListModel {

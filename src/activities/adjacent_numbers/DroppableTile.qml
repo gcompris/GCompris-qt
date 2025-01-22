@@ -15,7 +15,7 @@ Rectangle {
     width: 1
     height: width
     color: value === '?' ? "#80FFFFFF" : "#FFFFFF"
-    radius: height * 0.1
+    radius: background.baseMargins
     state: tileState
 
     GCText {
