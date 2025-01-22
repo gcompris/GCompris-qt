@@ -47,20 +47,20 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.audioVoices.clearQueue();
     items.currentLevel = Core.getNextLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 function previousLevel() {
+    items.audioVoices.clearQueue();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, numberOfLevel);
     initLevel();
 }
 
 //function to play the sound of character at start & end
 function playLetterSound(sound) {
-    // first we clear the queue in case other voices are there, then we append the new number
     // if we play directly, we don't have the bonus sound (or it is truncated)
-    items.audioVoices.clearQueue()
     items.audioVoices.append(sound)
 }
 
