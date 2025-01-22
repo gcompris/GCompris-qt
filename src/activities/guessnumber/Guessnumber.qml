@@ -26,11 +26,10 @@ ActivityBase {
         id: background
         color: "#5a3820"
 
+        readonly property int baseMargins: 10 * ApplicationInfo.ratio
+
         signal start
         signal stop
-
-        onWidthChanged: helico.init()
-        onHeightChanged: helico.init()
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -54,7 +53,6 @@ ActivityBase {
             property alias numpad: numpad
             property int maxSize: background.height * 0.16
             property int size: 70 * ApplicationInfo.ratio
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
         }
 
         onStart: { Activity.start(items) }
@@ -73,46 +71,84 @@ ActivityBase {
             anchors.right: parent.right
         }
 
-        Helico {
-            id: helico
-            fillMode: "PreserveAspectFit"
-            sourceSize.height: height
-            height: (items.size>items.maxSize) ? items.maxSize : items.size
+        Item {
+            id: layoutArea
+            anchors.top: parent.top
+            anchors.topMargin: bar.height
+            anchors.bottom: bar.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.leftMargin: numpad.columnWidth
+            anchors.rightMargin: numpad.columnWidth
+
+            Helico {
+                id: helico
+                height: Math.min(items.maxSize, items.size)
+            }
+        }
+
+        Rectangle {
+            id: textAreaBg
+            anchors.centerIn: textArea
+            width: textArea.contentWidth + 2 * background.baseMargins
+            height: textArea.contentHeight + background.baseMargins
+            color: "#373737"
+            radius: background.baseMargins
         }
 
         GCText {
             id: textArea
             anchors.top: parent.top
-            anchors.topMargin: 10
+            anchors.topMargin: background.baseMargins
             anchors.left: parent.left
-            anchors.leftMargin: numpad.columnWidth + 10
-            anchors.right: answerArea.left
+            anchors.leftMargin: numpad.columnWidth + background.baseMargins
+            anchors.right: parent.right
+            anchors.rightMargin: numpad.columnWidth + background.baseMargins
+            height: 25 * ApplicationInfo.ratio
             horizontalAlignment: Text.AlignHCenter
-            width: parent.width - answerArea.width - 10
+            verticalAlignment: Text.AlignVCenter
             wrapMode: TextEdit.WordWrap
-            color: "white"
+            color: "#f2f2f2"
             font.bold: true
             fontSize: mediumSize
+            fontSizeMode: Text.Fit
         }
 
         AnswerArea {
             id: answerArea
-            anchors.right: parent.right
-            anchors.rightMargin: numpad.visible ?
-                                     numpad.columnWidth + 10 * ApplicationInfo.ratio :
-                                     10 * ApplicationInfo.ratio
-            anchors.top: parent.top
-            anchors.topMargin: 10
+            anchors.top: textAreaBg.bottom
+            anchors.topMargin: background.baseMargins
+            anchors.right: textArea.right
+            anchors.rightMargin: background.baseMargins
+            width: textArea.width * 0.3
+            height: textArea.height
+
+        }
+
+        Rectangle {
+            id: userInfoBg
+            anchors.centerIn: userInfo
+            width: userInfo.contentWidth + 2 * background.baseMargins
+            height: userInfo.contentHeight + background.baseMargins
+            visible: userInfo.text != ""
+            color: "#f2f2f2"
+            radius: background.baseMargins
         }
 
         GCText {
             id: userInfo
-            anchors.top: textArea.top
-            anchors.topMargin: 15 + textArea.contentHeight
-            anchors.horizontalCenter: textArea.horizontalCenter
-            color: "white"
-            font.bold: true
-            fontSize: regularSize
+            anchors.top: textAreaBg.bottom
+            anchors.topMargin: background.baseMargins
+            anchors.left: textArea.left
+            anchors.leftMargin: background.baseMargins
+            anchors.right: answerArea.left
+            anchors.rightMargin: background.baseMargins
+            height: answerArea.height
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            color: "#373737"
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
         }
 
         NumPad {
