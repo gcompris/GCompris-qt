@@ -14,7 +14,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Digital electricity")
   //: Help title
-  description: qsTr("Create and simulate a digital logic circuit")
+  description: qsTr("Create and simulate a digital logic circuit.")
   //intro: "Learn how digital electronics work and create your own circuit."
   //: Help goal
   goal: qsTr("Create a digital logic circuit and simulate it in real time.")
