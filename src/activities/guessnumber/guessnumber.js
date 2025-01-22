@@ -53,10 +53,6 @@ function getRandomInt(min, max) {
 function setUserAnswer(value){
     if(value === 0)
         return;
-    if(value > items.levels[items.currentLevel].maxNumber){
-        items.infoText.text = qsTr("Your number is too high")
-        return;
-    }
     if(value > numberToGuess){
         items.infoText.text = qsTr("Your number is too high")
     }
@@ -65,14 +61,12 @@ function setUserAnswer(value){
     }
     items.helico.state = "advancing"
     if(value === numberToGuess) {
+        items.helico.correctAnswerMove()
         items.infoText.text = qsTr("You found the number!")
         items.bonus.good("tux")
-        items.helico.x = items.background.width
-        items.helico.y = items.background.height / 2 - items.helico.height / 2
     } else {
-        var diff = Math.abs(numberToGuess-value) / items.levels[items.currentLevel].maxNumber
-        items.helico.x = (items.background.width-items.helico.width) - diff * items.background.width
-        items.helico.y = items.background.height / 2 +
-                ((numberToGuess-value) / items.levels[items.currentLevel].maxNumber) * (items.background.height/2) - items.helico.height / 2
+        var diff = Core.clamp((numberToGuess - value) / numberToGuess, -1, 1)
+        items.helico.diffX = Math.abs(diff)
+        items.helico.diffY = diff
     }
 }

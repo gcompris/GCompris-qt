@@ -14,14 +14,18 @@ import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
 import "guessnumber.js" as Activity
 
-Rectangle {
+Item {
     id: answerBackground
-    width: hiddentext.width * 1.2
-    height: 60 * ApplicationInfo.ratio
-    color: "#f2f2f2"
-    radius: 10
 
     property string userEntry
+
+    Rectangle {
+        anchors.centerIn: hiddenText
+        width: hiddenText.contentWidth + 2 * background.baseMargins
+        height: hiddenText.contentHeight + background.baseMargins
+        color: "#f2f2f2"
+        radius: background.baseMargins
+    }
 
     GCText {
         id: userEntryText
@@ -29,13 +33,20 @@ Rectangle {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         color: "#373737"
-        fontSize: largeSize
+        font.bold: true
+        fontSize: mediumSize
+        fontSizeMode: Text.Fit
     }
 
     GCText {
-        id: hiddentext
+        id: hiddenText
         opacity: 0
-        fontSize: userEntryText.fontSize
+        anchors.fill: parent
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        font.bold: true
+        fontSize: mediumSize
+        fontSizeMode: Text.Fit
         text: items.currentMax
     }
 
