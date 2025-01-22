@@ -311,6 +311,7 @@ function processKeyPress(text) {
         currentWord = null
         nextSubLevel();
     }
+    focusTextInput();
 }
 
 function setSpeed()
