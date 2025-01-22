@@ -54,7 +54,7 @@ MouseArea {
         height: parent.height
         color: "white"
         opacity: 1
-        radius: height * 0.1
+        radius: background.baseMargins
 
         Drag.keys: ""
         Drag.active: draggableMouseArea.drag.active
