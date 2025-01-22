@@ -134,14 +134,15 @@ Image {
             width: size * ApplicationInfo.ratio
             height: size * ApplicationInfo.ratio
             color: model.color
-            radius: width / 2
-            border.width: 1 * ApplicationInfo.ratio
+            radius: width * 0.5
+            border.width: Math.min(1, ApplicationInfo.ratio)
             border.color: "#40000000"
             
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottom: parent.bottom
-                width: ApplicationInfo.ratio * 30
+                width: targetModel.get(targetModel.count - 1).size * 0.5 * ApplicationInfo.ratio
+                height: width
                 horizontalAlignment: Text.AlignHCenter
                 font.pointSize: 20
                 minimumPointSize: 5
