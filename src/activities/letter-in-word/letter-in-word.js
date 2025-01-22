@@ -112,7 +112,7 @@ function initLevel() {
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
-        items.audioVoices.silence(100)
+        items.audioVoices.silence(500)
         playLetter(currentLetter)
     }
     items.buttonsBlocked = false;
@@ -162,7 +162,7 @@ function playLetter(letter) {
 
 function nextLevel() {
     items.score.stopWinAnimation();
-    items.audioVoices.clearQueue()
+    items.audioVoices.clearQueue();
     items.currentLevel = Core.getNextLevel(items.currentLevel, maxLevel);
     items.score.currentSubLevel = 0;
     initLevel();
@@ -170,13 +170,14 @@ function nextLevel() {
 
 function previousLevel() {
     items.score.stopWinAnimation();
-    items.audioVoices.clearQueue()
+    items.audioVoices.clearQueue();
     items.currentLevel = Core.getPreviousLevel(items.currentLevel, maxLevel);
     items.score.currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
+    items.audioVoices.clearQueue();
     if( items.score.currentSubLevel >= maxSubLevel) {
         items.bonus.good("flower");
     } else {
