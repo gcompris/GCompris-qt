@@ -259,7 +259,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            onKeypress: Activity.processKeyPress(text)
+            onKeypress: (text) => Activity.processKeyPress(text);
             onError: (msg) => console.log("VirtualKeyboard error: " + msg);
         }
 
