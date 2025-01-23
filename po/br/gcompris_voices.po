@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the gcompris package.
 #
-# KERVOAS <envelkervoas@free.fr>, 2019, 2020, 2021, 2022, 2023, 2024.
+# KERVOAS <envelkervoas@free.fr>, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-12 00:37+0000\n"
-"PO-Revision-Date: 2024-10-25 17:55+0200\n"
+"PO-Revision-Date: 2025-01-05 10:58+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -1340,7 +1340,7 @@ msgstr ""
 #: activities/vertical_addition/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given addition."
-msgstr ""
+msgstr "Diskoulm ar sammadur kinniget."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction_compensation"
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "vertical_subtraction"
@@ -1348,7 +1348,7 @@ msgstr ""
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:18
 #, kde-format
 msgid "Solve the given subtraction."
-msgstr ""
+msgstr "Diskoulm al lamadur kinniget"
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "watercycle"
 #: activities/watercycle/ActivityInfo.qml:18

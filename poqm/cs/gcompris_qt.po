@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-16 00:19+0100\n"
+"PO-Revision-Date: 2025-01-22 17:22+0100\n"
 "Last-Translator: Jan Papez (honyczek) <honyczek@centrum.cz>\n"
 "Language-Team: Czech <kde-i18n-cs@kde.org>\n"
 "Language: cs\n"
@@ -14688,17 +14688,16 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: smazat číslo"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Tvé číslo je příliš vysoké"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Tvé číslo je příliš nízké"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Máš správné číslo!"
@@ -20141,19 +20140,19 @@ msgstr "Poskládej skládanku"
 #: activities/paintings/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid "Drag and Drop the pieces to rebuild the original paintings."
-msgstr ""
+msgstr "Přesuň dílky na správné místo, abys znovu sestavil danou malbu."
 
 #. Help prerequisite
 #: activities/paintings/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Mouse-manipulation: movement, drag and drop."
-msgstr ""
+msgstr "Práce s myší: posunování, táhni a pusť."
 
 #. Help manual
 #: activities/paintings/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Drag the pieces to the right place to rebuild the painting."
-msgstr ""
+msgstr "Přesuň dílky na správné místo, abys znovu sestavil danou malbu."
 
 #: activities/paintings/resource/board/board10_0.qml:14
 msgctxt "board10_0|"
@@ -21939,7 +21938,7 @@ msgstr "Překresli přesně obrázek do vedlejší mřížky."
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr ""
+msgstr "Nauč se rozpoznávat umístění na mřížce a zopakovat daný model."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -22005,6 +22004,7 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Nauč se rozpoznávat umístění na mřížce a souměrně zopakovat daný model."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -23419,7 +23419,7 @@ msgstr "Nakresli vlastní obrázek."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Vyjádři se pomocí tvořivého kreslení."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -25363,6 +25363,7 @@ msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
 msgstr ""
+"Rozvíjej dovednosti logického myšlení, rozlišování barev a paměť na umístění."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -25750,7 +25751,7 @@ msgstr "Umísti tři značky do řady."
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "Rozvíjej své strategické schopnosti."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -27164,7 +27165,7 @@ msgstr ""
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
-msgstr ""
+msgstr "Výběr vykreslovače (opengl, software, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"

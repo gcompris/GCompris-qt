@@ -13962,17 +13962,16 @@ msgid "Backspace: erase a number"
 msgstr ""
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr ""
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr ""
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr ""

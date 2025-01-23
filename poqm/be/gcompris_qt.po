@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris-by\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-01-14 09:35+0300\n"
+"PO-Revision-Date: 2025-01-22 09:44+0300\n"
 "Last-Translator: Dzianis Jackievic <gcompris@miesta.by>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -15071,17 +15071,16 @@ msgid "Backspace: erase a number"
 msgstr "Клавіша сцірання: сцерці лічбу"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Ваш лік большы"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Ваш лік меншы"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Вы знайшлі лік!"
@@ -25642,18 +25641,13 @@ msgstr "Вырашыце судоку."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
 msgstr ""
-"Развівайце вашае лагічнае мысленне: сувязь паміж звестамі, дэдукцыя і "
-"прасторавае размяшчэнне падчас вылічэнняў."
+"Развівайце некаторыя навыкі лагічнага мыслення (сувязь паміж звестамі, "
+"дэдукцыя) і прасторавае ўяўленне."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -25763,12 +25757,9 @@ msgstr "Галаваломка Танграм"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "Мэтай ёсць утварыць пададзеную фігуру."
+msgstr "Перасоўвайце аб'екты каб узнавіць дадзеную фігуру."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -25780,23 +25771,16 @@ msgstr ""
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
 "support it. Drag the rotation button or around selected piece to rotate it. "
 "Check the activity 'Baby Puzzle' for a simpler introduction to tangram."
 msgstr ""
-"Цягнучы, перасоўвайце фігуркі. На фігурках, што могуць паварочвацца "
-"сіметрычна, маецца кнопка для гэтага. Для звычайнага павароту пстрыкніце па "
-"адпаведнай кнопцы, ці працягніце вакол яе. Для прасцейшага знаёмства з "
-"танграмам паспрабуйце практыкаванне 'Дзіцячая галаваломка'."
+"Перасоўвайце фігуркі перацягваючым жэстам. На фігурках, якія магчыма "
+"перасунуць, паказваецца сіметрычная кнопка. Для павароту фігуркі працягніце "
+"вакол кнопкі павароту. Для прасцейшага знаёмства з танграмам паспрабуйце "
+"практыкаванне 'Дзіцячая галаваломка'."
 
 #. Activity title
 #: activities/target/ActivityInfo.qml:15
@@ -25812,12 +25796,9 @@ msgstr "Кідайце дзідкі ў цэльнік і падлічвайце 
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Практыкуйце складанне лікаў."
+msgstr "Практыкуйце складанне некалькіх лікаў."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -25866,12 +25847,9 @@ msgstr "Максімальнае значэнне: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Знайдзіце трубу"
+msgstr "Вылічэнне складу ліку 10"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
@@ -25891,12 +25869,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and additions."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 30 і складанне."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
@@ -25911,30 +25886,21 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "1 не ёсць простым лікам."
+msgstr "1 пара з 3 лікаў."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 5 numbers."
-msgstr "1 не ёсць простым лікам."
+msgstr "2 пары з 5 лікаў."
 
 #. Activity title
 #: activities/tens_complement_find/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "instruments|"
-#| msgid "Find the trumpet"
 msgctxt "ActivityInfo|"
 msgid "Find ten's complement"
-msgstr "Знайдзіце трубу"
+msgstr "Знайдзіце склад ліку 10"
 
 #. Help title
 #: activities/tens_complement_find/ActivityInfo.qml:16
@@ -25950,12 +25916,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 10 і складанне."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -25976,20 +25939,14 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_find/resource/1/Data.qml:25
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 1 to 4."
-msgstr "Лікі ад 0 да 9."
+msgstr "Першы лік ад 1 да 4."
 
 #: activities/tens_complement_find/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "Data|"
 msgid "First number from 5 to 9."
-msgstr "Лікі ад 0 да 9."
+msgstr "Першы лік ад 5 да 9."
 
 #: activities/tens_complement_find/resource/4/Data.qml:9
 msgctxt "Data|"
@@ -26018,12 +25975,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 30 і складанне."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -26037,20 +25991,14 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_swap/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "2 pairs to make from 4 numbers."
-msgstr "1 не ёсць простым лікам."
+msgstr "2 пары з 4 лікаў."
 
 #: activities/tens_complement_swap/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Warning|"
-#| msgid "1 is not a prime number."
 msgctxt "Data|"
 msgid "3 pairs to make from 6 numbers."
-msgstr "1 не ёсць простым лікам."
+msgstr "3 пары з 6 лікаў."
 
 #. Activity title
 #: activities/tens_complement_use/ActivityInfo.qml:14
@@ -26072,12 +26020,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers from 0 to 9."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
-msgstr "Лікі ад 0 да 9."
+msgstr "Лікі ад 1 да 50 і складанне."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -26089,28 +26034,19 @@ msgid ""
 msgstr ""
 
 #: activities/tens_complement_use/resource/1/Data.qml:43
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Result between 11 and 19."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Вынік паміж 11 і 19."
 
 #: activities/tens_complement_use/resource/2/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 1 and 8."
 msgctxt "Data|"
 msgid "Result between 20 and 29."
-msgstr "Лічбы паміж 1 і 8."
+msgstr "Вынік паміж 20 і 29."
 
 #: activities/tens_complement_use/resource/3/Data.qml:9
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Numbers between 2 and 18."
 msgctxt "Data|"
 msgid "Result between 30 and 50."
-msgstr "Лічбы паміж 2 і 18."
+msgstr "Вынік паміж 30 і 50."
 
 #. Activity title
 #: activities/tic_tac_toe/ActivityInfo.qml:18

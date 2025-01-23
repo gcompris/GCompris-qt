@@ -14942,17 +14942,16 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: brisanje broja"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Tvoj broj je previsok"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Tvoj broj je prenizak"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Našao si broj!"

@@ -15275,17 +15275,16 @@ msgid "Backspace: erase a number"
 msgstr "Клавиша «Backspace»: удаление числа"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Число слишком велико"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Число слишком мало"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Ты угадал число!"
