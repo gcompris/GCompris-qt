@@ -40,6 +40,7 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
+        verticalAlignment: Image.AlignBottom
         focus: true
 
         // system locale by default
@@ -203,12 +204,12 @@ ActivityBase {
             id: railway
             source: Activity.url + "railway.svg"
             fillMode: Image.PreserveAspectCrop
-            anchors.bottom: bar.top
+            anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.right: parent.right
             sourceSize.width: width
             sourceSize.height: height
-            anchors.bottomMargin: 13 * ApplicationInfo.ratio
+            anchors.bottomMargin: bar.height * 1.5
         }
 
         Rectangle {
@@ -250,10 +251,8 @@ ActivityBase {
         Image {
             id: engine
             source: Activity.url + "engine.svg"
-            anchors.bottom: railway.bottom
-            anchors.left: railway.left
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            anchors.bottom: wholeTrainArea.bottom
+            anchors.left: wholeTrainArea.left
             sourceSize.width: itemWidth
             sourceSize.height: itemWidth
             fillMode: Image.PreserveAspectFit
@@ -263,8 +262,7 @@ ActivityBase {
             id: smoke
             source: Activity.url + "smoke.svg"
             anchors.bottom: engine.top
-            anchors.left: railway.left
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.left: engine.left
             anchors.bottomMargin: 5 * ApplicationInfo.ratio
             sourceSize.width: engine.width
             fillMode: Image.PreserveAspectFit
@@ -272,11 +270,12 @@ ActivityBase {
 
         Item {
             id: wholeTrainArea
-            anchors.bottom: bar.top
+            anchors.bottom: railway.bottom
             anchors.left: background.left
             anchors.right: background.right
             anchors.top: repeatItem.bottom
             anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottomMargin: 5 * ApplicationInfo.ratio
         }
 
