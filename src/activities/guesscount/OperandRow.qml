@@ -16,27 +16,23 @@ Row {
     id: operandRow
     property alias repeater: repeater
     property int rowSum
-    spacing: 20
+    spacing: background.baseMargins
     Rectangle {
         id: operands
-        width: parent.width*0.328
+        width: parent.width * 0.3
         height: parent.height
-        radius: 10
-        color: "#75D21B"  //green
-        Rectangle {
-            id: insideFill
-            width: parent.width - anchors.margins
-            height: parent.height - anchors.margins
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: parent.height/4
-            radius: 10
-            color: "#E8E8E8" //paper white
-        }
+        radius: background.baseMargins
+        color: "#E8E8E8"
+        border.color: "#75D21B"  //green
+        border.width: background.tileBorder
+
         GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.fill: parent
+            anchors.margins: 2 * background.tileBorder
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize
+            fontSizeMode: Text.Fit
             text: qsTr("Numbers")
         }
     }
@@ -45,7 +41,8 @@ Row {
         delegate: DragTile {
             id: root
             type: "operands"
-            width: operandRow.width*0.1
+            width: Math.min(70 * ApplicationInfo.ratio,
+                            (operandRow.width - operands.width) * 0.2 - background.baseMargins)
             height: operandRow.height
         }
     }

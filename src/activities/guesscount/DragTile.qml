@@ -23,6 +23,7 @@ Item {
         active: type == "operands" ? true : false
         sourceComponent: Tile {
             id: tile
+            parent: root
         }
     }
     Component.onCompleted: {
