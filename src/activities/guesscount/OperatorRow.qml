@@ -15,38 +15,36 @@ import "../../core"
 
 Row {
     id: operatorRow
-    spacing: 20
+    spacing: background.baseMargins
     property string mode
     property alias repeater: repeater
     Rectangle {
         id: operator
-        width: parent.width*0.328
+        width: parent.width * 0.3
         height: parent.height
-        radius: 20.0;
-        color: "#E16F6F"  //red
-        Rectangle {
-            id: insideFill
-            width: parent.width - anchors.margins
-            height: parent.height - anchors.margins
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: parent.height/4
-            radius: 10
-            color: "#E8E8E8"
-        }
+        radius: background.baseMargins
+        color: "#E8E8E8"
+        border.color: "#E16F6F"  //red
+        border.width: background.tileBorder
+
         GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.fill: parent
+            anchors.margins: 2 * background.tileBorder
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
             fontSize: mediumSize
+            fontSizeMode: Text.Fit
             text: qsTr("Operators")
         }
     }
+
     Repeater {
         id: repeater
         delegate: DragTile {
             id: root
             type: "operators"
-            width: operatorRow.width * 0.1
+            width: Math.min(70 * ApplicationInfo.ratio,
+                            (operatorRow.width - operator.width) * 0.25 - background.baseMargins)
             height: operatorRow.height
         }
     }

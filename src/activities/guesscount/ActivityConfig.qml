@@ -48,24 +48,28 @@ Item {
         }
         Row {
             id: labels
-            spacing: 20
+            width: parent.width
+            height: 50 * ApplicationInfo.ratio
+            spacing: 10 * ApplicationInfo.ratio
             visible: modeBox.currentIndex == 0
             Repeater {
                 model: 2
                 Rectangle {
                     id: label
-                    width: column.width * 0.42
-                    height: 32 * ApplicationInfo.ratio
-                    radius: 10
-                    color: modelData ? "#5cc854" : "#d94444" // green : red
+                    width: (labels.width - labels.spacing) * 0.4
+                    height: labels.height
+                    radius: 10 * ApplicationInfo.ratio
+                    color: index === 0 ? "#5cc854" : "#d94444" // green : red
+                    border.color: "#E6E6E6"
+                    border.width: index === 0 ? 3 * ApplicationInfo.ratio : 0
                     GCText {
                         anchors.fill: parent
-                        anchors.margins: 10
+                        anchors.margins: 10 * ApplicationInfo.ratio
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         fontSizeMode: Text.Fit
                         fontSize: mediumSize
-                        text: modelData ? qsTr("Selected") : qsTr("Not Selected")
+                        text: index === 0 ? qsTr("Selected") : qsTr("Not Selected")
                     }
                 }
             }

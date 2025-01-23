@@ -14,19 +14,22 @@ import "../../core"
 
 Row {
     id: admin
-    spacing: 20
+    spacing: baseMargins
     property int level
+    readonly property int baseMargins: 10 * ApplicationInfo.ratio
     Rectangle {
         id: operator
-        width: parent.width*0.23
+        width: parent.width * 0.23
         height: parent.height
-        radius: 10.0;
+        radius: admin.baseMargins
         color: "#E6E6E6"
-        state: "selected"
         GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            fontSize: smallSize
+            anchors.fill: parent
+            anchors.margins: admin.baseMargins
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            fontSize: mediumSize
+            fontSizeMode: Text.Fit
             text: qsTr("Level %1").arg(level+1)
         }
     }
@@ -35,9 +38,10 @@ Row {
         model: ['+','-','*','/']
         delegate: Rectangle {
             id: tile
-            width: parent.width*0.15
+            width: (parent.width - operator.width - admin.baseMargins) * 0.2 - admin.baseMargins
             height: parent.height
-            radius: 20
+            radius: admin.baseMargins
+            border.color: "#E6E6E6"
             state: activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1 ? "selected" : "notselected"
 
             function refreshTile() {
@@ -49,10 +53,13 @@ Row {
                 }
             }
             GCText {
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
+                anchors.fill: parent
+                anchors.margins: admin.baseMargins
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignHCenter
                 text: modelData
-                fontSize: smallSize
+                fontSize: mediumSize
+                fontSizeMode: Text.Fit
             }
             MouseArea {
                 anchors.fill: parent
@@ -75,6 +82,7 @@ Row {
                     PropertyChanges {
                         tile {
                             color: "#5cc854"
+                            border.width: 3 * ApplicationInfo.ratio
                         }
                     }
                 },
@@ -83,6 +91,7 @@ Row {
                     PropertyChanges {
                         tile {
                             color: "#d94444"
+                            border.width: 0
                         }
                     }
                 }

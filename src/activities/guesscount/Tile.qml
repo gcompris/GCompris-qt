@@ -16,8 +16,8 @@ MouseArea {
     property alias tile: tile
     property alias datavalue: tile.datavalue
     property var reparent: root
-    width: root.width
-    height: root.height
+    width: parent.width
+    height: parent.height
     anchors.centerIn: parent
     drag.target: tile
     enabled: !items.solved
@@ -26,14 +26,10 @@ MouseArea {
         tile.Drag.drop()
     }
     onParentChanged: {
-        if(parent.children.length>2 && root.type == "operators")
+        if(parent.children.length > 2 && root.type == "operators")
             mouseArea.destroy()
     }
 
-    onClicked: {
-        if(items.warningDialog.visible)
-            items.warningDialog.visible = false
-    }
     Rectangle {
         id: tile
         width: parent.width
@@ -41,43 +37,37 @@ MouseArea {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         property var datavalue: modelData
-        radius: 10
-        //opacity: 0.7
-        //color: root.type == "operators" ? "red" : "green"
+        radius: background.tileRadius
         color: "#E8E8E8"
         Drag.keys: [ type ]
         Drag.active: mouseArea.drag.active
-        Drag.hotSpot.x: parent.width/2
-        Drag.hotSpot.y: parent.height/2
+        Drag.hotSpot.x: parent.width * 0.5
+        Drag.hotSpot.y: parent.height * 0.5
         
         Rectangle {
             id: typeLine
-            width: parent.width - anchors.margins
-            height: parent.height - anchors.margins
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: parent.height/8
-            radius: 10
+            anchors.fill: parent
+            anchors.margins: background.tileBorder
+            radius: parent.radius - anchors.margins
             color: root.type == "operators" ? "#E16F6F" : "#75D21B" // red or green
         }
         
         Rectangle {
             id: insideFill
-            width: parent.width - anchors.margins
-            height: parent.height - anchors.margins
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.margins: parent.height/4
-            radius: 10
+            anchors.fill: parent
+            anchors.margins: typeLine.anchors.margins * 2
+            radius: 0
             color: "#E8E8E8" //paper white
         }
         
         
         GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.fill: insideFill
             text: modelData
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             fontSize: mediumSize
+            fontSizeMode: Text.Fit
         }
         states: [
             State {
