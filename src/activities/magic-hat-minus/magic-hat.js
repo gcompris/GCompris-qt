@@ -49,9 +49,9 @@ function initLevel() {
     var maxValue = items.levels[items.currentLevel].maxValue
 
     if(items.currentLevel > 0) {
-        items.introductionText.visible = false
+        items.introText.visible = false
     } else {
-        items.introductionText.visible = true
+        items.introText.visible = true
     }
     coefficientsNeeded = (maxValue / maxStarSlots <= 1) ? false : true
     for(var j = 0; j < 3; j++) {
@@ -118,11 +118,7 @@ function initLevel() {
 }
 
 function setCoefficientVisibility(visibility) {
-    for(var i = 0; i < 3; i++) {
-        for(var j = 0; j < 3; j++) {
-            items.repeatersList[j].itemAt(i).coefficientVisible = visibility
-        }
-    }
+    items.coefficientVisible = visibility;
 }
 
 function userClickedAStar(barIndex,state) { 
@@ -164,10 +160,6 @@ function previousLevel() {
 }
 
 function moveStarsUnderHat() {
-    if(items.currentLevel == 0) {
-        items.introductionText.visible = false
-    }
-
     for(var j = 0; j < 3; j++) {
         items.repeatersList[0].itemAt(j).moveStars()
     }

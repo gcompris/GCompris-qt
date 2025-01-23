@@ -9,6 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
+import "../../core"
 import "magic-hat.js" as Activity
 
 
@@ -26,8 +27,8 @@ Item {
     property string wantedColor: "1"
     state: "Init"
 
-    width: 34
-    height: 34
+    width: background.starSize
+    height: background.starSize
 
     MouseArea {
         id: mouseArea
@@ -44,7 +45,7 @@ Item {
         id: contour
         anchors.fill: parent
         border.color: "#373737"
-        border.width: mouseArea.containsMouse ? 2 : 1
+        border.width: mouseArea.containsMouse ? 2 * ApplicationInfo.ratio : Math.max(1, ApplicationInfo.ratio)
         opacity: displayBounds ? 1.0 : 0.0
         color: mainItem.backgroundColor
     }
@@ -53,12 +54,12 @@ Item {
         id: starImg
         source: mainItem.selected ?
                     Activity.url + "star-" + wantedColor + ".svg" : Activity.url + "star-0.svg"
-        width: contour.width - 4
+        width: parent.width - 4 * ApplicationInfo.ratio
         height: width
         sourceSize.width: width
-        anchors.centerIn: contour
+        anchors.centerIn: parent
         fillMode: Image.PreserveAspectFit
-        opacity: 1
+        opacity: mainItem.selected ? 1 : 0.1
         visible: true
     }
 

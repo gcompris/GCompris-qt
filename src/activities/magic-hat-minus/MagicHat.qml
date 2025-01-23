@@ -30,13 +30,17 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
-        property int starSize: Math.min((background.width - 10 * ApplicationInfo.ratio) / 14 ,
-                                        (operationLayout.height - 10 * ApplicationInfo.ratio) / 12)
-
+        readonly property int baseMargins: 10 * ApplicationInfo.ratio
+        readonly property int halfMargins: 5 * ApplicationInfo.ratio
+        readonly property int starSize: Math.min((layoutArea.width - baseMargins - halfMargins * 11) / 13 ,
+                                        (layoutArea.height - baseMargins * 4 - halfMargins * 7) / 9)
         signal start
         signal stop
 
         property var starColors : ["1", "2", "3"]
+
+        readonly property bool horizontalLayout:
+            (width - okButton.width * 4 > height - bar.height * 1.5 - 6 * baseMargins)
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -46,8 +50,6 @@ ActivityBase {
 
         onStart: Activity.start(items, mode)
         onStop: Activity.stop()
-
-        property bool vert: background.width >= (background.height - okButton.height)
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -59,8 +61,9 @@ ActivityBase {
             readonly property var levels: activity.datasets
             property alias bonus: bonus
             property alias hat: theHat
-            property alias introductionText: introText
+            property alias introText: introText
             property bool inputBlocked: true
+            property bool coefficientVisible: false
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
@@ -70,129 +73,102 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/smudge.wav"
         }
 
-        Rectangle {
-            id: introTextBG
-            width: introText.width
-            height: introText.height
-            anchors.centerIn: introText
-            color: "#373737"
-            radius: 5 * ApplicationInfo.ratio
-            visible: introText.visible
-        }
+        Item {
+            id: layoutArea
+            anchors.fill: parent
+            anchors.margins: background.baseMargins
+            anchors.topMargin: 5 * background.baseMargins
+            anchors.bottomMargin: background.horizontalLayout ? bar.height * 1.5 :
+                                    bar.height * 1.5 + theHat.height + background.baseMargins
 
-        GCText {
-            id: introText
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                topMargin: 10 * ApplicationInfo.ratio
+            Image {
+                // The math operation
+                id: operatorImage
+                source: mode == "minus" ? Activity.url + "minus.svg" :
+                Activity.url + "plus.svg"
+                anchors.right: operationLayout.left
+                anchors.rightMargin: background.baseMargins
+                width: background.starSize
+                height: width
+                sourceSize.width: width
+                y: secondRow.y
             }
-            width: parent.width - 10 * ApplicationInfo.ratio
-            height: (background.height - bar.height * 1.2) * 0.1
-            fontSizeMode: Text.Fit
-            minimumPointSize: 7
-            fontSize: hugeSize
-            font.bold: true
-            color: "white"
-            wrapMode: TextEdit.WordWrap
-            horizontalAlignment: TextEdit.AlignHCenter
-            text: qsTr("Click on the hat to begin the game")
-        }
 
-        Image {
-            // The math operation
-            id: operatorImage
-            source: mode == "minus" ? Activity.url + "minus.svg" :
-                                      Activity.url + "plus.svg"
-            anchors.right: operationLayout.left
-            anchors.rightMargin: 10
-            width: background.starSize
-            height: width
-            sourceSize.width: width
-            y: operationLayout.y + secondRow.y - height * 0.5
-        }
-
-        Grid {
-            id: operationLayout
-            anchors {
-                top: introTextBG.bottom
-                topMargin: 10
-                horizontalCenter: background.horizontalCenter
-                horizontalCenterOffset: operatorImage.width * 0.5
-            }
-            width: background.starSize * 12
-            height: (background.height - bar.height * 1.2) * 0.7
-            columns: 1
             Column {
-                id: firstRow
-                height: background.starSize * 4
-                spacing: 5
-                z: 10
-                Repeater {
-                    id: repeaterFirstRow
-                    model: 3
-                    StarsBar {
-                        barGroupIndex: 0
-                        barIndex: index
-                        width: operationLayout.width
-                        backgroundColor: "grey"
-                        starsColor: starColors[index]
-                        theHat: items.hat
-                        starsSize: background.starSize
-                        opacity: 0
+                id: operationLayout
+                anchors {
+                    top: parent.top
+                    horizontalCenter: parent.horizontalCenter
+                    horizontalCenterOffset: (operatorImage.width + background.baseMargins) * 0.5
+                }
+                width: items.coefficientVisible ?
+                    (background.starSize + background.halfMargins) * 11 + background.starSize :
+                    (background.starSize + background.halfMargins) * 10
+                height: parent.height
+                spacing: background.baseMargins
+                Column {
+                    id: firstRow
+                    height: background.starSize * 3 + background.halfMargins * 2
+                    spacing: background.halfMargins
+                    z: 10
+                    Repeater {
+                        id: repeaterFirstRow
+                        model: 3
+                        StarsBar {
+                            barGroupIndex: 0
+                            barIndex: index
+                            width: operationLayout.width
+                            backgroundColor: "#4d4d4d"
+                            starsColor: starColors[index]
+                            theHat: items.hat
+                            opacity: 0
+                        }
                     }
                 }
-            }
-            Column {
-                id: secondRow
-                height: background.starSize * 4
-                spacing: 5
-                z: 9
-                Repeater {
-                    id: repeaterSecondRow
-                    model: 3
-                    StarsBar {
-                        barGroupIndex: 1
-                        barIndex: index
-                        width: operationLayout.width
-                        backgroundColor: "grey"
-                        starsColor: starColors[index]
-                        theHat: items.hat
-                        starsSize: background.starSize
-                        opacity: 0
+                Column {
+                    id: secondRow
+                    height: firstRow.height
+                    spacing: background.halfMargins
+                    z: 9
+                    Repeater {
+                        id: repeaterSecondRow
+                        model: 3
+                        StarsBar {
+                            barGroupIndex: 1
+                            barIndex: index
+                            width: operationLayout.width
+                            backgroundColor: "#4d4d4d"
+                            starsColor: starColors[index]
+                            theHat: items.hat
+                            opacity: 0
+                        }
                     }
                 }
-            }
 
-            Rectangle {
-                width: (background.starSize + 5) * 10 - 5
-                height: 5 * ApplicationInfo.ratio
-                color: "white"
-            }
+                Rectangle {
+                    x: - background.halfMargins * 0.5
+                    width: operationLayout.width
+                    height: background.halfMargins
+                    color: "white"
+                }
 
-            Rectangle {
-                width: (background.starSize + 5) * 10 - 5
-                height: 10 * ApplicationInfo.ratio
-                opacity: 0
-            }
-
-            Column {
-                id: answerRow
-                height: background.starSize * 4
-                spacing: 5
-                Repeater {
-                    id: repeaterAnswerRow
-                    model: 3
-                    StarsBar {
-                        barGroupIndex: 2
-                        barIndex: index
-                        width: operationLayout.width
-                        backgroundColor: "#53b9c9"
-                        starsColor: starColors[index]
-                        authorizeClick: false
-                        theHat: items.hat
-                        starsSize: background.starSize
-                        opacity: 0
+                Column {
+                    id: answerRow
+                    height: firstRow.height
+                    spacing: background.halfMargins
+                    Repeater {
+                        id: repeaterAnswerRow
+                        model: 3
+                        StarsBar {
+                            barGroupIndex: 2
+                            barIndex: index
+                            width: operationLayout.width
+                            backgroundColor: "#088292"
+                            starsColor: starColors[index]
+                            authorizeClick: false
+                            theHat: items.hat
+                            opacity: 0
+                        }
                     }
                 }
             }
@@ -238,12 +214,10 @@ ActivityBase {
 
         Hat {
             id: theHat
-            anchors {
-                bottom: bar.top
-                margins: 20 * ApplicationInfo.ratio
-            }
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: bar.height * 1.5
             x: Math.max(20 * ApplicationInfo.ratio, operationLayout.x * 0.5 - width * 0.5)
-            height: (background.height - bar.height * 1.2) * 0.2
+            height: Math.min(100 * ApplicationInfo.ratio, (background.height - anchors.bottomMargin) * 0.2)
             width: height
             starsSize: background.starSize
         }
@@ -251,18 +225,42 @@ ActivityBase {
         BarButton {
             id: okButton
             anchors {
-                bottom: bar.top
+                bottom: theHat.bottom
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio
-                bottomMargin: 10 * ApplicationInfo.ratio
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: (background.height - bar.height * 1.2) * 0.15
+            width: theHat.height
             enabled: !items.inputBlocked && theHat.state === "GuessNumber"
             onClicked: {
                 items.inputBlocked = true
                 Activity.verifyAnswer()
             }
+        }
+
+        Rectangle {
+            id: introTextBG
+            width: introText.contentWidth + 2 * background.baseMargins
+            height: introText.contentHeight + background.baseMargins
+            anchors.centerIn: introText
+            color: "#373737"
+            radius: background.baseMargins
+            visible: introText.visible
+        }
+
+        GCText {
+            id: introText
+            anchors.centerIn: layoutArea
+            width: parent.width - 40 * ApplicationInfo.ratio
+            height: 30 * ApplicationInfo.ratio
+            fontSizeMode: Text.Fit
+            fontSize: regularSize
+            font.bold: true
+            color: "white"
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            text: qsTr("Click on the hat to begin the game")
         }
 
         Bonus {

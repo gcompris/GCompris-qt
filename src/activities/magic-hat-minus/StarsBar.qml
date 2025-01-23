@@ -13,14 +13,12 @@ import "../../core"
 
 Item {
     id: item
-    height: starsSize
+    height: background.starSize
     property int barGroupIndex
     property int barIndex
     property int nbStarsOn: 0
     property bool authorizeClick: false
     property int coefficient: 1
-    property bool coefficientVisible: false
-    property int starsSize
     property string backgroundColor
     property string starsColor: "1"
     property Item theHat
@@ -28,26 +26,29 @@ Item {
 
     Row {
         id: rowlayout
-        height: item.height
-        spacing: 5
+        height: parent.height
+        spacing: background.halfMargins
         GCText {
             id: text
-            visible: item.coefficientVisible
+            visible: items.coefficientVisible
             //: text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
             text: qsTr("%1x").arg(item.coefficient)
-            fontSizeMode: Text.HorizontalFit
-            width: rowlayout.width / 10
+            fontSize: regularSize
+            minimumPointSize: 6
+            fontSizeMode: Text.Fit
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            width: background.starSize * 2
+            height: background.starSize
             color: "white"
-            anchors.rightMargin: 20
-            fontSize: tinySize
         }
         Repeater {
             id: repeaterStars
             model: item.opacity == 1 ? 10 : 0
             Item {
                 id: star
-                width: item.starsSize
-                height: item.starsSize
+                width: background.starSize
+                height: background.starSize
                 property alias starFixed: starFixed
                 property alias starToMove: starToMove
                 Star {
@@ -55,10 +56,8 @@ Item {
                     barGroupIndex: item.barGroupIndex
                     barIndex: item.barIndex
                     backgroundColor: item.backgroundColor
-                    wantedColor: coefficientVisible ? "1" : starsColor
+                    wantedColor: items.coefficientVisible ? "1" : starsColor
                     selected: index < nbStarsOn ? true : false
-                    width: item.starsSize
-                    height: item.starsSize
                     displayBounds: true
                     isClickable: item.authorizeClick
                 }
@@ -66,10 +65,8 @@ Item {
                     id: starToMove
                     barGroupIndex: item.barGroupIndex
                     backgroundColor: item.backgroundColor
-                    wantedColor: coefficientVisible ? "1" : starsColor
+                    wantedColor: items.coefficientVisible ? "1" : starsColor
                     selected: index < nbStarsOn ? true : false
-                    width: item.starsSize
-                    height: item.starsSize
                     displayBounds: false
                     isClickable: false
                     enabled: selected ? true : false
