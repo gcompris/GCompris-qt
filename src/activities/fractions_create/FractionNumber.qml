@@ -20,7 +20,7 @@ Item {
     Image {
         id: shiftKeyboardLeft
         source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-        height: 25 * ApplicationInfo.ratio
+        height: 35 * ApplicationInfo.ratio
         width: height
         sourceSize.height: height
         enabled: fractionNumber.interactive && !items.buttonsBlocked
