@@ -219,7 +219,7 @@ ActivityBase {
                 horizontalCenter: rightLayoutArea.horizontalCenter
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: 60 * ApplicationInfo.ratio
+            width: 70 * ApplicationInfo.ratio
             onClicked: {
                 chartDisplay.checkAnswer();
             }
@@ -231,6 +231,8 @@ ActivityBase {
                 top: undefined
                 bottom: rightLayoutArea.bottom
                 horizontalCenter: rightLayoutArea.horizontalCenter
+                right: undefined
+                left: undefined
             }
             onStop: {
                 Activity.nextSubLevel();
