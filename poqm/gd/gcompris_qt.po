@@ -15426,7 +15426,6 @@ msgid "Backspace: erase a number"
 msgstr ""
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Numbers With Dice"
@@ -15434,12 +15433,12 @@ msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Àireamhan le dìsnean"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr ""
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr ""
@@ -21717,12 +21716,12 @@ msgid ""
 "you find a difference you must click on it."
 msgstr ""
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr ""
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Click on the word corresponding to the printed image."

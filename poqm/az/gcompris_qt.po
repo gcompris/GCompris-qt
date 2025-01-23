@@ -15362,17 +15362,16 @@ msgid "Backspace: erase a number"
 msgstr "Geri düyməsi: ədədi silir"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Ədəd çox böyükdür"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Ədəd çox kiçikdir"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Siz doğru sayı tapdınız!"
@@ -21430,12 +21429,12 @@ msgstr ""
 "İki şəkili diqqətlə araşdırın. Burada bəzi yüngül fərqlər var. Fərqi "
 "tapdıqda onun üzərinə vurmalısınız."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Fərqi görmək üçün çubuğu sürüşdürün."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Şəkillər arasındakı fərqlərin üzərinə vurun."

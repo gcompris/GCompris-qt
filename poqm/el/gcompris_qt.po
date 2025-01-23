@@ -15310,17 +15310,16 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: Διαγραφή αριθμού."
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Ο αριθμός που έβαλες είναι μεγαλύτερος."
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Ο αριθμός που έβαλες είναι μικρότερος."
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Βρήκες τον αριθμό!"
@@ -21243,12 +21242,12 @@ msgstr ""
 "Παρατήρησε τις δύο εικόνες προσεκτικά. Υπάρχουν μερικές μικρές διαφορές. "
 "Κάθε φορά που βρίσκεις μια διαφορά, κάνε κλικ σε αυτήν."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Σύρε τον δρομέα για να δεις τις διαφορές."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Κάνε κλικ στις διαφορές που έχουν οι δυο εικόνες."

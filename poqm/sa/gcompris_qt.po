@@ -14679,17 +14679,16 @@ msgid "Backspace: erase a number"
 msgstr "पृष्ठस्थानम् : एकं सङ्ख्यां मेटयतु"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "भवतः संख्या अतीव अधिका अस्ति"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "भवतः संख्या अतीव न्यूना अस्ति"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "भवता सङ्ख्या प्राप्ता!"
@@ -20387,12 +20386,12 @@ msgstr ""
 "चित्रद्वयं सम्यक् अवलोकयन्तु। तत्र केचन अल्पाः भेदाः सन्ति। यदा भवन्तः भेदं प्राप्नुवन्ति तदा "
 "भवन्तः तस्मिन् क्लिक् अवश्यं कुर्वन्तु।"
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "भेदं दर्शयितुं स्लाइडरं कर्षयन्तु ।"
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "द्वयोः चित्रयोः भेदं नुदन्तु ।"

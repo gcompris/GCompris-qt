@@ -15098,17 +15098,16 @@ msgid "Backspace: erase a number"
 msgstr "Tasti Backspace: fshini një numër"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Numri juaj është shumë lart"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Numri juaj është shumë poshtë"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "E gjetët numrin!"
@@ -20994,12 +20993,12 @@ msgstr ""
 "Vëzhgoni me kujdes dy figurat. Ka ca dallime të vockla. Kur të gjeni një "
 "dallim, duhet të klikoni mbi të."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Tërhiqeni rrëshqitësin që të shfaqen dallimet."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klikoni mbi dallimet mes dy figurave."

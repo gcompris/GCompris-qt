@@ -15730,17 +15730,16 @@ msgid "Backspace: erase a number"
 msgstr "Backspace: избришете број"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Бројот е премногу голем"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Бројот е премногу мал"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Изберете го непарниот број!"
@@ -21854,12 +21853,12 @@ msgstr ""
 "Набљудувајте ги двете слики внимателно. Постојат некои мали разлики. Кога ќе "
 "најдете разлика, мора да кликнете на неа."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Повлечете го лизгачот за да ги покажете разликите."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Кликнете на разликите помеѓу двете слики."

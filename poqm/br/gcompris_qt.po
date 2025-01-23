@@ -1,9 +1,9 @@
-# KERVOAS Envel <envelkervoas@free.fr>, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# KERVOAS Envel <envelkervoas@free.fr>, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: GCompris 5\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-10-25 17:45+0200\n"
+"PO-Revision-Date: 2025-01-21 14:44+0100\n"
 "Last-Translator: Envel Kervoas <envelkervoas@free.fr>\n"
 "Language-Team: Breton <kde-i18n-doc@kde.org>\n"
 "Language: br\n"
@@ -33,7 +33,7 @@ msgstr ""
 #: activities/number_sequence/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Automatic"
-msgstr "Dre ziouer"
+msgstr "Aotomatikel"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
 #: activities/enumerate/ActivityConfig.qml:22
@@ -912,7 +912,7 @@ msgstr "Sifroù: skriv da respont"
 #: activities/algebra_plus/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit in your answer"
-msgstr "Barrenn-esaouiñ: lemel ar sifr diwezhañ ez respont"
+msgstr "Barrennig-Distro: lemel ar sifr diwezhañ ez respont"
 
 #: activities/algebra_by/ActivityInfo.qml:28
 #: activities/algebra_div/ActivityInfo.qml:28
@@ -2679,12 +2679,9 @@ msgstr ""
 "betek-hen!"
 
 #: activities/balancebox/Balancebox.qml:72
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "Balancebox|"
 msgid "OK"
-msgstr "Mat eo"
+msgstr "OK"
 
 #: activities/balancebox/editor/balanceboxeditor.js:254
 msgctxt "balanceboxeditor|"
@@ -5065,11 +5062,6 @@ msgstr ""
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5077,7 +5069,8 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Tres ar skeudenn dre glikañ war pep pik en heuliad. Bewech ma vo dibabet ur "
-"pik ez aio war-wel ar pik glas da heul."
+"pik ez aio war-wel ar pik glas da heul. Bez' e c'hellez klikan ha riklañ "
+"d'ur pik d'ar re all pe klikañ war bep pik, unan hag unan."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -6676,6 +6669,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Liamm ar pikoù en urzh mat evit tresañ al lizherennoù. Bez' e c'hellez "
+"klikañ ha riklañ eus ur pik d'ar re all, e klikañ war bep pik unan-hag-unan."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6703,6 +6698,8 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Liamm ar pikoù en urzh mat evit tresañ an niveroù. Bez' e c'hellez klikañ ha "
+"riklañ eus ur pik d'ar re all, e klikañ war bep pik unan-hag-unan."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -9870,7 +9867,7 @@ msgstr "Barrenn-esaouiñ: ouzhpennañ un elfenn dibabet d'ar frizenn"
 #: activities/frieze/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: remove last token from the frieze"
-msgstr "Barrenn-esaouiñ pe Lemel: lemel diouzh ar frizenn an elfenn diwezhañ"
+msgstr "Barrennig-Distro pe Lemel: lemel diouzh ar frizenn an elfenn diwezhañ"
 
 #: activities/frieze/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14343,7 +14340,7 @@ msgstr "Sifroù: bizskriv sifroù"
 #: activities/graduated_line_read/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: delete the last digit"
-msgstr "Distro: lemel ar sifr diwezhañ"
+msgstr "Barrennig-Distro: lemel ar sifr diwezhañ"
 
 #: activities/graduated_line_read/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -14560,7 +14557,7 @@ msgstr ""
 #: activities/grammar_classes/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Backspace: select the previous word"
-msgstr "Distro: dibab ar ger kent"
+msgstr "Barrennig-Distro: dibab ar ger kent"
 
 #: activities/grammar_analysis/grammar_analysis.js:37
 msgctxt "grammar_analysis|"
@@ -14850,7 +14847,7 @@ msgstr "Stokelloù jediñ (+,-,*,/): dibab an arouez jediñ"
 #: activities/guess24/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: cancel last operation"
-msgstr "Distro pe Lemel: nullañ ar jedadenn diwezhañ"
+msgstr "Barrennig-Distro pe Lemel: nullañ ar jedadenn diwezhañ"
 
 #: activities/guess24/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
@@ -15037,20 +15034,19 @@ msgstr "Sifroù: bizskriv un niver"
 #: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
-msgstr "Barrennig-distro: nullañ un niver"
+msgstr "Barrennig-Distro: nullañ un niver"
 
 #: activities/guessnumber/guessnumber.js:57
-#: activities/guessnumber/guessnumber.js:61
 msgctxt "guessnumber|"
 msgid "Your number is too high"
 msgstr "Re uhel eo da niver"
 
-#: activities/guessnumber/guessnumber.js:64
+#: activities/guessnumber/guessnumber.js:60
 msgctxt "guessnumber|"
 msgid "Your number is too low"
 msgstr "Re izel eo da niver"
 
-#: activities/guessnumber/guessnumber.js:68
+#: activities/guessnumber/guessnumber.js:65
 msgctxt "guessnumber|"
 msgid "You found the number!"
 msgstr "Kavet 'teuz an niver!"
@@ -16253,7 +16249,7 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Ma 'z eo mat ar respont, biskriv an disoc'h a glot ha klik war ar bouton OK "
+"Ma 'z eo mat ar respont, bizskriv an disoc'h a glot ha klik war ar bouton OK "
 "evit gwiriañ da respont."
 
 #: activities/learn_decimals/learn_decimals.js:59
@@ -16381,7 +16377,7 @@ msgid ""
 "If the answer is correct, type the corresponding result, and click on the OK "
 "button to validate your answer."
 msgstr ""
-"Ma 'z eo mat ar respont, biskriv an disoc'h a glot ha klik war ar bouton OK "
+"Ma 'z eo mat ar respont, bizskriv an disoc'h a glot ha klik war ar bouton OK "
 "evit gwiriañ da respont."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:26
@@ -18161,61 +18157,61 @@ msgstr ""
 #: activities/memory-math-minus/resource/1/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 1."
-msgstr "Taolenn ar lemel gant 1."
+msgstr "Taolenn al lemel gant 1."
 
 #: activities/memory-math-minus-tux/resource/10/Data.qml:15
 #: activities/memory-math-minus/resource/10/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 10."
-msgstr "Taolenn ar lemel gant 10."
+msgstr "Taolenn al lemel gant 10."
 
 #: activities/memory-math-minus-tux/resource/2/Data.qml:15
 #: activities/memory-math-minus/resource/2/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 2."
-msgstr "Taolenn ar lemel gant 2."
+msgstr "Taolenn al lemel gant 2."
 
 #: activities/memory-math-minus-tux/resource/3/Data.qml:15
 #: activities/memory-math-minus/resource/3/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 3."
-msgstr "Taolenn ar lemel gant 3."
+msgstr "Taolenn al lemel gant 3."
 
 #: activities/memory-math-minus-tux/resource/4/Data.qml:15
 #: activities/memory-math-minus/resource/4/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 4."
-msgstr "Taolenn ar lemel gant 4."
+msgstr "Taolenn al lemel gant 4."
 
 #: activities/memory-math-minus-tux/resource/5/Data.qml:15
 #: activities/memory-math-minus/resource/5/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 5."
-msgstr "Taolenn ar lemel gant 5."
+msgstr "Taolenn al lemel gant 5."
 
 #: activities/memory-math-minus-tux/resource/6/Data.qml:15
 #: activities/memory-math-minus/resource/6/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 6."
-msgstr "Taolenn ar lemel gant 6."
+msgstr "Taolenn al lemel gant 6."
 
 #: activities/memory-math-minus-tux/resource/7/Data.qml:15
 #: activities/memory-math-minus/resource/7/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 7."
-msgstr "Taolenn ar lemel gant 7."
+msgstr "Taolenn al lemel gant 7."
 
 #: activities/memory-math-minus-tux/resource/8/Data.qml:15
 #: activities/memory-math-minus/resource/8/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 8."
-msgstr "Taolenn ar lemel gant 8."
+msgstr "Taolenn al lemel gant 8."
 
 #: activities/memory-math-minus-tux/resource/9/Data.qml:15
 #: activities/memory-math-minus/resource/9/Data.qml:15
 msgctxt "Data|"
 msgid "Subtraction table of 9."
-msgstr "Taolenn ar lemel gant 9."
+msgstr "Taolenn a lemel gant 9."
 
 #. Activity title
 #: activities/memory-math-minus/ActivityInfo.qml:15
@@ -19021,14 +19017,13 @@ msgid "All lowercase"
 msgstr "E lizherennoù munut"
 
 #: activities/menu/Menu.qml:90
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Ha fellout a ra dit pellgargañ ar restroù son a glot ganti bremañ ?"
+msgstr ""
+"Dibabet az teus ur yezh nevez. Ha fellout a ra dit pellgargañ ar restroù son "
+"a glot ganti bremañ ?"
 
 #: activities/menu/Menu.qml:91
 msgctxt "Menu|"
@@ -19951,19 +19946,15 @@ msgstr "Desk heuliad an niveroù."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Tres ar skeudenn dre glikañ war pep pik en heuliad. Bewech ma vo dibabet ur "
-"pik ez aio war-wel ar pik glas da heul."
+"Tres ar skeudenn dre glikañ war pep pik en heuliad hervez an urzh niveriñ. "
+"Bez' e c'hellez klikan ha riklañ d'ur pik d'ar re all pe klikañ war bep pik, "
+"unan hag unan."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -20902,12 +20893,12 @@ msgstr ""
 "Sell mat ouzh an div skeudenn. Diforc'hioù bihan zo. Pa gavez un diforc'h e "
 "rankez klikañ warnañ."
 
-#: activities/photo_hunter/PhotoHunter.qml:104
+#: activities/photo_hunter/PhotoHunter.qml:102
 msgctxt "PhotoHunter|"
 msgid "Drag the slider to show the differences."
 msgstr "Implij ar varrenn-riklañ evit lakaat an diforc'hioù war-wel."
 
-#: activities/photo_hunter/PhotoHunter.qml:105
+#: activities/photo_hunter/PhotoHunter.qml:103
 msgctxt "PhotoHunter|"
 msgid "Click on the differences between the two images."
 msgstr "Klik war an diforc'hioù zo etre an div skeudenn."
@@ -21044,7 +21035,7 @@ msgstr "Biroù kleiz ha dehoù: kemm eizhvedell ar c'hlavier"
 #: activities/piano_composition/ActivityInfo.qml:38
 msgctxt "ActivityInfo|"
 msgid "Backspace: undo"
-msgstr "Barrenn-distro: nullañ"
+msgstr "Barrennig-distro: nullañ"
 
 #: activities/piano_composition/ActivityInfo.qml:39
 msgctxt "ActivityInfo|"
@@ -21686,7 +21677,7 @@ msgstr ""
 #: activities/play_piano/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Backspace or Delete: undo"
-msgstr "Barrenn-distro pe Lemel: nullañ"
+msgstr "Barrennig-distro pe Lemel: nullañ"
 
 #: activities/play_piano/PlayPiano.qml:197
 msgctxt "PlayPiano|"
@@ -22274,7 +22265,7 @@ msgstr ""
 msgctxt "ActivityInfo|"
 msgid "Delete or Backspace: remove the selected item from the answer area"
 msgstr ""
-"Lemel pe barrenn-distro: lemel an dra dibabet diouzh an dachenn respont"
+"Lemel pe Barrennig-Distro: lemel an dra dibabet diouzh an dachenn respont"
 
 #: activities/railroad/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
@@ -23901,31 +23892,26 @@ msgstr "Tab: kemm etre dibaber al livioù hag an dachenn-livañ"
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Tresañ"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
-msgstr ""
+msgstr "Implij ar benvegoù livañ niverel evit tresañ skeudennoù."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Desk al lieskementoù hag ar rannerioù."
+msgstr "Desk ober gant benvegoù livañ niverel."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Dibab ar benvegoù hag al livioù gant ar panelloù plegus ha tresañ.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: nullañ"
@@ -23933,223 +23919,165 @@ msgstr "Ctrl + Z: nullañ"
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: adober an ober diwezhañ"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: dibab an holl destenn"
+msgstr "Ctrl + S: enrollañ ar skeudenn"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: digeriñ ur skeudenn"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Lemel pe Barrennig-Distro: krouiñ ur skeudenn nevez"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Meizad ar flouraat gant ar varr-livañ diwar:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Meizad an tresañ gant ar varr-livañ diwar:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Leur a-dreñv"
+msgstr "Liv al leur a-dreñv"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Leur a-dreñv"
+msgstr "Skeudenn al leur a-dreñv"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Benvegoù diverkañ"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Benvegoù tresañ "
 
 #: activities/sketch/ColorSelector.qml:76
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Lak ar memes liv"
+msgstr "Livaoueg"
 
 #: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Kaout ul livaoueg nevez"
 
 #: activities/sketch/ColorSelector.qml:211
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Dibabet"
+msgstr "Liv dibabet"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:235
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Livad"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:262
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Sadorn"
+msgstr "Peurvec'h"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:287
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Gouleier lazhet"
+msgstr "Sklaerder"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Kaout ul liv nevez"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestina"
+msgstr "Livaouegoù"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Dibab da vod"
+msgstr "Enroll da skeudenn"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Meur a skeudenn nevez"
+msgstr "Digor ur skeudenn"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 dibaboù"
+msgstr "Dibaboù ur skeudenn nevez"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Leur a-dreñv"
+msgstr "Liv al leur a-dreñv"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Leur a-dreñv"
+msgstr "Skeudenn al leur a-dreñv"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Meur a skeudenn nevez"
+msgstr "Krouiñ ur skeudenn nevez"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Kornioù krommet"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Benvegoù geometriezh"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Ment ar c'helc'h diabarzh"
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Benvegoù an diri"
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
 msgstr ""
-"N'az peus ket dibabet notenn ebet. Ha c'hoant teus da ziverkañ an holl "
-"notennoù ?"
+"N'az peus ket enrollet ar skeudenn. Ha c'hoant teus da kuitaat an obererezh?"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download it now?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Ha fellout a ra dit pellgargañ anezhañ bremañ ?"
+msgstr "Ha fellout a ra dit diverkañ ar skeudenn?"
 
 #: activities/sketch/Sketch.qml:675
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Ya"
 
 #: activities/sketch/Sketch.qml:676
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Ket"
@@ -24157,22 +24085,19 @@ msgstr "Ket"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Benveg ar sielloù"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Benveg testenn"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Bizskriv da destenn amañ"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Benvegoù"
@@ -24180,22 +24105,19 @@ msgstr "Benvegoù"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Adsevel dibaboù ar benveg"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Demerez"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Ment"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Tizh"
@@ -24203,36 +24125,27 @@ msgstr "Tizh"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Stankted"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Pikoù"
+msgstr "Ment ar pikoù"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Flouraat"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "oberioù"
+msgstr "Treiñ"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Tres simetriezh ar skeudenn"
+msgstr "Skeudenn er melezour"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -26366,39 +26279,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Pleustr war ar sammañ."
+msgstr "Sammañ a-blom"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Adsav an tour kinniget."
+msgstr "Diskoulm ar sammadur kinniget."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to share, practice division."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Desk dasparzhañ, pleustriñ war ar rannañ."
+msgstr "Desk diskoulmañ sammadurioù a-blom."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Taolenn ar sammañ gant 1."
+msgstr "Taolennoù ar sammañ."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -26418,85 +26319,92 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"En ur sammadenn a-blom e vez skrivet an niveroù an eil dindan egile. Ret eo "
+"dezhe bezañ plaset mat, o kregiñ gant ar golonenn a-zehou. An disoc'h a vez "
+"skrivet war al linenn en traoñ. Evit diskoulmañ ar sammadenn, krog da sammañ "
+"an niveroù er golonenn gentañ (an hini a-zehou) ha skriv an disoc'h war al "
+"linenn en traoñ er memes kolonenn. Ma teu un disoc'h gant daou sifr dezhañ, "
+"skriv hepken unanderenn an disoc'h en traoñ ha lak disoc'h an degadoù e penn "
+"uhelañ an eil golonenn (ar golonenn da heul a-gleiz): an dalc'h a reer ouzh "
+"an ober-se. Samm goude niveroù an eil kolonenn, en o zouez hini an dalc'h, "
+"ha kendalc'h er mod-se betek fin ar jedadenn. Ur wech kavet ganit an "
+"disoc'h, klik war ar bouton OK evit gwiriañ da respont. El liveoù 'zo e vo "
+"ret dit skrivañ ar jedadenn ginniget a-raok diskoulmañ anezhi: ma c'hoarvez "
+"kement-mañ, klik war ar bouton Ready (Prest) ur wech skrivet ar jedadenn ha "
+"diskoulm anezhi war-lerc'h."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 2 sifr, 2 linenn, hep dalc'h."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 4 sifr, 3 linenn."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 4 sifr, 4 linenn."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Skriv ur sammadenn da-unan ha diskoulm anezhi."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Skriv ha diskoulm ur sammadenn, 2 sifr, 2 linenn, hep dalc'h."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 2 sifr, 2 linenn."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Skriv ha diskoulm ur sammadenn, 2 sifr, 2 linenn."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Skriv ha diskoulm ur sammadenn, 2 sifr, 3 linenn."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 3 sifr, 2 linenn."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Skriv ha diskoulm ur sammadenn, 3 sifr, 2 linenn."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 3 sifr, 3 linenn."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Diskoulm ar sammadenn, 4 sifr, 2 linenn."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtraction."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Pleustr war al lemel."
+msgstr "Pleustr war al lemel"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Dibab an urzhioù"
+msgstr "Diskoulm al lamadur kinniget."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -26505,16 +26413,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Desk diskoulmañ lamadurioù a-blom, en ur implijout doare-ober an dalc'h evit "
+"strollañ."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Taolenn ar lemel gant 1."
+msgstr "Taolennoù al lemel."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -26542,144 +26449,128 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"En ul lamadenn a-blom e vez skrivet an niveroù an eil dindan egile. Ret eo  "
+"dezhe bezañ plaset mat, o kregiñ gant ar golonenn a-zehou. An niver uhelañ "
+"vez graet an niver didennet anezhañ, gantañ e kroger, an niver all a vez "
+"lamet dioutañ a-benn kaout an diforc'h. An niver izelañ vez graet an niver "
+"lamet anezhañ: ar c'hementad da lemel diouzh an niver didennet an hini eo a-"
+"benn kaout an diforc'h.  War al  linenn en traoñ er memes kolonenn e skrivez "
+"an disoc'h. Evit diskoulm al lamadenn, lam da gentañ ar sifr izelañ er "
+"golonenn gentañ (an hini a-zehou) diouzh ar sifr uhelañ er memes kolonenn ha "
+"skriv an disoc'h en traoñ ar golonenn. Ma ‘z eo bihanoc'h ar sifr uhelañ "
+"eget ar sifr dindanañ, e c'hellez amprestañ diouzh an niver uhelañ er "
+"golonenn da heul: da skouer, ma ouzhpennez dek unanenn d'an niver uhelañ e "
+"rankez lemel un unanenn diouzh an niver dindan en eil kolonenn (er golonenn "
+"da heul a-gleiz). Graet e vez an doare-strollad eus an amprest-mañ. Evit hen "
+"ober, klik war an hirgarrezenn c'houllo a-gleiz d'ar sifr uhelañ, dibab 1, "
+"hag en eil kolonenn (er golonenn da heul a-gleiz), klik war an hirgarrezenn "
+"c'houllo a-zehou d'ar sifr uhelañ ha dibab -1. Skriv goude disoc'h ar "
+"golonenn war al linenn en traoñ, ha kendalc'h goude memes mod er "
+"c'holonennoù da heul betek peurechuiñ ar jedadenn. Ur wech kavet ganit an  "
+"disoc'h, klik war ar bouton OK evit gwiriañ da respont. El liveoù 'zo e vo  "
+"ret dit skrivañ ar jedadenn ginniget a-raok diskoulmañ anezhi: ma c'hoarvez  "
+"kement-mañ, klik war ar bouton Ready (Prest) ur wech skrivet mat ar jedadenn "
+"ha diskoulm anezhi war-lerc'h."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Diskoulm al lamadur, 2 sifr, 2 linenn, hep dalc'h."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Diskoulm lamadennoù gant 4 pe 5 sifr, 3 linenn."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Diskoulm lamadennoù gant 4 pe 5 sifr, 4 linenn."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Taolenn lemel gant 1."
+msgstr "Skriv ul lamadenn da-unan ha diskoulm anezhi."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Skriv ha diskoulm ur sammadenn, 2 sifr, 2 linenn, hep dalc'h."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Diskoulm lamadennoù gant 2 pe 3 sifr, 2 linenn."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Skriv ha diskoulm lamadennoù gant 2 pe 3 sifr, 2 linenn."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Skriv ha diskoum lamadennoù gant 2 pe 3 sifr, 3 linenn."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Diskoulm lamadennoù gant 3 pe 4 sifr, 2 linenn."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Skriv ha diskoulm lamadennoù gant 3 pe 4 sifr, 2 linenn."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Diskoulm lamadennoù gant 3 pe 4 sifr, 3 linenn."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Lamadennoù gant 1, 2 ha 3."
+msgstr "Diskoulm lamadennoù gant 4 pe 5 sifr, 2 linenn."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Skriv:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Diskoulm:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Tit l: %1"
+msgstr "Diskoum: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
 msgstr "Prest on"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Pleustriñ war al lemel"
+msgstr "Pleustriñ war al lemel (kempouezañ)"
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -26688,6 +26579,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Desk diskoulmañ lamadurioù a-blom, en ur implijout doare-ober an dalc'h evit "
+"kempouezañ."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -26715,6 +26608,28 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"En ul lamadenn a-blom e vez skrivet an niveroù an eil dindan egile. Ret eo  "
+"dezhe bezañ plaset mat, o kregiñ gant ar golonenn a-zehou. An niver uhelañ "
+"vez graet an niver didennet anezhañ, gantañ e kroger, an niver all a vez "
+"lamet dioutañ a-benn kaout an diforc'h. An niver dindan vez graet an niver "
+"lamet anezhañ: ar c'hementad da lemel diouzh an niver didennet an hini eo a-"
+"benn kaout an diforc'h.  War al  linenn en traoñ er memes kolonenn e skrivez "
+"an disoc'h. Evit diskoulm al lamadenn, lam da gentañ ar sifr izelañ er "
+"golonenn gentañ (an hini a-zehou) diouzh ar sifr uhelañ er memes kolonenn ha "
+"skriv an disoc'h en traoñ ar golonenn. Ma ‘z eo bihanoc'h ar sifr uhelañ "
+"eget ar sifr dindanañ, e c'hellez amprestañ diouzh an niver didennet: da "
+"skouer, ma ouzhpennez 10 unanenn d'an niver uhelañ e rankez ouzhpennañ un "
+"unanenn d'an niver izelañ en eil kolonenn (er golonenn da heul a-gleiz). "
+"Graet e vez an doare-kempouezañ eus an amprest-mañ. Evit hen ober, klik war "
+"an hirgarrezenn c'houllo a-gleiz d'ar sifr uhelañ, dibab 1, hag en eil "
+"kolonenn (er golonenn da heul a-gleiz), klik war an hirgarrezenn c'houllo a-"
+"zehou d'ar sifr izelañ ha dibab +1. Skriv goude disoc'h ar golonenn war al "
+"linenn en traoñ, ha kendalc'h goude memes mod er c'holonennoù da heul betek "
+"peurechuiñ ar jedadenn. Ur wech kavet ganit an  disoc'h, klik war ar bouton "
+"OK evit gwiriañ da respont. El liveoù 'zo e vo  ret dit skrivañ ar jedadenn "
+"ginniget a-raok diskoulmañ anezhi: ma c'hoarvez  kement-mañ, klik war ar "
+"bouton Ready (Prest) ur wech skrivet mat ar jedadenn ha diskoulm anezhi war-"
+"lerc'h."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -26884,12 +26799,9 @@ msgstr ""
 "gantañ."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "Ouzhpennet eo bet an droidigezh evit al Latveg"
+msgstr "Ouzhpennet eo bet an droidigezh evit ar Sañskriteg."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -26919,23 +26831,18 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Implij ur yezh nevez meret aotomatikel pa cheñcher anezhi en dibarzhioù "
+"(n'eo ket ret adloc'hañ GCompris)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Ouzhpennañ ur skramm degemer d'al loc'hañ"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
-msgstr ""
-"Urzh-dibab nevez evit renabliñ an holl obererezhioù ha kregiñ gant unan "
-"resis."
+msgstr "Urzh-dibab nevez evit kemm neuz ar meziant  (--renderer renderer)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -27652,9 +27559,6 @@ msgstr "%1 bet lamet digudenn!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
-#, fuzzy
-#| msgctxt "Hangman|"
-#| msgid "OK"
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "Mat eo"
@@ -27683,12 +27587,9 @@ msgid "No"
 msgstr "Ket"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "  Ha fellout a ra dit nullañ an holl fiñvadennoù?"
+msgstr "  Ha fellout a ra dit nullañ ar restr-mañ?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
@@ -27791,37 +27692,30 @@ msgid "Enable the kiosk mode."
 msgstr "Aotreañ ar mod kiosk."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Implijout mod neuz  ar meziant e-lec'h openGL (gorrekoc'h, met gouest da "
-"gerzhout gant ne vern peseurt kartenn c'hrafek)."
+"gerzhout gant ne vern peseurt kartenn c'hrafek). Diamzeret, implijout "
+"kentoc'h --renderer=software."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Implijout openGL e-lec'h mod neuz ar meziant (fonnusoc'h, met posupl e vefe "
-"chom sac'het hervez ar gartenn c'hrafek, ezhomm zo eus Qt 5.8 d'an nebeutañ)."
+"chom sac'het hervez ar gartenn c'hrafek). Diamzeret, implijout kentoc'h --"
+"renderer-opengl."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Dibab neuz ar meziant (opengl, software, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
