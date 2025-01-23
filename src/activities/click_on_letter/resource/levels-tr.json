@@ -9,5 +9,5 @@
     { "level": 8, "questions": "a|b|c|d|e|f|g|h", "answers": "a|b|c|d|e|f|g|h" },
     { "level": 9, "questions": "i|j|k|l|m|n|o|ö", "answers": "i|j|k|l|m|n|o|ö" },
     { "level": 10, "questions": "ğ|r|s|t|u|v|ş|ı|y|z", "answers": "ğ|r|s|t|u|v|ş|ı|y|z" },
-    { "level": 11, "questions": "a|b|c|ç|d|e|f|g|ğ|h|ı|i|j|k|l|m|n|o|ö|p|r|s|ş|t|u|ü|v|y|z", "answers": "a|b|c|ç|d|e|f|g|ğ|h|ı|i|j|k|l|m|n|o|ö|p|r|s|ş|t|u|ü|v|y|z" }
+    { "level": 11, "questions": "a|b|ç|d|e|g|ğ|ı|i|k|l|n|o|ö|p|r|s|ş|t|u|ü|y", "answers": "a|b|ç|d|e|g|ğ|ı|i|k|l|n|o|ö|p|r|s|ş|t|u|ü|y" }
 ]
