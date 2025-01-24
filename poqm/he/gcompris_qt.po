@@ -14563,12 +14563,12 @@ msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "מוּבנה"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "נבחר"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "לא נבחר"
@@ -14615,7 +14615,7 @@ msgstr ""
 "לגרור את המספרים המתאימים והסימנים לתיבות כדי להשיג את את המספר לניחוש "
 "שבהוראות."
 
-#: activities/guesscount/Admin.qml:30
+#: activities/guesscount/Admin.qml:33
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14631,18 +14631,18 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "התוצאה אינה מִשתנֵה"
 
-#: activities/guesscount/Guesscount.qml:160
+#: activities/guesscount/Guesscount.qml:155
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "ספירת ניחושים: %1"
 
-#: activities/guesscount/OperandRow.qml:40
+#: activities/guesscount/OperandRow.qml:36
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "מספרים"
 
-#: activities/guesscount/OperatorRow.qml:41
+#: activities/guesscount/OperatorRow.qml:37
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "סימנים"
@@ -16800,7 +16800,7 @@ msgstr ""
 "כמה נמצאים עדיין מתחת לכובע. ללחוץ על החלק התחתון כדי להכניס את התשובה שלך "
 "ועל כפתור ה\"אישור\" כדי לאמת אותה."
 
-#: activities/magic-hat-minus/MagicHat.qml:99
+#: activities/magic-hat-minus/MagicHat.qml:263
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "ללחוץ על הכובע כדי להתחיל את המשחק"
@@ -16849,7 +16849,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "לחשב כוכבים שנשארו עד 10,000 עם שארית."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:37
+#: activities/magic-hat-minus/StarsBar.qml:35
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
