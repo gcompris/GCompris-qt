@@ -35,9 +35,6 @@ Item {
         from: 0
         to: view.iconSize * 0.9
         duration: 300
-        onStopped: {
-            view.okShowed = true;
-        }
     }
     PropertyAnimation {
         id: hideOk
@@ -46,7 +43,7 @@ Item {
         from: view.iconSize * 0.9
         to: 0
         duration: 200
-        onStopped: view.checkDisplayedGroup();
+        onFinished: view.checkDisplayedGroup();
     }
 
     Image {

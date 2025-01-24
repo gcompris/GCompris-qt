@@ -61,7 +61,7 @@ Item {
             tileImage.anchors.centerIn = undefined;
             view.showGlow = false;
         }
-        onStopped: {
+        onFinished: {
             tileImage.parent = tileImage.tileImageParent;
             if(tileImage.currentTargetSpot == null) {
                 tileImage.centerInTile();
@@ -162,7 +162,7 @@ Item {
                             tile.yCenter - tileImage.targetImageHeight * 0.5);
                 tileImage.targetImageX = destCoord.x;
                 tileImage.targetImageY = destCoord.y;
-                tileImageAnimation.start();
+                tileImageAnimation.restart();
             }
 
             function toSmall() {
@@ -262,7 +262,7 @@ Item {
                         tileImage.targetImageX = destCoord.x;
                         tileImage.targetImageY = destCoord.y;
                         tileImage.z = 100;
-                        tileImageAnimation.start();
+                        tileImageAnimation.restart();
                     }
                 }
 
@@ -301,7 +301,8 @@ Item {
 
     function hideOkButton() {
         if(view.okShowed) {
-            hideOk.start();
+            availablePieces.showOk.stop();
+            availablePieces.hideOk.restart();
             view.okShowed = false;
             view.showGlow = false;
         }
@@ -309,7 +310,9 @@ Item {
 
     function updateOkButton() {
         if(view.areAllPlaced()) {
-            showOk.start();
+            availablePieces.hideOk.stop();
+            availablePieces.showOk.restart();
+            view.okShowed = true;
         }
         if(!view.okShowed && tileImage.dropStatus >= 0)
             view.checkDisplayedGroup();
