@@ -16310,7 +16310,7 @@ msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "अंतर्निर्मित"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "Selected"
@@ -16318,7 +16318,7 @@ msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "चयनित"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 #, fuzzy
 #| msgctxt "Guesscount|"
 #| msgid "Not Selected"
@@ -16364,7 +16364,7 @@ msgid ""
 "the instructions."
 msgstr ""
 
-#: activities/guesscount/Admin.qml:30
+#: activities/guesscount/Admin.qml:33
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -16380,18 +16380,18 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "परिणाम एक पूर्णांक नहीं है"
 
-#: activities/guesscount/Guesscount.qml:160
+#: activities/guesscount/Guesscount.qml:155
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "अनुमान संख्या: %1"
 
-#: activities/guesscount/OperandRow.qml:40
+#: activities/guesscount/OperandRow.qml:36
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "संख्याएँ"
 
-#: activities/guesscount/OperatorRow.qml:41
+#: activities/guesscount/OperatorRow.qml:37
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "प्रचालक"
@@ -18888,7 +18888,7 @@ msgstr ""
 "इसे खोलने या बंद करने के लिए टोपी पर क्लिक करें। टोपी के नीचे, आप कितने तारे देख सकते हैं? "
 "सावधानी से गणना करें अपने जवाब को इनपुट करने के लिए नीचे-दाएं क्षेत्र में क्लिक करें।"
 
-#: activities/magic-hat-minus/MagicHat.qml:99
+#: activities/magic-hat-minus/MagicHat.qml:263
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "खेल शुरू करने के लिए टोपी पर क्लिक करें"
@@ -18943,7 +18943,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr ""
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:37
+#: activities/magic-hat-minus/StarsBar.qml:35
 #, fuzzy, qt-format
 #| msgctxt "Guesscount|"
 #| msgid "%1/%2"

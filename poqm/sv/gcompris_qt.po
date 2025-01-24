@@ -14836,12 +14836,12 @@ msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "Inbyggd"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "Vald"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "Inte vald"
@@ -14880,7 +14880,7 @@ msgstr ""
 "Dra talen och operatorerna till rutorna för att få talet givet i "
 "instruktionerna."
 
-#: activities/guesscount/Admin.qml:30
+#: activities/guesscount/Admin.qml:33
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -14896,18 +14896,18 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "resultatet är inte ett heltal"
 
-#: activities/guesscount/Guesscount.qml:160
+#: activities/guesscount/Guesscount.qml:155
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Gissa antal: %1"
 
-#: activities/guesscount/OperandRow.qml:40
+#: activities/guesscount/OperandRow.qml:36
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Tal"
 
-#: activities/guesscount/OperatorRow.qml:41
+#: activities/guesscount/OperatorRow.qml:37
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Operatorer"
@@ -17066,7 +17066,7 @@ msgstr ""
 "i området längst ner för att mata in ditt svar, och på Ok-knappen för att "
 "kontrollera det."
 
-#: activities/magic-hat-minus/MagicHat.qml:99
+#: activities/magic-hat-minus/MagicHat.qml:263
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Klicka på hatten för att börja spelet"
@@ -17115,7 +17115,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Beräkna återstående stjärnor upp till 10000 med koefficienter."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:37
+#: activities/magic-hat-minus/StarsBar.qml:35
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"

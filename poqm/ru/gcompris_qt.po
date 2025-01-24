@@ -15122,12 +15122,12 @@ msgctxt "ActivityConfig|"
 msgid "BuiltIn"
 msgstr "Встроенный"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Selected"
 msgstr "Выбрано"
 
-#: activities/guesscount/ActivityConfig.qml:68
+#: activities/guesscount/ActivityConfig.qml:72
 msgctxt "ActivityConfig|"
 msgid "Not Selected"
 msgstr "Не выбрано"
@@ -15174,7 +15174,7 @@ msgstr ""
 "Перемещай соответствующие числа и знаки в квадраты, чтобы узнать неизвестные "
 "числа. "
 
-#: activities/guesscount/Admin.qml:30
+#: activities/guesscount/Admin.qml:33
 #, qt-format
 msgctxt "Admin|"
 msgid "Level %1"
@@ -15190,18 +15190,18 @@ msgctxt "guesscount|"
 msgid "result is not an integer"
 msgstr "Результат — не целое число"
 
-#: activities/guesscount/Guesscount.qml:160
+#: activities/guesscount/Guesscount.qml:155
 #, qt-format
 msgctxt "Guesscount|"
 msgid "Guesscount: %1"
 msgstr "Подбери выражение для числа: %1"
 
-#: activities/guesscount/OperandRow.qml:40
+#: activities/guesscount/OperandRow.qml:36
 msgctxt "OperandRow|"
 msgid "Numbers"
 msgstr "Числа"
 
-#: activities/guesscount/OperatorRow.qml:41
+#: activities/guesscount/OperatorRow.qml:37
 msgctxt "OperatorRow|"
 msgid "Operators"
 msgstr "Знаки"
@@ -17454,7 +17454,7 @@ msgstr ""
 "звёздочкам в нижнем ряду, чтобы указать нужное количество. Нажми кнопку «ОК» "
 "для проверки своего ответа."
 
-#: activities/magic-hat-minus/MagicHat.qml:99
+#: activities/magic-hat-minus/MagicHat.qml:263
 msgctxt "MagicHat|"
 msgid "Click on the hat to begin the game"
 msgstr "Щёлкни по шляпе, чтобы начать игру"
@@ -17503,7 +17503,7 @@ msgid "Calculate remaining stars up to 10000 with coefficients."
 msgstr "Сосчитать оставшиеся звёздочки вплоть до 10000 с коэффициентами."
 
 #. text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
-#: activities/magic-hat-minus/StarsBar.qml:37
+#: activities/magic-hat-minus/StarsBar.qml:35
 #, qt-format
 msgctxt "StarsBar|"
 msgid "%1x"
