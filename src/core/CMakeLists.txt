@@ -170,7 +170,7 @@ if(BUILD_STANDALONE)
   elseif(ANDROID)
     set(default_plugins ${default_plugins} ${QT_MAJOR}::QAndroidIntegrationPlugin)
   elseif(APPLE)
-    set(default_plugins ${default_plugins} ${QT_MAJOR}::QICNSPlugin ${QT_MAJOR}::QTgaPlugin ${QT_MAJOR}::QTiffPlugin ${QT_MAJOR}::QCocoaIntegrationPlugin)
+    set(default_plugins ${default_plugins} ${QT_MAJOR}::QICNSPlugin ${QT_MAJOR}::QTgaPlugin ${QT_MAJOR}::QTiffPlugin ${QT_MAJOR}::QCocoaIntegrationPlugin ${QT_MAJOR}::QDarwinMediaPlugin ${QT_MAJOR}::QTlsBackendOpenSSLPlugin)
   else()
     set(default_plugins ${default_plugins} ${QT_MAJOR}::QComposePlatformInputContextPlugin ${QT_MAJOR}::QXcbIntegrationPlugin ${QT_MAJOR}::QXcbEglIntegrationPlugin ${QT_MAJOR}::QXcbGlxIntegrationPlugin ${QT_MAJOR}::QAlsaPlugin ${QT_MAJOR}::QPulseAudioPlugin ${QT_MAJOR}::QWaylandIntegrationPlugin ${QT_MAJOR}::QWaylandXdgShellIntegrationPlugin ${QT_MAJOR}::QWaylandEglPlatformIntegrationPlugin ${QT_MAJOR}::QWaylandEglClientBufferPlugin)
   endif()
@@ -193,16 +193,16 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qt_plugins2 "")
-  # Seems to be everywhere
-  list(APPEND _qt_plugins2 tls/${_lib_prefix}qopensslbackend)
-  list(APPEND _qt_plugins2 multimedia/${_lib_prefix}ffmpegmediaplugin)
+  # Seems to be everywhere except APPLE
+  if(NOT APPLE)
+    list(APPEND _qt_plugins2 tls/${_lib_prefix}qopensslbackend)
+    list(APPEND _qt_plugins2 multimedia/${_lib_prefix}ffmpegmediaplugin)
+  endif()
 
   if(ANDROID)
     list(APPEND _qt_plugins2 multimedia/${_lib_prefix}androidmediaplugin)
   elseif(WIN32)
     list(APPEND _qt_plugins2 multimedia/${_lib_prefix}windowsmediaplugin)
-  elseif(APPLE)
-    list(APPEND _qt_plugins2 multimedia/${_lib_prefix}darwinmediaplugin)
   endif()
 
    set(_qml_plugins
