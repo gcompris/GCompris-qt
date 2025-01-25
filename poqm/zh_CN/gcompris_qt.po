@@ -1884,7 +1884,7 @@ msgid ""
 "The conventional symbol for resistance is R. The unit of measure of "
 "resistance is ohm under the International System of Units, which is denoted "
 "as Ω."
-msgstr "电阻的常规符号是R。 电阻的单位在国际单位制度下是欧姆，表示为 Ω。"
+msgstr "电阻的常规符号是 R。 电阻的单位在国际单位制度下是欧姆，表示为 Ω。"
 
 #: activities/analog_electricity/TutorialDataset.qml:196
 msgctxt "TutorialDataset|"
