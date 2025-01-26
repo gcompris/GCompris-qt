@@ -1,0 +1,12 @@
+- Kenketa bertikala (konpentsazioa)
+- Kenketa bertikala
+- Batuketa bertikala
+- Kalkulatu hamarrerako osagarriarekin
+- Zirriborroa
+- Sanskritorako itzulpena gehitu da
+- Erabilerraztasun hobekuntza ugari
+- Irudi berri ugari
+- Akats-konponketa ugari
+- Menuan aldatzean, hizkuntza berria automatikoki aplikatzea (GCompris berrabiarazi beharrik gabe)
+- Gehitu plasta pantaila abioan
+- errendatzailea trukatzeko komando-lerroko aukera berria (--renderer renderer)

@@ -1,0 +1,12 @@
+- Dikey çıkarma (dengeleyerek)
+- Dikey çıkarma
+- Dikey toplama
+- 10’un tümleyeniyle hesapla
+- Eskiz
+- Sanskritçe çeviri eklendi
+- Birçok kullanılabilirlik iyileştirmesi
+- Birçok yeni görsel
+- Birçok hata düzeltmesi
+- Menüde değiştirirken yeni dilin kendiliğinden uygulanması (GCompris’i yeniden başlatmaya gerek yoktur)
+- Başlangıç için açılış ekranı ekle
+- Sunucuyu değiştirmek için yeni komut satırı seçeneği (--renderer sunucu)

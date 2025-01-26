@@ -1,0 +1,12 @@
+- Sottrazione verticale (compensazione)
+- Sottrazione verticale
+- Addizione verticale
+- Calcola con il complemento a dieci
+- Schizzo
+- Traduzione aggiunta per sanscrito
+- Molti miglioramenti all'usabilità
+- Molte nuove immagini
+- Numerose correzioni di bug
+- Applicazione automatica della nuova lingua quando la si modifica nel menu (non è necessario riavviare GCompris)
+- Aggiungi la schermata iniziale all'avvio
+- Nuova opzione della riga di comando per cambiare il renderer (--renderer renderer)

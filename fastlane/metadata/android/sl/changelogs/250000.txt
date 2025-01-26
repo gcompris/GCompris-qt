@@ -1,0 +1,12 @@
+- Navpično odštevanje (kompenzacija)
+- Navpično odštevanje
+- Navpično seštevanje
+- Izračunajte z dopolnilom števila deset
+- Skica
+- Dodan prevod za Sanskrit
+- Veliko uporabnih izboljšav
+- Veliko novih slik
+- Veliko popravljenih napak
+- Samodejna uporaba novega jezika, ko ga spremenite v meniju (ni potrebe po ponovnem zagonu GComprisa)
+- Dodajte začetni zaslon ob zagonu
+- Nova možnost ukazne vrstice za preklop upodobilnika (--renderer renderer)

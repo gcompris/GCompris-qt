@@ -1,0 +1,12 @@
+- Subtraktion med uppställning (kompensation)
+- Subtraktion med uppställning
+- Addition med uppställning
+- Beräkna med tiokomplement
+- Skiss
+- Översättning tillagd för Sanskrit
+- Många användbarhetsförbättringar
+- Många nya bilder
+- Många felrättningar
+- Automatiskt byte till nytt språk när det ändras i menyn (inget behov av att starta om GCompris)
+- Tillägg av startskärm
+- Nya kommandoradsväljare för att byta återgivning (--renderer återgivning)

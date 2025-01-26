@@ -1,0 +1,12 @@
+- Vertical subtraction (compensation)
+- Vertical subtraction
+- Vertical addition
+- Calculate with ten's complement
+- Sketch
+- Translation added for Sanskrit
+- Many usability improvements
+- Many new images
+- Many bug fixes
+- Automatic application of new language when changing it in the menu (no need to restart GCompris)
+- Add splash screen at startup
+- New command-line option to switch the renderer (--renderer renderer)

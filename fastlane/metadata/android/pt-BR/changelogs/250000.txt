@@ -1,0 +1,12 @@
+- Subtração vertical (com compensação)
+- Subtração vertical
+- Adição vertical
+- Calcule com o complemento de dez
+- Esboço
+- Adição da tradução para Sânscrito
+- Várias melhorias de usabilidade
+- Várias novas imagens
+- Várias correções de erros.
+- Aplicação automática do novo idioma quando for alterado no menu (sem precisar reiniciar o GCompris)
+- Adição da tela de abertura ao iniciar
+- Nova opção de linha de comando para alternar o renderizador (--renderer renderizador)

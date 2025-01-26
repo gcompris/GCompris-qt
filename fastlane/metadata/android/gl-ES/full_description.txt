@@ -7,4 +7,4 @@ A continuación atopará unha lista de categorías e as actividades dispoñíbei
 - xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.
 - lectura: práctica de lectura, etc.
 - outros: aprender a dicir as horas, o sistema braille, labirinto, instrumentos musicais, etc.
-Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é software libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.
+Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.

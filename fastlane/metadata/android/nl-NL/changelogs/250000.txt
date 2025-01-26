@@ -1,0 +1,12 @@
+- Verticaal aftrekken (compenseren)
+- Verticaal aftrekken
+- Verticaal optellen
+- Rekenen met complement van tien
+- Schets
+- Vertalingen voor Sanskrit toegevoegd
+- Veel nuttige verbeteringen
+- Veel nieuwe afbeeldingen
+- Vele fouten gerepareerd
+- Automatische toepassing van nieuwe taal bij wijziging ervan in het menu (geen noodzaak om GCompris opnieuw te starten)
+- Opstartscherm toevoegen bij opstarten
+- Nieuwe optie voor de opdrachtregel om de renderer om te schakelen (--renderer renderer)

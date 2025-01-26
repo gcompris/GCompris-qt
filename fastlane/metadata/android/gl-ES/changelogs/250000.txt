@@ -1,0 +1,12 @@
+- Resta vertical (compensación)
+- Resta vertical
+- Suma vertical
+- Calcular co complemento de 10
+- Esbozo
+- Engadiuse unha tradución ao sánscrito.
+- Moitas melloras de usabilidade.
+- Moitas imaxes novas.
+- Moitas correccións de fallos.
+- Aplicación automática do cambio de idioma sen reiniciar.
+- Engadir unha pantalla de benvida no inicio.
+- Nova opción da liña de ordes para cambiar o renderizador (--renderer renderizador).

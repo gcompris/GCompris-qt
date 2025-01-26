@@ -1,0 +1,12 @@
+- Resta vertical (compensació)
+- Resta vertical
+- Suma vertical
+- Calcula amb el complement a deu
+- Esbós
+- S'han afegit les traduccions per al sànscrit
+- Moltes millores en la usabilitat
+- Moltes imatges noves
+- Moltes esmenes d'errors
+- Aplicació automàtica de l'idioma nou en canviar-lo al menú (no cal reiniciar el GCompris)
+- Afegeix una pantalla de presentació en iniciar
+- Opció nova de la línia d'ordres per a canviar el renderitzador (--renderer renderitzador)
