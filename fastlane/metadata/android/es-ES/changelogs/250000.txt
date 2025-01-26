@@ -1,0 +1,12 @@
+- Resta vertical (compensación)
+- Resta vertical
+- Suma vertical
+- Calcula con el complemento de diez
+- Boceto
+- Se ha añadido la traducción para el sánscrito.
+- Numerosas mejoras de usabilidad.
+- Muchas imágenes nuevas.
+- Muchas correcciones de errores.
+- Aplicación automática del nuevo idioma al cambiarlo en el menú (sin necesidad de reiniciar GCompris).
+- Añadida pantalla de bienvenida al inicio.
+- Nueva opción de la línea de órdenes para cambiar el renderizador (--renderer renderizador).

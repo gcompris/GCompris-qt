@@ -1,0 +1,12 @@
+- Odejmowanie w pionie (kompensacja)
+- Odejmowanie w pionie
+- Dodawanie w pionie
+- Obliż z dopełnieniem do dziesięciu
+- Szkic
+- Dodano tłumaczenie na sanskryt
+- Wiele poprawek do użyteczności
+- Wiele nowych obrazów
+- Wiele małych poprawek
+- Zmiana na nowy język aplikacji bez konieczności ponownego uruchamiania GCompris
+- Dodano ekran powitalny do uruchamiania programu
+- Nowy przełącznik wiersza poleceń do zmiany programu wyświetlającego (--renderer renderer)

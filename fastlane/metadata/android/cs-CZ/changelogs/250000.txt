@@ -1,0 +1,12 @@
+- Odčítání pod sebou (kompenzační)
+- Odčítání pod sebou
+- Sčítání pod sebou
+- Počítej s použitím desítkového doplňku
+- Náčrt
+- Přidán překlad pro sanskrt
+- Mnoho vylepšení použitelnosti
+- Spousta nových obrázků
+- Opravena spousta chyb
+- Automatické použití nového jazyka při změně z nabídky (není vyžadován restart GComprisu)
+- Přidána spouštěcí obrazovka při startu
+- Nová volba příkazového řádku pro přepnutí vykreslovače (--renderer vykreslovač)

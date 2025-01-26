@@ -1,0 +1,12 @@
+- Soustraction verticale (méthode de l'emprunt par compensation).
+- Soustraction verticale
+- Addition verticale
+- Utilise les compléments à 10
+- Croquis
+- Traduction ajoutée pour le sanskrit.
+- Beaucoup d'améliorations d'ergonomie.
+- Beaucoup de nouvelles images
+- Plein de corrections
+- Application immédiate de la nouvelle langue quand tu changes la langue dan le menu (il n'y a plus besoin de redémarrer GCompris)
+- Ajout d'un écran de chargement au démarrage de l'application
+- Une nouvelle option en ligne de commande pour choisir le moteur de rendu (--renderer renderer)

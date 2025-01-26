@@ -1,0 +1,12 @@
+- Függőleges kivonás (kompenzáció)
+- Függőleges kivonás
+- Gyakorold az összeadást!
+- A tíz bontott alakjának használata
+- Vázlat
+- Új fordítások: szanszkrit
+- Sok apró javítás és változtatás.
+- Rengeteg új kép
+- Sok apró hibajavítás.
+- Az új nyelv automatikus alkalmazása a menüben történő váltáskor (nem kell újraindítani a GCompris-t)
+- Nyitóképernyő indításkor
+- Új parancssori opció a renderelő váltásához (--renderer renderer)
