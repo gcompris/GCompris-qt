@@ -33,7 +33,9 @@ Item {
     signal hideToolbar
     onHideToolbar: toolButton.showToolBar = false
 
-    property int minIconWidth: listWidget.hori ? Math.min((background.width - 1.5*view.width) / 6, 100) : Math.min((background.height - 1.5*bar.height - view.height) / 6, 100)
+    property int minIconWidth: listWidget.hori ?
+        Math.min((background.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio) :
+        Math.min((background.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
 
     ListModel {
         id: mymodel
