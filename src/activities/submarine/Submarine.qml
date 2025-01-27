@@ -117,9 +117,16 @@ ActivityBase {
             property bool processingAnswer: false
         }
 
+        Item {
+            id: introArea
+            anchors.fill: parent
+            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio + parent.height * 0.4 // height of controlBackground in controls
+        }
+
         IntroMessage {
             id: tutorial
-            textContainerHeight: 0.5 * parent.height
+            customIntroArea: introArea
             z: 100
             onIntroDone: {
                 tutorial.visible = false

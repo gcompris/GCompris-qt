@@ -233,14 +233,6 @@ ActivityBase {
                     +" and direction of the arrow.")
             ]
             z: 110
-            anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
-            }
         }
 
         Planet {

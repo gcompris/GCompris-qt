@@ -117,13 +117,6 @@ ActivityBase {
         // Intro message
         IntroMessage {
             id: introMessage
-            y: background.height / 4.7
-            anchors {
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
-            }
             z: score.z + 1
             onIntroDone: {
                 trainAnimationTimer.start()

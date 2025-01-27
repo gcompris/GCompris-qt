@@ -119,20 +119,21 @@ ActivityBase {
             id: tutorialDataset
         }
 
+        Item {
+            id: introArea
+            anchors {
+                fill: parent
+                topMargin: (background.hori ? 0 : inputComponentsContainer.height) + 10 * ApplicationInfo.ratio
+                rightMargin: 10 * ApplicationInfo.ratio
+                leftMargin: (background.hori ? inputComponentsContainer.width : 0) + 10 * ApplicationInfo.ratio
+                bottomMargin: bar.height * 2
+            }
+        }
+
         IntroMessage {
             id: tutorialInstruction
             intro: []
-            textContainerWidth: background.hori ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
-            textContainerHeight: background.hori ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 2) - items.toolsMargin
-            anchors {
-                fill: undefined
-                top: background.hori ? parent.top : inputComponentsContainer.bottom
-                topMargin: 10
-                right: parent.right
-                rightMargin: 5
-                left: background.hori ? inputComponentsContainer.right : parent.left
-                leftMargin: 5
-            }
+            customIntroArea: introArea
             z: 5
         }
 
