@@ -769,14 +769,6 @@ ActivityBase {
                 items.world.running = true;
             }
             z: 20
-            anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
-            }
         }
 
         BarButton {

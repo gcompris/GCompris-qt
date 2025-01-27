@@ -227,10 +227,6 @@ ActivityBase {
                             "to make the ball go in a straight line.")] :
                        [qsTr("Press left and right arrow keys at the same time, " +
                             "to make the ball go in a straight line.")]
-            anchors {
-                top: parent.top
-                topMargin: 10
-            }
             z: 10
         }
 

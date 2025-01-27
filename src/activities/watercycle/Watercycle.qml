@@ -128,14 +128,6 @@ ActivityBase {
 
         IntroMessage {
             id: message
-            anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
-            }
             z: 100
             onIntroDone: {
                 tuxboat.state = "tuxboatRight";

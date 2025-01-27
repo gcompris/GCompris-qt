@@ -14,13 +14,14 @@
  */
 
 import QtQuick 2.12
+import GCompris 1.0
 
 Rectangle {
     id: button
-    color: "#d8ffffff"
-    border.color: "#2a2a2a"
-    border.width: 3
-    radius: 8
+    color: "#F2F2F2"
+    border.color: "#87A6DD"
+    border.width: 3 * ApplicationInfo.ratio
+    radius: 5 * ApplicationInfo.ratio
 
     property alias text: buttonText.text
 
@@ -28,8 +29,9 @@ Rectangle {
 
     GCText {
         id: buttonText
-        width: parent.width
-        height: parent.height
+        width: parent.width - 20 * ApplicationInfo.ratio
+        height: parent.height - 10 * ApplicationInfo.ratio
+        anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: Text.WordWrap
