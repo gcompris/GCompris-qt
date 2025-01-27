@@ -34,7 +34,7 @@ Item {
     signal hideToolbar
     onHideToolbar: toolButton.showToolBar = false;
 
-    property int minIconWidth: Math.min((background.width - 1.5 * view.width) / 6, 100)
+    property int minIconWidth: 1
 
     ListModel {
         id: mymodel
@@ -407,7 +407,7 @@ Item {
             when: listWidget.hori
             PropertyChanges {
                 listWidget {
-                    minIconWidth: Math.min((background.width - 1.5 * view.width) / 6, 100)
+                    minIconWidth: Math.min((background.width - items.toolsMargin) / 6 - 10 * ApplicationInfo.ratio, 70 * ApplicationInfo.ratio)
                 }
             }
             PropertyChanges {
@@ -446,7 +446,7 @@ Item {
             when: !listWidget.hori
             PropertyChanges {
                 listWidget {
-                    minIconWidth: Math.min((background.height - 1.5 * bar.height - view.height) / 6, 100)
+                    minIconWidth: Math.min((background.height - items.toolsMargin - bar.height * 2 - 10 * ApplicationInfo.ratio) / 6, 70 * ApplicationInfo.ratio)
                 }
             }
             PropertyChanges {
