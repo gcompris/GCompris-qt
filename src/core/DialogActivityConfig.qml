@@ -25,7 +25,7 @@ import GCompris 1.0
  * For an example have a look at Menu.qml.
  *
  * For more details on how to add configuration to an activity cf.
- * [the wiki](https://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_configuration_for_a_specific_activity)
+ * [the wiki](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process#adding-a-configuration-for-a-specific-activity)
  *
  * @sa ApplicationSettings
  * @inherit QtQuick.Item

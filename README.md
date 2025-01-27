@@ -37,12 +37,12 @@ GCompris provides some tools for teachers/educators to easily add activities.
 
 You can help by:
 
-* [Creating new activities](https://gcompris.net/wiki/Qt_Quick_development_process).
-* [Translating GCompris](https://gcompris.net/wiki/Developer%27s_corner#Translation).
-* [Recording voices](https://gcompris.net/wiki/Voice_translation_Qt).
-* [Just giving your ideas](https://gcompris.net/wiki/Ideas_for_activities).
+* [Creating new activities](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process).
+* [Translating GCompris](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/How-to-translate).
+* [Recording voices](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/How-to-translate/Voice-translation).
+* [Just giving your ideas](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Ideas-for-activities).
 
-Get more information on our [developer's wiki](https://gcompris.net/wiki/Developer%27s_corner).
+Get more information on our [developer's wiki](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/).
 
 Bug reports should be created in the [KDE bug tracker](https://bugs.kde.org/enter_bug.cgi?product=gcompris).
 
