@@ -31,7 +31,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
  * Cf. Template.qml for a sample skeleton activity.
  *
  * Cf.
- * [the wiki](https://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_new_activity)
+ * [the wiki](https://invent.kde.org/education/gcompris/-/wikis/Developers-corner/Development-process#adding-a-new-activity)
  * for further information about creating a new activity.
  *
  * @inherit QtQuick.Item
