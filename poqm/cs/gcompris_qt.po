@@ -3574,7 +3574,7 @@ msgstr ""
 "Máš na starosti plavební komoru. Otevírej brány a stavidla ve správném "
 "pořadí, aby Tux prošel branami v obou směrech."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3583,7 +3583,7 @@ msgstr ""
 "Tvým úkolem je provést Tuxe skrz plavební kanál pro dřevěná polena, použitím "
 "různých dostupných stavidel."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3593,7 +3593,7 @@ msgstr ""
 "Svislý barevný pruh představuje stavidla, která lze ovládat kliknutím na ně. "
 "Dvě stavidla stejného typu (barvy) nelze ovládat zároveň."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6130,12 +6130,12 @@ msgstr ""
 "počítačové techniky. V praxi se pro 0 používá napětí blízké zemnímu a pro 1 "
 "se používá napětí zdroje obvodu."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Vstup"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Výstup"
@@ -19479,13 +19479,13 @@ msgid "New note: %1"
 msgstr "Nová nota: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19494,12 +19494,12 @@ msgstr ""
 "Tato aktivita vyžaduje zvuk, aby mohla přehrávat některé zvuky, i když jsou "
 "v hlavní konfiguraci zvuku zakázané hlasy a efekty."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Pokračovat"
@@ -21832,7 +21832,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter nebo Return: potvrdit odpověď"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21841,7 +21841,7 @@ msgstr ""
 "Prohlédni si a zapamatuj vlak ve stanici dříve, než odjede. Poté slož z vozů "
 "ve spodní části obrazovky stejný vlak."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22058,7 +22058,7 @@ msgstr ""
 "doma, rozsviť mu. Zvítězíš, až budou všechny domácnosti pod proudem a "
 "všechny elektrárny budou pracovat."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22067,7 +22067,7 @@ msgstr ""
 "Tux se vrátil z rybaření na loďce. Spusť elektrický systém tak, aby si doma "
 "mohl rozsvítit."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22076,7 +22076,7 @@ msgstr ""
 "Pro aktivaci celého elektrického systému klikej na související součásti: "
 "slunce, mraky, přehradu, solární panely, větrné elektrárny a trafostanice."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22088,13 +22088,13 @@ msgstr ""
 "budeš potřebovat, aby všechny elektrárny fungovaly zároveň, jinak nebudeš "
 "mít dostatek energie."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Poznávej elektrický systém postavený na obnovitelných energiích. Bav se."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24938,7 +24938,7 @@ msgstr ""
 "Výborně! Pokud chceš vyzkoušet své znalosti na dalších otázkách, můžeš kvíz "
 "zkusit znovu."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24953,17 +24953,17 @@ msgstr ""
 "hrát a učit se o Sluneční soustavě.<br> <b>2. Režim kvízu</b> - Zde můžeš "
 "otestovat své znalosti o Sluneční soustavě."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Hodnocení"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Učení se"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24972,7 +24972,7 @@ msgstr ""
 "Klikni na Slunce nebo nějakou planetu pro zobrazení otázek. Každá otázka má "
 "4 odpovědi, ze kterých je pouze jedna správná."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24986,7 +24986,7 @@ msgstr ""
 "nedosáhneš na 100% přesnou odpověď. Když je viditelný symbol rady, můžeš na "
 "něj kliknout a dostat tip ke správnému zodpovězení otázky."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24995,7 +24995,7 @@ msgstr ""
 "Dostaneš 20 otázek a ke každé budeš mít na výběr ze čtyř odpovědí. V pravém "
 "dolním rohu vidíš svoji procentuální úspěšnost."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25007,7 +25007,7 @@ msgstr ""
 "přesune nakonec a dostaneš k ní ještě jednu navíc.<br>Maximálně však bude 25 "
 "otázek dohromady, poté se již další přidávat nebudou."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25016,7 +25016,7 @@ msgstr ""
 "Aby z tebe byl expert na Sluneční soustavu, musíš kvíz zvládnout s "
 "úspěšností alespoň 90%."
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25026,7 +25026,7 @@ msgstr ""
 "1. Čím <b>dále</b> je planeta od Slunce, tím <b>nižší</b> je její teplota."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25037,7 +25037,7 @@ msgstr ""
 "Slunce</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25048,12 +25048,12 @@ msgstr ""
 "b>oje <b>V</b>elmi <b>Z</b>ajímavá <b>M</b>yšlenka <b>J</b>e <b>S</b>nad "
 "<b>U</b>plně <b>N</b>anic.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Rada"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Prohlédni si Sluneční soustavu"
@@ -26187,7 +26187,7 @@ msgid ""
 msgstr ""
 "Výborně, podařilo se ti dokončit koloběh vody. Můžeš pokračovat ve hře."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26198,7 +26198,7 @@ msgstr ""
 "prochází při cirkulaci ze země do oblak a zpátky na zem. Sluneční svit "
 "poskytuje energii pro odpaření vody z vodních ploch, například z oceánů."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26209,7 +26209,7 @@ msgstr ""
 "ochlazuje a tvoří malinké kapičky v mracích. Když se mraky setkají s "
 "chladným vzduchem nad pevninou, spustí se srážky a padají dolů jako déšť."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26219,7 +26219,7 @@ msgstr ""
 "Voda, která se zachytí mezi vrstvami horniny a hlíny se nazývá podzemní "
 "voda. Většina vody však odteče řekami do moře."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27077,17 +27077,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Předchozí"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Následující"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Přeskočit"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Spustit"

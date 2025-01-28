@@ -3652,7 +3652,7 @@ msgstr ""
 "mpangilio unaofaa, ili Tux aweze kusafiri kupitia malango katika pande zote "
 "mbili."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3661,7 +3661,7 @@ msgstr ""
 "Lengo lako ni kumwongoza Tux kuvuka kufuli ya mfereji ili kupata magogo ya "
 "mbao, kwa kutumia aina tofauti za kufuli za maji zinazopatikana."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3672,7 +3672,7 @@ msgstr ""
 "kuendeshwa kwa kubofya. Kufuli mbili za aina moja haziwezi kuendeshwa kwa "
 "wakati mmoja."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6332,12 +6332,12 @@ msgstr ""
 "voltage karibu sawa na voltage ya ardhi na 1 ni uwakilishi wa voltage ya "
 "usambazaji wa mzunguko."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ingizo"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Pato"
@@ -20217,13 +20217,13 @@ msgid "New note: %1"
 msgstr "Dokezo jipya: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20232,12 +20232,12 @@ msgstr ""
 "Shughuli hii inahitaji sauti, kwa hivyo itacheza baadhi ya sauti hata kama "
 "sauti au madoido yamezimwa katika usanidi mkuu."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Toka"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Endelea"
@@ -22681,7 +22681,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Ingiza au Rudisha: wasilisha jibu lako"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22690,7 +22690,7 @@ msgstr ""
 "Angalia na ukumbuke treni kabla ya kipima muda kuisha na kisha uburute vitu "
 "ili kusanidi treni kama hiyo."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22907,7 +22907,7 @@ msgstr ""
 "ajili yake. Ili kushinda lazima uwashe watumiaji wote wakati wazalishaji "
 "wote wapo juu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22916,7 +22916,7 @@ msgstr ""
 "Tux amerejea kutoka kuvua samaki kwenye mashua yake. Rudisha mfumo wa umeme "
 "ili apate mwanga nyumbani kwake."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22925,7 +22925,7 @@ msgstr ""
 "Bofya kwenye vipengele tofauti vya kazi: jua, wingu, bwawa, safu ya jua, "
 "shamba la upepo na transfoma, ili kurejesha mfumo mzima wa umeme."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22936,12 +22936,12 @@ msgstr ""
 "mwanga kwa ajili yake. Ili kushinda lazima uwashe watumiaji wote wakati "
 "wazalishaji wote wapo juu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Jifunze kuhusu mfumo wa umeme kulingana na nishati mbadala. Furahia."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25947,7 +25947,7 @@ msgstr ""
 "Kubwa! Unaweza kucheza tena tathmini ili kupima maarifa yako kuhusu maswali "
 "zaidi."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25963,17 +25963,17 @@ msgstr ""
 "Mfumo wa Jua.<br> <b>2. Hali ya Tathmini</b> - Katika hali hii unaweza "
 "kupima ujuzi wako kuhusu Mfumo wa Jua."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Tathmini"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "kujifunza"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25982,7 +25982,7 @@ msgstr ""
 "Bofya kwenye Jua au sayari yoyote ili kufichua maswali. Kila swali lina "
 "chaguzi 4, kati ya hizo moja ni sahihi."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25997,7 +25997,7 @@ msgstr ""
 "c100 kwa kufuata mita ya ukaribu. Ikiwa kitufe cha kidokezo kinaonekana, "
 "unaweza kubofya ili kupata kidokezo ili kupata jibu."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26006,7 +26006,7 @@ msgstr ""
 "Kuna maswali 20 mwanzoni na chaguzi 4 kila moja. Upau wa maendeleo ulio "
 "chini kulia mwa skrini unaonyesha alama yako ya asilimia."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26019,7 +26019,7 @@ msgstr ""
 "na swali lililojibiwa vibaya.<br> Maswali yasiyozidi 25 yataulizwa baada ya "
 "hapo hakuna swali zaidi litakaloongezwa."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26028,7 +26028,7 @@ msgstr ""
 "Unapaswa kupata alama zaidi ya 90% to kupita tathmini na kuwa mtaalamu wa "
 "Mfumo wa Jua!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26038,7 +26038,7 @@ msgstr ""
 "1. Sayari ikiwa <b>mbali</b> na Jua, ndivyo joto lake la <b>chini</b> "
 "linavyopungua.<br> <font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26049,7 +26049,7 @@ msgstr ""
 "<br> <font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26061,12 +26061,12 @@ msgstr ""
 "xcellent <b>M</b> nyingine <b>J</b> ust <b>S</b> erved <b>U</b> s <b>N</b> "
 "oodles.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Kidokezo"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Tazama mfumo wa jua"
@@ -27316,7 +27316,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Ajabu, umekamilisha mzunguko wa maji. Unaweza kuendelea kucheza."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27328,7 +27328,7 @@ msgstr ""
 "tena. Joto la jua hutoa nishati ya kuyeyusha maji kutoka kwa miili ya maji "
 "kama bahari."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27339,7 +27339,7 @@ msgstr ""
 "kutengeneza matone madogo kwenye mawingu. Wakati mawingu yanapokutana na "
 "hewa baridi juu ya ardhi, kunyesha husababishwa na kunyesha kama mvua."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27350,7 +27350,7 @@ msgstr ""
 "chini ya ardhi. Lakini maji mengi hutiririka kama mkondo, hatimaye kurudi "
 "baharini kupitia mito."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28235,17 +28235,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Awali"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Inayofuata"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Ruka"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Anzisha"

@@ -3575,7 +3575,7 @@ msgstr ""
 "Tavs uzdevums ir vadīt kanāla slūžas. Atver vārtus un slūžas pareizā secībā, "
 "lai Tukss var izbraukt cauri slūžām abos virzienos."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3584,7 +3584,7 @@ msgstr ""
 "Tavs mērķis ir vadīt Tuksu pāri kanāla slūžām pēc malkas, izmantojot dažāda "
 "veida ūdens slūžas."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3594,7 +3594,7 @@ msgstr ""
 "Vertikālās joslas ir slūžas. Tās vari vadīt, uz tām spiežot. Vienlaicīgi "
 "nevari darbināt divas viena veida slūžas."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6151,12 +6151,12 @@ msgstr ""
 "darbībai. Patiesībā 0 visbiežāk reprezentē spriegums, kas ir tuvs zemējuma "
 "spriegumam, bet 1 reprezentē ķēdē pievadītais spriegums."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Ievade"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Izvade"
@@ -19768,13 +19768,13 @@ msgid "New note: %1"
 msgstr "Jauna nots: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19783,12 +19783,12 @@ msgstr ""
 "Šai aktivitātei ir vajadzīga skaņa, tāpēc tajā programma atskaņos skaņu pat "
 "tad, ja pamata konfigurācijā balsis un efekti ir izslēgti."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Iziet"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Turpināt"
@@ -22140,7 +22140,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "„Enter“ vai „Return“ taustiņš: apstiprināt atbildi"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22149,7 +22149,7 @@ msgstr ""
 "Apskati un iegaumē vilcienu pirms beidzas laiks, bet pēc tam velc elementus, "
 "lai izveidotu līdzīgu vilcienu."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22363,7 +22363,7 @@ msgstr ""
 "viņam gaismas slēdzi. Lai uzvarētu, tev ir jāieslēdz visi patērētāji, kad ir "
 "pieslēgti visi ražotāji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22372,7 +22372,7 @@ msgstr ""
 "Tukss ir atgriezies no makšķerēšanas laivā. Atjaunot elektrosistēmu, lai "
 "viņam mājās būtu gaisma."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22382,7 +22382,7 @@ msgstr ""
 "paneļi, vēja ferma un transformatori — noteiktā secībā, lai atjaunotu "
 "elektrosistēmu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22393,14 +22393,14 @@ msgstr ""
 "slēdzi. Lai uzvarētu, tev ir jāieslēdz visi patērētāji, kad ir pieslēgti "
 "visi ražotāji."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Uzzini vairāk par elektrosistēmām, kas balstās atjaunīgajā enerģijā. "
 "Izklaidējies!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25257,7 +25257,7 @@ msgstr ""
 "Lieliski! Tu vari vēlreiz iziet testu, lai novērtētu savas zināšanas citos "
 "jautājumos."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25273,17 +25273,17 @@ msgstr ""
 "<br><b>2. Novērtēšanas režīms</b> — šajā režīmā vari pārbaudīt savas "
 "zināšanas par Saules sistēmu."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Novērtēšana"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Mācīšanās"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25292,7 +25292,7 @@ msgstr ""
 "Klikšķini uz Saules vai jebkuras planētas, lai atklātu jautājumu. Katram "
 "jautājumam ir četri atbilžu variantu, no kuriem pareizs ir viens."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25307,7 +25307,7 @@ msgstr ""
 "iegūsti 100 % precizitāti. Ja redzi padomu pogu, vari uz tās klikšķināt, lai "
 "iegūtu padomu par pareizo atbildi."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25316,7 +25316,7 @@ msgstr ""
 "Sākotnēji ir 20 jautājumu ar četriem atbilžu variantiem. Progresa josla "
 "ekrāna apakšējā labajā pusē rāda punktus izteiktus procentuāli."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25329,7 +25329,7 @@ msgstr ""
 "atbildēto jautājumu.<br>Saņemsi līdz 25 jautājumiem, bet vairāk jautājumi "
 "uzdoti netiks."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25338,7 +25338,7 @@ msgstr ""
 "Lai noliktu pārbaudījumu un kļūtu par Saules sistēmas ekspertu, tavam "
 "vērtējumam ir jāpārsniedz 90%."
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25348,7 +25348,7 @@ msgstr ""
 "1. Jo <b>tālāk</b> planēta atrodas no Saules, jo <b>zemāka</b> ir tās "
 "temperatūra.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25359,7 +25359,7 @@ msgstr ""
 "<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25370,12 +25370,12 @@ msgstr ""
 "pirmo burtu — <b>M</b>ans <b>v</b>ecais <b>z</b>aļais <b>m</b>arsietis "
 "<b>ja</b>utri <b>s</b>tāda <b>u<b>pē <b>n</b>iedres.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Padoms"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Apskati Saules sistēmu"
@@ -26564,7 +26564,7 @@ msgid ""
 msgstr ""
 "Fantastiski! Tev ir izdevies pabeigt ūdens ciklu. Vari turpināt spēlēt."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26575,7 +26575,7 @@ msgstr ""
 "cirkulējot no zemes uz debesīm un atpakaļ uz zemi. Saules siltums sniedz "
 "ūdenim enerģiju, lai tas varētu iztvaikot no ūdenstilpēm, piemēram, okeāna."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26586,7 +26586,7 @@ msgstr ""
 "izveido sīkus pilieniņus, kas veido mākoņus. Kad mākoņi virs zemes satiekas "
 "ar vēsu gaisu, sākas nokrišņi un līst."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26597,7 +26597,7 @@ msgstr ""
 "gruntsūdeni. Bet lielākā daļa ūdens aizplūst tālāk un no grāvjiem un upēm "
 "nonāk jūrā."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27463,17 +27463,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Iepriekšējā"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Nākamā"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Izlaist"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Sākt"

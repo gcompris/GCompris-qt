@@ -3714,7 +3714,7 @@ msgstr ""
 "Sa vastutad kanali lüüsi eest. Ava väravad ja lüüsid õiges järjekorras, et "
 "Tux saaks mõlemas suunas läbi sõita."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3723,7 +3723,7 @@ msgstr ""
 "Sinu eesmärk on juhtida Tux läbi lüüsi, et ta palgid kätte saaks, kasutades "
 "selleks eri tüüpi lüüsiväravaid."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3733,7 +3733,7 @@ msgstr ""
 "Värvilised püstised tulbad tähistavad lüüsiväravaid, mida saab liigutada "
 "neile klõpsates. Kahte üht tüüpi väravat korraga liigutada ei saa."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6410,12 +6410,12 @@ msgstr ""
 "arvutitehnika põhitõed. Tegelikkuses on 0 sageli maapinna pingega peaaegu "
 "võrdse pinge kujutamine ja 1 on vooluahela toitepinge kujutamine."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Sisend"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Väljund"
@@ -20304,13 +20304,13 @@ msgid "New note: %1"
 msgstr "Uus noot: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20319,12 +20319,12 @@ msgstr ""
 "See tegevus nõuab heli, seega esitab see mõningaid helisid isegi siis, kui "
 "helihääled või -efektid on põhikonfiguratsioonis keelatud."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Sulgege"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Jätka"
@@ -22742,7 +22742,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter: esitage oma vastus"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22751,7 +22751,7 @@ msgstr ""
 "Vaata ja jäta rong enne aja lõppemist meelde ning lohista seejärel "
 "näidistealalt vastusealale samasugune rong."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22968,7 +22968,7 @@ msgstr ""
 "jõuab koju, vajuta tema eest valgusenuppu. Et võita, pead sisse lülitama "
 "kõik elektritarbijad, nii et kõik elektritootjad peavad ka töötama."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22977,7 +22977,7 @@ msgstr ""
 "Tux on pikalt kalastusretkelt tagasi jõudnud. Pane elektrisüsteem tööle, et "
 "tal oleks kodus natukenegi valgem."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22986,7 +22986,7 @@ msgstr ""
 "Klõpsa elektrisüsteemi töölepanekuks vajalikel elementidel: päike, pilv, "
 "tamm, päikesepaneelid, tuulepark ja trafod."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22997,12 +22997,12 @@ msgstr ""
 "võita, pead sisse lülitama kõik elektritarbijad, nii et kõik elektritootjad "
 "peavad ka töötama."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Taastuvenergial töötava elektrisüsteemi tundmaõppimine."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25945,7 +25945,7 @@ msgstr ""
 "Suurepärane! Võid mängu korrata, et enda teadmised veel rohkemate "
 "küsimustega proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25961,17 +25961,17 @@ msgstr ""
 "Hindamisrežiim</b> - selle korral saad oma teadmised Päikesesüsteemist "
 "proovile panna."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Hindamine"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Õppimine"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25980,7 +25980,7 @@ msgstr ""
 "Küsimuste nägemiseks klõpsa Päikesel või mõnel planeedil. Igal küsimusel on "
 "4 valikvastust, millest üks on õige."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25995,7 +25995,7 @@ msgstr ""
 "Kui vihjenupp on nähtav, võite vastuse leidmiseks vihje saamiseks sellele "
 "klõpsata."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26004,7 +26004,7 @@ msgstr ""
 "Algul on valmis seatud 20 küsimust, igal 4 valikvastust. All paremal näitab "
 "edenemisriba sinu tulemusi protsentides."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26017,14 +26017,14 @@ msgstr ""
 "üks lisaküsimus.<br>Maksimaalselt esitatakse 25 küsimust, mille järel "
 "küsimuste esitamine lõpetatakse."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "Et olla Päikesesüsteemi ekspert, peaksid koguma hindamisel üle 90%!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26034,7 +26034,7 @@ msgstr ""
 "1. Mida <b>kaugemal</b> asub planeet Päikesest, seda <b>madalam</b> on selle "
 "temperatuur.<br> <font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26045,7 +26045,7 @@ msgstr ""
 "liigume</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26056,12 +26056,12 @@ msgstr ""
 "sõna esimest tähte - <b>M</b>inu <b>V</b>anaisa <b>M</b>usta <b>M</b>aja "
 "<b>J</b>uures <b>S</b>eisab <b>U</b>hke <b>N</b>eoonskupltuur.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Vihje"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vaata Päikesesüsteemi"
@@ -27294,7 +27294,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastiline! Said veeringe korralikult käima. Võid edasi mängida."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27305,7 +27305,7 @@ msgstr ""
 "peale. Päikese kuumus annab piisavalt energiat, et aurustada vett isegi "
 "ookeanist."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27316,7 +27316,7 @@ msgstr ""
 "tilgad. Kui pilved kohtuvad jaheda õhuga, vallanduvad sademed ja sajab "
 "vihmana alla."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27327,7 +27327,7 @@ msgstr ""
 "põhjaveeks. Aga enamik veest muudkui voolab ja jõuab viimaks jõgede kaudu "
 "jälle merre."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28230,17 +28230,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Eelmine"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Järgmine"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Jäta vahele"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Alusta"

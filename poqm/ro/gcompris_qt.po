@@ -1,4 +1,4 @@
-# Horia PELLE <horricane@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024.
+# Horia PELLE <horricane@gmail.com>, 2015, 2016, 2017, 2018, 2019, 2020, 2022, 2023, 2024, 2025.
 # Ovidiu-Florin BOGDAN <ovidiu.b13@gmail.com>, 2015, 2016.
 # Viorel-Cătălin Răpițeanu <rapiteanu.catalin@gmail.com>, 2016.
 # Sergiu Bivol <sergiu@cip.md>, 2020, 2021, 2022.
@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-02-18 23:34+0200\n"
+"PO-Revision-Date: 2025-01-27 17:34+0200\n"
 "Last-Translator: Horia PELLE <horricane@gmail.com>\n"
 "Language-Team: Romanian <kde-i18n-doc@kde.org>\n"
 "Language: ro\n"
@@ -1294,21 +1294,15 @@ msgstr "Asocieri logice"
 
 #. Help title
 #: activities/algorithm/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the arrangement of fruit."
 msgctxt "ActivityInfo|"
 msgid "Complete the arrangement of fruits."
-msgstr "Completează aranjarea fructelor."
+msgstr "Completează aranjarea fructelor. "
 
 #. Help goal
 #: activities/algorithm/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Logical associations"
 msgctxt "ActivityInfo|"
 msgid "Logical association practice."
-msgstr "Asocieri logice"
+msgstr "Practica asocierilor logice."
 
 #. Help manual
 #: activities/algorithm/ActivityInfo.qml:22
@@ -1331,22 +1325,16 @@ msgstr "Alinează patru jetoane (contra lui Tux)"
 #. Help title
 #: activities/align4/ActivityInfo.qml:17
 #: activities/align4_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange four tokens in a row."
 msgctxt "ActivityInfo|"
 msgid "Line up four tokens."
-msgstr "Aranjează patru jetoane în linie."
+msgstr "Aliniază patru jetoane."
 
 #. Help goal
 #: activities/align4/ActivityInfo.qml:20
 #: activities/align4_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and strategy skills."
-msgstr "Dezvoltarea motricității fine."
+msgstr "Dezvoltarea competențelor de anticipare și strategie."
 
 #. Help manual
 #: activities/align4/ActivityInfo.qml:22
@@ -1360,18 +1348,13 @@ msgstr ""
 
 #: activities/align4/ActivityInfo.qml:23
 #: activities/align4_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create a line of 4 tokens either horizontally (lying down), vertically "
-#| "(standing up) or diagonally."
 msgctxt "ActivityInfo|"
 msgid ""
 "You can create a line of 4 tokens either horizontally (lying down), "
 "vertically (standing up), or diagonally."
 msgstr ""
-"Să creezi o linie din 4 jetoane, pe orizontală (așezate), pe verticală (în "
-"picioare) sau pe diagonală."
+"Poți crea o linie din 4 jetoane fie pe orizontală (așezate), pe verticală "
+"(în picioare) sau pe diagonală."
 
 #: activities/align4/ActivityInfo.qml:24 activities/bargame/ActivityInfo.qml:25
 #: activities/checkers/ActivityInfo.qml:26
@@ -2122,12 +2105,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Baby keyboard"
 msgctxt "ActivityInfo|"
 msgid "My first keyboard"
-msgstr "Tastatură de jucărie"
+msgstr "Prima mea tastatură."
 
 #. Help title
 #: activities/baby_keyboard/ActivityInfo.qml:17
@@ -2163,12 +2143,9 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_mouse/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the mouse"
 msgctxt "ActivityInfo|"
 msgid "My first mouse"
-msgstr "Mișcă mausul"
+msgstr "Primul meu maus"
 
 #. Help title
 #: activities/baby_mouse/ActivityInfo.qml:16
@@ -2244,29 +2221,21 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_tangram/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Complete the puzzle"
 msgctxt "ActivityInfo|"
 msgid "Simple puzzle"
-msgstr "Completează puzzle-ul"
+msgstr "Puzzle simplu"
 
 #. Help title
 #: activities/baby_tangram/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Match the objects with their shapes."
-msgstr ""
+msgstr "Asociază obiectele cu formele lor."
 
 #. Help goal
 #: activities/baby_tangram/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Flip the cards to match an operation with its result."
 msgctxt "ActivityInfo|"
 msgid "Learn to match an object with its shape."
-msgstr ""
-"Întoarce cărțile și găsește toate perechile dintre o operație matematică și "
-"rezultatul ei."
+msgstr "Învață să asociezi un obiect cu forma lui."
 
 #. Help manual
 #: activities/baby_tangram/ActivityInfo.qml:24
@@ -2287,27 +2256,21 @@ msgstr ""
 
 #. Activity title
 #: activities/baby_wordprocessor/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "A baby word processor"
 msgctxt "ActivityInfo|"
 msgid "My first word processor"
-msgstr "Un procesor de text infantil"
+msgstr "Primul meu editor de text"
 
 #. Help title
 #: activities/baby_wordprocessor/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Write your first texts."
-msgstr ""
+msgstr "Scrie primele tale texte."
 
 #. Help goal
 #: activities/baby_wordprocessor/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to calculate using the four operators."
 msgctxt "ActivityInfo|"
 msgid "Learn to write a text using a word processor."
-msgstr "Învață să calculezi folosind cei patru patru operatori."
+msgstr "Învață să scrii un text folosind un editor de cuvinte."
 
 #. Help manual
 #: activities/baby_wordprocessor/ActivityInfo.qml:23
@@ -2444,21 +2407,15 @@ msgstr "Completează puzzle-ul"
 
 #. Help title
 #: activities/babyshapes/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the shapes on their respective targets."
 msgctxt "ActivityInfo|"
 msgid "Drag and drop the shapes on their respective targets."
-msgstr "Glisează formele pe obiectele-țintă potrivite."
+msgstr "Glisează și așează formele pe obiectele-țintă potrivite."
 
 #. Help goal
 #: activities/babyshapes/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to identify grammatical classes."
 msgctxt "ActivityInfo|"
 msgid "Learn to match geometric shapes."
-msgstr "Să înveți să identifici clasele gramaticale."
+msgstr "Să înveți să asociezi forme geometrice."
 
 #. Help manual
 #: activities/babyshapes/ActivityInfo.qml:27
@@ -2741,9 +2698,6 @@ msgstr ""
 "niciun nivel de utilizator!"
 
 #: activities/balancebox/Balancebox.qml:72
-#, fuzzy
-#| msgctxt "Imageid|"
-#| msgid "OK"
 msgctxt "Balancebox|"
 msgid "OK"
 msgstr "OK"
@@ -2800,12 +2754,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ballcatch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find your left and right hands"
 msgctxt "ActivityInfo|"
 msgid "Synchronize left and right hands movements."
-msgstr "Găsește-ți mâna stângă sau dreaptă"
+msgstr "Sincronizează mișcările celor două mâini."
 
 #. Help manual
 #: activities/ballcatch/ActivityInfo.qml:23
@@ -2872,13 +2823,15 @@ msgstr "Jocul riglei (contra lui Tux)"
 msgctxt "ActivityInfo|"
 msgid "Anticipate and force the other player to place a ball in the last hole."
 msgstr ""
+"Anticipează și forțează-i pe ceilalți jucători să plaseze bila în ultima "
+"gaură."
 
 #. Help goal
 #: activities/bargame/ActivityInfo.qml:20
 #: activities/bargame_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in strategic thinking, counting and subtracting."
-msgstr ""
+msgstr "Dezvoltă competențe în gândirea strategică, numărare și scădere."
 
 #. Help prerequisite
 #: activities/bargame/ActivityInfo.qml:22
@@ -3227,12 +3180,9 @@ msgstr "Exersează literele Braille."
 
 #. Help goal
 #: activities/braille_fun/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice addition inequality."
 msgctxt "ActivityInfo|"
 msgid "Practice writing in braille."
-msgstr "Exersează adunarea numerelor cu o inegalitate fixă."
+msgstr "Exersează scrierea Braille."
 
 #. Help prerequisite
 #: activities/braille_fun/ActivityInfo.qml:22
@@ -3265,17 +3215,12 @@ msgstr "Rezolv Calcudoku."
 
 #. Help goal
 #: activities/calcudoku/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some logical skills (data linking, deduction) and spatial "
 "visualization while using calculation."
 msgstr ""
-"Dezvoltă-ți abilitățile de gândire logică: legătura dintre date, deducția și "
+"Dezvoltă-ți câteva abilități logice (legătura dintre date + deducția) și "
 "localizarea spațială, în timp ce calculezi."
 
 #. Help prerequisite
@@ -3699,7 +3644,7 @@ msgstr ""
 "închizi porțile etanșe în ordinea corespunzătoare, astfel încât Tux să poată "
 "naviga prin ecluză în ambele direcții."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3708,7 +3653,7 @@ msgstr ""
 "Scopul tău este să-l treci pe Tux dincolo de ecluză, la buștenii de lemn, "
 "folosind diferitele tipuri de închidere disponibile."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3718,7 +3663,7 @@ msgstr ""
 "Barele colorate verticale reprezintă ecluzele, care pot fi operate făcând "
 "clic pe ele. Două închideri de același tip nu pot fi operate simultan."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -4337,11 +4282,6 @@ msgstr "Joacă dame (contra lui Tux)"
 #. Help title
 #: activities/checkers/ActivityInfo.qml:17
 #: activities/checkers_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Capture all the pieces of your opponent before your opponent captures all "
-#| "of yours."
 msgctxt "ActivityInfo|"
 msgid ""
 "Capture all your opponent's pieces before your opponent captures all of "
@@ -4353,12 +4293,9 @@ msgstr ""
 #. Help goal
 #: activities/checkers/ActivityInfo.qml:20
 #: activities/checkers_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice braille letters."
 msgctxt "ActivityInfo|"
 msgid "Practice playing checkers."
-msgstr "Exersează literele Braille."
+msgstr "Practică jocul de dame."
 
 #. Help manual
 #: activities/checkers/ActivityInfo.qml:23
@@ -4404,12 +4341,10 @@ msgstr ""
 
 #: activities/checkers/ActivityInfo.qml:27
 #: activities/checkers_2players/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The version in GCompris is the international draughts."
 msgctxt "ActivityInfo|"
 msgid "This version of checkers follows the rules of international draughts."
-msgstr "Versiunea de dame din GCompris este cea internațională."
+msgstr ""
+"Această versiune de dame urmează regulile internaționale ale jocului de dame."
 
 #: activities/checkers/ActivityInfo.qml:29
 #: activities/checkers_2players/ActivityInfo.qml:27
@@ -4500,22 +4435,16 @@ msgstr "Joacă șah (contra lui Tux)"
 #. Help title
 #: activities/chess/ActivityInfo.qml:17
 #: activities/chess_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Discover the braille system"
 msgctxt "ActivityInfo|"
 msgid "Discover and practice chess."
-msgstr "Descoperă sistemul Braille"
+msgstr "Descoperă și practică șahul."
 
 #. Help goal
 #: activities/chess/ActivityInfo.qml:20
 #: activities/chess_2players/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn to play chess."
-msgstr "Să înveți circuitul apei în natură."
+msgstr "Învață să joci șah."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess/ActivityInfo.qml:24
@@ -4688,21 +4617,15 @@ msgstr "Sfârșitul partidei de șah"
 
 #. Help title
 #: activities/chess_partyend/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Play the end of the chess game against Tux."
 msgctxt "ActivityInfo|"
 msgid "Play the end of a chess game against Tux."
 msgstr "Joacă finalul jocului de șah contra lui Tux."
 
 #. Help goal
 #: activities/chess_partyend/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "End of chess game"
 msgctxt "ActivityInfo|"
 msgid "Finish a chess game."
-msgstr "Sfârșitul partidei de șah"
+msgstr "Încheie o partidă de șah."
 
 #. Help manual Much of this string is shared across the three activities "chess", "chess_partyend", and "chess_2players".
 #: activities/chess_partyend/ActivityInfo.qml:24
@@ -4754,12 +4677,9 @@ msgstr "Glisează elementele pentru a aranja povestirea."
 
 #. Help goal
 #: activities/chronos/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to recognize unusual colors."
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize the chronology of a story."
-msgstr "Să înveți să recunoști culori mai neobișnuite."
+msgstr "Învață să recunoști cronologia unei povești."
 
 #. Help prerequisite
 #: activities/chronos/ActivityInfo.qml:26
@@ -4770,35 +4690,24 @@ msgstr "Să ordonezi temporal o succesiune de evenimente."
 
 #. Help manual
 #: activities/chronos/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "If the answer is correct, type the corresponding result, and click on the "
-#| "OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Arrange the pictures to make a coherent story. Drag the pictures from the "
 "sidebar to the corresponding dots, then click the OK button to validate your "
 "answer."
 msgstr ""
-"Dacă răspunsul este corect, scrie rezultatul corespunzător și fă clic pe "
-"butonul OK pentru a-ți valida răspunsul."
+"Aranjează imaginile pentru a crea o poveste coerentă. Trage imaginile de pe "
+"margine pe punctele corespunzătoare, apoi fă clic pe butonul OK pentru a-ți "
+"valida răspunsul."
 
 #: activities/chronos/ActivityInfo.qml:29
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Moon photo is copyright NASA. The transportation images are copyright "
-#| "Franck Doucet. Dates of Transportation are based on those found in &lt;"
-#| "https://www.wikipedia.org&gt;."
 msgctxt "ActivityInfo|"
 msgid ""
 "Dates of Transportation are based on those found in &lt;https://www."
 "wikipedia.org&gt;."
 msgstr ""
-"Fotografia de pe Lună este cu drepturi de autor NASA. Imaginile de transport "
-"sunt cu drepturi de autor pentru Franck Doucet. Datele de transport se "
-"bazează pe cele găsite la &lt;https://www.wikipedia.org&gt;."
+"Datele de transport se bazează pe cele găsite la &lt;https://www.wikipedia."
+"org&gt;."
 
 #: activities/chronos/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -5111,12 +5020,9 @@ msgstr "Ascultă litera pronunțată și fă clic pe ea."
 
 #. Help goal
 #: activities/click_on_letter/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a lowercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of lowercase letters."
-msgstr "Fă clic pe o literă mică"
+msgstr "Recunoaște numele literelor mici."
 
 #. Help prerequisite
 #: activities/click_on_letter/ActivityInfo.qml:22
@@ -5160,12 +5066,9 @@ msgstr "Apasă pe o majusculă."
 
 #. Help goal
 #: activities/click_on_letter_up/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on an uppercase letter"
 msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
-msgstr "Apasă pe o majusculă."
+msgstr "Recunoaște numele literelor mari."
 
 #: activities/clickanddraw/ActivityConfig.qml:22
 #: activities/drawletters/ActivityConfig.qml:22
@@ -5203,12 +5106,11 @@ msgstr "Desenează imaginea apăsând pe punctele alese."
 
 #. Help goal
 #: activities/clickanddraw/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can drag items using a mouse or touchscreen."
 msgctxt "ActivityInfo|"
 msgid "Practice using a mouse or touchscreen to touch specific points."
-msgstr "Să poată trage elemente folosind mausul sau degetul pe ecran."
+msgstr ""
+"Exersarea utilizării mausului sau ecranului tactil, pentru atingerea unor "
+"anumite puncte."
 
 #. Help prerequisite
 #: activities/clickanddraw/ActivityInfo.qml:22
@@ -5218,11 +5120,6 @@ msgstr "Să poți mișca mausul și să apeși cu precizie pe puncte."
 
 #. Help manual
 #: activities/clickanddraw/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on each point in sequence. Each time a point is "
@@ -5230,7 +5127,9 @@ msgid ""
 "the next ones, or click on each point one after the other."
 msgstr ""
 "Desenează imaginea apăsând pe fiecare punct din secvență. De fiecare dată "
-"când se selectează un punct albastru, apare următorul."
+"când se selectează un punct albastru, apare următorul. Poți face clic și "
+"trage dintr-un punct pe următoarele, sau să faci clic pe fiecare punct, unul "
+"după altul."
 
 #. Activity title
 #: activities/clickgame/ActivityInfo.qml:15
@@ -5246,21 +5145,17 @@ msgstr "Prinde toți peștii care înoată, înainte ca ei să părăsească acv
 
 #. Help goal
 #: activities/clickgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Motor coordination: moving the hand precisely."
 msgctxt "ActivityInfo|"
 msgid "Practice motor coordination, moving the hand precisely."
-msgstr "Coordonarea motorie: mișcarea precisă a mâinii."
+msgstr "Exersarea coordonării motorii, mișcând mâna precis."
 
 #. Help prerequisite
 #: activities/clickgame/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can move mouse and click on the correct place."
 msgctxt "ActivityInfo|"
 msgid "Can move a mouse or use a touchscreen and click on the correct place."
-msgstr "Să poți să miști mausul și să dai clic pe locul corect."
+msgstr ""
+"Să poți să miști un maus sau să folosești un ecran tactil și să faci clic pe "
+"locul corect."
 
 #. Help manual
 #: activities/clickgame/ActivityInfo.qml:24
@@ -5408,12 +5303,10 @@ msgstr "Descoperă amestecul culorilor din vopsea."
 
 #. Help goal
 #: activities/color_mix/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary paint colors to match a given color."
-msgstr "Amestecă culorile primare pentru a obține culoarea dată."
+msgstr ""
+"Învață să amesteci culorile primare de vopsea pentru a obține culoarea dată."
 
 #. Help manual
 #: activities/color_mix/ActivityInfo.qml:23
@@ -5426,18 +5319,14 @@ msgstr ""
 "din vopsea (amestecul subtractiv)."
 
 #: activities/color_mix/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the paint tubes or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Schimbă culoarea mișcând de manetele torțelor sau făcând clic pe butoanele + "
-"și − . Fă apoi clic pe butonul OK pentru a-ți valida răspunsul."
+"Schimbă culoarea mișcând glisoarele de pe tuburile de vopsea sau făcând clic "
+"pe butoanele + și − . Fă apoi clic pe butonul OK pentru a-ți valida "
+"răspunsul."
 
 #: activities/color_mix/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -5536,12 +5425,11 @@ msgstr "Înțelegerea amestecului de culori din lumină"
 
 #. Help goal
 #: activities/color_mix_light/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mix primary colors to match the given color."
 msgctxt "ActivityInfo|"
 msgid "Learn to mix primary light colors to match a given color."
-msgstr "Amestecă culorile primare pentru a obține culoarea dată."
+msgstr ""
+"Învață să amesteci culorile primare din lumină pentru a obține o culoare "
+"dată."
 
 #. Help manual
 #: activities/color_mix_light/ActivityInfo.qml:23
@@ -5554,26 +5442,15 @@ msgstr ""
 "(amestecul aditiv)."
 
 #: activities/color_mix_light/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Change the color by moving the sliders on the torches or by clicking on "
-#| "the + and - buttons. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Change the color by moving the sliders on the flashlights or by clicking on "
 "the + and - buttons. Then click on the OK button to validate your answer."
 msgstr ""
-"Schimbă culoarea mișcând de manetele torțelor sau făcând clic pe butoanele + "
-"și − . Fă apoi clic pe butonul OK pentru a-ți valida răspunsul."
+"Schimbă culoarea mișcând glisoarele de pe lanterne sau făcând clic pe "
+"butoanele + și − . Fă apoi clic pe butonul OK pentru a-ți valida răspunsul."
 
 #: activities/color_mix_light/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Mixing light colors is just the opposite of mixing paint colors. The more "
-#| "light you add, the lighter the resulting color becomes. Primary colors of "
-#| "light are red, green and blue."
 msgctxt "ActivityInfo|"
 msgid ""
 "Mixing light colors is just the opposite of mixing paint colors. The more "
@@ -5599,12 +5476,9 @@ msgstr "Fă clic pe culoarea corectă."
 
 #. Help goal
 #: activities/colors/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "This activity teaches you to recognize different colors."
 msgctxt "ActivityInfo|"
 msgid "Practice recognizing different colors."
-msgstr "Această activitate te învață să recunoști diferite culori."
+msgstr "Exersează recunoașterea diferitelor culori."
 
 #. Help prerequisite
 #: activities/colors/ActivityInfo.qml:22
@@ -5930,21 +5804,17 @@ msgstr "Glisează formele pe obiectele-țintă potrivite."
 #: activities/paintings/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Develop observation and spatial visualization skills."
-msgstr ""
+msgstr "Dezvoltarea aptitudinilor de observare și vedere în spațiu."
 
 #. Help manual
 #: activities/details/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Pick the pictures on the side and put them on the dots in the right order."
 msgctxt "ActivityInfo|"
 msgid ""
 "Find a picture detail in the sidebar, and drag it to the right spot on the "
 "picture."
 msgstr ""
-"Alege dintre imaginile din lateral și plasează-le pe punctele roșii în "
-"ordinea corectă."
+"Găsește un detaliu al imaginii în lateral, și glisează-l în locul potrivit "
+"de pe imagine."
 
 #: activities/details/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
@@ -6082,23 +5952,15 @@ msgstr "Electricitatea digitală"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital electric schema."
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit"
-msgstr "Creează și simulează o schemă electrică digitală."
+msgstr "Creează și simulează un circuit digital logic"
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create a digital electric schema with a real time simulation of it."
 msgctxt "ActivityInfo|"
 msgid "Create a digital logic circuit and simulate it in real time."
-msgstr ""
-"Crearea liberă a unei scheme electrice digitale, cu simularea ei în timp "
-"real."
+msgstr "Crearea unui circuit digital logic și simularea lui în timp real."
 
 #. Help prerequisite
 #: activities/digital_electricity/ActivityInfo.qml:22
@@ -6313,14 +6175,6 @@ msgid "NOT A"
 msgstr "NOT A"
 
 #: activities/digital_electricity/components/One.qml:20
-#, fuzzy
-#| msgctxt "One|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "One|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6328,12 +6182,11 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Electronica digitală lucrează doar cu două stări: 0 și 1. Acest lucru "
-"permite aplicarea de operații matematice, cum ar fi adunări, scăderi, etc. "
-"Ea stă la baza funcționării calculatoarelor. În realitate, 0 este cel mai "
-"adesea reprezentarea tensiunii electrice aproape egală cu tensiunea nulă (de "
-"pământare), iar 1 este reprezentarea tensiunii sursei de alimentare a "
-"circuitului electric."
+"Circuitele electrice digitale lucrează doar cu două stări: 0 și 1. Aceasta "
+"este baza tehnicii de lucru a computerelor. În realitate, 0 este deseori "
+"reprezentarea tensiunii electrice aproape egală cu tensiunea de pământare, "
+"iar 1 este reprezentarea tensiunii sursei de alimentare a circuitului "
+"electric."
 
 #: activities/digital_electricity/components/OrGate.qml:21
 msgctxt "OrGate|"
@@ -6411,14 +6264,6 @@ msgid "A XOR B"
 msgstr "A XOR B"
 
 #: activities/digital_electricity/components/Zero.qml:20
-#, fuzzy
-#| msgctxt "Zero|"
-#| msgid ""
-#| "Digital circuits work with only two states: 0 and 1. This allows to "
-#| "operate mathematical operations such as additions, subtractions... It is "
-#| "the basics of computer technics. In reality, 0 is often the "
-#| "representation of a voltage nearly equal to ground voltage and 1 is the "
-#| "representation of the supply voltage of a circuit."
 msgctxt "Zero|"
 msgid ""
 "Digital circuits work with only two states: 0 and 1. It is the basics of "
@@ -6426,19 +6271,18 @@ msgid ""
 "nearly equal to ground voltage and 1 is the representation of the supply "
 "voltage of a circuit."
 msgstr ""
-"Electronica digitală lucrează doar cu două stări: 0 și 1. Acest lucru "
-"permite aplicarea de operații matematice, cum ar fi adunări, scăderi, etc. "
-"Ea stă la baza funcționării calculatoarelor. În realitate, 0 este cel mai "
-"adesea reprezentarea tensiunii electrice aproape egală cu tensiunea nulă (de "
-"pământare), iar 1 este reprezentarea tensiunii sursei de alimentare a "
-"circuitului electric."
+"Circuitele electrice digitale lucrează doar cu două stări: 0 și 1. Aceasta "
+"este baza tehnicii de lucru a computerelor. În realitate, 0 este deseori "
+"reprezentarea tensiunii electrice aproape egală cu tensiunea de pământare, "
+"iar 1 este reprezentarea tensiunii sursei de alimentare a circuitului "
+"electric."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Intrare"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Ieșire"
@@ -6880,13 +6724,9 @@ msgstr "Unește punctele pentru a desena litere."
 
 #. Help goal
 #: activities/drawletters/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw letters in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw letters in a fun way."
-msgstr ""
-"Copiii să învețe într-un mod amuzant cum să deseneze diferitele litere."
+msgstr "Învață cum să desenezi litere într-un mod amuzant."
 
 #. Help manual
 #: activities/drawletters/ActivityInfo.qml:23
@@ -6896,6 +6736,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Desenează literele conectând punctele în ordinea corectă. Poți face clic și "
+"glisa dintr-un punct la următoarele puncte, sau să faci clic pe fiecare "
+"punct, unul după altul."
 
 #. Activity title
 #: activities/drawnumbers/ActivityInfo.qml:15
@@ -6911,12 +6754,9 @@ msgstr "Unește șirul de puncte pentru a desena cifrele de la 0 la 9."
 
 #. Help goal
 #: activities/drawnumbers/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning how to draw numbers in a funny way."
 msgctxt "ActivityInfo|"
 msgid "Learn how to draw numbers in a fun way."
-msgstr "Copiii să învețe într-un mod amuzant cum să deseneze diferitele cifre."
+msgstr "Să înveți să desenezi numere într-un mod amuzant."
 
 #. Help manual
 #: activities/drawnumbers/ActivityInfo.qml:23
@@ -6926,6 +6766,9 @@ msgid ""
 "and drag from one point to the next ones, or click on each point one after "
 "the other."
 msgstr ""
+"Desenează numerele conectând punctele în ordinea corectă. Poți face clic și "
+"glisa dintr-un punct la următoarele, sau să faci clic pe fiecare punct, unul "
+"după altul."
 
 #. Activity title
 #: activities/enumerate/ActivityInfo.qml:15
@@ -6941,12 +6784,9 @@ msgstr "Plasează elementele în cea mai bună poziție pentru a le număra."
 
 #. Help goal
 #: activities/enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice subtraction equality."
 msgctxt "ActivityInfo|"
 msgid "Practice counting small quantities."
-msgstr "Exersează operația de scădere cu un rezultat fix."
+msgstr "Exersarea număratului micilor cantități."
 
 #. Help prerequisite
 #: activities/enumerate/ActivityInfo.qml:22
@@ -7078,27 +6918,19 @@ msgstr "Mișcă mausul sau atinge ecranul"
 
 #. Help title
 #: activities/erase/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move the mouse or touch the screen to erase the area and discover the "
-#| "background."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move the mouse or touch the screen to erase the blocks and discover the "
 "hidden picture."
 msgstr ""
-"Mișcă mausul sau atinge ecranul, pentru a șterge suprafața și a descoperi "
-"astfel fundalul."
+"Mișcă mausul sau atinge ecranul pentru a șterge blocurile și a descoperi "
+"imaginea ascunsă."
 
 #. Help goal
 #: activities/erase/ActivityInfo.qml:20
 #: activities/erase_2clic/ActivityInfo.qml:20
 #: activities/erase_clic/ActivityInfo.qml:20
 #: activities/penalty/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Fine motor coordination."
 msgctxt "ActivityInfo|"
 msgid "Develop motor coordination skills."
 msgstr "Dezvoltarea motricității fine."
@@ -7119,18 +6951,13 @@ msgstr "Dublu clic cu mausul sau bătaie dublă cu degetul pe ecran."
 
 #. Help title
 #: activities/erase_2clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Double tap or double click to erase the area and discover the background "
-#| "image."
 msgctxt "ActivityInfo|"
 msgid ""
 "Double tap or double click to erase the blocks and discover the hidden "
 "picture."
 msgstr ""
-"Fă dublu clic cu degetul sau cu mausul, pentru a șterge suprafața, "
-"descoperind imaginea de fundal."
+"Fă dublu clic cu degetul sau cu mausul, pentru a șterge blocurile și a "
+"descoperi imaginea ascunsă."
 
 #. Help manual
 #: activities/erase_2clic/ActivityInfo.qml:24
@@ -7148,14 +6975,11 @@ msgstr "Clic cu mausul sau bătaie cu degetul pe ecran"
 
 #. Help title
 #: activities/erase_clic/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click or tap to erase the area and discover the background."
 msgctxt "ActivityInfo|"
 msgid "Click or tap to erase the blocks and discover the hidden picture."
 msgstr ""
-"Fă clic cu mausul sau cu degetul, pentru a șterge suprafața și a descoperi "
-"fundalul."
+"Fă clic cu mausul sau cu degetul, pentru a șterge blocurile și a descoperi "
+"imaginea ascunsă."
 
 #. Help manual
 #: activities/erase_clic/ActivityInfo.qml:24
@@ -9408,12 +9232,9 @@ msgstr "Indică rudele"
 
 #. Help title
 #: activities/family_find_relative/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Select two people which have the given relationship."
-msgstr "Să selectezi toate cuvintele care conțin litera dată."
+msgstr "Selectează doi oameni care au relația de rudenie dată."
 
 #. Help prerequisite
 #: activities/family_find_relative/ActivityInfo.qml:22
@@ -9423,13 +9244,6 @@ msgstr "Să poți citi, să poți mișca mausul și să faci clic cu el."
 
 #. Help manual
 #: activities/family_find_relative/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A family tree is shown, with some instructions.\n"
-#| "The circles are linked with lines to mark the relations. Married couples "
-#| "are marked with a ring on the link.\n"
-#| "Click on a pair of family members which corresponds to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "A family tree is shown, with some instructions.\n"
@@ -9460,7 +9274,7 @@ msgstr "Mișcă fiecare element pentru a recrea imaginea."
 #: activities/traffic/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation and spatial visualization skills."
-msgstr ""
+msgstr "Să dezvolți abilități de anticipare și vedere în spațiu."
 
 #. Help manual
 #: activities/fifteen/ActivityInfo.qml:23
@@ -9689,7 +9503,7 @@ msgstr "Șutează mingea în poartă."
 #: activities/football/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Understand direction and speed."
-msgstr ""
+msgstr "Să înțelegi direcția și viteza."
 
 #. Help manual
 #: activities/football/ActivityInfo.qml:23
@@ -9700,6 +9514,10 @@ msgid ""
 "follow its direction. You score a goal when the ball reaches the other edge "
 "of the field."
 msgstr ""
+"Apasă mingea și gliseaz-o în spate, pentru a stabili direcția de ochire. Cu "
+"cât este mai lungă linia de ochire, cu atât mai puternic va fi șutul. Când "
+"dai drumul liniei, mingea va urma acea direcție. Înscrii un gol când mingea "
+"atinge celălalt capăt al terenului."
 
 #. Activity title
 #: activities/fractions_create/ActivityInfo.qml:14
@@ -9709,34 +9527,25 @@ msgstr "Creează fracțiile"
 
 #. Help title
 #: activities/fractions_create/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid "Select the appropriate number of parts to represent the given fraction."
-msgstr "Selectează numărul potrivit de părți, conform instrucțiunilor."
+msgstr "Selectează numărul potrivit de părți pentru a reprezenta fracția dată."
 
 #. Help goal
 #: activities/fractions_create/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to represent a quantity of objects."
 msgctxt "ActivityInfo|"
 msgid "Learn to represent a given fraction of a shape."
-msgstr "Învață să reprezinți o cantitate de obiecte."
+msgstr "Învață să reprezinți o fracție dată a unei forme."
 
 #. Help manual
 #: activities/fractions_create/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Select the appropriate number of parts as described in the instructions."
 msgctxt "ActivityInfo|"
 msgid ""
 "A shape split in equal parts is displayed. Select the appropriate number of "
 "parts to represent the given fraction."
-msgstr "Selectează numărul potrivit de părți, conform instrucțiunilor."
+msgstr ""
+"Se dă o formă împărțită în părți egale. Selectează numărul corect de părți "
+"pentru a reprezenta fracția dată."
 
 #: activities/fractions_create/fractions_create.js:78
 msgctxt "fractions_create|"
@@ -10071,13 +9880,11 @@ msgstr "Află numărătorul și numitorul corect al fracției reprezentate."
 
 #. Help goal
 #: activities/fractions_find/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to write a fraction corresponding to a given fractional representation."
-msgstr "Fă clic pe perechea care corespunde relației date."
+msgstr ""
+"Învață să scrii fracția corespunzătoare unei reprezentări fracționale date."
 
 #. Help manual
 #: activities/fractions_find/ActivityInfo.qml:22
@@ -10088,6 +9895,10 @@ msgid ""
 "denominator. Then count the number of selected parts, and set it as the "
 "numerator."
 msgstr ""
+"Scrie fracția corespunzătoare reprezentării fracționale: numără prima dată "
+"numărul total de părți al formei reprezentate, pentru a stabili numitorul "
+"fracției. Numără apoi numărul de părți selectate pentru a stabili "
+"numărătorul fracției."
 
 #: activities/fractions_find/resource/1/Data.qml:19
 msgctxt "Data|"
@@ -10289,46 +10100,31 @@ msgstr ""
 "aceleași culori/simboluri."
 
 #: activities/frieze/resource/7/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy this frieze: patterns between 12 and 15, any combination of shapes, "
 "colors/signs and sizes."
 msgstr ""
-"Copiază și completează această friză: modelele dintre 4 și 7, orice "
+"Copiază și completează această friză: modelele dintre 12 și 15, orice  "
 "combinație de forme, culori/simboluri și mărimi."
 
 #: activities/frieze/resource/8/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 4 and 7, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 10 and 12, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Copiază și completează această friză: modelele dintre 4 și 7, orice "
+"Copiază și completează această friză: modelele dintre 10 și 12, orice "
 "combinație de forme, culori/simboluri și mărimi."
 
 #: activities/frieze/resource/9/Data.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid ""
-#| "Copy and complete this frieze: patterns between 6 and 8, any combination "
-#| "of shapes, colors/signs and sizes."
 msgctxt "Data|"
 msgid ""
 "Copy and complete this frieze: patterns between 16 and 20, any combination "
 "of shapes, colors/signs and sizes."
 msgstr ""
-"Copiază și completează această friză: modele între 6 și 8, orice combinație "
-"de forme, culori/simboluri și mărimi."
+"Copiază și completează această friză: modelele între 16 și 20, orice "
+"combinație de forme, culori/simboluri și mărimi."
 
 #. Activity title
 #: activities/geo-country/ActivityInfo.qml:19
@@ -10338,31 +10134,23 @@ msgstr "Localizează regiunea"
 
 #. Help title
 #: activities/geo-country/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Drag and Drop the regions to complete the country maps."
 msgctxt "ActivityInfo|"
 msgid "Place the regions on the country maps."
-msgstr "Trage și plasează regiunile componente pentru a completai harta țării."
+msgstr "Plasează regiunile pe hărțile țării."
 
 #. Help goal
 #: activities/geo-country/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid "Learn to locate and place the regions of countries."
-msgstr ""
+msgstr "Învață să localizezi și să plasezi regiunile țărilor."
 
 #. Help manual
 #: activities/geo-country/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the regions to their correct location to complete the map."
 msgstr ""
-"Trage și plasează la locul corect componentele hărții, pentru a o completa."
+"Trage și plasează regiunile la locul lor corect, pentru a completa harta."
 
 #: activities/geo-country/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -13144,12 +12932,9 @@ msgstr "Localizează țările"
 
 #. Help title
 #: activities/geography/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Place the TOOLS to the right and others to the left"
 msgctxt "ActivityInfo|"
 msgid "Place the continents and countries on the world map."
-msgstr "Plasează UNELTELE în dreapta și celelalte în stânga"
+msgstr "Plasează continentele și țările pe harta lumii."
 
 #. Help goal
 #: activities/geography/ActivityInfo.qml:24
@@ -13157,19 +12942,16 @@ msgctxt "ActivityInfo|"
 msgid ""
 "Learn to locate and place the continents and many countries on the world map."
 msgstr ""
+"Învață să localizezi și să plasezi continentele și multe țări pe harta lumii."
 
 #. Help manual
 #: activities/geography/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and drop the map pieces to their correct locations to complete the "
-#| "map."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop the map pieces to their correct location to complete the map."
 msgstr ""
-"Trage și plasează la locul corect componentele hărții, pentru a o completa."
+"Trage și plasează bucățile hărții la locul lor corect, pentru a completa "
+"harta."
 
 #: activities/geography/resource/board/board10_0.qml:15
 msgctxt "board10_0|"
@@ -14289,16 +14071,14 @@ msgstr "Tastează literele căzătoare înainte ca ele să atingă pământul."
 #: activities/gletters/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Match letters on the keyboard with letters on the screen."
-msgstr ""
+msgstr "Apasă literele de pe tastatură care apar pe ecran."
 
 #. Help manual
 #: activities/gletters/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the falling letters before they reach the ground."
 msgctxt "ActivityInfo|"
 msgid "Type the falling letters on the keyboard before they reach the ground."
-msgstr "Tastează literele căzătoare înainte ca ele să atingă pământul."
+msgstr ""
+"Tastează literele căzătoare pe tastatură, înainte ca ele să atingă pământul."
 
 #. Activity title
 #: activities/gnumch-equality/ActivityInfo.qml:15
@@ -15019,6 +14799,8 @@ msgid ""
 "Develop your sense of strategy, learn to distinguish colors and memorize "
 "relative positions."
 msgstr ""
+"Să-ți dezvolți simțul strategiei, să înveți să distingi culorile și să "
+"memorizezi pozițiile relative."
 
 #. Help prerequisite
 #: activities/graph-coloring/ActivityInfo.qml:22
@@ -15159,11 +14941,6 @@ msgstr "Învață să calculezi folosind cei patru patru operatori."
 
 #. Help prerequisite
 #: activities/guess24/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Being able to calculate using additions, subtractions, multiplications "
-#| "and divisions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Being able to calculate using addition, subtraction, multiplication and "
@@ -15264,16 +15041,13 @@ msgstr "Socoteli"
 #: activities/guesscount/ActivityInfo.qml:21
 msgctxt "ActivityInfo|"
 msgid "Find the operations to get the required result."
-msgstr ""
+msgstr "Găsește operațiile pentru a obține rezultatul cerut."
 
 #. Help goal
 #: activities/guesscount/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice decomposed calculation."
-msgstr "Exersarea înmulțirilor."
+msgstr "Exersarea calculării descompuse."
 
 #. Help prerequisite
 #: activities/guesscount/ActivityInfo.qml:26
@@ -15283,18 +15057,13 @@ msgstr "Buna cunoaștere a operațiilor aritmetice."
 
 #. Help manual
 #: activities/guesscount/ActivityInfo.qml:28
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag the appropriate numbers and the operators to the boxes to obtain the "
-#| "number to guess in the instruction."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag the numbers and operators to the boxes to obtain the number given in "
 "the instructions."
 msgstr ""
-"Glisează în căsuțe numerele și operațiile potrivite pentru a obține numărul "
-"care trebuie ghicit."
+"Glisează numerele și operatorii în căsuțe, pentru a obține numărul dat în "
+"instrucțiuni."
 
 #: activities/guesscount/Admin.qml:33
 #, qt-format
@@ -15361,12 +15130,9 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Ajută-l pe Tux să scape din peșteră, găsind numărul ascuns."
 
 #: activities/guessnumber/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
-msgstr "Exersează adunarea numerelor."
+msgstr "Exersează compararea numerelor."
 
 #. Help manual
 #: activities/guessnumber/ActivityInfo.qml:23
@@ -15470,7 +15236,7 @@ msgstr "Ghicește literele unui cuvânt dat."
 #: activities/hangman/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Improve your spelling and vocabulary."
-msgstr ""
+msgstr "Îmbunătățește-ți ortografia și vocabularul."
 
 #. Help manual
 #: activities/hangman/ActivityInfo.qml:23
@@ -15541,34 +15307,26 @@ msgstr "Turnul din Hanoi simplificat"
 
 #. Help title
 #: activities/hanoi/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Copy the tower on the right-hand side onto the empty peg."
-msgstr "Refă turnul din partea dreaptă în spațiul disponibil din stânga."
+msgstr "Copiază turnul din partea dreaptă pe suportul gol."
 
 #. Help goal
 #: activities/hanoi/ActivityInfo.qml:20
 #: activities/hanoi_real/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking."
-msgstr ""
+msgstr "Dezvoltarea gândirii strategice."
 
 #. Help manual
 #: activities/hanoi/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Drag and Drop one top piece at a time, from one tower to another, to "
-#| "reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Drag and drop one top disc at a time, from one tower to another, to "
 "reproduce the tower on the right-hand side onto the empty peg."
 msgstr ""
-"Glisează pe rând câte o piesă din vârf, de pe un suport pe celălalt, pentru "
-"a reconstrui turnul din partea dreaptă în spațiul disponibil din stânga."
+"Glisează pe rând câte un disc din vârf, de pe un suport pe celălalt, pentru "
+"a reproduce turnul din partea dreaptă pe suportul gol."
 
 #: activities/hanoi/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -15583,12 +15341,9 @@ msgstr "Turnul din Hanoi"
 
 #. Help title
 #: activities/hanoi_real/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Move the tower to the right side."
 msgctxt "ActivityInfo|"
 msgid "Move the tower from the left-hand side onto the right-side peg."
-msgstr "Reconstruiește turnul în partea dreaptă."
+msgstr "Mută turnul din partea stângă pe suportul din dreapta."
 
 #. Help manual
 #: activities/hanoi_real/ActivityInfo.qml:23
@@ -15600,6 +15355,10 @@ msgid ""
 "one disc can be moved at a time, and a disc can never be placed on a smaller "
 "disc."
 msgstr ""
+"Glisează și plasează câte un disc din vârf, de pe un turn pe altul, pentru a "
+"reproduce turnul din partea stângă pe suportul din dreapta. Discurile pot fi "
+"mutate de pe un suport pe celălalt, respectând două reguli: se poate muta "
+"doar un disc odată, și un disc nu poate fi pus pe altul mai mic."
 
 #: activities/hanoi_real/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
@@ -15676,12 +15435,9 @@ msgstr "Glisează și așează fiecare imagine peste numele ei."
 
 #. Help goal
 #: activities/imagename/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Enrich your vocabulary"
 msgctxt "ActivityInfo|"
 msgid "Enrich your vocabulary and practice reading."
-msgstr "Îmbogățește-ți vocabularul"
+msgstr "Îmbogățește-ți vocabularul și exersează cititul."
 
 #. Help prerequisite
 #: activities/imagename/ActivityInfo.qml:25 activities/lang/ActivityInfo.qml:28
@@ -16503,30 +16259,21 @@ msgstr "transport"
 
 #. Activity title
 #: activities/learn_additions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions"
 msgctxt "ActivityInfo|"
 msgid "Learn addition"
 msgstr "Învață adunarea"
 
 #. Help title
 #: activities/learn_additions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with small numbers."
 msgstr "Învață adunarea numerelor mici."
 
 #. Help goal
 #: activities/learn_additions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn addition by adding quantities."
-msgstr "Învață adunările numărând rezultatul lor."
+msgstr "Învață adunările adunând cantități."
 
 #. Help manual
 #: activities/learn_additions/ActivityInfo.qml:23
@@ -16564,32 +16311,23 @@ msgstr "Adunările cu 1, 2, 3 și 4."
 #: activities/learn_decimals/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Learn decimal numbers"
-msgstr "Învățarea fracțiilor zecimale."
+msgstr "Învățarea fracțiilor zecimale"
 
 #. Help title
 #: activities/learn_decimals/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Represent the given decimal numbers."
-msgstr "Învățarea fracțiilor zecimale."
+msgstr "Reprezentarea fracțiilor zecimale date."
 
 #. Help goal
 #: activities/learn_decimals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Associate the decimal form of a number with its graphic representation."
 msgstr ""
+"Asociază numărul sub formă de fracție zecimală cu reprezentarea lui grafică."
 
 #. Help manual
 #: activities/learn_decimals/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A decimal number is displayed. Drag the arrow to select a part of the "
-#| "bar, and drag the selected part of the bar to the empty area. Repeat "
-#| "these steps until the number of dropped bars corresponds to the displayed "
-#| "decimal number. Then click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A decimal number is displayed. Drag the arrow to select a part of the unit "
@@ -16598,9 +16336,9 @@ msgid ""
 "number. Then click on the OK button to validate your answer."
 msgstr ""
 "Se afișează o fracție zecimală. Trage săgeata pentru a selecta o parte a "
-"barei, și trage partea selectată a barei în suprafața goală. Repetă acești "
-"pași până când numărul de bare trase corespunde cu numărul zecimal afișat. "
-"Fă apoi clic pe butonul OK pentru a-ți valida răspunsul."
+"barei unității, și trage partea selectată a barei în suprafața goală. Repetă "
+"acești  pași până când numărul de bare trase corespunde cu numărul zecimal "
+"afișat. Fă apoi clic pe butonul OK pentru a-ți valida răspunsul."
 
 #: activities/learn_decimals/learn_decimals.js:33
 msgctxt "learn_decimals|"
@@ -16740,47 +16478,28 @@ msgstr "Între 1 și 5."
 
 #. Activity title
 #: activities/learn_decimals_additions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Addition with decimal numbers"
-msgstr "Adunări cu fracții zecimale"
+msgstr "Adunarea fracțiilor zecimale"
 
 #. Help title
 #: activities/learn_decimals_additions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn addition with decimal numbers."
-msgstr "Învață adunările cu fracții zecimale."
+msgstr "Învață adunarea fracțiilor zecimale."
 
 #. Help goal
 #: activities/learn_decimals_additions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn additions with decimal numbers by counting how many squares are "
-#| "needed to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn addition with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Învață adunări cu fracții zecimale numărând câte pătrate sunt necesare "
-"pentru a reprezenta rezultatul."
+"Învață adunarea fracțiilor zecimale prin manipularea reprezentării lor "
+"vizuale."
 
 #. Help manual
 #: activities/learn_decimals_additions/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "An addition with two decimal numbers is displayed. Drag the arrow to "
-#| "select a part of the bar, and drag the selected part of the bar to the "
-#| "empty area. Repeat these steps until the number of dropped bars "
-#| "corresponds to the result of the addition, and click on the OK button to "
-#| "validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "An addition with two decimal numbers is displayed. Drag the arrow to select "
@@ -16789,8 +16508,8 @@ msgid ""
 "result of the addition, and click on the OK button to validate your answer."
 msgstr ""
 "Se afișează adunarea a două fracții zecimale. Trage săgeata pentru a selecta "
-"o parte a barei, și trage partea selectată a barei în zona goală. Repetă "
-"acești pași până când numărul de bare trase corespunde cu rezultatul "
+"o parte a barei unității, și trage partea selectată a barei în zona goală. "
+"Repetă acești pași până când numărul de bare trase corespunde cu rezultatul "
 "adunării, și fă clic pe butonul OK pentru a-ți valida răspunsul."
 
 #: activities/learn_decimals_additions/ActivityInfo.qml:23
@@ -16826,36 +16545,25 @@ msgstr "Adună fracții zecimale până la 5."
 
 #. Activity title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions with decimal numbers"
 msgctxt "ActivityInfo|"
 msgid "Subtraction with decimal numbers"
-msgstr "Scăderi cu fracții zecimale"
+msgstr "Scăderea fracțiilor zecimale"
 
 #. Help title
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with decimal numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with decimal numbers."
-msgstr "Învață scăderile cu fracții zecimale."
+msgstr "Învață scăderea fracțiilor zecimale."
 
 #. Help goal
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn subtractions with decimal numbers by counting how many squares need "
-#| "to be subtracted to represent the result."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn subtraction with decimal numbers by manipulating their visual "
 "representation."
 msgstr ""
-"Învață scăderi cu fracții zecimale numărând câte pătrate trebuiesc scăzute "
-"pentru a reprezenta rezultatul."
+"Învață scăderea fracțiilor zecimale prin manipularea reprezentării lor "
+"vizuale."
 
 #. Help manual
 #: activities/learn_decimals_subtractions/ActivityInfo.qml:22
@@ -16922,38 +16630,29 @@ msgstr "Învață cifrele"
 
 #. Help title
 #: activities/learn_digits/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Click on a pair corresponding to the given relation."
 msgctxt "ActivityInfo|"
 msgid "Represent the number corresponding to the given digit."
-msgstr "Fă clic pe perechea care corespunde relației date."
+msgstr "Reprezintă numărul corespunzător cifrei date."
 
 #. Help goal
 #: activities/learn_digits/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Compare the numbers and choose the corresponding sign."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the numbers represented by a single digit and the corresponding "
 "quantities."
-msgstr "Compară numerele și alege semnul corespunzător."
+msgstr ""
+"Învață numerele reprezentate cu o singură cifră și cantitățile "
+"corespunzătoare."
 
 #. Help manual
 #: activities/learn_digits/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "A digit is displayed on the screen. Fill the corresponding number of "
-#| "circles and validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "A digit is displayed on the screen. Fill the number of circles corresponding "
 "to the number represented by the digit and validate your answer."
 msgstr ""
-"Se afișează o cifră pe ecran. Completează numărul corespunzător de cercuri "
-"și validează-ți răspunsul."
+"Se afișează o cifră pe ecran. Completează numărul de cercuri corespunzător "
+"numărului reprezentat de cifră și validează-ți răspunsul."
 
 #: activities/learn_digits/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
@@ -17073,30 +16772,21 @@ msgstr "Între 20 și 50."
 
 #. Activity title
 #: activities/learn_subtractions/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions"
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction"
-msgstr "Învățarea scăderilor"
+msgstr "Învață scăderea"
 
 #. Help title
 #: activities/learn_subtractions/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions with small numbers."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction with small numbers."
-msgstr "Învață scăderile cu numere mici."
+msgstr "Învață scăderea cu numere mici."
 
 #. Help goal
 #: activities/learn_subtractions/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions by counting their result."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction by counting their result."
-msgstr "Învață scăderile numărând rezultatul lor."
+msgstr "Învață scăderea numărând rezultatul ei."
 
 #. Help manual
 #: activities/learn_subtractions/ActivityInfo.qml:23
@@ -17256,18 +16946,15 @@ msgstr "În ce cuvinte apare litera?"
 
 #. Help title
 #: activities/letter-in-word/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Select all the words which contain the given letter."
 msgctxt "ActivityInfo|"
 msgid "Find the words with the given letter."
-msgstr "Să selectezi toate cuvintele care conțin litera dată."
+msgstr "Găsește cuvintele care conțin litera dată."
 
 #. Help goal
 #: activities/letter-in-word/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Train to find a given letter in words."
-msgstr ""
+msgstr "Să te antrenezi să găsești o literă dată în niște cuvinte."
 
 #. Help prerequisite
 #: activities/letter-in-word/ActivityInfo.qml:22
@@ -17317,18 +17004,16 @@ msgstr "Stinge luminile"
 
 #. Help title
 #: activities/lightsoff/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The goal is to turn off all the lights."
 msgctxt "ActivityInfo|"
 msgid "Turn off all the lights."
-msgstr "Scopul este de a stinge toate luminile."
+msgstr "Stinge toate luminile."
 
 #. Help goal
 #: activities/lightsoff/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop anticipation, strategy and spatial visualization skills."
 msgstr ""
+"Să-ți dezvolți abilitățile de anticipare, strategie și vedere în spațiu."
 
 #. Help manual
 #: activities/lightsoff/ActivityInfo.qml:23
@@ -17410,6 +17095,8 @@ msgid ""
 "Read about some key events in the life of the braille system inventor, and "
 "remember their chronological order."
 msgstr ""
+"Citește despre câteva evenimente cheie din viața inventatorului sistemului "
+"Braille, și amintește-ți ordinea lor cronologică."
 
 #. Help goal
 #: activities/louis-braille/ActivityInfo.qml:20
@@ -17418,6 +17105,8 @@ msgid ""
 "Remember the order of an event sequence. Learn about the life of Louis "
 "Braille."
 msgstr ""
+"Ține minte ordinea secvenței unui eveniment. Învață despre viața lui Louis "
+"Braille."
 
 #. Help manual
 #: activities/louis-braille/ActivityInfo.qml:23
@@ -17557,23 +17246,17 @@ msgstr "Calculează câte steluțe se află sub pălăria magică."
 
 #. Help goal
 #: activities/magic-hat-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn subtractions."
 msgctxt "ActivityInfo|"
 msgid "Learn subtraction."
-msgstr "Învață scăderile."
+msgstr "Învață scăderea."
 
 #. Help prerequisite
 #: activities/magic-hat-minus/ActivityInfo.qml:22
 #: activities/memory-math-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Subtractions."
 msgctxt "ActivityInfo|"
 msgid "Subtraction."
-msgstr "Scăderi."
+msgstr "Scăderea."
 
 #. Help manual
 #: activities/magic-hat-minus/ActivityInfo.qml:24
@@ -17651,23 +17334,17 @@ msgstr "Numără câte steluțe se află sub pălăria magică."
 
 #. Help goal
 #: activities/magic-hat-plus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn additions."
 msgctxt "ActivityInfo|"
 msgid "Learn addition."
-msgstr "Învață adunările."
+msgstr "Învață adunarea."
 
 #. Help prerequisite
 #: activities/magic-hat-plus/ActivityInfo.qml:22
 #: activities/memory-math-add-tux/ActivityInfo.qml:22
 #: activities/memory-math-add/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions."
 msgctxt "ActivityInfo|"
 msgid "Addition."
-msgstr "Adunări."
+msgstr "Adunarea."
 
 #. Help manual
 #: activities/magic-hat-plus/ActivityInfo.qml:24
@@ -17742,6 +17419,7 @@ msgstr "Ajută-l pe Tux să iasă din acest labirint."
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization and pathfinding skills."
 msgstr ""
+"Dezvoltă-ți aptitudinile de vedere în spațiu și de urmărire a unui traseu."
 
 #. Help manual
 #: activities/maze/ActivityInfo.qml:23
@@ -17828,6 +17506,8 @@ msgstr "Ghidează-l pe Tux spre ieșirea din labirintul invizibil."
 msgctxt "ActivityInfo|"
 msgid "Develop spatial visualization, pathfinding and visual memory skills."
 msgstr ""
+"Dezvoltă-ți abilitățile de vizualizare, de urmărire a unui traseu și de "
+"memorie vizuală."
 
 #. Help manual
 #: activities/mazeinvisible/ActivityInfo.qml:23
@@ -17983,14 +17663,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-case-association-tux/ActivityInfo.qml:20
 #: activities/memory-case-association/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learning lowercase and uppercase letters, memory."
 msgctxt "ActivityInfo|"
 msgid "Learn lowercase and uppercase letters."
-msgstr ""
-"Învățarea literelor mici și mari ale alfabetului, dezvoltarea memoriei "
-"vizuale."
+msgstr "Învățarea literelor mici și mari."
 
 #. Help prerequisite
 #: activities/memory-case-association-tux/ActivityInfo.qml:22
@@ -18112,12 +17787,9 @@ msgstr "Întoarce cărțile pentru a potrivi numărul cu imaginea."
 
 #. Help goal
 #: activities/memory-enumerate/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice numeration."
-msgstr "Exersarea scăderilor."
+msgstr "Exersarea numerației."
 
 #. Help manual
 #: activities/memory-enumerate/ActivityInfo.qml:23
@@ -18187,9 +17859,6 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition, subtraction, multiplication, division."
 msgstr "Exersarea operațiilor de adunare, scădere, înmulțire și împărțire."
@@ -18197,12 +17866,9 @@ msgstr "Exersarea operațiilor de adunare, scădere, înmulțire și împărțir
 #. Help prerequisite
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions, subtractions, multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Addition, subtraction, multiplication, division."
-msgstr "Adunări, scăderi, înmulțiri, împărțiri."
+msgstr "Adunare, scădere, înmulțire, împărțire."
 
 #. Help manual
 #: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:24
@@ -18346,22 +18012,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-add-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition and subtraction."
-msgstr "Exersarea adunărilor și scăderilor."
+msgstr "Exersarea adunării și scăderii."
 
 #. Help prerequisite
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:22
 #: activities/memory-math-add-minus/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Additions and subtractions."
 msgctxt "ActivityInfo|"
 msgid "Addition and subtraction."
-msgstr "Adunări și scăderi."
+msgstr "Adunare și scădere."
 
 #. Help manual
 #: activities/memory-math-add-minus-tux/ActivityInfo.qml:24
@@ -18405,12 +18065,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-add-tux/ActivityInfo.qml:20
 #: activities/memory-math-add/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Practice addition."
-msgstr "Exersarea adunărilor."
+msgstr "Exersarea adunării."
 
 #. Help manual
 #: activities/memory-math-add-tux/ActivityInfo.qml:24
@@ -18513,21 +18170,15 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice division."
-msgstr "Exersarea împărțirilor."
+msgstr "Exersarea împărțirii."
 
 #. Help prerequisite
 #: activities/memory-math-div-tux/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions."
 msgctxt "ActivityInfo|"
 msgid "Division."
-msgstr "Împărțiri."
+msgstr "Împărțirea."
 
 #. Help manual
 #: activities/memory-math-div-tux/ActivityInfo.qml:24
@@ -18614,12 +18265,9 @@ msgstr "Întoarce cărțile și cuplează fiecare împărțire cu rezultatul ei.
 
 #. Help prerequisite
 #: activities/memory-math-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Divisions"
 msgctxt "ActivityInfo|"
 msgid "Division"
-msgstr "Împărțiri"
+msgstr "Împărțirea"
 
 #. Activity title
 #: activities/memory-math-minus-tux/ActivityInfo.qml:15
@@ -18639,12 +18287,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-minus-tux/ActivityInfo.qml:20
 #: activities/memory-math-minus/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Practice subtraction."
-msgstr "Exersarea scăderilor."
+msgstr "Exersarea scăderii."
 
 #. Help manual
 #: activities/memory-math-minus-tux/ActivityInfo.qml:24
@@ -18748,19 +18393,13 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult-div/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications and divisions."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication and division."
-msgstr "Exersarea înmulțirilor și împărțirilor."
+msgstr "Exersarea înmulțirii și împărțirii."
 
 #. Help prerequisite
 #: activities/memory-math-mult-div-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult-div/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications, divisions."
 msgctxt "ActivityInfo|"
 msgid "Multiplication, division."
 msgstr "Înmulțirea, împărțirea."
@@ -18810,22 +18449,16 @@ msgstr ""
 #. Help goal
 #: activities/memory-math-mult-tux/ActivityInfo.qml:20
 #: activities/memory-math-mult/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice multiplications."
 msgctxt "ActivityInfo|"
 msgid "Practice multiplication."
-msgstr "Exersarea înmulțirilor."
+msgstr "Exersarea înmulțirii."
 
 #. Help prerequisite
 #: activities/memory-math-mult-tux/ActivityInfo.qml:22
 #: activities/memory-math-mult/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Multiplications."
 msgctxt "ActivityInfo|"
 msgid "Multiplication."
-msgstr "Înmulțiri."
+msgstr "Înmulțirea."
 
 #. Help manual
 #: activities/memory-math-mult-tux/ActivityInfo.qml:24
@@ -18977,12 +18610,9 @@ msgstr ""
 #. Help goal
 #: activities/memory-tux/ActivityInfo.qml:20
 #: activities/memory/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Train your audio memory."
 msgctxt "ActivityInfo|"
 msgid "Train your visual memory."
-msgstr "Exersarea memoriei auditive."
+msgstr "Să-ți exersezi memoria vizuală."
 
 #. Help manual
 #: activities/memory-tux/ActivityInfo.qml:24
@@ -19018,12 +18648,9 @@ msgstr ""
 
 #. Help goal
 #: activities/memory-wordnumber/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice reading numbers."
-msgstr "Exersează adunarea numerelor."
+msgstr "Să exersezi citirea numerelor."
 
 #. Help manual
 #: activities/memory-wordnumber/ActivityInfo.qml:24
@@ -19544,14 +19171,13 @@ msgid "All lowercase"
 msgstr "Doar litere mici"
 
 #: activities/menu/Menu.qml:90
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the corresponding sound files now?"
 msgctxt "Menu|"
 msgid ""
 "You selected a new locale, do you want to download the corresponding sound "
 "files now?"
-msgstr "Dorești să descarci acum fișierele corespunzătoare de sunet?"
+msgstr ""
+"Ai selectat o nouă localizare, dorești să descarci acum fișierele "
+"corespunzătoare de sunet?"
 
 #: activities/menu/Menu.qml:91
 msgctxt "Menu|"
@@ -19799,12 +19425,9 @@ msgstr "Găsește litera lipsă pentru a completa cuvântul."
 
 #. Help goal
 #: activities/missing-letter/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn to spell words."
-msgstr "Învață ordinea alfabetică."
+msgstr "Să înveți să scrii corect cuvinte."
 
 #. Help prerequisite
 #: activities/missing-letter/ActivityInfo.qml:23
@@ -19863,12 +19486,9 @@ msgstr "Exersează folosirea banilor."
 #. Help goal
 #: activities/money/ActivityInfo.qml:20
 #: activities/money_back/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage."
-msgstr "Exersează folosirea banilor."
+msgstr "Să exersezi numărarea și folosirea banilor."
 
 #. Help prerequisite
 #: activities/money/ActivityInfo.qml:22
@@ -19967,20 +19587,15 @@ msgstr "Exersează folosirea banilor, dându-i rest lui Tux."
 #. Help manual
 #: activities/money_back/ActivityInfo.qml:24
 #: activities/money_back_cents/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the coins or on the notes at the bottom of the screen to pay. If "
-#| "you want to remove a coin or a note, click on it on the upper screen area."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the coins or on the notes at the bottom of the screen to give Tux "
 "his change. If you want to remove a coin or a note, click on it on the upper "
 "area of the screen."
 msgstr ""
-"Fă clic pe monede sau pe bancnote în partea de jos a ecranului, pentru a "
-"plăti. Dacă vrei să elimini o monedă sau o bancnotă, fă clic în partea de "
-"sus a ecranului."
+"Fă clic pe monede sau pe bancnote în partea de jos a ecranului, pentru a-i "
+"da restul lui Tux. Dacă vrei să elimini o monedă sau o bancnotă, fă clic pe "
+"ea în partea de sus a ecranului."
 
 #. Activity title
 #: activities/money_back_cents/ActivityInfo.qml:15
@@ -19991,12 +19606,9 @@ msgstr "Dă-i restul lui Tux, inclusiv cenți (bani, nu lei)"
 #. Help goal
 #: activities/money_back_cents/ActivityInfo.qml:20
 #: activities/money_cents/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice money usage including cents."
 msgctxt "ActivityInfo|"
 msgid "Practice counting and money usage, including cents."
-msgstr "Exersează folosirea banilor, inclusiv cenții."
+msgstr "Să exersezi numărarea și folosirea banilor, inclusiv cenții."
 
 #. Activity title
 #: activities/money_cents/ActivityInfo.qml:15
@@ -20029,26 +19641,18 @@ msgstr "Descoperă Codul Internațional Morse"
 
 #. Help title
 #: activities/morse_code/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn how to communicate with the International Morse code."
 msgctxt "ActivityInfo|"
 msgid "Communicate with the International Morse code."
 msgstr "Învață cum să comunici cu Codul Internațional Morse."
 
 #. Help goal
 #: activities/morse_code/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You have to send and receive letters and digits in International Morse "
-#| "code."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn how to send and receive messages using the International Morse code."
 msgstr ""
-"Trebuie să trimiți și să primești litere și cifre în Codul Internațional "
-"Morse."
+"Să înveți cum să trimiți și să recepționezi mesaje folosind Codul "
+"Internațional Morse."
 
 #. Help prerequisite
 #: activities/morse_code/ActivityInfo.qml:25
@@ -20058,13 +19662,6 @@ msgstr "Cunoașterea literelor și a cifrelor."
 
 #. Help manual
 #: activities/morse_code/ActivityInfo.qml:27
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "You are either asked to send a message in Morse code or convert the "
-#| "received Morse code message to letters or digits. To learn the Morse "
-#| "code, you can have a look at the translation map which contains the code "
-#| "for all the letters and digits."
 msgctxt "ActivityInfo|"
 msgid ""
 "You are either asked to send a message in Morse code or convert the received "
@@ -20072,10 +19669,10 @@ msgid ""
 "on the Morse key icon to have a look at the translation map which contains "
 "the code for all the letters and digits."
 msgstr ""
-"Ți se cere să trimiți un mesaj în cod Morse sau să convertești  mesajul "
+"Ți se cere  fie să trimiți un mesaj în cod Morse fie să convertești  mesajul "
 "primit în cod Morse în litere sau cifre. Pentru a învăța codul Morse, poți "
-"arunca o privire pe harta traducerii, care conține codul pentru toate "
-"literele și cifrele."
+"face clic pe iconograma Morse, care îți va oferi o privire la hărții "
+"traducerii, care conține codul pentru toate literele și cifrele."
 
 #: activities/morse_code/FirstScreen.qml:25
 msgctxt "FirstScreen|"
@@ -20209,12 +19806,9 @@ msgstr "Pune fiecare articol în același loc ca în exemplul dat."
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "Exersarea aptitudinilor de citire."
+msgstr "Să-ți exersezi aptitudinile de observare și potrivire."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -20269,19 +19863,16 @@ msgstr "Moară (contra lui Tux)"
 
 #. Help title
 #: activities/nine_men_morris/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (against Tux)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris against Tux."
-msgstr "Moară (contra lui Tux)"
+msgstr "Joacă Moară contra lui Tux."
 
 #. Help goal
 #: activities/nine_men_morris/ActivityInfo.qml:20
 #: activities/nine_men_morris_2players/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop strategic and spatial visualization skills."
-msgstr ""
+msgstr "Să-ți dezvolți aptitudinile de strategie și de vedere în spațiu."
 
 #. Help manual
 #: activities/nine_men_morris/ActivityInfo.qml:23
@@ -20292,6 +19883,10 @@ msgid ""
 "any vacant spot. A player wins when the other player can't move any piece or "
 "has only 2 pieces left."
 msgstr ""
+"Joacă cu Tux. Prima dată plasați pe rând nouă piese, apoi mutați-vă pe rând "
+"piesele. Dacă ați rămas cu doar trei piese, le puteți face să „zboare” în "
+"orice loc vacant. Un jucător câștigă atunci când celălalt jucător nu-și "
+"poate muta nici o piesă, sau a rămas cu doar două piese."
 
 #: activities/nine_men_morris/nine_men_morris.js:29
 msgctxt "nine_men_morris|"
@@ -20387,12 +19982,9 @@ msgstr "Moară (doi jucători)"
 
 #. Help title
 #: activities/nine_men_morris_2players/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Nine men's morris (with a friend)"
 msgctxt "ActivityInfo|"
 msgid "Play the game Nine men's morris with a friend."
-msgstr "Moară (doi jucători)"
+msgstr "Joacă Moară cu un prieten."
 
 #. Help manual
 #: activities/nine_men_morris_2players/ActivityInfo.qml:23
@@ -20403,6 +19995,10 @@ msgid ""
 "fly to any vacant spot. A player wins when the other player can't move any "
 "piece or has only 2 pieces left."
 msgstr ""
+"Joacă cu un prieten. Prima dată plasați pe rând nouă piese, apoi mutați-vă "
+"pe rând piesele. Dacă ați rămas cu doar trei piese, le puteți face să "
+"„zboare” în orice loc vacant. Un jucător câștigă atunci când celălalt "
+"jucător nu-și poate muta nici o piesă, sau a rămas cu doar două piese."
 
 #. Activity title
 #: activities/note_names/ActivityInfo.qml:18
@@ -20428,15 +20024,13 @@ msgstr ""
 
 #. Help manual
 #: activities/note_names/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Identify the notes correctly and score 100% to complete a level."
 msgctxt "ActivityInfo|"
 msgid ""
 "Identify the notes, play them on the piano keyboard, and achieve a score of "
 "100% to complete the level."
 msgstr ""
-"Identifică notele corect și ia punctajul maxim pentru a completa un nivel."
+"Identifică notele, cântă-le pe tastatura pianului  și ia punctajul de 100% "
+"pentru a completa un nivel."
 
 #: activities/note_names/NoteNames.qml:176
 #, qt-format
@@ -20445,13 +20039,13 @@ msgid "New note: %1"
 msgstr "Notă nouă: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20460,12 +20054,12 @@ msgstr ""
 "Această activitate necesită sunet, așa că vor fi redate niște sunete, chiar "
 "dacă vocile audio sau efectele sunt dezactivate în configurația principală."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Ieși"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Continuă"
@@ -20500,32 +20094,25 @@ msgstr "Ordinea numerelor"
 msgctxt "ActivityInfo|"
 msgid ""
 "Select the numbers one after the other according to the numerical sequence."
-msgstr ""
+msgstr "Selectează numerele unul după altul, după secvența numerică."
 
 #. Help goal
 #: activities/number_sequence/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical sequence."
-msgstr "Să înveți circuitul apei în natură."
+msgstr "Să înveți ordinea numerelor."
 
 #. Help manual
 #: activities/number_sequence/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Draw the picture by clicking on each point in sequence. Each time a point "
-#| "is selected the next blue one appears."
 msgctxt "ActivityInfo|"
 msgid ""
 "Draw the picture by clicking on the points in the numerical sequence order. "
 "You can click and drag from one point to the next ones, or click on each "
 "point one after the other."
 msgstr ""
-"Desenează imaginea apăsând pe fiecare punct din secvență. De fiecare dată "
-"când se selectează un punct albastru, apare următorul."
+"Desenează imaginea apăsând pe puncte în ordine crescătoare. Poți face clic "
+"și glisa dintr-un punct în următoarele, sau să faci clic pe fiecare punct, "
+"unul după altul."
 
 #. Activity title
 #: activities/numbers-odd-even/ActivityInfo.qml:15
@@ -20543,18 +20130,10 @@ msgstr "Mută elicopterul pentru a prinde norii care au numere pare sau impare."
 #: activities/numbers-odd-even/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to recognize even and odd numbers and their numerical order."
-msgstr ""
+msgstr "Să înveți să recunoști numerele pare și impare, și ordinea lor."
 
 #. Help manual
 #: activities/numbers-odd-even/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Catch the clouds with an odd or even number, in the right order. With a "
-#| "keyboard, use the arrow keys to move the helicopter. With a pointing "
-#| "device, just click or tap on the target location. To know which number "
-#| "you have to catch you can either remember it or check the number on the "
-#| "bottom right corner."
 msgctxt "ActivityInfo|"
 msgid ""
 "Follow the instructions: catch the clouds with an odd or even number in the "
@@ -20563,27 +20142,21 @@ msgid ""
 "first levels, you can see which number you have to catch on the counter in "
 "the bottom right corner. On the later levels, you need to remember it."
 msgstr ""
-"Prinde norii cu numere pare sau impare, în ordinea corectă. Cu o tastatură "
-"folosește tastele săgeți pentru a mișca elicopterul. Cu un maus sau un ecran "
-"tactil, fă clic sau atinge scurt cu degetul locația–țintă. Pentru a ști ce "
-"număr trebuie să prinzi, poți fie să-l ții minte, fie să te uiți în colțul "
-"din dreapta jos."
+"Urmează instrucțiunile: prinde norii cu numere pare sau impare, în ordinea "
+"corectă. Cu o tastatură folosește tastele săgeți pentru a mișca elicopterul. "
+"Cu un maus sau un ecran tactil, fă clic sau bate scurt cu degetul locația–"
+"țintă. La primele nivele poți vedea ce număr trebuie să prinzi, în contorul "
+"din colțul din dreapta jos. La nivelele următoare, va trebui să-l ții minte."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:14
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the even number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the even numbers."
-msgstr "Alege numărul par:"
+msgstr "Prinde numerele pare."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:15
-#, fuzzy
-#| msgctxt "TutorialBase|"
-#| msgid "Choose the odd number:"
 msgctxt "NumbersOddEven|"
 msgid "Catch the odd numbers."
-msgstr "Alege numărul impar:"
+msgstr "Prinde numerele impare."
 
 #: activities/numbers-odd-even/NumbersOddEven.qml:42
 msgctxt "NumbersOddEven|"
@@ -20795,12 +20368,9 @@ msgstr "Aranjează evenimentele date în ordine cronologică."
 
 #. Help goal
 #: activities/ordering_chronology/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Arrange the given events in their chronological order."
 msgctxt "ActivityInfo|"
 msgid "Learn to order an event sequence in chronological order."
-msgstr "Aranjează evenimentele date în ordine cronologică."
+msgstr "Să înveți să ordonezi secvența unui eveniment în ordine cronologică."
 
 #. Help manual
 #: activities/ordering_chronology/ActivityInfo.qml:30
@@ -20844,12 +20414,9 @@ msgstr ""
 
 #. Help goal
 #: activities/ordering_numbers/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reading and ordering numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering numbers."
-msgstr "Să poți citi și ordona numere."
+msgstr "Să exersezi ordonarea numerelor."
 
 #. Help prerequisite
 #: activities/ordering_numbers/ActivityInfo.qml:27
@@ -20953,12 +20520,9 @@ msgstr "Aranjează cuvintele date pentru a forma o propoziție cu înțeles."
 
 #. Help goal
 #: activities/ordering_sentences/ActivityInfo.qml:25
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Order words to form meaningful sentences."
 msgctxt "ActivityInfo|"
 msgid "Practice ordering words to form a meaningful sentence."
-msgstr "Ordonează cuvintele pentru a forma propoziții cu înțeles."
+msgstr "Să exersezi ordonarea cuvintelor pentru a forma propoziții cu înțeles."
 
 #. Help manual
 #: activities/ordering_sentences/ActivityInfo.qml:29
@@ -21049,19 +20613,11 @@ msgstr "Joacă jocul de strategie Oware, contra lui Tux."
 #: activities/oware_2players/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
 msgid "Develop strategic thinking skills."
-msgstr ""
+msgstr "Să-ți dezvolți competențe de gândire strategică."
 
 #. Help manual
 #: activities/oware/ActivityInfo.qml:22
 #: activities/oware_2players/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "The game starts with four seeds in each house. The objective of the game "
-#| "is to capture more seeds than one's opponent. Since the game has only 48 "
-#| "seeds, capturing 25 is sufficient to win the game. Since there is an even "
-#| "number of seeds, it is possible for the game to end in a draw, where each "
-#| "player has captured 24."
 msgctxt "ActivityInfo|"
 msgid ""
 "The game starts with four seeds in each house. The objective of the game is "
@@ -21078,16 +20634,6 @@ msgstr ""
 
 #: activities/oware/ActivityInfo.qml:23
 #: activities/oware_2players/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Players take turns moving the seeds. On a turn, a player chooses one of "
-#| "the six houses under their control. The player removes all seeds from "
-#| "that house, and distributes them, dropping one in each house counter-"
-#| "clockwise from this house, in a process called sowing. Seeds are not "
-#| "distributed into the end scoring houses, nor into the house drawn from. "
-#| "The starting house is always left empty; if it contained 12 (or more) "
-#| "seeds, it is skipped, and the twelfth seed is placed in the next house."
 msgctxt "ActivityInfo|"
 msgid ""
 "Players take turns moving the seeds. On each turn, a player chooses one of "
@@ -21098,10 +20644,10 @@ msgid ""
 "empty; if it contained 12 (or more) seeds, it is skipped, and the twelfth "
 "seed is placed in the next house."
 msgstr ""
-"Jucătorii joacă pe rând, mutând boabele. Într-o tură, jucătorul alege una "
-"din cele 6 căsuțe aflate sub controlul lor. Jucătorul înlătură toate boabele "
-"din acea căsuță și le distribuie una câte una, în căsuțele situate în sens "
-"invers acelor de ceasornic față de căsuța lui, într-un proces numit "
+"Jucătorii joacă pe rând, mutând boabele. La fiecare tură, jucătorul alege "
+"una din cele șase căsuțe aflate sub controlul lor. Jucătorul înlătură toate "
+"boabele  din acea căsuță și le distribuie una câte una, în căsuțele situate "
+"în sens invers acelor de ceasornic față de căsuța lui, într-un proces numit "
 "plantare. Boabele nu se distribuie în căsuțele de scor de la capăt, și nici "
 "într-o căsuță din care deja s-au extras boabe. Căsuța de pornire se lasă "
 "întotdeauna goală; dacă ea conținea 12 (sau mai multe) boabe, se sare peste "
@@ -21329,21 +20875,19 @@ msgid ""
 "Develop skills in visualization and map reading, and learn to follow "
 "directions."
 msgstr ""
+"Să-ți dezvolți competențe în vizualizarea și citirea hărții, și să înveți să "
+"urmezi îndrumări."
 
 #. Help manual
 #: activities/path_decoding/ActivityInfo.qml:22
 #: activities/path_decoding_relative/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Click on the grid squares to move Tux following the given directions."
 msgctxt "ActivityInfo|"
 msgid ""
 "Click on the grid squares to move Tux to the target following the arrow "
 "directions."
 msgstr ""
-"Fă clic pe pătratele grilajului pentru a-l muta pe Tux, urmând "
-"instrucțiunile date."
+"Fă clic pe pătratele grilajului pentru a-l muta pe Tux la țintă, folosind "
+"direcțiile săgeților."
 
 #: activities/path_decoding/ActivityInfo.qml:23
 #: activities/path_encoding/ActivityInfo.qml:23
@@ -21377,12 +20921,9 @@ msgstr "Grilaje de %1x%2."
 
 #. Activity title
 #: activities/path_decoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path decoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path decoding"
-msgstr "Decodarea traseului"
+msgstr "Decodarea traseului relativ"
 
 #: activities/path_decoding_relative/ActivityInfo.qml:23
 #: activities/path_encoding_relative/ActivityInfo.qml:23
@@ -21443,12 +20984,9 @@ msgstr "Erori: %1"
 
 #. Activity title
 #: activities/path_encoding_relative/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Path encoding"
 msgctxt "ActivityInfo|"
 msgid "Relative path encoding"
-msgstr "Codarea traseului"
+msgstr "Codarea traseului relativ"
 
 #. Activity title
 #: activities/penalty/ActivityInfo.qml:15
@@ -21510,7 +21048,7 @@ msgstr "Găsește diferențele dintre cele două imagini."
 #: activities/photo_hunter/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Develop skills in perceiving details."
-msgstr ""
+msgstr "Să-ți dezvolți competențe în perceperea detaliilor."
 
 #. Help manual
 #: activities/photo_hunter/ActivityInfo.qml:23
@@ -22209,9 +21747,6 @@ msgstr "Si♭%1"
 
 #. Activity title
 #: activities/planegame/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers in order"
 msgctxt "ActivityInfo|"
 msgid "Numerical order"
 msgstr "Ordinea numerelor"
@@ -22224,12 +21759,9 @@ msgstr "Mută elicopterul pentru a prinde norii în ordinea corectă."
 
 #. Help goal
 #: activities/planegame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the alphabetical order."
 msgctxt "ActivityInfo|"
 msgid "Learn the numerical order."
-msgstr "Învață ordinea alfabetică."
+msgstr "Învață ordinea numerelor."
 
 #. Help manual
 #: activities/planegame/ActivityInfo.qml:23
@@ -22246,20 +21778,14 @@ msgstr ""
 "prinzi, poți fie să-l ții minte, fie să te uiți în colțul din dreapta jos."
 
 #: activities/planegame/Sequence.qml:13
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 0."
-msgstr "Găsește perechile imagine cu un număr de până la două articole."
+msgstr "Prinde numerele începând de la 0."
 
 #: activities/planegame/Sequence.qml:14
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Match the numbers up to 2."
 msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
-msgstr "Găsește perechile imagine cu un număr de până la două articole."
+msgstr "Prinde numerele începând de la 10."
 
 #: activities/play_piano/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
@@ -22279,12 +21805,9 @@ msgstr "Cântă la pian"
 
 #. Help title
 #: activities/play_piano/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Find the correct date and select it on the calendar."
 msgctxt "ActivityInfo|"
 msgid "Read the score, and then play it on the keyboard."
-msgstr "Află data corectă și selecteaz-o în calendar."
+msgstr "Citește partitura și apoi cânt-o la claviatură."
 
 #. Help goal
 #: activities/play_piano/ActivityInfo.qml:24
@@ -22358,12 +21881,9 @@ msgstr "Redă ritmul"
 
 #. Help title
 #: activities/play_rhythm/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to follow a rhythm accurately."
 msgctxt "ActivityInfo|"
 msgid "Follow the rhythm accurately."
-msgstr "Să înveți să urmezi cu acuratețe un ritm."
+msgstr "Urmează cu acuratețe ritmul."
 
 #. Help goal
 #: activities/play_rhythm/ActivityInfo.qml:24
@@ -22619,22 +22139,19 @@ msgstr "Selectează imaginea în care copilul este în stânga cutiei."
 #: activities/programmingMaze/ActivityInfo.qml:16
 msgctxt "ActivityInfo|"
 msgid "Program the path"
-msgstr ""
+msgstr "Programează traseul"
 
 #. Help title
 #: activities/programmingMaze/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Program the path to help Tux catch the fish."
-msgstr ""
+msgstr "Programează traseul pentru a-l ajuta pe Tux să prindă peștele."
 
 #. Help goal
 #: activities/programmingMaze/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Can read instructions, and think logically to find a path."
 msgctxt "ActivityInfo|"
 msgid "Learn how to program instructions for moving along a path."
-msgstr "Să poată citi instrucțiuni și să gândească logic pentru a găsi o cale."
+msgstr "Învață cu să programezi instrucțiuni pentru deplasarea pe un traseu."
 
 #. Help prerequisite
 #: activities/programmingMaze/ActivityInfo.qml:23
@@ -22872,12 +22389,9 @@ msgstr "Folosind atât zona principală cât și zona de buclă."
 
 #. Activity title
 #: activities/railroad/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Railroad activity"
 msgctxt "ActivityInfo|"
 msgid "Railroad"
-msgstr "Activitatea feroviară"
+msgstr "Calea ferată"
 
 #. Help title
 #: activities/railroad/ActivityInfo.qml:19
@@ -22933,7 +22447,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter sau Return: trimite răspunsul spre validare."
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22942,7 +22456,7 @@ msgstr ""
 "Observă și ține minte trenul înainte de terminarea timpului de observare și "
 "apoi glisează articolele pentru a reconstitui un tren identic."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23041,7 +22555,7 @@ msgstr "Redesenează pe grila goală imaginea dată, în fiecare detaliu."
 #: activities/redraw/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Learn to identify a location in a grid and to reproduce a model."
-msgstr ""
+msgstr "Să înveți să identifici locația într-o grilă și să reproduci un model."
 
 #. Help manual
 #: activities/redraw/ActivityInfo.qml:23
@@ -23097,12 +22611,9 @@ msgstr "Oglindește imaginea dată"
 
 #. Help title
 #: activities/redraw_symmetrical/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the tower on the right in the empty area."
 msgctxt "ActivityInfo|"
 msgid "Reproduce the image symmetrically on the empty grid."
-msgstr "Refă turnul din partea dreaptă în spațiul disponibil din stânga."
+msgstr "Reprodu imaginea simetric pe grila goală."
 
 #. Help goal
 #: activities/redraw_symmetrical/ActivityInfo.qml:20
@@ -23111,6 +22622,7 @@ msgid ""
 "Learn to identify a location in a grid and to reproduce a model "
 "symmetrically."
 msgstr ""
+"Să înveți să identifici o locație în grilă și să reproduci simetric un model."
 
 #: activities/redraw_symmetrical/resource/1/Data.qml:16
 msgctxt "Data|"
@@ -23164,7 +22676,7 @@ msgstr ""
 "pentru el butonul de lumină. Pentru a câștiga, trebuie să pornești toți "
 "consumatorii în timp ce funcționează toți producătorii de curent electric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23173,7 +22685,7 @@ msgstr ""
 "Tux s-a întors cu barca de la pescuit. Refă-i înapoi sistemul electric, ca "
 "să aibă lumină în casă."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23183,7 +22695,7 @@ msgstr ""
 "centrale eoliene și transformatoare, pentru a reactiva întregul sistem "
 "electric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23194,14 +22706,14 @@ msgstr ""
 "butonul de lumină. Pentru a câștiga, trebuie să pornești toți consumatorii "
 "în timp ce funcționează toți producătorii de curent electric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Învață despre un sistem electric bazat pe energie regenerabilă. Distracție "
 "plăcută!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -23264,12 +22776,9 @@ msgstr ""
 
 #. Help goal
 #: activities/reversecount/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count intervals"
 msgctxt "ActivityInfo|"
 msgid "Learn to count intervals."
-msgstr "Numără elementele"
+msgstr "Să înveți să numeri intervale."
 
 #. Help prerequisite
 #: activities/reversecount/ActivityInfo.qml:22
@@ -23315,26 +22824,18 @@ msgstr "Numeralele romane"
 
 #. Help title
 #: activities/roman_numerals/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn to read a graduated line."
 msgctxt "ActivityInfo|"
 msgid "Learn to read and write Roman numerals."
-msgstr "Să înveți să citești o riglă gradată."
+msgstr "Învață să citești și să scrii numere romane."
 
 #. Help goal
 #: activities/roman_numerals/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn how to read roman numerals and do the conversion to and from arabic "
-#| "numerals."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to read and write Roman numerals and convert them to Arabic numerals."
 msgstr ""
-"Să înveți să citești numerele romane și să faci conversia lor în numere "
-"arabe, și invers."
+"Să înveți să citești și să scrii numere romane, și să faci conversia lor în "
+"numere arabe."
 
 #. Help manual
 #: activities/roman_numerals/ActivityInfo.qml:23
@@ -23351,18 +22852,13 @@ msgstr ""
 "alfabetul latin."
 
 #: activities/roman_numerals/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn the rules to read Roman numerals and practice converting numbers to "
-#| "and from arabic numerals. Click on the OK button to validate your answer."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn the rules to read Roman numerals and practice converting numbers to "
 "and from Arabic numerals. Click on the OK button to validate your answer."
 msgstr ""
 "Învață regulile de scriere a numerelor romane și exersează conversia lor în/"
-"din numerale arabe. Fă clic pe butonul de OK pentru a-ți valida răspunsul."
+"din numere arabe. Fă clic pe butonul de OK pentru a-ți valida răspunsul."
 
 #: activities/roman_numerals/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
@@ -24066,12 +23562,9 @@ msgstr "Încearcă să împarți bomboanele la un anumit număr de copii."
 
 #. Help goal
 #: activities/share/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to share, practice division."
-msgstr "Exersarea împărțirilor."
+msgstr "Să înveți să împarți, să exersezi împărțirile."
 
 #. Help prerequisite
 #: activities/share/ActivityInfo.qml:22
@@ -24569,7 +24062,7 @@ msgstr "Nu poți pune mai mult de %1 bomboane în același dreptunghi"
 #: activities/simplepaint/ActivityInfo.qml:15
 msgctxt "ActivityInfo|"
 msgid "Draw in a grid"
-msgstr ""
+msgstr "Desenează într-o grilă"
 
 #. Help title
 #: activities/simplepaint/ActivityInfo.qml:17
@@ -24581,7 +24074,7 @@ msgstr "Creează propriul tău desen."
 #: activities/simplepaint/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Express your creativity through drawing."
-msgstr ""
+msgstr "Să-ți exprimi creativitatea prin desenat."
 
 #. Help manual
 #: activities/simplepaint/ActivityInfo.qml:23
@@ -24600,253 +24093,193 @@ msgstr "Tab: comută între selectorul de culoare și zona de pictat"
 #: activities/sketch/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
 msgid "Sketch"
-msgstr ""
+msgstr "Schițează"
 
 #: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr ""
+"Folosește diverse instrumente digitale de pictat pentru a desena imagini."
 
 #: activities/sketch/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn about multiples and factors."
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
-msgstr "Învață despre multipli și factori."
+msgstr "Învață despre câteva instrumente de pictură digitală."
 
 #: activities/sketch/ActivityInfo.qml:22
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
+"Selectează instrumente și culori din panelurile împachetabile și desenează "
+"imagini.<br><br>"
 
 #: activities/sketch/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + Z: undo"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
-msgstr "Ctrl + Z: reface înapoi"
+msgstr "Ctrl + Z: desface ultima acțiune"
 
 #: activities/sketch/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
-msgstr ""
+msgstr "Ctrl + Y: reface ultima acțiune"
 
 #: activities/sketch/ActivityInfo.qml:26
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Ctrl + A: select all the text"
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
-msgstr "Ctrl + A: selectează tot textul"
+msgstr "Ctrl + S: salvează imaginea"
 
 #: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
-msgstr ""
+msgstr "Ctrl + O: deschide o imagine"
 
 #: activities/sketch/ActivityInfo.qml:28
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
-msgstr ""
+msgstr "Ctrl + N, Delete sau Backspace: creează o nouă imagine"
 
 #: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
-msgstr ""
+msgstr "Conceptul de finețe al pensulei de la:"
 
 #: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
-msgstr ""
+msgstr "Conceptul de pensulă de schițare de la:"
 
 #: activities/sketch/BackgroundColorSelector.qml:40
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundColorSelector|"
 msgid "Background color"
-msgstr "Fundalul"
+msgstr "Culoarea de fundal"
 
 #: activities/sketch/BackgroundSelector.qml:42
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "BackgroundSelector|"
 msgid "Background image"
-msgstr "Fundalul"
+msgstr "Imaginea de fundal"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Eraser Tools"
-msgstr ""
+msgstr "Instrumente de ștergere"
 
 #: activities/sketch/BrushToolPanel.qml:17
 msgctxt "BrushToolPanel|"
 msgid "Drawing Tools"
-msgstr ""
+msgstr "Instrumente de desenat"
 
 #: activities/sketch/ColorSelector.qml:76
-#, fuzzy
-#| msgctxt "ColorMix|"
-#| msgid "Match the color"
 msgctxt "ColorSelector|"
 msgid "Palette Colors"
-msgstr "Prepară culoarea potrivită"
+msgstr "Palete de culori"
 
 #: activities/sketch/ColorSelector.qml:160
 msgctxt "ColorSelector|"
 msgid "Reset palette"
-msgstr ""
+msgstr "Resetează paleta"
 
 #: activities/sketch/ColorSelector.qml:211
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Selected"
 msgctxt "ColorSelector|"
 msgid "Selected Color"
-msgstr "Selectat"
+msgstr "Culoarea selectată"
 
 #. Color hue
 #: activities/sketch/ColorSelector.qml:235
-#, fuzzy
-#| msgctxt "board14_0|"
-#| msgid "Hubei"
 msgctxt "ColorSelector|color hue"
 msgid "Hue"
-msgstr "Hubei"
+msgstr "Nuanța"
 
 #. Color saturation
 #: activities/sketch/ColorSelector.qml:262
-#, fuzzy
-#| msgctxt "Dataset|"
-#| msgid "Saturn"
 msgctxt "ColorSelector|color saturation"
 msgid "Saturation"
-msgstr "Saturn"
+msgstr "Saturația"
 
 #. Color lightness
 #: activities/sketch/ColorSelector.qml:287
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Lights off"
 msgctxt "ColorSelector|color lightness"
 msgid "Lightness"
-msgstr "Stinge luminile"
+msgstr "Strălucirea"
 
 #. Reload default color for selected slot
 #: activities/sketch/ColorSelector.qml:324
 msgctxt "ColorSelector|"
 msgid "Reset Color"
-msgstr ""
+msgstr "Resetează culoarea"
 
 #: activities/sketch/ColorsPanel.qml:157
-#, fuzzy
-#| msgctxt "board9_0|"
-#| msgid "Palestine"
 msgctxt "ColorsPanel|"
 msgid "Palettes"
-msgstr "Palestina"
+msgstr "Palete"
 
 #: activities/sketch/FilesPanel.qml:46
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Select your mode"
 msgctxt "FilesPanel|"
 msgid "Save your image"
-msgstr "Selectează-ți modul"
+msgstr "Salvează-ți imaginea"
 
 #: activities/sketch/FilesPanel.qml:85
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Open an image"
-msgstr "Multe imagini noi"
+msgstr "Deschide o imagine"
 
 #: activities/sketch/FilesPanel.qml:116
-#, fuzzy
-#| msgctxt "DialogChooseLevel|"
-#| msgid "%1 settings"
 msgctxt "FilesPanel|"
 msgid "New image settings"
-msgstr "%1 setări"
+msgstr "Setări pentru imaginea nouă"
 
 #: activities/sketch/FilesPanel.qml:144
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background color"
-msgstr "Fundalul"
+msgstr "Culoarea de fundal"
 
 #: activities/sketch/FilesPanel.qml:190
-#, fuzzy
-#| msgctxt "DownloadDialog|"
-#| msgid "Background"
 msgctxt "FilesPanel|"
 msgid "Background image"
-msgstr "Fundalul"
+msgstr "Imaginea de fundal"
 
 #: activities/sketch/FilesPanel.qml:231
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Many new images"
 msgctxt "FilesPanel|"
 msgid "Create a new image"
-msgstr "Multe imagini noi"
+msgstr "Creează o nouă imagine"
 
 #. Rectangle or Square radius size
 #: activities/sketch/GeometryTool.qml:23
 msgctxt "GeometryTool|"
 msgid "Rounded Corners"
-msgstr ""
+msgstr "Colțuri rotunjite"
 
 #: activities/sketch/GeometryToolPanel.qml:17
 msgctxt "GeometryToolPanel|"
 msgid "Geometry Tools"
-msgstr ""
+msgstr "Instrumente geometrice"
 
 #: activities/sketch/GradientTool.qml:22
 msgctxt "GradientTool|"
 msgid "Inner Circle Size"
-msgstr ""
+msgstr "Mărimea cercului interior "
 
 #: activities/sketch/GradientToolPanel.qml:17
 msgctxt "GradientToolPanel|"
 msgid "Gradient Tools"
-msgstr ""
+msgstr "Instrumente pentru gradient"
 
 #: activities/sketch/Sketch.qml:673
-#, fuzzy
-#| msgctxt "Piano_composition|"
-#| msgid "You have not selected any note. Do you want to erase all the notes?"
 msgctxt "Sketch|"
 msgid "You did not save this image. Do you want to close this activity?"
-msgstr "Nu ai selectat nicio notă. Vrei să ștergi toate notele?"
+msgstr "Nu ai salvat această imagine. Vrei să închizi această activitate?"
 
 #: activities/sketch/Sketch.qml:674
-#, fuzzy
-#| msgctxt "ConfigurationItem|"
-#| msgid "Do you want to download it now?"
 msgctxt "Sketch|"
 msgid "Do you want to erase this image?"
-msgstr "Vrei s-o descarci acum?"
+msgstr "Vrei să ștergi această imagine?"
 
 #: activities/sketch/Sketch.qml:675
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "Yes"
 msgctxt "Sketch|"
 msgid "Yes"
 msgstr "Da"
 
 #: activities/sketch/Sketch.qml:676
-#, fuzzy
-#| msgctxt "balanceboxeditor|"
-#| msgid "No"
 msgctxt "Sketch|"
 msgid "No"
 msgstr "Nu"
@@ -24854,22 +24287,19 @@ msgstr "Nu"
 #: activities/sketch/StampToolPanel.qml:18
 msgctxt "StampToolPanel|"
 msgid "Stamp Tool"
-msgstr ""
+msgstr "Instrumentul ștampilă"
 
 #: activities/sketch/TextToolPanel.qml:17
 msgctxt "TextToolPanel|"
 msgid "Text Tool"
-msgstr ""
+msgstr "Instrumentul pentru text"
 
 #: activities/sketch/TextToolPanel.qml:33
 msgctxt "TextToolPanel|"
 msgid "Type your text here"
-msgstr ""
+msgstr "Scrie textul tău aici"
 
 #: activities/sketch/ToolsPanel.qml:253
-#, fuzzy
-#| msgctxt "category_tools|"
-#| msgid "Tools"
 msgctxt "ToolsPanel|"
 msgid "Tools"
 msgstr "Unelte"
@@ -24877,22 +24307,19 @@ msgstr "Unelte"
 #: activities/sketch/ToolsPanel.qml:427
 msgctxt "ToolsPanel|"
 msgid "Reset tool settings"
-msgstr ""
+msgstr "Setările instrumentului de reset"
 
 #: activities/sketch/ToolsPanel.qml:483
 msgctxt "ToolsPanel|"
 msgid "Opacity"
-msgstr ""
+msgstr "Opacitatea"
 
 #: activities/sketch/ToolsPanel.qml:506
 msgctxt "ToolsPanel|"
 msgid "Size"
-msgstr ""
+msgstr "Mărimea"
 
 #: activities/sketch/ToolsPanel.qml:526
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Speed"
 msgctxt "ToolsPanel|"
 msgid "Speed"
 msgstr "Viteza"
@@ -24900,36 +24327,27 @@ msgstr "Viteza"
 #: activities/sketch/ToolsPanel.qml:546
 msgctxt "ToolsPanel|"
 msgid "Density"
-msgstr ""
+msgstr "Densitatea"
 
 #: activities/sketch/ToolsPanel.qml:566
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Dots"
 msgctxt "ToolsPanel|"
 msgid "Dots Size"
-msgstr "Puncte"
+msgstr "Mărimea punctelor"
 
 #: activities/sketch/ToolsPanel.qml:585
 msgctxt "ToolsPanel|"
 msgid "Smoothing"
-msgstr ""
+msgstr "Finețea"
 
 #: activities/sketch/ToolsPanel.qml:646
-#, fuzzy
-#| msgctxt "Lang|"
-#| msgid "action"
 msgctxt "ToolsPanel|"
 msgid "Rotation"
-msgstr "acțiuni"
+msgstr "Rotația"
 
 #: activities/sketch/ToolsPanel.qml:662
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Mirror the given image"
 msgctxt "ToolsPanel|"
 msgid "Mirror image"
-msgstr "Oglindește imaginea dată"
+msgstr "Imaginea în oglindă"
 
 #. Activity title
 #: activities/smallnumbers/ActivityInfo.qml:15
@@ -24947,12 +24365,9 @@ msgstr ""
 #. Help goal
 #: activities/smallnumbers/ActivityInfo.qml:20
 #: activities/smallnumbers2/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice addition with a target game"
 msgctxt "ActivityInfo|"
 msgid "Practice counting with a time limit."
-msgstr "Exersează adunarea cu un joc de tragere la țintă"
+msgstr "Exersează numărarea cu limită de timp."
 
 #. Help prerequisite
 #: activities/smallnumbers/ActivityInfo.qml:22
@@ -25068,22 +24483,17 @@ msgstr "Numere cu piese de domino"
 
 #. Help title
 #: activities/smallnumbers2/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Count the number of dots on the dice before it reaches the ground."
 msgctxt "ActivityInfo|"
 msgid "Count the number of dots on the domino before it reaches the ground."
 msgstr ""
-"Socotește punctele de pe zaruri, înainte ca acestea să atingă pământul."
+"Numără punctele de pe piesele de domino, înainte ca ele să atingă pământul."
 
 #. Help manual
 #: activities/smallnumbers2/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Type the number of dots you see on each falling dice."
 msgctxt "ActivityInfo|"
 msgid "Type the number of dots you see on each falling domino."
-msgstr "Tastează numărul punctelor de pe zarul care cade."
+msgstr ""
+"Tastează numărul punctelor de pe fiecare piesă de domino aflată în cădere."
 
 #: activities/smallnumbers2/resource/1/Data.qml:18
 msgctxt "Data|"
@@ -25148,12 +24558,9 @@ msgstr "Sistemul Solar"
 
 #. Help title
 #: activities/solar_system/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "SolarSystem|"
-#| msgid "View the solar system"
 msgctxt "ActivityInfo|"
 msgid "Learn about the solar system."
-msgstr "Vezi sistemul solar"
+msgstr "Învață despre sistemul solar."
 
 #. Help goal
 #: activities/solar_system/ActivityInfo.qml:23
@@ -26212,7 +25619,7 @@ msgstr ""
 "Super! Poți să reiei evaluarea pentru a-ți testa cunoștințele cu mai multe "
 "întrebări."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26228,17 +25635,17 @@ msgstr ""
 "Sistemul Solar.<br><b>2. Modul evaluare</b> - În acest mod, îți poți testa "
 "cunoștințele despre Sistemul Solar."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Evaluare"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Învățare"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26247,7 +25654,7 @@ msgstr ""
 "Fă clic pe Soare sau pe o planetă pentru a afișa întrebările. Fiecare "
 "întrebare are 4 opțiuni, din care doar una este corectă."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26263,7 +25670,7 @@ msgstr ""
 "100%, urmărind măsurătorul de acuratețe sau alege să primești indicații și "
 "vei vedea răspunsul corect."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26272,7 +25679,7 @@ msgstr ""
 "Inițial sunt 20 de întrebări cu 4 opțiuni la fiecare întrebare. Bara de "
 "progres din colțul dreapta-jos al ecranului îți arată scorul tău procentual."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26285,7 +25692,7 @@ msgstr ""
 "care nu ai răspuns corect.<br>Ți se vor pune maximum 25 de întrebări "
 "suplimentare, după care nu vei mai fi întrebat nimic."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26294,7 +25701,7 @@ msgstr ""
 "Trebuie să obții un scor de peste 90% pentru a trece evaluarea și a deveni "
 "un expert al Sistemului Solar!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26304,7 +25711,7 @@ msgstr ""
 "1. Cu cât este <b>mai departe</b> de Soare o planetă, cu atât este <b>mai "
 "mică</b> temperatura ei.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26315,7 +25722,7 @@ msgstr ""
 "b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26326,12 +25733,12 @@ msgstr ""
 "b>ama <b>v</b>ine <b>p</b>e <b>m</b>otocicleta <b>j</b>aponeză "
 "<b>s<b>urâzându-i <b>u</b>nui <b>n</b>ene.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Indicații"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vezi sistemul solar"
@@ -26572,36 +25979,25 @@ msgstr ""
 
 #. Activity title
 #: activities/sudoku/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Calcudoku"
 msgctxt "ActivityInfo|"
 msgid "Sudoku"
-msgstr "Calcudoku"
+msgstr "Sudoku"
 
 #. Help title
 #: activities/sudoku/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Solve the Calcudoku."
 msgctxt "ActivityInfo|"
 msgid "Solve the Sudoku."
-msgstr "Rezolv Calcudoku."
+msgstr "Rezolvă Sudoku."
 
 #. Help goal
 #: activities/sudoku/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Develop your logical reasoning skills: data linking, deduction and "
-#| "spatial location while using calculation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Develop some skills in logical thinking (data linking, deduction) and "
 "spatial visualization."
 msgstr ""
-"Dezvoltă-ți abilitățile de gândire logică: legătura dintre date, deducția și "
-"localizarea spațială, în timp ce calculezi."
+"Să-ți dezvolți câteva abilități, de gândire logică (legătura dintre date, "
+"deducția) și de localizare spațială."
 
 #. Help prerequisite
 #: activities/sudoku/ActivityInfo.qml:22
@@ -26619,6 +26015,11 @@ msgid ""
 "something in a square, it might not be correct for the whole Sudoku. It can "
 "still be a mistake."
 msgstr ""
+"Selectează un număr sau un simbol și fă clic pe poziția lui țintă. Fiecare "
+"simbol trebuie să apară o singură dată pe o linie, pe o coloană sau într-o "
+"subregiune (dacă este cazul). Dacă o acțiune nu este permisă, jocul va arăta "
+"de ce. Ai însă grijă: dacă poți plasa ceva într-un pătrat, asta nu înseamnă "
+"că este corect pentru întregul Sudoku, deci ar putea fi greșit."
 
 #: activities/sudoku/resource/1/Data.qml:13
 msgctxt "Data|"
@@ -26659,6 +26060,8 @@ msgid ""
 "Develop skills in logical thinking, distinguishing colors, and memorizing "
 "positions."
 msgstr ""
+"Să-ți dezvolți abilități de gândire logică, de distingere a culorilor și de "
+"memorizare a pozițiilor."
 
 #. Help manual
 #: activities/superbrain/ActivityInfo.qml:23
@@ -26713,12 +26116,9 @@ msgstr "Jocul de puzzle tangram"
 
 #. Help title
 #: activities/tangram/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The objective is to form a given shape."
 msgctxt "ActivityInfo|"
 msgid "Move the objects to reproduce the given shape."
-msgstr "Obiectivul este să creezi o formă dată."
+msgstr "Mută obiectele pentru a reproduce forma dată."
 
 #. Help goal
 #: activities/tangram/ActivityInfo.qml:20
@@ -26727,16 +26127,11 @@ msgid ""
 "Develop skills in spatial visualization, memorizing positions, and "
 "reproducing models."
 msgstr ""
+"Să-ți dezvolți abilități de vizualizare spațială, de memorizare a pozițiilor "
+"și de reproducere a modelelor."
 
 #. Help manual
 #: activities/tangram/ActivityInfo.qml:24
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Move a piece by dragging it. The symmetrical button appears on items that "
-#| "supports it. Click on the rotation button or drag around it to rotate "
-#| "selected piece. Check the activity 'Baby Puzzle' for a simpler "
-#| "introduction to tangram."
 msgctxt "ActivityInfo|"
 msgid ""
 "Move a piece by dragging it. The symmetrical button appears on items that "
@@ -26762,12 +26157,9 @@ msgstr "Să arunci săgețile la țintă și să-ți calculezi scorul final."
 
 #. Help goal
 #: activities/target/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the addition of numbers."
 msgctxt "ActivityInfo|"
 msgid "Practice addition of several numbers."
-msgstr "Exersează adunarea numerelor."
+msgstr "Exersează adunarea mai multor numere."
 
 #. Help prerequisite
 #: activities/target/ActivityInfo.qml:22
@@ -26818,38 +26210,29 @@ msgstr "Valoarea maximă: 500000."
 
 #. Activity title
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Use ten's complement"
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Folosește complementul lui 10"
+msgstr "Calculează cu complementul lui 10"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Swap the numbers to create pairs equal to ten."
 msgctxt "ActivityInfo|"
 msgid ""
 "Swap the numbers to create pairs equal to ten and input the answer of the "
 "final sum."
-msgstr "Schimbă numerele pentru a crea perechi de sumă 10."
+msgstr ""
+"Schimbă între ele numerele pentru a crea perechi de sumă 10 și introdu "
+"răspunsul cu suma finală."
 
 #. Help goal
 #: activities/tens_complement_calculate/ActivityInfo.qml:19
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Learn to use ten's complement to optimize the order of numbers in an "
-#| "operation."
 msgctxt "ActivityInfo|"
 msgid ""
 "Learn to use ten's complement to optimize the order of numbers in an "
 "operation and calculate the result."
 msgstr ""
-"Învață să folosești complementul lui 10 pentru a optimiza ordinea numerelor "
-"într-o operație."
+"Să înveți să folosești complementul lui 10 pentru a optimiza ordinea "
+"numerelor într-o operație și să calculezi rezultatul."
 
 #. Help prerequisite
 #: activities/tens_complement_calculate/ActivityInfo.qml:21
@@ -26859,15 +26242,6 @@ msgstr "Numerele de la 1 la 30 și adunările."
 
 #. Help manual
 #: activities/tens_complement_calculate/ActivityInfo.qml:23
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid ""
-#| "Create pairs of numbers equal to ten within each parentheses. Select a "
-#| "number, then select another number of the same operation to swap their "
-#| "position. When all the lines are completed, press the OK button to "
-#| "validate the answers. If some answers are incorrect, a cross icon will "
-#| "appear on the corresponding lines. Correct the errors, then press the OK "
-#| "button again."
 msgctxt "ActivityInfo|"
 msgid ""
 "Create pairs of numbers equal to ten within each parentheses. Select a "
@@ -26879,18 +26253,16 @@ msgid ""
 msgstr ""
 "Creează perechi de numere cu suma 10, în fiecare paranteză. Selectează un "
 "număr, apoi selectează un alt număr din aceeași operație, pentru a le "
-"schimba poziția. Când sunt completate toate liniile, apasă butonul OK pentru "
-"a valida răspunsurile.  Dacă unele răspunsuri sunt incorecte, va apărea o "
-"pictogramă cruce pe liniile respective. Corectează greșelile, apoi apasă din "
-"nou butonul OK."
+"schimba poziția. Pe fiecare linie, introdu suma finală în ultima căsuță.  "
+"Când toate liniile sunt completate, apasă butonul OK pentru a valida "
+"răspunsurile. Dacă unele răspunsuri sunt incorecte, va apărea o pictogramă "
+"cruce pe liniile respective. Corectează greșelile, apoi apasă din nou "
+"butonul OK."
 
 #: activities/tens_complement_calculate/resource/1/Data.qml:36
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "2 pairs to make from 4 numbers."
 msgctxt "Data|"
 msgid "1 pair to make from 3 numbers."
-msgstr "2 perechi din 4 numere."
+msgstr "O pereche de format din trei numere."
 
 #: activities/tens_complement_calculate/resource/2/Data.qml:9
 #: activities/tens_complement_swap/resource/2/Data.qml:9
@@ -26918,12 +26290,9 @@ msgstr "Învață să găsești complementul lui 10."
 
 #. Help prerequisite
 #: activities/tens_complement_find/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 10 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 10 and addition."
-msgstr "Numerele de la 1 la 10 și adunările."
+msgstr "Numerele de la 1 la 10 și adunarea."
 
 #: activities/tens_complement_find/ActivityInfo.qml:23
 #: activities/tens_complement_use/ActivityInfo.qml:24
@@ -26989,12 +26358,9 @@ msgstr ""
 
 #. Help prerequisite
 #: activities/tens_complement_swap/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 30 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 30 and addition."
-msgstr "Numerele de la 1 la 30 și adunările."
+msgstr "Numerele de la 1 la 30 și adunarea."
 
 #. Help manual
 #: activities/tens_complement_swap/ActivityInfo.qml:23
@@ -27043,12 +26409,9 @@ msgstr "Folosirea practică a complementului lui 10."
 
 #. Help prerequisite
 #: activities/tens_complement_use/ActivityInfo.qml:21
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Numbers from 1 to 50 and additions."
 msgctxt "ActivityInfo|"
 msgid "Numbers from 1 to 50 and addition."
-msgstr "Numerele de la 1 la 50 și adunările."
+msgstr "Numerele de la 1 la 50 și adunarea."
 
 #. Help manual
 #: activities/tens_complement_use/ActivityInfo.qml:23
@@ -27095,7 +26458,7 @@ msgstr "Pune trei de X pe o linie."
 #: activities/tic_tac_toe_2players/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Develop your strategy skills."
-msgstr ""
+msgstr "Să-ți dezvolți competențele de strategie."
 
 #. Help manual
 #: activities/tic_tac_toe/ActivityInfo.qml:26
@@ -27154,39 +26517,27 @@ msgstr ""
 
 #. Activity title
 #: activities/vertical_addition/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice additions."
 msgctxt "ActivityInfo|"
 msgid "Vertical addition"
-msgstr "Exersarea adunărilor."
+msgstr "Adunarea pe verticală (unul sub altul)"
 
 #. Help title
 #: activities/vertical_addition/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Reproduce the given tower."
 msgctxt "ActivityInfo|"
 msgid "Solve the given addition."
-msgstr "Refă turnul dat."
+msgstr "Rezolvă adunarea dată."
 
 #. Help goal
 #: activities/vertical_addition/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice divisions."
 msgctxt "ActivityInfo|"
 msgid "Learn to solve vertical additions."
-msgstr "Exersarea împărțirilor."
+msgstr "Să înveți să aduni pe verticală (unul sub altul)."
 
 #. Help prerequisite
 #: activities/vertical_addition/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Addition table of 1."
 msgctxt "ActivityInfo|"
 msgid "Addition tables."
-msgstr "Tabla adunării cu 1."
+msgstr "Tablele adunării."
 
 #. Help manual
 #: activities/vertical_addition/ActivityInfo.qml:24
@@ -27206,85 +26557,92 @@ msgid ""
 "it; in this case, click on the Ready button when the operation is written "
 "correctly and then solve it."
 msgstr ""
+"Într-o adunare pe verticală, numerele sunt scrise unul sub altul. Ele "
+"trebuiesc aliniate corespunzător, începând de la coloana din dreapta, cea a "
+"unităților. Rezultatul se scrie sub linie. Pentru a rezolva adunarea, începe "
+"să aduni numerele de pe coloana unităților, cea mai din dreapta, și scrie "
+"rezultatul dedesubt, sub linie, pe aceeași coloană. Dacă rezultatul este un "
+"număr din două cifre, scrie doar ultima cifră, a unităților, iar cifra "
+"zecilor ține-o minte. Adună apoi numerele de pe a doua coloană, a zecilor "
+"(coloana vecină din stânga), adăugând ce ai ținut minte de la coloana "
+"unităților. Repetă apoi acest proces pentru fiecare din următoarele coloane "
+"spre stânga (coloana sutelor, miilor, etc), iar la final fă clic pe butonul "
+"OK pentru a-ți valida rezultatul. La unele nivele, va trebui să scrii "
+"operația dată înainte de a o rezolva. În acest caz, fă clic pe butonul Gata "
+"atunci când operația este scrisă corect, și apoi rezolv-o."
 
 #: activities/vertical_addition/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Rezolvă adunarea, 2 cifre, 2 linii, fără trecere peste ordin."
 
 #: activities/vertical_addition/resource/10/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 3 lines."
-msgstr ""
+msgstr "Rezolvă adunarea, 4 cifre, 3 linii."
 
 #: activities/vertical_addition/resource/11/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 4 lines."
-msgstr ""
+msgstr "Rezolvă adunarea, 4 cifre, 4 linii."
 
 #: activities/vertical_addition/resource/12/Data.qml:12
 msgctxt "Data|"
 msgid "Write your own addition and solve it."
-msgstr ""
+msgstr "Scrie-ți propria adunare și rezolv-o."
 
 #: activities/vertical_addition/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Scrie și rezolvă adunarea, 2 cifre, 2 linii, fără trecere peste ordin."
 
 #: activities/vertical_addition/resource/3/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Scrie și rezolvă adunarea, 2 cifre, 2 linii."
 
 #: activities/vertical_addition/resource/4/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 2 lines."
-msgstr ""
+msgstr "Scrie și rezolvă adunarea, 2 cifre, 2 linii."
 
 #: activities/vertical_addition/resource/5/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 2 digits, 3 lines."
-msgstr ""
+msgstr "Scrie și rezolvă adunarea, 2 cifre, 3 linii."
 
 #: activities/vertical_addition/resource/6/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Rezolvă adunarea, 3 cifre, 2 linii."
 
 #: activities/vertical_addition/resource/7/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve addition, 3 digits, 2 lines."
-msgstr ""
+msgstr "Scrie și rezolvă adunarea, 3 cifre, 2 linii."
 
 #: activities/vertical_addition/resource/8/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 3 digits, 3 lines."
-msgstr ""
+msgstr "Rezolvă adunarea, 3 cifre, 3 linii."
 
 #: activities/vertical_addition/resource/9/Data.qml:12
 msgctxt "Data|"
 msgid "Solve addition, 4 digits, 2 lines."
-msgstr ""
+msgstr "Rezolvă adunarea, 4 cifre, 2 linii."
 
 #. Activity title
 #: activities/vertical_subtraction/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice subtractions."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction"
-msgstr "Exersarea scăderilor."
+msgstr "Scăderea pe verticală (unul sub altul)"
 
 #. Help title
 #: activities/vertical_subtraction/ActivityInfo.qml:17
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "InstructionArea|"
-#| msgid "Choose the instructions"
 msgctxt "ActivityInfo|"
 msgid "Solve the given subtraction."
-msgstr "Alege instrucțiunile"
+msgstr "Rezolvă scăderea dată."
 
 #. Help goal
 #: activities/vertical_subtraction/ActivityInfo.qml:20
@@ -27293,16 +26651,15 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by regrouping "
 "method."
 msgstr ""
+"Să înveți scăderile pe verticală (unul sub altul), cu împrumutare și trecere "
+"sub ordin, prin metoda regrupării."
 
 #. Help prerequisite
 #: activities/vertical_subtraction/ActivityInfo.qml:22
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:22
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtraction table of 1."
 msgctxt "ActivityInfo|"
 msgid "Subtraction tables."
-msgstr "Tabla scăderii cu 1."
+msgstr "Tabla scăderii."
 
 #. Help manual
 #: activities/vertical_subtraction/ActivityInfo.qml:24
@@ -27330,144 +26687,129 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Într-o scădere pe verticală, numerele sunt scrise unul sub altul. Ele "
+"trebuiesc aliniate corect una sub alta, începând de la coloana unităților, "
+"cea mai din dreapta. Numărul de deasupra, din care scădem, se numește "
+"descăzut, și trebuie să fie numărul cel mai mare. Numărul mai mic, aliniat "
+"sub el, se numește scăzător, și este numărul pe care îl scădem din "
+"descăzutul aflat deasupra. Începem de la coloana unităților, cea mai din "
+"dreapta, și scădem din numărul de sus al descăzutului numărul de jos al "
+"scăzătorului, trecând rezultatul sub linie, pe aceeași coloană. Dacă avem "
+"mai mult de scăzut decât descăzutul, atunci restul ce mai trebuie scăzut îl "
+"scădem dintr-o zece luată/„împrumutată” din coloana zecilor, vecina din "
+"stânga a coloanei unităților. Pentru a face acest lucru, activitatea este "
+"prevăzută cu un dreptunghi gol deasupra coloanei zecilor în care facem clic "
+"și selectăm -1, iar în dreptunghiul de deasupra coloanei unde se efectuează "
+"scăderea avem un dreptunghi unde putem face clic și selecta +1. Acest lucru "
+"semnifică faptul că luăm o zece din coloana zecilor și o mutăm în coloana "
+"unităților, ca să avem un număr mai mare, din care să putem scădea tot "
+"scăzătorul. Scriem apoi rezultatul acestei scăderi la baza coloanei "
+"unităților, sub linie. În continuare, ne mutăm înspre stânga, la următoarea "
+"coloana vecină, și repetăm procesul de scădere pentru toate coloanele "
+"rămase. După ce aflăm rezultatul final, facem clic pe butonul de OK, pentru "
+"validarea răspunsului. La unele nivele va trebui să scrii tu operația dată, "
+"înainte de a o rezolva; în acest caz, fă clic pe butonul Gata după ce "
+"operația este scrisă corect, și apoi rezolv-o."
 
 #: activities/vertical_subtraction/resource/1/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/1/Data.qml:12
 msgctxt "Data|"
 msgid "Solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Rezolvă scăderea, 2 cifre, 2 linii, fără „împrumut”."
 
 #: activities/vertical_subtraction/resource/10/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/10/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 3 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Rezolvă scăderea, 4 sau 5 cifre, 3 linii."
 
 #: activities/vertical_subtraction/resource/11/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/11/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 4 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Rezolvă scăderea, 4 sau 5 cifre, 4 linii."
 
 #: activities/vertical_subtraction/resource/12/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/12/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Learn subtraction table of 1."
 msgctxt "Data|"
 msgid "Write your own subtraction and solve it."
-msgstr "Învață tabla scăderii cu 1."
+msgstr "Scrie-ți propria scădere și rezolv-o."
 
 #: activities/vertical_subtraction/resource/2/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/2/Data.qml:12
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 digits, 2 lines, without carry."
-msgstr ""
+msgstr "Scrie și rezolvă scăderea, 2 cifre, 2 linii, fără „împrumut”."
 
 #: activities/vertical_subtraction/resource/3/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/3/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Rezolvă scăderea, 2 sau 3 cifre, 2 linii."
 
 #: activities/vertical_subtraction/resource/4/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/4/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 2 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Scrie și rezolvă scăderea, 2 sau 3 cifre, 2 linii."
 
 #: activities/vertical_subtraction/resource/5/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/5/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 2 or 3 digits, 3 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Scrie și rezolvă scăderea, 2 sau 3 cifre, 3 linii."
 
 #: activities/vertical_subtraction/resource/6/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/6/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Rezolvă scăderea, 3 sau 4 cifre, 2 linii."
 
 #: activities/vertical_subtraction/resource/7/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/7/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Write and solve subtraction, 3 or 4 digits, 2 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Scrie și rezolvă scăderea, 3 sau 4 cifre, 2 linii."
 
 #: activities/vertical_subtraction/resource/8/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/8/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 3 or 4 digits, 3 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Rezolvă scăderea, 3 sau 4 cifre, 3 linii."
 
 #: activities/vertical_subtraction/resource/9/Data.qml:12
 #: activities/vertical_subtraction_compensation/resource/9/Data.qml:12
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Subtractions with 1, 2 and 3."
 msgctxt "Data|"
 msgid "Solve subtraction, 4 or 5 digits, 2 lines."
-msgstr "Scăderi cu 1, 2 și 3."
+msgstr "Rezolvă scăderea, 4 sau 5 cifre, 2 linii."
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Write:"
-msgstr ""
+msgstr "Scrie:"
 
 #: activities/vertical_subtraction/subtraction.js:71
 msgctxt "subtraction|"
 msgid "Solve:"
-msgstr ""
+msgstr "Rezolvă:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
 #: activities/vertical_subtraction/subtraction.js:166
-#, fuzzy, qt-format
-#| msgctxt "BackgroundMusicList|"
-#| msgid "Title: %1"
+#, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
-msgstr "Titlul: %1"
+msgstr "Rezolvă: %1"
 
 #: activities/vertical_subtraction/VerticalSubtraction.qml:399
-#, fuzzy
-#| msgctxt "Frieze|"
-#| msgid "I am Ready"
 msgctxt "VerticalSubtraction|"
 msgid "Ready"
-msgstr "Sunt pregătit"
+msgstr "Gata"
 
 #. Activity title
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:15
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Practice the subtraction operation."
 msgctxt "ActivityInfo|"
 msgid "Vertical subtraction (compensation)"
-msgstr "Exersează operația de scădere."
+msgstr "Scăderea pe verticală (cu transfer / „împrumut”)."
 
 #. Help goal
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:20
@@ -27476,6 +26818,8 @@ msgid ""
 "Learn to solve vertical subtractions, with the borrowing by compensation "
 "method."
 msgstr ""
+"Să înveți să rezolvi scăderi pe verticală (numere unul sub altul), folosind "
+"și metoda transferului / „împrumutului”."
 
 #. Help manual
 #: activities/vertical_subtraction_compensation/ActivityInfo.qml:24
@@ -27503,6 +26847,29 @@ msgid ""
 "before solving it; in this case, click on the Ready button when the "
 "operation is written correctly and then solve it."
 msgstr ""
+"Într-o scădere pe verticală, numerele sunt scrise unul sub altul. Ele "
+"trebuiesc aliniate corect una sub alta, începând de la coloana unităților, "
+"cea mai din dreapta. Numărul de deasupra, din care scădem, se numește "
+"descăzut, și trebuie să fie numărul cel mai mare. Numărul mai mic, aliniat "
+"sub el, se numește scăzător, și este numărul pe care îl scădem din "
+"descăzutul aflat deasupra. Începem de la coloana unităților, cea mai din "
+"dreapta, și scădem din numărul de sus al descăzutului numărul de jos al "
+"scăzătorului, trecând rezultatul sub linie, pe aceeași coloană. Dacă avem "
+"mai mult de scăzut decât descăzutul, atunci restul ce mai trebuie scăzut îl "
+"scădem dintr-o zece luată/„împrumutată” din coloana zecilor, vecina din "
+"stânga a coloanei unităților. Pentru a face acest lucru, activitatea este "
+"prevăzută cu un dreptunghi gol deasupra coloanei zecilor în care facem clic "
+"și selectăm -1, iar în dreptunghiul de deasupra coloanei unde se efectuează "
+"scăderea avem un dreptunghi unde putem face clic și selecta +1. Acest lucru "
+"semnifică faptul că luăm o zece din coloana zecilor și o mutăm în coloana "
+"unităților, ca să avem un număr mai mare, din care să putem scădea tot "
+"scăzătorul. Scriem apoi rezultatul acestei scăderi la baza coloanei "
+"unităților, sub linie. În continuare, ne mutăm înspre stânga, la următoarea "
+"coloana vecină, și repetăm procesul de scădere pentru toate coloanele "
+"rămase. După ce aflăm rezultatul final, facem clic pe butonul de OK, pentru "
+"validarea răspunsului. La unele nivele va trebui să scrii tu operația dată, "
+"înainte de a o rezolva; în acest caz, fă clic pe butonul Gata după ce "
+"operația este scrisă corect, și apoi rezolv-o."
 
 #. Activity title
 #: activities/watercycle/ActivityInfo.qml:15
@@ -27522,12 +26889,9 @@ msgstr ""
 
 #. Help goal
 #: activities/watercycle/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Learn the water cycle."
 msgctxt "ActivityInfo|"
 msgid "Learn about the water cycle."
-msgstr "Să înveți circuitul apei în natură."
+msgstr "Să înveți despre circuitul apei în natură."
 
 #. Help manual
 #: activities/watercycle/ActivityInfo.qml:23
@@ -27596,7 +26960,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Extraordinar, ai completat circuitul apei! Poți continua să te joci."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27608,7 +26972,7 @@ msgstr ""
 "înapoi. Căldura soarelui furnizează energia necesară evaporării apei din "
 "marile rezervoare naturale, cum sunt oceanele."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27620,7 +26984,7 @@ msgstr ""
 "nori. Când norii întâlnesc un aer rece, atunci se declanșează "
 "precipitațiile, care cad pe pământ sub formă de ploaie."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27631,7 +26995,7 @@ msgstr ""
 "straturi de argilă, sub formă de pânză de apă freatică. Majoritatea apei "
 "curge însă înapoi în râuri, reîntorcându-se în cele din urmă în oceane."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27659,12 +27023,9 @@ msgstr "Scrie cuvintele de pe ecran, înainte ca ele să atingă pământul."
 
 #. Help goal
 #: activities/wordsgame/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "Data|"
-#| msgid "Practice division equality."
 msgctxt "ActivityInfo|"
 msgid "Practice using a keyboard."
-msgstr "Exersează operația de împărțire cu un rezultat fix."
+msgstr "Să exersezi folosind o tastatură."
 
 #. Help prerequisite
 #: activities/wordsgame/ActivityInfo.qml:22
@@ -27679,12 +27040,9 @@ msgid "Type the complete word as it falls, before it reaches the ground."
 msgstr "Scrie tot cuvântul care cade, înainte ca el să atingă pământul."
 
 #: core/ChangeLog.qml:30
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid "Translation added for Latvian"
 msgctxt "ChangeLog|"
 msgid "Translation added for Sanskrit"
-msgstr "S-a adăugat traducerea pentru limba letonă"
+msgstr "S-a adăugat traducerea pentru limba sanscrită."
 
 #: core/ChangeLog.qml:31 core/ChangeLog.qml:40 core/ChangeLog.qml:46
 #: core/ChangeLog.qml:51 core/ChangeLog.qml:57 core/ChangeLog.qml:86
@@ -27714,23 +27072,20 @@ msgid ""
 "Automatic application of new language when changing it in the menu (no need "
 "to restart GCompris)"
 msgstr ""
+"Aplicarea automată a unei noi limbi, atunci când se schimbă limba în meniu "
+"(nu mai este nevoie să se restarteze GCompris)"
 
 #: core/ChangeLog.qml:35
 msgctxt "ChangeLog|"
 msgid "Add splash screen at startup"
-msgstr ""
+msgstr "Adăugarea unui ecran animat la pornire"
 
 #: core/ChangeLog.qml:36
-#, fuzzy
-#| msgctxt "ChangeLog|"
-#| msgid ""
-#| "New command-line option to list all the activities and start on a "
-#| "specific one"
 msgctxt "ChangeLog|"
 msgid "New command-line option to switch the renderer (--renderer renderer)"
 msgstr ""
-"O nouă opțiune pentru pornirea din linia de comandă, pentru listarea tuturor "
-"activităților și începerea cu o activitate specifică."
+"O nouă opțiune la linia de comandă, pentru a schimba randatorul (--renderer "
+"renderer)"
 
 #: core/ChangeLog.qml:45
 msgctxt "ChangeLog|"
@@ -28456,9 +27811,6 @@ msgstr "%1 s-a șters cu succes!"
 
 #: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
 #: core/GCCreationHandler.qml:235
-#, fuzzy
-#| msgctxt "Imageid|"
-#| msgid "OK"
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
@@ -28485,12 +27837,9 @@ msgid "No"
 msgstr "Nu"
 
 #: core/GCCreationHandler.qml:222
-#, fuzzy
-#| msgctxt "Chess|"
-#| msgid "Do you really want to undo all the moves?"
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
-msgstr "Chiar vrei să anulezi toate mutările?"
+msgstr "Chiar vrei să ștergi acest fișier?"
 
 #: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
@@ -28527,17 +27876,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Pasul precedent"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Următorul pas"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Sari peste"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Start"
@@ -28593,37 +27942,30 @@ msgid "Enable the kiosk mode."
 msgstr "Activează modul chioșc."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
 "Folosește randarea software în locul openGL (mai înceată, dar ar trebui să "
-"ruleze cu orice placă video)"
+"ruleze cu orice placă video). Ieșită din uz, folosește în loc de asta "
+"comanda --renderer=software."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "Folosește randarea openGL în locul randării software (mai rapidă, dar poate "
-"„crăpa”, în funcție de placa ta video)."
+"„crăpa”, în funcție de placa ta video). Ieșită din uz, folosește în loc de "
+"asta comanda --renderer=opengl."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
+"Selectează randatorul (opengl, software, Direct3D11, Direct3D12, Metal)."
 
 #: core/main.cpp:113
 msgctxt "QObject|"
