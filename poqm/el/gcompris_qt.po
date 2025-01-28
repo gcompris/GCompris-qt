@@ -3652,7 +3652,7 @@ msgstr ""
 "υδατοφράχτες στη σωστή σειρά, έτσι ώστε ο Tux να μπορεί να περνά με τη βάρκα "
 "του και προς τις δύο κατευθύνσεις."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3662,7 +3662,7 @@ msgstr ""
 "κορμούς των δέντρων που βρίσκονται στα δεξιά. Για να το πετύχεις θα πρέπει "
 "να χρησιμοποιήσεις τους διαφορετικούς υδροφράκτες κάνοντας κλικ επάνω τους."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3672,7 +3672,7 @@ msgstr ""
 "Οι κάθετες χρωματισμένες μπάρες αναπαριστούν υδροφράκτες και λειτουργούν αν "
 "κάνεις κλικ επάνω τους. Δύο ίδιοι υδατοφράχτες δεν λειτουργούν ταυτόχρονα."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6329,12 +6329,12 @@ msgstr ""
 "το 0 είναι συχνά η αναπαράσταση μιας τάσης σχεδόν ίσης με την τάση εδάφους "
 "και το 1 είναι η αναπαράσταση της τάσης τροφοδοσίας ενός κυκλώματος."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Είσοδος"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Έξοδος"
@@ -20216,13 +20216,13 @@ msgid "New note: %1"
 msgstr "Νέα νότα:%1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20232,12 +20232,12 @@ msgstr ""
 "ακόμη και αν αυτοί ή τα ηχητικά εφέ είναι απενεργοποιημένα στις κύριες "
 "Ρυθμίσεις."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Έξοδος"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Συνέχεια"
@@ -22638,7 +22638,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter ή Return: Υποβολή απάντησης."
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22647,7 +22647,7 @@ msgstr ""
 "Παρατήρησε το τρένο πριν λήξει ο χρόνος και κατόπιν σύρε αντικείμενα, "
 "βαγόνια και μηχανές, για να φτιάξεις ένα ίδιο τρένο."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22875,7 +22875,7 @@ msgstr ""
 "πρέπει να ανάψεις όλες τις συσκευές που καταναλώνουν ενέργεια, ενώ όλοι οι "
 "παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22884,7 +22884,7 @@ msgstr ""
 "Ο Tux έχει επιστρέψει με τη βάρκα στου από το ψάρεμα. Φόρτισε το ηλεκτρικό "
 "σύστημα ώστε να έχει φως στο σπίτι του."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22894,7 +22894,7 @@ msgstr ""
 "συστοιχία φωτοβολταϊκών, αιολικό πάρκο και μετασχηματιστές, για να "
 "επανενεργοποιηθεί όλο το ηλεκτρικό σύστημα."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22905,14 +22905,14 @@ msgstr ""
 "του φωτός. Για να κερδίσεις πρέπει να ανάψεις όλην την κατανάλωση ενώ όλοι "
 "οι παραγωγοί είναι ενεργοί."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Μάθε για ηλεκτρικά συστήματα με βάση τις ανανεώσιμες πηγές ενέργειας. "
 "Απόλαυσέ το."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25827,7 +25827,7 @@ msgstr ""
 "Περίφημα! Μπορείς να ξαναδοκιμάσεις σε λειτουργία αξιολόγησης για να δεις "
 "πώς τα πας με περισσότερες ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25844,17 +25844,17 @@ msgstr ""
 "- Εδώ μπορείς να δοκιμάσεις απευθείας τις γνώσεις που έχεις για το ηλιακό "
 "μας σύστημα."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Αξιολόγηση"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Εκμάθηση"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25864,7 +25864,7 @@ msgstr ""
 "ερωτήσεις. Κάθε ερώτηση έχει 4 επιλογές, από τις οποίες μόνο η μία είναι η "
 "σωστή."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25880,7 +25880,7 @@ msgstr ""
 "υπόδειξης είναι ορατό, μπορείς να πιέσεις σε αυτό για να σε βοηθήσει να "
 "φτάσεις στη σωστή απάντηση."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25889,7 +25889,7 @@ msgstr ""
 "Αρχικά υπάρχουν 20 ερωτήσεις με 4 επιλογές η καθεμιά. Η μπάρα προόδου κάτω "
 "δεξιά της οθόνης δείχνει το ποσοστό επιτυχίας σου."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25902,7 +25902,7 @@ msgstr ""
 "ακόμη ερώτηση στο τέλος μαζί με αυτή που απάντησες λάθος.<br>Ο μέγιστος "
 "αριθμός ερωτήσεων είναι 25, μετά από τον οποίο δεν προστίθενται ερωτήσεις."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25911,7 +25911,7 @@ msgstr ""
 "Θα πρέπει να συγκεντρώσεις βαθμολογία μεγαλύτερη από 90% για να περάσεις την "
 "αξιολόγηση και να γίνεις ειδικός του ηλιακού μας συστήματος!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25922,7 +25922,7 @@ msgstr ""
 "<b>χαμηλότερη</b> είναι η θερμοκρασία του.<br><font color=\"#3bb0de\">%1</"
 "font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25933,7 +25933,7 @@ msgstr ""
 "τον Ήλιο</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25945,12 +25945,12 @@ msgstr ""
 "γράμματα των ονομάτων τους: <b>Ε</b>ρμής, <b>Α</b>φροδίτη, <b>Γ</b>η, <b>Ά</"
 "b>ρης, <b>Δ</b>ίας, <b>Κ</b>ρόνος, <b>Ου</b>ρανός, <b>Π</b>οσειδώνας.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Υπόδειξη"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Προβολή του ηλιακού συστήματος."
@@ -27202,7 +27202,7 @@ msgstr ""
 "Φανταστικά! Ολοκλήρωσες τον κύκλο του νερού. Μπορείς να συνεχίσεις το "
 "παιχνίδι."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27214,7 +27214,7 @@ msgstr ""
 "παρέχει ενέργεια που εξατμίζει το νερό των ποταμών, των λιμνών, των θαλασσών "
 "και των ωκεανών."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27225,7 +27225,7 @@ msgstr ""
 "Οι υδρατμοί ψύχονται σχηματίζοντας μικροσκοπικά σταγονίδια στα σύννεφα και "
 "όταν αυτά συναντούν κρύο αέρα πάνω από τη γη, αρχίζει η βροχή."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27236,7 +27236,7 @@ msgstr ""
 "Αλλά το μεγαλύτερο μέρος του νερού που πέφτει στη γη, ρέει συνεχώς και "
 "τελικά επιστρέφει στις θάλασσες μέσω των ποταμών."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28119,17 +28119,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Προηγούμενο"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Επόμενο"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Παράλειψη"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Έναρξη"

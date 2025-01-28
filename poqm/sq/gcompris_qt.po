@@ -3611,7 +3611,7 @@ msgstr ""
 "Ju kanë ngarkuar pendën e kanalit. Hapni portat dhe pendat sipas radhës së "
 "duhur, që kështu Tux-i të mund të lundrojë përmes portave në të dy kahet."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3620,7 +3620,7 @@ msgstr ""
 "Objektivi juaj është ta drejtoni Tux-in përmes pendës së kanalit që të marrë "
 "trungjet, duke përdorur llojet e ndryshme të gatshme të pendave ujore."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3631,7 +3631,7 @@ msgstr ""
 "ose mbyllen duke klikuar mbi to. S’mund të përdoren njëkohësisht dy penda me "
 "të njëjtën ngjyrë."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6265,12 +6265,12 @@ msgstr ""
 "voltazh thuajse i barabartë me voltazhin e tokëzimit dhe 1 përfaqësohet me "
 "voltazhin e burimit të qarkut."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Hyrje"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Dalje"
@@ -19971,13 +19971,13 @@ msgid "New note: %1"
 msgstr "Shënim i ri: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19986,12 +19986,12 @@ msgstr ""
 "Kjo veprimtari lyp tinguj, ndaj do të luhen ca tinguj, edhe nëse zërat ose "
 "efektet zanore janë çaktivizuar te formësimi kryesor."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Dilni"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Vazhdoni"
@@ -22376,7 +22376,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Tasti Enter ose Return: parashtroni përgjigjen tuaj"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22385,7 +22385,7 @@ msgstr ""
 "Vëzhgoni dhe mbani mend trenin, përpara se të mbarojë koha e treguar nga "
 "kohëmatësi dhe mandej tërhiqni elementët që të krijoni një tren të ngjashëm."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22607,7 +22607,7 @@ msgstr ""
 "në shtëpi, shtypni butonin e dritës për të. Që të fitoni, duhet të ndizni "
 "krejt konsumatorët, teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22616,7 +22616,7 @@ msgstr ""
 "Tux-i është kthyer nga peshkimi me barkën e tij. Rivini në punë sistemin "
 "elektrik, që të ketë dritë në shtëpi."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22626,7 +22626,7 @@ msgstr ""
 "kompleks turbinash me erë dhe transformatorë, që të mund të riaktivizoni "
 "tërë sistemin elektrik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22637,14 +22637,14 @@ msgstr ""
 "butonin e dritës për të. Që të fitoni, duhet të ndizni krejt konsumatorët, "
 "teksa gjithë prodhuesit janë në punë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Mësoni rreth një sistemi elektrik të bazuar në energji të rinovueshme. Ju "
 "bëftë mirë."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25539,7 +25539,7 @@ msgid ""
 msgstr ""
 "Bukur! Mund të ribëni provimin që të provoni dijet tuaja me më shumë pyetje."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25555,17 +25555,17 @@ msgstr ""
 "Diellor.<br><b>2. Mënyra provim</b> - Nën këtë mënyrë mund të provoni dijet "
 "tuaja mbi Sistemin Solar."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Provim"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Nxënie"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25574,7 +25574,7 @@ msgstr ""
 "Klikoni mbi Diellin ose mbi çfarëdo planeti që të shfaqen pyetjet. Çdo "
 "pyetje ka 4 mundësi, prej të cilave njëra është e sakta."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25590,7 +25590,7 @@ msgstr ""
 "është i dukshëm, mund të klikoni mbi të që të keni një ndihmëz për të gjetur "
 "përgjigjen."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25599,7 +25599,7 @@ msgstr ""
 "Fillimisht ka 20 pyetje me 4 mundësi secila. Shtylla e ecurisë djathtas "
 "poshtë ekranit tregon pikët tuaja si përqindje."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25612,7 +25612,7 @@ msgstr ""
 "pyetje tjetër, tok me pyetjen së cilës iu përgjigjët gabimisht.<br>Do të "
 "bëhen maksimumi 25 pyetje, pas të cilave s’do të shtohet pyetje tjetër."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25621,7 +25621,7 @@ msgstr ""
 "Duhet të arrini mbi 90% që të kaloni provimin dhe të bëheni një ekspert i "
 "Sistemit Diellor!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25631,7 +25631,7 @@ msgstr ""
 "1. Sa <b>më larg</b> një planet nga Dielli, aq <b>më e ulët</b> temperatura "
 "e tij.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25642,7 +25642,7 @@ msgstr ""
 "Diellit</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25654,12 +25654,12 @@ msgstr ""
 "<b>T</b>upolev <b>M</b>ë <b>J</b>osh <b>S</b>e <b>U</b>let <b>N</b>gadalë."
 "<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Ndihmëz"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Shihni sistemin diellor"
@@ -26874,7 +26874,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantastike, keni plotësuar ciklin ujor. Mund të vazhdoni të luani."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26885,7 +26885,7 @@ msgstr ""
 "teksa qarkullon nga toka në ajër dhe prapë në të. Nxehtësia e diellit "
 "furnizon energjinë që avullon ujin nga masa ujore të tilla si oqeanet."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26896,7 +26896,7 @@ msgstr ""
 "bulëza të vockla në re. Kur retë takojnë ajër të ftohtë përmbi tokë, "
 "shkaktohen reshjet dhe rënia poshtë në formë shiu."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26907,7 +26907,7 @@ msgstr ""
 "nëntokësor. Por shumica e ujit rrjedh si rrëke, duke u rikthyer më në fund "
 "në dete, përmes lumenjve."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27783,17 +27783,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "I mëparshmi"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Pasuesi"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Anashkaloje"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Fillimi"

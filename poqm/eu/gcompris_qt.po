@@ -3626,7 +3626,7 @@ msgstr ""
 "Ubideko uhateaz arduratzen zara. Ireki ateak eta uhateak ordena egokian, Tux-"
 "ek ateak zeharkatu eta bi noranzkoetan bidaiatu ahal izan dezan."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3635,7 +3635,7 @@ msgstr ""
 "Zure helburua Tux ubidean barna gidatzea da, uhateak zeharkatu eta "
 "enborretara iris dadin, erabilgarri dauden uhate mota ezberdinak erabiliz."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3645,7 +3645,7 @@ msgstr ""
 "Barra bertikal koloredunek uhateak ordezkatzen dituzte, haietan klik eginez "
 "maneiatu daitezke. Mota bereko bi uhate ezin dira aldi berean erabili."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6207,12 +6207,12 @@ msgstr ""
 "tentsioaren gertuko tentsio bat izan ohi da eta 1 zirkuitu baten hornidura "
 "tentsioaren irudikapena da."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Sarrerakoa"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Irteerakoa"
@@ -19882,13 +19882,13 @@ msgid "New note: %1"
 msgstr "Nota berria: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%%1"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19897,12 +19897,12 @@ msgstr ""
 "Jarduera honek soinua behar du, beraz, Konfigurazio nagusian audio ahotsak "
 "edo efektuak ezgaituta egonagatik, soinu batzuk joko ditu."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Irten"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Jarraitu"
@@ -22281,7 +22281,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Sartu edo Itzulbira: zure erantzuna bidaltzea"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22290,7 +22290,7 @@ msgstr ""
 "Trena behatu eta oroitu denbora agortu aurretik, eta, ondoren, elementuak "
 "arrastatu antzeko tren bat eraikitzeko."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22510,7 +22510,7 @@ msgstr ""
 "sakatu argiaren botoia bere ordez. Irabazteko, kontsumitzaile guztiak piztu "
 "behar dituzu ekoizle guztiak martxan daudelarik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22519,7 +22519,7 @@ msgstr ""
 "Tux arrantza egitetik itzuli da bere ontzian. Aktiba ezazu sistema "
 "elektrikoa etxean argindarra izan dezan."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22529,7 +22529,7 @@ msgstr ""
 "plakak, haize-sorgailuak eta transformadoreak, sistema elektriko osoa "
 "berrabiarazteko."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22540,14 +22540,14 @@ msgstr ""
 "bere ordez. Irabazteko, kontsumitzaile guztiak piztu behar dituzu ekoizle "
 "guztiak martxan daudelarik."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Ikasi energia berriztagarrietan oinarritutako elektrizitate sistemei buruz. "
 "Gozatu."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25438,7 +25438,7 @@ msgstr ""
 "Bikain! Ebaluazioa berriz egin dezakezu, galdera gehiagori buruz duzun "
 "ezagutza frogatzeko."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25454,17 +25454,17 @@ msgstr ""
 "Ebaluatzeko modua</b> - Modu honetan eguzki-sistemari buruz duzun ezagutza "
 "frogatu dezakezu."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Ebaluatzea"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Ikastea"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25473,7 +25473,7 @@ msgstr ""
 "Egin klik Eguzkian edo planeta batean galderak erakusteko. Galdera bakoitzak "
 "4 aukera izango ditu, haietako bakarra da zuzena."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25488,7 +25488,7 @@ msgstr ""
 "berriz, hurbiltasun neurgailuari jarraituz. Argibide-botoia ikusgai badago, "
 "hari klik egin diezaiokezu erantzuna aurkitzeko argibide bat lortzeko."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25497,7 +25497,7 @@ msgstr ""
 "Hasieran 20 galdera daude, bakoitza 4 aukerarekin. Pantailaren beheko "
 "eskuineko aurrerapen-barrak zure puntuazioa erakusten du ehunekotan."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25510,7 +25510,7 @@ msgstr ""
 "gaizki erantzundako galderarekin batera.<br>Gehienez 25 galdera egingo dira, "
 "ez gehiago."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25519,7 +25519,7 @@ msgstr ""
 "% 90 baino gehiago puntuatu behar da ebaluazioa gainditzeko eta eguzki-"
 "sisteman aditua izateko!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25529,7 +25529,7 @@ msgstr ""
 "1. Planeta bat Eguzkitik zenbat eta <b>urrunago</b>, orduan eta <b>baxuagoa</"
 "b> da bere tenperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25550,7 +25550,7 @@ msgstr ""
 # Neptuno - Neke
 # (Pluton) - Putzik ez
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25562,12 +25562,12 @@ msgstr ""
 "<b>M</b>antso<b> J</b>oanez gero, iritsiko zara <b>S</b>asoi<b> U</b>nean, "
 "<b>N</b>eke <b>P</b>utzik gabe.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Argibidea"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Ikusi eguzki-sistema"
@@ -26766,7 +26766,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Oso ondo, uraren zikloa osatu duzu. Jolasten jarrai dezakezu."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26777,7 +26777,7 @@ msgstr ""
 "eta atzera egiten duen bidaia da. Eguzkiaren beroak ozeanoak eta beste ur-"
 "multzoetako ura lurruntzeko energia ematen du."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26789,7 +26789,7 @@ msgstr ""
 "freskoa topatzen dutenean, prezipitazioa eragin eta lurrera erotzen da euri "
 "gisa."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26800,7 +26800,7 @@ msgstr ""
 "deiturikoa. Baino ur gehiena isurketa gisa jariatzen da, ibaietatik "
 "itsasoetara itzuliz."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27668,17 +27668,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Aurrekoa"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Saihestu"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Hasi"

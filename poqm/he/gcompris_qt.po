@@ -3500,7 +3500,7 @@ msgstr ""
 "מחסום התעלה באחריותך. צריך לפתוח את השערים ואת מחסומי השערים בסדר הנכון ולתת "
 "לטאקס לעבור דרך השערים בשתי הדרכים."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3509,7 +3509,7 @@ msgstr ""
 "המטרה היא להעביר את טאקס מעבר למחסום התעלה כדי להעביר את גזעי העצים. לשם כך "
 "יש להשתמש בסוגים שונים של מחסומי מים."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3519,7 +3519,7 @@ msgstr ""
 "עמודי הצבע האנכיים מייצגים את מחסומי המים שניתן להפעיל באמצעות לחיצה עליהם. "
 "לא ניתן להפעיל שני מחסומים מאותו סוג באותו זמן."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6057,12 +6057,12 @@ msgstr ""
 "כמו חיבור, חיסור... זהו הבסיס לטכנולוגיית המיחשוב. במציאות, 0 הוא לרוב ייצוג "
 "של זרם שכמעט שווה לזרם בקרקע ו־1 מייצג את הזרם המסופק במעגל."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "פלט"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "קלט"
@@ -19489,13 +19489,13 @@ msgid "New note: %1"
 msgstr "תו חדש:  %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19504,12 +19504,12 @@ msgstr ""
 "פעילות זו דורשת צליל והיא תנגן צלילים גם אם הקולות או האפקטים מבוטלים "
 "בהגדרות הראשיות."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "לצאת?"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "להמשיך"
@@ -21836,7 +21836,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter: להגיש את התשובה"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -21845,7 +21845,7 @@ msgstr ""
 "להתבונן ולזכור את הרכבת לפני שהספירה לאחור מסתיימת ואז לגרור את החלקים כדי "
 "להרכיב רכבת זהה."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22059,7 +22059,7 @@ msgstr ""
 "ללחוץ על כפתור המנורה בשבילו. כדי לזכות עליך להפעיל את כל הצרכנים כאשר כל "
 "הספקים פועלים."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22068,7 +22068,7 @@ msgstr ""
 "טאקס חזר הביתה מהדיג (הוא לא באמת דג, הוא שוחה עם דולפינים) על הסירה שלו. "
 "צריך לחבר את החשמל כדי שיוכל להיות לו אור בבית."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22077,7 +22077,7 @@ msgstr ""
 "ללחוץ על חלקים שונים בפעילות: שמש, ענן, סכר, מערכת סולארית, חוות רוח ושנאים "
 "כדי להפעיל מחדש את מערכת החשמל כולה."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22087,12 +22087,12 @@ msgstr ""
 "כשהמערכת שוב פועלת וטאקס נמצא בביתו, נא ללחוץ על כפתור המנורה בשבילו. כדי "
 "לזכות עליך להפעיל את כל הצרכנים כאשר כל הספקים פועלים."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "ללמוד על מערכת חשמל המבוססת על אנרגיה מתחדשת. בכיף."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -24916,7 +24916,7 @@ msgid ""
 "questions."
 msgstr "נהדר! אפשר להפעיל שוב את ההערכה כדי לבחון את הידע שלך בשאלות נוספות."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -24931,17 +24931,17 @@ msgstr ""
 "לשחק וללמוד על מערכת השמש.<br><b>2. מצב הערכה</b> - במצב זה אפשר לבחון את "
 "הידע על מערכת השמש."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "הערכה"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "למידה"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -24950,7 +24950,7 @@ msgstr ""
 "ללחוץ על השמש או על כוכב לכת כדי לחשוף שאלה. לכל שאלה יהיו 4 אפשרויות שמתוכן "
 "אחת נכונה."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -24964,7 +24964,7 @@ msgstr ""
 "שוב עד שמגיעים לקירבה של 100%. אם כפתור הרמז מופיע, אפשר ללחוץ עליו כדי לקבל "
 "רמז לתשובה הנכונה."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -24973,7 +24973,7 @@ msgstr ""
 "ישנן 20 שאלות בהתחלה עם 4 אפשרויות לכל אחת. מד ההתקדמות בצד ימין למטה במסך "
 "מראה את אחוז הציון."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -24985,7 +24985,7 @@ msgstr ""
 "ושאלה נוספת תישאל יחד עם השאלה שעליה לא ענית נכון.<br>מקסימום 25 שאלות ישאלו "
 "ואחר כך לא תתווספנה שאלות."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -24993,7 +24993,7 @@ msgid ""
 msgstr ""
 "צריך להשיג ציון של יותר מ90% כדי לעבור את ההערכה ולהפוך למומחה במערכת השמש!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25003,7 +25003,7 @@ msgstr ""
 "1. ככל שכוכב לכת <b>רחוק יותר</b> מהשמש, כך הטמפרטורה שלו <b>נמוכה יותר</b>. "
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25014,7 +25014,7 @@ msgstr ""
 "\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25025,12 +25025,12 @@ msgstr ""
 "בכל מילה -  <b>ח</b>ייכתי <b>נ</b>כון <b>א</b>ז <b>מ</b>צאתי <b>צ</b>חוק "
 "<b>ש</b>מדביק <b>א</b>נשים <b>נ</b>חמדים.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "רמז"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "לצפות במערכת השמש"
@@ -26162,7 +26162,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "יוצא מהכלל, השלמת את מחזור המים. אפשר להמשיך לשחק."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26172,7 +26172,7 @@ msgstr ""
 "מחזור המים (נקרא גם מעגל הידרולוגי) הוא מסע שהמים עוברים כשהם חוזרים מהיבשה "
 "לשמים ושוב ושוב. חום השמש מספק אנרגיה כדי לאדות מים מגופי מים כמו אוקיינוסים."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26182,7 +26182,7 @@ msgstr ""
 "גם צמחים מאבדים מים לאוויר דרך דִּיּוּת. אדי המים מתקררים ויוצרים אגלים זעירים "
 "ועננים. כאשר העננים פוגשים אויר קר מעל היבשה, נוצרים משקעים שיורדים כגשם."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26192,7 +26192,7 @@ msgstr ""
 "חלק מהמים נלכדים בין שכבות אבן וחימר ונקראים מי-תהום. אבל רוב המים זורמים "
 "כנגר-עילי, וחוזרים בסופו של דבר לים דרך הנהרות."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27035,17 +27035,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "הקודם"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "הבא"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "לדלג"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "להתחיל"

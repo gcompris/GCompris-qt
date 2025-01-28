@@ -3688,7 +3688,7 @@ msgstr ""
 "Ты отвечаешь за работу шлюза. Открывай ворота шлюза и перепускные клапаны в "
 "правильном порядке, чтобы Тукс смог пройти через шлюз в обоих направлениях."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3697,7 +3697,7 @@ msgstr ""
 "Твоя цель — провести Тукса через шлюз, чтобы забрать деревянные бревна. Для "
 "этого потребуется использовать различные устройства."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3708,7 +3708,7 @@ msgstr ""
 "шлюза, которыми можно управлять, нажав на них. Нельзя одновременно изменить "
 "состояние двух устройств одного типа."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6366,12 +6366,12 @@ msgstr ""
 "основа компьютерной техники. В реальности 0 часто обозначает напряжение "
 "земли, а 1 — напряжение питания в электроцепи."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Вход"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Выход"
@@ -20302,13 +20302,13 @@ msgid "New note: %1"
 msgstr "Новая нота: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20317,13 +20317,13 @@ msgstr ""
 "Для этого упражнения необходим звук, поэтому оно будет воспроизводить звуки, "
 "даже если они отключены в основной конфигурации."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Выйти"
 
 # https://ru.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D1%82%D0%B8_%D1%81%D0%B2%D0%B5%D1%82%D0%B0 --aspotashev
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Продолжить"
@@ -22773,7 +22773,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Клавиша «Ввод»: подтверждение своего ответа"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22782,7 +22782,7 @@ msgstr ""
 "Запомни, как выглядит поезд, а затем повтори его, перетаскивая вагоны и "
 "выстраивая их в нужном порядке."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23001,7 +23001,7 @@ msgstr ""
 "выиграть, ты должен включить все потребители электрической энергии, пока "
 "работают все её источники."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23010,7 +23010,7 @@ msgstr ""
 "Тукс только что вернулся с рыбалки и обнаружил, что в доме нет света. "
 "Восстанови систему подачи электричества, чтобы у Тукса был свет."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23019,7 +23019,7 @@ msgstr ""
 "Чтобы снова включить всю систему, нажимай различные элементы: солнце, "
 "облако, плотину, солнечные панели, ветряную ферму и трансформаторы."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23030,13 +23030,13 @@ msgstr ""
 "выиграть, ты должен включить все потребители электрической энергии, пока "
 "работают все её источники."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Из этой игры ты узнаешь больше о возобновляемых источниках электроэнергии."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -26040,7 +26040,7 @@ msgstr ""
 "Прекрасно! Ты можешь запустить проверку знаний ещё раз, чтобы ответить на "
 "другие вопросы."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26056,17 +26056,17 @@ msgstr ""
 "<br><b>2. Режим проверки знаний</b>: в этом режиме тебе будет предложено "
 "ответить на вопросы."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Проверка знаний"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Обучение"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -26075,7 +26075,7 @@ msgstr ""
 "Щёлкни по Солнцу или любой планете, чтобы ответить на вопросы. В каждом "
 "вопросе 4 варианта ответа, из которых верным является только один."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -26089,7 +26089,7 @@ msgstr ""
 "задача — ответить на все вопросы с точностью 100%. Если виден значок "
 "подсказки, ты можешь нажать его, чтобы узнать ответ."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26099,7 +26099,7 @@ msgstr ""
 "ответа. Индикатор выполнения в правом нижнем углу показывает набранные тобой "
 "проценты."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26112,7 +26112,7 @@ msgstr ""
 "вопрос и ещё раз на тот вопрос, на который ты дал неверный ответ."
 "<br>Максимальное количество вопросов — 25."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26121,7 +26121,7 @@ msgstr ""
 "Ты должен дать более 90% правильных ответов, чтобы сдать тест и стать "
 "экспертом по Солнечной системе!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26131,7 +26131,7 @@ msgstr ""
 "1. Чем <b>дальше</b> планета от Солнца, тем <b>ниже</b> её температура."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26142,7 +26142,7 @@ msgstr ""
 "Солнца</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26153,12 +26153,12 @@ msgstr ""
 "слова соответствует первой букве названия планеты:  Мы Все Знаем: <b>М</"
 "b>ама <b>Ю</b>ли <b>С</b>ела <b>У</b>тром <b>Н</b>а <b>П</b>илюли. <br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Подсказка"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Посмотреть на Солнечную систему"
@@ -27413,7 +27413,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Отлично, ты замкнул круговорот воды. Ты можешь продолжить играть."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27424,7 +27424,7 @@ msgstr ""
 "воды между океанами, сушей и атмосферой. Солнечное тепло обеспечивает "
 "испарение воды с поверхности океанов и других водоёмов."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27436,7 +27436,7 @@ msgstr ""
 "холодный воздух с земли, формируются осадки и выпадают в виде дождя, снега "
 "или града."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27447,7 +27447,7 @@ msgstr ""
 "грунтовыми водами. Но большая её часть стекает, возвращаясь в моря и озёра "
 "через реки."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28347,17 +28347,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Назад"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Далее"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Пропустить"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Начать"

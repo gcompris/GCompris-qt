@@ -3574,14 +3574,14 @@ msgstr ""
 "您是負責運河閘門的人。請以正確的順序開啟大門與閘道，好讓小企鵝雙向都能通過大"
 "門。"
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr "您的目標是透過操作不同型態的水門，讓小企鵝通過運河取得木材。"
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3589,7 +3589,7 @@ msgid ""
 "simultaneously."
 msgstr "垂直的彩色條表示水門，點擊可以操作。兩個相同型態的水門不能同時動作。"
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6168,12 +6168,12 @@ msgstr ""
 "法... 等等。它是電腦科技的基礎。事實上，0 在電路上是以趨近於接地的低電壓來呈"
 "現，1 則是以電源供應的電壓來呈現。"
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "輸入"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "輸出"
@@ -19690,25 +19690,25 @@ msgid "New note: %1"
 msgstr "新的音符：%1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
 "voices or effects are disabled in the main configuration."
 msgstr "這個遊戲需要播放聲音，所以即使您設定關閉聲音或音效，它還是會播出聲音。"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "離開"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "繼續"
@@ -22036,14 +22036,14 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Enter 或 Return 鍵：送出您的答案"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
 "to set up a similar train."
 msgstr "在時限前觀察並記住火車的組合，然後重新組出正確的火車。"
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22253,14 +22253,14 @@ msgstr ""
 "力系統。當系統完成準備並讓小企鵝回到家，幫牠按下燈的開關。您必須在發電的系統"
 "都啟動後，打開所有的電器才能過關。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
 "up so he can have light in his home."
 msgstr "小企鵝剛從船上釣完魚回到家。請將電力系統準備好讓牠可以沖個澡。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22269,7 +22269,7 @@ msgstr ""
 "點擊不同的元素：太陽、雲、水壩、太陽能板，風力發電場與變壓器等，來啟動整個電"
 "力系統。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22279,12 +22279,12 @@ msgstr ""
 "當系統完成準備並讓小企鵝回到家，幫牠按下燈的開關。您必須在發電的系統都啟動"
 "後，打開所有的電器才能過關。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "學習運用可再造能源來建立電力系統。"
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25171,7 +25171,7 @@ msgid ""
 "questions."
 msgstr "太棒了！您可以重複玩測驗模式，用更多問題來測驗您的知識。"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25185,17 +25185,17 @@ msgstr ""
 "在設定視窗中切換：<br/><b>1. 學習模式</b>—在這個模式中您可以玩跟學習太陽系相"
 "關的知識。<br/><b>2. 測驗模式</b>—在這個模式中您可以測驗您對太陽系的瞭解。"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "測驗模式"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "學習模式"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25203,7 +25203,7 @@ msgid ""
 msgstr ""
 "點擊太陽或任何行星就會出現問題。每個問題有四個選項，其中一個是完全正確的。"
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25216,14 +25216,14 @@ msgstr ""
 "為 1%。跟著指標嘗試，直到貼近程度為 100%。如果提示圖示出現，可以點擊提示來尋"
 "求正確答案。"
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
 "the bottom right of the screen shows your percentage score."
 msgstr "有 20 個問題，每個問題有四個選項。右下角的進度條表示您分數的百分比。"
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25234,14 +25234,14 @@ msgstr ""
 "如果您的答案是正確的，就會得分。<br>如果您的答案是錯誤的，會扣分，並且會在後"
 "面再詢問一次沒有答對的問題。<br>最多會問 25 個問題。"
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
 "expert!"
 msgstr "您要得到 90% 以上才能通過測驗模式，變成太陽系專家！"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25251,7 +25251,7 @@ msgstr ""
 "1. 行星離太陽越<b>遠</b>，它的溫度就會越<b>低</b>。<br/><font color=\"#3bb0de"
 "\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25262,7 +25262,7 @@ msgstr ""
 "font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25270,12 +25270,12 @@ msgid ""
 "b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br>"
 msgstr "3. 太陽系行星記憶法：水金地火木土天海<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "提示"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "查看太陽系"
@@ -26457,7 +26457,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "太棒了，您完成了整個水循環系統。您可以繼續玩。"
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26467,7 +26467,7 @@ msgstr ""
 "水循環（或稱水文循環）就是水從陸地到天空再回到陸地上的過程。太陽的熱提供了水"
 "蒸發需要的能量。"
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26477,7 +26477,7 @@ msgstr ""
 "植物也會將水排出到空氣中。水蒸氣會冷卻，凝結成小水滴形成雲。當雲遇上更冷的空"
 "氣，就會形成降水，也就是下雨。"
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26487,7 +26487,7 @@ msgstr ""
 "有些水會留在岩石層或土層，稱為地下水。但大部份的水最後都會經由河流回到大海"
 "中。"
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27330,17 +27330,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "前一個"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "下一個"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "略過"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "開始"

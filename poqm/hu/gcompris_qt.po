@@ -3613,7 +3613,7 @@ msgstr ""
 "Te üzemelteted a zsilipet. Nyisd ki a különböző kapukat, majd zárd be őket "
 "jó sorrendben. Utaztasd Tuxot a zsilipen keresztül mindkét irányban."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3622,7 +3622,7 @@ msgstr ""
 "A célod, Tux átjuttatása a csatornán, a fahídon át a különféle zsilipek "
 "segítségével. "
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3632,7 +3632,7 @@ msgstr ""
 "A függőleges szines csíkok a zsilipeket jelölik, melyeket kattintással lehet "
 "mozgatni. Két egyforma zsilip egyidőben nem működhet."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6158,12 +6158,12 @@ msgstr ""
 "kivonás... Ez a számítástechnika alapja. A valóságban a 0 a feszültség "
 "hiányát jelöli, ha a feszültség 1-es akkor az adott áramkörben van áram."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Bemenet"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Kimenet"
@@ -19745,13 +19745,13 @@ msgid "New note: %1"
 msgstr "Új hangjegy: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19760,12 +19760,12 @@ msgstr ""
 "Ez a feladat hangokat használ, így akkor is hallasz pár hangot, ho a "
 "főmenüben kikapcsoltad azokat!"
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Kilépsz?"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Folytatás"
@@ -22106,7 +22106,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "A megoldásaidat az Enter gombbal tudod elküldeni"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22115,7 +22115,7 @@ msgstr ""
 "Tanulmányozd és jegyezd meg a vonat sorrendjét mielőtt lejár az idő, majd "
 "húzd be a részeket, hogy egy ugyanolyan vonatot építs."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22334,7 +22334,7 @@ msgstr ""
 "rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki. Ha nyerni "
 "akarsz minden elektromos eszközt be kell kapcsolnod."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22343,7 +22343,7 @@ msgstr ""
 "Tux visszatért a horgászatból. Állítsd vissza az elektromos rendszert, hogy "
 "lássa merre kell hazamennie!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22352,7 +22352,7 @@ msgstr ""
 "Kattints a különféle aktív elemekre pl: nap, felhő, gát, napelem, "
 "szélturbina,transzformátor, hogy bekapcsolhasd az elektromos rendszert!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22362,12 +22362,12 @@ msgstr ""
 "Ha a rendszer visszakapcsol, és Tux hazaért kapcsold fel a lámpát neki! Ha "
 "nyerni akarsz minden elektromos eszközt be kell kapcsolnod!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Tanuljunk játékosan a megújuló enegriaforrásokról. "
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25196,7 +25196,7 @@ msgid ""
 "questions."
 msgstr "Remek! Tudásodat felfrissítheted további kérdések segítségével."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25211,17 +25211,17 @@ msgstr ""
 "módban játszva tanulhatsz a Naprendszerről.<br><b>2. Vizsga mód</b> - Ebben "
 "a módban tesztelheted tudásodat a Naprendszerről."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Vizsga"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Tanulás"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25230,7 +25230,7 @@ msgstr ""
 "Kattints bármelyik bolygó napjára a kérdésekhez! Minden kérdéshez négy "
 "válasz tartozik, amelyből csak az egyik helyes."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25244,7 +25244,7 @@ msgstr ""
 "jelzi. Próbáld meg 100%-ot elérni a mérő segítségével, vagy lesd meg a "
 "helyes választ."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25253,7 +25253,7 @@ msgstr ""
 "Összesen 20 kérdés van, egyenként 4 válaszlehetőséggel. A haladásmérő a jobb "
 "alső sarokban mutatja a százalékos pontjaidat."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25265,7 +25265,7 @@ msgstr ""
 "egy újabb kérdést kapsz a helytelenül megválaszolt helyett.<br>Maximum 25 "
 "kérdést teszünk fel, ehhez már nem tartozk plusz kérdés."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25273,7 +25273,7 @@ msgid ""
 msgstr ""
 "Ha a Naprendszer mindentudója akarsz lenni 90% fölött kell teljesítened!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25283,7 +25283,7 @@ msgstr ""
 "1. A <b>a legtávolabbi bolygó</b> a Naptól, számítva, <b>ahogy távolodunk</"
 "b>csükken a hőmérséklete .<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25294,7 +25294,7 @@ msgstr ""
 "b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25305,12 +25305,12 @@ msgstr ""
 "<b>E</b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</"
 "b>oodles.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Segítség"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Megnézem a Naprendszert"
@@ -26505,7 +26505,7 @@ msgstr ""
 "Fantasztikus! Sikerült a víz körfogást megcsinálnod. Most folytathatod a "
 "játékot."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26516,7 +26516,7 @@ msgstr ""
 "földből az ég felé és vissza. A nap melege energiát biztosít ahhoz, hogy "
 "elpárologhasson a víz olyan helyekről mint az óceán."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26527,7 +26527,7 @@ msgstr ""
 "cseppeket formáz felhők képében. Mikor a felhők találkoznak a hideg "
 "levegővel a felszínen, beindul a lecsapódás és a víz esőként esik a földre."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26538,7 +26538,7 @@ msgstr ""
 "víz többsége túlfolyik, és később patakokon át a tavakba vagy a tengerbe "
 "folyik."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27395,17 +27395,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Előző"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Következő"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Kihagy"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Indítás"

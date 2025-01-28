@@ -3765,7 +3765,7 @@ msgstr ""
 "rescloses en l'ordre correcte, de manera que aconseguiu que en Tux navegui "
 "per les portes en ambdues direccions."
 
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
@@ -3775,7 +3775,7 @@ msgstr ""
 "per a obtenir els troncs, usant els diferents tipus de rescloses d'aigua que "
 "hi ha disponibles."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3786,7 +3786,7 @@ msgstr ""
 "es poden fer operar fent-hi clic. No es poden operar simultàniament dues "
 "rescloses del mateix tipus."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6480,12 +6480,12 @@ msgstr ""
 "tensió gairebé igual que la tensió del terra i 1 és la representació de la "
 "tensió alimentada d'un circuit."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Entrada"
 
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Sortida"
@@ -20325,13 +20325,13 @@ msgid "New note: %1"
 msgstr "Nota nova: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1%"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -20341,12 +20341,12 @@ msgstr ""
 "tot si les veus d'àudio o els efectes estan inhabilitats a la configuració "
 "principal."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Surt"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Continua"
@@ -22784,7 +22784,7 @@ msgctxt "ActivityInfo|"
 msgid "Enter or Return: submit your answer"
 msgstr "Retorn: per a entregar la resposta"
 
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22793,7 +22793,7 @@ msgstr ""
 "Observeu i recordeu el tren abans que acabi el temporitzador, i arrossegueu "
 "els elements per a configurar un tren similar."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -23015,7 +23015,7 @@ msgstr ""
 "seva, premeu el botó de la llum per ell. Per a guanyar cal encendre tots els "
 "consumidors quan els productors estiguin actius."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -23024,7 +23024,7 @@ msgstr ""
 "En Tux torna de pesca en el seu vaixell. Has de tornar a posar en marxa el "
 "sistema elèctric per tal que pugui tenir llum a casa seva."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -23034,7 +23034,7 @@ msgstr ""
 "solars, parcs eòlics i transformadors, amb la finalitat de reactivar tot el "
 "sistema elèctric."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -23045,14 +23045,14 @@ msgstr ""
 "la llum per ell. Per a guanyar cal encendre tots els consumidors quan els "
 "productors estiguin actius."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr ""
 "Aprendre sobre un sistema elèctric basat en les energies renovables. Gaudiu-"
 "ne."
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25946,7 +25946,7 @@ msgstr ""
 "Genial! Pots tornar a reproduir l'avaluació per a provar el teu coneixement "
 "sobre més preguntes."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25962,17 +25962,17 @@ msgstr ""
 "solar.<br><b>2. Mode avaluació</b> - En aquest mode posaràs a prova els teus "
 "coneixements sobre el sistema solar."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Avaluació"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Aprenentatge"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25981,7 +25981,7 @@ msgstr ""
 "Fes clic al Sol o en qualsevol planeta per a revelar les preguntes. Cada "
 "pregunta té 4 opcions, de les quals una serà la correcta."
 
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25997,7 +25997,7 @@ msgstr ""
 "del 100% seguint el comptador d'apropament. Si el botó «Consell» és visible, "
 "pots fer-hi clic per a obtenir un consell que t'ajudarà a trobar la resposta."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -26007,7 +26007,7 @@ msgstr ""
 "a la part inferior dreta de la pantalla mostra el percentatge de la "
 "puntuació."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -26021,7 +26021,7 @@ msgstr ""
 "faran un màxim de 25 preguntes després de les quals no s'afegirà cap més "
 "pregunta."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -26030,7 +26030,7 @@ msgstr ""
 "Cal que superis el 90% per a aprovar l'avaluació i convertir-te en un expert "
 "en el sistema solar."
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26040,7 +26040,7 @@ msgstr ""
 "1. Com <b>més lluny</b> estigui un planeta del Sol, <b>més baixa</b> serà la "
 "seva temperatura.<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -26051,7 +26051,7 @@ msgstr ""
 "del Sol</b>.<br><font color=\"#3bb0de\">%1</font>"
 
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -26063,12 +26063,12 @@ msgstr ""
 "b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles."
 "<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Consell"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vista del sistema solar"
@@ -27298,7 +27298,7 @@ msgid ""
 "Fantastic, you have completed the water cycle. You can continue playing."
 msgstr "Fantàstic. Has completat el cicle de l'aigua. Pots seguir jugant."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -27311,7 +27311,7 @@ msgstr ""
 "els oceans."
 
 # Nota: https://ca.wikipedia.org/wiki/Transpiració_vegetal
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -27323,7 +27323,7 @@ msgstr ""
 "núvols es troben amb aire fred sobre la terra, s'activen les precipitacions "
 "i cauen en forma de pluja."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -27334,7 +27334,7 @@ msgstr ""
 "aigua subterrània. Però la gran part de l'aigua flueix com un vessament, "
 "tornant als mars a través dels rius."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -28217,17 +28217,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Anterior"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Següent"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Omet"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Inicia"

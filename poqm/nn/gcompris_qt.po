@@ -3605,14 +3605,14 @@ msgstr ""
 "rekkjefølgje, slik at Tux kan reisa fram og tilbake gjennom systemet."
 
 # Må vera lik (starten på) tilsvarande tekst i «gcompris_voices.po».
-#: activities/canal_lock/CanalLock.qml:82
+#: activities/canal_lock/CanalLock.qml:74
 msgctxt "CanalLock|"
 msgid ""
 "Your goal is to lead Tux across the canal lock to get the wooden logs, using "
 "the different types of water locks available."
 msgstr "Du må hjelpa Tux gjennom kanalslusa for å henta tømmerstokkar."
 
-#: activities/canal_lock/CanalLock.qml:84
+#: activities/canal_lock/CanalLock.qml:76
 msgctxt "CanalLock|"
 msgid ""
 "The vertical colored bars represent the water locks, which can be operated "
@@ -3622,7 +3622,7 @@ msgstr ""
 "Dei loddrette firkantane er sluseportar, som du kan trykkja på for å opna "
 "eller stengja. Men du kan ikkje betena to like sluseportar samtidig."
 
-#: activities/canal_lock/CanalLock.qml:86
+#: activities/canal_lock/CanalLock.qml:78
 msgctxt "CanalLock|"
 msgid ""
 "The water level inside the lock will change according to the side of the "
@@ -6176,13 +6176,13 @@ msgstr ""
 "datamaskinteknologi. I praksis representerer talet 0 ei spenning om lag lik "
 "jordspenninga og talet 1 representerer matespenninga til straumkrinsen."
 
-#: activities/digital_electricity/DigitalElectricity.qml:248
+#: activities/digital_electricity/DigitalElectricity.qml:249
 msgctxt "DigitalElectricity|"
 msgid "Input"
 msgstr "Innverdi"
 
 # skip-rule: klammeform
-#: activities/digital_electricity/DigitalElectricity.qml:266
+#: activities/digital_electricity/DigitalElectricity.qml:267
 msgctxt "DigitalElectricity|"
 msgid "Output"
 msgstr "Utverdi"
@@ -19880,13 +19880,13 @@ msgid "New note: %1"
 msgstr "Ny note: %1"
 
 #. The following translation represents percentage.
-#: activities/note_names/NoteNames.qml:264
+#: activities/note_names/NoteNames.qml:256
 #, qt-format
 msgctxt "NoteNames|"
 msgid "%1%"
 msgstr "%1 %"
 
-#: activities/note_names/NoteNames.qml:451
+#: activities/note_names/NoteNames.qml:443
 msgctxt "NoteNames|"
 msgid ""
 "This activity requires sound, so it will play some sounds even if the audio "
@@ -19895,12 +19895,12 @@ msgstr ""
 "Denne aktiviteten brukar lyd, og han vil derfor spela av lyd sjølv om tale "
 "og lydeffektar er slått av i innstillingane."
 
-#: activities/note_names/NoteNames.qml:452
+#: activities/note_names/NoteNames.qml:444
 msgctxt "NoteNames|"
 msgid "Quit"
 msgstr "Avslutt"
 
-#: activities/note_names/NoteNames.qml:453
+#: activities/note_names/NoteNames.qml:445
 msgctxt "NoteNames|"
 msgid "Continue"
 msgstr "Hald fram"
@@ -22304,7 +22304,7 @@ msgid "Enter or Return: submit your answer"
 msgstr "Enter eller Return: Sjå om svaret er rett"
 
 # Må vera lik tilsvarande tekst i «gcompris_voices.po».
-#: activities/railroad/Railroad.qml:132
+#: activities/railroad/Railroad.qml:125
 msgctxt "Railroad|"
 msgid ""
 "Observe and remember the train before the timer ends and then drag the items "
@@ -22313,7 +22313,7 @@ msgstr ""
 "Sjå på toget og prøv å hugsa det. Når tida er ute, skal du setja saman "
 "vognene slik toget var."
 
-#: activities/railroad/Railroad.qml:133
+#: activities/railroad/Railroad.qml:126
 msgctxt "Railroad|"
 msgid ""
 "If you forgot the model, you can click on the Hint button to view it again."
@@ -22528,7 +22528,7 @@ msgstr ""
 "for han. For å vinna må du slå på alle maskinene mens det vert produsert "
 "straum."
 
-#: activities/renewable_energy/RenewableEnergy.qml:310
+#: activities/renewable_energy/RenewableEnergy.qml:302
 msgctxt "RenewableEnergy|"
 msgid ""
 "Tux has come back from fishing on his boat. Bring the electrical system back "
@@ -22537,7 +22537,7 @@ msgstr ""
 "Tux kjem heim etter ein båttur, og du må få straumnettet i gang, slik at han "
 "får lys heime."
 
-#: activities/renewable_energy/RenewableEnergy.qml:312
+#: activities/renewable_energy/RenewableEnergy.qml:304
 msgctxt "RenewableEnergy|"
 msgid ""
 "Click on different active elements: sun, cloud, dam, solar array, wind farm "
@@ -22546,7 +22546,7 @@ msgstr ""
 "Trykk på dei ulike elementa – sola, skyene, demningen, solcellepanela, "
 "vindmøllene og transformatorane – for å setja straumsystemet i gang."
 
-#: activities/renewable_energy/RenewableEnergy.qml:314
+#: activities/renewable_energy/RenewableEnergy.qml:306
 msgctxt "RenewableEnergy|"
 msgid ""
 "When the system is back up and Tux is in his home, push the light button for "
@@ -22557,12 +22557,12 @@ msgstr ""
 "lysbrytaren for han. For å vinna må du slå på alle maskinene mens det vert "
 "produsert straum."
 
-#: activities/renewable_energy/RenewableEnergy.qml:316
+#: activities/renewable_energy/RenewableEnergy.qml:308
 msgctxt "RenewableEnergy|"
 msgid "Learn about an electrical system based on renewable energy. Enjoy."
 msgstr "Lær om eit straumsystem basert på fornybar energi. Kos deg!"
 
-#: activities/renewable_energy/RenewableEnergy.qml:340
+#: activities/renewable_energy/RenewableEnergy.qml:332
 msgctxt "RenewableEnergy|"
 msgid ""
 "It is not possible to consume more electricity than what is produced. There "
@@ -25467,7 +25467,7 @@ msgid ""
 "questions."
 msgstr "Supert! Du kan ta kvissen om att for å prøva deg på fleire spørsmål."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25482,17 +25482,17 @@ msgstr ""
 "Her kan du utforska og læra om solsystemet.<br><b>2. Kvissmodus</b>: Her kan "
 "du finna ut kor mykje du veit om solsystemet."
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Assessment"
 msgstr "Kviss"
 
-#: activities/solar_system/SolarSystem.qml:160
+#: activities/solar_system/SolarSystem.qml:152
 msgctxt "SolarSystem|"
 msgid "Learning"
 msgstr "Læring"
 
-#: activities/solar_system/SolarSystem.qml:164
+#: activities/solar_system/SolarSystem.qml:156
 msgctxt "SolarSystem|"
 msgid ""
 "Click on the Sun or any planet to reveal questions. Each question has 4 "
@@ -25502,7 +25502,7 @@ msgstr ""
 "svaralternativ, men berre eitt av dei er rett."
 
 # Målaren heiter «Accuracy», ikkje «Closeness», og vert delt av fleire aktivitetar.
-#: activities/solar_system/SolarSystem.qml:165
+#: activities/solar_system/SolarSystem.qml:157
 msgctxt "SolarSystem|"
 msgid ""
 "After a planet is clicked, the Closeness meter at the bottom-right corner of "
@@ -25516,7 +25516,7 @@ msgstr ""
 "Prøv deg fram heilt til du får 100 %. Viss hintknappen er synleg, kan du "
 "trykkja på han for å få eit hint om rett svar."
 
-#: activities/solar_system/SolarSystem.qml:170
+#: activities/solar_system/SolarSystem.qml:162
 msgctxt "SolarSystem|"
 msgid ""
 "There are 20 questions initially with 4 options each. The progress bar at "
@@ -25525,7 +25525,7 @@ msgstr ""
 "Du får 20 spørsmål, kvart med fire svaralternativ. Poengmålaren nede til "
 "høgre viser deg kor stor prosentdel av spørsmåla du har svara rett på."
 
-#: activities/solar_system/SolarSystem.qml:171
+#: activities/solar_system/SolarSystem.qml:163
 msgctxt "SolarSystem|"
 msgid ""
 "If your answer is correct, your score increases.<br>If your answer is wrong, "
@@ -25537,7 +25537,7 @@ msgstr ""
 "og du får spørsmålet på nytt ved slutten av runden, saman med eit "
 "ekstraspørsmål.<br>Du får maks 25 spørsmål som du må svara på."
 
-#: activities/solar_system/SolarSystem.qml:172
+#: activities/solar_system/SolarSystem.qml:164
 msgctxt "SolarSystem|"
 msgid ""
 "You should score above 90% to pass the assessment and become a Solar System "
@@ -25546,7 +25546,7 @@ msgstr ""
 "Du må skåra meir enn 90 % for å klara kvissen – og du kan då kalla deg ein "
 "solsystemekspert!"
 
-#: activities/solar_system/SolarSystem.qml:357
+#: activities/solar_system/SolarSystem.qml:349
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25556,7 +25556,7 @@ msgstr ""
 "1. Jo <b>lengre</b> ein planet er frå sola, jo <b>lågare</b> er temperaturen."
 "<br><font color=\"#3bb0de\">%1</font>"
 
-#: activities/solar_system/SolarSystem.qml:358
+#: activities/solar_system/SolarSystem.qml:350
 #, qt-format
 msgctxt "SolarSystem|"
 msgid ""
@@ -25568,7 +25568,7 @@ msgstr ""
 
 # Regla er eigentleg litt utdatert, då Pluto ikkje lenger er med, men ho fungerer dersom me ikkje markerer p-en i «på».
 #. find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
-#: activities/solar_system/SolarSystem.qml:361
+#: activities/solar_system/SolarSystem.qml:353
 msgctxt "SolarSystem|"
 msgid ""
 "3. Always remember this rhyme to learn the position of planets, examine the "
@@ -25580,12 +25580,12 @@ msgstr ""
 "b>at <b>u</b>tan <b>n</b>oko på!<br> Dei utheva forbokstavane i orda er "
 "forbokstavane i namna på planetane, frå sola og utover.<br>"
 
-#: activities/solar_system/SolarSystem.qml:363
+#: activities/solar_system/SolarSystem.qml:355
 msgctxt "SolarSystem|"
 msgid "Hint"
 msgstr "Hint"
 
-#: activities/solar_system/SolarSystem.qml:371
+#: activities/solar_system/SolarSystem.qml:363
 msgctxt "SolarSystem|"
 msgid "View the solar system"
 msgstr "Vis solsystemet"
@@ -26737,7 +26737,7 @@ msgstr ""
 "Fantastisk! Du har fullført vasskrinsløpet. Du kan halda fram med å spela, "
 "viss du vil."
 
-#: activities/watercycle/Watercycle.qml:147
+#: activities/watercycle/Watercycle.qml:139
 msgctxt "Watercycle|"
 msgid ""
 "The water cycle (also known as the hydrologic cycle) is the journey water "
@@ -26748,7 +26748,7 @@ msgstr ""
 "land til skyer og tilbake. Sola gjev varmeenergi som fordampar vatnet frå "
 "havet og andre vassmassar."
 
-#: activities/watercycle/Watercycle.qml:150
+#: activities/watercycle/Watercycle.qml:142
 msgctxt "Watercycle|"
 msgid ""
 "Plants also lose water to the air through transpiration. The water vapor "
@@ -26759,7 +26759,7 @@ msgstr ""
 "ned og dannar små vassdropar i skyene. Når skyene møter kald luft over land, "
 "fell vatnet som regn."
 
-#: activities/watercycle/Watercycle.qml:153
+#: activities/watercycle/Watercycle.qml:145
 msgctxt "Watercycle|"
 msgid ""
 "Some of the water is trapped between rock or clay layers, called "
@@ -26769,7 +26769,7 @@ msgstr ""
 "Noko av vatnet sit fast i jord og berg under jordoverflata. Dette vert kalla "
 "grunnvatn. Men det meste av vatnet renn ut i havet att, via elver."
 
-#: activities/watercycle/Watercycle.qml:155
+#: activities/watercycle/Watercycle.qml:147
 msgctxt "Watercycle|"
 msgid ""
 "Your goal is to complete the water cycle before Tux reaches home. Click on "
@@ -27626,17 +27626,17 @@ msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Førre"
 
-#: core/IntroMessage.qml:153
+#: core/IntroMessage.qml:152
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Neste"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Hopp over"
 
-#: core/IntroMessage.qml:168
+#: core/IntroMessage.qml:166
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Start"
