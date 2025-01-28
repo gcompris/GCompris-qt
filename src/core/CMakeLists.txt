@@ -323,6 +323,11 @@ if(BUILD_STANDALONE AND NOT ANDROID)
   # Specify the path to get the Qt libraries
   get_target_property(QtCore_location ${QT_MAJOR}::Core LOCATION)
   get_filename_component(QT_LIBS_DIRECTORY ${QtCore_location} DIRECTORY)
+  set(DIRS
+      "@Qt6_DIR@/../../../"
+      "@Qt6_DIR@/../../"
+      "@QT_LIBS_DIRECTORY@/"
+     )
   configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
