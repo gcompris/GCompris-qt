@@ -1995,6 +1995,9 @@ msgid ""
 "slider so that the voltage drop in the bulb should be 10V. Note that the "
 "bulb intensity should vary while dragging the slider."
 msgstr ""
+"მიაერთეთ ნათურა რეოსტატის შესაბამის ბოლოებს და დააყენეთ სლაიდერი ისე, რომ "
+"ნათურაში ვოლტაჯის ვარდნა 10ვ იყოს. დაიმახსოვრეთ, რომ სლაიდერის გადათრევისას "
+"ნათურის ინტენსივობა შეიცვლება."
 
 #: activities/analog_electricity/TutorialDataset.qml:251
 msgctxt "TutorialDataset|"
@@ -2051,6 +2054,8 @@ msgid ""
 "Create a circuit so that the voltage drop in both bulbs are equal to the "
 "voltage source (battery)."
 msgstr ""
+"შექმენით წრედი ისე, რომ ვოლტაჟის ვარდნა ორივე ნათურაში ვოლტაჟის წყაროს "
+"(ელემენტის) ტოლი იყოს."
 
 #. Activity title
 #: activities/baby_keyboard/ActivityInfo.qml:15
