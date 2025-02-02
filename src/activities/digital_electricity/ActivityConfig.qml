@@ -18,6 +18,7 @@ Item {
     property Item background
     property alias modeBox: modeBox
     width: flick.width
+    height: childrenRect.height
     property var availableModes: [
         { "text": qsTr("Tutorial Mode"), "value": "tutorial" },
         { "text": qsTr("Free Mode"), "value": "free" }
