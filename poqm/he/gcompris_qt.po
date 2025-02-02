@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GCompris\n"
 "POT-Creation-Date: 2019-09-04 13:03+0000\n"
-"PO-Revision-Date: 2025-01-23 10:32+0200\n"
+"PO-Revision-Date: 2025-02-01 10:23+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -18766,9 +18766,9 @@ msgid ""
 "reach the maximum zoom level, a gold nugget will appear at the position of "
 "the sparkle. Click on the gold nugget to collect it."
 msgstr ""
-"כשמסתכלים על ערימת הסלעים ניתן לראות נצנוץ איפשהו. לזוז ליד הנצנוץ ולהשתמש "
-"בגלגל של העכבר כדי להתמקד. כשמגיעים למיקוד המקסימאלי מופיע גוש זהב במקום "
-"הניצנוץ. ללחוץ על גוש הזהב כדי לאסוף אותו."
+"כשמסתכלים על ערמת הסלעים ניתן לראות נצנוץ איפשהו. לזוז ליד הנצנוץ ולהשתמש "
+"בגלגל של העכבר כדי להתמקד. כשמגיעים למיקוד המרבי מופיע גוש זהב במקום הנצנוץ. "
+"לחיצה על גוש הזהב כדי לאסוף אותו."
 
 #: activities/mining/ActivityInfo.qml:25
 msgctxt "ActivityInfo|"
@@ -19259,12 +19259,9 @@ msgstr "לשים כל פריט באותו מקום כמו בדוגמא הנתו�
 
 #. Help goal
 #: activities/mosaic/ActivityInfo.qml:20
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Training reading skills."
 msgctxt "ActivityInfo|"
 msgid "Train your observation and matching skills."
-msgstr "אימון יכולות קריאה"
+msgstr "אימון יכולות ההבחנה וההתאמה שלך."
 
 #. Help manual
 #: activities/mosaic/ActivityInfo.qml:23
@@ -26690,7 +26687,7 @@ msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
 msgstr "<b>ג׳יקומפרי</b> היא תוכנה חופשית בתוך קהילת KDE."
 
 #: core/DialogAbout.qml:76
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "DialogAbout|"
 msgid ""
 "<b>KDE</b> is a world-wide network of software engineers, artists, writers, "
@@ -26704,11 +26701,11 @@ msgid ""
 "and the software we produce."
 msgstr ""
 "קהילת <b>KDE</b> היא רשת בינלאומית של מהנדסי תוכנה, אמנים, כותבים ומתקינים "
-"המחוייבים (ומחוייבות) לפיתוח של <a href=\"%1\">תוכנות חופשיות</a>. הקהילה "
-"הזו יצרה מאות תוכנות חופשיות לשימוש כחלק מהמסגרות, מרחבי העבודה והיישומונים "
-"של KDE.<br /><br /> KDE היא שיתוף פעולה שבו אין יישות אחת ששולטת על המאמצים "
-"או היצירה של KDE עד כדי הדרה של אחרים/ות. כולם/ן מוזמנים/ות להצטרף ולתרום ל־"
-"KDE, כולל את/ה.<br /><br />בקרו ב־<a href=\"%2\">%2</a> למידע נוסף על KDE "
+"המחויבים (ומחויבות) לפיתוח של <a href=\"%1\">תוכנות חופשיות</a>. הקהילה הזו "
+"יצרה מאות תוכנות חופשיות לשימוש כחלק מהמסגרות, מרחבי העבודה והיישומונים של "
+"KDE.<br /><br /> KDE היא שיתוף פעולה שבו אין יישות אחת ששולטת על המאמצים או "
+"היצירה של KDE עד כדי הדרה של אחרים/ות. כולם/ן מוזמנים/ות להצטרף ולתרום ל־"
+"KDE, כולל אותך.<br /><br />בקרו ב־<a href=\"%2\">%2</a> למידע נוסף על KDE "
 "והתוכנות שאנו יוצרים."
 
 #: core/DialogAbout.qml:93
@@ -27101,31 +27098,22 @@ msgid "Enable the kiosk mode."
 msgstr "להפעיל את מצב הקיוסק."
 
 #: core/main.cpp:102
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use software renderer instead of openGL (slower but should run with any "
-#| "graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
 "graphical card). Deprecated, use --renderer=software instead."
 msgstr ""
-"להשתמש במחולל תוכנה במקום בopenׂGL (יותר איטי אבל אמור לרוץ עם כל כרטיס גרפי)."
+"להשתמש במחולל תוכנה במקום ב־openׂGL (יותר איטי אבל אמור לרוץ עם כל כרטיס "
+"גרפי). השימוש הופסק, יש להשתמש ב־‎--renderer=software במקום."
 
 #: core/main.cpp:105
-#, fuzzy
-#| msgctxt "QObject|"
-#| msgid ""
-#| "Use openGL renderer instead of software (faster but crash potentially "
-#| "depending on your graphical card)."
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
 "depending on your graphical card). Deprecated, use --renderer=opengl instead."
 msgstr ""
 "להשתמש במחולל openGL במקום בתוכנה (מהיר יותר אבל עשוי להתרסק, תלוי בכרטיס "
-"הגרפי שלך)."
+"הגרפי שלך). השימוש בזה הופסק, יש להשתמש ב־‎--renderer=opengl במקום."
 
 #: core/main.cpp:109
 msgctxt "QObject|"
@@ -27159,14 +27147,11 @@ msgid ""
 msgstr ""
 
 #: core/main.qml:235
-#, fuzzy
-#| msgctxt "main|"
-#| msgid "Do you want to download the following external assets?"
 msgctxt "main|"
 msgid ""
 "Do you want to automatically download or update the following external "
 "assets when starting GCompris?"
-msgstr "רוצה להוריד את התוספים החיצוניים האלו?"
+msgstr "להוריד או לעדכן את המשאבים החיצוניים אוטומטית בעת הפעלת ג׳יקומפרי?"
 
 #: core/main.qml:237
 msgctxt "main|"
@@ -27221,19 +27206,13 @@ msgid "You are running GCompris for the first time."
 msgstr "זאת ההפעלה הראשונה של ג׳יקומפרי."
 
 #: core/main.qml:363
-#, fuzzy
-#| msgctxt "main|"
-#| msgid ""
-#| "You should verify that your application settings especially your language "
-#| "is set correctly, and that all language specific sound files are "
-#| "installed. You can do this in the Preferences Dialog."
 msgctxt "main|"
 msgid ""
 "You should verify that your application settings especially your language is "
 "set correctly. You can do this in the Configuration dialog."
 msgstr ""
-"כדאי לוודא שהגדרות האפלקציות שלך ובמיוחד הגדרות השפה מכוונות נכון ושכל קולות "
-"השפה הייחודיים מותקנים. אפשר לעשות את זה בתפריט ההעדפות."
+"עליך לאמת שהגדרות היישום שלך, ובמיוחד השפה שלך מוגדרים כראוי. אפשר לעשות זאת "
+"דרך חלונית ההגדרות."
 
 #: core/main.qml:365
 msgctxt "main|"
