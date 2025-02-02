@@ -18,6 +18,7 @@ Item {
     property alias speedSlider: speedSlider
     property int speedSetting: 5
     width: flick.width
+    height: childrenRect.height
     Column {
         spacing: 10 * ApplicationInfo.ratio
         width: activityConfiguration.width
