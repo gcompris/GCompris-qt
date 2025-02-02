@@ -18,6 +18,7 @@ Item {
     property bool highlightEnabled: highlightBox.checked
     property alias modeBox: modeBox
     width: flick.width
+    height: childrenRect.height
     property var availableModes: [
         { "text": qsTr("Automatic"), "value": 1 },
         { "text": qsTr("Manual"), "value": 2 }
