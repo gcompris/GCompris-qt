@@ -15,6 +15,7 @@ Item {
     property Item background
     property bool easyMode: true
     width: flick.width
+    height: childrenRect.height
 
     Column {
         id: column
