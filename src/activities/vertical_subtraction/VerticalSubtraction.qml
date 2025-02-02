@@ -399,8 +399,8 @@ ActivityBase {
             text: qsTr("Ready")
             visible: !okButton.visible
             anchors.horizontalCenter: background.horizontalCenter
-            anchors.bottom: errorRectangle.bottom
-            anchors.bottomMargin: items.baseMargins + items.digitHeight * 0.5 - height * 0.5
+            y: board.y + items.baseMargins + resultNumber.y
+            height: resultNumber.height
             onClicked: Activity.checkDropped()
         }
 
