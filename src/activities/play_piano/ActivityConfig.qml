@@ -21,6 +21,7 @@ Item {
     readonly property string coloredlessNotes: "colorlessNotes"
     property string mode: coloredNotes
     width: flick.width
+    height: childrenRect.height
 
     ButtonGroup {
         id: childGroup
