@@ -69,7 +69,6 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: {
-            tooltipTimer.stop()
             chooserTimer.stop()
             Activity.stop()
         }
