@@ -128,9 +128,9 @@ Button {
     focusPolicy: Qt.NoFocus
     
     background: Rectangle {
-        border.width: buttonControl.activeFocus || buttonControl.selected ? 4 : 2
+        border.width: Math.max(1, (buttonControl.activeFocus || buttonControl.selected ? 3 : 1) * ApplicationInfo.ratio)
         border.color: themes[theme].borderColor
-        radius: 10
+        radius: 5 * ApplicationInfo.ratio
         gradient: Gradient {
             GradientStop { position: 0 ; color: buttonControl.pressed || buttonControl.down ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
             GradientStop { position: 1 ; color: buttonControl.pressed || buttonControl.down ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
@@ -149,10 +149,8 @@ Button {
             fontSize: textSizes[textSize].fontSize
             font.bold: textSizes[textSize].fontBold
             anchors.fill: parent
-            anchors.leftMargin: 10
-            anchors.rightMargin: rightIconSize > 0 ? rightIconSize : 10 // if there's a rightIconSize, it must handle the rightMargin
-            anchors.topMargin: 10
-            anchors.bottomMargin: 10
+            anchors.margins: 5 * ApplicationInfo.ratio
+            anchors.rightMargin: rightIconSize > 0 ? rightIconSize :  5 * ApplicationInfo.ratio // if there's a rightIconSize, it must handle the rightMargin
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
