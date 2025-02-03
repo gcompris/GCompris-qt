@@ -140,7 +140,7 @@ function checkDropped() {
         for (var i = 0; i < items.numbersModel.count; i++)      // Copy value to expected
             items.numberRepeater.itemAt(i).copyDroppedValues()
         for (i = 0; i < items.numbersModel.count; i++)          // Check for valid lines
-            ok = ok && items.numberRepeater.itemAt(i).checkSelfValues()
+            ok = ok && items.numberRepeater.itemAt(i).checkEmptyDigit()
         if (ok) {
             var result = 0
             for (i = 0; i < items.numbersModel.count; i++) {    // Build the new numberValue (from dropped numbers)
@@ -152,15 +152,18 @@ function checkDropped() {
             items.board.result = result
             if (result < 0)
                 ok = false
-//            console.warn(result)
         }
     } else {
+        for (i = 0; i < items.numbersModel.count; i++)          // Check for valid lines
+            ok = ok && items.numberRepeater.itemAt(i).checkEmptyDigit()
         for (i = 0; i < items.numbersModel.count; i++)          // Check if value is the one expected
             ok = ok && items.numberRepeater.itemAt(i).checkDroppedValues()
     }
     if (ok) {
-        for (i = 0; i < items.numbersModel.count; i++)
+        for (i = 0; i < items.numbersModel.count; i++) {
             items.numberRepeater.itemAt(i).flipDroppable(false) // Disable droppable digits
+            items.numberRepeater.itemAt(i).clearEmptyDigit()    // Clear unrequired zeros
+        }
         if (!level.doItYourself)
             //: Solve (= Find the result of): %1 (= the operation to solve)
             items.caption.text = qsTr("Solve: %1").arg(operationString)
@@ -189,12 +192,12 @@ function checkResult() {
     }
     var ok = true
     var zeros = true
-    for (j = items.resultNumber.digitRepeater.count - 1; j >=0 ; j--) { // Compare each sums digit with answer digit from end to start
+    for (j = 0; j < items.resultNumber.digitRepeater.count; j++) {      // Compare each sums digit with answer digit from units to tens, hundreds
         sums[j] = sums[j] % 10
         var item = items.resultNumber.digitRepeater.itemAt(j)
-        ok &= (sums[j] === item.computedValue)                          // Same digit ?
-        ok &= (zeros || (item.value !== -1))                            // Accept empty digit while first non zero value is not detected
-        if (item.computedValue !== 0)                                   // Detect first non zero value. After empty digit are not allowed
+        ok = ok && (sums[j] === item.computedValue)                     // Same digit ?
+        ok = ok && (zeros || (item.value === -1))                       // Accept empty digit while first non zero value is not detected
+        if (item.value === -1)                                          // Detect first non zero value. After empty digit are not allowed
             zeros = false
     }
     if (ok) {

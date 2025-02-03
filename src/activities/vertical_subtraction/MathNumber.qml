@@ -44,8 +44,10 @@ Item {
     function checkDroppedValues() {
         var ok = true
         for (var i = 0; i < digitRepeater.count; i++) {
-            ok &= (digitRepeater.itemAt(i).expected === digitRepeater.itemAt(i).value)
+            var item = digitRepeater.itemAt(i)
+            ok = ok && ((item.expected > 0) ? (item.expected === item.value) : true)
         }
+
         return ok
     }
 
@@ -56,16 +58,23 @@ Item {
         }
     }
 
-    function checkSelfValues() {
+    function checkEmptyDigit() {                // Check if a number has no empty digit in the middle
         var ok = true
         var finished = false
         for (var i = 0; i < digitRepeater.count; i++) {
             if (digitRepeater.itemAt(i).value === -1)
               finished = true
             else
-                ok = ok && (!finished && (digitRepeater.itemAt(i).value !== -1))
+                ok = ok && !finished && (digitRepeater.itemAt(i).value !== -1)
         }
         return ok
+    }
+
+    function clearEmptyDigit() {                // Clear unrequired zeros on the left
+        var finished = false
+        for (var i = 0; i < digitsModel.count; i++) {
+            digitRepeater.itemAt(i).value = digitsModel.get(i).expected_
+        }
     }
 
     function flipDroppable(drop) {  // bool
