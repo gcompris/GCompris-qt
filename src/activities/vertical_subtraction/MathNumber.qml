@@ -63,7 +63,7 @@ Item {
             if (digitRepeater.itemAt(i).value === -1)
               finished = true
             else
-                ok &= (!finished && (digitRepeater.itemAt(i).value !== -1))
+                ok = ok && (!finished && (digitRepeater.itemAt(i).value !== -1))
         }
         return ok
     }
