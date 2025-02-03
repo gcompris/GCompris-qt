@@ -1,12 +1,12 @@
 # Ozge <ozgebarbaros@gmail.com>.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
 # Volkan Gezer <volkangezer@gmail.com>, 2017, 2021.
 # Filiz Alver <filizalvr@gmail.com>, 2019, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-19 20:43+0300\n"
+"PO-Revision-Date: 2025-02-02 12:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -18,38 +18,38 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
-#: activities/clickanddraw/ActivityConfig.qml:21
-#: activities/drawletters/ActivityConfig.qml:21
-#: activities/drawnumbers/ActivityConfig.qml:21
-#: activities/enumerate/ActivityConfig.qml:21
-#: activities/erase/ActivityConfig.qml:21
-#: activities/erase_2clic/ActivityConfig.qml:21
-#: activities/erase_clic/ActivityConfig.qml:21
-#: activities/money/ActivityConfig.qml:21
-#: activities/money_back/ActivityConfig.qml:21
-#: activities/money_back_cents/ActivityConfig.qml:21
-#: activities/money_cents/ActivityConfig.qml:21
-#: activities/number_sequence/ActivityConfig.qml:22
+#: activities/clickanddraw/ActivityConfig.qml:22
+#: activities/drawletters/ActivityConfig.qml:22
+#: activities/drawnumbers/ActivityConfig.qml:22
+#: activities/enumerate/ActivityConfig.qml:22
+#: activities/erase/ActivityConfig.qml:22
+#: activities/erase_2clic/ActivityConfig.qml:22
+#: activities/erase_clic/ActivityConfig.qml:22
+#: activities/money/ActivityConfig.qml:22
+#: activities/money_back/ActivityConfig.qml:22
+#: activities/money_back_cents/ActivityConfig.qml:22
+#: activities/money_cents/ActivityConfig.qml:22
+#: activities/number_sequence/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Automatic"
 msgstr "Kendiliğinden"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:20
-#: activities/enumerate/ActivityConfig.qml:22
-#: activities/money/ActivityConfig.qml:22
-#: activities/money_back/ActivityConfig.qml:22
-#: activities/money_back_cents/ActivityConfig.qml:22
-#: activities/money_cents/ActivityConfig.qml:22
+#: activities/enumerate/ActivityConfig.qml:23
+#: activities/money/ActivityConfig.qml:23
+#: activities/money_back/ActivityConfig.qml:23
+#: activities/money_back_cents/ActivityConfig.qml:23
+#: activities/money_cents/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "OK button"
 msgstr "OK düğmesi"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:30
-#: activities/enumerate/ActivityConfig.qml:32
-#: activities/money/ActivityConfig.qml:32
-#: activities/money_back/ActivityConfig.qml:32
-#: activities/money_back_cents/ActivityConfig.qml:32
-#: activities/money_cents/ActivityConfig.qml:32
+#: activities/enumerate/ActivityConfig.qml:33
+#: activities/money/ActivityConfig.qml:33
+#: activities/money_back/ActivityConfig.qml:33
+#: activities/money_back_cents/ActivityConfig.qml:33
+#: activities/money_cents/ActivityConfig.qml:33
 msgctxt "ActivityConfig|"
 msgid "Validate answers"
 msgstr "Yanıtları doğrula"
@@ -842,16 +842,16 @@ msgctxt "advanced_colors|"
 msgid "Find the dark purple butterfly"
 msgstr "Koyu mor kelebeği bul"
 
-#: activities/algebra_by/ActivityConfig.qml:26
-#: activities/algebra_div/ActivityConfig.qml:27
-#: activities/algebra_minus/ActivityConfig.qml:27
-#: activities/algebra_plus/ActivityConfig.qml:27
+#: activities/algebra_by/ActivityConfig.qml:27
+#: activities/algebra_div/ActivityConfig.qml:28
+#: activities/algebra_minus/ActivityConfig.qml:28
+#: activities/algebra_plus/ActivityConfig.qml:28
 #: activities/gletters/ActivityConfig.qml:49
-#: activities/note_names/ActivityConfig.qml:28
+#: activities/note_names/ActivityConfig.qml:29
 #: activities/readingh/ActivityConfig.qml:43
 #: activities/readingv/ActivityConfig.qml:43
-#: activities/smallnumbers/ActivityConfig.qml:28
-#: activities/smallnumbers2/ActivityConfig.qml:41
+#: activities/smallnumbers/ActivityConfig.qml:29
+#: activities/smallnumbers2/ActivityConfig.qml:42
 #: activities/wordsgame/ActivityConfig.qml:49
 msgctxt "ActivityConfig|"
 msgid "Speed"
@@ -1450,25 +1450,25 @@ msgctxt "AlphabetSequence|"
 msgid "a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z"
 msgstr "a/b/c/ç/d/e/f/g/ğ/h/ı/i/j/k/l/m/n/o/ö/p/r/s/ş/t/u/ü/v/y/z"
 
-#: activities/analog_electricity/ActivityConfig.qml:22
-#: activities/digital_electricity/ActivityConfig.qml:22
+#: activities/analog_electricity/ActivityConfig.qml:23
+#: activities/digital_electricity/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Tutorial Mode"
 msgstr "Öğrenme Kipi"
 
-#: activities/analog_electricity/ActivityConfig.qml:23
-#: activities/digital_electricity/ActivityConfig.qml:23
+#: activities/analog_electricity/ActivityConfig.qml:24
+#: activities/digital_electricity/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Free Mode"
 msgstr "Serbest Kip"
 
-#: activities/analog_electricity/ActivityConfig.qml:32
-#: activities/digital_electricity/ActivityConfig.qml:32
-#: activities/graph-coloring/ActivityConfig.qml:31
+#: activities/analog_electricity/ActivityConfig.qml:33
+#: activities/digital_electricity/ActivityConfig.qml:33
+#: activities/graph-coloring/ActivityConfig.qml:32
 #: activities/guesscount/ActivityConfig.qml:39
-#: activities/solar_system/ActivityConfig.qml:31
-#: activities/superbrain/ActivityConfig.qml:31
-#: activities/traffic/ActivityConfig.qml:31
+#: activities/solar_system/ActivityConfig.qml:32
+#: activities/superbrain/ActivityConfig.qml:32
+#: activities/traffic/ActivityConfig.qml:32
 msgctxt "ActivityConfig|"
 msgid "Select your mode"
 msgstr "Kip seç"
@@ -2224,7 +2224,7 @@ msgstr ""
 "Bir parçayı sürükleyerek hareket ettir. Gerekirse döndürme düğmesini kullan. "
 "Tangram etkinliğinde daha karmaşık düzeyler bulunabilir."
 
-#: activities/baby_wordprocessor/ActivityConfig.qml:26
+#: activities/baby_wordprocessor/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Play characters' sound when typed"
 msgstr "Yazarken karakterlerin sesini çal"
@@ -2753,26 +2753,26 @@ msgstr ""
 "Topun düz çizgide gitmesi için sol ve sağ yön düğmelerinin ikisine birlikte "
 "bas."
 
-#: activities/bargame/ActivityConfig.qml:21
-#: activities/bargame_2players/ActivityConfig.qml:21
+#: activities/bargame/ActivityConfig.qml:22
+#: activities/bargame_2players/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Easy"
 msgstr "Kolay"
 
-#: activities/bargame/ActivityConfig.qml:22
-#: activities/bargame_2players/ActivityConfig.qml:22
+#: activities/bargame/ActivityConfig.qml:23
+#: activities/bargame_2players/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Medium"
 msgstr "Normal"
 
-#: activities/bargame/ActivityConfig.qml:23
-#: activities/bargame_2players/ActivityConfig.qml:23
+#: activities/bargame/ActivityConfig.qml:24
+#: activities/bargame_2players/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Difficult"
 msgstr "Zor"
 
-#: activities/bargame/ActivityConfig.qml:32
-#: activities/bargame_2players/ActivityConfig.qml:32
+#: activities/bargame/ActivityConfig.qml:33
+#: activities/bargame_2players/ActivityConfig.qml:33
 msgctxt "ActivityConfig|"
 msgid "Select your difficulty"
 msgstr "Zorluk derecesini seç"
@@ -4896,15 +4896,15 @@ msgctxt "board6_3|"
 msgid "1955 Citroën DS 19"
 msgstr "1955 Citroën DS 19"
 
-#: activities/click_on_letter/ActivityConfig.qml:35
-#: activities/click_on_letter_up/ActivityConfig.qml:35
+#: activities/click_on_letter/ActivityConfig.qml:36
+#: activities/click_on_letter_up/ActivityConfig.qml:36
 #: activities/gletters/ActivityConfig.qml:40
 #: activities/grammar_analysis/ActivityConfig.qml:36
 #: activities/grammar_classes/ActivityConfig.qml:36
 #: activities/hangman/ActivityConfig.qml:38
-#: activities/lang/ActivityConfig.qml:35
+#: activities/lang/ActivityConfig.qml:36
 #: activities/letter-in-word/ActivityConfig.qml:69
-#: activities/missing-letter/ActivityConfig.qml:35
+#: activities/missing-letter/ActivityConfig.qml:36
 #: activities/readingh/ActivityConfig.qml:38
 #: activities/readingv/ActivityConfig.qml:38
 #: activities/wordsgame/ActivityConfig.qml:40
@@ -4976,24 +4976,24 @@ msgctxt "ActivityInfo|"
 msgid "Recognize the name of uppercase letters."
 msgstr "BÜYÜK harflerin adını tanı."
 
-#: activities/clickanddraw/ActivityConfig.qml:22
-#: activities/drawletters/ActivityConfig.qml:22
-#: activities/drawnumbers/ActivityConfig.qml:22
-#: activities/erase/ActivityConfig.qml:22
-#: activities/erase_2clic/ActivityConfig.qml:22
-#: activities/erase_clic/ActivityConfig.qml:22
-#: activities/number_sequence/ActivityConfig.qml:23
+#: activities/clickanddraw/ActivityConfig.qml:23
+#: activities/drawletters/ActivityConfig.qml:23
+#: activities/drawnumbers/ActivityConfig.qml:23
+#: activities/erase/ActivityConfig.qml:23
+#: activities/erase_2clic/ActivityConfig.qml:23
+#: activities/erase_clic/ActivityConfig.qml:23
+#: activities/number_sequence/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Manual"
 msgstr "Manuel"
 
-#: activities/clickanddraw/ActivityConfig.qml:31
-#: activities/drawletters/ActivityConfig.qml:31
-#: activities/drawnumbers/ActivityConfig.qml:31
-#: activities/erase/ActivityConfig.qml:31
-#: activities/erase_2clic/ActivityConfig.qml:31
-#: activities/erase_clic/ActivityConfig.qml:31
-#: activities/number_sequence/ActivityConfig.qml:32
+#: activities/clickanddraw/ActivityConfig.qml:32
+#: activities/drawletters/ActivityConfig.qml:32
+#: activities/drawnumbers/ActivityConfig.qml:32
+#: activities/erase/ActivityConfig.qml:32
+#: activities/erase_2clic/ActivityConfig.qml:32
+#: activities/erase_clic/ActivityConfig.qml:32
+#: activities/number_sequence/ActivityConfig.qml:33
 msgctxt "ActivityConfig|"
 msgid "Go to the next level"
 msgstr "Bir sonraki düzeye git"
@@ -5069,17 +5069,17 @@ msgid ""
 msgstr ""
 "Tıklayarak veya parmağınla dokunarak hareket eden tüm balıkları yakala."
 
-#: activities/clockgame/ActivityConfig.qml:23
+#: activities/clockgame/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "12 hours"
 msgstr "12 saat"
 
-#: activities/clockgame/ActivityConfig.qml:24
+#: activities/clockgame/ActivityConfig.qml:25
 msgctxt "ActivityConfig|"
 msgid "24 hours"
 msgstr "24 saat"
 
-#: activities/clockgame/ActivityConfig.qml:33
+#: activities/clockgame/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Select a clock system"
 msgstr "Bir saat sistemi seç"
@@ -14558,15 +14558,15 @@ msgctxt "ActivityInfo|"
 msgid "Leave the box blank if the class doesn't match."
 msgstr "Sınıf eşleşmiyorsa kutuyu boş bırak."
 
-#: activities/graph-coloring/ActivityConfig.qml:21
-#: activities/superbrain/ActivityConfig.qml:21
-#: activities/traffic/ActivityConfig.qml:21
+#: activities/graph-coloring/ActivityConfig.qml:22
+#: activities/superbrain/ActivityConfig.qml:22
+#: activities/traffic/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Colors"
 msgstr "Renkler"
 
-#: activities/graph-coloring/ActivityConfig.qml:22
-#: activities/superbrain/ActivityConfig.qml:22
+#: activities/graph-coloring/ActivityConfig.qml:23
+#: activities/superbrain/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Shapes"
 msgstr "Şekiller"
@@ -16365,29 +16365,29 @@ msgctxt "Data|"
 msgid "Subtract decimal numbers up to 5."
 msgstr "5’e kadar olan ondalık sayıları çıkar."
 
-#: activities/learn_digits/ActivityConfig.qml:23
+#: activities/learn_digits/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
 msgid "Arabic numerals"
 msgstr "Arap rakamları"
 
-#: activities/learn_digits/ActivityConfig.qml:24
-#: activities/reversecount/ActivityConfig.qml:21
+#: activities/learn_digits/ActivityConfig.qml:25
+#: activities/reversecount/ActivityConfig.qml:22
 #: activities/smallnumbers2/ActivityConfig.qml:20
 msgctxt "ActivityConfig|"
 msgid "Dots"
 msgstr "Noktalar"
 
-#: activities/learn_digits/ActivityConfig.qml:25
+#: activities/learn_digits/ActivityConfig.qml:26
 msgctxt "ActivityConfig|"
 msgid "Fingers"
 msgstr "Parmaklar"
 
-#: activities/learn_digits/ActivityConfig.qml:34
+#: activities/learn_digits/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
 msgid "Digits representation"
 msgstr "Basamak gösterimi"
 
-#: activities/learn_digits/ActivityConfig.qml:38
+#: activities/learn_digits/ActivityConfig.qml:39
 msgctxt "ActivityConfig|"
 msgid "Enable voices"
 msgstr "Sesleri etkinleştir"
@@ -17455,22 +17455,6 @@ msgctxt "ActivityInfo|"
 msgid "Space or Enter: flip the selected card"
 msgstr "Boşluk veya Giriş: Seçili kartı çevir"
 
-#: activities/memory-case-association/ActivityConfig.qml:23
-#: activities/memory-enumerate/ActivityConfig.qml:23
-#: activities/memory-math-add-minus-mult-div/ActivityConfig.qml:23
-#: activities/memory-math-add-minus/ActivityConfig.qml:23
-#: activities/memory-math-add/ActivityConfig.qml:23
-#: activities/memory-math-div/ActivityConfig.qml:23
-#: activities/memory-math-minus/ActivityConfig.qml:23
-#: activities/memory-math-mult-div/ActivityConfig.qml:23
-#: activities/memory-math-mult/ActivityConfig.qml:23
-#: activities/memory-sound/ActivityConfig.qml:23
-#: activities/memory-wordnumber/ActivityConfig.qml:23
-#: activities/memory/ActivityConfig.qml:23
-msgctxt "ActivityConfig|"
-msgid "1 player"
-msgstr "1 oyuncu"
-
 #: activities/memory-case-association/ActivityConfig.qml:24
 #: activities/memory-enumerate/ActivityConfig.qml:24
 #: activities/memory-math-add-minus-mult-div/ActivityConfig.qml:24
@@ -17484,21 +17468,37 @@ msgstr "1 oyuncu"
 #: activities/memory-wordnumber/ActivityConfig.qml:24
 #: activities/memory/ActivityConfig.qml:24
 msgctxt "ActivityConfig|"
+msgid "1 player"
+msgstr "1 oyuncu"
+
+#: activities/memory-case-association/ActivityConfig.qml:25
+#: activities/memory-enumerate/ActivityConfig.qml:25
+#: activities/memory-math-add-minus-mult-div/ActivityConfig.qml:25
+#: activities/memory-math-add-minus/ActivityConfig.qml:25
+#: activities/memory-math-add/ActivityConfig.qml:25
+#: activities/memory-math-div/ActivityConfig.qml:25
+#: activities/memory-math-minus/ActivityConfig.qml:25
+#: activities/memory-math-mult-div/ActivityConfig.qml:25
+#: activities/memory-math-mult/ActivityConfig.qml:25
+#: activities/memory-sound/ActivityConfig.qml:25
+#: activities/memory-wordnumber/ActivityConfig.qml:25
+#: activities/memory/ActivityConfig.qml:25
+msgctxt "ActivityConfig|"
 msgid "2 players"
 msgstr "2 oyuncu"
 
-#: activities/memory-case-association/ActivityConfig.qml:33
-#: activities/memory-enumerate/ActivityConfig.qml:33
-#: activities/memory-math-add-minus-mult-div/ActivityConfig.qml:33
-#: activities/memory-math-add-minus/ActivityConfig.qml:33
-#: activities/memory-math-add/ActivityConfig.qml:33
-#: activities/memory-math-div/ActivityConfig.qml:33
-#: activities/memory-math-minus/ActivityConfig.qml:33
-#: activities/memory-math-mult-div/ActivityConfig.qml:33
-#: activities/memory-math-mult/ActivityConfig.qml:33
-#: activities/memory-sound/ActivityConfig.qml:33
-#: activities/memory-wordnumber/ActivityConfig.qml:33
-#: activities/memory/ActivityConfig.qml:33
+#: activities/memory-case-association/ActivityConfig.qml:34
+#: activities/memory-enumerate/ActivityConfig.qml:34
+#: activities/memory-math-add-minus-mult-div/ActivityConfig.qml:34
+#: activities/memory-math-add-minus/ActivityConfig.qml:34
+#: activities/memory-math-add/ActivityConfig.qml:34
+#: activities/memory-math-div/ActivityConfig.qml:34
+#: activities/memory-math-minus/ActivityConfig.qml:34
+#: activities/memory-math-mult-div/ActivityConfig.qml:34
+#: activities/memory-math-mult/ActivityConfig.qml:34
+#: activities/memory-sound/ActivityConfig.qml:34
+#: activities/memory-wordnumber/ActivityConfig.qml:34
+#: activities/memory/ActivityConfig.qml:34
 msgctxt "ActivityConfig|"
 msgid "Choose number of players"
 msgstr "Oyuncu sayısı seç"
@@ -19789,7 +19789,7 @@ msgstr ""
 "ve öğrendiklerinizi pratik yapacaksın.<br>Başvuru notaları kırmızı renklidir "
 "ve etraflarına yerleştirilen notları okumana yardımcı olacaktır."
 
-#: activities/number_sequence/ActivityConfig.qml:36
+#: activities/number_sequence/ActivityConfig.qml:37
 msgctxt "ActivityConfig|"
 msgid "Highlight next point"
 msgstr "Sonraki noktayı vurgula"
@@ -21473,12 +21473,12 @@ msgctxt "Sequence|"
 msgid "Catch the numbers starting from 10."
 msgstr "10’dan başlayan sayıları yakala."
 
-#: activities/play_piano/ActivityConfig.qml:34
+#: activities/play_piano/ActivityConfig.qml:35
 msgctxt "ActivityConfig|"
 msgid "Display colored notes."
 msgstr "Renkli notaları görüntüle."
 
-#: activities/play_piano/ActivityConfig.qml:46
+#: activities/play_piano/ActivityConfig.qml:47
 msgctxt "ActivityConfig|"
 msgid "Display colorless notes."
 msgstr "Renksiz notaları görüntüle."
@@ -22401,27 +22401,27 @@ msgstr ""
 "değilse üretim tesisleri ve iletim teçhizatı kapanabilir, bu durum en kötü "
 "hallerde büyük bir bölgesel karartmaya neden olabilir."
 
-#: activities/reversecount/ActivityConfig.qml:22
+#: activities/reversecount/ActivityConfig.qml:23
 #: activities/smallnumbers2/ActivityConfig.qml:21
 msgctxt "ActivityConfig|"
 msgid "Arabic numbers"
 msgstr "Arap rakamları"
 
-#: activities/reversecount/ActivityConfig.qml:23
+#: activities/reversecount/ActivityConfig.qml:24
 #: activities/smallnumbers2/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Roman numbers"
 msgstr "Roma rakamları"
 
-#: activities/reversecount/ActivityConfig.qml:24
+#: activities/reversecount/ActivityConfig.qml:25
 #: activities/smallnumbers2/ActivityConfig.qml:23
-#: activities/traffic/ActivityConfig.qml:22
+#: activities/traffic/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Images"
 msgstr "Görseller"
 
-#: activities/reversecount/ActivityConfig.qml:33
-#: activities/smallnumbers2/ActivityConfig.qml:36
+#: activities/reversecount/ActivityConfig.qml:34
+#: activities/smallnumbers2/ActivityConfig.qml:37
 msgctxt "ActivityConfig|"
 msgid "Select Domino Representation"
 msgstr "Domino Gösterimini Seç"
@@ -23197,7 +23197,7 @@ msgstr ""
 "Unutma, bir libre (“lb”), on altı onsa (“oz”) eşittir.\n"
 " Tartıyı dengelemek için tartının sol tarafındaki ağırlıkları bırak."
 
-#: activities/share/ActivityConfig.qml:26
+#: activities/share/ActivityConfig.qml:27
 msgctxt "ActivityConfig|"
 msgid "Display counters"
 msgstr "Sayaçları göster"
@@ -24196,12 +24196,12 @@ msgctxt "Data|"
 msgid "Type the number on the domino, from 0 to 9."
 msgstr "0’dan 9’a kadar domino taşı üzerindeki sayıyı yaz."
 
-#: activities/solar_system/ActivityConfig.qml:21
+#: activities/solar_system/ActivityConfig.qml:22
 msgctxt "ActivityConfig|"
 msgid "Learning Mode"
 msgstr "Öğrenme Kipi"
 
-#: activities/solar_system/ActivityConfig.qml:22
+#: activities/solar_system/ActivityConfig.qml:23
 msgctxt "ActivityConfig|"
 msgid "Assessment Mode"
 msgstr "Değerlendirme Kipi"
@@ -25734,12 +25734,12 @@ msgstr ""
 "işaretlenmiş ögeler, sen işaretlerini kaldırana kadar geçerli ve gelecekteki "
 "tahminlerinde otomatik olarak seçilir ve yeniden çift tıklanır."
 
-#: activities/superbrain/Superbrain.qml:151
+#: activities/superbrain/Superbrain.qml:150
 msgctxt "Superbrain|"
 msgid "This item is well placed."
 msgstr "Bu öge iyi yerleştirilmiş."
 
-#: activities/superbrain/Superbrain.qml:153
+#: activities/superbrain/Superbrain.qml:152
 msgctxt "Superbrain|"
 msgid "This item is misplaced."
 msgstr "Bu öge yanlış yerleştirilmiş."
@@ -27198,7 +27198,7 @@ msgid ""
 "donation, using one of the ways described at <a href=\"%2\">%2</a>.<br /"
 "><br />Thank you very much in advance for your support."
 msgstr ""
-"KDE topluluğu, kar amacı gütmeyen bir organizasyon olan KDE e.V.’yi "
+"KDE topluluğu, kâr amacı gütmeyen bir organizasyon olan KDE e.V.’yi "
 "Almanya’da kurmuştur. KDE e.V, KDE topluluğunu finansal ve hukuki konularda "
 "temsil etmektedir. KDE e.V. hakkında bilgi almak için <a href=\"%1\">%1</a> "
 "adresini ziyaret edin. <br /><br />KDE Takımı’nın her zaman finansal desteğe "
