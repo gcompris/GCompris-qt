@@ -96,14 +96,13 @@ It requires a 3D card with support of <emphasis>OpenGL 2.1</emphasis> or higher.
 
 <sect1 id="user-interface">
 <title>The User Interface</title>
-<para>The interface is designed for easy use by small children. &gcompris; is controlled with a mouse.
-Keyboard navigation is also available on most of the activities.</para>
+<para>The interface is designed for easy use by small children. &gcompris; is controlled with a mouse. Keyboard navigation is also available on most of the activities.</para>
 
 <sect2 id="main-window">
 <title>Main window</title>
 <para>When you start the program, &gcompris; shows a graphical interface which presents the list of activities with a control bar at the bottom.</para>
 <screenshot>
-<screeninfo>Here's a screenshot of &gcompris; main window</screeninfo>
+<screeninfo>Here’s a screenshot of &gcompris; main window</screeninfo>
   <mediaobject>
     <imageobject>
       <imagedata fileref="gcompris-main-menu.png" format="PNG"/>
@@ -132,9 +131,7 @@ there is section “Board Games”, which includes board games, like Chess, Tic-
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_home.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Home — Leaves the current activity, returns to the previous menu.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject>
-</inlinemediaobject> “OK” — Validate, confirm your answer. Some activities do not detect automatically whether or 
-not the child has completed the task. In this case, you have to click on this icon. You can also use the &Enter; 
-key on your keyboard.</para></listitem> 
+</inlinemediaobject> “OK” — Validate, confirm your answer. Some activities do not detect automatically whether or not the child has completed the task. In this case, you have to click on this icon. You can also use the &Enter; key on your keyboard.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Light — Display a hint for the activity. We can help the children on some activities to guide them to find the answers.</para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject></inlinemediaobject>
@@ -145,18 +142,15 @@ In &gcompris;, it is possible to go to the next level without having completed t
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Lips — Ask &gcompris; to repeat the question.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_help.svg" format="SVG"/></imageobject>
-</inlinemediaobject> Question mark — Display the help dialog box. Sometimes, an activity can be too complex 
-to be described easily in the description area. In this case, this function gives access to additional information.</para></listitem> 
+</inlinemediaobject> Question mark — Display the help dialog box. Sometimes, an activity can be too complex to be described easily in the description area. In this case, this function gives access to additional information.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_config.svg" format="SVG"/></imageobject>
-</inlinemediaobject> Tool box — Configuration menu. The configuration is saved in the user repository (folder) 
-under the name <filename>.config/gcompris/gcompris-qt.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
+</inlinemediaobject> Tool box — Configuration menu. The configuration is saved in the user repository (folder) under the name <filename>.config/gcompris/gcompris-qt.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject>
 </inlinemediaobject> List item — Display the activity settings menu. There are two possible tabs here. First one, “Dataset”, allows to choose the levels of the activities depending on several objectives and the second one, “Options”, allows to update the configuration of the activity if available.</para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Capital “G” — Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject>
-</inlinemediaobject> Power — Quit &gcompris;. You can also use the shortcut on your keyboard 
-<keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></para></listitem> 
+</inlinemediaobject> Power — Quit &gcompris;. You can also use the shortcut on your keyboard <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo>.</para></listitem> 
 </itemizedlist>
 </sect2>
 
@@ -199,7 +193,7 @@ under the name <filename>.config/gcompris/gcompris-qt.conf</filename>. This is a
 </row>
 <row>
 <entry><keycombo action="simul">&Ctrl;<keycap>B</keycap></keycombo></entry>
-<entry>Display or Hide the control bar.</entry>
+<entry>Display or hide the control bar.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -213,7 +207,7 @@ under the name <filename>.config/gcompris/gcompris-qt.conf</filename>. This is a
 <para>&gcompris; is internationalized and is available in more than 35 languages. If you want 
 to check if your language is available, you can start &gcompris; and select your language in 
 the option of configuration.</para>
-<para>Be careful, some languages need specific fonts to be displayed correctly. </para> 
+<para>Be careful, some languages need specific fonts to be displayed correctly.</para> 
 <para>If your language is not supported, you can contribute to the software and add the 
 translation of your language. If you are interested, you can contact the 
 <ulink url="https://l10n.kde.org/teams">translation team</ulink> of 
@@ -346,7 +340,7 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 
 <sect2 id="gnu-linux-example">
 <title>&GNU;/&Linux; Example</title>
-<para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in full screen, without Configuration button and cursor:</para> 
+<para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in fullscreen, without Configuration button and cursor:</para> 
 <para><userinput><command>gcompris-qt --enable-kioskmode -f -C</command></userinput></para>
 </sect2>
 
