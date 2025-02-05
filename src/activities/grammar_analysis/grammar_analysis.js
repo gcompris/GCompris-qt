@@ -264,7 +264,7 @@ function checkResult() {
     for (var i = 0; i < items.rowAnswer.count; i++) {
         var wordCard = items.rowAnswer.itemAt(i)
         if (wordCard.expected !== "")
-            ok &= (wordCard.expected === wordCard.proposition)
+            ok = ok && (wordCard.expected === wordCard.proposition)
     }
     if (ok){
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/completetask.wav")
