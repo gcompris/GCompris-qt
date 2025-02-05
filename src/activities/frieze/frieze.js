@@ -107,7 +107,7 @@ function removeDuplicate(patterns) {    // Remove patterns with duplicate symbol
                 last = patterns[i][j];
             }
         }
-        ok &= (patterns[i][patterns[i].length - 1] !== first);   // when last equal first, it's a duplicated symbol
+        ok = ok && (patterns[i][patterns[i].length - 1] !== first);   // when last equal first, it's a duplicated symbol
         if (ok) noDup.push(patterns[i]);
     }
     return noDup;
