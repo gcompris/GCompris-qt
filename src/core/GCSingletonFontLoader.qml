@@ -10,10 +10,6 @@
 import QtQuick 2.12
 import GCompris 1.0
 
-//QTBUG-34418, singletons require explicit import to load qmldir file
-//https://qt-project.org/wiki/QmlStyling#6b81104b320e452a59cc3bf6857115ab
-import "."
-
 // FIXME: this triggers a doxygen error, why?
 pragma Singleton
 
