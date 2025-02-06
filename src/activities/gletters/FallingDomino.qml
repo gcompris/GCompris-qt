@@ -82,7 +82,6 @@ Item {
     Domino {
         id: domino
         width: 120 * ApplicationInfo.ratio
-        height: width / 2
         mode: word.mode
         visible: dominoValues.length != 0
         value1: dominoValues[0]
