@@ -19,7 +19,7 @@ Rectangle {
 
     width: parent.width
     height: parent.height
-    color: "#ABCDEF"
+    color: GCStyle.lightBlueBg
     visible: false
     z: 2000
     focus: true
@@ -61,7 +61,6 @@ Rectangle {
     property var dataToSave
     property bool isSaveMode: false
     property bool dialogOpened: false
-    property int baseMargins: 5 * ApplicationInfo.ratio
     readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileName: imageMode ? fileNameInput.text + ".png" : fileNameInput.text + ".json"
@@ -248,10 +247,10 @@ Rectangle {
         height: Math.floor(cancelButton.height * 0.7)
         anchors.verticalCenter: saveButton.verticalCenter
         anchors.left: parent.left
-        anchors.leftMargin: creationHandler.baseMargins
-        border.color: "#191919"
-        border.width: ApplicationInfo.ratio
-        radius: creationHandler.baseMargins
+        anchors.leftMargin: GCStyle.halfMargins
+        border.color: GCStyle.darkerBorder
+        border.width: GCStyle.thinnestBorder
+        radius: GCStyle.halfMargins
 
         TextField {
             id: fileNameInput
@@ -267,7 +266,7 @@ Rectangle {
                 if(!creationHandler.isSaveMode)
                     searchFiles()
             }
-            color: "#191919"
+            color: GCStyle.darkerText
             background.visible: false
         }
     }
@@ -281,7 +280,7 @@ Rectangle {
         anchors.verticalCenter: cancelButton.verticalCenter
         anchors.left: fileNameBackground.right
         anchors.right: cancelButton.left
-        anchors.margins: creationHandler.baseMargins
+        anchors.margins: GCStyle.halfMargins
         onClicked: saveFile()
         enabled: fileNameInput.text != ""
     }
@@ -295,10 +294,10 @@ Rectangle {
         anchors.bottom: buttonRow.top
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: creationHandler.baseMargins
-        border.color: "#191919"
-        border.width: ApplicationInfo.ratio
-        radius: creationHandler.baseMargins
+        anchors.margins: GCStyle.halfMargins
+        border.color: GCStyle.darkerBorder
+        border.width: GCStyle.thinnestBorder
+        radius: GCStyle.halfMargins
 
         MouseArea {
             anchors.fill: parent
@@ -311,8 +310,8 @@ Rectangle {
             maximumFlickVelocity: creationHandler.height
             boundsBehavior: Flickable.StopAtBounds
             anchors.fill: parent
-            anchors.margins: creationHandler.baseMargins
-            anchors.rightMargin: creationHandler.baseMargins + scrollButtons.width
+            anchors.margins: GCStyle.halfMargins
+            anchors.rightMargin: GCStyle.halfMargins + scrollButtons.width
             interactive: true
             cellHeight: creationHandler.cellHeight
             cellWidth: creationHandler.cellWidth
@@ -324,9 +323,8 @@ Rectangle {
             highlight: Rectangle {
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
-                color: "#E77936"
-                opacity: 0.4
-                radius: creationHandler.baseMargins
+                color: GCStyle.highlightColor
+                radius: GCStyle.halfMargins
             }
             delegate: Item {
                 height: creationHandler.cellHeight
@@ -334,10 +332,10 @@ Rectangle {
                 readonly property string fileName: fileName.text
                 Image {
                     id: fileIcon
-                    width: creationHandler.cellWidth - creationHandler.baseMargins * 2
-                    height: (creationHandler.cellHeight - creationHandler.baseMargins * 3) * 0.75
+                    width: creationHandler.cellWidth - GCStyle.baseMargins
+                    height: (creationHandler.cellHeight - GCStyle.halfMargins * 3) * 0.75
                     anchors.top: parent.top
-                    anchors.topMargin: creationHandler.baseMargins
+                    anchors.topMargin: GCStyle.halfMargins
                     anchors.horizontalCenter: parent.horizontalCenter
                     fillMode: Image.PreserveAspectFit
                     // the empty file is used to make a switch to reload overwritten image
@@ -374,14 +372,14 @@ Rectangle {
 
     Row {
         id: buttonRow
-        spacing: creationHandler.baseMargins
+        spacing: GCStyle.halfMargins
         anchors.horizontalCenter: creationHandler.horizontalCenter
         anchors.bottom: keyboardCreation.top
-        anchors.bottomMargin: creationHandler.baseMargins
+        anchors.bottomMargin: GCStyle.halfMargins
         visible: !creationHandler.isSaveMode
         GCButton {
             id: loadButton
-            width: (viewContainer.width - 2 * creationHandler.baseMargins) * 0.5
+            width: (viewContainer.width - GCStyle.baseMargins) * 0.5
             height: buttonRow.visible ? Math.min(saveButton.height, safeSizeHint.height * 0.3) : 0
             text: qsTr("Load")
             enabled: creationsList.currentIndex != -1
@@ -412,7 +410,7 @@ Rectangle {
         anchors.top: cancelButton.bottom
         anchors.bottom: keyboardCreation.top
         anchors.right: parent.right
-        width: 1
+        width: GCStyle.thinnestBorder
     }
 
     // The scroll buttons
@@ -422,7 +420,7 @@ Rectangle {
         width: Math.min(defaultWidth, viewContainer.height * widthRatio)
         anchors.right: viewContainer.right
         anchors.bottom: viewContainer.bottom
-        anchors.margins: creationHandler.baseMargins
+        anchors.margins: GCStyle.halfMargins
         onUp: creationsList.flick(0, 1000)
         onDown: creationsList.flick(0, -1000)
         upVisible: creationsList.atYBeginning ? false : true

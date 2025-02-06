@@ -33,53 +33,30 @@ Item {
 
         width: parent.width
         height: virtualKey.height
+
+        scale: pressed ? 0.9 : 1
         
         background: Rectangle {
-            border.width: button.activeFocus ? 2 : 1
-            border.color: "black"
-            radius: 4
-            gradient: Gradient {
-                GradientStop {
-                    position: 0;
-                    color: (button.pressed
-                            || ( virtualKey.specialKey == Qt.Key_Shift
-                                 && virtualKey.modifiers & Qt.ShiftModifier))
-                           ? "#ccc" : "#eee";
-                }
-                GradientStop {
-                    position: 1;
-                    color: (button.pressed
-                            || ( virtualKey.specialKey == Qt.Key_Shift
-                                    && virtualKey.modifiers & Qt.ShiftModifier))
-                           ? "#aaa" : "#ccc";
-                }
-            }
+            border.width: button.pressed ? GCStyle.thinBorder : GCStyle.thinnestBorder
+            border.color: GCStyle.darkBorder
+            radius: GCStyle.thinBorder
+            color: (button.pressed ||
+                (virtualKey.specialKey == Qt.Key_Shift && virtualKey.modifiers & Qt.ShiftModifier)) ? "#aaa" : "#eee";
         }
         contentItem: Item {
             GCText {
-                //renderType: Text.NativeRendering
                 anchors.centerIn: parent
                 text: button.text
                 fontSize: 20
                 font.bold: false
-                color: "black"
-                //antialiasing: true
+                color: GCStyle.darkerText
             }
-        }
-    
-        SequentialAnimation {
-            id: anim
-            PropertyAction { target: virtualKey; property: 'z'; value: 1 }
-            NumberAnimation { target: button; properties: "scale"; to: 1.3; duration: 100; easing.type: Easing.OutCubic }
-            NumberAnimation { target: button; properties: "scale"; to: 1.0; duration: 100; easing.type: Easing.OutCubic }
-            PropertyAction { target: virtualKey; property: 'z'; value: 0 }
         }
 
         onClicked: {
             //console.log("### virtualKey.onClicked text=" + virtualKey.text 
             //        + " specialKey="+ virtualKey.specialKey
             //        + " modifiers= "+ virtualKey.modifiers);
-            anim.start()
             virtualKey.pressed(virtualKey);
             button.focus = false;
         }

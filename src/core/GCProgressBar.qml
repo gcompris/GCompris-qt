@@ -18,12 +18,13 @@ ProgressBar {
 
     property bool displayText: true
     property string message
-    property int borderSize: 0
+    property int borderSize: GCStyle.thinnestBorder
 
     background: Rectangle {
         height: progressbar.height
         width: progressbar.width
-        border.color: "lightblue"
+        color: GCStyle.lightBg
+        border.color: GCStyle.whiteBorder
         border.width: borderSize
     }
     contentItem: Item {
@@ -31,18 +32,19 @@ ProgressBar {
         implicitHeight: 4
 
         Rectangle {
-            width: progressbar.visualPosition * parent.width
-            height: parent.height
-            radius: 2
-            color: "lightblue"
+            x: GCStyle.thinnestBorder
+            y: GCStyle.thinnestBorder
+            width: progressbar.visualPosition * parent.width - GCStyle.thinnestBorder * 2
+            height: parent.height - GCStyle.thinnestBorder * 2
+            color: GCStyle.highlightColor
         }
         GCText {
             id: progressbarText
             anchors.centerIn: parent
             visible: displayText
-            fontSize: mediumSize
+            fontSize: smallSize
             font.bold: true
-            color: "black"
+            color: GCStyle.darkText
             text: progressbar.message
         }
     }

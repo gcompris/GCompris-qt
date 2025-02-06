@@ -18,9 +18,8 @@ import GCompris 1.0
  *
  * @inherit QtQuick.Image
  */
-Rectangle {
+Item {
     id: scrollButtons
-    color: "#00000000"
     width: defaultWidth
     height: defaultHeight
 

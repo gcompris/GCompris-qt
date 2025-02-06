@@ -87,12 +87,17 @@ Item {
         }
     }
 
+    Rectangle {
+        anchors.fill: parent
+        color: GCStyle.grayedBg
+    }
+
     Item {
         id: introArea
-        x: customIntroArea ? customIntroArea.x : 10 * ApplicationInfo.ratio
-        y: customIntroArea ? customIntroArea.y : 10 * ApplicationInfo.ratio
-        width: customIntroArea ? customIntroArea.width : parent.width - 20 * ApplicationInfo.ratio
-        height: customIntroArea ? customIntroArea.height : parent.height - 10 * ApplicationInfo.ratio - bar.height * 2
+        x: customIntroArea ? customIntroArea.x : GCStyle.baseMargins
+        y: customIntroArea ? customIntroArea.y : GCStyle.baseMargins
+        width: customIntroArea ? customIntroArea.width : parent.width - 2 * GCStyle.baseMargins
+        height: customIntroArea ? customIntroArea.height : parent.height - GCStyle.baseMargins - bar.height * 2
     }
 
     // to avoid clicking on the activity
@@ -103,19 +108,19 @@ Item {
     Rectangle {
         id: introTextContainer
         width: introArea.width
-        height: introArea.height - nextButton.height - 10 * ApplicationInfo.ratio
+        height: introArea.height - nextButton.height - GCStyle.baseMargins
         anchors.top: introArea.top
         anchors.horizontalCenter: introArea.horizontalCenter
-        color: "white"
-        border.color: "#87A6DD"
-        border.width: 3 * ApplicationInfo.ratio
-        radius: 5 * ApplicationInfo.ratio
+        color: GCStyle.whiteBg
+        border.color: GCStyle.blueBorder
+        border.width: GCStyle.midBorder
+        radius: GCStyle.halfMargins
     }
 
     GCText {
         id: introText
         anchors.fill: introTextContainer
-        anchors.margins: 10 * ApplicationInfo.ratio
+        anchors.margins: GCStyle.baseMargins
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         minimumPixelSize: 7
@@ -141,7 +146,7 @@ Item {
 
     IntroButton {
         id: nextButton
-        width: (introArea.width - 20 * ApplicationInfo.ratio) * 0.33
+        width: (introArea.width - 2 * GCStyle.baseMargins) * 0.33
         height: Math.min(60 * ApplicationInfo.ratio, parent.height * 0.2)
         z: 5
         anchors.horizontalCenter: introTextContainer.horizontalCenter

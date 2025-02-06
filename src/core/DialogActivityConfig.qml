@@ -119,7 +119,7 @@ Rectangle {
 
     signal stop
 
-    color: "#696da3"
+    color: GCStyle.configBg
 
     Keys.onPressed: (event) => {
         if(event.key === Qt.Key_Down) {
@@ -159,24 +159,26 @@ Rectangle {
 
     Column {
         visible: dialogActivityContent.active
-        spacing: 10
+        spacing: GCStyle.halfMargins
         anchors.top: parent.top
-        anchors.topMargin: 15
+        anchors.topMargin: GCStyle.baseMargins
         anchors.horizontalCenter: parent.horizontalCenter
-        width: dialogActivityContent.width - 30
+        width: dialogActivityContent.width - 2 * GCStyle.baseMargins
         Rectangle {
             id: titleRectangle
-            color: "#e6e6e6"
-            radius: 10 * ApplicationInfo.ratio
+            color: GCStyle.lightBg
+            radius: GCStyle.baseMargins
             width: parent.width
-            height: title.height + 10 * 2
+            height: title.height + GCStyle.baseMargins
 
             // The apply button
             GCButtonCancel {
                 id: apply
                 apply: true
-                anchors.verticalCenter: titleRectangle.verticalCenter
-                anchors.margins: 2 * ApplicationInfo.ratio
+                anchors.top: undefined
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.margins: GCStyle.tinyMargins
+                width: titleRectangle.height - 2 * GCStyle.tinyMargins
                 onClose: {
                     if (dialogActivityContent.dataValidationFunc && !
                         dialogActivityContent.dataValidationFunc()) {
@@ -194,7 +196,7 @@ Rectangle {
             GCText {
                 id: title
                 text: dialogActivityContent.title
-                width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the apply button size
+                width: titleRectangle.width - (apply.width + apply.anchors.margins) * 2
                 height: 50 * ApplicationInfo.ratio
                 anchors.horizontalCenter: titleRectangle.horizontalCenter
                 anchors.verticalCenter: titleRectangle.verticalCenter
@@ -209,18 +211,18 @@ Rectangle {
         }
 
         Rectangle {
-            color: "#bdbed0"
-            radius: 10 * ApplicationInfo.ratio
-            width: dialogActivityContent.width - 30
+            color: GCStyle.lightTransparentBg
+            radius: GCStyle.halfMargins
+            width: parent.width
             height: dialogActivityContent.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
-            border.color: "white"
-            border.width: 3 * ApplicationInfo.ratio
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.midBorder
 
             Flickable {
                 id: flick
                 maximumFlickVelocity: dialogActivityContent.height
                 boundsBehavior: Flickable.StopAtBounds
-                anchors.margins: 10 * ApplicationInfo.ratio
+                anchors.margins: GCStyle.baseMargins
                 anchors.fill: parent
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
@@ -238,9 +240,9 @@ Rectangle {
             GCButtonScroll {
                 id: scrollItem
                 anchors.right: parent.right
-                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.rightMargin: GCStyle.halfMargins
                 anchors.bottom: flick.bottom
-                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                anchors.bottomMargin: GCStyle.halfMargins
                 onUp: flick.flick(0, 1000)
                 onDown: flick.flick(0, -1000)
                 upVisible: flick.atYBeginning ? false : true

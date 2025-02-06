@@ -118,5 +118,5 @@ Text {
     font.family: GCSingletonFontLoader.fontName
     font.capitalization: ApplicationSettings.fontCapitalization
     font.letterSpacing: ApplicationSettings.fontLetterSpacing
-    color: "#191919"
+    color: GCStyle.darkerText
 }

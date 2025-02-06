@@ -25,7 +25,7 @@ import GCompris 1.0
  */
 Rectangle {
     id: dialogBackground
-    color: "#696da3"
+    color: GCStyle.configBg
     z: 1000
     focus: visible
     property bool isDialog: true
@@ -33,7 +33,6 @@ Rectangle {
     property string content
     property string contentIcon
     property alias button0Text: button0.text
-    readonly property real applicationInfoRatio: ApplicationInfo.ratio
     signal close
     signal start
     signal pause
@@ -63,52 +62,53 @@ Rectangle {
     onClose: activity.forceActiveFocus();
 
     Column {
-        spacing: 10
+        spacing: GCStyle.halfMargins
         anchors.top: parent.top
-        anchors.topMargin: 15
+        anchors.topMargin: GCStyle.baseMargins
         anchors.horizontalCenter: parent.horizontalCenter
-        width: dialogBackground.width - 30
+        width: dialogBackground.width - 2 * GCStyle.baseMargins
         Rectangle {
             id: titleRectangle
-            color: "#e6e6e6"
-            radius: 10 * dialogBackground.applicationInfoRatio
+            color: GCStyle.lightBg
+            radius: GCStyle.baseMargins
             width: parent.width
-            height: title.height + 10 * 2
+            height: Math.max(title.height, cancel.height) + GCStyle.baseMargins
 
             GCText {
                 id: title
                 text: dialogBackground.title
-                width: titleRectangle.width - 120 * dialogBackground.applicationInfoRatio //minus twice the cancel button size
+                width: titleRectangle.width - (cancel.width + cancel.anchors.margins) * 2
                 anchors.horizontalCenter: titleRectangle.horizontalCenter
                 anchors.verticalCenter: titleRectangle.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                fontSize: 20
+                fontSize: mediumSize
                 font.weight: Font.DemiBold
                 wrapMode: Text.WordWrap
             }
             // The cancel button
             GCButtonCancel {
                 id: cancel
-                anchors.verticalCenter: titleRectangle.verticalCenter
-                anchors.margins: 2 * dialogBackground.applicationInfoRatio
+                anchors.top: undefined
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.margins: GCStyle.tinyMargins
                 onClose: dialogBackground.close()
             }
         }
         Rectangle {
-            color: "#bdbed0"
-            radius: 10 * dialogBackground.applicationInfoRatio
-            width: dialogBackground.width - 30
+            color: GCStyle.lightTransparentBg
+            radius: GCStyle.baseMargins
+            width: parent.width
             height: dialogBackground.height - (2 * parent.anchors.topMargin) - titleRectangle.height - parent.spacing
-            border.color: "white"
-            border.width: 3 * dialogBackground.applicationInfoRatio
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.midBorder
 
             Flickable {
                 id: flick
-                anchors.margins: 10 * dialogBackground.applicationInfoRatio
+                anchors.margins: GCStyle.baseMargins
                 anchors.fill: parent
                 contentWidth: textContent.contentWidth
-                contentHeight: iconImage.height + button0.height + textContent.contentHeight + 70 * dialogBackground.applicationInfoRatio
+                contentHeight: iconImage.height + button0.height + textContent.contentHeight + 70 * ApplicationInfo.ratio
                 flickableDirection: Flickable.VerticalFlick
                 maximumFlickVelocity: dialogBackground.height
                 boundsBehavior: Flickable.StopAtBounds
@@ -118,8 +118,8 @@ Rectangle {
                     id: button0
                     visible: text != ""
                     onClicked: { dialogBackground.button0Hit() }
-                    width: 150 * dialogBackground.applicationInfoRatio
-                    height: visible ? 40 * dialogBackground.applicationInfoRatio : 0
+                    width: 150 * ApplicationInfo.ratio
+                    height: visible ? 40 * ApplicationInfo.ratio : 0
                     anchors {
                         horizontalCenter: parent.horizontalCenter
                         top: parent.top
@@ -132,7 +132,7 @@ Rectangle {
                     id: iconImage
                     source: contentIcon
                     visible: contentIcon != ""
-                    width: 100 * dialogBackground.applicationInfoRatio
+                    width: 100 * ApplicationInfo.ratio
                     height: visible ? iconImage.width : 0
                     sourceSize.width: iconImage.width
                     sourceSize.height: iconImage.width
@@ -158,9 +158,9 @@ Rectangle {
             GCButtonScroll {
                 id: scrollItem
                 anchors.right: parent.right
-                anchors.rightMargin: 5 * dialogBackground.applicationInfoRatio
+                anchors.rightMargin: GCStyle.halfMargins
                 anchors.bottom: flick.bottom
-                anchors.bottomMargin: 5 * dialogBackground.applicationInfoRatio
+                anchors.bottomMargin: GCStyle.halfMargins
                 onUp: flick.flick(0, 1000)
                 onDown: flick.flick(0, -1000)
                 upVisible: flick.atYBeginning ? false : true

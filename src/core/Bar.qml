@@ -35,9 +35,6 @@ import "qrc:/gcompris/src/core/core.js" as Core
  */
 Item {
     id: bar
-
-    readonly property real applicationInfoRatio: ApplicationInfo.ratio
-
     /**
       * type: real
       * Keeps track of the number of buttons that are displayed
@@ -48,13 +45,13 @@ Item {
      * type: real
      * Margin between the buttons
      */
-    readonly property int buttonMargins: 5 * applicationInfoRatio
+    readonly property int buttonMargins: GCStyle.halfMargins
 
     /**
      * type: int
      * Size of each button. For previous/next/levelText we calculate their size based on it.
      */
-    readonly property int buttonSize: Math.floor(Math.min(78 * applicationInfoRatio, parent.width / (numberOfButtons + 1) - buttonMargins))
+    readonly property int buttonSize: Math.floor(Math.min(78 * ApplicationInfo.ratio, parent.width / (numberOfButtons + 1) - buttonMargins))
 
     /**
      * type:BarEnumContent

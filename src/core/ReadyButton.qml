@@ -24,14 +24,14 @@ Rectangle {
      */
     property var themes: {
         "dark": {
-            borderColor: "#373737",
-            fillColor: "#FFFFFF",
-            textColor: "#373737"
+            borderColor: GCStyle.darkBorder,
+            fillColor: GCStyle.whiteBg,
+            textColor: GCStyle.darkText
         },
         "light": {
-            borderColor: "white",
-            fillColor: "#373737",
-            textColor: "white"
+            borderColor: GCStyle.whiteBorder,
+            fillColor: GCStyle.darkBg,
+            textColor: GCStyle.whiteText
         }
     }
 
@@ -52,11 +52,11 @@ Rectangle {
     anchors.verticalCenter: parent.verticalCenter
     border.color: themes[theme].borderColor
     visible: true
-    radius: 10
+    radius: GCStyle.halfMargins
     smooth: true
-    border.width: 4
-    width: iAmReadyText.width + 50 * ApplicationInfo.ratio
-    height: iAmReadyText.height + 50 * ApplicationInfo.ratio
+    border.width: GCStyle.thinBorder
+    width: iAmReadyText.contentWidth + 40 * ApplicationInfo.ratio
+    height: iAmReadyText.contentHeight + 40 * ApplicationInfo.ratio
     color: themes[theme].fillColor
 
     GCText {

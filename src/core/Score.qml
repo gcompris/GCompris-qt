@@ -54,7 +54,7 @@ Rectangle {
      * type:real
      * Define margins
      */
-    property real margins: 30
+    property real margins: GCStyle.baseMargins
     
     /**
      * type:int
@@ -114,16 +114,16 @@ Rectangle {
         function onStop() { stopWinAnimation(); }
     }
 
-    color: "#AAFFFFFF"
+    color: GCStyle.lightTransparentBg
     width: subLevelText.width * 2
     height: subLevelText.height * 1.4
-    radius: 10
+    radius: GCStyle.halfMargins
     anchors.bottom: parent.bottom
     anchors.right: parent.right
     anchors.margins: margins
 
-    border.color: "white"
-    border.width: isScoreCounter ? 0 : 3 * ApplicationInfo.ratio
+    border.color: GCStyle.whiteBorder
+    border.width: isScoreCounter ? 0 : GCStyle.midBorder
 
     z: 1000
 
@@ -143,7 +143,7 @@ Rectangle {
         anchors.centerIn: parent
         fontSizeMode: Text.Fit
         font.bold: true
-        color: "#373737"
+        color: GCStyle.darkText
         text: message
     }
 

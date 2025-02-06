@@ -170,8 +170,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        opacity: 0.8
-        color: "grey"
+        color: GCStyle.grayedBg
 
         MouseArea {
             // Empty mouseArea to prevent clicking "behind" the Dialog
@@ -182,46 +181,40 @@ Item {
 
     Item {
         id: instruction
-        anchors {
-            horizontalCenter: parent.horizontalCenter
-            top: parent.top
-            topMargin: parent.height * 0.1
+        anchors.fill: parent
+        anchors.margins: GCStyle.baseMargins * 2
+
+        Rectangle {
+            id: instructionTxtBg
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+            height: 60 * ApplicationInfo.ratio
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.whiteBorder
+            color: GCStyle.lightBg
         }
-        width: parent.width * 0.8
 
         GCText {
             id: instructionTxt
             fontSize: mediumSize
-            color: "black"
+            color: GCStyle.darkText
+            anchors.fill: instructionTxtBg
+            anchors.margins: GCStyle.baseMargins
             horizontalAlignment: Text.AlignHCenter
-            width: parent.width
+            verticalAlignment: Text.AlignVCenter
             wrapMode: TextEdit.WordWrap
-            z: 2
-            height: 60 * ApplicationInfo.ratio
             text: qsTr("Downloading...")
         }
 
-        Rectangle {
-            anchors.fill: instructionTxt
-            z: 1
-            opacity: 0.9
-            radius: 10
-            border.width: 2
-            border.color: "white"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#fff" }
-                GradientStop { position: 0.9; color: "#fff" }
-                GradientStop { position: 1.0; color: "#ddd" }
-            }
-        }
-
-        ProgressBar {
+        GCProgressBar {
             id: downloadDialogProgress
             width: parent.width
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                top: instructionTxt.bottom
-                topMargin: 10
+                top: instructionTxtBg.bottom
+                topMargin: GCStyle.halfMargins
             }
             visible: true
             Layout.alignment: Qt.AlignHCenter
@@ -232,14 +225,6 @@ Item {
             value: 0
         }
 
-        Rectangle {
-            id: buttonSelector
-            width: 0
-            height: 0
-            color: "#803ACAFF"
-            scale: 1.1
-        }
-
         GCButton {
             id: backgroundButton
             width: parent.width
@@ -247,14 +232,13 @@ Item {
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: downloadDialogProgress.bottom
-                topMargin: 10
+                topMargin: GCStyle.halfMargins
             }
             //: Run this task in background
             text: qsTr("Background")
             fixedFontSize: downloadDialog.fixedFontSize
             theme: "highContrast"
             visible: true
-            property bool selected: false;
             onClicked: downloadDialog.shutdown();
         }
 
@@ -265,14 +249,13 @@ Item {
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: backgroundButton.bottom
-                topMargin: 10
+                topMargin: GCStyle.halfMargins
             }
             text: qsTr("Abort")
             fixedFontSize: downloadDialog.fixedFontSize
             theme: "highContrast"
 
             visible: true
-            property bool selected: false;
             onClicked: {
                 if (DownloadManager.downloadIsRunning())
                     DownloadManager.abortDownloads();
@@ -280,27 +263,6 @@ Item {
                 downloadDialog.shutdown();
             }
         }
-
-        states: [
-            State {
-                name: "button1Selected"
-                when: backgroundButton.selected
-                PropertyChanges {
-                    buttonSelector {
-                        anchors.fill: backgroundButton
-                    }
-                }
-            },
-            State {
-                name: "button2Selected"
-                when: abortButton.selected
-                PropertyChanges {
-                    buttonSelector {
-                        anchors.fill: abortButton
-                    }
-                }
-            }
-        ]
     }
 
     Keys.onEscapePressed: {

@@ -45,7 +45,7 @@ CheckBox {
     }
     contentItem: GCText {
         anchors.left: indicator.right
-        anchors.leftMargin: 10
+        anchors.leftMargin: GCStyle.halfMargins
         anchors.right: checkBox.right
         fontSize: labelTextFontSize
         text: checkBox.text

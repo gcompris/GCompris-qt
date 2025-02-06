@@ -284,7 +284,7 @@ Window {
             content: Component {
                 Column {
                     id: activitiesWithNewDatasetsColumn
-                    spacing: 5 * ApplicationInfo.ratio
+                    spacing: GCStyle.halfMargins
                     width: parent.width
 
                     Repeater {

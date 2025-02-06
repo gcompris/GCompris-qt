@@ -35,7 +35,7 @@ Item {
      *
      * Default keys-rectangle color used unless the user provides another.
      */
-    property var colours: ["#ea7025", "#67c111", "#00bde3", "#bde300","#e3004c"]
+    property var colours: ["#ec8748", "#eceb48", "#7fec48", "#48d3ec","#ee5f5f"]
 
     /**
      * type:list
@@ -141,21 +141,20 @@ Item {
         id: leftPanel
         width: columnWidth
         height: parent.height - 90 * ApplicationInfo.ratio
-        opacity: 0.8
 
         Repeater {
             model: 5
 
             Rectangle{
                 width: parent.width
-                height: parent.height/5
+                height: parent.height * 0.2
                 color: colours[index]
                 border.color: Qt.darker(color)
-                border.width: 2
+                border.width: GCStyle.thinBorder
 
                 GCText {
                     anchors.fill: parent
-                    anchors.margins: 5 * ApplicationInfo.ratio
+                    anchors.margins: GCStyle.halfMargins
                     fontSize: 28
                     fontSizeMode: Text.Fit
                     horizontalAlignment: Text.AlignHCenter
@@ -176,11 +175,11 @@ Item {
                     }
                     onPressed: {
                         leftPanel.children[index].color = Qt.lighter(colours[index])
-                        leftPanel.children[index].border.width = 5
+                        leftPanel.children[index].border.width = GCStyle.midBorder
                     }
                     onReleased: {
                         leftPanel.children[index].color = colours[index]
-                        leftPanel.children[index].border.width = 2
+                        leftPanel.children[index].border.width = GCStyle.thinBorder
                     }
                 }
             }
@@ -191,14 +190,14 @@ Item {
             visible: containerPanel.displayDecimalButton
             width: parent.width
             height: containerPanel.height - leftPanel.height
-            color: "white"
-            border.color: "black"
-            border.width: 2
+            color: GCStyle.whiteBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinBorder
 
             GCText {
                 id: decimalPointCharacter
                 anchors.fill: parent
-                anchors.margins: 5 * ApplicationInfo.ratio
+                anchors.margins: GCStyle.halfMargins
                 fontSize: 28
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
@@ -216,13 +215,13 @@ Item {
                 }
 
                 onPressed: {
-                    decimalPointButton.color = Qt.lighter("white")
-                    decimalPointButton.border.width = 5
+                    decimalPointButton.color = Qt.lighter(GCStyle.whiteBg)
+                    decimalPointButton.border.width = GCStyle.midBorder
                 }
 
                 onReleased: {
-                    decimalPointButton.color = "white"
-                    decimalPointButton.border.width = 2
+                    decimalPointButton.color = GCStyle.whiteBg
+                    decimalPointButton.border.width = GCStyle.thinBorder
                 }
             }
         }
@@ -233,21 +232,20 @@ Item {
         width: columnWidth
         height: parent.height - 90 * ApplicationInfo.ratio
         x: parent.width - columnWidth
-        opacity: 0.8
 
         Repeater {
             model: 5
 
             Rectangle {
                 width: parent.width
-                height: parent.height/5
+                height: parent.height * 0.2
                 color: colours[index]
                 border.color: Qt.darker(color)
-                border.width:2
+                border.width: GCStyle.thinBorder
 
                 GCText {
                     anchors.fill: parent
-                    anchors.margins: 5 * ApplicationInfo.ratio
+                    anchors.margins: GCStyle.halfMargins
                     fontSize: 28
                     fontSizeMode: Text.Fit
                     horizontalAlignment: Text.AlignHCenter
@@ -267,11 +265,11 @@ Item {
                     }
                     onPressed: {
                         rightPanel.children[index].color = Qt.lighter(colours[index])
-                        rightPanel.children[index].border.width = 5
+                        rightPanel.children[index].border.width = GCStyle.midBorder
                     }
                     onReleased: {
                         rightPanel.children[index].color = colours[index]
-                        rightPanel.children[index].border.width = 2
+                        rightPanel.children[index].border.width = GCStyle.thinBorder
                     }
                 }
             }
@@ -281,13 +279,13 @@ Item {
             id: backspaceButton
             width: parent.width
             height: containerPanel.height - rightPanel.height
-            color: "white"
-            border.color: "black"
-            border.width: 2
+            color: GCStyle.whiteBg
+            border.color: GCStyle.darkBorder
+            border.width: GCStyle.thinBorder
 
             GCText {
                 anchors.fill: parent
-                anchors.margins: 5 * ApplicationInfo.ratio
+                anchors.margins: GCStyle.halfMargins
                 fontSize: 28
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
@@ -306,13 +304,13 @@ Item {
                     answer = answer.substring(0,answer.length - 1)
                 }
                 onPressed: {
-                    backspaceButton.color = Qt.lighter("white")
-                    backspaceButton.border.width = 5
+                    backspaceButton.color = Qt.lighter(GCStyle.whiteBg)
+                    backspaceButton.border.width = GCStyle.midBorder
                 }
 
                 onReleased: {
-                    backspaceButton.color = "white"
-                    backspaceButton.border.width = 2
+                    backspaceButton.color = GCStyle.whiteBg
+                    backspaceButton.border.width = GCStyle.thinBorder
                 }
             }
         }
@@ -374,19 +372,19 @@ Item {
             {
                 answer += keyValue;
                 leftPanel.children[keyValue].color = Qt.lighter(colours[keyValue])
-                leftPanel.children[keyValue].border.width = 5
+                leftPanel.children[keyValue].border.width = GCStyle.midBorder
             }
             else if(keyValue < 10 && answer.length < maxDigit)
             {
                 answer += keyValue;
                 rightPanel.children[keyValue - 5].color = Qt.lighter(colours[keyValue - 5])
-                rightPanel.children[keyValue - 5].border.width = 5
+                rightPanel.children[keyValue - 5].border.width = GCStyle.midBorder
             }
             else if(keyValue === 10)
             {
                 answer = answer.substring(0,answer.length - 1);
-                backspaceButton.color = Qt.lighter("white")
-                backspaceButton.border.width = 5
+                backspaceButton.color = Qt.lighter(GCStyle.whiteBg)
+                backspaceButton.border.width = GCStyle.midBorder
             }
             //In case the button for the decimal point character is enabled, and
             //In case the key entered by the user is a decimal point character, and
@@ -396,8 +394,8 @@ Item {
             else if(containerPanel.displayDecimalButton && keyValue === containerPanel.decimalPoint && answer.length < maxDigit && answer.length != 0 && answer.indexOf(keyValue) == -1)
             {
                 answer += keyValue;
-                decimalPointButton.color = Qt.lighter("white")
-                decimalPointButton.border.width = 5
+                decimalPointButton.color = Qt.lighter(GCStyle.whiteBg)
+                decimalPointButton.border.width = GCStyle.midBorder
             }
         }
         else
@@ -405,23 +403,23 @@ Item {
             if(keyValue < 5)
             {
                 leftPanel.children[keyValue].color = colours[keyValue]
-                leftPanel.children[keyValue].border.width = 2
+                leftPanel.children[keyValue].border.width = GCStyle.thinBorder
             }
             else if(keyValue < 10)
             {
 
                 rightPanel.children[keyValue - 5].color = colours[keyValue - 5]
-                rightPanel.children[keyValue - 5].border.width = 2
+                rightPanel.children[keyValue - 5].border.width = GCStyle.thinBorder
             }
             else if(keyValue === 10)
             {
-                backspaceButton.color = "white"
-                backspaceButton.border.width = 2
+                backspaceButton.color = GCStyle.whiteBg
+                backspaceButton.border.width = GCStyle.thinBorder
             }
             else if(keyValue === containerPanel.decimalPoint)
             {
-                decimalPointButton.color = "white"
-                decimalPointButton.border.width = 2
+                decimalPointButton.color = GCStyle.whiteBg
+                decimalPointButton.border.width = GCStyle.thinBorder
             }
         }
     }

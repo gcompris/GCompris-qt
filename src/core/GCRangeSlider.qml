@@ -22,34 +22,50 @@ RangeSlider {
     focusPolicy: Qt.NoFocus
     snapMode: Slider.SnapAlways
     stepSize: 1
+
+    first.handle: Rectangle {
+        x: control.leftPadding + control.first.visualPosition * (control.availableWidth - width)
+        y: control.topPadding + control.availableHeight * 0.5 - height * 0.5
+        implicitWidth: radius * 2
+        implicitHeight: radius * 2
+        radius: 10 * ApplicationInfo.ratio
+        color: control.first.pressed || activeFocus ? GCStyle.sliderPressed : GCStyle.sliderHandle
+        border.color: GCStyle.sliderBorder
+        border.width: GCStyle.thinnestBorder
+    }
+
+    second.handle: Rectangle {
+        x: control.leftPadding + control.second.visualPosition * (control.availableWidth - width)
+        y: control.topPadding + control.availableHeight / 2 - height / 2
+        implicitWidth: radius * 2
+        implicitHeight: radius * 2
+        radius: 10 * ApplicationInfo.ratio
+        color: control.second.pressed || activeFocus ? GCStyle.sliderPressed : GCStyle.sliderHandle
+        border.color: GCStyle.sliderBorder
+        border.width: GCStyle.thinnestBorder
+    }
     
     background: Rectangle {
         x: control.leftPadding
         y: control.topPadding + control.availableHeight / 2 - height / 2
-        radius: height / 2
+        radius: height * 0.5
         width: control.availableWidth
         height: implicitHeight
         implicitWidth: 250 * ApplicationInfo.ratio
-        implicitHeight: 8 * ApplicationInfo.ratio
+        implicitHeight: first.handle.height * 0.5
         anchors.verticalCenter: parent.verticalCenter
-        border.width: 1
-        border.color: "#888"
-        gradient: Gradient {
-            GradientStop { color: "#bbb" ; position: 0 }
-            GradientStop { color: "#ccc" ; position: 0.6 }
-            GradientStop { color: "#ccc" ; position: 1 }
-        }
+        border.width: GCStyle.thinnestBorder
+        border.color: GCStyle.sliderBorder
+        color: GCStyle.sliderEmpty
 
         Rectangle {
-            x: control.first.visualPosition * parent.width
-            width: control.second.visualPosition * parent.width - x
+            x: first.handle.x + first.handle.width * 0.5
+            width: second.handle.x - first.handle.x
             height: parent.height
-            border.color: Qt.darker("#f8d600", 1.2)
-            radius: height/2
-            gradient: Gradient {
-                GradientStop { color: "#ffe85c"; position: 0 }
-                GradientStop { color: "#f8d600"; position: 1.4 }
-            }
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.sliderBorder
+            radius: 0
+            color: GCStyle.sliderFill
         }
     }
 }

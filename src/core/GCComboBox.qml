@@ -99,7 +99,7 @@ Item {
     Column {
         id: comboColumn
         width: parent.width
-        spacing: 5 * ApplicationInfo.ratio
+        spacing: GCStyle.halfMargins
         Item {
             id: labelArea
             width: labelText.width
@@ -116,27 +116,24 @@ Item {
         Rectangle {
             id: button
             visible: true
-            border.width: 2
-            border.color: "#373737"
-            width: currentTextBox.contentWidth + radius * 2
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.darkBorder
+            width: currentTextBox.contentWidth + GCStyle.baseMargins
             height: 50 * ApplicationInfo.ratio
-            radius: 10
-            gradient: Gradient {
-                GradientStop { position: 0 ; color: mouseArea.pressed ? "#C03ACAFF" : "#23373737" }
-                GradientStop { position: 1 ; color: mouseArea.pressed ? "#803ACAFF" : "#13373737" }
-            }
+            radius: GCStyle.halfMargins
+            color: mouseArea.pressed ? GCStyle.highlightColor : GCStyle.darkTransparentBg
             // Current value of combobox
             GCText {
                 id: currentTextBox
                 anchors.centerIn: parent
                 text: currentText
+                color: GCStyle.darkText
                 fontSize: mediumSize
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                width: comboColumn.width - 20
+                width: comboColumn.width - GCStyle.baseMargins
                 height: 50 * ApplicationInfo.ratio
-                color: "#373737"
             }
             MouseArea {
                 id: mouseArea
@@ -157,7 +154,7 @@ Item {
         visible: false
         width: if(parent) parent.width
         height: if(parent) parent.height
-        color: "#696da3"
+        color: GCStyle.configBg
 
         parent: background
         z: 100
@@ -238,23 +235,22 @@ Item {
         Rectangle {
             id : headerDescription
             z: 10
-            color: "#e6e6e6"
-            radius: 10 * ApplicationInfo.ratio
-            width: popup.width - 30
-            height: textDescription.height * 1.2
+            color: GCStyle.lightBg
+            radius: GCStyle.baseMargins
+            width: popup.width - 2 * GCStyle.baseMargins
+            height: textDescription.height + 2 * GCStyle.baseMargins
             anchors.top: popup.top
             anchors.horizontalCenter: popup.horizontalCenter
-            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.baseMargins
 
             GCText {
                 id: textDescription
                 text: label
-                width: headerDescription.width - 120 * ApplicationInfo.ratio //minus twice the discard button size
+                width: headerDescription.width - (discardIcon.width + discardIcon.anchors.margins) * 2
                 height: 50 * ApplicationInfo.ratio
                 anchors.centerIn: headerDescription
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: "#191919"
                 fontSizeMode: Text.Fit
                 minimumPointSize: 7
                 fontSize: largeSize
@@ -264,8 +260,9 @@ Item {
 
             GCButtonCancel {
                 id: discardIcon
-                anchors.verticalCenter: headerDescription.verticalCenter
-                anchors.margins: 2 * ApplicationInfo.ratio
+                anchors.top: undefined
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.margins: GCStyle.tinyMargins
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -286,7 +283,7 @@ Item {
             contentWidth: contentItem.childrenRect.width
             contentHeight: contentItem.childrenRect.height
             width: headerDescription.width
-            height: popup.height - headerDescription.height - 20 * ApplicationInfo.ratio
+            height: popup.height - headerDescription.height - 2 * GCStyle.baseMargins
             currentIndex: gccombobox.currentIndex
             flickableDirection: Flickable.VerticalFlick
             maximumFlickVelocity: popup.height
@@ -295,7 +292,7 @@ Item {
             cellWidth: headerDescription.width / numberOfColumns
             cellHeight: 40 * ApplicationInfo.ratio
             anchors.top: headerDescription.bottom
-            anchors.topMargin: 5 * ApplicationInfo.ratio
+            anchors.topMargin: GCStyle.halfMargins
             anchors.horizontalCenter: popup.horizontalCenter
             onVisibleChanged: {
                 if(visible) {
@@ -313,10 +310,10 @@ Item {
                         id: itemBg
                         width: parent.width - radius
                         height: parent.height - radius
-                        color: gridItem.itemSelected ? "#e6e6e6" : "#bdbed0"
-                        border.width: gridItem.itemSelected ? 3 : 1
-                        border.color: "white"
-                        radius: 5 * ApplicationInfo.ratio
+                        color: gridItem.itemSelected ? GCStyle.lightBg : GCStyle.lightTransparentBg
+                        border.width: gridItem.itemSelected ? GCStyle.thinBorder : GCStyle.thinnestBorder
+                        border.color: GCStyle.whiteBorder
+                        radius: GCStyle.halfMargins
                         anchors.centerIn: parent
                     }
                     Image {
@@ -325,15 +322,15 @@ Item {
                         source: "qrc:/gcompris/src/core/resource/apply.svg"
                         anchors.left: parent.left
                         anchors.verticalCenter: parent.verticalCenter
-                        anchors.leftMargin: 10
-                        sourceSize.width: parent.height * 0.8
+                        anchors.leftMargin: GCStyle.halfMargins
+                        sourceSize.width: parent.height - GCStyle.baseMargins
                     }
                     GCText {
                         id: textValue
                         text: isModelArray ? modelData.text : model.text
                         anchors.centerIn: parent
                         height: itemBg.height
-                        width: itemBg.width - isSelectedIcon.width * 2 - 20
+                        width: itemBg.width - isSelectedIcon.width * 2 - GCStyle.baseMargins
                         fontSizeMode: Text.Fit
                         minimumPointSize: 7
                         fontSize: mediumSize
@@ -351,6 +348,5 @@ Item {
                 }
             }
         }
-
     }
 }
