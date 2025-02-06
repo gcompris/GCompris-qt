@@ -205,7 +205,7 @@ Item {
 
     /// @cond INTERNAL_DOCS
 
-    opacity: 0.9
+    opacity: 1
 
     visible: !hide && ApplicationSettings.isVirtualKeyboard && priv.initialized
     enabled: visible
@@ -297,7 +297,7 @@ Item {
 
         width: parent.width
         height: keyboard.height
-        color: "#8C8F8C"
+        color: "#808080"
         opacity: keyboard.opacity
 
         ListView {

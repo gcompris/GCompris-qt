@@ -18,10 +18,10 @@ import GCompris 1.0
 
 Rectangle {
     id: button
-    color: "#F2F2F2"
-    border.color: "#87A6DD"
-    border.width: 3 * ApplicationInfo.ratio
-    radius: 5 * ApplicationInfo.ratio
+    color: GCStyle.lightBg
+    border.color: GCStyle.blueBorder
+    border.width: GCStyle.midBorder
+    radius: GCStyle.halfMargins
 
     property alias text: buttonText.text
 
@@ -29,8 +29,8 @@ Rectangle {
 
     GCText {
         id: buttonText
-        width: parent.width - 20 * ApplicationInfo.ratio
-        height: parent.height - 10 * ApplicationInfo.ratio
+        width: parent.width - 2 * GCStyle.baseMargins
+        height: parent.height - GCStyle.baseMargins
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -40,6 +40,7 @@ Rectangle {
 
     MouseArea {
         id: buttonArea
+        hoverEnabled: true
         anchors.fill: parent
         onClicked: parent.clicked()
     }
@@ -49,6 +50,7 @@ Rectangle {
         PropertyChanges {
             button {
                 scale: 1.0
+                color: GCStyle.lightBg
             }
         }
     },
@@ -58,6 +60,7 @@ Rectangle {
         PropertyChanges {
             button {
                 scale: 0.9
+                color: GCStyle.focusColor
             }
         }
     },
@@ -66,7 +69,8 @@ Rectangle {
         when: buttonArea.containsMouse
         PropertyChanges {
             button {
-                scale: 1.1
+                scale: 1.0
+                color: GCStyle.focusColor
             }
         }
     }

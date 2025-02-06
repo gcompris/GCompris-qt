@@ -36,6 +36,8 @@ import "core.js" as Core
 Item {
     id: tutorialSection
     anchors.fill: parent
+    anchors.margins: GCStyle.baseMargins
+    anchors.bottomMargin: bar.height * 1.2
     focus: true
 
     /* type: int
@@ -51,9 +53,6 @@ Item {
 
     /* Store if we have a LTR locale */
     readonly property bool isLeftToRightLocale: Core.isLeftToRightLocale(ApplicationSettings.locale)
-
-    /* Store the ApplicationInfo.ratio locally */
-    readonly property real applicationInfoRatio: ApplicationInfo.ratio
 
     // Emitted when skipButton is clicked
     signal skipPressed
@@ -93,23 +92,32 @@ Item {
         }
     }
 
+    Rectangle {
+        id: tutorialTextContainer
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width
+        height: tutorialImage.source == "" && tutorialQml.source == "" ? parent.height * 0.5 : parent.height * 0.25
+        color: GCStyle.whiteBg
+        radius: GCStyle.halfMargins
+        border.width: GCStyle.midBorder
+        border.color: GCStyle.blueBorder
+    }
+
     // Tutorial instructions
     GCText {
         id: tutorialText
-        anchors.verticalCenter: tutorialTextContainer.verticalCenter
-        anchors.left: isLeftToRightLocale ? tutorialTextContainer.left : undefined
-        anchors.right: isLeftToRightLocale ? undefined : tutorialTextContainer.right
-        anchors.leftMargin: 10 * ApplicationInfo.ratio
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
+        anchors.fill: tutorialTextContainer
+        anchors.topMargin: GCStyle.halfMargins
+        anchors.bottomMargin: GCStyle.halfMargins
+        anchors.leftMargin: GCStyle.baseMargins
+        anchors.rightMargin: GCStyle.baseMargins
         text: tutorialDetails ? tutorialDetails[tutorialNumber].instruction : ""
         fontSizeMode: Text.Fit
         minimumPixelSize: 10
         horizontalAlignment: isLeftToRightLocale ? Text.AlignLeft : Text.AlignRight
         verticalAlignment: Text.AlignVCenter
-        width: parent.width - 40 * tutorialSection.applicationInfoRatio
-        height: 0.25 * parent.height
         wrapMode: Text.WordWrap
-        z: 2
         readonly property bool isLeftToRightLocale: Core.isLeftToRightLocale(ApplicationSettings.locale)
     }
 
@@ -117,32 +125,15 @@ Item {
         anchors.fill: parent
     }
 
-    Rectangle {
-        id: tutorialTextContainer
-        anchors.top: parent.top
-        anchors.topMargin: 10 * tutorialSection.applicationInfoRatio
-        anchors.horizontalCenter: parent.horizontalCenter
-        width: tutorialText.contentWidth + 20 * tutorialSection.applicationInfoRatio
-        height: tutorialText.contentHeight + 10 * tutorialSection.applicationInfoRatio
-        opacity: 0.8
-        radius: 10
-        border.width: 6
-        color: "white"
-        border.color: "#87A6DD"
-    }
-
     // previousButton: It emits skipPressed and navigates to previous tutorial when clicked
     IntroButton {
         id: previousButton
-        width: parent.width / 4
-        height: 90
-        z: 5
-        anchors.right: nextButton.left
-        anchors.topMargin: 15
-        anchors.rightMargin: 15
-	    anchors.top: tutorialTextContainer.bottom
+        width: (parent.width - 2 * GCStyle.baseMargins) * 0.33
+        height: Math.min(45 * ApplicationInfo.ratio, parent.height * 0.2)
+        anchors.left: parent.left
+        anchors.top: tutorialTextContainer.bottom
+        anchors.topMargin: GCStyle.baseMargins
         visible: tutorialSection.tutorialNumber != 0
-
         text: qsTr("Previous")
 
         onClicked: {
@@ -154,19 +145,17 @@ Item {
     // nextButton: It emits nextPressed which navigates to next tutorial when clicked
     IntroButton {
         id: nextButton
-        width: parent.width / 4
-        height: 90
-        z: 5
-        anchors.right: skipButton.left
-        anchors.topMargin: 15
-        anchors.rightMargin: 15
-	    anchors.top: tutorialTextContainer.bottom
+        width: previousButton.width
+        height: previousButton.height
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: tutorialTextContainer.bottom
+        anchors.topMargin: GCStyle.baseMargins
         visible: tutorialSection.tutorialNumber != (tutorialSection.tutorialDetails.length - 1)
 
         text: qsTr("Next")
 
         onClicked: {
-	        ++tutorialSection.tutorialNumber
+            ++tutorialSection.tutorialNumber
             nextPressed()
         }
     }
@@ -174,37 +163,35 @@ Item {
     // skipButton: It emits the skipPressed signal which calls the initLevel to close the tutorial when clicked.
     IntroButton {
         id: skipButton
-        width: parent.width / 4
-        height: 90
-        z: 5
+        width: previousButton.width
+        height: previousButton.height
         anchors.right: parent.right
-        anchors.rightMargin: 15
-        anchors.topMargin: 15
-	    anchors.top: tutorialTextContainer.bottom
+        anchors.top: tutorialTextContainer.bottom
+        anchors.topMargin: GCStyle.baseMargins
 
         text: nextButton.visible ? qsTr("Skip") : qsTr("Start")
 
         onClicked: {
             tutorialSection.visible = false
-	        skipPressed()
-	    }
+            skipPressed()
+        }
     }
 
     // Image component for tutorial instructions
     Image {
         id: tutorialImage
         visible: useImage
-        width: parent.width * 0.8
-        height: (parent.height - nextButton.height) * 0.48
         sourceSize.height: height
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         mipmap: true
         source: tutorialSection.tutorialDetails && useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionImage : ""
         anchors {
-            top: previousButton.bottom
-            topMargin: 10
-            horizontalCenter: parent.horizontalCenter
+            top: skipButton.bottom
+            topMargin: GCStyle.baseMargins
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
         }
     }
 
@@ -212,13 +199,13 @@ Item {
     Loader {
         id: tutorialQml
         enabled: !tutorialImage.visible
-        width: parent.width * 0.8
-        height: (parent.height - nextButton.height) * 0.48
         source: tutorialSection.tutorialDetails && !useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionQml : ""
         anchors {
-            top: previousButton.bottom
-            topMargin: 10
-            horizontalCenter: parent.horizontalCenter
+            top: skipButton.bottom
+            topMargin: GCStyle.baseMargins
+            left: parent.left
+            right: parent.right
+            bottom: parent.bottom
         }
     }
 }

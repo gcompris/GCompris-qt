@@ -85,18 +85,16 @@ Item {
     Rectangle {
         id: greyRectangle
         anchors.fill: parent
-        opacity: 0.8
-        color: "grey"
+        color: GCStyle.grayedBg
     }
 
     Image {
         id: loadingImage
         source: "qrc:/gcompris/src/core/resource/loading.svg"
         anchors.centerIn: parent
-        sourceSize.width: 150
+        sourceSize.width: 75 * ApplicationInfo.ratio
         width: sourceSize.width
         height: sourceSize.width
-        opacity: 0.8
 
         RotationAnimation on rotation {
             id: rotation

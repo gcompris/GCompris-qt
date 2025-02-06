@@ -44,21 +44,21 @@ Item {
      *
      * Color of the container in normal state.
      */
-    property color normalStateColor: "#fff"
+    property color normalStateColor: GCStyle.buttonColor
 
     /**
      * type:color
      *
      * Color of the container on good answer selection.
      */
-    property color correctStateColor: "#09f"
+    property color correctStateColor: GCStyle.goodAnswer
 
     /**
      * type:color
      *
      * Color of the container on bad answer selection.
      */
-    property color wrongStateColor: "#f66"
+    property color wrongStateColor: GCStyle.badAnswer
 
     /**
      * type: bool
@@ -141,13 +141,12 @@ Item {
     GCText {
         id: label
         anchors.centerIn: parent
-        anchors.horizontalCenterOffset: 0
         horizontalAlignment: Text.AlignHCenter
         width: button.width
         fontSizeMode: Text.Fit
         font.bold: true
         text: textLabel
-        color: "#373737"
+        color: GCStyle.darkText
     }
 
     MouseArea {

@@ -33,7 +33,7 @@ Rectangle {
     width: 0
     height: 0
     radius: 0
-    color: "#80808080"
+    color: GCStyle.grayedBg
     opacity: 0
     
     property alias errorAnimation: errorAnimation

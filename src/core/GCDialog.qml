@@ -31,8 +31,7 @@ import GCompris 1.0
  */
 Rectangle {
     id: gcdialog
-    color: "#B2808080"
-    property int baseMargins: 5 * ApplicationInfo.ratio
+    color: GCStyle.grayedBg
 
     /**
      * type:string
@@ -152,36 +151,35 @@ Rectangle {
         anchors {
             horizontalCenter: parent.horizontalCenter
             top: parent.top
-            topMargin: buttonCancel.height + 2 * gcdialog.baseMargins
+            topMargin: buttonCancel.height + GCStyle.baseMargins
             bottom: parent.bottom
-            bottomMargin: gcdialog.baseMargins
+            bottomMargin: GCStyle.baseMargins
         }
-        width: parent.width * 0.8
+        width: parent.width - 2 * GCStyle.baseMargins
 
         Rectangle {
             id: instructionTxtBg
             anchors.top: instruction.top
             width: parent.width
-            height: instruction.height - button1.height * 3 - gcdialog.baseMargins * 3
-            radius: gcdialog.baseMargins
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "white"
-            color: "#EEEEEEEE"
+            height: instruction.height - button1.height * 3 - GCStyle.halfMargins * 3
+            radius: GCStyle.halfMargins
+            border.width: GCStyle.thinBorder
+            border.color: GCStyle.whiteBorder
+            color: GCStyle.lightBg
 
             Flickable {
                 id: instructionFlick
                 maximumFlickVelocity: gcdialog.height
                 boundsBehavior: Flickable.StopAtBounds
                 anchors.fill: parent
-                anchors.margins: gcdialog.baseMargins
+                anchors.margins: GCStyle.baseMargins
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
-                contentHeight: instructionTxt.height + extraLoader.height + 15 * ApplicationInfo.ratio
-
+                contentHeight: instructionTxt.height + extraLoader.height + 2 * GCStyle.baseMargins
                 GCText {
                     id: instructionTxt
                     fontSize: regularSize
-                    color: "#191919"
+                    color: GCStyle.darkerText
                     anchors.horizontalCenter: parent.horizontalCenter
                     // need to remove the anchors (left and right) else sometimes text is hidden on the side
                     width: instructionFlick.width
@@ -194,7 +192,7 @@ Rectangle {
                 Loader {
                     id: extraLoader
                     anchors.top: instructionTxt.bottom
-                    anchors.topMargin: gcdialog.baseMargins
+                    anchors.topMargin: GCStyle.halfMargins
                     active: gcdialog.content != null
                     sourceComponent: gcdialog.content
                     width: instructionFlick.width
@@ -206,22 +204,14 @@ Rectangle {
                 opacity: 0.7
                 visible: instructionFlick.contentHeight > instructionFlick.height
                 anchors.right: parent.right
-                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.rightMargin: GCStyle.halfMargins
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                anchors.bottomMargin: GCStyle.halfMargins
                 onUp: instructionFlick.flick(0, 1000)
                 onDown: instructionFlick.flick(0, -1000)
                 upVisible: instructionFlick.atYBeginning ? false : true
                 downVisible: instructionFlick.atYEnd ? false : true
             }
-        }
-
-        Rectangle {
-            id: buttonSelector
-            width: gcdialog.width
-            height: button1.height + gcdialog.baseMargins * 2
-            color: "#803ACAFF"
-            visible: false
         }
 
         GCButton {
@@ -231,11 +221,10 @@ Rectangle {
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: instructionTxtBg.bottom
-                topMargin: 10
+                topMargin: GCStyle.halfMargins
             }
             theme: "highContrast"
             visible: text != ""
-            property bool selected: false;
             enabled: !gcdialog.alreadyClicked
             onClicked: {
                 gcdialog.alreadyClicked = true;
@@ -251,11 +240,10 @@ Rectangle {
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: button1.bottom
-                topMargin: 10
+                topMargin: GCStyle.halfMargins
             }
             theme: "highContrast"
             visible: text != ""
-            property bool selected: false;
             enabled: !gcdialog.alreadyClicked
             onClicked: {
                 gcdialog.alreadyClicked = true;
@@ -263,29 +251,6 @@ Rectangle {
                 gcdialog.stop()
             }
         }
-
-        states: [
-            State {
-                name: "button1Selected"
-                when: button1.selected
-                PropertyChanges {
-                    buttonSelector {
-                        anchors.centerIn: button1
-                        visible: true
-                    }
-                }
-            },
-            State {
-                name: "button2Selected"
-                when: button2.selected
-                PropertyChanges {
-                    buttonSelector {
-                        anchors.centerIn: button2
-                        visible: true
-                    }
-                }
-            }
-        ]
     }
 
     Keys.onEscapePressed: {
@@ -339,7 +304,7 @@ Rectangle {
     // The cancel button
     GCButtonCancel {
         id: buttonCancel
-        anchors.margins: 5 * ApplicationInfo.ratio
+        anchors.margins: GCStyle.halfMargins
         onClose: {
             if(button2.visible)
                 button2.clicked();

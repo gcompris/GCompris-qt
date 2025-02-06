@@ -209,7 +209,7 @@ Item {
                 width: parent.width * 0.3
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                color: "#2a2a2a"
+                color: GCStyle.darkText
                 fontSizeMode: Text.Fit
                 text: playerScore
             }
@@ -220,7 +220,7 @@ Item {
             name: "first"
             PropertyChanges {
                 backgroundRectangle {
-                    color: "#80ffffff"
+                    color: GCStyle.lightTransparentBg
                 }
             }
             PropertyChanges {
@@ -266,7 +266,7 @@ Item {
             }
             PropertyChanges {
                 backgroundRectangle {
-                    color: "#80ffffff"
+                    color: GCStyle.lightTransparentBg
                 }
             }
         }

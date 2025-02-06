@@ -31,10 +31,10 @@ Item {
         id: cardBg
         height: selected ? cardSize * 0.9 : cardSize * 0.7
         width: height
-        color: isSignSymbol || !clickable ? "transparent" : "white"
-        border.color: isSignSymbol || !clickable ? "transparent" : "#9FB8E3"
-        border.width: selected ? 12 : 3
-        radius: 15
+        color: isSignSymbol || !clickable ? "transparent" : GCStyle.whiteBg
+        border.color: isSignSymbol || !clickable ? "transparent" : GCStyle.blueBorder
+        border.width: selected ? GCStyle.thickestBorder : GCStyle.thinBorder
+        radius: GCStyle.halfMargins
         anchors.centerIn: parent
     }
     GCText {
@@ -42,7 +42,7 @@ Item {
         width: isSignSymbol ? numberCard.height : cardBg.height
         height: isSignSymbol ? numberCard.width : cardBg.height
         anchors.centerIn: parent
-        color: "#373737"
+        color: GCStyle.darkText
         text: value
         fontSize: Math.max(1, height) // avoid value of 0 during init
         fontSizeMode: Text.Fit

@@ -94,7 +94,7 @@ Rectangle {
     property bool hasConfig: currentActivity && currentActivity.hasConfig
     property bool hasDataset: currentActivity && currentActivity.hasDataset && datasetButtonVisible
 
-    color: "#696da3"
+    color: GCStyle.configBg
 
     property bool inMenu: false
 
@@ -165,27 +165,27 @@ Rectangle {
 
     Column {
         id: titleColumn
-        spacing: 10
+        spacing: GCStyle.halfMargins
         anchors.top: parent.top
-        anchors.topMargin: 15
+        anchors.topMargin: GCStyle.baseMargins
         anchors.horizontalCenter: parent.horizontalCenter
-        width: dialogChooseLevel.width - 30
+        width: dialogChooseLevel.width - 2 * GCStyle.baseMargins
         Rectangle {
             id: titleRectangle
-            color: "#e6e6e6"
-            radius: 10 * ApplicationInfo.ratio
+            color: GCStyle.lightBg
+            radius: GCStyle.halfMargins
             width: parent.width
-            height: title.height + 10 * 2
+            height: title.height + GCStyle.baseMargins
 
             GCText {
                 id: title
                 text: dialogChooseLevel.title
-                width: titleColumn.width - 10
+                width: titleColumn.width - 2 * GCStyle.baseMargins
                 anchors.horizontalCenter: titleRectangle.horizontalCenter
                 anchors.verticalCenter: titleRectangle.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                fontSize: 20
+                fontSize: mediumSize
                 font.weight: Font.DemiBold
                 wrapMode: Text.WordWrap
             }
@@ -215,7 +215,7 @@ Rectangle {
                 text: qsTr("Options")
                 enabled: hasConfig
                 height: parent.height
-                width: titleRectangle.width * 0.45
+                width: datasetVisibleButton.width
                 opacity: enabled ? 1 : 0
                 theme: "settingsButton"
                 selected: !datasetVisibleButton.selected
@@ -225,18 +225,18 @@ Rectangle {
 
         // "Dataset"/"Options" content
         Rectangle {
-            color: "#bdbed0"
-            radius: 10 * ApplicationInfo.ratio
-            width: dialogChooseLevel.width - 30
+            color: GCStyle.lightTransparentBg
+            radius: GCStyle.halfMargins
+            width: parent.width
             height: dialogChooseLevel.height - (2 * parent.anchors.topMargin) - titleRectangle.height - datasetOptionsRow.height - saveAndPlayRow.height - (3 * parent.spacing)
-            border.color: "white"
-            border.width: 3 * ApplicationInfo.ratio
+            border.color: GCStyle.whiteBorder
+            border.width: GCStyle.midBorder
 
             Flickable {
                 id: flick
                 maximumFlickVelocity: dialogChooseLevel.height
                 boundsBehavior: Flickable.StopAtBounds
-                anchors.margins: 10 * ApplicationInfo.ratio
+                anchors.margins: GCStyle.baseMargins
                 anchors.fill: parent
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
@@ -279,14 +279,14 @@ Rectangle {
 
                 Column {
                     visible: datasetVisibleButton.selected
-                    spacing: 10
+                    spacing: GCStyle.halfMargins
 
                     Repeater {
                         id: difficultiesRepeater
                         delegate: Row {
                             height: datasetVisibleButton.selected ? objective.height : 0
                             visible: modelData.enabled
-                            spacing: 10
+                            spacing: GCStyle.halfMargins
                             Image {
                                 id: difficultyIcon
                                 source: "qrc:/gcompris/src/core/resource/difficulty" +
@@ -325,9 +325,9 @@ Rectangle {
             GCButtonScroll {
                 id: scrollItem
                 anchors.right: parent.right
-                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.rightMargin: GCStyle.halfMargins
                 anchors.bottom: flick.bottom
-                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                anchors.bottomMargin: GCStyle.halfMargins
                 onUp: flick.flick(0, 1000)
                 onDown: flick.flick(0, -1000)
                 upVisible: flick.atYBeginning ? false : true

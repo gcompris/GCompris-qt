@@ -1,9 +1,11 @@
 /* GCompris - GCSlider.qml
  *
  * SPDX-FileCopyrightText: 2018 Alexis Breton <alexis95150@gmail.com>
+ * SPDX-FileCopyrightText: 2025 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
  *   Alexis Breton <alexis95150@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -26,40 +28,35 @@ Slider {
 
     handle: Rectangle {
         x: control.leftPadding + control.visualPosition * (control.availableWidth - width)
-        y: control.topPadding + control.availableHeight / 2 - height / 2
+        y: control.topPadding + control.availableHeight * 0.5 - height * 0.5
         implicitWidth: 2 * radius
         implicitHeight: 2 * radius
-        radius: 13
-        color: control.pressed ? "#f0f0f0" : "#f6f6f6"
-        border.color: "#bdbebf"
+        radius: 10 * ApplicationInfo.ratio
+        color: control.pressed || activeFocus ? GCStyle.sliderPressed : GCStyle.sliderHandle
+        border.color: GCStyle.sliderBorder
+        border.width: GCStyle.thinnestBorder
     }
 
-	background: Rectangle {
+    background: Rectangle {
         x: control.leftPadding
-        y: control.topPadding + control.availableHeight / 2 - height / 2
-		radius: height / 2
+        y: control.topPadding + control.availableHeight * 0.5 - height * 0.5
+        radius: height * 0.5
         width: control.availableWidth
         height: implicitHeight
         implicitWidth: 250 * ApplicationInfo.ratio
-        implicitHeight: 8 * ApplicationInfo.ratio
+        implicitHeight: handle.height * 0.5
         anchors.verticalCenter: parent.verticalCenter
-        border.width: 1
-        border.color: "#888"
-        gradient: Gradient {
-            GradientStop { color: "#bbb" ; position: 0 }
-            GradientStop { color: "#ccc" ; position: 0.6 }
-            GradientStop { color: "#ccc" ; position: 1 }
-        }
+        border.width: GCStyle.thinnestBorder
+        border.color: GCStyle.sliderBorder
+        color: GCStyle.sliderEmpty
 
         Rectangle {
-            width: control.visualPosition * parent.width
+            width: handle.x + handle.width * 0.5
             height: parent.height
-            border.color: Qt.darker("#f8d600", 1.2)
-            radius: height/2
-            gradient: Gradient {
-                GradientStop { color: "#ffe85c"; position: 0 }
-                GradientStop { color: "#f8d600"; position: 1.4 }
-            }
+            border.width: GCStyle.thinnestBorder
+            border.color: GCStyle.sliderBorder
+            radius: height * 0.5
+            color: GCStyle.sliderFill
         }
     }
 }

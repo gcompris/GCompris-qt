@@ -32,7 +32,7 @@ Button {
 
     /**
      * type:string
-     * theme of the button. For now, three themes are accepted: "light" and "dark" and "highContrast"
+     * theme of the button.
      *
      * Default is dark.
     */
@@ -50,57 +50,45 @@ Button {
      * type:var
      * existing themes for the button.
      * A theme is composed of:
-     *   the colors of the button when selected: selectedColorGradient0 and selectedColorGradient1.
-     *   the colors of the button when not selected: backgroundColorGradient0 and backgroundColorGradient1.
+     *   the color of the button when not selected: backgroundColor
+     *   the color of the button when pressed: pressedColor
+     *   the color of the button selected: focusColor
      *   the button's border color
      *   the text color
     */
     property var themes: {
         "dark": {
-            backgroundColorGradient0: "#23373737",
-            selectedColorGradient0: "#C03ACAFF",
-            backgroundColorGradient1: "#13373737",
-            selectedColorGradient1: "#803ACAFF",
-            borderColor: "#FF373737",
-            textColor: "#FF373737"
-        },
-        "light": {
-            backgroundColorGradient0: "#42FFFFFF",
-            selectedColorGradient0: "#C03ACAFF",
-            backgroundColorGradient1: "#23FFFFFF",
-            selectedColorGradient1: "#803ACAFF",
-            borderColor: "white",
-            textColor: "white"
+            backgroundColor: GCStyle.darkTransparentBg,
+            pressedColor: GCStyle.highlightColor,
+            focusColor: GCStyle.focusColor,
+            borderColor: GCStyle.darkBorder,
+            textColor: GCStyle.darkText
         },
         "highContrast": {
-            backgroundColorGradient0: "#EEFFFFFF",
-            selectedColorGradient0: "#C03ACAFF",
-            backgroundColorGradient1: "#AAFFFFFF",
-            selectedColorGradient1: "#803ACAFF",
-            borderColor: "white",
-            textColor: "#FF373737"
+            backgroundColor: GCStyle.lighterBg,
+            pressedColor: GCStyle.highlightColor,
+            focusColor: GCStyle.focusColor,
+            borderColor: GCStyle.whiteBorder,
+            textColor: GCStyle.darkText
         },
         "categories": {
-            backgroundColorGradient0: "#80F6FBFC",
-            selectedColorGradient0: "#FFF6FBFC",
-            backgroundColorGradient1: "#80F6FBFC",
-            selectedColorGradient1: "#FFF6FBFC",
-            borderColor: "#FF87A6DD",
-            textColor: "#FF373737"
+            backgroundColor: GCStyle.whiteBlueTransparentBg,
+            pressedColor: GCStyle.whiteBlueBg,
+            focusColor: GCStyle.whiteBlueTransparentBg,
+            borderColor: GCStyle.blueBorder,
+            textColor: GCStyle.darkText
         },
         "settingsButton": {
-            backgroundColorGradient0: "#bdbed0",
-            selectedColorGradient0: "#e6e6e6",
-            backgroundColorGradient1: "#bdbed0",
-            selectedColorGradient1: "#e6e6e6",
-            borderColor: selected ? "#ffffffff" : "#00ffffff",
-            textColor: "#191919"
+            backgroundColor: GCStyle.lightTransparentBg,
+            pressedColor: GCStyle.lightBg,
+            focusColor: GCStyle.lightBg,
+            borderColor: selected ? GCStyle.whiteBorder : GCStyle.noBorder,
+            textColor: GCStyle.darkerText
         },
         "noStyle": {
-            backgroundColorGradient0: "#00FFFFFF",
-            selectedColorGradient0: "#00FFFFFF",
-            backgroundColorGradient1: "#00FFFFFF",
-            selectedColorGradient1: "#00FFFFFF",
+            backgroundColor: "#00FFFFFF",
+            pressedColor: "#00FFFFFF",
+            focusColor: "#00FFFFFF",
             borderColor: "#00FFFFFF",
             textColor: "#00000000"
         }
@@ -128,13 +116,11 @@ Button {
     focusPolicy: Qt.NoFocus
     
     background: Rectangle {
-        border.width: Math.max(1, (buttonControl.activeFocus || buttonControl.selected ? 3 : 1) * ApplicationInfo.ratio)
+        border.width: buttonControl.activeFocus || buttonControl.selected ? GCStyle.midBorder : GCStyle.thinnestBorder
         border.color: themes[theme].borderColor
-        radius: 5 * ApplicationInfo.ratio
-        gradient: Gradient {
-            GradientStop { position: 0 ; color: buttonControl.pressed || buttonControl.down ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
-            GradientStop { position: 1 ; color: buttonControl.pressed || buttonControl.down ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
-        }
+        radius: GCStyle.halfMargins
+        color: (buttonControl.pressed || buttonControl.down ? themes[theme].pressedColor :
+                (buttonControl.selected ? themes[theme].focusColor : themes[theme].backgroundColor))
     }
     contentItem: Item {
         id: labelItem
@@ -149,8 +135,8 @@ Button {
             fontSize: textSizes[textSize].fontSize
             font.bold: textSizes[textSize].fontBold
             anchors.fill: parent
-            anchors.margins: 5 * ApplicationInfo.ratio
-            anchors.rightMargin: rightIconSize > 0 ? rightIconSize :  5 * ApplicationInfo.ratio // if there's a rightIconSize, it must handle the rightMargin
+            anchors.margins: GCStyle.halfMargins
+            anchors.rightMargin: rightIconSize > 0 ? rightIconSize :  GCStyle.halfMargins // if there's a rightIconSize, it must handle the rightMargin
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap

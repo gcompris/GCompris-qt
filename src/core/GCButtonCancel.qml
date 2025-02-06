@@ -22,9 +22,12 @@ Image {
     anchors.right: parent.right
     anchors.top: parent.top
     smooth: true
-    sourceSize.width: 60 * ApplicationInfo.ratio
+    width: 60 * ApplicationInfo.ratio
+    height: width
+    sourceSize.width: width
+    sourceSize.height: height
     fillMode: Image.PreserveAspectFit
-    anchors.margins: 10
+    anchors.margins: GCStyle.halfMargins
 
     signal close
 
