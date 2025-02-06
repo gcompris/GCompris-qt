@@ -58,8 +58,7 @@ Item {
 
         Domino {
             id: domino
-            height: ok.height
-            width: height * 2
+            width: ok.height * 2
             isClickable: ok.enabled
             soundEffects: dominoScroll
         }

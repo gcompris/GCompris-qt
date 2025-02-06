@@ -21,6 +21,7 @@ import GCompris 1.0
  */
 Flipable {
     id: flipable
+    height: width * 0.5
 
     /**
      * type:int
@@ -41,12 +42,12 @@ Flipable {
     property int valueMax: 9
 
     // Domino style
-    property color color: "#f8f8f8"
-    property color borderColor: "#373737"
-    property int borderWidth: 2
+    property color color: GCStyle.lighterBg
+    property color borderColor: GCStyle.darkBorder
+    property int borderWidth: GCStyle.thinnestBorder
     property int radius: width * 0.05
-    property color backColor: "#f8f8f8"
-    property color pointColor: "#373737"
+    property color backColor: GCStyle.lighterBg
+    property color pointColor: GCStyle.darkText
 
     // Define the mode/representation of domino
     property string mode: "dot"
@@ -83,12 +84,9 @@ Flipable {
         DominoNumber {
             id: number1
             mode: flipable.mode
-            width: parent.width / 2
-            height: parent.height
-            color: flipable.pointColor
-            borderColor: flipable.borderColor
-            borderWidth: 0
-            radius: parent.height * 0.25
+            width: parent.width * 0.5
+            margins: flipable.radius
+            numberColor: flipable.pointColor
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
@@ -97,9 +95,8 @@ Flipable {
 
         // Separation
         Rectangle {
-            x: front.width / 2
-            anchors.verticalCenter: front.verticalCenter
-            width: 2
+            anchors.centerIn: parent
+            width: GCStyle.thinnestBorder
             height: front.height * 0.7
             color: flipable.borderColor
         }
@@ -107,13 +104,10 @@ Flipable {
         DominoNumber {
             id: number2
             mode: flipable.mode
-            x: parent.width / 2
-            width: parent.width / 2
-            height: parent.height
-            color: flipable.pointColor
-            borderColor: flipable.borderColor
-            borderWidth: 0
-            radius: parent.height * 0.25
+            x: parent.width * 0.5
+            width: number1.width
+            margins: flipable.radius
+            numberColor: flipable.pointColor
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
@@ -131,8 +125,8 @@ Flipable {
 
     transform: Rotation {
         id: rotation
-        origin.x: flipable.width/2
-        origin.y: flipable.height/2
+        origin.x: flipable.width * 0.5
+        origin.y: flipable.height * 0.5
         axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
         angle: 0    // the default angle
     }
