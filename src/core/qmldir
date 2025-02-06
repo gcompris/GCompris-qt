@@ -1,3 +1,4 @@
 module GCompris
-singleton GCSingletonFontLoader GCSingletonFontLoader.qml
+singleton GCSingletonFontLoader 1.0 GCSingletonFontLoader.qml
+singleton GCStyle 1.0 GCStyle.qml
 classname GComprisPlugin
