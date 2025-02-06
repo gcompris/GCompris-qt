@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-02 12:52+0300\n"
+"PO-Revision-Date: 2025-02-05 16:06+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -27531,12 +27531,12 @@ msgstr "GCompris’i sessiz çalıştır."
 #: core/main.cpp:95
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
-msgstr "Büfe kipini devre dışı bırak (öntanımlı)."
+msgstr "Otomat kipini devre dışı bırak (öntanımlı)."
 
 #: core/main.cpp:98
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
-msgstr "Büfe kipini etkinleştir."
+msgstr "Otomat kipini etkinleştir."
 
 #: core/main.cpp:102
 msgctxt "QObject|"
