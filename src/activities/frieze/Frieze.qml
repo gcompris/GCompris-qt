@@ -290,10 +290,9 @@ ActivityBase {
                 text: qsTr("I am Ready")
                 opacity: (!enabled) ? 0.0 : 1.0
                 theme: "dark"
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: items.toggleReady()
-                    enabled: !items.buttonsBlocked
+                onClicked: {
+                    if(!items.buttonsBlocked)
+                        items.toggleReady()
                 }
             }
 
