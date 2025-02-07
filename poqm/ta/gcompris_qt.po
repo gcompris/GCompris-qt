@@ -249,7 +249,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:25
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -304,7 +304,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:23
+#: activities/sketch/ActivityInfo.qml:28
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -6153,7 +6153,7 @@ msgstr "இளஞ்சிவப்பு பட்டாம் பூச்ச�
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
 msgctxt "ActivityInfo|"
-msgid "Create and simulate a digital logic circuit"
+msgid "Create and simulate a digital logic circuit."
 msgstr ""
 
 #. Help goal
@@ -15262,7 +15262,8 @@ msgstr ""
 "டக்ஸ் குகையிலிருந்து தப்பிக்க உதவி பண்ணுங்க. அது நீங்க கண்டுபிடிக்க வேண்டிய எண் ஒன்றை "
 "மறைத்து வைத்திருக்கு."
 
-#: activities/guessnumber/ActivityInfo.qml:19
+#. Help goal
+#: activities/guessnumber/ActivityInfo.qml:20
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Practice the addition operation"
@@ -15271,7 +15272,7 @@ msgid "Practice comparing numbers."
 msgstr "கூட்டல் பழகுவோம்"
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:23
+#: activities/guessnumber/ActivityInfo.qml:24
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid ""
@@ -15297,7 +15298,7 @@ msgstr ""
 "எண்ணிலிருந்து நீங்கள் எவ்வளவு விலகி உள்ளீர்கள் என காட்டும். தப்பிக்கும் வழியிலிருந்து மேலோ "
 "கீழோ இருந்தால் உங்கள் எண் அதிகம் அல்லது குறைவு என கொள்ளலாம்."
 
-#: activities/guessnumber/ActivityInfo.qml:25
+#: activities/guessnumber/ActivityInfo.qml:26
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Subtraction memory game"
@@ -15305,7 +15306,7 @@ msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr ""
@@ -24547,17 +24548,20 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:17
+#. Activity title
+#: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Sketch"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:18
+#. Help title
+#: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:20
+#. Help goal
+#: activities/sketch/ActivityInfo.qml:23
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Learn about multiples and factors."
@@ -24565,23 +24569,24 @@ msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
 msgstr "மடங்குகள் காரணிகள் பற்றி அறிவோம்."
 
-#: activities/sketch/ActivityInfo.qml:22
+#. Help manual
+#: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:31
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the coral butterfly"
@@ -24589,22 +24594,22 @@ msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "பவழம் பட்டாம் பூச்சி கண்டு பிடி "
 
-#: activities/sketch/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr ""
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr ""
@@ -27374,7 +27379,7 @@ msgid "Solve:"
 msgstr ""
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:166
+#: activities/vertical_subtraction/subtraction.js:169
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
@@ -28190,13 +28195,13 @@ msgid "Section:"
 msgstr "கூட்டல்"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
-#: core/Domino.qml:57
+#: core/Domino.qml:58
 msgctxt "Domino|"
 msgid "Dots"
 msgstr ""
 
 #. "Arabic Numbers" is for representation of the points in a domino in the form of integer numbers
-#: core/Domino.qml:59
+#: core/Domino.qml:60
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Simple Letters"
@@ -28205,7 +28210,7 @@ msgid "Arabic Numbers"
 msgstr "எளிய எழுத்துக்கள்"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
-#: core/Domino.qml:61
+#: core/Domino.qml:62
 #, fuzzy
 #| msgctxt "ActivityInfo|"
 #| msgid "Subtraction memory game"
@@ -28214,12 +28219,12 @@ msgid "Roman Numbers"
 msgstr "கழித்தல் நினைவாற்றல் விளையாட்டு"
 
 #. "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
-#: core/Domino.qml:63
+#: core/Domino.qml:64
 msgctxt "Domino|"
 msgid "Images"
 msgstr ""
 
-#: core/DownloadDialog.qml:201
+#: core/DownloadDialog.qml:208
 #, fuzzy
 #| msgctxt "advanced_colors|"
 #| msgid "Find the coral butterfly"
@@ -28228,33 +28233,33 @@ msgid "Downloading..."
 msgstr "பவழம் பட்டாம் பூச்சி கண்டு பிடி "
 
 #. Run this task in background
-#: core/DownloadDialog.qml:253
+#: core/DownloadDialog.qml:238
 msgctxt "DownloadDialog|"
 msgid "Background"
 msgstr ""
 
-#: core/DownloadDialog.qml:270
+#: core/DownloadDialog.qml:254
 msgctxt "DownloadDialog|"
 msgid "Abort"
 msgstr ""
 
-#: core/DownloadDialog.qml:368
+#: core/DownloadDialog.qml:330
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
 msgstr ""
 
-#: core/DownloadDialog.qml:396
+#: core/DownloadDialog.qml:358
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr ""
 
-#: core/DownloadDialog.qml:398
+#: core/DownloadDialog.qml:360
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
 msgstr ""
 
-#: core/DownloadDialog.qml:400
+#: core/DownloadDialog.qml:362
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr ""
@@ -28304,90 +28309,90 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr ""
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:175
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr ""
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:180
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:214
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr ""
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr ""
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr ""
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:221
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr ""
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:233
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr ""
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr ""
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr ""
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:278
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr ""
 
-#: core/GCCreationHandler.qml:386
+#: core/GCCreationHandler.qml:384
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr ""
 
-#: core/GCCreationHandler.qml:396
+#: core/GCCreationHandler.qml:394
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr ""
 
-#: core/IntroMessage.qml:137
+#: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr ""
 
-#: core/IntroMessage.qml:152
+#: core/IntroMessage.qml:157
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr ""
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr ""
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr ""
@@ -28584,22 +28589,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "நான் தயார்"
 
-#: core/Tutorial.qml:146
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr ""
 
-#: core/Tutorial.qml:166
+#: core/Tutorial.qml:155
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr ""
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr ""
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr ""

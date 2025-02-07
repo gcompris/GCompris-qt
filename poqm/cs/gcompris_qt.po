@@ -206,7 +206,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:25
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -261,7 +261,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:23
+#: activities/sketch/ActivityInfo.qml:28
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -5825,8 +5825,11 @@ msgstr "Digitální elektřina"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
-msgid "Create and simulate a digital logic circuit"
+msgid "Create and simulate a digital logic circuit."
 msgstr "Vytvoř a simuluj digitální logický obvod."
 
 #. Help goal
@@ -14652,13 +14655,14 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Pomoz Tuxovi ven z jeskyně tím, že uhodneš skryté číslo."
 
-#: activities/guessnumber/ActivityInfo.qml:19
+#. Help goal
+#: activities/guessnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
 msgstr "Procvič si porovnávání čísel."
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:23
+#: activities/guessnumber/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -14677,12 +14681,12 @@ msgstr ""
 "pod vertikálním středem obrazovky, znamená to, že tvoje číslo je nad nebo "
 "pod hledaným číslem."
 
-#: activities/guessnumber/ActivityInfo.qml:25
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "Čísla: zadej číslo"
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: smazat číslo"
@@ -23433,59 +23437,63 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tabulátor: přepínání mezi výběrem barvy a oblastí pro malování"
 
-#: activities/sketch/ActivityInfo.qml:17
+#. Activity title
+#: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Sketch"
 msgstr "Náčrt"
 
-#: activities/sketch/ActivityInfo.qml:18
+#. Help title
+#: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr "Kresli si obrázky pomocí rozličných digitálních kreslících nástrojů."
 
-#: activities/sketch/ActivityInfo.qml:20
+#. Help goal
+#: activities/sketch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
 msgstr "Nauč se něco o digitálních kreslicích nástrojích."
 
-#: activities/sketch/ActivityInfo.qml:22
+#. Help manual
+#: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr ""
 "Ze skládacích panelů si vyber nástroje a barvy a nakresli si obrázky.<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: Vrátit zpět poslední činnost"
 
-#: activities/sketch/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: Znovu provést poslední činnost."
 
-#: activities/sketch/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: uložit obrázek"
 
-#: activities/sketch/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: Otevřít obrázek"
 
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr "Ctrl + N, Delete nebo Backspace: vytvořit nový obrázek"
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr "Koncept vyhlazování štětcem od:"
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr "Koncept náčrtkového štětce od:"
@@ -26048,7 +26056,7 @@ msgid "Solve:"
 msgstr "Vyřeš:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:166
+#: activities/vertical_subtraction/subtraction.js:169
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
@@ -26899,62 +26907,62 @@ msgid "Section:"
 msgstr "Oddíl:"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
-#: core/Domino.qml:57
+#: core/Domino.qml:58
 msgctxt "Domino|"
 msgid "Dots"
 msgstr "Tečky"
 
 #. "Arabic Numbers" is for representation of the points in a domino in the form of integer numbers
-#: core/Domino.qml:59
+#: core/Domino.qml:60
 msgctxt "Domino|"
 msgid "Arabic Numbers"
 msgstr "Arabské číslice"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
-#: core/Domino.qml:61
+#: core/Domino.qml:62
 msgctxt "Domino|"
 msgid "Roman Numbers"
 msgstr "Římské číslice"
 
 #. "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
-#: core/Domino.qml:63
+#: core/Domino.qml:64
 msgctxt "Domino|"
 msgid "Images"
 msgstr "Obrázky"
 
-#: core/DownloadDialog.qml:201
+#: core/DownloadDialog.qml:208
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
 msgstr "Stahuji..."
 
 #. Run this task in background
-#: core/DownloadDialog.qml:253
+#: core/DownloadDialog.qml:238
 msgctxt "DownloadDialog|"
 msgid "Background"
 msgstr "Pozadí"
 
-#: core/DownloadDialog.qml:270
+#: core/DownloadDialog.qml:254
 msgctxt "DownloadDialog|"
 msgid "Abort"
 msgstr "Přerušit"
 
-#: core/DownloadDialog.qml:368
+#: core/DownloadDialog.qml:330
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
 msgstr "Chyba při stahování (kód: %1): %2"
 
-#: core/DownloadDialog.qml:396
+#: core/DownloadDialog.qml:358
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr "Stahování proběhlo úspěšně. Datové soubory jsou nyní k dispozici."
 
-#: core/DownloadDialog.qml:398
+#: core/DownloadDialog.qml:360
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
 msgstr "Restartuj aktivní aktivitu."
 
-#: core/DownloadDialog.qml:400
+#: core/DownloadDialog.qml:362
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "Lokalizace je aktuální."
@@ -27004,90 +27012,90 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Data nenalezena pro %1."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:175
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 úspěšně smazán!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:180
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Nelze smazat %1!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:214
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Již existuje soubor se stejným názvem. Přejete si jej nahradit?"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Ano"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "Ne"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:221
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Opravdu si přejete smazat tento soubor?"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:233
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Úspěšně uloženo!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Zadej název souboru"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Hledat"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:278
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Uložit"
 
-#: core/GCCreationHandler.qml:386
+#: core/GCCreationHandler.qml:384
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Načíst"
 
-#: core/GCCreationHandler.qml:396
+#: core/GCCreationHandler.qml:394
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Smazat"
 
-#: core/IntroMessage.qml:137
+#: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Předchozí"
 
-#: core/IntroMessage.qml:152
+#: core/IntroMessage.qml:157
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Následující"
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Přeskočit"
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Spustit"
@@ -27289,22 +27297,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Jsem připraven"
 
-#: core/Tutorial.qml:146
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Předchozí"
 
-#: core/Tutorial.qml:166
+#: core/Tutorial.qml:155
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Následující"
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Přeskočit"
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"

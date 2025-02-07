@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-12 00:37+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-12-21 16:32+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -1119,7 +1119,7 @@ msgid ""
 msgstr "حدد لونًا وارسم بالمستطيلات كما تشاء."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
-#: activities/sketch/ActivityInfo.qml:19
+#: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
 msgstr "استخدم الأدوات لرسم الصور."

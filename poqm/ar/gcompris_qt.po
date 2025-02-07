@@ -205,7 +205,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:25
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -260,7 +260,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:23
+#: activities/sketch/ActivityInfo.qml:28
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -5738,8 +5738,11 @@ msgstr "كهرباء رقمية"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
-msgid "Create and simulate a digital logic circuit"
+msgid "Create and simulate a digital logic circuit."
 msgstr "أنشِئ دارتك المنطقية الرقمية وجرّبها بالمحاكاة"
 
 #. Help goal
@@ -14600,13 +14603,14 @@ msgctxt "ActivityInfo|"
 msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "ساعد البطريق على الهرب من الكهف بإيجاد العدد المخفي."
 
-#: activities/guessnumber/ActivityInfo.qml:19
+#. Help goal
+#: activities/guessnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
 msgstr "تدرّب على مقارنة الأعداد."
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:23
+#: activities/guessnumber/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -14623,12 +14627,12 @@ msgstr ""
 "والجانب الأيمن من الشاشة مدى بعدك عن العدد المطلوب.  إذا كان البطريق أعلى أو "
 "أسفل منتصف الشاشة  رأسيًا، فهذا يعني أن عددك أعلى أو أقل من العدد المبحوث عنه."
 
-#: activities/guessnumber/ActivityInfo.qml:25
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "الأرقام: أدخل رقمًا"
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "زر المسح إلى الخلف: احذف رقمًا"
@@ -23234,58 +23238,62 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "علامة التبويب: بدّل بين محدد اللون ومنطقة الرسم"
 
-#: activities/sketch/ActivityInfo.qml:17
+#. Activity title
+#: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Sketch"
 msgstr "ارسم"
 
-#: activities/sketch/ActivityInfo.qml:18
+#. Help title
+#: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr "استخدم أدوات الرسم الرقمية المتنوعة لرسم الصور."
 
-#: activities/sketch/ActivityInfo.qml:20
+#. Help goal
+#: activities/sketch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
 msgstr "أدوات رسم للتدرب على الأرقام."
 
-#: activities/sketch/ActivityInfo.qml:22
+#. Help manual
+#: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
 msgstr "حدد الأدوات والألوان من لوحة الأدوات وارسم الصور.<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: تراجع عن آخر عملية"
 
-#: activities/sketch/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: إعادة العملية الأخيرة"
 
-#: activities/sketch/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: احفظ الصورة"
 
-#: activities/sketch/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: افتح صورة"
 
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr "Ctrl + N, حذف أو Backspace: إنشاء صورة جديدة"
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr "مفهوم تنعيم الفرشاة من:"
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr "مفهوم فرشاة الرسم من:"
@@ -25842,7 +25850,7 @@ msgid "Solve:"
 msgstr "حُلّ:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:166
+#: activities/vertical_subtraction/subtraction.js:169
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
@@ -26684,62 +26692,62 @@ msgid "Section:"
 msgstr "القسم:"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
-#: core/Domino.qml:57
+#: core/Domino.qml:58
 msgctxt "Domino|"
 msgid "Dots"
 msgstr "نقاط"
 
 #. "Arabic Numbers" is for representation of the points in a domino in the form of integer numbers
-#: core/Domino.qml:59
+#: core/Domino.qml:60
 msgctxt "Domino|"
 msgid "Arabic Numbers"
 msgstr "أرقام عربية"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
-#: core/Domino.qml:61
+#: core/Domino.qml:62
 msgctxt "Domino|"
 msgid "Roman Numbers"
 msgstr "أرقام رومانية"
 
 #. "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
-#: core/Domino.qml:63
+#: core/Domino.qml:64
 msgctxt "Domino|"
 msgid "Images"
 msgstr "الصور"
 
-#: core/DownloadDialog.qml:201
+#: core/DownloadDialog.qml:208
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
 msgstr "ينزّل..."
 
 #. Run this task in background
-#: core/DownloadDialog.qml:253
+#: core/DownloadDialog.qml:238
 msgctxt "DownloadDialog|"
 msgid "Background"
 msgstr "في الخلفيّة"
 
-#: core/DownloadDialog.qml:270
+#: core/DownloadDialog.qml:254
 msgctxt "DownloadDialog|"
 msgid "Abort"
 msgstr "أجهض"
 
-#: core/DownloadDialog.qml:368
+#: core/DownloadDialog.qml:330
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
 msgstr "خطأ في التنزيل (رمز: %1): %2"
 
-#: core/DownloadDialog.qml:396
+#: core/DownloadDialog.qml:358
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr "انتهى تنزيلك بنجاح. ملفّات البيانات متوفّرة الآن."
 
-#: core/DownloadDialog.qml:398
+#: core/DownloadDialog.qml:360
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
 msgstr "أعد تشغيل أيّ نشاط نشط حاليًّا."
 
-#: core/DownloadDialog.qml:400
+#: core/DownloadDialog.qml:362
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "ملفّات بيانات المحليّة محدّثة."
@@ -26789,90 +26797,90 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "لا بيانات لـ%1."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:175
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "تم حذف %1 بِنَجاح!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "حسنا"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:180
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "لا يُمْكِن حَذْف %1!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:214
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "يوجد ملف بهذا الاسم بالفعل. هل تريد استبداله؟"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "نعم"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "لا"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:221
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "أمتأكّد من حذف هذا الملفّ؟"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:233
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "تَمَّ الحِفْظ بِنَجَاح!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "أَدْخِل اِسْمَ المَلَف"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "ابحث"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:278
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "احفظ"
 
-#: core/GCCreationHandler.qml:386
+#: core/GCCreationHandler.qml:384
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "حمّل"
 
-#: core/GCCreationHandler.qml:396
+#: core/GCCreationHandler.qml:394
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "احذف"
 
-#: core/IntroMessage.qml:137
+#: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "السابق"
 
-#: core/IntroMessage.qml:152
+#: core/IntroMessage.qml:157
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "التّالي"
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "تخطّى"
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "ابدأ"
@@ -27065,22 +27073,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "أنا جاهز"
 
-#: core/Tutorial.qml:146
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "السابق"
 
-#: core/Tutorial.qml:166
+#: core/Tutorial.qml:155
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "التّالي"
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "تخطّى"
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "ابدأ"

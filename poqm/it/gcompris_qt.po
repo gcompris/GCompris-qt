@@ -204,7 +204,7 @@ msgstr ""
 #: activities/graph-coloring/ActivityInfo.qml:25
 #: activities/gravity/ActivityInfo.qml:28
 #: activities/guess24/ActivityInfo.qml:24
-#: activities/guessnumber/ActivityInfo.qml:24
+#: activities/guessnumber/ActivityInfo.qml:25
 #: activities/instruments/ActivityInfo.qml:24
 #: activities/land_safe/ActivityInfo.qml:28 activities/lang/ActivityInfo.qml:33
 #: activities/learn_additions/ActivityInfo.qml:24
@@ -259,7 +259,7 @@ msgstr ""
 #: activities/redraw_symmetrical/ActivityInfo.qml:25
 #: activities/roman_numerals/ActivityInfo.qml:25
 #: activities/simplepaint/ActivityInfo.qml:24
-#: activities/sketch/ActivityInfo.qml:23
+#: activities/sketch/ActivityInfo.qml:28
 #: activities/smallnumbers/ActivityInfo.qml:25
 #: activities/smallnumbers2/ActivityInfo.qml:25
 #: activities/solar_system/ActivityInfo.qml:27
@@ -6010,8 +6010,11 @@ msgstr "Elettricità digitale"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
-msgid "Create and simulate a digital logic circuit"
+msgid "Create and simulate a digital logic circuit."
 msgstr "Crea e simula un circuito logico digitale"
 
 #. Help goal
@@ -15165,13 +15168,14 @@ msgid "Help Tux escape the cave by finding the hidden number."
 msgstr "Aiuta Tux a uscire dalla caverna trovando il numero nascosto."
 
 # Anche "Esercizi con l'addizione"
-#: activities/guessnumber/ActivityInfo.qml:19
+#. Help goal
+#: activities/guessnumber/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Practice comparing numbers."
 msgstr "Esercitati a confrontare i numeri."
 
 #. Help manual
-#: activities/guessnumber/ActivityInfo.qml:23
+#: activities/guessnumber/ActivityInfo.qml:24
 msgctxt "ActivityInfo|"
 msgid ""
 "Read the instructions that give you the range of the number to find. Enter a "
@@ -15190,12 +15194,12 @@ msgstr ""
 "il centro verticale dello schermo, significa che il tuo numero è sopra o "
 "sotto il numero  da trovare."
 
-#: activities/guessnumber/ActivityInfo.qml:25
+#: activities/guessnumber/ActivityInfo.qml:26
 msgctxt "ActivityInfo|"
 msgid "Digits: enter a number"
 msgstr "Cifre: digita un numero"
 
-#: activities/guessnumber/ActivityInfo.qml:26
+#: activities/guessnumber/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid "Backspace: erase a number"
 msgstr "Backspace: cancella un numero"
@@ -24132,22 +24136,26 @@ msgctxt "ActivityInfo|"
 msgid "Tab: switch between the color selector and the painting area"
 msgstr "Tab: alterna tra il selettore del colore e l'area di disegno"
 
-#: activities/sketch/ActivityInfo.qml:17
+#. Activity title
+#: activities/sketch/ActivityInfo.qml:18
 msgctxt "ActivityInfo|"
 msgid "Sketch"
 msgstr "Schizzo"
 
-#: activities/sketch/ActivityInfo.qml:18
+#. Help title
+#: activities/sketch/ActivityInfo.qml:20
 msgctxt "ActivityInfo|"
 msgid "Use the various digital painting tools to draw images."
 msgstr "Utilizza i vari strumenti di pittura digitale per disegnare immagini."
 
-#: activities/sketch/ActivityInfo.qml:20
+#. Help goal
+#: activities/sketch/ActivityInfo.qml:23
 msgctxt "ActivityInfo|"
 msgid "Learn about some digital painting tools."
 msgstr "Scopri alcuni strumenti di pittura digitale."
 
-#: activities/sketch/ActivityInfo.qml:22
+#. Help manual
+#: activities/sketch/ActivityInfo.qml:27
 msgctxt "ActivityInfo|"
 msgid ""
 "Select tools and colors from the foldable panels and draw images.<br><br>"
@@ -24155,37 +24163,37 @@ msgstr ""
 "Seleziona strumenti e colori dai pannelli pieghevoli e disegna immagini."
 "<br><br>"
 
-#: activities/sketch/ActivityInfo.qml:24
+#: activities/sketch/ActivityInfo.qml:29
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Z: undo last action"
 msgstr "Ctrl + Z: annulla l'ultima azione"
 
-#: activities/sketch/ActivityInfo.qml:25
+#: activities/sketch/ActivityInfo.qml:30
 msgctxt "ActivityInfo|"
 msgid "Ctrl + Y: redo last action"
 msgstr "Ctrl + Y: ripeti l'ultima azione"
 
-#: activities/sketch/ActivityInfo.qml:26
+#: activities/sketch/ActivityInfo.qml:31
 msgctxt "ActivityInfo|"
 msgid "Ctrl + S: save the image"
 msgstr "Ctrl + S: salva l'immagine"
 
-#: activities/sketch/ActivityInfo.qml:27
+#: activities/sketch/ActivityInfo.qml:32
 msgctxt "ActivityInfo|"
 msgid "Ctrl + O: open an image"
 msgstr "Ctrl + O: apri un'immagine"
 
-#: activities/sketch/ActivityInfo.qml:28
+#: activities/sketch/ActivityInfo.qml:33
 msgctxt "ActivityInfo|"
 msgid "Ctrl + N, Delete or Backspace: create a new image"
 msgstr "Ctrl + N, Canc o Backspace: crea una nuova immagine"
 
-#: activities/sketch/ActivityInfo.qml:29
+#: activities/sketch/ActivityInfo.qml:34
 msgctxt "ActivityInfo|"
 msgid "Brush smoothing concept from:"
 msgstr "Concetto di smussatura del pennello da:"
 
-#: activities/sketch/ActivityInfo.qml:30
+#: activities/sketch/ActivityInfo.qml:35
 msgctxt "ActivityInfo|"
 msgid "Sketch brush concept from:"
 msgstr "Concetto di pennello da schizzo da:"
@@ -26839,7 +26847,7 @@ msgid "Solve:"
 msgstr "Risolvi:"
 
 #. Solve (= Find the result of): %1 (= the operation to solve)
-#: activities/vertical_subtraction/subtraction.js:166
+#: activities/vertical_subtraction/subtraction.js:169
 #, qt-format
 msgctxt "subtraction|"
 msgid "Solve: %1"
@@ -27735,64 +27743,64 @@ msgid "Section:"
 msgstr "Sezione:"
 
 #. "Dots" is for representation of the points in a domino in the form of dots
-#: core/Domino.qml:57
+#: core/Domino.qml:58
 msgctxt "Domino|"
 msgid "Dots"
 msgstr "Punti"
 
 #. "Arabic Numbers" is for representation of the points in a domino in the form of integer numbers
-#: core/Domino.qml:59
+#: core/Domino.qml:60
 msgctxt "Domino|"
 msgid "Arabic Numbers"
 msgstr "Numeri arabi"
 
 #. "Roman Numbers" is for representation of the points in a domino in the form of roman numbers
-#: core/Domino.qml:61
+#: core/Domino.qml:62
 msgctxt "Domino|"
 msgid "Roman Numbers"
 msgstr "Numeri romani"
 
 #. "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
-#: core/Domino.qml:63
+#: core/Domino.qml:64
 msgctxt "Domino|"
 msgid "Images"
 msgstr "Immagini"
 
-#: core/DownloadDialog.qml:201
+#: core/DownloadDialog.qml:208
 msgctxt "DownloadDialog|"
 msgid "Downloading..."
 msgstr "Scaricamento in corso..."
 
 #. Run this task in background
-#: core/DownloadDialog.qml:253
+#: core/DownloadDialog.qml:238
 msgctxt "DownloadDialog|"
 msgid "Background"
 msgstr "Sfondo"
 
-#: core/DownloadDialog.qml:270
+#: core/DownloadDialog.qml:254
 msgctxt "DownloadDialog|"
 msgid "Abort"
 msgstr "Interrompi"
 
-#: core/DownloadDialog.qml:368
+#: core/DownloadDialog.qml:330
 #, qt-format
 msgctxt "DownloadDialog|"
 msgid "Download error (code: %1): %2"
 msgstr "Errore di scaricamento (codice: %1): %2"
 
-#: core/DownloadDialog.qml:396
+#: core/DownloadDialog.qml:358
 msgctxt "DownloadDialog|"
 msgid "Your download finished successfully. The data files are now available."
 msgstr ""
 "Il tuo scaricamento è terminato correttamente. I file di dati sono ora "
 "disponibili."
 
-#: core/DownloadDialog.qml:398
+#: core/DownloadDialog.qml:360
 msgctxt "DownloadDialog|"
 msgid "Restart any currently active activity."
 msgstr "Riavvia qualsiasi attività in corso."
 
-#: core/DownloadDialog.qml:400
+#: core/DownloadDialog.qml:362
 msgctxt "DownloadDialog|"
 msgid "Your local data files are up-to-date."
 msgstr "I tuoi file di dati locali sono aggiornati."
@@ -27842,90 +27850,90 @@ msgctxt "QObject|"
 msgid "No data found for %1."
 msgstr "Nessun dato trovato per %1."
 
-#: core/GCCreationHandler.qml:176
+#: core/GCCreationHandler.qml:175
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "%1 deleted successfully!"
 msgstr "%1 eliminato correttamente!"
 
-#: core/GCCreationHandler.qml:177 core/GCCreationHandler.qml:182
-#: core/GCCreationHandler.qml:235
+#: core/GCCreationHandler.qml:176 core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:234
 msgctxt "GCCreationHandler|"
 msgid "OK"
 msgstr "OK"
 
-#: core/GCCreationHandler.qml:181
+#: core/GCCreationHandler.qml:180
 #, qt-format
 msgctxt "GCCreationHandler|"
 msgid "Unable to delete %1!"
 msgstr "Impossibile eliminare %1!"
 
-#: core/GCCreationHandler.qml:215
+#: core/GCCreationHandler.qml:214
 msgctxt "GCCreationHandler|"
 msgid "A file with this name already exists. Do you want to replace it?"
 msgstr "Un file con questo nome esiste già. Vuoi sostituirlo?"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "Yes"
 msgstr "Sì"
 
-#: core/GCCreationHandler.qml:216 core/GCCreationHandler.qml:223
+#: core/GCCreationHandler.qml:215 core/GCCreationHandler.qml:222
 msgctxt "GCCreationHandler|"
 msgid "No"
 msgstr "No"
 
-#: core/GCCreationHandler.qml:222
+#: core/GCCreationHandler.qml:221
 msgctxt "GCCreationHandler|"
 msgid "Do you really want to delete this file?"
 msgstr "Vuoi davvero eliminare questo file?"
 
-#: core/GCCreationHandler.qml:234
+#: core/GCCreationHandler.qml:233
 msgctxt "GCCreationHandler|"
 msgid "Saved successfully!"
 msgstr "Salvato correttamente!"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Enter file name"
 msgstr "Digita il nome del file"
 
-#: core/GCCreationHandler.qml:265
+#: core/GCCreationHandler.qml:264
 msgctxt "GCCreationHandler|"
 msgid "Search"
 msgstr "Cerca"
 
-#: core/GCCreationHandler.qml:279
+#: core/GCCreationHandler.qml:278
 msgctxt "GCCreationHandler|"
 msgid "Save"
 msgstr "Salva"
 
-#: core/GCCreationHandler.qml:386
+#: core/GCCreationHandler.qml:384
 msgctxt "GCCreationHandler|"
 msgid "Load"
 msgstr "Carica"
 
-#: core/GCCreationHandler.qml:396
+#: core/GCCreationHandler.qml:394
 msgctxt "GCCreationHandler|"
 msgid "Delete"
 msgstr "Elimina"
 
-#: core/IntroMessage.qml:137
+#: core/IntroMessage.qml:142
 msgctxt "IntroMessage|"
 msgid "Previous"
 msgstr "Precedente"
 
-#: core/IntroMessage.qml:152
+#: core/IntroMessage.qml:157
 msgctxt "IntroMessage|"
 msgid "Next"
 msgstr "Avanti"
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Skip"
 msgstr "Salta"
 
-#: core/IntroMessage.qml:166
+#: core/IntroMessage.qml:171
 msgctxt "IntroMessage|"
 msgid "Start"
 msgstr "Inizia"
@@ -28131,22 +28139,22 @@ msgctxt "ReadyButton|"
 msgid "I am Ready"
 msgstr "Sono pronto"
 
-#: core/Tutorial.qml:146
+#: core/Tutorial.qml:137
 msgctxt "Tutorial|"
 msgid "Previous"
 msgstr "Precedente"
 
-#: core/Tutorial.qml:166
+#: core/Tutorial.qml:155
 msgctxt "Tutorial|"
 msgid "Next"
 msgstr "Successivo"
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Skip"
 msgstr "Salta"
 
-#: core/Tutorial.qml:185
+#: core/Tutorial.qml:172
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Inizia"

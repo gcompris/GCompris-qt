@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-12 00:37+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-06-11 12:34+0200\n"
 "Last-Translator: Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com>\n"
 "Language-Team: Malayalam <kde-i18n-doc@kde.org>\n"
@@ -1153,7 +1153,7 @@ msgid ""
 msgstr "ഒരു നിറം തെരഞ്ഞെടുത്ത് ചതുരങ്ങൾക്ക് ചായമടിച്ച് നിങ്ങൾക്ക് ഇഷ്ടമുള്ള ചിത്രം ഉണ്ടാക്കൂ."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
-#: activities/sketch/ActivityInfo.qml:19
+#: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
 msgstr ""

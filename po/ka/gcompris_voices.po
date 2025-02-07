@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-12 00:37+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-12-10 05:46+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -1188,7 +1188,7 @@ msgstr ""
 "აირჩიეთ ფერი და დახატეთ ოთხკუთხედები, როგორც გნებავთ, ნახატის შესაქმნელად."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
-#: activities/sketch/ActivityInfo.qml:19
+#: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
 msgstr "გამოიყენეთ ხელსაწყოები გამოსახულებების დასახატად."

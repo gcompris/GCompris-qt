@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-12 00:37+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2024-12-16 16:49+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -1168,7 +1168,7 @@ msgid ""
 msgstr "Atlasi krāsu un izkrāso rūtiņas pēc patikas, lai izveidotos zīmējums."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
-#: activities/sketch/ActivityInfo.qml:19
+#: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
 msgstr "Zīmē attēlus ar dotajiem rīkiem."

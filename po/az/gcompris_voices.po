@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-12 00:37+0000\n"
+"POT-Creation-Date: 2025-02-07 00:38+0000\n"
 "PO-Revision-Date: 2023-10-11 17:21+0400\n"
 "Last-Translator: Kheyyam <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -1182,7 +1182,7 @@ msgid ""
 msgstr "Rəsm çəkmək üçün rəngi seçin və düzbucaqlını rəngləyin."
 
 #. i18n: intro voices, see GCompris-voices/README.md - activity: "sketch"
-#: activities/sketch/ActivityInfo.qml:19
+#: activities/sketch/ActivityInfo.qml:21
 #, kde-format
 msgid "Use the tools to draw images."
 msgstr ""
