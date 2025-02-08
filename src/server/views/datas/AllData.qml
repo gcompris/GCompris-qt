@@ -9,12 +9,12 @@
  */
 import QtQuick 2.12
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.12
+
 import "../../singletons"
-import "../../components"
 import "../../panels"
 
 Item {
+    id: allData
     anchors.margins: 2
 
     function setRequest(i) {
@@ -78,7 +78,7 @@ Item {
                 height: parent.height
                 model: [ "All users activities", "Pupils activities", "All groups", "Failed activities",
                     "User's groups", "Group's users", "Daily activities", "Daily ratios" ]
-                onActivated: setRequest(index)
+                onActivated: allData.setRequest(index)
             }
 
             Button {

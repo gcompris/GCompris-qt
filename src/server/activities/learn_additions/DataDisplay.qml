@@ -10,4 +10,6 @@
 
 import "../learn_digits"
 
-LearnDigits {}
+LearnDigits {
+    jsonData: jsonData_
+}

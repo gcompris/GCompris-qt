@@ -63,8 +63,8 @@ Popup {
         Text {
             id: deleteDatasetText
             Layout.fillWidth: true
-            height: 90
-            width: parent.width * 2/3
+            Layout.preferredHeight: 90
+            Layout.preferredWidth: parent.width * 2/3
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             text: qsTr("Are you sure you want to remove the following dataset from the database?")
@@ -82,7 +82,7 @@ Popup {
             border.width: 1
 
             Text {
-                text: datasetName
+                text: removeDatasetDialog.datasetName
                 anchors.horizontalCenter: parent.horizontalCenter
             }
         }
@@ -90,7 +90,7 @@ Popup {
         OkCancelButtons {
             onCancelled: removeDatasetDialog.close()
             onValidated: {
-                validateDialog()
+                removeDatasetDialog.validateDialog()
                 removeDatasetDialog.close()
             }
         }

@@ -103,9 +103,9 @@ Popup {
         Text {
             id: groupDialogText
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
-            text: label
+            text: datasetDialog.label
             font {
                 bold: true
                 pixelSize: 20
@@ -114,7 +114,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Dataset name")
             font.bold: true
             font {
@@ -131,7 +131,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Difficulty")
             font.bold: true
             font {
@@ -148,7 +148,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Objective")
             font.bold: true
             font {
@@ -165,7 +165,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Content")
             font.bold: true
             font {

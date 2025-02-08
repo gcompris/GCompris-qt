@@ -10,12 +10,13 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
 import QtQuick.Controls.Basic
-
 import GCompris 1.0
+
 import "../singletons"
 import "../components"
 
 Item {
+    id: settingsView
     property var hostInformations: ({})
     property int labelWidth: 16 * Style.defaultPixelSize
     property int infoWidth: scrollInfos.width - labelWidth - (2 * mainColumn.anchors.margins)
@@ -78,7 +79,7 @@ Item {
                         Layout.preferredHeight: 30
                         Text {
                             height: parent.height
-                            width: labelWidth
+                            width: settingsView.labelWidth
                             text: qsTr("Server ID")
                             verticalAlignment: Text.AlignVCenter
                             font.bold: true
@@ -88,7 +89,7 @@ Item {
                         UnderlinedTextInput {
                             id: serverID
                             height: parent.height
-                            width: infoWidth
+                            width: settingsView.infoWidth
                             activeFocusOnTab: true
                             focus: true
                             defaultText: serverSettings.serverID
@@ -101,14 +102,14 @@ Item {
                         info: serverRunning ? qsTr("Running") : qsTr("already running on port 5678")
                         textColor: serverRunning ? "green" : "red"
                     }
-                    InformationLine { label: qsTr("Host name"); info: hostInformations.hostName }
-                    InformationLine { label: qsTr("Server IP"); info: hostInformations.ip.join(", ") }
-                    InformationLine { label: qsTr("Broadcast IPs"); info: hostInformations.broadcastIp.join(", ") }
-                    InformationLine { label: qsTr("Netmask"); info: hostInformations.netmask.join(", ") }
-                    InformationLine { label: qsTr("MAC address"); info: hostInformations.mac.join(", ") }
+                    InformationLine { label: qsTr("Host name"); info: settingsView.hostInformations.hostName }
+                    InformationLine { label: qsTr("Server IP"); info: settingsView.hostInformations.ip.join(", ") }
+                    InformationLine { label: qsTr("Broadcast IPs"); info: settingsView.hostInformations.broadcastIp.join(", ") }
+                    InformationLine { label: qsTr("Netmask"); info: settingsView.hostInformations.netmask.join(", ") }
+                    InformationLine { label: qsTr("MAC address"); info: settingsView.hostInformations.mac.join(", ") }
                     InformationLine { label: qsTr("Qt version"); info: ApplicationInfo.QTVersion }
 
-                    Rectangle { Layout.fillWidth: true; height: 1; color: "black" }
+                    Rectangle { Layout.fillWidth: true; Layout.preferredHeight: 1; color: "black" }
 
                     InformationLine { label: qsTr("Teacher login"); info: serverSettings.lastLogin }
                     InformationLine { label: qsTr("Database file"); info: userDataPath + "/" + databaseFile }
@@ -116,13 +117,13 @@ Item {
                     InformationLine { label: qsTr("Pupils"); info: Master.userModel.count }
                     InformationLine { label: qsTr("Groups"); info: Master.groupModel.count }
 
-                    Rectangle { Layout.fillWidth: true; height: 1; color: "black" }
+                    Rectangle { Layout.fillWidth: true; Layout.preferredHeight: 1; color: "black" }
 
                     InformationLine { label: qsTr("Pupils connected"); info: (networkController) ? networkController.socketCount : 0}
                     InformationLine { label: qsTr("Pupils logged"); info: (networkController) ? networkController.loggedCount : 0 }
                     InformationLine { label: qsTr("Activities data received"); info: (networkController) ? networkController.dataCount : 0 }
 
-                    Rectangle { Layout.fillWidth: true; height: 1; color: "black" }
+                    Rectangle { Layout.fillWidth: true; Layout.preferredHeight: 1; color: "black" }
 
                     RadioButtonLine {
                         label: qsTr("Navigation panel")

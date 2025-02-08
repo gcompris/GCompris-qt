@@ -71,7 +71,7 @@ namespace controllers {
     void NetworkController::checkTimeout()
     {
         QList<QTcpSocket *> sockets = usersMap.keys();
-        qDebug() << "NetworkController::checkTimeout()" << sockets.size();
+        // qDebug() << "NetworkController::checkTimeout()" << sockets.size();
         for (int i = 0; i < sockets.size(); i++) { // Loop on sockets to check for connection lost
             QTcpSocket *socket = sockets.at(i);
             qDebug() << usersMap.value(socket)->delaySinceTimeStamp() << netconst::WAIT_DELAY;

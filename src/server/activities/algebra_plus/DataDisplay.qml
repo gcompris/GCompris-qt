@@ -1,4 +1,4 @@
-/* GCompris - DataDisplay.qml for algebra_by
+/* GCompris - DataDisplay.qml for algebra_plus
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -10,4 +10,6 @@
 
 import "../algebra_by"
 
-Algebra {}
+Algebra {
+    jsonData: jsonData_
+}

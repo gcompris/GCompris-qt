@@ -9,16 +9,16 @@
  */
 import QtQuick 2.15
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
+
 import "../singletons"
 
 Control {
-    id: lineBox
+    id: radioGroupEditDelegate
     font.pixelSize: Style.defaultPixelSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: lineBox.hovered ? Style.colorHeaderPane : "transparent"
+        color: radioGroupEditDelegate.hovered ? Style.colorHeaderPane : "transparent"
     }
 
     RadioButton {

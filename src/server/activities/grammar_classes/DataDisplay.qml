@@ -10,4 +10,6 @@
 
 import "../grammar_analysis"
 
-GrammarDisplay {}
+GrammarDisplay {
+    jsonData: jsonData_
+}

@@ -128,9 +128,9 @@ Popup {
         Text {
             id: groupDialogText
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
-            text: label
+            text: pupilDialog.label
             font {
                 bold: true
                 pixelSize: 20
@@ -139,7 +139,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Pupil name")
             font.bold: true
             font {
@@ -156,7 +156,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Password")
             font.bold: true
             font {
@@ -190,7 +190,7 @@ Popup {
 
                     MouseArea {
                         anchors.fill: parent
-                        onClicked: passModel.remove(index, 1)
+                        onClicked: pupilDialog.passModel.remove(index, 1)
                     }
                 }
             }
@@ -202,7 +202,7 @@ Popup {
 
             Text {
                 Layout.preferredWidth: 150
-                height: 40
+                Layout.preferredHeight: 40
                 text: qsTr("Password images")
                 font.bold: true
             }
@@ -238,7 +238,7 @@ Popup {
         Text {
             id: groupsListTitleText
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Groups")
             font.bold: true
             font {

@@ -10,12 +10,13 @@
 import QtQuick 2.15
 import QtQuick.Layouts 1.2
 import QtQuick.Controls.Basic
+
 import "../../singletons"
 import "../../components"
 import "../../panels"
 
 Item {
-    id: pupilsData
+    id: duplicateData
     property int groupId: Master.groupFilterId
     property var userList: []
     property var activityList: []
@@ -56,7 +57,7 @@ Item {
                         randomDate.toLocaleTimeString(Qt.locale(), ' hh:mm:ss')
     }
 
-    function duplicateData() {
+    function duplication() {
         var destUser = Master.userModel.get(allPupilPane.currentChecked)
         var dateFirst = new Date(reqView.linesModel.get(0).result_datetime)
         var timeDiff = randomDate.getTime() - dateFirst.getTime()
@@ -112,24 +113,24 @@ Item {
                 SplitView.minimumWidth: minWidth
                 SplitView.maximumHeight: parent.height
 
-                calendar.onCalendarChanged: pupilsData.executeRequest()
+                calendar.onCalendarChanged: duplicateData.executeRequest()
 
                 groupPane.onSelectionClicked: (modelId, checked) => {
-                    groupId = modelId
-                    userList = []
-                    activityList = []
-                    if (groupId === -1) {
+                    duplicateData.groupId = modelId
+                    duplicateData.userList = []
+                    duplicateData.activityList = []
+                    if (duplicateData.groupId === -1) {
                         Master.unCheckModel(Master.groupModel, "group_checked")
                         Master.loadAllActivities(activityPane.foldModel)
                     } else {
                         Master.filterUsers(pupilPane.foldModel, false)
-                        Master.loadGroupActivities(activityPane.foldModel, groupId)
+                        Master.loadGroupActivities(activityPane.foldModel, duplicateData.groupId)
                     }
-                    pupilsData.executeRequest()
+                    duplicateData.executeRequest()
                 }
 
                 pupilPane.onSelectionClicked: (modelId, checked) => {
-                    Master.foldDownToList(pupilPane, userList, modelId, checked)
+                    Master.foldDownToList(pupilPane, duplicateData.userList, modelId, checked)
                     activityName = ""
                     activityPane.currentChecked = -1
                     if (userList.length === 0) {
@@ -138,12 +139,12 @@ Item {
                     } else {
                         Master.loadUserActivities(activityPane.foldModel, userList, activityList, true)
                     }
-                    pupilsData.executeRequest()
+                    duplicateData.executeRequest()
                 }
 
                 activityPane.onSelectionClicked: (modelId, checked) => {
-                    Master.foldDownToList(activityPane, activityList, modelId, checked)
-                    pupilsData.executeRequest();
+                    Master.foldDownToList(activityPane, duplicateData.activityList, modelId, checked)
+                    duplicateData.executeRequest();
                 }
             }
 
@@ -169,7 +170,7 @@ Item {
 
                     Rectangle {
                         Layout.fillWidth: true
-                        height: Style.defaultLineHeight
+                        Layout.preferredHeight: Style.defaultLineHeight
                         color: Style.colorHeaderPane
                         radius: 5
                         Text {
@@ -194,22 +195,22 @@ Item {
                         id: newRandomDateButton
                         Layout.alignment: Qt.AlignHCenter
                         Layout.bottomMargin: 5
-                        width: 200
+                        Layout.preferredWidth: 200
                         text: qsTr("Random date")
-                        onClicked: newRandomDate()
+                        onClicked: duplicateData.newRandomDate()
                     }
 
                     ViewButton {
                         id: duplicateButton
                         Layout.alignment: Qt.AlignHCenter
-                        width: 200
+                        Layout.preferredWidth: 200
                         text: qsTr("Duplicate")
                         enabled: (reqView.count && (allPupilPane.currentChecked !== -1)) ? true : false
                         opacity: enabled ? 1.0 : 0.5
                         onClicked: {
                             errorDialog.message = [qsTr("You are about to duplicate datas"), qsTr("No action now")]
                             errorDialog.open()
-//                            duplicateData()
+//                            duplication()
                         }
                     }
 
@@ -217,7 +218,7 @@ Item {
                         id: deleteButton
                         Layout.alignment: Qt.AlignHCenter
                         Layout.bottomMargin: 5
-                        width: 200
+                        Layout.preferredWidth: 200
                         text: qsTr("Delete")
                         enabled: reqView.count ? true : false
                         opacity: reqView.count ? 1.0 : 0.5

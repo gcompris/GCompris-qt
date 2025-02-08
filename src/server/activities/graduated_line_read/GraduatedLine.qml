@@ -7,16 +7,12 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.15
-import QtQuick.Layouts 1.2
-import QtQuick.Controls.Basic
-
-import "../../singletons"
-import "../../components"
-import "../../panels"
 
 Item {
-    property var jsonData: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
+    id: gradLine
+    required property var jsonData
     property int step: (jsonData.end - jsonData.start) / (jsonData.ticks - 1)
     height: details.height
     clip: true
@@ -24,8 +20,10 @@ Item {
     Row {
         id: details
         Repeater {
-            model: jsonData.ticks
+            model: gradLine.jsonData.ticks
             delegate: Rectangle {
+                id: box
+                required property int index
                 color:  "transparent"
                 width:  t_metrics.tightBoundingRect.width + 20
                 height: t_metrics.tightBoundingRect.height + 20
@@ -37,14 +35,14 @@ Item {
                     anchors.verticalCenter: parent.verticalCenter
                     height: 30
                     text: {
-                        if ((index === 0) || (index === jsonData.ticks - 1))
-                            return jsonData.start + (index * step)
-                        if (jsonData.start + (index * step) === jsonData.expected)
+                        if ((box.index === 0) || (box.index === gradLine.jsonData.ticks - 1))
+                            return gradLine.jsonData.start + (box.index * step)
+                        if (jsonData.start + (box.index * step) === jsonData.expected)
                             return jsonData.proposal
                         return "|"
                     }
                     color: {
-                        if (jsonData.start + (index * step) === jsonData.expected) {
+                        if (gradLine.jsonData.start + (box.index * step) === jsonData.expected) {
                             return (jsonData.proposal === jsonData.expected) ? "green" : "red"
                         }
                         return "black"

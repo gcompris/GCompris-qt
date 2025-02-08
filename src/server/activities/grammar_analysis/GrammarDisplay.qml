@@ -7,36 +7,39 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.15
-import QtQuick.Layouts 1.2
-import QtQuick.Controls.Basic
+import QtQuick.Layouts 1.15
 
 import "../../singletons"
-import "../../components"
-import "../../panels"
 
 Flow {
     id: wordsFlow
-    property var jsonData: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
-    height: childrenRect.height
+    required property var jsonData
+    Layout.fillWidth: true
+    Layout.fillHeight: true
     spacing: 5
     Repeater {
-        model: jsonData.sentence
+        id: wordRepeater
+        model: wordsFlow.jsonData.sentence      // loop on words from the sentence
         delegate: Column {
-            property var expected: JSON.parse(result_data).expected
-            property var proposal: JSON.parse(result_data).proposal
+            id: wordColumn
+            required property string modelData
+            required property int index
+            property var expected: wordsFlow.jsonData.expected
+            property var proposal: wordsFlow.jsonData.proposal
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: 20
-                text: modelData
-                font.pixelSize: 16
+                height: Style.bigLineHeight
+                font.pixelSize: Style.bigPixelSize
+                text: wordColumn.modelData
             }
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                height: 20
-                text: proposal[index]
-                color: (expected[index] === proposal[index]) ? "green" : "red"
-                font.pixelSize: 16
+                height: Style.bigLineHeight
+                font.pixelSize: Style.bigPixelSize
+                text: wordColumn.proposal[wordColumn.index]
+                color: (wordColumn.expected[wordColumn.index] === wordColumn.proposal[wordColumn.index]) ? "green" : "red"
             }
         }
     }

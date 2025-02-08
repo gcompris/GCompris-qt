@@ -65,8 +65,8 @@ Popup {
         Text {
             id: deletePupilGroupsText
             Layout.fillWidth: true
-            height: 90
-            width: parent.width * 2/3
+            Layout.preferredHeight: 90
+            Layout.preferredWidth: parent.width * 2/3
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             text: qsTr("Are you sure you want to remove the following children from the database ?")
@@ -90,7 +90,7 @@ Popup {
                 anchors.margins: 3
                 boundsBehavior: Flickable.StopAtBounds
                 clip: true
-                model: pupilsNamesText.split("\n")
+                model: removePupilsDialog.pupilsNamesText.split("\n")
 
                 delegate: Column {
                     Text {
@@ -104,7 +104,7 @@ Popup {
         OkCancelButtons {
             onCancelled: removePupilsDialog.close()
             onValidated: {
-                validateDialog()
+                removePupilsDialog.validateDialog()
                 removePupilsDialog.close()
             }
         }

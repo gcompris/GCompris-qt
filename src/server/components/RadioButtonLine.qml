@@ -10,9 +10,11 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
 import QtQuick.Controls.Basic
+
 import "../singletons"
 
 Row {
+    id: radioButtonLine
     property string label: ""
     property var radios: []
     property int current: 0
@@ -25,7 +27,7 @@ Row {
         height: contentHeight + 5
         width: labelWidth
         verticalAlignment: Text.AlignBottom
-        text: label
+        text: radioButtonLine.label
         font.bold: true
         font.pixelSize: Style.defaultPixelSize
         color: enabled ? "black" : "gray"
@@ -37,15 +39,15 @@ Row {
     }
 
     Repeater {
-        model: radios
+        model: radioButtonLine.radios
         RadioButton {
             height: parent.height
             ButtonGroup.group: childGroup
             text: modelData
-            checked: index === current
+            checked: index === radioButtonLine.current
             indicator.scale: Style.checkerScale
             font.pixelSize: Style.defaultPixelSize
-            onClicked: radioCheckChanged(current = index)
+            onClicked: radioButtonLine.radioCheckChanged(radioButtonLine.current = index)
         }
     }
 }

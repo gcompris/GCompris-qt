@@ -10,7 +10,6 @@
 import QtQuick 2.12
 import QtQuick.Controls.Basic
 
-import "../components"
 import "../singletons"
 
 Rectangle {
@@ -39,8 +38,4 @@ Rectangle {
             font.pixelSize: Style.defaultPixelSize
         }
     }
-
-//    Component.onCompleted: {
-//        appendLog(JSON.stringify(allActivities))
-//    }
 }

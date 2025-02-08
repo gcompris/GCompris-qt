@@ -10,10 +10,11 @@
 import QtQuick 2.15
 import QtQuick.Layouts 1.2
 import QtQuick.Controls
+
 import "../singletons"
 
 Column {
-    id: gcCalendar
+    id: calendarPane
     property int lineHeight: Style.defaultLineHeight
     property alias title: parentBox.text
     property bool activated: true
@@ -58,7 +59,7 @@ Column {
     Rectangle {
         id: header
         width: parent.width
-        height: lineHeight
+        height: calendarPane.lineHeight
         color: Style.colorHeaderPane
         radius: 5
 
@@ -68,23 +69,23 @@ Column {
             anchors.leftMargin: 2
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            text: (startDate === "") ? qsTr("Calendar") :
-                  (startDate === endDate) ? strDateToLocale(startDate) :
-                                            strDateToLocale(startDate) + " - " + strDateToLocale(endDate)
+            text: (calendarPane.startDate === "") ? qsTr("Calendar") :
+                  (calendarPane.startDate === calendarPane.endDate) ? calendarPane.strDateToLocale(calendarPane.startDate) :
+                                            calendarPane.strDateToLocale(calendarPane.startDate) + " - " + calendarPane.strDateToLocale(calendarPane.endDate)
             font.pixelSize: Style.defaultPixelSize
             font.bold: true
         }
 
         SmallButton {
             id: collapseButton
-            width: lineHeight
-            height: lineHeight
+            width: calendarPane.lineHeight
+            height: calendarPane.lineHeight
             anchors.right: parent.right
             checkable: true
             checked: false
             text: checked ? "\uf0dd" : "\uf0d9"
             font.pixelSize: Style.defaultPixelSize
-            onCheckedChanged: calendarPane.Layout.maximumHeight = (!checked) ? lineHeight : monthHeight
+            onCheckedChanged: calendarPane.Layout.maximumHeight = (!checked) ? calendarPane.lineHeight : calendarPane.monthHeight
         }
     }
 
@@ -99,16 +100,17 @@ Column {
 
             RowLayout {
                 id: monthSelector
-                width: calWidth
+                width: calendarPane.calWidth
 
-                Button {
+                SmallButton {
                     id: leftButton
                     Layout.preferredWidth: 25
+                    Layout.preferredHeight: 30
                     text: "<"
                     onClicked: {
-                        if (--currentMonth < 0) {
-                            currentMonth = 11
-                            currentYear--
+                        if (--calendarPane.currentMonth < 0) {
+                            calendarPane.currentMonth = 11
+                            calendarPane.currentYear--
                         }
                     }
                 }
@@ -126,9 +128,9 @@ Column {
                         anchors.fill: parent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
-                        text: capitalizeFirstLetter(gcCalendar.locale.monthName(monthGrid.month, Locale.LongFormat)) + " " + monthGrid.year
+                        text: calendarPane.capitalizeFirstLetter(calendarPane.locale.monthName(monthGrid.month, Locale.LongFormat)) + " " + monthGrid.year
                         font.bold: true
-                        font.pixelSize: 15
+                        font.pixelSize: Style.defaultPixelSize + 2
                     }
 
                     MouseArea {
@@ -137,28 +139,29 @@ Column {
                         acceptedButtons: Qt.LeftButton | Qt.RightButton
                         hoverEnabled: true
                         onClicked: {
-                            startDate = String(currentYear) + ('00'+ (currentMonth + 1)).slice(-2) + '01'
-                            endDate = String(currentYear) + ('00'+ (currentMonth + 1)).slice(-2) + lastDayOfMonth(currentYear, currentMonth + 1)
-                            if (endDate > lastDate)
-                                endDate = lastDate
-                            calendarChanged()
+                            calendarPane.startDate = String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2) + '01'
+                            calendarPane.endDate = String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2) + calendarPane.lastDayOfMonth(calendarPane.currentYear, calendarPane.currentMonth + 1)
+                            if (calendarPane.endDate > calendarPane.lastDate)
+                                calendarPane.endDate = calendarPane.lastDate
+                            calendarPane.calendarChanged()
                         }
                         onDoubleClicked: {
-                            startDate = endDate = ""
-                            calendarChanged()
+                            calendarPane.startDate = calendarPane.endDate = ""
+                            calendarPane.calendarChanged()
                         }
                     }
                 }
 
-                Button {
+                SmallButton {
                     id: rightButton
                     Layout.preferredWidth: 25
+                    Layout.preferredHeight: 30
                     text: ">"
-                    enabled: (String(currentYear) + ('00'+ (currentMonth + 1)).slice(-2)) < lastDate.slice(0,6)
+                    enabled: (String(calendarPane.currentYear) + ('00'+ (calendarPane.currentMonth + 1)).slice(-2)) < calendarPane.lastDate.slice(0,6)
                     onClicked: {
-                        if (++currentMonth > 11) {
-                            currentMonth = 0
-                            currentYear++
+                        if (++calendarPane.currentMonth > 11) {
+                            calendarPane.currentMonth = 0
+                            calendarPane.currentYear++
                         }
                     }
                 }
@@ -167,17 +170,19 @@ Column {
             DayOfWeekRow {
                 id: dayOfWeek
                 locale: monthGrid.locale
-                width: calWidth
+                width: calendarPane.calWidth
                 height: 25
+                font.pixelSize: Style.defaultPixelSize
             }
 
             MonthGrid {
                 id: monthGrid
-                month: (currentMonth - 1 + 13) % 12
-                year: (currentMonth - 1 + 1 < 0) ? currentYear - 1 : currentYear
-                locale: gcCalendar.locale
-                width: calWidth
-                height: calHeight
+                month: (calendarPane.currentMonth - 1 + 13) % 12
+                year: (calendarPane.currentMonth - 1 + 1 < 0) ? calendarPane.currentYear - 1 : calendarPane.currentYear
+                locale: calendarPane.locale
+                width: calendarPane.calWidth
+                height: calendarPane.calHeight
+                font.pixelSize: Style.defaultPixelSize
                 clip: true
 
                 delegate: Rectangle {
