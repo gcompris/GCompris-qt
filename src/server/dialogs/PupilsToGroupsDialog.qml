@@ -76,10 +76,10 @@ Popup {
         Text {
             id: deletePupilGroupsText
             Layout.fillWidth: true
-            height: 90
+            Layout.preferredHeight: 90
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
-            text: addMode ? qsTr("Do you want to add these children to the following groups?")
+            text: pupilsToGroupsDialog.addMode ? qsTr("Do you want to add these children to the following groups?")
                            : qsTr("Are you sure you want to remove these children from the following groups?")
             font {
                 bold: true
@@ -90,7 +90,7 @@ Popup {
         Rectangle {
             id: pupilsNamesTextRectangle
             Layout.fillWidth: true
-            height: 200
+            Layout.preferredHeight: 200
             border.color: "gray"
             border.width: 1
 
@@ -150,10 +150,10 @@ Popup {
 
         OkCancelButtons {
             onCancelled: pupilsToGroupsDialog.close()
-            onValidated: validateDialog()
+            onValidated: pupilsToGroupsDialog.validateDialog()
         }
 
-        Keys.onReturnPressed: validateDialog()
         Keys.onEscapePressed: pupilsToGroupsDialog.close()
+        Keys.onReturnPressed: pupilsToGroupsDialog.validateDialog()
     }
 }

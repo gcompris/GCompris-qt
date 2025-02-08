@@ -15,6 +15,7 @@ import "../singletons"
 import "../components"
 
 ColumnLayout {
+    id: selectorPanel
     property alias calendar: calendarPane
     property alias groupPane: groupPane
     property alias pupilPane: pupilPane
@@ -34,7 +35,7 @@ ColumnLayout {
 
     CalendarPane {
         id: calendarPane
-        activated: withCalendar
+        activated: selectorPanel.withCalendar
         Layout.minimumHeight: Style.defaultLineHeight
         Layout.preferredHeight: monthHeight
         Layout.maximumHeight: collapseButton.checked ?  monthHeight : lineHeight
@@ -61,10 +62,10 @@ ColumnLayout {
             indexKey: "group_id"
             nameKey: "group_name"
             checkKey: "group_checked"
-            activated: withGroups
+            activated: selectorPanel.withGroups
             SplitView.preferredHeight: 8 * lineHeight
             SplitView.minimumHeight: lineHeight
-            SplitView.fillHeight: withGroups && (!withActivities && !withPupils)
+            SplitView.fillHeight: selectorPanel.withGroups && (!selectorPanel.withActivities && !selectorPanel.withPupils)
             onSelectionClicked: (modelId) => {
                 Master.groupFilterId = modelId
                 Master.filterUsers(selectorUserModel, false)
@@ -78,10 +79,10 @@ ColumnLayout {
             indexKey: "user_id"
             nameKey: "user_name"
             checkKey: "user_checked"
-            activated: withPupils
+            activated: selectorPanel.withPupils
             SplitView.preferredHeight: 8 * lineHeight
             SplitView.minimumHeight: lineHeight
-            SplitView.fillHeight: withPupils && (!withActivities)
+            SplitView.fillHeight: selectorPanel.withPupils && (!selectorPanel.withActivities)
         }
 
         FoldDownCheck {
@@ -93,10 +94,10 @@ ColumnLayout {
             checkKey: "activity_checked"
             titleKey: "activity_title"
             delegateName: "checkActivity"
-            activated: withActivities
+            activated: selectorPanel.withActivities
             SplitView.preferredHeight: 8 * lineHeight
             SplitView.minimumHeight: lineHeight
-            SplitView.fillHeight: withActivities
+            SplitView.fillHeight: selectorPanel.withActivities
         }
 
     }

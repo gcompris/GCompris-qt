@@ -9,13 +9,10 @@
  */
 import QtQuick 2.12
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
 
 import GCompris 1.0
 import "../singletons"
-import "../components"
 import "../panels"
-import "../activities"
 import "details"
 import "qrc:/gcompris/src/server/server.js" as Server
 
@@ -44,17 +41,17 @@ Item {
             groupPane.onSelectionClicked: (modelId, checked) => {
                 if (pageStack.depth > 1)
                     pageStack.pop()
-                groupId = modelId
-                userList = []
-                activityList = []
-                activityName = ""
+                activitiesView.groupId = modelId
+                activitiesView.userList = []
+                activitiesView.activityList = []
+                activitiesView.activityName = ""
                 pupilPane.currentChecked = -1
-                if (groupId === -1) {
+                if (activitiesView.groupId === -1) {
                     Master.unCheckModel(Master.groupModel, "group_checked")
                     Master.loadAllActivities(activityPane.foldModel)
                 } else {
                     Master.filterUsers(pupilPane.foldModel, false)
-                    Master.loadGroupActivities(activityPane.foldModel, groupId)
+                    Master.loadGroupActivities(activityPane.foldModel, activitiesView.groupId)
                 }
                 dailyReport.executeRequest()
             }
@@ -62,10 +59,10 @@ Item {
             pupilPane.onSelectionClicked: (modelId, checked) => {
                 if (pageStack.depth > 1)
                     pageStack.pop()
-                Master.foldDownToList(pupilPane, userList, modelId, checked)
-                activityName = ""
+                Master.foldDownToList(pupilPane, activitiesView.userList, modelId, checked)
+                activitiesView.activityName = ""
                 activityPane.currentChecked = -1
-                if (userList.length === 0) {
+                if (activitiesView.userList.length === 0) {
                     Master.loadAllActivities(activityPane.foldModel)
                     activityList = []
                 } else {
@@ -77,7 +74,7 @@ Item {
             activityPane.onSelectionClicked: (modelId, checked) => {
                 if (pageStack.depth > 1)
                     pageStack.pop()
-                Master.foldDownToList(activityPane, activityList, modelId, checked)
+                Master.foldDownToList(activityPane, activitiesView.activityList, modelId, checked)
                 dailyReport.executeRequest()
             }
         }
