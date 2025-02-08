@@ -10,13 +10,11 @@
 */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
-import QtQml.Models 2.12
 import QtQuick.Controls.Basic
 
 import "../components"
 import "../singletons"
 import "../dialogs"
-import "../panels"
 
 Item {
     id: managePupilsView
@@ -138,42 +136,42 @@ Item {
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.topMargin: 20
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf234   " + qsTr("Add pupil")
                     onClicked: addPupilDialog.open()
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf07c   " + qsTr("Add to groups")
                     onClicked: addPupilsToGroupsDialog.open()
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf0c7   " + qsTr("Remove from groups")
                     onClicked: removePupilsFromGroupsDialog.open()
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf0c7   " + qsTr("Export pupils")
                     onClicked: exportPupilsDialog.open()
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text:  "\uf235   " + qsTr("Import pupils")
                     onClicked: importPupilsDialog.open()
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf503   " + qsTr("Remove pupils")
                     onClicked: removePupilsDialog.open()
                 }

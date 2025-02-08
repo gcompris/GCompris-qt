@@ -60,7 +60,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("Add pupils from CSV file")
             font.bold: true
@@ -111,7 +111,7 @@ Popup {
             okText: qsTr("Import pupils")
             onCancelled: importPupilsDialog.close()
             onValidated: {
-                pupilsAdd(edit.text);
+                importPupilsDialog.pupilsAdd(edit.text);
                 importPupilsDialog.close();
             }
         }

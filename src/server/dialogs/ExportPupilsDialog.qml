@@ -68,7 +68,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("Export pupils to CSV file")
             font {
