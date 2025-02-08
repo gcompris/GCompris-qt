@@ -2398,6 +2398,118 @@ SPDX-License-Identifier = "CC0-1.0"
 SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Victoria_Memorial_Calcutta.jpg"
 
 [[annotations]]
+path = "src/activities/explore_monuments/resource/china/forbiddenCity.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2009 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Jingshan_View_of_Forbidden_City,_Beijing_(9862105446).jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/china/leshanGiantBuddha.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 fannyss"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Leshan_Giant_Buddha_1.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/china/sunAndMoonPagodas.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Flora-Victoria"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Sightseeing_in_Guilin,_China.JPG"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/china/potalaPalace.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Gary Todd"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Potala_Palace_(20148538186).jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/china/terracottaArmy.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2012 Gary Lee Todd"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Western_Han_Terracotta_Army_of_Yangjiawan_39.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/china/diaolouTowers.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2019 Mx. Granger"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Zilicun_2.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/italy/pantheon.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2013 David Castor"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Pantheon_April_2013.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/italy/duomoDiMilano.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2022 Leonhard Lenz"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Duomo_di_Milano_2022-09-28_01.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/italy/florenceCathedral.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2000 Gary Lee Todd"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Florence_Cathedral_of_Santa_Maria_del_Fiore_(9808680104).jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/italy/pompeii.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Jebulon"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Street_houses_Pompeii_Italy.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/italy/stMarkBasilica.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2018 Bo Schunnesson"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:November_in_Venice.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/italy/leaningTowerOfPisa.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007 boklm"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Pisa_Campanile_(Bell_Tower)_-_The_Leaning_Tower_of_Pisa_(9808732895).jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/japan/himejiCastle.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2016 Floodmfx"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Himeji_castle_q.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/japan/hiroshimaPeaceMemorialPark.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2011 TimMilesWright"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:Hiroshima_Peace_Memorial_Park_cenotaph.jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/japan/arakuraShrine.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 Dang Son"
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://commons.wikimedia.org/wiki/File:12-Chureito-pagoda-and-Mount-Fuji-Japan_(29677439878).jpg"
+
+[[annotations]]
+path = "src/activities/explore_monuments/resource/japan/okinawaShuriCastle.webp"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2015 jpichon_net "
+SPDX-License-Identifier = "CC0-1.0"
+SPDX-FileComment = "Source: https://www.flickr.com/photos/132254976@N03/24025168715"
+
+[[annotations]]
 path = "src/activities/explore_monuments/resource/usa/cabrillo.webp"
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2017 allyndon"

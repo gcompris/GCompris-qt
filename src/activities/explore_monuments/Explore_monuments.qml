@@ -15,7 +15,7 @@ import "../explore_farm_animals"
 ExploreLevels {
         id: activity
 
-        numberOfLevels: 6
+        numberOfLevels: 9
         url: "qrc:/gcompris/src/activities/explore_monuments/resource/"
         hasAudioQuestions: false
 }
