@@ -375,6 +375,7 @@ function fitItems(x_, y_, n_, extra_) {
  */
 function clamp(x_, min_, max_) {
     return Math.min(Math.max(x_, min_), max_);
+}
 
 function getPasswordImages() {
     return [ "apple", "banana", "cherries", "lemon", "orange", "pear", "pineapple", "plum" ]
