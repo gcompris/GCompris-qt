@@ -122,6 +122,7 @@ endif()
 
 if(TARGET ${QT_MAJOR}::WaylandClient)
     set(used_qt_modules ${used_qt_modules} ${QT_MAJOR}::WaylandClient ${QT_MAJOR}::WaylandClientPrivate)
+endif()
 
 # Either make ClientNetworkMessages within ifdef in the whole code, else add it by default
 if(BUILD_SERVER)
@@ -431,6 +432,7 @@ if(WIN32)
   list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris.lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--renderer=direct3d11'")
   if(BUILD_SERVER)
     list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris Server.lnk' '$INSTDIR\\\\bin\\\\gcompris-server.exe'")
+  endif()
   string(REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
 else()
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/images/256-apps-gcompris-qt.png")
