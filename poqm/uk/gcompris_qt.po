@@ -4,14 +4,14 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Ivan Onyshchuk <onivan@mail.ru>, 2008, 2009, 2010.
-# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcompris&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2014-11-09 17:30+0000\n"
-"PO-Revision-Date: 2024-12-16 09:02+0200\n"
+"PO-Revision-Date: 2025-02-07 17:01+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -5936,12 +5936,9 @@ msgstr "Цифрова електроніка"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Створення і імітація роботи цифрових логічних ланцюгів"
+msgstr "Створення і імітація роботи цифрових логічних ланцюгів."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20

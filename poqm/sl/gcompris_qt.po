@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-16 10:13+0100\n"
+"PO-Revision-Date: 2025-02-07 07:14+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -5874,12 +5874,9 @@ msgstr "Digitalna elektronika"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Ustvarite in simulirajte digitalno logično vezje"
+msgstr "Ustvarite in simulirajte digitalno logično vezje."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20

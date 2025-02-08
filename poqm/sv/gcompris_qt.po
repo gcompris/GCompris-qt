@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-11 10:45+0100\n"
+"PO-Revision-Date: 2025-02-07 21:38+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -5874,12 +5874,9 @@ msgstr "Digital elektricitet"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Skapa och simulera en digital logikkrets"
+msgstr "Skapa och simulera en digital logikkrets."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20

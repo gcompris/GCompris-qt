@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-05 16:06+0300\n"
+"PO-Revision-Date: 2025-02-07 09:56+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -5850,12 +5850,9 @@ msgstr "Sayısal elektrik"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Sayısal mantık devresi oluştur ve buna öykün"
+msgstr "Sayısal mantık devresi oluştur ve buna öykün."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
