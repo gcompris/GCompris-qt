@@ -14817,7 +14817,7 @@ msgstr ""
 #: activities/grammar_analysis/grammar_analysis.js:41
 msgctxt "grammar_analysis|"
 msgid "Leave the box blank if no class matches."
-msgstr "Laisse la case vide si aucune classe grammaticale ne correspond pas."
+msgstr "Laisse la case vide si aucune classe grammaticale ne correspond."
 
 #: activities/grammar_analysis/grammar_analysis.js:47
 msgctxt "grammar_analysis|"
@@ -26449,7 +26449,7 @@ msgstr "Valeur maximale : 500000."
 #: activities/tens_complement_calculate/ActivityInfo.qml:14
 msgctxt "ActivityInfo|"
 msgid "Calculate with ten's complement"
-msgstr "Utilise les compléments à 10"
+msgstr "Calcule avec les compléments à 10"
 
 #. Help title
 #: activities/tens_complement_calculate/ActivityInfo.qml:16
