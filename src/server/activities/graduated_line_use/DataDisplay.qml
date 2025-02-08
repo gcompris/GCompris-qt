@@ -10,4 +10,6 @@
 
 import "../graduated_line_read"
 
-GraduatedLine {}
+GraduatedLine {
+    jsonData: jsonData_
+}

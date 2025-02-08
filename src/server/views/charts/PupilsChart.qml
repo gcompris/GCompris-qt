@@ -8,15 +8,12 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
 import QtCharts 2.12
 import "../../singletons"
-import "../../components"
-import "../../panels"
 import "../details"
 
 Item {
+    id: pupilsChart
     anchors.margins: 2
     property string activityName: ""
 
@@ -108,7 +105,7 @@ Item {
                     labelsAngle: -90
                 }
 
-                onClicked: {
+                onClicked: (index, barset) => {
 //                    console.warn("Click:", index, barset.label)
                     pupilsChart.parent.push(lineReport
                                     , { userId: Number(barset.label)

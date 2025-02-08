@@ -9,21 +9,22 @@
  */
 import QtQuick 2.15
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
+
 import "."
 import "../singletons"
 
 Column {
     id: foldDown
+    required property ListModel foldModel
+    required property string indexKey
+    required property string nameKey
+    required property string checkKey
+    required property string title
+
     property int lineHeight: Style.defaultLineHeight
-    property string title: "Nom du truc"
     property bool activated: true
     property bool collapsable: true
-    property var foldModel: null
     property int currentChecked: -1
-    property string indexKey: ""
-    property string nameKey: ""
-    property string checkKey: ""
     property string titleKey: nameKey
     property string delegateName: "check"
 
@@ -36,36 +37,37 @@ Column {
 
     ButtonGroup {
         id: childGroup
-        exclusive: delegateName.includes("radio")
+        exclusive: foldDown.delegateName.includes("radio")
         checkState: parentBox.checkState
     }
 
     // Folddown header
     Rectangle {
         width: parent.width
-        height: lineHeight
+        height: foldDown.lineHeight
         color: Style.colorHeaderPane
         radius: 5
+
         CheckBox {
             id: parentBox
             anchors.fill: parent
             anchors.leftMargin: 2
             font.pixelSize: Style.defaultPixelSize
             font.bold: true
-            text: title
+            text: foldDown.title
             indicator.scale: Style.checkerScale
             enabled: foldDownFilter.text === ""
             checkState: childGroup.checkState
             onClicked: {
-                currentChecked = checked ? -2 : -1          // -2 = all checked, -1 = none
-                selectionClicked(currentChecked, checked)
+                foldDown.currentChecked = checked ? -2 : -1          // -2 = all checked, -1 = none
+                foldDown.selectionClicked(foldDown.currentChecked, checked)
             }
         }
 
         SmallButton {
             id: filterButton
-            width: lineHeight
-            height: lineHeight
+            width: foldDown.lineHeight
+            height: foldDown.lineHeight
             anchors.right: filterRect.left
             checkable: true
             font.pixelSize: Style.defaultPixelSize
@@ -82,7 +84,7 @@ Column {
         Rectangle {
             id: filterRect
             width: filterButton.checked ? 60 : 0
-            height: lineHeight - 6
+            height: foldDown.lineHeight - 6
             anchors.right: counter.left
             anchors.rightMargin: 5
             anchors.verticalCenter: parent.verticalCenter
@@ -97,27 +99,26 @@ Column {
             }
         }
 
-
         Text {
             id: counter
-            anchors.right: collapsable ? collapseButton.left: parent.right
+            anchors.right: foldDown.collapsable ? collapseButton.left: parent.right
             anchors.rightMargin: 5
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             font.pixelSize: Style.defaultPixelSize
             font.bold: true
-            text: foldModel.count
+            text: foldDown.foldModel.count
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
         }
 
         SmallButton {
             id: collapseButton
-            width: lineHeight
-            height: lineHeight
+            width: foldDown.lineHeight
+            height: foldDown.lineHeight
             anchors.right: parent.right
             font.pixelSize: Style.defaultPixelSize
-            visible: collapsable
+            visible: foldDown.collapsable
             checkable: true
             checked: true
             text: checked ? "\uf0d7" : "\uf0d9"
@@ -132,20 +133,22 @@ Column {
         height: parent.height
         radius: 5
         color: Style.colorBackgroundPane
+
         ScrollView {
             id: scrollLines
             anchors.fill: parent
-            anchors.bottomMargin: lineHeight
+            anchors.bottomMargin: foldDown.lineHeight
             ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
             ScrollBar.vertical.policy: ScrollBar.AlwaysOn
             Column {
                 id: boxes
                 spacing: 2
+
                 Repeater {
-                    model: foldModel
+                    model: foldDown.foldModel
                     delegate: Loader {
                         width: elements.width
-                        height: lineHeight
+                        height: foldDown.lineHeight
                         visible: String(eval(titleKey)).toUpperCase().includes(foldDownFilter.text.toUpperCase())
 
                         sourceComponent: {

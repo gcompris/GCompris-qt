@@ -8,10 +8,11 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtQuick.Layouts 1.12
+
 import "../singletons"
 
 Row {
+    id: informationLine
     property string label: ""
     property string info: ""
     property string textColor: "black"
@@ -20,7 +21,7 @@ Row {
         height: Style.defaultLineHeight
         width: labelWidth
         verticalAlignment: Text.AlignBottom
-        text: label
+        text: informationLine.label
         font.bold: true
         font.pixelSize: Style.defaultPixelSize
         color: enabled ? "black" : "gray"
@@ -31,8 +32,8 @@ Row {
         height: Style.defaultLineHeight
         width: infoWidth
         verticalAlignment: Text.AlignBottom
-        color: enabled ? textColor : "gray"
-        text: info
+        color: enabled ? informationLine.textColor : "gray"
+        text: informationLine.info
         font.pixelSize: Style.defaultPixelSize
         wrapMode: Text.WrapAnywhere
     }
