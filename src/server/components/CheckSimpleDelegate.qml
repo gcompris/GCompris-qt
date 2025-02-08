@@ -9,18 +9,19 @@
  */
 import QtQuick 2.15
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
+
 import "../singletons"
 
 Control {
-    id: lineBox
+    id: checkSimpleDelegate
     font.pixelSize: Style.defaultPixelSize
     hoverEnabled: true
     Rectangle {
         anchors.fill: parent
-        color: lineBox.hovered ? Style.colorHeaderPane : "transparent"
+        color: checkSimpleDelegate.hovered ? Style.colorHeaderPane : "transparent"
     }
     CheckBox {
+        id: checkBox
         anchors.fill: parent
         anchors.leftMargin: 10
         text: eval(nameKey)         // In these cases, eval is safe because no code injection is possible

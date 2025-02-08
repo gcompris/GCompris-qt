@@ -11,6 +11,7 @@
 import QtQuick 2.15
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.12
+
 import GCompris 1.0
 
 import "../singletons"
@@ -73,10 +74,10 @@ Popup {
         Text {
             id: deletePupilGroupsText
             Layout.fillWidth: true
-            height: 90
+            Layout.preferredHeight: 90
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
-            text: addMode ? qsTr("Do you want to send the dataset to the selected users?")
+            text: sendDatasetDialog.addMode ? qsTr("Do you want to send the dataset to the selected users?")
             : qsTr("Are you sure you want to remove the dataset for the following users?")
             font {
                 bold: true
@@ -122,10 +123,10 @@ Popup {
 
         OkCancelButtons {
             onCancelled: sendDatasetDialog.close()
-            onValidated: validateDialog()
+            onValidated: sendDatasetDialog.validateDialog()
         }
 
-        Keys.onReturnPressed: validateDialog()
+        Keys.onReturnPressed: sendDatasetDialog.validateDialog()
         Keys.onEscapePressed: sendDatasetDialog.close()
     }
 }

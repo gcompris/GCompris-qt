@@ -35,7 +35,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("Information")
             font {
@@ -45,12 +45,12 @@ Popup {
         }
 
         Repeater {
-            model: message
+            model: errorDialog.message
             Text {
                 Layout.fillWidth: true
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
-                text: message[index]
+                text: errorDialog.message[index]
             }
         }
 

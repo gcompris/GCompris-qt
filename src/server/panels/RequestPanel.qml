@@ -9,14 +9,13 @@
  */
 import QtQuick 2.12
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.12
 import "qrc:/gcompris/src/server/server.js" as Server
 
 import "../singletons"
-import "../components"
 import "../dialogs"
 
 Item {
+    id: requestPanel
     property string request: ""
     property var wantedColumns: []
     property int count: linesModel.count
@@ -83,7 +82,7 @@ Item {
         boundsBehavior: Flickable.StopAtBounds
         clip: true
 
-        model: actualColumns
+        model: requestPanel.actualColumns
         delegate: Button {
             text: Definitions.columnsLabel[modelData] + ((sort === modelData) ? " " + arrows[order] : "")
             width: Definitions.columnsSize[modelData]

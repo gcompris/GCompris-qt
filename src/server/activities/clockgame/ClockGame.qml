@@ -1,4 +1,4 @@
-/* GCompris - LearnDigits.qml for learn_digits, learn_additions, learn_subtractions
+/* GCompris - ClockGame.qml for clockgame
  *
  * SPDX-FileCopyrightText: 2024 Bruno Anselme <be.root@free.fr>
  *
@@ -13,22 +13,25 @@ import QtQuick 2.15
 import "../../components"
 
 Item {
-    id: lineView
+    id: lineItem
     required property var jsonData
     property int labelWidth: 130        // used by InformationLine
     height: details.height
 
+    function formatTime(list) {
+        return ('00'+list[0]).slice(-2) + ":" + ('00'+list[1]).slice(-2) + ":" + ('00'+list[2]).slice(-2)
+    }
+
     Column {
         id: details
         InformationLine {
-            label: qsTr("Question")
-            info: lineView.jsonData.question
+            label: qsTr("Expected")
+            info: formatTime(lineItem.jsonData.expected)
         }
         InformationLine {
             label: qsTr("Proposal")
-            info: lineView.jsonData.answer
-            textColor: (lineView.jsonData.question === lineView.jsonData.answer) ? "green" : "red"
-            infoText.font.bold: true
+            info: formatTime(lineItem.jsonData.proposal)
+            textColor: (result_success) ? "green" : "red"
         }
     }
 }

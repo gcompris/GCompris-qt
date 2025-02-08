@@ -11,15 +11,15 @@ import QtQuick 2.15
 import QtQuick.Controls.Basic
 
 Button {
-    id: control
+    id: smallButton
     text: qsTr("Button")
     hoverEnabled: true
 
     contentItem: Text {
         anchors.fill: parent
         anchors.margins: 2
-        text: control.text
-        font: control.font
+        text: smallButton.text
+        font: smallButton.font
         opacity: enabled ? 1.0 : 0.3
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
@@ -30,9 +30,9 @@ Button {
         anchors.fill: parent
         anchors.margins: 2
         opacity: enabled ? 1 : 0.3
-        color: checked ? "gainsboro" : "whitesmoke"
-        border.color: control.hovered ? "lightskyblue" : "gray"
+        color: smallButton.checked ? "gainsboro" : "whitesmoke"
+        border.color: smallButton.hovered ? "lightskyblue" : "gray"
         border.width: 1
-        radius: 3
+        radius: 2
     }
 }

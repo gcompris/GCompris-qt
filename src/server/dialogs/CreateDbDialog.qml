@@ -15,7 +15,7 @@ import "../components"
 import "../singletons"
 
 Popup {
-    id: createDb
+    id: createDbDialog
     property var message: [ qsTr("You are about to create a new GCompris database") ]
     anchors.centerIn: Overlay.overlay
     width: 550
@@ -41,7 +41,7 @@ Popup {
                 qsTr("created in:") + "<br>" +
                 userDataPath ]
         errorDialog.open()
-        createDb.close()
+        createDbDialog.close()
     }
 
     background: Rectangle {
@@ -57,7 +57,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("New database creation")
             font {
@@ -67,12 +67,12 @@ Popup {
         }
 
         Repeater {
-            model: message
+            model: createDbDialog.message
             Text {
                 Layout.fillWidth: true
                 height: 40
                 horizontalAlignment: Text.AlignHCenter
-                text: message[index]
+                text: createDbDialog.message[index]
             }
         }
 
@@ -99,7 +99,7 @@ Popup {
             defaultText: serverSettings.lastLogin
             onTextChanged: {
 //                serverSettings.lastLogin = text
-                message.text = ""
+                createDbDialog.message.text = ""
             }
         }
 
@@ -107,7 +107,7 @@ Popup {
             id: passwordLabel
             Layout.preferredHeight: 20
             Layout.fillWidth: true
-            anchors.horizontalCenter: parent.center
+            // anchors.horizontalCenter: parent.center
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("Password")
             font.bold: true
@@ -139,7 +139,7 @@ Popup {
         }
 
         OkCancelButtons {
-            onCancelled: createDb.close()
+            onCancelled: createDbDialog.close()
             onValidated: createDatabaseFile()
         }
     }

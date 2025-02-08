@@ -7,14 +7,15 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+// pragma ComponentBehavior: Bound
 import QtQuick 2.12
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
 
 import GCompris 1.0
+
 import "../../singletons"
 import "../../components"
-import "../../panels"
 
 ColumnLayout {
     id: lineReport
@@ -47,18 +48,20 @@ ColumnLayout {
 
     RowLayout {
         Layout.leftMargin: 10
-        RoundButton {
-            text: qsTr("Back")
+        Layout.preferredHeight:30
+        ViewButton {
             Layout.preferredWidth: 100
-            radius: 8
+            Layout.preferredHeight:26
+            text: qsTr("Back")
             onClicked: lineReport.parent.pop()
         }
-        RoundButton {
-            text: qsTr("Refresh")
+        ViewButton {
             Layout.preferredWidth: 100
-            radius: 8
-            onClicked: executeRequest()
+            Layout.preferredHeight:26
+            text: qsTr("Refresh")
+            onClicked: lineReport.executeRequest()
         }
+
         Text {
             text: resultModel.count + " " + qsTr("lines")
         }
@@ -68,7 +71,7 @@ ColumnLayout {
         }
         Text {
             Layout.rightMargin: 15
-            text: activityName
+            text: lineReport.activityName
             opacity: 0.4
         }
     }
@@ -80,7 +83,7 @@ ColumnLayout {
         Layout.leftMargin: 10
         Layout.rightMargin: 10
         Layout.topMargin: 5
-        width: lines.width
+        Layout.preferredWidth: lines.width
         color: "white"
         radius: 3
         clip: true
@@ -102,7 +105,7 @@ ColumnLayout {
                 id: dateLabel
                 Layout.preferredWidth: 230
                 Layout.leftMargin: 20
-                text: new Date(dayFilter).toLocaleDateString(Qt.locale())
+                text: new Date(lineReport.dayFilter).toLocaleDateString(Qt.locale())
                 font.pixelSize: 18
                 verticalAlignment: Text.AlignBottom
                 horizontalAlignment: Text.AlignLeft
@@ -112,7 +115,7 @@ ColumnLayout {
             Text {
                 id: actiName
                 Layout.fillWidth: true
-                text: (activityName !== "") ? Master.allActivities[activityName]["title"] : ""
+                text: (lineReport.activityName !== "") ? Master.allActivities[activityName]["title"] : ""
                 font.pixelSize: 18
                 verticalAlignment: Text.AlignBottom
                 horizontalAlignment: Text.AlignRight
@@ -124,7 +127,7 @@ ColumnLayout {
                 Layout.preferredHeight: Style.activityHeaderHeight
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 Layout.rightMargin: 5
-                source: (activityName !== "") ? "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
+                source: (lineReport.activityName !== "") ? "qrc:/gcompris/src/activities/" + Master.allActivities[activityName]["icon"] : ""
                 sourceSize.width: 100
                 sourceSize.height: 100
             }
@@ -152,6 +155,7 @@ ColumnLayout {
             clip: true
 
             delegate: Rectangle {
+                id: lineRect
                 property string activity_line_name: Master.findObjectInModel(Master.activityModel, function(item) { return item.activity_id === activity_id }).activity_name
                 height: Math.max(dataDisplay.height, infos.height) + 10
                 width: lines.width
@@ -177,7 +181,7 @@ ColumnLayout {
                         id: infos
                         Layout.margins: 5
                         Layout.alignment: Qt.AlignTop
-                        width: 170
+                        Layout.preferredWidth: 170
                         RowLayout {
                             width: parent.width
                             height: Style.defaultLineHeight
@@ -185,12 +189,12 @@ ColumnLayout {
                                 Layout.fillWidth: true
                                 font.pixelSize: Style.defaultPixelSize
                                 text: Master.findObjectInModel(Master.userModel, function(item) { return item.user_id === user_id }).user_name
-                                font.underline: true
+                                // font.underline: true
                             }
                             Text {
                                 Layout.preferredWidth: 25
                                 font.pixelSize: Style.defaultPixelSize
-                                height: 20
+                                Layout.preferredHeight: 20
                                 horizontalAlignment: Text.AlignRight
                                 text: qsTr("%1s").arg(result_duration)
                             }
@@ -201,14 +205,14 @@ ColumnLayout {
                             height: Style.defaultLineHeight
                             Text {
                                 Layout.preferredWidth: 75
-                                height: 20
+                                Layout.preferredHeight: 20
                                 font.pixelSize: Style.defaultPixelSize
                                 text: qsTr("Level: <b>%1</b>").arg(JSON.parse(result_data).level)
                                 horizontalAlignment: Text.AlignLeft
                             }
                             Text {
                                 Layout.fillWidth: true
-                                height: 20
+                                Layout.preferredHeight: 20
                                 font.pixelSize: Style.defaultPixelSize
                                 text: result_datetime.slice(-8)
                                 horizontalAlignment: Text.AlignRight
@@ -222,9 +226,10 @@ ColumnLayout {
                         Layout.leftMargin: 5
                         Layout.alignment: Qt.AlignTop
                         source: {
-                            var url = `${Master.activityBaseUrl}/${activity_line_name}/DataDisplay.qml`
+                            var url = `${Master.activityBaseUrl}/${lineRect.activity_line_name}/DataDisplay.qml`
                             return file.exists(url) ? url : `${Master.activityBaseUrl}/DataDisplay.qml`
                         }
+                        property var jsonData_: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
                     }
                 }
 
@@ -234,7 +239,7 @@ ColumnLayout {
                     anchors.rightMargin: 5
                     color: "gray"
                     height: 20
-                    text: Master.allActivities[activity_line_name].title
+                    text: Master.allActivities[lineRect.activity_line_name].title
                     horizontalAlignment: Text.AlignRight
                     visible: activityName === ""
                 }

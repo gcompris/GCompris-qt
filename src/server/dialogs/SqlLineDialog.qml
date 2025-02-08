@@ -15,7 +15,7 @@ import "../singletons"
 import "../components"
 
 Popup {
-    id: viewSqlLineDialog
+    id: sqlLineDialog
     property string title: qsTr("Line details")
     property var parentModel: null
     property int lineIndex: 0
@@ -69,9 +69,9 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
-            text: title
+            text: sqlLineDialog.title
             font.bold: true
             font.pixelSize: 20
         }
@@ -88,7 +88,7 @@ Popup {
 
         Rectangle {
             Layout.fillWidth: true;
-            height: 1;
+            Layout.preferredHeight: 1;
             color: "black"
             visible: dataModel.count ? true : false
         }
@@ -115,21 +115,21 @@ Popup {
             ViewButton {
                 text: qsTr("<")
                 Layout.preferredWidth: 100
-                height: 40
+                Layout.preferredHeight: 40
                 Layout.alignment: Qt.AlignHCenter
-                enabled: lineIndex > 0
-                opacity: (lineIndex > 0) ? 1.0 : 0.1
+                enabled: sqlLineDialog.lineIndex > 0
+                opacity: (sqlLineDialog.lineIndex > 0) ? 1.0 : 0.1
                 onClicked: {
-                    if (lineIndex > 0) lineIndex--
-                    updateModels()
+                    if (sqlLineDialog.lineIndex > 0) sqlLineDialog.lineIndex--
+                    sqlLineDialog.updateModels()
                 }
             }
 
             Text {
                 Layout.preferredWidth: 100
-                height: 40
+                Layout.preferredHeight: 40
                 horizontalAlignment: Text.AlignHCenter
-                text: parentModel ? String(lineIndex + 1) + " / " + String(parentModel.count) : ""
+                text: sqlLineDialog.parentModel ? String(sqlLineDialog.lineIndex + 1) + " / " + String(sqlLineDialog.parentModel.count) : ""
                 font.bold: true
                 font.pixelSize: 20
             }
@@ -137,31 +137,31 @@ Popup {
             ViewButton {
                 text: qsTr(">")
                 Layout.preferredWidth: 100
-                height: 40
+                Layout.preferredHeight: 40
                 Layout.alignment: Qt.AlignHCenter
-                enabled: parentModel ? lineIndex < parentModel.count - 1 : false
-                opacity: parentModel ? (lineIndex < parentModel.count - 1) ? 1.0 : 0.1 : 0.1
+                enabled: sqlLineDialog.parentModel ? sqlLineDialog.lineIndex < sqlLineDialog.parentModel.count - 1 : false
+                opacity: sqlLineDialog.parentModel ? (sqlLineDialog.lineIndex < sqlLineDialog.parentModel.count - 1) ? 1.0 : 0.1 : 0.1
                 onClicked: {
-                    if (lineIndex < parentModel.count - 1) lineIndex++
+                    if (sqlLineDialog.lineIndex < sqlLineDialog.parentModel.count - 1) lineIndex++
                     updateModels()
                 }
             }
 
             Rectangle {
                 Layout.fillWidth: true
-                height: 0
+                Layout.preferredHeight: 0
             }
 
             ViewButton {
                 text: qsTr("Close")
                 Layout.preferredWidth: 100
-                height: 40
+                Layout.preferredHeight: 40
                 Layout.alignment: Qt.AlignHCenter
-                onClicked: viewSqlLineDialog.close()
+                onClicked: sqlLineDialog.close()
             }
         }
 
-        Keys.onReturnPressed: viewSqlLineDialog.close()
-        Keys.onEscapePressed: viewSqlLineDialog.close()
+        Keys.onReturnPressed: sqlLineDialog.close()
+        Keys.onEscapePressed: sqlLineDialog.close()
     }
 }

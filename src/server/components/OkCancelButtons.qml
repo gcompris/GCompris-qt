@@ -9,9 +9,7 @@
  */
 import QtQuick 2.12
 
-import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.2
-import "../singletons"
 import "../components"
 
 Rectangle {
@@ -33,13 +31,13 @@ Rectangle {
         anchors.centerIn: parent
         ViewButton {
             id: cancelButton
-            text: cancelText
-            onClicked: cancelled()
+            text: okCancelButtons.cancelText
+            onClicked: okCancelButtons.cancelled()
         }
         ViewButton {
             id: okButton
-            text: okText
-            onClicked: validated()
+            text: okCancelButtons.okText
+            onClicked: okCancelButtons.validated()
         }
     }
 }

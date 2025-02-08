@@ -12,7 +12,6 @@ import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
 
 import "../singletons"
-import "../components"
 import "../panels"
 import "charts"
 
@@ -45,20 +44,20 @@ Item {
             calendar.onCalendarChanged: chartLayout.children[bar.currentIndex].currentItem.executeRequest()
 
             groupPane.onSelectionClicked: {
-                popStacks()
-                Master.foldDownToList(pupilPane, userList, -1, false)
+                chartsView.popStacks()
+                Master.foldDownToList(pupilPane, chartsView.userList, -1, false)
                 chartLayout.children[bar.currentIndex].currentItem.executeRequest();
             }
 
             pupilPane.onSelectionClicked: (modelId, checked) => {
-                popStacks()
-                Master.foldDownToList(pupilPane, userList, modelId, checked)
+                chartsView.popStacks()
+                Master.foldDownToList(pupilPane, chartsView.userList, modelId, checked)
                 chartLayout.children[bar.currentIndex].currentItem.executeRequest();
             }
 
             activityPane.onSelectionClicked: (modelId, checked) => {
-                popStacks()
-                Master.foldDownToList(activityPane, activityList, modelId, checked)
+                chartsView.popStacks()
+                Master.foldDownToList(activityPane, chartsView.activityList, modelId, checked)
                 chartLayout.children[bar.currentIndex].currentItem.executeRequest();
             }
         }

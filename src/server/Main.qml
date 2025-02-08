@@ -11,14 +11,12 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQml 2.12
-import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
 import QtCore // For Settings and StandardPaths
 
 import GCompris 1.0
 import "qrc:/gcompris/src/server/server.js" as Server
 
-import "components"
 import "dialogs"
 import "panels"
 import "singletons"

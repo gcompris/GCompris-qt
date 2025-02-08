@@ -15,7 +15,7 @@ import "../singletons"
 import "../components"
 
 Popup {
-    id: addModifyGroupDialog
+    id: groupDialog
     enum DialogType { Add, Modify, Remove }
     property string label
     property bool textInputReadOnly: false
@@ -52,19 +52,19 @@ Popup {
             switch (mode) {
             case GroupDialog.DialogType.Add:
                 if (Master.createGroup(groupNameInput.text, groupDescriptionInput.text) !== -1)
-                    addModifyGroupDialog.close()
+                    groupDialog.close()
                 break
             case GroupDialog.DialogType.Modify:
                 if (Master.updateGroup(modelIndex, groupNameInput.text, groupDescriptionInput.text))
-                    addModifyGroupDialog.close()
+                    groupDialog.close()
                 break
             case GroupDialog.DialogType.Remove:
                 if (Master.deleteGroup(modelIndex))
-                    addModifyGroupDialog.close()
+                    groupDialog.close()
                 break
             }
         } else {
-            addModifyGroupDialog.close()
+            groupDialog.close()
         }
         Master.loadGroups()
         Master.loadUsers()
@@ -85,9 +85,9 @@ Popup {
         Text {
             id: groupDialogText
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             horizontalAlignment: Text.AlignHCenter
-            text: label
+            text: groupDialog.label
             font.bold: true
             font {
                 pixelSize: 20
@@ -96,7 +96,7 @@ Popup {
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Name")
             font.bold: true
             font.pixelSize: 15
@@ -107,12 +107,12 @@ Popup {
             Layout.fillWidth: true
             Layout.preferredHeight: Style.defaultLineHeight
             activeFocusOnTab: true
-            readOnlyText: textInputReadOnly
+            readOnlyText: groupDialog.textInputReadOnly
         }
 
         Text {
             Layout.fillWidth: true
-            height: 40
+            Layout.preferredHeight: 40
             text: qsTr("Description")
             font.bold: true
             font.pixelSize: 15
@@ -123,16 +123,16 @@ Popup {
             Layout.fillWidth: true
             Layout.preferredHeight: Style.defaultLineHeight
             activeFocusOnTab: true
-            readOnlyText: textInputReadOnly
+            readOnlyText: groupDialog.textInputReadOnly
         }
 
         OkCancelButtons {
-            onCancelled: addModifyGroupDialog.close()
-            onValidated: saveGroup()
+            onCancelled: groupDialog.close()
+            onValidated: groupDialog.saveGroup()
         }
 
-        Keys.onReturnPressed: saveGroup()
-        Keys.onEnterPressed: saveGroup()
-        Keys.onEscapePressed: addModifyGroupDialog.close()
+        Keys.onReturnPressed: groupDialog.saveGroup()
+        Keys.onEnterPressed: groupDialog.saveGroup()
+        Keys.onEscapePressed: groupDialog.close()
     }
 }

@@ -10,6 +10,7 @@
  */
 import QtQuick 2.12
 import QtQuick.Controls.Basic
+
 import "../singletons"
 
 Button {
@@ -22,7 +23,6 @@ Button {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         elide: Text.ElideRight
-        font.pixelSize: 18 * height / 40
         color: enabled ? "black" : "gray"
     }
 
@@ -32,7 +32,7 @@ Button {
         radius: 5
         color: (parent.focus || parent.hovered) ? Style.colorHoveredButton : Style.colorButton
         border.color: "black"
-        border.width: parent.hovered ? 3 : 1
+        border.width: parent.hovered ? 2 : 1
     }
 }
 

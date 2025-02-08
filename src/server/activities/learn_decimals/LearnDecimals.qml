@@ -7,16 +7,12 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.15
-import QtQuick.Layouts 1.2
-import QtQuick.Controls.Basic
-
-import "../../singletons"
-import "../../components"
-import "../../panels"
 
 Item {
-    property var jsonData: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
+    id: lineView
+    required property var jsonData
     height: details.height
 
     Column {
@@ -25,12 +21,12 @@ Item {
             width: parent.width
             height: 30
             font.pixelSize: 16
-            text: jsonData.question
+            text: lineView.jsonData.question
         }
         Row {
             height: 50
             Text {
-                text: jsonData.expected
+                text: lineView.jsonData.expected
                 height: parent.height
                 width: 80
                 horizontalAlignment: Text.AlignHCenter
@@ -44,10 +40,10 @@ Item {
                 font.pixelSize: 20
             }
             Text {
-                text: jsonData.proposal
+                text: lineView.jsonData.proposal
                 height: parent.height
                 width: 80
-                color: (jsonData.proposal === jsonData.expected) ? "green" : "red"
+                color: (lineView.jsonData.proposal === lineView.jsonData.expected) ? "green" : "red"
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 20
             }
@@ -57,13 +53,13 @@ Item {
                 width: 20
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 20
-                visible: jsonData.input !== ""
+                visible: lineView.jsonData.input !== ""
             }
             Text {
-                text: jsonData.input.replace("," , ".")
+                text: lineView.jsonData.input.replace("," , ".")
                 height: parent.height
                 width: 80
-                color: (Number(jsonData.input.replace("," , ".")) === jsonData.expected) ? "green" : "red"
+                color: (Number(lineView.jsonData.input.replace("," , ".")) === lineView.jsonData.expected) ? "green" : "red"
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 20
             }

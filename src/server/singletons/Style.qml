@@ -8,6 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 pragma Singleton
+
 import QtQuick 2.12
 
 Item {
@@ -32,10 +33,13 @@ Item {
 
     readonly property real heightTopPanel: heightNavigationButtonIcon
 
+    property int defaultPixelSize: 12
+    property int bigPixelSize: defaultPixelSize * 3 / 2
     property int defaultLineHeight: 1.8 * defaultPixelSize
+    property int bigLineHeight: 1.2 * bigPixelSize
     property int mediumLineHeight: defaultLineHeight + 6
-    property int defaultPixelSize: 13
-    property real checkerScale: 0.7
+    property int tableHeaderHeight: 20
+    property real checkerScale: 0.55
 
 //    readonly property int defaultLineHeight: 25
 //    readonly property int mediumLineHeight: 35

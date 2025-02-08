@@ -9,22 +9,22 @@
  */
 import QtQuick 2.15
 import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
+
 import "."
 import "../singletons"
-import "../dialogs"
 
 Column {
     id: foldDown
+    required property ListModel foldModel
+    required property string indexKey
+    required property string nameKey
+    required property string checkKey
+    required property string title
+
     property int lineHeight: Style.defaultLineHeight
-    property string title: "Nom du truc"
     property bool activated: true
     property bool collapsable: true
-    property var foldModel: null
     property int currentChecked: -1
-    property string indexKey: ""
-    property string nameKey: ""
-    property string checkKey: ""
     property string delegateName: "radio"
 
     enabled: activated
@@ -36,32 +36,32 @@ Column {
 
     ButtonGroup {
         id: childGroup
-        exclusive: delegateName.includes("radio")
+        exclusive: foldDown.delegateName.includes("radio")
     }
 
     // Folddown header
     Rectangle {
         width: parent.width
-        height: lineHeight
+        height: foldDown.lineHeight
         color: Style.colorHeaderPane
         radius: 5
-        Button {
+
+        SmallButton {
             id: clearButton
-            width: lineHeight
-            height: lineHeight
+            width: foldDown.lineHeight
+            height: foldDown.lineHeight
             anchors.left: parent.left
             font.pixelSize: Style.defaultPixelSize
-            scale: Style.checkerScale
             text: "\uf068"
             enabled: collapseButton.checked && ((childGroup.checkedButton != null) || (!childGroup.exclusive))
             onClicked: {    // Uncheck all buttons
                 if (childGroup.exclusive) {
                     childGroup.checkedButton = null
-                    currentChecked = -1
-                    selectionClicked( -1)
+                    foldDown.currentChecked = -1
+                    foldDown.selectionClicked( -1)
                 }
                 for (var i = 0; i < childGroup.buttons.length; i++)
-                    foldModel.setProperty(i, checkKey, false)
+                    foldDown.foldModel.setProperty(i, foldDown.checkKey, false)
             }
         }
 
@@ -73,29 +73,29 @@ Column {
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: Style.defaultPixelSize
             font.bold: true
-            text: (!collapseButton.checked) && (childGroup.checkedButton != null) ? childGroup.checkedButton.text : title
+            text: (!collapseButton.checked) && (childGroup.checkedButton != null) ? childGroup.checkedButton.text : foldDown.title
             color: enabled ? "black": "gray"
         }
 
         Text {
             id: counter
-            anchors.right: collapsable ? collapseButton.left: parent.right
+            anchors.right: foldDown.collapsable ? collapseButton.left: parent.right
             anchors.rightMargin: 10
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             font.pixelSize: Style.defaultPixelSize
             font.bold: true
-            text: foldModel.count
+            text: foldDown.foldModel.count
             horizontalAlignment: Text.AlignRight
             verticalAlignment: Text.AlignVCenter
         }
 
         SmallButton {
             id: collapseButton
-            width: lineHeight
-            height: lineHeight
+            width: foldDown.lineHeight
+            height: foldDown.lineHeight
             anchors.right: parent.right
-            visible: collapsable
+            visible: foldDown.collapsable
             checkable: true
             checked: true
             font.pixelSize: Style.defaultPixelSize
@@ -114,17 +114,19 @@ Column {
         ScrollView {
             id: scrollLines
             anchors.fill: parent
-            anchors.bottomMargin: lineHeight
+            anchors.bottomMargin: foldDown.lineHeight
             ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
             ScrollBar.vertical.policy: ScrollBar.AlwaysOn
+
             Column {
                 id: boxes
                 spacing: 2
+
                 Repeater {
-                    model: foldModel
+                    model: foldDown.foldModel
                     delegate: Loader {
                         width: elements.width
-                        height: lineHeight
+                        height: foldDown.lineHeight
                         sourceComponent: {
                             switch(foldDown.delegateName) {
                             case "radio":

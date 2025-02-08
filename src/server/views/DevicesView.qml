@@ -139,7 +139,7 @@ Rectangle {
                     id: connectDevicesButton
                     Layout.topMargin: 20
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: qsTr("Connect devices")
 
                     onClicked: {
@@ -151,7 +151,7 @@ Rectangle {
                 ViewButton {
                     id: loginListButton
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: qsTr("Send login list")
 
                     onClicked: {
@@ -175,7 +175,7 @@ Rectangle {
                 ViewButton {
                     id: disconnectButton
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: qsTr("Disconnect selected pupils")
 
                     onClicked: {
@@ -191,7 +191,7 @@ Rectangle {
                 ViewButton {
                     id: disconnectAllButton
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: qsTr("Disconnect everybody")
 
                     onClicked: {

@@ -8,13 +8,9 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import QtQuick.Controls.Basic
-import QtQuick.Layouts 1.15
 import QtCharts 2.12
+
 import "../../singletons"
-import "../../components"
-import "../../panels"
-import "../../activities"
 import "../details"
 
 Item {

@@ -10,4 +10,6 @@
 
 import "../learn_decimals"
 
-LearnDecimals {}
+LearnDecimals {
+    jsonData: jsonData_
+}

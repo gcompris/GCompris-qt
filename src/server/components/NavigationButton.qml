@@ -9,10 +9,10 @@
  */
 import QtQuick 2.12
 
-import "."
 import "../singletons"
 
 Item {
+    id: navigationButton
     property alias iconCharacter: textIcon.text
     property alias description: textDescription.text
     property color hoverColour: Style.colorHover
@@ -26,7 +26,7 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-        color: enabled ? selected ? Style.colorBackground : Style.colorNavigationBarBackground : Style.colorNavigationBarBackgroundDisabled
+        color: enabled ? navigationButton.selected ? Style.colorBackground : Style.colorNavigationBarBackground : Style.colorNavigationBarBackgroundDisabled
 
         Row {
             Text {
@@ -55,11 +55,11 @@ Item {
             anchors.fill: parent
             cursorShape: Qt.PointingHandCursor
             hoverEnabled: true
-            onEntered: if (!selected) background.state = "hover"
+            onEntered: if (!navigationButton.selected) background.state = "hover"
             onExited: background.state = ""
             onClicked: {
                 background.state = ""
-                navigationButtonClicked()
+                navigationButton.navigationButtonClicked()
             }
         }
 
