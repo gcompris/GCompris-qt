@@ -35,7 +35,7 @@ Item {
             when: !serverSettings.navigationPanelRight
             AnchorChanges {
                 target: navigationPanel
-                anchors.left: parent.left
+                anchors.left: navigationPanel.parent.left
                 anchors.right: undefined
             }
         },
@@ -45,7 +45,7 @@ Item {
             AnchorChanges {
                 target: navigationPanel
                 anchors.left: undefined
-                anchors.right: parent.right
+                anchors.right: navigationPanel.parent.right
             }
         }
     ]
@@ -76,55 +76,55 @@ Item {
             NavigationButton {
                 iconCharacter: "\uf0c9"
                 description: ""
-                onNavigationButtonClicked: isCollapsed = !isCollapsed
+                onNavigationButtonClicked: navigationPanel.isCollapsed = !navigationPanel.isCollapsed
             }
             NavigationButton {
                 id: loginButton
                 iconCharacter: "\uf015"
                 description: qsTr("GCompris-Server login")
-                onNavigationButtonClicked: changeTo(0)
+                onNavigationButtonClicked: navigationPanel.changeTo(0)
             }
             NavigationButton {
                 id: pupilsView
                 iconCharacter: "\uf0c0"
                 description: qsTr("Managing Pupils")
-                onNavigationButtonClicked: changeTo(1)
+                onNavigationButtonClicked: navigationPanel.changeTo(1)
             }
             NavigationButton {
                 id: deviceView
                 iconCharacter: "\uf1e6"
                 description: qsTr("Connect devices")
-                onNavigationButtonClicked: changeTo(2)
+                onNavigationButtonClicked: navigationPanel.changeTo(2)
             }
             NavigationButton {
                 id: activityDetails
                 iconCharacter: "\uf03a"
                 description: qsTr("Activities view")
-                onNavigationButtonClicked: changeTo(3)
+                onNavigationButtonClicked: navigationPanel.changeTo(3)
             }
             NavigationButton {
                 id: chartsView
                 iconCharacter: "\uf681"
                 description: qsTr("Charts")
-                onNavigationButtonClicked: changeTo(4)
+                onNavigationButtonClicked: navigationPanel.changeTo(4)
             }
             NavigationButton {
                 id: settingsView
                 iconCharacter: "\uf0ad"
                 description: qsTr("Settings")
-                onNavigationButtonClicked: changeTo(5)
+                onNavigationButtonClicked: navigationPanel.changeTo(5)
             }
             NavigationButton {
                 id: datasetsView
                 iconCharacter: "\uf15c"
                 description: qsTr("Datasets view")
-                onNavigationButtonClicked: changeTo(6)
+                onNavigationButtonClicked: navigationPanel.changeTo(6)
             }
             NavigationButton {
                 id: datasView
                 iconCharacter: "\uf188"
                 description: qsTr("Development views (work in progress)")
-                onNavigationButtonClicked: changeTo(7)
+                onNavigationButtonClicked: navigationPanel.changeTo(7)
             }
 
         }

@@ -9,13 +9,11 @@
  */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
-import QtQml.Models 2.12
 import QtQuick.Controls.Basic
 
 import "../singletons"
 import "../components"
 import "../dialogs"
-import "../panels"
 
 Item {
     id: datasetsView
@@ -117,7 +115,7 @@ Item {
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.topMargin: 20
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf234   " + qsTr("Create dataset")
                     enabled: datasetsView.selectedActivity != -1
                     onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity, undefined)
@@ -125,7 +123,7 @@ Item {
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf07c   " + qsTr("Update dataset")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
@@ -133,7 +131,7 @@ Item {
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf0c7   " + qsTr("Remove dataset")
                     enabled: datasetsView.selectedDataset != -1
                     onClicked: removeDatasetDialog.open()
@@ -141,21 +139,21 @@ Item {
 
                 /*ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf0c7   " + qsTr("Export datasets")
                     onClicked: exportPupilsDialog.open()
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text:  "\uf235   " + qsTr("Import datasets")
                     onClicked: importPupilsDialog.open()
                 }*/
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf2f6   " + qsTr("Send to clients")
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -172,7 +170,7 @@ Item {
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    width: 200
+                    Layout.preferredWidth: 200
                     text: "\uf506   " + qsTr("Remove on clients")
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)

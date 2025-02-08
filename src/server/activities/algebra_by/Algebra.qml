@@ -7,21 +7,17 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick 2.15
-import QtQuick.Layouts 1.2
-import QtQuick.Controls.Basic
-
-import "../../singletons"
-import "../../components"
-import "../../panels"
 
 Item {
-    property var jsonData: (typeof result_data !== 'undefined') ? JSON.parse(result_data) : ({})
+    id: lineItem
+    required property var jsonData
     property string proposal: (jsonData.proposal !== "") ? jsonData.proposal : qsTr("timeout")
 
     Row {
         Text {
-            text: jsonData.operation
+            text: lineItem.jsonData.operation
             height: 30
             width: 100
             horizontalAlignment: Text.AlignHCenter
@@ -35,17 +31,17 @@ Item {
             font.pixelSize: 20
         }
         Text {
-            text: jsonData.result
+            text: lineItem.jsonData.result
             height: 30
             width: 50
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 20
         }
         Text {
-            text: proposal
+            text: lineItem.proposal
             height: 30
             width: 80
-            color: (Number(proposal) === Number(jsonData.result)) ? "green" : "red"
+            color: (Number(lineItem.proposal) === Number(lineItem.jsonData.result)) ? "green" : "red"
             horizontalAlignment: Text.AlignHCenter
             font.pixelSize: 20
         }
