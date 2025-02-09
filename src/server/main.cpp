@@ -95,6 +95,9 @@ int main(int argc, char *argv[])
     // Create the engine and Main qml object
     QQmlApplicationEngine engine;
 
+    // Create the activities
+    ActivityInfoTree::getInstance()->initialize(&engine);
+
     controllers::DatabaseController databaseController;
     engine.rootContext()->setContextProperty("databaseController", &databaseController);
     controllers::NetworkController networkController;
