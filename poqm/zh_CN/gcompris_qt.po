@@ -7829,6 +7829,392 @@ msgctxt "board6|"
 msgid "Click on the location of the given pyramid."
 msgstr "单击给定金字塔的位置。"
 
+#: activities/explore_monuments/resource/board/board7.qml:17
+#: activities/explore_monuments/resource/board/board7.qml:20
+msgctxt "board7|"
+msgid "Forbidden City"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:18
+msgctxt "board7|"
+msgid ""
+"The Forbidden City, located in the heart of Beijing, China, is a magnificent "
+"imperial palace complex that served as the home of Chinese emperors and the "
+"political center of the nation for nearly 500 years, from the Ming dynasty "
+"(1368–1644) to the end of the Qing dynasty (1644–1912). Built between 1406 "
+"and 1420, this sprawling architectural masterpiece spans 180 acres and "
+"features over 980 preserved buildings with 8,700 rooms, showcasing "
+"traditional Chinese palatial design. Surrounded by a moat and a massive "
+"wall, the Forbidden City was once inaccessible to the general public, "
+"symbolizing imperial power and exclusivity."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:28
+#: activities/explore_monuments/resource/board/board7.qml:31
+msgctxt "board7|"
+msgid "Leshan Giant Buddha"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:29
+msgctxt "board7|"
+msgid ""
+"The Leshan Giant Buddha, located in Sichuan Province, China, is a colossal "
+"statue carved into a cliff at the confluence of the Min, Dadu, and Qingyi "
+"rivers. Standing at 71 meters (233 feet), it is the tallest pre-modern "
+"statue in the world and a UNESCO World Heritage Site. Built during the Tang "
+"Dynasty (713–803 AD), the statue represents Maitreya, the Buddha of the "
+"future, and was created to calm the turbulent waters threatening local boat "
+"traffic. Ingeniously designed, the statue includes a hidden drainage system "
+"to prevent erosion. Its serene expression and intricate craftsmanship make "
+"it a symbol of spiritual and artistic achievement."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:39
+#: activities/explore_monuments/resource/board/board7.qml:42
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Mysore Palace"
+msgctxt "board7|"
+msgid "Potala Palace"
+msgstr "迈索尔宫"
+
+#: activities/explore_monuments/resource/board/board7.qml:40
+msgctxt "board7|"
+msgid ""
+"The Potala Palace, perched on Red Hill in Lhasa, Tibet, is an iconic symbol "
+"of Tibetan culture and a UNESCO World Heritage Site. Originally built in the "
+"7th century and expanded in the 17th century, it served as the winter "
+"residence of the Dalai Lamas and the center of Tibetan governance. Rising 13 "
+"stories high with over 1,000 rooms, the palace combines intricate Tibetan "
+"architecture, vibrant murals, and sacred relics. It is divided into the "
+"White Palace, housing administrative areas, and the Red Palace, dedicated to "
+"religious studies and prayer. The Potala Palace stands as a testament to "
+"Tibet's spiritual and historical legacy."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:50
+#: activities/explore_monuments/resource/board/board7.qml:53
+msgctxt "board7|"
+msgid "Terracotta Army"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:51
+msgctxt "board7|"
+msgid ""
+"The Terracotta Army is a collection of thousands of life-sized clay "
+"soldiers, horses, and chariots buried with China's first emperor, Qin Shi "
+"Huang, to accompany him in the afterlife. Discovered in 1974 near Xi'an, the "
+"figures date back to approximately 210 BCE and are celebrated for their "
+"incredible detail, with each warrior uniquely crafted to represent the "
+"diverse ranks and roles of an ancient Chinese army."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:61
+#: activities/explore_monuments/resource/board/board7.qml:64
+msgctxt "board7|"
+msgid "Sun and Moon Pagodas"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:62
+msgctxt "board7|"
+msgid ""
+"The Sun and Moon Pagodas, located in Guilin, China, are iconic twin towers "
+"that symbolize the city's cultural and spiritual heritage. Originally built "
+"during the Tang Dynasty, they were reconstructed in the 20th century as "
+"striking landmarks on Shanhu Lake. The Sun Pagoda, standing 41 meters tall, "
+"is a bronze structure—the tallest of its kind in the world—while the Moon "
+"Pagoda, at 35 meters, is built of glazed tiles. These pagodas represent the "
+"harmony of yin and yang and are connected by an underwater glass tunnel. "
+"Illuminated at night, they are popular attractions showcasing traditional "
+"Chinese architecture and modern ingenuity."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:72
+#: activities/explore_monuments/resource/board/board7.qml:75
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Eiffel Tower"
+msgctxt "board7|"
+msgid "Diaolou Towers"
+msgstr "埃菲尔铁塔"
+
+#: activities/explore_monuments/resource/board/board7.qml:73
+msgctxt "board7|"
+msgid ""
+"The Diaolou Towers, found in Kaiping, Guangdong Province, China, are "
+"fortified multi-story structures built from the late 19th to early 20th "
+"centuries to protect against bandits and floods. Blending Western "
+"architectural styles like Romanesque and Baroque with traditional Chinese "
+"elements, they reflect the wealth and influence of overseas Chinese "
+"emigrants. Constructed with reinforced concrete, these towers symbolize a "
+"period of cultural and economic transition in rural China. Designated a "
+"UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
+"towers remain, offering insight into this unique architectural heritage."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board7.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
+msgctxt "board7|"
+msgid "Monuments of China"
+msgstr "印度的名胜古迹"
+
+#: activities/explore_monuments/resource/board/board7.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
+msgctxt "board7|"
+msgid "Click on the location of the given monument."
+msgstr "点击给定名胜古迹的位置。"
+
+#: activities/explore_monuments/resource/board/board8.qml:17
+#: activities/explore_monuments/resource/board/board8.qml:20
+msgctxt "board8|"
+msgid "The Pantheon"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:18
+msgctxt "board8|"
+msgid ""
+"The Pantheon in Rome, Italy, is an iconic ancient temple built around 126 AD "
+"during Emperor Hadrian's reign, on the site of earlier structures "
+"commissioned by Marcus Agrippa. Renowned for its architectural brilliance, "
+"it features a massive domed roof with a central oculus, symbolizing the "
+"heavens, allowing natural light to illuminate the interior. Originally "
+"dedicated to all Roman gods, it was later converted into a Christian church, "
+"known as the Basilica of St. Mary and the Martyrs (Santa Maria ad Martyres), "
+"in 609 AD. Its dome, the largest unreinforced concrete dome in the world, "
+"showcases remarkable engineering and symmetry, inspiring architects for "
+"centuries. The Pantheon’s harmonious proportions and historical significance "
+"make it a timeless masterpiece of classical architecture."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:28
+#: activities/explore_monuments/resource/board/board8.qml:31
+msgctxt "board8|"
+msgid "Duomo Di Milano"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:29
+msgctxt "board8|"
+msgid ""
+"The Duomo di Milano, also known as the Milan Cathedral, is an iconic Gothic "
+"masterpiece located in the heart of Milan, Italy. Constructed over nearly "
+"six centuries, it is one of the largest cathedrals in the world and a symbol "
+"of Milan's artistic and cultural heritage. Its intricate façade is adorned "
+"with countless statues, spires, and gargoyles, reflecting the grandeur of "
+"Gothic architecture. Visitors can explore its stunning interiors, featuring "
+"beautiful stained glass windows and intricate marble details, or ascend to "
+"the rooftop for breathtaking views of the city and the Alps. The Duomo "
+"stands as a testament to Italy's rich history and architectural brilliance."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:39
+#: activities/explore_monuments/resource/board/board8.qml:42
+#, fuzzy
+#| msgctxt "board4|"
+#| msgid "Worms Cathedral"
+msgctxt "board8|"
+msgid "Florence Cathedral"
+msgstr "沃尔姆斯大教堂"
+
+#: activities/explore_monuments/resource/board/board8.qml:40
+msgctxt "board8|"
+msgid ""
+"The Florence Cathedral, officially known as the Cattedrale di Santa Maria "
+"del Fiore, is a renowned masterpiece of Gothic and Renaissance architecture "
+"located in Florence, Italy. Completed in 1436, it is famous for its massive "
+"red-tiled dome designed by Filippo Brunelleschi, which remains an "
+"engineering marvel and a symbol of the city. The cathedral's intricate "
+"marble facade, added in the 19th century, complements its richly decorated "
+"interior and artistic treasures. Together with Giotto’s Campanile and the "
+"Baptistery of St. John, it forms part of a UNESCO World Heritage Site, "
+"drawing millions of visitors annually for its historical, cultural, and "
+"architectural significance."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:50
+#: activities/explore_monuments/resource/board/board8.qml:53
+#, fuzzy
+#| msgctxt "ActivityInfo|"
+#| msgid "The Tower of Hanoi"
+msgctxt "board8|"
+msgid "Leaning Tower of Pisa"
+msgstr "汉诺塔"
+
+#: activities/explore_monuments/resource/board/board8.qml:51
+msgctxt "board8|"
+msgid ""
+"The Leaning Tower of Pisa, located in the Italian city of Pisa, is a "
+"globally renowned architectural marvel. Constructed as the freestanding bell "
+"tower for the city's cathedral, it is famous for its unintended tilt, caused "
+"by unstable foundation soil. Begun in 1173, the tower's construction spanned "
+"nearly 200 years, during which efforts were made to stabilize its "
+"inclination. Standing at approximately 56 meters (183 feet), the tower's "
+"Romanesque design features eight stories, including a bell chamber, adorned "
+"with intricately carved columns and arches. Recognized as a UNESCO World "
+"Heritage Site, it remains a symbol of resilience and ingenuity."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:61
+#: activities/explore_monuments/resource/board/board8.qml:64
+msgctxt "board8|"
+msgid "St Mark's Basilica"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:62
+msgctxt "board8|"
+msgid ""
+"St. Mark's Basilica, located in Venice, Italy, is an iconic masterpiece of "
+"Byzantine architecture and one of the city's most famous landmarks. "
+"Originally built in 828 to house the relics of St. Mark the Evangelist, it "
+"was rebuilt in its current form in the 11th century. Known for its opulent "
+"design, the basilica features a blend of Eastern and Western influences, "
+"evident in its five domes, intricate mosaics, and ornate facade adorned with "
+"statues and carvings. The interior is richly decorated with gold mosaics and "
+"marble floors, showcasing the wealth and power of the Venetian Republic. "
+"Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
+"cultural, and religious heritage."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:72
+#: activities/explore_monuments/resource/board/board8.qml:75
+msgctxt "board8|"
+msgid "Pompeii"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:73
+msgctxt "board8|"
+msgid ""
+"Pompeii was an ancient Roman city located near modern-day Naples, Italy, "
+"famously preserved after being buried by the eruption of Mount Vesuvius in "
+"79 AD. The eruption unleashed a deadly combination of ash, pumice, and "
+"pyroclastic flows, which engulfed the city and its inhabitants, preserving "
+"buildings, artifacts, and even human remains in incredible detail. "
+"Excavations of Pompeii have provided valuable insights into daily Roman "
+"life, architecture, and society, revealing a city with well-planned streets, "
+"homes, public baths, and temples. The site is now a UNESCO World Heritage "
+"Site and remains one of the most important archaeological discoveries in "
+"history."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board8.qml:85
+#, fuzzy
+#| msgctxt "board2|"
+#| msgid "Monuments of India"
+msgctxt "board8|"
+msgid "Monuments of Italy"
+msgstr "印度的名胜古迹"
+
+#: activities/explore_monuments/resource/board/board8.qml:88
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
+msgctxt "board8|"
+msgid "Click on the location of the given monument."
+msgstr "点击给定名胜古迹的位置。"
+
+#: activities/explore_monuments/resource/board/board9.qml:17
+#: activities/explore_monuments/resource/board/board9.qml:20
+#, fuzzy
+#| msgctxt "ActivityConfig|"
+#| msgid "Mixed Case"
+msgctxt "board9|"
+msgid "Himeji Castle"
+msgstr "混合大小写"
+
+#: activities/explore_monuments/resource/board/board9.qml:18
+msgctxt "board9|"
+msgid ""
+"Himeji-jo is the finest surviving example of early 17th-century Japanese "
+"castle architecture, comprising 83 buildings with highly developed systems "
+"of defence and ingenious protection devices dating from the beginning of the "
+"Shogun period. It is a masterpiece of construction in wood, combining "
+"function with aesthetic appeal, both in its elegant appearance unified by "
+"the white plastered earthen walls and in the subtlety of the relationships "
+"between the building masses and the multiple roof layers."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:28
+#: activities/explore_monuments/resource/board/board9.qml:31
+msgctxt "board9|"
+msgid "Hiroshima Peace Memorial Park"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:29
+msgctxt "board9|"
+msgid ""
+"Hiroshima Peace Memorial Park is a symbol of peace and a reminder of the "
+"devastating consequences of war. Located in Hiroshima, Japan, the park "
+"commemorates the victims of the atomic bombing on August 6, 1945. The park "
+"features several monuments, including the iconic Atomic Bomb Dome, which was "
+"once a government building and now stands as a UNESCO World Heritage Site. "
+"The park also houses the Hiroshima Peace Memorial Museum, which educates "
+"visitors about the events surrounding the bombing and promotes a message of "
+"peace, nonviolence, and the importance of nuclear disarmament. It serves as "
+"a solemn space for reflection, honoring the lives lost and advocating for "
+"global peace."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:39
+#: activities/explore_monuments/resource/board/board9.qml:42
+msgctxt "board9|"
+msgid "Arakura Fuji Sengen Shrine"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:40
+msgctxt "board9|"
+msgid ""
+"The shrine was founded in 705 to enshrine the deity of the site. Following "
+"the great eruption of Mt. Fuji in 807, the emperor dispatched an imperial "
+"envoy to this shrine to perform a ritual to halt the eruption. It is said "
+"that during the Warring States Period, when Takeda Nobutora, the father of a "
+"famous warlord Takeda Shingen, battled with the Hojo Family, he set up camp "
+"here, prayed for victory, and won the battle. He then dedicated his sword to "
+"this shrine. Today, locals and those from afar visit the shrine to ward off "
+"evil, to pray for family happiness, and safe childbirth. In the spring, the "
+"cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
+"Mt. Fuji."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:50
+#: activities/explore_monuments/resource/board/board9.qml:53
+msgctxt "board9|"
+msgid "Okinawa Shuri Castle"
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:51
+msgctxt "board9|"
+msgid ""
+"Shuri Castle, located in Naha, Okinawa, Japan, is a UNESCO World Heritage "
+"Site and a symbol of the Ryukyu Kingdom's rich cultural history. Originally "
+"constructed in the 14th century, the castle served as the political, "
+"economic, and cultural hub of the kingdom for centuries. Renowned for its "
+"distinctive fusion of Chinese and Japanese architectural styles, Shuri "
+"Castle features vermillion lacquered structures, ornate decorations, and a "
+"commanding hilltop position. Though destroyed during World War II, it was "
+"meticulously reconstructed and became a key tourist attraction. Tragically, "
+"much of the castle was lost in a fire in 2019, but efforts to restore it are "
+"ongoing, reflecting its enduring importance to Okinawa's heritage."
+msgstr ""
+
+#: activities/explore_monuments/resource/board/board9.qml:63
+#, fuzzy
+#| msgctxt "board3|"
+#| msgid "Monuments of France"
+msgctxt "board9|"
+msgid "Monuments of Japan"
+msgstr "法国的名胜古迹"
+
+#: activities/explore_monuments/resource/board/board9.qml:66
+#, fuzzy
+#| msgctxt "board1|"
+#| msgid "Click on the location of the given monument."
+msgctxt "board9|"
+msgid "Click on the location of the given monument."
+msgstr "点击给定名胜古迹的位置。"
+
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
 msgctxt "ActivityInfo|"
