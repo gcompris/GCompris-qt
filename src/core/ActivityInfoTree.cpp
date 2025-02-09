@@ -350,7 +350,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     Q_UNUSED(scriptEngine)
 
     ActivityInfoTree *menuTree = getInstance();
-    menuTree->initialize(engine);
     return menuTree;
 }
 
