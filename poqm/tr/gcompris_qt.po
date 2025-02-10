@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-07 09:56+0300\n"
+"PO-Revision-Date: 2025-02-09 12:50+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -7546,7 +7546,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board2.qml:141
 msgctxt "board2|"
 msgid "Monuments of India"
-msgstr "Hindistan Anıtları"
+msgstr "Hindistan’ın Anıtları"
 
 #: activities/explore_monuments/resource/board/board2.qml:144
 msgctxt "board2|"
@@ -8275,7 +8275,7 @@ msgstr "Verilen piramidin bulunduğu yere tıkla."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Yasak Şehir"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8290,12 +8290,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Pekin, Çin’in kalbinde yer alan Yasak Şehir, Ming hanedanlığından (1368–"
+"1644) Çing hanedanlığının (1644–1912) sonuna kadar yaklaşık 500 yıl boyunca "
+"Çin imparatorlarının evi ve ulusun siyasi merkezi olarak hizmet vermiş "
+"muhteşem bir imparatorluk sarayı kompleksidir. 1406 ve 1420 yılları arasında "
+"yapılan bu geniş mimari şaheser, 180 dönümlük bir alana yayılmakta ve "
+"geleneksel Çin saray tasarımını sergileyen 8.700 odalı 980’den fazla "
+"korunmuş bina içermektedir. Bir hendek ve devasa bir duvarla çevrili olan "
+"Yasak Şehir, bir zamanlar halkın erişimine kapalıydı ve imparatorluğun "
+"gücünü ve ayrıcalığını simgeliyordu."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Büyük Lışan Budası"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8310,15 +8319,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Çin’in Siçuan Eyaletinde bulunan Büyük Lışan Budası, Min, Dadu ve Çingyi "
+"ırmaklarının birleştiği yerde bir uçurumun içine oyulmuş devasa bir "
+"heykeldir. 71 metre (233 ayak) uzunluğuyla dünyanın en uzun çağdaş dönem "
+"öncesi heykelidir ve UNESCO Dünya Mirası Listesi’nde yer almaktadır. Tang "
+"Hanedanlığı (MS 713–803) döneminde yapılan heykel, geleceğin Buda’sı "
+"Maitreya’yı temsil etmektedir ve yerel tekne trafiğini tehdit eden "
+"çalkantılı suları sakinleştirmek için yapılmıştır. Ustaca tasarlanmış olan "
+"heykel, erozyonu önlemek için gizli bir drenaj sistemi içermektedir. "
+"Heykelin dingin ifadesi ve karmaşık işçiliği onu ruhani ve sanatsal "
+"başarının sembolü haline getirmektedir."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Mysore Sarayı"
+msgstr "Potala Sarayı"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8333,12 +8349,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Tibet’in Lasa kentindeki Kızıl Tepe üzerinde yer alan Potala Sarayı, Tibet "
+"kültürünün simgesel bir sembolüdür ve UNESCO Dünya Mirası Listesi’nde yer "
+"almaktadır. Aslen 7. yüzyılda yapılan ve 17. yüzyılda genişletilen saray, "
+"Dalai Lamaların kışlık ikametgâhı ve Tibet yönetiminin merkezi olarak hizmet "
+"vermiştir. 13 kat yükselen ve 1.000’den fazla odası bulunan saray, karmaşık "
+"Tibet mimarisini, canlı duvar resimlerini ve kutsal emanetleri bir araya "
+"getirmektedir. İdari alanları barındıran Beyaz Saray ile dini çalışmalara ve "
+"ibadetlere adanmış Kırmızı Saray olarak ikiye ayrılmıştır. Potala Sarayı, "
+"Tibet’in ruhani ve tarihi mirasının bir kanıtı olarak ayaktadır."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Toprak Askerler"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8350,12 +8375,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Toprak Askerler, Çin’in ilk imparatoru Çin Şi Huang’a öbür dünyada eşlik "
+"etmek üzere onunla birlikte gömülen binlerce gerçek boyutlu kil asker, at ve "
+"savaş arabasından oluşan bir koleksiyondur. 1974 yılında Şi’an yakınlarında "
+"keşfedilen figürler yaklaşık M.Ö. 210 yılına tarihlenmektedir ve her bir "
+"savaşçının antik bir Çin ordusunun çeşitli rütbelerini ve rollerini temsil "
+"edecek şekilde benzersiz bir şekilde işlendiği inanılmaz ayrıntılarıyla "
+"ünlüdür."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Güneş ve Ay Pagodaları"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8370,15 +8402,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Çin’in Guilin kentinde bulunan Güneş ve Ay Pagodaları, kentin kültürel ve "
+"ruhani mirasını simgeleyen ikiz kulelerdir. Aslen Tang Hanedanlığı döneminde "
+"inşa edilen bu yapılar, 20. yüzyılda Şanhu Gölü üzerinde çarpıcı birer simge "
+"olarak yeniden yapılmıştır. Güneş Pagodası 41 metre yüksekliğiyle bronz bir "
+"yapıdır ve türünün dünyadaki en yüksek örneğidir. 35 metrelik Ay Pagodası "
+"ise sırlı çinilerden inşa edilmiştir. Bu pagodalar yin ve yang uyumunu "
+"temsil etmekte ve bir su altı cam tüneli ile birbirine bağlanmaktadır. "
+"Geceleri aydınlatılan bu yapılar, geleneksel Çin mimarisini ve çağdaş "
+"yaratıcılığı sergileyen popüler cazibe merkezleridir."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eyfel Kulesi"
+msgstr "Diaolou Kuleleri"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8393,19 +8431,22 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Çin’in Guangdong Eyaleti, Kaiping kentinde bulunan Diaolou Kuleleri, 19. "
+"yüzyılın sonlarından 20. yüzyılın başlarına kadar haydutlara ve sellere "
+"karşı korunmak amacıyla yapılmış çok katlı müstahkem yapılardır. Romanesk ve "
+"Barok gibi Batı mimari tarzlarını geleneksel Çin unsurlarıyla harmanlayan bu "
+"yapılar, denizaşırı Çinli göçmenlerin zenginliğini ve etkisini "
+"yansıtmaktadır. Betonarme olarak inşa edilen bu kuleler, Çin’in kırsal "
+"kesimindeki kültürel ve ekonomik geçiş dönemini simgelemektedir. 2007’de "
+"UNESCO Dünya Mirası Listesi’ne alınan özgün 3.000 kuleden geriye kalan "
+"yaklaşık 1.800 tanesi, bu eşsiz mimari mirasa ışık tutmaktadır."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Hindistan Anıtları"
+msgstr "Çin’in Anıtları"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Verilen anıtın bulunduğu yere tıkla."
@@ -8414,7 +8455,7 @@ msgstr "Verilen anıtın bulunduğu yere tıkla."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8431,12 +8472,24 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"İtalya’nın Roma kentindeki Panteon, MS 126 yılında İmparator Hadrianus "
+"döneminde, Marcus Agrippa tarafından yaptırılan daha önceki yapıların yerine "
+"yapılmış simgesel bir antik tapınaktır. Mimari parlaklığıyla tanınan "
+"tapınak, doğal ışığın iç mekanı aydınlatmasına izin veren, cenneti "
+"simgeleyen merkezi bir göz deliğine sahip devasa bir kubbeli çatıya "
+"sahiptir. Başlangıçta tüm Roma tanrılarına adanmış olan yapı, daha sonra MS "
+"609 yılında Aziz Meryem ve Şehitler Bazilikası (Santa Maria ad Martyres) "
+"olarak bilinen bir Hıristiyan kilisesine dönüştürülmüştür. Dünyanın en büyük "
+"betonarme kubbesi olan kubbesi, yüzyıllar boyunca mimarlara ilham veren "
+"olağanüstü bir mühendislik ve simetri sergiler. Panteon’un uyumlu oranları "
+"ve tarihi önemi, onu klasik mimarinin zamansız bir başyapıtı haline "
+"getirmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Milano Katedrali"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8451,15 +8504,22 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Milano Katedrali olarak da bilinen Duomo di Milano, İtalya’nın Milano "
+"kentinin kalbinde yer alan ikonik bir Gotik başyapıttır. Yaklaşık altı "
+"yüzyıl boyunca inşa edilen katedral, dünyanın en büyük katedrallerinden "
+"biridir ve Milano’nun sanatsal ve kültürel mirasının bir sembolüdür. "
+"Karmaşık cephesi Gotik mimarinin ihtişamını yansıtan sayısız heykel, kule ve "
+"gargoyle ile süslenmiştir. Ziyaretçiler, güzel vitray pencereler ve karmaşık "
+"mermer detaylar içeren çarpıcı iç mekanlarını keşfedebilir veya şehrin ve "
+"Alpler’in nefes kesici manzarasını görmek için çatıya çıkabilirler. Duomo, "
+"İtalya’nın zengin tarihinin ve mimari parlaklığının bir kanıtı olarak "
+"durmaktadır."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Worms Katedrali"
+msgstr "Floransa Katedrali"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8475,15 +8535,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Resmi adıyla Cattedrale di Santa Maria del Fiore olarak bilinen Floransa "
+"Katedrali, İtalya’nın Floransa kentinde bulunan Gotik ve Rönesans "
+"mimarisinin ünlü bir başyapıtıdır. 1436 yılında tamamlanan katedral, Filippo "
+"Brunelleschi tarafından tasarlanan, bir mühendislik harikası ve şehrin "
+"sembolü olmaya devam eden kırmızı kiremitli devasa kubbesiyle ünlüdür. "
+"Katedralin 19. yüzyılda eklenen karmaşık mermer cephesi, zengin bir şekilde "
+"dekore edilmiş iç mekanını ve sanatsal hazinelerini tamamlamaktadır. "
+"Giotto’nun Campanile’si ve Aziz John Vaftizhanesi ile birlikte UNESCO Dünya "
+"Mirası Listesi’nin bir parçasını oluşturan katedral, tarihi, kültürel ve "
+"mimari önemi nedeniyle her yıl milyonlarca ziyaretçi çekmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanoi Kulesi"
+msgstr "Pisa Kulesi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8498,12 +8565,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"İtalya’nın Pisa kentinde bulunan Pisa Kulesi, dünyaca ünlü bir mimari "
+"harikadır. Şehrin katedrali için bağımsız bir çan kulesi olarak inşa edilen "
+"kule, dengesiz temel toprağının neden olduğu istenmeyen eğimiyle ünlüdür. "
+"Yapımına 1173 yılında başlanan kulenin inşası yaklaşık 200 yıl sürmüş ve bu "
+"süre zarfında eğimini dengelemek için çaba sarf edilmiştir. Yaklaşık 56 "
+"metre (183 feet) uzunluğundaki kulenin Romanesk tasarımı, karmaşık oyma "
+"sütunlar ve kemerlerle süslenmiş bir çan odası da dahil olmak üzere sekiz "
+"kata sahiptir. UNESCO Dünya Mirası Listesi’nde yer alan kule, dayanıklılık "
+"ve yaratıcılığın sembolü olmayı sürdürmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Aziz Markos Bazilikası"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8519,12 +8595,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"İtalya’nın Venedik kentinde bulunan Aziz Mark Bazilikası, Bizans mimarisinin "
+"simgesel bir başyapıtı ve kentin en ünlü simgelerinden biridir. İlk olarak "
+"828 yılında Evangelist Aziz Markos’un kutsal emanetlerini barındırmak üzere "
+"inşa edilen bazilika, 11. yüzyılda bugünkü haliyle yeniden inşa edilmiştir. "
+"Gösterişli tasarımıyla tanınan bazilika, beş kubbesi, karmaşık mozaikleri ve "
+"heykeller ve oymalarla süslenmiş süslü cephesiyle Doğu ve Batı etkilerinin "
+"bir karışımına sahiptir. Altın mozaikler ve mermer zeminlerle zengin bir "
+"şekilde dekore edilmiş olan iç mekân, Venedik Cumhuriyeti’nin zenginliğini "
+"ve gücünü gözler önüne sermektedir. Aziz Markos Meydanı’na bitişik olan "
+"yapı, Venedik’in tarihi, kültürel ve dini mirasının bir sembolü olmayı "
+"sürdürmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeii"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8540,31 +8627,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeii, günümüz İtalya’sının Napoli kenti yakınlarında bulunan ve MS 79 "
+"yılında Vezüv Yanardağı’nın patlamasıyla sulara gömüldükten sonra günümüze "
+"kadar korunmuş olan antik bir Roma kentidir. Patlama, kül, sünger taşı ve "
+"piroklastik akıntıların ölümcül bir kombinasyonunu ortaya çıkarmış, bu da "
+"şehri ve sakinlerini yutarak binaları, eserleri ve hatta insan kalıntılarını "
+"inanılmaz ayrıntılarla korumuştur. Pompeii kazıları günlük Roma yaşamı, "
+"mimarisi ve toplumu hakkında değerli bilgiler sağlamış, iyi planlanmış "
+"sokakları, evleri, hamamları ve tapınakları olan bir şehri ortaya "
+"çıkarmıştır. Günümüzde UNESCO Dünya Mirası Listesi’nde yer alan Pompeii, "
+"tarihin en önemli arkeolojik keşiflerinden biri olmayı sürdürmektedir."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Hindistan Anıtları"
+msgstr "İtalya’nın Anıtları"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Verilen anıtın bulunduğu yere tıkla."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Karışık Harf"
+msgstr "Himeji Kalesi"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8577,12 +8665,18 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo, Şogun döneminin başlangıcından kalma son derece gelişmiş savunma "
+"sistemleri ve ustalıklı koruma aygıtlarına sahip 83 binadan oluşan 17. "
+"yüzyıl başı Japon kale mimarisinin günümüze ulaşan en iyi örneğidir. Hem "
+"beyaz sıvalı toprak duvarlarla birleştirilmiş zarif görünümü hem de bina "
+"kütleleri ve çoklu çatı katmanları arasındaki ilişkilerin inceliği ile "
+"işlevi estetik çekicilikle birleştiren ahşap bir yapı şaheseridir."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Hiroşima Barış Anıtı Parkı"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8598,12 +8692,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Hiroşima Barış Anıtı Parkı, barışın bir sembolü ve savaşın yıkıcı "
+"sonuçlarının bir hatırlatıcısıdır. Japonya’nın Hiroşima kentinde yer alan "
+"park, 6 Ağustos 1945’teki atom bombası saldırısının kurbanlarını anmaktadır. "
+"Parkta, bir zamanlar hükümet binası olan ve şu anda UNESCO Dünya Mirası "
+"Listesi’nde yer alan simgesel Atom Bombası Kubbesi de içerilmek üzere "
+"çeşitli anıtlar bulunmaktadır. Park aynı zamanda ziyaretçileri bombalamayı "
+"çevreleyen olaylar hakkında eğiten ve barış, şiddetsizlik ve nükleer "
+"silahsızlanmanın önemi mesajını veren Hiroşima Barış Anıtı Müzesi’ne de ev "
+"sahipliği yapmaktadır. Kaybedilen hayatları onurlandıran ve küresel barışı "
+"savunan ciddi bir düşünme alanı olarak hizmet vermektedir."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Arakura Fuji Sengen Tapınağı"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8619,12 +8723,22 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Tapınak, 705 yılında bölgenin tanrısını kutsamak için kurulmuştur. Fuji "
+"Dağı’nın 807’deki büyük patlamasının ardından imparator, patlamayı durdurmak "
+"için bir ritüel gerçekleştirmek üzere bu tapınağa bir imparatorluk elçisi "
+"göndermiştir. Savaşan Devletler Dönemi’nde, ünlü bir savaş lordu olan Takeda "
+"Şingen’in babası Takeda Nobutora’nın Hojo Ailesi ile savaşırken burada kamp "
+"kurduğu, zafer için dua ettiği ve savaşı kazandığı söylenir. Daha sonra "
+"kılıcını bu tapınağa adamıştır. Bugün, yerel halk ve uzaklardan gelenler "
+"kötülüklerden korunmak, aile mutluluğu ve güvenli doğum için dua etmek üzere "
+"tapınağı ziyaret etmektedir. İlkbaharda kiraz ağaçları çiçek açar ve Fuji "
+"Dağı’nın muhteşem manzarasının tadını çıkarmak için kalabalıklar toplanır."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Okinava Şuri Kalesi"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8640,19 +8754,24 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Naha, Okinava, Japonya’da bulunan Şuri Kalesi, UNESCO Dünya Mirası "
+"Listesi’nde yer almaktadır ve Ryukyu Krallığı’nın zengin kültürel tarihinin "
+"bir sembolüdür. Aslen 14. yüzyılda inşa edilen kale, yüzyıllar boyunca "
+"krallığın siyasi, ekonomik ve kültürel merkezi olarak hizmet vermiştir. Çin "
+"ve Japon mimari tarzlarının kendine özgü birleşimiyle tanınan Şuri Kalesi, "
+"kırmızı lake yapılara, süslü dekorasyonlara ve tepeye hakim bir konuma "
+"sahiptir. Dünya Savaşı sırasında yıkılmış olmasına rağmen, titizlikle "
+"yeniden yapılmış ve önemli bir turistik cazibe merkezi haline gelmiştir. "
+"Trajik bir şekilde, kalenin büyük bir kısmı 2019 yılında çıkan bir yangında "
+"kayboldu, ancak Okinava’nın mirası için kalıcı önemini yansıtan kaleyi "
+"restore etme çabaları sürüyor."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Fransa’nın Anıtları"
+msgstr "Japonya’nın Anıtları"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Verilen anıtın bulunduğu yere tıkla."
@@ -27496,7 +27615,7 @@ msgid ""
 "please visit <a href='https://gcompris.net/donate-en.html'>https://gcompris."
 "net/donate-en.html</a>."
 msgstr ""
-"<b>GCompris</b>’in geliştirilmesi için mali destek sağlayabilirsiniz, lütfen "
+"<b>GCompris</b>’in geliştirilmesi için mâli destek sağlayabilirsiniz, lütfen "
 "<a href='https://gcompris.net/donate-tr.html'>https://gcompris.net/donate-tr."
 "html adresini ziyaret edin</a>."
 

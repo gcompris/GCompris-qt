@@ -1,9 +1,9 @@
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 # Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2016, 2017.
-# SPDX-FileCopyrightText: 2022, 2023, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-21 16:32+0400\n"
+"PO-Revision-Date: 2025-02-09 10:43+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -5738,12 +5738,9 @@ msgstr "كهرباء رقمية"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "أنشِئ دارتك المنطقية الرقمية وجرّبها بالمحاكاة"
+msgstr "أنشِئ دارتك المنطقية الرقمية وجرّبها بالمحاكاة."
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20

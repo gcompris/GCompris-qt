@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: gcompris\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2014-12-25 01:10+0000\n"
-"PO-Revision-Date: 2025-02-07 09:40+0100\n"
+"PO-Revision-Date: 2025-02-09 15:23+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -7762,7 +7762,7 @@ msgid ""
 "symbolizing high rank, which was intended to honor and shelter the relics."
 msgstr ""
 "La Gran estupa de Sanchi és l'estructura de pedra més antiga de l'Índia i va "
-"ser originalment encarregada per l'emperador Ashoka el Gran, al segle tercer "
+"ser originalment encarregada per l'emperador Ashoka el Gran, el segle tercer "
 "abans de Crist. El seu nucli era una estructura senzilla de maó hemisfèrica "
 "construïda sobre les relíquies de Buda. Va ser coronada pel chatra, una "
 "estructura en forma de para-sol, simbolitzant alt rang, que estava destinada "
@@ -7788,12 +7788,12 @@ msgid ""
 "Heritage Site."
 msgstr ""
 "Les coves d'Ajanta compten amb aproximadament 29 monuments budistes fets en "
-"roca tallada que daten del segle II aC a uns 480 CE en el districte "
+"roca tallada que daten des del segle II aC a uns 480 dC en el districte "
 "d'Aurangabad, a l'estat de Maharashtra, a l'Índia. Les coves inclouen "
 "pintures i escultures tallades en roca descrites entre els millors exemples "
 "supervivents de l'art antic de l'Índia, especialment aquells que expressen "
 "la seua emoció a través del gest, la postura i la forma. Des de 1983, les "
-"coves han sigut declarades Patrimoni de la Humanitat per la UNESCO."
+"coves s'han declarat patrimoni de la humanitat per la UNESCO."
 
 # Nota: <https://ca.wikipedia.org/wiki/Temple_del_Sol_de_Konark>
 #: activities/explore_monuments/resource/board/board2.qml:73
@@ -8701,7 +8701,7 @@ msgstr "Fes clic en el lloc on es troba la piràmide indicada."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Ciutat Prohibida"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8716,12 +8716,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"La Ciutat Prohibida, situada al cor de Pequín, Xina, és un magnífic complex "
+"de palaus imperials que va servir com a llar dels emperadors xinesos i el "
+"centre polític de la nació durant quasi 500 anys, des de la dinastia Ming "
+"(1368-1644) fins al final de la dinastia Qing (1644–1912). Construïda entre "
+"1406 i 1420, esta obra mestra arquitectònica abasta 180 acres i compta amb "
+"més de 980 edificis conservats amb 8.700 habitacions, mostrant el disseny "
+"tradicional de palau xinés. Envoltada d'un fossat i un mur enorme, la Ciutat "
+"Prohibida era inaccessible per al públic en general, simbolitzant el poder "
+"imperial i l'exclusivitat."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Gran Buda de Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8736,16 +8745,23 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"El Gran Buda de Leshan, situat a la província de Sichuan, Xina, és una "
+"estàtua colossal tallada en un penya-segat a la confluència dels rius Min, "
+"Dadu i Qingyi. Amb 71 metres d'altura, és l'estàtua premoderna més alta del "
+"món i patrimoni de la humanitat per la UNESCO. Construïda durant la dinastia "
+"Tang (713–803 dC), l'estàtua representa Maitreya, el Buda del futur, i va "
+"ser creada per a calmar les aigües turbulentes que amenacen el trànsit de "
+"vaixells locals. Dissenyada enginyosament, l'estàtua inclou un sistema de "
+"drenatge ocult per a evitar l'erosió. La seua expressió serena i la seua "
+"artesania intricada el convertixen en un símbol d'assoliment espiritual i "
+"artístic."
 
-# Nota: <https://ca.wikipedia.org/wiki/Mysore_%28ciutat%29>
+# Nota: <https://ca.wikipedia.org/wiki/Palau_de_Potala>
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palau de Mysore"
+msgstr "Palau de Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8760,12 +8776,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"El Palau de Potala, situat al turó roig de Lhasa, Tibet, és un símbol icònic "
+"de la cultura tibetana i un lloc declarat patrimoni de la humanitat per la "
+"UNESCO. Originalment construït al segle VII i ampliat al segle XVII, va "
+"servir com a residència d'hivern dels Dalai Lames i el centre de la "
+"governança tibetana. Amb 13 pisos d'alçària i més de 1.000 habitacions, el "
+"palau combina una arquitectura tibetana intricada, murals vibrants i "
+"relíquies sagrades. Es dividix en el Palau Blanc, les àrees administratives "
+"de l'habitatge, i el Palau Roig, dedicat als estudis religiosos i l'oració. "
+"El Palau de Potala és un testimoni del llegat espiritual i històric del "
+"Tibet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Exèrcit de guerrers de terracota"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8777,12 +8803,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"L'Exèrcit de guerrers de terracota és una col·lecció de milers de soldats "
+"d'argila de mida natural, cavalls i carros enterrats amb el primer emperador "
+"de la Xina, Qin Shi Huang, per acompanyar-lo en el més enllà. Descobertes el "
+"1974 prop de Xi'an, les figures es remunten aproximadament al 210 aC i són "
+"famoses pels seus detalls increïbles, amb cada guerrer dissenyat de manera "
+"única per a representar els rangs i rols diversos d'un exèrcit xinés antic."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodes del Sol i la Lluna"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8797,16 +8829,23 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Les pagodes del Sol i la Lluna, situades a Guilin, Xina, són torres bessones "
+"icòniques que simbolitzen el patrimoni cultural i espiritual de la ciutat. "
+"Construïdes originalment durant la dinastia Tang, van ser reconstruïdes al "
+"segle XX com a llocs emblemàtics del llac Shanhu. La pagoda del Sol, de 41 "
+"metres d'alçària, és una estructura de bronze, la més alta del seu tipus al "
+"món, mentre que la pagoda de la Lluna, de 35 metres, està construïda amb "
+"rajoles vidriades. Estes pagodes representen l'harmonia del yin i el yang i "
+"estan connectades per un túnel de vidre submarí. Il·luminades a la nit, són "
+"atraccions populars que mostren l'arquitectura tradicional xinesa i l'enginy "
+"modern."
 
-# Nota: <https://ca.wikipedia.org/wiki/Torre_Eiffel>
+# Nota: <https://ca.wikipedia.org/wiki/Diaolou>
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torre Eiffel"
+msgstr "Torres de Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8821,19 +8860,23 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Les Torres de Diaolou, que es troben a Kaiping, província de Guangdong, "
+"Xina, són estructures fortificades de diversos pisos construïdes des de "
+"finals del segle XIX fins a principis del XX per a protegir-se contra els "
+"bandits i les inundacions. Barrejant estils arquitectònics occidentals com "
+"el romànic i el barroc amb elements xinesos tradicionals, reflectixen la "
+"riquesa i la influència dels emigrants xinesos a l'estranger. Construïdes "
+"amb formigó armat, estes torres simbolitzen un període de transició cultural "
+"i econòmica a la Xina rural. Designades com patrimoni de la humanitat per la "
+"UNESCO el 2007, es conserven al voltant de 1.800 de les 3.000 torres "
+"originals, que oferixen una visió d'este patrimoni arquitectònic únic."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monuments de l'Índia"
+msgstr "Monuments de la Xina"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Fes clic en el lloc on es troba el monument indicat."
@@ -8842,7 +8885,7 @@ msgstr "Fes clic en el lloc on es troba el monument indicat."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteó"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8859,12 +8902,23 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"El Panteó a Roma, Itàlia, és un temple antic icònic construït al voltant de "
+"l'any 126 dC durant el regnat de l'emperador Adrià, en el lloc d'estructures "
+"anteriors encarregades per Marc Agripa. Reconegut per la seua brillantor "
+"arquitectònica, presenta un sostre enorme de cúpula amb un òcul central, "
+"simbolitzant el cel, i açò permet que la llum natural il·lumine l'interior. "
+"Dedicat originalment a tots els déus romans, es va convertir en una església "
+"cristiana, coneguda com la Basílica de Santa Maria i els Màrtirs (Santa "
+"Maria ad Martyres), el 609 dC. La seua cúpula, la més gran del món, mostra "
+"una enginyeria i simetria notables, inspirant els arquitectes durant segles. "
+"Les proporcions harmonioses i el significat històric del Panteó el "
+"convertixen en una obra mestra atemporal de l'arquitectura clàssica."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Duomo de Milà"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8879,16 +8933,23 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"El Duomo de Milà, també conegut com la catedral de Milà, és una obra mestra "
+"icònica del gòtic situada al cor de Milà, Itàlia. Construïda al llarg de "
+"quasi sis segles, és una de les catedrals més grans del món i un símbol del "
+"patrimoni artístic i cultural de Milà. La seua façana intricada està "
+"adornada amb innombrables estàtues, agulles i gàrgoles, reflectint la "
+"grandesa de l'arquitectura gòtica. Els visitants poden explorar els seus "
+"interiors impressionants, amb vitralls bells i detalls intricats de marbre, "
+"o ascendir al terrat a on hi ha vistes impressionants de la ciutat i els "
+"Alps. El Duomo és un testimoni de la rica història i brillantor "
+"arquitectònica d'Itàlia."
 
-# Nota: <https://en.wikipedia.org/wiki/Worms_Cathedral>
+# Nota: <https://ca.wikipedia.org/wiki/Santa_Maria_del_Fiore>
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Worms"
+msgstr "Catedral de Florència"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8904,15 +8965,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"La Catedral de Florència, coneguda oficialment com la Cattedrale di Santa "
+"Maria del Fiore, és una obra mestra de l'arquitectura gòtica i renaixentista "
+"situada a Florència, Itàlia. Acabada el 1436, és famosa per la seua gran "
+"cúpula de teules rojes dissenyada per Filippo Brunelleschi, que seguix sent "
+"una meravella de l'enginyeria i un símbol de la ciutat. La façana intricada "
+"de marbre de la catedral, afegida al segle XIX, complementa els seus "
+"interiors decorats amb riquesa i els tresors artístics. Juntament amb el "
+"Campanile de Giotto i el Baptisteri de Sant Joan, forma part del patrimoni "
+"de la humanitat de la UNESCO, que atrau milions de visitants anualment pel "
+"seu significat històric, cultural i arquitectònic."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "La torre de Hanoi"
+msgstr "Torre de Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8927,12 +8995,22 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"La Torre inclinada de Pisa, situada a la ciutat italiana de Pisa, és una "
+"meravella arquitectònica de renom mundial. Construïda com el campanar "
+"independent de la catedral de la ciutat, és famós per la seua inclinació no "
+"desitjada, causada per sòls de fonament inestable. Iniciada el 1173, la "
+"construcció de la torre va durar quasi 200 anys, durant els quals es van fer "
+"esforços per a estabilitzar la seua inclinació. S'eleva uns 56 metres (183 "
+"peus), el disseny romànic de la torre presenta huit pisos, incloent-hi una "
+"cambra de campana, adornada amb columnes i arcs tallats intricadament. "
+"Reconeguda com a patrimoni de la humanitat per la UNESCO, continua sent un "
+"símbol de resiliència i enginy."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Basílica de Sant Marc"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8948,12 +9026,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"La Basílica de Sant Marc, situada a Venècia, Itàlia, és una obra mestra "
+"icònica de l'arquitectura bizantina i un dels llocs més emblemàtics de la "
+"ciutat. Construïda originalment el 828 per a allotjar les relíquies de Sant "
+"Marc Evangelista, va ser reconstruïda en la seua forma actual al segle XI. "
+"Coneguda pel seu disseny opulent, la basílica presenta una barreja "
+"d'influències orientals i occidentals, evidents en les seues cinc cúpules, "
+"mosaics intricats i façana ornamentada adornada amb estàtues i talles. "
+"L'interior està decorat ricament amb mosaics d'or i terres de marbre, "
+"mostrant la riquesa i el poder de la República Veneciana. Adjacent a la "
+"plaça de Sant Marc, seguix sent un símbol del patrimoni històric, cultural i "
+"religiós de Venècia."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeia"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8969,31 +9058,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeia era una antiga ciutat romana situada prop de l'actual Nàpols, "
+"Itàlia, famosament conservada després de ser enterrada per l'erupció del "
+"Vesuvi el 79 dC. L'erupció va desencadenar una combinació mortal de cendres, "
+"pedra tosca i fluxos piroclàstics, que van envoltar la ciutat i els seus "
+"habitants, mantenint edificis, artefactes i fins i tot restes humanes amb un "
+"detall increïble. Les excavacions de Pompeia han proporcionat informació "
+"valuosa sobre la vida romana diària, l'arquitectura i la societat, revelant "
+"una ciutat amb carrers ben planificats, cases, banys públics i temples. El "
+"lloc és ara patrimoni de la humanitat per la UNESCO i continua sent un dels "
+"descobriments arqueològics més importants de la història."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monuments de l'Índia"
+msgstr "Monuments d'Itàlia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Fes clic en el lloc on es troba el monument indicat."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Combinat"
+msgstr "Castell de Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -9006,12 +9096,20 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo és el millor exemple supervivent de l'arquitectura japonesa de "
+"castells de principis del segle XVII, que comprén 83 edificis amb sistemes "
+"de defensa i dispositius de protecció enginyosos que daten del començament "
+"del període Shogun. Es tracta d'una obra mestra de la construcció en fusta, "
+"combinant la funció amb l'atractiu estètic, tant en la seua aparença elegant "
+"unificada per les parets de terra arrebossades blanques com en la subtilesa "
+"de les relacions entre les masses edificables i les capes múltiples de "
+"sostres."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Parc Commemoratiu de la Pau d'Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -9027,12 +9125,23 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"El Parc Commemoratiu de la Pau d'Hiroshima és un símbol de pau i un "
+"recordatori de les devastadores conseqüències de la guerra. Situat a "
+"Hiroshima, Japó, el parc commemora les víctimes del bombardeig atòmic el 6 "
+"d'agost de 1945. El parc compta amb diversos monuments, incloent-hi la "
+"icònica cúpula de la bomba atòmica, que va ser un edifici governamental i "
+"ara és patrimoni de la humanitat per la UNESCO. El parc també alberga el "
+"Museu Memorial de la Pau d'Hiroshima, que educa els visitants sobre els "
+"esdeveniments que envolten el bombardeig i promou un missatge de pau, no-"
+"violència i la importància del desarmament nuclear. Servix com un espai "
+"solemne de reflexió, honorant les vides perdudes i advocant per la pau "
+"global."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Temple de Fuji Sengen d'Arakura"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -9048,12 +9157,23 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"El santuari va ser fundat el 705 per a consagrar la deïtat del lloc. Després "
+"de la gran erupció del Fuji el 807, l'emperador va enviar un enviat imperial "
+"a este santuari per a realitzar un ritual per a parar l'erupció. Es diu que "
+"durant el període dels Estats Combatents, quan Takeda Nobutora, el pare del "
+"famós senyor de la guerra Takeda Shingen, va lluitar amb la família Hojo, va "
+"establir un campament ací, va pregar per la victòria i va guanyar la "
+"batalla. Després va dedicar la seua espasa a este santuari. Hui, els "
+"habitants locals i els de lluny visiten el santuari per a allunyar-se del "
+"mal, per a pregar per la felicitat familiar i el part segur. A la primavera, "
+"els arbres de flor de cirerer floreixen i les multituds es reunixen per a "
+"gaudir de la vista impressionant del mont Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Castell Shuri d'Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -9069,19 +9189,25 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"El castell de Shuri, situat a Naha, Okinawa, Japó, és patrimoni de la "
+"humanitat de la UNESCO i un símbol de la rica història cultural del Regne de "
+"Ryūkyū. Construït originalment al segle XIV, el castell va servir com a "
+"centre polític, econòmic i cultural del regne durant segles. Reconegut per "
+"la seua fusió distintiva d'estils arquitectònics xinesos i japonesos, el "
+"castell de Shuri compta amb estructures lacades de vermelló, decoracions "
+"ornamentades i una posició dominant al cim d'un turó. Tot i que va ser "
+"destruït durant la Segona Guerra Mundial, va ser reconstruït meticulosament "
+"i es va convertir en una atracció turística clau. Tràgicament, gran part del "
+"castell es va perdre en un incendi el 2019, però els esforços per a "
+"restaurar-lo estan en curs, reflectint la seua importància duradora per al "
+"patrimoni d'Okinawa."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monuments de França"
+msgstr "Monuments del Japó"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Fes clic en el lloc on es troba el monument indicat."

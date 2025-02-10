@@ -8313,8 +8313,6 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
 #, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
 msgstr "Palasset i Mysore"
@@ -8373,8 +8371,6 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
 #, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
 msgstr "Eiffeltårnet"
@@ -8395,16 +8391,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
 #, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
 msgstr "Byggverk i India"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
 #, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Trykk på staden der byggverket ligg."
@@ -8454,8 +8446,6 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
 #, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
 msgstr "Wormser Dom"
@@ -8478,8 +8468,6 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
 #, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
 msgstr "Tårnet i Hanoi"
@@ -8542,16 +8530,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
 #, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
 msgstr "Byggverk i India"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
 #, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Trykk på staden der byggverket ligg."
@@ -8559,8 +8543,6 @@ msgstr "Trykk på staden der byggverket ligg."
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
 #, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
 msgstr "Både store og små bokstavar"
@@ -8642,16 +8624,12 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
 #, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
 msgstr "Byggverk i Frankrike"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
 #, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Trykk på staden der byggverket ligg."

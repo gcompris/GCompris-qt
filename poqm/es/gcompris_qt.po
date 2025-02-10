@@ -1,12 +1,11 @@
 # SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Eloy Cuadra <ecuadra@eloihr.net>
 # SPDX-FileCopyrightText: 2015 Zohra Coudoin <zohra.coudoin@gcompris.net>
 # SPDX-FileCopyrightText: 2018 Antoni Bella Pérez <antonibella5@yahoo.com>
-# SPDX-FileCopyrightText: 2024 Eloy Cuadra <ecuadra@eloihr.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: gcompris_qt\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"PO-Revision-Date: 2025-02-08 00:04+0100\n"
+"PO-Revision-Date: 2025-02-10 00:26+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -16,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: es\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Qt-Contexts: true\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
@@ -8449,7 +8448,7 @@ msgstr "Pulsa en la ubicación de la pirámide indicada."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Ciudad Prohibida"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8464,12 +8463,22 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"La Ciudad Prohibida, situada en el corazón de Pekín (China), es un magnífico "
+"complejo de palacios imperiales que sirvió como residencia de los "
+"emperadores chinos y centro político de la nación durante casi 500 años, "
+"desde la dinastía Ming (1368–1644) hasta el final de la dinastía Qing (1644–"
+"1912). Construida entre 1406 y 1420, esta enorme obra maestra arquitectónica "
+"se extiende por 72 hectáreas y cuenta con más de 980 edificios conservados "
+"con 8.700 habitaciones, que muestran el diseño palaciego chino tradicional. "
+"Rodeada por un foso y una enorme muralla, la Ciudad Prohibida fue "
+"inaccesible para el público en general durante mucho tiempo, como símbolo de "
+"poder y exclusividad imperial."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Gran Buda de Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8484,15 +8493,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"El Gran Buda de Leshan, situado en la provincia de Sichuan (China), es una "
+"colosal estatua tallada en un acantilado en la confluencia de los ríos Min, "
+"Dadu y Qingyi. Con 71 metros (233 pies) de altura, es la estatua premoderna "
+"más alta del mundo y ha sido declarada Patrimonio de la Humanidad por la "
+"UNESCO. Construida durante la dinastía Tang (713–803 d. C.), la estatua "
+"representa a Maitreya, el Buda del futuro, y fue creada para calmar las "
+"aguas turbulentas que amenazaban el tráfico marítimo local. La estatua, de "
+"ingenioso diseño, incluye un sistema de drenaje oculto para evitar la "
+"erosión. Su expresión serena y su intrincada artesanía la convierten en un "
+"símbolo de logro espiritual y artístico."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palacio Real de Mysore"
+msgstr "Palacio de Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8507,12 +8523,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"El palacio de Potala, situado en la Colina Roja de Lhasa (Tíbet), es un "
+"símbolo icónico de la cultura tibetana y Patrimonio de la Humanidad de la "
+"UNESCO. Construido originalmente en el siglo VII y ampliado en el siglo "
+"XVII, sirvió como residencia de invierno de los dalái lama y como centro del "
+"gobierno tibetano. Con 13 pisos de altura y más de 1.000 habitaciones, el "
+"palacio combina una intrincada arquitectura tibetana, vibrantes murales y "
+"reliquias sagradas. Se divide en el Palacio Blanco, que alberga las áreas "
+"administrativas, y el Palacio Rojo, dedicado a los estudios religiosos y la "
+"oración. El palacio de Potala es un testimonio del legado espiritual e "
+"histórico del Tíbet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Guerreros de terracota"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8524,12 +8550,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Los Guerreros de terracota son una colección de miles de soldados, caballos "
+"y carros de arcilla de tamaño natural enterrados con el primer emperador de "
+"China, Qin Shi Huang, para acompañarlo en el más allá. Descubiertas en 1974 "
+"cerca de Xi'an, las figuras datan de aproximadamente el año 210 a. C. y son "
+"famosas por su increíble nivel de detalle, ya que cada guerrero está "
+"diseñado de manera única para representar los diversos rangos y roles de un "
+"antiguo ejército chino."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodas del Sol y de la Luna"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8544,15 +8577,22 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Las pagodas del Sol y de la Luna, situadas en Guilin (China), son unas "
+"icónicas torres gemelas que simbolizan el patrimonio cultural y espiritual "
+"de la ciudad. Construidas originalmente durante la dinastía Tang, fueron "
+"reconstruidas en el siglo XX como impresionantes monumentos en el lago "
+"Shanhu. La pagoda del Sol, de 41 metros de altura, es una estructura de "
+"bronce (la más alta de su tipo en el mundo), mientras que la pagoda de la "
+"Luna, de 35 metros, está construida con azulejos vidriados. Estas pagodas "
+"representan la armonía del yin y del yang y están conectadas por un túnel "
+"submarino de cristal. Iluminadas por la noche, son atracciones populares que "
+"muestran la arquitectura tradicional china y el ingenio moderno."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torre Eiffel"
+msgstr "Torres diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8567,19 +8607,24 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Las torres diaolou, que se encuentran en Kaiping, provincia de Guangdong "
+"(China), son estructuras fortificadas de varios pisos construidas entre "
+"finales del siglo XIX y principios del XX para protegerse de los bandidos y "
+"las inundaciones. Combinando estilos arquitectónicos occidentales como el "
+"románico y el barroco con elementos chinos tradicionales, reflejan la "
+"riqueza y la influencia de los emigrantes chinos en el extranjero. "
+"Construidas con hormigón armado, estas torres simbolizan un período de "
+"transición cultural y económica en la China rural. Designadas Patrimonio de "
+"la Humanidad por la UNESCO en 2007, quedan alrededor de 1.800 de las 3.000 "
+"torres originales, lo que ofrece una perspectiva de este patrimonio "
+"arquitectónico único."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumentos de la India"
+msgstr "Monumentos de China"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Pulsa en la ubicación del monumento indicado."
@@ -8588,7 +8633,7 @@ msgstr "Pulsa en la ubicación del monumento indicado."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "El Panteón"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8610,9 +8655,10 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Catedral de Milán"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
+#, fuzzy
 msgctxt "board8|"
 msgid ""
 "The Duomo di Milano, also known as the Milan Cathedral, is an iconic Gothic "
@@ -8624,16 +8670,13 @@ msgid ""
 "beautiful stained glass windows and intricate marble details, or ascend to "
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
-msgstr ""
+msgstr "La catedral de Milan, también conocida como Duomo de Milán,"
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Worms"
+msgstr "Catedral de Florencia"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8652,12 +8695,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Torre de Hanói"
+msgstr "Torre inclinada de Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8677,7 +8717,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Basílica de San Marcos"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8698,7 +8738,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeya"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8716,17 +8756,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumentos de la India"
+msgstr "Monumentos de Italia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Pulsa en la ubicación del monumento indicado."
@@ -8816,17 +8850,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumentos de Francia"
+msgstr "Monumentos de Japón"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Pulsa en la ubicación del monumento indicado."
@@ -15656,7 +15684,7 @@ msgid ""
 "corresponding voice is available, you will hear the word to find when three "
 "attempts are remaining."
 msgstr ""
-"Si está activada la opción «Decir las palabras a encontrar» y la voz "
+"Si está activada la opción «Decir las palabras a encontrar...» y la voz "
 "correspondiente está disponible, oirás la palabra a encontrar cuando te "
 "queden tres intentos."
 

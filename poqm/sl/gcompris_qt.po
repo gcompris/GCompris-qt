@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2025-02-07 07:14+0100\n"
+"PO-Revision-Date: 2025-02-09 08:44+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -8282,7 +8282,7 @@ msgstr "Kliknite na mesto, kjer se nahaja dana piramida."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Prepovedano mesto"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8297,12 +8297,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Prepovedano mesto, ki se nahaja v osrčju Pekinga na Kitajskem, je veličasten "
+"kompleks cesarskih palač, ki je služil kot dom kitajskih cesarjev in "
+"politično središče naroda skoraj 500 let, od dinastije Ming (1368–1644) do "
+"konca dinastije Qing (1644–1912). Ta obsežna arhitekturna mojstrovina, "
+"zgrajena med letoma 1406 in 1420, se razteza na 180 hektarjih in ima več kot "
+"980 ohranjenih zgradb z 8700 sobami, ki prikazujejo tradicionalno kitajsko "
+"zasnovo palač. Prepovedano mesto, obdano z jarkom in masivnim obzidjem, je "
+"bilo nekoč nedostopno širši javnosti in je simboliziralo imperialno moč in "
+"ekskluzivnost."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Velikanski Buda iz Leshana"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8317,15 +8326,21 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Velikanski Buda iz Leshana, ki se nahaja v provinci Sichuan na Kitajskem, je "
+"ogromen kip, vklesan v pečino na sotočju rek Min, Dadu in Qingyi. Z višino "
+"71 metrov (233 čevljev) je najvišji predmoderni kip na svetu in uvrščen na "
+"Unescov seznam svetovne dediščine. Kip, ki je bil zgrajen med dinastijo Tang "
+"(713–803 n. š.), predstavlja Maitrejo, Budo prihodnosti, in je bil ustvarjen "
+"za umirjanje nemirnih voda, ki ogrožajo lokalni ladijski promet. Genialno "
+"zasnovan kip vključuje skriti drenažni sistem za preprečevanje erozije. "
+"Zaradi njegovega spokojnega izraza in zapletene izdelave je simbol duhovnega "
+"in umetniškega dosežka."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palača Misore"
+msgstr "Palača Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8340,12 +8355,20 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Palača Potala, ki leži na Rdečem hribu v Lhasi v Tibetu, je ikonični simbol "
+"tibetanske kulture in Unescov seznam svetovne dediščine. Prvotno zgrajen v "
+"7. stoletju in razširjen v 17. stoletju je služil kot zimska rezidenca "
+"dalajlam in središče tibetanskega upravljanja. Palača, ki se dviga 13 "
+"nadstropij z več kot 1000 sobami, združuje zapleteno tibetansko arhitekturo, "
+"živahne stenske poslikave in svete relikvije. Razdeljen je na Belo palačo, v "
+"kateri so upravni prostori, in Rdečo palačo, namenjeno verskim študijem in "
+"molitvi. Palača Potala je dokaz duhovne in zgodovinske dediščine Tibeta."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Vojska iz terakote"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8357,12 +8380,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Vojska iz terakote je zbirka na tisoče glinenih vojakov, konjev in bojnih "
+"vozov v naravni velikosti, ki so pokopani s prvim kitajskim cesarjem Qin Shi "
+"Huangom, da bi ga spremljali v posmrtnem življenju. Figure, ki so bile "
+"odkrite leta 1974 v bližini Xi'ana, segajo približno v leto 210 pr. n. št. "
+"in so slavne zaradi svojih neverjetnih podrobnosti, pri čemer je vsak "
+"bojevnik edinstveno oblikovan, da predstavlja različne vrste in vloge "
+"starodavne kitajske vojske."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodi sonca in lune"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8377,15 +8407,21 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Pagodi Sonca in Lune, ki se nahajata v Guilinu na Kitajskem, sta ikonična "
+"stolpa dvojčka, ki simbolizirata kulturno in duhovno dediščino mesta. "
+"Prvotno sta bili zgrajeni v času dinastije Tang, v 20. stoletju pa so bili "
+"rekonstruirani kot osupljive znamenitosti ob jezeru Shanhu. Pagoda sonca, "
+"visoka 41 metrov, je bronasta zgradba – najvišja te vrste na svetu – medtem "
+"ko je Pagoda lune visoka 35 metrov, zgrajena iz glaziranih ploščic. Te "
+"pagode predstavljajo harmonijo jina in janga in so povezane s podvodnim "
+"steklenim tunelom. Ponoči osvetljeni sta priljubljeni atrakciji, ki "
+"prikazujejo tradicionalno kitajsko arhitekturo in sodobno iznajdljivost."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eifflov stolp"
+msgstr "Stolpi Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8400,19 +8436,22 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Stolpi Diaolou, najdeni v Kaipingu v provinci Guangdong na Kitajskem, so "
+"utrjene večnadstropne strukture, zgrajene od konca 19. do začetka 20. "
+"stoletja za zaščito pred razbojniki in poplavami. Združujejo zahodne "
+"arhitekturne sloge, kot sta romanika in barok, s tradicionalnimi kitajskimi "
+"elementi ter odražajo bogastvo in vpliv čezmorskih kitajskih izseljencev. Ti "
+"stolpi, zgrajeni iz armiranega betona, simbolizirajo obdobje kulturnega in "
+"gospodarskega prehoda na kitajskem podeželju. Leta 2007 je bil Unescov "
+"seznam svetovne dediščine, okoli 1800 od prvotnih 3000 stolpov pa je ostalo, "
+"kar ponuja vpogled v to edinstveno arhitekturno dediščino."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Indijski spomeniki"
+msgstr "Spomeniki Kitajske"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Kliknite na mesto, kjer se nahaja dan spomenik."
@@ -8421,7 +8460,7 @@ msgstr "Kliknite na mesto, kjer se nahaja dan spomenik."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Panteon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8438,12 +8477,23 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Panteon v Rimu v Italiji je ikonični starodavni tempelj, zgrajen okoli leta "
+"126 našega štetja v času vladavine cesarja Hadrijana na mestu prejšnjih "
+"zgradb, ki jih je naročil Marcus Agrippa. Slovi po svoji arhitekturni "
+"briljantnosti in ima masivno kupolasto streho z okulusom v sredini, ki "
+"simbolizira nebesa in omogoča, da naravna svetloba osvetljuje notranjost. "
+"Prvotno je bila posvečena vsem rimskim bogovom, kasneje pa je bila leta 609 "
+"pretvorjena v krščansko cerkev, znano kot bazilika sv. Marije in mučencev "
+"(Santa Maria ad Martyres). Njegova kupola, največja kupola iz nearmiranega "
+"betona na svetu, prikazuje izjemno tehniko in simetrijo, ki že stoletja "
+"navdihuje arhitekte. Panteon je zaradi skladnih razmerij in zgodovinskega "
+"pomena brezčasna mojstrovina klasične arhitekture."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Katedrala v Milanu"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8458,15 +8508,21 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Duomo di Milano, znan tudi kot milanska katedrala, je ikonična gotska "
+"mojstrovina v središču Milana v Italiji. Gradili so jo skoraj šest stoletij "
+"in je ena največjih katedral na svetu ter simbol umetniške in kulturne "
+"dediščine Milana. Njegovo zapleteno pročelje krasijo nešteti kipi, zvoniki "
+"in gargojli, ki odražajo veličino gotske arhitekture. Obiskovalci lahko "
+"raziskujejo njegovo osupljivo notranjost s čudovitimi vitraži in zapletenimi "
+"detajli iz marmorja ali pa se povzpnejo na streho za dih jemajoče razglede "
+"na mesto in Alpe. Duomo je dokaz bogate italijanske zgodovine in "
+"arhitekturnega sijaja."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedrala v Wormsu"
+msgstr "Katedrala v Firencah"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8482,15 +8538,21 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Katedrala v Firencah, uradno znana kot Cattedrale di Santa Maria del Fiore, "
+"je znana mojstrovina gotske in renesančne arhitekture v Firencah v Italiji. "
+"Dokončana leta 1436, je znana po masivni kupoli z rdečimi ploščicami, ki jo "
+"je oblikoval Filippo Brunelleschi, ki ostaja inženirski čudež in simbol "
+"mesta. Zapleteno marmornato pročelje katedrale, dodano v 19. stoletju, "
+"dopolnjuje njeno bogato okrašeno notranjost in umetniške zaklade. Skupaj z "
+"Giottovim zvonikom in krstilnico sv. Janeza je del Unescove svetovne "
+"dediščine, ki zaradi svojega zgodovinskega, kulturnega in arhitekturnega "
+"pomena vsako leto pritegne milijone obiskovalcev."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanojski stolpi"
+msgstr "Poševni stolp v Pizi"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8505,12 +8567,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Poševni stolp v Pizi, ki se nahaja v italijanskem mestu Pisa, je svetovno "
+"znano arhitekturno čudo. Zgrajen kot samostoječi zvonik za mestno katedralo, "
+"je znan po nenamernem nagibu, ki ga povzročajo nestabilna temeljna tla. "
+"Gradnja stolpa, ki se je začela leta 1173, je trajala skoraj 200 let, med "
+"katerimi so si prizadevali stabilizirati njegov naklon. Stolp, ki stoji na "
+"približno 56 metrih (183 čevljev), ima romansko zasnovo osem nadstropij, "
+"vključno s komoro za zvonjenje, okrašeno z zapleteno izrezljanimi stebri in "
+"loki. Priznan kot Unescov seznam svetovne dediščine, ostaja simbol "
+"odpornosti in iznajdljivosti."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Bazilika Sv. Marka"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8526,12 +8597,22 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Bazilika svetega Marka, ki se nahaja v Benetkah v Italiji, je ikonična "
+"mojstrovina bizantinske arhitekture in ena najbolj znanih znamenitosti "
+"mesta. Prvotno zgrajena leta 828 za hrambo relikvij sv. Marka Evangelista, "
+"je bila v sedanji obliki obnovljena v 11. stoletju. Bazilika, znana po svoji "
+"razkošni zasnovi, predstavlja mešanico vzhodnih in zahodnih vplivov, kar je "
+"razvidno iz njenih petih kupol, zapletenih mozaikov in okrašene fasade, "
+"okrašene s kipi in rezbarijami. Notranjost je bogato okrašena z zlatimi "
+"mozaiki in marmornimi tlemi, ki prikazujejo bogastvo in moč Beneške "
+"republike. Ob Trgu svetega Marka ostaja simbol zgodovinske, kulturne in "
+"verske dediščine Benetk."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeji"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8547,31 +8628,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Pompeji so bili starodavno rimsko mesto v bližini današnjega Neaplja v "
+"Italiji, slavno ohranjeno, potem ko ga je zasul izbruh Vezuva leta 79 našega "
+"štetja. Izbruh je sprožil smrtonosno kombinacijo pepela, plovca in "
+"piroklastičnih tokov, ki so zajeli mesto in njegove prebivalce ter ohranili "
+"zgradbe, artefakte in celo človeške ostanke v neverjetnih podrobnostih. "
+"Izkopavanja Pompejev so zagotovila dragocen vpogled v vsakdanje rimsko "
+"življenje, arhitekturo in družbo ter razkrila mesto z dobro načrtovanimi "
+"ulicami, domovi, javnimi kopališči in templji. Najdišče je zdaj Unescov "
+"seznam svetovne dediščine in ostaja eno najpomembnejših arheoloških odkritij "
+"v zgodovini."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Indijski spomeniki"
+msgstr "Spomeniki v Italiji"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Kliknite na mesto, kjer se nahaja dan spomenik."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Velike in male črke"
+msgstr "Grad Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8584,12 +8666,18 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Himeji-jo je najboljši ohranjeni primer japonske grajske arhitekture iz "
+"zgodnjega 17. stoletja, ki obsega 83 stavb z visoko razvitimi obrambnimi "
+"sistemi in domiselnimi zaščitnimi napravami iz začetka obdobja šogunov. Je "
+"mojstrovina gradnje v lesu, ki združuje funkcijo z estetsko privlačnostjo, "
+"tako v elegantnem videzu, ki ga poenotijo ​​belo ometani zemeljski zidovi, kot "
+"v subtilnosti odnosov med gradbenimi masami in večplastnimi strehami."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Spominski park miru v Hirošimi"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8605,12 +8693,21 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Spominski park miru v Hirošimi je simbol miru in opomnik na uničujoče "
+"posledice vojne. Park v Hirošimi na Japonskem spominja na žrtve atomskega "
+"bombardiranja 6. avgusta 1945. V parku je več spomenikov, vključno z "
+"ikonično kupolo atomske bombe, ki je bila nekoč vladna stavba, zdaj pa je na "
+"Unescovem seznamu svetovne dediščine. V parku je tudi spominski muzej miru v "
+"Hirošimi, ki obiskovalce izobražuje o dogodkih v zvezi z bombnim napadom in "
+"promovira sporočilo miru, nenasilja in pomembnosti jedrske razorožitve. "
+"Služi kot slovesen prostor za razmišljanje, spoštovanje izgubljenih življenj "
+"in zagovarjanje svetovnega miru."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Svetišče Arkura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8626,12 +8723,21 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Svetišče je bilo ustanovljeno leta 705, da bi ohranilo božanstvo mesta. Po "
+"velikem izbruhu gore Fuji leta 807 je cesar poslal cesarskega odposlanca v "
+"to svetišče, da izvede obred za zaustavitev izbruha. Rečeno je, da je med "
+"obdobjem vojskujočih držav, ko se je Takeda Nobutora, oče slavnega "
+"vojskovodje Takede Shingena, bojeval z družino Hojo, tukaj postavil tabor, "
+"molil za zmago in zmagal v bitki. Temu svetišču je nato posvetil svoj meč. "
+"Danes domačini in tisti od daleč obiskujejo svetišče, da bi odgnali zlo, "
+"molili za družinsko srečo in varen porod. Spomladi zacvetijo češnje in "
+"množice se zbirajo, da bi uživale v osupljivem razgledu na goro Fuji."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Grad Okinawa Shuri"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8647,19 +8753,23 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Grad Shuri, ki se nahaja v Nahi na Okinawi na Japonskem, je Unescov seznam "
+"svetovne dediščine in simbol bogate kulturne zgodovine kraljestva Ryukyu. "
+"Grad, ki je bil prvotno zgrajen v 14. stoletju, je stoletja služil kot "
+"politično, gospodarsko in kulturno središče kraljestva. Slovi po značilni "
+"fuziji kitajskega in japonskega arhitekturnega sloga, grad Shuri ima barvno "
+"lakirane zgradbe, okrašene okraske in veličastno lego na hribu. Čeprav je "
+"bil uničen med drugo svetovno vojno, je bil natančno rekonstruiran in je "
+"postal ključna turistična atrakcija. Žal je bil velik del gradu izgubljen v "
+"požaru leta 2019, vendar se prizadevanja za njegovo obnovo nadaljujejo, kar "
+"odraža njegov trajni pomen za dediščino Okinave."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Spomeniki Francije"
+msgstr "Spomeniki Japonske"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Kliknite na mesto, kjer se nahaja dan spomenik."
