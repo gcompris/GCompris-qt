@@ -14,6 +14,8 @@ import "qrc:/gcompris/src/server/server.js" as Server
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.2
 
+import GCompris 1.0
+
 import "../singletons"
 import "../components"
 
@@ -33,39 +35,38 @@ Popup {
     property string dataset_Content: ""
 
     anchors.centerIn: Overlay.overlay
-    width: 550
-    height: 500
+    width: parent.width
+    height: parent.height
     modal: true
     closePolicy: Popup.CloseOnEscape
 
     function openDatasetDialog(activity, selectedDataset) {
-        activityIndex = activity
+        if(activity != -1) {
+            activityIndex = activity
+        }
+        else {
+            // In case we are editing a dataset without activity selected
+            activityIndex = selectedDataset.activity_id
+        }
         if(selectedDataset === undefined) {
             addMode = true
-            datasetName.text = ""
-            datasetObjective.text = ""
-            difficultyText.text = 1
-            datasetContent.text = ""
         }
         else {
             addMode = false
-            dataset_Id = selectedDataset.dataset_id
-            datasetName.text = selectedDataset.dataset_name
-            datasetObjective.text = selectedDataset.dataset_objective
-            difficultyText.text = selectedDataset.dataset_difficulty
-            datasetContent.text = selectedDataset.dataset_content
         }
+        editorLoader.item.initialize(selectedDataset);
         open()
     }
 
     function saveDataset() {
-        if (datasetName.text === "") {
+        var data = editorLoader.item.getData();
+        if (data.name === "") {
             errorDialog.message = [ qsTr("Dataset name is empty") ]
             errorDialog.open()
             return
         }
 
-        var difficulty = Number(difficultyText.text)
+        var difficulty = data.difficulty
         if (difficulty < 1 || difficulty > 6) {
             errorDialog.message = [ qsTr("Difficulty should be between 1 and 6") ]
             errorDialog.open()
@@ -74,11 +75,11 @@ Popup {
 
         if (addMode) {
             // Add to database the user
-            dataset_Id = Master.createDataset(datasetName.text, activityIndex, datasetObjective.text, difficulty, datasetContent.text)
+            dataset_Id = Master.createDataset(data.name, activityIndex, data.objective, difficulty, data.content)
             if (dataset_Id !== -1)
                 datasetDialog.close()
         } else {
-            if (Master.updateDataset(dataset_Id, datasetName.text, datasetObjective.text, difficulty, datasetContent.text))
+            if (Master.updateDataset(dataset_Id, data.name, data.objective, difficulty, data.content))
                 datasetDialog.close();
         }
     }
@@ -86,7 +87,7 @@ Popup {
     onClosed: Master.filterDatasets(activityIndex, true)
 
     onOpened: {
-        datasetName.forceActiveFocus();
+        editorLoader.item.forceActiveFocus();
     }
 
     background: Rectangle {
@@ -95,88 +96,21 @@ Popup {
         border.color: "darkgray"
         border.width: 2
     }
+    File { id: file }
 
     ColumnLayout {
         anchors.fill: parent
         anchors.centerIn: parent
 
-        Text {
-            id: groupDialogText
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            horizontalAlignment: Text.AlignHCenter
-            text: datasetDialog.label
-            font {
-                bold: true
-                pixelSize: 20
+        Loader {
+            id: editorLoader
+            anchors.fill: parent
+            source: {
+                var activity = Master.getActivityName(activityIndex);
+                print(activity)
+                var url = `${Master.activityBaseUrl}/${activity}/DatasetEditor.qml`
+                return file.exists(url) ? url : `${Master.activityBaseUrl}/DatasetEditor.qml`
             }
-        }
-
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            text: qsTr("Dataset name")
-            font.bold: true
-            font {
-                pixelSize: 15
-            }
-        }
-
-        UnderlinedTextInput {
-            id: datasetName
-            Layout.fillWidth: true
-            Layout.preferredHeight: Style.defaultLineHeight
-            activeFocusOnTab: true
-        }
-
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            text: qsTr("Difficulty")
-            font.bold: true
-            font {
-                pixelSize: 15
-            }
-        }
-
-        UnderlinedTextInput {
-            id: difficultyText
-            Layout.fillWidth: true
-            Layout.preferredHeight: Style.defaultLineHeight
-            activeFocusOnTab: true
-        }
-
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            text: qsTr("Objective")
-            font.bold: true
-            font {
-                pixelSize: 15
-            }
-        }
-
-        UnderlinedTextInput {
-            id: datasetObjective
-            Layout.fillWidth: true
-            Layout.preferredHeight: Style.defaultLineHeight
-            activeFocusOnTab: true
-        }
-
-        Text {
-            Layout.fillWidth: true
-            Layout.preferredHeight: 40
-            text: qsTr("Content")
-            font.bold: true
-            font {
-                pixelSize: 15
-            }
-        }
-
-        TextArea {
-            id: datasetContent
-            Layout.fillWidth: true
-            Layout.preferredHeight: 80
         }
 
         OkCancelButtons {
