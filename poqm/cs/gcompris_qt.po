@@ -5825,12 +5825,9 @@ msgstr "Digitální elektřina"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
-msgstr "Vytvoř a simuluj digitální logický obvod."
+msgstr ""
 
 #. Help goal
 #: activities/digital_electricity/ActivityInfo.qml:20
@@ -8072,12 +8069,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palác Mysore"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8132,12 +8126,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eiffelova věž"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8154,20 +8145,14 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Indické památky"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
-msgstr "Klikni na umístění dané památky."
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:17
 #: activities/explore_monuments/resource/board/board8.qml:20
@@ -8213,12 +8198,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Katedrála ve Worms"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8237,12 +8219,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Hanojská věž"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8301,29 +8280,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Indické památky"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
-msgstr "Klikni na umístění dané památky."
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Velká + malá písmena"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8401,20 +8371,14 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Francouzské památky"
+msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
-msgstr "Klikni na umístění dané památky."
+msgstr ""
 
 #. Activity title
 #: activities/explore_world_animals/ActivityInfo.qml:19
@@ -27702,32 +27666,3 @@ msgstr "Přeskočit"
 msgctxt "Tutorial|"
 msgid "Start"
 msgstr "Spustit"
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the letters by connecting the dots in the correct order."
-#~ msgstr "Nakresli písmena spojením teček ve správném pořadí."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid "Draw the numbers by connecting the dots in the correct order."
-#~ msgstr "Nakresli čísla spojením teček ve správném pořadí."
-
-#~ msgctxt "ActivityInfo|"
-#~ msgid ""
-#~ "Draw the picture by clicking on the points in the numerical sequence "
-#~ "order."
-#~ msgstr "Nakreslete obrázek klikáním na body v postupném číselném pořadí."
-
-#, fuzzy
-#~| msgctxt "Data|"
-#~| msgid "Subtractions with 1, 2 and 3."
-#~ msgctxt "Data|"
-#~ msgid "Solve subtraction, 2 digits, 2 lines."
-#~ msgstr "Odčítání s 1, 2 a 3."
-
-#~ msgctxt "Balancebox|"
-#~ msgid "Ok"
-#~ msgstr "OK"
-
-#~ msgctxt "GCCreationHandler|"
-#~ msgid "Ok"
-#~ msgstr "OK"

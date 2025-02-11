@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-02-07 12:02+0100\n"
+"PO-Revision-Date: 2025-02-10 12:16+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Language: nl\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: activities/adjacent_numbers/ActivityConfig.qml:19
 #: activities/clickanddraw/ActivityConfig.qml:22
@@ -8374,7 +8374,7 @@ msgstr "Klik op de plek van de gegeven piramide."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Verboden Stad"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8389,12 +8389,22 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"De Verboden Stad, gelokaliseerd in het hart van Beijing, China, is een "
+"schitterend keizerlijk paleiscomplex dat diende als het thuis van Chinese "
+"keizers en het politieke centrum van de natie was gedurende bijna 500 jaar, "
+"vanaf de Ming dynasty (1368–1644) tot het eind van de Qing dynasty (1644–"
+"1912). Gebouwd tussen 1406 en 1420, dit uitgestrekte architectonische "
+"meesterwerk beslaat 73 hectare en bevat meer dan 980 bewaarde gebouwen met "
+"8.700 kamers, presenteren traditioneel Chinees paleisachtige ontwerpen. "
+"Omgeven door een gracht en een massieve muur, was de Verboden Stad eens "
+"ontoegankelijk voor het algemene publiek, symboliserend keizerlijke macht en "
+"exclusiviteit."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Reusachtige Boeddha van Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8409,15 +8419,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"De Reusachtige Boeddha van Leshan, gelokaliseerd in de provincie Sichuan, "
+"China, is een kolossaal standbeeld uitgehouwen in een rotswand bij de "
+"samenvloeiing van de rivieren Min, Dadu en Qingyi. Met een hoogte van 71 "
+"meter (233 voet) is het de hoogste premoderne standbeeld ter wereld en een "
+"UNESCO-werelderfgoed locatie. Gebouwd tijdens de Tang Dynasty (713–803 AD), "
+"representeert het standbeeld Maitreya, de Boeddha van de toekomst en was "
+"gemaakt om de turbulente wateren die lokaal bootverkeer bedreigde te "
+"kalmeren. Ingenieus ontworpen, het standbeeld bevat een verborgen drainage "
+"systeem om erosie te voorkomen. Zijn serene uitdrukking en ingewikkeld "
+"vakmanschap maken het een symbool van spirituele en artistieke prestatie."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Mysore Paleis"
+msgstr "Potala Paleis"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8432,12 +8449,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Het Potala Paleis, gelegen op de Rode Heuvel in Lhasa, Tibet, is een "
+"iconisch symbool van Tibetaanse cultuur en een UNESCO Werelderfgoed Site. "
+"Oorspronkelijk gebouwd in de 7se eeuw en uitgebreid in de 17de eeuw, dient "
+"het als het winterverblijf van de Dalai Lama's en het centrum van Tibetaans "
+"bestuur. Oprijzend ​​13 verdiepingen hoog met meer dan 1.000 kamers, "
+"combineert het paleis ingewikkelde Tibetaanse architectuur, levendige "
+"muurschilderingen en heilige relikwieën. Het is opgedeeld in het Witte "
+"Paleis, huisvesting administratieve gebieden en het Rode Paleis, gewijd aan "
+"godsdienststudies en gebed. Het Potala Paleis staat als een testament voor "
+"de spirituele en historische erfenis van Tibet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Terracotta Leger"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8449,12 +8476,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Het Terracotta Leger is een verzameling van duizenden levensgrote klei "
+"soldaten, paarden en strijdwagens begraven bij de eerste keizer van China, "
+"Qin Shi Huang, om hem in het hiernamaals te vergezellen. Ontdekt in 1974 "
+"nabij Xi'an, dateren de figuren terug tot ongeveer 210 v.Chr en worden "
+"geëerd om hun ongelofelijke detail, met elke krijger uniek vervaardigd om de "
+"diverse rangen en rollen van een oud Chinees leger te representeren."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Zon en Maan Pagodes"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8469,15 +8502,22 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"De Zon en Maan Pagodes, gelokaliseerd in Guilin, China, zijn iconische "
+"tweeling torens die de culturele en spirituele erfenis van de stad "
+"symboliseren. Oorspronkelijk gebouwd tijdens de Tang Dynasty, werden ze in "
+"de 20e eeuw gereconstrueerd als opvallende bezienswaardigheden aan het "
+"Shanhu-meer. De Zon Pagoda, rijzend 41 meter hoog, is een bronze structuur — "
+"de grootste van zijn soort in de wereld — terwijl de Maan Pagoda, op 35 "
+"meter, gebouwd is van verglaasde tegels. Deze pagodes representeren de "
+"harmonie van yin en yang en zijn verbonden door een onderwater glazen "
+"tunnel. 's Nachts verlicht, zijn ze populaire attracties en laten zien "
+"traditionele Chinese architectuur en modern vernuft."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Eiffeltoren"
+msgstr "Diaolou Torens"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8494,17 +8534,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumenten in India"
+msgstr "Monumenten in China"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Klik op de plek van het gegeven monument."
@@ -8513,7 +8547,7 @@ msgstr "Klik op de plek van het gegeven monument."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Het Pantheon"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8535,7 +8569,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Duomo di Milaan"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8553,12 +8587,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Kathedraal van Worms"
+msgstr "Kathedraal van Florence"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8577,12 +8608,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "De Toren van Hanoi"
+msgstr "De scheve Toren van Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8602,7 +8630,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "St Mark's Basiliek"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8641,29 +8669,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumenten in India"
+msgstr "Monumenten in Italië"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Klik op de plek van het gegeven monument."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Gemengd hoofd-/kleine letter"
+msgstr "Kasteel Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8741,17 +8760,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumenten in Frankrijk"
+msgstr "Monumenten in Japan"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Klik op de plek van het gegeven monument."
