@@ -11,7 +11,7 @@ import QtQuick 2.12
 import QtCharts 2.12
 
 import "../../singletons"
-import "../details"
+import "../../activities"
 
 Item {
     id: activitiesChart
