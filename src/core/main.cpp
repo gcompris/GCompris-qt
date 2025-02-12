@@ -17,6 +17,7 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QSettings>
+#include <QOpenGLContext>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
@@ -216,7 +217,14 @@ int main(int argc, char *argv[])
     }
 
     // Set the renderer used
-    const QString &renderer = ApplicationSettings::getInstance()->renderer();
+    QString renderer = ApplicationSettings::getInstance()->renderer();
+    if (renderer == QLatin1String("opengl")) {
+        QOpenGLContext checkContext;
+        if (!checkContext.create()) {
+            qWarning("Warning: fallback to software renderer.");
+            renderer = QLatin1String("software");
+        }
+    }
     ApplicationInfo::getInstance()->setUseSoftwareRenderer(renderer == QLatin1String("software"));
     QQuickWindow::setGraphicsApi(existingRenderers[renderer]);
 
@@ -263,6 +271,10 @@ int main(int argc, char *argv[])
         return -1;
     }
     ApplicationInfo::setWindow(window);
+
+    if (QQuickWindow::sceneGraphBackend() == QLatin1String("software")) {
+        ApplicationInfo::getInstance()->setUseSoftwareRenderer(true);
+    }
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
 
