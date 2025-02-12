@@ -9,11 +9,14 @@
  */
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
+import QtQml.Models 2.12
 import QtQuick.Controls.Basic
 
 import "../singletons"
 import "../components"
 import "../dialogs"
+import "../activities"
+import "../panels"
 
 Item {
     id: datasetsView
@@ -21,35 +24,17 @@ Item {
 
     property int selectedActivity: -1
     property int selectedDataset: -1
-    GroupDialog {
-        id: removeGroupDialog
-        textInputReadOnly: true
-        label: qsTr("Are you sure you want to remove this group ?\n Pupils will not be removed.")
-        mode: GroupDialog.DialogType.Remove
-    }
-
-    PupilDialog {
-        id: modifyPupilDialog
-        label: qsTr("Modify pupil name and groups")
-        addMode: false
-    }
-
-    GroupDialog {
-        id: modifyGroupDialog
-        label: qsTr("Modify Group Name")
-        mode: GroupDialog.DialogType.Modify
-    }
 
     SplitView {
-        id: splitManagePupils
+        id: splitDatasetView
         anchors.margins: 3
         anchors.fill: parent
 
-        ColumnLayout {  // Group list and Add button
-            SplitView.preferredWidth: 200
+        ColumnLayout {  // Activities list
+            SplitView.preferredWidth: 250
             SplitView.minimumWidth: 180
 
-            FoldDownRadio {
+            FoldDownCheck {
                 id: activityPane
                 Layout.fillHeight: true
                 Layout.fillWidth: true
@@ -62,7 +47,7 @@ Item {
                 delegateName: "radio"
                 onSelectionClicked: (modelId) => {
                     datasetsView.selectedActivity = modelId
-                    datasetsView.selectedDataset = -1;
+                    datasetsView.selectedDataset = -1
                     Master.filterDatasets(datasetsView.selectedActivity, false)
                 }
             }
@@ -115,45 +100,23 @@ Item {
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
                     Layout.topMargin: 20
-                    Layout.preferredWidth: 200
+                    width: 200
                     text: "\uf234   " + qsTr("Create dataset")
                     enabled: datasetsView.selectedActivity != -1
-                    onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity, undefined)
+                    onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, undefined)
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: 200
                     text: "\uf07c   " + qsTr("Update dataset")
                     enabled: datasetsView.selectedDataset != -1
-                    onClicked: addDatasetDialog.openDatasetDialog(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
+                    onClicked: datasetEditor.openDataEditor(datasetsView.selectedActivity, Master.getDataset(datasetsView.selectedDataset))
                 }
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
-                    text: "\uf0c7   " + qsTr("Remove dataset")
-                    enabled: datasetsView.selectedDataset != -1
-                    onClicked: removeDatasetDialog.open()
-                }
-
-                /*ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
-                    text: "\uf0c7   " + qsTr("Export datasets")
-                    onClicked: exportPupilsDialog.open()
-                }
-
-                ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
-                    text:  "\uf235   " + qsTr("Import datasets")
-                    onClicked: importPupilsDialog.open()
-                }*/
-
-                ViewButton {
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: 200
                     text: "\uf2f6   " + qsTr("Send to clients")
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -170,7 +133,7 @@ Item {
 
                 ViewButton {
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.preferredWidth: 200
+                    width: 200
                     text: "\uf506   " + qsTr("Remove on clients")
                     onClicked: {
                         var dataset = Master.getDataset(datasetsView.selectedDataset)
@@ -182,31 +145,29 @@ Item {
                     }
                 }
 
-
-                Rectangle {
+                Item {
                     Layout.preferredWidth: parent.width
-                    Layout.preferredHeight: parent.height
-                    color: "transparent"
+                    Layout.fillHeight: true
+                }
+
+                ViewButton {
+                    Layout.alignment: Qt.AlignHCenter
+                    Layout.bottomMargin: 20
+                    width: 200
+                    text: "\uf0c7   " + qsTr("Remove dataset")
+                    enabled: datasetsView.selectedDataset != -1
+                    onClicked: removeDatasetDialog.open()
                 }
             }
         }
 
-        DatasetDialog {
-            id: addDatasetDialog
+        DatasetEditor {
+            id: datasetEditor
             addMode: true
             dataset_Name: ""
             dataset_Objective: ""
             difficulty: 1
             dataset_Content: ""
-            label: qsTr("Create dataset")
-        }
-
-        ExportPupilsDialog {
-            id: exportPupilsDialog
-        }
-
-        ImportPupilsDialog {
-            id: importPupilsDialog
         }
 
         RemoveDatasetDialog {
@@ -219,17 +180,14 @@ Item {
         SendDatasetDialog {
             id: sendDatasetDialog
         }
-
-        PupilsToGroupsDialog {
-            id: addPupilsToGroupsDialog
-        }
-
-        PupilsToGroupsDialog {
-            id: removePupilsFromGroupsDialog
-            addMode: false     // remove mode
-        }
     }
 
-    //Component.onCompleted: splitManagePupils.restoreState(serverSettings.value("splitManagePupils"))
-    //Component.onDestruction: serverSettings.setValue("splitManagePupils", splitManagePupils.saveState())
+    Component.onCompleted: {
+        splitDatasetView.restoreState(serverSettings.value("splitDatasetView"))
+        // The two next lines force a filter on activityPane. Remove later. Save clicks while developing.
+        // activityPane.foldDownFilter.text = "verticale"
+        activityPane.foldDownFilter.text = "choice"
+        activityPane.filterButton.checked = true
+    }
+    Component.onDestruction: serverSettings.setValue("splitDatasetView", splitDatasetView.saveState())
 }
