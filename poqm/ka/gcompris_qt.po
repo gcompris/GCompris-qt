@@ -4158,6 +4158,9 @@ msgid ""
 "draughts.js&gt;. Manual is from wikipedia &lt;https://en.wikipedia.org/wiki/"
 "Draughts&gt;"
 msgstr ""
+"შაშის ბიბლიოთეკაა: draughts.js &lt;https://github.com/shubhendusaurabh/"
+"draughts.js&gt;. სახელმძღვანელო ვიკიდანაა: &lt;https://en.wikipedia.org/wiki/"
+"Draughts&gt;"
 
 #: activities/checkers/checkers.js:69
 msgctxt "checkers|"
