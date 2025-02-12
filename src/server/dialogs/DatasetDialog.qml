@@ -108,8 +108,8 @@ Popup {
             source: {
                 var activity = Master.getActivityName(activityIndex);
                 print(activity)
-                var url = `${Master.activityBaseUrl}/${activity}/DatasetEditor.qml`
-                return file.exists(url) ? url : `${Master.activityBaseUrl}/DatasetEditor.qml`
+                var url = `${Master.activityBaseUrl}/${activity}/ActivityEditor.qml`
+                return file.exists(url) ? url : `${Master.activityBaseUrl}/ActivityEditor.qml`
             }
         }
 

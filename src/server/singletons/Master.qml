@@ -38,7 +38,7 @@ Item {
     ListModel { id: activityModel }         // Contains current user or group activities
     ListModel { id: allActivitiesModel }
     ListModel { id: datasetModel }
-    ListModel { id: filteredDatasetModel }     // For checkBoxes lists (multiselection)
+    ListModel { id: filteredDatasetModel }  // For checkBoxes lists (multiselection)
     ListModel { id: tmpModel }              // Used for temporary requests inside functions
 
 //// Groups functions

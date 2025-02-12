@@ -11,7 +11,7 @@ import QtQuick 2.12
 import QtQuick.Controls.Basic
 import QtQuick.Layouts 1.15
 
-import "../../singletons"
+import "../singletons"
 
 ColumnLayout {
     id: dailyReport

@@ -20,8 +20,9 @@ Item {
     property alias text: textInput.text
     property alias echoMode: textInput.echoMode
     property bool readOnlyText: false
+    property alias textInput: textInput
 
-    onFocusChanged: { if(focus) textInput.forceActiveFocus(); }
+    onFocusChanged: { if (focus) textInput.forceActiveFocus(); }
 
     Rectangle {
         id: underlinePupilNameTextInput

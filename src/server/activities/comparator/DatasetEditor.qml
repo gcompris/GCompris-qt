@@ -1,4 +1,4 @@
-/* GCompris - DatasetEditor.qml
+/* GCompris - ActivityEditor.qml
  *
  * SPDX-FileCopyrightText: 2025 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -68,7 +68,7 @@ ColumnLayout {
         Layout.fillWidth: true
         Layout.preferredHeight: 40
         horizontalAlignment: Text.AlignHCenter
-        text: datasetDialog.label
+        text: datasetEditor.label
         font {
             bold: true
             pixelSize: 20

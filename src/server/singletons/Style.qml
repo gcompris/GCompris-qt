@@ -26,6 +26,8 @@ Item {
     readonly property color colorHoveredButton: "darkgoldenrod"
     readonly property real widthNavigationButtonIcon: 70
     readonly property real heightNavigationButtonIcon: 60
+    readonly property color colorEvenLine: "cornsilk"
+    readonly property color colorOddLine: "beige"
 
     readonly property color colorBackgroundPane: "wheat"
     readonly property color colorHeaderPane: "burlywood"

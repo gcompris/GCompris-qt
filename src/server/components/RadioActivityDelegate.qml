@@ -31,7 +31,7 @@ Control {
         indicator.scale: Style.checkerScale
         onClicked: {
             foldModel.setProperty(index, checkKey, checked)
-            selectionClicked( foldModel.get(index)[indexKey])
+            selectionClicked( foldModel.get(index)[indexKey], checked)
             currentChecked = index
         }
     }

@@ -1,5 +1,5 @@
 # SPDX-FileCopyrightText: 2024 Johnny Jazeix
-# 
+#
 # SPDX-License-Identifier: CC0-1.0
 
 version = 1
@@ -5260,6 +5260,12 @@ precedence = "aggregate"
 SPDX-FileCopyrightText = "2014 Gabriel Araujo"
 SPDX-License-Identifier = "CC0-1.0"
 SPDX-FileComment = "Source: https://www.freesound.org/people/GabrielAraujo/sounds/242501/"
+
+[[annotations]]
+path = "src/server/activities/*.md"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025 Bruno Anselme"
+SPDX-License-Identifier = "CC0-1.0"
 
 [[annotations]]
 path = "src/server/singletons/qmldir"
