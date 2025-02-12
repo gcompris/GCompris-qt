@@ -119,7 +119,7 @@ namespace controllers {
     {
         QTcpSocket *clientConnection = qobject_cast<QTcpSocket *>(sender());
         QByteArray message = clientConnection->readAll();
-        qWarning() << "NetworkController::slotReadyRead()" << message;
+        // qWarning() << "NetworkController::slotReadyRead()" << message;
         QJsonDocument jsonDoc = QJsonDocument::fromJson(message);
         QJsonObject obj = jsonDoc.object();
         if (obj.contains("aType")) {

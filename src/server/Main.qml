@@ -93,9 +93,9 @@ Window {
         ManagePupilsView {}
         DevicesView {}
         ActivitiesView {}
+        DatasetsView {}
         ChartsView {}
         SettingsView {}
-        DatasetsView {}
         DevelopmentView {}
         clip: true
         focus: true
