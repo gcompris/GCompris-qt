@@ -32,7 +32,7 @@ Column {
     spacing: 0
     clip: true
 
-    signal selectionClicked(int modelId)
+    signal selectionClicked(int modelId, bool checked)
 
     ButtonGroup {
         id: childGroup
@@ -58,7 +58,7 @@ Column {
                 if (childGroup.exclusive) {
                     childGroup.checkedButton = null
                     foldDown.currentChecked = -1
-                    foldDown.selectionClicked( -1)
+                    foldDown.selectionClicked( -1, checked)
                 }
                 for (var i = 0; i < childGroup.buttons.length; i++)
                     foldDown.foldModel.setProperty(i, foldDown.checkKey, false)

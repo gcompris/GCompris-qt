@@ -33,7 +33,7 @@ Control {
             if (currentChecked !== -1)
                 foldModel.setProperty(currentChecked, checkKey, false)
             foldModel.setProperty(index, checkKey, true)
-            selectionClicked(foldModel.get(index)[indexKey])
+            selectionClicked(foldModel.get(index)[indexKey], checked)
             currentChecked = index
         }
     }

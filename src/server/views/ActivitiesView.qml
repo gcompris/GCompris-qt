@@ -13,7 +13,7 @@ import QtQuick.Controls.Basic
 import GCompris 1.0
 import "../singletons"
 import "../panels"
-import "details"
+import "../activities"
 import "qrc:/gcompris/src/server/server.js" as Server
 
 Item {

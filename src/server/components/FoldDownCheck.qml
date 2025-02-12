@@ -27,6 +27,8 @@ Column {
     property int currentChecked: -1
     property string titleKey: nameKey
     property string delegateName: "check"
+    property alias foldDownFilter: foldDownFilter
+    property alias filterButton: filterButton
 
     enabled: activated
     visible: activated
@@ -64,28 +66,11 @@ Column {
             }
         }
 
-        SmallButton {
-            id: filterButton
-            width: foldDown.lineHeight
-            height: foldDown.lineHeight
-            anchors.right: filterRect.left
-            checkable: true
-            font.pixelSize: Style.defaultPixelSize
-            text: "\uf0b0"
-            onCheckedChanged: {
-                if (!checked) foldDownFilter.text = ""
-                else foldDownFilter.focus = true
-            }
-
-            ToolTip.visible: hovered
-            ToolTip.text: qsTr("Filter list")
-        }
-
         Rectangle {
             id: filterRect
-            width: filterButton.checked ? 60 : 0
+            width: filterButton.checked ? 100 : 0
             height: foldDown.lineHeight - 6
-            anchors.right: counter.left
+            anchors.right: filterButton.left
             anchors.rightMargin: 5
             anchors.verticalCenter: parent.verticalCenter
             border.width: 1
@@ -97,6 +82,23 @@ Column {
                 clip: true
                 font.pixelSize: Style.defaultPixelSize
             }
+        }
+
+        SmallButton {
+            id: filterButton
+            width: foldDown.lineHeight
+            height: foldDown.lineHeight
+            anchors.right: counter.left
+            checkable: true
+            font.pixelSize: Style.defaultPixelSize
+            text: "\uf0b0"
+            onCheckedChanged: {
+                if (!checked) foldDownFilter.text = ""
+                else foldDownFilter.focus = true
+            }
+
+            ToolTip.visible: hovered
+            ToolTip.text: qsTr("Filter list")
         }
 
         Text {
@@ -153,6 +155,8 @@ Column {
 
                         sourceComponent: {
                             switch(foldDown.delegateName) {
+                            case "radio":
+                                return radioSimpleDelegate
                             case "check":
                                 return checkSimpleDelegate
                             case "checkUserEdit":
@@ -181,6 +185,11 @@ Column {
                         }
 
                         // Externals delegates
+                        Component {
+                            id: radioSimpleDelegate
+                            RadioSimpleDelegate {}      // Basic radio button
+                        }
+
                         Component {
                             id: checkSimpleDelegate
                             CheckSimpleDelegate {}      // Basic checkbox

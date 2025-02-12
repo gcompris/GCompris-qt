@@ -20,7 +20,7 @@ import "../components"
 Popup {
     id: sendDatasetDialog
 
-    property bool addMode: true        // add pupil or remove pupil mode
+    property bool sendMode: true        // send dataset or remove dataset from pupil
 
     property var datasetToSend
     anchors.centerIn: Overlay.overlay
@@ -34,9 +34,9 @@ Popup {
     ListModel { id: tmpGroupModel }
 
     function openDatasetDialog(dataset, mode) {
-        print("JJ openDatasetDialog", JSON.stringify(dataset), mode)
         datasetToSend = dataset
-        addMode = mode
+        sendMode = mode
+        // print("JJ openDatasetDialog", JSON.stringify(datasetToSend), sendMode)
         open()
     }
 
@@ -51,7 +51,7 @@ Popup {
     }
 
     function validateDialog() {
-        if(addMode) {
+        if(sendMode) {
             networkController.sendDatasetToUsers(datasetToSend, {})
         }
         else {
@@ -77,7 +77,7 @@ Popup {
             Layout.preferredHeight: 90
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
-            text: sendDatasetDialog.addMode ? qsTr("Do you want to send the dataset to the selected users?")
+            text: sendDatasetDialog.sendMode ? qsTr("Do you want to send the dataset to the selected users?")
             : qsTr("Are you sure you want to remove the dataset for the following users?")
             font {
                 bold: true

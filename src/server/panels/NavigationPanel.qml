@@ -103,21 +103,21 @@ Item {
                 onNavigationButtonClicked: navigationPanel.changeTo(3)
             }
             NavigationButton {
+                id: datasetsView
+                iconCharacter: "\uf15c"
+                description: qsTr("Datasets view")
+                onNavigationButtonClicked: navigationPanel.changeTo(4)
+            }
+            NavigationButton {
                 id: chartsView
                 iconCharacter: "\uf681"
                 description: qsTr("Charts")
-                onNavigationButtonClicked: navigationPanel.changeTo(4)
+                onNavigationButtonClicked: navigationPanel.changeTo(5)
             }
             NavigationButton {
                 id: settingsView
                 iconCharacter: "\uf0ad"
                 description: qsTr("Settings")
-                onNavigationButtonClicked: navigationPanel.changeTo(5)
-            }
-            NavigationButton {
-                id: datasetsView
-                iconCharacter: "\uf15c"
-                description: qsTr("Datasets view")
                 onNavigationButtonClicked: navigationPanel.changeTo(6)
             }
             NavigationButton {
