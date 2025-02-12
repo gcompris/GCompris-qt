@@ -11,7 +11,7 @@ import QtQuick 2.12
 import QtCharts 2.12
 
 import "../../singletons"
-import "../details"
+import "../../activities"
 
 Item {
     id: activitiesChart
@@ -107,7 +107,7 @@ Item {
                 axisX: BarCategoryAxis {
                     labelsAngle: -90
                 }
-                onClicked: {
+                onClicked: (index, barset) => {
 //                    console.warn("Click:", index, barset.label)
                     activitiesChart.parent.push(lineReport
                                     , { userId: -1
@@ -117,7 +117,7 @@ Item {
                                     })
                     activitiesChart.parent.currentItem.executeRequest()
                 }
-                onHovered: helpText.text = status ? mySeries.axisX.categories[index] + "   " + Master.allActivities[barset.label].title : ""
+                onHovered: (status, index, barset) => helpText.text = status ? mySeries.axisX.categories[index] + "   " + Master.allActivities[barset.label].title : ""
             }
             Text {
                 id: helpText

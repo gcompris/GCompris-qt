@@ -14,8 +14,8 @@ import QtQuick.Layouts 1.15
 
 import GCompris 1.0
 
-import "../../singletons"
-import "../../components"
+import "../singletons"
+import "../components"
 
 ColumnLayout {
     id: lineReport
