@@ -28295,47 +28295,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Limba GCompris"
 
-#: core/main.cpp:72
+#: core/main.cpp:73
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Rulează GCompris cu cursorul implicit al sistemului tău."
 
-#: core/main.cpp:76
+#: core/main.cpp:77
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Rulează GCompris fără cursor (în modul tactil)."
 
-#: core/main.cpp:80
+#: core/main.cpp:81
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Rulează GCompris în modul pe tot ecranul."
 
-#: core/main.cpp:84
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Rulează GCompris în modul fereastră."
 
-#: core/main.cpp:88
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Rulează GCompris cu sunetul activat."
 
-#: core/main.cpp:92
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Rulează GCompris fără sunet."
 
-#: core/main.cpp:95
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Dezactivează modul chioșc (varianta implicită)."
 
-#: core/main.cpp:98
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Activează modul chioșc."
 
-#: core/main.cpp:102
+#: core/main.cpp:103
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28345,7 +28345,7 @@ msgstr ""
 "ruleze cu orice placă video). Ieșită din uz, folosește în loc de asta "
 "comanda --renderer=software."
 
-#: core/main.cpp:105
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28355,23 +28355,23 @@ msgstr ""
 "„crăpa”, în funcție de placa ta video). Ieșită din uz, folosește în loc de "
 "asta comanda --renderer=opengl."
 
-#: core/main.cpp:109
+#: core/main.cpp:110
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Selectează randatorul (opengl, software, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:113
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Specifică activitatea dorită când pornește GCompris."
 
-#: core/main.cpp:118
+#: core/main.cpp:119
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Pune la dispoziție toate activitățile disponibile."
 
-#: core/main.cpp:122
+#: core/main.cpp:123
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28381,7 +28381,7 @@ msgstr ""
 "afișat pentru sesiune. Poate să fie o singură valoare (2) sau un interval "
 "(3-6). Valorile trebuie să fie între 1 și 6."
 
-#: core/main.cpp:126
+#: core/main.cpp:127
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

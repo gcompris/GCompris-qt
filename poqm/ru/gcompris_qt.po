@@ -28763,47 +28763,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Языки GCompris"
 
-#: core/main.cpp:72
+#: core/main.cpp:73
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Запустить GCompris со стандартным системным указателем мыши."
 
-#: core/main.cpp:76
+#: core/main.cpp:77
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Запустить GCompris без указателя мыши (режим сенсорного экрана)."
 
-#: core/main.cpp:80
+#: core/main.cpp:81
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Запустить GCompris в полноэкранном режиме."
 
-#: core/main.cpp:84
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Запустить GCompris в оконном режиме."
 
-#: core/main.cpp:88
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Запустить GCompris со включённым звуком."
 
-#: core/main.cpp:92
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Запустить GCompris без звука."
 
-#: core/main.cpp:95
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Отключить режим киоска (по умолчанию)."
 
-#: core/main.cpp:98
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Включить режим киоска."
 
-#: core/main.cpp:102
+#: core/main.cpp:103
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -28817,7 +28817,7 @@ msgstr ""
 "Использовать программную отрисовку вместо OpenGL (медленнее, но должно "
 "работать с любым графическим адаптером)."
 
-#: core/main.cpp:105
+#: core/main.cpp:106
 #, fuzzy
 #| msgctxt "QObject|"
 #| msgid ""
@@ -28831,22 +28831,22 @@ msgstr ""
 "Использовать OpenGL вместо программной отрисовки (быстрее, но "
 "работоспособность зависит от графического адаптера)."
 
-#: core/main.cpp:109
+#: core/main.cpp:110
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 
-#: core/main.cpp:113
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Задаёт упражнение при старте GCompris."
 
-#: core/main.cpp:118
+#: core/main.cpp:119
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Выводит все доступные упражнения в стандартный вывод."
 
-#: core/main.cpp:122
+#: core/main.cpp:123
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28855,7 +28855,7 @@ msgstr ""
 "Задаёт диапазон сложности упражнения для показа в сеансе. Допускается одно "
 "значение (2) или диапазон (3-6). Значения должны быть в пределах от 1 до 6."
 
-#: core/main.cpp:126
+#: core/main.cpp:127
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

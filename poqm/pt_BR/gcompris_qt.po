@@ -28318,47 +28318,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "Idioma do GCompris"
 
-#: core/main.cpp:72
+#: core/main.cpp:73
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Abrir o GCompris com o cursor padrão do sistema."
 
-#: core/main.cpp:76
+#: core/main.cpp:77
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Abrir o GCompris sem cursor (modo de tela de toque)."
 
-#: core/main.cpp:80
+#: core/main.cpp:81
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Abrir o GCompris no modo de tela inteira."
 
-#: core/main.cpp:84
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Abrir o GCompris no modo de janela."
 
-#: core/main.cpp:88
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Abrir o GCompris com o som habilitado."
 
-#: core/main.cpp:92
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Abrir o GCompris sem som."
 
-#: core/main.cpp:95
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Desativar o modo quiosque (padrão)."
 
-#: core/main.cpp:98
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Ativar o modo quiosque."
 
-#: core/main.cpp:102
+#: core/main.cpp:103
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28367,7 +28367,7 @@ msgstr ""
 "Utilizar o renderizador de software ao invés do openGL (mais lento, mas pode "
 "rodar em qualquer placa gráfica). Obsoleto, use --renderer=software no lugar."
 
-#: core/main.cpp:105
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28377,24 +28377,24 @@ msgstr ""
 "existe a chance de uma pane dependendo da sua placa gráfica). Obsoleto, use "
 "--renderer=opengl no lugar."
 
-#: core/main.cpp:109
+#: core/main.cpp:110
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Selecione o renderizador(opengl,software,Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:113
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Especificar uma atividade ao abrir o GCompris."
 
-#: core/main.cpp:118
+#: core/main.cpp:119
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr ""
 "Direcionar as saídas de todas as atividades disponíveis para a saída padrão."
 
-#: core/main.cpp:122
+#: core/main.cpp:123
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28404,7 +28404,7 @@ msgstr ""
 "sessão. Um valor único (2) ou um intervalo (3-6). Os valores devem ser entre "
 "1 e 6."
 
-#: core/main.cpp:126
+#: core/main.cpp:127
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "

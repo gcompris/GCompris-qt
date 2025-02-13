@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-02-09 10:43+0400\n"
+"PO-Revision-Date: 2025-02-12 17:39+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -8026,7 +8026,7 @@ msgstr "انقر مكان وجود الهرم."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "المدينة المحرمة"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8041,12 +8041,20 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"تقع المدينة المحرمة في قلب بكين، الصين، وهي عبارة عن مجمع قصور إمبراطوري "
+"رائع كان بمثابة منزل الأباطرة الصينيين والمركز السياسي للأمة لما يقرب من 500 "
+"عام، من عهد أسرة مينغ (1368-1644) إلى نهاية عهد أسرة تشينغ (1644-1912). بُنيت "
+"هذه التحفة المعمارية المترامية الأطراف بين عامي 1406 و1420، وتمتد هذه التحفة "
+"المعمارية المترامية الأطراف على مساحة 180 فداناً وتضم أكثر من 980 مبنى محفوظاً "
+"مع 8700 غرفة، وتظهر فيها التصاميم الصينية التقليدية الفخمة. كانت المدينة "
+"المحرمة محاطة بخندق مائي وسور ضخم، وكان يتعذر على عامة الناس الوصول إليها في "
+"يوم من الأيام، مما يرمز إلى السلطة الإمبراطورية والحصرية."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "ليشان بودا العملاق"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8061,15 +8069,20 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"يقع تمثال بوذا العملاق في ليشان في مقاطعة سيتشوان بالصين، وهو تمثال ضخم "
+"منحوت في جرف عند التقاء أنهار مين ودادو وتشينغيي. يبلغ ارتفاع التمثال 71 "
+"متراً (233 قدماً)، وهو أطول تمثال في العالم في فترة ما قبل الحداثة وهو أحد "
+"مواقع التراث العالمي لليونسكو. بُني التمثال خلال عهد أسرة تانغ الحاكمة "
+"(713-803 م)، ويمثل مايتريا، بوذا المستقبل، وقد صُمم لتهدئة المياه المضطربة "
+"التي تهدد حركة القوارب المحلية. يتضمن التمثال المصمم ببراعة نظام تصريف مخفي "
+"لمنع التآكل. إن تعبيره الهادئ وحرفته المعقدة تجعل منه رمزاً للإنجاز العقدي "
+"والفني."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "قصر مايوري"
+msgstr "قصر بوتالا"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8084,12 +8097,20 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"يقع قصر بوتالا على التلة الحمراء في لاسا، التبت، وهو رمز أيقوني للثقافة "
+"التبتية وأحد مواقع التراث العالمي لليونسكو. بُني القصر في الأصل في القرن "
+"السابع الميلادي؛ ثم وُسع في القرن السابع عشر، وكان بمثابة المقر الشتوي "
+"للدالاي لاما ومركز الحكم في التبت. يرتفع القصر بارتفاع 13 طابقاً ويضم أكثر من "
+"1,000 غرفة، ويجمع القصر بين العمارة التبتية المعقدة والجداريات النابضة "
+"بالحياة والآثار المقدسة لدى شعب التبت. ينقسم القصر إلى القصر الأبيض الذي يضم "
+"المناطق الإدارية والقصر الأحمر المخصص للدراسات الدينية والصلاة. يقف قصر "
+"بوتالا شاهداً على إرث التبت العقدي والتاريخي."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "ضريح الإمبراطور الأول تشين"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8101,12 +8122,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"جيش التيراكوتا عبارة عن مجموعة من آلاف الجنود والخيول والمركبات الطينية "
+"بالحجم الطبيعي التي دفنت مع أول إمبراطور صيني تشين شي هوانغ لمرافقته في "
+"الحياة الآخرة. يعود تاريخ هذه التماثيل التي اكتشفت في عام 1974 بالقرب من "
+"مدينة شيان إلى عام 210 قبل الميلاد تقريباً، وقد اشتهرت بتفاصيلها المذهلة، حيث "
+"صُنعت كل واحدة منها بشكل فريد لتمثل الرتب والأدوار المتنوعة للجيش الصيني "
+"القديم."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "معبدا الشمس والقمر"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8121,15 +8148,20 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"يقع معبدا الشمس والقمر في مدينة قويلين بالصين، وهما برجان توأمان مبدعان "
+"يرمزان إلى التراث الثقافي والعقدي للمدينة. بُني البرجان في الأصل خلال عهد "
+"أسرة تانغ، وأُعيد بناؤهما في القرن العشرين كمعلمين بارزين على بحيرة شانهو. "
+"يبلغ ارتفاع معبد الشمس 41 متراً، وهو عبارة عن هيكل برونزي - وهو الأطول من "
+"نوعه في العالم - بينما يبلغ ارتفاع معبد القمر 35 متراً، وهو مبني من البلاط "
+"المزجج. يمثل هذان المعبدان -حسب الديانة الطاوية- تناغم الين واليانغ ويربطهما "
+"نفق زجاجي تحت الماء. تُعد هذه المعابد المضاءة ليلاً من المعالم السياحية "
+"الشهيرة التي تعرض العمارة الصينية التقليدية والإبداع الحديث."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "برج إيفل"
+msgstr "أبراج ديالو"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8144,19 +8176,21 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"أبراج دياولو، الموجودة في كايبينغ بمقاطعة غوانغدونغ الصينية، هي أبراج محصنة "
+"متعددة الطوابق بُنيت في أواخر القرن التاسع عشر وأوائل القرن العشرين للحماية "
+"من قطاع الطرق والفيضانات. تمزج بين الطرز المعمارية الغربية مثل الرومانسيك "
+"والباروك مع العناصر الصينية التقليدية، وتعكس ثراء وتأثير المهاجرين الصينيين "
+"في الخارج. شُيدت هذه الأبراج بالخرسانة المسلحة، وترمز هذه الأبراج إلى فترة "
+"التحول الثقافي والاقتصادي في الريف الصيني. صُنّفت كموقع تراث عالمي لليونسكو في "
+"عام 2007، ولا يزال حوالي 1800 برج من أصل 3,000 برج أصلي باقٍ، مما يوفر نظرة "
+"ثاقبة على هذا التراث المعماري الفريد."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "الأنصاب التّذكاريّة في الهند"
+msgstr "الأنصاب التّذكاريّة في الصين"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "انقر مكان المعلم المطلوب."
@@ -8165,7 +8199,7 @@ msgstr "انقر مكان المعلم المطلوب."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "البانثيون"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8182,12 +8216,21 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"البانثيون في روما، إيطاليا، هو معبد قديم مبدع بُني حوالي عام 126 ميلادية في "
+"عهد الإمبراطور هادريان في موقع هياكل سابقة أمر ببنائها ماركوس أغريبا. يشتهر "
+"المعبد بتألقه المعماري، ويتميز بسقفه الضخم المقبب الذي يتوسطه كوة مركزية "
+"ترمز إلى السماء، مما يسمح للضوء الطبيعي بإضاءة الداخل. كانت في الأصل مخصصة "
+"في الأصل لجميع الآلهة الرومانية، ثم حُوّل فيما بعد إلى كنيسة مسيحية تُعرف باسم "
+"كنيسة القديسة مريم والشهداء (سانتا ماريا والشهداء) في عام 609 م. تتميز "
+"قبتها، وهي أكبر قبة خرسانية غير مسلحة في العالم، بهندستها وتناسقها الرائعين، "
+"مما ألهم المهندسين المعماريين لعدة قرون. إن أبعاد البانثيون المتناسقة "
+"وأهميته التاريخية تجعله تحفة معمارية كلاسيكية خالدة."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "دومو ميلانو"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8202,15 +8245,20 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"تُعد كاتدرائية دومو دي ميلانو، المعروفة أيضاً باسم كاتدرائية ميلانو، تحفة فنية "
+"قوطية شهيرة تقع في قلب مدينة ميلانو بإيطاليا. بُنيت على مدار ما يقرب من ستة "
+"قرون، وهي واحدة من أكبر الكاتدرائيات في العالم ورمز للتراث الفني والثقافي "
+"لميلانو. تزدان واجهتها المعقدة بتماثيل وأبراج وجرغول لا حصر لها، مما يعكس "
+"عظمة العمارة القوطية. يمكن للزائرين استكشاف تصميماته الداخلية المذهلة التي "
+"تتميز بنوافذ زجاجية ملونة جميلة وتفاصيل رخامية معقدة، أو الصعود إلى السطح "
+"للاستمتاع بمناظر خلابة للمدينة وجبال الألب. يقف الدومو شاهداً على تاريخ "
+"إيطاليا الغني وتألقها المعماري."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "كاتدرائيّة فورمس"
+msgstr "كاتدرائية فلورنسا"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8226,15 +8274,21 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"تُعد كاتدرائية فلورنسا، المعروفة رسمياً باسم كاتدرائية سانتا ماريا ديل فيوري، "
+"تحفة فنية شهيرة من العمارة القوطية وعصر النهضة وتقع في فلورنسا، إيطاليا. "
+"اكتمل بنائها عام 1436، وتشتهر بقبتها الضخمة المكسوة بالبلاط الأحمر التي "
+"صممها فيليبو برونليسكي والتي لا تزال أعجوبة هندسية ورمزاً للمدينة. تُكمّل واجهة "
+"الكاتدرائية الرخامية المعقدة التي أضيفت في القرن التاسع عشر واجهة "
+"الكاتدرائية الرخامية المعقدة التي أُضيفت في القرن التاسع عشر إلى داخلها الغني "
+"بالزخارف والكنوز الفنية. تشكل الكاتدرائية مع كامبانيل جيوتو ومعمودية القديس "
+"يوحنا جزءاً من مواقع التراث العالمي لليونسكو، وتجتذب ملايين الزوار سنوياً "
+"لأهميتها التاريخية والثقافية والمعمارية."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "أبراج هانوي"
+msgstr "برج بيزا المائل"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8249,12 +8303,20 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"يُعد برج بيزا المائل، الذي يقع في مدينة بيزا الإيطالية، أعجوبة معمارية مشهورة "
+"عالمياً. تم تشييده كبرج جرس قائم بذاته لكاتدرائية المدينة، ويشتهر البرج بميله "
+"غير المقصود بسبب تربة الأساس غير المستقرة. بدأ تشييد البرج في عام 1173، "
+"وامتد بناء البرج لما يقرب من 200 عام، بُذلت خلالها جهود لتثبيت ميله. يبلغ "
+"ارتفاع البرج حوالي 56 متراً (183 قدماً)، ويتميز البرج بتصميمه الروماني الذي "
+"يتكون من ثمانية طوابق، بما في ذلك غرفة الجرس المزينة بأعمدة وأقواس منحوتة "
+"بشكل معقد. أُدرج البرج في قائمة اليونسكو للتراث العالمي، ولا يزال رمزاً للصمود "
+"والإبداع."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "كنيسة سان ماركو"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8270,12 +8332,20 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"تقع كاتدرائية القديس مرقس في مدينة البندقية بإيطاليا، وهي تحفة فنية أيقونية "
+"من العمارة البيزنطية وأحد أشهر معالم المدينة. بُنيت في الأصل عام 828 لإيواء "
+"رفات القديس مرقس الإنجيلي، وأُعيد بناؤها بشكلها الحالي في القرن الحادي عشر. "
+"تشتهر الكاتدرائية بتصميمها الفخم، وتتميز بمزيج من التأثيرات الشرقية "
+"والغربية، ويتضح ذلك في قبابها الخمس وفسيفسائها المعقدة وواجهتها المزخرفة "
+"المزينة بالتماثيل والمنحوتات. زُخرف الجزء الداخلي بزخارف الفسيفساء الذهبية "
+"والأرضيات الرخامية، مما يُظهر ثراء وقوة جمهورية البندقية. يقع بجوار ساحة "
+"القديس مرقس، ويظل رمزاً لتراث البندقية التاريخي والثقافي والديني."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "بومبي"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8291,31 +8361,30 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"بومبي هي مدينة رومانية قديمة تقع بالقرب من مدينة نابولي الحالية في إيطاليا، "
+"وقد اشتهرت بعد أن دفنها ثوران بركان جبل فيزوف عام 79 ميلادية. أطلق الثوران "
+"مزيجًا مميتًا من الرماد والخفاف وتدفقات الحمم البركانية التي اجتاحت المدينة "
+"وسكانها، مما أدى إلى الحفاظ على المباني والقطع الأثرية وحتى البقايا البشرية "
+"بتفاصيل مذهلة. وفرت الحفريات في بومبي رؤى قيمة عن الحياة اليومية الرومانية "
+"والعمارة والمجتمع الروماني، وكشفت عن مدينة ذات شوارع ومنازل وحمامات عامة "
+"ومعابد مخططة تخطيطًا جيدًا. الموقع الآن أحد مواقع التراث العالمي لليونسكو ويظل "
+"أحد أهم الاكتشافات الأثرية في التاريخ."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "الأنصاب التّذكاريّة في الهند"
+msgstr "الأنصاب التّذكاريّة في إيطاليا"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "انقر مكان المعلم المطلوب."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "حروف مختلطة"
+msgstr "قلعة هيميجي"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8328,12 +8397,18 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"تعد قلعة هيميجي أروع مثال باقٍ على عمارة القلاع اليابانية في أوائل القرن "
+"السابع عشر، حيث تضم 83 مبنى بأنظمة دفاعية متطورة للغاية وأجهزة حماية بارعة "
+"يرجع تاريخها إلى بداية فترة الشوغون. وهي تحفة فنية في البناء بالخشب، تجمع "
+"بين الوظيفة والجاذبية الجمالية، سواء في مظهرها الأنيق الذي توحده الجدران "
+"الترابية المغطاة بالجص الأبيض أو في دقة العلاقات بين كتل البناء وطبقات السقف "
+"المتعددة."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "حديقة هيروشيما التذكارية للسلام"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8349,12 +8424,20 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"حديقة هيروشيما التذكارية للسلام هي رمز للسلام وتذكير بالعواقب المدمرة للحرب. "
+"تقع الحديقة في هيروشيما باليابان، وتخلد ذكرى ضحايا القنبلة الذرية التي ألقيت "
+"في 6 أغسطس 1945. تضم الحديقة العديد من النصب التذكارية، بما في ذلك قبة "
+"القنبلة الذرية الشهيرة التي كانت في السابق مبنى حكومياً وهي الآن أحد مواقع "
+"التراث العالمي لليونسكو. كما تضم الحديقة متحف هيروشيما التذكاري للسلام، الذي "
+"يثقف الزوار حول الأحداث التي أحاطت بالقنبلة النووية ويروج لرسالة السلام "
+"واللاعنف وأهمية نزع السلاح النووي. وهو بمثابة مساحة مهيبة للتفكير وتكريم "
+"الأرواح التي فقدت والدعوة إلى السلام العالمي."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "مزار أراكورا فوجي سنجن"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8370,12 +8453,21 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"تأسس المزار عام 705 لتكريس إله الموقع حسب الديانة الشنتوية الوثنية . وفي "
+"أعقاب الثوران العظيم لجبل فوجي في عام 807، أرسل الإمبراطور مبعوثاً إمبراطورياً "
+"إلى هذا الضريح لأداء طقوس لوقف الثوران. ويقال أنه خلال فترة الممالك "
+"المتحاربة، عندما حارب تاكيدا نوبوتورا، والد أحد أمراء الحرب المشهورين تاكيدا "
+"شينجن، مع عائلة هوجو، أقام معسكره هنا وصلى من أجل النصر وانتصر في المعركة. "
+"ثم أهدى سيفه لهذا المزار. واليوم، يزور السكان المحليون والقادمون من بعيد "
+"المزار لدرء الشرور والصلاة من أجل سعادة الأسرة والولادة الآمنة حسب الديانة "
+"الشنتوية الوثنية. في فصل الربيع، تتفتح أشجار الكرز وتتجمع الحشود للاستمتاع "
+"بالمنظر الخلاب لجبل فوجي."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "قلعة أوكيناوا شوري"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8391,19 +8483,22 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"تقع قلعة شوري في مدينة ناها في أوكيناوا باليابان، وهي أحد مواقع التراث "
+"العالمي لليونسكو ورمز للتاريخ الثقافي الغني لمملكة ريوكيو. شُيدت القلعة في "
+"الأصل في القرن الرابع عشر، وكانت بمثابة المركز السياسي والاقتصادي والثقافي "
+"للمملكة لعدة قرون. تشتهر قلعة شوري بمزجها المميز بين الطرازين المعماريين "
+"الصيني والياباني، وتتميز القلعة بهياكلها المطلية بالورنيش والزخارف المزخرفة "
+"وموقعها المتميز على قمة التل. على الرغم من تدميرها خلال الحرب العالمية "
+"الثانية، إلا أنه أعيد بناؤها بدقة وأصبحت معلم جذب سياحي رئيسي. ومن المؤسف أن "
+"جزءاً كبيراً من القلعة فُقد في حريق نشب في عام 2019، لكن جهود ترميمها مستمرة، "
+"مما يعكس أهميتها الدائمة لتراث أوكيناوا."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "الأنصاب التّذكاريّة في فرنسا"
+msgstr "الأنصاب التّذكاريّة في اليابان"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "انقر مكان المعلم المطلوب."
@@ -27278,47 +27373,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "لغة \"فهمت\""
 
-#: core/main.cpp:72
+#: core/main.cpp:73
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "شغّل «فهمت» بمؤشّر النّظام الافتراضيّ."
 
-#: core/main.cpp:76
+#: core/main.cpp:77
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "شغّل «فهمت» بدون مؤشّر (وضع شاشة اللمس)."
 
-#: core/main.cpp:80
+#: core/main.cpp:81
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "شغّل «فهمت» بوضع ملء الشّاشة."
 
-#: core/main.cpp:84
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "شغّل «فهمت» بوضع النّافذة."
 
-#: core/main.cpp:88
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "شغّل «فهمت» والصّوت مفعّل."
 
-#: core/main.cpp:92
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "شغّل «فهمت» بدون صوت."
 
-#: core/main.cpp:95
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "تعطيل وضع الكشك (افتراضي)."
 
-#: core/main.cpp:98
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "مكّن وضع الكشك."
 
-#: core/main.cpp:102
+#: core/main.cpp:103
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -27327,7 +27422,7 @@ msgstr ""
 "استخدم معالج عرض برمجي بدلًا من  أوبن جي ال (أبطأ ولكنه يعمل على أي بطاقة "
 "رسومية). لم تعد مستعملة، لذا استعمل بدلا عنها --renderer=opengl."
 
-#: core/main.cpp:105
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -27336,22 +27431,22 @@ msgstr ""
 "استخدم عارض OpenGL بدلاً من البرمجي (أسرع ولكن من المحتمل أن يتعطل بناءً على "
 "بطاقتك الرسومية). لم تعد مستعملة، لذا استعمل بدلا عنها --renderer=opengl."
 
-#: core/main.cpp:109
+#: core/main.cpp:110
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr "اختر المُصيّر (opengl، برمجيا، Direct3D11، Direct3D12، Metal)"
 
-#: core/main.cpp:113
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "حدد النشاط عند بدء \"فهمتُ\"."
 
-#: core/main.cpp:118
+#: core/main.cpp:119
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "إخراج جميع الأنشطة المتاحة على المخرج القياسي."
 
-#: core/main.cpp:122
+#: core/main.cpp:123
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -27360,7 +27455,7 @@ msgstr ""
 "حدّد مدى صعوبة النشاط لعرضه للجلسة. إما قيمة واحدة (2) ، أو مجال (3-6). يجب "
 "أن تنحصر القيم بين 1 و 6."
 
-#: core/main.cpp:126
+#: core/main.cpp:127
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
