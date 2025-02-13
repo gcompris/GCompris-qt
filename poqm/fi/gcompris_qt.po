@@ -28405,47 +28405,47 @@ msgctxt "LanguageList|"
 msgid "GCompris' language"
 msgstr "GComprisin kielet"
 
-#: core/main.cpp:72
+#: core/main.cpp:73
 msgctxt "QObject|"
 msgid "Run GCompris with the default system cursor."
 msgstr "Käytä GComprisissa järjestelmän oletusosoitinta."
 
-#: core/main.cpp:76
+#: core/main.cpp:77
 msgctxt "QObject|"
 msgid "Run GCompris without cursor (touch screen mode)."
 msgstr "Käytä GComprisia osoittimetta (kosketusnäyttötilassa)."
 
-#: core/main.cpp:80
+#: core/main.cpp:81
 msgctxt "QObject|"
 msgid "Run GCompris in fullscreen mode."
 msgstr "Käytä GComprisia koko näytöllä."
 
-#: core/main.cpp:84
+#: core/main.cpp:85
 msgctxt "QObject|"
 msgid "Run GCompris in window mode."
 msgstr "Käytä GComprisia ikkunassa."
 
-#: core/main.cpp:88
+#: core/main.cpp:89
 msgctxt "QObject|"
 msgid "Run GCompris with sound enabled."
 msgstr "Käytä GComprisissa ääniä."
 
-#: core/main.cpp:92
+#: core/main.cpp:93
 msgctxt "QObject|"
 msgid "Run GCompris without sound."
 msgstr "Käytä GComprisia äänettä."
 
-#: core/main.cpp:95
+#: core/main.cpp:96
 msgctxt "QObject|"
 msgid "Disable the kiosk mode (default)."
 msgstr "Poista kioskitila käytöstä (oletus)."
 
-#: core/main.cpp:98
+#: core/main.cpp:99
 msgctxt "QObject|"
 msgid "Enable the kiosk mode."
 msgstr "Käytä kioskitilaa."
 
-#: core/main.cpp:102
+#: core/main.cpp:103
 msgctxt "QObject|"
 msgid ""
 "Use software renderer instead of openGL (slower but should run with any "
@@ -28454,7 +28454,7 @@ msgstr ""
 "Käytä OpenGL:n sijaan ohjelmistohahmonnusta (hitaampaa mutta toimii kaikilla "
 "näytönohjaimilla). Vanhentunut, käytä tämän sijaan --renderer=software."
 
-#: core/main.cpp:105
+#: core/main.cpp:106
 msgctxt "QObject|"
 msgid ""
 "Use openGL renderer instead of software (faster but crash potentially "
@@ -28464,24 +28464,24 @@ msgstr ""
 "kaatua joillakin näytönohjaimilla). Vanhentunut, käytä tämän sijaan --"
 "renderer=opengl."
 
-#: core/main.cpp:109
+#: core/main.cpp:110
 msgctxt "QObject|"
 msgid "Select renderer (opengl, software, Direct3D11, Direct3D12, Metal)."
 msgstr ""
 "Valitse hahmontaja (opengl, ohjelmallinen, Direct3D11, Direct3D12, Metal)."
 
-#: core/main.cpp:113
+#: core/main.cpp:114
 msgctxt "QObject|"
 msgid "Specify the activity when starting GCompris."
 msgstr "Määritä GComprisin aloittava toiminto."
 
-#: core/main.cpp:118
+#: core/main.cpp:119
 msgctxt "QObject|"
 msgid "Outputs all the available activities on the standard output."
 msgstr "Tulostaa vakiotulostevirtaan kaikki saatavilla olevat toiminnot."
 
 # Huom! ”3-6” sisältää tarkoituksella yhdysmerkin, koska voisi olettaa, että syötettäessä sitä on käytettävä.
-#: core/main.cpp:122
+#: core/main.cpp:123
 msgctxt "QObject|"
 msgid ""
 "Specify the range of activity difficulty to display for the session. Either "
@@ -28490,7 +28490,7 @@ msgstr ""
 "Määritä istunnon toimintojen vaikeusalue. Anna yksittäinen arvo (2) tai alue "
 "(3-6). Arvojen on oltava väliltä 1–6."
 
-#: core/main.cpp:126
+#: core/main.cpp:127
 msgctxt "QObject|"
 msgid ""
 "Specify on which level to start the activity. Only used when --launch option "
