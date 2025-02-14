@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2025-01-26 20:13+0100\n"
+"PO-Revision-Date: 2025-02-13 20:53+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 "X-Qt-Contexts: true\n"
 "X-Environment: kids\n"
 
@@ -5915,9 +5915,6 @@ msgstr "Electricidade dixital"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Crea e simular un circuíto lóxico dixital."
@@ -8350,7 +8347,7 @@ msgstr "Preme a localización da pirámide."
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Cidade Prohibida"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8365,12 +8362,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"A Cidade Prohibida, sita no corazón de Pequín, é un complexo palaciano "
+"imperial magnífico que serviu de casa dos emperadores chineses e de centro "
+"político da nación durante case 500 anos, desde a dinastía Ming (1368–1644) "
+"ata a fin da dinastía Qing (1644–1912). Construída entre 1406 e 1420, esta "
+"extensa obra mestra de arquitectura ocupa máis de 70 hectáreas e conta con "
+"máis de 980 edificios preservados con 8 700 dependencias, e é exemplo do "
+"deseño palaciano chinés tradicional. Rodeada por un  foso e unha muralla "
+"enorme, a Cidade Prohibida estaba outrora vedada ao público, como símbolo do "
+"poder e a exclusividade imperiais."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Gran Buda de Leshan"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8385,15 +8391,21 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"O Gran Buda de Leshan, sito na provincia chinesa de Sichuan, é unha estatua "
+"colosal tallada nun cantil, na confluencia entre os ríos, Min, Dadu e "
+"Qingyi. Con 71 metros de altura, é a estatua pre-moderna máis alta do mundo, "
+"e patrimonio da humanidade da UNESCO. Construída durante a dinastía Tang "
+"(713–803 a.C.), a estatua representa a Maitreya, o Buda do futuro, e creouse "
+"para calmar as turbulentas augas que ameazaban o tráfico local de barcos. De "
+"deseño enxeñoso, a estatua inclúe un sistema oculto de drenaxe para evitar a "
+"erosión. A súa expresión serena e a súa complexa artesanía son símbolos de "
+"logros espirituais e artísticos."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Palacio de Mysore"
+msgstr "Palacio de Potala"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8408,12 +8420,22 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"O Palacio de Potala, que repousa na «Cordilleira Vermella» (Marpo Ri) de "
+"Lhasa, no Tíbet, é un símbolo icónico da cultura tibetana e patrimonio da "
+"humanidade da UNESCO. Construído orixinalmente no século VII e expandido no "
+"XVII, serviu como residencia de inverno dos Dalai Lamas e como centro de "
+"goberno tibetano. Con 13 plantas de altura e máis de 1 000 dependencias, o "
+"palacio combina a complexa arquitectura tibetana, vibrantes murais e "
+"reliquias sagradas. Divídese no Palacio Branco, que contén as zonas de "
+"administración, e o Palacio Vermello, dedicado aos estudos relixiosos e ao "
+"rezo. O Palacio de Potala é testemuña do espírito e do legado histórico do "
+"Tíbet."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Guerreiros de Terracota"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8425,12 +8447,19 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Os Guerreiros de Terracota son unha colección de milleiros de soldados, "
+"cabalos e carros de arxila de tamaño real soterrados co primeiro emperador "
+"chinés, Qin Shi Huang, para acompañalo na outra vida. Descubertos en 1974 "
+"preto de Xi'an, as figuras datan aproximadamente do ano 210 a.C., e "
+"salientan polo seu incríbel nivel de detalle, xa que cada guerreiro é "
+"distinto, en representación da diversidade de rangos e roles do antigo "
+"exército chinés."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Pagodes do Sol e a Lúa"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8448,12 +8477,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Torre Eiffel"
+msgstr "Diaolou"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8470,17 +8496,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Monumentos da India"
+msgstr "Monumentos da China"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Preme a localización do monumento."
@@ -8489,7 +8509,7 @@ msgstr "Preme a localización do monumento."
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Partenón"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8511,7 +8531,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Catedral de Milán"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8529,12 +8549,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Catedral de Worms"
+msgstr "Catedral de Florencia"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8553,12 +8570,9 @@ msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "A torre de Hanoi"
+msgstr "Torre Inclinada de Pisa"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8578,7 +8592,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Basílica de San Marcos"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8599,7 +8613,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Pompeia"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8617,29 +8631,20 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Monumentos da India"
+msgstr "Monumentos de Italia"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Preme a localización do monumento."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Mestura"
+msgstr "Castelo de Himeji"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8657,7 +8662,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Parque Conmemorativo da Paz de Hiroshima"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8678,7 +8683,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Santuario Arakura Fuji Sengen"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8699,7 +8704,7 @@ msgstr ""
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Castelo de Shuri de Okinawa"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8717,17 +8722,11 @@ msgid ""
 msgstr ""
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Monumentos de Francia"
+msgstr "Monumentos do Xapón"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Preme a localización do monumento."

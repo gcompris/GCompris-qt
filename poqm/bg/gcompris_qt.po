@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: 2023, 2024 Mincho Kondarev <mkondarev@yahoo.de>
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Mincho Kondarev <mkondarev@yahoo.de>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-12-16 22:09+0100\n"
+"PO-Revision-Date: 2025-02-13 13:41+0100\n"
 "Last-Translator: Mincho Kondarev <mkondarev@yahoo.de>\n"
 "Language-Team: Bulgarian <kde-i18n-doc@kde.org>\n"
 "Language: bg\n"
@@ -5894,9 +5894,6 @@ msgstr "Цифрова електроника"
 
 #. Help title
 #: activities/digital_electricity/ActivityInfo.qml:17
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "Create and simulate a digital logic circuit"
 msgctxt "ActivityInfo|"
 msgid "Create and simulate a digital logic circuit."
 msgstr "Създаване и симулиране на цифрова логическа схема"
@@ -8343,7 +8340,7 @@ msgstr "Кликни върху местоположението на даден
 #: activities/explore_monuments/resource/board/board7.qml:20
 msgctxt "board7|"
 msgid "Forbidden City"
-msgstr ""
+msgstr "Забраненият град"
 
 #: activities/explore_monuments/resource/board/board7.qml:18
 msgctxt "board7|"
@@ -8358,12 +8355,21 @@ msgid ""
 "wall, the Forbidden City was once inaccessible to the general public, "
 "symbolizing imperial power and exclusivity."
 msgstr ""
+"Забраненият град, разположен в сърцето на Пекин, Китай, е великолепен "
+"императорски дворцов комплекс, който служи като дом на китайските императори "
+"и политически център на страната в продължение на почти 500 години - от "
+"династията Мин (1368-1644 г.) до края на династията Цин (1644-1912 г.). "
+"Построен между 1406 г. и 1420 г., този обширен архитектурен шедьовър се "
+"простира на 180 акра и включва над 980 запазени сгради с 8700 стаи, "
+"представящи традиционния китайски дворцов дизайн. Заобиколен от ров и "
+"масивна стена, Забраненият град някога е бил недостъпен за широката публика, "
+"символизирайки императорската власт и изключителност."
 
 #: activities/explore_monuments/resource/board/board7.qml:28
 #: activities/explore_monuments/resource/board/board7.qml:31
 msgctxt "board7|"
 msgid "Leshan Giant Buddha"
-msgstr ""
+msgstr "Гигантският Буда от Лешан"
 
 #: activities/explore_monuments/resource/board/board7.qml:29
 msgctxt "board7|"
@@ -8378,15 +8384,22 @@ msgid ""
 "to prevent erosion. Its serene expression and intricate craftsmanship make "
 "it a symbol of spiritual and artistic achievement."
 msgstr ""
+"Гигантският Буда от Лешан, разположен в провинция Съчуан, Китай, "
+"представлява колосална статуя, издълбана в скала при сливането на реките "
+"Мин, Даду и Цинги. Издигайки се на 71 метра, тя е най-високата предмодерна "
+"статуя в света и е включена в списъка на ЮНЕСКО за световно наследство. "
+"Построена по време на династията Тан (713-803 г. сл. Хр.), статуята "
+"представлява Майтрея, Буда на бъдещето, и е създадена, за да успокои бурните "
+"води, които застрашават местния транспорт с лодки. Гениално проектирана, "
+"статуята включва скрита дренажна система за предотвратяване на ерозията. "
+"Нейното спокойно изражение и сложна изработка я превръщат в символ на "
+"духовно и художествено постижение."
 
 #: activities/explore_monuments/resource/board/board7.qml:39
 #: activities/explore_monuments/resource/board/board7.qml:42
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Mysore Palace"
 msgctxt "board7|"
 msgid "Potala Palace"
-msgstr "Дворец Майсур"
+msgstr "Дворец Потала"
 
 #: activities/explore_monuments/resource/board/board7.qml:40
 msgctxt "board7|"
@@ -8401,12 +8414,21 @@ msgid ""
 "religious studies and prayer. The Potala Palace stands as a testament to "
 "Tibet's spiritual and historical legacy."
 msgstr ""
+"Дворецът Потала, разположен на Червения хълм в Лхаса, Тибет, е емблематичен "
+"символ на тибетската култура и е включен в списъка на ЮНЕСКО за световно "
+"културно наследство. Първоначално построен през VII в. и разширен през XVII "
+"в., той служи като зимна резиденция на Далай Лама и център на тибетското "
+"управление. Издигащ се на 13 етажа и с над 1000 стаи, дворецът съчетава "
+"сложна тибетска архитектура, ярки стенописи и свещени реликви. Той е "
+"разделен на Бял дворец, в който се помещават административните помещения, и "
+"Червен дворец, посветен на религиозните изследвания и молитвите. Дворецът "
+"Потала е свидетелство за духовното и историческото наследство на Тибет."
 
 #: activities/explore_monuments/resource/board/board7.qml:50
 #: activities/explore_monuments/resource/board/board7.qml:53
 msgctxt "board7|"
 msgid "Terracotta Army"
-msgstr ""
+msgstr "Теракотената армия"
 
 #: activities/explore_monuments/resource/board/board7.qml:51
 msgctxt "board7|"
@@ -8418,12 +8440,18 @@ msgid ""
 "incredible detail, with each warrior uniquely crafted to represent the "
 "diverse ranks and roles of an ancient Chinese army."
 msgstr ""
+"Теракотената армия е колекция от хиляди глинени войници, коне и колесници в "
+"естествен размер, погребани заедно с първия китайски император Цин Шихуан, "
+"за да го придружават в задгробния живот. Открити през 1974 г. близо до Сиан, "
+"фигурите датират от около 210 г. пр.н.е. и са известни с невероятните си "
+"детайли, като всеки воин е уникално изработен, за да представи различните "
+"чинове и роли на древната китайска армия."
 
 #: activities/explore_monuments/resource/board/board7.qml:61
 #: activities/explore_monuments/resource/board/board7.qml:64
 msgctxt "board7|"
 msgid "Sun and Moon Pagodas"
-msgstr ""
+msgstr "Пагодите на Слънцето и Луната"
 
 #: activities/explore_monuments/resource/board/board7.qml:62
 msgctxt "board7|"
@@ -8438,15 +8466,22 @@ msgid ""
 "Illuminated at night, they are popular attractions showcasing traditional "
 "Chinese architecture and modern ingenuity."
 msgstr ""
+"Пагодите на Слънцето и Луната, разположени в Гуилин, Китай, са емблематични "
+"кули близнаци, които символизират културното и духовното наследство на "
+"града. Първоначално построени по време на династията Тан, те са "
+"реконструирани през XX в. като открояващи се забележителности на езерото "
+"Шанху. Пагодата на Слънцето, висока 41 м, е бронзова структура - най-"
+"високата по рода си в света, докато Пагодата на Луната, висока 35 м, е "
+"изградена от глазирани плочки. Тези пагоди олицетворяват хармонията на Ин и "
+"Ян и са свързани с подводен стъклен тунел. Осветени през нощта, те са "
+"популярни атракции, показващи традиционната китайска архитектура и "
+"съвременната изобретателност."
 
 #: activities/explore_monuments/resource/board/board7.qml:72
 #: activities/explore_monuments/resource/board/board7.qml:75
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Eiffel Tower"
 msgctxt "board7|"
 msgid "Diaolou Towers"
-msgstr "Айфелова кула"
+msgstr "Кулите Дяолоу"
 
 #: activities/explore_monuments/resource/board/board7.qml:73
 msgctxt "board7|"
@@ -8461,19 +8496,22 @@ msgid ""
 "UNESCO World Heritage Site in 2007, around 1,800 of the original 3,000 "
 "towers remain, offering insight into this unique architectural heritage."
 msgstr ""
+"Кулите Дяолоу, открити в Кайпинг, провинция Гуандун, Китай, са укрепени "
+"многоетажни постройки, построени в края на 19-ти и началото на 20-ти век за "
+"защита от бандити и наводнения. Съчетавайки западни архитектурни стилове "
+"като романски и бароков с традиционни китайски елементи, те отразяват "
+"богатството и влиянието на китайските емигранти в чужбина. Изградени със "
+"стоманобетон, тези кули символизират периода на културен и икономически "
+"преход в селски Китай. Обявени за обект на световното културно наследство на "
+"ЮНЕСКО през 2007 г., от първоначалните 3000 кули са останали около 1800, "
+"които предлагат представа за това уникално архитектурно наследство."
 
 #: activities/explore_monuments/resource/board/board7.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board7|"
 msgid "Monuments of China"
-msgstr "Паметници на културата на Индия"
+msgstr "Паметници на културата на Китай"
 
 #: activities/explore_monuments/resource/board/board7.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board7|"
 msgid "Click on the location of the given monument."
 msgstr "Кликни върху местоположението на дадения паметник."
@@ -8482,7 +8520,7 @@ msgstr "Кликни върху местоположението на даден
 #: activities/explore_monuments/resource/board/board8.qml:20
 msgctxt "board8|"
 msgid "The Pantheon"
-msgstr ""
+msgstr "Пантеонът в Рим"
 
 #: activities/explore_monuments/resource/board/board8.qml:18
 msgctxt "board8|"
@@ -8499,12 +8537,23 @@ msgid ""
 "centuries. The Pantheon’s harmonious proportions and historical significance "
 "make it a timeless masterpiece of classical architecture."
 msgstr ""
+"Пантеонът в Рим, Италия, е емблематичен древен храм, построен около 126 г. "
+"от н.е. по време на управлението на император Адриан на мястото на по-ранни "
+"постройки, поръчани от Марк Агрипа. Известен с архитектурния си блясък, той "
+"се отличава с масивен куполен покрив с централен окулус, символизиращ "
+"небето, който позволява на естествената светлина да осветява вътрешността. "
+"Първоначално е посветена на всички римски богове, но по-късно, през 609 г., "
+"е превърната в християнска църква, известна като базиликата „Света Мария и "
+"мъчениците“. Нейният купол, най-големият неармиран бетонен купол в света, "
+"демонстрира забележително инженерство и симетрия, вдъхновявайки архитектите "
+"в продължение на векове. Хармоничните пропорции и историческото значение на "
+"Пантеона го превръщат във вечен шедьовър на класическата архитектура."
 
 #: activities/explore_monuments/resource/board/board8.qml:28
 #: activities/explore_monuments/resource/board/board8.qml:31
 msgctxt "board8|"
 msgid "Duomo Di Milano"
-msgstr ""
+msgstr "Миланската катедрала"
 
 #: activities/explore_monuments/resource/board/board8.qml:29
 msgctxt "board8|"
@@ -8519,15 +8568,21 @@ msgid ""
 "the rooftop for breathtaking views of the city and the Alps. The Duomo "
 "stands as a testament to Italy's rich history and architectural brilliance."
 msgstr ""
+"Дуомо ди Милано, известна още като Миланската катедрала, е емблематичен "
+"готически шедьовър, разположен в сърцето на Милано, Италия. Строена в "
+"продължение на почти шест века, тя е една от най-големите катедрали в света "
+"и символ на художественото и културното наследство на Милано. Нейната сложна "
+"фасада е украсена с безброй статуи, кули и гаргойли, които отразяват "
+"величието на готическата архитектура. Посетителите могат да разгледат "
+"зашеметяващия му интериор с красиви витражи и сложни мраморни детайли или да "
+"се изкачат на покрива за спираща дъха гледка към града и Алпите. Дуомо е "
+"свидетелство за богатата история и архитектурния блясък на Италия."
 
 #: activities/explore_monuments/resource/board/board8.qml:39
 #: activities/explore_monuments/resource/board/board8.qml:42
-#, fuzzy
-#| msgctxt "board4|"
-#| msgid "Worms Cathedral"
 msgctxt "board8|"
 msgid "Florence Cathedral"
-msgstr "Катедралата в Вормс"
+msgstr "Катедралата във Флоренция"
 
 #: activities/explore_monuments/resource/board/board8.qml:40
 msgctxt "board8|"
@@ -8543,15 +8598,22 @@ msgid ""
 "drawing millions of visitors annually for its historical, cultural, and "
 "architectural significance."
 msgstr ""
+"Флорентинската катедрала, официално известна като Катедрале ди Санта Мария "
+"дел Фиоре, е известен шедьовър на готическата и ренесансовата архитектура, "
+"разположен във Флоренция, Италия. Завършена през 1436 г., тя е известна с "
+"масивния си купол с червени керемиди, проектиран от Филипо Брунелески, който "
+"остава инженерно чудо и символ на града. Сложната мраморна фасада на "
+"катедралата, добавена през XIX в., допълва богато украсения ѝ интериор и "
+"художествените ѝ съкровища. Заедно с Кампанелата на Джото и Баптистерията на "
+"Свети Йоан тя е част от световното културно наследство на ЮНЕСКО и привлича "
+"милиони посетители годишно заради историческото, културното и архитектурното "
+"си значение."
 
 #: activities/explore_monuments/resource/board/board8.qml:50
 #: activities/explore_monuments/resource/board/board8.qml:53
-#, fuzzy
-#| msgctxt "ActivityInfo|"
-#| msgid "The Tower of Hanoi"
 msgctxt "board8|"
 msgid "Leaning Tower of Pisa"
-msgstr "Кулата на Ханой"
+msgstr "Наклонената кула в Пиза"
 
 #: activities/explore_monuments/resource/board/board8.qml:51
 msgctxt "board8|"
@@ -8566,12 +8628,21 @@ msgid ""
 "with intricately carved columns and arches. Recognized as a UNESCO World "
 "Heritage Site, it remains a symbol of resilience and ingenuity."
 msgstr ""
+"Наклонената кула в Пиза, разположена в италианския град Пиза, е "
+"световноизвестно архитектурно чудо. Построена като свободно стояща "
+"камбанария на градската катедрала, тя е известна с непреднамереното си "
+"накланяне, причинено от нестабилната почва на основите. Започнат през 1173 "
+"г., строежът на кулата продължава близо 200 години, през които са положени "
+"усилия за стабилизиране на наклона ѝ. Издигаща се на приблизително 56 метра, "
+"кулата има осем етажа в романски стил, включително камбанария, украсена със "
+"сложно издълбани колони и арки. Призната за обект на световното наследство "
+"на ЮНЕСКО, тя остава символ на устойчивост и изобретателност."
 
 #: activities/explore_monuments/resource/board/board8.qml:61
 #: activities/explore_monuments/resource/board/board8.qml:64
 msgctxt "board8|"
 msgid "St Mark's Basilica"
-msgstr ""
+msgstr "Базиликата Сан Марко"
 
 #: activities/explore_monuments/resource/board/board8.qml:62
 msgctxt "board8|"
@@ -8587,12 +8658,23 @@ msgid ""
 "Adjacent to St. Mark's Square, it remains a symbol of Venice's historical, "
 "cultural, and religious heritage."
 msgstr ""
+"Базиликата „ Сан Марко“, разположена във Венеция, Италия, е емблематичен "
+"шедьовър на византийската архитектура и една от най-известните "
+"забележителности на града. Първоначално е построена през 828 г., за да "
+"съхранява мощите на свети Марк Евангелист, а през XI в. е преустроена в "
+"сегашния си вид. Известна с пищния си дизайн, базиликата представлява "
+"смесица от източни и западни влияния, което личи от петте й купола, сложните "
+"мозайки и богато украсената със статуи и дърворезби фасада. Интериорът е "
+"богато украсен със златни мозайки и мраморни подове, което показва "
+"богатството и мощта на Венецианската република. В непосредствена близост до "
+"площад „ Сан Марко“ той остава символ на историческото, културното и "
+"религиозното наследство на Венеция."
 
 #: activities/explore_monuments/resource/board/board8.qml:72
 #: activities/explore_monuments/resource/board/board8.qml:75
 msgctxt "board8|"
 msgid "Pompeii"
-msgstr ""
+msgstr "Помпей"
 
 #: activities/explore_monuments/resource/board/board8.qml:73
 msgctxt "board8|"
@@ -8608,31 +8690,32 @@ msgid ""
 "Site and remains one of the most important archaeological discoveries in "
 "history."
 msgstr ""
+"Помпей е древен римски град, разположен близо до днешен Неапол, Италия, "
+"известен с добре запазените останки, след като е бил погребан от изригването "
+"на вулкана Везувий през 79 г. Изригването отприщва смъртоносна комбинация от "
+"пепел, пемза и пирокластични потоци, които поглъщат града и неговите жители, "
+"запазвайки сгради, артефакти и дори човешки останки в невероятни детайли. "
+"Разкопките на Помпей дават ценни сведения за ежедневния римски живот, "
+"архитектура и общество, разкривайки град с добре планирани улици, домове, "
+"обществени бани и храмове. Понастоящем обектът е включен в списъка на "
+"световното културно наследство на ЮНЕСКО и остава едно от най-важните "
+"археологически открития в историята."
 
 #: activities/explore_monuments/resource/board/board8.qml:85
-#, fuzzy
-#| msgctxt "board2|"
-#| msgid "Monuments of India"
 msgctxt "board8|"
 msgid "Monuments of Italy"
-msgstr "Паметници на културата на Индия"
+msgstr "Паметници на културата на Италия"
 
 #: activities/explore_monuments/resource/board/board8.qml:88
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board8|"
 msgid "Click on the location of the given monument."
 msgstr "Кликни върху местоположението на дадения паметник."
 
 #: activities/explore_monuments/resource/board/board9.qml:17
 #: activities/explore_monuments/resource/board/board9.qml:20
-#, fuzzy
-#| msgctxt "ActivityConfig|"
-#| msgid "Mixed Case"
 msgctxt "board9|"
 msgid "Himeji Castle"
-msgstr "Смесени случаи"
+msgstr "Замъкът Химеджи"
 
 #: activities/explore_monuments/resource/board/board9.qml:18
 msgctxt "board9|"
@@ -8645,12 +8728,19 @@ msgid ""
 "the white plastered earthen walls and in the subtlety of the relationships "
 "between the building masses and the multiple roof layers."
 msgstr ""
+"Химеджи е най-добрият оцелял пример за японска замъчна архитектура от "
+"началото на XVII в., състоящ се от 83 сгради с високоразвити системи за "
+"защита и гениални защитни устройства, датиращи от началото на периода на "
+"шогуните. Той е шедьовър на дървеното строителство, съчетаващ функционалност "
+"с естетическа привлекателност, както в елегантния си вид, обединен от бяло "
+"измазаните глинени стени, така и в изяществото на взаимоотношенията между "
+"строителните конструкции и многобройните покривни слоеве."
 
 #: activities/explore_monuments/resource/board/board9.qml:28
 #: activities/explore_monuments/resource/board/board9.qml:31
 msgctxt "board9|"
 msgid "Hiroshima Peace Memorial Park"
-msgstr ""
+msgstr "Мемориалният парк на мира в Хирошима"
 
 #: activities/explore_monuments/resource/board/board9.qml:29
 msgctxt "board9|"
@@ -8666,12 +8756,22 @@ msgid ""
 "a solemn space for reflection, honoring the lives lost and advocating for "
 "global peace."
 msgstr ""
+"Мемориалният парк на мира в Хирошима е символ на мира и напомня за "
+"опустошителните последици от войната. Паркът се намира в Хирошима, Япония и "
+"е посветен на жертвите на атомната бомбардировка на 6 август 1945 г. Паркът "
+"включва няколко паметника, включително емблематичния Купол на атомната "
+"бомба, който някога е бил правителствена сграда, а сега е включен в списъка "
+"на световното наследство на ЮНЕСКО. В парка се намира и Мемориалният музей "
+"на мира в Хирошима, който запознава посетителите със събитията около "
+"бомбардировката и популяризира посланието за мир, ненасилие и значението на "
+"ядреното разоръжаване. Той служи като място за размисъл, в което се почитат "
+"загубените животи и се пропагандира световният мир."
 
 #: activities/explore_monuments/resource/board/board9.qml:39
 #: activities/explore_monuments/resource/board/board9.qml:42
 msgctxt "board9|"
 msgid "Arakura Fuji Sengen Shrine"
-msgstr ""
+msgstr "Светилището Аракура Фуджи Сенген"
 
 #: activities/explore_monuments/resource/board/board9.qml:40
 msgctxt "board9|"
@@ -8687,12 +8787,23 @@ msgid ""
 "cherry blossom trees bloom and crowds gather to enjoy the stunning view of "
 "Mt. Fuji."
 msgstr ""
+"Светилището е основано през 705 г., в знак на почит към божествеността на "
+"мястото. След голямото изригване на вулкана Фуджи през 807 г. императорът "
+"изпраща пратеник в това светилище, за да извърши ритуал за спиране на "
+"изригването. Говори се, че по време на Периода на воюващите царства, когато "
+"Такеда Нобутора, бащата на известния военачалник Такеда Шинген, се сражава "
+"със семейство Ходжо, той установява лагер тук, моли се за победа и печели "
+"битката. След това той посвещава меча си на това светилище. Днес местните "
+"жители и поклонници от далечни места посещават светилището, за да прогонят "
+"злото, да се помолят за семейно щастие и безопасно раждане. През пролетта "
+"вишневите дръвчета цъфтят и хората се събират, за да се насладят на "
+"зашеметяващата гледка към планината Фуджи."
 
 #: activities/explore_monuments/resource/board/board9.qml:50
 #: activities/explore_monuments/resource/board/board9.qml:53
 msgctxt "board9|"
 msgid "Okinawa Shuri Castle"
-msgstr ""
+msgstr "Замъкът Шури в Окинава"
 
 #: activities/explore_monuments/resource/board/board9.qml:51
 msgctxt "board9|"
@@ -8708,19 +8819,25 @@ msgid ""
 "much of the castle was lost in a fire in 2019, but efforts to restore it are "
 "ongoing, reflecting its enduring importance to Okinawa's heritage."
 msgstr ""
+"Замъкът Шури, разположен в Наха, Окинава, Япония, е обект на световното "
+"наследство на ЮНЕСКО и символ на богатата културна история на Кралство Рюкю. "
+"Първоначално построен през 14-ти век, замъкът е служил като политически, "
+"икономически и културен център на кралството в продължение на векове. "
+"Известен с отличителното си сливане на китайски и японски архитектурни "
+"стилове, замъкът Шури се отличава с лакирани структури в милиони цветове, "
+"богато украсени декорации и внушително разположение на върха на хълма. "
+"Въпреки че е разрушен по време на Втората световна война, той е щателно "
+"реконструиран и се превръща в ключова туристическа атракция. Трагично е, че "
+"голяма част от замъка беше изгубена при пожар през 2019 г., но усилията за "
+"възстановяването му продължават, което отразява трайното му значение за "
+"наследството на Окинава."
 
 #: activities/explore_monuments/resource/board/board9.qml:63
-#, fuzzy
-#| msgctxt "board3|"
-#| msgid "Monuments of France"
 msgctxt "board9|"
 msgid "Monuments of Japan"
-msgstr "Паметници на културата на Франция"
+msgstr "Паметници на културата на Япония"
 
 #: activities/explore_monuments/resource/board/board9.qml:66
-#, fuzzy
-#| msgctxt "board1|"
-#| msgid "Click on the location of the given monument."
 msgctxt "board9|"
 msgid "Click on the location of the given monument."
 msgstr "Кликни върху местоположението на дадения паметник."
