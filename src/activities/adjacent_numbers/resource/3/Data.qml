@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Alexandre Laurent <littlewhite.dev@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("Find numbers between 0 and 100.")

@@ -10,7 +10,7 @@
  */
 .pragma library
 .import "qrc:/gcompris/src/core/core.js" as Core
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 .import "moneyConstants.js" as MoneyConstants
 
 var url = "qrc:/gcompris/src/activities/money/resource/"

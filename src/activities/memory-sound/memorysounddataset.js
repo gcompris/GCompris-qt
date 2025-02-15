@@ -5,7 +5,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/memory-sound/resource/"
 

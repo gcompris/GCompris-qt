@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2023 Bruno ANSELME <be.root@free.fr>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 ActivityInfo {
   name: "graduated_line_read/GraduatedLineRead.qml"

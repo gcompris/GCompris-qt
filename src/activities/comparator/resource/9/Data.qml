@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("2 decimal places between 0 and 99.99.")

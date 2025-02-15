@@ -13,7 +13,7 @@ import QtQuick 2.12
 import QtQuick.Particles 2.12
 import "clickgame.js" as Activity
 import "../../core"
-import GCompris 1.0
+import core 1.0
 
 AnimatedSprite {
     id: fish

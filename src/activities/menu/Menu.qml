@@ -9,7 +9,7 @@
  */
 import QtQuick 2.12
 import "../../core"
-import GCompris 1.0
+import core 1.0
 import QtQuick.Effects
 import "qrc:/gcompris/src/core/core.js" as Core
 

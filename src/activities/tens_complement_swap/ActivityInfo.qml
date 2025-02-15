@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2022 Samarth Raj <mailforsamarth@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 ActivityInfo {
   name: "tens_complement_swap/Tens_complement_swap.qml"

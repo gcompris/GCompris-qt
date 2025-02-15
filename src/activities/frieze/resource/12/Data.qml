@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("Remember and copy this frieze: patterns between 4 and 7, any combination of shapes, colors/signs and sizes.")

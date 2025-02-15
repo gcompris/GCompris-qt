@@ -9,7 +9,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 

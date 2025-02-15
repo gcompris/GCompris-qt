@@ -12,7 +12,7 @@ import QtQuick 2.12
 
 import "../../core"
 import "graph-coloring.js" as Activity
-import GCompris 1.0
+import core 1.0
 
 ActivityBase {
     id: activity

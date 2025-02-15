@@ -11,7 +11,7 @@ import QtQuick 2.12
 
 import "nine_men_morris.js" as Activity
 
-import GCompris 1.0
+import core 1.0
 
 Image {
     id: piece

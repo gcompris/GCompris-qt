@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import QtQuick.Controls
 import QtQuick.Layouts 1.12
-import GCompris 1.0
+import core 1.0
 
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset

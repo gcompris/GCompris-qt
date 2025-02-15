@@ -5,7 +5,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-.import GCompris 1.0 as GCompris //for ApplicationInfo
+.import core 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 

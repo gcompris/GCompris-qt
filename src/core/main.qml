@@ -12,7 +12,7 @@ import QtQuick.Controls.Basic
 import QtQuick.Window 2.12
 import QtQml 2.12
 
-import GCompris 1.0
+import core 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
 /**

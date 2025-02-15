@@ -9,7 +9,7 @@
 */
 
 import QtQuick 2.12
-import GCompris 1.0
+import core 1.0
 
 /**
  * A QML component to display an answer button.

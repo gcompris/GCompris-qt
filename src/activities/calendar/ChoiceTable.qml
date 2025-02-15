@@ -12,7 +12,7 @@
 // Set different behaviours and animations on selecting a day from day table here.
 
 import QtQuick 2.12
-import GCompris 1.0
+import core 1.0
 import "../../core"
 import "calendar.js" as Activity
 

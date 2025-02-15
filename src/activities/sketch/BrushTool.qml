@@ -6,7 +6,7 @@
  */
 
 import QtQuick
-import GCompris 1.0
+import core 1.0
 
 Item {
     id: brushTool

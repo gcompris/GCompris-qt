@@ -7,7 +7,7 @@
 
 .pragma library
 .import QtQuick as Quick
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/sketch/resource/";
 var items;

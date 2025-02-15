@@ -9,7 +9,7 @@
  */
 
 .pragma library
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var contentText

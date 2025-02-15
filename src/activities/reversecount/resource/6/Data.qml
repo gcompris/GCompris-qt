@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("Numbers between %1 and %2.").arg(3).arg(7)

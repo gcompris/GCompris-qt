@@ -11,7 +11,7 @@
 
 import QtQuick 2.12
 import QtQuick.Shapes 1.5
-import GCompris 1.0
+import core 1.0
 
 import "../../core"
 import "hexagon.js" as Activity

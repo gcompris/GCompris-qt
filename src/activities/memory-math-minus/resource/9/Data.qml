@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import GCompris 1.0
+import core 1.0
 import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
 
 Data {

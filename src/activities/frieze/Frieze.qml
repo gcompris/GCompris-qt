@@ -8,7 +8,7 @@
  *              https://irem.univ-nantes.fr/wp-content/uploads/2019/12/Algorithmes.pdf
  */
 import QtQuick 2.12
-import GCompris 1.0
+import core 1.0
 
 import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core

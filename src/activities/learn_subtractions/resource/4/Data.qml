@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("Subtractions with 1, 2, 3, 4, 5, 6 and 7.")
