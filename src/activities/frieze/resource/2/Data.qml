@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 // 10 levels. 2 shapes with different colors and 1 size. Count : 8, 10, 12
 Data {

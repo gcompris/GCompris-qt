@@ -6,7 +6,7 @@
  *   Bruno Anselme <be.root@free.fr>
  *
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("Solve addition, 2 digits, 2 lines, without carry.")

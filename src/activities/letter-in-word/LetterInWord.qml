@@ -14,7 +14,7 @@
  */
 
 import QtQuick 2.12
-import GCompris 1.0
+import core 1.0
 import "../../core"
 import "letter-in-word.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core

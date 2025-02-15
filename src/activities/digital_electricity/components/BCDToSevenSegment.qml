@@ -11,7 +11,7 @@
 import QtQuick 2.12
 import "../digital_electricity.js" as Activity
 
-import GCompris 1.0
+import core 1.0
 
 ElectricalComponent {
     id: bcdTo7Segment

@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     //: \u002B is the unicode character for addition mathematical operator (+), \u2212 for subtraction (-), \u00D7 for multiplication (*)

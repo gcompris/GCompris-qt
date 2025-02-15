@@ -9,7 +9,7 @@
  */
 pragma Singleton
 import QtQuick 2.12
-import GCompris 1.0
+import core 1.0
 
 /**
  * A QML singleton to store all shared style-related values (common colors, borders and margins)

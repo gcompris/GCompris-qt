@@ -10,8 +10,8 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import GCompris 1.0
-import GCompris 1.0 as GCompris
+import core 1.0
+import core 1.0 as GCompris
 
 Data {
     objective: qsTr("Match the numbers up to 6.")

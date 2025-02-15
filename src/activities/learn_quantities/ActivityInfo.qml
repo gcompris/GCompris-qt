@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2021 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 ActivityInfo {
   name: "learn_quantities/Learn_quantities.qml"

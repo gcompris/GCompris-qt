@@ -4,7 +4,7 @@
  * SPDX-FileCopyrightText: 2024 Timothée Giet <animtim@gmail.com>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 ActivityInfo {
   name: "vertical_subtraction/VerticalSubtraction.qml"

@@ -15,7 +15,7 @@
  * Number of graduations = number of segments + 1
  * Constraint : segments[max] * steps[max] <= range[max] (Minimal check made with js: console warning and values adjusted)
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     objective: qsTr("Graduation to find between 1 and 5.")

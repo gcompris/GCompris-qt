@@ -8,7 +8,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import GCompris 1.0
+import core 1.0
 
 /*
 Here is an example of what data is expected for a level with specific numbers:

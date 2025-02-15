@@ -16,7 +16,7 @@ import QtQuick 2.12
 import "../../core"
 import "superbrain.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
-import GCompris 1.0
+import core 1.0
 
 ActivityBase {
     id: activity

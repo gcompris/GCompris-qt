@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: YEAR NAME <EMAIL>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 ActivityInfo {
   name: "template/Template.qml"

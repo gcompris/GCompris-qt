@@ -13,7 +13,7 @@ import QtQuick 2.12
 import "../../core"
 import "align4.js" as Activity
 
-import GCompris 1.0
+import core 1.0
 
 ActivityBase {
     id: activity

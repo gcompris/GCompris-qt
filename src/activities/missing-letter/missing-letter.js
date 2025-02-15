@@ -11,7 +11,7 @@
 .pragma library
 .import QtQuick 2.12 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
-.import GCompris 1.0 as GCompris //for ApplicationInfo
+.import core 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var url = "qrc:/gcompris/src/activities/missing-letter/resource/"

@@ -8,7 +8,7 @@
  */
 
 import QtQuick
-import GCompris 1.0
+import core 1.0
 
 // for Shapes
 import QtQuick.Shapes

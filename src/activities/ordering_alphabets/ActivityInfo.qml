@@ -10,7 +10,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-import GCompris 1.0
+import core 1.0
 
 ActivityInfo {
     name: "ordering_alphabets/OrderingAlphabets.qml"

@@ -7,7 +7,7 @@
 import QtQuick 2.12
 import QtQml.Models 2.12
 
-import GCompris 1.0
+import core 1.0
 import "../../core"
 import "left_right_click.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core

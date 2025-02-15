@@ -7,7 +7,7 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 .pragma library
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var numberOfLevel;

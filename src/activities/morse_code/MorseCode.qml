@@ -14,7 +14,7 @@
 import QtQuick 2.15
 import "../../core"
 import "../../core/core.js" as Core
-import GCompris 1.0
+import core 1.0
 
 ActivityBase {
     id: activity

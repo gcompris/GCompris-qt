@@ -17,7 +17,7 @@
 */
 .pragma library
 .import QtQuick 2.12 as Quick
-.import GCompris 1.0 as GCompris
+.import core 1.0 as GCompris
 .import Box2D 2.0 as Box2D
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import QtQml 2.12 as Qml

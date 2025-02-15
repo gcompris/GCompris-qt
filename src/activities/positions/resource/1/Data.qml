@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 import "qrc:/gcompris/src/activities/positions/positions.js" as Activity
 
 Data {

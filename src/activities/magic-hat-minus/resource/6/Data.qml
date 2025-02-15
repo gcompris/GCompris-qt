@@ -7,7 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
-import GCompris 1.0
+import core 1.0
 
 Data {
     //: Coefficients are the numbers by which the numbers of stars are multiplied to get the total
