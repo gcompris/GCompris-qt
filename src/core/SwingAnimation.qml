@@ -20,21 +20,21 @@ SequentialAnimation {
     NumberAnimation {
         target: swing.target
         property: "rotation"
-        from: 0; to: amplitude
+        from: 0; to: swing.amplitude
         duration: swing.duration / 4
         easing.type: Easing.OutQuad
     }
     NumberAnimation {
         target: swing.target
         property: "rotation"
-        from: amplitude; to: -amplitude
+        from: swing.amplitude; to: -swing.amplitude
         duration: swing.duration / 2
         easing.type: Easing.InOutQuad
     }
     NumberAnimation {
         target: swing.target
         property: "rotation"
-        from: -amplitude; to: 0
+        from: -swing.amplitude; to: 0
         duration: swing.duration / 4
         easing.type: Easing.InQuad
     }

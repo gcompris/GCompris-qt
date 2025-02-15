@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import GCompris 1.0
 
@@ -156,7 +158,7 @@ Item {
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: (mode == "number") ? item.value : romans[item.value]
+        text: (item.mode == "number") ? item.value : item.romans[item.value]
     }
 
     Item {
@@ -165,8 +167,9 @@ Item {
         anchors.margins: item.margins
         visible: (item.mode == "image")
         Repeater {
-            model: butterfliesModel[item.value][0]
+            model: item.butterfliesModel[item.value][0]
             Image {
+                required property var modelData
                 source: modelData.itemSource
                 x: contentImage.width * modelData.itemX
                 y: contentImage.height * modelData.itemY
@@ -226,6 +229,7 @@ Item {
         Repeater {
             model: 9
             Item {
+                required property int index
                 width: contentImage.width * 0.32
                 height: width
                 Rectangle {
@@ -266,9 +270,9 @@ Item {
         acceptedButtons: Qt.LeftButton | Qt.RightButton
         onClicked: (mouse) => {
             if (mouse.button == Qt.LeftButton)
-                up()
+                item.up()
             else
-                down()
+                item.down()
         }
     }
 
@@ -277,7 +281,7 @@ Item {
         anchors.fill: parent
         maximumTouchPoints: 1
         onPressed: {
-            up()
+            item.up()
         }
     }
 

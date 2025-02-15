@@ -216,8 +216,8 @@ Image {
         }
         onStopped: {
             bonus.stop();
-            if(!bonusStopped)
-                isWin ? win() : loose();
+            if(!bonus.bonusStopped)
+                bonus.isWin ? win() : loose();
         }
     }
 
@@ -229,6 +229,6 @@ Image {
     Timer {
         id: timer
         interval: 500
-        onTriggered: isWin ? bonus._good() : bonus._bad()
+        onTriggered: bonus.isWin ? bonus._good() : bonus._bad()
     }
 }

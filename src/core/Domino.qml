@@ -88,7 +88,7 @@ Flipable {
             margins: flipable.radius
             numberColor: flipable.pointColor
             valueMax: flipable.valueMax
-            onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
+            onValueChanged: if(flipable.flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             soundEffects: flipable.soundEffects
         }
@@ -109,7 +109,7 @@ Flipable {
             margins: flipable.radius
             numberColor: flipable.pointColor
             valueMax: flipable.valueMax
-            onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
+            onValueChanged: if(flipable.flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             soundEffects: flipable.soundEffects
         }

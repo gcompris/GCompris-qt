@@ -144,7 +144,7 @@ Rectangle {
         fontSizeMode: Text.Fit
         font.bold: true
         color: GCStyle.darkText
-        text: message
+        text: score.message
     }
 
     SequentialAnimation {

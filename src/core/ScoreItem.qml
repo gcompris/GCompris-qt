@@ -175,7 +175,7 @@ Item {
 
         Image {
             id: backgroundImage
-            source: backgroundImageSource
+            source: scoreItem.backgroundImageSource
             sourceSize.height: height * 1.4
             sourceSize.width: width * 1.4
             anchors.fill: parent
@@ -183,7 +183,7 @@ Item {
 
             Image {
                 id: playerImage
-                source: playerImageSource
+                source: scoreItem.playerImageSource
                 fillMode: Image.PreserveAspectFit
                 height: parent.height*0.8
                 sourceSize.height: height * 1.4
@@ -211,7 +211,7 @@ Item {
                 verticalAlignment: Text.AlignVCenter
                 color: GCStyle.darkText
                 fontSizeMode: Text.Fit
-                text: playerScore
+                text: scoreItem.playerScore
             }
         }
 
@@ -275,8 +275,8 @@ Item {
         transform: Scale {
             id: scaleTransform
             property real scale: 1
-            origin.x: playerScaleOriginX
-            origin.y: playerScaleOriginY
+            origin.x: scoreItem.playerScaleOriginX
+            origin.y: scoreItem.playerScaleOriginY
             xScale: scale
             yScale: scale
         }

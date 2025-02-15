@@ -9,6 +9,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
@@ -232,13 +234,13 @@ Item {
         target: DownloadManager
 
         function onDownloadStarted() {
-            content.value |= content.download;
+            bar.content.value |= bar.content.download;
         }
         function onAllDownloadsFinished() {
-            content.value &= ~content.download;
+            bar.content.value &= ~bar.content.download;
         }
         function onError() {
-            content.value &= ~content.download;
+            bar.content.value &= ~bar.content.download;
         }
     }
 
@@ -247,7 +249,7 @@ Item {
         source: "qrc:/gcompris/src/core/resource/bar_open.svg";
         anchors.bottom: parent.bottom
         anchors.left: parent.left
-        width: buttonSize
+        width: bar.buttonSize
         height: width
         sourceSize.width: width
         sourceSize.height: height
@@ -277,29 +279,30 @@ Item {
     }
 
     Connections {
-        target: content
+        target: bar.content
         function onValueChanged() {
-            updateContent();
+            bar.updateContent();
         }
     }
 
     onContentChanged: {
-        updateContent();
+        bar.updateContent();
     }
 
     Row {
         id: barRow
-        spacing: buttonMargins
-        height: buttonSize
+        spacing: bar.buttonMargins
+        height: bar.buttonSize
         anchors.bottom: parent.bottom
-        anchors.bottomMargin: buttonMargins * 2
-        anchors.topMargin: buttonMargins // used in hidden state
+        anchors.bottomMargin: bar.buttonMargins * 2
+        anchors.topMargin: bar.buttonMargins // used in hidden state
         anchors.left: openBar.right
-        anchors.leftMargin: buttonMargins
+        anchors.leftMargin: bar.buttonMargins
         property bool isHidden: false
         Repeater {
-            model: buttonModel
+            model: bar.buttonModel
             Loader {
+                required property var modelData
                 sourceComponent: modelData.bid
             }
         }
@@ -313,7 +316,7 @@ Item {
                 AnchorChanges {
                     target: barRow
                     anchors.top: undefined
-                    anchors.bottom: parent.bottom
+                    anchors.bottom: bar.bottom
                 }
             },
             State {
@@ -321,7 +324,7 @@ Item {
 
                 AnchorChanges {
                     target: barRow
-                    anchors.top: parent.bottom
+                    anchors.top: bar.bottom
                     anchors.bottom: undefined
                 }
             }
@@ -360,7 +363,7 @@ Item {
         id: exit
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: Core.quit(bar.parent.parent);
         }
@@ -369,7 +372,7 @@ Item {
         id: about
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svg";
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.aboutClicked();
         }
@@ -378,7 +381,7 @@ Item {
         id: help
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svg";
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.helpClicked();
         }
@@ -387,8 +390,8 @@ Item {
         id: previous
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-            height: buttonSize
-            width: buttonSize * 0.5
+            height: bar.buttonSize
+            width: bar.buttonSize * 0.5
             visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
@@ -401,9 +404,9 @@ Item {
         id: levelText
         GCText {
             id: levelTextId
-            text: "" + level
-            width: buttonSize * 0.8
-            height: buttonSize
+            text: "" + bar.level
+            width: bar.buttonSize * 0.8
+            height: bar.buttonSize
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             fontSizeMode: Text.Fit
@@ -412,15 +415,15 @@ Item {
             style: Text.Outline
             styleColor: "black"
             color: "white"
-            visible: content.level & content.value && barRow.isHidden === false
+            visible: bar.content.level & bar.content.value && barRow.isHidden === false
         }
     }
     Component {
         id: next
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            height: buttonSize
-            width: buttonSize * 0.5
+            height: bar.buttonSize
+            width: bar.buttonSize * 0.5
             visible: barRow.isHidden === false
             onClicked: {
                 if(typeof bonus !== "undefined")
@@ -433,7 +436,7 @@ Item {
         id: repeat
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.repeatClicked();
         }
@@ -442,7 +445,7 @@ Item {
         id: hint
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_hint.svg"
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.hintClicked();
         }
@@ -451,7 +454,7 @@ Item {
         id: activityConfigImage
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg"
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.activityConfigClicked();
         }
@@ -460,7 +463,7 @@ Item {
         id: reload
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.reloadClicked();
         }
@@ -469,7 +472,7 @@ Item {
         id: config
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_config.svg"
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: bar.configClicked();
         }
@@ -481,7 +484,7 @@ Item {
             source: ActivityInfoTree.startingActivity != "" ?
                 "qrc:/gcompris/src/core/resource/bar_exit.svg" :
                 "qrc:/gcompris/src/core/resource/bar_home.svg"
-            width: buttonSize
+            width: bar.buttonSize
             visible: barRow.isHidden === false
             onClicked: {
                 bar.homeClicked();

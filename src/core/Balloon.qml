@@ -167,6 +167,6 @@ Image {
                 }
             }
         }
-        ScriptAction { script: timeout(); }
+        ScriptAction { script: balloon.timeout(); }
     }
 }

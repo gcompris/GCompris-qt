@@ -252,7 +252,7 @@ Rectangle {
                     // Load configuration at start of activity
                     // in the menu, it's done when the visibility property
                     // of the dialog changes
-                    onItemChanged: if(!inMenu) { initializePanel(); }
+                    onItemChanged: if(!dialogChooseLevel.inMenu) { initializePanel(); }
 
                     function initializePanel() {
                         if(item) {

@@ -125,7 +125,7 @@ Item {
     Rectangle {
         id: rect
         anchors.fill: parent
-        color: normalStateColor
+        color: button.normalStateColor
         opacity: 0.5
     }
     ParticleSystemStarLoader {
@@ -145,20 +145,20 @@ Item {
         width: button.width
         fontSizeMode: Text.Fit
         font.bold: true
-        text: textLabel
+        text: button.textLabel
         color: GCStyle.darkText
     }
 
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        enabled: !blockClicks
+        enabled: !button.blockClicks
         onPressed: button.pressed()
     }
 
     SequentialAnimation {
         id: correctAnswerAnimation
-        onStopped: correctlyPressed()
+        onStopped: button.correctlyPressed()
         ScriptAction {
             script: {
                 if (typeof(feedback) === "object")
@@ -170,12 +170,12 @@ Item {
         PropertyAction {
             target: rect
             property: "color"
-            value: correctStateColor
+            value: button.correctStateColor
         }
         PropertyAnimation {
             target: rect
             property: "color"
-            to: normalStateColor
+            to: button.normalStateColor
             duration: 700
         }
         PauseAnimation {
@@ -185,13 +185,13 @@ Item {
 
     SequentialAnimation {
         id: wrongAnswerAnimation
-        onStopped: incorrectlyPressed()
+        onStopped: button.incorrectlyPressed()
         ParallelAnimation {
             SequentialAnimation {
                 PropertyAction {
                     target: rect
                     property: "color"
-                    value: wrongStateColor
+                    value: button.wrongStateColor
                 }
                 ScriptAction {
                     script: {
@@ -202,7 +202,7 @@ Item {
                 PropertyAnimation {
                     target: rect
                     property: "color"
-                    to: normalStateColor
+                    to: button.normalStateColor
                     duration: 600
                 }
             }
@@ -210,14 +210,14 @@ Item {
                 PropertyAnimation {
                     target: label
                     property: "anchors.horizontalCenterOffset"
-                    to: -wrongAnswerShakeAmplitude
+                    to: -button.wrongAnswerShakeAmplitude
                     easing.type: Easing.InCubic
                     duration: 120
                 }
                 PropertyAnimation {
                     target: label
                     property: "anchors.horizontalCenterOffset"
-                    to: wrongAnswerShakeAmplitude
+                    to: button.wrongAnswerShakeAmplitude
                     easing.type: Easing.InOutCubic
                     duration: 220
                 }
@@ -233,7 +233,7 @@ Item {
         PropertyAnimation {
             target: rect
             property: "color"
-            to: normalStateColor
+            to: button.normalStateColor
             duration: 450
         }
     }

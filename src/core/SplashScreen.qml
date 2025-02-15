@@ -7,6 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 import QtQuick
 
 Rectangle {
@@ -32,7 +33,7 @@ Rectangle {
         repeat: true
         interval: 500
         onTriggered: {
-            currentCircle = currentCircle >= 2 ? 0 : ++currentCircle;
+            splash.currentCircle = splash.currentCircle >= 2 ? 0 : ++splash.currentCircle;
         }
     }
 
@@ -45,10 +46,11 @@ Rectangle {
         Repeater {
             model: 3
             Rectangle {
+                required property int index
                 width: loadingCircles.spacing
                 height: width
                 radius: width
-                color: fullyLoaded || currentCircle == index ? "#FFF" : "#80FFFFFF"
+                color: fullyLoaded || splash.currentCircle == index ? "#FFF" : "#80FFFFFF"
                 border.color: "#80FFFFFF"
                 border.width: 3
             }

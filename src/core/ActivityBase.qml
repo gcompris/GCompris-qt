@@ -230,7 +230,7 @@ Item {
 
     Loader {
         id: activity
-        sourceComponent: pageComponent
+        sourceComponent: page.pageComponent
         anchors.fill: parent
     }
 
