@@ -97,7 +97,7 @@ Flipable {
         Rectangle {
             anchors.centerIn: parent
             width: GCStyle.thinnestBorder
-            height: front.height * 0.7
+            height: flipable.front.height * 0.7
             color: flipable.borderColor
         }
 
