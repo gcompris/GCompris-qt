@@ -50,7 +50,7 @@ Rectangle {
                 width: loadingCircles.spacing
                 height: width
                 radius: width
-                color: fullyLoaded || splash.currentCircle == index ? "#FFF" : "#80FFFFFF"
+                color: splash.fullyLoaded || splash.currentCircle == index ? "#FFF" : "#80FFFFFF"
                 border.color: "#80FFFFFF"
                 border.width: 3
             }
