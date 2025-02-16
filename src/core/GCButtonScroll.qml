@@ -37,22 +37,22 @@ Item {
 
     BarButton {
         id: scrollUp
-        width: isHorizontal ? parent.height : parent.width
+        width: scrollButtons.isHorizontal ? scrollButtons.height : scrollButtons.width
         source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
         rotation: 180
-        anchors.top: isHorizontal ? undefined : parent.top
-        anchors.left: isHorizontal ? parent.left : undefined
-        onClicked: up()
-        visible: upVisible
+        anchors.top: scrollButtons.isHorizontal ? undefined : parent.top
+        anchors.left: scrollButtons.isHorizontal ? scrollButtons.left : undefined
+        onClicked: scrollButtons.up()
+        visible: scrollButtons.upVisible
     }
 
     BarButton {
         id: scrollDown
-        width: isHorizontal ? parent.height : parent.width
+        width: scrollButtons.isHorizontal ? scrollButtons.height : scrollButtons.width
         source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
         anchors.bottom: parent.bottom
-        anchors.right: isHorizontal ? parent.right : undefined
-        onClicked: down()
-        visible: downVisible
+        anchors.right: scrollButtons.isHorizontal ? scrollButtons.right : undefined
+        onClicked: scrollButtons.down()
+        visible: scrollButtons.downVisible
     }
 }
