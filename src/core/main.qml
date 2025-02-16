@@ -7,6 +7,8 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
+
 import QtQuick 2.12
 import QtQuick.Controls.Basic
 import QtQuick.Window 2.12
@@ -145,9 +147,9 @@ Window {
             }
 
             function playWelcome() {
-                if(!welcomePlayed) {
+                if(!main.welcomePlayed) {
                     audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
-                    welcomePlayed = true;
+                    main.welcomePlayed = true;
                 }
             }
         }
@@ -278,7 +280,7 @@ Window {
             button1Text: qsTr("Apply")
             button2Text: qsTr("Cancel")
             onButton1Hit: {
-                newDatasetsModel.forEach(function(activity) {
+                newDatasetsDialog.newDatasetsModel.forEach(function(activity) {
                     if(activity.overrideExistingLevels) {
                         ActivityInfoTree.resetLevels(activity.activityName);
                     }
@@ -297,12 +299,13 @@ Window {
                         delegate: GCDialogCheckBox {
                             id: activityCheckbox
                             width: parent.width
+                            required property var modelData
                             labelTextFontSize: 12
                             indicatorImageHeight: 40 * ApplicationInfo.ratio
                             text: modelData.activityTitle
                             checked: modelData.overrideExistingLevels
                             onClicked: {
-                                var dataset = newDatasetsModel.find(function(v) {
+                                var dataset = newDatasetsDialog.newDatasetsModel.find(function(v) {
                                     return v.activity == modelData.activity;
                                 })
                                 dataset.overrideExistingLevels = checked;
@@ -443,7 +446,7 @@ Window {
         onTriggered: {
             if(ActivityInfoTree.startingActivity !== "") {
                 // Don't play welcome intro
-                welcomePlayed = true;
+                main.welcomePlayed = true;
                 startApplicationTimer.start();
             }
             else if (DownloadManager.areVoicesRegistered(ApplicationSettings.locale)) {
@@ -465,7 +468,7 @@ Window {
             else {
                 DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
             }
-            startLoadingFinished = true;
+            main.startLoadingFinished = true;
         }
     }
     property bool activitiesLoaded: false
@@ -485,7 +488,7 @@ Window {
         // We display the splash screen if we are loading GCompris (startLoadingFinished) and
         // when we are starting an activity via --launch
         visible: !ApplicationInfo.isMobile && (
-                     !startLoadingFinished || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active)))
+                     !main.startLoadingFinished || (ActivityInfoTree.startingActivity != "" && (pageView.depth == 1 || loading.active)))
         anchors.fill: parent
     }
 
