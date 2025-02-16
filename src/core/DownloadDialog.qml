@@ -280,7 +280,7 @@ Item {
                 abortButton.selected = !abortButton.selected;
                 backgroundButton.selected = !backgroundButton.selected;
             } else if(abortButton.visible) {
-                button1.selected = true;
+                abortButton.selected = true;
             }
         }
         if(event.key === Qt.Key_Down || event.key === Qt.Key_Right) {
