@@ -94,10 +94,10 @@ Item {
 
     Item {
         id: introArea
-        x: customIntroArea ? customIntroArea.x : GCStyle.baseMargins
-        y: customIntroArea ? customIntroArea.y : GCStyle.baseMargins
-        width: customIntroArea ? customIntroArea.width : parent.width - 2 * GCStyle.baseMargins
-        height: customIntroArea ? customIntroArea.height : parent.height - GCStyle.baseMargins - bar.height * 2
+        x: message.customIntroArea ? message.customIntroArea.x : GCStyle.baseMargins
+        y: message.customIntroArea ? message.customIntroArea.y : GCStyle.baseMargins
+        width: message.customIntroArea ? message.customIntroArea.width : message.width - 2 * GCStyle.baseMargins
+        height: message.customIntroArea ? message.customIntroArea.height : message.height - GCStyle.baseMargins - bar.height * 2
     }
 
     // to avoid clicking on the activity
@@ -137,11 +137,11 @@ Item {
         anchors.left: introTextContainer.left
         anchors.top: introTextContainer.bottom
         anchors.topMargin: introText.anchors.margins
-        visible: index != 0
+        visible: message.index != 0
 
         text: qsTr("Previous")
 
-        onClicked: --index;
+        onClicked: --message.index;
     }
 
     IntroButton {
@@ -152,11 +152,11 @@ Item {
         anchors.horizontalCenter: introTextContainer.horizontalCenter
         anchors.top: introTextContainer.bottom
         anchors.topMargin: introText.anchors.margins
-        visible: index != (intro.count - 1)
+        visible: message.index != (message.intro.count - 1)
 
         text: qsTr("Next")
 
-        onClicked: index++;
+        onClicked: message.index++;
     }
 
     IntroButton {
@@ -171,7 +171,7 @@ Item {
         text: nextButton.visible ? qsTr("Skip") : qsTr("Start")
 
         onClicked: {
-            index = -1;
+            message.index = -1;
             message.introDone();
         }
     }

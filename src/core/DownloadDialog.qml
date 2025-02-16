@@ -125,11 +125,11 @@ Item {
         id: getFocusTimer
         interval: 250
         onTriggered: {
-            if(!messageDisplayed) {
+            if(!downloadDialog.messageDisplayed) {
                 downloadDialog.forceActiveFocus();
                 downloadDialog.parent.Keys.enabled = false;
             } else {
-                messageDialog.forceActiveFocus();
+                downloadDialog.messageDialog.forceActiveFocus();
                 downloadDialog.parent.Keys.enabled = false;
             }
         }
@@ -323,10 +323,10 @@ Item {
             //console.warn("DownloadDialog: DM reports error: " + code + ": " + msg);
             downloadDialog.finished();
             if (downloadDialog.reportError
-                    && code != 5 && !messageDisplayed) {  // no error: OperationCanceledError
+                    && code != 5 && !downloadDialog.messageDisplayed) {  // no error: OperationCanceledError
                 // show error message
-                messageDisplayed = true;
-                messageDialog = Core.showMessageDialog(downloadDialog.parent,
+                downloadDialog.messageDisplayed = true;
+                downloadDialog.messageDialog = Core.showMessageDialog(downloadDialog.parent,
                                                            qsTr("Download error (code: %1): %2").arg(code).arg(msg),
                                                            "", null,
                                                            "", null,
@@ -349,10 +349,10 @@ Item {
             //console.log("dialog: DM all reports finished");
             downloadDialog.finished();
             if (downloadDialog.reportSuccess
-                    && code != 1 && !messageDisplayed) // note: errors will be reported by the onError handler
+                    && code != 1 && !downloadDialog.messageDisplayed) // note: errors will be reported by the onError handler
             {
                 // report success
-                messageDisplayed = true;
+                downloadDialog.messageDisplayed = true;
                 var infText = "";
                 if (code == 0) {  // Success
                     infText = qsTr("Your download finished successfully. The data files are now available.")

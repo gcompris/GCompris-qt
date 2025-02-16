@@ -52,15 +52,15 @@ RangeSlider {
         width: control.availableWidth
         height: implicitHeight
         implicitWidth: 250 * ApplicationInfo.ratio
-        implicitHeight: first.handle.height * 0.5
+        implicitHeight: control.first.handle.height * 0.5
         anchors.verticalCenter: parent.verticalCenter
         border.width: GCStyle.thinnestBorder
         border.color: GCStyle.sliderBorder
         color: GCStyle.sliderEmpty
 
         Rectangle {
-            x: first.handle.x + first.handle.width * 0.5
-            width: second.handle.x - first.handle.x
+            x: control.first.handle.x + control.first.handle.width * 0.5
+            width: control.second.handle.x - control.first.handle.x
             height: parent.height
             border.width: GCStyle.thinnestBorder
             border.color: GCStyle.sliderBorder

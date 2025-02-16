@@ -87,7 +87,7 @@ Rectangle {
     }
     property alias active: loader.active
     property alias loader: loader
-    property QtObject activityInfo: ActivityInfoTree.currentActivity
+    property ActivityInfo activityInfo: ActivityInfoTree.currentActivity
 
     property ActivityBase currentActivity
 

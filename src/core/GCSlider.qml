@@ -44,14 +44,14 @@ Slider {
         width: control.availableWidth
         height: implicitHeight
         implicitWidth: 250 * ApplicationInfo.ratio
-        implicitHeight: handle.height * 0.5
+        implicitHeight: control.handle.height * 0.5
         anchors.verticalCenter: parent.verticalCenter
         border.width: GCStyle.thinnestBorder
         border.color: GCStyle.sliderBorder
         color: GCStyle.sliderEmpty
 
         Rectangle {
-            width: handle.x + handle.width * 0.5
+            width: control.handle.x + control.handle.width * 0.5
             height: parent.height
             border.width: GCStyle.thinnestBorder
             border.color: GCStyle.sliderBorder

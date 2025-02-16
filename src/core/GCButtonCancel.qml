@@ -53,6 +53,6 @@ Image {
     }
     MouseArea {
         anchors.fill: parent
-        onClicked: close()
+        onClicked: cancel.close()
     }
 }

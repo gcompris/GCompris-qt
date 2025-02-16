@@ -7,6 +7,7 @@
  *
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
+pragma ComponentBehavior: Bound
 
 import QtQuick
 import core 1.0
@@ -89,7 +90,7 @@ Rectangle {
         id: restoreFocusTimer
         interval: 500
         onTriggered: {
-            dialogOpened = false;
+            creationHandler.dialogOpened = false;
         }
     }
 
@@ -97,7 +98,7 @@ Rectangle {
         id: writeDataTimer
         interval: 500
         onTriggered:  {
-            writeData();
+            creationHandler.writeData();
         }
     }
 
@@ -105,7 +106,7 @@ Rectangle {
         id: deleteFileTimer
         interval: 500
         onTriggered: {
-            deleteFile();
+            creationHandler.deleteFile();
         }
     }
 
@@ -113,7 +114,7 @@ Rectangle {
         id: refreshTimer
         interval: 500
         onTriggered: {
-            refreshWindow();
+            creationHandler.refreshWindow();
         }
     }
 
@@ -264,7 +265,7 @@ Rectangle {
             placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
             onTextChanged: {
                 if(!creationHandler.isSaveMode)
-                    searchFiles()
+                    creationHandler.searchFiles()
             }
             color: GCStyle.darkerText
             background.visible: false
@@ -281,7 +282,7 @@ Rectangle {
         anchors.left: fileNameBackground.right
         anchors.right: cancelButton.left
         anchors.margins: GCStyle.halfMargins
-        onClicked: saveFile()
+        onClicked: creationHandler.saveFile()
         enabled: fileNameInput.text != ""
     }
 
@@ -327,8 +328,10 @@ Rectangle {
                 radius: GCStyle.halfMargins
             }
             delegate: Item {
+                id: fileDelegate
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
+                required property string name
                 readonly property string fileName: fileName.text
                 Image {
                     id: fileIcon
@@ -340,7 +343,7 @@ Rectangle {
                     fillMode: Image.PreserveAspectFit
                     // the empty file is used to make a switch to reload overwritten image
                     source: creationHandler.imageMode ?
-                        (fileName.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : filePrefix + sharedDirectoryPath + fileName.text) :
+                        (fileName.text == creationHandler.fileToOverwrite ? "qrc:/gcompris/src/core/resource/empty.svg" : creationHandler.filePrefix + creationHandler.sharedDirectoryPath + fileName.text) :
                         "qrc:/gcompris/src/core/resource/file_icon.svg"
                 }
 
@@ -356,8 +359,8 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                     elide: Text.ElideRight
                     // Exclude ".json" while displaying file name if not imageMode
-                    text: creationHandler.imageMode ? name :
-                        name.slice(0, name.length - 5)
+                    text: creationHandler.imageMode ? fileDelegate.name :
+                        fileDelegate.name.slice(0, fileDelegate.name.length - 5)
                 }
             }
             MouseArea {
@@ -394,7 +397,7 @@ Rectangle {
             text: qsTr("Delete")
             enabled: creationsList.currentIndex != -1
             theme: "highContrast"
-            onClicked: confirmFileDeleteDialog()
+            onClicked: creationHandler.confirmFileDeleteDialog()
         }
     }
 
@@ -432,8 +435,8 @@ Rectangle {
         anchors.bottom: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
-        visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile && !dialogOpened
-        onKeypress: {
+        visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile && !creationHandler.dialogOpened
+        function onKeypress(text) {
             var textArray = fileNameInput.text.split("");
             var cursorPosition = fileNameInput.cursorPosition
             if(text == backspace) {
