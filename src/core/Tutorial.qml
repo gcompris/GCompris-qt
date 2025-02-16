@@ -112,7 +112,7 @@ Item {
         anchors.bottomMargin: GCStyle.halfMargins
         anchors.leftMargin: GCStyle.baseMargins
         anchors.rightMargin: GCStyle.baseMargins
-        text: tutorialDetails ? tutorialDetails[tutorialNumber].instruction : ""
+        text: tutorialSection.tutorialDetails ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instruction : ""
         fontSizeMode: Text.Fit
         minimumPixelSize: 10
         horizontalAlignment: isLeftToRightLocale ? Text.AlignLeft : Text.AlignRight
@@ -138,7 +138,7 @@ Item {
 
         onClicked: {
             --tutorialSection.tutorialNumber
-            previousPressed()
+            tutorialSection.previousPressed()
         }
     }
 
@@ -156,7 +156,7 @@ Item {
 
         onClicked: {
             ++tutorialSection.tutorialNumber
-            nextPressed()
+            tutorialSection.nextPressed()
         }
     }
 
@@ -173,19 +173,19 @@ Item {
 
         onClicked: {
             tutorialSection.visible = false
-            skipPressed()
+            tutorialSection.skipPressed()
         }
     }
 
     // Image component for tutorial instructions
     Image {
         id: tutorialImage
-        visible: useImage
+        visible: tutorialSection.useImage
         sourceSize.height: height
         sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         mipmap: true
-        source: tutorialSection.tutorialDetails && useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionImage : ""
+        source: tutorialSection.tutorialDetails && tutorialSection.useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionImage : ""
         anchors {
             top: skipButton.bottom
             topMargin: GCStyle.baseMargins
@@ -199,7 +199,7 @@ Item {
     Loader {
         id: tutorialQml
         enabled: !tutorialImage.visible
-        source: tutorialSection.tutorialDetails && !useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionQml : ""
+        source: tutorialSection.tutorialDetails && !tutorialSection.useImage ? tutorialSection.tutorialDetails[tutorialSection.tutorialNumber].instructionQml : ""
         anchors {
             top: skipButton.bottom
             topMargin: GCStyle.baseMargins

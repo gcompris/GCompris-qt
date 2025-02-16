@@ -8,7 +8,6 @@
  *   SPDX-License-Identifier: GPL-3.0-or-later
  */
 import QtQuick 2.12
-import core 1.0
 
 /**
  * Helper QML component for a button shown on the Bar.
