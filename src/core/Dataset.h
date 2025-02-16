@@ -14,6 +14,8 @@
 #include <QObject>
 #include <QString>
 #include <QVariant>
+#include <QtQml/qqmlregistration.h>
+#include <config.h>
 
 /**
  * @class Dataset
@@ -30,7 +32,9 @@
 class Dataset : public QObject
 {
     Q_OBJECT
-
+#ifndef WITH_RCC
+    QML_NAMED_ELEMENT(Data)
+#endif
     /**
      * Objective of this dataset.
      */

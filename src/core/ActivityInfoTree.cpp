@@ -342,7 +342,7 @@ void ActivityInfoTree::initialize(QQmlEngine *engine)
     filterEnabledActivities(true);
 }
 
-QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
+ActivityInfoTree *ActivityInfoTree::create(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
     Q_UNUSED(scriptEngine)
 

@@ -20,6 +20,8 @@
 #include <QUrl>
 #include <QQmlEngine>
 #include <QJSEngine>
+#include <QtQml/qqmlregistration.h>
+#include <config.h>
 
 namespace GCompris {
     Q_NAMESPACE
@@ -81,7 +83,10 @@ namespace GCompris {
 class DownloadManager : public QObject
 {
     Q_OBJECT
-
+#ifndef WITH_RCC
+    QML_ELEMENT
+    QML_SINGLETON
+#endif
     friend class DownloadManagerTest;
 
 private:
@@ -237,8 +242,8 @@ public:
     /**
      * Registers DownloadManager singleton in the QML engine.
      */
-    static QObject *downloadManagerProvider(QQmlEngine *engine,
-                                            QJSEngine *scriptEngine);
+    static DownloadManager *create(QQmlEngine *engine,
+                                   QJSEngine *scriptEngine);
     static DownloadManager *getInstance();
 
     /**

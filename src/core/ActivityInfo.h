@@ -14,8 +14,9 @@
 #include <QString>
 #include <QStringList>
 #include <QQmlListProperty>
+#include <QtQml/qqmlregistration.h>
 #include "Dataset.h"
-
+#include <config.h>
 /**
  * @class ActivityInfo
  * @short A QML component holding meta information about an activity.
@@ -30,7 +31,9 @@
 class ActivityInfo : public QObject
 {
     Q_OBJECT
-
+#ifndef WITH_RCC
+    QML_ELEMENT
+#endif
     /**
      * Name of the main activity QML file.
      *

@@ -19,6 +19,7 @@
 #include <QObject>
 #include <QSslSocket>
 #include <QTranslator>
+#include <QtQml/qqmlregistration.h>
 
 class QQmlEngine;
 class QQuickWindow;
@@ -32,7 +33,10 @@ class QQuickWindow;
 class ApplicationInfo : public QObject
 {
     Q_OBJECT
-
+#ifndef WITH_RCC
+    QML_ELEMENT
+    QML_SINGLETON
+#endif
     /**
      * Width of the application viewport.
      */
@@ -250,8 +254,8 @@ public:
         }
         return m_instance;
     }
-    static QObject *applicationInfoProvider(QQmlEngine *engine,
-                                            QJSEngine *scriptEngine);
+    static ApplicationInfo *create(QQmlEngine *engine,
+                                   QJSEngine *scriptEngine);
     static void setWindow(QQuickWindow *window);
     explicit ApplicationInfo(QObject *parent = nullptr);
     ~ApplicationInfo();

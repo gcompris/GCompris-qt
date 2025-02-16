@@ -33,21 +33,21 @@ void GComprisPlugin::registerTypes(const char *uri)
                                "Directory");
 
     qmlRegisterSingletonType<ApplicationInfo>(uri, versionMajor, versionMinor,
-                                              "ApplicationInfo", ApplicationInfo::applicationInfoProvider);
+                                              "ApplicationInfo", ApplicationInfo::create);
 
     qmlRegisterSingletonType<ActivityInfoTree>(uri, versionMajor, versionMinor,
-                                               "ActivityInfoTree", ActivityInfoTree::menuTreeProvider);
+                                               "ActivityInfoTree", ActivityInfoTree::create);
     qmlRegisterType<Dataset>(uri, versionMajor, versionMinor, "Data");
     qmlRegisterType<ActivityInfo>(uri, versionMajor, versionMinor, "ActivityInfo");
     qmlRegisterSingletonType<ApplicationSettings>(uri, versionMajor, versionMinor,
-                                                  "ApplicationSettings", ApplicationSettings::applicationSettingsProvider);
+                                                  "ApplicationSettings", ApplicationSettings::create);
     qmlRegisterSingletonType<DownloadManager>(uri, versionMajor, versionMinor,
-                                              "DownloadManager", DownloadManager::downloadManagerProvider);
+                                              "DownloadManager", DownloadManager::create);
     qmlRegisterUncreatableMetaObject(GCompris::staticMetaObject,
                                      uri, versionMajor, versionMinor, "GCompris", "");
 
     qmlRegisterSingletonType<GSynth>(uri, versionMajor, versionMinor,
-                                     "GSynth", GSynth::synthProvider);
+                                     "GSynth", GSynth::create);
 }
 
 #include "moc_GComprisPlugin.cpp"

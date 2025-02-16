@@ -401,8 +401,8 @@ void ApplicationInfo::switchLocale(const QString &locale)
     }
 }
 
-QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
-                                                  QJSEngine *scriptEngine)
+ApplicationInfo *ApplicationInfo::create(QQmlEngine *engine,
+                                         QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)

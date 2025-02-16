@@ -16,6 +16,8 @@
 #include <QTimer>
 #include <QMap>
 #include "preset.h"
+#include <config.h>
+#include <QtQml/qqmlregistration.h>
 
 class QQmlEngine;
 class QJSEngine;
@@ -25,6 +27,10 @@ class Generator;
 class GSynth : public QObject
 {
     Q_OBJECT
+#ifndef WITH_RCC
+    QML_ELEMENT
+    QML_SINGLETON
+#endif
 
 public:
     explicit GSynth(QObject *parent = nullptr);
@@ -45,8 +51,8 @@ public:
         }
         return m_instance;
     }
-    static QObject *synthProvider(QQmlEngine *engine,
-                                  QJSEngine *scriptEngine);
+    static GSynth *create(QQmlEngine *engine,
+                          QJSEngine *scriptEngine);
 
 protected:
     static GSynth *m_instance;
