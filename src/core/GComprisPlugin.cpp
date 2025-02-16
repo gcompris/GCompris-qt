@@ -14,7 +14,7 @@
 #include "File.h"
 #include "Directory.h"
 #include "DownloadManager.h"
-#include "synth/GSynth.h"
+#include "GSynth.h"
 #include <QQmlComponent>
 
 const int versionMajor = 1;

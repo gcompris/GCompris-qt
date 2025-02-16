@@ -10,7 +10,7 @@
  */
 
 #include "GSynth.h"
-#include "generator.h"
+#include "synth/generator.h"
 
 #include <QDebug>
 #include <QQmlEngine>

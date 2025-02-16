@@ -36,8 +36,8 @@ set(gcompris_SRCS
   config.h.in
   synth/ADSRenvelope.cpp
   synth/ADSRenvelope.h
-  synth/GSynth.cpp
-  synth/GSynth.h
+  GSynth.cpp
+  GSynth.h
   synth/linearSynthesis.cpp
   synth/linearSynthesis.h
   synth/modulation.cpp
