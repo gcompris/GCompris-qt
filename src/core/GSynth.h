@@ -15,7 +15,7 @@
 #include <QAudioSink>
 #include <QTimer>
 #include <QMap>
-#include "preset.h"
+#include "synth/preset.h"
 #include <config.h>
 #include <QtQml/qqmlregistration.h>
 
