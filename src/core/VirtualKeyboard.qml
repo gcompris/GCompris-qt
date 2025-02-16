@@ -245,6 +245,7 @@ Item {
     }
 
     function populateKeyboard(a) {
+        modifiers = Qt.NoModifier
         activity.loading.start();
         // populate asynchronously in a worker thread:
         keyboardWorker.sendMessage({
